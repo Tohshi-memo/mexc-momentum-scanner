@@ -1,16 +1,16 @@
 """
 core/analyzer.py
 テクニカル指標 (RSI, ボリンジャーバンド) の計算と判定
+
+pandas のみで実装しているため外部の TA ライブラリへの依存なし。
 """
 from __future__ import annotations
 
 import logging
 import os
 from dataclasses import dataclass
-from typing import Any
 
 import pandas as pd
-import pandas_ta as ta
 
 from core.scanner import SurgeCandidate
 from utils.mexc_client import MEXCClient
@@ -164,19 +164,19 @@ class TechnicalAnalyzer:
         current_price: float = candidate.price
 
         # --- RSI ---
-        rsi_series: pd.Series = ta.rsi(df["close"], length=self._rsi_period)
+        rsi_series: pd.Series = self._calc_rsi(df["close"], self._rsi_period)
         rsi_value: float | None = self._last_valid(rsi_series)
         is_rsi_overbought: bool = (
             rsi_value is not None and rsi_value >= self._rsi_overbought
         )
 
         # --- ボリンジャーバンド ---
-        bb_result: pd.DataFrame | None = ta.bbands(
-            df["close"],
-            length=self._bb_period,
-            std=self._bb_std,
+        bb_upper_s, bb_middle_s, bb_lower_s = self._calc_bbands(
+            df["close"], self._bb_period, self._bb_std
         )
-        bb_upper, bb_middle, bb_lower = self._extract_bb(bb_result)
+        bb_upper = self._last_valid(bb_upper_s)
+        bb_middle = self._last_valid(bb_middle_s)
+        bb_lower = self._last_valid(bb_lower_s)
         is_above_bb_upper: bool = (
             bb_upper is not None and current_price > bb_upper
         )
@@ -211,29 +211,34 @@ class TechnicalAnalyzer:
             return None
         return float(valid.iloc[-1])
 
-    def _extract_bb(
-        self, bb: pd.DataFrame | None
-    ) -> tuple[float | None, float | None, float | None]:
-        """pandas_ta bbands の結果から upper / middle / lower を抽出する。
+    @staticmethod
+    def _calc_rsi(close: pd.Series, period: int) -> pd.Series:
+        """Wilder の平滑移動平均を使った RSI を計算する。
 
-        pandas_ta は BBL_{period}_{std}, BBM_{period}_{std}, BBU_{period}_{std}
-        というカラム名を生成する。
+        RSI = 100 - 100 / (1 + RS)
+        RS  = EWM平均上昇幅 / EWM平均下落幅  (com = period - 1)
+        """
+        delta = close.diff()
+        gain = delta.clip(lower=0)
+        loss = -delta.clip(upper=0)
+        avg_gain = gain.ewm(com=period - 1, min_periods=period).mean()
+        avg_loss = loss.ewm(com=period - 1, min_periods=period).mean()
+        rs = avg_gain / avg_loss.replace(0, float("nan"))
+        return 100 - (100 / (1 + rs))
+
+    @staticmethod
+    def _calc_bbands(
+        close: pd.Series, period: int, std_mult: float
+    ) -> tuple[pd.Series, pd.Series, pd.Series]:
+        """ボリンジャーバンドを計算する。
 
         Returns:
-            (upper, middle, lower) または (None, None, None)
+            (upper, middle, lower) の Series タプル
         """
-        if bb is None or bb.empty:
-            return None, None, None
-
-        std_str = f"{self._bb_std:.1f}"
-        upper_col = f"BBU_{self._bb_period}_{std_str}"
-        middle_col = f"BBM_{self._bb_period}_{std_str}"
-        lower_col = f"BBL_{self._bb_period}_{std_str}"
-
-        upper = self._last_valid(bb.get(upper_col))
-        middle = self._last_valid(bb.get(middle_col))
-        lower = self._last_valid(bb.get(lower_col))
-
+        middle = close.rolling(period).mean()
+        std = close.rolling(period).std(ddof=0)
+        upper = middle + std_mult * std
+        lower = middle - std_mult * std
         return upper, middle, lower
 
     def _log_result(self, result: AnalysisResult) -> None:
