@@ -28,19 +28,24 @@ class MEXCClient:
         api_key: str = os.getenv("MEXC_API_KEY", "")
         secret_key: str = os.getenv("MEXC_SECRET_KEY", "")
 
-        options: dict[str, Any] = {
+        config: dict[str, Any] = {
             "enableRateLimit": True,
-            "defaultType": "swap",  # USDT-M先物をデフォルトに設定
+            # defaultType は ccxt が参照する exchange.options に入れる必要がある。
+            # トップレベルキーとして渡すと exchange.options に反映されない実装があるため
+            # "options" キーでネストして明示的に指定する。
+            "options": {
+                "defaultType": "swap",  # USDT-M 無期限先物をデフォルトに設定
+            },
         }
 
         if api_key and secret_key:
-            options["apiKey"] = api_key
-            options["secret"] = secret_key
+            config["apiKey"] = api_key
+            config["secret"] = secret_key
             logger.info("MEXC client initialized with API credentials (authenticated mode).")
         else:
             logger.info("MEXC client initialized without API credentials (public mode).")
 
-        self._exchange: ccxt.mexc = ccxt.mexc(options)
+        self._exchange: ccxt.mexc = ccxt.mexc(config)
 
     # ------------------------------------------------------------------
     # Market Data (Public)
@@ -49,6 +54,21 @@ class MEXCClient:
     def fetch_markets(self) -> list[dict[str, Any]]:
         """全マーケット情報を取得する。"""
         return self._call_with_retry(self._exchange.fetch_markets)
+
+    def fetch_swap_usdt_symbols(self) -> list[str]:
+        """アクティブな USDT建て Swap 銘柄のシンボルリストを返す。
+
+        fetch_tickers() の defaultType が正しく機能しない場合のフォールバックとして、
+        fetch_markets() から確実にスワップ銘柄のみを抽出する。
+        """
+        markets = self._call_with_retry(self._exchange.fetch_markets)
+        return [
+            m["symbol"]
+            for m in markets
+            if m.get("type") == "swap"
+            and m.get("quote") == "USDT"
+            and m.get("active", True)
+        ]
 
     def fetch_tickers(self, symbols: list[str] | None = None) -> dict[str, Any]:
         """ティッカー情報を一括取得する。

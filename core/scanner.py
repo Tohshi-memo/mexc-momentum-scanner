@@ -70,6 +70,9 @@ class MarketScanner:
         # OHLCV取得対象の上限数（24h変化率上位N件に絞る）
         self._max_ohlcv_checks: int = int(os.getenv("MAX_OHLCV_CHECKS", "50"))
 
+        # fetch_markets() で取得したスワップ銘柄リストのキャッシュ
+        self._swap_symbols: list[str] = []
+
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
@@ -147,22 +150,37 @@ class MarketScanner:
     def _scan_surge_alts(self) -> list[SurgeCandidate]:
         """2段階フィルターで急騰銘柄を検出する。
 
-        Step1: 全ティッカー一括取得 → 出来高フィルター → 24h変化率上位N件
+        Step1: fetch_markets() でスワップ銘柄リストを取得（キャッシュ）
+               → fetch_tickers(explicit_list) でティッカー取得
+               → 出来高フィルター → 24h変化率上位N件に絞る
         Step2: 選定銘柄のみ 1h OHLCV を取得して実際の1h変化率を確認
         """
+        # スワップ銘柄リストをキャッシュから取得（初回のみ API 呼び出し）
+        if not self._swap_symbols:
+            try:
+                self._swap_symbols = self._client.fetch_swap_usdt_symbols()
+                logger.info(
+                    "Loaded %d USDT swap symbols via fetch_markets().",
+                    len(self._swap_symbols),
+                )
+            except Exception as e:
+                logger.error("Failed to fetch swap markets: %s", e)
+                return []
+
+        target_symbols = [s for s in self._swap_symbols if s != self.BTC_SYMBOL]
+        logger.info("USDT swap symbols: %d total", len(target_symbols))
+
         try:
-            all_tickers: dict[str, Any] = self._client.fetch_tickers()
+            all_tickers: dict[str, Any] = self._client.fetch_tickers(target_symbols)
         except Exception as e:
-            logger.error("Failed to fetch all tickers: %s", e)
+            logger.error("Failed to fetch tickers: %s", e)
             return []
 
-        # USDT先物ペアのみ抽出（ccxt MEXC swap: "XXX/USDT:USDT" 形式）
         usdt_swap = {
             sym: t
             for sym, t in all_tickers.items()
-            if sym.endswith("/USDT:USDT") and sym != self.BTC_SYMBOL
+            if sym != self.BTC_SYMBOL
         }
-        logger.info("USDT swap symbols: %d total", len(usdt_swap))
 
         # 出来高フィルター
         liquid = {
