@@ -18,6 +18,7 @@ from datetime import datetime, timezone
 from typing import Any
 
 from core.analyzer import AnalysisResult
+from core.fundamental import FundamentalResult
 from utils.mexc_client import MEXCClient
 
 logger = logging.getLogger(__name__)
@@ -46,6 +47,7 @@ class TradeProposal:
     bb_upper_at_entry: float | None
     volume_24h_usdt: float
     change_1h_pct: float
+    fundamental: FundamentalResult | None = None  # ファンダ考察結果
     created_at: str = ""    # ISO 8601 タイムスタンプ
 
     def __post_init__(self) -> None:
@@ -117,6 +119,18 @@ class DryRunExecutor(BaseExecutor):
             Volume 24h : $5,234,567 USDT
             Timestamp  : 2025-01-01T00:00:00+00:00
         """
+        # AVOID 判定の場合は出力してスキップ
+        if (
+            proposal.fundamental is not None
+            and proposal.fundamental.short_conviction == "AVOID"
+        ):
+            logger.warning(
+                "[DRY RUN] SKIPPED (AVOID) %s — Fundamental: %s",
+                proposal.symbol,
+                proposal.fundamental.reason,
+            )
+            return {"status": "skipped_avoid", "symbol": proposal.symbol}
+
         logger.info("=" * 60)
         logger.info("[DRY RUN] Trade Proposal Generated")
         logger.info("  Symbol      : %s", proposal.symbol)
@@ -146,6 +160,15 @@ class DryRunExecutor(BaseExecutor):
         )
         logger.info("  1h Change   : +%.2f%%", proposal.change_1h_pct)
         logger.info("  Volume 24h  : $%,.0f USDT", proposal.volume_24h_usdt)
+        # ファンダ考察サマリー
+        if proposal.fundamental is not None and proposal.fundamental.news_count >= 0:
+            logger.info(
+                "  Fundamental : catalyst=%s conviction=%s news=%d件",
+                proposal.fundamental.catalyst_type,
+                proposal.fundamental.short_conviction,
+                proposal.fundamental.news_count,
+            )
+            logger.info("  Fund Reason : %s", proposal.fundamental.reason)
         logger.info("  Timestamp   : %s", proposal.created_at)
         logger.info("=" * 60)
 
@@ -218,11 +241,16 @@ class ProposalBuilder:
         self._sl_pct: float = float(os.getenv("STOP_LOSS_PCT", "2.0"))
         self._tp_pct: float = float(os.getenv("TAKE_PROFIT_PCT", "4.0"))
 
-    def build(self, result: AnalysisResult) -> TradeProposal:
+    def build(
+        self,
+        result: AnalysisResult,
+        fundamental: FundamentalResult | None = None,
+    ) -> TradeProposal:
         """AnalysisResult を TradeProposal に変換する。
 
         Args:
             result: TechnicalAnalyzer の分析結果
+            fundamental: FundamentalAnalyzer の考察結果（省略可）
         Returns:
             構造化された TradeProposal
         """
@@ -242,6 +270,7 @@ class ProposalBuilder:
             bb_upper_at_entry=result.bb_upper,
             volume_24h_usdt=result.volume_24h_usdt,
             change_1h_pct=result.change_1h_pct,
+            fundamental=fundamental,
         )
 
 

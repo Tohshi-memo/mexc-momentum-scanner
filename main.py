@@ -33,6 +33,7 @@ elif _env_example_path.exists():
 
 from core.analyzer import TechnicalAnalyzer
 from core.executor import ExecutorFactory, ProposalBuilder
+from core.fundamental import FundamentalAnalyzer
 from core.scanner import MarketScanner
 from utils.mexc_client import MEXCClient
 
@@ -73,14 +74,16 @@ def setup_logging() -> None:
 def run_once(
     scanner: MarketScanner,
     analyzer: TechnicalAnalyzer,
+    fundamental_analyzer: FundamentalAnalyzer,
     builder: ProposalBuilder,
     executor,
 ) -> None:
-    """スキャン → 分析 → 実行の1サイクルを実行する。
+    """スキャン → テクニカル分析 → ファンダ考察 → 実行の1サイクル。
 
     Args:
         scanner: MarketScanner インスタンス
         analyzer: TechnicalAnalyzer インスタンス
+        fundamental_analyzer: FundamentalAnalyzer インスタンス
         builder: ProposalBuilder インスタンス
         executor: BaseExecutor の具体実装 (DryRun or Live)
     """
@@ -98,11 +101,13 @@ def run_once(
         len(surge_candidates),
     )
     for c in surge_candidates:
-        logger.info("  Candidate: %s +%.2f%% vol=$%.0f", c.symbol, c.change_1h_pct, c.volume_24h_usdt)
+        logger.info(
+            "  Candidate: %s +%.2f%% vol=$%.0f",
+            c.symbol, c.change_1h_pct, c.volume_24h_usdt,
+        )
 
     # Step 2: テクニカル分析
     analysis_results = analyzer.analyze_candidates(surge_candidates)
-
     confirmed_signals = [r for r in analysis_results if r.is_confirmed_signal]
 
     if not confirmed_signals:
@@ -110,17 +115,18 @@ def run_once(
         return
 
     logger.info(
-        "%d confirmed signal(s) after analysis. Generating trade proposals...",
+        "%d confirmed signal(s). Starting fundamental analysis...",
         len(confirmed_signals),
     )
 
-    # Step 3: 擬似/実注文実行
+    # Step 3: ファンダ考察（テクニカル確認済み銘柄のみ）
     for result in confirmed_signals:
         try:
-            proposal = builder.build(result)
+            fundamental = fundamental_analyzer.analyze(result.symbol)
+            proposal = builder.build(result, fundamental)
             executor.execute(proposal)
         except Exception as e:
-            logger.error("Failed to execute proposal for %s: %s", result.symbol, e)
+            logger.error("Failed to process %s: %s", result.symbol, e)
 
 
 def main() -> None:
@@ -147,6 +153,7 @@ def main() -> None:
     client = MEXCClient()
     scanner = MarketScanner(client)
     analyzer = TechnicalAnalyzer(client)
+    fundamental_analyzer = FundamentalAnalyzer()
     builder = ProposalBuilder()
     executor = ExecutorFactory.create(client)
 
@@ -157,7 +164,7 @@ def main() -> None:
         logger.info("--- Cycle #%d ---", cycle)
 
         try:
-            run_once(scanner, analyzer, builder, executor)
+            run_once(scanner, analyzer, fundamental_analyzer, builder, executor)
         except KeyboardInterrupt:
             logger.info("Interrupted by user. Shutting down.")
             break
