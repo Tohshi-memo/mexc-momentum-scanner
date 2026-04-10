@@ -116,15 +116,23 @@ def run_once(
 
 
 def main() -> None:
-    """メインループ。SCAN_INTERVAL_SECONDS ごとにスキャンサイクルを実行する。"""
+    """メインループ。SCAN_INTERVAL_SECONDS ごとにスキャンサイクルを実行する。
+
+    RUN_ONCE=true の場合は1サイクルのみ実行して終了する（GitHub Actions 向け）。
+    """
     setup_logging()
     logger = logging.getLogger(__name__)
 
+    run_once_mode: bool = os.getenv("RUN_ONCE", "false").lower() == "true"
     scan_interval: int = int(os.getenv("SCAN_INTERVAL_SECONDS", "300"))
 
     logger.info("=" * 60)
     logger.info("MEXC Momentum Scanner starting up")
-    logger.info("Scan interval: %ds | DRY_RUN=%s", scan_interval, os.getenv("DRY_RUN", "true"))
+    logger.info(
+        "Mode: %s | DRY_RUN=%s",
+        "RUN_ONCE" if run_once_mode else f"LOOP every {scan_interval}s",
+        os.getenv("DRY_RUN", "true"),
+    )
     logger.info("=" * 60)
 
     # 依存オブジェクトの初期化
@@ -147,17 +155,18 @@ def main() -> None:
             break
         except Exception as e:
             logger.error("Unhandled error in scan cycle #%d: %s", cycle, e, exc_info=True)
-            # サイクルエラーでプロセスを止めず、次のサイクルへ
-        finally:
-            if cycle > 0:
-                logger.info(
-                    "Cycle #%d done. Next scan in %ds...", cycle, scan_interval
-                )
-                try:
-                    time.sleep(scan_interval)
-                except KeyboardInterrupt:
-                    logger.info("Interrupted during sleep. Shutting down.")
-                    break
+
+        # RUN_ONCE モードは1サイクルで終了
+        if run_once_mode:
+            logger.info("RUN_ONCE mode: exiting after cycle #%d.", cycle)
+            break
+
+        logger.info("Cycle #%d done. Next scan in %ds...", cycle, scan_interval)
+        try:
+            time.sleep(scan_interval)
+        except KeyboardInterrupt:
+            logger.info("Interrupted during sleep. Shutting down.")
+            break
 
 
 if __name__ == "__main__":

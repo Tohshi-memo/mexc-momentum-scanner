@@ -1,0 +1,79 @@
+name: MEXC Momentum Scanner
+
+on:
+  # 5分ごとに自動実行（GitHub Actions cron の最小単位）
+  schedule:
+    - cron: '*/5 * * * *'
+
+  # Actions 画面から手動実行も可能
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'DRY RUN mode (true=ログのみ / false=実注文)'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10   # 1サイクル上限（ハング防止）
+
+    env:
+      # --- API 認証情報（GitHub Secrets から注入）---
+      MEXC_API_KEY: ${{ secrets.MEXC_API_KEY }}
+      MEXC_SECRET_KEY: ${{ secrets.MEXC_SECRET_KEY }}
+
+      # --- 実行モード ---
+      RUN_ONCE: 'true'
+      # 手動実行時は入力値、スケジュール実行時は true（dry run）
+      DRY_RUN: ${{ github.event.inputs.dry_run || 'true' }}
+
+      # --- スキャン設定 ---
+      BTC_BEARISH_THRESHOLD: '-0.5'
+      BTC_STAGNANT_THRESHOLD: '0.2'
+      ALT_SURGE_THRESHOLD: '5.0'
+      MIN_24H_VOLUME_USDT: '1000000'
+
+      # --- テクニカル設定 ---
+      RSI_PERIOD: '14'
+      RSI_OVERBOUGHT: '75'
+      BB_PERIOD: '20'
+      BB_STD: '2.0'
+      ANALYSIS_TIMEFRAME: '1h'
+      OHLCV_LIMIT: '100'
+
+      # --- リスク設定 ---
+      STOP_LOSS_PCT: '2.0'
+      TAKE_PROFIT_PCT: '4.0'
+
+      # --- ログ設定 ---
+      LOG_LEVEL: 'INFO'
+      LOG_FILE: 'logs/scanner.log'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scanner (single cycle)
+        run: python main.py
+
+      - name: Upload logs
+        if: always()   # スキャン失敗時もログをアップロード
+        uses: actions/upload-artifact@v4
+        with:
+          name: scanner-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 7
