@@ -23,6 +23,9 @@ jobs:
     timeout-minutes: 10   # 1サイクル上限（ハング防止）
 
     env:
+      # Node.js 24 を今すぐ有効化（2026年6月の強制移行前に対応）
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+
       # --- API 認証情報（GitHub Secrets から注入）---
       MEXC_API_KEY: ${{ secrets.MEXC_API_KEY }}
       MEXC_SECRET_KEY: ${{ secrets.MEXC_SECRET_KEY }}
