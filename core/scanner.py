@@ -1,6 +1,16 @@
 """
 core/scanner.py
 市場監視ロジック: BTCの挙動とアルトコインの急騰検知
+
+1h変化率の算出はすべて OHLCV (2本) から計算する。
+MEXC先物ティッカーには信頼できる1hフィールドが存在しないため。
+
+スキャン手順:
+    1. BTC/USDT の1h OHLCV (2本) から正確な1h騰落率を算出
+    2. 全ティッカーを一括取得し出来高フィルターを適用
+    3. 24h変化率の高い順に上位 MAX_OHLCV_CHECKS 件を選定
+    4. 選定した銘柄のみ1h OHLCV を取得して実際の1h変化率を確認
+    5. ALT_SURGE_THRESHOLD 以上の銘柄を候補として返す
 """
 from __future__ import annotations
 
@@ -21,9 +31,9 @@ class BTCStatus:
     symbol: str
     price: float
     change_1h_pct: float
-    is_bearish: bool      # 1h変化率が BTC_BEARISH_THRESHOLD 以下
-    is_stagnant: bool     # 1h変化率が ±BTC_STAGNANT_THRESHOLD 以内
-    is_signal_active: bool  # いずれかの条件を満たす場合 True
+    is_bearish: bool
+    is_stagnant: bool
+    is_signal_active: bool
 
 
 @dataclass
@@ -32,21 +42,13 @@ class SurgeCandidate:
 
     symbol: str
     price: float
-    change_1h_pct: float
+    change_1h_pct: float       # OHLCV から計算した実際の1h変化率
     volume_24h_usdt: float
     ticker_raw: dict[str, Any] = field(default_factory=dict)
 
 
 class MarketScanner:
-    """USDT先物全ペアを監視し、BTCが弱い局面で独歩高している銘柄を検出する。
-
-    検出ロジック:
-        1. BTC/USDT の1時間騰落率を確認
-        2. BTC が弱気 (≤ BTC_BEARISH_THRESHOLD%) または
-           停滞 (|変化率| ≤ BTC_STAGNANT_THRESHOLD%) の場合にシグナル有効化
-        3. シグナル有効時、1時間で ALT_SURGE_THRESHOLD% 以上上昇し、
-           かつ24時間出来高が MIN_24H_VOLUME_USDT 以上の銘柄を抽出
-    """
+    """USDT先物全ペアを監視し、BTCが弱い局面で独歩高している銘柄を検出する。"""
 
     BTC_SYMBOL: str = "BTC/USDT:USDT"
 
@@ -65,26 +67,15 @@ class MarketScanner:
         self._min_volume_usdt: float = float(
             os.getenv("MIN_24H_VOLUME_USDT", "1000000")
         )
-
-        logger.debug(
-            "MarketScanner initialized | BTC bearish=%.2f%% stagnant=±%.2f%% "
-            "surge=+%.2f%% min_vol=$%.0f",
-            self._btc_bearish_threshold,
-            self._btc_stagnant_threshold,
-            self._alt_surge_threshold,
-            self._min_volume_usdt,
-        )
+        # OHLCV取得対象の上限数（24h変化率上位N件に絞る）
+        self._max_ohlcv_checks: int = int(os.getenv("MAX_OHLCV_CHECKS", "50"))
 
     # ------------------------------------------------------------------
     # Public API
     # ------------------------------------------------------------------
 
     def run_scan(self) -> tuple[BTCStatus, list[SurgeCandidate]]:
-        """スキャンを1サイクル実行し、BTC状態と急騰候補リストを返す。
-
-        Returns:
-            (btc_status, candidates): BTC の状態と急騰候補のリスト
-        """
+        """スキャンを1サイクル実行し、BTC状態と急騰候補リストを返す。"""
         logger.info("=== Scan cycle started ===")
 
         btc_status = self._check_btc_status()
@@ -106,17 +97,25 @@ class MarketScanner:
         return btc_status, candidates
 
     # ------------------------------------------------------------------
-    # BTC Status
+    # BTC Status (OHLCV ベース)
     # ------------------------------------------------------------------
 
     def _check_btc_status(self) -> BTCStatus:
-        """BTC/USDT の1時間騰落率を取得し、シグナル条件を判定する。"""
+        """BTC/USDT の1h OHLCV (2本) から正確な1h騰落率を算出する。"""
         try:
-            tickers = self._client.fetch_tickers([self.BTC_SYMBOL])
-            ticker = tickers.get(self.BTC_SYMBOL, {})
+            ohlcv = self._client.fetch_ohlcv(
+                self.BTC_SYMBOL, timeframe="1h", limit=2
+            )
+            if len(ohlcv) < 2:
+                raise ValueError("BTC OHLCV returned fewer than 2 bars")
 
-            price: float = float(ticker.get("last") or 0)
-            change_1h_pct: float = self._extract_1h_change(ticker)
+            prev_close = float(ohlcv[0][4])
+            curr_close = float(ohlcv[1][4])
+            price = curr_close
+            change_1h_pct = (
+                (curr_close - prev_close) / prev_close * 100
+                if prev_close > 0 else 0.0
+            )
 
             is_bearish = change_1h_pct <= self._btc_bearish_threshold
             is_stagnant = abs(change_1h_pct) <= self._btc_stagnant_threshold
@@ -132,7 +131,6 @@ class MarketScanner:
 
         except Exception as e:
             logger.error("Failed to fetch BTC status: %s", e)
-            # フェイルセーフ: エラー時はシグナルを無効化して返す
             return BTCStatus(
                 symbol=self.BTC_SYMBOL,
                 price=0.0,
@@ -142,51 +140,15 @@ class MarketScanner:
                 is_signal_active=False,
             )
 
-    def _extract_1h_change(self, ticker: dict[str, Any]) -> float:
-        """ティッカーから1時間騰落率を抽出する。
-
-        ccxt の MEXC実装では 'percentage' が24h変化率であるため、
-        1h変化率は info フィールドまたは別途 OHLCV から計算する。
-        ここでは 'info' 内の priceChangePercent (1h相当) を優先し、
-        存在しない場合は 24h パーセンテージをフォールバックとして利用する。
-
-        Args:
-            ticker: ccxt ティッカーオブジェクト
-        Returns:
-            騰落率 (%) - 正値が上昇
-        """
-        info: dict[str, Any] = ticker.get("info", {})
-
-        # MEXCの先物APIは riseFallRate が1h変化率に近い場合がある
-        for key in ("priceChangePercent1h", "riseFallRate", "priceChangePercent"):
-            val = info.get(key)
-            if val is not None:
-                try:
-                    return float(val) * 100 if abs(float(val)) < 10 else float(val)
-                except (ValueError, TypeError):
-                    continue
-
-        # フォールバック: ccxt 標準の percentage (24h)
-        pct = ticker.get("percentage")
-        if pct is not None:
-            logger.debug(
-                "Using 24h percentage as 1h proxy for %s (%.2f%%)",
-                ticker.get("symbol"),
-                pct,
-            )
-            return float(pct)
-
-        return 0.0
-
     # ------------------------------------------------------------------
     # Alt Coin Surge Detection
     # ------------------------------------------------------------------
 
     def _scan_surge_alts(self) -> list[SurgeCandidate]:
-        """全USDT先物ペアを取得し、急騰している銘柄を抽出する。
+        """2段階フィルターで急騰銘柄を検出する。
 
-        Returns:
-            条件を満たした SurgeCandidate のリスト（騰落率降順）
+        Step1: 全ティッカー一括取得 → 出来高フィルター → 24h変化率上位N件
+        Step2: 選定銘柄のみ 1h OHLCV を取得して実際の1h変化率を確認
         """
         try:
             all_tickers: dict[str, Any] = self._client.fetch_tickers()
@@ -194,79 +156,80 @@ class MarketScanner:
             logger.error("Failed to fetch all tickers: %s", e)
             return []
 
-        usdt_swap_symbols = self._filter_usdt_swap_symbols(all_tickers)
-        logger.debug("Total USDT swap symbols: %d", len(usdt_swap_symbols))
+        # USDT先物ペアのみ抽出（ccxt MEXC swap: "XXX/USDT:USDT" 形式）
+        usdt_swap = {
+            sym: t
+            for sym, t in all_tickers.items()
+            if sym.endswith("/USDT:USDT") and sym != self.BTC_SYMBOL
+        }
+        logger.info("USDT swap symbols: %d total", len(usdt_swap))
 
+        # 出来高フィルター
+        liquid = {
+            sym: t
+            for sym, t in usdt_swap.items()
+            if float(t.get("last") or 0) > 0
+            and float(t.get("quoteVolume") or 0) >= self._min_volume_usdt
+        }
+        logger.info(
+            "After volume filter (>$%.0f): %d symbols", self._min_volume_usdt, len(liquid)
+        )
+
+        if not liquid:
+            logger.warning(
+                "No liquid symbols found. Check MIN_24H_VOLUME_USDT setting "
+                "or verify MEXC API is returning swap tickers correctly."
+            )
+            return []
+
+        # 24h変化率の高い順に上位N件を選定（OHLCV呼び出し数を抑制）
+        sorted_by_24h = sorted(
+            liquid.items(),
+            key=lambda x: float(x[1].get("percentage") or 0),
+            reverse=True,
+        )
+        pre_candidates = sorted_by_24h[: self._max_ohlcv_checks]
+
+        logger.info(
+            "Top 5 by 24h change: %s",
+            "  |  ".join(
+                f"{sym} {float(t.get('percentage') or 0):+.1f}%"
+                for sym, t in pre_candidates[:5]
+            ),
+        )
+
+        # 各銘柄の1h変化率を OHLCV から正確に計算
         candidates: list[SurgeCandidate] = []
 
-        for symbol, ticker in usdt_swap_symbols.items():
-            if symbol == self.BTC_SYMBOL:
-                continue
+        for symbol, ticker in pre_candidates:
+            try:
+                ohlcv = self._client.fetch_ohlcv(symbol, timeframe="1h", limit=2)
+                if len(ohlcv) < 2:
+                    continue
 
-            candidate = self._evaluate_ticker(symbol, ticker)
-            if candidate is not None:
-                candidates.append(candidate)
+                prev_close = float(ohlcv[0][4])
+                curr_close = float(ohlcv[1][4])
+                if prev_close <= 0:
+                    continue
 
-        # 騰落率の高い順にソート
+                change_1h_pct = (curr_close - prev_close) / prev_close * 100
+
+                if change_1h_pct < self._alt_surge_threshold:
+                    continue
+
+                volume_24h = float(ticker.get("quoteVolume") or 0)
+                candidates.append(
+                    SurgeCandidate(
+                        symbol=symbol,
+                        price=float(ticker.get("last") or curr_close),
+                        change_1h_pct=change_1h_pct,
+                        volume_24h_usdt=volume_24h,
+                        ticker_raw=ticker,
+                    )
+                )
+
+            except Exception as e:
+                logger.debug("Skipping %s: %s", symbol, e)
+
         candidates.sort(key=lambda c: c.change_1h_pct, reverse=True)
         return candidates
-
-    def _filter_usdt_swap_symbols(
-        self, tickers: dict[str, Any]
-    ) -> dict[str, Any]:
-        """ティッカー辞書から USDT 先物(Swap)ペアのみ抽出する。
-
-        ccxt の MEXC swap マーケットのシンボルは "XXX/USDT:USDT" 形式。
-        """
-        return {
-            sym: t
-            for sym, t in tickers.items()
-            if sym.endswith("/USDT:USDT")
-        }
-
-    def _evaluate_ticker(
-        self, symbol: str, ticker: dict[str, Any]
-    ) -> SurgeCandidate | None:
-        """単一ティッカーが急騰条件を満たすか評価する。
-
-        Args:
-            symbol: シンボル名
-            ticker: ccxt ティッカーオブジェクト
-        Returns:
-            条件を満たす場合 SurgeCandidate、そうでなければ None
-        """
-        try:
-            price: float = float(ticker.get("last") or 0)
-            change_1h_pct: float = self._extract_1h_change(ticker)
-
-            # 出来高 (quoteVolume が USDT建て24h出来高)
-            volume_24h: float = float(ticker.get("quoteVolume") or 0)
-
-            if price <= 0:
-                return None
-
-            # 急騰フィルター
-            if change_1h_pct < self._alt_surge_threshold:
-                return None
-
-            # 出来高フィルター
-            if volume_24h < self._min_volume_usdt:
-                logger.debug(
-                    "Skipping %s: volume $%.0f < threshold $%.0f",
-                    symbol,
-                    volume_24h,
-                    self._min_volume_usdt,
-                )
-                return None
-
-            return SurgeCandidate(
-                symbol=symbol,
-                price=price,
-                change_1h_pct=change_1h_pct,
-                volume_24h_usdt=volume_24h,
-                ticker_raw=ticker,
-            )
-
-        except (ValueError, TypeError) as e:
-            logger.debug("Skipping %s due to parse error: %s", symbol, e)
-            return None
