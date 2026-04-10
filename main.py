@@ -17,13 +17,16 @@ from pathlib import Path
 from dotenv import load_dotenv
 
 # .env を最優先でロード（存在しない場合は .env.example の値を参照）
+# ※ logging.warning() はここでは呼ばない（setup_logging() より先に呼ぶと
+#   root logger が WARNING レベルで初期化され、後続の INFO ログが全て抑制される）
 _env_path = Path(__file__).parent / ".env"
 _env_example_path = Path(__file__).parent / ".env.example"
+_env_fallback_warning: str = ""
 if _env_path.exists():
     load_dotenv(_env_path)
 elif _env_example_path.exists():
     load_dotenv(_env_example_path)
-    logging.warning(
+    _env_fallback_warning = (
         ".env not found. Loaded .env.example as fallback. "
         "Create .env with your actual credentials."
     )
@@ -56,10 +59,15 @@ def setup_logging() -> None:
         format=log_format,
         datefmt=date_format,
         handlers=handlers,
+        force=True,  # 既存ハンドラを強制的に置き換え（モジュール初期化時の先行設定を上書き）
     )
 
     # ccxt の内部ログをWARN以上のみ表示（ノイズ抑制）
     logging.getLogger("ccxt").setLevel(logging.WARNING)
+
+    # dotenv フォールバック警告をロギング設定後に出力
+    if _env_fallback_warning:
+        logging.getLogger(__name__).warning(_env_fallback_warning)
 
 
 def run_once(
