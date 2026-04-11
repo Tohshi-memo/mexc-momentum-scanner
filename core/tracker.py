@@ -209,6 +209,7 @@ class SymbolTracker:
                     if price <= tracked.tp_price:
                         tracked.outcome = OUTCOME_TP_HIT
                         tracked.outcome_at = now_str
+                        # TP は実際の到達価格（有利方向なので現在値を使う）
                         tracked.outcome_price = price
                         newly_closed.append(tracked)
                         logger.info(
@@ -219,11 +220,12 @@ class SymbolTracker:
                     elif price >= tracked.sl_price:
                         tracked.outcome = OUTCOME_SL_HIT
                         tracked.outcome_at = now_str
-                        tracked.outcome_price = price
+                        # SL は設定値で固定（5分スリッページで損失が膨らまないよう）
+                        tracked.outcome_price = tracked.sl_price
                         newly_closed.append(tracked)
                         logger.warning(
-                            "✗ SL HIT: %s @ $%.8g (entry $%.8g, %+.2f%%)",
-                            tracked.symbol, price,
+                            "✗ SL HIT: %s triggered $%.8g, actual $%.8g (entry $%.8g, %+.2f%%)",
+                            tracked.symbol, tracked.sl_price, price,
                             tracked.detection_price, change_pct,
                         )
 
