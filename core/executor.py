@@ -159,7 +159,7 @@ class DryRunExecutor(BaseExecutor):
             else "N/A",
         )
         logger.info("  1h Change   : +%.2f%%", proposal.change_1h_pct)
-        logger.info("  Volume 24h  : $%,.0f USDT", proposal.volume_24h_usdt)
+        logger.info("  Volume 24h  : $%s USDT", f"{proposal.volume_24h_usdt:,.0f}")
         # ファンダ考察サマリー
         if proposal.fundamental is not None and proposal.fundamental.news_count >= 0:
             logger.info(
