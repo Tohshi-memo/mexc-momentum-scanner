@@ -231,15 +231,28 @@ class LiveExecutor(BaseExecutor):
 class ProposalBuilder:
     """AnalysisResult からトレード提案を組み立てるファクトリ。
 
-    SL/TP は .env の設定値を参照する。
+    SL 幅の決定ルール (損失低減のための volatility-aware 設計):
+      1. ATR が取得できれば SL_PCT = clamp(ATR% × ATR_SL_MULT, ATR_SL_MIN, ATR_SL_MAX)
+      2. 取得できなければ固定値 STOP_LOSS_PCT を使用
+      3. TP は RISK_REWARD_RATIO (デフォルト 2.0) × sl_pct で決定
+         → 1:2 リスクリワードを維持することで、勝率 33% でも損益分岐
+
     ショート前提のため:
         SL = entry_price * (1 + sl_pct / 100)  ← 上方向
         TP = entry_price * (1 - tp_pct / 100)  ← 下方向
     """
 
     def __init__(self) -> None:
-        self._sl_pct: float = float(os.getenv("STOP_LOSS_PCT", "2.0"))
-        self._tp_pct: float = float(os.getenv("TAKE_PROFIT_PCT", "4.0"))
+        # 固定フォールバック
+        self._fixed_sl_pct: float = float(os.getenv("STOP_LOSS_PCT", "2.0"))
+        self._fixed_tp_pct: float = float(os.getenv("TAKE_PROFIT_PCT", "4.0"))
+
+        # ATR ベース
+        self._use_atr_sl:  bool  = os.getenv("USE_ATR_SL", "true").lower() != "false"
+        self._atr_sl_mult: float = float(os.getenv("ATR_SL_MULT", "1.5"))
+        self._atr_sl_min:  float = float(os.getenv("ATR_SL_MIN", "1.0"))
+        self._atr_sl_max:  float = float(os.getenv("ATR_SL_MAX", "4.0"))
+        self._rr_ratio:    float = float(os.getenv("RISK_REWARD_RATIO", "2.0"))
 
     def build(
         self,
@@ -255,8 +268,21 @@ class ProposalBuilder:
             構造化された TradeProposal
         """
         entry = result.price
-        sl = entry * (1 + self._sl_pct / 100)
-        tp = entry * (1 - self._tp_pct / 100)
+
+        # SL 幅を決定
+        if self._use_atr_sl and result.atr_pct is not None and result.atr_pct > 0:
+            sl_pct = max(
+                self._atr_sl_min,
+                min(result.atr_pct * self._atr_sl_mult, self._atr_sl_max),
+            )
+        else:
+            sl_pct = self._fixed_sl_pct
+
+        # TP は RR 比で決定
+        tp_pct = sl_pct * self._rr_ratio
+
+        sl = entry * (1 + sl_pct / 100)
+        tp = entry * (1 - tp_pct / 100)
 
         return TradeProposal(
             symbol=result.symbol,
@@ -264,8 +290,8 @@ class ProposalBuilder:
             entry_price=entry,
             stop_loss=sl,
             take_profit=tp,
-            sl_pct=self._sl_pct,
-            tp_pct=self._tp_pct,
+            sl_pct=sl_pct,
+            tp_pct=tp_pct,
             rsi_at_entry=result.rsi,
             bb_upper_at_entry=result.bb_upper,
             volume_24h_usdt=result.volume_24h_usdt,

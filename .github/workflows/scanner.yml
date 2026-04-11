@@ -54,7 +54,24 @@ jobs:
       ANALYSIS_TIMEFRAME: '1h'
       OHLCV_LIMIT:       '100'
 
-      # --- リスク設定 ---
+      # --- 損失低減フィルター ---
+      RSI_4H_MAX:              '70'
+      USE_4H_FILTER:           'true'
+      VOLUME_LOOKBACK:         '20'
+      VOLUME_RISING_RATIO:     '1.8'
+      VOLUME_DECLINING_RATIO:  '0.8'
+      USE_VOLUME_FILTER:       'true'
+      ATR_PERIOD:              '14'
+      USE_ATR_SL:              'true'
+      ATR_SL_MULT:             '1.5'
+      ATR_SL_MIN:              '1.0'
+      ATR_SL_MAX:              '4.0'
+      RISK_REWARD_RATIO:       '2.0'
+      COOLDOWN_HOURS:          '48'
+      CIRCUIT_BREAKER_WINDOW:  '10'
+      CIRCUIT_BREAKER_LOSSES:  '5'
+
+      # --- リスク設定 (ATR 無効時のフォールバック) ---
       STOP_LOSS_PCT:     '2.0'
       TAKE_PROFIT_PCT:   '4.0'
 
