@@ -278,6 +278,63 @@ def print_confirmed_signal(symbol: str, entry: float, sl: float, tp: float,
     ))
 
 
+def print_tracking_status(tracked: list) -> None:
+    """追跡中の銘柄ステータスパネルを出力する。
+
+    Args:
+        tracked: TrackedSymbol のリスト
+    """
+    if not tracked:
+        return
+
+    table = Table(
+        box=box.SIMPLE_HEAD,
+        header_style="bold bright_green",
+        show_edge=False,
+        padding=(0, 2),
+        min_width=84,
+    )
+    table.add_column("SYMBOL",   style="bright_cyan",   min_width=26)
+    table.add_column("ENTRY",    style="dim",            justify="right", width=12)
+    table.add_column("NOW",      style="white",          justify="right", width=12)
+    table.add_column("CHANGE",   justify="right",        width=9)
+    table.add_column("MIN CHG",  style="bright_green",   justify="right", width=9)
+    table.add_column("TRACKED",  style="dim",            justify="right", width=7)
+    table.add_column("STATUS",   width=10)
+
+    for s in tracked:
+        chg     = s.current_change_pct
+        min_chg = (s.min_price - s.detection_price) / s.detection_price * 100
+
+        chg_style = "bright_green" if chg <= 0 else "bright_red"
+        chg_str   = f"[{chg_style}]{chg:+.2f}%[/{chg_style}]"
+
+        if s.hit_tp():
+            status = "[bold bright_green]✓ TP HIT[/bold bright_green]"
+        elif s.hit_sl():
+            status = "[bold bright_red]✗ SL HIT[/bold bright_red]"
+        else:
+            status = "[dim]● track[/dim]"
+
+        table.add_row(
+            s.symbol,
+            f"${s.detection_price:.6g}",
+            f"${s.current_price:.6g}",
+            chg_str,
+            f"{min_chg:.2f}%",
+            f"{s.hours_tracked:.1f}h",
+            status,
+        )
+
+    console.print(Panel(
+        table,
+        title=f"[bold]TRACKING  [{len(tracked)} active][/bold]",
+        border_style="bright_cyan",
+        box=box.DOUBLE,
+        padding=(0, 1),
+    ))
+
+
 def print_no_candidates() -> None:
     """候補なし時のメッセージを出力する。"""
     console.print(
