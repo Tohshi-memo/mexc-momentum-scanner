@@ -33,7 +33,10 @@ jobs:
 
       # --- 通知 ---
       DISCORD_WEBHOOK_URL:    ${{ secrets.DISCORD_WEBHOOK_URL }}
-      CRYPTOPANIC_API_KEY:    ${{ secrets.CRYPTOPANIC_API_KEY }}
+
+      # --- ファンダ設定 (RSS + Reddit, APIキー不要) ---
+      FUNDAMENTAL_LOOKBACK_HOURS: '48'
+      USE_REDDIT_NEWS:            'true'
 
       # --- 実行モード ---
       RUN_ONCE: 'true'
