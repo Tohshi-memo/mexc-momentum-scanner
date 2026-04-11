@@ -52,6 +52,8 @@ class TradeRecord:
     catalyst_type: str
     detection_rsi: float | None
     detection_1h_change: float
+    market_regime: str = "UNKNOWN"           # BEARISH / STAGNANT / BULLISH
+    detection_rel_strength: float = 0.0      # alt_1h - btc_1h (乖離度)
 
     @classmethod
     def from_tracked(cls, t: TrackedSymbol) -> "TradeRecord":
@@ -84,6 +86,8 @@ class TradeRecord:
             catalyst_type=t.catalyst_type,
             detection_rsi=t.detection_rsi,
             detection_1h_change=t.detection_1h_change,
+            market_regime=t.market_regime,
+            detection_rel_strength=t.detection_rel_strength,
         )
 
 
@@ -223,18 +227,31 @@ class StatsManager:
 
     def summary_by_conviction(self) -> dict[str, dict[str, Any]]:
         """conviction 別のミニサマリー（勝率分析用）。"""
+        return self._grouped_summary(lambda r: r.conviction)
+
+    def summary_by_regime(self) -> dict[str, dict[str, Any]]:
+        """market_regime 別のミニサマリー。
+
+        BEARISH / STAGNANT / BULLISH 各局面でどの程度勝てているかを見る。
+        BULLISH (乖離検出) が有効に働いているかの検証に使う。
+        """
+        return self._grouped_summary(lambda r: r.market_regime or "UNKNOWN")
+
+    def _grouped_summary(
+        self, key_func: "Any"
+    ) -> dict[str, dict[str, Any]]:
         groups: dict[str, list[TradeRecord]] = {}
         for r in self._records:
-            groups.setdefault(r.conviction, []).append(r)
+            groups.setdefault(key_func(r), []).append(r)
 
         out: dict[str, dict[str, Any]] = {}
-        for conv, records in groups.items():
-            wins   = sum(1 for r in records if r.outcome == OUTCOME_TP_HIT)
-            losses = sum(1 for r in records if r.outcome == OUTCOME_SL_HIT)
+        for key, records in groups.items():
+            wins    = sum(1 for r in records if r.outcome == OUTCOME_TP_HIT)
+            losses  = sum(1 for r in records if r.outcome == OUTCOME_SL_HIT)
             decided = wins + losses
-            wr = (wins / decided * 100) if decided > 0 else 0.0
+            wr  = (wins / decided * 100) if decided > 0 else 0.0
             avg = sum(r.pnl_pct for r in records) / len(records) if records else 0.0
-            out[conv] = {
+            out[key] = {
                 "total":    len(records),
                 "wins":     wins,
                 "losses":   losses,
@@ -256,14 +273,23 @@ class StatsManager:
         logger.debug("Stats saved: %d record(s).", len(self._records))
 
     def _load(self) -> None:
-        """JSON ファイルから記録を読み込む。"""
+        """JSON ファイルから記録を読み込む。
+
+        旧形式 (market_regime / detection_rel_strength なし) も読めるよう
+        setdefault で欠落フィールドを埋める。
+        """
         if not self._file.exists():
             logger.debug("No stats file found. Starting fresh.")
             return
         try:
             with self._file.open(encoding="utf-8") as f:
                 data = json.load(f)
-            self._records = [TradeRecord(**entry) for entry in data]
+            records: list[TradeRecord] = []
+            for entry in data:
+                entry.setdefault("market_regime", "UNKNOWN")
+                entry.setdefault("detection_rel_strength", 0.0)
+                records.append(TradeRecord(**entry))
+            self._records = records
             logger.info("Loaded %d trade record(s) from stats file.", len(self._records))
         except Exception as e:
             logger.warning("Failed to load stats file: %s", e)

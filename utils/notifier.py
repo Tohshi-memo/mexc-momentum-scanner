@@ -51,10 +51,17 @@ class Notifier:
         conviction: str,
         catalyst: str,
         news_count: int,
+        regime: str = "UNKNOWN",
+        relative_strength: float = 0.0,
     ) -> None:
         """新しいシグナル検出を通知する。"""
         conv_emoji = {"HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}.get(conviction, "⚪")
         cat_label  = "❌ NO CATALYST" if catalyst == "NONE" else f"📰 {catalyst}"
+        regime_emoji = {
+            "BEARISH":  "🔻",
+            "STAGNANT": "⏸️",
+            "BULLISH":  "🔺",
+        }.get(regime, "❔")
 
         embed: dict[str, Any] = {
             "title":  f"🎯  NEW SHORT SIGNAL  ─  {symbol}",
@@ -65,6 +72,8 @@ class Notifier:
                 {"name": "TAKE PROFIT", "value": f"`${tp:.8g}`  (-{tp_pct:.1f}%)", "inline": True},
                 {"name": "RSI",         "value": f"`{rsi:.1f}` OVERBOUGHT" if rsi else "N/A", "inline": True},
                 {"name": "1H CHANGE",   "value": f"`+{change_1h:.2f}%`",            "inline": True},
+                {"name": "vs BTC",      "value": f"`{relative_strength:+.2f}%`",    "inline": True},
+                {"name": "BTC REGIME",  "value": f"{regime_emoji}  `{regime}`",     "inline": True},
                 {"name": "CONVICTION",  "value": f"{conv_emoji}  `{conviction}`",   "inline": True},
                 {"name": "FUNDAMENTAL", "value": f"{cat_label}  ({news_count} news in 48h)", "inline": False},
             ],

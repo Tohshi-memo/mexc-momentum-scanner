@@ -43,11 +43,13 @@ jobs:
       DRY_RUN:  ${{ github.event.inputs.dry_run || 'true' }}
 
       # --- スキャン設定 ---
-      BTC_BEARISH_THRESHOLD:  '-0.5'
-      BTC_STAGNANT_THRESHOLD: '0.2'
-      ALT_SURGE_THRESHOLD:    '5.0'
-      MIN_24H_VOLUME_USDT:    '1000000'
-      MAX_OHLCV_CHECKS:       '50'
+      BTC_BEARISH_THRESHOLD:       '-0.5'
+      BTC_STAGNANT_THRESHOLD:      '0.2'
+      ALT_SURGE_THRESHOLD:         '5.0'
+      # BTC 上昇時でも「乖離した独歩高」を検出するための相対強度閾値
+      RELATIVE_STRENGTH_THRESHOLD: '5.0'
+      MIN_24H_VOLUME_USDT:         '1000000'
+      MAX_OHLCV_CHECKS:            '50'
 
       # --- テクニカル設定 ---
       RSI_PERIOD:        '14'

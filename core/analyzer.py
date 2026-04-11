@@ -38,6 +38,7 @@ class AnalysisResult:
     symbol: str
     price: float
     change_1h_pct: float
+    relative_strength_pct: float   # alt_1h - btc_1h (乖離度)
     volume_24h_usdt: float
 
     # RSI
@@ -241,6 +242,7 @@ class TechnicalAnalyzer:
             symbol=candidate.symbol,
             price=current_price,
             change_1h_pct=candidate.change_1h_pct,
+            relative_strength_pct=candidate.relative_strength_pct,
             volume_24h_usdt=candidate.volume_24h_usdt,
             rsi=rsi_value,
             is_rsi_overbought=is_rsi_ob,

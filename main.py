@@ -161,15 +161,17 @@ def run_once(
         is_bearish=btc_status.is_bearish,
         is_stagnant=btc_status.is_stagnant,
         is_signal=btc_status.is_signal_active,
+        regime=btc_status.regime,
     )
 
+    # BTC データが取れなかった場合のみスキップ (regime は常にスキャン)
     if not btc_status.is_signal_active:
         print_no_candidates()
         _finalize_expired(tracker, stats, notifier)
         return
 
     # ── Step 2: 急騰銘柄リスト ────────────────────────────────────────
-    print_scan_result(surge_candidates)
+    print_scan_result(surge_candidates, regime=btc_status.regime)
     if not surge_candidates:
         _finalize_expired(tracker, stats, notifier)
         return
@@ -225,6 +227,8 @@ def run_once(
                 change_1h=result.change_1h_pct,
                 volume=result.volume_24h_usdt,
                 fundamental=fundamental,
+                relative_strength=result.relative_strength_pct,
+                regime=btc_status.regime,
             )
 
             conviction = fundamental.short_conviction if fundamental else "MEDIUM"
@@ -243,6 +247,8 @@ def run_once(
                 tp_price=proposal.take_profit,
                 conviction=conviction,
                 catalyst_type=fundamental.catalyst_type if fundamental else "UNKNOWN",
+                market_regime=btc_status.regime,
+                detection_rel_strength=result.relative_strength_pct,
             )
 
             if is_new:
@@ -258,6 +264,8 @@ def run_once(
                     conviction=conviction,
                     catalyst=fundamental.catalyst_type if fundamental else "UNKNOWN",
                     news_count=fundamental.news_count if fundamental else -1,
+                    regime=btc_status.regime,
+                    relative_strength=result.relative_strength_pct,
                 )
 
         except Exception as e:

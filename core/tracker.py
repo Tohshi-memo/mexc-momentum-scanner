@@ -54,6 +54,8 @@ class TrackedSymbol:
     tp_price: float
     conviction: str         # HIGH / MEDIUM / LOW
     catalyst_type: str = "UNKNOWN"
+    market_regime: str = "UNKNOWN"   # BEARISH / STAGNANT / BULLISH
+    detection_rel_strength: float = 0.0  # alt_1h - btc_1h (乖離度)
 
     # outcome 管理（先に到達した方で確定）
     outcome: str = OUTCOME_ACTIVE        # ACTIVE | TP_HIT | SL_HIT | EXPIRED
@@ -136,6 +138,8 @@ class SymbolTracker:
         tp_price: float,
         conviction: str,
         catalyst_type: str = "UNKNOWN",
+        market_regime: str = "UNKNOWN",
+        detection_rel_strength: float = 0.0,
     ) -> bool:
         """新しいシグナルを追跡リストに追加する。
 
@@ -161,6 +165,8 @@ class SymbolTracker:
             tp_price=tp_price,
             conviction=conviction,
             catalyst_type=catalyst_type,
+            market_regime=market_regime,
+            detection_rel_strength=detection_rel_strength,
         )
         logger.info(
             "Started tracking %s for %dh (until %s).",
@@ -280,6 +286,7 @@ class SymbolTracker:
                     "symbol", "detected_at", "expires_at",
                     "detection_price", "detection_rsi", "detection_1h_change",
                     "sl_price", "tp_price", "conviction", "catalyst_type",
+                    "market_regime", "detection_rel_strength",
                     "outcome", "outcome_at", "outcome_price",
                 ]
             }
@@ -309,6 +316,8 @@ class SymbolTracker:
                 prices = [PricePoint(**p) for p in entry.pop("prices", [])]
                 # 旧形式との互換：欠落フィールドをデフォルトで埋める
                 entry.setdefault("catalyst_type", "UNKNOWN")
+                entry.setdefault("market_regime", "UNKNOWN")
+                entry.setdefault("detection_rel_strength", 0.0)
                 entry.setdefault("outcome", OUTCOME_ACTIVE)
                 entry.setdefault("outcome_at", None)
                 entry.setdefault("outcome_price", None)

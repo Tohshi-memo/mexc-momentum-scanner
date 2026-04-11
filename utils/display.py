@@ -168,7 +168,8 @@ def print_cooldown_skip(symbol: str) -> None:
 
 
 def print_btc_status(price: float, change_1h: float, is_bearish: bool,
-                     is_stagnant: bool, is_signal: bool) -> None:
+                     is_stagnant: bool, is_signal: bool,
+                     regime: str = "STAGNANT") -> None:
     """BTC ステータスパネルを出力する。"""
     if is_bearish:
         clr, label, border = "bright_red",    "▼ BEARISH",  "red"
@@ -179,10 +180,21 @@ def print_btc_status(price: float, change_1h: float, is_bearish: bool,
 
     sign  = "+" if change_1h >= 0 else ""
     gauge = _bar(change_1h, max_val=2.0, width=10)
-    sig   = (
-        "[bold bright_green]██ ACTIVE  ──►  SCANNING ALTS[/bold bright_green]"
-        if is_signal else "[dim]── INACTIVE  (BTC is moving, skip)[/dim]"
-    )
+
+    if is_signal:
+        if regime == "BULLISH":
+            sig = (
+                "[bold bright_cyan]██ ACTIVE  ──►  "
+                "DECOUPLING SCAN[/bold bright_cyan]"
+            )
+        else:
+            sig = (
+                "[bold bright_green]██ ACTIVE  ──►  "
+                "SCANNING ALTS[/bold bright_green]"
+            )
+    else:
+        sig = "[dim]── INACTIVE  (BTC data unavailable)[/dim]"
+
     content = (
         f"  [dim]PRICE  [/dim][bold white]${price:>14,.4f}[/bold white]\n"
         f"  [dim]1H CHG [/dim][{clr}]{sign}{change_1h:.2f}%[/{clr}]"
@@ -198,11 +210,12 @@ def print_btc_status(price: float, change_1h: float, is_bearish: bool,
     ))
 
 
-def print_scan_result(candidates: list) -> None:
+def print_scan_result(candidates: list, regime: str = "STAGNANT") -> None:
     """スキャン結果テーブルを出力する。
 
     Args:
         candidates: SurgeCandidate のリスト
+        regime:     BTC の現在レジーム (BEARISH / STAGNANT / BULLISH)
     """
     if not candidates:
         console.print(Panel(
@@ -219,29 +232,37 @@ def print_scan_result(candidates: list) -> None:
         header_style="bold bright_green",
         show_edge=False,
         padding=(0, 2),
-        min_width=84,
+        min_width=90,
     )
     table.add_column("RNK",    style="dim",          width=4)
-    table.add_column("SYMBOL", style="bright_cyan",  min_width=26)
+    table.add_column("SYMBOL", style="bright_cyan",  min_width=24)
     table.add_column("1H",     style="bright_yellow",justify="right", width=9)
-    table.add_column("VOL 24H",style="white",        justify="right", width=12)
-    table.add_column("CHART",  min_width=14)
+    table.add_column("vs BTC", style="bright_magenta",justify="right", width=9)
+    table.add_column("VOL 24H",style="white",        justify="right", width=11)
+    table.add_column("CHART",  min_width=12)
 
     max_chg = max(c.change_1h_pct for c in candidates)
     for i, c in enumerate(candidates[:10], 1):
         vol = f"${c.volume_24h_usdt / 1_000_000:.1f}M"
+        rel = getattr(c, "relative_strength_pct", 0.0)
         table.add_row(
             f"#{i:02d}",
             c.symbol,
             f"+{c.change_1h_pct:.2f}%",
+            f"{rel:+.2f}%",
             vol,
             _bar(c.change_1h_pct, max_val=max_chg, width=12),
         )
 
     n = len(candidates)
+    regime_note = {
+        "BEARISH":  "[dim]BTC weak — classic counter-trend surge[/dim]",
+        "STAGNANT": "[dim]BTC flat — any clear surge[/dim]",
+        "BULLISH":  "[bright_cyan]BTC rising — decoupled / abnormal surges only[/bright_cyan]",
+    }.get(regime, "")
     header_txt = (
         f"  [bold bright_yellow]{n} SURGE CANDIDATE{'S' if n > 1 else ''}[/bold bright_yellow]"
-        f"  [dim]detected while BTC is weak / stagnant[/dim]\n"
+        f"  {regime_note}\n"
     )
     console.print(Panel(
         Group(Text.from_markup(header_txt), table),
@@ -275,12 +296,14 @@ def print_analysis_result(result) -> None:
         "bright_red" if result.is_4h_trend_established else "bright_green"
     )
 
+    rel = getattr(result, "relative_strength_pct", 0.0)
     console.print(
-        f"  {mark}  [bright_cyan]{result.symbol:<24}[/bright_cyan]"
+        f"  {mark}  [bright_cyan]{result.symbol:<22}[/bright_cyan]"
         f"  [dim]RSI[/dim] [bright_yellow]{rsi_str}[/bright_yellow]"
         f"  [dim]BB[/dim] {bb_mark}"
         f"  [dim]VOL[/dim] {vol_mark}"
         f"  [dim]4h[/dim] [{rsi_4h_style}]{rsi_4h_str}[/{rsi_4h_style}]"
+        f"  [dim]Δ[/dim] [bright_magenta]{rel:+.1f}%[/bright_magenta]"
         f"  [dim]@${result.price:.6g}[/dim]"
     )
     # 却下理由がある場合は dim 表示
@@ -293,7 +316,9 @@ def print_analysis_result(result) -> None:
 def print_confirmed_signal(symbol: str, entry: float, sl: float, tp: float,
                             sl_pct: float, tp_pct: float, rsi: float | None,
                             bb_upper: float | None, change_1h: float,
-                            volume: float, fundamental) -> None:
+                            volume: float, fundamental,
+                            relative_strength: float = 0.0,
+                            regime: str = "UNKNOWN") -> None:
     """確認済みシグナルと擬似トレード提案をパネルで出力する。"""
     conviction  = fundamental.short_conviction if fundamental else "UNKNOWN"
     conv_style  = _conviction_style(conviction)
@@ -318,6 +343,12 @@ def print_confirmed_signal(symbol: str, entry: float, sl: float, tp: float,
     rsi_str = f"{rsi:.1f}" if rsi is not None else "N/A"
     bb_str  = f"${bb_upper:.8g}" if bb_upper is not None else "N/A"
 
+    regime_style = {
+        "BEARISH":  "bright_red",
+        "STAGNANT": "bright_yellow",
+        "BULLISH":  "bright_cyan",
+    }.get(regime, "white")
+
     # ── テクニカル列 ──────────────────────────────
     tech_lines = (
         f"  [dim]ENTRY[/dim]  [bold white]${entry:.8g}[/bold white]\n"
@@ -333,7 +364,9 @@ def print_confirmed_signal(symbol: str, entry: float, sl: float, tp: float,
         f"  [bold bright_yellow][OVERBOUGHT ▲][/bold bright_yellow]\n"
         f"  [dim]BB   [/dim]  PRICE > {bb_str}"
         f"  [bold bright_yellow][BREAK ↑][/bold bright_yellow]\n"
-        f"  [dim]1H   [/dim]  [bright_yellow]+{change_1h:.2f}%[/bright_yellow]\n"
+        f"  [dim]1H   [/dim]  [bright_yellow]+{change_1h:.2f}%[/bright_yellow]"
+        f"  [dim]vs BTC[/dim] [bright_magenta]{relative_strength:+.2f}%[/bright_magenta]\n"
+        f"  [dim]RGME [/dim]  [{regime_style}]{regime}[/{regime_style}]\n"
         f"  [dim]VOL  [/dim]  ${volume:,.0f} USDT\n"
     )
 
