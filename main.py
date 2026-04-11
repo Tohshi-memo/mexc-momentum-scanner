@@ -16,9 +16,9 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-# .env を最優先でロード（存在しない場合は .env.example の値を参照）
+# .env を最優先でロード
 # ※ logging.warning() はここでは呼ばない（setup_logging() より先に呼ぶと
-#   root logger が WARNING レベルで初期化され、後続の INFO ログが全て抑制される）
+#   root logger が WARNING レベルで初期化され後続の INFO ログが抑制される）
 _env_path = Path(__file__).parent / ".env"
 _env_example_path = Path(__file__).parent / ".env.example"
 _env_fallback_warning: str = ""
@@ -35,152 +35,192 @@ from core.analyzer import TechnicalAnalyzer
 from core.executor import ExecutorFactory, ProposalBuilder
 from core.fundamental import FundamentalAnalyzer
 from core.scanner import MarketScanner
+from utils.display import (
+    console,
+    print_analysis_result,
+    print_btc_status,
+    print_confirmed_signal,
+    print_cycle_footer,
+    print_header,
+    print_no_candidates,
+    print_scan_result,
+)
 from utils.mexc_client import MEXCClient
 
 
 def setup_logging() -> None:
-    """ロギングをファイルとコンソールの両方に設定する。"""
+    """ロギングをファイル専用に設定する。
+
+    コンソール出力は rich (display.py) が担当するため、
+    logging は artifact ログファイルへの記録のみ行う。
+    WARNING 以上のみ rich コンソールにも出力する。
+    """
+    from rich.logging import RichHandler
+
     log_level_str: str = os.getenv("LOG_LEVEL", "INFO").upper()
     log_level: int = getattr(logging, log_level_str, logging.INFO)
     log_file: str = os.getenv("LOG_FILE", "logs/scanner.log")
 
-    # logs/ ディレクトリを作成
     Path(log_file).parent.mkdir(parents=True, exist_ok=True)
 
-    log_format = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
-    date_format = "%Y-%m-%d %H:%M:%S"
-
     handlers: list[logging.Handler] = [
-        logging.StreamHandler(sys.stdout),
+        # WARNING 以上のみ rich コンソールに出力（エラーを見逃さないため）
+        RichHandler(
+            console=console,
+            level=logging.WARNING,
+            rich_tracebacks=True,
+            show_path=False,
+        ),
+        # INFO 以上はすべてファイルに記録
         logging.FileHandler(log_file, encoding="utf-8"),
     ]
 
     logging.basicConfig(
         level=log_level,
-        format=log_format,
-        datefmt=date_format,
+        format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
         handlers=handlers,
-        force=True,  # 既存ハンドラを強制的に置き換え（モジュール初期化時の先行設定を上書き）
+        force=True,
     )
 
-    # ccxt の内部ログをWARN以上のみ表示（ノイズ抑制）
     logging.getLogger("ccxt").setLevel(logging.WARNING)
 
-    # dotenv フォールバック警告をロギング設定後に出力
     if _env_fallback_warning:
         logging.getLogger(__name__).warning(_env_fallback_warning)
 
 
 def run_once(
+    cycle: int,
     scanner: MarketScanner,
     analyzer: TechnicalAnalyzer,
     fundamental_analyzer: FundamentalAnalyzer,
     builder: ProposalBuilder,
     executor,
+    dry_run: bool,
 ) -> None:
-    """スキャン → テクニカル分析 → ファンダ考察 → 実行の1サイクル。
-
-    Args:
-        scanner: MarketScanner インスタンス
-        analyzer: TechnicalAnalyzer インスタンス
-        fundamental_analyzer: FundamentalAnalyzer インスタンス
-        builder: ProposalBuilder インスタンス
-        executor: BaseExecutor の具体実装 (DryRun or Live)
-    """
+    """スキャン → テクニカル分析 → ファンダ考察 → 実行の1サイクル。"""
     logger = logging.getLogger(__name__)
 
-    # Step 1: スキャン
+    # ── ヘッダー ────────────────────────────────────────────────
+    print_header(cycle, dry_run)
+
+    # ── Step 1: BTC ステータス確認 ──────────────────────────────
     btc_status, surge_candidates = scanner.run_scan()
 
-    if not surge_candidates:
-        logger.info("No surge candidates found. Waiting for next cycle.")
+    print_btc_status(
+        price=btc_status.price,
+        change_1h=btc_status.change_1h_pct,
+        is_bearish=btc_status.is_bearish,
+        is_stagnant=btc_status.is_stagnant,
+        is_signal=btc_status.is_signal_active,
+    )
+
+    if not btc_status.is_signal_active:
+        logger.info("BTC signal not active. Skipping alt scan.")
+        print_no_candidates()
         return
 
-    logger.info(
-        "Found %d surge candidate(s). Starting technical analysis...",
-        len(surge_candidates),
+    # ── Step 2: 急騰銘柄リスト ──────────────────────────────────
+    print_scan_result(surge_candidates)
+
+    if not surge_candidates:
+        logger.info("No surge candidates found.")
+        return
+
+    # ── Step 3: テクニカル分析 ──────────────────────────────────
+    console.print(
+        "\n  [dim]TECHNICAL ANALYSIS ─────────────────────────────────[/dim]"
     )
-    for c in surge_candidates:
-        logger.info(
-            "  Candidate: %s +%.2f%% vol=$%.0f",
-            c.symbol, c.change_1h_pct, c.volume_24h_usdt,
+    analysis_results = analyzer.analyze_candidates(surge_candidates)
+    for r in analysis_results:
+        print_analysis_result(
+            symbol=r.symbol,
+            rsi=r.rsi,
+            bb_upper=r.bb_upper,
+            price=r.price,
+            is_confirmed=r.is_confirmed_signal,
         )
 
-    # Step 2: テクニカル分析
-    analysis_results = analyzer.analyze_candidates(surge_candidates)
-    confirmed_signals = [r for r in analysis_results if r.is_confirmed_signal]
-
-    if not confirmed_signals:
+    confirmed = [r for r in analysis_results if r.is_confirmed_signal]
+    if not confirmed:
         logger.info("No confirmed signals after technical analysis.")
+        console.print(
+            "\n  [dim]▸ No confirmed signals (RSI < 75 or price below BB upper).[/dim]\n"
+        )
         return
 
-    logger.info(
-        "%d confirmed signal(s). Starting fundamental analysis...",
-        len(confirmed_signals),
-    )
-
-    # Step 3: ファンダ考察（テクニカル確認済み銘柄のみ）
-    for result in confirmed_signals:
+    # ── Step 4: ファンダ考察 + 擬似注文出力 ────────────────────
+    console.print()
+    for result in confirmed:
         try:
             fundamental = fundamental_analyzer.analyze(result.symbol)
-            proposal = builder.build(result, fundamental)
+            proposal    = builder.build(result, fundamental)
             executor.execute(proposal)
+
+            print_confirmed_signal(
+                symbol=result.symbol,
+                entry=proposal.entry_price,
+                sl=proposal.stop_loss,
+                tp=proposal.take_profit,
+                sl_pct=proposal.sl_pct,
+                tp_pct=proposal.tp_pct,
+                rsi=result.rsi,
+                bb_upper=result.bb_upper,
+                change_1h=result.change_1h_pct,
+                volume=result.volume_24h_usdt,
+                fundamental=fundamental,
+            )
         except Exception as e:
             logger.error("Failed to process %s: %s", result.symbol, e)
 
 
 def main() -> None:
-    """メインループ。SCAN_INTERVAL_SECONDS ごとにスキャンサイクルを実行する。
-
-    RUN_ONCE=true の場合は1サイクルのみ実行して終了する（GitHub Actions 向け）。
-    """
+    """メインループ。SCAN_INTERVAL_SECONDS ごとにスキャンサイクルを実行する。"""
     setup_logging()
     logger = logging.getLogger(__name__)
 
     run_once_mode: bool = os.getenv("RUN_ONCE", "false").lower() == "true"
     scan_interval: int = int(os.getenv("SCAN_INTERVAL_SECONDS", "300"))
+    dry_run: bool = os.getenv("DRY_RUN", "true").lower() != "false"
 
-    logger.info("=" * 60)
-    logger.info("MEXC Momentum Scanner starting up")
     logger.info(
-        "Mode: %s | DRY_RUN=%s",
-        "RUN_ONCE" if run_once_mode else f"LOOP every {scan_interval}s",
-        os.getenv("DRY_RUN", "true"),
+        "MEXC Momentum Scanner starting | mode=%s dry_run=%s",
+        "RUN_ONCE" if run_once_mode else f"LOOP/{scan_interval}s",
+        dry_run,
     )
-    logger.info("=" * 60)
 
-    # 依存オブジェクトの初期化
-    client = MEXCClient()
-    scanner = MarketScanner(client)
-    analyzer = TechnicalAnalyzer(client)
+    client              = MEXCClient()
+    scanner             = MarketScanner(client)
+    analyzer            = TechnicalAnalyzer(client)
     fundamental_analyzer = FundamentalAnalyzer()
-    builder = ProposalBuilder()
-    executor = ExecutorFactory.create(client)
+    builder             = ProposalBuilder()
+    executor            = ExecutorFactory.create(client)
 
     cycle: int = 0
 
     while True:
         cycle += 1
-        logger.info("--- Cycle #%d ---", cycle)
-
         try:
-            run_once(scanner, analyzer, fundamental_analyzer, builder, executor)
+            run_once(
+                cycle, scanner, analyzer,
+                fundamental_analyzer, builder, executor, dry_run,
+            )
         except KeyboardInterrupt:
-            logger.info("Interrupted by user. Shutting down.")
+            console.print("\n  [dim]Interrupted. Shutting down.[/dim]")
             break
         except Exception as e:
-            logger.error("Unhandled error in scan cycle #%d: %s", cycle, e, exc_info=True)
+            logger.error("Unhandled error in cycle #%d: %s", cycle, e, exc_info=True)
 
-        # RUN_ONCE モードは1サイクルで終了
         if run_once_mode:
-            logger.info("RUN_ONCE mode: exiting after cycle #%d.", cycle)
+            print_cycle_footer(cycle)
+            logger.info("RUN_ONCE: exiting after cycle #%d.", cycle)
             break
 
-        logger.info("Cycle #%d done. Next scan in %ds...", cycle, scan_interval)
+        print_cycle_footer(cycle, next_in=scan_interval)
         try:
             time.sleep(scan_interval)
         except KeyboardInterrupt:
-            logger.info("Interrupted during sleep. Shutting down.")
+            console.print("\n  [dim]Interrupted during sleep. Shutting down.[/dim]")
             break
 
 
