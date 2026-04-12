@@ -28,10 +28,12 @@ elif _env_example_path.exists():
 
 from core.analyzer import TechnicalAnalyzer
 from core.executor import ExecutorFactory, ProposalBuilder
+from core.experiment import ExperimentTracker, FilterSnapshot
 from core.fundamental import FundamentalAnalyzer
 from core.scanner import MarketScanner
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
+from tools.analyze_experiments import generate_report as generate_experiment_report
 from utils.display import (
     console,
     print_analysis_result,
@@ -87,6 +89,8 @@ def run_once(
     tracker: SymbolTracker,
     stats: StatsManager,
     notifier: Notifier,
+    experiment_tracker: ExperimentTracker,
+    experiment_max_per_cycle: int,
     dry_run: bool,
     cooldown_hours: int,
     cb_window: int,
@@ -116,6 +120,14 @@ def run_once(
     # ── 実績パネル ───────────────────────────────────────────────────
     summary = stats.summary(recent_window=cb_window)
     print_stats_panel(summary)
+
+    # ── シャドウトレードの価格更新 (フィルター実験用) ────────────────
+    # 実トレードと独立したパイプライン。STRICT 通過/外を問わず、
+    # 全ての過去候補の outcome をここで確定させる。
+    try:
+        experiment_tracker.update(scanner._client)
+    except Exception as e:
+        logger.warning("Experiment tracker update failed: %s", e)
 
     # ── 追跡中銘柄の価格更新 + TP/SL 到達の記録 ──────────────────────
     newly_closed = tracker.update_prices(scanner._client)
@@ -181,6 +193,20 @@ def run_once(
     analysis_results = analyzer.analyze_candidates(surge_candidates)
     for r in analysis_results:
         print_analysis_result(r)
+
+    # ── シャドウトレード登録 (フィルター実験用) ──────────────────────
+    # confirmed/rejected を問わず、最大 N 件まで仮想エントリー。
+    # ProposalBuilder で本番と同じ ATR ベース SL/TP を計算するため、
+    # 後の集計で「STRICT に通っていたら何が起きていたか」を比較できる。
+    _register_shadow_trades(
+        analysis_results,
+        builder=builder,
+        experiment_tracker=experiment_tracker,
+        btc_change_1h=btc_status.change_1h_pct,
+        regime=btc_status.regime,
+        max_per_cycle=experiment_max_per_cycle,
+        logger=logger,
+    )
 
     confirmed = [r for r in analysis_results if r.is_confirmed_signal]
     if not confirmed:
@@ -275,6 +301,63 @@ def run_once(
     _finalize_expired(tracker, stats, notifier)
 
 
+def _register_shadow_trades(
+    analysis_results,
+    *,
+    builder: ProposalBuilder,
+    experiment_tracker: ExperimentTracker,
+    btc_change_1h: float,
+    regime: str,
+    max_per_cycle: int,
+    logger: logging.Logger,
+) -> None:
+    """全候補をシャドウトレードとして登録する。
+
+    ProposalBuilder で本番と同じ SL/TP を計算するため、
+    後で『現行 STRICT に通っていなくても結果はどうだったか』
+    『RSI 閾値を 70 に下げていたら？』のような re-eval が同じデータで可能。
+    """
+    if not analysis_results or max_per_cycle <= 0:
+        return
+
+    added = 0
+    for r in analysis_results:
+        if added >= max_per_cycle:
+            break
+        try:
+            proposal = builder.build(r)
+            price_vs_bb = (
+                r.price / r.bb_upper if r.bb_upper and r.bb_upper > 0 else 0.0
+            )
+            snapshot = FilterSnapshot(
+                rsi=r.rsi,
+                rsi_4h=r.rsi_4h,
+                bb_upper=r.bb_upper,
+                price_vs_bb=price_vs_bb,
+                volume_ratio=r.volume_trend_ratio,
+                volume_trend=r.volume_trend,
+                atr_pct=r.atr_pct,
+                change_1h=r.change_1h_pct,
+                relative_strength=r.relative_strength_pct,
+                btc_change_1h=btc_change_1h,
+            )
+            registered = experiment_tracker.add_candidate(
+                symbol=r.symbol,
+                entry_price=proposal.entry_price,
+                sl_price=proposal.stop_loss,
+                tp_price=proposal.take_profit,
+                sl_pct=proposal.sl_pct,
+                tp_pct=proposal.tp_pct,
+                market_regime=regime,
+                filters=snapshot,
+                confirmed_strict=r.is_confirmed_signal,
+            )
+            if registered:
+                added += 1
+        except Exception as e:
+            logger.debug("Shadow registration failed for %s: %s", r.symbol, e)
+
+
 def _finalize_expired(
     tracker: SymbolTracker,
     stats: StatsManager,
@@ -319,6 +402,9 @@ def main() -> None:
     cb_window:         int = int(os.getenv("CIRCUIT_BREAKER_WINDOW", "10"))
     cb_loss_threshold: int = int(os.getenv("CIRCUIT_BREAKER_LOSSES", "5"))
 
+    # 実験用シャドウトレード設定
+    experiment_max_per_cycle: int = int(os.getenv("EXPERIMENT_MAX_PER_CYCLE", "20"))
+
     logger.info(
         "MEXC Scanner starting | mode=%s dry_run=%s cooldown=%dh cb=%d/%d",
         "RUN_ONCE" if run_once_mode else f"LOOP/{scan_interval}s",
@@ -334,6 +420,7 @@ def main() -> None:
     tracker              = SymbolTracker()
     stats                = StatsManager()
     notifier             = Notifier()
+    experiment_tracker   = ExperimentTracker()
 
     cycle: int = 0
 
@@ -342,8 +429,9 @@ def main() -> None:
         try:
             run_once(
                 cycle, scanner, analyzer, fundamental_analyzer,
-                builder, executor, tracker, stats, notifier, dry_run,
-                cooldown_hours, cb_window, cb_loss_threshold,
+                builder, executor, tracker, stats, notifier,
+                experiment_tracker, experiment_max_per_cycle,
+                dry_run, cooldown_hours, cb_window, cb_loss_threshold,
             )
         except KeyboardInterrupt:
             console.print("\n  [dim]Interrupted. Shutting down.[/dim]")
@@ -354,8 +442,15 @@ def main() -> None:
             try:
                 tracker.save()
                 stats.save()
+                experiment_tracker.save()
             except Exception as e:
                 logger.error("Failed to save data: %s", e)
+            # シャドウトレードの集計レポートを再生成
+            # （Claude が次回セッションでフィルター粒度を再評価するための入力）
+            try:
+                generate_experiment_report()
+            except Exception as e:
+                logger.warning("Failed to regenerate experiment report: %s", e)
 
         if run_once_mode:
             print_cycle_footer(cycle)

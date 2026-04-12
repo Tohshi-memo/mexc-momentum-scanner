@@ -83,6 +83,12 @@ jobs:
       # --- 追跡設定 ---
       TRACKING_HOURS:    '24'
 
+      # --- フィルター粒度実験 (シャドウトレード) ---
+      # 全候補 (STRICT 通過/外問わず) を仮想追跡し、フィルター変更時の
+      # PnL を後から再評価できるようにする。実トレードには影響しない。
+      EXPERIMENT_TRACKING_HOURS: '8'
+      EXPERIMENT_MAX_PER_CYCLE:  '20'
+
       # --- ログ ---
       LOG_LEVEL: 'INFO'
       LOG_FILE:  'logs/scanner.log'
