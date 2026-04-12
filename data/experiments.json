@@ -82,7 +82,7 @@
       "hours_held": null,
       "max_favorable_pct": 7.664756446991408,
       "max_adverse_pct": -2.852196752626548,
-      "last_price": 0.7824
+      "last_price": 0.78849
     },
     {
       "symbol": "BIANRENSHENG/USDT:USDT",
@@ -166,7 +166,7 @@
       "hours_held": null,
       "max_favorable_pct": 6.0112139783544,
       "max_adverse_pct": -3.6054244360412095,
-      "last_price": 0.14876
+      "last_price": 0.14932
     },
     {
       "symbol": "RAVE/USDT:USDT",
@@ -216,9 +216,9 @@
           "tp_price": 2.596516,
           "filled": true,
           "filled_at": null,
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "SL_HIT",
+          "outcome_price": 2.935192,
+          "pnl_pct": -4.0
         },
         {
           "strategy": "LIMIT_1PCT",
@@ -249,92 +249,8 @@
       "pnl_pct": null,
       "hours_held": null,
       "max_favorable_pct": 2.003297898466818,
-      "max_adverse_pct": -2.1085499771953926,
-      "last_price": 2.8648
-    },
-    {
-      "symbol": "BULLA/USDT:USDT",
-      "detected_at": "2026-04-12T14:50:59.952666+00:00",
-      "expires_at": "2026-04-12T22:50:59.952666+00:00",
-      "entry_price": 0.00852,
-      "sl_price": 0.0088608,
-      "tp_price": 0.0078384,
-      "sl_pct": 4.0,
-      "tp_pct": 8.0,
-      "market_regime": "BULLISH",
-      "confirmed_strict": false,
-      "filters": {
-        "rsi": 56.09638975813612,
-        "rsi_4h": 40.630151104867586,
-        "bb_upper": 0.008348396720842848,
-        "price_vs_bb": 1.0205552377175275,
-        "volume_ratio": 2.630142312742207,
-        "volume_trend": "RISING",
-        "atr_pct": 9.171172464958698,
-        "change_1h": 5.711086226203799,
-        "relative_strength": 5.9113360092312455,
-        "btc_change_1h": -0.20024978302744675
-      },
-      "catalyst_type": "UNKNOWN",
-      "short_conviction": "UNKNOWN",
-      "news_count": -1,
-      "ask_price": 0.008519,
-      "bid_price": 0.008488,
-      "spread_pct": 0.364555771153052,
-      "entry_variants": [
-        {
-          "strategy": "MARKET",
-          "entry_price": 0.00852,
-          "sl_price": 0.0088608,
-          "tp_price": 0.0078384,
-          "filled": true,
-          "filled_at": null,
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
-        },
-        {
-          "strategy": "ASK",
-          "entry_price": 0.008519,
-          "sl_price": 0.008859760000000001,
-          "tp_price": 0.00783748,
-          "filled": true,
-          "filled_at": null,
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
-        },
-        {
-          "strategy": "LIMIT_1PCT",
-          "entry_price": 0.0086052,
-          "sl_price": 0.008949408,
-          "tp_price": 0.007916784000000001,
-          "filled": true,
-          "filled_at": "2026-04-12T15:00:55.317753+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
-        },
-        {
-          "strategy": "LIMIT_2PCT",
-          "entry_price": 0.0086904,
-          "sl_price": 0.009038016,
-          "tp_price": 0.007995168,
-          "filled": true,
-          "filled_at": "2026-04-12T15:00:55.317753+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
-        }
-      ],
-      "outcome": "ACTIVE",
-      "outcome_at": null,
-      "outcome_price": null,
-      "pnl_pct": null,
-      "hours_held": null,
-      "max_favorable_pct": 3.2981220657276995,
-      "max_adverse_pct": -3.9084507042253516,
-      "last_price": 0.00878
+      "max_adverse_pct": -3.7504824053608394,
+      "last_price": 2.9005
     }
   ],
   "closed": [
@@ -5473,6 +5389,90 @@
       "max_favorable_pct": 8.155038759689925,
       "max_adverse_pct": -0.6046511627906999,
       "last_price": 0.05965
+    },
+    {
+      "symbol": "BULLA/USDT:USDT",
+      "detected_at": "2026-04-12T14:50:59.952666+00:00",
+      "expires_at": "2026-04-12T22:50:59.952666+00:00",
+      "entry_price": 0.00852,
+      "sl_price": 0.0088608,
+      "tp_price": 0.0078384,
+      "sl_pct": 4.0,
+      "tp_pct": 8.0,
+      "market_regime": "BULLISH",
+      "confirmed_strict": false,
+      "filters": {
+        "rsi": 56.09638975813612,
+        "rsi_4h": 40.630151104867586,
+        "bb_upper": 0.008348396720842848,
+        "price_vs_bb": 1.0205552377175275,
+        "volume_ratio": 2.630142312742207,
+        "volume_trend": "RISING",
+        "atr_pct": 9.171172464958698,
+        "change_1h": 5.711086226203799,
+        "relative_strength": 5.9113360092312455,
+        "btc_change_1h": -0.20024978302744675
+      },
+      "catalyst_type": "UNKNOWN",
+      "short_conviction": "UNKNOWN",
+      "news_count": -1,
+      "ask_price": 0.008519,
+      "bid_price": 0.008488,
+      "spread_pct": 0.364555771153052,
+      "entry_variants": [
+        {
+          "strategy": "MARKET",
+          "entry_price": 0.00852,
+          "sl_price": 0.0088608,
+          "tp_price": 0.0078384,
+          "filled": true,
+          "filled_at": null,
+          "outcome": "SL_HIT",
+          "outcome_price": 0.0088608,
+          "pnl_pct": -4.000000000000005
+        },
+        {
+          "strategy": "ASK",
+          "entry_price": 0.008519,
+          "sl_price": 0.008859760000000001,
+          "tp_price": 0.00783748,
+          "filled": true,
+          "filled_at": null,
+          "outcome": "SL_HIT",
+          "outcome_price": 0.008859760000000001,
+          "pnl_pct": -4.000000000000008
+        },
+        {
+          "strategy": "LIMIT_1PCT",
+          "entry_price": 0.0086052,
+          "sl_price": 0.008949408,
+          "tp_price": 0.007916784000000001,
+          "filled": true,
+          "filled_at": "2026-04-12T15:00:55.317753+00:00",
+          "outcome": "SL_HIT",
+          "outcome_price": 0.008949408,
+          "pnl_pct": -4.000000000000004
+        },
+        {
+          "strategy": "LIMIT_2PCT",
+          "entry_price": 0.0086904,
+          "sl_price": 0.009038016,
+          "tp_price": 0.007995168,
+          "filled": true,
+          "filled_at": "2026-04-12T15:00:55.317753+00:00",
+          "outcome": "SL_HIT",
+          "outcome_price": 0.009038016,
+          "pnl_pct": -4.000000000000003
+        }
+      ],
+      "outcome": "SL_HIT",
+      "outcome_at": "2026-04-12T15:05:36.257979+00:00",
+      "outcome_price": 0.0088608,
+      "pnl_pct": -4.000000000000005,
+      "hours_held": 0.2434181425,
+      "max_favorable_pct": 3.2981220657276995,
+      "max_adverse_pct": -6.561032863849771,
+      "last_price": 0.00882
     }
   ]
 }
