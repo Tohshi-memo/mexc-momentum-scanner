@@ -162,7 +162,34 @@ UNKNOWN = ファンダ未取得 (rejected 候補)。
 
 ---
 
-## 10. Indicator distribution: winners vs losers
+## 10. Entry strategy comparison
+
+成行 (MARKET), ask 価格 (ASK), 指値 (LIMIT_1PCT/2PCT) の仮想成績。
+指値は検出後に価格がエントリー指定値まで上がったら約定。
+上がらなければ unfilled (filled 列の分母に含まれるが PnL は 0)。
+
+### Spread statistics
+
+- スプレッドデータなし (order book 未取得の古いレコード)
+
+### Strategy PnL
+
+| strategy | filled | n (w/ pnl) | avg PnL | total PnL | win% |
+|----------|--------|------------|---------|-----------|------|
+| MARKET | 0/0 | 0 | – | – | – |
+| ASK | 0/0 | 0 | – | – | – |
+| LIMIT_1PCT | 0/0 | 0 | – | – | – |
+| LIMIT_2PCT | 0/0 | 0 | – | – | – |
+
+**解釈**:
+- MARKET vs ASK の差 = スプレッドコスト。ASK の方が PnL 低ければスプレッドが痛い。
+- LIMIT の方が avg PnL 高ければ「もう少し上がってから入る」方が有利。
+  ただし filled 率が低ければ機会損失とのトレードオフ。
+
+
+---
+
+## 11. Indicator distribution: winners vs losers
 
 TP_HIT と SL_HIT の指標平均。乖離が大きい指標が予測力を持つ可能性あり。
 
