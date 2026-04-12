@@ -273,16 +273,30 @@ class ExperimentTracker:
         trade.news_count = news_count
 
     def update(self, client: "MEXCClient") -> list[ExperimentTrade]:
-        """全アクティブシャドウの outcome を更新。新規確定したものを返す。"""
+        """全アクティブシャドウの outcome を更新。新規確定したものを返す。
+
+        5 分足 OHLCV の high/low を使って、チェック間隔中の SL/TP 通過を検出する。
+        ticker の last price だけでは 5 分間の瞬間的なスパイクを見逃すため。
+        """
         if not self._active:
             return []
 
         symbols_list = list(self._active.keys())
-        try:
-            tickers = client.fetch_tickers(symbols_list)
-        except Exception as e:
-            logger.error("Failed to fetch experiment tickers: %s", e)
-            return []
+
+        # 5分足 OHLCV を銘柄ごとに取得して high/low/close を得る
+        candle_data: dict[str, dict] = {}
+        for symbol in symbols_list:
+            try:
+                ohlcv = client.fetch_ohlcv(symbol, timeframe="5m", limit=1)
+                if ohlcv and len(ohlcv) >= 1:
+                    candle = ohlcv[-1]  # [timestamp, open, high, low, close, volume]
+                    candle_data[symbol] = {
+                        "high":  float(candle[2]),
+                        "low":   float(candle[3]),
+                        "close": float(candle[4]),
+                    }
+            except Exception as e:
+                logger.debug("5m OHLCV unavailable for %s: %s", symbol, e)
 
         newly_closed: list[ExperimentTrade] = []
         now = datetime.now(timezone.utc)
@@ -290,39 +304,55 @@ class ExperimentTracker:
 
         for symbol in symbols_list:
             trade = self._active[symbol]
-            ticker = tickers.get(symbol, {})
-            price = float(ticker.get("last") or 0)
+            candle = candle_data.get(symbol)
+
+            if candle is None:
+                # OHLCV 取得失敗時は期限切れチェックのみ
+                if datetime.fromisoformat(trade.expires_at) <= now:
+                    self._close(
+                        trade, OUTCOME_EXPIRED,
+                        trade.last_price or trade.entry_price, now_str,
+                    )
+                    newly_closed.append(trade)
+                continue
+
+            high  = candle["high"]
+            low   = candle["low"]
+            close = candle["close"]
 
             expired = datetime.fromisoformat(trade.expires_at) <= now
 
-            if price > 0:
-                trade.last_price = price
+            trade.last_price = close
 
-                # MFE / MAE 更新（ショート視点：価格下落 = 利益）
-                change_pct = (trade.entry_price - price) / trade.entry_price * 100
-                if change_pct > trade.max_favorable_pct:
-                    trade.max_favorable_pct = change_pct
-                if change_pct < trade.max_adverse_pct:
-                    trade.max_adverse_pct = change_pct
+            # MFE / MAE 更新（5分足の high/low で正確に追跡）
+            # ショート視点：価格下落 = 利益
+            favorable_pct = (trade.entry_price - low) / trade.entry_price * 100
+            adverse_pct   = (trade.entry_price - high) / trade.entry_price * 100
+            if favorable_pct > trade.max_favorable_pct:
+                trade.max_favorable_pct = favorable_pct
+            if adverse_pct < trade.max_adverse_pct:
+                trade.max_adverse_pct = adverse_pct
 
-                # エントリーバリアントの更新
-                self._update_variants(trade, price, now_str)
+            # エントリーバリアントの更新（high/low で指値約定判定 + SL/TP 判定）
+            self._update_variants_ohlcv(trade, high, low, close, now_str)
 
-                # outcome 判定（先に到達した方で確定）
-                if price <= trade.tp_price:
-                    self._close(trade, OUTCOME_TP_HIT, price, now_str)
-                    newly_closed.append(trade)
-                    continue
-                if price >= trade.sl_price:
-                    # SL は設定値で固定（5分スリッページで損失が膨らまないよう）
-                    self._close(trade, OUTCOME_SL_HIT, trade.sl_price, now_str)
-                    newly_closed.append(trade)
-                    continue
+            # outcome 判定（5分足の high/low で SL/TP 通過を検出）
+            sl_hit = high >= trade.sl_price
+            tp_hit = low  <= trade.tp_price
 
-            if expired:
+            if sl_hit and tp_hit:
+                # 同一足内で両方通過した場合は SL 優先（保守的判定）
+                self._close(trade, OUTCOME_SL_HIT, trade.sl_price, now_str)
+                newly_closed.append(trade)
+            elif tp_hit:
+                self._close(trade, OUTCOME_TP_HIT, trade.tp_price, now_str)
+                newly_closed.append(trade)
+            elif sl_hit:
+                self._close(trade, OUTCOME_SL_HIT, trade.sl_price, now_str)
+                newly_closed.append(trade)
+            elif expired:
                 self._close(
-                    trade, OUTCOME_EXPIRED,
-                    trade.last_price or trade.entry_price, now_str,
+                    trade, OUTCOME_EXPIRED, close, now_str,
                 )
                 newly_closed.append(trade)
 
@@ -345,12 +375,18 @@ class ExperimentTracker:
     # ------------------------------------------------------------------
 
     @staticmethod
-    def _update_variants(
+    def _update_variants_ohlcv(
         trade: ExperimentTrade,
-        price: float,
+        high: float,
+        low: float,
+        close: float,
         now_str: str,
     ) -> None:
-        """各エントリーバリアントの約定チェック + outcome 判定。"""
+        """各エントリーバリアントの約定チェック + outcome 判定 (OHLCV ベース)。
+
+        5分足の high/low を使うことで、チェック間隔中の瞬間的な
+        SL/TP 通過や指値約定を正確に検出する。
+        """
         if not trade.entry_variants:
             return
 
@@ -358,20 +394,29 @@ class ExperimentTracker:
             if v.outcome != OUTCOME_ACTIVE:
                 continue
 
-            # 指値バリアント: 価格がエントリー価格に到達したら約定
+            # 指値バリアント: high がエントリー価格に到達したら約定
+            # (ショートの指値は「この値段まで上がったら売る」)
             if not v.filled:
-                if price >= v.entry_price:
+                if high >= v.entry_price:
                     v.filled = True
                     v.filled_at = now_str
                 else:
-                    continue  # まだ約定していないのでスキップ
+                    continue
 
-            # TP/SL 判定 (約定済みバリアントのみ)
-            if price <= v.tp_price:
+            # TP/SL 判定 (5分足の high/low で通過を検出)
+            sl_hit = high >= v.sl_price
+            tp_hit = low  <= v.tp_price
+
+            if sl_hit and tp_hit:
+                # 同一足内で両方 → SL 優先（保守的）
+                v.outcome = OUTCOME_SL_HIT
+                v.outcome_price = v.sl_price
+                v.pnl_pct = (v.entry_price - v.sl_price) / v.entry_price * 100
+            elif tp_hit:
                 v.outcome = OUTCOME_TP_HIT
-                v.outcome_price = price
-                v.pnl_pct = (v.entry_price - price) / v.entry_price * 100
-            elif price >= v.sl_price:
+                v.outcome_price = v.tp_price
+                v.pnl_pct = (v.entry_price - v.tp_price) / v.entry_price * 100
+            elif sl_hit:
                 v.outcome = OUTCOME_SL_HIT
                 v.outcome_price = v.sl_price
                 v.pnl_pct = (v.entry_price - v.sl_price) / v.entry_price * 100

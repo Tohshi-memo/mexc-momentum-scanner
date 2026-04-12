@@ -178,7 +178,11 @@ class SymbolTracker:
 
     def update_prices(self, client: "MEXCClient") -> list[TrackedSymbol]:
         """追跡中の全銘柄の現在価格を一括更新し、この呼び出しで outcome
-        確定した銘柄のリストを返す。"""
+        確定した銘柄のリストを返す。
+
+        5分足 OHLCV の high/low を使って、チェック間隔中の SL/TP 通過を検出する。
+        ticker の last price だけでは 5 分間の瞬間的なスパイクを見逃すため。
+        """
         active = [
             v for v in self._symbols.values()
             if not v.is_closed and not v.is_expired
@@ -187,56 +191,74 @@ class SymbolTracker:
             return []
 
         newly_closed: list[TrackedSymbol] = []
-        symbols_list = [s.symbol for s in active]
+        now_str = datetime.now(timezone.utc).isoformat()
 
-        try:
-            tickers = client.fetch_tickers(symbols_list)
-            now_str = datetime.now(timezone.utc).isoformat()
-
-            for tracked in active:
-                ticker = tickers.get(tracked.symbol, {})
-                price  = float(ticker.get("last") or 0)
-                if price <= 0:
+        for tracked in active:
+            try:
+                ohlcv = client.fetch_ohlcv(tracked.symbol, timeframe="5m", limit=1)
+                if not ohlcv or len(ohlcv) < 1:
                     continue
+                candle = ohlcv[-1]
+                high  = float(candle[2])
+                low   = float(candle[3])
+                close = float(candle[4])
+            except Exception as e:
+                logger.debug("5m OHLCV unavailable for %s: %s", tracked.symbol, e)
+                continue
 
-                change_pct = (price - tracked.detection_price) / tracked.detection_price * 100
-                tracked.prices.append(PricePoint(
-                    timestamp=now_str,
-                    price=price,
-                    change_pct=change_pct,
-                ))
-                # 直近 200 ポイントのみ保持
-                if len(tracked.prices) > 200:
-                    tracked.prices = tracked.prices[-200:]
+            if close <= 0:
+                continue
 
-                # outcome 判定（先に到達した方で確定）
-                # ショート：TP = 下方向 / SL = 上方向
-                if tracked.outcome == OUTCOME_ACTIVE:
-                    if price <= tracked.tp_price:
-                        tracked.outcome = OUTCOME_TP_HIT
-                        tracked.outcome_at = now_str
-                        # TP は実際の到達価格（有利方向なので現在値を使う）
-                        tracked.outcome_price = price
-                        newly_closed.append(tracked)
-                        logger.info(
-                            "✓ TP HIT: %s @ $%.8g (entry $%.8g, %+.2f%%)",
-                            tracked.symbol, price,
-                            tracked.detection_price, change_pct,
-                        )
-                    elif price >= tracked.sl_price:
-                        tracked.outcome = OUTCOME_SL_HIT
-                        tracked.outcome_at = now_str
-                        # SL は設定値で固定（5分スリッページで損失が膨らまないよう）
-                        tracked.outcome_price = tracked.sl_price
-                        newly_closed.append(tracked)
-                        logger.warning(
-                            "✗ SL HIT: %s triggered $%.8g, actual $%.8g (entry $%.8g, %+.2f%%)",
-                            tracked.symbol, tracked.sl_price, price,
-                            tracked.detection_price, change_pct,
-                        )
+            change_pct = (close - tracked.detection_price) / tracked.detection_price * 100
+            tracked.prices.append(PricePoint(
+                timestamp=now_str,
+                price=close,
+                change_pct=change_pct,
+            ))
+            # 直近 200 ポイントのみ保持
+            if len(tracked.prices) > 200:
+                tracked.prices = tracked.prices[-200:]
 
-        except Exception as e:
-            logger.error("Failed to update tracking prices: %s", e)
+            # outcome 判定（5分足の high/low で SL/TP 通過を検出）
+            # ショート：TP = 下方向 (low <= tp) / SL = 上方向 (high >= sl)
+            if tracked.outcome == OUTCOME_ACTIVE:
+                sl_hit = high >= tracked.sl_price
+                tp_hit = low  <= tracked.tp_price
+
+                if sl_hit and tp_hit:
+                    # 同一足内で両方通過 → SL 優先（保守的判定）
+                    tracked.outcome = OUTCOME_SL_HIT
+                    tracked.outcome_at = now_str
+                    tracked.outcome_price = tracked.sl_price
+                    newly_closed.append(tracked)
+                    logger.warning(
+                        "✗ SL HIT (5m high/low): %s high=$%.8g >= SL $%.8g "
+                        "(entry $%.8g, also crossed TP in same candle)",
+                        tracked.symbol, high, tracked.sl_price,
+                        tracked.detection_price,
+                    )
+                elif tp_hit:
+                    tracked.outcome = OUTCOME_TP_HIT
+                    tracked.outcome_at = now_str
+                    tracked.outcome_price = tracked.tp_price
+                    newly_closed.append(tracked)
+                    logger.info(
+                        "✓ TP HIT (5m low): %s low=$%.8g <= TP $%.8g "
+                        "(entry $%.8g, %+.2f%%)",
+                        tracked.symbol, low, tracked.tp_price,
+                        tracked.detection_price, change_pct,
+                    )
+                elif sl_hit:
+                    tracked.outcome = OUTCOME_SL_HIT
+                    tracked.outcome_at = now_str
+                    tracked.outcome_price = tracked.sl_price
+                    newly_closed.append(tracked)
+                    logger.warning(
+                        "✗ SL HIT (5m high): %s high=$%.8g >= SL $%.8g "
+                        "(entry $%.8g, close $%.8g, %+.2f%%)",
+                        tracked.symbol, high, tracked.sl_price,
+                        tracked.detection_price, close, change_pct,
+                    )
 
         return newly_closed
 
