@@ -529,10 +529,10 @@ def _section_combined(closed: list[ClosedTrade]) -> str:
 
 
 def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
-    """エントリー戦略バリアントの比較。"""
+    """エントリー戦略バリアントの比較。データ内に存在する全戦略を自動検出。"""
     # スプレッド統計
     spreads = [t.spread_pct for t in closed if t.spread_pct is not None]
-    spread_lines = []
+    spread_lines: list[str] = []
     if spreads:
         avg_spread = statistics.mean(spreads)
         med_spread = statistics.median(spreads)
@@ -546,48 +546,91 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
     else:
         spread_lines = ["- スプレッドデータなし (order book 未取得の古いレコード)"]
 
-    # バリアント別 PnL 集計
-    strategy_pnls: dict[str, list[float]] = {}
-    strategy_filled: dict[str, int] = {}
-    strategy_total: dict[str, int] = {}
+    # バリアント別 PnL 集計 (データ内のすべての戦略を自動検出)
+    # filled=True で pnl_pct が確定しているもののみ集計
+    # filled=False で EXPIRED のものは "unfilled" としてカウント
+    strategy_data: dict[str, dict] = {}
 
     for t in closed:
         if not t.entry_variants:
             continue
         for v in t.entry_variants:
             s = v.get("strategy", "?")
-            strategy_total[s] = strategy_total.get(s, 0) + 1
-            if v.get("filled") and v.get("pnl_pct") is not None:
-                strategy_filled[s] = strategy_filled.get(s, 0) + 1
-                strategy_pnls.setdefault(s, []).append(float(v["pnl_pct"]))
+            if s not in strategy_data:
+                strategy_data[s] = {
+                    "total": 0, "filled": 0, "unfilled": 0,
+                    "pnls": [], "tp": 0, "sl": 0,
+                }
+            d = strategy_data[s]
+            d["total"] += 1
+            outcome = v.get("outcome", "")
+            pnl = v.get("pnl_pct")
+            if v.get("filled"):
+                d["filled"] += 1
+                if pnl is not None:
+                    d["pnls"].append(float(pnl))
+                if outcome == "TP_HIT":
+                    d["tp"] += 1
+                elif outcome == "SL_HIT":
+                    d["sl"] += 1
+            else:
+                d["unfilled"] += 1
+
+    # 表示順: MARKET / ASK / 任意 % / テクニカル の順
+    order = [
+        "MARKET", "ASK",
+        "LIMIT_1PCT", "LIMIT_2PCT",
+        "LIMIT_BB3S", "LIMIT_ATR",
+        "LIMIT_FIB1272", "LIMIT_FIB1618",
+    ]
+    # データに存在するが order 未定義の戦略も末尾に追加
+    all_strategies = order + [s for s in strategy_data if s not in order]
 
     var_header = (
-        "| strategy | filled | n (w/ pnl) | avg PnL | total PnL | win% |\n"
-        "|----------|--------|------------|---------|-----------|------|"
+        "| strategy | filled/total | unfilled | avg PnL | total PnL | win% | "
+        "TP | SL |\n"
+        "|----------|-------------|----------|---------|-----------|------|"
+        "----|----|\n"
+        "| *(filled のみ集計。unfilled は機会損失として別途カウント)* "
+        "| | | | | | | |"
     )
     var_rows: list[str] = []
-    for s in ["MARKET", "ASK", "LIMIT_1PCT", "LIMIT_2PCT"]:
-        pnls = strategy_pnls.get(s, [])
-        total = strategy_total.get(s, 0)
-        filled = strategy_filled.get(s, 0)
+    for s in all_strategies:
+        d = strategy_data.get(s)
+        if d is None:
+            continue
+        pnls = d["pnls"]
         if not pnls:
-            var_rows.append(f"| {s} | {filled}/{total} | 0 | – | – | – |")
+            var_rows.append(
+                f"| {s} | {d['filled']}/{d['total']} | {d['unfilled']} "
+                f"| – | – | – | {d['tp']} | {d['sl']} |"
+            )
             continue
         avg_pnl = statistics.mean(pnls)
         tot_pnl = sum(pnls)
         wins = sum(1 for p in pnls if p > 0)
         wr = wins / len(pnls) * 100
         var_rows.append(
-            f"| {s} | {filled}/{total} | {len(pnls)} | "
-            f"{avg_pnl:+.2f}% | {tot_pnl:+.1f}% | {wr:.0f}% |"
+            f"| {s} | {d['filled']}/{d['total']} | {d['unfilled']} "
+            f"| {avg_pnl:+.2f}% | {tot_pnl:+.1f}% | {wr:.0f}% "
+            f"| {d['tp']} | {d['sl']} |"
         )
 
     lines = [
         "## 12. Entry strategy comparison",
         "",
-        "成行 (MARKET), ask 価格 (ASK), 指値 (LIMIT_1PCT/2PCT) の仮想成績。",
-        "指値は検出後に価格がエントリー指定値まで上がったら約定。",
-        "上がらなければ unfilled (filled 列の分母に含まれるが PnL は 0)。",
+        "各エントリー戦略の仮想成績。指値は価格到達で約定 (filled)、",
+        "到達しなければ unfilled (機会損失)。",
+        "",
+        "| 戦略 | 考え方 |",
+        "|------|--------|",
+        "| MARKET | 検出時の last price で即入り |",
+        "| ASK | 検出時の ask price (実際の成行コスト) |",
+        "| LIMIT_1PCT/2PCT | 任意 +1%/+2% の指値 (ベースライン) |",
+        "| LIMIT_BB3S | BB 中心 + 3σ (統計的極限) |",
+        "| LIMIT_ATR | last + ATR×0.5 (ボラ半分だけ上) |",
+        "| LIMIT_FIB1272 | フィボナッチ 1.272 エクステンション |",
+        "| LIMIT_FIB1618 | フィボナッチ 1.618 エクステンション (黄金比) |",
         "",
         "### Spread statistics",
         "",
@@ -599,9 +642,9 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
         *var_rows,
         "",
         "**解釈**:",
-        "- MARKET vs ASK の差 = スプレッドコスト。ASK の方が PnL 低ければスプレッドが痛い。",
-        "- LIMIT の方が avg PnL 高ければ「もう少し上がってから入る」方が有利。",
-        "  ただし filled 率が低ければ機会損失とのトレードオフ。",
+        "- filled 率が低い戦略は「狙った水準まで上がらなかった」(機会損失)。",
+        "- avg PnL が高い戦略は「より高い位置でショートを入れられた」。",
+        "- MARKET と LIMIT 系の差が大きいほど、待機戦略が有利。",
         "",
     ]
     return "\n".join(lines)

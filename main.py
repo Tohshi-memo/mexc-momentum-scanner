@@ -383,6 +383,11 @@ def _register_shadow_trades(
                 confirmed_strict=r.is_confirmed_signal,
                 ask_price=ask_price,
                 bid_price=bid_price,
+                # テクニカル指値バリアント用
+                bb_upper=r.bb_upper,
+                bb_middle=r.bb_middle,
+                atr_pct=r.atr_pct,
+                swing_low_1h=r.swing_low_1h,
             )
             if registered:
                 added += 1

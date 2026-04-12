@@ -64,6 +64,10 @@ class AnalysisResult:
     atr: float | None
     atr_pct: float | None     # ATR / price × 100
 
+    # スイング安値 (フィボナッチ・エクステンション計算用)
+    # 直近 10 本の 1h 足安値の最小値（急騰足は除く）
+    swing_low_1h: float | None
+
     # 総合判定
     is_confirmed_signal: bool
     reject_reasons: list[str] # 却下理由（デバッグ/ログ用）
@@ -225,6 +229,13 @@ class TechnicalAnalyzer:
         atr_value  = self._last_valid(atr_series)
         atr_pct    = (atr_value / current_price * 100) if atr_value else None
 
+        # --- スイング安値 (フィボナッチ用) ---
+        # 直近10本を除外した範囲…ではなく、「急騰足の直前10本の安値」を使う。
+        # iloc[-11:-1] = 最新足の1本前から10本分の安値
+        swing_low_1h: float | None = None
+        if len(df) >= 11:
+            swing_low_1h = float(df["low"].iloc[-11:-1].min())
+
         # --- 総合判定 + 却下理由収集 ---
         # BB ブレイクはデータ分析の結果、効果が薄いため条件から除外。
         reject_reasons: list[str] = []
@@ -260,6 +271,7 @@ class TechnicalAnalyzer:
             is_volume_exhaustion=is_exhaustion,
             atr=atr_value,
             atr_pct=atr_pct,
+            swing_low_1h=swing_low_1h,
             is_confirmed_signal=is_confirmed,
             reject_reasons=reject_reasons,
         )

@@ -59,8 +59,18 @@ class EntryVariant:
 
     同一の検出タイミングに対して複数のエントリー戦略を仮想的に追跡し、
     「指値で入っていたら？」「スプレッド考慮したら？」を比較できる。
+
+    戦略一覧:
+        MARKET      — 検出時の last price (成行の理想値)
+        ASK         — 検出時の ask price (成行ショートの実質コスト)
+        LIMIT_1PCT  — last × 1.01 (任意の +1%: ベースライン)
+        LIMIT_2PCT  — last × 1.02 (任意の +2%: ベースライン)
+        LIMIT_BB3S  — BB中心 + 3σ  (統計的な極限ゾーン)
+        LIMIT_ATR   — last + ATR×0.5 (ボラティリティ半分だけ上)
+        LIMIT_FIB1272 — フィボナッチ 1.272 エクステンション
+        LIMIT_FIB1618 — フィボナッチ 1.618 エクステンション (黄金比)
     """
-    strategy: str          # MARKET / ASK / LIMIT_1PCT / LIMIT_2PCT
+    strategy: str          # 上記戦略名
     entry_price: float     # 実際のエントリー仮想価格
     sl_price: float
     tp_price: float
@@ -156,6 +166,11 @@ class ExperimentTracker:
         news_count: int = -1,
         ask_price: float | None = None,
         bid_price: float | None = None,
+        # テクニカル指値計算用
+        bb_upper: float | None = None,
+        bb_middle: float | None = None,
+        atr_pct: float | None = None,
+        swing_low_1h: float | None = None,
     ) -> bool:
         """新規シャドウトレードを登録。同銘柄追跡中なら何もしない。
 
@@ -177,6 +192,10 @@ class ExperimentTracker:
         # エントリー戦略バリアントを生成
         variants = self._build_entry_variants(
             entry_price, ask_price, sl_pct, tp_pct,
+            bb_upper=bb_upper,
+            bb_middle=bb_middle,
+            atr_pct=atr_pct,
+            swing_low_1h=swing_low_1h,
         )
 
         self._active[symbol] = ExperimentTrade(
@@ -213,14 +232,12 @@ class ExperimentTracker:
         ask_price: float | None,
         sl_pct: float,
         tp_pct: float,
+        bb_upper: float | None = None,
+        bb_middle: float | None = None,
+        atr_pct: float | None = None,
+        swing_low_1h: float | None = None,
     ) -> list[EntryVariant]:
         """エントリー戦略ごとの仮想エントリー価格 + SL/TP を生成する。
-
-        戦略:
-          MARKET    — last price (成行の理想値)
-          ASK       — ask price (成行ショートの実質コスト)
-          LIMIT_1PCT — last × 1.01 (1%上に指値ショート)
-          LIMIT_2PCT — last × 1.02 (2%上に指値ショート)
 
         指値戦略は filled=False で初期化し、update() で価格到達時に
         filled=True に切り替える。到達しなければ outcome は EXPIRED (unfilled)。
@@ -238,18 +255,48 @@ class ExperimentTracker:
                 filled=filled,
             )
 
-        # MARKET: last price でエントリー (即時約定)
+        # ── 即時約定 ────────────────────────────────────────────────────
+        # MARKET: last price (成行の理想値)
         variants.append(_make("MARKET", last_price))
 
         # ASK: 実際の成行ショートは ask 価格で約定する
         if ask_price and ask_price > 0:
             variants.append(_make("ASK", ask_price))
 
-        # LIMIT_1PCT: 1% 上に指値 (さらに上がったら約定)
+        # ── 任意 % 指値 (ベースライン) ───────────────────────────────────
+        # LIMIT_1PCT: 1% 上に指値
         variants.append(_make("LIMIT_1PCT", last_price * 1.01, filled=False))
 
-        # LIMIT_2PCT: 2% 上に指値 (さらに上がったら約定)
+        # LIMIT_2PCT: 2% 上に指値
         variants.append(_make("LIMIT_2PCT", last_price * 1.02, filled=False))
+
+        # ── テクニカル指値 ───────────────────────────────────────────────
+        # LIMIT_BB3S: ボリンジャーバンド 3σ (統計的な極限ゾーン)
+        # 価格が 2σ を超えて 3σ まで伸びたところでショート
+        if bb_upper and bb_middle and bb_upper > bb_middle:
+            sigma = (bb_upper - bb_middle) / 2
+            bb_3s = bb_middle + 3 * sigma
+            if bb_3s > last_price:          # 現値より上にある場合のみ有効
+                variants.append(_make("LIMIT_BB3S", bb_3s, filled=False))
+
+        # LIMIT_ATR: 現値 + ATR × 0.5
+        # 急騰後に ATR 半分だけ追加で上がったところが「売られ始め」と仮定
+        if atr_pct and atr_pct > 0:
+            atr_limit = last_price * (1 + atr_pct * 0.5 / 100)
+            if atr_limit > last_price * 1.001:  # 最低 0.1% 上でないと意味なし
+                variants.append(_make("LIMIT_ATR", atr_limit, filled=False))
+
+        # LIMIT_FIB1272 / LIMIT_FIB1618: フィボナッチ・エクステンション
+        # 急騰直前のスイング安値からの波を基準にエクステンションを計算
+        # 1.272 と 1.618 (黄金比) が典型的な反転ゾーン
+        if swing_low_1h and swing_low_1h < last_price:
+            move = last_price - swing_low_1h
+            fib1272 = last_price + move * 0.272
+            fib1618 = last_price + move * 0.618
+            if fib1272 > last_price * 1.001:
+                variants.append(_make("LIMIT_FIB1272", fib1272, filled=False))
+            if fib1618 > last_price * 1.001:
+                variants.append(_make("LIMIT_FIB1618", fib1618, filled=False))
 
         return variants
 
