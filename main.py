@@ -241,6 +241,16 @@ def run_once(
             proposal    = builder.build(result, fundamental)
             executor.execute(proposal)
 
+            # シャドウトレードにファンダ情報を後付け
+            # (シャドウ登録はファンダ分析前に行われるため)
+            if fundamental:
+                experiment_tracker.update_fundamental(
+                    symbol=result.symbol,
+                    catalyst_type=fundamental.catalyst_type,
+                    short_conviction=fundamental.short_conviction,
+                    news_count=fundamental.news_count,
+                )
+
             print_confirmed_signal(
                 symbol=result.symbol,
                 entry=proposal.entry_price,

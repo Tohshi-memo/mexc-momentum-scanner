@@ -69,6 +69,11 @@ class ExperimentTrade:
     confirmed_strict: bool             # 現行 STRICT フィルター通過したか
     filters: FilterSnapshot
 
+    # ファンダメンタル情報 (confirmed のみ。rejected は UNKNOWN)
+    catalyst_type: str = "UNKNOWN"         # NONE / POSITIVE / NEGATIVE / WEAK / UNKNOWN
+    short_conviction: str = "UNKNOWN"      # HIGH / MEDIUM / LOW / AVOID / UNKNOWN
+    news_count: int = -1                   # -1 = 未取得
+
     # 状態
     outcome: str = OUTCOME_ACTIVE
     outcome_at: str | None = None
@@ -119,6 +124,9 @@ class ExperimentTracker:
         market_regime: str,
         filters: FilterSnapshot,
         confirmed_strict: bool,
+        catalyst_type: str = "UNKNOWN",
+        short_conviction: str = "UNKNOWN",
+        news_count: int = -1,
     ) -> bool:
         """新規シャドウトレードを登録。同銘柄追跡中なら何もしない。"""
         if symbol in self._active:
@@ -139,6 +147,9 @@ class ExperimentTracker:
             market_regime=market_regime,
             confirmed_strict=confirmed_strict,
             filters=filters,
+            catalyst_type=catalyst_type,
+            short_conviction=short_conviction,
+            news_count=news_count,
             last_price=entry_price,
         )
         logger.debug(
@@ -146,6 +157,25 @@ class ExperimentTracker:
             symbol, confirmed_strict, market_regime,
         )
         return True
+
+    def update_fundamental(
+        self,
+        symbol: str,
+        catalyst_type: str,
+        short_conviction: str,
+        news_count: int,
+    ) -> None:
+        """アクティブなシャドウトレードにファンダメンタル情報を後付けする。
+
+        シャドウ登録はテクニカル分析直後（ファンダ前）に行われるため、
+        confirmed シグナルのファンダ分析が完了した後にこのメソッドで補完する。
+        """
+        trade = self._active.get(symbol)
+        if trade is None:
+            return
+        trade.catalyst_type = catalyst_type
+        trade.short_conviction = short_conviction
+        trade.news_count = news_count
 
     def update(self, client: "MEXCClient") -> list[ExperimentTrade]:
         """全アクティブシャドウの outcome を更新。新規確定したものを返す。"""
@@ -294,5 +324,9 @@ class ExperimentTracker:
         # 互換性: 欠落フィールドを 0 / None で埋める
         filters_dict.setdefault("btc_change_1h", 0.0)
         filters_dict.setdefault("relative_strength", 0.0)
+        # ファンダ情報の後方互換
+        entry.setdefault("catalyst_type", "UNKNOWN")
+        entry.setdefault("short_conviction", "UNKNOWN")
+        entry.setdefault("news_count", -1)
         filters = FilterSnapshot(**filters_dict)
         return ExperimentTrade(filters=filters, **entry)

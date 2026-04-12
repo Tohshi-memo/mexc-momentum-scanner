@@ -81,6 +81,11 @@ class ClosedTrade:
     relative_strength: float
     btc_change_1h: float
 
+    # fundamental
+    catalyst_type: str
+    short_conviction: str
+    news_count: int
+
 
 def _load_closed(path: Path) -> list[ClosedTrade]:
     if not path.exists():
@@ -114,6 +119,9 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
                 volume_trend=f_dict.get("volume_trend", "FLAT"),
                 atr_pct=f_dict.get("atr_pct"),
                 change_1h=float(f_dict.get("change_1h") or 0.0),
+                catalyst_type=entry.get("catalyst_type", "UNKNOWN"),
+                short_conviction=entry.get("short_conviction", "UNKNOWN"),
+                news_count=int(entry.get("news_count", -1)),
                 relative_strength=float(f_dict.get("relative_strength") or 0.0),
                 btc_change_1h=float(f_dict.get("btc_change_1h") or 0.0),
             )
@@ -332,6 +340,46 @@ def _section_regime(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_fundamental(closed: list[ClosedTrade]) -> str:
+    """ファンダメンタル (ニュースの有無 / conviction) 別の成績。"""
+    convictions = ["HIGH", "MEDIUM", "LOW", "AVOID", "UNKNOWN"]
+    catalysts   = ["NONE", "POSITIVE", "NEGATIVE", "WEAK", "UNKNOWN"]
+
+    has_funda = _filter(closed, lambda t: t.short_conviction != "UNKNOWN")
+    no_funda  = _filter(closed, lambda t: t.short_conviction == "UNKNOWN")
+
+    lines = [
+        "## 8. Fundamental / news",
+        "",
+        "ファンダメンタル分析は confirmed シグナルのみに実行される。",
+        "UNKNOWN = ファンダ未取得 (rejected 候補)。",
+        "",
+        "### By short conviction",
+        "",
+        TABLE_HEADER,
+    ]
+    for c in convictions:
+        subset = _filter(closed, lambda t, c=c: t.short_conviction == c)
+        lines.append(_row(c, _compute_stats(subset)))
+
+    lines += [
+        "",
+        "### By catalyst type",
+        "",
+        TABLE_HEADER,
+    ]
+    for c in catalysts:
+        subset = _filter(closed, lambda t, c=c: t.catalyst_type == c)
+        lines.append(_row(c, _compute_stats(subset)))
+
+    lines += [
+        "",
+        f"ファンダ取得済み: {len(has_funda)} 件, 未取得: {len(no_funda)} 件",
+        "",
+    ]
+    return "\n".join(lines)
+
+
 def _section_combined(closed: list[ClosedTrade]) -> str:
     """RSI × 4h × volume の組み合わせ。"""
     combos = [
@@ -356,7 +404,7 @@ def _section_combined(closed: list[ClosedTrade]) -> str:
                    and t.volume_trend == "DECLINING"),
     ]
     lines = [
-        "## 8. Combined filters",
+        "## 9. Combined filters",
         "",
         "代表的なフィルターの組み合わせの仮想成績。",
         "",
@@ -389,7 +437,7 @@ def _section_distribution(closed: list[ClosedTrade]) -> str:
         ("btc 1h change",    "btc_change_1h"),
     ]
     lines = [
-        "## 9. Indicator distribution: winners vs losers",
+        "## 10. Indicator distribution: winners vs losers",
         "",
         "TP_HIT と SL_HIT の指標平均。乖離が大きい指標が予測力を持つ可能性あり。",
         "",
@@ -457,6 +505,7 @@ def generate_report(
             _section_volume(closed),
             _section_relative_strength(closed),
             _section_regime(closed),
+            _section_fundamental(closed),
             _section_combined(closed),
             _section_distribution(closed),
         ]
