@@ -53,14 +53,14 @@ jobs:
 
       # --- テクニカル設定 ---
       RSI_PERIOD:        '14'
-      RSI_OVERBOUGHT:    '75'
+      RSI_OVERBOUGHT:    '70'
       BB_PERIOD:         '20'
       BB_STD:            '2.0'
       ANALYSIS_TIMEFRAME: '1h'
       OHLCV_LIMIT:       '100'
 
       # --- 損失低減フィルター ---
-      RSI_4H_MAX:              '70'
+      RSI_4H_MIN:              '65'
       USE_4H_FILTER:           'true'
       VOLUME_LOOKBACK:         '20'
       VOLUME_RISING_RATIO:     '1.8'

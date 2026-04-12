@@ -10,15 +10,20 @@ tools/analyze_experiments.py
     Claude (このリポジトリを読んだ次回セッション) が再評価できる。
 
 レポート内容:
-    1. ベースライン (全候補 / STRICT 通過 / STRICT 外)
-    2. RSI 1h 閾値スイープ
-    3. RSI 4h 上限スイープ
-    4. BB ブレイク要否
-    5. 出来高トレンドフィルター粒度
-    6. 相対強度 (vs BTC) 閾値スイープ
-    7. マーケットレジーム別
-    8. 組み合わせ (RSI × 4h × Volume) ヒートマップ
-    9. 勝敗別の指標分布 (winners vs losers)
+    1.  ベースライン (全候補 / STRICT 通過 / STRICT 外)
+    2.  RSI 1h 閾値スイープ
+    3.  RSI 4h 方向分析 (旧: < X / 新: ≥ X)
+    4.  BB ブレイク要否
+    5.  出来高トレンドフィルター粒度
+    6.  相対強度 (vs BTC) 閾値スイープ
+    7.  ATR% ゾーン分析
+    8.  MFE / MAE 分析
+    9.  マーケットレジーム別
+    10. ファンダメンタル / ニュース
+    11. 組み合わせフィルター (旧 STRICT vs 新候補)
+    12. エントリー戦略比較
+    13. 勝敗別の指標分布
+    14. フィルター推奨
 
 CLI:
     python tools/analyze_experiments.py
@@ -254,23 +259,38 @@ def _section_rsi_sweep(closed: list[ClosedTrade]) -> str:
 
 
 def _section_rsi_4h_sweep(closed: list[ClosedTrade]) -> str:
-    """4h RSI 上限スイープ。OFF は 4h フィルター無効と等価。"""
-    thresholds = [60.0, 65.0, 70.0, 75.0]
+    """4h RSI 方向分析。旧方向 (< X) と新方向 (≥ X) の両方を比較。"""
     lines = [
-        "## 3. RSI(4h) maximum sweep",
+        "## 3. RSI(4h) direction analysis",
         "",
-        "現行 STRICT は 4h RSI < 70。低いほど厳しい (既存トレンドを除外)。",
-        "OFF = 4h フィルター無効。",
+        "> **重要発見**: 4h RSI が**高い**ほどショートの勝率・期待値が向上する。",
+        "> 旧フィルター（4h RSI < 70）は「4h がまだ低い = 新鮮な急騰」を狙っていたが、",
+        "> 実際には「1h も 4h も過熱 = ダブルオーバーボート」の方が反転しやすい。",
+        "",
+        "### 3a. 旧方向 (4h RSI < X): 低 4h のみ採用（旧 STRICT）",
         "",
         TABLE_HEADER,
     ]
-    for th in thresholds:
+    for th in [60.0, 65.0, 70.0, 75.0]:
         subset = _filter(
             closed,
             lambda t, th=th: t.rsi_4h is None or t.rsi_4h < th,
         )
         lines.append(_row(f"4h RSI < {th:.0f}", _compute_stats(subset)))
     lines.append(_row("OFF (no 4h filter)", _compute_stats(closed)))
+
+    lines += [
+        "",
+        "### 3b. 新方向 (4h RSI ≥ X): 高 4h のみ採用（推奨）",
+        "",
+        TABLE_HEADER,
+    ]
+    for th in [60.0, 65.0, 70.0, 75.0, 80.0]:
+        subset = _filter(
+            closed,
+            lambda t, th=th: t.rsi_4h is not None and t.rsi_4h >= th,
+        )
+        lines.append(_row(f"4h RSI ≥ {th:.0f}", _compute_stats(subset)))
     lines.append("")
     return "\n".join(lines)
 
@@ -330,10 +350,76 @@ def _section_relative_strength(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_atr_zone(closed: list[ClosedTrade]) -> str:
+    """ATR% ゾーン別の成績。ボラティリティの大小による影響。"""
+    zones: list[tuple[str, Callable[[ClosedTrade], bool]]] = [
+        ("ATR < 5%",     lambda t: (t.atr_pct or 0) < 5),
+        ("ATR 5–7%",     lambda t: 5 <= (t.atr_pct or 0) < 7),
+        ("ATR 7–9%",     lambda t: 7 <= (t.atr_pct or 0) < 9),
+        ("ATR 9–11%",    lambda t: 9 <= (t.atr_pct or 0) < 11),
+        ("ATR ≥ 11%",    lambda t: (t.atr_pct or 0) >= 11),
+    ]
+    lines = [
+        "## 7. ATR% zone analysis",
+        "",
+        "ATR% = ATR / price × 100。ボラティリティの大きさ別の成績。",
+        "高すぎると SL が刈られやすく、低すぎると値動きが小さい。",
+        "",
+        TABLE_HEADER,
+    ]
+    for label, pred in zones:
+        subset = _filter(closed, pred)
+        lines.append(_row(label, _compute_stats(subset)))
+    lines.append("")
+    return "\n".join(lines)
+
+
+def _section_mfe_mae(closed: list[ClosedTrade]) -> str:
+    """MFE/MAE 分析。勝ちトレードと負けトレードの値動き特性。"""
+    wins   = _filter(closed, lambda t: t.outcome == OUTCOME_TP_HIT)
+    losses = _filter(closed, lambda t: t.outcome == OUTCOME_SL_HIT)
+
+    def _stat(items: list[ClosedTrade], attr: str) -> str:
+        vals = [getattr(t, attr) for t in items if getattr(t, attr)]
+        if not vals:
+            return "n/a"
+        return f"avg={statistics.mean(vals):+.2f}%  max={max(vals):+.2f}%"
+
+    lines = [
+        "## 8. MFE / MAE analysis",
+        "",
+        "MFE (Maximum Favorable Excursion) = エントリー後の最大含み益 (%)。",
+        "MAE (Maximum Adverse Excursion) = エントリー後の最大含み損 (%)。",
+        "ショート視点: 価格が下がれば MFE+, 上がれば MAE-。",
+        "",
+        "| group | n | MFE (avg) | MFE (max) | MAE (avg) | MAE (worst) |",
+        "|-------|---|-----------|-----------|-----------|-------------|",
+    ]
+
+    for label, items in [("ALL", closed), ("TP_HIT", wins), ("SL_HIT", losses)]:
+        mfe = [t.max_favorable_pct for t in items if t.max_favorable_pct]
+        mae = [t.max_adverse_pct for t in items if t.max_adverse_pct]
+        if not mfe:
+            lines.append(f"| {label} | {len(items)} | – | – | – | – |")
+            continue
+        lines.append(
+            f"| {label} | {len(items)} "
+            f"| {statistics.mean(mfe):+.2f}% | {max(mfe):+.2f}% "
+            f"| {statistics.mean(mae):+.2f}% | {min(mae):+.2f}% |"
+        )
+    lines += [
+        "",
+        "**読み方**: SL_HIT の MFE が低い = ほとんど有利に動かずに SL 到達。",
+        "TP_HIT の MAE が浅い = 含み損が少なく順調に TP 到達。",
+    ]
+    lines.append("")
+    return "\n".join(lines)
+
+
 def _section_regime(closed: list[ClosedTrade]) -> str:
     regimes = ["BEARISH", "STAGNANT", "BULLISH"]
     lines = [
-        "## 7. Market regime breakdown",
+        "## 9. Market regime breakdown",
         "",
         "BTC 1h change によるレジーム別の成績。",
         "",
@@ -355,7 +441,7 @@ def _section_fundamental(closed: list[ClosedTrade]) -> str:
     no_funda  = _filter(closed, lambda t: t.short_conviction == "UNKNOWN")
 
     lines = [
-        "## 8. Fundamental / news",
+        "## 10. Fundamental / news",
         "",
         "ファンダメンタル分析は confirmed シグナルのみに実行される。",
         "UNKNOWN = ファンダ未取得 (rejected 候補)。",
@@ -387,32 +473,51 @@ def _section_fundamental(closed: list[ClosedTrade]) -> str:
 
 
 def _section_combined(closed: list[ClosedTrade]) -> str:
-    """RSI × 4h × volume の組み合わせ。"""
-    combos = [
-        ("STRICT (RSI≥75 & 4h<70 & ¬RISING)",
+    """旧 STRICT vs データ駆動の新フィルター候補の比較。"""
+    combos: list[tuple[str, Callable[[ClosedTrade], bool]]] = [
+        # --- 旧 STRICT (参考) ---
+        ("旧 STRICT (RSI≥75 & 4h<70 & BB & ¬RISING)",
          lambda t: (t.rsi is not None and t.rsi >= 75)
                    and (t.rsi_4h is None or t.rsi_4h < 70)
+                   and t.price_vs_bb > 1.0
                    and t.volume_trend != "RISING"),
-        ("RSI≥70 & 4h<70 & ¬RISING",
+        # --- 4h RSI 方向反転ベースの候補 ---
+        ("RSI≥75 & 4h≥75",
+         lambda t: (t.rsi is not None and t.rsi >= 75)
+                   and (t.rsi_4h is not None and t.rsi_4h >= 75)),
+        ("RSI≥75 & 4h≥75 & ¬RISING",
+         lambda t: (t.rsi is not None and t.rsi >= 75)
+                   and (t.rsi_4h is not None and t.rsi_4h >= 75)
+                   and t.volume_trend != "RISING"),
+        ("RSI≥70 & 4h≥70 & ¬RISING",
          lambda t: (t.rsi is not None and t.rsi >= 70)
-                   and (t.rsi_4h is None or t.rsi_4h < 70)
+                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
                    and t.volume_trend != "RISING"),
-        ("RSI≥70 & 4h<75 & ¬RISING",
-         lambda t: (t.rsi is not None and t.rsi >= 70)
-                   and (t.rsi_4h is None or t.rsi_4h < 75)
-                   and t.volume_trend != "RISING"),
-        ("RSI≥70 & ¬RISING (no 4h)",
-         lambda t: (t.rsi is not None and t.rsi >= 70)
-                   and t.volume_trend != "RISING"),
-        ("RSI≥65 & 4h<70 & DECLINING",
+        ("RSI≥65 & 4h≥75 & ¬RISING",
          lambda t: (t.rsi is not None and t.rsi >= 65)
-                   and (t.rsi_4h is None or t.rsi_4h < 70)
-                   and t.volume_trend == "DECLINING"),
+                   and (t.rsi_4h is not None and t.rsi_4h >= 75)
+                   and t.volume_trend != "RISING"),
+        ("RSI≥65 & 4h≥70 & ¬RISING",
+         lambda t: (t.rsi is not None and t.rsi >= 65)
+                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
+                   and t.volume_trend != "RISING"),
+        # --- ATR ゾーン追加 ---
+        ("RSI≥65 & 4h≥70 & ¬RISING & ATR 5–9%",
+         lambda t: (t.rsi is not None and t.rsi >= 65)
+                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
+                   and t.volume_trend != "RISING"
+                   and 5 <= (t.atr_pct or 0) < 9),
+        # --- FLAT のみ ---
+        ("RSI≥65 & 4h≥70 & FLAT",
+         lambda t: (t.rsi is not None and t.rsi >= 65)
+                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
+                   and t.volume_trend == "FLAT"),
     ]
     lines = [
-        "## 9. Combined filters",
+        "## 11. Combined filters",
         "",
-        "代表的なフィルターの組み合わせの仮想成績。",
+        "旧 STRICT と、データに基づくフィルター候補の比較。",
+        "4h RSI 方向を反転（≥ を要求）した上で各種組み合わせを評価。",
         "",
         TABLE_HEADER,
     ]
@@ -478,7 +583,7 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
         )
 
     lines = [
-        "## 10. Entry strategy comparison",
+        "## 12. Entry strategy comparison",
         "",
         "成行 (MARKET), ask 価格 (ASK), 指値 (LIMIT_1PCT/2PCT) の仮想成績。",
         "指値は検出後に価格がエントリー指定値まで上がったら約定。",
@@ -522,7 +627,7 @@ def _section_distribution(closed: list[ClosedTrade]) -> str:
         ("btc 1h change",    "btc_change_1h"),
     ]
     lines = [
-        "## 11. Indicator distribution: winners vs losers",
+        "## 13. Indicator distribution: winners vs losers",
         "",
         "TP_HIT と SL_HIT の指標平均。乖離が大きい指標が予測力を持つ可能性あり。",
         "",
@@ -539,6 +644,59 @@ def _section_distribution(closed: list[ClosedTrade]) -> str:
             d_str = "–"
         lines.append(f"| {label} | {w_str} | {l_str} | {d_str} |")
     lines.append("")
+    return "\n".join(lines)
+
+
+def _section_recommendation(closed: list[ClosedTrade]) -> str:
+    """データに基づくフィルター推奨。現行 vs 推奨を比較。"""
+    old_strict = _filter(
+        closed,
+        lambda t: (t.rsi is not None and t.rsi >= 75)
+                  and (t.rsi_4h is None or t.rsi_4h < 70)
+                  and t.price_vs_bb > 1.0
+                  and t.volume_trend != "RISING",
+    )
+    new_v1 = _filter(
+        closed,
+        lambda t: (t.rsi is not None and t.rsi >= 70)
+                  and (t.rsi_4h is not None and t.rsi_4h >= 65)
+                  and t.volume_trend != "RISING",
+    )
+
+    lines = [
+        "## 14. Filter recommendation",
+        "",
+        "### 旧 STRICT (変更前)",
+        "",
+        "```",
+        "RSI(1h) >= 75",
+        "RSI(4h) <  70   ← 逆効果 (低い 4h RSI = 勝率悪化)",
+        "BB upper break   ← シグナルが少なすぎる",
+        "Volume != RISING",
+        "```",
+        "",
+        TABLE_HEADER,
+        _row("旧 STRICT", _compute_stats(old_strict)),
+        "",
+        "### 新 STRICT v1 (適用中)",
+        "",
+        "```",
+        "RSI(1h) >= 70",
+        "RSI(4h) >= 65   ← 方向反転: ダブルオーバーボートを狙う",
+        "BB upper break   ← 撤廃 (効果なし)",
+        "Volume != RISING  ← 据え置き",
+        "```",
+        "",
+        TABLE_HEADER,
+        _row("新 STRICT v1", _compute_stats(new_v1)),
+        "",
+        "### 今後の改善候補",
+        "",
+        "- ATR% フィルター追加 (5–9% ゾーンが安定)",
+        "- Volume FLAT のみに絞る (FLAT 勝率 > DECLINING)",
+        "- RSI(1h) 閾値を 75 に戻す (データ蓄積後に再評価)",
+        "",
+    ]
     return "\n".join(lines)
 
 
@@ -589,11 +747,14 @@ def generate_report(
             _section_bb(closed),
             _section_volume(closed),
             _section_relative_strength(closed),
+            _section_atr_zone(closed),
+            _section_mfe_mae(closed),
             _section_regime(closed),
             _section_fundamental(closed),
             _section_combined(closed),
             _section_entry_strategy(closed),
             _section_distribution(closed),
+            _section_recommendation(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",

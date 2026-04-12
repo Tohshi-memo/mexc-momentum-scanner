@@ -293,7 +293,7 @@ def print_analysis_result(result) -> None:
         "DECLINING": "[bright_green]DECLIN[/bright_green]",
     }.get(result.volume_trend, "  --  ")
     rsi_4h_style = (
-        "bright_red" if result.is_4h_trend_established else "bright_green"
+        "bright_green" if result.is_4h_overheated else "dim"
     )
 
     rel = getattr(result, "relative_strength_pct", 0.0)

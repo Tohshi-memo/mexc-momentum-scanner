@@ -7,8 +7,8 @@ pandas のみで実装しているため外部の TA ライブラリへの依存
 損失を減らすために以下の追加フィルターを適用する:
   1. 出来高トレンド: 急騰中に出来高が増加していたらトレンド継続の可能性
                     → 出来高が減衰 (exhaustion) の銘柄のみショート対象にする
-  2. 4h RSI:        4h 足で既に過熱 (>= 70) していたら既存の強いトレンド
-                    → 1h 単発の急騰だけを狙う
+  2. 4h RSI:        1h だけでなく 4h でも過熱 (>= RSI_4H_MIN) している
+                    → ダブルオーバーボートで反転確率が高い銘柄のみ狙う
   3. ATR:           SL 幅をボラティリティに応じて自動調整するためのベース値
 """
 from __future__ import annotations
@@ -47,7 +47,7 @@ class AnalysisResult:
 
     # 4h RSI (マルチタイムフレーム確認用)
     rsi_4h: float | None
-    is_4h_trend_established: bool  # 4h RSI >= RSI_4H_MAX → 既存の強いトレンド
+    is_4h_overheated: bool  # 4h RSI >= RSI_4H_MIN → ダブルオーバーボート
 
     # ボリンジャーバンド
     bb_upper: float | None
@@ -73,24 +73,25 @@ class TechnicalAnalyzer:
     """抽出された急騰候補銘柄に対してテクニカル分析を行う。
 
     確認シグナルとなる条件（全てを満たす必要あり）:
-        - RSI(14) >= RSI_OVERBOUGHT (default: 75) → 「買われすぎ」
-        - 現在価格 > ボリンジャーバンド上限(2σ)    → 「バンドブレイク」
+        - RSI(14) >= RSI_OVERBOUGHT (default: 70) → 「買われすぎ」
         - 出来高トレンド != RISING                 → 疲弊兆候 (loss reducer)
-        - 4h RSI < RSI_4H_MAX (default: 70)        → 既存トレンドではない
+        - 4h RSI >= RSI_4H_MIN (default: 65)       → ダブルオーバーボート
+    ※ BB ブレイクはデータ分析の結果シグナル数を絞りすぎる割に
+      勝率改善に寄与しないため撤廃。
     """
 
     def __init__(self, client: MEXCClient) -> None:
         self._client = client
 
         self._rsi_period:     int   = int(os.getenv("RSI_PERIOD", "14"))
-        self._rsi_overbought: float = float(os.getenv("RSI_OVERBOUGHT", "75"))
+        self._rsi_overbought: float = float(os.getenv("RSI_OVERBOUGHT", "70"))
         self._bb_period:      int   = int(os.getenv("BB_PERIOD", "20"))
         self._bb_std:         float = float(os.getenv("BB_STD", "2.0"))
         self._timeframe:      str   = os.getenv("ANALYSIS_TIMEFRAME", "1h")
         self._ohlcv_limit:    int   = int(os.getenv("OHLCV_LIMIT", "100"))
 
         # 損失低減フィルター
-        self._rsi_4h_max:         float = float(os.getenv("RSI_4H_MAX", "70"))
+        self._rsi_4h_min:         float = float(os.getenv("RSI_4H_MIN", "65"))
         self._vol_lookback:       int   = int(os.getenv("VOLUME_LOOKBACK", "20"))
         self._vol_rising_ratio:   float = float(os.getenv("VOLUME_RISING_RATIO", "1.8"))
         self._vol_declining_ratio:float = float(os.getenv("VOLUME_DECLINING_RATIO", "0.8"))
@@ -99,10 +100,10 @@ class TechnicalAnalyzer:
         self._use_4h_filter:      bool  = os.getenv("USE_4H_FILTER", "true").lower() != "false"
 
         logger.debug(
-            "TechnicalAnalyzer | RSI(%d) OB=%.0f BB(%d,%.1fσ) 4h<=%s volF=%s",
+            "TechnicalAnalyzer | RSI(%d) OB=%.0f BB(%d,%.1fσ) 4h>=%s volF=%s",
             self._rsi_period, self._rsi_overbought,
             self._bb_period, self._bb_std,
-            self._rsi_4h_max, self._use_volume_filter,
+            self._rsi_4h_min, self._use_volume_filter,
         )
 
     # ------------------------------------------------------------------
@@ -201,9 +202,9 @@ class TechnicalAnalyzer:
         rsi_value  = self._last_valid(rsi_series)
         is_rsi_ob  = rsi_value is not None and rsi_value >= self._rsi_overbought
 
-        # --- 4h トレンド判定 ---
-        is_4h_established = (
-            rsi_4h_value is not None and rsi_4h_value >= self._rsi_4h_max
+        # --- 4h オーバーボート判定 (ダブルオーバーボート = エントリー条件) ---
+        is_4h_oh = (
+            rsi_4h_value is not None and rsi_4h_value >= self._rsi_4h_min
         )
 
         # --- BB ---
@@ -225,16 +226,18 @@ class TechnicalAnalyzer:
         atr_pct    = (atr_value / current_price * 100) if atr_value else None
 
         # --- 総合判定 + 却下理由収集 ---
+        # BB ブレイクはデータ分析の結果、効果が薄いため条件から除外。
         reject_reasons: list[str] = []
         if not is_rsi_ob:
             reject_reasons.append(f"RSI {rsi_value:.1f} < {self._rsi_overbought:.0f}"
                                   if rsi_value is not None else "RSI n/a")
-        if not is_above_bb:
-            reject_reasons.append("price <= BB upper")
         if self._use_volume_filter and not is_exhaustion:
             reject_reasons.append(f"volume RISING (×{vol_ratio:.2f})")
-        if self._use_4h_filter and is_4h_established:
-            reject_reasons.append(f"4h RSI {rsi_4h_value:.1f} >= {self._rsi_4h_max:.0f}")
+        if self._use_4h_filter and not is_4h_oh:
+            reject_reasons.append(
+                f"4h RSI {rsi_4h_value:.1f} < {self._rsi_4h_min:.0f}"
+                if rsi_4h_value is not None else "4h RSI n/a"
+            )
 
         is_confirmed = len(reject_reasons) == 0
 
@@ -247,7 +250,7 @@ class TechnicalAnalyzer:
             rsi=rsi_value,
             is_rsi_overbought=is_rsi_ob,
             rsi_4h=rsi_4h_value,
-            is_4h_trend_established=is_4h_established,
+            is_4h_overheated=is_4h_oh,
             bb_upper=bb_upper,
             bb_middle=bb_middle,
             bb_lower=bb_lower,
