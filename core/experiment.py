@@ -63,8 +63,7 @@ class EntryVariant:
     戦略一覧:
         MARKET      — 検出時の last price (成行の理想値)
         ASK         — 検出時の ask price (成行ショートの実質コスト)
-        LIMIT_1PCT  — last × 1.01 (任意の +1%: ベースライン)
-        LIMIT_2PCT  — last × 1.02 (任意の +2%: ベースライン)
+        LIMIT_1PCT〜5PCT — last × 1.01〜1.05 (任意の +1〜5%: ベースライン)
         LIMIT_BB3S  — BB中心 + 3σ  (統計的な極限ゾーン)
         LIMIT_ATR   — last + ATR×0.5 (ボラティリティ半分だけ上)
         LIMIT_FIB1272 — フィボナッチ 1.272 エクステンション
@@ -264,11 +263,10 @@ class ExperimentTracker:
             variants.append(_make("ASK", ask_price))
 
         # ── 任意 % 指値 (ベースライン) ───────────────────────────────────
-        # LIMIT_1PCT: 1% 上に指値
-        variants.append(_make("LIMIT_1PCT", last_price * 1.01, filled=False))
-
-        # LIMIT_2PCT: 2% 上に指値
-        variants.append(_make("LIMIT_2PCT", last_price * 1.02, filled=False))
+        for pct in (1, 2, 3, 4, 5):
+            variants.append(_make(
+                f"LIMIT_{pct}PCT", last_price * (1 + pct / 100), filled=False,
+            ))
 
         # ── テクニカル指値 ───────────────────────────────────────────────
         # LIMIT_BB3S: ボリンジャーバンド 3σ (統計的な極限ゾーン)
