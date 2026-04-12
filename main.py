@@ -34,6 +34,7 @@ from core.scanner import MarketScanner
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
 from tools.analyze_experiments import generate_report as generate_experiment_report
+from tools.virtual_portfolio import update_portfolio_report
 from utils.display import (
     console,
     print_analysis_result,
@@ -488,6 +489,11 @@ def main() -> None:
                 generate_experiment_report()
             except Exception as e:
                 logger.warning("Failed to regenerate experiment report: %s", e)
+            # バーチャルポートフォリオのサマリーをログ出力
+            try:
+                update_portfolio_report()
+            except Exception as e:
+                logger.warning("Failed to update portfolio report: %s", e)
 
         if run_once_mode:
             print_cycle_footer(cycle)
