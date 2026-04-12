@@ -275,28 +275,27 @@ class ExperimentTracker:
     def update(self, client: "MEXCClient") -> list[ExperimentTrade]:
         """全アクティブシャドウの outcome を更新。新規確定したものを返す。
 
-        5 分足 OHLCV の high/low を使って、チェック間隔中の SL/TP 通過を検出する。
-        ticker の last price だけでは 5 分間の瞬間的なスパイクを見逃すため。
+        直近 6 本の 1 分足 OHLCV の high/low を使って、チェック間隔中の
+        SL/TP 通過を分単位で検出する。5 分間で起きた高値・安値を正確に把握。
         """
         if not self._active:
             return []
 
         symbols_list = list(self._active.keys())
 
-        # 5分足 OHLCV を銘柄ごとに取得して high/low/close を得る
+        # 直近6本の 1m 足を銘柄ごとに取得して high/low/close を得る
         candle_data: dict[str, dict] = {}
         for symbol in symbols_list:
             try:
-                ohlcv = client.fetch_ohlcv(symbol, timeframe="5m", limit=1)
+                ohlcv = client.fetch_ohlcv(symbol, timeframe="1m", limit=6)
                 if ohlcv and len(ohlcv) >= 1:
-                    candle = ohlcv[-1]  # [timestamp, open, high, low, close, volume]
                     candle_data[symbol] = {
-                        "high":  float(candle[2]),
-                        "low":   float(candle[3]),
-                        "close": float(candle[4]),
+                        "high":  max(float(c[2]) for c in ohlcv),
+                        "low":   min(float(c[3]) for c in ohlcv),
+                        "close": float(ohlcv[-1][4]),
                     }
             except Exception as e:
-                logger.debug("5m OHLCV unavailable for %s: %s", symbol, e)
+                logger.debug("1m OHLCV unavailable for %s: %s", symbol, e)
 
         newly_closed: list[ExperimentTrade] = []
         now = datetime.now(timezone.utc)

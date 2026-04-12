@@ -180,8 +180,8 @@ class SymbolTracker:
         """追跡中の全銘柄の現在価格を一括更新し、この呼び出しで outcome
         確定した銘柄のリストを返す。
 
-        5分足 OHLCV の high/low を使って、チェック間隔中の SL/TP 通過を検出する。
-        ticker の last price だけでは 5 分間の瞬間的なスパイクを見逃すため。
+        直近 6 本の 1 分足 OHLCV の high/low を使って、チェック間隔中の
+        SL/TP 通過を分単位で検出する。5 分間で起きた高値・安値を正確に把握。
         """
         active = [
             v for v in self._symbols.values()
@@ -195,15 +195,15 @@ class SymbolTracker:
 
         for tracked in active:
             try:
-                ohlcv = client.fetch_ohlcv(tracked.symbol, timeframe="5m", limit=1)
+                ohlcv = client.fetch_ohlcv(tracked.symbol, timeframe="1m", limit=6)
                 if not ohlcv or len(ohlcv) < 1:
                     continue
-                candle = ohlcv[-1]
-                high  = float(candle[2])
-                low   = float(candle[3])
-                close = float(candle[4])
+                # 直近6本の 1m 足全体の最高値・最安値・最終終値
+                high  = max(float(c[2]) for c in ohlcv)
+                low   = min(float(c[3]) for c in ohlcv)
+                close = float(ohlcv[-1][4])
             except Exception as e:
-                logger.debug("5m OHLCV unavailable for %s: %s", tracked.symbol, e)
+                logger.debug("1m OHLCV unavailable for %s: %s", tracked.symbol, e)
                 continue
 
             if close <= 0:
