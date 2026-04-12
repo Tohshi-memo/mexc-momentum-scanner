@@ -200,6 +200,7 @@ def run_once(
     # 後の集計で「STRICT に通っていたら何が起きていたか」を比較できる。
     _register_shadow_trades(
         analysis_results,
+        client=scanner._client,
         builder=builder,
         experiment_tracker=experiment_tracker,
         btc_change_1h=btc_status.change_1h_pct,
@@ -314,6 +315,7 @@ def run_once(
 def _register_shadow_trades(
     analysis_results,
     *,
+    client,
     builder: ProposalBuilder,
     experiment_tracker: ExperimentTracker,
     btc_change_1h: float,
@@ -326,6 +328,9 @@ def _register_shadow_trades(
     ProposalBuilder で本番と同じ SL/TP を計算するため、
     後で『現行 STRICT に通っていなくても結果はどうだったか』
     『RSI 閾値を 70 に下げていたら？』のような re-eval が同じデータで可能。
+
+    各候補について order book の best ask/bid を取得し、スプレッド情報と
+    複数のエントリー戦略バリアント (MARKET / ASK / LIMIT) を記録する。
     """
     if not analysis_results or max_per_cycle <= 0:
         return
@@ -351,6 +356,21 @@ def _register_shadow_trades(
                 relative_strength=r.relative_strength_pct,
                 btc_change_1h=btc_change_1h,
             )
+
+            # Order book からスプレッド情報を取得
+            ask_price: float | None = None
+            bid_price: float | None = None
+            try:
+                ob = client.fetch_order_book(r.symbol, limit=5)
+                asks = ob.get("asks") or []
+                bids = ob.get("bids") or []
+                if asks:
+                    ask_price = float(asks[0][0])
+                if bids:
+                    bid_price = float(bids[0][0])
+            except Exception as e:
+                logger.debug("Order book unavailable for %s: %s", r.symbol, e)
+
             registered = experiment_tracker.add_candidate(
                 symbol=r.symbol,
                 entry_price=proposal.entry_price,
@@ -361,6 +381,8 @@ def _register_shadow_trades(
                 market_regime=regime,
                 filters=snapshot,
                 confirmed_strict=r.is_confirmed_signal,
+                ask_price=ask_price,
+                bid_price=bid_price,
             )
             if registered:
                 added += 1

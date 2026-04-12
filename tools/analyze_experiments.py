@@ -86,6 +86,10 @@ class ClosedTrade:
     short_conviction: str
     news_count: int
 
+    # spread / entry variants
+    spread_pct: float | None
+    entry_variants: list[dict] | None   # raw dicts from JSON
+
 
 def _load_closed(path: Path) -> list[ClosedTrade]:
     if not path.exists():
@@ -124,6 +128,8 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
                 news_count=int(entry.get("news_count", -1)),
                 relative_strength=float(f_dict.get("relative_strength") or 0.0),
                 btc_change_1h=float(f_dict.get("btc_change_1h") or 0.0),
+                spread_pct=entry.get("spread_pct"),
+                entry_variants=entry.get("entry_variants"),
             )
         )
     return closed
@@ -417,6 +423,85 @@ def _section_combined(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
+    """エントリー戦略バリアントの比較。"""
+    # スプレッド統計
+    spreads = [t.spread_pct for t in closed if t.spread_pct is not None]
+    spread_lines = []
+    if spreads:
+        avg_spread = statistics.mean(spreads)
+        med_spread = statistics.median(spreads)
+        max_spread = max(spreads)
+        spread_lines = [
+            f"- 平均スプレッド: {avg_spread:.3f}%",
+            f"- 中央値スプレッド: {med_spread:.3f}%",
+            f"- 最大スプレッド: {max_spread:.3f}%",
+            f"- スプレッドデータ有り: {len(spreads)} / {len(closed)} 件",
+        ]
+    else:
+        spread_lines = ["- スプレッドデータなし (order book 未取得の古いレコード)"]
+
+    # バリアント別 PnL 集計
+    strategy_pnls: dict[str, list[float]] = {}
+    strategy_filled: dict[str, int] = {}
+    strategy_total: dict[str, int] = {}
+
+    for t in closed:
+        if not t.entry_variants:
+            continue
+        for v in t.entry_variants:
+            s = v.get("strategy", "?")
+            strategy_total[s] = strategy_total.get(s, 0) + 1
+            if v.get("filled") and v.get("pnl_pct") is not None:
+                strategy_filled[s] = strategy_filled.get(s, 0) + 1
+                strategy_pnls.setdefault(s, []).append(float(v["pnl_pct"]))
+
+    var_header = (
+        "| strategy | filled | n (w/ pnl) | avg PnL | total PnL | win% |\n"
+        "|----------|--------|------------|---------|-----------|------|"
+    )
+    var_rows: list[str] = []
+    for s in ["MARKET", "ASK", "LIMIT_1PCT", "LIMIT_2PCT"]:
+        pnls = strategy_pnls.get(s, [])
+        total = strategy_total.get(s, 0)
+        filled = strategy_filled.get(s, 0)
+        if not pnls:
+            var_rows.append(f"| {s} | {filled}/{total} | 0 | – | – | – |")
+            continue
+        avg_pnl = statistics.mean(pnls)
+        tot_pnl = sum(pnls)
+        wins = sum(1 for p in pnls if p > 0)
+        wr = wins / len(pnls) * 100
+        var_rows.append(
+            f"| {s} | {filled}/{total} | {len(pnls)} | "
+            f"{avg_pnl:+.2f}% | {tot_pnl:+.1f}% | {wr:.0f}% |"
+        )
+
+    lines = [
+        "## 10. Entry strategy comparison",
+        "",
+        "成行 (MARKET), ask 価格 (ASK), 指値 (LIMIT_1PCT/2PCT) の仮想成績。",
+        "指値は検出後に価格がエントリー指定値まで上がったら約定。",
+        "上がらなければ unfilled (filled 列の分母に含まれるが PnL は 0)。",
+        "",
+        "### Spread statistics",
+        "",
+        *spread_lines,
+        "",
+        "### Strategy PnL",
+        "",
+        var_header,
+        *var_rows,
+        "",
+        "**解釈**:",
+        "- MARKET vs ASK の差 = スプレッドコスト。ASK の方が PnL 低ければスプレッドが痛い。",
+        "- LIMIT の方が avg PnL 高ければ「もう少し上がってから入る」方が有利。",
+        "  ただし filled 率が低ければ機会損失とのトレードオフ。",
+        "",
+    ]
+    return "\n".join(lines)
+
+
 def _section_distribution(closed: list[ClosedTrade]) -> str:
     """勝者 / 敗者 の指標平均値を比較する。"""
     wins   = _filter(closed, lambda t: t.outcome == OUTCOME_TP_HIT)
@@ -437,7 +522,7 @@ def _section_distribution(closed: list[ClosedTrade]) -> str:
         ("btc 1h change",    "btc_change_1h"),
     ]
     lines = [
-        "## 10. Indicator distribution: winners vs losers",
+        "## 11. Indicator distribution: winners vs losers",
         "",
         "TP_HIT と SL_HIT の指標平均。乖離が大きい指標が予測力を持つ可能性あり。",
         "",
@@ -507,6 +592,7 @@ def generate_report(
             _section_regime(closed),
             _section_fundamental(closed),
             _section_combined(closed),
+            _section_entry_strategy(closed),
             _section_distribution(closed),
         ]
         body = [

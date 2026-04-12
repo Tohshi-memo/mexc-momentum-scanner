@@ -54,6 +54,25 @@ class FilterSnapshot:
 
 
 @dataclass
+class EntryVariant:
+    """エントリー戦略バリアントの追跡結果。
+
+    同一の検出タイミングに対して複数のエントリー戦略を仮想的に追跡し、
+    「指値で入っていたら？」「スプレッド考慮したら？」を比較できる。
+    """
+    strategy: str          # MARKET / ASK / LIMIT_1PCT / LIMIT_2PCT
+    entry_price: float     # 実際のエントリー仮想価格
+    sl_price: float
+    tp_price: float
+    filled: bool = True    # 指値が約定したか (LIMIT は後で価格到達で True に)
+    filled_at: str | None = None
+
+    outcome: str = OUTCOME_ACTIVE
+    outcome_price: float | None = None
+    pnl_pct: float | None = None
+
+
+@dataclass
 class ExperimentTrade:
     """シャドウトレード（仮想エントリーの追跡）"""
     symbol: str
@@ -74,7 +93,15 @@ class ExperimentTrade:
     short_conviction: str = "UNKNOWN"      # HIGH / MEDIUM / LOW / AVOID / UNKNOWN
     news_count: int = -1                   # -1 = 未取得
 
-    # 状態
+    # スプレッド情報 (検出時点)
+    ask_price: float | None = None         # 売り気配 (成行ショートの実質エントリー)
+    bid_price: float | None = None         # 買い気配
+    spread_pct: float | None = None        # (ask - bid) / mid × 100
+
+    # エントリー戦略バリアント (各戦略ごとの仮想結果)
+    entry_variants: list[EntryVariant] | None = None
+
+    # 状態 (MARKET 戦略のメイン outcome。後方互換のため残す)
     outcome: str = OUTCOME_ACTIVE
     outcome_at: str | None = None
     outcome_price: float | None = None
@@ -127,13 +154,30 @@ class ExperimentTracker:
         catalyst_type: str = "UNKNOWN",
         short_conviction: str = "UNKNOWN",
         news_count: int = -1,
+        ask_price: float | None = None,
+        bid_price: float | None = None,
     ) -> bool:
-        """新規シャドウトレードを登録。同銘柄追跡中なら何もしない。"""
+        """新規シャドウトレードを登録。同銘柄追跡中なら何もしない。
+
+        ask_price / bid_price が渡された場合、スプレッド情報を記録し、
+        複数のエントリー戦略バリアントを自動生成する。
+        """
         if symbol in self._active:
             return False
 
         now     = datetime.now(timezone.utc)
         expires = now + timedelta(hours=self._tracking_hours)
+
+        # スプレッド計算
+        spread_pct: float | None = None
+        if ask_price and bid_price and bid_price > 0:
+            mid = (ask_price + bid_price) / 2
+            spread_pct = (ask_price - bid_price) / mid * 100 if mid > 0 else None
+
+        # エントリー戦略バリアントを生成
+        variants = self._build_entry_variants(
+            entry_price, ask_price, sl_pct, tp_pct,
+        )
 
         self._active[symbol] = ExperimentTrade(
             symbol=symbol,
@@ -150,13 +194,64 @@ class ExperimentTracker:
             catalyst_type=catalyst_type,
             short_conviction=short_conviction,
             news_count=news_count,
+            ask_price=ask_price,
+            bid_price=bid_price,
+            spread_pct=spread_pct,
+            entry_variants=variants,
             last_price=entry_price,
         )
         logger.debug(
-            "Shadow trade added: %s (strict=%s, regime=%s)",
+            "Shadow trade added: %s (strict=%s, regime=%s, spread=%.3f%%)",
             symbol, confirmed_strict, market_regime,
+            spread_pct or 0.0,
         )
         return True
+
+    @staticmethod
+    def _build_entry_variants(
+        last_price: float,
+        ask_price: float | None,
+        sl_pct: float,
+        tp_pct: float,
+    ) -> list[EntryVariant]:
+        """エントリー戦略ごとの仮想エントリー価格 + SL/TP を生成する。
+
+        戦略:
+          MARKET    — last price (成行の理想値)
+          ASK       — ask price (成行ショートの実質コスト)
+          LIMIT_1PCT — last × 1.01 (1%上に指値ショート)
+          LIMIT_2PCT — last × 1.02 (2%上に指値ショート)
+
+        指値戦略は filled=False で初期化し、update() で価格到達時に
+        filled=True に切り替える。到達しなければ outcome は EXPIRED (unfilled)。
+        """
+        variants: list[EntryVariant] = []
+
+        def _make(strategy: str, price: float, filled: bool = True) -> EntryVariant:
+            sl = price * (1 + sl_pct / 100)
+            tp = price * (1 - tp_pct / 100)
+            return EntryVariant(
+                strategy=strategy,
+                entry_price=price,
+                sl_price=sl,
+                tp_price=tp,
+                filled=filled,
+            )
+
+        # MARKET: last price でエントリー (即時約定)
+        variants.append(_make("MARKET", last_price))
+
+        # ASK: 実際の成行ショートは ask 価格で約定する
+        if ask_price and ask_price > 0:
+            variants.append(_make("ASK", ask_price))
+
+        # LIMIT_1PCT: 1% 上に指値 (さらに上がったら約定)
+        variants.append(_make("LIMIT_1PCT", last_price * 1.01, filled=False))
+
+        # LIMIT_2PCT: 2% 上に指値 (さらに上がったら約定)
+        variants.append(_make("LIMIT_2PCT", last_price * 1.02, filled=False))
+
+        return variants
 
     def update_fundamental(
         self,
@@ -210,6 +305,9 @@ class ExperimentTracker:
                 if change_pct < trade.max_adverse_pct:
                     trade.max_adverse_pct = change_pct
 
+                # エントリーバリアントの更新
+                self._update_variants(trade, price, now_str)
+
                 # outcome 判定（先に到達した方で確定）
                 if price <= trade.tp_price:
                     self._close(trade, OUTCOME_TP_HIT, price, now_str)
@@ -246,6 +344,38 @@ class ExperimentTracker:
     # Internal
     # ------------------------------------------------------------------
 
+    @staticmethod
+    def _update_variants(
+        trade: ExperimentTrade,
+        price: float,
+        now_str: str,
+    ) -> None:
+        """各エントリーバリアントの約定チェック + outcome 判定。"""
+        if not trade.entry_variants:
+            return
+
+        for v in trade.entry_variants:
+            if v.outcome != OUTCOME_ACTIVE:
+                continue
+
+            # 指値バリアント: 価格がエントリー価格に到達したら約定
+            if not v.filled:
+                if price >= v.entry_price:
+                    v.filled = True
+                    v.filled_at = now_str
+                else:
+                    continue  # まだ約定していないのでスキップ
+
+            # TP/SL 判定 (約定済みバリアントのみ)
+            if price <= v.tp_price:
+                v.outcome = OUTCOME_TP_HIT
+                v.outcome_price = price
+                v.pnl_pct = (v.entry_price - price) / v.entry_price * 100
+            elif price >= v.sl_price:
+                v.outcome = OUTCOME_SL_HIT
+                v.outcome_price = v.sl_price
+                v.pnl_pct = (v.entry_price - v.sl_price) / v.entry_price * 100
+
     def _close(
         self,
         trade: ExperimentTrade,
@@ -261,6 +391,20 @@ class ExperimentTracker:
         detected = datetime.fromisoformat(trade.detected_at)
         closed   = datetime.fromisoformat(now_str)
         trade.hours_held = (closed - detected).total_seconds() / 3600
+
+        # 未確定のバリアントも全てクローズ
+        if trade.entry_variants:
+            for v in trade.entry_variants:
+                if v.outcome == OUTCOME_ACTIVE:
+                    if not v.filled:
+                        v.outcome = OUTCOME_EXPIRED
+                        v.pnl_pct = 0.0
+                    else:
+                        v.outcome = outcome
+                        v.outcome_price = exit_price
+                        v.pnl_pct = (
+                            (v.entry_price - exit_price) / v.entry_price * 100
+                        )
 
         self._closed.append(trade)
         del self._active[trade.symbol]
@@ -328,5 +472,14 @@ class ExperimentTracker:
         entry.setdefault("catalyst_type", "UNKNOWN")
         entry.setdefault("short_conviction", "UNKNOWN")
         entry.setdefault("news_count", -1)
+        # スプレッド / バリアントの後方互換
+        entry.setdefault("ask_price", None)
+        entry.setdefault("bid_price", None)
+        entry.setdefault("spread_pct", None)
+        # entry_variants の復元
+        variants_raw = entry.pop("entry_variants", None)
+        variants: list[EntryVariant] | None = None
+        if variants_raw is not None:
+            variants = [EntryVariant(**v) for v in variants_raw]
         filters = FilterSnapshot(**filters_dict)
-        return ExperimentTrade(filters=filters, **entry)
+        return ExperimentTrade(filters=filters, entry_variants=variants, **entry)
