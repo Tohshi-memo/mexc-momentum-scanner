@@ -131,23 +131,19 @@ class MEXCClient:
 
         Returns:
             (open_interest_value_usdt, oi_change_pct_1h) のタプル。
-            open_interest_value_usdt: OI の USDT 建て総額
-            oi_change_pct_1h: 直近1hのOI変化率 (%)。履歴取得失敗時は None
+            取得失敗・未サポート時は (None, None)
         """
         try:
-            # 現在の OI
-            result = self._call_with_retry(self._exchange.fetch_open_interest, symbol)
+            result = self._exchange.fetch_open_interest(symbol)
             oi_value = result.get("openInterestValue") or result.get("openInterest")
             if oi_value is None:
                 return None, None
             oi_value = float(oi_value)
 
-            # 直近2本の1h OI履歴から変化率を計算
             oi_change_pct: float | None = None
             try:
-                history = self._call_with_retry(
-                    self._exchange.fetch_open_interest_history,
-                    symbol, "1h", None, 2,
+                history = self._exchange.fetch_open_interest_history(
+                    symbol, "1h", None, 2
                 )
                 if history and len(history) >= 2:
                     prev = history[-2].get("openInterestValue") or history[-2].get("openInterest")
@@ -167,13 +163,10 @@ class MEXCClient:
         """グローバルのロング/ショート比率を取得する。
 
         Returns:
-            longShortRatio (ロング比率 / ショート比率)。
-            例: 1.5 = ロングがショートの1.5倍。None = 取得失敗
+            longShortRatio。取得失敗・未サポート時は None
         """
         try:
-            result = self._call_with_retry(
-                self._exchange.fetch_long_short_ratio, symbol, "1h"
-            )
+            result = self._exchange.fetch_long_short_ratio(symbol, "1h")
             ratio = result.get("longShortRatio") or result.get("longAccount")
             if ratio is None:
                 return None
