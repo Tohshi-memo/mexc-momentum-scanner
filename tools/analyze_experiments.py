@@ -588,6 +588,7 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
     order = [
         "MARKET", "ASK",
         "LIMIT_1PCT", "LIMIT_2PCT", "LIMIT_3PCT", "LIMIT_4PCT", "LIMIT_5PCT",
+        "LIMIT_6PCT", "LIMIT_7PCT", "LIMIT_8PCT", "LIMIT_9PCT", "LIMIT_10PCT",
         "LIMIT_BB3S", "LIMIT_ATR",
         "LIMIT_FIB1272", "LIMIT_FIB1618",
     ]
@@ -634,7 +635,7 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
         "|------|--------|",
         "| MARKET | 検出時の last price で即入り |",
         "| ASK | 検出時の ask price (実際の成行コスト) |",
-        "| LIMIT_1PCT〜5PCT | 任意 +1〜5% の指値 (ベースライン) |",
+        "| LIMIT_1PCT〜10PCT | 任意 +1〜10% の指値 (ベースライン) |",
         "| LIMIT_BB3S | BB 中心 + 3σ (統計的極限) |",
         "| LIMIT_ATR | last + ATR×0.5 (ボラ半分だけ上) |",
         "| LIMIT_FIB1272 | フィボナッチ 1.272 エクステンション |",
