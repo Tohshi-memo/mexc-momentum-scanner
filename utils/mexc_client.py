@@ -126,6 +126,62 @@ class MEXCClient:
             logger.debug("fetch_funding_rate failed for %s: %s", symbol, e)
             return None
 
+    def fetch_open_interest(self, symbol: str) -> tuple[float | None, float | None]:
+        """現在の未決済建玉 (OI) を取得する。
+
+        Returns:
+            (open_interest_value_usdt, oi_change_pct_1h) のタプル。
+            open_interest_value_usdt: OI の USDT 建て総額
+            oi_change_pct_1h: 直近1hのOI変化率 (%)。履歴取得失敗時は None
+        """
+        try:
+            # 現在の OI
+            result = self._call_with_retry(self._exchange.fetch_open_interest, symbol)
+            oi_value = result.get("openInterestValue") or result.get("openInterest")
+            if oi_value is None:
+                return None, None
+            oi_value = float(oi_value)
+
+            # 直近2本の1h OI履歴から変化率を計算
+            oi_change_pct: float | None = None
+            try:
+                history = self._call_with_retry(
+                    self._exchange.fetch_open_interest_history,
+                    symbol, "1h", None, 2,
+                )
+                if history and len(history) >= 2:
+                    prev = history[-2].get("openInterestValue") or history[-2].get("openInterest")
+                    curr = history[-1].get("openInterestValue") or history[-1].get("openInterest")
+                    if prev and curr and float(prev) > 0:
+                        oi_change_pct = (float(curr) - float(prev)) / float(prev) * 100
+            except Exception as e:
+                logger.debug("fetch_open_interest_history failed for %s: %s", symbol, e)
+
+            return oi_value, oi_change_pct
+
+        except Exception as e:
+            logger.debug("fetch_open_interest failed for %s: %s", symbol, e)
+            return None, None
+
+    def fetch_long_short_ratio(self, symbol: str) -> float | None:
+        """グローバルのロング/ショート比率を取得する。
+
+        Returns:
+            longShortRatio (ロング比率 / ショート比率)。
+            例: 1.5 = ロングがショートの1.5倍。None = 取得失敗
+        """
+        try:
+            result = self._call_with_retry(
+                self._exchange.fetch_long_short_ratio, symbol, "1h"
+            )
+            ratio = result.get("longShortRatio") or result.get("longAccount")
+            if ratio is None:
+                return None
+            return float(ratio)
+        except Exception as e:
+            logger.debug("fetch_long_short_ratio failed for %s: %s", symbol, e)
+            return None
+
     # ------------------------------------------------------------------
     # Private (Trading) - 将来の本番実装用プレースホルダー
     # ------------------------------------------------------------------

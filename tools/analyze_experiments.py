@@ -101,6 +101,11 @@ class ClosedTrade:
     # OBV ダイバージェンス (記録のみ。フィルター未使用)
     obv_divergence: str | None = None  # BEARISH_DIV / BULLISH_DIV / NONE
 
+    # オープンインタレスト (記録のみ。フィルター未使用)
+    open_interest_usd: float | None = None
+    oi_change_pct:     float | None = None
+    long_short_ratio:  float | None = None
+
 
 def _load_closed(path: Path) -> list[ClosedTrade]:
     if not path.exists():
@@ -143,6 +148,9 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
                 entry_variants=entry.get("entry_variants"),
                 funding_rate=f_dict.get("funding_rate"),
                 obv_divergence=f_dict.get("obv_divergence"),
+                open_interest_usd=f_dict.get("open_interest_usd"),
+                oi_change_pct=f_dict.get("oi_change_pct"),
+                long_short_ratio=f_dict.get("long_short_ratio"),
             )
         )
     return closed
@@ -856,6 +864,78 @@ def _section_obv_divergence(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_open_interest(closed: list[ClosedTrade]) -> str:
+    """OI・OI変化率・ロングショート比率の分析。"""
+    with_oi = [t for t in closed if getattr(t, "open_interest_usd", None) is not None]
+    with_ls = [t for t in closed if getattr(t, "long_short_ratio", None) is not None]
+
+    lines = ["## 17. Open Interest & Long/Short ratio", ""]
+
+    if len(with_oi) < 5 and len(with_ls) < 5:
+        n_oi = len(with_oi)
+        n_ls = len(with_ls)
+        lines += [
+            f"OI データ: {n_oi} / {len(closed)} 件 　L/S 比率データ: {n_ls} / {len(closed)} 件",
+            "",
+            "*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    # --- OI 変化率バケット ---
+    with_oic = [
+        t for t in with_oi
+        if getattr(t, "oi_change_pct", None) is not None
+    ]
+    if len(with_oic) >= 5:
+        lines += [
+            f"### OI 変化率 (直近1h) — {len(with_oic)} 件",
+            "",
+            "**考え方**: 価格↑ OI↑ = 新規ロング参入 → 過熱 → 反転リスク大。",
+            "",
+            TABLE_HEADER,
+        ]
+        oi_buckets = [
+            ("OI 急減 (< -5%)",  -999, -5.0),
+            ("OI 減少 (-5〜0%)", -5.0,  0.0),
+            ("OI 増加 (0〜5%)",   0.0,  5.0),
+            ("OI 急増 (>= 5%)",  5.0,  999),
+        ]
+        for label, lo, hi in oi_buckets:
+            subset = [
+                t for t in with_oic
+                if lo <= t.oi_change_pct < hi
+            ]
+            if not subset:
+                continue
+            lines.append(_row(f"  {label}", _compute_stats(subset)))
+        lines.append("")
+
+    # --- L/S 比率バケット ---
+    if len(with_ls) >= 5:
+        lines += [
+            f"### L/S 比率 — {len(with_ls)} 件",
+            "",
+            "**考え方**: L/S > 1.5 = ロング過多 → 清算リスク高 → ショート有利。",
+            "",
+            TABLE_HEADER,
+        ]
+        ls_buckets = [
+            ("L/S < 1.0 (ショート優勢)", -999, 1.0),
+            ("L/S 1.0〜1.5",               1.0, 1.5),
+            ("L/S 1.5〜2.0",               1.5, 2.0),
+            ("L/S >= 2.0 (ロング過多)",    2.0, 999),
+        ]
+        for label, lo, hi in ls_buckets:
+            subset = [t for t in with_ls if lo <= t.long_short_ratio < hi]
+            if not subset:
+                continue
+            lines.append(_row(f"  {label}", _compute_stats(subset)))
+        lines.append("")
+
+    return "\n".join(lines)
+
+
 # ---------------------------------------------------------------------------
 # Top-level report builder
 # ---------------------------------------------------------------------------
@@ -913,6 +993,7 @@ def generate_report(
             _section_recommendation(closed),
             _section_funding_rate(closed),
             _section_obv_divergence(closed),
+            _section_open_interest(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",

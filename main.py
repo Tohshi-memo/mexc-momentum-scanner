@@ -358,6 +358,9 @@ def _register_shadow_trades(
                 btc_change_1h=btc_change_1h,
                 funding_rate=r.funding_rate,
                 obv_divergence=r.obv_divergence,
+                open_interest_usd=r.open_interest_usd,
+                oi_change_pct=r.oi_change_pct,
+                long_short_ratio=r.long_short_ratio,
             )
 
             # Order book からスプレッド情報を取得

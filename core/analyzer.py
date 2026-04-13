@@ -79,6 +79,15 @@ class AnalysisResult:
     # NONE:        ダイバージェンスなし
     obv_divergence: str | None  # "BEARISH_DIV" / "BULLISH_DIV" / "NONE"
 
+    # オープンインタレスト (記録のみ。フィルターとしては未使用)
+    # 価格↑ OI↑ = 新規ロング増加 → 反転リスク大
+    open_interest_usd: float | None   # OI の USDT 建て総額
+    oi_change_pct:     float | None   # 直近1h OI 変化率 (%)
+
+    # ロング/ショート比率 (記録のみ。フィルターとしては未使用)
+    # > 1.0 = ロングが多い → ショートに有利な環境
+    long_short_ratio: float | None
+
     # 総合判定
     is_confirmed_signal: bool
     reject_reasons: list[str] # 却下理由（デバッグ/ログ用）
@@ -174,7 +183,13 @@ class TechnicalAnalyzer:
             # ファンディングレートを取得 (記録のみ・失敗しても解析継続)
             funding_rate: float | None = self._client.fetch_funding_rate(candidate.symbol)
 
-            return self._compute_indicators(candidate, df, rsi_4h_value, funding_rate)
+            # OI・ロングショート比率を取得 (記録のみ・失敗しても解析継続)
+            oi_usd, oi_change = self._client.fetch_open_interest(candidate.symbol)
+            ls_ratio = self._client.fetch_long_short_ratio(candidate.symbol)
+
+            return self._compute_indicators(
+                candidate, df, rsi_4h_value, funding_rate, oi_usd, oi_change, ls_ratio,
+            )
 
         except Exception as e:
             logger.error("Analysis failed for %s: %s", candidate.symbol, e)
@@ -212,6 +227,9 @@ class TechnicalAnalyzer:
         df: pd.DataFrame,
         rsi_4h_value: float | None,
         funding_rate: float | None = None,
+        open_interest_usd: float | None = None,
+        oi_change_pct: float | None = None,
+        long_short_ratio: float | None = None,
     ) -> AnalysisResult:
         """全指標を計算し AnalysisResult を組み立てる。"""
         current_price: float = candidate.price
@@ -292,6 +310,9 @@ class TechnicalAnalyzer:
             swing_low_1h=swing_low_1h,
             funding_rate=funding_rate,
             obv_divergence=obv_divergence,
+            open_interest_usd=open_interest_usd,
+            oi_change_pct=oi_change_pct,
+            long_short_ratio=long_short_ratio,
             is_confirmed_signal=is_confirmed,
             reject_reasons=reject_reasons,
         )
