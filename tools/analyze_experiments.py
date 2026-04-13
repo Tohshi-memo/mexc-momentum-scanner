@@ -354,7 +354,7 @@ def _section_rsi_4h_sweep(closed: list[ClosedTrade]) -> str:
 
     lines += [
         "",
-        "### 3b. 新方向 (4h RSI ≥ X): 高 4h のみ採用（推奨）",
+        "### 3b. 新方向 (4h RSI ≥ X): 高 4h のみ採用（比較用 — データでは 3a が優位）",
         "",
         TABLE_HEADER,
     ]
@@ -427,14 +427,25 @@ def _section_volume(closed: list[ClosedTrade]) -> str:
 
 def _section_relative_strength(closed: list[ClosedTrade]) -> str:
     thresholds = [0.0, 3.0, 5.0, 7.0, 10.0]
+    # 0〜5% は全件と同数になるはずなので確認
+    all_count = len(closed)
+    ge5_count = sum(1 for t in closed if t.relative_strength >= 5.0)
+    same_as_all = ge5_count == all_count
+
     lines = [
         "## 6. Relative strength (vs BTC) threshold sweep",
         "",
         "現行スキャナーは alt_1h - btc_1h ≥ 5.0% でフィルター。",
         "閾値を変えた場合の仮想成績。",
         "",
-        TABLE_HEADER,
     ]
+    if same_as_all:
+        lines += [
+            "> **注**: スキャナーが検出段階で相対強度 ≥ 5.0% を必須条件としているため、",
+            "> 0〜5% の閾値はすべて全件と同一になります。有効な比較は ≥ 7% / ≥ 10% のみです。",
+            "",
+        ]
+    lines.append(TABLE_HEADER)
     for th in thresholds:
         subset = _filter(closed, lambda t, th=th: t.relative_strength >= th)
         lines.append(_row(f"rel strength ≥ {th:.0f}%", _compute_stats(subset)))
@@ -705,12 +716,12 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
     all_strategies = order + [s for s in strategy_data if s not in order]
 
     var_header = (
-        "| strategy | filled/total | unfilled | avg PnL | total PnL | win% | "
+        "| strategy | filled/total | unfilled | avg PnL | 実質期待値 | total PnL | win% | "
         "TP | SL |\n"
-        "|----------|-------------|----------|---------|-----------|------|"
+        "|----------|-------------|----------|---------|-----------|-----------|------|"
         "----|----|\n"
-        "| *(filled のみ集計。unfilled は機会損失として別途カウント)* "
-        "| | | | | | | |"
+        "| *(実質期待値 = filled率 × avg PnL。unfilled の機会損失を加味した真の期待値)* "
+        "| | | | | | | | |"
     )
     var_rows: list[str] = []
     for s in all_strategies:
@@ -721,16 +732,18 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
         if not pnls:
             var_rows.append(
                 f"| {s} | {d['filled']}/{d['total']} | {d['unfilled']} "
-                f"| – | – | – | {d['tp']} | {d['sl']} |"
+                f"| – | – | – | – | {d['tp']} | {d['sl']} |"
             )
             continue
         avg_pnl = statistics.mean(pnls)
         tot_pnl = sum(pnls)
         wins = sum(1 for p in pnls if p > 0)
         wr = wins / len(pnls) * 100
+        fill_rate = d["filled"] / d["total"] if d["total"] > 0 else 0
+        effective_ev = fill_rate * avg_pnl
         var_rows.append(
             f"| {s} | {d['filled']}/{d['total']} | {d['unfilled']} "
-            f"| {avg_pnl:+.2f}% | {tot_pnl:+.1f}% | {wr:.0f}% "
+            f"| {avg_pnl:+.2f}% | {effective_ev:+.2f}% | {tot_pnl:+.1f}% | {wr:.0f}% "
             f"| {d['tp']} | {d['sl']} |"
         )
 
