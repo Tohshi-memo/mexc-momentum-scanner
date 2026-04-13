@@ -326,16 +326,46 @@ class ExperimentTracker:
         # 同じ急騰を「継続トレンドのブレイクアウト」として捉えた場合の仮想成績。
         # ショートと並べて比較することで「この相場はロング/ショートどちらが有効か」
         # を定量的に判断できる。
-        #
-        # MARKET_LONG: 即時ロング (ショートMARKETと同価格・逆方向)
+
+        # MARKET_LONG: 即時ロング (MARKET ショートと同価格・逆方向)
         variants.append(_make_long("MARKET_LONG", last_price))
-        #
-        # LIMIT_1〜5PCT_LONG: 急騰後に 1〜5% 押した水準でロング (押し目買い)
-        # ショートの吹き上げ待ちとは逆に、押し戻しを待ってロングする戦略。
-        for pct in (1, 2, 3, 4, 5):
+
+        # ASK_LONG: ask 価格で即時ロング (実際の成行ロストコスト)
+        if ask_price and ask_price > 0:
+            variants.append(_make_long("ASK_LONG", ask_price))
+
+        # LIMIT_1〜10PCT_LONG: 1〜10% 押した水準でロング (押し目買い)
+        for pct in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
             variants.append(_make_long(
                 f"LIMIT_{pct}PCT_LONG", last_price * (1 - pct / 100), filled=False,
             ))
+
+        # LIMIT_BB3S_LONG: BB中心+3σ水準でロング
+        # ショートのLIMIT_BB3Sと同価格・逆方向 → 「同じ水準でL/Sどちらが有利か」の比較
+        if bb_upper and bb_middle and bb_upper > bb_middle:
+            sigma = (bb_upper - bb_middle) / 2
+            bb_3s = bb_middle + 3 * sigma
+            if bb_3s < last_price * 0.999:  # 現値より下にある場合のみ (押し目)
+                variants.append(_make_long("LIMIT_BB3S_LONG", bb_3s, filled=False))
+
+        # LIMIT_ATR_LONG: 現値 - ATR×0.5 (ATR半分だけ押したところでロング)
+        if atr_pct and atr_pct > 0:
+            atr_limit_long = last_price * (1 - atr_pct * 0.5 / 100)
+            if atr_limit_long < last_price * 0.999:
+                variants.append(_make_long("LIMIT_ATR_LONG", atr_limit_long, filled=False))
+
+        # LIMIT_FIB1272_LONG / LIMIT_FIB1618_LONG: フィボナッチ・リトレースメント
+        # ショートのエクステンション（上方）と対称に、上昇幅の0.272/0.618戻した水準でロング
+        # FIB1272_LONG = 上昇幅の27.2%押し戻し (浅い押し目)
+        # FIB1618_LONG = 上昇幅の61.8%押し戻し (深い押し目 = 黄金比リトレース)
+        if swing_low_1h and swing_low_1h < last_price:
+            move = last_price - swing_low_1h
+            fib1272_long = last_price - move * 0.272
+            fib1618_long = last_price - move * 0.618
+            if fib1272_long < last_price * 0.999:
+                variants.append(_make_long("LIMIT_FIB1272_LONG", fib1272_long, filled=False))
+            if fib1618_long < last_price * 0.999:
+                variants.append(_make_long("LIMIT_FIB1618_LONG", fib1618_long, filled=False))
 
         return variants
 

@@ -693,9 +693,13 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
         "LIMIT_6PCT", "LIMIT_7PCT", "LIMIT_8PCT", "LIMIT_9PCT", "LIMIT_10PCT",
         "LIMIT_BB3S", "LIMIT_ATR",
         "LIMIT_FIB1272", "LIMIT_FIB1618",
-        "MARKET_LONG",
+        "MARKET_LONG", "ASK_LONG",
         "LIMIT_1PCT_LONG", "LIMIT_2PCT_LONG", "LIMIT_3PCT_LONG",
         "LIMIT_4PCT_LONG", "LIMIT_5PCT_LONG",
+        "LIMIT_6PCT_LONG", "LIMIT_7PCT_LONG", "LIMIT_8PCT_LONG",
+        "LIMIT_9PCT_LONG", "LIMIT_10PCT_LONG",
+        "LIMIT_BB3S_LONG", "LIMIT_ATR_LONG",
+        "LIMIT_FIB1272_LONG", "LIMIT_FIB1618_LONG",
     ]
     # データに存在するが order 未定義の戦略も末尾に追加
     all_strategies = order + [s for s in strategy_data if s not in order]
@@ -1172,10 +1176,16 @@ def _section_direction_comparison(closed: list[ClosedTrade]) -> str:
     ]
 
     compare_pairs = [
-        ("MARKET",      "MARKET_LONG"),
-        ("LIMIT_1PCT",  "LIMIT_1PCT_LONG"),
-        ("LIMIT_3PCT",  "LIMIT_3PCT_LONG"),
-        ("LIMIT_5PCT",  "LIMIT_5PCT_LONG"),
+        ("MARKET",       "MARKET_LONG"),
+        ("ASK",          "ASK_LONG"),
+        ("LIMIT_1PCT",   "LIMIT_1PCT_LONG"),
+        ("LIMIT_3PCT",   "LIMIT_3PCT_LONG"),
+        ("LIMIT_5PCT",   "LIMIT_5PCT_LONG"),
+        ("LIMIT_10PCT",  "LIMIT_10PCT_LONG"),
+        ("LIMIT_BB3S",   "LIMIT_BB3S_LONG"),
+        ("LIMIT_ATR",    "LIMIT_ATR_LONG"),
+        ("LIMIT_FIB1272","LIMIT_FIB1272_LONG"),
+        ("LIMIT_FIB1618","LIMIT_FIB1618_LONG"),
     ]
 
     def _variant_stats(strategy_name: str) -> tuple[int, float | None, float | None, int, int]:
