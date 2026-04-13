@@ -492,7 +492,7 @@ def _section_mfe_mae(closed: list[ClosedTrade]) -> str:
         "",
         "MFE (Maximum Favorable Excursion) = エントリー後の最大含み益 (%)。",
         "MAE (Maximum Adverse Excursion) = エントリー後の最大含み損 (%)。",
-        "ショート視点: 価格が下がれば MFE+, 上がれば MAE-。",
+        "ショート: 価格下落が MFE+。ロング: 価格上昇が MFE+。いずれも + が有利方向。",
         "",
         "| group | n | MFE (avg) | MFE (max) | MAE (avg) | MAE (worst) |",
         "|-------|---|-----------|-----------|-----------|-------------|",
@@ -1509,7 +1509,7 @@ def generate_report(
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",
             "expectancy = 1トレードあたりの平均 PnL (%)。",
-            "ショート視点なので **+ が利益**, **- が損失** であることに注意。",
+            "PnL はショート/ロングそれぞれの方向で計算済み。**+ が利益**, **- が損失**。",
             "",
             "---",
             "",
