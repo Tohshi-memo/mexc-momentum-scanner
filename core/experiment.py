@@ -257,6 +257,7 @@ class ExperimentTracker:
         variants: list[EntryVariant] = []
 
         def _make(strategy: str, price: float, filled: bool = True) -> EntryVariant:
+            """ショート用バリアント: SL は上、TP は下。"""
             sl = price * (1 + sl_pct / 100)
             tp = price * (1 - tp_pct / 100)
             return EntryVariant(
@@ -267,7 +268,19 @@ class ExperimentTracker:
                 filled=filled,
             )
 
-        # ── 即時約定 ────────────────────────────────────────────────────
+        def _make_long(strategy: str, price: float, filled: bool = True) -> EntryVariant:
+            """ロング用バリアント: SL は下、TP は上。"""
+            sl = price * (1 - sl_pct / 100)
+            tp = price * (1 + tp_pct / 100)
+            return EntryVariant(
+                strategy=strategy,
+                entry_price=price,
+                sl_price=sl,
+                tp_price=tp,
+                filled=filled,
+            )
+
+        # ── ショート: 即時約定 ───────────────────────────────────────────
         # MARKET: last price (成行の理想値)
         variants.append(_make("MARKET", last_price))
 
@@ -275,7 +288,7 @@ class ExperimentTracker:
         if ask_price and ask_price > 0:
             variants.append(_make("ASK", ask_price))
 
-        # ── 任意 % 指値 (ベースライン) ───────────────────────────────────
+        # ── ショート: 任意 % 指値 (ベースライン) ────────────────────────
         for pct in (1, 2, 3, 4, 5, 6, 7, 8, 9, 10):
             variants.append(_make(
                 f"LIMIT_{pct}PCT", last_price * (1 + pct / 100), filled=False,
@@ -308,6 +321,21 @@ class ExperimentTracker:
                 variants.append(_make("LIMIT_FIB1272", fib1272, filled=False))
             if fib1618 > last_price * 1.001:
                 variants.append(_make("LIMIT_FIB1618", fib1618, filled=False))
+
+        # ── ロング方向（同一検出イベントでの逆方向記録）────────────────
+        # 同じ急騰を「継続トレンドのブレイクアウト」として捉えた場合の仮想成績。
+        # ショートと並べて比較することで「この相場はロング/ショートどちらが有効か」
+        # を定量的に判断できる。
+        #
+        # MARKET_LONG: 即時ロング (ショートMARKETと同価格・逆方向)
+        variants.append(_make_long("MARKET_LONG", last_price))
+        #
+        # LIMIT_1〜5PCT_LONG: 急騰後に 1〜5% 押した水準でロング (押し目買い)
+        # ショートの吹き上げ待ちとは逆に、押し戻しを待ってロングする戦略。
+        for pct in (1, 2, 3, 4, 5):
+            variants.append(_make_long(
+                f"LIMIT_{pct}PCT_LONG", last_price * (1 - pct / 100), filled=False,
+            ))
 
         return variants
 
@@ -451,32 +479,55 @@ class ExperimentTracker:
             if v.outcome != OUTCOME_ACTIVE:
                 continue
 
-            # 指値バリアント: high がエントリー価格に到達したら約定
-            # (ショートの指値は「この値段まで上がったら売る」)
-            if not v.filled:
-                if high >= v.entry_price:
-                    v.filled = True
-                    v.filled_at = now_str
-                else:
-                    continue
+            is_long = v.strategy.endswith("_LONG")
 
-            # TP/SL 判定 (5分足の high/low で通過を検出)
-            sl_hit = high >= v.sl_price
-            tp_hit = low  <= v.tp_price
+            # 指値約定チェック
+            if not v.filled:
+                if is_long:
+                    # ロング指値: 押し目価格まで下落したら約定
+                    if low <= v.entry_price:
+                        v.filled = True
+                        v.filled_at = now_str
+                    else:
+                        continue
+                else:
+                    # ショート指値: 吹き上げ価格まで上昇したら約定
+                    if high >= v.entry_price:
+                        v.filled = True
+                        v.filled_at = now_str
+                    else:
+                        continue
+
+            # SL/TP 判定 (5分足の high/low で通過を検出)
+            if is_long:
+                sl_hit = low  <= v.sl_price   # 下落で SL
+                tp_hit = high >= v.tp_price   # 上昇で TP
+            else:
+                sl_hit = high >= v.sl_price   # 上昇で SL
+                tp_hit = low  <= v.tp_price   # 下落で TP
 
             if sl_hit and tp_hit:
                 # 同一足内で両方 → SL 優先（保守的）
                 v.outcome = OUTCOME_SL_HIT
                 v.outcome_price = v.sl_price
-                v.pnl_pct = (v.entry_price - v.sl_price) / v.entry_price * 100
+                v.pnl_pct = (
+                    (v.sl_price - v.entry_price) / v.entry_price * 100 if is_long
+                    else (v.entry_price - v.sl_price) / v.entry_price * 100
+                )
             elif tp_hit:
                 v.outcome = OUTCOME_TP_HIT
                 v.outcome_price = v.tp_price
-                v.pnl_pct = (v.entry_price - v.tp_price) / v.entry_price * 100
+                v.pnl_pct = (
+                    (v.tp_price - v.entry_price) / v.entry_price * 100 if is_long
+                    else (v.entry_price - v.tp_price) / v.entry_price * 100
+                )
             elif sl_hit:
                 v.outcome = OUTCOME_SL_HIT
                 v.outcome_price = v.sl_price
-                v.pnl_pct = (v.entry_price - v.sl_price) / v.entry_price * 100
+                v.pnl_pct = (
+                    (v.sl_price - v.entry_price) / v.entry_price * 100 if is_long
+                    else (v.entry_price - v.sl_price) / v.entry_price * 100
+                )
 
     def _close(
         self,
@@ -502,10 +553,12 @@ class ExperimentTracker:
                         v.outcome = OUTCOME_EXPIRED
                         v.pnl_pct = 0.0
                     else:
+                        is_long = v.strategy.endswith("_LONG")
                         v.outcome = outcome
                         v.outcome_price = exit_price
                         v.pnl_pct = (
-                            (v.entry_price - exit_price) / v.entry_price * 100
+                            (exit_price - v.entry_price) / v.entry_price * 100 if is_long
+                            else (v.entry_price - exit_price) / v.entry_price * 100
                         )
 
         self._closed.append(trade)

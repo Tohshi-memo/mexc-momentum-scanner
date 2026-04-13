@@ -612,13 +612,16 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
             else:
                 d["unfilled"] += 1
 
-    # 表示順: MARKET / ASK / 任意 % / テクニカル の順
+    # 表示順: MARKET / ASK / 任意 % / テクニカル / ロング の順
     order = [
         "MARKET", "ASK",
         "LIMIT_1PCT", "LIMIT_2PCT", "LIMIT_3PCT", "LIMIT_4PCT", "LIMIT_5PCT",
         "LIMIT_6PCT", "LIMIT_7PCT", "LIMIT_8PCT", "LIMIT_9PCT", "LIMIT_10PCT",
         "LIMIT_BB3S", "LIMIT_ATR",
         "LIMIT_FIB1272", "LIMIT_FIB1618",
+        "MARKET_LONG",
+        "LIMIT_1PCT_LONG", "LIMIT_2PCT_LONG", "LIMIT_3PCT_LONG",
+        "LIMIT_4PCT_LONG", "LIMIT_5PCT_LONG",
     ]
     # データに存在するが order 未定義の戦略も末尾に追加
     all_strategies = order + [s for s in strategy_data if s not in order]
@@ -1037,6 +1040,131 @@ def _section_price_action(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_direction_comparison(closed: list[ClosedTrade]) -> str:
+    """ロング vs ショート: 同一急騰イベントでの方向比較。
+
+    同じ検出イベントで MARKET_LONG と MARKET(ショート) を比較し、
+    「この相場では急騰後にロング/ショートどちらが有効か」を定量判断する。
+    """
+    long_count = sum(
+        1 for t in closed
+        if t.entry_variants
+        and any(v.get("strategy") == "MARKET_LONG" for v in t.entry_variants)
+    )
+
+    lines = ["## 22. Long vs Short direction comparison", ""]
+
+    if long_count < 5:
+        lines += [
+            f"ロング方向データ: {long_count} / {len(closed)} 件",
+            "",
+            "*(データ蓄積中。5件以上で自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    lines += [
+        f"ロング方向データ: {long_count} / {len(closed)} 件",
+        "",
+        "**考え方**: 同じ急騰検出イベントでロング/ショートどちらが正解だったか。",
+        "ロング優位 = 急騰継続トレンド（今はロング向き相場）。",
+        "ショート優位 = 急騰は反転ポイント（ショート戦略が有効）。",
+        "",
+        "### 戦略別成績",
+        "",
+        "| 戦略 | 方向 | filled | avg PnL | win% | TP | SL |",
+        "|------|------|-------:|--------:|-----:|---:|---:|",
+    ]
+
+    compare_pairs = [
+        ("MARKET",      "MARKET_LONG"),
+        ("LIMIT_1PCT",  "LIMIT_1PCT_LONG"),
+        ("LIMIT_3PCT",  "LIMIT_3PCT_LONG"),
+        ("LIMIT_5PCT",  "LIMIT_5PCT_LONG"),
+    ]
+
+    def _variant_stats(strategy_name: str) -> tuple[int, float | None, float | None, int, int]:
+        """(filled, avg_pnl, win_rate, tp_count, sl_count)"""
+        pnls: list[float] = []
+        tp_n = sl_n = filled_n = 0
+        for t in closed:
+            if not t.entry_variants:
+                continue
+            for v in t.entry_variants:
+                if v.get("strategy") != strategy_name:
+                    continue
+                if v.get("filled"):
+                    filled_n += 1
+                    pnl = v.get("pnl_pct")
+                    if pnl is not None:
+                        pnls.append(float(pnl))
+                    if v.get("outcome") == OUTCOME_TP_HIT:
+                        tp_n += 1
+                    elif v.get("outcome") == OUTCOME_SL_HIT:
+                        sl_n += 1
+        avg = statistics.mean(pnls) if pnls else None
+        wr  = sum(1 for p in pnls if p > 0) / len(pnls) * 100 if pnls else None
+        return filled_n, avg, wr, tp_n, sl_n
+
+    for short_s, long_s in compare_pairs:
+        for name in (short_s, long_s):
+            direction = "LONG 🔼" if name.endswith("_LONG") else "SHORT 🔽"
+            filled, avg, wr, tp_n, sl_n = _variant_stats(name)
+            if avg is None:
+                lines.append(f"| {name} | {direction} | {filled} | – | – | – | – |")
+            else:
+                lines.append(
+                    f"| {name} | {direction} | {filled} "
+                    f"| {avg:+.2f}% | {wr:.0f}% | {tp_n} | {sl_n} |"
+                )
+        lines.append("|  |  |  |  |  |  |  |")  # separator
+
+    # ── 同一イベントでの直接比較 ──────────────────────────────────────
+    better_long = better_short = tie = 0
+    for t in closed:
+        if not t.entry_variants:
+            continue
+        short_pnl = next(
+            (float(v["pnl_pct"]) for v in t.entry_variants
+             if v.get("strategy") == "MARKET"
+             and v.get("filled") and v.get("pnl_pct") is not None),
+            None,
+        )
+        long_pnl = next(
+            (float(v["pnl_pct"]) for v in t.entry_variants
+             if v.get("strategy") == "MARKET_LONG"
+             and v.get("filled") and v.get("pnl_pct") is not None),
+            None,
+        )
+        if short_pnl is not None and long_pnl is not None:
+            if long_pnl > short_pnl + 0.1:
+                better_long += 1
+            elif short_pnl > long_pnl + 0.1:
+                better_short += 1
+            else:
+                tie += 1
+
+    total = better_long + better_short + tie
+    if total > 0:
+        lines += [
+            "",
+            f"### 同一イベント直接比較 (MARKET ショート vs MARKET_LONG) — {total} 件",
+            "",
+            "| 判定 | 件数 | 比率 |",
+            "|------|-----:|-----:|",
+            f"| ロングが有利 | {better_long} | {better_long/total*100:.0f}% |",
+            f"| ショートが有利 | {better_short} | {better_short/total*100:.0f}% |",
+            f"| ほぼ同等 | {tie} | {tie/total*100:.0f}% |",
+            "",
+            "**解釈**:",
+            "- ロング有利 > 60%: 急騰継続が多い → 相場はロング向き。ショート戦略の見直しを検討。",
+            "- ショート有利 > 60%: 急騰反転が多い → 現行ショート戦略が環境に合っている。",
+            "- 拮抗 (40〜60%): 方向選択の鍵は別のフィルター（出来高・RSI等）にある。",
+            "",
+        ]
+    return "\n".join(lines)
+
+
 def _section_bb_width(closed: list[ClosedTrade]) -> str:
     """BBバンド幅% / 20MA乖離率 / 実体比率の分析。"""
     with_bbw  = [t for t in closed if getattr(t, "bb_width_pct",       None) is not None]
@@ -1271,6 +1399,7 @@ def generate_report(
             _section_bb_width(closed),
             _section_rsi_15m(closed),
             _section_daily_direction(closed),
+            _section_direction_comparison(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",
