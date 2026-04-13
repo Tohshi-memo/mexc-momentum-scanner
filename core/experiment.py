@@ -59,6 +59,11 @@ class FilterSnapshot:
     upper_wick_ratio_1h: float | None = None  # 直前1h足の上ヒゲ比率 記録のみ
     consecutive_green_1h: int | None  = None  # 1h連続陽線数 記録のみ
     consecutive_green_4h: int | None  = None  # 4h連続陽線数 記録のみ
+    bb_width_pct:       float | None = None   # BBバンド幅% = (upper-lower)/middle×100 記録のみ
+    ma20_deviation_pct: float | None = None   # 20MA乖離率 = (price-MA20)/MA20×100 記録のみ
+    candle_body_ratio:  float | None = None   # 実体比率 = |close-open|/(high-low) 記録のみ
+    rsi_15m:            float | None = None   # 15m足RSI(14) 記録のみ
+    daily_direction:    str | None   = None   # GREEN / RED / DOJI 記録のみ
 
 
 @dataclass

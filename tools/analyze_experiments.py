@@ -111,6 +111,13 @@ class ClosedTrade:
     consecutive_green_1h: int | None   = None
     consecutive_green_4h: int | None   = None
 
+    # 追加パッシブ指標 (記録のみ。フィルター未使用)
+    bb_width_pct:       float | None = None  # BBバンド幅%
+    ma20_deviation_pct: float | None = None  # 20MA乖離率%
+    candle_body_ratio:  float | None = None  # 実体比率
+    rsi_15m:            float | None = None  # 15m RSI
+    daily_direction:    str | None   = None  # GREEN / RED / DOJI
+
 
 def _load_closed(path: Path) -> list[ClosedTrade]:
     if not path.exists():
@@ -159,6 +166,11 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
                 upper_wick_ratio_1h=f_dict.get("upper_wick_ratio_1h"),
                 consecutive_green_1h=f_dict.get("consecutive_green_1h"),
                 consecutive_green_4h=f_dict.get("consecutive_green_4h"),
+                bb_width_pct=f_dict.get("bb_width_pct"),
+                ma20_deviation_pct=f_dict.get("ma20_deviation_pct"),
+                candle_body_ratio=f_dict.get("candle_body_ratio"),
+                rsi_15m=f_dict.get("rsi_15m"),
+                daily_direction=f_dict.get("daily_direction"),
             )
         )
     return closed
@@ -1025,6 +1037,178 @@ def _section_price_action(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_bb_width(closed: list[ClosedTrade]) -> str:
+    """BBバンド幅% / 20MA乖離率 / 実体比率の分析。"""
+    with_bbw  = [t for t in closed if getattr(t, "bb_width_pct",       None) is not None]
+    with_ma20 = [t for t in closed if getattr(t, "ma20_deviation_pct", None) is not None]
+    with_body = [t for t in closed if getattr(t, "candle_body_ratio",  None) is not None]
+
+    lines = ["## 19. BB width / MA20 deviation / candle body ratio", ""]
+
+    has_data = any(len(x) >= 5 for x in [with_bbw, with_ma20, with_body])
+    if not has_data:
+        lines += [
+            f"BBバンド幅データ: {len(with_bbw)} 件 / "
+            f"MA20乖離率: {len(with_ma20)} 件 / "
+            f"実体比率: {len(with_body)} 件",
+            "",
+            "*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    # --- BB バンド幅バケット ---
+    if len(with_bbw) >= 5:
+        lines += [
+            f"### BB バンド幅% — {len(with_bbw)} 件",
+            "",
+            "**考え方**: バンド幅が大きいほど高ボラ。スクイーズ直後は爆発力大。",
+            "",
+            TABLE_HEADER,
+        ]
+        for label, lo, hi in [
+            ("< 5%",    0,  5),
+            ("5〜10%",  5, 10),
+            ("10〜15%", 10, 15),
+            ("15〜20%", 15, 20),
+            (">= 20%",  20, 999),
+        ]:
+            subset = [t for t in with_bbw if lo <= (t.bb_width_pct or 0) < hi]
+            if subset:
+                lines.append(_row(f"  BBW {label}", _compute_stats(subset)))
+        lines.append("")
+
+    # --- 20MA 乖離率バケット ---
+    if len(with_ma20) >= 5:
+        lines += [
+            f"### 20MA 乖離率% — {len(with_ma20)} 件",
+            "",
+            "**考え方**: 正値 = 上方乖離 (過熱)。大きいほど平均回帰リスク大 = ショート有利。",
+            "",
+            TABLE_HEADER,
+        ]
+        for label, lo, hi in [
+            ("< 5%",    0,  5),
+            ("5〜10%",  5, 10),
+            ("10〜15%", 10, 15),
+            (">= 15%",  15, 999),
+        ]:
+            subset = [t for t in with_ma20 if lo <= (t.ma20_deviation_pct or 0) < hi]
+            if subset:
+                lines.append(_row(f"  乖離 {label}", _compute_stats(subset)))
+        lines.append("")
+
+    # --- 実体比率バケット ---
+    if len(with_body) >= 5:
+        lines += [
+            f"### ローソク足実体比率 — {len(with_body)} 件",
+            "",
+            "**考え方**: 実体が大きい = 方向性が明確。ショートの根拠として強い。",
+            "",
+            TABLE_HEADER,
+        ]
+        for label, lo, hi in [
+            ("実体小 (0〜0.3)",  0.0, 0.3),
+            ("実体中 (0.3〜0.6)", 0.3, 0.6),
+            ("実体大 (0.6〜0.8)", 0.6, 0.8),
+            ("実体極大 (>= 0.8)", 0.8, 999),
+        ]:
+            subset = [t for t in with_body if lo <= (t.candle_body_ratio or 0) < hi]
+            if subset:
+                lines.append(_row(f"  {label}", _compute_stats(subset)))
+        lines.append("")
+
+    return "\n".join(lines)
+
+
+def _section_rsi_15m(closed: list[ClosedTrade]) -> str:
+    """15分足 RSI 別の勝率比較。"""
+    with_r15 = [t for t in closed if getattr(t, "rsi_15m", None) is not None]
+
+    lines = ["## 20. 15-minute RSI analysis", ""]
+
+    if len(with_r15) < 5:
+        lines += [
+            f"15m RSI データ: {len(with_r15)} / {len(closed)} 件",
+            "",
+            "*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    lines += [
+        f"15m RSI データ: {len(with_r15)} / {len(closed)} 件",
+        "",
+        "**考え方**: 15m も過熱 (高 RSI) = 超短期でも売られすぎ警戒 → ショート有利。",
+        "1h 過熱 + 15m 過熱の「ダブル過熱」がより強いシグナルになるか確認。",
+        "",
+        TABLE_HEADER,
+    ]
+    for label, lo, hi in [
+        ("15m RSI < 60",  0,  60),
+        ("15m RSI 60〜70", 60, 70),
+        ("15m RSI 70〜80", 70, 80),
+        ("15m RSI >= 80",  80, 999),
+    ]:
+        subset = [t for t in with_r15 if lo <= (t.rsi_15m or 0) < hi]
+        if subset:
+            lines.append(_row(label, _compute_stats(subset)))
+
+    # 相関サマリー
+    vals = [(t.rsi_15m, t.pnl_pct) for t in with_r15
+            if t.rsi_15m is not None and t.pnl_pct is not None]
+    if vals:
+        import statistics as _st
+        avg_rsi_win  = _st.mean(t.rsi_15m for t in with_r15
+                                if t.outcome == "TP_HIT" and t.rsi_15m is not None) \
+                       if any(t.outcome == "TP_HIT" for t in with_r15) else None
+        avg_rsi_loss = _st.mean(t.rsi_15m for t in with_r15
+                                if t.outcome == "SL_HIT" and t.rsi_15m is not None) \
+                       if any(t.outcome == "SL_HIT" for t in with_r15) else None
+        lines += [
+            "",
+            f"- 勝ちトレードの平均 15m RSI: "
+            f"{avg_rsi_win:.1f}" if avg_rsi_win else "- 勝ちトレードの平均 15m RSI: n/a",
+            f"- 負けトレードの平均 15m RSI: "
+            f"{avg_rsi_loss:.1f}" if avg_rsi_loss else "- 負けトレードの平均 15m RSI: n/a",
+        ]
+    lines.append("")
+    return "\n".join(lines)
+
+
+def _section_daily_direction(closed: list[ClosedTrade]) -> str:
+    """日足方向別の勝率比較。"""
+    with_dd = [t for t in closed if getattr(t, "daily_direction", None) is not None]
+
+    lines = ["## 21. Daily candle direction", ""]
+
+    if len(with_dd) < 5:
+        lines += [
+            f"日足方向データ: {len(with_dd)} / {len(closed)} 件",
+            "",
+            "*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    lines += [
+        f"日足方向データ: {len(with_dd)} / {len(closed)} 件",
+        "",
+        "**考え方**: 急騰が日足上昇トレンド中に起きた場合 (GREEN) は ",
+        "上昇が継続しやすくショートが不利かもしれない。",
+        "逆に日足が赤 (RED) なら反転信頼度が高い可能性。",
+        "",
+        TABLE_HEADER,
+    ]
+    for label in ("GREEN", "RED", "DOJI"):
+        subset = [t for t in with_dd if t.daily_direction == label]
+        if subset:
+            lines.append(_row(f"日足 {label}", _compute_stats(subset)))
+    lines.append(_row("全件 (日足あり)", _compute_stats(with_dd)))
+    lines.append("")
+    return "\n".join(lines)
+
+
 # ---------------------------------------------------------------------------
 # Top-level report builder
 # ---------------------------------------------------------------------------
@@ -1084,6 +1268,9 @@ def generate_report(
             _section_obv_divergence(closed),
             _section_open_interest(closed),
             _section_price_action(closed),
+            _section_bb_width(closed),
+            _section_rsi_15m(closed),
+            _section_daily_direction(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",

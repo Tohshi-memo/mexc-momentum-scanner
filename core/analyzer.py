@@ -98,6 +98,28 @@ class AnalysisResult:
     consecutive_green_1h: int | None   # 1h足の連続陽線数
     consecutive_green_4h: int | None   # 4h足の連続陽線数
 
+    # 追加パッシブ指標 (記録のみ。フィルターとしては未使用)
+    # BB バンド幅 %: (upper - lower) / middle × 100
+    # 高いほどボラ大。スクイーズ直後に爆発力が大きい傾向。
+    bb_width_pct: float | None
+
+    # 20MA 乖離率 (%): (price - MA20) / MA20 × 100
+    # 正値 = 上方乖離。大きいほど平均回帰リスクが高い。
+    # ※ BB 中心線 (bb_middle) が 20MA なのでそのまま流用。
+    ma20_deviation_pct: float | None
+
+    # ローソク足実体比率: |close - open| / (high - low)
+    # 1.0 に近い = 実体が大きく方向性が明確。0 に近い = ヒゲばかり。
+    candle_body_ratio: float | None
+
+    # 15分足 RSI(14): 短期の過熱感。
+    # 1h で検出された急騰が 15m 視点でも過熱しているかを確認。
+    rsi_15m: float | None
+
+    # 日足の方向: 直前完成1d足の方向。マクロトレンドとの一致/逆行を記録。
+    # "GREEN" = close > open  "RED" = close < open  "DOJI" = ≈ フラット
+    daily_direction: str | None
+
     # 総合判定
     is_confirmed_signal: bool
     reject_reasons: list[str] # 却下理由（デバッグ/ログ用）
@@ -200,9 +222,17 @@ class TechnicalAnalyzer:
             oi_usd, oi_change = self._client.fetch_open_interest(candidate.symbol)
             ls_ratio = self._client.fetch_long_short_ratio(candidate.symbol)
 
+            # 15m RSI を取得 (記録のみ)
+            rsi_15m = self._fetch_rsi_for_timeframe(candidate.symbol, "15m")
+
+            # 日足の方向を取得 (記録のみ)
+            daily_dir = self._fetch_daily_direction(candidate.symbol)
+
             return self._compute_indicators(
                 candidate, df, rsi_4h_value, df_4h,
                 funding_rate, oi_usd, oi_change, ls_ratio,
+                rsi_15m=rsi_15m,
+                daily_direction=daily_dir,
             )
 
         except Exception as e:
@@ -223,6 +253,49 @@ class TechnicalAnalyzer:
         except Exception as e:
             logger.debug("4h data fetch failed for %s: %s", symbol, e)
             return None, None
+
+    def _fetch_rsi_for_timeframe(self, symbol: str, timeframe: str) -> float | None:
+        """指定タイムフレームの RSI(14) を取得する。失敗時は None。"""
+        try:
+            ohlcv = self._client.fetch_ohlcv(
+                symbol, timeframe=timeframe, limit=self._rsi_period + 10
+            )
+            if not ohlcv or len(ohlcv) < self._rsi_period + 1:
+                return None
+            df = self._build_dataframe(ohlcv)
+            rsi_series = self._calc_rsi(df["close"], self._rsi_period)
+            return self._last_valid(rsi_series)
+        except Exception as e:
+            logger.debug("%s RSI fetch failed for %s: %s", timeframe, symbol, e)
+            return None
+
+    def _fetch_daily_direction(self, symbol: str) -> str | None:
+        """直前完成1d足の方向を返す。
+
+        Returns:
+            "GREEN" = close > open (陽線)
+            "RED"   = close < open (陰線)
+            "DOJI"  = |close - open| / open < 0.1% (十字線)
+            None    = データ取得失敗
+        """
+        try:
+            ohlcv = self._client.fetch_ohlcv(symbol, timeframe="1d", limit=3)
+            if not ohlcv or len(ohlcv) < 2:
+                return None
+            df = self._build_dataframe(ohlcv)
+            # iloc[-2] = 直前完成足 (最新足はまだ形成中)
+            row = df.iloc[-2]
+            op    = float(row["open"])
+            close = float(row["close"])
+            if op <= 0:
+                return None
+            diff_pct = abs(close - op) / op * 100
+            if diff_pct < 0.1:
+                return "DOJI"
+            return "GREEN" if close > op else "RED"
+        except Exception as e:
+            logger.debug("daily direction fetch failed for %s: %s", symbol, e)
+            return None
 
     def _build_dataframe(self, ohlcv: list[list[float]]) -> pd.DataFrame:
         """ccxt OHLCV リストを pandas DataFrame に変換する。"""
@@ -245,6 +318,8 @@ class TechnicalAnalyzer:
         open_interest_usd: float | None = None,
         oi_change_pct: float | None = None,
         long_short_ratio: float | None = None,
+        rsi_15m: float | None = None,
+        daily_direction: str | None = None,
     ) -> AnalysisResult:
         """全指標を計算し AnalysisResult を組み立てる。"""
         current_price: float = candidate.price
@@ -293,6 +368,20 @@ class TechnicalAnalyzer:
         consecutive_green_1h = self._calc_consecutive_green(df)
         consecutive_green_4h = self._calc_consecutive_green(df_4h) if df_4h is not None else None
 
+        # --- 追加パッシブ指標 ---
+        # BB バンド幅 %: (upper - lower) / middle × 100
+        bb_width_pct: float | None = None
+        if bb_upper is not None and bb_lower is not None and bb_middle and bb_middle > 0:
+            bb_width_pct = round((bb_upper - bb_lower) / bb_middle * 100, 4)
+
+        # 20MA 乖離率: bb_middle が 20MA なのでそのまま流用
+        ma20_deviation_pct: float | None = None
+        if bb_middle and bb_middle > 0:
+            ma20_deviation_pct = round((current_price - bb_middle) / bb_middle * 100, 4)
+
+        # ローソク足実体比率 (直前完成1h足)
+        candle_body_ratio = self._calc_candle_body_ratio(df, idx=-2)
+
         # --- 総合判定 + 却下理由収集 ---
         # BB ブレイクはデータ分析の結果、効果が薄いため条件から除外。
         reject_reasons: list[str] = []
@@ -337,6 +426,11 @@ class TechnicalAnalyzer:
             upper_wick_ratio_1h=upper_wick_ratio_1h,
             consecutive_green_1h=consecutive_green_1h,
             consecutive_green_4h=consecutive_green_4h,
+            bb_width_pct=bb_width_pct,
+            ma20_deviation_pct=ma20_deviation_pct,
+            candle_body_ratio=candle_body_ratio,
+            rsi_15m=rsi_15m,
+            daily_direction=daily_direction,
             is_confirmed_signal=is_confirmed,
             reject_reasons=reject_reasons,
         )
@@ -487,6 +581,31 @@ class TechnicalAnalyzer:
                 return None
             upper_wick = high - max(op, close)
             return round(upper_wick / candle_range, 4)
+        except Exception:
+            return None
+
+    @staticmethod
+    def _calc_candle_body_ratio(df: pd.DataFrame, idx: int = -2) -> float | None:
+        """指定インデックスの足の実体比率を返す。
+
+        実体比率 = |close - open| / (high - low)
+        1.0 に近いほど実体が大きく方向性が明確。0 に近いほどヒゲ主体。
+
+        idx=-2: 直前完成足 (最新足はまだ形成中のため除外)
+        """
+        try:
+            if len(df) < abs(idx):
+                return None
+            row = df.iloc[idx]
+            high  = float(row["high"])
+            low   = float(row["low"])
+            op    = float(row["open"])
+            close = float(row["close"])
+            candle_range = high - low
+            if candle_range <= 0:
+                return None
+            body = abs(close - op)
+            return round(body / candle_range, 4)
         except Exception:
             return None
 

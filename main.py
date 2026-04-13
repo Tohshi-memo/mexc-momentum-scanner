@@ -364,6 +364,11 @@ def _register_shadow_trades(
                 upper_wick_ratio_1h=r.upper_wick_ratio_1h,
                 consecutive_green_1h=r.consecutive_green_1h,
                 consecutive_green_4h=r.consecutive_green_4h,
+                bb_width_pct=r.bb_width_pct,
+                ma20_deviation_pct=r.ma20_deviation_pct,
+                candle_body_ratio=r.candle_body_ratio,
+                rsi_15m=r.rsi_15m,
+                daily_direction=r.daily_direction,
             )
 
             # Order book からスプレッド情報を取得
