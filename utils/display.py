@@ -439,9 +439,9 @@ def print_tracking_status(tracked: list) -> None:
         chg_style = "bright_green" if chg <= 0 else "bright_red"
         chg_str   = f"[{chg_style}]{chg:+.2f}%[/{chg_style}]"
 
-        if s.hit_tp():
+        if s.outcome == "TP_HIT":
             status = "[bold bright_green]✓ TP HIT[/bold bright_green]"
-        elif s.hit_sl():
+        elif s.outcome == "SL_HIT":
             status = "[bold bright_red]✗ SL HIT[/bold bright_red]"
         else:
             status = "[dim]● track[/dim]"
