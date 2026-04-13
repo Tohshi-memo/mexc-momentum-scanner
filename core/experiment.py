@@ -584,12 +584,22 @@ class ExperimentTracker:
                         v.pnl_pct = 0.0
                     else:
                         is_long = v.strategy.endswith("_LONG")
-                        v.outcome = outcome
                         v.outcome_price = exit_price
                         v.pnl_pct = (
                             (exit_price - v.entry_price) / v.entry_price * 100 if is_long
                             else (v.entry_price - exit_price) / v.entry_price * 100
                         )
+                        # LONG と SHORT で outcome を独立判定
+                        # (親トレードの outcome は SHORT 視点なので LONG には使えない)
+                        if is_long:
+                            if exit_price <= v.sl_price:
+                                v.outcome = OUTCOME_SL_HIT
+                            elif exit_price >= v.tp_price:
+                                v.outcome = OUTCOME_TP_HIT
+                            else:
+                                v.outcome = OUTCOME_EXPIRED
+                        else:
+                            v.outcome = outcome
 
         self._closed.append(trade)
         del self._active[trade.symbol]

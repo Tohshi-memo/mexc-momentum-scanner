@@ -510,8 +510,8 @@ def _section_mfe_mae(closed: list[ClosedTrade]) -> str:
     ]
 
     for label, items in [("ALL", closed), ("TP_HIT", wins), ("SL_HIT", losses)]:
-        mfe = [t.max_favorable_pct for t in items if t.max_favorable_pct]
-        mae = [t.max_adverse_pct for t in items if t.max_adverse_pct]
+        mfe = [t.max_favorable_pct for t in items if t.max_favorable_pct is not None]
+        mae = [t.max_adverse_pct for t in items if t.max_adverse_pct is not None]
         if not mfe:
             lines.append(f"| {label} | {len(items)} | – | – | – | – |")
             continue
