@@ -1288,6 +1288,73 @@ def _section_direction_comparison(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_rolling_performance(closed: list[ClosedTrade]) -> str:
+    """直近N件のパフォーマンス推移。
+
+    全期間平均との乖離を見ることで、相場環境の変化（レジームシフト）を
+    早期検出する。直近と全期間で勝率・期待値が大きく乖離したら戦略見直しのサイン。
+    """
+    # detected_at でソート済みを前提（_load_closed は順序保持）
+    windows = [20, 50, 100]
+    lines = ["## 23. Recent performance (rolling window)", ""]
+
+    lines += [
+        "直近N件の成績と全期間平均を比較することで、相場環境の変化を検出する。",
+        "直近の期待値が全期間を大きく下回るようになったら、フィルター見直しのサイン。",
+        "",
+    ]
+
+    header = (
+        "| 期間 | n | W/L/E | win% | avg win | avg loss | expectancy | total PnL |"
+        "\n"
+        "|------|---|-------|------|---------|----------|------------|-----------|"
+    )
+    lines.append(header)
+
+    def _row_from_subset(label: str, subset: list[ClosedTrade]) -> str:
+        if not subset:
+            return f"| {label} | 0 | – | – | – | – | – | – |"
+        s = _compute_stats(subset)
+        wle = f"{s.wins}/{s.losses}/{s.expired}"
+        wr  = f"{s.win_rate:.1f}%" if s.win_rate is not None else "–"
+        aw  = f"{s.avg_win:+.2f}%"  if s.avg_win  is not None else "–"
+        al  = f"{s.avg_loss:+.2f}%" if s.avg_loss  is not None else "–"
+        ex  = f"{s.expectancy:+.2f}%" if s.expectancy is not None else "–"
+        tp  = f"{s.total_pnl:+.1f}%"  if s.total_pnl  is not None else "–"
+        return f"| {label} | {len(subset)} | {wle} | {wr} | {aw} | {al} | {ex} | {tp} |"
+
+    for w in windows:
+        recent = closed[-w:] if len(closed) >= w else closed
+        label = f"直近 {w} 件" if len(closed) >= w else f"直近 {w} 件 (全 {len(closed)} 件)"
+        lines.append(_row_from_subset(label, recent))
+
+    lines.append(_row_from_subset("全期間", closed))
+    lines.append("")
+
+    # ドリフト検出: 直近20件の期待値 vs 全期間
+    if len(closed) >= 20:
+        recent20 = _compute_stats(closed[-20:])
+        all_s    = _compute_stats(closed)
+        if recent20.expectancy is not None and all_s.expectancy is not None:
+            drift = recent20.expectancy - all_s.expectancy
+            if abs(drift) < 0.5:
+                status = "✅ 安定 — 直近と全期間でほぼ同等"
+            elif drift > 0:
+                status = f"📈 改善傾向 — 直近20件の期待値が全期間より {drift:+.2f}% 高い"
+            else:
+                status = f"⚠️ 悪化傾向 — 直近20件の期待値が全期間より {drift:+.2f}% 低い (要注意)"
+            lines += [f"**ドリフト判定**: {status}", ""]
+
+    lines += [
+        "**判断目安**:",
+        "- 直近20件の期待値が全期間より **-1% 以上** 悪化 → 相場環境の変化を疑う",
+        "- 直近20件の勝率が **20% 以下** → フィルター見直しを検討",
+        "- 直近50件と直近20件が乖離 → 特定期間の異常か継続的変化かを判断",
+    ]
+
+    return "\n".join(lines)
+
+
 def _section_bb_width(closed: list[ClosedTrade]) -> str:
     """BBバンド幅% / 20MA乖離率 / 実体比率の分析。"""
     with_bbw  = [t for t in closed if getattr(t, "bb_width_pct",       None) is not None]
@@ -1522,6 +1589,7 @@ def generate_report(
             _section_rsi_15m(closed),
             _section_daily_direction(closed),
             _section_direction_comparison(closed),
+            _section_rolling_performance(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",
@@ -1531,6 +1599,7 @@ def generate_report(
             "> **セクション構成**: セクション 1〜11, 13〜21 は MARKET ショート (急騰直後の空売り) の成績を基準に分析。",
             "> セクション 12 は全エントリー戦略 (ショート/ロング両方) の仮想成績を比較。",
             "> セクション 22 は同一イベントで LONG vs SHORT どちらが有利だったかを直接比較。",
+            "> セクション 23 は直近 N 件と全期間の乖離でレジームシフトを早期検出。",
             "",
             "---",
             "",
