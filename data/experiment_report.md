@@ -312,3 +312,12 @@ Volume != RISING  ← 据え置き
 - Volume FLAT のみに絞る (FLAT 勝率 > DECLINING)
 - RSI(1h) 閾値を 75 に戻す (データ蓄積後に再評価)
 
+
+---
+
+## 15. Funding rate analysis
+
+ファンディングレートデータ: 0 / 150 件
+
+*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*
+

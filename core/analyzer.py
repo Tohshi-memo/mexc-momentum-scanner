@@ -68,6 +68,11 @@ class AnalysisResult:
     # 直近 10 本の 1h 足安値の最小値（急騰足は除く）
     swing_low_1h: float | None
 
+    # ファンディングレート (記録のみ。フィルターとしては未使用)
+    # 正値 = ロングがショートに支払う (強気相場) → ショートに有利
+    # 負値 = ショートがロングに支払う (弱気相場) → ショートに不利な可能性
+    funding_rate: float | None  # %表記 (0.01 = 0.01%)
+
     # 総合判定
     is_confirmed_signal: bool
     reject_reasons: list[str] # 却下理由（デバッグ/ログ用）
@@ -160,7 +165,10 @@ class TechnicalAnalyzer:
             if self._use_4h_filter:
                 rsi_4h_value = self._fetch_rsi_4h(candidate.symbol)
 
-            return self._compute_indicators(candidate, df, rsi_4h_value)
+            # ファンディングレートを取得 (記録のみ・失敗しても解析継続)
+            funding_rate: float | None = self._client.fetch_funding_rate(candidate.symbol)
+
+            return self._compute_indicators(candidate, df, rsi_4h_value, funding_rate)
 
         except Exception as e:
             logger.error("Analysis failed for %s: %s", candidate.symbol, e)
@@ -197,6 +205,7 @@ class TechnicalAnalyzer:
         candidate: SurgeCandidate,
         df: pd.DataFrame,
         rsi_4h_value: float | None,
+        funding_rate: float | None = None,
     ) -> AnalysisResult:
         """全指標を計算し AnalysisResult を組み立てる。"""
         current_price: float = candidate.price
@@ -272,6 +281,7 @@ class TechnicalAnalyzer:
             atr=atr_value,
             atr_pct=atr_pct,
             swing_low_1h=swing_low_1h,
+            funding_rate=funding_rate,
             is_confirmed_signal=is_confirmed,
             reject_reasons=reject_reasons,
         )

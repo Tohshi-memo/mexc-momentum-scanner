@@ -95,6 +95,9 @@ class ClosedTrade:
     spread_pct: float | None
     entry_variants: list[dict] | None   # raw dicts from JSON
 
+    # ファンディングレート (記録のみ。フィルター未使用)
+    funding_rate: float | None = None  # %表記
+
 
 def _load_closed(path: Path) -> list[ClosedTrade]:
     if not path.exists():
@@ -135,6 +138,7 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
                 btc_change_1h=float(f_dict.get("btc_change_1h") or 0.0),
                 spread_pct=entry.get("spread_pct"),
                 entry_variants=entry.get("entry_variants"),
+                funding_rate=f_dict.get("funding_rate"),
             )
         )
     return closed
@@ -743,6 +747,72 @@ def _section_recommendation(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_funding_rate(closed: list[ClosedTrade]) -> str:
+    """ファンディングレート別の勝率比較。
+
+    記録開始が途中のため、データがない場合はその旨を表示。
+    """
+    # funding_rate を持つトレードのみ
+    with_fr = [
+        t for t in closed
+        if getattr(t, "funding_rate", None) is not None
+    ]
+
+    lines = ["## 15. Funding rate analysis", ""]
+
+    if len(with_fr) < 5:
+        lines += [
+            f"ファンディングレートデータ: {len(with_fr)} / {len(closed)} 件",
+            "",
+            "*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    lines += [
+        f"ファンディングレートデータ: {len(with_fr)} / {len(closed)} 件",
+        "",
+        "**考え方**: 正値(+) = ロングがショートに支払う → ロング過熱 → ショート有利。",
+        "高いほど反転圧力が強い可能性。",
+        "",
+        TABLE_HEADER,
+    ]
+
+    # バケット定義
+    buckets: list[tuple[str, float, float]] = [
+        ("< 0%  (ショート過熱)", -999, 0.0),
+        ("0〜0.05%", 0.0, 0.05),
+        ("0.05〜0.1%", 0.05, 0.1),
+        (">= 0.1% (ロング過熱)", 0.1, 999),
+    ]
+
+    for label, lo, hi in buckets:
+        subset = [
+            t for t in with_fr
+            if t.funding_rate is not None and lo <= t.funding_rate < hi
+        ]
+        if not subset:
+            continue
+        lines.append(_row(f"FR {label}", _compute_stats(subset)))
+
+    # 全体
+    lines.append(_row("FR 全件", _compute_stats(with_fr)))
+    lines.append("")
+
+    # 平均・中央値
+    rates = [t.funding_rate for t in with_fr if t.funding_rate is not None]
+    avg_fr = statistics.mean(rates)
+    med_fr = statistics.median(rates)
+    lines += [
+        f"- 平均 FR: {avg_fr:+.4f}%",
+        f"- 中央値 FR: {med_fr:+.4f}%",
+        f"- 最大 FR: {max(rates):+.4f}%",
+        f"- 最小 FR: {min(rates):+.4f}%",
+        "",
+    ]
+    return "\n".join(lines)
+
+
 # ---------------------------------------------------------------------------
 # Top-level report builder
 # ---------------------------------------------------------------------------
@@ -798,6 +868,7 @@ def generate_report(
             _section_entry_strategy(closed),
             _section_distribution(closed),
             _section_recommendation(closed),
+            _section_funding_rate(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",

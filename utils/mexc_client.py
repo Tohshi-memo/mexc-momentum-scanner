@@ -107,6 +107,25 @@ class MEXCClient:
         """板情報を取得する。"""
         return self._call_with_retry(self._exchange.fetch_order_book, symbol, limit)
 
+    def fetch_funding_rate(self, symbol: str) -> float | None:
+        """無期限先物のファンディングレートを取得する (%)。
+
+        ccxt の fundingRate フィールドは小数形式 (0.0001 = 0.01%) なので
+        100 を掛けてパーセント値に変換して返す。
+
+        Returns:
+            ファンディングレート (%)、例: +0.01 / -0.005 / None (取得失敗)
+        """
+        try:
+            result = self._call_with_retry(self._exchange.fetch_funding_rate, symbol)
+            rate = result.get("fundingRate")
+            if rate is None:
+                return None
+            return float(rate) * 100  # 小数 → %
+        except Exception as e:
+            logger.debug("fetch_funding_rate failed for %s: %s", symbol, e)
+            return None
+
     # ------------------------------------------------------------------
     # Private (Trading) - 将来の本番実装用プレースホルダー
     # ------------------------------------------------------------------
