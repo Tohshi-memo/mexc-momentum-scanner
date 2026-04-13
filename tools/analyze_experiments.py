@@ -263,16 +263,27 @@ TABLE_HEADER = (
 def _section_baseline(closed: list[ClosedTrade]) -> str:
     strict   = _filter(closed, lambda t: t.confirmed_strict)
     relaxed  = _filter(closed, lambda t: not t.confirmed_strict)
+    s_strict  = _compute_stats(strict)
+    s_relaxed = _compute_stats(relaxed)
+    filter_ok = s_strict.expectancy > s_relaxed.expectancy
+
+    verdict = (
+        "✅ STRICT > REJECTED → 現フィルターは有効。"
+        if filter_ok else
+        f"⚠️ STRICT ({s_strict.win_rate:.1f}% WR, {s_strict.expectancy:+.2f}%) < "
+        f"REJECTED ({s_relaxed.win_rate:.1f}% WR, {s_relaxed.expectancy:+.2f}%) → "
+        "**現行フィルターが逆効果。フィルター見直しが必要。**"
+    )
+
     lines = [
         "## 1. Baseline",
         "",
         TABLE_HEADER,
         _row("ALL candidates",      _compute_stats(closed)),
-        _row("STRICT (current)",    _compute_stats(strict)),
-        _row("REJECTED by STRICT",  _compute_stats(relaxed)),
+        _row("STRICT (current)",    s_strict),
+        _row("REJECTED by STRICT",  s_relaxed),
         "",
-        "**読み方**: STRICT が REJECTED より expectancy が高ければ現フィルターは有効。"
-        "REJECTED の方が良ければフィルターを緩めるべき。",
+        verdict,
     ]
     return "\n".join(lines)
 
@@ -280,28 +291,54 @@ def _section_baseline(closed: list[ClosedTrade]) -> str:
 def _section_rsi_sweep(closed: list[ClosedTrade]) -> str:
     """RSI 1h 閾値ごとに『その閾値以上を採用していたら』の集計。"""
     thresholds = [60.0, 65.0, 70.0, 75.0, 80.0]
+    subsets = {th: _filter(closed, lambda t, th=th: t.rsi is not None and t.rsi >= th)
+               for th in thresholds}
+    best_th = max(thresholds, key=lambda th: _compute_stats(subsets[th]).expectancy)
+    best = _compute_stats(subsets[best_th])
+    all_negative = all(_compute_stats(subsets[th]).expectancy < 0 for th in thresholds)
+
+    note = (
+        f"RSI 閾値を変えても全て期待値マイナス。RSI 単独ではショートの判断根拠として不十分。"
+        if all_negative else
+        f"RSI ≥ {best_th:.0f} が最も期待値が高い ({best.expectancy:+.2f}%)。"
+    )
+
     lines = [
         "## 2. RSI(1h) threshold sweep",
         "",
-        "現行 STRICT は RSI ≥ 75。閾値を変えた場合の仮想成績。",
+        f"現行 STRICT は RSI ≥ 70。閾値を変えた場合の仮想成績。{note}",
         "",
         TABLE_HEADER,
     ]
     for th in thresholds:
-        subset = _filter(closed, lambda t, th=th: t.rsi is not None and t.rsi >= th)
-        lines.append(_row(f"RSI ≥ {th:.0f}", _compute_stats(subset)))
+        lines.append(_row(f"RSI ≥ {th:.0f}", _compute_stats(subsets[th])))
     lines.append("")
     return "\n".join(lines)
 
 
 def _section_rsi_4h_sweep(closed: list[ClosedTrade]) -> str:
     """4h RSI 方向分析。旧方向 (< X) と新方向 (≥ X) の両方を比較。"""
+    # 現在のデータで旧方向(低4h)と新方向(高4h)どちらが良いか動的に判定
+    old_best = max([60.0, 65.0, 70.0, 75.0],
+                   key=lambda th: _compute_stats(
+                       _filter(closed, lambda t, th=th: t.rsi_4h is None or t.rsi_4h < th)
+                   ).expectancy)
+    new_best = max([60.0, 65.0, 70.0, 75.0, 80.0],
+                   key=lambda th: _compute_stats(
+                       _filter(closed, lambda t, th=th: t.rsi_4h is not None and t.rsi_4h >= th)
+                   ).expectancy)
+    s_old = _compute_stats(_filter(closed, lambda t, th=old_best: t.rsi_4h is None or t.rsi_4h < th))
+    s_new = _compute_stats(_filter(closed, lambda t, th=new_best: t.rsi_4h is not None and t.rsi_4h >= th))
+    better_dir = "低4h方向 (< X)" if s_old.expectancy > s_new.expectancy else "高4h方向 (≥ X)"
+    better_exp = max(s_old.expectancy, s_new.expectancy)
+
     lines = [
         "## 3. RSI(4h) direction analysis",
         "",
-        "> **重要発見**: 4h RSI が**高い**ほどショートの勝率・期待値が向上する。",
-        "> 旧フィルター（4h RSI < 70）は「4h がまだ低い = 新鮮な急騰」を狙っていたが、",
-        "> 実際には「1h も 4h も過熱 = ダブルオーバーボート」の方が反転しやすい。",
+        f"> **現在の結論**: {better_dir} が有利 (最良 expectancy {better_exp:+.2f}%)。",
+        "> 4h RSI が低い = まだ過熱しきっていない新鮮な急騰。",
+        "> 4h RSI が高い = ダブルオーバーボート。",
+        "> どちらが勝るかは相場環境によって変わるため継続的に監視する。",
         "",
         "### 3a. 旧方向 (4h RSI < X): 低 4h のみ採用（旧 STRICT）",
         "",
@@ -353,17 +390,36 @@ def _section_volume(closed: list[ClosedTrade]) -> str:
     declining   = _filter(closed, lambda t: t.volume_trend == "DECLINING")
     flat        = _filter(closed, lambda t: t.volume_trend == "FLAT")
     rising      = _filter(closed, lambda t: t.volume_trend == "RISING")
+    s_rising     = _compute_stats(rising)
+    s_not_rising = _compute_stats(not_rising)
+
+    if s_rising.n > 0 and s_not_rising.n > 0:
+        if s_rising.expectancy > s_not_rising.expectancy:
+            verdict = (
+                f"⚠️ RISING ({s_rising.win_rate:.1f}% WR, {s_rising.expectancy:+.2f}%) > "
+                f"NOT RISING ({s_not_rising.win_rate:.1f}% WR, {s_not_rising.expectancy:+.2f}%) → "
+                "**現行の「RISING 除外」フィルターが逆効果。RISING の方が成績が高い。**"
+            )
+        else:
+            verdict = (
+                f"✅ NOT RISING ({s_not_rising.win_rate:.1f}% WR, {s_not_rising.expectancy:+.2f}%) > "
+                f"RISING ({s_rising.win_rate:.1f}% WR, {s_rising.expectancy:+.2f}%) → "
+                "現行の「RISING 除外」フィルターは有効。"
+            )
+    else:
+        verdict = ""
+
     lines = [
         "## 5. Volume trend filter",
         "",
-        "現行 STRICT は『RISING を除外』(疲弊兆候のみショート)。",
+        f"現行 STRICT は『RISING を除外』(疲弊兆候のみショート)。{verdict}",
         "",
         TABLE_HEADER,
-        _row("ALL volume trends",         _compute_stats(closed)),
-        _row("NOT RISING (current)",      _compute_stats(not_rising)),
+        _row("ALL volume trends",          _compute_stats(closed)),
+        _row("NOT RISING (current)",       s_not_rising),
         _row("DECLINING only (strictest)", _compute_stats(declining)),
-        _row("FLAT only",                 _compute_stats(flat)),
-        _row("RISING only",               _compute_stats(rising)),
+        _row("FLAT only",                  _compute_stats(flat)),
+        _row("RISING only",                s_rising),
         "",
     ]
     return "\n".join(lines)
@@ -395,17 +451,27 @@ def _section_atr_zone(closed: list[ClosedTrade]) -> str:
         ("ATR 9–11%",    lambda t: 9 <= (t.atr_pct or 0) < 11),
         ("ATR ≥ 11%",    lambda t: (t.atr_pct or 0) >= 11),
     ]
+    zone_stats = [(label, _compute_stats(_filter(closed, pred))) for label, pred in zones]
+    positive_zones = [label for label, s in zone_stats if s.n >= 5 and s.expectancy > 0]
+    best_zone = max(zone_stats, key=lambda x: x[1].expectancy) if zone_stats else None
+
+    if positive_zones:
+        note = f"現在のデータでは **{', '.join(positive_zones)}** が期待値プラス。"
+    else:
+        note = "現在のデータでは全ATRゾーンが期待値マイナス。"
+
+    if best_zone and best_zone[1].n >= 5:
+        note += f" 最良: {best_zone[0]} ({best_zone[1].expectancy:+.2f}%)。"
+
     lines = [
         "## 7. ATR% zone analysis",
         "",
-        "ATR% = ATR / price × 100。ボラティリティの大きさ別の成績。",
-        "高すぎると SL が刈られやすく、低すぎると値動きが小さい。",
+        f"ATR% = ATR / price × 100。ボラティリティの大きさ別の成績。{note}",
         "",
         TABLE_HEADER,
     ]
-    for label, pred in zones:
-        subset = _filter(closed, pred)
-        lines.append(_row(label, _compute_stats(subset)))
+    for label, s in zone_stats:
+        lines.append(_row(label, s))
     lines.append("")
     return "\n".join(lines)
 
@@ -511,54 +577,62 @@ def _section_fundamental(closed: list[ClosedTrade]) -> str:
 def _section_combined(closed: list[ClosedTrade]) -> str:
     """旧 STRICT vs データ駆動の新フィルター候補の比較。"""
     combos: list[tuple[str, Callable[[ClosedTrade], bool]]] = [
-        # --- 旧 STRICT (参考) ---
+        # --- 現行 STRICT (参考) ---
+        ("現行 STRICT (RSI≥70 & 4h≥65 & ¬RISING)",
+         lambda t: (t.rsi is not None and t.rsi >= 70)
+                   and (t.rsi_4h is not None and t.rsi_4h >= 65)
+                   and t.volume_trend != "RISING"),
+        # --- データが示す有望な方向: 低4h RSI ─────────────────────────
+        ("4h RSI < 65 (低4h = 新鮮な急騰)",
+         lambda t: t.rsi_4h is not None and t.rsi_4h < 65),
+        ("4h RSI < 65 & RISING",
+         lambda t: (t.rsi_4h is not None and t.rsi_4h < 65)
+                   and t.volume_trend == "RISING"),
+        ("4h RSI < 65 & ATR≥11%",
+         lambda t: (t.rsi_4h is not None and t.rsi_4h < 65)
+                   and (t.atr_pct or 0) >= 11),
+        ("4h RSI < 65 & RSI≥70",
+         lambda t: (t.rsi_4h is not None and t.rsi_4h < 65)
+                   and (t.rsi is not None and t.rsi >= 70)),
+        ("4h RSI < 65 & RSI≥70 & RISING",
+         lambda t: (t.rsi_4h is not None and t.rsi_4h < 65)
+                   and (t.rsi is not None and t.rsi >= 70)
+                   and t.volume_trend == "RISING"),
+        # --- ATR ≥ 11% ベース ────────────────────────────────────────
+        ("ATR ≥ 11%",
+         lambda t: (t.atr_pct or 0) >= 11),
+        ("ATR ≥ 11% & RISING",
+         lambda t: (t.atr_pct or 0) >= 11
+                   and t.volume_trend == "RISING"),
+        # --- 旧 STRICT (参考) ─────────────────────────────────────────
         ("旧 STRICT (RSI≥75 & 4h<70 & BB & ¬RISING)",
          lambda t: (t.rsi is not None and t.rsi >= 75)
                    and (t.rsi_4h is None or t.rsi_4h < 70)
                    and t.price_vs_bb > 1.0
                    and t.volume_trend != "RISING"),
-        # --- 4h RSI 方向反転ベースの候補 ---
-        ("RSI≥75 & 4h≥75",
-         lambda t: (t.rsi is not None and t.rsi >= 75)
-                   and (t.rsi_4h is not None and t.rsi_4h >= 75)),
-        ("RSI≥75 & 4h≥75 & ¬RISING",
-         lambda t: (t.rsi is not None and t.rsi >= 75)
-                   and (t.rsi_4h is not None and t.rsi_4h >= 75)
-                   and t.volume_trend != "RISING"),
-        ("RSI≥70 & 4h≥70 & ¬RISING",
-         lambda t: (t.rsi is not None and t.rsi >= 70)
-                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
-                   and t.volume_trend != "RISING"),
-        ("RSI≥65 & 4h≥75 & ¬RISING",
-         lambda t: (t.rsi is not None and t.rsi >= 65)
-                   and (t.rsi_4h is not None and t.rsi_4h >= 75)
-                   and t.volume_trend != "RISING"),
-        ("RSI≥65 & 4h≥70 & ¬RISING",
-         lambda t: (t.rsi is not None and t.rsi >= 65)
-                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
-                   and t.volume_trend != "RISING"),
-        # --- ATR ゾーン追加 ---
-        ("RSI≥65 & 4h≥70 & ¬RISING & ATR 5–9%",
-         lambda t: (t.rsi is not None and t.rsi >= 65)
-                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
-                   and t.volume_trend != "RISING"
-                   and 5 <= (t.atr_pct or 0) < 9),
-        # --- FLAT のみ ---
-        ("RSI≥65 & 4h≥70 & FLAT",
-         lambda t: (t.rsi is not None and t.rsi >= 65)
-                   and (t.rsi_4h is not None and t.rsi_4h >= 70)
-                   and t.volume_trend == "FLAT"),
     ]
+
+    combo_results = [(label, _filter(closed, pred)) for label, pred in combos]
+    reliable = [(l, s) for l, s in combo_results if len(s) >= 5]
+    if reliable:
+        best_label, best_subset = max(reliable, key=lambda x: _compute_stats(x[1]).expectancy)
+        best_s = _compute_stats(best_subset)
+        best_note = (
+            f"**現在の最良組み合わせ (n≥5)**: 「{best_label}」"
+            f" (WR={best_s.win_rate:.1f}%, exp={best_s.expectancy:+.2f}%, n={best_s.n})"
+        )
+    else:
+        best_note = "*(各組み合わせのサンプルが不足。データ蓄積中)*"
+
     lines = [
         "## 11. Combined filters",
         "",
-        "旧 STRICT と、データに基づくフィルター候補の比較。",
-        "4h RSI 方向を反転（≥ を要求）した上で各種組み合わせを評価。",
+        "各フィルター組み合わせの仮想成績。データが示す有望な方向を中心に評価。",
+        best_note,
         "",
         TABLE_HEADER,
     ]
-    for label, pred in combos:
-        subset = _filter(closed, pred)
+    for label, subset in combo_results:
         lines.append(_row(label, _compute_stats(subset)))
     lines.append("")
     return "\n".join(lines)
@@ -731,53 +805,74 @@ def _section_distribution(closed: list[ClosedTrade]) -> str:
 
 
 def _section_recommendation(closed: list[ClosedTrade]) -> str:
-    """データに基づくフィルター推奨。現行 vs 推奨を比較。"""
-    old_strict = _filter(
-        closed,
-        lambda t: (t.rsi is not None and t.rsi >= 75)
-                  and (t.rsi_4h is None or t.rsi_4h < 70)
-                  and t.price_vs_bb > 1.0
-                  and t.volume_trend != "RISING",
-    )
-    new_v1 = _filter(
+    """データに基づくフィルター推奨。現行 vs 候補を比較。"""
+    # 比較対象
+    current = _filter(
         closed,
         lambda t: (t.rsi is not None and t.rsi >= 70)
                   and (t.rsi_4h is not None and t.rsi_4h >= 65)
                   and t.volume_trend != "RISING",
     )
+    candidate_v2 = _filter(
+        closed,
+        lambda t: (t.rsi_4h is not None and t.rsi_4h < 65)
+                  and t.volume_trend == "RISING",
+    )
+    candidate_v3 = _filter(
+        closed,
+        lambda t: (t.rsi_4h is not None and t.rsi_4h < 65)
+                  and (t.atr_pct or 0) >= 11,
+    )
+
+    s_current = _compute_stats(current)
+    s_v2      = _compute_stats(candidate_v2)
+    s_v3      = _compute_stats(candidate_v3)
 
     lines = [
         "## 14. Filter recommendation",
         "",
-        "### 旧 STRICT (変更前)",
-        "",
-        "```",
-        "RSI(1h) >= 75",
-        "RSI(4h) <  70   ← 逆効果 (低い 4h RSI = 勝率悪化)",
-        "BB upper break   ← シグナルが少なすぎる",
-        "Volume != RISING",
-        "```",
-        "",
-        TABLE_HEADER,
-        _row("旧 STRICT", _compute_stats(old_strict)),
-        "",
-        "### 新 STRICT v1 (適用中)",
+        "### 現行 STRICT v1 (適用中)",
         "",
         "```",
         "RSI(1h) >= 70",
-        "RSI(4h) >= 65   ← 方向反転: ダブルオーバーボートを狙う",
-        "BB upper break   ← 撤廃 (効果なし)",
-        "Volume != RISING  ← 据え置き",
+        "RSI(4h) >= 65   ← データでは逆効果の可能性あり",
+        "Volume != RISING ← データでは RISING が最も成績が高い",
         "```",
         "",
         TABLE_HEADER,
-        _row("新 STRICT v1", _compute_stats(new_v1)),
+        _row("現行 STRICT v1", s_current),
         "",
-        "### 今後の改善候補",
+        "### 候補 v2: データが示す有望方向",
         "",
-        "- ATR% フィルター追加 (5–9% ゾーンが安定)",
-        "- Volume FLAT のみに絞る (FLAT 勝率 > DECLINING)",
-        "- RSI(1h) 閾値を 75 に戻す (データ蓄積後に再評価)",
+        "```",
+        "RSI(1h) >= 70",
+        "RSI(4h) < 65   ← 4h 未過熱 = 新鮮な急騰",
+        "Volume RISING  ← トレンド継続の勢いを活かす",
+        "```",
+        "",
+        TABLE_HEADER,
+        _row("候補 v2 (4h<65 & RISING)", s_v2),
+        "",
+        "### 候補 v3: 高ボラ × 新鮮な急騰",
+        "",
+        "```",
+        "RSI(4h) < 65   ← 4h 未過熱",
+        "ATR >= 11%     ← 高ボラ帯 (唯一の期待値プラスゾーン)",
+        "```",
+        "",
+        TABLE_HEADER,
+        _row("候補 v3 (4h<65 & ATR≥11%)", s_v3),
+        "",
+        "### 判断基準",
+        "",
+        "| 指標 | 現行 v1 | 候補 v2 | 候補 v3 |",
+        "|------|---------|---------|---------|",
+        f"| WR   | {s_current.win_rate:.1f}% | {s_v2.win_rate:.1f}% | {s_v3.win_rate:.1f}% |",
+        f"| exp  | {s_current.expectancy:+.2f}% | {s_v2.expectancy:+.2f}% | {s_v3.expectancy:+.2f}% |",
+        f"| n    | {s_current.n} | {s_v2.n} | {s_v3.n} |",
+        "",
+        "**次のアクション**: n が 30 件以上になった候補を本番 STRICT に昇格させる。",
+        "候補 v2/v3 は引き続きシャドウトレードで追跡中。",
         "",
     ]
     return "\n".join(lines)
