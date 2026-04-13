@@ -1162,6 +1162,7 @@ def _section_direction_comparison(closed: list[ClosedTrade]) -> str:
 
     同じ検出イベントで MARKET_LONG と MARKET(ショート) を比較し、
     「この相場では急騰後にロング/ショートどちらが有効か」を定量判断する。
+    全期間テーブル + 直近20件テーブル + 直近10/20/全期間の直接比較 を出力。
     """
     long_count = sum(
         1 for t in closed
@@ -1187,30 +1188,28 @@ def _section_direction_comparison(closed: list[ClosedTrade]) -> str:
         "ロング優位 = 急騰継続トレンド（今はロング向き相場）。",
         "ショート優位 = 急騰は反転ポイント（ショート戦略が有効）。",
         "",
-        "### 戦略別成績",
-        "",
-        "| 戦略 | 方向 | filled | avg PnL | win% | TP | SL |",
-        "|------|------|-------:|--------:|-----:|---:|---:|",
     ]
 
     compare_pairs = [
-        ("MARKET",       "MARKET_LONG"),
-        ("ASK",          "ASK_LONG"),
-        ("LIMIT_1PCT",   "LIMIT_1PCT_LONG"),
-        ("LIMIT_3PCT",   "LIMIT_3PCT_LONG"),
-        ("LIMIT_5PCT",   "LIMIT_5PCT_LONG"),
-        ("LIMIT_10PCT",  "LIMIT_10PCT_LONG"),
-        ("LIMIT_BB3S",   "LIMIT_BB3S_LONG"),
-        ("LIMIT_ATR",    "LIMIT_ATR_LONG"),
-        ("LIMIT_FIB1272","LIMIT_FIB1272_LONG"),
-        ("LIMIT_FIB1618","LIMIT_FIB1618_LONG"),
+        ("MARKET",        "MARKET_LONG"),
+        ("ASK",           "ASK_LONG"),
+        ("LIMIT_1PCT",    "LIMIT_1PCT_LONG"),
+        ("LIMIT_3PCT",    "LIMIT_3PCT_LONG"),
+        ("LIMIT_5PCT",    "LIMIT_5PCT_LONG"),
+        ("LIMIT_10PCT",   "LIMIT_10PCT_LONG"),
+        ("LIMIT_BB3S",    "LIMIT_BB3S_LONG"),
+        ("LIMIT_ATR",     "LIMIT_ATR_LONG"),
+        ("LIMIT_FIB1272", "LIMIT_FIB1272_LONG"),
+        ("LIMIT_FIB1618", "LIMIT_FIB1618_LONG"),
     ]
 
-    def _variant_stats(strategy_name: str) -> tuple[int, float | None, float | None, int, int]:
-        """(filled, avg_pnl, win_rate, tp_count, sl_count)"""
+    def _variant_stats_trades(
+        trades: list[ClosedTrade], strategy_name: str
+    ) -> tuple[int, float | None, float | None, int, int]:
+        """trades から指定戦略の (filled, avg_pnl, win_rate, tp, sl) を返す。"""
         pnls: list[float] = []
         tp_n = sl_n = filled_n = 0
-        for t in closed:
+        for t in trades:
             if not t.entry_variants:
                 continue
             for v in t.entry_variants:
@@ -1229,62 +1228,115 @@ def _section_direction_comparison(closed: list[ClosedTrade]) -> str:
         wr  = sum(1 for p in pnls if p > 0) / len(pnls) * 100 if pnls else None
         return filled_n, avg, wr, tp_n, sl_n
 
-    for short_s, long_s in compare_pairs:
-        for name in (short_s, long_s):
-            direction = "LONG 🔼" if name.endswith("_LONG") else "SHORT 🔽"
-            filled, avg, wr, tp_n, sl_n = _variant_stats(name)
-            if avg is None:
-                lines.append(f"| {name} | {direction} | {filled} | – | – | – | – |")
-            else:
-                lines.append(
-                    f"| {name} | {direction} | {filled} "
-                    f"| {avg:+.2f}% | {wr:.0f}% | {tp_n} | {sl_n} |"
-                )
-        lines.append("|  |  |  |  |  |  |  |")  # separator
-
-    # ── 同一イベントでの直接比較 ──────────────────────────────────────
-    better_long = better_short = tie = 0
-    for t in closed:
-        if not t.entry_variants:
-            continue
-        short_pnl = next(
-            (float(v["pnl_pct"]) for v in t.entry_variants
-             if v.get("strategy") == "MARKET"
-             and v.get("filled") and v.get("pnl_pct") is not None),
-            None,
+    def _strategy_row(trades: list[ClosedTrade], name: str) -> str:
+        direction = "LONG 🔼" if name.endswith("_LONG") else "SHORT 🔽"
+        filled, avg, wr, tp_n, sl_n = _variant_stats_trades(trades, name)
+        if avg is None:
+            return f"| {name} | {direction} | {filled} | – | – | – | – |"
+        return (
+            f"| {name} | {direction} | {filled} "
+            f"| {avg:+.2f}% | {wr:.0f}% | {tp_n} | {sl_n} |"
         )
-        long_pnl = next(
-            (float(v["pnl_pct"]) for v in t.entry_variants
-             if v.get("strategy") == "MARKET_LONG"
-             and v.get("filled") and v.get("pnl_pct") is not None),
-            None,
-        )
-        if short_pnl is not None and long_pnl is not None:
-            if long_pnl > short_pnl + 0.1:
-                better_long += 1
-            elif short_pnl > long_pnl + 0.1:
-                better_short += 1
-            else:
-                tie += 1
 
-    total = better_long + better_short + tie
-    if total > 0:
+    def _strategy_table(trades: list[ClosedTrade], title: str) -> list[str]:
+        rows = [
+            f"### {title}",
+            "",
+            "| 戦略 | 方向 | filled | avg PnL | win% | TP | SL |",
+            "|------|------|-------:|--------:|-----:|---:|---:|",
+        ]
+        for short_s, long_s in compare_pairs:
+            for name in (short_s, long_s):
+                rows.append(_strategy_row(trades, name))
+            rows.append("|  |  |  |  |  |  |  |")
+        return rows
+
+    # ── 全期間 & 直近20件 の戦略別成績 ───────────────────────────────────
+    lines += _strategy_table(closed, "戦略別成績 (全期間)")
+    lines.append("")
+    recent20 = closed[-20:] if len(closed) >= 20 else closed
+    lines += _strategy_table(recent20, "戦略別成績 (直近 20 件)")
+    lines.append("")
+
+    # ── 同一イベント直接比較 (ローリングウィンドウ) ───────────────────────
+    def _h2h_counts(trades: list[ClosedTrade]) -> tuple[int, int, int]:
+        """(better_long, better_short, tie)"""
+        bl = bs = ti = 0
+        for t in trades:
+            if not t.entry_variants:
+                continue
+            sp = next(
+                (float(v["pnl_pct"]) for v in t.entry_variants
+                 if v.get("strategy") == "MARKET"
+                 and v.get("filled") and v.get("pnl_pct") is not None),
+                None,
+            )
+            lp = next(
+                (float(v["pnl_pct"]) for v in t.entry_variants
+                 if v.get("strategy") == "MARKET_LONG"
+                 and v.get("filled") and v.get("pnl_pct") is not None),
+                None,
+            )
+            if sp is not None and lp is not None:
+                if lp > sp + 0.1:
+                    bl += 1
+                elif sp > lp + 0.1:
+                    bs += 1
+                else:
+                    ti += 1
+        return bl, bs, ti
+
+    # 両方 filled のトレードのみ対象
+    comparable = [
+        t for t in closed
+        if t.entry_variants
+        and any(v.get("strategy") == "MARKET"      and v.get("filled") for v in t.entry_variants)
+        and any(v.get("strategy") == "MARKET_LONG" and v.get("filled") for v in t.entry_variants)
+    ]
+
+    if comparable:
         lines += [
+            "### 同一イベント直接比較 (MARKET ショート vs MARKET_LONG)",
             "",
-            f"### 同一イベント直接比較 (MARKET ショート vs MARKET_LONG) — {total} 件",
-            "",
-            "| 判定 | 件数 | 比率 |",
-            "|------|-----:|-----:|",
-            f"| ロングが有利 | {better_long} | {better_long/total*100:.0f}% |",
-            f"| ショートが有利 | {better_short} | {better_short/total*100:.0f}% |",
-            f"| ほぼ同等 | {tie} | {tie/total*100:.0f}% |",
-            "",
+            "| 期間 | n | ロング有利 | ショート有利 | 拮抗 | ロング優位% |",
+            "|------|--:|----------:|------------:|-----:|------------:|",
+        ]
+
+        def _h2h_row(label: str, trades: list[ClosedTrade]) -> str:
+            bl, bs, ti = _h2h_counts(trades)
+            n = bl + bs + ti
+            if n == 0:
+                return f"| {label} | 0 | – | – | – | – |"
+            return f"| {label} | {n} | {bl} | {bs} | {ti} | {bl/n*100:.0f}% |"
+
+        for w in (10, 20):
+            if len(comparable) >= w:
+                lines.append(_h2h_row(f"直近 {w} 件", comparable[-w:]))
+        lines.append(_h2h_row("全期間", comparable))
+        lines.append("")
+
+        # ドリフト判定
+        if len(comparable) >= 10:
+            bl10, bs10, ti10 = _h2h_counts(comparable[-10:])
+            n10 = bl10 + bs10 + ti10
+            long_pct = bl10 / n10 * 100 if n10 else 0
+            if long_pct >= 60:
+                drift_msg = f"📈 直近はロング優位 ({long_pct:.0f}%) — 急騰継続が増えている"
+            elif long_pct <= 30:
+                drift_msg = f"📉 直近はショート優位 ({100-long_pct:.0f}%) — 急騰後の反転が増えている"
+            else:
+                drift_msg = f"↔️ 直近は拮抗 (ロング {long_pct:.0f}%) — フィルターで絞り込む"
+            lines += [f"**方向ドリフト (直近10件)**: {drift_msg}", ""]
+
+        lines += [
             "**解釈**:",
-            "- ロング有利 > 60%: 急騰継続が多い → 相場はロング向き。ショート戦略の見直しを検討。",
-            "- ショート有利 > 60%: 急騰反転が多い → 現行ショート戦略が環境に合っている。",
+            "- ロング優位% > 60%: 相場はロング向き。ショート戦略の見直しを検討。",
+            "- ロング優位% < 40%: 急騰反転が多い → 現行ショート戦略が環境に合っている。",
             "- 拮抗 (40〜60%): 方向選択の鍵は別のフィルター（出来高・RSI等）にある。",
+            "- 直近10件と全期間の乖離が大きい → 相場環境が変化した可能性。",
             "",
         ]
+
     return "\n".join(lines)
 
 
