@@ -361,6 +361,9 @@ def _register_shadow_trades(
                 open_interest_usd=r.open_interest_usd,
                 oi_change_pct=r.oi_change_pct,
                 long_short_ratio=r.long_short_ratio,
+                upper_wick_ratio_1h=r.upper_wick_ratio_1h,
+                consecutive_green_1h=r.consecutive_green_1h,
+                consecutive_green_4h=r.consecutive_green_4h,
             )
 
             # Order book からスプレッド情報を取得

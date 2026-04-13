@@ -106,6 +106,11 @@ class ClosedTrade:
     oi_change_pct:     float | None = None
     long_short_ratio:  float | None = None
 
+    # 価格行動の質 (記録のみ。フィルター未使用)
+    upper_wick_ratio_1h:  float | None = None
+    consecutive_green_1h: int | None   = None
+    consecutive_green_4h: int | None   = None
+
 
 def _load_closed(path: Path) -> list[ClosedTrade]:
     if not path.exists():
@@ -151,6 +156,9 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
                 open_interest_usd=f_dict.get("open_interest_usd"),
                 oi_change_pct=f_dict.get("oi_change_pct"),
                 long_short_ratio=f_dict.get("long_short_ratio"),
+                upper_wick_ratio_1h=f_dict.get("upper_wick_ratio_1h"),
+                consecutive_green_1h=f_dict.get("consecutive_green_1h"),
+                consecutive_green_4h=f_dict.get("consecutive_green_4h"),
             )
         )
     return closed
@@ -936,6 +944,87 @@ def _section_open_interest(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_price_action(closed: list[ClosedTrade]) -> str:
+    """上ヒゲ比率・連続陽線数の分析。"""
+    with_wick = [t for t in closed if getattr(t, "upper_wick_ratio_1h", None) is not None]
+    with_g1h  = [t for t in closed if getattr(t, "consecutive_green_1h", None) is not None]
+    with_g4h  = [t for t in closed if getattr(t, "consecutive_green_4h", None) is not None]
+
+    lines = ["## 18. Price action quality", ""]
+
+    has_data = len(with_wick) >= 5 or len(with_g1h) >= 5
+
+    if not has_data:
+        lines += [
+            f"上ヒゲ比率データ: {len(with_wick)} / {len(closed)} 件",
+            f"連続陽線(1h)データ: {len(with_g1h)} / {len(closed)} 件",
+            "",
+            "*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    # --- 上ヒゲ比率バケット ---
+    if len(with_wick) >= 5:
+        lines += [
+            f"### 上ヒゲ比率 (1h直前完成足) — {len(with_wick)} 件",
+            "",
+            "**考え方**: 上ヒゲが長い (比率高い) ほど売り圧力あり → ショートに有利。",
+            "",
+            TABLE_HEADER,
+        ]
+        wick_buckets = [
+            ("上ヒゲ小  (0〜0.2)",  0.0, 0.2),
+            ("上ヒゲ中  (0.2〜0.4)", 0.2, 0.4),
+            ("上ヒゲ大  (0.4〜0.6)", 0.4, 0.6),
+            ("上ヒゲ極大 (>= 0.6)",  0.6, 999),
+        ]
+        for label, lo, hi in wick_buckets:
+            subset = [t for t in with_wick if lo <= t.upper_wick_ratio_1h < hi]
+            if not subset:
+                continue
+            lines.append(_row(f"  {label}", _compute_stats(subset)))
+        lines.append("")
+
+    # --- 連続陽線数バケット (1h) ---
+    if len(with_g1h) >= 5:
+        lines += [
+            f"### 連続陽線数 (1h) — {len(with_g1h)} 件",
+            "",
+            "**考え方**: 多いほど一方的な上昇 = 過熱感。反転確率が高い可能性。",
+            "",
+            TABLE_HEADER,
+        ]
+        green_buckets = [
+            ("1〜2本",  1, 3),
+            ("3〜4本",  3, 5),
+            ("5〜7本",  5, 8),
+            ("8本以上", 8, 999),
+        ]
+        for label, lo, hi in green_buckets:
+            subset = [t for t in with_g1h if lo <= t.consecutive_green_1h < hi]
+            if not subset:
+                continue
+            lines.append(_row(f"  {label}", _compute_stats(subset)))
+        lines.append("")
+
+    # --- 連続陽線数バケット (4h) ---
+    if len(with_g4h) >= 5:
+        lines += [
+            f"### 連続陽線数 (4h) — {len(with_g4h)} 件",
+            "",
+            TABLE_HEADER,
+        ]
+        for label, lo, hi in green_buckets:
+            subset = [t for t in with_g4h if lo <= t.consecutive_green_4h < hi]
+            if not subset:
+                continue
+            lines.append(_row(f"  {label}", _compute_stats(subset)))
+        lines.append("")
+
+    return "\n".join(lines)
+
+
 # ---------------------------------------------------------------------------
 # Top-level report builder
 # ---------------------------------------------------------------------------
@@ -994,6 +1083,7 @@ def generate_report(
             _section_funding_rate(closed),
             _section_obv_divergence(closed),
             _section_open_interest(closed),
+            _section_price_action(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",

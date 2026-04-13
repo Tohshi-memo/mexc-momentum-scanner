@@ -88,6 +88,16 @@ class AnalysisResult:
     # > 1.0 = ロングが多い → ショートに有利な環境
     long_short_ratio: float | None
 
+    # 価格行動の質 (記録のみ。フィルターとしては未使用)
+    # 上ヒゲ比率: (high - max(open,close)) / (high - low)
+    # 1.0 に近いほど上ヒゲが長い = 売り圧力が強い
+    upper_wick_ratio_1h: float | None  # 直前完成1h足の上ヒゲ比率
+
+    # 連続陽線数: 検出直前に何本連続で陽線 (close > open) が続いたか
+    # 多いほど一方的な上昇 = 過熱感
+    consecutive_green_1h: int | None   # 1h足の連続陽線数
+    consecutive_green_4h: int | None   # 4h足の連続陽線数
+
     # 総合判定
     is_confirmed_signal: bool
     reject_reasons: list[str] # 却下理由（デバッグ/ログ用）
@@ -175,10 +185,13 @@ class TechnicalAnalyzer:
 
             df = self._build_dataframe(ohlcv)
 
-            # 4h RSI をマルチタイムフレーム確認用に取得
+            # 4h RSI + DataFrame をマルチタイムフレーム確認用に取得
             rsi_4h_value: float | None = None
+            df_4h: pd.DataFrame | None = None
             if self._use_4h_filter:
-                rsi_4h_value = self._fetch_rsi_4h(candidate.symbol)
+                rsi_4h_value, df_4h = self._fetch_4h_data(candidate.symbol)
+            else:
+                _, df_4h = self._fetch_4h_data(candidate.symbol)
 
             # ファンディングレートを取得 (記録のみ・失敗しても解析継続)
             funding_rate: float | None = self._client.fetch_funding_rate(candidate.symbol)
@@ -188,27 +201,28 @@ class TechnicalAnalyzer:
             ls_ratio = self._client.fetch_long_short_ratio(candidate.symbol)
 
             return self._compute_indicators(
-                candidate, df, rsi_4h_value, funding_rate, oi_usd, oi_change, ls_ratio,
+                candidate, df, rsi_4h_value, df_4h,
+                funding_rate, oi_usd, oi_change, ls_ratio,
             )
 
         except Exception as e:
             logger.error("Analysis failed for %s: %s", candidate.symbol, e)
             return None
 
-    def _fetch_rsi_4h(self, symbol: str) -> float | None:
-        """4h 足の OHLCV を取得して RSI を計算する。失敗時は None。"""
+    def _fetch_4h_data(self, symbol: str) -> tuple[float | None, pd.DataFrame | None]:
+        """4h 足の OHLCV を取得して RSI と DataFrame を返す。失敗時は (None, None)。"""
         try:
             ohlcv_4h = self._client.fetch_ohlcv(
                 symbol, timeframe="4h", limit=self._rsi_period + 30
             )
             if not ohlcv_4h or len(ohlcv_4h) < self._rsi_period + 1:
-                return None
+                return None, None
             df_4h = self._build_dataframe(ohlcv_4h)
             rsi_series = self._calc_rsi(df_4h["close"], self._rsi_period)
-            return self._last_valid(rsi_series)
+            return self._last_valid(rsi_series), df_4h
         except Exception as e:
-            logger.debug("4h RSI fetch failed for %s: %s", symbol, e)
-            return None
+            logger.debug("4h data fetch failed for %s: %s", symbol, e)
+            return None, None
 
     def _build_dataframe(self, ohlcv: list[list[float]]) -> pd.DataFrame:
         """ccxt OHLCV リストを pandas DataFrame に変換する。"""
@@ -226,6 +240,7 @@ class TechnicalAnalyzer:
         candidate: SurgeCandidate,
         df: pd.DataFrame,
         rsi_4h_value: float | None,
+        df_4h: pd.DataFrame | None = None,
         funding_rate: float | None = None,
         open_interest_usd: float | None = None,
         oi_change_pct: float | None = None,
@@ -272,6 +287,12 @@ class TechnicalAnalyzer:
         # --- OBV ダイバージェンス ---
         obv_divergence = self._calc_obv_divergence(df["close"], df["volume"])
 
+        # --- 価格行動の質 ---
+        # 上ヒゲ比率: 直前完成足 (iloc[-2]) を使う (最新足はまだ形成中)
+        upper_wick_ratio_1h = self._calc_upper_wick_ratio(df, idx=-2)
+        consecutive_green_1h = self._calc_consecutive_green(df)
+        consecutive_green_4h = self._calc_consecutive_green(df_4h) if df_4h is not None else None
+
         # --- 総合判定 + 却下理由収集 ---
         # BB ブレイクはデータ分析の結果、効果が薄いため条件から除外。
         reject_reasons: list[str] = []
@@ -313,6 +334,9 @@ class TechnicalAnalyzer:
             open_interest_usd=open_interest_usd,
             oi_change_pct=oi_change_pct,
             long_short_ratio=long_short_ratio,
+            upper_wick_ratio_1h=upper_wick_ratio_1h,
+            consecutive_green_1h=consecutive_green_1h,
+            consecutive_green_4h=consecutive_green_4h,
             is_confirmed_signal=is_confirmed,
             reject_reasons=reject_reasons,
         )
@@ -441,6 +465,49 @@ class TechnicalAnalyzer:
 
     # ------------------------------------------------------------------
     # Logging
+    @staticmethod
+    def _calc_upper_wick_ratio(df: pd.DataFrame, idx: int = -2) -> float | None:
+        """指定インデックスの足の上ヒゲ比率を返す。
+
+        上ヒゲ比率 = (high - max(open, close)) / (high - low)
+        1.0 に近いほど上ヒゲが長い (売り圧力が強い)。
+
+        idx=-2: 直前完成足 (最新足はまだ形成中のため除外)
+        """
+        try:
+            if len(df) < abs(idx):
+                return None
+            row = df.iloc[idx]
+            high  = float(row["high"])
+            low   = float(row["low"])
+            op    = float(row["open"])
+            close = float(row["close"])
+            candle_range = high - low
+            if candle_range <= 0:
+                return None
+            upper_wick = high - max(op, close)
+            return round(upper_wick / candle_range, 4)
+        except Exception:
+            return None
+
+    @staticmethod
+    def _calc_consecutive_green(df: pd.DataFrame | None) -> int | None:
+        """直前完成足から遡って連続陽線数を返す。
+
+        陽線 = close > open。最新足は形成中のため除外 (iloc[-2] から遡る)。
+        """
+        if df is None or len(df) < 2:
+            return None
+        count = 0
+        # iloc[-2] から遡る（最新足除外）
+        for i in range(len(df) - 2, -1, -1):
+            row = df.iloc[i]
+            if float(row["close"]) > float(row["open"]):
+                count += 1
+            else:
+                break
+        return count
+
     # ------------------------------------------------------------------
 
     def _log_result(self, result: AnalysisResult) -> None:

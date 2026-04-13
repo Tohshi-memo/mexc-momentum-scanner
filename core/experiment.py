@@ -53,9 +53,12 @@ class FilterSnapshot:
     btc_change_1h:     float
     funding_rate:      float | None = None  # ファンディングレート (%) 記録のみ
     obv_divergence:    str | None = None    # BEARISH_DIV / BULLISH_DIV / NONE 記録のみ
-    open_interest_usd: float | None = None  # OI の USDT 建て総額 記録のみ
-    oi_change_pct:     float | None = None  # 直近1h OI 変化率 (%) 記録のみ
-    long_short_ratio:  float | None = None  # ロング/ショート比率 記録のみ
+    open_interest_usd:   float | None = None  # OI の USDT 建て総額 記録のみ
+    oi_change_pct:       float | None = None  # 直近1h OI 変化率 (%) 記録のみ
+    long_short_ratio:    float | None = None  # ロング/ショート比率 記録のみ
+    upper_wick_ratio_1h: float | None = None  # 直前1h足の上ヒゲ比率 記録のみ
+    consecutive_green_1h: int | None  = None  # 1h連続陽線数 記録のみ
+    consecutive_green_4h: int | None  = None  # 4h連続陽線数 記録のみ
 
 
 @dataclass
