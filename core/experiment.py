@@ -52,6 +52,7 @@ class FilterSnapshot:
     relative_strength: float           # alt_1h - btc_1h
     btc_change_1h:     float
     funding_rate:      float | None = None  # ファンディングレート (%) 記録のみ
+    obv_divergence:    str | None = None    # BEARISH_DIV / BULLISH_DIV / NONE 記録のみ
 
 
 @dataclass

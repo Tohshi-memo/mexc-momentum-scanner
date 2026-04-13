@@ -357,6 +357,7 @@ def _register_shadow_trades(
                 relative_strength=r.relative_strength_pct,
                 btc_change_1h=btc_change_1h,
                 funding_rate=r.funding_rate,
+                obv_divergence=r.obv_divergence,
             )
 
             # Order book からスプレッド情報を取得

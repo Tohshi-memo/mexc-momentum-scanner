@@ -73,6 +73,12 @@ class AnalysisResult:
     # 負値 = ショートがロングに支払う (弱気相場) → ショートに不利な可能性
     funding_rate: float | None  # %表記 (0.01 = 0.01%)
 
+    # OBV ダイバージェンス (記録のみ。フィルターとしては未使用)
+    # BEARISH_DIV: 価格↑ OBV↓ → 分配フェーズ (ショート根拠)
+    # BULLISH_DIV: 価格↓ OBV↑ → 蓄積フェーズ
+    # NONE:        ダイバージェンスなし
+    obv_divergence: str | None  # "BEARISH_DIV" / "BULLISH_DIV" / "NONE"
+
     # 総合判定
     is_confirmed_signal: bool
     reject_reasons: list[str] # 却下理由（デバッグ/ログ用）
@@ -245,6 +251,9 @@ class TechnicalAnalyzer:
         if len(df) >= 11:
             swing_low_1h = float(df["low"].iloc[-11:-1].min())
 
+        # --- OBV ダイバージェンス ---
+        obv_divergence = self._calc_obv_divergence(df["close"], df["volume"])
+
         # --- 総合判定 + 却下理由収集 ---
         # BB ブレイクはデータ分析の結果、効果が薄いため条件から除外。
         reject_reasons: list[str] = []
@@ -282,6 +291,7 @@ class TechnicalAnalyzer:
             atr_pct=atr_pct,
             swing_low_1h=swing_low_1h,
             funding_rate=funding_rate,
+            obv_divergence=obv_divergence,
             is_confirmed_signal=is_confirmed,
             reject_reasons=reject_reasons,
         )
@@ -361,6 +371,52 @@ class TechnicalAnalyzer:
         ).max(axis=1)
 
         return tr.ewm(com=period - 1, min_periods=period).mean()
+
+    @staticmethod
+    def _calc_obv_divergence(
+        close: pd.Series,
+        volume: pd.Series,
+        lookback: int = 14,
+    ) -> str | None:
+        """OBV と価格のダイバージェンスを検出する。
+
+        OBV = 前日比で上昇なら +volume、下落なら -volume の累積和。
+        直近 lookback 本の価格トレンドと OBV トレンドを線形回帰の傾きで比較し、
+        方向が逆であればダイバージェンスと判定する。
+
+        Returns:
+            "BEARISH_DIV" : 価格↑ OBV↓ (分配フェーズ = ショート根拠)
+            "BULLISH_DIV" : 価格↓ OBV↑ (蓄積フェーズ)
+            "NONE"        : ダイバージェンスなし
+            None          : データ不足
+        """
+        if len(close) < lookback + 1:
+            return None
+
+        # OBV 計算
+        direction = close.diff().apply(lambda x: 1 if x > 0 else (-1 if x < 0 else 0))
+        obv = (direction * volume).cumsum()
+
+        # 直近 lookback 本の傾き (線形回帰の代わりに終値 - 始値で近似)
+        price_window = close.iloc[-lookback:]
+        obv_window   = obv.iloc[-lookback:]
+
+        price_slope = float(price_window.iloc[-1] - price_window.iloc[0])
+        obv_slope   = float(obv_window.iloc[-1]   - obv_window.iloc[0])
+
+        # ノイズ除去: 価格変化が 0.5% 未満なら判定しない
+        price_chg_pct = abs(price_slope) / float(price_window.iloc[0]) * 100
+        if price_chg_pct < 0.5:
+            return "NONE"
+
+        price_up = price_slope > 0
+        obv_up   = obv_slope   > 0
+
+        if price_up and not obv_up:
+            return "BEARISH_DIV"
+        if not price_up and obv_up:
+            return "BULLISH_DIV"
+        return "NONE"
 
     # ------------------------------------------------------------------
     # Logging

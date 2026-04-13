@@ -98,6 +98,9 @@ class ClosedTrade:
     # ファンディングレート (記録のみ。フィルター未使用)
     funding_rate: float | None = None  # %表記
 
+    # OBV ダイバージェンス (記録のみ。フィルター未使用)
+    obv_divergence: str | None = None  # BEARISH_DIV / BULLISH_DIV / NONE
+
 
 def _load_closed(path: Path) -> list[ClosedTrade]:
     if not path.exists():
@@ -139,6 +142,7 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
                 spread_pct=entry.get("spread_pct"),
                 entry_variants=entry.get("entry_variants"),
                 funding_rate=f_dict.get("funding_rate"),
+                obv_divergence=f_dict.get("obv_divergence"),
             )
         )
     return closed
@@ -813,6 +817,44 @@ def _section_funding_rate(closed: list[ClosedTrade]) -> str:
     return "\n".join(lines)
 
 
+def _section_obv_divergence(closed: list[ClosedTrade]) -> str:
+    """OBV ダイバージェンス別の勝率比較。"""
+    with_obv = [
+        t for t in closed
+        if getattr(t, "obv_divergence", None) is not None
+    ]
+
+    lines = ["## 16. OBV divergence analysis", ""]
+
+    if len(with_obv) < 5:
+        lines += [
+            f"OBV ダイバージェンスデータ: {len(with_obv)} / {len(closed)} 件",
+            "",
+            "*(データ蓄積中。十分なサンプルが集まると自動的に分析が表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    lines += [
+        f"OBV ダイバージェンスデータ: {len(with_obv)} / {len(closed)} 件",
+        "",
+        "**考え方**: BEARISH_DIV (価格↑ OBV↓) はショートの強い根拠。",
+        "BEARISH_DIV の勝率が高ければ将来フィルターとして有効化する。",
+        "",
+        TABLE_HEADER,
+    ]
+
+    for label in ("BEARISH_DIV", "BULLISH_DIV", "NONE"):
+        subset = [t for t in with_obv if t.obv_divergence == label]
+        if not subset:
+            continue
+        lines.append(_row(label, _compute_stats(subset)))
+
+    lines.append(_row("全件 (OBV あり)", _compute_stats(with_obv)))
+    lines.append("")
+    return "\n".join(lines)
+
+
 # ---------------------------------------------------------------------------
 # Top-level report builder
 # ---------------------------------------------------------------------------
@@ -869,6 +911,7 @@ def generate_report(
             _section_distribution(closed),
             _section_recommendation(closed),
             _section_funding_rate(closed),
+            _section_obv_divergence(closed),
         ]
         body = [
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",
