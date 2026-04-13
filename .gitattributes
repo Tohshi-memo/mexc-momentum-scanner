@@ -1,0 +1,4 @@
+# 自動生成ファイルはマージ競合させず、常に最新版を使う
+# (GitHub Actions と手動実行が同時に書き込んでも壊れないように)
+data/experiment_report.md merge=ours
+data/portfolio_report.md merge=ours
