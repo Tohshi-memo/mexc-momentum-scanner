@@ -298,7 +298,7 @@ def _section_rsi_sweep(closed: list[ClosedTrade]) -> str:
     all_negative = all(_compute_stats(subsets[th]).expectancy < 0 for th in thresholds)
 
     note = (
-        f"RSI 閾値を変えても全て期待値マイナス。RSI 単独ではショートの判断根拠として不十分。"
+        f"RSI 閾値を変えても全て期待値マイナス。RSI 単独では判断根拠として不十分。"
         if all_negative else
         f"RSI ≥ {best_th:.0f} が最も期待値が高い ({best.expectancy:+.2f}%)。"
     )
@@ -925,8 +925,8 @@ def _section_funding_rate(closed: list[ClosedTrade]) -> str:
     lines += [
         f"ファンディングレートデータ: {len(with_fr)} / {len(closed)} 件",
         "",
-        "**考え方**: 正値(+) = ロングがショートに支払う → ロング過熱 → ショート有利。",
-        "高いほど反転圧力が強い可能性。",
+        "**考え方**: 正値(+) = ロングがショートに支払う → ロング過熱。",
+        "ショート戦略では FR+ が有利 (反転圧力)。ロング戦略では FR- が有利 (ショートスクイーズ圧力)。",
         "",
         TABLE_HEADER,
     ]
@@ -987,8 +987,8 @@ def _section_obv_divergence(closed: list[ClosedTrade]) -> str:
     lines += [
         f"OBV ダイバージェンスデータ: {len(with_obv)} / {len(closed)} 件",
         "",
-        "**考え方**: BEARISH_DIV (価格↑ OBV↓) はショートの強い根拠。",
-        "BEARISH_DIV の勝率が高ければ将来フィルターとして有効化する。",
+        "**考え方**: BEARISH_DIV (価格↑ OBV↓) = 出来高が伴わない上昇 → 反転リスク大。",
+        "ショートでは有力根拠。ロングでは BULLISH_DIV (価格↓ OBV↑) が有利。",
         "",
         TABLE_HEADER,
     ]
@@ -1031,7 +1031,7 @@ def _section_open_interest(closed: list[ClosedTrade]) -> str:
         lines += [
             f"### OI 変化率 (直近1h) — {len(with_oic)} 件",
             "",
-            "**考え方**: 価格↑ OI↑ = 新規ロング参入 → 過熱 → 反転リスク大。",
+            "**考え方**: 価格↑ OI↑ = 新規ポジション参入 → 過熱。OI↓ = ポジション清算 → 反転弱まり。",
             "",
             TABLE_HEADER,
         ]
@@ -1056,7 +1056,7 @@ def _section_open_interest(closed: list[ClosedTrade]) -> str:
         lines += [
             f"### L/S 比率 — {len(with_ls)} 件",
             "",
-            "**考え方**: L/S > 1.5 = ロング過多 → 清算リスク高 → ショート有利。",
+            "**考え方**: L/S > 1.5 = ロング過多 → 清算リスク高。L/S < 1.0 = ショート過多 → ショートスクイーズリスク。",
             "",
             TABLE_HEADER,
         ]
@@ -1101,7 +1101,7 @@ def _section_price_action(closed: list[ClosedTrade]) -> str:
         lines += [
             f"### 上ヒゲ比率 (1h直前完成足) — {len(with_wick)} 件",
             "",
-            "**考え方**: 上ヒゲが長い (比率高い) ほど売り圧力あり → ショートに有利。",
+            "**考え方**: 上ヒゲが長い = 売り圧力あり。ショートには追い風、ロングには逆風。",
             "",
             TABLE_HEADER,
         ]
@@ -1123,7 +1123,7 @@ def _section_price_action(closed: list[ClosedTrade]) -> str:
         lines += [
             f"### 連続陽線数 (1h) — {len(with_g1h)} 件",
             "",
-            "**考え方**: 多いほど一方的な上昇 = 過熱感。反転確率が高い可能性。",
+            "**考え方**: 多いほど一方的な上昇 = 過熱感。ショートには反転根拠、ロングにはモメンタム継続の根拠。",
             "",
             TABLE_HEADER,
         ]
@@ -1334,7 +1334,7 @@ def _section_bb_width(closed: list[ClosedTrade]) -> str:
         lines += [
             f"### 20MA 乖離率% — {len(with_ma20)} 件",
             "",
-            "**考え方**: 正値 = 上方乖離 (過熱)。大きいほど平均回帰リスク大 = ショート有利。",
+            "**考え方**: 正値 = 上方乖離 (過熱)。大きいほど平均回帰リスク大。ショートでは有利、ロングでは高値掴みリスク。",
             "",
             TABLE_HEADER,
         ]
@@ -1354,7 +1354,7 @@ def _section_bb_width(closed: list[ClosedTrade]) -> str:
         lines += [
             f"### ローソク足実体比率 — {len(with_body)} 件",
             "",
-            "**考え方**: 実体が大きい = 方向性が明確。ショートの根拠として強い。",
+            "**考え方**: 実体が大きい = 方向性が明確な急騰。反転でショート有利か、継続でロング有利かはデータで判断。",
             "",
             TABLE_HEADER,
         ]
@@ -1390,8 +1390,8 @@ def _section_rsi_15m(closed: list[ClosedTrade]) -> str:
     lines += [
         f"15m RSI データ: {len(with_r15)} / {len(closed)} 件",
         "",
-        "**考え方**: 15m も過熱 (高 RSI) = 超短期でも売られすぎ警戒 → ショート有利。",
-        "1h 過熱 + 15m 過熱の「ダブル過熱」がより強いシグナルになるか確認。",
+        "**考え方**: 15m RSI が高い = 超短期でも過熱。ショートでは反転根拠、ロングでは高値掴みリスク。",
+        "1h + 15m の「ダブル過熱」がより強いシグナルになるか確認。",
         "",
         TABLE_HEADER,
     ]
@@ -1445,9 +1445,8 @@ def _section_daily_direction(closed: list[ClosedTrade]) -> str:
     lines += [
         f"日足方向データ: {len(with_dd)} / {len(closed)} 件",
         "",
-        "**考え方**: 急騰が日足上昇トレンド中に起きた場合 (GREEN) は ",
-        "上昇が継続しやすくショートが不利かもしれない。",
-        "逆に日足が赤 (RED) なら反転信頼度が高い可能性。",
+        "**考え方**: GREEN (日足陽線) = 上昇トレンド中。ロングには順張りで有利、ショートには逆張りで不利の可能性。",
+        "RED (日足陰線) = 下降中の急騰。ショートには反転期待で有利、ロングには逆行リスク。",
         "",
         TABLE_HEADER,
     ]
@@ -1528,6 +1527,10 @@ def generate_report(
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",
             "expectancy = 1トレードあたりの平均 PnL (%)。",
             "PnL はショート/ロングそれぞれの方向で計算済み。**+ が利益**, **- が損失**。",
+            "",
+            "> **セクション構成**: セクション 1〜11, 13〜21 は MARKET ショート (急騰直後の空売り) の成績を基準に分析。",
+            "> セクション 12 は全エントリー戦略 (ショート/ロング両方) の仮想成績を比較。",
+            "> セクション 22 は同一イベントで LONG vs SHORT どちらが有利だったかを直接比較。",
             "",
             "---",
             "",
