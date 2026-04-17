@@ -240,11 +240,20 @@ def _filter(
 # Markdown helpers
 # ---------------------------------------------------------------------------
 
+def _n_mark(n: int) -> str:
+    """n件数に信頼度マーカーを付加。n<30 は参考値として警告。"""
+    if n == 0:
+        return "0"
+    if n < 30:
+        return f"{n}⚠️"
+    return str(n)
+
+
 def _row(label: str, s: Stats) -> str:
     if s.n == 0:
         return f"| {label} | 0 | – | – | – | – | – | – | – |"
     return (
-        f"| {label} | {s.n} | {s.wins}/{s.losses}/{s.expired} | "
+        f"| {label} | {_n_mark(s.n)} | {s.wins}/{s.losses}/{s.expired} | "
         f"{s.win_rate:.1f}% | {s.avg_win:+.2f}% | {s.avg_loss:+.2f}% | "
         f"{s.expectancy:+.2f}% | {s.total_pnl:+.1f}% | {s.median_hold_h:.1f}h |"
     )
@@ -259,6 +268,150 @@ TABLE_HEADER = (
 # ---------------------------------------------------------------------------
 # Section builders
 # ---------------------------------------------------------------------------
+
+def _compute_strategy_ev(
+    trades: list[ClosedTrade],
+) -> dict[str, dict]:
+    """各戦略の (filled, total, avg_pnl, fill_rate, effective_ev) を集計。
+
+    Top 5 サマリーと重複ロジックを避けるための共通関数。
+    """
+    data: dict[str, dict] = {}
+    for t in trades:
+        if not t.entry_variants:
+            continue
+        for v in t.entry_variants:
+            s = v.get("strategy", "?")
+            if s not in data:
+                data[s] = {"total": 0, "filled": 0, "pnls": []}
+            d = data[s]
+            d["total"] += 1
+            if v.get("filled"):
+                d["filled"] += 1
+                pnl = v.get("pnl_pct")
+                if pnl is not None:
+                    d["pnls"].append(float(pnl))
+
+    for s, d in data.items():
+        if d["pnls"]:
+            d["avg_pnl"] = statistics.mean(d["pnls"])
+        else:
+            d["avg_pnl"] = None
+        d["fill_rate"] = d["filled"] / d["total"] if d["total"] > 0 else 0
+        if d["avg_pnl"] is not None:
+            d["effective_ev"] = d["fill_rate"] * d["avg_pnl"]
+        else:
+            d["effective_ev"] = None
+    return data
+
+
+def _section_summary(closed: list[ClosedTrade]) -> str:
+    """レポート冒頭の意思決定サマリー。
+
+    全期間 vs 直近20件で各戦略の実質期待値トップ5を比較。
+    トレンド矢印でレジーム変化を即座に把握できる。
+    """
+    lines = ["## 0. 意思決定サマリー (今使える戦略トップ5)", ""]
+
+    if len(closed) < 5:
+        lines += [
+            "*(データ蓄積中。5件以上で自動的にサマリーが表示されます)*",
+            "",
+        ]
+        return "\n".join(lines)
+
+    all_stats    = _compute_strategy_ev(closed)
+    recent_trades = closed[-20:] if len(closed) >= 20 else closed
+    recent_stats = _compute_strategy_ev(recent_trades)
+
+    # 全期間でランキング
+    all_ranked = sorted(
+        [(s, d) for s, d in all_stats.items() if d["effective_ev"] is not None and d["filled"] >= 3],
+        key=lambda x: x[1]["effective_ev"],
+        reverse=True,
+    )
+    # 直近でランキング
+    recent_ranked = sorted(
+        [(s, d) for s, d in recent_stats.items() if d["effective_ev"] is not None and d["filled"] >= 2],
+        key=lambda x: x[1]["effective_ev"],
+        reverse=True,
+    )
+
+    # SHORT / LONG に分ける
+    def _is_long(name: str) -> bool:
+        return name.endswith("_LONG")
+
+    all_short  = [x for x in all_ranked if not _is_long(x[0])][:5]
+    all_long   = [x for x in all_ranked if _is_long(x[0])][:5]
+    rec_short  = [x for x in recent_ranked if not _is_long(x[0])][:5]
+    rec_long   = [x for x in recent_ranked if _is_long(x[0])][:5]
+
+    def _trend(strat: str, all_d: dict) -> str:
+        """全期間 vs 直近でのトレンド矢印。"""
+        r = recent_stats.get(strat)
+        if r is None or r["effective_ev"] is None or all_d["effective_ev"] is None:
+            return "–"
+        diff = r["effective_ev"] - all_d["effective_ev"]
+        if abs(diff) < 0.1:
+            return f"✅ 安定 ({diff:+.2f})"
+        if diff > 0:
+            return f"📈 改善 ({diff:+.2f})"
+        return f"⚠️ 悪化 ({diff:+.2f})"
+
+    def _build_table(ranked: list, label: str, period: str) -> list[str]:
+        """n<30 マーカー付きテーブルを生成。"""
+        if not ranked:
+            return [f"### {label} ({period})", "", "*(該当戦略なし)*", ""]
+        rows = [
+            f"### {label} ({period})",
+            "",
+            "| # | strategy | filled/total | avg PnL | 実質期待値 | トレンド (直近20件 − 全期間) |",
+            "|---|----------|-------------|---------|-----------|----------------------------|",
+        ]
+        for i, (strat, d) in enumerate(ranked, 1):
+            filled_str = f"{d['filled']}/{d['total']}"
+            # filled が少ない場合は参考値マーカー
+            if d["filled"] < 30:
+                filled_str += "⚠️"
+            trend = _trend(strat, d) if period == "全期間" else "–"
+            rows.append(
+                f"| {i} | {strat} | {filled_str} "
+                f"| {d['avg_pnl']:+.2f}% | **{d['effective_ev']:+.2f}%** | {trend} |"
+            )
+        rows.append("")
+        return rows
+
+    lines += [
+        "**読み方**: 実質期待値 = fill率 × avg PnL (未約定の機会損失を加味)。",
+        "トレンドは「直近20件の実質期待値 − 全期間」の差分。**📈 改善 / ⚠️ 悪化 / ✅ 安定**。",
+        "⚠️ マーク = filled 件数 < 30 (統計的参考値)。",
+        "",
+        "---",
+        "",
+    ]
+    lines += _build_table(all_short, "🔽 SHORT トップ5", "全期間")
+    lines += _build_table(all_long,  "🔼 LONG トップ5",  "全期間")
+
+    # 直近 20 件のトップ (対照的に見せる)
+    if len(closed) >= 20:
+        lines += ["---", "", "### 直近20件ランキング (今の相場で機能している戦略)", ""]
+        lines += _build_table(rec_short, "🔽 SHORT トップ5", "直近20件")
+        lines += _build_table(rec_long,  "🔼 LONG トップ5",  "直近20件")
+
+    # ドリフトの警告
+    if all_short and rec_short:
+        top_all_short_name = all_short[0][0]
+        top_rec_short_name = rec_short[0][0]
+        if top_all_short_name != top_rec_short_name:
+            lines += [
+                "",
+                f"> **⚠️ トップ戦略が交代**: 全期間 #{1} は `{top_all_short_name}` だが、"
+                f"直近20件 #{1} は `{top_rec_short_name}`。レジーム変化の可能性。",
+                "",
+            ]
+
+    return "\n".join(lines)
+
 
 def _section_baseline(closed: list[ClosedTrade]) -> str:
     strict   = _filter(closed, lambda t: t.confirmed_strict)
@@ -1433,7 +1586,7 @@ def _section_rolling_performance(closed: list[ClosedTrade]) -> str:
         al  = f"{s.avg_loss:+.2f}%" if s.avg_loss  is not None else "–"
         ex  = f"{s.expectancy:+.2f}%" if s.expectancy is not None else "–"
         tp  = f"{s.total_pnl:+.1f}%"  if s.total_pnl  is not None else "–"
-        return f"| {label} | {len(subset)} | {wle} | {wr} | {aw} | {al} | {ex} | {tp} |"
+        return f"| {label} | {_n_mark(len(subset))} | {wle} | {wr} | {aw} | {al} | {ex} | {tp} |"
 
     for w in windows:
         recent = closed[-w:] if len(closed) >= w else closed
@@ -1457,11 +1610,64 @@ def _section_rolling_performance(closed: list[ClosedTrade]) -> str:
                 status = f"⚠️ 悪化傾向 — 直近20件の期待値が全期間より {drift:+.2f}% 低い (要注意)"
             lines += [f"**ドリフト判定**: {status}", ""]
 
+    # シグナル密度分析: 直近20件が何時間で発生したか
+    if len(closed) >= 20:
+        from datetime import datetime as _dt
+        try:
+            last20 = closed[-20:]
+            first_ts = _dt.fromisoformat(last20[0].detected_at)
+            last_ts  = _dt.fromisoformat(last20[-1].detected_at)
+            span_hours = (last_ts - first_ts).total_seconds() / 3600
+            if span_hours > 0:
+                density = 20 / span_hours  # 件/時間
+
+                if span_hours < 24:
+                    density_label = (
+                        f"💥 **急騰集中期**: 直近20件が **{span_hours:.1f}時間** で発生 "
+                        f"({density:.2f} 件/h)"
+                    )
+                    density_note = (
+                        "→ 一つの相場イベントに統計が偏っている可能性。"
+                        "期待値プラスでも過信せず、異なる相場環境でも同じ結果が出るか確認。"
+                    )
+                elif span_hours < 72:
+                    density_label = (
+                        f"📊 **通常密度**: 直近20件が **{span_hours/24:.1f}日間** で発生 "
+                        f"({density:.2f} 件/h)"
+                    )
+                    density_note = "→ 複数の相場環境を跨いでおり統計として比較的健全。"
+                elif span_hours < 168:  # 1週間
+                    density_label = (
+                        f"🐌 **低密度**: 直近20件が **{span_hours/24:.1f}日間** で発生 "
+                        f"({density:.3f} 件/h)"
+                    )
+                    density_note = "→ シグナル発生頻度が低く、相場が穏やか。統計は安定しているが機会は少ない。"
+                else:
+                    density_label = (
+                        f"🧊 **極低密度**: 直近20件が **{span_hours/24:.1f}日間** (>1週間) で発生"
+                    )
+                    density_note = (
+                        "→ 相場が静穏でシグナルがほぼない。統計は古い可能性あり。"
+                        "もし直近急にシグナルが増えたら、データは過去のレジームに偏っているとみなす。"
+                    )
+
+                lines += [
+                    "**シグナル密度**:",
+                    "",
+                    density_label,
+                    "",
+                    density_note,
+                    "",
+                ]
+        except (ValueError, AttributeError):
+            pass
+
     lines += [
         "**判断目安**:",
         "- 直近20件の期待値が全期間より **-1% 以上** 悪化 → 相場環境の変化を疑う",
         "- 直近20件の勝率が **20% 以下** → フィルター見直しを検討",
         "- 直近50件と直近20件が乖離 → 特定期間の異常か継続的変化かを判断",
+        "- シグナル密度が **急騰集中期** (24h未満で20件) → 統計に過信しない、偏りを疑う",
     ]
 
     return "\n".join(lines)
@@ -1685,6 +1891,7 @@ def generate_report(
         text = "\n".join(header + body) + "\n"
     else:
         sections = [
+            _section_summary(closed),
             _section_baseline(closed),
             _section_rsi_sweep(closed),
             _section_rsi_4h_sweep(closed),
@@ -1713,6 +1920,9 @@ def generate_report(
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",
             "expectancy = 1トレードあたりの平均 PnL (%)。",
             "PnL はショート/ロングそれぞれの方向で計算済み。**+ が利益**, **- が損失**。",
+            "",
+            "**信頼度マーカー**: n 列または filled 列の `⚠️` は **サンプル数 < 30** の意味。",
+            "統計的には参考値で、本番フィルター採用の判断材料にはまだ弱い。n ≥ 30 を採用基準とする。",
             "",
             "**Win/Loss の定義**:",
             "",
