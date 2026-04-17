@@ -149,7 +149,9 @@ class ExperimentTracker:
         exp.save()
     """
 
-    MAX_CLOSED_RECORDS = 1000  # 古い記録は自動的に切り捨て
+    # 保持件数。207件/日ペースで 5000 件 = 約24日分 = 複数レジームを跨ぐ統計が取れる。
+    # 投資判断には最低2〜4週間のデータが必要なので 5000 に設定。
+    MAX_CLOSED_RECORDS = 5000  # 古い記録は自動的に切り捨て
 
     def __init__(self, file_path: Path = EXPERIMENT_FILE) -> None:
         self._file = file_path
