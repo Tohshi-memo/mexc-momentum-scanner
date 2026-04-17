@@ -278,6 +278,8 @@ def _section_baseline(closed: list[ClosedTrade]) -> str:
     lines = [
         "## 1. Baseline",
         "",
+        "> **Win/Loss**: 検出後8h追跡。TP到達 = Win、SL到達 = Loss、8h経過で決着なし = Expired。win% = TP_HIT件数 / 全件数 (Expired含む)。",
+        "",
         TABLE_HEADER,
         _row("ALL candidates",      _compute_stats(closed)),
         _row("STRICT (current)",    s_strict),
@@ -308,6 +310,8 @@ def _section_rsi_sweep(closed: list[ClosedTrade]) -> str:
         "",
         f"現行 STRICT は RSI ≥ 70。閾値を変えた場合の仮想成績。{note}",
         "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。閾値は対象絞り込みのみで判定方法は変わらない。",
+        "",
         TABLE_HEADER,
     ]
     for th in thresholds:
@@ -334,6 +338,8 @@ def _section_rsi_4h_sweep(closed: list[ClosedTrade]) -> str:
 
     lines = [
         "## 3. RSI(4h) direction analysis",
+        "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。4h RSI 値は絞り込み条件のみ。",
         "",
         f"> **現在の結論**: {better_dir} が有利 (最良 expectancy {better_exp:+.2f}%)。",
         "> 4h RSI が低い = まだ過熱しきっていない新鮮な急騰。",
@@ -376,6 +382,8 @@ def _section_bb(closed: list[ClosedTrade]) -> str:
         "",
         "現行 STRICT は price > BB upper(2σ) 必須。",
         "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。BB条件は絞り込みのみ。",
+        "",
         TABLE_HEADER,
         _row("BB break required",  _compute_stats(bb_break)),
         _row("BB break NOT required (all)", _compute_stats(closed)),
@@ -414,6 +422,8 @@ def _section_volume(closed: list[ClosedTrade]) -> str:
         "",
         f"現行 STRICT は『RISING を除外』(疲弊兆候のみショート)。{verdict}",
         "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。出来高トレンドは絞り込み条件のみ。",
+        "",
         TABLE_HEADER,
         _row("ALL volume trends",          _compute_stats(closed)),
         _row("NOT RISING (current)",       s_not_rising),
@@ -437,6 +447,8 @@ def _section_relative_strength(closed: list[ClosedTrade]) -> str:
         "",
         "現行スキャナーは alt_1h - btc_1h ≥ 5.0% でフィルター。",
         "閾値を変えた場合の仮想成績。",
+        "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。相対強度は絞り込み条件のみ。",
         "",
     ]
     if same_as_all:
@@ -479,6 +491,8 @@ def _section_atr_zone(closed: list[ClosedTrade]) -> str:
         "",
         f"ATR% = ATR / price × 100。ボラティリティの大きさ別の成績。{note}",
         "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。ATRゾーンは絞り込み条件のみ。",
+        "",
         TABLE_HEADER,
     ]
     for label, s in zone_stats:
@@ -504,6 +518,8 @@ def _section_mfe_mae(closed: list[ClosedTrade]) -> str:
         "MFE (Maximum Favorable Excursion) = エントリー後の最大含み益 (%)。",
         "MAE (Maximum Adverse Excursion) = エントリー後の最大含み損 (%)。",
         "ショート: 価格下落が MFE+。ロング: 価格上昇が MFE+。いずれも + が有利方向。",
+        "",
+        "> **グループ分け**: TP_HIT = 8h以内にTPライン到達した勝ちトレード。SL_HIT = SLライン到達した負けトレード。ALLはExpired含む全件。",
         "",
         "| group | n | MFE (avg) | MFE (max) | MAE (avg) | MAE (worst) |",
         "|-------|---|-----------|-----------|-----------|-------------|",
@@ -536,6 +552,8 @@ def _section_regime(closed: list[ClosedTrade]) -> str:
         "",
         "BTC 1h change によるレジーム別の成績。",
         "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。レジームは絞り込み条件のみ。",
+        "",
         TABLE_HEADER,
     ]
     for r in regimes:
@@ -558,6 +576,8 @@ def _section_fundamental(closed: list[ClosedTrade]) -> str:
         "",
         "ファンダメンタル分析は confirmed シグナルのみに実行される。",
         "UNKNOWN = ファンダ未取得 (rejected 候補)。",
+        "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。conviction/catalyst は絞り込み条件のみ。",
         "",
         "### By short conviction",
         "",
@@ -640,6 +660,8 @@ def _section_combined(closed: list[ClosedTrade]) -> str:
         "",
         "各フィルター組み合わせの仮想成績。データが示す有望な方向を中心に評価。",
         best_note,
+        "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。フィルター組み合わせは絞り込み条件のみ。",
         "",
         TABLE_HEADER,
     ]
@@ -753,6 +775,12 @@ def _section_entry_strategy(closed: list[ClosedTrade]) -> str:
         "各エントリー戦略の仮想成績。指値は価格到達で約定 (filled)、",
         "到達しなければ unfilled (機会損失)。",
         "",
+        "> **Win/Loss (このセクションのみ異なる)**: 各バリアントが個別に TP/SL 到達を判定。",
+        "> win% = filled 件数のうち pnl_pct > 0 の割合 (未約定 unfilled は除外)。",
+        "> TP/SL 列は outcome ラベル (TP_HIT/SL_HIT) の件数カウント。",
+        "> TP_HIT: SHORT は価格がTP価格まで下落、LONG は価格がTP価格まで上昇。",
+        "> SL_HIT: SHORT は価格がSL価格まで上昇、LONG は価格がSL価格まで下落。",
+        "",
         "**ショート戦略** (急騰後の下落を狙う):",
         "",
         "| 戦略 | エントリー価格 | 考え方 |",
@@ -823,6 +851,8 @@ def _section_distribution(closed: list[ClosedTrade]) -> str:
         "",
         "TP_HIT と SL_HIT の指標平均。乖離が大きい指標が予測力を持つ可能性あり。",
         "",
+        "> **グループ分け**: wins = TP_HIT (8h以内にTPライン到達)、losses = SL_HIT (SLライン到達)。Expired は除外。",
+        "",
         "| indicator | wins (avg) | losses (avg) | delta |",
         "|-----------|------------|--------------|-------|",
     ]
@@ -865,6 +895,8 @@ def _section_recommendation(closed: list[ClosedTrade]) -> str:
 
     lines = [
         "## 14. Filter recommendation",
+        "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。フィルター条件は絞り込みのみ。",
         "",
         "### 現行 STRICT v1 (適用中)",
         "",
@@ -924,7 +956,9 @@ def _section_funding_rate(closed: list[ClosedTrade]) -> str:
         if getattr(t, "funding_rate", None) is not None
     ]
 
-    lines = ["## 15. Funding rate analysis", ""]
+    lines = ["## 15. Funding rate analysis", "",
+             "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。ファンディングレートは絞り込み条件のみ。",
+             ""]
 
     if len(with_fr) < 5:
         lines += [
@@ -986,7 +1020,9 @@ def _section_obv_divergence(closed: list[ClosedTrade]) -> str:
         if getattr(t, "obv_divergence", None) is not None
     ]
 
-    lines = ["## 16. OBV divergence analysis", ""]
+    lines = ["## 16. OBV divergence analysis", "",
+             "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。OBV状態は絞り込み条件のみ。",
+             ""]
 
     if len(with_obv) < 5:
         lines += [
@@ -1022,7 +1058,9 @@ def _section_open_interest(closed: list[ClosedTrade]) -> str:
     with_oi = [t for t in closed if getattr(t, "open_interest_usd", None) is not None]
     with_ls = [t for t in closed if getattr(t, "long_short_ratio", None) is not None]
 
-    lines = ["## 17. Open Interest & Long/Short ratio", ""]
+    lines = ["## 17. Open Interest & Long/Short ratio", "",
+             "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。OI/L/S比率は絞り込み条件のみ。",
+             ""]
 
     if len(with_oi) < 5 and len(with_ls) < 5:
         n_oi = len(with_oi)
@@ -1095,7 +1133,9 @@ def _section_price_action(closed: list[ClosedTrade]) -> str:
     with_g1h  = [t for t in closed if getattr(t, "consecutive_green_1h", None) is not None]
     with_g4h  = [t for t in closed if getattr(t, "consecutive_green_4h", None) is not None]
 
-    lines = ["## 18. Price action quality", ""]
+    lines = ["## 18. Price action quality", "",
+             "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。価格行動指標は絞り込み条件のみ。",
+             ""]
 
     has_data = len(with_wick) >= 5 or len(with_g1h) >= 5
 
@@ -1183,7 +1223,11 @@ def _section_direction_comparison(closed: list[ClosedTrade]) -> str:
         and any(v.get("strategy") == "MARKET_LONG" for v in t.entry_variants)
     )
 
-    lines = ["## 22. Long vs Short direction comparison", ""]
+    lines = ["## 22. Long vs Short direction comparison", "",
+             "> **Win/Loss (このセクションもセクション12と同じ variant 判定)**: バリアントごとに TP/SL 到達を個別判定。",
+             "> win% = filled 件数のうち pnl_pct > 0 の割合 (未約定 unfilled は除外)。",
+             "> TP/SL 列は outcome ラベルの件数カウント。LONG と SHORT は同じイベントでも判定方向が逆になる。",
+             ""]
 
     if long_count < 5:
         lines += [
@@ -1367,6 +1411,9 @@ def _section_rolling_performance(closed: list[ClosedTrade]) -> str:
         "直近N件の成績と全期間平均を比較することで、相場環境の変化を検出する。",
         "直近の期待値が全期間を大きく下回るようになったら、フィルター見直しのサイン。",
         "",
+        "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。集計対象はMARKETショート相当の成績 (親トレード outcome)。",
+        "> 期間は検出順の直近N件でサブセットを取るのみで、判定方法は変わらない。",
+        "",
     ]
 
     header = (
@@ -1426,7 +1473,9 @@ def _section_bb_width(closed: list[ClosedTrade]) -> str:
     with_ma20 = [t for t in closed if getattr(t, "ma20_deviation_pct", None) is not None]
     with_body = [t for t in closed if getattr(t, "candle_body_ratio",  None) is not None]
 
-    lines = ["## 19. BB width / MA20 deviation / candle body ratio", ""]
+    lines = ["## 19. BB width / MA20 deviation / candle body ratio", "",
+             "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。BB幅/MA20乖離/実体比率は絞り込み条件のみ。",
+             ""]
 
     has_data = any(len(x) >= 5 for x in [with_bbw, with_ma20, with_body])
     if not has_data:
@@ -1508,7 +1557,9 @@ def _section_rsi_15m(closed: list[ClosedTrade]) -> str:
     """15分足 RSI 別の勝率比較。"""
     with_r15 = [t for t in closed if getattr(t, "rsi_15m", None) is not None]
 
-    lines = ["## 20. 15-minute RSI analysis", ""]
+    lines = ["## 20. 15-minute RSI analysis", "",
+             "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。15m RSIは絞り込み条件のみ。",
+             ""]
 
     if len(with_r15) < 5:
         lines += [
@@ -1563,7 +1614,9 @@ def _section_daily_direction(closed: list[ClosedTrade]) -> str:
     """日足方向別の勝率比較。"""
     with_dd = [t for t in closed if getattr(t, "daily_direction", None) is not None]
 
-    lines = ["## 21. Daily candle direction", ""]
+    lines = ["## 21. Daily candle direction", "",
+             "> **Win/Loss**: 親トレード共通 (TP到達=Win / SL到達=Loss / 8h経過=Expired)。日足方向は絞り込み条件のみ。",
+             ""]
 
     if len(with_dd) < 5:
         lines += [
@@ -1660,6 +1713,18 @@ def generate_report(
             "**凡例**: W/L/E = TP_HIT / SL_HIT / EXPIRED. ",
             "expectancy = 1トレードあたりの平均 PnL (%)。",
             "PnL はショート/ロングそれぞれの方向で計算済み。**+ が利益**, **- が損失**。",
+            "",
+            "**Win/Loss の定義**:",
+            "",
+            "| セクション | Win (勝ち) | Loss (負け) | Expired | win% の分母 |",
+            "|-----------|-----------|------------|---------|------------|",
+            "| 1〜11, 13〜14, 15〜21, 23 | TP到達 (SHORT:価格↓ / LONG:価格↑) | SL到達 (逆方向) | 8h経過で決着なし | 全件数 (Expired 含む) |",
+            "| 12 (エントリー戦略) | filled後 pnl > 0 | filled後 pnl < 0 | unfilled (約定せず) | filled件数のみ |",
+            "| 22 (LONG vs SHORT) | filled後 pnl > 0 | filled後 pnl < 0 | unfilled (約定せず) | filled件数のみ |",
+            "",
+            "> **補足**: TP/SL 価格は各トレードのATRや設定から算出される固定価格。",
+            "> 8時間の追跡中に5分足の high/low がTP/SL価格を超えた瞬間にoutcomeが確定する。",
+            "> Expired は 8h 経過時点の終値で PnL を確定 (0% ではなく実際の含み損益)。",
             "",
             "> **セクション構成**: セクション 1〜11, 13〜21 は MARKET ショート (急騰直後の空売り) の成績を基準に分析。",
             "> セクション 12 は全エントリー戦略 (ショート/ロング両方) の仮想成績を比較。",
