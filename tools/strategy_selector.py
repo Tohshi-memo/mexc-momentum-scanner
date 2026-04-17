@@ -17,13 +17,13 @@ filled trades から実質期待値 (fill率 × avg PnL) を計算し、LONG/SHO
             "overall_filled": 386,
             "overall_avg_pnl": 0.92,
             "overall_expectancy": 0.36,
-            "alive": True,                    # 期待値プラスなら採用
+            "alive": True,
         },
         "long": {...},
         "meta": {"total_closed": 1043, "recent_window": 20, "min_filled": 5},
     }
 
-alive=False なら該当方向のキルスイッチ ON（その方向では発注しない）。
+alive=False なら該当方向のキルスイッチ ON（その方向では paper 発注しない）。
 """
 from __future__ import annotations
 
@@ -35,8 +35,8 @@ from typing import Any
 
 EXPERIMENT_FILE = Path("data/experiments.json")
 
-RECENT_WINDOW = 20   # 直近 N クローズ済みトレードを相場感の指標にする
-MIN_FILLED    = 5    # 直近 window で最低これだけ filled が必要 (ノイズ除去)
+RECENT_WINDOW = 20
+MIN_FILLED    = 5
 
 
 @dataclass
@@ -68,8 +68,11 @@ class VariantStats:
 def _load() -> list[dict[str, Any]]:
     if not EXPERIMENT_FILE.exists():
         return []
-    with EXPERIMENT_FILE.open(encoding="utf-8") as f:
-        data = json.load(f)
+    try:
+        with EXPERIMENT_FILE.open(encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        return []
     closed = data.get("closed", [])
     return closed if isinstance(closed, list) else []
 
@@ -123,9 +126,9 @@ def _compute_stats(
         r_total  = recent_total.get(strategy, 0)
         if r_filled < MIN_FILLED or r_total == 0:
             continue
-        r_avg   = sum(recent_list) / r_filled
-        r_fill  = r_filled / r_total
-        r_exp   = r_fill * r_avg
+        r_avg  = sum(recent_list) / r_filled
+        r_fill = r_filled / r_total
+        r_exp  = r_fill * r_avg
 
         o_list   = overall_pnls.get(strategy, [])
         o_filled = len(o_list)
@@ -175,11 +178,39 @@ def select_leaders() -> dict[str, Any]:
         "short": _pack(short_stats),
         "long":  _pack(long_stats),
         "meta": {
-            "total_closed": len(closed),
+            "total_closed":  len(closed),
             "recent_window": RECENT_WINDOW,
             "min_filled":    MIN_FILLED,
         },
     }
+
+
+def strategy_offset_pct(strategy: str) -> float:
+    """戦略名から detection_price に対する指値オフセット (%) を推定する。
+
+    experiments.py の _build_entry_variants と対応:
+        MARKET / ASK / MARKET_LONG / ASK_LONG → 0% (成行想定)
+        LIMIT_NPCT           → +N% (SHORT: 吹き上げ待ち)
+        LIMIT_NPCT_LONG      → -N% (LONG:  押し目待ち)
+        BB3S / ATR / FIB は再現困難なため 0 (detection 成行扱い)
+    """
+    if not strategy:
+        return 0.0
+    if strategy in ("MARKET", "ASK", "MARKET_LONG", "ASK_LONG"):
+        return 0.0
+    if strategy.startswith("LIMIT_") and strategy.endswith("PCT_LONG"):
+        n = strategy.removeprefix("LIMIT_").removesuffix("PCT_LONG")
+        try:
+            return -float(n)
+        except ValueError:
+            return 0.0
+    if strategy.startswith("LIMIT_") and strategy.endswith("PCT"):
+        n = strategy.removeprefix("LIMIT_").removesuffix("PCT")
+        try:
+            return float(n)
+        except ValueError:
+            return 0.0
+    return 0.0
 
 
 if __name__ == "__main__":
