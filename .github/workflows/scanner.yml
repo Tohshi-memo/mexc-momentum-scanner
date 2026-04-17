@@ -46,7 +46,6 @@ jobs:
       BTC_BEARISH_THRESHOLD:       '-0.5'
       BTC_STAGNANT_THRESHOLD:      '0.2'
       ALT_SURGE_THRESHOLD:         '5.0'
-      # BTC 上昇時でも「乖離した独歩高」を検出するための相対強度閾値
       RELATIVE_STRENGTH_THRESHOLD: '5.0'
       MIN_24H_VOLUME_USDT:         '1000000'
       MAX_OHLCV_CHECKS:            '50'
@@ -76,16 +75,14 @@ jobs:
       CIRCUIT_BREAKER_WINDOW:  '10'
       CIRCUIT_BREAKER_LOSSES:  '5'
 
-      # --- リスク設定 (ATR 無効時のフォールバック) ---
+      # --- リスク設定 ---
       STOP_LOSS_PCT:     '2.0'
       TAKE_PROFIT_PCT:   '4.0'
 
       # --- 追跡設定 ---
       TRACKING_HOURS:    '24'
 
-      # --- フィルター粒度実験 (シャドウトレード) ---
-      # 全候補 (STRICT 通過/外問わず) を仮想追跡し、フィルター変更時の
-      # PnL を後から再評価できるようにする。実トレードには影響しない。
+      # --- フィルター粒度実験 ---
       EXPERIMENT_TRACKING_HOURS: '8'
       EXPERIMENT_MAX_PER_CYCLE:  '20'
 
@@ -97,7 +94,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # tracking.json を push するためトークンを指定
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -112,6 +108,14 @@ jobs:
       - name: Run scanner (single cycle)
         run: python main.py
 
+      # ── 戦略マッチ判定 + bot 向けシグナル書き出し ─────────────────
+      # confirmed (STRICT 通過) 銘柄のうち、現チャンピオン戦略 (LONG/SHORT の
+      # 直近20件で実質期待値プラス) と合致するものだけを
+      # data/latest_signal.json に書き出す。対象なしなら signal_count=0。
+      - name: Select signals to dispatch
+        id: select
+        run: python -m tools.dispatch_signals
+
       - name: Save tracking data to repository
         if: always()
         run: |
@@ -120,6 +124,47 @@ jobs:
           git add data/ --force 2>/dev/null || true
           git diff --staged --quiet || git commit -m "chore: update tracking data [skip ci]"
           git push || true
+
+      # ── bot リポに repository_dispatch を送信 ─────────────────────
+      # BOT_DISPATCH_TOKEN: bot リポの Actions を起動できる fine-grained PAT
+      # (contents:read + actions:write を Mexc-trading-BOT リポに付与)
+      - name: Dispatch to trading bot
+        if: steps.select.outputs.signal_count != '0' && steps.select.outputs.signal_count != ''
+        env:
+          DISPATCH_TOKEN: ${{ secrets.BOT_DISPATCH_TOKEN }}
+        run: |
+          if [ -z "$DISPATCH_TOKEN" ]; then
+            echo "::warning::BOT_DISPATCH_TOKEN not set; skipping dispatch."
+            exit 0
+          fi
+          REPORT_URL="https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/data/experiment_report.md"
+          SIGNAL_URL="https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}/data/latest_signal.json"
+          BODY=$(jq -n \
+            --arg event_type "scanner_signal" \
+            --arg signal_url "$SIGNAL_URL" \
+            --arg report_url "$REPORT_URL" \
+            --arg source_sha "${{ github.sha }}" \
+            --arg source_ref "${{ github.ref_name }}" \
+            --arg run_id     "${{ github.run_id }}" \
+            --argjson count  ${{ steps.select.outputs.signal_count }} \
+            '{
+              event_type: $event_type,
+              client_payload: {
+                signal_url: $signal_url,
+                report_url: $report_url,
+                source_sha: $source_sha,
+                source_ref: $source_ref,
+                scanner_run_id: $run_id,
+                signal_count: $count
+              }
+            }')
+          curl -sSL -X POST \
+            -H "Authorization: Bearer $DISPATCH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/Tohshi-memo/Mexc-trading-BOT/dispatches \
+            --data "$BODY" \
+            --fail-with-body
 
       - name: Upload logs
         if: always()
