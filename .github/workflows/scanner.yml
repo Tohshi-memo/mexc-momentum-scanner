@@ -46,7 +46,6 @@ jobs:
       BTC_BEARISH_THRESHOLD:       '-0.5'
       BTC_STAGNANT_THRESHOLD:      '0.2'
       ALT_SURGE_THRESHOLD:         '5.0'
-      # BTC 上昇時でも「乖離した独歩高」を検出するための相対強度閾値
       RELATIVE_STRENGTH_THRESHOLD: '5.0'
       MIN_24H_VOLUME_USDT:         '1000000'
       MAX_OHLCV_CHECKS:            '50'
@@ -76,18 +75,27 @@ jobs:
       CIRCUIT_BREAKER_WINDOW:  '10'
       CIRCUIT_BREAKER_LOSSES:  '5'
 
-      # --- リスク設定 (ATR 無効時のフォールバック) ---
+      # --- リスク設定 ---
       STOP_LOSS_PCT:     '2.0'
       TAKE_PROFIT_PCT:   '4.0'
 
       # --- 追跡設定 ---
       TRACKING_HOURS:    '24'
 
-      # --- フィルター粒度実験 (シャドウトレード) ---
-      # 全候補 (STRICT 通過/外問わず) を仮想追跡し、フィルター変更時の
-      # PnL を後から再評価できるようにする。実トレードには影響しない。
+      # --- フィルター粒度実験 ---
       EXPERIMENT_TRACKING_HOURS: '8'
       EXPERIMENT_MAX_PER_CYCLE:  '20'
+
+      # --- Paper Trading (ライブ仮想取引) ---
+      # confirmed シグナルのうち、直近 experiments.json のチャンピオン戦略と
+      # 方向が合致するものだけを仮想資金で建てる。paper_state/ に永続化。
+      PAPER_INITIAL_BALANCE: '100'
+      PAPER_RISK_PCT:        '1.0'
+      PAPER_MAX_CONCURRENT:  '3'
+      PAPER_LEVERAGE:        '5'
+      PAPER_FEE_PCT:         '0.04'
+      PAPER_SLIPPAGE_PCT:    '0.05'
+      PAPER_MIN_NOTIONAL:    '5.0'
 
       # --- ログ ---
       LOG_LEVEL: 'INFO'
@@ -97,7 +105,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # tracking.json を push するためトークンを指定
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -118,6 +125,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name  "github-actions[bot]"
           git add data/ --force 2>/dev/null || true
+          git add paper_state/ --force 2>/dev/null || true
           git diff --staged --quiet || git commit -m "chore: update tracking data [skip ci]"
           git push || true
 

@@ -30,10 +30,12 @@ from core.analyzer import TechnicalAnalyzer
 from core.executor import ExecutorFactory, ProposalBuilder
 from core.experiment import ExperimentTracker, FilterSnapshot
 from core.fundamental import FundamentalAnalyzer
+from core.paper_portfolio import PaperPortfolio
 from core.scanner import MarketScanner
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
 from tools.analyze_experiments import generate_report as generate_experiment_report
+from tools.strategy_selector import select_leaders, strategy_offset_pct
 from tools.virtual_portfolio import update_portfolio_report
 from utils.display import (
     console,
@@ -91,6 +93,7 @@ def run_once(
     stats: StatsManager,
     notifier: Notifier,
     experiment_tracker: ExperimentTracker,
+    paper: PaperPortfolio,
     experiment_max_per_cycle: int,
     dry_run: bool,
     cooldown_hours: int,
@@ -129,6 +132,13 @@ def run_once(
         experiment_tracker.update(scanner._client)
     except Exception as e:
         logger.warning("Experiment tracker update failed: %s", e)
+
+    # ── Paper portfolio の mark-to-market ────────────────────────────
+    # 建玉中のポジションの現在価格を更新し、SL/TP/期限切れを確定させる。
+    try:
+        paper.mark_to_market(scanner._client)
+    except Exception as e:
+        logger.warning("Paper portfolio mark-to-market failed: %s", e)
 
     # ── 追跡中銘柄の価格更新 + TP/SL 到達の記録 ──────────────────────
     newly_closed = tracker.update_prices(scanner._client)
@@ -226,6 +236,15 @@ def run_once(
         _finalize_expired(tracker, stats, notifier)
         return
 
+    # ── チャンピオン戦略の選定 (LONG/SHORT 方向 + 戦略バリアント) ────
+    # experiments.json の直近 20 件から、期待値プラスの方向を採用する。
+    # 両方 alive → 期待値高い方 / 片方 alive → そちら / 両方 dead → paper スキップ
+    try:
+        leaders = select_leaders()
+    except Exception as e:
+        logger.warning("strategy_selector failed: %s", e)
+        leaders = {"long": {"alive": False}, "short": {"alive": False}}
+
     # ── Step 4: ファンダ考察 + 追跡登録 + 通知 ───────────────────────
     console.print()
     for result in confirmed:
@@ -306,11 +325,86 @@ def run_once(
                     relative_strength=result.relative_strength_pct,
                 )
 
+            # ── Paper trade: チャンピオン戦略と方向が合致する場合のみ開く ──
+            _try_open_paper(
+                paper=paper,
+                leaders=leaders,
+                symbol=result.symbol,
+                detection_price=result.price,
+                sl_pct=proposal.sl_pct,
+                tp_pct=proposal.tp_pct,
+                market_regime=btc_status.regime,
+                rsi=result.rsi,
+                logger=logger,
+            )
+
         except Exception as e:
             logger.error("Failed to process %s: %s", result.symbol, e)
 
     # ── 期限切れ追跡の処理 ──────────────────────────────────────────
     _finalize_expired(tracker, stats, notifier)
+
+    # ── エクイティスナップショット (サイクル毎の残高推移を保存) ─────
+    try:
+        paper.snapshot_equity()
+    except Exception as e:
+        logger.warning("Paper snapshot_equity failed: %s", e)
+
+
+def _try_open_paper(
+    *,
+    paper: PaperPortfolio,
+    leaders: dict,
+    symbol: str,
+    detection_price: float,
+    sl_pct: float,
+    tp_pct: float,
+    market_regime: str,
+    rsi: float | None,
+    logger: logging.Logger,
+) -> None:
+    """現行チャンピオン戦略に基づき paper portfolio へポジションを開く。
+
+    方向選択:
+        両方 alive   → recent_expectancy の高い方
+        片方 alive   → alive の方
+        両方 dead    → スキップ (キルスイッチ)
+    """
+    long_l  = leaders.get("long",  {}) or {}
+    short_l = leaders.get("short", {}) or {}
+
+    long_alive  = bool(long_l.get("alive") and long_l.get("strategy"))
+    short_alive = bool(short_l.get("alive") and short_l.get("strategy"))
+
+    if not long_alive and not short_alive:
+        logger.info(
+            "paper: skip %s (both long/short leaders dead — kill switch active)",
+            symbol,
+        )
+        return
+
+    if long_alive and short_alive:
+        if float(long_l.get("recent_expectancy", 0.0)) >= \
+           float(short_l.get("recent_expectancy", 0.0)):
+            direction, strategy = "long", long_l["strategy"]
+        else:
+            direction, strategy = "short", short_l["strategy"]
+    elif long_alive:
+        direction, strategy = "long", long_l["strategy"]
+    else:
+        direction, strategy = "short", short_l["strategy"]
+
+    paper.try_open(
+        symbol=symbol,
+        direction=direction,
+        strategy=strategy,
+        detection_price=detection_price,
+        sl_pct=sl_pct,
+        tp_pct=tp_pct,
+        entry_offset_pct=strategy_offset_pct(strategy),
+        market_regime=market_regime,
+        rsi_at_entry=rsi,
+    )
 
 
 def _register_shadow_trades(
@@ -472,6 +566,7 @@ def main() -> None:
     stats                = StatsManager()
     notifier             = Notifier()
     experiment_tracker   = ExperimentTracker()
+    paper                = PaperPortfolio()
 
     cycle: int = 0
 
@@ -481,7 +576,7 @@ def main() -> None:
             run_once(
                 cycle, scanner, analyzer, fundamental_analyzer,
                 builder, executor, tracker, stats, notifier,
-                experiment_tracker, experiment_max_per_cycle,
+                experiment_tracker, paper, experiment_max_per_cycle,
                 dry_run, cooldown_hours, cb_window, cb_loss_threshold,
             )
         except KeyboardInterrupt:
@@ -494,6 +589,7 @@ def main() -> None:
                 tracker.save()
                 stats.save()
                 experiment_tracker.save()
+                paper.save()
             except Exception as e:
                 logger.error("Failed to save data: %s", e)
             # シャドウトレードの集計レポートを再生成
