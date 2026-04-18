@@ -338,7 +338,8 @@ def run_once(
                 )
                 continue
 
-            # 追跡登録
+            # 追跡登録 (どのライブ戦略で発注したかを保存しておき、決済時に
+            # LivePortfolio へ転記する)
             is_new = tracker.add_if_new(
                 symbol=result.symbol,
                 detection_price=result.price,
@@ -350,6 +351,11 @@ def run_once(
                 catalyst_type=fundamental.catalyst_type if fundamental else "UNKNOWN",
                 market_regime=btc_status.regime,
                 detection_rel_strength=result.relative_strength_pct,
+                live_tier=live_decision.tier,
+                live_direction=live_plan.direction,
+                live_entry_style=live_plan.entry_style,
+                live_boosters=live_decision.boosters,
+                live_score=live_decision.score,
             )
 
             if is_new:

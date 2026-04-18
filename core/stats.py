@@ -56,6 +56,13 @@ class TradeRecord:
     market_regime: str = "UNKNOWN"           # BEARISH / STAGNANT / BULLISH
     detection_rel_strength: float = 0.0      # alt_1h - btc_1h (乖離度)
 
+    # ライブ戦略のスナップショット (検出時の LiveTradeFilter / LiveStrategyBuilder 判定)
+    live_tier: str = ""                      # S / A / B
+    live_direction: str = ""                 # short / long
+    live_entry_style: str = ""               # MARKET / LIMIT_SCALE / LIMIT_PATIENT
+    live_boosters: list[str] = field(default_factory=list)
+    live_score: float = 0.0
+
     @classmethod
     def from_tracked(cls, t: TrackedSymbol) -> "TradeRecord":
         """TrackedSymbol から TradeRecord を組み立てる。"""
@@ -89,6 +96,11 @@ class TradeRecord:
             detection_1h_change=t.detection_1h_change,
             market_regime=t.market_regime,
             detection_rel_strength=t.detection_rel_strength,
+            live_tier=t.live_tier,
+            live_direction=t.live_direction,
+            live_entry_style=t.live_entry_style,
+            live_boosters=list(t.live_boosters),
+            live_score=t.live_score,
         )
 
 
@@ -338,6 +350,11 @@ class StatsManager:
             for entry in data:
                 entry.setdefault("market_regime", "UNKNOWN")
                 entry.setdefault("detection_rel_strength", 0.0)
+                entry.setdefault("live_tier", "")
+                entry.setdefault("live_direction", "")
+                entry.setdefault("live_entry_style", "")
+                entry.setdefault("live_boosters", [])
+                entry.setdefault("live_score", 0.0)
                 records.append(TradeRecord(**entry))
             self._records = records
             logger.info("Loaded %d trade record(s) from stats file.", len(self._records))

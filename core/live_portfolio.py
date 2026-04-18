@@ -18,6 +18,20 @@ core/live_portfolio.py
                    (ただし損失は risk_usdt を超えない = 清算保護)
     3. 残高を更新して data/live_portfolio.json に追記保存
     4. データは履歴として保持 (過去分析に利用)
+    5. 各 trade には検出時に下した判断 (tier / direction / entry_style /
+       boosters / score) も保存され、後で「どの戦略で勝った/負けた」を
+       追跡できる。
+
+trade レコード例:
+    {
+      "symbol": "BTC/USDT", ...
+      "pnl_usdt": -0.50, "balance_after": 99.50,
+      "strategy_tier":         "S",
+      "strategy_direction":    "short",
+      "strategy_entry_style":  "MARKET",
+      "strategy_boosters":     ["FR≥0.10", "daily_RED"],
+      "strategy_score":        0.45
+    }
 
 リセット:
     LivePortfolio.reset() を呼ぶか data/live_portfolio.json を削除すれば
@@ -59,6 +73,12 @@ class LiveVirtualTrade:
     pnl_usdt: float          # ドル建て損益
     balance_before: float
     balance_after: float
+    # ライブ戦略のスナップショット (どの戦略でこのトレードが行われたか)
+    strategy_tier: str = ""              # S / A / B
+    strategy_direction: str = ""         # short / long
+    strategy_entry_style: str = ""       # MARKET / LIMIT_SCALE / LIMIT_PATIENT
+    strategy_boosters: list[str] = field(default_factory=list)
+    strategy_score: float = 0.0
 
 
 @dataclass
@@ -181,6 +201,11 @@ class LivePortfolio:
             pnl_usdt=pnl_usdt,
             balance_before=balance_before,
             balance_after=balance_after,
+            strategy_tier=r.live_tier,
+            strategy_direction=r.live_direction,
+            strategy_entry_style=r.live_entry_style,
+            strategy_boosters=list(r.live_boosters),
+            strategy_score=r.live_score,
         )
         self._state.balance = balance_after
         self._state.trades.append(vt)
@@ -196,7 +221,14 @@ class LivePortfolio:
             return LivePortfolioState()
         try:
             data = json.loads(self._file.read_text())
-            trades = [LiveVirtualTrade(**t) for t in data.get("trades", [])]
+            trades: list[LiveVirtualTrade] = []
+            for t in data.get("trades", []):
+                t.setdefault("strategy_tier", "")
+                t.setdefault("strategy_direction", "")
+                t.setdefault("strategy_entry_style", "")
+                t.setdefault("strategy_boosters", [])
+                t.setdefault("strategy_score", 0.0)
+                trades.append(LiveVirtualTrade(**t))
             default = _initial_capital()
             return LivePortfolioState(
                 initial_capital=data.get("initial_capital", default),
