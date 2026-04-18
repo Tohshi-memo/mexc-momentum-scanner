@@ -57,6 +57,14 @@ class TrackedSymbol:
     market_regime: str = "UNKNOWN"   # BEARISH / STAGNANT / BULLISH
     detection_rel_strength: float = 0.0  # alt_1h - btc_1h (乖離度)
 
+    # ライブ戦略のスナップショット (検出時に LiveTradeFilter / LiveStrategyBuilder
+    # が下した判断を保存しておき、決済時に LivePortfolio へ転記する)
+    live_tier: str = ""              # S / A / B
+    live_direction: str = ""         # short / long
+    live_entry_style: str = ""       # MARKET / LIMIT_SCALE / LIMIT_PATIENT
+    live_boosters: list[str] = field(default_factory=list)
+    live_score: float = 0.0
+
     # outcome 管理（先に到達した方で確定）
     outcome: str = OUTCOME_ACTIVE        # ACTIVE | TP_HIT | SL_HIT | EXPIRED
     outcome_at: str | None = None        # 確定時刻
@@ -140,6 +148,11 @@ class SymbolTracker:
         catalyst_type: str = "UNKNOWN",
         market_regime: str = "UNKNOWN",
         detection_rel_strength: float = 0.0,
+        live_tier: str = "",
+        live_direction: str = "",
+        live_entry_style: str = "",
+        live_boosters: list[str] | None = None,
+        live_score: float = 0.0,
     ) -> bool:
         """新しいシグナルを追跡リストに追加する。
 
@@ -167,6 +180,11 @@ class SymbolTracker:
             catalyst_type=catalyst_type,
             market_regime=market_regime,
             detection_rel_strength=detection_rel_strength,
+            live_tier=live_tier,
+            live_direction=live_direction,
+            live_entry_style=live_entry_style,
+            live_boosters=list(live_boosters or []),
+            live_score=live_score,
         )
         logger.info(
             "Started tracking %s for %dh (until %s).",
@@ -343,6 +361,11 @@ class SymbolTracker:
                 entry.setdefault("outcome", OUTCOME_ACTIVE)
                 entry.setdefault("outcome_at", None)
                 entry.setdefault("outcome_price", None)
+                entry.setdefault("live_tier", "")
+                entry.setdefault("live_direction", "")
+                entry.setdefault("live_entry_style", "")
+                entry.setdefault("live_boosters", [])
+                entry.setdefault("live_score", 0.0)
                 self._symbols[symbol] = TrackedSymbol(**entry, prices=prices)
             logger.info("Loaded %d tracked symbol(s) from file.", len(self._symbols))
         except Exception as e:
