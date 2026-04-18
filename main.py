@@ -30,7 +30,9 @@ from core.analyzer import TechnicalAnalyzer
 from core.executor import ExecutorFactory, ProposalBuilder
 from core.experiment import ExperimentTracker, FilterSnapshot
 from core.fundamental import FundamentalAnalyzer
+from core.live_filter import LiveTradeFilter
 from core.live_portfolio import LivePortfolio
+from core.live_strategy import DIR_SHORT, LiveStrategyBuilder
 from core.scanner import MarketScanner
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
@@ -93,6 +95,8 @@ def run_once(
     notifier: Notifier,
     experiment_tracker: ExperimentTracker,
     live_portfolio: LivePortfolio,
+    live_filter: LiveTradeFilter,
+    live_strategy: LiveStrategyBuilder,
     experiment_max_per_cycle: int,
     dry_run: bool,
     cooldown_hours: int,
@@ -244,6 +248,51 @@ def run_once(
                 continue
 
             fundamental = fundamental_analyzer.analyze(result.symbol)
+            fund_conviction = (
+                fundamental.short_conviction if fundamental else None
+            )
+
+            # Live filter (Tier S/A/B gating) + Strategy (direction/sizing)
+            live_decision = live_filter.evaluate(
+                result,
+                regime=btc_status.regime,
+                stats=stats,
+                fundamental_conviction=fund_conviction,
+            )
+            if not live_decision.passed:
+                console.print(
+                    f"  [dim]▸ [bright_yellow]{result.symbol}[/bright_yellow] "
+                    f"live_filter REJECT ({live_decision.summary()})[/dim]"
+                )
+                logger.info(
+                    "Live filter reject %s: %s",
+                    result.symbol, live_decision.summary(),
+                )
+                continue
+
+            live_plan = live_strategy.build(
+                result,
+                live_decision,
+                account_balance_usdt=live_portfolio.balance,
+                recent_short_edge_pct=None,
+            )
+            if live_plan.direction != DIR_SHORT:
+                console.print(
+                    f"  [dim]▸ [bright_yellow]{result.symbol}[/bright_yellow] "
+                    f"live_strategy direction={live_plan.direction} — skipped "
+                    f"(executor is SHORT-only).[/dim]"
+                )
+                logger.info(
+                    "Live strategy skip %s: direction=%s reasons=%s",
+                    result.symbol, live_plan.direction, live_plan.reasons,
+                )
+                continue
+
+            logger.info(
+                "Live plan %s: %s",
+                result.symbol, LiveStrategyBuilder.describe_plan(live_plan),
+            )
+
             proposal    = builder.build(result, fundamental)
             exec_result = executor.execute(proposal)
 
@@ -490,6 +539,8 @@ def main() -> None:
     notifier             = Notifier()
     experiment_tracker   = ExperimentTracker()
     live_portfolio       = LivePortfolio()
+    live_filter          = LiveTradeFilter()
+    live_strategy        = LiveStrategyBuilder(proposal_builder=builder)
 
     cycle: int = 0
 
@@ -499,7 +550,9 @@ def main() -> None:
             run_once(
                 cycle, scanner, analyzer, fundamental_analyzer,
                 builder, executor, tracker, stats, notifier,
-                experiment_tracker, live_portfolio, experiment_max_per_cycle,
+                experiment_tracker, live_portfolio,
+                live_filter, live_strategy,
+                experiment_max_per_cycle,
                 dry_run, cooldown_hours, cb_window, cb_loss_threshold,
             )
         except KeyboardInterrupt:
