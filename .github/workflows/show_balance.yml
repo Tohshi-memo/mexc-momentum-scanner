@@ -1,0 +1,32 @@
+name: Show MEXC Balance
+
+# 手動起動専用 (workflow_dispatch)。
+# secrets に登録済みの MEXC API キーで USDT-M 先物口座残高を表示する。
+# Read-only 権限で動作 (注文は発行しない)。
+on:
+  workflow_dispatch:
+
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    env:
+      MEXC_API_KEY:    ${{ secrets.MEXC_API_KEY }}
+      MEXC_SECRET_KEY: ${{ secrets.MEXC_SECRET_KEY }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Show futures balance
+        run: python tools/show_balance.py
