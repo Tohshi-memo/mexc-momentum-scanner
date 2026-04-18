@@ -31,7 +31,8 @@ from core.tracker import (
 
 logger = logging.getLogger(__name__)
 
-STATS_FILE = Path("data/stats.json")
+STATS_FILE     = Path("data/stats.json")
+STATS_META_FILE = Path("data/stats_meta.json")
 
 
 @dataclass
@@ -111,10 +112,19 @@ class StatsSummary:
 class StatsManager:
     """トレード記録の永続化と集計。"""
 
-    def __init__(self, file_path: Path = STATS_FILE) -> None:
+    def __init__(
+        self,
+        file_path: Path = STATS_FILE,
+        meta_path: Path = STATS_META_FILE,
+    ) -> None:
         self._file = file_path
+        self._meta_file = meta_path
         self._records: list[TradeRecord] = []
+        # 直近 SL 連発でサーキットブレーカーが発動したあと、リセット時刻を
+        # ここに書き込むことで、以降の記録のみで再度カウントする。
+        self._cb_reset_at: str | None = None
         self._load()
+        self._load_meta()
 
     # ------------------------------------------------------------------
     # Recording
@@ -173,7 +183,9 @@ class StatsManager:
 
         total_pnl = sum(r.pnl_pct for r in self._records)
 
-        recent = self._records[-recent_window:]
+        # recent_losses はサーキットブレーカーと同じ基準 (reset 以降のみ)
+        pool = self._records_since_reset()
+        recent = pool[-recent_window:]
         recent_losses = sum(1 for r in recent if r.outcome == OUTCOME_SL_HIT)
 
         return StatsSummary(
@@ -218,12 +230,50 @@ class StatsManager:
         """直近 `window` 件中 SL が `loss_threshold` 以上なら True。
 
         True の時は当サイクルのエントリーを全スキップする。
+        reset_circuit_breaker() 以降の記録のみを対象とする。
         """
-        if len(self._records) < window:
+        pool = self._records_since_reset()
+        if len(pool) < window:
             return False
-        recent = self._records[-window:]
+        recent = pool[-window:]
         recent_losses = sum(1 for r in recent if r.outcome == OUTCOME_SL_HIT)
         return recent_losses >= loss_threshold
+
+    def reset_circuit_breaker(self) -> str:
+        """サーキットブレーカーのカウントを現時点からやり直す。
+
+        記録自体は消さず、meta ファイルに ``cb_reset_at`` を書き込み、
+        以降の circuit_breaker_active() はこの時刻以後の記録のみで判定する。
+        戻り値は書き込んだタイムスタンプ (ISO 8601)。
+        """
+        self._cb_reset_at = datetime.now(timezone.utc).isoformat()
+        self._save_meta()
+        logger.warning(
+            "Circuit breaker reset. Counting from %s onwards.", self._cb_reset_at,
+        )
+        return self._cb_reset_at
+
+    @property
+    def cb_reset_at(self) -> str | None:
+        return self._cb_reset_at
+
+    def _records_since_reset(self) -> list[TradeRecord]:
+        """リセットタイムスタンプ以降の記録のみ返す (未設定なら全件)。"""
+        if not self._cb_reset_at:
+            return self._records
+        try:
+            cutoff = datetime.fromisoformat(self._cb_reset_at)
+        except ValueError:
+            return self._records
+        pool: list[TradeRecord] = []
+        for r in self._records:
+            try:
+                closed = datetime.fromisoformat(r.closed_at)
+            except ValueError:
+                continue
+            if closed >= cutoff:
+                pool.append(r)
+        return pool
 
     def summary_by_conviction(self) -> dict[str, dict[str, Any]]:
         """conviction 別のミニサマリー（勝率分析用）。"""
@@ -294,3 +344,24 @@ class StatsManager:
         except Exception as e:
             logger.warning("Failed to load stats file: %s", e)
             self._records = []
+
+    def _load_meta(self) -> None:
+        """stats_meta.json からサーキットブレーカーのリセット時刻を読む。"""
+        if not self._meta_file.exists():
+            return
+        try:
+            with self._meta_file.open(encoding="utf-8") as f:
+                data = json.load(f)
+            self._cb_reset_at = data.get("cb_reset_at") or None
+            if self._cb_reset_at:
+                logger.info(
+                    "Circuit breaker reset active since %s.", self._cb_reset_at,
+                )
+        except Exception as e:
+            logger.warning("Failed to load stats meta file: %s", e)
+
+    def _save_meta(self) -> None:
+        self._meta_file.parent.mkdir(parents=True, exist_ok=True)
+        payload = {"cb_reset_at": self._cb_reset_at}
+        with self._meta_file.open("w", encoding="utf-8") as f:
+            json.dump(payload, f, indent=2, ensure_ascii=False)

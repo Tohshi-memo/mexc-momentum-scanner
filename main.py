@@ -30,6 +30,7 @@ from core.analyzer import TechnicalAnalyzer
 from core.executor import ExecutorFactory, ProposalBuilder
 from core.experiment import ExperimentTracker, FilterSnapshot
 from core.fundamental import FundamentalAnalyzer
+from core.live_portfolio import LivePortfolio
 from core.scanner import MarketScanner
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
@@ -91,6 +92,7 @@ def run_once(
     stats: StatsManager,
     notifier: Notifier,
     experiment_tracker: ExperimentTracker,
+    live_portfolio: LivePortfolio,
     experiment_max_per_cycle: int,
     dry_run: bool,
     cooldown_hours: int,
@@ -133,7 +135,9 @@ def run_once(
     # ── 追跡中銘柄の価格更新 + TP/SL 到達の記録 ──────────────────────
     newly_closed = tracker.update_prices(scanner._client)
     if newly_closed:
-        stats.record_many(newly_closed)
+        new_records = stats.record_many(newly_closed)
+        # ライブ戦略の仮想ポートフォリオ ($100 ベース) に反映
+        live_portfolio.record_many(new_records)
         # TP/SL 到達 Discord 通知
         for s in newly_closed:
             if s.outcome == "TP_HIT":
@@ -180,13 +184,13 @@ def run_once(
     # BTC データが取れなかった場合のみスキップ (regime は常にスキャン)
     if not btc_status.is_signal_active:
         print_no_candidates()
-        _finalize_expired(tracker, stats, notifier)
+        _finalize_expired(tracker, stats, notifier, live_portfolio)
         return
 
     # ── Step 2: 急騰銘柄リスト ────────────────────────────────────────
     print_scan_result(surge_candidates, regime=btc_status.regime)
     if not surge_candidates:
-        _finalize_expired(tracker, stats, notifier)
+        _finalize_expired(tracker, stats, notifier, live_portfolio)
         return
 
     # ── Step 3: テクニカル分析 ────────────────────────────────────────
@@ -215,7 +219,7 @@ def run_once(
         console.print(
             "\n  [dim]▸ No confirmed signals (filters rejected all candidates).[/dim]\n"
         )
-        _finalize_expired(tracker, stats, notifier)
+        _finalize_expired(tracker, stats, notifier, live_portfolio)
         return
 
     # サーキットブレーカー発動中ならここでエントリーをスキップ
@@ -223,7 +227,7 @@ def run_once(
         console.print(
             "\n  [bright_red]▸ Circuit breaker active — all confirmed signals skipped.[/bright_red]\n"
         )
-        _finalize_expired(tracker, stats, notifier)
+        _finalize_expired(tracker, stats, notifier, live_portfolio)
         return
 
     # ── Step 4: ファンダ考察 + 追跡登録 + 通知 ───────────────────────
@@ -310,7 +314,7 @@ def run_once(
             logger.error("Failed to process %s: %s", result.symbol, e)
 
     # ── 期限切れ追跡の処理 ──────────────────────────────────────────
-    _finalize_expired(tracker, stats, notifier)
+    _finalize_expired(tracker, stats, notifier, live_portfolio)
 
 
 def _register_shadow_trades(
@@ -413,6 +417,7 @@ def _finalize_expired(
     tracker: SymbolTracker,
     stats: StatsManager,
     notifier: Notifier,
+    live_portfolio: LivePortfolio,
 ) -> None:
     """期限切れの追跡エントリを EXPIRED として記録し通知する。
 
@@ -424,7 +429,9 @@ def _finalize_expired(
     if not expired_only:
         return
 
-    stats.record_many(expired_only)
+    new_records = stats.record_many(expired_only)
+    # EXPIRED も仮想ポートフォリオに反映 (PnL は時間切れ時点の終値ベース)
+    live_portfolio.record_many(new_records)
     for s in expired_only:
         notifier.notify_tracking_expired(
             symbol=s.symbol,
@@ -472,6 +479,7 @@ def main() -> None:
     stats                = StatsManager()
     notifier             = Notifier()
     experiment_tracker   = ExperimentTracker()
+    live_portfolio       = LivePortfolio()
 
     cycle: int = 0
 
@@ -481,7 +489,7 @@ def main() -> None:
             run_once(
                 cycle, scanner, analyzer, fundamental_analyzer,
                 builder, executor, tracker, stats, notifier,
-                experiment_tracker, experiment_max_per_cycle,
+                experiment_tracker, live_portfolio, experiment_max_per_cycle,
                 dry_run, cooldown_hours, cb_window, cb_loss_threshold,
             )
         except KeyboardInterrupt:
@@ -494,6 +502,7 @@ def main() -> None:
                 tracker.save()
                 stats.save()
                 experiment_tracker.save()
+                live_portfolio.save()
             except Exception as e:
                 logger.error("Failed to save data: %s", e)
             # シャドウトレードの集計レポートを再生成
