@@ -59,13 +59,12 @@ jobs:
       ANALYSIS_TIMEFRAME: '1h'
       OHLCV_LIMIT:       '100'
 
-      # --- 損失低減フィルター ---
-      RSI_4H_MIN:              '65'
+      # --- STRICT v2 フィルター (2026-04 データ駆動見直し) ---
+      RSI_4H_MAX:              '65'   # 4h RSI < 65 が唯一のゲート条件
       USE_4H_FILTER:           'true'
       VOLUME_LOOKBACK:         '20'
       VOLUME_RISING_RATIO:     '1.8'
       VOLUME_DECLINING_RATIO:  '0.8'
-      USE_VOLUME_FILTER:       'true'
       ATR_PERIOD:              '14'
       USE_ATR_SL:              'true'
       ATR_SL_MULT:             '1.5'

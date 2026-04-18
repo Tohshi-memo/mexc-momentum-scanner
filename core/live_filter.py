@@ -86,10 +86,12 @@ class LiveTradeFilter:
     """
 
     def __init__(self) -> None:
-        # ─── Tier gating thresholds ──────────────────────────────────
-        self._rsi_min: float     = float(os.getenv("LIVE_RSI_MIN",     "70"))
+        # ─── Tier gating thresholds (STRICT v2) ──────────────────────
+        # LIVE_RSI_MIN: RSI(1h) ゲートは無効化がデフォルト (シャドウで効果なし)。
+        # LIVE_ATR_HIGH: Tier A 昇格閾値は 9% (旧 11%)、サンプル増で判定安定化。
+        self._rsi_min: float     = float(os.getenv("LIVE_RSI_MIN",     "0"))
         self._rsi_4h_max: float  = float(os.getenv("LIVE_RSI_4H_MAX",  "65"))
-        self._atr_high: float    = float(os.getenv("LIVE_ATR_HIGH",    "11.0"))
+        self._atr_high: float    = float(os.getenv("LIVE_ATR_HIGH",    "9.0"))
         self._rel_strength_min: float = float(os.getenv("LIVE_REL_STRENGTH_MIN", "5.0"))
 
         # ─── Block (強制却下) thresholds ─────────────────────────────
