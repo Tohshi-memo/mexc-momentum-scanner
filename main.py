@@ -245,7 +245,7 @@ def run_once(
 
             fundamental = fundamental_analyzer.analyze(result.symbol)
             proposal    = builder.build(result, fundamental)
-            executor.execute(proposal)
+            exec_result = executor.execute(proposal)
 
             # シャドウトレードにファンダ情報を後付け
             # (シャドウ登録はファンダ分析前に行われるため)
@@ -277,6 +277,16 @@ def run_once(
 
             # AVOID なら追跡もしない
             if conviction == "AVOID":
+                continue
+
+            # LIVE モードで発注がスキップ/失敗した場合は tracker にも入れない。
+            # (DRY RUN は status="dry_run" で常に通過 → tracker 登録される)
+            exec_status = (exec_result or {}).get("status", "")
+            if exec_status not in ("dry_run", "ok"):
+                logger.warning(
+                    "Skip tracking %s: executor status=%s reason=%s",
+                    result.symbol, exec_status, (exec_result or {}).get("reason"),
+                )
                 continue
 
             # 追跡登録

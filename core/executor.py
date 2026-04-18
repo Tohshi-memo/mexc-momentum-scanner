@@ -189,39 +189,250 @@ class DryRunExecutor(BaseExecutor):
 
 
 # ---------------------------------------------------------------------------
-# Live Executor (将来実装 - Trade権限取得後に有効化)
+# Live Executor (本番実装)
 # ---------------------------------------------------------------------------
 
 class LiveExecutor(BaseExecutor):
-    """実際の API 注文を発行する本番実装。
+    """MEXC USDT-M 先物への実発注を行う本番実装。
 
-    現時点では NotImplementedError を返す。
-    Trade権限を取得した際に各メソッドを実装することで、
-    main.py や上位ロジックを変更せずに本番運用へ移行できる。
+    安全設計:
+        - 必ず SL/TP を注文と同時に attach (約定後に別注文ではない)
+        - AVOID シグナルは発注しない
+        - 残高 < LIVE_MIN_BALANCE_USDT なら発注しない
+        - 既存ポジションがあるシンボルは重複エントリー禁止
+        - 計算後の数量 / 名目額が取引所の最小値を下回ったらスキップ
+        - LIVE_MAX_OPEN_POSITIONS を超える同時保有は禁止
+        - エラー時はリトライせずログ + 状態を返す (上位で stats / tracker に
+          反映しないこと)
+
+    ポジションサイズ:
+        risk_usdt   = balance × LIVE_BASE_RISK_PCT%   (≤ LIVE_MAX_RISK_PCT)
+        notional    = risk_usdt / (sl_pct / 100)
+        notional   ≤ balance × LIVE_MAX_LEVERAGE
+        amount      = notional / (entry_price × contract_size)
     """
 
     def __init__(self, client: MEXCClient) -> None:
         self._client = client
+        # ポジションサイジング
+        self._base_risk_pct: float = float(os.getenv("LIVE_BASE_RISK_PCT", "0.5"))
+        self._max_risk_pct:  float = float(os.getenv("LIVE_MAX_RISK_PCT",  "1.5"))
+        self._max_leverage:  float = float(os.getenv("LIVE_MAX_LEVERAGE",  "3.0"))
+        # 安全装置
+        self._min_balance_usdt:    float = float(os.getenv("LIVE_MIN_BALANCE_USDT", "5.0"))
+        self._max_open_positions:  int   = int(os.getenv("LIVE_MAX_OPEN_POSITIONS", "3"))
+
+    # ------------------------------------------------------------------
+    # Public API
+    # ------------------------------------------------------------------
 
     def execute(self, proposal: TradeProposal) -> dict[str, Any]:
-        """実際のショート注文を発行する（未実装）。
+        """SHORT エントリーを 1 件発注する (SL/TP 同時 attach)。
 
-        実装時の TODO:
-            1. 口座残高を取得してポジションサイズを計算
-            2. エントリー: 成行または分散指値でショートエントリー
-            3. SL/TP: 取引所の stopLoss / takeProfit パラメーターを利用
-            4. 注文 ID を記録して後続管理に引き渡す
+        失敗時は status="error" を返す。上位 (main.py) はこれを見て
+        tracker / stats に登録しないようにすること。
         """
-        raise NotImplementedError(
-            "LiveExecutor.execute() is not yet implemented. "
-            "Set DRY_RUN=true or implement live order logic."
+        # ── ガード 1: AVOID ──────────────────────────────────────────
+        if (
+            proposal.fundamental is not None
+            and proposal.fundamental.short_conviction == "AVOID"
+        ):
+            logger.warning(
+                "[LIVE] SKIP %s — fundamental AVOID (%s)",
+                proposal.symbol, proposal.fundamental.reason,
+            )
+            return {"status": "skipped_avoid", "symbol": proposal.symbol}
+
+        # ── ガード 2: 残高 ────────────────────────────────────────────
+        try:
+            balance = self._client.fetch_balance()
+        except Exception as e:
+            logger.error("[LIVE] fetch_balance failed: %s", e)
+            return {"status": "error", "reason": f"fetch_balance: {e}"}
+
+        usdt_info  = balance.get("USDT", {}) or {}
+        free_usdt  = float(usdt_info.get("free")  or 0.0)
+        total_usdt = float(usdt_info.get("total") or 0.0)
+
+        if free_usdt < self._min_balance_usdt:
+            logger.warning(
+                "[LIVE] SKIP %s — free $%.2f < min $%.2f",
+                proposal.symbol, free_usdt, self._min_balance_usdt,
+            )
+            return {
+                "status": "skipped_low_balance",
+                "symbol": proposal.symbol,
+                "free_usdt": free_usdt,
+            }
+
+        # ── ガード 3: 既存ポジション + 同時保有数 ────────────────────
+        try:
+            all_positions = self._client.exchange.fetch_positions()
+        except Exception as e:
+            logger.error("[LIVE] fetch_positions failed: %s", e)
+            return {"status": "error", "reason": f"fetch_positions: {e}"}
+
+        open_positions = [
+            p for p in all_positions
+            if float(p.get("contracts") or 0) > 0
+        ]
+        for p in open_positions:
+            if p.get("symbol") == proposal.symbol:
+                logger.warning(
+                    "[LIVE] SKIP %s — position already open (%.6g contracts)",
+                    proposal.symbol, float(p.get("contracts") or 0),
+                )
+                return {"status": "skipped_already_open", "symbol": proposal.symbol}
+
+        if len(open_positions) >= self._max_open_positions:
+            logger.warning(
+                "[LIVE] SKIP %s — open positions %d ≥ max %d",
+                proposal.symbol, len(open_positions), self._max_open_positions,
+            )
+            return {
+                "status": "skipped_max_positions",
+                "symbol": proposal.symbol,
+                "open_count": len(open_positions),
+            }
+
+        # ── ガード 4: SL/TP 健全性 ──────────────────────────────────
+        if proposal.sl_pct <= 0 or proposal.tp_pct <= 0:
+            return {"status": "error", "reason": "sl_pct or tp_pct <= 0"}
+        if proposal.stop_loss <= proposal.entry_price:
+            # SHORT: SL は entry より上であるべき
+            return {"status": "error", "reason": "SHORT SL must be above entry"}
+        if proposal.take_profit >= proposal.entry_price:
+            # SHORT: TP は entry より下であるべき
+            return {"status": "error", "reason": "SHORT TP must be below entry"}
+
+        # ── ポジションサイズ ─────────────────────────────────────────
+        risk_pct  = min(self._base_risk_pct, self._max_risk_pct)
+        risk_usdt = total_usdt * risk_pct / 100
+        notional  = risk_usdt / (proposal.sl_pct / 100)
+        notional  = min(notional, total_usdt * self._max_leverage)
+
+        try:
+            market = self._client.exchange.market(proposal.symbol)
+        except Exception as e:
+            return {"status": "error", "reason": f"market_meta: {e}"}
+
+        contract_size = float(market.get("contractSize") or 1)
+        if proposal.entry_price <= 0 or contract_size <= 0:
+            return {"status": "error", "reason": "invalid entry_price or contract_size"}
+
+        amount = notional / (proposal.entry_price * contract_size)
+
+        # 取引所の最小数量 / 最小名目額をチェック
+        limits     = market.get("limits") or {}
+        min_amount = (limits.get("amount") or {}).get("min")
+        min_cost   = (limits.get("cost")   or {}).get("min")
+
+        if min_amount is not None and amount < float(min_amount):
+            logger.warning(
+                "[LIVE] SKIP %s — amount %.6g < min %.6g (notional $%.2f)",
+                proposal.symbol, amount, float(min_amount), notional,
+            )
+            return {
+                "status": "skipped_below_min_amount",
+                "symbol": proposal.symbol,
+                "amount": amount,
+                "min_amount": float(min_amount),
+            }
+        if min_cost is not None and notional < float(min_cost):
+            logger.warning(
+                "[LIVE] SKIP %s — notional $%.2f < min $%.2f",
+                proposal.symbol, notional, float(min_cost),
+            )
+            return {
+                "status": "skipped_below_min_cost",
+                "symbol": proposal.symbol,
+                "notional": notional,
+                "min_cost": float(min_cost),
+            }
+
+        # 取引所の精度に合わせる
+        try:
+            amount_str   = self._client.exchange.amount_to_precision(proposal.symbol, amount)
+            sl_price_str = self._client.exchange.price_to_precision(proposal.symbol, proposal.stop_loss)
+            tp_price_str = self._client.exchange.price_to_precision(proposal.symbol, proposal.take_profit)
+            amount   = float(amount_str)
+            sl_price = float(sl_price_str)
+            tp_price = float(tp_price_str)
+        except Exception as e:
+            return {"status": "error", "reason": f"precision: {e}"}
+
+        # ── レバレッジ設定 (失敗しても発注は続行) ────────────────────
+        try:
+            self._client.exchange.set_leverage(int(self._max_leverage), proposal.symbol)
+        except Exception as e:
+            logger.warning("[LIVE] set_leverage failed for %s: %s", proposal.symbol, e)
+
+        # ── 発注 (SL/TP attached) ────────────────────────────────────
+        # SHORT = sell (open). MEXC perpetual + ccxt は stopLossPrice /
+        # takeProfitPrice を params で渡せば 1 注文に attach される。
+        try:
+            order = self._client.create_order(
+                symbol=proposal.symbol,
+                order_type="market",
+                side="sell",
+                amount=amount,
+                price=None,
+                params={
+                    "stopLossPrice":   sl_price,
+                    "takeProfitPrice": tp_price,
+                    "reduceOnly":      False,
+                },
+            )
+        except Exception as e:
+            logger.error(
+                "[LIVE] create_order FAILED %s amount=%.6g sl=%.6g tp=%.6g: %s",
+                proposal.symbol, amount, sl_price, tp_price, e,
+            )
+            return {"status": "error", "reason": f"create_order: {e}"}
+
+        logger.warning(
+            "[LIVE] ✓ SHORT %s | size=%.6g notional=$%.2f entry≈$%.6g "
+            "SL=$%.6g (+%.2f%%) TP=$%.6g (-%.2f%%) lev=%.0fx order_id=%s",
+            proposal.symbol, amount, notional, proposal.entry_price,
+            sl_price, proposal.sl_pct, tp_price, proposal.tp_pct,
+            self._max_leverage, order.get("id"),
         )
+        return {
+            "status":        "ok",
+            "order_id":      order.get("id"),
+            "symbol":        proposal.symbol,
+            "amount":        amount,
+            "notional_usdt": notional,
+            "risk_usdt":     risk_usdt,
+            "sl_price":      sl_price,
+            "tp_price":      tp_price,
+            "leverage":      self._max_leverage,
+            "raw":           order,
+        }
 
     def close_position(self, symbol: str, amount: float) -> dict[str, Any]:
-        """ポジションをクローズする（未実装）。"""
-        raise NotImplementedError(
-            "LiveExecutor.close_position() is not yet implemented."
-        )
+        """SHORT ポジションを成行 buy + reduceOnly でクローズする。
+
+        通常は SL/TP が exchange 側で発火するため使われない。
+        緊急停止 / 手動介入用。
+        """
+        try:
+            order = self._client.create_order(
+                symbol=symbol,
+                order_type="market",
+                side="buy",
+                amount=amount,
+                price=None,
+                params={"reduceOnly": True},
+            )
+            logger.warning(
+                "[LIVE] CLOSE %s amount=%.6g order_id=%s",
+                symbol, amount, order.get("id"),
+            )
+            return {"status": "ok", "order_id": order.get("id"), "raw": order}
+        except Exception as e:
+            logger.error("[LIVE] close_position FAILED %s: %s", symbol, e)
+            return {"status": "error", "reason": str(e)}
 
 
 # ---------------------------------------------------------------------------
