@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -195,8 +196,9 @@ class StatsManager:
 
         total_pnl = sum(r.pnl_pct for r in self._records)
 
-        # recent_losses はサーキットブレーカーと同じ基準 (reset 以降のみ)
-        pool = self._records_since_reset()
+        # recent_losses はサーキットブレーカーと同じ基準
+        # (reset 以降 かつ 直近 CIRCUIT_BREAKER_LOOKBACK_HOURS 内)
+        pool = self._filter_within_lookback(self._records_since_reset())
         recent = pool[-recent_window:]
         recent_losses = sum(1 for r in recent if r.outcome == OUTCOME_SL_HIT)
 
@@ -241,10 +243,15 @@ class StatsManager:
     ) -> bool:
         """直近 `window` 件中 SL が `loss_threshold` 以上なら True。
 
-        True の時は当サイクルのエントリーを全スキップする。
-        reset_circuit_breaker() 以降の記録のみを対象とする。
+        判定対象は次の AND で絞り込む:
+          1. reset_circuit_breaker() 以降の記録
+          2. 直近 CIRCUIT_BREAKER_LOOKBACK_HOURS 時間内に closed したもの
+             (0 または未設定で無効化 = 全期間)
+
+        (2) により「何日も前に発動した連敗」が延々と引きずる問題を解消する。
+        新規トレードが無い限り自然に pool が空になり、breaker が解除される。
         """
-        pool = self._records_since_reset()
+        pool = self._filter_within_lookback(self._records_since_reset())
         if len(pool) < window:
             return False
         recent = pool[-window:]
@@ -279,6 +286,37 @@ class StatsManager:
             return self._records
         pool: list[TradeRecord] = []
         for r in self._records:
+            try:
+                closed = datetime.fromisoformat(r.closed_at)
+            except ValueError:
+                continue
+            if closed >= cutoff:
+                pool.append(r)
+        return pool
+
+    @staticmethod
+    def _lookback_hours() -> float:
+        """CIRCUIT_BREAKER_LOOKBACK_HOURS を読み出す (0 で無効)。"""
+        try:
+            return float(os.getenv("CIRCUIT_BREAKER_LOOKBACK_HOURS", "48"))
+        except ValueError:
+            return 48.0
+
+    def _filter_within_lookback(
+        self, records: list[TradeRecord],
+    ) -> list[TradeRecord]:
+        """直近 CIRCUIT_BREAKER_LOOKBACK_HOURS 内の closed 記録に絞る。
+
+        0 以下 → 無効化 (全件返す)
+        これにより、古い連敗履歴が延々とサーキットブレーカーを
+        発動させ続ける問題を防ぐ。
+        """
+        hours = self._lookback_hours()
+        if hours <= 0:
+            return records
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+        pool: list[TradeRecord] = []
+        for r in records:
             try:
                 closed = datetime.fromisoformat(r.closed_at)
             except ValueError:
