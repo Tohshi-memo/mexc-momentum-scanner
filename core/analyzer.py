@@ -4,12 +4,13 @@ core/analyzer.py
 
 pandas のみで実装しているため外部の TA ライブラリへの依存なし。
 
-損失を減らすために以下の追加フィルターを適用する:
-  1. 出来高トレンド: 急騰中に出来高が増加していたらトレンド継続の可能性
-                    → 出来高が減衰 (exhaustion) の銘柄のみショート対象にする
-  2. 4h RSI:        1h だけでなく 4h でも過熱 (>= RSI_4H_MIN) している
-                    → ダブルオーバーボートで反転確率が高い銘柄のみ狙う
-  3. ATR:           SL 幅をボラティリティに応じて自動調整するためのベース値
+STRICT v2 (データ駆動で 2026-04 に見直し):
+  - 4h RSI < RSI_4H_MAX: 『未過熱』の新鮮な急騰を狙う (核フィルター)
+  - ATR:                 SL 幅をボラティリティに応じて自動調整
+
+旧 STRICT v1 で使っていた RSI(1h) ≥ 70 / BB break / Volume NOT RISING は
+シャドウ集計で期待値がフラット〜マイナスだったため撤廃。代わりに Volume
+RISING や ATR% を live_filter.py の tier 判定に活用する。
 """
 from __future__ import annotations
 
@@ -47,7 +48,7 @@ class AnalysisResult:
 
     # 4h RSI (マルチタイムフレーム確認用)
     rsi_4h: float | None
-    is_4h_overheated: bool  # 4h RSI >= RSI_4H_MIN → ダブルオーバーボート
+    is_4h_overheated: bool  # 4h RSI < RSI_4H_MAX → 未過熱 (STRICT v2 の核)
 
     # ボリンジャーバンド
     bb_upper: float | None
@@ -128,12 +129,13 @@ class AnalysisResult:
 class TechnicalAnalyzer:
     """抽出された急騰候補銘柄に対してテクニカル分析を行う。
 
-    確認シグナルとなる条件（全てを満たす必要あり）:
-        - RSI(14) >= RSI_OVERBOUGHT (default: 70) → 「買われすぎ」
-        - 出来高トレンド != RISING                 → 疲弊兆候 (loss reducer)
-        - 4h RSI >= RSI_4H_MIN (default: 65)       → ダブルオーバーボート
-    ※ BB ブレイクはデータ分析の結果シグナル数を絞りすぎる割に
-      勝率改善に寄与しないため撤廃。
+    STRICT v2 (is_confirmed_signal) の条件:
+        - 4h RSI < RSI_4H_MAX (default: 65) → 『未過熱』の新鮮な急騰
+          (shadow n=193 exp +0.94% の唯一の勝ちフィルター)
+
+    RSI(1h) / BB / Volume はすべての候補で計算するが、confirmed の
+    ゲートには使わない (データで有意差なし〜逆効果)。block zone や
+    tier 判定は core/live_filter.py が担当する。
     """
 
     def __init__(self, client: MEXCClient) -> None:
@@ -147,19 +149,19 @@ class TechnicalAnalyzer:
         self._ohlcv_limit:    int   = int(os.getenv("OHLCV_LIMIT", "100"))
 
         # 損失低減フィルター
-        self._rsi_4h_min:         float = float(os.getenv("RSI_4H_MIN", "65"))
+        # 4h RSI は『未過熱』を要求する (< 閾値) — シャドウ集計 n=193 exp +0.94%
+        self._rsi_4h_max:         float = float(os.getenv("RSI_4H_MAX", "65"))
         self._vol_lookback:       int   = int(os.getenv("VOLUME_LOOKBACK", "20"))
         self._vol_rising_ratio:   float = float(os.getenv("VOLUME_RISING_RATIO", "1.8"))
         self._vol_declining_ratio:float = float(os.getenv("VOLUME_DECLINING_RATIO", "0.8"))
         self._atr_period:         int   = int(os.getenv("ATR_PERIOD", "14"))
-        self._use_volume_filter:  bool  = os.getenv("USE_VOLUME_FILTER", "true").lower() != "false"
         self._use_4h_filter:      bool  = os.getenv("USE_4H_FILTER", "true").lower() != "false"
 
         logger.debug(
-            "TechnicalAnalyzer | RSI(%d) OB=%.0f BB(%d,%.1fσ) 4h>=%s volF=%s",
+            "TechnicalAnalyzer | RSI(%d) OB=%.0f BB(%d,%.1fσ) 4h<%s",
             self._rsi_period, self._rsi_overbought,
             self._bb_period, self._bb_std,
-            self._rsi_4h_min, self._use_volume_filter,
+            self._rsi_4h_max,
         )
 
     # ------------------------------------------------------------------
@@ -329,9 +331,10 @@ class TechnicalAnalyzer:
         rsi_value  = self._last_valid(rsi_series)
         is_rsi_ob  = rsi_value is not None and rsi_value >= self._rsi_overbought
 
-        # --- 4h オーバーボート判定 (ダブルオーバーボート = エントリー条件) ---
+        # --- 4h 『未過熱』判定 (新鮮な急騰 = 4h RSI が低い) ---
+        # データ分析: 4h RSI < 65 の n=193 で期待値 +0.94% (STRICT v2 の核)
         is_4h_oh = (
-            rsi_4h_value is not None and rsi_4h_value >= self._rsi_4h_min
+            rsi_4h_value is not None and rsi_4h_value < self._rsi_4h_max
         )
 
         # --- BB ---
@@ -382,17 +385,18 @@ class TechnicalAnalyzer:
         # ローソク足実体比率 (直前完成1h足)
         candle_body_ratio = self._calc_candle_body_ratio(df, idx=-2)
 
-        # --- 総合判定 + 却下理由収集 ---
-        # BB ブレイクはデータ分析の結果、効果が薄いため条件から除外。
+        # --- 総合判定 + 却下理由収集 (STRICT v2) ---
+        # データ分析結果 (data/experiment_report.md):
+        #   - 4h RSI < 65: n=193 exp +0.94% ← 唯一の勝ちフィルター、必須
+        #   - RSI(1h) ≥ 70: データでは無効 (exp -0.35%) → 情報表示のみ
+        #   - BB ブレイク: データで無効 (exp -0.24%) → 除外
+        #   - Volume NOT RISING: RISING と combined で +2.46% → 除外
+        # is_confirmed_signal は『4h 未過熱』のみをゲート条件とし、
+        # 残りは live_filter が tier 判定 + block zone で絞り込む。
         reject_reasons: list[str] = []
-        if not is_rsi_ob:
-            reject_reasons.append(f"RSI {rsi_value:.1f} < {self._rsi_overbought:.0f}"
-                                  if rsi_value is not None else "RSI n/a")
-        if self._use_volume_filter and not is_exhaustion:
-            reject_reasons.append(f"volume RISING (×{vol_ratio:.2f})")
         if self._use_4h_filter and not is_4h_oh:
             reject_reasons.append(
-                f"4h RSI {rsi_4h_value:.1f} < {self._rsi_4h_min:.0f}"
+                f"4h RSI {rsi_4h_value:.1f} >= {self._rsi_4h_max:.0f}"
                 if rsi_4h_value is not None else "4h RSI n/a"
             )
 
