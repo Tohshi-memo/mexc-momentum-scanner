@@ -74,6 +74,9 @@ jobs:
       COOLDOWN_HOURS:          '48'
       CIRCUIT_BREAKER_WINDOW:  '10'
       CIRCUIT_BREAKER_LOSSES:  '5'
+      # 直近 N 時間内に closed した記録のみでカウント (0 で無効=全期間)
+      # これを超えて古い連敗は自動で対象外になり、放置で自動解除される
+      CIRCUIT_BREAKER_LOOKBACK_HOURS: '48'
 
       # --- リスク設定 (ATR 無効時のフォールバック) ---
       STOP_LOSS_PCT:     '2.0'

@@ -70,9 +70,9 @@ DRY_RUN=false
    LIVE_MIN_BALANCE_USDT=5.0     # 残高がこれを下回ると発注停止
    LIVE_MAX_OPEN_POSITIONS=3     # 同時保有上限
    ```
-4. **サーキットブレーカー状態**
-   - `data/stats_meta.json` の `cb_reset_at` 以降の記録で判定
-   - 直近 10 件中 5 件 SL なら当サイクル全スキップ (`CIRCUIT_BREAKER_WINDOW` / `CIRCUIT_BREAKER_LOSSES`)
+4. **サーキットブレーカー状態** (詳細は後述の「サーキットブレーカーの挙動」)
+   - 直近 `CIRCUIT_BREAKER_LOOKBACK_HOURS` 時間内に closed した記録のうち、
+     直近 `CIRCUIT_BREAKER_WINDOW` 件中 `CIRCUIT_BREAKER_LOSSES` 件以上 SL なら当サイクル全スキップ
 
 ### 実トレード時の安全装置 (`core/executor.py` `LiveExecutor`)
 
@@ -87,6 +87,49 @@ DRY_RUN=false
 
 通過した場合のみ `market sell` + `stopLossPrice` / `takeProfitPrice` を同一注文に
 attach して発行します。**SL/TP が必ずセットで出る**のが設計上の保証です。
+
+### サーキットブレーカーの挙動
+
+連敗時の資金防衛として、直近の SL 集中を検知すると当サイクルのエントリーを
+全スキップします。GitHub Actions のログに以下が表示されます:
+
+```
+⊘  CIRCUIT BREAKER ACTIVE
+Recent loss streak exceeded threshold.
+All new entries are skipped this cycle.
+```
+
+#### 発動条件 (AND)
+
+1. 直近 `CIRCUIT_BREAKER_LOOKBACK_HOURS` 時間内に closed した記録のみ対象
+2. 上記 pool が `CIRCUIT_BREAKER_WINDOW` 件以上ある
+3. pool 末尾 `CIRCUIT_BREAKER_WINDOW` 件のうち SL_HIT が
+   `CIRCUIT_BREAKER_LOSSES` 件以上
+
+デフォルト: **直近 48h 以内の 10 件中 5 件以上が SL なら発動**
+
+#### 自動解除
+
+新規トレードが途絶えて lookback 時間が経過すれば、pool が縮小・空になり
+**自動で解除** されます（手動リセットは不要）。
+
+| 状態 | 挙動 |
+|---|---|
+| lookback 内の記録 < WINDOW | 発動しない（pool 不足） |
+| lookback 内で SL < LOSSES | 発動しない |
+| lookback 内で SL ≥ LOSSES | 発動（当サイクル全スキップ） |
+| 24h 以上新規トレードなし | 古い連敗は対象外 → 解除 |
+
+#### 手動リセット (緊急時)
+
+`CIRCUIT_BREAKER_LOOKBACK_HOURS` で解決しない場合の最終手段として、
+`StatsManager.reset_circuit_breaker()` を呼ぶと `data/stats_meta.json` に
+`cb_reset_at` を書き込み、**それ以降の記録のみ**で判定するようになります。
+
+#### `data/live_portfolio.json` との関係
+
+**無関係です。** サーキットブレーカーは `data/stats.json`（tracker の outcome 結果）
+のみで判定し、仮想ポートフォリオの残高・履歴は参照しません。
 
 ### 残高が少ない場合の注意
 
