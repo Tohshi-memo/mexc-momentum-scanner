@@ -37,9 +37,17 @@ import argparse
 import json
 import logging
 import statistics
+import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Callable, Iterable
+
+# core/ を import するため project root を path に追加
+_ROOT = Path(__file__).resolve().parent.parent
+if str(_ROOT) not in sys.path:
+    sys.path.insert(0, str(_ROOT))
+
+from core.experiment_archive import load_all_archived  # noqa: E402
 
 logger = logging.getLogger(__name__)
 
@@ -119,14 +127,9 @@ class ClosedTrade:
     daily_direction:    str | None   = None  # GREEN / RED / DOJI
 
 
-def _load_closed(path: Path) -> list[ClosedTrade]:
-    if not path.exists():
-        return []
-    with path.open(encoding="utf-8") as f:
-        data = json.load(f)
-
+def _parse_entries(entries: Iterable[dict]) -> list[ClosedTrade]:
     closed: list[ClosedTrade] = []
-    for entry in data.get("closed", []):
+    for entry in entries:
         if entry.get("pnl_pct") is None:
             continue
         f_dict = entry.get("filters") or {}
@@ -174,6 +177,34 @@ def _load_closed(path: Path) -> list[ClosedTrade]:
             )
         )
     return closed
+
+
+def _load_closed(path: Path) -> list[ClosedTrade]:
+    """ホットファイル (experiments.json) のみを読む。"""
+    if not path.exists():
+        return []
+    with path.open(encoding="utf-8") as f:
+        data = json.load(f)
+    return _parse_entries(data.get("closed", []))
+
+
+def _load_closed_with_archives(
+    hot_path: Path,
+    include_archives: bool = True,
+) -> list[ClosedTrade]:
+    """ホットファイル + data/archive/*.json.gz を結合して全期間分析用の
+    ClosedTrade リストを返す。
+
+    archive は detected_at / closed_at で前、hot が後になるよう結合する。
+    重複排除はしない (archive への移動時に hot から削除済みのため)。
+    """
+    records = _load_closed(hot_path)
+    if include_archives:
+        archived = _parse_entries(load_all_archived())
+        # アーカイブはホットより古いので先頭に置く (集計では順序は問題にならない
+        # が、レポートの "最新N件" 系では意味を持つため念のため)
+        records = archived + records
+    return records
 
 
 # ---------------------------------------------------------------------------
@@ -1859,19 +1890,29 @@ def _section_daily_direction(closed: list[ClosedTrade]) -> str:
 def generate_report(
     input_path: Path = DEFAULT_INPUT,
     output_path: Path = DEFAULT_OUTPUT,
+    include_archives: bool = True,
 ) -> Path:
-    """experiments.json を読み込み Markdown レポートを書き出す。
+    """experiments.json + data/archive/*.json.gz を読み込み Markdown レポートを
+    書き出す。
 
     Returns:
         書き出した Markdown ファイルのパス。
     """
-    closed = _load_closed(input_path)
+    hot = _load_closed(input_path)
+    archived: list[ClosedTrade] = []
+    if include_archives:
+        archived = _parse_entries(load_all_archived())
+    closed = archived + hot
+
+    source_desc = f"`{input_path}`"
+    if archived:
+        source_desc += f" + {len(archived)} archived from `data/archive/`"
 
     header = [
         "# Filter Granularity Experiment Report",
         "",
-        f"- source: `{input_path}`",
-        f"- closed shadow trades: **{len(closed)}**",
+        f"- source: {source_desc}",
+        f"- closed shadow trades: **{len(closed)}** (hot {len(hot)} + archive {len(archived)})",
         "",
         "シャドウトレードは『現行 STRICT フィルターを通ったか否かに関わらず』",
         "全ての急騰候補を仮想エントリーとして追跡している。各レコードは",
@@ -1992,16 +2033,21 @@ def _parse_args() -> argparse.Namespace:
         description="Generate filter-granularity PnL report from shadow trades."
     )
     p.add_argument("--in",  dest="input",  default=str(DEFAULT_INPUT),
-                   help="path to experiments.json")
+                   help="path to experiments.json (hot file)")
     p.add_argument("--out", dest="output", default=str(DEFAULT_OUTPUT),
                    help="path to write the markdown report")
+    p.add_argument("--no-archives", dest="no_archives", action="store_true",
+                   help="skip data/archive/*.json.gz (hot file only)")
     return p.parse_args()
 
 
 def main() -> None:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     args = _parse_args()
-    path = generate_report(Path(args.input), Path(args.output))
+    path = generate_report(
+        Path(args.input), Path(args.output),
+        include_archives=not args.no_archives,
+    )
     print(f"Wrote {path}")
 
 

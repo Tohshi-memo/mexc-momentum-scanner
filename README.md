@@ -156,6 +156,47 @@ MEXC の最小名目額 (通常 $5 程度) を下回る銘柄も多く、`skippe
 - `data/stats.json` — 実際に追跡した TrackedSymbol の outcome
 - `data/live_portfolio.json` — $100 ベース仮想残高の推移
 
+### シャドウトレードのアーカイブ (肥大化対策)
+
+`data/experiments.json` は日々 200 件以上の closed 記録が追加されるため、
+放置すると単ファイルが GitHub 上限 (100MB) に接近します。以下の仕組みで
+**分析精度を落とさずに** ホットファイルを軽く保ちます。
+
+```
+data/
+├── experiments.json              # ホット (直近 EXPERIMENT_HOT_MAX 件)
+└── archive/
+    ├── experiments_2026-04.json.gz   # 月次 gzip アーカイブ
+    ├── experiments_2026-05.json.gz
+    └── ...
+```
+
+#### ローテーションの動作
+
+- `core/experiment.py` がサイクル毎に `_enforce_history_cap()` を実行
+- ホット件数 > `EXPERIMENT_HOT_MAX` (デフォルト **500**) を超えたら、
+  古い方から `closed_at` の YYYY-MM で分類し `data/archive/` に gzip で追記
+- 分析ツール `tools/analyze_experiments.py` は **ホット + 全 archive を結合**
+  して読み込むため、全期間統計は常に計算可能
+
+#### 容量比較 (参考値)
+
+| 形式 | 1120 件 | 10000 件相当 |
+|---|---|---|
+| JSON (現状) | 13 MB | ~115 MB |
+| gzip (圧縮) | ~4 MB | ~35 MB |
+
+gzip により **約 70% 削減**。月次で分割することで個別ファイルも
+50MB 警告ライン以下に収まります。
+
+#### archive 無しで分析したい場合
+
+```bash
+python tools/analyze_experiments.py --no-archives
+```
+
+ホット `experiments.json` のみで report を生成します (直近分析用)。
+
 ## 主要ディレクトリ
 
 ```
