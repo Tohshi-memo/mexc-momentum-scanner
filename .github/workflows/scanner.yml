@@ -90,6 +90,11 @@ jobs:
       # PnL を後から再評価できるようにする。実トレードには影響しない。
       EXPERIMENT_TRACKING_HOURS: '8'
       EXPERIMENT_MAX_PER_CYCLE:  '20'
+      # ホット experiments.json に保持する closed 件数の上限。
+      # 超過分は古い方から data/archive/experiments_YYYY-MM.json.gz に
+      # gzip アーカイブされる。analyze_experiments.py は hot + archive を
+      # 結合して読むため、分析精度は落ちない。
+      EXPERIMENT_HOT_MAX:        '500'
 
       # --- ログ ---
       LOG_LEVEL: 'INFO'

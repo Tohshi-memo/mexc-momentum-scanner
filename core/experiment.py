@@ -25,6 +25,8 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import TYPE_CHECKING
 
+from core.experiment_archive import append_records as _archive_append
+
 if TYPE_CHECKING:
     from utils.mexc_client import MEXCClient
 
@@ -149,13 +151,21 @@ class ExperimentTracker:
         exp.save()
     """
 
-    # 保持件数。207件/日ペースで 5000 件 = 約24日分 = 複数レジームを跨ぐ統計が取れる。
-    # 投資判断には最低2〜4週間のデータが必要なので 5000 に設定。
-    MAX_CLOSED_RECORDS = 5000  # 古い記録は自動的に切り捨て
+    # ホットファイル (experiments.json) に保持する closed 件数の上限。
+    # これを超えたら古いものから data/archive/experiments_YYYY-MM.json.gz に
+    # 月単位で gzip アーカイブし、ホットは軽量に保つ。
+    # 分析 (tools/analyze_experiments.py) はホット + 全アーカイブを結合するため
+    # 分析精度は落ちない。
+    DEFAULT_HOT_MAX = 500
+
+    # hot + archive を足したトータル上限 (主にディスク肥大の緊急ブレーキ)。
+    # 通常は archive が無限に伸びる設計だが、セーフティネットとして。
+    MAX_CLOSED_RECORDS = 5000  # legacy 名残 (アーカイブ移行後は hot のみに適用)
 
     def __init__(self, file_path: Path = EXPERIMENT_FILE) -> None:
         self._file = file_path
         self._tracking_hours = int(os.getenv("EXPERIMENT_TRACKING_HOURS", "8"))
+        self._hot_max = int(os.getenv("EXPERIMENT_HOT_MAX", str(self.DEFAULT_HOT_MAX)))
         self._active: dict[str, ExperimentTrade] = {}
         self._closed: list[ExperimentTrade] = []
         self._load()
@@ -616,10 +626,31 @@ class ExperimentTracker:
         )
 
     def _enforce_history_cap(self) -> None:
-        if len(self._closed) > self.MAX_CLOSED_RECORDS:
-            drop = len(self._closed) - self.MAX_CLOSED_RECORDS
-            self._closed = self._closed[drop:]
-            logger.debug("Pruned %d old experiment record(s).", drop)
+        """ホット件数 > _hot_max なら古い方から月次 gzip に逃がす。
+
+        - 分析ツールは hot + archive を結合するため、移動しても分析精度は不変。
+        - archive 書き込みに失敗した場合はホットに残し、次回再試行。
+        """
+        overflow = len(self._closed) - self._hot_max
+        if overflow <= 0:
+            return
+
+        to_archive = self._closed[:overflow]
+        records = [self._serialize(t) for t in to_archive]
+        try:
+            _archive_append(records)
+        except Exception as e:
+            logger.warning(
+                "Experiment archive failed (%s). Keeping %d record(s) hot.",
+                e, overflow,
+            )
+            return
+
+        self._closed = self._closed[overflow:]
+        logger.info(
+            "Rotated %d record(s) to archive. Hot file now holds %d closed.",
+            overflow, len(self._closed),
+        )
 
     def _save(self) -> None:
         self._file.parent.mkdir(parents=True, exist_ok=True)
