@@ -1,7 +1,7 @@
 # Filter Granularity Experiment Report
 
 - source: `data/experiments.json`
-- closed shadow trades: **1379**
+- closed shadow trades: **1379** (hot 1379 + archive 0)
 
 シャドウトレードは『現行 STRICT フィルターを通ったか否かに関わらず』
 全ての急騰候補を仮想エントリーとして追跡している。各レコードは
