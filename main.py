@@ -34,6 +34,7 @@ from core.live_filter import LiveTradeFilter
 from core.live_portfolio import LivePortfolio
 from core.live_strategy import DIR_SHORT, LiveStrategyBuilder
 from core.scanner import MarketScanner
+from core.strategy_ranker import StrategyRanker
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
 from tools.analyze_experiments import generate_report as generate_experiment_report
@@ -546,7 +547,10 @@ def main() -> None:
     experiment_tracker   = ExperimentTracker()
     live_portfolio       = LivePortfolio()
     live_filter          = LiveTradeFilter()
-    live_strategy        = LiveStrategyBuilder(proposal_builder=builder)
+    strategy_ranker      = StrategyRanker(experiment_tracker)
+    live_strategy        = LiveStrategyBuilder(
+        proposal_builder=builder, ranker=strategy_ranker,
+    )
 
     cycle: int = 0
 
