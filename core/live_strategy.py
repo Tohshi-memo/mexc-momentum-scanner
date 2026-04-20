@@ -36,6 +36,7 @@ from typing import Literal
 from core.analyzer import AnalysisResult
 from core.executor import ProposalBuilder, TradeProposal
 from core.live_filter import LiveFilterDecision, TIER_A, TIER_B, TIER_S
+from core.strategy_ranker import StrategyRanker, StrategyStat
 
 logger = logging.getLogger(__name__)
 
@@ -48,6 +49,34 @@ DIR_SKIP  = "skip"
 ENTRY_MARKET        = "MARKET"
 ENTRY_LIMIT_SCALE   = "LIMIT_SCALE"   # 2段指値
 ENTRY_LIMIT_PATIENT = "LIMIT_PATIENT" # 1本の深い指値
+
+
+# ─── ランカー戦略名 → (entry_style, offset_pct) マッピング ───────────
+# BB3S / ATR / FIB* は AnalysisResult 依存の指値計算が必要なため
+# ライブ発注では未対応。該当した場合はランキング次点にフォールバックする。
+def _strategy_to_entry(name: str) -> tuple[str, float] | None:
+    """ランカーの戦略名から (entry_style, offset_pct) を導出。
+
+    対応:
+        MARKET / ASK                 → ENTRY_MARKET, 0%
+        LIMIT_<N>PCT[_LONG]          → ENTRY_LIMIT_PATIENT, N%
+    未対応 (None を返す):
+        LIMIT_BB3S / LIMIT_ATR / LIMIT_FIB1272 / LIMIT_FIB1618
+    """
+    base = name[:-len("_LONG")] if name.endswith("_LONG") else name
+
+    if base in ("MARKET", "ASK"):
+        return ENTRY_MARKET, 0.0
+
+    if base.startswith("LIMIT_") and base.endswith("PCT"):
+        inner = base[len("LIMIT_"):-len("PCT")]
+        try:
+            pct = float(inner)
+        except ValueError:
+            return None
+        return ENTRY_LIMIT_PATIENT, pct
+
+    return None
 
 
 @dataclass
@@ -94,14 +123,32 @@ class LiveStrategyBuilder:
     サイズ・トレーリング』を決定する。
     """
 
-    def __init__(self, proposal_builder: ProposalBuilder | None = None) -> None:
+    def __init__(
+        self,
+        proposal_builder: ProposalBuilder | None = None,
+        ranker: StrategyRanker | None = None,
+    ) -> None:
         self._proposal = proposal_builder or ProposalBuilder()
+        self._ranker = ranker
 
         # ─── リスク設定 ──────────────────────────────────────────────
         # 口座残高のうち 1 トレードで失って良い比率 (%)
         self._base_risk_pct:  float = float(os.getenv("LIVE_BASE_RISK_PCT",  "0.5"))
         self._max_risk_pct:   float = float(os.getenv("LIVE_MAX_RISK_PCT",   "1.5"))
         self._max_leverage:   float = float(os.getenv("LIVE_MAX_LEVERAGE",   "3.0"))
+
+        # ─── ランカー採用設定 ────────────────────────────────────────
+        # True: 実質期待値 (直近20件) トップを direction/entry_style として採用
+        # False: 旧ロジック (tier × recent_short_edge で判定)
+        self._use_ranker: bool = (
+            os.getenv("LIVE_USE_RANKER", "true").lower() != "false"
+        )
+        # 実行可能な戦略の最低 EV (%)。これ未満なら DIR_SKIP。
+        self._min_ev_pct: float = float(os.getenv("LIVE_MIN_EV_PCT", "0.0"))
+        # 現在の executor は SHORT-only。True の場合 LONG はランキング対象外。
+        self._short_only: bool = (
+            os.getenv("LIVE_SHORT_ONLY", "true").lower() != "false"
+        )
 
         # Tier ごとのサイズ倍率
         self._tier_mult_s: float = float(os.getenv("LIVE_TIER_MULT_S", "1.50"))
@@ -170,22 +217,45 @@ class LiveStrategyBuilder:
         # SL/TP は既存の ATR ベースロジックで計算
         proposal = self._proposal.build(result)
 
-        direction = self._decide_direction(recent_short_edge_pct)
-        if direction == DIR_SKIP:
+        # ─── ランカー採用: 直近20件で実質期待値トップの戦略を選ぶ ───
+        ranker_pick: StrategyStat | None = None
+        if self._use_ranker and self._ranker is not None:
+            ranker_pick = self._select_from_ranker()
+
+        if ranker_pick is not None:
+            direction = DIR_LONG if ranker_pick.is_long else DIR_SHORT
+            entry_style, legs = self._legs_from_ranker(
+                price=result.price,
+                direction=direction,
+                strategy_name=ranker_pick.strategy,
+            )
+        else:
+            # ランカー未使用 / データ不足 → 旧ロジック (tier × edge)
+            direction = self._decide_direction(recent_short_edge_pct)
+            if direction == DIR_SKIP:
+                return LiveTradePlan(
+                    symbol=result.symbol,
+                    direction=DIR_SKIP,
+                    entry_style=ENTRY_MARKET,
+                    reasons=["direction unclear (SHORT/LONG edge 拮抗)"],
+                    created_from_proposal=proposal,
+                )
+            entry_style, legs = self._build_entry_legs(
+                price=result.price,
+                direction=direction,
+                tier=decision.tier,
+                recent_short_edge_pct=recent_short_edge_pct,
+            )
+
+        # ランカー採用時に positive-EV 戦略が見つからなかった場合
+        if self._use_ranker and self._ranker is not None and ranker_pick is None:
             return LiveTradePlan(
                 symbol=result.symbol,
                 direction=DIR_SKIP,
                 entry_style=ENTRY_MARKET,
-                reasons=["direction unclear (SHORT/LONG edge 拮抗)"],
+                reasons=[f"no ranker pick (min_ev={self._min_ev_pct:.2f}%, short_only={self._short_only})"],
                 created_from_proposal=proposal,
             )
-
-        entry_style, legs = self._build_entry_legs(
-            price=result.price,
-            direction=direction,
-            tier=decision.tier,
-            recent_short_edge_pct=recent_short_edge_pct,
-        )
 
         risk_pct = self._position_risk_pct(decision.tier, decision.score)
         position_usdt = self._position_notional(
@@ -212,7 +282,12 @@ class LiveStrategyBuilder:
         )
 
         reasons = [f"tier={decision.tier}"] + decision.boosters
-        if recent_short_edge_pct is not None:
+        if ranker_pick is not None:
+            reasons.append(
+                f"ranker={ranker_pick.strategy} EV={ranker_pick.effective_ev:+.2f}% "
+                f"(filled={ranker_pick.filled}/{ranker_pick.total})"
+            )
+        elif recent_short_edge_pct is not None:
             reasons.append(f"short_edge={recent_short_edge_pct:.0f}%")
 
         return LiveTradePlan(
@@ -235,7 +310,57 @@ class LiveStrategyBuilder:
         )
 
     # ------------------------------------------------------------------
-    # Internal: direction decision
+    # Internal: ranker-based direction + entry style
+    # ------------------------------------------------------------------
+
+    def _select_from_ranker(self) -> StrategyStat | None:
+        """ランカーから実装可能な最高 EV 戦略を選ぶ。
+
+        条件:
+          - effective_ev > LIVE_MIN_EV_PCT (既定 0.0)
+          - short_only=True なら SHORT 戦略のみ
+          - _strategy_to_entry() が対応している戦略のみ
+            (BB3S/ATR/FIB は未対応のため次点を探す)
+        """
+        if self._ranker is None:
+            return None
+
+        ranked = self._ranker.compute()
+        for s in ranked:
+            if s.effective_ev <= self._min_ev_pct:
+                # 以降も降順なので positive EV は出ない
+                break
+            if self._short_only and s.is_long:
+                continue
+            if _strategy_to_entry(s.strategy) is None:
+                continue
+            return s
+        return None
+
+    def _legs_from_ranker(
+        self,
+        *,
+        price: float,
+        direction: str,
+        strategy_name: str,
+    ) -> tuple[str, list[EntryLeg]]:
+        """ランカー選出戦略から entry_style と legs を構築。"""
+        mapped = _strategy_to_entry(strategy_name)
+        if mapped is None:
+            # 呼び出し側で対応済みだが念のため MARKET フォールバック
+            return ENTRY_MARKET, [EntryLeg(kind="MARKET", price=price, weight=1.0)]
+
+        entry_style, offset_pct = mapped
+        if entry_style == ENTRY_MARKET or offset_pct == 0.0:
+            return ENTRY_MARKET, [EntryLeg(kind="MARKET", price=price, weight=1.0)]
+
+        limit_price = self._offset_price(price, direction, offset_pct)
+        return ENTRY_LIMIT_PATIENT, [
+            EntryLeg(kind="LIMIT", price=limit_price, weight=1.0),
+        ]
+
+    # ------------------------------------------------------------------
+    # Internal: direction decision (legacy fallback)
     # ------------------------------------------------------------------
 
     def _decide_direction(
