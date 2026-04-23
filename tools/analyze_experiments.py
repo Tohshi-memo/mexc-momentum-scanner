@@ -406,10 +406,11 @@ def _section_summary(closed: list[ClosedTrade]) -> str:
             "| # | strategy | filled/total | avg PnL | 実質期待値 | トレンド (直近20件 − 全期間) |",
             "|---|----------|-------------|---------|-----------|----------------------------|",
         ]
+        # 直近窓では母数が小さいため閾値を窓の半分に下げる
+        warn_threshold = 30 if period == "全期間" else max(1, len(closed[-20:]) // 2)
         for i, (strat, d) in enumerate(ranked, 1):
             filled_str = f"{d['filled']}/{d['total']}"
-            # filled が少ない場合は参考値マーカー
-            if d["filled"] < 30:
+            if d["filled"] < warn_threshold:
                 filled_str += "⚠️"
             trend = _trend(strat, d) if period == "全期間" else "–"
             rows.append(
@@ -422,7 +423,7 @@ def _section_summary(closed: list[ClosedTrade]) -> str:
     lines += [
         "**読み方**: 実質期待値 = fill率 × avg PnL (未約定の機会損失を加味)。",
         "トレンドは「直近20件の実質期待値 − 全期間」の差分。**📈 改善 / ⚠️ 悪化 / ✅ 安定**。",
-        "⚠️ マーク = filled 件数 < 30 (統計的参考値)。",
+        "⚠️ マーク = 約定数が統計的に不十分 (全期間: <30件 / 直近20件: <10件)。",
         "",
         "---",
         "",
