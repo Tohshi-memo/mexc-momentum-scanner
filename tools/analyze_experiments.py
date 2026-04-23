@@ -339,10 +339,10 @@ def _compute_strategy_ev(
 def _section_summary(closed: list[ClosedTrade]) -> str:
     """レポート冒頭の意思決定サマリー。
 
-    全期間 vs 直近20件で各戦略の実質期待値トップ5を比較。
+    全期間 vs 直近20件で各戦略の実質期待値トップ10を比較。
     トレンド矢印でレジーム変化を即座に把握できる。
     """
-    lines = ["## 0. 意思決定サマリー (今使える戦略トップ5)", ""]
+    lines = ["## 0. 意思決定サマリー (今使える戦略トップ10)", ""]
 
     if len(closed) < 5:
         lines += [
@@ -372,10 +372,17 @@ def _section_summary(closed: list[ClosedTrade]) -> str:
     def _is_long(name: str) -> bool:
         return name.endswith("_LONG")
 
-    all_short  = [x for x in all_ranked if not _is_long(x[0])][:5]
-    all_long   = [x for x in all_ranked if _is_long(x[0])][:5]
-    rec_short  = [x for x in recent_ranked if not _is_long(x[0])][:5]
-    rec_long   = [x for x in recent_ranked if _is_long(x[0])][:5]
+    def _is_good_trend(strat: str, all_d: dict) -> bool:
+        """📈 改善 / ✅ 安定 のみ採用 (⚠️ 悪化は除外)。判定不能は残す。"""
+        r = recent_stats.get(strat)
+        if r is None or r["effective_ev"] is None or all_d["effective_ev"] is None:
+            return True
+        return (r["effective_ev"] - all_d["effective_ev"]) >= -0.1
+
+    all_short  = [x for x in all_ranked if not _is_long(x[0]) and _is_good_trend(x[0], x[1])][:10]
+    all_long   = [x for x in all_ranked if _is_long(x[0]) and _is_good_trend(x[0], x[1])][:10]
+    rec_short  = [x for x in recent_ranked if not _is_long(x[0])][:10]
+    rec_long   = [x for x in recent_ranked if _is_long(x[0])][:10]
 
     def _trend(strat: str, all_d: dict) -> str:
         """全期間 vs 直近でのトレンド矢印。"""
@@ -420,14 +427,14 @@ def _section_summary(closed: list[ClosedTrade]) -> str:
         "---",
         "",
     ]
-    lines += _build_table(all_short, "🔽 SHORT トップ5", "全期間")
-    lines += _build_table(all_long,  "🔼 LONG トップ5",  "全期間")
+    lines += _build_table(all_short, "🔽 SHORT トップ10", "全期間")
+    lines += _build_table(all_long,  "🔼 LONG トップ10",  "全期間")
 
     # 直近 20 件のトップ (対照的に見せる)
     if len(closed) >= 20:
         lines += ["---", "", "### 直近20件ランキング (今の相場で機能している戦略)", ""]
-        lines += _build_table(rec_short, "🔽 SHORT トップ5", "直近20件")
-        lines += _build_table(rec_long,  "🔼 LONG トップ5",  "直近20件")
+        lines += _build_table(rec_short, "🔽 SHORT トップ10", "直近20件")
+        lines += _build_table(rec_long,  "🔼 LONG トップ10",  "直近20件")
 
     # ドリフトの警告
     if all_short and rec_short:
