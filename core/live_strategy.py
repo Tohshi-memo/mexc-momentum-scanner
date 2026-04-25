@@ -144,7 +144,9 @@ class LiveStrategyBuilder:
             os.getenv("LIVE_USE_RANKER", "true").lower() != "false"
         )
         # 実行可能な戦略の最低 EV (%)。これ未満なら DIR_SKIP。
-        self._min_ev_pct: float = float(os.getenv("LIVE_MIN_EV_PCT", "0.0"))
+        # 0.20% は experiment_report セクション 0 で「📈改善 かつ 全期間 EV +」
+        # を満たす SHORT 戦略 (LIMIT_5PCT 等) の境界値。
+        self._min_ev_pct: float = float(os.getenv("LIVE_MIN_EV_PCT", "0.20"))
         # 現在の executor は SHORT-only。True の場合 LONG はランキング対象外。
         self._short_only: bool = (
             os.getenv("LIVE_SHORT_ONLY", "true").lower() != "false"
