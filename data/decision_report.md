@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T15:01:22.410192+00:00
+- generated_at: 2026-04-30T15:06:24.038816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2711**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T15:01:21.185715+00:00 / 保存件数 25/288
-- BTC: STAGNANT 1h +0.08% price=76316.4
+- 更新: 2026-04-30T15:06:22.551035+00:00 / 保存件数 26/288
+- BTC: STAGNANT 1h -0.09% price=76190.0
 - Funnel: target 762 → liquid 224 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +39.96% | $1,968,430.55 |
-| BSB/USDT:USDT | +39.08% | $43,865,001.97 |
-| SKYAI/USDT:USDT | +32.18% | $23,110,590.03 |
-| ROLL/USDT:USDT | +24.40% | $2,952,985.96 |
-| BIO/USDT:USDT | +21.61% | $3,484,707.55 |
+| BR/USDT:USDT | +41.23% | $2,030,952.98 |
+| BSB/USDT:USDT | +40.28% | $43,986,738.37 |
+| SKYAI/USDT:USDT | +31.97% | $23,160,842.77 |
+| ROLL/USDT:USDT | +23.46% | $2,958,415.62 |
+| BIO/USDT:USDT | +20.94% | $3,488,063.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.20% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.99% | +0.91% |
-| QCOMSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.75% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.64% |
-| SWARMS/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
+| POWER/USDT:USDT | below_1h_threshold | +1.66% | +1.75% |
+| BSB/USDT:USDT | below_1h_threshold | +1.37% | +1.46% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.75% | +0.84% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.82% |
+| BR/USDT:USDT | below_1h_threshold | +0.65% | +0.74% |
 
 ## 4. 次に見るべき不足
 
