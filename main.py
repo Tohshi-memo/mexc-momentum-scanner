@@ -39,6 +39,7 @@ from core.strategy_ranker import StrategyRanker
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
 from tools.analyze_experiments import generate_report as generate_experiment_report
+from tools.decision_report import generate_report as generate_decision_report
 from tools.virtual_portfolio import update_portfolio_report
 from utils.display import (
     console,
@@ -669,6 +670,11 @@ def main() -> None:
                 generate_experiment_report()
             except Exception as e:
                 logger.warning("Failed to regenerate experiment report: %s", e)
+            # 人間が読むための短い判断レポートを再生成
+            try:
+                generate_decision_report()
+            except Exception as e:
+                logger.warning("Failed to regenerate decision report: %s", e)
             # バーチャルポートフォリオのサマリーをログ出力
             try:
                 update_portfolio_report()
