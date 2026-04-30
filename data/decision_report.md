@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-04-30T20:31:12.932766+00:00
+- generated_at: 2026-04-30T20:36:40.464701+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2733**
+- closed shadow trades: **2734**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2733, expectancy=-0.10%
+- 全期間 MARKET基準: n=2734, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=-1.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | LIMIT_6PCT | 9/20 | 45.0% | +1.94% | **+0.87%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_8PCT | 4/20 | 20.0% | +2.85% | **+0.57%** |
+| LIMIT_5PCT | 10/20 | 50.0% | +0.88% | **+0.44%** |
 | LIMIT_9PCT | 3/20 | 15.0% | +2.86% | **+0.43%** |
-| LIMIT_5PCT | 9/20 | 45.0% | +0.87% | **+0.39%** |
 
 ### シャドウ上位 LONG
 
@@ -46,9 +46,9 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T20:31:08.565665+00:00 / 保存件数 95/288
-- BTC: STAGNANT 1h +0.07% price=76425.1
-- Funnel: target 757 → liquid 224 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-04-30T20:36:36.221668+00:00 / 保存件数 96/288
+- BTC: STAGNANT 1h +0.12% price=76462.8
+- Funnel: target 757 → liquid 225 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +19.02% | $10,746,588.04 |
-| DRIFT/USDT:USDT | +11.53% | $1,191,735.07 |
-| NAORIS/USDT:USDT | +10.46% | $11,290,705.05 |
-| ORCA/USDT:USDT | +8.49% | $2,777,870.70 |
-| BIO/USDT:USDT | +8.19% | $3,882,878.27 |
+| BR/USDT:USDT | +20.38% | $10,848,117.95 |
+| NAORIS/USDT:USDT | +11.33% | $11,488,678.77 |
+| DRIFT/USDT:USDT | +10.86% | $1,202,635.82 |
+| ORCA/USDT:USDT | +8.96% | $2,813,429.65 |
+| BIO/USDT:USDT | +8.75% | $3,892,699.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEGA/USDT:USDT | below_1h_threshold | +4.23% | +4.16% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.10% | +3.03% |
-| ZBCN/USDT:USDT | below_1h_threshold | +2.98% | +2.92% |
-| BLEND/USDT:USDT | below_1h_threshold | +2.43% | +2.36% |
-| TAC/USDT:USDT | below_1h_threshold | +2.40% | +2.33% |
+| MEGA/USDT:USDT | below_1h_threshold | +4.49% | +4.37% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.77% | +3.66% |
+| TAC/USDT:USDT | below_1h_threshold | +3.48% | +3.37% |
+| BLEND/USDT:USDT | below_1h_threshold | +3.26% | +3.15% |
+| ZBCN/USDT:USDT | below_1h_threshold | +3.17% | +3.06% |
 
 ## 4. 次に見るべき不足
 
