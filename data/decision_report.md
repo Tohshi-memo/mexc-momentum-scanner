@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T19:01:14.698716+00:00
+- generated_at: 2026-04-30T19:06:01.899428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2730**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T19:01:13.150608+00:00 / 保存件数 76/288
-- BTC: STAGNANT 1h +0.01% price=76317.1
-- Funnel: target 757 → liquid 218 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-04-30T19:06:00.391991+00:00 / 保存件数 77/288
+- BTC: STAGNANT 1h -0.02% price=76291.6
+- Funnel: target 757 → liquid 219 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +21.84% | $7,399,693.72 |
-| BIO/USDT:USDT | +8.62% | $3,762,654.08 |
-| AIOT/USDT:USDT | +6.82% | $15,334,978.62 |
-| CVNASTOCK/USDT:USDT | +4.80% | $3,583,564.74 |
-| ASTEROID/USDT:USDT | +4.57% | $3,806,652.84 |
+| BR/USDT:USDT | +24.13% | $7,574,977.04 |
+| BIO/USDT:USDT | +9.54% | $3,769,349.58 |
+| AIOT/USDT:USDT | +6.29% | $15,489,265.93 |
+| APE/USDT:USDT | +5.94% | $7,071,111.68 |
+| CVNASTOCK/USDT:USDT | +5.27% | $3,583,877.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +0.59% | +0.58% |
-| RLS/USDT:USDT | below_1h_threshold | +0.48% | +0.47% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +0.25% | +0.24% |
-| APE/USDT:USDT | below_1h_threshold | +0.25% | +0.24% |
+| APE/USDT:USDT | below_1h_threshold | +3.47% | +3.49% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.76% | +0.79% |
+| CVNASTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.60% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.50% | +0.52% |
 
 ## 4. 次に見るべき不足
 
