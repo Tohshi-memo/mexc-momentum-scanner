@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T22:01:24.898125+00:00
+- generated_at: 2026-04-30T22:05:59.806897+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2737**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T22:01:23.266536+00:00 / 保存件数 113/288
-- BTC: STAGNANT 1h +0.08% price=76265.9
+- 更新: 2026-04-30T22:05:58.474565+00:00 / 保存件数 114/288
+- BTC: STAGNANT 1h +0.09% price=76270.0
 - Funnel: target 756 → liquid 218 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +18.43% | $13,176,831.43 |
-| AIOT/USDT:USDT | +17.70% | $17,175,020.90 |
-| ORCA/USDT:USDT | +13.95% | $2,979,555.82 |
-| DRIFT/USDT:USDT | +11.28% | $1,269,777.90 |
-| GENIUS/USDT:USDT | +10.95% | $1,094,891.32 |
+| BR/USDT:USDT | +17.87% | $13,207,256.56 |
+| AIOT/USDT:USDT | +16.93% | $17,285,059.41 |
+| ORCA/USDT:USDT | +13.68% | $3,005,713.68 |
+| DRIFT/USDT:USDT | +11.76% | $1,273,324.31 |
+| GENIUS/USDT:USDT | +11.68% | $1,097,242.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +0.84% | +0.75% |
-| BR/USDT:USDT | below_1h_threshold | +0.84% | +0.75% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.90% | +0.81% |
+| LAB/USDT:USDT | below_1h_threshold | +0.76% | +0.67% |
+| BLEND/USDT:USDT | below_1h_threshold | +0.74% | +0.66% |
+| BIO/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
 | SILVER/USDT:USDT | below_1h_threshold | +0.62% | +0.54% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +0.46% | +0.38% |
-| ENJ/USDT:USDT | below_1h_threshold | +0.40% | +0.31% |
 
 ## 4. 次に見るべき不足
 
