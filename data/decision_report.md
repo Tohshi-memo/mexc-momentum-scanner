@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T14:46:28.226918+00:00
+- generated_at: 2026-04-30T14:51:18.563164+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2711**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T14:46:26.244574+00:00 / 保存件数 22/288
-- BTC: STAGNANT 1h -0.07% price=76319.9
-- Funnel: target 760 → liquid 224 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
+- 更新: 2026-04-30T14:51:16.398854+00:00 / 保存件数 23/288
+- BTC: STAGNANT 1h -0.04% price=76340.0
+- Funnel: target 760 → liquid 225 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.3 >= 65=1, 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +42.18% | $44,525,476.57 |
-| BR/USDT:USDT | +37.23% | $1,788,777.54 |
-| ROLL/USDT:USDT | +34.57% | $2,919,924.27 |
-| SKYAI/USDT:USDT | +31.80% | $23,640,839.01 |
-| BIO/USDT:USDT | +21.61% | $3,488,072.58 |
+| BSB/USDT:USDT | +39.17% | $44,683,443.88 |
+| BR/USDT:USDT | +35.80% | $1,821,370.94 |
+| SKYAI/USDT:USDT | +32.96% | $23,809,833.06 |
+| ROLL/USDT:USDT | +30.35% | $2,929,222.65 |
+| BIO/USDT:USDT | +20.91% | $3,501,758.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.67% | +4.74% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.32% | +3.38% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.97% | +2.04% |
-| BIO/USDT:USDT | below_1h_threshold | +1.90% | +1.97% |
-| LLYSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.67% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.74% | +2.78% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.58% |
+| QCOMSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.45% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.32% | +2.36% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.82% |
 
 ## 4. 次に見るべき不足
 
