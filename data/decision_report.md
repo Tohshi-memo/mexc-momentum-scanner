@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T20:01:12.588950+00:00
+- generated_at: 2026-04-30T20:06:05.208442+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2731**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T20:01:11.051089+00:00 / 保存件数 89/288
-- BTC: STAGNANT 1h +0.00% price=76376.7
+- 更新: 2026-04-30T20:06:03.704558+00:00 / 保存件数 90/288
+- BTC: STAGNANT 1h +0.01% price=76382.4
 - Funnel: target 757 → liquid 222 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +19.85% | $9,607,527.34 |
-| DRIFT/USDT:USDT | +13.87% | $1,103,201.40 |
-| AIOT/USDT:USDT | +9.46% | $16,373,244.75 |
-| NAORIS/USDT:USDT | +7.94% | $10,910,038.37 |
-| BIO/USDT:USDT | +7.89% | $3,846,934.89 |
+| BR/USDT:USDT | +25.22% | $9,884,875.85 |
+| DRIFT/USDT:USDT | +14.91% | $1,120,693.73 |
+| AIOT/USDT:USDT | +10.89% | $16,463,099.72 |
+| NAORIS/USDT:USDT | +9.98% | $11,069,073.76 |
+| BIO/USDT:USDT | +7.46% | $3,854,351.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
-| CVNASTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
-| SKR/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
+| BR/USDT:USDT | below_1h_threshold | +3.09% | +3.08% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.40% | +2.39% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.72% |
+| AIOT/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
 
 ## 4. 次に見るべき不足
 
