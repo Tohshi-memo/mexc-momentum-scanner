@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T18:26:03.835030+00:00
+- generated_at: 2026-04-30T18:31:06.488140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2728**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T18:26:02.288520+00:00 / 保存件数 69/288
-- BTC: STAGNANT 1h +0.11% price=76293.3
+- 更新: 2026-04-30T18:31:05.308973+00:00 / 保存件数 70/288
+- BTC: STAGNANT 1h +0.08% price=76272.4
 - Funnel: target 757 → liquid 229 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +19.12% | $6,324,475.03 |
-| AIOT/USDT:USDT | +13.90% | $14,691,861.99 |
-| ZEREBRO/USDT:USDT | +5.87% | $3,411,352.70 |
-| ASTEROID/USDT:USDT | +5.70% | $3,822,727.79 |
-| BIO/USDT:USDT | +4.67% | $3,752,645.48 |
+| BR/USDT:USDT | +16.56% | $6,453,956.12 |
+| AIOT/USDT:USDT | +10.98% | $14,982,387.91 |
+| BIO/USDT:USDT | +5.76% | $3,758,626.97 |
+| ZEREBRO/USDT:USDT | +5.63% | $3,417,996.77 |
+| ASTEROID/USDT:USDT | +5.40% | $3,836,267.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUNANEW/USDT:USDT | below_1h_threshold | +1.88% | +1.77% |
-| LAB/USDT:USDT | below_1h_threshold | +1.32% | +1.21% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.27% | +1.16% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.21% | +1.09% |
-| MYX/USDT:USDT | below_1h_threshold | +1.13% | +1.02% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +2.13% | +2.04% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.52% | +1.44% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.52% | +1.43% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.36% | +1.28% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.27% | +1.19% |
 
 ## 4. 次に見るべき不足
 
