@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T17:01:36.992817+00:00
+- generated_at: 2026-04-30T17:05:54.941386+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2720**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T17:01:35.772368+00:00 / 保存件数 51/288
-- BTC: STAGNANT 1h +0.05% price=76254.7
-- Funnel: target 761 → liquid 226 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-04-30T17:05:53.432341+00:00 / 保存件数 52/288
+- BTC: STAGNANT 1h -0.01% price=76209.7
+- Funnel: target 761 → liquid 227 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +9.36% | $4,215,911.56 |
-| ASTEROID/USDT:USDT | +7.29% | $3,559,291.93 |
-| AIOT/USDT:USDT | +5.92% | $11,684,060.86 |
-| ZEREBRO/USDT:USDT | +5.04% | $3,427,468.61 |
-| BIO/USDT:USDT | +4.79% | $3,621,192.91 |
+| BR/USDT:USDT | +8.85% | $4,309,491.76 |
+| ASTEROID/USDT:USDT | +6.86% | $3,593,336.40 |
+| TAC/USDT:USDT | +6.55% | $5,868,006.75 |
+| AIOT/USDT:USDT | +5.40% | $11,739,243.41 |
+| BIO/USDT:USDT | +5.35% | $3,625,429.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEGA/USDT:USDT | below_1h_threshold | +1.07% | +1.02% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.66% | +0.61% |
-| CVNASTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.60% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.55% | +0.51% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.49% | +0.44% |
+| BSB/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
+| CVNASTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.83% | +0.84% |
+| BIO/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
 
 ## 4. 次に見るべき不足
 
