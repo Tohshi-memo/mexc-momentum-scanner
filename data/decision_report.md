@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-04-30T19:25:56.999000+00:00
+- generated_at: 2026-04-30T19:31:11.886664+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2730**
+- closed shadow trades: **2731**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2730, expectancy=-0.10%
+- 全期間 MARKET基準: n=2731, expectancy=-0.11%
 - 直近20件 MARKET基準: n=20, expectancy=-2.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_2PCT_LONG | 17/20 | 85.0% | +3.21% | **+2.73%** |
+| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +6.41% | **+2.57%** |
 | LIMIT_1PCT_LONG | 20/20 | 100.0% | +2.33% | **+2.33%** |
-| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +6.29% | **+2.20%** |
 | LIMIT_7PCT_LONG | 6/20 | 30.0% | +6.49% | **+1.95%** |
-| ASK_LONG | 20/20 | 100.0% | +1.65% | **+1.65%** |
+| LIMIT_4PCT_LONG | 12/20 | 60.0% | +3.00% | **+1.80%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T19:25:55.411837+00:00 / 保存件数 81/288
-- BTC: STAGNANT 1h +0.19% price=76452.4
-- Funnel: target 757 → liquid 221 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-04-30T19:31:10.362324+00:00 / 保存件数 82/288
+- BTC: STAGNANT 1h +0.19% price=76451.7
+- Funnel: target 757 → liquid 222 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +25.00% | $8,117,596.08 |
-| BIO/USDT:USDT | +10.71% | $3,810,253.47 |
-| AIOT/USDT:USDT | +7.11% | $15,981,463.54 |
-| ZEC/USDT:USDT | +5.32% | $215,185,058.66 |
-| ASTEROID/USDT:USDT | +4.66% | $3,864,108.47 |
+| BR/USDT:USDT | +24.87% | $8,233,257.66 |
+| DRIFT/USDT:USDT | +13.28% | $1,019,202.58 |
+| AIOT/USDT:USDT | +11.37% | $16,190,199.48 |
+| BIO/USDT:USDT | +10.81% | $3,815,974.52 |
+| ASTEROID/USDT:USDT | +4.97% | $3,870,442.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +2.58% | +2.39% |
-| APE/USDT:USDT | below_1h_threshold | +2.14% | +1.96% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.93% | +1.74% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.38% | +1.19% |
-| BIO/USDT:USDT | below_1h_threshold | +1.28% | +1.09% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.87% | +4.68% |
+| TAC/USDT:USDT | below_1h_threshold | +2.81% | +2.63% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.78% | +2.59% |
+| BLEND/USDT:USDT | below_1h_threshold | +2.11% | +1.92% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.99% | +1.80% |
 
 ## 4. 次に見るべき不足
 
