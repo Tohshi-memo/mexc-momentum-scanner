@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T21:05:52.921131+00:00
+- generated_at: 2026-04-30T21:10:56.959343+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2735**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T21:05:51.392058+00:00 / 保存件数 102/288
-- BTC: STAGNANT 1h +0.05% price=76490.2
+- 更新: 2026-04-30T21:10:55.732783+00:00 / 保存件数 103/288
+- BTC: STAGNANT 1h -0.04% price=76417.3
 - Funnel: target 756 → liquid 222 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GENIUS/USDT:USDT | +15.21% | $1,029,348.08 |
-| BR/USDT:USDT | +15.12% | $11,783,745.13 |
-| NAORIS/USDT:USDT | +14.31% | $11,775,608.10 |
-| DRIFT/USDT:USDT | +12.40% | $1,223,305.97 |
-| AIOT/USDT:USDT | +11.90% | $16,488,081.99 |
+| BR/USDT:USDT | +16.86% | $11,950,166.79 |
+| NAORIS/USDT:USDT | +13.99% | $11,856,077.59 |
+| GENIUS/USDT:USDT | +13.15% | $1,058,403.15 |
+| AIOT/USDT:USDT | +12.37% | $16,568,541.45 |
+| ORCA/USDT:USDT | +11.39% | $2,850,193.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +2.09% | +2.04% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.05% | +1.99% |
-| DRIFT/USDT:USDT | below_1h_threshold | +1.55% | +1.50% |
-| LAB/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.35% | +1.30% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.55% | +2.59% |
+| BR/USDT:USDT | below_1h_threshold | +2.45% | +2.49% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.43% | +2.47% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.07% | +2.11% |
+| LAB/USDT:USDT | below_1h_threshold | +1.81% | +1.85% |
 
 ## 4. 次に見るべき不足
 
