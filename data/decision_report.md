@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-04-30T23:31:33.756378+00:00
+- generated_at: 2026-04-30T23:35:59.649670+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2742**
+- closed shadow trades: **2743**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2742, expectancy=-0.11%
+- 全期間 MARKET基準: n=2743, expectancy=-0.11%
 - 直近20件 MARKET基準: n=20, expectancy=-2.21%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,9 +21,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_9PCT | 3/20 | 15.0% | +6.86% | **+1.03%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_8PCT | 3/20 | 15.0% | +5.14% | **+0.77%** |
+| LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +2.80% | **+0.42%** |
 | LIMIT_6PCT | 6/20 | 30.0% | +0.94% | **+0.28%** |
 
@@ -34,8 +34,8 @@
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +3.97% | **+2.78%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +3.03% | **+2.73%** |
 | LIMIT_ATR_LONG | 11/20 | 55.0% | +4.17% | **+2.29%** |
-| ASK_LONG | 20/20 | 100.0% | +2.18% | **+2.18%** |
 | LIMIT_3PCT_LONG | 10/20 | 50.0% | +4.26% | **+2.13%** |
+| ASK_LONG | 20/20 | 100.0% | +1.96% | **+1.96%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T23:31:31.983415+00:00 / 保存件数 132/288
-- BTC: STAGNANT 1h +0.15% price=76312.3
+- 更新: 2026-04-30T23:35:57.880366+00:00 / 保存件数 133/288
+- BTC: STAGNANT 1h +0.14% price=76307.3
 - Funnel: target 757 → liquid 214 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.4 >= 65=1
+- Strict後reject: 4h RSI 74.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +33.78% | $4,681,726.51 |
-| BR/USDT:USDT | +23.55% | $14,646,254.87 |
-| DRIFT/USDT:USDT | +20.28% | $1,424,957.98 |
-| AIOT/USDT:USDT | +14.21% | $18,335,162.49 |
-| GENIUS/USDT:USDT | +13.95% | $1,146,678.78 |
+| ORCA/USDT:USDT | +41.60% | $4,975,880.61 |
+| BR/USDT:USDT | +20.14% | $14,704,030.04 |
+| DRIFT/USDT:USDT | +20.09% | $1,440,442.83 |
+| GENIUS/USDT:USDT | +13.48% | $1,154,443.30 |
+| AIOT/USDT:USDT | +13.21% | $18,354,240.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRIFT/USDT:USDT | below_1h_threshold | +2.74% | +2.59% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.61% | +2.46% |
-| SKR/USDT:USDT | below_1h_threshold | +2.36% | +2.21% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.01% | +1.86% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.87% | +1.72% |
+| SKR/USDT:USDT | below_1h_threshold | +4.73% | +4.59% |
+| DRIFT/USDT:USDT | below_1h_threshold | +2.67% | +2.53% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.35% | +2.21% |
+| APE/USDT:USDT | below_1h_threshold | +1.97% | +1.83% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.87% | +1.73% |
 
 ## 4. 次に見るべき不足
 
