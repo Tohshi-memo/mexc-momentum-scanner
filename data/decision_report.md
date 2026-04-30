@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T19:55:58.388720+00:00
+- generated_at: 2026-04-30T20:01:12.588950+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2731**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T19:55:56.412378+00:00 / 保存件数 88/288
-- BTC: STAGNANT 1h +0.04% price=76337.9
-- Funnel: target 757 → liquid 225 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-04-30T20:01:11.051089+00:00 / 保存件数 89/288
+- BTC: STAGNANT 1h +0.00% price=76376.7
+- Funnel: target 757 → liquid 222 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +21.43% | $9,471,332.65 |
-| DRIFT/USDT:USDT | +14.18% | $1,102,908.79 |
-| AIOT/USDT:USDT | +9.52% | $16,770,177.76 |
-| ORCA/USDT:USDT | +9.44% | $2,840,724.59 |
-| NAORIS/USDT:USDT | +8.93% | $11,002,239.89 |
+| BR/USDT:USDT | +19.85% | $9,607,527.34 |
+| DRIFT/USDT:USDT | +13.87% | $1,103,201.40 |
+| AIOT/USDT:USDT | +9.46% | $16,373,244.75 |
+| NAORIS/USDT:USDT | +7.94% | $10,910,038.37 |
+| BIO/USDT:USDT | +7.89% | $3,846,934.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STXSTOCK/USDT:USDT | below_1h_threshold | +3.88% | +3.84% |
-| BLEND/USDT:USDT | below_1h_threshold | +3.51% | +3.48% |
-| ZBCN/USDT:USDT | below_1h_threshold | +3.20% | +3.17% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.98% | +2.95% |
-| APE/USDT:USDT | below_1h_threshold | +2.59% | +2.55% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
+| CVNASTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| SKR/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
 
 ## 4. 次に見るべき不足
 
