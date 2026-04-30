@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T14:56:11.313007+00:00
+- generated_at: 2026-04-30T15:01:22.410192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2711**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T14:56:09.079527+00:00 / 保存件数 24/288
-- BTC: STAGNANT 1h -0.04% price=76338.9
-- Funnel: target 760 → liquid 228 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 79.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-04-30T15:01:21.185715+00:00 / 保存件数 25/288
+- BTC: STAGNANT 1h +0.08% price=76316.4
+- Funnel: target 762 → liquid 224 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +41.10% | $1,924,088.01 |
-| BSB/USDT:USDT | +38.99% | $44,775,173.62 |
-| SKYAI/USDT:USDT | +32.85% | $23,896,504.98 |
-| ROLL/USDT:USDT | +24.58% | $2,945,827.74 |
-| BIO/USDT:USDT | +21.19% | $3,507,192.88 |
+| BR/USDT:USDT | +39.96% | $1,968,430.55 |
+| BSB/USDT:USDT | +39.08% | $43,865,001.97 |
+| SKYAI/USDT:USDT | +32.18% | $23,110,590.03 |
+| ROLL/USDT:USDT | +24.40% | $2,952,985.96 |
+| BIO/USDT:USDT | +21.61% | $3,484,707.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +3.50% | +3.54% |
-| QCOMSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.69% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.21% | +2.25% |
-| POWER/USDT:USDT | below_1h_threshold | +2.20% | +2.25% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.08% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.20% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.99% | +0.91% |
+| QCOMSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.75% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.64% |
+| SWARMS/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
 
 ## 4. 次に見るべき不足
 
