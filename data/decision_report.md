@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T15:21:18.520031+00:00
+- generated_at: 2026-04-30T15:23:32.971888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2712**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T15:21:17.005028+00:00 / 保存件数 29/288
-- BTC: STAGNANT 1h +0.19% price=76405.6
+- 更新: 2026-04-30T15:23:31.568959+00:00 / 保存件数 30/288
+- BTC: STAGNANT 1h +0.13% price=76358.7
 - Funnel: target 762 → liquid 226 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +38.93% | $2,337,539.10 |
-| BSB/USDT:USDT | +38.43% | $44,284,571.04 |
-| SKYAI/USDT:USDT | +34.01% | $23,481,488.45 |
-| BIO/USDT:USDT | +21.52% | $3,509,719.73 |
-| QCOMSTOCK/USDT:USDT | +20.91% | $5,423,017.79 |
+| BSB/USDT:USDT | +39.24% | $44,350,698.98 |
+| BR/USDT:USDT | +38.22% | $2,390,207.33 |
+| SKYAI/USDT:USDT | +34.57% | $23,606,003.56 |
+| BIO/USDT:USDT | +21.19% | $3,510,902.36 |
+| QCOMSTOCK/USDT:USDT | +21.10% | $5,519,361.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QCOMSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +3.70% |
-| POWER/USDT:USDT | below_1h_threshold | +2.41% | +2.21% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.21% | +2.02% |
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +1.84% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.51% | +1.31% |
+| QCOMSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.45% |
+| POWER/USDT:USDT | below_1h_threshold | +2.67% | +2.53% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.17% | +2.04% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.93% | +1.79% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.61% | +1.48% |
 
 ## 4. 次に見るべき不足
 
