@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T14:06:00.793108+00:00
+- generated_at: 2026-04-30T14:11:10.733598+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2708**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T14:05:59.378232+00:00 / 保存件数 14/288
-- BTC: STAGNANT 1h +0.17% price=76500.0
-- Funnel: target 760 → liquid 222 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-04-30T14:11:09.561484+00:00 / 保存件数 15/288
+- BTC: STAGNANT 1h +0.00% price=76371.0
+- Funnel: target 760 → liquid 223 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROLL/USDT:USDT | +37.34% | $2,851,235.62 |
-| BSB/USDT:USDT | +29.11% | $42,951,596.46 |
-| SKYAI/USDT:USDT | +27.73% | $22,934,284.33 |
-| ASTEROID/USDT:USDT | +24.46% | $2,973,538.67 |
-| BIO/USDT:USDT | +20.85% | $3,421,963.72 |
+| ROLL/USDT:USDT | +38.78% | $2,857,588.09 |
+| BSB/USDT:USDT | +35.01% | $43,360,115.47 |
+| SKYAI/USDT:USDT | +28.01% | $22,994,818.01 |
+| ASTEROID/USDT:USDT | +23.49% | $3,003,124.40 |
+| BIO/USDT:USDT | +18.98% | $3,436,137.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ATH/USDT:USDT | below_1h_threshold | +1.45% | +1.28% |
-| BIO/USDT:USDT | below_1h_threshold | +1.27% | +1.10% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.02% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.01% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.13% | +0.96% |
+| BSB/USDT:USDT | below_1h_threshold | +3.49% | +3.49% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.46% | +1.46% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
+| ENSO/USDT:USDT | below_1h_threshold | +1.06% | +1.06% |
 
 ## 4. 次に見るべき不足
 
