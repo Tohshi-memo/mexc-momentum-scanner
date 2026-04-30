@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T18:41:00.002044+00:00
+- generated_at: 2026-04-30T18:46:00.247474+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2728**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T18:40:58.543429+00:00 / 保存件数 72/288
-- BTC: STAGNANT 1h +0.09% price=76274.4
+- 更新: 2026-04-30T18:45:58.717212+00:00 / 保存件数 73/288
+- BTC: BULLISH 1h +0.20% price=76363.9
 - Funnel: target 757 → liquid 229 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +17.60% | $6,678,632.40 |
-| AIOT/USDT:USDT | +7.67% | $15,299,530.94 |
-| ASTEROID/USDT:USDT | +7.07% | $3,854,717.17 |
-| BIO/USDT:USDT | +5.93% | $3,766,480.36 |
-| ZEREBRO/USDT:USDT | +5.86% | $3,424,864.98 |
+| BR/USDT:USDT | +20.75% | $6,778,389.62 |
+| AIOT/USDT:USDT | +7.67% | $15,476,156.01 |
+| ASTEROID/USDT:USDT | +6.92% | $3,865,921.21 |
+| BIO/USDT:USDT | +6.85% | $3,769,724.22 |
+| ZEREBRO/USDT:USDT | +6.35% | $3,426,768.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.52% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +2.00% | +1.91% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.94% | +1.85% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.93% | +1.84% |
-| FLOW/USDT:USDT | below_1h_threshold | +1.79% | +1.70% |
+| FLOW/USDT:USDT | below_1h_threshold | +2.30% | +2.10% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +1.98% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.14% | +1.94% |
+| BR/USDT:USDT | below_1h_threshold | +1.91% | +1.71% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.82% | +1.61% |
 
 ## 4. 次に見るべき不足
 
