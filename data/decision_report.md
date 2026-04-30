@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-04-30T22:20:58.860182+00:00
+- generated_at: 2026-04-30T22:26:07.150993+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2737**
+- closed shadow trades: **2738**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2737, expectancy=-0.11%
+- 全期間 MARKET基準: n=2738, expectancy=-0.11%
 - 直近20件 MARKET基準: n=20, expectancy=-1.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +3.56% | **+2.67%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +2.58% | **+2.32%** |
-| ASK_LONG | 20/20 | 100.0% | +1.42% | **+1.42%** |
+| ASK_LONG | 20/20 | 100.0% | +1.45% | **+1.45%** |
 | LIMIT_ATR_LONG | 11/20 | 55.0% | +2.55% | **+1.40%** |
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.49% | **+1.37%** |
 
@@ -46,30 +46,31 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T22:20:57.311580+00:00 / 保存件数 118/288
-- BTC: BULLISH 1h +0.22% price=76373.1
-- Funnel: target 756 → liquid 219 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-04-30T22:26:03.216913+00:00 / 保存件数 119/288
+- BTC: BULLISH 1h +0.20% price=76357.3
+- Funnel: target 756 → liquid 219 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +19.55% | $13,395,815.00 |
-| AIOT/USDT:USDT | +17.85% | $17,525,573.69 |
-| ORCA/USDT:USDT | +17.73% | $3,132,603.24 |
-| DRIFT/USDT:USDT | +12.83% | $1,308,190.48 |
-| RDDTSTOCK/USDT:USDT | +11.47% | $3,806,933.33 |
+| BR/USDT:USDT | +19.55% | $13,443,685.89 |
+| ORCA/USDT:USDT | +19.01% | $3,201,231.22 |
+| AIOT/USDT:USDT | +17.88% | $17,582,853.69 |
+| DRIFT/USDT:USDT | +13.70% | $1,315,071.55 |
+| RDDTSTOCK/USDT:USDT | +11.89% | $3,813,741.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +4.36% | +4.14% |
-| UB/USDT:USDT | below_1h_threshold | +3.03% | +2.81% |
-| BR/USDT:USDT | below_1h_threshold | +1.65% | +1.43% |
-| ZBCN/USDT:USDT | below_1h_threshold | +1.55% | +1.33% |
-| DRIFT/USDT:USDT | below_1h_threshold | +1.47% | +1.24% |
+| ZBCN/USDT:USDT | below_1h_threshold | +3.11% | +2.91% |
+| UB/USDT:USDT | below_1h_threshold | +2.89% | +2.69% |
+| DRIFT/USDT:USDT | below_1h_threshold | +2.30% | +2.10% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +1.71% |
+| BR/USDT:USDT | below_1h_threshold | +1.79% | +1.59% |
 
 ## 4. 次に見るべき不足
 
