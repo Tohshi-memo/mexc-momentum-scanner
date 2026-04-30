@@ -327,6 +327,8 @@ class SymbolTracker:
                     "detection_price", "detection_rsi", "detection_1h_change",
                     "sl_price", "tp_price", "conviction", "catalyst_type",
                     "market_regime", "detection_rel_strength",
+                    "live_tier", "live_direction", "live_entry_style",
+                    "live_boosters", "live_score",
                     "outcome", "outcome_at", "outcome_price",
                 ]
             }

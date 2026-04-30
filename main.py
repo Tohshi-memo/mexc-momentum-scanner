@@ -33,6 +33,7 @@ from core.fundamental import FundamentalAnalyzer
 from core.live_filter import LiveTradeFilter
 from core.live_portfolio import LivePortfolio
 from core.live_strategy import DIR_SHORT, LiveStrategyBuilder
+from core.market_context import MarketContextRecorder
 from core.scanner import MarketScanner
 from core.strategy_ranker import StrategyRanker
 from core.stats import StatsManager
@@ -98,6 +99,7 @@ def run_once(
     live_portfolio: LivePortfolio,
     live_filter: LiveTradeFilter,
     live_strategy: LiveStrategyBuilder,
+    market_context: MarketContextRecorder,
     experiment_max_per_cycle: int,
     dry_run: bool,
     cooldown_hours: int,
@@ -189,12 +191,18 @@ def run_once(
     # BTC データが取れなかった場合のみスキップ (regime は常にスキャン)
     if not btc_status.is_signal_active:
         print_no_candidates()
+        _record_market_context(
+            cycle, btc_status, scanner, market_context, [], logger
+        )
         _finalize_expired(tracker, stats, notifier, live_portfolio)
         return
 
     # ── Step 2: 急騰銘柄リスト ────────────────────────────────────────
     print_scan_result(surge_candidates, regime=btc_status.regime)
     if not surge_candidates:
+        _record_market_context(
+            cycle, btc_status, scanner, market_context, [], logger
+        )
         _finalize_expired(tracker, stats, notifier, live_portfolio)
         return
 
@@ -203,6 +211,9 @@ def run_once(
     analysis_results = analyzer.analyze_candidates(surge_candidates)
     for r in analysis_results:
         print_analysis_result(r)
+    _record_market_context(
+        cycle, btc_status, scanner, market_context, analysis_results, logger
+    )
 
     # ── シャドウトレード登録 (フィルター実験用) ──────────────────────
     # confirmed/rejected を問わず、最大 N 件まで仮想エントリー。
@@ -383,6 +394,26 @@ def run_once(
     _finalize_expired(tracker, stats, notifier, live_portfolio)
 
 
+def _record_market_context(
+    cycle: int,
+    btc_status,
+    scanner: MarketScanner,
+    market_context: MarketContextRecorder,
+    analysis_results,
+    logger: logging.Logger,
+) -> None:
+    """Persist a compact scan snapshot without interrupting trading flow."""
+    try:
+        market_context.record(
+            cycle=cycle,
+            btc_status=btc_status,
+            scan_context=scanner.last_scan_context,
+            analysis_results=analysis_results,
+        )
+    except Exception as e:
+        logger.warning("Failed to record market context: %s", e)
+
+
 def _register_shadow_trades(
     analysis_results,
     *,
@@ -551,6 +582,7 @@ def main() -> None:
     live_strategy        = LiveStrategyBuilder(
         proposal_builder=builder, ranker=strategy_ranker,
     )
+    market_context       = MarketContextRecorder()
 
     cycle: int = 0
 
@@ -561,7 +593,7 @@ def main() -> None:
                 cycle, scanner, analyzer, fundamental_analyzer,
                 builder, executor, tracker, stats, notifier,
                 experiment_tracker, live_portfolio,
-                live_filter, live_strategy,
+                live_filter, live_strategy, market_context,
                 experiment_max_per_cycle,
                 dry_run, cooldown_hours, cb_window, cb_loss_threshold,
             )

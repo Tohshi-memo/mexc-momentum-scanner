@@ -96,6 +96,14 @@ jobs:
       # 結合して読むため、分析精度は落ちない。
       EXPERIMENT_HOT_MAX:        '500'
 
+      # --- 軽量な検出前コンテキスト計測 ---
+      # data/market_context.json に市場全体の集計・上位候補・near missだけをローリング保存
+      MARKET_CONTEXT_ENABLED:               'true'
+      MARKET_CONTEXT_MAX_RECORDS:           '288'
+      MARKET_CONTEXT_TOP_SYMBOLS:           '20'
+      MARKET_CONTEXT_NEAR_MISS_LIMIT:       '30'
+      MARKET_CONTEXT_ANALYSIS_SYMBOL_LIMIT: '25'
+
       # --- ログ ---
       LOG_LEVEL: 'INFO'
       LOG_FILE:  'logs/scanner.log'
