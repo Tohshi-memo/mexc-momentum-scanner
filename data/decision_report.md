@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T15:45:53.620411+00:00
+- generated_at: 2026-04-30T15:50:55.955009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2712**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T15:45:52.204240+00:00 / 保存件数 35/288
-- BTC: STAGNANT 1h +0.14% price=76364.8
-- Funnel: target 762 → liquid 226 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-04-30T15:50:54.360708+00:00 / 保存件数 36/288
+- BTC: STAGNANT 1h +0.17% price=76383.6
+- Funnel: target 762 → liquid 227 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +38.93% | $2,807,051.95 |
-| BSB/USDT:USDT | +38.87% | $44,872,271.96 |
-| SKYAI/USDT:USDT | +35.71% | $24,106,683.54 |
-| ASTEROID/USDT:USDT | +22.11% | $3,272,971.56 |
-| QCOMSTOCK/USDT:USDT | +18.90% | $5,686,158.31 |
+| BSB/USDT:USDT | +42.92% | $45,180,314.58 |
+| BR/USDT:USDT | +39.34% | $2,851,549.51 |
+| SKYAI/USDT:USDT | +33.24% | $24,226,287.57 |
+| ROLL/USDT:USDT | +22.42% | $3,017,399.22 |
+| ASTEROID/USDT:USDT | +20.44% | $3,291,069.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.24% | +4.10% |
-| POWER/USDT:USDT | below_1h_threshold | +3.90% | +3.76% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.24% | +3.10% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.60% | +2.46% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +2.32% |
+| BSB/USDT:USDT | below_1h_threshold | +3.38% | +3.21% |
+| POWER/USDT:USDT | below_1h_threshold | +3.31% | +3.14% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.17% |
+| ENSO/USDT:USDT | below_1h_threshold | +1.88% | +1.72% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.79% | +1.63% |
 
 ## 4. 次に見るべき不足
 
