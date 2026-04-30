@@ -27,12 +27,12 @@ elif _env_example_path.exists():
     )
 
 from core.analyzer import TechnicalAnalyzer
-from core.executor import ExecutorFactory, ProposalBuilder
+from core.executor import ExecutorFactory, ProposalBuilder, TradeProposal
 from core.experiment import ExperimentTracker, FilterSnapshot
 from core.fundamental import FundamentalAnalyzer
 from core.live_filter import LiveTradeFilter
 from core.live_portfolio import LivePortfolio
-from core.live_strategy import DIR_SHORT, LiveStrategyBuilder
+from core.live_strategy import DIR_SHORT, ENTRY_MARKET, LiveStrategyBuilder, LiveTradePlan
 from core.market_context import MarketContextRecorder
 from core.scanner import MarketScanner
 from core.strategy_ranker import StrategyRanker
@@ -305,7 +305,19 @@ def run_once(
                 result.symbol, LiveStrategyBuilder.describe_plan(live_plan),
             )
 
-            proposal    = builder.build(result, fundamental)
+            proposal = _proposal_from_live_plan(result, fundamental, live_plan)
+            if proposal is None:
+                console.print(
+                    f"  [dim]▸ [bright_yellow]{result.symbol}[/bright_yellow] "
+                    f"live_strategy {live_plan.entry_style} is shadow-only for now; "
+                    f"skipped live portfolio tracking.[/dim]"
+                )
+                logger.info(
+                    "Live strategy skip %s: unsupported executable plan %s",
+                    result.symbol, LiveStrategyBuilder.describe_plan(live_plan),
+                )
+                continue
+
             exec_result = executor.execute(proposal)
 
             # シャドウトレードにファンダ情報を後付け
@@ -354,7 +366,7 @@ def run_once(
             # LivePortfolio へ転記する)
             is_new = tracker.add_if_new(
                 symbol=result.symbol,
-                detection_price=result.price,
+                detection_price=proposal.entry_price,
                 rsi=result.rsi,
                 change_1h=result.change_1h_pct,
                 sl_price=proposal.stop_loss,
@@ -412,6 +424,47 @@ def _record_market_context(
         )
     except Exception as e:
         logger.warning("Failed to record market context: %s", e)
+
+
+def _proposal_from_live_plan(
+    result,
+    fundamental,
+    live_plan: LiveTradePlan,
+) -> TradeProposal | None:
+    """Build an executable SHORT proposal only when the live plan is truly executable.
+
+    The current executor can safely model/execute immediate MARKET shorts only.
+    LIMIT/scale entries remain in the shadow experiment until pending-order
+    tracking exists, otherwise the live portfolio would be mislabeled.
+    """
+    if live_plan.direction != DIR_SHORT:
+        return None
+    if live_plan.entry_style != ENTRY_MARKET:
+        return None
+
+    market_legs = [
+        leg for leg in live_plan.legs
+        if leg.kind == "MARKET" and leg.weight > 0
+    ]
+    market_weight = sum(leg.weight for leg in market_legs)
+    if not market_legs or market_weight < 0.999:
+        return None
+
+    entry_price = sum(leg.price * leg.weight for leg in market_legs) / market_weight
+    return TradeProposal(
+        symbol=result.symbol,
+        direction=DIR_SHORT,
+        entry_price=entry_price,
+        stop_loss=live_plan.stop_loss,
+        take_profit=live_plan.take_profit,
+        sl_pct=live_plan.sl_pct,
+        tp_pct=live_plan.tp_pct,
+        rsi_at_entry=result.rsi,
+        bb_upper_at_entry=result.bb_upper,
+        volume_24h_usdt=result.volume_24h_usdt,
+        change_1h_pct=result.change_1h_pct,
+        fundamental=fundamental,
+    )
 
 
 def _register_shadow_trades(

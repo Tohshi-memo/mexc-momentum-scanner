@@ -12,6 +12,8 @@ data/experiment_report.md の analysis を踏まえて、シャドウで勝率�
   - ロング優位 → 押し目買い戦略 (LIMIT_2PCT_LONG / LIMIT_ATR_LONG)
 
 エントリー方式 (tier とレジームで切り替え):
+  - 現在の executor / live_portfolio は MARKET ショートだけを正確に計測
+    (LIMIT / LONG / ASK はシャドウ実験で継続計測し、実行側が対応したら昇格)
   - Tier S / 直近ショート優位 (>55%): MARKET (+2.71% 直近) で即時エントリー
   - Tier A / 通常: MARKET 半分 + LIMIT_7PCT 半分 でスケールイン
                    (LIMIT_7PCT は全期間 #1: 実質期待値 +0.59%)
@@ -147,6 +149,10 @@ class LiveStrategyBuilder:
         # 0.20% は experiment_report セクション 0 で「📈改善 かつ 全期間 EV +」
         # を満たす SHORT 戦略 (LIMIT_5PCT 等) の境界値。
         self._min_ev_pct: float = float(os.getenv("LIVE_MIN_EV_PCT", "0.20"))
+        # 直近ランキングの最低約定数。少数サンプルの偶然勝ちを採用しない。
+        self._min_ranker_filled: int = int(
+            os.getenv("LIVE_MIN_RANKER_FILLED", "10")
+        )
         # 現在の executor は SHORT-only。True の場合 LONG はランキング対象外。
         self._short_only: bool = (
             os.getenv("LIVE_SHORT_ONLY", "true").lower() != "false"
@@ -334,7 +340,23 @@ class LiveStrategyBuilder:
                 break
             if self._short_only and s.is_long:
                 continue
-            if _strategy_to_entry(s.strategy) is None:
+            if s.filled < self._min_ranker_filled:
+                logger.debug(
+                    "Ranker skip %s: filled=%d < min=%d",
+                    s.strategy, s.filled, self._min_ranker_filled,
+                )
+                continue
+            mapped = _strategy_to_entry(s.strategy)
+            if mapped is None:
+                continue
+            entry_style, _ = mapped
+            if entry_style != ENTRY_MARKET or s.strategy != "MARKET":
+                # Current executor/live portfolio can only track immediate MARKET
+                # shorts exactly. LIMIT/ASK stay in shadow experiments for now.
+                logger.debug(
+                    "Ranker skip %s: executor supports MARKET only",
+                    s.strategy,
+                )
                 continue
             return s
         return None
