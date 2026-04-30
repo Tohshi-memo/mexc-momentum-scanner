@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T21:56:08.911736+00:00
+- generated_at: 2026-04-30T22:01:24.898125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2737**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T21:56:04.709561+00:00 / 保存件数 112/288
-- BTC: BULLISH 1h -0.27% price=76246.8
-- Funnel: target 756 → liquid 223 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-04-30T22:01:23.266536+00:00 / 保存件数 113/288
+- BTC: STAGNANT 1h +0.08% price=76265.9
+- Funnel: target 756 → liquid 218 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +18.19% | $17,350,967.08 |
-| BR/USDT:USDT | +17.63% | $13,122,081.69 |
-| ORCA/USDT:USDT | +14.09% | $3,147,873.56 |
-| DRIFT/USDT:USDT | +11.87% | $1,275,598.52 |
-| GENIUS/USDT:USDT | +11.70% | $1,114,016.18 |
+| BR/USDT:USDT | +18.43% | $13,176,831.43 |
+| AIOT/USDT:USDT | +17.70% | $17,175,020.90 |
+| ORCA/USDT:USDT | +13.95% | $2,979,555.82 |
+| DRIFT/USDT:USDT | +11.28% | $1,269,777.90 |
+| GENIUS/USDT:USDT | +10.95% | $1,094,891.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.86% | +5.13% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.29% |
-| UB/USDT:USDT | below_1h_threshold | +3.89% | +4.16% |
-| BR/USDT:USDT | below_1h_threshold | +3.13% | +3.40% |
-| ZBCN/USDT:USDT | below_1h_threshold | +3.01% | +3.28% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.84% | +0.75% |
+| BR/USDT:USDT | below_1h_threshold | +0.84% | +0.75% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.62% | +0.54% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +0.46% | +0.38% |
+| ENJ/USDT:USDT | below_1h_threshold | +0.40% | +0.31% |
 
 ## 4. 次に見るべき不足
 
