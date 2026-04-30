@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T15:11:11.988786+00:00
+- generated_at: 2026-04-30T15:16:13.262350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2712**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T15:11:10.509901+00:00 / 保存件数 27/288
-- BTC: STAGNANT 1h +0.11% price=76338.9
+- 更新: 2026-04-30T15:16:12.071612+00:00 / 保存件数 28/288
+- BTC: STAGNANT 1h +0.14% price=76361.5
 - Funnel: target 762 → liquid 224 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +40.17% | $2,126,971.04 |
-| BSB/USDT:USDT | +38.99% | $44,120,646.47 |
-| SKYAI/USDT:USDT | +32.65% | $23,249,779.14 |
-| BIO/USDT:USDT | +21.22% | $3,496,294.64 |
-| RIVER/USDT:USDT | +20.47% | $20,572,430.11 |
+| BR/USDT:USDT | +41.50% | $2,210,590.12 |
+| BSB/USDT:USDT | +38.85% | $44,223,432.17 |
+| SKYAI/USDT:USDT | +33.60% | $23,343,074.78 |
+| BIO/USDT:USDT | +22.24% | $3,501,970.11 |
+| RIVER/USDT:USDT | +20.64% | $20,667,966.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +2.16% | +2.06% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.16% | +2.05% |
-| QCOMSTOCK/USDT:USDT | below_1h_threshold | +2.06% | +1.96% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.06% |
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.01% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.96% | +2.82% |
+| QCOMSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.24% |
+| POWER/USDT:USDT | below_1h_threshold | +2.33% | +2.19% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.17% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.10% |
 
 ## 4. 次に見るべき不足
 
