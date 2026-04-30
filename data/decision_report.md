@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T23:35:59.649670+00:00
+- generated_at: 2026-04-30T23:41:01.501871+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2743**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T23:35:57.880366+00:00 / 保存件数 133/288
-- BTC: STAGNANT 1h +0.14% price=76307.3
+- 更新: 2026-04-30T23:40:59.694213+00:00 / 保存件数 134/288
+- BTC: STAGNANT 1h +0.11% price=76280.3
 - Funnel: target 757 → liquid 214 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.0 >= 65=1
+- Strict後reject: 4h RSI 73.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +41.60% | $4,975,880.61 |
-| BR/USDT:USDT | +20.14% | $14,704,030.04 |
-| DRIFT/USDT:USDT | +20.09% | $1,440,442.83 |
-| GENIUS/USDT:USDT | +13.48% | $1,154,443.30 |
-| AIOT/USDT:USDT | +13.21% | $18,354,240.61 |
+| ORCA/USDT:USDT | +40.86% | $5,120,645.56 |
+| BR/USDT:USDT | +19.11% | $14,827,618.47 |
+| DRIFT/USDT:USDT | +18.82% | $1,452,134.54 |
+| GENIUS/USDT:USDT | +13.86% | $1,157,179.68 |
+| RDDTSTOCK/USDT:USDT | +12.66% | $4,043,651.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +4.73% | +4.59% |
-| DRIFT/USDT:USDT | below_1h_threshold | +2.67% | +2.53% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.35% | +2.21% |
-| APE/USDT:USDT | below_1h_threshold | +1.97% | +1.83% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.87% | +1.73% |
+| SKR/USDT:USDT | below_1h_threshold | +4.73% | +4.62% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.78% | +2.67% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.48% | +2.37% |
+| APE/USDT:USDT | below_1h_threshold | +2.48% | +2.37% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
 
 ## 4. 次に見るべき不足
 
