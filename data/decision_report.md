@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T13:46:07.241750+00:00
+- generated_at: 2026-04-30T13:51:14.880100+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2707**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T13:46:03.051152+00:00 / 保存件数 10/288
-- BTC: BULLISH 1h +0.43% price=76585.8
-- Funnel: target 760 → liquid 224 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.2 >= 65=1
+- 更新: 2026-04-30T13:51:10.433803+00:00 / 保存件数 11/288
+- BTC: BULLISH 1h +0.27% price=76461.6
+- Funnel: target 760 → liquid 225 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROLL/USDT:USDT | +47.26% | $2,822,045.62 |
-| BSB/USDT:USDT | +30.80% | $43,993,051.91 |
-| SKYAI/USDT:USDT | +27.06% | $23,691,579.56 |
-| ASTEROID/USDT:USDT | +24.75% | $3,002,286.25 |
-| BIO/USDT:USDT | +21.19% | $3,412,565.48 |
+| ROLL/USDT:USDT | +46.43% | $2,825,947.21 |
+| BSB/USDT:USDT | +31.49% | $44,078,735.50 |
+| SKYAI/USDT:USDT | +27.82% | $23,754,171.97 |
+| ASTEROID/USDT:USDT | +25.42% | $3,040,583.98 |
+| BR/USDT:USDT | +21.99% | $1,150,390.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.57% | +4.14% |
-| RIVER/USDT:USDT | below_1h_threshold | +4.43% | +4.00% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.92% | +3.49% |
-| FIGHT/USDT:USDT | below_1h_threshold | +3.33% | +2.90% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.13% | +2.70% |
+| RIVER/USDT:USDT | below_1h_threshold | +4.22% | +3.96% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.71% | +3.45% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.48% | +3.22% |
+| FIGHT/USDT:USDT | below_1h_threshold | +2.71% | +2.45% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.66% | +2.39% |
 
 ## 4. 次に見るべき不足
 
