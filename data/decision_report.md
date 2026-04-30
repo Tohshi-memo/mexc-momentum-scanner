@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T18:06:02.575159+00:00
+- generated_at: 2026-04-30T18:11:15.478505+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2727**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T18:06:00.909368+00:00 / 保存件数 64/288
-- BTC: STAGNANT 1h +0.05% price=76249.6
+- 更新: 2026-04-30T18:11:13.789147+00:00 / 保存件数 65/288
+- BTC: STAGNANT 1h +0.03% price=76230.9
 - Funnel: target 757 → liquid 229 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1
+- Strict後reject: 4h RSI 67.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +24.91% | $13,262,200.47 |
-| BR/USDT:USDT | +18.98% | $5,769,135.17 |
-| BIO/USDT:USDT | +7.66% | $3,715,788.11 |
-| ASTEROID/USDT:USDT | +6.43% | $3,785,838.30 |
-| RIVER/USDT:USDT | +5.26% | $25,177,757.00 |
+| AIOT/USDT:USDT | +25.27% | $13,461,427.13 |
+| BR/USDT:USDT | +18.22% | $5,998,302.69 |
+| BIO/USDT:USDT | +6.62% | $3,726,083.86 |
+| ASTEROID/USDT:USDT | +6.07% | $3,799,363.90 |
+| ZEREBRO/USDT:USDT | +4.15% | $3,399,231.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +0.97% | +0.91% |
-| BIO/USDT:USDT | below_1h_threshold | +0.95% | +0.90% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.67% | +0.61% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.49% | +0.43% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +0.81% | +0.78% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.59% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
+| CYS/USDT:USDT | below_1h_threshold | +0.57% | +0.54% |
 
 ## 4. 次に見るべき不足
 
