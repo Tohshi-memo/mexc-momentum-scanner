@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T16:01:22.614652+00:00
+- generated_at: 2026-04-30T16:05:55.603329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2713**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T16:01:21.114616+00:00 / 保存件数 38/288
-- BTC: STAGNANT 1h -0.04% price=76398.6
-- Funnel: target 761 → liquid 223 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-04-30T16:05:54.097227+00:00 / 保存件数 39/288
+- BTC: STAGNANT 1h -0.02% price=76411.9
+- Funnel: target 761 → liquid 224 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NAORIS/USDT:USDT | +0.85% | $10,678,967.84 |
-| BLEND/USDT:USDT | +0.61% | $12,024,280.60 |
-| BIO/USDT:USDT | +0.60% | $3,534,711.02 |
-| TRADOOR/USDT:USDT | +0.56% | $2,132,020.85 |
-| ENSO/USDT:USDT | +0.54% | $1,697,147.34 |
+| APE/USDT:USDT | +2.39% | $5,824,349.83 |
+| ZBT/USDT:USDT | +2.19% | $2,899,564.69 |
+| BLEND/USDT:USDT | +1.62% | $12,040,702.38 |
+| TAC/USDT:USDT | +1.61% | $4,042,646.16 |
+| ENSO/USDT:USDT | +1.57% | $1,723,595.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +0.86% | +0.89% |
-| BLEND/USDT:USDT | below_1h_threshold | +0.62% | +0.66% |
-| BIO/USDT:USDT | below_1h_threshold | +0.61% | +0.65% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +0.57% | +0.60% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.50% | +0.53% |
+| APE/USDT:USDT | below_1h_threshold | +2.26% | +2.28% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.19% | +2.21% |
+| BLEND/USDT:USDT | below_1h_threshold | +1.62% | +1.64% |
+| TAC/USDT:USDT | below_1h_threshold | +1.61% | +1.63% |
+| ENSO/USDT:USDT | below_1h_threshold | +1.58% | +1.60% |
 
 ## 4. 次に見るべき不足
 
