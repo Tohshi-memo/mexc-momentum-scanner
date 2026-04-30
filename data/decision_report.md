@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-04-30T23:01:13.517800+00:00
+- generated_at: 2026-04-30T23:06:03.519047+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2741**
+- closed shadow trades: **2742**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2741, expectancy=-0.11%
+- 全期間 MARKET基準: n=2742, expectancy=-0.11%
 - 直近20件 MARKET基準: n=20, expectancy=-2.21%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,20 +22,20 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_9PCT | 3/20 | 15.0% | +6.86% | **+1.03%** |
-| LIMIT_8PCT | 4/20 | 20.0% | +4.78% | **+0.96%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_7PCT | 4/20 | 20.0% | +2.80% | **+0.56%** |
-| LIMIT_6PCT | 7/20 | 35.0% | +1.08% | **+0.38%** |
+| LIMIT_8PCT | 3/20 | 15.0% | +5.14% | **+0.77%** |
+| LIMIT_7PCT | 3/20 | 15.0% | +2.80% | **+0.42%** |
+| LIMIT_6PCT | 6/20 | 30.0% | +0.94% | **+0.28%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 18/20 | 90.0% | +3.20% | **+2.88%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +4.11% | **+2.87%** |
-| ASK_LONG | 20/20 | 100.0% | +2.38% | **+2.38%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +3.97% | **+2.78%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | +3.03% | **+2.73%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +4.17% | **+2.29%** |
+| ASK_LONG | 20/20 | 100.0% | +2.18% | **+2.18%** |
 | LIMIT_3PCT_LONG | 10/20 | 50.0% | +4.26% | **+2.13%** |
-| LIMIT_ATR_LONG | 10/20 | 50.0% | +4.02% | **+2.01%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T23:01:11.886999+00:00 / 保存件数 126/288
-- BTC: STAGNANT 1h +0.02% price=76209.6
-- Funnel: target 757 → liquid 212 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-04-30T23:06:01.945600+00:00 / 保存件数 127/288
+- BTC: STAGNANT 1h +0.09% price=76268.2
+- Funnel: target 757 → liquid 213 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +22.19% | $14,265,148.93 |
-| ORCA/USDT:USDT | +20.49% | $3,445,713.98 |
-| DRIFT/USDT:USDT | +16.76% | $1,349,423.97 |
-| AIOT/USDT:USDT | +16.56% | $17,970,645.53 |
-| RDDTSTOCK/USDT:USDT | +14.09% | $3,923,186.34 |
+| ORCA/USDT:USDT | +24.07% | $3,556,933.44 |
+| BR/USDT:USDT | +23.67% | $14,339,488.72 |
+| DRIFT/USDT:USDT | +17.05% | $1,358,044.02 |
+| AIOT/USDT:USDT | +15.52% | $18,065,857.13 |
+| RDDTSTOCK/USDT:USDT | +15.19% | $3,937,949.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +0.71% | +0.70% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.71% | +0.69% |
-| APE/USDT:USDT | below_1h_threshold | +0.44% | +0.43% |
-| BR/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.34% | +0.32% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.22% | +2.13% |
+| BR/USDT:USDT | below_1h_threshold | +1.81% | +1.72% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.05% | +0.96% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.89% | +0.80% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.78% | +0.68% |
 
 ## 4. 次に見るべき不足
 
