@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-04-30T17:36:28.739686+00:00
+- generated_at: 2026-04-30T17:41:09.024296+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2722**
+- closed shadow trades: **2724**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2722, expectancy=-0.10%
-- 直近20件 MARKET基準: n=20, expectancy=-1.24%
+- 全期間 MARKET基準: n=2724, expectancy=-0.10%
+- 直近20件 MARKET基準: n=20, expectancy=-2.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.24% | **-1.24%** |
+| MARKET | 20/20 | 100.0% | -2.20% | **-2.20%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_6PCT | 10/20 | 50.0% | +1.93% | **+0.97%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_6PCT | 8/20 | 40.0% | +1.18% | **+0.47%** |
-| LIMIT_BB3S | 6/13 | 46.2% | +1.00% | **+0.46%** |
-| LIMIT_9PCT | 3/20 | 15.0% | +2.86% | **+0.43%** |
-| LIMIT_1PCT | 19/20 | 95.0% | +0.11% | **+0.11%** |
+| LIMIT_9PCT | 4/20 | 20.0% | +3.29% | **+0.66%** |
+| LIMIT_5PCT | 10/20 | 50.0% | +0.38% | **+0.19%** |
+| LIMIT_7PCT | 6/20 | 30.0% | +0.54% | **+0.16%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_7PCT_LONG | 9/20 | 45.0% | +5.66% | **+2.55%** |
-| LIMIT_6PCT_LONG | 10/20 | 50.0% | +4.77% | **+2.39%** |
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +3.27% | **+1.47%** |
-| LIMIT_8PCT_LONG | 6/20 | 30.0% | +3.33% | **+1.00%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +5.70% | **+0.85%** |
+| LIMIT_7PCT_LONG | 7/20 | 35.0% | +6.70% | **+2.35%** |
+| LIMIT_6PCT_LONG | 8/20 | 40.0% | +5.47% | **+2.19%** |
+| LIMIT_1PCT_LONG | 20/20 | 100.0% | +1.87% | **+1.87%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +4.60% | **+1.61%** |
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | +2.55% | **+1.40%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T17:36:27.042613+00:00 / 保存件数 58/288
-- BTC: STAGNANT 1h -0.10% price=76145.8
-- Funnel: target 757 → liquid 229 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1
+- 更新: 2026-04-30T17:41:07.081159+00:00 / 保存件数 59/288
+- BTC: STAGNANT 1h -0.15% price=76109.1
+- Funnel: target 757 → liquid 230 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +15.43% | $4,883,105.69 |
-| AIOT/USDT:USDT | +9.83% | $11,968,194.57 |
-| BIO/USDT:USDT | +7.61% | $3,707,441.43 |
-| ASTEROID/USDT:USDT | +5.82% | $3,794,119.89 |
-| TAC/USDT:USDT | +4.88% | $6,481,591.80 |
+| BR/USDT:USDT | +19.76% | $5,160,188.36 |
+| AIOT/USDT:USDT | +14.24% | $12,285,856.71 |
+| BIO/USDT:USDT | +7.86% | $3,714,300.82 |
+| ASTEROID/USDT:USDT | +5.92% | $3,801,571.94 |
+| ENSO/USDT:USDT | +4.99% | $1,872,972.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +4.35% | +4.45% |
-| BIO/USDT:USDT | below_1h_threshold | +3.16% | +3.25% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.12% | +2.21% |
-| CVNASTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.52% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.50% |
+| BIO/USDT:USDT | below_1h_threshold | +3.16% | +3.30% |
+| ENSO/USDT:USDT | below_1h_threshold | +1.84% | +1.99% |
+| KLACSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.83% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.52% | +1.66% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.66% |
 
 ## 4. 次に見るべき不足
 
