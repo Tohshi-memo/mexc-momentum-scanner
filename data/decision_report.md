@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T23:51:04.088801+00:00
+- generated_at: 2026-04-30T23:55:58.539296+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2743**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T23:51:02.267200+00:00 / 保存件数 136/288
-- BTC: STAGNANT 1h +0.14% price=76307.0
-- Funnel: target 757 → liquid 214 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1
+- 更新: 2026-04-30T23:55:54.348219+00:00 / 保存件数 137/288
+- BTC: STAGNANT 1h +0.14% price=76304.5
+- Funnel: target 757 → liquid 214 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +38.03% | $5,348,958.50 |
-| BR/USDT:USDT | +21.80% | $14,927,253.63 |
-| DRIFT/USDT:USDT | +15.98% | $1,473,435.48 |
-| GENIUS/USDT:USDT | +15.15% | $1,172,641.74 |
-| RDDTSTOCK/USDT:USDT | +12.51% | $4,052,335.91 |
+| ORCA/USDT:USDT | +39.58% | $5,456,154.86 |
+| BR/USDT:USDT | +21.58% | $14,958,236.65 |
+| DRIFT/USDT:USDT | +17.02% | $1,477,432.61 |
+| GENIUS/USDT:USDT | +15.32% | $1,180,357.18 |
+| RDDTSTOCK/USDT:USDT | +13.51% | $4,067,801.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.02% | +3.87% |
-| SKR/USDT:USDT | below_1h_threshold | +3.98% | +3.84% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.25% | +3.10% |
-| GENIUS/USDT:USDT | below_1h_threshold | +3.14% | +3.00% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.53% | +2.39% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.54% | +3.40% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.41% | +3.27% |
+| GENIUS/USDT:USDT | below_1h_threshold | +3.26% | +3.12% |
+| SOMI/USDT:USDT | below_1h_threshold | +2.72% | +2.58% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.83% | +1.69% |
 
 ## 4. 次に見るべき不足
 
