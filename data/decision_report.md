@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T21:35:59.491136+00:00
+- generated_at: 2026-04-30T21:41:00.530717+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2736**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T21:35:57.966579+00:00 / 保存件数 108/288
-- BTC: STAGNANT 1h -0.07% price=76394.5
-- Funnel: target 756 → liquid 223 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-04-30T21:40:58.772477+00:00 / 保存件数 109/288
+- BTC: STAGNANT 1h -0.10% price=76376.7
+- Funnel: target 756 → liquid 223 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +17.49% | $12,734,043.16 |
-| AIOT/USDT:USDT | +14.08% | $17,001,594.28 |
-| ORCA/USDT:USDT | +13.68% | $3,046,895.70 |
-| DRIFT/USDT:USDT | +10.97% | $1,268,703.16 |
-| GENIUS/USDT:USDT | +10.77% | $1,096,450.97 |
+| BR/USDT:USDT | +20.22% | $12,883,266.15 |
+| AIOT/USDT:USDT | +14.45% | $17,090,085.61 |
+| ORCA/USDT:USDT | +13.62% | $3,079,814.38 |
+| GENIUS/USDT:USDT | +12.79% | $1,107,264.98 |
+| DRIFT/USDT:USDT | +10.69% | $1,271,087.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +4.72% | +4.79% |
-| AIOT/USDT:USDT | below_1h_threshold | +4.03% | +4.11% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +3.94% | +4.01% |
-| BR/USDT:USDT | below_1h_threshold | +3.20% | +3.27% |
-| ENSO/USDT:USDT | below_1h_threshold | +2.18% | +2.26% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.87% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.66% | +4.76% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.33% | +4.43% |
+| LAB/USDT:USDT | below_1h_threshold | +3.21% | +3.31% |
+| ZBCN/USDT:USDT | below_1h_threshold | +2.40% | +2.50% |
 
 ## 4. 次に見るべき不足
 
