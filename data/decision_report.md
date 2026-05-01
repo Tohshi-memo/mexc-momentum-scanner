@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T18:06:52.438665+00:00
+- generated_at: 2026-05-01T18:12:02.767440+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2822**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T18:06:50.764352+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78516.5
+- 更新: 2026-05-01T18:12:01.044273+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78476.9
 - Funnel: target 756 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +11.05% | $1,496,132.93 |
-| ZEN/USDT:USDT | +7.89% | $3,902,252.94 |
-| ZEC/USDT:USDT | +7.59% | $303,839,873.60 |
-| MAGMA/USDT:USDT | +5.94% | $1,043,086.59 |
-| MEGA/USDT:USDT | +4.92% | $5,068,313.92 |
+| TAG/USDT:USDT | +14.22% | $1,534,154.71 |
+| ZEN/USDT:USDT | +7.74% | $4,049,342.47 |
+| ZEC/USDT:USDT | +7.67% | $307,308,774.57 |
+| MAGMA/USDT:USDT | +5.76% | $1,043,916.70 |
+| RAVE/USDT:USDT | +4.36% | $11,177,658.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +1.48% | +1.47% |
-| ORCA/USDT:USDT | below_1h_threshold | +0.97% | +0.96% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +0.96% | +0.95% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
-| VVV/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
+| TAG/USDT:USDT | below_1h_threshold | +2.91% | +2.95% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.43% | +1.47% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.17% | +1.21% |
+| TRB/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.92% | +0.96% |
 
 ## 4. 次に見るべき不足
 
