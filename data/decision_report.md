@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-01T19:37:12.122396+00:00
+- generated_at: 2026-05-01T19:42:12.412316+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2825**
+- closed shadow trades: **2826**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.10% / filled 20/20。**
-- 全期間 MARKET基準: n=2825, expectancy=-0.12%
+- 全期間 MARKET基準: n=2826, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+1.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +1.24% | **+1.24%** |
+| ASK | 20/20 | 100.0% | +1.30% | **+1.30%** |
 | MARKET | 20/20 | 100.0% | +1.10% | **+1.10%** |
 | LIMIT_1PCT | 18/20 | 90.0% | +0.73% | **+0.66%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +5.40% | **+0.54%** |
-| LIMIT_BB3S | 2/14 | 14.3% | +3.33% | **+0.48%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 
 ### シャドウ上位 LONG
 
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +2.00% | **+0.80%** |
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.74% | **+0.52%** |
-| LIMIT_BB3S_LONG | 2/6 | 33.3% | +0.44% | **+0.15%** |
+| LIMIT_BB3S_LONG | 2/7 | 28.6% | +0.44% | **+0.13%** |
 | LIMIT_FIB1618_LONG | 2/20 | 10.0% | +0.38% | **+0.04%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.06% | **+0.02%** |
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T19:37:07.863126+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=78288.2
+- 更新: 2026-05-01T19:42:07.861490+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78324.5
 - Funnel: target 756 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +17.30% | $2,596,137.44 |
-| LAB/USDT:USDT | +12.41% | $1,339,072.29 |
-| ZEN/USDT:USDT | +10.58% | $5,740,101.19 |
-| ZEC/USDT:USDT | +6.82% | $302,047,758.48 |
-| SQD/USDT:USDT | +6.39% | $2,077,351.75 |
+| TAG/USDT:USDT | +17.28% | $2,641,841.20 |
+| LAB/USDT:USDT | +13.93% | $1,540,461.07 |
+| ZEN/USDT:USDT | +8.85% | $6,015,275.44 |
+| FIGHT/USDT:USDT | +7.32% | $1,248,866.34 |
+| SQD/USDT:USDT | +7.23% | $2,078,852.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.45% | +2.58% |
-| TRB/USDT:USDT | below_1h_threshold | +1.93% | +2.06% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.92% | +2.05% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.75% | +1.88% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.72% | +1.85% |
+| FIGHT/USDT:USDT | below_1h_threshold | +3.39% | +3.47% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.08% | +2.17% |
+| TAG/USDT:USDT | below_1h_threshold | +1.97% | +2.05% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.64% | +1.73% |
+| BSB/USDT:USDT | below_1h_threshold | +1.55% | +1.63% |
 
 ## 4. 次に見るべき不足
 
