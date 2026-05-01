@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-04-30T23:55:58.539296+00:00
+- generated_at: 2026-05-01T00:01:16.793153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2743**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-04-30T23:55:54.348219+00:00 / 保存件数 137/288
-- BTC: STAGNANT 1h +0.14% price=76304.5
-- Funnel: target 757 → liquid 214 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-01T00:01:15.180333+00:00 / 保存件数 138/288
+- BTC: STAGNANT 1h +0.04% price=76331.4
+- Funnel: target 757 → liquid 210 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +39.58% | $5,456,154.86 |
-| BR/USDT:USDT | +21.58% | $14,958,236.65 |
-| DRIFT/USDT:USDT | +17.02% | $1,477,432.61 |
-| GENIUS/USDT:USDT | +15.32% | $1,180,357.18 |
-| RDDTSTOCK/USDT:USDT | +13.51% | $4,067,801.87 |
+| ORCA/USDT:USDT | +41.40% | $5,503,305.23 |
+| BR/USDT:USDT | +21.56% | $14,985,526.51 |
+| DRIFT/USDT:USDT | +16.31% | $1,481,700.80 |
+| GENIUS/USDT:USDT | +14.70% | $1,176,314.03 |
+| RDDTSTOCK/USDT:USDT | +13.32% | $3,992,444.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +3.54% | +3.40% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.41% | +3.27% |
-| GENIUS/USDT:USDT | below_1h_threshold | +3.26% | +3.12% |
-| SOMI/USDT:USDT | below_1h_threshold | +2.72% | +2.58% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.83% | +1.69% |
+| CVNASTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.61% |
+| ENSO/USDT:USDT | below_1h_threshold | +2.44% | +2.40% |
+| AIOT/USDT:USDT | below_1h_threshold | +0.66% | +0.62% |
+| MEGA/USDT:USDT | below_1h_threshold | +0.66% | +0.62% |
+| SOMI/USDT:USDT | below_1h_threshold | +0.43% | +0.39% |
 
 ## 4. 次に見るべき不足
 
