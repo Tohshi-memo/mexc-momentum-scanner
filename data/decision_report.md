@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T09:46:56.224909+00:00
+- generated_at: 2026-05-01T09:52:01.908649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2781**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T09:46:54.101472+00:00 / 保存件数 258/288
-- BTC: STAGNANT 1h -0.20% price=77188.7
+- 更新: 2026-05-01T09:51:59.675537+00:00 / 保存件数 259/288
+- BTC: STAGNANT 1h -0.18% price=77198.3
 - Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 66.4 >= 65=1
+- Strict後reject: 4h RSI 75.7 >= 65=1, 4h RSI 67.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +64.04% | $8,140,518.76 |
-| BR/USDT:USDT | +43.32% | $23,058,346.69 |
-| UB/USDT:USDT | +38.09% | $11,748,062.10 |
-| ORCA/USDT:USDT | +29.06% | $10,406,701.47 |
-| ZEREBRO/USDT:USDT | +28.64% | $7,048,825.94 |
+| B/USDT:USDT | +63.67% | $8,222,249.01 |
+| BR/USDT:USDT | +43.14% | $23,116,030.50 |
+| UB/USDT:USDT | +36.19% | $11,868,049.27 |
+| ORCA/USDT:USDT | +29.06% | $10,441,989.87 |
+| ZEREBRO/USDT:USDT | +27.36% | $7,160,150.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.40% | +3.60% |
-| ST/USDT:USDT | below_1h_threshold | +3.05% | +3.25% |
-| VINE/USDT:USDT | below_1h_threshold | +1.14% | +1.33% |
-| ENSO/USDT:USDT | below_1h_threshold | +1.12% | +1.32% |
-| RAY/USDT:USDT | below_1h_threshold | +0.80% | +1.00% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.62% | +4.80% |
+| ST/USDT:USDT | below_1h_threshold | +2.64% | +2.82% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.52% | +2.70% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.02% | +1.21% |
+| ENSO/USDT:USDT | below_1h_threshold | +0.95% | +1.13% |
 
 ## 4. 次に見るべき不足
 
