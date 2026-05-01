@@ -1,30 +1,30 @@
 # Decision Report
 
-- generated_at: 2026-05-01T23:47:05.637895+00:00
+- generated_at: 2026-05-01T23:52:01.847552+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2844**
+- closed shadow trades: **2846**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2844, expectancy=-0.12%
-- 直近20件 MARKET基準: n=20, expectancy=-0.67%
+- 全期間 MARKET基準: n=2846, expectancy=-0.12%
+- 直近20件 MARKET基準: n=20, expectancy=-0.69%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.67% | **-0.67%** |
+| MARKET | 20/20 | 100.0% | -0.69% | **-0.69%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 4/20 | 20.0% | +3.42% | **+0.68%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +3.11% | **+0.78%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +4.54% | **+0.68%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | +1.49% | **+0.60%** |
-| LIMIT_5PCT | 5/20 | 25.0% | +2.36% | **+0.59%** |
+| LIMIT_FIB1272 | 6/20 | 30.0% | +2.25% | **+0.67%** |
+| LIMIT_5PCT | 6/20 | 30.0% | +2.13% | **+0.64%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
 
 ### シャドウ上位 LONG
@@ -34,8 +34,8 @@
 | LIMIT_3PCT_LONG | 13/20 | 65.0% | +2.41% | **+1.57%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +2.50% | **+1.37%** |
 | LIMIT_FIB1272_LONG | 9/20 | 45.0% | +2.89% | **+1.30%** |
+| LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.66% | **+1.24%** |
 | LIMIT_6PCT_LONG | 6/20 | 30.0% | +3.58% | **+1.08%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.34% | **+0.94%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T23:47:03.478408+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78100.0
-- Funnel: target 755 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-05-01T23:51:59.787583+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=78106.4
+- Funnel: target 755 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1, 4h RSI 91.8 >= 65=1
+- Strict後reject: 4h RSI 85.1 >= 65=1, 4h RSI 91.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +66.71% | $15,906,236.89 |
-| CHILLGUY/USDT:USDT | +14.33% | $1,141,109.75 |
-| B/USDT:USDT | +11.42% | $61,584,829.61 |
-| WOJAK/USDT:USDT | +9.67% | $1,076,927.55 |
-| FIGHT/USDT:USDT | +9.56% | $1,267,986.50 |
+| LAB/USDT:USDT | +75.35% | $16,612,065.51 |
+| CHILLGUY/USDT:USDT | +14.74% | $1,144,671.44 |
+| WOJAK/USDT:USDT | +12.27% | $1,078,643.76 |
+| FIGHT/USDT:USDT | +9.91% | $1,269,648.00 |
+| BLESS/USDT:USDT | +9.69% | $1,221,629.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIGHT/USDT:USDT | below_1h_threshold | +3.90% | +3.91% |
-| TAG/USDT:USDT | below_1h_threshold | +3.06% | +3.07% |
-| PHAROS/USDT:USDT | below_1h_threshold | +2.72% | +2.73% |
-| APE/USDT:USDT | below_1h_threshold | +2.64% | +2.65% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +1.62% | +1.63% |
+| FIGHT/USDT:USDT | below_1h_threshold | +4.43% | +4.43% |
+| TAG/USDT:USDT | below_1h_threshold | +3.86% | +3.86% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +1.99% | +1.99% |
+| BLEND/USDT:USDT | below_1h_threshold | +1.70% | +1.70% |
+| MEGA/USDT:USDT | below_1h_threshold | +1.46% | +1.46% |
 
 ## 4. 次に見るべき不足
 
