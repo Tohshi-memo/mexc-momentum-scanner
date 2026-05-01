@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T19:06:51.177228+00:00
+- generated_at: 2026-05-01T19:12:06.101477+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2824**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T19:06:49.426650+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=78504.3
+- 更新: 2026-05-01T19:12:04.398049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=78454.3
 - Funnel: target 756 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +17.92% | $2,132,224.04 |
-| ZEN/USDT:USDT | +9.78% | $4,910,743.59 |
-| ZEC/USDT:USDT | +5.91% | $294,916,538.51 |
-| MEGA/USDT:USDT | +5.31% | $4,868,583.30 |
-| SQD/USDT:USDT | +5.19% | $2,060,965.89 |
+| TAG/USDT:USDT | +16.80% | $2,167,430.43 |
+| ZEN/USDT:USDT | +11.30% | $5,114,822.92 |
+| ZEC/USDT:USDT | +6.37% | $296,195,509.60 |
+| SQD/USDT:USDT | +5.77% | $2,064,132.19 |
+| RDDTSTOCK/USDT:USDT | +4.49% | $4,924,826.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +2.53% | +2.39% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.31% | +1.16% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.24% | +1.10% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.00% | +0.86% |
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.74% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.49% | +2.41% |
+| TAG/USDT:USDT | below_1h_threshold | +1.55% | +1.47% |
+| TRB/USDT:USDT | below_1h_threshold | +1.51% | +1.43% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.50% | +1.42% |
+| LAB/USDT:USDT | below_1h_threshold | +0.96% | +0.88% |
 
 ## 4. 次に見るべき不足
 
