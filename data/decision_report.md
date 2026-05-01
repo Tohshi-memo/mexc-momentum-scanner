@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T07:10:54.319303+00:00
+- generated_at: 2026-05-01T07:16:02.618888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2760**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T07:10:52.682233+00:00 / 保存件数 226/288
-- BTC: STAGNANT 1h +0.10% price=77032.5
-- Funnel: target 760 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-01T07:16:00.790813+00:00 / 保存件数 227/288
+- BTC: STAGNANT 1h +0.05% price=76988.6
+- Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +47.08% | $3,488,947.29 |
-| BR/USDT:USDT | +29.45% | $18,990,881.95 |
-| ORCA/USDT:USDT | +28.86% | $10,014,063.81 |
-| GENIUS/USDT:USDT | +21.37% | $1,528,274.18 |
-| RDDTSTOCK/USDT:USDT | +14.56% | $3,909,615.60 |
+| B/USDT:USDT | +51.51% | $1,058,166.63 |
+| ZEREBRO/USDT:USDT | +47.05% | $3,596,594.32 |
+| ORCA/USDT:USDT | +29.13% | $10,056,814.98 |
+| BR/USDT:USDT | +27.89% | $19,052,138.12 |
+| GENIUS/USDT:USDT | +21.68% | $1,543,676.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.82% | +2.72% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.64% | +1.53% |
-| DRIFT/USDT:USDT | below_1h_threshold | +1.33% | +1.23% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.03% | +0.92% |
-| BRETT/USDT:USDT | below_1h_threshold | +0.87% | +0.77% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.99% | +2.94% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
+| VINE/USDT:USDT | below_1h_threshold | +1.48% | +1.43% |
+| EDU/USDT:USDT | below_1h_threshold | +1.31% | +1.26% |
 
 ## 4. 次に見るべき不足
 
