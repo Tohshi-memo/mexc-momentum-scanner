@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T04:19:13.728470+00:00
+- generated_at: 2026-05-01T04:21:01.599838+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2751**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T04:19:12.127033+00:00 / 保存件数 191/288
-- BTC: STAGNANT 1h +0.11% price=77167.0
+- 更新: 2026-05-01T04:20:59.934375+00:00 / 保存件数 192/288
+- BTC: STAGNANT 1h +0.05% price=77119.9
 - Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +29.53% | $9,527,575.74 |
-| BR/USDT:USDT | +25.04% | $17,098,397.81 |
-| GENIUS/USDT:USDT | +16.39% | $1,448,134.43 |
-| ASTEROID/USDT:USDT | +15.37% | $4,166,863.15 |
-| ZEREBRO/USDT:USDT | +15.34% | $1,758,057.67 |
+| ORCA/USDT:USDT | +28.65% | $9,530,185.27 |
+| BR/USDT:USDT | +24.22% | $17,106,749.06 |
+| GENIUS/USDT:USDT | +16.44% | $1,449,265.96 |
+| ASTEROID/USDT:USDT | +16.38% | $4,174,896.05 |
+| ZEREBRO/USDT:USDT | +15.69% | $1,768,674.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRB/USDT:USDT | below_1h_threshold | +3.52% | +3.41% |
-| DRIFT/USDT:USDT | below_1h_threshold | +3.35% | +3.24% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.33% | +2.22% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.76% | +1.65% |
-| APT/USDT:USDT | below_1h_threshold | +1.58% | +1.47% |
+| DRIFT/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.42% | +2.37% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.19% | +2.14% |
+| TRB/USDT:USDT | below_1h_threshold | +1.81% | +1.76% |
+| BIO/USDT:USDT | below_1h_threshold | +1.34% | +1.29% |
 
 ## 4. 次に見るべき不足
 
