@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T21:32:21.029500+00:00
+- generated_at: 2026-05-01T21:36:56.994884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2834**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T21:32:19.109874+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=78062.7
+- 更新: 2026-05-01T21:36:55.044844+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=78061.7
 - Funnel: target 755 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +21.43% | $7,174,923.63 |
-| ZEN/USDT:USDT | +10.75% | $8,235,940.79 |
-| TAG/USDT:USDT | +9.98% | $3,544,044.33 |
-| SNDKSTOCK/USDT:USDT | +7.34% | $6,614,384.99 |
-| WOJAK/USDT:USDT | +7.03% | $1,033,866.97 |
+| LAB/USDT:USDT | +22.63% | $7,309,528.53 |
+| ZEN/USDT:USDT | +11.38% | $8,321,237.26 |
+| TAG/USDT:USDT | +8.47% | $3,571,972.38 |
+| SNDKSTOCK/USDT:USDT | +7.50% | $6,663,114.88 |
+| SQD/USDT:USDT | +7.10% | $2,159,044.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.00% | +3.72% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.95% | +2.66% |
-| RIF/USDT:USDT | below_1h_threshold | +2.79% | +2.51% |
-| MEGA/USDT:USDT | below_1h_threshold | +2.63% | +2.34% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.18% | +1.90% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.28% | +3.99% |
+| MEGA/USDT:USDT | below_1h_threshold | +2.82% | +2.53% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.57% | +2.28% |
+| TRB/USDT:USDT | below_1h_threshold | +2.16% | +1.87% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.13% | +1.84% |
 
 ## 4. 次に見るべき不足
 
