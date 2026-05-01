@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T13:47:17.749111+00:00
+- generated_at: 2026-05-01T13:52:22.772203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2804**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T13:47:12.372565+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=78264.1
-- Funnel: target 760 → liquid 202 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 68.1 >= 65=1, 4h RSI 72.9 >= 65=1, 4h RSI 65.9 >= 65=1
+- 更新: 2026-05-01T13:52:14.625566+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.68% price=78376.9
+- Funnel: target 760 → liquid 202 → pre 50 → checked 50 → surge 7 → strict 2
+- Surge前reject: below_1h_threshold=42, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.9 >= 65=1, 4h RSI 68.3 >= 65=1, 4h RSI 72.7 >= 65=1, 4h RSI 70.5 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +92.74% | $18,298,497.42 |
-| UB/USDT:USDT | +62.79% | $20,994,232.60 |
-| BR/USDT:USDT | +44.26% | $26,035,936.09 |
-| NFP/USDT:USDT | +43.60% | $1,584,459.86 |
-| ORCA/USDT:USDT | +35.19% | $11,707,153.10 |
+| B/USDT:USDT | +85.64% | $19,145,167.19 |
+| UB/USDT:USDT | +65.00% | $21,038,758.61 |
+| NFP/USDT:USDT | +52.05% | $1,649,958.71 |
+| BR/USDT:USDT | +43.76% | $26,107,933.92 |
+| ORCA/USDT:USDT | +34.12% | $11,729,097.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_relative_strength | +5.03% | +4.49% |
-| VINE/USDT:USDT | below_1h_threshold | +4.41% | +3.88% |
-| BR/USDT:USDT | below_1h_threshold | +4.15% | +3.62% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.86% | +3.32% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.38% | +1.84% |
+| MUSTOCK/USDT:USDT | below_relative_strength | +5.10% | +4.42% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.55% | +3.87% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.39% | +3.71% |
+| BR/USDT:USDT | below_1h_threshold | +3.56% | +2.88% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.61% | +1.93% |
 
 ## 4. 次に見るべき不足
 
