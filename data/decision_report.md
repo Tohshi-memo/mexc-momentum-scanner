@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T14:17:01.551649+00:00
+- generated_at: 2026-05-01T14:22:09.775057+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2809**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T14:16:59.264139+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=78609.9
-- Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.4 >= 65=1, 4h RSI 70.0 >= 65=1
+- 更新: 2026-05-01T14:22:07.520279+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=78485.9
+- Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1, 4h RSI 70.4 >= 65=1, 4h RSI 88.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +110.27% | $22,891,232.23 |
-| UB/USDT:USDT | +76.12% | $20,743,649.29 |
-| NFP/USDT:USDT | +60.09% | $1,832,481.87 |
-| BR/USDT:USDT | +42.81% | $26,072,213.34 |
-| ZEREBRO/USDT:USDT | +37.44% | $12,098,512.87 |
+| B/USDT:USDT | +102.49% | $23,627,407.57 |
+| UB/USDT:USDT | +81.28% | $20,994,411.96 |
+| NFP/USDT:USDT | +58.00% | $1,858,030.10 |
+| BR/USDT:USDT | +39.49% | $26,141,976.52 |
+| ZEREBRO/USDT:USDT | +38.57% | $12,121,129.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.74% | +4.85% |
-| NFP/USDT:USDT | below_1h_threshold | +3.90% | +4.01% |
-| ST/USDT:USDT | below_1h_threshold | +2.50% | +2.61% |
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.86% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.24% | +1.34% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +3.44% | +3.70% |
+| NFP/USDT:USDT | below_1h_threshold | +2.19% | +2.45% |
+| ST/USDT:USDT | below_1h_threshold | +2.05% | +2.31% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.01% | +2.27% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.52% | +1.78% |
 
 ## 4. 次に見るべき不足
 
