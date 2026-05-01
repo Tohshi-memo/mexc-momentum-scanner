@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T01:46:02.414928+00:00
+- generated_at: 2026-05-01T01:50:57.339240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2748**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T01:46:00.786816+00:00 / 保存件数 160/288
-- BTC: BULLISH 1h +0.21% price=76571.5
+- 更新: 2026-05-01T01:50:55.725735+00:00 / 保存件数 161/288
+- BTC: BULLISH 1h +0.33% price=76661.7
 - Funnel: target 760 → liquid 214 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +33.98% | $8,499,817.25 |
-| BR/USDT:USDT | +22.95% | $16,375,320.28 |
-| GENIUS/USDT:USDT | +18.97% | $1,369,686.15 |
-| RDDTSTOCK/USDT:USDT | +13.97% | $3,939,401.79 |
-| DRIFT/USDT:USDT | +13.39% | $1,591,023.19 |
+| ORCA/USDT:USDT | +33.51% | $8,542,592.52 |
+| BR/USDT:USDT | +23.11% | $16,401,831.73 |
+| GENIUS/USDT:USDT | +18.39% | $1,372,318.36 |
+| RDDTSTOCK/USDT:USDT | +14.08% | $3,942,577.39 |
+| ASTEROID/USDT:USDT | +13.48% | $3,692,503.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +4.63% | +4.43% |
-| BLEND/USDT:USDT | below_1h_threshold | +4.45% | +4.25% |
-| BIO/USDT:USDT | below_1h_threshold | +4.36% | +4.15% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.74% | +3.53% |
-| UB/USDT:USDT | below_1h_threshold | +3.67% | +3.46% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.21% | +3.89% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.17% | +3.85% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.01% | +3.69% |
+| BLEND/USDT:USDT | below_1h_threshold | +3.83% | +3.50% |
+| UB/USDT:USDT | below_1h_threshold | +3.51% | +3.19% |
 
 ## 4. 次に見るべき不足
 
