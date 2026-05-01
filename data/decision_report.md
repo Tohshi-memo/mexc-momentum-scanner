@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T03:25:52.369495+00:00
+- generated_at: 2026-05-01T03:31:03.500179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2750**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T03:25:50.763547+00:00 / 保存件数 180/288
-- BTC: BULLISH 1h +0.94% price=77271.3
-- Funnel: target 760 → liquid 205 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-01T03:31:01.659552+00:00 / 保存件数 181/288
+- BTC: BULLISH 1h +0.82% price=77182.4
+- Funnel: target 760 → liquid 206 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +28.38% | $9,234,924.26 |
-| BR/USDT:USDT | +23.17% | $16,782,348.77 |
-| GENIUS/USDT:USDT | +18.86% | $1,433,832.46 |
-| ASTEROID/USDT:USDT | +14.80% | $4,076,636.85 |
-| RDDTSTOCK/USDT:USDT | +14.23% | $3,920,236.39 |
+| ORCA/USDT:USDT | +28.99% | $9,275,034.06 |
+| BR/USDT:USDT | +21.54% | $16,841,749.48 |
+| GENIUS/USDT:USDT | +18.10% | $1,434,713.49 |
+| RDDTSTOCK/USDT:USDT | +14.17% | $3,928,972.39 |
+| AIOT/USDT:USDT | +14.03% | $18,000,489.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRB/USDT:USDT | below_relative_strength | +5.51% | +4.58% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.94% | +2.01% |
-| UB/USDT:USDT | below_1h_threshold | +2.68% | +1.74% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.58% | +1.64% |
-| DRIFT/USDT:USDT | below_1h_threshold | +2.56% | +1.62% |
+| UB/USDT:USDT | below_1h_threshold | +3.68% | +2.85% |
+| AIOT/USDT:USDT | below_1h_threshold | +3.49% | +2.66% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.23% | +2.41% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.62% | +1.80% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.49% | +1.67% |
 
 ## 4. 次に見るべき不足
 
