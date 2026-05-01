@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T22:22:29.785560+00:00
+- generated_at: 2026-05-01T22:26:48.768803+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2838**
 
@@ -46,7 +46,7 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T22:22:28.074214+00:00 / 保存件数 288/288
+- 更新: 2026-05-01T22:26:47.043980+00:00 / 保存件数 288/288
 - BTC: BULLISH 1h +0.24% price=78349.8
 - Funnel: target 755 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +30.89% | $8,714,674.83 |
-| CHILLGUY/USDT:USDT | +14.99% | $1,019,909.33 |
-| RLS/USDT:USDT | +10.05% | $2,443,721.66 |
-| TRB/USDT:USDT | +8.17% | $2,997,297.76 |
-| ZEC/USDT:USDT | +7.82% | $273,102,061.15 |
+| LAB/USDT:USDT | +34.73% | $8,987,788.50 |
+| CHILLGUY/USDT:USDT | +15.90% | $1,040,947.27 |
+| RLS/USDT:USDT | +9.63% | $2,455,148.41 |
+| TRB/USDT:USDT | +8.49% | $3,044,692.63 |
+| ZEC/USDT:USDT | +7.50% | $274,479,878.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHILLGUY/USDT:USDT | below_1h_threshold | +2.51% | +2.27% |
-| B/USDT:USDT | below_1h_threshold | +2.45% | +2.21% |
-| TAG/USDT:USDT | below_1h_threshold | +1.92% | +1.68% |
-| LAB/USDT:USDT | below_1h_threshold | +1.73% | +1.49% |
-| TRB/USDT:USDT | below_1h_threshold | +1.50% | +1.26% |
+| LAB/USDT:USDT | below_1h_threshold | +4.77% | +4.53% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +3.55% | +3.31% |
+| B/USDT:USDT | below_1h_threshold | +2.38% | +2.15% |
+| APE/USDT:USDT | below_1h_threshold | +1.92% | +1.68% |
+| TRB/USDT:USDT | below_1h_threshold | +1.75% | +1.51% |
 
 ## 4. 次に見るべき不足
 
