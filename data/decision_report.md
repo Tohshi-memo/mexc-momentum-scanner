@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T22:12:01.812677+00:00
+- generated_at: 2026-05-01T22:16:57.721120+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2837**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T22:12:00.083234+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78249.1
-- Funnel: target 755 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-01T22:16:56.013820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=78275.5
+- Funnel: target 755 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +27.36% | $8,419,593.95 |
-| RLS/USDT:USDT | +11.06% | $2,386,642.06 |
-| BLESS/USDT:USDT | +7.88% | $1,065,768.70 |
-| SNDKSTOCK/USDT:USDT | +7.45% | $6,090,322.59 |
-| ZEC/USDT:USDT | +7.25% | $269,642,805.67 |
+| LAB/USDT:USDT | +30.23% | $8,539,952.34 |
+| CHILLGUY/USDT:USDT | +14.08% | $1,002,431.98 |
+| RLS/USDT:USDT | +11.89% | $2,410,097.59 |
+| BLESS/USDT:USDT | +7.87% | $1,087,149.88 |
+| ZEC/USDT:USDT | +7.53% | $271,528,006.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +1.27% | +1.16% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.18% | +1.07% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.90% | +0.79% |
-| BRETT/USDT:USDT | below_1h_threshold | +0.88% | +0.77% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.78% | +0.67% |
+| B/USDT:USDT | below_1h_threshold | +2.05% | +1.90% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +1.77% | +1.63% |
+| RIF/USDT:USDT | below_1h_threshold | +1.75% | +1.60% |
+| TAG/USDT:USDT | below_1h_threshold | +1.53% | +1.39% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.38% | +1.24% |
 
 ## 4. 次に見るべき不足
 
