@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T01:50:57.339240+00:00
+- generated_at: 2026-05-01T01:55:57.753352+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2748**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T01:50:55.725735+00:00 / 保存件数 161/288
-- BTC: BULLISH 1h +0.33% price=76661.7
-- Funnel: target 760 → liquid 214 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-01T01:55:55.891564+00:00 / 保存件数 162/288
+- BTC: BULLISH 1h +0.37% price=76697.9
+- Funnel: target 760 → liquid 214 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +33.51% | $8,542,592.52 |
-| BR/USDT:USDT | +23.11% | $16,401,831.73 |
-| GENIUS/USDT:USDT | +18.39% | $1,372,318.36 |
-| RDDTSTOCK/USDT:USDT | +14.08% | $3,942,577.39 |
-| ASTEROID/USDT:USDT | +13.48% | $3,692,503.10 |
+| ORCA/USDT:USDT | +32.36% | $8,577,215.61 |
+| BR/USDT:USDT | +24.81% | $16,429,152.32 |
+| GENIUS/USDT:USDT | +19.01% | $1,375,985.54 |
+| ASTEROID/USDT:USDT | +15.95% | $3,817,150.62 |
+| RDDTSTOCK/USDT:USDT | +14.17% | $3,943,548.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +4.21% | +3.89% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.17% | +3.85% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.01% | +3.69% |
-| BLEND/USDT:USDT | below_1h_threshold | +3.83% | +3.50% |
-| UB/USDT:USDT | below_1h_threshold | +3.51% | +3.19% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.47% | +3.10% |
+| ORCA/USDT:USDT | below_1h_threshold | +3.37% | +3.00% |
+| UB/USDT:USDT | below_1h_threshold | +3.25% | +2.88% |
+| BIO/USDT:USDT | below_1h_threshold | +2.52% | +2.15% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.41% | +2.04% |
 
 ## 4. 次に見るべき不足
 
