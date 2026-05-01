@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T09:56:52.248422+00:00
+- generated_at: 2026-05-01T10:02:04.513262+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2781**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T09:56:50.192826+00:00 / 保存件数 260/288
-- BTC: STAGNANT 1h -0.17% price=77208.1
-- Funnel: target 760 → liquid 201 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.0 >= 65=1, 4h RSI 67.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-01T10:02:02.837503+00:00 / 保存件数 261/288
+- BTC: STAGNANT 1h -0.05% price=77200.0
+- Funnel: target 760 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +63.21% | $8,272,688.45 |
-| BR/USDT:USDT | +42.25% | $23,211,176.20 |
-| UB/USDT:USDT | +33.79% | $12,060,189.74 |
-| ORCA/USDT:USDT | +29.66% | $10,459,201.57 |
-| ZEREBRO/USDT:USDT | +27.57% | $7,229,532.13 |
+| B/USDT:USDT | +62.91% | $8,777,599.36 |
+| BR/USDT:USDT | +41.86% | $23,251,231.25 |
+| UB/USDT:USDT | +35.92% | $11,651,075.85 |
+| ORCA/USDT:USDT | +30.41% | $10,409,218.57 |
+| ZEREBRO/USDT:USDT | +23.71% | $7,258,622.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.97% | +5.14% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.41% | +2.58% |
-| ST/USDT:USDT | below_1h_threshold | +2.12% | +2.29% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.26% | +1.43% |
-| ENSO/USDT:USDT | below_1h_threshold | +1.21% | +1.38% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.15% | +1.20% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.70% | +0.76% |
+| UB/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.35% | +0.40% |
+| MYX/USDT:USDT | below_1h_threshold | +0.27% | +0.32% |
 
 ## 4. 次に見るべき不足
 
