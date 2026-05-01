@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-01T00:01:16.793153+00:00
+- generated_at: 2026-05-01T00:05:53.202723+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2743**
+- closed shadow trades: **2744**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2743, expectancy=-0.11%
+- 全期間 MARKET基準: n=2744, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-2.21%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,17 +25,17 @@
 | LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +2.80% | **+0.42%** |
-| LIMIT_6PCT | 6/20 | 30.0% | +0.94% | **+0.28%** |
+| LIMIT_4PCT | 16/20 | 80.0% | +0.05% | **+0.04%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +3.97% | **+2.78%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +3.03% | **+2.73%** |
-| LIMIT_ATR_LONG | 11/20 | 55.0% | +4.17% | **+2.29%** |
-| LIMIT_3PCT_LONG | 10/20 | 50.0% | +4.26% | **+2.13%** |
-| ASK_LONG | 20/20 | 100.0% | +1.96% | **+1.96%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +3.84% | **+2.69%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +3.99% | **+2.19%** |
+| LIMIT_3PCT_LONG | 10/20 | 50.0% | +4.18% | **+2.09%** |
+| ASK_LONG | 20/20 | 100.0% | +1.97% | **+1.97%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T00:01:15.180333+00:00 / 保存件数 138/288
-- BTC: STAGNANT 1h +0.04% price=76331.4
-- Funnel: target 757 → liquid 210 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-01T00:05:51.622671+00:00 / 保存件数 139/288
+- BTC: STAGNANT 1h +0.16% price=76422.8
+- Funnel: target 757 → liquid 211 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +41.40% | $5,503,305.23 |
-| BR/USDT:USDT | +21.56% | $14,985,526.51 |
-| DRIFT/USDT:USDT | +16.31% | $1,481,700.80 |
-| GENIUS/USDT:USDT | +14.70% | $1,176,314.03 |
-| RDDTSTOCK/USDT:USDT | +13.32% | $3,992,444.43 |
+| ORCA/USDT:USDT | +47.26% | $5,719,783.57 |
+| BR/USDT:USDT | +20.21% | $15,044,664.40 |
+| DRIFT/USDT:USDT | +16.03% | $1,486,955.61 |
+| AIOT/USDT:USDT | +14.58% | $18,435,825.69 |
+| GENIUS/USDT:USDT | +14.06% | $1,180,586.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CVNASTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.61% |
-| ENSO/USDT:USDT | below_1h_threshold | +2.44% | +2.40% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.66% | +0.62% |
-| MEGA/USDT:USDT | below_1h_threshold | +0.66% | +0.62% |
-| SOMI/USDT:USDT | below_1h_threshold | +0.43% | +0.39% |
+| ENSO/USDT:USDT | below_1h_threshold | +4.57% | +4.41% |
+| ORCA/USDT:USDT | below_1h_threshold | +3.07% | +2.91% |
+| CVNASTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.62% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.99% | +1.83% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.17% | +1.01% |
 
 ## 4. 次に見るべき不足
 
