@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T16:06:49.161575+00:00
+- generated_at: 2026-05-01T16:12:04.307955+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2820**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T16:06:47.800544+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=78613.6
+- 更新: 2026-05-01T16:12:02.597286+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78470.4
 - Funnel: target 760 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +4.33% | $19,796,606.04 |
-| SKYAI/USDT:USDT | +3.73% | $26,212,798.10 |
-| LYN/USDT:USDT | +2.55% | $1,275,951.77 |
-| NAORIS/USDT:USDT | +2.29% | $9,855,433.75 |
-| BIO/USDT:USDT | +2.24% | $1,425,442.13 |
+| GUA/USDT:USDT | +4.98% | $1,608,825.74 |
+| ZBT/USDT:USDT | +3.88% | $3,302,137.38 |
+| LYN/USDT:USDT | +3.82% | $1,303,978.82 |
+| NAORIS/USDT:USDT | +3.01% | $9,878,433.48 |
+| BSB/USDT:USDT | +2.36% | $20,022,583.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.12% | +3.84% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.73% | +3.45% |
-| LYN/USDT:USDT | below_1h_threshold | +2.55% | +2.27% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.46% | +2.18% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.30% | +2.02% |
+| GUA/USDT:USDT | below_1h_threshold | +4.98% | +4.89% |
+| LYN/USDT:USDT | below_1h_threshold | +3.89% | +3.79% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.84% | +3.74% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.28% | +3.18% |
+| BSB/USDT:USDT | below_1h_threshold | +2.48% | +2.38% |
 
 ## 4. 次に見るべき不足
 
