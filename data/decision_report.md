@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T20:52:01.715175+00:00
+- generated_at: 2026-05-01T20:57:04.069083+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2831**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T20:51:59.803604+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.49% price=77933.8
-- Funnel: target 755 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.2 >= 65=1
+- 更新: 2026-05-01T20:57:02.004799+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=77835.3
+- Funnel: target 755 → liquid 191 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +32.63% | $4,999,568.95 |
-| ZEN/USDT:USDT | +10.33% | $7,396,157.53 |
-| SQD/USDT:USDT | +9.57% | $2,126,297.87 |
-| FIGHT/USDT:USDT | +7.96% | $1,258,420.55 |
-| SNDKSTOCK/USDT:USDT | +7.49% | $9,768,773.81 |
+| LAB/USDT:USDT | +34.15% | $5,480,165.21 |
+| WOJAK/USDT:USDT | +10.81% | $1,014,825.97 |
+| ZEN/USDT:USDT | +10.16% | $7,513,163.20 |
+| SQD/USDT:USDT | +9.37% | $2,128,072.13 |
+| TAG/USDT:USDT | +9.31% | $3,514,530.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.93% | +4.42% |
-| SQD/USDT:USDT | below_1h_threshold | +1.87% | +2.36% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.84% | +2.33% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +2.25% |
-| PROM/USDT:USDT | below_1h_threshold | +1.66% | +2.15% |
+| B/USDT:USDT | below_1h_threshold | +3.46% | +4.07% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.24% | +2.86% |
+| PROM/USDT:USDT | below_1h_threshold | +2.05% | +2.66% |
+| SQD/USDT:USDT | below_1h_threshold | +1.69% | +2.30% |
+| LINSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.96% |
 
 ## 4. 次に見るべき不足
 
