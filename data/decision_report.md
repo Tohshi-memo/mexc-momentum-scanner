@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T05:01:11.170678+00:00
+- generated_at: 2026-05-01T05:06:24.436466+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2753**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T05:01:09.528389+00:00 / 保存件数 200/288
-- BTC: STAGNANT 1h +0.01% price=77004.9
-- Funnel: target 760 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-01T05:06:22.855522+00:00 / 保存件数 201/288
+- BTC: STAGNANT 1h +0.14% price=77109.7
+- Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +27.10% | $9,537,454.09 |
-| BR/USDT:USDT | +26.76% | $17,369,427.73 |
-| ZEREBRO/USDT:USDT | +24.85% | $1,914,859.70 |
-| ASTEROID/USDT:USDT | +16.87% | $4,201,479.77 |
-| AIOT/USDT:USDT | +14.86% | $17,928,748.03 |
+| BR/USDT:USDT | +29.20% | $17,468,139.45 |
+| ORCA/USDT:USDT | +28.05% | $9,553,019.63 |
+| ZEREBRO/USDT:USDT | +22.58% | $1,946,454.27 |
+| ASTEROID/USDT:USDT | +17.39% | $4,217,526.55 |
+| AIOT/USDT:USDT | +15.53% | $17,953,935.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
-| BR/USDT:USDT | below_1h_threshold | +0.32% | +0.32% |
-| BIRB/USDT:USDT | below_1h_threshold | +0.29% | +0.29% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
+| BR/USDT:USDT | below_1h_threshold | +2.18% | +2.04% |
+| VINE/USDT:USDT | below_1h_threshold | +1.20% | +1.05% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +0.99% | +0.85% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.99% | +0.84% |
+| BIO/USDT:USDT | below_1h_threshold | +0.99% | +0.84% |
 
 ## 4. 次に見るべき不足
 
