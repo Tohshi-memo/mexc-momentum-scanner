@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T13:52:22.772203+00:00
+- generated_at: 2026-05-01T13:57:02.729612+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2804**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T13:52:14.625566+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.68% price=78376.9
-- Funnel: target 760 → liquid 202 → pre 50 → checked 50 → surge 7 → strict 2
-- Surge前reject: below_1h_threshold=42, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.9 >= 65=1, 4h RSI 68.3 >= 65=1, 4h RSI 72.7 >= 65=1, 4h RSI 70.5 >= 65=1, 4h RSI 66.2 >= 65=1
+- 更新: 2026-05-01T13:56:56.193949+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.13% price=78729.9
+- Funnel: target 760 → liquid 202 → pre 50 → checked 50 → surge 6 → strict 2
+- Surge前reject: below_1h_threshold=41, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 68.2 >= 65=1, 4h RSI 73.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +85.64% | $19,145,167.19 |
-| UB/USDT:USDT | +65.00% | $21,038,758.61 |
-| NFP/USDT:USDT | +52.05% | $1,649,958.71 |
-| BR/USDT:USDT | +43.76% | $26,107,933.92 |
-| ORCA/USDT:USDT | +34.12% | $11,729,097.71 |
+| B/USDT:USDT | +88.59% | $19,600,462.52 |
+| UB/USDT:USDT | +66.08% | $21,122,614.46 |
+| NFP/USDT:USDT | +56.07% | $1,678,110.41 |
+| BR/USDT:USDT | +43.91% | $26,144,430.14 |
+| ORCA/USDT:USDT | +33.71% | $11,761,254.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_relative_strength | +5.10% | +4.42% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.55% | +3.87% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.39% | +3.71% |
-| BR/USDT:USDT | below_1h_threshold | +3.56% | +2.88% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.61% | +1.93% |
+| MUSTOCK/USDT:USDT | below_relative_strength | +5.97% | +4.84% |
+| AIOT/USDT:USDT | below_relative_strength | +5.33% | +4.20% |
+| INTCSTOCK/USDT:USDT | below_relative_strength | +5.07% | +3.93% |
+| BR/USDT:USDT | below_1h_threshold | +3.77% | +2.64% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.40% | +2.27% |
 
 ## 4. 次に見るべき不足
 
