@@ -123,6 +123,13 @@ jobs:
         with:
           # tracking.json を push するためトークンを指定
           token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Sync to latest branch
+        run: |
+          git fetch origin "${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}"
+          git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -149,9 +156,12 @@ jobs:
 
           git commit -m "chore: update tracking data [skip ci]"
           for attempt in 1 2 3; do
-            if git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"; then
+            if git fetch origin "${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}" && \
+               git rebase "origin/${GITHUB_REF_NAME}" && \
+               git push origin "HEAD:${GITHUB_REF_NAME}"; then
               exit 0
             fi
+            git rebase --abort 2>/dev/null || true
             echo "Data push failed (attempt ${attempt}/3). Retrying..."
             sleep 5
           done
