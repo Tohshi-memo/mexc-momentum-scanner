@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-01T06:25:57.631788+00:00
+- generated_at: 2026-05-01T06:31:06.965971+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2756**
+- closed shadow trades: **2757**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.43% / filled 20/20。**
-- 全期間 MARKET基準: n=2756, expectancy=-0.10%
+- 全期間 MARKET基準: n=2757, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+0.43%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | LIMIT_FIB1272 | 6/20 | 30.0% | +2.34% | **+0.70%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +6.73% | **+0.67%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +6.29% | **+0.63%** |
-| ASK | 20/20 | 100.0% | +0.48% | **+0.48%** |
+| ASK | 20/20 | 100.0% | +0.51% | **+0.51%** |
 | MARKET | 20/20 | 100.0% | +0.43% | **+0.43%** |
 
 ### シャドウ上位 LONG
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T06:25:55.787897+00:00 / 保存件数 217/288
-- BTC: STAGNANT 1h -0.01% price=77127.6
+- 更新: 2026-05-01T06:31:05.105369+00:00 / 保存件数 218/288
+- BTC: STAGNANT 1h -0.04% price=77104.2
 - Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.7 >= 65=1
+- Strict後reject: 4h RSI 85.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +35.47% | $2,532,708.44 |
-| ORCA/USDT:USDT | +30.20% | $9,966,045.23 |
-| BR/USDT:USDT | +28.78% | $18,649,388.81 |
-| GENIUS/USDT:USDT | +17.26% | $1,496,329.68 |
-| AIOT/USDT:USDT | +14.95% | $18,092,096.25 |
+| ZEREBRO/USDT:USDT | +37.22% | $2,678,530.12 |
+| ORCA/USDT:USDT | +30.07% | $9,981,395.02 |
+| BR/USDT:USDT | +29.15% | $18,693,666.31 |
+| GENIUS/USDT:USDT | +17.70% | $1,498,819.70 |
+| AIOT/USDT:USDT | +15.43% | $18,126,335.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZBT/USDT:USDT | below_1h_threshold | +2.57% | +2.58% |
-| ZBCN/USDT:USDT | below_1h_threshold | +2.54% | +2.55% |
-| EDU/USDT:USDT | below_1h_threshold | +1.69% | +1.70% |
-| VINE/USDT:USDT | below_1h_threshold | +1.67% | +1.68% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.16% | +1.17% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.05% | +3.09% |
+| ZBCN/USDT:USDT | below_1h_threshold | +2.58% | +2.62% |
+| EDU/USDT:USDT | below_1h_threshold | +1.67% | +1.71% |
+| VINE/USDT:USDT | below_1h_threshold | +1.67% | +1.71% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.99% | +1.03% |
 
 ## 4. 次に見るべき不足
 
