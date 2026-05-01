@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T15:46:57.331123+00:00
+- generated_at: 2026-05-01T15:51:53.477602+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2820**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T15:46:55.539806+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=78604.1
-- Funnel: target 760 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-01T15:51:51.753490+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78300.0
+- Funnel: target 760 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +126.58% | $35,562,661.88 |
-| UB/USDT:USDT | +87.14% | $24,547,228.82 |
-| NFP/USDT:USDT | +57.68% | $2,226,988.91 |
-| ORCA/USDT:USDT | +31.82% | $12,317,038.19 |
-| ZEREBRO/USDT:USDT | +28.74% | $12,728,732.82 |
+| B/USDT:USDT | +124.16% | $35,954,571.33 |
+| UB/USDT:USDT | +93.79% | $24,777,398.63 |
+| NFP/USDT:USDT | +56.63% | $2,245,823.00 |
+| ORCA/USDT:USDT | +31.96% | $12,329,142.05 |
+| BR/USDT:USDT | +28.67% | $26,292,273.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.70% | +3.33% |
-| NFP/USDT:USDT | below_1h_threshold | +3.64% | +3.26% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.53% | +3.16% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.87% | +2.50% |
-| EDU/USDT:USDT | below_1h_threshold | +2.67% | +2.30% |
+| NFP/USDT:USDT | below_1h_threshold | +2.69% | +2.70% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.68% | +2.70% |
+| B/USDT:USDT | below_1h_threshold | +2.66% | +2.68% |
+| EDU/USDT:USDT | below_1h_threshold | +2.59% | +2.60% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.45% | +2.47% |
 
 ## 4. 次に見るべき不足
 
