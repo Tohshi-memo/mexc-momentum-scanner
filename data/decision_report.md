@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T22:26:48.768803+00:00
+- generated_at: 2026-05-01T22:31:59.085153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2838**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T22:26:47.043980+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=78349.8
+- 更新: 2026-05-01T22:31:57.361155+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=78295.2
 - Funnel: target 755 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +34.73% | $8,987,788.50 |
-| CHILLGUY/USDT:USDT | +15.90% | $1,040,947.27 |
-| RLS/USDT:USDT | +9.63% | $2,455,148.41 |
-| TRB/USDT:USDT | +8.49% | $3,044,692.63 |
-| ZEC/USDT:USDT | +7.50% | $274,479,878.83 |
+| LAB/USDT:USDT | +34.71% | $9,188,811.21 |
+| CHILLGUY/USDT:USDT | +15.82% | $1,057,480.01 |
+| RLS/USDT:USDT | +12.77% | $2,473,400.77 |
+| TRB/USDT:USDT | +7.73% | $3,087,907.21 |
+| SNDKSTOCK/USDT:USDT | +7.41% | $6,114,974.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.77% | +4.53% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +3.55% | +3.31% |
-| B/USDT:USDT | below_1h_threshold | +2.38% | +2.15% |
-| APE/USDT:USDT | below_1h_threshold | +1.92% | +1.68% |
-| TRB/USDT:USDT | below_1h_threshold | +1.75% | +1.51% |
+| LAB/USDT:USDT | below_1h_threshold | +4.53% | +4.36% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +3.25% | +3.08% |
+| APE/USDT:USDT | below_1h_threshold | +2.14% | +1.97% |
+| B/USDT:USDT | below_1h_threshold | +2.08% | +1.91% |
+| RLS/USDT:USDT | below_1h_threshold | +1.99% | +1.82% |
 
 ## 4. 次に見るべき不足
 
