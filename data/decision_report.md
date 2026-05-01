@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T04:25:57.788170+00:00
+- generated_at: 2026-05-01T04:31:02.613510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2751**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T04:25:56.208470+00:00 / 保存件数 193/288
-- BTC: STAGNANT 1h +0.05% price=77119.4
-- Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-01T04:31:00.582530+00:00 / 保存件数 194/288
+- BTC: STAGNANT 1h -0.13% price=76980.7
+- Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.8 >= 65=1, 4h RSI 80.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +28.79% | $9,554,975.91 |
-| BR/USDT:USDT | +25.37% | $17,137,490.33 |
-| ASTEROID/USDT:USDT | +16.75% | $4,189,272.96 |
-| GENIUS/USDT:USDT | +16.44% | $1,450,281.13 |
-| ZEREBRO/USDT:USDT | +16.00% | $1,777,064.79 |
+| ORCA/USDT:USDT | +28.32% | $9,570,851.72 |
+| BR/USDT:USDT | +25.12% | $17,177,903.29 |
+| ZEREBRO/USDT:USDT | +18.81% | $1,800,407.79 |
+| GENIUS/USDT:USDT | +16.48% | $1,452,916.91 |
+| ASTEROID/USDT:USDT | +16.35% | $4,198,067.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.71% | +3.66% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.88% | +2.83% |
-| DRIFT/USDT:USDT | below_1h_threshold | +2.79% | +2.75% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
+| DRIFT/USDT:USDT | below_1h_threshold | +3.05% | +3.18% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.86% | +2.99% |
+| BIO/USDT:USDT | below_1h_threshold | +2.13% | +2.27% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.12% | +2.25% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.99% | +2.12% |
 
 ## 4. 次に見るべき不足
 
