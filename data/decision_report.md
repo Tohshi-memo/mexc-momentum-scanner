@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T13:17:20.000661+00:00
+- generated_at: 2026-05-01T13:21:58.544952+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2800**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T13:17:18.277936+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.62% price=78332.3
-- Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-01T13:21:56.445261+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=78332.1
+- Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.8 >= 65=1, 4h RSI 67.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UB/USDT:USDT | +64.41% | $20,021,685.76 |
-| B/USDT:USDT | +58.76% | $14,856,631.86 |
-| BR/USDT:USDT | +42.73% | $25,546,180.40 |
-| NFP/USDT:USDT | +39.17% | $1,487,334.94 |
-| ORCA/USDT:USDT | +37.15% | $11,401,700.30 |
+| B/USDT:USDT | +71.67% | $15,254,454.85 |
+| UB/USDT:USDT | +63.57% | $20,141,289.05 |
+| BR/USDT:USDT | +43.51% | $25,612,095.68 |
+| NFP/USDT:USDT | +39.58% | $1,507,376.32 |
+| ORCA/USDT:USDT | +38.50% | $11,494,001.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_relative_strength | +5.08% | +4.46% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.14% | +3.52% |
-| BR/USDT:USDT | below_1h_threshold | +2.94% | +2.32% |
-| ORCA/USDT:USDT | below_1h_threshold | +2.83% | +2.20% |
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +2.14% | +1.52% |
+| AIOT/USDT:USDT | below_relative_strength | +5.40% | +4.78% |
+| ORCA/USDT:USDT | below_1h_threshold | +3.63% | +3.01% |
+| BR/USDT:USDT | below_1h_threshold | +3.55% | +2.92% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +1.83% |
+| ZBCN/USDT:USDT | below_1h_threshold | +1.43% | +0.81% |
 
 ## 4. 次に見るべき不足
 
