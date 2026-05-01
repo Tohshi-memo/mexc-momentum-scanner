@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T00:31:05.158813+00:00
+- generated_at: 2026-05-01T00:36:00.347236+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2747**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T00:31:03.377689+00:00 / 保存件数 145/288
-- BTC: BULLISH 1h +0.27% price=76509.3
+- 更新: 2026-05-01T00:35:58.465392+00:00 / 保存件数 146/288
+- BTC: BULLISH 1h +0.20% price=76454.0
 - Funnel: target 758 → liquid 216 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- Strict後reject: 4h RSI 69.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +36.14% | $6,995,650.56 |
-| BR/USDT:USDT | +18.28% | $15,383,726.49 |
-| GENIUS/USDT:USDT | +17.55% | $1,209,562.76 |
-| RDDTSTOCK/USDT:USDT | +14.09% | $4,054,327.82 |
-| AIOT/USDT:USDT | +13.37% | $18,754,513.32 |
+| ORCA/USDT:USDT | +33.44% | $7,112,352.94 |
+| GENIUS/USDT:USDT | +18.68% | $1,230,153.76 |
+| BR/USDT:USDT | +16.60% | $15,461,527.88 |
+| RDDTSTOCK/USDT:USDT | +13.71% | $4,060,899.03 |
+| AIOT/USDT:USDT | +13.17% | $18,780,913.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.77% | +3.49% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.51% | +2.24% |
-| APE/USDT:USDT | below_1h_threshold | +2.39% | +2.11% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.29% | +2.02% |
-| CVNASTOCK/USDT:USDT | below_1h_threshold | +2.18% | +1.91% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.41% | +4.21% |
+| APE/USDT:USDT | below_1h_threshold | +3.52% | +3.31% |
+| GENIUS/USDT:USDT | below_1h_threshold | +3.43% | +3.23% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.94% | +2.74% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.60% | +2.40% |
 
 ## 4. 次に見るべき不足
 
