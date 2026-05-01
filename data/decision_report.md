@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T19:26:41.052226+00:00
+- generated_at: 2026-05-01T19:32:09.958186+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2824**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T19:26:37.587558+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78410.8
+- 更新: 2026-05-01T19:32:05.772889+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78327.3
 - Funnel: target 756 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +19.10% | $2,406,163.50 |
-| ZEN/USDT:USDT | +10.91% | $5,520,757.33 |
-| LAB/USDT:USDT | +7.95% | $1,209,044.04 |
-| ZEC/USDT:USDT | +7.03% | $299,664,895.01 |
-| SQD/USDT:USDT | +5.67% | $2,073,410.93 |
+| TAG/USDT:USDT | +16.32% | $2,500,499.31 |
+| ZEN/USDT:USDT | +11.04% | $5,660,499.36 |
+| LAB/USDT:USDT | +9.99% | $1,263,201.87 |
+| ZEC/USDT:USDT | +7.18% | $300,864,078.29 |
+| SQD/USDT:USDT | +5.90% | $2,077,022.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +3.50% | +3.48% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.99% | +1.96% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.55% | +1.52% |
-| TRB/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
-| BSB/USDT:USDT | below_1h_threshold | +1.40% | +1.37% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.16% | +2.24% |
+| PHAROS/USDT:USDT | below_1h_threshold | +2.02% | +2.10% |
+| TRB/USDT:USDT | below_1h_threshold | +1.74% | +1.83% |
+| FIGHT/USDT:USDT | below_1h_threshold | +1.49% | +1.57% |
+| BLEND/USDT:USDT | below_1h_threshold | +1.42% | +1.50% |
 
 ## 4. 次に見るべき不足
 
