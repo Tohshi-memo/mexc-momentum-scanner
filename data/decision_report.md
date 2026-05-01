@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-01T10:51:47.706863+00:00
+- generated_at: 2026-05-01T10:56:54.233070+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2789**
+- closed shadow trades: **2790**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2789, expectancy=-0.12%
+- 全期間 MARKET基準: n=2790, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-2.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +3.42% | **+1.88%** |
 | LIMIT_ATR_LONG | 11/20 | 55.0% | +3.40% | **+1.87%** |
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +2.66% | **+1.73%** |
-| LIMIT_BB3S_LONG | 3/5 | 60.0% | +2.84% | **+1.71%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.20% | **+1.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T10:51:45.902722+00:00 / 保存件数 272/288
-- BTC: STAGNANT 1h -0.01% price=77229.3
+- 更新: 2026-05-01T10:56:52.067258+00:00 / 保存件数 273/288
+- BTC: STAGNANT 1h +0.00% price=77240.7
 - Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.2 >= 65=1, 4h RSI 80.4 >= 65=1
+- Strict後reject: 4h RSI 80.5 >= 65=1, 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UB/USDT:USDT | +69.83% | $14,933,646.73 |
-| B/USDT:USDT | +62.53% | $10,241,480.27 |
-| ZEREBRO/USDT:USDT | +45.99% | $8,590,930.61 |
-| BR/USDT:USDT | +39.45% | $24,100,743.40 |
-| ORCA/USDT:USDT | +29.66% | $10,672,617.98 |
+| B/USDT:USDT | +60.80% | $10,415,637.03 |
+| UB/USDT:USDT | +46.36% | $15,759,032.88 |
+| ZEREBRO/USDT:USDT | +45.50% | $8,666,436.45 |
+| BR/USDT:USDT | +39.80% | $24,179,184.51 |
+| ORCA/USDT:USDT | +29.93% | $10,684,999.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +4.70% | +4.71% |
-| DRIFT/USDT:USDT | below_1h_threshold | +4.41% | +4.42% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.81% | +2.83% |
-| LAB/USDT:USDT | below_1h_threshold | +2.76% | +2.77% |
-| BRETT/USDT:USDT | below_1h_threshold | +2.13% | +2.14% |
+| AIOT/USDT:USDT | below_1h_threshold | +3.40% | +3.40% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.58% | +2.57% |
+| LAB/USDT:USDT | below_1h_threshold | +2.39% | +2.39% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.36% | +2.36% |
+| DRIFT/USDT:USDT | below_1h_threshold | +2.35% | +2.35% |
 
 ## 4. 次に見るべき不足
 
