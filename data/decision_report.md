@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T10:11:58.590978+00:00
+- generated_at: 2026-05-01T10:16:51.328207+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2781**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T10:11:56.924691+00:00 / 保存件数 263/288
-- BTC: STAGNANT 1h -0.15% price=77122.9
-- Funnel: target 760 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-01T10:16:49.550004+00:00 / 保存件数 264/288
+- BTC: STAGNANT 1h -0.08% price=77180.0
+- Funnel: target 760 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +59.66% | $9,141,418.67 |
-| BR/USDT:USDT | +41.29% | $23,366,472.42 |
-| UB/USDT:USDT | +38.14% | $12,041,710.19 |
-| ORCA/USDT:USDT | +31.35% | $10,485,018.57 |
-| ZEREBRO/USDT:USDT | +29.23% | $7,549,773.73 |
+| B/USDT:USDT | +59.59% | $9,382,322.77 |
+| BR/USDT:USDT | +38.68% | $23,449,626.16 |
+| UB/USDT:USDT | +38.36% | $12,136,491.36 |
+| ZEREBRO/USDT:USDT | +33.63% | $7,699,091.14 |
+| ORCA/USDT:USDT | +30.68% | $10,520,788.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.03% | +4.18% |
-| UB/USDT:USDT | below_1h_threshold | +2.14% | +2.29% |
-| ORCA/USDT:USDT | below_1h_threshold | +1.88% | +2.03% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.64% | +1.79% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.99% | +1.14% |
+| UB/USDT:USDT | below_1h_threshold | +2.29% | +2.36% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.36% | +1.44% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.13% | +1.20% |
+| DRIFT/USDT:USDT | below_1h_threshold | +1.05% | +1.13% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
 
 ## 4. 次に見るべき不足
 
