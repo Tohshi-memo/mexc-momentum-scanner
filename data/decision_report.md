@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-01T07:01:07.052030+00:00
+- generated_at: 2026-05-01T07:05:57.611977+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2759**
+- closed shadow trades: **2760**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.03% / filled 20/20。**
-- 全期間 MARKET基準: n=2759, expectancy=-0.10%
+- 全期間 MARKET基準: n=2760, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+1.03%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,18 +24,18 @@
 | ASK | 20/20 | 100.0% | +1.08% | **+1.08%** |
 | MARKET | 20/20 | 100.0% | +1.03% | **+1.03%** |
 | LIMIT_FIB1272 | 5/20 | 25.0% | +2.91% | **+0.73%** |
-| LIMIT_10PCT | 2/20 | 10.0% | +6.73% | **+0.67%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +6.29% | **+0.63%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +0.74% | **+0.66%** |
+| LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_BB3S_LONG | 5/8 | 62.5% | +1.15% | **+0.72%** |
 | LIMIT_9PCT_LONG | 2/20 | 10.0% | +4.55% | **+0.45%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.31% | **+0.22%** |
-| LIMIT_BB3S_LONG | 4/7 | 57.1% | +0.31% | **+0.17%** |
+| LIMIT_ATR_LONG | 15/20 | 75.0% | +0.46% | **+0.35%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.18% | **+0.13%** |
 | LIMIT_3PCT_LONG | 13/20 | 65.0% | +0.08% | **+0.05%** |
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +0.07% | **+0.03%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T07:01:05.458566+00:00 / 保存件数 224/288
-- BTC: STAGNANT 1h +0.06% price=76997.4
+- 更新: 2026-05-01T07:05:55.988892+00:00 / 保存件数 225/288
+- BTC: STAGNANT 1h +0.00% price=76957.0
 - Funnel: target 760 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +43.18% | $3,182,814.06 |
-| BR/USDT:USDT | +29.25% | $18,918,771.84 |
-| ORCA/USDT:USDT | +28.05% | $9,975,336.22 |
-| GENIUS/USDT:USDT | +20.23% | $1,516,515.28 |
-| RDDTSTOCK/USDT:USDT | +14.54% | $3,898,388.41 |
+| ZEREBRO/USDT:USDT | +47.25% | $3,361,938.61 |
+| BR/USDT:USDT | +29.54% | $18,958,973.20 |
+| ORCA/USDT:USDT | +27.78% | $10,001,944.22 |
+| GENIUS/USDT:USDT | +20.39% | $1,525,540.19 |
+| RDDTSTOCK/USDT:USDT | +14.73% | $3,908,310.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BRETT/USDT:USDT | below_1h_threshold | +1.26% | +1.21% |
-| GENIUS/USDT:USDT | below_1h_threshold | +0.69% | +0.63% |
-| BR/USDT:USDT | below_1h_threshold | +0.46% | +0.40% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.44% | +0.38% |
-| BIO/USDT:USDT | below_1h_threshold | +0.35% | +0.29% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.92% | +2.92% |
+| DRIFT/USDT:USDT | below_1h_threshold | +1.21% | +1.20% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
+| BR/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
 
 ## 4. 次に見るべき不足
 
