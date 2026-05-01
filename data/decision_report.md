@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T16:56:52.756535+00:00
+- generated_at: 2026-05-01T17:02:12.981335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2820**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T16:56:51.043715+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=78292.1
+- 更新: 2026-05-01T17:02:11.244576+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78242.5
 - Funnel: target 760 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEC/USDT:USDT | +4.61% | $305,306,223.97 |
-| MAGMA/USDT:USDT | +4.02% | $1,079,306.88 |
-| DASH/USDT:USDT | +3.69% | $8,465,535.26 |
-| ZEN/USDT:USDT | +3.43% | $2,462,537.33 |
-| B/USDT:USDT | +3.22% | $41,371,605.10 |
+| B/USDT:USDT | +5.27% | $41,597,328.42 |
+| ZEC/USDT:USDT | +4.69% | $285,531,897.03 |
+| BAS/USDT:USDT | +3.97% | $1,001,298.12 |
+| DASH/USDT:USDT | +3.88% | $8,131,167.12 |
+| ZEN/USDT:USDT | +3.57% | $2,504,859.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +4.62% | +4.75% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.02% | +4.15% |
-| DASH/USDT:USDT | below_1h_threshold | +3.73% | +3.86% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.44% | +3.57% |
-| B/USDT:USDT | below_1h_threshold | +3.23% | +3.36% |
+| B/USDT:USDT | below_1h_threshold | +1.42% | +1.34% |
+| FIGHT/USDT:USDT | below_1h_threshold | +1.14% | +1.06% |
+| MEGA/USDT:USDT | below_1h_threshold | +1.04% | +0.96% |
+| AR/USDT:USDT | below_1h_threshold | +0.62% | +0.53% |
+| DASH/USDT:USDT | below_1h_threshold | +0.37% | +0.28% |
 
 ## 4. 次に見るべき不足
 
