@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T20:32:04.327808+00:00
+- generated_at: 2026-05-01T20:36:54.482361+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2830**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T20:32:02.613012+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=78110.7
-- Funnel: target 755 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-01T20:36:52.740185+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=78081.5
+- Funnel: target 755 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +21.71% | $3,635,648.72 |
-| FIGHT/USDT:USDT | +9.93% | $1,239,412.06 |
-| ZEN/USDT:USDT | +9.53% | $6,957,358.42 |
-| SQD/USDT:USDT | +9.37% | $2,119,517.48 |
-| SNDKSTOCK/USDT:USDT | +7.36% | $9,699,031.27 |
+| LAB/USDT:USDT | +18.32% | $3,925,725.52 |
+| ZEN/USDT:USDT | +10.48% | $7,049,390.97 |
+| SQD/USDT:USDT | +10.09% | $2,122,393.98 |
+| FIGHT/USDT:USDT | +9.29% | $1,243,163.56 |
+| ZEC/USDT:USDT | +7.67% | $277,105,047.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.78% | +4.05% |
-| RIF/USDT:USDT | below_1h_threshold | +3.66% | +3.93% |
-| ORCA/USDT:USDT | below_1h_threshold | +3.01% | +3.27% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +2.98% |
-| SQD/USDT:USDT | below_1h_threshold | +1.69% | +1.95% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.86% | +3.16% |
+| SQD/USDT:USDT | below_1h_threshold | +2.35% | +2.65% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.06% | +2.36% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.63% | +1.93% |
+| LINSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.84% |
 
 ## 4. 次に見るべき不足
 
