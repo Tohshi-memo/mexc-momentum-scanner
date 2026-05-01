@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T05:40:57.741525+00:00
+- generated_at: 2026-05-01T05:46:06.445604+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2753**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T05:40:55.662963+00:00 / 保存件数 208/288
-- BTC: STAGNANT 1h +0.07% price=77057.2
-- Funnel: target 760 → liquid 207 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1, 4h RSI 85.1 >= 65=1
+- 更新: 2026-05-01T05:46:04.631281+00:00 / 保存件数 209/288
+- BTC: STAGNANT 1h +0.09% price=77072.4
+- Funnel: target 760 → liquid 208 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +33.34% | $18,112,862.91 |
-| ORCA/USDT:USDT | +32.43% | $9,794,820.01 |
-| ZEREBRO/USDT:USDT | +17.83% | $2,133,735.57 |
-| GENIUS/USDT:USDT | +16.28% | $1,485,795.86 |
-| ASTEROID/USDT:USDT | +15.34% | $4,369,694.73 |
+| ORCA/USDT:USDT | +32.63% | $9,826,372.35 |
+| BR/USDT:USDT | +31.71% | $18,177,649.85 |
+| ZEREBRO/USDT:USDT | +18.96% | $2,140,515.31 |
+| GENIUS/USDT:USDT | +15.88% | $1,486,382.79 |
+| ASTEROID/USDT:USDT | +15.41% | $4,389,973.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.48% | +4.40% |
-| ORCA/USDT:USDT | below_1h_threshold | +3.59% | +3.51% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.39% | +2.32% |
-| BIO/USDT:USDT | below_1h_threshold | +2.07% | +2.00% |
-| DRIFT/USDT:USDT | below_1h_threshold | +1.82% | +1.74% |
+| VVV/USDT:USDT | below_1h_threshold | +4.33% | +4.23% |
+| BR/USDT:USDT | below_1h_threshold | +3.90% | +3.81% |
+| ORCA/USDT:USDT | below_1h_threshold | +3.74% | +3.65% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.30% | +2.20% |
+| BIO/USDT:USDT | below_1h_threshold | +1.75% | +1.66% |
 
 ## 4. 次に見るべき不足
 
