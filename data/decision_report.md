@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T11:32:09.464203+00:00
+- generated_at: 2026-05-01T11:36:51.218976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2792**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T11:32:07.534566+00:00 / 保存件数 280/288
-- BTC: STAGNANT 1h +0.15% price=77386.5
-- Funnel: target 760 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-01T11:36:49.520822+00:00 / 保存件数 281/288
+- BTC: STAGNANT 1h +0.07% price=77321.0
+- Funnel: target 760 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +68.42% | $11,188,190.07 |
-| ZEREBRO/USDT:USDT | +48.76% | $9,117,481.81 |
-| BR/USDT:USDT | +41.75% | $24,728,772.11 |
-| UB/USDT:USDT | +35.21% | $17,478,141.12 |
-| ORCA/USDT:USDT | +29.19% | $10,790,167.02 |
+| B/USDT:USDT | +67.14% | $11,342,028.81 |
+| ZEREBRO/USDT:USDT | +43.83% | $9,259,856.80 |
+| BR/USDT:USDT | +40.51% | $24,777,542.60 |
+| UB/USDT:USDT | +38.58% | $17,653,677.71 |
+| ORCA/USDT:USDT | +29.60% | $10,802,133.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.91% | +3.76% |
-| NOM/USDT:USDT | below_1h_threshold | +2.77% | +2.62% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.59% | +2.44% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.86% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.88% | +1.73% |
+| ST/USDT:USDT | below_relative_strength | +5.03% | +4.96% |
+| B/USDT:USDT | below_1h_threshold | +3.21% | +3.15% |
+| NOM/USDT:USDT | below_1h_threshold | +3.00% | +2.93% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.82% | +2.75% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.21% |
 
 ## 4. 次に見るべき不足
 
