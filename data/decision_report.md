@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T06:16:01.487641+00:00
+- generated_at: 2026-05-01T06:21:00.654535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2756**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T06:15:59.627557+00:00 / 保存件数 215/288
-- BTC: STAGNANT 1h -0.02% price=77120.0
+- 更新: 2026-05-01T06:20:58.833580+00:00 / 保存件数 216/288
+- BTC: STAGNANT 1h -0.06% price=77086.8
 - Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1
+- Strict後reject: 4h RSI 85.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +34.62% | $2,324,750.21 |
-| ORCA/USDT:USDT | +30.61% | $9,915,511.70 |
-| BR/USDT:USDT | +28.47% | $18,551,852.50 |
-| GENIUS/USDT:USDT | +17.75% | $1,484,885.30 |
-| AIOT/USDT:USDT | +17.61% | $18,030,187.33 |
+| ZEREBRO/USDT:USDT | +34.61% | $2,442,078.28 |
+| ORCA/USDT:USDT | +30.54% | $9,935,582.59 |
+| BR/USDT:USDT | +29.19% | $18,591,311.47 |
+| GENIUS/USDT:USDT | +17.75% | $1,495,575.91 |
+| AIOT/USDT:USDT | +15.58% | $18,076,591.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +2.24% | +2.26% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.14% | +2.16% |
-| ZBCN/USDT:USDT | below_1h_threshold | +2.01% | +2.03% |
-| BIO/USDT:USDT | below_1h_threshold | +0.88% | +0.90% |
-| BRETT/USDT:USDT | below_1h_threshold | +0.70% | +0.72% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.42% | +3.49% |
+| ZBCN/USDT:USDT | below_1h_threshold | +3.19% | +3.25% |
+| EDU/USDT:USDT | below_1h_threshold | +1.09% | +1.15% |
+| VINE/USDT:USDT | below_1h_threshold | +1.07% | +1.13% |
+| BRETT/USDT:USDT | below_1h_threshold | +0.97% | +1.03% |
 
 ## 4. 次に見るべき不足
 
