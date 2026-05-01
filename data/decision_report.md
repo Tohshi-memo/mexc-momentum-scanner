@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-01T08:42:09.302679+00:00
+- generated_at: 2026-05-01T08:46:54.176071+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2777**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-01T08:42:07.035320+00:00 / 保存件数 244/288
-- BTC: BULLISH 1h +0.36% price=77380.1
-- Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.9 >= 65=1, 4h RSI 71.6 >= 65=1, 4h RSI 73.1 >= 65=1
+- 更新: 2026-05-01T08:46:52.077773+00:00 / 保存件数 245/288
+- BTC: BULLISH 1h +0.29% price=77325.5
+- Funnel: target 760 → liquid 204 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.2 >= 65=1, 4h RSI 71.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +61.02% | $5,335,847.63 |
-| ZEREBRO/USDT:USDT | +53.17% | $5,728,157.27 |
-| BR/USDT:USDT | +43.43% | $21,602,053.39 |
-| ORCA/USDT:USDT | +27.37% | $10,263,501.43 |
-| UB/USDT:USDT | +23.93% | $10,371,014.17 |
+| B/USDT:USDT | +60.64% | $5,541,460.41 |
+| ZEREBRO/USDT:USDT | +51.29% | $5,852,835.21 |
+| BR/USDT:USDT | +45.74% | $21,722,768.48 |
+| ORCA/USDT:USDT | +27.30% | $10,295,187.80 |
+| UB/USDT:USDT | +21.80% | $10,411,322.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.00% | +2.64% |
-| DRIFT/USDT:USDT | below_1h_threshold | +2.91% | +2.55% |
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.45% |
-| ACNSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.11% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.23% | +1.87% |
+| ST/USDT:USDT | below_1h_threshold | +4.61% | +4.32% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.59% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.81% | +2.52% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.69% | +2.39% |
+| ACNSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.18% |
 
 ## 4. 次に見るべき不足
 
