@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T11:16:56.211652+00:00
+- generated_at: 2026-05-02T11:21:56.237274+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2895**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T11:16:54.509422+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=78133.2
+- 更新: 2026-05-02T11:21:54.510611+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78150.4
 - Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +201.50% | $114,342,254.83 |
-| TAC/USDT:USDT | +28.11% | $1,631,610.83 |
-| BIO/USDT:USDT | +21.46% | $1,954,689.88 |
-| SPACE/USDT:USDT | +16.87% | $1,092,723.00 |
-| KNC/USDT:USDT | +16.38% | $1,888,117.32 |
+| LAB/USDT:USDT | +202.85% | $114,799,434.30 |
+| TAC/USDT:USDT | +30.42% | $1,655,494.84 |
+| BIO/USDT:USDT | +21.12% | $1,968,866.66 |
+| TAG/USDT:USDT | +17.80% | $4,415,508.36 |
+| KNC/USDT:USDT | +16.46% | $1,893,975.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
-| USTC/USDT:USDT | below_1h_threshold | +1.46% | +1.55% |
-| BIO/USDT:USDT | below_1h_threshold | +1.13% | +1.22% |
-| B/USDT:USDT | below_1h_threshold | +1.06% | +1.16% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.06% | +1.15% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.66% | +2.73% |
+| TAG/USDT:USDT | below_1h_threshold | +2.12% | +2.19% |
+| B/USDT:USDT | below_1h_threshold | +1.40% | +1.47% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.27% | +1.34% |
+| USTC/USDT:USDT | below_1h_threshold | +0.93% | +1.00% |
 
 ## 4. 次に見るべき不足
 
