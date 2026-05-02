@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T01:17:05.395388+00:00
+- generated_at: 2026-05-02T01:22:02.261928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2848**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T01:17:01.276772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78287.1
+- 更新: 2026-05-02T01:21:58.088837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78265.0
 - Funnel: target 755 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +81.82% | $23,748,710.11 |
-| CHILLGUY/USDT:USDT | +13.42% | $1,030,963.81 |
-| BLESS/USDT:USDT | +12.32% | $1,312,114.54 |
-| FIGHT/USDT:USDT | +11.41% | $1,279,759.79 |
-| SKYAI/USDT:USDT | +11.13% | $21,011,512.14 |
+| LAB/USDT:USDT | +86.81% | $24,121,875.36 |
+| FIGHT/USDT:USDT | +12.86% | $1,280,622.78 |
+| CHILLGUY/USDT:USDT | +12.51% | $1,033,160.92 |
+| SKYAI/USDT:USDT | +11.61% | $21,136,033.34 |
+| BLESS/USDT:USDT | +11.57% | $1,324,085.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.94% | +1.96% |
-| UAI/USDT:USDT | below_1h_threshold | +1.49% | +1.51% |
-| M/USDT:USDT | below_1h_threshold | +1.39% | +1.41% |
-| LAB/USDT:USDT | below_1h_threshold | +1.31% | +1.33% |
-| TRB/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
+| LAB/USDT:USDT | below_1h_threshold | +3.90% | +3.95% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.44% | +2.49% |
+| TRB/USDT:USDT | below_1h_threshold | +1.73% | +1.78% |
+| COAI/USDT:USDT | below_1h_threshold | +0.96% | +1.01% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.82% | +0.87% |
 
 ## 4. 次に見るべき不足
 
