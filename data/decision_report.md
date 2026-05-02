@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T13:48:16.804527+00:00
+- generated_at: 2026-05-02T13:52:19.649548+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2908**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T13:48:14.124819+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=78304.9
+- 更新: 2026-05-02T13:52:16.955975+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=78300.0
 - Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1, 4h RSI 94.5 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 78.4 >= 65=1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 78.5 >= 65=1, 4h RSI 74.4 >= 65=1, 4h RSI 80.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +226.32% | $135,659,876.01 |
-| BIO/USDT:USDT | +44.35% | $2,813,036.79 |
-| TAG/USDT:USDT | +43.89% | $6,843,787.22 |
-| SPACE/USDT:USDT | +29.12% | $1,366,716.28 |
-| SKYAI/USDT:USDT | +23.49% | $21,553,800.33 |
+| LAB/USDT:USDT | +224.17% | $136,233,825.96 |
+| TAG/USDT:USDT | +45.35% | $6,888,299.47 |
+| BIO/USDT:USDT | +44.57% | $2,856,791.93 |
+| SPACE/USDT:USDT | +30.54% | $1,388,918.65 |
+| SKYAI/USDT:USDT | +25.64% | $21,652,948.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +4.86% | +4.69% |
-| SPACE/USDT:USDT | below_1h_threshold | +4.06% | +3.89% |
-| UB/USDT:USDT | below_1h_threshold | +3.92% | +3.75% |
-| ORDI/USDT:USDT | below_1h_threshold | +3.33% | +3.16% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.06% | +1.89% |
+| LAB/USDT:USDT | below_relative_strength | +5.04% | +4.88% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.40% | +3.23% |
+| UB/USDT:USDT | below_1h_threshold | +3.02% | +2.86% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.75% | +2.59% |
+| COAI/USDT:USDT | below_1h_threshold | +2.13% | +1.96% |
 
 ## 4. 次に見るべき不足
 
