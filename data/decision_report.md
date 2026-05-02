@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T20:32:11.611804+00:00
+- generated_at: 2026-05-02T20:37:12.017659+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2980**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T20:32:09.581094+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78405.9
+- 更新: 2026-05-02T20:37:09.931202+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78425.2
 - Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1
+- Strict後reject: 4h RSI 84.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XNY/USDT:USDT | +24.26% | $1,660,460.86 |
-| LUNC/USDT:USDT | +10.52% | $27,118,153.74 |
-| CHILLGUY/USDT:USDT | +9.46% | $1,124,612.88 |
-| ZKSYNC/USDT:USDT | +8.34% | $1,244,431.26 |
-| NAORIS/USDT:USDT | +8.00% | $4,035,491.80 |
+| XNY/USDT:USDT | +16.58% | $1,771,115.30 |
+| LUNC/USDT:USDT | +10.32% | $27,350,651.60 |
+| CHILLGUY/USDT:USDT | +9.46% | $1,134,024.95 |
+| NAORIS/USDT:USDT | +8.25% | $4,119,533.67 |
+| BASED/USDT:USDT | +7.89% | $1,323,000.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +3.15% | +3.20% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +2.88% | +2.92% |
-| ACH/USDT:USDT | below_1h_threshold | +2.71% | +2.75% |
-| BASED/USDT:USDT | below_1h_threshold | +2.41% | +2.46% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.41% | +2.46% |
+| ACH/USDT:USDT | below_1h_threshold | +3.85% | +3.88% |
+| BSB/USDT:USDT | below_1h_threshold | +3.23% | +3.25% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +2.88% | +2.90% |
+| BASED/USDT:USDT | below_1h_threshold | +2.83% | +2.86% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.82% | +2.84% |
 
 ## 4. 次に見るべき不足
 
