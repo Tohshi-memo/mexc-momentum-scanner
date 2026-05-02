@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T09:47:06.730125+00:00
+- generated_at: 2026-05-02T09:51:59.727325+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2890**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T09:47:04.096874+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=78273.2
-- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 4 → strict 0
+- 更新: 2026-05-02T09:51:57.151806+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78261.6
+- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 4 → strict 1
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1, 4h RSI 78.3 >= 65=1, 4h RSI 74.5 >= 65=1, 4h RSI 72.0 >= 65=1
+- Strict後reject: 4h RSI 93.5 >= 65=1, 4h RSI 78.5 >= 65=1, 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +202.47% | $100,833,284.49 |
-| BIO/USDT:USDT | +25.93% | $1,706,009.92 |
-| TAC/USDT:USDT | +24.37% | $1,206,775.81 |
-| KNC/USDT:USDT | +20.57% | $1,729,592.43 |
-| IRYS/USDT:USDT | +18.10% | $1,417,923.92 |
+| LAB/USDT:USDT | +192.80% | $101,554,597.45 |
+| TAC/USDT:USDT | +25.85% | $1,224,058.63 |
+| BIO/USDT:USDT | +24.24% | $1,734,620.16 |
+| KNC/USDT:USDT | +20.79% | $1,738,974.78 |
+| IRYS/USDT:USDT | +18.18% | $1,422,876.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +4.56% | +4.56% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.93% | +2.93% |
-| WLFI/USDT:USDT | below_1h_threshold | +2.34% | +2.34% |
-| INJ/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
+| BIO/USDT:USDT | below_1h_threshold | +4.73% | +4.74% |
+| TAG/USDT:USDT | below_1h_threshold | +4.32% | +4.33% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.70% | +2.71% |
+| INJ/USDT:USDT | below_1h_threshold | +2.33% | +2.35% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.98% | +1.99% |
 
 ## 4. 次に見るべき不足
 
