@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T03:06:56.517948+00:00
+- generated_at: 2026-05-02T03:12:05.478778+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2853**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T03:06:54.751490+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78306.2
-- Funnel: target 755 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-02T03:12:03.753743+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78229.1
+- Funnel: target 755 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +83.61% | $30,958,936.96 |
-| SKYAI/USDT:USDT | +16.83% | $21,393,623.52 |
-| B/USDT:USDT | +15.69% | $69,557,497.34 |
-| BLESS/USDT:USDT | +14.68% | $1,673,356.23 |
-| FIGHT/USDT:USDT | +9.12% | $1,058,900.46 |
+| LAB/USDT:USDT | +83.95% | $31,216,187.39 |
+| B/USDT:USDT | +17.10% | $69,686,167.61 |
+| SKYAI/USDT:USDT | +15.74% | $21,473,715.35 |
+| BLESS/USDT:USDT | +12.69% | $1,689,158.20 |
+| FIGHT/USDT:USDT | +8.68% | $1,059,244.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
-| KAT/USDT:USDT | below_1h_threshold | +0.99% | +1.01% |
-| FIGHT/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.50% | +0.51% |
+| TAC/USDT:USDT | below_1h_threshold | +2.02% | +2.14% |
+| LAB/USDT:USDT | below_1h_threshold | +1.71% | +1.83% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.94% | +1.05% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.63% | +0.74% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.51% | +0.62% |
 
 ## 4. 次に見るべき不足
 
