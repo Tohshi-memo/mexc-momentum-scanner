@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T12:26:58.642557+00:00
+- generated_at: 2026-05-02T12:31:53.525884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2901**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T12:26:56.488882+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78188.5
-- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.1 >= 65=1
+- 更新: 2026-05-02T12:31:51.526797+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78177.8
+- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.5 >= 65=1, 4h RSI 69.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +216.38% | $125,667,793.63 |
-| TAG/USDT:USDT | +35.47% | $5,127,820.22 |
-| BIO/USDT:USDT | +27.38% | $2,144,571.63 |
-| TAC/USDT:USDT | +26.00% | $1,977,504.40 |
-| SPACE/USDT:USDT | +22.48% | $1,226,032.20 |
+| LAB/USDT:USDT | +219.31% | $126,530,989.89 |
+| TAG/USDT:USDT | +35.48% | $5,235,571.02 |
+| BIO/USDT:USDT | +29.32% | $2,161,439.82 |
+| TAC/USDT:USDT | +28.13% | $1,998,652.85 |
+| SPACE/USDT:USDT | +21.03% | $1,246,191.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.27% | +4.16% |
-| ORCA/USDT:USDT | below_1h_threshold | +3.90% | +3.79% |
-| LAB/USDT:USDT | below_1h_threshold | +2.79% | +2.68% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.14% | +2.04% |
-| USTC/USDT:USDT | below_1h_threshold | +2.10% | +1.99% |
+| BIO/USDT:USDT | below_1h_threshold | +3.50% | +3.41% |
+| LAB/USDT:USDT | below_1h_threshold | +3.47% | +3.38% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.24% | +3.14% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.03% | +2.94% |
+| USTC/USDT:USDT | below_1h_threshold | +2.44% | +2.35% |
 
 ## 4. 次に見るべき不足
 
