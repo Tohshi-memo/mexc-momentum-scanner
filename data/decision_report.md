@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T00:27:03.925857+00:00
+- generated_at: 2026-05-02T00:32:03.083609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2847**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T00:27:02.211386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=78320.0
-- Funnel: target 755 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-02T00:32:01.111274+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78263.2
+- Funnel: target 755 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +84.08% | $20,355,910.65 |
-| CHILLGUY/USDT:USDT | +14.25% | $1,107,551.81 |
-| FIGHT/USDT:USDT | +11.85% | $1,274,753.03 |
-| B/USDT:USDT | +8.80% | $64,050,833.94 |
-| BLESS/USDT:USDT | +8.75% | $1,270,195.57 |
+| LAB/USDT:USDT | +84.14% | $20,648,498.04 |
+| CHILLGUY/USDT:USDT | +13.58% | $1,109,994.93 |
+| FIGHT/USDT:USDT | +11.14% | $1,276,545.41 |
+| BLESS/USDT:USDT | +9.20% | $1,275,926.06 |
+| B/USDT:USDT | +7.96% | $64,240,506.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.74% | +4.58% |
-| KAT/USDT:USDT | below_1h_threshold | +3.87% | +3.71% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.40% | +2.23% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.33% | +2.17% |
-| BLEND/USDT:USDT | below_1h_threshold | +2.26% | +2.10% |
+| KAT/USDT:USDT | below_1h_threshold | +3.87% | +3.78% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.80% | +2.70% |
+| BSB/USDT:USDT | below_1h_threshold | +2.65% | +2.56% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.40% | +2.31% |
+| BLEND/USDT:USDT | below_1h_threshold | +2.18% | +2.09% |
 
 ## 4. 次に見るべき不足
 
