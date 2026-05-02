@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-02T18:57:05.187485+00:00
+- generated_at: 2026-05-02T19:02:25.788078+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2973**
+- closed shadow trades: **2974**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.15% / filled 20/20。**
-- 全期間 MARKET基準: n=2973, expectancy=-0.16%
+- 全期間 MARKET基準: n=2974, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=+1.15%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,9 +22,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +1.21% | **+1.21%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +1.34% | **+1.21%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +1.28% | **+1.16%** |
 | MARKET | 20/20 | 100.0% | +1.15% | **+1.15%** |
-| LIMIT_BB3S | 4/12 | 33.3% | +2.47% | **+0.82%** |
+| LIMIT_BB3S | 4/13 | 30.8% | +2.47% | **+0.76%** |
 | LIMIT_2PCT | 16/20 | 80.0% | +0.58% | **+0.46%** |
 
 ### シャドウ上位 LONG
@@ -46,31 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T18:56:58.835216+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78446.0
-- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-02T19:02:24.034170+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=78411.2
+- Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +8.10% | $2,635,655.17 |
-| BSB/USDT:USDT | +6.73% | $9,789,064.12 |
-| BIANRENSHENG/USDT:USDT | +6.06% | $1,067,758.88 |
-| BASED/USDT:USDT | +5.11% | $1,357,416.65 |
-| PNUT/USDT:USDT | +5.06% | $1,681,175.64 |
+| BSB/USDT:USDT | +11.55% | $9,676,994.99 |
+| TAC/USDT:USDT | +8.65% | $2,606,577.80 |
+| BASED/USDT:USDT | +5.49% | $1,290,140.37 |
+| BIANRENSHENG/USDT:USDT | +4.37% | $1,066,575.42 |
+| BEAT/USDT:USDT | +3.92% | $3,099,565.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BABY/USDT:USDT | below_relative_strength | +5.03% | +4.92% |
-| TAO/USDT:USDT | below_1h_threshold | +2.88% | +2.77% |
-| RLS/USDT:USDT | below_1h_threshold | +2.76% | +2.66% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.66% | +2.55% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +2.25% | +2.14% |
+| BSB/USDT:USDT | below_1h_threshold | +3.41% | +3.43% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.65% | +0.67% |
+| AIOT/USDT:USDT | below_1h_threshold | +0.63% | +0.65% |
+| BASED/USDT:USDT | below_1h_threshold | +0.55% | +0.58% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.53% | +0.56% |
 
 ## 4. 次に見るべき不足
 
