@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T13:26:58.349471+00:00
+- generated_at: 2026-05-02T13:32:12.775698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2906**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T13:26:56.541362+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=78277.3
+- 更新: 2026-05-02T13:32:11.039170+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=78263.6
 - Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +220.56% | $131,832,082.81 |
-| TAG/USDT:USDT | +41.88% | $6,470,448.21 |
-| BIO/USDT:USDT | +30.11% | $2,426,825.42 |
-| SKYAI/USDT:USDT | +29.60% | $20,821,750.84 |
-| SPACE/USDT:USDT | +26.58% | $1,292,064.53 |
+| LAB/USDT:USDT | +221.74% | $132,596,645.39 |
+| TAG/USDT:USDT | +40.25% | $6,555,882.59 |
+| BIO/USDT:USDT | +32.39% | $2,453,805.32 |
+| SKYAI/USDT:USDT | +29.47% | $20,937,059.39 |
+| SPACE/USDT:USDT | +28.05% | $1,310,959.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.82% | +3.68% |
-| TAG/USDT:USDT | below_1h_threshold | +3.51% | +3.37% |
-| BB/USDT:USDT | below_1h_threshold | +2.26% | +2.12% |
-| SPACE/USDT:USDT | below_1h_threshold | +2.09% | +1.95% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.07% | +1.93% |
+| LAB/USDT:USDT | below_1h_threshold | +4.23% | +4.11% |
+| BIO/USDT:USDT | below_1h_threshold | +3.58% | +3.46% |
+| SPACE/USDT:USDT | below_1h_threshold | +3.27% | +3.15% |
+| BB/USDT:USDT | below_1h_threshold | +3.08% | +2.96% |
+| TAG/USDT:USDT | below_1h_threshold | +2.28% | +2.16% |
 
 ## 4. 次に見るべき不足
 
