@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T08:52:12.688202+00:00
+- generated_at: 2026-05-02T08:57:06.903451+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2883**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T08:52:10.738827+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=78301.1
+- 更新: 2026-05-02T08:57:04.950611+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78260.1
 - Funnel: target 755 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1
+- Strict後reject: 4h RSI 75.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +151.60% | $90,686,209.17 |
-| KNC/USDT:USDT | +22.09% | $1,582,876.65 |
-| TAC/USDT:USDT | +17.22% | $1,090,568.21 |
-| BIO/USDT:USDT | +16.50% | $1,418,526.32 |
-| IRYS/USDT:USDT | +15.95% | $1,388,806.61 |
+| LAB/USDT:USDT | +149.62% | $91,413,347.74 |
+| KNC/USDT:USDT | +21.51% | $1,605,089.62 |
+| BIO/USDT:USDT | +17.04% | $1,427,694.84 |
+| TAC/USDT:USDT | +16.60% | $1,103,054.88 |
+| IRYS/USDT:USDT | +15.92% | $1,389,236.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.53% | +3.38% |
-| TAG/USDT:USDT | below_1h_threshold | +3.50% | +3.34% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.34% | +3.19% |
-| BSB/USDT:USDT | below_1h_threshold | +3.32% | +3.17% |
-| RLS/USDT:USDT | below_1h_threshold | +3.24% | +3.09% |
+| SQD/USDT:USDT | below_1h_threshold | +3.87% | +3.77% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.40% | +3.30% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.17% | +3.07% |
+| BSB/USDT:USDT | below_1h_threshold | +2.90% | +2.80% |
+| B/USDT:USDT | below_1h_threshold | +2.68% | +2.58% |
 
 ## 4. 次に見るべき不足
 
