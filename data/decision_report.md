@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T09:42:04.679433+00:00
+- generated_at: 2026-05-02T09:47:06.730125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2890**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T09:42:02.310319+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78264.1
-- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.6 >= 65=1, 4h RSI 78.8 >= 65=1, 4h RSI 72.6 >= 65=1
+- 更新: 2026-05-02T09:47:04.096874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78273.2
+- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.9 >= 65=1, 4h RSI 78.3 >= 65=1, 4h RSI 74.5 >= 65=1, 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +196.20% | $100,192,676.55 |
-| TAC/USDT:USDT | +27.33% | $1,171,118.72 |
-| BIO/USDT:USDT | +24.48% | $1,686,947.33 |
-| KNC/USDT:USDT | +20.57% | $1,716,544.82 |
-| IRYS/USDT:USDT | +16.24% | $1,413,764.02 |
+| LAB/USDT:USDT | +202.47% | $100,833,284.49 |
+| BIO/USDT:USDT | +25.93% | $1,706,009.92 |
+| TAC/USDT:USDT | +24.37% | $1,206,775.81 |
+| KNC/USDT:USDT | +20.57% | $1,729,592.43 |
+| IRYS/USDT:USDT | +18.10% | $1,417,923.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +4.68% | +4.69% |
-| TAG/USDT:USDT | below_1h_threshold | +4.42% | +4.43% |
-| NAORIS/USDT:USDT | below_1h_threshold | +4.19% | +4.20% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.50% | +2.51% |
-| INJ/USDT:USDT | below_1h_threshold | +2.25% | +2.26% |
+| TAG/USDT:USDT | below_1h_threshold | +4.56% | +4.56% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.93% | +2.93% |
+| WLFI/USDT:USDT | below_1h_threshold | +2.34% | +2.34% |
+| INJ/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
 
 ## 4. 次に見るべき不足
 
