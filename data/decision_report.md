@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-02T08:02:12.105901+00:00
+- generated_at: 2026-05-02T08:06:53.267070+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2880**
+- closed shadow trades: **2881**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=2880, expectancy=-0.12%
+- 全期間 MARKET基準: n=2881, expectancy=-0.13%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,8 +32,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.49% | **+1.26%** |
-| LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.22% | **+0.92%** |
-| ASK_LONG | 20/20 | 100.0% | +0.66% | **+0.66%** |
+| LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.10% | **+0.82%** |
+| ASK_LONG | 20/20 | 100.0% | +0.70% | **+0.70%** |
 | LIMIT_FIB1618_LONG | 2/20 | 10.0% | +3.97% | **+0.40%** |
 | LIMIT_BB3S_LONG | 2/2 | 100.0% | +0.38% | **+0.38%** |
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T08:02:10.335032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78142.5
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-02T08:06:51.487592+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78173.3
+- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +172.04% | $82,546,154.21 |
-| KNC/USDT:USDT | +21.73% | $1,382,803.88 |
-| IRYS/USDT:USDT | +16.06% | $1,335,549.68 |
-| BIO/USDT:USDT | +15.59% | $1,288,026.42 |
-| BLESS/USDT:USDT | +11.08% | $2,156,598.36 |
+| LAB/USDT:USDT | +171.14% | $83,194,647.84 |
+| KNC/USDT:USDT | +21.94% | $1,429,459.76 |
+| IRYS/USDT:USDT | +16.08% | $1,337,967.54 |
+| BIO/USDT:USDT | +14.16% | $1,312,212.00 |
+| BLESS/USDT:USDT | +11.23% | $2,167,126.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.92% | +3.97% |
-| SQD/USDT:USDT | below_1h_threshold | +1.72% | +1.77% |
-| GUA/USDT:USDT | below_1h_threshold | +0.86% | +0.91% |
-| RLS/USDT:USDT | below_1h_threshold | +0.86% | +0.91% |
-| TAC/USDT:USDT | below_1h_threshold | +0.59% | +0.64% |
+| LAB/USDT:USDT | below_1h_threshold | +3.67% | +3.68% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.29% | +3.31% |
+| UB/USDT:USDT | below_1h_threshold | +1.91% | +1.92% |
+| SQD/USDT:USDT | below_1h_threshold | +1.87% | +1.88% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
 
 ## 4. 次に見るべき不足
 
