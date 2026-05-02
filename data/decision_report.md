@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-02T02:56:59.122081+00:00
+- generated_at: 2026-05-02T03:02:09.431996+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2852**
+- closed shadow trades: **2853**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2852, expectancy=-0.12%
+- 全期間 MARKET基準: n=2853, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T02:56:56.938296+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78383.2
-- Funnel: target 755 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.4 >= 65=1, 4h RSI 85.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-02T03:02:07.720917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78315.0
+- Funnel: target 755 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +78.28% | $30,468,133.16 |
-| SKYAI/USDT:USDT | +16.51% | $22,179,143.15 |
-| BLESS/USDT:USDT | +16.46% | $1,655,438.17 |
-| B/USDT:USDT | +16.23% | $69,177,728.31 |
-| PLAY/USDT:USDT | +8.65% | $4,437,108.45 |
+| LAB/USDT:USDT | +82.30% | $30,747,073.24 |
+| SKYAI/USDT:USDT | +17.39% | $21,281,994.45 |
+| B/USDT:USDT | +15.22% | $69,378,153.16 |
+| BLESS/USDT:USDT | +15.02% | $1,657,280.93 |
+| PLAY/USDT:USDT | +9.24% | $4,433,355.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +4.77% | +4.66% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.95% | +3.84% |
-| VINE/USDT:USDT | below_1h_threshold | +3.14% | +3.02% |
-| GUA/USDT:USDT | below_1h_threshold | +2.30% | +2.19% |
-| BR/USDT:USDT | below_1h_threshold | +2.17% | +2.06% |
+| LAB/USDT:USDT | below_1h_threshold | +1.15% | +1.15% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
+| FIGHT/USDT:USDT | below_1h_threshold | +0.70% | +0.71% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
 
 ## 4. 次に見るべき不足
 
