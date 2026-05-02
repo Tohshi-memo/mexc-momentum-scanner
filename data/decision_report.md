@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T22:12:02.985312+00:00
+- generated_at: 2026-05-02T22:17:06.732015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2997**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T22:12:01.134900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78707.1
+- 更新: 2026-05-02T22:17:04.940041+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78706.0
 - Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +18.73% | $319,643,589.95 |
-| FHE/USDT:USDT | +16.06% | $1,126,292.56 |
-| BIANRENSHENG/USDT:USDT | +15.53% | $1,118,817.50 |
-| XNY/USDT:USDT | +14.20% | $2,069,934.26 |
-| NAORIS/USDT:USDT | +10.12% | $4,377,635.46 |
+| XNY/USDT:USDT | +13.78% | $2,077,263.23 |
+| BIANRENSHENG/USDT:USDT | +13.57% | $1,139,230.42 |
+| FHE/USDT:USDT | +12.95% | $1,156,704.67 |
+| NAORIS/USDT:USDT | +11.29% | $4,389,104.57 |
+| LUNC/USDT:USDT | +9.90% | $27,325,449.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.14% | +2.12% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.62% | +1.60% |
-| BLEND/USDT:USDT | below_1h_threshold | +1.45% | +1.42% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.19% | +1.17% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.10% | +2.08% |
+| BLEND/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.31% | +1.29% |
+| ACH/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
+| BASED/USDT:USDT | below_1h_threshold | +1.11% | +1.09% |
 
 ## 4. 次に見るべき不足
 
