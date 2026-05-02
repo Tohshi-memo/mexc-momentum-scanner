@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-02T20:17:20.409541+00:00
+- generated_at: 2026-05-02T20:22:10.860502+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2978**
+- closed shadow trades: **2979**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.55% / filled 20/20。**
-- 全期間 MARKET基準: n=2978, expectancy=-0.16%
+- 全期間 MARKET基準: n=2979, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=+0.55%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | MARKET | 20/20 | 100.0% | +0.55% | **+0.55%** |
 | LIMIT_BB3S | 5/14 | 35.7% | +1.45% | **+0.52%** |
 | LIMIT_5PCT | 6/20 | 30.0% | +0.95% | **+0.29%** |
-| LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
+| LIMIT_FIB1272 | 7/20 | 35.0% | +0.71% | **+0.25%** |
 
 ### シャドウ上位 LONG
 
@@ -35,7 +35,7 @@
 | LIMIT_9PCT_LONG | 6/20 | 30.0% | +3.70% | **+1.11%** |
 | LIMIT_8PCT_LONG | 7/20 | 35.0% | +2.86% | **+1.00%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| ASK_LONG | 20/20 | 100.0% | +0.66% | **+0.66%** |
+| ASK_LONG | 20/20 | 100.0% | +0.58% | **+0.58%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T20:17:15.478420+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78396.0
+- 更新: 2026-05-02T20:22:06.638880+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78400.0
 - Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1
+- Strict後reject: 4h RSI 86.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XNY/USDT:USDT | +17.87% | $1,350,401.66 |
-| NAORIS/USDT:USDT | +12.09% | $3,810,654.25 |
-| ZKSYNC/USDT:USDT | +11.41% | $1,024,401.58 |
-| BSB/USDT:USDT | +9.45% | $10,951,417.45 |
-| LUNC/USDT:USDT | +8.87% | $26,228,280.41 |
+| XNY/USDT:USDT | +21.75% | $1,402,860.83 |
+| NAORIS/USDT:USDT | +10.78% | $3,906,942.36 |
+| LUNC/USDT:USDT | +10.66% | $26,516,545.83 |
+| BSB/USDT:USDT | +9.92% | $11,002,734.50 |
+| CHILLGUY/USDT:USDT | +9.04% | $1,099,231.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.05% | +3.11% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.63% | +2.69% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.77% | +1.83% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
-| ACH/USDT:USDT | below_1h_threshold | +1.69% | +1.75% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.77% | +2.83% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +2.49% | +2.54% |
+| ACH/USDT:USDT | below_1h_threshold | +2.27% | +2.32% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.80% | +1.85% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
 
 ## 4. 次に見るべき不足
 
