@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T00:02:10.217664+00:00
+- generated_at: 2026-05-02T00:05:46.058257+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2846**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T00:02:08.456808+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78209.3
+- 更新: 2026-05-02T00:05:44.336599+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78217.0
 - Funnel: target 755 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +75.85% | $17,573,250.83 |
-| CHILLGUY/USDT:USDT | +16.90% | $1,057,262.82 |
-| RLS/USDT:USDT | +11.11% | $2,515,014.43 |
-| WOJAK/USDT:USDT | +10.79% | $1,076,564.10 |
-| BLESS/USDT:USDT | +9.92% | $1,236,634.93 |
+| LAB/USDT:USDT | +71.07% | $18,026,684.97 |
+| CHILLGUY/USDT:USDT | +15.41% | $1,066,850.21 |
+| FIGHT/USDT:USDT | +10.18% | $1,270,499.94 |
+| RLS/USDT:USDT | +10.13% | $2,521,932.16 |
+| WOJAK/USDT:USDT | +9.83% | $1,077,065.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLS/USDT:USDT | below_1h_threshold | +3.02% | +3.00% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.40% | +1.38% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
-| AXS/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.97% | +0.95% |
+| RLS/USDT:USDT | below_1h_threshold | +2.11% | +2.08% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.55% | +1.52% |
+| AXS/USDT:USDT | below_1h_threshold | +1.29% | +1.26% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.06% | +1.03% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.82% | +0.79% |
 
 ## 4. 次に見るべき不足
 
