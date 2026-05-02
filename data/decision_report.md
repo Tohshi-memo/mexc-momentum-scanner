@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T07:26:58.907538+00:00
+- generated_at: 2026-05-02T07:32:02.877627+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2876**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T07:26:54.644972+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=78281.1
+- 更新: 2026-05-02T07:31:59.015005+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78260.1
 - Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +128.49% | $76,214,217.73 |
-| IRYS/USDT:USDT | +17.35% | $1,296,490.91 |
-| B/USDT:USDT | +14.85% | $79,125,822.00 |
-| BLESS/USDT:USDT | +11.29% | $2,135,280.52 |
-| TAC/USDT:USDT | +10.85% | $1,035,657.13 |
+| LAB/USDT:USDT | +133.13% | $77,069,076.81 |
+| IRYS/USDT:USDT | +15.52% | $1,312,914.67 |
+| B/USDT:USDT | +13.04% | $79,371,459.51 |
+| BLESS/USDT:USDT | +11.21% | $2,137,966.84 |
+| BIO/USDT:USDT | +9.57% | $1,127,524.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +2.42% | +2.42% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.44% | +1.43% |
-| BIO/USDT:USDT | below_1h_threshold | +1.14% | +1.14% |
-| USTC/USDT:USDT | below_1h_threshold | +1.04% | +1.04% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.97% | +2.99% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.37% | +2.40% |
+| RLS/USDT:USDT | below_1h_threshold | +2.06% | +2.09% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.86% | +1.88% |
+| BIO/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
 
 ## 4. 次に見るべき不足
 
