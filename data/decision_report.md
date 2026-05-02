@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-02T16:12:22.581921+00:00
+- generated_at: 2026-05-02T16:17:13.544195+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2947**
+- closed shadow trades: **2949**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2947, expectancy=-0.17%
-- 直近20件 MARKET基準: n=20, expectancy=-0.98%
+- 全期間 MARKET基準: n=2949, expectancy=-0.17%
+- 直近20件 MARKET基準: n=20, expectancy=-0.38%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.98% | **-0.98%** |
+| MARKET | 20/20 | 100.0% | -0.38% | **-0.38%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT | 4/20 | 20.0% | +6.70% | **+1.34%** |
-| LIMIT_5PCT | 11/20 | 55.0% | +2.24% | **+1.23%** |
-| LIMIT_6PCT | 6/20 | 30.0% | +3.92% | **+1.18%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | +2.00% | **+0.80%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
+| LIMIT_8PCT | 3/20 | 15.0% | +6.57% | **+0.99%** |
+| LIMIT_5PCT | 10/20 | 50.0% | +1.17% | **+0.59%** |
+| LIMIT_6PCT | 6/20 | 30.0% | +1.92% | **+0.58%** |
+| LIMIT_FIB1272 | 7/20 | 35.0% | +1.15% | **+0.40%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 5/8 | 62.5% | +5.42% | **+3.39%** |
-| LIMIT_ATR_LONG | 18/20 | 90.0% | +2.79% | **+2.51%** |
-| LIMIT_3PCT_LONG | 16/20 | 80.0% | +2.69% | **+2.15%** |
-| LIMIT_2PCT_LONG | 18/20 | 90.0% | +2.12% | **+1.91%** |
-| LIMIT_5PCT_LONG | 10/20 | 50.0% | +2.17% | **+1.08%** |
+| LIMIT_ATR_LONG | 17/20 | 85.0% | +2.48% | **+2.11%** |
+| LIMIT_BB3S_LONG | 5/8 | 62.5% | +3.02% | **+1.89%** |
+| LIMIT_3PCT_LONG | 15/20 | 75.0% | +2.34% | **+1.75%** |
+| LIMIT_2PCT_LONG | 17/20 | 85.0% | +1.88% | **+1.60%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +3.43% | **+1.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T16:12:17.743695+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78487.2
-- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1, 4h RSI 86.4 >= 65=1, 4h RSI 96.3 >= 65=1
+- 更新: 2026-05-02T16:17:06.545166+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78487.1
+- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.8 >= 65=1, 4h RSI 84.7 >= 65=1, 4h RSI 87.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +12.10% | $1,156,485.61 |
-| TAG/USDT:USDT | +10.01% | $11,045,081.58 |
-| ORDI/USDT:USDT | +8.96% | $20,422,033.27 |
-| LAB/USDT:USDT | +6.06% | $176,945,944.69 |
-| BASED/USDT:USDT | +4.68% | $1,179,008.85 |
+| LAB/USDT:USDT | +15.40% | $180,366,073.09 |
+| TAG/USDT:USDT | +11.59% | $11,190,361.91 |
+| ORDI/USDT:USDT | +10.41% | $21,530,692.17 |
+| PHAROS/USDT:USDT | +7.86% | $1,217,223.48 |
+| BASED/USDT:USDT | +5.34% | $1,211,961.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +4.69% | +4.64% |
-| TAC/USDT:USDT | below_1h_threshold | +3.94% | +3.90% |
-| XNY/USDT:USDT | below_1h_threshold | +2.63% | +2.58% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.38% | +2.34% |
-| ORCA/USDT:USDT | below_1h_threshold | +2.04% | +1.99% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.37% | +3.32% |
+| TAC/USDT:USDT | below_1h_threshold | +3.28% | +3.23% |
+| UB/USDT:USDT | below_1h_threshold | +3.26% | +3.21% |
+| XNY/USDT:USDT | below_1h_threshold | +2.89% | +2.84% |
+| PNUT/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
 
 ## 4. 次に見るべき不足
 
