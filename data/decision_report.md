@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T17:47:03.374187+00:00
+- generated_at: 2026-05-02T17:52:04.098260+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2963**
 
@@ -39,39 +39,39 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$101.99** / 初期 $100.00 (+1.99%)
-- 確定トレード: 8件 (TP 4 / SL 4 / EXP 0)
-- 最新: NAORIS/USDT:USDT SL_HIT PnL -4.00% 残高後 $101.99
+- 残高: **$102.70** / 初期 $100.00 (+2.70%)
+- 確定トレード: 9件 (TP 4 / SL 4 / EXP 1)
+- 最新: RAVE/USDT:USDT EXPIRED PnL +5.55% 残高後 $102.70
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T17:47:01.361738+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=78399.9
+- 更新: 2026-05-02T17:52:02.059585+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78362.3
 - Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.4 >= 65=1
+- Strict後reject: 4h RSI 68.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +9.65% | $2,592,342.88 |
-| TAG/USDT:USDT | +6.53% | $14,907,432.71 |
-| ORDI/USDT:USDT | +5.88% | $28,831,215.60 |
-| XNY/USDT:USDT | +5.33% | $1,272,187.71 |
-| BASED/USDT:USDT | +5.25% | $1,295,359.27 |
+| TAC/USDT:USDT | +8.12% | $2,607,556.59 |
+| XNY/USDT:USDT | +5.46% | $1,274,382.28 |
+| ORDI/USDT:USDT | +5.44% | $29,099,447.91 |
+| BASED/USDT:USDT | +4.98% | $1,297,011.26 |
+| TAG/USDT:USDT | +4.86% | $15,068,753.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AT/USDT:USDT | below_1h_threshold | +4.32% | +4.34% |
-| SPACE/USDT:USDT | below_1h_threshold | +3.67% | +3.69% |
-| RLS/USDT:USDT | below_1h_threshold | +2.77% | +2.80% |
-| H/USDT:USDT | below_1h_threshold | +2.31% | +2.33% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.96% | +1.99% |
+| AT/USDT:USDT | below_1h_threshold | +4.96% | +5.03% |
+| SPACE/USDT:USDT | below_1h_threshold | +3.40% | +3.48% |
+| H/USDT:USDT | below_1h_threshold | +2.41% | +2.48% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.33% | +2.40% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.66% | +1.73% |
 
 ## 4. 次に見るべき不足
 
