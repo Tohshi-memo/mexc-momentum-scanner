@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T00:07:42.757935+00:00
+- generated_at: 2026-05-02T00:11:41.365410+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2846**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T00:07:41.010472+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78212.7
+- 更新: 2026-05-02T00:11:39.597391+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78197.7
 - Funnel: target 755 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +75.48% | $18,181,466.22 |
-| CHILLGUY/USDT:USDT | +15.99% | $1,070,473.91 |
-| RLS/USDT:USDT | +10.77% | $2,530,394.17 |
-| WOJAK/USDT:USDT | +10.40% | $1,077,702.49 |
-| BLESS/USDT:USDT | +10.26% | $1,241,926.80 |
+| LAB/USDT:USDT | +70.95% | $18,447,701.10 |
+| CHILLGUY/USDT:USDT | +15.32% | $1,075,738.40 |
+| RLS/USDT:USDT | +11.91% | $2,536,605.23 |
+| BLESS/USDT:USDT | +10.52% | $1,244,667.65 |
+| FIGHT/USDT:USDT | +9.07% | $1,270,884.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLS/USDT:USDT | below_1h_threshold | +3.02% | +3.00% |
-| AXS/USDT:USDT | below_1h_threshold | +2.73% | +2.70% |
-| BLEND/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.13% | +1.10% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| RLS/USDT:USDT | below_1h_threshold | +3.51% | +3.50% |
+| AXS/USDT:USDT | below_1h_threshold | +3.23% | +3.23% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.66% | +2.65% |
+| TRB/USDT:USDT | below_1h_threshold | +1.79% | +1.79% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.58% | +1.57% |
 
 ## 4. 次に見るべき不足
 
