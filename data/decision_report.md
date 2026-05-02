@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T04:32:17.730782+00:00
+- generated_at: 2026-05-02T04:37:02.474379+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2861**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T04:32:12.599374+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78230.1
-- Funnel: target 755 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.7 >= 65=1
+- 更新: 2026-05-02T04:37:00.501955+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=78241.7
+- Funnel: target 755 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +132.17% | $37,934,044.65 |
-| SKYAI/USDT:USDT | +18.90% | $21,604,006.52 |
-| B/USDT:USDT | +17.14% | $72,845,667.48 |
-| BLESS/USDT:USDT | +12.66% | $1,878,533.30 |
-| BSB/USDT:USDT | +10.29% | $11,255,723.74 |
+| LAB/USDT:USDT | +132.96% | $38,305,523.40 |
+| SKYAI/USDT:USDT | +19.32% | $21,630,929.47 |
+| B/USDT:USDT | +16.16% | $72,980,899.36 |
+| BLESS/USDT:USDT | +12.66% | $1,888,564.27 |
+| PLAY/USDT:USDT | +9.67% | $4,497,189.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RLS/USDT:USDT | below_1h_threshold | +4.76% | +4.95% |
-| TAG/USDT:USDT | below_1h_threshold | +4.67% | +4.86% |
-| B/USDT:USDT | below_1h_threshold | +3.32% | +3.51% |
-| BR/USDT:USDT | below_1h_threshold | +1.91% | +2.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.39% | +1.58% |
+| BSB/USDT:USDT | below_1h_threshold | +4.58% | +4.75% |
+| B/USDT:USDT | below_1h_threshold | +2.76% | +2.93% |
+| RLS/USDT:USDT | below_1h_threshold | +2.39% | +2.56% |
+| COAI/USDT:USDT | below_1h_threshold | +1.99% | +2.16% |
+| LYN/USDT:USDT | below_1h_threshold | +1.95% | +2.12% |
 
 ## 4. 次に見るべき不足
 
