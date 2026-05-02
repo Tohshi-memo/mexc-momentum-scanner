@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T16:57:10.660472+00:00
+- generated_at: 2026-05-02T17:02:12.985035+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2960**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T16:57:00.941846+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78440.0
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 7 → strict 3
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.7 >= 65=1, 4h RSI 96.8 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 86.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-02T17:02:11.223019+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78407.5
+- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +30.91% | $13,344,671.82 |
-| LAB/USDT:USDT | +14.09% | $198,195,613.21 |
-| TAC/USDT:USDT | +10.29% | $2,512,629.57 |
-| XNY/USDT:USDT | +8.14% | $1,258,227.24 |
-| ORDI/USDT:USDT | +7.40% | $25,888,106.65 |
+| TAG/USDT:USDT | +29.01% | $13,333,441.77 |
+| LAB/USDT:USDT | +14.53% | $199,245,812.28 |
+| TAC/USDT:USDT | +12.87% | $2,489,465.55 |
+| XNY/USDT:USDT | +8.06% | $1,222,097.67 |
+| ORDI/USDT:USDT | +7.42% | $25,941,140.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PNUT/USDT:USDT | below_1h_threshold | +4.92% | +4.93% |
-| ALCH/USDT:USDT | below_1h_threshold | +4.01% | +4.02% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.65% | +3.66% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.56% | +3.57% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.44% | +3.45% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.35% | +1.36% |
+| PNUT/USDT:USDT | below_1h_threshold | +1.09% | +1.10% |
+| TAC/USDT:USDT | below_1h_threshold | +1.04% | +1.06% |
+| BIO/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.01% | +1.03% |
 
 ## 4. 次に見るべき不足
 
