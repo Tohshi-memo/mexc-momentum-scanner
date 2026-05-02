@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T21:12:10.174963+00:00
+- generated_at: 2026-05-02T21:14:13.085971+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2983**
 
@@ -46,9 +46,9 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T21:12:08.167604+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78452.0
-- Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-02T21:14:10.873323+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78420.0
+- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 78.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -57,21 +57,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XNY/USDT:USDT | +14.37% | $1,957,541.03 |
-| NAORIS/USDT:USDT | +13.86% | $4,056,170.96 |
-| BSB/USDT:USDT | +12.35% | $11,481,121.37 |
-| LUNC/USDT:USDT | +11.79% | $27,980,577.45 |
-| CHILLGUY/USDT:USDT | +10.29% | $1,123,978.11 |
+| XNY/USDT:USDT | +14.44% | $1,966,525.39 |
+| NAORIS/USDT:USDT | +12.25% | $4,074,149.68 |
+| LUNC/USDT:USDT | +11.93% | $28,024,824.51 |
+| BSB/USDT:USDT | +11.79% | $11,517,708.93 |
+| CHILLGUY/USDT:USDT | +10.64% | $1,125,785.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XNY/USDT:USDT | below_1h_threshold | +3.30% | +3.25% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.37% | +2.32% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.09% | +2.05% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
-| ACH/USDT:USDT | below_1h_threshold | +1.40% | +1.35% |
+| XNY/USDT:USDT | below_1h_threshold | +3.44% | +3.43% |
+| UB/USDT:USDT | below_1h_threshold | +2.08% | +2.07% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.88% | +1.88% |
+| ACH/USDT:USDT | below_1h_threshold | +1.37% | +1.37% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
 
 ## 4. 次に見るべき不足
 
