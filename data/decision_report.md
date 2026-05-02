@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T16:30:58.131639+00:00
+- generated_at: 2026-05-02T16:33:04.206928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2956**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T16:30:47.145190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78458.3
-- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 6 → strict 3
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 86.6 >= 65=1, 4h RSI 80.4 >= 65=1
+- 更新: 2026-05-02T16:32:57.215567+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78450.5
+- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 96.7 >= 65=1, 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +27.60% | $12,371,947.05 |
-| ORDI/USDT:USDT | +10.55% | $23,489,499.83 |
-| XNY/USDT:USDT | +7.43% | $1,196,203.05 |
-| BASED/USDT:USDT | +6.09% | $1,269,654.54 |
-| TAC/USDT:USDT | +5.90% | $2,470,217.06 |
+| TAG/USDT:USDT | +28.87% | $12,512,848.93 |
+| LAB/USDT:USDT | +12.97% | $191,006,092.38 |
+| ORDI/USDT:USDT | +6.41% | $24,238,118.92 |
+| PHAROS/USDT:USDT | +6.22% | $1,270,246.48 |
+| TAC/USDT:USDT | +5.96% | $2,474,913.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.85% | +4.84% |
-| PNUT/USDT:USDT | below_1h_threshold | +3.34% | +3.33% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +2.85% | +2.84% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.76% | +2.75% |
-| UB/USDT:USDT | below_1h_threshold | +2.65% | +2.64% |
+| BASED/USDT:USDT | below_1h_threshold | +4.98% | +4.98% |
+| XNY/USDT:USDT | below_1h_threshold | +4.49% | +4.49% |
+| PNUT/USDT:USDT | below_1h_threshold | +3.64% | +3.64% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.48% | +3.48% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.66% | +2.65% |
 
 ## 4. 次に見るべき不足
 
