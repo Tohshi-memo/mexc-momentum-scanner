@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T20:52:06.772782+00:00
+- generated_at: 2026-05-02T20:56:41.046087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2983**
 
@@ -46,32 +46,31 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T20:52:02.428598+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78399.9
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.4 >= 65=1
+- 更新: 2026-05-02T20:56:37.430450+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78408.3
+- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XNY/USDT:USDT | +14.81% | $1,960,572.01 |
-| BSB/USDT:USDT | +11.10% | $11,449,016.27 |
-| NAORIS/USDT:USDT | +10.51% | $4,201,732.83 |
-| LUNC/USDT:USDT | +10.01% | $27,880,127.20 |
-| CHILLGUY/USDT:USDT | +8.48% | $1,153,695.20 |
+| XNY/USDT:USDT | +13.35% | $2,006,420.88 |
+| BSB/USDT:USDT | +11.54% | $11,491,548.65 |
+| LUNC/USDT:USDT | +11.45% | $28,131,057.95 |
+| NAORIS/USDT:USDT | +11.02% | $4,215,010.86 |
+| CHILLGUY/USDT:USDT | +9.74% | $1,157,441.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XNY/USDT:USDT | below_1h_threshold | +4.90% | +4.96% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.36% | +3.42% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.24% | +3.30% |
-| SPACE/USDT:USDT | below_1h_threshold | +2.65% | +2.71% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +1.96% | +2.02% |
+| ACH/USDT:USDT | below_1h_threshold | +4.04% | +4.09% |
+| XNY/USDT:USDT | below_1h_threshold | +3.61% | +3.65% |
+| SPACE/USDT:USDT | below_1h_threshold | +3.59% | +3.64% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.59% | +3.63% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +3.53% | +3.58% |
 
 ## 4. 次に見るべき不足
 
