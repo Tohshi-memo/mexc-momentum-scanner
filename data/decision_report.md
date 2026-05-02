@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-02T20:37:12.017659+00:00
+- generated_at: 2026-05-02T20:42:16.561193+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **2980**
+- closed shadow trades: **2981**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=2980, expectancy=-0.17%
+- 全期間 MARKET基準: n=2981, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=-0.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,16 +25,16 @@
 | LIMIT_5PCT | 6/20 | 30.0% | +0.95% | **+0.29%** |
 | LIMIT_FIB1272 | 7/20 | 35.0% | +0.71% | **+0.25%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
-| ASK | 20/20 | 100.0% | +0.08% | **+0.08%** |
+| LIMIT_ATR | 15/20 | 75.0% | +0.11% | **+0.09%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_10PCT_LONG | 5/20 | 25.0% | +6.84% | **+1.71%** |
+| LIMIT_10PCT_LONG | 5/20 | 25.0% | +5.69% | **+1.42%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.20% | **+1.20%** |
-| LIMIT_9PCT_LONG | 6/20 | 30.0% | +3.70% | **+1.11%** |
 | ASK_LONG | 20/20 | 100.0% | +0.92% | **+0.92%** |
+| LIMIT_9PCT_LONG | 6/20 | 30.0% | +2.55% | **+0.76%** |
 | LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.95% | **+0.72%** |
 
 ## 2. $100 Live Portfolio
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T20:37:09.931202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78425.2
+- 更新: 2026-05-02T20:42:14.591723+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78433.5
 - Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.1 >= 65=1
+- Strict後reject: 4h RSI 83.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XNY/USDT:USDT | +16.58% | $1,771,115.30 |
-| LUNC/USDT:USDT | +10.32% | $27,350,651.60 |
-| CHILLGUY/USDT:USDT | +9.46% | $1,134,024.95 |
-| NAORIS/USDT:USDT | +8.25% | $4,119,533.67 |
-| BASED/USDT:USDT | +7.89% | $1,323,000.33 |
+| XNY/USDT:USDT | +15.16% | $1,864,683.10 |
+| LUNC/USDT:USDT | +10.70% | $27,528,028.40 |
+| CHILLGUY/USDT:USDT | +10.36% | $1,142,381.86 |
+| BEAT/USDT:USDT | +7.80% | $3,211,123.43 |
+| ZKSYNC/USDT:USDT | +7.65% | $1,297,485.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACH/USDT:USDT | below_1h_threshold | +3.85% | +3.88% |
-| BSB/USDT:USDT | below_1h_threshold | +3.23% | +3.25% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +2.88% | +2.90% |
-| BASED/USDT:USDT | below_1h_threshold | +2.83% | +2.86% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.82% | +2.84% |
+| ACH/USDT:USDT | below_1h_threshold | +3.83% | +3.84% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +3.73% | +3.74% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.31% | +3.32% |
+| BSB/USDT:USDT | below_1h_threshold | +3.00% | +3.01% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.61% | +2.63% |
 
 ## 4. 次に見るべき不足
 
