@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T15:37:08.435892+00:00
+- generated_at: 2026-05-02T15:42:10.964911+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2933**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T15:37:05.567024+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78376.4
-- Funnel: target 755 → liquid 161 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.2 >= 65=1, 4h RSI 78.8 >= 65=1, 4h RSI 76.3 >= 65=1, 4h RSI 80.8 >= 65=1
+- 更新: 2026-05-02T15:42:08.087383+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78371.1
+- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.6 >= 65=1, 4h RSI 78.6 >= 65=1, 4h RSI 82.3 >= 65=1, 4h RSI 83.5 >= 65=1, 4h RSI 76.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +306.52% | $167,415,304.07 |
-| TAG/USDT:USDT | +69.78% | $10,156,479.55 |
-| BIO/USDT:USDT | +43.34% | $3,995,256.47 |
-| SKYAI/USDT:USDT | +37.14% | $19,419,272.18 |
-| KNC/USDT:USDT | +31.69% | $2,284,882.46 |
+| LAB/USDT:USDT | +303.04% | $168,350,750.34 |
+| TAG/USDT:USDT | +75.66% | $10,251,977.01 |
+| BIO/USDT:USDT | +42.88% | $4,041,467.62 |
+| SKYAI/USDT:USDT | +36.53% | $19,555,647.40 |
+| KNC/USDT:USDT | +30.32% | $2,332,370.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.84% | +3.85% |
-| TAG/USDT:USDT | below_1h_threshold | +3.42% | +3.42% |
-| B/USDT:USDT | below_1h_threshold | +3.28% | +3.29% |
-| UB/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
-| XNY/USDT:USDT | below_1h_threshold | +1.78% | +1.79% |
+| B/USDT:USDT | below_1h_threshold | +3.26% | +3.27% |
+| BABY/USDT:USDT | below_1h_threshold | +2.87% | +2.89% |
+| XNY/USDT:USDT | below_1h_threshold | +2.73% | +2.74% |
+| LAB/USDT:USDT | below_1h_threshold | +2.37% | +2.38% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.14% | +2.15% |
 
 ## 4. 次に見るべき不足
 
