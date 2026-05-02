@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T14:47:31.650382+00:00
+- generated_at: 2026-05-02T14:52:10.195264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2921**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T14:47:24.911623+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78369.7
-- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 7 → strict 1
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.6 >= 65=1, 4h RSI 90.3 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 82.3 >= 65=1, 4h RSI 81.2 >= 65=1, 4h RSI 70.3 >= 65=1
+- 更新: 2026-05-02T14:52:04.966676+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78403.2
+- Funnel: target 755 → liquid 163 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.6 >= 65=1, 4h RSI 82.8 >= 65=1, 4h RSI 90.3 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +284.58% | $153,852,844.53 |
-| TAG/USDT:USDT | +59.85% | $8,688,076.14 |
-| BIO/USDT:USDT | +53.25% | $3,442,021.69 |
-| SKYAI/USDT:USDT | +27.87% | $19,174,875.41 |
-| SPACE/USDT:USDT | +27.14% | $1,488,479.59 |
+| LAB/USDT:USDT | +280.79% | $154,938,632.37 |
+| BIO/USDT:USDT | +57.02% | $3,526,864.80 |
+| TAG/USDT:USDT | +49.38% | $8,826,377.86 |
+| SPACE/USDT:USDT | +27.80% | $1,495,272.86 |
+| SKYAI/USDT:USDT | +27.12% | $19,246,767.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZBT/USDT:USDT | below_1h_threshold | +3.82% | +3.77% |
-| KNC/USDT:USDT | below_1h_threshold | +3.81% | +3.76% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.68% | +2.63% |
-| BB/USDT:USDT | below_1h_threshold | +2.52% | +2.47% |
-| ACH/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
+| KNC/USDT:USDT | below_1h_threshold | +4.81% | +4.72% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +4.34% | +4.24% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.20% | +3.11% |
+| BB/USDT:USDT | below_1h_threshold | +2.98% | +2.89% |
+| XNY/USDT:USDT | below_1h_threshold | +2.58% | +2.49% |
 
 ## 4. 次に見るべき不足
 
