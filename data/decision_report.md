@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T20:07:08.368798+00:00
+- generated_at: 2026-05-02T20:12:03.275801+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2978**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T20:07:06.608392+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78414.5
-- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-02T20:11:58.971025+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78400.2
+- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XNY/USDT:USDT | +11.66% | $1,260,591.63 |
-| NAORIS/USDT:USDT | +10.66% | $3,688,231.75 |
-| TAC/USDT:USDT | +8.34% | $2,616,109.97 |
-| LUNC/USDT:USDT | +7.67% | $25,856,325.80 |
-| CHILLGUY/USDT:USDT | +7.37% | $1,084,846.09 |
+| XNY/USDT:USDT | +16.12% | $1,297,164.46 |
+| NAORIS/USDT:USDT | +11.68% | $3,748,439.78 |
+| BSB/USDT:USDT | +8.99% | $10,893,690.14 |
+| TAC/USDT:USDT | +8.38% | $2,617,620.95 |
+| LUNC/USDT:USDT | +7.71% | $26,064,910.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.64% | +2.68% |
-| XNY/USDT:USDT | below_1h_threshold | +2.06% | +2.09% |
-| BSB/USDT:USDT | below_1h_threshold | +1.68% | +1.72% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.35% | +1.38% |
-| BASED/USDT:USDT | below_1h_threshold | +1.28% | +1.31% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.16% | +3.22% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.47% | +2.52% |
+| RLS/USDT:USDT | below_1h_threshold | +1.82% | +1.87% |
+| BASED/USDT:USDT | below_1h_threshold | +1.27% | +1.32% |
+| ACH/USDT:USDT | below_1h_threshold | +1.22% | +1.28% |
 
 ## 4. 次に見るべき不足
 
