@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T12:37:01.726294+00:00
+- generated_at: 2026-05-02T12:42:14.165135+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2902**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T12:36:59.429495+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78190.1
-- Funnel: target 755 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.6 >= 65=1, 4h RSI 70.1 >= 65=1
+- 更新: 2026-05-02T12:42:11.560502+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78174.0
+- Funnel: target 755 → liquid 169 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.1 >= 65=1, 4h RSI 70.3 >= 65=1, 4h RSI 72.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +217.76% | $127,242,597.04 |
-| TAG/USDT:USDT | +41.50% | $5,369,058.64 |
-| BIO/USDT:USDT | +30.26% | $2,216,679.83 |
-| TAC/USDT:USDT | +24.81% | $2,015,244.43 |
-| XNY/USDT:USDT | +21.67% | $1,001,207.53 |
+| LAB/USDT:USDT | +211.97% | $127,989,073.55 |
+| TAG/USDT:USDT | +42.67% | $5,484,484.41 |
+| BIO/USDT:USDT | +28.11% | $2,242,543.54 |
+| SPACE/USDT:USDT | +21.27% | $1,253,485.41 |
+| XNY/USDT:USDT | +19.12% | $1,007,172.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +4.16% | +4.05% |
-| B/USDT:USDT | below_1h_threshold | +3.29% | +3.18% |
-| LAB/USDT:USDT | below_1h_threshold | +3.15% | +3.04% |
-| USTC/USDT:USDT | below_1h_threshold | +2.89% | +2.78% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.71% | +2.60% |
+| B/USDT:USDT | below_relative_strength | +5.09% | +5.00% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +2.65% | +2.56% |
+| BIO/USDT:USDT | below_1h_threshold | +2.34% | +2.25% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.05% | +1.96% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
 
 ## 4. 次に見るべき不足
 
