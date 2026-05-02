@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T06:47:03.736835+00:00
+- generated_at: 2026-05-02T06:52:00.688265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2874**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T06:47:01.479496+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=78197.3
+- 更新: 2026-05-02T06:51:58.500579+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=78274.1
 - Funnel: target 755 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 72.0 >= 65=1
+- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +116.01% | $66,018,717.13 |
-| IRYS/USDT:USDT | +20.12% | $1,155,419.36 |
-| BLESS/USDT:USDT | +14.16% | $2,118,168.92 |
-| B/USDT:USDT | +12.47% | $78,198,681.09 |
-| TAC/USDT:USDT | +10.88% | $1,024,723.71 |
+| LAB/USDT:USDT | +129.93% | $67,516,117.93 |
+| IRYS/USDT:USDT | +20.29% | $1,173,355.45 |
+| B/USDT:USDT | +12.70% | $78,298,939.76 |
+| BLESS/USDT:USDT | +11.86% | $2,123,492.05 |
+| FIGHT/USDT:USDT | +11.82% | $1,084,442.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +4.94% | +4.86% |
-| TAG/USDT:USDT | below_1h_threshold | +4.12% | +4.05% |
-| UB/USDT:USDT | below_1h_threshold | +2.95% | +2.88% |
-| FIGHT/USDT:USDT | below_1h_threshold | +1.99% | +1.92% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.87% | +1.80% |
+| TAG/USDT:USDT | below_1h_threshold | +4.56% | +4.39% |
+| TAC/USDT:USDT | below_1h_threshold | +3.96% | +3.79% |
+| FIGHT/USDT:USDT | below_1h_threshold | +2.94% | +2.77% |
+| UB/USDT:USDT | below_1h_threshold | +2.47% | +2.29% |
+| BSB/USDT:USDT | below_1h_threshold | +1.60% | +1.43% |
 
 ## 4. 次に見るべき不足
 
