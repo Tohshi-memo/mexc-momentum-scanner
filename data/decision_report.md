@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T14:12:08.910251+00:00
+- generated_at: 2026-05-02T14:17:08.868569+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2912**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T14:12:06.560272+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78292.7
-- Funnel: target 755 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1, 4h RSI 81.3 >= 65=1, 4h RSI 89.9 >= 65=1
+- 更新: 2026-05-02T14:17:06.160247+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78272.1
+- Funnel: target 755 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.3 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 90.2 >= 65=1, 4h RSI 81.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +239.70% | $140,511,910.74 |
-| TAG/USDT:USDT | +62.22% | $7,481,423.38 |
-| BIO/USDT:USDT | +49.26% | $3,070,925.94 |
-| SKYAI/USDT:USDT | +26.08% | $18,580,985.24 |
-| SPACE/USDT:USDT | +25.07% | $1,371,324.27 |
+| LAB/USDT:USDT | +259.68% | $143,204,288.21 |
+| TAG/USDT:USDT | +61.93% | $7,620,141.76 |
+| BIO/USDT:USDT | +48.77% | $3,109,732.43 |
+| SKYAI/USDT:USDT | +24.64% | $18,662,151.86 |
+| B/USDT:USDT | +23.05% | $71,694,279.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.28% | +3.33% |
-| UB/USDT:USDT | below_1h_threshold | +3.15% | +3.20% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.26% | +2.31% |
-| BB/USDT:USDT | below_1h_threshold | +2.13% | +2.18% |
-| CHILLGUY/USDT:USDT | below_1h_threshold | +0.79% | +0.84% |
+| UB/USDT:USDT | below_1h_threshold | +4.61% | +4.69% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.87% | +2.94% |
+| PNUT/USDT:USDT | below_1h_threshold | +1.81% | +1.88% |
+| BB/USDT:USDT | below_1h_threshold | +1.61% | +1.69% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +1.52% | +1.59% |
 
 ## 4. 次に見るべき不足
 
