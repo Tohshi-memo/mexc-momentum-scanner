@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T21:02:18.626183+00:00
+- generated_at: 2026-05-02T21:07:08.666889+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2983**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T21:02:16.758987+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78451.6
-- Funnel: target 755 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-02T21:07:06.858895+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=78481.4
+- Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XNY/USDT:USDT | +12.61% | $1,913,323.49 |
-| LUNC/USDT:USDT | +12.37% | $27,540,140.29 |
-| NAORIS/USDT:USDT | +11.71% | $3,974,048.93 |
-| BSB/USDT:USDT | +11.62% | $11,377,900.49 |
-| CHILLGUY/USDT:USDT | +9.74% | $1,116,806.22 |
+| XNY/USDT:USDT | +12.81% | $1,940,689.52 |
+| NAORIS/USDT:USDT | +11.83% | $4,005,493.80 |
+| BSB/USDT:USDT | +11.77% | $11,421,175.35 |
+| LUNC/USDT:USDT | +11.47% | $27,867,045.19 |
+| BEAT/USDT:USDT | +10.75% | $3,182,260.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XNY/USDT:USDT | below_1h_threshold | +1.91% | +1.86% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.79% | +1.74% |
-| CYS/USDT:USDT | below_1h_threshold | +0.81% | +0.77% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
-| PNUT/USDT:USDT | below_1h_threshold | +0.68% | +0.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.23% | +3.15% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.00% | +1.92% |
+| XNY/USDT:USDT | below_1h_threshold | +1.97% | +1.89% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.29% | +1.20% |
+| TAC/USDT:USDT | below_1h_threshold | +0.94% | +0.85% |
 
 ## 4. 次に見るべき不足
 
