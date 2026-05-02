@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-02T19:32:07.942862+00:00
+- generated_at: 2026-05-02T19:37:03.692728+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **2974**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-02T19:32:05.851805+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=78411.1
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1
+- 更新: 2026-05-02T19:37:01.515640+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78425.5
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 80.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +11.54% | $10,423,905.96 |
-| LUNC/USDT:USDT | +9.36% | $24,371,781.39 |
-| TAC/USDT:USDT | +8.15% | $2,617,290.53 |
-| XNY/USDT:USDT | +5.26% | $1,348,387.89 |
-| BIANRENSHENG/USDT:USDT | +5.15% | $1,083,913.73 |
+| BSB/USDT:USDT | +11.44% | $10,497,073.19 |
+| LUNC/USDT:USDT | +9.54% | $24,752,714.99 |
+| TAC/USDT:USDT | +9.00% | $2,618,735.63 |
+| XNY/USDT:USDT | +7.39% | $1,351,840.81 |
+| BIANRENSHENG/USDT:USDT | +5.69% | $1,087,192.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.04% | +4.06% |
-| BSB/USDT:USDT | below_1h_threshold | +3.51% | +3.53% |
-| XNY/USDT:USDT | below_1h_threshold | +3.36% | +3.38% |
-| BIO/USDT:USDT | below_1h_threshold | +3.27% | +3.29% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.19% | +3.22% |
+| NAORIS/USDT:USDT | below_1h_threshold | +4.79% | +4.79% |
+| BSB/USDT:USDT | below_1h_threshold | +3.45% | +3.46% |
+| BIO/USDT:USDT | below_1h_threshold | +3.25% | +3.25% |
+| SPACE/USDT:USDT | below_1h_threshold | +3.14% | +3.15% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.57% | +2.57% |
 
 ## 4. 次に見るべき不足
 
