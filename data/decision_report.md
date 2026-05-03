@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T14:22:08.573345+00:00
+- generated_at: 2026-05-03T14:27:05.834205+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3079**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T14:22:06.706816+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78587.5
-- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-03T14:27:03.995849+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78625.7
+- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +43.11% | $3,984,067.34 |
-| TAC/USDT:USDT | +31.57% | $3,564,542.86 |
-| NAORIS/USDT:USDT | +29.93% | $4,973,858.11 |
-| FHE/USDT:USDT | +25.50% | $4,424,810.11 |
-| AKT/USDT:USDT | +21.15% | $2,463,983.83 |
+| TST/USDT:USDT | +44.03% | $4,007,870.03 |
+| TAC/USDT:USDT | +35.90% | $3,611,369.79 |
+| NAORIS/USDT:USDT | +29.27% | $5,114,140.76 |
+| FHE/USDT:USDT | +24.09% | $4,452,768.30 |
+| AKT/USDT:USDT | +20.46% | $2,472,606.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +1.96% | +2.02% |
-| BSB/USDT:USDT | below_1h_threshold | +1.76% | +1.82% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +1.58% | +1.64% |
-| AKT/USDT:USDT | below_1h_threshold | +1.33% | +1.39% |
-| BABY/USDT:USDT | below_1h_threshold | +1.30% | +1.36% |
+| BSB/USDT:USDT | below_1h_threshold | +1.41% | +1.42% |
+| THETA/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.19% | +1.20% |
+| FHE/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
+| AKT/USDT:USDT | below_1h_threshold | +0.76% | +0.77% |
 
 ## 4. 次に見るべき不足
 
