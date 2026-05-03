@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T04:56:54.949567+00:00
+- generated_at: 2026-05-03T05:02:18.754369+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3029**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T04:56:50.768045+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=78109.0
-- Funnel: target 755 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.6 >= 65=1, 4h RSI 72.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-03T05:02:16.944020+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78147.4
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +21.09% | $2,175,047.25 |
-| BR/USDT:USDT | +16.80% | $2,151,085.37 |
-| FHE/USDT:USDT | +13.10% | $2,505,469.35 |
-| FIGHT/USDT:USDT | +12.99% | $1,002,316.35 |
-| NAORIS/USDT:USDT | +11.13% | $4,795,190.40 |
+| BABY/USDT:USDT | +24.49% | $2,222,272.39 |
+| BR/USDT:USDT | +19.09% | $2,142,778.78 |
+| FHE/USDT:USDT | +15.46% | $2,475,932.84 |
+| AKT/USDT:USDT | +11.68% | $1,165,238.17 |
+| GENIUS/USDT:USDT | +10.87% | $1,116,814.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.80% | +3.86% |
-| AKT/USDT:USDT | below_1h_threshold | +3.65% | +3.71% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.58% | +2.65% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.11% | +2.18% |
-| FIGHT/USDT:USDT | below_1h_threshold | +1.95% | +2.02% |
+| BABY/USDT:USDT | below_1h_threshold | +1.21% | +1.19% |
+| XNY/USDT:USDT | below_1h_threshold | +1.10% | +1.09% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.77% | +0.75% |
+| FHE/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
 
 ## 4. 次に見るべき不足
 
