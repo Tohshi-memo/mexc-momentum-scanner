@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T04:27:04.924739+00:00
+- generated_at: 2026-05-03T04:32:14.128213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3027**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T04:27:00.714664+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78187.9
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1
+- 更新: 2026-05-03T04:32:12.001857+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78202.5
+- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +19.28% | $1,982,321.62 |
-| BABY/USDT:USDT | +13.31% | $2,061,671.49 |
-| GENIUS/USDT:USDT | +11.74% | $1,113,589.51 |
-| FHE/USDT:USDT | +10.09% | $2,473,998.89 |
-| BIANRENSHENG/USDT:USDT | +8.92% | $2,243,820.42 |
+| BR/USDT:USDT | +20.43% | $1,995,628.45 |
+| BABY/USDT:USDT | +15.12% | $2,066,063.51 |
+| FHE/USDT:USDT | +12.29% | $2,482,447.43 |
+| GENIUS/USDT:USDT | +11.84% | $1,117,444.91 |
+| AKT/USDT:USDT | +11.28% | $1,038,568.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +3.15% | +3.12% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.22% | +2.18% |
-| XNY/USDT:USDT | below_1h_threshold | +2.17% | +2.14% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
-| POWER/USDT:USDT | below_1h_threshold | +1.39% | +1.35% |
+| BIO/USDT:USDT | below_1h_threshold | +4.49% | +4.43% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.22% | +4.17% |
+| AKT/USDT:USDT | below_1h_threshold | +4.21% | +4.16% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.07% | +2.02% |
+| POWER/USDT:USDT | below_1h_threshold | +1.50% | +1.45% |
 
 ## 4. 次に見るべき不足
 
