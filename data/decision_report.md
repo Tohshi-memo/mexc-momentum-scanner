@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T08:42:09.561469+00:00
+- generated_at: 2026-05-03T08:47:19.122331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3055**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T08:42:07.047368+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=78377.0
-- Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-05-03T08:47:16.762651+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78397.8
+- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.2 >= 65=1, 4h RSI 97.9 >= 65=1
+- Strict後reject: 4h RSI 81.7 >= 65=1, 4h RSI 97.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +70.95% | $11,308,462.33 |
-| BR/USDT:USDT | +22.59% | $3,825,595.29 |
-| AIGENSYN/USDT:USDT | +22.41% | $3,391,668.71 |
-| B/USDT:USDT | +22.39% | $39,719,422.13 |
-| TAC/USDT:USDT | +21.61% | $2,757,432.38 |
+| BABY/USDT:USDT | +68.32% | $11,686,589.23 |
+| B/USDT:USDT | +26.21% | $40,197,452.49 |
+| AIGENSYN/USDT:USDT | +23.29% | $3,417,804.15 |
+| BR/USDT:USDT | +21.74% | $3,848,954.34 |
+| TAC/USDT:USDT | +21.05% | $2,772,872.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +4.36% | +4.29% |
-| AKT/USDT:USDT | below_1h_threshold | +3.99% | +3.92% |
-| ALCH/USDT:USDT | below_1h_threshold | +3.79% | +3.71% |
-| BSB/USDT:USDT | below_1h_threshold | +2.73% | +2.65% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.18% | +2.10% |
+| TAC/USDT:USDT | below_1h_threshold | +4.01% | +3.91% |
+| AKT/USDT:USDT | below_1h_threshold | +3.69% | +3.58% |
+| ALCH/USDT:USDT | below_1h_threshold | +3.24% | +3.13% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.93% | +2.82% |
+| CHILLGUY/USDT:USDT | below_1h_threshold | +2.35% | +2.25% |
 
 ## 4. 次に見るべき不足
 
