@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T01:22:14.235731+00:00
+- generated_at: 2026-05-03T01:27:08.029116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3008**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T01:22:12.504631+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=78221.1
+- 更新: 2026-05-03T01:27:06.216463+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=78240.6
 - Funnel: target 755 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNC/USDT:USDT | +19.34% | $33,974,964.50 |
-| BABY/USDT:USDT | +18.63% | $1,743,489.48 |
-| BIANRENSHENG/USDT:USDT | +15.26% | $1,855,578.12 |
-| FHE/USDT:USDT | +15.16% | $2,220,790.53 |
-| SPACE/USDT:USDT | +13.60% | $1,784,474.13 |
+| LUNC/USDT:USDT | +19.94% | $34,088,874.31 |
+| BABY/USDT:USDT | +19.06% | $1,762,759.47 |
+| BIANRENSHENG/USDT:USDT | +15.85% | $1,857,092.62 |
+| FHE/USDT:USDT | +15.21% | $2,228,264.81 |
+| SPACE/USDT:USDT | +14.73% | $1,788,111.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USTC/USDT:USDT | below_1h_threshold | +4.14% | +4.49% |
-| ORCA/USDT:USDT | below_1h_threshold | +2.18% | +2.53% |
-| BABY/USDT:USDT | below_1h_threshold | +1.50% | +1.86% |
-| LYN/USDT:USDT | below_1h_threshold | +1.33% | +1.69% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.26% | +1.61% |
+| USTC/USDT:USDT | below_1h_threshold | +3.85% | +4.18% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.19% | +2.52% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.89% | +2.22% |
+| BABY/USDT:USDT | below_1h_threshold | +1.88% | +2.21% |
+| TAC/USDT:USDT | below_1h_threshold | +1.27% | +1.60% |
 
 ## 4. 次に見るべき不足
 
