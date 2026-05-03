@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T13:57:20.641208+00:00
+- generated_at: 2026-05-03T14:01:25.956257+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3076**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T13:57:18.006422+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=78634.8
-- Funnel: target 755 → liquid 169 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 76.0 >= 65=1, 4h RSI 78.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-03T14:01:24.141172+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78657.4
+- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +44.99% | $3,036,536.18 |
-| TST/USDT:USDT | +39.63% | $3,837,760.20 |
-| NAORIS/USDT:USDT | +30.22% | $4,500,178.28 |
-| AIGENSYN/USDT:USDT | +22.38% | $5,109,945.42 |
-| FHE/USDT:USDT | +21.98% | $4,334,487.96 |
+| TAC/USDT:USDT | +45.04% | $3,009,386.96 |
+| TST/USDT:USDT | +42.93% | $3,882,524.55 |
+| NAORIS/USDT:USDT | +30.32% | $4,474,971.87 |
+| FHE/USDT:USDT | +24.44% | $4,340,210.19 |
+| AIGENSYN/USDT:USDT | +21.21% | $4,975,270.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIGHT/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
-| REZ/USDT:USDT | below_1h_threshold | +2.27% | +2.37% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.12% | +2.22% |
-| BR/USDT:USDT | below_1h_threshold | +1.70% | +1.80% |
-| JTO/USDT:USDT | below_1h_threshold | +1.41% | +1.51% |
+| TAC/USDT:USDT | below_1h_threshold | +2.89% | +2.86% |
+| FHE/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
+| XNY/USDT:USDT | below_1h_threshold | +0.72% | +0.69% |
+| BABY/USDT:USDT | below_1h_threshold | +0.70% | +0.67% |
+| THETA/USDT:USDT | below_1h_threshold | +0.57% | +0.54% |
 
 ## 4. 次に見るべき不足
 
