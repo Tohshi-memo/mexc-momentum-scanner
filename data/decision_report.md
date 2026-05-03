@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T04:17:10.788894+00:00
+- generated_at: 2026-05-03T04:22:05.788512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3027**
 
@@ -46,31 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T04:17:06.562896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78126.0
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T04:22:01.229627+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78158.2
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +16.62% | $1,923,831.25 |
-| BABY/USDT:USDT | +15.06% | $2,038,363.08 |
-| GENIUS/USDT:USDT | +13.73% | $1,098,472.37 |
-| FHE/USDT:USDT | +10.94% | $2,465,398.50 |
-| BIANRENSHENG/USDT:USDT | +10.19% | $2,207,576.31 |
+| BR/USDT:USDT | +18.06% | $1,955,715.00 |
+| GENIUS/USDT:USDT | +14.74% | $1,103,352.67 |
+| BABY/USDT:USDT | +14.24% | $2,056,291.14 |
+| AIGENSYN/USDT:USDT | +11.95% | $2,653,904.07 |
+| FHE/USDT:USDT | +9.28% | $2,469,443.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.57% | +4.62% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.65% | +2.70% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
-| BSB/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
-| XNY/USDT:USDT | below_1h_threshold | +0.93% | +0.97% |
+| GENIUS/USDT:USDT | below_1h_threshold | +3.56% | +3.57% |
+| XNY/USDT:USDT | below_1h_threshold | +1.89% | +1.90% |
+| BSB/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.34% | +1.35% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
 
 ## 4. 次に見るべき不足
 
