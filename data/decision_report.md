@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T10:22:03.868056+00:00
+- generated_at: 2026-05-03T10:26:59.118846+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3059**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T10:22:01.851494+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=78430.6
-- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-03T10:26:57.332695+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78404.9
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +50.09% | $1,470,703.84 |
-| BABY/USDT:USDT | +36.21% | $16,592,753.02 |
-| AIGENSYN/USDT:USDT | +22.38% | $3,755,105.38 |
-| TAC/USDT:USDT | +18.76% | $2,614,425.14 |
-| BR/USDT:USDT | +15.38% | $4,035,536.15 |
+| TST/USDT:USDT | +46.97% | $1,535,251.56 |
+| BABY/USDT:USDT | +33.69% | $16,902,263.98 |
+| AIGENSYN/USDT:USDT | +21.47% | $3,769,103.34 |
+| TAC/USDT:USDT | +20.16% | $2,626,142.50 |
+| AKT/USDT:USDT | +14.67% | $1,617,099.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKT/USDT:USDT | below_1h_threshold | +2.38% | +2.46% |
-| TAC/USDT:USDT | below_1h_threshold | +2.10% | +2.18% |
-| LYN/USDT:USDT | below_1h_threshold | +2.01% | +2.09% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.72% | +1.80% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.62% | +1.70% |
+| TST/USDT:USDT | below_1h_threshold | +3.51% | +3.62% |
+| TAC/USDT:USDT | below_1h_threshold | +3.31% | +3.42% |
+| LYN/USDT:USDT | below_1h_threshold | +2.30% | +2.42% |
+| AKT/USDT:USDT | below_1h_threshold | +1.85% | +1.97% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.38% | +1.50% |
 
 ## 4. 次に見るべき不足
 
