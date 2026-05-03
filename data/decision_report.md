@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-03T16:22:12.901316+00:00
+- generated_at: 2026-05-03T16:27:24.729226+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3083**
+- closed shadow trades: **3084**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3083, expectancy=-0.15%
+- 全期間 MARKET基準: n=3084, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=+0.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S | 8/15 | 53.3% | +2.32% | **+1.24%** |
 | LIMIT_3PCT | 15/20 | 75.0% | +1.65% | **+1.24%** |
-| LIMIT_ATR | 17/20 | 85.0% | +1.36% | **+1.16%** |
-| LIMIT_1PCT | 20/20 | 100.0% | +0.51% | **+0.51%** |
-| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
+| LIMIT_ATR | 16/20 | 80.0% | +1.51% | **+1.21%** |
+| LIMIT_1PCT | 20/20 | 100.0% | +0.46% | **+0.46%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +1.89% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
@@ -46,31 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T16:22:07.979682+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=78568.9
-- Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T16:27:18.100860+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78619.3
+- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +5.13% | $326,266,871.22 |
-| SKYAI/USDT:USDT | +4.37% | $23,434,717.36 |
-| TST/USDT:USDT | +3.12% | $4,992,652.64 |
-| AIOT/USDT:USDT | +2.36% | $2,262,261.78 |
-| TAG/USDT:USDT | +1.91% | $10,268,312.62 |
+| LAB/USDT:USDT | +8.81% | $327,239,602.66 |
+| SKYAI/USDT:USDT | +5.33% | $23,542,629.94 |
+| BB/USDT:USDT | +5.22% | $1,265,275.20 |
+| TST/USDT:USDT | +3.55% | $5,010,301.19 |
+| TAG/USDT:USDT | +2.42% | $10,278,232.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.56% | +4.63% |
-| TST/USDT:USDT | below_1h_threshold | +3.12% | +3.20% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.37% | +2.44% |
-| TAG/USDT:USDT | below_1h_threshold | +1.92% | +1.99% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.77% | +1.85% |
+| TST/USDT:USDT | below_1h_threshold | +3.55% | +3.56% |
+| TAG/USDT:USDT | below_1h_threshold | +2.43% | +2.44% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.29% | +2.30% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.62% | +1.63% |
+| JTO/USDT:USDT | below_1h_threshold | +1.57% | +1.57% |
 
 ## 4. 次に見るべき不足
 
