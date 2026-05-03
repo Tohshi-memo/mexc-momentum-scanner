@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T04:42:12.039772+00:00
+- generated_at: 2026-05-03T04:47:09.238981+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3028**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T04:42:07.570470+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78157.6
-- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.9 >= 65=1
+- 更新: 2026-05-03T04:47:04.734735+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78144.8
+- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.3 >= 65=1, 4h RSI 73.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +16.16% | $2,086,196.75 |
-| BR/USDT:USDT | +14.01% | $2,080,905.22 |
-| FHE/USDT:USDT | +13.15% | $2,493,345.27 |
-| AKT/USDT:USDT | +12.71% | $1,088,581.99 |
-| GENIUS/USDT:USDT | +11.55% | $1,122,077.12 |
+| BR/USDT:USDT | +17.58% | $2,112,585.03 |
+| BABY/USDT:USDT | +16.98% | $2,127,050.38 |
+| AKT/USDT:USDT | +15.39% | $1,093,847.13 |
+| AIGENSYN/USDT:USDT | +12.92% | $2,744,164.24 |
+| FHE/USDT:USDT | +11.89% | $2,498,268.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +4.49% | +4.49% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.92% | +2.93% |
-| BR/USDT:USDT | below_1h_threshold | +2.23% | +2.23% |
-| POPCAT/USDT:USDT | below_1h_threshold | +1.88% | +1.89% |
-| BABY/USDT:USDT | below_1h_threshold | +1.87% | +1.88% |
+| BIO/USDT:USDT | below_1h_threshold | +3.64% | +3.66% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.14% | +3.17% |
+| BABY/USDT:USDT | below_1h_threshold | +2.59% | +2.62% |
+| POPCAT/USDT:USDT | below_1h_threshold | +2.43% | +2.45% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.10% | +2.12% |
 
 ## 4. 次に見るべき不足
 
