@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T08:22:24.047275+00:00
+- generated_at: 2026-05-03T08:27:13.746180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3052**
 
@@ -46,10 +46,10 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T08:22:19.218804+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=78416.0
-- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T08:27:11.764925+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=78400.1
+- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 97.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -57,21 +57,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +70.57% | $10,130,003.97 |
-| BR/USDT:USDT | +24.67% | $3,729,083.43 |
-| TAC/USDT:USDT | +19.84% | $2,721,529.21 |
-| FHE/USDT:USDT | +19.02% | $2,801,369.27 |
-| AIGENSYN/USDT:USDT | +17.65% | $3,307,820.32 |
+| BABY/USDT:USDT | +70.95% | $10,347,718.51 |
+| BR/USDT:USDT | +23.51% | $3,765,226.41 |
+| TAC/USDT:USDT | +20.71% | $2,730,876.38 |
+| FHE/USDT:USDT | +20.38% | $2,815,239.61 |
+| AIGENSYN/USDT:USDT | +18.01% | $3,325,905.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALCH/USDT:USDT | below_1h_threshold | +3.13% | +3.00% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.12% | +3.00% |
-| TAC/USDT:USDT | below_1h_threshold | +2.93% | +2.81% |
-| FHE/USDT:USDT | below_1h_threshold | +2.77% | +2.65% |
-| AKT/USDT:USDT | below_1h_threshold | +1.78% | +1.65% |
+| FHE/USDT:USDT | below_1h_threshold | +4.16% | +4.05% |
+| TAC/USDT:USDT | below_1h_threshold | +3.51% | +3.40% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.49% | +3.39% |
+| B/USDT:USDT | below_1h_threshold | +3.42% | +3.31% |
+| BSB/USDT:USDT | below_1h_threshold | +3.30% | +3.19% |
 
 ## 4. 次に見るべき不足
 
