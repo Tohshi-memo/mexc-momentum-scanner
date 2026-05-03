@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T21:47:05.667883+00:00
+- generated_at: 2026-05-03T21:52:13.026603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3109**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T21:47:03.796686+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=78641.8
-- Funnel: target 755 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T21:52:10.935205+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=78652.4
+- Funnel: target 755 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +67.47% | $289,640,579.47 |
-| SKYAI/USDT:USDT | +20.08% | $27,095,209.78 |
-| TAG/USDT:USDT | +13.33% | $4,092,642.00 |
-| BSB/USDT:USDT | +12.21% | $15,811,797.75 |
-| MERL/USDT:USDT | +10.26% | $1,233,290.20 |
+| LAB/USDT:USDT | +80.64% | $292,375,836.01 |
+| SKYAI/USDT:USDT | +19.89% | $27,135,719.51 |
+| TAG/USDT:USDT | +14.67% | $4,118,739.18 |
+| BSB/USDT:USDT | +12.93% | $15,865,239.22 |
+| MERL/USDT:USDT | +10.46% | $1,234,190.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.62% | +4.93% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.13% | +3.44% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +2.97% | +3.29% |
-| BSB/USDT:USDT | below_1h_threshold | +2.14% | +2.46% |
-| PARTI/USDT:USDT | below_1h_threshold | +1.66% | +1.98% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.65% | +3.95% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.56% | +3.85% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +3.06% | +3.36% |
+| BSB/USDT:USDT | below_1h_threshold | +2.80% | +3.10% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.43% | +2.73% |
 
 ## 4. 次に見るべき不足
 
