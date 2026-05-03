@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T08:52:08.144648+00:00
+- generated_at: 2026-05-03T08:57:04.881082+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3056**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T08:52:05.599014+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78388.2
-- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.7 >= 65=1, 4h RSI 97.9 >= 65=1
+- 更新: 2026-05-03T08:57:02.818151+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78357.9
+- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +70.90% | $11,892,384.48 |
-| B/USDT:USDT | +31.14% | $40,835,257.62 |
-| BR/USDT:USDT | +23.20% | $3,862,892.29 |
-| AIGENSYN/USDT:USDT | +22.35% | $3,469,316.03 |
-| TAC/USDT:USDT | +19.03% | $2,784,199.96 |
+| BABY/USDT:USDT | +64.21% | $12,061,217.14 |
+| B/USDT:USDT | +30.91% | $41,396,516.52 |
+| BR/USDT:USDT | +26.25% | $3,878,054.79 |
+| AIGENSYN/USDT:USDT | +18.72% | $3,534,611.25 |
+| FHE/USDT:USDT | +17.97% | $2,878,231.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALCH/USDT:USDT | below_1h_threshold | +3.75% | +3.66% |
-| AKT/USDT:USDT | below_1h_threshold | +3.06% | +2.96% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.81% | +2.72% |
-| TAC/USDT:USDT | below_1h_threshold | +2.14% | +2.05% |
-| FHE/USDT:USDT | below_1h_threshold | +1.86% | +1.77% |
+| BABY/USDT:USDT | below_relative_strength | +5.05% | +4.99% |
+| ALCH/USDT:USDT | below_1h_threshold | +4.14% | +4.08% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.12% | +4.07% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.82% | +3.77% |
+| AKT/USDT:USDT | below_1h_threshold | +2.88% | +2.83% |
 
 ## 4. 次に見るべき不足
 
