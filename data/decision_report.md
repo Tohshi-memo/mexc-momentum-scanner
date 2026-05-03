@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T04:02:21.727497+00:00
+- generated_at: 2026-05-03T04:05:37.028968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3026**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T04:02:19.926820+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78168.6
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T04:05:35.077304+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=78136.7
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +14.73% | $2,002,488.37 |
-| FHE/USDT:USDT | +14.50% | $2,430,390.01 |
-| GENIUS/USDT:USDT | +12.79% | $1,081,085.06 |
-| BIANRENSHENG/USDT:USDT | +11.90% | $2,196,445.12 |
-| TAC/USDT:USDT | +9.12% | $2,667,014.87 |
+| BR/USDT:USDT | +18.63% | $1,820,687.96 |
+| BABY/USDT:USDT | +15.28% | $2,013,951.32 |
+| FHE/USDT:USDT | +13.95% | $2,447,431.73 |
+| GENIUS/USDT:USDT | +12.83% | $1,086,670.76 |
+| BIANRENSHENG/USDT:USDT | +11.88% | $2,198,548.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.81% | +1.80% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
-| ALCH/USDT:USDT | below_1h_threshold | +0.68% | +0.68% |
-| BABY/USDT:USDT | below_1h_threshold | +0.67% | +0.66% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +0.44% | +0.43% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.84% | +1.88% |
+| UB/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.52% | +1.56% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.36% | +1.39% |
+| BABY/USDT:USDT | below_1h_threshold | +1.11% | +1.14% |
 
 ## 4. 次に見るべき不足
 
