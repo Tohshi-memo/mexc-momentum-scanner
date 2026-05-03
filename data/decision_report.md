@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T17:47:17.851410+00:00
+- generated_at: 2026-05-03T17:52:53.583281+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3093**
 
@@ -46,31 +46,31 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T17:47:11.974719+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=78751.2
-- Funnel: target 755 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T17:52:44.994795+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=78717.0
+- Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +29.01% | $315,190,155.28 |
-| SKYAI/USDT:USDT | +18.74% | $24,085,654.85 |
-| TST/USDT:USDT | +9.58% | $5,285,320.23 |
-| ASTEROID/USDT:USDT | +4.88% | $2,076,574.42 |
-| AIOT/USDT:USDT | +4.46% | $2,264,009.97 |
+| LAB/USDT:USDT | +31.82% | $316,645,334.68 |
+| SKYAI/USDT:USDT | +18.76% | $24,232,553.70 |
+| TST/USDT:USDT | +11.43% | $5,312,148.90 |
+| MERL/USDT:USDT | +6.63% | $1,002,152.86 |
+| ASTEROID/USDT:USDT | +5.05% | $2,083,450.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +3.37% | +3.20% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.19% | +3.02% |
-| TST/USDT:USDT | below_1h_threshold | +2.94% | +2.77% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.93% | +2.76% |
-| AT/USDT:USDT | below_1h_threshold | +2.54% | +2.37% |
+| TST/USDT:USDT | below_1h_threshold | +4.34% | +4.21% |
+| UB/USDT:USDT | below_1h_threshold | +3.91% | +3.79% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.74% | +3.62% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +3.56% | +3.44% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.15% | +3.03% |
 
 ## 4. 次に見るべき不足
 
