@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T23:42:08.422839+00:00
+- generated_at: 2026-05-03T23:47:15.731467+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3110**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T23:42:06.594227+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=78605.3
+- 更新: 2026-05-03T23:47:13.810271+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.77% price=78530.5
 - Funnel: target 756 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +62.75% | $254,531,259.33 |
-| GIGA/USDT:USDT | +23.21% | $1,009,287.18 |
-| SKYAI/USDT:USDT | +20.92% | $26,594,964.77 |
-| BSB/USDT:USDT | +15.63% | $15,354,076.40 |
-| TAG/USDT:USDT | +14.20% | $3,891,736.38 |
+| LAB/USDT:USDT | +59.67% | $255,116,730.58 |
+| GIGA/USDT:USDT | +23.15% | $1,009,713.08 |
+| SKYAI/USDT:USDT | +21.15% | $26,617,558.11 |
+| TAG/USDT:USDT | +15.31% | $3,913,570.40 |
+| BSB/USDT:USDT | +13.64% | $15,383,243.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +2.54% | +3.22% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.51% | +3.19% |
-| BSB/USDT:USDT | below_1h_threshold | +1.94% | +2.62% |
-| AIOT/USDT:USDT | below_1h_threshold | +1.58% | +2.25% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.54% | +2.21% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.61% | +3.38% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.14% | +2.91% |
+| B/USDT:USDT | below_1h_threshold | +1.80% | +2.57% |
+| BB/USDT:USDT | below_1h_threshold | +1.48% | +2.25% |
+| TAG/USDT:USDT | below_1h_threshold | +1.38% | +2.15% |
 
 ## 4. 次に見るべき不足
 
