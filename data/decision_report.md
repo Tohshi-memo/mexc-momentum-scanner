@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-03T10:42:29.460956+00:00
+- generated_at: 2026-05-03T10:47:14.214602+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3061**
+- closed shadow trades: **3062**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3061, expectancy=-0.15%
+- 全期間 MARKET基準: n=3062, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=-1.83%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_5PCT | 7/20 | 35.0% | +1.96% | **+0.69%** |
-| LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +1.83% | **+0.73%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 | LIMIT_4PCT | 16/20 | 80.0% | +0.00% | **+0.00%** |
-| LIMIT_FIB1272 | 3/20 | 15.0% | -0.07% | **-0.01%** |
-| LIMIT_ATR | 16/20 | 80.0% | -0.35% | **-0.28%** |
+| LIMIT_FIB1272 | 2/20 | 10.0% | -0.13% | **-0.01%** |
+| LIMIT_ATR | 16/20 | 80.0% | -0.38% | **-0.31%** |
 
 ### シャドウ上位 LONG
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T10:42:26.205852+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=78416.7
+- 更新: 2026-05-03T10:47:11.730020+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=78369.4
 - Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.0 >= 65=1, 4h RSI 87.4 >= 65=1
+- Strict後reject: 4h RSI 87.8 >= 65=1, 4h RSI 86.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +49.63% | $1,758,959.95 |
-| BABY/USDT:USDT | +35.56% | $17,276,555.82 |
-| AIGENSYN/USDT:USDT | +26.75% | $3,877,134.16 |
-| AKT/USDT:USDT | +18.74% | $1,694,500.62 |
-| TAC/USDT:USDT | +18.60% | $2,642,106.55 |
+| TST/USDT:USDT | +51.74% | $1,811,329.02 |
+| BABY/USDT:USDT | +36.32% | $17,458,000.92 |
+| AIGENSYN/USDT:USDT | +30.22% | $3,956,785.01 |
+| TAC/USDT:USDT | +20.25% | $2,643,605.42 |
+| AKT/USDT:USDT | +19.03% | $1,756,028.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +2.45% | +2.55% |
-| LYN/USDT:USDT | below_1h_threshold | +2.24% | +2.34% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.11% | +2.21% |
-| TAC/USDT:USDT | below_1h_threshold | +1.96% | +2.06% |
-| SQD/USDT:USDT | below_1h_threshold | +1.71% | +1.81% |
+| LYN/USDT:USDT | below_1h_threshold | +3.39% | +3.55% |
+| TAC/USDT:USDT | below_1h_threshold | +3.38% | +3.54% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.14% | +3.31% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.75% | +2.91% |
+| XNY/USDT:USDT | below_1h_threshold | +1.59% | +1.75% |
 
 ## 4. 次に見るべき不足
 
