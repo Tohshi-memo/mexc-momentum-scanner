@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T22:37:07.290314+00:00
+- generated_at: 2026-05-03T22:42:09.474540+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3110**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T22:37:05.476118+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=79060.6
+- 更新: 2026-05-03T22:42:07.662799+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=79163.6
 - Funnel: target 755 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +66.28% | $269,983,473.24 |
-| TAG/USDT:USDT | +15.30% | $3,998,192.92 |
-| SKYAI/USDT:USDT | +14.83% | $26,576,532.91 |
-| MERL/USDT:USDT | +13.68% | $1,274,869.14 |
-| BSB/USDT:USDT | +12.27% | $15,747,318.65 |
+| LAB/USDT:USDT | +65.93% | $271,234,142.30 |
+| SKYAI/USDT:USDT | +15.93% | $26,636,145.78 |
+| TAG/USDT:USDT | +14.96% | $4,016,340.46 |
+| MERL/USDT:USDT | +13.48% | $1,277,460.98 |
+| BSB/USDT:USDT | +11.95% | $15,753,268.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PNUT/USDT:USDT | below_1h_threshold | +3.03% | +2.70% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.79% | +2.45% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.59% | +2.25% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.22% | +1.89% |
-| MERL/USDT:USDT | below_1h_threshold | +2.09% | +1.75% |
+| PNUT/USDT:USDT | below_1h_threshold | +3.84% | +3.37% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.05% | +2.58% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.96% | +2.49% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.21% | +1.74% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.17% | +1.71% |
 
 ## 4. 次に見るべき不足
 
