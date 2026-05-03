@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T10:02:10.135852+00:00
+- generated_at: 2026-05-03T10:06:56.176567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3058**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T10:02:08.375132+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78464.7
+- 更新: 2026-05-03T10:06:54.383986+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78433.1
 - Funnel: target 755 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +49.26% | $15,966,078.12 |
-| TST/USDT:USDT | +39.44% | $1,242,946.83 |
-| B/USDT:USDT | +23.36% | $44,188,773.27 |
-| FHE/USDT:USDT | +22.99% | $3,104,944.43 |
-| AIGENSYN/USDT:USDT | +21.15% | $3,688,228.54 |
+| BABY/USDT:USDT | +49.26% | $16,019,761.20 |
+| TST/USDT:USDT | +39.17% | $1,276,345.41 |
+| AIGENSYN/USDT:USDT | +19.37% | $3,711,085.45 |
+| TAC/USDT:USDT | +18.17% | $2,601,660.67 |
+| BR/USDT:USDT | +17.42% | $4,019,941.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHILLGUY/USDT:USDT | below_1h_threshold | +1.16% | +1.20% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +0.70% | +0.74% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
-| B2/USDT:USDT | below_1h_threshold | +0.63% | +0.67% |
-| BSB/USDT:USDT | below_1h_threshold | +0.62% | +0.66% |
+| TAC/USDT:USDT | below_1h_threshold | +1.59% | +1.67% |
+| ALCH/USDT:USDT | below_1h_threshold | +0.87% | +0.95% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.86% | +0.94% |
+| B2/USDT:USDT | below_1h_threshold | +0.65% | +0.73% |
+| DASH/USDT:USDT | below_1h_threshold | +0.53% | +0.61% |
 
 ## 4. 次に見るべき不足
 
