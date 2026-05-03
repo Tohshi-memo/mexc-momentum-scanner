@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T13:07:13.509902+00:00
+- generated_at: 2026-05-03T13:12:15.630181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3068**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T13:07:11.647811+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78696.4
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T13:12:13.610469+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78725.0
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +48.16% | $3,307,340.16 |
-| TAC/USDT:USDT | +31.64% | $2,120,903.96 |
-| AIGENSYN/USDT:USDT | +26.78% | $4,649,266.37 |
-| FHE/USDT:USDT | +24.94% | $4,047,184.37 |
-| NAORIS/USDT:USDT | +23.12% | $3,652,078.74 |
+| TST/USDT:USDT | +44.95% | $3,375,987.89 |
+| TAC/USDT:USDT | +30.71% | $2,176,088.77 |
+| AIGENSYN/USDT:USDT | +28.44% | $4,669,939.78 |
+| NAORIS/USDT:USDT | +23.45% | $3,717,915.28 |
+| FHE/USDT:USDT | +23.34% | $4,075,103.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.49% | +3.51% |
-| TAC/USDT:USDT | below_1h_threshold | +2.59% | +2.62% |
-| B/USDT:USDT | below_1h_threshold | +2.11% | +2.14% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.37% | +1.40% |
-| AKT/USDT:USDT | below_1h_threshold | +1.06% | +1.09% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.76% | +3.75% |
+| AKT/USDT:USDT | below_1h_threshold | +2.63% | +2.62% |
+| TAC/USDT:USDT | below_1h_threshold | +1.95% | +1.94% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
 
 ## 4. 次に見るべき不足
 
