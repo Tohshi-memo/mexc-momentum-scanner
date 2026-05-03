@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T04:07:41.098598+00:00
+- generated_at: 2026-05-03T04:12:18.224836+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3027**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T04:07:39.059078+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78129.8
-- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1
+- 更新: 2026-05-03T04:12:13.719384+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78089.7
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +19.63% | $1,836,526.92 |
-| BABY/USDT:USDT | +16.82% | $2,023,434.92 |
-| FHE/USDT:USDT | +13.45% | $2,449,402.42 |
-| GENIUS/USDT:USDT | +13.42% | $1,090,164.00 |
-| BIANRENSHENG/USDT:USDT | +11.59% | $2,198,856.04 |
+| BR/USDT:USDT | +20.90% | $1,888,473.02 |
+| BABY/USDT:USDT | +15.50% | $2,034,110.59 |
+| GENIUS/USDT:USDT | +13.63% | $1,091,979.23 |
+| AIGENSYN/USDT:USDT | +12.37% | $2,547,371.74 |
+| FHE/USDT:USDT | +10.74% | $2,456,961.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +4.32% | +4.36% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
-| BABY/USDT:USDT | below_1h_threshold | +2.31% | +2.35% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.02% | +1.06% |
-| ORCA/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.56% | +2.66% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.00% | +2.09% |
+| BABY/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.66% | +0.76% |
+| BSB/USDT:USDT | below_1h_threshold | +0.57% | +0.66% |
 
 ## 4. 次に見るべき不足
 
