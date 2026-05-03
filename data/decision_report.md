@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T00:17:05.836692+00:00
+- generated_at: 2026-05-03T00:22:01.115294+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3001**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T00:17:03.865292+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78500.5
-- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1
+- 更新: 2026-05-03T00:21:58.694985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=78553.8
+- Funnel: target 755 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 67.4 >= 65=1, 4h RSI 93.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +20.23% | $1,521,119.77 |
-| XNY/USDT:USDT | +17.45% | $2,265,281.44 |
-| LUNC/USDT:USDT | +14.34% | $29,643,429.19 |
-| BIANRENSHENG/USDT:USDT | +14.28% | $1,673,892.31 |
-| NAORIS/USDT:USDT | +12.28% | $4,552,873.32 |
+| FHE/USDT:USDT | +22.43% | $1,561,454.91 |
+| XNY/USDT:USDT | +15.99% | $2,279,645.07 |
+| BABY/USDT:USDT | +14.63% | $1,399,291.98 |
+| BIANRENSHENG/USDT:USDT | +14.26% | $1,697,175.02 |
+| LUNC/USDT:USDT | +13.68% | $29,787,833.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.22% | +4.41% |
-| XNY/USDT:USDT | below_1h_threshold | +3.52% | +3.72% |
-| BABY/USDT:USDT | below_1h_threshold | +3.18% | +3.38% |
-| TAC/USDT:USDT | below_1h_threshold | +2.01% | +2.20% |
-| AT/USDT:USDT | below_1h_threshold | +1.56% | +1.75% |
+| TAC/USDT:USDT | below_1h_threshold | +2.49% | +2.62% |
+| FHE/USDT:USDT | below_1h_threshold | +2.48% | +2.60% |
+| XNY/USDT:USDT | below_1h_threshold | +2.30% | +2.43% |
+| BIO/USDT:USDT | below_1h_threshold | +1.64% | +1.76% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.47% | +1.60% |
 
 ## 4. 次に見るべき不足
 
