@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T06:17:06.706760+00:00
+- generated_at: 2026-05-03T06:22:02.868045+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3042**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T06:17:04.858594+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=78109.9
-- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-03T06:22:00.793664+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=78101.3
+- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +43.56% | $3,941,893.25 |
-| BR/USDT:USDT | +25.52% | $2,515,937.75 |
-| BSB/USDT:USDT | +14.88% | $14,547,660.00 |
-| AKT/USDT:USDT | +13.58% | $1,310,902.47 |
-| AIGENSYN/USDT:USDT | +12.14% | $2,292,104.63 |
+| BABY/USDT:USDT | +47.89% | $4,186,150.79 |
+| BR/USDT:USDT | +24.24% | $2,537,600.46 |
+| BSB/USDT:USDT | +15.85% | $14,618,224.86 |
+| FIGHT/USDT:USDT | +12.65% | $1,022,057.26 |
+| AKT/USDT:USDT | +12.09% | $1,319,662.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.62% | +3.75% |
-| BABY/USDT:USDT | below_1h_threshold | +2.97% | +3.09% |
-| BSB/USDT:USDT | below_1h_threshold | +2.64% | +2.77% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.81% | +1.94% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.45% | +1.58% |
+| BSB/USDT:USDT | below_1h_threshold | +3.41% | +3.54% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.51% | +2.65% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.84% | +1.98% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.75% | +1.88% |
+| FIGHT/USDT:USDT | below_1h_threshold | +1.66% | +1.80% |
 
 ## 4. 次に見るべき不足
 
