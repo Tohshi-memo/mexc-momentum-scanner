@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-03T05:57:19.226384+00:00
+- generated_at: 2026-05-03T06:02:20.048485+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3039**
+- closed shadow trades: **3040**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3039, expectancy=-0.14%
+- 全期間 MARKET基準: n=3040, expectancy=-0.14%
 - 直近20件 MARKET基準: n=20, expectancy=+0.17%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_FIB1272 | 9/20 | 45.0% | +1.69% | **+0.76%** |
+| LIMIT_4PCT | 12/20 | 60.0% | +1.00% | **+0.60%** |
+| LIMIT_7PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
 | LIMIT_BB3S | 7/11 | 63.6% | +0.92% | **+0.58%** |
-| LIMIT_4PCT | 12/20 | 60.0% | +0.67% | **+0.40%** |
-| ASK | 20/20 | 100.0% | +0.28% | **+0.28%** |
+| LIMIT_3PCT | 14/20 | 70.0% | +0.54% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T05:57:12.101190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78202.6
-- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.8 >= 65=1, 4h RSI 96.2 >= 65=1, 4h RSI 75.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-03T06:02:18.224131+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78173.2
+- Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BABY/USDT:USDT | +33.80% | $3,240,268.17 |
-| BR/USDT:USDT | +25.42% | $2,441,696.66 |
-| AKT/USDT:USDT | +16.21% | $1,293,387.25 |
-| BSB/USDT:USDT | +13.31% | $14,261,143.94 |
-| FHE/USDT:USDT | +12.14% | $2,562,812.31 |
+| BABY/USDT:USDT | +43.56% | $3,476,113.61 |
+| BR/USDT:USDT | +26.99% | $2,393,016.77 |
+| AKT/USDT:USDT | +15.72% | $1,294,766.04 |
+| BSB/USDT:USDT | +12.77% | $14,018,443.03 |
+| FIGHT/USDT:USDT | +11.46% | $1,005,406.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BB/USDT:USDT | below_1h_threshold | +4.55% | +4.46% |
-| AKT/USDT:USDT | below_1h_threshold | +4.19% | +4.10% |
-| TRX/USDT:USDT | below_1h_threshold | +3.43% | +3.34% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.76% | +2.67% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.38% | +2.29% |
+| BABY/USDT:USDT | below_1h_threshold | +2.26% | +2.31% |
+| OL/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
+| FIGHT/USDT:USDT | below_1h_threshold | +0.57% | +0.62% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.47% | +0.51% |
+| BSB/USDT:USDT | below_1h_threshold | +0.43% | +0.48% |
 
 ## 4. 次に見るべき不足
 
