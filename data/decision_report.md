@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T15:47:10.732376+00:00
+- generated_at: 2026-05-03T15:52:12.231496+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3082**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T15:47:08.582056+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78655.1
+- 更新: 2026-05-03T15:52:10.211652+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=78597.5
 - Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +37.76% | $4,829,201.35 |
-| TST/USDT:USDT | +29.63% | $4,775,882.88 |
-| NAORIS/USDT:USDT | +28.65% | $6,656,141.77 |
-| AIGENSYN/USDT:USDT | +18.78% | $5,285,635.71 |
-| FHE/USDT:USDT | +16.36% | $4,998,355.83 |
+| NAORIS/USDT:USDT | +33.65% | $6,838,923.25 |
+| TAC/USDT:USDT | +32.41% | $4,918,812.38 |
+| TST/USDT:USDT | +28.89% | $4,841,119.66 |
+| AIGENSYN/USDT:USDT | +19.20% | $5,301,678.11 |
+| REZ/USDT:USDT | +17.19% | $1,423,386.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +2.88% | +2.94% |
-| WLFI/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.20% | +2.26% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.12% | +2.17% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.91% | +1.97% |
+| WLFI/USDT:USDT | below_1h_threshold | +2.66% | +2.79% |
+| REZ/USDT:USDT | below_1h_threshold | +2.50% | +2.63% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.49% | +2.62% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.48% | +2.61% |
+| GUA/USDT:USDT | below_1h_threshold | +2.04% | +2.17% |
 
 ## 4. 次に見るべき不足
 
