@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T11:56:45.460927+00:00
+- generated_at: 2026-05-03T12:02:14.224630+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3063**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T11:56:43.632518+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=78637.8
-- Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-03T12:02:12.401290+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=78651.0
+- Funnel: target 755 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +40.18% | $2,656,677.72 |
-| BABY/USDT:USDT | +31.94% | $18,824,747.81 |
-| TAC/USDT:USDT | +26.91% | $2,386,160.04 |
-| AIGENSYN/USDT:USDT | +23.48% | $4,305,872.05 |
-| FHE/USDT:USDT | +21.88% | $3,620,041.42 |
+| TST/USDT:USDT | +41.00% | $2,681,665.16 |
+| BABY/USDT:USDT | +33.31% | $18,810,887.30 |
+| TAC/USDT:USDT | +26.05% | $1,928,168.83 |
+| AIGENSYN/USDT:USDT | +25.04% | $4,299,903.03 |
+| FHE/USDT:USDT | +22.18% | $3,620,800.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_relative_strength | +5.34% | +4.99% |
-| NAORIS/USDT:USDT | below_relative_strength | +5.12% | +4.78% |
-| FIGHT/USDT:USDT | below_1h_threshold | +4.08% | +3.74% |
-| REZ/USDT:USDT | below_1h_threshold | +3.96% | +3.62% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.09% | +2.75% |
+| BABY/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
+| TST/USDT:USDT | below_1h_threshold | +0.91% | +0.87% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.48% | +0.44% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.44% | +0.40% |
 
 ## 4. 次に見るべき不足
 
