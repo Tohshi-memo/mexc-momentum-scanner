@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T00:57:08.354264+00:00
+- generated_at: 2026-05-03T01:02:44.091769+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3005**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T00:57:05.773483+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=78479.2
-- Funnel: target 755 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 67.5 >= 65=1, 4h RSI 93.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-03T01:02:42.312756+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=78349.6
+- Funnel: target 755 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +24.19% | $2,014,834.87 |
-| LUNC/USDT:USDT | +17.57% | $32,715,111.10 |
-| BABY/USDT:USDT | +16.05% | $1,569,070.20 |
-| BIANRENSHENG/USDT:USDT | +15.76% | $1,824,067.51 |
-| TRADOOR/USDT:USDT | +14.73% | $1,219,749.28 |
+| FHE/USDT:USDT | +22.03% | $2,026,367.43 |
+| LUNC/USDT:USDT | +18.27% | $32,511,370.10 |
+| BIANRENSHENG/USDT:USDT | +15.88% | $1,817,483.96 |
+| TRADOOR/USDT:USDT | +14.08% | $1,232,273.61 |
+| BABY/USDT:USDT | +13.58% | $1,558,963.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +3.87% | +4.09% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.76% | +3.98% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.62% | +2.84% |
-| APE/USDT:USDT | below_1h_threshold | +1.93% | +2.15% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.72% | +1.94% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.63% | +4.82% |
+| BSB/USDT:USDT | below_1h_threshold | +1.87% | +2.07% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.66% | +1.85% |
+| TAC/USDT:USDT | below_1h_threshold | +0.81% | +1.01% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.58% | +0.77% |
 
 ## 4. 次に見るべき不足
 
