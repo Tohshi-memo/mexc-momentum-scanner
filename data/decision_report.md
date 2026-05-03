@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T13:42:10.140356+00:00
+- generated_at: 2026-05-03T13:47:08.646353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3072**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T13:42:07.479672+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=78630.1
+- 更新: 2026-05-03T13:47:06.046946+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78620.8
 - Funnel: target 755 → liquid 169 → pre 50 → checked 50 → surge 4 → strict 1
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.3 >= 65=1, 4h RSI 78.2 >= 65=1, 4h RSI 73.4 >= 65=1
+- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 76.4 >= 65=1, 4h RSI 77.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +40.82% | $3,737,975.38 |
-| TAC/USDT:USDT | +38.91% | $2,665,886.62 |
-| NAORIS/USDT:USDT | +30.77% | $4,208,737.73 |
-| AIGENSYN/USDT:USDT | +30.06% | $4,924,606.96 |
-| FHE/USDT:USDT | +23.49% | $4,196,555.27 |
+| TAC/USDT:USDT | +42.18% | $2,791,411.74 |
+| TST/USDT:USDT | +41.37% | $3,760,154.13 |
+| NAORIS/USDT:USDT | +32.63% | $4,331,950.06 |
+| AIGENSYN/USDT:USDT | +24.97% | $4,987,275.29 |
+| FHE/USDT:USDT | +24.64% | $4,224,216.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XNY/USDT:USDT | below_1h_threshold | +3.11% | +3.22% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.92% | +3.03% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.73% | +2.84% |
-| AKT/USDT:USDT | below_1h_threshold | +1.94% | +2.05% |
-| FIGHT/USDT:USDT | below_1h_threshold | +1.61% | +1.72% |
+| XNY/USDT:USDT | below_1h_threshold | +3.55% | +3.67% |
+| FIGHT/USDT:USDT | below_1h_threshold | +2.19% | +2.31% |
+| AKT/USDT:USDT | below_1h_threshold | +2.08% | +2.20% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.84% | +1.96% |
+| BR/USDT:USDT | below_1h_threshold | +1.44% | +1.56% |
 
 ## 4. 次に見るべき不足
 
