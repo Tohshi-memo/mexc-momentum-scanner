@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T15:52:12.231496+00:00
+- generated_at: 2026-05-03T15:57:11.312577+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3082**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T15:52:10.211652+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=78597.5
-- Funnel: target 755 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-03T15:57:09.557744+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78632.1
+- Funnel: target 755 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NAORIS/USDT:USDT | +33.65% | $6,838,923.25 |
-| TAC/USDT:USDT | +32.41% | $4,918,812.38 |
-| TST/USDT:USDT | +28.89% | $4,841,119.66 |
-| AIGENSYN/USDT:USDT | +19.20% | $5,301,678.11 |
-| REZ/USDT:USDT | +17.19% | $1,423,386.94 |
+| TAC/USDT:USDT | +33.76% | $5,007,369.49 |
+| NAORIS/USDT:USDT | +33.16% | $6,921,828.98 |
+| TST/USDT:USDT | +29.90% | $4,872,197.05 |
+| AIGENSYN/USDT:USDT | +21.80% | $5,332,002.95 |
+| REZ/USDT:USDT | +19.57% | $1,434,699.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLFI/USDT:USDT | below_1h_threshold | +2.66% | +2.79% |
-| REZ/USDT:USDT | below_1h_threshold | +2.50% | +2.63% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.49% | +2.62% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.48% | +2.61% |
-| GUA/USDT:USDT | below_1h_threshold | +2.04% | +2.17% |
+| BIO/USDT:USDT | below_1h_threshold | +4.99% | +5.08% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.79% | +4.88% |
+| REZ/USDT:USDT | below_1h_threshold | +4.79% | +4.87% |
+| WLFI/USDT:USDT | below_1h_threshold | +2.84% | +2.92% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.75% | +2.83% |
 
 ## 4. 次に見るべき不足
 
