@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T14:03:34.720635+00:00
+- generated_at: 2026-05-03T14:06:57.876693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3077**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T14:03:32.886979+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=78701.1
+- 更新: 2026-05-03T14:06:56.397173+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=78725.7
 - Funnel: target 755 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +42.06% | $3,044,280.16 |
-| TST/USDT:USDT | +41.19% | $3,892,170.68 |
-| NAORIS/USDT:USDT | +28.26% | $4,524,812.90 |
-| FHE/USDT:USDT | +22.48% | $4,358,812.87 |
-| AKT/USDT:USDT | +19.86% | $2,407,166.31 |
+| TST/USDT:USDT | +43.02% | $3,910,161.78 |
+| TAC/USDT:USDT | +40.89% | $3,101,556.05 |
+| NAORIS/USDT:USDT | +27.80% | $4,592,434.06 |
+| FHE/USDT:USDT | +22.89% | $4,367,084.13 |
+| BABY/USDT:USDT | +20.87% | $21,013,298.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_1h_threshold | +1.88% | +1.79% |
-| BABY/USDT:USDT | below_1h_threshold | +1.58% | +1.50% |
-| TAC/USDT:USDT | below_1h_threshold | +1.01% | +0.93% |
-| H/USDT:USDT | below_1h_threshold | +0.69% | +0.60% |
-| BSB/USDT:USDT | below_1h_threshold | +0.66% | +0.57% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +3.17% | +3.05% |
+| BABY/USDT:USDT | below_1h_threshold | +2.56% | +2.44% |
+| BSB/USDT:USDT | below_1h_threshold | +1.38% | +1.27% |
+| REZ/USDT:USDT | below_1h_threshold | +1.37% | +1.25% |
+| B/USDT:USDT | below_1h_threshold | +0.85% | +0.73% |
 
 ## 4. 次に見るべき不足
 
