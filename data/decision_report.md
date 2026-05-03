@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T20:32:19.358072+00:00
+- generated_at: 2026-05-03T20:37:00.035306+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3106**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T20:32:17.547895+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=78905.2
+- 更新: 2026-05-03T20:36:58.205269+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=79193.7
 - Funnel: target 755 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +59.06% | $298,932,171.26 |
-| SKYAI/USDT:USDT | +19.20% | $26,716,174.85 |
-| TAG/USDT:USDT | +14.39% | $4,132,707.86 |
-| MERL/USDT:USDT | +12.64% | $1,098,554.85 |
-| TRADOOR/USDT:USDT | +10.46% | $2,873,475.72 |
+| LAB/USDT:USDT | +55.14% | $300,158,765.51 |
+| SKYAI/USDT:USDT | +20.59% | $26,815,083.57 |
+| TAG/USDT:USDT | +13.62% | $4,154,991.72 |
+| MERL/USDT:USDT | +12.73% | $1,101,781.20 |
+| TRADOOR/USDT:USDT | +10.34% | $2,911,823.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_relative_strength | +5.07% | +4.84% |
-| TST/USDT:USDT | below_1h_threshold | +4.66% | +4.43% |
-| SPACE/USDT:USDT | below_1h_threshold | +3.66% | +3.44% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.04% | +2.82% |
-| LAB/USDT:USDT | below_1h_threshold | +2.92% | +2.70% |
+| TRADOOR/USDT:USDT | below_relative_strength | +5.07% | +4.48% |
+| TST/USDT:USDT | below_1h_threshold | +4.32% | +3.73% |
+| SPACE/USDT:USDT | below_1h_threshold | +4.13% | +3.55% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.29% | +2.70% |
+| FIGHT/USDT:USDT | below_1h_threshold | +2.78% | +2.19% |
 
 ## 4. 次に見るべき不足
 
