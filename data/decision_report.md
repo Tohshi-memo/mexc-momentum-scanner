@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-03T04:22:05.788512+00:00
+- generated_at: 2026-05-03T04:27:04.924739+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3027**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-03T04:22:01.229627+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78158.2
+- 更新: 2026-05-03T04:27:00.714664+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78187.9
 - Funnel: target 755 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 73.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +18.06% | $1,955,715.00 |
-| GENIUS/USDT:USDT | +14.74% | $1,103,352.67 |
-| BABY/USDT:USDT | +14.24% | $2,056,291.14 |
-| AIGENSYN/USDT:USDT | +11.95% | $2,653,904.07 |
-| FHE/USDT:USDT | +9.28% | $2,469,443.33 |
+| BR/USDT:USDT | +19.28% | $1,982,321.62 |
+| BABY/USDT:USDT | +13.31% | $2,061,671.49 |
+| GENIUS/USDT:USDT | +11.74% | $1,113,589.51 |
+| FHE/USDT:USDT | +10.09% | $2,473,998.89 |
+| BIANRENSHENG/USDT:USDT | +8.92% | $2,243,820.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +3.56% | +3.57% |
-| XNY/USDT:USDT | below_1h_threshold | +1.89% | +1.90% |
-| BSB/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.34% | +1.35% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
+| BIO/USDT:USDT | below_1h_threshold | +3.15% | +3.12% |
+| ALCH/USDT:USDT | below_1h_threshold | +2.22% | +2.18% |
+| XNY/USDT:USDT | below_1h_threshold | +2.17% | +2.14% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
+| POWER/USDT:USDT | below_1h_threshold | +1.39% | +1.35% |
 
 ## 4. 次に見るべき不足
 
