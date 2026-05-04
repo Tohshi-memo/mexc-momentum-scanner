@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-04T13:07:35.055215+00:00
+- generated_at: 2026-05-04T13:12:20.779866+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3202**
+- closed shadow trades: **3203**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.62% / filled 20/20。**
-- 全期間 MARKET基準: n=3202, expectancy=-0.16%
+- 全期間 MARKET基準: n=3203, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=+0.62%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -34,8 +34,8 @@
 | LIMIT_2PCT_LONG | 17/20 | 85.0% | +1.31% | **+1.11%** |
 | LIMIT_BB3S_LONG | 2/2 | 100.0% | +0.93% | **+0.93%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.71% | **+0.61%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +0.99% | **+0.54%** |
 | LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.33% | **+0.47%** |
-| ASK_LONG | 20/20 | 100.0% | +0.46% | **+0.46%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T13:07:33.167063+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=78709.6
+- 更新: 2026-05-04T13:12:18.956252+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78856.2
 - Funnel: target 761 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +92.18% | $11,651,622.99 |
-| SKYAI/USDT:USDT | +81.66% | $68,699,432.70 |
-| GIGA/USDT:USDT | +52.61% | $2,091,463.62 |
-| TAG/USDT:USDT | +33.47% | $15,875,828.33 |
-| 4/USDT:USDT | +31.82% | $1,661,720.81 |
+| TST/USDT:USDT | +93.18% | $11,726,678.45 |
+| SKYAI/USDT:USDT | +80.43% | $69,067,687.63 |
+| GIGA/USDT:USDT | +57.36% | $2,098,117.56 |
+| 4/USDT:USDT | +33.33% | $1,672,201.25 |
+| ASTEROID/USDT:USDT | +28.43% | $4,114,544.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.53% | +1.67% |
-| UB/USDT:USDT | below_1h_threshold | +1.35% | +1.49% |
-| BSB/USDT:USDT | below_1h_threshold | +1.32% | +1.46% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.70% | +0.84% |
-| TRIA/USDT:USDT | below_1h_threshold | +0.46% | +0.60% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.95% | +2.91% |
+| UB/USDT:USDT | below_1h_threshold | +2.02% | +1.97% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.07% | +1.02% |
+| ENSO/USDT:USDT | below_1h_threshold | +0.84% | +0.79% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.73% | +0.68% |
 
 ## 4. 次に見るべき不足
 
