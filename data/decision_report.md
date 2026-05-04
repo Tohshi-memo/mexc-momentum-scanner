@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T23:47:25.361028+00:00
+- generated_at: 2026-05-04T23:52:32.101931+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3279**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T23:47:22.672176+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=79736.7
-- Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.5 >= 65=1, 4h RSI 66.0 >= 65=1
+- 更新: 2026-05-04T23:52:29.743267+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=79780.0
+- Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.8 >= 65=1, 4h RSI 66.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +24.78% | $55,723,560.95 |
-| NAORIS/USDT:USDT | +23.07% | $4,312,108.79 |
-| B3/USDT:USDT | +17.64% | $1,110,409.31 |
-| FHE/USDT:USDT | +15.28% | $2,605,548.88 |
-| TONCOIN/USDT:USDT | +12.94% | $39,198,087.27 |
+| NAORIS/USDT:USDT | +26.36% | $4,414,708.29 |
+| RAVE/USDT:USDT | +24.68% | $55,913,184.48 |
+| B3/USDT:USDT | +18.18% | $1,118,061.79 |
+| FHE/USDT:USDT | +14.73% | $2,606,386.28 |
+| TONCOIN/USDT:USDT | +14.17% | $39,706,072.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.89% | +2.26% |
-| 4/USDT:USDT | below_1h_threshold | +1.69% | +2.05% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.39% | +1.76% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.04% | +1.41% |
-| IP/USDT:USDT | below_1h_threshold | +0.99% | +1.36% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.67% | +2.98% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.23% | +1.54% |
+| IP/USDT:USDT | below_1h_threshold | +1.09% | +1.41% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.92% | +1.24% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +0.87% | +1.18% |
 
 ## 4. 次に見るべき不足
 
