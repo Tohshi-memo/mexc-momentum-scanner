@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T14:22:38.603053+00:00
+- generated_at: 2026-05-04T14:27:12.850381+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3215**
 
@@ -46,9 +46,9 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T14:22:36.429686+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=79144.5
-- Funnel: target 761 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-04T14:27:10.733009+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.71% price=79305.5
+- Funnel: target 761 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +115.34% | $15,916,288.23 |
-| SKYAI/USDT:USDT | +96.17% | $80,630,971.48 |
-| GIGA/USDT:USDT | +45.24% | $2,207,826.90 |
-| 4/USDT:USDT | +41.86% | $1,813,809.38 |
-| ASTEROID/USDT:USDT | +29.96% | $4,292,604.28 |
+| TST/USDT:USDT | +116.47% | $16,045,973.25 |
+| SKYAI/USDT:USDT | +97.23% | $81,061,931.49 |
+| GIGA/USDT:USDT | +44.12% | $2,220,400.79 |
+| 4/USDT:USDT | +41.86% | $1,823,944.39 |
+| ASTEROID/USDT:USDT | +29.35% | $4,311,202.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.78% | +3.28% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.52% | +2.01% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.50% | +2.00% |
-| PARTI/USDT:USDT | below_1h_threshold | +2.02% | +1.52% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.94% | +1.44% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.09% | +3.38% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.73% | +2.02% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.39% | +1.68% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.38% | +1.67% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.89% | +1.18% |
 
 ## 4. 次に見るべき不足
 
