@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T04:53:13.662729+00:00
+- generated_at: 2026-05-04T04:57:23.067523+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3151**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T04:53:08.582618+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80326.1
-- Funnel: target 756 → liquid 173 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1, 4h RSI 84.5 >= 65=1, 4h RSI 65.8 >= 65=1
+- 更新: 2026-05-04T04:57:15.695122+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=80237.2
+- Funnel: target 757 → liquid 173 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.6 >= 65=1, 4h RSI 65.7 >= 65=1, 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +62.02% | $20,328,216.54 |
-| LAB/USDT:USDT | +52.41% | $223,286,487.93 |
-| SKYAI/USDT:USDT | +44.04% | $44,645,822.35 |
-| TAG/USDT:USDT | +40.33% | $7,278,060.37 |
-| TST/USDT:USDT | +36.93% | $6,277,445.00 |
+| BSB/USDT:USDT | +67.19% | $20,637,505.15 |
+| LAB/USDT:USDT | +54.19% | $223,444,429.73 |
+| SKYAI/USDT:USDT | +44.44% | $44,871,638.33 |
+| TAG/USDT:USDT | +40.38% | $7,299,306.28 |
+| TST/USDT:USDT | +36.29% | $6,295,703.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANANAS31/USDT:USDT | below_1h_threshold | +4.26% | +4.20% |
-| LAB/USDT:USDT | below_1h_threshold | +4.24% | +4.18% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +4.15% | +4.09% |
-| GIGA/USDT:USDT | below_1h_threshold | +3.96% | +3.90% |
-| EDGE/USDT:USDT | below_1h_threshold | +3.67% | +3.61% |
+| GIGA/USDT:USDT | below_1h_threshold | +4.19% | +4.24% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.78% | +3.83% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.48% | +3.53% |
+| UNI/USDT:USDT | below_1h_threshold | +2.45% | +2.50% |
+| TURBO/USDT:USDT | below_1h_threshold | +2.35% | +2.40% |
 
 ## 4. 次に見るべき不足
 
