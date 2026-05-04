@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T21:42:16.036837+00:00
+- generated_at: 2026-05-04T21:47:18.247927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3264**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T21:42:13.937494+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=80214.1
-- Funnel: target 759 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- 更新: 2026-05-04T21:47:15.880071+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=80240.1
+- Funnel: target 759 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.1 >= 65=1, 4h RSI 82.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +30.64% | $47,564,468.39 |
-| PLAY/USDT:USDT | +22.50% | $1,099,019.06 |
-| FHE/USDT:USDT | +15.89% | $2,674,031.62 |
-| LUNC/USDT:USDT | +12.06% | $76,353,576.79 |
-| TST/USDT:USDT | +11.72% | $22,865,982.85 |
+| RAVE/USDT:USDT | +30.67% | $48,044,525.24 |
+| PLAY/USDT:USDT | +24.77% | $1,138,311.27 |
+| TST/USDT:USDT | +17.26% | $22,986,106.87 |
+| FHE/USDT:USDT | +14.77% | $2,683,120.55 |
+| LUNC/USDT:USDT | +10.64% | $76,723,819.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.61% | +4.22% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +4.39% | +3.99% |
-| DASH/USDT:USDT | below_1h_threshold | +4.26% | +3.86% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.43% | +3.03% |
-| TIA/USDT:USDT | below_1h_threshold | +2.65% | +2.25% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.59% | +4.16% |
+| DASH/USDT:USDT | below_1h_threshold | +4.36% | +3.93% |
+| FHE/USDT:USDT | below_1h_threshold | +3.90% | +3.47% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.77% | +3.34% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.65% | +3.22% |
 
 ## 4. 次に見るべき不足
 
