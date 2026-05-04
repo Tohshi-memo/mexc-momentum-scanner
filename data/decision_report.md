@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T14:07:11.923918+00:00
+- generated_at: 2026-05-04T14:12:12.858462+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3211**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T14:07:09.976288+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=78547.0
-- Funnel: target 761 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-04T14:12:10.748267+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78747.8
+- Funnel: target 761 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +113.42% | $15,383,091.37 |
-| SKYAI/USDT:USDT | +91.52% | $76,933,814.47 |
-| GIGA/USDT:USDT | +46.73% | $2,191,981.52 |
-| 4/USDT:USDT | +36.80% | $1,775,976.61 |
-| TAG/USDT:USDT | +26.80% | $16,585,856.84 |
+| TST/USDT:USDT | +118.03% | $15,543,015.42 |
+| SKYAI/USDT:USDT | +99.48% | $78,178,863.52 |
+| GIGA/USDT:USDT | +45.72% | $2,195,854.89 |
+| 4/USDT:USDT | +37.24% | $1,789,532.60 |
+| TAG/USDT:USDT | +27.71% | $16,658,275.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.24% | +1.49% |
-| UB/USDT:USDT | below_1h_threshold | +1.14% | +1.40% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.91% | +1.16% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.14% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.72% | +0.97% |
+| TST/USDT:USDT | below_1h_threshold | +2.42% | +2.42% |
+| B/USDT:USDT | below_1h_threshold | +2.12% | +2.12% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.11% | +2.11% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.71% | +1.71% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.13% | +1.13% |
 
 ## 4. 次に見るべき不足
 
