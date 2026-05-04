@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T12:47:39.818194+00:00
+- generated_at: 2026-05-04T12:53:06.451015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3201**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T12:47:31.741851+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=78938.0
-- Funnel: target 761 → liquid 187 → pre 50 → checked 50 → surge 5 → strict 3
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.5 >= 65=1, 4h RSI 81.7 >= 65=1
+- 更新: 2026-05-04T12:52:56.428589+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=78912.9
+- Funnel: target 761 → liquid 187 → pre 50 → checked 50 → surge 6 → strict 4
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.4 >= 65=1, 4h RSI 82.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +90.83% | $11,777,172.95 |
-| SKYAI/USDT:USDT | +80.04% | $65,687,139.64 |
-| GIGA/USDT:USDT | +57.95% | $2,073,428.55 |
-| TAG/USDT:USDT | +37.74% | $16,020,630.68 |
-| 4/USDT:USDT | +33.51% | $1,643,047.38 |
+| TST/USDT:USDT | +92.61% | $11,857,511.93 |
+| SKYAI/USDT:USDT | +81.23% | $66,827,036.89 |
+| GIGA/USDT:USDT | +53.91% | $2,080,638.59 |
+| TAG/USDT:USDT | +38.19% | $16,071,664.13 |
+| 4/USDT:USDT | +33.33% | $1,647,403.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZBT/USDT:USDT | below_1h_threshold | +4.85% | +4.61% |
-| SAPIEN/USDT:USDT | below_1h_threshold | +3.98% | +3.75% |
-| AIOT/USDT:USDT | below_1h_threshold | +3.64% | +3.41% |
-| 4/USDT:USDT | below_1h_threshold | +3.23% | +3.00% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.91% | +2.67% |
+| SAPIEN/USDT:USDT | below_1h_threshold | +4.87% | +4.67% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.89% | +3.69% |
+| 4/USDT:USDT | below_1h_threshold | +3.71% | +3.51% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.95% | +2.75% |
+| DASH/USDT:USDT | below_1h_threshold | +2.71% | +2.50% |
 
 ## 4. 次に見るべき不足
 
