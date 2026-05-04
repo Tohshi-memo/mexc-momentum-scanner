@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-04T15:20:12.419641+00:00
+- generated_at: 2026-05-04T15:22:32.814778+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3221**
+- closed shadow trades: **3223**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3221, expectancy=-0.17%
-- 直近20件 MARKET基準: n=20, expectancy=-1.36%
+- 全期間 MARKET基準: n=3223, expectancy=-0.17%
+- 直近20件 MARKET基準: n=20, expectancy=-1.96%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.36% | **-1.36%** |
+| MARKET | 20/20 | 100.0% | -1.96% | **-1.96%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_5PCT | 7/20 | 35.0% | +1.25% | **+0.44%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
-| LIMIT_6PCT | 3/20 | 15.0% | +1.96% | **+0.29%** |
-| LIMIT_FIB1272 | 4/20 | 20.0% | +0.49% | **+0.10%** |
-| LIMIT_ATR | 15/20 | 75.0% | +0.07% | **+0.06%** |
+| LIMIT_8PCT | 3/20 | 15.0% | +5.14% | **+0.77%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +3.47% | **+0.69%** |
+| LIMIT_9PCT | 2/20 | 10.0% | +6.29% | **+0.63%** |
+| LIMIT_7PCT | 3/20 | 15.0% | +2.27% | **+0.34%** |
+| LIMIT_ATR | 16/20 | 80.0% | +0.32% | **+0.26%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 2/2 | 100.0% | +2.07% | **+2.07%** |
-| ASK_LONG | 20/20 | 100.0% | +1.75% | **+1.75%** |
-| MARKET_LONG | 20/20 | 100.0% | +1.41% | **+1.41%** |
-| LIMIT_1PCT_LONG | 14/20 | 70.0% | +1.64% | **+1.14%** |
-| LIMIT_7PCT_LONG | 5/20 | 25.0% | +3.78% | **+0.95%** |
+| ASK_LONG | 20/20 | 100.0% | +2.01% | **+2.01%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.61% | **+1.61%** |
+| LIMIT_1PCT_LONG | 15/20 | 75.0% | +2.06% | **+1.54%** |
+| LIMIT_3PCT_LONG | 10/20 | 50.0% | +3.07% | **+1.53%** |
+| LIMIT_BB3S_LONG | 2/3 | 66.7% | +2.07% | **+1.38%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T15:20:07.553664+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=79906.7
-- Funnel: target 761 → liquid 199 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-05-04T15:22:27.840375+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.95% price=79411.6
+- Funnel: target 761 → liquid 200 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.9 >= 65=1, 4h RSI 94.7 >= 65=1
+- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 95.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELIZAOS/USDT:USDT | +135.61% | $1,467,644.11 |
-| SKYAI/USDT:USDT | +84.12% | $88,986,771.48 |
-| TST/USDT:USDT | +78.48% | $18,548,348.17 |
-| GIGA/USDT:USDT | +38.36% | $2,293,486.35 |
-| ASTEROID/USDT:USDT | +32.76% | $4,637,422.04 |
+| ELIZAOS/USDT:USDT | +148.45% | $1,503,329.54 |
+| SKYAI/USDT:USDT | +81.12% | $89,174,197.07 |
+| TST/USDT:USDT | +78.33% | $18,640,889.86 |
+| GIGA/USDT:USDT | +36.75% | $2,300,189.06 |
+| ASTEROID/USDT:USDT | +30.92% | $4,670,596.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.55% | +3.88% |
-| BSB/USDT:USDT | below_1h_threshold | +2.15% | +2.48% |
-| DASH/USDT:USDT | below_1h_threshold | +1.73% | +2.06% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.70% | +2.03% |
-| UB/USDT:USDT | below_1h_threshold | +1.58% | +1.91% |
+| LAB/USDT:USDT | below_1h_threshold | +4.82% | +5.77% |
+| BSB/USDT:USDT | below_1h_threshold | +2.74% | +3.69% |
+| B/USDT:USDT | below_1h_threshold | +2.45% | +3.40% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.27% | +3.22% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.91% | +2.86% |
 
 ## 4. 次に見るべき不足
 
