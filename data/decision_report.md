@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T23:32:42.457748+00:00
+- generated_at: 2026-05-04T23:37:16.772619+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3277**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T23:32:39.995616+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=79850.0
+- 更新: 2026-05-04T23:37:14.360558+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=79771.2
 - Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1, 4h RSI 71.5 >= 65=1
+- Strict後reject: 4h RSI 67.1 >= 65=1, 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +26.25% | $1,087,027.57 |
-| RAVE/USDT:USDT | +24.55% | $54,897,831.90 |
-| NAORIS/USDT:USDT | +20.33% | $3,743,706.90 |
-| FHE/USDT:USDT | +16.91% | $2,588,804.89 |
-| TONCOIN/USDT:USDT | +13.67% | $37,880,370.48 |
+| NAORIS/USDT:USDT | +24.70% | $3,850,444.49 |
+| RAVE/USDT:USDT | +23.65% | $55,190,668.84 |
+| B3/USDT:USDT | +20.45% | $1,097,961.78 |
+| FHE/USDT:USDT | +16.12% | $2,595,934.74 |
+| TONCOIN/USDT:USDT | +13.32% | $38,637,502.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +3.03% | +3.26% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.13% | +2.35% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.94% | +2.17% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.94% | +1.17% |
-| IP/USDT:USDT | below_1h_threshold | +0.90% | +1.12% |
+| 4/USDT:USDT | below_1h_threshold | +2.09% | +2.42% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.93% | +2.25% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.52% | +1.85% |
+| IP/USDT:USDT | below_1h_threshold | +0.84% | +1.16% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.82% | +1.15% |
 
 ## 4. 次に見るべき不足
 
