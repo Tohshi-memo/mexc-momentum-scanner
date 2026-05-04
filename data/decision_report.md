@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T22:22:20.460338+00:00
+- generated_at: 2026-05-04T22:27:10.311372+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3270**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T22:22:18.531990+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80257.0
-- Funnel: target 759 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-04T22:27:08.376374+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=80274.3
+- Funnel: target 759 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +28.15% | $50,082,520.91 |
-| FHE/USDT:USDT | +18.91% | $2,727,619.43 |
-| TST/USDT:USDT | +17.75% | $23,480,409.55 |
-| PLAY/USDT:USDT | +16.24% | $2,110,070.35 |
-| LUNC/USDT:USDT | +9.73% | $75,228,594.89 |
+| RAVE/USDT:USDT | +27.54% | $50,298,702.05 |
+| TST/USDT:USDT | +17.30% | $23,505,852.38 |
+| FHE/USDT:USDT | +16.58% | $2,758,611.42 |
+| PLAY/USDT:USDT | +14.13% | $2,233,766.50 |
+| LUNC/USDT:USDT | +9.62% | $75,363,610.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.78% | +1.73% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.71% | +1.66% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.28% | +1.23% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.03% | +1.96% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.91% | +1.84% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.85% | +1.78% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.70% | +1.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.57% | +1.50% |
 
 ## 4. 次に見るべき不足
 
