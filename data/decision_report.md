@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T18:17:25.806748+00:00
+- generated_at: 2026-05-04T18:22:16.359263+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3247**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T18:17:23.766705+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=80259.0
+- 更新: 2026-05-04T18:22:14.460930+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=80199.6
 - Funnel: target 761 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +22.65% | $40,671,883.73 |
-| FHE/USDT:USDT | +9.47% | $2,801,412.56 |
-| TST/USDT:USDT | +8.43% | $21,730,506.92 |
-| RAVE/USDT:USDT | +8.05% | $13,026,886.03 |
-| WLFI/USDT:USDT | +5.52% | $4,920,501.22 |
+| BSB/USDT:USDT | +20.75% | $41,089,801.67 |
+| FHE/USDT:USDT | +10.03% | $2,812,045.69 |
+| TST/USDT:USDT | +9.91% | $21,814,222.78 |
+| RAVE/USDT:USDT | +7.32% | $13,160,311.81 |
+| WLFI/USDT:USDT | +5.84% | $4,983,248.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BB/USDT:USDT | below_1h_threshold | +3.21% | +3.31% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.92% | +2.02% |
-| ON/USDT:USDT | below_1h_threshold | +1.37% | +1.47% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.28% | +1.39% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.21% | +1.31% |
+| BB/USDT:USDT | below_1h_threshold | +2.65% | +2.83% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.25% | +2.42% |
+| USTC/USDT:USDT | below_1h_threshold | +2.13% | +2.31% |
+| M/USDT:USDT | below_1h_threshold | +1.42% | +1.59% |
+| FHE/USDT:USDT | below_1h_threshold | +1.37% | +1.54% |
 
 ## 4. 次に見るべき不足
 
