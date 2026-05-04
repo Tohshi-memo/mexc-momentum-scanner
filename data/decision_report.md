@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T19:22:18.355759+00:00
+- generated_at: 2026-05-04T19:27:15.157192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3251**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T19:22:16.362513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=79950.0
+- 更新: 2026-05-04T19:27:13.217082+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=79850.0
 - Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +21.42% | $18,412,824.66 |
-| LUNC/USDT:USDT | +9.19% | $68,831,748.17 |
-| TST/USDT:USDT | +9.03% | $22,148,156.93 |
-| LUNANEW/USDT:USDT | +7.19% | $1,044,378.70 |
-| BB/USDT:USDT | +7.11% | $1,015,281.15 |
+| RAVE/USDT:USDT | +23.53% | $18,913,135.89 |
+| LUNC/USDT:USDT | +9.31% | $69,071,388.18 |
+| USTC/USDT:USDT | +9.16% | $1,360,711.18 |
+| TST/USDT:USDT | +8.91% | $22,165,346.49 |
+| LUNANEW/USDT:USDT | +7.03% | $1,057,116.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.28% |
-| W/USDT:USDT | below_1h_threshold | +1.02% | +1.18% |
-| BIO/USDT:USDT | below_1h_threshold | +0.86% | +1.02% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +0.85% | +1.01% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.84% | +2.12% |
+| USTC/USDT:USDT | below_1h_threshold | +1.62% | +1.91% |
+| MERL/USDT:USDT | below_1h_threshold | +1.27% | +1.56% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.23% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.92% | +1.21% |
 
 ## 4. 次に見るべき不足
 
