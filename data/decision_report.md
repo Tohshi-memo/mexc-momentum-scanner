@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T14:37:15.660093+00:00
+- generated_at: 2026-05-04T14:42:11.619329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3217**
 
@@ -46,31 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T14:37:13.420245+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.85% price=79420.2
-- Funnel: target 761 → liquid 195 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-04T14:42:09.498765+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.97% price=79510.3
+- Funnel: target 761 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +121.44% | $16,380,496.68 |
-| SKYAI/USDT:USDT | +90.95% | $83,727,370.26 |
-| GIGA/USDT:USDT | +44.18% | $2,235,495.15 |
-| 4/USDT:USDT | +35.82% | $1,840,029.02 |
-| ASTEROID/USDT:USDT | +28.32% | $4,340,392.84 |
+| ELIZAOS/USDT:USDT | +126.19% | $1,015,089.08 |
+| TST/USDT:USDT | +121.66% | $16,716,065.56 |
+| SKYAI/USDT:USDT | +90.13% | $84,411,382.82 |
+| GIGA/USDT:USDT | +47.80% | $2,241,861.10 |
+| 4/USDT:USDT | +36.53% | $1,847,520.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_relative_strength | +5.60% | +4.74% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +4.35% | +3.49% |
-| TST/USDT:USDT | below_1h_threshold | +3.55% | +2.70% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.90% | +2.05% |
-| PARTI/USDT:USDT | below_1h_threshold | +2.75% | +1.89% |
+| B/USDT:USDT | below_relative_strength | +5.45% | +4.48% |
+| UB/USDT:USDT | below_relative_strength | +5.33% | +4.36% |
+| BANANAS31/USDT:USDT | below_relative_strength | +5.17% | +4.20% |
+| TST/USDT:USDT | below_1h_threshold | +3.65% | +2.68% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.92% | +1.96% |
 
 ## 4. 次に見るべき不足
 
