@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T08:47:21.833880+00:00
+- generated_at: 2026-05-04T08:52:22.830445+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3172**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T08:47:16.936471+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79680.0
-- Funnel: target 760 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 65.4 >= 65=1
+- 更新: 2026-05-04T08:52:17.983149+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=79583.9
+- Funnel: target 760 → liquid 179 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 65.8 >= 65=1, 4h RSI 87.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +50.82% | $49,979,440.68 |
-| TAG/USDT:USDT | +47.56% | $12,980,685.16 |
-| BSB/USDT:USDT | +42.96% | $25,498,429.27 |
-| TST/USDT:USDT | +41.83% | $7,070,642.49 |
-| ASTEROID/USDT:USDT | +30.51% | $3,533,513.70 |
+| SKYAI/USDT:USDT | +50.52% | $50,156,067.88 |
+| TST/USDT:USDT | +49.43% | $7,196,482.29 |
+| TAG/USDT:USDT | +45.10% | $13,077,725.94 |
+| BSB/USDT:USDT | +41.22% | $25,612,032.86 |
+| GIGA/USDT:USDT | +33.37% | $1,224,872.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.30% | +4.28% |
-| LAB/USDT:USDT | below_1h_threshold | +3.81% | +3.79% |
-| TST/USDT:USDT | below_1h_threshold | +3.71% | +3.69% |
-| AGT/USDT:USDT | below_1h_threshold | +3.12% | +3.10% |
-| BR/USDT:USDT | below_1h_threshold | +2.88% | +2.86% |
+| H/USDT:USDT | below_1h_threshold | +4.36% | +4.46% |
+| LAB/USDT:USDT | below_1h_threshold | +4.12% | +4.22% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.65% | +2.75% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.65% | +2.75% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.58% | +2.68% |
 
 ## 4. 次に見るべき不足
 
