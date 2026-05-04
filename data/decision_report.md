@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T20:32:22.054802+00:00
+- generated_at: 2026-05-04T20:36:58.817337+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3257**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T20:32:19.936648+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79998.6
+- 更新: 2026-05-04T20:36:56.742083+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=79926.7
 - Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.9 >= 65=1
+- Strict後reject: 4h RSI 77.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +49.54% | $36,411,557.79 |
-| TST/USDT:USDT | +15.18% | $22,572,947.95 |
-| SKYAI/USDT:USDT | +10.70% | $101,622,517.89 |
-| FHE/USDT:USDT | +9.43% | $2,615,473.59 |
-| GIGGLE/USDT:USDT | +5.68% | $5,514,154.24 |
+| RAVE/USDT:USDT | +46.70% | $37,623,349.93 |
+| TST/USDT:USDT | +12.32% | $22,608,687.22 |
+| SKYAI/USDT:USDT | +11.62% | $101,952,616.84 |
+| FHE/USDT:USDT | +9.20% | $2,627,274.49 |
+| LUNC/USDT:USDT | +6.24% | $71,351,886.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TST/USDT:USDT | below_1h_threshold | +4.44% | +4.46% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.68% | +2.71% |
-| FHE/USDT:USDT | below_1h_threshold | +2.26% | +2.28% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.97% | +1.99% |
-| BIO/USDT:USDT | below_1h_threshold | +1.51% | +1.53% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.58% | +3.69% |
+| AIOZ/USDT:USDT | below_1h_threshold | +2.12% | +2.24% |
+| FHE/USDT:USDT | below_1h_threshold | +2.04% | +2.16% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.89% | +2.00% |
+| TST/USDT:USDT | below_1h_threshold | +1.78% | +1.90% |
 
 ## 4. 次に見るべき不足
 
