@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T03:52:17.248859+00:00
+- generated_at: 2026-05-04T03:57:10.594107+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3139**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T03:52:15.104535+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80157.3
-- Funnel: target 757 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
+- 更新: 2026-05-04T03:57:08.257379+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=80261.0
+- Funnel: target 757 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.1 >= 65=1, 4h RSI 71.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +48.49% | $235,143,096.59 |
-| SKYAI/USDT:USDT | +43.43% | $37,926,163.16 |
-| TAG/USDT:USDT | +42.44% | $6,360,325.15 |
-| BSB/USDT:USDT | +41.66% | $16,244,943.42 |
-| GIGA/USDT:USDT | +26.95% | $1,127,273.18 |
+| SKYAI/USDT:USDT | +55.50% | $38,522,308.69 |
+| TAG/USDT:USDT | +48.16% | $6,439,915.94 |
+| LAB/USDT:USDT | +44.35% | $235,415,386.29 |
+| BSB/USDT:USDT | +42.83% | $16,500,329.52 |
+| GIGA/USDT:USDT | +26.60% | $1,128,299.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.86% | +4.82% |
-| DASH/USDT:USDT | below_1h_threshold | +4.48% | +4.44% |
-| AIOT/USDT:USDT | below_1h_threshold | +2.72% | +2.69% |
-| PARTI/USDT:USDT | below_1h_threshold | +2.25% | +2.22% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.52% | +1.49% |
+| TST/USDT:USDT | below_1h_threshold | +4.88% | +4.71% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.71% | +4.55% |
+| DASH/USDT:USDT | below_1h_threshold | +4.63% | +4.47% |
+| GONGJIAN/USDT:USDT | below_1h_threshold | +3.86% | +3.69% |
+| TAG/USDT:USDT | below_1h_threshold | +3.05% | +2.89% |
 
 ## 4. 次に見るべき不足
 
