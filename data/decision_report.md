@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T17:12:32.545717+00:00
+- generated_at: 2026-05-04T17:17:13.558212+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3243**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T17:12:30.635638+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=80303.3
+- 更新: 2026-05-04T17:17:11.627020+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=80377.8
 - Funnel: target 761 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +20.11% | $34,659,645.94 |
-| TST/USDT:USDT | +20.04% | $20,773,244.14 |
-| FHE/USDT:USDT | +10.96% | $2,723,024.72 |
-| TAG/USDT:USDT | +7.57% | $17,914,290.25 |
-| GIGGLE/USDT:USDT | +5.22% | $5,060,843.30 |
+| BSB/USDT:USDT | +20.67% | $34,966,211.09 |
+| TST/USDT:USDT | +15.78% | $20,899,858.66 |
+| FHE/USDT:USDT | +12.96% | $2,767,609.44 |
+| TAG/USDT:USDT | +6.45% | $17,952,795.52 |
+| ASTEROID/USDT:USDT | +6.44% | $5,803,089.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +3.55% | +3.14% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.66% | +2.26% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.45% | +2.05% |
-| AGT/USDT:USDT | below_1h_threshold | +1.62% | +1.22% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.50% | +1.10% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.22% | +3.73% |
+| BSB/USDT:USDT | below_1h_threshold | +4.13% | +3.64% |
+| QUBIC/USDT:USDT | below_1h_threshold | +3.93% | +3.43% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.75% | +3.25% |
+| FHE/USDT:USDT | below_1h_threshold | +3.27% | +2.78% |
 
 ## 4. 次に見るべき不足
 
