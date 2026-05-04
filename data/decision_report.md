@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T13:32:33.456270+00:00
+- generated_at: 2026-05-04T13:37:41.302276+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3206**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T13:32:28.770006+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=78932.2
+- 更新: 2026-05-04T13:37:36.046271+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=79000.0
 - Funnel: target 761 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.9 >= 65=1
+- Strict後reject: 4h RSI 93.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +112.35% | $13,015,126.34 |
-| SKYAI/USDT:USDT | +86.35% | $72,869,771.49 |
-| GIGA/USDT:USDT | +57.24% | $2,122,850.91 |
-| 4/USDT:USDT | +35.64% | $1,714,556.51 |
-| ASTEROID/USDT:USDT | +28.63% | $4,184,482.52 |
+| TST/USDT:USDT | +117.61% | $13,298,718.72 |
+| SKYAI/USDT:USDT | +88.29% | $73,497,185.13 |
+| GIGA/USDT:USDT | +54.45% | $2,126,347.74 |
+| 4/USDT:USDT | +38.13% | $1,721,360.74 |
+| GIGGLE/USDT:USDT | +28.51% | $4,020,462.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.09% | +2.95% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.39% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.47% | +2.33% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +1.91% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.75% | +1.61% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.10% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.01% | +2.78% |
+| 4/USDT:USDT | below_1h_threshold | +2.72% | +2.49% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.65% | +2.42% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.34% |
 
 ## 4. 次に見るべき不足
 
