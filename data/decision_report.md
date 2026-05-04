@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T18:27:16.402194+00:00
+- generated_at: 2026-05-04T18:32:16.694294+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3248**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T18:27:14.259552+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=80120.1
+- 更新: 2026-05-04T18:32:14.949633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=80226.6
 - Funnel: target 761 → liquid 199 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.1 >= 65=1
+- Strict後reject: 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +18.49% | $41,507,508.68 |
-| TST/USDT:USDT | +11.00% | $21,861,418.47 |
-| FHE/USDT:USDT | +9.10% | $2,820,407.72 |
-| QUBIC/USDT:USDT | +8.14% | $7,216,610.97 |
-| RAVE/USDT:USDT | +7.78% | $13,330,270.01 |
+| BSB/USDT:USDT | +20.45% | $41,815,738.67 |
+| TST/USDT:USDT | +11.60% | $21,928,669.50 |
+| QUBIC/USDT:USDT | +10.56% | $7,231,736.59 |
+| FHE/USDT:USDT | +9.24% | $2,824,564.17 |
+| RAVE/USDT:USDT | +9.20% | $13,526,930.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QUBIC/USDT:USDT | below_1h_threshold | +2.87% | +3.14% |
-| BB/USDT:USDT | below_1h_threshold | +2.68% | +2.96% |
-| M/USDT:USDT | below_1h_threshold | +2.38% | +2.65% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.83% | +2.10% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.15% | +1.42% |
+| QUBIC/USDT:USDT | below_1h_threshold | +4.68% | +4.82% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.33% | +3.48% |
+| BB/USDT:USDT | below_1h_threshold | +2.74% | +2.88% |
+| M/USDT:USDT | below_1h_threshold | +2.30% | +2.44% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.06% | +2.20% |
 
 ## 4. 次に見るべき不足
 
