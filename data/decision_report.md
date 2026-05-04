@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T15:02:28.599079+00:00
+- generated_at: 2026-05-04T15:07:17.928550+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3221**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T15:02:26.692584+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80296.5
+- 更新: 2026-05-04T15:07:16.076448+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80166.3
 - Funnel: target 761 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELIZAOS/USDT:USDT | +116.95% | $1,306,746.78 |
-| TST/USDT:USDT | +93.89% | $17,701,140.46 |
-| SKYAI/USDT:USDT | +84.36% | $86,223,159.27 |
-| GIGA/USDT:USDT | +43.52% | $2,260,441.50 |
-| ASTEROID/USDT:USDT | +34.64% | $4,453,657.34 |
+| ELIZAOS/USDT:USDT | +111.47% | $1,351,090.27 |
+| SKYAI/USDT:USDT | +83.99% | $86,810,739.43 |
+| TST/USDT:USDT | +82.45% | $17,935,223.58 |
+| GIGA/USDT:USDT | +44.95% | $2,264,755.76 |
+| ASTEROID/USDT:USDT | +34.84% | $4,515,628.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +4.78% | +4.63% |
-| LAB/USDT:USDT | below_1h_threshold | +2.08% | +1.93% |
-| TAG/USDT:USDT | below_1h_threshold | +1.22% | +1.06% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +0.98% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.02% | +0.87% |
+| B/USDT:USDT | below_1h_threshold | +3.28% | +3.29% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.02% | +2.02% |
+| BR/USDT:USDT | below_1h_threshold | +1.66% | +1.67% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.43% |
+| AIOT/USDT:USDT | below_1h_threshold | +1.29% | +1.30% |
 
 ## 4. 次に見るべき不足
 
