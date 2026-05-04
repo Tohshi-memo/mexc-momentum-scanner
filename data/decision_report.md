@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-04T21:32:25.672324+00:00
+- generated_at: 2026-05-04T21:37:13.440507+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3263**
+- closed shadow trades: **3264**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.31% / filled 20/20。**
-- 全期間 MARKET基準: n=3263, expectancy=-0.17%
+- 全期間 MARKET基準: n=3264, expectancy=-0.17%
 - 直近20件 MARKET基準: n=20, expectancy=+0.31%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,8 +31,8 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +2.70% | **+1.22%** |
 | LIMIT_ATR_LONG | 17/20 | 85.0% | +1.36% | **+1.15%** |
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +2.41% | **+1.08%** |
 | LIMIT_7PCT_LONG | 9/20 | 45.0% | +1.65% | **+0.74%** |
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +3.27% | **+0.65%** |
 | LIMIT_2PCT_LONG | 17/20 | 85.0% | +0.67% | **+0.57%** |
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T21:32:23.683151+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=80228.7
-- Funnel: target 759 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-04T21:37:11.309285+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=80239.9
+- Funnel: target 759 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +30.52% | $46,796,796.38 |
-| FHE/USDT:USDT | +14.77% | $2,654,691.33 |
-| LUNC/USDT:USDT | +11.95% | $75,713,392.47 |
-| TST/USDT:USDT | +7.99% | $22,789,417.60 |
-| USTC/USDT:USDT | +7.81% | $1,490,628.56 |
+| RAVE/USDT:USDT | +31.53% | $47,323,418.34 |
+| PLAY/USDT:USDT | +25.22% | $1,004,474.06 |
+| FHE/USDT:USDT | +14.91% | $2,663,327.55 |
+| LUNC/USDT:USDT | +12.38% | $75,853,139.97 |
+| TST/USDT:USDT | +10.16% | $22,823,896.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +4.09% | +3.67% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.92% | +3.51% |
-| FHE/USDT:USDT | below_1h_threshold | +3.61% | +3.19% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.66% | +2.25% |
-| TIA/USDT:USDT | below_1h_threshold | +2.59% | +2.18% |
+| DASH/USDT:USDT | below_1h_threshold | +4.03% | +3.60% |
+| FHE/USDT:USDT | below_1h_threshold | +3.73% | +3.30% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.18% | +2.75% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.64% | +2.21% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.35% | +1.92% |
 
 ## 4. 次に見るべき不足
 
