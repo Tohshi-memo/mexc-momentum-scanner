@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T17:27:18.136333+00:00
+- generated_at: 2026-05-04T17:32:47.539688+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3243**
 
@@ -46,9 +46,9 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T17:27:11.704987+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=80367.8
-- Funnel: target 761 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-05-04T17:32:39.176164+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=80354.8
+- Funnel: target 761 → liquid 201 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -56,21 +56,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +22.93% | $35,734,106.99 |
-| TST/USDT:USDT | +20.56% | $21,104,456.24 |
-| FHE/USDT:USDT | +14.40% | $2,833,892.68 |
-| RAVE/USDT:USDT | +7.71% | $10,787,517.20 |
-| GIGGLE/USDT:USDT | +5.16% | $5,110,866.37 |
+| BSB/USDT:USDT | +25.41% | $36,235,435.94 |
+| TST/USDT:USDT | +20.48% | $21,187,851.12 |
+| FHE/USDT:USDT | +12.96% | $2,864,848.62 |
+| RAVE/USDT:USDT | +9.36% | $11,196,231.04 |
+| GIGGLE/USDT:USDT | +5.59% | $5,122,413.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.08% | +3.60% |
-| OL/USDT:USDT | below_1h_threshold | +3.45% | +2.97% |
-| QUBIC/USDT:USDT | below_1h_threshold | +2.90% | +2.42% |
-| AGT/USDT:USDT | below_1h_threshold | +2.37% | +1.89% |
-| WLFI/USDT:USDT | below_1h_threshold | +2.04% | +1.56% |
+| SQD/USDT:USDT | below_1h_threshold | +3.52% | +3.05% |
+| FHE/USDT:USDT | below_1h_threshold | +3.10% | +2.64% |
+| OL/USDT:USDT | below_1h_threshold | +3.01% | +2.54% |
+| QUBIC/USDT:USDT | below_1h_threshold | +2.64% | +2.17% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.34% | +1.87% |
 
 ## 4. 次に見るべき不足
 
