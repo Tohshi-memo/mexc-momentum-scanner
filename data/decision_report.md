@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-04T23:17:23.749069+00:00
+- generated_at: 2026-05-04T23:22:26.765212+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3274**
+- closed shadow trades: **3275**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.48% / filled 20/20。**
-- 全期間 MARKET基準: n=3274, expectancy=-0.16%
+- 全期間 MARKET基準: n=3275, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=+1.48%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | ASK | 20/20 | 100.0% | +1.51% | **+1.51%** |
 | MARKET | 20/20 | 100.0% | +1.48% | **+1.48%** |
 | LIMIT_1PCT | 16/20 | 80.0% | +1.72% | **+1.37%** |
-| LIMIT_BB3S | 3/8 | 37.5% | +2.22% | **+0.83%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_BB3S | 3/9 | 33.3% | +2.22% | **+0.74%** |
 
 ### シャドウ上位 LONG
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T23:17:21.488047+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=79872.2
+- 更新: 2026-05-04T23:22:24.371569+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=79886.4
 - Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.6 >= 65=1, 4h RSI 69.8 >= 65=1
+- Strict後reject: 4h RSI 67.2 >= 65=1, 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +22.08% | $53,964,985.31 |
-| B3/USDT:USDT | +20.42% | $1,055,106.44 |
-| FHE/USDT:USDT | +19.19% | $2,565,862.03 |
-| NAORIS/USDT:USDT | +16.12% | $3,421,245.72 |
-| TST/USDT:USDT | +12.32% | $23,763,092.96 |
+| RAVE/USDT:USDT | +25.12% | $54,191,283.12 |
+| B3/USDT:USDT | +21.11% | $1,065,712.94 |
+| NAORIS/USDT:USDT | +19.58% | $3,511,181.39 |
+| FHE/USDT:USDT | +16.63% | $2,578,020.54 |
+| TST/USDT:USDT | +15.94% | $23,799,928.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +2.29% | +2.49% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.22% | +1.42% |
-| FHE/USDT:USDT | below_1h_threshold | +1.02% | +1.22% |
-| ON/USDT:USDT | below_1h_threshold | +0.95% | +1.15% |
-| OL/USDT:USDT | below_1h_threshold | +0.84% | +1.04% |
+| 4/USDT:USDT | below_1h_threshold | +2.83% | +3.01% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.95% | +2.13% |
+| IP/USDT:USDT | below_1h_threshold | +1.34% | +1.53% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.13% | +1.31% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +0.98% | +1.16% |
 
 ## 4. 次に見るべき不足
 
