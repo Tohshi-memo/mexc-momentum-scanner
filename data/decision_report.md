@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T10:47:07.937355+00:00
+- generated_at: 2026-05-04T10:52:09.522863+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3193**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T10:47:05.907122+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.13% price=78895.7
-- Funnel: target 761 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-04T10:52:07.441420+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.96% price=79031.0
+- Funnel: target 761 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.5 >= 65=1
+- Strict後reject: 4h RSI 90.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +78.05% | $8,962,621.35 |
-| SKYAI/USDT:USDT | +69.02% | $56,584,299.68 |
-| TAG/USDT:USDT | +55.26% | $14,754,747.12 |
-| GIGA/USDT:USDT | +50.23% | $1,639,261.57 |
-| 4/USDT:USDT | +35.28% | $1,423,781.35 |
+| TST/USDT:USDT | +81.03% | $9,088,574.32 |
+| SKYAI/USDT:USDT | +68.82% | $56,873,669.17 |
+| TAG/USDT:USDT | +51.45% | $14,844,307.45 |
+| GIGA/USDT:USDT | +48.63% | $1,658,919.97 |
+| 4/USDT:USDT | +37.68% | $1,435,089.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.86% | +5.00% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.62% | +4.75% |
-| GIGA/USDT:USDT | below_1h_threshold | +3.39% | +4.53% |
-| TAG/USDT:USDT | below_1h_threshold | +2.67% | +3.80% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.84% | +2.98% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.78% | +4.74% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.59% | +4.56% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.29% | +3.25% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.03% | +2.99% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.92% | +2.88% |
 
 ## 4. 次に見るべき不足
 
