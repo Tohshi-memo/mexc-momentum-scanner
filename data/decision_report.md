@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-04T14:53:48.632375+00:00
+- generated_at: 2026-05-04T14:57:18.696832+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3218**
+- closed shadow trades: **3219**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3218, expectancy=-0.17%
+- 全期間 MARKET基準: n=3219, expectancy=-0.17%
 - 直近20件 MARKET基準: n=20, expectancy=-1.36%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_8PCT | 3/20 | 15.0% | +3.70% | **+0.56%** |
 | LIMIT_6PCT | 4/20 | 20.0% | +1.94% | **+0.39%** |
+| LIMIT_BB3S | 3/18 | 16.7% | +1.36% | **+0.23%** |
 | LIMIT_5PCT | 7/20 | 35.0% | +0.24% | **+0.09%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +0.54% | **+0.08%** |
-| LIMIT_FIB1272 | 6/20 | 30.0% | -0.44% | **-0.13%** |
 
 ### シャドウ上位 LONG
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T14:53:46.571629+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.11% price=80408.5
-- Funnel: target 761 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.5 >= 65=1
+- 更新: 2026-05-04T14:57:14.409844+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.84% price=80194.6
+- Funnel: target 761 → liquid 199 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ELIZAOS/USDT:USDT | +122.26% | $1,130,624.40 |
-| TST/USDT:USDT | +94.24% | $17,796,339.35 |
-| SKYAI/USDT:USDT | +88.25% | $85,986,384.05 |
-| GIGA/USDT:USDT | +46.73% | $2,258,747.10 |
-| 4/USDT:USDT | +33.95% | $1,874,169.05 |
+| ELIZAOS/USDT:USDT | +122.94% | $1,227,427.64 |
+| TST/USDT:USDT | +91.54% | $17,930,685.95 |
+| SKYAI/USDT:USDT | +89.43% | $86,287,533.92 |
+| GIGA/USDT:USDT | +44.95% | $2,261,501.37 |
+| ASTEROID/USDT:USDT | +36.14% | $4,516,611.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_relative_strength | +6.36% | +4.25% |
-| UB/USDT:USDT | below_relative_strength | +5.70% | +3.59% |
-| ASTEROID/USDT:USDT | below_relative_strength | +5.08% | +2.97% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +4.96% | +2.85% |
-| B/USDT:USDT | below_1h_threshold | +4.81% | +2.70% |
+| ASTEROID/USDT:USDT | below_relative_strength | +6.42% | +4.58% |
+| BANANAS31/USDT:USDT | below_relative_strength | +5.22% | +3.38% |
+| PENDLE/USDT:USDT | below_relative_strength | +5.16% | +3.32% |
+| B/USDT:USDT | below_1h_threshold | +4.90% | +3.06% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.16% | +2.33% |
 
 ## 4. 次に見るべき不足
 
