@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T02:02:25.500523+00:00
+- generated_at: 2026-05-04T02:07:10.241179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3126**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T02:02:23.663425+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=79675.2
-- Funnel: target 757 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-04T02:07:08.367431+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=79767.5
+- Funnel: target 757 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +69.76% | $236,081,670.69 |
-| SKYAI/USDT:USDT | +54.08% | $34,116,448.76 |
-| TAG/USDT:USDT | +29.02% | $3,941,107.66 |
-| GIGA/USDT:USDT | +22.44% | $1,095,659.19 |
-| BSB/USDT:USDT | +22.36% | $14,745,259.85 |
+| LAB/USDT:USDT | +73.83% | $236,396,430.59 |
+| SKYAI/USDT:USDT | +54.90% | $34,276,713.28 |
+| TAG/USDT:USDT | +31.11% | $3,981,591.12 |
+| AIGENSYN/USDT:USDT | +22.59% | $6,026,816.91 |
+| BSB/USDT:USDT | +22.05% | $14,779,871.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +1.72% | +1.81% |
-| DASH/USDT:USDT | below_1h_threshold | +1.00% | +1.09% |
-| BSB/USDT:USDT | below_1h_threshold | +0.97% | +1.06% |
-| BR/USDT:USDT | below_1h_threshold | +0.75% | +0.84% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +0.65% | +0.74% |
+| LAB/USDT:USDT | below_1h_threshold | +2.02% | +2.00% |
+| TAG/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
+| FHE/USDT:USDT | below_1h_threshold | +1.34% | +1.32% |
+| UB/USDT:USDT | below_1h_threshold | +1.28% | +1.25% |
+| DASH/USDT:USDT | below_1h_threshold | +1.22% | +1.19% |
 
 ## 4. 次に見るべき不足
 
