@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-04T06:42:16.711106+00:00
+- generated_at: 2026-05-04T06:47:35.223137+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3164**
+- closed shadow trades: **3165**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.79% / filled 20/20。**
-- 全期間 MARKET基準: n=3164, expectancy=-0.17%
+- 全期間 MARKET基準: n=3165, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=+0.79%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +2.22% | **+1.22%** |
 | LIMIT_3PCT_LONG | 15/20 | 75.0% | +1.40% | **+1.05%** |
 | LIMIT_4PCT_LONG | 14/20 | 70.0% | +1.15% | **+0.80%** |
-| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.13% | **+0.62%** |
-| LIMIT_6PCT_LONG | 11/20 | 55.0% | +0.48% | **+0.26%** |
-| LIMIT_BB3S_LONG | 8/9 | 88.9% | +0.27% | **+0.24%** |
+| LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.14% | **+0.40%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T06:42:14.694827+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=79716.9
+- 更新: 2026-05-04T06:47:33.374279+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=79788.9
 - Funnel: target 758 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +67.16% | $9,190,337.22 |
-| SKYAI/USDT:USDT | +57.79% | $47,792,939.25 |
-| BSB/USDT:USDT | +54.51% | $24,336,920.90 |
-| LAB/USDT:USDT | +43.61% | $216,091,771.09 |
-| TST/USDT:USDT | +36.07% | $6,655,110.14 |
+| SKYAI/USDT:USDT | +55.61% | $47,946,718.92 |
+| BSB/USDT:USDT | +55.27% | $24,496,248.68 |
+| TAG/USDT:USDT | +52.59% | $9,658,141.46 |
+| LAB/USDT:USDT | +40.19% | $216,335,899.52 |
+| TST/USDT:USDT | +35.86% | $6,664,696.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +4.88% | +5.21% |
-| UB/USDT:USDT | below_1h_threshold | +4.46% | +4.79% |
-| DASH/USDT:USDT | below_1h_threshold | +3.61% | +3.94% |
-| SQD/USDT:USDT | below_1h_threshold | +3.57% | +3.90% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.46% | +3.79% |
+| UB/USDT:USDT | below_1h_threshold | +4.93% | +5.17% |
+| SQD/USDT:USDT | below_1h_threshold | +4.24% | +4.48% |
+| DASH/USDT:USDT | below_1h_threshold | +3.48% | +3.72% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.94% | +3.19% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.92% | +3.17% |
 
 ## 4. 次に見るべき不足
 
