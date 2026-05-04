@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T04:47:28.914021+00:00
+- generated_at: 2026-05-04T04:53:13.662729+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3151**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T04:47:19.782897+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80319.6
-- Funnel: target 756 → liquid 173 → pre 50 → checked 50 → surge 5 → strict 3
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.5 >= 65=1, 4h RSI 85.0 >= 65=1
+- 更新: 2026-05-04T04:53:08.582618+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=80326.1
+- Funnel: target 756 → liquid 173 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.4 >= 65=1, 4h RSI 84.5 >= 65=1, 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +71.75% | $19,741,065.34 |
-| LAB/USDT:USDT | +53.71% | $223,085,949.90 |
-| TST/USDT:USDT | +39.27% | $6,260,254.33 |
-| TAG/USDT:USDT | +39.21% | $7,241,308.93 |
-| SKYAI/USDT:USDT | +37.67% | $44,272,406.09 |
+| BSB/USDT:USDT | +62.02% | $20,328,216.54 |
+| LAB/USDT:USDT | +52.41% | $223,286,487.93 |
+| SKYAI/USDT:USDT | +44.04% | $44,645,822.35 |
+| TAG/USDT:USDT | +40.33% | $7,278,060.37 |
+| TST/USDT:USDT | +36.93% | $6,277,445.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +4.61% | +4.56% |
-| MERL/USDT:USDT | below_1h_threshold | +4.10% | +4.05% |
-| EDGE/USDT:USDT | below_1h_threshold | +3.52% | +3.47% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.49% | +3.44% |
-| GIGA/USDT:USDT | below_1h_threshold | +2.84% | +2.79% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +4.26% | +4.20% |
+| LAB/USDT:USDT | below_1h_threshold | +4.24% | +4.18% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +4.15% | +4.09% |
+| GIGA/USDT:USDT | below_1h_threshold | +3.96% | +3.90% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.67% | +3.61% |
 
 ## 4. 次に見るべき不足
 
