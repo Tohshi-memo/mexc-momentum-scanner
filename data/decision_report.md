@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T00:12:19.841320+00:00
+- generated_at: 2026-05-04T00:17:19.465197+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3111**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T00:12:15.329102+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=78443.1
-- Funnel: target 756 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
+- 更新: 2026-05-04T00:17:14.739175+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78436.0
+- Funnel: target 756 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1, 4h RSI 76.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +50.01% | $243,936,110.77 |
-| SKYAI/USDT:USDT | +30.40% | $26,596,525.20 |
-| GIGA/USDT:USDT | +23.27% | $1,038,825.70 |
-| TAG/USDT:USDT | +14.66% | $3,688,872.74 |
-| PARTI/USDT:USDT | +14.41% | $1,188,357.53 |
+| LAB/USDT:USDT | +51.39% | $244,843,013.71 |
+| SKYAI/USDT:USDT | +33.51% | $26,928,930.81 |
+| GIGA/USDT:USDT | +31.05% | $1,047,843.63 |
+| TAG/USDT:USDT | +14.38% | $3,700,572.37 |
+| PARTI/USDT:USDT | +13.64% | $1,197,411.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKT/USDT:USDT | below_1h_threshold | +4.32% | +4.43% |
-| B/USDT:USDT | below_1h_threshold | +4.13% | +4.24% |
-| UB/USDT:USDT | below_1h_threshold | +3.56% | +3.67% |
-| PARTI/USDT:USDT | below_1h_threshold | +3.22% | +3.33% |
-| BR/USDT:USDT | below_1h_threshold | +1.99% | +2.10% |
+| GIGA/USDT:USDT | below_1h_threshold | +4.80% | +4.91% |
+| AKT/USDT:USDT | below_1h_threshold | +4.30% | +4.42% |
+| PARTI/USDT:USDT | below_1h_threshold | +3.84% | +3.96% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.98% | +2.10% |
+| BR/USDT:USDT | below_1h_threshold | +1.96% | +2.08% |
 
 ## 4. 次に見るべき不足
 
