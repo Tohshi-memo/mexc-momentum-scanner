@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T06:47:25.142543+00:00
+- generated_at: 2026-05-05T06:52:28.223458+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3322**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T06:47:22.704001+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=80802.5
+- 更新: 2026-05-05T06:52:25.987425+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=80885.1
 - Funnel: target 765 → liquid 206 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.0 >= 65=1
+- Strict後reject: 4h RSI 68.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +70.17% | $8,574,571.12 |
-| HIVE/USDT:USDT | +36.16% | $3,091,288.98 |
-| FHE/USDT:USDT | +27.92% | $3,894,230.87 |
-| M/USDT:USDT | +23.45% | $3,541,504.16 |
-| 4/USDT:USDT | +22.02% | $2,439,331.71 |
+| DOGS/USDT:USDT | +72.43% | $8,625,575.89 |
+| HIVE/USDT:USDT | +35.79% | $3,133,458.18 |
+| FHE/USDT:USDT | +29.41% | $3,917,683.76 |
+| M/USDT:USDT | +26.22% | $3,658,020.23 |
+| 4/USDT:USDT | +21.82% | $2,451,187.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.63% | +4.78% |
-| QUBIC/USDT:USDT | below_1h_threshold | +3.64% | +3.79% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.78% | +1.94% |
-| NOT/USDT:USDT | below_1h_threshold | +1.74% | +1.89% |
-| JST/USDT:USDT | below_1h_threshold | +1.49% | +1.65% |
+| 4/USDT:USDT | below_1h_threshold | +4.92% | +4.97% |
+| QUBIC/USDT:USDT | below_1h_threshold | +3.77% | +3.82% |
+| NOT/USDT:USDT | below_1h_threshold | +2.69% | +2.74% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.98% | +2.03% |
+| M/USDT:USDT | below_1h_threshold | +1.78% | +1.83% |
 
 ## 4. 次に見るべき不足
 
