@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T04:37:18.986119+00:00
+- generated_at: 2026-05-05T04:39:35.682772+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3306**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T04:37:16.882320+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=80755.0
+- 更新: 2026-05-05T04:39:33.547105+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=80780.1
 - Funnel: target 764 → liquid 204 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
+- Strict後reject: 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +73.95% | $6,546,587.34 |
-| FHE/USDT:USDT | +27.88% | $3,400,992.66 |
-| 4/USDT:USDT | +26.46% | $2,185,041.83 |
-| TONCOIN/USDT:USDT | +17.72% | $64,012,067.11 |
-| NOT/USDT:USDT | +17.43% | $2,285,991.02 |
+| DOGS/USDT:USDT | +78.80% | $6,631,196.22 |
+| FHE/USDT:USDT | +28.67% | $3,427,091.53 |
+| 4/USDT:USDT | +25.78% | $2,192,132.57 |
+| NOT/USDT:USDT | +17.76% | $2,290,918.92 |
+| TONCOIN/USDT:USDT | +17.70% | $64,164,276.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.38% | +4.48% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.04% | +3.14% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.74% | +2.84% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.56% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.28% | +1.38% |
+| NAORIS/USDT:USDT | below_1h_threshold | +4.36% | +4.43% |
+| 4/USDT:USDT | below_1h_threshold | +3.82% | +3.90% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.77% | +2.84% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.69% | +2.76% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.14% | +2.21% |
 
 ## 4. 次に見るべき不足
 
