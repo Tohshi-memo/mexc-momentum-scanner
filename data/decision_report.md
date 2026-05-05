@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T16:47:36.495814+00:00
+- generated_at: 2026-05-05T16:52:37.617020+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3367**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T16:47:28.632555+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=81099.9
+- 更新: 2026-05-05T16:52:30.511101+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=81190.2
 - Funnel: target 765 → liquid 192 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.0 >= 65=1
+- Strict後reject: 4h RSI 77.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SWARMS/USDT:USDT | +17.17% | $1,782,547.06 |
-| FHE/USDT:USDT | +9.40% | $8,167,347.27 |
-| BSB/USDT:USDT | +5.15% | $39,545,710.67 |
-| MERL/USDT:USDT | +2.59% | $3,825,214.57 |
-| LUNC/USDT:USDT | +2.43% | $67,571,654.86 |
+| SWARMS/USDT:USDT | +18.41% | $1,837,655.87 |
+| FHE/USDT:USDT | +9.46% | $8,241,016.78 |
+| BSB/USDT:USDT | +5.48% | $39,593,997.24 |
+| DOGS/USDT:USDT | +2.99% | $28,895,035.74 |
+| LUNC/USDT:USDT | +2.70% | $67,825,676.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MERL/USDT:USDT | below_1h_threshold | +2.59% | +3.07% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.43% | +2.90% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.26% | +2.74% |
-| ORCA/USDT:USDT | below_1h_threshold | +2.25% | +2.73% |
-| H/USDT:USDT | below_1h_threshold | +2.10% | +2.57% |
+| DOGS/USDT:USDT | below_1h_threshold | +3.00% | +3.36% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.71% | +3.08% |
+| TST/USDT:USDT | below_1h_threshold | +2.43% | +2.80% |
+| M/USDT:USDT | below_1h_threshold | +2.31% | +2.67% |
+| MERL/USDT:USDT | below_1h_threshold | +2.26% | +2.63% |
 
 ## 4. 次に見るべき不足
 
