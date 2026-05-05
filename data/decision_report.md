@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-05T02:07:21.138535+00:00
+- generated_at: 2026-05-05T02:12:12.547982+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3290**
+- closed shadow trades: **3291**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.31% / filled 20/20。**
-- 全期間 MARKET基準: n=3290, expectancy=-0.16%
+- 全期間 MARKET基準: n=3291, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=+0.31%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,7 +23,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT | 19/20 | 95.0% | +0.92% | **+0.87%** |
 | MARKET | 20/20 | 100.0% | +0.31% | **+0.31%** |
-| ASK | 20/20 | 100.0% | +0.25% | **+0.25%** |
+| ASK | 20/20 | 100.0% | +0.20% | **+0.20%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
@@ -31,10 +31,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/8 | 50.0% | +2.06% | **+1.03%** |
 | LIMIT_3PCT_LONG | 15/20 | 75.0% | +1.19% | **+0.89%** |
-| LIMIT_ATR_LONG | 15/20 | 75.0% | +0.94% | **+0.71%** |
+| LIMIT_ATR_LONG | 15/20 | 75.0% | +0.89% | **+0.67%** |
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.64% | **+0.61%** |
+| LIMIT_BB3S_LONG | 5/9 | 55.6% | +1.10% | **+0.61%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 
 ## 2. $100 Live Portfolio
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T02:07:19.233602+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=80420.5
+- 更新: 2026-05-05T02:12:10.629774+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=80368.8
 - Funnel: target 765 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +46.81% | $1,909,197.13 |
-| RAVE/USDT:USDT | +23.37% | $61,626,562.19 |
-| TONCOIN/USDT:USDT | +21.90% | $53,857,647.13 |
-| NOT/USDT:USDT | +17.36% | $1,381,840.22 |
-| FHE/USDT:USDT | +16.96% | $3,326,130.15 |
+| DOGS/USDT:USDT | +44.24% | $2,038,849.59 |
+| TONCOIN/USDT:USDT | +24.02% | $54,329,413.20 |
+| RAVE/USDT:USDT | +23.03% | $61,718,731.65 |
+| NOT/USDT:USDT | +18.90% | $1,401,533.78 |
+| FHE/USDT:USDT | +17.19% | $3,604,128.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TST/USDT:USDT | below_1h_threshold | +2.17% | +2.03% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.85% | +1.71% |
-| 4/USDT:USDT | below_1h_threshold | +1.80% | +1.66% |
-| SPK/USDT:USDT | below_1h_threshold | +0.83% | +0.69% |
-| VELO/USDT:USDT | below_1h_threshold | +0.70% | +0.56% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.60% | +1.52% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.56% | +1.48% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.25% | +1.17% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.16% | +1.09% |
+| JTO/USDT:USDT | below_1h_threshold | +0.92% | +0.85% |
 
 ## 4. 次に見るべき不足
 
