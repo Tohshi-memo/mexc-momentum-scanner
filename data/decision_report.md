@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T22:27:19.439552+00:00
+- generated_at: 2026-05-05T22:32:44.990940+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3396**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T22:27:16.841948+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81387.9
+- 更新: 2026-05-05T22:32:42.415905+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=81242.4
 - Funnel: target 759 → liquid 187 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI 73.7 >= 65=1
+- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +28.01% | $23,440,073.60 |
-| MAVIA/USDT:USDT | +24.84% | $1,420,046.11 |
-| ZEC/USDT:USDT | +21.07% | $580,458,067.75 |
-| SWARMS/USDT:USDT | +20.93% | $2,330,266.01 |
-| SMCISTOCK/USDT:USDT | +19.15% | $4,982,088.93 |
+| MAVIA/USDT:USDT | +24.66% | $1,429,787.78 |
+| FHE/USDT:USDT | +22.14% | $23,838,580.29 |
+| SWARMS/USDT:USDT | +20.86% | $2,334,013.04 |
+| ZEC/USDT:USDT | +19.33% | $581,880,552.33 |
+| SMCISTOCK/USDT:USDT | +19.18% | $5,008,021.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAO/USDT:USDT | below_1h_threshold | +4.09% | +4.06% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.53% |
-| HMSTR/USDT:USDT | below_1h_threshold | +2.13% | +2.10% |
-| STRK/USDT:USDT | below_1h_threshold | +2.13% | +2.10% |
-| NOT/USDT:USDT | below_1h_threshold | +2.00% | +1.97% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.62% | +3.77% |
+| TAO/USDT:USDT | below_1h_threshold | +3.11% | +3.26% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.71% |
+| VVV/USDT:USDT | below_1h_threshold | +1.53% | +1.68% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +1.17% |
 
 ## 4. 次に見るべき不足
 
