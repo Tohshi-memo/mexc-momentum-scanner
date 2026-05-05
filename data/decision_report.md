@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T16:27:09.251946+00:00
+- generated_at: 2026-05-05T16:32:58.334535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3366**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T16:27:03.011577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=81401.9
-- Funnel: target 765 → liquid 189 → pre 50 → checked 50 → surge 5 → strict 3
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1, 4h RSI 75.4 >= 65=1
+- 更新: 2026-05-05T16:32:46.890789+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=81266.0
+- Funnel: target 765 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SWARMS/USDT:USDT | +11.54% | $1,511,117.15 |
-| MERL/USDT:USDT | +6.72% | $3,718,099.41 |
-| BSB/USDT:USDT | +5.61% | $39,106,638.71 |
-| M/USDT:USDT | +5.47% | $9,773,519.38 |
-| FHE/USDT:USDT | +5.19% | $7,582,868.82 |
+| SWARMS/USDT:USDT | +13.63% | $1,576,041.67 |
+| BSB/USDT:USDT | +6.86% | $39,194,721.49 |
+| FHE/USDT:USDT | +6.57% | $7,634,437.93 |
+| MERL/USDT:USDT | +4.49% | $3,783,904.58 |
+| LUNC/USDT:USDT | +4.24% | $66,051,745.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.81% | +4.91% |
-| LUNC/USDT:USDT | below_1h_threshold | +4.11% | +4.21% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +2.73% | +2.83% |
-| ENA/USDT:USDT | below_1h_threshold | +1.97% | +2.07% |
-| FET/USDT:USDT | below_1h_threshold | +1.93% | +2.03% |
+| LUNC/USDT:USDT | below_1h_threshold | +4.28% | +4.55% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.92% | +4.19% |
+| MERL/USDT:USDT | below_1h_threshold | +3.78% | +4.06% |
+| M/USDT:USDT | below_1h_threshold | +3.68% | +3.95% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +2.52% | +2.79% |
 
 ## 4. 次に見るべき不足
 
