@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T03:37:25.799852+00:00
+- generated_at: 2026-05-05T03:42:19.399966+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3301**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T03:37:23.731498+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=80808.0
-- Funnel: target 765 → liquid 206 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.5 >= 65=1
+- 更新: 2026-05-05T03:42:16.989576+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=80876.7
+- Funnel: target 765 → liquid 206 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.1 >= 65=1, 4h RSI 87.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +83.03% | $4,884,406.13 |
-| 4/USDT:USDT | +25.92% | $1,910,985.11 |
-| NOT/USDT:USDT | +21.86% | $1,765,563.33 |
-| TONCOIN/USDT:USDT | +21.24% | $61,831,695.49 |
-| RAVE/USDT:USDT | +18.32% | $63,077,560.66 |
+| DOGS/USDT:USDT | +80.20% | $4,965,427.73 |
+| 4/USDT:USDT | +23.43% | $1,931,022.04 |
+| NOT/USDT:USDT | +22.33% | $1,789,728.30 |
+| TONCOIN/USDT:USDT | +21.26% | $61,951,300.96 |
+| FHE/USDT:USDT | +20.49% | $3,394,562.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_relative_strength | +5.15% | +4.79% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.71% | +2.34% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.85% | +1.48% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.25% | +0.88% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.22% | +0.85% |
+| FHE/USDT:USDT | below_1h_threshold | +2.53% | +2.08% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.79% | +1.34% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.76% | +1.31% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.31% | +0.86% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.29% | +0.84% |
 
 ## 4. 次に見るべき不足
 
