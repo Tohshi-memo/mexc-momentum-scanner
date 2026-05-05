@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-05T18:47:48.730144+00:00
+- generated_at: 2026-05-05T18:52:48.589059+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3373**
+- closed shadow trades: **3374**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.50% / filled 20/20。**
-- 全期間 MARKET基準: n=3373, expectancy=-0.15%
+- 全期間 MARKET基準: n=3374, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=+1.50%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,7 +23,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_2PCT | 18/20 | 90.0% | +2.01% | **+1.81%** |
 | MARKET | 20/20 | 100.0% | +1.50% | **+1.50%** |
-| ASK | 20/20 | 100.0% | +1.45% | **+1.45%** |
+| ASK | 20/20 | 100.0% | +1.46% | **+1.46%** |
 | LIMIT_1PCT | 19/20 | 95.0% | +1.32% | **+1.26%** |
 | LIMIT_6PCT | 6/20 | 30.0% | +1.89% | **+0.57%** |
 
@@ -39,15 +39,15 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$100.84** / 初期 $100.00 (+0.84%)
-- 確定トレード: 17件 (TP 5 / SL 10 / EXP 2)
-- 最新: M/USDT:USDT SL_HIT PnL -3.86% 残高後 $100.84
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$100.33** / 初期 $100.00 (+0.33%)
+- 確定トレード: 18件 (TP 5 / SL 11 / EXP 2)
+- 最新: BSB/USDT:USDT SL_HIT PnL -4.00% 残高後 $100.33
+- 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T18:47:46.808334+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=81449.2
+- 更新: 2026-05-05T18:52:46.699091+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=81448.8
 - Funnel: target 761 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +23.20% | $10,670,240.29 |
-| SWARMS/USDT:USDT | +14.85% | $2,143,109.51 |
-| ASTEROID/USDT:USDT | +5.34% | $3,664,758.05 |
-| LUNANEW/USDT:USDT | +4.30% | $2,526,701.71 |
-| MERL/USDT:USDT | +4.18% | $3,852,865.13 |
+| FHE/USDT:USDT | +21.11% | $10,900,545.56 |
+| SWARMS/USDT:USDT | +14.10% | $2,150,660.03 |
+| ASTEROID/USDT:USDT | +5.84% | $3,686,471.42 |
+| MERL/USDT:USDT | +4.34% | $3,853,266.75 |
+| LUNANEW/USDT:USDT | +4.14% | $2,542,737.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.44% | +4.16% |
-| BSB/USDT:USDT | below_1h_threshold | +3.19% | +2.91% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.08% | +2.80% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.62% | +2.34% |
-| STX/USDT:USDT | below_1h_threshold | +2.58% | +2.30% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.23% | +2.95% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.12% | +2.84% |
+| BSB/USDT:USDT | below_1h_threshold | +3.11% | +2.83% |
+| FHE/USDT:USDT | below_1h_threshold | +2.80% | +2.53% |
+| STX/USDT:USDT | below_1h_threshold | +2.45% | +2.17% |
 
 ## 4. 次に見るべき不足
 
