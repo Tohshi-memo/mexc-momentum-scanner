@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T03:02:36.584429+00:00
+- generated_at: 2026-05-05T03:07:20.053228+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3299**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T03:02:34.655429+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80474.1
-- Funnel: target 765 → liquid 206 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-05T03:07:17.959679+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=80462.1
+- Funnel: target 765 → liquid 206 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +85.31% | $3,873,671.27 |
-| RAVE/USDT:USDT | +20.81% | $62,347,765.77 |
-| TONCOIN/USDT:USDT | +20.54% | $59,368,472.64 |
-| NOT/USDT:USDT | +17.83% | $1,618,698.41 |
-| FHE/USDT:USDT | +17.61% | $3,352,967.56 |
+| DOGS/USDT:USDT | +83.26% | $4,062,114.38 |
+| TONCOIN/USDT:USDT | +21.13% | $59,758,072.61 |
+| FHE/USDT:USDT | +19.09% | $3,355,204.20 |
+| RAVE/USDT:USDT | +18.29% | $62,544,607.70 |
+| NOT/USDT:USDT | +17.36% | $1,635,231.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGS/USDT:USDT | below_1h_threshold | +4.16% | +4.21% |
-| 4/USDT:USDT | below_1h_threshold | +3.04% | +3.09% |
-| NOT/USDT:USDT | below_1h_threshold | +1.57% | +1.62% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +0.98% | +1.03% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +0.76% | +0.81% |
+| DOGS/USDT:USDT | below_1h_threshold | +3.48% | +3.55% |
+| FHE/USDT:USDT | below_1h_threshold | +1.46% | +1.53% |
+| NOT/USDT:USDT | below_1h_threshold | +1.25% | +1.31% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +0.99% | +1.06% |
+| QUBIC/USDT:USDT | below_1h_threshold | +0.88% | +0.95% |
 
 ## 4. 次に見るべき不足
 
