@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T15:22:32.393678+00:00
+- generated_at: 2026-05-05T15:27:35.659888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3361**
 
@@ -46,31 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T15:22:30.108739+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=81496.3
-- Funnel: target 765 → liquid 195 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-05T15:27:33.333810+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=81521.5
+- Funnel: target 765 → liquid 195 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.4 >= 65=1, 4h RSI 67.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +74.03% | $27,154,260.54 |
-| LAB/USDT:USDT | +50.05% | $105,324,649.66 |
-| FHE/USDT:USDT | +37.40% | $6,062,677.67 |
-| HIVE/USDT:USDT | +33.19% | $8,968,097.80 |
-| TONCOIN/USDT:USDT | +24.35% | $131,526,534.24 |
+| DOGS/USDT:USDT | +74.29% | $27,247,635.99 |
+| LAB/USDT:USDT | +51.07% | $105,775,290.61 |
+| FHE/USDT:USDT | +37.36% | $6,103,128.68 |
+| HIVE/USDT:USDT | +33.96% | $9,051,606.87 |
+| M/USDT:USDT | +24.47% | $8,981,432.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.21% | +2.95% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.17% | +2.91% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.57% | +2.31% |
-| FHE/USDT:USDT | below_1h_threshold | +2.00% | +1.74% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.80% | +1.54% |
+| UB/USDT:USDT | below_1h_threshold | +4.28% | +3.99% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.88% | +2.59% |
+| FHE/USDT:USDT | below_1h_threshold | +2.07% | +1.78% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.98% | +1.69% |
+| VELO/USDT:USDT | below_1h_threshold | +1.63% | +1.34% |
 
 ## 4. 次に見るべき不足
 
