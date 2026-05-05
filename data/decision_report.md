@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T10:07:22.245119+00:00
+- generated_at: 2026-05-05T10:12:16.135139+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3344**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T10:07:20.343261+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=80650.9
-- Funnel: target 765 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-05T10:12:14.004240+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=80639.3
+- Funnel: target 765 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +103.85% | $17,117,067.16 |
-| LAB/USDT:USDT | +48.96% | $89,547,161.15 |
-| FHE/USDT:USDT | +36.29% | $4,634,275.54 |
-| HIVE/USDT:USDT | +33.44% | $4,435,301.30 |
-| TONCOIN/USDT:USDT | +27.25% | $87,332,243.63 |
+| DOGS/USDT:USDT | +93.45% | $17,317,475.24 |
+| HIVE/USDT:USDT | +39.97% | $4,512,617.00 |
+| LAB/USDT:USDT | +37.40% | $91,461,743.62 |
+| FHE/USDT:USDT | +33.78% | $4,654,792.31 |
+| TONCOIN/USDT:USDT | +27.55% | $87,694,437.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGS/USDT:USDT | below_1h_threshold | +3.32% | +3.19% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.98% | +1.85% |
-| ENA/USDT:USDT | below_1h_threshold | +1.37% | +1.24% |
-| NOT/USDT:USDT | below_1h_threshold | +1.24% | +1.11% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.10% | +0.98% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.32% | +1.21% |
+| SPACE/USDT:USDT | below_1h_threshold | +0.83% | +0.72% |
+| INJ/USDT:USDT | below_1h_threshold | +0.75% | +0.64% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.61% | +0.50% |
+| CHZ/USDT:USDT | below_1h_threshold | +0.52% | +0.41% |
 
 ## 4. 次に見るべき不足
 
