@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T18:37:27.309973+00:00
+- generated_at: 2026-05-05T18:42:32.282075+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3373**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T18:37:25.271440+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=81451.1
+- 更新: 2026-05-05T18:42:30.315181+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=81438.2
 - Funnel: target 761 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +21.69% | $10,264,150.44 |
-| SWARMS/USDT:USDT | +13.29% | $2,126,538.79 |
-| ASTEROID/USDT:USDT | +5.37% | $3,623,897.55 |
-| DOGS/USDT:USDT | +4.91% | $30,318,968.33 |
-| MERL/USDT:USDT | +4.62% | $3,848,673.33 |
+| FHE/USDT:USDT | +20.53% | $10,482,287.83 |
+| SWARMS/USDT:USDT | +14.67% | $2,134,387.27 |
+| ASTEROID/USDT:USDT | +6.02% | $3,647,281.27 |
+| MERL/USDT:USDT | +4.67% | $3,851,387.55 |
+| LUNANEW/USDT:USDT | +4.22% | $2,515,583.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +3.16% | +2.88% |
-| BSB/USDT:USDT | below_1h_threshold | +2.74% | +2.46% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.87% | +1.59% |
-| MERL/USDT:USDT | below_1h_threshold | +1.72% | +1.44% |
-| AIN/USDT:USDT | below_1h_threshold | +1.60% | +1.32% |
+| BSB/USDT:USDT | below_1h_threshold | +2.96% | +2.69% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.73% | +2.47% |
+| DASH/USDT:USDT | below_1h_threshold | +2.29% | +2.02% |
+| FHE/USDT:USDT | below_1h_threshold | +2.10% | +1.83% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.74% | +1.48% |
 
 ## 4. 次に見るべき不足
 
