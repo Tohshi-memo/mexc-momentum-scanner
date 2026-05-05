@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T17:37:41.862401+00:00
+- generated_at: 2026-05-05T17:42:29.515253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3371**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T17:37:37.009568+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=81324.1
+- 更新: 2026-05-05T17:42:24.188640+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81268.2
 - Funnel: target 761 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.6 >= 65=1
+- Strict後reject: 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +13.02% | $8,939,023.46 |
-| SWARMS/USDT:USDT | +10.61% | $2,068,850.47 |
-| ASTEROID/USDT:USDT | +9.07% | $3,499,981.57 |
-| LUNC/USDT:USDT | +8.32% | $66,783,338.89 |
-| TAG/USDT:USDT | +6.83% | $10,656,088.79 |
+| SWARMS/USDT:USDT | +12.66% | $2,081,834.17 |
+| FHE/USDT:USDT | +11.74% | $9,022,648.36 |
+| ASTEROID/USDT:USDT | +8.39% | $3,541,387.48 |
+| LUNC/USDT:USDT | +7.73% | $67,103,846.69 |
+| LUNANEW/USDT:USDT | +6.94% | $2,233,001.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.53% | +4.43% |
-| FHE/USDT:USDT | below_1h_threshold | +4.39% | +4.29% |
-| LUNC/USDT:USDT | below_1h_threshold | +4.03% | +3.93% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +4.00% | +3.90% |
-| ORDI/USDT:USDT | below_1h_threshold | +3.19% | +3.09% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +4.60% | +4.57% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.37% | +3.35% |
+| LAB/USDT:USDT | below_1h_threshold | +3.33% | +3.30% |
+| FHE/USDT:USDT | below_1h_threshold | +3.11% | +3.08% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.02% | +2.99% |
 
 ## 4. 次に見るべき不足
 
