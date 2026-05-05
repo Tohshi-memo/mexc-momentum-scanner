@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T20:47:52.100917+00:00
+- generated_at: 2026-05-05T20:53:05.689558+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3384**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T20:47:46.973526+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81549.9
-- Funnel: target 760 → liquid 188 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 84.5 >= 65=1, 4h RSI 71.5 >= 65=1
+- 更新: 2026-05-05T20:52:59.826375+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81578.8
+- Funnel: target 760 → liquid 189 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.3 >= 65=2, 4h RSI 84.8 >= 65=1, 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +37.32% | $16,442,151.53 |
-| MAVIA/USDT:USDT | +23.93% | $1,025,994.06 |
-| SWARMS/USDT:USDT | +20.77% | $2,229,863.85 |
-| SMCISTOCK/USDT:USDT | +18.28% | $3,876,230.02 |
-| ZEC/USDT:USDT | +13.50% | $487,133,567.33 |
+| FHE/USDT:USDT | +38.47% | $16,736,667.12 |
+| MAVIA/USDT:USDT | +24.28% | $1,050,357.06 |
+| SWARMS/USDT:USDT | +20.50% | $2,237,279.56 |
+| SMCISTOCK/USDT:USDT | +16.41% | $4,076,995.95 |
+| ZEC/USDT:USDT | +13.67% | $497,433,261.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_1h_threshold | +4.97% | +4.97% |
-| FHE/USDT:USDT | below_1h_threshold | +4.19% | +4.20% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +4.19% |
-| DASH/USDT:USDT | below_1h_threshold | +3.83% | +3.83% |
-| MAVIA/USDT:USDT | below_1h_threshold | +3.66% | +3.67% |
+| AIN/USDT:USDT | below_1h_threshold | +4.76% | +4.73% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.74% | +4.71% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.72% | +4.69% |
+| MAVIA/USDT:USDT | below_1h_threshold | +3.96% | +3.93% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.45% | +3.42% |
 
 ## 4. 次に見るべき不足
 
