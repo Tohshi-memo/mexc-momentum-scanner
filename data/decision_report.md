@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T03:52:17.157892+00:00
+- generated_at: 2026-05-05T03:57:22.057204+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3303**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T03:52:14.833795+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=80811.1
+- 更新: 2026-05-05T03:57:19.675108+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=80808.4
 - Funnel: target 765 → liquid 206 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 89.2 >= 65=1
+- Strict後reject: 4h RSI 87.9 >= 65=1, 4h RSI 87.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +72.89% | $5,166,929.69 |
-| NOT/USDT:USDT | +28.84% | $1,944,364.53 |
-| 4/USDT:USDT | +20.95% | $1,990,432.60 |
-| TONCOIN/USDT:USDT | +20.67% | $62,269,464.36 |
-| FHE/USDT:USDT | +19.05% | $3,407,452.10 |
+| DOGS/USDT:USDT | +74.75% | $5,364,836.41 |
+| NOT/USDT:USDT | +23.16% | $2,124,745.94 |
+| 4/USDT:USDT | +22.90% | $2,006,496.50 |
+| FHE/USDT:USDT | +20.49% | $3,410,097.53 |
+| TONCOIN/USDT:USDT | +19.95% | $62,406,779.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_1h_threshold | +2.33% | +1.96% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.79% | +1.42% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.74% | +1.37% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.48% | +1.11% |
-| FHE/USDT:USDT | below_1h_threshold | +1.46% | +1.10% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.03% | +2.67% |
+| FHE/USDT:USDT | below_1h_threshold | +2.65% | +2.29% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.20% | +1.83% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.06% | +1.70% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.54% | +1.18% |
 
 ## 4. 次に見るべき不足
 
