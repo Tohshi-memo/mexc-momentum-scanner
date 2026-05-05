@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T01:21:16.660090+00:00
+- generated_at: 2026-05-05T01:23:21.283556+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3284**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T01:21:14.776428+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80171.1
+- 更新: 2026-05-05T01:23:19.740407+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80172.4
 - Funnel: target 761 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +29.80% | $60,154,688.21 |
-| FHE/USDT:USDT | +21.14% | $3,100,512.45 |
-| TONCOIN/USDT:USDT | +19.43% | $50,234,671.14 |
-| PLAY/USDT:USDT | +13.26% | $2,688,730.22 |
-| NOT/USDT:USDT | +11.36% | $1,103,098.92 |
+| RAVE/USDT:USDT | +29.20% | $60,225,163.38 |
+| FHE/USDT:USDT | +22.02% | $3,108,988.84 |
+| TONCOIN/USDT:USDT | +19.78% | $50,335,552.63 |
+| PLAY/USDT:USDT | +12.75% | $2,688,871.20 |
+| NOT/USDT:USDT | +12.60% | $1,108,079.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLFI/USDT:USDT | below_1h_threshold | +2.69% | +2.64% |
-| TST/USDT:USDT | below_1h_threshold | +2.65% | +2.60% |
+| TST/USDT:USDT | below_1h_threshold | +4.29% | +4.24% |
+| WLFI/USDT:USDT | below_1h_threshold | +2.53% | +2.48% |
 | ZEREBRO/USDT:USDT | below_1h_threshold | +2.51% | +2.46% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
-| TIA/USDT:USDT | below_1h_threshold | +1.58% | +1.53% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.94% | +1.88% |
+| TIA/USDT:USDT | below_1h_threshold | +1.72% | +1.67% |
 
 ## 4. 次に見るべき不足
 
