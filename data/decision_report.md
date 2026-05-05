@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T12:12:28.073642+00:00
+- generated_at: 2026-05-05T12:14:29.570527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3347**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T12:12:26.089778+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=81056.7
+- 更新: 2026-05-05T12:14:28.014582+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=81060.5
 - Funnel: target 765 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +94.83% | $20,924,921.72 |
-| HIVE/USDT:USDT | +42.98% | $7,177,308.25 |
-| LAB/USDT:USDT | +36.86% | $97,283,971.40 |
-| TONCOIN/USDT:USDT | +28.40% | $102,801,176.00 |
-| M/USDT:USDT | +27.22% | $7,559,964.47 |
+| DOGS/USDT:USDT | +92.77% | $20,990,484.09 |
+| HIVE/USDT:USDT | +43.64% | $7,184,109.99 |
+| LAB/USDT:USDT | +37.87% | $97,435,632.70 |
+| TONCOIN/USDT:USDT | +28.52% | $102,970,503.45 |
+| M/USDT:USDT | +27.40% | $7,565,433.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.72% | +3.61% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.62% | +1.52% |
-| MERL/USDT:USDT | below_1h_threshold | +1.62% | +1.51% |
-| M/USDT:USDT | below_1h_threshold | +1.19% | +1.08% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.06% |
+| UB/USDT:USDT | below_1h_threshold | +2.98% | +2.87% |
+| MERL/USDT:USDT | below_1h_threshold | +1.67% | +1.56% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.24% | +1.13% |
+| M/USDT:USDT | below_1h_threshold | +1.23% | +1.11% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.15% | +1.04% |
 
 ## 4. 次に見るべき不足
 
