@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T21:47:02.798040+00:00
+- generated_at: 2026-05-05T21:49:44.916457+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3391**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T21:47:00.446740+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=81383.4
-- Funnel: target 759 → liquid 188 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 88.0 >= 65=1, 4h RSI 68.5 >= 65=1
+- 更新: 2026-05-05T21:49:42.551409+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=81366.5
+- Funnel: target 759 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.2 >= 65=1, 4h RSI 68.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +47.81% | $20,211,089.64 |
-| MAVIA/USDT:USDT | +29.69% | $1,289,233.22 |
-| SWARMS/USDT:USDT | +21.75% | $2,319,320.84 |
-| ZEC/USDT:USDT | +21.71% | $575,287,648.11 |
-| SMCISTOCK/USDT:USDT | +19.79% | $4,827,629.17 |
+| FHE/USDT:USDT | +36.71% | $20,647,273.28 |
+| MAVIA/USDT:USDT | +29.57% | $1,296,554.21 |
+| ZEC/USDT:USDT | +22.14% | $578,360,002.29 |
+| SWARMS/USDT:USDT | +21.16% | $2,326,495.58 |
+| SMCISTOCK/USDT:USDT | +19.22% | $4,851,155.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SWARMS/USDT:USDT | below_1h_threshold | +4.22% | +4.50% |
-| FHE/USDT:USDT | below_1h_threshold | +4.21% | +4.48% |
-| MAVIA/USDT:USDT | below_1h_threshold | +3.86% | +4.14% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.69% | +3.96% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.97% | +3.25% |
+| EIGEN/USDT:USDT | below_1h_threshold | +4.98% | +5.28% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.32% | +4.61% |
+| MAVIA/USDT:USDT | below_1h_threshold | +3.77% | +4.07% |
+| SWARMS/USDT:USDT | below_1h_threshold | +3.57% | +3.87% |
+| DOGS/USDT:USDT | below_1h_threshold | +3.10% | +3.40% |
 
 ## 4. 次に見るべき不足
 
