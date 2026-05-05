@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T20:17:17.799136+00:00
+- generated_at: 2026-05-05T20:22:29.230298+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3380**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T20:17:15.675311+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81584.0
-- Funnel: target 760 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1
+- 更新: 2026-05-05T20:22:26.351692+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81526.1
+- Funnel: target 760 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1, 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +36.90% | $14,662,949.73 |
-| STX/USDT:USDT | +19.21% | $12,622,649.82 |
-| SWARMS/USDT:USDT | +15.69% | $2,180,605.78 |
-| SMCISTOCK/USDT:USDT | +12.41% | $1,501,239.99 |
-| ZEC/USDT:USDT | +7.27% | $438,702,378.72 |
+| FHE/USDT:USDT | +38.73% | $15,056,735.30 |
+| SWARMS/USDT:USDT | +17.33% | $2,186,762.23 |
+| STX/USDT:USDT | +16.25% | $13,462,077.42 |
+| SMCISTOCK/USDT:USDT | +12.77% | $1,969,583.63 |
+| ZEC/USDT:USDT | +8.38% | $444,535,372.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +4.43% | +4.39% |
-| FHE/USDT:USDT | below_1h_threshold | +3.88% | +3.84% |
-| ICP/USDT:USDT | below_1h_threshold | +3.74% | +3.70% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.72% | +2.68% |
-| LAB/USDT:USDT | below_1h_threshold | +2.00% | +1.97% |
+| ICP/USDT:USDT | below_1h_threshold | +4.93% | +4.97% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.67% | +3.71% |
+| 4/USDT:USDT | below_1h_threshold | +3.22% | +3.25% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.54% |
+| SWARMS/USDT:USDT | below_1h_threshold | +2.48% | +2.52% |
 
 ## 4. 次に見るべき不足
 
