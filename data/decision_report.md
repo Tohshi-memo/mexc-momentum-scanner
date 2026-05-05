@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T22:07:25.555457+00:00
+- generated_at: 2026-05-05T22:12:22.676685+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3394**
 
@@ -46,32 +46,31 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T22:07:23.008625+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=81450.1
-- Funnel: target 759 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
+- 更新: 2026-05-05T22:12:20.492399+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=81322.2
+- Funnel: target 759 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +34.53% | $22,497,760.86 |
-| MAVIA/USDT:USDT | +27.40% | $1,352,595.39 |
-| SWARMS/USDT:USDT | +21.67% | $2,310,573.43 |
-| ZEC/USDT:USDT | +21.39% | $573,255,944.87 |
-| SMCISTOCK/USDT:USDT | +18.50% | $4,939,183.49 |
+| FHE/USDT:USDT | +35.14% | $22,784,579.73 |
+| MAVIA/USDT:USDT | +24.84% | $1,371,438.80 |
+| ZEC/USDT:USDT | +21.54% | $574,988,122.63 |
+| SWARMS/USDT:USDT | +21.36% | $2,317,099.91 |
+| SMCISTOCK/USDT:USDT | +18.03% | $4,940,434.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +1.83% | +1.72% |
-| LAB/USDT:USDT | below_1h_threshold | +1.70% | +1.59% |
-| 4/USDT:USDT | below_1h_threshold | +1.49% | +1.38% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.42% | +1.32% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.06% |
+| DOGS/USDT:USDT | below_1h_threshold | +4.86% | +4.91% |
+| STRK/USDT:USDT | below_1h_threshold | +2.11% | +2.16% |
+| LAB/USDT:USDT | below_1h_threshold | +1.18% | +1.23% |
+| TAO/USDT:USDT | below_1h_threshold | +1.15% | +1.20% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.13% | +1.18% |
 
 ## 4. 次に見るべき不足
 
