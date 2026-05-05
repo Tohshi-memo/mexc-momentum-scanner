@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T21:32:48.454113+00:00
+- generated_at: 2026-05-05T21:37:32.375976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3390**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T21:32:46.050422+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=81375.5
-- Funnel: target 759 → liquid 187 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 87.4 >= 65=1
+- 更新: 2026-05-05T21:37:26.659211+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=81343.1
+- Funnel: target 759 → liquid 188 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.8 >= 65=1, 4h RSI 87.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +45.44% | $19,450,619.96 |
-| MAVIA/USDT:USDT | +29.75% | $1,243,746.96 |
-| SWARMS/USDT:USDT | +21.53% | $2,278,865.67 |
-| SMCISTOCK/USDT:USDT | +20.26% | $4,692,350.90 |
-| ZEC/USDT:USDT | +19.86% | $557,081,319.38 |
+| FHE/USDT:USDT | +45.79% | $19,667,549.63 |
+| MAVIA/USDT:USDT | +29.52% | $1,263,215.34 |
+| SWARMS/USDT:USDT | +23.32% | $2,292,626.85 |
+| SMCISTOCK/USDT:USDT | +20.51% | $4,760,185.42 |
+| ZEC/USDT:USDT | +20.01% | $562,868,012.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SWARMS/USDT:USDT | below_1h_threshold | +3.91% | +4.20% |
-| MAVIA/USDT:USDT | below_1h_threshold | +3.91% | +4.20% |
-| DASH/USDT:USDT | below_1h_threshold | +2.95% | +3.23% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.88% | +3.16% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.92% |
+| LAB/USDT:USDT | below_1h_threshold | +3.86% | +4.19% |
+| DOGS/USDT:USDT | below_1h_threshold | +3.83% | +4.16% |
+| MAVIA/USDT:USDT | below_1h_threshold | +3.72% | +4.05% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.20% | +3.52% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.16% | +3.48% |
 
 ## 4. 次に見るべき不足
 
