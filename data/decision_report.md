@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-05T13:32:28.561730+00:00
+- generated_at: 2026-05-05T13:37:30.260057+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3352**
+- closed shadow trades: **3353**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.77% / filled 20/20。**
-- 全期間 MARKET基準: n=3352, expectancy=-0.16%
-- 直近20件 MARKET基準: n=20, expectancy=+0.77%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.37% / filled 20/20。**
+- 全期間 MARKET基準: n=3353, expectancy=-0.16%
+- 直近20件 MARKET基準: n=20, expectancy=+1.37%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.77% | **+0.77%** |
+| MARKET | 20/20 | 100.0% | +1.37% | **+1.37%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +0.77% | **+0.77%** |
-| MARKET | 20/20 | 100.0% | +0.77% | **+0.77%** |
-| LIMIT_1PCT | 19/20 | 95.0% | +0.55% | **+0.52%** |
-| LIMIT_5PCT | 10/20 | 50.0% | +0.95% | **+0.48%** |
-| LIMIT_ATR | 11/20 | 55.0% | +0.63% | **+0.34%** |
+| ASK | 20/20 | 100.0% | +1.37% | **+1.37%** |
+| MARKET | 20/20 | 100.0% | +1.37% | **+1.37%** |
+| LIMIT_1PCT | 19/20 | 95.0% | +1.13% | **+1.07%** |
+| LIMIT_5PCT | 9/20 | 45.0% | +0.95% | **+0.43%** |
+| LIMIT_ATR | 10/20 | 50.0% | +0.76% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +0.62% | **+0.62%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.49% | **+0.35%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.55% | **+0.31%** |
+| LIMIT_10PCT_LONG | 3/20 | 15.0% | +2.07% | **+0.31%** |
 | ASK_LONG | 20/20 | 100.0% | +0.21% | **+0.21%** |
-| LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
+| LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.16% | **+0.13%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +0.44% | **+0.11%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,30 +46,31 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T13:32:26.608738+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=81475.4
-- Funnel: target 765 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-05T13:37:25.787770+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=81392.6
+- Funnel: target 765 → liquid 196 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +97.20% | $22,755,712.23 |
-| LAB/USDT:USDT | +52.36% | $101,427,666.83 |
-| HIVE/USDT:USDT | +36.71% | $7,954,833.35 |
-| FHE/USDT:USDT | +31.13% | $5,617,835.03 |
-| TONCOIN/USDT:USDT | +27.71% | $112,189,963.69 |
+| DOGS/USDT:USDT | +85.60% | $23,303,321.64 |
+| LAB/USDT:USDT | +52.36% | $101,646,531.06 |
+| HIVE/USDT:USDT | +36.77% | $8,006,522.49 |
+| FHE/USDT:USDT | +31.22% | $5,626,005.07 |
+| TONCOIN/USDT:USDT | +27.98% | $112,430,401.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.52% |
-| BLEND/USDT:USDT | below_1h_threshold | +2.86% | +2.55% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.16% |
-| JUP/USDT:USDT | below_1h_threshold | +2.37% | +2.06% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.18% | +1.87% |
+| INTCSTOCK/USDT:USDT | below_relative_strength | +5.07% | +4.86% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +4.09% | +3.88% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.03% | +3.82% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.66% |
+| JUP/USDT:USDT | below_1h_threshold | +2.75% | +2.54% |
 
 ## 4. 次に見るべき不足
 
