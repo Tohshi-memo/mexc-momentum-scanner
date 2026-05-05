@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T19:22:27.681081+00:00
+- generated_at: 2026-05-05T19:27:50.158289+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3374**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T19:22:25.690907+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81503.0
+- 更新: 2026-05-05T19:27:48.217538+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81529.2
 - Funnel: target 760 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +27.18% | $11,773,032.08 |
-| SWARMS/USDT:USDT | +16.37% | $2,162,663.19 |
-| TST/USDT:USDT | +5.67% | $6,197,850.08 |
-| H/USDT:USDT | +5.37% | $10,400,440.47 |
-| VIRTUAL/USDT:USDT | +4.46% | $6,635,777.14 |
+| FHE/USDT:USDT | +26.66% | $11,957,634.65 |
+| SWARMS/USDT:USDT | +14.62% | $2,173,075.37 |
+| TONCOIN/USDT:USDT | +6.07% | $165,179,184.90 |
+| TST/USDT:USDT | +5.92% | $6,218,993.45 |
+| H/USDT:USDT | +5.16% | $10,411,900.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TST/USDT:USDT | below_1h_threshold | +3.06% | +3.01% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.54% | +2.49% |
-| FHE/USDT:USDT | below_1h_threshold | +2.27% | +2.23% |
-| H/USDT:USDT | below_1h_threshold | +2.20% | +2.15% |
-| STX/USDT:USDT | below_1h_threshold | +1.92% | +1.87% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.63% | +3.55% |
+| TST/USDT:USDT | below_1h_threshold | +3.31% | +3.23% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.91% | +2.83% |
+| STX/USDT:USDT | below_1h_threshold | +2.27% | +2.18% |
+| H/USDT:USDT | below_1h_threshold | +2.15% | +2.07% |
 
 ## 4. 次に見るべき不足
 
