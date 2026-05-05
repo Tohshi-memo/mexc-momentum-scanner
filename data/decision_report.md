@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T05:02:34.306535+00:00
+- generated_at: 2026-05-05T05:07:19.061244+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3309**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T05:02:32.416611+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=80849.2
+- 更新: 2026-05-05T05:07:17.077727+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=80806.8
 - Funnel: target 765 → liquid 205 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +80.11% | $7,048,309.52 |
-| FHE/USDT:USDT | +26.57% | $3,563,137.97 |
-| PRL/USDT:USDT | +17.67% | $1,024,150.10 |
-| TONCOIN/USDT:USDT | +17.46% | $64,415,758.50 |
-| NOT/USDT:USDT | +15.06% | $2,345,995.09 |
+| DOGS/USDT:USDT | +77.20% | $7,163,428.14 |
+| FHE/USDT:USDT | +29.92% | $3,587,104.96 |
+| PRL/USDT:USDT | +17.89% | $1,091,461.84 |
+| TONCOIN/USDT:USDT | +17.14% | $64,515,090.89 |
+| NOT/USDT:USDT | +16.24% | $2,358,481.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +1.58% | +1.59% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.16% | +1.16% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
-| XMR/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.96% | +2.02% |
+| FHE/USDT:USDT | below_1h_threshold | +1.94% | +1.99% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.12% | +1.17% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.01% | +1.06% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
 
 ## 4. 次に見るべき不足
 
