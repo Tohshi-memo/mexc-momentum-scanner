@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-04T23:57:11.924274+00:00
+- generated_at: 2026-05-05T00:02:34.576582+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3279**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-04T23:57:09.568682+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=79809.5
-- Funnel: target 760 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.7 >= 65=1, 4h RSI 65.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-05T00:02:32.642723+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79830.3
+- Funnel: target 760 → liquid 201 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +25.78% | $56,102,630.97 |
-| NAORIS/USDT:USDT | +23.92% | $4,573,278.04 |
-| B3/USDT:USDT | +17.85% | $1,119,772.31 |
-| FHE/USDT:USDT | +14.26% | $2,609,599.09 |
-| TONCOIN/USDT:USDT | +13.71% | $39,983,053.05 |
+| RAVE/USDT:USDT | +27.49% | $56,082,928.67 |
+| NAORIS/USDT:USDT | +21.00% | $4,652,502.42 |
+| FHE/USDT:USDT | +15.52% | $2,577,213.31 |
+| B3/USDT:USDT | +14.07% | $1,133,172.27 |
+| TONCOIN/USDT:USDT | +12.53% | $40,260,617.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.25% | +2.53% |
-| 4/USDT:USDT | below_1h_threshold | +1.96% | +2.23% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.70% | +1.97% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.42% | +1.70% |
-| IP/USDT:USDT | below_1h_threshold | +1.25% | +1.52% |
+| TST/USDT:USDT | below_1h_threshold | +0.89% | +0.88% |
+| IP/USDT:USDT | below_1h_threshold | +0.79% | +0.79% |
+| FHE/USDT:USDT | below_1h_threshold | +0.57% | +0.56% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.48% | +0.47% |
 
 ## 4. 次に見るべき不足
 
