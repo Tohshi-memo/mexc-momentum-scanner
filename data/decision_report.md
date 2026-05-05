@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T15:37:52.698835+00:00
+- generated_at: 2026-05-05T15:42:48.702908+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3361**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T15:37:50.055731+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=81575.8
-- Funnel: target 765 → liquid 195 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-05-05T15:42:46.156126+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=81553.1
+- Funnel: target 765 → liquid 195 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1, 4h RSI 72.6 >= 65=1
+- Strict後reject: 4h RSI 68.4 >= 65=1, 4h RSI 65.1 >= 65=1, 4h RSI 73.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +73.83% | $27,487,573.02 |
-| LAB/USDT:USDT | +49.36% | $106,748,260.11 |
-| FHE/USDT:USDT | +42.28% | $6,360,993.25 |
-| HIVE/USDT:USDT | +26.34% | $9,247,479.05 |
-| M/USDT:USDT | +25.71% | $9,051,140.84 |
+| DOGS/USDT:USDT | +74.97% | $27,549,122.16 |
+| LAB/USDT:USDT | +50.72% | $107,317,880.36 |
+| FHE/USDT:USDT | +43.44% | $6,448,445.44 |
+| HIVE/USDT:USDT | +25.59% | $9,294,770.64 |
+| TONCOIN/USDT:USDT | +24.47% | $142,000,884.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +4.09% | +3.73% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +4.05% | +3.70% |
-| UB/USDT:USDT | below_1h_threshold | +3.47% | +3.11% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.53% | +2.17% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.58% | +1.22% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +4.53% | +4.20% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.58% | +3.25% |
+| UB/USDT:USDT | below_1h_threshold | +3.45% | +3.12% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.37% | +3.04% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +2.50% | +2.17% |
 
 ## 4. 次に見るべき不足
 
