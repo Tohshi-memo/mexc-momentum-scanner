@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T00:22:15.406276+00:00
+- generated_at: 2026-05-05T00:26:54.434330+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3280**
 
@@ -46,30 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T00:22:13.496043+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79892.8
-- Funnel: target 760 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-05T00:26:52.695200+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79855.2
+- Funnel: target 760 → liquid 203 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +33.22% | $57,055,472.94 |
-| FHE/USDT:USDT | +18.68% | $2,610,456.00 |
-| PLAY/USDT:USDT | +11.62% | $2,620,495.13 |
-| TONCOIN/USDT:USDT | +11.27% | $41,410,547.03 |
-| B3/USDT:USDT | +10.81% | $1,142,253.30 |
+| RAVE/USDT:USDT | +34.50% | $57,314,348.17 |
+| FHE/USDT:USDT | +19.51% | $2,617,616.76 |
+| TONCOIN/USDT:USDT | +11.96% | $41,638,594.15 |
+| PLAY/USDT:USDT | +11.58% | $2,641,099.23 |
+| B3/USDT:USDT | +9.75% | $1,143,306.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TST/USDT:USDT | below_1h_threshold | +4.74% | +4.65% |
-| RAVE/USDT:USDT | below_1h_threshold | +4.43% | +4.35% |
-| ENSO/USDT:USDT | below_1h_threshold | +3.75% | +3.67% |
-| FHE/USDT:USDT | below_1h_threshold | +3.44% | +3.36% |
-| ALBSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.42% |
+| ENSO/USDT:USDT | below_1h_threshold | +4.87% | +4.83% |
+| TST/USDT:USDT | below_1h_threshold | +4.77% | +4.74% |
+| FHE/USDT:USDT | below_1h_threshold | +4.17% | +4.14% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
+| ALBSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.10% |
 
 ## 4. 次に見るべき不足
 
