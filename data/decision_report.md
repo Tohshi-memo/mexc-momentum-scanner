@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T02:12:12.547982+00:00
+- generated_at: 2026-05-05T02:17:14.846421+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3291**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T02:12:10.629774+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=80368.8
+- 更新: 2026-05-05T02:17:12.857647+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=80400.0
 - Funnel: target 765 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +44.24% | $2,038,849.59 |
-| TONCOIN/USDT:USDT | +24.02% | $54,329,413.20 |
-| RAVE/USDT:USDT | +23.03% | $61,718,731.65 |
-| NOT/USDT:USDT | +18.90% | $1,401,533.78 |
-| FHE/USDT:USDT | +17.19% | $3,604,128.76 |
+| DOGS/USDT:USDT | +42.70% | $2,185,170.54 |
+| RAVE/USDT:USDT | +22.63% | $61,780,052.11 |
+| TONCOIN/USDT:USDT | +20.47% | $54,888,759.42 |
+| NOT/USDT:USDT | +17.12% | $1,418,480.70 |
+| FHE/USDT:USDT | +16.86% | $3,608,874.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.60% | +1.52% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.56% | +1.48% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.25% | +1.17% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.16% | +1.09% |
-| JTO/USDT:USDT | below_1h_threshold | +0.92% | +0.85% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.26% | +2.15% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.65% | +1.54% |
+| JTO/USDT:USDT | below_1h_threshold | +0.92% | +0.81% |
+| TIA/USDT:USDT | below_1h_threshold | +0.59% | +0.48% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.47% |
 
 ## 4. 次に見るべき不足
 
