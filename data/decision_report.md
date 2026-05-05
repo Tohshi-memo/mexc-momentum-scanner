@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T09:57:33.347866+00:00
+- generated_at: 2026-05-05T10:02:33.211082+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3343**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T09:57:31.196110+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=80539.2
-- Funnel: target 765 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-05T10:02:31.313717+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=80493.1
+- Funnel: target 765 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +98.00% | $16,779,308.14 |
-| LAB/USDT:USDT | +60.76% | $91,854,442.03 |
-| FHE/USDT:USDT | +35.96% | $4,622,520.22 |
-| HIVE/USDT:USDT | +32.04% | $4,414,203.55 |
-| TONCOIN/USDT:USDT | +26.56% | $86,586,621.75 |
+| DOGS/USDT:USDT | +97.68% | $16,929,972.14 |
+| LAB/USDT:USDT | +60.83% | $87,994,006.29 |
+| FHE/USDT:USDT | +37.45% | $4,610,072.86 |
+| HIVE/USDT:USDT | +32.54% | $4,423,401.29 |
+| TONCOIN/USDT:USDT | +25.96% | $86,571,468.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHZ/USDT:USDT | below_1h_threshold | +4.31% | +4.60% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.73% | +4.02% |
-| PRL/USDT:USDT | below_1h_threshold | +3.07% | +3.36% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +2.92% | +3.21% |
-| TURBO/USDT:USDT | below_1h_threshold | +2.81% | +3.11% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.44% | +0.51% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.43% | +0.50% |
+| ENA/USDT:USDT | below_1h_threshold | +0.33% | +0.40% |
+| DOGS/USDT:USDT | below_1h_threshold | +0.26% | +0.33% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.26% | +0.33% |
 
 ## 4. 次に見るべき不足
 
