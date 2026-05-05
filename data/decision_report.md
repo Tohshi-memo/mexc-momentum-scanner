@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T10:32:25.806351+00:00
+- generated_at: 2026-05-05T10:37:12.966608+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3345**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T10:32:23.373772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=80711.2
-- Funnel: target 765 → liquid 199 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.1 >= 65=1, 4h RSI 97.1 >= 65=1
+- 更新: 2026-05-05T10:37:10.790751+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=80770.0
+- Funnel: target 765 → liquid 199 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +107.79% | $17,934,319.56 |
-| HIVE/USDT:USDT | +42.04% | $5,612,370.47 |
-| LAB/USDT:USDT | +37.62% | $95,345,544.97 |
-| FHE/USDT:USDT | +37.03% | $4,709,856.82 |
-| TONCOIN/USDT:USDT | +29.36% | $90,824,814.94 |
+| DOGS/USDT:USDT | +105.74% | $18,200,343.32 |
+| HIVE/USDT:USDT | +42.04% | $5,689,853.13 |
+| LAB/USDT:USDT | +38.12% | $96,167,101.94 |
+| FHE/USDT:USDT | +35.45% | $4,732,328.40 |
+| TONCOIN/USDT:USDT | +29.56% | $91,317,993.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.69% | +2.49% |
-| NOT/USDT:USDT | below_1h_threshold | +2.32% | +2.12% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.22% | +2.02% |
-| MERL/USDT:USDT | below_1h_threshold | +1.95% | +1.75% |
-| M/USDT:USDT | below_1h_threshold | +1.90% | +1.70% |
+| DOGS/USDT:USDT | below_1h_threshold | +4.42% | +4.15% |
+| BLEND/USDT:USDT | below_1h_threshold | +3.14% | +2.87% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.81% | +2.54% |
+| NOT/USDT:USDT | below_1h_threshold | +1.98% | +1.71% |
+| MERL/USDT:USDT | below_1h_threshold | +1.69% | +1.42% |
 
 ## 4. 次に見るべき不足
 
