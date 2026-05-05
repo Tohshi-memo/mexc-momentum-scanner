@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T13:12:22.177335+00:00
+- generated_at: 2026-05-05T13:17:26.294691+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3352**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T13:12:20.240617+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=81548.1
+- 更新: 2026-05-05T13:17:24.315007+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=81517.1
 - Funnel: target 765 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +98.48% | $22,293,430.97 |
-| LAB/USDT:USDT | +52.22% | $99,669,270.73 |
-| HIVE/USDT:USDT | +39.97% | $7,760,211.39 |
-| FHE/USDT:USDT | +30.71% | $5,547,817.48 |
-| TONCOIN/USDT:USDT | +27.66% | $110,046,248.90 |
+| DOGS/USDT:USDT | +98.65% | $22,439,105.93 |
+| LAB/USDT:USDT | +51.03% | $99,995,370.57 |
+| HIVE/USDT:USDT | +40.24% | $7,789,423.48 |
+| FHE/USDT:USDT | +30.15% | $5,566,014.60 |
+| TONCOIN/USDT:USDT | +28.11% | $110,869,297.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JUP/USDT:USDT | below_1h_threshold | +2.59% | +2.19% |
-| LIT/USDT:USDT | below_1h_threshold | +2.10% | +1.70% |
-| FHE/USDT:USDT | below_1h_threshold | +1.30% | +0.90% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.19% | +0.79% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.01% | +0.61% |
+| JUP/USDT:USDT | below_1h_threshold | +1.89% | +1.53% |
+| LIT/USDT:USDT | below_1h_threshold | +1.69% | +1.33% |
+| M/USDT:USDT | below_1h_threshold | +1.48% | +1.11% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.30% | +0.93% |
+| FET/USDT:USDT | below_1h_threshold | +1.24% | +0.88% |
 
 ## 4. 次に見るべき不足
 
