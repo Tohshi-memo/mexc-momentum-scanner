@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-05T16:57:40.178274+00:00
+- generated_at: 2026-05-05T17:02:48.304540+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3368**
+- closed shadow trades: **3369**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.50% / filled 20/20。**
-- 全期間 MARKET基準: n=3368, expectancy=-0.15%
-- 直近20件 MARKET基準: n=20, expectancy=+1.50%
+- 結論: **MARKET SHORTは実行候補。直近EV +2.10% / filled 20/20。**
+- 全期間 MARKET基準: n=3369, expectancy=-0.14%
+- 直近20件 MARKET基準: n=20, expectancy=+2.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.50% | **+1.50%** |
+| MARKET | 20/20 | 100.0% | +2.10% | **+2.10%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT | 17/20 | 85.0% | +1.90% | **+1.61%** |
-| MARKET | 20/20 | 100.0% | +1.50% | **+1.50%** |
-| ASK | 20/20 | 100.0% | +1.50% | **+1.50%** |
-| LIMIT_1PCT | 19/20 | 95.0% | +1.32% | **+1.26%** |
-| LIMIT_ATR | 13/20 | 65.0% | +0.70% | **+0.45%** |
+| LIMIT_2PCT | 17/20 | 85.0% | +2.49% | **+2.11%** |
+| MARKET | 20/20 | 100.0% | +2.10% | **+2.10%** |
+| ASK | 20/20 | 100.0% | +2.10% | **+2.10%** |
+| LIMIT_1PCT | 19/20 | 95.0% | +1.96% | **+1.86%** |
+| LIMIT_ATR | 12/20 | 60.0% | +0.82% | **+0.49%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1618_LONG | 3/20 | 15.0% | +2.59% | **+0.39%** |
-| LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.22% | **+0.22%** |
-| MARKET_LONG | 20/20 | 100.0% | -0.10% | **-0.10%** |
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | -0.17% | **-0.14%** |
-| LIMIT_9PCT_LONG | 2/20 | 10.0% | -1.45% | **-0.15%** |
+| LIMIT_10PCT_LONG | 3/20 | 15.0% | +4.15% | **+0.62%** |
+| LIMIT_FIB1618_LONG | 4/20 | 20.0% | +0.94% | **+0.19%** |
+| LIMIT_9PCT_LONG | 3/20 | 15.0% | -2.30% | **-0.35%** |
+| LIMIT_8PCT_LONG | 10/20 | 50.0% | -0.80% | **-0.40%** |
+| LIMIT_FIB1272_LONG | 9/20 | 45.0% | -0.98% | **-0.44%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T16:57:35.475936+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=81207.6
-- Funnel: target 765 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-05T17:02:46.356685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81260.8
+- Funnel: target 765 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SWARMS/USDT:USDT | +17.14% | $1,929,677.90 |
-| FHE/USDT:USDT | +9.72% | $8,322,613.86 |
-| DOGS/USDT:USDT | +4.55% | $28,977,740.49 |
-| LUNC/USDT:USDT | +3.91% | $68,014,241.36 |
-| MYX/USDT:USDT | +3.13% | $3,472,560.08 |
+| SWARMS/USDT:USDT | +15.86% | $1,834,088.24 |
+| DOGS/USDT:USDT | +7.35% | $29,109,363.05 |
+| FHE/USDT:USDT | +5.26% | $8,333,618.67 |
+| LUNC/USDT:USDT | +4.81% | $63,501,900.57 |
+| LUNANEW/USDT:USDT | +2.95% | $2,032,764.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGS/USDT:USDT | below_1h_threshold | +4.56% | +4.90% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.95% | +4.29% |
-| MYX/USDT:USDT | below_1h_threshold | +3.38% | +3.72% |
-| BSB/USDT:USDT | below_1h_threshold | +2.57% | +2.91% |
-| MERL/USDT:USDT | below_1h_threshold | +2.18% | +2.53% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.22% | +2.20% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +0.63% | +0.61% |
+| VELO/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
 
 ## 4. 次に見るべき不足
 
