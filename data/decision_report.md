@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-05T00:26:54.434330+00:00
+- generated_at: 2026-05-05T00:32:33.892344+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3280**
+- closed shadow trades: **3281**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.70% / filled 20/20。**
-- 全期間 MARKET基準: n=3280, expectancy=-0.16%
-- 直近20件 MARKET基準: n=20, expectancy=+1.70%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.10% / filled 20/20。**
+- 全期間 MARKET基準: n=3281, expectancy=-0.16%
+- 直近20件 MARKET基準: n=20, expectancy=+1.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.70% | **+1.70%** |
+| MARKET | 20/20 | 100.0% | +1.10% | **+1.10%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.70% | **+1.70%** |
-| ASK | 20/20 | 100.0% | +1.64% | **+1.64%** |
-| LIMIT_1PCT | 15/20 | 75.0% | +1.37% | **+1.03%** |
-| LIMIT_BB3S | 3/10 | 30.0% | +2.22% | **+0.67%** |
-| LIMIT_ATR | 13/20 | 65.0% | +0.38% | **+0.25%** |
+| MARKET | 20/20 | 100.0% | +1.10% | **+1.10%** |
+| ASK | 20/20 | 100.0% | +1.04% | **+1.04%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +1.03% | **+0.83%** |
+| LIMIT_BB3S | 3/11 | 27.3% | +2.22% | **+0.60%** |
+| LIMIT_9PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_9PCT_LONG | 5/20 | 25.0% | +4.22% | **+1.05%** |
-| LIMIT_10PCT_LONG | 4/20 | 20.0% | +5.00% | **+1.00%** |
-| LIMIT_7PCT_LONG | 9/20 | 45.0% | +0.76% | **+0.34%** |
-| LIMIT_FIB1618_LONG | 2/20 | 10.0% | +3.34% | **+0.33%** |
-| LIMIT_8PCT_LONG | 7/20 | 35.0% | +0.57% | **+0.20%** |
+| LIMIT_9PCT_LONG | 4/20 | 20.0% | +6.27% | **+1.25%** |
+| LIMIT_10PCT_LONG | 3/20 | 15.0% | +8.00% | **+1.20%** |
+| LIMIT_7PCT_LONG | 8/20 | 40.0% | +1.36% | **+0.54%** |
+| LIMIT_FIB1272_LONG | 13/20 | 65.0% | +0.66% | **+0.43%** |
+| LIMIT_8PCT_LONG | 6/20 | 30.0% | +1.33% | **+0.40%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T00:26:52.695200+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=79855.2
-- Funnel: target 760 → liquid 203 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
+- 更新: 2026-05-05T00:32:31.208623+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79903.5
+- Funnel: target 761 → liquid 203 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.2 >= 65=1, 4h RSI 77.2 >= 65=1, 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +34.50% | $57,314,348.17 |
-| FHE/USDT:USDT | +19.51% | $2,617,616.76 |
-| TONCOIN/USDT:USDT | +11.96% | $41,638,594.15 |
-| PLAY/USDT:USDT | +11.58% | $2,641,099.23 |
-| B3/USDT:USDT | +9.75% | $1,143,306.25 |
+| RAVE/USDT:USDT | +36.11% | $57,683,534.64 |
+| FHE/USDT:USDT | +20.81% | $2,634,201.69 |
+| LAB/USDT:USDT | +14.14% | $102,893,422.60 |
+| TONCOIN/USDT:USDT | +12.35% | $41,731,853.17 |
+| TST/USDT:USDT | +11.92% | $24,169,734.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENSO/USDT:USDT | below_1h_threshold | +4.87% | +4.83% |
-| TST/USDT:USDT | below_1h_threshold | +4.77% | +4.74% |
-| FHE/USDT:USDT | below_1h_threshold | +4.17% | +4.14% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
-| ALBSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.10% |
+| ENSO/USDT:USDT | below_1h_threshold | +4.70% | +4.61% |
+| OL/USDT:USDT | below_1h_threshold | +2.32% | +2.22% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.45% | +1.36% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.44% | +1.34% |
+| ALBSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.29% |
 
 ## 4. 次に見るべき不足
 
