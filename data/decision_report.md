@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T19:52:28.347872+00:00
+- generated_at: 2026-05-05T19:57:26.241369+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3376**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T19:52:26.212522+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81473.7
-- Funnel: target 760 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1
+- 更新: 2026-05-05T19:57:23.795806+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=81570.1
+- Funnel: target 760 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.7 >= 65=1, 4h RSI 82.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +30.23% | $13,178,380.27 |
-| STX/USDT:USDT | +15.33% | $2,261,234.10 |
-| SWARMS/USDT:USDT | +14.60% | $2,199,615.97 |
-| TONCOIN/USDT:USDT | +5.40% | $169,200,691.62 |
-| TAG/USDT:USDT | +5.12% | $12,269,051.63 |
+| FHE/USDT:USDT | +32.06% | $13,578,834.44 |
+| SWARMS/USDT:USDT | +14.25% | $2,202,071.54 |
+| STX/USDT:USDT | +13.63% | $2,652,369.42 |
+| H/USDT:USDT | +5.57% | $10,455,931.75 |
+| TONCOIN/USDT:USDT | +5.55% | $169,503,124.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.91% | +4.90% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.07% | +4.05% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.97% | +2.96% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.44% | +2.43% |
-| H/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.99% | +3.86% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.25% | +3.12% |
+| H/USDT:USDT | below_1h_threshold | +2.55% | +2.42% |
+| TST/USDT:USDT | below_1h_threshold | +2.32% | +2.19% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.21% | +2.08% |
 
 ## 4. 次に見るべき不足
 
