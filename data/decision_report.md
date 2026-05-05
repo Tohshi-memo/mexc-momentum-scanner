@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-05T04:42:34.754414+00:00
+- generated_at: 2026-05-05T04:47:17.113571+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3306**
+- closed shadow trades: **3307**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.31% / filled 20/20。**
-- 全期間 MARKET基準: n=3306, expectancy=-0.16%
+- 全期間 MARKET基準: n=3307, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=+0.31%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T04:42:29.747818+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=80743.4
+- 更新: 2026-05-05T04:47:12.915314+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80742.9
 - Funnel: target 764 → liquid 204 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1
+- Strict後reject: 4h RSI 72.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +74.69% | $6,693,401.47 |
-| FHE/USDT:USDT | +29.36% | $3,453,636.18 |
-| 4/USDT:USDT | +22.96% | $2,201,693.31 |
-| TONCOIN/USDT:USDT | +18.10% | $64,230,037.28 |
-| NOT/USDT:USDT | +18.00% | $2,294,811.33 |
+| DOGS/USDT:USDT | +71.66% | $6,764,426.59 |
+| FHE/USDT:USDT | +29.32% | $3,509,580.85 |
+| 4/USDT:USDT | +22.90% | $2,222,130.79 |
+| TONCOIN/USDT:USDT | +17.01% | $64,286,796.09 |
+| NOT/USDT:USDT | +16.34% | $2,322,369.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.76% | +2.88% |
-| SPACE/USDT:USDT | below_1h_threshold | +2.62% | +2.74% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.59% | +2.70% |
-| 4/USDT:USDT | below_1h_threshold | +1.66% | +1.78% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.50% | +1.61% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.79% | +2.90% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.30% | +2.41% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.20% | +2.32% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.81% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.62% | +1.74% |
 
 ## 4. 次に見るべき不足
 
