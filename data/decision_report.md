@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T13:22:20.630401+00:00
+- generated_at: 2026-05-06T13:27:15.588377+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3461**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T13:22:18.031520+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=82004.6
-- Funnel: target 770 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-06T13:27:13.540623+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=81838.6
+- Funnel: target 770 → liquid 200 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +90.91% | $2,673,174.78 |
-| IO/USDT:USDT | +36.64% | $14,579,027.77 |
-| ZEC/USDT:USDT | +34.61% | $767,234,628.54 |
-| TONCOIN/USDT:USDT | +33.89% | $226,839,988.77 |
-| BILL/USDT:USDT | +33.61% | $4,880,424.57 |
+| B3/USDT:USDT | +90.60% | $2,804,652.37 |
+| IO/USDT:USDT | +36.73% | $14,626,163.49 |
+| TONCOIN/USDT:USDT | +34.63% | $228,067,187.88 |
+| ZEC/USDT:USDT | +34.14% | $768,843,092.10 |
+| BILL/USDT:USDT | +32.70% | $4,916,168.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IO/USDT:USDT | below_1h_threshold | +2.55% | +2.77% |
-| H/USDT:USDT | below_1h_threshold | +1.67% | +1.89% |
-| M/USDT:USDT | below_1h_threshold | +1.26% | +1.49% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.97% | +1.19% |
-| JTO/USDT:USDT | below_1h_threshold | +0.95% | +1.17% |
+| IO/USDT:USDT | below_1h_threshold | +2.42% | +2.85% |
+| H/USDT:USDT | below_1h_threshold | +2.16% | +2.59% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.46% | +1.88% |
+| M/USDT:USDT | below_1h_threshold | +0.98% | +1.41% |
+| JTO/USDT:USDT | below_1h_threshold | +0.97% | +1.40% |
 
 ## 5. 次に見るべき不足
 
