@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-06T16:12:40.535672+00:00
+- generated_at: 2026-05-06T16:17:42.273379+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3479**
+- closed shadow trades: **3480**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.21% / filled 20/20。**
-- 全期間 MARKET基準: n=3479, expectancy=-0.15%
+- 全期間 MARKET基準: n=3480, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=+0.21%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,38 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$98.01** / 初期 $100.00 (-1.99%)
-- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 31件
+- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 32件
 - 成長率目線: 平均log -0.002228 / 幾何平均 -0.223% per trade / maxDD +1.99%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LYN/USDT:USDT `LIMIT_BB3S` SL_HIT account -0.50% 残高後 $98.01
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T16:12:37.611849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=81809.8
-- Funnel: target 770 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-06T16:17:39.329521+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81730.8
+- Funnel: target 770 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +6.06% | $10,964,263.20 |
-| LAB/USDT:USDT | +4.70% | $190,529,568.64 |
-| FHE/USDT:USDT | +4.35% | $33,669,381.11 |
-| ORDI/USDT:USDT | +3.22% | $13,353,690.71 |
-| AIGENSYN/USDT:USDT | +2.92% | $1,513,713.40 |
+| LAB/USDT:USDT | +5.38% | $192,388,625.68 |
+| DOGS/USDT:USDT | +4.95% | $8,582,630.69 |
+| FHE/USDT:USDT | +3.65% | $33,811,026.08 |
+| IO/USDT:USDT | +2.63% | $15,881,158.86 |
+| B/USDT:USDT | +2.59% | $11,422,773.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.77% | +4.58% |
-| FHE/USDT:USDT | below_1h_threshold | +4.40% | +4.22% |
-| ORDI/USDT:USDT | below_1h_threshold | +3.28% | +3.10% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.93% | +2.74% |
-| BASED/USDT:USDT | below_1h_threshold | +2.90% | +2.71% |
+| LAB/USDT:USDT | below_1h_threshold | +4.93% | +4.84% |
+| DOGS/USDT:USDT | below_1h_threshold | +4.88% | +4.79% |
+| FHE/USDT:USDT | below_1h_threshold | +3.81% | +3.72% |
+| IO/USDT:USDT | below_1h_threshold | +2.64% | +2.55% |
+| BSB/USDT:USDT | below_1h_threshold | +2.62% | +2.53% |
 
 ## 5. 次に見るべき不足
 
