@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-06T09:52:21.780892+00:00
+- generated_at: 2026-05-06T09:57:44.484274+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3442**
+- closed shadow trades: **3443**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3442, expectancy=-0.15%
+- 全期間 MARKET基準: n=3443, expectancy=-0.14%
 - 直近20件 MARKET基準: n=20, expectancy=-1.31%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$99.50** / 初期 $100.00 (-0.50%)
-- 確定: 4件 (Win 0 / Loss 1 / Flat 3) / skip 0件
-- 成長率目線: 平均log -0.001253 / 幾何平均 -0.125% per trade / maxDD +0.50%
+- 残高: **$99.00** / 初期 $100.00 (-1.00%)
+- 確定: 5件 (Win 0 / Loss 2 / Flat 3) / skip 0件
+- 成長率目線: 平均log -0.002005 / 幾何平均 -0.200% per trade / maxDD +1.00%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: LAB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $99.50
+- 最新: FHE/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $99.00
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T09:52:18.796416+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=81856.1
-- Funnel: target 769 → liquid 198 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.8 >= 65=1, 4h RSI 70.2 >= 65=1
+- 更新: 2026-05-06T09:57:41.473663+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81929.1
+- Funnel: target 769 → liquid 199 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IO/USDT:USDT | +46.76% | $10,953,261.60 |
-| B3/USDT:USDT | +34.85% | $1,479,205.67 |
-| ZEC/USDT:USDT | +32.86% | $755,170,128.73 |
-| FHE/USDT:USDT | +30.77% | $29,134,776.59 |
-| STORJ/USDT:USDT | +29.12% | $2,626,704.84 |
+| IO/USDT:USDT | +48.80% | $11,033,016.84 |
+| B3/USDT:USDT | +33.67% | $1,484,694.03 |
+| ZEC/USDT:USDT | +32.43% | $756,805,699.89 |
+| STORJ/USDT:USDT | +29.82% | $2,630,461.80 |
+| FHE/USDT:USDT | +25.64% | $29,253,576.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.72% | +3.78% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.52% | +2.58% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.48% | +2.54% |
-| AR/USDT:USDT | below_1h_threshold | +2.43% | +2.49% |
-| JTO/USDT:USDT | below_1h_threshold | +2.34% | +2.40% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.82% | +3.78% |
+| FHE/USDT:USDT | below_1h_threshold | +2.97% | +2.94% |
+| JTO/USDT:USDT | below_1h_threshold | +2.90% | +2.87% |
+| AR/USDT:USDT | below_1h_threshold | +2.72% | +2.68% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.69% | +2.66% |
 
 ## 5. 次に見るべき不足
 
