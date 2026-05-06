@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T20:00:50.911698+00:00
+- generated_at: 2026-05-06T20:03:13.952086+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3497**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T20:00:48.009941+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81434.7
+- 更新: 2026-05-06T20:03:11.370899+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=81504.4
 - Funnel: target 765 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +49.86% | $9,364,911.49 |
-| SMCISTOCK/USDT:USDT | +7.80% | $9,498,589.00 |
-| VVV/USDT:USDT | +7.29% | $5,817,410.38 |
-| LAB/USDT:USDT | +6.18% | $228,265,589.43 |
-| ZEREBRO/USDT:USDT | +6.00% | $1,108,158.72 |
+| PLAY/USDT:USDT | +48.83% | $9,477,552.01 |
+| SMCISTOCK/USDT:USDT | +8.21% | $9,523,971.45 |
+| ZEREBRO/USDT:USDT | +8.17% | $1,112,826.01 |
+| VVV/USDT:USDT | +7.25% | $5,894,008.01 |
+| FHE/USDT:USDT | +6.21% | $28,760,205.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +0.82% | +0.80% |
-| LAB/USDT:USDT | below_1h_threshold | +0.38% | +0.36% |
-| DOGS/USDT:USDT | below_1h_threshold | +0.35% | +0.33% |
-| VVV/USDT:USDT | below_1h_threshold | +0.32% | +0.30% |
-| FHE/USDT:USDT | below_1h_threshold | +0.29% | +0.27% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.71% | +2.60% |
+| BILL/USDT:USDT | below_1h_threshold | +1.49% | +1.38% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.83% |
+| XPL/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
+| DASH/USDT:USDT | below_1h_threshold | +0.84% | +0.73% |
 
 ## 5. 次に見るべき不足
 
