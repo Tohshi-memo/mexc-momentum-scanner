@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T22:42:33.437985+00:00
+- generated_at: 2026-05-06T22:47:34.452363+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3507**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T22:42:28.784585+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=81264.0
-- Funnel: target 764 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-06T22:47:29.062063+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=81246.4
+- Funnel: target 764 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +55.36% | $15,026,596.43 |
-| BILL/USDT:USDT | +22.02% | $9,366,877.11 |
-| ZEREBRO/USDT:USDT | +18.68% | $1,541,244.38 |
-| B/USDT:USDT | +11.00% | $10,063,560.04 |
-| LAB/USDT:USDT | +10.63% | $243,063,703.89 |
+| PLAY/USDT:USDT | +58.56% | $15,380,623.74 |
+| BILL/USDT:USDT | +20.86% | $9,488,968.29 |
+| ZEREBRO/USDT:USDT | +17.49% | $1,559,006.34 |
+| B/USDT:USDT | +10.66% | $10,170,830.02 |
+| LAB/USDT:USDT | +10.46% | $244,094,504.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.89% | +5.18% |
-| PLAY/USDT:USDT | below_1h_threshold | +4.56% | +4.85% |
-| BILL/USDT:USDT | below_1h_threshold | +2.63% | +2.92% |
-| LAB/USDT:USDT | below_1h_threshold | +1.86% | +2.14% |
-| DOGS/USDT:USDT | below_1h_threshold | +0.97% | +1.26% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +3.90% | +4.20% |
+| LAB/USDT:USDT | below_1h_threshold | +1.81% | +2.11% |
+| FHE/USDT:USDT | below_1h_threshold | +1.67% | +1.97% |
+| BILL/USDT:USDT | below_1h_threshold | +1.43% | +1.74% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.11% | +1.41% |
 
 ## 5. 次に見るべき不足
 
