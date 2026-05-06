@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T10:17:35.226742+00:00
+- generated_at: 2026-05-06T10:22:26.674593+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3443**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T10:17:32.553943+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=82034.7
-- Funnel: target 769 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-06T10:22:23.916870+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=82099.0
+- Funnel: target 769 → liquid 201 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IO/USDT:USDT | +52.04% | $11,492,019.43 |
-| BILL/USDT:USDT | +47.09% | $1,137,482.08 |
-| B3/USDT:USDT | +35.50% | $1,485,494.06 |
-| ZEC/USDT:USDT | +33.01% | $750,011,454.48 |
-| STORJ/USDT:USDT | +31.90% | $2,712,796.99 |
+| IO/USDT:USDT | +49.74% | $11,630,599.74 |
+| BILL/USDT:USDT | +48.86% | $1,262,902.85 |
+| B3/USDT:USDT | +35.42% | $1,486,222.24 |
+| STORJ/USDT:USDT | +35.08% | $2,723,629.04 |
+| ZEC/USDT:USDT | +33.99% | $752,261,902.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IO/USDT:USDT | below_1h_threshold | +3.04% | +2.94% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.76% | +1.67% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.49% | +1.40% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.37% | +1.28% |
+| STORJ/USDT:USDT | below_1h_threshold | +4.22% | +4.05% |
+| DASH/USDT:USDT | below_1h_threshold | +2.02% | +1.85% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.98% | +1.80% |
+| ENA/USDT:USDT | below_1h_threshold | +1.89% | +1.72% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.76% | +1.59% |
 
 ## 5. 次に見るべき不足
 
