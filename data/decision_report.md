@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T04:32:23.949929+00:00
+- generated_at: 2026-05-06T04:37:16.346573+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3414**
 
@@ -39,39 +39,37 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$100.33** / 初期 $100.00 (+0.33%)
-- 確定トレード: 18件 (TP 5 / SL 11 / EXP 2)
-- 最新: BSB/USDT:USDT SL_HIT PnL -4.00% 残高後 $100.33
+- 残高: **$101.34** / 初期 $100.00 (+1.34%)
+- 確定トレード: 19件 (TP 6 / SL 11 / EXP 2)
+- 最新: TAG/USDT:USDT TP_HIT PnL +8.00% 残高後 $101.34
 - 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T04:32:21.757774+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=81384.0
-- Funnel: target 764 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-06T04:37:14.395924+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=81336.6
+- Funnel: target 764 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +39.16% | $1,226,121.92 |
-| B3/USDT:USDT | +26.41% | $1,393,863.79 |
-| NOT/USDT:USDT | +23.14% | $6,783,117.15 |
-| MAVIA/USDT:USDT | +22.84% | $1,811,990.57 |
-| ZEC/USDT:USDT | +22.70% | $603,629,412.79 |
+| STORJ/USDT:USDT | +40.55% | $1,249,597.47 |
+| B3/USDT:USDT | +26.33% | $1,395,216.33 |
+| ZEC/USDT:USDT | +22.46% | $604,718,733.31 |
+| NOT/USDT:USDT | +22.35% | $6,806,274.28 |
+| MAVIA/USDT:USDT | +21.69% | $1,819,976.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +4.16% | +4.34% |
-| CTC/USDT:USDT | below_1h_threshold | +2.90% | +3.09% |
-| M/USDT:USDT | below_1h_threshold | +2.05% | +2.24% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.87% | +2.06% |
-| JTO/USDT:USDT | below_1h_threshold | +1.35% | +1.53% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.96% | +4.20% |
+| CTC/USDT:USDT | below_1h_threshold | +3.69% | +3.94% |
+| M/USDT:USDT | below_1h_threshold | +2.06% | +2.30% |
+| JTO/USDT:USDT | below_1h_threshold | +1.53% | +1.77% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.46% | +1.70% |
 
 ## 4. 次に見るべき不足
 
