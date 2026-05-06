@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T06:02:34.453175+00:00
+- generated_at: 2026-05-06T06:07:22.004203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3423**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T06:02:32.504417+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81300.0
+- 更新: 2026-05-06T06:07:19.992981+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=81286.4
 - Funnel: target 765 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +33.00% | $1,829,227.77 |
-| ZEC/USDT:USDT | +26.96% | $618,717,812.09 |
-| WIF/USDT:USDT | +26.11% | $20,132,656.09 |
-| MAVIA/USDT:USDT | +22.90% | $1,846,582.87 |
-| B3/USDT:USDT | +20.88% | $1,401,326.54 |
+| STORJ/USDT:USDT | +32.70% | $1,875,228.07 |
+| ZEC/USDT:USDT | +27.31% | $621,850,175.67 |
+| WIF/USDT:USDT | +23.85% | $20,531,132.06 |
+| MAVIA/USDT:USDT | +22.66% | $1,847,887.79 |
+| B3/USDT:USDT | +22.21% | $1,401,853.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +0.89% | +0.86% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.85% | +0.82% |
-| DASH/USDT:USDT | below_1h_threshold | +0.71% | +0.69% |
-| LAB/USDT:USDT | below_1h_threshold | +0.54% | +0.51% |
+| DASH/USDT:USDT | below_1h_threshold | +2.42% | +2.41% |
+| DUSK/USDT:USDT | below_1h_threshold | +1.01% | +1.00% |
+| B3/USDT:USDT | below_1h_threshold | +0.98% | +0.97% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.77% | +0.76% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
 
 ## 4. 次に見るべき不足
 
