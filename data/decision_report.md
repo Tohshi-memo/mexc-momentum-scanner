@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T07:52:31.232279+00:00
+- generated_at: 2026-05-06T07:57:28.261842+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3430**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T07:52:28.609799+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=81350.1
-- Funnel: target 765 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.0 >= 65=1, 4h RSI 91.8 >= 65=1
+- 更新: 2026-05-06T07:57:25.227421+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=81269.5
+- Funnel: target 765 → liquid 197 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.3 >= 65=1, 4h RSI 93.7 >= 65=1, 4h RSI 91.9 >= 65=1, 4h RSI 76.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IO/USDT:USDT | +61.81% | $5,880,223.18 |
-| ZEC/USDT:USDT | +36.57% | $696,541,467.32 |
-| B3/USDT:USDT | +30.90% | $1,443,462.91 |
-| STORJ/USDT:USDT | +28.62% | $2,464,462.90 |
-| MAVIA/USDT:USDT | +22.46% | $1,900,491.54 |
+| IO/USDT:USDT | +72.53% | $6,360,780.05 |
+| ZEC/USDT:USDT | +37.44% | $699,589,315.89 |
+| B3/USDT:USDT | +30.42% | $1,446,147.22 |
+| STORJ/USDT:USDT | +29.92% | $2,475,538.63 |
+| MAVIA/USDT:USDT | +22.40% | $1,903,869.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IO/USDT:USDT | below_1h_threshold | +4.08% | +4.18% |
-| B3/USDT:USDT | below_1h_threshold | +4.01% | +4.11% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.83% | +3.93% |
-| DASH/USDT:USDT | below_1h_threshold | +3.67% | +3.77% |
-| DUSK/USDT:USDT | below_1h_threshold | +3.11% | +3.21% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.58% | +4.78% |
+| B3/USDT:USDT | below_1h_threshold | +3.75% | +3.94% |
+| DUSK/USDT:USDT | below_1h_threshold | +3.54% | +3.74% |
+| ROSE/USDT:USDT | below_1h_threshold | +2.92% | +3.12% |
+| STRK/USDT:USDT | below_1h_threshold | +2.89% | +3.09% |
 
 ## 4. 次に見るべき不足
 
