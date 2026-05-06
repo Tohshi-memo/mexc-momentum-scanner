@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T06:57:26.620623+00:00
+- generated_at: 2026-05-06T07:02:42.639604+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3424**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T06:57:24.258514+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=81449.4
-- Funnel: target 765 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.1 >= 65=1, 4h RSI 66.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-06T07:02:40.638900+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=81442.2
+- Funnel: target 765 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IO/USDT:USDT | +55.78% | $1,997,166.57 |
-| STORJ/USDT:USDT | +31.90% | $2,257,416.31 |
-| ZEC/USDT:USDT | +27.86% | $647,761,007.72 |
-| B3/USDT:USDT | +27.71% | $1,426,808.74 |
-| MAVIA/USDT:USDT | +24.99% | $1,877,471.72 |
+| IO/USDT:USDT | +53.74% | $2,339,931.76 |
+| STORJ/USDT:USDT | +31.51% | $2,258,416.62 |
+| ZEC/USDT:USDT | +27.38% | $639,105,556.99 |
+| MAVIA/USDT:USDT | +25.40% | $1,876,103.55 |
+| B3/USDT:USDT | +23.68% | $1,423,185.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.83% | +3.62% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.89% | +2.68% |
-| M/USDT:USDT | below_1h_threshold | +2.26% | +2.05% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.68% | +1.47% |
-| FHE/USDT:USDT | below_1h_threshold | +1.56% | +1.35% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
+| WIF/USDT:USDT | below_1h_threshold | +0.76% | +0.75% |
+| FHE/USDT:USDT | below_1h_threshold | +0.76% | +0.75% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
+| VVV/USDT:USDT | below_1h_threshold | +0.56% | +0.55% |
 
 ## 4. 次に見るべき不足
 
