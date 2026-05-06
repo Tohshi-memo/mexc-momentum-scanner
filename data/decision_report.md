@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T07:17:31.997404+00:00
+- generated_at: 2026-05-06T07:22:27.392284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3427**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T07:17:29.652339+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81444.0
+- 更新: 2026-05-06T07:22:25.065231+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81496.0
 - Funnel: target 765 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 91.5 >= 65=1
+- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 91.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IO/USDT:USDT | +55.61% | $3,433,244.60 |
-| ZEC/USDT:USDT | +34.75% | $666,462,699.10 |
-| STORJ/USDT:USDT | +30.71% | $2,299,023.22 |
-| B3/USDT:USDT | +24.80% | $1,427,196.77 |
-| MAVIA/USDT:USDT | +22.90% | $1,886,000.99 |
+| IO/USDT:USDT | +63.09% | $3,773,735.37 |
+| ZEC/USDT:USDT | +34.78% | $669,232,401.55 |
+| STORJ/USDT:USDT | +26.24% | $2,367,005.27 |
+| B3/USDT:USDT | +23.62% | $1,432,063.53 |
+| MAVIA/USDT:USDT | +23.25% | $1,890,732.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +3.04% | +3.02% |
-| DUSK/USDT:USDT | below_1h_threshold | +2.54% | +2.52% |
-| VVV/USDT:USDT | below_1h_threshold | +2.11% | +2.10% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.88% | +1.86% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
+| IO/USDT:USDT | below_1h_threshold | +4.41% | +4.33% |
+| DEGEN/USDT:USDT | below_1h_threshold | +2.78% | +2.70% |
+| FHE/USDT:USDT | below_1h_threshold | +2.72% | +2.64% |
+| DUSK/USDT:USDT | below_1h_threshold | +2.58% | +2.50% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.53% | +2.45% |
 
 ## 4. 次に見るべき不足
 
