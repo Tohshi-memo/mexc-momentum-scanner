@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-06T21:57:32.467131+00:00
+- generated_at: 2026-05-06T22:02:34.984737+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3504**
+- closed shadow trades: **3505**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3504, expectancy=-0.15%
+- 全期間 MARKET基準: n=3505, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=-1.59%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$98.01** / 初期 $100.00 (-1.99%)
-- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 56件
+- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 57件
 - 成長率目線: 平均log -0.002228 / 幾何平均 -0.223% per trade / maxDD +1.99%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LYN/USDT:USDT `LIMIT_BB3S` SL_HIT account -0.50% 残高後 $98.01
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T21:57:29.605601+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=81527.3
-- Funnel: target 764 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-06T22:02:32.139509+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=81416.5
+- Funnel: target 764 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +48.49% | $14,073,905.62 |
-| BILL/USDT:USDT | +16.89% | $8,207,239.71 |
-| ZEREBRO/USDT:USDT | +13.78% | $1,434,931.80 |
-| LAB/USDT:USDT | +8.83% | $243,828,789.02 |
-| DOGS/USDT:USDT | +8.83% | $6,442,437.87 |
+| PLAY/USDT:USDT | +48.62% | $14,205,926.48 |
+| BILL/USDT:USDT | +23.60% | $8,384,536.49 |
+| ZEREBRO/USDT:USDT | +13.19% | $1,419,875.14 |
+| LAB/USDT:USDT | +9.77% | $238,036,411.79 |
+| VVV/USDT:USDT | +9.43% | $6,588,668.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_relative_strength | +5.04% | +4.85% |
-| OP/USDT:USDT | below_1h_threshold | +4.83% | +4.65% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.19% | +3.00% |
-| TAC/USDT:USDT | below_1h_threshold | +2.62% | +2.44% |
-| BRETT/USDT:USDT | below_1h_threshold | +2.57% | +2.38% |
+| BILL/USDT:USDT | below_1h_threshold | +3.70% | +3.80% |
+| LAB/USDT:USDT | below_1h_threshold | +1.21% | +1.30% |
+| VVV/USDT:USDT | below_1h_threshold | +0.52% | +0.62% |
+| DOGS/USDT:USDT | below_1h_threshold | +0.39% | +0.49% |
+| POPCAT/USDT:USDT | below_1h_threshold | +0.37% | +0.47% |
 
 ## 5. 次に見るべき不足
 
