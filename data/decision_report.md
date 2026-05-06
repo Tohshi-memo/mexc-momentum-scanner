@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T01:12:21.064944+00:00
+- generated_at: 2026-05-06T01:17:28.682471+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3401**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T01:12:18.861772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=81090.1
-- Funnel: target 761 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1
+- 更新: 2026-05-06T01:17:25.775341+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=81177.4
+- Funnel: target 761 → liquid 186 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.0 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 74.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +41.43% | $1,079,392.41 |
-| FHE/USDT:USDT | +27.15% | $27,686,559.56 |
-| MAVIA/USDT:USDT | +26.93% | $1,641,926.00 |
-| SWARMS/USDT:USDT | +20.73% | $2,369,014.03 |
-| ZEC/USDT:USDT | +20.47% | $593,935,818.06 |
+| B3/USDT:USDT | +41.63% | $1,105,644.21 |
+| FHE/USDT:USDT | +27.50% | $27,800,850.89 |
+| MAVIA/USDT:USDT | +27.02% | $1,643,891.67 |
+| SWARMS/USDT:USDT | +20.61% | $2,373,088.12 |
+| ZEC/USDT:USDT | +20.48% | $594,820,798.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_1h_threshold | +3.96% | +3.83% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.58% | +2.45% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.16% | +2.03% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.75% | +1.62% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.50% | +1.36% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.33% | +3.09% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.00% | +2.76% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.74% | +2.50% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.11% | +1.86% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.03% | +1.79% |
 
 ## 4. 次に見るべき不足
 
