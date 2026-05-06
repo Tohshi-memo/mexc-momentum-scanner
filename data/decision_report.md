@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T20:37:41.509409+00:00
+- generated_at: 2026-05-06T20:42:26.570631+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3498**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T20:37:38.419915+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=81320.9
+- 更新: 2026-05-06T20:42:23.461844+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=81301.5
 - Funnel: target 765 → liquid 193 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.0 >= 65=1, 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 86.8 >= 65=1, 4h RSI 69.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +51.94% | $10,713,604.60 |
-| ARMSTOCK/USDT:USDT | +12.47% | $6,798,016.91 |
-| SMCISTOCK/USDT:USDT | +8.61% | $9,755,333.38 |
-| FHE/USDT:USDT | +7.77% | $28,956,358.79 |
-| ZEREBRO/USDT:USDT | +7.57% | $1,139,110.59 |
+| PLAY/USDT:USDT | +51.04% | $10,984,735.48 |
+| ARMSTOCK/USDT:USDT | +11.84% | $6,887,978.96 |
+| ZEREBRO/USDT:USDT | +8.93% | $1,142,304.56 |
+| SMCISTOCK/USDT:USDT | +8.71% | $9,757,826.39 |
+| FHE/USDT:USDT | +7.27% | $28,980,250.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +2.21% | +2.33% |
-| FHE/USDT:USDT | below_1h_threshold | +2.16% | +2.28% |
-| PANWSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.22% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.01% | +2.13% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.49% | +1.60% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +3.51% | +3.65% |
+| PANWSTOCK/USDT:USDT | below_1h_threshold | +2.27% | +2.41% |
+| FHE/USDT:USDT | below_1h_threshold | +1.69% | +1.84% |
+| UB/USDT:USDT | below_1h_threshold | +1.53% | +1.67% |
+| BILL/USDT:USDT | below_1h_threshold | +1.41% | +1.55% |
 
 ## 5. 次に見るべき不足
 
