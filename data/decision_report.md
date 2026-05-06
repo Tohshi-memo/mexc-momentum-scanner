@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T11:02:25.030111+00:00
+- generated_at: 2026-05-06T11:07:24.695894+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3445**
 
@@ -54,9 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T11:02:22.194536+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=82317.3
-- Funnel: target 770 → liquid 0 → pre 0 → checked 0 → surge 0 → strict 0
+- 更新: 2026-05-06T11:07:22.068575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=82404.5
+- Funnel: target 770 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+
+### 24h上昇上位
+
+| symbol | 24h | volume |
+|---|---:|---:|
+| IO/USDT:USDT | +49.31% | $12,553,381.75 |
+| B3/USDT:USDT | +41.85% | $1,510,242.20 |
+| BILL/USDT:USDT | +39.61% | $2,131,124.66 |
+| ZEC/USDT:USDT | +34.39% | $758,092,003.91 |
+| LAB/USDT:USDT | +34.36% | $119,574,771.39 |
+
+### Near Miss
+
+| symbol | reason | 1h | RS |
+|---|---|---:|---:|
+| LAB/USDT:USDT | below_1h_threshold | +3.26% | +3.06% |
+| BILL/USDT:USDT | below_1h_threshold | +2.80% | +2.61% |
+| TAG/USDT:USDT | below_1h_threshold | +2.40% | +2.21% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.79% | +1.59% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +0.96% |
 
 ## 5. 次に見るべき不足
 
