@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-05T23:57:18.072869+00:00
+- generated_at: 2026-05-06T00:02:17.787690+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3400**
 
@@ -46,30 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-05T23:57:16.114140+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=80879.4
-- Funnel: target 760 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-06T00:02:15.936884+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80892.3
+- Funnel: target 760 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FHE/USDT:USDT | +26.66% | $26,276,380.29 |
-| MAVIA/USDT:USDT | +25.22% | $1,537,974.22 |
-| ZEC/USDT:USDT | +20.44% | $595,783,537.93 |
-| SMCISTOCK/USDT:USDT | +19.15% | $5,083,377.08 |
-| SWARMS/USDT:USDT | +18.95% | $2,383,401.53 |
+| FHE/USDT:USDT | +26.79% | $26,288,330.16 |
+| MAVIA/USDT:USDT | +25.34% | $1,538,383.13 |
+| ZEC/USDT:USDT | +20.94% | $585,592,616.51 |
+| SWARMS/USDT:USDT | +20.52% | $2,348,961.75 |
+| SMCISTOCK/USDT:USDT | +19.51% | $5,085,600.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +2.59% | +2.83% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.47% | +2.71% |
-| DASH/USDT:USDT | below_1h_threshold | +2.34% | +2.57% |
-| MAVIA/USDT:USDT | below_1h_threshold | +2.16% | +2.39% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.89% | +2.13% |
+| LAB/USDT:USDT | below_1h_threshold | +2.85% | +2.82% |
+| B/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
+| FHE/USDT:USDT | below_1h_threshold | +1.59% | +1.56% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.25% | +1.21% |
+| DASH/USDT:USDT | below_1h_threshold | +1.06% | +1.02% |
 
 ## 4. 次に見るべき不足
 
