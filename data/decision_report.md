@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T03:57:24.999402+00:00
+- generated_at: 2026-05-06T04:02:40.603206+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3413**
 
@@ -46,32 +46,30 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T03:57:22.813866+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=81549.2
-- Funnel: target 765 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-06T04:02:38.641751+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=81524.2
+- Funnel: target 764 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +29.26% | $1,395,754.65 |
-| MAVIA/USDT:USDT | +24.84% | $1,778,248.17 |
-| NOT/USDT:USDT | +23.72% | $6,911,459.48 |
-| ZEC/USDT:USDT | +22.48% | $609,020,625.70 |
-| SMCISTOCK/USDT:USDT | +20.08% | $5,257,250.66 |
+| B3/USDT:USDT | +28.90% | $1,385,392.82 |
+| MAVIA/USDT:USDT | +26.72% | $1,778,729.30 |
+| NOT/USDT:USDT | +24.22% | $6,449,736.57 |
+| ZEC/USDT:USDT | +22.11% | $598,674,234.78 |
+| FHE/USDT:USDT | +21.37% | $28,326,872.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.20% | +2.92% |
-| FET/USDT:USDT | below_1h_threshold | +2.59% | +2.30% |
-| VET/USDT:USDT | below_1h_threshold | +2.11% | +1.82% |
-| TIA/USDT:USDT | below_1h_threshold | +2.03% | +1.74% |
-| GALA/USDT:USDT | below_1h_threshold | +1.91% | +1.62% |
+| MAVIA/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
+| FHE/USDT:USDT | below_1h_threshold | +0.93% | +0.95% |
+| ZBT/USDT:USDT | below_1h_threshold | +0.62% | +0.64% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +0.54% | +0.56% |
+| AKT/USDT:USDT | below_1h_threshold | +0.42% | +0.44% |
 
 ## 4. 次に見るべき不足
 
