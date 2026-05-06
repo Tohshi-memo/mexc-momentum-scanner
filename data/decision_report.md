@@ -1,40 +1,40 @@
 # Decision Report
 
-- generated_at: 2026-05-06T01:17:28.682471+00:00
+- generated_at: 2026-05-06T01:19:59.505946+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3401**
+- closed shadow trades: **3402**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.54% / filled 20/20。**
-- 全期間 MARKET基準: n=3401, expectancy=-0.15%
-- 直近20件 MARKET基準: n=20, expectancy=+0.54%
+- 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
+- 全期間 MARKET基準: n=3402, expectancy=-0.15%
+- 直近20件 MARKET基準: n=20, expectancy=-0.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.54% | **+0.54%** |
+| MARKET | 20/20 | 100.0% | -0.06% | **-0.06%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT | 14/20 | 70.0% | +1.35% | **+0.95%** |
-| ASK | 20/20 | 100.0% | +0.64% | **+0.64%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +1.13% | **+0.85%** |
 | LIMIT_FIB1272 | 8/20 | 40.0% | +1.39% | **+0.56%** |
-| MARKET | 20/20 | 100.0% | +0.54% | **+0.54%** |
 | LIMIT_6PCT | 3/20 | 15.0% | +1.84% | **+0.28%** |
+| LIMIT_8PCT | 2/20 | 10.0% | +2.44% | **+0.24%** |
+| LIMIT_7PCT | 2/20 | 10.0% | +2.44% | **+0.24%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR_LONG | 18/20 | 90.0% | +1.62% | **+1.46%** |
-| LIMIT_3PCT_LONG | 12/20 | 60.0% | +0.94% | **+0.56%** |
+| LIMIT_ATR_LONG | 17/20 | 85.0% | +1.95% | **+1.66%** |
+| LIMIT_3PCT_LONG | 11/20 | 55.0% | +1.38% | **+0.76%** |
+| LIMIT_6PCT_LONG | 8/20 | 40.0% | +1.14% | **+0.46%** |
 | LIMIT_FIB1618_LONG | 3/20 | 15.0% | +2.62% | **+0.39%** |
-| LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.78% | **+0.35%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.39% | **+0.24%** |
 
 ## 2. $100 Live Portfolio
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T01:17:25.775341+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=81177.4
-- Funnel: target 761 → liquid 186 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.0 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 74.5 >= 65=1
+- 更新: 2026-05-06T01:19:56.912150+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=81232.1
+- Funnel: target 761 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 80.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +41.63% | $1,105,644.21 |
-| FHE/USDT:USDT | +27.50% | $27,800,850.89 |
-| MAVIA/USDT:USDT | +27.02% | $1,643,891.67 |
-| SWARMS/USDT:USDT | +20.61% | $2,373,088.12 |
-| ZEC/USDT:USDT | +20.48% | $594,820,798.29 |
+| B3/USDT:USDT | +45.18% | $1,119,649.94 |
+| FHE/USDT:USDT | +28.11% | $27,882,256.63 |
+| MAVIA/USDT:USDT | +27.58% | $1,644,570.17 |
+| ZEC/USDT:USDT | +20.67% | $596,045,504.22 |
+| SWARMS/USDT:USDT | +20.59% | $2,373,457.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +3.33% | +3.09% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +3.00% | +2.76% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.74% | +2.50% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.11% | +1.86% |
-| SPACE/USDT:USDT | below_1h_threshold | +2.03% | +1.79% |
+| DOGS/USDT:USDT | below_1h_threshold | +4.21% | +3.90% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.68% | +3.37% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.08% | +2.77% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.05% | +2.74% |
+| AR/USDT:USDT | below_1h_threshold | +2.26% | +1.95% |
 
 ## 4. 次に見るべき不足
 
