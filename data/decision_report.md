@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T19:32:29.294532+00:00
+- generated_at: 2026-05-06T19:37:28.541262+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3496**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T19:32:26.806205+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=81261.7
+- 更新: 2026-05-06T19:37:25.878463+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81279.7
 - Funnel: target 765 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +42.03% | $8,074,231.75 |
-| VVV/USDT:USDT | +8.21% | $5,140,652.23 |
-| ZEREBRO/USDT:USDT | +7.85% | $1,112,297.68 |
-| SMCISTOCK/USDT:USDT | +7.33% | $9,471,691.31 |
-| TAG/USDT:USDT | +5.88% | $15,296,714.05 |
+| PLAY/USDT:USDT | +42.28% | $8,203,957.32 |
+| ZEREBRO/USDT:USDT | +8.89% | $1,116,317.62 |
+| VVV/USDT:USDT | +8.60% | $5,191,625.10 |
+| SMCISTOCK/USDT:USDT | +7.23% | $9,498,190.26 |
+| ZRO/USDT:USDT | +5.57% | $3,244,699.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.25% | +2.30% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.43% | +1.48% |
-| UB/USDT:USDT | below_1h_threshold | +1.28% | +1.33% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.28% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
+| VVV/USDT:USDT | below_1h_threshold | +2.66% | +2.69% |
+| UB/USDT:USDT | below_1h_threshold | +1.91% | +1.93% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.84% | +1.86% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.68% | +1.71% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
 
 ## 5. 次に見るべき不足
 
