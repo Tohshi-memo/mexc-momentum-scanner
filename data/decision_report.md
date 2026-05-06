@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-06T18:27:52.788023+00:00
+- generated_at: 2026-05-06T18:32:38.323966+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3490**
+- closed shadow trades: **3491**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.16% / filled 20/20。**
-- 全期間 MARKET基準: n=3490, expectancy=-0.15%
+- 全期間 MARKET基準: n=3491, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=+1.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,8 +23,8 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.16% | **+1.16%** |
 | ASK | 20/20 | 100.0% | +1.13% | **+1.13%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +1.02% | **+0.87%** |
 | LIMIT_BB3S | 7/16 | 43.8% | +1.97% | **+0.86%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.96% | **+0.82%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 
 ### シャドウ上位 LONG
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$98.01** / 初期 $100.00 (-1.99%)
-- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 42件
+- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 43件
 - 成長率目線: 平均log -0.002228 / 幾何平均 -0.223% per trade / maxDD +1.99%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LYN/USDT:USDT `LIMIT_BB3S` SL_HIT account -0.50% 残高後 $98.01
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T18:27:49.953847+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81456.8
+- 更新: 2026-05-06T18:32:35.124619+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=81400.0
 - Funnel: target 766 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +33.27% | $5,099,923.68 |
-| TONCOIN/USDT:USDT | +7.32% | $243,068,437.79 |
-| BILL/USDT:USDT | +5.47% | $6,996,658.25 |
-| FHE/USDT:USDT | +5.23% | $32,891,820.88 |
-| TAG/USDT:USDT | +5.18% | $15,123,813.21 |
+| PLAY/USDT:USDT | +35.78% | $5,312,869.82 |
+| TAG/USDT:USDT | +7.28% | $15,140,648.82 |
+| TONCOIN/USDT:USDT | +6.91% | $244,430,764.29 |
+| FHE/USDT:USDT | +5.95% | $32,925,869.77 |
+| ZEREBRO/USDT:USDT | +5.52% | $1,049,019.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +2.63% | +2.56% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.17% | +2.11% |
-| TAG/USDT:USDT | below_1h_threshold | +2.06% | +1.99% |
-| LYN/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
-| VVV/USDT:USDT | below_1h_threshold | +1.67% | +1.60% |
+| TAG/USDT:USDT | below_1h_threshold | +3.72% | +3.73% |
+| BILL/USDT:USDT | below_1h_threshold | +2.61% | +2.62% |
+| VVV/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.64% |
 
 ## 5. 次に見るべき不足
 
