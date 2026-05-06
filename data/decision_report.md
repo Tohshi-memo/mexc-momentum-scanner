@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-06T09:42:36.846320+00:00
+- generated_at: 2026-05-06T09:47:33.675960+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3441**
+- closed shadow trades: **3442**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3441, expectancy=-0.15%
-- 直近20件 MARKET基準: n=20, expectancy=-1.41%
+- 全期間 MARKET基準: n=3442, expectancy=-0.15%
+- 直近20件 MARKET基準: n=20, expectancy=-1.31%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.41% | **-1.41%** |
+| MARKET | 20/20 | 100.0% | -1.31% | **-1.31%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$100.00** / 初期 $100.00 (+0.00%)
-- 確定: 3件 (Win 0 / Loss 0 / Flat 3) / skip 0件
-- 成長率目線: 平均log +0.000000 / 幾何平均 +0.000% per trade / maxDD +0.00%
+- 残高: **$99.50** / 初期 $100.00 (-0.50%)
+- 確定: 4件 (Win 0 / Loss 1 / Flat 3) / skip 0件
+- 成長率目線: 平均log -0.001253 / 幾何平均 -0.125% per trade / maxDD +0.50%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: B3/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $100.00
+- 最新: LAB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $99.50
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T09:42:33.354683+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81999.9
-- Funnel: target 769 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-05-06T09:47:30.319624+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=81802.4
+- Funnel: target 769 → liquid 198 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 70.3 >= 65=1
+- Strict後reject: 4h RSI 76.5 >= 65=1, 4h RSI 69.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IO/USDT:USDT | +45.49% | $10,751,619.67 |
-| FHE/USDT:USDT | +36.93% | $28,916,801.61 |
-| B3/USDT:USDT | +36.09% | $1,475,801.76 |
-| ZEC/USDT:USDT | +32.52% | $751,765,460.56 |
-| STORJ/USDT:USDT | +27.53% | $2,611,016.16 |
+| IO/USDT:USDT | +45.83% | $10,830,266.77 |
+| B3/USDT:USDT | +35.08% | $1,477,268.71 |
+| FHE/USDT:USDT | +33.85% | $29,017,412.11 |
+| ZEC/USDT:USDT | +33.01% | $753,809,870.27 |
+| STORJ/USDT:USDT | +28.13% | $2,614,140.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.15% | +3.04% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.09% | +2.97% |
-| JTO/USDT:USDT | below_1h_threshold | +2.37% | +2.25% |
-| RSR/USDT:USDT | below_1h_threshold | +2.28% | +2.16% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.96% | +1.84% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.51% | +3.64% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.43% | +3.55% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.73% | +2.86% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.46% | +2.58% |
+| JTO/USDT:USDT | below_1h_threshold | +2.29% | +2.41% |
 
 ## 5. 次に見るべき不足
 
