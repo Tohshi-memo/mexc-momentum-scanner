@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T21:02:50.059073+00:00
+- generated_at: 2026-05-06T21:07:42.745358+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3500**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T21:02:47.454407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81403.9
-- Funnel: target 764 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-06T21:07:40.162486+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81429.5
+- Funnel: target 764 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +51.47% | $11,760,242.49 |
-| ZEREBRO/USDT:USDT | +12.20% | $1,242,269.28 |
-| DOGS/USDT:USDT | +9.98% | $6,329,664.94 |
-| UB/USDT:USDT | +9.16% | $1,645,757.71 |
-| SMCISTOCK/USDT:USDT | +8.02% | $5,744,122.16 |
+| PLAY/USDT:USDT | +51.74% | $11,993,074.37 |
+| ZEREBRO/USDT:USDT | +11.28% | $1,263,127.04 |
+| LAB/USDT:USDT | +9.66% | $234,725,103.74 |
+| VVV/USDT:USDT | +8.35% | $6,319,860.59 |
+| DOGS/USDT:USDT | +8.19% | $6,356,185.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.01% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.02% | +0.99% |
-| BILL/USDT:USDT | below_1h_threshold | +0.90% | +0.87% |
-| DOGS/USDT:USDT | below_1h_threshold | +0.79% | +0.76% |
-| LAB/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
+| LAB/USDT:USDT | below_1h_threshold | +3.38% | +3.32% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.80% |
+| BILL/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.04% | +0.98% |
+| VVV/USDT:USDT | below_1h_threshold | +0.75% | +0.69% |
 
 ## 5. 次に見るべき不足
 
