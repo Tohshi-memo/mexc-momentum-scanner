@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T05:27:19.251824+00:00
+- generated_at: 2026-05-06T05:32:32.542734+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3421**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T05:27:16.911941+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=81212.1
+- 更新: 2026-05-06T05:32:30.355205+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=81185.7
 - Funnel: target 765 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.8 >= 65=1
+- Strict後reject: 4h RSI 88.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +38.07% | $1,592,830.93 |
-| ZEC/USDT:USDT | +25.64% | $612,521,745.07 |
-| MAVIA/USDT:USDT | +23.49% | $1,841,696.80 |
-| WIF/USDT:USDT | +22.00% | $18,828,459.40 |
-| B3/USDT:USDT | +20.37% | $1,402,087.11 |
+| STORJ/USDT:USDT | +36.48% | $1,610,743.62 |
+| ZEC/USDT:USDT | +25.62% | $614,668,242.68 |
+| MAVIA/USDT:USDT | +23.43% | $1,842,181.82 |
+| TONCOIN/USDT:USDT | +22.04% | $196,201,946.89 |
+| WIF/USDT:USDT | +21.90% | $19,051,542.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.61% | +3.71% |
-| DASH/USDT:USDT | below_1h_threshold | +3.24% | +3.35% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.86% | +2.96% |
-| DUSK/USDT:USDT | below_1h_threshold | +2.24% | +2.34% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.21% | +2.31% |
+| POPCAT/USDT:USDT | below_1h_threshold | +3.80% | +3.93% |
+| LAB/USDT:USDT | below_1h_threshold | +3.36% | +3.49% |
+| DASH/USDT:USDT | below_1h_threshold | +3.18% | +3.32% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.91% | +3.04% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.31% | +2.44% |
 
 ## 4. 次に見るべき不足
 
