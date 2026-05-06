@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T08:27:27.426803+00:00
+- generated_at: 2026-05-06T08:29:27.568373+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3435**
 
@@ -44,7 +44,15 @@
 - 最新: TAG/USDT:USDT TP_HIT PnL +8.00% 残高後 $101.34
 - 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
-## 3. Latest Market Context
+## 3. Safe Adaptive DryRun ($100)
+
+- 残高: **$100.00** / 初期 $100.00 (+0.00%)
+- 確定: 0件 (Win 0 / Loss 0 / Flat 0) / skip 0件
+- 成長率目線: 平均log +0.000000 / 幾何平均 +0.000% per trade / maxDD +0.00%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 状態: 新しい$100口座として開始済み。開始後に閉じたシャドウトレードから反映します。
+
+## 4. Latest Market Context
 
 - 更新: 2026-05-06T08:27:25.121780+00:00 / 保存件数 288/288
 - BTC: BULLISH 1h +0.22% price=81509.9
@@ -73,7 +81,7 @@
 | FHE/USDT:USDT | below_1h_threshold | +2.71% | +2.50% |
 | S/USDT:USDT | below_1h_threshold | +2.55% | +2.33% |
 
-## 4. 次に見るべき不足
+## 5. 次に見るべき不足
 
 - LIMIT戦略は期待値が高く出やすいので、実行するならpending注文/約定待ち/未約定失効をlive側で実装してから昇格。
 - near miss銘柄の1h/4h後リターンを保存すると、閾値を5%固定にするべきか判断しやすい。

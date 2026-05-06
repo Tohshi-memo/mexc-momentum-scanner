@@ -34,6 +34,7 @@ from core.live_filter import LiveTradeFilter
 from core.live_portfolio import LivePortfolio
 from core.live_strategy import DIR_SHORT, ENTRY_MARKET, LiveStrategyBuilder, LiveTradePlan
 from core.market_context import MarketContextRecorder
+from core.safe_adaptive_portfolio import SafeAdaptivePortfolio
 from core.scanner import MarketScanner
 from core.strategy_ranker import StrategyRanker
 from core.stats import StatsManager
@@ -631,6 +632,7 @@ def main() -> None:
     notifier             = Notifier()
     experiment_tracker   = ExperimentTracker()
     live_portfolio       = LivePortfolio()
+    safe_adaptive_portfolio = SafeAdaptivePortfolio()
     live_filter          = LiveTradeFilter()
     strategy_ranker      = StrategyRanker(experiment_tracker)
     live_strategy        = LiveStrategyBuilder(
@@ -664,6 +666,12 @@ def main() -> None:
                 live_portfolio.save()
             except Exception as e:
                 logger.error("Failed to save data: %s", e)
+            # Existing live_portfolio remains untouched; this is a separate $100
+            # adaptive DryRun account driven by closed shadow experiments.
+            try:
+                safe_adaptive_portfolio.update()
+            except Exception as e:
+                logger.warning("Failed to update safe adaptive portfolio: %s", e)
             # シャドウトレードの集計レポートを再生成
             # （Claude が次回セッションでフィルター粒度を再評価するための入力）
             try:

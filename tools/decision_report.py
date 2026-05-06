@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import math
 import os
 import sys
 from datetime import datetime, timezone
@@ -33,6 +34,7 @@ from tools.analyze_experiments import (  # noqa: E402
 
 DEFAULT_OUTPUT = Path("data/decision_report.md")
 LIVE_PORTFOLIO_FILE = Path("data/live_portfolio.json")
+SAFE_ADAPTIVE_FILE = Path("data/safe_adaptive_portfolio.json")
 MARKET_CONTEXT_FILE = Path("data/market_context.json")
 
 
@@ -147,12 +149,70 @@ def _portfolio_section(path: Path) -> list[str]:
     return lines
 
 
+def _safe_adaptive_section(path: Path) -> list[str]:
+    data = _load_json(path)
+    if not data:
+        return [
+            "## 3. Safe Adaptive DryRun ($100)",
+            "",
+            "- 状態: `data/safe_adaptive_portfolio.json` はまだありません。",
+            "- 既存のLive Portfolioとは別口座として、次回実行から作成されます。",
+            "",
+        ]
+
+    initial = float(data.get("initial_capital") or 0.0)
+    balance = float(data.get("balance") or 0.0)
+    trades = data.get("trades") if isinstance(data.get("trades"), list) else []
+    summary = data.get("summary") if isinstance(data.get("summary"), dict) else {}
+    config = data.get("config") if isinstance(data.get("config"), dict) else {}
+    decision = data.get("last_decision") if isinstance(data.get("last_decision"), dict) else {}
+    strategy = decision.get("strategy") or "見送り"
+    reason = decision.get("reason") or "n/a"
+    ret = (balance - initial) / initial * 100 if initial > 0 else 0.0
+    avg_log = float(summary.get("avg_log_return") or 0.0)
+    geo = (math.exp(avg_log) - 1.0) * 100 if trades else 0.0
+    latest = trades[-1] if trades else None
+
+    lines = [
+        "## 3. Safe Adaptive DryRun ($100)",
+        "",
+        f"- 残高: **{_fmt_usd(balance)}** / 初期 {_fmt_usd(initial)} ({_fmt_pct(ret)})",
+        (
+            f"- 確定: {len(trades)}件 "
+            f"(Win {summary.get('wins', 0)} / Loss {summary.get('losses', 0)} / Flat {summary.get('flat', 0)}) "
+            f"/ skip {data.get('skipped_count', 0)}件"
+        ),
+        (
+            f"- 成長率目線: 平均log {avg_log:+.6f} / 幾何平均 {geo:+.3f}% per trade "
+            f"/ maxDD {_fmt_pct(float(data.get('max_drawdown_pct') or 0.0))}"
+        ),
+        (
+            f"- 次の候補: `{strategy}` ({reason}) "
+            f"/ risk {float(config.get('risk_pct') or 0.0):.2f}% "
+            f"/ daily stop {float(config.get('daily_loss_stop_pct') or 0.0):.1f}% "
+            f"/ DD stop {float(config.get('max_portfolio_dd_pct') or 0.0):.1f}%"
+        ),
+    ]
+    if latest:
+        lines.append(
+            "- 最新: "
+            f"{latest.get('symbol', '?')} `{latest.get('strategy', '?')}` "
+            f"{latest.get('outcome', '?')} "
+            f"account {_fmt_pct(float(latest.get('account_return_pct') or 0.0))} "
+            f"残高後 {_fmt_usd(float(latest.get('balance_after') or 0.0))}"
+        )
+    else:
+        lines.append("- 状態: 新しい$100口座として開始済み。開始後に閉じたシャドウトレードから反映します。")
+    lines.append("")
+    return lines
+
+
 def _market_context_section(path: Path) -> list[str]:
     data = _load_json(path)
     records = data.get("records") if data else None
     if not isinstance(records, list) or not records:
         return [
-            "## 3. Latest Market Context",
+            "## 4. Latest Market Context",
             "",
             "- 状態: `data/market_context.json` はまだ蓄積中です。",
             "",
@@ -170,7 +230,7 @@ def _market_context_section(path: Path) -> list[str]:
     top_by_24h = scan.get("top_by_24h") or []
 
     lines = [
-        "## 3. Latest Market Context",
+        "## 4. Latest Market Context",
         "",
         f"- 更新: {latest.get('timestamp', 'n/a')} / 保存件数 {len(records)}/{data.get('max_records', 'n/a')}",
         (
@@ -283,7 +343,7 @@ def generate_report(
         "# Decision Report",
         "",
         f"- generated_at: {generated_at}",
-        f"- source: `{input_path}` + archive={include_archives}",
+        f"- source: `{input_path.as_posix()}` + archive={include_archives}",
         f"- closed shadow trades: **{len(closed)}**",
         "",
         "## 1. 今日の判断",
@@ -307,9 +367,10 @@ def generate_report(
         "",
     ]
     lines += _portfolio_section(LIVE_PORTFOLIO_FILE)
+    lines += _safe_adaptive_section(SAFE_ADAPTIVE_FILE)
     lines += _market_context_section(MARKET_CONTEXT_FILE)
     lines += [
-        "## 4. 次に見るべき不足",
+        "## 5. 次に見るべき不足",
         "",
         "- LIMIT戦略は期待値が高く出やすいので、実行するならpending注文/約定待ち/未約定失効をlive側で実装してから昇格。",
         "- near miss銘柄の1h/4h後リターンを保存すると、閾値を5%固定にするべきか判断しやすい。",
