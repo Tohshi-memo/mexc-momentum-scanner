@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T02:42:27.892707+00:00
+- generated_at: 2026-05-06T02:47:28.468510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3410**
 
@@ -46,32 +46,32 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T02:42:25.676066+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=81214.1
-- Funnel: target 765 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-06T02:47:26.271067+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=81192.2
+- Funnel: target 765 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
+- Strict後reject: 4h RSI 67.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +34.63% | $1,315,265.49 |
-| NOT/USDT:USDT | +27.87% | $5,892,677.18 |
-| MAVIA/USDT:USDT | +27.63% | $1,720,429.73 |
-| B/USDT:USDT | +26.75% | $11,495,279.39 |
-| ZEC/USDT:USDT | +21.53% | $604,640,587.42 |
+| B3/USDT:USDT | +35.05% | $1,319,896.20 |
+| MAVIA/USDT:USDT | +27.90% | $1,723,182.33 |
+| NOT/USDT:USDT | +27.02% | $5,971,056.66 |
+| B/USDT:USDT | +23.33% | $11,802,556.69 |
+| ZEC/USDT:USDT | +22.07% | $605,796,027.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_1h_threshold | +4.68% | +4.89% |
-| AR/USDT:USDT | below_1h_threshold | +4.62% | +4.84% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.81% | +3.03% |
-| AKT/USDT:USDT | below_1h_threshold | +2.31% | +2.53% |
-| WIF/USDT:USDT | below_1h_threshold | +1.66% | +1.88% |
+| AR/USDT:USDT | below_1h_threshold | +4.50% | +4.74% |
+| NOT/USDT:USDT | below_1h_threshold | +3.66% | +3.90% |
+| JTO/USDT:USDT | below_1h_threshold | +3.29% | +3.53% |
+| AKT/USDT:USDT | below_1h_threshold | +2.59% | +2.84% |
+| WIF/USDT:USDT | below_1h_threshold | +1.85% | +2.10% |
 
 ## 4. 次に見るべき不足
 
