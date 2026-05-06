@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T03:27:18.064272+00:00
+- generated_at: 2026-05-06T03:32:26.164081+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3412**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T03:27:16.143092+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=81635.9
+- 更新: 2026-05-06T03:32:24.200201+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=81597.9
 - Funnel: target 765 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +28.42% | $1,371,138.05 |
-| MAVIA/USDT:USDT | +25.81% | $1,758,129.51 |
-| NOT/USDT:USDT | +24.82% | $6,591,886.49 |
-| ZEC/USDT:USDT | +22.38% | $601,713,300.47 |
-| SMCISTOCK/USDT:USDT | +20.44% | $5,239,455.75 |
+| B3/USDT:USDT | +29.55% | $1,378,258.35 |
+| MAVIA/USDT:USDT | +27.13% | $1,759,937.82 |
+| NOT/USDT:USDT | +25.42% | $6,692,880.07 |
+| ZEC/USDT:USDT | +23.81% | $603,300,024.36 |
+| SMCISTOCK/USDT:USDT | +20.77% | $5,242,035.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.29% | +2.90% |
-| LAB/USDT:USDT | below_1h_threshold | +3.21% | +2.82% |
-| VVV/USDT:USDT | below_1h_threshold | +1.63% | +1.24% |
-| TIA/USDT:USDT | below_1h_threshold | +1.59% | +1.20% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.38% | +0.99% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +4.55% | +4.20% |
+| TIA/USDT:USDT | below_1h_threshold | +2.38% | +2.03% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.18% | +1.84% |
+| APT/USDT:USDT | below_1h_threshold | +2.12% | +1.78% |
+| GALA/USDT:USDT | below_1h_threshold | +1.85% | +1.51% |
 
 ## 4. 次に見るべき不足
 
