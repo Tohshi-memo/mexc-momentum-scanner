@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T21:47:35.810677+00:00
+- generated_at: 2026-05-06T21:52:31.904575+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3504**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T21:47:32.313267+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=81487.9
-- Funnel: target 764 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.8 >= 65=1, 4h RSI 77.5 >= 65=1
+- 更新: 2026-05-06T21:52:28.983846+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=81523.7
+- Funnel: target 764 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +48.83% | $13,600,968.94 |
-| BILL/USDT:USDT | +17.99% | $7,933,005.34 |
-| ZEREBRO/USDT:USDT | +12.04% | $1,412,648.35 |
-| LAB/USDT:USDT | +8.62% | $242,839,080.00 |
-| DOGS/USDT:USDT | +8.12% | $6,426,654.91 |
+| PLAY/USDT:USDT | +44.88% | $13,916,223.02 |
+| BILL/USDT:USDT | +18.09% | $8,099,028.07 |
+| ZEREBRO/USDT:USDT | +12.87% | $1,427,024.03 |
+| LAB/USDT:USDT | +8.65% | $243,296,534.66 |
+| OP/USDT:USDT | +8.30% | $17,544,661.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +3.76% | +3.63% |
-| ICP/USDT:USDT | below_1h_threshold | +3.49% | +3.36% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.38% | +3.25% |
-| GALA/USDT:USDT | below_1h_threshold | +2.48% | +2.34% |
-| LAB/USDT:USDT | below_1h_threshold | +2.43% | +2.29% |
+| ICP/USDT:USDT | below_1h_threshold | +4.76% | +4.58% |
+| OP/USDT:USDT | below_1h_threshold | +4.69% | +4.51% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.21% | +3.03% |
+| GALA/USDT:USDT | below_1h_threshold | +2.75% | +2.57% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.59% | +2.41% |
 
 ## 5. 次に見るべき不足
 
