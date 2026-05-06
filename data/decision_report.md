@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T18:17:37.689459+00:00
+- generated_at: 2026-05-06T18:22:34.893198+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3490**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T18:17:34.159649+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81497.6
-- Funnel: target 766 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-06T18:22:32.248095+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81454.3
+- Funnel: target 766 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +32.85% | $4,814,225.03 |
-| LAB/USDT:USDT | +6.50% | $219,788,510.23 |
-| TONCOIN/USDT:USDT | +5.99% | $241,411,650.73 |
-| ZEREBRO/USDT:USDT | +5.65% | $1,034,219.33 |
-| FHE/USDT:USDT | +5.44% | $32,836,833.74 |
+| PLAY/USDT:USDT | +29.36% | $5,001,397.12 |
+| TONCOIN/USDT:USDT | +6.75% | $242,000,376.89 |
+| FHE/USDT:USDT | +5.41% | $32,879,435.96 |
+| ZEREBRO/USDT:USDT | +5.15% | $1,038,884.30 |
+| BILL/USDT:USDT | +5.08% | $6,983,885.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +1.98% | +1.86% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.96% | +1.84% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.35% |
-| LYN/USDT:USDT | below_1h_threshold | +1.45% | +1.34% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.21% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.70% | +2.63% |
+| BILL/USDT:USDT | below_1h_threshold | +2.40% | +2.34% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.69% | +1.63% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.58% | +1.51% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.35% |
 
 ## 5. 次に見るべき不足
 
