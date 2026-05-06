@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T22:17:31.815845+00:00
+- generated_at: 2026-05-06T22:22:26.160548+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3506**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T22:17:29.011962+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=81306.5
-- Funnel: target 764 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-06T22:22:23.533547+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=81251.5
+- Funnel: target 764 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +54.14% | $14,625,749.35 |
-| BILL/USDT:USDT | +18.46% | $8,761,609.35 |
-| ZEREBRO/USDT:USDT | +13.89% | $1,430,920.52 |
-| LAB/USDT:USDT | +9.15% | $239,649,434.46 |
-| VVV/USDT:USDT | +9.15% | $6,669,460.96 |
+| PLAY/USDT:USDT | +52.13% | $14,750,508.85 |
+| BILL/USDT:USDT | +16.63% | $8,860,700.78 |
+| ZEREBRO/USDT:USDT | +13.71% | $1,440,442.28 |
+| VVV/USDT:USDT | +8.89% | $6,713,997.53 |
+| LAB/USDT:USDT | +8.83% | $240,342,084.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.83% | +4.06% |
-| DOGS/USDT:USDT | below_1h_threshold | +0.92% | +1.15% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +0.76% | +0.99% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +0.67% | +0.91% |
-| LAB/USDT:USDT | below_1h_threshold | +0.52% | +0.75% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.64% | +2.94% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +0.63% | +0.93% |
+| DOGS/USDT:USDT | below_1h_threshold | +0.51% | +0.81% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +0.51% | +0.81% |
+| PANWSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.58% |
 
 ## 5. 次に見るべき不足
 
