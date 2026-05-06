@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T14:02:37.144363+00:00
+- generated_at: 2026-05-06T14:07:31.458306+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3463**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T14:02:34.510737+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=81531.8
+- 更新: 2026-05-06T14:07:28.810826+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=81096.3
 - Funnel: target 770 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +87.89% | $3,230,013.00 |
-| IO/USDT:USDT | +32.22% | $14,950,703.09 |
-| BILL/USDT:USDT | +31.91% | $5,434,497.61 |
-| ZEC/USDT:USDT | +31.42% | $755,375,658.77 |
-| FHE/USDT:USDT | +31.29% | $33,090,448.06 |
+| B3/USDT:USDT | +90.62% | $3,292,682.63 |
+| BILL/USDT:USDT | +32.88% | $5,478,909.74 |
+| IO/USDT:USDT | +31.71% | $14,964,639.89 |
+| ZEC/USDT:USDT | +30.72% | $757,310,533.67 |
+| FHE/USDT:USDT | +30.39% | $33,268,420.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +0.98% | +1.09% |
-| FHE/USDT:USDT | below_1h_threshold | +0.94% | +1.05% |
-| JTO/USDT:USDT | below_1h_threshold | +0.79% | +0.90% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.51% | +0.62% |
-| B3/USDT:USDT | below_1h_threshold | +0.36% | +0.47% |
+| B3/USDT:USDT | below_1h_threshold | +1.82% | +2.47% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +0.83% | +1.47% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.51% | +1.15% |
+| SWARMS/USDT:USDT | below_1h_threshold | +0.15% | +0.79% |
+| FHE/USDT:USDT | below_1h_threshold | +0.15% | +0.79% |
 
 ## 5. 次に見るべき不足
 
