@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T16:42:52.346822+00:00
+- generated_at: 2026-05-06T16:47:40.714880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3483**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T16:42:46.831772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=81612.1
+- 更新: 2026-05-06T16:47:34.678020+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81632.7
 - Funnel: target 770 → liquid 194 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 70.0 >= 65=1
+- Strict後reject: 4h RSI 80.4 >= 65=1, 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +7.81% | $203,143,094.10 |
-| DOGS/USDT:USDT | +7.27% | $8,869,753.44 |
-| FHE/USDT:USDT | +5.93% | $34,206,517.95 |
-| TONCOIN/USDT:USDT | +2.70% | $243,550,875.26 |
-| B/USDT:USDT | +2.68% | $11,560,643.34 |
+| LAB/USDT:USDT | +9.48% | $204,933,129.37 |
+| FHE/USDT:USDT | +6.26% | $34,257,757.55 |
+| DOGS/USDT:USDT | +6.07% | $8,889,719.22 |
+| TONCOIN/USDT:USDT | +3.47% | $244,155,068.64 |
+| RAVE/USDT:USDT | +2.80% | $16,912,187.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.91% | +2.96% |
-| B/USDT:USDT | below_1h_threshold | +2.69% | +2.74% |
-| ICP/USDT:USDT | below_1h_threshold | +2.45% | +2.51% |
-| XPL/USDT:USDT | below_1h_threshold | +2.44% | +2.50% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.28% | +2.33% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.48% | +3.50% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.94% | +2.97% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.73% | +2.76% |
+| XPL/USDT:USDT | below_1h_threshold | +2.65% | +2.67% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.56% | +2.59% |
 
 ## 5. 次に見るべき不足
 
