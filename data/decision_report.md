@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T02:07:42.422038+00:00
+- generated_at: 2026-05-06T02:12:25.143087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3404**
 
@@ -46,8 +46,8 @@
 
 ## 3. Latest Market Context
 
-- 更新: 2026-05-06T02:07:40.378180+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=81211.8
+- 更新: 2026-05-06T02:12:23.159575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=81297.6
 - Funnel: target 765 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -55,21 +55,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +39.23% | $1,242,254.98 |
-| MAVIA/USDT:USDT | +28.63% | $1,695,764.31 |
-| ZEC/USDT:USDT | +21.31% | $595,984,567.78 |
-| SWARMS/USDT:USDT | +19.88% | $2,346,365.61 |
-| SMCISTOCK/USDT:USDT | +19.83% | $5,203,187.89 |
+| B3/USDT:USDT | +37.51% | $1,251,150.80 |
+| MAVIA/USDT:USDT | +29.07% | $1,698,159.23 |
+| NOT/USDT:USDT | +23.22% | $5,463,419.17 |
+| ZEC/USDT:USDT | +22.76% | $598,150,862.18 |
+| SWARMS/USDT:USDT | +19.76% | $2,348,727.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +1.91% | +2.13% |
-| STRK/USDT:USDT | below_1h_threshold | +1.76% | +1.98% |
-| B3/USDT:USDT | below_1h_threshold | +1.21% | +1.43% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.20% | +1.42% |
-| AERO/USDT:USDT | below_1h_threshold | +0.96% | +1.18% |
+| AR/USDT:USDT | below_1h_threshold | +3.05% | +3.17% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.02% | +2.13% |
+| STRK/USDT:USDT | below_1h_threshold | +1.61% | +1.73% |
+| AKT/USDT:USDT | below_1h_threshold | +1.45% | +1.56% |
+| AERO/USDT:USDT | below_1h_threshold | +1.23% | +1.35% |
 
 ## 4. 次に見るべき不足
 
