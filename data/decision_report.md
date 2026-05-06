@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-06T12:47:30.648004+00:00
+- generated_at: 2026-05-06T12:52:27.285185+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3456**
+- closed shadow trades: **3457**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3456, expectancy=-0.15%
+- 全期間 MARKET基準: n=3457, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=-1.59%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,17 +25,17 @@
 | LIMIT_10PCT | 2/20 | 10.0% | +6.88% | **+0.69%** |
 | LIMIT_8PCT | 3/20 | 15.0% | +4.39% | **+0.66%** |
 | LIMIT_FIB1272 | 8/20 | 40.0% | +1.31% | **+0.52%** |
-| LIMIT_BB3S | 4/15 | 26.7% | +1.26% | **+0.34%** |
+| LIMIT_BB3S | 5/16 | 31.2% | +0.21% | **+0.07%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_4PCT_LONG | 9/20 | 45.0% | +2.76% | **+1.24%** |
-| LIMIT_1PCT_LONG | 13/20 | 65.0% | +1.83% | **+1.19%** |
-| ASK_LONG | 20/20 | 100.0% | +1.01% | **+1.01%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.91% | **+0.91%** |
-| LIMIT_2PCT_LONG | 11/20 | 55.0% | +1.57% | **+0.86%** |
+| LIMIT_1PCT_LONG | 13/20 | 65.0% | +2.53% | **+1.64%** |
+| ASK_LONG | 20/20 | 100.0% | +1.35% | **+1.35%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.31% | **+1.31%** |
+| LIMIT_2PCT_LONG | 10/20 | 50.0% | +2.12% | **+1.06%** |
+| LIMIT_4PCT_LONG | 8/20 | 40.0% | +2.11% | **+0.84%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$98.01** / 初期 $100.00 (-1.99%)
-- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 8件
+- 確定: 9件 (Win 0 / Loss 4 / Flat 5) / skip 9件
 - 成長率目線: 平均log -0.002228 / 幾何平均 -0.223% per trade / maxDD +1.99%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LYN/USDT:USDT `LIMIT_BB3S` SL_HIT account -0.50% 残高後 $98.01
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T12:47:27.315771+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=82294.9
+- 更新: 2026-05-06T12:52:23.739375+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=82359.9
 - Funnel: target 770 → liquid 201 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.9 >= 65=1, 4h RSI 75.3 >= 65=1
+- Strict後reject: 4h RSI 82.7 >= 65=1, 4h RSI 75.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +85.43% | $1,928,978.37 |
-| FHE/USDT:USDT | +42.90% | $31,770,862.06 |
-| IO/USDT:USDT | +39.03% | $14,061,143.53 |
-| BILL/USDT:USDT | +37.09% | $4,354,938.04 |
-| LAB/USDT:USDT | +36.99% | $127,362,909.53 |
+| B3/USDT:USDT | +91.25% | $2,055,985.03 |
+| FHE/USDT:USDT | +41.88% | $32,016,776.23 |
+| BILL/USDT:USDT | +40.04% | $4,412,823.70 |
+| LAB/USDT:USDT | +38.87% | $127,911,561.61 |
+| IO/USDT:USDT | +38.26% | $14,128,097.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +5.00% | +5.23% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.85% | +4.09% |
-| ENA/USDT:USDT | below_1h_threshold | +3.75% | +3.98% |
-| XPL/USDT:USDT | below_1h_threshold | +2.36% | +2.59% |
-| CLANKER/USDT:USDT | below_1h_threshold | +2.13% | +2.36% |
+| FHE/USDT:USDT | below_1h_threshold | +4.45% | +4.61% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.43% | +4.58% |
+| ENA/USDT:USDT | below_1h_threshold | +3.51% | +3.66% |
+| XPL/USDT:USDT | below_1h_threshold | +3.18% | +3.33% |
+| DASH/USDT:USDT | below_1h_threshold | +3.13% | +3.28% |
 
 ## 5. 次に見るべき不足
 
