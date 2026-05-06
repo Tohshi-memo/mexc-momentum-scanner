@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T12:32:45.987919+00:00
+- generated_at: 2026-05-06T12:37:34.153905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3454**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T12:32:42.565992+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=82325.2
-- Funnel: target 770 → liquid 201 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1, 4h RSI 76.1 >= 65=1
+- 更新: 2026-05-06T12:37:30.854819+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=82338.1
+- Funnel: target 770 → liquid 201 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.6 >= 65=1, 4h RSI 75.8 >= 65=1, 4h RSI 79.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +60.09% | $1,680,504.17 |
-| FHE/USDT:USDT | +42.52% | $31,214,270.84 |
-| LAB/USDT:USDT | +40.44% | $124,986,775.69 |
-| BILL/USDT:USDT | +39.59% | $4,171,480.15 |
-| IO/USDT:USDT | +39.20% | $13,928,084.30 |
+| B3/USDT:USDT | +62.57% | $1,712,692.55 |
+| FHE/USDT:USDT | +43.54% | $31,393,363.36 |
+| BILL/USDT:USDT | +40.53% | $4,210,689.44 |
+| IO/USDT:USDT | +40.13% | $13,978,034.53 |
+| LAB/USDT:USDT | +38.52% | $126,002,586.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.57% | +4.77% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.62% | +2.81% |
-| ENA/USDT:USDT | below_1h_threshold | +2.38% | +2.58% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.00% | +2.19% |
-| VVV/USDT:USDT | below_1h_threshold | +1.79% | +1.98% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.70% | +2.88% |
+| ENA/USDT:USDT | below_1h_threshold | +2.47% | +2.65% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.10% | +2.28% |
+| CLANKER/USDT:USDT | below_1h_threshold | +1.72% | +1.90% |
+| VVV/USDT:USDT | below_1h_threshold | +1.68% | +1.86% |
 
 ## 5. 次に見るべき不足
 
