@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T13:47:24.924806+00:00
+- generated_at: 2026-05-06T13:52:32.295777+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3463**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T13:47:22.113094+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.70% price=81610.0
-- Funnel: target 770 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-06T13:52:29.492158+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.63% price=81668.4
+- Funnel: target 770 → liquid 204 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +88.42% | $3,100,362.47 |
-| BILL/USDT:USDT | +39.18% | $5,196,796.35 |
-| TONCOIN/USDT:USDT | +36.67% | $238,408,903.32 |
-| IO/USDT:USDT | +33.07% | $14,873,341.01 |
-| ZEC/USDT:USDT | +30.76% | $781,220,919.02 |
+| B3/USDT:USDT | +89.75% | $3,158,426.81 |
+| BILL/USDT:USDT | +37.29% | $5,300,743.91 |
+| IO/USDT:USDT | +32.65% | $14,913,973.45 |
+| ZEC/USDT:USDT | +31.96% | $783,034,584.44 |
+| TONCOIN/USDT:USDT | +29.72% | $243,527,891.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.43% | +5.13% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.67% |
-| JTO/USDT:USDT | below_1h_threshold | +2.86% | +3.56% |
-| H/USDT:USDT | below_1h_threshold | +2.38% | +3.08% |
-| BILL/USDT:USDT | below_1h_threshold | +2.08% | +2.79% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +3.66% | +4.29% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +3.25% |
+| H/USDT:USDT | below_1h_threshold | +2.18% | +2.81% |
+| BILL/USDT:USDT | below_1h_threshold | +0.65% | +1.28% |
+| ETC/USDT:USDT | below_1h_threshold | +0.57% | +1.20% |
 
 ## 5. 次に見るべき不足
 
