@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-06T10:01:39.684872+00:00
+- generated_at: 2026-05-06T10:04:34.944363+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3443**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-06T10:01:37.100663+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81946.1
+- 更新: 2026-05-06T10:04:32.437604+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81984.2
 - Funnel: target 769 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IO/USDT:USDT | +47.36% | $11,124,485.97 |
-| B3/USDT:USDT | +34.71% | $1,477,014.03 |
-| ZEC/USDT:USDT | +32.03% | $745,401,747.85 |
-| STORJ/USDT:USDT | +29.42% | $2,624,168.53 |
-| LAB/USDT:USDT | +24.32% | $124,273,748.43 |
+| IO/USDT:USDT | +50.93% | $11,193,403.59 |
+| B3/USDT:USDT | +36.21% | $1,478,942.40 |
+| ZEC/USDT:USDT | +32.30% | $746,121,013.52 |
+| STORJ/USDT:USDT | +29.92% | $2,626,914.96 |
+| FHE/USDT:USDT | +23.97% | $29,131,215.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +2.11% | +2.13% |
-| POPCAT/USDT:USDT | below_1h_threshold | +0.49% | +0.51% |
-| FHE/USDT:USDT | below_1h_threshold | +0.41% | +0.43% |
-| B3/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.24% | +2.21% |
+| B3/USDT:USDT | below_1h_threshold | +1.51% | +1.48% |
+| IO/USDT:USDT | below_1h_threshold | +1.43% | +1.40% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +0.36% | +0.33% |
+| GALA/USDT:USDT | below_1h_threshold | +0.36% | +0.33% |
 
 ## 5. 次に見るべき不足
 
