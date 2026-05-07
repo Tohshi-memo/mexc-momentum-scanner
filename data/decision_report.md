@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T00:47:47.008005+00:00
+- generated_at: 2026-05-07T00:52:51.840014+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3514**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T00:47:42.172359+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=80999.9
-- Funnel: target 766 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-07T00:52:46.036006+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=81015.3
+- Funnel: target 766 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +23.19% | $18,900,009.62 |
-| ZEREBRO/USDT:USDT | +21.00% | $1,834,506.69 |
-| LAB/USDT:USDT | +14.31% | $254,535,688.81 |
-| PENGUIN/USDT:USDT | +14.17% | $1,006,543.64 |
-| DOGS/USDT:USDT | +13.14% | $5,127,712.17 |
+| DOGS/USDT:USDT | +19.57% | $5,184,387.24 |
+| ZEREBRO/USDT:USDT | +19.31% | $1,846,591.73 |
+| PLAY/USDT:USDT | +19.10% | $19,060,909.16 |
+| PENGUIN/USDT:USDT | +14.17% | $1,011,402.26 |
+| LAB/USDT:USDT | +13.88% | $254,822,444.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGS/USDT:USDT | below_1h_threshold | +4.45% | +4.93% |
-| VVV/USDT:USDT | below_1h_threshold | +3.51% | +3.99% |
-| TAG/USDT:USDT | below_1h_threshold | +2.31% | +2.79% |
-| B/USDT:USDT | below_1h_threshold | +2.29% | +2.77% |
-| FHE/USDT:USDT | below_1h_threshold | +2.25% | +2.73% |
+| VVV/USDT:USDT | below_1h_threshold | +4.02% | +4.48% |
+| FHE/USDT:USDT | below_1h_threshold | +3.70% | +4.16% |
+| B/USDT:USDT | below_1h_threshold | +2.70% | +3.16% |
+| LYN/USDT:USDT | below_1h_threshold | +1.29% | +1.75% |
+| ENSO/USDT:USDT | below_1h_threshold | +1.08% | +1.54% |
 
 ## 5. 次に見るべき不足
 
