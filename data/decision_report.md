@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T04:43:17.609850+00:00
+- generated_at: 2026-05-07T04:47:49.408753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3565**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T04:43:09.035131+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80831.0
-- Funnel: target 769 → liquid 187 → pre 50 → checked 50 → surge 7 → strict 2
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 85.0 >= 65=1, 4h RSI 82.6 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 98.0 >= 65=1
+- 更新: 2026-05-07T04:47:41.396696+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80867.1
+- Funnel: target 769 → liquid 187 → pre 50 → checked 50 → surge 6 → strict 2
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 84.8 >= 65=1, 4h RSI 82.4 >= 65=1, 4h RSI 80.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +205.48% | $1,601,127.42 |
-| B3/USDT:USDT | +121.58% | $8,601,053.75 |
-| DOGS/USDT:USDT | +78.54% | $10,887,863.77 |
-| PENGUIN/USDT:USDT | +52.21% | $1,294,572.68 |
-| FHE/USDT:USDT | +41.60% | $16,558,764.95 |
+| SATO/USDT:USDT | +208.08% | $1,620,145.49 |
+| B3/USDT:USDT | +114.24% | $8,634,416.17 |
+| DOGS/USDT:USDT | +76.74% | $10,937,295.79 |
+| PENGUIN/USDT:USDT | +50.05% | $1,299,080.21 |
+| FHE/USDT:USDT | +40.41% | $16,595,730.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +4.02% | +3.98% |
-| GALA/USDT:USDT | below_1h_threshold | +3.45% | +3.41% |
-| HMSTR/USDT:USDT | below_1h_threshold | +3.39% | +3.35% |
-| ALGO/USDT:USDT | below_1h_threshold | +3.03% | +2.99% |
-| STX/USDT:USDT | below_1h_threshold | +2.87% | +2.83% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.14% | +4.06% |
+| AR/USDT:USDT | below_1h_threshold | +4.02% | +3.93% |
+| GALA/USDT:USDT | below_1h_threshold | +3.67% | +3.58% |
+| STX/USDT:USDT | below_1h_threshold | +3.21% | +3.13% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.95% | +2.86% |
 
 ## 5. 次に見るべき不足
 
