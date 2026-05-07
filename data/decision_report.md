@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T12:47:41.038171+00:00
+- generated_at: 2026-05-07T12:52:58.209753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3627**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T12:47:37.858881+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=81012.8
-- Funnel: target 771 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1
+- 更新: 2026-05-07T12:52:54.996679+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=81049.9
+- Funnel: target 771 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.8 >= 65=1, 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +99.72% | $11,989,195.58 |
-| PENGUIN/USDT:USDT | +70.89% | $3,863,724.66 |
-| SATO/USDT:USDT | +66.39% | $2,709,105.11 |
-| DOGS/USDT:USDT | +52.54% | $16,650,799.35 |
-| NIL/USDT:USDT | +36.30% | $3,332,833.61 |
+| B3/USDT:USDT | +99.29% | $12,030,521.97 |
+| PENGUIN/USDT:USDT | +68.39% | $3,900,472.21 |
+| SATO/USDT:USDT | +63.75% | $2,788,171.32 |
+| DOGS/USDT:USDT | +51.74% | $16,691,167.47 |
+| NIL/USDT:USDT | +36.98% | $3,356,790.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_relative_strength | +5.07% | +4.84% |
-| ONDO/USDT:USDT | below_1h_threshold | +4.96% | +4.73% |
-| POPCAT/USDT:USDT | below_1h_threshold | +3.41% | +3.18% |
-| BRETT/USDT:USDT | below_1h_threshold | +3.31% | +3.09% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.20% | +2.98% |
+| POPCAT/USDT:USDT | below_1h_threshold | +4.06% | +3.78% |
+| KSM/USDT:USDT | below_1h_threshold | +4.04% | +3.76% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.97% | +2.70% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.65% | +2.37% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.63% | +2.36% |
 
 ## 5. 次に見るべき不足
 
