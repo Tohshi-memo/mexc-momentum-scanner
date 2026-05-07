@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T20:57:43.814614+00:00
+- generated_at: 2026-05-07T21:02:59.501030+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3697**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T20:57:37.395407+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=79853.8
-- Funnel: target 766 → liquid 189 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.8 >= 65=1, 4h RSI 78.0 >= 65=1, 4h RSI 96.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-07T21:02:56.844933+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=79787.0
+- Funnel: target 765 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +34.67% | $5,202,979.40 |
-| SATO/USDT:USDT | +27.55% | $6,393,282.02 |
-| NIL/USDT:USDT | +26.56% | $12,088,880.91 |
-| NOT/USDT:USDT | +18.95% | $9,712,140.14 |
-| IRENSTOCK/USDT:USDT | +18.16% | $3,244,239.58 |
+| SATO/USDT:USDT | +36.98% | $6,305,437.84 |
+| TST/USDT:USDT | +33.05% | $5,275,999.96 |
+| NIL/USDT:USDT | +24.29% | $12,321,089.34 |
+| NOT/USDT:USDT | +20.16% | $9,743,670.66 |
+| IRENSTOCK/USDT:USDT | +18.51% | $3,456,422.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_1h_threshold | +2.43% | +2.73% |
-| LINEA/USDT:USDT | below_1h_threshold | +2.02% | +2.32% |
-| HMSTR/USDT:USDT | below_1h_threshold | +1.97% | +2.26% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.47% | +1.77% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.50% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.25% | +1.31% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.90% |
+| LAB/USDT:USDT | below_1h_threshold | +0.80% | +0.86% |
+| DOGS/USDT:USDT | below_1h_threshold | +0.75% | +0.81% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.81% |
 
 ## 5. 次に見るべき不足
 
