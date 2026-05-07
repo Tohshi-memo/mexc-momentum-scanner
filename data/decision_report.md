@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-07T23:12:35.228409+00:00
+- generated_at: 2026-05-07T23:17:37.197751+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3714**
+- closed shadow trades: **3715**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3714, expectancy=-0.16%
+- 全期間 MARKET基準: n=3715, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=+0.09%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_3PCT_LONG | 13/20 | 65.0% | +1.56% | **+1.01%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.83% | **+0.83%** |
-| LIMIT_8PCT_LONG | 6/20 | 30.0% | +2.67% | **+0.80%** |
 | LIMIT_5PCT_LONG | 10/20 | 50.0% | +1.36% | **+0.68%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
+| LIMIT_8PCT_LONG | 6/20 | 30.0% | +2.00% | **+0.60%** |
+| LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 189件 (Win 48 / Loss 64 / Flat 77) / skip 86件
+- 確定: 189件 (Win 48 / Loss 64 / Flat 77) / skip 87件
 - 成長率目線: 平均log +0.000427 / 幾何平均 +0.043% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: FHE/USDT:USDT `LIMIT_4PCT_LONG` SL_HIT account -0.50% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T23:12:32.480534+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=79919.0
-- Funnel: target 766 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-07T23:17:34.235200+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=79920.9
+- Funnel: target 766 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +47.89% | $23,778,542.14 |
-| SATO/USDT:USDT | +44.88% | $7,959,663.35 |
-| TST/USDT:USDT | +27.34% | $5,912,238.79 |
-| LAB/USDT:USDT | +18.63% | $222,687,822.04 |
-| DYDX/USDT:USDT | +16.37% | $9,894,403.32 |
+| SATO/USDT:USDT | +42.90% | $8,018,037.20 |
+| NIL/USDT:USDT | +42.04% | $24,658,728.77 |
+| TST/USDT:USDT | +26.36% | $5,922,208.13 |
+| LAB/USDT:USDT | +17.91% | $223,017,962.28 |
+| DYDX/USDT:USDT | +16.67% | $9,904,129.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| D/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
-| ICP/USDT:USDT | below_1h_threshold | +1.27% | +1.21% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.91% | +0.85% |
-| GALA/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
-| CHZ/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.93% | +1.87% |
+| IP/USDT:USDT | below_1h_threshold | +1.74% | +1.68% |
+| D/USDT:USDT | below_1h_threshold | +1.47% | +1.41% |
+| B/USDT:USDT | below_1h_threshold | +1.10% | +1.04% |
+| GALA/USDT:USDT | below_1h_threshold | +0.97% | +0.91% |
 
 ## 5. 次に見るべき不足
 
