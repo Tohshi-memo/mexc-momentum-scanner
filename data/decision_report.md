@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T02:12:24.416945+00:00
+- generated_at: 2026-05-07T02:17:33.112394+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3531**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T02:12:21.816781+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=80915.1
-- Funnel: target 770 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-07T02:17:27.736202+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=80900.0
+- Funnel: target 770 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +132.78% | $1,057,379.84 |
-| DOGS/USDT:USDT | +65.19% | $6,997,724.38 |
-| FHE/USDT:USDT | +33.78% | $15,683,293.48 |
-| PENGUIN/USDT:USDT | +29.21% | $1,074,118.73 |
-| LAB/USDT:USDT | +13.13% | $256,770,881.49 |
+| SATO/USDT:USDT | +135.60% | $1,062,194.31 |
+| DOGS/USDT:USDT | +72.04% | $7,154,333.19 |
+| FHE/USDT:USDT | +32.30% | $15,761,537.19 |
+| PENGUIN/USDT:USDT | +31.03% | $1,079,508.15 |
+| LAB/USDT:USDT | +13.25% | $257,138,170.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.18% | +3.43% |
-| NOT/USDT:USDT | below_1h_threshold | +2.38% | +2.63% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.03% | +2.29% |
-| TAG/USDT:USDT | below_1h_threshold | +1.64% | +1.89% |
-| SATO/USDT:USDT | below_1h_threshold | +1.57% | +1.83% |
+| TAG/USDT:USDT | below_1h_threshold | +2.70% | +2.98% |
+| SATO/USDT:USDT | below_1h_threshold | +2.39% | +2.67% |
+| NOT/USDT:USDT | below_1h_threshold | +2.28% | +2.55% |
+| ORCA/USDT:USDT | below_1h_threshold | +1.56% | +1.84% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +1.20% | +1.48% |
 
 ## 5. 次に見るべき不足
 
