@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-07T18:02:58.430666+00:00
+- generated_at: 2026-05-07T18:07:53.094131+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3674**
+- closed shadow trades: **3675**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3674, expectancy=-0.16%
+- 全期間 MARKET基準: n=3675, expectancy=-0.16%
 - 直近20件 MARKET基準: n=20, expectancy=-1.65%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,9 +21,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 6/20 | 30.0% | +2.91% | **+0.87%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_5PCT | 11/20 | 55.0% | +1.14% | **+0.63%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +3.11% | **+0.78%** |
+| LIMIT_5PCT | 10/20 | 50.0% | +1.16% | **+0.58%** |
 | LIMIT_7PCT | 4/20 | 20.0% | +2.80% | **+0.56%** |
 | LIMIT_FIB1272 | 5/20 | 25.0% | +1.07% | **+0.27%** |
 
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 2/2 | 100.0% | +2.46% | **+2.46%** |
-| LIMIT_3PCT_LONG | 13/20 | 65.0% | +3.20% | **+2.08%** |
+| LIMIT_3PCT_LONG | 14/20 | 70.0% | +3.49% | **+2.44%** |
+| LIMIT_4PCT_LONG | 10/20 | 50.0% | +3.20% | **+1.60%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +1.62% | **+1.46%** |
-| LIMIT_6PCT_LONG | 7/20 | 35.0% | +3.67% | **+1.29%** |
-| LIMIT_4PCT_LONG | 9/20 | 45.0% | +2.67% | **+1.20%** |
+| LIMIT_ATR_LONG | 8/20 | 40.0% | +3.48% | **+1.39%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,38 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$110.07** / 初期 $100.00 (+10.07%)
-- 確定: 168件 (Win 46 / Loss 57 / Flat 65) / skip 67件
-- 成長率目線: 平均log +0.000571 / 幾何平均 +0.057% per trade / maxDD +2.62%
+- 残高: **$111.17** / 初期 $100.00 (+11.17%)
+- 確定: 169件 (Win 47 / Loss 57 / Flat 65) / skip 67件
+- 成長率目線: 平均log +0.000627 / 幾何平均 +0.063% per trade / maxDD +2.62%
 - 次の候補: `LIMIT_6PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: NIL/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $110.07
+- 最新: JTO/USDT:USDT `LIMIT_4PCT_LONG` TP_HIT account +1.00% 残高後 $111.17
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T18:02:55.170429+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80082.1
-- Funnel: target 767 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-07T18:07:49.605073+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80120.0
+- Funnel: target 767 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +28.57% | $1,263,086.37 |
-| JTO/USDT:USDT | +26.16% | $12,317,570.82 |
-| SATO/USDT:USDT | +16.45% | $5,789,745.87 |
-| B/USDT:USDT | +13.06% | $4,639,186.53 |
-| LAB/USDT:USDT | +9.99% | $238,832,731.81 |
+| TST/USDT:USDT | +31.52% | $1,344,807.13 |
+| JTO/USDT:USDT | +27.61% | $12,759,603.25 |
+| B/USDT:USDT | +13.39% | $4,667,456.06 |
+| NIL/USDT:USDT | +12.17% | $7,237,132.65 |
+| SATO/USDT:USDT | +11.15% | $5,834,686.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.91% | +3.87% |
-| SATO/USDT:USDT | below_1h_threshold | +2.19% | +2.15% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +2.17% | +2.14% |
-| NOT/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
-| DYDX/USDT:USDT | below_1h_threshold | +0.94% | +0.91% |
+| TST/USDT:USDT | below_1h_threshold | +2.42% | +2.33% |
+| JTO/USDT:USDT | below_1h_threshold | +1.97% | +1.89% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.85% | +1.76% |
+| BSB/USDT:USDT | below_1h_threshold | +1.68% | +1.60% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.39% | +1.30% |
 
 ## 5. 次に見るべき不足
 
