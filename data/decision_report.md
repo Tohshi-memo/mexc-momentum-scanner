@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T16:18:04.718551+00:00
+- generated_at: 2026-05-07T16:22:51.799648+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3657**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T16:17:56.694918+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=79708.2
+- 更新: 2026-05-07T16:22:44.467697+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=79819.6
 - Funnel: target 771 → liquid 180 → pre 50 → checked 50 → surge 4 → strict 4
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +22.27% | $4,200,222.85 |
-| FHE/USDT:USDT | +12.21% | $13,819,352.27 |
-| LAB/USDT:USDT | +6.74% | $265,491,793.68 |
-| PENGUIN/USDT:USDT | +6.51% | $4,607,628.30 |
-| BILL/USDT:USDT | +4.62% | $11,279,218.38 |
+| SATO/USDT:USDT | +19.03% | $4,276,892.45 |
+| FHE/USDT:USDT | +10.85% | $13,911,777.11 |
+| LAB/USDT:USDT | +6.47% | $266,167,076.84 |
+| PENGUIN/USDT:USDT | +6.44% | $4,619,565.46 |
+| BILL/USDT:USDT | +3.48% | $11,350,062.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.76% | +4.96% |
-| M/USDT:USDT | below_1h_threshold | +2.98% | +3.17% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.14% | +2.33% |
-| NOT/USDT:USDT | below_1h_threshold | +1.81% | +2.01% |
-| STRK/USDT:USDT | below_1h_threshold | +1.67% | +1.86% |
+| BILL/USDT:USDT | below_1h_threshold | +3.45% | +3.50% |
+| NOT/USDT:USDT | below_1h_threshold | +3.12% | +3.17% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.97% | +3.02% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.63% | +2.69% |
+| STRK/USDT:USDT | below_1h_threshold | +2.45% | +2.50% |
 
 ## 5. 次に見るべき不足
 
