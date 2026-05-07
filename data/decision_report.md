@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T19:02:54.440209+00:00
+- generated_at: 2026-05-07T19:07:25.191683+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3687**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T19:02:51.146781+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=80077.4
+- 更新: 2026-05-07T19:07:22.420088+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=80052.7
 - Funnel: target 766 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +43.03% | $2,973,853.20 |
-| SATO/USDT:USDT | +24.14% | $6,023,804.41 |
-| JTO/USDT:USDT | +21.51% | $14,281,006.77 |
-| NOT/USDT:USDT | +15.17% | $8,589,635.75 |
-| NIL/USDT:USDT | +12.20% | $8,128,029.87 |
+| TST/USDT:USDT | +38.36% | $3,122,239.40 |
+| SATO/USDT:USDT | +26.63% | $6,046,358.96 |
+| JTO/USDT:USDT | +21.12% | $14,348,876.60 |
+| NOT/USDT:USDT | +14.75% | $8,654,884.99 |
+| DYDX/USDT:USDT | +12.71% | $6,912,960.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +1.96% | +2.07% |
-| SATO/USDT:USDT | below_1h_threshold | +0.72% | +0.82% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.46% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.46% |
-| HMSTR/USDT:USDT | below_1h_threshold | +0.33% | +0.43% |
+| SATO/USDT:USDT | below_1h_threshold | +2.54% | +2.67% |
+| DYDX/USDT:USDT | below_1h_threshold | +0.86% | +0.99% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.84% | +0.98% |
+| BSB/USDT:USDT | below_1h_threshold | +0.64% | +0.78% |
+| LINEA/USDT:USDT | below_1h_threshold | +0.43% | +0.56% |
 
 ## 5. 次に見るべき不足
 
