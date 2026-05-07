@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T19:22:51.064733+00:00
+- generated_at: 2026-05-07T19:27:33.815668+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3688**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T19:22:48.320554+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=80006.1
+- 更新: 2026-05-07T19:27:31.112218+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=79931.1
 - Funnel: target 766 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +39.74% | $3,393,108.24 |
-| JTO/USDT:USDT | +23.34% | $14,647,673.47 |
-| NOT/USDT:USDT | +15.42% | $8,908,164.08 |
-| DYDX/USDT:USDT | +14.15% | $7,101,593.25 |
-| SATO/USDT:USDT | +14.05% | $6,134,981.16 |
+| TST/USDT:USDT | +39.84% | $3,438,506.70 |
+| JTO/USDT:USDT | +20.82% | $14,723,238.16 |
+| NOT/USDT:USDT | +15.16% | $8,957,217.51 |
+| DYDX/USDT:USDT | +14.15% | $7,118,278.21 |
+| TONCOIN/USDT:USDT | +11.77% | $382,267,817.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_1h_threshold | +2.25% | +2.45% |
-| JTO/USDT:USDT | below_1h_threshold | +1.62% | +1.81% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.28% | +1.47% |
-| LIGHT/USDT:USDT | below_1h_threshold | +1.02% | +1.21% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.01% | +1.20% |
+| D/USDT:USDT | below_1h_threshold | +2.70% | +2.99% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.15% | +2.43% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.47% | +1.76% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.29% | +1.57% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.28% | +1.57% |
 
 ## 5. 次に見るべき不足
 
