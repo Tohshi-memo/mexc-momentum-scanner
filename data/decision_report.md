@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T06:47:39.367499+00:00
+- generated_at: 2026-05-07T06:52:34.205965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3581**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T06:47:35.608393+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=81286.9
-- Funnel: target 770 → liquid 187 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.2 >= 65=1, 4h RSI 82.2 >= 65=1, 4h RSI 87.3 >= 65=1, 4h RSI 68.9 >= 65=1
+- 更新: 2026-05-07T06:52:30.894870+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=81312.7
+- Funnel: target 770 → liquid 187 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.4 >= 65=1, 4h RSI 81.9 >= 65=1, 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +251.76% | $1,843,108.27 |
-| B3/USDT:USDT | +77.13% | $9,720,192.50 |
-| DOGS/USDT:USDT | +71.19% | $12,730,350.03 |
-| PENGUIN/USDT:USDT | +64.56% | $1,451,745.06 |
-| FHE/USDT:USDT | +31.08% | $17,194,635.19 |
+| SATO/USDT:USDT | +255.30% | $1,848,695.76 |
+| B3/USDT:USDT | +83.00% | $9,750,979.35 |
+| DOGS/USDT:USDT | +75.67% | $12,856,390.42 |
+| PENGUIN/USDT:USDT | +59.41% | $1,458,537.91 |
+| FHE/USDT:USDT | +32.33% | $17,232,893.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.44% | +4.14% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.83% | +2.53% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.66% | +2.36% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.53% | +2.23% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.35% | +2.06% |
+| SIREN/USDT:USDT | below_relative_strength | +5.16% | +4.83% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +3.88% | +3.55% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.62% | +3.29% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.93% | +2.61% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.88% | +2.55% |
 
 ## 5. 次に見るべき不足
 
