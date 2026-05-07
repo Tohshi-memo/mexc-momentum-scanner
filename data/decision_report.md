@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T01:52:37.288446+00:00
+- generated_at: 2026-05-07T01:57:32.235501+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3529**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T01:52:32.900894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=81124.6
-- Funnel: target 770 → liquid 189 → pre 50 → checked 50 → surge 6 → strict 0
+- 更新: 2026-05-07T01:57:28.174835+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=81142.2
+- Funnel: target 770 → liquid 190 → pre 50 → checked 50 → surge 6 → strict 0
 - Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1, 4h RSI 78.9 >= 65=1, 4h RSI 77.5 >= 65=1, 4h RSI 70.4 >= 65=1, 4h RSI 97.4 >= 65=1, 4h RSI 74.3 >= 65=1
+- Strict後reject: 4h RSI 80.9 >= 65=1, 4h RSI 78.3 >= 65=1, 4h RSI 78.1 >= 65=1, 4h RSI 71.0 >= 65=1, 4h RSI 74.1 >= 65=1, 4h RSI 97.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +131.67% | $1,042,455.26 |
-| DOGS/USDT:USDT | +59.85% | $6,855,956.31 |
-| PENGUIN/USDT:USDT | +30.35% | $1,055,289.53 |
-| FHE/USDT:USDT | +28.39% | $16,315,973.10 |
-| ZEREBRO/USDT:USDT | +14.71% | $2,032,266.73 |
+| SATO/USDT:USDT | +129.33% | $1,047,037.70 |
+| DOGS/USDT:USDT | +67.34% | $6,960,615.51 |
+| FHE/USDT:USDT | +31.83% | $16,396,739.06 |
+| PENGUIN/USDT:USDT | +27.96% | $1,062,720.04 |
+| TONCOIN/USDT:USDT | +11.83% | $253,570,605.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +3.58% | +3.38% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.60% | +1.40% |
-| AR/USDT:USDT | below_1h_threshold | +1.40% | +1.21% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.33% | +1.14% |
-| ALBSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +0.97% |
+| SATO/USDT:USDT | below_1h_threshold | +3.48% | +3.26% |
+| ALBSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.07% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.23% | +1.01% |
+| AR/USDT:USDT | below_1h_threshold | +0.78% | +0.56% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.77% | +0.55% |
 
 ## 5. 次に見るべき不足
 
