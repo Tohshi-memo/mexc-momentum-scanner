@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T14:52:36.790797+00:00
+- generated_at: 2026-05-07T14:57:45.743286+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3645**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T14:52:32.969139+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=80230.2
-- Funnel: target 771 → liquid 187 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1, 4h RSI 81.9 >= 65=1, 4h RSI 92.6 >= 65=1, 4h RSI 77.7 >= 65=1
+- 更新: 2026-05-07T14:57:42.724244+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=80158.7
+- Funnel: target 771 → liquid 187 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.5 >= 65=1, 4h RSI 92.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +91.27% | $10,985,686.28 |
-| PENGUIN/USDT:USDT | +80.86% | $4,322,086.69 |
-| SATO/USDT:USDT | +59.74% | $3,702,349.47 |
-| NIL/USDT:USDT | +49.28% | $4,910,131.33 |
-| DOGS/USDT:USDT | +48.96% | $17,769,725.44 |
+| B3/USDT:USDT | +92.41% | $11,003,705.90 |
+| PENGUIN/USDT:USDT | +82.68% | $4,348,861.37 |
+| SATO/USDT:USDT | +62.63% | $3,743,839.64 |
+| NIL/USDT:USDT | +49.68% | $4,948,415.25 |
+| DOGS/USDT:USDT | +47.53% | $17,821,307.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NGAS/USDT:USDT | below_1h_threshold | +3.63% | +3.92% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.52% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.97% | +2.26% |
-| KSM/USDT:USDT | below_1h_threshold | +1.59% | +1.88% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.87% |
+| QCOMSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.60% |
+| NGAS/USDT:USDT | below_1h_threshold | +4.04% | +4.41% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +3.71% | +4.08% |
+| JTO/USDT:USDT | below_1h_threshold | +3.66% | +4.04% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.07% | +3.45% |
 
 ## 5. 次に見るべき不足
 
