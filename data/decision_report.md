@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T18:37:39.249146+00:00
+- generated_at: 2026-05-07T18:42:45.609660+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3684**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T18:37:35.311188+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=80189.0
-- Funnel: target 767 → liquid 183 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.8 >= 65=1, 4h RSI 71.3 >= 65=1, 4h RSI 95.3 >= 65=1, 4h RSI 77.8 >= 65=1, 4h RSI 74.0 >= 65=1
+- 更新: 2026-05-07T18:42:41.764030+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=80140.6
+- Funnel: target 767 → liquid 183 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 74.6 >= 65=1, 4h RSI 95.3 >= 65=1, 4h RSI 79.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +40.82% | $2,317,805.63 |
-| NOT/USDT:USDT | +25.01% | $7,945,402.90 |
-| JTO/USDT:USDT | +23.32% | $13,957,144.40 |
-| SATO/USDT:USDT | +14.46% | $6,000,595.52 |
-| TONCOIN/USDT:USDT | +14.06% | $369,703,704.24 |
+| TST/USDT:USDT | +42.79% | $2,423,668.98 |
+| JTO/USDT:USDT | +24.29% | $14,040,012.18 |
+| NOT/USDT:USDT | +18.89% | $8,123,193.79 |
+| SATO/USDT:USDT | +15.08% | $6,020,963.41 |
+| DYDX/USDT:USDT | +13.85% | $6,701,118.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_1h_threshold | +4.61% | +4.44% |
-| HMSTR/USDT:USDT | below_1h_threshold | +4.02% | +3.85% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.97% | +3.80% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.08% | +2.91% |
-| LAB/USDT:USDT | below_1h_threshold | +2.80% | +2.63% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.34% | +4.23% |
+| HMSTR/USDT:USDT | below_1h_threshold | +2.98% | +2.87% |
+| BSB/USDT:USDT | below_1h_threshold | +2.16% | +2.06% |
+| LAB/USDT:USDT | below_1h_threshold | +1.86% | +1.75% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.81% | +1.70% |
 
 ## 5. 次に見るべき不足
 
