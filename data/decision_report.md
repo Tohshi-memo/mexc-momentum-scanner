@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T09:42:36.912517+00:00
+- generated_at: 2026-05-07T09:47:39.561601+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3608**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T09:42:33.457544+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=80914.4
+- 更新: 2026-05-07T09:47:36.572598+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.40% price=80871.7
 - Funnel: target 771 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1
+- Strict後reject: 4h RSI 83.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +157.62% | $2,102,299.95 |
-| PENGUIN/USDT:USDT | +117.88% | $2,878,337.12 |
-| B3/USDT:USDT | +93.00% | $10,615,359.52 |
-| DOGS/USDT:USDT | +57.05% | $14,433,928.29 |
-| D/USDT:USDT | +51.79% | $1,183,321.75 |
+| SATO/USDT:USDT | +136.42% | $2,126,686.69 |
+| PENGUIN/USDT:USDT | +116.21% | $2,915,201.24 |
+| B3/USDT:USDT | +87.50% | $10,629,529.01 |
+| DOGS/USDT:USDT | +59.17% | $14,495,577.98 |
+| D/USDT:USDT | +53.70% | $1,187,487.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B3/USDT:USDT | below_1h_threshold | +4.76% | +5.10% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.19% | +3.54% |
-| D/USDT:USDT | below_1h_threshold | +2.71% | +3.05% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.62% | +2.96% |
-| NIL/USDT:USDT | below_1h_threshold | +2.45% | +2.79% |
+| D/USDT:USDT | below_1h_threshold | +4.00% | +4.39% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.65% | +4.05% |
+| NIL/USDT:USDT | below_1h_threshold | +2.34% | +2.73% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.26% | +2.65% |
+| B3/USDT:USDT | below_1h_threshold | +1.77% | +2.17% |
 
 ## 5. 次に見るべき不足
 
