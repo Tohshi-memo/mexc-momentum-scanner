@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T04:37:09.879531+00:00
+- generated_at: 2026-05-07T04:43:17.609850+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3565**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T04:37:04.978078+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=80885.1
-- Funnel: target 769 → liquid 187 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1, 4h RSI 85.6 >= 65=1, 4h RSI 82.5 >= 65=1
+- 更新: 2026-05-07T04:43:09.035131+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80831.0
+- Funnel: target 769 → liquid 187 → pre 50 → checked 50 → surge 7 → strict 2
+- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 85.0 >= 65=1, 4h RSI 82.6 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 98.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +223.69% | $1,585,511.22 |
-| B3/USDT:USDT | +114.20% | $8,564,881.72 |
-| DOGS/USDT:USDT | +76.77% | $10,757,390.02 |
-| PENGUIN/USDT:USDT | +53.80% | $1,281,397.87 |
-| FHE/USDT:USDT | +37.04% | $16,473,094.03 |
+| SATO/USDT:USDT | +205.48% | $1,601,127.42 |
+| B3/USDT:USDT | +121.58% | $8,601,053.75 |
+| DOGS/USDT:USDT | +78.54% | $10,887,863.77 |
+| PENGUIN/USDT:USDT | +52.21% | $1,294,572.68 |
+| FHE/USDT:USDT | +41.60% | $16,558,764.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +4.58% | +4.47% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +4.41% | +4.30% |
-| IO/USDT:USDT | below_1h_threshold | +3.99% | +3.89% |
-| ALGO/USDT:USDT | below_1h_threshold | +3.44% | +3.33% |
-| OP/USDT:USDT | below_1h_threshold | +3.38% | +3.27% |
+| AR/USDT:USDT | below_1h_threshold | +4.02% | +3.98% |
+| GALA/USDT:USDT | below_1h_threshold | +3.45% | +3.41% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.39% | +3.35% |
+| ALGO/USDT:USDT | below_1h_threshold | +3.03% | +2.99% |
+| STX/USDT:USDT | below_1h_threshold | +2.87% | +2.83% |
 
 ## 5. 次に見るべき不足
 
