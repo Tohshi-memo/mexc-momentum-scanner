@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T13:32:54.683386+00:00
+- generated_at: 2026-05-07T13:37:16.678912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3632**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T13:32:51.652538+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=80782.0
+- 更新: 2026-05-07T13:37:14.037567+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=80700.8
 - Funnel: target 771 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1
+- Strict後reject: 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +105.13% | $3,077,190.01 |
-| B3/USDT:USDT | +91.56% | $11,603,960.81 |
-| PENGUIN/USDT:USDT | +72.03% | $3,995,246.77 |
-| DOGS/USDT:USDT | +52.19% | $17,048,740.24 |
-| SIREN/USDT:USDT | +40.40% | $20,356,694.08 |
+| B3/USDT:USDT | +94.12% | $11,619,168.93 |
+| SATO/USDT:USDT | +93.20% | $3,114,315.51 |
+| PENGUIN/USDT:USDT | +70.32% | $4,001,856.05 |
+| DOGS/USDT:USDT | +51.36% | $17,078,103.12 |
+| SIREN/USDT:USDT | +40.15% | $20,482,540.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +4.72% | +5.14% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.00% | +3.42% |
-| PANWSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +3.33% |
-| BILL/USDT:USDT | below_1h_threshold | +2.26% | +2.67% |
-| HMSTR/USDT:USDT | below_1h_threshold | +2.22% | +2.64% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.13% | +4.65% |
+| JTO/USDT:USDT | below_1h_threshold | +3.51% | +4.03% |
+| PANWSTOCK/USDT:USDT | below_1h_threshold | +3.17% | +3.69% |
+| HMSTR/USDT:USDT | below_1h_threshold | +2.32% | +2.83% |
+| NIL/USDT:USDT | below_1h_threshold | +2.28% | +2.79% |
 
 ## 5. 次に見るべき不足
 
