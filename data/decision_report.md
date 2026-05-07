@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T04:06:36.524780+00:00
+- generated_at: 2026-05-07T04:08:46.928248+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3559**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T04:06:33.306618+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80762.8
-- Funnel: target 769 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.3 >= 65=1
+- 更新: 2026-05-07T04:08:44.335878+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=80719.3
+- Funnel: target 769 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.2 >= 65=1, 4h RSI 83.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +228.91% | $1,491,168.05 |
-| B3/USDT:USDT | +98.08% | $8,140,251.51 |
-| DOGS/USDT:USDT | +73.38% | $10,133,724.89 |
-| PENGUIN/USDT:USDT | +44.18% | $1,203,210.97 |
-| FHE/USDT:USDT | +37.07% | $16,218,333.50 |
+| SATO/USDT:USDT | +245.93% | $1,500,749.45 |
+| B3/USDT:USDT | +118.65% | $8,190,894.93 |
+| DOGS/USDT:USDT | +76.00% | $10,204,860.38 |
+| PENGUIN/USDT:USDT | +44.33% | $1,205,578.87 |
+| FHE/USDT:USDT | +39.58% | $16,244,847.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGS/USDT:USDT | below_1h_threshold | +4.63% | +4.67% |
-| FHE/USDT:USDT | below_1h_threshold | +2.78% | +2.82% |
-| BILL/USDT:USDT | below_1h_threshold | +2.26% | +2.31% |
-| NOT/USDT:USDT | below_1h_threshold | +1.92% | +1.96% |
-| KSM/USDT:USDT | below_1h_threshold | +1.71% | +1.75% |
+| FHE/USDT:USDT | below_1h_threshold | +4.58% | +4.68% |
+| NOT/USDT:USDT | below_1h_threshold | +2.62% | +2.72% |
+| KSM/USDT:USDT | below_1h_threshold | +2.24% | +2.34% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.91% | +2.00% |
+| BILL/USDT:USDT | below_1h_threshold | +1.84% | +1.94% |
 
 ## 5. 次に見るべき不足
 
