@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T15:07:41.354842+00:00
+- generated_at: 2026-05-07T15:13:40.918896+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3647**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T15:07:38.136158+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80071.1
-- Funnel: target 771 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-07T15:13:37.829080+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80159.7
+- Funnel: target 771 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +90.87% | $10,119,830.89 |
-| PENGUIN/USDT:USDT | +79.23% | $4,368,419.22 |
-| SATO/USDT:USDT | +70.00% | $3,753,723.22 |
-| NIL/USDT:USDT | +54.86% | $5,142,834.25 |
-| DOGS/USDT:USDT | +47.23% | $17,758,930.17 |
+| B3/USDT:USDT | +87.80% | $10,149,888.32 |
+| PENGUIN/USDT:USDT | +72.79% | $4,388,153.81 |
+| SATO/USDT:USDT | +69.75% | $3,778,165.91 |
+| NIL/USDT:USDT | +56.78% | $5,336,863.32 |
+| DOGS/USDT:USDT | +47.20% | $17,785,228.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +3.81% | +3.89% |
-| JTO/USDT:USDT | below_1h_threshold | +3.49% | +3.57% |
-| NIL/USDT:USDT | below_1h_threshold | +2.96% | +3.03% |
-| BILL/USDT:USDT | below_1h_threshold | +2.74% | +2.82% |
-| KSM/USDT:USDT | below_1h_threshold | +1.99% | +2.06% |
+| NIL/USDT:USDT | below_1h_threshold | +4.68% | +4.64% |
+| QCOMSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +3.86% |
+| FHE/USDT:USDT | below_1h_threshold | +3.32% | +3.28% |
+| BILL/USDT:USDT | below_1h_threshold | +3.22% | +3.18% |
+| KSM/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
 
 ## 5. 次に見るべき不足
 
