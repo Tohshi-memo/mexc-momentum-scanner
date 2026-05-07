@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T05:22:28.916113+00:00
+- generated_at: 2026-05-07T05:27:26.607072+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3571**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T05:22:25.856370+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=81050.3
+- 更新: 2026-05-07T05:27:23.441627+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=81018.0
 - Funnel: target 770 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 77.1 >= 65=1
+- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 77.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +233.82% | $1,683,023.45 |
-| B3/USDT:USDT | +132.44% | $9,065,610.31 |
-| DOGS/USDT:USDT | +79.24% | $11,224,175.63 |
-| PENGUIN/USDT:USDT | +48.80% | $1,341,332.05 |
-| HMSTR/USDT:USDT | +31.25% | $1,052,683.20 |
+| SATO/USDT:USDT | +237.31% | $1,691,646.46 |
+| B3/USDT:USDT | +120.93% | $9,133,620.17 |
+| DOGS/USDT:USDT | +78.56% | $11,279,755.52 |
+| PENGUIN/USDT:USDT | +53.16% | $1,347,032.62 |
+| HMSTR/USDT:USDT | +30.53% | $1,062,156.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +4.81% | +4.68% |
-| S/USDT:USDT | below_1h_threshold | +3.24% | +3.10% |
-| B3/USDT:USDT | below_1h_threshold | +1.85% | +1.71% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +1.80% | +1.67% |
-| B/USDT:USDT | below_1h_threshold | +1.73% | +1.59% |
+| HMSTR/USDT:USDT | below_1h_threshold | +4.19% | +4.10% |
+| S/USDT:USDT | below_1h_threshold | +3.20% | +3.10% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +2.67% | +2.57% |
+| B/USDT:USDT | below_1h_threshold | +2.48% | +2.38% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.37% | +2.27% |
 
 ## 5. 次に見るべき不足
 
