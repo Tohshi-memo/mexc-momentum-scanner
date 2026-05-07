@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T09:07:30.830700+00:00
+- generated_at: 2026-05-07T09:12:31.840298+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3604**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T09:07:28.128206+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=81075.0
+- 更新: 2026-05-07T09:12:29.085194+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=81099.8
 - Funnel: target 770 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +202.42% | $2,022,526.61 |
-| PENGUIN/USDT:USDT | +95.52% | $2,656,545.22 |
-| B3/USDT:USDT | +84.37% | $10,482,822.03 |
-| DOGS/USDT:USDT | +63.79% | $13,900,188.05 |
-| D/USDT:USDT | +48.40% | $1,153,044.70 |
+| SATO/USDT:USDT | +195.55% | $2,027,251.95 |
+| PENGUIN/USDT:USDT | +102.91% | $2,696,155.15 |
+| B3/USDT:USDT | +87.09% | $10,489,465.01 |
+| DOGS/USDT:USDT | +65.46% | $13,999,156.78 |
+| D/USDT:USDT | +50.08% | $1,158,380.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +1.61% | +1.76% |
-| DOGS/USDT:USDT | below_1h_threshold | +1.30% | +1.44% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.26% | +1.41% |
-| NOT/USDT:USDT | below_1h_threshold | +1.02% | +1.17% |
-| HMSTR/USDT:USDT | below_1h_threshold | +0.63% | +0.78% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +2.37% | +2.48% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.23% | +2.35% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.72% | +1.83% |
+| B3/USDT:USDT | below_1h_threshold | +1.58% | +1.69% |
+| LAB/USDT:USDT | below_1h_threshold | +1.56% | +1.67% |
 
 ## 5. 次に見るべき不足
 
