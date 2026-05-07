@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T07:12:38.900052+00:00
+- generated_at: 2026-05-07T07:17:40.269889+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3585**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T07:12:35.488795+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=81462.7
+- 更新: 2026-05-07T07:17:37.112508+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=81669.8
 - Funnel: target 771 → liquid 187 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1, 4h RSI 81.8 >= 65=1
+- Strict後reject: 4h RSI 86.5 >= 65=1, 4h RSI 81.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +249.88% | $1,889,374.67 |
-| B3/USDT:USDT | +78.79% | $9,856,046.64 |
-| DOGS/USDT:USDT | +70.33% | $12,661,939.15 |
-| PENGUIN/USDT:USDT | +61.80% | $1,491,933.29 |
-| EVAA/USDT:USDT | +53.10% | $1,372,081.34 |
+| SATO/USDT:USDT | +251.93% | $1,893,206.93 |
+| B3/USDT:USDT | +78.05% | $9,895,106.20 |
+| DOGS/USDT:USDT | +73.60% | $12,743,389.28 |
+| PENGUIN/USDT:USDT | +66.72% | $1,497,606.10 |
+| EVAA/USDT:USDT | +55.22% | $1,421,213.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.77% | +1.69% |
-| FET/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
-| B/USDT:USDT | below_1h_threshold | +1.45% | +1.36% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.78% |
-| ALGO/USDT:USDT | below_1h_threshold | +0.78% | +0.70% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +3.05% | +2.72% |
+| B/USDT:USDT | below_1h_threshold | +2.21% | +1.87% |
+| FET/USDT:USDT | below_1h_threshold | +1.63% | +1.29% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.55% | +1.21% |
+| FHE/USDT:USDT | below_1h_threshold | +1.32% | +0.98% |
 
 ## 5. 次に見るべき不足
 
