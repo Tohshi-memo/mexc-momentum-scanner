@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T10:42:37.822753+00:00
+- generated_at: 2026-05-07T10:47:11.380680+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3616**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T10:42:34.524396+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=80792.0
-- Funnel: target 771 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.1 >= 65=1, 4h RSI 70.3 >= 65=1
+- 更新: 2026-05-07T10:47:08.677667+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=80796.9
+- Funnel: target 771 → liquid 184 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1, 4h RSI 90.6 >= 65=1, 4h RSI 68.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +117.39% | $2,181,517.18 |
-| B3/USDT:USDT | +102.65% | $11,322,937.67 |
-| PENGUIN/USDT:USDT | +86.05% | $3,311,105.16 |
-| DOGS/USDT:USDT | +66.46% | $15,187,615.14 |
-| NIL/USDT:USDT | +41.69% | $1,950,736.46 |
+| SATO/USDT:USDT | +130.39% | $2,188,325.33 |
+| B3/USDT:USDT | +100.73% | $11,344,011.21 |
+| PENGUIN/USDT:USDT | +92.95% | $3,348,210.37 |
+| DOGS/USDT:USDT | +66.83% | $15,268,845.14 |
+| SIREN/USDT:USDT | +40.76% | $13,529,849.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_1h_threshold | +3.88% | +3.99% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.86% | +3.98% |
-| TAG/USDT:USDT | below_1h_threshold | +2.81% | +2.93% |
-| BILL/USDT:USDT | below_1h_threshold | +2.13% | +2.25% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.10% | +2.22% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +3.90% | +4.01% |
+| TAG/USDT:USDT | below_1h_threshold | +3.70% | +3.82% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.32% | +3.43% |
+| B/USDT:USDT | below_1h_threshold | +2.50% | +2.61% |
+| ENA/USDT:USDT | below_1h_threshold | +2.13% | +2.24% |
 
 ## 5. 次に見るべき不足
 
