@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T20:42:43.606030+00:00
+- generated_at: 2026-05-07T20:46:24.267968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3695**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T20:42:37.342510+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=79887.8
-- Funnel: target 766 → liquid 189 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.4 >= 65=1, 4h RSI 96.4 >= 65=1, 4h RSI 77.1 >= 65=1
+- 更新: 2026-05-07T20:46:20.462890+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=79906.5
+- Funnel: target 766 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.1 >= 65=1, 4h RSI 96.3 >= 65=1, 4h RSI 77.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +36.74% | $5,054,199.18 |
-| SATO/USDT:USDT | +30.03% | $6,292,978.50 |
-| NIL/USDT:USDT | +26.51% | $11,423,542.92 |
-| IRENSTOCK/USDT:USDT | +19.18% | $2,100,590.38 |
-| NOT/USDT:USDT | +18.61% | $9,620,716.60 |
+| TST/USDT:USDT | +36.74% | $5,080,555.42 |
+| SATO/USDT:USDT | +29.72% | $6,316,295.53 |
+| NIL/USDT:USDT | +26.08% | $11,687,803.20 |
+| IRENSTOCK/USDT:USDT | +21.60% | $2,477,696.34 |
+| NOT/USDT:USDT | +18.72% | $9,647,347.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +1.97% | +2.22% |
-| LINEA/USDT:USDT | below_1h_threshold | +1.82% | +2.07% |
-| NOT/USDT:USDT | below_1h_threshold | +1.78% | +2.03% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.59% | +1.84% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.80% | +1.06% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +4.99% | +5.22% |
+| HMSTR/USDT:USDT | below_1h_threshold | +2.20% | +2.43% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.18% | +2.41% |
+| NOT/USDT:USDT | below_1h_threshold | +2.13% | +2.36% |
+| LINEA/USDT:USDT | below_1h_threshold | +1.97% | +2.20% |
 
 ## 5. 次に見るべき不足
 
