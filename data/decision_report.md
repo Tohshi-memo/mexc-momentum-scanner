@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T17:42:40.984744+00:00
+- generated_at: 2026-05-07T17:48:41.989386+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3672**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T17:42:37.656390+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=79869.5
+- 更新: 2026-05-07T17:48:38.907261+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=79869.3
 - Funnel: target 767 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.9 >= 65=1
+- Strict後reject: 4h RSI 88.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +28.53% | $5,464,564.64 |
-| JTO/USDT:USDT | +23.80% | $11,555,585.55 |
-| B/USDT:USDT | +9.51% | $4,623,246.21 |
-| DYDX/USDT:USDT | +8.09% | $5,963,345.61 |
-| HIGH/USDT:USDT | +7.77% | $1,497,864.12 |
+| JTO/USDT:USDT | +26.96% | $11,809,314.55 |
+| SATO/USDT:USDT | +16.61% | $5,602,947.36 |
+| B/USDT:USDT | +8.42% | $4,707,791.24 |
+| LAB/USDT:USDT | +7.39% | $252,547,553.97 |
+| SKYAI/USDT:USDT | +6.96% | $35,377,235.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIGHT/USDT:USDT | below_1h_threshold | +4.09% | +3.95% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.66% | +3.52% |
-| DYDX/USDT:USDT | below_1h_threshold | +3.39% | +3.26% |
-| DOGS/USDT:USDT | below_1h_threshold | +3.21% | +3.08% |
-| NOT/USDT:USDT | below_1h_threshold | +2.96% | +2.82% |
+| DOGS/USDT:USDT | below_1h_threshold | +4.42% | +4.29% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.29% | +4.15% |
+| HMSTR/USDT:USDT | below_1h_threshold | +4.20% | +4.06% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.06% | +2.93% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.86% | +2.73% |
 
 ## 5. 次に見るべき不足
 
