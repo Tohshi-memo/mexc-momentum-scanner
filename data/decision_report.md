@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T23:07:28.232209+00:00
+- generated_at: 2026-05-07T23:12:35.228409+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3714**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T23:07:25.482884+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79933.6
+- 更新: 2026-05-07T23:12:32.480534+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=79919.0
 - Funnel: target 766 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +53.64% | $7,896,159.36 |
-| NIL/USDT:USDT | +49.85% | $23,407,609.67 |
-| TST/USDT:USDT | +25.62% | $5,906,874.99 |
-| LAB/USDT:USDT | +18.30% | $222,467,673.35 |
-| DYDX/USDT:USDT | +16.73% | $9,889,685.19 |
+| NIL/USDT:USDT | +47.89% | $23,778,542.14 |
+| SATO/USDT:USDT | +44.88% | $7,959,663.35 |
+| TST/USDT:USDT | +27.34% | $5,912,238.79 |
+| LAB/USDT:USDT | +18.63% | $222,687,822.04 |
+| DYDX/USDT:USDT | +16.37% | $9,894,403.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +1.41% | +1.33% |
-| D/USDT:USDT | below_1h_threshold | +0.96% | +0.89% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.80% | +0.73% |
-| HIGH/USDT:USDT | below_1h_threshold | +0.75% | +0.68% |
-| B/USDT:USDT | below_1h_threshold | +0.75% | +0.67% |
+| D/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| ICP/USDT:USDT | below_1h_threshold | +1.27% | +1.21% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.91% | +0.85% |
+| GALA/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
+| CHZ/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
 
 ## 5. 次に見るべき不足
 
