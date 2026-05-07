@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T06:12:33.891137+00:00
+- generated_at: 2026-05-07T06:17:28.429585+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3578**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T06:12:30.789235+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=80866.1
+- 更新: 2026-05-07T06:17:25.522104+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=80934.2
 - Funnel: target 770 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
+- Strict後reject: 4h RSI 68.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +232.81% | $1,745,453.83 |
-| B3/USDT:USDT | +103.90% | $9,504,703.82 |
-| DOGS/USDT:USDT | +70.01% | $12,023,780.65 |
-| PENGUIN/USDT:USDT | +49.18% | $1,402,155.61 |
-| FHE/USDT:USDT | +23.31% | $16,791,713.74 |
+| SATO/USDT:USDT | +238.74% | $1,748,836.24 |
+| B3/USDT:USDT | +97.95% | $9,531,280.36 |
+| DOGS/USDT:USDT | +71.80% | $12,111,889.02 |
+| PENGUIN/USDT:USDT | +49.94% | $1,404,440.20 |
+| FHE/USDT:USDT | +25.44% | $16,837,764.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B3/USDT:USDT | below_1h_threshold | +2.16% | +2.38% |
-| SATO/USDT:USDT | below_1h_threshold | +1.70% | +1.92% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.68% | +1.90% |
-| LYN/USDT:USDT | below_1h_threshold | +0.91% | +1.13% |
-| BILL/USDT:USDT | below_1h_threshold | +0.59% | +0.82% |
+| SATO/USDT:USDT | below_1h_threshold | +3.71% | +3.85% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.63% | +1.77% |
+| BILL/USDT:USDT | below_1h_threshold | +1.25% | +1.39% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.63% | +0.77% |
+| ORCA/USDT:USDT | below_1h_threshold | +0.62% | +0.76% |
 
 ## 5. 次に見るべき不足
 
