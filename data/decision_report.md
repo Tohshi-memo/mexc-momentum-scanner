@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-07T01:32:41.785238+00:00
+- generated_at: 2026-05-07T01:37:35.534112+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3525**
+- closed shadow trades: **3527**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.28% / filled 20/20。**
-- 全期間 MARKET基準: n=3525, expectancy=-0.15%
+- 全期間 MARKET基準: n=3527, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=+0.28%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,20 +22,20 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +0.28% | **+0.28%** |
+| LIMIT_6PCT | 6/20 | 30.0% | +0.91% | **+0.27%** |
 | LIMIT_9PCT | 3/20 | 15.0% | +1.72% | **+0.26%** |
+| ASK | 20/20 | 100.0% | +0.23% | **+0.23%** |
 | LIMIT_7PCT | 4/20 | 20.0% | +1.10% | **+0.22%** |
-| ASK | 20/20 | 100.0% | +0.20% | **+0.20%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +2.21% | **+2.10%** |
-| ASK_LONG | 20/20 | 100.0% | +1.44% | **+1.44%** |
+| ASK_LONG | 20/20 | 100.0% | +1.43% | **+1.43%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.43% | **+1.43%** |
-| LIMIT_BB3S_LONG | 2/4 | 50.0% | +2.73% | **+1.36%** |
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.75% | **+1.31%** |
+| LIMIT_BB3S_LONG | 2/5 | 40.0% | +2.73% | **+1.09%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$102.01** / 初期 $100.00 (+2.01%)
-- 確定: 20件 (Win 7 / Loss 7 / Flat 6) / skip 66件
-- 成長率目線: 平均log +0.000997 / 幾何平均 +0.100% per trade / maxDD +2.48%
+- 残高: **$102.14** / 初期 $100.00 (+2.14%)
+- 確定: 22件 (Win 8 / Loss 8 / Flat 6) / skip 66件
+- 成長率目線: 平均log +0.000964 / 幾何平均 +0.096% per trade / maxDD +2.48%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: FHE/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $102.01
+- 最新: DOGS/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $102.14
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T01:32:37.471194+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=81170.6
+- 更新: 2026-05-07T01:37:31.713534+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=81150.3
 - Funnel: target 770 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.2 >= 65=1, 4h RSI 78.3 >= 65=1, 4h RSI 77.5 >= 65=1
+- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 76.4 >= 65=1, 4h RSI 76.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +108.72% | $1,023,281.83 |
-| DOGS/USDT:USDT | +56.90% | $6,257,900.75 |
-| FHE/USDT:USDT | +28.86% | $15,893,327.00 |
-| PENGUIN/USDT:USDT | +26.56% | $1,038,299.67 |
-| PLAY/USDT:USDT | +11.89% | $19,515,273.41 |
+| SATO/USDT:USDT | +122.93% | $1,028,445.59 |
+| DOGS/USDT:USDT | +57.64% | $6,415,463.46 |
+| FHE/USDT:USDT | +25.00% | $15,954,880.04 |
+| PENGUIN/USDT:USDT | +24.06% | $1,045,090.30 |
+| LAB/USDT:USDT | +12.72% | $256,395,685.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_1h_threshold | +4.69% | +4.43% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.27% | +2.02% |
-| VVV/USDT:USDT | below_1h_threshold | +1.57% | +1.32% |
-| OP/USDT:USDT | below_1h_threshold | +0.84% | +0.59% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.75% | +0.50% |
+| NOT/USDT:USDT | below_1h_threshold | +2.90% | +2.68% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.34% | +2.11% |
+| BILL/USDT:USDT | below_1h_threshold | +1.04% | +0.82% |
+| M/USDT:USDT | below_1h_threshold | +0.87% | +0.65% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.83% | +0.60% |
 
 ## 5. 次に見るべき不足
 
