@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-07T15:27:39.829821+00:00
+- generated_at: 2026-05-07T15:32:48.579365+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3649**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-07T15:27:36.918963+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=79748.8
-- Funnel: target 771 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-07T15:32:43.051702+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=79962.1
+- Funnel: target 771 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.7 >= 65=1, 4h RSI 79.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B3/USDT:USDT | +86.84% | $10,214,338.20 |
-| SATO/USDT:USDT | +73.23% | $3,825,433.21 |
-| PENGUIN/USDT:USDT | +68.62% | $4,425,850.39 |
-| NIL/USDT:USDT | +52.93% | $5,662,591.23 |
-| DOGS/USDT:USDT | +45.30% | $17,949,433.31 |
+| B3/USDT:USDT | +89.30% | $10,239,155.67 |
+| SATO/USDT:USDT | +69.45% | $3,846,318.15 |
+| PENGUIN/USDT:USDT | +65.63% | $4,447,506.32 |
+| NIL/USDT:USDT | +52.83% | $5,719,012.23 |
+| DOGS/USDT:USDT | +47.51% | $18,023,828.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QCOMSTOCK/USDT:USDT | below_1h_threshold | +4.34% | +4.81% |
-| D/USDT:USDT | below_1h_threshold | +3.56% | +4.04% |
-| JTO/USDT:USDT | below_1h_threshold | +3.21% | +3.69% |
-| NIL/USDT:USDT | below_1h_threshold | +1.89% | +2.36% |
-| SATO/USDT:USDT | below_1h_threshold | +1.84% | +2.32% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.24% | +2.45% |
+| BILL/USDT:USDT | below_1h_threshold | +2.22% | +2.43% |
+| TAG/USDT:USDT | below_1h_threshold | +2.21% | +2.42% |
+| NIL/USDT:USDT | below_1h_threshold | +2.01% | +2.22% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.99% |
 
 ## 5. 次に見るべき不足
 
