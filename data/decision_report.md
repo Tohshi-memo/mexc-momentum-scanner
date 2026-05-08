@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T06:25:56.367688+00:00
+- generated_at: 2026-05-08T06:28:29.338491+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3746**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T06:25:50.640268+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=79508.5
-- Funnel: target 772 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
+- 更新: 2026-05-08T06:28:25.932631+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=79537.9
+- Funnel: target 772 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +35.55% | $3,783,362.23 |
-| SATO/USDT:USDT | +25.49% | $8,933,289.24 |
-| BSB/USDT:USDT | +22.41% | $4,648,933.94 |
-| LAB/USDT:USDT | +20.94% | $210,421,971.89 |
-| NOT/USDT:USDT | +18.70% | $10,253,892.48 |
+| AGT/USDT:USDT | +36.70% | $3,825,741.43 |
+| SATO/USDT:USDT | +26.16% | $8,945,270.97 |
+| BSB/USDT:USDT | +22.26% | $4,674,997.52 |
+| LAB/USDT:USDT | +21.04% | $210,730,149.04 |
+| NOT/USDT:USDT | +17.88% | $10,265,143.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.71% | +4.78% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.61% | +2.68% |
-| LAB/USDT:USDT | below_1h_threshold | +1.98% | +2.04% |
-| ICP/USDT:USDT | below_1h_threshold | +1.68% | +1.75% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.65% | +1.72% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.70% | +4.72% |
+| RAVE/USDT:USDT | below_1h_threshold | +4.67% | +4.69% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.68% | +2.71% |
+| ICP/USDT:USDT | below_1h_threshold | +2.15% | +2.18% |
+| LAB/USDT:USDT | below_1h_threshold | +1.97% | +2.00% |
 
 ## 5. 次に見るべき不足
 
