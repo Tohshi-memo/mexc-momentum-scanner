@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T20:37:54.429689+00:00
+- generated_at: 2026-05-08T20:42:32.351851+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3822**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T20:37:51.409711+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=80221.9
+- 更新: 2026-05-08T20:42:29.513744+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80180.5
 - Funnel: target 767 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CORE/USDT:USDT | +16.04% | $1,307,676.62 |
-| COLLECT/USDT:USDT | +13.43% | $2,758,045.94 |
-| ICP/USDT:USDT | +9.84% | $205,670,258.51 |
-| OP/USDT:USDT | +9.34% | $21,789,484.92 |
-| CHIP/USDT:USDT | +8.96% | $53,681,437.68 |
+| CORE/USDT:USDT | +15.71% | $1,345,620.32 |
+| COLLECT/USDT:USDT | +13.08% | $2,777,112.25 |
+| SATO/USDT:USDT | +10.87% | $6,191,923.83 |
+| CHIP/USDT:USDT | +9.36% | $53,745,843.52 |
+| OP/USDT:USDT | +9.34% | $21,857,544.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_1h_threshold | +4.44% | +4.35% |
-| CORE/USDT:USDT | below_1h_threshold | +4.37% | +4.27% |
-| JASMY/USDT:USDT | below_1h_threshold | +3.53% | +3.43% |
-| OP/USDT:USDT | below_1h_threshold | +2.85% | +2.75% |
-| ENA/USDT:USDT | below_1h_threshold | +2.18% | +2.08% |
+| CORE/USDT:USDT | below_1h_threshold | +4.07% | +4.02% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.55% | +3.50% |
+| ICP/USDT:USDT | below_1h_threshold | +3.34% | +3.29% |
+| OP/USDT:USDT | below_1h_threshold | +2.79% | +2.74% |
+| TST/USDT:USDT | below_1h_threshold | +2.41% | +2.36% |
 
 ## 5. 次に見るべき不足
 
