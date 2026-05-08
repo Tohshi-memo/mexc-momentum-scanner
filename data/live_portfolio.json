@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 98.33359291533601,
+  "balance": 99.31692884448937,
   "started_at": "2026-04-30T12:40:18.519143+00:00",
   "trades": [
     {
@@ -475,6 +475,27 @@
       "balance_before": 98.82773157320203,
       "balance_after": 98.33359291533601,
       "strategy_tier": "B",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "OBV_BEAR_DIV",
+        "daily_RED"
+      ],
+      "strategy_score": 0.35
+    },
+    {
+      "symbol": "UB/USDT:USDT",
+      "detected_at": "2026-05-08T06:32:41.672725+00:00",
+      "closed_at": "2026-05-08T08:02:28.396113+00:00",
+      "outcome": "TP_HIT",
+      "pnl_pct": 7.999999999999993,
+      "sl_pct": 4.000000000000013,
+      "risk_pct": 0.5,
+      "notional_usdt": 12.29169911441696,
+      "pnl_usdt": 0.983335929153356,
+      "balance_before": 98.33359291533601,
+      "balance_after": 99.31692884448937,
+      "strategy_tier": "S",
       "strategy_direction": "short",
       "strategy_entry_style": "MARKET",
       "strategy_boosters": [
