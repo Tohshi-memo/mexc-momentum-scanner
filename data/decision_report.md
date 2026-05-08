@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-08T06:28:29.338491+00:00
+- generated_at: 2026-05-08T06:32:44.609793+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3746**
+- closed shadow trades: **3747**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.06% / filled 20/20。**
-- 全期間 MARKET基準: n=3746, expectancy=-0.15%
+- 全期間 MARKET基準: n=3747, expectancy=-0.15%
 - 直近20件 MARKET基準: n=20, expectancy=+1.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +1.11% | **+1.11%** |
+| ASK | 20/20 | 100.0% | +1.17% | **+1.17%** |
 | MARKET | 20/20 | 100.0% | +1.06% | **+1.06%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +0.29% | **+0.22%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 190件 (Win 48 / Loss 64 / Flat 78) / skip 117件
+- 確定: 190件 (Win 48 / Loss 64 / Flat 78) / skip 118件
 - 成長率目線: 平均log +0.000425 / 幾何平均 +0.043% per trade / maxDD +3.48%
-- 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PENGUIN/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T06:28:25.932631+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=79537.9
-- Funnel: target 772 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.6 >= 65=1
+- 更新: 2026-05-08T06:32:38.458720+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=79450.1
+- Funnel: target 772 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +36.70% | $3,825,741.43 |
-| SATO/USDT:USDT | +26.16% | $8,945,270.97 |
-| BSB/USDT:USDT | +22.26% | $4,674,997.52 |
-| LAB/USDT:USDT | +21.04% | $210,730,149.04 |
-| NOT/USDT:USDT | +17.88% | $10,265,143.17 |
+| AGT/USDT:USDT | +36.39% | $3,869,571.93 |
+| SATO/USDT:USDT | +31.07% | $8,960,835.42 |
+| BSB/USDT:USDT | +20.90% | $4,706,232.71 |
+| LAB/USDT:USDT | +18.92% | $211,196,226.12 |
+| NOT/USDT:USDT | +17.52% | $10,274,144.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.70% | +4.72% |
-| RAVE/USDT:USDT | below_1h_threshold | +4.67% | +4.69% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.68% | +2.71% |
-| ICP/USDT:USDT | below_1h_threshold | +2.15% | +2.18% |
-| LAB/USDT:USDT | below_1h_threshold | +1.97% | +2.00% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.68% | +3.81% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.47% | +3.61% |
+| ICP/USDT:USDT | below_1h_threshold | +3.12% | +3.26% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.68% | +2.82% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.45% | +1.59% |
 
 ## 5. 次に見るべき不足
 
