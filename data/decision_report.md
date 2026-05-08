@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T08:07:31.087658+00:00
+- generated_at: 2026-05-08T08:12:01.322332+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3756**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T08:07:28.281051+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=79685.9
+- 更新: 2026-05-08T08:11:58.510986+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79665.3
 - Funnel: target 771 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +32.22% | $4,557,147.02 |
-| BSB/USDT:USDT | +31.51% | $5,587,446.30 |
-| NOT/USDT:USDT | +23.24% | $10,336,834.83 |
-| STRK/USDT:USDT | +18.11% | $11,455,282.29 |
-| LAB/USDT:USDT | +17.84% | $201,867,710.30 |
+| AGT/USDT:USDT | +32.64% | $4,592,091.78 |
+| BSB/USDT:USDT | +32.58% | $5,671,336.08 |
+| NOT/USDT:USDT | +21.54% | $10,363,592.99 |
+| SATO/USDT:USDT | +18.56% | $9,058,820.47 |
+| CHIP/USDT:USDT | +18.20% | $25,942,978.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +1.88% | +1.82% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.86% | +1.80% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.27% | +1.21% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.22% | +1.15% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.01% | +0.95% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.96% | +1.92% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.56% | +1.52% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.49% | +1.45% |
+| IO/USDT:USDT | below_1h_threshold | +1.28% | +1.24% |
+| JTO/USDT:USDT | below_1h_threshold | +1.16% | +1.12% |
 
 ## 5. 次に見るべき不足
 
