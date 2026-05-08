@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T23:17:32.414480+00:00
+- generated_at: 2026-05-08T23:22:49.873863+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3827**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T23:17:29.612864+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=80149.1
+- 更新: 2026-05-08T23:22:47.177123+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80175.5
 - Funnel: target 767 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COLLECT/USDT:USDT | +20.17% | $4,974,195.46 |
-| OP/USDT:USDT | +13.03% | $33,165,920.39 |
-| CORE/USDT:USDT | +11.57% | $1,650,296.47 |
-| BILL/USDT:USDT | +11.52% | $17,315,762.18 |
-| JUP/USDT:USDT | +11.24% | $9,757,494.90 |
+| COLLECT/USDT:USDT | +16.59% | $5,127,521.95 |
+| OP/USDT:USDT | +12.83% | $33,311,364.66 |
+| BILL/USDT:USDT | +12.31% | $17,400,609.98 |
+| CORE/USDT:USDT | +11.65% | $1,653,950.46 |
+| ICP/USDT:USDT | +11.35% | $210,727,527.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.25% | +1.36% |
-| AKT/USDT:USDT | below_1h_threshold | +1.12% | +1.24% |
-| DOGS/USDT:USDT | below_1h_threshold | +0.94% | +1.05% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.77% | +0.89% |
-| MEGA/USDT:USDT | below_1h_threshold | +0.73% | +0.85% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.94% | +3.02% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.10% | +2.18% |
+| AR/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
+| BILL/USDT:USDT | below_1h_threshold | +1.28% | +1.36% |
+| AKT/USDT:USDT | below_1h_threshold | +1.25% | +1.33% |
 
 ## 5. 次に見るべき不足
 
