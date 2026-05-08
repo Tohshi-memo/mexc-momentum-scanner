@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T18:27:33.702404+00:00
+- generated_at: 2026-05-08T18:32:39.114025+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3816**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T18:27:30.840239+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=80256.9
+- 更新: 2026-05-08T18:32:36.343357+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=80201.2
 - Funnel: target 768 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COLLECT/USDT:USDT | +14.88% | $1,832,913.72 |
-| CHIP/USDT:USDT | +9.42% | $51,216,776.41 |
-| AKT/USDT:USDT | +9.15% | $1,139,732.36 |
-| IO/USDT:USDT | +8.13% | $1,375,658.94 |
-| JUP/USDT:USDT | +7.96% | $4,953,715.16 |
+| COLLECT/USDT:USDT | +14.53% | $1,878,730.65 |
+| AKT/USDT:USDT | +9.01% | $1,154,194.46 |
+| ONDO/USDT:USDT | +8.97% | $91,339,243.03 |
+| CHIP/USDT:USDT | +8.94% | $51,253,162.02 |
+| PYTH/USDT:USDT | +8.78% | $2,196,873.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +4.91% | +4.62% |
-| SATO/USDT:USDT | below_1h_threshold | +3.84% | +3.54% |
-| JUP/USDT:USDT | below_1h_threshold | +3.31% | +3.02% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.21% | +2.92% |
-| B3/USDT:USDT | below_1h_threshold | +2.96% | +2.67% |
+| COLLECT/USDT:USDT | below_1h_threshold | +4.57% | +4.34% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.96% | +3.73% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.89% | +3.67% |
+| JUP/USDT:USDT | below_1h_threshold | +3.71% | +3.48% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.40% | +3.17% |
 
 ## 5. 次に見るべき不足
 
