@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T20:07:42.301437+00:00
+- generated_at: 2026-05-08T20:12:35.585161+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3820**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T20:07:39.483641+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=80130.9
+- 更新: 2026-05-08T20:12:32.816190+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80180.3
 - Funnel: target 768 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +17.61% | $5,911,419.87 |
-| COLLECT/USDT:USDT | +13.88% | $2,621,614.39 |
-| CORE/USDT:USDT | +13.59% | $1,141,714.01 |
-| CHIP/USDT:USDT | +9.82% | $52,569,794.76 |
-| RKLBSTOCK/USDT:USDT | +8.59% | $2,439,996.43 |
+| SATO/USDT:USDT | +23.41% | $5,952,206.15 |
+| CORE/USDT:USDT | +12.24% | $1,168,967.69 |
+| CHIP/USDT:USDT | +11.62% | $52,771,285.68 |
+| COLLECT/USDT:USDT | +10.75% | $2,649,298.66 |
+| RKLBSTOCK/USDT:USDT | +8.89% | $2,494,675.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +2.75% | +2.76% |
-| CORE/USDT:USDT | below_1h_threshold | +2.16% | +2.18% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.70% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.63% | +1.65% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.29% |
+| ICP/USDT:USDT | below_1h_threshold | +3.82% | +3.77% |
+| SATO/USDT:USDT | below_1h_threshold | +3.31% | +3.27% |
+| BILL/USDT:USDT | below_1h_threshold | +2.67% | +2.62% |
+| TST/USDT:USDT | below_1h_threshold | +2.14% | +2.10% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.71% |
 
 ## 5. 次に見るべき不足
 
