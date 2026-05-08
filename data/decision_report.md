@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T12:02:06.529361+00:00
+- generated_at: 2026-05-08T12:07:32.026968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3779**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T12:02:04.148955+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80222.1
-- Funnel: target 773 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-08T12:07:29.122448+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80169.8
+- Funnel: target 773 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +46.24% | $9,610,171.34 |
-| BSB/USDT:USDT | +44.59% | $10,791,601.68 |
-| PLAY/USDT:USDT | +32.23% | $10,679,575.34 |
-| STRK/USDT:USDT | +27.33% | $24,400,972.62 |
-| AGT/USDT:USDT | +26.81% | $5,728,267.48 |
+| BSB/USDT:USDT | +44.97% | $10,875,657.88 |
+| PHAROS/USDT:USDT | +44.03% | $9,824,415.06 |
+| PLAY/USDT:USDT | +35.47% | $10,801,517.19 |
+| AGT/USDT:USDT | +26.95% | $5,747,078.38 |
+| STRK/USDT:USDT | +26.53% | $24,584,739.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LDO/USDT:USDT | below_1h_threshold | +1.65% | +1.60% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.32% | +1.27% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.15% | +1.10% |
-| BRETT/USDT:USDT | below_1h_threshold | +0.95% | +0.90% |
-| LAB/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.51% | +2.52% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.76% | +1.77% |
+| SATO/USDT:USDT | below_1h_threshold | +1.70% | +1.72% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.18% | +1.19% |
 
 ## 5. 次に見るべき不足
 
