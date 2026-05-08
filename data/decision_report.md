@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T16:17:38.611400+00:00
+- generated_at: 2026-05-08T16:22:38.501578+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3802**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T16:17:35.201295+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=79906.6
+- 更新: 2026-05-08T16:22:35.338065+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=79948.9
 - Funnel: target 772 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PENGUIN/USDT:USDT | +6.03% | $1,007,334.02 |
-| STRK/USDT:USDT | +3.21% | $30,095,336.72 |
-| SKYAI/USDT:USDT | +2.90% | $17,725,558.54 |
-| NIL/USDT:USDT | +2.86% | $33,638,234.64 |
-| COLLECT/USDT:USDT | +2.65% | $1,356,449.18 |
+| PENGUIN/USDT:USDT | +6.55% | $1,017,515.03 |
+| SKYAI/USDT:USDT | +3.44% | $17,813,367.24 |
+| TIA/USDT:USDT | +2.95% | $24,155,081.07 |
+| SATO/USDT:USDT | +2.58% | $7,873,388.99 |
+| CHIP/USDT:USDT | +2.57% | $43,353,523.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +3.48% | +3.74% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.89% | +3.15% |
-| NIL/USDT:USDT | below_1h_threshold | +2.86% | +3.12% |
-| COLLECT/USDT:USDT | below_1h_threshold | +2.66% | +2.92% |
-| SATO/USDT:USDT | below_1h_threshold | +1.81% | +2.07% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.44% | +3.65% |
+| TIA/USDT:USDT | below_1h_threshold | +2.95% | +3.16% |
+| SATO/USDT:USDT | below_1h_threshold | +2.58% | +2.79% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.38% | +2.58% |
+| JUP/USDT:USDT | below_1h_threshold | +2.37% | +2.57% |
 
 ## 5. 次に見るべき不足
 
