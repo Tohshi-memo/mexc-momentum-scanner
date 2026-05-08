@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T19:12:42.374274+00:00
+- generated_at: 2026-05-08T19:17:38.097379+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3817**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T19:12:39.478764+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=79989.6
+- 更新: 2026-05-08T19:17:35.231456+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80070.3
 - Funnel: target 768 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COLLECT/USDT:USDT | +11.82% | $2,219,181.98 |
-| CHIP/USDT:USDT | +10.34% | $51,714,673.19 |
-| JUP/USDT:USDT | +10.10% | $6,113,580.58 |
-| AKT/USDT:USDT | +10.00% | $1,241,774.70 |
-| JTO/USDT:USDT | +8.67% | $10,554,834.93 |
+| COLLECT/USDT:USDT | +12.08% | $2,224,008.33 |
+| CORE/USDT:USDT | +10.72% | $1,036,972.49 |
+| CHIP/USDT:USDT | +10.56% | $51,869,989.21 |
+| AKT/USDT:USDT | +10.48% | $1,248,336.27 |
+| JUP/USDT:USDT | +8.10% | $6,206,141.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.73% | +2.80% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.26% | +2.32% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.41% |
-| JTO/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
-| FIGSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.29% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.75% | +2.72% |
+| CORE/USDT:USDT | below_1h_threshold | +2.51% | +2.48% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.28% | +2.25% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.95% | +1.92% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.71% | +1.68% |
 
 ## 5. 次に見るべき不足
 
