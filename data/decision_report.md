@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T17:32:48.178981+00:00
+- generated_at: 2026-05-08T17:37:37.440657+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3811**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T17:32:45.016701+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=80133.2
+- 更新: 2026-05-08T17:37:34.405691+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=80108.3
 - Funnel: target 768 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INTCSTOCK/USDT:USDT | +7.39% | $8,204,064.29 |
-| JUP/USDT:USDT | +7.32% | $4,339,609.14 |
-| CHIP/USDT:USDT | +7.22% | $49,436,590.12 |
-| COLLECT/USDT:USDT | +7.04% | $1,468,269.87 |
-| SPORTFUN/USDT:USDT | +6.61% | $1,455,978.82 |
+| COLLECT/USDT:USDT | +7.96% | $1,475,131.90 |
+| INTCSTOCK/USDT:USDT | +7.75% | $8,239,574.74 |
+| SIREN/USDT:USDT | +7.41% | $15,792,748.45 |
+| CHIP/USDT:USDT | +6.44% | $49,681,438.26 |
+| SPORTFUN/USDT:USDT | +6.29% | $1,470,242.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +4.56% | +4.10% |
-| SATO/USDT:USDT | below_1h_threshold | +3.90% | +3.44% |
-| LINEA/USDT:USDT | below_1h_threshold | +3.62% | +3.17% |
-| IO/USDT:USDT | below_1h_threshold | +3.33% | +2.88% |
-| ARB/USDT:USDT | below_1h_threshold | +3.11% | +2.65% |
+| IO/USDT:USDT | below_1h_threshold | +4.62% | +4.19% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.70% | +3.28% |
+| ARB/USDT:USDT | below_1h_threshold | +3.59% | +3.16% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.53% | +3.11% |
+| OP/USDT:USDT | below_1h_threshold | +3.52% | +3.09% |
 
 ## 5. 次に見るべき不足
 
