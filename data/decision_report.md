@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T13:27:32.635491+00:00
+- generated_at: 2026-05-08T13:32:26.448663+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3785**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$99.32** / 初期 $100.00 (-0.68%)
-- 確定トレード: 26件 (TP 7 / SL 17 / EXP 2)
-- 最新: UB/USDT:USDT TP_HIT PnL +8.00% 残高後 $99.32
+- 残高: **$98.82** / 初期 $100.00 (-1.18%)
+- 確定トレード: 27件 (TP 7 / SL 18 / EXP 2)
+- 最新: RKLBSTOCK/USDT:USDT SL_HIT PnL -2.88% 残高後 $98.82
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T13:27:29.849930+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=79634.8
-- Funnel: target 773 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-08T13:32:24.172839+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=79676.8
+- Funnel: target 773 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +46.43% | $11,727,156.85 |
-| BSB/USDT:USDT | +40.39% | $12,067,261.16 |
-| PLAY/USDT:USDT | +38.89% | $11,903,882.70 |
-| COLLECT/USDT:USDT | +29.79% | $1,090,683.02 |
-| AGT/USDT:USDT | +27.43% | $5,829,150.51 |
+| PHAROS/USDT:USDT | +47.39% | $11,750,045.55 |
+| BSB/USDT:USDT | +40.45% | $12,143,590.89 |
+| PLAY/USDT:USDT | +38.64% | $11,963,900.68 |
+| COLLECT/USDT:USDT | +28.21% | $1,098,873.38 |
+| AGT/USDT:USDT | +27.30% | $5,831,191.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +2.87% | +3.31% |
-| LAB/USDT:USDT | below_1h_threshold | +2.86% | +3.30% |
-| GALA/USDT:USDT | below_1h_threshold | +2.34% | +2.78% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.87% | +2.31% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.84% | +2.28% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.08% | +3.46% |
+| LAB/USDT:USDT | below_1h_threshold | +2.64% | +3.03% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.62% | +3.00% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.82% |
+| GALA/USDT:USDT | below_1h_threshold | +1.85% | +2.23% |
 
 ## 5. 次に見るべき不足
 
