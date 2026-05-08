@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T20:32:37.599066+00:00
+- generated_at: 2026-05-08T20:35:18.323263+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3821**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T20:32:34.551316+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=80131.6
+- 更新: 2026-05-08T20:35:15.202340+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80215.3
 - Funnel: target 767 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.5 >= 65=1
+- Strict後reject: 4h RSI 73.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CORE/USDT:USDT | +13.28% | $1,244,185.21 |
-| SATO/USDT:USDT | +12.12% | $6,127,741.83 |
-| COLLECT/USDT:USDT | +11.12% | $2,720,870.77 |
-| ICP/USDT:USDT | +10.82% | $204,697,458.04 |
-| RKLBSTOCK/USDT:USDT | +10.75% | $2,621,340.96 |
+| CORE/USDT:USDT | +15.29% | $1,263,298.91 |
+| COLLECT/USDT:USDT | +13.23% | $2,747,301.01 |
+| ICP/USDT:USDT | +11.44% | $205,194,503.96 |
+| OP/USDT:USDT | +9.15% | $21,709,793.20 |
+| CHIP/USDT:USDT | +8.79% | $53,627,152.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.62% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.66% | +2.68% |
-| ENA/USDT:USDT | below_1h_threshold | +2.53% | +2.55% |
-| CORE/USDT:USDT | below_1h_threshold | +2.00% | +2.01% |
-| OP/USDT:USDT | below_1h_threshold | +1.80% | +1.81% |
+| CORE/USDT:USDT | below_1h_threshold | +3.63% | +3.54% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.31% | +3.22% |
+| OP/USDT:USDT | below_1h_threshold | +2.66% | +2.57% |
+| ENA/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.83% | +1.74% |
 
 ## 5. 次に見るべき不足
 
