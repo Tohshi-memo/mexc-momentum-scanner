@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-08T14:42:51.358719+00:00
+- generated_at: 2026-05-08T14:47:41.725476+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3791**
+- closed shadow trades: **3792**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.35% / filled 20/20。**
-- 全期間 MARKET基準: n=3791, expectancy=-0.12%
+- 全期間 MARKET基準: n=3792, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+1.35%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | ASK | 20/20 | 100.0% | +1.47% | **+1.47%** |
 | MARKET | 20/20 | 100.0% | +1.35% | **+1.35%** |
 | LIMIT_3PCT | 11/20 | 55.0% | +1.59% | **+0.87%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.86% | **+0.73%** |
-| LIMIT_ATR | 11/20 | 55.0% | +1.31% | **+0.72%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +0.92% | **+0.78%** |
+| LIMIT_ATR | 11/20 | 55.0% | +1.21% | **+0.66%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 191件 (Win 48 / Loss 64 / Flat 79) / skip 161件
+- 確定: 191件 (Win 48 / Loss 64 / Flat 79) / skip 162件
 - 成長率目線: 平均log +0.000423 / 幾何平均 +0.042% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PHAROS/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T14:42:44.542600+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.71% price=80176.3
-- Funnel: target 773 → liquid 184 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 73.2 >= 65=1, 4h RSI 84.1 >= 65=1
+- 更新: 2026-05-08T14:47:38.419323+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.79% price=80246.5
+- Funnel: target 773 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +48.30% | $13,581,665.39 |
-| PHAROS/USDT:USDT | +47.57% | $12,729,748.96 |
-| PLAY/USDT:USDT | +39.84% | $13,554,824.37 |
-| COLLECT/USDT:USDT | +31.94% | $1,204,138.96 |
-| AGT/USDT:USDT | +28.50% | $5,944,463.87 |
+| BSB/USDT:USDT | +47.88% | $13,661,087.81 |
+| PHAROS/USDT:USDT | +47.12% | $12,766,595.28 |
+| PLAY/USDT:USDT | +37.62% | $13,669,324.27 |
+| COLLECT/USDT:USDT | +32.07% | $1,223,078.11 |
+| AGT/USDT:USDT | +27.81% | $5,946,044.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TIA/USDT:USDT | below_1h_threshold | +4.60% | +3.89% |
-| LAB/USDT:USDT | below_1h_threshold | +2.69% | +1.98% |
-| ICP/USDT:USDT | below_1h_threshold | +2.61% | +1.91% |
-| UNI/USDT:USDT | below_1h_threshold | +2.57% | +1.87% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.16% | +1.45% |
+| TIA/USDT:USDT | below_1h_threshold | +4.99% | +4.19% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.31% | +3.51% |
+| GALA/USDT:USDT | below_1h_threshold | +3.41% | +2.62% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.26% | +2.47% |
+| ICP/USDT:USDT | below_1h_threshold | +3.19% | +2.40% |
 
 ## 5. 次に見るべき不足
 
