@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-08T20:35:18.323263+00:00
+- generated_at: 2026-05-08T20:37:54.429689+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3821**
+- closed shadow trades: **3822**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3821, expectancy=-0.12%
-- 直近20件 MARKET基準: n=20, expectancy=-0.27%
+- 全期間 MARKET基準: n=3822, expectancy=-0.12%
+- 直近20件 MARKET基準: n=20, expectancy=-0.04%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.27% | **-0.27%** |
+| MARKET | 20/20 | 100.0% | -0.04% | **-0.04%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 7/17 | 41.2% | +1.16% | **+0.48%** |
+| LIMIT_BB3S | 8/17 | 47.1% | +1.36% | **+0.64%** |
 | LIMIT_5PCT | 7/20 | 35.0% | +0.95% | **+0.33%** |
+| LIMIT_3PCT | 15/20 | 75.0% | +0.39% | **+0.29%** |
 | LIMIT_FIB1272 | 9/20 | 45.0% | +0.34% | **+0.15%** |
-| LIMIT_4PCT | 12/20 | 60.0% | +0.01% | **+0.01%** |
-| LIMIT_ATR | 13/20 | 65.0% | -0.19% | **-0.13%** |
+| LIMIT_ATR | 13/20 | 65.0% | +0.14% | **+0.09%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK_LONG | 20/20 | 100.0% | +0.78% | **+0.78%** |
+| LIMIT_FIB1272_LONG | 10/20 | 50.0% | +1.18% | **+0.59%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +1.19% | **+0.48%** |
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +0.99% | **+0.44%** |
-| LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.52% | **+0.41%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.27% | **+0.27%** |
+| ASK_LONG | 20/20 | 100.0% | +0.38% | **+0.38%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.25% | **+0.21%** |
+| LIMIT_4PCT_LONG | 10/20 | 50.0% | +0.35% | **+0.17%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 192件 (Win 48 / Loss 64 / Flat 80) / skip 190件
+- 確定: 192件 (Win 48 / Loss 64 / Flat 80) / skip 191件
 - 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: FILECOIN/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T20:35:15.202340+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=80215.3
-- Funnel: target 767 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-08T20:37:51.409711+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=80221.9
+- Funnel: target 767 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CORE/USDT:USDT | +15.29% | $1,263,298.91 |
-| COLLECT/USDT:USDT | +13.23% | $2,747,301.01 |
-| ICP/USDT:USDT | +11.44% | $205,194,503.96 |
-| OP/USDT:USDT | +9.15% | $21,709,793.20 |
-| CHIP/USDT:USDT | +8.79% | $53,627,152.60 |
+| CORE/USDT:USDT | +16.04% | $1,307,676.62 |
+| COLLECT/USDT:USDT | +13.43% | $2,758,045.94 |
+| ICP/USDT:USDT | +9.84% | $205,670,258.51 |
+| OP/USDT:USDT | +9.34% | $21,789,484.92 |
+| CHIP/USDT:USDT | +8.96% | $53,681,437.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CORE/USDT:USDT | below_1h_threshold | +3.63% | +3.54% |
-| JASMY/USDT:USDT | below_1h_threshold | +3.31% | +3.22% |
-| OP/USDT:USDT | below_1h_threshold | +2.66% | +2.57% |
-| ENA/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.83% | +1.74% |
+| ICP/USDT:USDT | below_1h_threshold | +4.44% | +4.35% |
+| CORE/USDT:USDT | below_1h_threshold | +4.37% | +4.27% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.53% | +3.43% |
+| OP/USDT:USDT | below_1h_threshold | +2.85% | +2.75% |
+| ENA/USDT:USDT | below_1h_threshold | +2.18% | +2.08% |
 
 ## 5. 次に見るべき不足
 
