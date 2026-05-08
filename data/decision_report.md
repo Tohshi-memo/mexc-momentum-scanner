@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T16:42:45.974136+00:00
+- generated_at: 2026-05-08T16:47:28.529902+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3805**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T16:42:42.798199+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=79764.3
-- Funnel: target 772 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.0 >= 65=1
+- 更新: 2026-05-08T16:47:25.000368+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=79769.5
+- Funnel: target 772 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.0 >= 65=1, 4h RSI 82.0 >= 65=1, 4h RSI 75.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +10.37% | $46,051,100.82 |
-| SPORTFUN/USDT:USDT | +4.46% | $1,282,439.79 |
-| PENGUIN/USDT:USDT | +4.29% | $1,036,842.26 |
-| JUP/USDT:USDT | +3.91% | $3,478,912.77 |
-| ONDO/USDT:USDT | +3.83% | $70,899,561.05 |
+| CHIP/USDT:USDT | +9.74% | $46,641,148.29 |
+| SPORTFUN/USDT:USDT | +5.82% | $1,309,537.35 |
+| SIREN/USDT:USDT | +5.36% | $14,054,497.83 |
+| JUP/USDT:USDT | +4.87% | $3,510,213.14 |
+| PENGUIN/USDT:USDT | +4.44% | $1,039,312.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPORTFUN/USDT:USDT | below_1h_threshold | +4.67% | +5.11% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +4.30% | +4.73% |
-| JUP/USDT:USDT | below_1h_threshold | +4.05% | +4.49% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.91% | +4.35% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.41% | +3.85% |
+| JUP/USDT:USDT | below_1h_threshold | +4.92% | +5.35% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +4.45% | +4.88% |
+| ONDO/USDT:USDT | below_1h_threshold | +4.26% | +4.69% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.68% | +4.12% |
+| BSB/USDT:USDT | below_1h_threshold | +3.29% | +3.73% |
 
 ## 5. 次に見るべき不足
 
