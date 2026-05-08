@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T16:52:38.753593+00:00
+- generated_at: 2026-05-08T16:57:35.433153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3806**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T16:52:34.691868+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=79768.4
-- Funnel: target 772 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 82.1 >= 65=1, 4h RSI 68.1 >= 65=1, 4h RSI 81.0 >= 65=1
+- 更新: 2026-05-08T16:57:31.542931+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=79798.3
+- Funnel: target 772 → liquid 182 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.4 >= 65=1, 4h RSI 79.0 >= 65=1, 4h RSI 81.7 >= 65=1, 4h RSI 90.4 >= 65=1, 4h RSI 81.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +9.94% | $47,351,209.70 |
-| SPORTFUN/USDT:USDT | +6.39% | $1,337,183.08 |
-| BSB/USDT:USDT | +5.11% | $18,809,630.95 |
-| JUP/USDT:USDT | +5.00% | $3,575,742.82 |
-| SIREN/USDT:USDT | +4.75% | $14,142,762.57 |
+| CHIP/USDT:USDT | +10.74% | $47,608,436.76 |
+| INTCSTOCK/USDT:USDT | +6.55% | $6,976,194.13 |
+| JUP/USDT:USDT | +5.82% | $3,607,435.53 |
+| ONDO/USDT:USDT | +5.11% | $73,330,610.29 |
+| SPORTFUN/USDT:USDT | +4.96% | $1,355,747.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +4.76% | +5.19% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.47% | +4.90% |
-| COLLECT/USDT:USDT | below_1h_threshold | +4.34% | +4.77% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +4.12% | +4.55% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.91% | +4.34% |
+| COLLECT/USDT:USDT | below_1h_threshold | +4.19% | +4.58% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +4.02% | +4.42% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.95% | +4.34% |
+| MEGA/USDT:USDT | below_1h_threshold | +3.13% | +3.53% |
+| SNX/USDT:USDT | below_1h_threshold | +3.12% | +3.52% |
 
 ## 5. 次に見るべき不足
 
