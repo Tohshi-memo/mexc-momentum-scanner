@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T17:07:54.938978+00:00
+- generated_at: 2026-05-08T17:12:30.794833+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3809**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T17:07:51.275246+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=79871.1
+- 更新: 2026-05-08T17:12:27.639502+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=79730.8
 - Funnel: target 772 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1
+- Strict後reject: 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SIREN/USDT:USDT | +10.52% | $13,704,497.10 |
-| INTCSTOCK/USDT:USDT | +8.57% | $7,078,888.80 |
-| CHIP/USDT:USDT | +8.38% | $47,983,509.00 |
-| SPORTFUN/USDT:USDT | +8.24% | $1,383,685.47 |
-| JUP/USDT:USDT | +6.55% | $3,678,418.53 |
+| SIREN/USDT:USDT | +12.45% | $14,148,364.33 |
+| CHIP/USDT:USDT | +8.21% | $48,212,859.69 |
+| SPORTFUN/USDT:USDT | +8.10% | $1,398,388.88 |
+| INTCSTOCK/USDT:USDT | +7.97% | $7,407,901.05 |
+| JUP/USDT:USDT | +5.23% | $3,827,025.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPORTFUN/USDT:USDT | below_1h_threshold | +2.96% | +2.83% |
-| SATO/USDT:USDT | below_1h_threshold | +2.25% | +2.12% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.13% | +2.00% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.51% |
-| BSB/USDT:USDT | below_1h_threshold | +1.50% | +1.37% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.31% | +3.36% |
+| STRK/USDT:USDT | below_1h_threshold | +3.01% | +3.06% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +2.81% | +2.86% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.39% | +2.44% |
+| SATO/USDT:USDT | below_1h_threshold | +1.98% | +2.03% |
 
 ## 5. 次に見るべき不足
 
