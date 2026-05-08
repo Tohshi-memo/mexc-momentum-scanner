@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-08T17:27:41.699344+00:00
+- generated_at: 2026-05-08T17:32:48.178981+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3810**
+- closed shadow trades: **3811**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.38% / filled 20/20。**
-- 全期間 MARKET基準: n=3810, expectancy=-0.12%
+- 全期間 MARKET基準: n=3811, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+1.38%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.15% | **+0.06%** |
 | LIMIT_6PCT_LONG | 10/20 | 50.0% | +0.01% | **+0.01%** |
 | LIMIT_FIB1618_LONG | 3/20 | 15.0% | -1.14% | **-0.17%** |
-| LIMIT_FIB1272_LONG | 10/20 | 50.0% | -0.38% | **-0.19%** |
+| LIMIT_FIB1272_LONG | 10/20 | 50.0% | -0.44% | **-0.22%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 192件 (Win 48 / Loss 64 / Flat 80) / skip 179件
+- 確定: 192件 (Win 48 / Loss 64 / Flat 80) / skip 180件
 - 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: FILECOIN/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T17:27:38.332181+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=79977.0
-- Funnel: target 772 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-08T17:32:45.016701+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=80133.2
+- Funnel: target 768 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SIREN/USDT:USDT | +10.67% | $15,147,092.51 |
-| COLLECT/USDT:USDT | +8.37% | $1,448,337.94 |
-| JUP/USDT:USDT | +8.23% | $4,094,376.98 |
-| CHIP/USDT:USDT | +7.11% | $49,225,484.23 |
-| INTCSTOCK/USDT:USDT | +6.92% | $8,138,878.77 |
+| INTCSTOCK/USDT:USDT | +7.39% | $8,204,064.29 |
+| JUP/USDT:USDT | +7.32% | $4,339,609.14 |
+| CHIP/USDT:USDT | +7.22% | $49,436,590.12 |
+| COLLECT/USDT:USDT | +7.04% | $1,468,269.87 |
+| SPORTFUN/USDT:USDT | +6.61% | $1,455,978.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +4.04% | +3.78% |
-| SATO/USDT:USDT | below_1h_threshold | +3.58% | +3.32% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.46% | +3.20% |
-| OP/USDT:USDT | below_1h_threshold | +3.13% | +2.87% |
-| JUP/USDT:USDT | below_1h_threshold | +2.67% | +2.41% |
+| OP/USDT:USDT | below_1h_threshold | +4.56% | +4.10% |
+| SATO/USDT:USDT | below_1h_threshold | +3.90% | +3.44% |
+| LINEA/USDT:USDT | below_1h_threshold | +3.62% | +3.17% |
+| IO/USDT:USDT | below_1h_threshold | +3.33% | +2.88% |
+| ARB/USDT:USDT | below_1h_threshold | +3.11% | +2.65% |
 
 ## 5. 次に見るべき不足
 
