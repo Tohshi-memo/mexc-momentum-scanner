@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T14:07:30.149061+00:00
+- generated_at: 2026-05-08T14:12:33.901260+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3788**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T14:07:27.162937+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=79880.1
-- Funnel: target 773 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-08T14:12:31.112160+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=79841.1
+- Funnel: target 773 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +50.17% | $12,339,135.94 |
-| BSB/USDT:USDT | +45.73% | $12,615,519.62 |
-| PLAY/USDT:USDT | +40.04% | $12,339,845.34 |
-| COLLECT/USDT:USDT | +31.54% | $1,151,498.51 |
-| AGT/USDT:USDT | +27.90% | $5,912,612.55 |
+| PHAROS/USDT:USDT | +50.57% | $12,366,012.51 |
+| BSB/USDT:USDT | +46.65% | $12,719,441.10 |
+| PLAY/USDT:USDT | +40.38% | $12,395,362.08 |
+| COLLECT/USDT:USDT | +31.78% | $1,159,651.84 |
+| AGT/USDT:USDT | +27.74% | $5,919,002.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.60% | +3.26% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.51% | +2.18% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.33% | +1.99% |
-| NOT/USDT:USDT | below_1h_threshold | +1.38% | +1.05% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +0.99% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.82% | +3.53% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.48% | +3.20% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.16% |
+| TST/USDT:USDT | below_1h_threshold | +3.05% | +2.77% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.39% | +2.10% |
 
 ## 5. 次に見るべき不足
 
