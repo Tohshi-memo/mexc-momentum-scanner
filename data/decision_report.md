@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T13:52:39.256405+00:00
+- generated_at: 2026-05-08T13:57:31.526462+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3787**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T13:52:36.071175+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.50% price=79585.7
-- Funnel: target 773 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.6 >= 65=1, 4h RSI 85.3 >= 65=1
+- 更新: 2026-05-08T13:57:28.376989+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=79594.7
+- Funnel: target 773 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +53.75% | $12,111,568.38 |
-| BSB/USDT:USDT | +45.67% | $12,590,511.52 |
-| PLAY/USDT:USDT | +40.04% | $12,455,312.61 |
-| COLLECT/USDT:USDT | +30.69% | $1,138,076.37 |
-| AGT/USDT:USDT | +27.15% | $5,870,078.64 |
+| PHAROS/USDT:USDT | +53.29% | $12,191,081.44 |
+| BSB/USDT:USDT | +46.54% | $12,690,442.44 |
+| PLAY/USDT:USDT | +38.46% | $12,515,166.14 |
+| COLLECT/USDT:USDT | +30.75% | $1,144,579.07 |
+| AGT/USDT:USDT | +27.27% | $5,878,189.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +4.60% | +5.10% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.14% | +4.64% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.00% | +4.50% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.48% | +3.99% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.72% | +3.22% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +5.28% |
+| PHAROS/USDT:USDT | below_1h_threshold | +4.67% | +5.16% |
+| GALA/USDT:USDT | below_1h_threshold | +4.33% | +4.82% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.91% | +4.40% |
+| FHE/USDT:USDT | below_1h_threshold | +3.59% | +4.08% |
 
 ## 5. 次に見るべき不足
 
