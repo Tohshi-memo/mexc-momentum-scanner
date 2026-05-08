@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T16:07:47.125396+00:00
+- generated_at: 2026-05-08T16:12:31.873399+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3801**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T16:07:44.149668+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=79968.5
+- 更新: 2026-05-08T16:12:28.846180+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=79955.5
 - Funnel: target 772 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +2.42% | $17,294,934.35 |
-| SATO/USDT:USDT | +2.17% | $7,848,617.20 |
-| COLLECT/USDT:USDT | +1.70% | $1,343,585.05 |
-| ETC/USDT:USDT | +1.62% | $4,989,606.18 |
-| NIL/USDT:USDT | +1.58% | $33,563,011.39 |
+| SKYAI/USDT:USDT | +4.06% | $17,431,158.02 |
+| M/USDT:USDT | +2.43% | $1,951,634.38 |
+| SPORTFUN/USDT:USDT | +2.32% | $1,171,773.35 |
+| COLLECT/USDT:USDT | +2.10% | $1,345,761.05 |
+| NIL/USDT:USDT | +1.81% | $33,606,987.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.39% | +2.57% |
-| SATO/USDT:USDT | below_1h_threshold | +2.08% | +2.26% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.70% | +1.89% |
-| ETC/USDT:USDT | below_1h_threshold | +1.62% | +1.80% |
-| NIL/USDT:USDT | below_1h_threshold | +1.59% | +1.77% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.12% | +4.31% |
+| M/USDT:USDT | below_1h_threshold | +2.44% | +2.63% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.16% | +2.35% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +2.13% | +2.33% |
+| NIL/USDT:USDT | below_1h_threshold | +1.80% | +2.00% |
 
 ## 5. 次に見るべき不足
 
