@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T15:42:30.773068+00:00
+- generated_at: 2026-05-08T15:47:53.777615+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3795**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T15:42:27.307573+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=79994.4
-- Funnel: target 773 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- 更新: 2026-05-08T15:47:50.357709+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=79948.8
+- Funnel: target 773 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +56.73% | $15,519,995.54 |
-| PHAROS/USDT:USDT | +45.01% | $13,445,837.38 |
-| SPORTFUN/USDT:USDT | +38.74% | $1,026,589.66 |
-| COLLECT/USDT:USDT | +33.63% | $1,321,297.59 |
-| PLAY/USDT:USDT | +29.98% | $14,352,357.45 |
+| BSB/USDT:USDT | +56.62% | $15,653,318.38 |
+| PHAROS/USDT:USDT | +43.92% | $13,489,474.99 |
+| SPORTFUN/USDT:USDT | +36.93% | $1,053,967.05 |
+| COLLECT/USDT:USDT | +33.96% | $1,327,787.83 |
+| STRK/USDT:USDT | +26.92% | $29,091,675.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPORTFUN/USDT:USDT | below_1h_threshold | +3.44% | +3.59% |
-| STRK/USDT:USDT | below_1h_threshold | +3.41% | +3.56% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.48% | +2.63% |
-| JUP/USDT:USDT | below_1h_threshold | +1.93% | +2.08% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.97% |
+| SATO/USDT:USDT | below_1h_threshold | +4.83% | +5.04% |
+| BILL/USDT:USDT | below_1h_threshold | +4.33% | +4.53% |
+| STRK/USDT:USDT | below_1h_threshold | +3.84% | +4.04% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +2.82% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.40% | +2.60% |
 
 ## 5. 次に見るべき不足
 
