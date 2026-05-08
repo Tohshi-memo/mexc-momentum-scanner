@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T18:07:39.209196+00:00
+- generated_at: 2026-05-08T18:12:30.374687+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3814**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T18:07:36.415241+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80150.4
+- 更新: 2026-05-08T18:12:27.534949+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80159.0
 - Funnel: target 768 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +7.86% | $49,816,116.59 |
-| AKT/USDT:USDT | +7.66% | $1,078,869.85 |
-| COLLECT/USDT:USDT | +7.41% | $1,621,821.69 |
-| IO/USDT:USDT | +6.97% | $1,313,466.33 |
-| INTCSTOCK/USDT:USDT | +6.57% | $8,300,290.03 |
+| CHIP/USDT:USDT | +9.62% | $50,128,350.01 |
+| COLLECT/USDT:USDT | +8.22% | $1,641,038.66 |
+| AKT/USDT:USDT | +7.87% | $1,085,567.29 |
+| IO/USDT:USDT | +7.42% | $1,324,189.08 |
+| OP/USDT:USDT | +6.97% | $19,225,877.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B3/USDT:USDT | below_1h_threshold | +3.80% | +3.64% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.56% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.44% | +1.28% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.44% | +1.28% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.35% | +1.19% |
+| B3/USDT:USDT | below_1h_threshold | +3.06% | +2.88% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.17% | +2.00% |
+| OP/USDT:USDT | below_1h_threshold | +1.94% | +1.77% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.46% | +1.29% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.41% | +1.24% |
 
 ## 5. 次に見るべき不足
 
