@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-08T22:32:31.319511+00:00
+- generated_at: 2026-05-08T22:37:34.427661+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3825**
+- closed shadow trades: **3826**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3825, expectancy=-0.12%
-- 直近20件 MARKET基準: n=20, expectancy=-0.04%
+- 全期間 MARKET基準: n=3826, expectancy=-0.12%
+- 直近20件 MARKET基準: n=20, expectancy=-0.26%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.04% | **-0.04%** |
+| MARKET | 20/20 | 100.0% | -0.26% | **-0.26%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -47,37 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 192件 (Win 48 / Loss 64 / Flat 80) / skip 194件
+- 確定: 192件 (Win 48 / Loss 64 / Flat 80) / skip 195件
 - 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: FILECOIN/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T22:32:28.514877+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=80286.1
-- Funnel: target 767 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-08T22:37:31.136840+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80292.0
+- Funnel: target 767 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COLLECT/USDT:USDT | +28.99% | $4,183,137.63 |
-| OP/USDT:USDT | +16.78% | $29,579,717.28 |
-| CORE/USDT:USDT | +12.91% | $1,602,977.66 |
-| JUP/USDT:USDT | +10.87% | $9,228,119.68 |
-| ICP/USDT:USDT | +10.25% | $209,193,121.43 |
+| COLLECT/USDT:USDT | +26.84% | $4,251,528.34 |
+| OP/USDT:USDT | +14.74% | $30,621,391.96 |
+| CORE/USDT:USDT | +13.64% | $1,604,135.96 |
+| JUP/USDT:USDT | +11.37% | $9,320,793.84 |
+| SATO/USDT:USDT | +10.91% | $5,250,495.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGS/USDT:USDT | below_1h_threshold | +4.43% | +4.35% |
-| BILL/USDT:USDT | below_1h_threshold | +4.39% | +4.31% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.54% | +2.46% |
-| NIL/USDT:USDT | below_1h_threshold | +2.30% | +2.22% |
-| FHE/USDT:USDT | below_1h_threshold | +1.95% | +1.87% |
+| SATO/USDT:USDT | below_1h_threshold | +3.93% | +3.84% |
+| DOGS/USDT:USDT | below_1h_threshold | +3.86% | +3.77% |
+| NIL/USDT:USDT | below_1h_threshold | +3.18% | +3.09% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.14% | +3.05% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.13% | +3.05% |
 
 ## 5. 次に見るべき不足
 
