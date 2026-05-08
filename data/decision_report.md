@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T12:47:32.272004+00:00
+- generated_at: 2026-05-08T12:52:48.836093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3783**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T12:47:29.200913+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80143.9
-- Funnel: target 773 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1
+- 更新: 2026-05-08T12:52:45.402585+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=79984.9
+- Funnel: target 773 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +45.22% | $11,085,349.26 |
-| BSB/USDT:USDT | +44.26% | $11,600,080.52 |
-| PLAY/USDT:USDT | +33.60% | $11,354,098.90 |
-| STRK/USDT:USDT | +28.00% | $25,829,902.42 |
-| AGT/USDT:USDT | +27.12% | $5,804,183.51 |
+| PHAROS/USDT:USDT | +47.13% | $11,162,460.76 |
+| BSB/USDT:USDT | +41.04% | $11,768,810.83 |
+| PLAY/USDT:USDT | +33.06% | $11,390,631.01 |
+| STRK/USDT:USDT | +28.18% | $25,898,567.73 |
+| AGT/USDT:USDT | +27.82% | $5,808,457.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +4.85% | +4.89% |
-| LUNC/USDT:USDT | below_1h_threshold | +4.26% | +4.30% |
-| GALA/USDT:USDT | below_1h_threshold | +2.95% | +2.99% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.44% | +2.49% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.97% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +3.81% |
+| TST/USDT:USDT | below_1h_threshold | +3.42% | +3.67% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.35% | +3.60% |
+| GALA/USDT:USDT | below_1h_threshold | +3.02% | +3.27% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.22% | +2.46% |
 
 ## 5. 次に見るべき不足
 
