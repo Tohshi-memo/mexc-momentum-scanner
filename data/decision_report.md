@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-08T14:47:41.725476+00:00
+- generated_at: 2026-05-08T14:52:40.789113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3792**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-08T14:47:38.419323+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.79% price=80246.5
-- Funnel: target 773 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.8 >= 65=1
+- 更新: 2026-05-08T14:52:37.514644+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=80140.6
+- Funnel: target 773 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 84.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +47.88% | $13,661,087.81 |
-| PHAROS/USDT:USDT | +47.12% | $12,766,595.28 |
-| PLAY/USDT:USDT | +37.62% | $13,669,324.27 |
-| COLLECT/USDT:USDT | +32.07% | $1,223,078.11 |
-| AGT/USDT:USDT | +27.81% | $5,946,044.53 |
+| BSB/USDT:USDT | +48.71% | $13,765,475.72 |
+| PHAROS/USDT:USDT | +45.82% | $12,788,642.29 |
+| PLAY/USDT:USDT | +38.89% | $13,796,238.25 |
+| COLLECT/USDT:USDT | +32.54% | $1,234,844.36 |
+| AGT/USDT:USDT | +28.55% | $5,947,340.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TIA/USDT:USDT | below_1h_threshold | +4.99% | +4.19% |
-| SIREN/USDT:USDT | below_1h_threshold | +4.31% | +3.51% |
-| GALA/USDT:USDT | below_1h_threshold | +3.41% | +2.62% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.26% | +2.47% |
-| ICP/USDT:USDT | below_1h_threshold | +3.19% | +2.40% |
+| TIA/USDT:USDT | below_1h_threshold | +4.96% | +4.30% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.58% | +3.92% |
+| ICP/USDT:USDT | below_1h_threshold | +3.35% | +2.69% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.33% | +2.67% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +2.52% |
 
 ## 5. 次に見るべき不足
 
