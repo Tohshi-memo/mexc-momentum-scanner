@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T16:40:27.557439+00:00
+- generated_at: 2026-05-09T16:43:17.907824+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3902**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T16:40:23.793347+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=80556.5
-- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1
+- 更新: 2026-05-09T16:43:14.313967+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=80589.0
+- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1, 4h RSI 73.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +23.17% | $25,962,207.49 |
-| SATO/USDT:USDT | +13.52% | $3,869,981.62 |
-| OFC/USDT:USDT | +5.52% | $1,091,306.42 |
-| BIO/USDT:USDT | +4.25% | $1,301,931.39 |
-| ANTHROPIC/USDT:USDT | +3.84% | $1,309,401.81 |
+| BILL/USDT:USDT | +22.94% | $26,359,698.79 |
+| SATO/USDT:USDT | +10.16% | $3,921,675.55 |
+| OFC/USDT:USDT | +4.94% | $1,092,327.84 |
+| ANTHROPIC/USDT:USDT | +4.56% | $1,311,785.18 |
+| BIO/USDT:USDT | +3.54% | $1,304,843.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OFC/USDT:USDT | below_1h_threshold | +4.87% | +4.78% |
-| BIO/USDT:USDT | below_1h_threshold | +4.26% | +4.17% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.84% | +3.76% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.33% | +3.24% |
-| INX/USDT:USDT | below_1h_threshold | +3.31% | +3.23% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.56% | +4.44% |
+| BIO/USDT:USDT | below_1h_threshold | +3.41% | +3.28% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.81% | +2.68% |
+| VVV/USDT:USDT | below_1h_threshold | +2.48% | +2.35% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.42% | +2.30% |
 
 ## 5. 次に見るべき不足
 
