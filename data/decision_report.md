@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T11:22:38.451579+00:00
+- generated_at: 2026-05-09T11:27:27.789530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3882**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T11:22:35.138750+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=80336.3
-- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-09T11:27:24.830783+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80303.0
+- Funnel: target 769 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +48.14% | $20,511,598.98 |
-| DYM/USDT:USDT | +38.90% | $4,871,544.41 |
-| ZEREBRO/USDT:USDT | +30.94% | $2,500,060.33 |
-| SAHARA/USDT:USDT | +23.49% | $2,580,877.60 |
-| ON/USDT:USDT | +16.33% | $1,292,031.38 |
+| PLAY/USDT:USDT | +44.71% | $20,801,058.52 |
+| DYM/USDT:USDT | +37.66% | $4,935,225.43 |
+| ZEREBRO/USDT:USDT | +30.46% | $2,512,688.48 |
+| SAHARA/USDT:USDT | +23.86% | $2,601,005.53 |
+| ON/USDT:USDT | +17.13% | $1,304,396.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +4.31% | +4.18% |
-| PHAROS/USDT:USDT | below_1h_threshold | +3.12% | +2.99% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.54% | +2.41% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.38% | +2.25% |
-| TST/USDT:USDT | below_1h_threshold | +2.02% | +1.89% |
+| TST/USDT:USDT | below_1h_threshold | +4.77% | +4.69% |
+| SATO/USDT:USDT | below_1h_threshold | +4.06% | +3.97% |
+| PHAROS/USDT:USDT | below_1h_threshold | +3.62% | +3.54% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.04% | +1.95% |
+| BASED/USDT:USDT | below_1h_threshold | +1.89% | +1.80% |
 
 ## 5. 次に見るべき不足
 
