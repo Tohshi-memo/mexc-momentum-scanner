@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T17:22:47.139285+00:00
+- generated_at: 2026-05-09T17:27:35.887748+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3906**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T17:22:44.139154+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=80722.0
+- 更新: 2026-05-09T17:27:32.804145+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=80759.9
 - Funnel: target 769 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
+- Strict後reject: 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +22.97% | $27,985,442.89 |
-| SATO/USDT:USDT | +15.20% | $4,146,251.46 |
-| INX/USDT:USDT | +10.01% | $2,911,651.32 |
-| RAVE/USDT:USDT | +9.54% | $17,179,539.95 |
-| BIO/USDT:USDT | +5.59% | $1,141,595.74 |
+| BILL/USDT:USDT | +22.49% | $28,292,160.79 |
+| SATO/USDT:USDT | +15.75% | $4,187,057.57 |
+| INX/USDT:USDT | +10.24% | $2,941,897.53 |
+| RAVE/USDT:USDT | +7.86% | $17,461,426.46 |
+| SAHARA/USDT:USDT | +5.91% | $6,432,930.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +3.21% | +3.03% |
-| AKT/USDT:USDT | below_1h_threshold | +2.98% | +2.80% |
-| INX/USDT:USDT | below_1h_threshold | +2.67% | +2.49% |
-| BIO/USDT:USDT | below_1h_threshold | +2.65% | +2.47% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.39% | +2.21% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.69% | +3.46% |
+| INX/USDT:USDT | below_1h_threshold | +2.88% | +2.65% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.74% | +2.51% |
+| AKT/USDT:USDT | below_1h_threshold | +2.54% | +2.31% |
+| BIO/USDT:USDT | below_1h_threshold | +2.50% | +2.27% |
 
 ## 5. 次に見るべき不足
 
