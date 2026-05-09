@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T03:48:01.460445+00:00
+- generated_at: 2026-05-09T03:52:59.752795+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3851**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T03:47:55.003697+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80322.3
-- Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.2 >= 65=1
+- 更新: 2026-05-09T03:52:53.366943+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80307.9
+- Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.3 >= 65=1, 4h RSI 84.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +29.79% | $4,264,671.75 |
-| COLLECT/USDT:USDT | +24.86% | $7,353,448.32 |
-| DEEP/USDT:USDT | +20.66% | $1,804,189.07 |
-| ICP/USDT:USDT | +19.91% | $233,859,963.61 |
-| CORE/USDT:USDT | +18.91% | $1,947,432.14 |
+| SATO/USDT:USDT | +27.59% | $4,284,771.63 |
+| COLLECT/USDT:USDT | +25.63% | $7,388,856.27 |
+| CORE/USDT:USDT | +21.55% | $1,965,564.74 |
+| DEEP/USDT:USDT | +20.57% | $1,814,308.26 |
+| ICP/USDT:USDT | +19.38% | $234,066,380.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CORE/USDT:USDT | below_1h_threshold | +3.16% | +3.23% |
-| BRETT/USDT:USDT | below_1h_threshold | +2.11% | +2.18% |
-| GALA/USDT:USDT | below_1h_threshold | +2.11% | +2.17% |
-| JUP/USDT:USDT | below_1h_threshold | +1.97% | +2.03% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.93% | +2.00% |
+| JUP/USDT:USDT | below_1h_threshold | +2.73% | +2.82% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.20% | +2.28% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.16% | +2.25% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.15% | +2.24% |
+| GALA/USDT:USDT | below_1h_threshold | +2.06% | +2.14% |
 
 ## 5. 次に見るべき不足
 
