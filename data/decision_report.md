@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T05:02:36.863830+00:00
+- generated_at: 2026-05-09T05:07:47.986917+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3855**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T05:02:33.606434+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80321.3
-- Funnel: target 767 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-09T05:07:45.067702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80324.4
+- Funnel: target 767 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +39.00% | $1,298,459.71 |
-| SATO/USDT:USDT | +30.45% | $4,109,432.91 |
-| CORE/USDT:USDT | +22.63% | $2,098,954.98 |
-| ICP/USDT:USDT | +18.66% | $225,915,182.43 |
-| DEEP/USDT:USDT | +16.82% | $2,127,641.31 |
+| DYM/USDT:USDT | +42.58% | $1,395,794.14 |
+| SATO/USDT:USDT | +30.78% | $4,123,141.99 |
+| CORE/USDT:USDT | +24.05% | $2,116,888.51 |
+| ICP/USDT:USDT | +19.63% | $226,080,352.59 |
+| PLUME/USDT:USDT | +17.69% | $1,349,006.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +2.25% | +2.28% |
-| BILL/USDT:USDT | below_1h_threshold | +1.43% | +1.46% |
-| CORE/USDT:USDT | below_1h_threshold | +1.41% | +1.44% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.53% | +0.56% |
+| MYX/USDT:USDT | below_1h_threshold | +3.71% | +3.74% |
+| BILL/USDT:USDT | below_1h_threshold | +2.89% | +2.91% |
+| CORE/USDT:USDT | below_1h_threshold | +2.59% | +2.61% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.89% | +1.91% |
+| DYM/USDT:USDT | below_1h_threshold | +1.67% | +1.69% |
 
 ## 5. 次に見るべき不足
 
