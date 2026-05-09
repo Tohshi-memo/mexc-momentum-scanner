@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T13:12:33.238662+00:00
+- generated_at: 2026-05-09T13:17:55.907281+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3883**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T13:12:30.414247+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80346.1
+- 更新: 2026-05-09T13:17:53.130153+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=80368.1
 - Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +32.88% | $5,878,349.41 |
-| ZEREBRO/USDT:USDT | +30.47% | $3,077,284.85 |
-| PLAY/USDT:USDT | +28.40% | $24,306,425.45 |
-| SAHARA/USDT:USDT | +24.10% | $3,370,390.09 |
-| BILL/USDT:USDT | +20.15% | $19,108,528.91 |
+| ZEREBRO/USDT:USDT | +32.37% | $3,126,655.00 |
+| PLAY/USDT:USDT | +32.25% | $24,529,286.70 |
+| DYM/USDT:USDT | +32.18% | $5,914,740.87 |
+| SAHARA/USDT:USDT | +26.52% | $3,413,110.26 |
+| BILL/USDT:USDT | +21.38% | $19,191,256.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +1.41% | +1.43% |
-| ON/USDT:USDT | below_1h_threshold | +1.34% | +1.37% |
-| SATO/USDT:USDT | below_1h_threshold | +1.27% | +1.30% |
-| JUP/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.12% | +1.15% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.34% | +3.34% |
+| LIT/USDT:USDT | below_1h_threshold | +3.20% | +3.20% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.07% | +2.07% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.91% | +1.91% |
+| JUP/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
 
 ## 5. 次に見るべき不足
 
