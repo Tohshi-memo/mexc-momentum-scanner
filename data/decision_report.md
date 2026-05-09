@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T18:32:44.217643+00:00
+- generated_at: 2026-05-09T18:37:38.914132+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3909**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T18:32:41.323372+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=81000.0
+- 更新: 2026-05-09T18:37:36.038537+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=80938.7
 - Funnel: target 769 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +12.89% | $31,340,561.00 |
-| SATO/USDT:USDT | +12.84% | $4,699,343.00 |
-| RAVE/USDT:USDT | +10.17% | $19,039,926.23 |
-| INX/USDT:USDT | +9.86% | $4,014,731.32 |
-| JASMY/USDT:USDT | +6.77% | $5,685,390.99 |
+| RAVE/USDT:USDT | +12.56% | $19,296,100.30 |
+| SATO/USDT:USDT | +11.88% | $4,713,078.01 |
+| INX/USDT:USDT | +10.91% | $4,131,008.06 |
+| BILL/USDT:USDT | +10.49% | $31,492,759.12 |
+| JASMY/USDT:USDT | +7.03% | $5,740,758.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANANA/USDT:USDT | below_1h_threshold | +3.92% | +3.63% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.49% | +2.20% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.17% | +1.88% |
-| JUP/USDT:USDT | below_1h_threshold | +1.91% | +1.62% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.85% | +1.56% |
+| RAVE/USDT:USDT | below_1h_threshold | +4.78% | +4.57% |
+| BIO/USDT:USDT | below_1h_threshold | +2.48% | +2.26% |
+| FHE/USDT:USDT | below_1h_threshold | +2.07% | +1.86% |
+| BRETT/USDT:USDT | below_1h_threshold | +1.83% | +1.62% |
+| JUP/USDT:USDT | below_1h_threshold | +1.75% | +1.54% |
 
 ## 5. 次に見るべき不足
 
