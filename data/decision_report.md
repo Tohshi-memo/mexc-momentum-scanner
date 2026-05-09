@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T01:12:34.708831+00:00
+- generated_at: 2026-05-09T01:17:53.124639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3831**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T01:12:31.827190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=80249.9
+- 更新: 2026-05-09T01:17:50.258813+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80257.3
 - Funnel: target 767 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COLLECT/USDT:USDT | +26.71% | $6,328,856.01 |
-| PLUME/USDT:USDT | +16.51% | $1,024,411.29 |
-| ICP/USDT:USDT | +14.08% | $228,480,671.39 |
-| AKT/USDT:USDT | +13.30% | $1,680,459.84 |
-| BIO/USDT:USDT | +13.21% | $1,128,460.82 |
+| COLLECT/USDT:USDT | +25.96% | $6,373,695.80 |
+| ICP/USDT:USDT | +17.59% | $228,833,004.85 |
+| PLUME/USDT:USDT | +16.96% | $1,035,084.87 |
+| CORE/USDT:USDT | +13.46% | $1,739,503.20 |
+| AKT/USDT:USDT | +12.51% | $1,689,903.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IP/USDT:USDT | below_1h_threshold | +2.50% | +2.43% |
-| COLLECT/USDT:USDT | below_1h_threshold | +2.33% | +2.26% |
-| JUP/USDT:USDT | below_1h_threshold | +1.85% | +1.78% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.80% | +1.73% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.52% | +1.45% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.45% | +4.37% |
+| ICP/USDT:USDT | below_1h_threshold | +3.31% | +3.23% |
+| IP/USDT:USDT | below_1h_threshold | +2.50% | +2.42% |
+| PLUME/USDT:USDT | below_1h_threshold | +2.19% | +2.11% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.17% | +2.09% |
 
 ## 5. 次に見るべき不足
 
