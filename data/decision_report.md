@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T00:57:38.703982+00:00
+- generated_at: 2026-05-09T01:02:43.970477+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3831**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T00:57:32.522194+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80179.6
-- Funnel: target 767 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.0 >= 65=1, 4h RSI 75.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-09T01:02:40.983336+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80183.8
+- Funnel: target 767 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COLLECT/USDT:USDT | +24.73% | $6,195,735.56 |
-| AKT/USDT:USDT | +14.27% | $1,711,658.09 |
-| CORE/USDT:USDT | +13.41% | $1,727,060.85 |
-| ICP/USDT:USDT | +12.82% | $233,480,052.98 |
-| BIO/USDT:USDT | +12.53% | $1,131,824.56 |
+| COLLECT/USDT:USDT | +24.71% | $6,257,511.97 |
+| AKT/USDT:USDT | +13.93% | $1,673,090.80 |
+| ICP/USDT:USDT | +13.80% | $228,082,055.89 |
+| CORE/USDT:USDT | +13.69% | $1,721,286.57 |
+| BIO/USDT:USDT | +13.19% | $1,123,075.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.54% | +4.51% |
-| AKT/USDT:USDT | below_1h_threshold | +4.39% | +4.36% |
-| ONDO/USDT:USDT | below_1h_threshold | +4.17% | +4.14% |
-| REZ/USDT:USDT | below_1h_threshold | +3.77% | +3.74% |
-| AVNT/USDT:USDT | below_1h_threshold | +3.30% | +3.27% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.30% | +2.31% |
+| IP/USDT:USDT | below_1h_threshold | +1.50% | +1.52% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.46% | +1.47% |
+| COLLECT/USDT:USDT | below_1h_threshold | +0.97% | +0.98% |
+| XPL/USDT:USDT | below_1h_threshold | +0.72% | +0.73% |
 
 ## 5. 次に見るべき不足
 
