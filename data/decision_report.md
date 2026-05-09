@@ -1,38 +1,38 @@
 # Decision Report
 
-- generated_at: 2026-05-09T09:22:26.703572+00:00
+- generated_at: 2026-05-09T09:27:32.291567+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3869**
+- closed shadow trades: **3870**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.73% / filled 20/20。**
-- 全期間 MARKET基準: n=3869, expectancy=-0.12%
-- 直近20件 MARKET基準: n=20, expectancy=+1.73%
+- 結論: **MARKET SHORTは実行候補。直近EV +2.33% / filled 20/20。**
+- 全期間 MARKET基準: n=3870, expectancy=-0.12%
+- 直近20件 MARKET基準: n=20, expectancy=+2.33%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.73% | **+1.73%** |
+| MARKET | 20/20 | 100.0% | +2.33% | **+2.33%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +1.96% | **+1.96%** |
-| MARKET | 20/20 | 100.0% | +1.73% | **+1.73%** |
+| ASK | 20/20 | 100.0% | +2.53% | **+2.53%** |
+| MARKET | 20/20 | 100.0% | +2.33% | **+2.33%** |
+| LIMIT_BB3S | 5/15 | 33.3% | +1.48% | **+0.49%** |
+| LIMIT_2PCT | 12/20 | 60.0% | +0.58% | **+0.35%** |
 | LIMIT_ATR | 12/20 | 60.0% | +0.58% | **+0.35%** |
-| LIMIT_5PCT | 2/20 | 10.0% | +0.95% | **+0.10%** |
-| LIMIT_4PCT | 9/20 | 45.0% | +0.00% | **+0.00%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.09% | **+0.04%** |
-| LIMIT_8PCT_LONG | 7/20 | 35.0% | +0.00% | **+0.00%** |
+| LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.00% | **+0.00%** |
+| LIMIT_7PCT_LONG | 9/20 | 45.0% | -0.04% | **-0.02%** |
 | LIMIT_FIB1618_LONG | 2/20 | 10.0% | -0.98% | **-0.10%** |
 | MARKET_LONG | 20/20 | 100.0% | -0.35% | **-0.35%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | -0.74% | **-0.63%** |
@@ -47,37 +47,38 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 194件 (Win 48 / Loss 64 / Flat 82) / skip 236件
+- 確定: 194件 (Win 48 / Loss 64 / Flat 82) / skip 237件
 - 成長率目線: 平均log +0.000416 / 幾何平均 +0.042% per trade / maxDD +3.48%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PHAROS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T09:22:23.885304+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=80240.1
-- Funnel: target 769 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-09T09:27:28.989884+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=80224.1
+- Funnel: target 769 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +32.53% | $3,264,746.37 |
-| ZEREBRO/USDT:USDT | +26.71% | $1,892,970.03 |
-| PHAROS/USDT:USDT | +23.33% | $17,361,702.78 |
-| ACE/USDT:USDT | +21.51% | $1,446,181.10 |
-| SAHARA/USDT:USDT | +16.96% | $1,680,796.36 |
+| DYM/USDT:USDT | +33.18% | $3,299,549.89 |
+| ZEREBRO/USDT:USDT | +26.30% | $1,917,456.58 |
+| PHAROS/USDT:USDT | +22.14% | $17,467,858.49 |
+| ACE/USDT:USDT | +20.11% | $1,494,241.66 |
+| SAHARA/USDT:USDT | +17.13% | $1,717,498.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.48% | +4.65% |
-| PHAROS/USDT:USDT | below_1h_threshold | +2.68% | +2.85% |
-| BILL/USDT:USDT | below_1h_threshold | +2.33% | +2.50% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.27% | +2.44% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.08% | +2.25% |
+| BILL/USDT:USDT | below_1h_threshold | +3.00% | +3.19% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.30% | +2.49% |
+| SAHARA/USDT:USDT | below_1h_threshold | +2.23% | +2.42% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.93% | +2.13% |
+| SATO/USDT:USDT | below_1h_threshold | +1.77% | +1.96% |
 
 ## 5. 次に見るべき不足
 
