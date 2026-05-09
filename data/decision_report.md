@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T04:56:05.715350+00:00
+- generated_at: 2026-05-09T04:58:56.989776+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3855**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$98.33** / 初期 $100.00 (-1.67%)
-- 確定トレード: 28件 (TP 7 / SL 19 / EXP 2)
-- 最新: IO/USDT:USDT SL_HIT PnL -4.00% 残高後 $98.33
+- 残高: **$98.71** / 初期 $100.00 (-1.29%)
+- 確定トレード: 29件 (TP 7 / SL 19 / EXP 3)
+- 最新: LUNC/USDT:USDT EXPIRED PnL +3.11% 残高後 $98.71
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T04:56:02.302663+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80359.9
+- 更新: 2026-05-09T04:58:53.363223+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=80336.9
 - Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.4 >= 65=1, 4h RSI 72.3 >= 65=1
+- Strict後reject: 4h RSI 86.6 >= 65=1, 4h RSI 71.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +37.76% | $1,245,397.27 |
-| SATO/USDT:USDT | +31.50% | $4,218,920.56 |
-| CORE/USDT:USDT | +20.25% | $2,106,266.10 |
-| VVV/USDT:USDT | +18.02% | $10,152,854.78 |
-| ICP/USDT:USDT | +17.91% | $232,520,830.05 |
+| DYM/USDT:USDT | +39.10% | $1,255,201.04 |
+| SATO/USDT:USDT | +32.97% | $4,224,149.70 |
+| CORE/USDT:USDT | +20.87% | $2,107,920.84 |
+| VVV/USDT:USDT | +18.21% | $10,179,408.76 |
+| ICP/USDT:USDT | +18.19% | $232,566,838.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +3.79% | +3.77% |
-| ASTER/USDT:USDT | below_1h_threshold | +2.96% | +2.94% |
-| SATO/USDT:USDT | below_1h_threshold | +2.93% | +2.90% |
-| PLUME/USDT:USDT | below_1h_threshold | +2.42% | +2.39% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.29% | +2.27% |
+| GALA/USDT:USDT | below_1h_threshold | +3.93% | +3.94% |
+| SATO/USDT:USDT | below_1h_threshold | +3.74% | +3.74% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.91% | +2.91% |
+| PLUME/USDT:USDT | below_1h_threshold | +2.61% | +2.62% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.33% | +2.34% |
 
 ## 5. 次に見るべき不足
 
