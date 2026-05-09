@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T10:27:36.647983+00:00
+- generated_at: 2026-05-09T10:32:51.034062+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3876**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T10:27:31.389559+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80188.2
-- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-09T10:32:45.171550+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=80205.0
+- Funnel: target 769 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +48.23% | $18,584,890.01 |
-| DYM/USDT:USDT | +40.94% | $3,655,870.50 |
-| ZEREBRO/USDT:USDT | +29.94% | $2,220,177.44 |
-| SAHARA/USDT:USDT | +20.87% | $2,019,430.53 |
-| PHAROS/USDT:USDT | +19.11% | $12,484,258.74 |
+| PLAY/USDT:USDT | +48.78% | $19,102,319.81 |
+| DYM/USDT:USDT | +40.34% | $3,718,165.72 |
+| ZEREBRO/USDT:USDT | +29.58% | $2,229,912.19 |
+| SAHARA/USDT:USDT | +25.97% | $2,097,025.16 |
+| PHAROS/USDT:USDT | +18.97% | $12,522,533.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYM/USDT:USDT | below_1h_threshold | +3.28% | +3.29% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.01% | +3.02% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.97% | +1.98% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
-| REZ/USDT:USDT | below_1h_threshold | +1.47% | +1.48% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.58% | +3.57% |
+| DYM/USDT:USDT | below_1h_threshold | +2.84% | +2.84% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.31% | +2.30% |
+| ON/USDT:USDT | below_1h_threshold | +2.10% | +2.09% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.98% | +1.98% |
 
 ## 5. 次に見るべき不足
 
