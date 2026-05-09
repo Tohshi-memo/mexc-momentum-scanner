@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T16:43:17.907824+00:00
+- generated_at: 2026-05-09T16:47:47.782123+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3902**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T16:43:14.313967+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=80589.0
-- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.2 >= 65=1, 4h RSI 73.3 >= 65=1
+- 更新: 2026-05-09T16:47:41.029614+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=80595.2
+- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +22.94% | $26,359,698.79 |
-| SATO/USDT:USDT | +10.16% | $3,921,675.55 |
-| OFC/USDT:USDT | +4.94% | $1,092,327.84 |
-| ANTHROPIC/USDT:USDT | +4.56% | $1,311,785.18 |
-| BIO/USDT:USDT | +3.54% | $1,304,843.02 |
+| BILL/USDT:USDT | +24.09% | $26,703,433.07 |
+| SATO/USDT:USDT | +15.36% | $3,978,240.24 |
+| ANTHROPIC/USDT:USDT | +5.33% | $1,312,651.28 |
+| OFC/USDT:USDT | +5.27% | $1,092,819.53 |
+| LYN/USDT:USDT | +4.46% | $2,510,884.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.56% | +4.44% |
-| BIO/USDT:USDT | below_1h_threshold | +3.41% | +3.28% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.81% | +2.68% |
-| VVV/USDT:USDT | below_1h_threshold | +2.48% | +2.35% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.42% | +2.30% |
+| LYN/USDT:USDT | below_1h_threshold | +4.29% | +4.16% |
+| INX/USDT:USDT | below_1h_threshold | +3.84% | +3.71% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.56% | +3.42% |
+| PHAROS/USDT:USDT | below_1h_threshold | +3.18% | +3.05% |
+| BIO/USDT:USDT | below_1h_threshold | +3.06% | +2.93% |
 
 ## 5. 次に見るべき不足
 
