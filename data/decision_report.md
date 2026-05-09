@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T16:02:41.943309+00:00
+- generated_at: 2026-05-09T16:07:32.599164+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3895**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T16:02:38.699033+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=80471.5
-- Funnel: target 769 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-09T16:07:29.647625+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=80499.8
+- Funnel: target 769 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BRETT/USDT:USDT | +3.51% | $2,121,812.65 |
-| B/USDT:USDT | +1.61% | $3,996,008.68 |
-| INX/USDT:USDT | +1.50% | $2,076,651.23 |
-| DRAM/USDT:USDT | +1.19% | $1,188,565.77 |
-| LYN/USDT:USDT | +1.01% | $2,357,355.76 |
+| ANTHROPIC/USDT:USDT | +4.06% | $1,286,921.85 |
+| BILL/USDT:USDT | +3.81% | $20,391,574.91 |
+| BRETT/USDT:USDT | +2.77% | $2,196,458.81 |
+| UAI/USDT:USDT | +1.60% | $1,338,789.00 |
+| PTB/USDT:USDT | +1.54% | $1,156,756.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BRETT/USDT:USDT | below_1h_threshold | +3.52% | +3.54% |
-| INX/USDT:USDT | below_1h_threshold | +1.73% | +1.75% |
-| B/USDT:USDT | below_1h_threshold | +1.61% | +1.64% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.20% | +1.22% |
-| LYN/USDT:USDT | below_1h_threshold | +1.02% | +1.04% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.02% | +4.01% |
+| BILL/USDT:USDT | below_1h_threshold | +3.82% | +3.80% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.77% | +2.76% |
+| PTB/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
+| UAI/USDT:USDT | below_1h_threshold | +1.60% | +1.59% |
 
 ## 5. 次に見るべき不足
 
