@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-09T08:22:27.969936+00:00
+- generated_at: 2026-05-09T08:27:38.568230+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3866**
+- closed shadow trades: **3867**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.67% / filled 20/20。**
-- 全期間 MARKET基準: n=3866, expectancy=-0.12%
+- 全期間 MARKET基準: n=3867, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+0.67%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,18 +24,18 @@
 | ASK | 20/20 | 100.0% | +0.93% | **+0.93%** |
 | MARKET | 20/20 | 100.0% | +0.67% | **+0.67%** |
 | LIMIT_5PCT | 4/20 | 20.0% | +1.08% | **+0.22%** |
-| LIMIT_ATR | 13/20 | 65.0% | +0.22% | **+0.14%** |
+| LIMIT_ATR | 14/20 | 70.0% | +0.11% | **+0.08%** |
 | LIMIT_4PCT | 11/20 | 55.0% | +0.05% | **+0.03%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_7PCT_LONG | 8/20 | 40.0% | +1.22% | **+0.49%** |
-| LIMIT_ATR_LONG | 14/20 | 70.0% | +0.44% | **+0.31%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.03% | **+0.03%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.43% | **+0.43%** |
+| LIMIT_BB3S_LONG | 5/6 | 83.3% | +0.35% | **+0.29%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.29% | **+0.25%** |
+| LIMIT_7PCT_LONG | 7/20 | 35.0% | +0.26% | **+0.09%** |
 | LIMIT_8PCT_LONG | 6/20 | 30.0% | +0.00% | **+0.00%** |
-| LIMIT_FIB1618_LONG | 2/20 | 10.0% | -0.98% | **-0.10%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 194件 (Win 48 / Loss 64 / Flat 82) / skip 233件
+- 確定: 194件 (Win 48 / Loss 64 / Flat 82) / skip 234件
 - 成長率目線: 平均log +0.000416 / 幾何平均 +0.042% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PHAROS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T08:22:25.177704+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=80346.1
+- 更新: 2026-05-09T08:27:35.370372+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=80349.5
 - Funnel: target 767 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +31.39% | $2,929,240.14 |
-| ZEREBRO/USDT:USDT | +23.20% | $1,603,369.36 |
-| PHAROS/USDT:USDT | +20.67% | $16,219,193.29 |
-| CORE/USDT:USDT | +18.44% | $2,962,905.23 |
-| SAHARA/USDT:USDT | +16.42% | $1,457,567.97 |
+| DYM/USDT:USDT | +29.95% | $2,949,145.49 |
+| ZEREBRO/USDT:USDT | +23.79% | $1,639,318.51 |
+| PHAROS/USDT:USDT | +23.01% | $16,407,291.67 |
+| SAHARA/USDT:USDT | +18.46% | $1,472,418.73 |
+| CORE/USDT:USDT | +18.08% | $2,979,550.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.57% | +4.36% |
-| BILL/USDT:USDT | below_1h_threshold | +3.90% | +3.70% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.67% | +2.47% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.30% | +2.10% |
-| AGT/USDT:USDT | below_1h_threshold | +2.11% | +1.90% |
+| ZEREBRO/USDT:USDT | below_relative_strength | +5.06% | +4.85% |
+| SAHARA/USDT:USDT | below_1h_threshold | +4.09% | +3.88% |
+| BILL/USDT:USDT | below_1h_threshold | +3.09% | +2.88% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.51% | +2.30% |
+| AGT/USDT:USDT | below_1h_threshold | +1.87% | +1.66% |
 
 ## 5. 次に見るべき不足
 
