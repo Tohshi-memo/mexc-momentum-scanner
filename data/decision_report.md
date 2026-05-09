@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T23:37:37.341549+00:00
+- generated_at: 2026-05-09T23:43:02.758140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3923**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T23:37:34.154087+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=80647.1
-- Funnel: target 769 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.3 >= 65=1
+- 更新: 2026-05-09T23:42:59.351341+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=80616.6
+- Funnel: target 769 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.1 >= 65=1, 4h RSI 67.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INX/USDT:USDT | +25.52% | $7,789,211.80 |
-| SATO/USDT:USDT | +23.02% | $5,366,697.14 |
-| MITO/USDT:USDT | +15.32% | $3,282,349.36 |
-| JASMY/USDT:USDT | +15.26% | $13,272,463.99 |
-| BILL/USDT:USDT | +13.71% | $39,229,191.90 |
+| INX/USDT:USDT | +30.19% | $7,951,869.38 |
+| SATO/USDT:USDT | +21.39% | $5,393,337.37 |
+| JASMY/USDT:USDT | +15.86% | $13,354,293.71 |
+| MITO/USDT:USDT | +13.97% | $3,307,234.91 |
+| BILL/USDT:USDT | +13.85% | $39,309,301.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OFC/USDT:USDT | below_1h_threshold | +2.84% | +2.94% |
-| INX/USDT:USDT | below_1h_threshold | +2.71% | +2.81% |
-| FHE/USDT:USDT | below_1h_threshold | +1.37% | +1.47% |
-| BANANA/USDT:USDT | below_1h_threshold | +1.03% | +1.13% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.01% | +1.11% |
+| OFC/USDT:USDT | below_1h_threshold | +2.08% | +2.23% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.44% | +1.58% |
+| FHE/USDT:USDT | below_1h_threshold | +1.42% | +1.56% |
+| UB/USDT:USDT | below_1h_threshold | +1.21% | +1.35% |
+| BANANA/USDT:USDT | below_1h_threshold | +1.09% | +1.23% |
 
 ## 5. 次に見るべき不足
 
