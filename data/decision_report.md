@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T06:12:34.868315+00:00
+- generated_at: 2026-05-09T06:17:29.267801+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3859**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T06:12:32.318224+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80354.6
+- 更新: 2026-05-09T06:17:26.293080+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=80329.7
 - Funnel: target 767 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +30.84% | $2,069,661.57 |
-| CORE/USDT:USDT | +28.26% | $2,335,641.01 |
-| ZEREBRO/USDT:USDT | +27.12% | $1,044,386.92 |
-| PLUME/USDT:USDT | +19.32% | $1,540,695.59 |
-| SATO/USDT:USDT | +18.89% | $4,029,819.30 |
+| DYM/USDT:USDT | +29.05% | $2,130,077.45 |
+| CORE/USDT:USDT | +26.61% | $2,376,422.96 |
+| ZEREBRO/USDT:USDT | +25.29% | $1,059,711.13 |
+| SATO/USDT:USDT | +20.98% | $4,045,982.70 |
+| PLUME/USDT:USDT | +17.99% | $1,558,639.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +2.18% | +2.15% |
-| CORE/USDT:USDT | below_1h_threshold | +1.91% | +1.89% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.50% | +1.47% |
-| UAI/USDT:USDT | below_1h_threshold | +1.14% | +1.11% |
-| SPX/USDT:USDT | below_1h_threshold | +1.05% | +1.02% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.87% | +3.88% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.29% | +3.30% |
+| SATO/USDT:USDT | below_1h_threshold | +2.71% | +2.71% |
+| GALA/USDT:USDT | below_1h_threshold | +2.27% | +2.27% |
+| UAI/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
 
 ## 5. 次に見るべき不足
 
