@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T20:12:35.831195+00:00
+- generated_at: 2026-05-09T20:17:46.642858+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3914**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T20:12:32.971868+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=80826.1
-- Funnel: target 769 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-09T20:17:43.447247+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80797.4
+- Funnel: target 769 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +16.46% | $34,797,862.25 |
-| INX/USDT:USDT | +13.25% | $4,793,453.53 |
-| RAVE/USDT:USDT | +11.06% | $28,405,297.89 |
-| BANK/USDT:USDT | +10.82% | $1,017,651.29 |
-| MITO/USDT:USDT | +10.50% | $2,350,869.55 |
+| BILL/USDT:USDT | +19.03% | $35,139,580.35 |
+| INX/USDT:USDT | +14.45% | $4,891,552.49 |
+| MITO/USDT:USDT | +11.21% | $2,396,761.15 |
+| RAVE/USDT:USDT | +10.60% | $28,640,456.19 |
+| BIO/USDT:USDT | +10.28% | $1,108,142.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.22% | +4.31% |
-| MITO/USDT:USDT | below_1h_threshold | +2.65% | +2.73% |
-| UB/USDT:USDT | below_1h_threshold | +1.28% | +1.37% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.02% | +1.11% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.85% | +0.94% |
+| MITO/USDT:USDT | below_1h_threshold | +3.31% | +3.43% |
+| UB/USDT:USDT | below_1h_threshold | +2.17% | +2.29% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.81% | +1.94% |
+| INX/USDT:USDT | below_1h_threshold | +1.66% | +1.79% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.32% | +1.44% |
 
 ## 5. 次に見るべき不足
 
