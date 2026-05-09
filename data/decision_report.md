@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T14:27:30.950127+00:00
+- generated_at: 2026-05-09T14:32:33.252330+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3887**
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T14:27:28.073721+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=80242.2
-- Funnel: target 769 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-09T14:32:30.175401+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=80258.4
+- Funnel: target 769 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +33.29% | $3,388,528.79 |
-| DYM/USDT:USDT | +30.04% | $6,351,634.80 |
-| SAHARA/USDT:USDT | +28.22% | $3,985,776.14 |
-| SATO/USDT:USDT | +25.72% | $3,365,484.28 |
-| PLAY/USDT:USDT | +23.55% | $25,768,360.04 |
+| DYM/USDT:USDT | +33.73% | $6,390,257.46 |
+| ZEREBRO/USDT:USDT | +32.84% | $3,405,818.95 |
+| SAHARA/USDT:USDT | +29.03% | $4,058,442.96 |
+| SATO/USDT:USDT | +25.38% | $3,392,133.71 |
+| PLAY/USDT:USDT | +22.73% | $25,823,387.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +4.65% | +4.80% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.90% | +3.04% |
-| COLLECT/USDT:USDT | below_1h_threshold | +2.48% | +2.63% |
-| EDU/USDT:USDT | below_1h_threshold | +2.43% | +2.58% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.76% | +1.90% |
+| SATO/USDT:USDT | below_1h_threshold | +4.38% | +4.50% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.85% | +3.98% |
+| EDU/USDT:USDT | below_1h_threshold | +2.51% | +2.64% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.32% | +2.44% |
+| VVV/USDT:USDT | below_1h_threshold | +1.88% | +2.00% |
 
 ## 5. 次に見るべき不足
 
