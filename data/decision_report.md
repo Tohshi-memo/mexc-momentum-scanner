@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T07:57:39.066946+00:00
+- generated_at: 2026-05-09T08:02:44.045209+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3866**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T07:57:35.450679+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80205.0
-- Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-09T08:02:41.259421+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=80238.7
+- Funnel: target 767 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +33.98% | $2,799,753.42 |
-| CORE/USDT:USDT | +23.35% | $2,822,270.56 |
-| ZEREBRO/USDT:USDT | +21.62% | $1,486,964.79 |
-| PHAROS/USDT:USDT | +20.09% | $15,649,403.81 |
-| DEEP/USDT:USDT | +17.25% | $2,460,293.30 |
+| DYM/USDT:USDT | +35.27% | $2,797,725.30 |
+| PHAROS/USDT:USDT | +20.80% | $15,828,093.25 |
+| CORE/USDT:USDT | +19.45% | $2,836,663.54 |
+| ZEREBRO/USDT:USDT | +18.46% | $1,517,940.70 |
+| REZ/USDT:USDT | +17.21% | $1,627,038.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYM/USDT:USDT | below_1h_threshold | +2.63% | +2.64% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.12% | +2.13% |
-| DEEP/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.05% | +1.06% |
+| BILL/USDT:USDT | below_1h_threshold | +2.22% | +2.15% |
+| DYM/USDT:USDT | below_1h_threshold | +1.94% | +1.87% |
+| MYX/USDT:USDT | below_1h_threshold | +1.23% | +1.16% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.00% | +0.93% |
+| SATO/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
 
 ## 5. 次に見るべき不足
 
