@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-09T15:07:27.369514+00:00
+- generated_at: 2026-05-09T15:12:34.715868+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3890**
+- closed shadow trades: **3891**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3890, expectancy=-0.12%
+- 全期間 MARKET基準: n=3891, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-0.42%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 5/13 | 38.5% | +2.03% | **+0.78%** |
-| LIMIT_7PCT | 5/20 | 25.0% | +1.44% | **+0.36%** |
-| LIMIT_3PCT | 14/20 | 70.0% | +0.48% | **+0.34%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
+| LIMIT_BB3S | 4/13 | 30.8% | +3.54% | **+1.09%** |
+| LIMIT_3PCT | 14/20 | 70.0% | +0.70% | **+0.49%** |
+| LIMIT_7PCT | 4/20 | 20.0% | +1.10% | **+0.22%** |
 | ASK | 20/20 | 100.0% | +0.15% | **+0.15%** |
+| LIMIT_ATR | 14/20 | 70.0% | +0.20% | **+0.14%** |
 
 ### シャドウ上位 LONG
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.27** / 初期 $100.00 (+8.27%)
-- 確定: 195件 (Win 48 / Loss 65 / Flat 82) / skip 256件
+- 確定: 195件 (Win 48 / Loss 65 / Flat 82) / skip 257件
 - 成長率目線: 平均log +0.000407 / 幾何平均 +0.041% per trade / maxDD +3.61%
-- 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PLAY/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account -0.13% 残高後 $108.27
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T15:07:24.536795+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80253.8
-- Funnel: target 769 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-09T15:12:31.610285+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=80190.2
+- Funnel: target 769 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAHARA/USDT:USDT | +32.94% | $4,608,244.54 |
-| ZEREBRO/USDT:USDT | +31.56% | $3,521,622.20 |
-| INX/USDT:USDT | +29.45% | $1,020,761.88 |
-| DYM/USDT:USDT | +24.12% | $6,657,773.68 |
-| BILL/USDT:USDT | +21.62% | $19,955,522.99 |
+| SAHARA/USDT:USDT | +35.87% | $4,790,741.48 |
+| ZEREBRO/USDT:USDT | +32.21% | $3,541,841.24 |
+| INX/USDT:USDT | +28.51% | $1,084,622.28 |
+| DYM/USDT:USDT | +24.07% | $6,684,903.92 |
+| BILL/USDT:USDT | +23.71% | $20,096,725.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +1.22% | +1.27% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.22% | +1.27% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.79% | +0.83% |
-| OP/USDT:USDT | below_1h_threshold | +0.48% | +0.53% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.41% | +0.46% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.58% | +3.70% |
+| SATO/USDT:USDT | below_1h_threshold | +3.22% | +3.35% |
+| BIO/USDT:USDT | below_1h_threshold | +2.15% | +2.27% |
+| BILL/USDT:USDT | below_1h_threshold | +0.76% | +0.89% |
+| DRAM/USDT:USDT | below_1h_threshold | +0.75% | +0.88% |
 
 ## 5. 次に見るべき不足
 
