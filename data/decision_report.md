@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T06:02:44.964898+00:00
+- generated_at: 2026-05-09T06:07:56.591410+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3858**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T06:02:42.079321+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80347.9
+- 更新: 2026-05-09T06:07:53.666474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80364.1
 - Funnel: target 767 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +39.00% | $1,903,936.30 |
-| ZEREBRO/USDT:USDT | +27.40% | $1,004,542.39 |
-| CORE/USDT:USDT | +25.32% | $2,292,171.99 |
-| PLUME/USDT:USDT | +19.61% | $1,519,547.20 |
-| ICP/USDT:USDT | +18.03% | $216,875,309.40 |
+| DYM/USDT:USDT | +31.24% | $2,045,443.60 |
+| ZEREBRO/USDT:USDT | +27.38% | $1,025,940.42 |
+| CORE/USDT:USDT | +26.87% | $2,310,621.41 |
+| PLUME/USDT:USDT | +19.39% | $1,527,819.24 |
+| ICP/USDT:USDT | +17.72% | $217,040,798.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +2.14% | +2.12% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.55% | +1.53% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
-| COLLECT/USDT:USDT | below_1h_threshold | +0.71% | +0.69% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.61% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
+| AERO/USDT:USDT | below_1h_threshold | +1.86% | +1.82% |
+| GALA/USDT:USDT | below_1h_threshold | +1.48% | +1.44% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.41% | +1.37% |
+| SPX/USDT:USDT | below_1h_threshold | +1.23% | +1.18% |
 
 ## 5. 次に見るべき不足
 
