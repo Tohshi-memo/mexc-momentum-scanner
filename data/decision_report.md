@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-09T21:37:36.856526+00:00
+- generated_at: 2026-05-09T21:42:36.859438+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3916**
+- closed shadow trades: **3917**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=3916, expectancy=-0.12%
+- 全期間 MARKET基準: n=3917, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$107.73** / 初期 $100.00 (+7.73%)
-- 確定: 196件 (Win 48 / Loss 66 / Flat 82) / skip 281件
+- 確定: 196件 (Win 48 / Loss 66 / Flat 82) / skip 282件
 - 成長率目線: 平均log +0.000380 / 幾何平均 +0.038% per trade / maxDD +4.09%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LAB/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $107.73
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T21:37:33.783385+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80754.7
+- 更新: 2026-05-09T21:42:33.475284+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=80750.0
 - Funnel: target 769 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1
+- Strict後reject: 4h RSI 66.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +17.25% | $4,631,738.08 |
-| BILL/USDT:USDT | +16.71% | $37,753,580.70 |
-| BIO/USDT:USDT | +16.55% | $1,529,332.27 |
-| INX/USDT:USDT | +13.62% | $6,302,383.73 |
-| KITE/USDT:USDT | +11.43% | $1,141,449.25 |
+| SATO/USDT:USDT | +20.29% | $4,683,019.62 |
+| BILL/USDT:USDT | +16.60% | $37,811,198.91 |
+| BIO/USDT:USDT | +15.10% | $1,556,541.09 |
+| INX/USDT:USDT | +14.23% | $6,330,868.23 |
+| JASMY/USDT:USDT | +10.75% | $9,855,339.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KITE/USDT:USDT | below_1h_threshold | +3.58% | +3.59% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.41% | +2.42% |
-| EDU/USDT:USDT | below_1h_threshold | +2.36% | +2.37% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.06% | +2.07% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.69% | +1.71% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.20% | +3.21% |
+| KITE/USDT:USDT | below_1h_threshold | +2.46% | +2.48% |
+| EDU/USDT:USDT | below_1h_threshold | +2.15% | +2.17% |
+| ZBCN/USDT:USDT | below_1h_threshold | +2.05% | +2.07% |
+| VVV/USDT:USDT | below_1h_threshold | +1.92% | +1.93% |
 
 ## 5. 次に見るべき不足
 
