@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T20:34:54.363348+00:00
+- generated_at: 2026-05-09T20:37:31.038360+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3915**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T20:34:51.980989+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=80713.6
-- Funnel: target 769 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-09T20:37:28.009086+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=80725.9
+- Funnel: target 769 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INX/USDT:USDT | +16.03% | $5,176,436.46 |
-| BILL/USDT:USDT | +14.70% | $35,860,612.42 |
-| BIO/USDT:USDT | +14.01% | $1,160,066.31 |
-| RAVE/USDT:USDT | +12.11% | $29,133,839.78 |
-| BANK/USDT:USDT | +11.00% | $1,045,907.52 |
+| INX/USDT:USDT | +16.11% | $5,227,380.11 |
+| BIO/USDT:USDT | +15.75% | $1,182,325.40 |
+| BILL/USDT:USDT | +14.67% | $35,913,128.22 |
+| RAVE/USDT:USDT | +11.89% | $29,214,137.00 |
+| BANK/USDT:USDT | +10.87% | $1,047,364.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIO/USDT:USDT | below_1h_threshold | +4.54% | +4.77% |
-| SATO/USDT:USDT | below_1h_threshold | +4.28% | +4.51% |
-| COLLECT/USDT:USDT | below_1h_threshold | +2.88% | +3.10% |
-| INX/USDT:USDT | below_1h_threshold | +2.73% | +2.96% |
-| BILL/USDT:USDT | below_1h_threshold | +2.63% | +2.86% |
+| SATO/USDT:USDT | below_1h_threshold | +3.43% | +3.64% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.76% | +2.97% |
+| BILL/USDT:USDT | below_1h_threshold | +2.75% | +2.96% |
+| INX/USDT:USDT | below_1h_threshold | +2.66% | +2.87% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.66% | +1.87% |
 
 ## 5. 次に見るべき不足
 
