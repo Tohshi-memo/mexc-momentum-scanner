@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T19:47:58.784024+00:00
+- generated_at: 2026-05-09T19:50:52.493133+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3914**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T19:47:55.709399+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80812.1
+- 更新: 2026-05-09T19:50:49.678543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80833.0
 - Funnel: target 769 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +12.69% | $27,428,198.64 |
-| INX/USDT:USDT | +12.34% | $4,668,175.42 |
-| MITO/USDT:USDT | +10.03% | $2,123,617.44 |
-| BANK/USDT:USDT | +9.64% | $1,002,033.52 |
-| BILL/USDT:USDT | +9.43% | $34,378,190.61 |
+| RAVE/USDT:USDT | +13.01% | $27,530,796.75 |
+| INX/USDT:USDT | +12.42% | $4,675,415.50 |
+| MITO/USDT:USDT | +10.53% | $2,144,675.56 |
+| BILL/USDT:USDT | +10.01% | $34,434,182.00 |
+| BANK/USDT:USDT | +9.53% | $1,002,919.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +3.84% | +3.91% |
-| MITO/USDT:USDT | below_1h_threshold | +3.08% | +3.14% |
-| LAB/USDT:USDT | below_1h_threshold | +2.85% | +2.92% |
-| EDU/USDT:USDT | below_1h_threshold | +2.61% | +2.67% |
-| DYM/USDT:USDT | below_1h_threshold | +2.39% | +2.46% |
+| AERO/USDT:USDT | below_1h_threshold | +4.19% | +4.23% |
+| MITO/USDT:USDT | below_1h_threshold | +3.54% | +3.58% |
+| LAB/USDT:USDT | below_1h_threshold | +2.98% | +3.02% |
+| DYM/USDT:USDT | below_1h_threshold | +2.68% | +2.72% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.59% | +2.62% |
 
 ## 5. 次に見るべき不足
 
