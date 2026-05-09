@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-09T02:37:32.792485+00:00
+- generated_at: 2026-05-09T02:42:58.186195+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3843**
+- closed shadow trades: **3844**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3843, expectancy=-0.13%
+- 全期間 MARKET基準: n=3844, expectancy=-0.13%
 - 直近20件 MARKET基準: n=20, expectancy=-1.86%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,38 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 193件 (Win 48 / Loss 64 / Flat 81) / skip 211件
+- 確定: 193件 (Win 48 / Loss 64 / Flat 81) / skip 212件
 - 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BILL/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T02:37:28.920781+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=80359.3
-- Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.7 >= 65=1
+- 更新: 2026-05-09T02:42:54.886154+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80346.9
+- Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +27.26% | $4,013,609.55 |
-| COLLECT/USDT:USDT | +26.56% | $6,913,171.35 |
-| ICP/USDT:USDT | +22.20% | $233,972,173.55 |
-| DEEP/USDT:USDT | +21.30% | $1,449,868.05 |
-| AGT/USDT:USDT | +17.42% | $6,795,280.32 |
+| SATO/USDT:USDT | +36.35% | $4,062,992.89 |
+| COLLECT/USDT:USDT | +26.56% | $6,935,922.37 |
+| DEEP/USDT:USDT | +21.83% | $1,460,745.21 |
+| ICP/USDT:USDT | +21.54% | $234,257,628.02 |
+| AGT/USDT:USDT | +18.32% | $6,803,352.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +3.38% | +3.29% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.80% | +2.70% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.67% | +2.57% |
-| SPX/USDT:USDT | below_1h_threshold | +2.14% | +2.04% |
-| JUP/USDT:USDT | below_1h_threshold | +1.88% | +1.78% |
+| VVV/USDT:USDT | below_1h_threshold | +4.30% | +4.22% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.59% | +3.51% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.81% | +2.73% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.31% | +2.23% |
+| JUP/USDT:USDT | below_1h_threshold | +2.12% | +2.04% |
 
 ## 5. 次に見るべき不足
 
