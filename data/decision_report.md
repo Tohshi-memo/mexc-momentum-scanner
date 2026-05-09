@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T17:47:38.329830+00:00
+- generated_at: 2026-05-09T17:52:33.397729+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3908**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T17:47:35.083123+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=80799.9
-- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1, 4h RSI 65.5 >= 65=1
+- 更新: 2026-05-09T17:52:30.236879+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=80773.3
+- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +19.83% | $29,102,139.80 |
-| SATO/USDT:USDT | +14.43% | $4,472,309.49 |
-| SAHARA/USDT:USDT | +9.00% | $6,909,024.15 |
-| INX/USDT:USDT | +8.96% | $3,185,551.50 |
-| RAVE/USDT:USDT | +7.16% | $18,172,922.23 |
+| BILL/USDT:USDT | +19.69% | $29,175,809.15 |
+| SATO/USDT:USDT | +11.81% | $4,510,350.48 |
+| INX/USDT:USDT | +10.01% | $3,239,003.35 |
+| SAHARA/USDT:USDT | +9.16% | $6,981,661.04 |
+| RAVE/USDT:USDT | +8.34% | $18,309,209.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +3.29% | +3.01% |
-| AKT/USDT:USDT | below_1h_threshold | +2.95% | +2.67% |
-| DYM/USDT:USDT | below_1h_threshold | +2.67% | +2.40% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.49% | +2.21% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.42% | +2.15% |
+| SATO/USDT:USDT | below_1h_threshold | +4.36% | +4.12% |
+| AKT/USDT:USDT | below_1h_threshold | +2.89% | +2.64% |
+| INX/USDT:USDT | below_1h_threshold | +2.88% | +2.64% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.54% | +2.29% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.48% | +2.24% |
 
 ## 5. 次に見るべき不足
 
