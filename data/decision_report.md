@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T14:42:08.920662+00:00
+- generated_at: 2026-05-09T14:45:18.096219+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3889**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T14:42:06.164930+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=80236.7
-- Funnel: target 769 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.2 >= 65=1
+- 更新: 2026-05-09T14:45:15.004286+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80294.9
+- Funnel: target 769 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +31.79% | $6,445,031.43 |
-| ZEREBRO/USDT:USDT | +31.76% | $3,431,757.60 |
-| SAHARA/USDT:USDT | +31.07% | $4,278,525.79 |
-| SATO/USDT:USDT | +24.59% | $3,434,100.94 |
-| BILL/USDT:USDT | +23.12% | $20,019,626.72 |
+| SAHARA/USDT:USDT | +31.58% | $4,333,465.20 |
+| ZEREBRO/USDT:USDT | +31.47% | $3,436,923.86 |
+| DYM/USDT:USDT | +28.10% | $6,523,485.55 |
+| SATO/USDT:USDT | +24.95% | $3,438,007.80 |
+| BILL/USDT:USDT | +23.37% | $20,110,937.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +3.71% | +3.86% |
-| EDU/USDT:USDT | below_1h_threshold | +3.60% | +3.75% |
-| VVV/USDT:USDT | below_1h_threshold | +2.02% | +2.18% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.59% | +1.74% |
-| JUP/USDT:USDT | below_1h_threshold | +1.09% | +1.24% |
+| SATO/USDT:USDT | below_1h_threshold | +4.01% | +4.09% |
+| EDU/USDT:USDT | below_1h_threshold | +3.25% | +3.33% |
+| VVV/USDT:USDT | below_1h_threshold | +2.86% | +2.94% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.39% | +2.47% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +1.49% | +1.57% |
 
 ## 5. 次に見るべき不足
 
