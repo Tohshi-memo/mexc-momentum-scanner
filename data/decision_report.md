@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-09T09:47:46.943755+00:00
+- generated_at: 2026-05-09T09:52:12.235780+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3871**
+- closed shadow trades: **3872**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +2.33% / filled 20/20。**
-- 全期間 MARKET基準: n=3871, expectancy=-0.12%
-- 直近20件 MARKET基準: n=20, expectancy=+2.33%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.73% / filled 20/20。**
+- 全期間 MARKET基準: n=3872, expectancy=-0.12%
+- 直近20件 MARKET基準: n=20, expectancy=+1.73%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +2.33% | **+2.33%** |
+| MARKET | 20/20 | 100.0% | +1.73% | **+1.73%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +2.53% | **+2.53%** |
-| MARKET | 20/20 | 100.0% | +2.33% | **+2.33%** |
-| LIMIT_ATR | 12/20 | 60.0% | +0.42% | **+0.25%** |
-| LIMIT_2PCT | 12/20 | 60.0% | +0.41% | **+0.25%** |
+| ASK | 20/20 | 100.0% | +1.93% | **+1.93%** |
+| MARKET | 20/20 | 100.0% | +1.73% | **+1.73%** |
 | LIMIT_BB3S | 6/16 | 37.5% | +0.57% | **+0.21%** |
+| LIMIT_ATR | 13/20 | 65.0% | +0.31% | **+0.20%** |
+| LIMIT_2PCT | 13/20 | 65.0% | +0.23% | **+0.15%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.00% | **+0.00%** |
-| LIMIT_7PCT_LONG | 9/20 | 45.0% | -0.04% | **-0.02%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.05% | **+0.05%** |
+| LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.09% | **+0.04%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +0.00% | **+0.00%** |
 | LIMIT_FIB1618_LONG | 2/20 | 10.0% | -0.98% | **-0.10%** |
-| MARKET_LONG | 20/20 | 100.0% | -0.35% | **-0.35%** |
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | -0.74% | **-0.63%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | -0.21% | **-0.18%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$108.41** / 初期 $100.00 (+8.41%)
-- 確定: 194件 (Win 48 / Loss 64 / Flat 82) / skip 238件
+- 確定: 194件 (Win 48 / Loss 64 / Flat 82) / skip 239件
 - 成長率目線: 平均log +0.000416 / 幾何平均 +0.042% per trade / maxDD +3.48%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PHAROS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T09:47:43.952450+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=80217.3
+- 更新: 2026-05-09T09:52:09.516836+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=80189.6
 - Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +36.46% | $3,427,206.90 |
-| ZEREBRO/USDT:USDT | +26.85% | $1,991,203.44 |
-| PLAY/USDT:USDT | +26.29% | $15,828,003.74 |
-| ACE/USDT:USDT | +19.67% | $1,629,599.45 |
-| PHAROS/USDT:USDT | +19.46% | $17,716,500.97 |
+| DYM/USDT:USDT | +36.06% | $3,447,371.06 |
+| ZEREBRO/USDT:USDT | +27.62% | $2,000,607.04 |
+| PLAY/USDT:USDT | +26.08% | $16,074,183.15 |
+| PHAROS/USDT:USDT | +20.00% | $17,730,249.91 |
+| SAHARA/USDT:USDT | +17.06% | $1,957,288.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYM/USDT:USDT | below_1h_threshold | +3.90% | +4.10% |
-| BILL/USDT:USDT | below_1h_threshold | +3.57% | +3.77% |
-| AKT/USDT:USDT | below_1h_threshold | +2.81% | +3.01% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.48% | +2.68% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.37% | +2.57% |
+| AKT/USDT:USDT | below_1h_threshold | +3.83% | +4.07% |
+| DYM/USDT:USDT | below_1h_threshold | +3.60% | +3.83% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.31% | +3.55% |
+| BILL/USDT:USDT | below_1h_threshold | +3.11% | +3.34% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +3.00% | +3.23% |
 
 ## 5. 次に見るべき不足
 
