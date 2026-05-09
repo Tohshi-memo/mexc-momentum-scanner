@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T08:32:43.863399+00:00
+- generated_at: 2026-05-09T08:37:27.198592+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3867**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T08:32:41.001286+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=80377.5
+- 更新: 2026-05-09T08:37:24.378197+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=80407.8
 - Funnel: target 767 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +31.49% | $2,998,772.14 |
-| PHAROS/USDT:USDT | +22.88% | $16,509,068.12 |
-| ZEREBRO/USDT:USDT | +22.01% | $1,681,180.70 |
-| SAHARA/USDT:USDT | +19.51% | $1,493,523.63 |
-| CORE/USDT:USDT | +18.42% | $2,993,624.37 |
+| DYM/USDT:USDT | +31.04% | $3,031,511.19 |
+| PHAROS/USDT:USDT | +23.02% | $16,600,521.26 |
+| ZEREBRO/USDT:USDT | +22.23% | $1,687,016.65 |
+| CORE/USDT:USDT | +17.77% | $2,999,535.36 |
+| SAHARA/USDT:USDT | +17.13% | $1,533,237.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_relative_strength | +5.02% | +4.78% |
-| RAVE/USDT:USDT | below_1h_threshold | +4.21% | +3.97% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +3.55% | +3.31% |
-| BILL/USDT:USDT | below_1h_threshold | +3.10% | +2.86% |
-| AGT/USDT:USDT | below_1h_threshold | +2.46% | +2.22% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +3.74% | +3.46% |
+| BILL/USDT:USDT | below_1h_threshold | +3.73% | +3.44% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.57% | +3.28% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.02% | +2.74% |
+| AGT/USDT:USDT | below_1h_threshold | +2.17% | +1.89% |
 
 ## 5. 次に見るべき不足
 
