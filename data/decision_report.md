@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T04:53:19.495057+00:00
+- generated_at: 2026-05-09T04:56:05.715350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3855**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T04:53:15.723520+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80391.0
-- Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.7 >= 65=1
+- 更新: 2026-05-09T04:56:02.302663+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=80359.9
+- Funnel: target 767 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.4 >= 65=1, 4h RSI 72.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +38.90% | $1,212,623.37 |
-| SATO/USDT:USDT | +31.27% | $4,211,762.42 |
-| CORE/USDT:USDT | +21.21% | $2,104,667.11 |
-| VVV/USDT:USDT | +18.64% | $10,061,028.12 |
-| ICP/USDT:USDT | +18.22% | $232,498,188.77 |
+| DYM/USDT:USDT | +37.76% | $1,245,397.27 |
+| SATO/USDT:USDT | +31.50% | $4,218,920.56 |
+| CORE/USDT:USDT | +20.25% | $2,106,266.10 |
+| VVV/USDT:USDT | +18.02% | $10,152,854.78 |
+| ICP/USDT:USDT | +17.91% | $232,520,830.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_relative_strength | +5.04% | +4.98% |
-| GALA/USDT:USDT | below_1h_threshold | +3.51% | +3.45% |
-| ASTER/USDT:USDT | below_1h_threshold | +2.92% | +2.86% |
-| SATO/USDT:USDT | below_1h_threshold | +2.79% | +2.73% |
-| PLUME/USDT:USDT | below_1h_threshold | +2.42% | +2.36% |
+| GALA/USDT:USDT | below_1h_threshold | +3.79% | +3.77% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.96% | +2.94% |
+| SATO/USDT:USDT | below_1h_threshold | +2.93% | +2.90% |
+| PLUME/USDT:USDT | below_1h_threshold | +2.42% | +2.39% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.29% | +2.27% |
 
 ## 5. 次に見るべき不足
 
