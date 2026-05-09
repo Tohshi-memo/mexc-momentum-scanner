@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-09T01:42:43.230628+00:00
+- generated_at: 2026-05-09T01:47:44.819835+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3834**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-09T01:42:39.905838+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=80348.0
-- Funnel: target 767 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1, 4h RSI 79.3 >= 65=1
+- 更新: 2026-05-09T01:47:41.225217+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80331.7
+- Funnel: target 767 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.0 >= 65=1, 4h RSI 79.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COLLECT/USDT:USDT | +23.90% | $6,631,848.08 |
-| ICP/USDT:USDT | +23.43% | $233,331,253.52 |
-| DEEP/USDT:USDT | +18.91% | $1,131,506.92 |
-| AGT/USDT:USDT | +18.55% | $6,545,614.64 |
-| CORE/USDT:USDT | +17.51% | $1,774,565.27 |
+| COLLECT/USDT:USDT | +25.96% | $6,661,985.24 |
+| ICP/USDT:USDT | +25.00% | $233,868,242.38 |
+| DEEP/USDT:USDT | +19.21% | $1,140,928.63 |
+| AGT/USDT:USDT | +19.18% | $6,582,734.65 |
+| CORE/USDT:USDT | +18.21% | $1,778,327.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +4.62% | +4.43% |
-| CORE/USDT:USDT | below_1h_threshold | +4.02% | +3.83% |
-| IP/USDT:USDT | below_1h_threshold | +3.97% | +3.78% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.81% | +3.62% |
-| PYTH/USDT:USDT | below_1h_threshold | +3.31% | +3.12% |
+| SIREN/USDT:USDT | below_relative_strength | +5.02% | +4.85% |
+| CORE/USDT:USDT | below_1h_threshold | +4.41% | +4.23% |
+| IP/USDT:USDT | below_1h_threshold | +3.34% | +3.17% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.21% | +3.04% |
+| SPK/USDT:USDT | below_1h_threshold | +2.95% | +2.78% |
 
 ## 5. 次に見るべき不足
 
