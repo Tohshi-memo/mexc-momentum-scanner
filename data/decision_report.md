@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T00:12:46.496707+00:00
+- generated_at: 2026-05-10T00:17:43.178347+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3926**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T00:12:43.554068+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80682.0
+- 更新: 2026-05-10T00:17:40.261358+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80668.7
 - Funnel: target 769 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INX/USDT:USDT | +32.15% | $9,008,757.88 |
-| JASMY/USDT:USDT | +17.40% | $14,471,511.32 |
-| SATO/USDT:USDT | +12.75% | $5,451,553.86 |
-| BANK/USDT:USDT | +12.05% | $1,169,035.90 |
-| BILL/USDT:USDT | +11.31% | $38,681,228.05 |
+| INX/USDT:USDT | +33.05% | $9,133,828.35 |
+| JASMY/USDT:USDT | +17.28% | $14,692,437.49 |
+| BILL/USDT:USDT | +14.03% | $38,820,678.73 |
+| BANK/USDT:USDT | +12.35% | $1,172,501.45 |
+| MITO/USDT:USDT | +11.34% | $3,495,966.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.92% | +3.86% |
-| JASMY/USDT:USDT | below_1h_threshold | +3.09% | +3.03% |
-| NIL/USDT:USDT | below_1h_threshold | +2.17% | +2.11% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.92% | +1.86% |
-| BRETT/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.61% | +4.57% |
+| PTB/USDT:USDT | below_1h_threshold | +3.09% | +3.05% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.02% | +2.98% |
+| NIL/USDT:USDT | below_1h_threshold | +2.54% | +2.49% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.53% | +2.49% |
 
 ## 5. 次に見るべき不足
 
