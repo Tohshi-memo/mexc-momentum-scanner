@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T13:47:38.742452+00:00
+- generated_at: 2026-05-10T13:52:37.566620+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3966**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T13:47:35.580239+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80923.3
-- Funnel: target 769 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1
+- 更新: 2026-05-10T13:52:34.252241+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80914.1
+- Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.4 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +62.75% | $2,275,118.59 |
-| LAYER/USDT:USDT | +37.96% | $9,455,313.24 |
-| GIGA/USDT:USDT | +26.10% | $1,261,503.34 |
-| BILL/USDT:USDT | +20.57% | $43,367,721.75 |
-| BAS/USDT:USDT | +20.42% | $1,308,238.44 |
+| TROLLSOL/USDT:USDT | +61.89% | $2,281,795.44 |
+| LAYER/USDT:USDT | +38.48% | $9,502,669.72 |
+| GIGA/USDT:USDT | +27.07% | $1,268,532.24 |
+| XEC/USDT:USDT | +19.57% | $3,337,762.76 |
+| BILL/USDT:USDT | +18.10% | $43,573,466.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGA/USDT:USDT | below_1h_threshold | +4.41% | +4.37% |
-| W/USDT:USDT | below_1h_threshold | +3.53% | +3.49% |
-| UNI/USDT:USDT | below_1h_threshold | +3.49% | +3.45% |
-| MITO/USDT:USDT | below_1h_threshold | +3.14% | +3.10% |
-| BAS/USDT:USDT | below_1h_threshold | +2.65% | +2.61% |
+| UNI/USDT:USDT | below_1h_threshold | +3.54% | +3.51% |
+| W/USDT:USDT | below_1h_threshold | +3.53% | +3.50% |
+| AKT/USDT:USDT | below_1h_threshold | +3.05% | +3.02% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.59% | +2.56% |
+| LAYER/USDT:USDT | below_1h_threshold | +2.33% | +2.30% |
 
 ## 5. 次に見るべき不足
 
