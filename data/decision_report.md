@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T14:38:11.579533+00:00
+- generated_at: 2026-05-10T14:42:41.180113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3967**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T14:38:08.212687+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80895.7
-- Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 86.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-10T14:42:38.198679+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80897.2
+- Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +61.49% | $2,394,324.36 |
-| LAYER/USDT:USDT | +37.85% | $9,676,914.01 |
-| GIGA/USDT:USDT | +33.40% | $1,305,740.99 |
-| TRUTH/USDT:USDT | +27.41% | $1,059,548.39 |
-| BILL/USDT:USDT | +19.30% | $43,640,783.33 |
+| TROLLSOL/USDT:USDT | +62.75% | $2,406,324.26 |
+| LAYER/USDT:USDT | +38.27% | $9,702,649.37 |
+| GIGA/USDT:USDT | +31.15% | $1,321,221.25 |
+| TRUTH/USDT:USDT | +25.84% | $1,079,514.35 |
+| BILL/USDT:USDT | +21.18% | $43,805,444.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.57% | +4.61% |
-| BILL/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.19% | +2.23% |
-| MITO/USDT:USDT | below_1h_threshold | +1.98% | +2.02% |
-| TAO/USDT:USDT | below_1h_threshold | +1.29% | +1.33% |
+| GIGA/USDT:USDT | below_1h_threshold | +4.58% | +4.62% |
+| FHE/USDT:USDT | below_1h_threshold | +4.35% | +4.40% |
+| TRUTH/USDT:USDT | below_1h_threshold | +4.03% | +4.07% |
+| BILL/USDT:USDT | below_1h_threshold | +3.52% | +3.56% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.65% | +2.70% |
 
 ## 5. 次に見るべき不足
 
