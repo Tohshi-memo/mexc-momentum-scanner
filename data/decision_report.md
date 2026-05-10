@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T11:37:35.392903+00:00
+- generated_at: 2026-05-10T11:42:38.271237+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3962**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T11:37:32.482717+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80784.1
+- 更新: 2026-05-10T11:42:35.267495+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=80762.3
 - Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +60.23% | $1,851,135.81 |
-| LAYER/USDT:USDT | +42.27% | $8,299,907.25 |
-| GIGA/USDT:USDT | +27.86% | $1,136,638.46 |
-| XEC/USDT:USDT | +25.13% | $2,915,726.26 |
-| SATO/USDT:USDT | +17.80% | $6,546,701.69 |
+| TROLLSOL/USDT:USDT | +62.21% | $1,866,721.73 |
+| LAYER/USDT:USDT | +41.85% | $8,353,467.86 |
+| GIGA/USDT:USDT | +27.68% | $1,143,476.48 |
+| XEC/USDT:USDT | +25.39% | $2,919,605.92 |
+| SATO/USDT:USDT | +16.94% | $6,553,294.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +2.64% | +2.71% |
-| BASED/USDT:USDT | below_1h_threshold | +2.40% | +2.47% |
-| MITO/USDT:USDT | below_1h_threshold | +2.32% | +2.38% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.95% | +2.02% |
-| INX/USDT:USDT | below_1h_threshold | +1.64% | +1.71% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.91% | +4.00% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.42% | +2.52% |
+| BASED/USDT:USDT | below_1h_threshold | +2.05% | +2.14% |
+| MITO/USDT:USDT | below_1h_threshold | +1.59% | +1.69% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.46% | +1.55% |
 
 ## 5. 次に見るべき不足
 
