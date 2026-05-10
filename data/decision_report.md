@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T05:47:36.860829+00:00
+- generated_at: 2026-05-10T05:52:40.497194+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3946**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T05:47:33.173166+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80710.5
+- 更新: 2026-05-10T05:52:36.992213+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=80667.3
 - Funnel: target 769 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.5 >= 65=1, 4h RSI 74.3 >= 65=1
+- Strict後reject: 4h RSI 93.8 >= 65=1, 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAYER/USDT:USDT | +62.14% | $2,369,140.24 |
-| JASMY/USDT:USDT | +16.43% | $21,836,499.26 |
-| BAS/USDT:USDT | +15.40% | $1,057,922.29 |
-| SATO/USDT:USDT | +12.56% | $6,328,970.61 |
-| BEAT/USDT:USDT | +11.28% | $1,758,599.68 |
+| LAYER/USDT:USDT | +55.73% | $2,714,115.68 |
+| BAS/USDT:USDT | +15.04% | $1,059,932.67 |
+| JASMY/USDT:USDT | +14.68% | $21,911,845.36 |
+| SATO/USDT:USDT | +11.52% | $6,347,824.91 |
+| PLAY/USDT:USDT | +11.13% | $24,056,865.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.99% | +4.00% |
-| COPPER/USDT:USDT | below_1h_threshold | +3.54% | +3.55% |
-| ENS/USDT:USDT | below_1h_threshold | +3.12% | +3.13% |
-| BAS/USDT:USDT | below_1h_threshold | +3.07% | +3.08% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.48% | +2.49% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.66% | +3.72% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.54% | +3.60% |
+| COPPER/USDT:USDT | below_1h_threshold | +3.21% | +3.28% |
+| ENS/USDT:USDT | below_1h_threshold | +2.89% | +2.95% |
+| BAS/USDT:USDT | below_1h_threshold | +2.71% | +2.77% |
 
 ## 5. 次に見るべき不足
 
