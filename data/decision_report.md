@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T15:53:08.155368+00:00
+- generated_at: 2026-05-10T15:57:52.924233+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3968**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T15:53:04.749002+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.52% price=81365.1
-- Funnel: target 769 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 83.7 >= 65=1
+- 更新: 2026-05-10T15:57:49.557038+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=81380.0
+- Funnel: target 769 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 83.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +71.83% | $2,694,991.55 |
-| LAYER/USDT:USDT | +36.90% | $10,234,723.84 |
-| GIGA/USDT:USDT | +32.51% | $1,409,526.06 |
-| TRUTH/USDT:USDT | +27.96% | $1,207,139.06 |
-| BIANRENSHENG/USDT:USDT | +24.68% | $1,057,899.03 |
+| TROLLSOL/USDT:USDT | +71.26% | $2,708,665.77 |
+| LAYER/USDT:USDT | +36.80% | $10,275,782.11 |
+| GIGA/USDT:USDT | +32.40% | $1,415,770.58 |
+| TRUTH/USDT:USDT | +28.61% | $1,225,645.33 |
+| BIANRENSHENG/USDT:USDT | +25.04% | $1,135,399.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_relative_strength | +5.13% | +4.61% |
-| LAB/USDT:USDT | below_relative_strength | +5.10% | +4.58% |
-| S/USDT:USDT | below_1h_threshold | +4.16% | +3.64% |
-| ATOM/USDT:USDT | below_1h_threshold | +3.97% | +3.45% |
-| FHE/USDT:USDT | below_1h_threshold | +3.77% | +3.25% |
+| S/USDT:USDT | below_1h_threshold | +4.63% | +4.10% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +4.58% | +4.04% |
+| LAB/USDT:USDT | below_1h_threshold | +4.58% | +4.04% |
+| ATOM/USDT:USDT | below_1h_threshold | +4.54% | +4.00% |
+| FHE/USDT:USDT | below_1h_threshold | +4.25% | +3.71% |
 
 ## 5. 次に見るべき不足
 
