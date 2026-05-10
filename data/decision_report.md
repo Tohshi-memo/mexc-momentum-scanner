@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T18:27:40.757015+00:00
+- generated_at: 2026-05-10T18:32:57.428659+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3980**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T18:27:37.599223+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=81329.4
+- 更新: 2026-05-10T18:32:54.547923+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=81324.6
 - Funnel: target 769 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALCH/USDT:USDT | +19.63% | $1,743,467.82 |
-| B/USDT:USDT | +18.34% | $1,627,608.79 |
-| DEEP/USDT:USDT | +12.41% | $1,405,303.58 |
-| TRUTH/USDT:USDT | +10.79% | $2,149,291.51 |
-| 1000BONK/USDT:USDT | +8.50% | $14,601,284.59 |
+| ALCH/USDT:USDT | +19.74% | $1,869,373.24 |
+| B/USDT:USDT | +17.76% | $1,699,428.41 |
+| DEEP/USDT:USDT | +12.31% | $1,489,375.66 |
+| TRUTH/USDT:USDT | +11.44% | $2,173,895.15 |
+| TROLLSOL/USDT:USDT | +9.51% | $3,356,237.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.08% | +3.22% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.60% | +2.74% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.47% | +2.61% |
-| GRT/USDT:USDT | below_1h_threshold | +2.34% | +2.48% |
-| DEEP/USDT:USDT | below_1h_threshold | +2.22% | +2.36% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.95% | +3.10% |
+| B/USDT:USDT | below_1h_threshold | +2.67% | +2.81% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.45% | +2.59% |
+| ALCH/USDT:USDT | below_1h_threshold | +2.40% | +2.54% |
+| GRT/USDT:USDT | below_1h_threshold | +2.31% | +2.46% |
 
 ## 5. 次に見るべき不足
 
