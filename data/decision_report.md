@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T18:52:45.458219+00:00
+- generated_at: 2026-05-10T18:57:44.991350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3983**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T18:52:42.059543+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=81224.5
-- Funnel: target 769 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
+- 更新: 2026-05-10T18:57:41.438968+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=81232.6
+- Funnel: target 769 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.5 >= 65=1, 4h RSI 80.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALCH/USDT:USDT | +20.43% | $2,115,795.64 |
-| B/USDT:USDT | +15.28% | $1,852,732.48 |
-| DEEP/USDT:USDT | +14.57% | $1,675,294.01 |
-| TROLLSOL/USDT:USDT | +12.43% | $3,425,920.28 |
-| SUI/USDT:USDT | +11.95% | $550,667,251.59 |
+| ALCH/USDT:USDT | +20.83% | $2,138,126.98 |
+| B/USDT:USDT | +15.03% | $1,865,397.50 |
+| DEEP/USDT:USDT | +14.93% | $1,690,138.43 |
+| SUI/USDT:USDT | +12.64% | $554,232,073.51 |
+| TROLLSOL/USDT:USDT | +12.35% | $3,446,357.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SEI/USDT:USDT | below_1h_threshold | +4.46% | +4.73% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +4.12% | +4.39% |
-| DEEP/USDT:USDT | below_1h_threshold | +4.07% | +4.34% |
-| SUI/USDT:USDT | below_1h_threshold | +3.06% | +3.33% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.99% | +3.26% |
+| DEEP/USDT:USDT | below_1h_threshold | +4.68% | +4.94% |
+| SUI/USDT:USDT | below_1h_threshold | +3.61% | +3.87% |
+| WIF/USDT:USDT | below_1h_threshold | +3.53% | +3.79% |
+| ALCH/USDT:USDT | below_1h_threshold | +3.33% | +3.59% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.14% | +3.39% |
 
 ## 5. 次に見るべき不足
 
