@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T15:32:38.956620+00:00
+- generated_at: 2026-05-10T15:37:40.602245+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3968**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T15:32:35.822006+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=80941.9
-- Funnel: target 769 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-10T15:37:37.694004+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81015.1
+- Funnel: target 769 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +67.89% | $2,571,729.04 |
-| LAYER/USDT:USDT | +42.69% | $10,027,161.96 |
-| GIGA/USDT:USDT | +36.05% | $1,375,877.86 |
-| TRUTH/USDT:USDT | +25.96% | $1,165,898.69 |
-| UB/USDT:USDT | +17.11% | $1,948,423.68 |
+| TROLLSOL/USDT:USDT | +71.54% | $2,606,361.79 |
+| LAYER/USDT:USDT | +41.11% | $10,099,961.83 |
+| GIGA/USDT:USDT | +32.93% | $1,389,750.12 |
+| TRUTH/USDT:USDT | +26.64% | $1,170,139.63 |
+| UB/USDT:USDT | +17.29% | $1,955,154.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAYER/USDT:USDT | below_1h_threshold | +3.91% | +3.91% |
-| FHE/USDT:USDT | below_1h_threshold | +3.46% | +3.46% |
-| GIGA/USDT:USDT | below_1h_threshold | +3.43% | +3.43% |
-| S/USDT:USDT | below_1h_threshold | +3.35% | +3.35% |
-| SUI/USDT:USDT | below_1h_threshold | +3.13% | +3.13% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +4.92% | +4.83% |
+| FHE/USDT:USDT | below_1h_threshold | +3.59% | +3.50% |
+| SUI/USDT:USDT | below_1h_threshold | +3.48% | +3.39% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.84% | +2.75% |
+| LAYER/USDT:USDT | below_1h_threshold | +2.76% | +2.67% |
 
 ## 5. 次に見るべき不足
 
