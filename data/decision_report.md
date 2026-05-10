@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T14:32:41.287911+00:00
+- generated_at: 2026-05-10T14:38:11.579533+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3967**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T14:32:37.852036+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80893.0
-- Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.0 >= 65=1
+- 更新: 2026-05-10T14:38:08.212687+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80895.7
+- Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 86.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +57.77% | $2,377,318.33 |
-| LAYER/USDT:USDT | +36.38% | $9,663,378.00 |
-| GIGA/USDT:USDT | +32.79% | $1,287,626.60 |
-| TRUTH/USDT:USDT | +26.34% | $1,041,759.90 |
-| BILL/USDT:USDT | +18.04% | $43,533,405.22 |
+| TROLLSOL/USDT:USDT | +61.49% | $2,394,324.36 |
+| LAYER/USDT:USDT | +37.85% | $9,676,914.01 |
+| GIGA/USDT:USDT | +33.40% | $1,305,740.99 |
+| TRUTH/USDT:USDT | +27.41% | $1,059,548.39 |
+| BILL/USDT:USDT | +19.30% | $43,640,783.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUTH/USDT:USDT | below_1h_threshold | +4.39% | +4.43% |
-| FHE/USDT:USDT | below_1h_threshold | +2.97% | +3.01% |
-| MITO/USDT:USDT | below_1h_threshold | +2.23% | +2.27% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.11% | +2.15% |
-| BILL/USDT:USDT | below_1h_threshold | +1.23% | +1.28% |
+| FHE/USDT:USDT | below_1h_threshold | +4.57% | +4.61% |
+| BILL/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.19% | +2.23% |
+| MITO/USDT:USDT | below_1h_threshold | +1.98% | +2.02% |
+| TAO/USDT:USDT | below_1h_threshold | +1.29% | +1.33% |
 
 ## 5. 次に見るべき不足
 
