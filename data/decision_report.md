@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T17:48:01.988579+00:00
+- generated_at: 2026-05-10T17:52:56.933921+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3976**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T17:47:53.236601+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81351.0
-- Funnel: target 769 → liquid 163 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.7 >= 65=1, 4h RSI 75.9 >= 65=1
+- 更新: 2026-05-10T17:52:48.426943+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=81457.3
+- Funnel: target 769 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRUTH/USDT:USDT | +11.02% | $1,879,104.66 |
-| B/USDT:USDT | +10.05% | $1,197,123.16 |
-| TROLLSOL/USDT:USDT | +9.92% | $3,206,633.64 |
-| FHE/USDT:USDT | +8.73% | $1,897,796.00 |
-| SUI/USDT:USDT | +7.83% | $485,967,678.49 |
+| B/USDT:USDT | +12.08% | $1,240,917.53 |
+| TRUTH/USDT:USDT | +9.81% | $1,964,935.49 |
+| TROLLSOL/USDT:USDT | +9.20% | $3,220,339.00 |
+| SUI/USDT:USDT | +8.58% | $495,328,271.67 |
+| DEEP/USDT:USDT | +8.38% | $1,183,518.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +4.33% | +4.31% |
-| SUI/USDT:USDT | below_1h_threshold | +3.73% | +3.72% |
-| TRIA/USDT:USDT | below_1h_threshold | +3.71% | +3.69% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.25% | +2.24% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.15% | +2.13% |
+| SUI/USDT:USDT | below_1h_threshold | +4.25% | +4.10% |
+| TRUTH/USDT:USDT | below_1h_threshold | +4.24% | +4.09% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.80% | +3.65% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.68% | +3.54% |
+| ENA/USDT:USDT | below_1h_threshold | +3.62% | +3.47% |
 
 ## 5. 次に見るべき不足
 
