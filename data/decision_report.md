@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T01:07:53.405003+00:00
+- generated_at: 2026-05-10T01:12:37.136490+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3932**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T01:07:50.259354+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80580.1
+- 更新: 2026-05-10T01:12:34.195484+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80600.1
 - Funnel: target 769 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INX/USDT:USDT | +36.89% | $11,346,240.20 |
-| BILL/USDT:USDT | +13.78% | $38,657,492.82 |
-| SATO/USDT:USDT | +13.00% | $5,546,145.24 |
-| JASMY/USDT:USDT | +11.41% | $16,382,093.80 |
-| MITO/USDT:USDT | +10.76% | $3,660,038.41 |
+| INX/USDT:USDT | +31.09% | $11,611,826.02 |
+| SATO/USDT:USDT | +16.54% | $5,558,007.81 |
+| BILL/USDT:USDT | +15.20% | $38,744,728.93 |
+| JASMY/USDT:USDT | +11.75% | $16,446,078.84 |
+| PHAROS/USDT:USDT | +11.21% | $6,109,897.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHAROS/USDT:USDT | below_1h_threshold | +2.17% | +2.24% |
-| KITE/USDT:USDT | below_1h_threshold | +1.39% | +1.46% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.30% | +1.37% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.06% | +1.13% |
-| LAB/USDT:USDT | below_1h_threshold | +0.59% | +0.66% |
+| PHAROS/USDT:USDT | below_1h_threshold | +3.25% | +3.29% |
+| KITE/USDT:USDT | below_1h_threshold | +1.72% | +1.77% |
+| XNY/USDT:USDT | below_1h_threshold | +1.66% | +1.70% |
+| BILL/USDT:USDT | below_1h_threshold | +1.50% | +1.54% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +0.74% | +0.79% |
 
 ## 5. 次に見るべき不足
 
