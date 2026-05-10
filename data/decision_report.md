@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T05:57:37.807194+00:00
+- generated_at: 2026-05-10T06:02:41.021538+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3947**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T05:57:31.839318+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80658.8
-- Funnel: target 769 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.3 >= 65=1, 4h RSI 65.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-10T06:02:38.042594+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=80677.7
+- Funnel: target 769 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAYER/USDT:USDT | +49.42% | $2,889,278.23 |
-| BAS/USDT:USDT | +15.02% | $1,063,088.16 |
-| JASMY/USDT:USDT | +14.90% | $21,947,351.05 |
-| SATO/USDT:USDT | +12.40% | $6,364,204.15 |
-| BEAT/USDT:USDT | +11.88% | $1,788,834.16 |
+| LAYER/USDT:USDT | +53.10% | $2,997,257.85 |
+| BAS/USDT:USDT | +15.93% | $1,060,192.71 |
+| JASMY/USDT:USDT | +14.56% | $21,633,371.26 |
+| PLAY/USDT:USDT | +11.79% | $23,953,382.42 |
+| SATO/USDT:USDT | +11.15% | $6,223,996.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +4.59% | +4.66% |
-| LYN/USDT:USDT | below_1h_threshold | +3.03% | +3.10% |
-| COPPER/USDT:USDT | below_1h_threshold | +2.76% | +2.84% |
-| BAS/USDT:USDT | below_1h_threshold | +2.68% | +2.76% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.52% | +2.60% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.86% | +1.84% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.59% | +1.57% |
+| SATO/USDT:USDT | below_1h_threshold | +1.34% | +1.32% |
+| LAYER/USDT:USDT | below_1h_threshold | +1.26% | +1.24% |
+| VET/USDT:USDT | below_1h_threshold | +0.97% | +0.95% |
 
 ## 5. 次に見るべき不足
 
