@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T07:52:42.653055+00:00
+- generated_at: 2026-05-10T07:57:38.985912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3951**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T07:52:38.941318+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80718.4
-- Funnel: target 769 → liquid 166 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 80.2 >= 65=1, 4h RSI 93.1 >= 65=1, 4h RSI 69.5 >= 65=1
+- 更新: 2026-05-10T07:57:35.343959+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=80700.3
+- Funnel: target 769 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.2 >= 65=1, 4h RSI 93.6 >= 65=1, 4h RSI 80.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +61.78% | $1,313,660.77 |
-| LAYER/USDT:USDT | +47.21% | $5,137,298.51 |
-| XEC/USDT:USDT | +30.15% | $1,773,623.93 |
-| BAS/USDT:USDT | +18.60% | $1,146,982.67 |
-| SATO/USDT:USDT | +17.09% | $6,300,365.50 |
+| TROLLSOL/USDT:USDT | +62.86% | $1,327,971.57 |
+| LAYER/USDT:USDT | +51.73% | $5,256,911.19 |
+| XEC/USDT:USDT | +28.57% | $1,810,335.41 |
+| SATO/USDT:USDT | +17.89% | $6,311,051.84 |
+| BAS/USDT:USDT | +17.82% | $1,153,244.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +3.99% | +3.97% |
-| STRK/USDT:USDT | below_1h_threshold | +2.68% | +2.66% |
-| XEC/USDT:USDT | below_1h_threshold | +2.29% | +2.26% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.58% | +1.56% |
+| LAB/USDT:USDT | below_1h_threshold | +4.77% | +4.77% |
+| SATO/USDT:USDT | below_1h_threshold | +4.52% | +4.52% |
+| STRK/USDT:USDT | below_1h_threshold | +3.07% | +3.07% |
+| FHE/USDT:USDT | below_1h_threshold | +1.81% | +1.81% |
+| AERO/USDT:USDT | below_1h_threshold | +1.51% | +1.51% |
 
 ## 5. 次に見るべき不足
 
