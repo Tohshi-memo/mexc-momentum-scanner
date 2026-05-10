@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T02:12:33.572110+00:00
+- generated_at: 2026-05-10T02:17:44.829289+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3934**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T02:12:28.275548+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=80576.0
+- 更新: 2026-05-10T02:17:35.424597+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80628.7
 - Funnel: target 769 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +35.76% | $6,013,676.24 |
-| INX/USDT:USDT | +28.76% | $13,443,320.20 |
-| LAYER/USDT:USDT | +23.44% | $1,020,178.19 |
-| BIO/USDT:USDT | +11.59% | $1,555,635.84 |
-| BRETT/USDT:USDT | +10.53% | $2,561,687.97 |
+| SATO/USDT:USDT | +31.92% | $6,063,240.37 |
+| INX/USDT:USDT | +29.51% | $13,484,995.95 |
+| LAYER/USDT:USDT | +24.07% | $1,029,897.51 |
+| BIO/USDT:USDT | +13.04% | $1,575,867.39 |
+| BRETT/USDT:USDT | +11.22% | $2,563,603.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHAROS/USDT:USDT | below_1h_threshold | +1.64% | +1.73% |
-| CRO/USDT:USDT | below_1h_threshold | +1.60% | +1.70% |
-| SATO/USDT:USDT | below_1h_threshold | +1.38% | +1.47% |
-| UB/USDT:USDT | below_1h_threshold | +1.24% | +1.34% |
-| MYX/USDT:USDT | below_1h_threshold | +0.93% | +1.03% |
+| BIO/USDT:USDT | below_1h_threshold | +2.08% | +2.11% |
+| CRO/USDT:USDT | below_1h_threshold | +1.50% | +1.53% |
+| UB/USDT:USDT | below_1h_threshold | +1.44% | +1.47% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.29% | +1.33% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.20% | +1.24% |
 
 ## 5. 次に見るべき不足
 
