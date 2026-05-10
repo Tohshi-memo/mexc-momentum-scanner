@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T06:47:35.978925+00:00
+- generated_at: 2026-05-10T06:50:47.296774+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3948**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T06:47:32.814631+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80672.9
+- 更新: 2026-05-10T06:50:44.290874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=80714.2
 - Funnel: target 769 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
+- Strict後reject: 4h RSI 85.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +74.68% | $1,018,331.51 |
-| LAYER/USDT:USDT | +38.59% | $4,102,176.66 |
-| XEC/USDT:USDT | +19.84% | $1,138,555.45 |
-| JASMY/USDT:USDT | +15.33% | $23,377,301.40 |
-| PLAY/USDT:USDT | +13.14% | $24,169,727.43 |
+| TROLLSOL/USDT:USDT | +71.17% | $1,036,399.01 |
+| LAYER/USDT:USDT | +40.69% | $4,155,367.15 |
+| XEC/USDT:USDT | +20.37% | $1,141,556.32 |
+| JASMY/USDT:USDT | +14.88% | $23,401,568.33 |
+| PLAY/USDT:USDT | +11.85% | $24,190,891.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHAROS/USDT:USDT | below_1h_threshold | +3.05% | +3.04% |
-| INX/USDT:USDT | below_1h_threshold | +2.10% | +2.08% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.03% | +2.01% |
-| W/USDT:USDT | below_1h_threshold | +1.10% | +1.09% |
-| UNI/USDT:USDT | below_1h_threshold | +1.00% | +0.98% |
+| PHAROS/USDT:USDT | below_1h_threshold | +4.22% | +4.15% |
+| UNI/USDT:USDT | below_1h_threshold | +1.64% | +1.57% |
+| W/USDT:USDT | below_1h_threshold | +1.30% | +1.23% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.98% | +0.92% |
+| INX/USDT:USDT | below_1h_threshold | +0.84% | +0.77% |
 
 ## 5. 次に見るべき不足
 
