@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T16:32:46.843795+00:00
+- generated_at: 2026-05-10T16:38:03.177144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3970**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T16:32:43.589409+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=81215.8
+- 更新: 2026-05-10T16:37:59.993256+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=81199.9
 - Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1
+- Strict後reject: 4h RSI 73.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASED/USDT:USDT | +6.70% | $2,450,116.62 |
-| TIA/USDT:USDT | +4.50% | $4,800,923.67 |
-| TRUTH/USDT:USDT | +3.78% | $1,357,285.62 |
-| XPL/USDT:USDT | +3.55% | $3,929,009.34 |
-| JASMY/USDT:USDT | +2.89% | $28,279,985.81 |
+| TIA/USDT:USDT | +5.73% | $5,108,078.32 |
+| BASED/USDT:USDT | +4.70% | $2,505,038.24 |
+| B/USDT:USDT | +4.64% | $1,133,143.56 |
+| TRUTH/USDT:USDT | +3.84% | $1,371,257.84 |
+| SUI/USDT:USDT | +3.75% | $379,835,991.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TIA/USDT:USDT | below_1h_threshold | +4.50% | +4.71% |
-| TRUTH/USDT:USDT | below_1h_threshold | +3.78% | +3.98% |
-| XPL/USDT:USDT | below_1h_threshold | +3.55% | +3.75% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.90% | +3.10% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.80% | +3.01% |
+| B/USDT:USDT | below_1h_threshold | +4.93% | +5.15% |
+| BASED/USDT:USDT | below_1h_threshold | +4.27% | +4.49% |
+| SUI/USDT:USDT | below_1h_threshold | +3.85% | +4.08% |
+| TRUTH/USDT:USDT | below_1h_threshold | +3.84% | +4.07% |
+| SATO/USDT:USDT | below_1h_threshold | +3.50% | +3.73% |
 
 ## 5. 次に見るべき不足
 
