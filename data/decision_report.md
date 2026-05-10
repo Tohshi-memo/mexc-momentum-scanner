@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T16:27:55.000436+00:00
+- generated_at: 2026-05-10T16:32:46.843795+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3970**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T16:27:51.977422+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=81268.3
-- Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-10T16:32:43.589409+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=81215.8
+- Funnel: target 769 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASED/USDT:USDT | +4.89% | $2,425,899.18 |
-| TRUTH/USDT:USDT | +3.71% | $1,347,903.37 |
-| XPL/USDT:USDT | +2.89% | $3,863,974.67 |
-| INX/USDT:USDT | +2.53% | $17,405,175.90 |
-| AIGENSYN/USDT:USDT | +2.14% | $1,641,970.60 |
+| BASED/USDT:USDT | +6.70% | $2,450,116.62 |
+| TIA/USDT:USDT | +4.50% | $4,800,923.67 |
+| TRUTH/USDT:USDT | +3.78% | $1,357,285.62 |
+| XPL/USDT:USDT | +3.55% | $3,929,009.34 |
+| JASMY/USDT:USDT | +2.89% | $28,279,985.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +4.89% | +5.03% |
-| TRUTH/USDT:USDT | below_1h_threshold | +3.72% | +3.86% |
-| XPL/USDT:USDT | below_1h_threshold | +2.90% | +3.04% |
-| INX/USDT:USDT | below_1h_threshold | +2.54% | +2.68% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.17% | +2.31% |
+| TIA/USDT:USDT | below_1h_threshold | +4.50% | +4.71% |
+| TRUTH/USDT:USDT | below_1h_threshold | +3.78% | +3.98% |
+| XPL/USDT:USDT | below_1h_threshold | +3.55% | +3.75% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.90% | +3.10% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.80% | +3.01% |
 
 ## 5. 次に見るべき不足
 
