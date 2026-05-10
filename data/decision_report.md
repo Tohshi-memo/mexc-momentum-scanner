@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T10:37:40.841330+00:00
+- generated_at: 2026-05-10T10:42:42.719684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3961**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T10:37:37.626921+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80776.5
-- Funnel: target 769 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-10T10:42:39.675082+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=80749.1
+- Funnel: target 769 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +63.17% | $1,703,124.89 |
-| LAYER/USDT:USDT | +51.52% | $7,505,930.83 |
-| GIGA/USDT:USDT | +28.32% | $1,058,045.67 |
-| XEC/USDT:USDT | +28.04% | $2,733,168.90 |
-| SATO/USDT:USDT | +26.09% | $6,416,851.34 |
+| TROLLSOL/USDT:USDT | +64.52% | $1,715,425.13 |
+| LAYER/USDT:USDT | +49.94% | $7,568,911.98 |
+| XEC/USDT:USDT | +28.30% | $2,755,872.41 |
+| GIGA/USDT:USDT | +27.93% | $1,059,450.26 |
+| SATO/USDT:USDT | +24.77% | $6,431,538.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_1h_threshold | +4.71% | +4.70% |
-| LAYER/USDT:USDT | below_1h_threshold | +4.43% | +4.42% |
-| SATO/USDT:USDT | below_1h_threshold | +3.11% | +3.10% |
-| BILL/USDT:USDT | below_1h_threshold | +2.60% | +2.59% |
-| SUI/USDT:USDT | below_1h_threshold | +1.48% | +1.47% |
+| REZ/USDT:USDT | below_1h_threshold | +4.80% | +4.83% |
+| LAYER/USDT:USDT | below_1h_threshold | +3.56% | +3.58% |
+| BILL/USDT:USDT | below_1h_threshold | +2.82% | +2.85% |
+| SATO/USDT:USDT | below_1h_threshold | +2.01% | +2.03% |
+| DEEP/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
 
 ## 5. 次に見るべき不足
 
