@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-10T16:09:36.991641+00:00
+- generated_at: 2026-05-10T16:12:41.359064+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3968**
+- closed shadow trades: **3969**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3968, expectancy=-0.13%
-- 直近20件 MARKET基準: n=20, expectancy=-1.24%
+- 全期間 MARKET基準: n=3969, expectancy=-0.13%
+- 直近20件 MARKET基準: n=20, expectancy=-1.74%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.24% | **-1.24%** |
+| MARKET | 20/20 | 100.0% | -1.74% | **-1.74%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_5PCT | 4/20 | 20.0% | +0.95% | **+0.19%** |
-| LIMIT_BB3S | 3/17 | 17.6% | +0.47% | **+0.08%** |
 | LIMIT_FIB1618 | 3/20 | 15.0% | +0.25% | **+0.04%** |
 | LIMIT_4PCT | 14/20 | 70.0% | +0.02% | **+0.01%** |
-| LIMIT_3PCT | 16/20 | 80.0% | -0.02% | **-0.02%** |
+| LIMIT_3PCT | 17/20 | 85.0% | -0.02% | **-0.02%** |
+| LIMIT_BB3S | 4/18 | 22.2% | -0.19% | **-0.04%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 10/20 | 50.0% | +3.86% | **+1.93%** |
-| LIMIT_3PCT_LONG | 10/20 | 50.0% | +1.99% | **+1.00%** |
-| LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.17% | **+0.93%** |
-| LIMIT_4PCT_LONG | 9/20 | 45.0% | +1.99% | **+0.89%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.23% | **+0.86%** |
+| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +4.54% | **+2.04%** |
+| LIMIT_3PCT_LONG | 9/20 | 45.0% | +2.61% | **+1.17%** |
+| LIMIT_1PCT_LONG | 15/20 | 75.0% | +1.48% | **+1.11%** |
+| LIMIT_4PCT_LONG | 8/20 | 40.0% | +2.68% | **+1.07%** |
+| LIMIT_2PCT_LONG | 13/20 | 65.0% | +1.60% | **+1.04%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$107.73** / 初期 $100.00 (+7.73%)
-- 確定: 198件 (Win 48 / Loss 66 / Flat 84) / skip 331件
+- 確定: 198件 (Win 48 / Loss 66 / Flat 84) / skip 332件
 - 成長率目線: 平均log +0.000376 / 幾何平均 +0.038% per trade / maxDD +4.09%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BILL/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $107.73
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T16:09:34.182407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81399.9
-- Funnel: target 769 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-10T16:12:38.048955+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=81465.6
+- Funnel: target 769 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| WLD/USDT:USDT | +2.17% | $15,921,418.31 |
-| INX/USDT:USDT | +2.14% | $17,315,857.05 |
-| BASED/USDT:USDT | +1.79% | $2,294,433.69 |
-| PHAROS/USDT:USDT | +1.62% | $2,715,788.19 |
-| XPL/USDT:USDT | +1.49% | $3,781,171.39 |
+| WLD/USDT:USDT | +3.63% | $16,510,480.49 |
+| BASED/USDT:USDT | +2.75% | $2,303,312.98 |
+| XPL/USDT:USDT | +2.33% | $3,796,340.42 |
+| INX/USDT:USDT | +1.88% | $17,320,367.39 |
+| PHAROS/USDT:USDT | +1.76% | $2,719,067.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.17% | +2.15% |
-| INX/USDT:USDT | below_1h_threshold | +2.15% | +2.13% |
-| BASED/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
-| XPL/USDT:USDT | below_1h_threshold | +1.50% | +1.47% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
+| WLD/USDT:USDT | below_1h_threshold | +3.99% | +3.89% |
+| BASED/USDT:USDT | below_1h_threshold | +2.89% | +2.79% |
+| XPL/USDT:USDT | below_1h_threshold | +2.34% | +2.23% |
+| INX/USDT:USDT | below_1h_threshold | +1.89% | +1.78% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.77% | +1.66% |
 
 ## 5. 次に見るべき不足
 
