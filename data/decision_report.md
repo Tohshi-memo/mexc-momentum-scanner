@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T06:54:17.389395+00:00
+- generated_at: 2026-05-10T06:57:37.203145+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3948**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T06:54:14.326449+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80705.5
+- 更新: 2026-05-10T06:57:34.071826+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80690.6
 - Funnel: target 769 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.4 >= 65=1
+- Strict後reject: 4h RSI 86.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +70.22% | $1,063,793.97 |
-| LAYER/USDT:USDT | +38.69% | $4,224,568.13 |
-| XEC/USDT:USDT | +21.42% | $1,152,082.41 |
-| JASMY/USDT:USDT | +13.60% | $23,484,553.84 |
-| PLAY/USDT:USDT | +13.29% | $24,204,161.01 |
+| TROLLSOL/USDT:USDT | +71.50% | $1,083,531.83 |
+| LAYER/USDT:USDT | +37.53% | $4,271,286.51 |
+| XEC/USDT:USDT | +25.92% | $1,184,176.29 |
+| JASMY/USDT:USDT | +14.27% | $23,552,463.30 |
+| SATO/USDT:USDT | +13.67% | $6,340,157.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHAROS/USDT:USDT | below_1h_threshold | +3.88% | +3.83% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.19% | +2.13% |
-| UNI/USDT:USDT | below_1h_threshold | +1.46% | +1.40% |
-| W/USDT:USDT | below_1h_threshold | +1.17% | +1.11% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.01% | +0.96% |
+| SATO/USDT:USDT | below_1h_threshold | +3.65% | +3.61% |
+| PHAROS/USDT:USDT | below_1h_threshold | +3.52% | +3.48% |
+| XEC/USDT:USDT | below_1h_threshold | +3.25% | +3.22% |
+| UNI/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.49% | +1.45% |
 
 ## 5. 次に見るべき不足
 
