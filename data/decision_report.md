@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T16:06:40.733581+00:00
+- generated_at: 2026-05-10T16:09:36.991641+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3968**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T16:06:37.809185+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81353.4
+- 更新: 2026-05-10T16:09:34.182407+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81399.9
 - Funnel: target 769 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHAROS/USDT:USDT | +1.98% | $2,705,968.18 |
-| XPL/USDT:USDT | +1.68% | $3,778,588.16 |
-| KITE/USDT:USDT | +1.59% | $1,374,152.45 |
-| BASED/USDT:USDT | +1.16% | $2,287,286.61 |
-| LAYER/USDT:USDT | +1.07% | $10,274,529.56 |
+| WLD/USDT:USDT | +2.17% | $15,921,418.31 |
+| INX/USDT:USDT | +2.14% | $17,315,857.05 |
+| BASED/USDT:USDT | +1.79% | $2,294,433.69 |
+| PHAROS/USDT:USDT | +1.62% | $2,715,788.19 |
+| XPL/USDT:USDT | +1.49% | $3,781,171.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHAROS/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
-| XPL/USDT:USDT | below_1h_threshold | +1.50% | +1.53% |
-| KITE/USDT:USDT | below_1h_threshold | +1.47% | +1.50% |
-| LAYER/USDT:USDT | below_1h_threshold | +1.23% | +1.27% |
-| BASED/USDT:USDT | below_1h_threshold | +1.16% | +1.20% |
+| WLD/USDT:USDT | below_1h_threshold | +2.17% | +2.15% |
+| INX/USDT:USDT | below_1h_threshold | +2.15% | +2.13% |
+| BASED/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
+| XPL/USDT:USDT | below_1h_threshold | +1.50% | +1.47% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
 
 ## 5. 次に見るべき不足
 
