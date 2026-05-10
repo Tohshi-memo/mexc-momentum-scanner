@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T13:17:36.246136+00:00
+- generated_at: 2026-05-10T13:22:43.337093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3964**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T13:17:33.291918+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80860.1
-- Funnel: target 769 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-10T13:22:40.118989+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80924.4
+- Funnel: target 769 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +61.66% | $2,199,489.87 |
-| LAYER/USDT:USDT | +37.01% | $9,298,981.92 |
-| GIGA/USDT:USDT | +22.88% | $1,225,030.96 |
-| XEC/USDT:USDT | +19.70% | $3,247,741.84 |
-| UB/USDT:USDT | +17.95% | $2,399,412.41 |
+| TROLLSOL/USDT:USDT | +61.00% | $2,210,986.71 |
+| LAYER/USDT:USDT | +36.90% | $9,322,623.95 |
+| GIGA/USDT:USDT | +23.49% | $1,230,172.36 |
+| BAS/USDT:USDT | +19.30% | $1,235,468.46 |
+| XEC/USDT:USDT | +18.91% | $3,261,048.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.26% | +3.30% |
-| SPACEX/USDT:USDT | below_1h_threshold | +2.50% | +2.54% |
-| LAB/USDT:USDT | below_1h_threshold | +2.48% | +2.51% |
-| UNI/USDT:USDT | below_1h_threshold | +2.16% | +2.20% |
-| GIGA/USDT:USDT | below_1h_threshold | +1.63% | +1.66% |
+| UNI/USDT:USDT | below_1h_threshold | +3.29% | +3.24% |
+| LAB/USDT:USDT | below_1h_threshold | +2.18% | +2.14% |
+| SPACEX/USDT:USDT | below_1h_threshold | +2.16% | +2.12% |
+| MITO/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
 
 ## 5. 次に見るべき不足
 
