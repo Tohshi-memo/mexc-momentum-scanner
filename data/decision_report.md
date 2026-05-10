@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T22:47:58.591196+00:00
+- generated_at: 2026-05-10T22:52:53.566376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3996**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T22:47:55.516506+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.49% price=81874.9
-- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1
+- 更新: 2026-05-10T22:52:50.082599+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.51% price=81895.5
+- Funnel: target 769 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.4 >= 65=1, 4h RSI 90.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +61.86% | $6,261,448.65 |
-| TROLLSOL/USDT:USDT | +26.29% | $4,731,049.28 |
-| ALCH/USDT:USDT | +22.11% | $3,509,067.33 |
-| B/USDT:USDT | +14.28% | $2,453,379.46 |
-| SUI/USDT:USDT | +9.63% | $772,337,041.28 |
+| US/USDT:USDT | +62.39% | $6,454,018.09 |
+| TROLLSOL/USDT:USDT | +25.50% | $4,745,350.70 |
+| ALCH/USDT:USDT | +22.27% | $3,512,977.38 |
+| B/USDT:USDT | +15.00% | $2,467,571.27 |
+| SAHARA/USDT:USDT | +10.20% | $2,025,309.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_relative_strength | +6.46% | +4.97% |
-| NIL/USDT:USDT | below_1h_threshold | +4.21% | +2.72% |
-| JUP/USDT:USDT | below_1h_threshold | +4.10% | +2.61% |
-| IP/USDT:USDT | below_1h_threshold | +4.02% | +2.53% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.60% | +2.11% |
+| SAHARA/USDT:USDT | below_1h_threshold | +4.88% | +3.37% |
+| NIL/USDT:USDT | below_1h_threshold | +4.29% | +2.78% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +4.00% | +2.48% |
+| IP/USDT:USDT | below_1h_threshold | +3.74% | +2.23% |
+| JUP/USDT:USDT | below_1h_threshold | +3.64% | +2.13% |
 
 ## 5. 次に見るべき不足
 
