@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T03:37:31.281831+00:00
+- generated_at: 2026-05-10T03:42:43.141073+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3939**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T03:37:28.419314+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80751.0
+- 更新: 2026-05-10T03:42:40.120394+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=80790.7
 - Funnel: target 769 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +22.16% | $6,291,512.94 |
-| AGT/USDT:USDT | +18.35% | $1,073,709.48 |
-| LAYER/USDT:USDT | +17.35% | $1,216,859.22 |
-| PHAROS/USDT:USDT | +15.03% | $6,387,772.56 |
-| INX/USDT:USDT | +14.75% | $14,444,343.03 |
+| AGT/USDT:USDT | +18.35% | $1,097,140.89 |
+| LAYER/USDT:USDT | +17.03% | $1,218,115.34 |
+| SATO/USDT:USDT | +15.99% | $6,331,089.78 |
+| PHAROS/USDT:USDT | +12.90% | $6,432,894.50 |
+| INX/USDT:USDT | +12.87% | $14,518,754.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHAROS/USDT:USDT | below_1h_threshold | +4.13% | +4.13% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +4.09% | +4.08% |
-| FHE/USDT:USDT | below_1h_threshold | +3.67% | +3.66% |
-| NOT/USDT:USDT | below_1h_threshold | +3.59% | +3.59% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.24% | +2.23% |
+| FHE/USDT:USDT | below_1h_threshold | +2.96% | +2.90% |
+| NOT/USDT:USDT | below_1h_threshold | +2.49% | +2.44% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
+| PHAROS/USDT:USDT | below_1h_threshold | +2.31% | +2.25% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.13% | +2.08% |
 
 ## 5. 次に見るべき不足
 
