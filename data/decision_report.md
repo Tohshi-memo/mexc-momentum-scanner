@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T23:38:14.120208+00:00
+- generated_at: 2026-05-10T23:42:46.869285+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3997**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T23:38:11.200749+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=82354.9
+- 更新: 2026-05-10T23:42:43.914569+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=82307.9
 - Funnel: target 770 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +50.50% | $7,712,000.92 |
-| TROLLSOL/USDT:USDT | +22.34% | $4,912,466.31 |
-| ALCH/USDT:USDT | +22.29% | $3,565,062.34 |
-| B/USDT:USDT | +13.75% | $2,406,026.61 |
-| DEEP/USDT:USDT | +11.75% | $2,438,080.11 |
+| US/USDT:USDT | +50.16% | $7,745,484.09 |
+| ALCH/USDT:USDT | +21.90% | $3,582,637.12 |
+| TROLLSOL/USDT:USDT | +21.63% | $4,917,191.10 |
+| B/USDT:USDT | +13.61% | $2,406,357.25 |
+| SAHARA/USDT:USDT | +11.10% | $2,050,891.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEEP/USDT:USDT | below_1h_threshold | +2.89% | +2.47% |
-| CRO/USDT:USDT | below_1h_threshold | +1.73% | +1.31% |
-| SPX/USDT:USDT | below_1h_threshold | +1.60% | +1.18% |
-| BAS/USDT:USDT | below_1h_threshold | +1.39% | +0.97% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.06% | +0.64% |
+| DEEP/USDT:USDT | below_1h_threshold | +2.20% | +1.84% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.73% | +1.37% |
+| CRO/USDT:USDT | below_1h_threshold | +1.52% | +1.15% |
+| SPX/USDT:USDT | below_1h_threshold | +1.05% | +0.69% |
+| ETC/USDT:USDT | below_1h_threshold | +0.95% | +0.58% |
 
 ## 5. 次に見るべき不足
 
