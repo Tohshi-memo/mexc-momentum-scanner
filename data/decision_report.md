@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T23:22:41.150578+00:00
+- generated_at: 2026-05-10T23:27:51.391281+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3997**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T23:22:38.132174+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=82288.6
-- Funnel: target 770 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-10T23:27:48.485879+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=82300.0
+- Funnel: target 770 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +46.72% | $7,476,283.07 |
-| TROLLSOL/USDT:USDT | +25.44% | $4,867,563.12 |
-| ALCH/USDT:USDT | +21.99% | $3,551,440.33 |
-| B/USDT:USDT | +14.19% | $2,391,380.56 |
-| DEEP/USDT:USDT | +9.48% | $2,401,865.82 |
+| US/USDT:USDT | +49.36% | $7,565,182.90 |
+| TROLLSOL/USDT:USDT | +22.33% | $4,886,364.26 |
+| ALCH/USDT:USDT | +22.06% | $3,552,601.88 |
+| B/USDT:USDT | +13.97% | $2,391,973.89 |
+| DEEP/USDT:USDT | +10.56% | $2,406,388.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +0.88% | +0.54% |
-| DEEP/USDT:USDT | below_1h_threshold | +0.85% | +0.51% |
-| CRO/USDT:USDT | below_1h_threshold | +0.79% | +0.45% |
-| BSB/USDT:USDT | below_1h_threshold | +0.70% | +0.36% |
-| SPX/USDT:USDT | below_1h_threshold | +0.42% | +0.08% |
+| DEEP/USDT:USDT | below_1h_threshold | +1.80% | +1.45% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.43% | +1.08% |
+| BAS/USDT:USDT | below_1h_threshold | +1.27% | +0.91% |
+| CRO/USDT:USDT | below_1h_threshold | +1.20% | +0.84% |
+| SPX/USDT:USDT | below_1h_threshold | +0.99% | +0.64% |
 
 ## 5. 次に見るべき不足
 
