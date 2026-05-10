@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T15:57:52.924233+00:00
+- generated_at: 2026-05-10T16:02:45.803435+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3968**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T15:57:49.557038+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=81380.0
-- Funnel: target 769 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 83.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-10T16:02:42.910367+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=81435.4
+- Funnel: target 769 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +71.26% | $2,708,665.77 |
-| LAYER/USDT:USDT | +36.80% | $10,275,782.11 |
-| GIGA/USDT:USDT | +32.40% | $1,415,770.58 |
-| TRUTH/USDT:USDT | +28.61% | $1,225,645.33 |
-| BIANRENSHENG/USDT:USDT | +25.04% | $1,135,399.23 |
+| BAS/USDT:USDT | +1.79% | $1,302,841.16 |
+| LAYER/USDT:USDT | +1.23% | $10,270,264.66 |
+| LAB/USDT:USDT | +1.11% | $132,498,501.03 |
+| NAORIS/USDT:USDT | +1.04% | $1,242,481.76 |
+| LUNC/USDT:USDT | +0.90% | $21,654,640.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +4.63% | +4.10% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +4.58% | +4.04% |
-| LAB/USDT:USDT | below_1h_threshold | +4.58% | +4.04% |
-| ATOM/USDT:USDT | below_1h_threshold | +4.54% | +4.00% |
-| FHE/USDT:USDT | below_1h_threshold | +4.25% | +3.71% |
+| BAS/USDT:USDT | below_1h_threshold | +1.68% | +1.61% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.23% | +1.16% |
+| LAB/USDT:USDT | below_1h_threshold | +1.20% | +1.14% |
+| LAYER/USDT:USDT | below_1h_threshold | +1.15% | +1.09% |
+| PHAROS/USDT:USDT | below_1h_threshold | +0.67% | +0.61% |
 
 ## 5. 次に見るべき不足
 
