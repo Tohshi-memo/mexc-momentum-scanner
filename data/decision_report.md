@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T07:32:44.448660+00:00
+- generated_at: 2026-05-10T07:37:41.953496+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3950**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T07:32:41.015072+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80736.4
-- Funnel: target 769 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
+- 更新: 2026-05-10T07:37:38.576109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80735.9
+- Funnel: target 769 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 79.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +61.71% | $1,266,727.02 |
-| LAYER/USDT:USDT | +42.58% | $4,763,523.22 |
-| XEC/USDT:USDT | +29.89% | $1,679,624.09 |
-| INX/USDT:USDT | +16.64% | $15,789,857.71 |
-| BAS/USDT:USDT | +15.91% | $1,117,119.61 |
+| TROLLSOL/USDT:USDT | +67.48% | $1,284,789.29 |
+| LAYER/USDT:USDT | +45.32% | $4,853,724.71 |
+| XEC/USDT:USDT | +29.76% | $1,716,123.90 |
+| BAS/USDT:USDT | +17.18% | $1,124,415.84 |
+| INX/USDT:USDT | +16.34% | $15,864,518.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +3.85% | +3.80% |
-| LAYER/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.16% | +2.11% |
-| XEC/USDT:USDT | below_1h_threshold | +2.08% | +2.03% |
-| FHE/USDT:USDT | below_1h_threshold | +1.87% | +1.82% |
+| LAYER/USDT:USDT | below_1h_threshold | +4.46% | +4.42% |
+| LAB/USDT:USDT | below_1h_threshold | +3.35% | +3.30% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.37% | +2.32% |
+| XEC/USDT:USDT | below_1h_threshold | +1.98% | +1.93% |
+| UNI/USDT:USDT | below_1h_threshold | +1.96% | +1.92% |
 
 ## 5. 次に見るべき不足
 
