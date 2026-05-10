@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T12:13:34.111901+00:00
+- generated_at: 2026-05-10T12:17:41.572599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3962**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T12:13:31.179011+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80814.7
-- Funnel: target 769 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-10T12:17:38.682930+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80851.1
+- Funnel: target 769 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +65.82% | $1,970,805.50 |
-| LAYER/USDT:USDT | +37.43% | $8,783,165.77 |
-| GIGA/USDT:USDT | +30.50% | $1,185,083.77 |
-| XEC/USDT:USDT | +23.28% | $2,998,341.30 |
-| INX/USDT:USDT | +17.09% | $17,862,430.72 |
+| TROLLSOL/USDT:USDT | +67.15% | $1,989,567.77 |
+| LAYER/USDT:USDT | +37.11% | $8,814,140.91 |
+| GIGA/USDT:USDT | +29.14% | $1,189,680.87 |
+| XEC/USDT:USDT | +22.75% | $3,003,787.22 |
+| INX/USDT:USDT | +16.64% | $17,885,812.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.37% | +4.33% |
-| INX/USDT:USDT | below_1h_threshold | +2.36% | +2.32% |
-| XNY/USDT:USDT | below_1h_threshold | +2.26% | +2.22% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.78% | +1.74% |
-| TAG/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.60% | +2.52% |
+| BILL/USDT:USDT | below_1h_threshold | +2.23% | +2.15% |
+| KITE/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
+| FHE/USDT:USDT | below_1h_threshold | +1.89% | +1.80% |
+| BASED/USDT:USDT | below_1h_threshold | +1.71% | +1.63% |
 
 ## 5. 次に見るべき不足
 
