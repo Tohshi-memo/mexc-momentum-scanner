@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T04:12:32.040541+00:00
+- generated_at: 2026-05-10T04:15:15.767268+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3939**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T04:12:29.139580+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80715.1
+- 更新: 2026-05-10T04:15:12.805836+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=80740.0
 - Funnel: target 769 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAYER/USDT:USDT | +18.40% | $1,254,756.32 |
-| INX/USDT:USDT | +17.46% | $14,659,009.12 |
-| SATO/USDT:USDT | +16.52% | $6,268,276.25 |
-| BIO/USDT:USDT | +13.97% | $1,618,423.74 |
-| PHAROS/USDT:USDT | +12.99% | $6,494,431.18 |
+| LAYER/USDT:USDT | +19.55% | $1,257,972.86 |
+| INX/USDT:USDT | +17.16% | $14,671,730.94 |
+| SATO/USDT:USDT | +16.26% | $6,272,521.13 |
+| BIO/USDT:USDT | +14.01% | $1,619,834.62 |
+| JASMY/USDT:USDT | +13.02% | $20,445,259.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MITO/USDT:USDT | below_1h_threshold | +1.71% | +1.74% |
-| BASED/USDT:USDT | below_1h_threshold | +1.49% | +1.52% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +0.94% | +0.96% |
-| LAYER/USDT:USDT | below_1h_threshold | +0.90% | +0.93% |
+| MITO/USDT:USDT | below_1h_threshold | +2.40% | +2.39% |
+| LAYER/USDT:USDT | below_1h_threshold | +2.34% | +2.34% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
+| BILL/USDT:USDT | below_1h_threshold | +1.40% | +1.40% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.21% | +1.20% |
 
 ## 5. 次に見るべき不足
 
