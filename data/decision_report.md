@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T00:37:46.761753+00:00
+- generated_at: 2026-05-10T00:42:49.135885+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3929**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T00:37:41.168551+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80679.1
+- 更新: 2026-05-10T00:42:43.692531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=80706.1
 - Funnel: target 769 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.2 >= 65=1
+- Strict後reject: 4h RSI 94.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| INX/USDT:USDT | +40.06% | $9,887,560.49 |
-| BILL/USDT:USDT | +17.46% | $39,198,194.49 |
-| SATO/USDT:USDT | +15.43% | $5,558,050.60 |
-| JASMY/USDT:USDT | +14.62% | $15,585,797.04 |
-| BANK/USDT:USDT | +11.92% | $1,186,971.61 |
+| INX/USDT:USDT | +42.39% | $10,032,679.45 |
+| BILL/USDT:USDT | +17.07% | $39,275,194.01 |
+| SATO/USDT:USDT | +16.54% | $5,566,484.55 |
+| JASMY/USDT:USDT | +14.27% | $15,842,494.13 |
+| BANK/USDT:USDT | +12.43% | $1,193,491.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.73% | +3.67% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.99% | +2.94% |
-| KITE/USDT:USDT | below_1h_threshold | +2.36% | +2.31% |
-| SUI/USDT:USDT | below_1h_threshold | +2.35% | +2.29% |
-| PTB/USDT:USDT | below_1h_threshold | +1.68% | +1.62% |
+| BILL/USDT:USDT | below_1h_threshold | +3.69% | +3.60% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.98% | +2.89% |
+| KITE/USDT:USDT | below_1h_threshold | +2.63% | +2.54% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.03% | +1.94% |
+| SUI/USDT:USDT | below_1h_threshold | +1.99% | +1.90% |
 
 ## 5. 次に見るべき不足
 
