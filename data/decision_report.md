@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-10T17:02:44.424758+00:00
+- generated_at: 2026-05-10T17:07:44.053842+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **3971**
+- closed shadow trades: **3972**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=3971, expectancy=-0.13%
+- 全期間 MARKET基準: n=3972, expectancy=-0.13%
 - 直近20件 MARKET基準: n=20, expectancy=-1.74%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 10/20 | 50.0% | +4.21% | **+2.11%** |
-| LIMIT_3PCT_LONG | 10/20 | 50.0% | +3.15% | **+1.57%** |
-| LIMIT_1PCT_LONG | 15/20 | 75.0% | +1.48% | **+1.11%** |
-| LIMIT_4PCT_LONG | 8/20 | 40.0% | +2.68% | **+1.07%** |
-| LIMIT_2PCT_LONG | 13/20 | 65.0% | +1.60% | **+1.04%** |
+| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +3.79% | **+1.71%** |
+| LIMIT_1PCT_LONG | 15/20 | 75.0% | +2.09% | **+1.56%** |
+| LIMIT_2PCT_LONG | 12/20 | 60.0% | +2.06% | **+1.24%** |
+| LIMIT_3PCT_LONG | 9/20 | 45.0% | +2.61% | **+1.17%** |
+| LIMIT_ATR_LONG | 10/20 | 50.0% | +1.87% | **+0.94%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$107.73** / 初期 $100.00 (+7.73%)
-- 確定: 198件 (Win 48 / Loss 66 / Flat 84) / skip 334件
+- 確定: 198件 (Win 48 / Loss 66 / Flat 84) / skip 335件
 - 成長率目線: 平均log +0.000376 / 幾何平均 +0.038% per trade / maxDD +4.09%
-- 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BILL/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $107.73
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T17:02:41.374157+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81311.1
+- 更新: 2026-05-10T17:07:40.855893+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=81255.6
 - Funnel: target 769 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +6.05% | $2,913,638.13 |
-| TRUTH/USDT:USDT | +5.15% | $1,487,312.83 |
-| BASED/USDT:USDT | +5.00% | $2,558,190.70 |
-| SUI/USDT:USDT | +4.68% | $406,892,786.13 |
-| TIA/USDT:USDT | +4.38% | $6,434,056.80 |
+| BASED/USDT:USDT | +6.52% | $2,568,078.26 |
+| TRUTH/USDT:USDT | +5.81% | $1,533,155.93 |
+| TROLLSOL/USDT:USDT | +5.18% | $2,985,002.46 |
+| SUI/USDT:USDT | +4.29% | $416,277,873.02 |
+| INX/USDT:USDT | +4.10% | $16,866,139.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INX/USDT:USDT | below_1h_threshold | +1.01% | +1.04% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +0.82% | +0.85% |
-| SUI/USDT:USDT | below_1h_threshold | +0.79% | +0.83% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +0.58% | +0.61% |
-| SATO/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
+| BASED/USDT:USDT | below_1h_threshold | +1.22% | +1.32% |
+| INX/USDT:USDT | below_1h_threshold | +1.14% | +1.24% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.07% | +1.17% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.87% | +0.97% |
+| XLM/USDT:USDT | below_1h_threshold | +0.76% | +0.86% |
 
 ## 5. 次に見るべき不足
 
