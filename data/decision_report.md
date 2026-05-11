@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T00:52:51.495591+00:00
+- generated_at: 2026-05-11T00:57:48.545184+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3999**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T00:52:48.522379+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.89% price=81447.9
+- 更新: 2026-05-11T00:57:45.279724+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.04% price=81321.7
 - Funnel: target 771 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +45.44% | $8,749,997.02 |
-| TROLLSOL/USDT:USDT | +25.67% | $5,221,180.91 |
-| ALCH/USDT:USDT | +18.50% | $3,772,811.25 |
-| B/USDT:USDT | +12.27% | $2,546,547.32 |
-| SAHARA/USDT:USDT | +8.93% | $2,140,382.86 |
+| US/USDT:USDT | +45.63% | $8,803,506.34 |
+| TROLLSOL/USDT:USDT | +22.01% | $5,244,625.09 |
+| ALCH/USDT:USDT | +18.16% | $3,776,807.40 |
+| B/USDT:USDT | +12.30% | $2,554,573.31 |
+| SAHARA/USDT:USDT | +8.47% | $2,150,204.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.58% | +5.46% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.78% | +4.67% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.30% | +4.19% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +3.44% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.38% | +3.26% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +4.09% | +5.13% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.97% | +5.01% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.17% | +4.22% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +3.84% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.27% | +3.31% |
 
 ## 5. 次に見るべき不足
 
