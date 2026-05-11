@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-11T15:08:02.184898+00:00
+- generated_at: 2026-05-11T15:13:12.303522+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4046**
+- closed shadow trades: **4047**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4046, expectancy=-0.13%
+- 全期間 MARKET基準: n=4047, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-0.82%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/4 | 100.0% | +3.54% | **+3.54%** |
+| LIMIT_BB3S_LONG | 5/5 | 100.0% | +2.03% | **+2.03%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.58% | **+1.58%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.62% | **+1.29%** |
 | ASK_LONG | 20/20 | 100.0% | +1.28% | **+1.28%** |
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$107.86** / 初期 $100.00 (+7.86%)
-- 確定: 218件 (Win 54 / Loss 76 / Flat 88) / skip 389件
+- 確定: 218件 (Win 54 / Loss 76 / Flat 88) / skip 390件
 - 成長率目線: 平均log +0.000347 / 幾何平均 +0.035% per trade / maxDD +4.09%
-- 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: B/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $107.86
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T15:07:58.855403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80872.5
+- 更新: 2026-05-11T15:13:09.038088+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80957.1
 - Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +53.86% | $20,894,033.47 |
-| TROLLSOL/USDT:USDT | +46.40% | $4,829,826.67 |
-| US/USDT:USDT | +34.09% | $15,077,676.77 |
-| SAGA/USDT:USDT | +32.69% | $4,549,092.00 |
-| PENGUIN/USDT:USDT | +30.07% | $1,884,035.21 |
+| B/USDT:USDT | +52.70% | $21,178,068.08 |
+| TROLLSOL/USDT:USDT | +45.13% | $4,895,348.51 |
+| US/USDT:USDT | +34.51% | $15,105,650.62 |
+| SAGA/USDT:USDT | +32.43% | $4,567,858.10 |
+| PENGUIN/USDT:USDT | +31.70% | $1,889,573.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +1.87% | +1.93% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.75% |
-| US/USDT:USDT | below_1h_threshold | +1.62% | +1.68% |
-| HNT/USDT:USDT | below_1h_threshold | +1.25% | +1.30% |
+| BILL/USDT:USDT | below_1h_threshold | +2.58% | +2.53% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.49% |
+| OPG/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
+| US/USDT:USDT | below_1h_threshold | +1.83% | +1.78% |
+| GIGA/USDT:USDT | below_1h_threshold | +1.51% | +1.46% |
 
 ## 5. 次に見るべき不足
 
