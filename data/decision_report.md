@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T12:47:55.491642+00:00
+- generated_at: 2026-05-11T12:52:52.630597+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4030**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T12:47:52.282593+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81173.5
+- 更新: 2026-05-11T12:52:49.218277+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=81026.0
 - Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
+- Strict後reject: 4h RSI 74.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +39.87% | $14,013,808.28 |
-| PENGUIN/USDT:USDT | +34.19% | $1,486,526.02 |
-| B/USDT:USDT | +32.01% | $11,770,708.72 |
-| SAGA/USDT:USDT | +28.76% | $3,467,153.80 |
-| ESPORTS/USDT:USDT | +19.23% | $1,079,636.28 |
+| US/USDT:USDT | +40.21% | $14,064,306.64 |
+| PENGUIN/USDT:USDT | +32.56% | $1,515,710.04 |
+| B/USDT:USDT | +30.90% | $11,801,881.75 |
+| SAGA/USDT:USDT | +28.07% | $3,499,887.01 |
+| ESPORTS/USDT:USDT | +19.42% | $1,088,929.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.61% | +4.60% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.57% | +3.56% |
-| BILL/USDT:USDT | below_1h_threshold | +2.40% | +2.39% |
-| SILVER/USDT:USDT | below_1h_threshold | +2.05% | +2.04% |
-| B/USDT:USDT | below_1h_threshold | +1.98% | +1.97% |
+| SAHARA/USDT:USDT | below_1h_threshold | +4.72% | +4.89% |
+| UB/USDT:USDT | below_1h_threshold | +4.00% | +4.18% |
+| BILL/USDT:USDT | below_1h_threshold | +2.89% | +3.06% |
+| SILVER/USDT:USDT | below_1h_threshold | +2.25% | +2.42% |
+| ICP/USDT:USDT | below_1h_threshold | +1.46% | +1.63% |
 
 ## 5. 次に見るべき不足
 
