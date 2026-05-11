@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T13:27:50.236173+00:00
+- generated_at: 2026-05-11T13:33:16.528599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4030**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T13:27:47.237075+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=81130.0
+- 更新: 2026-05-11T13:33:13.570047+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81039.0
 - Funnel: target 762 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +40.67% | $14,203,550.43 |
-| PENGUIN/USDT:USDT | +33.89% | $1,634,832.10 |
-| B/USDT:USDT | +32.40% | $12,074,745.84 |
-| SAGA/USDT:USDT | +27.81% | $3,583,127.26 |
-| ESPORTS/USDT:USDT | +21.14% | $1,175,848.00 |
+| US/USDT:USDT | +38.21% | $14,265,757.69 |
+| PENGUIN/USDT:USDT | +35.49% | $1,653,736.51 |
+| B/USDT:USDT | +32.57% | $12,093,011.98 |
+| SAGA/USDT:USDT | +27.54% | $3,598,902.24 |
+| ESPORTS/USDT:USDT | +20.95% | $1,189,928.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.51% | +3.37% |
-| CRO/USDT:USDT | below_1h_threshold | +2.56% | +2.41% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +2.31% | +2.16% |
-| FF/USDT:USDT | below_1h_threshold | +2.28% | +2.14% |
-| UB/USDT:USDT | below_1h_threshold | +2.15% | +2.01% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.34% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.85% |
+| UB/USDT:USDT | below_1h_threshold | +2.65% | +2.62% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.41% | +2.38% |
+| FF/USDT:USDT | below_1h_threshold | +2.15% | +2.12% |
 
 ## 5. 次に見るべき不足
 
