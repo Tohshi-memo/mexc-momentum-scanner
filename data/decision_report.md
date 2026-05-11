@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T12:27:51.804431+00:00
+- generated_at: 2026-05-11T12:33:02.800830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4029**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T12:27:48.744573+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=81241.9
+- 更新: 2026-05-11T12:32:59.895750+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=81311.2
 - Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +40.56% | $13,880,503.23 |
-| PENGUIN/USDT:USDT | +39.18% | $1,354,696.55 |
-| B/USDT:USDT | +31.76% | $11,559,319.67 |
-| SAGA/USDT:USDT | +29.88% | $3,357,520.49 |
-| TROLLSOL/USDT:USDT | +19.76% | $4,444,382.22 |
+| US/USDT:USDT | +39.39% | $13,922,494.21 |
+| PENGUIN/USDT:USDT | +38.16% | $1,390,197.16 |
+| B/USDT:USDT | +30.48% | $11,650,099.34 |
+| SAGA/USDT:USDT | +30.46% | $3,374,737.50 |
+| TROLLSOL/USDT:USDT | +20.08% | $4,447,177.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_1h_threshold | +4.85% | +4.76% |
-| UB/USDT:USDT | below_1h_threshold | +3.94% | +3.84% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.22% | +2.13% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.92% | +1.83% |
-| B/USDT:USDT | below_1h_threshold | +1.87% | +1.78% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +4.18% | +4.00% |
+| UB/USDT:USDT | below_1h_threshold | +3.79% | +3.61% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.10% | +2.92% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.29% | +2.11% |
+| SILVER/USDT:USDT | below_1h_threshold | +2.09% | +1.91% |
 
 ## 5. 次に見るべき不足
 
