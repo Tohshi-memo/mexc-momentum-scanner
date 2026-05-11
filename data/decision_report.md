@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T14:58:00.255200+00:00
+- generated_at: 2026-05-11T15:03:01.247264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4045**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T14:57:53.966276+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=80858.4
-- Funnel: target 762 → liquid 187 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1, 4h RSI 84.5 >= 65=1, 4h RSI 85.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-11T15:02:58.089739+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=80796.8
+- Funnel: target 762 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +57.79% | $20,344,633.30 |
-| TROLLSOL/USDT:USDT | +48.73% | $4,940,829.17 |
-| SAGA/USDT:USDT | +37.95% | $4,386,748.84 |
-| US/USDT:USDT | +31.11% | $14,989,491.68 |
-| PENGUIN/USDT:USDT | +30.78% | $1,886,228.98 |
+| B/USDT:USDT | +56.98% | $20,497,380.40 |
+| TROLLSOL/USDT:USDT | +48.42% | $4,799,447.79 |
+| SAGA/USDT:USDT | +34.07% | $4,472,295.47 |
+| US/USDT:USDT | +32.03% | $15,024,640.11 |
+| PENGUIN/USDT:USDT | +31.29% | $1,877,740.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.45% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.21% | +2.42% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +2.04% | +2.25% |
-| PARTI/USDT:USDT | below_1h_threshold | +1.96% | +2.18% |
-| KITE/USDT:USDT | below_1h_threshold | +1.93% | +2.15% |
+| LDO/USDT:USDT | below_1h_threshold | +2.74% | +2.89% |
+| BILL/USDT:USDT | below_1h_threshold | +2.20% | +2.35% |
+| OPG/USDT:USDT | below_1h_threshold | +0.70% | +0.85% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +0.51% | +0.65% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.58% |
 
 ## 5. 次に見るべき不足
 
