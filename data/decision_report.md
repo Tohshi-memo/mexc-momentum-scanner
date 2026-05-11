@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T01:31:18.547410+00:00
+- generated_at: 2026-05-11T01:34:09.440976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4001**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T01:31:15.573890+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81506.1
-- Funnel: target 775 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-11T01:34:03.926966+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=81627.6
+- Funnel: target 775 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +37.26% | $9,261,710.56 |
-| TROLLSOL/USDT:USDT | +21.60% | $5,369,818.15 |
-| ALCH/USDT:USDT | +20.54% | $3,809,978.75 |
-| B/USDT:USDT | +12.05% | $2,571,792.60 |
-| SAHARA/USDT:USDT | +10.88% | $2,026,709.21 |
+| US/USDT:USDT | +36.00% | $9,278,603.78 |
+| TROLLSOL/USDT:USDT | +24.95% | $5,376,811.24 |
+| ALCH/USDT:USDT | +20.55% | $3,819,514.25 |
+| B/USDT:USDT | +11.35% | $2,575,610.82 |
+| SAHARA/USDT:USDT | +10.52% | $2,028,319.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.25% | +4.15% |
-| GIGA/USDT:USDT | below_1h_threshold | +2.21% | +2.12% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.82% | +1.73% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.65% | +1.55% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.61% | +1.51% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +1.93% | +1.69% |
+| VVV/USDT:USDT | below_1h_threshold | +1.88% | +1.63% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.80% | +1.55% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.66% | +1.42% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.51% | +1.26% |
 
 ## 5. 次に見るべき不足
 
