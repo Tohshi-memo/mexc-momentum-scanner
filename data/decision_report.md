@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T03:27:46.651505+00:00
+- generated_at: 2026-05-11T03:32:41.954696+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4005**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T03:27:43.607239+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.73% price=80542.2
-- Funnel: target 775 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-11T03:32:38.697455+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.68% price=80584.1
+- Funnel: target 775 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +34.47% | $9,922,559.94 |
-| ALCH/USDT:USDT | +21.82% | $3,990,345.14 |
-| TROLLSOL/USDT:USDT | +19.23% | $5,328,558.64 |
-| OPG/USDT:USDT | +11.58% | $1,522,751.28 |
-| PLAY/USDT:USDT | +11.01% | $5,822,213.43 |
+| US/USDT:USDT | +33.71% | $9,929,114.61 |
+| ALCH/USDT:USDT | +20.87% | $3,996,133.40 |
+| TROLLSOL/USDT:USDT | +16.24% | $5,346,086.35 |
+| OPG/USDT:USDT | +12.00% | $1,535,466.48 |
+| FOLKS/USDT:USDT | +10.49% | $1,243,799.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +2.84% | +3.57% |
-| US/USDT:USDT | below_1h_threshold | +2.32% | +3.06% |
-| BAS/USDT:USDT | below_1h_threshold | +1.88% | +2.61% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.62% | +1.35% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.37% | +1.10% |
+| BAS/USDT:USDT | below_1h_threshold | +3.17% | +3.85% |
+| US/USDT:USDT | below_1h_threshold | +1.99% | +2.67% |
+| SAHARA/USDT:USDT | below_1h_threshold | +0.30% | +0.98% |
+| VVV/USDT:USDT | below_1h_threshold | +0.25% | +0.94% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.20% | +0.88% |
 
 ## 5. 次に見るべき不足
 
