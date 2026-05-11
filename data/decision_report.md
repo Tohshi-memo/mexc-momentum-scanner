@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T00:37:52.905533+00:00
+- generated_at: 2026-05-11T00:43:09.183815+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3999**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T00:37:49.676472+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=81748.8
-- Funnel: target 771 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.3 >= 65=1
+- 更新: 2026-05-11T00:43:05.466100+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.81% price=81515.8
+- Funnel: target 771 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.5 >= 65=1, 4h RSI 79.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +49.72% | $8,599,092.11 |
-| TROLLSOL/USDT:USDT | +29.64% | $5,183,680.66 |
-| ALCH/USDT:USDT | +20.61% | $3,759,256.56 |
-| B/USDT:USDT | +12.47% | $2,533,704.48 |
-| SUI/USDT:USDT | +8.60% | $803,346,254.77 |
+| US/USDT:USDT | +47.26% | $8,664,078.94 |
+| TROLLSOL/USDT:USDT | +25.35% | $5,198,352.16 |
+| ALCH/USDT:USDT | +19.32% | $3,762,182.84 |
+| B/USDT:USDT | +12.27% | $2,539,925.51 |
+| SAHARA/USDT:USDT | +8.91% | $2,125,125.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.94% | +5.46% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.71% | +4.23% |
-| BSB/USDT:USDT | below_1h_threshold | +3.59% | +4.11% |
-| VVV/USDT:USDT | below_1h_threshold | +3.35% | +3.87% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +3.68% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +3.95% |
+| VVV/USDT:USDT | below_1h_threshold | +3.08% | +3.89% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +3.45% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +3.39% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.41% | +2.22% |
 
 ## 5. 次に見るべき不足
 
