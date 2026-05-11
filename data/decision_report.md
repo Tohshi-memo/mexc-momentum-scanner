@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-11T04:22:17.867100+00:00
+- generated_at: 2026-05-11T04:27:49.910278+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4007**
+- closed shadow trades: **4008**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.55% / filled 20/20。**
-- 全期間 MARKET基準: n=4007, expectancy=-0.12%
+- 全期間 MARKET基準: n=4008, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+1.55%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,19 +23,19 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.55% | **+1.55%** |
 | ASK | 20/20 | 100.0% | +1.51% | **+1.51%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +1.60% | **+1.36%** |
 | LIMIT_BB3S | 5/11 | 45.5% | +2.89% | **+1.31%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +1.20% | **+0.96%** |
 | LIMIT_ATR | 14/20 | 70.0% | +1.28% | **+0.90%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_4PCT_LONG | 15/20 | 75.0% | +1.95% | **+1.46%** |
+| LIMIT_4PCT_LONG | 15/20 | 75.0% | +1.15% | **+0.86%** |
 | LIMIT_3PCT_LONG | 18/20 | 90.0% | +0.96% | **+0.86%** |
-| LIMIT_ATR_LONG | 17/20 | 85.0% | +0.88% | **+0.75%** |
-| LIMIT_5PCT_LONG | 12/20 | 60.0% | +0.93% | **+0.56%** |
-| LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.22% | **+0.22%** |
+| LIMIT_ATR_LONG | 17/20 | 85.0% | +0.17% | **+0.15%** |
+| LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.33% | **+0.13%** |
+| LIMIT_FIB1618_LONG | 5/20 | 25.0% | +0.29% | **+0.07%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$109.49** / 初期 $100.00 (+9.49%)
-- 確定: 213件 (Win 54 / Loss 73 / Flat 86) / skip 355件
-- 成長率目線: 平均log +0.000426 / 幾何平均 +0.043% per trade / maxDD +4.09%
+- 残高: **$108.95** / 初期 $100.00 (+8.95%)
+- 確定: 214件 (Win 54 / Loss 74 / Flat 86) / skip 355件
+- 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +4.09%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: FOLKS/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $109.49
+- 最新: SATO/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $108.95
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T04:22:15.495978+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80656.9
+- 更新: 2026-05-11T04:27:46.628109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=80707.0
 - Funnel: target 775 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +30.31% | $10,233,122.88 |
-| ALCH/USDT:USDT | +22.21% | $4,091,420.72 |
-| TROLLSOL/USDT:USDT | +19.01% | $5,282,832.75 |
-| OPG/USDT:USDT | +14.39% | $1,637,348.25 |
-| FOLKS/USDT:USDT | +13.10% | $1,490,500.73 |
+| US/USDT:USDT | +30.63% | $10,255,942.61 |
+| ALCH/USDT:USDT | +23.28% | $4,109,337.08 |
+| TROLLSOL/USDT:USDT | +17.56% | $5,290,269.91 |
+| OPG/USDT:USDT | +14.28% | $1,642,665.92 |
+| FOLKS/USDT:USDT | +13.03% | $1,507,434.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +4.73% | +4.78% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.36% | +1.41% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.26% | +1.31% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.12% | +1.17% |
-| SPX/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.45% | +3.43% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.95% | +1.94% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.36% | +1.35% |
+| SPX/USDT:USDT | below_1h_threshold | +1.17% | +1.16% |
 
 ## 5. 次に見るべき不足
 
