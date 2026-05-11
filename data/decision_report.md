@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T22:47:47.897416+00:00
+- generated_at: 2026-05-11T22:53:16.333823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4074**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T22:47:44.844173+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81781.0
-- Funnel: target 756 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-11T22:53:10.039908+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81860.4
+- Funnel: target 756 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PENGUIN/USDT:USDT | +25.44% | $2,841,411.85 |
-| GIGA/USDT:USDT | +18.43% | $1,366,396.54 |
-| USELESS/USDT:USDT | +14.45% | $3,567,000.90 |
-| SKYAI/USDT:USDT | +13.80% | $35,999,328.13 |
-| RIF/USDT:USDT | +12.90% | $1,339,243.49 |
+| PENGUIN/USDT:USDT | +24.17% | $2,851,519.95 |
+| GIGA/USDT:USDT | +18.38% | $1,368,856.14 |
+| USELESS/USDT:USDT | +15.00% | $3,597,472.34 |
+| RIF/USDT:USDT | +13.43% | $1,357,969.41 |
+| SKYAI/USDT:USDT | +12.85% | $36,102,153.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.87% | +3.87% |
-| DOGS/USDT:USDT | below_1h_threshold | +3.86% | +3.87% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +3.44% | +3.45% |
-| GIGA/USDT:USDT | below_1h_threshold | +2.95% | +2.96% |
-| H/USDT:USDT | below_1h_threshold | +2.37% | +2.38% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.95% | +2.86% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +2.72% | +2.63% |
+| NOT/USDT:USDT | below_1h_threshold | +2.42% | +2.33% |
+| H/USDT:USDT | below_1h_threshold | +2.31% | +2.22% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.13% | +2.04% |
 
 ## 5. 次に見るべき不足
 
