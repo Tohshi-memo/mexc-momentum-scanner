@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T17:17:55.580324+00:00
+- generated_at: 2026-05-11T17:22:51.234465+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4055**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T17:17:52.516363+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81630.6
+- 更新: 2026-05-11T17:22:48.187596+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81591.1
 - Funnel: target 762 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +10.04% | $2,227,058.32 |
-| USELESS/USDT:USDT | +7.08% | $1,227,736.21 |
-| B/USDT:USDT | +6.94% | $27,191,896.84 |
-| PENGUIN/USDT:USDT | +5.44% | $2,127,015.41 |
-| H/USDT:USDT | +5.05% | $3,401,161.76 |
+| ASTEROID/USDT:USDT | +9.98% | $2,236,931.35 |
+| USELESS/USDT:USDT | +6.50% | $1,245,134.61 |
+| B/USDT:USDT | +5.90% | $27,405,143.11 |
+| PENGUIN/USDT:USDT | +4.98% | $2,134,186.83 |
+| H/USDT:USDT | +4.39% | $3,462,148.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +2.95% | +2.83% |
-| AKT/USDT:USDT | below_1h_threshold | +2.03% | +1.91% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.66% | +1.53% |
-| TRUTH/USDT:USDT | below_1h_threshold | +1.55% | +1.42% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.27% |
+| AKT/USDT:USDT | below_1h_threshold | +2.53% | +2.46% |
+| B/USDT:USDT | below_1h_threshold | +2.13% | +2.05% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.07% | +2.00% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.06% | +1.99% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.97% | +1.89% |
 
 ## 5. 次に見るべき不足
 
