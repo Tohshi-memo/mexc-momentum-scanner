@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T16:03:05.704935+00:00
+- generated_at: 2026-05-11T16:07:46.035335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4053**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T16:03:02.905764+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=81355.1
+- 更新: 2026-05-11T16:07:43.006587+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=81486.4
 - Funnel: target 762 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +1.91% | $24,045,562.96 |
-| PENGUIN/USDT:USDT | +1.44% | $2,006,199.20 |
-| LAB/USDT:USDT | +0.90% | $104,899,227.25 |
-| INX/USDT:USDT | +0.84% | $2,864,829.04 |
-| CRCLSTOCK/USDT:USDT | +0.81% | $6,647,418.18 |
+| LYN/USDT:USDT | +4.25% | $1,118,873.51 |
+| PENGUIN/USDT:USDT | +3.94% | $2,019,100.53 |
+| BILL/USDT:USDT | +3.01% | $19,819,189.12 |
+| BSB/USDT:USDT | +2.56% | $3,621,688.42 |
+| B/USDT:USDT | +2.38% | $24,375,622.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +1.81% | +1.86% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
-| LAB/USDT:USDT | below_1h_threshold | +1.11% | +1.17% |
-| INX/USDT:USDT | below_1h_threshold | +0.85% | +0.91% |
-| BLUAI/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
+| LYN/USDT:USDT | below_1h_threshold | +4.39% | +4.29% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +3.94% | +3.84% |
+| BILL/USDT:USDT | below_1h_threshold | +2.90% | +2.80% |
+| BSB/USDT:USDT | below_1h_threshold | +2.56% | +2.46% |
+| B/USDT:USDT | below_1h_threshold | +2.47% | +2.37% |
 
 ## 5. 次に見るべき不足
 
