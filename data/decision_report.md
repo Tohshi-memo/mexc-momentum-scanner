@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T01:02:43.940905+00:00
+- generated_at: 2026-05-11T01:08:11.256830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4001**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T01:02:40.393956+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=81304.8
+- 更新: 2026-05-11T01:08:08.156710+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81394.8
 - Funnel: target 771 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +44.24% | $8,839,715.36 |
-| TROLLSOL/USDT:USDT | +20.94% | $5,253,844.83 |
-| ALCH/USDT:USDT | +19.09% | $3,771,549.99 |
-| B/USDT:USDT | +11.52% | $2,534,371.99 |
-| SAHARA/USDT:USDT | +10.25% | $1,970,590.70 |
+| US/USDT:USDT | +42.92% | $8,884,194.28 |
+| ALCH/USDT:USDT | +20.06% | $3,781,223.83 |
+| TROLLSOL/USDT:USDT | +16.41% | $5,290,242.83 |
+| B/USDT:USDT | +11.99% | $2,535,737.34 |
+| OG/USDT:USDT | +9.23% | $1,498,223.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGA/USDT:USDT | below_1h_threshold | +1.42% | +1.57% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.03% | +1.18% |
-| TRUTH/USDT:USDT | below_1h_threshold | +0.77% | +0.92% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.53% | +0.68% |
-| ALCH/USDT:USDT | below_1h_threshold | +0.43% | +0.58% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.24% | +2.28% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.92% | +1.96% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.24% | +1.29% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.92% | +0.96% |
 
 ## 5. 次に見るべき不足
 
