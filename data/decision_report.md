@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T01:47:49.275063+00:00
+- generated_at: 2026-05-11T01:52:43.169830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4001**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T01:47:45.762756+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=81418.7
-- Funnel: target 775 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.0 >= 65=1, 4h RSI 71.7 >= 65=1
+- 更新: 2026-05-11T01:52:39.899106+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=81446.3
+- Funnel: target 775 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +38.02% | $9,373,111.30 |
-| TROLLSOL/USDT:USDT | +23.40% | $5,422,070.96 |
-| ALCH/USDT:USDT | +21.65% | $3,841,485.77 |
-| B/USDT:USDT | +12.94% | $2,650,034.16 |
-| SAHARA/USDT:USDT | +10.83% | $2,036,492.56 |
+| US/USDT:USDT | +32.92% | $9,438,424.95 |
+| TROLLSOL/USDT:USDT | +24.86% | $5,426,911.78 |
+| ALCH/USDT:USDT | +21.97% | $3,850,207.81 |
+| B/USDT:USDT | +13.86% | $2,656,740.56 |
+| SAHARA/USDT:USDT | +9.95% | $2,040,992.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.34% | +3.35% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.58% | +2.60% |
-| VVV/USDT:USDT | below_1h_threshold | +1.67% | +1.68% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
-| XMR/USDT:USDT | below_1h_threshold | +1.24% | +1.25% |
+| BAS/USDT:USDT | below_1h_threshold | +4.82% | +4.80% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.46% | +3.43% |
+| ALCH/USDT:USDT | below_1h_threshold | +2.85% | +2.83% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +1.97% | +1.95% |
+| B/USDT:USDT | below_1h_threshold | +1.67% | +1.64% |
 
 ## 5. 次に見るべき不足
 
