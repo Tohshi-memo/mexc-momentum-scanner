@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-10T23:57:10.866301+00:00
+- generated_at: 2026-05-11T00:02:45.376748+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **3998**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-10T23:57:08.468871+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=82055.9
-- Funnel: target 770 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-11T00:02:42.440077+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=82157.6
+- Funnel: target 770 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +46.91% | $7,982,561.42 |
-| TROLLSOL/USDT:USDT | +26.29% | $4,953,570.98 |
-| ALCH/USDT:USDT | +21.54% | $3,619,474.97 |
-| B/USDT:USDT | +13.78% | $2,429,452.36 |
-| SAHARA/USDT:USDT | +9.87% | $2,066,560.91 |
+| US/USDT:USDT | +46.00% | $8,024,048.62 |
+| TROLLSOL/USDT:USDT | +26.60% | $4,962,662.14 |
+| ALCH/USDT:USDT | +20.91% | $3,629,389.43 |
+| B/USDT:USDT | +13.58% | $2,358,594.48 |
+| DEEP/USDT:USDT | +10.13% | $2,492,589.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.33% | +4.27% |
-| BRETT/USDT:USDT | below_1h_threshold | +1.97% | +1.92% |
-| CRO/USDT:USDT | below_1h_threshold | +1.72% | +1.66% |
-| UP/USDT:USDT | below_1h_threshold | +1.66% | +1.61% |
-| SPX/USDT:USDT | below_1h_threshold | +1.47% | +1.42% |
+| QTUM/USDT:USDT | below_1h_threshold | +3.45% | +3.48% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.72% | +2.75% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.56% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.73% |
+| UP/USDT:USDT | below_1h_threshold | +1.49% | +1.51% |
 
 ## 5. 次に見るべき不足
 
