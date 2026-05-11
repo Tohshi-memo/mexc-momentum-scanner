@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T12:57:58.498157+00:00
+- generated_at: 2026-05-11T13:03:06.676254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4030**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T12:57:55.249020+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=81050.0
-- Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-11T13:03:03.771645+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=81165.0
+- Funnel: target 762 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +39.74% | $14,088,891.23 |
-| PENGUIN/USDT:USDT | +32.82% | $1,530,985.71 |
-| B/USDT:USDT | +31.51% | $11,851,885.73 |
-| SAGA/USDT:USDT | +27.76% | $3,538,272.18 |
-| ESPORTS/USDT:USDT | +19.97% | $1,103,424.51 |
+| US/USDT:USDT | +39.70% | $14,102,464.90 |
+| PENGUIN/USDT:USDT | +38.52% | $1,551,149.54 |
+| B/USDT:USDT | +31.98% | $11,876,558.19 |
+| SAGA/USDT:USDT | +29.72% | $3,459,385.19 |
+| ESPORTS/USDT:USDT | +20.51% | $1,100,041.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +4.78% | +4.92% |
-| BILL/USDT:USDT | below_1h_threshold | +3.95% | +4.09% |
-| UB/USDT:USDT | below_1h_threshold | +3.51% | +3.65% |
-| SILVER/USDT:USDT | below_1h_threshold | +3.05% | +3.19% |
-| ICP/USDT:USDT | below_1h_threshold | +2.09% | +2.23% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +1.57% | +1.38% |
+| H/USDT:USDT | below_1h_threshold | +1.02% | +0.83% |
+| OPG/USDT:USDT | below_1h_threshold | +0.94% | +0.75% |
+| B/USDT:USDT | below_1h_threshold | +0.83% | +0.64% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.71% | +0.52% |
 
 ## 5. 次に見るべき不足
 
