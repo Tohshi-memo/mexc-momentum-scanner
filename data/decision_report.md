@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T11:52:29.543440+00:00
+- generated_at: 2026-05-11T11:57:47.335251+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4028**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T11:52:26.742755+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=81078.8
-- Funnel: target 762 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1
+- 更新: 2026-05-11T11:57:43.814738+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=81124.6
+- Funnel: target 762 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +39.34% | $13,509,723.45 |
-| PENGUIN/USDT:USDT | +39.18% | $1,138,521.94 |
-| B/USDT:USDT | +29.73% | $11,171,783.67 |
-| SAGA/USDT:USDT | +28.92% | $3,174,526.88 |
-| TROLLSOL/USDT:USDT | +21.53% | $4,546,908.30 |
+| US/USDT:USDT | +38.23% | $13,560,357.61 |
+| PENGUIN/USDT:USDT | +35.44% | $1,181,057.71 |
+| B/USDT:USDT | +29.14% | $11,229,551.50 |
+| SAGA/USDT:USDT | +27.54% | $3,220,441.37 |
+| TROLLSOL/USDT:USDT | +20.94% | $4,551,070.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.76% | +4.54% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +4.49% | +4.27% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +4.34% | +4.12% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +2.62% | +2.40% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.37% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.82% | +3.54% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +2.73% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.45% | +2.17% |
+| ARKM/USDT:USDT | below_1h_threshold | +2.16% | +1.88% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.08% | +1.80% |
 
 ## 5. 次に見るべき不足
 
