@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T03:32:41.954696+00:00
+- generated_at: 2026-05-11T03:37:50.704687+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4005**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T03:32:38.697455+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=80584.1
-- Funnel: target 775 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
+- 更新: 2026-05-11T03:37:47.362925+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.80% price=80486.3
+- Funnel: target 775 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +33.71% | $9,929,114.61 |
-| ALCH/USDT:USDT | +20.87% | $3,996,133.40 |
-| TROLLSOL/USDT:USDT | +16.24% | $5,346,086.35 |
-| OPG/USDT:USDT | +12.00% | $1,535,466.48 |
-| FOLKS/USDT:USDT | +10.49% | $1,243,799.61 |
+| US/USDT:USDT | +33.61% | $9,940,807.77 |
+| ALCH/USDT:USDT | +20.54% | $4,009,354.09 |
+| TROLLSOL/USDT:USDT | +13.65% | $5,355,596.16 |
+| FOLKS/USDT:USDT | +12.16% | $1,261,708.64 |
+| OPG/USDT:USDT | +11.37% | $1,547,871.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +3.17% | +3.85% |
-| US/USDT:USDT | below_1h_threshold | +1.99% | +2.67% |
-| SAHARA/USDT:USDT | below_1h_threshold | +0.30% | +0.98% |
-| VVV/USDT:USDT | below_1h_threshold | +0.25% | +0.94% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.20% | +0.88% |
+| US/USDT:USDT | below_1h_threshold | +1.97% | +2.77% |
+| BAS/USDT:USDT | below_1h_threshold | +1.66% | +2.46% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.07% | +1.87% |
+| OG/USDT:USDT | below_1h_threshold | +0.70% | +1.50% |
+| KITE/USDT:USDT | below_1h_threshold | +0.34% | +1.14% |
 
 ## 5. 次に見るべき不足
 
