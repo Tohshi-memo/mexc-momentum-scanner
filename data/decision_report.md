@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T15:38:58.087570+00:00
+- generated_at: 2026-05-11T15:42:31.627554+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4050**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T15:38:54.814368+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=81196.7
+- 更新: 2026-05-11T15:42:29.202938+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=81192.1
 - Funnel: target 762 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +54.25% | $22,982,959.58 |
-| TROLLSOL/USDT:USDT | +43.43% | $5,013,017.81 |
-| US/USDT:USDT | +30.02% | $15,224,504.18 |
-| SAGA/USDT:USDT | +28.07% | $4,795,878.92 |
-| PENGUIN/USDT:USDT | +23.79% | $1,944,168.06 |
+| B/USDT:USDT | +55.51% | $23,072,439.77 |
+| TROLLSOL/USDT:USDT | +43.80% | $5,021,448.93 |
+| US/USDT:USDT | +31.26% | $15,239,905.75 |
+| SAGA/USDT:USDT | +28.02% | $4,804,737.83 |
+| PENGUIN/USDT:USDT | +25.47% | $1,951,247.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPG/USDT:USDT | below_1h_threshold | +4.19% | +3.85% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.19% | +3.84% |
-| TESLA/USDT:USDT | below_1h_threshold | +3.63% | +3.29% |
-| CRV/USDT:USDT | below_1h_threshold | +3.20% | +2.85% |
-| AKT/USDT:USDT | below_1h_threshold | +2.89% | +2.54% |
+| OPG/USDT:USDT | below_1h_threshold | +4.58% | +4.24% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.23% | +3.89% |
+| TESLA/USDT:USDT | below_1h_threshold | +4.19% | +3.85% |
+| CRV/USDT:USDT | below_1h_threshold | +2.75% | +2.40% |
+| AKT/USDT:USDT | below_1h_threshold | +2.70% | +2.36% |
 
 ## 5. 次に見るべき不足
 
