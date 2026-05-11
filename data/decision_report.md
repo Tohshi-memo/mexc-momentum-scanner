@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T23:12:58.735626+00:00
+- generated_at: 2026-05-11T23:17:48.798573+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4074**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T23:12:55.700263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=81653.8
-- Funnel: target 757 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-11T23:17:45.398675+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=81681.6
+- Funnel: target 757 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PENGUIN/USDT:USDT | +28.15% | $2,893,517.81 |
-| GIGA/USDT:USDT | +16.10% | $1,019,540.56 |
-| USELESS/USDT:USDT | +15.06% | $3,598,050.47 |
-| RIF/USDT:USDT | +13.22% | $1,406,944.80 |
-| SKYAI/USDT:USDT | +12.65% | $35,914,292.89 |
+| PENGUIN/USDT:USDT | +31.87% | $2,927,875.98 |
+| GIGA/USDT:USDT | +16.42% | $1,021,808.60 |
+| USELESS/USDT:USDT | +14.90% | $3,605,514.87 |
+| RIF/USDT:USDT | +13.79% | $1,412,923.17 |
+| B/USDT:USDT | +11.44% | $39,242,921.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_1h_threshold | +2.68% | +2.84% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +0.71% | +0.88% |
-| UP/USDT:USDT | below_1h_threshold | +0.60% | +0.76% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.54% | +0.70% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +0.48% | +0.64% |
+| SEI/USDT:USDT | below_1h_threshold | +1.07% | +1.20% |
+| UP/USDT:USDT | below_1h_threshold | +0.60% | +0.73% |
+| STX/USDT:USDT | below_1h_threshold | +0.37% | +0.50% |
+| RIF/USDT:USDT | below_1h_threshold | +0.35% | +0.48% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +0.31% | +0.44% |
 
 ## 5. 次に見るべき不足
 
