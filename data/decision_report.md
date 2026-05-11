@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T09:08:07.618191+00:00
+- generated_at: 2026-05-11T09:12:47.409949+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4023**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T09:08:04.701208+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=80802.4
-- Funnel: target 760 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-11T09:12:44.451309+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80864.9
+- Funnel: target 760 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +38.63% | $11,911,652.83 |
-| B/USDT:USDT | +29.84% | $8,301,956.26 |
-| TROLLSOL/USDT:USDT | +17.30% | $4,704,354.08 |
-| ALCH/USDT:USDT | +17.11% | $4,650,229.45 |
-| SAGA/USDT:USDT | +16.08% | $1,996,110.84 |
+| US/USDT:USDT | +39.11% | $11,938,676.04 |
+| B/USDT:USDT | +29.89% | $8,379,999.17 |
+| TROLLSOL/USDT:USDT | +17.37% | $4,708,263.01 |
+| VVV/USDT:USDT | +16.75% | $15,551,676.73 |
+| ALCH/USDT:USDT | +16.74% | $4,661,057.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.94% | +3.85% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.39% |
-| UB/USDT:USDT | below_1h_threshold | +1.34% | +1.25% |
-| OPG/USDT:USDT | below_1h_threshold | +0.96% | +0.87% |
-| ORCA/USDT:USDT | below_1h_threshold | +0.89% | +0.80% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.62% | +4.45% |
+| B/USDT:USDT | below_1h_threshold | +3.87% | +3.70% |
+| UB/USDT:USDT | below_1h_threshold | +2.34% | +2.17% |
+| BILL/USDT:USDT | below_1h_threshold | +2.26% | +2.09% |
+| XNY/USDT:USDT | below_1h_threshold | +1.80% | +1.63% |
 
 ## 5. 次に見るべき不足
 
