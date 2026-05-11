@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T12:37:50.000373+00:00
+- generated_at: 2026-05-11T12:42:17.394523+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4030**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T12:37:46.558788+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=81248.8
-- Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-11T12:42:15.000985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81186.2
+- Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +40.33% | $13,951,676.22 |
-| PENGUIN/USDT:USDT | +40.07% | $1,422,026.93 |
-| SAGA/USDT:USDT | +32.74% | $3,405,392.31 |
-| B/USDT:USDT | +31.70% | $11,676,460.03 |
-| VVV/USDT:USDT | +20.21% | $21,339,424.89 |
+| US/USDT:USDT | +40.02% | $13,968,515.95 |
+| PENGUIN/USDT:USDT | +39.16% | $1,447,059.22 |
+| B/USDT:USDT | +31.40% | $11,738,293.46 |
+| SAGA/USDT:USDT | +29.08% | $3,442,650.77 |
+| TROLLSOL/USDT:USDT | +19.96% | $4,452,848.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.57% | +4.46% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.52% | +3.42% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.46% | +3.35% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.84% | +2.73% |
-| SILVER/USDT:USDT | below_1h_threshold | +2.27% | +2.17% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +4.93% | +4.90% |
+| UB/USDT:USDT | below_1h_threshold | +4.32% | +4.30% |
+| TRUTH/USDT:USDT | below_1h_threshold | +3.89% | +3.87% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.82% | +3.79% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
 
 ## 5. 次に見るべき不足
 
