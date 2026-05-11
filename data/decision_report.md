@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T14:33:03.719606+00:00
+- generated_at: 2026-05-11T14:38:17.856179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4041**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T14:32:59.172369+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=80593.0
+- 更新: 2026-05-11T14:38:13.980813+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=80714.7
 - Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 4 → strict 0
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 84.9 >= 65=1, 4h RSI 82.7 >= 65=1, 4h RSI 71.7 >= 65=1
+- Strict後reject: 4h RSI 75.7 >= 65=1, 4h RSI 85.6 >= 65=1, 4h RSI 83.0 >= 65=1, 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +69.48% | $17,431,414.18 |
-| TROLLSOL/USDT:USDT | +48.89% | $4,715,560.79 |
-| US/USDT:USDT | +37.39% | $14,785,411.66 |
-| PENGUIN/USDT:USDT | +35.57% | $1,843,459.02 |
-| SAGA/USDT:USDT | +33.12% | $3,996,291.38 |
+| B/USDT:USDT | +64.28% | $18,398,623.32 |
+| TROLLSOL/USDT:USDT | +52.52% | $4,761,368.72 |
+| PENGUIN/USDT:USDT | +36.13% | $1,854,413.67 |
+| US/USDT:USDT | +35.04% | $14,847,707.67 |
+| SAGA/USDT:USDT | +34.07% | $4,057,768.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PARTI/USDT:USDT | below_1h_threshold | +2.25% | +2.80% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.94% | +2.49% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.25% | +1.79% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.75% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.63% |
+| TRUTH/USDT:USDT | below_1h_threshold | +3.19% | +3.58% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.72% | +3.11% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.75% |
+| BILL/USDT:USDT | below_1h_threshold | +2.14% | +2.53% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.23% |
 
 ## 5. 次に見るべき不足
 
