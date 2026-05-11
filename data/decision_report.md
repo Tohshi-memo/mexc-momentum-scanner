@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T19:27:58.057787+00:00
+- generated_at: 2026-05-11T19:32:57.017229+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4066**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T19:27:54.984057+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81876.6
-- Funnel: target 757 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-11T19:32:53.647672+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81866.5
+- Funnel: target 757 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +24.83% | $137,311,820.32 |
-| USELESS/USDT:USDT | +19.63% | $1,959,075.79 |
-| SKYAI/USDT:USDT | +15.39% | $33,438,493.82 |
-| B/USDT:USDT | +13.32% | $31,847,755.15 |
-| ASTEROID/USDT:USDT | +12.65% | $2,665,603.46 |
+| LAB/USDT:USDT | +22.51% | $138,720,237.17 |
+| USELESS/USDT:USDT | +15.75% | $2,170,121.68 |
+| SAGA/USDT:USDT | +13.27% | $5,538,857.19 |
+| B/USDT:USDT | +13.13% | $31,893,266.47 |
+| SKYAI/USDT:USDT | +12.51% | $33,548,068.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.51% | +4.44% |
-| ZBT/USDT:USDT | below_1h_threshold | +4.39% | +4.32% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.16% | +3.08% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.68% | +2.61% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.66% | +2.59% |
+| ZBT/USDT:USDT | below_1h_threshold | +4.12% | +4.06% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.38% | +3.32% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.82% | +2.77% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.75% | +2.70% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.50% | +2.44% |
 
 ## 5. 次に見るべき不足
 
