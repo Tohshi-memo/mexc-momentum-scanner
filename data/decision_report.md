@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T13:03:06.676254+00:00
+- generated_at: 2026-05-11T13:08:03.454740+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4030**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T13:03:03.771645+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=81165.0
+- 更新: 2026-05-11T13:08:00.610868+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=81207.9
 - Funnel: target 762 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +39.70% | $14,102,464.90 |
-| PENGUIN/USDT:USDT | +38.52% | $1,551,149.54 |
-| B/USDT:USDT | +31.98% | $11,876,558.19 |
-| SAGA/USDT:USDT | +29.72% | $3,459,385.19 |
-| ESPORTS/USDT:USDT | +20.51% | $1,100,041.96 |
+| US/USDT:USDT | +39.41% | $14,123,478.60 |
+| PENGUIN/USDT:USDT | +36.81% | $1,578,260.24 |
+| B/USDT:USDT | +31.65% | $11,893,727.75 |
+| SAGA/USDT:USDT | +30.09% | $3,491,798.91 |
+| ESPORTS/USDT:USDT | +19.83% | $1,126,378.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_1h_threshold | +1.57% | +1.38% |
-| H/USDT:USDT | below_1h_threshold | +1.02% | +0.83% |
-| OPG/USDT:USDT | below_1h_threshold | +0.94% | +0.75% |
-| B/USDT:USDT | below_1h_threshold | +0.83% | +0.64% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.71% | +0.52% |
+| UB/USDT:USDT | below_1h_threshold | +1.54% | +1.31% |
+| OPG/USDT:USDT | below_1h_threshold | +1.26% | +1.02% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.10% | +0.86% |
+| BASED/USDT:USDT | below_1h_threshold | +1.06% | +0.82% |
+| LDO/USDT:USDT | below_1h_threshold | +1.05% | +0.81% |
 
 ## 5. 次に見るべき不足
 
