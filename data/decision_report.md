@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T16:28:19.428105+00:00
+- generated_at: 2026-05-11T16:33:01.675365+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4054**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T16:28:13.662236+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=81771.8
-- Funnel: target 762 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-11T16:32:55.729883+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.50% price=81806.0
+- Funnel: target 762 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +12.33% | $1,865,876.54 |
-| B/USDT:USDT | +4.57% | $25,215,345.90 |
-| GIGA/USDT:USDT | +2.84% | $1,183,594.25 |
-| CRCLSTOCK/USDT:USDT | +2.79% | $7,068,042.74 |
-| PENGUIN/USDT:USDT | +2.29% | $2,053,443.41 |
+| ASTEROID/USDT:USDT | +12.39% | $1,919,013.44 |
+| USELESS/USDT:USDT | +4.76% | $1,013,524.92 |
+| B/USDT:USDT | +3.61% | $25,435,864.20 |
+| CRCLSTOCK/USDT:USDT | +3.13% | $7,260,523.92 |
+| PENGUIN/USDT:USDT | +2.56% | $2,058,593.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +4.66% | +4.21% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.96% | +2.50% |
-| GIGA/USDT:USDT | below_1h_threshold | +2.87% | +2.42% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +2.30% | +1.84% |
-| LAYER/USDT:USDT | below_1h_threshold | +2.03% | +1.58% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.64% | +4.15% |
+| B/USDT:USDT | below_1h_threshold | +3.72% | +3.22% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.13% | +2.64% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +2.57% | +2.07% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.38% | +1.88% |
 
 ## 5. 次に見るべき不足
 
