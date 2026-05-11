@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T20:47:58.324838+00:00
+- generated_at: 2026-05-11T20:52:54.806958+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4069**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T20:47:54.712661+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=81805.2
+- 更新: 2026-05-11T20:52:51.513089+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=81836.0
 - Funnel: target 757 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 69.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +17.29% | $2,764,314.17 |
-| PENGUIN/USDT:USDT | +15.13% | $2,338,141.32 |
-| SKYAI/USDT:USDT | +13.78% | $35,219,672.92 |
-| B/USDT:USDT | +11.37% | $35,413,389.10 |
-| SAGA/USDT:USDT | +11.03% | $6,074,611.71 |
+| USELESS/USDT:USDT | +17.99% | $2,826,255.81 |
+| PENGUIN/USDT:USDT | +15.46% | $2,351,608.10 |
+| SKYAI/USDT:USDT | +14.10% | $35,285,211.42 |
+| ASTEROID/USDT:USDT | +11.17% | $2,832,315.48 |
+| SAGA/USDT:USDT | +11.11% | $6,090,316.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +2.71% | +2.85% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.52% | +2.66% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.28% | +2.41% |
-| AKT/USDT:USDT | below_1h_threshold | +2.18% | +2.32% |
-| H/USDT:USDT | below_1h_threshold | +2.12% | +2.26% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.81% | +3.91% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.94% | +3.04% |
+| H/USDT:USDT | below_1h_threshold | +2.74% | +2.84% |
+| RIF/USDT:USDT | below_1h_threshold | +2.65% | +2.75% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.23% | +2.33% |
 
 ## 5. 次に見るべき不足
 
