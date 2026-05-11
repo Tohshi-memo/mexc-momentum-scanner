@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T21:52:50.477128+00:00
+- generated_at: 2026-05-11T21:57:48.841637+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4072**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T21:52:47.374090+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81752.2
+- 更新: 2026-05-11T21:57:45.790115+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81800.1
 - Funnel: target 756 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PENGUIN/USDT:USDT | +21.10% | $2,696,452.11 |
-| USELESS/USDT:USDT | +17.14% | $3,217,419.75 |
-| SKYAI/USDT:USDT | +16.25% | $35,659,715.43 |
-| GIGA/USDT:USDT | +15.32% | $1,299,123.50 |
-| SAGA/USDT:USDT | +11.98% | $6,285,508.60 |
+| PENGUIN/USDT:USDT | +21.03% | $2,710,754.48 |
+| USELESS/USDT:USDT | +16.34% | $3,265,086.28 |
+| SKYAI/USDT:USDT | +15.97% | $35,686,857.03 |
+| GIGA/USDT:USDT | +14.80% | $1,301,272.65 |
+| RIF/USDT:USDT | +12.49% | $1,208,802.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_1h_threshold | +4.47% | +4.50% |
-| LAB/USDT:USDT | below_1h_threshold | +3.60% | +3.64% |
-| GIGA/USDT:USDT | below_1h_threshold | +2.65% | +2.68% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.63% | +2.66% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.57% | +2.60% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +4.47% | +4.44% |
+| LAB/USDT:USDT | below_1h_threshold | +2.82% | +2.80% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.68% | +2.66% |
+| RIF/USDT:USDT | below_1h_threshold | +2.35% | +2.32% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.18% | +2.16% |
 
 ## 5. 次に見るべき不足
 
