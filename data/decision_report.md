@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T18:33:21.471411+00:00
+- generated_at: 2026-05-11T18:37:37.182329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4060**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T18:33:13.412673+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=82077.7
-- Funnel: target 758 → liquid 193 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 84.6 >= 65=1
+- 更新: 2026-05-11T18:37:31.218261+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81969.2
+- Funnel: target 758 → liquid 193 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +16.98% | $28,557,026.17 |
-| USELESS/USDT:USDT | +14.38% | $1,544,718.54 |
-| B/USDT:USDT | +13.14% | $30,360,323.86 |
-| ASTEROID/USDT:USDT | +12.07% | $2,613,867.70 |
-| PENGUIN/USDT:USDT | +9.83% | $2,209,070.64 |
+| SKYAI/USDT:USDT | +17.74% | $29,232,109.36 |
+| USELESS/USDT:USDT | +14.78% | $1,567,355.70 |
+| B/USDT:USDT | +12.25% | $30,610,869.92 |
+| ASTEROID/USDT:USDT | +11.43% | $2,623,916.66 |
+| PENGUIN/USDT:USDT | +10.47% | $2,212,046.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_relative_strength | +5.03% | +4.80% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.34% | +4.11% |
-| BASED/USDT:USDT | below_1h_threshold | +3.92% | +3.69% |
-| XNY/USDT:USDT | below_1h_threshold | +3.53% | +3.31% |
-| VVV/USDT:USDT | below_1h_threshold | +3.47% | +3.25% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.70% | +4.60% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.63% | +4.54% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.50% | +4.41% |
+| XNY/USDT:USDT | below_1h_threshold | +4.31% | +4.22% |
+| B/USDT:USDT | below_1h_threshold | +4.26% | +4.17% |
 
 ## 5. 次に見るべき不足
 
