@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T08:51:38.943027+00:00
+- generated_at: 2026-05-11T08:54:32.034813+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4020**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T08:51:33.184925+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=80796.9
-- Funnel: target 760 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-05-11T08:54:26.487016+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=80797.9
+- Funnel: target 760 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +38.44% | $11,795,027.10 |
-| B/USDT:USDT | +25.02% | $8,119,489.31 |
-| VVV/USDT:USDT | +20.20% | $13,781,370.11 |
-| SAGA/USDT:USDT | +18.09% | $1,978,080.65 |
-| ALCH/USDT:USDT | +17.59% | $4,632,502.73 |
+| US/USDT:USDT | +38.36% | $11,820,409.32 |
+| B/USDT:USDT | +25.25% | $8,130,114.37 |
+| VVV/USDT:USDT | +20.77% | $13,942,039.83 |
+| SAGA/USDT:USDT | +17.78% | $1,985,930.73 |
+| ALCH/USDT:USDT | +17.29% | $4,632,827.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUTH/USDT:USDT | below_1h_threshold | +3.00% | +2.89% |
-| UB/USDT:USDT | below_1h_threshold | +2.36% | +2.25% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.81% | +1.70% |
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +1.78% | +1.67% |
-| VVV/USDT:USDT | below_1h_threshold | +1.49% | +1.38% |
+| UB/USDT:USDT | below_1h_threshold | +3.93% | +3.82% |
+| TRUTH/USDT:USDT | below_1h_threshold | +3.63% | +3.52% |
+| H/USDT:USDT | below_1h_threshold | +2.98% | +2.87% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
+| VVV/USDT:USDT | below_1h_threshold | +1.98% | +1.87% |
 
 ## 5. 次に見るべき不足
 
