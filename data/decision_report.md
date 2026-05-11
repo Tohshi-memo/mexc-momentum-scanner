@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T01:37:52.783544+00:00
+- generated_at: 2026-05-11T01:42:43.434160+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4001**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T01:37:47.068803+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=81470.2
-- Funnel: target 775 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-05-11T01:42:38.058835+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81502.5
+- Funnel: target 775 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1
+- Strict後reject: 4h RSI 71.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +34.34% | $9,307,015.67 |
-| TROLLSOL/USDT:USDT | +26.69% | $5,390,753.12 |
-| ALCH/USDT:USDT | +20.12% | $3,821,945.68 |
-| B/USDT:USDT | +12.11% | $2,588,640.83 |
-| SUI/USDT:USDT | +10.11% | $806,301,132.82 |
+| US/USDT:USDT | +36.11% | $9,339,732.42 |
+| TROLLSOL/USDT:USDT | +25.54% | $5,407,785.13 |
+| ALCH/USDT:USDT | +20.92% | $3,824,123.86 |
+| B/USDT:USDT | +12.41% | $2,595,712.09 |
+| SAHARA/USDT:USDT | +10.28% | $2,033,460.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +3.97% | +3.92% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +3.18% | +3.13% |
-| TRUTH/USDT:USDT | below_1h_threshold | +1.76% | +1.71% |
-| XMR/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.30% | +1.25% |
+| BAS/USDT:USDT | below_1h_threshold | +4.86% | +4.77% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.41% | +2.32% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.98% | +1.89% |
+| VVV/USDT:USDT | below_1h_threshold | +1.44% | +1.35% |
+| CRO/USDT:USDT | below_1h_threshold | +1.07% | +0.98% |
 
 ## 5. 次に見るべき不足
 
