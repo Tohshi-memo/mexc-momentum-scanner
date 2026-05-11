@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T04:42:45.830152+00:00
+- generated_at: 2026-05-11T04:47:41.701613+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4008**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T04:42:42.860931+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=80770.2
-- Funnel: target 775 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-11T04:47:38.534059+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=80782.4
+- Funnel: target 775 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +32.77% | $10,302,304.55 |
-| TROLLSOL/USDT:USDT | +19.24% | $5,304,467.43 |
-| ALCH/USDT:USDT | +16.91% | $4,365,356.60 |
-| OPG/USDT:USDT | +15.68% | $1,679,681.23 |
-| FOLKS/USDT:USDT | +13.32% | $1,543,371.57 |
+| US/USDT:USDT | +29.34% | $10,340,923.94 |
+| TROLLSOL/USDT:USDT | +20.18% | $5,319,385.30 |
+| ALCH/USDT:USDT | +17.54% | $4,395,026.89 |
+| OPG/USDT:USDT | +15.68% | $1,687,922.14 |
+| FOLKS/USDT:USDT | +14.12% | $1,563,933.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_relative_strength | +5.00% | +4.91% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.25% | +3.16% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.29% | +2.20% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.95% | +1.86% |
-| ROBO/USDT:USDT | below_1h_threshold | +1.92% | +1.83% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.69% | +3.58% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +3.06% | +2.96% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.08% | +1.97% |
+| OPG/USDT:USDT | below_1h_threshold | +1.73% | +1.62% |
+| BRETT/USDT:USDT | below_1h_threshold | +1.57% | +1.46% |
 
 ## 5. 次に見るべき不足
 
