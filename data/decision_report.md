@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-11T02:38:06.033263+00:00
+- generated_at: 2026-05-11T02:42:42.871525+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4004**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T02:38:03.018096+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=81163.0
+- 更新: 2026-05-11T02:42:39.812570+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=81148.2
 - Funnel: target 775 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +30.56% | $9,725,056.82 |
-| ALCH/USDT:USDT | +19.42% | $3,908,545.76 |
-| TROLLSOL/USDT:USDT | +18.05% | $5,410,947.32 |
-| OPG/USDT:USDT | +13.05% | $1,227,138.60 |
-| B/USDT:USDT | +10.41% | $2,796,007.88 |
+| US/USDT:USDT | +30.29% | $9,751,539.66 |
+| ALCH/USDT:USDT | +19.69% | $3,910,877.53 |
+| TROLLSOL/USDT:USDT | +15.59% | $5,419,197.79 |
+| OPG/USDT:USDT | +14.67% | $1,258,541.23 |
+| B/USDT:USDT | +10.69% | $2,822,186.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPG/USDT:USDT | below_1h_threshold | +2.94% | +3.31% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.44% | +2.81% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.88% | +2.25% |
-| BAS/USDT:USDT | below_1h_threshold | +1.25% | +1.62% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.94% | +1.31% |
+| OPG/USDT:USDT | below_1h_threshold | +4.31% | +4.70% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.14% | +3.53% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +2.36% |
+| BAS/USDT:USDT | below_1h_threshold | +0.83% | +1.22% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.77% | +1.15% |
 
 ## 5. 次に見るべき不足
 
