@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-11T14:07:49.987376+00:00
+- generated_at: 2026-05-11T14:12:48.491773+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4035**
+- closed shadow trades: **4036**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4035, expectancy=-0.12%
+- 全期間 MARKET基準: n=4036, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-0.74%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$107.86** / 初期 $100.00 (+7.86%)
-- 確定: 218件 (Win 54 / Loss 76 / Flat 88) / skip 378件
+- 確定: 218件 (Win 54 / Loss 76 / Flat 88) / skip 379件
 - 成長率目線: 平均log +0.000347 / 幾何平均 +0.035% per trade / maxDD +4.09%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: B/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $107.86
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-11T14:07:46.667225+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=81171.8
-- Funnel: target 762 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-11T14:12:45.042503+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81105.1
+- Funnel: target 762 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.1 >= 65=1
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +39.14% | $4,444,529.81 |
-| US/USDT:USDT | +38.44% | $14,507,234.36 |
-| PENGUIN/USDT:USDT | +31.95% | $1,768,926.19 |
-| B/USDT:USDT | +28.67% | $13,393,783.05 |
-| SAGA/USDT:USDT | +25.53% | $3,726,221.18 |
+| US/USDT:USDT | +41.00% | $14,581,208.65 |
+| TROLLSOL/USDT:USDT | +40.55% | $4,472,091.08 |
+| PENGUIN/USDT:USDT | +33.30% | $1,783,496.84 |
+| B/USDT:USDT | +32.60% | $13,669,926.46 |
+| SAGA/USDT:USDT | +26.43% | $3,755,025.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_1h_threshold | +2.47% | +2.30% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +1.92% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.78% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.94% | +1.77% |
-| H/USDT:USDT | below_1h_threshold | +1.51% | +1.34% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +3.34% | +3.25% |
+| US/USDT:USDT | below_1h_threshold | +2.50% | +2.42% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.38% | +2.29% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.62% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.46% |
 
 ## 5. 次に見るべき不足
 
