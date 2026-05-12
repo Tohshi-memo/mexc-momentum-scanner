@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T17:07:55.014234+00:00
+- generated_at: 2026-05-12T17:13:13.037453+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4149**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T17:07:51.323473+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80096.0
-- Funnel: target 763 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-12T17:13:09.941129+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=80132.4
+- Funnel: target 763 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +17.03% | $3,116,171.74 |
-| IRYS/USDT:USDT | +6.34% | $2,043,018.31 |
-| COAI/USDT:USDT | +4.95% | $1,107,146.45 |
-| GUA/USDT:USDT | +3.80% | $4,110,369.52 |
-| AKT/USDT:USDT | +3.71% | $2,421,875.02 |
+| VIC/USDT:USDT | +18.34% | $3,267,085.43 |
+| IRYS/USDT:USDT | +6.13% | $2,048,595.34 |
+| LAB/USDT:USDT | +5.22% | $168,848,019.71 |
+| COAI/USDT:USDT | +4.73% | $1,110,237.03 |
+| ESPORTS/USDT:USDT | +4.02% | $3,925,612.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +4.30% | +4.14% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.84% | +3.68% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.19% | +2.03% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +1.81% |
-| UB/USDT:USDT | below_1h_threshold | +1.50% | +1.34% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.12% | +2.92% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.94% | +2.73% |
+| LAB/USDT:USDT | below_1h_threshold | +1.85% | +1.65% |
+| UB/USDT:USDT | below_1h_threshold | +1.76% | +1.55% |
+| KITE/USDT:USDT | below_1h_threshold | +1.74% | +1.53% |
 
 ## 5. 次に見るべき不足
 
