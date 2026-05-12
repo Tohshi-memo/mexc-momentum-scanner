@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T04:18:34.322674+00:00
+- generated_at: 2026-05-12T04:22:49.635920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4094**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T04:18:31.171408+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81100.5
+- 更新: 2026-05-12T04:22:46.310925+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=81141.0
 - Funnel: target 761 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +46.42% | $2,412,831.97 |
-| SKYAI/USDT:USDT | +37.33% | $41,370,040.66 |
-| SAGA/USDT:USDT | +22.35% | $7,702,427.73 |
-| GUA/USDT:USDT | +21.19% | $1,291,213.30 |
-| USELESS/USDT:USDT | +21.15% | $4,626,508.36 |
+| GIGA/USDT:USDT | +45.97% | $2,425,149.69 |
+| SKYAI/USDT:USDT | +38.79% | $41,562,682.72 |
+| SAGA/USDT:USDT | +23.26% | $7,733,713.73 |
+| USELESS/USDT:USDT | +21.93% | $4,635,003.20 |
+| GUA/USDT:USDT | +21.69% | $1,310,059.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +2.55% | +2.46% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.20% | +2.11% |
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
-| BASED/USDT:USDT | below_1h_threshold | +2.16% | +2.07% |
-| GUA/USDT:USDT | below_1h_threshold | +1.65% | +1.56% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.38% | +3.24% |
+| GUA/USDT:USDT | below_1h_threshold | +2.34% | +2.20% |
+| JELLYJELLY/USDT:USDT | below_1h_threshold | +2.14% | +2.00% |
+| H/USDT:USDT | below_1h_threshold | +1.98% | +1.84% |
+| BASED/USDT:USDT | below_1h_threshold | +1.97% | +1.83% |
 
 ## 5. 次に見るべき不足
 
