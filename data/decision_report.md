@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T04:42:48.600761+00:00
+- generated_at: 2026-05-12T04:48:03.483081+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4095**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T04:42:45.138571+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=81241.1
-- Funnel: target 761 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-12T04:48:00.273398+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=81257.7
+- Funnel: target 761 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +45.03% | $2,492,713.03 |
-| SKYAI/USDT:USDT | +37.32% | $41,907,333.17 |
-| SAGA/USDT:USDT | +28.57% | $7,931,451.17 |
-| GUA/USDT:USDT | +24.88% | $1,436,523.73 |
-| USELESS/USDT:USDT | +21.44% | $4,826,991.66 |
+| GIGA/USDT:USDT | +47.51% | $2,499,745.08 |
+| SKYAI/USDT:USDT | +35.02% | $42,056,866.54 |
+| SAGA/USDT:USDT | +27.33% | $7,963,187.15 |
+| GUA/USDT:USDT | +23.97% | $1,459,542.27 |
+| USELESS/USDT:USDT | +22.61% | $4,844,593.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +4.79% | +4.52% |
-| H/USDT:USDT | below_1h_threshold | +4.38% | +4.12% |
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +3.48% | +3.22% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.35% | +3.09% |
-| COLLECT/USDT:USDT | below_1h_threshold | +3.17% | +2.90% |
+| SAGA/USDT:USDT | below_relative_strength | +5.22% | +4.93% |
+| H/USDT:USDT | below_relative_strength | +5.16% | +4.88% |
+| COLLECT/USDT:USDT | below_1h_threshold | +4.27% | +3.99% |
+| GUA/USDT:USDT | below_1h_threshold | +4.02% | +3.74% |
+| JELLYJELLY/USDT:USDT | below_1h_threshold | +3.66% | +3.38% |
 
 ## 5. 次に見るべき不足
 
