@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T19:13:25.396143+00:00
+- generated_at: 2026-05-12T19:18:18.684174+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4155**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T19:13:21.868323+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80769.9
+- 更新: 2026-05-12T19:18:15.633320+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=80741.6
 - Funnel: target 758 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +26.33% | $4,880,798.10 |
-| IRYS/USDT:USDT | +10.71% | $2,119,078.42 |
-| LAB/USDT:USDT | +9.69% | $154,374,934.70 |
-| PEAQ/USDT:USDT | +9.08% | $1,785,557.96 |
-| EDU/USDT:USDT | +8.11% | $3,579,653.32 |
+| VIC/USDT:USDT | +24.52% | $4,937,997.13 |
+| PEAQ/USDT:USDT | +10.46% | $1,789,630.47 |
+| LAB/USDT:USDT | +9.27% | $154,898,064.15 |
+| IRYS/USDT:USDT | +8.98% | $2,138,303.29 |
+| SAHARA/USDT:USDT | +7.50% | $5,192,122.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +2.92% | +2.76% |
-| SATO/USDT:USDT | below_1h_threshold | +2.28% | +2.12% |
-| EDU/USDT:USDT | below_1h_threshold | +1.96% | +1.80% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.73% |
-| LAB/USDT:USDT | below_1h_threshold | +1.55% | +1.40% |
+| PEAQ/USDT:USDT | below_1h_threshold | +4.22% | +4.09% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.22% | +3.09% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.50% |
+| TIA/USDT:USDT | below_1h_threshold | +1.58% | +1.46% |
+| SATO/USDT:USDT | below_1h_threshold | +1.57% | +1.45% |
 
 ## 5. 次に見るべき不足
 
