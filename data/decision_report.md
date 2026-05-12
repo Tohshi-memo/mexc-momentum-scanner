@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T18:07:56.653518+00:00
+- generated_at: 2026-05-12T18:13:43.138280+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4152**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T18:07:53.438647+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=80473.6
+- 更新: 2026-05-12T18:13:39.958234+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80466.7
 - Funnel: target 759 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +15.28% | $3,983,522.76 |
-| IRYS/USDT:USDT | +7.45% | $2,070,307.54 |
-| SAGA/USDT:USDT | +7.02% | $45,079,653.69 |
-| DYM/USDT:USDT | +6.31% | $1,545,116.73 |
-| LAB/USDT:USDT | +4.83% | $169,772,204.91 |
+| VIC/USDT:USDT | +18.49% | $4,045,351.99 |
+| IRYS/USDT:USDT | +7.84% | $2,077,645.68 |
+| SAGA/USDT:USDT | +5.42% | $45,294,964.78 |
+| LAB/USDT:USDT | +4.64% | $170,023,328.50 |
+| PEAQ/USDT:USDT | +4.37% | $1,740,417.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYM/USDT:USDT | below_1h_threshold | +2.47% | +2.49% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +1.83% | +1.86% |
-| SATO/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.14% | +1.17% |
+| SATO/USDT:USDT | below_1h_threshold | +2.30% | +2.33% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +1.19% | +1.23% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.97% | +1.00% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.75% | +0.78% |
 
 ## 5. 次に見るべき不足
 
