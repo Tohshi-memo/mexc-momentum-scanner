@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T06:22:30.861905+00:00
+- generated_at: 2026-05-12T06:27:55.066684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4098**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T06:22:27.964356+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81257.1
-- Funnel: target 762 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-12T06:27:51.671618+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81208.8
+- Funnel: target 762 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +47.80% | $2,895,144.44 |
-| SAGA/USDT:USDT | +40.19% | $9,090,447.20 |
-| SKYAI/USDT:USDT | +35.25% | $42,492,167.74 |
-| GUA/USDT:USDT | +32.38% | $1,841,715.23 |
-| USELESS/USDT:USDT | +28.03% | $5,253,582.25 |
+| GIGA/USDT:USDT | +52.27% | $2,911,293.55 |
+| SAGA/USDT:USDT | +37.70% | $9,154,955.71 |
+| SKYAI/USDT:USDT | +35.28% | $42,585,372.48 |
+| GUA/USDT:USDT | +33.77% | $1,916,144.58 |
+| USELESS/USDT:USDT | +26.69% | $5,274,441.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +3.90% | +3.81% |
-| FF/USDT:USDT | below_1h_threshold | +2.74% | +2.65% |
-| GIGA/USDT:USDT | below_1h_threshold | +2.57% | +2.48% |
-| RIF/USDT:USDT | below_1h_threshold | +2.41% | +2.33% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.15% | +2.06% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.62% | +3.60% |
+| RIF/USDT:USDT | below_1h_threshold | +3.44% | +3.41% |
+| FF/USDT:USDT | below_1h_threshold | +3.40% | +3.38% |
+| GUA/USDT:USDT | below_1h_threshold | +1.98% | +1.95% |
+| SUI/USDT:USDT | below_1h_threshold | +1.34% | +1.31% |
 
 ## 5. 次に見るべき不足
 
