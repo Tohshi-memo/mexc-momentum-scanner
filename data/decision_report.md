@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T13:33:10.837382+00:00
+- generated_at: 2026-05-12T13:38:04.504363+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4124**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T13:33:06.278645+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=80669.9
-- Funnel: target 763 → liquid 193 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.9 >= 65=1, 4h RSI 88.7 >= 65=1, 4h RSI 84.4 >= 65=1
+- 更新: 2026-05-12T13:38:01.091492+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=80576.4
+- Funnel: target 763 → liquid 194 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.8 >= 65=1, 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +87.55% | $23,401,665.55 |
-| GIGA/USDT:USDT | +56.05% | $6,868,071.25 |
-| USELESS/USDT:USDT | +44.72% | $10,212,563.97 |
-| SKYAI/USDT:USDT | +40.18% | $43,729,194.38 |
-| GUA/USDT:USDT | +34.30% | $3,623,302.04 |
+| SAGA/USDT:USDT | +85.40% | $23,873,406.66 |
+| GIGA/USDT:USDT | +54.49% | $6,909,678.62 |
+| USELESS/USDT:USDT | +41.70% | $10,303,888.65 |
+| SKYAI/USDT:USDT | +40.92% | $43,813,661.87 |
+| GUA/USDT:USDT | +33.97% | $3,633,125.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOLV/USDT:USDT | below_1h_threshold | +4.41% | +4.63% |
-| BILL/USDT:USDT | below_1h_threshold | +4.25% | +4.47% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.26% | +3.48% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.75% | +2.97% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.65% | +2.87% |
+| GIGA/USDT:USDT | below_1h_threshold | +4.36% | +4.69% |
+| SOLV/USDT:USDT | below_1h_threshold | +3.65% | +3.99% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.22% | +3.56% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.89% | +3.23% |
+| B/USDT:USDT | below_1h_threshold | +2.33% | +2.66% |
 
 ## 5. 次に見るべき不足
 
