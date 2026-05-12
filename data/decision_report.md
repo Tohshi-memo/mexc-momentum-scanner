@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-12T18:23:00.968590+00:00
+- generated_at: 2026-05-12T18:28:15.767875+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4152**
+- closed shadow trades: **4153**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4152, expectancy=-0.13%
+- 全期間 MARKET基準: n=4153, expectancy=-0.13%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_5PCT | 7/20 | 35.0% | +0.95% | **+0.33%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
-| LIMIT_3PCT | 15/20 | 75.0% | +0.23% | **+0.17%** |
 | LIMIT_4PCT | 14/20 | 70.0% | +0.00% | **+0.00%** |
 | LIMIT_FIB1272 | 5/20 | 25.0% | -0.37% | **-0.09%** |
+| ASK | 20/20 | 100.0% | -0.20% | **-0.20%** |
 
 ### シャドウ上位 LONG
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$121.20** / 初期 $100.00 (+21.20%)
-- 確定: 288件 (Win 83 / Loss 98 / Flat 107) / skip 425件
-- 成長率目線: 平均log +0.000668 / 幾何平均 +0.067% per trade / maxDD +4.21%
+- 残高: **$120.59** / 初期 $100.00 (+20.59%)
+- 確定: 289件 (Win 83 / Loss 99 / Flat 107) / skip 425件
+- 成長率目線: 平均log +0.000648 / 幾何平均 +0.065% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ESPORTS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $121.20
+- 最新: TROLLSOL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $120.59
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T18:22:57.844891+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80528.3
+- 更新: 2026-05-12T18:28:12.525539+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80463.8
 - Funnel: target 759 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +17.08% | $4,132,335.63 |
-| IRYS/USDT:USDT | +7.78% | $2,092,107.24 |
-| ATOM/USDT:USDT | +4.77% | $26,306,312.59 |
-| LAB/USDT:USDT | +4.71% | $170,552,023.06 |
-| COAI/USDT:USDT | +4.48% | $1,094,046.58 |
+| VIC/USDT:USDT | +17.74% | $4,162,220.09 |
+| IRYS/USDT:USDT | +7.95% | $2,097,116.26 |
+| DYM/USDT:USDT | +6.86% | $1,623,962.30 |
+| ATOM/USDT:USDT | +5.22% | $26,846,039.34 |
+| LAB/USDT:USDT | +5.02% | $170,874,823.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +2.10% | +2.06% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.79% | +1.74% |
-| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.18% |
-| KITE/USDT:USDT | below_1h_threshold | +1.19% | +1.15% |
+| DYM/USDT:USDT | below_1h_threshold | +2.99% | +3.03% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.36% | +2.39% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.22% | +2.26% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.00% | +2.04% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.99% | +2.03% |
 
 ## 5. 次に見るべき不足
 
