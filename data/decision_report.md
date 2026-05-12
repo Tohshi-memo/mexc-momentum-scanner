@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-12T04:37:54.608251+00:00
+- generated_at: 2026-05-12T04:42:48.600761+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4094**
+- closed shadow trades: **4095**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4094, expectancy=-0.13%
+- 全期間 MARKET基準: n=4095, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-0.58%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_6PCT | 5/20 | 25.0% | +3.11% | **+0.78%** |
 | LIMIT_FIB1272 | 4/20 | 20.0% | +3.04% | **+0.61%** |
-| LIMIT_3PCT | 15/20 | 75.0% | +0.62% | **+0.47%** |
 | LIMIT_5PCT | 7/20 | 35.0% | +1.25% | **+0.44%** |
 | LIMIT_ATR | 17/20 | 85.0% | +0.31% | **+0.26%** |
+| LIMIT_3PCT | 14/20 | 70.0% | +0.09% | **+0.07%** |
 
 ### シャドウ上位 LONG
 
@@ -35,7 +35,7 @@
 | LIMIT_2PCT_LONG | 18/20 | 90.0% | +2.23% | **+2.01%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +3.12% | **+1.72%** |
 | LIMIT_ATR_LONG | 17/20 | 85.0% | +1.78% | **+1.52%** |
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +2.27% | **+1.02%** |
+| LIMIT_BB3S_LONG | 3/3 | 100.0% | +0.90% | **+0.90%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$111.18** / 初期 $100.00 (+11.18%)
-- 確定: 230件 (Win 60 / Loss 80 / Flat 90) / skip 425件
-- 成長率目線: 平均log +0.000461 / 幾何平均 +0.046% per trade / maxDD +4.21%
+- 残高: **$110.63** / 初期 $100.00 (+10.63%)
+- 確定: 231件 (Win 60 / Loss 81 / Flat 90) / skip 425件
+- 成長率目線: 平均log +0.000437 / 幾何平均 +0.044% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SKYAI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $111.18
+- 最新: LAB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $110.63
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T04:37:51.420939+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=81232.8
+- 更新: 2026-05-12T04:42:45.138571+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=81241.1
 - Funnel: target 761 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1
+- Strict後reject: 4h RSI 84.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +45.69% | $2,486,032.82 |
-| SKYAI/USDT:USDT | +36.20% | $41,824,793.58 |
-| SAGA/USDT:USDT | +28.24% | $7,876,874.57 |
-| GUA/USDT:USDT | +24.51% | $1,412,198.29 |
-| USELESS/USDT:USDT | +21.17% | $4,821,185.13 |
+| GIGA/USDT:USDT | +45.03% | $2,492,713.03 |
+| SKYAI/USDT:USDT | +37.32% | $41,907,333.17 |
+| SAGA/USDT:USDT | +28.57% | $7,931,451.17 |
+| GUA/USDT:USDT | +24.88% | $1,436,523.73 |
+| USELESS/USDT:USDT | +21.44% | $4,826,991.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.88% | +4.62% |
-| GUA/USDT:USDT | below_1h_threshold | +4.48% | +4.22% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.01% | +2.76% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.36% | +2.11% |
-| RIF/USDT:USDT | below_1h_threshold | +2.32% | +2.07% |
+| GUA/USDT:USDT | below_1h_threshold | +4.79% | +4.52% |
+| H/USDT:USDT | below_1h_threshold | +4.38% | +4.12% |
+| JELLYJELLY/USDT:USDT | below_1h_threshold | +3.48% | +3.22% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.35% | +3.09% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.17% | +2.90% |
 
 ## 5. 次に見るべき不足
 
