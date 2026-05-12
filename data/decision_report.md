@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T07:58:14.250733+00:00
+- generated_at: 2026-05-12T08:03:04.396690+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4100**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T07:58:10.738836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=80890.0
-- Funnel: target 762 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.9 >= 65=1, 4h RSI 88.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-12T08:03:01.221622+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=80857.7
+- Funnel: target 762 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +45.95% | $3,350,913.67 |
-| SAGA/USDT:USDT | +45.74% | $10,743,373.69 |
-| SKYAI/USDT:USDT | +36.12% | $43,738,815.94 |
-| USELESS/USDT:USDT | +31.44% | $6,107,897.89 |
-| GUA/USDT:USDT | +29.10% | $2,333,572.06 |
+| GIGA/USDT:USDT | +45.87% | $3,378,344.48 |
+| SAGA/USDT:USDT | +43.50% | $10,517,577.91 |
+| SKYAI/USDT:USDT | +36.87% | $42,934,478.90 |
+| USELESS/USDT:USDT | +29.74% | $6,082,137.13 |
+| GUA/USDT:USDT | +29.03% | $2,338,138.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +4.89% | +5.01% |
-| RIF/USDT:USDT | below_1h_threshold | +4.13% | +4.26% |
-| AIOT/USDT:USDT | below_1h_threshold | +3.38% | +3.50% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.56% | +2.69% |
-| NIL/USDT:USDT | below_1h_threshold | +2.55% | +2.67% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +1.73% | +1.67% |
+| BASED/USDT:USDT | below_1h_threshold | +1.36% | +1.30% |
+| RIF/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
+| LYN/USDT:USDT | below_1h_threshold | +0.63% | +0.57% |
+| KMNO/USDT:USDT | below_1h_threshold | +0.62% | +0.56% |
 
 ## 5. 次に見るべき不足
 
