@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T20:03:11.908162+00:00
+- generated_at: 2026-05-12T20:08:00.562877+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4157**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T20:03:08.805422+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80775.0
+- 更新: 2026-05-12T20:07:57.471471+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80823.1
 - Funnel: target 758 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +16.55% | $5,434,627.36 |
-| LAB/USDT:USDT | +11.81% | $132,368,589.25 |
-| PEAQ/USDT:USDT | +10.60% | $1,963,740.38 |
-| SATO/USDT:USDT | +9.33% | $1,075,705.34 |
-| EDU/USDT:USDT | +7.61% | $3,789,704.12 |
+| VIC/USDT:USDT | +16.42% | $5,476,870.06 |
+| LAB/USDT:USDT | +11.06% | $132,912,672.68 |
+| SATO/USDT:USDT | +10.14% | $1,081,296.03 |
+| PEAQ/USDT:USDT | +9.51% | $1,970,972.45 |
+| EDU/USDT:USDT | +8.67% | $3,802,322.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +1.40% | +1.42% |
-| SATO/USDT:USDT | below_1h_threshold | +0.53% | +0.55% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.38% | +0.40% |
-| INJ/USDT:USDT | below_1h_threshold | +0.35% | +0.38% |
-| W/USDT:USDT | below_1h_threshold | +0.32% | +0.35% |
+| SATO/USDT:USDT | below_1h_threshold | +1.20% | +1.17% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| W/USDT:USDT | below_1h_threshold | +0.70% | +0.67% |
+| STRK/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.63% | +0.60% |
 
 ## 5. 次に見るべき不足
 
