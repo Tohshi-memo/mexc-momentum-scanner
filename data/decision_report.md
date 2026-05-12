@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-12T16:33:17.105261+00:00
+- generated_at: 2026-05-12T16:38:19.870846+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4143**
+- closed shadow trades: **4144**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.76% / filled 20/20。**
-- 全期間 MARKET基準: n=4143, expectancy=-0.13%
+- 全期間 MARKET基準: n=4144, expectancy=-0.13%
 - 直近20件 MARKET基準: n=20, expectancy=+0.76%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_2PCT_LONG | 17/20 | 85.0% | +1.60% | **+1.36%** |
 | LIMIT_3PCT_LONG | 14/20 | 70.0% | +1.06% | **+0.74%** |
-| LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.46% | **+0.44%** |
+| LIMIT_1PCT_LONG | 20/20 | 100.0% | +0.69% | **+0.69%** |
 | LIMIT_ATR_LONG | 14/20 | 70.0% | +0.56% | **+0.39%** |
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | +2.07% | **+0.31%** |
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$119.65** / 初期 $100.00 (+19.65%)
-- 確定: 279件 (Win 80 / Loss 96 / Flat 103) / skip 425件
-- 成長率目線: 平均log +0.000643 / 幾何平均 +0.064% per trade / maxDD +4.21%
+- 確定: 280件 (Win 80 / Loss 96 / Flat 104) / skip 425件
+- 成長率目線: 平均log +0.000641 / 幾何平均 +0.064% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SAGA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.77% 残高後 $119.65
+- 最新: VIC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $119.65
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T16:33:13.317342+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=80251.8
+- 更新: 2026-05-12T16:38:16.667812+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80274.9
 - Funnel: target 763 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.9 >= 65=1, 4h RSI 74.1 >= 65=1
+- Strict後reject: 4h RSI 92.8 >= 65=1, 4h RSI 75.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +19.15% | $2,139,968.89 |
-| UP/USDT:USDT | +7.05% | $1,728,939.76 |
-| COAI/USDT:USDT | +4.01% | $1,030,944.54 |
-| XNY/USDT:USDT | +3.83% | $1,327,317.43 |
-| INX/USDT:USDT | +3.59% | $1,494,135.80 |
+| VIC/USDT:USDT | +18.39% | $2,373,667.14 |
+| UP/USDT:USDT | +8.23% | $1,736,533.47 |
+| COAI/USDT:USDT | +4.95% | $1,040,776.29 |
+| XNY/USDT:USDT | +3.92% | $1,329,358.92 |
+| SAGA/USDT:USDT | +3.45% | $38,273,626.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COAI/USDT:USDT | below_1h_threshold | +4.02% | +4.08% |
-| XNY/USDT:USDT | below_1h_threshold | +3.90% | +3.96% |
-| INX/USDT:USDT | below_1h_threshold | +3.51% | +3.57% |
-| LAB/USDT:USDT | below_1h_threshold | +3.28% | +3.34% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.12% | +3.19% |
+| COAI/USDT:USDT | below_1h_threshold | +4.81% | +4.85% |
+| XNY/USDT:USDT | below_1h_threshold | +3.92% | +3.96% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.53% | +3.57% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.38% | +3.41% |
+| GUA/USDT:USDT | below_1h_threshold | +3.33% | +3.37% |
 
 ## 5. 次に見るべき不足
 
