@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T21:32:58.897354+00:00
+- generated_at: 2026-05-12T21:37:53.899045+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4164**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T21:32:53.465916+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=80590.8
+- 更新: 2026-05-12T21:37:48.358124+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=80541.3
 - Funnel: target 757 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +12.54% | $121,203,082.76 |
-| AKT/USDT:USDT | +9.26% | $2,230,062.68 |
-| EDU/USDT:USDT | +8.21% | $4,325,683.17 |
-| KITE/USDT:USDT | +7.38% | $2,307,734.97 |
-| W/USDT:USDT | +7.27% | $2,582,971.29 |
+| LAB/USDT:USDT | +11.57% | $121,696,925.89 |
+| EDU/USDT:USDT | +8.60% | $4,333,848.19 |
+| AKT/USDT:USDT | +8.30% | $2,291,362.04 |
+| W/USDT:USDT | +7.20% | $2,599,526.54 |
+| KITE/USDT:USDT | +7.14% | $2,311,582.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +1.98% | +2.06% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
-| UB/USDT:USDT | below_1h_threshold | +1.79% | +1.88% |
-| W/USDT:USDT | below_1h_threshold | +1.69% | +1.77% |
-| TRUTH/USDT:USDT | below_1h_threshold | +1.68% | +1.76% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.11% | +3.25% |
+| AERO/USDT:USDT | below_1h_threshold | +2.14% | +2.29% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.60% | +1.74% |
+| W/USDT:USDT | below_1h_threshold | +1.57% | +1.71% |
+| UB/USDT:USDT | below_1h_threshold | +1.45% | +1.59% |
 
 ## 5. 次に見るべき不足
 
