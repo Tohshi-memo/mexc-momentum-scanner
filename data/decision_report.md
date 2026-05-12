@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T18:18:18.590714+00:00
+- generated_at: 2026-05-12T18:23:00.968590+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4152**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$99.19** / 初期 $100.00 (-0.81%)
-- 確定トレード: 34件 (TP 9 / SL 22 / EXP 3)
-- 最新: DOGS/USDT:USDT TP_HIT PnL +8.00% 残高後 $99.19
+- 残高: **$98.69** / 初期 $100.00 (-1.31%)
+- 確定トレード: 35件 (TP 9 / SL 23 / EXP 3)
+- 最新: KITE/USDT:USDT SL_HIT PnL -3.91% 残高後 $98.69
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T18:18:15.501435+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80525.7
-- Funnel: target 759 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-12T18:22:57.844891+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80528.3
+- Funnel: target 759 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +18.13% | $4,099,098.71 |
-| IRYS/USDT:USDT | +8.56% | $2,085,875.74 |
-| SAGA/USDT:USDT | +4.93% | $45,417,280.07 |
-| LAB/USDT:USDT | +4.80% | $170,255,455.98 |
-| ASTEROID/USDT:USDT | +4.59% | $1,611,410.00 |
+| VIC/USDT:USDT | +17.08% | $4,132,335.63 |
+| IRYS/USDT:USDT | +7.78% | $2,092,107.24 |
+| ATOM/USDT:USDT | +4.77% | $26,306,312.59 |
+| LAB/USDT:USDT | +4.71% | $170,552,023.06 |
+| COAI/USDT:USDT | +4.48% | $1,094,046.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +3.20% | +3.16% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.42% | +1.38% |
-| MANTA/USDT:USDT | below_1h_threshold | +1.42% | +1.38% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.40% | +1.36% |
+| SATO/USDT:USDT | below_1h_threshold | +2.10% | +2.06% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.79% | +1.74% |
+| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.18% |
+| KITE/USDT:USDT | below_1h_threshold | +1.19% | +1.15% |
 
 ## 5. 次に見るべき不足
 
