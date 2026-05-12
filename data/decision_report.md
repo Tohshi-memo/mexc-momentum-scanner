@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T11:53:38.822445+00:00
+- generated_at: 2026-05-12T11:58:04.561677+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4114**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T11:53:34.991116+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=80706.7
-- Funnel: target 763 → liquid 192 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.7 >= 65=1, 4h RSI 89.7 >= 65=1, 4h RSI 70.9 >= 65=1
+- 更新: 2026-05-12T11:57:58.428853+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=80727.5
+- Funnel: target 763 → liquid 192 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.6 >= 65=1, 4h RSI 89.5 >= 65=1, 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +49.19% | $16,041,416.17 |
-| GIGA/USDT:USDT | +46.18% | $6,091,882.86 |
-| SKYAI/USDT:USDT | +37.23% | $44,174,810.26 |
-| USELESS/USDT:USDT | +34.35% | $8,928,313.67 |
-| GUA/USDT:USDT | +31.60% | $3,447,083.40 |
+| SAGA/USDT:USDT | +48.48% | $16,113,559.11 |
+| GIGA/USDT:USDT | +47.51% | $6,125,555.42 |
+| SKYAI/USDT:USDT | +38.29% | $44,397,367.18 |
+| USELESS/USDT:USDT | +34.33% | $8,960,302.38 |
+| GUA/USDT:USDT | +32.09% | $3,451,231.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_1h_threshold | +3.40% | +3.31% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.14% | +2.05% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.76% | +1.67% |
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +1.59% | +1.50% |
-| AKT/USDT:USDT | below_1h_threshold | +1.54% | +1.45% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.78% | +2.66% |
+| AKT/USDT:USDT | below_1h_threshold | +2.71% | +2.60% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.09% | +1.97% |
+| CRV/USDT:USDT | below_1h_threshold | +1.70% | +1.59% |
+| KITE/USDT:USDT | below_1h_threshold | +1.56% | +1.44% |
 
 ## 5. 次に見るべき不足
 
