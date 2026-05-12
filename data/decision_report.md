@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T23:03:06.625192+00:00
+- generated_at: 2026-05-12T23:08:09.053629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4168**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T23:03:03.544518+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80639.1
+- 更新: 2026-05-12T23:08:05.690122+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80605.3
 - Funnel: target 758 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +11.73% | $109,883,833.88 |
-| PEAQ/USDT:USDT | +10.84% | $2,063,974.89 |
-| TRUTH/USDT:USDT | +10.43% | $2,610,686.79 |
-| AKT/USDT:USDT | +10.26% | $2,418,436.59 |
-| TRUMPOFFICIAL/USDT:USDT | +8.73% | $25,947,336.96 |
+| LAB/USDT:USDT | +11.68% | $110,123,803.44 |
+| AKT/USDT:USDT | +10.61% | $2,423,041.56 |
+| PEAQ/USDT:USDT | +10.60% | $2,064,807.53 |
+| TRUMPOFFICIAL/USDT:USDT | +8.73% | $26,053,554.69 |
+| TRUTH/USDT:USDT | +8.41% | $2,626,966.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +1.66% | +1.63% |
-| BILL/USDT:USDT | below_1h_threshold | +1.27% | +1.24% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.68% | +0.65% |
-| UB/USDT:USDT | below_1h_threshold | +0.57% | +0.54% |
+| SATO/USDT:USDT | below_1h_threshold | +1.72% | +1.73% |
+| PEAQ/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
+| BASED/USDT:USDT | below_1h_threshold | +1.08% | +1.09% |
+| DYM/USDT:USDT | below_1h_threshold | +1.06% | +1.07% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.99% | +1.00% |
 
 ## 5. 次に見るべき不足
 
