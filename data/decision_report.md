@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T20:08:00.562877+00:00
+- generated_at: 2026-05-12T20:14:11.880156+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4157**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T20:07:57.471471+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80823.1
-- Funnel: target 758 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-12T20:14:08.694690+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80734.8
+- Funnel: target 758 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +16.42% | $5,476,870.06 |
-| LAB/USDT:USDT | +11.06% | $132,912,672.68 |
-| SATO/USDT:USDT | +10.14% | $1,081,296.03 |
-| PEAQ/USDT:USDT | +9.51% | $1,970,972.45 |
-| EDU/USDT:USDT | +8.67% | $3,802,322.87 |
+| VIC/USDT:USDT | +17.65% | $5,572,175.22 |
+| LAB/USDT:USDT | +10.87% | $133,391,544.13 |
+| SATO/USDT:USDT | +9.33% | $1,090,283.34 |
+| PEAQ/USDT:USDT | +9.22% | $1,982,619.79 |
+| SAGA/USDT:USDT | +8.69% | $49,819,180.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +1.20% | +1.17% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
-| W/USDT:USDT | below_1h_threshold | +0.70% | +0.67% |
-| STRK/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +0.63% | +0.60% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.83% | +3.91% |
+| GIGA/USDT:USDT | below_1h_threshold | +1.38% | +1.46% |
+| VIC/USDT:USDT | below_1h_threshold | +1.19% | +1.26% |
+| KITE/USDT:USDT | below_1h_threshold | +0.85% | +0.93% |
+| DYM/USDT:USDT | below_1h_threshold | +0.61% | +0.68% |
 
 ## 5. 次に見るべき不足
 
