@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T05:37:46.015012+00:00
+- generated_at: 2026-05-12T05:42:59.143907+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4096**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T05:37:42.757250+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=81194.3
-- Funnel: target 762 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-12T05:42:55.828085+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81217.7
+- Funnel: target 762 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +51.46% | $2,740,657.65 |
-| SKYAI/USDT:USDT | +38.03% | $42,517,292.19 |
-| SAGA/USDT:USDT | +30.85% | $8,351,798.74 |
-| GUA/USDT:USDT | +28.09% | $1,635,137.12 |
-| USELESS/USDT:USDT | +26.24% | $5,094,010.77 |
+| GIGA/USDT:USDT | +54.28% | $2,760,890.23 |
+| SKYAI/USDT:USDT | +37.27% | $42,582,041.44 |
+| SAGA/USDT:USDT | +35.79% | $8,433,875.73 |
+| GUA/USDT:USDT | +26.81% | $1,670,804.11 |
+| USELESS/USDT:USDT | +26.00% | $5,112,478.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.39% | +4.39% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.36% | +3.36% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
-| GUA/USDT:USDT | below_1h_threshold | +2.98% | +2.98% |
-| RIF/USDT:USDT | below_1h_threshold | +2.78% | +2.78% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.25% | +3.22% |
+| INJ/USDT:USDT | below_1h_threshold | +2.90% | +2.88% |
+| VVV/USDT:USDT | below_1h_threshold | +2.78% | +2.76% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.73% | +2.71% |
+| CRO/USDT:USDT | below_1h_threshold | +2.56% | +2.53% |
 
 ## 5. 次に見るべき不足
 
