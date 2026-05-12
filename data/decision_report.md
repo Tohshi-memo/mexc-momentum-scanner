@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T09:48:01.259961+00:00
+- generated_at: 2026-05-12T09:53:15.958589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4107**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T09:47:55.466471+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80831.9
-- Funnel: target 762 → liquid 193 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1, 4h RSI 69.2 >= 65=1, 4h RSI 87.6 >= 65=1
+- 更新: 2026-05-12T09:53:12.156145+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80836.4
+- Funnel: target 762 → liquid 194 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 84.2 >= 65=1, 4h RSI 87.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +59.53% | $4,327,459.11 |
-| SAGA/USDT:USDT | +42.76% | $12,296,094.51 |
-| USELESS/USDT:USDT | +40.48% | $7,438,119.59 |
-| SKYAI/USDT:USDT | +35.36% | $44,067,269.46 |
-| GUA/USDT:USDT | +29.98% | $3,254,766.58 |
+| GIGA/USDT:USDT | +56.57% | $4,373,886.33 |
+| SAGA/USDT:USDT | +45.79% | $12,443,329.02 |
+| USELESS/USDT:USDT | +40.67% | $7,547,307.81 |
+| SKYAI/USDT:USDT | +37.40% | $44,136,781.63 |
+| GUA/USDT:USDT | +30.24% | $3,264,268.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.72% | +3.68% |
-| DEGEN/USDT:USDT | below_1h_threshold | +2.71% | +2.67% |
-| JDSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.37% |
-| SAPIEN/USDT:USDT | below_1h_threshold | +2.40% | +2.36% |
-| UP/USDT:USDT | below_1h_threshold | +2.30% | +2.26% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +4.43% | +4.38% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.14% | +4.10% |
+| DEGEN/USDT:USDT | below_1h_threshold | +3.64% | +3.59% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.92% | +2.88% |
+| SAPIEN/USDT:USDT | below_1h_threshold | +2.77% | +2.73% |
 
 ## 5. 次に見るべき不足
 
