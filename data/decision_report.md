@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-12T14:43:11.412595+00:00
+- generated_at: 2026-05-12T14:47:59.095091+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4130**
+- closed shadow trades: **4131**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4130, expectancy=-0.13%
+- 全期間 MARKET基準: n=4131, expectancy=-0.13%
 - 直近20件 MARKET基準: n=20, expectancy=-0.37%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$118.26** / 初期 $100.00 (+18.26%)
-- 確定: 266件 (Win 74 / Loss 90 / Flat 102) / skip 425件
-- 成長率目線: 平均log +0.000631 / 幾何平均 +0.063% per trade / maxDD +4.21%
+- 残高: **$117.67** / 初期 $100.00 (+17.67%)
+- 確定: 267件 (Win 74 / Loss 91 / Flat 102) / skip 425件
+- 成長率目線: 平均log +0.000609 / 幾何平均 +0.061% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: GIGA/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +1.00% 残高後 $118.26
+- 最新: USELESS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $117.67
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T14:43:07.514682+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=80815.7
-- Funnel: target 763 → liquid 196 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-05-12T14:47:55.167629+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=80622.3
+- Funnel: target 763 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.3 >= 65=1, 4h RSI 82.0 >= 65=1
+- Strict後reject: 4h RSI 82.9 >= 65=1, 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +82.41% | $28,172,246.17 |
-| GIGA/USDT:USDT | +68.48% | $7,507,928.94 |
-| SKYAI/USDT:USDT | +41.45% | $40,261,693.64 |
-| GUA/USDT:USDT | +34.74% | $3,743,412.69 |
-| USELESS/USDT:USDT | +34.52% | $11,033,220.85 |
+| SAGA/USDT:USDT | +80.83% | $28,490,580.17 |
+| GIGA/USDT:USDT | +65.97% | $7,585,531.97 |
+| SKYAI/USDT:USDT | +41.28% | $40,300,345.79 |
+| GUA/USDT:USDT | +35.31% | $3,753,251.08 |
+| USELESS/USDT:USDT | +33.42% | $11,074,870.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_1h_threshold | +4.47% | +3.99% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.77% | +3.29% |
-| CYS/USDT:USDT | below_1h_threshold | +2.59% | +2.11% |
-| FF/USDT:USDT | below_1h_threshold | +2.51% | +2.03% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.88% | +1.41% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +3.38% | +3.14% |
+| B/USDT:USDT | below_1h_threshold | +2.01% | +1.78% |
+| CYS/USDT:USDT | below_1h_threshold | +1.83% | +1.59% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.64% | +1.41% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.64% | +1.41% |
 
 ## 5. 次に見るべき不足
 
