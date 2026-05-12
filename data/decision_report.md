@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T09:17:51.835098+00:00
+- generated_at: 2026-05-12T09:22:53.565744+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4105**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T09:17:48.749531+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=80713.5
-- Funnel: target 762 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-12T09:22:50.156874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80700.0
+- Funnel: target 762 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +49.29% | $3,785,938.38 |
-| SAGA/USDT:USDT | +43.96% | $11,770,918.04 |
-| SKYAI/USDT:USDT | +34.49% | $43,688,506.79 |
-| USELESS/USDT:USDT | +33.74% | $6,684,884.18 |
-| IRYS/USDT:USDT | +31.89% | $1,079,665.48 |
+| GIGA/USDT:USDT | +54.46% | $3,845,217.44 |
+| SAGA/USDT:USDT | +41.26% | $11,948,150.69 |
+| USELESS/USDT:USDT | +35.42% | $6,737,127.63 |
+| SKYAI/USDT:USDT | +34.28% | $43,774,892.22 |
+| IRYS/USDT:USDT | +32.29% | $1,096,143.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.39% | +3.49% |
-| IRYS/USDT:USDT | below_1h_threshold | +3.37% | +3.48% |
-| GIGA/USDT:USDT | below_1h_threshold | +2.54% | +2.65% |
-| COLLECT/USDT:USDT | below_1h_threshold | +2.47% | +2.58% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.39% | +2.50% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.70% | +3.82% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.67% | +3.79% |
+| UB/USDT:USDT | below_1h_threshold | +2.19% | +2.31% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.82% | +1.95% |
+| SAPIEN/USDT:USDT | below_1h_threshold | +1.38% | +1.51% |
 
 ## 5. 次に見るべき不足
 
