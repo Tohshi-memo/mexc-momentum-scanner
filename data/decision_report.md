@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-12T14:28:01.794732+00:00
+- generated_at: 2026-05-12T14:43:11.412595+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4129**
+- closed shadow trades: **4130**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4129, expectancy=-0.13%
+- 全期間 MARKET基準: n=4130, expectancy=-0.13%
 - 直近20件 MARKET基準: n=20, expectancy=-0.37%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,19 +22,19 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_5PCT | 8/20 | 40.0% | +0.95% | **+0.38%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
-| LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | -0.24% | **-0.10%** |
 | LIMIT_3PCT | 16/20 | 80.0% | -0.14% | **-0.12%** |
+| LIMIT_FIB1272 | 9/20 | 45.0% | -0.30% | **-0.14%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 12/20 | 60.0% | +1.41% | **+0.85%** |
-| LIMIT_ATR_LONG | 11/20 | 55.0% | +0.87% | **+0.48%** |
-| LIMIT_4PCT_LONG | 10/20 | 50.0% | +0.87% | **+0.44%** |
+| LIMIT_2PCT_LONG | 12/20 | 60.0% | +1.57% | **+0.94%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.55% | **+0.55%** |
 | LIMIT_3PCT_LONG | 10/20 | 50.0% | +0.76% | **+0.38%** |
+| ASK_LONG | 20/20 | 100.0% | +0.38% | **+0.38%** |
 | LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.41% | **+0.31%** |
 
 ## 2. $100 Live Portfolio
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$117.09** / 初期 $100.00 (+17.09%)
-- 確定: 265件 (Win 73 / Loss 90 / Flat 102) / skip 425件
-- 成長率目線: 平均log +0.000595 / 幾何平均 +0.060% per trade / maxDD +4.21%
+- 残高: **$118.26** / 初期 $100.00 (+18.26%)
+- 確定: 266件 (Win 74 / Loss 90 / Flat 102) / skip 425件
+- 成長率目線: 平均log +0.000631 / 幾何平均 +0.063% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $117.09
+- 最新: GIGA/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +1.00% 残高後 $118.26
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T14:27:57.770632+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=80689.8
-- Funnel: target 763 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.9 >= 65=1
+- 更新: 2026-05-12T14:43:07.514682+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=80815.7
+- Funnel: target 763 → liquid 196 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.3 >= 65=1, 4h RSI 82.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +85.15% | $27,417,885.32 |
-| GIGA/USDT:USDT | +62.27% | $7,232,260.14 |
-| SKYAI/USDT:USDT | +40.80% | $40,087,501.15 |
-| SOLV/USDT:USDT | +40.37% | $1,928,051.51 |
-| USELESS/USDT:USDT | +38.18% | $10,823,721.50 |
+| SAGA/USDT:USDT | +82.41% | $28,172,246.17 |
+| GIGA/USDT:USDT | +68.48% | $7,507,928.94 |
+| SKYAI/USDT:USDT | +41.45% | $40,261,693.64 |
+| GUA/USDT:USDT | +34.74% | $3,743,412.69 |
+| USELESS/USDT:USDT | +34.52% | $11,033,220.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGUIN/USDT:USDT | below_relative_strength | +5.14% | +4.82% |
-| GIGA/USDT:USDT | below_1h_threshold | +4.59% | +4.27% |
-| TRUTH/USDT:USDT | below_1h_threshold | +4.12% | +3.80% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.98% | +2.66% |
-| DYM/USDT:USDT | below_1h_threshold | +2.65% | +2.34% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +4.47% | +3.99% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.77% | +3.29% |
+| CYS/USDT:USDT | below_1h_threshold | +2.59% | +2.11% |
+| FF/USDT:USDT | below_1h_threshold | +2.51% | +2.03% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.88% | +1.41% |
 
 ## 5. 次に見るべき不足
 
