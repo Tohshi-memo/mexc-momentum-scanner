@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T14:53:10.832833+00:00
+- generated_at: 2026-05-12T14:58:18.068423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4132**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T14:53:07.132396+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=80523.1
-- Funnel: target 763 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.9 >= 65=1
+- 更新: 2026-05-12T14:58:14.520739+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=80513.2
+- Funnel: target 763 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.7 >= 65=1, 4h RSI 83.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +77.18% | $29,006,344.99 |
-| GIGA/USDT:USDT | +57.59% | $7,648,381.64 |
-| SKYAI/USDT:USDT | +41.17% | $40,360,121.96 |
-| GUA/USDT:USDT | +34.69% | $3,761,030.16 |
-| USELESS/USDT:USDT | +33.10% | $11,161,630.66 |
+| SAGA/USDT:USDT | +79.26% | $29,234,670.11 |
+| GIGA/USDT:USDT | +59.71% | $7,689,815.19 |
+| SKYAI/USDT:USDT | +41.73% | $40,441,028.29 |
+| GUA/USDT:USDT | +35.46% | $3,778,198.09 |
+| USELESS/USDT:USDT | +33.72% | $11,215,085.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.42% | +3.30% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +2.67% | +2.56% |
-| B/USDT:USDT | below_1h_threshold | +2.49% | +2.38% |
-| CYS/USDT:USDT | below_1h_threshold | +1.83% | +1.72% |
-| TWT/USDT:USDT | below_1h_threshold | +1.60% | +1.49% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.46% | +3.36% |
+| GIGA/USDT:USDT | below_1h_threshold | +2.86% | +2.76% |
+| B/USDT:USDT | below_1h_threshold | +2.52% | +2.42% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.37% | +2.27% |
+| CYS/USDT:USDT | below_1h_threshold | +1.94% | +1.84% |
 
 ## 5. 次に見るべき不足
 
