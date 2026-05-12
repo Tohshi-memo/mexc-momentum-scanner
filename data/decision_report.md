@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T22:03:18.523809+00:00
+- generated_at: 2026-05-12T22:07:55.074392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4167**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T22:03:15.266343+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=80697.3
-- Funnel: target 757 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-12T22:07:51.734455+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=80710.3
+- Funnel: target 757 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | +11.41% | $21,429,834.75 |
-| LAB/USDT:USDT | +10.93% | $114,702,470.88 |
-| EDU/USDT:USDT | +8.11% | $4,279,946.87 |
-| BILL/USDT:USDT | +7.83% | $20,683,298.46 |
-| AKT/USDT:USDT | +7.73% | $2,401,484.74 |
+| LAB/USDT:USDT | +11.50% | $115,044,275.86 |
+| TRUMPOFFICIAL/USDT:USDT | +10.64% | $22,332,755.90 |
+| AKT/USDT:USDT | +7.96% | $2,427,064.30 |
+| EDU/USDT:USDT | +7.92% | $4,281,423.25 |
+| KITE/USDT:USDT | +7.69% | $2,305,742.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUTH/USDT:USDT | below_1h_threshold | +3.17% | +2.98% |
-| BILL/USDT:USDT | below_1h_threshold | +1.87% | +1.69% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.82% | +1.64% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.35% | +1.17% |
-| SATO/USDT:USDT | below_1h_threshold | +0.99% | +0.81% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.08% | +3.88% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.05% | +2.86% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.94% | +2.74% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.15% | +1.95% |
+| TIA/USDT:USDT | below_1h_threshold | +1.71% | +1.51% |
 
 ## 5. 次に見るべき不足
 
