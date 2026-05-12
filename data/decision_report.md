@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T09:43:20.841918+00:00
+- generated_at: 2026-05-12T09:48:01.259961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4107**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T09:43:16.901122+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=80895.0
-- Funnel: target 762 → liquid 193 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 87.8 >= 65=1
+- 更新: 2026-05-12T09:47:55.466471+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80831.9
+- Funnel: target 762 → liquid 193 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.6 >= 65=1, 4h RSI 69.2 >= 65=1, 4h RSI 87.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +56.68% | $4,292,113.19 |
-| SAGA/USDT:USDT | +41.60% | $12,237,160.91 |
-| USELESS/USDT:USDT | +40.99% | $7,355,661.77 |
-| SKYAI/USDT:USDT | +35.88% | $44,024,557.74 |
-| GUA/USDT:USDT | +31.78% | $3,075,811.71 |
+| GIGA/USDT:USDT | +59.53% | $4,327,459.11 |
+| SAGA/USDT:USDT | +42.76% | $12,296,094.51 |
+| USELESS/USDT:USDT | +40.48% | $7,438,119.59 |
+| SKYAI/USDT:USDT | +35.36% | $44,067,269.46 |
+| GUA/USDT:USDT | +29.98% | $3,254,766.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.30% | +4.18% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +4.23% | +4.11% |
-| UP/USDT:USDT | below_1h_threshold | +2.73% | +2.61% |
-| INJ/USDT:USDT | below_1h_threshold | +1.87% | +1.75% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.85% | +1.73% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.72% | +3.68% |
+| DEGEN/USDT:USDT | below_1h_threshold | +2.71% | +2.67% |
+| JDSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.37% |
+| SAPIEN/USDT:USDT | below_1h_threshold | +2.40% | +2.36% |
+| UP/USDT:USDT | below_1h_threshold | +2.30% | +2.26% |
 
 ## 5. 次に見るべき不足
 
