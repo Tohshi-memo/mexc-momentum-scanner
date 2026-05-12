@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T16:12:56.908010+00:00
+- generated_at: 2026-05-12T16:17:29.233345+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4141**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T16:12:53.425408+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80308.4
+- 更新: 2026-05-12T16:17:26.439051+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=80234.5
 - Funnel: target 763 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.9 >= 65=1
+- Strict後reject: 4h RSI 92.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +14.72% | $1,248,623.75 |
-| XNY/USDT:USDT | +4.43% | $1,316,567.53 |
-| LAB/USDT:USDT | +3.24% | $168,973,808.40 |
-| ASTSSTOCK/USDT:USDT | +2.40% | $8,132,407.76 |
-| SATO/USDT:USDT | +2.12% | $1,328,339.97 |
+| VIC/USDT:USDT | +13.62% | $1,604,471.62 |
+| LAB/USDT:USDT | +4.95% | $169,956,428.20 |
+| XNY/USDT:USDT | +4.06% | $1,320,415.26 |
+| RAVE/USDT:USDT | +3.14% | $6,989,184.16 |
+| ASTSSTOCK/USDT:USDT | +2.81% | $8,136,083.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XNY/USDT:USDT | below_1h_threshold | +4.44% | +4.43% |
-| LAB/USDT:USDT | below_1h_threshold | +3.30% | +3.29% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.41% |
-| RIF/USDT:USDT | below_1h_threshold | +1.98% | +1.97% |
-| SATO/USDT:USDT | below_1h_threshold | +1.90% | +1.89% |
+| LAB/USDT:USDT | below_1h_threshold | +4.94% | +5.02% |
+| XNY/USDT:USDT | below_1h_threshold | +4.06% | +4.15% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.26% | +3.35% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.90% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.49% | +2.58% |
 
 ## 5. 次に見るべき不足
 
