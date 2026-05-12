@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T01:48:03.343233+00:00
+- generated_at: 2026-05-12T01:53:10.456397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4086**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T01:47:59.417994+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=81036.6
-- Funnel: target 762 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.1 >= 65=1, 4h RSI 81.4 >= 65=1
+- 更新: 2026-05-12T01:53:02.769449+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=81224.9
+- Funnel: target 762 → liquid 190 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.2 >= 65=1, 4h RSI 88.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +37.25% | $1,330,655.90 |
-| USELESS/USDT:USDT | +19.07% | $3,939,274.03 |
-| SAGA/USDT:USDT | +18.62% | $7,197,383.25 |
-| SKYAI/USDT:USDT | +18.53% | $37,922,550.39 |
-| H/USDT:USDT | +16.63% | $15,763,216.43 |
+| GIGA/USDT:USDT | +37.36% | $1,355,981.94 |
+| SKYAI/USDT:USDT | +25.29% | $38,155,278.14 |
+| USELESS/USDT:USDT | +20.90% | $3,991,413.17 |
+| SAGA/USDT:USDT | +20.69% | $7,214,725.35 |
+| H/USDT:USDT | +16.81% | $15,787,784.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.81% | +4.39% |
-| LAB/USDT:USDT | below_1h_threshold | +3.61% | +4.19% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.46% | +3.04% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.78% | +2.36% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.75% | +2.33% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.04% | +4.39% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.59% | +2.94% |
+| RIF/USDT:USDT | below_1h_threshold | +2.31% | +2.66% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.92% | +2.27% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.76% | +2.11% |
 
 ## 5. 次に見るべき不足
 
