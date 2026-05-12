@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T00:38:00.619864+00:00
+- generated_at: 2026-05-12T00:43:34.251264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4080**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T00:37:57.091834+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=81505.1
-- Funnel: target 758 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.0 >= 65=1, 4h RSI 85.9 >= 65=1
+- 更新: 2026-05-12T00:43:25.573689+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=81492.0
+- Funnel: target 758 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.5 >= 65=1, 4h RSI 79.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PENGUIN/USDT:USDT | +28.36% | $3,167,034.06 |
-| GIGA/USDT:USDT | +27.18% | $1,077,756.30 |
-| USELESS/USDT:USDT | +16.46% | $3,740,851.33 |
-| SKYAI/USDT:USDT | +15.25% | $37,227,053.48 |
-| H/USDT:USDT | +15.02% | $14,334,270.44 |
+| GIGA/USDT:USDT | +29.06% | $1,083,887.07 |
+| PENGUIN/USDT:USDT | +28.38% | $3,172,941.92 |
+| USELESS/USDT:USDT | +15.89% | $3,748,113.65 |
+| SKYAI/USDT:USDT | +15.74% | $37,268,397.67 |
+| H/USDT:USDT | +15.57% | $14,373,687.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.56% | +4.80% |
-| DOGS/USDT:USDT | below_1h_threshold | +4.21% | +4.45% |
-| H/USDT:USDT | below_1h_threshold | +3.35% | +3.59% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.85% | +3.09% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.19% | +2.43% |
+| H/USDT:USDT | below_1h_threshold | +3.73% | +3.98% |
+| TRUTH/USDT:USDT | below_1h_threshold | +3.30% | +3.56% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.90% | +3.15% |
+| ALCH/USDT:USDT | below_1h_threshold | +2.39% | +2.65% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.31% | +2.56% |
 
 ## 5. 次に見るべき不足
 
