@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T11:23:15.110451+00:00
+- generated_at: 2026-05-12T11:27:56.052393+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4113**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T11:23:11.748876+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=80561.4
-- Funnel: target 762 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1
+- 更新: 2026-05-12T11:27:52.502310+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80612.2
+- Funnel: target 762 → liquid 191 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.1 >= 65=1, 4h RSI 89.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +48.32% | $15,348,457.83 |
-| GIGA/USDT:USDT | +42.68% | $5,792,456.86 |
-| SKYAI/USDT:USDT | +39.31% | $43,602,208.37 |
-| USELESS/USDT:USDT | +35.67% | $8,722,012.84 |
-| GUA/USDT:USDT | +31.35% | $3,406,916.68 |
+| SAGA/USDT:USDT | +49.39% | $15,456,721.94 |
+| GIGA/USDT:USDT | +45.87% | $5,893,349.60 |
+| SKYAI/USDT:USDT | +39.94% | $43,703,397.15 |
+| USELESS/USDT:USDT | +35.57% | $8,752,143.58 |
+| GUA/USDT:USDT | +31.50% | $3,410,096.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.47% | +4.56% |
-| UB/USDT:USDT | below_1h_threshold | +3.56% | +3.65% |
-| PENGUIN/USDT:USDT | below_1h_threshold | +3.17% | +3.26% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.06% | +2.15% |
-| BILL/USDT:USDT | below_1h_threshold | +1.72% | +1.81% |
+| UB/USDT:USDT | below_1h_threshold | +3.90% | +3.92% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.89% | +1.91% |
+| PENGUIN/USDT:USDT | below_1h_threshold | +1.84% | +1.87% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.49% | +1.52% |
+| BILL/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
 
 ## 5. 次に見るべき不足
 
