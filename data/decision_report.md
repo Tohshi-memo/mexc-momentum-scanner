@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T22:28:10.659563+00:00
+- generated_at: 2026-05-12T22:32:52.759807+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4168**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T22:28:07.559285+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=80622.8
+- 更新: 2026-05-12T22:32:49.892817+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=80634.4
 - Funnel: target 757 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +12.62% | $116,017,733.96 |
-| KITE/USDT:USDT | +9.13% | $2,321,444.57 |
-| AKT/USDT:USDT | +8.89% | $2,432,350.14 |
-| BILL/USDT:USDT | +8.68% | $21,603,868.18 |
-| W/USDT:USDT | +8.53% | $2,618,443.58 |
+| LAB/USDT:USDT | +12.91% | $116,349,911.20 |
+| BILL/USDT:USDT | +10.40% | $21,694,470.04 |
+| TRUTH/USDT:USDT | +8.68% | $2,535,463.73 |
+| AKT/USDT:USDT | +8.56% | $2,432,990.25 |
+| BANANAS31/USDT:USDT | +8.35% | $4,156,116.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.62% | +3.53% |
-| TRUTH/USDT:USDT | below_1h_threshold | +3.52% | +3.43% |
-| BILL/USDT:USDT | below_1h_threshold | +3.04% | +2.95% |
-| TIA/USDT:USDT | below_1h_threshold | +2.28% | +2.19% |
-| BASED/USDT:USDT | below_1h_threshold | +2.20% | +2.11% |
+| BILL/USDT:USDT | below_1h_threshold | +4.31% | +4.20% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +4.11% | +4.00% |
+| TRUTH/USDT:USDT | below_1h_threshold | +3.92% | +3.81% |
+| VIC/USDT:USDT | below_1h_threshold | +2.01% | +1.90% |
+| GUA/USDT:USDT | below_1h_threshold | +1.96% | +1.85% |
 
 ## 5. 次に見るべき不足
 
