@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-12T03:52:52.475039+00:00
+- generated_at: 2026-05-12T03:57:54.619737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4093**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-12T03:52:49.486903+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=81025.1
+- 更新: 2026-05-12T03:57:51.557853+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=81006.3
 - Funnel: target 762 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GIGA/USDT:USDT | +52.53% | $2,228,899.24 |
-| SKYAI/USDT:USDT | +39.35% | $41,440,848.68 |
-| USELESS/USDT:USDT | +23.37% | $4,560,071.59 |
-| SAGA/USDT:USDT | +21.69% | $7,643,325.46 |
-| GUA/USDT:USDT | +18.87% | $1,248,753.74 |
+| GIGA/USDT:USDT | +53.08% | $2,257,221.84 |
+| SKYAI/USDT:USDT | +38.99% | $41,494,558.28 |
+| USELESS/USDT:USDT | +22.92% | $4,574,980.92 |
+| SAGA/USDT:USDT | +21.27% | $7,654,970.64 |
+| GUA/USDT:USDT | +18.44% | $1,251,270.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.85% | +4.10% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.52% | +3.77% |
-| RIF/USDT:USDT | below_1h_threshold | +3.36% | +3.60% |
-| BSB/USDT:USDT | below_1h_threshold | +3.22% | +3.46% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.51% | +2.76% |
+| RIF/USDT:USDT | below_1h_threshold | +3.76% | +4.03% |
+| BSB/USDT:USDT | below_1h_threshold | +3.53% | +3.80% |
+| BILL/USDT:USDT | below_1h_threshold | +3.12% | +3.38% |
+| PARTI/USDT:USDT | below_1h_threshold | +2.88% | +3.14% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.77% | +3.04% |
 
 ## 5. 次に見るべき不足
 
