@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-13T11:06:24.208050+00:00
+- generated_at: 2026-05-13T11:10:24.202918+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4217**
+- closed shadow trades: **4218**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4217, expectancy=-0.12%
+- 全期間 MARKET基準: n=4218, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-1.60%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,37 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$119.78** / 初期 $100.00 (+19.78%)
-- 確定: 341件 (Win 94 / Loss 124 / Flat 123) / skip 437件
+- 確定: 341件 (Win 94 / Loss 124 / Flat 123) / skip 438件
 - 成長率目線: 平均log +0.000529 / 幾何平均 +0.053% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: UB/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.01% 残高後 $119.78
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T11:06:20.763581+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=80678.1
-- Funnel: target 765 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-13T11:10:20.648581+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=80620.5
+- Funnel: target 765 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +36.75% | $115,563,520.58 |
-| INJ/USDT:USDT | +28.48% | $110,994,527.88 |
-| UB/USDT:USDT | +27.71% | $7,982,455.95 |
-| COS/USDT:USDT | +25.24% | $1,737,964.09 |
-| TRUTH/USDT:USDT | +21.09% | $2,792,014.66 |
+| LAB/USDT:USDT | +36.66% | $116,076,213.80 |
+| UB/USDT:USDT | +33.42% | $8,168,486.21 |
+| INJ/USDT:USDT | +27.34% | $114,397,721.41 |
+| COS/USDT:USDT | +26.71% | $1,740,872.22 |
+| TRUTH/USDT:USDT | +22.41% | $2,827,425.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +1.51% | +1.62% |
-| B/USDT:USDT | below_1h_threshold | +1.12% | +1.23% |
-| UB/USDT:USDT | below_1h_threshold | +0.62% | +0.73% |
-| CFX/USDT:USDT | below_1h_threshold | +0.56% | +0.67% |
-| KITE/USDT:USDT | below_1h_threshold | +0.54% | +0.65% |
+| B/USDT:USDT | below_1h_threshold | +1.33% | +1.51% |
+| KITE/USDT:USDT | below_1h_threshold | +1.05% | +1.23% |
+| MBOX/USDT:USDT | below_1h_threshold | +0.87% | +1.05% |
+| INJ/USDT:USDT | below_1h_threshold | +0.73% | +0.91% |
+| COS/USDT:USDT | below_1h_threshold | +0.65% | +0.83% |
 
 ## 5. 次に見るべき不足
 
