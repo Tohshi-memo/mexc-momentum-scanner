@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-13T03:03:03.954492+00:00
+- generated_at: 2026-05-13T03:08:02.696815+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4180**
+- closed shadow trades: **4181**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.21% / filled 20/20。**
-- 全期間 MARKET基準: n=4180, expectancy=-0.12%
+- 全期間 MARKET基準: n=4181, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+1.21%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT | 19/20 | 95.0% | +2.15% | **+2.04%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +1.87% | **+1.40%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +2.00% | **+1.50%** |
 | MARKET | 20/20 | 100.0% | +1.21% | **+1.21%** |
+| LIMIT_ATR | 14/20 | 70.0% | +1.42% | **+1.00%** |
 | ASK | 20/20 | 100.0% | +0.96% | **+0.96%** |
-| LIMIT_ATR | 14/20 | 70.0% | +1.27% | **+0.89%** |
 
 ### シャドウ上位 LONG
 
@@ -34,8 +34,8 @@
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +4.55% | **+0.91%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +2.08% | **+0.83%** |
 | LIMIT_8PCT_LONG | 6/20 | 30.0% | +1.33% | **+0.40%** |
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | -0.14% | **-0.12%** |
 | LIMIT_6PCT_LONG | 8/20 | 40.0% | -0.46% | **-0.18%** |
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | -0.47% | **-0.26%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$120.56** / 初期 $100.00 (+20.56%)
-- 確定: 316件 (Win 91 / Loss 111 / Flat 114) / skip 425件
-- 成長率目線: 平均log +0.000592 / 幾何平均 +0.059% per trade / maxDD +4.21%
+- 残高: **$119.96** / 初期 $100.00 (+19.96%)
+- 確定: 317件 (Win 91 / Loss 112 / Flat 114) / skip 425件
+- 成長率目線: 平均log +0.000574 / 幾何平均 +0.057% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EDU/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $120.56
+- 最新: IRYS/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $119.96
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T03:03:00.603982+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81029.5
+- 更新: 2026-05-13T03:07:59.223013+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=81007.4
 - Funnel: target 763 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +27.72% | $2,781,613.37 |
-| PEAQ/USDT:USDT | +22.26% | $2,278,969.05 |
-| ARKM/USDT:USDT | +13.39% | $1,025,979.18 |
-| SATO/USDT:USDT | +13.27% | $1,051,416.80 |
-| TIA/USDT:USDT | +12.78% | $27,948,354.28 |
+| IRYS/USDT:USDT | +30.27% | $2,849,763.11 |
+| PEAQ/USDT:USDT | +19.64% | $2,298,092.78 |
+| ARKM/USDT:USDT | +13.47% | $1,038,231.88 |
+| SATO/USDT:USDT | +13.26% | $1,052,232.65 |
+| TIA/USDT:USDT | +12.76% | $28,138,445.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.22% | +1.21% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.49% | +0.48% |
-| BASED/USDT:USDT | below_1h_threshold | +0.30% | +0.28% |
-| ARKM/USDT:USDT | below_1h_threshold | +0.27% | +0.25% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.38% | +3.39% |
+| SATO/USDT:USDT | below_1h_threshold | +1.90% | +1.92% |
+| UB/USDT:USDT | below_1h_threshold | +1.45% | +1.46% |
+| VELO/USDT:USDT | below_1h_threshold | +1.14% | +1.16% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
 
 ## 5. 次に見るべき不足
 
