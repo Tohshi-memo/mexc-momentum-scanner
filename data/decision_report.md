@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T17:23:17.636651+00:00
+- generated_at: 2026-05-13T17:28:31.312929+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4238**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T17:23:11.913865+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=79272.1
-- Funnel: target 765 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-13T17:28:25.511951+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=79334.5
+- Funnel: target 765 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +8.17% | $3,790,138.12 |
-| UP/USDT:USDT | +6.70% | $5,189,686.98 |
-| IRYS/USDT:USDT | +6.18% | $5,894,473.42 |
-| VELO/USDT:USDT | +5.69% | $1,959,324.14 |
-| H/USDT:USDT | +5.51% | $5,871,348.83 |
+| UP/USDT:USDT | +8.38% | $5,201,181.32 |
+| GUA/USDT:USDT | +7.65% | $3,800,795.78 |
+| SAGA/USDT:USDT | +6.96% | $44,962,939.50 |
+| VELO/USDT:USDT | +6.15% | $1,961,177.59 |
+| TRUTH/USDT:USDT | +5.76% | $4,149,262.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.45% | +3.19% |
-| BILL/USDT:USDT | below_1h_threshold | +2.48% | +2.22% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.35% | +2.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.31% | +2.05% |
-| VELO/USDT:USDT | below_1h_threshold | +2.23% | +1.98% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.96% | +4.62% |
+| GUA/USDT:USDT | below_1h_threshold | +2.97% | +2.64% |
+| VELO/USDT:USDT | below_1h_threshold | +2.68% | +2.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.38% | +2.04% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.08% | +1.74% |
 
 ## 5. 次に見るべき不足
 
