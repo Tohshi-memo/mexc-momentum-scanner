@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T08:43:10.869655+00:00
+- generated_at: 2026-05-13T08:48:10.707414+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4202**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T08:43:04.437385+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=81087.5
-- Funnel: target 764 → liquid 189 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 75.7 >= 65=1, 4h RSI 78.5 >= 65=1, 4h RSI 93.1 >= 65=1
+- 更新: 2026-05-13T08:48:04.448820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=81123.6
+- Funnel: target 764 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.8 >= 65=1, 4h RSI 78.8 >= 65=1, 4h RSI 69.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COS/USDT:USDT | +48.04% | $1,480,007.13 |
-| IRYS/USDT:USDT | +29.59% | $6,594,501.57 |
-| UB/USDT:USDT | +21.83% | $4,619,612.02 |
-| SATO/USDT:USDT | +20.28% | $1,305,205.97 |
-| LAB/USDT:USDT | +19.50% | $105,893,216.52 |
+| COS/USDT:USDT | +47.14% | $1,497,761.91 |
+| IRYS/USDT:USDT | +25.35% | $6,647,394.71 |
+| UB/USDT:USDT | +22.41% | $4,771,768.90 |
+| SATO/USDT:USDT | +21.06% | $1,306,979.86 |
+| LAB/USDT:USDT | +20.08% | $106,288,083.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +3.87% | +3.74% |
-| FF/USDT:USDT | below_1h_threshold | +3.06% | +2.92% |
-| BASED/USDT:USDT | below_1h_threshold | +2.28% | +2.15% |
-| KITE/USDT:USDT | below_1h_threshold | +2.26% | +2.13% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.04% |
+| COS/USDT:USDT | below_1h_threshold | +4.69% | +4.52% |
+| JTO/USDT:USDT | below_1h_threshold | +2.83% | +2.65% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.75% | +2.58% |
+| BASED/USDT:USDT | below_1h_threshold | +2.72% | +2.55% |
+| KITE/USDT:USDT | below_1h_threshold | +2.38% | +2.21% |
 
 ## 5. 次に見るべき不足
 
