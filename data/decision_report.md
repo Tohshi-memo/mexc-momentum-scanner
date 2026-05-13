@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T03:53:10.507736+00:00
+- generated_at: 2026-05-13T03:58:01.128072+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4184**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T03:53:04.101151+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=81186.3
-- Funnel: target 763 → liquid 185 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.3 >= 65=1, 4h RSI 76.0 >= 65=1
+- 更新: 2026-05-13T03:57:55.529260+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=81172.3
+- Funnel: target 763 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +26.07% | $3,327,520.35 |
-| SATO/USDT:USDT | +18.10% | $1,082,416.21 |
-| LAB/USDT:USDT | +16.72% | $104,803,008.78 |
-| GUA/USDT:USDT | +14.58% | $3,915,325.25 |
-| EIGEN/USDT:USDT | +13.65% | $1,570,706.44 |
+| IRYS/USDT:USDT | +31.69% | $3,389,461.63 |
+| LAB/USDT:USDT | +17.26% | $104,985,255.41 |
+| SATO/USDT:USDT | +16.96% | $1,087,713.28 |
+| PEAQ/USDT:USDT | +15.36% | $2,424,908.06 |
+| EIGEN/USDT:USDT | +14.39% | $1,576,383.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.38% | +4.17% |
-| INX/USDT:USDT | below_1h_threshold | +2.79% | +2.58% |
-| VELO/USDT:USDT | below_1h_threshold | +2.64% | +2.43% |
-| UB/USDT:USDT | below_1h_threshold | +2.16% | +1.95% |
-| TRUTH/USDT:USDT | below_1h_threshold | +1.95% | +1.74% |
+| LAB/USDT:USDT | below_relative_strength | +5.08% | +4.89% |
+| SATO/USDT:USDT | below_1h_threshold | +4.92% | +4.73% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.52% | +4.33% |
+| VIC/USDT:USDT | below_1h_threshold | +4.25% | +4.06% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.95% | +2.76% |
 
 ## 5. 次に見るべき不足
 
