@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-13T01:12:52.102768+00:00
+- generated_at: 2026-05-13T01:17:57.814321+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4176**
+- closed shadow trades: **4177**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.82% / filled 20/20。**
-- 全期間 MARKET基準: n=4176, expectancy=-0.12%
+- 全期間 MARKET基準: n=4177, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+0.82%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | LIMIT_1PCT | 19/20 | 95.0% | +1.17% | **+1.11%** |
 | LIMIT_FIB1272 | 7/20 | 35.0% | +2.74% | **+0.96%** |
 | MARKET | 20/20 | 100.0% | +0.82% | **+0.82%** |
-| ASK | 20/20 | 100.0% | +0.53% | **+0.53%** |
+| ASK | 20/20 | 100.0% | +0.59% | **+0.59%** |
 | LIMIT_2PCT | 15/20 | 75.0% | +0.56% | **+0.42%** |
 
 ### シャドウ上位 LONG
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$121.17** / 初期 $100.00 (+21.17%)
-- 確定: 312件 (Win 91 / Loss 110 / Flat 111) / skip 425件
-- 成長率目線: 平均log +0.000615 / 幾何平均 +0.062% per trade / maxDD +4.21%
+- 残高: **$120.56** / 初期 $100.00 (+20.56%)
+- 確定: 313件 (Win 91 / Loss 111 / Flat 111) / skip 425件
+- 成長率目線: 平均log +0.000597 / 幾何平均 +0.060% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SATO/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $121.17
+- 最新: DYM/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $120.56
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T01:12:49.080306+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=80900.0
+- 更新: 2026-05-13T01:17:54.515921+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=80831.3
 - Funnel: target 759 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +15.34% | $1,067,971.76 |
-| IRYS/USDT:USDT | +14.27% | $2,178,413.69 |
-| AKT/USDT:USDT | +13.80% | $2,704,222.00 |
-| PEAQ/USDT:USDT | +12.89% | $2,143,937.82 |
-| VIC/USDT:USDT | +10.75% | $6,918,172.12 |
+| SATO/USDT:USDT | +15.57% | $1,071,822.97 |
+| IRYS/USDT:USDT | +14.95% | $2,187,074.68 |
+| AKT/USDT:USDT | +14.58% | $2,718,454.16 |
+| PEAQ/USDT:USDT | +14.22% | $2,153,588.11 |
+| LAB/USDT:USDT | +8.99% | $105,772,421.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +2.28% | +2.00% |
-| PEAQ/USDT:USDT | below_1h_threshold | +1.98% | +1.70% |
-| TURBO/USDT:USDT | below_1h_threshold | +1.92% | +1.64% |
-| BRETT/USDT:USDT | below_1h_threshold | +1.92% | +1.64% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.85% | +1.57% |
+| PEAQ/USDT:USDT | below_1h_threshold | +3.14% | +2.94% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.48% | +2.28% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.24% | +2.04% |
+| AKT/USDT:USDT | below_1h_threshold | +1.98% | +1.79% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.91% | +1.71% |
 
 ## 5. 次に見るべき不足
 
