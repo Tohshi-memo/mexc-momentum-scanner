@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T02:38:08.334591+00:00
+- generated_at: 2026-05-13T02:43:07.375809+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4179**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T02:38:02.656331+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=81025.7
-- Funnel: target 763 → liquid 187 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-13T02:43:01.802017+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=81003.0
+- Funnel: target 763 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +26.92% | $2,657,731.81 |
-| PEAQ/USDT:USDT | +21.07% | $2,233,997.66 |
-| SATO/USDT:USDT | +15.57% | $1,084,124.73 |
-| AKT/USDT:USDT | +13.87% | $2,934,207.52 |
-| ARKM/USDT:USDT | +12.78% | $1,023,584.35 |
+| IRYS/USDT:USDT | +23.54% | $2,686,925.02 |
+| PEAQ/USDT:USDT | +20.59% | $2,235,021.53 |
+| AKT/USDT:USDT | +14.55% | $2,937,353.13 |
+| SATO/USDT:USDT | +14.51% | $1,090,434.20 |
+| ARKM/USDT:USDT | +12.78% | $1,029,985.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +4.67% | +4.59% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.75% | +3.67% |
-| PEAQ/USDT:USDT | below_1h_threshold | +3.46% | +3.37% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.36% | +2.28% |
-| ARKM/USDT:USDT | below_1h_threshold | +2.21% | +2.13% |
+| PEAQ/USDT:USDT | below_1h_threshold | +3.05% | +3.00% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.82% | +2.77% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.33% | +2.28% |
+| AKT/USDT:USDT | below_1h_threshold | +2.23% | +2.17% |
+| ARKM/USDT:USDT | below_1h_threshold | +2.21% | +2.15% |
 
 ## 5. 次に見るべき不足
 
