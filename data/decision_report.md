@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T16:18:17.012730+00:00
+- generated_at: 2026-05-13T16:23:26.732693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4235**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T16:18:10.868557+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=78852.5
-- Funnel: target 765 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1
+- 更新: 2026-05-13T16:23:22.837399+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=78942.6
+- Funnel: target 765 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.9 >= 65=1, 4h RSI 90.9 >= 65=1, 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +7.57% | $5,278,247.50 |
-| BILL/USDT:USDT | +5.50% | $26,556,715.20 |
-| COS/USDT:USDT | +4.97% | $2,358,413.98 |
-| LAB/USDT:USDT | +4.18% | $157,388,029.13 |
-| VELO/USDT:USDT | +2.61% | $1,969,856.57 |
+| UP/USDT:USDT | +9.30% | $5,298,554.63 |
+| VELVET/USDT:USDT | +5.58% | $1,011,090.05 |
+| UB/USDT:USDT | +5.45% | $10,421,817.91 |
+| LAB/USDT:USDT | +5.19% | $158,435,249.05 |
+| COS/USDT:USDT | +4.27% | $2,369,237.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COS/USDT:USDT | below_1h_threshold | +4.91% | +4.84% |
-| LAB/USDT:USDT | below_1h_threshold | +3.88% | +3.81% |
-| VELO/USDT:USDT | below_1h_threshold | +2.62% | +2.54% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.44% | +2.37% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.41% | +2.34% |
+| LAB/USDT:USDT | below_relative_strength | +5.06% | +4.87% |
+| COS/USDT:USDT | below_1h_threshold | +4.28% | +4.09% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.57% | +3.38% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +2.83% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.82% | +2.63% |
 
 ## 5. 次に見るべき不足
 
