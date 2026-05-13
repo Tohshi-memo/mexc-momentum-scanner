@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T19:08:18.128490+00:00
+- generated_at: 2026-05-13T19:13:26.901973+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4246**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T19:08:15.250210+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=79443.5
-- Funnel: target 760 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-13T19:13:23.453782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=79475.5
+- Funnel: target 760 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +31.96% | $1,157,927.51 |
-| GUA/USDT:USDT | +14.69% | $3,693,374.69 |
-| AIN/USDT:USDT | +12.50% | $1,112,043.79 |
-| BEAT/USDT:USDT | +12.23% | $2,104,255.56 |
-| UP/USDT:USDT | +9.53% | $4,741,732.56 |
+| TROLLSOL/USDT:USDT | +37.41% | $1,222,538.46 |
+| GUA/USDT:USDT | +13.76% | $3,741,602.28 |
+| BEAT/USDT:USDT | +12.83% | $2,138,641.04 |
+| UP/USDT:USDT | +10.23% | $4,747,670.31 |
+| H/USDT:USDT | +9.81% | $5,675,218.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +4.69% | +4.83% |
-| JCT/USDT:USDT | below_1h_threshold | +2.26% | +2.40% |
-| AIN/USDT:USDT | below_1h_threshold | +1.21% | +1.35% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.97% | +1.11% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.99% |
+| JCT/USDT:USDT | below_1h_threshold | +2.48% | +2.58% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.50% | +1.60% |
+| H/USDT:USDT | below_1h_threshold | +1.07% | +1.17% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.17% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.86% |
 
 ## 5. 次に見るべき不足
 
