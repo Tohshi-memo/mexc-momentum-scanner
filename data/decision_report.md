@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T14:03:04.953150+00:00
+- generated_at: 2026-05-13T14:07:36.717633+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4227**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T14:03:01.738712+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=79608.8
-- Funnel: target 765 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-13T14:07:34.038037+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=79704.9
+- Funnel: target 765 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +39.26% | $132,470,933.49 |
-| COS/USDT:USDT | +35.99% | $1,841,677.28 |
-| UB/USDT:USDT | +29.04% | $10,410,188.64 |
-| TRUTH/USDT:USDT | +27.43% | $3,790,353.84 |
-| JCT/USDT:USDT | +26.62% | $1,098,913.88 |
+| LAB/USDT:USDT | +41.20% | $133,456,985.29 |
+| COS/USDT:USDT | +34.20% | $1,849,782.48 |
+| JCT/USDT:USDT | +27.69% | $1,107,511.08 |
+| TRUTH/USDT:USDT | +26.93% | $3,803,304.50 |
+| UB/USDT:USDT | +26.56% | $10,488,915.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
-| TRUTH/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
-| COS/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
-| BILL/USDT:USDT | below_1h_threshold | +0.58% | +0.59% |
-| UB/USDT:USDT | below_1h_threshold | +0.47% | +0.48% |
+| FF/USDT:USDT | below_1h_threshold | +2.21% | +2.10% |
+| BABASTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.50% |
+| LAB/USDT:USDT | below_1h_threshold | +1.33% | +1.22% |
+| STX/USDT:USDT | below_1h_threshold | +1.19% | +1.08% |
+| AKT/USDT:USDT | below_1h_threshold | +1.10% | +0.99% |
 
 ## 5. 次に見るべき不足
 
