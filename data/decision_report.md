@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T15:53:11.074905+00:00
+- generated_at: 2026-05-13T15:58:04.340843+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4233**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T15:53:07.913558+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.82% price=79072.9
+- 更新: 2026-05-13T15:58:01.186013+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.03% price=78905.1
 - Funnel: target 765 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COS/USDT:USDT | +46.09% | $2,267,490.52 |
-| LAB/USDT:USDT | +31.21% | $154,865,570.37 |
-| TRUTH/USDT:USDT | +30.82% | $4,177,868.07 |
-| UB/USDT:USDT | +21.96% | $11,009,680.19 |
-| NBISSTOCK/USDT:USDT | +19.14% | $1,293,781.73 |
+| COS/USDT:USDT | +44.38% | $2,275,296.84 |
+| LAB/USDT:USDT | +29.98% | $156,232,533.02 |
+| TRUTH/USDT:USDT | +29.91% | $4,203,225.47 |
+| UB/USDT:USDT | +21.12% | $11,075,155.22 |
+| NBISSTOCK/USDT:USDT | +19.08% | $1,302,887.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUTH/USDT:USDT | below_1h_threshold | +2.38% | +3.20% |
-| INX/USDT:USDT | below_1h_threshold | +1.83% | +2.65% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.64% | +2.46% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.25% | +2.07% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.93% |
+| INX/USDT:USDT | below_1h_threshold | +1.99% | +3.02% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.67% | +2.70% |
+| KITE/USDT:USDT | below_1h_threshold | +0.99% | +2.02% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.98% | +2.01% |
+| IRYS/USDT:USDT | below_1h_threshold | +0.96% | +1.99% |
 
 ## 5. 次に見るべき不足
 
