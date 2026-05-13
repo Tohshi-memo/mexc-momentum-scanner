@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T16:28:14.223868+00:00
+- generated_at: 2026-05-13T16:33:12.608680+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4235**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T16:28:10.540846+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=78984.3
-- Funnel: target 765 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 65.5 >= 65=1
+- 更新: 2026-05-13T16:33:09.230161+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=79060.0
+- Funnel: target 765 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +9.82% | $5,312,600.48 |
-| LAB/USDT:USDT | +5.71% | $159,183,284.50 |
-| COS/USDT:USDT | +5.02% | $2,374,844.46 |
-| UB/USDT:USDT | +3.74% | $10,468,237.00 |
-| VELO/USDT:USDT | +3.48% | $1,974,663.46 |
+| UP/USDT:USDT | +6.99% | $5,350,903.13 |
+| COS/USDT:USDT | +4.45% | $2,381,328.19 |
+| LAB/USDT:USDT | +4.01% | $159,856,272.04 |
+| VELO/USDT:USDT | +3.97% | $1,977,996.81 |
+| H/USDT:USDT | +3.84% | $5,422,107.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COS/USDT:USDT | below_1h_threshold | +4.97% | +4.73% |
-| UB/USDT:USDT | below_1h_threshold | +3.75% | +3.51% |
-| VELO/USDT:USDT | below_1h_threshold | +3.49% | +3.25% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.26% | +3.03% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.67% |
+| COS/USDT:USDT | below_1h_threshold | +4.45% | +4.12% |
+| VELO/USDT:USDT | below_1h_threshold | +4.13% | +3.79% |
+| LAB/USDT:USDT | below_1h_threshold | +3.91% | +3.57% |
+| H/USDT:USDT | below_1h_threshold | +3.84% | +3.51% |
+| GUA/USDT:USDT | below_1h_threshold | +3.39% | +3.06% |
 
 ## 5. 次に見るべき不足
 
