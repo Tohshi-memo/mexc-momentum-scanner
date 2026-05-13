@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T23:08:02.573313+00:00
+- generated_at: 2026-05-13T23:13:25.956874+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4257**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T23:07:59.384493+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=79345.8
-- Funnel: target 760 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-13T23:13:22.768002+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=79354.5
+- Funnel: target 760 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +25.34% | $1,613,220.79 |
-| CSCOSTOCK/USDT:USDT | +19.49% | $4,180,519.08 |
-| UP/USDT:USDT | +15.72% | $4,802,809.38 |
-| AIN/USDT:USDT | +14.66% | $2,333,131.87 |
-| IRYS/USDT:USDT | +14.57% | $5,784,067.28 |
+| TROLLSOL/USDT:USDT | +24.15% | $1,618,866.58 |
+| CSCOSTOCK/USDT:USDT | +19.54% | $4,193,657.23 |
+| UP/USDT:USDT | +17.51% | $4,806,483.00 |
+| IRYS/USDT:USDT | +15.10% | $5,799,405.86 |
+| AIN/USDT:USDT | +13.96% | $2,341,490.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.37% | +1.43% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.18% | +1.25% |
-| LAB/USDT:USDT | below_1h_threshold | +1.07% | +1.14% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.48% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.42% | +0.48% |
+| UP/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
+| GUA/USDT:USDT | below_1h_threshold | +1.65% | +1.70% |
+| LAB/USDT:USDT | below_1h_threshold | +1.64% | +1.69% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.52% | +1.57% |
+| GIGA/USDT:USDT | below_1h_threshold | +1.24% | +1.29% |
 
 ## 5. 次に見るべき不足
 
