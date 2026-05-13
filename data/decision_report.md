@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T07:53:01.486120+00:00
+- generated_at: 2026-05-13T07:58:09.466348+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4199**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T07:52:57.863715+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80911.2
-- Funnel: target 765 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.8 >= 65=1, 4h RSI 89.2 >= 65=1
+- 更新: 2026-05-13T07:58:05.705440+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=80944.2
+- Funnel: target 765 → liquid 192 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 89.3 >= 65=1, 4h RSI 67.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COS/USDT:USDT | +44.29% | $1,194,979.94 |
-| IRYS/USDT:USDT | +19.19% | $6,052,423.44 |
-| LAB/USDT:USDT | +18.91% | $107,149,135.32 |
-| SATO/USDT:USDT | +18.25% | $1,287,688.97 |
-| INJ/USDT:USDT | +17.86% | $62,244,896.46 |
+| COS/USDT:USDT | +43.64% | $1,204,285.54 |
+| SATO/USDT:USDT | +19.06% | $1,291,578.06 |
+| LAB/USDT:USDT | +18.15% | $107,426,140.15 |
+| INJ/USDT:USDT | +17.90% | $63,093,493.25 |
+| TRUTH/USDT:USDT | +14.87% | $2,158,806.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROSE/USDT:USDT | below_1h_threshold | +4.97% | +5.01% |
-| INJ/USDT:USDT | below_1h_threshold | +3.84% | +3.89% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.25% | +3.29% |
-| STX/USDT:USDT | below_1h_threshold | +2.60% | +2.64% |
-| MITO/USDT:USDT | below_1h_threshold | +2.40% | +2.44% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +4.57% | +4.58% |
+| INJ/USDT:USDT | below_1h_threshold | +3.83% | +3.83% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.23% | +3.23% |
+| MITO/USDT:USDT | below_1h_threshold | +2.48% | +2.48% |
+| STX/USDT:USDT | below_1h_threshold | +2.42% | +2.42% |
 
 ## 5. 次に見るべき不足
 
