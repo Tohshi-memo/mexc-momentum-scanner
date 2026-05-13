@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-13T15:13:26.233134+00:00
+- generated_at: 2026-05-13T15:18:23.725869+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4231**
+- closed shadow trades: **4232**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4231, expectancy=-0.12%
+- 全期間 MARKET基準: n=4232, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=-0.48%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -34,8 +34,8 @@
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.32% | **+1.12%** |
 | ASK_LONG | 20/20 | 100.0% | +0.90% | **+0.90%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.74% | **+0.74%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +2.82% | **+0.56%** |
 | LIMIT_3PCT_LONG | 10/20 | 50.0% | +1.09% | **+0.55%** |
+| LIMIT_7PCT_LONG | 4/20 | 20.0% | +2.73% | **+0.55%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$119.78** / 初期 $100.00 (+19.78%)
-- 確定: 341件 (Win 94 / Loss 124 / Flat 123) / skip 451件
+- 確定: 341件 (Win 94 / Loss 124 / Flat 123) / skip 452件
 - 成長率目線: 平均log +0.000529 / 幾何平均 +0.053% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: UB/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.01% 残高後 $119.78
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T15:13:22.684127+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=79476.8
-- Funnel: target 765 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-13T15:18:20.031353+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=79421.4
+- Funnel: target 765 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.8 >= 65=1
+- Strict後reject: 4h RSI 81.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COS/USDT:USDT | +59.93% | $2,057,059.14 |
-| LAB/USDT:USDT | +45.07% | $141,657,811.92 |
-| TRUTH/USDT:USDT | +30.33% | $4,076,131.15 |
-| JCT/USDT:USDT | +27.15% | $1,161,652.77 |
-| UB/USDT:USDT | +26.11% | $10,967,903.43 |
+| COS/USDT:USDT | +63.11% | $2,102,424.86 |
+| LAB/USDT:USDT | +42.32% | $142,500,132.68 |
+| TRUTH/USDT:USDT | +30.97% | $4,103,767.65 |
+| JCT/USDT:USDT | +27.04% | $1,164,929.15 |
+| UB/USDT:USDT | +26.25% | $10,979,258.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KITE/USDT:USDT | below_1h_threshold | +2.55% | +2.86% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.12% | +2.44% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.00% | +2.32% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.91% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.78% | +1.10% |
+| KITE/USDT:USDT | below_1h_threshold | +3.13% | +3.52% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.54% | +2.93% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +2.85% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.28% | +2.66% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.16% | +1.54% |
 
 ## 5. 次に見るべき不足
 
