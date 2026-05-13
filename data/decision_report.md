@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T15:43:06.254224+00:00
+- generated_at: 2026-05-13T15:48:06.893255+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4233**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T15:43:03.186401+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=79270.0
-- Funnel: target 765 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-13T15:48:03.722589+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.67% price=79190.2
+- Funnel: target 765 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COS/USDT:USDT | +48.37% | $2,292,408.54 |
-| LAB/USDT:USDT | +32.22% | $154,840,457.40 |
-| TRUTH/USDT:USDT | +29.07% | $4,230,803.45 |
-| UB/USDT:USDT | +24.00% | $11,164,447.75 |
-| JCT/USDT:USDT | +20.83% | $1,225,973.16 |
+| COS/USDT:USDT | +43.81% | $2,257,156.33 |
+| LAB/USDT:USDT | +34.29% | $153,377,576.52 |
+| TRUTH/USDT:USDT | +30.88% | $4,158,880.65 |
+| UB/USDT:USDT | +23.65% | $10,942,365.24 |
+| NBISSTOCK/USDT:USDT | +19.54% | $1,290,835.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KITE/USDT:USDT | below_1h_threshold | +2.05% | +2.63% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.01% | +2.59% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +2.49% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +2.34% |
-| BABASTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.65% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.43% | +3.10% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +2.41% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.69% | +2.37% |
+| KITE/USDT:USDT | below_1h_threshold | +1.53% | +2.20% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +2.20% |
 
 ## 5. 次に見るべき不足
 
