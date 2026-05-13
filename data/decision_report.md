@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T00:23:24.785178+00:00
+- generated_at: 2026-05-13T00:28:02.051897+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4171**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T00:23:18.541819+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80586.6
+- 更新: 2026-05-13T00:27:56.058283+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=80672.2
 - Funnel: target 758 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1
+- Strict後reject: 4h RSI 83.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYM/USDT:USDT | +13.79% | $2,864,393.45 |
-| IRYS/USDT:USDT | +10.64% | $2,202,277.43 |
-| AKT/USDT:USDT | +10.38% | $2,686,223.23 |
-| LAB/USDT:USDT | +9.55% | $107,081,494.99 |
-| VIC/USDT:USDT | +9.55% | $6,657,631.35 |
+| DYM/USDT:USDT | +14.44% | $2,888,570.04 |
+| VIC/USDT:USDT | +11.74% | $6,688,794.19 |
+| IRYS/USDT:USDT | +11.01% | $2,204,966.52 |
+| AKT/USDT:USDT | +10.69% | $2,689,894.86 |
+| LAB/USDT:USDT | +9.53% | $107,212,395.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +2.91% | +2.75% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.90% | +1.74% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.89% | +1.73% |
-| JUP/USDT:USDT | below_1h_threshold | +1.81% | +1.66% |
-| KITE/USDT:USDT | below_1h_threshold | +1.72% | +1.57% |
+| CHZ/USDT:USDT | below_1h_threshold | +2.27% | +2.01% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.24% | +1.98% |
+| BRETT/USDT:USDT | below_1h_threshold | +1.97% | +1.71% |
+| BASED/USDT:USDT | below_1h_threshold | +1.92% | +1.66% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.88% | +1.62% |
 
 ## 5. 次に見るべき不足
 
