@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-13T06:13:01.359365+00:00
+- generated_at: 2026-05-13T06:17:55.773760+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4190**
+- closed shadow trades: **4191**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.92% / filled 20/20。**
-- 全期間 MARKET基準: n=4190, expectancy=-0.12%
+- 全期間 MARKET基準: n=4191, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+0.92%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +1.19% | **+0.48%** |
 | LIMIT_4PCT_LONG | 12/20 | 60.0% | +0.36% | **+0.21%** |
-| LIMIT_FIB1272_LONG | 12/20 | 60.0% | +0.28% | **+0.17%** |
+| LIMIT_9PCT_LONG | 2/20 | 10.0% | +1.10% | **+0.11%** |
 | LIMIT_8PCT_LONG | 7/20 | 35.0% | +0.00% | **+0.00%** |
+| LIMIT_FIB1272_LONG | 12/20 | 60.0% | -0.04% | **-0.02%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$120.17** / 初期 $100.00 (+20.17%)
-- 確定: 326件 (Win 92 / Loss 116 / Flat 118) / skip 425件
-- 成長率目線: 平均log +0.000564 / 幾何平均 +0.056% per trade / maxDD +4.21%
+- 残高: **$119.57** / 初期 $100.00 (+19.57%)
+- 確定: 327件 (Win 92 / Loss 117 / Flat 118) / skip 425件
+- 成長率目線: 平均log +0.000546 / 幾何平均 +0.055% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: GUA/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.14% 残高後 $120.17
+- 最新: TROLLSOL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $119.57
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T06:12:58.164372+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81055.6
+- 更新: 2026-05-13T06:17:52.442275+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=81068.8
 - Funnel: target 765 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +39.77% | $4,317,089.99 |
-| SATO/USDT:USDT | +25.51% | $1,220,849.98 |
-| GUA/USDT:USDT | +24.73% | $3,999,477.29 |
-| LAB/USDT:USDT | +19.74% | $105,872,538.22 |
-| PEAQ/USDT:USDT | +12.89% | $2,563,253.94 |
+| IRYS/USDT:USDT | +40.98% | $4,384,343.62 |
+| SATO/USDT:USDT | +25.38% | $1,223,459.06 |
+| GUA/USDT:USDT | +22.03% | $4,039,852.13 |
+| LAB/USDT:USDT | +19.88% | $106,179,498.00 |
+| INJ/USDT:USDT | +13.49% | $55,728,204.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +1.66% | +1.58% |
-| UB/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
-| GUA/USDT:USDT | below_1h_threshold | +1.18% | +1.09% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +0.72% | +0.63% |
-| STX/USDT:USDT | below_1h_threshold | +0.61% | +0.52% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.55% | +2.44% |
+| XPL/USDT:USDT | below_1h_threshold | +0.91% | +0.80% |
+| UB/USDT:USDT | below_1h_threshold | +0.75% | +0.64% |
+| SPX/USDT:USDT | below_1h_threshold | +0.74% | +0.64% |
+| STX/USDT:USDT | below_1h_threshold | +0.68% | +0.58% |
 
 ## 5. 次に見るべき不足
 
