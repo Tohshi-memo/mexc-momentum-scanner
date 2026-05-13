@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-13T08:25:33.474732+00:00
+- generated_at: 2026-05-13T08:28:15.837701+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4200**
+- closed shadow trades: **4201**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=4200, expectancy=-0.12%
+- 全期間 MARKET基準: n=4201, expectancy=-0.12%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,18 +24,18 @@
 | ASK | 20/20 | 100.0% | +0.97% | **+0.97%** |
 | LIMIT_3PCT | 14/20 | 70.0% | +1.38% | **+0.96%** |
 | MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| LIMIT_5PCT | 6/20 | 30.0% | +2.13% | **+0.64%** |
-| LIMIT_ATR | 14/20 | 70.0% | +0.87% | **+0.61%** |
+| LIMIT_ATR | 14/20 | 70.0% | +0.97% | **+0.68%** |
+| LIMIT_5PCT | 5/20 | 25.0% | +2.36% | **+0.59%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1272_LONG | 11/20 | 55.0% | +0.91% | **+0.50%** |
-| LIMIT_2PCT_LONG | 16/20 | 80.0% | +0.55% | **+0.44%** |
-| LIMIT_3PCT_LONG | 13/20 | 65.0% | +0.56% | **+0.36%** |
-| LIMIT_ATR_LONG | 13/20 | 65.0% | +0.44% | **+0.28%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | +0.19% | **+0.17%** |
 | LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.12% | **+0.06%** |
+| LIMIT_2PCT_LONG | 15/20 | 75.0% | +0.05% | **+0.04%** |
+| LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.06% | **+0.02%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$120.75** / 初期 $100.00 (+20.75%)
-- 確定: 336件 (Win 94 / Loss 119 / Flat 123) / skip 425件
-- 成長率目線: 平均log +0.000561 / 幾何平均 +0.056% per trade / maxDD +4.21%
+- 残高: **$120.73** / 初期 $100.00 (+20.73%)
+- 確定: 337件 (Win 94 / Loss 120 / Flat 123) / skip 425件
+- 成長率目線: 平均log +0.000559 / 幾何平均 +0.056% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: TRUTH/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $120.75
+- 最新: IRYS/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.02% 残高後 $120.73
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T08:25:29.865898+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81018.0
-- Funnel: target 765 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 74.4 >= 65=1
+- 更新: 2026-05-13T08:28:10.267501+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=81040.1
+- Funnel: target 765 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 74.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COS/USDT:USDT | +40.79% | $1,392,164.49 |
-| IRYS/USDT:USDT | +25.80% | $6,469,232.77 |
-| SATO/USDT:USDT | +22.32% | $1,294,759.11 |
-| INJ/USDT:USDT | +18.65% | $68,073,214.54 |
-| LAB/USDT:USDT | +18.53% | $104,914,646.03 |
+| COS/USDT:USDT | +45.35% | $1,402,819.41 |
+| IRYS/USDT:USDT | +27.84% | $6,510,309.26 |
+| SATO/USDT:USDT | +22.12% | $1,296,870.71 |
+| INJ/USDT:USDT | +18.50% | $68,671,555.74 |
+| LAB/USDT:USDT | +18.27% | $105,019,441.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.94% | +4.89% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +4.00% | +3.96% |
-| JTO/USDT:USDT | below_1h_threshold | +2.95% | +2.90% |
-| FF/USDT:USDT | below_1h_threshold | +2.55% | +2.50% |
-| WIF/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
+| COS/USDT:USDT | below_1h_threshold | +3.71% | +3.64% |
+| JTO/USDT:USDT | below_1h_threshold | +3.32% | +3.25% |
+| UB/USDT:USDT | below_1h_threshold | +3.09% | +3.02% |
+| WIF/USDT:USDT | below_1h_threshold | +2.29% | +2.22% |
+| SATO/USDT:USDT | below_1h_threshold | +2.11% | +2.04% |
 
 ## 5. 次に見るべき不足
 
