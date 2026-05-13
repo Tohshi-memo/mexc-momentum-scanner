@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T08:33:10.334257+00:00
+- generated_at: 2026-05-13T08:38:00.061892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4201**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T08:33:03.964649+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80927.7
-- Funnel: target 764 → liquid 188 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1, 4h RSI 74.7 >= 65=1
+- 更新: 2026-05-13T08:37:55.964543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=80997.0
+- Funnel: target 764 → liquid 188 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.6 >= 65=1, 4h RSI 75.1 >= 65=1, 4h RSI 77.9 >= 65=1, 4h RSI 93.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COS/USDT:USDT | +46.00% | $1,428,042.06 |
-| IRYS/USDT:USDT | +28.52% | $6,535,762.80 |
-| SATO/USDT:USDT | +20.96% | $1,298,661.75 |
-| INJ/USDT:USDT | +18.37% | $69,049,048.85 |
-| LAB/USDT:USDT | +18.19% | $105,225,266.33 |
+| COS/USDT:USDT | +48.94% | $1,451,172.72 |
+| IRYS/USDT:USDT | +28.09% | $6,566,853.27 |
+| SATO/USDT:USDT | +20.60% | $1,302,738.16 |
+| UB/USDT:USDT | +20.53% | $4,490,318.01 |
+| LAB/USDT:USDT | +19.29% | $105,455,000.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.67% | +4.73% |
-| COS/USDT:USDT | below_1h_threshold | +3.71% | +3.77% |
-| FF/USDT:USDT | below_1h_threshold | +3.04% | +3.11% |
-| JTO/USDT:USDT | below_1h_threshold | +2.17% | +2.24% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.09% |
+| NAORIS/USDT:USDT | below_1h_threshold | +4.66% | +4.64% |
+| FF/USDT:USDT | below_1h_threshold | +3.01% | +2.99% |
+| JTO/USDT:USDT | below_1h_threshold | +2.71% | +2.69% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.21% |
+| TIA/USDT:USDT | below_1h_threshold | +2.01% | +1.99% |
 
 ## 5. 次に見るべき不足
 
