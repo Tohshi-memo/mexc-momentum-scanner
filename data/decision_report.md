@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T16:23:26.732693+00:00
+- generated_at: 2026-05-13T16:28:14.223868+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4235**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T16:23:22.837399+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=78942.6
-- Funnel: target 765 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1, 4h RSI 90.9 >= 65=1, 4h RSI 81.1 >= 65=1
+- 更新: 2026-05-13T16:28:10.540846+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=78984.3
+- Funnel: target 765 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 65.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +9.30% | $5,298,554.63 |
-| VELVET/USDT:USDT | +5.58% | $1,011,090.05 |
-| UB/USDT:USDT | +5.45% | $10,421,817.91 |
-| LAB/USDT:USDT | +5.19% | $158,435,249.05 |
-| COS/USDT:USDT | +4.27% | $2,369,237.79 |
+| UP/USDT:USDT | +9.82% | $5,312,600.48 |
+| LAB/USDT:USDT | +5.71% | $159,183,284.50 |
+| COS/USDT:USDT | +5.02% | $2,374,844.46 |
+| UB/USDT:USDT | +3.74% | $10,468,237.00 |
+| VELO/USDT:USDT | +3.48% | $1,974,663.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_relative_strength | +5.06% | +4.87% |
-| COS/USDT:USDT | below_1h_threshold | +4.28% | +4.09% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.57% | +3.38% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +2.83% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.82% | +2.63% |
+| COS/USDT:USDT | below_1h_threshold | +4.97% | +4.73% |
+| UB/USDT:USDT | below_1h_threshold | +3.75% | +3.51% |
+| VELO/USDT:USDT | below_1h_threshold | +3.49% | +3.25% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.26% | +3.03% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.67% |
 
 ## 5. 次に見るべき不足
 
