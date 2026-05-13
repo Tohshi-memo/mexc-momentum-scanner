@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T01:17:57.814321+00:00
+- generated_at: 2026-05-13T01:22:50.385956+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4177**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T01:17:54.515921+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=80831.3
+- 更新: 2026-05-13T01:22:47.346128+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=81023.7
 - Funnel: target 759 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +15.57% | $1,071,822.97 |
-| IRYS/USDT:USDT | +14.95% | $2,187,074.68 |
-| AKT/USDT:USDT | +14.58% | $2,718,454.16 |
-| PEAQ/USDT:USDT | +14.22% | $2,153,588.11 |
-| LAB/USDT:USDT | +8.99% | $105,772,421.64 |
+| IRYS/USDT:USDT | +15.75% | $2,208,865.34 |
+| AKT/USDT:USDT | +15.24% | $2,734,319.76 |
+| PEAQ/USDT:USDT | +14.41% | $2,154,576.49 |
+| SATO/USDT:USDT | +12.34% | $1,082,544.39 |
+| TIA/USDT:USDT | +9.29% | $26,292,376.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +3.14% | +2.94% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.48% | +2.28% |
-| BRETT/USDT:USDT | below_1h_threshold | +2.24% | +2.04% |
-| AKT/USDT:USDT | below_1h_threshold | +1.98% | +1.79% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.91% | +1.71% |
+| PEAQ/USDT:USDT | below_1h_threshold | +3.35% | +2.92% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.03% | +2.59% |
+| AKT/USDT:USDT | below_1h_threshold | +2.65% | +2.22% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.33% | +1.90% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.23% | +1.79% |
 
 ## 5. 次に見るべき不足
 
