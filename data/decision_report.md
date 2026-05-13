@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-13T12:02:58.543149+00:00
+- generated_at: 2026-05-13T12:06:08.056350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4221**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-13T12:02:37.870118+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80508.7
+- 更新: 2026-05-13T12:06:04.965639+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=80513.3
 - Funnel: target 765 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +39.07% | $121,069,462.01 |
-| COS/USDT:USDT | +26.54% | $1,752,474.46 |
-| INJ/USDT:USDT | +24.48% | $141,264,242.84 |
-| TRUTH/USDT:USDT | +22.54% | $3,132,808.26 |
-| UB/USDT:USDT | +20.00% | $9,652,868.23 |
+| LAB/USDT:USDT | +34.28% | $123,484,019.18 |
+| COS/USDT:USDT | +26.95% | $1,754,318.74 |
+| INJ/USDT:USDT | +24.67% | $143,292,418.50 |
+| UB/USDT:USDT | +21.30% | $9,700,970.87 |
+| TRUTH/USDT:USDT | +20.96% | $3,158,711.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.30% | +2.24% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.83% | +1.77% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.43% | +1.37% |
-| SATO/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
-| B/USDT:USDT | below_1h_threshold | +0.89% | +0.83% |
+| UB/USDT:USDT | below_1h_threshold | +3.49% | +3.43% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.01% | +1.94% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.61% | +1.54% |
+| COS/USDT:USDT | below_1h_threshold | +0.97% | +0.91% |
+| JTO/USDT:USDT | below_1h_threshold | +0.90% | +0.84% |
 
 ## 5. 次に見るべき不足
 
