@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T19:48:43.912846+00:00
+- generated_at: 2026-05-14T19:53:49.397057+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4309**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T19:48:40.812915+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=81353.5
+- 更新: 2026-05-14T19:53:44.636980+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=81391.0
 - Funnel: target 759 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +15.93% | $2,896,662.94 |
-| LAB/USDT:USDT | +7.31% | $128,973,284.38 |
-| TROLLSOL/USDT:USDT | +6.72% | $2,072,442.84 |
-| ONDSSTOCK/USDT:USDT | +5.79% | $1,419,431.66 |
-| NAORIS/USDT:USDT | +5.64% | $3,151,352.97 |
+| UP/USDT:USDT | +16.96% | $2,914,392.86 |
+| TROLLSOL/USDT:USDT | +7.44% | $2,080,253.84 |
+| LAB/USDT:USDT | +7.29% | $129,157,596.52 |
+| NAORIS/USDT:USDT | +5.75% | $3,161,952.16 |
+| ONDSSTOCK/USDT:USDT | +5.60% | $1,438,537.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +3.20% | +3.42% |
-| XAN/USDT:USDT | below_1h_threshold | +1.65% | +1.87% |
-| H/USDT:USDT | below_1h_threshold | +1.23% | +1.45% |
-| AIO/USDT:USDT | below_1h_threshold | +0.69% | +0.90% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.87% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.68% | +3.85% |
+| XAN/USDT:USDT | below_1h_threshold | +2.40% | +2.57% |
+| H/USDT:USDT | below_1h_threshold | +1.03% | +1.20% |
+| JCT/USDT:USDT | below_1h_threshold | +0.74% | +0.91% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.69% | +0.86% |
 
 ## 5. 次に見るべき不足
 
