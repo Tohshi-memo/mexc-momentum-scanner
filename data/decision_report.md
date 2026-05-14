@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T01:03:12.565601+00:00
+- generated_at: 2026-05-14T01:08:05.580381+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4262**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.70** / 初期 $100.00 (-2.30%)
-- 確定トレード: 40件 (TP 10 / SL 27 / EXP 3)
-- 最新: IRYS/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.70
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$97.21** / 初期 $100.00 (-2.79%)
+- 確定トレード: 41件 (TP 10 / SL 28 / EXP 3)
+- 最新: SAGA/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.21
+- 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T01:03:09.385990+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=79656.8
+- 更新: 2026-05-14T01:08:02.497079+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=79579.1
 - Funnel: target 761 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +26.38% | $1,868,793.18 |
-| IRYS/USDT:USDT | +24.64% | $6,081,622.23 |
-| UP/USDT:USDT | +22.94% | $4,913,621.55 |
-| CSCOSTOCK/USDT:USDT | +21.75% | $4,619,026.75 |
-| BB/USDT:USDT | +15.34% | $2,209,822.48 |
+| TROLLSOL/USDT:USDT | +26.50% | $1,873,160.75 |
+| UP/USDT:USDT | +23.00% | $4,919,445.16 |
+| IRYS/USDT:USDT | +22.29% | $6,121,723.17 |
+| CSCOSTOCK/USDT:USDT | +21.50% | $4,632,360.95 |
+| UB/USDT:USDT | +15.76% | $11,991,835.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.73% | +1.58% |
-| BILL/USDT:USDT | below_1h_threshold | +1.44% | +1.29% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.05% | +0.91% |
-| JCT/USDT:USDT | below_1h_threshold | +1.04% | +0.89% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.00% | +0.86% |
+| BILL/USDT:USDT | below_1h_threshold | +2.08% | +2.03% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.91% | +1.86% |
+| JCT/USDT:USDT | below_1h_threshold | +1.87% | +1.82% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +1.82% | +1.78% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.70% | +1.65% |
 
 ## 5. 次に見るべき不足
 
