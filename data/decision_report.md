@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-14T14:03:11.752783+00:00
+- generated_at: 2026-05-14T14:08:30.789068+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4294**
+- closed shadow trades: **4297**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4294, expectancy=-0.11%
-- 直近20件 MARKET基準: n=20, expectancy=+0.10%
+- 全期間 MARKET基準: n=4297, expectancy=-0.11%
+- 直近20件 MARKET基準: n=20, expectancy=-0.50%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.10% | **+0.10%** |
+| MARKET | 20/20 | 100.0% | -0.50% | **-0.50%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -23,8 +23,8 @@
 |---|---:|---:|---:|---:|
 | LIMIT_9PCT | 4/20 | 20.0% | +7.15% | **+1.43%** |
 | LIMIT_8PCT | 5/20 | 25.0% | +5.42% | **+1.36%** |
-| LIMIT_1PCT | 19/20 | 95.0% | +1.22% | **+1.15%** |
-| LIMIT_BB3S | 4/12 | 33.3% | +2.44% | **+0.81%** |
+| LIMIT_BB3S | 4/10 | 40.0% | +2.44% | **+0.98%** |
+| LIMIT_1PCT | 20/20 | 100.0% | +0.95% | **+0.95%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 
 ### シャドウ上位 LONG
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1618_LONG | 3/20 | 15.0% | +4.86% | **+0.73%** |
-| LIMIT_8PCT_LONG | 6/20 | 30.0% | +2.00% | **+0.60%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.63% | **+0.63%** |
+| LIMIT_8PCT_LONG | 5/20 | 25.0% | +2.40% | **+0.60%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +4.00% | **+0.60%** |
-| LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.97% | **+0.44%** |
-| LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.62% | **+0.25%** |
+| LIMIT_6PCT_LONG | 8/20 | 40.0% | +1.36% | **+0.54%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$119.77** / 初期 $100.00 (+19.77%)
-- 確定: 349件 (Win 95 / Loss 126 / Flat 128) / skip 506件
-- 成長率目線: 平均log +0.000517 / 幾何平均 +0.052% per trade / maxDD +4.21%
+- 確定: 352件 (Win 95 / Loss 126 / Flat 131) / skip 506件
+- 成長率目線: 平均log +0.000513 / 幾何平均 +0.051% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PLAY/USDT:USDT `LIMIT_7PCT_LONG` SL_HIT account -0.50% 残高後 $119.77
+- 最新: DOGS/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $119.77
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T14:03:08.515679+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=79777.5
+- 更新: 2026-05-14T14:08:26.826748+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=79549.7
 - Funnel: target 763 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +62.23% | $8,592,039.36 |
-| TROLLSOL/USDT:USDT | +28.28% | $2,257,208.84 |
-| UP/USDT:USDT | +26.58% | $1,751,392.99 |
-| PLAY/USDT:USDT | +23.22% | $2,826,372.71 |
-| PIEVERSE/USDT:USDT | +18.93% | $3,003,120.63 |
+| AIGENSYN/USDT:USDT | +60.08% | $8,763,314.97 |
+| TROLLSOL/USDT:USDT | +28.76% | $2,258,992.03 |
+| UP/USDT:USDT | +27.86% | $1,762,738.35 |
+| PLAY/USDT:USDT | +25.64% | $2,921,076.56 |
+| ESPORTS/USDT:USDT | +19.83% | $1,177,128.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +1.94% | +1.80% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.28% | +1.14% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.21% | +1.07% |
-| Q/USDT:USDT | below_1h_threshold | +0.97% | +0.83% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.64% | +0.50% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.99% | +4.13% |
+| Q/USDT:USDT | below_1h_threshold | +2.05% | +2.19% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.66% | +1.81% |
+| UP/USDT:USDT | below_1h_threshold | +1.33% | +1.47% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.22% | +1.37% |
 
 ## 5. 次に見るべき不足
 
