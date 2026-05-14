@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T05:33:09.850173+00:00
+- generated_at: 2026-05-14T05:38:17.631851+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4272**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T05:33:06.336667+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=79587.0
-- Funnel: target 765 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-14T05:38:14.531197+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=79687.9
+- Funnel: target 765 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CSCOSTOCK/USDT:USDT | +21.89% | $5,001,435.08 |
-| IRYS/USDT:USDT | +21.66% | $5,753,765.74 |
-| PIEVERSE/USDT:USDT | +20.61% | $1,198,820.29 |
-| TROLLSOL/USDT:USDT | +20.36% | $1,969,351.85 |
-| UP/USDT:USDT | +20.23% | $5,224,695.50 |
+| CSCOSTOCK/USDT:USDT | +22.46% | $5,007,455.77 |
+| UP/USDT:USDT | +20.86% | $5,228,666.13 |
+| TROLLSOL/USDT:USDT | +19.86% | $1,973,634.39 |
+| IRYS/USDT:USDT | +19.47% | $5,767,764.34 |
+| PIEVERSE/USDT:USDT | +17.98% | $1,219,685.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.91% | +2.68% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.76% | +1.53% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.62% | +1.39% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.55% | +1.33% |
-| DOGE/USDT:USDT | below_1h_threshold | +1.02% | +0.79% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.55% | +4.19% |
+| UB/USDT:USDT | below_1h_threshold | +2.33% | +1.97% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.97% | +1.61% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.75% | +1.40% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.67% | +1.31% |
 
 ## 5. 次に見るべき不足
 
