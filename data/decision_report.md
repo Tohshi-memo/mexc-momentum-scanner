@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T14:13:32.281889+00:00
+- generated_at: 2026-05-14T14:18:28.494685+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4297**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T14:13:28.974137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=79807.9
-- Funnel: target 763 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-14T14:18:25.200165+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=80018.0
+- Funnel: target 763 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +60.01% | $8,841,907.44 |
-| TROLLSOL/USDT:USDT | +29.37% | $2,261,429.71 |
-| UP/USDT:USDT | +28.03% | $1,764,975.11 |
-| PLAY/USDT:USDT | +26.46% | $2,980,538.66 |
-| ESPORTS/USDT:USDT | +22.74% | $1,226,886.51 |
+| AIGENSYN/USDT:USDT | +65.94% | $9,396,373.33 |
+| TROLLSOL/USDT:USDT | +28.27% | $2,264,590.94 |
+| UP/USDT:USDT | +27.97% | $1,765,742.03 |
+| PLAY/USDT:USDT | +26.94% | $3,035,212.82 |
+| ESPORTS/USDT:USDT | +21.75% | $1,250,301.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.43% | +4.26% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.10% | +1.93% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.59% | +1.42% |
-| UP/USDT:USDT | below_1h_threshold | +1.47% | +1.29% |
-| CFX/USDT:USDT | below_1h_threshold | +1.38% | +1.20% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.76% | +4.32% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.48% | +3.03% |
+| XAN/USDT:USDT | below_1h_threshold | +2.97% | +2.52% |
+| UB/USDT:USDT | below_1h_threshold | +2.38% | +1.94% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.31% | +1.87% |
 
 ## 5. 次に見るべき不足
 
