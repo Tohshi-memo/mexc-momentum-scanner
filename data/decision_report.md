@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T14:48:34.334221+00:00
+- generated_at: 2026-05-14T14:53:21.756846+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4299**
 
@@ -54,31 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T14:48:28.152356+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.02% price=80477.1
-- Funnel: target 763 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-14T14:53:13.365016+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.35% price=80738.0
+- Funnel: target 763 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=42, below_relative_strength=5, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +65.24% | $11,835,225.30 |
-| UP/USDT:USDT | +28.55% | $1,795,392.20 |
-| PLAY/USDT:USDT | +28.20% | $3,287,223.87 |
-| TROLLSOL/USDT:USDT | +27.08% | $2,280,767.70 |
-| GIGA/USDT:USDT | +24.63% | $1,157,867.94 |
+| AIGENSYN/USDT:USDT | +70.36% | $12,019,521.36 |
+| UP/USDT:USDT | +29.13% | $1,801,381.34 |
+| PLAY/USDT:USDT | +28.49% | $3,302,733.17 |
+| GIGA/USDT:USDT | +28.01% | $1,177,864.57 |
+| TROLLSOL/USDT:USDT | +25.87% | $2,283,521.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_relative_strength | +5.90% | +4.88% |
-| IRYS/USDT:USDT | below_relative_strength | +5.59% | +4.57% |
-| CFX/USDT:USDT | below_relative_strength | +5.55% | +4.53% |
-| USELESS/USDT:USDT | below_1h_threshold | +5.00% | +3.98% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +4.99% | +3.97% |
+| AIGENSYN/USDT:USDT | below_relative_strength | +6.16% | +4.82% |
+| PLAY/USDT:USDT | below_relative_strength | +6.14% | +4.80% |
+| IRYS/USDT:USDT | below_relative_strength | +6.10% | +4.75% |
+| ASTSSTOCK/USDT:USDT | below_relative_strength | +5.72% | +4.38% |
+| ONDO/USDT:USDT | below_relative_strength | +5.03% | +3.68% |
 
 ## 5. 次に見るべき不足
 
