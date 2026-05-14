@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T07:38:27.983282+00:00
+- generated_at: 2026-05-14T07:42:59.256737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4276**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T07:38:24.838540+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=79859.0
-- Funnel: target 766 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-14T07:42:55.804744+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=79867.5
+- Funnel: target 766 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +28.38% | $2,071,642.70 |
-| STAR/USDT:USDT | +23.04% | $1,241,467.38 |
-| CSCOSTOCK/USDT:USDT | +22.05% | $5,177,993.53 |
-| UP/USDT:USDT | +19.36% | $5,302,851.76 |
-| GIGA/USDT:USDT | +18.02% | $1,167,718.71 |
+| TROLLSOL/USDT:USDT | +28.23% | $2,076,435.29 |
+| STAR/USDT:USDT | +23.94% | $1,252,515.58 |
+| CSCOSTOCK/USDT:USDT | +21.31% | $5,185,271.14 |
+| GIGA/USDT:USDT | +21.06% | $1,177,542.42 |
+| UP/USDT:USDT | +18.43% | $5,304,773.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| Q/USDT:USDT | below_1h_threshold | +3.92% | +3.81% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.87% | +2.76% |
-| KITE/USDT:USDT | below_1h_threshold | +2.69% | +2.58% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.59% | +2.48% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +2.58% | +2.47% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.42% | +3.29% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.73% | +2.61% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.56% | +2.44% |
+| KITE/USDT:USDT | below_1h_threshold | +2.24% | +2.12% |
+| CSCOSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.19% |
 
 ## 5. 次に見るべき不足
 
