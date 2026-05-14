@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T02:58:03.178087+00:00
+- generated_at: 2026-05-14T03:02:55.914116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4267**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T02:57:59.251840+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=79324.9
-- Funnel: target 765 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1, 4h RSI 75.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-14T03:02:52.655651+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=79420.6
+- Funnel: target 765 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +27.12% | $15,921,998.98 |
-| IRYS/USDT:USDT | +23.58% | $6,472,788.68 |
-| TROLLSOL/USDT:USDT | +22.07% | $1,942,733.25 |
-| CSCOSTOCK/USDT:USDT | +21.22% | $4,800,232.51 |
-| UP/USDT:USDT | +19.94% | $5,028,866.38 |
+| SAGA/USDT:USDT | +29.38% | $15,071,059.53 |
+| IRYS/USDT:USDT | +25.61% | $6,133,787.07 |
+| TROLLSOL/USDT:USDT | +22.16% | $1,926,721.57 |
+| CSCOSTOCK/USDT:USDT | +21.40% | $4,798,731.00 |
+| UP/USDT:USDT | +21.09% | $5,022,778.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.54% | +2.84% |
-| AIN/USDT:USDT | below_1h_threshold | +2.45% | +2.75% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.64% | +1.95% |
-| RIF/USDT:USDT | below_1h_threshold | +1.55% | +1.85% |
-| BSB/USDT:USDT | below_1h_threshold | +1.51% | +1.81% |
+| IRYS/USDT:USDT | below_1h_threshold | +1.80% | +1.69% |
+| UB/USDT:USDT | below_1h_threshold | +1.24% | +1.13% |
+| LAB/USDT:USDT | below_1h_threshold | +1.19% | +1.07% |
+| RIF/USDT:USDT | below_1h_threshold | +1.04% | +0.92% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.74% | +0.62% |
 
 ## 5. 次に見るべき不足
 
