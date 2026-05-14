@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T16:13:22.405295+00:00
+- generated_at: 2026-05-14T16:18:22.356264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4302**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T16:13:16.427120+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=81476.8
-- Funnel: target 763 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.1 >= 65=1
+- 更新: 2026-05-14T16:18:14.209866+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=81392.2
+- Funnel: target 763 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +8.46% | $1,828,555.62 |
-| LAB/USDT:USDT | +7.00% | $123,970,464.48 |
-| CRCLSTOCK/USDT:USDT | +3.85% | $2,123,782.19 |
-| AKT/USDT:USDT | +3.62% | $1,988,147.09 |
-| ONDSSTOCK/USDT:USDT | +3.55% | $1,081,200.48 |
+| UP/USDT:USDT | +8.37% | $1,862,435.30 |
+| LAB/USDT:USDT | +7.65% | $125,219,976.85 |
+| CRCLSTOCK/USDT:USDT | +5.45% | $2,302,421.96 |
+| AIN/USDT:USDT | +4.22% | $3,162,819.95 |
+| Q/USDT:USDT | +3.92% | $1,111,238.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.10% | +3.82% |
-| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.55% | +3.27% |
-| AKT/USDT:USDT | below_1h_threshold | +3.28% | +3.00% |
-| AIN/USDT:USDT | below_1h_threshold | +3.07% | +2.79% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +2.82% | +2.54% |
+| AIN/USDT:USDT | below_1h_threshold | +4.22% | +4.04% |
+| Q/USDT:USDT | below_1h_threshold | +3.92% | +3.74% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +3.00% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +3.09% | +2.91% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.86% | +2.68% |
 
 ## 5. 次に見るべき不足
 
