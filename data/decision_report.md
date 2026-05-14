@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T14:33:23.743879+00:00
+- generated_at: 2026-05-14T14:37:48.979765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4298**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T14:33:19.513407+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.53% price=80085.3
+- 更新: 2026-05-14T14:37:45.439758+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.69% price=80215.2
 - Funnel: target 763 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.0 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +78.02% | $10,424,204.75 |
-| UP/USDT:USDT | +28.84% | $1,772,055.89 |
-| TROLLSOL/USDT:USDT | +28.24% | $2,271,948.32 |
-| PLAY/USDT:USDT | +25.17% | $3,204,385.74 |
-| ESPORTS/USDT:USDT | +24.42% | $1,296,636.48 |
+| AIGENSYN/USDT:USDT | +74.81% | $10,936,607.79 |
+| UP/USDT:USDT | +28.90% | $1,777,222.04 |
+| TROLLSOL/USDT:USDT | +27.39% | $2,274,268.96 |
+| PLAY/USDT:USDT | +27.09% | $3,225,369.56 |
+| ESPORTS/USDT:USDT | +24.90% | $1,303,414.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +3.74% | +3.21% |
-| IRYS/USDT:USDT | below_1h_threshold | +3.61% | +3.08% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.40% | +2.87% |
-| BILL/USDT:USDT | below_1h_threshold | +3.26% | +2.73% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.08% | +2.56% |
+| PLAY/USDT:USDT | below_relative_strength | +5.12% | +4.43% |
+| IRYS/USDT:USDT | below_1h_threshold | +4.15% | +3.46% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.99% | +3.30% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +3.91% | +3.22% |
+| CFX/USDT:USDT | below_1h_threshold | +3.43% | +2.74% |
 
 ## 5. 次に見るべき不足
 
