@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-14T05:18:06.955654+00:00
+- generated_at: 2026-05-14T05:23:44.813411+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4271**
+- closed shadow trades: **4272**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.41% / filled 20/20。**
-- 全期間 MARKET基準: n=4271, expectancy=-0.11%
-- 直近20件 MARKET基準: n=20, expectancy=+1.41%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.49% / filled 20/20。**
+- 全期間 MARKET基準: n=4272, expectancy=-0.11%
+- 直近20件 MARKET基準: n=20, expectancy=+1.49%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.41% | **+1.41%** |
+| MARKET | 20/20 | 100.0% | +1.49% | **+1.49%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT | 18/20 | 90.0% | +1.82% | **+1.63%** |
-| ASK | 20/20 | 100.0% | +1.42% | **+1.42%** |
-| MARKET | 20/20 | 100.0% | +1.41% | **+1.41%** |
-| LIMIT_ATR | 13/20 | 65.0% | +1.72% | **+1.12%** |
-| LIMIT_BB3S | 3/16 | 18.8% | +5.90% | **+1.11%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +1.97% | **+1.77%** |
+| ASK | 20/20 | 100.0% | +1.51% | **+1.51%** |
+| MARKET | 20/20 | 100.0% | +1.49% | **+1.49%** |
+| LIMIT_ATR | 13/20 | 65.0% | +1.92% | **+1.25%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +1.57% | **+1.18%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 2/3 | 66.7% | +2.90% | **+1.93%** |
+| LIMIT_BB3S_LONG | 3/3 | 100.0% | +2.94% | **+2.94%** |
 | LIMIT_7PCT_LONG | 9/20 | 45.0% | +2.39% | **+1.07%** |
 | LIMIT_6PCT_LONG | 9/20 | 45.0% | +2.15% | **+0.97%** |
 | LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.14% | **+0.40%** |
-| LIMIT_2PCT_LONG | 17/20 | 85.0% | +0.43% | **+0.37%** |
+| LIMIT_2PCT_LONG | 17/20 | 85.0% | +0.30% | **+0.26%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$119.18** / 初期 $100.00 (+19.18%)
-- 確定: 343件 (Win 94 / Loss 125 / Flat 124) / skip 489件
+- 確定: 343件 (Win 94 / Loss 125 / Flat 124) / skip 490件
 - 成長率目線: 平均log +0.000512 / 幾何平均 +0.051% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: IRYS/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $119.18
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T05:18:03.493989+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=79437.3
+- 更新: 2026-05-14T05:23:41.299708+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=79548.1
 - Funnel: target 765 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +23.75% | $5,183,518.96 |
-| CSCOSTOCK/USDT:USDT | +22.45% | $4,993,462.86 |
-| TROLLSOL/USDT:USDT | +21.07% | $1,961,795.65 |
-| PIEVERSE/USDT:USDT | +20.53% | $1,118,015.57 |
-| IRYS/USDT:USDT | +17.69% | $5,713,036.04 |
+| UP/USDT:USDT | +24.27% | $5,189,776.08 |
+| CSCOSTOCK/USDT:USDT | +22.08% | $4,996,166.46 |
+| TROLLSOL/USDT:USDT | +21.33% | $1,963,426.21 |
+| PIEVERSE/USDT:USDT | +18.11% | $1,162,473.59 |
+| IRYS/USDT:USDT | +17.51% | $5,720,675.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +3.11% | +3.07% |
-| FF/USDT:USDT | below_1h_threshold | +1.44% | +1.40% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.13% | +1.09% |
-| BASED/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
-| AKT/USDT:USDT | below_1h_threshold | +0.88% | +0.84% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.96% | +2.78% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.75% | +1.57% |
+| JTO/USDT:USDT | below_1h_threshold | +1.08% | +0.89% |
+| FF/USDT:USDT | below_1h_threshold | +0.87% | +0.69% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.87% | +0.69% |
 
 ## 5. 次に見るべき不足
 
