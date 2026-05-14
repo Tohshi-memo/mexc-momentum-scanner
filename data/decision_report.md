@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T15:18:18.525266+00:00
+- generated_at: 2026-05-14T15:23:11.619301+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4301**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T15:18:15.206815+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80866.8
+- 更新: 2026-05-14T15:23:08.393309+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80956.4
 - Funnel: target 763 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +71.21% | $12,951,497.52 |
-| PLAY/USDT:USDT | +34.13% | $3,404,351.42 |
-| UP/USDT:USDT | +28.20% | $1,729,367.06 |
-| GIGA/USDT:USDT | +27.59% | $1,141,318.58 |
-| TROLLSOL/USDT:USDT | +24.79% | $2,257,126.98 |
+| AIGENSYN/USDT:USDT | +72.16% | $13,094,400.85 |
+| PLAY/USDT:USDT | +33.44% | $3,458,383.85 |
+| UP/USDT:USDT | +28.20% | $1,729,933.78 |
+| GIGA/USDT:USDT | +27.21% | $1,148,687.91 |
+| TROLLSOL/USDT:USDT | +25.22% | $2,259,169.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.07% | +3.14% |
-| ONDSSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.20% |
-| DASH/USDT:USDT | below_1h_threshold | +1.92% | +1.99% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.45% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.15% | +1.23% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.44% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.52% | +2.48% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.27% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.55% | +1.51% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.36% | +1.33% |
 
 ## 5. 次に見るべき不足
 
