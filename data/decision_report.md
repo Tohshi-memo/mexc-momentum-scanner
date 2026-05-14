@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T18:48:18.013041+00:00
+- generated_at: 2026-05-14T18:53:14.191672+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4308**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T18:48:14.731120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=81539.9
+- 更新: 2026-05-14T18:53:10.953474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=81520.6
 - Funnel: target 759 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +16.83% | $2,695,335.44 |
-| LAB/USDT:USDT | +11.48% | $131,915,069.55 |
-| TROLLSOL/USDT:USDT | +8.01% | $2,134,996.52 |
-| ONDSSTOCK/USDT:USDT | +7.28% | $1,369,067.71 |
-| BB/USDT:USDT | +4.53% | $2,443,023.78 |
+| UP/USDT:USDT | +15.53% | $2,711,010.85 |
+| LAB/USDT:USDT | +12.69% | $133,169,171.24 |
+| TROLLSOL/USDT:USDT | +8.32% | $2,141,631.06 |
+| ONDSSTOCK/USDT:USDT | +7.28% | $1,370,576.01 |
+| TRIA/USDT:USDT | +5.01% | $1,321,226.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XRP/USDT:USDT | below_1h_threshold | +3.06% | +3.16% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
-| BB/USDT:USDT | below_1h_threshold | +2.35% | +2.45% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.28% | +2.38% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +2.27% | +2.36% |
+| XRP/USDT:USDT | below_1h_threshold | +3.32% | +3.44% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.13% | +3.25% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.56% | +2.68% |
+| XLM/USDT:USDT | below_1h_threshold | +2.53% | +2.65% |
+| BB/USDT:USDT | below_1h_threshold | +2.50% | +2.62% |
 
 ## 5. 次に見るべき不足
 
