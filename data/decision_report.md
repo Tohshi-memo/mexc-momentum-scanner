@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T21:53:08.336626+00:00
+- generated_at: 2026-05-14T21:58:20.079747+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4311**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T21:53:02.498986+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=81388.8
-- Funnel: target 758 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-14T21:58:14.500484+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=81355.0
+- Funnel: target 758 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +19.93% | $1,356,099.75 |
-| UP/USDT:USDT | +19.65% | $3,434,955.02 |
-| FIGSTOCK/USDT:USDT | +15.20% | $2,813,631.21 |
-| TROLLSOL/USDT:USDT | +7.10% | $1,732,040.64 |
-| BB/USDT:USDT | +5.78% | $1,425,727.56 |
+| TAC/USDT:USDT | +20.60% | $1,384,931.60 |
+| UP/USDT:USDT | +18.57% | $3,451,453.81 |
+| FIGSTOCK/USDT:USDT | +14.75% | $2,853,069.12 |
+| TROLLSOL/USDT:USDT | +6.63% | $1,738,793.41 |
+| NAORIS/USDT:USDT | +6.33% | $3,236,959.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.49% | +2.47% |
-| UP/USDT:USDT | below_1h_threshold | +2.18% | +2.16% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.01% | +1.99% |
-| FF/USDT:USDT | below_1h_threshold | +1.69% | +1.68% |
-| BSB/USDT:USDT | below_1h_threshold | +1.66% | +1.64% |
+| VVV/USDT:USDT | below_1h_threshold | +2.55% | +2.57% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.03% | +2.05% |
+| H/USDT:USDT | below_1h_threshold | +1.62% | +1.64% |
+| FF/USDT:USDT | below_1h_threshold | +1.26% | +1.29% |
 
 ## 5. 次に見るべき不足
 
