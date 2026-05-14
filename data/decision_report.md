@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T13:48:15.328487+00:00
+- generated_at: 2026-05-14T13:53:34.733703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4294**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T13:48:11.240361+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=79889.1
-- Funnel: target 763 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.6 >= 65=1, 4h RSI 69.8 >= 65=1
+- 更新: 2026-05-14T13:53:27.950541+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=79914.3
+- Funnel: target 763 → liquid 162 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 85.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +60.68% | $8,504,357.13 |
-| TROLLSOL/USDT:USDT | +30.89% | $2,268,396.57 |
-| UP/USDT:USDT | +26.58% | $1,777,721.81 |
-| ESPORTS/USDT:USDT | +23.39% | $1,070,873.44 |
-| PLAY/USDT:USDT | +20.61% | $2,763,313.89 |
+| AIGENSYN/USDT:USDT | +61.00% | $8,566,660.05 |
+| TROLLSOL/USDT:USDT | +30.07% | $2,275,004.84 |
+| UP/USDT:USDT | +26.64% | $1,779,089.24 |
+| ESPORTS/USDT:USDT | +22.57% | $1,133,901.52 |
+| PLAY/USDT:USDT | +19.02% | $2,847,069.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.92% | +4.70% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +4.56% | +4.35% |
-| DOGS/USDT:USDT | below_1h_threshold | +4.40% | +4.19% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +3.93% | +3.71% |
-| NIL/USDT:USDT | below_1h_threshold | +3.63% | +3.41% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.88% | +4.64% |
+| GIGA/USDT:USDT | below_1h_threshold | +4.75% | +4.51% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.35% | +4.11% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.40% | +3.16% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.27% | +3.03% |
 
 ## 5. 次に見るべき不足
 
