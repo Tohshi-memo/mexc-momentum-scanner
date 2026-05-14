@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T12:01:37.478876+00:00
+- generated_at: 2026-05-14T12:04:46.836212+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4286**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T12:01:34.162708+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79219.8
+- 更新: 2026-05-14T12:04:43.398035+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=79325.8
 - Funnel: target 763 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +55.74% | $6,485,639.36 |
-| UP/USDT:USDT | +28.55% | $1,667,343.66 |
-| TROLLSOL/USDT:USDT | +23.11% | $2,232,001.99 |
-| PIEVERSE/USDT:USDT | +18.58% | $2,630,270.64 |
-| STAR/USDT:USDT | +18.05% | $2,258,782.39 |
+| AIGENSYN/USDT:USDT | +57.29% | $6,564,905.55 |
+| UP/USDT:USDT | +28.90% | $1,668,830.04 |
+| TROLLSOL/USDT:USDT | +24.32% | $2,233,763.35 |
+| PIEVERSE/USDT:USDT | +19.42% | $2,640,579.23 |
+| STAR/USDT:USDT | +18.78% | $2,266,711.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STAR/USDT:USDT | below_1h_threshold | +1.16% | +1.16% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.09% | +1.08% |
-| GIGA/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
-| XPL/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
-| BASED/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
+| STAR/USDT:USDT | below_1h_threshold | +1.81% | +1.67% |
+| BILL/USDT:USDT | below_1h_threshold | +1.55% | +1.41% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.47% | +1.33% |
+| BASED/USDT:USDT | below_1h_threshold | +0.80% | +0.66% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.77% | +0.63% |
 
 ## 5. 次に見るべき不足
 
