@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T20:03:13.034368+00:00
+- generated_at: 2026-05-14T20:08:13.460158+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4309**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T20:03:09.887494+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81446.6
-- Funnel: target 759 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-14T20:08:09.729305+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=81509.3
+- Funnel: target 759 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 70.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +15.48% | $2,892,178.16 |
-| NAORIS/USDT:USDT | +8.93% | $2,826,142.50 |
-| LAB/USDT:USDT | +7.61% | $120,637,299.32 |
-| XAN/USDT:USDT | +6.06% | $1,072,215.53 |
-| TROLLSOL/USDT:USDT | +5.20% | $1,760,078.96 |
+| UP/USDT:USDT | +16.38% | $2,910,051.01 |
+| FIGSTOCK/USDT:USDT | +13.90% | $1,071,860.99 |
+| LAB/USDT:USDT | +8.03% | $120,952,425.51 |
+| NAORIS/USDT:USDT | +7.75% | $2,857,237.83 |
+| XAN/USDT:USDT | +5.63% | $1,072,524.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMATSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.01% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.61% | +1.51% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.75% | +0.66% |
-| BILL/USDT:USDT | below_1h_threshold | +0.73% | +0.64% |
-| COLLECT/USDT:USDT | below_1h_threshold | +0.72% | +0.63% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +1.41% | +1.24% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.36% | +1.19% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.15% | +0.98% |
+| UP/USDT:USDT | below_1h_threshold | +0.66% | +0.49% |
+| BILL/USDT:USDT | below_1h_threshold | +0.48% | +0.31% |
 
 ## 5. 次に見るべき不足
 
