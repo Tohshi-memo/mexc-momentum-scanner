@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T04:38:03.289204+00:00
+- generated_at: 2026-05-14T04:42:56.727954+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4271**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T04:38:00.057504+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=79290.1
+- 更新: 2026-05-14T04:42:53.430717+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=79327.1
 - Funnel: target 765 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CSCOSTOCK/USDT:USDT | +22.92% | $4,951,605.11 |
-| TROLLSOL/USDT:USDT | +20.38% | $1,980,460.50 |
-| UP/USDT:USDT | +18.43% | $5,067,519.14 |
-| IRYS/USDT:USDT | +16.76% | $5,977,815.04 |
-| GIGA/USDT:USDT | +12.29% | $1,045,969.07 |
+| CSCOSTOCK/USDT:USDT | +22.93% | $4,954,694.69 |
+| TROLLSOL/USDT:USDT | +21.52% | $1,983,678.48 |
+| UP/USDT:USDT | +17.97% | $5,068,131.01 |
+| IRYS/USDT:USDT | +15.86% | $5,981,400.01 |
+| GIGA/USDT:USDT | +11.32% | $1,048,200.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGA/USDT:USDT | below_1h_threshold | +4.65% | +4.29% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.80% | +3.44% |
-| GUA/USDT:USDT | below_1h_threshold | +3.38% | +3.02% |
-| RIF/USDT:USDT | below_1h_threshold | +2.69% | +2.33% |
-| BILL/USDT:USDT | below_1h_threshold | +2.61% | +2.25% |
+| GIGA/USDT:USDT | below_1h_threshold | +3.95% | +3.54% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.61% | +3.20% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.43% | +3.02% |
+| BILL/USDT:USDT | below_1h_threshold | +2.44% | +2.03% |
+| RIF/USDT:USDT | below_1h_threshold | +2.42% | +2.02% |
 
 ## 5. 次に見るべき不足
 
