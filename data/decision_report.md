@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-14T21:41:47.711959+00:00
+- generated_at: 2026-05-14T21:45:01.952718+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4310**
+- closed shadow trades: **4311**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.50% / filled 20/20。**
-- 全期間 MARKET基準: n=4310, expectancy=-0.11%
-- 直近20件 MARKET基準: n=20, expectancy=+0.50%
+- 結論: **MARKET SHORTは実行候補。直近EV +0.65% / filled 20/20。**
+- 全期間 MARKET基準: n=4311, expectancy=-0.11%
+- 直近20件 MARKET基準: n=20, expectancy=+0.65%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.50% | **+0.50%** |
+| MARKET | 20/20 | 100.0% | +0.65% | **+0.65%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -24,16 +24,16 @@
 | LIMIT_BB3S | 4/12 | 33.3% | +4.71% | **+1.57%** |
 | LIMIT_8PCT | 4/20 | 20.0% | +4.78% | **+0.96%** |
 | LIMIT_9PCT | 3/20 | 15.0% | +5.72% | **+0.86%** |
-| LIMIT_FIB1272 | 10/20 | 50.0% | +1.65% | **+0.82%** |
-| LIMIT_7PCT | 5/20 | 25.0% | +2.80% | **+0.70%** |
+| LIMIT_FIB1272 | 9/20 | 45.0% | +1.70% | **+0.76%** |
+| ASK | 20/20 | 100.0% | +0.72% | **+0.72%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET_LONG | 20/20 | 100.0% | +1.15% | **+1.15%** |
+| LIMIT_BB3S_LONG | 5/8 | 62.5% | +1.75% | **+1.09%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| ASK_LONG | 20/20 | 100.0% | +0.77% | **+0.77%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.75% | **+0.75%** |
 | LIMIT_FIB1618_LONG | 5/20 | 25.0% | +2.68% | **+0.67%** |
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +2.82% | **+0.56%** |
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$120.48** / 初期 $100.00 (+20.48%)
-- 確定: 363件 (Win 96 / Loss 129 / Flat 138) / skip 508件
-- 成長率目線: 平均log +0.000513 / 幾何平均 +0.051% per trade / maxDD +4.21%
-- 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CRCLSTOCK/USDT:USDT `LIMIT_BB3S` TP_HIT account +1.00% 残高後 $120.48
+- 確定: 364件 (Win 96 / Loss 129 / Flat 139) / skip 508件
+- 成長率目線: 平均log +0.000512 / 幾何平均 +0.051% per trade / maxDD +4.21%
+- 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: ESPORTS/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $120.48
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T21:41:41.757711+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81430.0
+- 更新: 2026-05-14T21:44:55.917652+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81406.5
 - Funnel: target 758 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +19.35% | $1,246,309.15 |
-| UP/USDT:USDT | +18.62% | $3,399,526.76 |
-| FIGSTOCK/USDT:USDT | +11.75% | $2,738,412.57 |
-| TROLLSOL/USDT:USDT | +9.31% | $1,711,653.17 |
-| BB/USDT:USDT | +6.40% | $1,417,930.78 |
+| TAC/USDT:USDT | +19.88% | $1,279,838.80 |
+| UP/USDT:USDT | +18.75% | $3,413,713.88 |
+| FIGSTOCK/USDT:USDT | +12.05% | $2,740,356.75 |
+| TROLLSOL/USDT:USDT | +7.61% | $1,721,751.29 |
+| LAB/USDT:USDT | +6.61% | $121,845,544.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +1.97% | +1.90% |
-| INJ/USDT:USDT | below_1h_threshold | +1.65% | +1.58% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.57% | +1.50% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.43% | +1.36% |
-| H/USDT:USDT | below_1h_threshold | +1.33% | +1.26% |
+| VVV/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
+| UP/USDT:USDT | below_1h_threshold | +1.41% | +1.37% |
+| INJ/USDT:USDT | below_1h_threshold | +1.38% | +1.33% |
+| BILL/USDT:USDT | below_1h_threshold | +1.29% | +1.25% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.24% | +1.20% |
 
 ## 5. 次に見るべき不足
 
