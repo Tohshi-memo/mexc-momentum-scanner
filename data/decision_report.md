@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T14:18:28.494685+00:00
+- generated_at: 2026-05-14T14:23:04.169322+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4297**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T14:18:25.200165+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=80018.0
-- Funnel: target 763 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-14T14:23:00.749679+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.69% price=80211.0
+- Funnel: target 763 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +65.94% | $9,396,373.33 |
-| TROLLSOL/USDT:USDT | +28.27% | $2,264,590.94 |
-| UP/USDT:USDT | +27.97% | $1,765,742.03 |
-| PLAY/USDT:USDT | +26.94% | $3,035,212.82 |
-| ESPORTS/USDT:USDT | +21.75% | $1,250,301.70 |
+| AIGENSYN/USDT:USDT | +70.43% | $9,631,419.03 |
+| UP/USDT:USDT | +28.32% | $1,768,140.61 |
+| TROLLSOL/USDT:USDT | +27.44% | $2,266,119.48 |
+| PLAY/USDT:USDT | +26.23% | $3,065,788.02 |
+| ESPORTS/USDT:USDT | +21.92% | $1,261,846.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.76% | +4.32% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.48% | +3.03% |
-| XAN/USDT:USDT | below_1h_threshold | +2.97% | +2.52% |
-| UB/USDT:USDT | below_1h_threshold | +2.38% | +1.94% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.31% | +1.87% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.00% | +3.31% |
+| UB/USDT:USDT | below_1h_threshold | +2.63% | +1.94% |
+| BILL/USDT:USDT | below_1h_threshold | +2.50% | +1.82% |
+| CFX/USDT:USDT | below_1h_threshold | +2.35% | +1.66% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.30% | +1.61% |
 
 ## 5. 次に見るべき不足
 
