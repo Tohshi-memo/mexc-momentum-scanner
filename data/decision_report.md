@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T13:38:06.871622+00:00
+- generated_at: 2026-05-14T13:43:13.721469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4293**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T13:38:03.138395+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=79768.5
-- Funnel: target 763 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.4 >= 65=1, 4h RSI 69.6 >= 65=1
+- 更新: 2026-05-14T13:43:09.772956+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79730.5
+- Funnel: target 763 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.1 >= 65=1, 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +57.04% | $8,297,152.44 |
-| PLAY/USDT:USDT | +33.32% | $2,340,966.11 |
-| TROLLSOL/USDT:USDT | +30.44% | $2,262,837.95 |
-| UP/USDT:USDT | +26.64% | $1,769,813.61 |
-| CSCOSTOCK/USDT:USDT | +18.87% | $5,916,036.10 |
+| AIGENSYN/USDT:USDT | +59.51% | $8,347,105.81 |
+| PLAY/USDT:USDT | +32.00% | $2,429,969.44 |
+| TROLLSOL/USDT:USDT | +28.91% | $2,266,073.58 |
+| UP/USDT:USDT | +25.54% | $1,771,838.50 |
+| ESPORTS/USDT:USDT | +24.66% | $1,005,571.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +3.53% | +3.47% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.78% | +2.72% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.35% | +2.29% |
-| IRYS/USDT:USDT | below_1h_threshold | +2.28% | +2.21% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.24% | +2.18% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.14% | +4.13% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.65% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.65% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.39% | +2.38% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.36% | +2.34% |
 
 ## 5. 次に見るべき不足
 
