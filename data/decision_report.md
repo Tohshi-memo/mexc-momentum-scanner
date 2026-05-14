@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T20:58:07.255890+00:00
+- generated_at: 2026-05-14T21:03:15.516679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4310**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T20:58:03.846491+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=81322.9
-- Funnel: target 759 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-14T21:03:12.419452+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81345.6
+- Funnel: target 758 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +15.17% | $3,239,550.68 |
-| NAORIS/USDT:USDT | +13.47% | $3,095,407.80 |
-| FIGSTOCK/USDT:USDT | +11.35% | $2,078,474.61 |
-| LAB/USDT:USDT | +7.51% | $125,244,483.78 |
-| TROLLSOL/USDT:USDT | +7.27% | $1,820,230.92 |
+| UP/USDT:USDT | +19.33% | $3,244,804.80 |
+| NAORIS/USDT:USDT | +14.68% | $3,018,506.50 |
+| FIGSTOCK/USDT:USDT | +14.20% | $2,224,182.18 |
+| TROLLSOL/USDT:USDT | +7.79% | $1,665,105.07 |
+| LAB/USDT:USDT | +7.43% | $119,689,445.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.58% | +4.64% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +3.30% | +3.36% |
-| AMATSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.36% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.22% | +2.27% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.09% | +2.15% |
+| UP/USDT:USDT | below_1h_threshold | +1.91% | +1.95% |
+| STAR/USDT:USDT | below_1h_threshold | +1.87% | +1.90% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.71% | +1.74% |
+| BILL/USDT:USDT | below_1h_threshold | +0.57% | +0.60% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.32% | +0.36% |
 
 ## 5. 次に見るべき不足
 
