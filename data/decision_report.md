@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T01:28:00.142650+00:00
+- generated_at: 2026-05-14T01:33:11.505092+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4263**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T01:27:56.646833+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=79583.5
-- Funnel: target 761 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-14T01:33:08.249797+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=79511.3
+- Funnel: target 765 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +26.44% | $6,237,764.34 |
-| TROLLSOL/USDT:USDT | +22.94% | $1,891,692.10 |
-| CSCOSTOCK/USDT:USDT | +21.46% | $4,673,830.90 |
-| UP/USDT:USDT | +20.86% | $4,931,939.46 |
-| BB/USDT:USDT | +16.71% | $2,264,103.95 |
+| IRYS/USDT:USDT | +27.84% | $6,319,856.77 |
+| TROLLSOL/USDT:USDT | +26.13% | $1,897,203.08 |
+| CSCOSTOCK/USDT:USDT | +21.15% | $4,688,473.32 |
+| UP/USDT:USDT | +19.47% | $4,938,442.94 |
+| BB/USDT:USDT | +17.12% | $2,266,263.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +3.12% | +3.06% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.54% | +2.48% |
-| EDU/USDT:USDT | below_1h_threshold | +2.51% | +2.45% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.42% | +2.37% |
-| BILL/USDT:USDT | below_1h_threshold | +2.08% | +2.03% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.65% | +3.69% |
+| BILL/USDT:USDT | below_1h_threshold | +3.52% | +3.56% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.16% | +3.20% |
+| JCT/USDT:USDT | below_1h_threshold | +2.45% | +2.48% |
+| EDU/USDT:USDT | below_1h_threshold | +2.39% | +2.43% |
 
 ## 5. 次に見るべき不足
 
