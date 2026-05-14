@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T11:28:02.385655+00:00
+- generated_at: 2026-05-14T11:33:01.397066+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4284**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T11:27:59.147537+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=79327.9
+- 更新: 2026-05-14T11:32:58.278596+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=79263.9
 - Funnel: target 763 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +60.01% | $5,273,679.20 |
-| TROLLSOL/USDT:USDT | +28.17% | $2,219,593.78 |
-| UP/USDT:USDT | +27.86% | $1,774,785.88 |
-| CSCOSTOCK/USDT:USDT | +18.75% | $5,522,753.96 |
-| STAR/USDT:USDT | +17.19% | $2,145,677.90 |
+| AIGENSYN/USDT:USDT | +61.85% | $5,404,031.60 |
+| UP/USDT:USDT | +27.57% | $1,776,681.89 |
+| TROLLSOL/USDT:USDT | +27.18% | $2,222,738.64 |
+| CSCOSTOCK/USDT:USDT | +18.48% | $5,525,783.52 |
+| STAR/USDT:USDT | +17.41% | $2,169,433.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.34% | +2.60% |
-| UB/USDT:USDT | below_1h_threshold | +1.09% | +1.35% |
-| QNT/USDT:USDT | below_1h_threshold | +0.90% | +1.15% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.87% | +1.12% |
-| BB/USDT:USDT | below_1h_threshold | +0.62% | +0.88% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.25% | +3.58% |
+| UB/USDT:USDT | below_1h_threshold | +1.42% | +1.76% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.68% | +1.02% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +1.01% |
+| Q/USDT:USDT | below_1h_threshold | +0.22% | +0.55% |
 
 ## 5. 次に見るべき不足
 
