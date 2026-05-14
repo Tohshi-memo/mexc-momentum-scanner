@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T07:26:23.172753+00:00
+- generated_at: 2026-05-14T07:29:31.652958+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4276**
 
@@ -54,32 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T07:26:19.381059+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=79740.0
-- Funnel: target 766 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1
+- 更新: 2026-05-14T07:29:28.249863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=79794.2
+- Funnel: target 766 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +33.25% | $2,041,481.26 |
-| STAR/USDT:USDT | +26.58% | $1,183,453.53 |
-| CSCOSTOCK/USDT:USDT | +21.82% | $5,158,569.03 |
-| GIGA/USDT:USDT | +18.65% | $1,152,773.36 |
-| UP/USDT:USDT | +18.38% | $5,299,475.92 |
+| TROLLSOL/USDT:USDT | +33.98% | $2,047,516.22 |
+| STAR/USDT:USDT | +22.56% | $1,201,759.97 |
+| CSCOSTOCK/USDT:USDT | +21.46% | $5,163,671.07 |
+| GIGA/USDT:USDT | +19.84% | $1,160,087.97 |
+| UP/USDT:USDT | +18.67% | $5,299,984.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KITE/USDT:USDT | below_1h_threshold | +1.86% | +1.90% |
-| CSCOSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.76% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.96% | +1.00% |
-| DOGE/USDT:USDT | below_1h_threshold | +0.31% | +0.34% |
+| Q/USDT:USDT | below_1h_threshold | +3.61% | +3.58% |
+| KITE/USDT:USDT | below_1h_threshold | +2.01% | +1.97% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.61% | +1.58% |
+| CSCOSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.39% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.97% | +0.94% |
 
 ## 5. 次に見るべき不足
 
