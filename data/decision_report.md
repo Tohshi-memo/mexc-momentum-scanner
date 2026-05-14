@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T08:23:06.965052+00:00
+- generated_at: 2026-05-14T08:28:06.524329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4276**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T08:23:03.715261+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=79700.0
+- 更新: 2026-05-14T08:28:03.238261+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79730.0
 - Funnel: target 766 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +26.68% | $2,104,838.98 |
-| UP/USDT:USDT | +22.13% | $5,326,750.45 |
-| PIEVERSE/USDT:USDT | +21.89% | $1,596,029.31 |
-| CSCOSTOCK/USDT:USDT | +20.29% | $5,216,359.63 |
-| GIGA/USDT:USDT | +16.54% | $1,183,910.60 |
+| TROLLSOL/USDT:USDT | +24.53% | $2,109,527.14 |
+| UP/USDT:USDT | +24.50% | $5,336,925.72 |
+| PIEVERSE/USDT:USDT | +20.59% | $1,628,564.40 |
+| CSCOSTOCK/USDT:USDT | +19.88% | $5,220,754.04 |
+| GIGA/USDT:USDT | +17.05% | $1,186,421.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +3.22% | +3.22% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.87% | +2.87% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
-| JCT/USDT:USDT | below_1h_threshold | +1.36% | +1.36% |
-| UP/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.63% | +3.59% |
+| UP/USDT:USDT | below_1h_threshold | +3.11% | +3.07% |
+| JCT/USDT:USDT | below_1h_threshold | +2.06% | +2.02% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.90% | +1.86% |
 
 ## 5. 次に見るべき不足
 
