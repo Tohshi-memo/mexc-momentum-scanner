@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T18:13:30.045304+00:00
+- generated_at: 2026-05-14T18:17:43.748343+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4308**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T18:13:26.921596+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=81774.0
+- 更新: 2026-05-14T18:17:41.135464+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=81725.0
 - Funnel: target 759 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +18.80% | $2,453,896.70 |
-| LAB/USDT:USDT | +15.04% | $125,671,119.48 |
-| ONDSSTOCK/USDT:USDT | +7.75% | $1,333,742.49 |
-| BILL/USDT:USDT | +6.12% | $14,217,405.51 |
-| SPX/USDT:USDT | +5.34% | $2,201,641.13 |
+| UP/USDT:USDT | +17.50% | $2,488,936.41 |
+| LAB/USDT:USDT | +14.15% | $126,907,456.59 |
+| ONDSSTOCK/USDT:USDT | +8.41% | $1,339,629.32 |
+| BILL/USDT:USDT | +6.10% | $14,292,259.89 |
+| SPX/USDT:USDT | +4.70% | $2,225,728.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BB/USDT:USDT | below_1h_threshold | +2.38% | +2.19% |
-| SPX/USDT:USDT | below_1h_threshold | +1.76% | +1.57% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.31% | +1.12% |
-| LAB/USDT:USDT | below_1h_threshold | +1.21% | +1.02% |
-| AIO/USDT:USDT | below_1h_threshold | +1.14% | +0.95% |
+| BB/USDT:USDT | below_1h_threshold | +2.44% | +2.31% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +1.67% | +1.54% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.14% | +1.01% |
+| SPX/USDT:USDT | below_1h_threshold | +1.14% | +1.01% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.84% |
 
 ## 5. 次に見るべき不足
 
