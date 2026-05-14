@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T05:28:27.648602+00:00
+- generated_at: 2026-05-14T05:33:09.850173+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4272**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T05:28:24.564324+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=79495.9
-- Funnel: target 765 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-14T05:33:06.336667+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=79587.0
+- Funnel: target 765 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TROLLSOL/USDT:USDT | +22.89% | $1,965,963.15 |
-| CSCOSTOCK/USDT:USDT | +22.43% | $4,997,993.51 |
-| UP/USDT:USDT | +22.13% | $5,210,359.61 |
-| PIEVERSE/USDT:USDT | +19.70% | $1,185,116.00 |
-| IRYS/USDT:USDT | +19.15% | $5,728,920.48 |
+| CSCOSTOCK/USDT:USDT | +21.89% | $5,001,435.08 |
+| IRYS/USDT:USDT | +21.66% | $5,753,765.74 |
+| PIEVERSE/USDT:USDT | +20.61% | $1,198,820.29 |
+| TROLLSOL/USDT:USDT | +20.36% | $1,969,351.85 |
+| UP/USDT:USDT | +20.23% | $5,224,695.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IRYS/USDT:USDT | below_1h_threshold | +4.83% | +4.71% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.23% | +1.12% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.20% | +1.08% |
-| SUI/USDT:USDT | below_1h_threshold | +1.08% | +0.96% |
-| JTO/USDT:USDT | below_1h_threshold | +1.02% | +0.90% |
+| UB/USDT:USDT | below_1h_threshold | +2.91% | +2.68% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.76% | +1.53% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.62% | +1.39% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.55% | +1.33% |
+| DOGE/USDT:USDT | below_1h_threshold | +1.02% | +0.79% |
 
 ## 5. 次に見るべき不足
 
