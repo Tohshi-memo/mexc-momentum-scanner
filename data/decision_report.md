@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T20:08:13.460158+00:00
+- generated_at: 2026-05-14T20:13:16.213164+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4309**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T20:08:09.729305+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=81509.3
-- Funnel: target 759 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 70.7 >= 65=1
+- 更新: 2026-05-14T20:13:12.811366+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=81410.4
+- Funnel: target 759 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +16.38% | $2,910,051.01 |
-| FIGSTOCK/USDT:USDT | +13.90% | $1,071,860.99 |
-| LAB/USDT:USDT | +8.03% | $120,952,425.51 |
-| NAORIS/USDT:USDT | +7.75% | $2,857,237.83 |
-| XAN/USDT:USDT | +5.63% | $1,072,524.15 |
+| UP/USDT:USDT | +16.83% | $2,918,342.54 |
+| FIGSTOCK/USDT:USDT | +11.15% | $1,397,339.89 |
+| LAB/USDT:USDT | +9.05% | $121,556,935.03 |
+| NAORIS/USDT:USDT | +9.02% | $2,868,921.74 |
+| TROLLSOL/USDT:USDT | +7.34% | $1,772,969.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.41% | +1.24% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.36% | +1.19% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.15% | +0.98% |
-| UP/USDT:USDT | below_1h_threshold | +0.66% | +0.49% |
-| BILL/USDT:USDT | below_1h_threshold | +0.48% | +0.31% |
+| AMATSTOCK/USDT:USDT | below_1h_threshold | +4.10% | +4.06% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.32% | +3.27% |
+| LAB/USDT:USDT | below_1h_threshold | +1.24% | +1.19% |
+| UP/USDT:USDT | below_1h_threshold | +0.93% | +0.88% |
+| COLLECT/USDT:USDT | below_1h_threshold | +0.85% | +0.80% |
 
 ## 5. 次に見るべき不足
 
