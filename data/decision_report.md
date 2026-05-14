@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T13:53:34.733703+00:00
+- generated_at: 2026-05-14T13:58:22.640010+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4294**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T13:53:27.950541+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=79914.3
-- Funnel: target 763 → liquid 162 → pre 50 → checked 50 → surge 4 → strict 2
+- 更新: 2026-05-14T13:58:15.779096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=79830.4
+- Funnel: target 763 → liquid 163 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 85.5 >= 65=1
+- Strict後reject: 4h RSI 70.4 >= 65=1, 4h RSI 85.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +61.00% | $8,566,660.05 |
-| TROLLSOL/USDT:USDT | +30.07% | $2,275,004.84 |
-| UP/USDT:USDT | +26.64% | $1,779,089.24 |
-| ESPORTS/USDT:USDT | +22.57% | $1,133,901.52 |
-| PLAY/USDT:USDT | +19.02% | $2,847,069.44 |
+| AIGENSYN/USDT:USDT | +60.36% | $8,609,326.81 |
+| TROLLSOL/USDT:USDT | +29.38% | $2,277,052.50 |
+| UP/USDT:USDT | +26.64% | $1,780,430.42 |
+| ESPORTS/USDT:USDT | +22.13% | $1,163,642.64 |
+| PLAY/USDT:USDT | +20.66% | $2,931,988.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +4.88% | +4.64% |
-| GIGA/USDT:USDT | below_1h_threshold | +4.75% | +4.51% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.35% | +4.11% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.40% | +3.16% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +3.27% | +3.03% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.87% | +4.73% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.51% | +4.37% |
+| XAN/USDT:USDT | below_1h_threshold | +4.29% | +4.15% |
+| GIGA/USDT:USDT | below_1h_threshold | +3.98% | +3.84% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.64% | +3.50% |
 
 ## 5. 次に見るべき不足
 
