@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-14T10:08:15.279878+00:00
+- generated_at: 2026-05-14T10:13:05.012028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4282**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-14T10:08:11.265148+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=79550.0
+- 更新: 2026-05-14T10:13:01.580093+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79677.5
 - Funnel: target 763 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.3 >= 65=1
+- Strict後reject: 4h RSI 67.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +43.76% | $2,255,340.40 |
-| TROLLSOL/USDT:USDT | +25.98% | $2,173,977.78 |
-| UP/USDT:USDT | +25.02% | $1,891,879.12 |
-| CSCOSTOCK/USDT:USDT | +19.50% | $5,304,384.80 |
-| STAR/USDT:USDT | +17.98% | $1,890,072.85 |
+| AIGENSYN/USDT:USDT | +42.81% | $2,467,112.84 |
+| TROLLSOL/USDT:USDT | +27.03% | $2,180,676.15 |
+| UP/USDT:USDT | +26.70% | $1,897,054.29 |
+| STAR/USDT:USDT | +20.64% | $1,898,810.95 |
+| CSCOSTOCK/USDT:USDT | +19.17% | $5,313,379.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +1.62% | +1.67% |
-| UP/USDT:USDT | below_1h_threshold | +1.41% | +1.46% |
-| Q/USDT:USDT | below_1h_threshold | +1.17% | +1.23% |
-| JCT/USDT:USDT | below_1h_threshold | +0.93% | +0.99% |
-| CFX/USDT:USDT | below_1h_threshold | +0.83% | +0.88% |
+| Q/USDT:USDT | below_1h_threshold | +2.21% | +2.11% |
+| UP/USDT:USDT | below_1h_threshold | +2.20% | +2.10% |
+| BILL/USDT:USDT | below_1h_threshold | +1.86% | +1.76% |
+| GRT/USDT:USDT | below_1h_threshold | +1.47% | +1.37% |
+| BASED/USDT:USDT | below_1h_threshold | +1.20% | +1.09% |
 
 ## 5. 次に見るべき不足
 
