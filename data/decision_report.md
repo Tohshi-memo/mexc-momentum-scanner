@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T06:53:08.600192+00:00
+- generated_at: 2026-05-15T06:58:18.390426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4325**
 
@@ -54,32 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T06:53:05.119616+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=80518.7
-- Funnel: target 765 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1
+- 更新: 2026-05-15T06:58:12.688941+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=80560.0
+- Funnel: target 765 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +32.91% | $3,523,732.51 |
-| GWEI/USDT:USDT | +25.70% | $1,232,468.01 |
-| UP/USDT:USDT | +20.18% | $4,203,346.45 |
-| FIGSTOCK/USDT:USDT | +13.30% | $3,187,758.41 |
-| TAC/USDT:USDT | +10.78% | $2,194,392.22 |
+| PEAQ/USDT:USDT | +31.88% | $3,535,011.81 |
+| GWEI/USDT:USDT | +26.06% | $1,240,524.07 |
+| UP/USDT:USDT | +20.81% | $4,222,538.92 |
+| FIGSTOCK/USDT:USDT | +13.10% | $3,188,163.54 |
+| TAC/USDT:USDT | +10.40% | $2,195,076.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +2.73% | +2.49% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.46% | +2.22% |
-| BILL/USDT:USDT | below_1h_threshold | +2.39% | +2.14% |
-| BB/USDT:USDT | below_1h_threshold | +2.20% | +1.95% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.80% | +1.55% |
+| PEAQ/USDT:USDT | below_relative_strength | +5.27% | +4.97% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.51% | +3.22% |
+| BB/USDT:USDT | below_1h_threshold | +2.77% | +2.47% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.30% | +2.01% |
+| GWEI/USDT:USDT | below_1h_threshold | +1.95% | +1.65% |
 
 ## 5. 次に見るべき不足
 
