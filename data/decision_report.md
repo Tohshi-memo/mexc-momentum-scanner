@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T17:28:38.134959+00:00
+- generated_at: 2026-05-15T17:33:09.003325+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4345**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T17:28:33.660164+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=79388.0
-- Funnel: target 764 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-15T17:33:05.831637+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=79389.9
+- Funnel: target 760 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +7.96% | $1,119,752.36 |
-| GOAT/USDT:USDT | +3.83% | $1,410,469.60 |
-| CGPT/USDT:USDT | +3.71% | $1,751,706.05 |
-| PNUT/USDT:USDT | +3.60% | $1,187,175.37 |
-| GWEI/USDT:USDT | +3.52% | $2,217,035.76 |
+| ZEREBRO/USDT:USDT | +6.95% | $1,122,097.23 |
+| GWEI/USDT:USDT | +5.39% | $2,276,190.90 |
+| GOAT/USDT:USDT | +3.83% | $1,414,778.63 |
+| CGPT/USDT:USDT | +3.49% | $1,757,757.51 |
+| FIGSTOCK/USDT:USDT | +2.96% | $4,111,226.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GWEI/USDT:USDT | below_1h_threshold | +3.29% | +3.14% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.11% | +1.95% |
-| AKT/USDT:USDT | below_1h_threshold | +1.85% | +1.70% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.76% | +1.60% |
-| STAR/USDT:USDT | below_1h_threshold | +1.74% | +1.58% |
+| GWEI/USDT:USDT | below_relative_strength | +5.16% | +5.00% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.66% | +2.51% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.67% |
+| FIGSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.66% |
+| AKT/USDT:USDT | below_1h_threshold | +1.64% | +1.48% |
 
 ## 5. 次に見るべき不足
 
