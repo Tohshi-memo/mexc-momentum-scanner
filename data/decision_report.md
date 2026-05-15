@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-15T21:08:22.405824+00:00
+- generated_at: 2026-05-15T21:13:31.089013+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4348**
+- closed shadow trades: **4349**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4348, expectancy=-0.09%
+- 全期間 MARKET基準: n=4349, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,10 +21,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 6/20 | 30.0% | +1.92% | **+0.58%** |
-| LIMIT_ATR | 15/20 | 75.0% | +0.51% | **+0.39%** |
+| LIMIT_ATR | 15/20 | 75.0% | +0.76% | **+0.57%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +1.93% | **+0.48%** |
+| LIMIT_BB3S | 8/13 | 61.5% | +0.77% | **+0.47%** |
 | ASK | 20/20 | 100.0% | +0.30% | **+0.30%** |
-| LIMIT_7PCT | 4/20 | 20.0% | +1.10% | **+0.22%** |
 | MARKET | 20/20 | 100.0% | +0.20% | **+0.20%** |
 
 ### シャドウ上位 LONG
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$117.99** / 初期 $100.00 (+17.99%)
-- 確定: 390件 (Win 97 / Loss 136 / Flat 157) / skip 519件
+- 確定: 390件 (Win 97 / Loss 136 / Flat 157) / skip 520件
 - 成長率目線: 平均log +0.000424 / 幾何平均 +0.042% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: GUA/USDT:USDT `LIMIT_8PCT_LONG` SL_HIT account -0.50% 残高後 $117.99
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T21:08:16.977058+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79093.9
+- 更新: 2026-05-15T21:13:25.372288+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=79142.6
 - Funnel: target 759 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +28.63% | $2,875,877.16 |
-| STORJ/USDT:USDT | +22.31% | $3,641,030.73 |
-| LAB/USDT:USDT | +13.98% | $141,413,222.33 |
-| TROLLSOL/USDT:USDT | +7.23% | $1,058,092.56 |
-| PEAQ/USDT:USDT | +6.19% | $5,157,778.57 |
+| ASTEROID/USDT:USDT | +27.25% | $2,896,906.96 |
+| STORJ/USDT:USDT | +23.02% | $3,678,447.67 |
+| LAB/USDT:USDT | +13.47% | $143,341,192.00 |
+| PEAQ/USDT:USDT | +6.55% | $5,171,230.52 |
+| INX/USDT:USDT | +6.13% | $1,093,906.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +2.56% | +2.54% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.30% | +1.28% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.12% | +1.10% |
-| UB/USDT:USDT | below_1h_threshold | +1.10% | +1.08% |
-| INX/USDT:USDT | below_1h_threshold | +1.06% | +1.05% |
+| NAORIS/USDT:USDT | below_1h_threshold | +4.05% | +3.97% |
+| UB/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
+| INX/USDT:USDT | below_1h_threshold | +1.24% | +1.16% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +0.98% | +0.91% |
+| PEAQ/USDT:USDT | below_1h_threshold | +0.93% | +0.85% |
 
 ## 5. 次に見るべき不足
 
