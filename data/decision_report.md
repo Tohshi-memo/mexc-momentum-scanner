@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-15T05:33:05.045585+00:00
+- generated_at: 2026-05-15T05:38:17.885778+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4323**
+- closed shadow trades: **4324**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.80% / filled 20/20。**
-- 全期間 MARKET基準: n=4323, expectancy=-0.10%
+- 全期間 MARKET基準: n=4324, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+2.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,8 +23,8 @@
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +2.86% | **+2.86%** |
 | MARKET | 20/20 | 100.0% | +2.80% | **+2.80%** |
-| LIMIT_1PCT | 15/20 | 75.0% | +2.47% | **+1.85%** |
-| LIMIT_2PCT | 13/20 | 65.0% | +2.72% | **+1.77%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +2.82% | **+2.25%** |
+| LIMIT_2PCT | 14/20 | 70.0% | +3.10% | **+2.17%** |
 | LIMIT_BB3S | 4/14 | 28.6% | +5.64% | **+1.61%** |
 
 ### シャドウ上位 LONG
@@ -35,7 +35,7 @@
 | LIMIT_7PCT_LONG | 10/20 | 50.0% | +1.61% | **+0.80%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +1.00% | **+0.40%** |
 | LIMIT_6PCT_LONG | 11/20 | 55.0% | +0.65% | **+0.36%** |
-| LIMIT_5PCT_LONG | 13/20 | 65.0% | +0.48% | **+0.31%** |
+| LIMIT_5PCT_LONG | 13/20 | 65.0% | +0.55% | **+0.36%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$120.42** / 初期 $100.00 (+20.42%)
-- 確定: 375件 (Win 97 / Loss 131 / Flat 147) / skip 509件
-- 成長率目線: 平均log +0.000495 / 幾何平均 +0.050% per trade / maxDD +4.21%
+- 確定: 376件 (Win 97 / Loss 131 / Flat 148) / skip 509件
+- 成長率目線: 平均log +0.000494 / 幾何平均 +0.049% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: TROLLSOL/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $120.42
+- 最新: XAN/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $120.42
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T05:33:01.726343+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=80491.5
-- Funnel: target 764 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-15T05:38:14.199747+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=80269.0
+- Funnel: target 764 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +34.36% | $3,206,573.36 |
-| GWEI/USDT:USDT | +23.06% | $1,137,137.01 |
-| UP/USDT:USDT | +20.36% | $4,120,457.21 |
-| FIGSTOCK/USDT:USDT | +12.45% | $3,148,140.67 |
-| TAC/USDT:USDT | +11.39% | $2,116,119.69 |
+| PEAQ/USDT:USDT | +34.26% | $3,241,954.03 |
+| GWEI/USDT:USDT | +22.57% | $1,142,249.05 |
+| UP/USDT:USDT | +20.32% | $4,127,026.38 |
+| FIGSTOCK/USDT:USDT | +12.60% | $3,154,093.18 |
+| TAC/USDT:USDT | +10.68% | $2,125,010.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +2.75% | +2.99% |
-| STAR/USDT:USDT | below_1h_threshold | +1.73% | +1.97% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.05% | +1.28% |
-| GWEI/USDT:USDT | below_1h_threshold | +0.65% | +0.89% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.21% | +0.45% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.66% | +2.17% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.50% | +2.01% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.43% | +0.94% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.40% | +0.91% |
+| UB/USDT:USDT | below_1h_threshold | +0.39% | +0.90% |
 
 ## 5. 次に見るべき不足
 
