@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T18:23:14.351073+00:00
+- generated_at: 2026-05-15T18:28:24.455976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4346**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T18:23:11.122737+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=79318.9
+- 更新: 2026-05-15T18:28:21.190536+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=79238.2
 - Funnel: target 760 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +24.91% | $1,217,490.35 |
-| XAN/USDT:USDT | +7.85% | $1,265,148.77 |
-| SIREN/USDT:USDT | +7.01% | $9,966,254.10 |
-| NAORIS/USDT:USDT | +6.06% | $4,693,524.99 |
-| ZEREBRO/USDT:USDT | +5.79% | $1,136,954.10 |
+| STORJ/USDT:USDT | +24.73% | $1,293,473.24 |
+| XAN/USDT:USDT | +8.02% | $1,270,397.04 |
+| ZEREBRO/USDT:USDT | +6.79% | $1,142,727.59 |
+| SIREN/USDT:USDT | +5.48% | $10,077,750.41 |
+| NAORIS/USDT:USDT | +5.08% | $4,710,860.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +1.20% | +1.34% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.16% | +1.30% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.12% | +1.26% |
-| FIGSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +1.04% |
-| INJ/USDT:USDT | below_1h_threshold | +0.88% | +1.02% |
+| INJ/USDT:USDT | below_1h_threshold | +1.38% | +1.62% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.31% | +1.55% |
+| GUA/USDT:USDT | below_1h_threshold | +1.24% | +1.48% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.22% | +1.46% |
+| VVV/USDT:USDT | below_1h_threshold | +1.21% | +1.45% |
 
 ## 5. 次に見るべき不足
 
