@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T15:23:19.424935+00:00
+- generated_at: 2026-05-15T15:28:17.810784+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4343**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T15:23:15.961643+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=79255.0
+- 更新: 2026-05-15T15:28:14.539609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=79124.3
 - Funnel: target 764 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GWEI/USDT:USDT | +24.57% | $1,995,123.66 |
-| UP/USDT:USDT | +23.50% | $6,059,807.17 |
-| CGPT/USDT:USDT | +22.26% | $1,372,364.60 |
-| IRYS/USDT:USDT | +19.70% | $10,470,685.68 |
-| FIGSTOCK/USDT:USDT | +14.75% | $4,056,338.47 |
+| GWEI/USDT:USDT | +23.64% | $2,007,823.08 |
+| UP/USDT:USDT | +23.05% | $6,116,918.93 |
+| CGPT/USDT:USDT | +20.68% | $1,405,648.82 |
+| IRYS/USDT:USDT | +18.95% | $10,499,347.91 |
+| FIGSTOCK/USDT:USDT | +15.15% | $4,057,746.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CGPT/USDT:USDT | below_1h_threshold | +2.63% | +2.46% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.72% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.82% | +1.65% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.76% | +1.59% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.53% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.98% | +2.97% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.75% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.54% | +1.54% |
+| TRUTH/USDT:USDT | below_1h_threshold | +1.51% | +1.50% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.38% |
 
 ## 5. 次に見るべき不足
 
