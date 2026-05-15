@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T20:13:21.568870+00:00
+- generated_at: 2026-05-15T20:18:31.235146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4348**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T20:13:18.275636+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=79087.0
+- 更新: 2026-05-15T20:18:27.962949+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79107.3
 - Funnel: target 760 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +32.22% | $2,569,369.20 |
-| STORJ/USDT:USDT | +20.60% | $3,042,685.17 |
-| PEAQ/USDT:USDT | +7.53% | $5,081,465.88 |
-| XAN/USDT:USDT | +6.09% | $1,295,179.27 |
-| ZEREBRO/USDT:USDT | +5.70% | $1,130,795.21 |
+| ASTEROID/USDT:USDT | +30.95% | $2,629,576.33 |
+| STORJ/USDT:USDT | +21.86% | $3,111,905.88 |
+| PEAQ/USDT:USDT | +8.51% | $5,089,296.52 |
+| XAN/USDT:USDT | +6.08% | $1,295,569.67 |
+| ZEREBRO/USDT:USDT | +5.97% | $1,131,349.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.46% | +4.50% |
-| BSB/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
-| UP/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
-| GUA/USDT:USDT | below_1h_threshold | +0.91% | +0.95% |
-| BABY/USDT:USDT | below_1h_threshold | +0.38% | +0.41% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.46% | +3.47% |
+| BSB/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
+| UP/USDT:USDT | below_1h_threshold | +0.87% | +0.88% |
+| GUA/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
+| BABY/USDT:USDT | below_1h_threshold | +0.49% | +0.49% |
 
 ## 5. 次に見るべき不足
 
