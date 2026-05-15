@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T11:48:22.632990+00:00
+- generated_at: 2026-05-15T11:53:13.398425+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4334**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T11:48:18.025896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80638.0
+- 更新: 2026-05-15T11:53:09.483630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=80645.3
 - Funnel: target 764 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1, 4h RSI 85.6 >= 65=1
+- Strict後reject: 4h RSI 72.0 >= 65=1, 4h RSI 85.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +32.39% | $4,123,811.96 |
-| UP/USDT:USDT | +29.36% | $5,197,083.04 |
-| GWEI/USDT:USDT | +26.65% | $1,638,984.54 |
-| PEAQ/USDT:USDT | +24.67% | $4,371,847.34 |
-| FF/USDT:USDT | +14.87% | $2,089,653.36 |
+| IRYS/USDT:USDT | +32.79% | $4,359,713.88 |
+| UP/USDT:USDT | +28.96% | $5,209,047.74 |
+| GWEI/USDT:USDT | +26.85% | $1,642,914.68 |
+| PEAQ/USDT:USDT | +25.18% | $4,377,009.34 |
+| FF/USDT:USDT | +15.14% | $2,100,405.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | ESPORTS/USDT:USDT | below_1h_threshold | +3.75% | +3.79% |
-| GWEI/USDT:USDT | below_1h_threshold | +3.21% | +3.25% |
-| TAC/USDT:USDT | below_1h_threshold | +2.06% | +2.10% |
-| XAN/USDT:USDT | below_1h_threshold | +1.77% | +1.81% |
-| FIGSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.40% |
+| GWEI/USDT:USDT | below_1h_threshold | +2.95% | +2.98% |
+| FIGSTOCK/USDT:USDT | below_1h_threshold | +1.81% | +1.84% |
+| CGPT/USDT:USDT | below_1h_threshold | +1.66% | +1.69% |
+| XAN/USDT:USDT | below_1h_threshold | +1.52% | +1.55% |
 
 ## 5. 次に見るべき不足
 
