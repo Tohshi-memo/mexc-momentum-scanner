@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T17:52:50.458438+00:00
+- generated_at: 2026-05-15T17:58:44.332192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4346**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T17:52:40.973793+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=79359.9
-- Funnel: target 760 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 3
+- 更新: 2026-05-15T17:58:33.817780+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=79401.9
+- Funnel: target 760 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +8.17% | $1,239,119.72 |
-| SIREN/USDT:USDT | +7.91% | $9,661,933.22 |
-| NAORIS/USDT:USDT | +5.08% | $4,709,596.88 |
-| ZEREBRO/USDT:USDT | +5.06% | $1,138,614.59 |
-| FIGSTOCK/USDT:USDT | +4.04% | $4,129,723.09 |
+| XAN/USDT:USDT | +9.24% | $1,246,571.20 |
+| SIREN/USDT:USDT | +7.40% | $9,853,770.94 |
+| ZEREBRO/USDT:USDT | +5.63% | $1,139,045.74 |
+| FIGSTOCK/USDT:USDT | +5.21% | $4,131,927.24 |
+| NAORIS/USDT:USDT | +4.60% | $4,718,113.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIGSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.77% |
-| GWEI/USDT:USDT | below_1h_threshold | +2.82% | +2.70% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.47% |
-| VVV/USDT:USDT | below_1h_threshold | +2.09% | +1.97% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.97% | +1.85% |
+| FIGSTOCK/USDT:USDT | below_1h_threshold | +4.04% | +3.87% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.51% | +3.33% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.45% | +2.27% |
+| GWEI/USDT:USDT | below_1h_threshold | +2.23% | +2.05% |
+| BSB/USDT:USDT | below_1h_threshold | +2.09% | +1.92% |
 
 ## 5. 次に見るべき不足
 
