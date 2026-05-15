@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T20:48:51.613757+00:00
+- generated_at: 2026-05-15T20:53:20.796883+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4348**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T20:48:48.189218+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=79076.0
-- Funnel: target 759 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-15T20:53:17.363814+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=79039.3
+- Funnel: target 759 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +28.26% | $2,826,903.64 |
-| STORJ/USDT:USDT | +22.67% | $3,468,299.03 |
-| ZEREBRO/USDT:USDT | +5.95% | $1,140,407.03 |
-| INX/USDT:USDT | +5.57% | $1,067,558.17 |
-| PEAQ/USDT:USDT | +5.45% | $5,150,411.38 |
+| ASTEROID/USDT:USDT | +29.27% | $2,851,201.67 |
+| STORJ/USDT:USDT | +20.60% | $3,536,438.51 |
+| PEAQ/USDT:USDT | +6.19% | $5,155,536.52 |
+| ZEREBRO/USDT:USDT | +5.81% | $1,140,939.32 |
+| STAR/USDT:USDT | +5.62% | $1,003,290.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.22% | +4.27% |
-| BSB/USDT:USDT | below_1h_threshold | +1.95% | +2.00% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.65% | +1.70% |
-| UB/USDT:USDT | below_1h_threshold | +1.39% | +1.44% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.09% | +1.14% |
+| STAR/USDT:USDT | below_1h_threshold | +4.46% | +4.55% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.19% | +2.28% |
+| BSB/USDT:USDT | below_1h_threshold | +2.05% | +2.14% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +1.36% | +1.46% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.06% | +1.15% |
 
 ## 5. 次に見るべき不足
 
