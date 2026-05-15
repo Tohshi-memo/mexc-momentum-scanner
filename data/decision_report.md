@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T02:55:26.888367+00:00
+- generated_at: 2026-05-15T02:58:34.774863+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4320**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T02:55:23.744471+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=81267.1
-- Funnel: target 763 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-15T02:58:31.584595+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=81283.2
+- Funnel: target 763 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +28.93% | $2,493,886.82 |
-| GWEI/USDT:USDT | +19.30% | $1,047,583.16 |
-| FIGSTOCK/USDT:USDT | +13.95% | $3,062,824.77 |
-| TAC/USDT:USDT | +13.85% | $2,034,509.70 |
-| UP/USDT:USDT | +13.42% | $3,962,873.97 |
+| PEAQ/USDT:USDT | +29.02% | $2,507,040.82 |
+| GWEI/USDT:USDT | +19.96% | $1,048,604.20 |
+| TAC/USDT:USDT | +14.19% | $2,037,150.37 |
+| FIGSTOCK/USDT:USDT | +13.70% | $3,063,381.06 |
+| UP/USDT:USDT | +13.65% | $3,968,986.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +3.87% | +3.66% |
-| UB/USDT:USDT | below_1h_threshold | +1.88% | +1.66% |
-| INJ/USDT:USDT | below_1h_threshold | +1.61% | +1.40% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.48% | +1.27% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.32% | +1.11% |
+| STAR/USDT:USDT | below_1h_threshold | +4.55% | +4.31% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.76% | +3.53% |
+| INJ/USDT:USDT | below_1h_threshold | +2.08% | +1.84% |
+| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.48% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.46% | +1.22% |
 
 ## 5. 次に見るべき不足
 
