@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T21:43:28.674689+00:00
+- generated_at: 2026-05-15T21:48:22.770479+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4353**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T21:43:22.524660+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=79077.5
-- Funnel: target 759 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.5 >= 65=1
+- 更新: 2026-05-15T21:48:16.706222+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=79042.0
+- Funnel: target 759 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 70.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +25.12% | $1,027,290.45 |
-| ASTEROID/USDT:USDT | +22.91% | $3,021,950.63 |
-| STORJ/USDT:USDT | +21.23% | $3,864,762.87 |
-| PEAQ/USDT:USDT | +14.25% | $5,284,182.82 |
-| LAB/USDT:USDT | +11.89% | $147,412,204.75 |
+| ARCSOL/USDT:USDT | +25.68% | $1,033,660.18 |
+| ASTEROID/USDT:USDT | +22.57% | $3,039,619.27 |
+| STORJ/USDT:USDT | +22.22% | $3,885,428.61 |
+| PEAQ/USDT:USDT | +15.47% | $5,319,551.68 |
+| LAB/USDT:USDT | +11.83% | $147,746,901.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +4.41% | +4.42% |
-| NAORIS/USDT:USDT | below_1h_threshold | +4.11% | +4.12% |
-| UB/USDT:USDT | below_1h_threshold | +3.99% | +4.00% |
-| CGPT/USDT:USDT | below_1h_threshold | +2.18% | +2.18% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.19% | +3.24% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.73% | +2.77% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.12% | +2.17% |
+| CGPT/USDT:USDT | below_1h_threshold | +2.06% | +2.11% |
+| TAC/USDT:USDT | below_1h_threshold | +1.50% | +1.55% |
 
 ## 5. 次に見るべき不足
 
