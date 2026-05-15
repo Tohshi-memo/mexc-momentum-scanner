@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T09:23:10.828039+00:00
+- generated_at: 2026-05-15T09:28:15.885892+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4330**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T09:23:07.542772+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=80434.4
+- 更新: 2026-05-15T09:28:12.661765+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=80476.6
 - Funnel: target 763 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +27.76% | $3,853,730.77 |
-| GWEI/USDT:USDT | +24.08% | $1,443,236.78 |
-| UP/USDT:USDT | +21.62% | $4,463,049.38 |
-| BILL/USDT:USDT | +13.72% | $22,230,337.11 |
-| FIGSTOCK/USDT:USDT | +11.55% | $3,237,642.20 |
+| PEAQ/USDT:USDT | +26.17% | $3,881,495.10 |
+| GWEI/USDT:USDT | +24.24% | $1,448,458.16 |
+| UP/USDT:USDT | +22.91% | $4,488,795.64 |
+| BILL/USDT:USDT | +12.90% | $22,353,311.52 |
+| IRYS/USDT:USDT | +11.79% | $2,457,203.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +3.81% | +4.02% |
-| GUA/USDT:USDT | below_1h_threshold | +3.58% | +3.79% |
-| IRYS/USDT:USDT | below_1h_threshold | +1.97% | +2.18% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.28% | +1.49% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.00% | +1.21% |
+| IRYS/USDT:USDT | below_1h_threshold | +3.74% | +3.89% |
+| GUA/USDT:USDT | below_1h_threshold | +3.51% | +3.67% |
+| PEAQ/USDT:USDT | below_1h_threshold | +1.74% | +1.90% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.36% | +1.52% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.18% | +1.33% |
 
 ## 5. 次に見るべき不足
 
