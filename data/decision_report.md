@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T17:20:12.228998+00:00
+- generated_at: 2026-05-15T17:23:32.668743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4345**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T17:20:09.057749+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=79237.2
-- Funnel: target 764 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-15T17:23:29.322756+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79296.5
+- Funnel: target 764 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +7.37% | $1,118,594.77 |
-| CGPT/USDT:USDT | +3.69% | $1,736,637.46 |
-| GOAT/USDT:USDT | +3.28% | $1,409,690.89 |
-| PNUT/USDT:USDT | +3.03% | $1,183,930.42 |
-| STAR/USDT:USDT | +2.81% | $1,041,823.44 |
+| ZEREBRO/USDT:USDT | +7.11% | $1,118,991.61 |
+| CGPT/USDT:USDT | +3.52% | $1,745,607.03 |
+| GOAT/USDT:USDT | +3.38% | $1,409,902.76 |
+| PNUT/USDT:USDT | +3.20% | $1,184,702.82 |
+| NEAR/USDT:USDT | +3.08% | $19,640,025.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +1.92% | +1.95% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.63% | +1.67% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.59% | +1.62% |
-| STAR/USDT:USDT | below_1h_threshold | +1.57% | +1.60% |
-| AKT/USDT:USDT | below_1h_threshold | +1.50% | +1.54% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
+| GWEI/USDT:USDT | below_1h_threshold | +1.60% | +1.56% |
+| AKT/USDT:USDT | below_1h_threshold | +1.50% | +1.46% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.48% | +1.44% |
 
 ## 5. 次に見るべき不足
 
