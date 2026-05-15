@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T16:23:21.600201+00:00
+- generated_at: 2026-05-15T16:28:35.642904+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4345**
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T16:23:18.326211+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=79228.0
-- Funnel: target 764 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-15T16:28:29.828487+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=79208.8
+- Funnel: target 764 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +4.12% | $2,651,261.20 |
-| SAGA/USDT:USDT | +3.88% | $5,428,593.44 |
-| BILL/USDT:USDT | +2.07% | $25,108,840.40 |
-| PEAQ/USDT:USDT | +1.99% | $4,873,085.05 |
-| BEAT/USDT:USDT | +1.68% | $4,255,064.20 |
+| ZEREBRO/USDT:USDT | +10.63% | $1,046,923.30 |
+| TAC/USDT:USDT | +3.97% | $2,656,553.15 |
+| SAGA/USDT:USDT | +3.54% | $5,463,235.19 |
+| BILL/USDT:USDT | +3.19% | $25,209,892.55 |
+| TROLLSOL/USDT:USDT | +2.24% | $1,302,627.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +4.15% | +4.01% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.89% | +3.75% |
-| BILL/USDT:USDT | below_1h_threshold | +2.07% | +1.93% |
-| PEAQ/USDT:USDT | below_1h_threshold | +1.96% | +1.82% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.68% | +1.54% |
+| TAC/USDT:USDT | below_1h_threshold | +3.97% | +3.86% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.55% | +3.43% |
+| BILL/USDT:USDT | below_1h_threshold | +3.21% | +3.09% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.25% | +2.13% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.04% | +1.92% |
 
 ## 5. 次に見るべき不足
 
