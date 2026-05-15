@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T17:03:14.599304+00:00
+- generated_at: 2026-05-15T17:08:20.899699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4345**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T17:03:11.375936+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=79241.1
+- 更新: 2026-05-15T17:08:17.585608+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=79242.6
 - Funnel: target 764 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CGPT/USDT:USDT | +6.58% | $1,676,098.36 |
-| ZEREBRO/USDT:USDT | +6.21% | $1,098,472.21 |
-| PLAY/USDT:USDT | +4.18% | $3,760,623.23 |
-| TAC/USDT:USDT | +3.32% | $2,636,045.62 |
-| GOAT/USDT:USDT | +2.93% | $1,405,363.23 |
+| ZEREBRO/USDT:USDT | +7.13% | $1,104,943.67 |
+| CGPT/USDT:USDT | +4.66% | $1,708,870.98 |
+| PLAY/USDT:USDT | +3.99% | $3,784,341.22 |
+| GOAT/USDT:USDT | +3.53% | $1,406,094.34 |
+| TROLLSOL/USDT:USDT | +3.45% | $1,255,035.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CGPT/USDT:USDT | below_1h_threshold | +3.12% | +3.15% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.01% | +1.04% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.76% | +0.79% |
-| OGN/USDT:USDT | below_1h_threshold | +0.74% | +0.77% |
-| BASED/USDT:USDT | below_1h_threshold | +0.73% | +0.76% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.06% | +2.09% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.00% | +2.03% |
+| INJ/USDT:USDT | below_1h_threshold | +1.82% | +1.85% |
+| CGPT/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
 
 ## 5. 次に見るべき不足
 
