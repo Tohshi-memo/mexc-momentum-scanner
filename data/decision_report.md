@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T18:38:19.193773+00:00
+- generated_at: 2026-05-15T18:43:19.188551+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4346**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T18:38:15.928969+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=79256.0
+- 更新: 2026-05-15T18:43:15.973590+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=79200.8
 - Funnel: target 760 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +21.41% | $1,586,263.08 |
-| XAN/USDT:USDT | +8.44% | $1,275,190.50 |
-| ZEREBRO/USDT:USDT | +7.55% | $1,145,177.86 |
-| SIREN/USDT:USDT | +5.58% | $10,240,600.46 |
-| CRCLSTOCK/USDT:USDT | +4.46% | $2,692,522.01 |
+| STORJ/USDT:USDT | +20.60% | $1,646,163.33 |
+| XAN/USDT:USDT | +8.35% | $1,279,412.90 |
+| ZEREBRO/USDT:USDT | +7.06% | $1,147,579.73 |
+| SIREN/USDT:USDT | +5.10% | $10,300,042.46 |
+| CRCLSTOCK/USDT:USDT | +4.24% | $2,693,451.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.01% | +2.23% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +1.50% | +1.72% |
-| INJ/USDT:USDT | below_1h_threshold | +1.36% | +1.58% |
-| GUA/USDT:USDT | below_1h_threshold | +1.19% | +1.41% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.36% |
+| INJ/USDT:USDT | below_1h_threshold | +1.62% | +1.91% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.57% | +1.86% |
+| PEAQ/USDT:USDT | below_1h_threshold | +1.23% | +1.52% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +1.17% | +1.46% |
+| GUA/USDT:USDT | below_1h_threshold | +1.16% | +1.45% |
 
 ## 5. 次に見るべき不足
 
