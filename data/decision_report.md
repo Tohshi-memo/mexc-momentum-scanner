@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T18:14:01.348924+00:00
+- generated_at: 2026-05-15T18:18:26.626989+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4346**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T18:13:58.152669+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79438.8
-- Funnel: target 760 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-15T18:18:23.354814+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=79334.6
+- Funnel: target 760 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +9.43% | $1,254,698.62 |
-| FIGSTOCK/USDT:USDT | +5.84% | $4,137,425.36 |
-| NAORIS/USDT:USDT | +5.79% | $4,668,391.20 |
-| ZEREBRO/USDT:USDT | +5.77% | $1,134,601.28 |
-| SIREN/USDT:USDT | +5.35% | $9,840,567.82 |
+| STORJ/USDT:USDT | +25.44% | $1,084,558.94 |
+| XAN/USDT:USDT | +8.49% | $1,259,345.08 |
+| NAORIS/USDT:USDT | +6.79% | $4,685,275.49 |
+| SIREN/USDT:USDT | +6.17% | $9,884,638.18 |
+| FIGSTOCK/USDT:USDT | +5.79% | $4,141,172.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +1.27% | +1.26% |
-| GUA/USDT:USDT | below_1h_threshold | +1.22% | +1.21% |
-| INJ/USDT:USDT | below_1h_threshold | +1.19% | +1.18% |
-| FIGSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
-| GWEI/USDT:USDT | below_1h_threshold | +1.11% | +1.10% |
+| STORJ/USDT:USDT | below_1h_threshold | +1.74% | +1.86% |
+| GUA/USDT:USDT | below_1h_threshold | +1.54% | +1.66% |
+| INJ/USDT:USDT | below_1h_threshold | +1.31% | +1.44% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.11% | +1.23% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +1.05% |
 
 ## 5. 次に見るべき不足
 
