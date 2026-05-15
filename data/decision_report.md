@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T13:48:14.114871+00:00
+- generated_at: 2026-05-15T13:53:09.176526+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4340**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T13:48:10.591582+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.52% price=79127.4
-- Funnel: target 764 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-15T13:53:05.983517+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -2.01% price=78731.8
+- Funnel: target 764 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GWEI/USDT:USDT | +24.95% | $1,811,657.76 |
-| IRYS/USDT:USDT | +23.90% | $9,010,571.26 |
-| UP/USDT:USDT | +18.30% | $5,618,501.64 |
-| PEAQ/USDT:USDT | +16.19% | $4,613,689.47 |
-| FF/USDT:USDT | +12.61% | $2,709,432.79 |
+| GWEI/USDT:USDT | +23.41% | $1,819,347.50 |
+| IRYS/USDT:USDT | +21.45% | $9,119,081.19 |
+| UP/USDT:USDT | +19.56% | $5,663,593.48 |
+| PEAQ/USDT:USDT | +15.58% | $4,631,055.73 |
+| FIGSTOCK/USDT:USDT | +12.95% | $3,780,839.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.47% | +4.99% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +4.19% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.65% | +4.17% |
-| CSCOSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +4.16% |
-| TRUTH/USDT:USDT | below_1h_threshold | +2.04% | +3.56% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.16% | +5.17% |
+| FIGSTOCK/USDT:USDT | below_1h_threshold | +2.90% | +4.91% |
+| CSCOSTOCK/USDT:USDT | below_1h_threshold | +2.77% | +4.79% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +4.57% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.25% | +3.27% |
 
 ## 5. 次に見るべき不足
 
