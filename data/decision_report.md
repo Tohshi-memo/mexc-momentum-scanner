@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T05:03:04.946429+00:00
+- generated_at: 2026-05-15T05:08:26.279192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4323**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T05:03:01.723282+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=80759.3
+- 更新: 2026-05-15T05:08:23.048358+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80703.5
 - Funnel: target 764 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +35.53% | $3,039,810.26 |
-| GWEI/USDT:USDT | +20.96% | $1,118,912.26 |
-| UP/USDT:USDT | +20.36% | $3,948,804.42 |
-| FIGSTOCK/USDT:USDT | +14.00% | $3,137,816.77 |
-| GOAT/USDT:USDT | +13.46% | $1,051,935.39 |
+| PEAQ/USDT:USDT | +37.26% | $3,071,743.60 |
+| GWEI/USDT:USDT | +20.75% | $1,124,483.32 |
+| UP/USDT:USDT | +19.82% | $3,951,106.90 |
+| GOAT/USDT:USDT | +14.25% | $1,056,403.19 |
+| FIGSTOCK/USDT:USDT | +13.80% | $3,138,490.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GOAT/USDT:USDT | below_1h_threshold | +0.79% | +0.69% |
-| PEAQ/USDT:USDT | below_1h_threshold | +0.69% | +0.60% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.45% | +0.36% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.45% | +0.35% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.43% | +0.33% |
+| PEAQ/USDT:USDT | below_1h_threshold | +1.81% | +1.78% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.42% | +1.40% |
+| GOAT/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
+| STAR/USDT:USDT | below_1h_threshold | +0.52% | +0.49% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.43% | +0.41% |
 
 ## 5. 次に見るべき不足
 
