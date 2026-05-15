@@ -1,31 +1,31 @@
 # Decision Report
 
-- generated_at: 2026-05-15T12:43:12.884828+00:00
+- generated_at: 2026-05-15T12:48:21.306456+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4336**
+- closed shadow trades: **4337**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +2.29% / filled 20/20。**
-- 全期間 MARKET基準: n=4336, expectancy=-0.09%
-- 直近20件 MARKET基準: n=20, expectancy=+2.29%
+- 結論: **MARKET SHORTは実行候補。直近EV +2.19% / filled 20/20。**
+- 全期間 MARKET基準: n=4337, expectancy=-0.09%
+- 直近20件 MARKET基準: n=20, expectancy=+2.19%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +2.29% | **+2.29%** |
+| MARKET | 20/20 | 100.0% | +2.19% | **+2.19%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +2.41% | **+2.41%** |
-| MARKET | 20/20 | 100.0% | +2.29% | **+2.29%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +2.20% | **+1.87%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +1.90% | **+1.43%** |
-| LIMIT_ATR | 13/20 | 65.0% | +1.84% | **+1.20%** |
+| ASK | 20/20 | 100.0% | +2.31% | **+2.31%** |
+| MARKET | 20/20 | 100.0% | +2.19% | **+2.19%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +2.03% | **+1.73%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +1.64% | **+1.23%** |
+| LIMIT_ATR | 13/20 | 65.0% | +1.73% | **+1.12%** |
 
 ### シャドウ上位 LONG
 
@@ -47,37 +47,38 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$118.90** / 初期 $100.00 (+18.90%)
-- 確定: 386件 (Win 97 / Loss 134 / Flat 155) / skip 511件
-- 成長率目線: 平均log +0.000448 / 幾何平均 +0.045% per trade / maxDD +4.21%
+- 確定: 387件 (Win 97 / Loss 134 / Flat 156) / skip 511件
+- 成長率目線: 平均log +0.000447 / 幾何平均 +0.045% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: GUA/USDT:USDT `LIMIT_6PCT_LONG` EXPIRED account -0.27% 残高後 $118.90
+- 最新: IRYS/USDT:USDT `LIMIT_6PCT_LONG` EXPIRED account +0.00% 残高後 $118.90
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T12:43:09.278157+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=80357.3
-- Funnel: target 764 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-15T12:48:15.380230+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=80376.2
+- Funnel: target 764 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +33.43% | $6,445,885.20 |
-| GWEI/USDT:USDT | +26.32% | $1,718,831.40 |
-| UP/USDT:USDT | +25.29% | $5,392,317.65 |
-| PEAQ/USDT:USDT | +24.34% | $4,455,188.58 |
-| FF/USDT:USDT | +12.80% | $2,512,343.97 |
+| IRYS/USDT:USDT | +37.36% | $6,759,008.44 |
+| UP/USDT:USDT | +25.24% | $5,398,911.52 |
+| GWEI/USDT:USDT | +23.75% | $1,742,295.86 |
+| PEAQ/USDT:USDT | +23.40% | $4,460,706.84 |
+| GUA/USDT:USDT | +15.65% | $1,439,379.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +3.71% | +3.99% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.04% | +2.31% |
-| TAC/USDT:USDT | below_1h_threshold | +1.53% | +1.81% |
-| AIO/USDT:USDT | below_1h_threshold | +1.18% | +1.46% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.96% | +1.24% |
+| XAN/USDT:USDT | below_1h_threshold | +4.37% | +4.63% |
+| IRYS/USDT:USDT | below_1h_threshold | +2.09% | +2.34% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.78% | +2.04% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +0.77% | +1.03% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.52% | +0.78% |
 
 ## 5. 次に見るべき不足
 
