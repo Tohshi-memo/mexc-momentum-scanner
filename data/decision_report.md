@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T13:23:15.276166+00:00
+- generated_at: 2026-05-15T13:28:10.835060+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4337**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T13:23:12.052283+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=80125.7
+- 更新: 2026-05-15T13:28:07.512933+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=80010.0
 - Funnel: target 764 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IRYS/USDT:USDT | +25.42% | $8,326,605.28 |
-| GWEI/USDT:USDT | +25.06% | $1,779,442.02 |
-| PEAQ/USDT:USDT | +20.13% | $4,542,857.00 |
-| UP/USDT:USDT | +19.42% | $5,479,544.21 |
-| GUA/USDT:USDT | +16.39% | $1,484,094.90 |
+| IRYS/USDT:USDT | +26.04% | $8,465,986.92 |
+| GWEI/USDT:USDT | +23.41% | $1,786,346.09 |
+| UP/USDT:USDT | +19.87% | $5,506,627.46 |
+| PEAQ/USDT:USDT | +19.85% | $4,552,118.67 |
+| GUA/USDT:USDT | +16.26% | $1,490,343.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +2.49% | +2.76% |
-| GUA/USDT:USDT | below_1h_threshold | +2.41% | +2.69% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.18% | +2.46% |
-| TRUTH/USDT:USDT | below_1h_threshold | +1.49% | +1.77% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.06% | +1.34% |
+| TRUTH/USDT:USDT | below_1h_threshold | +2.98% | +3.40% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.63% | +3.06% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.50% | +2.92% |
+| GUA/USDT:USDT | below_1h_threshold | +1.95% | +2.37% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.23% | +1.65% |
 
 ## 5. 次に見るべき不足
 
