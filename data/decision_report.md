@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T16:53:50.950882+00:00
+- generated_at: 2026-05-15T16:58:23.794653+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4345**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T16:53:45.480265+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=79196.7
+- 更新: 2026-05-15T16:58:17.777439+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=79260.1
 - Funnel: target 764 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +7.86% | $1,106,633.14 |
-| TROLLSOL/USDT:USDT | +3.79% | $1,318,940.79 |
-| PLAY/USDT:USDT | +3.76% | $4,015,008.24 |
-| TAC/USDT:USDT | +3.52% | $2,675,692.21 |
-| PNUT/USDT:USDT | +3.10% | $1,338,879.69 |
+| ZEREBRO/USDT:USDT | +7.48% | $1,110,809.14 |
+| PLAY/USDT:USDT | +4.47% | $4,050,197.35 |
+| TAC/USDT:USDT | +3.60% | $2,682,977.53 |
+| PNUT/USDT:USDT | +3.45% | $1,345,128.14 |
+| TROLLSOL/USDT:USDT | +3.01% | $1,320,893.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.93% | +3.83% |
-| TROLLSOL/USDT:USDT | below_1h_threshold | +3.79% | +3.69% |
-| TAC/USDT:USDT | below_1h_threshold | +3.52% | +3.43% |
-| PNUT/USDT:USDT | below_1h_threshold | +3.10% | +3.00% |
-| CGPT/USDT:USDT | below_1h_threshold | +2.79% | +2.70% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.81% | +4.63% |
+| TAC/USDT:USDT | below_1h_threshold | +3.60% | +3.42% |
+| PNUT/USDT:USDT | below_1h_threshold | +3.45% | +3.27% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +3.06% | +2.88% |
+| CGPT/USDT:USDT | below_1h_threshold | +2.92% | +2.74% |
 
 ## 5. 次に見るべき不足
 
