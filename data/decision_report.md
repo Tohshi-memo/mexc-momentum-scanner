@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T05:08:26.279192+00:00
+- generated_at: 2026-05-15T05:13:15.049814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4323**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T05:08:23.048358+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80703.5
-- Funnel: target 764 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-15T05:13:11.818465+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=80759.0
+- Funnel: target 764 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +37.26% | $3,071,743.60 |
-| GWEI/USDT:USDT | +20.75% | $1,124,483.32 |
-| UP/USDT:USDT | +19.82% | $3,951,106.90 |
-| GOAT/USDT:USDT | +14.25% | $1,056,403.19 |
-| FIGSTOCK/USDT:USDT | +13.80% | $3,138,490.46 |
+| PEAQ/USDT:USDT | +38.34% | $3,100,373.93 |
+| UP/USDT:USDT | +23.72% | $4,025,979.18 |
+| GWEI/USDT:USDT | +22.54% | $1,126,846.87 |
+| STAR/USDT:USDT | +15.32% | $3,214,123.01 |
+| GOAT/USDT:USDT | +14.20% | $1,064,352.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +1.81% | +1.78% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.42% | +1.40% |
-| GOAT/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
-| STAR/USDT:USDT | below_1h_threshold | +0.52% | +0.49% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.43% | +0.41% |
+| UP/USDT:USDT | below_1h_threshold | +2.75% | +2.66% |
+| PEAQ/USDT:USDT | below_1h_threshold | +2.60% | +2.51% |
+| GOAT/USDT:USDT | below_1h_threshold | +1.09% | +1.00% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.02% | +0.93% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.57% | +0.48% |
 
 ## 5. 次に見るべき不足
 
