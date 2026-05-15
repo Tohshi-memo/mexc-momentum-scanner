@@ -1,31 +1,31 @@
 # Decision Report
 
-- generated_at: 2026-05-15T07:13:24.631667+00:00
+- generated_at: 2026-05-15T07:18:58.567837+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4325**
+- closed shadow trades: **4326**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +3.40% / filled 20/20。**
-- 全期間 MARKET基準: n=4325, expectancy=-0.09%
-- 直近20件 MARKET基準: n=20, expectancy=+3.40%
+- 結論: **MARKET SHORTは実行候補。直近EV +3.44% / filled 20/20。**
+- 全期間 MARKET基準: n=4326, expectancy=-0.10%
+- 直近20件 MARKET基準: n=20, expectancy=+3.44%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +3.40% | **+3.40%** |
+| MARKET | 20/20 | 100.0% | +3.44% | **+3.44%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +3.46% | **+3.46%** |
-| MARKET | 20/20 | 100.0% | +3.40% | **+3.40%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +3.50% | **+2.80%** |
-| LIMIT_2PCT | 13/20 | 65.0% | +3.49% | **+2.27%** |
-| LIMIT_ATR | 11/20 | 55.0% | +2.85% | **+1.57%** |
+| ASK | 20/20 | 100.0% | +3.50% | **+3.50%** |
+| MARKET | 20/20 | 100.0% | +3.44% | **+3.44%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +3.62% | **+2.89%** |
+| LIMIT_2PCT | 13/20 | 65.0% | +3.71% | **+2.41%** |
+| LIMIT_ATR | 11/20 | 55.0% | +3.02% | **+1.66%** |
 
 ### シャドウ上位 LONG
 
@@ -39,45 +39,45 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.21** / 初期 $100.00 (-2.79%)
-- 確定トレード: 44件 (TP 11 / SL 30 / EXP 3)
-- 最新: SKYAI/USDT:USDT TP_HIT PnL +8.00% 残高後 $97.21
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$96.72** / 初期 $100.00 (-3.28%)
+- 確定トレード: 45件 (TP 11 / SL 31 / EXP 3)
+- 最新: SNDKSTOCK/USDT:USDT SL_HIT PnL -3.19% 残高後 $96.72
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$120.42** / 初期 $100.00 (+20.42%)
-- 確定: 377件 (Win 97 / Loss 131 / Flat 149) / skip 509件
-- 成長率目線: 平均log +0.000493 / 幾何平均 +0.049% per trade / maxDD +4.21%
+- 確定: 378件 (Win 97 / Loss 131 / Flat 150) / skip 509件
+- 成長率目線: 平均log +0.000491 / 幾何平均 +0.049% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PEAQ/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $120.42
+- 最新: SNDKSTOCK/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $120.42
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T07:13:21.424837+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80674.0
-- Funnel: target 761 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-15T07:18:54.985333+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80680.4
+- Funnel: target 761 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +29.07% | $3,563,896.88 |
-| GWEI/USDT:USDT | +26.32% | $1,262,407.63 |
-| UP/USDT:USDT | +21.35% | $4,192,525.75 |
-| FIGSTOCK/USDT:USDT | +14.05% | $3,186,107.36 |
-| TAC/USDT:USDT | +11.05% | $2,202,242.49 |
+| GWEI/USDT:USDT | +27.84% | $1,280,641.29 |
+| PEAQ/USDT:USDT | +27.34% | $3,586,209.76 |
+| UP/USDT:USDT | +22.20% | $4,195,445.22 |
+| FIGSTOCK/USDT:USDT | +14.05% | $3,186,425.89 |
+| TAC/USDT:USDT | +10.23% | $2,203,935.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +1.48% | +1.32% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.19% |
-| XAN/USDT:USDT | below_1h_threshold | +1.20% | +1.04% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.13% | +0.97% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.11% | +0.95% |
+| STAR/USDT:USDT | below_1h_threshold | +2.87% | +2.69% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.33% | +2.16% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.29% | +2.11% |
+| UB/USDT:USDT | below_1h_threshold | +2.06% | +1.89% |
+| GWEI/USDT:USDT | below_1h_threshold | +1.58% | +1.41% |
 
 ## 5. 次に見るべき不足
 
