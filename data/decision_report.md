@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T19:02:01.182420+00:00
+- generated_at: 2026-05-15T19:05:20.367896+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4348**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T19:01:57.598351+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=79178.9
-- Funnel: target 760 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-15T19:05:17.185323+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=79075.8
+- Funnel: target 760 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +30.46% | $1,375,173.11 |
-| STORJ/USDT:USDT | +22.31% | $1,925,492.23 |
-| XAN/USDT:USDT | +9.06% | $1,285,582.93 |
-| ZEREBRO/USDT:USDT | +7.27% | $1,132,685.34 |
-| SIREN/USDT:USDT | +7.11% | $10,119,915.77 |
+| ASTEROID/USDT:USDT | +29.45% | $1,513,582.81 |
+| STORJ/USDT:USDT | +24.28% | $1,996,816.32 |
+| XAN/USDT:USDT | +8.05% | $1,292,584.30 |
+| TROLLSOL/USDT:USDT | +7.20% | $1,176,423.75 |
+| ZEREBRO/USDT:USDT | +7.18% | $1,133,357.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TROLLSOL/USDT:USDT | below_1h_threshold | +0.79% | +0.87% |
-| UB/USDT:USDT | below_1h_threshold | +0.54% | +0.62% |
-| FIGSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.60% |
-| XAN/USDT:USDT | below_1h_threshold | +0.33% | +0.41% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.36% |
+| TROLLSOL/USDT:USDT | below_1h_threshold | +2.12% | +2.33% |
+| STORJ/USDT:USDT | below_1h_threshold | +1.09% | +1.30% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.82% |
+| UB/USDT:USDT | below_1h_threshold | +0.59% | +0.80% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.73% |
 
 ## 5. 次に見るべき不足
 
