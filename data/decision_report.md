@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-15T06:28:13.865323+00:00
+- generated_at: 2026-05-15T06:33:08.001521+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4325**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-15T06:28:10.622704+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=80453.3
+- 更新: 2026-05-15T06:33:04.637425+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=80503.3
 - Funnel: target 765 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +28.55% | $3,457,353.08 |
-| GWEI/USDT:USDT | +23.19% | $1,208,151.53 |
-| UP/USDT:USDT | +20.63% | $4,178,106.33 |
-| FIGSTOCK/USDT:USDT | +11.85% | $3,170,282.78 |
-| TAC/USDT:USDT | +11.27% | $2,175,424.56 |
+| PEAQ/USDT:USDT | +30.85% | $3,478,906.55 |
+| GWEI/USDT:USDT | +23.77% | $1,212,312.06 |
+| UP/USDT:USDT | +21.12% | $4,185,353.42 |
+| FIGSTOCK/USDT:USDT | +12.75% | $3,170,647.35 |
+| TAC/USDT:USDT | +11.92% | $2,178,005.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +2.70% | +2.53% |
-| PEAQ/USDT:USDT | below_1h_threshold | +2.62% | +2.45% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.52% | +2.36% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.86% | +1.70% |
-| BB/USDT:USDT | below_1h_threshold | +1.71% | +1.55% |
+| PEAQ/USDT:USDT | below_1h_threshold | +4.48% | +4.26% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.17% | +2.94% |
+| SAHARA/USDT:USDT | below_1h_threshold | +2.52% | +2.30% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.29% | +2.06% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.86% | +1.64% |
 
 ## 5. 次に見るべき不足
 
