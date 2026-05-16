@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-16T10:41:34.878650+00:00
+- generated_at: 2026-05-16T10:44:56.795418+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4368**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T10:41:31.660938+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=77840.0
+- 更新: 2026-05-16T10:44:53.672553+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=77864.1
 - Funnel: target 760 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +32.88% | $2,516,264.65 |
-| ASTEROID/USDT:USDT | +18.24% | $4,760,901.97 |
-| LAB/USDT:USDT | +17.04% | $107,447,658.31 |
-| GUA/USDT:USDT | +14.19% | $2,706,111.64 |
-| RECALL/USDT:USDT | +12.25% | $1,333,325.43 |
+| ARCSOL/USDT:USDT | +32.47% | $2,525,864.53 |
+| ASTEROID/USDT:USDT | +18.61% | $4,770,451.25 |
+| LAB/USDT:USDT | +16.93% | $107,659,690.97 |
+| GUA/USDT:USDT | +13.98% | $2,708,639.99 |
+| RECALL/USDT:USDT | +11.68% | $1,335,659.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RECALL/USDT:USDT | below_1h_threshold | +1.96% | +2.23% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.22% | +1.49% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.03% | +1.30% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.89% | +1.16% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +0.88% | +1.15% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.54% | +1.78% |
+| RECALL/USDT:USDT | below_1h_threshold | +1.44% | +1.68% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.13% | +1.37% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.12% | +1.36% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.84% | +1.08% |
 
 ## 5. 次に見るべき不足
 
