@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-16T18:38:21.244669+00:00
+- generated_at: 2026-05-16T18:42:46.616095+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4369**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T18:38:17.967383+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=78164.1
+- 更新: 2026-05-16T18:42:43.308428+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78167.8
 - Funnel: target 760 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +8.98% | $2,801,437.79 |
-| UB/USDT:USDT | +7.25% | $18,760,080.86 |
-| CGPT/USDT:USDT | +7.13% | $1,312,342.79 |
-| ASTEROID/USDT:USDT | +5.81% | $5,770,760.79 |
-| BILL/USDT:USDT | +5.20% | $33,444,461.65 |
+| BSB/USDT:USDT | +8.65% | $2,821,461.21 |
+| UB/USDT:USDT | +7.49% | $18,797,639.10 |
+| CGPT/USDT:USDT | +6.75% | $1,323,883.38 |
+| AIGENSYN/USDT:USDT | +5.64% | $3,620,018.75 |
+| ASTEROID/USDT:USDT | +5.63% | $5,778,477.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.69% | +3.69% |
-| CGPT/USDT:USDT | below_1h_threshold | +3.30% | +3.30% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.32% | +2.32% |
-| UB/USDT:USDT | below_1h_threshold | +2.15% | +2.15% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
+| BILL/USDT:USDT | below_1h_threshold | +3.75% | +3.74% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.36% | +3.35% |
+| CGPT/USDT:USDT | below_1h_threshold | +2.93% | +2.92% |
+| UB/USDT:USDT | below_1h_threshold | +2.48% | +2.47% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.20% | +2.19% |
 
 ## 5. 次に見るべき不足
 
