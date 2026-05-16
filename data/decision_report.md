@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-16T07:43:21.078650+00:00
+- generated_at: 2026-05-16T07:48:04.160172+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4367**
 
@@ -54,30 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T07:43:17.861352+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=78472.7
-- Funnel: target 759 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
-
-### 24h上昇上位
-
-| symbol | 24h | volume |
-|---|---:|---:|
-| ARCSOL/USDT:USDT | +31.01% | $1,944,955.36 |
-| LAB/USDT:USDT | +19.08% | $120,340,488.11 |
-| ASTEROID/USDT:USDT | +16.59% | $4,433,239.32 |
-| GUA/USDT:USDT | +15.52% | $2,426,116.11 |
-| TAC/USDT:USDT | +13.41% | $1,092,506.58 |
-
-### Near Miss
-
-| symbol | reason | 1h | RS |
-|---|---|---:|---:|
-| ARCSOL/USDT:USDT | below_1h_threshold | +3.79% | +3.97% |
-| FF/USDT:USDT | below_1h_threshold | +3.32% | +3.50% |
-| DEEP/USDT:USDT | below_1h_threshold | +1.88% | +2.05% |
-| BABY/USDT:USDT | below_1h_threshold | +1.69% | +1.87% |
-| VVV/USDT:USDT | below_1h_threshold | +1.21% | +1.39% |
+- 更新: 2026-05-16T07:48:00.878537+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=78404.0
+- Funnel: target 760 → liquid 0 → pre 0 → checked 0 → surge 0 → strict 0
 
 ## 5. 次に見るべき不足
 
