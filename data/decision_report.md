@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-16T04:43:14.354879+00:00
+- generated_at: 2026-05-16T04:48:20.296029+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4365**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T04:43:10.975598+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78955.3
-- Funnel: target 759 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-16T04:48:17.140859+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78981.0
+- Funnel: target 759 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +27.25% | $4,032,242.76 |
-| ARCSOL/USDT:USDT | +25.78% | $1,575,034.40 |
-| LAB/USDT:USDT | +22.47% | $150,724,535.86 |
-| STORJ/USDT:USDT | +18.45% | $6,340,455.63 |
-| GUA/USDT:USDT | +14.70% | $1,757,718.33 |
+| ASTEROID/USDT:USDT | +24.82% | $4,061,876.35 |
+| ARCSOL/USDT:USDT | +24.34% | $1,582,800.65 |
+| LAB/USDT:USDT | +22.48% | $150,874,160.20 |
+| STORJ/USDT:USDT | +18.27% | $6,343,736.61 |
+| GUA/USDT:USDT | +14.60% | $1,766,481.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +1.57% | +1.69% |
-| GUA/USDT:USDT | below_1h_threshold | +1.43% | +1.55% |
-| GWEI/USDT:USDT | below_1h_threshold | +0.84% | +0.96% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.83% | +0.95% |
-| LAB/USDT:USDT | below_1h_threshold | +0.63% | +0.75% |
+| POLYX/USDT:USDT | below_1h_threshold | +2.46% | +2.55% |
+| PEAQ/USDT:USDT | below_1h_threshold | +1.88% | +1.97% |
+| GUA/USDT:USDT | below_1h_threshold | +1.39% | +1.48% |
+| TAC/USDT:USDT | below_1h_threshold | +1.32% | +1.41% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.22% | +1.31% |
 
 ## 5. 次に見るべき不足
 
