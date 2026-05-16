@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-16T06:28:22.259121+00:00
+- generated_at: 2026-05-16T06:33:28.597933+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4367**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T06:28:19.042913+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=78769.4
-- Funnel: target 759 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-16T06:33:25.373407+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=78836.4
+- Funnel: target 759 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +29.12% | $1,748,120.27 |
-| ASTEROID/USDT:USDT | +26.87% | $4,165,869.93 |
-| LAB/USDT:USDT | +20.69% | $132,431,975.92 |
-| GUA/USDT:USDT | +16.34% | $2,092,777.70 |
-| STORJ/USDT:USDT | +15.05% | $6,595,986.12 |
+| ARCSOL/USDT:USDT | +28.68% | $1,759,634.90 |
+| ASTEROID/USDT:USDT | +25.64% | $4,172,926.18 |
+| LAB/USDT:USDT | +20.66% | $132,836,495.44 |
+| GUA/USDT:USDT | +16.51% | $2,104,564.02 |
+| ORCA/USDT:USDT | +15.34% | $1,012,245.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +2.71% | +2.99% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.58% | +1.85% |
-| TAC/USDT:USDT | below_1h_threshold | +1.55% | +1.82% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.42% | +1.70% |
-| GUA/USDT:USDT | below_1h_threshold | +1.27% | +1.55% |
+| XAN/USDT:USDT | below_1h_threshold | +4.62% | +4.82% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.71% | +1.90% |
+| TAC/USDT:USDT | below_1h_threshold | +1.49% | +1.68% |
+| GUA/USDT:USDT | below_1h_threshold | +1.34% | +1.54% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.94% | +1.14% |
 
 ## 5. 次に見るべき不足
 
