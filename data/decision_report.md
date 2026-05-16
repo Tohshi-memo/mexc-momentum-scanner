@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-16T21:58:23.611027+00:00
+- generated_at: 2026-05-16T22:03:19.671773+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4370**
 
@@ -54,31 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T21:58:17.526989+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=78258.4
-- Funnel: target 760 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-16T22:03:16.321704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78165.2
+- Funnel: target 760 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +10.18% | $1,329,856.85 |
-| BSB/USDT:USDT | +9.23% | $3,424,813.37 |
-| NMR/USDT:USDT | +8.10% | $1,076,310.67 |
-| ASTEROID/USDT:USDT | +6.37% | $4,662,257.33 |
-| CGPT/USDT:USDT | +5.32% | $1,364,755.98 |
+| LYN/USDT:USDT | +9.55% | $1,192,780.95 |
+| BSB/USDT:USDT | +9.48% | $3,407,781.03 |
+| NMR/USDT:USDT | +8.51% | $1,084,634.14 |
+| ASTEROID/USDT:USDT | +6.52% | $4,460,872.75 |
+| CGPT/USDT:USDT | +5.36% | $1,300,376.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LYN/USDT:USDT | below_1h_threshold | +3.00% | +2.95% |
-| NMR/USDT:USDT | below_1h_threshold | +2.18% | +2.13% |
-| GUA/USDT:USDT | below_1h_threshold | +1.39% | +1.34% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.08% | +1.03% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.08% | +1.03% |
+| UP/USDT:USDT | below_1h_threshold | +0.79% | +0.87% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.40% | +0.48% |
+| RECALL/USDT:USDT | below_1h_threshold | +0.37% | +0.45% |
+| CGPT/USDT:USDT | below_1h_threshold | +0.31% | +0.39% |
+| H/USDT:USDT | below_1h_threshold | +0.29% | +0.37% |
 
 ## 5. 次に見るべき不足
 
