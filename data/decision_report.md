@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-16T21:08:19.266859+00:00
+- generated_at: 2026-05-16T21:13:25.269334+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4370**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T21:08:15.897974+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78253.3
-- Funnel: target 760 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-16T21:13:22.088120+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78220.1
+- Funnel: target 760 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +9.56% | $3,295,373.52 |
-| ASTEROID/USDT:USDT | +7.85% | $4,470,334.66 |
-| CGPT/USDT:USDT | +5.71% | $1,342,581.07 |
-| BILL/USDT:USDT | +5.17% | $34,823,958.76 |
-| CHZ/USDT:USDT | +5.05% | $14,997,461.75 |
+| BSB/USDT:USDT | +9.56% | $3,323,281.08 |
+| LYN/USDT:USDT | +8.83% | $1,033,100.09 |
+| ASTEROID/USDT:USDT | +7.94% | $4,497,898.10 |
+| CGPT/USDT:USDT | +5.71% | $1,345,900.41 |
+| VVV/USDT:USDT | +5.16% | $3,612,969.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +0.99% | +0.94% |
-| VVV/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
-| BILL/USDT:USDT | below_1h_threshold | +0.50% | +0.45% |
-| SPX/USDT:USDT | below_1h_threshold | +0.48% | +0.43% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.39% |
+| VVV/USDT:USDT | below_1h_threshold | +1.97% | +1.96% |
+| LYN/USDT:USDT | below_1h_threshold | +1.75% | +1.74% |
+| FHE/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| 2Z/USDT:USDT | below_1h_threshold | +1.00% | +1.00% |
+| UB/USDT:USDT | below_1h_threshold | +0.61% | +0.60% |
 
 ## 5. 次に見るべき不足
 
