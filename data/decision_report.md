@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-16T01:13:13.250453+00:00
+- generated_at: 2026-05-16T01:18:23.460494+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4361**
+- closed shadow trades: **4362**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4361, expectancy=-0.09%
-- 直近20件 MARKET基準: n=20, expectancy=+0.06%
+- 全期間 MARKET基準: n=4362, expectancy=-0.09%
+- 直近20件 MARKET基準: n=20, expectancy=+0.09%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.06% | **+0.06%** |
+| MARKET | 20/20 | 100.0% | +0.09% | **+0.09%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_5PCT | 7/20 | 35.0% | +1.25% | **+0.44%** |
 | LIMIT_6PCT | 4/20 | 20.0% | +1.94% | **+0.39%** |
-| LIMIT_4PCT | 12/20 | 60.0% | +0.33% | **+0.20%** |
-| ASK | 20/20 | 100.0% | +0.11% | **+0.11%** |
-| MARKET | 20/20 | 100.0% | +0.06% | **+0.06%** |
+| LIMIT_4PCT | 12/20 | 60.0% | +0.37% | **+0.22%** |
+| ASK | 20/20 | 100.0% | +0.14% | **+0.14%** |
+| MARKET | 20/20 | 100.0% | +0.09% | **+0.09%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$117.99** / 初期 $100.00 (+17.99%)
-- 確定: 391件 (Win 97 / Loss 136 / Flat 158) / skip 531件
+- 確定: 391件 (Win 97 / Loss 136 / Flat 158) / skip 532件
 - 成長率目線: 平均log +0.000423 / 幾何平均 +0.042% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_6PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: STORJ/USDT:USDT `LIMIT_6PCT_LONG` EXPIRED account +0.00% 残高後 $117.99
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T01:13:09.954814+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79081.1
+- 更新: 2026-05-16T01:18:19.863674+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=79072.1
 - Funnel: target 759 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARCSOL/USDT:USDT | +26.12% | $1,298,589.62 |
-| STORJ/USDT:USDT | +25.89% | $5,397,457.50 |
-| ASTEROID/USDT:USDT | +25.12% | $3,442,973.72 |
-| LAB/USDT:USDT | +13.14% | $150,746,111.06 |
-| PEAQ/USDT:USDT | +9.61% | $4,261,685.22 |
+| ARCSOL/USDT:USDT | +25.90% | $1,303,979.62 |
+| ASTEROID/USDT:USDT | +25.60% | $3,453,669.57 |
+| STORJ/USDT:USDT | +24.28% | $5,450,365.50 |
+| LAB/USDT:USDT | +13.48% | $150,885,349.24 |
+| GUA/USDT:USDT | +10.37% | $1,432,524.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
-| GUA/USDT:USDT | below_1h_threshold | +1.31% | +1.30% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +1.26% | +1.25% |
-| CHZ/USDT:USDT | below_1h_threshold | +0.96% | +0.95% |
-| POLYX/USDT:USDT | below_1h_threshold | +0.76% | +0.75% |
+| GUA/USDT:USDT | below_1h_threshold | +2.70% | +2.71% |
+| POLYX/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.50% | +1.50% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +1.26% | +1.26% |
 
 ## 5. 次に見るべき不足
 
