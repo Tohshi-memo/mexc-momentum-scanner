@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-16T01:33:23.735250+00:00
+- generated_at: 2026-05-16T01:38:41.174743+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4362**
+- closed shadow trades: **4363**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4362, expectancy=-0.09%
+- 全期間 MARKET基準: n=4363, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+0.09%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -34,8 +34,8 @@
 | LIMIT_6PCT_LONG | 10/20 | 50.0% | +1.17% | **+0.58%** |
 | LIMIT_8PCT_LONG | 6/20 | 30.0% | +1.33% | **+0.40%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.91% | **+0.36%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.09% | **+0.08%** |
 | LIMIT_FIB1272_LONG | 12/20 | 60.0% | -0.17% | **-0.10%** |
-| LIMIT_FIB1618_LONG | 4/20 | 20.0% | -0.82% | **-0.16%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,16 +47,16 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$117.99** / 初期 $100.00 (+17.99%)
-- 確定: 391件 (Win 97 / Loss 136 / Flat 158) / skip 532件
+- 確定: 391件 (Win 97 / Loss 136 / Flat 158) / skip 533件
 - 成長率目線: 平均log +0.000423 / 幾何平均 +0.042% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_6PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: STORJ/USDT:USDT `LIMIT_6PCT_LONG` EXPIRED account +0.00% 残高後 $117.99
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-16T01:33:17.509603+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=79013.0
-- Funnel: target 759 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-16T01:38:35.132369+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78982.0
+- Funnel: target 759 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +28.40% | $5,573,677.30 |
-| ASTEROID/USDT:USDT | +25.42% | $3,477,061.67 |
-| ARCSOL/USDT:USDT | +25.24% | $1,318,296.08 |
-| LAB/USDT:USDT | +20.72% | $152,293,783.03 |
-| GUA/USDT:USDT | +11.39% | $1,471,944.04 |
+| STORJ/USDT:USDT | +28.76% | $5,607,941.12 |
+| ARCSOL/USDT:USDT | +25.39% | $1,321,543.72 |
+| ASTEROID/USDT:USDT | +24.74% | $3,489,961.97 |
+| LAB/USDT:USDT | +20.00% | $153,590,470.78 |
+| GUA/USDT:USDT | +11.15% | $1,488,637.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.63% | +3.71% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.16% | +3.24% |
-| STORJ/USDT:USDT | below_1h_threshold | +2.50% | +2.58% |
-| UP/USDT:USDT | below_1h_threshold | +2.35% | +2.42% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.75% | +1.82% |
+| GUA/USDT:USDT | below_1h_threshold | +3.40% | +3.52% |
+| SAHARA/USDT:USDT | below_1h_threshold | +2.81% | +2.93% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.64% | +2.76% |
+| UP/USDT:USDT | below_1h_threshold | +2.63% | +2.75% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.06% | +2.18% |
 
 ## 5. 次に見るべき不足
 
