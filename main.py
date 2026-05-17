@@ -606,6 +606,10 @@ def main() -> None:
     run_once_mode: bool = os.getenv("RUN_ONCE",   "false").lower() == "true"
     scan_interval: int  = int(os.getenv("SCAN_INTERVAL_SECONDS", "300"))
     dry_run:       bool = os.getenv("DRY_RUN",    "true").lower()  != "false"
+    generate_experiment_report_enabled: bool = (
+        os.getenv("GENERATE_EXPERIMENT_REPORT", "true").strip().lower()
+        not in {"0", "false", "no", "off"}
+    )
 
     # 損失低減用パラメーター
     cooldown_hours:    int = int(os.getenv("COOLDOWN_HOURS", "48"))
@@ -674,10 +678,13 @@ def main() -> None:
                 logger.warning("Failed to update safe adaptive portfolio: %s", e)
             # シャドウトレードの集計レポートを再生成
             # （Claude が次回セッションでフィルター粒度を再評価するための入力）
-            try:
-                generate_experiment_report()
-            except Exception as e:
-                logger.warning("Failed to regenerate experiment report: %s", e)
+            if generate_experiment_report_enabled:
+                try:
+                    generate_experiment_report()
+                except Exception as e:
+                    logger.warning("Failed to regenerate experiment report: %s", e)
+            else:
+                logger.info("Skipping experiment report generation.")
             # 人間が読むための短い判断レポートを再生成
             try:
                 generate_decision_report()

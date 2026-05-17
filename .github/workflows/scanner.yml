@@ -99,6 +99,7 @@ jobs:
       # gzip アーカイブされる。analyze_experiments.py は hot + archive を
       # 結合して読むため、分析精度は落ちない。
       EXPERIMENT_HOT_MAX:        '500'
+      GENERATE_EXPERIMENT_REPORT: 'false'
 
       # --- 軽量な検出前コンテキスト計測 ---
       # data/market_context.json に市場全体の集計・上位候補・near missだけをローリング保存
