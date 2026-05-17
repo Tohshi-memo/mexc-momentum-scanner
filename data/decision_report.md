@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T22:28:36.879730+00:00
+- generated_at: 2026-05-17T22:33:29.539156+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4423**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T22:28:34.581911+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=77939.5
-- Funnel: target 760 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-17T22:33:27.281246+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=78009.4
+- Funnel: target 760 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +21.49% | $2,937,106.32 |
-| BUILDONBOB/USDT:USDT | +16.78% | $1,248,948.43 |
-| UB/USDT:USDT | +13.19% | $14,161,410.52 |
-| BILL/USDT:USDT | +8.87% | $34,363,215.28 |
-| HYPE/USDT:USDT | +6.70% | $292,124,963.71 |
+| FIDA/USDT:USDT | +24.16% | $3,026,413.69 |
+| BUILDONBOB/USDT:USDT | +17.45% | $1,260,006.16 |
+| UB/USDT:USDT | +11.72% | $14,189,174.26 |
+| BILL/USDT:USDT | +8.07% | $34,411,023.29 |
+| HYPE/USDT:USDT | +6.93% | $294,073,191.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIDA/USDT:USDT | below_1h_threshold | +2.72% | +3.26% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.02% | +1.56% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.84% | +1.38% |
-| XPD/USDT:USDT | below_1h_threshold | +0.74% | +1.28% |
-| NMR/USDT:USDT | below_1h_threshold | +0.46% | +1.00% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.12% | +1.58% |
+| XPD/USDT:USDT | below_1h_threshold | +0.99% | +1.44% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.87% | +1.32% |
+| NMR/USDT:USDT | below_1h_threshold | +0.85% | +1.31% |
+| SPACE/USDT:USDT | below_1h_threshold | +0.51% | +0.96% |
 
 ## 5. 次に見るべき不足
 
