@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T05:53:26.011396+00:00
+- generated_at: 2026-05-17T05:58:43.627615+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4386**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T05:53:22.734175+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78078.6
-- Funnel: target 760 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-17T05:58:40.074394+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78084.9
+- Funnel: target 760 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +27.25% | $7,343,788.78 |
-| CGPT/USDT:USDT | +26.32% | $1,818,082.55 |
-| BSB/USDT:USDT | +16.74% | $4,550,998.59 |
-| ASTEROID/USDT:USDT | +16.27% | $4,125,226.43 |
-| AIGENSYN/USDT:USDT | +8.92% | $2,835,589.41 |
+| CGPT/USDT:USDT | +27.93% | $1,828,737.29 |
+| AIA/USDT:USDT | +24.51% | $7,561,015.38 |
+| ASTEROID/USDT:USDT | +17.49% | $4,182,420.93 |
+| BSB/USDT:USDT | +17.35% | $4,566,794.52 |
+| AIGENSYN/USDT:USDT | +10.43% | $2,849,145.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.95% | +5.00% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.84% | +3.89% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.16% | +3.21% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.78% | +1.83% |
-| INJ/USDT:USDT | below_1h_threshold | +1.48% | +1.53% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.66% | +2.70% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.18% | +2.22% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.84% | +1.88% |
+| BSB/USDT:USDT | below_1h_threshold | +1.63% | +1.67% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.58% | +1.62% |
 
 ## 5. 次に見るべき不足
 
