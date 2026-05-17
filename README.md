@@ -16,7 +16,7 @@ MEXC USDT-M 先物の急騰アルトコインを検出し、テクニカル・�
 - **シャドウトレード**: STRICT 通過／外れに関わらず全候補を追跡し、フィルター
   粒度を再評価するための統計を蓄積 (`core/experiment.py`)
 - **通知**: Discord Webhook でシグナル検知・TP/SL ヒット・期限切れを通知
-- **実行環境**: GitHub Actions でスケジュール実行、`data/*.json` をコミットして永続化
+- **実行環境**: 外部 cron から GitHub Actions を起動し、`data/*.json` をコミットして永続化
 
 ## クイックスタート
 
@@ -29,64 +29,124 @@ cp .env.example .env
 python main.py
 ```
 
-## 実トレード ⇄ バーチャルトレードの切り替え
+## GitHub Actions の運用
 
-`.env` の `DRY_RUN` 1 行で切り替わります。
+このリポジトリでは、データ収集用と本番発注用の Action を分けています。
+通常のデータ収集では実注文されません。
 
-```ini
-# バーチャル (シミュレーション) — デフォルト
-DRY_RUN=true
+| Action | 用途 | 注文 | データ保存 |
+|---|---|---|---|
+| `MEXC Momentum Scanner` | データ収集・DryRun・シグナル追跡 | しない (`DRY_RUN=true` 固定) | `data/` を commit/push |
+| `MEXC Momentum Analysis` | 重い分析レポート生成 | しない | `analysis-results` の `reports/` を更新 |
+| `MEXC Live Trader` | MEXC 本番注文 | 条件を満たすと実注文 | `data/` は push しない |
+| `Show MEXC Balance` | 残高確認 | しない | 保存なし |
 
-# 実トレード (MEXC に実注文)
-DRY_RUN=false
+`MEXC Momentum Scanner` は外部 cron から5分ごとに呼び出す想定です。GitHub Actions 内蔵の
+`schedule` は使わず、二重起動を避けています。
+
+## MEXC 本番トレードにする方法
+
+本番注文は `MEXC Live Trader` Action からだけ行います。`MEXC Momentum Scanner` は
+DryRun 固定なので、そこから本番注文に切り替えることはできません。
+
+### 1. MEXC API キーを用意する
+
+MEXC の API 管理画面で、USDT-M 先物の取引に使える API キーを作成します。
+
+- DryRun だけなら Read-only で十分です。
+- 本番注文には `Futures Trade` 権限が必要です。
+- IP 制限を使う場合は、GitHub Actions の実行元 IP の扱いに注意してください。固定IPが必要なら GitHub Actions より VPS 運用の方が向いています。
+
+### 2. GitHub Secrets を設定する
+
+GitHub の repository settings で以下の secrets を登録します。
+
+```text
+MEXC_API_KEY
+MEXC_SECRET_KEY
+DISCORD_WEBHOOK_URL
 ```
 
-### 動作の違い
+`DISCORD_WEBHOOK_URL` は任意ですが、本番注文では発注・スキップ・失敗理由を確認するため設定推奨です。
 
-| 項目 | `DRY_RUN=true` | `DRY_RUN=false` |
+### 3. GitHub Environment を作る
+
+`MEXC Live Trader` は `environment: live-trading` を使います。
+GitHub の `Settings` → `Environments` で `live-trading` を作成してください。
+
+推奨設定:
+
+- `Required reviewers` を有効にする
+- 自分の承認なしに本番Actionが進まないようにする
+- 本番用のAPIキーを environment secrets に分けて置く運用も可
+
+### 4. 残高を確認する
+
+本番前に `Show MEXC Balance` Action を手動実行します。
+
+ローカルで確認する場合:
+
+```bash
+python tools/show_balance.py
+```
+
+### 5. 最初の本番注文を手動で実行する
+
+GitHub Actions で `MEXC Live Trader` を選び、`Run workflow` から実行します。
+
+入力値:
+
+```text
+live_trading_enabled = true
+confirmation = LIVE
+```
+
+この2つが揃わない場合、Action は失敗して実注文しません。さらにコード側でも
+`LIVE_TRADING_ENABLED=true` と `LIVE_TRADING_CONFIRMATION=LIVE` がない限り
+`LiveExecutor` は起動しません。
+
+### 6. 初期の本番リスク設定
+
+`MEXC Live Trader` の初期設定は、小さく試す前提です。
+
+```yaml
+LIVE_MAX_ORDERS_PER_RUN: '1'
+LIVE_MAX_OPEN_POSITIONS: '1'
+LIVE_BASE_RISK_PCT: '0.25'
+LIVE_MAX_RISK_PCT: '0.25'
+LIVE_MAX_LEVERAGE: '2.0'
+LIVE_MIN_BALANCE_USDT: '5.0'
+```
+
+つまり、1回のActionで最大1注文、同時保有も最大1ポジションです。
+安定確認後に増やす場合も、まずは `LIVE_BASE_RISK_PCT` と `LIVE_MAX_OPEN_POSITIONS` を小さく保ってください。
+
+### 7. SL/TP 付き発注の仕組み
+
+本番注文は `core/executor.py` の `LiveExecutor` が担当します。
+通過した場合のみ `market sell` に `stopLossPrice` と `takeProfitPrice` を付けて発注します。
+
+発注前に以下のガードを通ります。
+
+1. `fundamental == AVOID` ならスキップ
+2. 残高 `< LIVE_MIN_BALANCE_USDT` ならスキップ
+3. 同じシンボルに既存ポジションがあればスキップ
+4. 開いているポジション数が `LIVE_MAX_OPEN_POSITIONS` 以上ならスキップ
+5. SL/TP が不正ならエラー
+6. 最小ロットまたは最小名目額を下回るならスキップ
+
+通過した場合だけ、SL/TP を付けた注文をMEXCへ送ります。
+
+## DryRun と本番の違い
+
+| 項目 | DryRun (`MEXC Momentum Scanner`) | 本番 (`MEXC Live Trader`) |
 |---|---|---|
-| 注文 | ログ出力のみ | MEXC USDT-M 先物に実発注 |
-| SL/TP | 仮想追跡 (価格到達で outcome 判定) | 発注時に取引所へ attach |
-| バーチャル残高 (`data/live_portfolio.json`) | 更新される | 更新される |
-| 実績統計 (`data/stats.json`) | 更新される | 更新される |
-| シャドウトレード (`data/experiments.json`) | 更新される | 更新される |
-| API 権限 | Read-only で可 | **Futures Trade 権限必須** |
-
-### `DRY_RUN=false` に切り替える前のチェックリスト
-
-1. **API キー権限**
-   - MEXC の API 管理画面で `Futures Trade` をオンにする
-   - IP 制限を設定している場合は実行環境の IP を許可
-2. **残高確認**
-   ```bash
-   python tools/show_balance.py
-   # または GitHub Actions の "Show MEXC Balance" を workflow_dispatch
-   ```
-3. **リスクパラメーター確認** (`.env`)
-   ```ini
-   LIVE_BASE_RISK_PCT=0.5        # 1 トレードで失う可能性がある残高比率
-   LIVE_MAX_RISK_PCT=1.5         # クリップ上限
-   LIVE_MAX_LEVERAGE=3.0         # 名目額の上限 (× 残高)
-   LIVE_MIN_BALANCE_USDT=5.0     # 残高がこれを下回ると発注停止
-   LIVE_MAX_OPEN_POSITIONS=3     # 同時保有上限
-   ```
-4. **サーキットブレーカー状態** (詳細は後述の「サーキットブレーカーの挙動」)
-   - 直近 `CIRCUIT_BREAKER_LOOKBACK_HOURS` 時間内に closed した記録のうち、
-     直近 `CIRCUIT_BREAKER_WINDOW` 件中 `CIRCUIT_BREAKER_LOSSES` 件以上 SL なら当サイクル全スキップ
-
-### 実トレード時の安全装置 (`core/executor.py` `LiveExecutor`)
-
-発注ごとに以下のガードが順番にチェックされ、1 つでも抵触すると発注されません。
-
-1. `fundamental == AVOID` → スキップ
-2. 残高 `< LIVE_MIN_BALANCE_USDT` → スキップ
-3. 同シンボルに既存ポジション → スキップ
-4. 開いているポジション数 ≥ `LIVE_MAX_OPEN_POSITIONS` → スキップ
-5. SL/TP が不正 (SHORT なら SL は entry より上 / TP は下) → エラー
-6. 最小ロットまたは最小名目額を下回る → スキップ
-
-通過した場合のみ `market sell` + `stopLossPrice` / `takeProfitPrice` を同一注文に
-attach して発行します。**SL/TP が必ずセットで出る**のが設計上の保証です。
+| 実注文 | しない | 条件を満たすと行う |
+| 実行頻度 | 外部 cron で5分ごと | 最初は手動推奨 |
+| `DRY_RUN` | `true` 固定 | `false` 固定 |
+| 追加ロック | 不要 | `live_trading_enabled=true` + `confirmation=LIVE` |
+| `data/` push | する | しない |
+| SL/TP | 仮想追跡 | 注文時にMEXCへ送信 |
 
 ### サーキットブレーカーの挙動
 
@@ -222,7 +282,9 @@ mexc-momentum-scanner/
 │   ├── display.py             # rich コンソール出力
 │   └── notifier.py            # Discord Webhook
 └── .github/workflows/
-    ├── scanner.yml            # メインスキャナー (スケジュール)
+    ├── scanner.yml            # DryRun専用スキャナー (外部cronから起動)
+    ├── analysis.yml           # 重い分析レポート生成
+    ├── live-trade.yml         # MEXC本番注文用 (手動・二重ロック)
     └── show_balance.yml       # 残高確認 (手動)
 ```
 
