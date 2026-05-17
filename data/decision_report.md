@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T02:33:20.755956+00:00
+- generated_at: 2026-05-17T02:38:21.642752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4375**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T02:33:17.427095+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=77865.4
+- 更新: 2026-05-17T02:38:18.285066+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=77875.1
 - Funnel: target 760 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +28.15% | $2,039,150.01 |
-| LYN/USDT:USDT | +14.45% | $3,949,367.03 |
-| BSB/USDT:USDT | +8.42% | $3,883,420.74 |
-| CGPT/USDT:USDT | +7.33% | $1,355,207.32 |
-| ASTEROID/USDT:USDT | +6.87% | $4,461,034.59 |
+| AIA/USDT:USDT | +27.00% | $2,077,262.65 |
+| LYN/USDT:USDT | +12.53% | $4,006,116.09 |
+| BSB/USDT:USDT | +9.61% | $3,888,331.30 |
+| CGPT/USDT:USDT | +7.81% | $1,356,569.83 |
+| ASTEROID/USDT:USDT | +7.53% | $4,463,563.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIA/USDT:USDT | below_1h_threshold | +4.38% | +4.16% |
-| CFX/USDT:USDT | below_1h_threshold | +2.85% | +2.63% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.59% | +2.36% |
-| CGPT/USDT:USDT | below_1h_threshold | +2.03% | +1.80% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.96% | +1.74% |
+| AIA/USDT:USDT | below_1h_threshold | +3.36% | +3.12% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.00% | +2.76% |
+| CFX/USDT:USDT | below_1h_threshold | +2.65% | +2.41% |
+| CGPT/USDT:USDT | below_1h_threshold | +2.49% | +2.25% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.14% | +1.90% |
 
 ## 5. 次に見るべき不足
 
