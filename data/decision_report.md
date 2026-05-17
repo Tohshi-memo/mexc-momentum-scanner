@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T16:53:34.894266+00:00
+- generated_at: 2026-05-17T16:58:51.021327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4412**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T16:53:32.695328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78032.9
-- Funnel: target 760 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.9 >= 65=1
+- 更新: 2026-05-17T16:58:46.047763+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78008.9
+- Funnel: target 760 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.4 >= 65=1, 4h RSI 88.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +8.46% | $4,512,135.50 |
-| UB/USDT:USDT | +3.52% | $13,967,538.11 |
-| KAIA/USDT:USDT | +3.18% | $3,969,528.64 |
-| RAVE/USDT:USDT | +3.13% | $6,063,906.64 |
-| ARCSOL/USDT:USDT | +2.30% | $1,644,522.47 |
+| EDEN/USDT:USDT | +5.96% | $4,717,356.63 |
+| UB/USDT:USDT | +5.23% | $14,079,664.92 |
+| KAIA/USDT:USDT | +5.16% | $4,092,304.08 |
+| RAVE/USDT:USDT | +3.00% | $6,166,098.37 |
+| ARCSOL/USDT:USDT | +2.25% | $1,645,927.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.40% | +3.37% |
-| KAIA/USDT:USDT | below_1h_threshold | +3.19% | +3.15% |
-| RAVE/USDT:USDT | below_1h_threshold | +3.14% | +3.11% |
-| ARCSOL/USDT:USDT | below_1h_threshold | +2.30% | +2.27% |
-| GUA/USDT:USDT | below_1h_threshold | +2.23% | +2.19% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.00% | +3.00% |
+| ARCSOL/USDT:USDT | below_1h_threshold | +2.21% | +2.21% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.91% | +1.91% |
+| GUA/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
 
 ## 5. 次に見るべき不足
 
