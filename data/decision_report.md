@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T17:08:36.402212+00:00
+- generated_at: 2026-05-17T17:13:31.698781+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4413**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T17:08:34.152405+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77971.7
+- 更新: 2026-05-17T17:13:29.731139+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=77849.2
 - Funnel: target 760 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +7.00% | $4,951,780.33 |
-| UB/USDT:USDT | +4.10% | $11,705,507.19 |
-| RAVE/USDT:USDT | +3.43% | $5,797,917.72 |
-| KAIA/USDT:USDT | +2.39% | $4,387,684.61 |
-| ARCSOL/USDT:USDT | +2.00% | $1,211,565.17 |
+| EDEN/USDT:USDT | +4.51% | $5,096,656.39 |
+| UB/USDT:USDT | +3.14% | $11,809,507.69 |
+| KAIA/USDT:USDT | +2.25% | $4,417,089.61 |
+| RAVE/USDT:USDT | +2.14% | $5,987,088.31 |
+| BEAT/USDT:USDT | +1.79% | $3,387,081.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.66% | +0.69% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.57% | +0.60% |
-| INJ/USDT:USDT | below_1h_threshold | +0.55% | +0.58% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.52% | +0.55% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +0.84% | +1.03% |
+| B/USDT:USDT | below_1h_threshold | +0.82% | +1.01% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.95% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.52% | +0.70% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.46% | +0.65% |
 
 ## 5. 次に見るべき不足
 
