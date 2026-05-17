@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T00:03:19.098636+00:00
+- generated_at: 2026-05-17T00:08:26.006209+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4371**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T00:03:15.732465+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78174.3
+- 更新: 2026-05-17T00:08:22.688577+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78185.6
 - Funnel: target 760 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +14.23% | $2,185,613.56 |
-| AIA/USDT:USDT | +13.66% | $1,149,458.22 |
-| BSB/USDT:USDT | +12.04% | $3,642,340.66 |
-| LUNC/USDT:USDT | +10.81% | $11,884,142.47 |
-| ASTEROID/USDT:USDT | +10.10% | $4,308,147.65 |
+| LYN/USDT:USDT | +14.89% | $2,223,254.63 |
+| AIA/USDT:USDT | +14.66% | $1,174,396.35 |
+| BSB/USDT:USDT | +11.13% | $3,654,662.50 |
+| ASTEROID/USDT:USDT | +9.78% | $4,315,091.54 |
+| LUNC/USDT:USDT | +9.54% | $11,981,273.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCA/USDT:USDT | below_1h_threshold | +1.62% | +1.54% |
-| LYN/USDT:USDT | below_1h_threshold | +1.48% | +1.40% |
-| BILL/USDT:USDT | below_1h_threshold | +0.89% | +0.80% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.46% |
-| CHZ/USDT:USDT | below_1h_threshold | +0.52% | +0.43% |
+| ORCA/USDT:USDT | below_1h_threshold | +4.27% | +4.16% |
+| LYN/USDT:USDT | below_1h_threshold | +2.36% | +2.26% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.03% | +0.93% |
+| CGPT/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
+| BILL/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
 
 ## 5. 次に見るべき不足
 
