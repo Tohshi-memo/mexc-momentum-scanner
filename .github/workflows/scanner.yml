@@ -1,9 +1,6 @@
 name: MEXC Momentum Scanner
 
 on:
-  schedule:
-    - cron: '*/5 * * * *'
-
   workflow_dispatch:
     inputs:
       dry_run:
