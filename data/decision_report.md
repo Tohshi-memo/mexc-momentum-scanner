@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T03:53:43.677291+00:00
+- generated_at: 2026-05-17T03:58:35.341242+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4379**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T03:53:30.459930+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=77991.1
-- Funnel: target 760 → liquid 129 → pre 50 → checked 50 → surge 6 → strict 5
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.3 >= 65=1
+- 更新: 2026-05-17T03:58:26.904873+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=77972.4
+- Funnel: target 760 → liquid 129 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +45.77% | $3,450,476.92 |
-| CGPT/USDT:USDT | +22.09% | $1,422,581.82 |
-| BSB/USDT:USDT | +15.42% | $4,207,363.59 |
-| LYN/USDT:USDT | +9.15% | $4,402,934.79 |
-| UP/USDT:USDT | +8.54% | $1,697,227.39 |
+| AIA/USDT:USDT | +42.76% | $3,536,800.42 |
+| CGPT/USDT:USDT | +21.70% | $1,433,893.66 |
+| BSB/USDT:USDT | +15.55% | $4,218,948.97 |
+| LYN/USDT:USDT | +11.14% | $4,409,438.07 |
+| UP/USDT:USDT | +7.67% | $1,698,970.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +4.64% | +4.47% |
-| LAB/USDT:USDT | below_1h_threshold | +4.22% | +4.04% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.94% | +3.76% |
-| ZBT/USDT:USDT | below_1h_threshold | +3.01% | +2.84% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.70% | +2.53% |
+| UB/USDT:USDT | below_relative_strength | +5.01% | +4.86% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.80% | +4.65% |
+| PENDLE/USDT:USDT | below_1h_threshold | +4.52% | +4.37% |
+| LAB/USDT:USDT | below_1h_threshold | +4.19% | +4.04% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.39% | +3.24% |
 
 ## 5. 次に見るべき不足
 
