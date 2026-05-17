@@ -538,9 +538,18 @@ class ExecutorFactory:
         if dry_run:
             logger.info("Executor mode: DRY RUN (no real orders will be placed).")
             return DryRunExecutor()
-        else:
-            logger.warning(
-                "Executor mode: LIVE - Real orders WILL be placed. "
-                "Ensure API has Trade permission and risk parameters are correct."
+
+        live_enabled = os.getenv("LIVE_TRADING_ENABLED", "false").lower() == "true"
+        live_confirmation = os.getenv("LIVE_TRADING_CONFIRMATION", "")
+        if not live_enabled or live_confirmation != "LIVE":
+            raise RuntimeError(
+                "DRY_RUN=false requested, but live trading is locked. "
+                "Set LIVE_TRADING_ENABLED=true and LIVE_TRADING_CONFIRMATION=LIVE "
+                "only from the protected live workflow."
             )
-            return LiveExecutor(client)
+
+        logger.warning(
+            "Executor mode: LIVE - Real orders WILL be placed. "
+            "Ensure API has Trade permission and risk parameters are correct."
+        )
+        return LiveExecutor(client)

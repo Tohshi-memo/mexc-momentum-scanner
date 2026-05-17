@@ -103,6 +103,7 @@ def run_once(
     live_strategy: LiveStrategyBuilder,
     market_context: MarketContextRecorder,
     experiment_max_per_cycle: int,
+    max_live_orders_per_run: int,
     dry_run: bool,
     cooldown_hours: int,
     cb_window: int,
@@ -250,8 +251,16 @@ def run_once(
 
     # ── Step 4: ファンダ考察 + 追跡登録 + 通知 ───────────────────────
     console.print()
+    live_orders_placed = 0
     for result in confirmed:
         try:
+            if not dry_run and live_orders_placed >= max_live_orders_per_run:
+                logger.warning(
+                    "Live order cap reached (%d). Skipping remaining signals.",
+                    max_live_orders_per_run,
+                )
+                break
+
             # Cooldown チェック (直近 SL で食らった銘柄はスキップ)
             if stats.had_sl_within(result.symbol, hours=cooldown_hours):
                 print_cooldown_skip(result.symbol)
@@ -366,6 +375,9 @@ def run_once(
 
             # 追跡登録 (どのライブ戦略で発注したかを保存しておき、決済時に
             # LivePortfolio へ転記する)
+            if exec_status == "ok" and not dry_run:
+                live_orders_placed += 1
+
             is_new = tracker.add_if_new(
                 symbol=result.symbol,
                 detection_price=proposal.entry_price,
@@ -618,6 +630,7 @@ def main() -> None:
 
     # 実験用シャドウトレード設定
     experiment_max_per_cycle: int = int(os.getenv("EXPERIMENT_MAX_PER_CYCLE", "20"))
+    max_live_orders_per_run: int = int(os.getenv("LIVE_MAX_ORDERS_PER_RUN", "1"))
 
     logger.info(
         "MEXC Scanner starting | mode=%s dry_run=%s cooldown=%dh cb=%d/%d",
@@ -654,7 +667,7 @@ def main() -> None:
                 builder, executor, tracker, stats, notifier,
                 experiment_tracker, live_portfolio,
                 live_filter, live_strategy, market_context,
-                experiment_max_per_cycle,
+                experiment_max_per_cycle, max_live_orders_per_run,
                 dry_run, cooldown_hours, cb_window, cb_loss_threshold,
             )
         except KeyboardInterrupt:

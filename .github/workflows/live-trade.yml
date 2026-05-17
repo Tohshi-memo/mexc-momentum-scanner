@@ -1,0 +1,94 @@
+name: MEXC Live Trader
+
+on:
+  workflow_dispatch:
+    inputs:
+      live_trading_enabled:
+        description: 'Enable real MEXC orders for this run'
+        required: true
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+      confirmation:
+        description: 'Type LIVE to confirm real orders'
+        required: true
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mexc-live-trader-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: live-trading
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+      MEXC_API_KEY:    ${{ secrets.MEXC_API_KEY }}
+      MEXC_SECRET_KEY: ${{ secrets.MEXC_SECRET_KEY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      RUN_ONCE: 'true'
+      DRY_RUN: 'false'
+      LIVE_TRADING_ENABLED: ${{ github.event.inputs.live_trading_enabled }}
+      LIVE_TRADING_CONFIRMATION: ${{ github.event.inputs.confirmation }}
+
+      # Fail small while proving the live path.
+      LIVE_MAX_ORDERS_PER_RUN: '1'
+      LIVE_MAX_OPEN_POSITIONS: '1'
+      LIVE_BASE_RISK_PCT: '0.25'
+      LIVE_MAX_RISK_PCT: '0.25'
+      LIVE_MAX_LEVERAGE: '2.0'
+      LIVE_MIN_BALANCE_USDT: '5.0'
+
+      # Keep live execution short and independent from heavy report generation.
+      EXPERIMENT_MAX_PER_CYCLE: '0'
+      GENERATE_EXPERIMENT_REPORT: 'false'
+      LOG_LEVEL: 'INFO'
+      LOG_FILE: 'logs/live-trader.log'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 1
+
+      - name: Preflight live lock
+        run: |
+          if [ "${LIVE_TRADING_ENABLED}" != "true" ] || [ "${LIVE_TRADING_CONFIRMATION}" != "LIVE" ]; then
+            echo "Live trading is locked. Choose true and type LIVE to run real orders."
+            exit 1
+          fi
+          if [ -z "${MEXC_API_KEY}" ] || [ -z "${MEXC_SECRET_KEY}" ]; then
+            echo "MEXC API secrets are missing."
+            exit 1
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run live trader
+        run: python main.py
+
+      - name: Upload logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: live-trader-logs-${{ github.run_number }}
+          path: logs/
+          retention-days: 14
