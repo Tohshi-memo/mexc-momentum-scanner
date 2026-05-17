@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T06:13:22.315030+00:00
+- generated_at: 2026-05-17T06:18:29.409430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4387**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T06:13:18.972776+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=78142.1
-- Funnel: target 760 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-17T06:18:25.933670+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=78140.9
+- Funnel: target 760 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +28.77% | $7,833,481.83 |
-| CGPT/USDT:USDT | +27.19% | $1,795,554.28 |
-| BSB/USDT:USDT | +19.78% | $4,578,790.55 |
-| ASTEROID/USDT:USDT | +16.42% | $4,200,337.76 |
-| AIGENSYN/USDT:USDT | +10.34% | $2,709,111.16 |
+| AIA/USDT:USDT | +33.11% | $8,030,065.32 |
+| CGPT/USDT:USDT | +26.97% | $1,810,754.58 |
+| BSB/USDT:USDT | +19.73% | $4,604,842.24 |
+| ASTEROID/USDT:USDT | +17.28% | $4,224,080.17 |
+| AIGENSYN/USDT:USDT | +11.16% | $2,713,541.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIA/USDT:USDT | below_1h_threshold | +3.18% | +3.11% |
-| BSB/USDT:USDT | below_1h_threshold | +1.75% | +1.68% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.52% | +1.45% |
-| UP/USDT:USDT | below_1h_threshold | +1.35% | +1.28% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.09% | +1.02% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.97% | +3.91% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| BSB/USDT:USDT | below_1h_threshold | +1.77% | +1.70% |
+| UP/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.94% | +0.87% |
 
 ## 5. 次に見るべき不足
 
