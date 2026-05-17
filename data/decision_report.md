@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T06:28:21.972560+00:00
+- generated_at: 2026-05-17T06:33:31.600991+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4387**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T06:28:18.390315+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=78000.0
-- Funnel: target 760 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.2 >= 65=1
+- 更新: 2026-05-17T06:33:27.968909+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78050.0
+- Funnel: target 760 → liquid 126 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +34.38% | $8,209,178.73 |
-| CGPT/USDT:USDT | +26.64% | $1,826,480.55 |
-| BSB/USDT:USDT | +18.82% | $4,630,893.25 |
-| ASTEROID/USDT:USDT | +16.66% | $4,264,183.76 |
-| AIGENSYN/USDT:USDT | +12.98% | $2,743,945.97 |
+| AIA/USDT:USDT | +34.16% | $8,295,900.71 |
+| CGPT/USDT:USDT | +27.74% | $1,842,998.66 |
+| BSB/USDT:USDT | +20.90% | $4,677,578.14 |
+| ASTEROID/USDT:USDT | +16.09% | $4,279,327.51 |
+| AIGENSYN/USDT:USDT | +12.01% | $2,757,427.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.57% | +4.68% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.43% | +3.54% |
-| UP/USDT:USDT | below_1h_threshold | +1.39% | +1.51% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.36% | +1.47% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.03% | +1.14% |
+| UP/USDT:USDT | below_1h_threshold | +3.02% | +3.07% |
+| BSB/USDT:USDT | below_1h_threshold | +2.76% | +2.81% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.62% | +2.67% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.08% | +2.13% |
+| GUA/USDT:USDT | below_1h_threshold | +1.25% | +1.30% |
 
 ## 5. 次に見るべき不足
 
