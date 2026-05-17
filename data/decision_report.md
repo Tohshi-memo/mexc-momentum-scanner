@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T16:08:29.625913+00:00
+- generated_at: 2026-05-17T16:13:27.281651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4410**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T16:08:27.654039+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=78051.2
+- 更新: 2026-05-17T16:13:25.319767+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78017.3
 - Funnel: target 760 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +4.40% | $3,686,234.40 |
-| FHE/USDT:USDT | +2.66% | $3,653,231.86 |
-| RAVE/USDT:USDT | +2.02% | $4,465,235.28 |
-| ASTEROID/USDT:USDT | +1.66% | $4,365,016.49 |
-| SPACE/USDT:USDT | +1.45% | $1,046,824.66 |
+| EDEN/USDT:USDT | +4.06% | $3,748,688.91 |
+| FHE/USDT:USDT | +3.28% | $3,757,434.76 |
+| RAVE/USDT:USDT | +2.83% | $4,563,532.57 |
+| APE/USDT:USDT | +1.82% | $3,526,789.10 |
+| GUA/USDT:USDT | +1.30% | $2,777,714.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.41% | +4.35% |
-| FHE/USDT:USDT | below_1h_threshold | +2.67% | +2.61% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.02% | +1.97% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.66% | +1.60% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.40% | +1.34% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.26% | +4.25% |
+| FHE/USDT:USDT | below_1h_threshold | +3.31% | +3.30% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.80% | +2.78% |
+| APE/USDT:USDT | below_1h_threshold | +1.83% | +1.82% |
+| GUA/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
 
 ## 5. 次に見るべき不足
 
