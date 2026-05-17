@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T17:43:32.146104+00:00
+- generated_at: 2026-05-17T17:48:24.608232+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4414**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T17:43:29.867647+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77975.5
-- Funnel: target 760 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-17T17:48:22.473176+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77994.1
+- Funnel: target 760 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +2.58% | $4,328,426.66 |
-| UB/USDT:USDT | +2.14% | $13,088,141.26 |
-| ARCSOL/USDT:USDT | +2.07% | $1,226,770.60 |
-| SPACE/USDT:USDT | +1.66% | $1,161,706.52 |
-| KAIA/USDT:USDT | +1.65% | $4,653,685.85 |
+| UB/USDT:USDT | +2.94% | $13,151,391.28 |
+| ASTEROID/USDT:USDT | +2.44% | $4,331,942.54 |
+| ARCSOL/USDT:USDT | +1.97% | $1,228,014.40 |
+| RAVE/USDT:USDT | +1.42% | $6,416,863.46 |
+| SPACE/USDT:USDT | +1.01% | $1,166,170.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.28% | +2.30% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.63% | +0.66% |
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.55% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.17% | +2.17% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.61% | +0.61% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.58% | +0.57% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
 
 ## 5. 次に見るべき不足
 
