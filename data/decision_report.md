@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T19:23:26.688254+00:00
+- generated_at: 2026-05-17T19:28:21.906126+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4417**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T19:23:24.722709+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78238.1
+- 更新: 2026-05-17T19:28:19.939395+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78190.2
 - Funnel: target 760 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +19.42% | $2,054,577.59 |
-| UB/USDT:USDT | +8.58% | $12,855,547.62 |
-| BUILDONBOB/USDT:USDT | +5.75% | $1,110,751.61 |
-| HYPE/USDT:USDT | +5.43% | $230,038,646.68 |
-| ASTEROID/USDT:USDT | +5.22% | $4,066,802.42 |
+| FIDA/USDT:USDT | +19.00% | $2,083,851.75 |
+| UB/USDT:USDT | +8.95% | $12,953,107.19 |
+| BILL/USDT:USDT | +6.15% | $32,111,714.03 |
+| HYPE/USDT:USDT | +5.90% | $233,496,416.44 |
+| ASTEROID/USDT:USDT | +5.49% | $4,074,953.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.15% | +2.13% |
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.84% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.41% | +1.40% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.15% | +1.13% |
+| VVV/USDT:USDT | below_1h_threshold | +1.96% | +2.00% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.65% | +1.69% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.48% | +1.53% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.47% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
 
 ## 5. 次に見るべき不足
 
