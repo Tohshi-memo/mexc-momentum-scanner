@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T21:33:30.945001+00:00
+- generated_at: 2026-05-17T21:38:27.837190+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4422**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T21:33:28.935845+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=78362.6
+- 更新: 2026-05-17T21:38:25.881370+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=78370.9
 - Funnel: target 760 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +19.24% | $2,775,138.89 |
-| BUILDONBOB/USDT:USDT | +15.39% | $1,346,293.07 |
-| UB/USDT:USDT | +10.03% | $14,057,104.64 |
-| BILL/USDT:USDT | +8.20% | $34,404,675.52 |
-| HYPE/USDT:USDT | +6.96% | $275,973,729.19 |
+| FIDA/USDT:USDT | +20.03% | $2,804,970.33 |
+| BUILDONBOB/USDT:USDT | +14.77% | $1,356,170.03 |
+| UB/USDT:USDT | +12.46% | $14,093,056.20 |
+| BILL/USDT:USDT | +7.71% | $34,448,572.72 |
+| HYPE/USDT:USDT | +7.09% | $276,973,970.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +4.44% | +4.27% |
-| FIDA/USDT:USDT | below_1h_threshold | +4.19% | +4.02% |
-| KAS/USDT:USDT | below_1h_threshold | +2.20% | +2.03% |
-| AKT/USDT:USDT | below_1h_threshold | +2.01% | +1.84% |
-| NMR/USDT:USDT | below_1h_threshold | +1.76% | +1.59% |
+| FIDA/USDT:USDT | below_1h_threshold | +4.77% | +4.59% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.96% | +3.78% |
+| AKT/USDT:USDT | below_1h_threshold | +2.43% | +2.25% |
+| KAS/USDT:USDT | below_1h_threshold | +2.35% | +2.17% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.67% | +1.49% |
 
 ## 5. 次に見るべき不足
 
