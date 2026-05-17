@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T01:48:31.619755+00:00
+- generated_at: 2026-05-17T01:53:25.342175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4374**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.20** / 初期 $100.00 (-2.80%)
-- 確定トレード: 47件 (TP 12 / SL 32 / EXP 3)
-- 最新: NAORIS/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.20
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$98.17** / 初期 $100.00 (-1.83%)
+- 確定トレード: 48件 (TP 13 / SL 32 / EXP 3)
+- 最新: UB/USDT:USDT TP_HIT PnL +8.00% 残高後 $98.17
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T01:48:27.826600+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=77828.4
+- 更新: 2026-05-17T01:53:21.734954+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=77784.2
 - Funnel: target 760 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.4 >= 65=1
+- Strict後reject: 4h RSI 80.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +26.33% | $1,661,845.56 |
-| LYN/USDT:USDT | +17.87% | $3,485,936.13 |
-| UP/USDT:USDT | +12.21% | $1,643,589.29 |
-| BSB/USDT:USDT | +9.03% | $3,850,885.39 |
-| NMR/USDT:USDT | +7.94% | $1,189,533.53 |
+| AIA/USDT:USDT | +27.00% | $1,694,369.89 |
+| LYN/USDT:USDT | +17.06% | $3,543,247.66 |
+| UP/USDT:USDT | +11.58% | $1,647,738.16 |
+| BSB/USDT:USDT | +9.15% | $3,853,750.53 |
+| NMR/USDT:USDT | +7.99% | $1,194,747.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UP/USDT:USDT | below_1h_threshold | +3.80% | +3.91% |
-| NMR/USDT:USDT | below_1h_threshold | +1.43% | +1.54% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.36% | +1.47% |
-| MYX/USDT:USDT | below_1h_threshold | +0.45% | +0.57% |
-| LYN/USDT:USDT | below_1h_threshold | +0.34% | +0.45% |
+| UP/USDT:USDT | below_1h_threshold | +3.35% | +3.52% |
+| NMR/USDT:USDT | below_1h_threshold | +1.44% | +1.61% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.04% | +1.21% |
+| MYX/USDT:USDT | below_1h_threshold | +0.71% | +0.87% |
+| GUA/USDT:USDT | below_1h_threshold | +0.29% | +0.46% |
 
 ## 5. 次に見るべき不足
 
