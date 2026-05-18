@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T08:43:31.066915+00:00
+- generated_at: 2026-05-18T08:48:42.293999+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4438**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T08:43:29.052181+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=76928.0
+- 更新: 2026-05-18T08:48:40.311302+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=76920.0
 - Funnel: target 765 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +37.09% | $8,069,736.92 |
-| BSB/USDT:USDT | +10.41% | $20,905,997.45 |
-| OPENLEDGER/USDT:USDT | +4.54% | $1,385,301.28 |
-| HYPE/USDT:USDT | +4.53% | $280,279,645.07 |
-| ZEC/USDT:USDT | +2.96% | $485,695,644.33 |
+| FIDA/USDT:USDT | +35.21% | $8,116,965.74 |
+| BSB/USDT:USDT | +10.63% | $20,936,530.23 |
+| OPENLEDGER/USDT:USDT | +4.92% | $1,386,188.36 |
+| HYPE/USDT:USDT | +4.41% | $280,381,473.78 |
+| ZEC/USDT:USDT | +2.92% | $486,410,936.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RUNE/USDT:USDT | below_1h_threshold | +3.71% | +3.85% |
-| BSB/USDT:USDT | below_1h_threshold | +2.49% | +2.64% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.97% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.70% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.33% | +1.48% |
+| RUNE/USDT:USDT | below_1h_threshold | +4.09% | +4.25% |
+| BSB/USDT:USDT | below_1h_threshold | +2.87% | +3.03% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.18% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.95% |
+| EDU/USDT:USDT | below_1h_threshold | +1.54% | +1.69% |
 
 ## 5. 次に見るべき不足
 
