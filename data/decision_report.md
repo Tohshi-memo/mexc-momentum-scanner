@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T02:28:30.784631+00:00
+- generated_at: 2026-05-18T02:32:59.726155+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4431**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T02:28:28.317675+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77014.5
+- 更新: 2026-05-18T02:32:57.792253+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=76978.0
 - Funnel: target 765 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +30.72% | $5,819,525.16 |
-| AIGENSYN/USDT:USDT | +12.69% | $3,309,726.59 |
-| UB/USDT:USDT | +5.56% | $15,553,912.69 |
-| HYPE/USDT:USDT | +5.04% | $313,923,553.23 |
-| AKT/USDT:USDT | +3.87% | $1,451,342.20 |
+| FIDA/USDT:USDT | +31.02% | $5,839,931.12 |
+| AIGENSYN/USDT:USDT | +15.81% | $3,399,038.79 |
+| HYPE/USDT:USDT | +5.45% | $314,285,930.12 |
+| UB/USDT:USDT | +4.68% | $15,559,259.07 |
+| AKT/USDT:USDT | +4.58% | $1,451,601.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.59% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.17% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.36% | +1.45% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.13% | +1.22% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.11% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.20% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +2.06% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.68% | +1.81% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.70% |
+| AKT/USDT:USDT | below_1h_threshold | +1.16% | +1.30% |
 
 ## 5. 次に見るべき不足
 
