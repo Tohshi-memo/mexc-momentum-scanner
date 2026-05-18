@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T05:33:35.954502+00:00
+- generated_at: 2026-05-18T05:38:37.941517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4436**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T05:33:33.147319+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77003.8
-- Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.6 >= 65=1, 4h RSI 67.4 >= 65=1
+- 更新: 2026-05-18T05:38:35.470281+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=76951.0
+- Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 76.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +34.24% | $6,296,541.26 |
-| BSB/USDT:USDT | +7.01% | $19,536,217.25 |
-| AKT/USDT:USDT | +5.75% | $1,514,214.73 |
-| ZEC/USDT:USDT | +5.15% | $486,247,118.42 |
-| OPENLEDGER/USDT:USDT | +4.92% | $1,285,812.39 |
+| FIDA/USDT:USDT | +38.31% | $6,341,182.21 |
+| BSB/USDT:USDT | +7.97% | $19,586,894.94 |
+| AKT/USDT:USDT | +5.94% | $1,514,519.03 |
+| HYPE/USDT:USDT | +5.17% | $280,439,631.13 |
+| ZEC/USDT:USDT | +4.39% | $488,466,264.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.39% | +3.38% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.69% | +2.69% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.15% | +0.15% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.35% | +4.41% |
+| LAB/USDT:USDT | below_1h_threshold | +3.29% | +3.35% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
+| XPD/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
 
 ## 5. 次に見るべき不足
 
