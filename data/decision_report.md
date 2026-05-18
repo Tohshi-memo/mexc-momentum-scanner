@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-18T00:43:36.678179+00:00
+- generated_at: 2026-05-18T00:48:49.596585+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4428**
+- closed shadow trades: **4429**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.94% / filled 20/20。**
-- 全期間 MARKET基準: n=4428, expectancy=-0.09%
+- 全期間 MARKET基準: n=4429, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+0.94%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -34,8 +34,8 @@
 | LIMIT_3PCT_LONG | 15/20 | 75.0% | +0.91% | **+0.69%** |
 | LIMIT_ATR_LONG | 15/20 | 75.0% | +0.72% | **+0.54%** |
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +0.64% | **+0.48%** |
-| LIMIT_10PCT_LONG | 3/20 | 15.0% | +2.07% | **+0.31%** |
-| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +0.23% | **+0.13%** |
+| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +0.35% | **+0.20%** |
+| LIMIT_10PCT_LONG | 2/20 | 10.0% | -0.89% | **-0.09%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$120.75** / 初期 $100.00 (+20.75%)
-- 確定: 425件 (Win 110 / Loss 144 / Flat 171) / skip 564件
-- 成長率目線: 平均log +0.000444 / 幾何平均 +0.044% per trade / maxDD +4.21%
+- 残高: **$120.15** / 初期 $100.00 (+20.15%)
+- 確定: 426件 (Win 110 / Loss 145 / Flat 171) / skip 564件
+- 成長率目線: 平均log +0.000431 / 幾何平均 +0.043% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AIA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $120.75
+- 最新: FIDA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $120.15
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T00:43:34.688598+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=77026.4
+- 更新: 2026-05-18T00:48:47.327508+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=77009.0
 - Funnel: target 762 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +31.93% | $5,296,358.08 |
-| BUILDONBOB/USDT:USDT | +8.78% | $1,368,135.00 |
-| HYPE/USDT:USDT | +6.31% | $317,666,603.27 |
-| UB/USDT:USDT | +5.55% | $15,663,699.22 |
-| BILL/USDT:USDT | +3.82% | $34,953,369.90 |
+| FIDA/USDT:USDT | +33.09% | $5,333,189.27 |
+| BUILDONBOB/USDT:USDT | +9.06% | $1,369,887.06 |
+| HYPE/USDT:USDT | +6.49% | $318,662,096.38 |
+| UB/USDT:USDT | +5.63% | $15,678,700.28 |
+| ZEC/USDT:USDT | +2.84% | $518,452,590.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.70% | +5.22% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.23% | +3.75% |
-| BSB/USDT:USDT | below_1h_threshold | +3.22% | +3.75% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.15% | +2.67% |
-| VVV/USDT:USDT | below_1h_threshold | +1.61% | +2.14% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.98% | +4.52% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.47% | +4.01% |
+| BSB/USDT:USDT | below_1h_threshold | +3.22% | +3.77% |
+| FF/USDT:USDT | below_1h_threshold | +2.42% | +2.96% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.81% | +2.35% |
 
 ## 5. 次に見るべき不足
 
