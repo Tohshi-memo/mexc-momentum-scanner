@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T07:13:33.208494+00:00
+- generated_at: 2026-05-18T07:18:23.069267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4438**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T07:13:31.243543+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=76888.0
+- 更新: 2026-05-18T07:18:21.088814+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=76871.1
 - Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +38.37% | $7,188,537.55 |
-| BSB/USDT:USDT | +11.01% | $20,266,136.36 |
-| OPENLEDGER/USDT:USDT | +4.11% | $1,336,484.11 |
-| PLAY/USDT:USDT | +3.61% | $1,235,078.57 |
-| AKT/USDT:USDT | +3.49% | $1,744,682.38 |
+| FIDA/USDT:USDT | +39.10% | $7,231,913.09 |
+| BSB/USDT:USDT | +11.65% | $20,299,939.49 |
+| OPENLEDGER/USDT:USDT | +4.81% | $1,337,909.96 |
+| AKT/USDT:USDT | +3.75% | $1,745,655.34 |
+| PLAY/USDT:USDT | +3.54% | $1,236,931.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.93% | +2.92% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.75% | +1.74% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.60% | +0.60% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
+| UB/USDT:USDT | below_1h_threshold | +2.04% | +2.05% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.74% | +1.76% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.85% | +0.86% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.35% | +0.36% |
 
 ## 5. 次に見るべき不足
 
