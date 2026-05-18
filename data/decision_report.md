@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T12:08:40.997000+00:00
+- generated_at: 2026-05-18T12:13:28.430524+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4442**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T12:08:38.729060+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=77424.2
+- 更新: 2026-05-18T12:13:26.437565+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=77393.2
 - Funnel: target 768 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRAC/USDT:USDT | +50.73% | $1,071,904.73 |
-| FIDA/USDT:USDT | +41.83% | $9,506,835.38 |
-| BSB/USDT:USDT | +17.52% | $17,897,605.24 |
-| OPENLEDGER/USDT:USDT | +13.41% | $1,439,030.45 |
-| SPACE/USDT:USDT | +7.22% | $1,234,479.90 |
+| TRAC/USDT:USDT | +48.14% | $1,073,597.61 |
+| FIDA/USDT:USDT | +40.55% | $9,558,940.10 |
+| BSB/USDT:USDT | +16.19% | $17,947,572.78 |
+| OPENLEDGER/USDT:USDT | +13.79% | $1,452,135.67 |
+| SPACE/USDT:USDT | +8.16% | $1,243,227.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPACE/USDT:USDT | below_1h_threshold | +2.44% | +2.22% |
-| AKT/USDT:USDT | below_1h_threshold | +1.50% | +1.28% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.35% | +1.13% |
-| BSB/USDT:USDT | below_1h_threshold | +1.33% | +1.11% |
-| H/USDT:USDT | below_1h_threshold | +0.95% | +0.73% |
+| BILL/USDT:USDT | below_1h_threshold | +4.24% | +4.06% |
+| SPACE/USDT:USDT | below_1h_threshold | +3.06% | +2.88% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.08% | +1.90% |
+| AKT/USDT:USDT | below_1h_threshold | +1.64% | +1.46% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.45% | +1.27% |
 
 ## 5. 次に見るべき不足
 
