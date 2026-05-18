@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T05:59:11.764113+00:00
+- generated_at: 2026-05-18T06:03:25.967924+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4437**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T05:59:09.359907+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=76872.7
-- Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 76.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-18T06:03:23.957864+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=76899.6
+- Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +44.50% | $6,592,776.76 |
-| BSB/USDT:USDT | +8.25% | $19,711,401.17 |
-| AKT/USDT:USDT | +5.27% | $1,519,125.96 |
-| OPENLEDGER/USDT:USDT | +5.24% | $1,295,146.77 |
-| HYPE/USDT:USDT | +4.28% | $282,175,636.71 |
+| FIDA/USDT:USDT | +45.96% | $6,658,689.04 |
+| BSB/USDT:USDT | +9.27% | $19,557,512.79 |
+| OPENLEDGER/USDT:USDT | +5.03% | $1,294,450.73 |
+| AKT/USDT:USDT | +4.99% | $1,551,690.89 |
+| HYPE/USDT:USDT | +4.17% | $275,433,894.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.05% | +3.22% |
-| GUA/USDT:USDT | below_1h_threshold | +1.38% | +1.55% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.33% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.14% | +0.30% |
-| SPX500/USDT:USDT | below_1h_threshold | +0.07% | +0.24% |
+| UB/USDT:USDT | below_1h_threshold | +1.27% | +1.25% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.68% | +0.66% |
+| FIDA/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.41% | +0.39% |
 
 ## 5. 次に見るべき不足
 
