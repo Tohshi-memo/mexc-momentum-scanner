@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T23:13:28.666567+00:00
+- generated_at: 2026-05-18T23:18:34.867854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4455**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T23:13:26.684748+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77076.9
-- Funnel: target 764 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-18T23:18:32.897156+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77005.7
+- Funnel: target 764 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +42.97% | $6,151,738.31 |
-| ONDO/USDT:USDT | +11.99% | $40,379,380.14 |
-| AKT/USDT:USDT | +9.57% | $1,524,952.58 |
-| INJ/USDT:USDT | +9.31% | $19,252,089.80 |
-| NEAR/USDT:USDT | +6.73% | $9,376,416.43 |
+| RON/USDT:USDT | +47.50% | $6,201,243.17 |
+| ONDO/USDT:USDT | +11.75% | $41,230,906.30 |
+| AKT/USDT:USDT | +9.59% | $1,525,371.50 |
+| INJ/USDT:USDT | +8.66% | $19,297,715.71 |
+| NEAR/USDT:USDT | +6.93% | $9,380,760.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.02% | +1.98% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.38% | +1.34% |
-| AERO/USDT:USDT | below_1h_threshold | +1.25% | +1.21% |
-| INJ/USDT:USDT | below_1h_threshold | +0.82% | +0.78% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.78% | +0.73% |
+| RON/USDT:USDT | below_1h_threshold | +3.18% | +3.23% |
+| VVV/USDT:USDT | below_1h_threshold | +2.87% | +2.92% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.17% | +1.22% |
+| AERO/USDT:USDT | below_1h_threshold | +0.91% | +0.96% |
+| DASH/USDT:USDT | below_1h_threshold | +0.81% | +0.86% |
 
 ## 5. 次に見るべき不足
 
