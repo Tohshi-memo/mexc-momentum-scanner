@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T17:13:54.543127+00:00
+- generated_at: 2026-05-18T17:18:34.468963+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4448**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T17:13:52.551574+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=76522.9
-- Funnel: target 768 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-18T17:18:32.464315+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=76632.5
+- Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +3.70% | $72,206,245.16 |
-| AIGENSYN/USDT:USDT | +2.53% | $4,499,072.32 |
-| TRAC/USDT:USDT | +2.49% | $1,278,293.50 |
-| COOKIE/USDT:USDT | +2.39% | $1,008,841.39 |
-| CHZ/USDT:USDT | +2.19% | $12,181,794.89 |
+| AIGENSYN/USDT:USDT | +3.71% | $4,501,558.45 |
+| LAB/USDT:USDT | +3.44% | $72,588,190.80 |
+| COOKIE/USDT:USDT | +2.76% | $1,009,117.32 |
+| CHZ/USDT:USDT | +2.74% | $12,189,241.40 |
+| LUNC/USDT:USDT | +2.06% | $4,374,539.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUNC/USDT:USDT | below_1h_threshold | +1.35% | +1.16% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.14% | +0.95% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.02% | +0.83% |
-| TOWNS/USDT:USDT | below_1h_threshold | +1.01% | +0.82% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.83% | +0.64% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.39% | +2.06% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.65% | +1.31% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.30% | +0.96% |
+| TOWNS/USDT:USDT | below_1h_threshold | +1.07% | +0.73% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.05% | +0.72% |
 
 ## 5. 次に見るべき不足
 
