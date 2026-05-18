@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T05:38:37.941517+00:00
+- generated_at: 2026-05-18T05:43:25.539620+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4436**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T05:38:35.470281+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=76951.0
+- 更新: 2026-05-18T05:43:23.130628+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=76869.7
 - Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 76.4 >= 65=1
+- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 76.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +38.31% | $6,341,182.21 |
-| BSB/USDT:USDT | +7.97% | $19,586,894.94 |
-| AKT/USDT:USDT | +5.94% | $1,514,519.03 |
-| HYPE/USDT:USDT | +5.17% | $280,439,631.13 |
-| ZEC/USDT:USDT | +4.39% | $488,466,264.84 |
+| FIDA/USDT:USDT | +38.31% | $6,391,684.82 |
+| BSB/USDT:USDT | +7.29% | $19,610,791.58 |
+| AKT/USDT:USDT | +5.83% | $1,514,762.11 |
+| HYPE/USDT:USDT | +4.61% | $280,964,601.66 |
+| ZEC/USDT:USDT | +4.22% | $490,557,682.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.35% | +4.41% |
-| LAB/USDT:USDT | below_1h_threshold | +3.29% | +3.35% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
-| XPD/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
-| COPPER/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.85% | +5.02% |
+| LAB/USDT:USDT | below_1h_threshold | +1.77% | +1.94% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.11% | +1.28% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.16% | +0.33% |
+| XPD/USDT:USDT | below_1h_threshold | +0.13% | +0.30% |
 
 ## 5. 次に見るべき不足
 
