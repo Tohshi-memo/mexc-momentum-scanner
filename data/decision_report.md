@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T16:33:39.828034+00:00
+- generated_at: 2026-05-18T16:38:46.333973+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4447**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T16:33:37.582261+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=76356.3
+- 更新: 2026-05-18T16:38:44.096564+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=76467.7
 - Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1
+- Strict後reject: 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRAC/USDT:USDT | +5.83% | $1,266,902.90 |
-| LAB/USDT:USDT | +2.54% | $75,428,012.64 |
-| COOKIE/USDT:USDT | +1.75% | $1,010,706.84 |
-| XAN/USDT:USDT | +1.66% | $1,070,202.25 |
-| BSB/USDT:USDT | +1.52% | $12,123,622.33 |
+| TRAC/USDT:USDT | +7.07% | $1,269,554.29 |
+| LAB/USDT:USDT | +3.19% | $76,017,130.31 |
+| COOKIE/USDT:USDT | +2.28% | $1,012,820.96 |
+| CHZ/USDT:USDT | +2.04% | $11,716,068.08 |
+| PROM/USDT:USDT | +1.98% | $1,606,105.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +2.62% | +2.67% |
-| COOKIE/USDT:USDT | below_1h_threshold | +1.76% | +1.81% |
-| XAN/USDT:USDT | below_1h_threshold | +1.67% | +1.71% |
-| BSB/USDT:USDT | below_1h_threshold | +1.41% | +1.46% |
-| DUSK/USDT:USDT | below_1h_threshold | +1.36% | +1.41% |
+| LAB/USDT:USDT | below_1h_threshold | +3.18% | +3.08% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.34% | +2.25% |
+| CHZ/USDT:USDT | below_1h_threshold | +2.05% | +1.95% |
+| XAN/USDT:USDT | below_1h_threshold | +1.96% | +1.86% |
+| PROM/USDT:USDT | below_1h_threshold | +1.90% | +1.80% |
 
 ## 5. 次に見るべき不足
 
