@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T04:03:34.032503+00:00
+- generated_at: 2026-05-18T04:08:23.898027+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4433**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T04:03:32.053032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=76932.3
+- 更新: 2026-05-18T04:08:21.889252+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=76909.9
 - Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +24.71% | $5,952,962.37 |
-| AIGENSYN/USDT:USDT | +12.61% | $3,966,542.75 |
-| HYPE/USDT:USDT | +4.37% | $288,672,499.15 |
-| ZEC/USDT:USDT | +4.06% | $490,087,508.36 |
-| AKT/USDT:USDT | +3.93% | $1,465,443.90 |
+| FIDA/USDT:USDT | +25.98% | $5,962,428.62 |
+| AIGENSYN/USDT:USDT | +10.21% | $4,012,947.33 |
+| BILL/USDT:USDT | +4.40% | $32,023,708.15 |
+| HYPE/USDT:USDT | +3.95% | $289,015,870.86 |
+| AKT/USDT:USDT | +3.83% | $1,470,646.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.80% | +1.76% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.18% | +1.13% |
-| BILL/USDT:USDT | below_1h_threshold | +1.17% | +1.13% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.70% | +0.66% |
+| BILL/USDT:USDT | below_1h_threshold | +2.09% | +2.08% |
+| VVV/USDT:USDT | below_1h_threshold | +2.08% | +2.07% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.82% | +1.80% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.83% | +0.82% |
 
 ## 5. 次に見るべき不足
 
