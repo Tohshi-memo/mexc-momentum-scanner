@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T02:48:51.656926+00:00
+- generated_at: 2026-05-18T02:53:27.878114+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4432**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T02:48:49.539825+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=76879.1
+- 更新: 2026-05-18T02:53:25.664606+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=76721.5
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +30.41% | $5,741,503.99 |
-| AIGENSYN/USDT:USDT | +15.52% | $3,640,734.90 |
-| HYPE/USDT:USDT | +5.45% | $307,303,892.70 |
-| AKT/USDT:USDT | +5.23% | $1,433,351.14 |
-| LYN/USDT:USDT | +3.94% | $2,490,564.38 |
+| FIDA/USDT:USDT | +32.96% | $5,758,295.93 |
+| AIGENSYN/USDT:USDT | +14.84% | $3,660,816.62 |
+| AKT/USDT:USDT | +5.05% | $1,441,826.73 |
+| HYPE/USDT:USDT | +4.81% | $307,619,754.17 |
+| LYN/USDT:USDT | +3.30% | $2,491,649.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.61% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.23% | +2.50% |
-| AKT/USDT:USDT | below_1h_threshold | +1.79% | +2.05% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.85% |
-| H/USDT:USDT | below_1h_threshold | +1.48% | +1.74% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +2.19% |
+| AKT/USDT:USDT | below_1h_threshold | +1.61% | +2.08% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.48% | +1.95% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.21% | +1.67% |
+| H/USDT:USDT | below_1h_threshold | +1.18% | +1.65% |
 
 ## 5. 次に見るべき不足
 
