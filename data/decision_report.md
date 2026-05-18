@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T00:13:52.582980+00:00
+- generated_at: 2026-05-18T00:18:26.762441+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4428**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T00:13:50.692194+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.50% price=77039.9
-- Funnel: target 761 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-18T00:18:24.576253+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=77236.6
+- Funnel: target 761 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +38.06% | $5,017,941.80 |
-| BUILDONBOB/USDT:USDT | +7.22% | $1,353,127.91 |
-| HYPE/USDT:USDT | +5.09% | $309,749,218.43 |
-| UB/USDT:USDT | +4.27% | $14,430,244.82 |
-| ZEC/USDT:USDT | +2.64% | $504,117,550.34 |
+| FIDA/USDT:USDT | +39.22% | $5,044,596.60 |
+| UB/USDT:USDT | +7.03% | $14,475,977.67 |
+| BUILDONBOB/USDT:USDT | +6.58% | $1,355,458.16 |
+| HYPE/USDT:USDT | +6.21% | $311,718,684.65 |
+| BSB/USDT:USDT | +5.62% | $18,841,723.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +2.64% | +3.14% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.73% | +2.23% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.68% | +2.19% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +0.87% | +1.37% |
-| LYN/USDT:USDT | below_1h_threshold | +0.86% | +1.37% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.01% | +2.26% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.78% | +2.03% |
+| VVV/USDT:USDT | below_1h_threshold | +1.68% | +1.93% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.38% | +1.63% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.12% | +1.37% |
 
 ## 5. 次に見るべき不足
 
