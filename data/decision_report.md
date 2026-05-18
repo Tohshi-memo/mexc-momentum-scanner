@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T12:38:36.454940+00:00
+- generated_at: 2026-05-18T12:43:34.163925+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4442**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T12:38:34.470092+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=77546.5
+- 更新: 2026-05-18T12:43:32.177770+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=77670.3
 - Funnel: target 768 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRAC/USDT:USDT | +52.86% | $1,091,777.06 |
-| FIDA/USDT:USDT | +37.76% | $9,772,620.63 |
-| BSB/USDT:USDT | +17.36% | $18,152,432.19 |
-| OPENLEDGER/USDT:USDT | +15.36% | $1,514,693.58 |
-| UB/USDT:USDT | +8.16% | $11,473,065.85 |
+| TRAC/USDT:USDT | +51.03% | $1,094,894.99 |
+| FIDA/USDT:USDT | +37.40% | $9,820,282.81 |
+| BSB/USDT:USDT | +15.85% | $18,201,013.16 |
+| OPENLEDGER/USDT:USDT | +15.85% | $1,530,084.11 |
+| RIVER/USDT:USDT | +7.90% | $9,785,265.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.70% | +3.32% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +3.24% | +2.86% |
-| BILL/USDT:USDT | below_1h_threshold | +2.53% | +2.15% |
-| TRAC/USDT:USDT | below_1h_threshold | +2.14% | +1.76% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.85% | +1.47% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.16% | +3.62% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +3.48% | +2.94% |
+| BILL/USDT:USDT | below_1h_threshold | +3.43% | +2.89% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.35% | +1.82% |
+| AKT/USDT:USDT | below_1h_threshold | +2.09% | +1.55% |
 
 ## 5. 次に見るべき不足
 
