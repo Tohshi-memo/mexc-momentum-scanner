@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T04:33:34.133711+00:00
+- generated_at: 2026-05-18T04:38:30.289247+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4433**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T04:33:32.174102+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=76778.0
-- Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-18T04:38:28.066846+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=76849.7
+- Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +26.22% | $6,047,859.29 |
-| AIGENSYN/USDT:USDT | +8.21% | $4,143,703.31 |
-| BILL/USDT:USDT | +6.07% | $32,632,498.15 |
-| OPENLEDGER/USDT:USDT | +4.16% | $1,251,166.12 |
-| HYPE/USDT:USDT | +4.05% | $290,596,060.44 |
+| FIDA/USDT:USDT | +27.01% | $6,058,413.84 |
+| AIGENSYN/USDT:USDT | +7.46% | $4,163,300.76 |
+| BILL/USDT:USDT | +6.21% | $32,678,909.16 |
+| UB/USDT:USDT | +5.05% | $14,580,974.28 |
+| ZEC/USDT:USDT | +4.72% | $500,431,138.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.54% | +4.70% |
-| BILL/USDT:USDT | below_1h_threshold | +3.74% | +3.90% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.21% | +3.37% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.89% | +3.04% |
-| VVV/USDT:USDT | below_1h_threshold | +2.56% | +2.72% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.20% | +4.27% |
+| BILL/USDT:USDT | below_1h_threshold | +3.78% | +3.85% |
+| VVV/USDT:USDT | below_1h_threshold | +2.50% | +2.57% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.39% | +2.46% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.35% | +2.42% |
 
 ## 5. 次に見るべき不足
 
