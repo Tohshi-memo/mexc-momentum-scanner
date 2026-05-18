@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T18:23:44.619326+00:00
+- generated_at: 2026-05-18T18:28:38.668285+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4450**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T18:23:42.637090+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=76309.6
+- 更新: 2026-05-18T18:28:36.704885+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.53% price=76269.7
 - Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRAC/USDT:USDT | +8.19% | $1,293,245.51 |
-| AIGENSYN/USDT:USDT | +4.59% | $4,848,659.12 |
-| CHZ/USDT:USDT | +2.87% | $12,452,644.99 |
-| PLAY/USDT:USDT | +2.10% | $1,262,859.88 |
-| USOIL/USDT:USDT | +1.51% | $97,252,845.18 |
+| TRAC/USDT:USDT | +6.17% | $1,295,011.72 |
+| AIGENSYN/USDT:USDT | +3.08% | $4,887,790.81 |
+| CHZ/USDT:USDT | +2.51% | $12,561,965.88 |
+| USOIL/USDT:USDT | +1.29% | $98,756,065.05 |
+| DUSK/USDT:USDT | +1.07% | $1,910,791.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRAC/USDT:USDT | below_1h_threshold | +2.91% | +3.39% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.35% | +1.83% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.05% | +1.53% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.21% | +0.69% |
-| TRX/USDT:USDT | below_1h_threshold | -0.02% | +0.45% |
+| TRAC/USDT:USDT | below_1h_threshold | +1.60% | +2.13% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.13% | +1.66% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.98% | +1.51% |
+| LAB/USDT:USDT | below_1h_threshold | +0.32% | +0.85% |
+| DUSK/USDT:USDT | below_1h_threshold | +0.27% | +0.80% |
 
 ## 5. 次に見るべき不足
 
