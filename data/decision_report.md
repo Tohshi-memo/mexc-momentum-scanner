@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T11:43:39.315403+00:00
+- generated_at: 2026-05-18T11:48:33.589468+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4441**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T11:43:36.562024+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.68% price=77252.6
-- Funnel: target 768 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-18T11:48:31.576998+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=77238.0
+- Funnel: target 768 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRAC/USDT:USDT | +53.41% | $1,054,797.53 |
-| FIDA/USDT:USDT | +44.50% | $9,219,973.55 |
-| BSB/USDT:USDT | +15.26% | $19,059,766.35 |
-| OPENLEDGER/USDT:USDT | +12.44% | $1,409,358.26 |
-| RIVER/USDT:USDT | +6.20% | $9,576,659.76 |
+| TRAC/USDT:USDT | +53.01% | $1,056,459.68 |
+| FIDA/USDT:USDT | +44.86% | $9,273,383.24 |
+| BSB/USDT:USDT | +15.55% | $19,101,783.02 |
+| OPENLEDGER/USDT:USDT | +11.30% | $1,421,749.27 |
+| RIVER/USDT:USDT | +5.85% | $9,670,695.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRAC/USDT:USDT | below_1h_threshold | +4.52% | +3.84% |
-| EDU/USDT:USDT | below_1h_threshold | +3.91% | +3.23% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.87% | +2.19% |
-| B/USDT:USDT | below_1h_threshold | +2.15% | +1.47% |
-| CHZ/USDT:USDT | below_1h_threshold | +2.08% | +1.40% |
+| SPACE/USDT:USDT | below_relative_strength | +5.20% | +4.54% |
+| TRAC/USDT:USDT | below_1h_threshold | +4.62% | +3.97% |
+| EDU/USDT:USDT | below_1h_threshold | +3.41% | +2.75% |
+| UB/USDT:USDT | below_1h_threshold | +2.17% | +1.51% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.11% | +1.45% |
 
 ## 5. 次に見るべき不足
 
