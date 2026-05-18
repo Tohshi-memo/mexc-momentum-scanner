@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T20:23:46.871008+00:00
+- generated_at: 2026-05-18T20:28:31.481965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4452**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T20:23:44.856189+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=77047.9
+- 更新: 2026-05-18T20:28:29.503210+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=77081.0
 - Funnel: target 764 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +32.75% | $3,243,438.19 |
-| TRAC/USDT:USDT | +8.05% | $1,312,432.82 |
-| NEAR/USDT:USDT | +4.62% | $8,588,148.55 |
-| OPENLEDGER/USDT:USDT | +4.25% | $1,738,348.56 |
-| ZEC/USDT:USDT | +3.89% | $574,490,269.41 |
+| RON/USDT:USDT | +32.86% | $3,300,435.34 |
+| TRAC/USDT:USDT | +6.45% | $1,313,205.52 |
+| NEAR/USDT:USDT | +4.29% | $8,718,621.32 |
+| OPENLEDGER/USDT:USDT | +4.11% | $1,742,351.14 |
+| RUNE/USDT:USDT | +3.94% | $1,121,598.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KITE/USDT:USDT | below_1h_threshold | +1.09% | +0.89% |
-| RON/USDT:USDT | below_1h_threshold | +1.06% | +0.86% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.03% | +0.83% |
-| WLD/USDT:USDT | below_1h_threshold | +0.93% | +0.72% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.91% | +0.71% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.81% | +1.57% |
+| KITE/USDT:USDT | below_1h_threshold | +1.69% | +1.45% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.29% | +1.04% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.23% | +0.99% |
+| RON/USDT:USDT | below_1h_threshold | +1.15% | +0.90% |
 
 ## 5. 次に見るべき不足
 
