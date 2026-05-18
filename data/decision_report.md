@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-17T23:58:21.721859+00:00
+- generated_at: 2026-05-18T00:03:25.487391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4428**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-17T23:58:19.731536+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.63% price=77470.0
+- 更新: 2026-05-18T00:03:23.511391+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=77330.0
 - Funnel: target 761 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +40.55% | $4,688,892.98 |
-| UB/USDT:USDT | +9.10% | $14,613,661.69 |
-| HYPE/USDT:USDT | +4.59% | $309,437,004.78 |
-| BUILDONBOB/USDT:USDT | +4.31% | $1,365,404.50 |
-| ZEC/USDT:USDT | +4.07% | $505,769,763.84 |
+| FIDA/USDT:USDT | +38.79% | $4,915,547.37 |
+| UB/USDT:USDT | +8.91% | $14,292,535.72 |
+| HYPE/USDT:USDT | +4.74% | $307,052,387.92 |
+| BILL/USDT:USDT | +4.32% | $34,360,341.89 |
+| ZEC/USDT:USDT | +3.58% | $497,943,381.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.39% | +1.02% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.17% | +0.80% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.06% | +0.69% |
-| USDC/USDT:USDT | below_1h_threshold | -0.00% | +0.63% |
-| FIDA/USDT:USDT | below_1h_threshold | -0.13% | +0.50% |
+| EWJ/USDT:USDT | below_1h_threshold | +0.68% | +0.81% |
+| AKT/USDT:USDT | below_1h_threshold | +0.38% | +0.51% |
+| UB/USDT:USDT | below_1h_threshold | +0.22% | +0.35% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +0.16% | +0.29% |
+| BSB/USDT:USDT | below_1h_threshold | +0.16% | +0.29% |
 
 ## 5. 次に見るべき不足
 
