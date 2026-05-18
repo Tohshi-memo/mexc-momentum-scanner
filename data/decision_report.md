@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-18T17:23:40.969997+00:00
+- generated_at: 2026-05-18T17:29:21.332349+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4448**
+- closed shadow trades: **4449**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4448, expectancy=-0.09%
+- 全期間 MARKET基準: n=4449, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=-0.45%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,7 +22,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_5PCT | 5/20 | 25.0% | -0.04% | **-0.01%** |
-| LIMIT_BB3S | 6/18 | 33.3% | -0.04% | **-0.01%** |
+| LIMIT_BB3S | 6/19 | 31.6% | -0.04% | **-0.01%** |
 | LIMIT_6PCT | 2/20 | 10.0% | -1.06% | **-0.11%** |
 | LIMIT_4PCT | 13/20 | 65.0% | -0.31% | **-0.20%** |
 | LIMIT_FIB1272 | 10/20 | 50.0% | -0.41% | **-0.21%** |
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$121.57** / 初期 $100.00 (+21.57%)
-- 確定: 445件 (Win 116 / Loss 151 / Flat 178) / skip 564件
-- 成長率目線: 平均log +0.000439 / 幾何平均 +0.044% per trade / maxDD +4.21%
+- 残高: **$120.97** / 初期 $100.00 (+20.97%)
+- 確定: 446件 (Win 116 / Loss 152 / Flat 178) / skip 564件
+- 成長率目線: 平均log +0.000427 / 幾何平均 +0.043% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BUILDONBOB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $121.57
+- 最新: BILL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $120.97
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T17:23:38.983391+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=76551.5
+- 更新: 2026-05-18T17:29:19.073328+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=76616.0
 - Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +4.78% | $4,526,689.75 |
-| CHZ/USDT:USDT | +2.95% | $12,215,182.72 |
-| PLAY/USDT:USDT | +2.36% | $1,193,515.16 |
-| SAGA/USDT:USDT | +2.33% | $2,124,966.82 |
-| KAS/USDT:USDT | +2.13% | $1,869,246.22 |
+| AIGENSYN/USDT:USDT | +5.56% | $4,567,128.97 |
+| CHZ/USDT:USDT | +3.48% | $12,230,432.64 |
+| PLAY/USDT:USDT | +2.86% | $1,202,928.00 |
+| SAGA/USDT:USDT | +2.70% | $2,139,660.59 |
+| NEAR/USDT:USDT | +2.31% | $9,333,567.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.37% | +3.14% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.51% | +1.28% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.40% | +1.18% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.25% | +1.02% |
-| TOWNS/USDT:USDT | below_1h_threshold | +1.21% | +0.98% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.13% | +3.81% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.01% | +1.69% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.64% | +1.33% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.52% | +1.21% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.51% | +1.20% |
 
 ## 5. 次に見るべき不足
 
