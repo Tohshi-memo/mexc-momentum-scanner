@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T16:13:31.007820+00:00
+- generated_at: 2026-05-18T16:19:00.422288+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4447**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T16:13:29.015211+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=76527.0
-- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-18T16:18:58.500421+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=76500.0
+- Funnel: target 768 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UP/USDT:USDT | +2.30% | $1,103,367.34 |
-| CHZ/USDT:USDT | +1.45% | $11,422,779.84 |
-| DUSK/USDT:USDT | +1.12% | $2,026,795.33 |
-| LAB/USDT:USDT | +1.10% | $74,552,746.92 |
-| OPENLEDGER/USDT:USDT | +1.08% | $1,556,043.32 |
+| XAN/USDT:USDT | +2.69% | $1,025,706.77 |
+| CHZ/USDT:USDT | +1.73% | $11,434,379.69 |
+| COOKIE/USDT:USDT | +1.59% | $1,000,058.22 |
+| UP/USDT:USDT | +1.44% | $1,113,259.84 |
+| BSB/USDT:USDT | +1.24% | $11,994,990.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UP/USDT:USDT | below_1h_threshold | +2.31% | +2.13% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.46% | +1.28% |
-| LAB/USDT:USDT | below_1h_threshold | +1.14% | +0.96% |
-| DUSK/USDT:USDT | below_1h_threshold | +1.12% | +0.95% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.09% | +0.91% |
+| XAN/USDT:USDT | below_1h_threshold | +2.70% | +2.56% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.73% | +1.59% |
+| COOKIE/USDT:USDT | below_1h_threshold | +1.65% | +1.51% |
+| UP/USDT:USDT | below_1h_threshold | +1.44% | +1.30% |
+| BSB/USDT:USDT | below_1h_threshold | +1.25% | +1.11% |
 
 ## 5. 次に見るべき不足
 
