@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T04:23:32.722517+00:00
+- generated_at: 2026-05-18T04:28:44.102872+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4433**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T04:23:30.768416+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=76842.7
+- 更新: 2026-05-18T04:28:42.223837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=76761.5
 - Funnel: target 765 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +27.20% | $6,018,243.07 |
-| AIGENSYN/USDT:USDT | +10.34% | $4,081,542.82 |
-| BILL/USDT:USDT | +7.04% | $32,510,367.27 |
-| HYPE/USDT:USDT | +3.86% | $290,281,330.95 |
-| ZEC/USDT:USDT | +3.73% | $496,117,216.39 |
+| FIDA/USDT:USDT | +27.26% | $6,032,536.23 |
+| AIGENSYN/USDT:USDT | +8.29% | $4,112,826.13 |
+| BILL/USDT:USDT | +6.02% | $32,584,885.92 |
+| UB/USDT:USDT | +4.42% | $14,523,152.08 |
+| ZEC/USDT:USDT | +3.89% | $497,742,024.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.58% | +4.65% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +2.79% | +2.86% |
-| VVV/USDT:USDT | below_1h_threshold | +2.35% | +2.42% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.19% | +2.27% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.69% | +1.77% |
+| BILL/USDT:USDT | below_1h_threshold | +3.69% | +3.87% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.64% | +3.82% |
+| BSB/USDT:USDT | below_1h_threshold | +3.60% | +3.78% |
+| VVV/USDT:USDT | below_1h_threshold | +2.67% | +2.85% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.03% | +2.21% |
 
 ## 5. 次に見るべき不足
 
