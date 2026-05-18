@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T08:13:31.496343+00:00
+- generated_at: 2026-05-18T08:18:36.460386+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4438**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T08:13:29.524814+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77032.0
+- 更新: 2026-05-18T08:18:34.455480+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=76977.4
 - Funnel: target 765 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +37.88% | $7,887,544.31 |
-| BSB/USDT:USDT | +9.12% | $20,647,703.63 |
-| PLAY/USDT:USDT | +5.69% | $1,276,776.49 |
-| OPENLEDGER/USDT:USDT | +4.59% | $1,362,230.46 |
-| HYPE/USDT:USDT | +4.38% | $275,464,554.50 |
+| FIDA/USDT:USDT | +35.21% | $7,936,305.17 |
+| BSB/USDT:USDT | +9.87% | $20,709,389.38 |
+| PLAY/USDT:USDT | +4.24% | $1,319,708.45 |
+| HYPE/USDT:USDT | +4.08% | $276,162,047.26 |
+| OPENLEDGER/USDT:USDT | +3.78% | $1,365,567.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
-| DASH/USDT:USDT | below_1h_threshold | +0.94% | +0.95% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
+| BSB/USDT:USDT | below_1h_threshold | +2.00% | +2.08% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.94% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.84% | +0.92% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.91% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.88% |
 
 ## 5. 次に見るべき不足
 
