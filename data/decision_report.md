@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T10:53:37.739271+00:00
+- generated_at: 2026-05-18T10:58:33.342199+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4439**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T10:53:33.027295+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=76816.9
+- 更新: 2026-05-18T10:58:28.892636+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=76772.4
 - Funnel: target 768 → liquid 128 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1
+- Strict後reject: 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRAC/USDT:USDT | +49.26% | $1,009,812.37 |
-| FIDA/USDT:USDT | +42.62% | $8,798,867.88 |
-| BSB/USDT:USDT | +14.56% | $20,843,024.80 |
-| OPENLEDGER/USDT:USDT | +9.25% | $1,424,325.56 |
-| RIVER/USDT:USDT | +4.56% | $9,357,547.93 |
+| TRAC/USDT:USDT | +46.92% | $1,017,096.29 |
+| FIDA/USDT:USDT | +43.10% | $8,837,724.60 |
+| BSB/USDT:USDT | +15.10% | $20,918,330.73 |
+| OPENLEDGER/USDT:USDT | +9.19% | $1,432,170.93 |
+| RIVER/USDT:USDT | +4.95% | $9,416,515.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPACE/USDT:USDT | below_1h_threshold | +2.63% | +2.74% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.38% | +2.49% |
-| LAB/USDT:USDT | below_1h_threshold | +1.88% | +1.99% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.82% | +1.93% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.54% | +1.65% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.34% | +2.51% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.33% | +2.50% |
+| BSB/USDT:USDT | below_1h_threshold | +2.00% | +2.17% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.87% | +2.04% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.62% | +1.79% |
 
 ## 5. 次に見るべき不足
 
