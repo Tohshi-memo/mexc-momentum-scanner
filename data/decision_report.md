@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T18:28:38.668285+00:00
+- generated_at: 2026-05-18T18:33:57.240215+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4450**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T18:28:36.704885+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=76269.7
-- Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-18T18:33:55.145220+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=76349.7
+- Funnel: target 764 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRAC/USDT:USDT | +6.17% | $1,295,011.72 |
-| AIGENSYN/USDT:USDT | +3.08% | $4,887,790.81 |
-| CHZ/USDT:USDT | +2.51% | $12,561,965.88 |
-| USOIL/USDT:USDT | +1.29% | $98,756,065.05 |
-| DUSK/USDT:USDT | +1.07% | $1,910,791.84 |
+| RON/USDT:USDT | +29.03% | $1,014,937.25 |
+| TRAC/USDT:USDT | +4.46% | $1,296,370.96 |
+| AIGENSYN/USDT:USDT | +3.99% | $4,912,202.74 |
+| CHZ/USDT:USDT | +2.44% | $12,574,305.72 |
+| USOIL/USDT:USDT | +1.48% | $99,475,485.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRAC/USDT:USDT | below_1h_threshold | +1.60% | +2.13% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.13% | +1.66% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.98% | +1.51% |
-| LAB/USDT:USDT | below_1h_threshold | +0.32% | +0.85% |
-| DUSK/USDT:USDT | below_1h_threshold | +0.27% | +0.80% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.38% | +1.80% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.19% | +1.62% |
+| DUSK/USDT:USDT | below_1h_threshold | +0.31% | +0.73% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.21% | +0.63% |
+| BRKBSTOCK/USDT:USDT | below_1h_threshold | +0.01% | +0.43% |
 
 ## 5. 次に見るべき不足
 
