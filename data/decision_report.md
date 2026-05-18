@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T17:29:21.332349+00:00
+- generated_at: 2026-05-18T17:33:53.407287+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4449**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T17:29:19.073328+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=76616.0
-- Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-18T17:33:51.405894+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=76604.9
+- Funnel: target 764 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +5.56% | $4,567,128.97 |
-| CHZ/USDT:USDT | +3.48% | $12,230,432.64 |
-| PLAY/USDT:USDT | +2.86% | $1,202,928.00 |
-| SAGA/USDT:USDT | +2.70% | $2,139,660.59 |
-| NEAR/USDT:USDT | +2.31% | $9,333,567.45 |
+| AIGENSYN/USDT:USDT | +5.91% | $4,618,622.86 |
+| CHZ/USDT:USDT | +3.52% | $12,283,172.58 |
+| SAGA/USDT:USDT | +2.93% | $2,155,687.35 |
+| OPENLEDGER/USDT:USDT | +2.41% | $1,626,001.16 |
+| NEAR/USDT:USDT | +2.37% | $9,427,852.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +4.13% | +3.81% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.01% | +1.69% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.64% | +1.33% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.52% | +1.21% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.51% | +1.20% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.48% | +4.18% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.75% | +1.45% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.71% | +1.41% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.64% | +1.34% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.41% | +1.11% |
 
 ## 5. 次に見るべき不足
 
