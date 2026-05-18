@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T18:04:18.198296+00:00
+- generated_at: 2026-05-18T18:08:53.020504+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4449**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T18:04:16.204827+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=76531.5
+- 更新: 2026-05-18T18:08:51.052926+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=76473.5
 - Funnel: target 764 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +7.21% | $4,717,029.40 |
-| TRAC/USDT:USDT | +4.82% | $1,286,872.89 |
-| CHZ/USDT:USDT | +3.75% | $12,260,526.35 |
-| PLAY/USDT:USDT | +2.64% | $1,215,349.74 |
-| OPENLEDGER/USDT:USDT | +2.45% | $1,643,474.38 |
+| AIGENSYN/USDT:USDT | +6.74% | $4,738,477.73 |
+| TRAC/USDT:USDT | +5.26% | $1,288,007.76 |
+| CHZ/USDT:USDT | +3.75% | $12,294,552.59 |
+| OPENLEDGER/USDT:USDT | +2.22% | $1,658,987.77 |
+| PLAY/USDT:USDT | +2.15% | $1,220,698.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.28% | +1.46% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.35% | +0.54% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +0.32% | +0.51% |
-| TRAC/USDT:USDT | below_1h_threshold | +0.31% | +0.49% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.17% | +0.36% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.99% | +1.25% |
+| TRAC/USDT:USDT | below_1h_threshold | +0.72% | +0.98% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.45% | +0.71% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.40% | +0.67% |
+| DISSTOCK/USDT:USDT | below_1h_threshold | +0.01% | +0.27% |
 
 ## 5. 次に見るべき不足
 
