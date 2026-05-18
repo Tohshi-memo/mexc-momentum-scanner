@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T07:38:32.631591+00:00
+- generated_at: 2026-05-18T07:43:33.664499+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4438**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T07:38:30.466661+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=76986.1
-- Funnel: target 765 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-18T07:43:31.695742+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=76918.9
+- Funnel: target 765 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +46.56% | $7,457,621.65 |
-| BSB/USDT:USDT | +8.73% | $20,609,233.64 |
-| OPENLEDGER/USDT:USDT | +5.41% | $1,356,888.43 |
-| PLAY/USDT:USDT | +5.02% | $1,256,966.40 |
-| AKT/USDT:USDT | +3.75% | $1,750,267.45 |
+| FIDA/USDT:USDT | +42.80% | $7,522,397.17 |
+| BSB/USDT:USDT | +8.25% | $20,649,941.17 |
+| PLAY/USDT:USDT | +6.37% | $1,266,762.23 |
+| OPENLEDGER/USDT:USDT | +5.35% | $1,361,101.16 |
+| HYPE/USDT:USDT | +3.50% | $278,998,954.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.19% | +3.06% |
-| LAB/USDT:USDT | below_1h_threshold | +2.75% | +2.62% |
-| UB/USDT:USDT | below_1h_threshold | +2.23% | +2.09% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.94% | +1.80% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.46% | +1.33% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.52% | +4.47% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.39% | +2.35% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +1.99% | +1.94% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.85% | +1.80% |
+| UB/USDT:USDT | below_1h_threshold | +1.10% | +1.05% |
 
 ## 5. 次に見るべき不足
 
