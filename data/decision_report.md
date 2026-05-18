@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T17:18:34.468963+00:00
+- generated_at: 2026-05-18T17:23:40.969997+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4448**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T17:18:32.464315+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=76632.5
+- 更新: 2026-05-18T17:23:38.983391+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=76551.5
 - Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +3.71% | $4,501,558.45 |
-| LAB/USDT:USDT | +3.44% | $72,588,190.80 |
-| COOKIE/USDT:USDT | +2.76% | $1,009,117.32 |
-| CHZ/USDT:USDT | +2.74% | $12,189,241.40 |
-| LUNC/USDT:USDT | +2.06% | $4,374,539.45 |
+| AIGENSYN/USDT:USDT | +4.78% | $4,526,689.75 |
+| CHZ/USDT:USDT | +2.95% | $12,215,182.72 |
+| PLAY/USDT:USDT | +2.36% | $1,193,515.16 |
+| SAGA/USDT:USDT | +2.33% | $2,124,966.82 |
+| KAS/USDT:USDT | +2.13% | $1,869,246.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.39% | +2.06% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.65% | +1.31% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.30% | +0.96% |
-| TOWNS/USDT:USDT | below_1h_threshold | +1.07% | +0.73% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.05% | +0.72% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.37% | +3.14% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.51% | +1.28% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.40% | +1.18% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.25% | +1.02% |
+| TOWNS/USDT:USDT | below_1h_threshold | +1.21% | +0.98% |
 
 ## 5. 次に見るべき不足
 
