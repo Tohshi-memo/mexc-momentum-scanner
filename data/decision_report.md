@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T22:22:57.890958+00:00
+- generated_at: 2026-05-18T22:28:54.827972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4455**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T22:22:56.247402+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=77136.7
+- 更新: 2026-05-18T22:28:52.916144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=77141.4
 - Funnel: target 763 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +46.22% | $5,439,395.23 |
-| ONDO/USDT:USDT | +10.55% | $36,891,329.34 |
-| AKT/USDT:USDT | +8.77% | $1,485,472.83 |
-| INJ/USDT:USDT | +7.86% | $18,871,552.77 |
-| NEAR/USDT:USDT | +6.47% | $9,375,546.62 |
+| RON/USDT:USDT | +47.38% | $5,602,077.21 |
+| ONDO/USDT:USDT | +11.05% | $37,466,091.82 |
+| AKT/USDT:USDT | +8.84% | $1,496,189.33 |
+| INJ/USDT:USDT | +7.92% | $18,985,626.66 |
+| TONCOIN/USDT:USDT | +6.37% | $141,273,019.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RON/USDT:USDT | below_1h_threshold | +3.36% | +3.26% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.62% | +2.53% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.72% | +1.63% |
+| RON/USDT:USDT | below_1h_threshold | +3.93% | +3.83% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.62% | +2.52% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.21% | +2.10% |
+| INJ/USDT:USDT | below_1h_threshold | +1.51% | +1.41% |
 | ZEC/USDT:USDT | below_1h_threshold | +1.43% | +1.33% |
-| INJ/USDT:USDT | below_1h_threshold | +1.43% | +1.33% |
 
 ## 5. 次に見るべき不足
 
