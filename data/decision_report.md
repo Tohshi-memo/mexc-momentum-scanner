@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T03:53:49.289469+00:00
+- generated_at: 2026-05-18T03:58:43.660097+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4433**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T03:53:47.382456+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=76904.7
+- 更新: 2026-05-18T03:58:41.779294+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=76910.0
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +24.89% | $5,905,046.16 |
-| AIGENSYN/USDT:USDT | +8.19% | $3,954,196.86 |
-| HYPE/USDT:USDT | +4.48% | $300,164,654.71 |
-| AKT/USDT:USDT | +3.44% | $1,468,103.45 |
-| ZEC/USDT:USDT | +2.86% | $500,811,412.69 |
+| FIDA/USDT:USDT | +25.31% | $5,917,114.06 |
+| AIGENSYN/USDT:USDT | +9.56% | $3,995,928.72 |
+| HYPE/USDT:USDT | +4.27% | $300,542,732.97 |
+| AKT/USDT:USDT | +3.34% | $1,469,285.56 |
+| UB/USDT:USDT | +3.15% | $14,701,403.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +0.60% | +0.47% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.35% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.47% | +0.35% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.42% | +0.29% |
-| TRX/USDT:USDT | below_1h_threshold | +0.39% | +0.27% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.75% | +0.62% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.57% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.56% | +0.43% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.56% | +0.42% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +0.50% | +0.37% |
 
 ## 5. 次に見るべき不足
 
