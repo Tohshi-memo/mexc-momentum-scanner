@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T20:44:37.077392+00:00
+- generated_at: 2026-05-18T20:51:42.509562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4452**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T20:44:35.127507+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=76928.7
-- Funnel: target 764 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-18T20:51:40.544053+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=76855.8
+- Funnel: target 764 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +33.79% | $3,561,771.94 |
-| TRAC/USDT:USDT | +8.92% | $1,317,166.46 |
-| INJ/USDT:USDT | +4.57% | $18,456,707.57 |
-| NEAR/USDT:USDT | +4.35% | $8,791,407.29 |
-| OPENLEDGER/USDT:USDT | +4.16% | $1,761,129.16 |
+| RON/USDT:USDT | +34.26% | $3,658,318.46 |
+| TRAC/USDT:USDT | +9.61% | $1,319,518.58 |
+| INJ/USDT:USDT | +4.41% | $18,525,097.70 |
+| NEAR/USDT:USDT | +4.09% | $8,811,254.81 |
+| KITE/USDT:USDT | +3.59% | $2,004,369.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.92% | +2.87% |
-| KITE/USDT:USDT | below_1h_threshold | +1.96% | +1.91% |
-| INJ/USDT:USDT | below_1h_threshold | +1.81% | +1.77% |
-| RON/USDT:USDT | below_1h_threshold | +1.77% | +1.72% |
-| TRAC/USDT:USDT | below_1h_threshold | +1.52% | +1.47% |
+| TRAC/USDT:USDT | below_1h_threshold | +2.43% | +2.48% |
+| RON/USDT:USDT | below_1h_threshold | +2.21% | +2.26% |
+| KITE/USDT:USDT | below_1h_threshold | +1.87% | +1.92% |
+| INJ/USDT:USDT | below_1h_threshold | +1.67% | +1.71% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.25% | +1.30% |
 
 ## 5. 次に見るべき不足
 
