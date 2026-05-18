@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T20:08:52.208323+00:00
+- generated_at: 2026-05-18T20:13:58.707484+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4452**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T20:08:50.160545+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=76943.5
+- 更新: 2026-05-18T20:13:56.810962+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=77027.0
 - Funnel: target 764 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +29.96% | $2,960,444.30 |
-| TRAC/USDT:USDT | +9.83% | $1,308,557.85 |
-| OPENLEDGER/USDT:USDT | +6.19% | $1,701,769.50 |
-| NEAR/USDT:USDT | +4.95% | $8,324,545.45 |
-| ZEC/USDT:USDT | +4.13% | $569,460,686.24 |
+| RON/USDT:USDT | +32.05% | $3,056,971.68 |
+| TRAC/USDT:USDT | +8.32% | $1,310,662.28 |
+| OPENLEDGER/USDT:USDT | +5.86% | $1,715,054.56 |
+| NEAR/USDT:USDT | +4.55% | $8,365,431.92 |
+| CHZ/USDT:USDT | +4.07% | $13,505,184.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRAC/USDT:USDT | below_1h_threshold | +2.16% | +2.09% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.02% | +0.95% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +0.85% | +0.79% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.69% | +0.62% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.68% | +0.62% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.24% | +1.06% |
+| TRAC/USDT:USDT | below_1h_threshold | +1.09% | +0.91% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.02% | +0.84% |
+| KITE/USDT:USDT | below_1h_threshold | +0.80% | +0.62% |
+| WLD/USDT:USDT | below_1h_threshold | +0.72% | +0.54% |
 
 ## 5. 次に見るべき不足
 
