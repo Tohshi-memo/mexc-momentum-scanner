@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T00:28:51.261143+00:00
+- generated_at: 2026-05-18T00:33:34.723464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4428**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T00:28:49.340931+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=77123.8
-- Funnel: target 761 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-18T00:33:32.768977+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.50% price=77041.9
+- Funnel: target 762 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +39.28% | $5,130,435.03 |
-| UB/USDT:USDT | +8.91% | $15,581,856.09 |
-| BUILDONBOB/USDT:USDT | +6.48% | $1,361,330.47 |
-| HYPE/USDT:USDT | +5.99% | $314,809,710.18 |
-| ZEC/USDT:USDT | +3.50% | $510,521,397.29 |
+| FIDA/USDT:USDT | +35.21% | $5,181,541.15 |
+| UB/USDT:USDT | +8.33% | $15,594,521.65 |
+| BUILDONBOB/USDT:USDT | +7.17% | $1,362,613.17 |
+| HYPE/USDT:USDT | +5.99% | $315,536,011.04 |
+| BILL/USDT:USDT | +4.59% | $34,846,858.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.18% | +3.58% |
-| BSB/USDT:USDT | below_1h_threshold | +2.77% | +3.17% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.28% | +2.68% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.60% | +2.00% |
-| VVV/USDT:USDT | below_1h_threshold | +1.57% | +1.97% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.52% | +4.02% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +2.55% | +3.06% |
+| BSB/USDT:USDT | below_1h_threshold | +2.55% | +3.05% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.67% | +2.18% |
+| VVV/USDT:USDT | below_1h_threshold | +1.45% | +1.95% |
 
 ## 5. 次に見るべき不足
 
