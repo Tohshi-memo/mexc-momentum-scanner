@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-18T21:07:57.473090+00:00
+- generated_at: 2026-05-18T21:12:58.435417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4453**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-18T21:07:55.893519+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=76808.3
+- 更新: 2026-05-18T21:12:56.882282+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=76866.5
 - Funnel: target 763 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +40.53% | $4,481,050.79 |
-| TRAC/USDT:USDT | +7.96% | $1,321,767.78 |
-| INJ/USDT:USDT | +5.76% | $18,268,781.30 |
-| NEAR/USDT:USDT | +4.95% | $8,804,178.59 |
-| OPENLEDGER/USDT:USDT | +3.92% | $1,714,007.61 |
+| RON/USDT:USDT | +41.23% | $4,582,998.09 |
+| TRAC/USDT:USDT | +8.53% | $1,322,353.01 |
+| ONDO/USDT:USDT | +6.88% | $28,644,490.95 |
+| INJ/USDT:USDT | +6.73% | $18,390,475.89 |
+| HYPE/USDT:USDT | +5.91% | $228,415,408.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HYPE/USDT:USDT | below_1h_threshold | +0.79% | +0.87% |
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +0.69% | +0.77% |
-| RENDER/USDT:USDT | below_1h_threshold | +0.17% | +0.25% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.16% | +0.24% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.15% | +0.23% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.62% | +3.62% |
+| HYPE/USDT:USDT | below_1h_threshold | +3.19% | +3.19% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
+| INJ/USDT:USDT | below_1h_threshold | +0.90% | +0.90% |
 
 ## 5. 次に見るべき不足
 
