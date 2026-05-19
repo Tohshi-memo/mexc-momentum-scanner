@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T00:33:32.297763+00:00
+- generated_at: 2026-05-19T00:38:35.562417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4457**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T00:33:30.306043+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=77185.1
+- 更新: 2026-05-19T00:38:33.589265+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=77168.4
 - Funnel: target 765 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +38.90% | $7,575,279.66 |
-| INJ/USDT:USDT | +15.26% | $20,394,421.72 |
-| ONDO/USDT:USDT | +13.57% | $42,510,233.45 |
-| AKT/USDT:USDT | +9.68% | $1,467,157.59 |
-| NEAR/USDT:USDT | +7.79% | $9,158,783.42 |
+| RON/USDT:USDT | +37.04% | $7,590,612.98 |
+| INJ/USDT:USDT | +15.33% | $20,880,515.10 |
+| ONDO/USDT:USDT | +11.84% | $42,816,610.00 |
+| AKT/USDT:USDT | +9.35% | $1,473,779.32 |
+| NEAR/USDT:USDT | +7.19% | $9,189,332.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPENLEDGER/USDT:USDT | below_1h_threshold | +3.63% | +3.34% |
-| INJ/USDT:USDT | below_1h_threshold | +3.44% | +3.16% |
-| NOWSTOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.15% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.72% | +1.43% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.69% | +1.40% |
+| OPENLEDGER/USDT:USDT | below_1h_threshold | +4.05% | +3.78% |
+| INJ/USDT:USDT | below_1h_threshold | +3.50% | +3.24% |
+| NOWSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +2.99% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.88% | +2.61% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.55% | +1.28% |
 
 ## 5. 次に見るべき不足
 
