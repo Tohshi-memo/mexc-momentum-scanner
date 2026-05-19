@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T03:08:33.114958+00:00
+- generated_at: 2026-05-19T03:13:38.938758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4458**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T03:08:31.120173+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=76614.2
+- 更新: 2026-05-19T03:13:36.964109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=76736.4
 - Funnel: target 768 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +31.70% | $8,283,495.95 |
-| ONDO/USDT:USDT | +14.13% | $45,071,065.57 |
-| AKT/USDT:USDT | +11.17% | $1,318,379.65 |
-| INJ/USDT:USDT | +10.95% | $26,248,612.79 |
-| AERO/USDT:USDT | +6.13% | $1,200,708.27 |
+| RON/USDT:USDT | +32.40% | $8,306,663.70 |
+| ONDO/USDT:USDT | +15.15% | $45,138,103.36 |
+| INJ/USDT:USDT | +11.91% | $26,332,738.56 |
+| AKT/USDT:USDT | +11.79% | $1,323,012.25 |
+| NEAR/USDT:USDT | +6.40% | $9,545,140.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHZ/USDT:USDT | below_1h_threshold | +1.13% | +1.09% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.85% | +0.81% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
-| BCH/USDT:USDT | below_1h_threshold | +0.54% | +0.50% |
-| BSB/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.25% | +1.06% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.11% | +0.91% |
+| INJ/USDT:USDT | below_1h_threshold | +1.00% | +0.80% |
+| SPX/USDT:USDT | below_1h_threshold | +0.85% | +0.66% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.81% | +0.61% |
 
 ## 5. 次に見るべき不足
 
