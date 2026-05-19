@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T02:42:57.737257+00:00
+- generated_at: 2026-05-19T02:48:56.527478+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4458**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T02:42:56.084457+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=76737.7
+- 更新: 2026-05-19T02:48:54.610890+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=76681.4
 - Funnel: target 768 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +32.17% | $8,216,192.03 |
-| ONDO/USDT:USDT | +13.69% | $44,906,564.37 |
-| AKT/USDT:USDT | +10.68% | $1,367,268.55 |
-| INJ/USDT:USDT | +9.89% | $26,165,533.25 |
-| ZEC/USDT:USDT | +6.06% | $594,894,430.19 |
+| RON/USDT:USDT | +32.86% | $8,231,123.38 |
+| ONDO/USDT:USDT | +14.39% | $45,181,858.06 |
+| AKT/USDT:USDT | +10.81% | $1,384,210.67 |
+| INJ/USDT:USDT | +10.22% | $26,388,636.62 |
+| ZEC/USDT:USDT | +6.23% | $597,280,542.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_1h_threshold | +1.84% | +1.70% |
-| AKT/USDT:USDT | below_1h_threshold | +1.63% | +1.50% |
-| VVV/USDT:USDT | below_1h_threshold | +1.32% | +1.19% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.20% | +1.07% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.94% | +0.81% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.44% | +2.38% |
+| AKT/USDT:USDT | below_1h_threshold | +1.72% | +1.66% |
+| VVV/USDT:USDT | below_1h_threshold | +1.59% | +1.53% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.09% | +1.03% |
+| APE/USDT:USDT | below_1h_threshold | +0.98% | +0.92% |
 
 ## 5. 次に見るべき不足
 
