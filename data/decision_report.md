@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T18:34:22.291973+00:00
+- generated_at: 2026-05-19T18:38:47.331680+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4494**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T18:34:20.382349+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76807.7
-- Funnel: target 760 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-19T18:38:45.246610+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=76775.0
+- Funnel: target 760 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +46.74% | $15,258,390.52 |
-| EDEN/USDT:USDT | +37.88% | $9,298,598.25 |
-| VVV/USDT:USDT | +11.19% | $8,793,442.31 |
-| LIT/USDT:USDT | +7.81% | $1,957,211.28 |
-| FIGHT/USDT:USDT | +7.53% | $1,088,580.62 |
+| BSB/USDT:USDT | +49.16% | $15,466,603.07 |
+| EDEN/USDT:USDT | +37.27% | $9,573,698.79 |
+| VVV/USDT:USDT | +12.06% | $8,871,318.78 |
+| LIT/USDT:USDT | +8.50% | $1,960,896.94 |
+| FIGHT/USDT:USDT | +8.01% | $1,095,805.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +2.62% | +2.63% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.80% | +1.81% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.67% | +1.69% |
-| FIGHT/USDT:USDT | below_1h_threshold | +1.19% | +1.21% |
-| ETC/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
+| BSB/USDT:USDT | below_1h_threshold | +2.46% | +2.52% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.39% | +2.45% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.09% | +2.15% |
+| FIGHT/USDT:USDT | below_1h_threshold | +1.68% | +1.74% |
+| ENJ/USDT:USDT | below_1h_threshold | +1.48% | +1.54% |
 
 ## 5. 次に見るべき不足
 
