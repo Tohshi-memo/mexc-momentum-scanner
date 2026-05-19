@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T07:08:45.900627+00:00
+- generated_at: 2026-05-19T07:14:11.114717+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4463**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T07:08:43.910186+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77026.6
-- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-19T07:14:08.948021+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77090.0
+- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +28.10% | $8,675,291.47 |
-| PLAY/USDT:USDT | +18.27% | $1,650,179.65 |
-| EDEN/USDT:USDT | +14.67% | $1,940,155.70 |
-| ONDO/USDT:USDT | +13.74% | $52,057,253.18 |
-| LIT/USDT:USDT | +10.89% | $1,143,363.06 |
+| RON/USDT:USDT | +28.22% | $8,699,922.51 |
+| PLAY/USDT:USDT | +20.27% | $1,748,342.41 |
+| EDEN/USDT:USDT | +14.28% | $1,947,824.29 |
+| ONDO/USDT:USDT | +13.86% | $52,213,988.91 |
+| ONT/USDT:USDT | +10.72% | $1,013,532.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.44% | +4.39% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +0.59% | +0.54% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.33% | +0.28% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.26% | +0.21% |
-| LIT/USDT:USDT | below_1h_threshold | +0.24% | +0.19% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.42% | +1.29% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.74% | +0.60% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.65% | +0.52% |
+| STRK/USDT:USDT | below_1h_threshold | +0.53% | +0.40% |
+| DASH/USDT:USDT | below_1h_threshold | +0.42% | +0.29% |
 
 ## 5. 次に見るべき不足
 
