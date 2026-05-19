@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T16:58:45.127107+00:00
+- generated_at: 2026-05-19T17:03:41.017583+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4482**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T16:58:40.182064+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.52% price=76887.9
-- Funnel: target 764 → liquid 137 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.8 >= 65=1, 4h RSI 73.1 >= 65=1, 4h RSI 82.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-19T17:03:39.025865+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76861.4
+- Funnel: target 764 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +19.07% | $8,979,013.65 |
-| EDEN/USDT:USDT | +14.45% | $5,248,932.81 |
-| LAB/USDT:USDT | +8.40% | $85,567,351.73 |
-| RLS/USDT:USDT | +7.90% | $1,028,911.61 |
-| LIT/USDT:USDT | +4.65% | $1,786,273.24 |
+| EDEN/USDT:USDT | +21.04% | $5,291,801.45 |
+| BSB/USDT:USDT | +16.18% | $8,799,884.36 |
+| LAB/USDT:USDT | +8.79% | $82,860,468.81 |
+| LIT/USDT:USDT | +5.58% | $1,787,666.06 |
+| RLS/USDT:USDT | +5.53% | $1,032,983.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_relative_strength | +5.07% | +4.54% |
-| VVV/USDT:USDT | below_1h_threshold | +4.55% | +4.03% |
-| INJ/USDT:USDT | below_1h_threshold | +3.62% | +3.10% |
-| DYDX/USDT:USDT | below_1h_threshold | +3.59% | +3.07% |
-| PYTH/USDT:USDT | below_1h_threshold | +3.31% | +2.79% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.99% | +0.98% |
+| AIA/USDT:USDT | below_1h_threshold | +0.97% | +0.96% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
+| LIT/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
 
 ## 5. 次に見るべき不足
 
