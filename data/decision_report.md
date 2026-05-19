@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-19T04:43:39.607685+00:00
+- generated_at: 2026-05-19T04:49:01.212670+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4460**
+- closed shadow trades: **4461**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.42% / filled 20/20。**
-- 全期間 MARKET基準: n=4460, expectancy=-0.09%
+- 全期間 MARKET基準: n=4461, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+0.42%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,15 +25,15 @@
 | LIMIT_3PCT | 13/20 | 65.0% | +1.42% | **+0.92%** |
 | LIMIT_1PCT | 17/20 | 85.0% | +0.66% | **+0.56%** |
 | MARKET | 20/20 | 100.0% | +0.42% | **+0.42%** |
-| LIMIT_FIB1272 | 9/20 | 45.0% | +0.87% | **+0.39%** |
+| LIMIT_FIB1272 | 9/20 | 45.0% | +0.79% | **+0.36%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT_LONG | 7/20 | 35.0% | +2.37% | **+0.83%** |
+| LIMIT_ATR_LONG | 16/20 | 80.0% | +0.93% | **+0.75%** |
 | LIMIT_FIB1618_LONG | 6/20 | 30.0% | +1.85% | **+0.56%** |
-| LIMIT_ATR_LONG | 15/20 | 75.0% | +0.56% | **+0.42%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +0.44% | **+0.24%** |
 | LIMIT_5PCT_LONG | 10/20 | 50.0% | +0.27% | **+0.13%** |
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$119.88** / 初期 $100.00 (+19.88%)
-- 確定: 457件 (Win 119 / Loss 158 / Flat 180) / skip 564件
-- 成長率目線: 平均log +0.000397 / 幾何平均 +0.040% per trade / maxDD +4.21%
+- 残高: **$120.85** / 初期 $100.00 (+20.85%)
+- 確定: 458件 (Win 120 / Loss 158 / Flat 180) / skip 564件
+- 成長率目線: 平均log +0.000414 / 幾何平均 +0.041% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: RAVE/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $119.88
+- 最新: EDEN/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.81% 残高後 $120.85
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T04:43:34.845395+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=76853.8
+- 更新: 2026-05-19T04:48:55.778124+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=76848.7
 - Funnel: target 768 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +31.82% | $8,530,070.00 |
-| ONDO/USDT:USDT | +13.01% | $47,422,727.26 |
-| LIT/USDT:USDT | +11.99% | $1,006,573.96 |
-| INJ/USDT:USDT | +11.26% | $26,964,912.41 |
-| AKT/USDT:USDT | +10.90% | $1,318,300.58 |
+| RON/USDT:USDT | +32.52% | $8,534,382.64 |
+| ONDO/USDT:USDT | +13.48% | $48,114,479.20 |
+| LIT/USDT:USDT | +12.25% | $1,017,731.19 |
+| INJ/USDT:USDT | +11.24% | $27,030,189.03 |
+| AKT/USDT:USDT | +11.15% | $1,325,207.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.03% | +1.90% |
-| LIT/USDT:USDT | below_1h_threshold | +1.86% | +1.72% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.49% | +1.35% |
-| WLD/USDT:USDT | below_1h_threshold | +1.41% | +1.27% |
-| TIA/USDT:USDT | below_1h_threshold | +1.23% | +1.10% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.77% | +2.64% |
+| LIT/USDT:USDT | below_1h_threshold | +2.10% | +1.97% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.88% | +1.75% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.69% | +1.56% |
+| TIA/USDT:USDT | below_1h_threshold | +1.49% | +1.36% |
 
 ## 5. 次に見るべき不足
 
