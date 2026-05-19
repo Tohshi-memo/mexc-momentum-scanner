@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-19T15:38:47.646036+00:00
+- generated_at: 2026-05-19T15:43:47.880768+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4475**
+- closed shadow trades: **4476**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4475, expectancy=-0.09%
+- 全期間 MARKET基準: n=4476, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+0.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,39 +46,38 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$122.10** / 初期 $100.00 (+22.10%)
-- 確定: 472件 (Win 124 / Loss 163 / Flat 185) / skip 564件
-- 成長率目線: 平均log +0.000423 / 幾何平均 +0.042% per trade / maxDD +4.21%
+- 残高: **$121.49** / 初期 $100.00 (+21.49%)
+- 確定: 473件 (Win 124 / Loss 164 / Flat 185) / skip 564件
+- 成長率目線: 平均log +0.000412 / 幾何平均 +0.041% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BSB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $122.10
+- 最新: ESPORTS/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $121.49
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T15:38:43.477474+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=76550.3
-- Funnel: target 764 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-19T15:43:45.571899+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=76460.8
+- Funnel: target 764 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +32.16% | $6,114,556.73 |
-| RON/USDT:USDT | +30.66% | $14,990,691.27 |
-| EDEN/USDT:USDT | +29.12% | $3,966,891.26 |
-| ENJ/USDT:USDT | +14.77% | $1,620,204.37 |
-| ONT/USDT:USDT | +11.95% | $2,323,850.32 |
+| RON/USDT:USDT | +31.93% | $15,043,640.44 |
+| PLAY/USDT:USDT | +31.08% | $6,140,243.18 |
+| EDEN/USDT:USDT | +27.21% | $3,980,817.72 |
+| ENJ/USDT:USDT | +15.06% | $1,652,143.21 |
+| ONT/USDT:USDT | +12.30% | $2,325,522.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.31% | +4.07% |
-| H/USDT:USDT | below_1h_threshold | +1.96% | +1.72% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.91% | +1.67% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.74% | +1.50% |
-| KITE/USDT:USDT | below_1h_threshold | +1.70% | +1.46% |
+| BSB/USDT:USDT | below_relative_strength | +5.12% | +4.99% |
+| H/USDT:USDT | below_1h_threshold | +2.37% | +2.25% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.74% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.64% | +1.52% |
+| KITE/USDT:USDT | below_1h_threshold | +1.61% | +1.49% |
 
 ## 5. 次に見るべき不足
 
