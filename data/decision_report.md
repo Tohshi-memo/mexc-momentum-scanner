@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T17:03:41.017583+00:00
+- generated_at: 2026-05-19T17:08:34.711646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4482**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T17:03:39.025865+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=76861.4
-- Funnel: target 764 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-19T17:08:32.724653+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=76886.4
+- Funnel: target 764 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +21.04% | $5,291,801.45 |
-| BSB/USDT:USDT | +16.18% | $8,799,884.36 |
-| LAB/USDT:USDT | +8.79% | $82,860,468.81 |
-| LIT/USDT:USDT | +5.58% | $1,787,666.06 |
-| RLS/USDT:USDT | +5.53% | $1,032,983.22 |
+| EDEN/USDT:USDT | +17.05% | $5,371,455.84 |
+| BSB/USDT:USDT | +16.47% | $8,909,499.38 |
+| LAB/USDT:USDT | +9.15% | $83,562,865.68 |
+| VVV/USDT:USDT | +6.20% | $5,953,154.50 |
+| LIT/USDT:USDT | +5.20% | $1,817,789.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +0.99% | +0.98% |
-| AIA/USDT:USDT | below_1h_threshold | +0.97% | +0.96% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
-| LIT/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
+| VVV/USDT:USDT | below_1h_threshold | +1.67% | +1.64% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.18% | +1.14% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.54% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.46% |
 
 ## 5. 次に見るべき不足
 
