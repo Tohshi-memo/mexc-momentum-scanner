@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T11:28:41.923511+00:00
+- generated_at: 2026-05-19T11:33:40.156239+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4468**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T11:28:39.898978+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=76837.1
+- 更新: 2026-05-19T11:33:38.182270+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=76821.9
 - Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +38.32% | $11,156,637.52 |
-| EDEN/USDT:USDT | +31.52% | $3,111,116.95 |
-| PLAY/USDT:USDT | +27.93% | $4,583,505.95 |
-| ONT/USDT:USDT | +18.10% | $1,586,181.85 |
-| ONDO/USDT:USDT | +9.64% | $59,131,739.86 |
+| RON/USDT:USDT | +37.04% | $11,233,384.97 |
+| EDEN/USDT:USDT | +32.72% | $3,145,062.30 |
+| PLAY/USDT:USDT | +29.11% | $4,608,171.38 |
+| ONT/USDT:USDT | +19.85% | $1,664,838.33 |
+| ONDO/USDT:USDT | +9.38% | $59,357,779.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +3.59% | +3.80% |
-| ONT/USDT:USDT | below_1h_threshold | +1.80% | +2.02% |
-| VSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +1.01% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.60% | +0.81% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.35% | +0.57% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.49% | +4.72% |
+| ONT/USDT:USDT | below_1h_threshold | +2.71% | +2.94% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.38% | +1.61% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.97% | +1.21% |
+| VSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +1.13% |
 
 ## 5. 次に見るべき不足
 
