@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T20:14:35.975778+00:00
+- generated_at: 2026-05-19T20:18:42.244634+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4498**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T20:14:34.002525+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=76910.9
+- 更新: 2026-05-19T20:18:40.219423+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=76904.5
 - Funnel: target 760 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +49.09% | $23,269,435.63 |
-| EDEN/USDT:USDT | +27.57% | $12,561,606.69 |
-| VVV/USDT:USDT | +14.62% | $10,630,835.44 |
-| LAB/USDT:USDT | +10.07% | $85,954,944.60 |
-| LIT/USDT:USDT | +9.43% | $2,092,080.03 |
+| BSB/USDT:USDT | +48.63% | $23,525,821.88 |
+| EDEN/USDT:USDT | +27.06% | $12,662,219.09 |
+| VVV/USDT:USDT | +14.93% | $10,695,702.71 |
+| LAB/USDT:USDT | +9.69% | $86,048,943.06 |
+| LIT/USDT:USDT | +8.93% | $2,103,945.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +1.14% | +0.97% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.12% | +0.95% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.12% | +0.95% |
-| FIDA/USDT:USDT | below_1h_threshold | +0.76% | +0.59% |
-| APE/USDT:USDT | below_1h_threshold | +0.70% | +0.53% |
+| INJ/USDT:USDT | below_1h_threshold | +1.39% | +1.23% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.33% | +1.17% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.20% | +1.04% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.15% | +0.99% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
 
 ## 5. 次に見るべき不足
 
