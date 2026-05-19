@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T22:54:08.516005+00:00
+- generated_at: 2026-05-19T22:58:34.316210+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4511**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T22:54:06.311692+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=76710.3
-- Funnel: target 759 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-19T22:58:32.109589+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=76703.2
+- Funnel: target 759 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROMPT/USDT:USDT | +29.50% | $9,578,994.08 |
-| EDEN/USDT:USDT | +28.83% | $15,752,207.12 |
-| BSB/USDT:USDT | +15.48% | $35,110,343.01 |
-| BANANAS31/USDT:USDT | +14.33% | $1,364,492.44 |
-| LIT/USDT:USDT | +12.59% | $3,419,293.60 |
+| PROMPT/USDT:USDT | +37.89% | $10,156,559.59 |
+| EDEN/USDT:USDT | +30.76% | $15,862,575.61 |
+| BSB/USDT:USDT | +14.40% | $35,207,194.82 |
+| BANANAS31/USDT:USDT | +13.64% | $1,369,942.48 |
+| LIT/USDT:USDT | +12.30% | $3,457,179.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROMPT/USDT:USDT | below_1h_threshold | +3.18% | +3.48% |
-| FIGHT/USDT:USDT | below_1h_threshold | +0.65% | +0.95% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.55% | +0.85% |
-| LIT/USDT:USDT | below_1h_threshold | +0.54% | +0.84% |
-| XMR/USDT:USDT | below_1h_threshold | +0.46% | +0.76% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.42% | +1.73% |
+| LAB/USDT:USDT | below_1h_threshold | +0.65% | +0.96% |
+| LIT/USDT:USDT | below_1h_threshold | +0.56% | +0.87% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.54% | +0.85% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.40% | +0.71% |
 
 ## 5. 次に見るべき不足
 
