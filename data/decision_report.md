@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T12:03:41.697819+00:00
+- generated_at: 2026-05-19T12:08:42.182087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4468**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T12:03:39.717142+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=76720.0
+- 更新: 2026-05-19T12:08:40.170424+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=76726.2
 - Funnel: target 764 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +35.65% | $12,031,275.10 |
-| EDEN/USDT:USDT | +32.21% | $3,082,866.55 |
-| PLAY/USDT:USDT | +27.94% | $4,823,058.73 |
-| ONT/USDT:USDT | +15.28% | $1,949,905.25 |
-| LIT/USDT:USDT | +7.62% | $1,499,600.46 |
+| RON/USDT:USDT | +34.84% | $12,126,948.84 |
+| EDEN/USDT:USDT | +30.30% | $3,134,173.10 |
+| PLAY/USDT:USDT | +27.65% | $4,843,666.98 |
+| ONT/USDT:USDT | +15.81% | $1,965,791.69 |
+| LIT/USDT:USDT | +7.34% | $1,501,695.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +0.43% | +0.38% |
-| INJ/USDT:USDT | below_1h_threshold | +0.35% | +0.29% |
-| SPX/USDT:USDT | below_1h_threshold | +0.33% | +0.28% |
-| ZEN/USDT:USDT | below_1h_threshold | +0.30% | +0.25% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.28% | +0.23% |
+| INJ/USDT:USDT | below_1h_threshold | +0.51% | +0.45% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.50% | +0.44% |
+| ALGO/USDT:USDT | below_1h_threshold | +0.46% | +0.39% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.40% | +0.34% |
+| FET/USDT:USDT | below_1h_threshold | +0.37% | +0.30% |
 
 ## 5. 次に見るべき不足
 
