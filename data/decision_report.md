@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T15:08:49.615531+00:00
+- generated_at: 2026-05-19T15:13:44.202226+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4473**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T15:08:47.595802+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=76486.6
-- Funnel: target 764 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-19T15:13:42.200314+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=76514.1
+- Funnel: target 764 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +32.28% | $14,569,565.82 |
-| PLAY/USDT:USDT | +30.67% | $5,878,826.02 |
-| EDEN/USDT:USDT | +25.93% | $3,886,105.60 |
-| ENJ/USDT:USDT | +18.80% | $1,344,958.21 |
-| ONT/USDT:USDT | +10.89% | $2,288,230.47 |
+| RON/USDT:USDT | +31.82% | $14,668,881.93 |
+| PLAY/USDT:USDT | +30.97% | $5,940,610.77 |
+| EDEN/USDT:USDT | +25.87% | $3,894,888.68 |
+| ENJ/USDT:USDT | +18.61% | $1,429,354.45 |
+| ONT/USDT:USDT | +10.89% | $2,302,250.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.87% | +1.71% |
-| ENJ/USDT:USDT | below_1h_threshold | +1.79% | +1.63% |
-| KITE/USDT:USDT | below_1h_threshold | +0.75% | +0.59% |
-| H/USDT:USDT | below_1h_threshold | +0.66% | +0.50% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.65% | +0.49% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.79% | +2.60% |
+| H/USDT:USDT | below_1h_threshold | +1.73% | +1.54% |
+| ENJ/USDT:USDT | below_1h_threshold | +1.62% | +1.43% |
+| KITE/USDT:USDT | below_1h_threshold | +0.86% | +0.67% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.64% |
 
 ## 5. 次に見るべき不足
 
