@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T03:29:00.007975+00:00
+- generated_at: 2026-05-19T03:34:03.381518+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4458**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T03:28:55.388417+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=76698.6
+- 更新: 2026-05-19T03:33:58.549751+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=76757.7
 - Funnel: target 768 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +32.17% | $8,330,954.65 |
-| ONDO/USDT:USDT | +14.83% | $45,643,425.07 |
-| INJ/USDT:USDT | +12.90% | $26,654,668.30 |
-| AKT/USDT:USDT | +11.39% | $1,342,445.67 |
-| RAVE/USDT:USDT | +10.28% | $3,785,790.72 |
+| RON/USDT:USDT | +32.05% | $8,339,424.93 |
+| ONDO/USDT:USDT | +15.65% | $45,719,304.75 |
+| INJ/USDT:USDT | +13.60% | $26,772,545.61 |
+| RAVE/USDT:USDT | +13.42% | $3,900,196.46 |
+| AKT/USDT:USDT | +12.02% | $1,343,534.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +1.90% | +1.75% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.62% | +1.47% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.47% | +1.33% |
-| CHZ/USDT:USDT | below_1h_threshold | +0.88% | +0.74% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.77% | +0.63% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.54% | +2.32% |
+| INJ/USDT:USDT | below_1h_threshold | +2.52% | +2.30% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.62% | +1.40% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.21% | +0.98% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.16% | +0.94% |
 
 ## 5. 次に見るべき不足
 
