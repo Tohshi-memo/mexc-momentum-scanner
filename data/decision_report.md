@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T21:53:48.370080+00:00
+- generated_at: 2026-05-19T21:58:46.715160+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4506**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T21:53:43.175338+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=76996.8
+- 更新: 2026-05-19T21:58:42.286252+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=76954.4
 - Funnel: target 759 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1
+- Strict後reject: 4h RSI 76.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +30.54% | $14,906,496.19 |
-| PROMPT/USDT:USDT | +20.38% | $2,770,442.33 |
-| BANANAS31/USDT:USDT | +14.39% | $1,226,033.66 |
-| BSB/USDT:USDT | +13.80% | $33,314,242.95 |
-| LIT/USDT:USDT | +11.65% | $2,896,290.65 |
+| EDEN/USDT:USDT | +28.70% | $14,972,597.94 |
+| PROMPT/USDT:USDT | +27.26% | $2,900,637.74 |
+| BSB/USDT:USDT | +17.15% | $33,521,256.39 |
+| BANANAS31/USDT:USDT | +14.55% | $1,238,662.54 |
+| LIT/USDT:USDT | +12.31% | $2,960,907.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +2.45% | +2.42% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.07% | +2.04% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.42% | +1.40% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.12% | +1.09% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.69% | +2.71% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.61% | +1.64% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.46% | +1.49% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.26% | +1.29% |
+| FIGHT/USDT:USDT | below_1h_threshold | +0.97% | +1.00% |
 
 ## 5. 次に見るべき不足
 
