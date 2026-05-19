@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T19:58:45.026578+00:00
+- generated_at: 2026-05-19T20:03:59.465395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4498**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T19:58:43.043959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=76774.2
-- Funnel: target 760 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-19T20:03:57.474709+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=76815.4
+- Funnel: target 760 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +50.23% | $22,345,752.28 |
-| EDEN/USDT:USDT | +28.44% | $12,258,615.79 |
-| VVV/USDT:USDT | +14.69% | $10,698,763.39 |
-| PLAY/USDT:USDT | +9.20% | $8,754,627.37 |
-| LAB/USDT:USDT | +9.20% | $86,322,705.43 |
+| BSB/USDT:USDT | +53.20% | $22,459,323.68 |
+| EDEN/USDT:USDT | +30.62% | $12,390,691.24 |
+| VVV/USDT:USDT | +15.58% | $10,448,492.64 |
+| LAB/USDT:USDT | +10.09% | $85,447,979.89 |
+| PLAY/USDT:USDT | +8.73% | $8,667,264.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.57% | +3.55% |
-| LAB/USDT:USDT | below_1h_threshold | +3.01% | +2.99% |
-| VVV/USDT:USDT | below_1h_threshold | +2.21% | +2.20% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
+| BSB/USDT:USDT | below_1h_threshold | +2.66% | +2.61% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.14% | +2.10% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.93% | +0.88% |
+| LAB/USDT:USDT | below_1h_threshold | +0.64% | +0.59% |
+| VVV/USDT:USDT | below_1h_threshold | +0.55% | +0.51% |
 
 ## 5. 次に見るべき不足
 
