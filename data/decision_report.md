@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-19T00:08:47.547442+00:00
+- generated_at: 2026-05-19T00:13:35.091142+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4456**
+- closed shadow trades: **4457**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4456, expectancy=-0.09%
-- 直近20件 MARKET基準: n=20, expectancy=-0.10%
+- 全期間 MARKET基準: n=4457, expectancy=-0.09%
+- 直近20件 MARKET基準: n=20, expectancy=-0.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.10% | **-0.10%** |
+| MARKET | 20/20 | 100.0% | -0.05% | **-0.05%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_3PCT | 15/20 | 75.0% | +1.62% | **+1.21%** |
-| LIMIT_ATR | 17/20 | 85.0% | +0.56% | **+0.47%** |
-| LIMIT_FIB1272 | 9/20 | 45.0% | +0.98% | **+0.44%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +0.53% | **+0.42%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +0.35% | **+0.31%** |
+| LIMIT_3PCT | 15/20 | 75.0% | +1.67% | **+1.26%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +0.58% | **+0.46%** |
+| LIMIT_ATR | 17/20 | 85.0% | +0.52% | **+0.44%** |
+| LIMIT_FIB1272 | 9/20 | 45.0% | +0.91% | **+0.41%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +0.40% | **+0.36%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR_LONG | 15/20 | 75.0% | +1.53% | **+1.15%** |
+| LIMIT_ATR_LONG | 15/20 | 75.0% | +1.36% | **+1.02%** |
 | LIMIT_4PCT_LONG | 10/20 | 50.0% | +1.81% | **+0.91%** |
 | LIMIT_5PCT_LONG | 9/20 | 45.0% | +1.55% | **+0.70%** |
-| LIMIT_3PCT_LONG | 13/20 | 65.0% | +0.87% | **+0.57%** |
-| LIMIT_1PCT_LONG | 18/20 | 90.0% | +0.37% | **+0.33%** |
+| LIMIT_7PCT_LONG | 6/20 | 30.0% | +0.97% | **+0.29%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | +0.32% | **+0.29%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$120.28** / 初期 $100.00 (+20.28%)
-- 確定: 453件 (Win 118 / Loss 156 / Flat 179) / skip 564件
-- 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +4.21%
+- 残高: **$121.09** / 初期 $100.00 (+21.09%)
+- 確定: 454件 (Win 119 / Loss 156 / Flat 179) / skip 564件
+- 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: RON/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $120.28
+- 最新: ONDO/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.67% 残高後 $121.09
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T00:08:45.232760+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=77047.1
+- 更新: 2026-05-19T00:13:32.839588+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=77092.8
 - Funnel: target 764 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +36.46% | $7,362,442.60 |
-| ONDO/USDT:USDT | +14.18% | $41,011,968.38 |
-| INJ/USDT:USDT | +12.41% | $18,804,557.46 |
-| AKT/USDT:USDT | +8.61% | $1,455,278.52 |
-| NEAR/USDT:USDT | +7.59% | $8,900,810.12 |
+| RON/USDT:USDT | +37.04% | $7,450,572.36 |
+| ONDO/USDT:USDT | +14.51% | $41,222,107.23 |
+| INJ/USDT:USDT | +13.40% | $18,973,766.64 |
+| AKT/USDT:USDT | +8.55% | $1,456,252.96 |
+| HYPE/USDT:USDT | +7.91% | $202,845,576.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JPMSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +2.51% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.04% | +0.94% |
-| INJ/USDT:USDT | below_1h_threshold | +0.95% | +0.84% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.75% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.80% | +0.69% |
+| INJ/USDT:USDT | below_1h_threshold | +1.79% | +1.62% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.15% | +0.98% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.09% | +0.92% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.88% | +0.71% |
 
 ## 5. 次に見るべき不足
 
