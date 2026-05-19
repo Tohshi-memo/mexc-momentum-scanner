@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T07:18:47.106868+00:00
+- generated_at: 2026-05-19T07:23:38.141774+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4464**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T07:18:44.582029+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=77129.4
-- Funnel: target 768 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-19T07:23:35.911618+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=77109.1
+- Funnel: target 768 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.9 >= 65=1
+- Strict後reject: 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RON/USDT:USDT | +27.64% | $8,709,829.90 |
-| PLAY/USDT:USDT | +20.67% | $1,841,826.61 |
-| EDEN/USDT:USDT | +20.20% | $1,970,976.48 |
-| ONDO/USDT:USDT | +14.45% | $52,600,891.14 |
-| ONT/USDT:USDT | +10.54% | $1,016,160.37 |
+| RON/USDT:USDT | +27.29% | $8,730,705.51 |
+| EDEN/USDT:USDT | +22.58% | $2,000,018.75 |
+| PLAY/USDT:USDT | +21.09% | $1,909,904.27 |
+| ONDO/USDT:USDT | +13.69% | $52,816,422.08 |
+| ONT/USDT:USDT | +10.54% | $1,020,360.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +3.01% | +2.83% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.01% | +0.83% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.96% | +0.77% |
-| STRK/USDT:USDT | below_1h_threshold | +0.55% | +0.37% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.53% | +0.35% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.90% | +4.74% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.04% | +0.88% |
+| GUA/USDT:USDT | below_1h_threshold | +0.95% | +0.79% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +0.69% | +0.53% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.46% | +0.30% |
 
 ## 5. 次に見るべき不足
 
