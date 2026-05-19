@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-19T20:48:35.923333+00:00
+- generated_at: 2026-05-19T20:53:48.326950+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4498**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-19T20:48:33.920832+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=76961.7
-- Funnel: target 760 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-19T20:53:43.597207+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=76979.9
+- Funnel: target 760 → liquid 139 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +22.14% | $13,517,192.64 |
-| VVV/USDT:USDT | +13.41% | $11,124,945.16 |
-| BSB/USDT:USDT | +12.59% | $28,361,503.42 |
-| BANANAS31/USDT:USDT | +11.67% | $1,081,860.57 |
-| LAB/USDT:USDT | +11.44% | $86,962,976.45 |
+| PROMPT/USDT:USDT | +27.86% | $1,024,947.15 |
+| EDEN/USDT:USDT | +22.54% | $13,612,701.10 |
+| BANANAS31/USDT:USDT | +13.10% | $1,099,177.46 |
+| VVV/USDT:USDT | +13.05% | $11,173,339.80 |
+| LIT/USDT:USDT | +11.31% | $2,284,473.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.56% | +3.32% |
-| GUA/USDT:USDT | below_1h_threshold | +3.01% | +2.77% |
-| HOME/USDT:USDT | below_1h_threshold | +2.66% | +2.42% |
-| LAB/USDT:USDT | below_1h_threshold | +1.82% | +1.58% |
-| LIT/USDT:USDT | below_1h_threshold | +1.60% | +1.37% |
+| GUA/USDT:USDT | below_1h_threshold | +2.99% | +2.73% |
+| HOME/USDT:USDT | below_1h_threshold | +2.56% | +2.30% |
+| LIT/USDT:USDT | below_1h_threshold | +1.88% | +1.62% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.53% | +1.27% |
+| GOAT/USDT:USDT | below_1h_threshold | +1.41% | +1.15% |
 
 ## 5. 次に見るべき不足
 
