@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T12:33:51.861036+00:00
+- generated_at: 2026-05-20T12:38:49.908732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4542**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T12:33:49.636560+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=77473.6
+- 更新: 2026-05-20T12:38:47.643869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=77499.0
 - Funnel: target 763 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1
+- Strict後reject: 4h RSI 71.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +88.60% | $2,208,366.42 |
-| FIDA/USDT:USDT | +43.85% | $3,658,509.41 |
-| PLAY/USDT:USDT | +30.27% | $10,708,777.75 |
-| BANANAS31/USDT:USDT | +28.82% | $2,108,516.63 |
-| PROMPT/USDT:USDT | +26.25% | $12,766,619.95 |
+| SATO/USDT:USDT | +87.63% | $2,227,616.17 |
+| FIDA/USDT:USDT | +43.25% | $3,706,559.62 |
+| PLAY/USDT:USDT | +30.56% | $10,848,437.08 |
+| BANANAS31/USDT:USDT | +29.06% | $2,154,363.67 |
+| PROMPT/USDT:USDT | +26.63% | $12,774,599.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIGHT/USDT:USDT | below_1h_threshold | +4.19% | +4.03% |
-| UP/USDT:USDT | below_1h_threshold | +3.17% | +3.01% |
-| ZEST/USDT:USDT | below_1h_threshold | +3.04% | +2.88% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.34% | +2.18% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.23% | +2.07% |
+| ZEST/USDT:USDT | below_1h_threshold | +4.43% | +4.24% |
+| FIGHT/USDT:USDT | below_1h_threshold | +3.74% | +3.54% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.53% | +2.34% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.38% | +2.19% |
+| VVV/USDT:USDT | below_1h_threshold | +2.17% | +1.98% |
 
 ## 5. 次に見るべき不足
 
