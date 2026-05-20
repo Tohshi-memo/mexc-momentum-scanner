@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T12:43:45.064044+00:00
+- generated_at: 2026-05-20T12:48:54.043420+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4542**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T12:43:42.811915+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=77496.7
-- Funnel: target 763 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
+- 更新: 2026-05-20T12:48:51.640258+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=77534.9
+- Funnel: target 763 → liquid 130 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.5 >= 65=1, 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +88.48% | $2,247,483.04 |
-| FIDA/USDT:USDT | +46.21% | $3,788,429.22 |
-| PLAY/USDT:USDT | +31.56% | $10,983,430.18 |
-| BANANAS31/USDT:USDT | +28.91% | $2,177,510.36 |
-| PROMPT/USDT:USDT | +26.38% | $12,779,788.23 |
+| SATO/USDT:USDT | +87.74% | $2,263,855.05 |
+| FIDA/USDT:USDT | +45.35% | $3,854,037.96 |
+| PLAY/USDT:USDT | +29.77% | $11,173,786.33 |
+| BANANAS31/USDT:USDT | +28.94% | $2,183,987.60 |
+| PROMPT/USDT:USDT | +26.66% | $12,784,146.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +4.36% | +4.17% |
-| FIGHT/USDT:USDT | below_1h_threshold | +4.33% | +4.14% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.15% | +2.96% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.56% | +2.37% |
-| VVV/USDT:USDT | below_1h_threshold | +2.35% | +2.16% |
+| ZEST/USDT:USDT | below_1h_threshold | +2.70% | +2.46% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.43% | +2.19% |
+| VVV/USDT:USDT | below_1h_threshold | +2.40% | +2.16% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.90% | +1.67% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.71% | +1.47% |
 
 ## 5. 次に見るべき不足
 
