@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T19:34:07.374970+00:00
+- generated_at: 2026-05-20T19:39:07.512483+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4577**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T19:33:59.096217+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=77492.3
-- Funnel: target 759 → liquid 127 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1, 4h RSI 81.0 >= 65=1, 4h RSI 79.2 >= 65=1
+- 更新: 2026-05-20T19:39:01.726277+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=77548.5
+- Funnel: target 759 → liquid 127 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 81.0 >= 65=1, 4h RSI 79.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +39.10% | $28,338,947.93 |
-| BSB/USDT:USDT | +36.64% | $57,809,577.80 |
-| FIDA/USDT:USDT | +22.84% | $8,321,865.50 |
-| NIL/USDT:USDT | +16.70% | $1,989,373.88 |
-| LAB/USDT:USDT | +11.10% | $45,137,809.37 |
+| EDEN/USDT:USDT | +36.17% | $28,517,795.06 |
+| FIDA/USDT:USDT | +23.18% | $8,490,779.59 |
+| BSB/USDT:USDT | +23.03% | $59,072,559.90 |
+| NIL/USDT:USDT | +16.36% | $2,022,194.06 |
+| LAB/USDT:USDT | +10.77% | $45,359,576.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +4.94% | +4.79% |
-| SATO/USDT:USDT | below_1h_threshold | +4.63% | +4.48% |
-| FIGHT/USDT:USDT | below_1h_threshold | +3.87% | +3.72% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.33% | +3.18% |
-| TIA/USDT:USDT | below_1h_threshold | +2.90% | +2.75% |
+| ZEC/USDT:USDT | below_relative_strength | +5.03% | +4.81% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.26% | +4.03% |
+| FIGHT/USDT:USDT | below_1h_threshold | +3.89% | +3.67% |
+| TIA/USDT:USDT | below_1h_threshold | +3.37% | +3.14% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.35% | +3.12% |
 
 ## 5. 次に見るべき不足
 
