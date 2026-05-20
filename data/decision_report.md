@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T09:54:00.170792+00:00
+- generated_at: 2026-05-20T09:58:54.003895+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4537**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T09:53:51.764698+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77465.1
-- Funnel: target 762 → liquid 133 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-20T09:58:49.999008+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77428.4
+- Funnel: target 762 → liquid 133 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +103.46% | $1,567,829.95 |
-| PROMPT/USDT:USDT | +31.65% | $12,543,616.93 |
-| FIDA/USDT:USDT | +28.49% | $2,821,902.11 |
-| EDEN/USDT:USDT | +27.29% | $22,073,823.41 |
-| PLAY/USDT:USDT | +23.21% | $10,434,834.52 |
+| SATO/USDT:USDT | +102.52% | $1,590,491.31 |
+| PROMPT/USDT:USDT | +32.81% | $12,558,564.52 |
+| FIDA/USDT:USDT | +29.85% | $2,845,982.46 |
+| EDEN/USDT:USDT | +25.44% | $22,162,645.91 |
+| PLAY/USDT:USDT | +22.52% | $10,464,801.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROMPT/USDT:USDT | below_1h_threshold | +3.24% | +3.19% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.19% | +3.14% |
-| DASH/USDT:USDT | below_1h_threshold | +1.88% | +1.83% |
-| VVV/USDT:USDT | below_1h_threshold | +1.81% | +1.76% |
-| FOGO/USDT:USDT | below_1h_threshold | +1.57% | +1.52% |
+| PROMPT/USDT:USDT | below_1h_threshold | +4.05% | +4.05% |
+| BSB/USDT:USDT | below_1h_threshold | +3.64% | +3.64% |
+| ZEST/USDT:USDT | below_1h_threshold | +3.42% | +3.42% |
+| HOME/USDT:USDT | below_1h_threshold | +2.54% | +2.54% |
+| VVV/USDT:USDT | below_1h_threshold | +2.07% | +2.07% |
 
 ## 5. 次に見るべき不足
 
