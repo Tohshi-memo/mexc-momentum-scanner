@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T19:19:00.004428+00:00
+- generated_at: 2026-05-20T19:23:54.443478+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4574**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T19:18:55.156614+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77393.6
-- Funnel: target 759 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=1
+- 更新: 2026-05-20T19:23:46.990940+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77475.1
+- Funnel: target 759 → liquid 127 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +63.18% | $53,822,761.02 |
-| EDEN/USDT:USDT | +29.26% | $27,711,314.24 |
-| NIL/USDT:USDT | +13.61% | $1,802,753.89 |
-| LAB/USDT:USDT | +11.40% | $44,685,058.82 |
-| BEAT/USDT:USDT | +9.09% | $1,412,985.81 |
+| BSB/USDT:USDT | +54.05% | $55,478,546.14 |
+| EDEN/USDT:USDT | +35.02% | $27,867,787.77 |
+| NIL/USDT:USDT | +15.86% | $1,870,356.50 |
+| LAB/USDT:USDT | +11.91% | $44,846,330.25 |
+| BEAT/USDT:USDT | +10.65% | $1,448,999.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.52% | +4.49% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.13% | +4.10% |
-| NIL/USDT:USDT | below_1h_threshold | +4.04% | +4.02% |
-| FIDA/USDT:USDT | below_1h_threshold | +3.43% | +3.41% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.57% | +2.55% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.12% | +3.99% |
+| FIDA/USDT:USDT | below_1h_threshold | +3.50% | +3.37% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.32% | +3.19% |
+| TIA/USDT:USDT | below_1h_threshold | +2.62% | +2.50% |
+| SAHARA/USDT:USDT | below_1h_threshold | +2.60% | +2.47% |
 
 ## 5. 次に見るべき不足
 
