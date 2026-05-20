@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T16:30:50.571176+00:00
+- generated_at: 2026-05-20T16:35:04.952571+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4556**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T16:30:47.851736+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=77012.4
+- 更新: 2026-05-20T16:35:02.433581+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=77143.0
 - Funnel: target 763 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.0 >= 65=1, 4h RSI 73.7 >= 65=1
+- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +10.87% | $37,825,443.89 |
-| EDEN/USDT:USDT | +9.67% | $26,499,651.75 |
-| NAORIS/USDT:USDT | +4.18% | $1,073,830.31 |
-| LYN/USDT:USDT | +2.99% | $1,090,852.37 |
-| SAHARA/USDT:USDT | +1.21% | $1,096,656.33 |
+| EDEN/USDT:USDT | +12.07% | $26,818,120.43 |
+| BSB/USDT:USDT | +9.64% | $38,048,879.83 |
+| NAORIS/USDT:USDT | +3.13% | $1,094,655.44 |
+| LYN/USDT:USDT | +2.01% | $1,099,120.33 |
+| SAHARA/USDT:USDT | +1.89% | $1,103,761.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.13% | +4.66% |
-| LYN/USDT:USDT | below_1h_threshold | +3.00% | +3.53% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.22% | +1.75% |
-| B/USDT:USDT | below_1h_threshold | +1.10% | +1.63% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.09% | +1.62% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.13% | +3.49% |
+| LYN/USDT:USDT | below_1h_threshold | +1.99% | +2.35% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.90% | +2.26% |
+| B/USDT:USDT | below_1h_threshold | +1.53% | +1.89% |
+| WLD/USDT:USDT | below_1h_threshold | +1.34% | +1.71% |
 
 ## 5. 次に見るべき不足
 
