@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T07:39:02.954699+00:00
+- generated_at: 2026-05-20T07:43:37.694942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4529**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T07:39:00.471010+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77343.7
-- Funnel: target 762 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.6 >= 65=1, 4h RSI 71.5 >= 65=1
+- 更新: 2026-05-20T07:43:35.473842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77344.8
+- Funnel: target 762 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +37.51% | $8,113,905.97 |
-| FIDA/USDT:USDT | +31.35% | $1,819,740.72 |
-| PROMPT/USDT:USDT | +27.70% | $12,352,860.53 |
-| LIT/USDT:USDT | +24.36% | $7,807,912.62 |
-| EDEN/USDT:USDT | +22.05% | $21,138,211.32 |
+| FIDA/USDT:USDT | +32.91% | $1,845,206.12 |
+| SKYAI/USDT:USDT | +30.15% | $8,504,802.16 |
+| PROMPT/USDT:USDT | +29.09% | $12,356,025.75 |
+| LIT/USDT:USDT | +23.10% | $7,868,091.02 |
+| EDEN/USDT:USDT | +21.55% | $21,199,256.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +3.28% | +3.33% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.02% | +3.07% |
-| STRK/USDT:USDT | below_1h_threshold | +2.19% | +2.23% |
-| UP/USDT:USDT | below_1h_threshold | +1.88% | +1.93% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.23% | +1.27% |
+| SPACE/USDT:USDT | below_1h_threshold | +4.84% | +4.88% |
+| DASH/USDT:USDT | below_1h_threshold | +3.35% | +3.40% |
+| STRK/USDT:USDT | below_1h_threshold | +2.38% | +2.42% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.18% | +2.23% |
+| PROMPT/USDT:USDT | below_1h_threshold | +2.10% | +2.14% |
 
 ## 5. 次に見るべき不足
 
