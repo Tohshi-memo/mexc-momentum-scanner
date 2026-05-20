@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T16:52:16.119286+00:00
+- generated_at: 2026-05-20T16:56:48.078179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4560**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T16:52:13.082364+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=77280.0
+- 更新: 2026-05-20T16:56:45.479942+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=77242.1
 - Funnel: target 763 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.6 >= 65=1, 4h RSI 70.4 >= 65=1
+- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +21.35% | $28,509,995.79 |
-| BSB/USDT:USDT | +17.64% | $39,258,945.09 |
-| RLS/USDT:USDT | +4.45% | $1,081,715.92 |
-| SAHARA/USDT:USDT | +4.14% | $1,146,336.00 |
-| WLD/USDT:USDT | +3.99% | $20,136,948.21 |
+| EDEN/USDT:USDT | +18.54% | $28,908,422.82 |
+| BSB/USDT:USDT | +18.26% | $39,437,997.99 |
+| SAHARA/USDT:USDT | +3.98% | $1,152,598.00 |
+| RLS/USDT:USDT | +3.34% | $1,082,834.99 |
+| FIDA/USDT:USDT | +3.05% | $7,210,221.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +4.15% | +4.33% |
-| RLS/USDT:USDT | below_1h_threshold | +4.13% | +4.32% |
-| WLD/USDT:USDT | below_1h_threshold | +3.83% | +4.02% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.93% | +3.12% |
-| NIL/USDT:USDT | below_1h_threshold | +2.61% | +2.79% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.98% | +4.22% |
+| RLS/USDT:USDT | below_1h_threshold | +3.19% | +3.42% |
+| FIDA/USDT:USDT | below_1h_threshold | +3.05% | +3.28% |
+| WLD/USDT:USDT | below_1h_threshold | +2.77% | +3.00% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.70% | +2.94% |
 
 ## 5. 次に見るべき不足
 
