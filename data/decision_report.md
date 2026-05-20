@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T17:19:38.337066+00:00
+- generated_at: 2026-05-20T17:23:49.614552+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4562**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T17:19:36.096447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=77420.3
+- 更新: 2026-05-20T17:23:47.387114+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=77500.8
 - Funnel: target 763 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1
+- Strict後reject: 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +29.19% | $38,087,333.49 |
-| EDEN/USDT:USDT | +17.13% | $28,828,805.43 |
-| NIL/USDT:USDT | +4.86% | $1,526,014.26 |
-| PENDLE/USDT:USDT | +3.73% | $1,791,109.97 |
-| SATO/USDT:USDT | +3.22% | $3,201,311.62 |
+| BSB/USDT:USDT | +29.56% | $38,524,159.77 |
+| EDEN/USDT:USDT | +17.76% | $28,939,373.05 |
+| NIL/USDT:USDT | +5.30% | $1,532,783.43 |
+| SATO/USDT:USDT | +4.17% | $3,206,646.16 |
+| PENDLE/USDT:USDT | +4.03% | $1,803,958.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +2.47% | +2.32% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.30% | +2.15% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.26% | +2.10% |
-| NIL/USDT:USDT | below_1h_threshold | +1.60% | +1.44% |
-| DASH/USDT:USDT | below_1h_threshold | +1.56% | +1.41% |
+| DASH/USDT:USDT | below_1h_threshold | +3.56% | +3.31% |
+| SATO/USDT:USDT | below_1h_threshold | +3.26% | +3.00% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.97% | +2.71% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.11% | +1.85% |
+| NIL/USDT:USDT | below_1h_threshold | +2.03% | +1.77% |
 
 ## 5. 次に見るべき不足
 
