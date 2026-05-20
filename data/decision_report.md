@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T04:19:01.466609+00:00
+- generated_at: 2026-05-20T04:23:46.905642+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4522**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T04:18:59.525898+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=76783.0
+- 更新: 2026-05-20T04:23:44.898815+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=76788.7
 - Funnel: target 764 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +39.81% | $19,467,545.18 |
-| PROMPT/USDT:USDT | +32.88% | $12,987,759.62 |
-| LIT/USDT:USDT | +25.37% | $6,700,854.37 |
-| FIDA/USDT:USDT | +17.51% | $1,340,853.45 |
-| UP/USDT:USDT | +14.48% | $1,855,259.05 |
+| EDEN/USDT:USDT | +39.83% | $19,530,560.55 |
+| PROMPT/USDT:USDT | +30.70% | $12,996,291.78 |
+| LIT/USDT:USDT | +24.94% | $6,738,719.39 |
+| FIDA/USDT:USDT | +17.91% | $1,344,545.61 |
+| ZEST/USDT:USDT | +16.93% | $1,936,706.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +2.76% | +2.63% |
-| FIDA/USDT:USDT | below_1h_threshold | +2.63% | +2.51% |
-| KITE/USDT:USDT | below_1h_threshold | +2.38% | +2.26% |
-| UP/USDT:USDT | below_1h_threshold | +1.91% | +1.79% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.36% | +1.24% |
+| ZEST/USDT:USDT | below_1h_threshold | +4.90% | +4.76% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.98% | +2.85% |
+| KITE/USDT:USDT | below_1h_threshold | +2.57% | +2.44% |
+| UP/USDT:USDT | below_1h_threshold | +1.91% | +1.78% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.36% | +1.23% |
 
 ## 5. 次に見るべき不足
 
