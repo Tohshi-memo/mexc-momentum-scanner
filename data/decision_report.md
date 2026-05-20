@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T17:00:29.073948+00:00
+- generated_at: 2026-05-20T17:04:35.208188+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4560**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T17:00:27.054345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77279.3
+- 更新: 2026-05-20T17:04:33.219264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77261.0
 - Funnel: target 763 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +19.19% | $37,054,122.75 |
-| EDEN/USDT:USDT | +14.84% | $27,791,249.38 |
-| SAHARA/USDT:USDT | +4.17% | $1,131,917.89 |
-| NIL/USDT:USDT | +3.39% | $1,482,674.47 |
-| PENDLE/USDT:USDT | +3.22% | $1,752,672.83 |
+| BSB/USDT:USDT | +19.63% | $37,238,612.32 |
+| EDEN/USDT:USDT | +15.14% | $27,958,944.33 |
+| SAHARA/USDT:USDT | +4.36% | $1,144,615.00 |
+| WLD/USDT:USDT | +3.78% | $19,813,256.34 |
+| PENDLE/USDT:USDT | +3.42% | $1,761,737.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +0.59% | +0.62% |
-| BSB/USDT:USDT | below_1h_threshold | +0.34% | +0.37% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.23% | +0.26% |
-| NIL/USDT:USDT | below_1h_threshold | +0.17% | +0.20% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.12% | +0.15% |
+| SATO/USDT:USDT | below_1h_threshold | +1.54% | +1.60% |
+| WLD/USDT:USDT | below_1h_threshold | +0.87% | +0.92% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.79% | +0.84% |
+| BSB/USDT:USDT | below_1h_threshold | +0.75% | +0.80% |
+| FIDA/USDT:USDT | below_1h_threshold | +0.63% | +0.68% |
 
 ## 5. 次に見るべき不足
 
