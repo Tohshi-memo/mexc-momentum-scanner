@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-20T16:44:23.382023+00:00
+- generated_at: 2026-05-20T16:52:16.119286+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4558**
+- closed shadow trades: **4560**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4558, expectancy=-0.10%
-- 直近20件 MARKET基準: n=20, expectancy=-0.08%
+- 全期間 MARKET基準: n=4560, expectancy=-0.10%
+- 直近20件 MARKET基準: n=20, expectancy=-1.28%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.08% | **-0.08%** |
+| MARKET | 20/20 | 100.0% | -1.28% | **-1.28%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT | 19/20 | 95.0% | +0.97% | **+0.92%** |
+| LIMIT_7PCT | 5/20 | 25.0% | +2.80% | **+0.70%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
-| LIMIT_7PCT | 4/20 | 20.0% | +2.80% | **+0.56%** |
-| LIMIT_6PCT | 6/20 | 30.0% | +0.91% | **+0.27%** |
-| LIMIT_5PCT | 8/20 | 40.0% | +0.33% | **+0.13%** |
+| LIMIT_6PCT | 8/20 | 40.0% | +1.15% | **+0.46%** |
+| LIMIT_5PCT | 10/20 | 50.0% | +0.46% | **+0.23%** |
+| LIMIT_1PCT | 20/20 | 100.0% | +0.12% | **+0.12%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 10/20 | 50.0% | +1.81% | **+0.90%** |
-| LIMIT_9PCT_LONG | 2/20 | 10.0% | +4.55% | **+0.45%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.44% | **+0.44%** |
-| LIMIT_8PCT_LONG | 6/20 | 30.0% | +1.33% | **+0.40%** |
-| LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.83% | **+0.33%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.24% | **+1.24%** |
+| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.83% | **+1.13%** |
+| ASK_LONG | 20/20 | 100.0% | +0.76% | **+0.76%** |
+| LIMIT_2PCT_LONG | 12/20 | 60.0% | +0.99% | **+0.60%** |
+| LIMIT_4PCT_LONG | 8/20 | 40.0% | +1.22% | **+0.49%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$125.58** / 初期 $100.00 (+25.58%)
-- 確定: 520件 (Win 137 / Loss 176 / Flat 207) / skip 599件
-- 成長率目線: 平均log +0.000438 / 幾何平均 +0.044% per trade / maxDD +4.21%
+- 確定: 522件 (Win 137 / Loss 176 / Flat 209) / skip 599件
+- 成長率目線: 平均log +0.000436 / 幾何平均 +0.044% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EDEN/USDT:USDT `LIMIT_3PCT_LONG` TP_HIT account +1.00% 残高後 $125.58
+- 最新: EDEN/USDT:USDT `LIMIT_3PCT_LONG` EXPIRED account +0.00% 残高後 $125.58
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T16:44:20.555193+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=77313.0
+- 更新: 2026-05-20T16:52:13.082364+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77280.0
 - Funnel: target 763 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 75.9 >= 65=1
+- Strict後reject: 4h RSI 76.6 >= 65=1, 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +17.96% | $38,717,406.27 |
-| EDEN/USDT:USDT | +16.45% | $27,769,043.15 |
-| SAHARA/USDT:USDT | +3.11% | $1,116,937.15 |
-| WLD/USDT:USDT | +2.85% | $19,561,590.21 |
-| RLS/USDT:USDT | +2.42% | $1,078,540.23 |
+| EDEN/USDT:USDT | +21.35% | $28,509,995.79 |
+| BSB/USDT:USDT | +17.64% | $39,258,945.09 |
+| RLS/USDT:USDT | +4.45% | $1,081,715.92 |
+| SAHARA/USDT:USDT | +4.14% | $1,146,336.00 |
+| WLD/USDT:USDT | +3.99% | $20,136,948.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +3.33% | +3.48% |
-| WLD/USDT:USDT | below_1h_threshold | +2.97% | +3.12% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.44% | +2.58% |
-| RLS/USDT:USDT | below_1h_threshold | +2.42% | +2.57% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.99% | +2.13% |
+| SAHARA/USDT:USDT | below_1h_threshold | +4.15% | +4.33% |
+| RLS/USDT:USDT | below_1h_threshold | +4.13% | +4.32% |
+| WLD/USDT:USDT | below_1h_threshold | +3.83% | +4.02% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.93% | +3.12% |
+| NIL/USDT:USDT | below_1h_threshold | +2.61% | +2.79% |
 
 ## 5. 次に見るべき不足
 
