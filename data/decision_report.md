@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T19:43:45.160732+00:00
+- generated_at: 2026-05-20T19:49:01.058415+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4577**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T19:43:40.551770+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=77580.0
-- Funnel: target 759 → liquid 128 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 81.2 >= 65=1, 4h RSI 79.1 >= 65=1
+- 更新: 2026-05-20T19:48:55.480659+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=77607.9
+- Funnel: target 759 → liquid 128 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1, 4h RSI 81.2 >= 65=1, 4h RSI 80.1 >= 65=1, 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +35.15% | $60,017,289.01 |
-| EDEN/USDT:USDT | +33.91% | $28,592,391.73 |
-| FIDA/USDT:USDT | +22.61% | $8,616,347.35 |
-| NIL/USDT:USDT | +15.86% | $2,075,723.20 |
-| LAB/USDT:USDT | +11.99% | $45,631,086.61 |
+| BSB/USDT:USDT | +46.65% | $61,053,974.85 |
+| EDEN/USDT:USDT | +38.23% | $28,727,060.16 |
+| FIDA/USDT:USDT | +21.83% | $8,747,570.51 |
+| NIL/USDT:USDT | +18.63% | $2,107,039.90 |
+| BANANAS31/USDT:USDT | +9.55% | $4,014,529.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_relative_strength | +5.06% | +4.79% |
-| FIGHT/USDT:USDT | below_1h_threshold | +3.65% | +3.39% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.36% | +3.10% |
-| TIA/USDT:USDT | below_1h_threshold | +3.34% | +3.08% |
-| SATO/USDT:USDT | below_1h_threshold | +2.99% | +2.73% |
+| FIGHT/USDT:USDT | below_relative_strength | +5.28% | +4.98% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.72% | +4.42% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.32% | +4.02% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.13% | +2.83% |
+| TIA/USDT:USDT | below_1h_threshold | +2.75% | +2.45% |
 
 ## 5. 次に見るべき不足
 
