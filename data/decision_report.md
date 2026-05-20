@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T13:43:50.182128+00:00
+- generated_at: 2026-05-20T13:48:55.627426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4545**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T13:43:48.144594+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.78% price=76982.6
+- 更新: 2026-05-20T13:48:53.618346+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=77233.4
 - Funnel: target 763 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SATO/USDT:USDT | +73.87% | $2,508,765.61 |
-| FIDA/USDT:USDT | +47.61% | $4,669,951.39 |
-| BANANAS31/USDT:USDT | +31.97% | $2,511,829.00 |
-| PROMPT/USDT:USDT | +26.09% | $12,826,215.65 |
-| PLAY/USDT:USDT | +25.58% | $13,208,019.79 |
+| SATO/USDT:USDT | +77.34% | $2,531,581.65 |
+| FIDA/USDT:USDT | +50.32% | $4,722,124.18 |
+| BANANAS31/USDT:USDT | +32.47% | $2,585,926.88 |
+| PROMPT/USDT:USDT | +26.79% | $12,830,045.68 |
+| PLAY/USDT:USDT | +26.63% | $13,325,132.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +3.74% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.20% | +2.98% |
-| FIGHT/USDT:USDT | below_1h_threshold | +2.14% | +2.93% |
-| NIL/USDT:USDT | below_1h_threshold | +1.87% | +2.66% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +2.60% |
+| FIDA/USDT:USDT | below_1h_threshold | +3.80% | +4.26% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.78% | +4.24% |
+| HYPE/USDT:USDT | below_1h_threshold | +3.04% | +3.50% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.55% | +3.01% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.96% |
 
 ## 5. 次に見るべき不足
 
