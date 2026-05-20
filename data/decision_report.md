@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-20T16:35:04.952571+00:00
+- generated_at: 2026-05-20T16:39:05.923143+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4556**
+- closed shadow trades: **4557**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.52% / filled 20/20。**
-- 全期間 MARKET基準: n=4556, expectancy=-0.10%
+- 全期間 MARKET基準: n=4557, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+0.52%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT | 19/20 | 95.0% | +1.60% | **+1.52%** |
 | MARKET | 20/20 | 100.0% | +0.52% | **+0.52%** |
-| LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
+| LIMIT_7PCT | 3/20 | 15.0% | +2.80% | **+0.42%** |
+| LIMIT_BB3S | 7/18 | 38.9% | +1.04% | **+0.40%** |
 | LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
-| LIMIT_BB3S | 8/19 | 42.1% | +0.41% | **+0.17%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$124.34** / 初期 $100.00 (+24.34%)
-- 確定: 518件 (Win 136 / Loss 176 / Flat 206) / skip 599件
-- 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +4.21%
+- 確定: 519件 (Win 136 / Loss 176 / Flat 207) / skip 599件
+- 成長率目線: 平均log +0.000420 / 幾何平均 +0.042% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EDEN/USDT:USDT `LIMIT_3PCT_LONG` EXPIRED account +0.00% 残高後 $124.34
+- 最新: BSB/USDT:USDT `LIMIT_3PCT_LONG` EXPIRED account +0.00% 残高後 $124.34
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T16:35:02.433581+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=77143.0
+- 更新: 2026-05-20T16:39:03.255592+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=77239.2
 - Funnel: target 763 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 67.8 >= 65=1
+- Strict後reject: 4h RSI 69.3 >= 65=1, 4h RSI 74.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +12.07% | $26,818,120.43 |
-| BSB/USDT:USDT | +9.64% | $38,048,879.83 |
-| NAORIS/USDT:USDT | +3.13% | $1,094,655.44 |
-| LYN/USDT:USDT | +2.01% | $1,099,120.33 |
-| SAHARA/USDT:USDT | +1.89% | $1,103,761.42 |
+| BSB/USDT:USDT | +15.64% | $38,369,826.06 |
+| EDEN/USDT:USDT | +10.14% | $27,110,598.49 |
+| SAHARA/USDT:USDT | +3.19% | $1,111,878.92 |
+| WLD/USDT:USDT | +2.56% | $19,154,830.41 |
+| NAORIS/USDT:USDT | +2.48% | $1,102,457.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.13% | +3.49% |
-| LYN/USDT:USDT | below_1h_threshold | +1.99% | +2.35% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.90% | +2.26% |
-| B/USDT:USDT | below_1h_threshold | +1.53% | +1.89% |
-| WLD/USDT:USDT | below_1h_threshold | +1.34% | +1.71% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.41% | +3.65% |
+| WLD/USDT:USDT | below_1h_threshold | +2.53% | +2.76% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.49% | +2.72% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.94% | +2.18% |
+| LYN/USDT:USDT | below_1h_threshold | +1.54% | +1.77% |
 
 ## 5. 次に見るべき不足
 
