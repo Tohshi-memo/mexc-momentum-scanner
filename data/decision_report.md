@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T23:18:45.927956+00:00
+- generated_at: 2026-05-20T23:23:50.082086+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4584**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T23:18:43.896578+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=77382.8
+- 更新: 2026-05-20T23:23:48.055127+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=77375.2
 - Funnel: target 759 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +39.24% | $27,592,108.01 |
-| NIL/USDT:USDT | +18.74% | $2,579,140.38 |
-| FIDA/USDT:USDT | +16.88% | $11,233,546.64 |
-| JTO/USDT:USDT | +12.75% | $2,613,048.09 |
-| BANANAS31/USDT:USDT | +11.65% | $4,050,236.25 |
+| EDEN/USDT:USDT | +36.84% | $27,752,739.00 |
+| NIL/USDT:USDT | +18.90% | $2,592,390.02 |
+| FIDA/USDT:USDT | +14.71% | $11,293,170.12 |
+| JTO/USDT:USDT | +12.16% | $2,649,408.61 |
+| BANANAS31/USDT:USDT | +11.58% | $4,057,072.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.45% | +3.56% |
-| JTO/USDT:USDT | below_1h_threshold | +1.45% | +1.56% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.23% | +1.34% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +0.87% | +0.98% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.74% | +0.85% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +1.84% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.97% | +1.08% |
+| JTO/USDT:USDT | below_1h_threshold | +0.92% | +1.04% |
+| DASH/USDT:USDT | below_1h_threshold | +0.81% | +0.93% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +0.81% | +0.93% |
 
 ## 5. 次に見るべき不足
 
