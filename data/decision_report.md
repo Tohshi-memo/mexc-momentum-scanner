@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T03:44:08.845219+00:00
+- generated_at: 2026-05-20T03:48:49.106888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4519**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T03:44:04.214778+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=76710.8
-- Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1
+- 更新: 2026-05-20T03:48:44.444264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=76722.9
+- Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 66.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROMPT/USDT:USDT | +35.37% | $12,894,523.91 |
-| EDEN/USDT:USDT | +29.38% | $18,128,364.31 |
-| LIT/USDT:USDT | +24.36% | $6,169,787.87 |
-| FIDA/USDT:USDT | +14.70% | $1,347,830.67 |
-| ZEST/USDT:USDT | +14.55% | $1,881,884.29 |
+| EDEN/USDT:USDT | +36.04% | $18,314,432.36 |
+| PROMPT/USDT:USDT | +34.99% | $12,905,124.37 |
+| LIT/USDT:USDT | +24.22% | $6,207,535.44 |
+| ZEST/USDT:USDT | +15.24% | $1,890,399.13 |
+| FIDA/USDT:USDT | +14.30% | $1,351,474.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUAI/USDT:USDT | below_1h_threshold | +4.87% | +4.80% |
-| EDEN/USDT:USDT | below_1h_threshold | +4.75% | +4.67% |
-| LIT/USDT:USDT | below_1h_threshold | +4.62% | +4.55% |
-| VVV/USDT:USDT | below_1h_threshold | +2.68% | +2.61% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.98% | +1.90% |
+| LIT/USDT:USDT | below_1h_threshold | +4.29% | +4.20% |
+| BLUAI/USDT:USDT | below_1h_threshold | +3.98% | +3.89% |
+| VVV/USDT:USDT | below_1h_threshold | +2.97% | +2.88% |
+| INJ/USDT:USDT | below_1h_threshold | +1.89% | +1.80% |
+| HOME/USDT:USDT | below_1h_threshold | +1.85% | +1.76% |
 
 ## 5. 次に見るべき不足
 
