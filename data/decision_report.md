@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T16:08:50.267777+00:00
+- generated_at: 2026-05-20T16:14:08.510519+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4553**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T16:08:47.945249+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77490.1
+- 更新: 2026-05-20T16:14:06.493653+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77484.9
 - Funnel: target 763 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LYN/USDT:USDT | +3.31% | $1,036,240.66 |
-| EDEN/USDT:USDT | +3.25% | $25,579,399.62 |
-| ZEST/USDT:USDT | +3.14% | $1,394,829.00 |
-| BSB/USDT:USDT | +2.31% | $37,005,668.48 |
-| PENGU/USDT:USDT | +1.91% | $28,424,436.94 |
+| ZEST/USDT:USDT | +3.47% | $1,396,807.86 |
+| LYN/USDT:USDT | +2.85% | $1,052,999.64 |
+| EDEN/USDT:USDT | +2.61% | $25,695,372.33 |
+| TONCOIN/USDT:USDT | +2.52% | $59,405,161.92 |
+| PENGU/USDT:USDT | +2.34% | $28,548,814.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +3.61% | +3.52% |
-| LYN/USDT:USDT | below_1h_threshold | +3.31% | +3.23% |
-| ZEST/USDT:USDT | below_1h_threshold | +3.15% | +3.06% |
+| ZEST/USDT:USDT | below_1h_threshold | +3.48% | +3.40% |
+| LYN/USDT:USDT | below_1h_threshold | +2.86% | +2.78% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.61% | +2.53% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.52% | +2.44% |
 | BSB/USDT:USDT | below_1h_threshold | +2.39% | +2.31% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.91% | +1.83% |
 
 ## 5. 次に見るべき不足
 
