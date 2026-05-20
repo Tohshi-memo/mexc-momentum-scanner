@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T07:48:53.271005+00:00
+- generated_at: 2026-05-20T07:53:06.860580+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4531**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T07:48:50.039051+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=77245.1
-- Funnel: target 762 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-05-20T07:53:04.810569+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=77231.6
+- Funnel: target 762 → liquid 133 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1, 4h RSI 71.6 >= 65=1
+- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 72.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +38.33% | $1,961,160.53 |
-| PROMPT/USDT:USDT | +28.58% | $12,358,864.28 |
-| SKYAI/USDT:USDT | +26.60% | $8,945,158.95 |
-| LIT/USDT:USDT | +22.33% | $7,903,729.34 |
-| EDEN/USDT:USDT | +20.90% | $21,295,112.18 |
+| FIDA/USDT:USDT | +36.67% | $2,021,050.53 |
+| PROMPT/USDT:USDT | +27.64% | $12,361,746.96 |
+| SKYAI/USDT:USDT | +26.68% | $9,155,537.28 |
+| LIT/USDT:USDT | +22.30% | $7,912,042.70 |
+| SPACE/USDT:USDT | +20.77% | $1,200,733.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +2.79% | +2.97% |
-| STRK/USDT:USDT | below_1h_threshold | +1.99% | +2.16% |
-| UP/USDT:USDT | below_1h_threshold | +1.91% | +2.09% |
-| PROMPT/USDT:USDT | below_1h_threshold | +1.70% | +1.87% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.66% | +1.83% |
+| DASH/USDT:USDT | below_1h_threshold | +2.75% | +2.94% |
+| UP/USDT:USDT | below_1h_threshold | +2.20% | +2.39% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.65% | +1.84% |
+| STRK/USDT:USDT | below_1h_threshold | +1.43% | +1.62% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.40% | +1.59% |
 
 ## 5. 次に見るべき不足
 
