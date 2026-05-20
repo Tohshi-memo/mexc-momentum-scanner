@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-20T01:43:50.987922+00:00
+- generated_at: 2026-05-20T01:48:13.048712+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4517**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-20T01:43:45.925811+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=76541.5
+- 更新: 2026-05-20T01:48:06.546842+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=76569.6
 - Funnel: target 764 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1
+- Strict後reject: 4h RSI 71.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROMPT/USDT:USDT | +39.63% | $12,601,469.84 |
-| EDEN/USDT:USDT | +22.14% | $17,510,042.03 |
-| LIT/USDT:USDT | +17.10% | $4,900,541.46 |
-| BANANAS31/USDT:USDT | +16.87% | $1,577,854.21 |
-| ZEST/USDT:USDT | +13.56% | $1,708,522.44 |
+| PROMPT/USDT:USDT | +40.58% | $12,621,622.59 |
+| EDEN/USDT:USDT | +22.57% | $17,530,422.47 |
+| BANANAS31/USDT:USDT | +16.86% | $1,582,458.52 |
+| LIT/USDT:USDT | +16.52% | $4,927,421.04 |
+| ZEST/USDT:USDT | +15.24% | $1,712,638.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +2.63% | +2.91% |
-| UB/USDT:USDT | below_1h_threshold | +2.36% | +2.65% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.25% | +2.54% |
-| KITE/USDT:USDT | below_1h_threshold | +1.75% | +2.03% |
-| FIGHT/USDT:USDT | below_1h_threshold | +1.70% | +1.99% |
+| UB/USDT:USDT | below_1h_threshold | +3.09% | +3.34% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.78% | +3.03% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.22% | +2.47% |
+| FIGHT/USDT:USDT | below_1h_threshold | +2.02% | +2.27% |
+| ZEST/USDT:USDT | below_1h_threshold | +1.82% | +2.07% |
 
 ## 5. 次に見るべき不足
 
