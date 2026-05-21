@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T23:48:47.484488+00:00
+- generated_at: 2026-05-21T23:54:03.455563+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4657**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T23:48:45.181775+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77657.0
+- 更新: 2026-05-21T23:54:01.140807+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=77686.4
 - Funnel: target 763 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
+- Strict後reject: 4h RSI 66.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +17.47% | $1,689,844.26 |
-| PLUME/USDT:USDT | +11.31% | $1,457,307.81 |
-| GRASS/USDT:USDT | +11.20% | $3,037,422.33 |
-| RIVER/USDT:USDT | +7.48% | $10,050,935.88 |
-| LIT/USDT:USDT | +6.72% | $9,384,195.16 |
+| PEAQ/USDT:USDT | +14.11% | $1,707,209.69 |
+| GRASS/USDT:USDT | +12.12% | $3,046,374.14 |
+| PLUME/USDT:USDT | +11.24% | $1,461,070.48 |
+| RIVER/USDT:USDT | +7.42% | $10,062,765.70 |
+| LIT/USDT:USDT | +7.24% | $9,395,067.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +1.15% | +1.06% |
-| JTO/USDT:USDT | below_1h_threshold | +1.05% | +0.97% |
-| BABY/USDT:USDT | below_1h_threshold | +0.78% | +0.70% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.72% | +0.64% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.64% | +0.55% |
+| BABY/USDT:USDT | below_1h_threshold | +0.97% | +0.84% |
+| JTO/USDT:USDT | below_1h_threshold | +0.88% | +0.76% |
+| SPX/USDT:USDT | below_1h_threshold | +0.81% | +0.68% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.73% | +0.61% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.72% | +0.60% |
 
 ## 5. 次に見るべき不足
 
