@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T20:38:48.840377+00:00
+- generated_at: 2026-05-21T20:44:11.470210+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4653**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T20:38:46.800563+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77670.3
+- 更新: 2026-05-21T20:44:09.429708+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77653.1
 - Funnel: target 763 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIVER/USDT:USDT | +9.43% | $8,078,851.06 |
-| GRASS/USDT:USDT | +7.47% | $1,886,504.38 |
-| NEAR/USDT:USDT | +6.53% | $37,206,431.66 |
-| JTO/USDT:USDT | +6.14% | $3,275,954.49 |
-| ARKM/USDT:USDT | +6.08% | $1,000,843.36 |
+| RIVER/USDT:USDT | +8.08% | $8,283,306.58 |
+| GRASS/USDT:USDT | +7.82% | $1,905,751.61 |
+| NEAR/USDT:USDT | +6.97% | $37,428,468.33 |
+| ARKM/USDT:USDT | +5.85% | $1,012,256.45 |
+| JTO/USDT:USDT | +5.61% | $3,284,003.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAS/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
-| NIL/USDT:USDT | below_1h_threshold | +1.37% | +1.36% |
-| JTO/USDT:USDT | below_1h_threshold | +1.33% | +1.32% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.32% | +1.30% |
-| BILL/USDT:USDT | below_1h_threshold | +1.18% | +1.17% |
+| BILL/USDT:USDT | below_1h_threshold | +3.23% | +3.24% |
+| LIT/USDT:USDT | below_1h_threshold | +2.63% | +2.63% |
+| KAS/USDT:USDT | below_1h_threshold | +1.56% | +1.57% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.41% | +1.42% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.40% | +1.41% |
 
 ## 5. 次に見るべき不足
 
