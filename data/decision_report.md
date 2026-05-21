@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T18:53:48.860691+00:00
+- generated_at: 2026-05-21T18:58:51.236375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4652**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T18:53:46.789624+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=77388.0
+- 更新: 2026-05-21T18:58:49.179465+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.68% price=77301.3
 - Funnel: target 763 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIVER/USDT:USDT | +6.97% | $5,224,923.94 |
-| GRASS/USDT:USDT | +3.68% | $1,605,590.44 |
-| JTO/USDT:USDT | +3.56% | $3,764,046.43 |
-| SUI/USDT:USDT | +3.50% | $172,503,704.44 |
-| INJ/USDT:USDT | +3.37% | $26,541,048.80 |
+| RIVER/USDT:USDT | +6.45% | $5,287,055.98 |
+| JTO/USDT:USDT | +3.82% | $3,779,540.14 |
+| INJ/USDT:USDT | +3.77% | $26,829,729.60 |
+| SUI/USDT:USDT | +3.64% | $173,663,454.84 |
+| UAI/USDT:USDT | +3.17% | $1,410,389.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +2.85% | +3.42% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +2.00% |
-| SPACEX/USDT:USDT | below_1h_threshold | +0.96% | +1.53% |
-| JTO/USDT:USDT | below_1h_threshold | +0.82% | +1.39% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.90% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.35% | +3.03% |
+| JTO/USDT:USDT | below_1h_threshold | +1.13% | +1.81% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.80% |
+| SPACEX/USDT:USDT | below_1h_threshold | +0.99% | +1.67% |
+| XPL/USDT:USDT | below_1h_threshold | +0.80% | +1.48% |
 
 ## 5. 次に見るべき不足
 
