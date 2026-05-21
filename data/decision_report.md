@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T19:58:56.239488+00:00
+- generated_at: 2026-05-21T20:05:02.026891+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4653**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T19:58:54.185468+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=77680.1
-- Funnel: target 763 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-21T20:04:59.994861+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77634.8
+- Funnel: target 763 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIVER/USDT:USDT | +8.26% | $6,846,711.44 |
-| GRASS/USDT:USDT | +6.55% | $1,799,093.10 |
-| NEAR/USDT:USDT | +6.31% | $33,977,320.20 |
-| INJ/USDT:USDT | +5.64% | $27,114,379.93 |
-| TIA/USDT:USDT | +5.33% | $5,485,469.01 |
+| RIVER/USDT:USDT | +9.11% | $6,868,014.57 |
+| NEAR/USDT:USDT | +6.97% | $34,075,157.86 |
+| WLD/USDT:USDT | +6.15% | $22,204,768.09 |
+| GRASS/USDT:USDT | +5.95% | $1,795,793.49 |
+| INJ/USDT:USDT | +5.38% | $26,221,315.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +4.74% | +4.32% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.96% | +2.54% |
-| WLD/USDT:USDT | below_1h_threshold | +2.57% | +2.15% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.14% |
-| AERO/USDT:USDT | below_1h_threshold | +2.32% | +1.90% |
+| WLD/USDT:USDT | below_1h_threshold | +0.69% | +0.72% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.52% | +0.55% |
+| DOT/USDT:USDT | below_1h_threshold | +0.38% | +0.42% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.34% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.33% |
 
 ## 5. 次に見るべき不足
 
