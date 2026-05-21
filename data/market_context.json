@@ -1,521 +1,8 @@
 {
-  "updated_at": "2026-05-21T17:59:17.034448+00:00",
+  "updated_at": "2026-05-21T18:04:16.839446+00:00",
   "max_records": 288,
   "record_count": 288,
   "records": [
-    {
-      "timestamp": "2026-05-20T18:04:08.019174+00:00",
-      "cycle": 1,
-      "btc": {
-        "symbol": "BTC/USDT:USDT",
-        "price": 77505.7,
-        "change_1h_pct": -0.0406,
-        "regime": "STAGNANT",
-        "signal_active": true
-      },
-      "scan": {
-        "available": true,
-        "thresholds": {
-          "alt_surge_pct": 5.0,
-          "relative_strength_pct": 5.0,
-          "min_volume_usdt": 1000000.0,
-          "max_ohlcv_checks": 50
-        },
-        "symbol_counts": {
-          "target_symbols": 759,
-          "tickers_fetched": 759,
-          "usdt_swap_tickers": 759,
-          "liquid_symbols": 126,
-          "pre_candidates": 50,
-          "ohlcv_checked": 50,
-          "surge_candidates": 1
-        },
-        "top_by_24h": [
-          {
-            "symbol": "BSB/USDT:USDT",
-            "last": 1.1734,
-            "change_24h_pct": 34.28,
-            "volume_24h_usdt": 39136041.3
-          },
-          {
-            "symbol": "EDEN/USDT:USDT",
-            "last": 0.1008,
-            "change_24h_pct": 15.91,
-            "volume_24h_usdt": 27661877.23
-          },
-          {
-            "symbol": "LAB/USDT:USDT",
-            "last": 4.7275,
-            "change_24h_pct": 9.11,
-            "volume_24h_usdt": 41521397.16
-          },
-          {
-            "symbol": "NIL/USDT:USDT",
-            "last": 0.0608,
-            "change_24h_pct": 7.84,
-            "volume_24h_usdt": 1619748.27
-          },
-          {
-            "symbol": "SPACE/USDT:USDT",
-            "last": 0.0096,
-            "change_24h_pct": 6.67,
-            "volume_24h_usdt": 1312335.36
-          },
-          {
-            "symbol": "ZEC/USDT:USDT",
-            "last": 656.45,
-            "change_24h_pct": 3.75,
-            "volume_24h_usdt": 501987217.34
-          },
-          {
-            "symbol": "PYTH/USDT:USDT",
-            "last": 0.0423,
-            "change_24h_pct": 3.65,
-            "volume_24h_usdt": 1310975.11
-          },
-          {
-            "symbol": "DASH/USDT:USDT",
-            "last": 49.83,
-            "change_24h_pct": 3.36,
-            "volume_24h_usdt": 10741218.33
-          },
-          {
-            "symbol": "BANANAS31/USDT:USDT",
-            "last": 0.0128,
-            "change_24h_pct": 3.21,
-            "volume_24h_usdt": 3534999.04
-          },
-          {
-            "symbol": "XMR/USDT:USDT",
-            "last": 405.42,
-            "change_24h_pct": 2.57,
-            "volume_24h_usdt": 5229579.1
-          },
-          {
-            "symbol": "PENDLE/USDT:USDT",
-            "last": 1.8776,
-            "change_24h_pct": 2.5,
-            "volume_24h_usdt": 1808683.11
-          },
-          {
-            "symbol": "RON/USDT:USDT",
-            "last": 0.1058,
-            "change_24h_pct": 2.12,
-            "volume_24h_usdt": 3675344.29
-          },
-          {
-            "symbol": "WLD/USDT:USDT",
-            "last": 0.2503,
-            "change_24h_pct": 1.99,
-            "volume_24h_usdt": 20594697.89
-          },
-          {
-            "symbol": "FIDA/USDT:USDT",
-            "last": 0.0301,
-            "change_24h_pct": 1.96,
-            "volume_24h_usdt": 7437391.8
-          },
-          {
-            "symbol": "PENGU/USDT:USDT",
-            "last": 0.0094,
-            "change_24h_pct": 1.95,
-            "volume_24h_usdt": 29128391.3
-          },
-          {
-            "symbol": "TONCOIN/USDT:USDT",
-            "last": 2.0581,
-            "change_24h_pct": 1.94,
-            "volume_24h_usdt": 67365875.09
-          },
-          {
-            "symbol": "RAVE/USDT:USDT",
-            "last": 0.6061,
-            "change_24h_pct": 1.84,
-            "volume_24h_usdt": 2854726.11
-          },
-          {
-            "symbol": "FOGO/USDT:USDT",
-            "last": 0.0163,
-            "change_24h_pct": 1.81,
-            "volume_24h_usdt": 2041217.33
-          },
-          {
-            "symbol": "SATO/USDT:USDT",
-            "last": 0.8502,
-            "change_24h_pct": 1.68,
-            "volume_24h_usdt": 3229917.22
-          },
-          {
-            "symbol": "SAHARA/USDT:USDT",
-            "last": 0.0375,
-            "change_24h_pct": 1.51,
-            "volume_24h_usdt": 1224712.5
-          }
-        ],
-        "near_misses": [
-          {
-            "symbol": "SATO/USDT:USDT",
-            "last": 0.8502,
-            "change_24h_pct": 1.68,
-            "volume_24h_usdt": 3229917.22,
-            "close_1h": 0.8502,
-            "change_1h_pct": 0.9979,
-            "relative_strength_pct": 1.0385,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "BANANAS31/USDT:USDT",
-            "last": 0.0128,
-            "change_24h_pct": 3.21,
-            "volume_24h_usdt": 3534999.04,
-            "close_1h": 0.0128,
-            "change_1h_pct": 0.8356,
-            "relative_strength_pct": 0.8762,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "EDEN/USDT:USDT",
-            "last": 0.1008,
-            "change_24h_pct": 15.91,
-            "volume_24h_usdt": 27661877.23,
-            "close_1h": 0.1007,
-            "change_1h_pct": 0.8313,
-            "relative_strength_pct": 0.872,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "ZEC/USDT:USDT",
-            "last": 656.45,
-            "change_24h_pct": 3.75,
-            "volume_24h_usdt": 501987217.34,
-            "close_1h": 656.91,
-            "change_1h_pct": 0.4711,
-            "relative_strength_pct": 0.5117,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "ZRO/USDT:USDT",
-            "last": 1.349,
-            "change_24h_pct": 0.22,
-            "volume_24h_usdt": 1465497.57,
-            "close_1h": 1.347,
-            "change_1h_pct": 0.3726,
-            "relative_strength_pct": 0.4132,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "BEAT/USDT:USDT",
-            "last": 0.5957,
-            "change_24h_pct": 0.28,
-            "volume_24h_usdt": 1339415.82,
-            "close_1h": 0.5958,
-            "change_1h_pct": 0.303,
-            "relative_strength_pct": 0.3437,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "DASH/USDT:USDT",
-            "last": 49.83,
-            "change_24h_pct": 3.36,
-            "volume_24h_usdt": 10741218.33,
-            "close_1h": 49.82,
-            "change_1h_pct": 0.2818,
-            "relative_strength_pct": 0.3224,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "XPL/USDT:USDT",
-            "last": 0.0868,
-            "change_24h_pct": 0.46,
-            "volume_24h_usdt": 2164713.67,
-            "close_1h": 0.0867,
-            "change_1h_pct": 0.2312,
-            "relative_strength_pct": 0.2718,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "PYTH/USDT:USDT",
-            "last": 0.0423,
-            "change_24h_pct": 3.65,
-            "volume_24h_usdt": 1310975.11,
-            "close_1h": 0.0423,
-            "change_1h_pct": 0.2132,
-            "relative_strength_pct": 0.2538,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "ZEN/USDT:USDT",
-            "last": 6.621,
-            "change_24h_pct": 1.51,
-            "volume_24h_usdt": 1990767.25,
-            "close_1h": 6.617,
-            "change_1h_pct": 0.212,
-            "relative_strength_pct": 0.2527,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "WLD/USDT:USDT",
-            "last": 0.2503,
-            "change_24h_pct": 1.99,
-            "volume_24h_usdt": 20594697.89,
-            "close_1h": 0.2503,
-            "change_1h_pct": 0.2002,
-            "relative_strength_pct": 0.2408,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "SILVER/USDT:USDT",
-            "last": 75.96,
-            "change_24h_pct": 0.23,
-            "volume_24h_usdt": 1131677266.16,
-            "close_1h": 75.99,
-            "change_1h_pct": 0.145,
-            "relative_strength_pct": 0.1856,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "STRK/USDT:USDT",
-            "last": 0.0442,
-            "change_24h_pct": 1.42,
-            "volume_24h_usdt": 1392777.35,
-            "close_1h": 0.0442,
-            "change_1h_pct": 0.1359,
-            "relative_strength_pct": 0.1766,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "RIVER/USDT:USDT",
-            "last": 6.208,
-            "change_24h_pct": 0.19,
-            "volume_24h_usdt": 6253367.95,
-            "close_1h": 6.212,
-            "change_1h_pct": 0.1289,
-            "relative_strength_pct": 0.1696,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "NEAR/USDT:USDT",
-            "last": 1.695,
-            "change_24h_pct": 0.47,
-            "volume_24h_usdt": 19318828.41,
-            "close_1h": 1.694,
-            "change_1h_pct": 0.1182,
-            "relative_strength_pct": 0.1588,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "RON/USDT:USDT",
-            "last": 0.1058,
-            "change_24h_pct": 2.12,
-            "volume_24h_usdt": 3675344.29,
-            "close_1h": 0.1057,
-            "change_1h_pct": 0.0947,
-            "relative_strength_pct": 0.1353,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "PENDLE/USDT:USDT",
-            "last": 1.8776,
-            "change_24h_pct": 2.5,
-            "volume_24h_usdt": 1808683.11,
-            "close_1h": 1.8773,
-            "change_1h_pct": 0.0906,
-            "relative_strength_pct": 0.1313,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "SPACE/USDT:USDT",
-            "last": 0.0096,
-            "change_24h_pct": 6.67,
-            "volume_24h_usdt": 1312335.36,
-            "close_1h": 0.0096,
-            "change_1h_pct": 0.0733,
-            "relative_strength_pct": 0.114,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "NAORIS/USDT:USDT",
-            "last": 0.0344,
-            "change_24h_pct": 0.64,
-            "volume_24h_usdt": 1092862.97,
-            "close_1h": 0.0344,
-            "change_1h_pct": 0.0582,
-            "relative_strength_pct": 0.0988,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "JASMY/USDT:USDT",
-            "last": 0.0057,
-            "change_24h_pct": 0.17,
-            "volume_24h_usdt": 1517001.67,
-            "close_1h": 0.0056,
-            "change_1h_pct": 0.0531,
-            "relative_strength_pct": 0.0938,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "1000BONK/USDT:USDT",
-            "last": 0.0061,
-            "change_24h_pct": 0.83,
-            "volume_24h_usdt": 1765408.09,
-            "close_1h": 0.0061,
-            "change_1h_pct": 0.049,
-            "relative_strength_pct": 0.0896,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "PIPPIN/USDT:USDT",
-            "last": 0.0232,
-            "change_24h_pct": 0.17,
-            "volume_24h_usdt": 1060625.06,
-            "close_1h": 0.0232,
-            "change_1h_pct": 0.0432,
-            "relative_strength_pct": 0.0838,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "BCH/USDT:USDT",
-            "last": 372.25,
-            "change_24h_pct": 0.65,
-            "volume_24h_usdt": 57453226.58,
-            "close_1h": 372.0,
-            "change_1h_pct": 0.0269,
-            "relative_strength_pct": 0.0675,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "DOGE/USDT:USDT",
-            "last": 0.1045,
-            "change_24h_pct": 0.3,
-            "volume_24h_usdt": 102188549.23,
-            "close_1h": 0.1044,
-            "change_1h_pct": -0.0191,
-            "relative_strength_pct": 0.0215,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "CRV/USDT:USDT",
-            "last": 0.2389,
-            "change_24h_pct": 0.25,
-            "volume_24h_usdt": 1431173.73,
-            "close_1h": 0.2389,
-            "change_1h_pct": -0.0418,
-            "relative_strength_pct": -0.0012,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "KAS/USDT:USDT",
-            "last": 0.0349,
-            "change_24h_pct": 0.25,
-            "volume_24h_usdt": 1489597.24,
-            "close_1h": 0.0348,
-            "change_1h_pct": -0.0574,
-            "relative_strength_pct": -0.0167,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "FOGO/USDT:USDT",
-            "last": 0.0163,
-            "change_24h_pct": 1.81,
-            "volume_24h_usdt": 2041217.33,
-            "close_1h": 0.0163,
-            "change_1h_pct": -0.0615,
-            "relative_strength_pct": -0.0209,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "MUSTOCK/USDT:USDT",
-            "last": 730.73,
-            "change_24h_pct": 0.65,
-            "volume_24h_usdt": 7994894.87,
-            "close_1h": 730.34,
-            "change_1h_pct": -0.067,
-            "relative_strength_pct": -0.0264,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "DOT/USDT:USDT",
-            "last": 1.251,
-            "change_24h_pct": 0.16,
-            "volume_24h_usdt": 3597189.15,
-            "close_1h": 1.249,
-            "change_1h_pct": -0.08,
-            "relative_strength_pct": -0.0394,
-            "reject_reason": "below_1h_threshold"
-          },
-          {
-            "symbol": "SOL/USDT:USDT",
-            "last": 86.43,
-            "change_24h_pct": 0.64,
-            "volume_24h_usdt": 982577870.38,
-            "close_1h": 86.4,
-            "change_1h_pct": -0.081,
-            "relative_strength_pct": -0.0403,
-            "reject_reason": "below_1h_threshold"
-          }
-        ],
-        "reject_counts": {
-          "below_1h_threshold": 49,
-          "below_relative_strength": 0,
-          "invalid_ohlcv": 0,
-          "errors": 0
-        },
-        "checked_1h_summary": {
-          "count": 50,
-          "min": -2.6667,
-          "p50": -0.0418,
-          "p90": 0.3726,
-          "p95": 0.8313,
-          "max": 7.0738,
-          "avg": 0.0602
-        },
-        "relative_strength_summary": {
-          "count": 50,
-          "min": -2.626,
-          "p50": -0.0012,
-          "p90": 0.4132,
-          "p95": 0.872,
-          "max": 7.1144,
-          "avg": 0.1008
-        }
-      },
-      "analysis": {
-        "analyzed": 1,
-        "confirmed_strict": 1,
-        "rejected_strict": 0,
-        "reject_reason_counts": {},
-        "data_coverage": {
-          "total": 1,
-          "funding_rate": 1,
-          "open_interest_usd": 0,
-          "oi_change_pct": 0,
-          "long_short_ratio": 0,
-          "rsi_15m": 1,
-          "daily_direction": 1
-        },
-        "top_analyzed": [
-          {
-            "symbol": "LAB/USDT:USDT",
-            "price": 4.7275,
-            "change_1h_pct": 7.0738,
-            "relative_strength_pct": 7.1144,
-            "volume_24h_usdt": 41521397.16,
-            "confirmed_strict": true,
-            "reject_reasons": [],
-            "rsi": 67.9797,
-            "rsi_4h": 53.8365,
-            "atr_pct": 4.1348,
-            "funding_rate": 0.005,
-            "oi_change_pct": null,
-            "long_short_ratio": null,
-            "volume_trend": "FLAT",
-            "bb_width_pct": 13.2847,
-            "ma20_deviation_pct": 11.3794,
-            "daily_direction": "RED"
-          }
-        ]
-      }
-    },
     {
       "timestamp": "2026-05-20T18:09:49.433660+00:00",
       "cycle": 1,
@@ -147513,6 +147000,499 @@
           "p95": 3.2839,
           "max": 4.6115,
           "avg": 1.687
+        }
+      },
+      "analysis": {
+        "analyzed": 0,
+        "confirmed_strict": 0,
+        "rejected_strict": 0,
+        "reject_reason_counts": {},
+        "data_coverage": {
+          "total": 0,
+          "funding_rate": 0,
+          "open_interest_usd": 0,
+          "oi_change_pct": 0,
+          "long_short_ratio": 0,
+          "rsi_15m": 0,
+          "daily_direction": 0
+        },
+        "top_analyzed": []
+      }
+    },
+    {
+      "timestamp": "2026-05-21T18:04:16.839446+00:00",
+      "cycle": 1,
+      "btc": {
+        "symbol": "BTC/USDT:USDT",
+        "price": 77754.0,
+        "change_1h_pct": -0.0988,
+        "regime": "STAGNANT",
+        "signal_active": true
+      },
+      "scan": {
+        "available": true,
+        "thresholds": {
+          "alt_surge_pct": 5.0,
+          "relative_strength_pct": 5.0,
+          "min_volume_usdt": 1000000.0,
+          "max_ohlcv_checks": 50
+        },
+        "symbol_counts": {
+          "target_symbols": 763,
+          "tickers_fetched": 763,
+          "usdt_swap_tickers": 763,
+          "liquid_symbols": 139,
+          "pre_candidates": 50,
+          "ohlcv_checked": 50,
+          "surge_candidates": 0
+        },
+        "top_by_24h": [
+          {
+            "symbol": "GRASS/USDT:USDT",
+            "last": 0.4,
+            "change_24h_pct": 8.28,
+            "volume_24h_usdt": 1296788.35
+          },
+          {
+            "symbol": "BABY/USDT:USDT",
+            "last": 0.0172,
+            "change_24h_pct": 6.57,
+            "volume_24h_usdt": 1277790.32
+          },
+          {
+            "symbol": "INJ/USDT:USDT",
+            "last": 5.236,
+            "change_24h_pct": 5.14,
+            "volume_24h_usdt": 24717974.15
+          },
+          {
+            "symbol": "MONAD/USDT:USDT",
+            "last": 0.0298,
+            "change_24h_pct": 4.59,
+            "volume_24h_usdt": 1225588.89
+          },
+          {
+            "symbol": "RIVER/USDT:USDT",
+            "last": 6.584,
+            "change_24h_pct": 4.42,
+            "volume_24h_usdt": 4265940.44
+          },
+          {
+            "symbol": "ONDO/USDT:USDT",
+            "last": 0.4243,
+            "change_24h_pct": 3.76,
+            "volume_24h_usdt": 64570646.37
+          },
+          {
+            "symbol": "ZEC/USDT:USDT",
+            "last": 679.03,
+            "change_24h_pct": 3.63,
+            "volume_24h_usdt": 690030018.85
+          },
+          {
+            "symbol": "PYTH/USDT:USDT",
+            "last": 0.0432,
+            "change_24h_pct": 3.62,
+            "volume_24h_usdt": 1204352.29
+          },
+          {
+            "symbol": "TIA/USDT:USDT",
+            "last": 0.4229,
+            "change_24h_pct": 3.57,
+            "volume_24h_usdt": 5194205.83
+          },
+          {
+            "symbol": "PENDLE/USDT:USDT",
+            "last": 1.8934,
+            "change_24h_pct": 3.5,
+            "volume_24h_usdt": 1454909.59
+          },
+          {
+            "symbol": "UAI/USDT:USDT",
+            "last": 0.2606,
+            "change_24h_pct": 3.49,
+            "volume_24h_usdt": 1405435.68
+          },
+          {
+            "symbol": "DASH/USDT:USDT",
+            "last": 49.51,
+            "change_24h_pct": 3.29,
+            "volume_24h_usdt": 18684641.49
+          },
+          {
+            "symbol": "SNDKSTOCK/USDT:USDT",
+            "last": 1525.74,
+            "change_24h_pct": 3.12,
+            "volume_24h_usdt": 2288127.32
+          },
+          {
+            "symbol": "SUI/USDT:USDT",
+            "last": 1.1429,
+            "change_24h_pct": 3.1,
+            "volume_24h_usdt": 163790752.16
+          },
+          {
+            "symbol": "NEAR/USDT:USDT",
+            "last": 1.86,
+            "change_24h_pct": 2.99,
+            "volume_24h_usdt": 28030387.97
+          },
+          {
+            "symbol": "SPX/USDT:USDT",
+            "last": 0.3909,
+            "change_24h_pct": 2.97,
+            "volume_24h_usdt": 1828322.35
+          },
+          {
+            "symbol": "ORDI/USDT:USDT",
+            "last": 4.295,
+            "change_24h_pct": 2.89,
+            "volume_24h_usdt": 3183142.52
+          },
+          {
+            "symbol": "AIGENSYN/USDT:USDT",
+            "last": 0.0316,
+            "change_24h_pct": 2.89,
+            "volume_24h_usdt": 1403185.67
+          },
+          {
+            "symbol": "JTO/USDT:USDT",
+            "last": 0.5224,
+            "change_24h_pct": 2.87,
+            "volume_24h_usdt": 3679557.69
+          },
+          {
+            "symbol": "TAO/USDT:USDT",
+            "last": 284.95,
+            "change_24h_pct": 2.55,
+            "volume_24h_usdt": 498759398.01
+          }
+        ],
+        "near_misses": [
+          {
+            "symbol": "MONAD/USDT:USDT",
+            "last": 0.0298,
+            "change_24h_pct": 4.59,
+            "volume_24h_usdt": 1225588.89,
+            "close_1h": 0.0299,
+            "change_1h_pct": 1.7376,
+            "relative_strength_pct": 1.8365,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "GRASS/USDT:USDT",
+            "last": 0.4,
+            "change_24h_pct": 8.28,
+            "volume_24h_usdt": 1296788.35,
+            "close_1h": 0.4,
+            "change_1h_pct": 1.0611,
+            "relative_strength_pct": 1.1599,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "BABY/USDT:USDT",
+            "last": 0.0172,
+            "change_24h_pct": 6.57,
+            "volume_24h_usdt": 1277790.32,
+            "close_1h": 0.0172,
+            "change_1h_pct": 0.762,
+            "relative_strength_pct": 0.8608,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "IBMSTOCK/USDT:USDT",
+            "last": 252.53,
+            "change_24h_pct": 1.9,
+            "volume_24h_usdt": 1448687.83,
+            "close_1h": 252.57,
+            "change_1h_pct": 0.4774,
+            "relative_strength_pct": 0.5762,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "JTO/USDT:USDT",
+            "last": 0.5224,
+            "change_24h_pct": 2.87,
+            "volume_24h_usdt": 3679557.69,
+            "close_1h": 0.5236,
+            "change_1h_pct": 0.4412,
+            "relative_strength_pct": 0.54,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "RIVER/USDT:USDT",
+            "last": 6.584,
+            "change_24h_pct": 4.42,
+            "volume_24h_usdt": 4265940.44,
+            "close_1h": 6.581,
+            "change_1h_pct": 0.3507,
+            "relative_strength_pct": 0.4495,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "WLD/USDT:USDT",
+            "last": 0.2679,
+            "change_24h_pct": 2.48,
+            "volume_24h_usdt": 22065291.96,
+            "close_1h": 0.2678,
+            "change_1h_pct": 0.3372,
+            "relative_strength_pct": 0.436,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "NIL/USDT:USDT",
+            "last": 0.0596,
+            "change_24h_pct": 1.89,
+            "volume_24h_usdt": 3735013.84,
+            "close_1h": 0.0596,
+            "change_1h_pct": 0.286,
+            "relative_strength_pct": 0.3848,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "NEAR/USDT:USDT",
+            "last": 1.86,
+            "change_24h_pct": 2.99,
+            "volume_24h_usdt": 28030387.97,
+            "close_1h": 1.86,
+            "change_1h_pct": 0.2695,
+            "relative_strength_pct": 0.3683,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "ARB/USDT:USDT",
+            "last": 0.1149,
+            "change_24h_pct": 2.42,
+            "volume_24h_usdt": 7864120.24,
+            "close_1h": 0.1149,
+            "change_1h_pct": 0.2094,
+            "relative_strength_pct": 0.3082,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "TIA/USDT:USDT",
+            "last": 0.4229,
+            "change_24h_pct": 3.57,
+            "volume_24h_usdt": 5194205.83,
+            "close_1h": 0.4229,
+            "change_1h_pct": 0.1895,
+            "relative_strength_pct": 0.2883,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "MUSTOCK/USDT:USDT",
+            "last": 758.34,
+            "change_24h_pct": 2.2,
+            "volume_24h_usdt": 6540463.6,
+            "close_1h": 758.0,
+            "change_1h_pct": 0.1771,
+            "relative_strength_pct": 0.2759,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "DOT/USDT:USDT",
+            "last": 1.282,
+            "change_24h_pct": 1.82,
+            "volume_24h_usdt": 6865656.32,
+            "close_1h": 1.281,
+            "change_1h_pct": 0.1564,
+            "relative_strength_pct": 0.2552,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "HBAR/USDT:USDT",
+            "last": 0.0902,
+            "change_24h_pct": 1.73,
+            "volume_24h_usdt": 5036931.3,
+            "close_1h": 0.0901,
+            "change_1h_pct": 0.1111,
+            "relative_strength_pct": 0.2099,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "SNDKSTOCK/USDT:USDT",
+            "last": 1525.74,
+            "change_24h_pct": 3.12,
+            "volume_24h_usdt": 2288127.32,
+            "close_1h": 1524.99,
+            "change_1h_pct": 0.1031,
+            "relative_strength_pct": 0.2019,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "PENDLE/USDT:USDT",
+            "last": 1.8934,
+            "change_24h_pct": 3.5,
+            "volume_24h_usdt": 1454909.59,
+            "close_1h": 1.8941,
+            "change_1h_pct": 0.1004,
+            "relative_strength_pct": 0.1992,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "ONDO/USDT:USDT",
+            "last": 0.4243,
+            "change_24h_pct": 3.76,
+            "volume_24h_usdt": 64570646.37,
+            "close_1h": 0.4243,
+            "change_1h_pct": 0.0944,
+            "relative_strength_pct": 0.1932,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "INTCSTOCK/USDT:USDT",
+            "last": 118.94,
+            "change_24h_pct": 1.72,
+            "volume_24h_usdt": 1648679.97,
+            "close_1h": 118.91,
+            "change_1h_pct": 0.0926,
+            "relative_strength_pct": 0.1914,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "APT/USDT:USDT",
+            "last": 0.9748,
+            "change_24h_pct": 1.78,
+            "volume_24h_usdt": 6130494.55,
+            "close_1h": 0.9749,
+            "change_1h_pct": 0.0924,
+            "relative_strength_pct": 0.1912,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "OP/USDT:USDT",
+            "last": 0.1319,
+            "change_24h_pct": 1.85,
+            "volume_24h_usdt": 1430740.43,
+            "close_1h": 0.132,
+            "change_1h_pct": 0.0758,
+            "relative_strength_pct": 0.1746,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "XLM/USDT:USDT",
+            "last": 0.1482,
+            "change_24h_pct": 2.32,
+            "volume_24h_usdt": 15447135.81,
+            "close_1h": 0.1481,
+            "change_1h_pct": 0.0405,
+            "relative_strength_pct": 0.1393,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "KAS/USDT:USDT",
+            "last": 0.0346,
+            "change_24h_pct": 1.94,
+            "volume_24h_usdt": 1561529.3,
+            "close_1h": 0.0346,
+            "change_1h_pct": 0.0289,
+            "relative_strength_pct": 0.1277,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "CRV/USDT:USDT",
+            "last": 0.2398,
+            "change_24h_pct": 2.43,
+            "volume_24h_usdt": 2485281.34,
+            "close_1h": 0.2399,
+            "change_1h_pct": 0.0,
+            "relative_strength_pct": 0.0988,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "ATOM/USDT:USDT",
+            "last": 2.032,
+            "change_24h_pct": 1.65,
+            "volume_24h_usdt": 7721582.13,
+            "close_1h": 2.031,
+            "change_1h_pct": 0.0,
+            "relative_strength_pct": 0.0988,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "CFX/USDT:USDT",
+            "last": 0.0575,
+            "change_24h_pct": 2.27,
+            "volume_24h_usdt": 1141092.99,
+            "close_1h": 0.0575,
+            "change_1h_pct": -0.0174,
+            "relative_strength_pct": 0.0814,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "ETHFI/USDT:USDT",
+            "last": 0.3866,
+            "change_24h_pct": 1.92,
+            "volume_24h_usdt": 1745804.76,
+            "close_1h": 0.3867,
+            "change_1h_pct": -0.0259,
+            "relative_strength_pct": 0.073,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "AIGENSYN/USDT:USDT",
+            "last": 0.0316,
+            "change_24h_pct": 2.89,
+            "volume_24h_usdt": 1403185.67,
+            "close_1h": 0.0316,
+            "change_1h_pct": -0.0317,
+            "relative_strength_pct": 0.0671,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "INJ/USDT:USDT",
+            "last": 5.236,
+            "change_24h_pct": 5.14,
+            "volume_24h_usdt": 24717974.15,
+            "close_1h": 5.236,
+            "change_1h_pct": -0.0382,
+            "relative_strength_pct": 0.0606,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "TRUMPOFFICIAL/USDT:USDT",
+            "last": 2.092,
+            "change_24h_pct": 2.34,
+            "volume_24h_usdt": 4604480.04,
+            "close_1h": 2.092,
+            "change_1h_pct": -0.0478,
+            "relative_strength_pct": 0.051,
+            "reject_reason": "below_1h_threshold"
+          },
+          {
+            "symbol": "WIF/USDT:USDT",
+            "last": 0.1994,
+            "change_24h_pct": 1.94,
+            "volume_24h_usdt": 2088507.19,
+            "close_1h": 0.1995,
+            "change_1h_pct": -0.0501,
+            "relative_strength_pct": 0.0487,
+            "reject_reason": "below_1h_threshold"
+          }
+        ],
+        "reject_counts": {
+          "below_1h_threshold": 50,
+          "below_relative_strength": 0,
+          "invalid_ohlcv": 0,
+          "errors": 0
+        },
+        "checked_1h_summary": {
+          "count": 50,
+          "min": -0.6609,
+          "p50": -0.0259,
+          "p90": 0.3507,
+          "p95": 0.4774,
+          "max": 1.7376,
+          "avg": 0.0205
+        },
+        "relative_strength_summary": {
+          "count": 50,
+          "min": -0.5621,
+          "p50": 0.073,
+          "p90": 0.4495,
+          "p95": 0.5762,
+          "max": 1.8365,
+          "avg": 0.1193
         }
       },
       "analysis": {
