@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T06:53:57.138082+00:00
+- generated_at: 2026-05-21T06:58:42.107087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4612**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T06:53:55.080739+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=77589.0
-- Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-21T06:58:40.028096+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=77579.2
+- Funnel: target 765 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +45.74% | $1,892,146.91 |
-| EDEN/USDT:USDT | +36.60% | $30,256,255.09 |
-| SATO/USDT:USDT | +25.22% | $3,740,960.92 |
-| USELESS/USDT:USDT | +16.05% | $1,455,034.70 |
-| BEAT/USDT:USDT | +12.20% | $2,549,488.38 |
+| ROAM/USDT:USDT | +45.57% | $1,898,895.55 |
+| EDEN/USDT:USDT | +34.77% | $30,337,093.64 |
+| SATO/USDT:USDT | +26.80% | $3,746,138.24 |
+| USELESS/USDT:USDT | +17.38% | $1,473,253.35 |
+| UAI/USDT:USDT | +13.36% | $1,019,637.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +2.25% | +2.51% |
-| TAO/USDT:USDT | below_1h_threshold | +2.06% | +2.32% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.52% | +1.78% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.48% | +1.74% |
-| SATO/USDT:USDT | below_1h_threshold | +1.45% | +1.72% |
+| SATO/USDT:USDT | below_1h_threshold | +2.73% | +3.01% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.19% | +2.47% |
+| TAO/USDT:USDT | below_1h_threshold | +2.00% | +2.28% |
+| UAI/USDT:USDT | below_1h_threshold | +1.70% | +1.98% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.34% | +1.61% |
 
 ## 5. 次に見るべき不足
 
