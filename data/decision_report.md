@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T02:38:53.022200+00:00
+- generated_at: 2026-05-21T02:43:41.727224+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4596**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T02:38:50.747473+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=78002.6
+- 更新: 2026-05-21T02:43:39.432075+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=77966.7
 - Funnel: target 763 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 83.1 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +59.08% | $1,229,925.83 |
-| EDEN/USDT:USDT | +52.67% | $29,376,463.31 |
-| BSB/USDT:USDT | +20.19% | $60,823,132.14 |
-| NIL/USDT:USDT | +19.04% | $3,499,123.50 |
-| JTO/USDT:USDT | +15.28% | $3,134,264.97 |
+| ROAM/USDT:USDT | +57.98% | $1,238,138.51 |
+| EDEN/USDT:USDT | +52.51% | $29,513,052.93 |
+| BSB/USDT:USDT | +20.62% | $60,860,455.13 |
+| NIL/USDT:USDT | +19.40% | $3,508,963.07 |
+| JTO/USDT:USDT | +15.26% | $3,139,766.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.81% | +1.57% |
-| NIL/USDT:USDT | below_1h_threshold | +1.67% | +1.43% |
-| SUI/USDT:USDT | below_1h_threshold | +1.53% | +1.29% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.43% | +1.19% |
-| WLD/USDT:USDT | below_1h_threshold | +1.27% | +1.03% |
+| NIL/USDT:USDT | below_1h_threshold | +1.97% | +1.78% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.89% | +1.70% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.28% | +1.09% |
+| LIT/USDT:USDT | below_1h_threshold | +1.19% | +0.99% |
+| WLD/USDT:USDT | below_1h_threshold | +1.15% | +0.96% |
 
 ## 5. 次に見るべき不足
 
