@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T17:14:36.657207+00:00
+- generated_at: 2026-05-21T17:18:45.937509+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4651**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T17:14:34.585667+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=77430.0
+- 更新: 2026-05-21T17:18:43.775694+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.69% price=77700.2
 - Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONDO/USDT:USDT | +3.61% | $62,656,816.52 |
-| BSB/USDT:USDT | +3.54% | $72,899,213.12 |
-| B/USDT:USDT | +2.72% | $2,148,731.26 |
-| BABY/USDT:USDT | +2.47% | $1,107,680.97 |
-| NIL/USDT:USDT | +2.44% | $3,862,205.53 |
+| ONDO/USDT:USDT | +4.27% | $63,913,670.63 |
+| BABY/USDT:USDT | +3.28% | $1,108,329.15 |
+| SNDKSTOCK/USDT:USDT | +2.60% | $2,252,424.43 |
+| B/USDT:USDT | +2.45% | $2,149,905.91 |
+| SUI/USDT:USDT | +2.36% | $158,471,623.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_1h_threshold | +1.88% | +1.53% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.63% | +1.29% |
-| VVV/USDT:USDT | below_1h_threshold | +1.61% | +1.27% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.07% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.38% | +1.04% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.55% | +1.86% |
+| VVV/USDT:USDT | below_1h_threshold | +2.20% | +1.51% |
+| SUI/USDT:USDT | below_1h_threshold | +2.08% | +1.39% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.99% | +1.29% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.81% | +1.12% |
 
 ## 5. 次に見るべき不足
 
