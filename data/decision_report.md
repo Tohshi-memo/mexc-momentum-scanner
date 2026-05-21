@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-21T06:34:22.896943+00:00
+- generated_at: 2026-05-21T06:38:49.710304+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4611**
+- closed shadow trades: **4612**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.06% / filled 20/20。**
-- 全期間 MARKET基準: n=4611, expectancy=-0.10%
+- 全期間 MARKET基準: n=4612, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+2.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,7 +22,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.06% | **+2.06%** |
-| ASK | 20/20 | 100.0% | +1.63% | **+1.63%** |
+| ASK | 20/20 | 100.0% | +1.65% | **+1.65%** |
 | LIMIT_2PCT | 15/20 | 75.0% | +1.83% | **+1.37%** |
 | LIMIT_1PCT | 15/20 | 75.0% | +1.35% | **+1.02%** |
 | LIMIT_BB3S | 4/20 | 20.0% | +2.87% | **+0.57%** |
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 627件
+- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 628件
 - 成長率目線: 平均log +0.000356 / 幾何平均 +0.036% per trade / maxDD +4.21%
-- 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T06:34:20.716832+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77761.9
+- 更新: 2026-05-21T06:38:47.135348+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77720.1
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1
+- Strict後reject: 4h RSI 81.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +47.54% | $1,864,571.27 |
-| EDEN/USDT:USDT | +46.25% | $29,541,588.56 |
-| SATO/USDT:USDT | +26.56% | $3,716,908.04 |
-| USELESS/USDT:USDT | +20.46% | $1,365,756.05 |
-| BEAT/USDT:USDT | +14.25% | $2,508,385.77 |
+| ROAM/USDT:USDT | +47.66% | $1,869,321.53 |
+| EDEN/USDT:USDT | +43.82% | $29,730,212.63 |
+| SATO/USDT:USDT | +27.99% | $3,721,666.00 |
+| USELESS/USDT:USDT | +20.76% | $1,377,699.67 |
+| BEAT/USDT:USDT | +14.30% | $2,511,762.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +2.87% | +2.91% |
-| TAO/USDT:USDT | below_1h_threshold | +1.75% | +1.79% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.75% | +1.79% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.46% | +1.50% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
+| SATO/USDT:USDT | below_1h_threshold | +3.64% | +3.74% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.47% | +2.57% |
+| TAO/USDT:USDT | below_1h_threshold | +1.77% | +1.87% |
+| SPACE/USDT:USDT | below_1h_threshold | +1.51% | +1.61% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.46% | +1.56% |
 
 ## 5. 次に見るべき不足
 
