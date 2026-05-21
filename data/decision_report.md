@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T10:53:53.345743+00:00
+- generated_at: 2026-05-21T10:58:55.619200+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4618**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T10:53:50.927970+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=77189.7
-- Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1, 4h RSI 68.3 >= 65=1
+- 更新: 2026-05-21T10:58:52.859010+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=77202.4
+- Funnel: target 766 → liquid 141 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 82.3 >= 65=1, 4h RSI 68.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROVE/USDT:USDT | +48.55% | $3,855,186.79 |
-| EDEN/USDT:USDT | +40.62% | $30,753,689.98 |
-| ROAM/USDT:USDT | +34.92% | $2,222,390.67 |
-| USELESS/USDT:USDT | +18.22% | $1,995,629.56 |
-| AVNT/USDT:USDT | +15.06% | $1,008,767.86 |
+| PROVE/USDT:USDT | +50.67% | $3,902,387.96 |
+| EDEN/USDT:USDT | +38.53% | $30,801,452.96 |
+| MITO/USDT:USDT | +37.08% | $1,010,524.23 |
+| ROAM/USDT:USDT | +36.06% | $2,227,805.76 |
+| USELESS/USDT:USDT | +18.22% | $2,000,644.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +3.56% | +4.09% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.00% | +3.52% |
-| UKOIL/USDT:USDT | below_1h_threshold | +2.96% | +3.48% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.00% | +2.53% |
-| NIL/USDT:USDT | below_1h_threshold | +1.95% | +2.47% |
+| USOIL/USDT:USDT | below_1h_threshold | +3.45% | +3.96% |
+| PROVE/USDT:USDT | below_1h_threshold | +3.24% | +3.74% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.82% | +3.33% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.18% | +2.69% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.86% | +2.36% |
 
 ## 5. 次に見るべき不足
 
