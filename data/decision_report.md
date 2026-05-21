@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T08:59:02.004888+00:00
+- generated_at: 2026-05-21T09:03:56.663488+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4616**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T08:58:59.080942+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77901.8
-- Funnel: target 766 → liquid 135 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.3 >= 65=1, 4h RSI 70.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-21T09:03:54.624797+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77871.0
+- Funnel: target 766 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROVE/USDT:USDT | +42.62% | $1,793,736.49 |
-| ROAM/USDT:USDT | +41.18% | $2,123,171.09 |
-| EDEN/USDT:USDT | +34.41% | $30,686,975.89 |
-| SATO/USDT:USDT | +25.04% | $3,522,913.40 |
-| USELESS/USDT:USDT | +21.11% | $1,771,988.03 |
+| PROVE/USDT:USDT | +46.99% | $2,003,799.09 |
+| ROAM/USDT:USDT | +39.46% | $2,120,655.36 |
+| EDEN/USDT:USDT | +33.22% | $30,105,324.96 |
+| SATO/USDT:USDT | +24.48% | $3,327,227.32 |
+| USELESS/USDT:USDT | +21.17% | $1,734,917.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +3.51% | +3.44% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.04% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.85% | +2.77% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.04% | +1.97% |
-| WLD/USDT:USDT | below_1h_threshold | +1.89% | +1.82% |
+| LIT/USDT:USDT | below_1h_threshold | +1.84% | +1.86% |
+| PROVE/USDT:USDT | below_1h_threshold | +0.92% | +0.94% |
+| WLD/USDT:USDT | below_1h_threshold | +0.79% | +0.81% |
+| UAI/USDT:USDT | below_1h_threshold | +0.64% | +0.66% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.62% | +0.64% |
 
 ## 5. 次に見るべき不足
 
