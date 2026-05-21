@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T22:48:13.198670+00:00
+- generated_at: 2026-05-21T22:53:55.494088+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4656**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T22:48:11.560031+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77626.0
-- Funnel: target 762 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-21T22:53:53.216590+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=77574.7
+- Funnel: target 762 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +14.59% | $2,677,180.65 |
-| PLUME/USDT:USDT | +13.64% | $1,372,014.45 |
-| PEAQ/USDT:USDT | +10.01% | $1,536,228.17 |
-| NEAR/USDT:USDT | +7.80% | $41,993,622.96 |
-| RIVER/USDT:USDT | +7.29% | $9,883,426.43 |
+| GRASS/USDT:USDT | +14.97% | $2,714,930.57 |
+| PLUME/USDT:USDT | +14.10% | $1,381,323.74 |
+| PEAQ/USDT:USDT | +7.81% | $1,542,058.31 |
+| NEAR/USDT:USDT | +7.58% | $42,090,614.38 |
+| RIVER/USDT:USDT | +7.32% | $9,921,671.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +4.19% | +4.20% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.17% | +3.18% |
-| PEAQ/USDT:USDT | below_1h_threshold | +3.12% | +3.14% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.74% |
-| INJ/USDT:USDT | below_1h_threshold | +1.69% | +1.70% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.51% | +3.59% |
+| INJ/USDT:USDT | below_1h_threshold | +1.81% | +1.89% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
+| BABY/USDT:USDT | below_1h_threshold | +1.47% | +1.55% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.38% | +1.46% |
 
 ## 5. 次に見るべき不足
 
