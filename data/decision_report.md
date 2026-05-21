@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T18:58:51.236375+00:00
+- generated_at: 2026-05-21T19:03:55.620724+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4652**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T18:58:49.179465+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=77301.3
-- Funnel: target 763 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-21T19:03:53.523902+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=77420.9
+- Funnel: target 763 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIVER/USDT:USDT | +6.45% | $5,287,055.98 |
-| JTO/USDT:USDT | +3.82% | $3,779,540.14 |
-| INJ/USDT:USDT | +3.77% | $26,829,729.60 |
-| SUI/USDT:USDT | +3.64% | $173,663,454.84 |
-| UAI/USDT:USDT | +3.17% | $1,410,389.89 |
+| RIVER/USDT:USDT | +7.47% | $5,131,253.78 |
+| JTO/USDT:USDT | +4.96% | $3,413,701.92 |
+| INJ/USDT:USDT | +4.25% | $26,254,100.62 |
+| GRASS/USDT:USDT | +4.16% | $1,632,439.74 |
+| SUI/USDT:USDT | +3.93% | $170,239,121.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +2.35% | +3.03% |
-| JTO/USDT:USDT | below_1h_threshold | +1.13% | +1.81% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.80% |
-| SPACEX/USDT:USDT | below_1h_threshold | +0.99% | +1.67% |
-| XPL/USDT:USDT | below_1h_threshold | +0.80% | +1.48% |
+| XPL/USDT:USDT | below_1h_threshold | +1.01% | +0.93% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.01% | +0.93% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.76% | +0.67% |
+| JTO/USDT:USDT | below_1h_threshold | +0.72% | +0.63% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.41% | +0.33% |
 
 ## 5. 次に見るべき不足
 
