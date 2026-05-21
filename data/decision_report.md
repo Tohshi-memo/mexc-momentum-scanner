@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T17:53:48.236699+00:00
+- generated_at: 2026-05-21T17:59:19.018026+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4652**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T17:53:46.188127+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.04% price=77965.8
+- 更新: 2026-05-21T17:59:17.034448+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.93% price=77882.2
 - Funnel: target 763 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +7.14% | $1,324,193.57 |
-| INJ/USDT:USDT | +5.76% | $25,334,051.26 |
-| BABY/USDT:USDT | +5.45% | $1,282,814.18 |
-| SPX/USDT:USDT | +4.50% | $1,845,877.10 |
-| RIVER/USDT:USDT | +4.48% | $4,234,070.39 |
+| GRASS/USDT:USDT | +7.09% | $1,345,699.61 |
+| INJ/USDT:USDT | +5.90% | $25,569,004.43 |
+| BABY/USDT:USDT | +5.82% | $1,323,907.23 |
+| ZEC/USDT:USDT | +4.44% | $737,869,919.66 |
+| RIVER/USDT:USDT | +4.15% | $4,340,833.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_relative_strength | +5.45% | +4.41% |
-| INJ/USDT:USDT | below_relative_strength | +5.16% | +4.12% |
-| NEAR/USDT:USDT | below_1h_threshold | +4.44% | +3.40% |
-| VVV/USDT:USDT | below_1h_threshold | +4.24% | +3.20% |
-| MONAD/USDT:USDT | below_1h_threshold | +4.15% | +3.11% |
+| INJ/USDT:USDT | below_relative_strength | +5.54% | +4.61% |
+| SPX/USDT:USDT | below_1h_threshold | +4.86% | +3.93% |
+| NEAR/USDT:USDT | below_1h_threshold | +4.32% | +3.39% |
+| BABY/USDT:USDT | below_1h_threshold | +4.21% | +3.28% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.89% | +2.96% |
 
 ## 5. 次に見るべき不足
 
