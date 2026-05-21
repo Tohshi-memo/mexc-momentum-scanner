@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T12:39:05.101182+00:00
+- generated_at: 2026-05-21T12:44:04.346857+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4623**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T12:39:02.835248+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=77288.3
-- Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1
+- 更新: 2026-05-21T12:43:58.721271+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77214.2
+- Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +45.12% | $31,487,654.41 |
-| PROVE/USDT:USDT | +39.93% | $5,756,743.56 |
-| ROAM/USDT:USDT | +32.71% | $2,267,872.10 |
-| USELESS/USDT:USDT | +25.37% | $2,369,156.13 |
-| MITO/USDT:USDT | +23.62% | $1,311,503.46 |
+| EDEN/USDT:USDT | +45.82% | $31,755,150.71 |
+| PROVE/USDT:USDT | +39.93% | $5,797,095.67 |
+| ROAM/USDT:USDT | +32.40% | $2,270,308.44 |
+| USELESS/USDT:USDT | +25.24% | $2,394,546.49 |
+| MITO/USDT:USDT | +23.64% | $1,317,526.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.59% | +4.42% |
-| BSB/USDT:USDT | below_1h_threshold | +4.54% | +4.37% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.99% | +2.82% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.73% | +1.56% |
-| UAI/USDT:USDT | below_1h_threshold | +1.53% | +1.36% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.90% | +4.83% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.95% | +2.88% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.83% | +1.75% |
+| UAI/USDT:USDT | below_1h_threshold | +1.41% | +1.33% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.23% | +1.16% |
 
 ## 5. 次に見るべき不足
 
