@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T17:08:46.303859+00:00
+- generated_at: 2026-05-21T17:14:36.657207+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4651**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T17:08:44.222732+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77152.7
+- 更新: 2026-05-21T17:14:34.585667+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=77430.0
 - Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +5.41% | $72,652,576.36 |
-| B/USDT:USDT | +2.38% | $2,147,252.26 |
-| BABY/USDT:USDT | +1.92% | $1,101,292.79 |
-| RIVER/USDT:USDT | +1.88% | $3,915,161.25 |
-| LUNC/USDT:USDT | +1.87% | $2,079,995.53 |
+| ONDO/USDT:USDT | +3.61% | $62,656,816.52 |
+| BSB/USDT:USDT | +3.54% | $72,899,213.12 |
+| B/USDT:USDT | +2.72% | $2,148,731.26 |
+| BABY/USDT:USDT | +2.47% | $1,107,680.97 |
+| NIL/USDT:USDT | +2.44% | $3,862,205.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.99% |
-| VVV/USDT:USDT | below_1h_threshold | +0.90% | +0.91% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.80% | +0.82% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.88% | +1.53% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.63% | +1.29% |
+| VVV/USDT:USDT | below_1h_threshold | +1.61% | +1.27% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.07% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.38% | +1.04% |
 
 ## 5. 次に見るべき不足
 
