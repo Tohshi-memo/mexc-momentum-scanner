@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T06:38:49.710304+00:00
+- generated_at: 2026-05-21T06:43:43.597145+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4612**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T06:38:47.135348+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77720.1
+- 更新: 2026-05-21T06:43:41.336100+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77667.5
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.6 >= 65=1
+- Strict後reject: 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +47.66% | $1,869,321.53 |
-| EDEN/USDT:USDT | +43.82% | $29,730,212.63 |
-| SATO/USDT:USDT | +27.99% | $3,721,666.00 |
-| USELESS/USDT:USDT | +20.76% | $1,377,699.67 |
-| BEAT/USDT:USDT | +14.30% | $2,511,762.83 |
+| ROAM/USDT:USDT | +48.21% | $1,874,150.66 |
+| EDEN/USDT:USDT | +44.19% | $29,825,943.76 |
+| SATO/USDT:USDT | +27.36% | $3,727,224.82 |
+| USELESS/USDT:USDT | +21.46% | $1,392,762.15 |
+| BEAT/USDT:USDT | +14.47% | $2,525,996.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +3.64% | +3.74% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.47% | +2.57% |
-| TAO/USDT:USDT | below_1h_threshold | +1.77% | +1.87% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.51% | +1.61% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.46% | +1.56% |
+| SATO/USDT:USDT | below_1h_threshold | +3.19% | +3.35% |
+| TAO/USDT:USDT | below_1h_threshold | +1.87% | +2.03% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.31% | +1.48% |
+| DYDX/USDT:USDT | below_1h_threshold | +0.89% | +1.05% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.61% | +0.78% |
 
 ## 5. 次に見るべき不足
 
