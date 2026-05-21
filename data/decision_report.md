@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T16:44:02.146223+00:00
+- generated_at: 2026-05-21T16:48:55.709409+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4650**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T16:43:59.869461+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=77022.0
+- 更新: 2026-05-21T16:48:53.372373+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=77029.7
 - Funnel: target 766 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +5.97% | $74,671,807.84 |
-| B/USDT:USDT | +3.02% | $2,213,877.34 |
-| BABY/USDT:USDT | +1.85% | $1,090,452.61 |
-| MEGA/USDT:USDT | +1.56% | $1,104,455.46 |
-| BANANAS31/USDT:USDT | +1.27% | $3,015,193.92 |
+| BSB/USDT:USDT | +7.76% | $74,843,371.79 |
+| B/USDT:USDT | +2.58% | $2,218,648.44 |
+| BABY/USDT:USDT | +1.98% | $1,093,134.90 |
+| SATO/USDT:USDT | +1.23% | $1,552,534.25 |
+| PENDLE/USDT:USDT | +1.13% | $1,887,474.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.02% | +3.29% |
-| BABY/USDT:USDT | below_1h_threshold | +1.80% | +2.06% |
-| MEGA/USDT:USDT | below_1h_threshold | +1.56% | +1.83% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.28% | +1.54% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.18% | +1.44% |
+| B/USDT:USDT | below_1h_threshold | +2.86% | +3.11% |
+| BABY/USDT:USDT | below_1h_threshold | +1.98% | +2.24% |
+| SATO/USDT:USDT | below_1h_threshold | +1.23% | +1.48% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.13% | +1.38% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.12% | +1.37% |
 
 ## 5. 次に見るべき不足
 
