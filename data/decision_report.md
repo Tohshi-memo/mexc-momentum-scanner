@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-21T07:18:53.724986+00:00
+- generated_at: 2026-05-21T07:23:46.021591+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4612**
+- closed shadow trades: **4613**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.06% / filled 20/20。**
-- 全期間 MARKET基準: n=4612, expectancy=-0.10%
+- 全期間 MARKET基準: n=4613, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+2.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | ASK | 20/20 | 100.0% | +1.65% | **+1.65%** |
 | LIMIT_2PCT | 15/20 | 75.0% | +1.83% | **+1.37%** |
 | LIMIT_1PCT | 15/20 | 75.0% | +1.35% | **+1.02%** |
-| LIMIT_BB3S | 4/20 | 20.0% | +2.87% | **+0.57%** |
+| LIMIT_3PCT | 11/20 | 55.0% | +0.92% | **+0.51%** |
 
 ### シャドウ上位 LONG
 
@@ -39,23 +39,23 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$96.69** / 初期 $100.00 (-3.31%)
-- 確定トレード: 57件 (TP 15 / SL 39 / EXP 3)
-- 最新: SATO/USDT:USDT SL_HIT PnL -4.00% 残高後 $96.69
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$96.21** / 初期 $100.00 (-3.79%)
+- 確定トレード: 58件 (TP 15 / SL 40 / EXP 3)
+- 最新: SKYAI/USDT:USDT SL_HIT PnL -4.00% 残高後 $96.21
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 628件
+- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 629件
 - 成長率目線: 平均log +0.000356 / 幾何平均 +0.036% per trade / maxDD +4.21%
-- 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T07:18:51.689876+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77528.1
+- 更新: 2026-05-21T07:23:43.689764+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77507.7
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +40.49% | $1,946,044.54 |
-| EDEN/USDT:USDT | +34.44% | $30,036,392.98 |
-| SATO/USDT:USDT | +22.79% | $3,515,585.74 |
-| USELESS/USDT:USDT | +17.84% | $1,505,046.32 |
-| BEAT/USDT:USDT | +14.04% | $2,578,122.12 |
+| ROAM/USDT:USDT | +39.80% | $1,956,037.77 |
+| EDEN/USDT:USDT | +34.16% | $30,110,611.04 |
+| SATO/USDT:USDT | +21.76% | $3,520,645.14 |
+| USELESS/USDT:USDT | +17.14% | $1,518,802.33 |
+| BEAT/USDT:USDT | +14.36% | $2,581,543.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.80% | +1.89% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.41% | +1.49% |
-| FIDA/USDT:USDT | below_1h_threshold | +1.31% | +1.39% |
-| LIT/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.32% | +2.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.94% | +2.05% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.66% | +1.77% |
+| LIT/USDT:USDT | below_1h_threshold | +1.22% | +1.33% |
+| LAB/USDT:USDT | below_1h_threshold | +0.91% | +1.02% |
 
 ## 5. 次に見るべき不足
 
