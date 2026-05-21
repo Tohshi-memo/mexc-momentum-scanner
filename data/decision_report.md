@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T17:38:47.073604+00:00
+- generated_at: 2026-05-21T17:44:00.611906+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4652**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T17:38:44.991811+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.02% price=77956.0
+- 更新: 2026-05-21T17:43:58.517191+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.88% price=77841.1
 - Funnel: target 763 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +7.25% | $1,224,916.79 |
-| BABY/USDT:USDT | +4.95% | $1,232,156.94 |
-| INJ/USDT:USDT | +4.35% | $24,691,943.36 |
-| VVV/USDT:USDT | +4.09% | $10,375,959.51 |
-| SUI/USDT:USDT | +3.81% | $164,481,919.58 |
+| GRASS/USDT:USDT | +7.85% | $1,264,556.79 |
+| BABY/USDT:USDT | +5.20% | $1,240,868.97 |
+| INJ/USDT:USDT | +4.75% | $24,820,376.15 |
+| VVV/USDT:USDT | +4.51% | $10,459,773.13 |
+| RIVER/USDT:USDT | +3.77% | $4,095,227.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.91% | +3.89% |
-| SPX/USDT:USDT | below_1h_threshold | +4.17% | +3.15% |
-| INJ/USDT:USDT | below_1h_threshold | +3.88% | +2.86% |
-| JTO/USDT:USDT | below_1h_threshold | +3.74% | +2.72% |
-| SUI/USDT:USDT | below_1h_threshold | +3.37% | +2.35% |
+| VVV/USDT:USDT | below_relative_strength | +5.27% | +4.40% |
+| SPX/USDT:USDT | below_1h_threshold | +4.33% | +3.46% |
+| INJ/USDT:USDT | below_1h_threshold | +4.18% | +3.30% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.70% | +2.82% |
+| JTO/USDT:USDT | below_1h_threshold | +3.58% | +2.71% |
 
 ## 5. 次に見るべき不足
 
