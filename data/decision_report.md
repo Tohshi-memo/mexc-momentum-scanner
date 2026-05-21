@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-21T06:13:41.852580+00:00
+- generated_at: 2026-05-21T06:18:53.092778+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4610**
+- closed shadow trades: **4611**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.06% / filled 20/20。**
-- 全期間 MARKET基準: n=4610, expectancy=-0.10%
+- 全期間 MARKET基準: n=4611, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+2.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,8 +23,8 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.06% | **+2.06%** |
 | ASK | 20/20 | 100.0% | +1.63% | **+1.63%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +1.83% | **+1.37%** |
 | LIMIT_1PCT | 15/20 | 75.0% | +1.35% | **+1.02%** |
-| LIMIT_2PCT | 14/20 | 70.0% | +1.38% | **+0.97%** |
 | LIMIT_BB3S | 4/20 | 20.0% | +2.87% | **+0.57%** |
 
 ### シャドウ上位 LONG
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_8PCT_LONG | 9/20 | 45.0% | +2.23% | **+1.00%** |
 | LIMIT_7PCT_LONG | 9/20 | 45.0% | +1.64% | **+0.74%** |
+| LIMIT_6PCT_LONG | 9/20 | 45.0% | +1.05% | **+0.47%** |
 | LIMIT_FIB1272_LONG | 9/20 | 45.0% | -0.04% | **-0.02%** |
-| LIMIT_6PCT_LONG | 9/20 | 45.0% | -0.07% | **-0.03%** |
-| LIMIT_5PCT_LONG | 10/20 | 50.0% | -0.14% | **-0.07%** |
+| LIMIT_5PCT_LONG | 10/20 | 50.0% | -0.05% | **-0.03%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 626件
+- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 627件
 - 成長率目線: 平均log +0.000356 / 幾何平均 +0.036% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T06:13:39.810889+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77735.0
+- 更新: 2026-05-21T06:18:50.686664+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=77692.6
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +50.78% | $1,833,846.31 |
-| EDEN/USDT:USDT | +37.94% | $28,922,582.10 |
-| SATO/USDT:USDT | +24.84% | $3,693,486.16 |
-| USELESS/USDT:USDT | +21.67% | $1,269,743.20 |
-| BSB/USDT:USDT | +19.55% | $63,205,509.15 |
+| ROAM/USDT:USDT | +48.45% | $1,842,929.10 |
+| EDEN/USDT:USDT | +40.58% | $29,075,479.14 |
+| SATO/USDT:USDT | +26.19% | $3,702,382.70 |
+| USELESS/USDT:USDT | +20.64% | $1,301,024.63 |
+| BEAT/USDT:USDT | +15.50% | $2,480,283.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +2.45% | +2.53% |
-| SATO/USDT:USDT | below_1h_threshold | +1.88% | +1.96% |
-| BSB/USDT:USDT | below_1h_threshold | +1.61% | +1.69% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.29% | +1.36% |
-| LIT/USDT:USDT | below_1h_threshold | +1.28% | +1.36% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.40% | +4.53% |
+| SATO/USDT:USDT | below_1h_threshold | +2.24% | +2.37% |
+| NIL/USDT:USDT | below_1h_threshold | +1.85% | +1.98% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.08% | +1.21% |
+| LIT/USDT:USDT | below_1h_threshold | +1.05% | +1.18% |
 
 ## 5. 次に見るべき不足
 
