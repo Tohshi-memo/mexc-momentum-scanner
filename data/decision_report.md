@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T16:39:20.780011+00:00
+- generated_at: 2026-05-21T16:44:02.146223+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4650**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T16:39:18.223196+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=77062.7
+- 更新: 2026-05-21T16:43:59.869461+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=77022.0
 - Funnel: target 766 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +6.68% | $74,470,365.29 |
-| B/USDT:USDT | +3.09% | $2,200,492.37 |
-| BABY/USDT:USDT | +1.61% | $1,087,827.11 |
-| MUSTOCK/USDT:USDT | +1.48% | $6,952,117.28 |
-| BANANAS31/USDT:USDT | +1.44% | $2,997,713.79 |
+| BSB/USDT:USDT | +5.97% | $74,671,807.84 |
+| B/USDT:USDT | +3.02% | $2,213,877.34 |
+| BABY/USDT:USDT | +1.85% | $1,090,452.61 |
+| MEGA/USDT:USDT | +1.56% | $1,104,455.46 |
+| BANANAS31/USDT:USDT | +1.27% | $3,015,193.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.09% | +3.30% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.70% | +1.91% |
-| BABY/USDT:USDT | below_1h_threshold | +1.61% | +1.82% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.65% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.37% | +1.58% |
+| B/USDT:USDT | below_1h_threshold | +3.02% | +3.29% |
+| BABY/USDT:USDT | below_1h_threshold | +1.80% | +2.06% |
+| MEGA/USDT:USDT | below_1h_threshold | +1.56% | +1.83% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.28% | +1.54% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.18% | +1.44% |
 
 ## 5. 次に見るべき不足
 
