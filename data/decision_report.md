@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T08:28:42.155664+00:00
+- generated_at: 2026-05-21T08:33:26.856077+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4615**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T08:28:40.098436+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=77992.0
+- 更新: 2026-05-21T08:33:25.134630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=77967.0
 - Funnel: target 766 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +36.02% | $2,050,755.19 |
-| PROVE/USDT:USDT | +35.87% | $1,236,898.74 |
-| EDEN/USDT:USDT | +35.41% | $30,397,474.19 |
-| USELESS/USDT:USDT | +21.75% | $1,700,459.82 |
-| SATO/USDT:USDT | +17.62% | $3,475,026.04 |
+| ROAM/USDT:USDT | +39.97% | $2,059,813.63 |
+| PROVE/USDT:USDT | +36.73% | $1,278,696.75 |
+| EDEN/USDT:USDT | +35.87% | $30,440,363.35 |
+| SATO/USDT:USDT | +23.60% | $3,490,175.01 |
+| USELESS/USDT:USDT | +21.78% | $1,718,565.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROVE/USDT:USDT | below_1h_threshold | +3.05% | +2.87% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.43% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.27% | +2.08% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.03% | +1.85% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +1.79% |
+| PROVE/USDT:USDT | below_1h_threshold | +4.66% | +4.51% |
+| SATO/USDT:USDT | below_1h_threshold | +4.33% | +4.18% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +2.86% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.32% | +2.17% |
+| TAO/USDT:USDT | below_1h_threshold | +2.06% | +1.91% |
 
 ## 5. 次に見るべき不足
 
