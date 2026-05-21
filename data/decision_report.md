@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-21T05:38:57.414762+00:00
+- generated_at: 2026-05-21T05:44:19.791655+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4607**
+- closed shadow trades: **4608**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.47% / filled 20/20。**
-- 全期間 MARKET基準: n=4607, expectancy=-0.10%
+- 全期間 MARKET基準: n=4608, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+1.47%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.47% | **+1.47%** |
 | ASK | 20/20 | 100.0% | +1.04% | **+1.04%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +3.42% | **+0.68%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +4.54% | **+0.68%** |
-| LIMIT_6PCT | 3/20 | 15.0% | +3.92% | **+0.59%** |
-| LIMIT_ATR | 10/20 | 50.0% | +1.06% | **+0.53%** |
+| LIMIT_1PCT | 15/20 | 75.0% | +0.63% | **+0.47%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 623件
+- 確定: 545件 (Win 138 / Loss 185 / Flat 222) / skip 624件
 - 成長率目線: 平均log +0.000356 / 幾何平均 +0.036% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T05:38:54.848524+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=77864.0
+- 更新: 2026-05-21T05:44:17.150078+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=77811.9
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1, 4h RSI 76.4 >= 65=1
+- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 70.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +52.13% | $1,726,113.92 |
-| EDEN/USDT:USDT | +34.74% | $29,975,410.37 |
-| SATO/USDT:USDT | +26.80% | $3,665,366.99 |
-| USELESS/USDT:USDT | +18.73% | $1,194,397.31 |
-| FIDA/USDT:USDT | +14.81% | $12,576,245.99 |
+| ROAM/USDT:USDT | +50.78% | $1,744,409.70 |
+| EDEN/USDT:USDT | +34.65% | $30,063,081.91 |
+| SATO/USDT:USDT | +26.26% | $3,671,241.79 |
+| USELESS/USDT:USDT | +20.20% | $1,236,657.13 |
+| BSB/USDT:USDT | +14.95% | $62,929,492.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.30% | +3.46% |
-| BSB/USDT:USDT | below_1h_threshold | +1.93% | +2.09% |
-| FIDA/USDT:USDT | below_1h_threshold | +0.92% | +1.09% |
-| SPACE/USDT:USDT | below_1h_threshold | +0.88% | +1.04% |
-| TAO/USDT:USDT | below_1h_threshold | +0.22% | +0.38% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.26% | +4.49% |
+| BSB/USDT:USDT | below_1h_threshold | +2.95% | +3.18% |
+| SPACE/USDT:USDT | below_1h_threshold | +0.94% | +1.17% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.54% | +0.77% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.24% | +0.47% |
 
 ## 5. 次に見るべき不足
 
