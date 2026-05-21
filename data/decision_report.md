@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-21T23:08:02.444267+00:00
+- generated_at: 2026-05-21T23:14:00.077431+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4656**
+- closed shadow trades: **4657**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.51% / filled 20/20。**
-- 全期間 MARKET基準: n=4656, expectancy=-0.09%
+- 全期間 MARKET基準: n=4657, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+1.51%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,9 +22,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.51% | **+1.51%** |
-| ASK | 20/20 | 100.0% | +1.03% | **+1.03%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.96% | **+0.81%** |
+| ASK | 20/20 | 100.0% | +0.98% | **+0.98%** |
 | LIMIT_3PCT | 12/20 | 60.0% | +1.28% | **+0.77%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +0.90% | **+0.76%** |
 | LIMIT_2PCT | 14/20 | 70.0% | +1.08% | **+0.76%** |
 
 ### シャドウ上位 LONG
@@ -34,7 +34,7 @@
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +1.10% | **+0.16%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.18% | **+0.16%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.03% | **+0.03%** |
+| ASK_LONG | 20/20 | 100.0% | +0.08% | **+0.08%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.00% | **+0.00%** |
 
 ## 2. $100 Live Portfolio
@@ -47,37 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 547件 (Win 138 / Loss 185 / Flat 224) / skip 670件
+- 確定: 547件 (Win 138 / Loss 185 / Flat 224) / skip 671件
 - 成長率目線: 平均log +0.000355 / 幾何平均 +0.035% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: SPOTSTOCK/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T23:08:00.806552+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=77666.1
-- Funnel: target 763 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-21T23:13:57.426253+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77585.3
+- Funnel: target 763 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +13.02% | $2,849,449.66 |
-| PEAQ/USDT:USDT | +12.18% | $1,539,898.66 |
-| PLUME/USDT:USDT | +12.09% | $1,402,744.45 |
-| LIT/USDT:USDT | +7.83% | $9,016,426.13 |
-| NEAR/USDT:USDT | +7.80% | $41,293,278.39 |
+| PEAQ/USDT:USDT | +15.79% | $1,558,840.94 |
+| GRASS/USDT:USDT | +12.91% | $2,881,055.30 |
+| PLUME/USDT:USDT | +10.69% | $1,413,630.48 |
+| RIVER/USDT:USDT | +7.91% | $9,812,557.82 |
+| LIT/USDT:USDT | +7.21% | $9,093,337.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +4.55% | +4.45% |
-| LIT/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
-| BABY/USDT:USDT | below_1h_threshold | +0.78% | +0.69% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.72% | +0.63% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.55% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.53% |
+| LIT/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.28% | +0.29% |
+| KAS/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
+| BABY/USDT:USDT | below_1h_threshold | +0.24% | +0.25% |
 
 ## 5. 次に見るべき不足
 
