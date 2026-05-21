@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-21T13:23:46.029865+00:00
+- generated_at: 2026-05-21T13:29:02.111501+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4628**
+- closed shadow trades: **4629**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.59% / filled 20/20。**
-- 全期間 MARKET基準: n=4628, expectancy=-0.10%
+- 全期間 MARKET基準: n=4629, expectancy=-0.10%
 - 直近20件 MARKET基準: n=20, expectancy=+0.59%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 6/18 | 33.3% | +3.04% | **+1.01%** |
+| LIMIT_BB3S | 5/18 | 27.8% | +3.73% | **+1.04%** |
 | LIMIT_1PCT | 19/20 | 95.0% | +0.68% | **+0.65%** |
 | MARKET | 20/20 | 100.0% | +0.59% | **+0.59%** |
 | LIMIT_5PCT | 4/20 | 20.0% | +2.71% | **+0.54%** |
-| ASK | 20/20 | 100.0% | +0.45% | **+0.45%** |
+| ASK | 20/20 | 100.0% | +0.53% | **+0.53%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 546件 (Win 138 / Loss 185 / Flat 223) / skip 643件
+- 確定: 546件 (Win 138 / Loss 185 / Flat 223) / skip 644件
 - 成長率目線: 平均log +0.000355 / 幾何平均 +0.036% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PROVE/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T13:23:43.689885+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77266.8
+- 更新: 2026-05-21T13:28:59.488290+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77224.0
 - Funnel: target 766 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROVE/USDT:USDT | +41.88% | $6,155,966.03 |
-| NEX/USDT:USDT | +41.69% | $1,231,545.73 |
-| EDEN/USDT:USDT | +41.67% | $32,987,169.33 |
-| FIDA/USDT:USDT | +36.54% | $13,851,933.21 |
-| ROAM/USDT:USDT | +34.50% | $2,283,789.29 |
+| PROVE/USDT:USDT | +43.40% | $6,189,528.31 |
+| EDEN/USDT:USDT | +43.10% | $33,073,618.54 |
+| NEX/USDT:USDT | +41.81% | $1,237,240.97 |
+| FIDA/USDT:USDT | +36.37% | $13,928,245.37 |
+| ROAM/USDT:USDT | +35.38% | $2,285,665.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +3.49% | +3.46% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.43% | +2.40% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.83% | +1.80% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.58% | +1.55% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.75% | +0.72% |
+| LIT/USDT:USDT | below_1h_threshold | +2.94% | +2.97% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.56% | +2.59% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.50% | +2.52% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.05% | +2.08% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.01% | +1.04% |
 
 ## 5. 次に見るべき不足
 
