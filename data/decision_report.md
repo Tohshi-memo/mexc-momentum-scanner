@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T15:59:00.814890+00:00
+- generated_at: 2026-05-21T16:03:16.853025+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4647**
 
@@ -54,32 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T15:58:58.306797+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=77212.9
-- Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 67.7 >= 65=1
+- 更新: 2026-05-21T16:03:14.995466+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77234.8
+- Funnel: target 766 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +57.77% | $2,581,919.41 |
-| FIDA/USDT:USDT | +57.55% | $16,477,911.29 |
-| NEX/USDT:USDT | +51.67% | $1,975,921.69 |
-| EDEN/USDT:USDT | +47.12% | $34,602,056.65 |
-| PROVE/USDT:USDT | +43.53% | $7,238,959.81 |
+| BSB/USDT:USDT | +6.89% | $72,883,788.80 |
+| BANANAS31/USDT:USDT | +2.60% | $2,926,477.12 |
+| MITO/USDT:USDT | +1.05% | $1,576,500.24 |
+| EDEN/USDT:USDT | +0.97% | $32,828,046.82 |
+| AIGENSYN/USDT:USDT | +0.94% | $1,377,738.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.64% | +4.29% |
-| BSB/USDT:USDT | below_1h_threshold | +4.04% | +3.69% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.04% | +2.69% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.91% | +2.56% |
-| FIDA/USDT:USDT | below_1h_threshold | +2.11% | +1.76% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.60% | +2.59% |
+| MITO/USDT:USDT | below_1h_threshold | +1.06% | +1.04% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.98% | +0.97% |
+| PROVE/USDT:USDT | below_1h_threshold | +0.96% | +0.95% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
 
 ## 5. 次に見るべき不足
 
