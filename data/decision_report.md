@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T18:08:52.414012+00:00
+- generated_at: 2026-05-21T18:13:28.375004+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4652**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T18:08:50.383270+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=77700.2
+- 更新: 2026-05-21T18:13:26.694223+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=77697.2
 - Funnel: target 763 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +7.01% | $1,336,737.80 |
-| INJ/USDT:USDT | +6.20% | $24,822,455.02 |
-| RIVER/USDT:USDT | +5.39% | $4,344,279.68 |
-| BABY/USDT:USDT | +5.39% | $1,283,567.54 |
-| MONAD/USDT:USDT | +4.90% | $1,241,061.06 |
+| RIVER/USDT:USDT | +7.04% | $4,506,390.64 |
+| INJ/USDT:USDT | +6.70% | $24,970,482.12 |
+| GRASS/USDT:USDT | +6.49% | $1,348,897.43 |
+| BABY/USDT:USDT | +6.38% | $1,288,631.45 |
+| PYTH/USDT:USDT | +4.07% | $1,206,887.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +1.98% | +2.14% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.33% | +1.49% |
-| WLD/USDT:USDT | below_1h_threshold | +1.05% | +1.22% |
-| INJ/USDT:USDT | below_1h_threshold | +1.03% | +1.20% |
-| NIL/USDT:USDT | below_1h_threshold | +0.50% | +0.67% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.91% | +3.08% |
+| INJ/USDT:USDT | below_1h_threshold | +1.34% | +1.51% |
+| NIL/USDT:USDT | below_1h_threshold | +1.11% | +1.28% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.22% |
+| WLD/USDT:USDT | below_1h_threshold | +0.97% | +1.15% |
 
 ## 5. 次に見るべき不足
 
