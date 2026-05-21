@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-21T12:44:04.346857+00:00
+- generated_at: 2026-05-21T12:49:05.616934+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4623**
+- closed shadow trades: **4624**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.35% / filled 20/20。**
-- 全期間 MARKET基準: n=4623, expectancy=-0.09%
+- 全期間 MARKET基準: n=4624, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+1.35%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | LIMIT_1PCT | 19/20 | 95.0% | +1.43% | **+1.36%** |
 | MARKET | 20/20 | 100.0% | +1.35% | **+1.35%** |
 | LIMIT_BB3S | 6/18 | 33.3% | +3.04% | **+1.01%** |
-| ASK | 20/20 | 100.0% | +0.65% | **+0.65%** |
+| ASK | 20/20 | 100.0% | +0.62% | **+0.62%** |
 | LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 
 ### シャドウ上位 LONG
@@ -32,54 +32,54 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +1.01% | **+0.40%** |
+| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +0.40% | **+0.22%** |
 | LIMIT_5PCT_LONG | 11/20 | 55.0% | +0.23% | **+0.13%** |
 | LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.13% | **+0.06%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.07% | **+0.03%** |
-| LIMIT_FIB1272_LONG | 10/20 | 50.0% | -0.13% | **-0.07%** |
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$96.21** / 初期 $100.00 (-3.79%)
-- 確定トレード: 58件 (TP 15 / SL 40 / EXP 3)
-- 最新: SKYAI/USDT:USDT SL_HIT PnL -4.00% 残高後 $96.21
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$95.73** / 初期 $100.00 (-4.27%)
+- 確定トレード: 59件 (TP 15 / SL 41 / EXP 3)
+- 最新: BSB/USDT:USDT SL_HIT PnL -4.00% 残高後 $95.73
+- 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 546件 (Win 138 / Loss 185 / Flat 223) / skip 638件
+- 確定: 546件 (Win 138 / Loss 185 / Flat 223) / skip 639件
 - 成長率目線: 平均log +0.000355 / 幾何平均 +0.036% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PROVE/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T12:43:58.721271+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77214.2
-- Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- 更新: 2026-05-21T12:49:02.581785+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=77287.9
+- Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.9 >= 65=1, 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +45.82% | $31,755,150.71 |
-| PROVE/USDT:USDT | +39.93% | $5,797,095.67 |
-| ROAM/USDT:USDT | +32.40% | $2,270,308.44 |
-| USELESS/USDT:USDT | +25.24% | $2,394,546.49 |
-| MITO/USDT:USDT | +23.64% | $1,317,526.64 |
+| EDEN/USDT:USDT | +44.96% | $31,909,024.49 |
+| PROVE/USDT:USDT | +41.58% | $5,842,816.84 |
+| FIDA/USDT:USDT | +34.23% | $13,633,776.61 |
+| ROAM/USDT:USDT | +32.47% | $2,274,316.25 |
+| USELESS/USDT:USDT | +24.29% | $2,412,505.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.90% | +4.83% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.95% | +2.88% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.83% | +1.75% |
-| UAI/USDT:USDT | below_1h_threshold | +1.41% | +1.33% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.23% | +1.16% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.78% | +4.61% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.70% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.12% | +1.95% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.82% | +1.65% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.80% | +1.63% |
 
 ## 5. 次に見るべき不足
 
