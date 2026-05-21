@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T08:33:26.856077+00:00
+- generated_at: 2026-05-21T08:38:49.205392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4615**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T08:33:25.134630+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=77967.0
-- Funnel: target 766 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-21T08:38:46.850644+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77880.0
+- Funnel: target 766 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +39.97% | $2,059,813.63 |
-| PROVE/USDT:USDT | +36.73% | $1,278,696.75 |
-| EDEN/USDT:USDT | +35.87% | $30,440,363.35 |
-| SATO/USDT:USDT | +23.60% | $3,490,175.01 |
-| USELESS/USDT:USDT | +21.78% | $1,718,565.35 |
+| PROVE/USDT:USDT | +43.09% | $1,442,994.47 |
+| ROAM/USDT:USDT | +42.37% | $2,102,208.62 |
+| EDEN/USDT:USDT | +35.66% | $30,488,041.63 |
+| SATO/USDT:USDT | +22.68% | $3,499,614.26 |
+| USELESS/USDT:USDT | +21.85% | $1,725,894.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROVE/USDT:USDT | below_1h_threshold | +4.66% | +4.51% |
-| SATO/USDT:USDT | below_1h_threshold | +4.33% | +4.18% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +2.86% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.32% | +2.17% |
-| TAO/USDT:USDT | below_1h_threshold | +2.06% | +1.91% |
+| SATO/USDT:USDT | below_1h_threshold | +3.07% | +3.03% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.70% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.42% | +2.38% |
+| TAO/USDT:USDT | below_1h_threshold | +1.92% | +1.87% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.86% | +1.81% |
 
 ## 5. 次に見るべき不足
 
