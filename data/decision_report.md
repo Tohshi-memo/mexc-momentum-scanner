@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T23:18:56.760991+00:00
+- generated_at: 2026-05-21T23:23:59.634783+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4657**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T23:18:54.514870+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77558.2
-- Funnel: target 763 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-21T23:23:57.570227+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77554.2
+- Funnel: target 763 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +17.02% | $1,582,671.46 |
-| GRASS/USDT:USDT | +13.69% | $2,889,520.18 |
-| PLUME/USDT:USDT | +10.93% | $1,422,637.75 |
-| RIVER/USDT:USDT | +8.19% | $9,833,257.22 |
-| NEAR/USDT:USDT | +6.81% | $41,384,441.78 |
+| PEAQ/USDT:USDT | +11.14% | $1,618,336.47 |
+| PLUME/USDT:USDT | +11.00% | $1,425,257.21 |
+| GRASS/USDT:USDT | +10.85% | $2,946,425.92 |
+| LIT/USDT:USDT | +8.36% | $9,199,841.02 |
+| RIVER/USDT:USDT | +7.10% | $9,887,268.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.40% | +2.44% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.59% | +0.63% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.58% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
-| BABY/USDT:USDT | below_1h_threshold | +0.30% | +0.34% |
+| H/USDT:USDT | below_1h_threshold | +3.89% | +3.93% |
+| PEAQ/USDT:USDT | below_1h_threshold | +3.55% | +3.60% |
+| LIT/USDT:USDT | below_1h_threshold | +1.38% | +1.42% |
+| BABY/USDT:USDT | below_1h_threshold | +0.54% | +0.59% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.56% |
 
 ## 5. 次に見るべき不足
 
