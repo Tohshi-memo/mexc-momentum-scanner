@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T19:28:49.110160+00:00
+- generated_at: 2026-05-21T19:34:05.201476+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4653**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T19:28:47.031551+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=77532.6
+- 更新: 2026-05-21T19:34:03.161116+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=77551.2
 - Funnel: target 763 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIVER/USDT:USDT | +8.69% | $5,851,233.80 |
-| JTO/USDT:USDT | +6.34% | $3,440,840.52 |
-| GRASS/USDT:USDT | +4.43% | $1,682,689.38 |
-| SNDKSTOCK/USDT:USDT | +4.13% | $2,397,263.52 |
-| UAI/USDT:USDT | +3.89% | $1,319,534.62 |
+| RIVER/USDT:USDT | +9.83% | $6,024,477.61 |
+| JTO/USDT:USDT | +5.80% | $3,455,147.13 |
+| INJ/USDT:USDT | +4.03% | $26,820,777.83 |
+| SNDKSTOCK/USDT:USDT | +3.94% | $2,421,431.66 |
+| NEAR/USDT:USDT | +3.76% | $31,198,767.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +2.04% | +1.81% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.01% | +1.78% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.85% | +1.62% |
-| XPL/USDT:USDT | below_1h_threshold | +1.13% | +0.90% |
-| UAI/USDT:USDT | below_1h_threshold | +1.08% | +0.85% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.20% | +2.95% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.02% | +1.76% |
+| JTO/USDT:USDT | below_1h_threshold | +1.72% | +1.47% |
+| XPL/USDT:USDT | below_1h_threshold | +1.24% | +0.98% |
+| CRV/USDT:USDT | below_1h_threshold | +1.22% | +0.96% |
 
 ## 5. 次に見るべき不足
 
