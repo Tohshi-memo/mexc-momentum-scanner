@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T07:14:35.327949+00:00
+- generated_at: 2026-05-21T07:18:53.724986+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4612**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T07:14:33.299268+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77571.6
+- 更新: 2026-05-21T07:18:51.689876+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=77528.1
 - Funnel: target 765 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +40.85% | $1,932,141.00 |
-| EDEN/USDT:USDT | +35.01% | $29,975,700.43 |
-| SATO/USDT:USDT | +22.12% | $3,511,503.87 |
-| USELESS/USDT:USDT | +17.97% | $1,496,776.69 |
-| UAI/USDT:USDT | +13.81% | $1,025,416.82 |
+| ROAM/USDT:USDT | +40.49% | $1,946,044.54 |
+| EDEN/USDT:USDT | +34.44% | $30,036,392.98 |
+| SATO/USDT:USDT | +22.79% | $3,515,585.74 |
+| USELESS/USDT:USDT | +17.84% | $1,505,046.32 |
+| BEAT/USDT:USDT | +14.04% | $2,578,122.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +1.58% | +1.60% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.12% | +1.15% |
-| FIGHT/USDT:USDT | below_1h_threshold | +0.84% | +0.87% |
-| UAI/USDT:USDT | below_1h_threshold | +0.58% | +0.61% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.80% | +1.89% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.41% | +1.49% |
+| FIDA/USDT:USDT | below_1h_threshold | +1.31% | +1.39% |
+| LIT/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
 
 ## 5. 次に見るべき不足
 
