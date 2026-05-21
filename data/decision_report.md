@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T22:53:55.494088+00:00
+- generated_at: 2026-05-21T22:58:52.004865+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4656**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T22:53:53.216590+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77574.7
-- Funnel: target 762 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-21T22:58:49.937720+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=77588.3
+- Funnel: target 762 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +14.97% | $2,714,930.57 |
-| PLUME/USDT:USDT | +14.10% | $1,381,323.74 |
-| PEAQ/USDT:USDT | +7.81% | $1,542,058.31 |
-| NEAR/USDT:USDT | +7.58% | $42,090,614.38 |
-| RIVER/USDT:USDT | +7.32% | $9,921,671.07 |
+| PLUME/USDT:USDT | +13.10% | $1,400,268.97 |
+| GRASS/USDT:USDT | +12.77% | $2,792,610.41 |
+| RIVER/USDT:USDT | +8.07% | $9,964,470.20 |
+| PEAQ/USDT:USDT | +7.26% | $1,545,654.49 |
+| NEAR/USDT:USDT | +7.03% | $42,140,444.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.51% | +3.59% |
-| INJ/USDT:USDT | below_1h_threshold | +1.81% | +1.89% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
-| BABY/USDT:USDT | below_1h_threshold | +1.47% | +1.55% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.38% | +1.46% |
+| LIT/USDT:USDT | below_1h_threshold | +4.76% | +4.82% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.92% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.63% | +1.69% |
+| INJ/USDT:USDT | below_1h_threshold | +1.59% | +1.66% |
+| BABY/USDT:USDT | below_1h_threshold | +1.53% | +1.59% |
 
 ## 5. 次に見るべき不足
 
