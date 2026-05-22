@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T14:13:56.064413+00:00
+- generated_at: 2026-05-22T14:18:15.142751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4707**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T14:13:53.119090+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=77025.2
+- 更新: 2026-05-22T14:18:13.469144+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=76996.4
 - Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +63.29% | $4,324,271.56 |
-| BEAT/USDT:USDT | +60.91% | $20,776,559.70 |
-| GENIUS/USDT:USDT | +35.24% | $3,543,696.80 |
-| ALT/USDT:USDT | +33.56% | $3,247,044.72 |
-| AGT/USDT:USDT | +30.30% | $1,007,457.46 |
+| BUILDONBOB/USDT:USDT | +63.11% | $4,343,462.32 |
+| BEAT/USDT:USDT | +60.85% | $21,325,210.29 |
+| GENIUS/USDT:USDT | +38.01% | $3,569,951.65 |
+| ALT/USDT:USDT | +33.20% | $3,253,735.61 |
+| AGT/USDT:USDT | +31.73% | $1,011,041.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +4.95% | +5.25% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.04% | +4.33% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.10% | +3.40% |
-| JTO/USDT:USDT | below_1h_threshold | +1.76% | +2.06% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.14% | +1.44% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +4.77% | +5.10% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.85% | +4.18% |
+| JTO/USDT:USDT | below_1h_threshold | +2.57% | +2.90% |
+| AGT/USDT:USDT | below_1h_threshold | +1.77% | +2.11% |
+| PEAQ/USDT:USDT | below_1h_threshold | +1.30% | +1.63% |
 
 ## 5. 次に見るべき不足
 
