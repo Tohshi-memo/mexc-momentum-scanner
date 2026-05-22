@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-22T08:13:46.831821+00:00
+- generated_at: 2026-05-22T08:18:50.659103+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4675**
+- closed shadow trades: **4676**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.57% / filled 20/20。**
-- 全期間 MARKET基準: n=4675, expectancy=-0.09%
-- 直近20件 MARKET基準: n=20, expectancy=+0.57%
+- 結論: **MARKET SHORTは実行候補。直近EV +0.23% / filled 20/20。**
+- 全期間 MARKET基準: n=4676, expectancy=-0.09%
+- 直近20件 MARKET基準: n=20, expectancy=+0.23%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.57% | **+0.57%** |
+| MARKET | 20/20 | 100.0% | +0.23% | **+0.23%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT | 4/20 | 20.0% | +5.00% | **+1.00%** |
-| LIMIT_1PCT | 19/20 | 95.0% | +0.76% | **+0.72%** |
 | LIMIT_6PCT | 4/20 | 20.0% | +3.47% | **+0.69%** |
-| LIMIT_2PCT | 17/20 | 85.0% | +0.81% | **+0.69%** |
-| ASK | 20/20 | 100.0% | +0.67% | **+0.67%** |
+| LIMIT_FIB1272 | 9/20 | 45.0% | +1.44% | **+0.65%** |
+| LIMIT_8PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +1.21% | **+0.49%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 6/9 | 66.7% | +2.77% | **+1.85%** |
-| LIMIT_1PCT_LONG | 20/20 | 100.0% | +1.35% | **+1.35%** |
-| LIMIT_2PCT_LONG | 17/20 | 85.0% | +1.42% | **+1.21%** |
-| LIMIT_3PCT_LONG | 13/20 | 65.0% | +1.13% | **+0.74%** |
-| ASK_LONG | 20/20 | 100.0% | +0.70% | **+0.70%** |
+| LIMIT_1PCT_LONG | 19/20 | 95.0% | +1.63% | **+1.55%** |
+| LIMIT_2PCT_LONG | 16/20 | 80.0% | +1.76% | **+1.41%** |
+| ASK_LONG | 20/20 | 100.0% | +1.06% | **+1.06%** |
+| LIMIT_3PCT_LONG | 12/20 | 60.0% | +1.21% | **+0.72%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 548件 (Win 138 / Loss 185 / Flat 225) / skip 688件
+- 確定: 548件 (Win 138 / Loss 185 / Flat 225) / skip 689件
 - 成長率目線: 平均log +0.000354 / 幾何平均 +0.035% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T08:13:44.718900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77376.1
-- Funnel: target 768 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-22T08:18:48.277953+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=77488.3
+- Funnel: target 768 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +57.07% | $3,062,716.98 |
-| NEAR/USDT:USDT | +25.30% | $81,140,102.17 |
-| OPG/USDT:USDT | +19.44% | $1,116,859.08 |
-| GRASS/USDT:USDT | +19.30% | $5,040,062.24 |
-| BEAT/USDT:USDT | +13.70% | $7,950,868.37 |
+| BUILDONBOB/USDT:USDT | +46.41% | $3,126,283.53 |
+| NEAR/USDT:USDT | +25.80% | $82,000,798.36 |
+| GRASS/USDT:USDT | +21.22% | $5,079,020.36 |
+| OPG/USDT:USDT | +18.83% | $1,130,883.33 |
+| BEAT/USDT:USDT | +14.75% | $8,006,793.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.28% | +2.27% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
-| ICP/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.03% | +1.02% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.27% | +3.12% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.58% | +2.43% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.89% | +1.73% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.45% | +1.29% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.28% |
 
 ## 5. 次に見るべき不足
 
