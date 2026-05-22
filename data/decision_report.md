@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-21T23:58:47.342518+00:00
+- generated_at: 2026-05-22T00:03:45.337743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4658**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-21T23:58:44.777398+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77578.8
-- Funnel: target 763 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-22T00:03:43.295369+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=77510.1
+- Funnel: target 763 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +17.60% | $1,729,538.34 |
-| GRASS/USDT:USDT | +12.77% | $3,053,587.05 |
-| PLUME/USDT:USDT | +11.16% | $1,464,129.38 |
-| RIVER/USDT:USDT | +7.77% | $10,093,678.22 |
-| NEAR/USDT:USDT | +6.58% | $41,950,217.11 |
+| PEAQ/USDT:USDT | +16.41% | $1,746,376.14 |
+| GRASS/USDT:USDT | +11.18% | $3,069,406.21 |
+| PLUME/USDT:USDT | +11.08% | $1,459,077.99 |
+| RIVER/USDT:USDT | +7.85% | $9,716,284.80 |
+| NEAR/USDT:USDT | +6.25% | $41,750,522.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +1.09% | +1.11% |
-| BABY/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
-| EDGE/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| SPX/USDT:USDT | below_1h_threshold | +0.52% | +0.53% |
+| H/USDT:USDT | below_1h_threshold | +0.53% | +0.62% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.45% |
+| BILL/USDT:USDT | below_1h_threshold | +0.34% | +0.44% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.32% | +0.41% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.40% |
 
 ## 5. 次に見るべき不足
 
