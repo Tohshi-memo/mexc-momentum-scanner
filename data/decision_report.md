@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T19:03:57.662774+00:00
+- generated_at: 2026-05-22T19:09:03.544358+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4735**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$95.25** / 初期 $100.00 (-4.75%)
-- 確定トレード: 60件 (TP 15 / SL 42 / EXP 3)
-- 最新: STXSTOCK/USDT:USDT SL_HIT PnL -1.86% 残高後 $95.25
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$96.20** / 初期 $100.00 (-3.80%)
+- 確定トレード: 61件 (TP 16 / SL 42 / EXP 3)
+- 最新: PLAY/USDT:USDT TP_HIT PnL +8.00% 残高後 $96.20
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T19:03:54.846514+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=76397.8
+- 更新: 2026-05-22T19:09:01.159711+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=76232.8
 - Funnel: target 765 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +72.30% | $35,321,492.66 |
-| BEAT/USDT:USDT | +11.16% | $35,582,916.60 |
-| BILL/USDT:USDT | +9.60% | $13,828,522.01 |
-| GENIUS/USDT:USDT | +2.12% | $6,378,945.20 |
-| PEAQ/USDT:USDT | +1.26% | $1,307,423.39 |
+| BSB/USDT:USDT | +72.64% | $35,601,707.13 |
+| BEAT/USDT:USDT | +11.94% | $35,819,559.61 |
+| BILL/USDT:USDT | +8.93% | $13,943,909.42 |
+| GENIUS/USDT:USDT | +1.76% | $6,417,817.37 |
+| BUILDONBOB/USDT:USDT | +1.42% | $5,844,169.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.66% | +0.79% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.66% | +0.79% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.46% | +0.59% |
-| BILL/USDT:USDT | below_1h_threshold | +0.44% | +0.57% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.43% | +0.56% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.34% | +1.69% |
+| AGT/USDT:USDT | below_1h_threshold | +0.84% | +1.19% |
+| GUA/USDT:USDT | below_1h_threshold | +0.71% | +1.05% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.64% | +0.98% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.49% | +0.84% |
 
 ## 5. 次に見るべき不足
 
