@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T08:39:01.685254+00:00
+- generated_at: 2026-05-22T08:43:58.940589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4676**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T08:38:56.744427+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77307.1
-- Funnel: target 768 → liquid 141 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.8 >= 65=1, 4h RSI 82.5 >= 65=1
+- 更新: 2026-05-22T08:43:52.339855+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77285.3
+- Funnel: target 768 → liquid 141 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 85.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +46.57% | $3,207,301.16 |
-| ALT/USDT:USDT | +36.67% | $1,081,754.68 |
-| NEAR/USDT:USDT | +24.58% | $86,391,962.89 |
-| BEAT/USDT:USDT | +19.91% | $8,367,203.53 |
-| GRASS/USDT:USDT | +16.05% | $5,269,566.56 |
+| BUILDONBOB/USDT:USDT | +46.73% | $3,218,905.21 |
+| ALT/USDT:USDT | +34.52% | $1,104,243.96 |
+| NEAR/USDT:USDT | +24.86% | $87,384,026.31 |
+| BEAT/USDT:USDT | +23.61% | $8,554,761.49 |
+| GRASS/USDT:USDT | +16.48% | $5,317,926.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.14% | +2.22% |
-| ARKM/USDT:USDT | below_1h_threshold | +1.96% | +2.04% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.61% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.52% | +1.62% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.36% | +1.47% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.45% |
+| INJ/USDT:USDT | below_1h_threshold | +1.22% | +1.33% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.09% | +1.20% |
 
 ## 5. 次に見るべき不足
 
