@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-22T10:19:01.729716+00:00
+- generated_at: 2026-05-22T10:23:58.940703+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4683**
+- closed shadow trades: **4684**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4683, expectancy=-0.09%
+- 全期間 MARKET基準: n=4684, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=-0.72%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,18 +24,18 @@
 | LIMIT_7PCT | 4/20 | 20.0% | +5.00% | **+1.00%** |
 | LIMIT_6PCT | 4/20 | 20.0% | +3.47% | **+0.69%** |
 | LIMIT_8PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
-| LIMIT_5PCT | 7/20 | 35.0% | +1.25% | **+0.44%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | +0.57% | **+0.23%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +1.21% | **+0.49%** |
+| LIMIT_FIB1272 | 9/20 | 45.0% | +0.46% | **+0.21%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 6/9 | 66.7% | +3.63% | **+2.42%** |
-| ASK_LONG | 20/20 | 100.0% | +1.41% | **+1.41%** |
+| ASK_LONG | 20/20 | 100.0% | +1.35% | **+1.35%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.47% | **+1.18%** |
-| LIMIT_2PCT_LONG | 12/20 | 60.0% | +1.74% | **+1.04%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.92% | **+0.92%** |
+| LIMIT_2PCT_LONG | 11/20 | 55.0% | +1.34% | **+0.74%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$121.70** / 初期 $100.00 (+21.70%)
-- 確定: 554件 (Win 140 / Loss 185 / Flat 229) / skip 690件
-- 成長率目線: 平均log +0.000354 / 幾何平均 +0.035% per trade / maxDD +4.21%
+- 残高: **$121.84** / 初期 $100.00 (+21.84%)
+- 確定: 555件 (Win 141 / Loss 185 / Flat 229) / skip 690件
+- 成長率目線: 平均log +0.000356 / 幾何平均 +0.036% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EDEN/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $121.70
+- 最新: UB/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.12% 残高後 $121.84
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T10:18:59.643741+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77257.0
+- 更新: 2026-05-22T10:23:56.559058+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77268.1
 - Funnel: target 768 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +44.02% | $3,502,785.70 |
-| GENIUS/USDT:USDT | +34.18% | $1,392,044.13 |
-| ALT/USDT:USDT | +33.31% | $1,580,735.42 |
-| BEAT/USDT:USDT | +29.47% | $11,578,235.38 |
-| NEAR/USDT:USDT | +23.20% | $108,118,363.63 |
+| BUILDONBOB/USDT:USDT | +42.70% | $3,514,528.10 |
+| GENIUS/USDT:USDT | +34.79% | $1,406,497.51 |
+| ALT/USDT:USDT | +34.13% | $1,603,914.67 |
+| BEAT/USDT:USDT | +30.30% | $11,781,073.37 |
+| NEAR/USDT:USDT | +24.08% | $109,059,843.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +3.15% | +3.17% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.02% | +3.03% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.77% | +2.79% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.68% | +2.70% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.66% | +2.67% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.61% | +3.61% |
+| GENIUS/USDT:USDT | below_1h_threshold | +3.60% | +3.60% |
+| UB/USDT:USDT | below_1h_threshold | +3.34% | +3.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.23% | +3.23% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.13% | +3.13% |
 
 ## 5. 次に見るべき不足
 
