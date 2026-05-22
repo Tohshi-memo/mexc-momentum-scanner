@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T00:49:05.560129+00:00
+- generated_at: 2026-05-22T00:53:52.176600+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4658**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T00:49:03.671639+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=77390.1
-- Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-22T00:53:50.058246+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=77384.9
+- Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +12.18% | $1,850,436.83 |
-| GRASS/USDT:USDT | +12.10% | $3,217,142.09 |
-| PLUME/USDT:USDT | +10.31% | $1,513,720.88 |
-| IBMSTOCK/USDT:USDT | +9.47% | $2,063,030.16 |
-| NEAR/USDT:USDT | +8.63% | $43,047,865.96 |
+| GRASS/USDT:USDT | +13.18% | $3,228,741.87 |
+| PEAQ/USDT:USDT | +12.56% | $1,853,347.05 |
+| PLUME/USDT:USDT | +10.85% | $1,515,251.94 |
+| IBMSTOCK/USDT:USDT | +9.60% | $2,088,700.34 |
+| NEAR/USDT:USDT | +8.47% | $43,431,028.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.85% |
-| B/USDT:USDT | below_1h_threshold | +3.48% | +3.73% |
-| SATO/USDT:USDT | below_1h_threshold | +2.12% | +2.37% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.87% | +2.12% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.67% | +1.92% |
+| SATO/USDT:USDT | below_1h_threshold | +3.81% | +4.07% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +3.60% | +3.86% |
+| VVV/USDT:USDT | below_1h_threshold | +2.89% | +3.15% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.82% | +2.08% |
+| JTO/USDT:USDT | below_1h_threshold | +1.54% | +1.80% |
 
 ## 5. 次に見るべき不足
 
