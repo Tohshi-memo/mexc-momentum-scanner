@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T00:53:52.176600+00:00
+- generated_at: 2026-05-22T00:58:53.203335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4658**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T00:53:50.058246+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=77384.9
+- 更新: 2026-05-22T00:58:51.157702+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=77368.9
 - Funnel: target 764 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +13.18% | $3,228,741.87 |
-| PEAQ/USDT:USDT | +12.56% | $1,853,347.05 |
-| PLUME/USDT:USDT | +10.85% | $1,515,251.94 |
-| IBMSTOCK/USDT:USDT | +9.60% | $2,088,700.34 |
-| NEAR/USDT:USDT | +8.47% | $43,431,028.37 |
+| GRASS/USDT:USDT | +13.37% | $3,264,270.08 |
+| PEAQ/USDT:USDT | +11.85% | $1,858,599.71 |
+| PLUME/USDT:USDT | +11.00% | $1,516,966.45 |
+| IBMSTOCK/USDT:USDT | +10.45% | $2,148,776.34 |
+| NEAR/USDT:USDT | +10.02% | $44,464,183.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATO/USDT:USDT | below_1h_threshold | +3.81% | +4.07% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +3.60% | +3.86% |
-| VVV/USDT:USDT | below_1h_threshold | +2.89% | +3.15% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.82% | +2.08% |
-| JTO/USDT:USDT | below_1h_threshold | +1.54% | +1.80% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +4.42% | +4.70% |
+| SATO/USDT:USDT | below_1h_threshold | +4.19% | +4.47% |
+| VVV/USDT:USDT | below_1h_threshold | +3.35% | +3.63% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.12% | +3.40% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.42% | +1.70% |
 
 ## 5. 次に見るべき不足
 
