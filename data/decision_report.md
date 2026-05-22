@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T12:34:03.410987+00:00
+- generated_at: 2026-05-22T12:38:59.824792+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4692**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T12:33:59.347763+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77395.1
-- Funnel: target 768 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.5 >= 65=1, 4h RSI 76.9 >= 65=1
+- 更新: 2026-05-22T12:38:57.464550+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77419.2
+- Funnel: target 768 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +54.04% | $3,988,762.06 |
-| BEAT/USDT:USDT | +40.10% | $15,956,540.13 |
-| GENIUS/USDT:USDT | +39.25% | $2,411,892.40 |
-| ALT/USDT:USDT | +36.24% | $2,798,638.19 |
-| NEAR/USDT:USDT | +24.47% | $129,136,080.81 |
+| BUILDONBOB/USDT:USDT | +51.52% | $4,011,604.71 |
+| BEAT/USDT:USDT | +39.90% | $16,110,003.98 |
+| GENIUS/USDT:USDT | +37.99% | $2,447,162.33 |
+| ALT/USDT:USDT | +35.54% | $2,833,772.00 |
+| NEAR/USDT:USDT | +24.52% | $129,770,924.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.65% | +3.65% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.10% | +3.10% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.45% | +2.45% |
-| INJ/USDT:USDT | below_1h_threshold | +2.12% | +2.12% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.42% | +3.39% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.35% | +3.32% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.92% | +2.89% |
+| PLUME/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
+| INJ/USDT:USDT | below_1h_threshold | +2.25% | +2.21% |
 
 ## 5. 次に見るべき不足
 
