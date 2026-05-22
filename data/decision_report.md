@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T14:52:09.292695+00:00
+- generated_at: 2026-05-22T14:56:13.320139+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4709**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T14:52:06.955415+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.66% price=76743.7
+- 更新: 2026-05-22T14:56:11.071336+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.61% price=76780.7
 - Funnel: target 768 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1
+- Strict後reject: 4h RSI 81.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +73.41% | $4,560,704.65 |
-| GENIUS/USDT:USDT | +45.22% | $3,824,447.54 |
-| BEAT/USDT:USDT | +37.71% | $24,707,232.32 |
-| ALT/USDT:USDT | +31.52% | $3,325,361.13 |
-| AGT/USDT:USDT | +29.53% | $1,024,512.23 |
+| BUILDONBOB/USDT:USDT | +76.13% | $4,597,567.04 |
+| GENIUS/USDT:USDT | +44.63% | $3,888,785.51 |
+| BEAT/USDT:USDT | +39.16% | $25,004,299.83 |
+| ALT/USDT:USDT | +32.35% | $3,328,759.75 |
+| AGT/USDT:USDT | +29.24% | $1,026,371.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.44% | +4.10% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.66% | +3.32% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.11% | +2.78% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +2.42% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +2.18% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +4.32% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.56% | +4.17% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.33% | +2.94% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.66% | +2.28% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.56% | +2.17% |
 
 ## 5. 次に見るべき不足
 
