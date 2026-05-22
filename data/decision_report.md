@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T01:13:52.955880+00:00
+- generated_at: 2026-05-22T01:18:46.702921+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4658**
 
@@ -54,31 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T01:13:47.975969+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=77405.9
-- Funnel: target 764 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-22T01:18:44.656095+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=77410.3
+- Funnel: target 764 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEAQ/USDT:USDT | +13.82% | $1,869,843.35 |
-| PLUME/USDT:USDT | +12.86% | $1,524,859.07 |
-| GRASS/USDT:USDT | +10.99% | $3,332,364.86 |
-| NEAR/USDT:USDT | +10.63% | $44,629,128.54 |
-| IBMSTOCK/USDT:USDT | +9.25% | $2,027,609.37 |
+| PEAQ/USDT:USDT | +13.60% | $1,872,793.33 |
+| PLUME/USDT:USDT | +13.25% | $1,537,761.11 |
+| GRASS/USDT:USDT | +11.66% | $3,343,355.67 |
+| NEAR/USDT:USDT | +10.52% | $45,145,475.81 |
+| IBMSTOCK/USDT:USDT | +9.03% | $2,036,761.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEAQ/USDT:USDT | below_1h_threshold | +1.67% | +1.60% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
-| LIT/USDT:USDT | below_1h_threshold | +1.39% | +1.31% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.25% | +1.17% |
-| VVV/USDT:USDT | below_1h_threshold | +1.04% | +0.96% |
+| BILL/USDT:USDT | below_1h_threshold | +4.91% | +4.83% |
+| VVV/USDT:USDT | below_1h_threshold | +1.73% | +1.64% |
+| PEAQ/USDT:USDT | below_1h_threshold | +1.53% | +1.45% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.46% | +1.38% |
+| LIT/USDT:USDT | below_1h_threshold | +1.34% | +1.25% |
 
 ## 5. 次に見るべき不足
 
