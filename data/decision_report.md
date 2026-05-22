@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T05:48:54.626792+00:00
+- generated_at: 2026-05-22T05:53:51.167799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4668**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T05:48:52.582127+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77557.0
+- 更新: 2026-05-22T05:53:49.105481+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77605.7
 - Funnel: target 766 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +71.06% | $2,299,714.96 |
-| NEAR/USDT:USDT | +21.37% | $65,425,338.41 |
-| GRASS/USDT:USDT | +17.89% | $4,113,622.03 |
-| PLUME/USDT:USDT | +11.08% | $1,790,490.33 |
-| PEAQ/USDT:USDT | +9.20% | $1,992,097.73 |
+| BUILDONBOB/USDT:USDT | +70.94% | $2,337,745.59 |
+| NEAR/USDT:USDT | +21.98% | $67,000,687.95 |
+| GRASS/USDT:USDT | +17.54% | $4,123,967.46 |
+| PLUME/USDT:USDT | +11.31% | $1,796,637.26 |
+| PEAQ/USDT:USDT | +9.56% | $1,992,660.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.30% | +3.38% |
-| LIT/USDT:USDT | below_1h_threshold | +2.72% | +2.80% |
-| JUP/USDT:USDT | below_1h_threshold | +2.30% | +2.38% |
-| PLUME/USDT:USDT | below_1h_threshold | +2.21% | +2.29% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.65% | +1.73% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.94% | +2.96% |
+| JUP/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| PLUME/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
+| LIT/USDT:USDT | below_1h_threshold | +1.79% | +1.81% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.79% | +1.81% |
 
 ## 5. 次に見るべき不足
 
