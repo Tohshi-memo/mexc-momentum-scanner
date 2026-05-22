@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T16:24:06.687759+00:00
+- generated_at: 2026-05-22T16:29:24.836430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4716**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T16:24:04.398638+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=76845.5
+- 更新: 2026-05-22T16:29:22.548703+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=76878.9
 - Funnel: target 768 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +6.49% | $25,476,090.99 |
-| GENIUS/USDT:USDT | +4.53% | $4,682,025.69 |
-| USELESS/USDT:USDT | +3.49% | $1,204,274.62 |
-| PEAQ/USDT:USDT | +3.23% | $1,299,833.16 |
-| BUILDONBOB/USDT:USDT | +2.66% | $5,545,816.66 |
+| BSB/USDT:USDT | +7.88% | $25,654,142.56 |
+| GENIUS/USDT:USDT | +3.16% | $4,778,543.27 |
+| USELESS/USDT:USDT | +2.72% | $1,207,446.23 |
+| PEAQ/USDT:USDT | +2.40% | $1,303,165.45 |
+| PENDLE/USDT:USDT | +1.38% | $2,969,872.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +4.60% | +4.49% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.51% | +3.39% |
-| PEAQ/USDT:USDT | below_1h_threshold | +3.30% | +3.18% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +2.51% | +2.39% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.79% | +1.67% |
+| GENIUS/USDT:USDT | below_1h_threshold | +3.63% | +3.47% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.73% | +2.57% |
+| PEAQ/USDT:USDT | below_1h_threshold | +2.41% | +2.25% |
+| ICP/USDT:USDT | below_1h_threshold | +1.43% | +1.27% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.41% | +1.25% |
 
 ## 5. 次に見るべき不足
 
