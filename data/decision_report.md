@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T10:28:52.925167+00:00
+- generated_at: 2026-05-22T10:33:59.148040+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4684**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T10:28:48.586991+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77309.0
-- Funnel: target 768 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-22T10:33:53.776193+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77306.6
+- Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.6 >= 65=1, 4h RSI 81.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +41.76% | $3,527,878.00 |
-| ALT/USDT:USDT | +35.88% | $1,630,596.42 |
-| GENIUS/USDT:USDT | +35.04% | $1,451,042.29 |
-| BEAT/USDT:USDT | +30.34% | $11,849,202.27 |
-| NEAR/USDT:USDT | +24.47% | $110,401,636.94 |
+| BUILDONBOB/USDT:USDT | +42.75% | $3,536,782.04 |
+| ALT/USDT:USDT | +39.80% | $1,691,421.79 |
+| GENIUS/USDT:USDT | +35.42% | $1,465,363.62 |
+| BEAT/USDT:USDT | +31.12% | $12,153,326.73 |
+| EDEN/USDT:USDT | +24.56% | $21,065,281.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.47% | +4.42% |
-| GENIUS/USDT:USDT | below_1h_threshold | +3.81% | +3.76% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.72% | +3.67% |
-| ALT/USDT:USDT | below_1h_threshold | +3.70% | +3.65% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.54% | +3.49% |
+| GENIUS/USDT:USDT | below_1h_threshold | +4.00% | +3.95% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.84% | +3.79% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.79% | +3.74% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.34% | +3.29% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
 
 ## 5. 次に見るべき不足
 
