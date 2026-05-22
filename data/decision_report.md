@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T13:24:02.874822+00:00
+- generated_at: 2026-05-22T13:28:56.244942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4697**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T13:24:00.571418+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=77362.7
+- 更新: 2026-05-22T13:28:53.936249+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=77304.2
 - Funnel: target 768 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.8 >= 65=1
+- Strict後reject: 4h RSI 81.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +52.51% | $4,134,233.96 |
-| BEAT/USDT:USDT | +44.89% | $17,829,414.17 |
-| ALT/USDT:USDT | +34.49% | $3,070,395.71 |
-| GENIUS/USDT:USDT | +30.40% | $2,901,780.47 |
-| NEAR/USDT:USDT | +27.90% | $142,927,937.93 |
+| BUILDONBOB/USDT:USDT | +54.14% | $4,143,728.02 |
+| BEAT/USDT:USDT | +44.92% | $18,029,412.61 |
+| GENIUS/USDT:USDT | +35.40% | $2,961,116.70 |
+| ALT/USDT:USDT | +33.11% | $3,087,397.81 |
+| NEAR/USDT:USDT | +27.63% | $143,525,471.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.40% | +2.56% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.03% | +2.20% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.75% | +1.92% |
-| WLD/USDT:USDT | below_1h_threshold | +1.65% | +1.82% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.48% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.23% | +3.47% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.99% | +3.23% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.80% | +3.04% |
+| JTO/USDT:USDT | below_1h_threshold | +2.75% | +2.99% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.86% |
 
 ## 5. 次に見るべき不足
 
