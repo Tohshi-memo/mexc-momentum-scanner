@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T13:39:04.738460+00:00
+- generated_at: 2026-05-22T13:43:58.232408+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4698**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T13:38:59.781547+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=77221.3
-- Funnel: target 768 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1
+- 更新: 2026-05-22T13:43:53.307462+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=77162.3
+- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 79.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +56.01% | $4,184,427.88 |
-| BEAT/USDT:USDT | +46.86% | $18,401,611.61 |
-| GENIUS/USDT:USDT | +34.00% | $3,055,784.14 |
-| ALT/USDT:USDT | +32.61% | $3,123,375.22 |
-| NEAR/USDT:USDT | +28.40% | $147,211,323.00 |
+| BUILDONBOB/USDT:USDT | +53.69% | $4,195,147.51 |
+| BEAT/USDT:USDT | +47.55% | $18,482,770.93 |
+| GENIUS/USDT:USDT | +39.00% | $3,118,660.00 |
+| ALT/USDT:USDT | +29.70% | $3,170,579.93 |
+| NEAR/USDT:USDT | +28.46% | $148,325,927.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.99% | +4.34% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.98% | +3.33% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +2.80% | +3.15% |
-| JTO/USDT:USDT | below_1h_threshold | +2.60% | +2.95% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.49% | +2.84% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.43% | +4.85% |
+| SPOTSTOCK/USDT:USDT | below_1h_threshold | +4.33% | +4.75% |
+| UB/USDT:USDT | below_1h_threshold | +3.14% | +3.56% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.09% | +3.52% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +2.09% |
 
 ## 5. 次に見るべき不足
 
