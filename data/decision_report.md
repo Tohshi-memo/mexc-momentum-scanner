@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T20:28:54.569711+00:00
+- generated_at: 2026-05-22T20:33:58.837326+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4738**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T20:28:52.484525+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=75896.9
-- Funnel: target 765 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-22T20:33:56.715957+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=75844.7
+- Funnel: target 764 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +73.85% | $38,000,422.18 |
-| BILL/USDT:USDT | +17.09% | $15,820,251.52 |
-| BEAT/USDT:USDT | +8.90% | $37,994,826.92 |
-| BUILDONBOB/USDT:USDT | +5.59% | $6,022,577.03 |
-| GUA/USDT:USDT | +3.06% | $1,159,069.60 |
+| BSB/USDT:USDT | +72.98% | $38,202,273.46 |
+| BILL/USDT:USDT | +17.39% | $15,890,070.49 |
+| BEAT/USDT:USDT | +8.80% | $38,109,625.31 |
+| LAB/USDT:USDT | +2.86% | $28,888,726.74 |
+| GUA/USDT:USDT | +2.51% | $1,161,697.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.45% | +3.35% |
-| GUA/USDT:USDT | below_1h_threshold | +2.78% | +2.68% |
-| BSB/USDT:USDT | below_1h_threshold | +2.10% | +2.01% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.32% | +1.23% |
-| FUTUSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.20% |
+| GUA/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.48% | +1.46% |
+| BSB/USDT:USDT | below_1h_threshold | +1.26% | +1.23% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.01% |
+| INJ/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
 
 ## 5. 次に見るべき不足
 
