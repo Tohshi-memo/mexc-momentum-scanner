@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-22T19:59:08.262176+00:00
+- generated_at: 2026-05-22T20:03:59.014144+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4737**
+- closed shadow trades: **4738**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4737, expectancy=-0.09%
+- 全期間 MARKET基準: n=4738, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=-0.88%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_9PCT | 6/20 | 30.0% | +4.29% | **+1.29%** |
+| LIMIT_9PCT | 5/20 | 25.0% | +3.55% | **+0.89%** |
 | LIMIT_10PCT | 4/20 | 20.0% | +3.73% | **+0.75%** |
-| LIMIT_8PCT | 7/20 | 35.0% | +2.12% | **+0.74%** |
-| LIMIT_FIB1618 | 3/20 | 15.0% | +4.29% | **+0.64%** |
-| LIMIT_ATR | 10/20 | 50.0% | +0.98% | **+0.49%** |
+| LIMIT_FIB1618 | 2/20 | 10.0% | +5.46% | **+0.55%** |
+| LIMIT_8PCT | 6/20 | 30.0% | +1.14% | **+0.34%** |
+| LIMIT_7PCT | 6/20 | 30.0% | +0.54% | **+0.16%** |
 
 ### シャドウ上位 LONG
 
@@ -47,38 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$125.06** / 初期 $100.00 (+25.06%)
-- 確定: 583件 (Win 149 / Loss 188 / Flat 246) / skip 715件
-- 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +4.21%
+- 確定: 584件 (Win 149 / Loss 188 / Flat 247) / skip 715件
+- 成長率目線: 平均log +0.000383 / 幾何平均 +0.038% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BUILDONBOB/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $125.06
+- 最新: BILL/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $125.06
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T19:59:03.775687+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.86% price=75837.6
-- Funnel: target 765 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-22T20:03:56.626427+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=75873.5
+- Funnel: target 765 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +69.34% | $37,301,265.23 |
-| BILL/USDT:USDT | +20.45% | $15,169,341.95 |
-| BEAT/USDT:USDT | +7.62% | $37,383,702.40 |
-| LAB/USDT:USDT | +4.42% | $28,929,333.15 |
-| GENIUS/USDT:USDT | +1.90% | $6,688,595.29 |
+| BSB/USDT:USDT | +69.66% | $36,998,104.98 |
+| BILL/USDT:USDT | +19.82% | $15,254,719.60 |
+| BEAT/USDT:USDT | +9.08% | $37,341,110.90 |
+| LAB/USDT:USDT | +4.13% | $28,120,081.45 |
+| GUA/USDT:USDT | +1.99% | $1,145,838.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.23% | +5.10% |
-| BSB/USDT:USDT | below_1h_threshold | +4.06% | +4.93% |
-| GUA/USDT:USDT | below_1h_threshold | +3.03% | +3.89% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.93% | +2.80% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.64% | +2.51% |
+| GUA/USDT:USDT | below_1h_threshold | +1.90% | +1.84% |
+| VVV/USDT:USDT | below_1h_threshold | +0.98% | +0.91% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.79% | +0.73% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.56% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.57% | +0.51% |
 
 ## 5. 次に見るべき不足
 
