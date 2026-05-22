@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T15:00:12.745670+00:00
+- generated_at: 2026-05-22T15:04:13.371019+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4711**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T15:00:09.835339+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.66% price=76742.3
-- Funnel: target 768 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1
+- 更新: 2026-05-22T15:04:08.616274+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=76797.1
+- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +81.62% | $4,651,064.46 |
-| GENIUS/USDT:USDT | +45.40% | $3,945,784.42 |
-| ALT/USDT:USDT | +31.80% | $3,332,602.44 |
-| BEAT/USDT:USDT | +31.70% | $25,679,802.04 |
-| AGT/USDT:USDT | +30.47% | $1,028,189.86 |
+| BUILDONBOB/USDT:USDT | +82.20% | $4,771,213.16 |
+| GENIUS/USDT:USDT | +46.28% | $4,006,088.32 |
+| BEAT/USDT:USDT | +40.39% | $25,525,273.15 |
+| ALT/USDT:USDT | +30.36% | $3,337,880.41 |
+| AGT/USDT:USDT | +29.61% | $1,026,626.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +4.25% | +4.92% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.82% | +3.48% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.40% | +3.06% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.87% | +2.53% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.65% | +2.32% |
+| WLD/USDT:USDT | below_1h_threshold | +1.18% | +1.09% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.10% | +1.02% |
+| VVV/USDT:USDT | below_1h_threshold | +0.92% | +0.84% |
+| ARKM/USDT:USDT | below_1h_threshold | +0.87% | +0.79% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.85% | +0.77% |
 
 ## 5. 次に見るべき不足
 
