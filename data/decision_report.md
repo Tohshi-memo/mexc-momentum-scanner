@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T02:43:49.552185+00:00
+- generated_at: 2026-05-22T02:48:55.865835+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4659**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T02:43:47.496879+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77609.3
+- 更新: 2026-05-22T02:48:53.806250+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77575.3
 - Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NEAR/USDT:USDT | +16.66% | $50,759,232.78 |
-| GRASS/USDT:USDT | +15.72% | $3,570,257.07 |
-| PEAQ/USDT:USDT | +13.37% | $1,928,451.13 |
-| PLUME/USDT:USDT | +11.86% | $1,691,232.54 |
-| BILL/USDT:USDT | +9.68% | $15,329,068.89 |
+| GRASS/USDT:USDT | +16.94% | $3,590,240.61 |
+| NEAR/USDT:USDT | +15.22% | $52,049,034.65 |
+| PLUME/USDT:USDT | +12.17% | $1,703,130.14 |
+| PEAQ/USDT:USDT | +11.53% | $1,932,023.31 |
+| IBMSTOCK/USDT:USDT | +8.96% | $2,267,145.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +4.46% | +4.42% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +4.35% | +4.32% |
-| ICP/USDT:USDT | below_1h_threshold | +3.37% | +3.33% |
-| NIL/USDT:USDT | below_1h_threshold | +3.25% | +3.22% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.85% | +2.81% |
+| NIL/USDT:USDT | below_1h_threshold | +3.88% | +3.88% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.27% | +3.27% |
+| ICP/USDT:USDT | below_1h_threshold | +3.25% | +3.26% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.12% | +3.13% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.49% | +2.50% |
 
 ## 5. 次に見るべき不足
 
