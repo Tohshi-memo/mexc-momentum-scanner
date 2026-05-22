@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T07:33:57.833938+00:00
+- generated_at: 2026-05-22T07:38:53.115135+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4674**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T07:33:55.486654+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77437.0
-- Funnel: target 768 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.0 >= 65=1
+- 更新: 2026-05-22T07:38:50.599856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77447.0
+- Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.7 >= 65=1, 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +56.27% | $2,845,205.77 |
-| NEAR/USDT:USDT | +23.36% | $77,444,287.64 |
-| GRASS/USDT:USDT | +20.24% | $4,845,168.05 |
-| PLUME/USDT:USDT | +12.71% | $1,850,552.53 |
-| FET/USDT:USDT | +10.21% | $6,367,370.94 |
+| BUILDONBOB/USDT:USDT | +54.13% | $2,866,768.46 |
+| NEAR/USDT:USDT | +24.08% | $78,197,385.56 |
+| GRASS/USDT:USDT | +19.81% | $4,873,137.61 |
+| OPG/USDT:USDT | +19.69% | $1,000,854.50 |
+| PLUME/USDT:USDT | +13.10% | $1,854,256.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.13% | +3.07% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.69% | +1.62% |
-| TIA/USDT:USDT | below_1h_threshold | +1.52% | +1.45% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.32% | +1.25% |
-| ICP/USDT:USDT | below_1h_threshold | +1.30% | +1.24% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.79% | +2.71% |
+| ARKM/USDT:USDT | below_1h_threshold | +2.23% | +2.15% |
+| WLD/USDT:USDT | below_1h_threshold | +2.23% | +2.15% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.96% | +1.88% |
+| ICP/USDT:USDT | below_1h_threshold | +1.82% | +1.74% |
 
 ## 5. 次に見るべき不足
 
