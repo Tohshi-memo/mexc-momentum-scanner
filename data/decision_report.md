@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T13:59:15.472427+00:00
+- generated_at: 2026-05-22T14:04:03.282787+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4703**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T13:59:08.597771+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=77198.5
-- Funnel: target 768 → liquid 138 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.9 >= 65=1, 4h RSI 81.3 >= 65=1, 4h RSI 79.9 >= 65=1, 4h RSI 71.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-22T14:04:01.188532+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77133.8
+- Funnel: target 768 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +56.27% | $4,228,651.25 |
-| BEAT/USDT:USDT | +54.14% | $19,917,413.29 |
-| GENIUS/USDT:USDT | +41.77% | $3,359,684.45 |
-| ALT/USDT:USDT | +32.44% | $3,214,837.07 |
-| AGT/USDT:USDT | +29.49% | $1,006,484.86 |
+| BUILDONBOB/USDT:USDT | +58.01% | $4,251,969.06 |
+| BEAT/USDT:USDT | +55.36% | $19,668,608.41 |
+| GENIUS/USDT:USDT | +39.54% | $3,392,166.51 |
+| ALT/USDT:USDT | +32.35% | $3,218,055.82 |
+| AGT/USDT:USDT | +29.16% | $1,003,756.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.98% | +5.36% |
-| SPOTSTOCK/USDT:USDT | below_1h_threshold | +3.71% | +4.09% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +2.89% | +3.27% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.48% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.51% | +1.89% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.43% | +1.59% |
+| SPOTSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.99% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.81% | +0.96% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.73% | +0.89% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.68% |
 
 ## 5. 次に見るべき不足
 
