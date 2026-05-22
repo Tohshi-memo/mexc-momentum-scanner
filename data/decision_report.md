@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T18:34:06.076384+00:00
+- generated_at: 2026-05-22T18:39:30.955989+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4734**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T18:34:03.982204+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=76715.0
+- 更新: 2026-05-22T18:39:28.938578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=76630.1
 - Funnel: target 765 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +61.33% | $33,894,001.40 |
-| BEAT/USDT:USDT | +9.18% | $33,900,006.72 |
-| BILL/USDT:USDT | +7.42% | $13,995,927.47 |
-| PEAQ/USDT:USDT | +3.85% | $1,311,737.04 |
-| INJ/USDT:USDT | +2.39% | $35,335,008.49 |
+| BSB/USDT:USDT | +63.24% | $34,455,984.48 |
+| BEAT/USDT:USDT | +8.99% | $34,042,043.81 |
+| BILL/USDT:USDT | +7.81% | $14,044,224.68 |
+| PEAQ/USDT:USDT | +3.91% | $1,312,923.24 |
+| SKHYNIXSTOCK/USDT:USDT | +1.50% | $3,056,165.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
-| BILL/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
-| FUTUSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.87% |
-| PEAQ/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.61% | +0.61% |
+| LAB/USDT:USDT | below_1h_threshold | +1.93% | +2.04% |
+| BILL/USDT:USDT | below_1h_threshold | +1.30% | +1.41% |
+| VVV/USDT:USDT | below_1h_threshold | +0.73% | +0.84% |
+| PEAQ/USDT:USDT | below_1h_threshold | +0.69% | +0.80% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.66% | +0.77% |
 
 ## 5. 次に見るべき不足
 
