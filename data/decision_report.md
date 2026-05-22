@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T02:38:56.323425+00:00
+- generated_at: 2026-05-22T02:43:49.552185+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4659**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T02:38:54.216300+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77601.8
+- 更新: 2026-05-22T02:43:47.496879+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77609.3
 - Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +16.29% | $3,549,702.79 |
-| NEAR/USDT:USDT | +15.61% | $50,384,567.58 |
-| PEAQ/USDT:USDT | +13.53% | $1,925,614.84 |
-| PLUME/USDT:USDT | +11.78% | $1,684,250.02 |
-| BILL/USDT:USDT | +8.66% | $15,304,033.38 |
+| NEAR/USDT:USDT | +16.66% | $50,759,232.78 |
+| GRASS/USDT:USDT | +15.72% | $3,570,257.07 |
+| PEAQ/USDT:USDT | +13.37% | $1,928,451.13 |
+| PLUME/USDT:USDT | +11.86% | $1,691,232.54 |
+| BILL/USDT:USDT | +9.68% | $15,329,068.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.64% | +4.61% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.47% | +3.44% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.72% | +2.70% |
-| ICP/USDT:USDT | below_1h_threshold | +2.56% | +2.53% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.48% | +2.45% |
+| NEAR/USDT:USDT | below_1h_threshold | +4.46% | +4.42% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.35% | +4.32% |
+| ICP/USDT:USDT | below_1h_threshold | +3.37% | +3.33% |
+| NIL/USDT:USDT | below_1h_threshold | +3.25% | +3.22% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.85% | +2.81% |
 
 ## 5. 次に見るべき不足
 
