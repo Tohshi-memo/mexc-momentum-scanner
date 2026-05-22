@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T10:44:08.436086+00:00
+- generated_at: 2026-05-22T10:48:58.074486+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4687**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T10:44:03.138432+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77299.7
+- 更新: 2026-05-22T10:48:53.452536+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77294.6
 - Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 82.9 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +42.57% | $3,553,624.44 |
-| ALT/USDT:USDT | +34.31% | $1,801,225.44 |
-| GENIUS/USDT:USDT | +33.10% | $1,520,646.58 |
-| BEAT/USDT:USDT | +30.41% | $12,601,450.33 |
-| EDEN/USDT:USDT | +27.85% | $21,388,964.11 |
+| BUILDONBOB/USDT:USDT | +44.46% | $3,561,916.77 |
+| ALT/USDT:USDT | +33.80% | $1,814,897.82 |
+| GENIUS/USDT:USDT | +32.54% | $1,530,665.42 |
+| EDEN/USDT:USDT | +29.50% | $21,549,608.31 |
+| BEAT/USDT:USDT | +28.89% | $12,711,318.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.31% | +3.27% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.25% | +3.20% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.59% | +2.55% |
-| ALT/USDT:USDT | below_1h_threshold | +2.48% | +2.44% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.41% | +2.37% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.59% | +3.55% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +3.45% | +3.42% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.28% | +3.24% |
+| PEAQ/USDT:USDT | below_1h_threshold | +2.88% | +2.85% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.80% | +2.76% |
 
 ## 5. 次に見るべき不足
 
