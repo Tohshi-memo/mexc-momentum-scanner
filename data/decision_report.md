@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T08:03:57.326161+00:00
+- generated_at: 2026-05-22T08:08:53.585523+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4675**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T08:03:55.272596+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77415.2
-- Funnel: target 768 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-22T08:08:51.551822+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77363.2
+- Funnel: target 768 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +63.26% | $3,018,906.77 |
-| NEAR/USDT:USDT | +24.30% | $79,874,134.49 |
-| GRASS/USDT:USDT | +21.95% | $4,977,543.95 |
-| OPG/USDT:USDT | +18.54% | $1,079,137.14 |
-| PLUME/USDT:USDT | +13.79% | $1,853,503.44 |
+| BUILDONBOB/USDT:USDT | +56.07% | $3,046,930.46 |
+| NEAR/USDT:USDT | +24.58% | $80,581,053.69 |
+| GRASS/USDT:USDT | +20.46% | $5,006,042.19 |
+| OPG/USDT:USDT | +18.95% | $1,094,700.75 |
+| PLUME/USDT:USDT | +13.87% | $1,855,181.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +2.53% | +2.47% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.27% | +2.21% |
-| PLUME/USDT:USDT | below_1h_threshold | +1.10% | +1.04% |
-| ARKM/USDT:USDT | below_1h_threshold | +1.09% | +1.03% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.08% | +1.01% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.09% | +2.10% |
+| PLUME/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
+| ICP/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
 
 ## 5. 次に見るべき不足
 
