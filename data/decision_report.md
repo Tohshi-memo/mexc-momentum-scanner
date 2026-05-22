@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-22T02:04:53.279581+00:00
+- generated_at: 2026-05-22T02:09:09.490067+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4658**
+- closed shadow trades: **4659**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.85% / filled 20/20。**
-- 全期間 MARKET基準: n=4658, expectancy=-0.09%
+- 全期間 MARKET基準: n=4659, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=+1.85%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,19 +23,19 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.85% | **+1.85%** |
 | ASK | 20/20 | 100.0% | +1.32% | **+1.32%** |
+| LIMIT_2PCT | 14/20 | 70.0% | +1.79% | **+1.26%** |
+| LIMIT_3PCT | 12/20 | 60.0% | +2.03% | **+1.22%** |
 | LIMIT_1PCT | 16/20 | 80.0% | +1.14% | **+0.91%** |
-| LIMIT_2PCT | 13/20 | 65.0% | +1.32% | **+0.86%** |
-| LIMIT_3PCT | 11/20 | 55.0% | +1.48% | **+0.82%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 2/5 | 40.0% | +1.63% | **+0.65%** |
-| LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +1.10% | **+0.16%** |
+| LIMIT_9PCT_LONG | 2/20 | 10.0% | +1.10% | **+0.11%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +0.02% | **+0.02%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.00% | **+0.00%** |
+| ASK_LONG | 20/20 | 100.0% | -0.26% | **-0.26%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定: 547件 (Win 138 / Loss 185 / Flat 224) / skip 672件
-- 成長率目線: 平均log +0.000355 / 幾何平均 +0.035% per trade / maxDD +4.21%
+- 確定: 548件 (Win 138 / Loss 185 / Flat 225) / skip 672件
+- 成長率目線: 平均log +0.000354 / 幾何平均 +0.035% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SPOTSTOCK/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $121.41
+- 最新: SKYAI/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $121.41
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T02:04:51.187764+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77648.9
+- 更新: 2026-05-22T02:09:07.154535+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77630.8
 - Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLUME/USDT:USDT | +15.19% | $1,650,902.04 |
-| GRASS/USDT:USDT | +13.69% | $3,424,077.68 |
-| NEAR/USDT:USDT | +13.39% | $48,086,728.08 |
-| PEAQ/USDT:USDT | +11.79% | $1,905,694.99 |
-| BILL/USDT:USDT | +9.77% | $15,042,034.95 |
+| NEAR/USDT:USDT | +14.56% | $48,452,639.55 |
+| PEAQ/USDT:USDT | +14.28% | $1,911,050.44 |
+| PLUME/USDT:USDT | +13.33% | $1,661,112.68 |
+| GRASS/USDT:USDT | +12.66% | $3,428,956.76 |
+| BILL/USDT:USDT | +9.85% | $15,062,656.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +1.44% | +1.35% |
-| BILL/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
-| WLD/USDT:USDT | below_1h_threshold | +0.95% | +0.86% |
-| ICP/USDT:USDT | below_1h_threshold | +0.89% | +0.80% |
-| ARKM/USDT:USDT | below_1h_threshold | +0.88% | +0.80% |
+| PEAQ/USDT:USDT | below_1h_threshold | +2.76% | +2.70% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.53% | +2.46% |
+| NIL/USDT:USDT | below_1h_threshold | +1.64% | +1.57% |
+| ICP/USDT:USDT | below_1h_threshold | +1.51% | +1.45% |
+| DASH/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
 
 ## 5. 次に見るべき不足
 
