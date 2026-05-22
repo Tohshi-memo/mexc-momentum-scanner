@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T07:48:49.815652+00:00
+- generated_at: 2026-05-22T07:53:58.105083+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4674**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T07:48:47.295971+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77412.6
-- Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1, 4h RSI 66.9 >= 65=1
+- 更新: 2026-05-22T07:53:55.310277+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77402.5
+- Funnel: target 768 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1, 4h RSI 66.6 >= 65=1, 4h RSI 78.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +58.27% | $2,911,960.93 |
-| NEAR/USDT:USDT | +23.92% | $79,332,235.56 |
-| GRASS/USDT:USDT | +20.57% | $4,926,622.34 |
-| OPG/USDT:USDT | +16.75% | $1,041,810.39 |
-| PLUME/USDT:USDT | +13.10% | $1,864,539.01 |
+| BUILDONBOB/USDT:USDT | +58.45% | $2,932,296.54 |
+| NEAR/USDT:USDT | +24.03% | $79,698,168.78 |
+| GRASS/USDT:USDT | +20.08% | $4,950,418.69 |
+| OPG/USDT:USDT | +18.71% | $1,069,721.07 |
+| PLUME/USDT:USDT | +12.71% | $1,865,198.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.50% | +4.47% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.67% | +3.63% |
-| WLD/USDT:USDT | below_1h_threshold | +3.55% | +3.52% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.86% | +2.83% |
-| ARKM/USDT:USDT | below_1h_threshold | +2.68% | +2.64% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.82% | +3.80% |
+| WLD/USDT:USDT | below_1h_threshold | +3.45% | +3.42% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.47% | +2.45% |
+| ARKM/USDT:USDT | below_1h_threshold | +2.38% | +2.36% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.91% | +1.89% |
 
 ## 5. 次に見るべき不足
 
