@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T11:29:03.067790+00:00
+- generated_at: 2026-05-22T11:33:54.955858+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4690**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T11:28:58.552208+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77270.7
+- 更新: 2026-05-22T11:33:50.287412+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77266.5
 - Funnel: target 768 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +51.03% | $3,800,055.51 |
-| ALT/USDT:USDT | +35.70% | $1,952,286.51 |
-| GENIUS/USDT:USDT | +33.10% | $1,674,635.94 |
-| BEAT/USDT:USDT | +31.57% | $13,034,608.89 |
-| EDEN/USDT:USDT | +26.45% | $22,898,802.62 |
+| BUILDONBOB/USDT:USDT | +46.88% | $3,818,532.63 |
+| ALT/USDT:USDT | +36.48% | $1,963,473.29 |
+| GENIUS/USDT:USDT | +33.15% | $1,699,517.03 |
+| BEAT/USDT:USDT | +31.74% | $13,130,212.27 |
+| EDEN/USDT:USDT | +25.87% | $22,961,119.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +2.96% | +2.98% |
-| OPG/USDT:USDT | below_1h_threshold | +1.91% | +1.93% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.90% | +1.91% |
-| WLD/USDT:USDT | below_1h_threshold | +1.51% | +1.53% |
-| FET/USDT:USDT | below_1h_threshold | +1.12% | +1.13% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.66% | +2.68% |
+| OPG/USDT:USDT | below_1h_threshold | +2.29% | +2.31% |
+| WLD/USDT:USDT | below_1h_threshold | +1.72% | +1.74% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.56% | +1.58% |
+| BILL/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
 
 ## 5. 次に見るべき不足
 
