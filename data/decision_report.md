@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T07:28:53.954670+00:00
+- generated_at: 2026-05-22T07:33:57.833938+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4674**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T07:28:51.387829+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=77469.0
+- 更新: 2026-05-22T07:33:55.486654+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77437.0
 - Funnel: target 768 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1
+- Strict後reject: 4h RSI 67.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +57.73% | $2,812,869.82 |
-| NEAR/USDT:USDT | +23.25% | $76,842,637.00 |
-| GRASS/USDT:USDT | +20.24% | $4,819,834.81 |
-| PLUME/USDT:USDT | +13.02% | $1,843,985.73 |
-| FET/USDT:USDT | +9.84% | $6,324,216.37 |
+| BUILDONBOB/USDT:USDT | +56.27% | $2,845,205.77 |
+| NEAR/USDT:USDT | +23.36% | $77,444,287.64 |
+| GRASS/USDT:USDT | +20.24% | $4,845,168.05 |
+| PLUME/USDT:USDT | +12.71% | $1,850,552.53 |
+| FET/USDT:USDT | +10.21% | $6,367,370.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_1h_threshold | +1.93% | +1.83% |
-| TIA/USDT:USDT | below_1h_threshold | +1.89% | +1.78% |
-| WLD/USDT:USDT | below_1h_threshold | +1.79% | +1.69% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.69% | +1.58% |
-| AERO/USDT:USDT | below_1h_threshold | +1.29% | +1.18% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.13% | +3.07% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.69% | +1.62% |
+| TIA/USDT:USDT | below_1h_threshold | +1.52% | +1.45% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.32% | +1.25% |
+| ICP/USDT:USDT | below_1h_threshold | +1.30% | +1.24% |
 
 ## 5. 次に見るべき不足
 
