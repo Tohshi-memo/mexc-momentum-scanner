@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T16:14:16.682447+00:00
+- generated_at: 2026-05-22T16:18:57.998200+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4716**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T16:14:14.580017+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=76845.3
-- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-22T16:18:55.462042+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=76804.7
+- Funnel: target 768 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +4.78% | $5,484,187.34 |
-| BSB/USDT:USDT | +2.17% | $25,060,107.71 |
-| PEAQ/USDT:USDT | +2.00% | $1,295,965.72 |
-| USELESS/USDT:USDT | +1.74% | $1,197,603.64 |
-| H/USDT:USDT | +1.19% | $1,527,592.27 |
+| BSB/USDT:USDT | +7.73% | $25,297,752.77 |
+| BUILDONBOB/USDT:USDT | +6.93% | $5,522,549.88 |
+| USELESS/USDT:USDT | +3.31% | $1,201,654.05 |
+| PEAQ/USDT:USDT | +2.68% | $1,296,637.38 |
+| GENIUS/USDT:USDT | +1.87% | $4,588,844.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +4.55% | +4.43% |
-| BSB/USDT:USDT | below_1h_threshold | +2.25% | +2.14% |
-| PEAQ/USDT:USDT | below_1h_threshold | +1.97% | +1.86% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.75% | +1.63% |
-| H/USDT:USDT | below_1h_threshold | +1.20% | +1.08% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.31% | +3.25% |
+| PEAQ/USDT:USDT | below_1h_threshold | +2.68% | +2.62% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.91% | +1.84% |
+| OPG/USDT:USDT | below_1h_threshold | +1.17% | +1.10% |
+| QNT/USDT:USDT | below_1h_threshold | +1.07% | +1.01% |
 
 ## 5. 次に見るべき不足
 
