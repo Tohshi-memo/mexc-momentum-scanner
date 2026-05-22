@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-22T06:58:24.937037+00:00
+- generated_at: 2026-05-22T07:03:56.973667+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4673**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-22T06:58:22.864722+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77397.5
-- Funnel: target 768 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-22T07:03:54.913805+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=77290.6
+- Funnel: target 768 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BUILDONBOB/USDT:USDT | +69.53% | $2,651,873.97 |
-| NEAR/USDT:USDT | +21.42% | $73,510,587.84 |
-| GRASS/USDT:USDT | +21.19% | $4,490,559.01 |
-| PLUME/USDT:USDT | +12.09% | $1,839,225.92 |
-| EDEN/USDT:USDT | +11.51% | $21,071,138.60 |
+| BUILDONBOB/USDT:USDT | +64.61% | $2,694,500.80 |
+| NEAR/USDT:USDT | +21.37% | $73,850,053.37 |
+| GRASS/USDT:USDT | +20.54% | $4,513,101.37 |
+| PLUME/USDT:USDT | +12.17% | $1,830,961.53 |
+| EDEN/USDT:USDT | +10.90% | $19,383,831.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.66% | +3.73% |
-| PEAQ/USDT:USDT | below_1h_threshold | +2.08% | +2.15% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.98% | +2.05% |
-| ICP/USDT:USDT | below_1h_threshold | +1.66% | +1.73% |
-| FET/USDT:USDT | below_1h_threshold | +1.54% | +1.61% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.03% | +0.15% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.01% | +0.13% |
+| ICP/USDT:USDT | below_1h_threshold | +0.00% | +0.12% |
+| LAB/USDT:USDT | below_1h_threshold | +0.00% | +0.12% |
+| AERO/USDT:USDT | below_1h_threshold | +0.00% | +0.12% |
 
 ## 5. 次に見るべき不足
 
