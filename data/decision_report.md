@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T16:49:01.805719+00:00
+- generated_at: 2026-05-23T16:54:09.344883+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4792**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T16:48:57.269381+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=75450.4
+- 更新: 2026-05-23T16:54:04.756574+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=75449.2
 - Funnel: target 764 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +6.42% | $17,502,287.52 |
-| EIGEN/USDT:USDT | +2.80% | $2,029,294.74 |
-| NEAR/USDT:USDT | +2.21% | $108,893,133.13 |
-| UB/USDT:USDT | +1.71% | $1,866,975.59 |
-| PENGU/USDT:USDT | +1.60% | $24,368,641.02 |
+| BILL/USDT:USDT | +5.11% | $17,630,890.19 |
+| NEAR/USDT:USDT | +4.65% | $111,986,739.00 |
+| EIGEN/USDT:USDT | +2.70% | $2,033,834.68 |
+| PENGU/USDT:USDT | +2.06% | $24,737,120.36 |
+| UB/USDT:USDT | +1.79% | $1,874,188.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +2.80% | +2.85% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.48% | +2.53% |
-| UB/USDT:USDT | below_1h_threshold | +2.01% | +2.06% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.66% | +1.71% |
-| TIA/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
+| NEAR/USDT:USDT | below_1h_threshold | +4.69% | +4.74% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.71% | +2.76% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.18% | +2.23% |
+| UB/USDT:USDT | below_1h_threshold | +1.78% | +1.83% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.45% | +1.50% |
 
 ## 5. 次に見るべき不足
 
