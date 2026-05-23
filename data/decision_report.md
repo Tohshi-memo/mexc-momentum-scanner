@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T16:04:05.169128+00:00
+- generated_at: 2026-05-23T16:08:55.105803+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4791**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T16:04:03.085894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=75523.2
+- 更新: 2026-05-23T16:08:53.016788+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=75515.2
 - Funnel: target 764 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAVE/USDT:USDT | +2.12% | $3,085,216.49 |
-| BSB/USDT:USDT | +1.94% | $87,811,813.64 |
-| UB/USDT:USDT | +1.12% | $1,792,770.42 |
-| SKYAI/USDT:USDT | +1.10% | $1,689,760.56 |
-| EIGEN/USDT:USDT | +0.77% | $1,987,844.40 |
+| RAVE/USDT:USDT | +2.45% | $3,113,338.27 |
+| BSB/USDT:USDT | +2.16% | $87,946,817.59 |
+| SKYAI/USDT:USDT | +1.41% | $1,698,721.11 |
+| NEAR/USDT:USDT | +1.06% | $98,404,561.96 |
+| KITE/USDT:USDT | +0.81% | $1,450,458.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +2.20% | +2.15% |
-| BSB/USDT:USDT | below_1h_threshold | +2.02% | +1.97% |
-| UB/USDT:USDT | below_1h_threshold | +1.13% | +1.08% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.77% | +0.72% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.45% | +2.42% |
+| BSB/USDT:USDT | below_1h_threshold | +2.03% | +1.99% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.41% | +1.37% |
+| KITE/USDT:USDT | below_1h_threshold | +0.82% | +0.78% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.80% | +0.76% |
 
 ## 5. 次に見るべき不足
 
