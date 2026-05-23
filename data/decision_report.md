@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-23T19:58:58.173508+00:00
+- generated_at: 2026-05-23T20:04:10.697645+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4796**
+- closed shadow trades: **4797**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4796, expectancy=-0.08%
+- 全期間 MARKET基準: n=4797, expectancy=-0.08%
 - 直近20件 MARKET基準: n=20, expectancy=-1.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$120.91** / 初期 $100.00 (+20.91%)
-- 確定: 616件 (Win 150 / Loss 195 / Flat 271) / skip 741件
+- 確定: 616件 (Win 150 / Loss 195 / Flat 271) / skip 742件
 - 成長率目線: 平均log +0.000308 / 幾何平均 +0.031% per trade / maxDD +4.25%
 - 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_7PCT_LONG` SL_HIT account -0.50% 残高後 $120.91
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T19:58:56.078969+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=75889.1
-- Funnel: target 764 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-23T20:04:08.303610+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=75940.2
+- Funnel: target 764 → liquid 113 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +18.58% | $1,097,145.72 |
-| BILL/USDT:USDT | +11.03% | $21,179,415.70 |
-| ME/USDT:USDT | +8.54% | $1,411,684.03 |
-| GRASS/USDT:USDT | +7.84% | $4,309,811.37 |
-| WLD/USDT:USDT | +6.86% | $40,789,815.02 |
+| BLUAI/USDT:USDT | +19.05% | $1,111,211.67 |
+| ME/USDT:USDT | +8.24% | $1,404,767.34 |
+| GRASS/USDT:USDT | +7.36% | $4,062,252.50 |
+| WLD/USDT:USDT | +7.22% | $38,337,191.76 |
+| UB/USDT:USDT | +6.30% | $2,226,281.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.19% | +4.09% |
-| GMTTOKEN/USDT:USDT | below_1h_threshold | +2.00% | +1.90% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.97% | +1.86% |
-| TIA/USDT:USDT | below_1h_threshold | +1.76% | +1.66% |
-| BAN/USDT:USDT | below_1h_threshold | +1.20% | +1.09% |
+| BLUAI/USDT:USDT | below_1h_threshold | +1.24% | +1.25% |
+| IN/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
+| VVV/USDT:USDT | below_1h_threshold | +0.53% | +0.54% |
+| WLD/USDT:USDT | below_1h_threshold | +0.43% | +0.44% |
+| UB/USDT:USDT | below_1h_threshold | +0.42% | +0.43% |
 
 ## 5. 次に見るべき不足
 
