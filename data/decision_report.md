@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T13:08:59.988581+00:00
+- generated_at: 2026-05-23T13:14:02.538997+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4782**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T13:08:57.849136+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=74921.5
+- 更新: 2026-05-23T13:14:00.449591+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=74890.2
 - Funnel: target 764 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +126.29% | $86,173,383.88 |
-| IN/USDT:USDT | +34.07% | $2,800,587.85 |
-| BEAT/USDT:USDT | +31.03% | $68,281,493.20 |
-| GMTTOKEN/USDT:USDT | +23.88% | $3,201,608.60 |
-| BILL/USDT:USDT | +18.43% | $16,532,640.81 |
+| BSB/USDT:USDT | +136.22% | $86,622,842.01 |
+| IN/USDT:USDT | +33.73% | $2,824,476.99 |
+| BEAT/USDT:USDT | +30.17% | $68,496,646.53 |
+| GMTTOKEN/USDT:USDT | +21.04% | $3,255,255.71 |
+| BILL/USDT:USDT | +18.72% | $16,591,049.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GMTTOKEN/USDT:USDT | below_1h_threshold | +3.82% | +3.56% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.23% | +1.96% |
-| TAG/USDT:USDT | below_1h_threshold | +2.15% | +1.89% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.77% | +1.51% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.48% | +1.22% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.18% | +2.96% |
+| TAG/USDT:USDT | below_1h_threshold | +2.15% | +1.93% |
+| GMTTOKEN/USDT:USDT | below_1h_threshold | +1.75% | +1.53% |
+| BSB/USDT:USDT | below_1h_threshold | +1.63% | +1.41% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.16% | +0.94% |
 
 ## 5. 次に見るべき不足
 
