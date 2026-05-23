@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T13:24:00.646618+00:00
+- generated_at: 2026-05-23T13:27:30.908320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4783**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T13:23:58.254890+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=74959.1
-- Funnel: target 764 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-23T13:27:29.301254+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=74950.3
+- Funnel: target 764 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +136.28% | $87,539,036.04 |
-| IN/USDT:USDT | +34.38% | $2,879,670.92 |
-| BEAT/USDT:USDT | +29.73% | $68,880,346.77 |
-| GMTTOKEN/USDT:USDT | +24.83% | $3,343,362.54 |
-| BILL/USDT:USDT | +20.25% | $16,736,691.86 |
+| BSB/USDT:USDT | +132.56% | $87,720,344.30 |
+| IN/USDT:USDT | +37.00% | $2,906,934.67 |
+| BEAT/USDT:USDT | +30.89% | $69,060,704.51 |
+| GMTTOKEN/USDT:USDT | +26.54% | $3,363,031.73 |
+| BILL/USDT:USDT | +19.60% | $16,788,797.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GMTTOKEN/USDT:USDT | below_1h_threshold | +4.69% | +4.38% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.11% | +2.80% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.15% | +1.84% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.84% | +1.53% |
-| UB/USDT:USDT | below_1h_threshold | +1.80% | +1.49% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.02% | +3.72% |
+| IN/USDT:USDT | below_1h_threshold | +2.33% | +2.03% |
+| TAG/USDT:USDT | below_1h_threshold | +2.20% | +1.90% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.79% | +1.49% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.69% | +1.39% |
 
 ## 5. 次に見るべき不足
 
