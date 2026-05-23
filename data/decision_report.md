@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T06:44:03.230122+00:00
+- generated_at: 2026-05-23T06:48:54.009176+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4759**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T06:44:01.166286+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=75414.9
+- 更新: 2026-05-23T06:48:51.906010+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=75356.3
 - Funnel: target 764 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +130.08% | $62,606,324.60 |
-| IN/USDT:USDT | +17.51% | $1,768,226.70 |
-| BEAT/USDT:USDT | +16.58% | $62,142,553.18 |
-| MYX/USDT:USDT | +10.73% | $1,531,950.82 |
-| SKYAI/USDT:USDT | +9.50% | $2,657,318.13 |
+| BSB/USDT:USDT | +131.48% | $62,833,316.20 |
+| IN/USDT:USDT | +16.79% | $1,773,127.13 |
+| BEAT/USDT:USDT | +11.27% | $62,368,076.91 |
+| MYX/USDT:USDT | +11.23% | $1,572,608.04 |
+| TAG/USDT:USDT | +8.61% | $1,415,629.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +1.40% | +1.44% |
-| BSB/USDT:USDT | below_1h_threshold | +0.71% | +0.76% |
-| H/USDT:USDT | below_1h_threshold | +0.65% | +0.70% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.68% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.57% | +0.61% |
+| BSB/USDT:USDT | below_1h_threshold | +1.31% | +1.43% |
+| NEX/USDT:USDT | below_1h_threshold | +1.02% | +1.15% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.72% | +0.84% |
+| H/USDT:USDT | below_1h_threshold | +0.71% | +0.84% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.66% | +0.79% |
 
 ## 5. 次に見るべき不足
 
