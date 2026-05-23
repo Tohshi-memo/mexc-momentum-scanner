@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T17:48:54.504642+00:00
+- generated_at: 2026-05-23T17:54:03.109482+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4793**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T17:48:52.414083+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=75388.8
+- 更新: 2026-05-23T17:54:00.983582+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=75440.5
 - Funnel: target 764 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ME/USDT:USDT | +9.86% | $1,145,657.57 |
-| BILL/USDT:USDT | +6.46% | $18,425,003.49 |
-| UB/USDT:USDT | +6.08% | $1,938,152.83 |
-| AIGENSYN/USDT:USDT | +3.81% | $1,043,186.44 |
-| NEAR/USDT:USDT | +3.80% | $129,933,557.00 |
+| ME/USDT:USDT | +10.47% | $1,179,821.43 |
+| BILL/USDT:USDT | +8.23% | $18,581,421.86 |
+| UB/USDT:USDT | +6.10% | $1,969,065.03 |
+| WLD/USDT:USDT | +4.21% | $44,550,542.84 |
+| AIGENSYN/USDT:USDT | +3.98% | $1,046,158.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.85% | +3.88% |
-| GMTTOKEN/USDT:USDT | below_1h_threshold | +3.22% | +3.24% |
-| BILL/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.10% | +2.13% |
-| BAN/USDT:USDT | below_1h_threshold | +2.04% | +2.06% |
+| UB/USDT:USDT | below_1h_threshold | +3.85% | +3.81% |
+| BILL/USDT:USDT | below_1h_threshold | +3.81% | +3.77% |
+| GMTTOKEN/USDT:USDT | below_1h_threshold | +3.22% | +3.17% |
+| WLD/USDT:USDT | below_1h_threshold | +2.37% | +2.32% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
 
 ## 5. 次に見るべき不足
 
