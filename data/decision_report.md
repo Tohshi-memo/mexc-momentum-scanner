@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T18:44:14.604855+00:00
+- generated_at: 2026-05-23T18:49:09.587808+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4796**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T18:44:09.777881+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=75872.3
-- Funnel: target 764 → liquid 117 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1
+- 更新: 2026-05-23T18:49:07.245030+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=75798.2
+- Funnel: target 764 → liquid 118 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +15.73% | $19,430,723.69 |
-| GRASS/USDT:USDT | +9.30% | $3,995,173.45 |
-| ME/USDT:USDT | +9.25% | $1,333,536.93 |
-| EIGEN/USDT:USDT | +8.40% | $2,333,360.17 |
-| WLD/USDT:USDT | +7.22% | $44,085,101.26 |
+| BILL/USDT:USDT | +14.10% | $19,654,758.59 |
+| GRASS/USDT:USDT | +8.69% | $4,048,590.21 |
+| ME/USDT:USDT | +8.64% | $1,338,623.55 |
+| WLD/USDT:USDT | +7.89% | $44,297,815.68 |
+| EIGEN/USDT:USDT | +7.10% | $2,348,071.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +4.82% | +4.27% |
-| TIA/USDT:USDT | below_1h_threshold | +4.67% | +4.12% |
-| LIT/USDT:USDT | below_1h_threshold | +3.44% | +2.89% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.32% | +2.77% |
-| JUP/USDT:USDT | below_1h_threshold | +3.22% | +2.68% |
+| BILL/USDT:USDT | below_1h_threshold | +4.07% | +3.62% |
+| TIA/USDT:USDT | below_1h_threshold | +4.06% | +3.61% |
+| LIT/USDT:USDT | below_1h_threshold | +3.79% | +3.34% |
+| WLD/USDT:USDT | below_1h_threshold | +3.78% | +3.33% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.51% | +3.06% |
 
 ## 5. 次に見るべき不足
 
