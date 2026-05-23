@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-23T10:29:00.590195+00:00
+- generated_at: 2026-05-23T10:34:01.575817+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4768**
+- closed shadow trades: **4769**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.11% / filled 20/20。**
-- 全期間 MARKET基準: n=4768, expectancy=-0.08%
+- 全期間 MARKET基準: n=4769, expectancy=-0.08%
 - 直近20件 MARKET基準: n=20, expectancy=+2.11%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.11% | **+2.11%** |
 | ASK | 20/20 | 100.0% | +2.05% | **+2.05%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +0.95% | **+0.76%** |
-| LIMIT_ATR | 11/20 | 55.0% | +0.68% | **+0.37%** |
-| LIMIT_FIB1272 | 5/20 | 25.0% | +0.79% | **+0.20%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +0.89% | **+0.71%** |
+| LIMIT_ATR | 12/20 | 60.0% | +0.58% | **+0.35%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.52** / 初期 $100.00 (+21.52%)
-- 確定: 614件 (Win 150 / Loss 194 / Flat 270) / skip 715件
+- 確定: 615件 (Win 150 / Loss 194 / Flat 271) / skip 715件
 - 成長率目線: 平均log +0.000317 / 幾何平均 +0.032% per trade / maxDD +4.21%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BSB/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $121.52
+- 最新: BEAT/USDT:USDT `LIMIT_7PCT_LONG` EXPIRED account +0.00% 残高後 $121.52
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T10:28:57.978926+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=74696.2
-- Funnel: target 764 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1, 4h RSI 65.6 >= 65=1
+- 更新: 2026-05-23T10:33:58.856887+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=74718.9
+- Funnel: target 764 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +170.15% | $73,738,183.99 |
-| BEAT/USDT:USDT | +25.84% | $66,502,256.15 |
-| GMTTOKEN/USDT:USDT | +19.52% | $2,632,195.99 |
-| IN/USDT:USDT | +16.12% | $1,988,597.04 |
-| TAG/USDT:USDT | +12.85% | $1,453,009.58 |
+| BSB/USDT:USDT | +161.70% | $74,334,075.10 |
+| BEAT/USDT:USDT | +29.14% | $67,493,624.51 |
+| GMTTOKEN/USDT:USDT | +19.43% | $2,635,689.49 |
+| IN/USDT:USDT | +18.18% | $1,995,802.32 |
+| TAG/USDT:USDT | +13.04% | $1,461,008.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.92% | +4.83% |
-| MYX/USDT:USDT | below_1h_threshold | +3.48% | +3.39% |
-| IN/USDT:USDT | below_1h_threshold | +2.74% | +2.65% |
-| H/USDT:USDT | below_1h_threshold | +2.33% | +2.24% |
-| TAG/USDT:USDT | below_1h_threshold | +1.57% | +1.48% |
+| BILL/USDT:USDT | below_relative_strength | +5.07% | +4.95% |
+| IN/USDT:USDT | below_1h_threshold | +4.70% | +4.58% |
+| BSB/USDT:USDT | below_1h_threshold | +2.58% | +2.46% |
+| H/USDT:USDT | below_1h_threshold | +2.31% | +2.19% |
+| MYX/USDT:USDT | below_1h_threshold | +2.30% | +2.18% |
 
 ## 5. 次に見るべき不足
 
