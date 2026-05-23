@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T17:38:58.483723+00:00
+- generated_at: 2026-05-23T17:44:21.050431+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4793**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T17:38:56.397506+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=75388.1
+- 更新: 2026-05-23T17:44:18.956539+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=75391.1
 - Funnel: target 764 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ME/USDT:USDT | +12.91% | $1,086,466.09 |
-| BILL/USDT:USDT | +5.66% | $18,204,422.95 |
-| UB/USDT:USDT | +5.28% | $1,881,979.67 |
-| NEAR/USDT:USDT | +4.38% | $128,068,505.22 |
-| WLD/USDT:USDT | +4.14% | $44,075,779.42 |
+| ME/USDT:USDT | +10.68% | $1,113,699.92 |
+| BILL/USDT:USDT | +6.69% | $18,319,410.05 |
+| UB/USDT:USDT | +5.68% | $1,899,417.85 |
+| NEAR/USDT:USDT | +4.11% | $129,504,771.84 |
+| WLD/USDT:USDT | +3.36% | $44,350,956.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.09% | +3.12% |
-| WLD/USDT:USDT | below_1h_threshold | +2.30% | +2.32% |
-| BAN/USDT:USDT | below_1h_threshold | +2.13% | +2.16% |
-| GMTTOKEN/USDT:USDT | below_1h_threshold | +1.93% | +1.95% |
-| ME/USDT:USDT | below_1h_threshold | +1.93% | +1.95% |
+| UB/USDT:USDT | below_1h_threshold | +3.46% | +3.49% |
+| GMTTOKEN/USDT:USDT | below_1h_threshold | +3.13% | +3.16% |
+| IN/USDT:USDT | below_1h_threshold | +2.74% | +2.76% |
+| BILL/USDT:USDT | below_1h_threshold | +2.29% | +2.31% |
+| BAN/USDT:USDT | below_1h_threshold | +1.60% | +1.62% |
 
 ## 5. 次に見るべき不足
 
