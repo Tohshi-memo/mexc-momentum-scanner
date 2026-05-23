@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T20:49:20.763598+00:00
+- generated_at: 2026-05-23T20:54:15.593251+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4798**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T20:49:07.726064+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.04% price=76736.6
-- Funnel: target 764 → liquid 116 → pre 50 → checked 50 → surge 5 → strict 4
-- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.6 >= 65=1
+- 更新: 2026-05-23T20:54:06.270177+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.13% price=76808.8
+- Funnel: target 764 → liquid 116 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=44, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +25.15% | $1,319,141.69 |
-| GRASS/USDT:USDT | +16.44% | $4,607,824.38 |
-| NIL/USDT:USDT | +12.61% | $1,117,798.37 |
-| GUA/USDT:USDT | +11.29% | $1,091,827.96 |
-| EIGEN/USDT:USDT | +9.47% | $2,068,466.23 |
+| BLUAI/USDT:USDT | +25.63% | $1,333,778.00 |
+| GRASS/USDT:USDT | +17.07% | $4,677,822.66 |
+| NIL/USDT:USDT | +12.56% | $1,177,308.90 |
+| GUA/USDT:USDT | +12.52% | $1,095,146.67 |
+| EIGEN/USDT:USDT | +8.65% | $2,081,944.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_relative_strength | +5.34% | +4.31% |
-| DOT/USDT:USDT | below_1h_threshold | +4.09% | +3.06% |
-| ENA/USDT:USDT | below_1h_threshold | +3.82% | +2.78% |
-| LIT/USDT:USDT | below_1h_threshold | +3.71% | +2.67% |
-| SUI/USDT:USDT | below_1h_threshold | +3.68% | +2.64% |
+| FIDA/USDT:USDT | below_relative_strength | +5.74% | +4.61% |
+| DYDX/USDT:USDT | below_relative_strength | +5.01% | +3.88% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.86% | +2.73% |
+| DOT/USDT:USDT | below_1h_threshold | +3.78% | +2.65% |
+| SUI/USDT:USDT | below_1h_threshold | +3.65% | +2.52% |
 
 ## 5. 次に見るべき不足
 
