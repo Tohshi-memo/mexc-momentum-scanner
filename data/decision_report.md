@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T03:24:03.025606+00:00
+- generated_at: 2026-05-23T03:28:59.824715+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4753**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T03:24:00.935124+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=75568.6
-- Funnel: target 764 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-23T03:28:57.185763+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=75565.2
+- Funnel: target 764 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +120.06% | $56,784,007.41 |
-| IN/USDT:USDT | +28.69% | $1,200,063.20 |
-| BEAT/USDT:USDT | +24.33% | $55,713,403.29 |
-| BILL/USDT:USDT | +20.44% | $17,424,606.56 |
-| NEX/USDT:USDT | +8.74% | $1,265,705.81 |
+| BSB/USDT:USDT | +118.34% | $56,913,323.75 |
+| IN/USDT:USDT | +27.83% | $1,216,059.19 |
+| BEAT/USDT:USDT | +24.13% | $55,905,636.24 |
+| BILL/USDT:USDT | +20.92% | $17,488,099.32 |
+| NEX/USDT:USDT | +10.40% | $1,268,025.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +2.97% | +2.94% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.87% | +2.84% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.16% | +2.12% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.33% | +1.30% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.05% | +1.02% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.19% | +3.16% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.01% | +2.98% |
+| BILL/USDT:USDT | below_1h_threshold | +2.98% | +2.95% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.27% | +2.24% |
+| NEX/USDT:USDT | below_1h_threshold | +1.62% | +1.59% |
 
 ## 5. 次に見るべき不足
 
