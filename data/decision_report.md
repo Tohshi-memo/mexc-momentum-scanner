@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T10:04:02.239207+00:00
+- generated_at: 2026-05-23T10:09:31.310832+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4765**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T10:04:00.093053+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=74655.9
+- 更新: 2026-05-23T10:09:29.306230+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=74679.3
 - Funnel: target 764 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +149.50% | $70,912,729.27 |
-| GMTTOKEN/USDT:USDT | +22.18% | $2,540,486.41 |
-| BEAT/USDT:USDT | +16.85% | $64,740,247.65 |
-| IN/USDT:USDT | +13.29% | $1,962,546.44 |
-| SKYAI/USDT:USDT | +12.12% | $2,177,271.39 |
+| BSB/USDT:USDT | +154.79% | $71,474,744.08 |
+| GMTTOKEN/USDT:USDT | +21.32% | $2,556,166.47 |
+| BEAT/USDT:USDT | +18.78% | $64,887,926.54 |
+| IN/USDT:USDT | +12.64% | $1,966,996.87 |
+| SKYAI/USDT:USDT | +11.87% | $2,184,665.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GMTTOKEN/USDT:USDT | below_1h_threshold | +2.55% | +2.51% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
-| LYN/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
-| MYX/USDT:USDT | below_1h_threshold | +0.67% | +0.63% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
+| GMTTOKEN/USDT:USDT | below_1h_threshold | +1.91% | +1.85% |
+| H/USDT:USDT | below_1h_threshold | +1.76% | +1.69% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.69% | +1.63% |
+| MYX/USDT:USDT | below_1h_threshold | +1.38% | +1.32% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.94% | +0.87% |
 
 ## 5. 次に見るべき不足
 
