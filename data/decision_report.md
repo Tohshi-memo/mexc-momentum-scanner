@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T10:34:01.575817+00:00
+- generated_at: 2026-05-23T10:39:51.845269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4769**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T10:33:58.856887+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=74718.9
-- Funnel: target 764 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1
+- 更新: 2026-05-23T10:39:47.085245+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=74732.9
+- Funnel: target 764 → liquid 132 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 69.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +161.70% | $74,334,075.10 |
-| BEAT/USDT:USDT | +29.14% | $67,493,624.51 |
-| GMTTOKEN/USDT:USDT | +19.43% | $2,635,689.49 |
-| IN/USDT:USDT | +18.18% | $1,995,802.32 |
-| TAG/USDT:USDT | +13.04% | $1,461,008.14 |
+| BSB/USDT:USDT | +153.23% | $75,165,805.45 |
+| BEAT/USDT:USDT | +28.48% | $67,978,616.26 |
+| IN/USDT:USDT | +20.07% | $2,008,585.21 |
+| GMTTOKEN/USDT:USDT | +16.77% | $2,659,025.80 |
+| BILL/USDT:USDT | +13.05% | $16,854,646.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_relative_strength | +5.07% | +4.95% |
-| IN/USDT:USDT | below_1h_threshold | +4.70% | +4.58% |
-| BSB/USDT:USDT | below_1h_threshold | +2.58% | +2.46% |
-| H/USDT:USDT | below_1h_threshold | +2.31% | +2.19% |
-| MYX/USDT:USDT | below_1h_threshold | +2.30% | +2.18% |
+| MYX/USDT:USDT | below_1h_threshold | +2.66% | +2.52% |
+| H/USDT:USDT | below_1h_threshold | +2.42% | +2.28% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.64% | +1.50% |
+| KITE/USDT:USDT | below_1h_threshold | +1.37% | +1.24% |
+| LYN/USDT:USDT | below_1h_threshold | +1.11% | +0.97% |
 
 ## 5. 次に見るべき不足
 
