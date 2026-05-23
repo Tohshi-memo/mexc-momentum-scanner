@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-23T11:44:09.289372+00:00
+- generated_at: 2026-05-23T11:49:21.622320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4776**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-23T11:44:06.334245+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=74770.3
-- Funnel: target 764 → liquid 134 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1, 4h RSI 74.8 >= 65=1
+- 更新: 2026-05-23T11:49:19.101704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=74761.8
+- Funnel: target 764 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 74.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +150.03% | $80,728,471.28 |
-| IN/USDT:USDT | +33.65% | $2,214,681.29 |
-| BEAT/USDT:USDT | +26.06% | $68,931,935.06 |
-| GMTTOKEN/USDT:USDT | +16.11% | $2,847,379.23 |
-| MYX/USDT:USDT | +12.56% | $2,425,593.78 |
+| BSB/USDT:USDT | +138.44% | $81,465,129.55 |
+| IN/USDT:USDT | +33.40% | $2,270,448.61 |
+| BEAT/USDT:USDT | +24.93% | $69,095,126.13 |
+| GMTTOKEN/USDT:USDT | +15.07% | $2,854,157.92 |
+| SKYAI/USDT:USDT | +12.40% | $2,262,120.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +1.45% | +1.33% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.17% | +1.05% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.82% | +0.70% |
-| LYN/USDT:USDT | below_1h_threshold | +0.75% | +0.63% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +0.69% | +0.57% |
+| BSB/USDT:USDT | below_1h_threshold | +3.76% | +3.65% |
+| MYX/USDT:USDT | below_1h_threshold | +1.15% | +1.04% |
+| LYN/USDT:USDT | below_1h_threshold | +1.15% | +1.04% |
+| LAB/USDT:USDT | below_1h_threshold | +1.06% | +0.95% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.82% | +0.71% |
 
 ## 5. 次に見るべき不足
 
