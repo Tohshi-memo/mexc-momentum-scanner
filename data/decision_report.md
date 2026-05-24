@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-24T09:24:13.972210+00:00
+- generated_at: 2026-05-24T09:29:05.112876+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4815**
+- closed shadow trades: **4816**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4815, expectancy=-0.08%
+- 全期間 MARKET基準: n=4816, expectancy=-0.08%
 - 直近20件 MARKET基準: n=20, expectancy=-0.38%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,37 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.99** / 初期 $100.00 (+21.99%)
-- 確定: 621件 (Win 153 / Loss 197 / Flat 271) / skip 755件
+- 確定: 622件 (Win 153 / Loss 197 / Flat 272) / skip 755件
 - 成長率目線: 平均log +0.000320 / 幾何平均 +0.032% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AGT/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $121.99
+- 最新: IN/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $121.99
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T09:24:11.881432+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=76928.2
-- Funnel: target 764 → liquid 111 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-24T09:29:02.444475+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=76867.1
+- Funnel: target 764 → liquid 111 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +55.64% | $2,143,288.29 |
-| PLUME/USDT:USDT | +22.71% | $2,109,019.34 |
-| IN/USDT:USDT | +20.48% | $3,393,024.85 |
-| NIL/USDT:USDT | +18.87% | $2,796,425.53 |
-| GENIUS/USDT:USDT | +18.01% | $4,186,334.57 |
+| AGT/USDT:USDT | +51.92% | $2,229,679.42 |
+| IN/USDT:USDT | +21.89% | $3,418,944.21 |
+| PLUME/USDT:USDT | +21.88% | $2,135,860.03 |
+| GRASS/USDT:USDT | +20.84% | $9,894,196.32 |
+| NIL/USDT:USDT | +19.24% | $2,802,930.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.52% | +3.36% |
-| VVV/USDT:USDT | below_1h_threshold | +3.49% | +3.32% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.14% | +2.97% |
-| UB/USDT:USDT | below_1h_threshold | +2.86% | +2.69% |
-| ASTER/USDT:USDT | below_1h_threshold | +2.61% | +2.44% |
+| VVV/USDT:USDT | below_1h_threshold | +4.41% | +4.33% |
+| NIL/USDT:USDT | below_1h_threshold | +3.91% | +3.82% |
+| IN/USDT:USDT | below_1h_threshold | +2.63% | +2.55% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.09% | +2.00% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.91% | +1.83% |
 
 ## 5. 次に見るべき不足
 
