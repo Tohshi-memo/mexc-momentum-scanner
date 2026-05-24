@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T12:14:11.382172+00:00
+- generated_at: 2026-05-24T12:19:02.912567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4824**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T12:14:08.934182+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=77135.6
+- 更新: 2026-05-24T12:19:00.831745+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=77081.4
 - Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +55.75% | $3,983,989.96 |
-| NIL/USDT:USDT | +22.27% | $4,084,730.19 |
-| GENIUS/USDT:USDT | +20.46% | $4,579,683.17 |
-| PLUME/USDT:USDT | +18.64% | $2,572,197.04 |
-| BLUAI/USDT:USDT | +18.28% | $1,802,734.64 |
+| AGT/USDT:USDT | +54.76% | $4,029,238.58 |
+| NIL/USDT:USDT | +21.61% | $4,147,292.04 |
+| GENIUS/USDT:USDT | +21.02% | $4,662,612.58 |
+| PLUME/USDT:USDT | +17.81% | $2,578,316.14 |
+| BLUAI/USDT:USDT | +17.25% | $1,808,630.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +4.01% | +4.21% |
-| FIDA/USDT:USDT | below_1h_threshold | +2.57% | +2.77% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.65% | +1.85% |
-| VVV/USDT:USDT | below_1h_threshold | +0.91% | +1.11% |
-| UB/USDT:USDT | below_1h_threshold | +0.81% | +1.01% |
+| GENIUS/USDT:USDT | below_1h_threshold | +4.37% | +4.64% |
+| FIDA/USDT:USDT | below_1h_threshold | +1.89% | +2.16% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.65% | +1.92% |
+| LIT/USDT:USDT | below_1h_threshold | +0.42% | +0.69% |
+| SUPER/USDT:USDT | below_1h_threshold | +0.25% | +0.52% |
 
 ## 5. 次に見るべき不足
 
