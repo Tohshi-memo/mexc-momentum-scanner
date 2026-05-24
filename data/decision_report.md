@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T16:29:06.312589+00:00
+- generated_at: 2026-05-24T16:34:19.197915+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4829**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T16:29:04.173914+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=76561.6
-- Funnel: target 764 → liquid 113 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-24T16:34:16.983744+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=76526.5
+- Funnel: target 764 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GENIUS/USDT:USDT | +3.14% | $5,931,686.51 |
-| B2/USDT:USDT | +2.59% | $1,686,386.53 |
-| UB/USDT:USDT | +1.85% | $3,085,190.08 |
-| BEAT/USDT:USDT | +1.76% | $38,637,407.90 |
-| BILL/USDT:USDT | +1.73% | $18,298,509.56 |
+| GENIUS/USDT:USDT | +2.66% | $5,966,495.18 |
+| NIL/USDT:USDT | +2.60% | $7,134,658.02 |
+| B2/USDT:USDT | +2.31% | $1,699,226.30 |
+| MYX/USDT:USDT | +2.28% | $2,981,986.71 |
+| CHIP/USDT:USDT | +1.68% | $1,224,868.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +3.10% | +2.82% |
-| B2/USDT:USDT | below_1h_threshold | +2.60% | +2.31% |
-| UB/USDT:USDT | below_1h_threshold | +1.85% | +1.56% |
-| BILL/USDT:USDT | below_1h_threshold | +1.58% | +1.29% |
-| NIL/USDT:USDT | below_1h_threshold | +1.57% | +1.29% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.61% | +2.37% |
+| NIL/USDT:USDT | below_1h_threshold | +2.60% | +2.36% |
+| MYX/USDT:USDT | below_1h_threshold | +2.33% | +2.09% |
+| B2/USDT:USDT | below_1h_threshold | +2.32% | +2.08% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.69% | +1.45% |
 
 ## 5. 次に見るべき不足
 
