@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T01:14:08.241166+00:00
+- generated_at: 2026-05-24T01:19:02.537027+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4804**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T01:14:06.091769+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=76765.8
+- 更新: 2026-05-24T01:19:00.445387+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=76758.7
 - Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRASS/USDT:USDT | +18.36% | $7,296,193.02 |
-| BLUAI/USDT:USDT | +16.49% | $1,796,890.50 |
-| NIL/USDT:USDT | +13.61% | $1,848,552.50 |
-| EIGEN/USDT:USDT | +11.21% | $2,740,572.97 |
-| ARKM/USDT:USDT | +9.69% | $1,047,723.62 |
+| GRASS/USDT:USDT | +18.44% | $7,332,756.40 |
+| BLUAI/USDT:USDT | +15.61% | $1,799,283.56 |
+| NIL/USDT:USDT | +14.13% | $1,856,685.94 |
+| EIGEN/USDT:USDT | +11.06% | $2,754,130.77 |
+| ARKM/USDT:USDT | +9.62% | $1,050,287.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IN/USDT:USDT | below_1h_threshold | +4.36% | +4.42% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.80% | +1.86% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.36% | +1.42% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.29% | +1.35% |
-| BILL/USDT:USDT | below_1h_threshold | +1.27% | +1.33% |
+| IN/USDT:USDT | below_1h_threshold | +4.65% | +4.72% |
+| BILL/USDT:USDT | below_1h_threshold | +2.57% | +2.64% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.84% | +1.91% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.67% | +1.74% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.57% | +1.64% |
 
 ## 5. 次に見るべき不足
 
