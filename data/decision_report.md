@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T21:09:15.053657+00:00
+- generated_at: 2026-05-24T21:14:43.116298+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4833**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T21:09:12.907170+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=76686.1
+- 更新: 2026-05-24T21:14:40.658052+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=76644.6
 - Funnel: target 764 → liquid 107 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UB/USDT:USDT | +8.19% | $4,151,801.08 |
-| BILL/USDT:USDT | +8.05% | $13,601,611.04 |
-| NIL/USDT:USDT | +5.27% | $12,438,708.83 |
-| AGT/USDT:USDT | +2.80% | $7,111,409.76 |
-| LUNC/USDT:USDT | +2.47% | $2,742,573.45 |
+| BILL/USDT:USDT | +7.66% | $13,677,531.20 |
+| UB/USDT:USDT | +7.63% | $4,183,599.63 |
+| NIL/USDT:USDT | +4.35% | $12,489,828.37 |
+| PHA/USDT:USDT | +2.29% | $1,378,049.39 |
+| LUNC/USDT:USDT | +2.14% | $2,767,649.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +1.46% | +1.39% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.39% | +1.32% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.93% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +0.98% | +0.91% |
-| AGT/USDT:USDT | below_1h_threshold | +0.97% | +0.90% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
+| LIT/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
+| UB/USDT:USDT | below_1h_threshold | +0.75% | +0.73% |
 
 ## 5. 次に見るべき不足
 
