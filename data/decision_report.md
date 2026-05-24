@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T16:44:09.895938+00:00
+- generated_at: 2026-05-24T16:49:09.043248+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4829**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T16:44:07.765787+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=76464.8
+- 更新: 2026-05-24T16:49:06.921541+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=76574.8
 - Funnel: target 764 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MYX/USDT:USDT | +3.97% | $3,023,108.12 |
-| GENIUS/USDT:USDT | +3.35% | $6,032,983.59 |
-| CHIP/USDT:USDT | +2.80% | $1,283,951.62 |
-| NIL/USDT:USDT | +2.68% | $7,277,559.60 |
-| AGT/USDT:USDT | +2.39% | $6,398,495.24 |
+| EDEN/USDT:USDT | +4.97% | $9,337,353.09 |
+| MYX/USDT:USDT | +4.66% | $3,057,275.29 |
+| CHIP/USDT:USDT | +3.83% | $1,303,872.82 |
+| NIL/USDT:USDT | +3.68% | $7,327,537.27 |
+| AGT/USDT:USDT | +3.33% | $6,422,946.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +3.97% | +3.81% |
-| GENIUS/USDT:USDT | below_1h_threshold | +3.35% | +3.19% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.82% | +2.67% |
-| NIL/USDT:USDT | below_1h_threshold | +2.68% | +2.52% |
-| AGT/USDT:USDT | below_1h_threshold | +2.68% | +2.52% |
+| EDEN/USDT:USDT | below_relative_strength | +5.17% | +4.87% |
+| MYX/USDT:USDT | below_1h_threshold | +4.67% | +4.36% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.84% | +3.54% |
+| AGT/USDT:USDT | below_1h_threshold | +3.81% | +3.51% |
+| NIL/USDT:USDT | below_1h_threshold | +3.75% | +3.45% |
 
 ## 5. 次に見るべき不足
 
