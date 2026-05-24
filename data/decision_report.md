@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T21:49:19.807932+00:00
+- generated_at: 2026-05-24T21:54:11.222807+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4834**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T21:49:15.188838+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.61% price=76161.4
-- Funnel: target 764 → liquid 109 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-24T21:54:06.178844+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=76196.0
+- Funnel: target 764 → liquid 111 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUPER/USDT:USDT | +7.37% | $2,721,086.55 |
-| BILL/USDT:USDT | +5.05% | $14,177,968.48 |
-| NIL/USDT:USDT | +2.56% | $12,919,573.70 |
-| USOIL/USDT:USDT | +1.62% | $74,450,127.90 |
-| AGT/USDT:USDT | +1.04% | $7,190,400.60 |
+| SUPER/USDT:USDT | +8.14% | $2,744,524.21 |
+| BILL/USDT:USDT | +3.46% | $14,320,745.24 |
+| NIL/USDT:USDT | +2.04% | $12,961,291.32 |
+| AGT/USDT:USDT | +1.46% | $7,196,987.08 |
+| USOIL/USDT:USDT | +1.33% | $74,546,387.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +0.75% | +1.37% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.19% | +0.81% |
-| XAUT/USDT:USDT | below_1h_threshold | +0.03% | +0.64% |
-| PAXG/USDT:USDT | below_1h_threshold | -0.03% | +0.59% |
-| UKOIL/USDT:USDT | below_1h_threshold | -0.09% | +0.52% |
+| LAB/USDT:USDT | below_1h_threshold | +0.84% | +1.41% |
+| XAUT/USDT:USDT | below_1h_threshold | +0.03% | +0.60% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.02% | +0.59% |
+| USOIL/USDT:USDT | below_1h_threshold | -0.03% | +0.54% |
+| PAXG/USDT:USDT | below_1h_threshold | -0.04% | +0.53% |
 
 ## 5. 次に見るべき不足
 
