@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T05:14:13.010584+00:00
+- generated_at: 2026-05-24T05:18:59.112753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4811**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T05:14:10.892988+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=76704.2
+- 更新: 2026-05-24T05:18:56.987939+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=76682.8
 - Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUPER/USDT:USDT | +19.02% | $1,384,003.60 |
-| GRASS/USDT:USDT | +18.73% | $8,420,017.94 |
-| BLUAI/USDT:USDT | +15.01% | $1,769,053.03 |
-| NIL/USDT:USDT | +14.59% | $2,312,239.02 |
-| IN/USDT:USDT | +13.75% | $3,265,787.70 |
+| SUPER/USDT:USDT | +19.92% | $1,399,210.27 |
+| GRASS/USDT:USDT | +18.44% | $8,435,087.50 |
+| IN/USDT:USDT | +15.51% | $3,277,611.76 |
+| BLUAI/USDT:USDT | +14.98% | $1,769,280.31 |
+| NIL/USDT:USDT | +14.70% | $2,320,158.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUPER/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
-| BSB/USDT:USDT | below_1h_threshold | +0.58% | +0.64% |
-| BLUAI/USDT:USDT | below_1h_threshold | +0.58% | +0.64% |
-| MYX/USDT:USDT | below_1h_threshold | +0.54% | +0.59% |
-| UB/USDT:USDT | below_1h_threshold | +0.44% | +0.50% |
+| SUPER/USDT:USDT | below_1h_threshold | +1.68% | +1.77% |
+| IN/USDT:USDT | below_1h_threshold | +1.22% | +1.30% |
+| BILL/USDT:USDT | below_1h_threshold | +0.82% | +0.90% |
+| BSB/USDT:USDT | below_1h_threshold | +0.63% | +0.71% |
+| BLUAI/USDT:USDT | below_1h_threshold | +0.51% | +0.59% |
 
 ## 5. 次に見るべき不足
 
