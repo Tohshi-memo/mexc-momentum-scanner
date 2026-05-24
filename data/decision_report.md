@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T23:29:05.946683+00:00
+- generated_at: 2026-05-24T23:34:02.464938+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4836**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T23:29:03.834440+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=76851.8
+- 更新: 2026-05-24T23:34:00.365458+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=76903.1
 - Funnel: target 764 → liquid 111 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUPER/USDT:USDT | +7.63% | $3,176,515.59 |
-| SILVER/USDT:USDT | +2.60% | $202,819,573.82 |
-| BILL/USDT:USDT | +2.21% | $14,598,445.34 |
-| NIL/USDT:USDT | +1.89% | $13,182,534.15 |
-| GENIUS/USDT:USDT | +1.88% | $6,519,192.03 |
+| SUPER/USDT:USDT | +7.46% | $3,204,249.96 |
+| NIL/USDT:USDT | +2.83% | $13,213,494.47 |
+| SILVER/USDT:USDT | +2.68% | $207,263,210.52 |
+| BILL/USDT:USDT | +2.32% | $14,634,364.32 |
+| RENDER/USDT:USDT | +2.07% | $5,020,431.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.51% | +2.40% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.43% | +2.32% |
-| QNT/USDT:USDT | below_1h_threshold | +2.12% | +2.01% |
-| AGT/USDT:USDT | below_1h_threshold | +1.22% | +1.11% |
-| XMR/USDT:USDT | below_1h_threshold | +1.02% | +0.91% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.44% | +2.27% |
+| UB/USDT:USDT | below_1h_threshold | +2.31% | +2.13% |
+| QNT/USDT:USDT | below_1h_threshold | +2.05% | +1.88% |
+| XMR/USDT:USDT | below_1h_threshold | +1.27% | +1.10% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.07% | +0.89% |
 
 ## 5. 次に見るべき不足
 
