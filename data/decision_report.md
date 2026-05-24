@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T22:04:08.287292+00:00
+- generated_at: 2026-05-24T22:09:07.694905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4834**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T22:04:06.162306+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=76537.3
+- 更新: 2026-05-24T22:09:05.577228+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.78% price=76699.9
 - Funnel: target 764 → liquid 109 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUPER/USDT:USDT | +9.83% | $2,821,259.42 |
-| NIL/USDT:USDT | +3.71% | $12,822,130.82 |
-| BILL/USDT:USDT | +1.65% | $13,510,141.47 |
-| SAGA/USDT:USDT | +1.31% | $1,360,291.73 |
-| LUNC/USDT:USDT | +1.08% | $2,808,985.15 |
+| SUPER/USDT:USDT | +9.75% | $2,837,720.96 |
+| NIL/USDT:USDT | +2.38% | $12,888,232.10 |
+| BILL/USDT:USDT | +1.75% | $13,557,940.74 |
+| SAGA/USDT:USDT | +1.57% | $1,367,552.25 |
+| MUSTOCK/USDT:USDT | +1.30% | $2,154,437.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SILVER/USDT:USDT | below_1h_threshold | +1.53% | +0.96% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.44% | +0.88% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.42% | +0.85% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.37% | +0.80% |
-| INJ/USDT:USDT | below_1h_threshold | +1.26% | +0.69% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.90% | +1.12% |
+| INJ/USDT:USDT | below_1h_threshold | +1.90% | +1.12% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.89% | +1.11% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.80% | +1.02% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.63% | +0.85% |
 
 ## 5. 次に見るべき不足
 
