@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T07:29:10.133096+00:00
+- generated_at: 2026-05-24T07:34:24.719600+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4813**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T07:29:07.871531+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=76860.6
-- Funnel: target 764 → liquid 116 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.7 >= 65=1
+- 更新: 2026-05-24T07:34:22.160049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=76825.0
+- Funnel: target 764 → liquid 116 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.3 >= 65=1, 4h RSI 84.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +42.57% | $1,363,035.96 |
-| PLUME/USDT:USDT | +26.64% | $1,355,478.15 |
-| BLUAI/USDT:USDT | +16.70% | $1,746,497.19 |
-| NIL/USDT:USDT | +13.59% | $2,562,552.22 |
-| SUPER/USDT:USDT | +12.89% | $1,873,096.12 |
+| AGT/USDT:USDT | +43.40% | $1,387,692.47 |
+| PLUME/USDT:USDT | +28.00% | $1,477,244.05 |
+| BLUAI/USDT:USDT | +16.47% | $1,747,914.58 |
+| NIL/USDT:USDT | +13.55% | $2,596,676.60 |
+| SUPER/USDT:USDT | +12.62% | $1,881,612.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLUME/USDT:USDT | below_1h_threshold | +4.16% | +4.28% |
-| UB/USDT:USDT | below_1h_threshold | +1.63% | +1.76% |
-| ARKM/USDT:USDT | below_1h_threshold | +1.53% | +1.65% |
-| NIL/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
-| BLUAI/USDT:USDT | below_1h_threshold | +0.74% | +0.87% |
+| UB/USDT:USDT | below_1h_threshold | +2.55% | +2.72% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.53% | +1.70% |
+| NIL/USDT:USDT | below_1h_threshold | +0.94% | +1.11% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.81% | +0.98% |
+| BLUAI/USDT:USDT | below_1h_threshold | +0.55% | +0.72% |
 
 ## 5. 次に見るべき不足
 
