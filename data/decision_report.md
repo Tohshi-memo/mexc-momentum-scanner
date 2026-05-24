@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T22:29:10.637541+00:00
+- generated_at: 2026-05-24T22:34:14.208443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4836**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T22:29:08.528873+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.00% price=76869.2
+- 更新: 2026-05-24T22:34:12.097536+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.01% price=76872.9
 - Funnel: target 764 → liquid 110 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUPER/USDT:USDT | +10.17% | $2,956,326.98 |
-| BILL/USDT:USDT | +3.24% | $14,088,279.38 |
-| ZEC/USDT:USDT | +1.63% | $583,687,561.93 |
-| LUNC/USDT:USDT | +1.62% | $2,952,498.66 |
-| RENDER/USDT:USDT | +1.56% | $4,879,962.58 |
+| SUPER/USDT:USDT | +8.82% | $2,991,407.27 |
+| BILL/USDT:USDT | +2.99% | $14,179,762.98 |
+| NIL/USDT:USDT | +1.63% | $13,116,151.24 |
+| RENDER/USDT:USDT | +1.56% | $4,899,126.79 |
+| ZEC/USDT:USDT | +1.46% | $585,398,708.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | RENDER/USDT:USDT | below_1h_threshold | +3.29% | +2.29% |
-| STRK/USDT:USDT | below_1h_threshold | +2.61% | +1.61% |
-| IP/USDT:USDT | below_1h_threshold | +2.53% | +1.53% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.51% | +1.51% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.49% | +1.49% |
+| IP/USDT:USDT | below_1h_threshold | +2.72% | +1.71% |
+| STRK/USDT:USDT | below_1h_threshold | +2.56% | +1.55% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.50% | +1.49% |
+| ARKM/USDT:USDT | below_1h_threshold | +2.25% | +1.24% |
 
 ## 5. 次に見るべき不足
 
