@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T09:39:18.797506+00:00
+- generated_at: 2026-05-24T09:44:36.472443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4816**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T09:39:16.175383+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=76993.0
-- Funnel: target 764 → liquid 111 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1, 4h RSI 79.2 >= 65=1
+- 更新: 2026-05-24T09:44:31.220283+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=76957.7
+- Funnel: target 764 → liquid 111 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +52.08% | $2,321,396.50 |
-| IN/USDT:USDT | +23.39% | $3,463,935.90 |
-| PLUME/USDT:USDT | +22.64% | $2,169,142.42 |
-| NIL/USDT:USDT | +20.55% | $2,852,503.23 |
-| GRASS/USDT:USDT | +19.97% | $10,072,554.02 |
+| AGT/USDT:USDT | +50.94% | $2,368,721.48 |
+| IN/USDT:USDT | +24.26% | $3,490,514.94 |
+| PLUME/USDT:USDT | +21.58% | $2,195,552.11 |
+| NIL/USDT:USDT | +21.51% | $2,879,719.47 |
+| GRASS/USDT:USDT | +19.84% | $10,138,259.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_relative_strength | +5.05% | +4.80% |
-| IN/USDT:USDT | below_1h_threshold | +4.03% | +3.78% |
-| UB/USDT:USDT | below_1h_threshold | +3.24% | +2.99% |
-| LIT/USDT:USDT | below_1h_threshold | +2.15% | +1.90% |
-| FIDA/USDT:USDT | below_1h_threshold | +1.84% | +1.59% |
+| IN/USDT:USDT | below_1h_threshold | +4.59% | +4.39% |
+| UB/USDT:USDT | below_1h_threshold | +3.83% | +3.63% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.00% | +1.80% |
+| BAN/USDT:USDT | below_1h_threshold | +1.85% | +1.64% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.61% | +1.41% |
 
 ## 5. 次に見るべき不足
 
