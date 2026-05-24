@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-24T16:19:08.566135+00:00
+- generated_at: 2026-05-24T16:24:17.172664+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4828**
+- closed shadow trades: **4829**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4828, expectancy=-0.09%
+- 全期間 MARKET基準: n=4829, expectancy=-0.09%
 - 直近20件 MARKET基準: n=20, expectancy=-1.65%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$123.52** / 初期 $100.00 (+23.52%)
-- 確定: 634件 (Win 156 / Loss 199 / Flat 279) / skip 755件
-- 成長率目線: 平均log +0.000333 / 幾何平均 +0.033% per trade / maxDD +4.72%
+- 残高: **$122.90** / 初期 $100.00 (+22.90%)
+- 確定: 635件 (Win 156 / Loss 200 / Flat 279) / skip 755件
+- 成長率目線: 平均log +0.000325 / 幾何平均 +0.032% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: NIL/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $123.52
+- 最新: GRASS/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $122.90
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T16:19:06.432556+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=76618.1
+- 更新: 2026-05-24T16:24:14.765279+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=76606.1
 - Funnel: target 764 → liquid 113 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +3.87% | $42,236,607.23 |
-| PLAY/USDT:USDT | +2.30% | $3,139,731.24 |
-| MYX/USDT:USDT | +2.03% | $2,972,905.92 |
-| NIL/USDT:USDT | +1.82% | $6,918,383.40 |
-| EDEN/USDT:USDT | +1.76% | $8,984,939.71 |
+| PLAY/USDT:USDT | +2.61% | $3,159,781.10 |
+| B2/USDT:USDT | +2.31% | $1,673,662.71 |
+| GENIUS/USDT:USDT | +2.14% | $5,900,482.99 |
+| NIL/USDT:USDT | +1.92% | $6,998,317.61 |
+| CHIP/USDT:USDT | +1.84% | $1,203,359.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +3.87% | +3.51% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.40% | +2.04% |
-| MYX/USDT:USDT | below_1h_threshold | +1.99% | +1.63% |
-| NIL/USDT:USDT | below_1h_threshold | +1.83% | +1.47% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.76% | +1.41% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.62% | +2.27% |
+| B2/USDT:USDT | below_1h_threshold | +2.32% | +1.97% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.15% | +1.80% |
+| NIL/USDT:USDT | below_1h_threshold | +1.92% | +1.58% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.91% | +1.57% |
 
 ## 5. 次に見るべき不足
 
