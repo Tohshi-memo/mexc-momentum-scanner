@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-24T11:34:14.079445+00:00
+- generated_at: 2026-05-24T11:39:12.925602+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4820**
+- closed shadow trades: **4821**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4820, expectancy=-0.09%
+- 全期間 MARKET基準: n=4821, expectancy=-0.08%
 - 直近20件 MARKET基準: n=20, expectancy=-1.28%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,38 +46,39 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$123.98** / 初期 $100.00 (+23.98%)
-- 確定: 626件 (Win 155 / Loss 197 / Flat 274) / skip 755件
-- 成長率目線: 平均log +0.000343 / 幾何平均 +0.034% per trade / maxDD +4.72%
+- 残高: **$123.36** / 初期 $100.00 (+23.36%)
+- 確定: 627件 (Win 155 / Loss 198 / Flat 274) / skip 755件
+- 成長率目線: 平均log +0.000335 / 幾何平均 +0.033% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PLAY/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +1.00% 残高後 $123.98
+- 最新: PLUME/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $123.36
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T11:34:11.975788+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=77268.7
-- Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-24T11:39:08.054119+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77209.7
+- Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +55.38% | $3,665,712.62 |
-| NIL/USDT:USDT | +26.43% | $3,762,620.55 |
-| BLUAI/USDT:USDT | +18.57% | $1,788,634.49 |
-| PLUME/USDT:USDT | +18.56% | $2,510,715.35 |
-| PHA/USDT:USDT | +17.42% | $1,021,699.25 |
+| AGT/USDT:USDT | +56.10% | $3,696,347.96 |
+| NIL/USDT:USDT | +25.23% | $3,820,662.54 |
+| BLUAI/USDT:USDT | +18.85% | $1,791,501.84 |
+| PLUME/USDT:USDT | +17.66% | $2,528,351.04 |
+| UB/USDT:USDT | +17.57% | $2,217,703.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.48% | +4.34% |
-| BILL/USDT:USDT | below_1h_threshold | +2.77% | +2.64% |
-| BLUAI/USDT:USDT | below_1h_threshold | +1.46% | +1.33% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.40% | +1.27% |
-| LIT/USDT:USDT | below_1h_threshold | +1.16% | +1.02% |
+| BILL/USDT:USDT | below_1h_threshold | +3.18% | +3.13% |
+| BLUAI/USDT:USDT | below_1h_threshold | +1.79% | +1.73% |
+| LIT/USDT:USDT | below_1h_threshold | +1.59% | +1.53% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.57% | +1.51% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.88% | +0.82% |
 
 ## 5. 次に見るべき不足
 
