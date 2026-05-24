@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T07:24:03.436915+00:00
+- generated_at: 2026-05-24T07:29:10.133096+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4813**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T07:24:01.117148+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=76842.4
+- 更新: 2026-05-24T07:29:07.871531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=76860.6
 - Funnel: target 764 → liquid 116 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1
+- Strict後reject: 4h RSI 84.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +43.07% | $1,340,806.34 |
-| PLUME/USDT:USDT | +25.28% | $1,258,872.74 |
-| BLUAI/USDT:USDT | +16.74% | $1,743,674.16 |
-| SUPER/USDT:USDT | +13.16% | $1,869,148.59 |
-| NIL/USDT:USDT | +12.80% | $2,553,715.37 |
+| AGT/USDT:USDT | +42.57% | $1,363,035.96 |
+| PLUME/USDT:USDT | +26.64% | $1,355,478.15 |
+| BLUAI/USDT:USDT | +16.70% | $1,746,497.19 |
+| NIL/USDT:USDT | +13.59% | $2,562,552.22 |
+| SUPER/USDT:USDT | +12.89% | $1,873,096.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLUME/USDT:USDT | below_1h_threshold | +3.60% | +3.75% |
-| UB/USDT:USDT | below_1h_threshold | +3.37% | +3.52% |
-| BLUAI/USDT:USDT | below_1h_threshold | +0.75% | +0.90% |
-| ARKM/USDT:USDT | below_1h_threshold | +0.69% | +0.84% |
-| ME/USDT:USDT | below_1h_threshold | +0.49% | +0.63% |
+| PLUME/USDT:USDT | below_1h_threshold | +4.16% | +4.28% |
+| UB/USDT:USDT | below_1h_threshold | +1.63% | +1.76% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.53% | +1.65% |
+| NIL/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
+| BLUAI/USDT:USDT | below_1h_threshold | +0.74% | +0.87% |
 
 ## 5. 次に見るべき不足
 
