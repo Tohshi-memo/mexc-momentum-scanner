@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-24T16:49:09.043248+00:00
+- generated_at: 2026-05-24T16:54:16.528108+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4829**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-24T16:49:06.921541+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=76574.8
+- 更新: 2026-05-24T16:54:14.414303+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=76581.2
 - Funnel: target 764 → liquid 114 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +4.97% | $9,337,353.09 |
-| MYX/USDT:USDT | +4.66% | $3,057,275.29 |
-| CHIP/USDT:USDT | +3.83% | $1,303,872.82 |
-| NIL/USDT:USDT | +3.68% | $7,327,537.27 |
-| AGT/USDT:USDT | +3.33% | $6,422,946.83 |
+| AGT/USDT:USDT | +4.24% | $6,456,850.66 |
+| MYX/USDT:USDT | +4.02% | $3,071,247.31 |
+| CHIP/USDT:USDT | +2.70% | $1,323,689.27 |
+| EDEN/USDT:USDT | +2.36% | $9,498,841.45 |
+| GENIUS/USDT:USDT | +2.04% | $6,089,556.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_relative_strength | +5.17% | +4.87% |
-| MYX/USDT:USDT | below_1h_threshold | +4.67% | +4.36% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.84% | +3.54% |
-| AGT/USDT:USDT | below_1h_threshold | +3.81% | +3.51% |
-| NIL/USDT:USDT | below_1h_threshold | +3.75% | +3.45% |
+| AGT/USDT:USDT | below_1h_threshold | +4.24% | +3.93% |
+| MYX/USDT:USDT | below_1h_threshold | +4.22% | +3.91% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.72% | +2.41% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.39% | +2.08% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.16% | +1.85% |
 
 ## 5. 次に見るべき不足
 
