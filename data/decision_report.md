@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T03:14:15.917347+00:00
+- generated_at: 2026-05-25T03:19:23.183487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4841**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T03:14:13.782960+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77034.4
+- 更新: 2026-05-25T03:19:21.073728+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77069.1
 - Funnel: target 764 → liquid 113 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +24.06% | $1,597,584.35 |
-| SPORTFUN/USDT:USDT | +12.81% | $1,187,464.55 |
-| H/USDT:USDT | +5.42% | $1,020,870.61 |
-| SAGA/USDT:USDT | +4.61% | $1,213,558.07 |
-| SUPER/USDT:USDT | +3.73% | $3,319,986.97 |
+| XAN/USDT:USDT | +23.77% | $1,633,762.00 |
+| SPORTFUN/USDT:USDT | +13.02% | $1,188,366.92 |
+| H/USDT:USDT | +6.02% | $1,021,422.14 |
+| SAGA/USDT:USDT | +5.09% | $1,216,699.27 |
+| EDU/USDT:USDT | +4.15% | $1,090,326.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNT/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +0.90% | +0.94% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.74% | +0.77% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.61% | +0.64% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.50% | +0.54% |
+| QNT/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
+| NIL/USDT:USDT | below_1h_threshold | +1.35% | +1.34% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +1.09% | +1.08% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.91% | +0.90% |
+| H/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
 
 ## 5. 次に見るべき不足
 
