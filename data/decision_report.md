@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T09:39:08.456174+00:00
+- generated_at: 2026-05-25T09:44:05.277751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4852**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T09:39:06.356876+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=77590.5
+- 更新: 2026-05-25T09:44:03.117725+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=77543.2
 - Funnel: target 764 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +44.64% | $7,452,127.62 |
-| XAN/USDT:USDT | +38.36% | $5,933,652.07 |
-| SPORTFUN/USDT:USDT | +17.91% | $1,385,393.25 |
-| SAGA/USDT:USDT | +14.85% | $1,917,910.53 |
-| H/USDT:USDT | +11.94% | $1,564,474.86 |
+| PLAY/USDT:USDT | +45.85% | $7,734,475.37 |
+| XAN/USDT:USDT | +35.82% | $5,966,609.79 |
+| SPORTFUN/USDT:USDT | +18.27% | $1,389,248.23 |
+| SAGA/USDT:USDT | +15.48% | $1,931,597.82 |
+| H/USDT:USDT | +13.59% | $1,581,881.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.71% | +2.50% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.28% | +2.07% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.91% | +1.69% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.45% | +1.23% |
-| IN/USDT:USDT | below_1h_threshold | +1.26% | +1.05% |
+| UB/USDT:USDT | below_1h_threshold | +3.35% | +3.20% |
+| MORPHO/USDT:USDT | below_1h_threshold | +2.23% | +2.07% |
+| NIL/USDT:USDT | below_1h_threshold | +2.22% | +2.07% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.45% | +1.29% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +1.43% | +1.27% |
 
 ## 5. 次に見るべき不足
 
