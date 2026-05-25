@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T15:09:16.189990+00:00
+- generated_at: 2026-05-25T15:13:25.858751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4859**
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T15:09:14.038278+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77707.2
-- Funnel: target 765 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-25T15:13:22.088429+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=77824.8
+- Funnel: target 765 → liquid 115 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +46.36% | $14,794,369.29 |
-| PHA/USDT:USDT | +32.75% | $2,593,554.47 |
-| XAN/USDT:USDT | +27.85% | $7,803,064.44 |
-| SAGA/USDT:USDT | +27.61% | $4,467,494.08 |
-| UB/USDT:USDT | +22.45% | $7,773,456.33 |
+| PLAY/USDT:USDT | +45.89% | $14,915,344.27 |
+| PHA/USDT:USDT | +34.81% | $2,638,090.62 |
+| XAN/USDT:USDT | +28.48% | $7,815,264.40 |
+| SAGA/USDT:USDT | +27.82% | $4,476,707.80 |
+| UB/USDT:USDT | +22.32% | $7,827,910.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.75% | +1.71% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.56% | +1.52% |
-| NIL/USDT:USDT | below_1h_threshold | +1.29% | +1.25% |
-| RENDER/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
-| FET/USDT:USDT | below_1h_threshold | +0.63% | +0.59% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.02% | +1.83% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.94% | +1.75% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.38% | +1.18% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +1.31% | +1.12% |
+| NIL/USDT:USDT | below_1h_threshold | +1.27% | +1.08% |
 
 ## 5. 次に見るべき不足
 
