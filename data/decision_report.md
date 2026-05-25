@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T16:54:10.333213+00:00
+- generated_at: 2026-05-25T16:59:09.805490+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4862**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T16:54:08.205597+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77682.1
+- 更新: 2026-05-25T16:59:07.676844+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=77700.1
 - Funnel: target 765 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +4.82% | $1,143,544.26 |
-| TONCOIN/USDT:USDT | +4.62% | $37,271,877.53 |
-| H/USDT:USDT | +4.00% | $2,103,386.45 |
-| BEAT/USDT:USDT | +3.62% | $31,301,531.33 |
-| ESPORTS/USDT:USDT | +3.48% | $12,478,079.32 |
+| GUA/USDT:USDT | +4.87% | $1,153,765.71 |
+| TONCOIN/USDT:USDT | +4.84% | $37,658,682.20 |
+| H/USDT:USDT | +4.17% | $2,109,581.99 |
+| NIL/USDT:USDT | +3.95% | $18,622,249.21 |
+| TIA/USDT:USDT | +3.61% | $8,821,091.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +4.82% | +4.70% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +4.61% | +4.49% |
-| H/USDT:USDT | below_1h_threshold | +4.01% | +3.88% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.76% | +3.64% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.48% | +3.36% |
+| GUA/USDT:USDT | below_1h_threshold | +4.88% | +4.73% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.84% | +4.70% |
+| H/USDT:USDT | below_1h_threshold | +4.18% | +4.03% |
+| NIL/USDT:USDT | below_1h_threshold | +3.88% | +3.74% |
+| TIA/USDT:USDT | below_1h_threshold | +3.61% | +3.47% |
 
 ## 5. 次に見るべき不足
 
