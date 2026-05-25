@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-25T15:53:28.618358+00:00
+- generated_at: 2026-05-25T15:59:52.218884+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4860**
+- closed shadow trades: **4861**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=4860, expectancy=-0.09%
-- 直近20件 MARKET基準: n=20, expectancy=-2.50%
+- 全期間 MARKET基準: n=4861, expectancy=-0.09%
+- 直近20件 MARKET基準: n=20, expectancy=-2.49%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -2.50% | **-2.50%** |
+| MARKET | 20/20 | 100.0% | -2.49% | **-2.49%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,10 +31,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 6/7 | 85.7% | +4.67% | **+4.01%** |
+| LIMIT_BB3S_LONG | 6/8 | 75.0% | +4.67% | **+3.50%** |
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +4.76% | **+3.33%** |
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +4.95% | **+2.72%** |
-| LIMIT_ATR_LONG | 13/20 | 65.0% | +4.04% | **+2.63%** |
+| LIMIT_ATR_LONG | 12/20 | 60.0% | +3.90% | **+2.34%** |
 | LIMIT_4PCT_LONG | 8/20 | 40.0% | +4.23% | **+1.69%** |
 
 ## 2. $100 Live Portfolio
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$130.54** / 初期 $100.00 (+30.54%)
-- 確定: 666件 (Win 169 / Loss 209 / Flat 288) / skip 755件
+- 確定: 667件 (Win 169 / Loss 209 / Flat 289) / skip 755件
 - 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: LAB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $130.54
+- 最新: NEAR/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $130.54
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T15:53:26.948441+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77575.9
+- 更新: 2026-05-25T15:59:49.843427+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77594.6
 - Funnel: target 765 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +54.13% | $16,256,090.26 |
-| PHA/USDT:USDT | +30.05% | $2,967,095.60 |
-| SAGA/USDT:USDT | +28.50% | $4,737,860.29 |
-| XAN/USDT:USDT | +24.56% | $7,982,099.57 |
-| UB/USDT:USDT | +18.61% | $8,275,863.00 |
+| PLAY/USDT:USDT | +55.20% | $16,360,226.34 |
+| PHA/USDT:USDT | +30.18% | $2,994,100.53 |
+| SAGA/USDT:USDT | +28.76% | $4,781,594.64 |
+| XAN/USDT:USDT | +24.61% | $7,991,955.93 |
+| UB/USDT:USDT | +20.48% | $8,388,755.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.57% | +3.70% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.89% | +3.02% |
-| XPL/USDT:USDT | below_1h_threshold | +2.03% | +2.16% |
-| FET/USDT:USDT | below_1h_threshold | +1.71% | +1.84% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.41% | +1.54% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.88% | +4.98% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.67% | +3.77% |
+| XPL/USDT:USDT | below_1h_threshold | +2.62% | +2.73% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.53% | +1.63% |
+| WIF/USDT:USDT | below_1h_threshold | +1.49% | +1.59% |
 
 ## 5. 次に見るべき不足
 
