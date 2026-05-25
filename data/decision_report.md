@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T16:39:23.173323+00:00
+- generated_at: 2026-05-25T16:44:07.116483+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4862**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T16:39:18.404705+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=77584.8
-- Funnel: target 765 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-25T16:44:04.959907+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77604.0
+- Funnel: target 765 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +5.94% | $1,056,430.88 |
-| GRASS/USDT:USDT | +4.87% | $3,922,882.22 |
-| H/USDT:USDT | +3.94% | $2,088,908.00 |
-| ESPORTS/USDT:USDT | +3.48% | $12,445,924.08 |
-| TONCOIN/USDT:USDT | +3.27% | $35,367,476.61 |
+| GUA/USDT:USDT | +4.51% | $1,092,534.57 |
+| TONCOIN/USDT:USDT | +4.17% | $35,948,791.77 |
+| H/USDT:USDT | +3.96% | $2,094,883.34 |
+| ESPORTS/USDT:USDT | +3.13% | $12,455,934.20 |
+| GRASS/USDT:USDT | +2.95% | $3,976,965.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.94% | +3.95% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.48% | +3.49% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.25% | +3.26% |
-| MYX/USDT:USDT | below_1h_threshold | +2.62% | +2.62% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.75% | +1.76% |
+| GUA/USDT:USDT | below_1h_threshold | +4.79% | +4.77% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.97% | +3.95% |
+| H/USDT:USDT | below_1h_threshold | +3.97% | +3.95% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.14% | +3.11% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.78% | +2.76% |
 
 ## 5. 次に見るべき不足
 
