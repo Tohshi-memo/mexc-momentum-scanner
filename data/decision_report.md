@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T10:44:19.704630+00:00
+- generated_at: 2026-05-25T10:49:32.851032+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4853**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T10:44:16.965763+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=77476.9
+- 更新: 2026-05-25T10:49:30.522951+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77496.0
 - Funnel: target 764 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.6 >= 65=1
+- Strict後reject: 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +51.93% | $9,039,159.71 |
-| XAN/USDT:USDT | +35.92% | $6,399,615.84 |
-| SAGA/USDT:USDT | +25.61% | $2,165,019.39 |
-| SPORTFUN/USDT:USDT | +20.44% | $1,411,430.51 |
-| ERA/USDT:USDT | +17.98% | $1,030,803.00 |
+| PLAY/USDT:USDT | +50.34% | $9,218,041.07 |
+| XAN/USDT:USDT | +35.85% | $6,431,081.97 |
+| SAGA/USDT:USDT | +26.66% | $2,223,126.12 |
+| SPORTFUN/USDT:USDT | +20.90% | $1,412,432.00 |
+| ERA/USDT:USDT | +18.53% | $1,039,052.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEN/USDT:USDT | below_1h_threshold | +3.95% | +4.07% |
-| NIL/USDT:USDT | below_1h_threshold | +3.88% | +3.99% |
-| DASH/USDT:USDT | below_1h_threshold | +2.21% | +2.32% |
-| INJ/USDT:USDT | below_1h_threshold | +1.90% | +2.01% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.72% | +1.84% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.00% | +4.09% |
+| INJ/USDT:USDT | below_1h_threshold | +3.14% | +3.23% |
+| NIL/USDT:USDT | below_1h_threshold | +2.93% | +3.02% |
+| DASH/USDT:USDT | below_1h_threshold | +2.67% | +2.76% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.62% | +2.71% |
 
 ## 5. 次に見るべき不足
 
