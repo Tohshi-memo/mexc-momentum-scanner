@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T01:39:39.681027+00:00
+- generated_at: 2026-05-25T01:44:23.190273+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4837**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T01:39:37.627345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77077.2
+- 更新: 2026-05-25T01:44:21.017426+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77110.9
 - Funnel: target 764 → liquid 112 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +14.31% | $1,079,587.55 |
-| EDU/USDT:USDT | +5.64% | $1,030,130.85 |
-| SUPER/USDT:USDT | +5.17% | $3,562,011.93 |
-| BILL/USDT:USDT | +4.33% | $14,856,359.17 |
-| AGT/USDT:USDT | +3.76% | $7,279,942.29 |
+| SPORTFUN/USDT:USDT | +14.12% | $1,080,401.89 |
+| EDU/USDT:USDT | +5.59% | $1,032,076.49 |
+| SUPER/USDT:USDT | +4.74% | $3,562,213.38 |
+| AGT/USDT:USDT | +4.11% | $7,283,897.98 |
+| NIL/USDT:USDT | +3.88% | $13,626,029.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.63% | +2.69% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.51% | +1.56% |
-| MYX/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
-| EDU/USDT:USDT | below_1h_threshold | +1.00% | +1.06% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
+| NIL/USDT:USDT | below_1h_threshold | +3.00% | +3.01% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.68% | +1.69% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.61% | +1.62% |
+| MYX/USDT:USDT | below_1h_threshold | +1.30% | +1.31% |
+| AGT/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
 
 ## 5. 次に見るべき不足
 
