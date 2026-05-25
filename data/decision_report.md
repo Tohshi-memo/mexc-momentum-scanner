@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T19:54:21.005269+00:00
+- generated_at: 2026-05-25T19:59:23.051902+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4869**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T19:54:18.696895+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77412.5
+- 更新: 2026-05-25T19:59:20.717267+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=77397.3
 - Funnel: target 765 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 71.4 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +65.71% | $1,409,447.56 |
-| ERA/USDT:USDT | +9.95% | $1,582,016.04 |
-| AKT/USDT:USDT | +8.90% | $1,177,986.20 |
-| WLD/USDT:USDT | +8.66% | $35,320,146.92 |
-| NIL/USDT:USDT | +7.69% | $17,131,614.73 |
+| POND/USDT:USDT | +65.00% | $1,410,485.66 |
+| ERA/USDT:USDT | +10.09% | $1,598,401.06 |
+| AKT/USDT:USDT | +8.88% | $1,188,132.82 |
+| NIL/USDT:USDT | +8.07% | $17,169,054.92 |
+| WLD/USDT:USDT | +7.61% | $35,672,119.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +4.35% | +4.48% |
-| LIT/USDT:USDT | below_1h_threshold | +3.92% | +4.05% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.87% | +4.00% |
-| B/USDT:USDT | below_1h_threshold | +1.69% | +1.82% |
-| WLD/USDT:USDT | below_1h_threshold | +1.41% | +1.54% |
+| ERA/USDT:USDT | below_1h_threshold | +4.49% | +4.64% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.70% | +3.84% |
+| LIT/USDT:USDT | below_1h_threshold | +2.79% | +2.94% |
+| B/USDT:USDT | below_1h_threshold | +1.65% | +1.80% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.55% | +1.69% |
 
 ## 5. 次に見るべき不足
 
