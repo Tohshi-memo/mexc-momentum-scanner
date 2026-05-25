@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T17:44:09.754375+00:00
+- generated_at: 2026-05-25T17:49:20.440656+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4865**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T17:44:07.623442+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=77538.4
+- 更新: 2026-05-25T17:49:18.297564+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=77547.1
 - Funnel: target 765 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +75.71% | $1,199,059.84 |
-| TONCOIN/USDT:USDT | +8.67% | $48,357,268.93 |
-| NIL/USDT:USDT | +8.63% | $18,018,934.59 |
-| H/USDT:USDT | +7.47% | $2,189,311.01 |
-| TIA/USDT:USDT | +5.87% | $10,926,903.34 |
+| POND/USDT:USDT | +83.57% | $1,210,401.89 |
+| NIL/USDT:USDT | +8.58% | $18,125,462.85 |
+| H/USDT:USDT | +7.82% | $2,221,702.79 |
+| TIA/USDT:USDT | +6.16% | $11,026,398.62 |
+| TONCOIN/USDT:USDT | +6.03% | $50,298,602.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.56% | +4.76% |
-| LIT/USDT:USDT | below_1h_threshold | +3.98% | +4.18% |
-| H/USDT:USDT | below_1h_threshold | +3.28% | +3.48% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.12% | +3.32% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.08% | +3.29% |
+| LIT/USDT:USDT | below_1h_threshold | +4.87% | +5.06% |
+| NIL/USDT:USDT | below_1h_threshold | +4.69% | +4.88% |
+| H/USDT:USDT | below_1h_threshold | +3.50% | +3.69% |
+| POND/USDT:USDT | below_1h_threshold | +2.80% | +2.99% |
+| FET/USDT:USDT | below_1h_threshold | +2.33% | +2.52% |
 
 ## 5. 次に見るべき不足
 
