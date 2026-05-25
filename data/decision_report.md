@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T05:28:21.224210+00:00
+- generated_at: 2026-05-25T05:34:19.154541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4843**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T05:28:19.572474+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77379.1
+- 更新: 2026-05-25T05:34:17.043974+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77382.3
 - Funnel: target 764 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +39.78% | $2,874,602.40 |
-| SPORTFUN/USDT:USDT | +14.10% | $1,235,232.94 |
-| H/USDT:USDT | +7.69% | $1,137,379.38 |
-| SUPER/USDT:USDT | +5.00% | $2,878,891.34 |
-| SAGA/USDT:USDT | +4.98% | $1,285,960.85 |
+| XAN/USDT:USDT | +39.20% | $2,941,255.88 |
+| SPORTFUN/USDT:USDT | +14.61% | $1,242,416.37 |
+| H/USDT:USDT | +8.60% | $1,150,088.01 |
+| SAGA/USDT:USDT | +5.14% | $1,295,570.91 |
+| SUPER/USDT:USDT | +5.00% | $2,879,663.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +3.40% | +3.37% |
-| SUPER/USDT:USDT | below_1h_threshold | +1.14% | +1.12% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.05% | +1.02% |
-| UB/USDT:USDT | below_1h_threshold | +1.03% | +1.00% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
+| XAN/USDT:USDT | below_1h_threshold | +3.43% | +3.40% |
+| LAB/USDT:USDT | below_1h_threshold | +2.02% | +1.99% |
+| UB/USDT:USDT | below_1h_threshold | +1.59% | +1.56% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.39% | +1.35% |
+| TIA/USDT:USDT | below_1h_threshold | +1.38% | +1.35% |
 
 ## 5. 次に見るべき不足
 
