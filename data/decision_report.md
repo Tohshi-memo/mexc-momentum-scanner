@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T02:34:13.303966+00:00
+- generated_at: 2026-05-25T02:39:13.693753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4839**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T02:34:10.936759+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=77145.1
-- Funnel: target 764 → liquid 114 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-25T02:39:11.354698+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=77118.3
+- Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
+- Strict後reject: 4h RSI 70.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +19.87% | $1,094,748.25 |
-| SPORTFUN/USDT:USDT | +15.48% | $1,152,169.35 |
-| SUPER/USDT:USDT | +5.42% | $3,420,222.92 |
-| EDU/USDT:USDT | +4.67% | $1,068,510.18 |
-| MYX/USDT:USDT | +3.97% | $2,548,905.13 |
+| XAN/USDT:USDT | +22.00% | $1,167,882.81 |
+| SPORTFUN/USDT:USDT | +13.58% | $1,161,383.54 |
+| H/USDT:USDT | +5.77% | $1,016,176.41 |
+| SUPER/USDT:USDT | +5.42% | $3,421,265.73 |
+| EDU/USDT:USDT | +4.32% | $1,068,859.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +3.25% | +2.94% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +2.47% | +2.16% |
-| INJ/USDT:USDT | below_1h_threshold | +1.68% | +1.36% |
-| DASH/USDT:USDT | below_1h_threshold | +1.26% | +0.94% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.23% | +0.92% |
+| MYX/USDT:USDT | below_1h_threshold | +3.25% | +2.98% |
+| INJ/USDT:USDT | below_1h_threshold | +1.95% | +1.68% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.10% | +0.83% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.02% | +0.75% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +0.96% | +0.69% |
 
 ## 5. 次に見るべき不足
 
