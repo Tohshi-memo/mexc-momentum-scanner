@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T08:39:16.892837+00:00
+- generated_at: 2026-05-25T08:44:08.010505+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4852**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T08:39:14.552007+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77305.6
+- 更新: 2026-05-25T08:44:05.686007+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=77324.9
 - Funnel: target 764 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
+- Strict後reject: 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +37.52% | $5,580,610.53 |
-| PLAY/USDT:USDT | +36.39% | $6,195,811.58 |
-| SAGA/USDT:USDT | +15.38% | $1,635,062.81 |
-| H/USDT:USDT | +13.45% | $1,429,079.59 |
-| PHA/USDT:USDT | +12.97% | $1,342,368.98 |
+| PLAY/USDT:USDT | +39.58% | $6,274,469.06 |
+| XAN/USDT:USDT | +39.19% | $5,604,844.64 |
+| SAGA/USDT:USDT | +18.58% | $1,663,962.19 |
+| H/USDT:USDT | +13.52% | $1,441,769.96 |
+| PHA/USDT:USDT | +12.94% | $1,351,457.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.87% | +2.96% |
-| H/USDT:USDT | below_1h_threshold | +1.59% | +1.68% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.57% | +1.66% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.82% | +0.91% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.70% | +0.79% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.30% | +4.37% |
+| NIL/USDT:USDT | below_1h_threshold | +3.40% | +3.46% |
+| H/USDT:USDT | below_1h_threshold | +1.64% | +1.71% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.42% | +1.49% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.84% | +0.90% |
 
 ## 5. 次に見るべき不足
 
