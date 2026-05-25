@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T16:19:24.823164+00:00
+- generated_at: 2026-05-25T16:24:40.534927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4862**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T16:19:22.654413+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77483.3
-- Funnel: target 765 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-25T16:24:38.411025+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77572.7
+- Funnel: target 765 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TONCOIN/USDT:USDT | +4.14% | $32,383,001.86 |
-| GRASS/USDT:USDT | +2.78% | $3,758,236.36 |
-| H/USDT:USDT | +2.51% | $2,029,016.85 |
-| NIL/USDT:USDT | +1.83% | $18,371,247.24 |
-| ORDI/USDT:USDT | +1.71% | $2,861,399.33 |
+| TONCOIN/USDT:USDT | +4.62% | $33,276,108.71 |
+| GRASS/USDT:USDT | +3.87% | $3,797,178.31 |
+| H/USDT:USDT | +3.13% | $2,034,644.95 |
+| NIL/USDT:USDT | +2.58% | $18,408,337.26 |
+| MYX/USDT:USDT | +2.52% | $1,517,741.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +4.18% | +4.32% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.78% | +2.92% |
-| H/USDT:USDT | below_1h_threshold | +2.63% | +2.77% |
-| NIL/USDT:USDT | below_1h_threshold | +2.10% | +2.24% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.72% | +1.85% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +4.13% | +4.15% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.86% | +3.88% |
+| H/USDT:USDT | below_1h_threshold | +3.15% | +3.17% |
+| NIL/USDT:USDT | below_1h_threshold | +2.58% | +2.60% |
+| MYX/USDT:USDT | below_1h_threshold | +2.57% | +2.59% |
 
 ## 5. 次に見るべき不足
 
