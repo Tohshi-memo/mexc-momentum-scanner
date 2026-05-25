@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T02:44:07.302415+00:00
+- generated_at: 2026-05-25T02:49:07.234488+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4840**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T02:44:04.498454+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=77109.3
+- 更新: 2026-05-25T02:49:04.899501+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=77127.5
 - Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1
+- Strict後reject: 4h RSI 70.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +22.32% | $1,217,352.98 |
-| SPORTFUN/USDT:USDT | +14.06% | $1,165,138.30 |
-| H/USDT:USDT | +5.71% | $1,020,285.48 |
-| MYX/USDT:USDT | +4.91% | $2,550,908.53 |
-| SUPER/USDT:USDT | +4.83% | $3,422,062.88 |
+| XAN/USDT:USDT | +20.62% | $1,291,324.38 |
+| SPORTFUN/USDT:USDT | +13.22% | $1,166,084.78 |
+| H/USDT:USDT | +5.50% | $1,021,656.10 |
+| MYX/USDT:USDT | +4.96% | $2,557,377.59 |
+| SUPER/USDT:USDT | +4.91% | $3,427,955.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.19% | +3.93% |
-| INJ/USDT:USDT | below_1h_threshold | +1.85% | +1.59% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.41% | +1.15% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.23% | +0.96% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.22% | +0.95% |
+| MYX/USDT:USDT | below_1h_threshold | +4.19% | +3.90% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.45% | +1.16% |
+| INJ/USDT:USDT | below_1h_threshold | +1.38% | +1.09% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.25% | +0.96% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.07% | +0.79% |
 
 ## 5. 次に見るべき不足
 
