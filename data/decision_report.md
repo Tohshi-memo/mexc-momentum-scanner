@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T15:49:07.699263+00:00
+- generated_at: 2026-05-25T15:53:28.618358+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4860**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T15:49:05.542899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=77544.0
+- 更新: 2026-05-25T15:53:26.948441+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=77575.9
 - Funnel: target 765 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +54.42% | $16,084,495.57 |
-| PHA/USDT:USDT | +30.81% | $2,931,513.43 |
-| SAGA/USDT:USDT | +29.29% | $4,710,312.59 |
-| XAN/USDT:USDT | +24.96% | $7,948,816.07 |
-| UB/USDT:USDT | +19.15% | $8,191,249.91 |
+| PLAY/USDT:USDT | +54.13% | $16,256,090.26 |
+| PHA/USDT:USDT | +30.05% | $2,967,095.60 |
+| SAGA/USDT:USDT | +28.50% | $4,737,860.29 |
+| XAN/USDT:USDT | +24.56% | $7,982,099.57 |
+| UB/USDT:USDT | +18.61% | $8,275,863.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.06% | +3.23% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.80% | +2.97% |
-| XPL/USDT:USDT | below_1h_threshold | +2.26% | +2.44% |
-| INJ/USDT:USDT | below_1h_threshold | +1.90% | +2.08% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.43% | +1.60% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.57% | +3.70% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.89% | +3.02% |
+| XPL/USDT:USDT | below_1h_threshold | +2.03% | +2.16% |
+| FET/USDT:USDT | below_1h_threshold | +1.71% | +1.84% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.41% | +1.54% |
 
 ## 5. 次に見るべき不足
 
