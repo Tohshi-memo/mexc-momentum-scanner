@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T00:49:08.599745+00:00
+- generated_at: 2026-05-25T00:54:14.592747+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4836**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T00:49:06.504893+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=77090.3
+- 更新: 2026-05-25T00:54:12.530422+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=77136.1
 - Funnel: target 764 → liquid 111 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUPER/USDT:USDT | +5.85% | $3,907,958.61 |
-| EDU/USDT:USDT | +5.02% | $1,010,382.22 |
-| BILL/USDT:USDT | +3.29% | $14,898,424.53 |
-| LUNC/USDT:USDT | +3.15% | $2,886,530.95 |
-| AGT/USDT:USDT | +2.72% | $7,267,557.52 |
+| SUPER/USDT:USDT | +5.76% | $3,913,180.22 |
+| EDU/USDT:USDT | +5.00% | $1,011,269.62 |
+| BILL/USDT:USDT | +3.19% | $14,909,105.94 |
+| LUNC/USDT:USDT | +3.04% | $2,888,884.74 |
+| SILVER/USDT:USDT | +2.34% | $242,703,571.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUNC/USDT:USDT | below_1h_threshold | +2.18% | +2.10% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.71% | +1.64% |
-| AGT/USDT:USDT | below_1h_threshold | +1.54% | +1.47% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.43% | +1.36% |
-| XMR/USDT:USDT | below_1h_threshold | +1.08% | +1.00% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.08% | +1.94% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.62% | +1.49% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.53% | +1.39% |
+| PHA/USDT:USDT | below_1h_threshold | +1.36% | +1.23% |
+| XMR/USDT:USDT | below_1h_threshold | +1.00% | +0.86% |
 
 ## 5. 次に見るべき不足
 
