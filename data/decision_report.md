@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T04:49:07.626790+00:00
+- generated_at: 2026-05-25T04:54:14.056887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4842**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T04:49:05.509600+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=77246.6
+- 更新: 2026-05-25T04:54:11.970958+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=77358.7
 - Funnel: target 764 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +28.02% | $2,242,423.54 |
-| SPORTFUN/USDT:USDT | +13.67% | $1,220,509.46 |
-| H/USDT:USDT | +8.36% | $1,071,269.43 |
-| SAGA/USDT:USDT | +6.03% | $1,271,574.07 |
-| BILL/USDT:USDT | +4.51% | $15,180,678.36 |
+| XAN/USDT:USDT | +34.58% | $2,312,597.08 |
+| SPORTFUN/USDT:USDT | +13.63% | $1,221,542.61 |
+| H/USDT:USDT | +9.12% | $1,083,563.60 |
+| SAGA/USDT:USDT | +6.24% | $1,273,804.46 |
+| NIL/USDT:USDT | +5.88% | $14,154,216.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.94% | +3.60% |
-| CHZ/USDT:USDT | below_1h_threshold | +2.27% | +1.94% |
-| BILL/USDT:USDT | below_1h_threshold | +2.09% | +1.76% |
-| SPX/USDT:USDT | below_1h_threshold | +1.96% | +1.62% |
-| TIA/USDT:USDT | below_1h_threshold | +1.84% | +1.50% |
+| XAN/USDT:USDT | below_1h_threshold | +4.22% | +3.74% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.20% | +3.72% |
+| CHZ/USDT:USDT | below_1h_threshold | +2.41% | +1.93% |
+| H/USDT:USDT | below_1h_threshold | +2.36% | +1.88% |
+| SPX/USDT:USDT | below_1h_threshold | +2.10% | +1.62% |
 
 ## 5. 次に見るべき不足
 
