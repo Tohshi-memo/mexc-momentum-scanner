@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T04:19:10.682033+00:00
+- generated_at: 2026-05-25T04:24:04.145769+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4841**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T04:19:08.553408+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77004.9
+- 更新: 2026-05-25T04:24:02.043694+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77087.9
 - Funnel: target 764 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +29.58% | $1,977,677.79 |
-| SPORTFUN/USDT:USDT | +12.44% | $1,209,242.76 |
-| H/USDT:USDT | +6.10% | $1,053,525.83 |
-| SAGA/USDT:USDT | +5.98% | $1,238,506.73 |
-| EDU/USDT:USDT | +4.11% | $1,092,172.72 |
+| XAN/USDT:USDT | +30.31% | $2,019,247.40 |
+| SPORTFUN/USDT:USDT | +12.46% | $1,209,806.33 |
+| SAGA/USDT:USDT | +6.40% | $1,243,261.60 |
+| H/USDT:USDT | +6.39% | $1,056,431.10 |
+| EDU/USDT:USDT | +4.41% | $1,094,540.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +1.51% | +1.49% |
-| XAN/USDT:USDT | below_1h_threshold | +0.75% | +0.73% |
-| MORPHO/USDT:USDT | below_1h_threshold | +0.64% | +0.62% |
-| EDU/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.96% | +1.83% |
+| XAN/USDT:USDT | below_1h_threshold | +1.96% | +1.83% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.26% | +1.13% |
+| EDU/USDT:USDT | below_1h_threshold | +0.91% | +0.78% |
+| MORPHO/USDT:USDT | below_1h_threshold | +0.86% | +0.73% |
 
 ## 5. 次に見るべき不足
 
