@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-25T06:14:15.735910+00:00
+- generated_at: 2026-05-25T06:19:13.993953+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4845**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-25T06:14:13.302498+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77346.2
+- 更新: 2026-05-25T06:19:11.869410+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=77278.1
 - Funnel: target 764 → liquid 115 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XAN/USDT:USDT | +35.84% | $3,443,227.20 |
-| SPORTFUN/USDT:USDT | +14.94% | $1,260,886.77 |
-| NIL/USDT:USDT | +9.55% | $14,495,754.71 |
-| H/USDT:USDT | +8.58% | $1,193,055.38 |
-| SAGA/USDT:USDT | +6.40% | $1,270,541.86 |
+| XAN/USDT:USDT | +34.67% | $3,504,695.15 |
+| SPORTFUN/USDT:USDT | +15.67% | $1,263,093.96 |
+| H/USDT:USDT | +8.50% | $1,194,423.74 |
+| NIL/USDT:USDT | +7.83% | $14,551,808.78 |
+| SAGA/USDT:USDT | +7.34% | $1,276,858.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.02% | +2.05% |
-| INJ/USDT:USDT | below_1h_threshold | +1.37% | +1.40% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.75% | +0.78% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.52% | +0.56% |
-| H/USDT:USDT | below_1h_threshold | +0.50% | +0.53% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.59% | +1.71% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.34% | +1.46% |
+| INJ/USDT:USDT | below_1h_threshold | +1.00% | +1.12% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +0.95% | +1.06% |
+| H/USDT:USDT | below_1h_threshold | +0.46% | +0.58% |
 
 ## 5. 次に見るべき不足
 
