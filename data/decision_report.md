@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T18:39:34.728558+00:00
+- generated_at: 2026-05-26T18:44:35.814336+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4907**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T18:39:32.610371+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=76073.0
+- 更新: 2026-05-26T18:44:33.656881+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=75890.9
 - Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +6.63% | $7,653,816.04 |
-| USELESS/USDT:USDT | +4.94% | $1,237,223.07 |
-| MUSTOCK/USDT:USDT | +3.55% | $15,425,800.00 |
-| ESPORTS/USDT:USDT | +3.27% | $7,416,738.80 |
-| GUA/USDT:USDT | +3.18% | $4,779,829.06 |
+| PHA/USDT:USDT | +6.86% | $7,707,016.29 |
+| MUSTOCK/USDT:USDT | +3.50% | $15,545,932.79 |
+| SNDKSTOCK/USDT:USDT | +3.37% | $2,287,912.98 |
+| USELESS/USDT:USDT | +3.33% | $1,250,396.53 |
+| BILL/USDT:USDT | +2.95% | $13,361,446.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_relative_strength | +5.00% | +4.79% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.78% | +4.57% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.18% | +2.97% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.42% | +2.21% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.21% | +2.00% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.16% | +3.19% |
+| GUA/USDT:USDT | below_1h_threshold | +3.13% | +3.15% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.28% | +2.31% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.89% | +1.92% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.80% | +1.83% |
 
 ## 5. 次に見るべき不足
 
