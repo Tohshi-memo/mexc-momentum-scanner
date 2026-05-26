@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T16:14:20.069977+00:00
+- generated_at: 2026-05-26T16:19:28.818822+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4903**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T16:14:17.885608+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=76368.9
-- Funnel: target 769 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-26T16:19:26.655646+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=76410.7
+- Funnel: target 769 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +5.03% | $6,069,568.15 |
-| BILL/USDT:USDT | +2.76% | $14,010,807.75 |
-| ONDO/USDT:USDT | +1.82% | $51,337,568.73 |
-| AMDSTOCK/USDT:USDT | +1.12% | $1,564,761.19 |
-| NIL/USDT:USDT | +1.02% | $9,786,560.53 |
+| BILL/USDT:USDT | +4.77% | $14,165,693.99 |
+| UB/USDT:USDT | +2.15% | $8,002,609.97 |
+| ESPORTS/USDT:USDT | +2.01% | $6,145,775.52 |
+| ONDO/USDT:USDT | +1.98% | $51,733,476.99 |
+| DRIFT/USDT:USDT | +1.89% | $4,243,860.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.53% | +4.68% |
-| BILL/USDT:USDT | below_1h_threshold | +2.88% | +3.02% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.82% | +1.96% |
-| UB/USDT:USDT | below_1h_threshold | +1.18% | +1.33% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.23% |
+| BILL/USDT:USDT | below_1h_threshold | +4.78% | +4.87% |
+| UB/USDT:USDT | below_1h_threshold | +2.38% | +2.47% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.27% | +2.36% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.99% | +2.08% |
+| DRIFT/USDT:USDT | below_1h_threshold | +1.85% | +1.94% |
 
 ## 5. 次に見るべき不足
 
