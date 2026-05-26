@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T07:14:15.417229+00:00
+- generated_at: 2026-05-26T07:17:51.199344+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4888**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T07:14:13.170545+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=76642.2
+- 更新: 2026-05-26T07:17:49.523389+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=76591.3
 - Funnel: target 769 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +90.00% | $2,496,724.17 |
-| DRIFT/USDT:USDT | +17.20% | $1,059,129.07 |
-| WLD/USDT:USDT | +15.28% | $71,794,995.37 |
-| GRASS/USDT:USDT | +9.73% | $9,041,764.50 |
-| FET/USDT:USDT | +4.88% | $17,157,615.18 |
+| POND/USDT:USDT | +90.71% | $2,501,515.26 |
+| DRIFT/USDT:USDT | +17.32% | $1,066,150.42 |
+| WLD/USDT:USDT | +15.51% | $72,046,396.26 |
+| GRASS/USDT:USDT | +9.80% | $9,058,301.22 |
+| LAB/USDT:USDT | +5.13% | $24,565,272.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRIFT/USDT:USDT | below_1h_threshold | +3.51% | +3.80% |
-| POND/USDT:USDT | below_1h_threshold | +2.71% | +3.01% |
-| UB/USDT:USDT | below_1h_threshold | +1.91% | +2.20% |
-| XAN/USDT:USDT | below_1h_threshold | +1.42% | +1.71% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.96% | +1.25% |
+| POND/USDT:USDT | below_1h_threshold | +3.88% | +4.24% |
+| DRIFT/USDT:USDT | below_1h_threshold | +3.77% | +4.13% |
+| UB/USDT:USDT | below_1h_threshold | +2.08% | +2.44% |
+| XAN/USDT:USDT | below_1h_threshold | +1.91% | +2.27% |
+| LAB/USDT:USDT | below_1h_threshold | +1.50% | +1.86% |
 
 ## 5. 次に見るべき不足
 
