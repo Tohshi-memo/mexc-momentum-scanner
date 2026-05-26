@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T21:40:00.445855+00:00
+- generated_at: 2026-05-26T21:44:17.448439+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4907**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T21:39:58.399763+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=75992.2
+- 更新: 2026-05-26T21:44:15.306902+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=75981.2
 - Funnel: target 766 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MYX/USDT:USDT | +4.88% | $1,216,555.67 |
-| BILL/USDT:USDT | +4.64% | $8,292,382.21 |
-| LUNC/USDT:USDT | +4.35% | $2,659,163.69 |
-| SIREN/USDT:USDT | +3.90% | $1,086,069.14 |
-| MUSTOCK/USDT:USDT | +3.68% | $20,788,189.48 |
+| BILL/USDT:USDT | +5.52% | $8,320,857.71 |
+| MYX/USDT:USDT | +5.03% | $1,223,906.20 |
+| LUNC/USDT:USDT | +4.59% | $2,685,837.83 |
+| MUSTOCK/USDT:USDT | +3.63% | $20,841,673.37 |
+| SIREN/USDT:USDT | +3.58% | $1,089,203.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +1.75% | +1.86% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.66% |
-| SEI/USDT:USDT | below_1h_threshold | +1.25% | +1.36% |
-| IO/USDT:USDT | below_1h_threshold | +0.88% | +0.99% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.75% | +0.85% |
+| BILL/USDT:USDT | below_1h_threshold | +2.54% | +2.66% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.65% |
+| SEI/USDT:USDT | below_1h_threshold | +1.34% | +1.47% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.79% | +0.92% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.62% | +0.75% |
 
 ## 5. 次に見るべき不足
 
