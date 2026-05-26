@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T15:09:19.306220+00:00
+- generated_at: 2026-05-26T15:14:51.416083+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4903**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T15:09:17.129584+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76857.0
+- 更新: 2026-05-26T15:14:49.295140+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=76907.8
 - Funnel: target 769 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +57.14% | $2,991,673.25 |
-| WLD/USDT:USDT | +29.78% | $176,591,614.78 |
-| DRIFT/USDT:USDT | +22.99% | $4,054,368.52 |
-| IO/USDT:USDT | +15.50% | $1,361,832.20 |
-| OKB/USDT:USDT | +13.86% | $1,750,861.73 |
+| POND/USDT:USDT | +55.00% | $2,996,798.02 |
+| WLD/USDT:USDT | +30.93% | $177,542,376.97 |
+| DRIFT/USDT:USDT | +22.67% | $4,057,561.21 |
+| IO/USDT:USDT | +16.14% | $1,363,703.91 |
+| OKB/USDT:USDT | +13.89% | $1,751,239.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
-| DRIFT/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
-| H/USDT:USDT | below_1h_threshold | +0.96% | +0.99% |
-| WLD/USDT:USDT | below_1h_threshold | +0.82% | +0.84% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.50% | +0.53% |
+| WLD/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.58% | +1.54% |
+| H/USDT:USDT | below_1h_threshold | +1.06% | +1.02% |
+| AKT/USDT:USDT | below_1h_threshold | +1.00% | +0.95% |
+| DRIFT/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
 
 ## 5. 次に見るべき不足
 
