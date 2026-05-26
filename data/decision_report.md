@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T13:59:22.443191+00:00
+- generated_at: 2026-05-26T14:04:13.571318+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4901**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T13:59:17.702793+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77190.2
-- Funnel: target 769 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-26T14:04:11.424011+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77206.3
+- Funnel: target 769 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +72.14% | $2,859,830.25 |
-| WLD/USDT:USDT | +30.57% | $157,368,000.48 |
-| DRIFT/USDT:USDT | +22.84% | $3,981,668.12 |
-| IO/USDT:USDT | +16.01% | $1,292,580.15 |
-| OKB/USDT:USDT | +13.28% | $1,648,338.31 |
+| POND/USDT:USDT | +71.42% | $2,858,942.17 |
+| WLD/USDT:USDT | +29.29% | $158,838,836.53 |
+| DRIFT/USDT:USDT | +22.61% | $3,916,270.68 |
+| IO/USDT:USDT | +16.08% | $1,301,492.83 |
+| OKB/USDT:USDT | +13.64% | $1,645,916.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.74% |
-| ARKM/USDT:USDT | below_1h_threshold | +2.83% | +2.71% |
-| GRT/USDT:USDT | below_1h_threshold | +2.61% | +2.49% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.45% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.43% | +2.31% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.48% | +1.47% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.45% | +1.44% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.21% | +1.20% |
+| GRT/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
+| XAN/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
 
 ## 5. 次に見るべき不足
 
