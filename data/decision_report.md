@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T18:19:20.597096+00:00
+- generated_at: 2026-05-26T18:24:23.956934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4907**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T18:19:18.453820+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=76089.5
+- 更新: 2026-05-26T18:24:21.786310+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=76223.9
 - Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +10.15% | $7,436,192.40 |
-| ESPORTS/USDT:USDT | +5.54% | $7,284,546.85 |
-| BILL/USDT:USDT | +3.19% | $13,267,836.10 |
-| MYX/USDT:USDT | +3.08% | $1,109,282.77 |
-| MUSTOCK/USDT:USDT | +2.97% | $14,200,316.12 |
+| PHA/USDT:USDT | +10.28% | $7,493,215.14 |
+| ESPORTS/USDT:USDT | +5.54% | $7,311,901.30 |
+| USELESS/USDT:USDT | +3.37% | $1,212,911.87 |
+| MUSTOCK/USDT:USDT | +3.33% | $14,470,768.60 |
+| BILL/USDT:USDT | +2.98% | $13,285,852.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.46% | +3.22% |
-| GENIUS/USDT:USDT | below_1h_threshold | +3.02% | +2.78% |
-| MYX/USDT:USDT | below_1h_threshold | +1.98% | +1.75% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.56% | +1.33% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.28% | +1.05% |
+| GUA/USDT:USDT | below_1h_threshold | +4.09% | +3.68% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.20% | +2.79% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.93% | +2.52% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.19% | +1.78% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.76% | +1.35% |
 
 ## 5. 次に見るべき不足
 
