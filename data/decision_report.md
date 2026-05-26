@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T17:44:12.587148+00:00
+- generated_at: 2026-05-26T17:49:17.920661+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4907**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T17:44:10.423224+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.72% price=75980.8
-- Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-26T17:49:15.777028+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=76026.3
+- Funnel: target 766 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +13.88% | $7,293,461.72 |
-| BILL/USDT:USDT | +4.46% | $14,207,724.81 |
-| ESPORTS/USDT:USDT | +3.77% | $7,350,066.88 |
-| MUSTOCK/USDT:USDT | +2.54% | $13,338,632.29 |
-| SNDKSTOCK/USDT:USDT | +1.97% | $1,909,254.20 |
+| PHA/USDT:USDT | +13.19% | $7,356,641.78 |
+| ESPORTS/USDT:USDT | +5.28% | $7,398,270.41 |
+| BILL/USDT:USDT | +4.65% | $14,221,179.19 |
+| MUSTOCK/USDT:USDT | +2.93% | $13,535,837.90 |
+| FIDA/USDT:USDT | +2.77% | $1,111,616.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +2.62% | +3.35% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +2.09% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.81% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +1.63% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.78% | +1.51% |
+| PHA/USDT:USDT | below_1h_threshold | +2.02% | +2.68% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +2.36% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +2.04% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.85% |
+| DRAM/USDT:USDT | below_1h_threshold | +0.97% | +1.63% |
 
 ## 5. 次に見るべき不足
 
