@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-26T02:44:30.830612+00:00
+- generated_at: 2026-05-26T02:49:14.612854+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4882**
+- closed shadow trades: **4883**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.28% / filled 20/20。**
-- 全期間 MARKET基準: n=4882, expectancy=-0.08%
+- 全期間 MARKET基準: n=4883, expectancy=-0.08%
 - 直近20件 MARKET基準: n=20, expectancy=+2.28%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$127.31** / 初期 $100.00 (+27.31%)
-- 確定: 673件 (Win 169 / Loss 214 / Flat 290) / skip 770件
+- 確定: 673件 (Win 169 / Loss 214 / Flat 290) / skip 771件
 - 成長率目線: 平均log +0.000359 / 幾何平均 +0.036% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: IN/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $127.31
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T02:44:28.159564+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=76567.7
+- 更新: 2026-05-26T02:49:11.983364+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=76597.0
 - Funnel: target 768 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1
+- Strict後reject: 4h RSI 92.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +95.00% | $1,938,317.15 |
-| GRASS/USDT:USDT | +11.88% | $8,267,440.57 |
-| WLD/USDT:USDT | +8.89% | $49,917,942.05 |
-| AKT/USDT:USDT | +5.03% | $1,396,414.16 |
-| TIA/USDT:USDT | +3.21% | $21,423,906.42 |
+| POND/USDT:USDT | +96.42% | $1,971,003.35 |
+| GRASS/USDT:USDT | +13.14% | $8,309,140.08 |
+| WLD/USDT:USDT | +9.39% | $50,255,514.47 |
+| AKT/USDT:USDT | +5.27% | $1,397,560.05 |
+| TIA/USDT:USDT | +3.19% | $21,429,789.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.48% | +2.67% |
-| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.91% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.68% | +1.87% |
-| AKT/USDT:USDT | below_1h_threshold | +1.65% | +1.84% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.91% | +1.10% |
+| AGT/USDT:USDT | below_1h_threshold | +3.91% | +4.07% |
+| H/USDT:USDT | below_1h_threshold | +3.16% | +3.32% |
+| UB/USDT:USDT | below_1h_threshold | +2.68% | +2.84% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.31% | +2.47% |
+| AKT/USDT:USDT | below_1h_threshold | +1.99% | +2.15% |
 
 ## 5. 次に見るべき不足
 
