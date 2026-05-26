@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T23:09:17.011240+00:00
+- generated_at: 2026-05-26T23:14:27.137295+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4910**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T23:09:14.888735+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=75802.8
+- 更新: 2026-05-26T23:14:24.987673+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=75889.7
 - Funnel: target 767 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNC/USDT:USDT | +10.81% | $4,577,069.85 |
-| MYX/USDT:USDT | +6.73% | $1,237,119.62 |
-| PLAY/USDT:USDT | +6.02% | $7,694,646.90 |
-| MUSTOCK/USDT:USDT | +4.17% | $21,650,905.85 |
-| PHA/USDT:USDT | +3.63% | $6,854,696.58 |
+| LUNC/USDT:USDT | +11.05% | $4,653,069.08 |
+| MYX/USDT:USDT | +6.52% | $1,240,480.02 |
+| PLAY/USDT:USDT | +6.07% | $7,702,740.29 |
+| MUSTOCK/USDT:USDT | +4.19% | $21,671,926.25 |
+| AMDSTOCK/USDT:USDT | +3.55% | $2,155,210.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUNC/USDT:USDT | below_1h_threshold | +1.68% | +1.59% |
-| MYX/USDT:USDT | below_1h_threshold | +1.32% | +1.22% |
-| AKT/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
-| PHA/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
-| BILL/USDT:USDT | below_1h_threshold | +0.78% | +0.69% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.90% | +1.69% |
+| MYX/USDT:USDT | below_1h_threshold | +1.12% | +0.91% |
+| AKT/USDT:USDT | below_1h_threshold | +1.12% | +0.91% |
+| PHA/USDT:USDT | below_1h_threshold | +1.03% | +0.81% |
+| BILL/USDT:USDT | below_1h_threshold | +0.94% | +0.73% |
 
 ## 5. 次に見るべき不足
 
