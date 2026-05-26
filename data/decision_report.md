@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T04:09:17.153598+00:00
+- generated_at: 2026-05-26T04:14:11.881152+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4885**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T04:09:15.006411+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76608.4
+- 更新: 2026-05-26T04:14:09.702898+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=76638.5
 - Funnel: target 770 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +89.28% | $2,232,131.26 |
-| GRASS/USDT:USDT | +11.55% | $8,857,014.85 |
-| WLD/USDT:USDT | +9.29% | $55,663,748.72 |
-| AKT/USDT:USDT | +5.63% | $1,479,206.00 |
-| FET/USDT:USDT | +2.97% | $14,939,406.62 |
+| POND/USDT:USDT | +91.42% | $2,237,474.14 |
+| GRASS/USDT:USDT | +12.74% | $8,877,432.97 |
+| WLD/USDT:USDT | +8.89% | $55,712,271.62 |
+| AKT/USDT:USDT | +5.01% | $1,481,606.95 |
+| FET/USDT:USDT | +2.93% | $15,021,961.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POND/USDT:USDT | below_1h_threshold | +3.11% | +3.14% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
-| UB/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
-| AGT/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.64% | +0.67% |
+| POND/USDT:USDT | below_1h_threshold | +4.28% | +4.27% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.71% | +1.70% |
+| UB/USDT:USDT | below_1h_threshold | +1.65% | +1.64% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.30% | +1.28% |
+| INJ/USDT:USDT | below_1h_threshold | +0.67% | +0.66% |
 
 ## 5. 次に見るべき不足
 
