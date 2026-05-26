@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T06:49:13.177524+00:00
+- generated_at: 2026-05-26T06:54:17.153405+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4888**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T06:49:10.705171+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=76915.0
-- Funnel: target 770 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.5 >= 65=1
+- 更新: 2026-05-26T06:54:14.378037+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76887.0
+- Funnel: target 770 → liquid 126 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.4 >= 65=1, 4h RSI 82.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +86.42% | $2,473,668.67 |
-| WLD/USDT:USDT | +17.36% | $64,898,980.98 |
-| GRASS/USDT:USDT | +10.78% | $9,164,448.30 |
-| GENIUS/USDT:USDT | +8.35% | $1,335,156.70 |
-| FET/USDT:USDT | +7.01% | $17,057,481.49 |
+| POND/USDT:USDT | +87.14% | $2,478,069.60 |
+| WLD/USDT:USDT | +19.07% | $65,824,580.72 |
+| GRASS/USDT:USDT | +10.80% | $9,172,823.70 |
+| GENIUS/USDT:USDT | +7.69% | $1,361,862.58 |
+| FET/USDT:USDT | +7.64% | $17,160,117.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +4.62% | +4.58% |
-| WLD/USDT:USDT | below_1h_threshold | +3.91% | +3.87% |
-| FET/USDT:USDT | below_1h_threshold | +1.73% | +1.70% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.09% | +1.06% |
-| APT/USDT:USDT | below_1h_threshold | +0.83% | +0.79% |
+| GENIUS/USDT:USDT | below_1h_threshold | +4.29% | +4.29% |
+| FET/USDT:USDT | below_1h_threshold | +2.37% | +2.37% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.00% | +1.00% |
+| APT/USDT:USDT | below_1h_threshold | +0.90% | +0.90% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
 
 ## 5. 次に見るべき不足
 
