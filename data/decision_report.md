@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T14:54:21.504178+00:00
+- generated_at: 2026-05-26T14:59:50.637115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4903**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T14:54:19.360927+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77098.7
+- 更新: 2026-05-26T14:59:48.537456+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=76899.2
 - Funnel: target 769 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +60.00% | $2,974,437.87 |
-| WLD/USDT:USDT | +29.65% | $175,707,277.10 |
-| DRIFT/USDT:USDT | +21.35% | $4,061,223.73 |
-| IO/USDT:USDT | +16.91% | $1,420,265.86 |
-| OKB/USDT:USDT | +13.66% | $1,748,791.51 |
+| POND/USDT:USDT | +63.57% | $2,981,773.41 |
+| WLD/USDT:USDT | +29.45% | $176,467,885.88 |
+| DRIFT/USDT:USDT | +22.16% | $4,077,322.31 |
+| IO/USDT:USDT | +16.01% | $1,422,049.83 |
+| OKB/USDT:USDT | +13.35% | $1,752,230.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PHA/USDT:USDT | below_1h_threshold | +3.07% | +3.20% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.77% | +2.90% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.88% |
-| XPL/USDT:USDT | below_1h_threshold | +2.66% | +2.79% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.34% | +2.47% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.17% | +3.56% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.98% |
+| LAB/USDT:USDT | below_1h_threshold | +2.07% | +2.46% |
+| UB/USDT:USDT | below_1h_threshold | +1.63% | +2.02% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.60% | +1.99% |
 
 ## 5. 次に見るべき不足
 
