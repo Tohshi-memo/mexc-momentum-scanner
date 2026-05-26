@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T16:39:36.668046+00:00
+- generated_at: 2026-05-26T16:44:35.151696+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4905**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T16:39:31.313254+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=76644.9
+- 更新: 2026-05-26T16:44:30.204458+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=76516.2
 - Funnel: target 769 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +11.58% | $6,420,223.12 |
-| BILL/USDT:USDT | +7.03% | $14,607,933.07 |
-| PHA/USDT:USDT | +4.16% | $5,874,960.01 |
-| GRASS/USDT:USDT | +3.82% | $9,677,887.42 |
-| FIDA/USDT:USDT | +2.92% | $1,060,285.95 |
+| ESPORTS/USDT:USDT | +9.06% | $6,518,539.61 |
+| BILL/USDT:USDT | +5.36% | $14,636,795.99 |
+| PHA/USDT:USDT | +4.89% | $5,941,180.33 |
+| FIDA/USDT:USDT | +4.43% | $1,084,887.60 |
+| GRASS/USDT:USDT | +3.55% | $9,705,848.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.84% | +3.62% |
-| PHA/USDT:USDT | below_1h_threshold | +3.82% | +3.61% |
-| FIDA/USDT:USDT | below_1h_threshold | +2.92% | +2.71% |
-| UB/USDT:USDT | below_1h_threshold | +2.05% | +1.83% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.82% | +1.60% |
+| PHA/USDT:USDT | below_1h_threshold | +4.97% | +4.92% |
+| FIDA/USDT:USDT | below_1h_threshold | +4.43% | +4.38% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.57% | +3.52% |
+| MYX/USDT:USDT | below_1h_threshold | +1.49% | +1.44% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.40% | +1.35% |
 
 ## 5. 次に見るべき不足
 
