@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T15:34:58.633665+00:00
+- generated_at: 2026-05-26T15:39:20.594905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4903**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T15:34:56.541288+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=76432.9
+- 更新: 2026-05-26T15:39:18.450768+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=76410.3
 - Funnel: target 769 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +56.42% | $3,013,212.59 |
-| WLD/USDT:USDT | +28.76% | $181,602,641.83 |
-| DRIFT/USDT:USDT | +22.96% | $4,086,520.75 |
-| OKB/USDT:USDT | +13.53% | $1,760,410.70 |
-| FET/USDT:USDT | +11.46% | $29,676,636.27 |
+| POND/USDT:USDT | +57.14% | $3,017,496.10 |
+| WLD/USDT:USDT | +30.47% | $182,550,713.11 |
+| DRIFT/USDT:USDT | +21.68% | $4,092,347.85 |
+| OKB/USDT:USDT | +12.98% | $1,791,206.26 |
+| IO/USDT:USDT | +12.82% | $1,399,715.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKT/USDT:USDT | below_1h_threshold | +2.68% | +3.26% |
-| PHA/USDT:USDT | below_1h_threshold | +1.89% | +2.46% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.57% | +2.14% |
-| UB/USDT:USDT | below_1h_threshold | +1.21% | +1.79% |
-| DRIFT/USDT:USDT | below_1h_threshold | +0.98% | +1.56% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.72% | +3.32% |
+| AKT/USDT:USDT | below_1h_threshold | +2.49% | +3.10% |
+| PHA/USDT:USDT | below_1h_threshold | +1.77% | +2.38% |
+| UB/USDT:USDT | below_1h_threshold | +1.59% | +2.19% |
+| WLD/USDT:USDT | below_1h_threshold | +1.25% | +1.86% |
 
 ## 5. 次に見るべき不足
 
