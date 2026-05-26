@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T16:04:29.531450+00:00
+- generated_at: 2026-05-26T16:07:56.346346+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4903**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T16:04:27.406832+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=76396.2
+- 更新: 2026-05-26T16:07:54.838114+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=76428.2
 - Funnel: target 769 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +4.38% | $3,058,457.81 |
-| UB/USDT:USDT | +0.86% | $7,848,665.34 |
-| AMDSTOCK/USDT:USDT | +0.82% | $1,494,278.88 |
-| MUSTOCK/USDT:USDT | +0.80% | $11,392,027.86 |
-| ESPORTS/USDT:USDT | +0.75% | $5,929,033.29 |
+| ESPORTS/USDT:USDT | +1.76% | $5,958,678.33 |
+| POND/USDT:USDT | +1.31% | $3,066,289.50 |
+| BILL/USDT:USDT | +1.24% | $13,904,959.82 |
+| AMDSTOCK/USDT:USDT | +0.96% | $1,552,826.26 |
+| GRASS/USDT:USDT | +0.72% | $9,527,922.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POND/USDT:USDT | below_1h_threshold | +4.39% | +4.49% |
-| UB/USDT:USDT | below_1h_threshold | +1.05% | +1.16% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.93% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.90% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.76% | +0.86% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.76% | +1.83% |
+| POND/USDT:USDT | below_1h_threshold | +1.32% | +1.38% |
+| BILL/USDT:USDT | below_1h_threshold | +1.24% | +1.31% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.03% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.72% | +0.79% |
 
 ## 5. 次に見るべき不足
 
