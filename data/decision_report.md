@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T00:04:18.960587+00:00
+- generated_at: 2026-05-26T00:08:31.202724+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4876**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T00:04:16.849328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77240.4
+- 更新: 2026-05-26T00:08:29.393490+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=77234.8
 - Funnel: target 765 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POND/USDT:USDT | +66.42% | $1,699,776.01 |
-| GRASS/USDT:USDT | +13.95% | $7,563,030.21 |
-| WLD/USDT:USDT | +8.99% | $46,041,031.18 |
-| ERA/USDT:USDT | +7.76% | $1,888,779.52 |
-| LIT/USDT:USDT | +6.91% | $2,586,152.93 |
+| POND/USDT:USDT | +65.71% | $1,702,277.19 |
+| GRASS/USDT:USDT | +14.51% | $7,596,344.68 |
+| ERA/USDT:USDT | +10.65% | $1,896,849.48 |
+| WLD/USDT:USDT | +9.15% | $46,225,716.69 |
+| LIT/USDT:USDT | +7.67% | $2,594,644.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +2.34% | +2.40% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.47% | +0.52% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.41% | +0.46% |
-| FET/USDT:USDT | below_1h_threshold | +0.22% | +0.27% |
-| NIL/USDT:USDT | below_1h_threshold | +0.15% | +0.21% |
+| ERA/USDT:USDT | below_1h_threshold | +4.75% | +4.81% |
+| FET/USDT:USDT | below_1h_threshold | +1.12% | +1.18% |
+| NIL/USDT:USDT | below_1h_threshold | +0.98% | +1.04% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.71% | +0.77% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.66% | +0.72% |
 
 ## 5. 次に見るべき不足
 
