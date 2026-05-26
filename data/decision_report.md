@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T19:24:17.111915+00:00
+- generated_at: 2026-05-26T19:30:25.212212+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4907**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T19:24:14.941286+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=75847.5
+- 更新: 2026-05-26T19:30:23.077034+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=75904.6
 - Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PHA/USDT:USDT | +6.46% | $7,360,832.23 |
-| MUSTOCK/USDT:USDT | +4.47% | $17,670,651.72 |
-| USELESS/USDT:USDT | +3.77% | $1,261,103.00 |
-| AMDSTOCK/USDT:USDT | +3.46% | $2,025,790.13 |
-| TONCOIN/USDT:USDT | +3.37% | $61,998,524.71 |
+| PHA/USDT:USDT | +6.90% | $7,379,198.96 |
+| MUSTOCK/USDT:USDT | +4.32% | $17,957,560.34 |
+| USELESS/USDT:USDT | +3.91% | $1,282,891.94 |
+| TONCOIN/USDT:USDT | +3.40% | $62,290,483.49 |
+| AMDSTOCK/USDT:USDT | +3.09% | $2,059,929.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.33% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.28% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.00% | +0.97% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +0.84% | +0.80% |
-| UB/USDT:USDT | below_1h_threshold | +0.81% | +0.78% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.00% | +1.90% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.35% |
+| UB/USDT:USDT | below_1h_threshold | +1.01% | +0.90% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.85% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +0.92% | +0.81% |
 
 ## 5. 次に見るべき不足
 
