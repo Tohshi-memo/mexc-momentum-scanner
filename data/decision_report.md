@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-26T19:59:27.578768+00:00
+- generated_at: 2026-05-26T20:04:27.623305+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4907**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-26T19:59:25.452227+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=76000.2
-- Funnel: target 766 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-26T20:04:25.480671+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=76036.4
+- Funnel: target 766 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TONCOIN/USDT:USDT | +6.04% | $65,427,648.81 |
-| USELESS/USDT:USDT | +5.64% | $1,337,804.98 |
-| PHA/USDT:USDT | +5.29% | $7,531,290.47 |
-| MYX/USDT:USDT | +4.77% | $1,144,697.61 |
-| AMDSTOCK/USDT:USDT | +3.29% | $2,118,097.34 |
+| TONCOIN/USDT:USDT | +5.83% | $60,691,620.03 |
+| PHA/USDT:USDT | +5.79% | $6,982,384.85 |
+| MYX/USDT:USDT | +5.44% | $1,096,147.37 |
+| USELESS/USDT:USDT | +5.21% | $1,283,712.62 |
+| AMDSTOCK/USDT:USDT | +3.27% | $2,058,908.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +3.50% | +3.27% |
-| IO/USDT:USDT | below_1h_threshold | +2.43% | +2.20% |
-| MYX/USDT:USDT | below_1h_threshold | +2.26% | +2.02% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.96% | +1.73% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.94% | +1.71% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.92% | +0.91% |
+| PHA/USDT:USDT | below_1h_threshold | +0.91% | +0.90% |
+| MYX/USDT:USDT | below_1h_threshold | +0.44% | +0.43% |
+| JTO/USDT:USDT | below_1h_threshold | +0.42% | +0.41% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
 
 ## 5. 次に見るべき不足
 
