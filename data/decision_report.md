@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T02:39:41.216450+00:00
+- generated_at: 2026-05-27T02:44:21.679737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4915**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T02:39:39.091112+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=75741.7
-- Funnel: target 770 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T02:44:19.489394+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=75709.2
+- Funnel: target 770 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNC/USDT:USDT | +10.22% | $7,469,465.34 |
-| DRIFT/USDT:USDT | +9.21% | $5,114,531.95 |
-| MUSTOCK/USDT:USDT | +8.74% | $29,364,075.47 |
-| REQ/USDT:USDT | +8.60% | $1,105,023.02 |
-| GUA/USDT:USDT | +8.29% | $3,150,873.15 |
+| LUNC/USDT:USDT | +10.66% | $7,721,880.36 |
+| REQ/USDT:USDT | +10.60% | $1,137,274.91 |
+| GUA/USDT:USDT | +9.63% | $3,248,520.63 |
+| DRIFT/USDT:USDT | +9.48% | $5,273,896.05 |
+| MUSTOCK/USDT:USDT | +9.13% | $30,300,962.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.68% | +3.81% |
-| DRIFT/USDT:USDT | below_1h_threshold | +3.34% | +3.47% |
-| UB/USDT:USDT | below_1h_threshold | +2.73% | +2.87% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.82% | +1.96% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.09% | +1.23% |
+| DRIFT/USDT:USDT | below_1h_threshold | +3.59% | +3.77% |
+| UB/USDT:USDT | below_1h_threshold | +3.20% | +3.38% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.21% | +2.39% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.65% | +1.83% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.41% | +1.59% |
 
 ## 5. 次に見るべき不足
 
