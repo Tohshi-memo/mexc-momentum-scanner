@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-27T17:14:39.572737+00:00
+- generated_at: 2026-05-27T17:19:48.904772+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4932**
+- closed shadow trades: **4933**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.41% / filled 20/20。**
-- 全期間 MARKET基準: n=4932, expectancy=-0.07%
+- 全期間 MARKET基準: n=4933, expectancy=-0.07%
 - 直近20件 MARKET基準: n=20, expectancy=+1.41%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,40 +23,40 @@
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +1.45% | **+1.45%** |
 | MARKET | 20/20 | 100.0% | +1.41% | **+1.41%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +1.35% | **+1.22%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +1.34% | **+1.08%** |
-| LIMIT_ATR | 12/20 | 60.0% | +0.92% | **+0.55%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +1.30% | **+1.17%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +1.22% | **+0.97%** |
+| LIMIT_ATR | 12/20 | 60.0% | +0.65% | **+0.39%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1272_LONG | 13/20 | 65.0% | +1.04% | **+0.67%** |
-| LIMIT_5PCT_LONG | 11/20 | 55.0% | +1.02% | **+0.56%** |
+| LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.83% | **+0.37%** |
+| LIMIT_5PCT_LONG | 12/20 | 60.0% | +0.60% | **+0.36%** |
+| LIMIT_8PCT_LONG | 9/20 | 45.0% | +0.44% | **+0.20%** |
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | +0.15% | **+0.02%** |
-| LIMIT_6PCT_LONG | 8/20 | 40.0% | -0.06% | **-0.03%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | -0.60% | **-0.09%** |
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$96.67** / 初期 $100.00 (-3.33%)
-- 確定トレード: 66件 (TP 18 / SL 45 / EXP 3)
-- 最新: LAB/USDT:USDT SL_HIT PnL -4.00% 残高後 $96.67
+- 残高: **$96.19** / 初期 $100.00 (-3.81%)
+- 確定トレード: 67件 (TP 18 / SL 46 / EXP 3)
+- 最新: GUA/USDT:USDT SL_HIT PnL -4.00% 残高後 $96.19
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$126.79** / 初期 $100.00 (+26.79%)
-- 確定: 684件 (Win 172 / Loss 220 / Flat 292) / skip 809件
+- 確定: 684件 (Win 172 / Loss 220 / Flat 292) / skip 810件
 - 成長率目線: 平均log +0.000347 / 幾何平均 +0.035% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_5PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PLAY/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $126.79
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T17:14:35.158048+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=74957.2
-- Funnel: target 774 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-27T17:19:46.208773+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.44% price=74941.8
+- Funnel: target 774 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +16.78% | $10,685,362.38 |
-| LAB/USDT:USDT | +2.51% | $45,562,964.26 |
-| RKLBSTOCK/USDT:USDT | +1.71% | $1,071,650.05 |
-| PIPPIN/USDT:USDT | +1.44% | $1,478,549.39 |
-| WDCSTOCK/USDT:USDT | +0.99% | $3,564,652.19 |
+| GUA/USDT:USDT | +16.24% | $11,777,586.46 |
+| GENIUS/USDT:USDT | +2.55% | $1,057,352.21 |
+| RKLBSTOCK/USDT:USDT | +2.44% | $1,126,841.54 |
+| PIPPIN/USDT:USDT | +2.43% | $1,491,301.24 |
+| WDCSTOCK/USDT:USDT | +1.20% | $3,565,128.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.15% | +2.57% |
-| BILL/USDT:USDT | below_1h_threshold | +1.91% | +2.33% |
-| UB/USDT:USDT | below_1h_threshold | +0.92% | +1.34% |
-| RIF/USDT:USDT | below_1h_threshold | +0.42% | +0.84% |
-| KITE/USDT:USDT | below_1h_threshold | +0.37% | +0.79% |
+| H/USDT:USDT | below_1h_threshold | +2.63% | +3.07% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.85% | +2.29% |
+| BILL/USDT:USDT | below_1h_threshold | +1.64% | +2.08% |
+| KITE/USDT:USDT | below_1h_threshold | +0.93% | +1.37% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.83% | +1.27% |
 
 ## 5. 次に見るべき不足
 
