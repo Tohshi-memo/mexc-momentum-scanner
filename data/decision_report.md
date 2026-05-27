@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T05:24:24.259118+00:00
+- generated_at: 2026-05-27T05:29:22.843877+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4920**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T05:24:21.535310+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=75616.9
+- 更新: 2026-05-27T05:29:20.715329+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=75657.9
 - Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +24.83% | $1,382,582.47 |
-| PLAY/USDT:USDT | +15.27% | $8,525,102.14 |
-| LUNC/USDT:USDT | +15.08% | $9,971,798.06 |
-| RON/USDT:USDT | +12.21% | $1,100,222.81 |
-| MRVLSTOCK/USDT:USDT | +7.09% | $1,354,749.27 |
+| REQ/USDT:USDT | +25.38% | $1,389,013.37 |
+| PLAY/USDT:USDT | +16.70% | $8,581,072.44 |
+| LUNC/USDT:USDT | +15.54% | $10,007,469.54 |
+| RON/USDT:USDT | +13.47% | $1,117,566.12 |
+| MRVLSTOCK/USDT:USDT | +6.99% | $1,357,695.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +2.49% | +2.39% |
-| AKT/USDT:USDT | below_1h_threshold | +1.76% | +1.66% |
-| UB/USDT:USDT | below_1h_threshold | +1.59% | +1.50% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.40% | +1.30% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.32% | +1.22% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.73% | +3.58% |
+| AKT/USDT:USDT | below_1h_threshold | +2.33% | +2.18% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.78% | +1.63% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.59% | +1.44% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.56% | +1.41% |
 
 ## 5. 次に見るべき不足
 
