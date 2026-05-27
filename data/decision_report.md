@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T01:00:51.068787+00:00
+- generated_at: 2026-05-27T01:05:20.927742+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4912**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T01:00:48.936506+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=76060.3
-- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T01:05:18.827663+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=76032.0
+- Funnel: target 768 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNC/USDT:USDT | +13.07% | $6,806,461.26 |
-| REQ/USDT:USDT | +13.03% | $1,084,314.30 |
-| MUSTOCK/USDT:USDT | +9.89% | $26,199,957.12 |
-| MRVLSTOCK/USDT:USDT | +7.42% | $1,010,321.03 |
-| PLAY/USDT:USDT | +6.21% | $7,824,279.72 |
+| REQ/USDT:USDT | +12.37% | $1,083,418.18 |
+| LUNC/USDT:USDT | +11.50% | $6,847,754.80 |
+| MUSTOCK/USDT:USDT | +8.87% | $26,487,156.06 |
+| PLAY/USDT:USDT | +6.67% | $7,583,178.43 |
+| MYX/USDT:USDT | +5.44% | $1,195,219.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.25% |
-| DRIFT/USDT:USDT | below_1h_threshold | +0.30% | +0.09% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.29% | +0.08% |
-| COSTSTOCK/USDT:USDT | below_1h_threshold | +0.20% | -0.01% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.14% | -0.07% |
+| JTO/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
+| DRIFT/USDT:USDT | below_1h_threshold | +0.66% | +0.69% |
+| UB/USDT:USDT | below_1h_threshold | +0.64% | +0.68% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.56% | +0.60% |
+| IO/USDT:USDT | below_1h_threshold | +0.56% | +0.59% |
 
 ## 5. 次に見るべき不足
 
