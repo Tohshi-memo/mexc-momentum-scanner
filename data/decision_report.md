@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T17:48:42.504222+00:00
+- generated_at: 2026-05-27T17:54:31.363406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4938**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T17:48:40.802386+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=74890.2
+- 更新: 2026-05-27T17:54:29.178427+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=74890.9
 - Funnel: target 771 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GENIUS/USDT:USDT | +5.09% | $1,134,341.84 |
-| PIPPIN/USDT:USDT | +2.61% | $1,541,263.08 |
-| RKLBSTOCK/USDT:USDT | +2.50% | $1,205,865.22 |
-| ASTEROID/USDT:USDT | +2.26% | $1,019,446.00 |
-| BILL/USDT:USDT | +2.20% | $9,434,683.64 |
+| GENIUS/USDT:USDT | +5.38% | $1,148,121.59 |
+| BILL/USDT:USDT | +2.98% | $9,535,975.42 |
+| PIPPIN/USDT:USDT | +2.57% | $1,544,225.53 |
+| RKLBSTOCK/USDT:USDT | +2.54% | $1,253,199.26 |
+| ASTEROID/USDT:USDT | +2.44% | $1,022,002.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +4.37% | +4.88% |
-| BILL/USDT:USDT | below_1h_threshold | +3.31% | +3.82% |
-| H/USDT:USDT | below_1h_threshold | +2.98% | +3.49% |
-| UB/USDT:USDT | below_1h_threshold | +1.31% | +1.82% |
-| RIF/USDT:USDT | below_1h_threshold | +1.23% | +1.74% |
+| GENIUS/USDT:USDT | below_1h_threshold | +4.65% | +5.16% |
+| BILL/USDT:USDT | below_1h_threshold | +3.97% | +4.48% |
+| H/USDT:USDT | below_1h_threshold | +3.13% | +3.63% |
+| ON/USDT:USDT | below_1h_threshold | +2.79% | +3.29% |
+| RIF/USDT:USDT | below_1h_threshold | +1.14% | +1.65% |
 
 ## 5. 次に見るべき不足
 
