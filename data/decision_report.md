@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T07:59:18.371633+00:00
+- generated_at: 2026-05-27T08:05:12.864789+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4924**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T07:59:16.181096+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=75937.2
-- Funnel: target 772 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T08:05:10.806209+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=75951.1
+- Funnel: target 772 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +20.71% | $13,078,994.87 |
-| REQ/USDT:USDT | +14.15% | $1,582,795.56 |
-| LUNC/USDT:USDT | +10.94% | $12,103,806.37 |
-| BEAT/USDT:USDT | +10.71% | $12,311,572.08 |
-| ICP/USDT:USDT | +10.60% | $12,875,728.19 |
+| PLAY/USDT:USDT | +19.66% | $12,947,651.91 |
+| REQ/USDT:USDT | +12.61% | $1,584,535.53 |
+| ICP/USDT:USDT | +11.92% | $12,918,409.00 |
+| LUNC/USDT:USDT | +11.07% | $12,097,277.42 |
+| BEAT/USDT:USDT | +10.61% | $12,242,192.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.38% | +4.20% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.66% | +3.47% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.30% | +2.12% |
-| H/USDT:USDT | below_1h_threshold | +1.61% | +1.43% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.61% | +1.42% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.20% | +1.17% |
+| ICP/USDT:USDT | below_1h_threshold | +1.16% | +1.14% |
+| AR/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.87% | +0.85% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.74% | +0.72% |
 
 ## 5. 次に見るべき不足
 
