@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T17:04:36.163003+00:00
+- generated_at: 2026-05-27T17:08:40.609787+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4932**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T17:04:33.994713+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=75312.0
-- Funnel: target 774 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T17:08:38.771552+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=75123.3
+- Funnel: target 774 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RKLBSTOCK/USDT:USDT | +3.37% | $1,005,043.76 |
-| LAB/USDT:USDT | +2.97% | $45,043,871.51 |
-| WDCSTOCK/USDT:USDT | +1.62% | $3,564,170.72 |
-| SNDKSTOCK/USDT:USDT | +1.49% | $5,355,265.84 |
-| MRVLSTOCK/USDT:USDT | +1.43% | $1,970,236.98 |
+| RKLBSTOCK/USDT:USDT | +2.62% | $1,012,462.35 |
+| LAB/USDT:USDT | +2.55% | $45,177,246.10 |
+| PIPPIN/USDT:USDT | +1.44% | $1,468,917.84 |
+| WDCSTOCK/USDT:USDT | +1.22% | $3,564,380.12 |
+| UB/USDT:USDT | +0.79% | $5,918,345.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.34% | +2.29% |
-| LAB/USDT:USDT | below_1h_threshold | +0.59% | +0.53% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.48% | +0.43% |
-| MYX/USDT:USDT | below_1h_threshold | +0.34% | +0.29% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.20% | +0.15% |
+| H/USDT:USDT | below_1h_threshold | +1.47% | +1.67% |
+| UB/USDT:USDT | below_1h_threshold | +1.46% | +1.66% |
+| BILL/USDT:USDT | below_1h_threshold | +1.28% | +1.48% |
+| MYX/USDT:USDT | below_1h_threshold | +0.53% | +0.73% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.25% | +0.45% |
 
 ## 5. 次に見るべき不足
 
