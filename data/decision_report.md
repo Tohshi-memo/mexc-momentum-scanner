@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T20:30:01.511815+00:00
+- generated_at: 2026-05-27T20:33:46.584379+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4941**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T20:29:59.188454+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=75248.6
-- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.8 >= 65=1
+- 更新: 2026-05-27T20:33:41.779422+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=75191.9
+- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +27.78% | $2,798,373.18 |
-| RIVER/USDT:USDT | +10.26% | $7,923,034.29 |
-| JTO/USDT:USDT | +7.72% | $2,368,478.93 |
-| GENIUS/USDT:USDT | +6.10% | $1,245,560.84 |
-| MRVLSTOCK/USDT:USDT | +4.42% | $5,956,124.71 |
+| SNOWSTOCK/USDT:USDT | +32.16% | $3,058,180.08 |
+| RIVER/USDT:USDT | +10.52% | $7,972,442.60 |
+| GENIUS/USDT:USDT | +6.91% | $1,250,270.01 |
+| MRVLSTOCK/USDT:USDT | +6.22% | $5,965,425.38 |
+| JTO/USDT:USDT | +5.05% | $2,427,862.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +3.61% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.67% | +2.40% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.67% | +2.39% |
-| JTO/USDT:USDT | below_1h_threshold | +1.07% | +0.79% |
-| H/USDT:USDT | below_1h_threshold | +0.66% | +0.38% |
+| GENIUS/USDT:USDT | below_1h_threshold | +3.46% | +3.26% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.92% | +2.71% |
+| TXNSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.61% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.20% |
+| FF/USDT:USDT | below_1h_threshold | +0.40% | +0.20% |
 
 ## 5. 次に見るべき不足
 
