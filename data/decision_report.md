@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T06:19:25.989737+00:00
+- generated_at: 2026-05-27T06:24:36.049011+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4920**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T06:19:23.853318+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=75682.4
+- 更新: 2026-05-27T06:24:33.875741+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=75691.1
 - Funnel: target 772 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +23.35% | $9,859,418.08 |
-| REQ/USDT:USDT | +20.71% | $1,470,104.22 |
-| LUNC/USDT:USDT | +13.05% | $10,995,687.10 |
-| RON/USDT:USDT | +9.58% | $1,272,126.59 |
-| SEI/USDT:USDT | +8.44% | $17,009,259.40 |
+| PLAY/USDT:USDT | +23.91% | $9,987,424.70 |
+| REQ/USDT:USDT | +20.69% | $1,474,365.29 |
+| LUNC/USDT:USDT | +11.93% | $11,103,281.85 |
+| SEI/USDT:USDT | +8.68% | $17,108,581.47 |
+| ICP/USDT:USDT | +7.66% | $9,599,049.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +2.32% | +2.31% |
-| SEI/USDT:USDT | below_1h_threshold | +1.38% | +1.36% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.98% | +0.97% |
-| GUA/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.34% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.80% | +2.78% |
+| SEI/USDT:USDT | below_1h_threshold | +1.50% | +1.48% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
+| XMR/USDT:USDT | below_1h_threshold | +0.30% | +0.27% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.29% | +0.27% |
 
 ## 5. 次に見るべき不足
 
