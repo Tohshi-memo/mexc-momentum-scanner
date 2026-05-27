@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T19:03:40.407083+00:00
+- generated_at: 2026-05-27T19:10:52.373086+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4939**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T19:03:38.731121+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=75018.2
-- Funnel: target 771 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T19:10:50.246208+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=74958.0
+- Funnel: target 771 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GENIUS/USDT:USDT | +3.97% | $1,220,344.30 |
-| GRASS/USDT:USDT | +3.46% | $3,970,237.82 |
-| XLM/USDT:USDT | +3.34% | $31,008,431.33 |
-| UB/USDT:USDT | +2.51% | $5,692,928.88 |
-| NEAR/USDT:USDT | +2.48% | $159,784,813.59 |
+| XLM/USDT:USDT | +4.09% | $31,748,635.61 |
+| GENIUS/USDT:USDT | +3.91% | $1,221,673.19 |
+| GRASS/USDT:USDT | +3.76% | $3,990,868.14 |
+| NEAR/USDT:USDT | +3.56% | $164,683,154.69 |
+| H/USDT:USDT | +2.78% | $2,221,490.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +1.00% | +0.97% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| JTO/USDT:USDT | below_1h_threshold | +0.81% | +0.78% |
-| UB/USDT:USDT | below_1h_threshold | +0.54% | +0.51% |
-| RIF/USDT:USDT | below_1h_threshold | +0.53% | +0.51% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
+| XLM/USDT:USDT | below_1h_threshold | +1.66% | +1.71% |
+| JTO/USDT:USDT | below_1h_threshold | +1.28% | +1.34% |
+| CHZ/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
 
 ## 5. 次に見るべき不足
 
