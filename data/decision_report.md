@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T09:19:29.345302+00:00
+- generated_at: 2026-05-27T09:24:23.815458+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4924**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T09:19:27.207761+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=75694.9
-- Funnel: target 775 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T09:24:21.704058+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=75794.1
+- Funnel: target 775 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +22.12% | $14,618,835.19 |
-| BEAT/USDT:USDT | +12.90% | $13,127,792.50 |
-| LUNC/USDT:USDT | +12.86% | $12,628,638.64 |
-| MRVLSTOCK/USDT:USDT | +9.27% | $1,577,137.34 |
-| SEI/USDT:USDT | +9.17% | $18,778,947.87 |
+| PLAY/USDT:USDT | +21.58% | $14,734,854.98 |
+| ALT/USDT:USDT | +20.10% | $1,004,113.70 |
+| BEAT/USDT:USDT | +14.00% | $13,219,429.09 |
+| LUNC/USDT:USDT | +12.93% | $12,736,293.23 |
+| SEI/USDT:USDT | +9.70% | $18,853,828.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.33% | +2.52% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.19% | +1.38% |
-| SEI/USDT:USDT | below_1h_threshold | +0.74% | +0.93% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.68% | +0.87% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.66% | +0.85% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.34% | +3.40% |
+| ALT/USDT:USDT | below_1h_threshold | +2.63% | +2.69% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.28% | +1.33% |
+| SEI/USDT:USDT | below_1h_threshold | +1.26% | +1.32% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.14% | +1.19% |
 
 ## 5. 次に見るべき不足
 
