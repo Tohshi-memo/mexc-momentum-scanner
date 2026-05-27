@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T18:54:34.812722+00:00
+- generated_at: 2026-05-27T18:59:34.815797+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4939**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T18:54:32.658052+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=74940.8
+- 更新: 2026-05-27T18:59:32.693633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=74980.0
 - Funnel: target 771 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GENIUS/USDT:USDT | +4.15% | $1,316,453.77 |
-| ASTEROID/USDT:USDT | +3.89% | $1,028,604.31 |
-| RKLBSTOCK/USDT:USDT | +2.66% | $1,483,966.51 |
-| SNDKSTOCK/USDT:USDT | +2.66% | $5,314,876.03 |
-| BILL/USDT:USDT | +2.53% | $9,236,062.06 |
+| GENIUS/USDT:USDT | +4.02% | $1,325,993.71 |
+| GRASS/USDT:USDT | +3.70% | $4,184,443.00 |
+| ASTEROID/USDT:USDT | +3.58% | $1,031,348.06 |
+| H/USDT:USDT | +2.69% | $2,241,195.89 |
+| RIF/USDT:USDT | +2.57% | $1,990,132.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.46% | +3.32% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.97% | +2.83% |
-| XLM/USDT:USDT | below_1h_threshold | +2.78% | +2.64% |
-| UB/USDT:USDT | below_1h_threshold | +2.62% | +2.48% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.34% | +2.21% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.55% | +4.36% |
+| JTO/USDT:USDT | below_1h_threshold | +4.11% | +3.92% |
+| XLM/USDT:USDT | below_1h_threshold | +3.53% | +3.34% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.44% | +3.25% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.64% | +2.45% |
 
 ## 5. 次に見るべき不足
 
