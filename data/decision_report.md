@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T08:34:33.969320+00:00
+- generated_at: 2026-05-27T08:39:55.057683+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4924**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T08:34:31.813507+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=75965.7
+- 更新: 2026-05-27T08:39:52.901835+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=75958.4
 - Funnel: target 775 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +19.05% | $13,687,762.31 |
-| REQ/USDT:USDT | +14.19% | $1,603,685.27 |
-| LUNC/USDT:USDT | +10.42% | $12,401,687.95 |
-| BEAT/USDT:USDT | +10.14% | $12,630,804.48 |
-| ICP/USDT:USDT | +9.79% | $14,257,877.86 |
+| PLAY/USDT:USDT | +20.85% | $13,771,521.83 |
+| REQ/USDT:USDT | +13.38% | $1,605,140.76 |
+| LUNC/USDT:USDT | +11.63% | $12,435,798.31 |
+| ICP/USDT:USDT | +9.90% | $14,290,311.69 |
+| BEAT/USDT:USDT | +9.53% | $12,683,999.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +3.54% | +3.50% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.12% |
-| AMATSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.98% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.61% | +1.57% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
+| BAS/USDT:USDT | below_1h_threshold | +4.07% | +4.04% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.73% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.73% | +1.70% |
+| AMATSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.70% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.37% | +1.34% |
 
 ## 5. 次に見るべき不足
 
