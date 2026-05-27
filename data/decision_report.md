@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T00:44:21.232370+00:00
+- generated_at: 2026-05-27T00:49:24.396275+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4912**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T00:44:18.565184+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=75955.0
-- Funnel: target 768 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- 更新: 2026-05-27T00:49:21.791994+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=75985.2
+- Funnel: target 768 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.2 >= 65=1, 4h RSI 89.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +14.48% | $1,079,426.44 |
-| LUNC/USDT:USDT | +13.07% | $6,505,838.53 |
-| MUSTOCK/USDT:USDT | +8.65% | $24,304,158.00 |
-| PLAY/USDT:USDT | +6.07% | $7,780,103.73 |
-| MYX/USDT:USDT | +5.24% | $1,282,431.39 |
+| REQ/USDT:USDT | +14.13% | $1,081,039.17 |
+| LUNC/USDT:USDT | +12.85% | $6,623,894.39 |
+| MUSTOCK/USDT:USDT | +10.98% | $25,336,299.26 |
+| MRVLSTOCK/USDT:USDT | +7.45% | $1,005,301.09 |
+| PLAY/USDT:USDT | +5.75% | $7,795,719.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.71% | +3.64% |
-| PHA/USDT:USDT | below_1h_threshold | +3.07% | +3.00% |
-| REQ/USDT:USDT | below_1h_threshold | +2.87% | +2.79% |
-| SEI/USDT:USDT | below_1h_threshold | +1.97% | +1.90% |
-| JTO/USDT:USDT | below_1h_threshold | +1.92% | +1.84% |
+| FET/USDT:USDT | below_1h_threshold | +3.08% | +2.97% |
+| JTO/USDT:USDT | below_1h_threshold | +2.59% | +2.48% |
+| REQ/USDT:USDT | below_1h_threshold | +2.55% | +2.44% |
+| TAO/USDT:USDT | below_1h_threshold | +2.26% | +2.15% |
+| PHA/USDT:USDT | below_1h_threshold | +2.11% | +2.00% |
 
 ## 5. 次に見るべき不足
 
