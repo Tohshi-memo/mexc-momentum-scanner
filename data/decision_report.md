@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T16:24:58.357735+00:00
+- generated_at: 2026-05-27T16:28:30.809140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4932**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T16:24:55.967174+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=75046.9
+- 更新: 2026-05-27T16:28:29.122889+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=75080.1
 - Funnel: target 774 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +3.17% | $43,593,184.70 |
-| H/USDT:USDT | +2.11% | $1,964,134.12 |
-| SNDKSTOCK/USDT:USDT | +2.03% | $5,489,236.15 |
-| WDCSTOCK/USDT:USDT | +1.72% | $3,609,817.10 |
-| MRVLSTOCK/USDT:USDT | +1.68% | $1,957,496.21 |
+| H/USDT:USDT | +2.64% | $1,975,151.26 |
+| SNDKSTOCK/USDT:USDT | +1.61% | $5,496,279.18 |
+| MRVLSTOCK/USDT:USDT | +1.39% | $1,965,891.17 |
+| WDCSTOCK/USDT:USDT | +1.27% | $3,609,949.48 |
+| FF/USDT:USDT | +1.25% | $1,669,451.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.14% | +3.47% |
-| H/USDT:USDT | below_1h_threshold | +2.12% | +2.45% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +2.37% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +2.06% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +2.02% |
+| H/USDT:USDT | below_1h_threshold | +2.64% | +2.94% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.90% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.68% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.56% |
+| FF/USDT:USDT | below_1h_threshold | +1.25% | +1.55% |
 
 ## 5. 次に見るべき不足
 
