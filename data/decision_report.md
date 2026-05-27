@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T21:55:24.156732+00:00
+- generated_at: 2026-05-27T21:59:58.302115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4944**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T21:55:21.990825+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.21% price=74328.0
+- 更新: 2026-05-27T21:59:56.164395+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.08% price=74427.9
 - Funnel: target 771 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +33.12% | $5,376,846.09 |
-| RIVER/USDT:USDT | +8.42% | $11,382,353.39 |
-| GENIUS/USDT:USDT | +4.77% | $1,292,949.03 |
-| RKLBSTOCK/USDT:USDT | +3.75% | $1,833,260.76 |
-| METASTOCK/USDT:USDT | +3.55% | $1,301,334.93 |
+| SNOWSTOCK/USDT:USDT | +33.73% | $5,420,333.56 |
+| RIVER/USDT:USDT | +6.57% | $11,544,264.24 |
+| GENIUS/USDT:USDT | +5.30% | $1,293,935.81 |
+| RKLBSTOCK/USDT:USDT | +3.53% | $1,839,027.35 |
+| METASTOCK/USDT:USDT | +3.52% | $1,304,844.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +2.31% |
-| UB/USDT:USDT | below_1h_threshold | +0.39% | +1.60% |
-| RIF/USDT:USDT | below_1h_threshold | +0.39% | +1.60% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.06% | +1.28% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.03% | +1.25% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +2.64% |
+| RIF/USDT:USDT | below_1h_threshold | +0.76% | +1.85% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.44% | +1.52% |
+| UB/USDT:USDT | below_1h_threshold | +0.19% | +1.27% |
+| TXNSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +1.22% |
 
 ## 5. 次に見るべき不足
 
