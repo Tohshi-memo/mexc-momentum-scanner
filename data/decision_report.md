@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T12:35:32.549945+00:00
+- generated_at: 2026-05-27T12:39:57.378222+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4926**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T12:35:30.213434+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=75800.1
-- Funnel: target 775 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-27T12:39:55.024663+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=75919.9
+- Funnel: target 775 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +18.51% | $16,851,664.54 |
-| RIF/USDT:USDT | +17.38% | $1,348,159.10 |
-| BEAT/USDT:USDT | +16.44% | $20,134,805.86 |
-| ALT/USDT:USDT | +14.26% | $2,688,116.97 |
-| LUNC/USDT:USDT | +14.16% | $15,187,390.11 |
+| PLAY/USDT:USDT | +17.57% | $16,988,400.57 |
+| BEAT/USDT:USDT | +16.91% | $20,244,336.38 |
+| RIF/USDT:USDT | +16.85% | $1,359,035.87 |
+| ALT/USDT:USDT | +14.84% | $2,696,067.50 |
+| LUNC/USDT:USDT | +13.92% | $15,221,102.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REQ/USDT:USDT | below_1h_threshold | +3.96% | +3.87% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.26% | +3.17% |
-| MYX/USDT:USDT | below_1h_threshold | +2.72% | +2.63% |
-| ICP/USDT:USDT | below_1h_threshold | +2.26% | +2.17% |
-| XLM/USDT:USDT | below_1h_threshold | +2.23% | +2.14% |
+| REQ/USDT:USDT | below_1h_threshold | +5.00% | +4.75% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.84% | +3.59% |
+| MYX/USDT:USDT | below_1h_threshold | +3.17% | +2.92% |
+| XLM/USDT:USDT | below_1h_threshold | +2.91% | +2.66% |
+| AR/USDT:USDT | below_1h_threshold | +2.85% | +2.60% |
 
 ## 5. 次に見るべき不足
 
