@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T13:02:11.519478+00:00
+- generated_at: 2026-05-27T13:06:39.725832+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4926**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T13:02:09.338990+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=75649.4
+- 更新: 2026-05-27T13:06:37.569984+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=75594.2
 - Funnel: target 775 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +18.51% | $20,653,229.03 |
-| RIF/USDT:USDT | +15.88% | $1,405,581.51 |
-| LUNC/USDT:USDT | +13.73% | $15,246,951.05 |
-| ALT/USDT:USDT | +13.33% | $2,742,296.43 |
-| REQ/USDT:USDT | +12.91% | $1,696,130.14 |
+| BEAT/USDT:USDT | +16.43% | $21,103,548.74 |
+| RIF/USDT:USDT | +16.39% | $1,422,846.47 |
+| LUNC/USDT:USDT | +13.42% | $15,255,487.17 |
+| ALT/USDT:USDT | +13.23% | $2,750,051.26 |
+| MUSTOCK/USDT:USDT | +10.36% | $55,137,838.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.72% | +0.73% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.47% | +0.47% |
-| RIF/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| MYX/USDT:USDT | below_1h_threshold | +1.90% | +1.99% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.44% | +1.52% |
+| UB/USDT:USDT | below_1h_threshold | +1.27% | +1.35% |
+| RIF/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
 
 ## 5. 次に見るべき不足
 
