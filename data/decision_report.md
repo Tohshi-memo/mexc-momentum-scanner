@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T08:05:12.864789+00:00
+- generated_at: 2026-05-27T08:09:47.821872+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4924**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T08:05:10.806209+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=75951.1
+- 更新: 2026-05-27T08:09:45.686151+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=75899.9
 - Funnel: target 772 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +19.66% | $12,947,651.91 |
-| REQ/USDT:USDT | +12.61% | $1,584,535.53 |
-| ICP/USDT:USDT | +11.92% | $12,918,409.00 |
-| LUNC/USDT:USDT | +11.07% | $12,097,277.42 |
-| BEAT/USDT:USDT | +10.61% | $12,242,192.65 |
+| PLAY/USDT:USDT | +17.47% | $13,038,537.12 |
+| ICP/USDT:USDT | +12.39% | $13,347,907.52 |
+| REQ/USDT:USDT | +11.84% | $1,589,260.34 |
+| SEI/USDT:USDT | +9.76% | $18,498,994.90 |
+| BEAT/USDT:USDT | +9.68% | $12,319,130.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_1h_threshold | +1.20% | +1.17% |
-| ICP/USDT:USDT | below_1h_threshold | +1.16% | +1.14% |
-| AR/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.87% | +0.85% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.74% | +0.72% |
+| ICP/USDT:USDT | below_1h_threshold | +1.52% | +1.57% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| GUA/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
+| DYDX/USDT:USDT | below_1h_threshold | +0.90% | +0.94% |
 
 ## 5. 次に見るべき不足
 
