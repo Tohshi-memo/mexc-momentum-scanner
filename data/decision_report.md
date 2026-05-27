@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T04:59:58.951137+00:00
+- generated_at: 2026-05-27T05:04:35.715074+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4918**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T04:59:53.185850+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=75573.2
-- Funnel: target 772 → liquid 143 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1, 4h RSI 68.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-27T05:04:33.599462+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=75609.1
+- Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +26.96% | $1,350,313.97 |
-| LUNC/USDT:USDT | +13.63% | $9,348,870.43 |
-| GUA/USDT:USDT | +13.04% | $3,672,401.08 |
-| PLAY/USDT:USDT | +12.19% | $8,469,593.68 |
-| MRVLSTOCK/USDT:USDT | +7.16% | $1,351,568.77 |
+| REQ/USDT:USDT | +26.50% | $1,357,899.13 |
+| LUNC/USDT:USDT | +15.06% | $9,557,475.72 |
+| RON/USDT:USDT | +14.26% | $1,018,092.31 |
+| GUA/USDT:USDT | +13.75% | $3,656,920.93 |
+| PLAY/USDT:USDT | +12.41% | $8,295,965.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.01% | +3.09% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.79% | +2.87% |
-| SEI/USDT:USDT | below_1h_threshold | +2.60% | +2.68% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.44% |
-| GUA/USDT:USDT | below_1h_threshold | +2.16% | +2.24% |
+| UB/USDT:USDT | below_1h_threshold | +1.38% | +1.29% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.38% | +1.29% |
+| RON/USDT:USDT | below_1h_threshold | +1.32% | +1.23% |
+| AKT/USDT:USDT | below_1h_threshold | +0.91% | +0.83% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.75% | +0.67% |
 
 ## 5. 次に見るべき不足
 
