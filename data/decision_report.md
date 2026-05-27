@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T06:49:19.595135+00:00
+- generated_at: 2026-05-27T06:54:56.677814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4922**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T06:49:17.482958+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=75806.8
+- 更新: 2026-05-27T06:54:54.632983+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=75812.4
 - Funnel: target 772 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +22.82% | $10,948,652.86 |
-| REQ/USDT:USDT | +19.49% | $1,534,656.23 |
-| LUNC/USDT:USDT | +11.75% | $11,649,132.84 |
-| GUA/USDT:USDT | +11.16% | $3,918,332.21 |
-| SEI/USDT:USDT | +8.18% | $18,358,187.17 |
+| PLAY/USDT:USDT | +24.74% | $11,198,947.85 |
+| REQ/USDT:USDT | +18.70% | $1,537,752.99 |
+| GUA/USDT:USDT | +12.24% | $3,943,112.44 |
+| LUNC/USDT:USDT | +11.77% | $11,670,824.53 |
+| ICP/USDT:USDT | +9.31% | $10,947,865.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.47% | +3.30% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.06% | +1.89% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.04% | +1.86% |
-| INJ/USDT:USDT | below_1h_threshold | +1.61% | +1.43% |
-| QNT/USDT:USDT | below_1h_threshold | +1.53% | +1.35% |
+| GUA/USDT:USDT | below_1h_threshold | +4.48% | +4.30% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.58% | +3.39% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.94% | +1.76% |
+| ICP/USDT:USDT | below_1h_threshold | +1.67% | +1.49% |
+| INJ/USDT:USDT | below_1h_threshold | +1.66% | +1.48% |
 
 ## 5. 次に見るべき不足
 
