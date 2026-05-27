@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T13:55:16.358923+00:00
+- generated_at: 2026-05-27T13:58:56.176463+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4927**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T13:55:14.055884+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.89% price=74980.0
+- 更新: 2026-05-27T13:58:54.257577+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.81% price=75044.1
 - Funnel: target 775 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.0 >= 65=1
+- Strict後reject: 4h RSI 74.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +17.54% | $1,593,588.15 |
-| BEAT/USDT:USDT | +16.43% | $23,483,414.44 |
-| LUNC/USDT:USDT | +12.45% | $15,695,837.13 |
-| FF/USDT:USDT | +10.23% | $1,287,348.94 |
-| ALT/USDT:USDT | +10.21% | $2,869,520.53 |
+| RIF/USDT:USDT | +18.17% | $1,604,573.72 |
+| BEAT/USDT:USDT | +16.46% | $23,585,946.54 |
+| LUNC/USDT:USDT | +11.67% | $15,744,957.91 |
+| ALT/USDT:USDT | +10.16% | $2,873,674.29 |
+| FF/USDT:USDT | +9.51% | $1,293,442.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +4.03% |
-| CVNASTOCK/USDT:USDT | below_1h_threshold | +2.89% | +3.79% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.88% | +3.77% |
-| VVV/USDT:USDT | below_1h_threshold | +2.11% | +3.00% |
-| RIF/USDT:USDT | below_1h_threshold | +1.78% | +2.68% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +3.99% | +4.80% |
+| CVNASTOCK/USDT:USDT | below_1h_threshold | +2.64% | +3.44% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.40% | +3.21% |
+| RIF/USDT:USDT | below_1h_threshold | +2.38% | +3.19% |
+| VVV/USDT:USDT | below_1h_threshold | +2.09% | +2.90% |
 
 ## 5. 次に見るべき不足
 
