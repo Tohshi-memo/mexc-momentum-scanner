@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T19:39:40.854094+00:00
+- generated_at: 2026-05-27T19:43:43.873794+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4939**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T19:39:38.361235+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=75026.0
-- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1
+- 更新: 2026-05-27T19:43:41.718885+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=74977.5
+- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HIGH/USDT:USDT | +6.70% | $1,058,209.71 |
-| GRASS/USDT:USDT | +6.13% | $4,195,785.66 |
-| RIVER/USDT:USDT | +6.04% | $5,757,288.47 |
-| NEAR/USDT:USDT | +5.70% | $169,847,988.66 |
-| JTO/USDT:USDT | +5.41% | $1,781,278.58 |
+| HIGH/USDT:USDT | +6.13% | $1,062,029.80 |
+| RIVER/USDT:USDT | +6.04% | $5,865,531.04 |
+| GRASS/USDT:USDT | +5.71% | $4,213,073.42 |
+| JTO/USDT:USDT | +5.27% | $1,805,441.15 |
+| NEAR/USDT:USDT | +4.46% | $170,757,470.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +4.05% | +4.01% |
-| RIVER/USDT:USDT | below_1h_threshold | +4.04% | +4.00% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.68% | +2.64% |
-| FET/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
-| PI/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.96% | +3.99% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.79% | +2.82% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.27% | +2.30% |
+| MYX/USDT:USDT | below_1h_threshold | +1.35% | +1.38% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.30% |
 
 ## 5. 次に見るべき不足
 
