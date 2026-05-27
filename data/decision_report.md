@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T20:15:04.913122+00:00
+- generated_at: 2026-05-27T20:19:58.680217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4941**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T20:15:02.363501+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=75279.9
-- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.1 >= 65=1
+- 更新: 2026-05-27T20:19:54.058234+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=75366.5
+- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +28.02% | $2,086,610.86 |
-| RIVER/USDT:USDT | +10.79% | $6,895,636.09 |
-| JTO/USDT:USDT | +6.57% | $2,170,194.02 |
-| GENIUS/USDT:USDT | +4.19% | $1,224,374.22 |
-| RKLBSTOCK/USDT:USDT | +4.07% | $1,752,690.80 |
+| SNOWSTOCK/USDT:USDT | +27.79% | $2,431,343.52 |
+| RIVER/USDT:USDT | +10.11% | $7,197,158.82 |
+| MRVLSTOCK/USDT:USDT | +7.34% | $5,894,582.03 |
+| JTO/USDT:USDT | +7.01% | $2,211,461.63 |
+| GENIUS/USDT:USDT | +5.29% | $1,228,326.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +3.22% | +2.90% |
-| XLM/USDT:USDT | below_1h_threshold | +1.71% | +1.39% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.34% |
-| GRT/USDT:USDT | below_1h_threshold | +1.40% | +1.08% |
-| GENIUS/USDT:USDT | below_1h_threshold | +0.82% | +0.50% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.07% | +1.63% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.89% | +1.45% |
+| XLM/USDT:USDT | below_1h_threshold | +1.07% | +0.63% |
+| FF/USDT:USDT | below_1h_threshold | +1.00% | +0.56% |
+| CHZ/USDT:USDT | below_1h_threshold | +0.78% | +0.35% |
 
 ## 5. 次に見るべき不足
 
