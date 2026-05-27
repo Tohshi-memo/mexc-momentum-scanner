@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T02:54:35.697592+00:00
+- generated_at: 2026-05-27T02:59:30.386149+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4915**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T02:54:33.327400+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=75773.0
-- Funnel: target 770 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-27T02:59:28.061406+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=75783.4
+- Funnel: target 770 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNC/USDT:USDT | +11.82% | $7,765,382.22 |
-| REQ/USDT:USDT | +11.76% | $1,138,899.52 |
-| DRIFT/USDT:USDT | +10.60% | $5,327,852.59 |
-| GUA/USDT:USDT | +9.79% | $3,273,966.60 |
-| MUSTOCK/USDT:USDT | +8.92% | $30,578,436.30 |
+| DRIFT/USDT:USDT | +13.20% | $5,352,560.67 |
+| REQ/USDT:USDT | +12.83% | $1,141,045.35 |
+| LUNC/USDT:USDT | +11.37% | $7,822,009.00 |
+| GUA/USDT:USDT | +10.81% | $3,280,362.69 |
+| MUSTOCK/USDT:USDT | +8.69% | $30,620,692.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRIFT/USDT:USDT | below_1h_threshold | +4.65% | +4.75% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.87% | +1.97% |
-| FIDA/USDT:USDT | below_1h_threshold | +1.43% | +1.53% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +1.03% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.17% | +4.25% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.89% | +1.97% |
+| FIDA/USDT:USDT | below_1h_threshold | +1.84% | +1.92% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.69% | +1.77% |
+| GUA/USDT:USDT | below_1h_threshold | +1.50% | +1.59% |
 
 ## 5. 次に見るべき不足
 
