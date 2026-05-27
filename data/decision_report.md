@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T05:39:49.091763+00:00
+- generated_at: 2026-05-27T05:44:30.037404+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4920**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T05:39:46.723321+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=75650.7
-- Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-27T05:44:27.633442+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=75585.0
+- Funnel: target 772 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
+- Strict後reject: 4h RSI 65.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +24.28% | $1,399,057.52 |
-| PLAY/USDT:USDT | +19.27% | $8,844,336.38 |
-| LUNC/USDT:USDT | +14.12% | $10,204,910.40 |
-| RON/USDT:USDT | +11.75% | $1,159,390.62 |
-| MRVLSTOCK/USDT:USDT | +7.07% | $1,370,520.73 |
+| REQ/USDT:USDT | +22.33% | $1,441,975.25 |
+| PLAY/USDT:USDT | +19.83% | $9,126,545.15 |
+| LUNC/USDT:USDT | +14.69% | $10,586,131.38 |
+| RON/USDT:USDT | +11.87% | $1,210,557.87 |
+| MRVLSTOCK/USDT:USDT | +6.94% | $1,413,636.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.18% | +3.04% |
-| AKT/USDT:USDT | below_1h_threshold | +1.63% | +1.48% |
-| ICP/USDT:USDT | below_1h_threshold | +1.61% | +1.47% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.32% | +1.18% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.29% | +1.15% |
+| UB/USDT:USDT | below_1h_threshold | +3.12% | +3.06% |
+| AKT/USDT:USDT | below_1h_threshold | +1.77% | +1.72% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.32% | +1.26% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.06% | +1.00% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.99% | +0.93% |
 
 ## 5. 次に見るべき不足
 
