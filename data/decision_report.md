@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T14:34:35.974468+00:00
+- generated_at: 2026-05-27T14:39:33.700206+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4928**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T14:34:33.615741+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=74892.9
+- 更新: 2026-05-27T14:39:28.674790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=75072.8
 - Funnel: target 775 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +17.58% | $24,566,393.99 |
-| RIF/USDT:USDT | +16.68% | $1,721,545.42 |
-| ESPORTS/USDT:USDT | +13.85% | $8,984,559.02 |
-| LUNC/USDT:USDT | +11.98% | $15,823,976.09 |
-| ALT/USDT:USDT | +9.23% | $2,906,311.46 |
+| BEAT/USDT:USDT | +17.88% | $24,653,403.48 |
+| RIF/USDT:USDT | +16.82% | $1,730,364.97 |
+| ESPORTS/USDT:USDT | +12.84% | $9,009,040.29 |
+| LUNC/USDT:USDT | +12.78% | $15,829,431.76 |
+| ALT/USDT:USDT | +9.93% | $2,918,624.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RDDTSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +3.98% |
-| XLM/USDT:USDT | below_1h_threshold | +3.67% | +3.88% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.91% | +1.13% |
-| JTO/USDT:USDT | below_1h_threshold | +0.91% | +1.12% |
-| UB/USDT:USDT | below_1h_threshold | +0.87% | +1.08% |
+| XLM/USDT:USDT | below_1h_threshold | +4.55% | +4.53% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.20% | +4.17% |
+| RDDTSTOCK/USDT:USDT | below_1h_threshold | +3.32% | +3.29% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.21% | +1.19% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
 
 ## 5. 次に見るべき不足
 
