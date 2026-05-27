@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T05:49:33.815017+00:00
+- generated_at: 2026-05-27T05:54:29.604978+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4920**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T05:49:31.419617+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=75600.5
-- Funnel: target 772 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1
+- 更新: 2026-05-27T05:54:27.244238+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=75655.6
+- Funnel: target 772 → liquid 145 → pre 50 → checked 49 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=1, errors=0
+- Strict後reject: 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +21.90% | $1,446,726.29 |
-| PLAY/USDT:USDT | +21.21% | $9,210,073.58 |
-| LUNC/USDT:USDT | +14.13% | $10,619,554.56 |
-| RON/USDT:USDT | +11.98% | $1,214,395.55 |
-| MRVLSTOCK/USDT:USDT | +6.73% | $1,425,445.08 |
+| PLAY/USDT:USDT | +21.84% | $9,293,968.41 |
+| REQ/USDT:USDT | +20.61% | $1,455,834.30 |
+| LUNC/USDT:USDT | +14.57% | $10,655,880.54 |
+| RON/USDT:USDT | +11.64% | $1,221,529.46 |
+| ICP/USDT:USDT | +7.41% | $9,062,880.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.30% | +3.23% |
-| AKT/USDT:USDT | below_1h_threshold | +2.53% | +2.45% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.58% | +1.51% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.45% | +1.38% |
-| SEI/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
+| UB/USDT:USDT | below_1h_threshold | +3.81% | +3.66% |
+| ICP/USDT:USDT | below_1h_threshold | +2.56% | +2.41% |
+| AKT/USDT:USDT | below_1h_threshold | +2.36% | +2.21% |
+| SEI/USDT:USDT | below_1h_threshold | +2.07% | +1.92% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.99% | +1.84% |
 
 ## 5. 次に見るべき不足
 
