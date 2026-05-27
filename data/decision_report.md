@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T21:39:41.373175+00:00
+- generated_at: 2026-05-27T21:45:54.640044+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4943**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$96.19** / 初期 $100.00 (-3.81%)
-- 確定トレード: 67件 (TP 18 / SL 46 / EXP 3)
-- 最新: GUA/USDT:USDT SL_HIT PnL -4.00% 残高後 $96.19
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$97.15** / 初期 $100.00 (-2.85%)
+- 確定トレード: 68件 (TP 19 / SL 46 / EXP 3)
+- 最新: B/USDT:USDT TP_HIT PnL +6.46% 残高後 $97.15
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T21:39:39.236174+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=74936.4
-- Funnel: target 771 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T21:45:52.438247+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.91% price=74557.9
+- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +32.36% | $4,947,418.29 |
-| RIVER/USDT:USDT | +10.87% | $10,871,266.04 |
-| GENIUS/USDT:USDT | +7.71% | $1,263,201.92 |
-| H/USDT:USDT | +4.42% | $2,468,906.39 |
-| RKLBSTOCK/USDT:USDT | +3.87% | $1,808,629.25 |
+| SNOWSTOCK/USDT:USDT | +34.99% | $5,173,970.15 |
+| RIVER/USDT:USDT | +9.35% | $11,120,380.11 |
+| GENIUS/USDT:USDT | +6.82% | $1,282,758.13 |
+| H/USDT:USDT | +4.42% | $2,473,362.56 |
+| RKLBSTOCK/USDT:USDT | +3.72% | $1,811,034.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +2.74% | +3.14% |
-| PI/USDT:USDT | below_1h_threshold | +0.97% | +1.37% |
-| RIF/USDT:USDT | below_1h_threshold | +0.93% | +1.34% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.85% | +1.26% |
-| XMR/USDT:USDT | below_1h_threshold | +0.73% | +1.14% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +3.50% |
+| RIF/USDT:USDT | below_1h_threshold | +1.89% | +2.80% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.88% | +2.78% |
+| H/USDT:USDT | below_1h_threshold | +0.29% | +1.20% |
+| PI/USDT:USDT | below_1h_threshold | +0.14% | +1.05% |
 
 ## 5. 次に見るべき不足
 
