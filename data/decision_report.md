@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T04:54:34.647360+00:00
+- generated_at: 2026-05-27T04:59:58.951137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4918**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T04:54:29.614779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=75553.8
-- Funnel: target 772 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1
+- 更新: 2026-05-27T04:59:53.185850+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=75573.2
+- Funnel: target 772 → liquid 143 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.0 >= 65=1, 4h RSI 68.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +26.58% | $1,345,463.24 |
-| LUNC/USDT:USDT | +13.57% | $9,298,369.98 |
-| GUA/USDT:USDT | +12.75% | $3,664,271.61 |
-| PLAY/USDT:USDT | +12.63% | $8,409,905.88 |
-| MUSTOCK/USDT:USDT | +6.93% | $35,766,702.07 |
+| REQ/USDT:USDT | +26.96% | $1,350,313.97 |
+| LUNC/USDT:USDT | +13.63% | $9,348,870.43 |
+| GUA/USDT:USDT | +13.04% | $3,672,401.08 |
+| PLAY/USDT:USDT | +12.19% | $8,469,593.68 |
+| MRVLSTOCK/USDT:USDT | +7.16% | $1,351,568.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.32% | +3.43% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.73% | +2.84% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.46% |
-| UB/USDT:USDT | below_1h_threshold | +2.12% | +2.23% |
-| SEI/USDT:USDT | below_1h_threshold | +1.91% | +2.02% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.01% | +3.09% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.79% | +2.87% |
+| SEI/USDT:USDT | below_1h_threshold | +2.60% | +2.68% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.44% |
+| GUA/USDT:USDT | below_1h_threshold | +2.16% | +2.24% |
 
 ## 5. 次に見るべき不足
 
