@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T04:04:38.602248+00:00
+- generated_at: 2026-05-27T04:09:20.351543+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4916**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T04:04:36.152150+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=75629.7
-- Funnel: target 770 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-27T04:09:17.996409+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=75666.1
+- Funnel: target 770 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +18.99% | $1,192,852.12 |
-| LUNC/USDT:USDT | +11.32% | $8,289,532.49 |
-| GUA/USDT:USDT | +10.76% | $3,466,532.53 |
-| PLAY/USDT:USDT | +9.39% | $7,934,871.93 |
-| MRVLSTOCK/USDT:USDT | +7.00% | $1,215,793.66 |
+| REQ/USDT:USDT | +20.65% | $1,201,544.62 |
+| LUNC/USDT:USDT | +12.13% | $8,381,985.54 |
+| GUA/USDT:USDT | +11.60% | $3,471,661.64 |
+| PLAY/USDT:USDT | +9.56% | $7,960,521.45 |
+| MUSTOCK/USDT:USDT | +7.91% | $33,188,764.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REQ/USDT:USDT | below_1h_threshold | +3.67% | +3.68% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.70% | +0.71% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.35% | +0.36% |
-| SEI/USDT:USDT | below_1h_threshold | +0.30% | +0.31% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.18% | +0.19% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.43% | +1.40% |
+| GUA/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.81% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.42% | +0.39% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.32% |
 
 ## 5. 次に見るべき不足
 
