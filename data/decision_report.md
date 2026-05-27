@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T10:04:21.918970+00:00
+- generated_at: 2026-05-27T10:09:33.432764+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4924**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T10:04:19.491096+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=75852.8
+- 更新: 2026-05-27T10:09:31.082945+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=75866.5
 - Funnel: target 775 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +23.26% | $15,075,885.16 |
-| ALT/USDT:USDT | +18.42% | $1,382,038.29 |
-| LUNC/USDT:USDT | +15.34% | $13,285,984.30 |
-| BEAT/USDT:USDT | +14.40% | $13,653,190.04 |
-| MRVLSTOCK/USDT:USDT | +9.99% | $1,658,572.10 |
+| PLAY/USDT:USDT | +24.46% | $15,174,492.95 |
+| BEAT/USDT:USDT | +14.76% | $13,772,974.63 |
+| LUNC/USDT:USDT | +14.74% | $13,492,420.28 |
+| ALT/USDT:USDT | +13.56% | $1,460,677.78 |
+| MRVLSTOCK/USDT:USDT | +10.02% | $1,658,902.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REQ/USDT:USDT | below_1h_threshold | +1.06% | +1.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.68% | +0.71% |
-| GUA/USDT:USDT | below_1h_threshold | +0.48% | +0.51% |
-| UB/USDT:USDT | below_1h_threshold | +0.45% | +0.48% |
-| CHZ/USDT:USDT | below_1h_threshold | +0.34% | +0.37% |
+| REQ/USDT:USDT | below_1h_threshold | +2.56% | +2.57% |
+| GUA/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.37% | +1.38% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.94% | +0.95% |
+| CHZ/USDT:USDT | below_1h_threshold | +0.81% | +0.83% |
 
 ## 5. 次に見るべき不足
 
