@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T16:59:35.516648+00:00
+- generated_at: 2026-05-27T17:04:36.163003+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4932**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T16:59:33.305044+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=75266.8
-- Funnel: target 774 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-27T17:04:33.994713+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=75312.0
+- Funnel: target 774 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RKLBSTOCK/USDT:USDT | +3.23% | $1,022,654.97 |
-| LAB/USDT:USDT | +2.32% | $45,545,606.95 |
-| MRVLSTOCK/USDT:USDT | +1.60% | $1,989,040.11 |
-| WDCSTOCK/USDT:USDT | +1.51% | $3,611,636.04 |
-| PIPPIN/USDT:USDT | +1.44% | $1,566,647.62 |
+| RKLBSTOCK/USDT:USDT | +3.37% | $1,005,043.76 |
+| LAB/USDT:USDT | +2.97% | $45,043,871.51 |
+| WDCSTOCK/USDT:USDT | +1.62% | $3,564,170.72 |
+| SNDKSTOCK/USDT:USDT | +1.49% | $5,355,265.84 |
+| MRVLSTOCK/USDT:USDT | +1.43% | $1,970,236.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.29% |
-| LAB/USDT:USDT | below_1h_threshold | +2.32% | +2.37% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.54% | +1.59% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.55% |
+| UB/USDT:USDT | below_1h_threshold | +2.34% | +2.29% |
+| LAB/USDT:USDT | below_1h_threshold | +0.59% | +0.53% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.48% | +0.43% |
+| MYX/USDT:USDT | below_1h_threshold | +0.34% | +0.29% |
+| DRAM/USDT:USDT | below_1h_threshold | +0.20% | +0.15% |
 
 ## 5. 次に見るべき不足
 
