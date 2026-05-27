@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T05:29:22.843877+00:00
+- generated_at: 2026-05-27T05:34:54.531223+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4920**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T05:29:20.715329+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=75657.9
-- Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-27T05:34:52.286635+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=75602.1
+- Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +25.38% | $1,389,013.37 |
-| PLAY/USDT:USDT | +16.70% | $8,581,072.44 |
-| LUNC/USDT:USDT | +15.54% | $10,007,469.54 |
-| RON/USDT:USDT | +13.47% | $1,117,566.12 |
-| MRVLSTOCK/USDT:USDT | +6.99% | $1,357,695.85 |
+| REQ/USDT:USDT | +24.31% | $1,394,580.48 |
+| PLAY/USDT:USDT | +19.97% | $8,772,259.40 |
+| LUNC/USDT:USDT | +15.19% | $10,116,460.48 |
+| RON/USDT:USDT | +11.18% | $1,137,823.52 |
+| MRVLSTOCK/USDT:USDT | +6.88% | $1,359,280.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.73% | +3.58% |
-| AKT/USDT:USDT | below_1h_threshold | +2.33% | +2.18% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.78% | +1.63% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.59% | +1.44% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.56% | +1.41% |
+| UB/USDT:USDT | below_1h_threshold | +2.84% | +2.76% |
+| AKT/USDT:USDT | below_1h_threshold | +1.56% | +1.48% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.50% | +1.42% |
+| ICP/USDT:USDT | below_1h_threshold | +1.47% | +1.39% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.13% | +1.05% |
 
 ## 5. 次に見るべき不足
 
