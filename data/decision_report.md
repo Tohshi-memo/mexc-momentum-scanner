@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T05:09:28.569564+00:00
+- generated_at: 2026-05-27T05:14:28.358044+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4918**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T05:09:26.435915+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=75593.9
+- 更新: 2026-05-27T05:14:26.224377+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=75575.2
 - Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +26.49% | $1,363,646.43 |
-| RON/USDT:USDT | +14.95% | $1,041,388.77 |
-| LUNC/USDT:USDT | +14.56% | $9,751,687.88 |
-| PLAY/USDT:USDT | +11.50% | $8,344,408.56 |
-| GUA/USDT:USDT | +9.89% | $3,682,452.76 |
+| REQ/USDT:USDT | +25.68% | $1,369,285.31 |
+| LUNC/USDT:USDT | +15.19% | $9,822,257.09 |
+| PLAY/USDT:USDT | +15.07% | $8,444,373.85 |
+| RON/USDT:USDT | +13.58% | $1,066,988.99 |
+| GUA/USDT:USDT | +7.66% | $3,709,008.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RON/USDT:USDT | below_1h_threshold | +1.82% | +1.75% |
-| UB/USDT:USDT | below_1h_threshold | +1.47% | +1.40% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.83% | +0.76% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.80% | +0.73% |
-| AKT/USDT:USDT | below_1h_threshold | +0.75% | +0.68% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.10% | +2.06% |
+| UB/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
+| AKT/USDT:USDT | below_1h_threshold | +1.36% | +1.32% |
+| NAORIS/USDT:USDT | below_1h_threshold | +0.92% | +0.87% |
 
 ## 5. 次に見るべき不足
 
