@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-27T04:39:20.921094+00:00
+- generated_at: 2026-05-27T04:44:50.783461+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4918**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-27T04:39:18.588112+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=75332.9
-- Funnel: target 771 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.4 >= 65=1
+- 更新: 2026-05-27T04:44:45.658221+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=75312.1
+- Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| REQ/USDT:USDT | +26.19% | $1,271,280.20 |
-| LUNC/USDT:USDT | +13.12% | $8,841,483.38 |
-| GUA/USDT:USDT | +12.75% | $3,529,979.14 |
-| PLAY/USDT:USDT | +10.44% | $8,061,505.45 |
-| MRVLSTOCK/USDT:USDT | +6.81% | $1,244,748.32 |
+| REQ/USDT:USDT | +29.29% | $1,320,067.33 |
+| GUA/USDT:USDT | +13.50% | $3,640,694.91 |
+| LUNC/USDT:USDT | +12.85% | $9,134,431.12 |
+| PLAY/USDT:USDT | +11.65% | $8,326,950.30 |
+| MRVLSTOCK/USDT:USDT | +6.71% | $1,312,375.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.95% | +3.35% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.42% | +2.82% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.47% |
-| GUA/USDT:USDT | below_1h_threshold | +1.90% | +2.31% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.31% | +1.71% |
+| GUA/USDT:USDT | below_1h_threshold | +2.60% | +3.03% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.42% | +2.85% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.84% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.09% | +2.52% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.83% | +1.26% |
 
 ## 5. 次に見るべき不足
 
