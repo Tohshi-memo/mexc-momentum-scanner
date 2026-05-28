@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T04:10:06.982032+00:00
+- generated_at: 2026-05-28T04:14:38.635155+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4952**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T04:10:04.929572+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=73154.6
+- 更新: 2026-05-28T04:14:36.499994+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=73037.0
 - Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +34.01% | $7,304,496.56 |
-| NBISSTOCK/USDT:USDT | +11.65% | $1,566,258.73 |
-| GENIUS/USDT:USDT | +11.05% | $2,181,959.47 |
-| BILL/USDT:USDT | +6.95% | $7,563,554.51 |
-| BUILDONBOB/USDT:USDT | +6.71% | $1,046,217.49 |
+| SNOWSTOCK/USDT:USDT | +33.64% | $7,310,248.89 |
+| NBISSTOCK/USDT:USDT | +11.60% | $1,570,161.89 |
+| GENIUS/USDT:USDT | +10.67% | $2,199,241.02 |
+| BILL/USDT:USDT | +6.59% | $7,576,807.24 |
+| BUILDONBOB/USDT:USDT | +6.54% | $1,047,668.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.08% | +4.17% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.44% | +1.53% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.30% | +1.40% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.73% |
-| RIF/USDT:USDT | below_1h_threshold | +0.54% | +0.63% |
+| BILL/USDT:USDT | below_1h_threshold | +3.77% | +4.02% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.36% | +1.61% |
+| UB/USDT:USDT | below_1h_threshold | +1.10% | +1.35% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.07% | +1.33% |
+| RIF/USDT:USDT | below_1h_threshold | +0.43% | +0.69% |
 
 ## 5. 次に見るべき不足
 
