@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-28T00:55:12.563432+00:00
+- generated_at: 2026-05-28T00:59:46.600871+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **4947**
+- closed shadow trades: **4948**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.30% / filled 20/20。**
-- 全期間 MARKET基準: n=4947, expectancy=-0.07%
+- 全期間 MARKET基準: n=4948, expectancy=-0.07%
 - 直近20件 MARKET基準: n=20, expectancy=+0.30%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | LIMIT_10PCT_LONG | 7/20 | 35.0% | +4.73% | **+1.66%** |
 | LIMIT_9PCT_LONG | 8/20 | 40.0% | +3.08% | **+1.23%** |
 | LIMIT_7PCT_LONG | 11/20 | 55.0% | +1.69% | **+0.93%** |
-| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.65% | **+0.91%** |
+| LIMIT_ATR_LONG | 15/20 | 75.0% | +0.99% | **+0.74%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$126.79** / 初期 $100.00 (+26.79%)
-- 確定: 684件 (Win 172 / Loss 220 / Flat 292) / skip 824件
+- 確定: 685件 (Win 172 / Loss 220 / Flat 293) / skip 824件
 - 成長率目線: 平均log +0.000347 / 幾何平均 +0.035% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PLAY/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $126.79
+- 最新: ESPORTS/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $126.79
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T00:55:10.023684+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=74512.0
+- 更新: 2026-05-28T00:59:43.740803+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=74544.8
 - Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1
+- Strict後reject: 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +34.71% | $6,763,253.67 |
-| NBISSTOCK/USDT:USDT | +13.44% | $1,481,683.36 |
-| XLM/USDT:USDT | +7.65% | $68,135,209.12 |
-| GENIUS/USDT:USDT | +5.07% | $1,435,579.06 |
-| IRENSTOCK/USDT:USDT | +4.88% | $1,078,943.27 |
+| SNOWSTOCK/USDT:USDT | +34.35% | $6,775,627.06 |
+| NBISSTOCK/USDT:USDT | +13.84% | $1,487,037.38 |
+| XLM/USDT:USDT | +6.74% | $68,946,914.25 |
+| IRENSTOCK/USDT:USDT | +5.11% | $1,079,827.73 |
+| GENIUS/USDT:USDT | +4.75% | $1,438,042.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.03% | +3.91% |
-| JTO/USDT:USDT | below_1h_threshold | +1.75% | +1.62% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.54% | +1.42% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.34% |
-| UB/USDT:USDT | below_1h_threshold | +1.41% | +1.29% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.10% | +3.93% |
+| JTO/USDT:USDT | below_1h_threshold | +2.01% | +1.84% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +1.83% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.78% | +1.61% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.34% |
 
 ## 5. 次に見るべき不足
 
