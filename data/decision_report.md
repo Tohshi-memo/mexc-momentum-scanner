@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T08:34:57.946581+00:00
+- generated_at: 2026-05-28T08:39:47.200104+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4956**
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T08:34:55.799969+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=73248.8
-- Funnel: target 777 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-28T08:39:44.864687+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=73258.6
+- Funnel: target 777 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +33.98% | $8,281,827.84 |
-| NBISSTOCK/USDT:USDT | +13.87% | $1,788,986.26 |
-| ONDSSTOCK/USDT:USDT | +12.98% | $1,047,059.05 |
-| PRL/USDT:USDT | +11.95% | $1,239,594.70 |
-| BILL/USDT:USDT | +10.38% | $11,087,053.96 |
+| SNOWSTOCK/USDT:USDT | +34.15% | $8,297,408.99 |
+| NBISSTOCK/USDT:USDT | +14.00% | $1,789,355.15 |
+| ONDSSTOCK/USDT:USDT | +12.59% | $1,049,565.21 |
+| PRL/USDT:USDT | +11.83% | $1,249,553.30 |
+| BILL/USDT:USDT | +10.93% | $11,174,731.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.90% | +5.19% |
-| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +4.09% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.99% | +2.28% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.39% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.37% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.53% | +3.81% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.96% | +2.23% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.54% | +1.82% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.49% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.41% |
 
 ## 5. 次に見るべき不足
 
