@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T16:09:39.869234+00:00
+- generated_at: 2026-05-28T16:14:34.081865+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4973**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T16:09:37.419340+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=72838.5
+- 更新: 2026-05-28T16:14:31.917734+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=73095.3
 - Funnel: target 776 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +3.63% | $5,752,723.62 |
-| SWARMS/USDT:USDT | +2.61% | $1,068,728.99 |
-| LIT/USDT:USDT | +1.67% | $1,277,483.31 |
-| ONDSSTOCK/USDT:USDT | +1.56% | $1,204,309.83 |
-| ALLO/USDT:USDT | +1.18% | $1,201,990.54 |
+| ESPORTS/USDT:USDT | +5.16% | $5,787,701.08 |
+| SWARMS/USDT:USDT | +4.40% | $1,073,964.47 |
+| ALLO/USDT:USDT | +4.16% | $1,295,749.82 |
+| SKYAI/USDT:USDT | +2.49% | $7,202,834.92 |
+| NIL/USDT:USDT | +1.75% | $1,765,993.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.82% | +3.91% |
-| SWARMS/USDT:USDT | below_1h_threshold | +2.67% | +2.75% |
-| LIT/USDT:USDT | below_1h_threshold | +1.68% | +1.76% |
-| ONDSSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.65% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.78% | +4.51% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.58% | +4.31% |
+| SWARMS/USDT:USDT | below_1h_threshold | +4.41% | +4.14% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.28% | +2.01% |
+| NIL/USDT:USDT | below_1h_threshold | +1.75% | +1.48% |
 
 ## 5. 次に見るべき不足
 
