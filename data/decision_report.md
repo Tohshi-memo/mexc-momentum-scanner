@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T03:14:38.813447+00:00
+- generated_at: 2026-05-28T03:19:31.215749+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4951**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T03:14:36.333829+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=74189.0
-- Funnel: target 775 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-28T03:19:29.027568+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.73% price=73714.5
+- Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +35.81% | $7,107,783.68 |
-| GENIUS/USDT:USDT | +19.54% | $1,870,245.29 |
-| NBISSTOCK/USDT:USDT | +13.86% | $1,541,250.48 |
-| XLM/USDT:USDT | +8.63% | $83,148,579.39 |
-| RIVER/USDT:USDT | +5.33% | $13,548,861.36 |
+| SNOWSTOCK/USDT:USDT | +35.84% | $7,120,886.15 |
+| GENIUS/USDT:USDT | +18.34% | $1,929,938.88 |
+| NBISSTOCK/USDT:USDT | +13.70% | $1,545,259.45 |
+| XLM/USDT:USDT | +6.70% | $83,721,468.62 |
+| BUILDONBOB/USDT:USDT | +4.92% | $1,013,862.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +2.41% | +2.49% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.01% | +1.09% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.56% | +0.64% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.55% | +0.64% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.55% | +0.64% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.60% | +2.32% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.15% | +1.88% |
+| FF/USDT:USDT | below_1h_threshold | +1.10% | +1.83% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.90% | +1.62% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.89% | +1.62% |
 
 ## 5. 次に見るべき不足
 
