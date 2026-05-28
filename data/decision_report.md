@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T17:42:07.797825+00:00
+- generated_at: 2026-05-28T17:46:45.037608+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4980**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T17:42:02.963022+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=73503.2
+- 更新: 2026-05-28T17:46:40.261050+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=73606.7
 - Funnel: target 773 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.9 >= 65=1
+- Strict後reject: 4h RSI 87.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +17.81% | $2,727,360.85 |
-| ESPORTS/USDT:USDT | +15.10% | $7,063,544.66 |
-| XPL/USDT:USDT | +6.61% | $2,757,048.07 |
-| XLM/USDT:USDT | +6.24% | $325,466,761.33 |
-| AR/USDT:USDT | +5.93% | $1,943,610.39 |
+| ALLO/USDT:USDT | +18.32% | $2,811,620.12 |
+| ESPORTS/USDT:USDT | +16.82% | $7,126,568.48 |
+| XPL/USDT:USDT | +6.72% | $2,764,469.82 |
+| AR/USDT:USDT | +6.56% | $1,948,493.43 |
+| BSB/USDT:USDT | +6.36% | $13,626,655.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_1h_threshold | +3.99% | +3.87% |
-| BSB/USDT:USDT | below_1h_threshold | +3.22% | +3.10% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.21% | +3.09% |
-| XLM/USDT:USDT | below_1h_threshold | +3.12% | +3.00% |
-| AR/USDT:USDT | below_1h_threshold | +2.91% | +2.79% |
+| BSB/USDT:USDT | below_1h_threshold | +4.74% | +4.48% |
+| DYDX/USDT:USDT | below_1h_threshold | +3.73% | +3.47% |
+| AR/USDT:USDT | below_1h_threshold | +3.52% | +3.26% |
+| XLM/USDT:USDT | below_1h_threshold | +2.98% | +2.72% |
+| SWARMS/USDT:USDT | below_1h_threshold | +2.89% | +2.63% |
 
 ## 5. 次に見るべき不足
 
