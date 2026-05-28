@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T17:19:56.637211+00:00
+- generated_at: 2026-05-28T17:24:40.650639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4980**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T17:19:54.133181+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=73435.3
+- 更新: 2026-05-28T17:24:38.388752+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=73387.2
 - Funnel: target 776 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +14.91% | $6,905,317.81 |
-| ALLO/USDT:USDT | +12.96% | $2,361,899.64 |
-| RIVER/USDT:USDT | +6.09% | $17,801,659.16 |
-| XLM/USDT:USDT | +5.30% | $308,957,754.49 |
-| ZBCN/USDT:USDT | +4.85% | $1,116,988.05 |
+| ESPORTS/USDT:USDT | +14.53% | $6,938,790.64 |
+| ALLO/USDT:USDT | +14.27% | $2,412,520.01 |
+| XLM/USDT:USDT | +6.02% | $313,515,901.36 |
+| ZBCN/USDT:USDT | +5.05% | $1,117,308.63 |
+| XPL/USDT:USDT | +4.87% | $2,601,257.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +4.51% | +4.48% |
-| XPL/USDT:USDT | below_1h_threshold | +4.39% | +4.37% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.70% | +2.67% |
-| XLM/USDT:USDT | below_1h_threshold | +2.45% | +2.42% |
-| ZBCN/USDT:USDT | below_1h_threshold | +2.04% | +2.01% |
+| XPL/USDT:USDT | below_1h_threshold | +4.51% | +4.55% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.92% | +3.96% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.03% | +3.07% |
+| XLM/USDT:USDT | below_1h_threshold | +2.80% | +2.84% |
+| BSB/USDT:USDT | below_1h_threshold | +2.60% | +2.64% |
 
 ## 5. 次に見るべき不足
 
