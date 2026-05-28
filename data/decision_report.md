@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T06:58:33.569755+00:00
+- generated_at: 2026-05-28T07:04:34.421298+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4955**
 
@@ -54,31 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T06:58:29.546701+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=73116.9
-- Funnel: target 777 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-28T07:04:32.275365+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=73150.0
+- Funnel: target 777 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +34.92% | $7,884,959.06 |
-| NBISSTOCK/USDT:USDT | +12.80% | $1,715,241.92 |
-| BILL/USDT:USDT | +9.82% | $10,870,379.45 |
-| GENIUS/USDT:USDT | +6.37% | $2,597,695.25 |
-| XLM/USDT:USDT | +5.51% | $99,434,675.84 |
+| SNOWSTOCK/USDT:USDT | +34.54% | $7,889,190.48 |
+| NBISSTOCK/USDT:USDT | +13.19% | $1,711,536.49 |
+| BILL/USDT:USDT | +9.25% | $10,326,373.62 |
+| GENIUS/USDT:USDT | +6.47% | $2,575,987.54 |
+| BEAT/USDT:USDT | +5.49% | $36,483,814.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.23% | +2.01% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.02% | +1.81% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.44% | +1.22% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.21% | +1.00% |
-| XLM/USDT:USDT | below_1h_threshold | +1.02% | +0.80% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.48% | +0.51% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.43% | +0.46% |
+| RIF/USDT:USDT | below_1h_threshold | +0.36% | +0.39% |
+| ALGO/USDT:USDT | below_1h_threshold | +0.29% | +0.32% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.31% |
 
 ## 5. 次に見るべき不足
 
