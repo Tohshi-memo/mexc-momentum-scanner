@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T11:55:24.054631+00:00
+- generated_at: 2026-05-28T12:00:32.815738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4959**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T11:55:21.650928+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=73507.8
-- Funnel: target 777 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-28T12:00:30.775530+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=73487.6
+- Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +36.21% | $9,405,882.82 |
-| PRL/USDT:USDT | +23.04% | $2,032,249.55 |
-| NBISSTOCK/USDT:USDT | +12.58% | $2,048,179.60 |
-| ONDSSTOCK/USDT:USDT | +11.63% | $1,089,875.23 |
-| XLM/USDT:USDT | +10.27% | $128,674,466.24 |
+| SNOWSTOCK/USDT:USDT | +36.25% | $9,478,014.69 |
+| PRL/USDT:USDT | +22.16% | $2,048,686.18 |
+| NBISSTOCK/USDT:USDT | +12.59% | $2,044,669.76 |
+| ONDSSTOCK/USDT:USDT | +11.73% | $1,091,136.61 |
+| XLM/USDT:USDT | +10.34% | $128,818,545.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.26% | +4.08% |
-| RIF/USDT:USDT | below_1h_threshold | +2.15% | +1.97% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.54% |
-| XLM/USDT:USDT | below_1h_threshold | +1.72% | +1.54% |
-| TWT/USDT:USDT | below_1h_threshold | +1.52% | +1.34% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| XLM/USDT:USDT | below_1h_threshold | +0.26% | +0.25% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.16% | +0.14% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.14% | +0.13% |
+| MYX/USDT:USDT | below_1h_threshold | +0.14% | +0.13% |
 
 ## 5. 次に見るべき不足
 
