@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T15:19:37.727358+00:00
+- generated_at: 2026-05-28T15:24:44.909639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4971**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T15:19:35.574990+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=72760.8
-- Funnel: target 776 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-28T15:24:42.763062+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=72862.0
+- Funnel: target 776 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +37.91% | $4,853,525.93 |
-| SNOWSTOCK/USDT:USDT | +32.79% | $11,905,841.92 |
-| ONDSSTOCK/USDT:USDT | +23.46% | $1,211,773.40 |
-| XLM/USDT:USDT | +19.75% | $253,338,693.53 |
-| ALLO/USDT:USDT | +17.98% | $1,007,882.42 |
+| ESPORTS/USDT:USDT | +34.83% | $4,925,913.26 |
+| SNOWSTOCK/USDT:USDT | +34.29% | $11,946,413.34 |
+| ONDSSTOCK/USDT:USDT | +24.90% | $1,212,306.24 |
+| XLM/USDT:USDT | +20.99% | $254,634,519.27 |
+| ALLO/USDT:USDT | +17.94% | $1,019,815.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +2.18% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.16% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.22% | +1.55% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.49% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.37% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.62% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.29% | +2.48% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.31% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +2.14% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.92% |
 
 ## 5. 次に見るべき不足
 
