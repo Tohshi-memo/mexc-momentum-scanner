@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T01:49:24.531106+00:00
+- generated_at: 2026-05-28T01:54:26.647330+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4948**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T01:49:22.370941+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=74309.4
+- 更新: 2026-05-28T01:54:24.498971+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=74295.4
 - Funnel: target 775 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +35.12% | $6,869,941.74 |
-| NBISSTOCK/USDT:USDT | +14.08% | $1,509,525.30 |
-| XLM/USDT:USDT | +7.50% | $74,608,137.39 |
-| IRENSTOCK/USDT:USDT | +5.10% | $1,065,648.92 |
-| RIVER/USDT:USDT | +4.98% | $13,320,580.12 |
+| SNOWSTOCK/USDT:USDT | +35.21% | $6,883,230.79 |
+| NBISSTOCK/USDT:USDT | +14.05% | $1,511,652.58 |
+| XLM/USDT:USDT | +8.14% | $75,082,976.34 |
+| IRENSTOCK/USDT:USDT | +5.22% | $1,065,985.88 |
+| RIVER/USDT:USDT | +5.10% | $13,348,302.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HIGH/USDT:USDT | below_1h_threshold | +2.33% | +2.64% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.31% | +1.62% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +1.03% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.68% | +0.99% |
-| XLM/USDT:USDT | below_1h_threshold | +0.56% | +0.87% |
+| XLM/USDT:USDT | below_1h_threshold | +1.12% | +1.45% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +1.11% |
+| HIGH/USDT:USDT | below_1h_threshold | +0.73% | +1.06% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.69% | +1.02% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.51% | +0.84% |
 
 ## 5. 次に見るべき不足
 
