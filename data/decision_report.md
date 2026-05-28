@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T09:04:29.066644+00:00
+- generated_at: 2026-05-28T09:09:45.530814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4958**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T09:04:26.599830+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=73343.7
-- Funnel: target 777 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-28T09:09:43.363367+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=73311.4
+- Funnel: target 777 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +32.93% | $8,378,455.73 |
-| NBISSTOCK/USDT:USDT | +13.63% | $1,841,287.74 |
-| ONDSSTOCK/USDT:USDT | +12.98% | $1,048,746.38 |
-| BILL/USDT:USDT | +11.66% | $11,073,619.13 |
-| PRL/USDT:USDT | +8.95% | $1,310,060.29 |
+| SNOWSTOCK/USDT:USDT | +32.42% | $8,420,029.32 |
+| ONDSSTOCK/USDT:USDT | +13.46% | $1,050,588.61 |
+| NBISSTOCK/USDT:USDT | +12.82% | $1,842,002.00 |
+| BILL/USDT:USDT | +11.15% | $11,134,391.35 |
+| PRL/USDT:USDT | +8.14% | $1,317,557.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.59% | +1.52% |
-| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.16% | +1.09% |
-| FF/USDT:USDT | below_1h_threshold | +0.74% | +0.68% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.55% |
-| XLM/USDT:USDT | below_1h_threshold | +0.59% | +0.52% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.74% | +2.71% |
+| FF/USDT:USDT | below_1h_threshold | +1.34% | +1.32% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.16% | +1.14% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.57% |
 
 ## 5. 次に見るべき不足
 
