@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T22:09:34.132059+00:00
+- generated_at: 2026-05-28T22:14:30.854296+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4994**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T22:09:31.946974+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=73706.9
+- 更新: 2026-05-28T22:14:28.687597+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=73674.2
 - Funnel: target 772 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +41.04% | $14,086,867.21 |
-| DELLSTOCK/USDT:USDT | +24.34% | $5,938,933.21 |
-| CLO/USDT:USDT | +22.42% | $1,175,457.55 |
-| XPL/USDT:USDT | +10.44% | $4,051,232.72 |
-| VVV/USDT:USDT | +10.23% | $10,068,970.64 |
+| ALLO/USDT:USDT | +42.29% | $14,242,091.20 |
+| DELLSTOCK/USDT:USDT | +24.77% | $5,966,169.99 |
+| CLO/USDT:USDT | +22.00% | $1,180,084.36 |
+| XPL/USDT:USDT | +10.44% | $4,056,811.39 |
+| VVV/USDT:USDT | +10.15% | $10,108,504.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +0.44% | +0.56% |
-| BSB/USDT:USDT | below_1h_threshold | +0.41% | +0.53% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.27% | +0.39% |
-| JTO/USDT:USDT | below_1h_threshold | +0.25% | +0.37% |
-| ZBCN/USDT:USDT | below_1h_threshold | +0.25% | +0.37% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.24% | +1.40% |
+| BSB/USDT:USDT | below_1h_threshold | +0.46% | +0.63% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.26% | +0.43% |
+| LIT/USDT:USDT | below_1h_threshold | +0.24% | +0.41% |
+| XLM/USDT:USDT | below_1h_threshold | +0.23% | +0.39% |
 
 ## 5. 次に見るべき不足
 
