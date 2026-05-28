@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T16:25:06.182055+00:00
+- generated_at: 2026-05-28T16:29:54.050469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4973**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T16:25:03.824848+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.47% price=73240.0
-- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-28T16:29:51.461083+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=73143.3
+- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +5.92% | $6,019,991.44 |
-| ALLO/USDT:USDT | +5.35% | $1,515,496.68 |
-| SKYAI/USDT:USDT | +4.18% | $7,449,122.06 |
-| ETHFI/USDT:USDT | +3.34% | $3,130,371.59 |
-| XLM/USDT:USDT | +3.11% | $276,254,455.39 |
+| ESPORTS/USDT:USDT | +8.60% | $6,089,811.25 |
+| ALLO/USDT:USDT | +6.56% | $1,590,189.20 |
+| SKYAI/USDT:USDT | +5.27% | $7,477,431.65 |
+| ETHFI/USDT:USDT | +3.76% | $3,192,251.04 |
+| GUA/USDT:USDT | +2.99% | $36,436,642.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_relative_strength | +5.36% | +4.89% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.18% | +3.72% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.35% | +2.88% |
-| XLM/USDT:USDT | below_1h_threshold | +3.22% | +2.75% |
-| LIT/USDT:USDT | below_1h_threshold | +2.82% | +2.35% |
+| SKYAI/USDT:USDT | below_relative_strength | +5.28% | +4.94% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.76% | +3.43% |
+| LIT/USDT:USDT | below_1h_threshold | +2.94% | +2.60% |
+| GUA/USDT:USDT | below_1h_threshold | +2.93% | +2.59% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.89% | +2.55% |
 
 ## 5. 次に見るべき不足
 
