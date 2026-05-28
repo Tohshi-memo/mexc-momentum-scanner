@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T14:26:08.375375+00:00
+- generated_at: 2026-05-28T14:30:48.382664+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4966**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T14:26:05.736162+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=73039.1
-- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-28T14:30:45.643813+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=72946.9
+- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +34.20% | $11,386,130.76 |
-| ESPORTS/USDT:USDT | +26.54% | $3,033,091.50 |
-| ONDSSTOCK/USDT:USDT | +24.32% | $1,179,972.24 |
-| XLM/USDT:USDT | +22.74% | $224,704,234.47 |
-| PRL/USDT:USDT | +15.09% | $2,506,360.96 |
+| SNOWSTOCK/USDT:USDT | +33.63% | $11,420,646.25 |
+| ESPORTS/USDT:USDT | +27.72% | $3,127,674.41 |
+| ONDSSTOCK/USDT:USDT | +25.09% | $1,182,424.39 |
+| XLM/USDT:USDT | +24.18% | $226,405,158.19 |
+| PRL/USDT:USDT | +14.65% | $2,512,222.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.25% | +4.18% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.17% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.22% | +2.15% |
-| LLYSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.91% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.98% | +1.91% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.15% | +3.21% |
+| BILL/USDT:USDT | below_1h_threshold | +3.13% | +3.19% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.80% |
+| LLYSTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.51% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.38% |
 
 ## 5. 次に見るべき不足
 
