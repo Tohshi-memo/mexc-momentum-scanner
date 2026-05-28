@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T13:39:35.158006+00:00
+- generated_at: 2026-05-28T13:44:35.368790+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4961**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T13:39:32.725881+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=72833.8
-- Funnel: target 776 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.2 >= 65=1
+- 更新: 2026-05-28T13:44:32.766348+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.95% price=72801.2
+- Funnel: target 776 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.4 >= 65=1, 4h RSI 87.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +31.59% | $10,589,639.63 |
-| XLM/USDT:USDT | +22.63% | $180,002,989.59 |
-| ONDSSTOCK/USDT:USDT | +19.42% | $1,117,121.71 |
-| PRL/USDT:USDT | +15.84% | $2,396,472.79 |
-| NBISSTOCK/USDT:USDT | +10.07% | $2,119,070.84 |
+| SNOWSTOCK/USDT:USDT | +30.16% | $10,833,518.96 |
+| XLM/USDT:USDT | +25.79% | $185,870,901.93 |
+| ONDSSTOCK/USDT:USDT | +20.19% | $1,122,789.52 |
+| PRL/USDT:USDT | +15.96% | $2,402,585.91 |
+| NBISSTOCK/USDT:USDT | +9.07% | $2,130,583.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +4.27% | +5.17% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.21% | +3.11% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.98% |
-| H/USDT:USDT | below_1h_threshold | +1.92% | +2.82% |
-| HBAR/USDT:USDT | below_1h_threshold | +1.64% | +2.54% |
+| HBAR/USDT:USDT | below_1h_threshold | +2.85% | +3.80% |
+| LLYSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +2.66% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.58% | +2.52% |
+| CRO/USDT:USDT | below_1h_threshold | +1.49% | +2.44% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +2.29% |
 
 ## 5. 次に見るべき不足
 
