@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T11:05:09.290896+00:00
+- generated_at: 2026-05-28T11:10:19.097562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4959**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T11:05:06.893991+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=73397.4
-- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-28T11:10:16.834486+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=73357.3
+- Funnel: target 777 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +34.80% | $9,055,859.86 |
-| PRL/USDT:USDT | +15.77% | $1,580,084.40 |
-| ONDSSTOCK/USDT:USDT | +12.78% | $1,060,712.12 |
-| NBISSTOCK/USDT:USDT | +11.59% | $1,921,188.60 |
-| BILL/USDT:USDT | +8.32% | $11,735,503.70 |
+| SNOWSTOCK/USDT:USDT | +34.22% | $9,079,436.11 |
+| PRL/USDT:USDT | +21.41% | $1,649,869.38 |
+| ONDSSTOCK/USDT:USDT | +12.88% | $1,062,248.16 |
+| NBISSTOCK/USDT:USDT | +11.60% | $1,945,092.35 |
+| XLM/USDT:USDT | +8.62% | $121,345,167.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PRL/USDT:USDT | below_1h_threshold | +3.11% | +3.08% |
-| FUTUSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.31% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
-| BILL/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
-| TXNSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.92% | +1.95% |
+| FUTUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.91% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.45% | +0.48% |
+| TXNSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.46% |
 
 ## 5. 次に見るべき不足
 
