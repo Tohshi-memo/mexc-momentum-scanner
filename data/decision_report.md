@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T07:24:32.917380+00:00
+- generated_at: 2026-05-28T07:29:30.521185+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4955**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T07:24:30.761756+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=73280.3
+- 更新: 2026-05-28T07:29:28.333389+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=73223.9
 - Funnel: target 777 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +32.99% | $7,944,630.64 |
-| NBISSTOCK/USDT:USDT | +13.79% | $1,726,010.31 |
-| BILL/USDT:USDT | +10.08% | $10,468,444.77 |
-| BEAT/USDT:USDT | +5.55% | $36,884,706.94 |
-| GENIUS/USDT:USDT | +4.90% | $2,619,574.62 |
+| SNOWSTOCK/USDT:USDT | +33.75% | $7,965,922.98 |
+| NBISSTOCK/USDT:USDT | +13.69% | $1,729,690.07 |
+| BILL/USDT:USDT | +9.36% | $10,496,930.72 |
+| GENIUS/USDT:USDT | +6.06% | $2,625,822.29 |
+| BEAT/USDT:USDT | +4.87% | $37,037,055.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.11% | +2.96% |
-| RIF/USDT:USDT | below_1h_threshold | +2.17% | +2.02% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.84% | +1.69% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.83% | +1.68% |
-| SEI/USDT:USDT | below_1h_threshold | +1.33% | +1.18% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.75% | +4.68% |
+| LAB/USDT:USDT | below_1h_threshold | +2.71% | +2.64% |
+| ON/USDT:USDT | below_1h_threshold | +1.75% | +1.68% |
+| RIF/USDT:USDT | below_1h_threshold | +1.58% | +1.51% |
+| FF/USDT:USDT | below_1h_threshold | +1.47% | +1.40% |
 
 ## 5. 次に見るべき不足
 
