@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T08:44:34.130413+00:00
+- generated_at: 2026-05-28T08:49:35.897001+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4956**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T08:44:31.809582+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=73245.0
+- 更新: 2026-05-28T08:49:33.541900+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=73327.3
 - Funnel: target 777 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +33.50% | $8,303,969.99 |
-| NBISSTOCK/USDT:USDT | +13.93% | $1,816,017.45 |
-| ONDSSTOCK/USDT:USDT | +12.40% | $1,053,543.30 |
-| PRL/USDT:USDT | +12.08% | $1,263,242.78 |
-| BILL/USDT:USDT | +11.16% | $11,189,026.70 |
+| SNOWSTOCK/USDT:USDT | +34.01% | $8,329,414.90 |
+| NBISSTOCK/USDT:USDT | +13.69% | $1,822,551.70 |
+| BILL/USDT:USDT | +13.32% | $11,339,479.16 |
+| ONDSSTOCK/USDT:USDT | +12.69% | $1,054,129.44 |
+| PRL/USDT:USDT | +11.58% | $1,278,395.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.36% | +3.65% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.70% | +2.00% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.70% |
-| XLM/USDT:USDT | below_1h_threshold | +1.39% | +1.68% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.24% | +1.53% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.63% |
+| BILL/USDT:USDT | below_1h_threshold | +1.96% | +2.15% |
+| XLM/USDT:USDT | below_1h_threshold | +1.67% | +1.85% |
+| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.68% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.40% | +1.59% |
 
 ## 5. 次に見るべき不足
 
