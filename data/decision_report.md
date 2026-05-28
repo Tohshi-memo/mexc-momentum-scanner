@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T18:50:58.146390+00:00
+- generated_at: 2026-05-28T18:56:22.518762+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4986**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T18:50:52.662771+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=73599.9
+- 更新: 2026-05-28T18:56:17.579198+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=73664.4
 - Funnel: target 773 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.6 >= 65=1
+- Strict後reject: 4h RSI 91.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +31.88% | $5,055,478.59 |
-| SWARMS/USDT:USDT | +10.86% | $1,261,730.56 |
-| XPL/USDT:USDT | +9.62% | $3,304,110.77 |
-| VVV/USDT:USDT | +8.61% | $9,877,611.02 |
-| ETHFI/USDT:USDT | +7.82% | $3,409,704.93 |
+| ALLO/USDT:USDT | +34.71% | $5,280,435.08 |
+| SWARMS/USDT:USDT | +11.18% | $1,264,832.07 |
+| XPL/USDT:USDT | +9.74% | $3,366,383.84 |
+| VVV/USDT:USDT | +8.88% | $9,945,853.46 |
+| AR/USDT:USDT | +7.72% | $2,000,671.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.04% | +3.93% |
-| LIT/USDT:USDT | below_1h_threshold | +3.46% | +3.35% |
-| LAB/USDT:USDT | below_1h_threshold | +3.29% | +3.18% |
-| NIGHT/USDT:USDT | below_1h_threshold | +3.20% | +3.09% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.63% | +2.52% |
+| VVV/USDT:USDT | below_1h_threshold | +4.30% | +4.10% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.54% | +3.34% |
+| LIT/USDT:USDT | below_1h_threshold | +3.25% | +3.05% |
+| LAB/USDT:USDT | below_1h_threshold | +3.06% | +2.86% |
+| BAT/USDT:USDT | below_1h_threshold | +2.87% | +2.67% |
 
 ## 5. 次に見るべき不足
 
