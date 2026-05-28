@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T09:44:27.433122+00:00
+- generated_at: 2026-05-28T09:50:34.558584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4958**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T09:44:25.271385+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=73443.8
+- 更新: 2026-05-28T09:50:32.446932+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=73515.0
 - Funnel: target 777 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +33.95% | $8,633,244.98 |
-| ONDSSTOCK/USDT:USDT | +14.71% | $1,056,454.35 |
-| NBISSTOCK/USDT:USDT | +13.15% | $1,867,264.39 |
-| PRL/USDT:USDT | +10.14% | $1,364,604.80 |
-| BILL/USDT:USDT | +8.17% | $11,423,791.95 |
+| SNOWSTOCK/USDT:USDT | +34.33% | $8,671,814.43 |
+| ONDSSTOCK/USDT:USDT | +14.80% | $1,057,557.79 |
+| NBISSTOCK/USDT:USDT | +14.18% | $1,873,960.28 |
+| BILL/USDT:USDT | +8.90% | $11,466,250.27 |
+| PRL/USDT:USDT | +8.76% | $1,371,036.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +3.15% | +2.95% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.09% | +1.89% |
-| ONDSSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.59% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.40% | +1.20% |
-| PRL/USDT:USDT | below_1h_threshold | +1.33% | +1.12% |
+| MYX/USDT:USDT | below_1h_threshold | +3.35% | +3.05% |
+| XLM/USDT:USDT | below_1h_threshold | +2.33% | +2.03% |
+| ONDSSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.49% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.78% | +1.48% |
+| BUILDONBOB/USDT:USDT | below_1h_threshold | +1.24% | +0.94% |
 
 ## 5. 次に見るべき不足
 
