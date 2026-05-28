@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T18:13:45.694938+00:00
+- generated_at: 2026-05-28T18:18:26.615996+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4985**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T18:13:42.988916+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=73655.9
-- Funnel: target 773 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.0 >= 65=1
+- 更新: 2026-05-28T18:18:21.507313+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=73645.5
+- Funnel: target 773 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +23.17% | $3,470,476.99 |
-| ESPORTS/USDT:USDT | +18.54% | $8,215,356.90 |
-| XPL/USDT:USDT | +10.90% | $2,955,476.54 |
-| XLM/USDT:USDT | +9.13% | $338,477,638.20 |
-| ETHFI/USDT:USDT | +8.81% | $3,246,828.66 |
+| ALLO/USDT:USDT | +25.02% | $3,602,724.81 |
+| ESPORTS/USDT:USDT | +23.32% | $8,313,595.00 |
+| SWARMS/USDT:USDT | +11.96% | $1,206,544.18 |
+| XPL/USDT:USDT | +11.13% | $3,019,526.60 |
+| AR/USDT:USDT | +9.56% | $1,872,992.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.79% | +3.60% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.10% | +2.91% |
-| LIT/USDT:USDT | below_1h_threshold | +3.08% | +2.90% |
-| XPL/USDT:USDT | below_1h_threshold | +3.01% | +2.82% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.85% | +2.66% |
+| XPL/USDT:USDT | below_1h_threshold | +2.90% | +2.73% |
+| LIT/USDT:USDT | below_1h_threshold | +2.82% | +2.65% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.74% | +2.57% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.73% | +2.56% |
+| AR/USDT:USDT | below_1h_threshold | +2.49% | +2.31% |
 
 ## 5. 次に見るべき不足
 
