@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T13:20:28.331690+00:00
+- generated_at: 2026-05-28T13:25:31.245107+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4961**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.63** / 初期 $100.00 (-2.37%)
-- 確定トレード: 70件 (TP 20 / SL 47 / EXP 3)
-- 最新: PRL/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.63
+- 残高: **$98.61** / 初期 $100.00 (-1.39%)
+- 確定トレード: 71件 (TP 21 / SL 47 / EXP 3)
+- 最新: BILL/USDT:USDT TP_HIT PnL +8.00% 残高後 $98.61
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T13:20:25.976479+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=73221.4
-- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-28T13:25:29.081866+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=73118.0
+- Funnel: target 776 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +34.69% | $9,912,651.27 |
-| XLM/USDT:USDT | +20.64% | $160,562,199.03 |
-| PRL/USDT:USDT | +15.65% | $2,366,459.35 |
-| NBISSTOCK/USDT:USDT | +12.43% | $2,084,521.25 |
-| ONDSSTOCK/USDT:USDT | +12.01% | $1,105,610.09 |
+| SNOWSTOCK/USDT:USDT | +34.06% | $9,967,272.99 |
+| XLM/USDT:USDT | +21.72% | $165,950,636.81 |
+| PRL/USDT:USDT | +15.27% | $2,373,613.22 |
+| NBISSTOCK/USDT:USDT | +12.68% | $2,085,560.52 |
+| ONDSSTOCK/USDT:USDT | +11.63% | $1,107,987.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.96% | +4.33% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.73% | +3.10% |
-| XLM/USDT:USDT | below_1h_threshold | +2.38% | +2.76% |
-| FUTUSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.39% |
-| MYX/USDT:USDT | below_1h_threshold | +0.94% | +1.32% |
+| XLM/USDT:USDT | below_1h_threshold | +3.53% | +4.05% |
+| H/USDT:USDT | below_1h_threshold | +2.70% | +3.22% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.94% | +2.46% |
+| FUTUSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.60% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +1.57% |
 
 ## 5. 次に見るべき不足
 
