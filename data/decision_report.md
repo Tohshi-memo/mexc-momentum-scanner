@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T19:01:00.178777+00:00
+- generated_at: 2026-05-28T19:05:53.879528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4986**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T19:00:57.968125+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=73578.6
+- 更新: 2026-05-28T19:05:51.709297+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=73537.8
 - Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +33.94% | $5,491,993.00 |
-| SWARMS/USDT:USDT | +11.11% | $1,259,724.92 |
-| XPL/USDT:USDT | +9.74% | $3,347,808.87 |
-| VVV/USDT:USDT | +8.86% | $9,496,161.79 |
-| ETHFI/USDT:USDT | +7.60% | $3,372,148.17 |
+| ALLO/USDT:USDT | +32.54% | $5,664,027.65 |
+| SWARMS/USDT:USDT | +10.69% | $1,265,961.40 |
+| VVV/USDT:USDT | +9.26% | $9,561,952.54 |
+| XPL/USDT:USDT | +9.16% | $3,360,302.96 |
+| AR/USDT:USDT | +7.87% | $1,932,074.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +0.12% | +0.18% |
-| VVV/USDT:USDT | below_1h_threshold | +0.10% | +0.17% |
-| BILL/USDT:USDT | below_1h_threshold | +0.10% | +0.16% |
-| DYDX/USDT:USDT | below_1h_threshold | +0.06% | +0.13% |
-| LYN/USDT:USDT | below_1h_threshold | +0.06% | +0.12% |
+| RIF/USDT:USDT | below_1h_threshold | +2.93% | +3.05% |
+| GUA/USDT:USDT | below_1h_threshold | +2.23% | +2.35% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.42% | +1.54% |
+| AR/USDT:USDT | below_1h_threshold | +0.72% | +0.84% |
+| VVV/USDT:USDT | below_1h_threshold | +0.49% | +0.61% |
 
 ## 5. 次に見るべき不足
 
