@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T14:40:47.991417+00:00
+- generated_at: 2026-05-28T14:45:37.446512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4968**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T14:40:45.019849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=72898.5
-- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
+- 更新: 2026-05-28T14:45:32.407454+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=72834.8
+- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +37.20% | $3,592,661.62 |
-| SNOWSTOCK/USDT:USDT | +33.36% | $11,449,605.75 |
-| ONDSSTOCK/USDT:USDT | +25.19% | $1,185,506.46 |
-| XLM/USDT:USDT | +24.10% | $231,682,849.81 |
-| PRL/USDT:USDT | +14.27% | $2,522,775.47 |
+| ESPORTS/USDT:USDT | +39.81% | $3,798,966.00 |
+| SNOWSTOCK/USDT:USDT | +33.16% | $11,461,321.26 |
+| XLM/USDT:USDT | +24.91% | $233,307,557.62 |
+| ONDSSTOCK/USDT:USDT | +23.94% | $1,185,806.22 |
+| PRL/USDT:USDT | +14.40% | $2,523,620.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRAM/USDT:USDT | below_1h_threshold | +2.97% | +3.09% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +3.04% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +3.00% |
-| LLYSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.92% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.57% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.56% | +3.77% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.45% | +3.66% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.42% |
+| BILL/USDT:USDT | below_1h_threshold | +2.72% | +2.93% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.54% |
 
 ## 5. 次に見るべき不足
 
