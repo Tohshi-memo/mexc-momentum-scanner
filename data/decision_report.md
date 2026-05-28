@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T11:44:34.189490+00:00
+- generated_at: 2026-05-28T11:50:09.304599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4959**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$98.12** / 初期 $100.00 (-1.88%)
-- 確定トレード: 69件 (TP 20 / SL 46 / EXP 3)
-- 最新: ASTEROID/USDT:USDT TP_HIT PnL +8.00% 残高後 $98.12
+- 残高: **$97.63** / 初期 $100.00 (-2.37%)
+- 確定トレード: 70件 (TP 20 / SL 47 / EXP 3)
+- 最新: PRL/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.63
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T11:44:31.822571+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=73413.5
+- 更新: 2026-05-28T11:50:06.977354+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=73441.4
 - Funnel: target 777 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
+- Strict後reject: 4h RSI 66.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +35.89% | $9,342,685.53 |
-| PRL/USDT:USDT | +20.72% | $1,931,958.45 |
-| ONDSSTOCK/USDT:USDT | +13.46% | $1,084,263.83 |
-| NBISSTOCK/USDT:USDT | +13.18% | $2,045,888.67 |
-| XLM/USDT:USDT | +10.25% | $126,723,607.43 |
+| SNOWSTOCK/USDT:USDT | +36.00% | $9,373,257.29 |
+| PRL/USDT:USDT | +22.47% | $2,014,894.25 |
+| ONDSSTOCK/USDT:USDT | +13.36% | $1,087,030.50 |
+| NBISSTOCK/USDT:USDT | +12.75% | $2,047,711.93 |
+| XLM/USDT:USDT | +10.29% | $127,880,347.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.18% |
-| FUTUSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.04% |
-| XLM/USDT:USDT | below_1h_threshold | +1.75% | +1.70% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.40% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.44% | +1.39% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.57% |
+| RIF/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
+| XLM/USDT:USDT | below_1h_threshold | +1.70% | +1.61% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.44% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.20% | +1.11% |
 
 ## 5. 次に見るべき不足
 
