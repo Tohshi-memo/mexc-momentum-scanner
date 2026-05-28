@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T18:37:32.646093+00:00
+- generated_at: 2026-05-28T18:41:31.597254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4986**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T18:37:27.595245+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=73599.5
-- Funnel: target 773 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.1 >= 65=1
+- 更新: 2026-05-28T18:41:29.537646+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=73561.3
+- Funnel: target 773 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +29.13% | $4,621,999.54 |
-| XPL/USDT:USDT | +11.48% | $3,207,353.54 |
-| UB/USDT:USDT | +11.28% | $8,896,633.79 |
-| AR/USDT:USDT | +8.98% | $1,973,702.63 |
-| SWARMS/USDT:USDT | +7.69% | $1,255,297.28 |
+| ALLO/USDT:USDT | +30.03% | $4,723,003.12 |
+| XPL/USDT:USDT | +9.39% | $3,236,218.74 |
+| AR/USDT:USDT | +8.73% | $1,981,018.83 |
+| SWARMS/USDT:USDT | +8.72% | $1,257,550.54 |
+| ETHFI/USDT:USDT | +7.82% | $3,400,278.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +3.22% | +3.11% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.87% | +2.76% |
-| LIT/USDT:USDT | below_1h_threshold | +2.83% | +2.72% |
-| SWARMS/USDT:USDT | below_1h_threshold | +2.66% | +2.55% |
-| LAB/USDT:USDT | below_1h_threshold | +2.61% | +2.50% |
+| SWARMS/USDT:USDT | below_1h_threshold | +3.64% | +3.58% |
+| UB/USDT:USDT | below_1h_threshold | +3.62% | +3.56% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.95% | +2.89% |
+| LIT/USDT:USDT | below_1h_threshold | +2.81% | +2.75% |
+| BAT/USDT:USDT | below_1h_threshold | +2.33% | +2.28% |
 
 ## 5. 次に見るべき不足
 
