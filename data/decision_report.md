@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T07:43:45.472385+00:00
+- generated_at: 2026-05-28T07:49:31.984897+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4956**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T07:43:41.557624+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=73420.0
-- Funnel: target 777 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-05-28T07:49:27.223726+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=73383.2
+- Funnel: target 777 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNOWSTOCK/USDT:USDT | +34.44% | $8,050,043.08 |
-| NBISSTOCK/USDT:USDT | +13.59% | $1,742,457.18 |
-| BILL/USDT:USDT | +9.77% | $10,642,740.41 |
-| ASTEROID/USDT:USDT | +5.59% | $1,048,047.23 |
-| IRENSTOCK/USDT:USDT | +4.47% | $1,122,349.63 |
+| SNOWSTOCK/USDT:USDT | +33.88% | $8,061,329.37 |
+| NBISSTOCK/USDT:USDT | +13.55% | $1,764,258.74 |
+| BILL/USDT:USDT | +10.31% | $10,673,987.54 |
+| ASTEROID/USDT:USDT | +4.83% | $1,049,970.33 |
+| IRENSTOCK/USDT:USDT | +4.46% | $1,122,695.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.82% | +3.48% |
-| LAB/USDT:USDT | below_1h_threshold | +3.16% | +2.82% |
-| RIF/USDT:USDT | below_1h_threshold | +2.44% | +2.10% |
-| FF/USDT:USDT | below_1h_threshold | +2.32% | +1.98% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.94% | +1.60% |
+| LAB/USDT:USDT | below_1h_threshold | +2.68% | +2.39% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.68% | +2.39% |
+| FF/USDT:USDT | below_1h_threshold | +2.52% | +2.23% |
+| RIF/USDT:USDT | below_1h_threshold | +2.03% | +1.74% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.94% | +1.65% |
 
 ## 5. 次に見るべき不足
 
