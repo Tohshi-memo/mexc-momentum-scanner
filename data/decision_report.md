@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T19:49:36.230393+00:00
+- generated_at: 2026-05-28T19:54:36.691098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4989**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T19:49:33.790129+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=73474.9
+- 更新: 2026-05-28T19:54:34.175277+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=73409.4
 - Funnel: target 773 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +33.31% | $8,074,199.12 |
-| VVV/USDT:USDT | +10.39% | $10,150,261.24 |
-| XPL/USDT:USDT | +9.16% | $3,700,336.76 |
-| AR/USDT:USDT | +8.73% | $2,008,536.42 |
-| GUA/USDT:USDT | +7.63% | $23,044,557.50 |
+| ALLO/USDT:USDT | +29.62% | $8,338,610.49 |
+| VVV/USDT:USDT | +10.31% | $10,198,734.78 |
+| XPL/USDT:USDT | +8.58% | $3,723,572.16 |
+| AR/USDT:USDT | +8.45% | $2,010,389.37 |
+| AIGENSYN/USDT:USDT | +7.34% | $1,238,280.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +1.86% | +2.07% |
-| AR/USDT:USDT | below_1h_threshold | +1.53% | +1.74% |
-| VVV/USDT:USDT | below_1h_threshold | +1.51% | +1.71% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.56% |
-| QNT/USDT:USDT | below_1h_threshold | +1.06% | +1.26% |
+| RIF/USDT:USDT | below_1h_threshold | +1.99% | +2.28% |
+| VVV/USDT:USDT | below_1h_threshold | +1.36% | +1.66% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.35% | +1.65% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.35% | +1.65% |
+| AR/USDT:USDT | below_1h_threshold | +1.26% | +1.56% |
 
 ## 5. 次に見るべき不足
 
