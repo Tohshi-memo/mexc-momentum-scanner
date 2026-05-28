@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-28T14:45:37.446512+00:00
+- generated_at: 2026-05-28T14:50:18.155733+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4968**
 
@@ -54,32 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-28T14:45:32.407454+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=72834.8
-- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 2
+- 更新: 2026-05-28T14:50:10.941096+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=72771.0
+- Funnel: target 776 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +39.81% | $3,798,966.00 |
-| SNOWSTOCK/USDT:USDT | +33.16% | $11,461,321.26 |
-| XLM/USDT:USDT | +24.91% | $233,307,557.62 |
-| ONDSSTOCK/USDT:USDT | +23.94% | $1,185,806.22 |
-| PRL/USDT:USDT | +14.40% | $2,523,620.80 |
+| SNOWSTOCK/USDT:USDT | +32.59% | $11,488,133.06 |
+| ESPORTS/USDT:USDT | +31.75% | $4,054,100.94 |
+| XLM/USDT:USDT | +24.02% | $235,460,763.35 |
+| ONDSSTOCK/USDT:USDT | +22.11% | $1,186,162.17 |
+| PRL/USDT:USDT | +14.58% | $2,525,586.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.56% | +3.77% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.45% | +3.66% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.42% |
-| BILL/USDT:USDT | below_1h_threshold | +2.72% | +2.93% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.54% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.17% | +3.47% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.05% | +3.35% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +3.12% |
+| MYX/USDT:USDT | below_1h_threshold | +2.38% | +2.68% |
+| BILL/USDT:USDT | below_1h_threshold | +2.33% | +2.63% |
 
 ## 5. 次に見るべき不足
 
