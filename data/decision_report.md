@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T02:39:38.639995+00:00
+- generated_at: 2026-05-29T02:44:41.320937+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5000**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T02:39:35.941053+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=73434.3
-- Funnel: target 776 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.9 >= 65=1
+- 更新: 2026-05-29T02:44:38.509268+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=73304.2
+- Funnel: target 776 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.5 >= 65=1, 4h RSI 80.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +76.65% | $27,236,682.06 |
-| DELLSTOCK/USDT:USDT | +33.91% | $7,393,604.06 |
-| CLO/USDT:USDT | +21.28% | $1,241,684.60 |
-| AR/USDT:USDT | +15.35% | $1,990,969.85 |
-| RIF/USDT:USDT | +13.84% | $1,180,468.04 |
+| ALLO/USDT:USDT | +72.02% | $27,565,119.62 |
+| DELLSTOCK/USDT:USDT | +34.24% | $7,403,092.14 |
+| CLO/USDT:USDT | +22.00% | $1,242,165.95 |
+| AR/USDT:USDT | +14.34% | $2,001,321.46 |
+| RIF/USDT:USDT | +14.21% | $1,199,223.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAT/USDT:USDT | below_1h_threshold | +4.24% | +4.41% |
-| DYDX/USDT:USDT | below_1h_threshold | +3.24% | +3.41% |
-| RIF/USDT:USDT | below_1h_threshold | +3.05% | +3.22% |
-| JCT/USDT:USDT | below_1h_threshold | +2.40% | +2.57% |
-| GUA/USDT:USDT | below_1h_threshold | +2.08% | +2.25% |
+| RIF/USDT:USDT | below_1h_threshold | +3.43% | +3.77% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.32% | +2.67% |
+| GUA/USDT:USDT | below_1h_threshold | +2.32% | +2.67% |
+| QNT/USDT:USDT | below_1h_threshold | +1.57% | +1.91% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.70% |
 
 ## 5. 次に見るべき不足
 
