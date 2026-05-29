@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T11:59:50.103637+00:00
+- generated_at: 2026-05-29T12:03:41.880796+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5045**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T11:59:47.366865+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=73445.0
-- Funnel: target 777 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1, 4h RSI 76.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-29T12:03:40.175391+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=73424.1
+- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +147.97% | $97,460,317.44 |
-| ID/USDT:USDT | +37.41% | $1,555,161.94 |
-| DELLSTOCK/USDT:USDT | +31.50% | $9,821,646.44 |
-| LAB/USDT:USDT | +30.17% | $81,956,856.98 |
-| CTR/USDT:USDT | +19.83% | $1,537,387.35 |
+| ALLO/USDT:USDT | +147.61% | $97,687,072.26 |
+| ID/USDT:USDT | +39.97% | $1,581,624.19 |
+| LAB/USDT:USDT | +31.94% | $81,249,946.20 |
+| DELLSTOCK/USDT:USDT | +29.55% | $9,817,418.02 |
+| CTR/USDT:USDT | +20.86% | $1,493,312.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.51% | +1.72% |
-| UB/USDT:USDT | below_1h_threshold | +1.26% | +1.48% |
-| RIF/USDT:USDT | below_1h_threshold | +1.24% | +1.46% |
-| CTR/USDT:USDT | below_1h_threshold | +0.87% | +1.08% |
-| NOWSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.72% |
+| ID/USDT:USDT | below_1h_threshold | +2.31% | +2.35% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.44% |
+| NIL/USDT:USDT | below_1h_threshold | +1.23% | +1.26% |
+| LAB/USDT:USDT | below_1h_threshold | +1.09% | +1.12% |
+| GUA/USDT:USDT | below_1h_threshold | +0.70% | +0.74% |
 
 ## 5. 次に見るべき不足
 
