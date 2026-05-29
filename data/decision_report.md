@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T22:44:49.328282+00:00
+- generated_at: 2026-05-29T22:49:41.189090+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5073**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T22:44:44.761307+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=73414.5
+- 更新: 2026-05-29T22:49:36.574649+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=73468.3
 - Funnel: target 773 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +28.63% | $1,017,337.02 |
-| BASED/USDT:USDT | +20.09% | $2,127,881.16 |
-| LAB/USDT:USDT | +16.48% | $124,407,078.34 |
-| XLM/USDT:USDT | +13.94% | $370,735,502.59 |
-| GRASS/USDT:USDT | +6.15% | $4,273,077.98 |
+| OL/USDT:USDT | +28.89% | $1,040,779.97 |
+| BASED/USDT:USDT | +19.19% | $2,160,739.93 |
+| LAB/USDT:USDT | +16.48% | $124,918,563.83 |
+| XLM/USDT:USDT | +15.31% | $373,240,376.88 |
+| GRASS/USDT:USDT | +6.50% | $4,282,101.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +3.68% | +3.64% |
-| OL/USDT:USDT | below_1h_threshold | +3.43% | +3.39% |
-| LAB/USDT:USDT | below_1h_threshold | +3.43% | +3.39% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.10% |
-| VVV/USDT:USDT | below_1h_threshold | +2.31% | +2.27% |
+| OL/USDT:USDT | below_1h_threshold | +3.63% | +3.52% |
+| LAB/USDT:USDT | below_1h_threshold | +3.59% | +3.48% |
+| XLM/USDT:USDT | below_1h_threshold | +3.24% | +3.13% |
+| BASED/USDT:USDT | below_1h_threshold | +2.90% | +2.78% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.40% |
 
 ## 5. 次に見るべき不足
 
