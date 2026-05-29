@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T04:00:17.424123+00:00
+- generated_at: 2026-05-29T04:05:06.592549+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5003**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T04:00:14.767945+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=73269.2
-- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 88.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-29T04:05:04.414996+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=73343.7
+- Funnel: target 777 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +76.75% | $30,639,943.79 |
-| CLO/USDT:USDT | +34.00% | $1,359,399.11 |
-| DELLSTOCK/USDT:USDT | +33.69% | $7,525,951.67 |
-| AR/USDT:USDT | +13.85% | $1,950,250.25 |
-| XPL/USDT:USDT | +11.94% | $4,372,842.64 |
+| ALLO/USDT:USDT | +75.46% | $30,811,826.10 |
+| DELLSTOCK/USDT:USDT | +33.79% | $7,531,570.25 |
+| CLO/USDT:USDT | +33.00% | $1,344,663.22 |
+| AR/USDT:USDT | +13.23% | $1,725,482.65 |
+| XPL/USDT:USDT | +11.71% | $4,271,561.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +2.82% | +2.73% |
-| SWARMS/USDT:USDT | below_1h_threshold | +1.93% | +1.84% |
-| ZBCN/USDT:USDT | below_1h_threshold | +1.72% | +1.63% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.67% | +1.58% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.56% | +1.47% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.34% | +2.24% |
+| BSB/USDT:USDT | below_1h_threshold | +1.53% | +1.43% |
+| SWARMS/USDT:USDT | below_1h_threshold | +1.47% | +1.37% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.99% | +0.89% |
+| VVV/USDT:USDT | below_1h_threshold | +0.79% | +0.69% |
 
 ## 5. 次に見るべき不足
 
