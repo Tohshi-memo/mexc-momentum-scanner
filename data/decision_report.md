@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T06:39:41.494695+00:00
+- generated_at: 2026-05-29T06:44:41.790809+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5020**
 
@@ -54,10 +54,10 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T06:39:36.066644+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=73649.4
-- Funnel: target 777 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-29T06:44:39.313288+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=73669.1
+- Funnel: target 777 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 96.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +124.08% | $46,014,229.64 |
-| DELLSTOCK/USDT:USDT | +35.67% | $8,387,233.75 |
-| CTR/USDT:USDT | +32.64% | $1,270,310.77 |
-| CLO/USDT:USDT | +21.00% | $1,621,979.43 |
-| AIGENSYN/USDT:USDT | +20.48% | $1,300,633.14 |
+| ALLO/USDT:USDT | +123.17% | $46,880,997.88 |
+| CTR/USDT:USDT | +36.70% | $1,275,827.83 |
+| DELLSTOCK/USDT:USDT | +36.22% | $8,400,683.29 |
+| CLO/USDT:USDT | +23.28% | $1,629,188.19 |
+| AIGENSYN/USDT:USDT | +21.53% | $1,322,428.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.73% | +3.75% |
-| INJ/USDT:USDT | below_1h_threshold | +2.86% | +2.88% |
-| LIT/USDT:USDT | below_1h_threshold | +2.56% | +2.58% |
-| WLD/USDT:USDT | below_1h_threshold | +2.42% | +2.44% |
-| JTO/USDT:USDT | below_1h_threshold | +2.37% | +2.39% |
+| H/USDT:USDT | below_1h_threshold | +4.73% | +4.73% |
+| UB/USDT:USDT | below_1h_threshold | +4.29% | +4.28% |
+| INJ/USDT:USDT | below_1h_threshold | +3.28% | +3.27% |
+| LIT/USDT:USDT | below_1h_threshold | +3.27% | +3.26% |
+| WLD/USDT:USDT | below_1h_threshold | +2.94% | +2.93% |
 
 ## 5. 次に見るべき不足
 
