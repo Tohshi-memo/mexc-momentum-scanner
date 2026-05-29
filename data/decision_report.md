@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T01:19:08.391758+00:00
+- generated_at: 2026-05-29T01:23:43.575024+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **4999**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T01:19:06.540577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=73772.2
+- 更新: 2026-05-29T01:23:41.837959+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=73592.9
 - Funnel: target 774 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +60.97% | $23,370,506.16 |
-| DELLSTOCK/USDT:USDT | +33.21% | $7,204,411.85 |
-| CLO/USDT:USDT | +22.71% | $1,229,158.28 |
-| AR/USDT:USDT | +14.38% | $2,015,006.63 |
-| XPL/USDT:USDT | +10.55% | $4,219,591.32 |
+| ALLO/USDT:USDT | +59.05% | $23,500,745.71 |
+| DELLSTOCK/USDT:USDT | +34.12% | $7,227,996.26 |
+| CLO/USDT:USDT | +21.57% | $1,236,841.09 |
+| AR/USDT:USDT | +13.13% | $2,020,484.17 |
+| XPL/USDT:USDT | +9.74% | $4,244,926.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.15% | +2.04% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.79% | +1.68% |
-| CLO/USDT:USDT | below_1h_threshold | +0.94% | +0.83% |
-| KAS/USDT:USDT | below_1h_threshold | +0.80% | +0.69% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.66% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.31% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.04% | +1.18% |
+| WLD/USDT:USDT | below_1h_threshold | +0.80% | +0.93% |
+| KAS/USDT:USDT | below_1h_threshold | +0.77% | +0.90% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.35% | +0.49% |
 
 ## 5. 次に見るべき不足
 
