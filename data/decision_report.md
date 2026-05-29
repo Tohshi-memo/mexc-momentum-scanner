@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T07:14:49.876656+00:00
+- generated_at: 2026-05-29T07:19:46.461179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5021**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T07:14:47.385260+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=73786.6
-- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-29T07:19:44.061180+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=73764.1
+- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +131.14% | $50,686,845.65 |
-| CTR/USDT:USDT | +34.44% | $1,330,019.48 |
-| DELLSTOCK/USDT:USDT | +34.15% | $8,591,410.43 |
-| AIGENSYN/USDT:USDT | +28.16% | $1,418,625.78 |
-| CLO/USDT:USDT | +17.28% | $1,667,933.97 |
+| ALLO/USDT:USDT | +139.71% | $52,173,957.90 |
+| CTR/USDT:USDT | +40.05% | $1,334,775.76 |
+| DELLSTOCK/USDT:USDT | +34.49% | $8,600,792.28 |
+| AIGENSYN/USDT:USDT | +29.29% | $1,435,103.34 |
+| DYDX/USDT:USDT | +17.48% | $1,789,057.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.10% | +4.05% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.99% | +3.94% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +3.91% | +3.86% |
-| JTO/USDT:USDT | below_1h_threshold | +3.55% | +3.50% |
-| CLO/USDT:USDT | below_1h_threshold | +3.02% | +2.97% |
+| LAB/USDT:USDT | below_1h_threshold | +4.93% | +4.92% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.88% | +4.87% |
+| CTR/USDT:USDT | below_1h_threshold | +4.42% | +4.40% |
+| XLM/USDT:USDT | below_1h_threshold | +3.35% | +3.34% |
+| JTO/USDT:USDT | below_1h_threshold | +3.22% | +3.20% |
 
 ## 5. 次に見るべき不足
 
