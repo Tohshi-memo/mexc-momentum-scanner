@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-29T07:50:38.422318+00:00
+- generated_at: 2026-05-29T07:55:22.099520+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5026**
+- closed shadow trades: **5027**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5026, expectancy=-0.07%
-- 直近20件 MARKET基準: n=20, expectancy=-1.00%
+- 全期間 MARKET基準: n=5027, expectancy=-0.07%
+- 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.00% | **-1.00%** |
+| MARKET | 20/20 | 100.0% | -0.40% | **-0.40%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | ASK_LONG | 20/20 | 100.0% | +1.63% | **+1.63%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.66% | **+1.41%** |
-| LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.33% | **+1.28%** |
 | LIMIT_10PCT_LONG | 4/20 | 20.0% | +5.11% | **+1.02%** |
-| LIMIT_4PCT_LONG | 10/20 | 50.0% | +2.00% | **+1.00%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
+| LIMIT_3PCT_LONG | 11/20 | 55.0% | +1.31% | **+0.72%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$125.68** / 初期 $100.00 (+25.68%)
-- 確定: 740件 (Win 175 / Loss 226 / Flat 339) / skip 847件
+- 確定: 740件 (Win 175 / Loss 226 / Flat 339) / skip 848件
 - 成長率目線: 平均log +0.000309 / 幾何平均 +0.031% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: CTR/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $125.68
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T07:50:35.282986+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=73360.0
-- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-05-29T07:55:17.255613+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=73355.8
+- Funnel: target 777 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.5 >= 65=1, 4h RSI 68.4 >= 65=1
+- Strict後reject: 4h RSI 97.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +168.60% | $60,822,332.32 |
-| DELLSTOCK/USDT:USDT | +35.03% | $8,681,595.50 |
-| AIGENSYN/USDT:USDT | +31.32% | $1,634,432.69 |
-| CTR/USDT:USDT | +27.04% | $1,391,069.04 |
-| CLO/USDT:USDT | +17.57% | $1,683,072.24 |
+| ALLO/USDT:USDT | +166.25% | $61,852,368.79 |
+| DELLSTOCK/USDT:USDT | +34.36% | $8,697,633.65 |
+| CTR/USDT:USDT | +29.29% | $1,394,538.95 |
+| AIGENSYN/USDT:USDT | +26.76% | $1,674,439.37 |
+| QNTSTOCK/USDT:USDT | +20.17% | $1,121,033.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.37% | +4.90% |
-| GUA/USDT:USDT | below_1h_threshold | +3.99% | +4.52% |
-| LAB/USDT:USDT | below_1h_threshold | +3.67% | +4.20% |
-| CLO/USDT:USDT | below_1h_threshold | +3.39% | +3.92% |
-| JCT/USDT:USDT | below_1h_threshold | +2.19% | +2.72% |
+| LAB/USDT:USDT | below_1h_threshold | +4.23% | +4.76% |
+| CLO/USDT:USDT | below_1h_threshold | +4.15% | +4.68% |
+| GUA/USDT:USDT | below_1h_threshold | +3.02% | +3.56% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.78% | +3.31% |
+| WLD/USDT:USDT | below_1h_threshold | +1.89% | +2.43% |
 
 ## 5. 次に見るべき不足
 
