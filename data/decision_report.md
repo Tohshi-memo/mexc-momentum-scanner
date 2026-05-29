@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T03:49:37.860515+00:00
+- generated_at: 2026-05-29T03:54:35.870095+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5003**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T03:49:35.340343+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=73318.8
-- Funnel: target 776 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-29T03:54:33.686253+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=73265.7
+- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +77.88% | $30,308,523.46 |
-| DELLSTOCK/USDT:USDT | +33.51% | $7,513,142.51 |
-| CLO/USDT:USDT | +32.42% | $1,323,865.42 |
-| AR/USDT:USDT | +14.14% | $1,939,591.96 |
-| RIF/USDT:USDT | +11.93% | $1,334,768.77 |
+| ALLO/USDT:USDT | +76.99% | $30,469,296.15 |
+| DELLSTOCK/USDT:USDT | +33.45% | $7,518,605.07 |
+| CLO/USDT:USDT | +30.28% | $1,338,638.57 |
+| AR/USDT:USDT | +13.85% | $1,949,896.63 |
+| XPL/USDT:USDT | +11.13% | $4,372,381.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +4.50% | +4.34% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.52% | +3.36% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.35% | +2.19% |
-| HBAR/USDT:USDT | below_1h_threshold | +1.90% | +1.74% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.75% | +1.60% |
+| XLM/USDT:USDT | below_1h_threshold | +4.51% | +4.43% |
+| CLO/USDT:USDT | below_1h_threshold | +4.22% | +4.13% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.96% | +2.88% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.80% | +2.71% |
+| CFX/USDT:USDT | below_1h_threshold | +2.13% | +2.04% |
 
 ## 5. 次に見るべき不足
 
