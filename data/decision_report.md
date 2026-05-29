@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T18:55:22.827460+00:00
+- generated_at: 2026-05-29T19:00:18.124118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5067**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T18:55:20.442517+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=73286.2
-- Funnel: target 774 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.5 >= 65=1
+- 更新: 2026-05-29T19:00:15.412828+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.83% price=73342.2
+- Funnel: target 774 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.6 >= 65=1, 4h RSI 73.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +21.22% | $7,560,933.76 |
-| GUA/USDT:USDT | +8.26% | $6,137,591.35 |
-| GRASS/USDT:USDT | +8.06% | $3,616,262.44 |
-| LAB/USDT:USDT | +5.91% | $104,504,212.15 |
-| FET/USDT:USDT | +3.76% | $31,062,930.03 |
+| HEI/USDT:USDT | +26.78% | $7,687,349.43 |
+| GUA/USDT:USDT | +11.07% | $6,199,366.73 |
+| GRASS/USDT:USDT | +8.61% | $3,637,224.31 |
+| LAB/USDT:USDT | +6.49% | $104,760,004.59 |
+| BAT/USDT:USDT | +3.62% | $1,926,992.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +2.50% | +3.40% |
-| ZBCN/USDT:USDT | below_1h_threshold | +2.17% | +3.08% |
-| HEI/USDT:USDT | below_1h_threshold | +1.95% | +2.86% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +2.56% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +2.53% |
+| XLM/USDT:USDT | below_1h_threshold | +1.92% | +2.75% |
+| ZBCN/USDT:USDT | below_1h_threshold | +1.92% | +2.75% |
+| JTO/USDT:USDT | below_1h_threshold | +1.90% | +2.73% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +2.41% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +1.74% |
 
 ## 5. 次に見るべき不足
 
