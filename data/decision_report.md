@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T09:54:30.428535+00:00
+- generated_at: 2026-05-29T09:59:40.320645+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5036**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T09:54:27.991751+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=73700.0
-- Funnel: target 777 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1
+- 更新: 2026-05-29T09:59:37.599049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=73707.8
+- Funnel: target 777 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +159.54% | $82,164,560.29 |
-| DELLSTOCK/USDT:USDT | +33.08% | $9,218,845.76 |
-| IO/USDT:USDT | +30.00% | $3,083,167.41 |
-| CTR/USDT:USDT | +24.59% | $1,474,850.75 |
-| CLO/USDT:USDT | +18.28% | $1,748,118.88 |
+| ALLO/USDT:USDT | +158.09% | $82,545,200.56 |
+| IO/USDT:USDT | +37.36% | $3,167,307.95 |
+| DELLSTOCK/USDT:USDT | +33.33% | $9,226,134.69 |
+| CTR/USDT:USDT | +24.21% | $1,488,566.41 |
+| DYDX/USDT:USDT | +18.01% | $1,993,275.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +4.53% | +4.43% |
-| NIL/USDT:USDT | below_1h_threshold | +3.59% | +3.48% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.50% | +2.40% |
-| STRK/USDT:USDT | below_1h_threshold | +2.01% | +1.91% |
-| AR/USDT:USDT | below_1h_threshold | +1.80% | +1.70% |
+| JTO/USDT:USDT | below_1h_threshold | +3.61% | +3.49% |
+| AR/USDT:USDT | below_1h_threshold | +3.13% | +3.02% |
+| LAB/USDT:USDT | below_1h_threshold | +2.53% | +2.42% |
+| STRK/USDT:USDT | below_1h_threshold | +2.17% | +2.06% |
+| XMR/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
 
 ## 5. 次に見るべき不足
 
