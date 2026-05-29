@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T07:19:46.461179+00:00
+- generated_at: 2026-05-29T07:24:34.096874+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5021**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T07:19:44.061180+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=73764.1
+- 更新: 2026-05-29T07:24:31.637559+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=73782.1
 - Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 97.0 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +139.71% | $52,173,957.90 |
-| CTR/USDT:USDT | +40.05% | $1,334,775.76 |
-| DELLSTOCK/USDT:USDT | +34.49% | $8,600,792.28 |
-| AIGENSYN/USDT:USDT | +29.29% | $1,435,103.34 |
-| DYDX/USDT:USDT | +17.48% | $1,789,057.40 |
+| ALLO/USDT:USDT | +142.59% | $52,711,343.08 |
+| CTR/USDT:USDT | +38.76% | $1,340,241.02 |
+| DELLSTOCK/USDT:USDT | +34.52% | $8,607,245.65 |
+| AIGENSYN/USDT:USDT | +27.93% | $1,449,634.64 |
+| DYDX/USDT:USDT | +17.88% | $1,800,177.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.93% | +4.92% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +4.88% | +4.87% |
-| CTR/USDT:USDT | below_1h_threshold | +4.42% | +4.40% |
-| XLM/USDT:USDT | below_1h_threshold | +3.35% | +3.34% |
-| JTO/USDT:USDT | below_1h_threshold | +3.22% | +3.20% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.72% | +3.68% |
+| WLD/USDT:USDT | below_1h_threshold | +3.68% | +3.64% |
+| LAB/USDT:USDT | below_1h_threshold | +3.56% | +3.52% |
+| CTR/USDT:USDT | below_1h_threshold | +3.46% | +3.42% |
+| XLM/USDT:USDT | below_1h_threshold | +3.20% | +3.16% |
 
 ## 5. 次に見るべき不足
 
