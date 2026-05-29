@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T10:19:11.154144+00:00
+- generated_at: 2026-05-29T10:24:48.322997+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5036**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T10:19:09.191094+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=73623.8
+- 更新: 2026-05-29T10:24:45.914865+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=73588.0
 - Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1
+- Strict後reject: 4h RSI 71.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +162.14% | $84,718,342.01 |
-| DELLSTOCK/USDT:USDT | +33.21% | $9,221,855.39 |
-| IO/USDT:USDT | +28.75% | $3,453,347.75 |
-| CTR/USDT:USDT | +20.09% | $1,497,269.79 |
-| LAB/USDT:USDT | +18.23% | $61,629,545.65 |
+| ALLO/USDT:USDT | +161.34% | $85,181,916.42 |
+| DELLSTOCK/USDT:USDT | +33.30% | $9,242,369.80 |
+| IO/USDT:USDT | +25.88% | $3,518,554.12 |
+| CTR/USDT:USDT | +19.18% | $1,498,233.85 |
+| LAB/USDT:USDT | +18.74% | $62,293,582.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +1.89% | +2.01% |
-| TRIA/USDT:USDT | below_1h_threshold | +0.98% | +1.09% |
-| XLM/USDT:USDT | below_1h_threshold | +0.77% | +0.88% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.72% | +0.84% |
-| UB/USDT:USDT | below_1h_threshold | +0.61% | +0.72% |
+| XLM/USDT:USDT | below_1h_threshold | +1.69% | +1.85% |
+| UB/USDT:USDT | below_1h_threshold | +1.61% | +1.77% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.43% | +1.59% |
+| NIL/USDT:USDT | below_1h_threshold | +1.37% | +1.53% |
+| NOWSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.12% |
 
 ## 5. 次に見るべき不足
 
