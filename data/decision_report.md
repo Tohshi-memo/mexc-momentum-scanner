@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T15:54:58.516082+00:00
+- generated_at: 2026-05-29T16:00:26.347438+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5057**
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T15:54:56.345844+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.95% price=73759.4
-- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-29T16:00:19.206870+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=73778.1
+- Funnel: target 777 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +145.83% | $127,042,559.97 |
-| HEI/USDT:USDT | +87.05% | $4,104,741.98 |
-| ID/USDT:USDT | +44.36% | $3,266,135.73 |
-| LAB/USDT:USDT | +25.82% | $96,304,770.05 |
-| DELLSTOCK/USDT:USDT | +24.43% | $11,216,386.86 |
+| GENIUS/USDT:USDT | +9.62% | $3,088,214.86 |
+| ZBCN/USDT:USDT | +6.21% | $1,165,548.46 |
+| LIT/USDT:USDT | +6.09% | $3,000,729.81 |
+| USELESS/USDT:USDT | +5.31% | $1,110,439.81 |
+| AR/USDT:USDT | +5.18% | $2,221,372.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_relative_strength | +5.38% | +4.43% |
-| ZBCN/USDT:USDT | below_relative_strength | +5.16% | +4.21% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.98% | +4.03% |
-| AR/USDT:USDT | below_1h_threshold | +4.80% | +3.85% |
-| INJ/USDT:USDT | below_1h_threshold | +4.26% | +3.31% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.47% | +4.47% |
+| APT/USDT:USDT | below_1h_threshold | +3.82% | +3.82% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.79% | +3.79% |
+| FET/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
+| ALGO/USDT:USDT | below_1h_threshold | +3.65% | +3.65% |
 
 ## 5. 次に見るべき不足
 
