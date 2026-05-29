@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T08:34:34.946811+00:00
+- generated_at: 2026-05-29T08:39:36.366398+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5030**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T08:34:32.570085+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=73708.8
-- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-29T08:39:33.565486+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.39% price=73771.1
+- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +155.14% | $69,749,619.14 |
-| DELLSTOCK/USDT:USDT | +35.13% | $8,864,516.83 |
-| CTR/USDT:USDT | +30.77% | $1,433,320.67 |
-| AIGENSYN/USDT:USDT | +20.14% | $1,824,050.23 |
-| CLO/USDT:USDT | +19.28% | $1,686,977.87 |
+| ALLO/USDT:USDT | +142.96% | $70,514,910.51 |
+| DELLSTOCK/USDT:USDT | +34.76% | $8,889,226.02 |
+| CTR/USDT:USDT | +30.65% | $1,436,735.05 |
+| AIGENSYN/USDT:USDT | +20.70% | $1,830,927.78 |
+| CLO/USDT:USDT | +20.42% | $1,700,986.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +4.65% | +4.35% |
-| NIL/USDT:USDT | below_1h_threshold | +3.96% | +3.66% |
-| AR/USDT:USDT | below_1h_threshold | +1.87% | +1.57% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.80% | +1.50% |
-| CLO/USDT:USDT | below_1h_threshold | +1.71% | +1.40% |
+| NIL/USDT:USDT | below_1h_threshold | +3.61% | +3.22% |
+| CLO/USDT:USDT | below_1h_threshold | +2.68% | +2.29% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.14% | +1.76% |
+| AR/USDT:USDT | below_1h_threshold | +2.13% | +1.74% |
+| NOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.17% |
 
 ## 5. 次に見るべき不足
 
