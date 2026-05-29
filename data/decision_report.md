@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T09:49:53.626218+00:00
+- generated_at: 2026-05-29T09:54:30.428535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5036**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T09:49:51.212117+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=73737.7
-- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-05-29T09:54:27.991751+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=73700.0
+- Funnel: target 777 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1
+- Strict後reject: 4h RSI 75.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +157.13% | $81,594,390.20 |
-| DELLSTOCK/USDT:USDT | +33.21% | $9,198,103.17 |
-| IO/USDT:USDT | +27.88% | $3,011,187.69 |
-| CTR/USDT:USDT | +27.43% | $1,465,288.41 |
-| CLO/USDT:USDT | +17.85% | $1,747,449.93 |
+| ALLO/USDT:USDT | +159.54% | $82,164,560.29 |
+| DELLSTOCK/USDT:USDT | +33.08% | $9,218,845.76 |
+| IO/USDT:USDT | +30.00% | $3,083,167.41 |
+| CTR/USDT:USDT | +24.59% | $1,474,850.75 |
+| CLO/USDT:USDT | +18.28% | $1,748,118.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.86% | +2.70% |
-| JTO/USDT:USDT | below_1h_threshold | +2.21% | +2.05% |
-| UB/USDT:USDT | below_1h_threshold | +2.03% | +1.88% |
-| STRK/USDT:USDT | below_1h_threshold | +2.01% | +1.86% |
-| AR/USDT:USDT | below_1h_threshold | +1.72% | +1.56% |
+| JTO/USDT:USDT | below_1h_threshold | +4.53% | +4.43% |
+| NIL/USDT:USDT | below_1h_threshold | +3.59% | +3.48% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.50% | +2.40% |
+| STRK/USDT:USDT | below_1h_threshold | +2.01% | +1.91% |
+| AR/USDT:USDT | below_1h_threshold | +1.80% | +1.70% |
 
 ## 5. 次に見るべき不足
 
