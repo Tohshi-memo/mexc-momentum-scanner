@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T18:11:33.657430+00:00
+- generated_at: 2026-05-29T18:16:10.622424+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5065**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T18:11:31.374496+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=74000.8
+- 更新: 2026-05-29T18:16:08.283600+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=73971.3
 - Funnel: target 774 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +20.38% | $7,251,671.65 |
-| GRASS/USDT:USDT | +18.43% | $2,790,920.92 |
-| GUA/USDT:USDT | +11.36% | $5,816,831.15 |
-| FET/USDT:USDT | +5.40% | $27,466,891.84 |
-| BAT/USDT:USDT | +4.60% | $1,840,967.48 |
+| HEI/USDT:USDT | +20.57% | $7,273,802.01 |
+| GRASS/USDT:USDT | +16.36% | $2,909,222.27 |
+| GUA/USDT:USDT | +12.47% | $5,841,844.49 |
+| FET/USDT:USDT | +5.24% | $27,634,447.51 |
+| BAT/USDT:USDT | +4.77% | $1,842,083.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.05% | +1.98% |
-| LAB/USDT:USDT | below_1h_threshold | +1.85% | +1.79% |
-| XLM/USDT:USDT | below_1h_threshold | +1.61% | +1.55% |
-| HEI/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.25% |
+| LAB/USDT:USDT | below_1h_threshold | +2.30% | +2.28% |
+| HEI/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
+| ZBCN/USDT:USDT | below_1h_threshold | +1.30% | +1.28% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.26% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.02% |
 
 ## 5. 次に見るべき不足
 
