@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T23:44:52.234305+00:00
+- generated_at: 2026-05-29T23:50:14.760529+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5078**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T23:44:49.745331+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=73378.0
+- 更新: 2026-05-29T23:50:12.664149+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=73400.0
 - Funnel: target 773 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XLM/USDT:USDT | +20.52% | $391,745,465.34 |
-| OL/USDT:USDT | +16.33% | $1,416,970.44 |
-| BASED/USDT:USDT | +15.20% | $2,383,999.83 |
-| LAB/USDT:USDT | +13.59% | $128,245,175.97 |
-| XMR/USDT:USDT | +7.70% | $7,510,131.79 |
+| XLM/USDT:USDT | +21.67% | $395,166,818.86 |
+| BASED/USDT:USDT | +16.87% | $2,402,891.92 |
+| OL/USDT:USDT | +16.74% | $1,422,831.23 |
+| LAB/USDT:USDT | +13.76% | $128,574,006.50 |
+| XMR/USDT:USDT | +8.08% | $7,565,568.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.81% | +3.90% |
-| HBAR/USDT:USDT | below_1h_threshold | +3.15% | +3.24% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.58% | +2.67% |
-| BAT/USDT:USDT | below_1h_threshold | +1.70% | +1.80% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.41% | +1.50% |
+| HBAR/USDT:USDT | below_1h_threshold | +4.22% | +4.29% |
+| H/USDT:USDT | below_1h_threshold | +4.00% | +4.06% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +3.13% | +3.19% |
+| XLM/USDT:USDT | below_1h_threshold | +2.10% | +2.17% |
+| BAT/USDT:USDT | below_1h_threshold | +2.04% | +2.11% |
 
 ## 5. 次に見るべき不足
 
