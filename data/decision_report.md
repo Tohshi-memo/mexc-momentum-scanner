@@ -1,31 +1,31 @@
 # Decision Report
 
-- generated_at: 2026-05-29T10:29:51.204523+00:00
+- generated_at: 2026-05-29T10:34:56.684537+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5036**
+- closed shadow trades: **5037**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.88% / filled 20/20。**
-- 全期間 MARKET基準: n=5036, expectancy=-0.07%
-- 直近20件 MARKET基準: n=20, expectancy=+0.88%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.48% / filled 20/20。**
+- 全期間 MARKET基準: n=5037, expectancy=-0.06%
+- 直近20件 MARKET基準: n=20, expectancy=+1.48%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.88% | **+0.88%** |
+| MARKET | 20/20 | 100.0% | +1.48% | **+1.48%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +0.90% | **+0.90%** |
-| MARKET | 20/20 | 100.0% | +0.88% | **+0.88%** |
+| ASK | 20/20 | 100.0% | +1.50% | **+1.50%** |
+| MARKET | 20/20 | 100.0% | +1.48% | **+1.48%** |
+| LIMIT_3PCT | 12/20 | 60.0% | +0.27% | **+0.16%** |
 | LIMIT_5PCT | 6/20 | 30.0% | +0.13% | **+0.04%** |
 | LIMIT_FIB1618 | 2/20 | 10.0% | -0.14% | **-0.01%** |
-| LIMIT_4PCT | 11/20 | 55.0% | -0.36% | **-0.20%** |
 
 ### シャドウ上位 LONG
 
@@ -34,8 +34,8 @@
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | +6.07% | **+0.91%** |
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.78% | **+0.74%** |
 | LIMIT_9PCT_LONG | 5/20 | 25.0% | +2.84% | **+0.71%** |
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +1.25% | **+0.56%** |
 | ASK_LONG | 20/20 | 100.0% | +0.44% | **+0.44%** |
+| LIMIT_2PCT_LONG | 16/20 | 80.0% | +0.38% | **+0.30%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$125.68** / 初期 $100.00 (+25.68%)
-- 確定: 740件 (Win 175 / Loss 226 / Flat 339) / skip 857件
+- 確定: 740件 (Win 175 / Loss 226 / Flat 339) / skip 858件
 - 成長率目線: 平均log +0.000309 / 幾何平均 +0.031% per trade / maxDD +4.72%
 - 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: CTR/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $125.68
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T10:29:48.797839+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=73581.5
-- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
+- 更新: 2026-05-29T10:34:53.726192+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=73590.0
+- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 97.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +162.86% | $85,770,552.68 |
-| DELLSTOCK/USDT:USDT | +33.45% | $9,264,420.94 |
-| IO/USDT:USDT | +25.76% | $3,621,147.44 |
-| LAB/USDT:USDT | +21.19% | $62,944,599.66 |
-| CTR/USDT:USDT | +18.48% | $1,501,076.12 |
+| ALLO/USDT:USDT | +171.76% | $86,667,689.57 |
+| DELLSTOCK/USDT:USDT | +33.27% | $9,279,528.91 |
+| IO/USDT:USDT | +22.45% | $3,678,938.97 |
+| LAB/USDT:USDT | +19.62% | $63,894,754.13 |
+| CTR/USDT:USDT | +18.73% | $1,502,938.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.04% | +2.22% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.94% | +2.11% |
-| NIL/USDT:USDT | below_1h_threshold | +1.23% | +1.40% |
-| H/USDT:USDT | below_1h_threshold | +1.16% | +1.33% |
-| NOWSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.32% |
+| NIL/USDT:USDT | below_1h_threshold | +2.25% | +2.41% |
+| UB/USDT:USDT | below_1h_threshold | +1.96% | +2.12% |
+| H/USDT:USDT | below_1h_threshold | +1.33% | +1.49% |
+| NOWSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.27% |
+| GUA/USDT:USDT | below_1h_threshold | +0.82% | +0.98% |
 
 ## 5. 次に見るべき不足
 
