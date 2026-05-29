@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T03:54:35.870095+00:00
+- generated_at: 2026-05-29T04:00:17.424123+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5003**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T03:54:33.686253+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=73265.7
-- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-29T04:00:14.767945+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=73269.2
+- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 88.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +76.99% | $30,469,296.15 |
-| DELLSTOCK/USDT:USDT | +33.45% | $7,518,605.07 |
-| CLO/USDT:USDT | +30.28% | $1,338,638.57 |
-| AR/USDT:USDT | +13.85% | $1,949,896.63 |
-| XPL/USDT:USDT | +11.13% | $4,372,381.15 |
+| ALLO/USDT:USDT | +76.75% | $30,639,943.79 |
+| CLO/USDT:USDT | +34.00% | $1,359,399.11 |
+| DELLSTOCK/USDT:USDT | +33.69% | $7,525,951.67 |
+| AR/USDT:USDT | +13.85% | $1,950,250.25 |
+| XPL/USDT:USDT | +11.94% | $4,372,842.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +4.51% | +4.43% |
-| CLO/USDT:USDT | below_1h_threshold | +4.22% | +4.13% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.96% | +2.88% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.80% | +2.71% |
-| CFX/USDT:USDT | below_1h_threshold | +2.13% | +2.04% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.82% | +2.73% |
+| SWARMS/USDT:USDT | below_1h_threshold | +1.93% | +1.84% |
+| ZBCN/USDT:USDT | below_1h_threshold | +1.72% | +1.63% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.67% | +1.58% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.56% | +1.47% |
 
 ## 5. 次に見るべき不足
 
