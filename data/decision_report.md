@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-29T08:29:36.723501+00:00
+- generated_at: 2026-05-29T08:34:34.946811+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5030**
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-29T08:29:34.484313+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=73754.6
-- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-29T08:34:32.570085+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=73708.8
+- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +150.70% | $69,050,518.76 |
-| DELLSTOCK/USDT:USDT | +34.94% | $8,843,124.05 |
-| CTR/USDT:USDT | +30.26% | $1,431,207.35 |
-| CLO/USDT:USDT | +20.42% | $1,684,357.89 |
-| AIGENSYN/USDT:USDT | +20.29% | $1,810,935.49 |
+| ALLO/USDT:USDT | +155.14% | $69,749,619.14 |
+| DELLSTOCK/USDT:USDT | +35.13% | $8,864,516.83 |
+| CTR/USDT:USDT | +30.77% | $1,433,320.67 |
+| AIGENSYN/USDT:USDT | +20.14% | $1,824,050.23 |
+| CLO/USDT:USDT | +19.28% | $1,686,977.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.28% | +3.92% |
-| XLM/USDT:USDT | below_1h_threshold | +4.11% | +3.74% |
-| GUA/USDT:USDT | below_1h_threshold | +3.80% | +3.44% |
-| CLO/USDT:USDT | below_1h_threshold | +2.68% | +2.31% |
-| AR/USDT:USDT | below_1h_threshold | +2.13% | +1.77% |
+| XLM/USDT:USDT | below_1h_threshold | +4.65% | +4.35% |
+| NIL/USDT:USDT | below_1h_threshold | +3.96% | +3.66% |
+| AR/USDT:USDT | below_1h_threshold | +1.87% | +1.57% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.80% | +1.50% |
+| CLO/USDT:USDT | below_1h_threshold | +1.71% | +1.40% |
 
 ## 5. 次に見るべき不足
 
