@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T18:14:50.021312+00:00
+- generated_at: 2026-05-30T18:20:14.789594+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5145**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T18:14:47.789644+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=73984.1
+- 更新: 2026-05-30T18:20:12.619568+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=74026.1
 - Funnel: target 773 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAKE/USDT:USDT | +4.69% | $1,306,722.34 |
-| H/USDT:USDT | +3.54% | $10,464,232.52 |
-| BASED/USDT:USDT | +3.36% | $3,167,742.47 |
-| TONCOIN/USDT:USDT | +3.10% | $35,814,740.97 |
-| AR/USDT:USDT | +3.10% | $1,092,446.04 |
+| H/USDT:USDT | +5.35% | $10,556,833.91 |
+| LAB/USDT:USDT | +4.93% | $169,430,751.56 |
+| CAKE/USDT:USDT | +4.41% | $1,317,178.28 |
+| BASED/USDT:USDT | +4.11% | $3,175,487.94 |
+| AR/USDT:USDT | +3.53% | $1,104,532.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.14% | +1.13% |
-| AR/USDT:USDT | below_1h_threshold | +1.09% | +1.08% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.92% | +0.91% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.69% | +2.63% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| BASED/USDT:USDT | below_1h_threshold | +1.57% | +1.51% |
+| AR/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
+| SEI/USDT:USDT | below_1h_threshold | +1.21% | +1.15% |
 
 ## 5. 次に見るべき不足
 
