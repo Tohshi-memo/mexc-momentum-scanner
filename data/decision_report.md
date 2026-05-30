@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T03:19:41.763085+00:00
+- generated_at: 2026-05-30T03:24:39.372657+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5099**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T03:19:39.001831+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=73699.4
+- 更新: 2026-05-30T03:24:36.790178+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=73685.3
 - Funnel: target 773 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.8 >= 65=1
+- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +47.54% | $11,062,502.29 |
-| XLM/USDT:USDT | +32.51% | $450,337,270.65 |
-| LAB/USDT:USDT | +24.55% | $136,249,857.34 |
-| OL/USDT:USDT | +20.16% | $1,535,092.80 |
-| ID/USDT:USDT | +19.16% | $5,517,866.00 |
+| HEI/USDT:USDT | +53.01% | $11,189,741.26 |
+| XLM/USDT:USDT | +31.32% | $453,172,027.61 |
+| LAB/USDT:USDT | +21.98% | $137,133,243.22 |
+| ID/USDT:USDT | +20.12% | $5,570,105.31 |
+| OL/USDT:USDT | +18.80% | $1,537,979.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.23% | +3.30% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.90% | +1.96% |
-| BAT/USDT:USDT | below_1h_threshold | +0.59% | +0.65% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.61% |
-| OL/USDT:USDT | below_1h_threshold | +0.53% | +0.59% |
+| LAB/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.94% |
+| BAT/USDT:USDT | below_1h_threshold | +0.59% | +0.67% |
+| VET/USDT:USDT | below_1h_threshold | +0.34% | +0.43% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.37% |
 
 ## 5. 次に見るべき不足
 
