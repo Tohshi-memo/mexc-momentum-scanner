@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T23:00:17.576228+00:00
+- generated_at: 2026-05-30T23:05:11.280918+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5152**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T23:00:15.058516+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=73849.8
-- Funnel: target 773 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-30T23:05:09.076454+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=73963.5
+- Funnel: target 773 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TA/USDT:USDT | +20.26% | $1,934,887.62 |
-| BIANRENSHENG/USDT:USDT | +13.99% | $1,033,948.00 |
-| IO/USDT:USDT | +9.93% | $1,639,296.91 |
-| STG/USDT:USDT | +8.56% | $3,298,597.21 |
-| ONDO/USDT:USDT | +8.49% | $30,539,225.94 |
+| TA/USDT:USDT | +20.32% | $1,937,796.66 |
+| BIANRENSHENG/USDT:USDT | +15.59% | $1,062,893.77 |
+| IO/USDT:USDT | +9.82% | $1,630,368.15 |
+| ONDO/USDT:USDT | +9.22% | $29,942,532.31 |
+| STG/USDT:USDT | +9.07% | $3,294,632.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IO/USDT:USDT | below_1h_threshold | +2.93% | +3.07% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.14% | +1.29% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.11% | +0.25% |
-| BSB/USDT:USDT | below_1h_threshold | +0.09% | +0.23% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.06% | +0.20% |
+| NFP/USDT:USDT | below_1h_threshold | +1.62% | +1.46% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.40% | +1.25% |
+| HEI/USDT:USDT | below_1h_threshold | +1.23% | +1.08% |
+| LAB/USDT:USDT | below_1h_threshold | +1.11% | +0.96% |
+| APE/USDT:USDT | below_1h_threshold | +0.73% | +0.57% |
 
 ## 5. 次に見るべき不足
 
