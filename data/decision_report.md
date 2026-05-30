@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T22:04:38.522891+00:00
+- generated_at: 2026-05-30T22:09:40.952694+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5149**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T22:04:36.321956+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=73849.8
+- 更新: 2026-05-30T22:09:38.732543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=73849.9
 - Funnel: target 773 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TA/USDT:USDT | +20.04% | $1,880,309.64 |
-| IO/USDT:USDT | +7.87% | $1,165,838.79 |
-| ONDO/USDT:USDT | +7.41% | $27,253,109.90 |
-| STG/USDT:USDT | +6.74% | $3,207,134.13 |
-| AVNT/USDT:USDT | +6.50% | $1,270,290.69 |
+| TA/USDT:USDT | +19.40% | $1,891,422.99 |
+| IO/USDT:USDT | +10.77% | $1,214,810.82 |
+| ONDO/USDT:USDT | +7.70% | $27,448,944.54 |
+| MYX/USDT:USDT | +6.58% | $1,587,746.37 |
+| AVNT/USDT:USDT | +6.07% | $1,271,533.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +1.67% | +1.81% |
-| STG/USDT:USDT | below_1h_threshold | +0.97% | +1.11% |
-| IO/USDT:USDT | below_1h_threshold | +0.94% | +1.08% |
-| EDEN/USDT:USDT | below_1h_threshold | +0.65% | +0.79% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.03% | +0.18% |
+| IO/USDT:USDT | below_1h_threshold | +3.66% | +3.80% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.42% | +1.56% |
+| MYX/USDT:USDT | below_1h_threshold | +0.30% | +0.44% |
+| ID/USDT:USDT | below_1h_threshold | +0.23% | +0.37% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.31% |
 
 ## 5. 次に見るべき不足
 
