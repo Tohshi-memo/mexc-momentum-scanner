@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T17:54:42.050957+00:00
+- generated_at: 2026-05-30T17:59:44.983764+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5143**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T17:54:39.439223+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=73974.9
+- 更新: 2026-05-30T17:59:42.377903+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=73982.0
 - Funnel: target 773 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1
+- Strict後reject: 4h RSI 87.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +6.18% | $165,817,807.83 |
-| H/USDT:USDT | +5.16% | $10,063,724.61 |
-| UAI/USDT:USDT | +3.72% | $1,424,142.32 |
-| CAKE/USDT:USDT | +3.64% | $1,236,235.42 |
-| BNB/USDT:USDT | +3.06% | $44,406,485.34 |
+| LAB/USDT:USDT | +6.60% | $166,355,020.90 |
+| H/USDT:USDT | +5.68% | $10,132,380.54 |
+| STG/USDT:USDT | +3.67% | $2,982,309.92 |
+| CAKE/USDT:USDT | +3.56% | $1,244,332.44 |
+| BNB/USDT:USDT | +2.76% | $45,174,160.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.79% | +2.69% |
-| LIT/USDT:USDT | below_1h_threshold | +2.48% | +2.37% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.91% | +1.81% |
-| BASED/USDT:USDT | below_1h_threshold | +1.86% | +1.76% |
-| STG/USDT:USDT | below_1h_threshold | +1.47% | +1.37% |
+| STG/USDT:USDT | below_1h_threshold | +2.34% | +2.23% |
+| AR/USDT:USDT | below_1h_threshold | +2.13% | +2.02% |
+| LIT/USDT:USDT | below_1h_threshold | +2.11% | +2.00% |
+| BASED/USDT:USDT | below_1h_threshold | +2.03% | +1.92% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.91% | +1.80% |
 
 ## 5. 次に見るべき不足
 
