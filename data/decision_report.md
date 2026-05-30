@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T04:14:49.182956+00:00
+- generated_at: 2026-05-30T04:19:43.530337+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5102**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T04:14:46.391846+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=73448.8
-- Funnel: target 773 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1
+- 更新: 2026-05-30T04:19:38.615083+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=73364.4
+- Funnel: target 773 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +58.10% | $11,714,027.64 |
-| XLM/USDT:USDT | +32.47% | $458,894,632.10 |
-| ID/USDT:USDT | +31.13% | $5,822,561.10 |
-| LAB/USDT:USDT | +18.17% | $136,897,235.63 |
-| OL/USDT:USDT | +17.68% | $1,514,124.16 |
+| HEI/USDT:USDT | +57.83% | $11,762,481.46 |
+| ID/USDT:USDT | +30.94% | $5,937,282.36 |
+| XLM/USDT:USDT | +30.52% | $460,330,611.92 |
+| OL/USDT:USDT | +18.31% | $1,514,427.42 |
+| LAB/USDT:USDT | +17.11% | $137,235,400.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.78% | +0.84% |
-| XMR/USDT:USDT | below_1h_threshold | +0.72% | +0.78% |
-| BASED/USDT:USDT | below_1h_threshold | +0.61% | +0.67% |
-| LAB/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
+| HEI/USDT:USDT | below_1h_threshold | +2.39% | +2.56% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.86% | +1.04% |
+| XMR/USDT:USDT | below_1h_threshold | +0.79% | +0.97% |
+| GUA/USDT:USDT | below_1h_threshold | +0.42% | +0.60% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.49% |
 
 ## 5. 次に見るべき不足
 
