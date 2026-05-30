@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T12:29:44.654427+00:00
+- generated_at: 2026-05-30T12:33:44.268860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5124**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T12:29:42.430656+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=73619.5
-- Funnel: target 773 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-05-30T12:33:42.319782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=73663.4
+- Funnel: target 773 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +36.54% | $2,042,062.07 |
-| NFP/USDT:USDT | +34.76% | $3,314,630.19 |
-| STG/USDT:USDT | +31.31% | $1,080,252.95 |
-| LAB/USDT:USDT | +29.79% | $123,364,155.80 |
-| VTHO/USDT:USDT | +18.90% | $1,737,923.42 |
+| PORTAL/USDT:USDT | +34.20% | $2,059,131.88 |
+| STG/USDT:USDT | +33.51% | $1,138,430.33 |
+| NFP/USDT:USDT | +30.99% | $3,336,790.67 |
+| LAB/USDT:USDT | +30.21% | $123,970,870.42 |
+| VTHO/USDT:USDT | +19.00% | $1,738,611.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +4.58% | +4.51% |
-| NFP/USDT:USDT | below_1h_threshold | +4.04% | +3.97% |
-| STG/USDT:USDT | below_1h_threshold | +3.75% | +3.68% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +3.32% | +3.25% |
-| FET/USDT:USDT | below_1h_threshold | +2.61% | +2.54% |
+| FET/USDT:USDT | below_1h_threshold | +3.42% | +3.29% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.24% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.09% | +2.96% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.04% | +1.91% |
+| ID/USDT:USDT | below_1h_threshold | +2.03% | +1.91% |
 
 ## 5. 次に見るべき不足
 
