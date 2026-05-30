@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T03:39:49.403620+00:00
+- generated_at: 2026-05-30T03:43:41.752477+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5099**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T03:39:46.967765+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=73571.0
+- 更新: 2026-05-30T03:43:39.858139+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=73508.4
 - Funnel: target 773 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1
+- Strict後reject: 4h RSI 81.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +60.88% | $11,410,194.38 |
-| XLM/USDT:USDT | +37.33% | $462,529,692.56 |
-| ID/USDT:USDT | +20.97% | $5,664,897.05 |
-| OL/USDT:USDT | +18.58% | $1,543,171.54 |
-| LAB/USDT:USDT | +17.17% | $138,489,148.98 |
+| HEI/USDT:USDT | +60.05% | $11,540,707.21 |
+| XLM/USDT:USDT | +36.48% | $463,913,683.05 |
+| ID/USDT:USDT | +20.12% | $5,683,424.69 |
+| LAB/USDT:USDT | +18.33% | $138,940,678.29 |
+| OL/USDT:USDT | +17.81% | $1,543,399.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +4.07% | +4.31% |
-| XLM/USDT:USDT | below_1h_threshold | +2.78% | +3.02% |
-| BAT/USDT:USDT | below_1h_threshold | +1.84% | +2.08% |
-| VET/USDT:USDT | below_1h_threshold | +1.36% | +1.60% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.90% | +1.14% |
+| HEI/USDT:USDT | below_1h_threshold | +3.29% | +3.61% |
+| XLM/USDT:USDT | below_1h_threshold | +2.28% | +2.61% |
+| BAT/USDT:USDT | below_1h_threshold | +1.93% | +2.25% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.32% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.99% |
 
 ## 5. 次に見るべき不足
 
