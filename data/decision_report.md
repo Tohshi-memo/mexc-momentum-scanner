@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T08:39:38.069238+00:00
+- generated_at: 2026-05-30T08:44:44.678960+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5112**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T08:39:35.319487+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=73506.2
-- Funnel: target 773 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.3 >= 65=1, 4h RSI 80.0 >= 65=1
+- 更新: 2026-05-30T08:44:41.818017+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=73487.5
+- Funnel: target 773 → liquid 131 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 88.7 >= 65=1, 4h RSI 72.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +70.52% | $15,539,152.43 |
-| VTHO/USDT:USDT | +33.15% | $1,157,036.69 |
-| LAB/USDT:USDT | +21.79% | $124,440,643.08 |
-| XLM/USDT:USDT | +16.39% | $448,327,843.03 |
-| ID/USDT:USDT | +15.24% | $6,772,178.53 |
+| HEI/USDT:USDT | +65.61% | $15,680,422.18 |
+| VTHO/USDT:USDT | +30.97% | $1,207,254.73 |
+| LAB/USDT:USDT | +22.20% | $124,754,636.55 |
+| ID/USDT:USDT | +16.52% | $6,795,703.63 |
+| XLM/USDT:USDT | +16.08% | $449,684,183.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ID/USDT:USDT | below_1h_threshold | +4.29% | +4.30% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +3.28% | +3.30% |
-| BILL/USDT:USDT | below_1h_threshold | +3.09% | +3.11% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.05% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.52% | +1.54% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.61% |
+| GUA/USDT:USDT | below_1h_threshold | +2.06% | +2.10% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.03% |
+| BILL/USDT:USDT | below_1h_threshold | +1.73% | +1.77% |
+| XMR/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
 
 ## 5. 次に見るべき不足
 
