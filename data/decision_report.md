@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T17:10:04.032107+00:00
+- generated_at: 2026-05-30T17:14:48.020850+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5142**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T17:10:01.836323+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=73855.4
+- 更新: 2026-05-30T17:14:45.820936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=73869.9
 - Funnel: target 773 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +8.20% | $4,942,565.41 |
-| H/USDT:USDT | +4.75% | $9,455,393.99 |
-| LAB/USDT:USDT | +4.42% | $153,046,443.26 |
-| CAKE/USDT:USDT | +3.95% | $1,028,133.00 |
-| STG/USDT:USDT | +2.60% | $2,880,978.56 |
+| PORTAL/USDT:USDT | +8.29% | $4,962,477.35 |
+| H/USDT:USDT | +4.92% | $9,540,143.94 |
+| LAB/USDT:USDT | +4.03% | $153,868,016.78 |
+| CAKE/USDT:USDT | +3.82% | $1,037,129.60 |
+| TONCOIN/USDT:USDT | +2.52% | $34,775,518.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.16% | +4.22% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.96% | +3.02% |
-| LIT/USDT:USDT | below_1h_threshold | +0.80% | +0.86% |
-| STG/USDT:USDT | below_1h_threshold | +0.51% | +0.57% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.45% | +0.51% |
+| LAB/USDT:USDT | below_1h_threshold | +3.94% | +3.98% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.63% | +2.67% |
+| LIT/USDT:USDT | below_1h_threshold | +1.01% | +1.05% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.68% | +0.72% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.62% | +0.66% |
 
 ## 5. 次に見るべき不足
 
