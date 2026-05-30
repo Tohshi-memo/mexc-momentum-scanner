@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T19:25:12.374796+00:00
+- generated_at: 2026-05-30T19:32:23.421874+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5148**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T19:25:10.241836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=73980.0
+- 更新: 2026-05-30T19:32:21.281928+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=73949.9
 - Funnel: target 773 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TA/USDT:USDT | +20.02% | $1,459,239.09 |
-| H/USDT:USDT | +7.64% | $12,052,861.52 |
-| BASED/USDT:USDT | +5.84% | $3,159,763.33 |
-| ORDI/USDT:USDT | +5.73% | $2,577,914.33 |
-| ASTER/USDT:USDT | +5.03% | $41,515,939.24 |
+| TA/USDT:USDT | +20.91% | $1,494,831.41 |
+| H/USDT:USDT | +7.09% | $12,142,624.48 |
+| HEI/USDT:USDT | +6.61% | $14,021,693.82 |
+| BASED/USDT:USDT | +4.74% | $3,172,904.08 |
+| ORDI/USDT:USDT | +4.07% | $2,702,364.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +1.48% | +1.52% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.99% | +1.03% |
-| ID/USDT:USDT | below_1h_threshold | +0.95% | +0.99% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.65% | +0.69% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.51% | +0.55% |
+| HEI/USDT:USDT | below_1h_threshold | +3.78% | +3.86% |
+| ID/USDT:USDT | below_1h_threshold | +0.46% | +0.54% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.48% |
+| IO/USDT:USDT | below_1h_threshold | +0.39% | +0.47% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.36% | +0.44% |
 
 ## 5. 次に見るべき不足
 
