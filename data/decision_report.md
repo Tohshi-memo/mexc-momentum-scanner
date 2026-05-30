@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T19:04:50.392194+00:00
+- generated_at: 2026-05-30T19:09:41.718464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5148**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T19:04:47.864830+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=73999.8
+- 更新: 2026-05-30T19:09:39.490171+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=73979.4
 - Funnel: target 773 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TA/USDT:USDT | +22.81% | $1,293,241.08 |
-| H/USDT:USDT | +7.89% | $11,540,944.72 |
-| STG/USDT:USDT | +5.53% | $3,034,622.63 |
-| AR/USDT:USDT | +5.14% | $1,169,748.38 |
-| ASTER/USDT:USDT | +4.50% | $39,259,775.63 |
+| TA/USDT:USDT | +23.01% | $1,323,302.64 |
+| H/USDT:USDT | +8.68% | $11,619,025.02 |
+| STG/USDT:USDT | +5.58% | $3,040,400.54 |
+| BASED/USDT:USDT | +5.24% | $3,153,917.56 |
+| ASTER/USDT:USDT | +5.01% | $40,230,646.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
-| H/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.48% | +0.49% |
-| BNB/USDT:USDT | below_1h_threshold | +0.35% | +0.36% |
-| ID/USDT:USDT | below_1h_threshold | +0.18% | +0.19% |
+| H/USDT:USDT | below_1h_threshold | +1.40% | +1.44% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.19% | +1.23% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.71% | +0.75% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.54% | +0.58% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.36% | +0.40% |
 
 ## 5. 次に見るべき不足
 
