@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T12:39:38.668276+00:00
+- generated_at: 2026-05-30T12:44:48.380777+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5124**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T12:39:36.225262+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=73631.8
+- 更新: 2026-05-30T12:44:45.958560+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=73628.7
 - Funnel: target 773 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.3 >= 65=1
+- Strict後reject: 4h RSI 84.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +34.04% | $1,202,254.76 |
-| PORTAL/USDT:USDT | +33.28% | $2,085,980.35 |
-| LAB/USDT:USDT | +31.23% | $125,164,603.73 |
-| NFP/USDT:USDT | +29.52% | $3,349,651.92 |
-| VTHO/USDT:USDT | +18.82% | $1,776,569.74 |
+| PORTAL/USDT:USDT | +36.80% | $2,110,963.53 |
+| LAB/USDT:USDT | +34.05% | $126,423,908.39 |
+| NFP/USDT:USDT | +30.89% | $3,361,142.24 |
+| STG/USDT:USDT | +27.40% | $1,348,774.78 |
+| VTHO/USDT:USDT | +18.77% | $1,782,775.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FET/USDT:USDT | below_1h_threshold | +4.69% | +4.60% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +3.73% | +3.65% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.09% | +2.00% |
-| ID/USDT:USDT | below_1h_threshold | +1.96% | +1.87% |
-| LAB/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
+| FET/USDT:USDT | below_1h_threshold | +3.77% | +3.69% |
+| LAB/USDT:USDT | below_1h_threshold | +3.28% | +3.20% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +3.07% |
+| WLD/USDT:USDT | below_1h_threshold | +1.63% | +1.55% |
+| ID/USDT:USDT | below_1h_threshold | +1.57% | +1.49% |
 
 ## 5. 次に見るべき不足
 
