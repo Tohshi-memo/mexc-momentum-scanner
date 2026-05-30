@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-30T18:20:14.789594+00:00
+- generated_at: 2026-05-30T18:24:57.569707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5145**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-30T18:20:12.619568+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=74026.1
+- 更新: 2026-05-30T18:24:55.358456+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=74001.2
 - Funnel: target 773 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +5.35% | $10,556,833.91 |
-| LAB/USDT:USDT | +4.93% | $169,430,751.56 |
-| CAKE/USDT:USDT | +4.41% | $1,317,178.28 |
-| BASED/USDT:USDT | +4.11% | $3,175,487.94 |
-| AR/USDT:USDT | +3.53% | $1,104,532.74 |
+| BASED/USDT:USDT | +6.31% | $3,184,739.08 |
+| H/USDT:USDT | +6.00% | $10,674,847.71 |
+| LAB/USDT:USDT | +4.72% | $170,375,543.04 |
+| CAKE/USDT:USDT | +4.05% | $1,326,842.34 |
+| ORDI/USDT:USDT | +3.89% | $2,404,595.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +2.69% | +2.63% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
-| BASED/USDT:USDT | below_1h_threshold | +1.57% | +1.51% |
-| AR/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
-| SEI/USDT:USDT | below_1h_threshold | +1.21% | +1.15% |
+| BASED/USDT:USDT | below_1h_threshold | +3.63% | +3.61% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.34% | +3.31% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
+| MERL/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
+| SEI/USDT:USDT | below_1h_threshold | +1.09% | +1.07% |
 
 ## 5. 次に見るべき不足
 
