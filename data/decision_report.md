@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T04:45:12.995201+00:00
+- generated_at: 2026-05-31T04:50:19.417309+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5169**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T04:45:09.936288+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=74154.6
+- 更新: 2026-05-31T04:50:16.730079+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=74167.0
 - Funnel: target 773 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 89.3 >= 65=1
+- Strict後reject: 4h RSI 88.4 >= 65=1, 4h RSI 68.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +33.16% | $10,313,225.73 |
-| PUNDIX/USDT:USDT | +32.39% | $1,056,544.22 |
-| TA/USDT:USDT | +19.86% | $2,341,317.07 |
-| STG/USDT:USDT | +9.49% | $4,129,226.84 |
-| BASED/USDT:USDT | +8.91% | $1,811,140.35 |
+| PORTAL/USDT:USDT | +35.92% | $10,347,662.81 |
+| PUNDIX/USDT:USDT | +31.72% | $1,128,322.31 |
+| TA/USDT:USDT | +20.22% | $2,344,085.35 |
+| BASED/USDT:USDT | +9.19% | $1,822,400.38 |
+| ONDO/USDT:USDT | +8.55% | $38,185,142.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.92% | +3.86% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.99% | +2.93% |
-| UP/USDT:USDT | below_1h_threshold | +2.50% | +2.44% |
-| PI/USDT:USDT | below_1h_threshold | +2.29% | +2.23% |
-| LIT/USDT:USDT | below_1h_threshold | +1.96% | +1.90% |
+| BILL/USDT:USDT | below_1h_threshold | +3.49% | +3.41% |
+| LIT/USDT:USDT | below_1h_threshold | +3.08% | +3.00% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.68% | +2.60% |
+| UP/USDT:USDT | below_1h_threshold | +2.57% | +2.49% |
+| PI/USDT:USDT | below_1h_threshold | +2.42% | +2.35% |
 
 ## 5. 次に見るべき不足
 
