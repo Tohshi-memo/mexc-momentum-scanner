@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T15:16:14.446631+00:00
+- generated_at: 2026-05-31T15:21:13.043797+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5196**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T15:16:11.807015+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=73635.5
-- Funnel: target 773 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1
+- 更新: 2026-05-31T15:21:10.329805+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=73650.3
+- Funnel: target 773 → liquid 123 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.2 >= 65=1, 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +54.11% | $10,624,998.92 |
-| AIA/USDT:USDT | +51.05% | $4,679,271.75 |
-| STG/USDT:USDT | +28.47% | $4,677,835.57 |
-| BIANRENSHENG/USDT:USDT | +24.55% | $1,998,743.33 |
-| PORTAL/USDT:USDT | +23.92% | $9,611,754.26 |
+| AIA/USDT:USDT | +50.32% | $4,715,015.03 |
+| PLAY/USDT:USDT | +48.26% | $10,937,398.98 |
+| STG/USDT:USDT | +27.96% | $4,702,775.25 |
+| BIANRENSHENG/USDT:USDT | +25.30% | $2,029,064.36 |
+| PORTAL/USDT:USDT | +22.79% | $9,632,137.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.93% | +4.84% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.88% | +2.79% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.50% | +2.41% |
-| UP/USDT:USDT | below_1h_threshold | +1.72% | +1.63% |
-| STG/USDT:USDT | below_1h_threshold | +1.32% | +1.23% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.50% | +3.39% |
+| BILL/USDT:USDT | below_1h_threshold | +2.08% | +1.97% |
+| UP/USDT:USDT | below_1h_threshold | +1.98% | +1.87% |
+| VVV/USDT:USDT | below_1h_threshold | +1.77% | +1.66% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.57% | +1.46% |
 
 ## 5. 次に見るべき不足
 
