@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-05-31T04:55:15.888000+00:00
+- generated_at: 2026-05-31T05:00:51.777758+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5169**
+- closed shadow trades: **5171**
 
 ## 1. 今日の判断
 
-- 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5169, expectancy=-0.05%
-- 直近20件 MARKET基準: n=20, expectancy=+0.03%
+- 結論: **MARKET SHORTは実行候補。直近EV +0.33% / filled 20/20。**
+- 全期間 MARKET基準: n=5171, expectancy=-0.05%
+- 直近20件 MARKET基準: n=20, expectancy=+0.33%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.03% | **+0.03%** |
+| MARKET | 20/20 | 100.0% | +0.33% | **+0.33%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.84% | **+0.79%** |
-| ASK_LONG | 20/20 | 100.0% | +0.71% | **+0.71%** |
-| LIMIT_ATR_LONG | 14/20 | 70.0% | +1.00% | **+0.70%** |
-| LIMIT_2PCT_LONG | 16/20 | 80.0% | +0.65% | **+0.52%** |
+| ASK_LONG | 20/20 | 100.0% | +0.87% | **+0.87%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
+| LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.51% | **+0.48%** |
+| LIMIT_4PCT_LONG | 12/20 | 60.0% | +0.77% | **+0.46%** |
+| LIMIT_8PCT_LONG | 5/20 | 25.0% | +1.60% | **+0.40%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$122.91** / 初期 $100.00 (+22.91%)
-- 確定: 805件 (Win 184 / Loss 243 / Flat 378) / skip 925件
+- 確定: 806件 (Win 184 / Loss 243 / Flat 379) / skip 926件
 - 成長率目線: 平均log +0.000256 / 幾何平均 +0.026% per trade / maxDD +6.32%
-- 次の候補: `LIMIT_BB3S` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: NFP/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $122.91
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: ALLO/USDT:USDT `LIMIT_BB3S` EXPIRED account +0.00% 残高後 $122.91
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T04:55:12.795601+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=74150.4
-- Funnel: target 773 → liquid 127 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 88.1 >= 65=1, 4h RSI 66.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-05-31T05:00:48.993548+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=74165.0
+- Funnel: target 773 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +35.66% | $10,377,178.93 |
-| PUNDIX/USDT:USDT | +30.67% | $1,135,991.63 |
-| TA/USDT:USDT | +20.60% | $2,346,199.17 |
-| ONDO/USDT:USDT | +8.90% | $38,279,978.15 |
-| BASED/USDT:USDT | +8.89% | $1,837,495.00 |
+| PORTAL/USDT:USDT | +35.83% | $10,389,026.94 |
+| PUNDIX/USDT:USDT | +28.81% | $1,149,120.05 |
+| TA/USDT:USDT | +20.79% | $2,343,852.61 |
+| STG/USDT:USDT | +10.37% | $4,145,886.57 |
+| MYX/USDT:USDT | +9.85% | $2,075,722.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.73% | +3.68% |
-| LIT/USDT:USDT | below_1h_threshold | +3.25% | +3.19% |
-| UP/USDT:USDT | below_1h_threshold | +2.77% | +2.71% |
-| PI/USDT:USDT | below_1h_threshold | +2.49% | +2.43% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.31% | +2.26% |
+| IO/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| FET/USDT:USDT | below_1h_threshold | +0.36% | +0.34% |
+| BASED/USDT:USDT | below_1h_threshold | +0.34% | +0.32% |
+| TAO/USDT:USDT | below_1h_threshold | +0.27% | +0.25% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.26% | +0.24% |
 
 ## 5. 次に見るべき不足
 
