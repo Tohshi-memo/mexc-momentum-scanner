@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-05-31T09:15:14.711598+00:00
+- generated_at: 2026-05-31T09:20:07.208941+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5180**
+- closed shadow trades: **5181**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +2.16% / filled 20/20。**
-- 全期間 MARKET基準: n=5180, expectancy=-0.05%
-- 直近20件 MARKET基準: n=20, expectancy=+2.16%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.56% / filled 20/20。**
+- 全期間 MARKET基準: n=5181, expectancy=-0.05%
+- 直近20件 MARKET基準: n=20, expectancy=+1.56%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +2.16% | **+2.16%** |
+| MARKET | 20/20 | 100.0% | +1.56% | **+1.56%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +2.16% | **+2.16%** |
-| ASK | 20/20 | 100.0% | +1.47% | **+1.47%** |
-| LIMIT_1PCT | 15/20 | 75.0% | +1.23% | **+0.92%** |
-| LIMIT_2PCT | 14/20 | 70.0% | +1.18% | **+0.82%** |
+| MARKET | 20/20 | 100.0% | +1.56% | **+1.56%** |
+| ASK | 20/20 | 100.0% | +0.87% | **+0.87%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +0.83% | **+0.62%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +2.82% | **+0.56%** |
-| LIMIT_8PCT_LONG | 8/20 | 40.0% | +1.00% | **+0.40%** |
+| LIMIT_2PCT_LONG | 18/20 | 90.0% | +0.45% | **+0.41%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.14% | **+0.40%** |
+| LIMIT_ATR_LONG | 17/20 | 85.0% | +0.33% | **+0.28%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.22% | **+0.22%** |
-| LIMIT_FIB1618_LONG | 3/20 | 15.0% | +0.92% | **+0.14%** |
-| LIMIT_FIB1272_LONG | 13/20 | 65.0% | -0.08% | **-0.05%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$121.68** / 初期 $100.00 (+21.68%)
-- 確定: 815件 (Win 184 / Loss 245 / Flat 386) / skip 926件
-- 成長率目線: 平均log +0.000241 / 幾何平均 +0.024% per trade / maxDD +7.25%
-- 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PLAY/USDT:USDT `LIMIT_7PCT` SL_HIT account -0.50% 残高後 $121.68
+- 確定: 816件 (Win 184 / Loss 245 / Flat 387) / skip 926件
+- 成長率目線: 平均log +0.000240 / 幾何平均 +0.024% per trade / maxDD +7.25%
+- 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: PLAY/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $121.68
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T09:15:09.624587+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=73886.7
+- 更新: 2026-05-31T09:20:02.323743+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=73938.6
 - Funnel: target 773 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +34.38% | $1,814,857.58 |
-| PLAY/USDT:USDT | +31.39% | $2,493,469.80 |
-| TA/USDT:USDT | +23.03% | $2,498,085.70 |
-| MYX/USDT:USDT | +17.08% | $3,160,488.79 |
-| PORTAL/USDT:USDT | +16.75% | $12,291,766.69 |
+| PLAY/USDT:USDT | +37.41% | $2,666,424.90 |
+| AIA/USDT:USDT | +33.61% | $1,855,495.84 |
+| TA/USDT:USDT | +22.16% | $2,504,588.76 |
+| PORTAL/USDT:USDT | +16.92% | $12,338,059.98 |
+| MYX/USDT:USDT | +16.40% | $3,278,962.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
-| LAB/USDT:USDT | below_1h_threshold | +1.49% | +1.53% |
-| STG/USDT:USDT | below_1h_threshold | +1.36% | +1.40% |
-| TA/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
-| BILL/USDT:USDT | below_1h_threshold | +0.88% | +0.91% |
+| LAB/USDT:USDT | below_1h_threshold | +1.80% | +1.77% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.63% | +1.60% |
+| MYX/USDT:USDT | below_1h_threshold | +0.94% | +0.91% |
+| STG/USDT:USDT | below_1h_threshold | +0.92% | +0.89% |
+| XTZ/USDT:USDT | below_1h_threshold | +0.81% | +0.78% |
 
 ## 5. 次に見るべき不足
 
