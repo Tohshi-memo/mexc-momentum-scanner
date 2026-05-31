@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T16:50:01.446277+00:00
+- generated_at: 2026-05-31T16:55:34.272142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5207**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T16:49:58.696347+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=73420.1
-- Funnel: target 773 → liquid 125 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1, 4h RSI 77.8 >= 65=1
+- 更新: 2026-05-31T16:55:31.426606+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=73504.5
+- Funnel: target 773 → liquid 125 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.3 >= 65=1, 4h RSI 83.7 >= 65=1, 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +5.60% | $5,487,759.06 |
-| PORTAL/USDT:USDT | +5.38% | $10,271,224.27 |
-| STG/USDT:USDT | +4.26% | $5,330,411.10 |
-| ALLO/USDT:USDT | +3.54% | $29,626,356.87 |
-| RAVE/USDT:USDT | +3.18% | $1,725,558.68 |
+| PORTAL/USDT:USDT | +9.55% | $10,334,176.07 |
+| AIA/USDT:USDT | +5.85% | $5,509,731.48 |
+| STG/USDT:USDT | +5.24% | $5,510,917.70 |
+| HOME/USDT:USDT | +3.92% | $1,713,344.76 |
+| RAVE/USDT:USDT | +3.00% | $1,752,475.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +4.16% | +4.42% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.46% | +3.72% |
-| RAVE/USDT:USDT | below_1h_threshold | +3.18% | +3.44% |
-| HOME/USDT:USDT | below_1h_threshold | +2.56% | +2.83% |
-| HIVE/USDT:USDT | below_1h_threshold | +1.73% | +2.00% |
+| HOME/USDT:USDT | below_1h_threshold | +3.92% | +4.07% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.00% | +3.15% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.62% | +2.76% |
+| WLD/USDT:USDT | below_1h_threshold | +1.79% | +1.94% |
+| HIVE/USDT:USDT | below_1h_threshold | +1.63% | +1.77% |
 
 ## 5. 次に見るべき不足
 
