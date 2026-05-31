@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T21:07:53.568417+00:00
+- generated_at: 2026-05-31T21:13:00.497628+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5226**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T21:07:51.333550+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=73690.1
-- Funnel: target 773 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-31T21:12:58.241202+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=73686.7
+- Funnel: target 773 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +40.33% | $16,290,666.32 |
-| PORTAL/USDT:USDT | +16.79% | $12,055,304.82 |
-| ZORA/USDT:USDT | +12.37% | $1,446,646.42 |
-| HOME/USDT:USDT | +11.64% | $2,741,198.42 |
-| BIANRENSHENG/USDT:USDT | +11.51% | $3,064,603.71 |
+| STG/USDT:USDT | +39.57% | $16,386,581.20 |
+| PORTAL/USDT:USDT | +17.94% | $12,099,911.35 |
+| BIANRENSHENG/USDT:USDT | +11.91% | $3,073,912.26 |
+| ZORA/USDT:USDT | +11.78% | $1,457,501.15 |
+| HOME/USDT:USDT | +11.76% | $2,742,787.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +1.34% | +1.37% |
-| MYX/USDT:USDT | below_1h_threshold | +1.18% | +1.21% |
-| STG/USDT:USDT | below_1h_threshold | +1.01% | +1.04% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.97% | +1.00% |
-| MEME/USDT:USDT | below_1h_threshold | +0.84% | +0.87% |
+| LAB/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
+| MYX/USDT:USDT | below_1h_threshold | +1.55% | +1.58% |
+| HOME/USDT:USDT | below_1h_threshold | +1.45% | +1.48% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.44% | +1.47% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.27% | +1.31% |
 
 ## 5. 次に見るべき不足
 
