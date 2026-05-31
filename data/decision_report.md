@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T04:25:04.044212+00:00
+- generated_at: 2026-05-31T04:30:20.843638+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5168**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T04:25:01.452029+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=74161.1
+- 更新: 2026-05-31T04:30:18.427447+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=74165.0
 - Funnel: target 773 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.4 >= 65=1
+- Strict後reject: 4h RSI 68.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +31.17% | $10,132,901.61 |
-| TA/USDT:USDT | +22.42% | $2,328,866.73 |
-| NFP/USDT:USDT | +11.30% | $4,482,239.41 |
-| ID/USDT:USDT | +9.68% | $4,293,697.65 |
-| ONDO/USDT:USDT | +9.25% | $37,915,956.87 |
+| PORTAL/USDT:USDT | +32.38% | $10,166,293.42 |
+| TA/USDT:USDT | +22.82% | $2,333,720.74 |
+| NFP/USDT:USDT | +11.98% | $4,487,374.11 |
+| ID/USDT:USDT | +9.56% | $4,296,099.04 |
+| STG/USDT:USDT | +8.98% | $4,105,024.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PI/USDT:USDT | below_1h_threshold | +2.69% | +2.62% |
-| ASTER/USDT:USDT | below_1h_threshold | +2.23% | +2.16% |
-| ENA/USDT:USDT | below_1h_threshold | +1.37% | +1.30% |
-| NFP/USDT:USDT | below_1h_threshold | +1.31% | +1.23% |
-| FLOKI/USDT:USDT | below_1h_threshold | +1.02% | +0.95% |
+| PI/USDT:USDT | below_1h_threshold | +2.02% | +1.94% |
+| NFP/USDT:USDT | below_1h_threshold | +1.69% | +1.61% |
+| FLOKI/USDT:USDT | below_1h_threshold | +1.53% | +1.46% |
+| ENA/USDT:USDT | below_1h_threshold | +1.45% | +1.38% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.27% | +1.20% |
 
 ## 5. 次に見るべき不足
 
