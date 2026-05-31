@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T21:13:00.497628+00:00
+- generated_at: 2026-05-31T21:18:00.099287+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5226**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T21:12:58.241202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=73686.7
+- 更新: 2026-05-31T21:17:57.816678+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=73699.6
 - Funnel: target 773 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +39.57% | $16,386,581.20 |
-| PORTAL/USDT:USDT | +17.94% | $12,099,911.35 |
-| BIANRENSHENG/USDT:USDT | +11.91% | $3,073,912.26 |
-| ZORA/USDT:USDT | +11.78% | $1,457,501.15 |
-| HOME/USDT:USDT | +11.76% | $2,742,787.19 |
+| STG/USDT:USDT | +40.62% | $16,616,302.63 |
+| PORTAL/USDT:USDT | +17.17% | $12,135,818.20 |
+| HOME/USDT:USDT | +12.96% | $2,746,644.94 |
+| ZORA/USDT:USDT | +11.39% | $1,463,711.13 |
+| BIANRENSHENG/USDT:USDT | +10.23% | $3,087,402.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
-| MYX/USDT:USDT | below_1h_threshold | +1.55% | +1.58% |
-| HOME/USDT:USDT | below_1h_threshold | +1.45% | +1.48% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.44% | +1.47% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.27% | +1.31% |
+| LAB/USDT:USDT | below_1h_threshold | +4.32% | +4.34% |
+| HOME/USDT:USDT | below_1h_threshold | +2.57% | +2.59% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.93% | +1.95% |
+| MYX/USDT:USDT | below_1h_threshold | +1.36% | +1.38% |
+| LIT/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
 
 ## 5. 次に見るべき不足
 
