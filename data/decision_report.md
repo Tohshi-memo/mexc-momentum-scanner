@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T19:26:31.634685+00:00
+- generated_at: 2026-05-31T19:31:28.155523+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5218**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T19:26:28.386400+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=73454.3
-- Funnel: target 773 → liquid 128 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.5 >= 65=1, 4h RSI 65.6 >= 65=1
+- 更新: 2026-05-31T19:31:25.132091+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=73501.2
+- Funnel: target 773 → liquid 129 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.2 >= 65=1, 4h RSI 66.2 >= 65=1, 4h RSI 69.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +42.21% | $12,266,881.17 |
-| HOME/USDT:USDT | +9.80% | $2,522,249.66 |
-| BSB/USDT:USDT | +9.30% | $4,673,399.50 |
-| UB/USDT:USDT | +7.88% | $6,761,003.84 |
-| SKYAI/USDT:USDT | +6.33% | $4,921,721.02 |
+| STG/USDT:USDT | +39.97% | $12,580,616.89 |
+| ZORA/USDT:USDT | +16.30% | $1,021,774.11 |
+| BSB/USDT:USDT | +9.33% | $4,714,085.58 |
+| HOME/USDT:USDT | +9.19% | $2,541,962.87 |
+| UB/USDT:USDT | +8.05% | $6,795,882.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.92% | +4.08% |
-| AIA/USDT:USDT | below_1h_threshold | +0.68% | +0.84% |
-| PORTAL/USDT:USDT | below_1h_threshold | +0.67% | +0.84% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.59% | +0.75% |
-| UB/USDT:USDT | below_1h_threshold | +0.43% | +0.60% |
+| ZORA/USDT:USDT | below_1h_threshold | +4.60% | +4.70% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.59% | +1.69% |
+| AIA/USDT:USDT | below_1h_threshold | +0.83% | +0.93% |
+| MEME/USDT:USDT | below_1h_threshold | +0.63% | +0.73% |
+| MYX/USDT:USDT | below_1h_threshold | +0.62% | +0.72% |
 
 ## 5. 次に見るべき不足
 
