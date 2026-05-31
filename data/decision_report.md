@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-05-31T18:06:27.822529+00:00
+- generated_at: 2026-05-31T18:11:37.994704+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5211**
+- closed shadow trades: **5212**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5211, expectancy=-0.06%
+- 全期間 MARKET基準: n=5212, expectancy=-0.06%
 - 直近20件 MARKET基準: n=20, expectancy=-1.68%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,8 +22,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
-| LIMIT_5PCT | 7/20 | 35.0% | +0.24% | **+0.09%** |
-| LIMIT_6PCT | 4/20 | 20.0% | +0.42% | **+0.08%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +0.33% | **+0.13%** |
 | LIMIT_4PCT | 16/20 | 80.0% | -0.00% | **-0.00%** |
 | LIMIT_7PCT | 2/20 | 10.0% | -0.60% | **-0.06%** |
 
@@ -47,37 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$129.23** / 初期 $100.00 (+29.23%)
-- 確定: 846件 (Win 196 / Loss 252 / Flat 398) / skip 926件
+- 確定: 847件 (Win 196 / Loss 252 / Flat 399) / skip 926件
 - 成長率目線: 平均log +0.000303 / 幾何平均 +0.030% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: STG/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $129.23
+- 最新: BIANRENSHENG/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $129.23
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T18:06:25.563838+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=73620.0
-- Funnel: target 773 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-31T18:11:35.386252+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=73659.1
+- Funnel: target 773 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +19.19% | $7,456,557.00 |
-| PORTAL/USDT:USDT | +7.30% | $11,045,699.45 |
-| BIANRENSHENG/USDT:USDT | +4.44% | $2,357,669.60 |
-| GUA/USDT:USDT | +3.61% | $1,661,422.51 |
-| BILL/USDT:USDT | +3.48% | $5,515,607.49 |
+| STG/USDT:USDT | +22.26% | $7,688,284.51 |
+| PORTAL/USDT:USDT | +8.52% | $11,083,469.41 |
+| BIANRENSHENG/USDT:USDT | +5.89% | $2,436,539.14 |
+| JUP/USDT:USDT | +4.01% | $1,034,202.80 |
+| BILL/USDT:USDT | +3.60% | $5,542,658.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +1.07% | +1.15% |
-| GUA/USDT:USDT | below_1h_threshold | +1.00% | +1.08% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.68% | +0.76% |
-| NEX/USDT:USDT | below_1h_threshold | +0.58% | +0.66% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.54% | +0.62% |
+| UB/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.76% | +1.79% |
+| STG/USDT:USDT | below_1h_threshold | +1.56% | +1.59% |
+| BSB/USDT:USDT | below_1h_threshold | +1.55% | +1.57% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.25% | +1.28% |
 
 ## 5. 次に見るべき不足
 
