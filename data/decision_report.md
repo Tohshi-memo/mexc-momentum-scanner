@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T12:41:18.832390+00:00
+- generated_at: 2026-05-31T12:46:19.615212+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5191**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T12:41:16.033382+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=73901.6
-- Funnel: target 773 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.3 >= 65=1, 4h RSI 83.1 >= 65=1
+- 更新: 2026-05-31T12:46:16.994311+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=73949.5
+- Funnel: target 773 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +43.56% | $7,569,588.55 |
-| AIA/USDT:USDT | +42.54% | $3,385,731.07 |
-| STG/USDT:USDT | +26.71% | $4,252,953.25 |
-| TA/USDT:USDT | +22.87% | $2,464,017.99 |
-| PORTAL/USDT:USDT | +17.44% | $11,252,973.37 |
+| PLAY/USDT:USDT | +43.76% | $7,629,710.40 |
+| AIA/USDT:USDT | +41.53% | $3,412,227.24 |
+| STG/USDT:USDT | +24.84% | $4,348,298.23 |
+| TA/USDT:USDT | +22.08% | $2,465,752.61 |
+| PORTAL/USDT:USDT | +19.08% | $11,286,018.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.67% | +3.69% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.87% | +1.89% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.77% | +1.79% |
-| SEI/USDT:USDT | below_1h_threshold | +1.71% | +1.73% |
+| AIA/USDT:USDT | below_1h_threshold | +4.91% | +4.87% |
+| GUA/USDT:USDT | below_1h_threshold | +3.49% | +3.45% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.21% | +2.16% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.85% | +1.81% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
 
 ## 5. 次に見るべき不足
 
