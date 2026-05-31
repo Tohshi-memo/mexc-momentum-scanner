@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T02:40:31.591619+00:00
+- generated_at: 2026-05-31T02:45:55.570709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5167**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T02:40:29.353296+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=73907.9
-- Funnel: target 773 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-05-31T02:45:53.439353+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=73947.2
+- Funnel: target 773 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +51.46% | $8,970,880.63 |
-| TA/USDT:USDT | +30.91% | $2,202,007.05 |
-| NFP/USDT:USDT | +15.86% | $4,381,290.93 |
-| STG/USDT:USDT | +14.00% | $3,744,026.00 |
-| BIANRENSHENG/USDT:USDT | +10.07% | $1,442,378.80 |
+| PORTAL/USDT:USDT | +48.96% | $9,034,075.09 |
+| TA/USDT:USDT | +30.79% | $2,204,984.07 |
+| STG/USDT:USDT | +15.54% | $3,747,763.25 |
+| NFP/USDT:USDT | +13.58% | $4,386,195.64 |
+| BIANRENSHENG/USDT:USDT | +10.02% | $1,442,740.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.18% | +3.34% |
-| CAKE/USDT:USDT | below_1h_threshold | +2.53% | +2.68% |
-| LAB/USDT:USDT | below_1h_threshold | +2.33% | +2.48% |
-| NFP/USDT:USDT | below_1h_threshold | +2.16% | +2.31% |
-| BSB/USDT:USDT | below_1h_threshold | +2.02% | +2.17% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.14% | +3.24% |
+| LAB/USDT:USDT | below_1h_threshold | +3.11% | +3.21% |
+| CAKE/USDT:USDT | below_1h_threshold | +2.54% | +2.64% |
+| BSB/USDT:USDT | below_1h_threshold | +1.65% | +1.75% |
+| STG/USDT:USDT | below_1h_threshold | +1.39% | +1.49% |
 
 ## 5. 次に見るべき不足
 
