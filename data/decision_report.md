@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T19:36:33.788461+00:00
+- generated_at: 2026-05-31T19:41:33.731129+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5219**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T19:36:30.780656+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=73443.1
-- Funnel: target 773 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.0 >= 65=1, 4h RSI 66.2 >= 65=1
+- 更新: 2026-05-31T19:41:30.342473+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=73496.6
+- Funnel: target 773 → liquid 129 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.4 >= 65=1, 4h RSI 66.2 >= 65=1, 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +37.07% | $12,934,855.25 |
-| ZORA/USDT:USDT | +15.91% | $1,065,100.72 |
-| UB/USDT:USDT | +10.49% | $6,860,676.49 |
-| HOME/USDT:USDT | +10.25% | $2,560,303.44 |
-| BSB/USDT:USDT | +10.12% | $4,754,819.01 |
+| STG/USDT:USDT | +41.88% | $13,224,840.86 |
+| ZORA/USDT:USDT | +16.01% | $1,126,914.40 |
+| BSB/USDT:USDT | +9.99% | $4,794,428.35 |
+| UB/USDT:USDT | +9.74% | $6,911,396.67 |
+| HOME/USDT:USDT | +9.07% | $2,573,457.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +4.33% | +4.51% |
-| LAB/USDT:USDT | below_1h_threshold | +3.92% | +4.09% |
-| UB/USDT:USDT | below_1h_threshold | +2.81% | +2.98% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.46% | +2.64% |
-| AIA/USDT:USDT | below_1h_threshold | +1.06% | +1.24% |
+| ZORA/USDT:USDT | below_1h_threshold | +4.42% | +4.53% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +4.17% | +4.28% |
+| UB/USDT:USDT | below_1h_threshold | +2.17% | +2.27% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.59% | +1.70% |
+| FET/USDT:USDT | below_1h_threshold | +1.46% | +1.57% |
 
 ## 5. 次に見るべき不足
 
