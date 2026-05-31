@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T01:55:35.599500+00:00
+- generated_at: 2026-05-31T02:00:20.429391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5163**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T01:55:32.931406+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=74045.0
-- Funnel: target 773 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.2 >= 65=1
+- 更新: 2026-05-31T02:00:17.554059+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=74021.2
+- Funnel: target 773 → liquid 121 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.5 >= 65=1, 4h RSI 91.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +50.51% | $8,287,600.18 |
-| TA/USDT:USDT | +29.66% | $2,148,347.42 |
-| STG/USDT:USDT | +14.75% | $3,708,431.07 |
-| ONDO/USDT:USDT | +9.71% | $36,418,225.68 |
-| ID/USDT:USDT | +8.26% | $4,616,104.90 |
+| PORTAL/USDT:USDT | +52.15% | $8,345,173.86 |
+| TA/USDT:USDT | +29.17% | $2,155,292.69 |
+| STG/USDT:USDT | +13.68% | $3,713,364.36 |
+| NFP/USDT:USDT | +13.41% | $4,310,773.40 |
+| ONDO/USDT:USDT | +8.93% | $36,754,344.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ID/USDT:USDT | below_1h_threshold | +3.13% | +3.07% |
-| NFP/USDT:USDT | below_1h_threshold | +3.08% | +3.02% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.39% | +1.33% |
-| LAB/USDT:USDT | below_1h_threshold | +1.29% | +1.23% |
-| LIT/USDT:USDT | below_1h_threshold | +1.12% | +1.07% |
+| LAB/USDT:USDT | below_1h_threshold | +1.39% | +1.36% |
+| AR/USDT:USDT | below_1h_threshold | +1.04% | +1.01% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.03% | +1.01% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.87% |
+| SPX/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
 
 ## 5. 次に見るべき不足
 
