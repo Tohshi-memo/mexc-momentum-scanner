@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T22:50:10.308392+00:00
+- generated_at: 2026-05-31T22:54:00.757778+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5238**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T22:50:06.374254+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=73909.7
+- 更新: 2026-05-31T22:53:58.494702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=73927.2
 - Funnel: target 773 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.8 >= 65=1, 4h RSI 76.9 >= 65=1
+- Strict後reject: 4h RSI 91.2 >= 65=1, 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +112.17% | $16,220,177.49 |
-| STG/USDT:USDT | +46.04% | $20,053,802.81 |
-| H/USDT:USDT | +16.85% | $12,175,893.87 |
-| HOME/USDT:USDT | +14.08% | $3,085,217.67 |
-| ZORA/USDT:USDT | +11.10% | $1,624,684.94 |
+| PORTAL/USDT:USDT | +101.41% | $16,531,534.78 |
+| STG/USDT:USDT | +43.47% | $20,218,673.46 |
+| H/USDT:USDT | +19.05% | $12,334,592.23 |
+| HOME/USDT:USDT | +13.69% | $3,089,341.98 |
+| ZORA/USDT:USDT | +11.49% | $1,625,018.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.20% | +3.13% |
-| NEX/USDT:USDT | below_1h_threshold | +2.79% | +2.73% |
-| LIT/USDT:USDT | below_1h_threshold | +2.48% | +2.41% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.14% | +2.08% |
-| DYDX/USDT:USDT | below_1h_threshold | +2.00% | +1.94% |
+| LIT/USDT:USDT | below_1h_threshold | +3.77% | +3.68% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.36% | +3.27% |
+| NEX/USDT:USDT | below_1h_threshold | +2.65% | +2.56% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.16% | +2.07% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.82% | +1.73% |
 
 ## 5. 次に見るべき不足
 
