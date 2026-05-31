@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-05-31T13:45:09.779796+00:00
+- generated_at: 2026-05-31T13:50:16.834430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5193**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-05-31T13:45:05.227621+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=73867.1
+- 更新: 2026-05-31T13:50:12.239855+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=73830.3
 - Funnel: target 773 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +47.98% | $8,645,881.30 |
-| AIA/USDT:USDT | +47.41% | $3,651,463.58 |
-| GUN/USDT:USDT | +28.53% | $1,234,290.69 |
-| STG/USDT:USDT | +26.01% | $4,547,157.82 |
-| PORTAL/USDT:USDT | +22.02% | $10,995,811.32 |
+| AIA/USDT:USDT | +48.66% | $3,704,487.06 |
+| PLAY/USDT:USDT | +46.21% | $8,843,505.51 |
+| GUN/USDT:USDT | +26.73% | $1,425,595.70 |
+| STG/USDT:USDT | +26.61% | $4,600,555.82 |
+| PORTAL/USDT:USDT | +22.71% | $11,004,289.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HIVE/USDT:USDT | below_1h_threshold | +3.70% | +3.73% |
-| HOME/USDT:USDT | below_1h_threshold | +3.56% | +3.59% |
-| AIA/USDT:USDT | below_1h_threshold | +3.04% | +3.08% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.62% | +2.65% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +2.16% | +2.19% |
+| HOME/USDT:USDT | below_1h_threshold | +4.71% | +4.80% |
+| AIA/USDT:USDT | below_1h_threshold | +4.05% | +4.13% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.35% | +3.43% |
+| HIVE/USDT:USDT | below_1h_threshold | +3.03% | +3.12% |
+| STG/USDT:USDT | below_1h_threshold | +3.00% | +3.09% |
 
 ## 5. 次に見るべき不足
 
