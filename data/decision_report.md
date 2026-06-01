@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T06:45:49.841632+00:00
+- generated_at: 2026-06-01T06:50:47.174327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5283**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T06:45:46.809248+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.50% price=72950.1
-- Funnel: target 778 → liquid 137 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.7 >= 65=1, 4h RSI 87.5 >= 65=1
+- 更新: 2026-06-01T06:50:44.194799+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=73177.3
+- Funnel: target 778 → liquid 137 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.1 >= 65=1, 4h RSI 87.5 >= 65=1, 4h RSI 78.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +151.08% | $31,815,286.80 |
-| SLX/USDT:USDT | +129.79% | $2,599,233.22 |
-| H/USDT:USDT | +72.05% | $24,529,703.06 |
-| CTR/USDT:USDT | +26.24% | $1,608,552.57 |
-| LAB/USDT:USDT | +24.08% | $193,464,188.57 |
+| PORTAL/USDT:USDT | +149.80% | $31,954,682.38 |
+| SLX/USDT:USDT | +131.87% | $2,696,494.93 |
+| H/USDT:USDT | +71.34% | $24,665,189.17 |
+| LAB/USDT:USDT | +27.01% | $194,332,590.95 |
+| STG/USDT:USDT | +25.04% | $24,013,854.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.73% | +5.23% |
-| XLM/USDT:USDT | below_1h_threshold | +3.81% | +4.31% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.54% | +2.04% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.22% | +1.72% |
-| GUA/USDT:USDT | below_1h_threshold | +1.19% | +1.69% |
+| XLM/USDT:USDT | below_1h_threshold | +4.76% | +4.95% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.65% | +2.84% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.46% | +1.65% |
+| VVV/USDT:USDT | below_1h_threshold | +1.37% | +1.56% |
+| GUA/USDT:USDT | below_1h_threshold | +1.22% | +1.41% |
 
 ## 5. 次に見るべき不足
 
