@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-01T17:26:24.552431+00:00
+- generated_at: 2026-06-01T17:32:04.598821+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5345**
+- closed shadow trades: **5346**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5345, expectancy=-0.05%
+- 全期間 MARKET基準: n=5346, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.39%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +2.39% | **+1.07%** |
+| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +3.19% | **+1.27%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.45% | **+0.80%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.60% | **+0.51%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.83% | **+0.33%** |
-| LIMIT_ATR_LONG | 13/20 | 65.0% | +0.30% | **+0.20%** |
+| LIMIT_5PCT_LONG | 9/20 | 45.0% | +0.47% | **+0.21%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,38 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.03** / 初期 $100.00 (+31.03%)
-- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 1012件
+- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 1013件
 - 成長率目線: 平均log +0.000302 / 幾何平均 +0.030% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $131.03
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T17:26:19.639695+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=71512.7
-- Funnel: target 776 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-01T17:32:02.002805+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=71660.0
+- Funnel: target 773 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +15.21% | $1,837,008.25 |
-| MERL/USDT:USDT | +6.52% | $1,730,525.69 |
-| ESPORTS/USDT:USDT | +5.47% | $1,973,866.75 |
-| JUP/USDT:USDT | +4.74% | $2,620,635.73 |
-| TRUMPOFFICIAL/USDT:USDT | +4.50% | $2,825,157.92 |
+| VIC/USDT:USDT | +13.70% | $1,848,700.00 |
+| ESPORTS/USDT:USDT | +9.28% | $2,016,057.26 |
+| MERL/USDT:USDT | +8.45% | $1,744,318.85 |
+| JUP/USDT:USDT | +5.00% | $2,641,365.22 |
+| VIRTUAL/USDT:USDT | +4.89% | $6,290,292.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CTR/USDT:USDT | below_1h_threshold | +2.99% | +3.02% |
-| JUP/USDT:USDT | below_1h_threshold | +1.34% | +1.37% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.31% | +1.34% |
-| OP/USDT:USDT | below_1h_threshold | +1.26% | +1.29% |
-| MYX/USDT:USDT | below_1h_threshold | +1.18% | +1.22% |
+| VIC/USDT:USDT | below_1h_threshold | +4.06% | +3.89% |
+| CTR/USDT:USDT | below_1h_threshold | +4.04% | +3.87% |
+| APE/USDT:USDT | below_1h_threshold | +2.33% | +2.16% |
+| VVV/USDT:USDT | below_1h_threshold | +2.12% | +1.95% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.88% | +1.71% |
 
 ## 5. 次に見るべき不足
 
