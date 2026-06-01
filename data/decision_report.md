@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T04:01:30.046447+00:00
+- generated_at: 2026-06-01T04:06:32.139165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5269**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T04:01:27.752209+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=73774.0
+- 更新: 2026-06-01T04:06:29.869383+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=73677.0
 - Funnel: target 777 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +159.23% | $28,038,324.65 |
-| H/USDT:USDT | +58.41% | $21,431,743.65 |
-| STG/USDT:USDT | +33.10% | $22,742,433.72 |
-| FHE/USDT:USDT | +24.18% | $1,097,662.03 |
-| WLD/USDT:USDT | +22.45% | $59,571,812.96 |
+| PORTAL/USDT:USDT | +164.48% | $28,155,875.45 |
+| H/USDT:USDT | +60.76% | $21,510,307.80 |
+| STG/USDT:USDT | +31.26% | $22,794,821.04 |
+| FHE/USDT:USDT | +25.27% | $1,103,212.06 |
+| WLD/USDT:USDT | +22.20% | $59,971,114.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.47% | +2.41% |
-| INJ/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.70% | +0.65% |
-| WLD/USDT:USDT | below_1h_threshold | +0.58% | +0.53% |
-| ICP/USDT:USDT | below_1h_threshold | +0.53% | +0.47% |
+| H/USDT:USDT | below_1h_threshold | +4.03% | +4.10% |
+| PORTAL/USDT:USDT | below_1h_threshold | +0.95% | +1.03% |
+| CTR/USDT:USDT | below_1h_threshold | +0.86% | +0.94% |
+| MEGA/USDT:USDT | below_1h_threshold | +0.85% | +0.92% |
+| FHE/USDT:USDT | below_1h_threshold | +0.81% | +0.88% |
 
 ## 5. 次に見るべき不足
 
