@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T19:49:27.286172+00:00
+- generated_at: 2026-06-01T19:54:38.654524+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5361**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T19:49:21.689076+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=71520.8
-- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1, 4h RSI 72.9 >= 65=1
+- 更新: 2026-06-01T19:54:31.133849+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=71519.2
+- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.3 >= 65=1, 4h RSI 72.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +33.09% | $5,067,395.54 |
-| WLD/USDT:USDT | +13.88% | $113,155,984.89 |
-| PORTAL/USDT:USDT | +12.98% | $43,253,246.54 |
-| MERL/USDT:USDT | +12.17% | $1,716,468.14 |
-| VIC/USDT:USDT | +11.45% | $2,053,792.40 |
+| ESPORTS/USDT:USDT | +34.76% | $5,099,427.01 |
+| WLD/USDT:USDT | +14.19% | $114,197,020.22 |
+| PORTAL/USDT:USDT | +12.46% | $43,388,398.62 |
+| VIC/USDT:USDT | +11.34% | $2,056,835.12 |
+| MERL/USDT:USDT | +11.08% | $1,721,112.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.00% | +3.93% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.87% | +2.80% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.52% | +2.45% |
-| RENDER/USDT:USDT | below_1h_threshold | +2.48% | +2.41% |
-| SEI/USDT:USDT | below_1h_threshold | +2.37% | +2.30% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.58% | +3.51% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.03% | +2.96% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.47% | +2.40% |
+| UB/USDT:USDT | below_1h_threshold | +2.37% | +2.30% |
+| SEI/USDT:USDT | below_1h_threshold | +2.34% | +2.27% |
 
 ## 5. 次に見るべき不足
 
