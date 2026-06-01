@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T18:06:22.387799+00:00
+- generated_at: 2026-06-01T18:11:24.650899+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5354**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T18:06:19.242513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=71571.4
-- Funnel: target 773 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-01T18:11:22.356745+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=71531.0
+- Funnel: target 773 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +41.19% | $3,108,288.28 |
-| VIC/USDT:USDT | +16.19% | $1,904,699.72 |
-| MERL/USDT:USDT | +9.40% | $1,721,243.74 |
-| FET/USDT:USDT | +6.63% | $39,854,484.61 |
-| JUP/USDT:USDT | +6.39% | $2,696,248.96 |
+| ESPORTS/USDT:USDT | +39.28% | $3,247,647.26 |
+| VIC/USDT:USDT | +20.05% | $1,918,000.40 |
+| MERL/USDT:USDT | +8.91% | $1,722,475.73 |
+| FET/USDT:USDT | +7.51% | $40,512,652.85 |
+| TONCOIN/USDT:USDT | +6.24% | $66,815,131.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.49% | +3.55% |
-| MERL/USDT:USDT | below_1h_threshold | +3.14% | +3.20% |
-| UP/USDT:USDT | below_1h_threshold | +1.94% | +2.01% |
-| WLD/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
-| SLX/USDT:USDT | below_1h_threshold | +1.05% | +1.11% |
+| WLD/USDT:USDT | below_1h_threshold | +2.68% | +2.80% |
+| MERL/USDT:USDT | below_1h_threshold | +2.61% | +2.73% |
+| SLX/USDT:USDT | below_1h_threshold | +1.81% | +1.93% |
+| VIC/USDT:USDT | below_1h_threshold | +1.55% | +1.67% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.32% | +1.44% |
 
 ## 5. 次に見るべき不足
 
