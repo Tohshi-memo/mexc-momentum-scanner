@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T19:24:30.285446+00:00
+- generated_at: 2026-06-01T19:27:48.205411+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5357**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T19:24:24.970416+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=71435.9
-- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1
+- 更新: 2026-06-01T19:27:43.608716+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=71492.3
+- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1, 4h RSI 87.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +36.66% | $4,719,633.88 |
-| VIC/USDT:USDT | +13.02% | $2,029,031.69 |
-| MERL/USDT:USDT | +9.61% | $1,626,475.42 |
-| NEAR/USDT:USDT | +8.93% | $115,552,051.72 |
-| UB/USDT:USDT | +8.67% | $2,651,201.55 |
+| ESPORTS/USDT:USDT | +37.61% | $4,756,119.78 |
+| VIC/USDT:USDT | +13.24% | $2,030,524.82 |
+| MERL/USDT:USDT | +10.45% | $1,635,553.47 |
+| PORTAL/USDT:USDT | +9.90% | $42,546,377.10 |
+| NEAR/USDT:USDT | +9.23% | $118,174,805.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.75% | +4.79% |
-| WLD/USDT:USDT | below_1h_threshold | +3.67% | +3.72% |
-| UAI/USDT:USDT | below_1h_threshold | +3.18% | +3.23% |
-| UB/USDT:USDT | below_1h_threshold | +1.89% | +1.94% |
-| SEI/USDT:USDT | below_1h_threshold | +1.79% | +1.84% |
+| WLD/USDT:USDT | below_1h_threshold | +4.29% | +4.26% |
+| UAI/USDT:USDT | below_1h_threshold | +3.15% | +3.12% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
+| MYX/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
+| SEI/USDT:USDT | below_1h_threshold | +2.05% | +2.02% |
 
 ## 5. 次に見るべき不足
 
