@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-01T11:14:38.291776+00:00
+- generated_at: 2026-06-01T11:19:53.255084+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5309**
+- closed shadow trades: **5310**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.37% / filled 20/20。**
-- 全期間 MARKET基準: n=5309, expectancy=-0.05%
+- 全期間 MARKET基準: n=5310, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+1.37%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT | 17/20 | 85.0% | +2.12% | **+1.80%** |
+| LIMIT_2PCT | 17/20 | 85.0% | +2.00% | **+1.70%** |
 | MARKET | 20/20 | 100.0% | +1.37% | **+1.37%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +1.03% | **+0.93%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +0.97% | **+0.88%** |
 | ASK | 20/20 | 100.0% | +0.85% | **+0.85%** |
-| LIMIT_FIB1272 | 4/20 | 20.0% | +3.53% | **+0.71%** |
+| LIMIT_FIB1272 | 5/20 | 25.0% | +2.92% | **+0.73%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.03** / 初期 $100.00 (+31.03%)
-- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 976件
+- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 977件
 - 成長率目線: 平均log +0.000302 / 幾何平均 +0.030% per trade / maxDD +7.25%
-- 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $131.03
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T11:14:35.782112+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=72660.2
-- Funnel: target 776 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-01T11:19:50.386464+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=72689.4
+- Funnel: target 776 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.5 >= 65=1
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +142.30% | $36,067,296.81 |
-| SLX/USDT:USDT | +106.13% | $7,576,916.36 |
-| H/USDT:USDT | +93.70% | $32,780,454.10 |
-| LAB/USDT:USDT | +70.60% | $225,259,292.92 |
-| VIC/USDT:USDT | +63.99% | $1,043,534.58 |
+| PORTAL/USDT:USDT | +138.20% | $36,154,421.56 |
+| SLX/USDT:USDT | +104.54% | $7,610,608.84 |
+| H/USDT:USDT | +89.61% | $32,947,897.06 |
+| LAB/USDT:USDT | +69.90% | $226,833,150.76 |
+| VIC/USDT:USDT | +59.57% | $1,057,780.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +2.22% | +2.31% |
-| H/USDT:USDT | below_1h_threshold | +2.18% | +2.27% |
-| CTR/USDT:USDT | below_1h_threshold | +1.77% | +1.86% |
-| LAB/USDT:USDT | below_1h_threshold | +1.64% | +1.73% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.69% |
+| XLM/USDT:USDT | below_1h_threshold | +1.98% | +2.04% |
+| STG/USDT:USDT | below_1h_threshold | +1.97% | +2.02% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.65% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
+| CTR/USDT:USDT | below_1h_threshold | +1.34% | +1.39% |
 
 ## 5. 次に見るべき不足
 
