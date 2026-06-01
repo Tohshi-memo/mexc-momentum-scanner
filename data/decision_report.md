@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T19:38:49.332274+00:00
+- generated_at: 2026-06-01T19:44:07.244698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5359**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T19:38:43.918069+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=71567.5
-- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.4 >= 65=1, 4h RSI 71.2 >= 65=1
+- 更新: 2026-06-01T19:44:02.121777+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=71525.5
+- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.0 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 87.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +33.09% | $4,968,589.06 |
-| VIC/USDT:USDT | +12.56% | $2,041,440.65 |
-| MERL/USDT:USDT | +10.70% | $1,652,486.66 |
-| WLD/USDT:USDT | +10.27% | $110,378,211.09 |
-| NEAR/USDT:USDT | +10.10% | $122,666,633.96 |
+| ESPORTS/USDT:USDT | +33.80% | $5,005,720.88 |
+| VIC/USDT:USDT | +13.24% | $2,044,481.13 |
+| MERL/USDT:USDT | +11.82% | $1,664,729.41 |
+| WLD/USDT:USDT | +11.07% | $111,269,137.12 |
+| PORTAL/USDT:USDT | +10.61% | $43,108,776.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.60% | +4.46% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.76% | +2.62% |
-| RENDER/USDT:USDT | below_1h_threshold | +2.67% | +2.54% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.65% | +2.51% |
-| UB/USDT:USDT | below_1h_threshold | +2.42% | +2.28% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.70% | +2.62% |
+| UB/USDT:USDT | below_1h_threshold | +2.46% | +2.38% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.34% | +2.26% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.25% | +2.17% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.15% | +2.07% |
 
 ## 5. 次に見るべき不足
 
