@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T16:43:18.351994+00:00
+- generated_at: 2026-06-01T16:49:03.183820+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5341**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T16:43:14.642157+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=71301.1
-- Funnel: target 776 → liquid 134 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1, 4h RSI 74.8 >= 65=1, 4h RSI 73.9 >= 65=1
+- 更新: 2026-06-01T16:48:58.005580+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.39% price=71380.1
+- Funnel: target 776 → liquid 134 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +19.33% | $1,731,999.73 |
-| SKYAI/USDT:USDT | +8.44% | $4,086,914.62 |
-| TONCOIN/USDT:USDT | +7.49% | $61,953,643.22 |
-| MERL/USDT:USDT | +5.33% | $1,699,476.68 |
-| LAB/USDT:USDT | +4.85% | $235,067,949.00 |
+| VIC/USDT:USDT | +11.92% | $1,760,951.25 |
+| TONCOIN/USDT:USDT | +9.20% | $63,123,661.86 |
+| SKYAI/USDT:USDT | +8.82% | $4,140,651.96 |
+| WLD/USDT:USDT | +5.05% | $91,715,214.50 |
+| MERL/USDT:USDT | +4.80% | $1,718,152.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.94% | +4.66% |
-| WLD/USDT:USDT | below_1h_threshold | +4.62% | +4.34% |
-| AIA/USDT:USDT | below_1h_threshold | +4.45% | +4.16% |
-| HOME/USDT:USDT | below_1h_threshold | +4.05% | +3.77% |
-| INJ/USDT:USDT | below_1h_threshold | +3.59% | +3.30% |
+| WLD/USDT:USDT | below_relative_strength | +5.21% | +4.82% |
+| MERL/USDT:USDT | below_1h_threshold | +4.81% | +4.41% |
+| ICP/USDT:USDT | below_1h_threshold | +4.49% | +4.09% |
+| AIA/USDT:USDT | below_1h_threshold | +4.26% | +3.87% |
+| HOME/USDT:USDT | below_1h_threshold | +4.19% | +3.80% |
 
 ## 5. 次に見るべき不足
 
