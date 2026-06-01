@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T03:21:09.649663+00:00
+- generated_at: 2026-06-01T03:26:07.348124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5268**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T03:21:06.863956+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=73894.8
+- 更新: 2026-06-01T03:26:04.829586+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=73883.4
 - Funnel: target 777 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.0 >= 65=1
+- Strict後reject: 4h RSI 88.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +155.96% | $27,170,438.05 |
-| H/USDT:USDT | +65.64% | $20,603,213.04 |
-| STG/USDT:USDT | +35.92% | $22,664,908.24 |
-| FHE/USDT:USDT | +25.09% | $1,055,992.32 |
-| WLD/USDT:USDT | +20.19% | $58,695,397.40 |
+| PORTAL/USDT:USDT | +159.48% | $27,466,409.64 |
+| H/USDT:USDT | +61.89% | $20,761,926.56 |
+| STG/USDT:USDT | +35.16% | $22,688,657.03 |
+| FHE/USDT:USDT | +27.66% | $1,062,864.82 |
+| WLD/USDT:USDT | +20.84% | $59,001,773.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.53% | +2.36% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.61% | +1.44% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.43% | +1.26% |
-| VVV/USDT:USDT | below_1h_threshold | +1.06% | +0.89% |
-| APE/USDT:USDT | below_1h_threshold | +1.05% | +0.88% |
+| WLD/USDT:USDT | below_1h_threshold | +2.93% | +2.77% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.89% | +1.73% |
+| ICP/USDT:USDT | below_1h_threshold | +1.68% | +1.52% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.36% | +1.20% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +1.30% | +1.14% |
 
 ## 5. 次に見るべき不足
 
