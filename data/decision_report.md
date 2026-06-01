@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T12:45:42.784142+00:00
+- generated_at: 2026-06-01T12:50:57.943654+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5318**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T12:45:39.722130+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=72267.4
+- 更新: 2026-06-01T12:50:55.155869+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=72120.3
 - Funnel: target 776 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.1 >= 65=1, 4h RSI 86.7 >= 65=1
+- Strict後reject: 4h RSI 90.8 >= 65=1, 4h RSI 86.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +137.17% | $37,618,271.90 |
-| H/USDT:USDT | +110.35% | $37,267,695.08 |
-| SLX/USDT:USDT | +92.77% | $8,496,118.83 |
-| LAB/USDT:USDT | +72.93% | $235,690,454.55 |
-| VIC/USDT:USDT | +62.37% | $1,326,330.58 |
+| PORTAL/USDT:USDT | +136.02% | $37,702,517.89 |
+| H/USDT:USDT | +104.02% | $38,005,238.29 |
+| SLX/USDT:USDT | +93.31% | $8,535,134.63 |
+| LAB/USDT:USDT | +74.47% | $236,222,349.35 |
+| VIC/USDT:USDT | +65.10% | $1,336,125.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +4.51% | +4.76% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.55% | +2.80% |
-| INJ/USDT:USDT | below_1h_threshold | +2.42% | +2.67% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.40% | +2.65% |
-| STG/USDT:USDT | below_1h_threshold | +2.31% | +2.56% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +4.71% | +5.16% |
+| HOME/USDT:USDT | below_1h_threshold | +3.72% | +4.17% |
+| FHE/USDT:USDT | below_1h_threshold | +3.07% | +3.53% |
+| XLM/USDT:USDT | below_1h_threshold | +2.95% | +3.41% |
+| UP/USDT:USDT | below_1h_threshold | +2.73% | +3.18% |
 
 ## 5. 次に見るべき不足
 
