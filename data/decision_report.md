@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-06-01T07:05:52.617298+00:00
+- generated_at: 2026-06-01T07:10:49.123284+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5285**
+- closed shadow trades: **5286**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.95% / filled 20/20。**
-- 全期間 MARKET基準: n=5285, expectancy=-0.05%
-- 直近20件 MARKET基準: n=20, expectancy=+1.95%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.40% / filled 20/20。**
+- 全期間 MARKET基準: n=5286, expectancy=-0.05%
+- 直近20件 MARKET基準: n=20, expectancy=+1.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.95% | **+1.95%** |
+| MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +2.30% | **+2.30%** |
-| MARKET | 20/20 | 100.0% | +1.95% | **+1.95%** |
-| LIMIT_2PCT | 17/20 | 85.0% | +1.78% | **+1.51%** |
-| LIMIT_ATR | 14/20 | 70.0% | +1.71% | **+1.20%** |
+| ASK | 20/20 | 100.0% | +1.73% | **+1.73%** |
+| MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
 | LIMIT_1PCT | 17/20 | 85.0% | +1.30% | **+1.11%** |
+| LIMIT_2PCT | 17/20 | 85.0% | +1.19% | **+1.02%** |
+| LIMIT_ATR | 14/20 | 70.0% | +1.10% | **+0.77%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_5PCT_LONG | 11/20 | 55.0% | +0.61% | **+0.34%** |
+| LIMIT_5PCT_LONG | 11/20 | 55.0% | +1.53% | **+0.84%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +1.23% | **+0.43%** |
 | LIMIT_2PCT_LONG | 17/20 | 85.0% | +0.39% | **+0.33%** |
-| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +0.70% | **+0.28%** |
 | LIMIT_FIB1618_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
-| LIMIT_9PCT_LONG | 6/20 | 30.0% | -0.60% | **-0.18%** |
+| LIMIT_6PCT_LONG | 10/20 | 50.0% | -0.03% | **-0.01%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.03** / 初期 $100.00 (+31.03%)
-- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 952件
+- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 953件
 - 成長率目線: 平均log +0.000302 / 幾何平均 +0.030% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $131.03
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T07:05:50.328959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=73128.0
+- 更新: 2026-06-01T07:10:46.487772+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=73169.8
 - Funnel: target 773 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +151.34% | $32,120,272.10 |
-| SLX/USDT:USDT | +124.31% | $3,084,291.12 |
-| H/USDT:USDT | +73.95% | $24,704,516.13 |
-| LAB/USDT:USDT | +25.75% | $190,801,492.46 |
-| CTR/USDT:USDT | +24.76% | $1,610,570.53 |
+| PORTAL/USDT:USDT | +151.92% | $32,254,759.15 |
+| SLX/USDT:USDT | +117.96% | $3,146,701.00 |
+| H/USDT:USDT | +75.50% | $24,889,939.94 |
+| LAB/USDT:USDT | +27.58% | $191,296,255.50 |
+| STG/USDT:USDT | +25.76% | $24,057,980.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +4.58% | +4.55% |
-| FHE/USDT:USDT | below_1h_threshold | +2.67% | +2.64% |
-| HOME/USDT:USDT | below_1h_threshold | +2.64% | +2.61% |
-| MYX/USDT:USDT | below_1h_threshold | +1.54% | +1.51% |
-| H/USDT:USDT | below_1h_threshold | +0.95% | +0.92% |
+| FHE/USDT:USDT | below_1h_threshold | +2.56% | +2.47% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.17% | +2.09% |
+| H/USDT:USDT | below_1h_threshold | +2.06% | +1.98% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.88% | +1.79% |
+| SLX/USDT:USDT | below_1h_threshold | +1.79% | +1.70% |
 
 ## 5. 次に見るべき不足
 
