@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T20:43:00.454841+00:00
+- generated_at: 2026-06-01T20:48:02.974297+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5365**
 
@@ -54,10 +54,10 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T20:42:54.832417+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=71547.2
-- Funnel: target 773 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-01T20:48:00.420795+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=71555.1
+- Funnel: target 773 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +35.47% | $5,627,849.10 |
-| SLX/USDT:USDT | +15.41% | $11,819,219.83 |
-| VIC/USDT:USDT | +15.29% | $2,114,538.54 |
-| PLAY/USDT:USDT | +15.15% | $7,721,110.10 |
-| PORTAL/USDT:USDT | +10.42% | $44,275,068.75 |
+| ESPORTS/USDT:USDT | +35.47% | $5,665,982.74 |
+| PLAY/USDT:USDT | +16.17% | $7,760,727.02 |
+| SLX/USDT:USDT | +15.60% | $11,832,514.01 |
+| NEAR/USDT:USDT | +11.80% | $130,210,020.30 |
+| VIC/USDT:USDT | +11.11% | $2,120,038.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.27% | +3.30% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.09% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.47% | +2.50% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.17% | +2.20% |
-| W/USDT:USDT | below_1h_threshold | +1.46% | +1.49% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.27% | +3.29% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.26% | +3.28% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.11% | +3.13% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.98% | +3.01% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.25% |
 
 ## 5. 次に見るべき不足
 
