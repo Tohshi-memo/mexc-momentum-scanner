@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T18:37:11.321990+00:00
+- generated_at: 2026-06-01T18:42:29.560195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5355**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T18:37:08.630912+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=71609.9
-- Funnel: target 773 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
+- 更新: 2026-06-01T18:42:23.815071+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=71567.4
+- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +25.00% | $3,953,277.44 |
-| VIC/USDT:USDT | +17.67% | $1,972,832.52 |
-| MERL/USDT:USDT | +10.45% | $1,771,350.31 |
-| WLD/USDT:USDT | +10.04% | $100,068,570.86 |
-| ARKM/USDT:USDT | +8.00% | $1,037,564.18 |
+| ESPORTS/USDT:USDT | +28.57% | $4,018,703.78 |
+| VIC/USDT:USDT | +16.04% | $1,988,388.99 |
+| WLD/USDT:USDT | +10.40% | $101,231,389.61 |
+| MERL/USDT:USDT | +9.89% | $1,772,330.88 |
+| ARKM/USDT:USDT | +7.57% | $1,047,265.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.43% | +4.44% |
-| MERL/USDT:USDT | below_1h_threshold | +4.07% | +4.08% |
-| SLX/USDT:USDT | below_1h_threshold | +3.53% | +3.54% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.06% | +3.07% |
-| ARKM/USDT:USDT | below_1h_threshold | +3.03% | +3.04% |
+| MERL/USDT:USDT | below_1h_threshold | +3.54% | +3.61% |
+| SLX/USDT:USDT | below_1h_threshold | +3.28% | +3.35% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.20% | +3.27% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.89% | +2.96% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.82% | +2.89% |
 
 ## 5. 次に見るべき不足
 
