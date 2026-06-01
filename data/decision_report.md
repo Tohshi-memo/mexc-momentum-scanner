@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T10:59:32.660435+00:00
+- generated_at: 2026-06-01T11:04:40.757431+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5309**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T10:59:27.497849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=72721.8
-- Funnel: target 776 → liquid 133 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-01T11:04:38.338446+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=72708.7
+- Funnel: target 776 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +141.98% | $36,300,489.84 |
-| SLX/USDT:USDT | +110.51% | $7,302,679.71 |
-| H/USDT:USDT | +88.59% | $32,693,561.19 |
-| LAB/USDT:USDT | +72.07% | $228,873,743.00 |
-| VIC/USDT:USDT | +65.30% | $1,012,340.12 |
+| PORTAL/USDT:USDT | +140.57% | $35,885,310.71 |
+| SLX/USDT:USDT | +100.93% | $7,429,450.65 |
+| H/USDT:USDT | +91.86% | $32,365,737.34 |
+| LAB/USDT:USDT | +71.94% | $221,343,001.98 |
+| VIC/USDT:USDT | +68.11% | $1,011,082.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +4.05% | +4.23% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.29% | +3.47% |
-| H/USDT:USDT | below_1h_threshold | +2.31% | +2.49% |
-| LAB/USDT:USDT | below_1h_threshold | +1.97% | +2.14% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.82% |
+| MERL/USDT:USDT | below_1h_threshold | +2.30% | +2.33% |
+| CTR/USDT:USDT | below_1h_threshold | +2.25% | +2.27% |
+| HOME/USDT:USDT | below_1h_threshold | +2.01% | +2.03% |
+| LAB/USDT:USDT | below_1h_threshold | +1.98% | +2.00% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.94% |
 
 ## 5. 次に見るべき不足
 
