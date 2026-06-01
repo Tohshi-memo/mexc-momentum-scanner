@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T11:04:40.757431+00:00
+- generated_at: 2026-06-01T11:09:40.505629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5309**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T11:04:38.338446+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=72708.7
-- Funnel: target 776 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-01T11:09:37.993691+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=72715.9
+- Funnel: target 776 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +140.57% | $35,885,310.71 |
-| SLX/USDT:USDT | +100.93% | $7,429,450.65 |
-| H/USDT:USDT | +91.86% | $32,365,737.34 |
-| LAB/USDT:USDT | +71.94% | $221,343,001.98 |
-| VIC/USDT:USDT | +68.11% | $1,011,082.60 |
+| PORTAL/USDT:USDT | +143.46% | $35,995,213.73 |
+| SLX/USDT:USDT | +105.09% | $7,481,267.76 |
+| H/USDT:USDT | +86.79% | $32,584,545.97 |
+| LAB/USDT:USDT | +64.91% | $223,564,168.51 |
+| VIC/USDT:USDT | +60.37% | $1,024,182.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MERL/USDT:USDT | below_1h_threshold | +2.30% | +2.33% |
-| CTR/USDT:USDT | below_1h_threshold | +2.25% | +2.27% |
-| HOME/USDT:USDT | below_1h_threshold | +2.01% | +2.03% |
-| LAB/USDT:USDT | below_1h_threshold | +1.98% | +2.00% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.94% |
+| STG/USDT:USDT | below_1h_threshold | +2.25% | +2.27% |
+| CTR/USDT:USDT | below_1h_threshold | +1.88% | +1.89% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
+| XLM/USDT:USDT | below_1h_threshold | +1.41% | +1.43% |
 
 ## 5. 次に見るべき不足
 
