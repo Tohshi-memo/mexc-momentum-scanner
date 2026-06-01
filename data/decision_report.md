@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T20:48:02.974297+00:00
+- generated_at: 2026-06-01T20:53:15.566762+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5365**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T20:48:00.420795+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=71555.1
+- 更新: 2026-06-01T20:53:12.990335+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=71523.6
 - Funnel: target 773 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
+- Strict後reject: 4h RSI 65.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +35.47% | $5,665,982.74 |
-| PLAY/USDT:USDT | +16.17% | $7,760,727.02 |
-| SLX/USDT:USDT | +15.60% | $11,832,514.01 |
-| NEAR/USDT:USDT | +11.80% | $130,210,020.30 |
-| VIC/USDT:USDT | +11.11% | $2,120,038.33 |
+| ESPORTS/USDT:USDT | +35.00% | $5,697,243.32 |
+| PLAY/USDT:USDT | +15.88% | $7,795,730.71 |
+| SLX/USDT:USDT | +15.09% | $11,861,105.12 |
+| NEAR/USDT:USDT | +11.76% | $131,792,810.26 |
+| VIC/USDT:USDT | +11.62% | $2,121,487.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.27% | +3.29% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.26% | +3.28% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.11% | +3.13% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.98% | +3.01% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.25% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.90% | +2.97% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.81% | +2.88% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.75% | +2.82% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.67% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.39% | +2.46% |
 
 ## 5. 次に見るべき不足
 
