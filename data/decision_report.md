@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T18:47:31.401948+00:00
+- generated_at: 2026-06-01T18:52:41.447575+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5355**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T18:47:28.980897+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=71418.4
+- 更新: 2026-06-01T18:52:38.952133+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=71439.7
 - Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +26.42% | $4,111,918.10 |
-| VIC/USDT:USDT | +17.08% | $1,997,655.04 |
-| MERL/USDT:USDT | +10.59% | $1,776,867.19 |
-| WLD/USDT:USDT | +7.69% | $102,279,877.38 |
-| RENDER/USDT:USDT | +6.81% | $11,979,343.72 |
+| ESPORTS/USDT:USDT | +24.76% | $4,221,478.19 |
+| VIC/USDT:USDT | +18.50% | $2,001,906.83 |
+| MERL/USDT:USDT | +10.17% | $1,787,816.82 |
+| NEAR/USDT:USDT | +7.19% | $113,062,499.11 |
+| PLAY/USDT:USDT | +6.94% | $7,909,629.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +4.71% | +4.99% |
-| PLAY/USDT:USDT | below_1h_threshold | +4.22% | +4.49% |
-| SLX/USDT:USDT | below_1h_threshold | +4.20% | +4.48% |
-| MERL/USDT:USDT | below_1h_threshold | +4.20% | +4.48% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.70% | +2.97% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.45% | +4.70% |
+| MERL/USDT:USDT | below_1h_threshold | +3.80% | +4.05% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.22% | +3.47% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.13% | +3.38% |
+| SLX/USDT:USDT | below_1h_threshold | +2.77% | +3.02% |
 
 ## 5. 次に見るべき不足
 
