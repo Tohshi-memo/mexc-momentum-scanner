@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T04:06:32.139165+00:00
+- generated_at: 2026-06-01T04:12:11.303806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5269**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T04:06:29.869383+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=73677.0
+- 更新: 2026-06-01T04:12:09.102201+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=73562.9
 - Funnel: target 777 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +164.48% | $28,155,875.45 |
-| H/USDT:USDT | +60.76% | $21,510,307.80 |
-| STG/USDT:USDT | +31.26% | $22,794,821.04 |
-| FHE/USDT:USDT | +25.27% | $1,103,212.06 |
-| WLD/USDT:USDT | +22.20% | $59,971,114.61 |
+| PORTAL/USDT:USDT | +166.60% | $28,344,699.37 |
+| H/USDT:USDT | +60.36% | $21,577,084.29 |
+| STG/USDT:USDT | +33.53% | $22,821,757.46 |
+| FHE/USDT:USDT | +26.35% | $1,105,359.71 |
+| WLD/USDT:USDT | +20.69% | $60,491,198.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.03% | +4.10% |
-| PORTAL/USDT:USDT | below_1h_threshold | +0.95% | +1.03% |
-| CTR/USDT:USDT | below_1h_threshold | +0.86% | +0.94% |
-| MEGA/USDT:USDT | below_1h_threshold | +0.85% | +0.92% |
-| FHE/USDT:USDT | below_1h_threshold | +0.81% | +0.88% |
+| H/USDT:USDT | below_1h_threshold | +3.77% | +4.00% |
+| CTR/USDT:USDT | below_1h_threshold | +2.53% | +2.76% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.03% | +2.26% |
+| FHE/USDT:USDT | below_1h_threshold | +1.86% | +2.09% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.82% |
 
 ## 5. 次に見るべき不足
 
