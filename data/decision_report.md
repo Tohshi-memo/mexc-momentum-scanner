@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T10:26:30.252767+00:00
+- generated_at: 2026-06-01T10:31:26.600203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5303**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T10:26:27.548207+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=72644.4
-- Funnel: target 776 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.2 >= 65=1
+- 更新: 2026-06-01T10:31:23.727274+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=72755.2
+- Funnel: target 776 → liquid 130 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.0 >= 65=1, 4h RSI 87.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +145.44% | $35,766,866.18 |
-| H/USDT:USDT | +97.91% | $31,435,409.91 |
-| SLX/USDT:USDT | +92.88% | $6,911,758.42 |
-| LAB/USDT:USDT | +76.30% | $213,559,153.87 |
-| HOME/USDT:USDT | +17.82% | $5,161,867.98 |
+| PORTAL/USDT:USDT | +138.07% | $35,880,837.55 |
+| H/USDT:USDT | +97.63% | $31,627,967.50 |
+| SLX/USDT:USDT | +94.90% | $6,947,232.75 |
+| LAB/USDT:USDT | +79.57% | $215,821,611.00 |
+| HOME/USDT:USDT | +19.11% | $5,181,234.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +4.79% | +5.08% |
-| HEI/USDT:USDT | below_1h_threshold | +4.28% | +4.57% |
-| LAB/USDT:USDT | below_1h_threshold | +3.83% | +4.11% |
-| BILL/USDT:USDT | below_1h_threshold | +2.38% | +2.66% |
-| XLM/USDT:USDT | below_1h_threshold | +2.12% | +2.40% |
+| HEI/USDT:USDT | below_1h_threshold | +4.39% | +4.52% |
+| XLM/USDT:USDT | below_1h_threshold | +2.59% | +2.72% |
+| BILL/USDT:USDT | below_1h_threshold | +2.23% | +2.36% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.56% | +1.69% |
+| MERL/USDT:USDT | below_1h_threshold | +1.44% | +1.57% |
 
 ## 5. 次に見るべき不足
 
