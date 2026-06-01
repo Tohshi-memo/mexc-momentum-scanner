@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T18:11:24.650899+00:00
+- generated_at: 2026-06-01T18:16:29.909832+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5354**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T18:11:22.356745+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=71531.0
+- 更新: 2026-06-01T18:16:27.634393+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=71441.0
 - Funnel: target 773 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +39.28% | $3,247,647.26 |
-| VIC/USDT:USDT | +20.05% | $1,918,000.40 |
-| MERL/USDT:USDT | +8.91% | $1,722,475.73 |
-| FET/USDT:USDT | +7.51% | $40,512,652.85 |
-| TONCOIN/USDT:USDT | +6.24% | $66,815,131.57 |
+| ESPORTS/USDT:USDT | +32.38% | $3,464,615.52 |
+| VIC/USDT:USDT | +21.03% | $1,944,908.32 |
+| MERL/USDT:USDT | +8.91% | $1,735,430.25 |
+| FET/USDT:USDT | +6.94% | $41,993,836.64 |
+| WLD/USDT:USDT | +6.42% | $95,982,896.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.68% | +2.80% |
-| MERL/USDT:USDT | below_1h_threshold | +2.61% | +2.73% |
-| SLX/USDT:USDT | below_1h_threshold | +1.81% | +1.93% |
-| VIC/USDT:USDT | below_1h_threshold | +1.55% | +1.67% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.32% | +1.44% |
+| WLD/USDT:USDT | below_1h_threshold | +3.33% | +3.58% |
+| MERL/USDT:USDT | below_1h_threshold | +2.61% | +2.86% |
+| VIC/USDT:USDT | below_1h_threshold | +2.17% | +2.42% |
+| SLX/USDT:USDT | below_1h_threshold | +1.34% | +1.58% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.13% | +1.37% |
 
 ## 5. 次に見るべき不足
 
