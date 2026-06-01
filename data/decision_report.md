@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T13:42:12.151318+00:00
+- generated_at: 2026-06-01T13:47:20.339899+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5321**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T13:42:06.952663+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.67% price=71712.9
+- 更新: 2026-06-01T13:47:15.010257+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.74% price=71659.1
 - Funnel: target 776 → liquid 135 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- Strict後reject: 4h RSI 78.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +112.45% | $41,134,683.97 |
-| PORTAL/USDT:USDT | +103.07% | $39,208,295.21 |
-| SLX/USDT:USDT | +71.85% | $9,042,334.38 |
-| LAB/USDT:USDT | +68.84% | $233,472,032.49 |
-| VIC/USDT:USDT | +44.90% | $1,433,616.78 |
+| H/USDT:USDT | +108.93% | $41,563,225.76 |
+| PORTAL/USDT:USDT | +105.76% | $39,285,019.06 |
+| SLX/USDT:USDT | +72.39% | $9,098,862.15 |
+| LAB/USDT:USDT | +68.27% | $233,847,307.75 |
+| VIC/USDT:USDT | +47.61% | $1,450,404.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +3.42% | +4.09% |
-| UKOIL/USDT:USDT | below_1h_threshold | +3.18% | +3.85% |
-| STG/USDT:USDT | below_1h_threshold | +2.96% | +3.63% |
-| VRTSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +3.61% |
-| NEX/USDT:USDT | below_1h_threshold | +2.74% | +3.41% |
+| USOIL/USDT:USDT | below_1h_threshold | +3.69% | +4.43% |
+| UKOIL/USDT:USDT | below_1h_threshold | +3.37% | +4.11% |
+| NEX/USDT:USDT | below_1h_threshold | +2.86% | +3.60% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +3.20% |
+| VRTSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.93% |
 
 ## 5. 次に見るべき不足
 
