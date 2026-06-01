@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T14:45:00.195073+00:00
+- generated_at: 2026-06-01T14:50:17.892867+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5325**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T14:44:57.259861+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=71434.2
-- Funnel: target 776 → liquid 137 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.2 >= 65=1, 4h RSI 83.1 >= 65=1
+- 更新: 2026-06-01T14:50:14.782739+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=71501.7
+- Funnel: target 776 → liquid 138 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.5 >= 65=1, 4h RSI 87.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +104.22% | $43,950,462.80 |
-| LAB/USDT:USDT | +75.98% | $231,784,129.07 |
-| SLX/USDT:USDT | +72.78% | $9,800,450.89 |
-| PORTAL/USDT:USDT | +68.91% | $40,786,228.50 |
-| HOME/USDT:USDT | +45.44% | $6,918,781.20 |
+| H/USDT:USDT | +107.28% | $44,280,800.08 |
+| LAB/USDT:USDT | +77.17% | $232,283,217.75 |
+| SLX/USDT:USDT | +71.90% | $9,831,281.86 |
+| PORTAL/USDT:USDT | +66.41% | $40,914,010.87 |
+| HOME/USDT:USDT | +51.59% | $7,014,492.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.98% | +5.35% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +4.01% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.62% | +3.99% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.77% |
-| SLX/USDT:USDT | below_1h_threshold | +3.21% | +3.57% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +4.70% | +4.98% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +4.46% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.26% |
+| STG/USDT:USDT | below_1h_threshold | +3.13% | +3.40% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.09% | +3.36% |
 
 ## 5. 次に見るべき不足
 
