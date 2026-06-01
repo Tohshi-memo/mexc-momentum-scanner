@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T08:57:29.357123+00:00
+- generated_at: 2026-06-01T09:02:25.354006+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5293**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T08:57:26.597208+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=72861.6
-- Funnel: target 775 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.2 >= 65=1, 4h RSI 88.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-01T09:02:23.078958+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=72923.8
+- Funnel: target 775 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +156.66% | $34,384,787.38 |
-| SLX/USDT:USDT | +124.42% | $5,490,412.99 |
-| H/USDT:USDT | +79.26% | $27,738,604.77 |
-| LAB/USDT:USDT | +49.68% | $205,884,279.75 |
-| FHE/USDT:USDT | +18.44% | $1,455,788.92 |
+| PORTAL/USDT:USDT | +155.44% | $33,974,466.26 |
+| SLX/USDT:USDT | +130.06% | $5,535,161.98 |
+| H/USDT:USDT | +82.59% | $27,020,500.28 |
+| LAB/USDT:USDT | +50.21% | $200,920,748.14 |
+| FHE/USDT:USDT | +18.39% | $1,451,025.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +4.28% | +4.17% |
-| MERL/USDT:USDT | below_1h_threshold | +4.19% | +4.07% |
-| FHE/USDT:USDT | below_1h_threshold | +3.26% | +3.14% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.99% | +2.87% |
-| HOME/USDT:USDT | below_1h_threshold | +2.60% | +2.48% |
+| SLX/USDT:USDT | below_1h_threshold | +2.31% | +2.24% |
+| LAB/USDT:USDT | below_1h_threshold | +2.08% | +2.01% |
+| HOME/USDT:USDT | below_1h_threshold | +1.77% | +1.71% |
+| H/USDT:USDT | below_1h_threshold | +1.09% | +1.03% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.57% | +0.51% |
 
 ## 5. 次に見るべき不足
 
