@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T11:35:09.550830+00:00
+- generated_at: 2026-06-01T11:40:01.623104+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5312**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T11:35:06.346362+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=72610.9
+- 更新: 2026-06-01T11:39:59.065518+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=72623.0
 - Funnel: target 776 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.5 >= 65=1
+- Strict後reject: 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +146.66% | $36,568,223.43 |
-| SLX/USDT:USDT | +105.91% | $7,824,690.70 |
-| H/USDT:USDT | +83.32% | $33,668,033.07 |
-| VIC/USDT:USDT | +60.12% | $1,075,328.12 |
-| LAB/USDT:USDT | +59.75% | $231,228,247.82 |
+| PORTAL/USDT:USDT | +146.92% | $36,652,595.62 |
+| SLX/USDT:USDT | +105.42% | $7,866,002.60 |
+| H/USDT:USDT | +85.45% | $33,899,193.70 |
+| VIC/USDT:USDT | +61.66% | $1,080,688.93 |
+| LAB/USDT:USDT | +60.41% | $232,826,782.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.09% | +4.25% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +4.05% | +4.21% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.31% | +3.47% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.97% | +3.13% |
-| STG/USDT:USDT | below_1h_threshold | +2.11% | +2.27% |
+| MYX/USDT:USDT | below_1h_threshold | +4.63% | +4.78% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.47% | +3.61% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.10% | +3.25% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +2.77% | +2.92% |
+| STG/USDT:USDT | below_1h_threshold | +2.36% | +2.50% |
 
 ## 5. 次に見るべき不足
 
