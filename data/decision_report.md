@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T04:32:09.635874+00:00
+- generated_at: 2026-06-01T04:37:14.394028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5272**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T04:32:06.443751+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=73425.3
-- Funnel: target 777 → liquid 133 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1, 4h RSI 79.7 >= 65=1
+- 更新: 2026-06-01T04:37:11.351445+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=73440.6
+- Funnel: target 777 → liquid 133 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 86.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +170.96% | $28,817,502.35 |
-| H/USDT:USDT | +61.40% | $21,968,707.40 |
-| STG/USDT:USDT | +36.61% | $22,955,880.39 |
-| FHE/USDT:USDT | +30.70% | $1,157,465.90 |
-| WLD/USDT:USDT | +20.35% | $65,365,728.58 |
+| PORTAL/USDT:USDT | +170.06% | $28,879,756.43 |
+| H/USDT:USDT | +63.26% | $22,077,595.77 |
+| STG/USDT:USDT | +34.91% | $22,981,278.64 |
+| FHE/USDT:USDT | +33.18% | $1,167,908.28 |
+| WLD/USDT:USDT | +23.10% | $66,012,427.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.44% | +4.86% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.43% | +3.84% |
-| STG/USDT:USDT | below_1h_threshold | +2.00% | +2.42% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +2.13% |
-| CTR/USDT:USDT | below_1h_threshold | +1.01% | +1.43% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.89% | +3.28% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.21% | +2.60% |
+| CTR/USDT:USDT | below_1h_threshold | +1.82% | +2.22% |
+| OFC/USDT:USDT | below_1h_threshold | +1.35% | +1.74% |
+| WLD/USDT:USDT | below_1h_threshold | +1.27% | +1.67% |
 
 ## 5. 次に見るべき不足
 
