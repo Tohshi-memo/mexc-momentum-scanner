@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T22:53:49.210054+00:00
+- generated_at: 2026-06-01T22:59:01.142122+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5371**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T22:53:46.689502+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=71337.9
-- Funnel: target 772 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.0 >= 65=1
+- 更新: 2026-06-01T22:58:55.850560+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=71430.0
+- Funnel: target 772 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +26.19% | $6,565,293.98 |
-| MYX/USDT:USDT | +15.98% | $6,354,831.97 |
-| UB/USDT:USDT | +15.62% | $2,264,575.50 |
-| VIC/USDT:USDT | +15.29% | $2,181,822.44 |
-| SLX/USDT:USDT | +12.52% | $12,328,648.57 |
+| ESPORTS/USDT:USDT | +27.14% | $6,590,167.80 |
+| MYX/USDT:USDT | +16.21% | $6,399,512.48 |
+| UB/USDT:USDT | +15.27% | $2,281,486.05 |
+| VIC/USDT:USDT | +13.75% | $2,183,312.14 |
+| SLX/USDT:USDT | +12.55% | $12,331,837.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_relative_strength | +5.43% | +4.96% |
-| HOME/USDT:USDT | below_relative_strength | +5.17% | +4.71% |
-| UB/USDT:USDT | below_1h_threshold | +4.87% | +4.41% |
-| ORDI/USDT:USDT | below_1h_threshold | +3.77% | +3.31% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.70% | +3.23% |
+| LIT/USDT:USDT | below_1h_threshold | +4.81% | +4.22% |
+| UB/USDT:USDT | below_1h_threshold | +4.53% | +3.94% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.45% | +3.85% |
+| HOME/USDT:USDT | below_1h_threshold | +4.34% | +3.75% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.31% | +3.72% |
 
 ## 5. 次に見るべき不足
 
