@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T22:17:44.210279+00:00
+- generated_at: 2026-06-01T22:22:42.524345+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5369**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T22:17:41.943339+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=71022.7
-- Funnel: target 772 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-01T22:22:39.856796+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=71149.8
+- Funnel: target 772 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +30.47% | $6,401,004.97 |
-| PLAY/USDT:USDT | +13.68% | $7,375,975.69 |
-| SLX/USDT:USDT | +13.03% | $12,246,328.54 |
-| WLD/USDT:USDT | +12.93% | $133,441,430.22 |
-| UB/USDT:USDT | +12.29% | $2,191,102.89 |
+| ESPORTS/USDT:USDT | +27.38% | $6,425,531.57 |
+| VIC/USDT:USDT | +16.02% | $2,161,532.04 |
+| PLAY/USDT:USDT | +14.27% | $7,382,587.06 |
+| SLX/USDT:USDT | +12.90% | $12,258,318.18 |
+| WLD/USDT:USDT | +12.39% | $133,819,161.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.18% | +4.16% |
-| VIC/USDT:USDT | below_1h_threshold | +3.13% | +3.11% |
-| HOME/USDT:USDT | below_1h_threshold | +2.30% | +2.28% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.25% | +2.23% |
-| UB/USDT:USDT | below_1h_threshold | +1.85% | +1.83% |
+| HOME/USDT:USDT | below_1h_threshold | +3.09% | +2.89% |
+| BILL/USDT:USDT | below_1h_threshold | +2.91% | +2.71% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.51% | +2.31% |
+| UB/USDT:USDT | below_1h_threshold | +1.90% | +1.70% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.73% | +1.53% |
 
 ## 5. 次に見るべき不足
 
