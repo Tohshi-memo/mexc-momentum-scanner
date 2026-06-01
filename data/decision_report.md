@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T13:57:31.369055+00:00
+- generated_at: 2026-06-01T14:02:43.627703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5322**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T13:57:25.908888+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.04% price=71445.4
-- Funnel: target 776 → liquid 137 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-01T14:02:41.357036+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=71813.0
+- Funnel: target 776 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +105.89% | $39,417,675.78 |
-| H/USDT:USDT | +105.51% | $42,028,187.86 |
-| SLX/USDT:USDT | +68.07% | $9,217,398.62 |
-| LAB/USDT:USDT | +65.45% | $234,887,194.82 |
-| VIC/USDT:USDT | +47.30% | $1,467,137.65 |
+| H/USDT:USDT | +109.28% | $41,614,954.60 |
+| PORTAL/USDT:USDT | +104.61% | $39,243,112.45 |
+| SLX/USDT:USDT | +68.29% | $9,306,243.11 |
+| LAB/USDT:USDT | +68.21% | $228,843,074.27 |
+| VIC/USDT:USDT | +45.89% | $1,469,550.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +4.62% | +5.66% |
-| UKOIL/USDT:USDT | below_1h_threshold | +4.24% | +5.28% |
-| STG/USDT:USDT | below_1h_threshold | +1.50% | +2.53% |
-| NEX/USDT:USDT | below_1h_threshold | +1.49% | +2.52% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.40% | +2.44% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.77% | +1.61% |
+| MYX/USDT:USDT | below_1h_threshold | +1.15% | +0.99% |
+| CTR/USDT:USDT | below_1h_threshold | +1.07% | +0.91% |
+| H/USDT:USDT | below_1h_threshold | +0.97% | +0.81% |
+| XPL/USDT:USDT | below_1h_threshold | +0.78% | +0.62% |
 
 ## 5. 次に見るべき不足
 
