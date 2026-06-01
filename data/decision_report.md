@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T21:07:42.946021+00:00
+- generated_at: 2026-06-01T21:12:39.317053+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5366**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T21:07:41.089608+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=71257.4
-- Funnel: target 772 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-01T21:12:37.008211+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=71143.7
+- Funnel: target 772 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +33.57% | $5,814,753.75 |
-| PLAY/USDT:USDT | +14.08% | $7,772,232.82 |
-| SLX/USDT:USDT | +12.13% | $11,944,003.27 |
-| NEAR/USDT:USDT | +11.06% | $129,507,821.45 |
-| WLD/USDT:USDT | +9.98% | $118,800,575.17 |
+| ESPORTS/USDT:USDT | +32.38% | $5,850,263.22 |
+| SLX/USDT:USDT | +14.96% | $11,974,278.03 |
+| PLAY/USDT:USDT | +13.02% | $7,793,870.03 |
+| PORTAL/USDT:USDT | +11.23% | $44,114,985.89 |
+| WLD/USDT:USDT | +10.94% | $119,149,778.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +2.29% | +2.51% |
-| MYX/USDT:USDT | below_1h_threshold | +1.48% | +1.70% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.60% | +0.82% |
-| UAI/USDT:USDT | below_1h_threshold | +0.47% | +0.70% |
-| NIGHT/USDT:USDT | below_1h_threshold | +0.26% | +0.48% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.05% | +2.44% |
+| SLX/USDT:USDT | below_1h_threshold | +1.91% | +2.29% |
+| MYX/USDT:USDT | below_1h_threshold | +1.48% | +1.86% |
+| WLD/USDT:USDT | below_1h_threshold | +0.89% | +1.28% |
+| VVV/USDT:USDT | below_1h_threshold | +0.14% | +0.53% |
 
 ## 5. 次に見るべき不足
 
