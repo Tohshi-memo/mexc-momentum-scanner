@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T14:34:22.156823+00:00
+- generated_at: 2026-06-01T14:39:42.943626+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5325**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T14:34:19.332205+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=71455.1
-- Funnel: target 776 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1
+- 更新: 2026-06-01T14:39:40.096498+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=71442.2
+- Funnel: target 776 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 82.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +107.66% | $43,292,734.83 |
-| PORTAL/USDT:USDT | +76.21% | $40,470,341.31 |
-| SLX/USDT:USDT | +72.07% | $9,741,098.92 |
-| LAB/USDT:USDT | +71.57% | $230,816,993.29 |
-| HOME/USDT:USDT | +49.60% | $6,706,529.13 |
+| H/USDT:USDT | +107.10% | $43,628,653.18 |
+| LAB/USDT:USDT | +75.44% | $231,471,788.83 |
+| SLX/USDT:USDT | +72.83% | $9,774,889.89 |
+| PORTAL/USDT:USDT | +68.71% | $40,641,484.13 |
+| HOME/USDT:USDT | +50.75% | $6,824,946.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.86% | +5.20% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +4.52% |
-| UP/USDT:USDT | below_1h_threshold | +3.54% | +3.88% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.80% |
-| SLX/USDT:USDT | below_1h_threshold | +2.81% | +3.15% |
+| LAB/USDT:USDT | below_1h_threshold | +4.70% | +5.06% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.56% | +3.92% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.31% | +3.67% |
+| SLX/USDT:USDT | below_1h_threshold | +3.21% | +3.56% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.80% | +3.16% |
 
 ## 5. 次に見るべき不足
 
