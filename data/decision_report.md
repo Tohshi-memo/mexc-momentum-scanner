@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T21:40:43.952136+00:00
+- generated_at: 2026-06-01T21:45:50.161427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5367**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T21:40:41.445618+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=71091.7
+- 更新: 2026-06-01T21:45:47.622725+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=70989.9
 - Funnel: target 772 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 84.8 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +26.42% | $6,154,748.78 |
-| SLX/USDT:USDT | +13.84% | $12,105,901.27 |
-| PLAY/USDT:USDT | +12.77% | $7,869,548.64 |
-| WLD/USDT:USDT | +12.70% | $124,276,330.88 |
-| NEAR/USDT:USDT | +11.39% | $133,611,156.47 |
+| ESPORTS/USDT:USDT | +29.52% | $6,194,358.23 |
+| WLD/USDT:USDT | +13.60% | $126,526,526.55 |
+| SLX/USDT:USDT | +13.16% | $12,119,740.02 |
+| PLAY/USDT:USDT | +12.12% | $7,890,556.09 |
+| PORTAL/USDT:USDT | +11.23% | $44,392,251.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +3.27% | +3.73% |
-| WLD/USDT:USDT | below_1h_threshold | +2.46% | +2.92% |
-| UB/USDT:USDT | below_1h_threshold | +1.94% | +2.40% |
-| H/USDT:USDT | below_1h_threshold | +1.90% | +2.36% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.67% | +2.12% |
+| WLD/USDT:USDT | below_1h_threshold | +3.31% | +3.91% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.27% | +3.87% |
+| H/USDT:USDT | below_1h_threshold | +3.07% | +3.67% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +2.44% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.78% | +2.38% |
 
 ## 5. 次に見るべき不足
 
