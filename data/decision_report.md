@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-06-01T20:53:15.566762+00:00
+- generated_at: 2026-06-01T20:58:34.746732+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5365**
+- closed shadow trades: **5366**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5365, expectancy=-0.05%
-- 直近20件 MARKET基準: n=20, expectancy=-1.00%
+- 全期間 MARKET基準: n=5366, expectancy=-0.05%
+- 直近20件 MARKET基準: n=20, expectancy=-1.07%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.00% | **-1.00%** |
+| MARKET | 20/20 | 100.0% | -1.07% | **-1.07%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_3PCT_LONG | 12/20 | 60.0% | +2.00% | **+1.20%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.45% | **+1.16%** |
-| LIMIT_FIB1272_LONG | 4/20 | 20.0% | +5.00% | **+1.00%** |
 | LIMIT_ATR_LONG | 9/20 | 45.0% | +2.18% | **+0.98%** |
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | +6.07% | **+0.91%** |
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.57% | **+0.86%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,38 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.03** / 初期 $100.00 (+31.03%)
-- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 1032件
+- 確定: 894件 (Win 207 / Loss 269 / Flat 418) / skip 1033件
 - 成長率目線: 平均log +0.000302 / 幾何平均 +0.030% per trade / maxDD +7.25%
-- 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BSB/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $131.03
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T20:53:12.990335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=71523.6
-- Funnel: target 773 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-01T20:58:29.677930+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=71391.1
+- Funnel: target 773 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +35.00% | $5,697,243.32 |
-| PLAY/USDT:USDT | +15.88% | $7,795,730.71 |
-| SLX/USDT:USDT | +15.09% | $11,861,105.12 |
-| NEAR/USDT:USDT | +11.76% | $131,792,810.26 |
-| VIC/USDT:USDT | +11.62% | $2,121,487.87 |
+| ESPORTS/USDT:USDT | +33.80% | $5,747,400.42 |
+| PLAY/USDT:USDT | +15.78% | $7,824,659.35 |
+| SLX/USDT:USDT | +13.84% | $11,913,988.12 |
+| NEAR/USDT:USDT | +11.26% | $132,725,817.96 |
+| VIC/USDT:USDT | +10.90% | $2,122,321.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.90% | +2.97% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.81% | +2.88% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.75% | +2.82% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.67% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.39% | +2.46% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.73% | +2.98% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.37% | +2.62% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.60% |
+| BILL/USDT:USDT | below_1h_threshold | +2.20% | +2.45% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.00% | +2.25% |
 
 ## 5. 次に見るべき不足
 
