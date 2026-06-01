@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-01T17:05:48.815365+00:00
+- generated_at: 2026-06-01T17:11:03.829273+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5345**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T17:05:45.962955+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=71552.2
+- 更新: 2026-06-01T17:11:01.502797+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=71571.1
 - Funnel: target 776 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIC/USDT:USDT | +11.90% | $1,797,876.80 |
-| ESPORTS/USDT:USDT | +11.19% | $1,884,634.98 |
-| MERL/USDT:USDT | +7.05% | $1,712,982.97 |
-| TONCOIN/USDT:USDT | +6.19% | $63,941,569.44 |
-| HOME/USDT:USDT | +6.17% | $8,589,780.68 |
+| VIC/USDT:USDT | +11.66% | $1,804,605.85 |
+| ESPORTS/USDT:USDT | +7.14% | $1,912,650.23 |
+| MERL/USDT:USDT | +5.61% | $1,717,733.82 |
+| WLD/USDT:USDT | +5.60% | $92,617,371.76 |
+| SIREN/USDT:USDT | +5.40% | $2,842,496.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.78% | +3.76% |
-| VIC/USDT:USDT | below_1h_threshold | +2.36% | +2.34% |
-| HOME/USDT:USDT | below_1h_threshold | +1.69% | +1.66% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
-| OP/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.04% | +1.99% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.82% | +1.77% |
+| WLD/USDT:USDT | below_1h_threshold | +1.74% | +1.69% |
+| VVV/USDT:USDT | below_1h_threshold | +1.71% | +1.67% |
+| VIC/USDT:USDT | below_1h_threshold | +1.69% | +1.64% |
 
 ## 5. 次に見るべき不足
 
