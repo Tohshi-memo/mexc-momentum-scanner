@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-01T01:50:25.149713+00:00
+- generated_at: 2026-06-01T01:55:58.533182+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5259**
+- closed shadow trades: **5260**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5259, expectancy=-0.06%
+- 全期間 MARKET基準: n=5260, expectancy=-0.06%
 - 直近20件 MARKET基準: n=20, expectancy=-0.03%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$132.35** / 初期 $100.00 (+32.35%)
-- 確定: 892件 (Win 207 / Loss 267 / Flat 418) / skip 928件
+- 確定: 892件 (Win 207 / Loss 267 / Flat 418) / skip 929件
 - 成長率目線: 平均log +0.000314 / 幾何平均 +0.031% per trade / maxDD +7.25%
-- 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ZORA/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $132.35
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-01T01:50:22.274065+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=73528.0
+- 更新: 2026-06-01T01:55:55.712156+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.78% price=73276.6
 - Funnel: target 777 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.9 >= 65=1
+- Strict後reject: 4h RSI 86.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +166.60% | $24,555,453.76 |
-| H/USDT:USDT | +65.80% | $17,809,318.57 |
-| STG/USDT:USDT | +21.46% | $22,192,823.25 |
-| HOME/USDT:USDT | +16.55% | $3,647,321.60 |
-| CTR/USDT:USDT | +14.66% | $1,432,199.14 |
+| PORTAL/USDT:USDT | +171.53% | $24,775,961.12 |
+| H/USDT:USDT | +65.20% | $18,113,060.75 |
+| STG/USDT:USDT | +18.17% | $22,216,863.80 |
+| PLAY/USDT:USDT | +16.65% | $16,048,509.28 |
+| CTR/USDT:USDT | +13.77% | $1,433,121.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEME/USDT:USDT | below_1h_threshold | +4.14% | +4.58% |
-| XLM/USDT:USDT | below_1h_threshold | +3.66% | +4.10% |
-| WLD/USDT:USDT | below_1h_threshold | +3.22% | +3.66% |
-| BILL/USDT:USDT | below_1h_threshold | +2.62% | +3.06% |
-| MEGA/USDT:USDT | below_1h_threshold | +2.16% | +2.61% |
+| MEME/USDT:USDT | below_1h_threshold | +3.10% | +3.88% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.87% | +3.65% |
+| XLM/USDT:USDT | below_1h_threshold | +1.87% | +2.65% |
+| NEX/USDT:USDT | below_1h_threshold | +1.81% | +2.60% |
+| BILL/USDT:USDT | below_1h_threshold | +1.68% | +2.46% |
 
 ## 5. 次に見るべき不足
 
