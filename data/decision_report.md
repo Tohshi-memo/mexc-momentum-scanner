@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T03:35:58.743077+00:00
+- generated_at: 2026-06-02T03:41:23.269701+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5397**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T03:35:55.148639+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=70932.3
-- Funnel: target 776 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.8 >= 65=1, 4h RSI 66.1 >= 65=1, 4h RSI 77.5 >= 65=1
+- 更新: 2026-06-02T03:41:17.496248+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=70927.9
+- Funnel: target 776 → liquid 147 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 66.3 >= 65=1, 4h RSI 84.1 >= 65=1, 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +21.69% | $1,212,430.30 |
-| LAB/USDT:USDT | +20.80% | $197,772,295.25 |
-| ESPORTS/USDT:USDT | +20.23% | $10,832,937.89 |
-| WLD/USDT:USDT | +18.55% | $136,841,407.79 |
-| SKYAI/USDT:USDT | +18.42% | $4,016,641.47 |
+| RIF/USDT:USDT | +21.55% | $1,219,271.10 |
+| LAB/USDT:USDT | +21.15% | $198,243,009.51 |
+| SKYAI/USDT:USDT | +19.58% | $4,066,035.42 |
+| H/USDT:USDT | +18.60% | $56,426,071.58 |
+| MRVLSTOCK/USDT:USDT | +17.53% | $1,194,607.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +4.93% | +4.77% |
-| WLD/USDT:USDT | below_1h_threshold | +4.48% | +4.32% |
-| LAB/USDT:USDT | below_1h_threshold | +4.37% | +4.21% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.69% | +3.52% |
-| STG/USDT:USDT | below_1h_threshold | +3.48% | +3.32% |
+| LAB/USDT:USDT | below_1h_threshold | +4.40% | +4.24% |
+| STG/USDT:USDT | below_1h_threshold | +3.98% | +3.83% |
+| H/USDT:USDT | below_1h_threshold | +3.56% | +3.40% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.33% | +3.17% |
+| JTO/USDT:USDT | below_1h_threshold | +3.30% | +3.15% |
 
 ## 5. 次に見るべき不足
 
