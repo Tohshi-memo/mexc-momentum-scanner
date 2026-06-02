@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T22:01:51.100330+00:00
+- generated_at: 2026-06-02T22:07:09.957446+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5494**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T22:01:47.775017+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=67339.7
-- Funnel: target 769 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-02T22:07:07.547362+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=67380.5
+- Funnel: target 769 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +28.21% | $12,508,932.76 |
-| US/USDT:USDT | +20.94% | $6,363,729.77 |
-| BBSTOCK/USDT:USDT | +17.12% | $1,634,161.16 |
-| GENIUS/USDT:USDT | +14.40% | $1,015,990.44 |
-| LIT/USDT:USDT | +14.11% | $6,369,047.36 |
+| PORTAL/USDT:USDT | +29.43% | $12,541,575.39 |
+| BBSTOCK/USDT:USDT | +18.33% | $1,642,814.65 |
+| US/USDT:USDT | +16.44% | $6,431,000.27 |
+| LIT/USDT:USDT | +16.04% | $6,409,400.89 |
+| GENIUS/USDT:USDT | +14.26% | $1,024,350.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.16% | +1.45% |
-| PANWSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.40% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.00% | +1.28% |
-| BBSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.81% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.73% |
+| PANWSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.39% |
+| US/USDT:USDT | below_1h_threshold | +2.11% | +2.33% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.91% | +2.14% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.79% |
+| BBSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.79% |
 
 ## 5. 次に見るべき不足
 
