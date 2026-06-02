@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T16:47:14.266819+00:00
+- generated_at: 2026-06-02T16:52:41.932309+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5468**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T16:47:07.429369+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.75% price=67779.3
-- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=43, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1, 4h RSI 91.5 >= 65=1
+- 更新: 2026-06-02T16:52:33.975446+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.55% price=67646.4
+- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 5 → strict 3
+- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.0 >= 65=1, 4h RSI 91.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ENA/USDT:USDT | +11.35% | $32,192,984.89 |
-| CHIP/USDT:USDT | +6.89% | $5,298,213.85 |
-| LIT/USDT:USDT | +6.78% | $2,347,353.31 |
-| PIEVERSE/USDT:USDT | +6.41% | $5,207,629.85 |
-| PORTAL/USDT:USDT | +5.69% | $9,887,900.12 |
+| ENA/USDT:USDT | +10.62% | $33,044,607.68 |
+| PORTAL/USDT:USDT | +8.96% | $9,933,098.01 |
+| LIT/USDT:USDT | +7.22% | $2,398,773.70 |
+| PIEVERSE/USDT:USDT | +6.62% | $5,251,857.47 |
+| CHIP/USDT:USDT | +6.43% | $5,392,283.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_relative_strength | +5.70% | +4.95% |
-| ICP/USDT:USDT | below_relative_strength | +5.35% | +4.60% |
-| USELESS/USDT:USDT | below_relative_strength | +5.12% | +4.37% |
-| ZORA/USDT:USDT | below_1h_threshold | +4.80% | +4.05% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.36% | +3.61% |
+| ZORA/USDT:USDT | below_relative_strength | +5.06% | +4.51% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.92% | +4.37% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.87% | +4.31% |
+| VVV/USDT:USDT | below_1h_threshold | +4.84% | +4.28% |
+| ICP/USDT:USDT | below_1h_threshold | +4.78% | +4.22% |
 
 ## 5. 次に見るべき不足
 
