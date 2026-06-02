@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T06:30:09.371157+00:00
+- generated_at: 2026-06-02T06:35:21.743793+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5415**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T06:30:03.294900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=70344.0
-- Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1, 4h RSI 65.5 >= 65=1, 4h RSI 80.0 >= 65=1
+- 更新: 2026-06-02T06:35:18.900107+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=70321.5
+- Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.2 >= 65=1, 4h RSI 80.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +59.82% | $9,821,226.97 |
-| ESPORTS/USDT:USDT | +25.71% | $11,935,978.11 |
-| US/USDT:USDT | +24.64% | $1,093,091.55 |
-| OPG/USDT:USDT | +23.65% | $1,018,109.03 |
-| H/USDT:USDT | +20.40% | $56,749,038.14 |
+| SKYAI/USDT:USDT | +60.98% | $10,172,794.27 |
+| ESPORTS/USDT:USDT | +28.09% | $11,942,216.24 |
+| US/USDT:USDT | +26.55% | $1,095,725.11 |
+| OPG/USDT:USDT | +21.57% | $1,043,131.75 |
+| H/USDT:USDT | +21.23% | $56,808,326.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.95% | +2.80% |
-| UB/USDT:USDT | below_1h_threshold | +2.48% | +2.32% |
-| STG/USDT:USDT | below_1h_threshold | +2.13% | +1.98% |
-| RIF/USDT:USDT | below_1h_threshold | +1.68% | +1.53% |
-| SLX/USDT:USDT | below_1h_threshold | +1.51% | +1.35% |
+| BSB/USDT:USDT | below_1h_threshold | +4.37% | +4.25% |
+| OPG/USDT:USDT | below_1h_threshold | +3.81% | +3.69% |
+| STG/USDT:USDT | below_1h_threshold | +3.71% | +3.59% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.07% | +2.95% |
+| MYX/USDT:USDT | below_1h_threshold | +2.72% | +2.60% |
 
 ## 5. 次に見るべき不足
 
