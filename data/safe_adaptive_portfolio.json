@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 131.0279371993993,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-06-02T00:05:03.863725+00:00",
+  "updated_at": "2026-06-02T00:10:52.053340+00:00",
   "high_watermark": 135.48547844641345,
   "max_drawdown_pct": 7.2507555389838,
   "loss_streak": 5,
@@ -42953,81 +42953,6 @@
     }
   ],
   "skipped": [
-    {
-      "key": "B/USDT:USDT|2026-05-16T16:28:23.422959+00:00",
-      "symbol": "B/USDT:USDT",
-      "detected_at": "2026-05-16T16:28:23.422959+00:00",
-      "reason": "loss_streak_cooldown",
-      "decision": {
-        "strategy": "LIMIT_6PCT_LONG",
-        "direction": "long",
-        "reason": "selected_by_recent_avg_log_return",
-        "history_count": 4368,
-        "recent_count": 50,
-        "recent": {
-          "strategy": "LIMIT_6PCT_LONG",
-          "direction": "long",
-          "total": 50,
-          "filled": 26,
-          "fill_rate": 0.52,
-          "avg_pnl_pct": 0.8765160934992665,
-          "effective_ev_pct": 0.4557883686196186,
-          "avg_log_return": 0.0005577866363228459,
-          "geometric_return_pct": 0.055794222821625716,
-          "avg_account_return_pct": 0.05666622333585003,
-          "max_drawdown_pct": 1.7196755155792394,
-          "max_loss_streak": 5
-        },
-        "all": {
-          "strategy": "LIMIT_6PCT_LONG",
-          "direction": "long",
-          "total": 4170,
-          "filled": 1662,
-          "fill_rate": 0.3985611510791367,
-          "avg_pnl_pct": 0.43795514216142845,
-          "effective_ev_pct": 0.17455190558088587,
-          "avg_log_return": 0.00021374991909474237,
-          "geometric_return_pct": 0.021377276523648625,
-          "avg_account_return_pct": 0.022116173716767957,
-          "max_drawdown_pct": 9.839339836270543,
-          "max_loss_streak": 12
-        },
-        "alternatives": [
-          {
-            "strategy": "LIMIT_8PCT_LONG",
-            "direction": "long",
-            "recent": {
-              "strategy": "LIMIT_8PCT_LONG",
-              "direction": "long",
-              "total": 50,
-              "filled": 18,
-              "fill_rate": 0.36,
-              "avg_pnl_pct": 0.8888888888888897,
-              "effective_ev_pct": 0.3200000000000003,
-              "avg_log_return": 0.00039651817824831406,
-              "geometric_return_pct": 0.03965968019727928,
-              "avg_account_return_pct": 0.039999999999999994,
-              "max_drawdown_pct": 0.49999999999999994,
-              "max_loss_streak": 1
-            },
-            "all": {
-              "strategy": "LIMIT_8PCT_LONG",
-              "direction": "long",
-              "total": 4170,
-              "filled": 1273,
-              "fill_rate": 0.3052757793764988,
-              "avg_pnl_pct": 0.8074854833060706,
-              "effective_ev_pct": 0.24650576025146953,
-              "avg_log_return": 0.0003052581658604354,
-              "geometric_return_pct": 0.030530476187551336,
-              "avg_account_return_pct": 0.03085087658776647,
-              "max_drawdown_pct": 3.9028810529515114,
-              "max_loss_streak": 6
-            }
-          }
-        ]
-      }
-    },
     {
       "key": "AIA/USDT:USDT|2026-05-17T01:39:27.792613+00:00",
       "symbol": "AIA/USDT:USDT",
@@ -104580,9 +104505,180 @@
           }
         ]
       }
+    },
+    {
+      "key": "ESPORTS/USDT:USDT|2026-06-01T23:59:53.815870+00:00",
+      "symbol": "ESPORTS/USDT:USDT",
+      "detected_at": "2026-06-01T23:59:53.815870+00:00",
+      "reason": "daily_loss_stop",
+      "decision": {
+        "strategy": "LIMIT_1PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_recent_avg_log_return",
+        "history_count": 5372,
+        "recent_count": 50,
+        "recent": {
+          "strategy": "LIMIT_1PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 42,
+          "fill_rate": 0.84,
+          "avg_pnl_pct": 1.0129442927510968,
+          "effective_ev_pct": 0.8508732059109213,
+          "avg_log_return": 0.0010509567637251153,
+          "geometric_return_pct": 0.10515092123009051,
+          "avg_account_return_pct": 0.10687411298962021,
+          "max_drawdown_pct": 1.9850499375000104,
+          "max_loss_streak": 4
+        },
+        "all": {
+          "strategy": "LIMIT_1PCT_LONG",
+          "direction": "long",
+          "total": 5180,
+          "filled": 4515,
+          "fill_rate": 0.8716216216216216,
+          "avg_pnl_pct": 0.49229255073155304,
+          "effective_ev_pct": 0.42909283138088067,
+          "avg_log_return": 0.0005207886152669242,
+          "geometric_return_pct": 0.052092424920235914,
+          "avg_account_return_pct": 0.053735263571644765,
+          "max_drawdown_pct": 15.522022559828075,
+          "max_loss_streak": 13
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_7PCT",
+            "direction": "short",
+            "recent": {
+              "strategy": "LIMIT_7PCT",
+              "direction": "short",
+              "total": 50,
+              "filled": 10,
+              "fill_rate": 0.2,
+              "avg_pnl_pct": 3.1626168224299076,
+              "effective_ev_pct": 0.6325233644859816,
+              "avg_log_return": 0.0007875588156077092,
+              "geometric_return_pct": 0.07878690214815354,
+              "avg_account_return_pct": 0.07906542056074757,
+              "max_drawdown_pct": 0.4999999999999901,
+              "max_loss_streak": 1
+            },
+            "all": {
+              "strategy": "LIMIT_7PCT",
+              "direction": "short",
+              "total": 5250,
+              "filled": 787,
+              "fill_rate": 0.1499047619047619,
+              "avg_pnl_pct": 2.5892622858118104,
+              "effective_ev_pct": 0.388142746463599,
+              "avg_log_return": 0.0004826161065918792,
+              "geometric_return_pct": 0.04827325844822816,
+              "avg_account_return_pct": 0.04854995999182349,
+              "max_drawdown_pct": 2.622665241000915,
+              "max_loss_streak": 5
+            }
+          },
+          {
+            "strategy": "LIMIT_FIB1272_LONG",
+            "direction": "long",
+            "recent": {
+              "strategy": "LIMIT_FIB1272_LONG",
+              "direction": "long",
+              "total": 50,
+              "filled": 16,
+              "fill_rate": 0.32,
+              "avg_pnl_pct": 1.8431520168246331,
+              "effective_ev_pct": 0.5898086453838827,
+              "avg_log_return": 0.0007358636320356549,
+              "geometric_return_pct": 0.0736134446101433,
+              "avg_account_return_pct": 0.07453496221003282,
+              "max_drawdown_pct": 1.499875934690636,
+              "max_loss_streak": 3
+            },
+            "all": {
+              "strategy": "LIMIT_FIB1272_LONG",
+              "direction": "long",
+              "total": 5174,
+              "filled": 1953,
+              "fill_rate": 0.37746424429841513,
+              "avg_pnl_pct": 0.6511647233551622,
+              "effective_ev_pct": 0.24579140021504284,
+              "avg_log_return": 0.0002963068811644813,
+              "geometric_return_pct": 0.029635078438450257,
+              "avg_account_return_pct": 0.03040268957757073,
+              "max_drawdown_pct": 13.447536104774512,
+              "max_loss_streak": 14
+            }
+          },
+          {
+            "strategy": "LIMIT_FIB1272",
+            "direction": "short",
+            "recent": {
+              "strategy": "LIMIT_FIB1272",
+              "direction": "short",
+              "total": 50,
+              "filled": 20,
+              "fill_rate": 0.4,
+              "avg_pnl_pct": 0.8936358398833839,
+              "effective_ev_pct": 0.3574543359533536,
+              "avg_log_return": 0.0004421134121643744,
+              "geometric_return_pct": 0.044221115870346495,
+              "avg_account_return_pct": 0.04460805271386415,
+              "max_drawdown_pct": 0.7549186653452833,
+              "max_loss_streak": 2
+            },
+            "all": {
+              "strategy": "LIMIT_FIB1272",
+              "direction": "short",
+              "total": 5325,
+              "filled": 1685,
+              "fill_rate": 0.3164319248826291,
+              "avg_pnl_pct": 0.47772758381666636,
+              "effective_ev_pct": 0.15116825891663527,
+              "avg_log_return": 0.0001852109982294919,
+              "geometric_return_pct": 0.0185228150845429,
+              "avg_account_return_pct": 0.018798680536641448,
+              "max_drawdown_pct": 7.334958383662292,
+              "max_loss_streak": 10
+            }
+          },
+          {
+            "strategy": "LIMIT_3PCT_LONG",
+            "direction": "long",
+            "recent": {
+              "strategy": "LIMIT_3PCT_LONG",
+              "direction": "long",
+              "total": 50,
+              "filled": 28,
+              "fill_rate": 0.56,
+              "avg_pnl_pct": 0.618783282902266,
+              "effective_ev_pct": 0.34651863842526903,
+              "avg_log_return": 0.00042659926495689643,
+              "geometric_return_pct": 0.042669027136388316,
+              "avg_account_return_pct": 0.04412371134020612,
+              "max_drawdown_pct": 1.985049937500012,
+              "max_loss_streak": 4
+            },
+            "all": {
+              "strategy": "LIMIT_3PCT_LONG",
+              "direction": "long",
+              "total": 5180,
+              "filled": 3192,
+              "fill_rate": 0.6162162162162163,
+              "avg_pnl_pct": 0.5573783670022504,
+              "effective_ev_pct": 0.34346558831490026,
+              "avg_log_return": 0.00041426773165462324,
+              "geometric_return_pct": 0.04143535523819519,
+              "avg_account_return_pct": 0.042945287818740865,
+              "max_drawdown_pct": 16.332592030170872,
+              "max_loss_streak": 17
+            }
+          }
+        ]
+      }
     }
   ],
-  "skipped_count": 1041,
+  "skipped_count": 1042,
   "applied_keys": [
     "ACE/USDT:USDT|2026-05-09T08:57:48.968168+00:00",
     "AGT/USDT:USDT|2026-05-08T05:57:43.194880+00:00",
@@ -105188,6 +105284,7 @@
     "ESPORTS/USDT:USDT|2026-06-01T19:08:36.405340+00:00",
     "ESPORTS/USDT:USDT|2026-06-01T19:19:09.116475+00:00",
     "ESPORTS/USDT:USDT|2026-06-01T19:24:25.611259+00:00",
+    "ESPORTS/USDT:USDT|2026-06-01T23:59:53.815870+00:00",
     "ETHFI/USDT:USDT|2026-05-28T16:50:10.479092+00:00",
     "EVAA/USDT:USDT|2026-05-07T07:02:43.817091+00:00",
     "EVAA/USDT:USDT|2026-05-07T07:07:35.151979+00:00",
@@ -106524,7 +106621,7 @@
     "strategy": "LIMIT_1PCT_LONG",
     "direction": "long",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 5372,
+    "history_count": 5373,
     "recent_count": 50,
     "recent": {
       "strategy": "LIMIT_1PCT_LONG",
@@ -106543,14 +106640,14 @@
     "all": {
       "strategy": "LIMIT_1PCT_LONG",
       "direction": "long",
-      "total": 5180,
+      "total": 5181,
       "filled": 4515,
-      "fill_rate": 0.8716216216216216,
+      "fill_rate": 0.8714533873769542,
       "avg_pnl_pct": 0.49229255073155304,
-      "effective_ev_pct": 0.42909283138088067,
-      "avg_log_return": 0.0005207886152669242,
-      "geometric_return_pct": 0.052092424920235914,
-      "avg_account_return_pct": 0.053735263571644765,
+      "effective_ev_pct": 0.429010010915453,
+      "avg_log_return": 0.0005206880963294089,
+      "geometric_return_pct": 0.05208236779070674,
+      "avg_account_return_pct": 0.05372489197087818,
       "max_drawdown_pct": 15.522022559828075,
       "max_loss_streak": 13
     },
@@ -106575,14 +106672,14 @@
         "all": {
           "strategy": "LIMIT_7PCT",
           "direction": "short",
-          "total": 5250,
+          "total": 5251,
           "filled": 787,
-          "fill_rate": 0.1499047619047619,
+          "fill_rate": 0.14987621405446583,
           "avg_pnl_pct": 2.5892622858118104,
-          "effective_ev_pct": 0.388142746463599,
-          "avg_log_return": 0.0004826161065918792,
-          "geometric_return_pct": 0.04827325844822816,
-          "avg_account_return_pct": 0.04854995999182349,
+          "effective_ev_pct": 0.3880688285914864,
+          "avg_log_return": 0.00048252419722097996,
+          "geometric_return_pct": 0.048264063074809904,
+          "avg_account_return_pct": 0.04854071414151082,
           "max_drawdown_pct": 2.622665241000915,
           "max_loss_streak": 5
         }
@@ -106607,16 +106704,48 @@
         "all": {
           "strategy": "LIMIT_FIB1272_LONG",
           "direction": "long",
-          "total": 5174,
+          "total": 5175,
           "filled": 1953,
-          "fill_rate": 0.37746424429841513,
+          "fill_rate": 0.3773913043478261,
           "avg_pnl_pct": 0.6511647233551622,
-          "effective_ev_pct": 0.24579140021504284,
-          "avg_log_return": 0.0002963068811644813,
-          "geometric_return_pct": 0.029635078438450257,
-          "avg_account_return_pct": 0.03040268957757073,
+          "effective_ev_pct": 0.24574390429229598,
+          "avg_log_return": 0.00029624962379614034,
+          "geometric_return_pct": 0.02962935100496722,
+          "avg_account_return_pct": 0.030396814661710334,
           "max_drawdown_pct": 13.447536104774512,
           "max_loss_streak": 14
+        }
+      },
+      {
+        "strategy": "LIMIT_6PCT",
+        "direction": "short",
+        "recent": {
+          "strategy": "LIMIT_6PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 13,
+          "fill_rate": 0.26,
+          "avg_pnl_pct": 1.4513788098693765,
+          "effective_ev_pct": 0.37735849056603793,
+          "avg_log_return": 0.00046964768261338727,
+          "geometric_return_pct": 0.046975798435333616,
+          "avg_account_return_pct": 0.04716981132075472,
+          "max_drawdown_pct": 0.5000000000000098,
+          "max_loss_streak": 1
+        },
+        "all": {
+          "strategy": "LIMIT_6PCT",
+          "direction": "short",
+          "total": 5251,
+          "filled": 1192,
+          "fill_rate": 0.22700438011807275,
+          "avg_pnl_pct": 1.626728298169602,
+          "effective_ev_pct": 0.36927444894651795,
+          "avg_log_return": 0.0004608605360649451,
+          "geometric_return_pct": 0.04609667485975244,
+          "avg_account_return_pct": 0.04636271109892414,
+          "max_drawdown_pct": 2.5044864150523813,
+          "max_loss_streak": 4
         }
       },
       {
@@ -106639,48 +106768,16 @@
         "all": {
           "strategy": "LIMIT_FIB1272",
           "direction": "short",
-          "total": 5325,
+          "total": 5326,
           "filled": 1685,
-          "fill_rate": 0.3164319248826291,
+          "fill_rate": 0.31637251220428086,
           "avg_pnl_pct": 0.47772758381666636,
-          "effective_ev_pct": 0.15116825891663527,
-          "avg_log_return": 0.0001852109982294919,
-          "geometric_return_pct": 0.0185228150845429,
-          "avg_account_return_pct": 0.018798680536641448,
+          "effective_ev_pct": 0.15113987584135988,
+          "avg_log_return": 0.00018517622335186714,
+          "geometric_return_pct": 0.018519336952715904,
+          "avg_account_return_pct": 0.01879515093083284,
           "max_drawdown_pct": 7.334958383662292,
           "max_loss_streak": 10
-        }
-      },
-      {
-        "strategy": "LIMIT_3PCT_LONG",
-        "direction": "long",
-        "recent": {
-          "strategy": "LIMIT_3PCT_LONG",
-          "direction": "long",
-          "total": 50,
-          "filled": 28,
-          "fill_rate": 0.56,
-          "avg_pnl_pct": 0.618783282902266,
-          "effective_ev_pct": 0.34651863842526903,
-          "avg_log_return": 0.00042659926495689643,
-          "geometric_return_pct": 0.042669027136388316,
-          "avg_account_return_pct": 0.04412371134020612,
-          "max_drawdown_pct": 1.985049937500012,
-          "max_loss_streak": 4
-        },
-        "all": {
-          "strategy": "LIMIT_3PCT_LONG",
-          "direction": "long",
-          "total": 5180,
-          "filled": 3192,
-          "fill_rate": 0.6162162162162163,
-          "avg_pnl_pct": 0.5573783670022504,
-          "effective_ev_pct": 0.34346558831490026,
-          "avg_log_return": 0.00041426773165462324,
-          "geometric_return_pct": 0.04143535523819519,
-          "avg_account_return_pct": 0.042945287818740865,
-          "max_drawdown_pct": 16.332592030170872,
-          "max_loss_streak": 17
         }
       }
     ]
