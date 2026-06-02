@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T19:43:38.875899+00:00
+- generated_at: 2026-06-02T19:49:26.285190+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5484**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T19:43:36.011910+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.67% price=66861.9
-- Funnel: target 770 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-02T19:49:24.018496+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=67072.8
+- Funnel: target 770 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +24.89% | $13,512,451.04 |
-| ESPORTS/USDT:USDT | +18.29% | $10,335,052.16 |
-| LAB/USDT:USDT | +15.31% | $178,220,469.91 |
-| LIT/USDT:USDT | +13.61% | $4,648,694.42 |
-| ENA/USDT:USDT | +10.62% | $44,377,249.04 |
+| PORTAL/USDT:USDT | +22.62% | $13,638,064.12 |
+| LIT/USDT:USDT | +16.41% | $4,783,473.65 |
+| ESPORTS/USDT:USDT | +15.53% | $10,373,207.78 |
+| LAB/USDT:USDT | +13.84% | $179,603,712.70 |
+| ENA/USDT:USDT | +12.76% | $44,660,037.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.12% | +4.79% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.69% | +4.36% |
-| US/USDT:USDT | below_1h_threshold | +2.20% | +2.87% |
-| GUA/USDT:USDT | below_1h_threshold | +1.95% | +2.62% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.59% | +2.26% |
+| LAB/USDT:USDT | below_1h_threshold | +4.21% | +4.57% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.26% | +3.62% |
+| GUA/USDT:USDT | below_1h_threshold | +1.90% | +2.26% |
+| VVV/USDT:USDT | below_1h_threshold | +1.89% | +2.25% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.70% | +2.06% |
 
 ## 5. 次に見るべき不足
 
