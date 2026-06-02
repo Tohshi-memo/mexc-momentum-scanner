@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T11:25:51.623384+00:00
+- generated_at: 2026-06-02T11:31:13.000014+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5447**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T11:25:48.911882+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=69482.2
-- Funnel: target 773 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1
+- 更新: 2026-06-02T11:31:10.042644+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=69435.8
+- Funnel: target 773 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 90.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +43.72% | $3,182,264.40 |
-| EPIC/USDT:USDT | +33.83% | $2,519,238.93 |
-| LAB/USDT:USDT | +28.38% | $186,350,616.02 |
-| USELESS/USDT:USDT | +25.79% | $2,341,271.58 |
-| ESPORTS/USDT:USDT | +25.47% | $12,860,481.80 |
+| US/USDT:USDT | +43.25% | $3,204,336.89 |
+| EPIC/USDT:USDT | +36.58% | $2,554,431.68 |
+| MRVLSTOCK/USDT:USDT | +26.04% | $5,930,505.69 |
+| ESPORTS/USDT:USDT | +25.71% | $12,875,536.61 |
+| LAB/USDT:USDT | +25.20% | $187,720,300.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.71% | +4.91% |
-| LAB/USDT:USDT | below_1h_threshold | +3.95% | +4.15% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.61% | +3.81% |
-| H/USDT:USDT | below_1h_threshold | +2.75% | +2.95% |
-| JTO/USDT:USDT | below_1h_threshold | +2.32% | +2.52% |
+| MYX/USDT:USDT | below_1h_threshold | +4.85% | +5.11% |
+| H/USDT:USDT | below_1h_threshold | +2.98% | +3.24% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.35% |
+| JTO/USDT:USDT | below_1h_threshold | +1.80% | +2.07% |
+| LAB/USDT:USDT | below_1h_threshold | +1.25% | +1.52% |
 
 ## 5. 次に見るべき不足
 
