@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T02:49:02.566682+00:00
+- generated_at: 2026-06-02T02:54:10.748245+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5391**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T02:48:56.654645+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=70663.6
-- Funnel: target 776 → liquid 148 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.3 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 79.3 >= 65=1
+- 更新: 2026-06-02T02:54:07.307619+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=70665.6
+- Funnel: target 776 → liquid 148 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.4 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI 67.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +29.04% | $10,560,387.98 |
-| RIF/USDT:USDT | +15.35% | $1,112,516.64 |
-| LAB/USDT:USDT | +13.55% | $196,506,925.97 |
-| H/USDT:USDT | +12.78% | $57,810,964.10 |
-| WLD/USDT:USDT | +12.67% | $137,791,261.03 |
+| ESPORTS/USDT:USDT | +25.71% | $10,596,222.02 |
+| RIF/USDT:USDT | +15.42% | $1,114,630.35 |
+| LAB/USDT:USDT | +14.18% | $196,671,197.55 |
+| H/USDT:USDT | +14.08% | $57,885,272.39 |
+| PIEVERSE/USDT:USDT | +12.13% | $1,621,776.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.69% | +4.63% |
-| INJ/USDT:USDT | below_1h_threshold | +3.11% | +3.05% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.10% | +3.04% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.47% | +2.41% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.07% | +2.01% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.97% | +4.91% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.51% | +4.45% |
+| INJ/USDT:USDT | below_1h_threshold | +2.86% | +2.80% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.35% | +2.29% |
+| LIT/USDT:USDT | below_1h_threshold | +2.29% | +2.23% |
 
 ## 5. 次に見るべき不足
 
