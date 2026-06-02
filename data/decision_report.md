@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T04:45:39.708473+00:00
+- generated_at: 2026-06-02T04:50:56.590715+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5404**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T04:45:34.817048+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=70977.1
-- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1, 4h RSI 69.8 >= 65=1
+- 更新: 2026-06-02T04:50:51.112534+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=70875.0
+- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 69.6 >= 65=1, 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +31.86% | $5,147,139.96 |
-| ESPORTS/USDT:USDT | +27.85% | $11,137,557.53 |
-| WLD/USDT:USDT | +20.44% | $142,923,904.56 |
-| H/USDT:USDT | +17.57% | $55,389,068.46 |
-| LAB/USDT:USDT | +17.29% | $204,660,700.45 |
+| SKYAI/USDT:USDT | +34.15% | $5,303,032.51 |
+| ESPORTS/USDT:USDT | +26.42% | $11,157,925.12 |
+| WLD/USDT:USDT | +19.77% | $143,628,596.70 |
+| H/USDT:USDT | +18.97% | $55,482,573.25 |
+| LAB/USDT:USDT | +18.04% | $205,043,770.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.98% | +3.90% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.67% | +3.59% |
-| MERL/USDT:USDT | below_1h_threshold | +3.44% | +3.36% |
-| APE/USDT:USDT | below_1h_threshold | +1.83% | +1.75% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.80% | +1.72% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +4.01% | +4.07% |
+| MERL/USDT:USDT | below_1h_threshold | +3.58% | +3.64% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.36% | +3.42% |
+| APE/USDT:USDT | below_1h_threshold | +2.17% | +2.24% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.39% | +1.46% |
 
 ## 5. 次に見るべき不足
 
