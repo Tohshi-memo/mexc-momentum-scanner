@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T22:39:27.413354+00:00
+- generated_at: 2026-06-02T22:44:46.826016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5497**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T22:39:24.300639+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.71% price=67052.1
-- Funnel: target 769 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.8 >= 65=1
+- 更新: 2026-06-02T22:44:43.808244+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.88% price=66936.6
+- Funnel: target 769 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +31.85% | $12,857,155.54 |
-| US/USDT:USDT | +29.83% | $6,944,921.28 |
-| LIT/USDT:USDT | +16.35% | $6,552,133.38 |
-| BBSTOCK/USDT:USDT | +15.50% | $1,716,921.99 |
-| MRVLSTOCK/USDT:USDT | +14.87% | $14,846,573.77 |
+| PORTAL/USDT:USDT | +33.54% | $12,880,808.20 |
+| US/USDT:USDT | +27.59% | $6,998,778.34 |
+| BBSTOCK/USDT:USDT | +15.80% | $1,728,127.58 |
+| MRVLSTOCK/USDT:USDT | +14.36% | $14,929,484.54 |
+| LIT/USDT:USDT | +13.85% | $6,566,490.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.84% | +5.55% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.86% | +4.58% |
-| W/USDT:USDT | below_1h_threshold | +1.12% | +1.83% |
-| DYDX/USDT:USDT | below_1h_threshold | +0.95% | +1.66% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.60% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +5.26% |
+| CLO/USDT:USDT | below_1h_threshold | +1.94% | +2.82% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +2.73% |
+| W/USDT:USDT | below_1h_threshold | +1.04% | +1.92% |
+| GUN/USDT:USDT | below_1h_threshold | +0.29% | +1.17% |
 
 ## 5. 次に見るべき不足
 
