@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-02T12:39:46.144423+00:00
+- generated_at: 2026-06-02T12:44:55.072634+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5451**
+- closed shadow trades: **5452**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.40% / filled 20/20。**
-- 全期間 MARKET基準: n=5451, expectancy=-0.04%
+- 全期間 MARKET基準: n=5452, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=+1.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,18 +23,18 @@
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +1.42% | **+1.42%** |
 | MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +0.72% | **+0.61%** |
 | LIMIT_4PCT | 11/20 | 55.0% | +1.09% | **+0.60%** |
-| LIMIT_BB3S | 5/15 | 33.3% | +1.75% | **+0.58%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.66% | **+0.56%** |
+| LIMIT_BB3S | 6/15 | 40.0% | +0.94% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_7PCT_LONG | 12/20 | 60.0% | +0.22% | **+0.13%** |
+| LIMIT_FIB1272_LONG | 13/20 | 65.0% | +0.09% | **+0.06%** |
 | LIMIT_10PCT_LONG | 6/20 | 30.0% | +0.07% | **+0.02%** |
 | LIMIT_9PCT_LONG | 7/20 | 35.0% | -0.10% | **-0.04%** |
-| ASK_LONG | 20/20 | 100.0% | -0.09% | **-0.09%** |
-| LIMIT_7PCT_LONG | 11/20 | 55.0% | -0.49% | **-0.27%** |
 | LIMIT_FIB1618_LONG | 4/20 | 20.0% | -1.38% | **-0.28%** |
 
 ## 2. $100 Live Portfolio
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$132.66** / 初期 $100.00 (+32.66%)
-- 確定: 963件 (Win 226 / Loss 292 / Flat 445) / skip 1049件
-- 成長率目線: 平均log +0.000293 / 幾何平均 +0.029% per trade / maxDD +7.25%
+- 残高: **$131.99** / 初期 $100.00 (+31.99%)
+- 確定: 964件 (Win 226 / Loss 293 / Flat 445) / skip 1049件
+- 成長率目線: 平均log +0.000288 / 幾何平均 +0.029% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EPIC/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $132.66
+- 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $131.99
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T12:39:43.550855+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.49% price=69090.6
-- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-02T12:44:52.221001+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=69173.8
+- Funnel: target 773 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.8 >= 65=1
+- Strict後reject: 4h RSI 90.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +35.70% | $3,753,492.37 |
-| USELESS/USDT:USDT | +28.05% | $2,720,579.90 |
-| EPIC/USDT:USDT | +26.71% | $3,071,153.47 |
-| PIEVERSE/USDT:USDT | +26.21% | $3,661,271.50 |
-| CLO/USDT:USDT | +25.64% | $1,109,204.85 |
+| US/USDT:USDT | +34.83% | $3,812,975.31 |
+| USELESS/USDT:USDT | +29.95% | $2,768,859.12 |
+| PIEVERSE/USDT:USDT | +27.22% | $3,785,254.30 |
+| EPIC/USDT:USDT | +27.19% | $3,090,772.89 |
+| LAB/USDT:USDT | +27.13% | $174,563,603.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.91% | +5.40% |
-| BILL/USDT:USDT | below_1h_threshold | +3.36% | +3.85% |
-| RIF/USDT:USDT | below_1h_threshold | +3.30% | +3.79% |
-| UB/USDT:USDT | below_1h_threshold | +2.98% | +3.47% |
-| CLO/USDT:USDT | below_1h_threshold | +2.32% | +2.81% |
+| H/USDT:USDT | below_1h_threshold | +4.93% | +5.30% |
+| RIF/USDT:USDT | below_1h_threshold | +3.89% | +4.26% |
+| UB/USDT:USDT | below_1h_threshold | +3.67% | +4.04% |
+| CLO/USDT:USDT | below_1h_threshold | +2.71% | +3.08% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.34% | +2.71% |
 
 ## 5. 次に見るべき不足
 
