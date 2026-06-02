@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T18:39:33.906393+00:00
+- generated_at: 2026-06-02T18:44:34.394517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5483**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T18:39:31.405235+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=67230.0
+- 更新: 2026-06-02T18:44:31.866886+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=67230.8
 - Funnel: target 770 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +36.86% | $12,217,457.68 |
-| ENA/USDT:USDT | +14.50% | $41,214,329.53 |
-| LIT/USDT:USDT | +14.24% | $3,785,722.02 |
-| ESPORTS/USDT:USDT | +13.61% | $11,618,480.30 |
-| PIEVERSE/USDT:USDT | +12.41% | $5,487,496.79 |
+| PORTAL/USDT:USDT | +43.24% | $12,375,299.70 |
+| ESPORTS/USDT:USDT | +15.53% | $11,634,858.71 |
+| LIT/USDT:USDT | +15.31% | $3,823,043.86 |
+| ENA/USDT:USDT | +13.56% | $41,473,880.73 |
+| PIEVERSE/USDT:USDT | +12.04% | $5,502,221.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.78% | +4.13% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.75% | +3.10% |
-| BBSTOCK/USDT:USDT | below_1h_threshold | +2.52% | +2.87% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.10% | +2.45% |
-| US/USDT:USDT | below_1h_threshold | +1.89% | +2.24% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.82% | +4.17% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.57% | +2.92% |
+| BBSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.77% |
+| LAB/USDT:USDT | below_1h_threshold | +2.23% | +2.57% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.06% | +2.41% |
 
 ## 5. 次に見るべき不足
 
