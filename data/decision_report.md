@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T15:44:55.515852+00:00
+- generated_at: 2026-06-02T15:49:30.464997+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5461**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T15:44:52.974419+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.01% price=67301.1
-- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.1 >= 65=1
+- 更新: 2026-06-02T15:49:26.460122+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.15% price=67205.7
+- Funnel: target 773 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +46.83% | $5,415,768.00 |
-| MRVLSTOCK/USDT:USDT | +31.71% | $9,912,362.04 |
-| PIEVERSE/USDT:USDT | +27.84% | $4,917,783.08 |
-| CLO/USDT:USDT | +26.78% | $1,588,977.43 |
-| USELESS/USDT:USDT | +26.55% | $4,604,506.53 |
+| US/USDT:USDT | +44.42% | $5,439,025.34 |
+| MRVLSTOCK/USDT:USDT | +31.44% | $10,030,021.70 |
+| PIEVERSE/USDT:USDT | +27.77% | $4,945,202.92 |
+| CLO/USDT:USDT | +26.78% | $1,602,240.74 |
+| USELESS/USDT:USDT | +26.32% | $4,614,136.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.05% | +4.06% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +3.72% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +3.34% |
-| CLO/USDT:USDT | below_1h_threshold | +2.31% | +3.32% |
-| HOME/USDT:USDT | below_1h_threshold | +2.05% | +3.06% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +3.75% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +3.71% |
+| CLO/USDT:USDT | below_1h_threshold | +2.31% | +3.46% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +2.48% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +2.46% |
 
 ## 5. 次に見るべき不足
 
