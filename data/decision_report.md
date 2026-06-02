@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T14:40:50.016863+00:00
+- generated_at: 2026-06-02T14:46:01.481948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5455**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T14:40:47.368136+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.14% price=67996.6
-- Funnel: target 773 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.9 >= 65=1
+- 更新: 2026-06-02T14:45:56.311584+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.96% price=68124.2
+- Funnel: target 773 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 75.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +39.77% | $5,017,844.40 |
-| CLO/USDT:USDT | +32.69% | $1,446,434.91 |
-| USELESS/USDT:USDT | +31.16% | $4,161,460.11 |
-| MRVLSTOCK/USDT:USDT | +27.70% | $8,999,706.50 |
-| UB/USDT:USDT | +27.12% | $3,773,836.97 |
+| US/USDT:USDT | +43.72% | $5,057,594.56 |
+| CLO/USDT:USDT | +33.55% | $1,455,422.79 |
+| USELESS/USDT:USDT | +33.17% | $4,190,444.82 |
+| MRVLSTOCK/USDT:USDT | +29.77% | $9,065,563.30 |
+| UB/USDT:USDT | +28.00% | $3,796,599.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.60% | +3.75% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.93% | +3.07% |
-| UB/USDT:USDT | below_1h_threshold | +1.56% | +2.70% |
-| M/USDT:USDT | below_1h_threshold | +0.75% | +1.89% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +1.84% |
+| SLX/USDT:USDT | below_1h_threshold | +2.99% | +3.95% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +3.33% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.27% | +3.23% |
+| UB/USDT:USDT | below_1h_threshold | +2.26% | +3.22% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.93% | +2.89% |
 
 ## 5. 次に見るべき不足
 
