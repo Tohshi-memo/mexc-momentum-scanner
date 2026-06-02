@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T02:59:12.389467+00:00
+- generated_at: 2026-06-02T03:04:32.731751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5391**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T02:59:08.818461+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=70741.5
-- Funnel: target 776 → liquid 148 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.6 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI 89.8 >= 65=1, 4h RSI 66.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-02T03:04:30.424266+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=70835.1
+- Funnel: target 776 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +25.23% | $10,639,444.21 |
-| RIF/USDT:USDT | +15.44% | $1,117,086.52 |
-| LAB/USDT:USDT | +15.42% | $197,028,735.22 |
-| PIEVERSE/USDT:USDT | +14.39% | $1,716,401.98 |
-| H/USDT:USDT | +14.30% | $57,966,499.19 |
+| ESPORTS/USDT:USDT | +27.61% | $10,667,012.75 |
+| H/USDT:USDT | +15.77% | $55,867,471.96 |
+| PIEVERSE/USDT:USDT | +15.00% | $1,774,672.40 |
+| LAB/USDT:USDT | +14.92% | $193,483,631.36 |
+| RIF/USDT:USDT | +14.40% | $1,123,005.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.52% | +3.35% |
-| LIT/USDT:USDT | below_1h_threshold | +3.52% | +3.35% |
-| RENDER/USDT:USDT | below_1h_threshold | +3.27% | +3.10% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.15% | +2.99% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.86% | +2.69% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.28% | +3.25% |
+| H/USDT:USDT | below_1h_threshold | +1.39% | +1.37% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
+| SPX/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
+| JUP/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
 
 ## 5. 次に見るべき不足
 
