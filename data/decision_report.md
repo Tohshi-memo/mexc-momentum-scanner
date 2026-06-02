@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T01:20:15.739323+00:00
+- generated_at: 2026-06-02T01:25:25.150721+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5387**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T01:20:13.444946+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=71293.6
+- 更新: 2026-06-02T01:25:22.845699+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=71276.6
 - Funnel: target 774 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +72.85% | $9,194,421.11 |
-| UB/USDT:USDT | +12.93% | $2,348,602.35 |
-| WLD/USDT:USDT | +12.28% | $137,438,449.37 |
-| SLX/USDT:USDT | +10.34% | $12,784,610.11 |
-| NEAR/USDT:USDT | +9.06% | $133,747,684.99 |
+| ESPORTS/USDT:USDT | +69.76% | $9,265,100.00 |
+| UB/USDT:USDT | +14.35% | $2,365,265.08 |
+| WLD/USDT:USDT | +13.62% | $137,613,228.81 |
+| NEAR/USDT:USDT | +10.93% | $134,092,570.87 |
+| SLX/USDT:USDT | +10.53% | $12,818,761.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +2.18% | +2.14% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.03% | +2.00% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.81% | +0.77% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.62% | +0.58% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.93% | +2.92% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.16% | +2.14% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.68% | +1.67% |
+| UB/USDT:USDT | below_1h_threshold | +1.38% | +1.37% |
+| ARKM/USDT:USDT | below_1h_threshold | +1.02% | +1.01% |
 
 ## 5. 次に見るべき不足
 
