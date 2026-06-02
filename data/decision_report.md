@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-02T06:57:12.158208+00:00
+- generated_at: 2026-06-02T07:01:57.017669+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5416**
+- closed shadow trades: **5417**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5416, expectancy=-0.05%
+- 全期間 MARKET基準: n=5417, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,40 +46,38 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$137.00** / 初期 $100.00 (+37.00%)
-- 確定: 928件 (Win 219 / Loss 275 / Flat 434) / skip 1049件
-- 成長率目線: 平均log +0.000339 / 幾何平均 +0.034% per trade / maxDD +7.25%
+- 残高: **$136.31** / 初期 $100.00 (+36.31%)
+- 確定: 929件 (Win 219 / Loss 276 / Flat 434) / skip 1049件
+- 成長率目線: 平均log +0.000333 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EPIC/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $137.00
+- 最新: BSB/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $136.31
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T06:57:09.127163+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=69948.6
-- Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1, 4h RSI 80.7 >= 65=1, 4h RSI 70.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-02T07:01:54.798459+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=69983.0
+- Funnel: target 772 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +62.56% | $11,900,532.80 |
-| US/USDT:USDT | +39.64% | $1,179,488.92 |
-| ESPORTS/USDT:USDT | +27.38% | $11,986,266.08 |
-| OPG/USDT:USDT | +20.84% | $1,124,828.28 |
-| LAB/USDT:USDT | +20.12% | $219,258,494.21 |
+| SKYAI/USDT:USDT | +62.34% | $12,192,519.51 |
+| US/USDT:USDT | +41.52% | $1,188,990.69 |
+| ESPORTS/USDT:USDT | +25.23% | $11,917,360.57 |
+| H/USDT:USDT | +21.41% | $55,670,064.39 |
+| LAB/USDT:USDT | +20.27% | $212,980,646.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPG/USDT:USDT | below_1h_threshold | +3.34% | +3.75% |
-| BSB/USDT:USDT | below_1h_threshold | +3.28% | +3.69% |
-| UB/USDT:USDT | below_1h_threshold | +2.84% | +3.25% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.69% | +3.10% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.49% | +2.89% |
+| H/USDT:USDT | below_1h_threshold | +2.15% | +2.28% |
+| US/USDT:USDT | below_1h_threshold | +0.90% | +1.03% |
+| SLX/USDT:USDT | below_1h_threshold | +0.48% | +0.61% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.38% | +0.52% |
+| UB/USDT:USDT | below_1h_threshold | +0.25% | +0.38% |
 
 ## 5. 次に見るべき不足
 
