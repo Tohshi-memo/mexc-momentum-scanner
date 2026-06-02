@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T20:10:50.518803+00:00
+- generated_at: 2026-06-02T20:16:25.549784+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5485**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T20:10:48.027639+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=67455.0
+- 更新: 2026-06-02T20:16:22.878097+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=67284.2
 - Funnel: target 770 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1
+- Strict後reject: 4h RSI 85.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +26.89% | $12,705,141.90 |
-| LIT/USDT:USDT | +17.15% | $5,283,276.15 |
-| ESPORTS/USDT:USDT | +17.02% | $9,495,030.64 |
-| LAB/USDT:USDT | +15.72% | $176,663,782.73 |
-| ENA/USDT:USDT | +11.50% | $45,119,437.98 |
+| PORTAL/USDT:USDT | +25.36% | $12,777,759.76 |
+| ESPORTS/USDT:USDT | +18.08% | $9,516,906.78 |
+| LAB/USDT:USDT | +17.79% | $178,620,426.29 |
+| LIT/USDT:USDT | +17.56% | $5,398,792.63 |
+| PANWSTOCK/USDT:USDT | +12.52% | $3,220,106.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +2.07% | +1.81% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.86% | +1.61% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.75% | +1.50% |
-| BBSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.48% |
-| US/USDT:USDT | below_1h_threshold | +1.74% | +1.48% |
+| BBSTOCK/USDT:USDT | below_1h_threshold | +4.35% | +4.35% |
+| LAB/USDT:USDT | below_1h_threshold | +2.24% | +2.24% |
+| BSB/USDT:USDT | below_1h_threshold | +2.17% | +2.17% |
+| QNT/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.03% | +2.02% |
 
 ## 5. 次に見るべき不足
 
