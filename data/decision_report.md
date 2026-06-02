@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-02T06:08:31.017945+00:00
+- generated_at: 2026-06-02T06:13:48.414173+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5412**
+- closed shadow trades: **5413**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5412, expectancy=-0.05%
+- 全期間 MARKET基準: n=5413, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,20 +21,20 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 4/20 | 20.0% | +1.89% | **+0.38%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +1.89% | **+0.47%** |
 | LIMIT_FIB1618 | 3/20 | 15.0% | +2.24% | **+0.34%** |
-| LIMIT_5PCT | 6/20 | 30.0% | +0.13% | **+0.04%** |
+| LIMIT_5PCT | 7/20 | 35.0% | +0.24% | **+0.09%** |
 | LIMIT_4PCT | 14/20 | 70.0% | -0.29% | **-0.20%** |
-| LIMIT_BB3S | 5/19 | 26.3% | -1.28% | **-0.34%** |
+| ASK | 20/20 | 100.0% | -0.35% | **-0.35%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 15/20 | 75.0% | +2.57% | **+1.93%** |
+| LIMIT_2PCT_LONG | 15/20 | 75.0% | +2.70% | **+2.02%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +2.03% | **+1.83%** |
-| LIMIT_3PCT_LONG | 12/20 | 60.0% | +1.93% | **+1.16%** |
 | LIMIT_ATR_LONG | 11/20 | 55.0% | +2.00% | **+1.10%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
 | LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.51% | **+0.83%** |
 
 ## 2. $100 Live Portfolio
@@ -46,40 +46,38 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$134.62** / 初期 $100.00 (+34.62%)
-- 確定: 924件 (Win 216 / Loss 274 / Flat 434) / skip 1049件
-- 成長率目線: 平均log +0.000322 / 幾何平均 +0.032% per trade / maxDD +7.25%
+- 残高: **$135.47** / 初期 $100.00 (+35.47%)
+- 確定: 925件 (Win 217 / Loss 274 / Flat 434) / skip 1049件
+- 成長率目線: 平均log +0.000328 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EPIC/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $134.62
+- 最新: SKYAI/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $135.47
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T06:08:28.128879+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=70322.1
-- Funnel: target 777 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-02T06:13:45.726023+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=70232.1
+- Funnel: target 777 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +53.67% | $8,303,720.34 |
-| US/USDT:USDT | +27.60% | $1,015,748.47 |
-| ESPORTS/USDT:USDT | +25.71% | $11,605,992.92 |
-| H/USDT:USDT | +22.62% | $54,867,415.73 |
-| LAB/USDT:USDT | +21.20% | $209,354,482.91 |
+| SKYAI/USDT:USDT | +57.12% | $8,914,347.16 |
+| ESPORTS/USDT:USDT | +26.42% | $11,911,834.04 |
+| US/USDT:USDT | +25.79% | $1,051,983.02 |
+| H/USDT:USDT | +23.14% | $56,447,950.93 |
+| LAB/USDT:USDT | +19.95% | $216,104,982.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.17% | +2.05% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.45% | +1.33% |
-| SLX/USDT:USDT | below_1h_threshold | +1.45% | +1.32% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.34% | +1.22% |
-| US/USDT:USDT | below_1h_threshold | +1.17% | +1.05% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.72% | +3.73% |
+| MYX/USDT:USDT | below_1h_threshold | +3.18% | +3.18% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.18% | +3.18% |
+| BSB/USDT:USDT | below_1h_threshold | +3.15% | +3.15% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
 
 ## 5. 次に見るべき不足
 
