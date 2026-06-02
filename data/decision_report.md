@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T08:35:42.732254+00:00
+- generated_at: 2026-06-02T08:41:31.835270+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5430**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T08:35:39.724966+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=69987.1
-- Funnel: target 772 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 65.9 >= 65=1, 4h RSI 87.0 >= 65=1
+- 更新: 2026-06-02T08:41:28.373144+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=69893.2
+- Funnel: target 772 → liquid 150 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.1 >= 65=1, 4h RSI 65.8 >= 65=1, 4h RSI 84.8 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI 81.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +51.15% | $17,368,425.70 |
-| US/USDT:USDT | +36.53% | $2,000,863.55 |
-| ESPORTS/USDT:USDT | +34.04% | $12,349,713.42 |
-| MRVLSTOCK/USDT:USDT | +27.15% | $3,260,963.63 |
-| USELESS/USDT:USDT | +20.22% | $1,598,502.58 |
+| SKYAI/USDT:USDT | +52.63% | $17,613,340.80 |
+| US/USDT:USDT | +37.60% | $2,020,992.13 |
+| ESPORTS/USDT:USDT | +34.28% | $12,361,933.06 |
+| MRVLSTOCK/USDT:USDT | +26.30% | $3,353,930.10 |
+| H/USDT:USDT | +22.30% | $59,060,051.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.09% | +4.23% |
-| JTO/USDT:USDT | below_1h_threshold | +4.02% | +4.16% |
-| BILL/USDT:USDT | below_1h_threshold | +3.33% | +3.46% |
-| H/USDT:USDT | below_1h_threshold | +3.06% | +3.20% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.54% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.92% | +5.19% |
+| BILL/USDT:USDT | below_1h_threshold | +3.55% | +3.82% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.50% | +3.77% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.26% | +2.52% |
+| MERL/USDT:USDT | below_1h_threshold | +1.69% | +1.96% |
 
 ## 5. 次に見るべき不足
 
