@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T07:07:07.323191+00:00
+- generated_at: 2026-06-02T07:12:22.118733+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5419**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T07:07:04.273200+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=69829.0
-- Funnel: target 772 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-02T07:12:19.745679+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=69970.1
+- Funnel: target 772 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +43.32% | $1,214,620.26 |
-| SKYAI/USDT:USDT | +41.70% | $13,052,020.29 |
-| ESPORTS/USDT:USDT | +25.47% | $11,938,568.96 |
-| H/USDT:USDT | +22.47% | $55,753,718.65 |
-| MRVLSTOCK/USDT:USDT | +20.56% | $2,531,591.98 |
+| SKYAI/USDT:USDT | +44.65% | $13,410,628.72 |
+| US/USDT:USDT | +41.21% | $1,255,284.35 |
+| ESPORTS/USDT:USDT | +26.19% | $11,943,214.69 |
+| H/USDT:USDT | +24.96% | $55,998,219.55 |
+| MRVLSTOCK/USDT:USDT | +20.67% | $2,575,724.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.60% | +2.95% |
-| MYX/USDT:USDT | below_1h_threshold | +1.60% | +1.95% |
-| US/USDT:USDT | below_1h_threshold | +1.40% | +1.75% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +1.22% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.65% | +1.00% |
+| H/USDT:USDT | below_1h_threshold | +4.64% | +4.79% |
+| UB/USDT:USDT | below_1h_threshold | +2.73% | +2.88% |
+| MYX/USDT:USDT | below_1h_threshold | +1.82% | +1.97% |
+| RIF/USDT:USDT | below_1h_threshold | +1.43% | +1.58% |
+| ICP/USDT:USDT | below_1h_threshold | +1.25% | +1.40% |
 
 ## 5. 次に見るべき不足
 
