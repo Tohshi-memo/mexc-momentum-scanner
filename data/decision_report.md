@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T17:10:48.682277+00:00
+- generated_at: 2026-06-02T17:16:06.045842+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5471**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.59** / 初期 $100.00 (-2.41%)
-- 確定トレード: 88件 (TP 26 / SL 59 / EXP 3)
-- 最新: STG/USDT:USDT TP_HIT PnL +8.00% 残高後 $97.59
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$97.10** / 初期 $100.00 (-2.90%)
+- 確定トレード: 89件 (TP 26 / SL 60 / EXP 3)
+- 最新: ENA/USDT:USDT SL_HIT PnL -3.88% 残高後 $97.10
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T17:10:45.814064+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=67424.7
-- Funnel: target 773 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-02T17:16:00.610881+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=67449.9
+- Funnel: target 773 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +21.46% | $9,266,916.52 |
-| ENA/USDT:USDT | +12.04% | $33,595,902.61 |
-| LIT/USDT:USDT | +11.63% | $2,530,184.56 |
-| PIEVERSE/USDT:USDT | +8.96% | $5,273,277.57 |
-| SKYAI/USDT:USDT | +7.79% | $30,617,407.79 |
+| PORTAL/USDT:USDT | +23.20% | $9,416,879.68 |
+| ENA/USDT:USDT | +12.76% | $33,986,704.77 |
+| LIT/USDT:USDT | +12.43% | $2,719,421.81 |
+| PIEVERSE/USDT:USDT | +9.23% | $5,343,853.69 |
+| SKYAI/USDT:USDT | +8.38% | $30,699,114.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +4.91% | +4.86% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.25% | +3.20% |
-| H/USDT:USDT | below_1h_threshold | +3.07% | +3.03% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.86% | +2.81% |
-| ENA/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.96% | +3.87% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.77% | +3.68% |
+| ENA/USDT:USDT | below_1h_threshold | +3.26% | +3.17% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.78% | +2.69% |
+| ICP/USDT:USDT | below_1h_threshold | +2.56% | +2.47% |
 
 ## 5. 次に見るべき不足
 
