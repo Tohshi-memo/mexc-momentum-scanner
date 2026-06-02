@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T21:51:05.530472+00:00
+- generated_at: 2026-06-02T21:56:14.545487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5492**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T21:51:02.166903+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=67610.9
-- Funnel: target 769 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-06-02T21:56:11.632143+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=67497.9
+- Funnel: target 769 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.6 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +24.84% | $12,997,821.31 |
-| BBSTOCK/USDT:USDT | +16.10% | $1,606,157.96 |
-| LIT/USDT:USDT | +15.48% | $6,395,900.98 |
-| GENIUS/USDT:USDT | +14.84% | $1,060,971.89 |
-| ENA/USDT:USDT | +13.02% | $46,735,820.66 |
+| PORTAL/USDT:USDT | +26.05% | $13,037,782.53 |
+| BBSTOCK/USDT:USDT | +17.12% | $1,614,613.25 |
+| LIT/USDT:USDT | +15.19% | $6,422,359.92 |
+| GENIUS/USDT:USDT | +14.53% | $1,065,512.86 |
+| US/USDT:USDT | +13.50% | $6,322,073.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +3.06% | +2.98% |
-| BSB/USDT:USDT | below_1h_threshold | +2.91% | +2.83% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.89% | +2.81% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.45% | +2.37% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +1.92% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.17% | +3.26% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.61% | +2.70% |
+| VVV/USDT:USDT | below_1h_threshold | +2.18% | +2.27% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +2.00% |
+| CLO/USDT:USDT | below_1h_threshold | +1.85% | +1.93% |
 
 ## 5. 次に見るべき不足
 
