@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T04:40:25.505798+00:00
+- generated_at: 2026-06-02T04:45:39.708473+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5404**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T04:40:20.106993+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=71010.0
-- Funnel: target 777 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.4 >= 65=1
+- 更新: 2026-06-02T04:45:34.817048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=70977.1
+- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.1 >= 65=1, 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +32.11% | $5,014,913.14 |
-| ESPORTS/USDT:USDT | +27.14% | $11,092,253.86 |
-| WLD/USDT:USDT | +20.49% | $142,538,428.57 |
-| LAB/USDT:USDT | +17.89% | $204,289,449.53 |
-| MRVLSTOCK/USDT:USDT | +16.86% | $1,745,842.24 |
+| SKYAI/USDT:USDT | +31.86% | $5,147,139.96 |
+| ESPORTS/USDT:USDT | +27.85% | $11,137,557.53 |
+| WLD/USDT:USDT | +20.44% | $142,923,904.56 |
+| H/USDT:USDT | +17.57% | $55,389,068.46 |
+| LAB/USDT:USDT | +17.29% | $204,660,700.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +4.39% | +4.27% |
-| MERL/USDT:USDT | below_1h_threshold | +2.33% | +2.20% |
-| H/USDT:USDT | below_1h_threshold | +1.97% | +1.85% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.75% | +1.63% |
-| WLD/USDT:USDT | below_1h_threshold | +1.54% | +1.42% |
+| H/USDT:USDT | below_1h_threshold | +3.98% | +3.90% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.67% | +3.59% |
+| MERL/USDT:USDT | below_1h_threshold | +3.44% | +3.36% |
+| APE/USDT:USDT | below_1h_threshold | +1.83% | +1.75% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.80% | +1.72% |
 
 ## 5. 次に見るべき不足
 
