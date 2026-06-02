@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T13:42:14.846301+00:00
+- generated_at: 2026-06-02T13:47:24.187134+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5453**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T13:42:11.996409+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=68868.1
-- Funnel: target 773 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.6 >= 65=1, 4h RSI 87.0 >= 65=1
+- 更新: 2026-06-02T13:47:21.027784+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=68859.0
+- Funnel: target 773 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +45.65% | $4,273,385.49 |
-| USELESS/USDT:USDT | +32.71% | $3,335,959.67 |
-| CLO/USDT:USDT | +32.69% | $1,232,317.12 |
-| EPIC/USDT:USDT | +27.88% | $3,259,608.15 |
-| LAB/USDT:USDT | +26.43% | $177,814,075.54 |
+| US/USDT:USDT | +44.98% | $4,315,649.12 |
+| USELESS/USDT:USDT | +32.98% | $3,378,955.84 |
+| CLO/USDT:USDT | +31.17% | $1,259,304.99 |
+| LAB/USDT:USDT | +27.41% | $178,403,796.74 |
+| MRVLSTOCK/USDT:USDT | +27.33% | $7,523,005.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +4.90% | +5.06% |
-| EPIC/USDT:USDT | below_1h_threshold | +4.75% | +4.91% |
-| ZORA/USDT:USDT | below_1h_threshold | +4.36% | +4.52% |
-| HOME/USDT:USDT | below_1h_threshold | +4.18% | +4.34% |
-| SLX/USDT:USDT | below_1h_threshold | +3.30% | +3.47% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.14% | +4.31% |
+| CLO/USDT:USDT | below_1h_threshold | +3.69% | +3.87% |
+| ICP/USDT:USDT | below_1h_threshold | +3.29% | +3.47% |
+| SLX/USDT:USDT | below_1h_threshold | +2.46% | +2.63% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.22% | +2.39% |
 
 ## 5. 次に見るべき不足
 
