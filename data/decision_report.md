@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T20:26:29.679755+00:00
+- generated_at: 2026-06-02T20:31:49.107847+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5487**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T20:26:27.173069+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=66977.2
-- Funnel: target 770 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1
+- 更新: 2026-06-02T20:31:46.313890+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=67117.7
+- Funnel: target 770 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +25.79% | $12,925,728.97 |
-| LAB/USDT:USDT | +20.28% | $181,805,861.04 |
-| ESPORTS/USDT:USDT | +17.23% | $9,542,730.84 |
-| LIT/USDT:USDT | +16.87% | $5,487,404.93 |
-| PANWSTOCK/USDT:USDT | +12.45% | $3,302,807.21 |
+| PORTAL/USDT:USDT | +28.21% | $13,037,727.20 |
+| LAB/USDT:USDT | +19.20% | $183,082,854.94 |
+| ESPORTS/USDT:USDT | +17.02% | $9,548,970.08 |
+| LIT/USDT:USDT | +15.93% | $5,569,262.88 |
+| PANWSTOCK/USDT:USDT | +11.43% | $3,371,148.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.87% | +5.32% |
-| LAB/USDT:USDT | below_1h_threshold | +4.37% | +4.83% |
-| BBSTOCK/USDT:USDT | below_1h_threshold | +3.58% | +4.03% |
-| BILL/USDT:USDT | below_1h_threshold | +2.00% | +2.45% |
-| BSB/USDT:USDT | below_1h_threshold | +1.79% | +2.24% |
+| EPIC/USDT:USDT | below_1h_threshold | +5.00% | +5.24% |
+| LAB/USDT:USDT | below_1h_threshold | +3.67% | +3.92% |
+| BSB/USDT:USDT | below_1h_threshold | +3.04% | +3.29% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.84% | +3.08% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.81% | +3.05% |
 
 ## 5. 次に見るべき不足
 
