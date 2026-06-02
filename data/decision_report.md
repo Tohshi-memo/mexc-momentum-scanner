@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-02T03:57:57.347460+00:00
+- generated_at: 2026-06-02T04:03:09.601920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5401**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T03:57:54.077782+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=70919.8
-- Funnel: target 777 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 77.6 >= 65=1, 4h RSI 91.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-02T04:03:07.289478+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=70916.8
+- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +23.49% | $4,267,333.65 |
-| RIF/USDT:USDT | +23.15% | $1,295,004.87 |
-| LAB/USDT:USDT | +21.75% | $199,773,315.65 |
-| ESPORTS/USDT:USDT | +18.33% | $10,897,047.99 |
-| WLD/USDT:USDT | +18.12% | $143,714,442.88 |
+| LAB/USDT:USDT | +22.64% | $198,135,345.48 |
+| SKYAI/USDT:USDT | +22.55% | $4,352,689.33 |
+| RIF/USDT:USDT | +22.06% | $1,316,304.76 |
+| MRVLSTOCK/USDT:USDT | +20.17% | $1,464,809.17 |
+| ESPORTS/USDT:USDT | +19.52% | $10,906,872.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_relative_strength | +5.08% | +4.93% |
-| EPIC/USDT:USDT | below_1h_threshold | +4.97% | +4.83% |
-| PORTAL/USDT:USDT | below_1h_threshold | +4.53% | +4.39% |
-| JTO/USDT:USDT | below_1h_threshold | +4.10% | +3.96% |
-| WLD/USDT:USDT | below_1h_threshold | +4.02% | +3.88% |
+| H/USDT:USDT | below_1h_threshold | +2.98% | +2.98% |
+| XPL/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
+| LAB/USDT:USDT | below_1h_threshold | +0.91% | +0.91% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.85% | +0.86% |
 
 ## 5. 次に見るべき不足
 
