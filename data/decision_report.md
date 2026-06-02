@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-02T22:55:24.536872+00:00
+- generated_at: 2026-06-02T23:00:45.109103+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5498**
+- closed shadow trades: **5499**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5498, expectancy=-0.04%
+- 全期間 MARKET基準: n=5499, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.28%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,9 +32,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.08% | **+0.83%** |
+| ASK_LONG | 20/20 | 100.0% | +0.83% | **+0.83%** |
 | LIMIT_BB3S_LONG | 6/8 | 75.0% | +1.10% | **+0.82%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.78% | **+0.78%** |
-| ASK_LONG | 20/20 | 100.0% | +0.76% | **+0.76%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.86% | **+0.69%** |
 
 ## 2. $100 Live Portfolio
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$130.39** / 初期 $100.00 (+30.39%)
-- 確定: 976件 (Win 229 / Loss 300 / Flat 447) / skip 1083件
+- 確定: 977件 (Win 229 / Loss 300 / Flat 448) / skip 1083件
 - 成長率目線: 平均log +0.000272 / 幾何平均 +0.027% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $130.39
+- 最新: US/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $130.39
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-02T22:55:21.911585+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.44% price=66559.8
-- Funnel: target 769 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-02T23:00:42.247628+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=66230.1
+- Funnel: target 770 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +32.12% | $12,946,255.87 |
-| US/USDT:USDT | +20.21% | $7,151,057.65 |
-| LIT/USDT:USDT | +17.50% | $6,653,105.03 |
-| BBSTOCK/USDT:USDT | +14.58% | $1,735,168.39 |
-| MRVLSTOCK/USDT:USDT | +13.02% | $15,084,780.73 |
+| PORTAL/USDT:USDT | +31.80% | $12,610,959.87 |
+| US/USDT:USDT | +24.16% | $7,206,598.43 |
+| LIT/USDT:USDT | +16.45% | $6,560,013.37 |
+| BBSTOCK/USDT:USDT | +15.40% | $1,738,020.00 |
+| MRVLSTOCK/USDT:USDT | +14.52% | $15,136,944.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +4.20% | +5.64% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +4.72% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +3.91% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.39% | +3.83% |
-| LIT/USDT:USDT | below_1h_threshold | +1.92% | +3.36% |
+| XLM/USDT:USDT | below_1h_threshold | +0.42% | +0.61% |
+| BBSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.54% |
+| W/USDT:USDT | below_1h_threshold | +0.24% | +0.43% |
+| LYN/USDT:USDT | below_1h_threshold | +0.22% | +0.41% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.20% | +0.39% |
 
 ## 5. 次に見るべき不足
 
