@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T04:16:18.135107+00:00
+- generated_at: 2026-06-03T04:21:39.359727+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5517**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T04:16:15.760836+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.80% price=66340.9
+- 更新: 2026-06-03T04:21:37.000565+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.85% price=66376.3
 - Funnel: target 773 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +35.17% | $13,892,233.16 |
-| CLO/USDT:USDT | +23.13% | $2,068,664.60 |
-| GENIUS/USDT:USDT | +20.21% | $1,518,671.58 |
-| MRVLSTOCK/USDT:USDT | +19.87% | $17,844,992.95 |
-| APR/USDT:USDT | +19.04% | $1,180,979.22 |
+| PORTAL/USDT:USDT | +35.86% | $13,913,194.77 |
+| CLO/USDT:USDT | +24.24% | $2,112,728.34 |
+| APR/USDT:USDT | +22.50% | $1,184,938.06 |
+| GENIUS/USDT:USDT | +21.08% | $1,526,145.09 |
+| BBSTOCK/USDT:USDT | +19.45% | $1,895,001.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +3.93% | +3.13% |
-| RENDER/USDT:USDT | below_1h_threshold | +3.39% | +2.59% |
-| BILL/USDT:USDT | below_1h_threshold | +2.64% | +1.84% |
-| ICP/USDT:USDT | below_1h_threshold | +2.46% | +1.66% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.42% | +1.62% |
+| CLO/USDT:USDT | below_relative_strength | +5.18% | +4.33% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.40% | +2.54% |
+| RENDER/USDT:USDT | below_1h_threshold | +3.24% | +2.39% |
+| LIT/USDT:USDT | below_1h_threshold | +3.01% | +2.16% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.91% | +2.06% |
 
 ## 5. 次に見るべき不足
 
