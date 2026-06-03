@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T14:20:45.810107+00:00
+- generated_at: 2026-06-03T14:26:39.082938+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5550**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T14:20:43.281929+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=66687.3
+- 更新: 2026-06-03T14:26:36.699650+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=66769.9
 - Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +43.14% | $1,542,556.52 |
-| EPIC/USDT:USDT | +38.62% | $3,029,278.82 |
-| CLO/USDT:USDT | +35.59% | $5,317,014.12 |
-| ENA/USDT:USDT | +35.04% | $67,125,950.86 |
-| LIT/USDT:USDT | +30.35% | $11,036,057.97 |
+| MAGMA/USDT:USDT | +43.10% | $1,559,208.95 |
+| EPIC/USDT:USDT | +38.83% | $3,047,992.75 |
+| CLO/USDT:USDT | +36.84% | $5,340,856.29 |
+| ENA/USDT:USDT | +35.78% | $67,564,006.24 |
+| LIT/USDT:USDT | +30.34% | $11,075,328.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +3.44% | +3.73% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.70% |
-| APR/USDT:USDT | below_1h_threshold | +2.79% | +3.08% |
-| BBSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.53% |
-| BP/USDT:USDT | below_1h_threshold | +1.18% | +1.48% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.27% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.98% | +4.15% |
+| BP/USDT:USDT | below_1h_threshold | +2.50% | +2.67% |
+| AR/USDT:USDT | below_1h_threshold | +2.14% | +2.31% |
+| BBSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.92% |
 
 ## 5. 次に見るべき不足
 
