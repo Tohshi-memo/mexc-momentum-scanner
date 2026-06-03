@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T21:59:06.324077+00:00
+- generated_at: 2026-06-03T22:03:38.156821+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5581**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T21:59:03.520054+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.16% price=65723.0
-- Funnel: target 767 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=42, below_relative_strength=6, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1, 4h RSI 75.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-03T22:03:36.140177+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=65639.9
+- Funnel: target 767 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +59.45% | $16,875,127.54 |
-| STO/USDT:USDT | +21.22% | $5,848,640.29 |
-| BP/USDT:USDT | +13.68% | $1,503,311.12 |
-| US/USDT:USDT | +8.22% | $5,487,497.83 |
-| MAGMA/USDT:USDT | +7.71% | $4,097,101.11 |
+| OPN/USDT:USDT | +59.27% | $17,043,421.01 |
+| STO/USDT:USDT | +21.83% | $5,872,918.19 |
+| BP/USDT:USDT | +13.88% | $1,501,272.51 |
+| MAGMA/USDT:USDT | +8.03% | $4,096,254.06 |
+| US/USDT:USDT | +7.76% | $5,316,833.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_relative_strength | +6.05% | +4.90% |
-| RENDER/USDT:USDT | below_relative_strength | +5.69% | +4.53% |
-| PENGU/USDT:USDT | below_relative_strength | +5.56% | +4.40% |
-| ETHFI/USDT:USDT | below_relative_strength | +5.38% | +4.22% |
-| VIRTUAL/USDT:USDT | below_relative_strength | +5.37% | +4.21% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.85% | +1.00% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.83% | +0.98% |
+| STO/USDT:USDT | below_1h_threshold | +0.77% | +0.92% |
+| CHZ/USDT:USDT | below_1h_threshold | +0.74% | +0.89% |
 
 ## 5. 次に見るべき不足
 
