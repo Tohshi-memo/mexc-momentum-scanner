@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T07:18:43.938945+00:00
+- generated_at: 2026-06-03T07:24:07.378284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5528**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T07:18:41.343396+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=67226.6
-- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1
+- 更新: 2026-06-03T07:24:04.468685+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=67147.1
+- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1, 4h RSI 76.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIA/USDT:USDT | +40.90% | $1,072,972.02 |
-| CLO/USDT:USDT | +34.70% | $3,074,296.28 |
-| PORTAL/USDT:USDT | +29.95% | $14,236,714.96 |
-| GENIUS/USDT:USDT | +28.44% | $1,820,972.34 |
-| ENA/USDT:USDT | +24.00% | $45,810,164.12 |
+| AIA/USDT:USDT | +43.30% | $1,136,635.76 |
+| CLO/USDT:USDT | +34.48% | $3,086,233.11 |
+| PORTAL/USDT:USDT | +32.17% | $14,253,921.46 |
+| GENIUS/USDT:USDT | +26.51% | $1,837,442.90 |
+| APR/USDT:USDT | +23.58% | $1,311,197.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +3.04% | +2.63% |
-| WLD/USDT:USDT | below_1h_threshold | +2.99% | +2.58% |
-| US/USDT:USDT | below_1h_threshold | +2.70% | +2.29% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.32% | +1.91% |
-| XLM/USDT:USDT | below_1h_threshold | +2.32% | +1.91% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.42% | +3.13% |
+| WLD/USDT:USDT | below_1h_threshold | +3.33% | +3.04% |
+| XLM/USDT:USDT | below_1h_threshold | +2.91% | +2.62% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.40% | +2.11% |
+| WIF/USDT:USDT | below_1h_threshold | +2.23% | +1.93% |
 
 ## 5. 次に見るべき不足
 
