@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T02:14:47.371133+00:00
+- generated_at: 2026-06-03T02:20:05.747475+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5509**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T02:14:45.050613+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=66840.0
+- 更新: 2026-06-03T02:20:03.340660+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=66888.3
 - Funnel: target 773 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +37.39% | $13,637,697.98 |
-| GENIUS/USDT:USDT | +23.79% | $1,314,881.68 |
-| APR/USDT:USDT | +20.77% | $1,047,925.74 |
-| LIT/USDT:USDT | +18.79% | $7,104,005.09 |
-| BBSTOCK/USDT:USDT | +15.70% | $1,858,281.65 |
+| PORTAL/USDT:USDT | +36.23% | $13,670,082.70 |
+| GENIUS/USDT:USDT | +25.48% | $1,320,761.78 |
+| APR/USDT:USDT | +21.28% | $1,050,353.25 |
+| LIT/USDT:USDT | +18.96% | $7,119,117.00 |
+| BBSTOCK/USDT:USDT | +16.10% | $1,861,639.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.36% | +2.44% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.16% |
-| DYDX/USDT:USDT | below_1h_threshold | +0.87% | +0.94% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.79% | +0.87% |
-| ZORA/USDT:USDT | below_1h_threshold | +0.76% | +0.84% |
+| H/USDT:USDT | below_1h_threshold | +3.07% | +3.07% |
+| CLO/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.69% | +1.69% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.30% | +1.31% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.24% | +1.25% |
 
 ## 5. 次に見るべき不足
 
