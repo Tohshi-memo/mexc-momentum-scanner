@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T09:41:39.908844+00:00
+- generated_at: 2026-06-03T09:46:44.881080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5539**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T09:41:37.203244+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=66729.7
+- 更新: 2026-06-03T09:46:42.507935+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.44% price=66696.0
 - Funnel: target 771 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +41.78% | $4,015,744.68 |
-| PORTAL/USDT:USDT | +29.74% | $14,698,777.15 |
-| APR/USDT:USDT | +24.88% | $1,399,101.14 |
-| LIT/USDT:USDT | +23.70% | $8,636,771.51 |
-| ENA/USDT:USDT | +22.46% | $52,518,452.05 |
+| CLO/USDT:USDT | +39.13% | $4,051,669.28 |
+| PORTAL/USDT:USDT | +28.74% | $14,723,902.83 |
+| APR/USDT:USDT | +24.75% | $1,402,125.75 |
+| LIT/USDT:USDT | +23.30% | $8,685,568.19 |
+| US/USDT:USDT | +22.11% | $8,620,995.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +4.62% | +5.01% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.93% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +4.14% |
-| GUA/USDT:USDT | below_1h_threshold | +3.43% | +3.81% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.56% | +2.95% |
+| ZORA/USDT:USDT | below_1h_threshold | +4.94% | +5.37% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.76% | +5.19% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.16% | +4.59% |
+| GUA/USDT:USDT | below_1h_threshold | +3.64% | +4.08% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.64% | +3.08% |
 
 ## 5. 次に見るべき不足
 
