@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-03T10:26:19.813155+00:00
+- generated_at: 2026-06-03T10:31:44.200510+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5539**
+- closed shadow trades: **5540**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5539, expectancy=-0.05%
+- 全期間 MARKET基準: n=5540, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.24%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,16 +22,16 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_5PCT | 6/20 | 30.0% | +2.13% | **+0.64%** |
-| LIMIT_ATR | 18/20 | 90.0% | +0.69% | **+0.62%** |
-| LIMIT_3PCT | 17/20 | 85.0% | +0.62% | **+0.52%** |
-| LIMIT_FIB1272 | 7/20 | 35.0% | +1.17% | **+0.41%** |
-| LIMIT_4PCT | 14/20 | 70.0% | +0.57% | **+0.40%** |
+| LIMIT_FIB1272 | 7/20 | 35.0% | +1.78% | **+0.62%** |
+| LIMIT_ATR | 18/20 | 90.0% | +0.57% | **+0.52%** |
+| LIMIT_3PCT | 17/20 | 85.0% | +0.44% | **+0.37%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.92% | **+0.87%** |
+| LIMIT_1PCT_LONG | 20/20 | 100.0% | +1.27% | **+1.27%** |
 | LIMIT_4PCT_LONG | 10/20 | 50.0% | +1.61% | **+0.80%** |
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.96% | **+0.67%** |
 | LIMIT_3PCT_LONG | 12/20 | 60.0% | +1.05% | **+0.63%** |
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$131.71** / 初期 $100.00 (+31.71%)
-- 確定: 993件 (Win 236 / Loss 306 / Flat 451) / skip 1107件
-- 成長率目線: 平均log +0.000277 / 幾何平均 +0.028% per trade / maxDD +7.25%
+- 残高: **$133.02** / 初期 $100.00 (+33.02%)
+- 確定: 994件 (Win 237 / Loss 306 / Flat 451) / skip 1107件
+- 成長率目線: 平均log +0.000287 / 幾何平均 +0.029% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BEAT/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $131.71
+- 最新: EPIC/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +1.00% 残高後 $133.02
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T10:26:17.980703+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=67230.7
-- Funnel: target 771 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1
+- 更新: 2026-06-03T10:31:41.294152+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=67317.9
+- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +37.80% | $4,250,531.49 |
-| EPIC/USDT:USDT | +32.57% | $2,484,019.68 |
-| PORTAL/USDT:USDT | +27.10% | $14,758,626.80 |
-| ENA/USDT:USDT | +26.76% | $55,212,428.32 |
-| APR/USDT:USDT | +25.34% | $1,422,901.92 |
+| CLO/USDT:USDT | +42.96% | $4,294,272.27 |
+| EPIC/USDT:USDT | +39.22% | $2,542,476.15 |
+| ENA/USDT:USDT | +28.40% | $55,482,304.08 |
+| PORTAL/USDT:USDT | +27.00% | $14,774,445.04 |
+| APR/USDT:USDT | +25.12% | $1,425,505.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +3.61% | +3.33% |
-| MYX/USDT:USDT | below_1h_threshold | +3.45% | +3.16% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.16% |
-| OP/USDT:USDT | below_1h_threshold | +2.29% | +2.01% |
-| CLO/USDT:USDT | below_1h_threshold | +1.90% | +1.62% |
+| CLO/USDT:USDT | below_relative_strength | +5.26% | +4.85% |
+| ENA/USDT:USDT | below_1h_threshold | +4.55% | +4.13% |
+| WLD/USDT:USDT | below_1h_threshold | +4.07% | +3.66% |
+| OP/USDT:USDT | below_1h_threshold | +2.84% | +2.43% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.11% |
 
 ## 5. 次に見るべき不足
 
