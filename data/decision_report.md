@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T19:25:21.947697+00:00
+- generated_at: 2026-06-03T19:31:18.176439+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5573**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T19:25:18.768898+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=65720.4
-- Funnel: target 768 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1, 4h RSI 73.6 >= 65=1, 4h RSI 84.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-03T19:31:15.809382+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.50% price=65673.4
+- Funnel: target 768 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +62.79% | $11,621,313.41 |
-| STO/USDT:USDT | +40.67% | $2,507,910.35 |
-| BP/USDT:USDT | +15.92% | $1,460,368.10 |
-| LAB/USDT:USDT | +9.21% | $263,390,331.80 |
-| MAGMA/USDT:USDT | +8.66% | $3,718,900.52 |
+| OPN/USDT:USDT | +57.93% | $11,936,755.74 |
+| STO/USDT:USDT | +39.38% | $2,595,801.50 |
+| BP/USDT:USDT | +14.65% | $1,462,662.23 |
+| EDEN/USDT:USDT | +9.27% | $1,637,973.15 |
+| LAB/USDT:USDT | +9.25% | $263,665,258.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.55% | +4.98% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.84% | +3.27% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.80% | +2.22% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.76% | +2.19% |
-| LAB/USDT:USDT | below_1h_threshold | +1.39% | +1.81% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.91% | +5.41% |
+| OPN/USDT:USDT | below_1h_threshold | +4.75% | +5.25% |
+| STO/USDT:USDT | below_1h_threshold | +4.37% | +4.86% |
+| BP/USDT:USDT | below_1h_threshold | +3.67% | +4.16% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.27% | +3.77% |
 
 ## 5. 次に見るべき不足
 
