@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T17:22:18.024862+00:00
+- generated_at: 2026-06-03T17:27:46.676673+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5566**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T17:22:15.557068+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=65834.1
+- 更新: 2026-06-03T17:27:44.146163+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=65918.8
 - Funnel: target 771 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +23.10% | $4,292,332.18 |
-| BP/USDT:USDT | +11.84% | $1,371,944.89 |
-| EDEN/USDT:USDT | +11.62% | $1,330,591.31 |
-| HEI/USDT:USDT | +7.46% | $1,008,698.14 |
-| US/USDT:USDT | +4.27% | $5,609,191.64 |
+| OPN/USDT:USDT | +26.32% | $4,469,885.32 |
+| BP/USDT:USDT | +11.56% | $1,379,529.52 |
+| EDEN/USDT:USDT | +10.74% | $1,374,810.64 |
+| HEI/USDT:USDT | +7.46% | $1,013,175.89 |
+| US/USDT:USDT | +3.66% | $5,615,834.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.80% | +5.10% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.49% | +4.79% |
-| UB/USDT:USDT | below_1h_threshold | +2.98% | +3.29% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.54% | +1.85% |
-| APR/USDT:USDT | below_1h_threshold | +1.43% | +1.73% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.16% | +4.34% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.69% | +3.86% |
+| UB/USDT:USDT | below_1h_threshold | +3.18% | +3.36% |
+| JTO/USDT:USDT | below_1h_threshold | +2.78% | +2.95% |
+| APR/USDT:USDT | below_1h_threshold | +2.38% | +2.56% |
 
 ## 5. 次に見るべき不足
 
