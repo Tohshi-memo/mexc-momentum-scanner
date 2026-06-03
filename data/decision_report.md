@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T10:31:44.200510+00:00
+- generated_at: 2026-06-03T10:37:06.129259+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5540**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T10:31:41.294152+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=67317.9
-- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.5 >= 65=1
+- 更新: 2026-06-03T10:37:03.257975+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=67175.3
+- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 71.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +42.96% | $4,294,272.27 |
-| EPIC/USDT:USDT | +39.22% | $2,542,476.15 |
-| ENA/USDT:USDT | +28.40% | $55,482,304.08 |
-| PORTAL/USDT:USDT | +27.00% | $14,774,445.04 |
-| APR/USDT:USDT | +25.12% | $1,425,505.96 |
+| EPIC/USDT:USDT | +38.49% | $2,619,319.46 |
+| CLO/USDT:USDT | +37.95% | $4,324,808.51 |
+| ENA/USDT:USDT | +28.55% | $55,793,362.02 |
+| PORTAL/USDT:USDT | +27.32% | $14,784,756.75 |
+| APR/USDT:USDT | +26.13% | $1,429,438.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_relative_strength | +5.26% | +4.85% |
-| ENA/USDT:USDT | below_1h_threshold | +4.55% | +4.13% |
-| WLD/USDT:USDT | below_1h_threshold | +4.07% | +3.66% |
-| OP/USDT:USDT | below_1h_threshold | +2.84% | +2.43% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.11% |
+| ENA/USDT:USDT | below_relative_strength | +5.08% | +4.88% |
+| OP/USDT:USDT | below_1h_threshold | +2.76% | +2.56% |
+| MYX/USDT:USDT | below_1h_threshold | +2.70% | +2.50% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.35% | +2.15% |
+| WIF/USDT:USDT | below_1h_threshold | +2.28% | +2.08% |
 
 ## 5. 次に見るべき不足
 
