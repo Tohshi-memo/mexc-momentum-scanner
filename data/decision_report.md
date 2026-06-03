@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T05:57:13.464833+00:00
+- generated_at: 2026-06-03T06:02:17.823910+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5525**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T05:57:10.460643+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.30% price=67299.6
-- Funnel: target 773 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-03T06:02:15.482526+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=67266.7
+- Funnel: target 773 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +32.94% | $2,668,369.17 |
-| PORTAL/USDT:USDT | +28.63% | $14,161,651.76 |
-| GENIUS/USDT:USDT | +25.66% | $1,650,580.85 |
-| APR/USDT:USDT | +20.85% | $1,269,297.38 |
-| LIT/USDT:USDT | +19.74% | $7,618,464.82 |
+| CLO/USDT:USDT | +35.22% | $2,647,552.40 |
+| PORTAL/USDT:USDT | +28.63% | $13,960,348.23 |
+| GENIUS/USDT:USDT | +27.99% | $1,659,392.56 |
+| LIT/USDT:USDT | +20.47% | $7,546,071.10 |
+| APR/USDT:USDT | +20.23% | $1,267,427.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_relative_strength | +5.24% | +3.95% |
-| W/USDT:USDT | below_1h_threshold | +4.82% | +3.53% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.57% | +2.28% |
-| ENA/USDT:USDT | below_1h_threshold | +2.94% | +1.65% |
-| SPX/USDT:USDT | below_1h_threshold | +2.35% | +1.05% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.89% | +1.93% |
+| CLO/USDT:USDT | below_1h_threshold | +1.87% | +1.91% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.67% | +1.70% |
+| MYX/USDT:USDT | below_1h_threshold | +0.94% | +0.97% |
+| DYDX/USDT:USDT | below_1h_threshold | +0.63% | +0.66% |
 
 ## 5. 次に見るべき不足
 
