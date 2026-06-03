@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T12:23:20.062386+00:00
+- generated_at: 2026-06-03T12:28:44.915086+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5544**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T12:23:18.059904+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=66901.9
+- 更新: 2026-06-03T12:28:42.360711+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=67000.0
 - Funnel: target 771 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +44.06% | $4,795,577.65 |
-| BP/USDT:USDT | +35.38% | $1,078,385.08 |
-| EPIC/USDT:USDT | +31.27% | $3,254,162.03 |
-| PORTAL/USDT:USDT | +29.74% | $14,919,892.51 |
-| LIT/USDT:USDT | +27.46% | $9,634,080.91 |
+| CLO/USDT:USDT | +42.37% | $4,838,666.66 |
+| BP/USDT:USDT | +36.55% | $1,083,705.33 |
+| EPIC/USDT:USDT | +34.63% | $3,306,511.75 |
+| PORTAL/USDT:USDT | +28.53% | $14,931,035.64 |
+| LIT/USDT:USDT | +27.88% | $9,699,528.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.05% | +4.26% |
-| GUA/USDT:USDT | below_1h_threshold | +3.27% | +3.48% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.27% | +3.48% |
-| LIT/USDT:USDT | below_1h_threshold | +2.43% | +2.63% |
-| AIA/USDT:USDT | below_1h_threshold | +2.22% | +2.43% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.94% | +5.00% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.52% | +3.58% |
+| HYUNDAISTOCK/USDT:USDT | below_1h_threshold | +3.13% | +3.19% |
+| BP/USDT:USDT | below_1h_threshold | +3.08% | +3.14% |
+| LIT/USDT:USDT | below_1h_threshold | +3.00% | +3.06% |
 
 ## 5. 次に見るべき不足
 
