@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T12:52:20.237030+00:00
+- generated_at: 2026-06-03T12:57:49.077609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5544**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T12:52:17.185737+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=67086.2
-- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=2, 4h RSI 85.8 >= 65=1
+- 更新: 2026-06-03T12:57:46.368806+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=67070.3
+- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +43.10% | $1,115,131.68 |
-| CLO/USDT:USDT | +40.82% | $5,080,172.32 |
-| EPIC/USDT:USDT | +35.86% | $3,454,274.18 |
-| BP/USDT:USDT | +33.84% | $1,110,787.22 |
-| LIT/USDT:USDT | +28.21% | $9,877,040.84 |
+| MAGMA/USDT:USDT | +43.06% | $1,138,356.67 |
+| CLO/USDT:USDT | +38.31% | $5,119,455.30 |
+| BP/USDT:USDT | +36.02% | $1,113,799.93 |
+| EPIC/USDT:USDT | +34.19% | $3,483,993.32 |
+| LIT/USDT:USDT | +29.06% | $9,921,313.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HYUNDAISTOCK/USDT:USDT | below_1h_threshold | +3.78% | +3.71% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.10% | +3.03% |
-| LIT/USDT:USDT | below_1h_threshold | +2.96% | +2.89% |
-| W/USDT:USDT | below_1h_threshold | +2.55% | +2.48% |
-| ENA/USDT:USDT | below_1h_threshold | +2.55% | +2.48% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.15% | +4.11% |
+| LIT/USDT:USDT | below_1h_threshold | +3.69% | +3.65% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.45% | +3.40% |
+| HYUNDAISTOCK/USDT:USDT | below_1h_threshold | +3.28% | +3.24% |
+| MYX/USDT:USDT | below_1h_threshold | +3.01% | +2.97% |
 
 ## 5. 次に見るべき不足
 
