@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-03T23:29:11.356467+00:00
+- generated_at: 2026-06-03T23:34:48.956299+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5585**
+- closed shadow trades: **5586**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +3.29% / filled 20/20。**
-- 全期間 MARKET基準: n=5585, expectancy=-0.04%
+- 全期間 MARKET基準: n=5586, expectancy=-0.03%
 - 直近20件 MARKET基準: n=20, expectancy=+3.29%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | ASK | 20/20 | 100.0% | +3.35% | **+3.35%** |
 | MARKET | 20/20 | 100.0% | +3.29% | **+3.29%** |
 | LIMIT_1PCT | 16/20 | 80.0% | +2.77% | **+2.21%** |
-| LIMIT_2PCT | 14/20 | 70.0% | +2.58% | **+1.81%** |
-| LIMIT_3PCT | 12/20 | 60.0% | +2.73% | **+1.64%** |
+| LIMIT_2PCT | 13/20 | 65.0% | +2.17% | **+1.41%** |
+| LIMIT_ATR | 12/20 | 60.0% | +2.21% | **+1.33%** |
 
 ### シャドウ上位 LONG
 
@@ -34,8 +34,8 @@
 | LIMIT_10PCT_LONG | 5/20 | 25.0% | +3.38% | **+0.84%** |
 | LIMIT_BB3S_LONG | 4/7 | 57.1% | +1.34% | **+0.77%** |
 | LIMIT_9PCT_LONG | 6/20 | 30.0% | +2.25% | **+0.67%** |
-| LIMIT_FIB1618_LONG | 5/20 | 25.0% | +1.04% | **+0.26%** |
-| LIMIT_5PCT_LONG | 12/20 | 60.0% | +0.21% | **+0.13%** |
+| LIMIT_FIB1618_LONG | 4/20 | 20.0% | -0.70% | **-0.14%** |
+| LIMIT_5PCT_LONG | 12/20 | 60.0% | -0.72% | **-0.43%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.20** / 初期 $100.00 (+31.20%)
-- 確定: 1004件 (Win 239 / Loss 312 / Flat 453) / skip 1142件
+- 確定: 1004件 (Win 239 / Loss 312 / Flat 453) / skip 1143件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $131.20
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T23:29:08.138634+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=64446.5
+- 更新: 2026-06-03T23:34:46.075259+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=64457.4
 - Funnel: target 768 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +47.29% | $20,015,387.72 |
-| STO/USDT:USDT | +24.12% | $6,435,139.90 |
-| BP/USDT:USDT | +12.94% | $1,525,694.23 |
-| MAGMA/USDT:USDT | +7.35% | $4,160,468.39 |
-| US/USDT:USDT | +6.41% | $4,496,381.63 |
+| OPN/USDT:USDT | +47.90% | $20,161,969.54 |
+| STO/USDT:USDT | +23.88% | $6,450,067.48 |
+| BP/USDT:USDT | +13.07% | $1,526,606.51 |
+| US/USDT:USDT | +9.19% | $4,498,706.84 |
+| MAGMA/USDT:USDT | +7.61% | $4,165,194.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPN/USDT:USDT | below_1h_threshold | +4.26% | +4.93% |
-| BSB/USDT:USDT | below_1h_threshold | +2.56% | +3.23% |
-| US/USDT:USDT | below_1h_threshold | +2.09% | +2.76% |
-| STO/USDT:USDT | below_1h_threshold | +1.16% | +1.84% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.08% | +1.76% |
+| US/USDT:USDT | below_1h_threshold | +4.70% | +5.35% |
+| OPN/USDT:USDT | below_1h_threshold | +4.65% | +5.31% |
+| BSB/USDT:USDT | below_1h_threshold | +2.56% | +3.22% |
+| VVV/USDT:USDT | below_1h_threshold | +1.28% | +1.94% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.17% | +1.83% |
 
 ## 5. 次に見るべき不足
 
