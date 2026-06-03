@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T02:46:52.979184+00:00
+- generated_at: 2026-06-03T02:52:31.653976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5509**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T02:46:49.928366+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=66731.5
-- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.7 >= 65=1
+- 更新: 2026-06-03T02:52:27.786932+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=66737.3
+- Funnel: target 773 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.3 >= 65=1, 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +34.22% | $13,846,309.16 |
-| GENIUS/USDT:USDT | +24.85% | $1,358,390.26 |
-| APR/USDT:USDT | +23.14% | $1,071,077.75 |
-| LIT/USDT:USDT | +17.69% | $7,179,192.40 |
-| BBSTOCK/USDT:USDT | +16.00% | $1,867,162.77 |
+| PORTAL/USDT:USDT | +35.81% | $13,874,594.90 |
+| APR/USDT:USDT | +25.77% | $1,085,816.43 |
+| GENIUS/USDT:USDT | +24.45% | $1,364,570.50 |
+| LIT/USDT:USDT | +17.55% | $7,190,706.06 |
+| BBSTOCK/USDT:USDT | +16.21% | $1,868,470.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +2.35% | +2.59% |
-| ZORA/USDT:USDT | below_1h_threshold | +2.28% | +2.52% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.54% | +1.78% |
-| H/USDT:USDT | below_1h_threshold | +1.34% | +1.58% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.16% | +1.40% |
+| APR/USDT:USDT | below_1h_threshold | +4.63% | +4.85% |
+| ZORA/USDT:USDT | below_1h_threshold | +2.78% | +3.01% |
+| BILL/USDT:USDT | below_1h_threshold | +1.86% | +2.09% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.60% | +1.83% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.36% | +1.59% |
 
 ## 5. 次に見るべき不足
 
