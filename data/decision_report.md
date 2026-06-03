@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T12:40:35.585289+00:00
+- generated_at: 2026-06-03T12:47:00.370329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5544**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T12:40:32.792330+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=66833.8
-- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 74.1 >= 65=1
+- 更新: 2026-06-03T12:46:57.144479+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=66967.9
+- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 85.7 >= 65=1, 4h RSI 78.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +39.79% | $4,989,975.59 |
-| MAGMA/USDT:USDT | +38.94% | $1,030,393.73 |
-| BP/USDT:USDT | +37.61% | $1,098,194.48 |
-| EPIC/USDT:USDT | +37.42% | $3,397,816.34 |
-| LIT/USDT:USDT | +28.15% | $9,850,896.71 |
+| MAGMA/USDT:USDT | +42.77% | $1,087,976.06 |
+| CLO/USDT:USDT | +41.70% | $5,053,233.49 |
+| EPIC/USDT:USDT | +39.45% | $3,419,915.30 |
+| BP/USDT:USDT | +38.20% | $1,104,786.51 |
+| PORTAL/USDT:USDT | +28.53% | $15,031,605.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.94% | +5.24% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.92% | +5.23% |
-| HYUNDAISTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.71% |
-| BP/USDT:USDT | below_1h_threshold | +3.40% | +3.71% |
-| LIT/USDT:USDT | below_1h_threshold | +3.00% | +3.30% |
+| BP/USDT:USDT | below_1h_threshold | +4.08% | +4.19% |
+| LIT/USDT:USDT | below_1h_threshold | +2.67% | +2.78% |
+| HYUNDAISTOCK/USDT:USDT | below_1h_threshold | +2.62% | +2.73% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.46% | +2.57% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.33% | +2.44% |
 
 ## 5. 次に見るべき不足
 
