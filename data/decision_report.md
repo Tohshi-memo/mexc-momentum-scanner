@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T09:15:04.534742+00:00
+- generated_at: 2026-06-03T09:20:20.810584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5538**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T09:15:01.777843+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=66930.4
-- Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-03T09:20:18.332110+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=66819.9
+- Funnel: target 771 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +41.63% | $3,816,191.27 |
-| PORTAL/USDT:USDT | +33.17% | $14,551,670.10 |
-| GENIUS/USDT:USDT | +29.11% | $1,939,323.51 |
-| APR/USDT:USDT | +26.89% | $1,381,001.10 |
-| ENA/USDT:USDT | +25.55% | $50,316,245.96 |
+| CLO/USDT:USDT | +42.15% | $3,860,956.20 |
+| PORTAL/USDT:USDT | +31.27% | $14,585,803.92 |
+| GENIUS/USDT:USDT | +30.10% | $1,944,680.82 |
+| APR/USDT:USDT | +23.57% | $1,385,358.10 |
+| ENA/USDT:USDT | +23.34% | $50,696,203.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +2.26% | +2.34% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.78% | +1.86% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.68% |
-| ENA/USDT:USDT | below_1h_threshold | +1.42% | +1.51% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.42% | +1.50% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.28% |
+| US/USDT:USDT | below_1h_threshold | +2.63% | +2.88% |
+| AIA/USDT:USDT | below_1h_threshold | +2.26% | +2.51% |
+| GUA/USDT:USDT | below_1h_threshold | +2.13% | +2.38% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.57% | +1.82% |
 
 ## 5. 次に見るべき不足
 
