@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-03T11:41:36.646237+00:00
+- generated_at: 2026-06-03T11:46:46.432961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5542**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-03T11:41:33.901497+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=67091.6
+- 更新: 2026-06-03T11:46:43.654304+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=67099.5
 - Funnel: target 771 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
+- Strict後reject: 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +40.08% | $4,594,549.19 |
-| PORTAL/USDT:USDT | +27.68% | $14,820,182.82 |
-| APR/USDT:USDT | +27.21% | $1,469,857.93 |
-| EPIC/USDT:USDT | +27.13% | $3,553,079.82 |
-| ENA/USDT:USDT | +25.76% | $57,963,804.63 |
+| CLO/USDT:USDT | +40.23% | $4,611,587.97 |
+| EPIC/USDT:USDT | +29.78% | $3,589,083.06 |
+| PORTAL/USDT:USDT | +28.58% | $14,843,586.49 |
+| APR/USDT:USDT | +27.10% | $1,472,248.47 |
+| ENA/USDT:USDT | +25.84% | $58,036,155.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +4.44% | +4.69% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.98% | +3.23% |
-| JTO/USDT:USDT | below_1h_threshold | +2.30% | +2.55% |
-| GUN/USDT:USDT | below_1h_threshold | +1.66% | +1.91% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.55% | +1.80% |
+| AR/USDT:USDT | below_1h_threshold | +4.66% | +4.90% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.74% | +3.98% |
+| JTO/USDT:USDT | below_1h_threshold | +2.04% | +2.28% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.78% | +2.02% |
+| XLM/USDT:USDT | below_1h_threshold | +1.61% | +1.85% |
 
 ## 5. 次に見るべき不足
 
