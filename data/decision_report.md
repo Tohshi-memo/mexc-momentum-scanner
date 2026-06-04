@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T12:27:26.225679+00:00
+- generated_at: 2026-06-04T12:32:52.229583+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5624**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T12:27:23.801095+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.85% price=63050.0
+- 更新: 2026-06-04T12:32:49.824432+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.50% price=63456.9
 - Funnel: target 771 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +28.38% | $36,996,137.25 |
-| EPIC/USDT:USDT | +28.26% | $5,990,630.88 |
-| SIREN/USDT:USDT | +25.91% | $7,369,474.28 |
-| HEI/USDT:USDT | +20.89% | $4,556,029.41 |
-| BEAT/USDT:USDT | +12.60% | $17,731,077.09 |
+| OPN/USDT:USDT | +32.03% | $37,266,833.43 |
+| EPIC/USDT:USDT | +26.46% | $6,085,920.25 |
+| SIREN/USDT:USDT | +26.23% | $7,472,817.12 |
+| HEI/USDT:USDT | +22.68% | $4,569,025.01 |
+| MEME/USDT:USDT | +13.69% | $1,241,874.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +3.03% | +2.18% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.85% | +1.00% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +0.90% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.51% | +0.66% |
-| MEME/USDT:USDT | below_1h_threshold | +1.32% | +0.47% |
+| ZORA/USDT:USDT | below_1h_threshold | +4.33% | +2.83% |
+| MEME/USDT:USDT | below_1h_threshold | +3.66% | +2.16% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.84% | +1.35% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.49% | +0.99% |
+| JTO/USDT:USDT | below_1h_threshold | +1.88% | +0.38% |
 
 ## 5. 次に見るべき不足
 
