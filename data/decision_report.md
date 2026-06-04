@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T15:00:46.426920+00:00
+- generated_at: 2026-06-04T15:06:02.149858+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5635**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T15:00:43.547435+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63889.6
+- 更新: 2026-06-04T15:05:59.925956+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=64126.2
 - Funnel: target 772 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEST/USDT:USDT | +72.03% | $2,285,310.28 |
-| OPN/USDT:USDT | +32.46% | $44,186,612.24 |
-| EPIC/USDT:USDT | +31.82% | $6,832,101.81 |
-| HEI/USDT:USDT | +30.00% | $4,977,305.00 |
-| SIREN/USDT:USDT | +22.93% | $9,711,983.03 |
+| ZEST/USDT:USDT | +74.52% | $2,369,063.27 |
+| OPN/USDT:USDT | +35.01% | $44,326,998.90 |
+| EPIC/USDT:USDT | +33.64% | $6,867,613.22 |
+| HEI/USDT:USDT | +26.11% | $4,996,429.45 |
+| SIREN/USDT:USDT | +23.30% | $9,749,765.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.96% | +1.01% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.44% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.35% |
-| HBAR/USDT:USDT | below_1h_threshold | +0.23% | +0.29% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.44% | +2.12% |
+| WLD/USDT:USDT | below_1h_threshold | +2.21% | +1.89% |
+| OPN/USDT:USDT | below_1h_threshold | +2.11% | +1.79% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.48% | +1.17% |
+| HBAR/USDT:USDT | below_1h_threshold | +1.16% | +0.85% |
 
 ## 5. 次に見るべき不足
 
