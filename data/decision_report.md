@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T13:20:51.694666+00:00
+- generated_at: 2026-06-04T13:26:15.713191+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5625**
 
@@ -54,32 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T13:20:46.558266+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.86% price=63188.7
-- Funnel: target 771 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1
+- 更新: 2026-06-04T13:26:10.779404+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.95% price=63135.3
+- Funnel: target 771 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +41.21% | $41,439,235.42 |
-| EPIC/USDT:USDT | +38.13% | $6,335,666.15 |
-| HEI/USDT:USDT | +36.26% | $4,672,286.97 |
-| SIREN/USDT:USDT | +16.38% | $8,666,452.22 |
-| BEAT/USDT:USDT | +14.73% | $18,488,119.47 |
+| OPN/USDT:USDT | +40.97% | $41,666,729.54 |
+| EPIC/USDT:USDT | +36.41% | $6,452,624.48 |
+| HEI/USDT:USDT | +31.94% | $4,739,347.62 |
+| SIREN/USDT:USDT | +16.99% | $8,726,766.15 |
+| BEAT/USDT:USDT | +14.34% | $18,594,616.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.70% | +2.56% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +2.03% |
-| OPG/USDT:USDT | below_1h_threshold | +0.79% | +1.65% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +1.47% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.58% | +1.44% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.72% | +5.66% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.65% | +3.60% |
+| H/USDT:USDT | below_1h_threshold | +0.73% | +1.67% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +1.64% |
+| OPG/USDT:USDT | below_1h_threshold | +0.68% | +1.62% |
 
 ## 5. 次に見るべき不足
 
