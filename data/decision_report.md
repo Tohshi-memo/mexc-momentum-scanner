@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T00:28:35.948385+00:00
+- generated_at: 2026-06-04T00:34:11.448691+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5587**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.09** / 初期 $100.00 (-2.91%)
-- 確定トレード: 92件 (TP 27 / SL 62 / EXP 3)
-- 最新: PLAY/USDT:USDT TP_HIT PnL +8.00% 残高後 $97.09
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$98.06** / 初期 $100.00 (-1.94%)
+- 確定トレード: 93件 (TP 28 / SL 62 / EXP 3)
+- 最新: XPL/USDT:USDT TP_HIT PnL +8.00% 残高後 $98.06
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T00:28:33.496630+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.67% price=63686.8
-- Funnel: target 768 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-04T00:34:09.041707+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.81% price=63600.6
+- Funnel: target 769 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +25.16% | $21,451,825.59 |
-| STO/USDT:USDT | +20.06% | $6,607,636.57 |
-| BP/USDT:USDT | +13.59% | $1,544,252.79 |
-| US/USDT:USDT | +9.13% | $3,991,447.07 |
-| SKYAI/USDT:USDT | +8.41% | $15,079,314.87 |
+| OPN/USDT:USDT | +29.05% | $21,616,449.36 |
+| STO/USDT:USDT | +20.13% | $6,619,274.68 |
+| BP/USDT:USDT | +14.04% | $1,546,850.80 |
+| US/USDT:USDT | +9.12% | $3,999,115.71 |
+| MAGMA/USDT:USDT | +8.96% | $4,244,671.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +3.05% | +3.72% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.39% | +3.06% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.34% | +3.01% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.33% | +3.00% |
-| ZORA/USDT:USDT | below_1h_threshold | +2.18% | +2.85% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.21% | +4.02% |
+| ZORA/USDT:USDT | below_1h_threshold | +2.82% | +3.62% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.61% | +2.41% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +2.11% |
+| GUA/USDT:USDT | below_1h_threshold | +1.17% | +1.98% |
 
 ## 5. 次に見るべき不足
 
