@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T12:43:31.826204+00:00
+- generated_at: 2026-06-04T12:48:59.084736+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5624**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T12:43:29.417775+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.61% price=63525.1
-- Funnel: target 771 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-04T12:48:56.683833+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +2.05% price=63804.1
+- Funnel: target 771 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +32.46% | $37,485,930.76 |
-| EPIC/USDT:USDT | +27.53% | $6,200,817.71 |
-| HEI/USDT:USDT | +21.64% | $4,595,109.68 |
-| SIREN/USDT:USDT | +20.96% | $7,811,819.86 |
-| BEAT/USDT:USDT | +15.53% | $18,334,300.35 |
+| OPN/USDT:USDT | +36.17% | $37,702,858.81 |
+| EPIC/USDT:USDT | +30.32% | $6,292,306.33 |
+| HEI/USDT:USDT | +22.83% | $4,598,698.28 |
+| SIREN/USDT:USDT | +20.32% | $7,911,519.36 |
+| MEME/USDT:USDT | +14.51% | $1,318,649.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEME/USDT:USDT | below_relative_strength | +5.45% | +3.84% |
-| ZORA/USDT:USDT | below_1h_threshold | +4.25% | +2.64% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.26% | +1.65% |
-| JTO/USDT:USDT | below_1h_threshold | +3.05% | +1.44% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.22% | +0.62% |
+| ZORA/USDT:USDT | below_1h_threshold | +4.59% | +2.54% |
+| MEME/USDT:USDT | below_1h_threshold | +4.55% | +2.50% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.16% | +1.10% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.03% | +0.97% |
+| JTO/USDT:USDT | below_1h_threshold | +3.00% | +0.94% |
 
 ## 5. 次に見るべき不足
 
