@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T07:03:11.769759+00:00
+- generated_at: 2026-06-04T07:08:39.165216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5610**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T07:03:09.376341+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63967.9
-- Funnel: target 771 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-04T07:08:36.770385+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=63824.2
+- Funnel: target 771 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +34.47% | $2,710,355.16 |
-| EPIC/USDT:USDT | +23.21% | $4,841,872.13 |
-| SIREN/USDT:USDT | +23.03% | $2,485,511.85 |
-| OPN/USDT:USDT | +22.12% | $30,392,113.24 |
-| BP/USDT:USDT | +10.34% | $1,794,142.10 |
+| HEI/USDT:USDT | +35.22% | $2,755,923.73 |
+| SIREN/USDT:USDT | +22.81% | $2,527,158.27 |
+| EPIC/USDT:USDT | +22.26% | $4,857,221.80 |
+| OPN/USDT:USDT | +20.48% | $30,436,052.60 |
+| BP/USDT:USDT | +9.12% | $1,795,126.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +0.78% | +0.84% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.35% | +0.40% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.34% | +0.40% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.27% | +0.33% |
+| HEI/USDT:USDT | below_1h_threshold | +1.57% | +1.85% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.52% | +1.80% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.56% | +0.84% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.59% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.12% | +0.40% |
 
 ## 5. 次に見るべき不足
 
