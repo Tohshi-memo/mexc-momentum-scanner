@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T00:39:39.818116+00:00
+- generated_at: 2026-06-04T00:45:07.624995+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5588**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T00:39:37.083961+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.58% price=63102.2
+- 更新: 2026-06-04T00:45:05.242397+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.86% price=63564.4
 - Funnel: target 769 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +28.99% | $21,704,513.08 |
-| STO/USDT:USDT | +19.52% | $6,631,878.30 |
-| BP/USDT:USDT | +11.52% | $1,549,503.96 |
-| MAGMA/USDT:USDT | +10.10% | $4,254,865.68 |
-| US/USDT:USDT | +4.54% | $4,014,372.86 |
+| OPN/USDT:USDT | +25.95% | $21,794,899.77 |
+| STO/USDT:USDT | +20.78% | $6,639,906.98 |
+| BP/USDT:USDT | +11.60% | $1,551,969.83 |
+| MAGMA/USDT:USDT | +9.30% | $4,268,865.16 |
+| EPIC/USDT:USDT | +5.63% | $3,537,754.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +2.45% | +4.04% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.43% | +4.01% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.15% | +3.73% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.77% | +3.35% |
-| GUA/USDT:USDT | below_1h_threshold | +1.67% | +3.25% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.93% | +4.79% |
+| ZORA/USDT:USDT | below_1h_threshold | +3.81% | +4.68% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.94% | +3.80% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.10% | +2.96% |
+| LAB/USDT:USDT | below_1h_threshold | +2.07% | +2.93% |
 
 ## 5. 次に見るべき不足
 
