@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T09:30:13.082658+00:00
+- generated_at: 2026-06-04T09:35:40.752197+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5616**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T09:30:10.684272+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.20% price=62831.9
-- Funnel: target 771 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-04T09:35:38.389751+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.06% price=62920.9
+- Funnel: target 771 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +26.56% | $4,183,799.23 |
-| SIREN/USDT:USDT | +22.85% | $4,666,801.46 |
-| OPN/USDT:USDT | +17.93% | $32,326,666.61 |
-| EPIC/USDT:USDT | +17.12% | $5,298,983.52 |
-| BEAT/USDT:USDT | +9.82% | $15,790,241.50 |
+| HEI/USDT:USDT | +28.80% | $4,207,413.70 |
+| SIREN/USDT:USDT | +23.29% | $4,687,266.63 |
+| OPN/USDT:USDT | +18.60% | $32,387,355.83 |
+| EPIC/USDT:USDT | +18.51% | $5,324,020.33 |
+| HNT/USDT:USDT | +11.00% | $1,392,499.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APPSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +1.72% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.33% | +1.53% |
-| HNT/USDT:USDT | below_1h_threshold | +0.30% | +1.50% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.17% | +1.38% |
-| GESTOCK/USDT:USDT | below_1h_threshold | +0.13% | +1.33% |
+| HNT/USDT:USDT | below_1h_threshold | +1.48% | +2.54% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.69% | +1.75% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.59% | +1.65% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.23% | +1.29% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.20% | +1.26% |
 
 ## 5. 次に見るべき不足
 
