@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T22:58:05.753467+00:00
+- generated_at: 2026-06-04T23:03:32.753198+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5679**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T22:58:02.647106+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.75% price=63721.3
-- Funnel: target 770 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-04T23:03:30.374869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63668.4
+- Funnel: target 771 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +32.97% | $7,196,952.62 |
-| HOME/USDT:USDT | +27.88% | $5,764,386.34 |
-| OPN/USDT:USDT | +18.92% | $40,219,130.92 |
-| AAOISTOCK/USDT:USDT | +10.32% | $1,262,849.20 |
-| MEME/USDT:USDT | +6.08% | $1,974,811.91 |
+| BTW/USDT:USDT | +35.32% | $7,231,257.29 |
+| HOME/USDT:USDT | +24.30% | $5,880,105.79 |
+| OPN/USDT:USDT | +18.07% | $37,893,641.27 |
+| AAOISTOCK/USDT:USDT | +10.36% | $1,261,011.38 |
+| XMR/USDT:USDT | +5.74% | $10,260,015.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_relative_strength | +5.52% | +4.77% |
-| AIA/USDT:USDT | below_1h_threshold | +3.48% | +2.73% |
-| HEI/USDT:USDT | below_1h_threshold | +2.86% | +2.11% |
-| JUP/USDT:USDT | below_1h_threshold | +2.37% | +1.62% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.88% | +1.13% |
+| BTW/USDT:USDT | below_1h_threshold | +2.36% | +2.41% |
+| HEI/USDT:USDT | below_1h_threshold | +0.93% | +0.98% |
+| MEME/USDT:USDT | below_1h_threshold | +0.31% | +0.36% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.23% | +0.28% |
+| XOMSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.24% |
 
 ## 5. 次に見るべき不足
 
