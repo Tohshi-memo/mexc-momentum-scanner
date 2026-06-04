@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T06:41:09.259264+00:00
+- generated_at: 2026-06-04T06:46:36.062767+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5608**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T06:41:06.645604+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.62% price=64322.2
+- 更新: 2026-06-04T06:46:33.445332+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=64240.0
 - Funnel: target 771 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +39.70% | $2,381,959.32 |
-| SIREN/USDT:USDT | +23.07% | $2,271,636.33 |
-| EPIC/USDT:USDT | +21.93% | $4,808,637.88 |
-| OPN/USDT:USDT | +21.39% | $30,059,053.39 |
-| BP/USDT:USDT | +10.91% | $1,883,768.36 |
+| HEI/USDT:USDT | +43.13% | $2,483,270.98 |
+| EPIC/USDT:USDT | +24.23% | $4,843,280.49 |
+| OPN/USDT:USDT | +23.22% | $30,166,559.98 |
+| SIREN/USDT:USDT | +22.44% | $2,311,050.48 |
+| BP/USDT:USDT | +9.97% | $1,887,967.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +4.21% | +3.59% |
-| UAI/USDT:USDT | below_1h_threshold | +4.05% | +3.43% |
-| WLD/USDT:USDT | below_1h_threshold | +3.15% | +2.54% |
-| OPG/USDT:USDT | below_1h_threshold | +3.00% | +2.38% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.94% | +2.33% |
+| UAI/USDT:USDT | below_1h_threshold | +4.30% | +3.81% |
+| WLD/USDT:USDT | below_1h_threshold | +3.86% | +3.37% |
+| OPN/USDT:USDT | below_1h_threshold | +3.63% | +3.14% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.51% | +3.02% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.47% | +1.98% |
 
 ## 5. 次に見るべき不足
 
