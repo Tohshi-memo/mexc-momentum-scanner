@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T00:17:47.817301+00:00
+- generated_at: 2026-06-04T00:23:12.891953+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5587**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T00:17:45.242272+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=64268.8
-- Funnel: target 768 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-04T00:23:10.437435+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64165.9
+- Funnel: target 768 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +33.37% | $21,214,906.02 |
-| STO/USDT:USDT | +19.40% | $6,581,516.69 |
-| BP/USDT:USDT | +14.00% | $1,539,478.51 |
-| US/USDT:USDT | +10.41% | $3,975,812.30 |
-| EPIC/USDT:USDT | +9.01% | $3,520,542.20 |
+| OPN/USDT:USDT | +30.82% | $21,297,912.29 |
+| STO/USDT:USDT | +20.64% | $6,602,930.35 |
+| BP/USDT:USDT | +16.44% | $1,542,296.64 |
+| US/USDT:USDT | +10.37% | $3,981,740.34 |
+| MAGMA/USDT:USDT | +8.44% | $4,232,304.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_relative_strength | +5.19% | +4.96% |
-| ICP/USDT:USDT | below_1h_threshold | +2.71% | +2.47% |
-| ZORA/USDT:USDT | below_1h_threshold | +2.45% | +2.22% |
-| RENDER/USDT:USDT | below_1h_threshold | +2.37% | +2.14% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.17% | +1.93% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.58% | +3.50% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.21% | +3.14% |
+| BSB/USDT:USDT | below_1h_threshold | +2.89% | +2.82% |
+| ZORA/USDT:USDT | below_1h_threshold | +2.72% | +2.65% |
+| ICP/USDT:USDT | below_1h_threshold | +2.68% | +2.60% |
 
 ## 5. 次に見るべき不足
 
