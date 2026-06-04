@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T19:27:24.601949+00:00
+- generated_at: 2026-06-04T19:32:48.160185+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5661**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T19:27:22.162122+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=64014.3
+- 更新: 2026-06-04T19:32:45.489034+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63935.9
 - Funnel: target 771 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +27.39% | $4,638,747.67 |
-| HOME/USDT:USDT | +11.82% | $4,405,238.82 |
-| PORTAL/USDT:USDT | +10.12% | $2,976,862.70 |
-| MEME/USDT:USDT | +8.08% | $1,665,937.32 |
-| ALLO/USDT:USDT | +7.49% | $5,764,044.46 |
+| BTW/USDT:USDT | +28.16% | $4,736,713.30 |
+| HOME/USDT:USDT | +14.36% | $4,429,577.58 |
+| PORTAL/USDT:USDT | +8.33% | $2,992,379.96 |
+| MEME/USDT:USDT | +7.84% | $1,679,100.46 |
+| BIANRENSHENG/USDT:USDT | +7.52% | $1,562,357.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEME/USDT:USDT | below_1h_threshold | +4.96% | +4.61% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.59% | +2.24% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.33% | +1.98% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.72% | +1.37% |
-| XLM/USDT:USDT | below_1h_threshold | +1.66% | +1.31% |
+| MEME/USDT:USDT | below_1h_threshold | +4.56% | +4.33% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.43% | +2.20% |
+| XPL/USDT:USDT | below_1h_threshold | +2.13% | +1.90% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.62% | +1.40% |
+| JUP/USDT:USDT | below_1h_threshold | +1.34% | +1.12% |
 
 ## 5. 次に見るべき不足
 
