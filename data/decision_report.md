@@ -1,27 +1,27 @@
 # Decision Report
 
-- generated_at: 2026-06-04T15:50:09.036462+00:00
+- generated_at: 2026-06-04T15:55:53.557444+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5638**
+- closed shadow trades: **5640**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5638, expectancy=-0.02%
-- 直近20件 MARKET基準: n=20, expectancy=-1.00%
+- 全期間 MARKET基準: n=5640, expectancy=-0.02%
+- 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.00% | **-1.00%** |
+| MARKET | 20/20 | 100.0% | -0.40% | **-0.40%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 5/14 | 35.7% | +2.58% | **+0.92%** |
+| LIMIT_BB3S | 6/14 | 42.9% | +1.84% | **+0.79%** |
 | LIMIT_6PCT | 7/20 | 35.0% | +1.92% | **+0.67%** |
 | LIMIT_7PCT | 5/20 | 25.0% | +2.48% | **+0.62%** |
 | LIMIT_8PCT | 4/20 | 20.0% | +2.85% | **+0.57%** |
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +4.62% | **+1.62%** |
-| ASK_LONG | 20/20 | 100.0% | +1.36% | **+1.36%** |
-| LIMIT_2PCT_LONG | 12/20 | 60.0% | +1.69% | **+1.01%** |
+| ASK_LONG | 20/20 | 100.0% | +1.35% | **+1.35%** |
+| LIMIT_2PCT_LONG | 13/20 | 65.0% | +2.03% | **+1.32%** |
+| LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.46% | **+1.17%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +3.30% | **+1.15%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
-| LIMIT_9PCT_LONG | 5/20 | 25.0% | +3.86% | **+0.96%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.20** / 初期 $100.00 (+31.20%)
-- 確定: 1007件 (Win 239 / Loss 312 / Flat 456) / skip 1192件
+- 確定: 1007件 (Win 239 / Loss 312 / Flat 456) / skip 1194件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ZEST/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $131.20
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T15:50:06.107242+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=63704.1
-- Funnel: target 772 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 81.3 >= 65=1
+- 更新: 2026-06-04T15:55:50.062508+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=63673.6
+- Funnel: target 772 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEST/USDT:USDT | +85.10% | $3,082,376.21 |
-| OPN/USDT:USDT | +37.14% | $45,523,350.62 |
-| EPIC/USDT:USDT | +35.13% | $7,303,771.07 |
-| HEI/USDT:USDT | +22.83% | $5,085,619.73 |
-| SIREN/USDT:USDT | +22.58% | $10,186,719.36 |
+| ZEST/USDT:USDT | +83.62% | $3,147,033.16 |
+| EPIC/USDT:USDT | +36.48% | $7,334,136.63 |
+| OPN/USDT:USDT | +35.98% | $45,552,412.78 |
+| SIREN/USDT:USDT | +22.63% | $10,236,580.34 |
+| HEI/USDT:USDT | +22.53% | $5,090,500.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.65% | +4.00% |
-| OPN/USDT:USDT | below_1h_threshold | +3.53% | +3.88% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.30% | +3.64% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.60% | +2.94% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.59% | +2.94% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.32% | +4.72% |
+| ZEST/USDT:USDT | below_1h_threshold | +3.96% | +4.35% |
+| OPN/USDT:USDT | below_1h_threshold | +2.75% | +3.15% |
+| STRK/USDT:USDT | below_1h_threshold | +2.64% | +3.03% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.03% | +2.42% |
 
 ## 5. 次に見るべき不足
 
