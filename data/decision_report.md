@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T08:52:44.824135+00:00
+- generated_at: 2026-06-04T08:58:13.179093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5615**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T08:52:41.442386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=63628.9
-- Funnel: target 771 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 70.5 >= 65=1
+- 更新: 2026-06-04T08:58:10.506289+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63612.7
+- Funnel: target 771 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +35.22% | $3,907,729.47 |
-| SIREN/USDT:USDT | +22.76% | $4,335,899.67 |
-| OPN/USDT:USDT | +22.43% | $31,869,470.33 |
-| EPIC/USDT:USDT | +20.29% | $5,238,706.97 |
-| HNT/USDT:USDT | +15.53% | $1,268,941.47 |
+| HEI/USDT:USDT | +32.98% | $3,993,885.49 |
+| SIREN/USDT:USDT | +22.56% | $4,398,315.95 |
+| OPN/USDT:USDT | +21.21% | $31,900,292.34 |
+| EPIC/USDT:USDT | +18.33% | $5,252,488.62 |
+| HNT/USDT:USDT | +11.65% | $1,284,559.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +3.24% | +3.13% |
-| WLD/USDT:USDT | below_1h_threshold | +3.16% | +3.05% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.89% | +1.79% |
-| LAB/USDT:USDT | below_1h_threshold | +1.73% | +1.62% |
-| OPN/USDT:USDT | below_1h_threshold | +1.10% | +1.00% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.55% | +4.47% |
+| ZORA/USDT:USDT | below_1h_threshold | +3.59% | +3.51% |
+| WLD/USDT:USDT | below_1h_threshold | +2.83% | +2.75% |
+| LAB/USDT:USDT | below_1h_threshold | +1.83% | +1.75% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.12% |
 
 ## 5. 次に見るべき不足
 
