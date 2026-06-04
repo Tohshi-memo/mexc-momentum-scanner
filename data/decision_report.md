@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T10:13:24.480331+00:00
+- generated_at: 2026-06-04T10:17:37.194823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5620**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T10:13:22.068569+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=62948.0
-- Funnel: target 771 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-04T10:17:35.216858+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.67% price=62810.9
+- Funnel: target 771 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EPIC/USDT:USDT | +28.39% | $5,779,698.05 |
-| HEI/USDT:USDT | +27.31% | $4,354,964.59 |
-| SIREN/USDT:USDT | +22.90% | $4,900,388.39 |
-| OPN/USDT:USDT | +19.27% | $33,284,600.85 |
-| BEAT/USDT:USDT | +11.37% | $15,921,865.94 |
+| HEI/USDT:USDT | +28.80% | $4,390,242.35 |
+| EPIC/USDT:USDT | +28.61% | $5,844,455.53 |
+| SIREN/USDT:USDT | +23.02% | $4,915,809.55 |
+| OPN/USDT:USDT | +20.36% | $33,364,246.28 |
+| BIANRENSHENG/USDT:USDT | +10.49% | $1,001,866.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.76% | +3.22% |
-| HEI/USDT:USDT | below_1h_threshold | +2.03% | +2.49% |
-| HNT/USDT:USDT | below_1h_threshold | +1.20% | +1.66% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.08% | +1.53% |
-| XMR/USDT:USDT | below_1h_threshold | +0.98% | +1.44% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.93% | +5.61% |
+| HEI/USDT:USDT | below_1h_threshold | +3.23% | +3.90% |
+| OPN/USDT:USDT | below_1h_threshold | +1.12% | +1.80% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.00% | +1.68% |
+| HNT/USDT:USDT | below_1h_threshold | +0.90% | +1.57% |
 
 ## 5. 次に見るべき不足
 
