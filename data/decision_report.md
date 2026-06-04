@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T10:28:34.240856+00:00
+- generated_at: 2026-06-04T10:34:05.695457+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5620**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T10:28:31.652386+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.92% price=62654.8
-- Funnel: target 771 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.8 >= 65=1
+- 更新: 2026-06-04T10:34:00.165796+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.03% price=62585.1
+- Funnel: target 771 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EPIC/USDT:USDT | +28.59% | $5,973,673.59 |
-| HEI/USDT:USDT | +27.61% | $4,433,945.27 |
-| OPN/USDT:USDT | +23.10% | $33,583,002.16 |
-| SIREN/USDT:USDT | +22.70% | $4,949,089.32 |
-| BEAT/USDT:USDT | +10.72% | $16,086,092.24 |
+| EPIC/USDT:USDT | +28.89% | $6,036,808.50 |
+| OPN/USDT:USDT | +26.74% | $33,720,348.27 |
+| HEI/USDT:USDT | +25.67% | $4,445,922.57 |
+| SIREN/USDT:USDT | +22.95% | $4,959,329.45 |
+| LAB/USDT:USDT | +13.48% | $133,179,828.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPN/USDT:USDT | below_1h_threshold | +3.42% | +4.34% |
-| HEI/USDT:USDT | below_1h_threshold | +2.27% | +3.19% |
-| BP/USDT:USDT | below_1h_threshold | +1.84% | +2.76% |
-| LAB/USDT:USDT | below_1h_threshold | +1.63% | +2.55% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.92% | +1.84% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.07% | +5.10% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.49% | +3.52% |
+| BP/USDT:USDT | below_1h_threshold | +1.71% | +2.74% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.14% | +2.17% |
+| MEME/USDT:USDT | below_1h_threshold | +1.03% | +2.07% |
 
 ## 5. 次に見るべき不足
 
