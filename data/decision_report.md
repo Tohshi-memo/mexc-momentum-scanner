@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T03:41:06.169169+00:00
+- generated_at: 2026-06-04T03:46:36.970217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5598**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T03:41:03.216177+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.89% price=64394.7
-- Funnel: target 771 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- 更新: 2026-06-04T03:46:33.811152+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.83% price=64353.3
+- Funnel: target 771 → liquid 155 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=43, below_relative_strength=4, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +34.28% | $24,265,152.38 |
-| EPIC/USDT:USDT | +21.02% | $3,761,653.84 |
-| STO/USDT:USDT | +18.70% | $7,044,413.56 |
-| HEI/USDT:USDT | +12.83% | $1,011,736.66 |
-| MAGMA/USDT:USDT | +12.74% | $4,564,921.96 |
+| OPN/USDT:USDT | +33.98% | $24,286,563.53 |
+| EPIC/USDT:USDT | +22.63% | $3,781,782.54 |
+| STO/USDT:USDT | +19.79% | $7,047,017.39 |
+| MAGMA/USDT:USDT | +12.33% | $4,574,097.87 |
+| HEI/USDT:USDT | +11.94% | $1,021,651.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_relative_strength | +6.14% | +4.25% |
-| DYDX/USDT:USDT | below_1h_threshold | +4.71% | +2.81% |
-| ZORA/USDT:USDT | below_1h_threshold | +4.27% | +2.37% |
-| VVV/USDT:USDT | below_1h_threshold | +3.87% | +1.98% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.57% | +1.68% |
+| US/USDT:USDT | below_relative_strength | +5.84% | +4.01% |
+| WLD/USDT:USDT | below_relative_strength | +5.69% | +3.86% |
+| DYDX/USDT:USDT | below_relative_strength | +5.17% | +3.34% |
+| ZORA/USDT:USDT | below_relative_strength | +5.03% | +3.20% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.43% | +2.60% |
 
 ## 5. 次に見るべき不足
 
