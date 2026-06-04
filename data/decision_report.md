@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T06:02:09.060514+00:00
+- generated_at: 2026-06-04T06:08:05.331713+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5607**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T06:02:06.553816+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63900.0
+- 更新: 2026-06-04T06:08:02.919259+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=64116.3
 - Funnel: target 771 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +46.41% | $1,664,880.74 |
-| EPIC/USDT:USDT | +23.47% | $4,625,502.41 |
-| SIREN/USDT:USDT | +18.32% | $1,619,561.74 |
-| OPN/USDT:USDT | +17.32% | $29,325,487.28 |
-| BP/USDT:USDT | +11.03% | $1,874,403.43 |
+| HEI/USDT:USDT | +44.77% | $1,813,174.60 |
+| EPIC/USDT:USDT | +25.29% | $4,656,146.64 |
+| OPN/USDT:USDT | +21.21% | $29,475,888.30 |
+| SIREN/USDT:USDT | +20.78% | $1,690,574.12 |
+| BP/USDT:USDT | +12.82% | $1,875,972.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +0.67% | +0.71% |
-| ZORA/USDT:USDT | below_1h_threshold | +0.59% | +0.63% |
-| HEI/USDT:USDT | below_1h_threshold | +0.41% | +0.45% |
-| AIA/USDT:USDT | below_1h_threshold | +0.40% | +0.44% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
+| OPN/USDT:USDT | below_1h_threshold | +1.89% | +1.60% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.84% | +1.55% |
+| BP/USDT:USDT | below_1h_threshold | +1.46% | +1.17% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.01% | +0.72% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.93% | +0.63% |
 
 ## 5. 次に見るべき不足
 
