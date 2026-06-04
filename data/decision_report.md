@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T17:05:41.926789+00:00
+- generated_at: 2026-06-04T17:11:06.604027+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5645**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T17:05:39.511718+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63467.8
+- 更新: 2026-06-04T17:11:04.212432+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63508.3
 - Funnel: target 772 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +8.33% | $3,309,285.22 |
-| ALLO/USDT:USDT | +6.09% | $4,693,380.96 |
-| XPL/USDT:USDT | +5.49% | $3,029,805.05 |
-| WLD/USDT:USDT | +5.26% | $353,622,695.33 |
-| BIANRENSHENG/USDT:USDT | +5.00% | $1,387,144.25 |
+| ALLO/USDT:USDT | +8.87% | $4,826,584.98 |
+| HOME/USDT:USDT | +7.28% | $3,334,700.10 |
+| WLD/USDT:USDT | +5.57% | $362,369,816.35 |
+| BIANRENSHENG/USDT:USDT | +5.38% | $1,391,498.31 |
+| XPL/USDT:USDT | +5.14% | $3,036,872.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +2.10% | +2.20% |
-| WLD/USDT:USDT | below_1h_threshold | +1.28% | +1.38% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.08% | +1.18% |
-| ENA/USDT:USDT | below_1h_threshold | +0.75% | +0.85% |
-| OP/USDT:USDT | below_1h_threshold | +0.69% | +0.79% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.05% | +3.09% |
+| MYX/USDT:USDT | below_1h_threshold | +1.98% | +2.01% |
+| XPL/USDT:USDT | below_1h_threshold | +1.77% | +1.81% |
+| WLD/USDT:USDT | below_1h_threshold | +1.69% | +1.73% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.18% | +1.22% |
 
 ## 5. 次に見るべき不足
 
