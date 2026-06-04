@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-04T05:51:11.292127+00:00
+- generated_at: 2026-06-04T05:56:47.732069+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5606**
+- closed shadow trades: **5607**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.81% / filled 20/20。**
-- 全期間 MARKET基準: n=5606, expectancy=-0.02%
+- 全期間 MARKET基準: n=5607, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+2.81%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | ASK | 20/20 | 100.0% | +2.92% | **+2.92%** |
 | MARKET | 20/20 | 100.0% | +2.81% | **+2.81%** |
 | LIMIT_1PCT | 15/20 | 75.0% | +1.29% | **+0.97%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +6.29% | **+0.63%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
+| LIMIT_9PCT | 3/20 | 15.0% | +2.86% | **+0.43%** |
+| LIMIT_10PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
 ### シャドウ上位 LONG
 
@@ -34,8 +34,8 @@
 | LIMIT_9PCT_LONG | 5/20 | 25.0% | +2.84% | **+0.71%** |
 | LIMIT_8PCT_LONG | 11/20 | 55.0% | +1.09% | **+0.60%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
+| MARKET_LONG | 20/20 | 100.0% | -0.01% | **-0.01%** |
 | LIMIT_FIB1618_LONG | 5/20 | 25.0% | -0.23% | **-0.06%** |
-| MARKET_LONG | 20/20 | 100.0% | -0.61% | **-0.61%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.20** / 初期 $100.00 (+31.20%)
-- 確定: 1005件 (Win 239 / Loss 312 / Flat 454) / skip 1162件
+- 確定: 1005件 (Win 239 / Loss 312 / Flat 454) / skip 1163件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LIT/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $131.20
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T05:51:08.040301+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.61% price=63979.3
-- Funnel: target 771 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1
+- 更新: 2026-06-04T05:56:43.863610+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=63947.8
+- Funnel: target 771 → liquid 167 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.4 >= 65=1, 4h RSI 80.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +27.90% | $28,849,272.44 |
-| HEI/USDT:USDT | +25.97% | $1,294,702.70 |
-| EPIC/USDT:USDT | +22.69% | $4,636,467.43 |
-| SIREN/USDT:USDT | +17.32% | $1,517,379.77 |
-| BP/USDT:USDT | +11.35% | $1,880,569.21 |
+| HEI/USDT:USDT | +47.16% | $1,445,295.69 |
+| EPIC/USDT:USDT | +23.99% | $4,651,858.98 |
+| SIREN/USDT:USDT | +19.45% | $1,562,926.85 |
+| OPN/USDT:USDT | +16.59% | $29,145,183.82 |
+| BP/USDT:USDT | +11.84% | $1,883,894.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +4.16% | +4.77% |
-| OPN/USDT:USDT | below_1h_threshold | +2.88% | +3.49% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.62% |
-| AIA/USDT:USDT | below_1h_threshold | +1.42% | +2.02% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.42% | +2.02% |
+| AIA/USDT:USDT | below_1h_threshold | +1.94% | +2.59% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +2.12% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.16% | +1.81% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.11% | +1.76% |
+| LAB/USDT:USDT | below_1h_threshold | +0.54% | +1.20% |
 
 ## 5. 次に見るべき不足
 
