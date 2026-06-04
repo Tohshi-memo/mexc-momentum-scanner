@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T13:43:02.932124+00:00
+- generated_at: 2026-06-04T13:48:39.453811+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5625**
 
@@ -54,31 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T13:42:58.050686+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=63919.1
+- 更新: 2026-06-04T13:48:34.688265+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=63895.6
 - Funnel: target 771 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +39.27% | $42,279,290.74 |
-| EPIC/USDT:USDT | +33.03% | $6,752,776.00 |
-| HEI/USDT:USDT | +29.40% | $4,856,070.38 |
-| SIREN/USDT:USDT | +18.00% | $8,961,784.77 |
-| BEAT/USDT:USDT | +14.42% | $18,815,175.73 |
+| OPN/USDT:USDT | +41.27% | $42,457,083.33 |
+| EPIC/USDT:USDT | +31.93% | $6,795,165.45 |
+| HEI/USDT:USDT | +29.25% | $4,866,880.96 |
+| SIREN/USDT:USDT | +20.94% | $9,021,567.78 |
+| BEAT/USDT:USDT | +13.63% | $18,879,378.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +4.69% | +4.41% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.26% | +2.97% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.79% | +2.50% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.25% | +1.97% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.61% |
+| BIANRENSHENG/USDT:USDT | below_relative_strength | +5.19% | +4.95% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.68% | +2.44% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.64% | +2.40% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +1.99% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.47% |
 
 ## 5. 次に見るべき不足
 
