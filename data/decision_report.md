@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T16:35:25.920304+00:00
+- generated_at: 2026-06-04T16:40:49.744076+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5643**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T16:35:21.013358+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.65% price=63447.1
+- 更新: 2026-06-04T16:40:45.033809+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=63680.0
 - Funnel: target 772 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +7.53% | $3,100,651.90 |
-| BIANRENSHENG/USDT:USDT | +4.21% | $1,384,831.64 |
-| FORM/USDT:USDT | +2.75% | $1,047,223.00 |
-| NEAR/USDT:USDT | +2.38% | $208,487,852.69 |
-| MRVLSTOCK/USDT:USDT | +1.97% | $15,748,526.81 |
+| HOME/USDT:USDT | +7.17% | $3,149,376.18 |
+| BIANRENSHENG/USDT:USDT | +4.67% | $1,397,496.72 |
+| ALLO/USDT:USDT | +3.60% | $4,674,885.77 |
+| NEAR/USDT:USDT | +3.30% | $209,064,952.39 |
+| FORM/USDT:USDT | +2.89% | $1,099,875.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +4.64% | +5.29% |
-| FORM/USDT:USDT | below_1h_threshold | +2.97% | +3.62% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.43% | +3.08% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +2.63% |
-| OPG/USDT:USDT | below_1h_threshold | +1.84% | +2.49% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +4.66% | +4.95% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.60% | +3.89% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.31% | +3.59% |
+| FORM/USDT:USDT | below_1h_threshold | +2.97% | +3.26% |
+| XPL/USDT:USDT | below_1h_threshold | +2.75% | +3.03% |
 
 ## 5. 次に見るべき不足
 
