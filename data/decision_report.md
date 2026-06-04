@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T01:32:09.771324+00:00
+- generated_at: 2026-06-04T01:37:22.177170+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5590**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T01:32:07.018812+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.73% price=62850.0
+- 更新: 2026-06-04T01:37:19.798202+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=62920.5
 - Funnel: target 771 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +28.14% | $22,521,928.25 |
-| STO/USDT:USDT | +16.53% | $6,733,412.67 |
-| EPIC/USDT:USDT | +7.50% | $3,547,633.17 |
-| MAGMA/USDT:USDT | +7.44% | $4,339,295.79 |
-| BP/USDT:USDT | +6.67% | $1,561,909.45 |
+| OPN/USDT:USDT | +28.81% | $22,565,489.18 |
+| STO/USDT:USDT | +18.64% | $6,754,651.82 |
+| EPIC/USDT:USDT | +8.99% | $3,551,590.08 |
+| MAGMA/USDT:USDT | +8.42% | $4,341,780.41 |
+| SKYAI/USDT:USDT | +7.82% | $15,273,419.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +3.30% | +4.03% |
-| OPN/USDT:USDT | below_1h_threshold | +1.98% | +2.71% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.63% | +1.36% |
-| GUA/USDT:USDT | below_1h_threshold | +0.61% | +1.34% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.59% | +1.31% |
+| ZORA/USDT:USDT | below_1h_threshold | +4.35% | +4.96% |
+| OPN/USDT:USDT | below_1h_threshold | +2.42% | +3.03% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.27% | +2.89% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.70% | +2.32% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.19% | +1.80% |
 
 ## 5. 次に見るべき不足
 
