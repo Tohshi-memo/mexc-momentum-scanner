@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-04T10:55:54.269855+00:00
+- generated_at: 2026-06-04T11:00:15.251146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5622**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T10:55:48.756349+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.46% price=62315.8
-- Funnel: target 771 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.0 >= 65=1
+- 更新: 2026-06-04T11:00:12.984026+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.32% price=62400.0
+- Funnel: target 771 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +29.24% | $34,372,090.12 |
-| EPIC/USDT:USDT | +28.39% | $6,209,003.79 |
-| SIREN/USDT:USDT | +22.92% | $5,041,248.03 |
-| HEI/USDT:USDT | +18.05% | $4,583,607.03 |
-| LAB/USDT:USDT | +16.05% | $136,213,411.06 |
+| OPN/USDT:USDT | +31.79% | $34,453,957.89 |
+| EPIC/USDT:USDT | +30.13% | $6,258,512.47 |
+| SIREN/USDT:USDT | +22.86% | $5,059,589.80 |
+| HEI/USDT:USDT | +18.35% | $4,589,225.20 |
+| LAB/USDT:USDT | +16.51% | $136,713,989.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.21% | +4.67% |
-| STO/USDT:USDT | below_1h_threshold | +1.16% | +2.61% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.89% | +2.34% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.67% | +2.13% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.55% | +2.01% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.96% | +4.28% |
+| TXNSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +2.26% |
+| H/USDT:USDT | below_1h_threshold | +0.34% | +1.66% |
+| STO/USDT:USDT | below_1h_threshold | +0.29% | +1.61% |
+| LRCXSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +1.55% |
 
 ## 5. 次に見るべき不足
 
