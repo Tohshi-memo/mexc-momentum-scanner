@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-04T10:50:33.558094+00:00
+- generated_at: 2026-06-04T10:55:54.269855+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5621**
+- closed shadow trades: **5622**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +3.20% / filled 20/20。**
-- 全期間 MARKET基準: n=5621, expectancy=-0.02%
+- 全期間 MARKET基準: n=5622, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+3.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +3.74% | **+3.74%** |
 | MARKET | 20/20 | 100.0% | +3.20% | **+3.20%** |
-| LIMIT_1PCT | 14/20 | 70.0% | +2.15% | **+1.50%** |
-| LIMIT_2PCT | 12/20 | 60.0% | +1.85% | **+1.11%** |
-| LIMIT_ATR | 10/20 | 50.0% | +0.24% | **+0.12%** |
+| LIMIT_1PCT | 14/20 | 70.0% | +2.22% | **+1.55%** |
+| LIMIT_2PCT | 12/20 | 60.0% | +2.02% | **+1.21%** |
+| LIMIT_ATR | 9/20 | 45.0% | +0.71% | **+0.32%** |
 
 ### シャドウ上位 LONG
 
@@ -39,47 +39,47 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$99.04** / 初期 $100.00 (-0.96%)
-- 確定トレード: 94件 (TP 29 / SL 62 / EXP 3)
-- 最新: ICP/USDT:USDT TP_HIT PnL +8.00% 残高後 $99.04
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$98.55** / 初期 $100.00 (-1.45%)
+- 確定トレード: 95件 (TP 29 / SL 63 / EXP 3)
+- 最新: OPN/USDT:USDT SL_HIT PnL -4.00% 残高後 $98.55
+- 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$131.20** / 初期 $100.00 (+31.20%)
-- 確定: 1006件 (Win 239 / Loss 312 / Flat 455) / skip 1176件
+- 確定: 1006件 (Win 239 / Loss 312 / Flat 455) / skip 1177件
 - 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: HEI/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $131.20
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-04T10:50:28.351917+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.32% price=62400.8
+- 更新: 2026-06-04T10:55:48.756349+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.46% price=62315.8
 - Funnel: target 771 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.6 >= 65=1
+- Strict後reject: 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EPIC/USDT:USDT | +28.48% | $6,164,606.09 |
-| OPN/USDT:USDT | +27.96% | $34,214,344.46 |
-| SIREN/USDT:USDT | +22.93% | $5,012,807.13 |
-| HEI/USDT:USDT | +17.16% | $4,569,279.99 |
-| LAB/USDT:USDT | +14.63% | $135,526,452.91 |
+| OPN/USDT:USDT | +29.24% | $34,372,090.12 |
+| EPIC/USDT:USDT | +28.39% | $6,209,003.79 |
+| SIREN/USDT:USDT | +22.92% | $5,041,248.03 |
+| HEI/USDT:USDT | +18.05% | $4,583,607.03 |
+| LAB/USDT:USDT | +16.05% | $136,213,411.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.76% | +4.08% |
-| STO/USDT:USDT | below_1h_threshold | +1.53% | +2.85% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.97% | +2.29% |
-| MEME/USDT:USDT | below_1h_threshold | +0.97% | +2.29% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.68% | +2.00% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.21% | +4.67% |
+| STO/USDT:USDT | below_1h_threshold | +1.16% | +2.61% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.89% | +2.34% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.67% | +2.13% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.55% | +2.01% |
 
 ## 5. 次に見るべき不足
 
