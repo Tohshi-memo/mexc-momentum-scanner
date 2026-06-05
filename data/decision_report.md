@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T12:06:24.970917+00:00
+- generated_at: 2026-06-05T12:11:57.515883+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5720**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T12:06:22.573206+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=61798.6
+- 更新: 2026-06-05T12:11:55.115610+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=62165.5
 - Funnel: target 773 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +81.21% | $24,734,965.90 |
-| BABY/USDT:USDT | +57.29% | $9,628,598.15 |
-| BEAT/USDT:USDT | +12.38% | $27,713,461.68 |
-| HEI/USDT:USDT | +12.21% | $2,672,937.11 |
-| CLO/USDT:USDT | +9.86% | $1,192,384.58 |
+| BTW/USDT:USDT | +84.38% | $24,837,307.51 |
+| BABY/USDT:USDT | +60.09% | $9,743,842.36 |
+| HEI/USDT:USDT | +12.45% | $2,676,535.90 |
+| BEAT/USDT:USDT | +11.30% | $27,776,591.56 |
+| AAOISTOCK/USDT:USDT | +9.69% | $2,714,354.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BABY/USDT:USDT | below_1h_threshold | +3.60% | +3.82% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.25% | +1.46% |
-| H/USDT:USDT | below_1h_threshold | +0.95% | +1.17% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.70% | +0.92% |
-| UP/USDT:USDT | below_1h_threshold | +0.62% | +0.83% |
+| BABY/USDT:USDT | below_1h_threshold | +3.95% | +3.58% |
+| H/USDT:USDT | below_1h_threshold | +2.65% | +2.27% |
+| HOME/USDT:USDT | below_1h_threshold | +1.85% | +1.47% |
+| BTW/USDT:USDT | below_1h_threshold | +1.35% | +0.98% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.11% | +0.73% |
 
 ## 5. 次に見るべき不足
 
