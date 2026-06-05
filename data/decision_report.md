@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T06:04:55.326061+00:00
+- generated_at: 2026-06-05T06:10:18.756749+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5700**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T06:04:52.558443+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=62116.3
+- 更新: 2026-06-05T06:10:16.168166+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=62410.8
 - Funnel: target 772 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +67.85% | $17,822,641.93 |
-| OPN/USDT:USDT | +15.54% | $35,471,262.43 |
-| BEAT/USDT:USDT | +11.72% | $25,275,332.71 |
-| HEI/USDT:USDT | +11.72% | $5,358,490.54 |
-| HOME/USDT:USDT | +10.42% | $8,242,353.12 |
+| BTW/USDT:USDT | +67.88% | $17,935,441.77 |
+| OPN/USDT:USDT | +17.66% | $35,547,591.83 |
+| BEAT/USDT:USDT | +11.51% | $25,307,276.71 |
+| HOME/USDT:USDT | +11.45% | $8,270,158.61 |
+| HEI/USDT:USDT | +10.64% | $5,373,156.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.46% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.17% | +0.45% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.16% | +0.44% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.14% | +0.43% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.13% | +0.41% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.48% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.60% | +0.41% |
+| UB/USDT:USDT | below_1h_threshold | +0.52% | +0.33% |
+| MEME/USDT:USDT | below_1h_threshold | +0.49% | +0.31% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.28% | +0.09% |
 
 ## 5. 次に見るべき不足
 
