@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T22:59:08.549019+00:00
+- generated_at: 2026-06-05T23:04:45.730359+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5765**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T22:59:05.872097+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=61706.0
-- Funnel: target 771 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-05T23:04:43.260462+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=61560.8
+- Funnel: target 771 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +27.58% | $1,412,750.90 |
-| ASTEROID/USDT:USDT | +25.70% | $1,001,115.94 |
-| ALLO/USDT:USDT | +21.67% | $7,413,490.37 |
-| HOME/USDT:USDT | +18.16% | $7,357,784.22 |
-| VVV/USDT:USDT | +17.12% | $8,298,701.33 |
+| VELVET/USDT:USDT | +27.18% | $1,402,443.99 |
+| ALLO/USDT:USDT | +22.81% | $6,906,166.03 |
+| ZEST/USDT:USDT | +18.11% | $2,292,751.29 |
+| HOME/USDT:USDT | +17.94% | $6,789,434.86 |
+| VVV/USDT:USDT | +16.23% | $7,833,569.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.17% | +4.06% |
-| WLD/USDT:USDT | below_1h_threshold | +2.62% | +2.52% |
-| LYN/USDT:USDT | below_1h_threshold | +1.56% | +1.45% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.15% | +1.05% |
-| MYX/USDT:USDT | below_1h_threshold | +0.99% | +0.88% |
+| OPN/USDT:USDT | below_1h_threshold | +1.63% | +1.63% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.00% | +1.00% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
+| ZEST/USDT:USDT | below_1h_threshold | +0.71% | +0.70% |
+| PORTAL/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
 
 ## 5. 次に見るべき不足
 
