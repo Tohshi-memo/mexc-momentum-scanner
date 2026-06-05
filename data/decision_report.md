@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-05T17:50:16.550409+00:00
+- generated_at: 2026-06-05T17:56:07.689690+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5740**
+- closed shadow trades: **5741**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=5740, expectancy=-0.01%
+- 全期間 MARKET基準: n=5741, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,7 +21,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR | 15/20 | 75.0% | +1.33% | **+0.99%** |
+| LIMIT_ATR | 14/20 | 70.0% | +1.37% | **+0.96%** |
 | ASK | 20/20 | 100.0% | +0.85% | **+0.85%** |
 | MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
 | LIMIT_7PCT | 4/20 | 20.0% | +2.40% | **+0.48%** |
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.81% | **+0.61%** |
-| ASK_LONG | 20/20 | 100.0% | +0.47% | **+0.47%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.40% | **+0.40%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.50% | **+0.20%** |
+| LIMIT_9PCT_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
+| LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.21% | **+0.16%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,16 +47,16 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$130.54** / 初期 $100.00 (+30.54%)
-- 確定: 1011件 (Win 239 / Loss 313 / Flat 459) / skip 1290件
+- 確定: 1011件 (Win 239 / Loss 313 / Flat 459) / skip 1291件
 - 成長率目線: 平均log +0.000264 / 幾何平均 +0.026% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: HOME/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $130.54
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T17:50:10.260406+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.13% price=60664.1
-- Funnel: target 772 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 2
+- 更新: 2026-06-05T17:56:02.390127+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.04% price=60723.9
+- Funnel: target 772 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 93.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +24.38% | $33,919,659.52 |
-| EPIC/USDT:USDT | +15.19% | $3,121,628.40 |
-| BTW/USDT:USDT | +13.26% | $30,285,643.70 |
-| GUA/USDT:USDT | +12.79% | $1,928,327.80 |
-| HOME/USDT:USDT | +10.75% | $8,187,105.26 |
+| OPN/USDT:USDT | +21.14% | $34,370,067.73 |
+| EPIC/USDT:USDT | +15.69% | $3,132,048.63 |
+| BTW/USDT:USDT | +13.53% | $30,542,094.53 |
+| GUA/USDT:USDT | +12.90% | $1,935,686.42 |
+| ENA/USDT:USDT | +9.27% | $50,189,900.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.55% | +4.68% |
-| MEME/USDT:USDT | below_1h_threshold | +3.46% | +4.59% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.37% | +4.51% |
-| XLM/USDT:USDT | below_1h_threshold | +2.32% | +3.46% |
-| H/USDT:USDT | below_1h_threshold | +2.32% | +3.45% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.95% | +4.99% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.93% | +4.97% |
+| MEME/USDT:USDT | below_1h_threshold | +3.01% | +4.05% |
+| XLM/USDT:USDT | below_1h_threshold | +2.64% | +3.68% |
+| ENA/USDT:USDT | below_1h_threshold | +2.02% | +3.06% |
 
 ## 5. 次に見るべき不足
 
