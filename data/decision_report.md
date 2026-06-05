@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T21:30:00.070260+00:00
+- generated_at: 2026-06-05T21:35:33.965899+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5761**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T21:29:57.596513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=61559.7
+- 更新: 2026-06-05T21:35:31.438933+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=61458.8
 - Funnel: target 771 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +20.87% | $6,824,230.51 |
-| HOME/USDT:USDT | +19.46% | $7,242,217.33 |
-| ZEC/USDT:USDT | +14.63% | $1,224,582,202.41 |
-| BTW/USDT:USDT | +13.53% | $34,998,286.65 |
-| OPN/USDT:USDT | +11.65% | $31,337,466.90 |
+| HOME/USDT:USDT | +19.05% | $7,257,544.97 |
+| ALLO/USDT:USDT | +18.94% | $6,838,058.76 |
+| ZEC/USDT:USDT | +15.44% | $1,229,787,999.56 |
+| BTW/USDT:USDT | +15.34% | $35,147,129.31 |
+| ENA/USDT:USDT | +12.77% | $51,990,907.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +2.47% | +2.53% |
-| KAS/USDT:USDT | below_1h_threshold | +2.45% | +2.50% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.14% | +2.19% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.98% | +2.03% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.83% | +1.89% |
+| ZEST/USDT:USDT | below_1h_threshold | +4.70% | +4.91% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.80% | +3.01% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.67% | +2.89% |
+| ENA/USDT:USDT | below_1h_threshold | +2.59% | +2.81% |
+| GUA/USDT:USDT | below_1h_threshold | +2.10% | +2.31% |
 
 ## 5. 次に見るべき不足
 
