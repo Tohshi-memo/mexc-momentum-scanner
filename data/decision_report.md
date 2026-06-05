@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-05T10:22:32.551707+00:00
+- generated_at: 2026-06-05T10:29:02.054963+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5709**
+- closed shadow trades: **5710**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.58% / filled 20/20。**
-- 全期間 MARKET基準: n=5709, expectancy=-0.02%
+- 全期間 MARKET基準: n=5710, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.58%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1272 | 6/20 | 30.0% | +2.81% | **+0.84%** |
-| ASK | 20/20 | 100.0% | +0.81% | **+0.81%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +0.77% | **+0.62%** |
+| ASK | 20/20 | 100.0% | +0.71% | **+0.71%** |
 | MARKET | 20/20 | 100.0% | +0.58% | **+0.58%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +1.89% | **+0.47%** |
+| LIMIT_6PCT | 6/20 | 30.0% | +1.89% | **+0.57%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +0.64% | **+0.51%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$130.54** / 初期 $100.00 (+30.54%)
-- 確定: 1010件 (Win 239 / Loss 313 / Flat 458) / skip 1260件
+- 確定: 1010件 (Win 239 / Loss 313 / Flat 458) / skip 1261件
 - 成長率目線: 平均log +0.000264 / 幾何平均 +0.026% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: OPN/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $130.54
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T10:22:29.457203+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=62593.2
+- 更新: 2026-06-05T10:28:59.059827+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=62520.8
 - Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
+- Strict後reject: 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +79.97% | $23,071,996.82 |
-| BABY/USDT:USDT | +35.75% | $3,430,686.31 |
-| OPN/USDT:USDT | +23.70% | $40,268,916.87 |
-| CLO/USDT:USDT | +18.62% | $1,092,884.61 |
-| BEAT/USDT:USDT | +12.54% | $27,809,160.85 |
+| BTW/USDT:USDT | +81.69% | $23,166,490.42 |
+| BABY/USDT:USDT | +43.23% | $3,825,175.84 |
+| OPN/USDT:USDT | +22.75% | $40,375,944.91 |
+| CLO/USDT:USDT | +18.69% | $1,098,070.28 |
+| BEAT/USDT:USDT | +12.81% | $27,990,716.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +1.43% | +1.81% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.92% |
-| LMTSTOCK/USDT:USDT | below_1h_threshold | +0.44% | +0.82% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.44% | +0.82% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.32% | +0.70% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.84% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.39% | +1.88% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.38% | +1.87% |
+| BTW/USDT:USDT | below_1h_threshold | +0.81% | +1.30% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.97% |
 
 ## 5. 次に見るべき不足
 
