@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T14:45:40.075711+00:00
+- generated_at: 2026-06-05T14:51:20.198799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5723**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T14:45:37.356050+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=60932.9
+- 更新: 2026-06-05T14:51:17.564929+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=60886.2
 - Funnel: target 773 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +87.98% | $29,242,210.38 |
-| BABY/USDT:USDT | +38.85% | $12,543,644.70 |
-| BEAT/USDT:USDT | +22.56% | $31,328,515.80 |
-| AAOISTOCK/USDT:USDT | +13.16% | $3,686,972.93 |
-| CLO/USDT:USDT | +12.99% | $1,394,886.84 |
+| BTW/USDT:USDT | +82.61% | $29,339,686.44 |
+| BABY/USDT:USDT | +35.60% | $12,664,578.55 |
+| BEAT/USDT:USDT | +22.31% | $32,008,723.83 |
+| AAOISTOCK/USDT:USDT | +14.94% | $3,696,672.42 |
+| CLO/USDT:USDT | +12.09% | $1,403,665.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.43% | +4.05% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.39% | +4.00% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.72% | +3.34% |
-| CLO/USDT:USDT | below_1h_threshold | +3.69% | +3.31% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +2.73% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.34% | +4.03% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.25% | +3.95% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.68% | +3.38% |
+| OPN/USDT:USDT | below_1h_threshold | +3.26% | +2.95% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.45% |
 
 ## 5. 次に見るべき不足
 
