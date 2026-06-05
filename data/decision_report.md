@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-05T17:56:07.689690+00:00
+- generated_at: 2026-06-05T18:01:59.274264+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5741**
+- closed shadow trades: **5742**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=5741, expectancy=-0.01%
+- 全期間 MARKET基準: n=5742, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,21 +21,21 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR | 14/20 | 70.0% | +1.37% | **+0.96%** |
+| LIMIT_ATR | 14/20 | 70.0% | +1.52% | **+1.07%** |
 | ASK | 20/20 | 100.0% | +0.85% | **+0.85%** |
 | MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| LIMIT_7PCT | 4/20 | 20.0% | +2.40% | **+0.48%** |
-| LIMIT_2PCT | 17/20 | 85.0% | +0.49% | **+0.42%** |
+| LIMIT_7PCT | 5/20 | 25.0% | +2.48% | **+0.62%** |
+| LIMIT_BB3S | 2/19 | 10.5% | +4.81% | **+0.51%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET_LONG | 20/20 | 100.0% | +0.40% | **+0.40%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.60% | **+0.60%** |
+| LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.41% | **+0.31%** |
+| ASK_LONG | 20/20 | 100.0% | +0.22% | **+0.22%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.50% | **+0.20%** |
-| LIMIT_9PCT_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
-| LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.21% | **+0.16%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$130.54** / 初期 $100.00 (+30.54%)
-- 確定: 1011件 (Win 239 / Loss 313 / Flat 459) / skip 1291件
+- 確定: 1011件 (Win 239 / Loss 313 / Flat 459) / skip 1292件
 - 成長率目線: 平均log +0.000264 / 幾何平均 +0.026% per trade / maxDD +7.25%
-- 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: HOME/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $130.54
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T17:56:02.390127+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.04% price=60723.9
-- Funnel: target 772 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.3 >= 65=1
+- 更新: 2026-06-05T18:01:56.287859+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=60876.1
+- Funnel: target 772 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +21.14% | $34,370,067.73 |
-| EPIC/USDT:USDT | +15.69% | $3,132,048.63 |
-| BTW/USDT:USDT | +13.53% | $30,542,094.53 |
-| GUA/USDT:USDT | +12.90% | $1,935,686.42 |
-| ENA/USDT:USDT | +9.27% | $50,189,900.05 |
+| BTW/USDT:USDT | +21.32% | $29,728,764.81 |
+| OPN/USDT:USDT | +18.87% | $33,985,564.13 |
+| EPIC/USDT:USDT | +15.05% | $2,905,015.32 |
+| GUA/USDT:USDT | +12.49% | $1,803,238.23 |
+| ENA/USDT:USDT | +10.22% | $47,028,661.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.95% | +4.99% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.93% | +4.97% |
-| MEME/USDT:USDT | below_1h_threshold | +3.01% | +4.05% |
-| XLM/USDT:USDT | below_1h_threshold | +2.64% | +3.68% |
-| ENA/USDT:USDT | below_1h_threshold | +2.02% | +3.06% |
+| BABY/USDT:USDT | below_1h_threshold | +1.72% | +1.57% |
+| LIT/USDT:USDT | below_1h_threshold | +0.99% | +0.85% |
+| MEME/USDT:USDT | below_1h_threshold | +0.83% | +0.68% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.59% | +0.44% |
+| WIF/USDT:USDT | below_1h_threshold | +0.52% | +0.37% |
 
 ## 5. 次に見るべき不足
 
