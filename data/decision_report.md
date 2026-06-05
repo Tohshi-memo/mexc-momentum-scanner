@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T05:54:04.383909+00:00
+- generated_at: 2026-06-05T05:59:33.412331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5699**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T05:53:59.036586+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.24% price=62800.0
-- Funnel: target 772 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-05T05:59:30.990802+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.98% price=62329.8
+- Funnel: target 772 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +77.05% | $17,448,264.05 |
-| OPN/USDT:USDT | +24.38% | $36,348,264.25 |
-| HEI/USDT:USDT | +17.89% | $5,727,540.91 |
-| HOME/USDT:USDT | +17.09% | $8,260,367.82 |
-| BEAT/USDT:USDT | +12.04% | $25,536,830.39 |
+| BTW/USDT:USDT | +77.64% | $17,548,263.27 |
+| OPN/USDT:USDT | +21.81% | $36,396,369.83 |
+| HOME/USDT:USDT | +16.33% | $8,277,669.32 |
+| HEI/USDT:USDT | +15.35% | $5,738,414.50 |
+| BEAT/USDT:USDT | +11.91% | $25,577,753.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +1.32% | +2.56% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.13% | +2.37% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.98% | +2.22% |
-| HEI/USDT:USDT | below_1h_threshold | +0.31% | +1.55% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.26% | +1.50% |
+| HOME/USDT:USDT | below_1h_threshold | +4.45% | +6.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.83% | +2.81% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.79% | +2.77% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.64% | +2.62% |
+| GESTOCK/USDT:USDT | below_1h_threshold | +0.19% | +2.17% |
 
 ## 5. 次に見るべき不足
 
