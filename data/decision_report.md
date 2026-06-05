@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T07:53:43.701436+00:00
+- generated_at: 2026-06-05T07:59:23.957386+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5701**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T07:53:40.911669+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.47% price=62827.1
-- Funnel: target 772 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1, 4h RSI 90.8 >= 65=1
+- 更新: 2026-06-05T07:59:20.855579+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.68% price=62954.3
+- Funnel: target 772 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.3 >= 65=1, 4h RSI 89.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +70.17% | $20,605,769.82 |
-| OPN/USDT:USDT | +35.06% | $37,249,317.87 |
-| BEAT/USDT:USDT | +13.78% | $26,792,913.33 |
-| HOME/USDT:USDT | +12.53% | $8,569,429.41 |
-| MEME/USDT:USDT | +12.30% | $2,248,882.40 |
+| BTW/USDT:USDT | +68.73% | $20,657,672.50 |
+| OPN/USDT:USDT | +37.76% | $37,372,291.94 |
+| BEAT/USDT:USDT | +13.71% | $26,898,150.32 |
+| MEME/USDT:USDT | +12.51% | $2,279,618.99 |
+| HEI/USDT:USDT | +12.21% | $4,514,876.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEME/USDT:USDT | below_relative_strength | +5.95% | +4.48% |
-| LIT/USDT:USDT | below_relative_strength | +5.33% | +3.86% |
-| AIA/USDT:USDT | below_1h_threshold | +4.14% | +2.67% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.99% | +2.52% |
-| KAS/USDT:USDT | below_1h_threshold | +3.56% | +2.09% |
+| MEME/USDT:USDT | below_relative_strength | +6.14% | +4.47% |
+| MONAD/USDT:USDT | below_1h_threshold | +4.28% | +2.60% |
+| KAS/USDT:USDT | below_1h_threshold | +2.77% | +1.10% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +2.50% | +0.83% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.87% | +0.20% |
 
 ## 5. 次に見るべき不足
 
