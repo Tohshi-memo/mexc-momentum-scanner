@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T22:36:39.735524+00:00
+- generated_at: 2026-06-05T22:42:16.317503+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5764**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T22:36:37.308400+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=61574.0
+- 更新: 2026-06-05T22:42:13.805380+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=61670.1
 - Funnel: target 771 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +25.48% | $1,328,486.22 |
-| ALLO/USDT:USDT | +18.28% | $7,275,142.78 |
-| HOME/USDT:USDT | +16.28% | $7,297,500.58 |
-| VVV/USDT:USDT | +14.76% | $7,981,774.79 |
-| ZEC/USDT:USDT | +11.90% | $1,224,811,065.40 |
+| VELVET/USDT:USDT | +26.69% | $1,356,741.64 |
+| ALLO/USDT:USDT | +19.99% | $7,306,310.07 |
+| HOME/USDT:USDT | +16.25% | $7,322,815.64 |
+| BTW/USDT:USDT | +14.97% | $35,497,357.07 |
+| VVV/USDT:USDT | +14.62% | $8,054,934.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +3.00% | +3.11% |
-| VVV/USDT:USDT | below_1h_threshold | +1.98% | +2.08% |
-| LYN/USDT:USDT | below_1h_threshold | +1.40% | +1.50% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.07% | +1.17% |
-| PORTAL/USDT:USDT | below_1h_threshold | +0.32% | +0.43% |
+| WLD/USDT:USDT | below_1h_threshold | +2.10% | +2.05% |
+| VVV/USDT:USDT | below_1h_threshold | +1.91% | +1.86% |
+| LYN/USDT:USDT | below_1h_threshold | +1.54% | +1.49% |
+| ZEST/USDT:USDT | below_1h_threshold | +0.88% | +0.83% |
+| BTW/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
 
 ## 5. 次に見るべき不足
 
