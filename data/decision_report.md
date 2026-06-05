@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T08:38:57.631145+00:00
+- generated_at: 2026-06-05T08:45:01.580797+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5703**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T08:38:54.861362+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=62510.5
-- Funnel: target 772 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-05T08:44:59.345576+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.85% price=62540.7
+- Funnel: target 773 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +62.80% | $21,197,170.31 |
-| OPN/USDT:USDT | +31.81% | $37,857,045.49 |
-| MEME/USDT:USDT | +15.44% | $2,391,120.16 |
-| BEAT/USDT:USDT | +9.67% | $26,430,909.05 |
-| AAOISTOCK/USDT:USDT | +9.56% | $1,612,003.88 |
+| BTW/USDT:USDT | +67.00% | $21,262,497.99 |
+| OPN/USDT:USDT | +31.90% | $38,017,635.75 |
+| HEI/USDT:USDT | +9.43% | $3,874,300.47 |
+| BEAT/USDT:USDT | +9.40% | $26,488,044.56 |
+| AAOISTOCK/USDT:USDT | +8.99% | $1,612,343.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEME/USDT:USDT | below_1h_threshold | +2.77% | +3.66% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +2.52% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.10% | +2.00% |
-| GENIUS/USDT:USDT | below_1h_threshold | +0.80% | +1.70% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +1.35% |
+| GENIUS/USDT:USDT | below_1h_threshold | +2.63% | +3.47% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.20% | +2.05% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +2.03% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +1.28% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +1.22% |
 
 ## 5. 次に見るべき不足
 
