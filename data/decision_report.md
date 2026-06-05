@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T10:13:19.336497+00:00
+- generated_at: 2026-06-05T10:16:50.809680+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5708**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T10:13:16.479197+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=62713.7
-- Funnel: target 773 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-05T10:16:49.223739+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=62638.2
+- Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +81.28% | $22,839,865.29 |
-| BABY/USDT:USDT | +32.35% | $3,194,582.34 |
-| OPN/USDT:USDT | +29.02% | $39,933,075.95 |
-| CLO/USDT:USDT | +20.22% | $1,074,173.94 |
-| BEAT/USDT:USDT | +14.58% | $27,583,740.28 |
+| BTW/USDT:USDT | +77.48% | $22,927,699.35 |
+| BABY/USDT:USDT | +31.21% | $3,222,400.38 |
+| OPN/USDT:USDT | +30.10% | $40,024,080.99 |
+| CLO/USDT:USDT | +19.94% | $1,081,387.79 |
+| BEAT/USDT:USDT | +14.32% | $27,618,503.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BABY/USDT:USDT | below_1h_threshold | +2.70% | +2.89% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +1.00% |
-| BTW/USDT:USDT | below_1h_threshold | +0.80% | +0.98% |
-| HOME/USDT:USDT | below_1h_threshold | +0.63% | +0.82% |
-| HEI/USDT:USDT | below_1h_threshold | +0.54% | +0.73% |
+| BABY/USDT:USDT | below_1h_threshold | +2.35% | +2.66% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.94% | +1.25% |
+| LRCXSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +1.14% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +1.04% |
+| LMTSTOCK/USDT:USDT | below_1h_threshold | +0.44% | +0.75% |
 
 ## 5. 次に見るべき不足
 
