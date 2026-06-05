@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T09:34:51.277104+00:00
+- generated_at: 2026-06-05T09:39:27.333085+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5707**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T09:34:48.395686+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.82% price=62940.8
-- Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.6 >= 65=1, 4h RSI 91.4 >= 65=1, 4h RSI 70.7 >= 65=1
+- 更新: 2026-06-05T09:39:24.962459+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=62838.9
+- Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.9 >= 65=1, 4h RSI 80.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +82.98% | $22,007,822.81 |
-| OPN/USDT:USDT | +37.04% | $40,088,046.39 |
-| BABY/USDT:USDT | +30.53% | $2,387,838.87 |
-| CLO/USDT:USDT | +13.82% | $1,009,842.66 |
-| HEI/USDT:USDT | +13.30% | $3,324,613.80 |
+| BTW/USDT:USDT | +79.53% | $22,226,622.22 |
+| OPN/USDT:USDT | +40.06% | $40,174,551.07 |
+| BABY/USDT:USDT | +27.51% | $2,539,127.24 |
+| CLO/USDT:USDT | +14.31% | $1,018,674.22 |
+| HEI/USDT:USDT | +12.69% | $3,326,562.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +3.96% | +3.14% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.58% | +2.76% |
-| OPN/USDT:USDT | below_1h_threshold | +3.47% | +2.65% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.03% | +2.21% |
-| BSB/USDT:USDT | below_1h_threshold | +2.82% | +2.00% |
+| BEAT/USDT:USDT | below_relative_strength | +5.09% | +4.43% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.89% | +3.24% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.81% | +3.16% |
+| BTW/USDT:USDT | below_1h_threshold | +3.62% | +2.97% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.77% | +2.11% |
 
 ## 5. 次に見るべき不足
 
