@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T15:54:23.631141+00:00
+- generated_at: 2026-06-05T16:00:06.450853+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5728**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T15:54:21.032404+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=60498.0
-- Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
+- 更新: 2026-06-05T16:00:03.553515+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.68% price=60418.0
+- Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.1 >= 65=1, 4h RSI 91.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +87.82% | $30,281,706.96 |
-| BABY/USDT:USDT | +29.85% | $13,494,459.46 |
-| BEAT/USDT:USDT | +23.88% | $34,486,426.46 |
-| CLO/USDT:USDT | +11.18% | $1,423,118.70 |
-| HEI/USDT:USDT | +10.88% | $2,578,598.43 |
+| BTW/USDT:USDT | +89.84% | $30,397,814.15 |
+| BABY/USDT:USDT | +32.72% | $13,517,264.20 |
+| BEAT/USDT:USDT | +21.30% | $34,660,257.29 |
+| CLO/USDT:USDT | +11.11% | $1,423,999.06 |
+| HEI/USDT:USDT | +9.06% | $2,584,738.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.49% | +5.04% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.84% | +2.39% |
-| HEI/USDT:USDT | below_1h_threshold | +1.55% | +2.10% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.43% | +1.98% |
-| GENIUS/USDT:USDT | below_1h_threshold | +0.33% | +0.88% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.48% | +2.16% |
+| GENIUS/USDT:USDT | below_1h_threshold | +0.74% | +1.42% |
+| BABY/USDT:USDT | below_1h_threshold | +0.52% | +1.20% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.50% | +1.18% |
+| UP/USDT:USDT | below_1h_threshold | +0.46% | +1.14% |
 
 ## 5. 次に見るべき不足
 
