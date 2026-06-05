@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T19:13:25.335551+00:00
+- generated_at: 2026-06-05T19:18:48.811528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5754**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T19:13:22.660226+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=59255.1
+- 更新: 2026-06-05T19:18:46.108860+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=59141.5
 - Funnel: target 772 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.9 >= 65=1
+- Strict後reject: 4h RSI 94.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +34.63% | $32,159,777.44 |
-| OPN/USDT:USDT | +23.79% | $35,231,706.91 |
-| GUA/USDT:USDT | +12.82% | $1,824,060.04 |
-| EPIC/USDT:USDT | +9.64% | $2,874,862.97 |
-| HOME/USDT:USDT | +5.69% | $7,159,703.96 |
+| BTW/USDT:USDT | +31.55% | $32,373,887.20 |
+| OPN/USDT:USDT | +21.87% | $35,343,830.28 |
+| GUA/USDT:USDT | +14.00% | $1,824,920.02 |
+| EPIC/USDT:USDT | +8.01% | $2,882,953.36 |
+| BABY/USDT:USDT | +5.81% | $14,923,291.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BABY/USDT:USDT | below_1h_threshold | +2.49% | +2.67% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.21% | +1.39% |
-| WLD/USDT:USDT | below_1h_threshold | +0.78% | +0.96% |
-| HEI/USDT:USDT | below_1h_threshold | +0.64% | +0.82% |
-| LIT/USDT:USDT | below_1h_threshold | +0.21% | +0.39% |
+| BABY/USDT:USDT | below_1h_threshold | +2.77% | +3.14% |
+| LIT/USDT:USDT | below_1h_threshold | +0.98% | +1.35% |
+| GUA/USDT:USDT | below_1h_threshold | +0.59% | +0.96% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.44% | +0.81% |
+| WLD/USDT:USDT | below_1h_threshold | +0.34% | +0.71% |
 
 ## 5. 次に見るべき不足
 
