@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T06:10:18.756749+00:00
+- generated_at: 2026-06-05T06:15:40.021139+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5700**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T06:10:16.168166+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=62410.8
+- 更新: 2026-06-05T06:15:37.580532+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=62150.4
 - Funnel: target 772 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +67.88% | $17,935,441.77 |
-| OPN/USDT:USDT | +17.66% | $35,547,591.83 |
-| BEAT/USDT:USDT | +11.51% | $25,307,276.71 |
-| HOME/USDT:USDT | +11.45% | $8,270,158.61 |
-| HEI/USDT:USDT | +10.64% | $5,373,156.46 |
+| BTW/USDT:USDT | +83.91% | $18,206,476.60 |
+| OPN/USDT:USDT | +17.07% | $35,578,981.27 |
+| HOME/USDT:USDT | +12.18% | $8,281,540.96 |
+| HEI/USDT:USDT | +11.72% | $5,382,988.72 |
+| BEAT/USDT:USDT | +11.52% | $25,361,079.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.48% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.60% | +0.41% |
-| UB/USDT:USDT | below_1h_threshold | +0.52% | +0.33% |
-| MEME/USDT:USDT | below_1h_threshold | +0.49% | +0.31% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.28% | +0.09% |
+| BTW/USDT:USDT | below_1h_threshold | +3.66% | +3.89% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.96% | +1.19% |
+| MEME/USDT:USDT | below_1h_threshold | +0.56% | +0.79% |
+| UB/USDT:USDT | below_1h_threshold | +0.54% | +0.77% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.49% |
 
 ## 5. 次に見るべき不足
 
