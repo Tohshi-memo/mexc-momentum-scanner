@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T03:58:58.087171+00:00
+- generated_at: 2026-06-05T04:04:31.322091+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5696**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T03:58:55.500467+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=62694.2
-- Funnel: target 772 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-05T04:04:28.917409+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=62490.1
+- Funnel: target 772 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +77.08% | $15,308,869.72 |
-| OPN/USDT:USDT | +19.33% | $36,666,329.87 |
-| BEAT/USDT:USDT | +13.53% | $24,693,954.48 |
-| HOME/USDT:USDT | +9.78% | $8,025,879.87 |
-| AAOISTOCK/USDT:USDT | +8.97% | $1,503,996.06 |
+| BTW/USDT:USDT | +76.20% | $15,402,406.84 |
+| OPN/USDT:USDT | +19.51% | $35,911,718.41 |
+| BEAT/USDT:USDT | +12.47% | $24,613,550.53 |
+| HEI/USDT:USDT | +9.91% | $5,432,299.91 |
+| HOME/USDT:USDT | +9.75% | $7,983,133.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.75% | +3.58% |
-| OPN/USDT:USDT | below_1h_threshold | +3.50% | +3.32% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.81% | +1.64% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.98% | +0.81% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.86% | +0.69% |
+| HEI/USDT:USDT | below_1h_threshold | +1.79% | +2.12% |
+| OPN/USDT:USDT | below_1h_threshold | +1.10% | +1.43% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.70% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.69% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.59% |
 
 ## 5. 次に見るべき不足
 
