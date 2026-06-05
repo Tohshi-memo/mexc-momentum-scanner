@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T20:27:28.823990+00:00
+- generated_at: 2026-06-05T20:33:03.722319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5758**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T20:27:23.779571+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.04% price=60897.3
-- Funnel: target 772 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-05T20:32:58.790057+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.39% price=61109.7
+- Funnel: target 771 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +21.58% | $34,353,364.98 |
-| HOME/USDT:USDT | +19.27% | $7,345,774.15 |
-| ALLO/USDT:USDT | +15.29% | $6,543,885.90 |
-| OPN/USDT:USDT | +13.12% | $35,117,754.97 |
-| LIT/USDT:USDT | +9.42% | $4,281,127.95 |
+| BTW/USDT:USDT | +22.63% | $34,421,524.80 |
+| HOME/USDT:USDT | +18.13% | $7,407,746.57 |
+| ALLO/USDT:USDT | +14.97% | $6,592,563.52 |
+| OPN/USDT:USDT | +13.42% | $35,146,107.53 |
+| LIT/USDT:USDT | +11.56% | $4,308,427.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +3.91% | +2.86% |
-| HOME/USDT:USDT | below_1h_threshold | +3.58% | +2.54% |
-| VVV/USDT:USDT | below_1h_threshold | +3.54% | +2.50% |
-| SPX/USDT:USDT | below_1h_threshold | +3.42% | +2.38% |
-| ICP/USDT:USDT | below_1h_threshold | +2.72% | +1.68% |
+| SPX/USDT:USDT | below_1h_threshold | +4.88% | +3.48% |
+| HNT/USDT:USDT | below_1h_threshold | +4.49% | +3.10% |
+| VVV/USDT:USDT | below_1h_threshold | +4.37% | +2.98% |
+| ZEST/USDT:USDT | below_1h_threshold | +3.97% | +2.58% |
+| FET/USDT:USDT | below_1h_threshold | +3.09% | +1.70% |
 
 ## 5. 次に見るべき不足
 
