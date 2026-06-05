@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T07:10:48.401606+00:00
+- generated_at: 2026-06-05T07:16:09.175069+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5700**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T07:10:45.985143+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.62% price=61535.1
-- Funnel: target 772 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-05T07:16:06.731096+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.53% price=61585.7
+- Funnel: target 772 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +50.94% | $19,752,902.04 |
-| OPN/USDT:USDT | +23.47% | $35,419,505.62 |
-| HEI/USDT:USDT | +14.51% | $4,386,804.98 |
-| BEAT/USDT:USDT | +12.15% | $26,162,319.67 |
-| HOME/USDT:USDT | +9.36% | $8,467,799.94 |
+| BTW/USDT:USDT | +55.56% | $19,855,936.69 |
+| OPN/USDT:USDT | +28.07% | $35,512,145.00 |
+| BEAT/USDT:USDT | +11.68% | $26,281,569.28 |
+| HEI/USDT:USDT | +11.12% | $4,405,370.54 |
+| HOME/USDT:USDT | +10.01% | $8,474,478.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIA/USDT:USDT | below_1h_threshold | +2.96% | +3.58% |
-| HEI/USDT:USDT | below_1h_threshold | +0.75% | +1.36% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +1.15% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.19% | +0.81% |
-| OPN/USDT:USDT | below_1h_threshold | +0.18% | +0.80% |
+| OPN/USDT:USDT | below_1h_threshold | +3.84% | +4.37% |
+| AIA/USDT:USDT | below_1h_threshold | +2.98% | +3.52% |
+| UB/USDT:USDT | below_1h_threshold | +0.82% | +1.35% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +1.22% |
+| XAU/USDT:USDT | below_1h_threshold | +0.17% | +0.71% |
 
 ## 5. 次に見るべき不足
 
