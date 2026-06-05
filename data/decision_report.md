@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-05T15:08:00.600301+00:00
+- generated_at: 2026-06-05T15:13:47.528506+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5725**
+- closed shadow trades: **5726**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.40% / filled 20/20。**
-- 全期間 MARKET基準: n=5725, expectancy=-0.02%
+- 全期間 MARKET基準: n=5726, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+1.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,9 +22,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +2.03% | **+2.03%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +1.89% | **+1.51%** |
 | MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +1.48% | **+1.11%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.48% | **+0.41%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +0.90% | **+0.81%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +2.27% | **+0.34%** |
 
 ### シャドウ上位 LONG
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$130.54** / 初期 $100.00 (+30.54%)
-- 確定: 1010件 (Win 239 / Loss 313 / Flat 458) / skip 1276件
+- 確定: 1010件 (Win 239 / Loss 313 / Flat 458) / skip 1277件
 - 成長率目線: 平均log +0.000264 / 幾何平均 +0.026% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: OPN/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $130.54
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T15:07:58.181068+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=60869.8
+- 更新: 2026-06-05T15:13:44.772193+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.55% price=60497.1
 - Funnel: target 773 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +84.55% | $29,656,400.86 |
-| BABY/USDT:USDT | +31.97% | $13,001,589.23 |
-| BEAT/USDT:USDT | +22.44% | $32,499,342.37 |
-| AAOISTOCK/USDT:USDT | +13.51% | $3,699,133.05 |
-| CLO/USDT:USDT | +11.81% | $1,401,426.13 |
+| BTW/USDT:USDT | +87.43% | $29,749,730.15 |
+| BABY/USDT:USDT | +29.85% | $13,083,916.08 |
+| BEAT/USDT:USDT | +21.23% | $32,807,966.91 |
+| HEI/USDT:USDT | +11.36% | $2,516,412.97 |
+| AAOISTOCK/USDT:USDT | +11.34% | $3,703,563.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.81% | +2.75% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +1.69% | +1.63% |
-| HEI/USDT:USDT | below_1h_threshold | +1.55% | +1.49% |
-| LYN/USDT:USDT | below_1h_threshold | +1.38% | +1.32% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.64% | +0.58% |
+| BTW/USDT:USDT | below_1h_threshold | +4.34% | +4.90% |
+| HEI/USDT:USDT | below_1h_threshold | +1.99% | +2.54% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.26% | +1.81% |
+| OPN/USDT:USDT | below_1h_threshold | +0.62% | +1.17% |
+| LYN/USDT:USDT | below_1h_threshold | +0.45% | +1.00% |
 
 ## 5. 次に見るべき不足
 
