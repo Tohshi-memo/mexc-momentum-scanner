@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T09:44:58.243902+00:00
+- generated_at: 2026-06-05T09:50:27.905746+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5707**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T09:44:55.273944+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.56% price=62779.0
+- 更新: 2026-06-05T09:50:24.843998+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=62818.4
 - Funnel: target 773 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 71.2 >= 65=1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 70.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +78.14% | $22,343,464.20 |
-| OPN/USDT:USDT | +37.67% | $40,283,288.49 |
-| BABY/USDT:USDT | +32.27% | $2,652,000.48 |
-| CLO/USDT:USDT | +14.66% | $1,024,335.51 |
-| BEAT/USDT:USDT | +12.91% | $27,543,762.28 |
+| BTW/USDT:USDT | +77.41% | $22,403,686.74 |
+| BABY/USDT:USDT | +34.39% | $2,757,394.70 |
+| OPN/USDT:USDT | +32.22% | $40,457,804.68 |
+| CLO/USDT:USDT | +15.56% | $1,028,078.30 |
+| HEI/USDT:USDT | +13.05% | $3,337,635.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.32% | +3.76% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.23% | +3.67% |
-| OPN/USDT:USDT | below_1h_threshold | +4.15% | +3.59% |
-| H/USDT:USDT | below_1h_threshold | +3.54% | +2.98% |
-| BTW/USDT:USDT | below_1h_threshold | +2.92% | +2.36% |
+| SKYAI/USDT:USDT | below_relative_strength | +5.11% | +4.49% |
+| H/USDT:USDT | below_1h_threshold | +4.32% | +3.70% |
+| BIANRENSHENG/USDT:USDT | below_1h_threshold | +3.72% | +3.10% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.28% | +2.66% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.81% | +2.19% |
 
 ## 5. 次に見るべき不足
 
