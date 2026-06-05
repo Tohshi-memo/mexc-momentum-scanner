@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T22:03:09.966278+00:00
+- generated_at: 2026-06-05T22:09:22.443038+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5763**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T22:03:07.395909+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=61503.4
+- 更新: 2026-06-05T22:09:20.059413+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=61449.2
 - Funnel: target 771 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +26.52% | $1,188,326.73 |
-| ALLO/USDT:USDT | +22.11% | $6,881,506.72 |
-| HOME/USDT:USDT | +19.41% | $7,206,695.09 |
-| ZEC/USDT:USDT | +14.21% | $1,203,888,923.44 |
-| OPN/USDT:USDT | +13.71% | $28,607,818.21 |
+| VELVET/USDT:USDT | +25.56% | $1,239,689.95 |
+| ALLO/USDT:USDT | +21.41% | $6,988,963.35 |
+| HOME/USDT:USDT | +18.88% | $7,227,854.11 |
+| OPN/USDT:USDT | +13.02% | $28,638,199.59 |
+| VVV/USDT:USDT | +12.90% | $7,821,276.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.18% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.51% | +0.73% |
-| LYN/USDT:USDT | below_1h_threshold | +0.47% | +0.69% |
-| GUA/USDT:USDT | below_1h_threshold | +0.36% | +0.58% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.31% | +0.53% |
+| ZEST/USDT:USDT | below_1h_threshold | +2.47% | +2.78% |
+| WLD/USDT:USDT | below_1h_threshold | +0.98% | +1.29% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +1.24% |
+| LYN/USDT:USDT | below_1h_threshold | +0.63% | +0.94% |
+| VVV/USDT:USDT | below_1h_threshold | +0.38% | +0.68% |
 
 ## 5. 次に見るべき不足
 
