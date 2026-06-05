@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T09:13:11.312116+00:00
+- generated_at: 2026-06-05T09:18:46.778016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5705**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T09:13:08.780751+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=62629.4
-- Funnel: target 773 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-05T09:18:44.155479+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.81% price=62934.2
+- Funnel: target 773 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +70.17% | $21,715,715.83 |
-| OPN/USDT:USDT | +36.18% | $38,250,198.41 |
-| HEI/USDT:USDT | +14.02% | $3,296,823.67 |
-| BEAT/USDT:USDT | +10.14% | $26,939,949.22 |
-| AAOISTOCK/USDT:USDT | +9.32% | $1,616,233.44 |
+| BTW/USDT:USDT | +69.72% | $21,771,313.30 |
+| OPN/USDT:USDT | +36.90% | $38,668,591.78 |
+| HEI/USDT:USDT | +13.90% | $3,304,437.17 |
+| BEAT/USDT:USDT | +10.45% | $27,063,825.77 |
+| AAOISTOCK/USDT:USDT | +9.65% | $1,714,916.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.76% | +3.44% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.64% | +2.32% |
-| OPN/USDT:USDT | below_1h_threshold | +2.62% | +2.30% |
-| UB/USDT:USDT | below_1h_threshold | +2.09% | +1.77% |
-| BSB/USDT:USDT | below_1h_threshold | +1.83% | +1.51% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.87% | +3.06% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.48% | +2.67% |
+| OPN/USDT:USDT | below_1h_threshold | +3.27% | +2.46% |
+| BSB/USDT:USDT | below_1h_threshold | +2.87% | +2.06% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.32% | +1.51% |
 
 ## 5. 次に見るべき不足
 
