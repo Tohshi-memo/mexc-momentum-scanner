@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T11:42:59.535902+00:00
+- generated_at: 2026-06-05T11:49:09.228591+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5720**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T11:42:56.886699+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=62193.6
+- 更新: 2026-06-05T11:49:06.853616+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.53% price=62182.9
 - Funnel: target 773 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +80.57% | $24,426,377.39 |
-| BABY/USDT:USDT | +52.60% | $8,261,056.55 |
-| CLO/USDT:USDT | +13.27% | $1,177,101.23 |
-| BEAT/USDT:USDT | +12.95% | $28,510,903.45 |
-| HEI/USDT:USDT | +10.88% | $2,822,295.95 |
+| BTW/USDT:USDT | +81.66% | $24,507,347.14 |
+| BABY/USDT:USDT | +54.27% | $8,389,259.50 |
+| CLO/USDT:USDT | +12.92% | $1,185,063.61 |
+| BEAT/USDT:USDT | +12.27% | $28,677,784.47 |
+| HEI/USDT:USDT | +10.27% | $2,830,384.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.71% | +2.22% |
-| GENIUS/USDT:USDT | below_1h_threshold | +1.65% | +2.16% |
-| UP/USDT:USDT | below_1h_threshold | +1.59% | +2.11% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.98% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +1.26% |
+| UP/USDT:USDT | below_1h_threshold | +2.02% | +2.55% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.85% | +2.38% |
+| GENIUS/USDT:USDT | below_1h_threshold | +1.61% | +2.14% |
+| BABY/USDT:USDT | below_1h_threshold | +1.52% | +2.05% |
+| APPSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.99% |
 
 ## 5. 次に見るべき不足
 
