@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T06:21:13.139149+00:00
+- generated_at: 2026-06-05T06:26:26.884226+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5700**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$98.05** / 初期 $100.00 (-1.95%)
-- 確定トレード: 99件 (TP 30 / SL 66 / EXP 3)
-- 最新: MONAD/USDT:USDT SL_HIT PnL -4.00% 残高後 $98.05
+- 残高: **$99.03** / 初期 $100.00 (-0.97%)
+- 確定トレード: 100件 (TP 31 / SL 66 / EXP 3)
+- 最新: OPG/USDT:USDT TP_HIT PnL +8.00% 残高後 $99.03
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T06:21:10.575163+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.94% price=61709.0
-- Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-05T06:26:24.498163+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.29% price=61488.9
+- Funnel: target 772 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +82.64% | $18,340,031.57 |
-| OPN/USDT:USDT | +16.17% | $35,658,419.24 |
-| HOME/USDT:USDT | +13.74% | $8,290,512.68 |
-| BEAT/USDT:USDT | +11.84% | $25,451,747.01 |
-| HEI/USDT:USDT | +9.79% | $5,393,607.93 |
+| BTW/USDT:USDT | +72.95% | $18,485,046.68 |
+| OPN/USDT:USDT | +16.67% | $35,716,158.48 |
+| HOME/USDT:USDT | +13.03% | $8,317,483.55 |
+| BEAT/USDT:USDT | +12.22% | $25,511,676.11 |
+| HEI/USDT:USDT | +9.31% | $5,405,996.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.08% | +4.02% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +1.21% |
-| GESTOCK/USDT:USDT | below_1h_threshold | +0.13% | +1.07% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.07% | +1.01% |
-| XOMSTOCK/USDT:USDT | below_1h_threshold | +0.05% | +0.98% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.62% | +1.91% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.21% | +1.50% |
+| ABBVSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +1.44% |
+| XAU/USDT:USDT | below_1h_threshold | +0.10% | +1.39% |
+| US30/USDT:USDT | below_1h_threshold | +0.03% | +1.32% |
 
 ## 5. 次に見るべき不足
 
