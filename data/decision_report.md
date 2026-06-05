@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-05T23:53:27.963833+00:00
+- generated_at: 2026-06-05T23:59:51.498422+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5767**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-05T23:53:23.878686+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=61005.3
-- Funnel: target 771 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-05T23:59:46.378828+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.00% price=60943.2
+- Funnel: target 771 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +25.37% | $1,614,270.71 |
-| ZEST/USDT:USDT | +23.11% | $2,490,413.76 |
-| ASTEROID/USDT:USDT | +20.17% | $1,003,173.02 |
-| BTW/USDT:USDT | +20.04% | $35,235,928.96 |
-| ALLO/USDT:USDT | +19.09% | $7,297,106.42 |
+| VELVET/USDT:USDT | +26.32% | $1,627,165.14 |
+| BTW/USDT:USDT | +23.24% | $35,338,257.20 |
+| ZEST/USDT:USDT | +19.29% | $2,504,999.89 |
+| ZEC/USDT:USDT | +18.98% | $1,219,689,921.84 |
+| HOME/USDT:USDT | +18.81% | $6,836,039.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +4.90% | +5.79% |
-| BTW/USDT:USDT | below_1h_threshold | +4.81% | +5.71% |
-| GRASS/USDT:USDT | below_1h_threshold | +4.29% | +5.19% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.03% | +4.92% |
-| HEI/USDT:USDT | below_1h_threshold | +1.65% | +2.55% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.65% | +5.65% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.31% | +5.31% |
+| HEI/USDT:USDT | below_1h_threshold | +2.53% | +3.53% |
+| ZEST/USDT:USDT | below_1h_threshold | +1.68% | +2.68% |
+| OPN/USDT:USDT | below_1h_threshold | +1.28% | +2.28% |
 
 ## 5. 次に見るべき不足
 
