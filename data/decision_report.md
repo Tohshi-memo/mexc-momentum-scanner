@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T21:41:43.686466+00:00
+- generated_at: 2026-06-06T21:48:12.703038+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5906**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T21:41:40.840823+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=60819.7
-- Funnel: target 771 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-06T21:48:10.113998+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=60800.3
+- Funnel: target 771 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +47.93% | $60,157,103.57 |
-| FIDA/USDT:USDT | +27.81% | $2,369,573.34 |
-| SKYAI/USDT:USDT | +26.60% | $22,555,956.30 |
-| BTW/USDT:USDT | +19.29% | $14,395,521.26 |
-| BSB/USDT:USDT | +8.89% | $4,265,263.06 |
+| LAB/USDT:USDT | +51.15% | $61,193,848.95 |
+| SKYAI/USDT:USDT | +37.38% | $22,976,504.75 |
+| FIDA/USDT:USDT | +30.81% | $2,414,444.04 |
+| BTW/USDT:USDT | +20.26% | $14,421,779.71 |
+| BSB/USDT:USDT | +10.97% | $4,293,845.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.37% | +2.13% |
-| WLD/USDT:USDT | below_1h_threshold | +1.98% | +1.75% |
-| BILL/USDT:USDT | below_1h_threshold | +1.75% | +1.52% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.69% | +1.46% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.62% | +1.39% |
+| BSB/USDT:USDT | below_1h_threshold | +3.10% | +2.90% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.52% | +2.32% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.52% | +2.32% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.13% | +1.93% |
+| BILL/USDT:USDT | below_1h_threshold | +2.10% | +1.90% |
 
 ## 5. 次に見るべき不足
 
