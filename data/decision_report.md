@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T16:51:56.355089+00:00
+- generated_at: 2026-06-06T16:57:46.664057+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5868**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T16:51:48.969631+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=60806.1
-- Funnel: target 771 → liquid 141 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1
+- 更新: 2026-06-06T16:57:39.313264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=60689.1
+- Funnel: target 771 → liquid 141 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +9.95% | $6,873,908.69 |
-| HOME/USDT:USDT | +5.75% | $10,462,104.67 |
-| PORTAL/USDT:USDT | +5.52% | $2,754,113.83 |
-| HEI/USDT:USDT | +5.51% | $5,712,498.12 |
-| MYX/USDT:USDT | +4.04% | $1,119,521.98 |
+| BLUAI/USDT:USDT | +9.76% | $6,888,683.33 |
+| HEI/USDT:USDT | +6.56% | $5,755,230.54 |
+| MYX/USDT:USDT | +5.26% | $1,167,020.17 |
+| PLAY/USDT:USDT | +4.22% | $1,282,564.42 |
+| HOME/USDT:USDT | +3.81% | $10,501,518.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.04% | +3.96% |
-| BTW/USDT:USDT | below_1h_threshold | +3.50% | +3.41% |
-| SLX/USDT:USDT | below_1h_threshold | +3.42% | +3.33% |
-| BABY/USDT:USDT | below_1h_threshold | +2.68% | +2.60% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.40% | +2.32% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.25% | +4.36% |
+| HOME/USDT:USDT | below_1h_threshold | +3.81% | +3.92% |
+| SLX/USDT:USDT | below_1h_threshold | +3.01% | +3.11% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.57% | +2.68% |
+| BTW/USDT:USDT | below_1h_threshold | +2.47% | +2.58% |
 
 ## 5. 次に見るべき不足
 
