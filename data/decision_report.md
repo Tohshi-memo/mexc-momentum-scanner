@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-06-06T04:10:16.215119+00:00
+- generated_at: 2026-06-06T04:15:38.823011+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5779**
+- closed shadow trades: **5781**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=5779, expectancy=-0.01%
-- 直近20件 MARKET基準: n=20, expectancy=+0.80%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.86% / filled 20/20。**
+- 全期間 MARKET基準: n=5781, expectancy=-0.01%
+- 直近20件 MARKET基準: n=20, expectancy=+1.86%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
+| MARKET | 20/20 | 100.0% | +1.86% | **+1.86%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +0.91% | **+0.91%** |
-| MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| LIMIT_BB3S | 3/18 | 16.7% | +2.30% | **+0.38%** |
+| ASK | 20/20 | 100.0% | +1.95% | **+1.95%** |
+| MARKET | 20/20 | 100.0% | +1.86% | **+1.86%** |
+| LIMIT_BB3S | 4/19 | 21.1% | +3.14% | **+0.66%** |
 | LIMIT_5PCT | 2/20 | 10.0% | +0.95% | **+0.10%** |
-| LIMIT_4PCT | 12/20 | 60.0% | +0.00% | **+0.00%** |
+| LIMIT_4PCT | 10/20 | 50.0% | +0.00% | **+0.00%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_4PCT_LONG | 15/20 | 75.0% | +1.60% | **+1.20%** |
-| LIMIT_3PCT_LONG | 15/20 | 75.0% | +1.34% | **+1.00%** |
-| LIMIT_5PCT_LONG | 13/20 | 65.0% | +0.87% | **+0.57%** |
-| LIMIT_6PCT_LONG | 10/20 | 50.0% | +0.72% | **+0.36%** |
-| LIMIT_BB3S_LONG | 2/2 | 100.0% | +0.34% | **+0.34%** |
+| LIMIT_4PCT_LONG | 16/20 | 80.0% | +0.67% | **+0.54%** |
+| LIMIT_FIB1618_LONG | 2/20 | 10.0% | +4.22% | **+0.42%** |
+| LIMIT_3PCT_LONG | 16/20 | 80.0% | +0.41% | **+0.33%** |
+| LIMIT_6PCT_LONG | 12/20 | 60.0% | +0.50% | **+0.30%** |
+| LIMIT_9PCT_LONG | 3/20 | 15.0% | +1.10% | **+0.16%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$130.54** / 初期 $100.00 (+30.54%)
-- 確定: 1012件 (Win 239 / Loss 313 / Flat 460) / skip 1328件
+- 確定: 1012件 (Win 239 / Loss 313 / Flat 460) / skip 1330件
 - 成長率目線: 平均log +0.000263 / 幾何平均 +0.026% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ZEST/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $130.54
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T04:10:13.401778+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=60346.9
+- 更新: 2026-06-06T04:15:35.615254+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.08% price=60006.5
 - Funnel: target 771 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +31.28% | $5,299,033.98 |
-| VELVET/USDT:USDT | +25.59% | $2,014,860.79 |
-| OPN/USDT:USDT | +16.81% | $22,963,928.09 |
-| ALLO/USDT:USDT | +15.80% | $8,172,141.73 |
-| CLO/USDT:USDT | +15.49% | $1,684,591.51 |
+| HOME/USDT:USDT | +32.29% | $5,330,403.56 |
+| VELVET/USDT:USDT | +25.84% | $2,018,501.42 |
+| OPN/USDT:USDT | +16.51% | $22,984,624.69 |
+| CLO/USDT:USDT | +15.80% | $1,690,103.27 |
+| ALLO/USDT:USDT | +15.37% | $8,182,693.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +0.84% | +1.36% |
-| HOME/USDT:USDT | below_1h_threshold | +0.65% | +1.17% |
-| H/USDT:USDT | below_1h_threshold | +0.12% | +0.64% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.05% | +0.57% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.02% | +0.54% |
+| HOME/USDT:USDT | below_1h_threshold | +1.89% | +2.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.03% | +2.11% |
+| HEI/USDT:USDT | below_1h_threshold | +0.22% | +1.30% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.10% | +1.18% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.01% | +1.10% |
 
 ## 5. 次に見るべき不足
 
