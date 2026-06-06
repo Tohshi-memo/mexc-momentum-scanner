@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T02:56:42.999960+00:00
+- generated_at: 2026-06-06T03:02:21.575698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5775**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T02:56:37.491026+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=60988.3
-- Funnel: target 771 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.4 >= 65=1, 4h RSI 87.0 >= 65=1, 4h RSI 68.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-06T03:02:19.120564+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=60875.2
+- Funnel: target 771 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +26.24% | $5,471,053.36 |
-| VELVET/USDT:USDT | +25.58% | $1,973,833.91 |
-| BTW/USDT:USDT | +21.51% | $33,060,753.41 |
-| CLO/USDT:USDT | +19.55% | $1,615,633.15 |
-| OPN/USDT:USDT | +18.87% | $23,920,065.29 |
+| VELVET/USDT:USDT | +26.40% | $1,971,721.14 |
+| HOME/USDT:USDT | +23.99% | $5,199,961.98 |
+| BTW/USDT:USDT | +21.55% | $31,629,028.75 |
+| OPN/USDT:USDT | +16.91% | $23,374,957.86 |
+| VVV/USDT:USDT | +16.75% | $8,847,874.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.83% | +4.90% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.22% | +2.28% |
-| HOME/USDT:USDT | below_1h_threshold | +2.15% | +2.21% |
-| OPN/USDT:USDT | below_1h_threshold | +2.07% | +2.13% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.15% | +1.21% |
+| GUA/USDT:USDT | below_1h_threshold | +1.38% | +1.45% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.23% | +0.30% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.23% | +0.30% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.20% | +0.27% |
+| MEME/USDT:USDT | below_1h_threshold | +0.12% | +0.19% |
 
 ## 5. 次に見るべき不足
 
