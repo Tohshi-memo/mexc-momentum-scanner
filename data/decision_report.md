@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T11:50:50.855719+00:00
+- generated_at: 2026-06-06T11:56:30.918151+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5820**
 
@@ -52,32 +52,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T11:50:47.539314+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=60852.9
-- Funnel: target 771 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 84.7 >= 65=1
+- 更新: 2026-06-06T11:56:27.436819+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=60871.4
+- Funnel: target 771 → liquid 150 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.0 >= 65=1, 4h RSI 68.8 >= 65=1, 4h RSI 85.3 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +106.54% | $44,500,341.33 |
-| BLUAI/USDT:USDT | +55.66% | $3,144,323.80 |
-| VELVET/USDT:USDT | +45.14% | $3,170,056.34 |
-| CLO/USDT:USDT | +26.23% | $2,631,157.64 |
-| HEI/USDT:USDT | +21.47% | $2,957,185.97 |
+| ALLO/USDT:USDT | +112.00% | $45,388,804.28 |
+| BLUAI/USDT:USDT | +66.06% | $3,211,157.11 |
+| VELVET/USDT:USDT | +48.47% | $3,219,358.28 |
+| CLO/USDT:USDT | +27.17% | $2,638,388.02 |
+| HEI/USDT:USDT | +22.02% | $2,963,520.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_relative_strength | +5.19% | +4.71% |
-| BLUAI/USDT:USDT | below_1h_threshold | +3.75% | +3.28% |
-| VVV/USDT:USDT | below_1h_threshold | +2.56% | +2.08% |
-| LYN/USDT:USDT | below_1h_threshold | +2.27% | +1.80% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.24% | +1.76% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.43% | +3.92% |
+| LYN/USDT:USDT | below_1h_threshold | +2.75% | +2.24% |
+| VVV/USDT:USDT | below_1h_threshold | +2.39% | +1.88% |
+| JTO/USDT:USDT | below_1h_threshold | +2.29% | +1.78% |
+| LIT/USDT:USDT | below_1h_threshold | +2.20% | +1.69% |
 
 ## 5. 次に見るべき不足
 
