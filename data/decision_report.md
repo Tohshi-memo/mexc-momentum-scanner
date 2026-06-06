@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T10:27:36.080175+00:00
+- generated_at: 2026-06-06T10:34:01.496616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5808**
 
@@ -52,32 +52,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T10:27:31.699417+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=60611.0
-- Funnel: target 771 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.4 >= 65=1, 4h RSI 84.1 >= 65=1, 4h RSI 68.8 >= 65=1, 4h RSI 84.2 >= 65=1
+- 更新: 2026-06-06T10:33:58.338457+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.97% price=60363.7
+- Funnel: target 771 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.0 >= 65=1, 4h RSI 84.4 >= 65=1, 4h RSI 68.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +92.45% | $23,640,251.76 |
-| BLUAI/USDT:USDT | +54.92% | $2,318,153.06 |
-| VELVET/USDT:USDT | +43.40% | $2,831,497.34 |
-| CLO/USDT:USDT | +34.04% | $2,519,928.69 |
-| ZEST/USDT:USDT | +27.85% | $1,879,810.89 |
+| ALLO/USDT:USDT | +88.51% | $25,076,561.87 |
+| BLUAI/USDT:USDT | +57.96% | $2,418,544.47 |
+| VELVET/USDT:USDT | +39.78% | $2,853,540.86 |
+| CLO/USDT:USDT | +27.67% | $2,560,670.06 |
+| HEI/USDT:USDT | +24.55% | $2,381,025.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +3.78% | +4.35% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.46% | +2.03% |
-| CLO/USDT:USDT | below_1h_threshold | +1.37% | +1.94% |
-| HOME/USDT:USDT | below_1h_threshold | +0.96% | +1.53% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.94% | +1.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.15% | +5.12% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.89% | +3.86% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.20% | +2.17% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.36% | +1.33% |
+| KAS/USDT:USDT | below_1h_threshold | +0.33% | +1.31% |
 
 ## 5. 次に見るべき不足
 
