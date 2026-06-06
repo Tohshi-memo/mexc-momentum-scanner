@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T11:06:39.732615+00:00
+- generated_at: 2026-06-06T11:12:06.932480+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5815**
 
@@ -52,8 +52,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T11:06:36.796528+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=60683.8
+- 更新: 2026-06-06T11:12:04.354930+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=60635.3
 - Funnel: target 771 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -61,21 +61,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +107.70% | $32,731,757.57 |
-| BLUAI/USDT:USDT | +53.46% | $2,706,892.40 |
-| VELVET/USDT:USDT | +41.04% | $2,970,705.63 |
-| HEI/USDT:USDT | +33.92% | $2,714,494.39 |
-| ZEST/USDT:USDT | +16.44% | $1,943,016.07 |
+| ALLO/USDT:USDT | +106.30% | $33,953,877.46 |
+| BLUAI/USDT:USDT | +55.30% | $2,751,749.01 |
+| VELVET/USDT:USDT | +41.98% | $2,987,988.91 |
+| HEI/USDT:USDT | +26.98% | $2,756,578.21 |
+| CLO/USDT:USDT | +18.80% | $2,564,927.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.03% | +2.83% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.62% | +2.42% |
-| BLUAI/USDT:USDT | below_1h_threshold | +2.42% | +2.22% |
-| HOME/USDT:USDT | below_1h_threshold | +1.88% | +1.69% |
-| VVV/USDT:USDT | below_1h_threshold | +1.81% | +1.61% |
+| BLUAI/USDT:USDT | below_1h_threshold | +3.65% | +3.53% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.62% | +3.51% |
+| GUA/USDT:USDT | below_1h_threshold | +3.30% | +3.18% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.89% | +1.77% |
+| CLO/USDT:USDT | below_1h_threshold | +1.87% | +1.76% |
 
 ## 5. 次に見るべき不足
 
