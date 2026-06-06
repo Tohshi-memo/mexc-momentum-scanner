@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T01:01:44.016842+00:00
+- generated_at: 2026-06-06T01:06:13.579396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5771**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T01:01:41.545858+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=61318.8
+- 更新: 2026-06-06T01:06:11.628473+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=61323.3
 - Funnel: target 771 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +25.75% | $1,791,796.45 |
-| HOME/USDT:USDT | +21.29% | $5,448,166.53 |
-| ALLO/USDT:USDT | +20.73% | $7,375,771.12 |
-| VVV/USDT:USDT | +19.63% | $8,528,134.17 |
-| BTW/USDT:USDT | +19.12% | $32,621,288.26 |
+| VELVET/USDT:USDT | +23.70% | $1,800,686.45 |
+| HOME/USDT:USDT | +20.42% | $5,465,578.01 |
+| VVV/USDT:USDT | +20.32% | $8,556,485.20 |
+| ALLO/USDT:USDT | +20.03% | $7,382,160.78 |
+| ZEC/USDT:USDT | +19.07% | $1,167,610,955.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +1.16% | +1.03% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.13% | +1.00% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.10% | +0.97% |
-| BTW/USDT:USDT | below_1h_threshold | +0.92% | +0.79% |
-| UB/USDT:USDT | below_1h_threshold | +0.79% | +0.66% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.73% | +3.59% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.40% | +1.26% |
+| UB/USDT:USDT | below_1h_threshold | +1.36% | +1.23% |
+| VVV/USDT:USDT | below_1h_threshold | +0.95% | +0.82% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.75% | +0.61% |
 
 ## 5. 次に見るべき不足
 
