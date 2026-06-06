@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T17:30:22.735042+00:00
+- generated_at: 2026-06-06T17:36:28.890816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5873**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T17:30:19.776782+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=60649.5
-- Funnel: target 771 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 67.4 >= 65=1
+- 更新: 2026-06-06T17:36:25.657619+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=60767.5
+- Funnel: target 771 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.3 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 68.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +8.68% | $6,765,212.25 |
-| BTW/USDT:USDT | +7.15% | $20,037,913.56 |
-| MYX/USDT:USDT | +5.92% | $1,451,395.27 |
-| BLUAI/USDT:USDT | +5.60% | $6,987,895.83 |
-| SLX/USDT:USDT | +4.65% | $1,175,144.17 |
+| BTW/USDT:USDT | +12.50% | $20,125,049.40 |
+| SKYAI/USDT:USDT | +10.92% | $7,047,930.03 |
+| MYX/USDT:USDT | +4.98% | $1,459,282.09 |
+| BLUAI/USDT:USDT | +4.82% | $7,013,269.70 |
+| SLX/USDT:USDT | +4.48% | $1,179,112.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.05% | +4.21% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.84% | +2.00% |
-| BSB/USDT:USDT | below_1h_threshold | +0.99% | +1.16% |
-| SLX/USDT:USDT | below_1h_threshold | +0.85% | +1.02% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.58% | +0.74% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.05% | +2.02% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.09% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.00% | +0.97% |
 
 ## 5. 次に見るべき不足
 
