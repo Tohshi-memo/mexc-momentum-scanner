@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T04:48:48.922032+00:00
+- generated_at: 2026-06-06T04:54:20.736127+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5784**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T04:48:46.444430+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.17% price=59953.9
+- 更新: 2026-06-06T04:54:18.142268+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.81% price=60169.0
 - Funnel: target 771 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +23.90% | $6,178,927.17 |
-| VELVET/USDT:USDT | +21.77% | $2,076,431.66 |
-| ALLO/USDT:USDT | +17.91% | $8,241,198.24 |
-| OPN/USDT:USDT | +16.91% | $23,217,664.75 |
-| CLO/USDT:USDT | +16.48% | $1,741,088.29 |
+| VELVET/USDT:USDT | +22.67% | $2,101,070.39 |
+| ALLO/USDT:USDT | +20.88% | $8,273,430.90 |
+| OPN/USDT:USDT | +19.07% | $23,265,515.96 |
+| CLO/USDT:USDT | +18.73% | $1,761,439.17 |
+| HOME/USDT:USDT | +15.99% | $6,521,413.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +2.35% | +3.51% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.65% | +2.82% |
-| CLO/USDT:USDT | below_1h_threshold | +0.38% | +1.55% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.00% | +1.17% |
-| USDC/USDT:USDT | below_1h_threshold | +0.00% | +1.17% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.21% | +5.02% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.89% | +4.71% |
+| CLO/USDT:USDT | below_1h_threshold | +2.42% | +3.24% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.04% | +0.86% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.03% | +0.85% |
 
 ## 5. 次に見るべき不足
 
