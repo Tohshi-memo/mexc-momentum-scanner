@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T12:13:09.794703+00:00
+- generated_at: 2026-06-06T12:18:43.072324+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5824**
 
@@ -52,30 +52,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T12:13:06.937554+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=60975.0
-- Funnel: target 771 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-06T12:18:40.303592+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=60936.9
+- Funnel: target 771 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +112.13% | $49,331,808.78 |
-| BLUAI/USDT:USDT | +66.06% | $3,400,252.86 |
-| VELVET/USDT:USDT | +48.51% | $3,245,779.45 |
-| CLO/USDT:USDT | +25.54% | $2,563,756.12 |
-| HEI/USDT:USDT | +23.01% | $2,959,239.16 |
+| ALLO/USDT:USDT | +122.32% | $50,178,858.58 |
+| BLUAI/USDT:USDT | +68.39% | $3,457,920.67 |
+| VELVET/USDT:USDT | +48.26% | $3,252,222.48 |
+| CLO/USDT:USDT | +27.29% | $2,568,206.25 |
+| HEI/USDT:USDT | +25.55% | $2,974,135.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.35% | +4.02% |
-| HEI/USDT:USDT | below_1h_threshold | +1.35% | +1.02% |
-| XLM/USDT:USDT | below_1h_threshold | +0.74% | +0.41% |
-| PLAY/USDT:USDT | below_1h_threshold | +0.54% | +0.20% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.10% |
+| HEI/USDT:USDT | below_1h_threshold | +2.89% | +2.62% |
+| BLUAI/USDT:USDT | below_1h_threshold | +0.76% | +0.49% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.55% | +0.28% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.44% | +0.17% |
+| XLM/USDT:USDT | below_1h_threshold | +0.32% | +0.05% |
 
 ## 5. 次に見るべき不足
 
