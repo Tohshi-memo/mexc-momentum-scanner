@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T08:54:17.502788+00:00
+- generated_at: 2026-06-06T08:59:44.825440+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5795**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T08:54:14.981275+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.74% price=61423.0
-- Funnel: target 771 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-06T08:59:42.019704+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=61243.7
+- Funnel: target 771 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +44.36% | $1,614,915.89 |
-| ALLO/USDT:USDT | +38.11% | $11,957,192.65 |
-| VELVET/USDT:USDT | +34.28% | $2,526,495.09 |
-| CLO/USDT:USDT | +32.72% | $2,453,381.30 |
-| OPN/USDT:USDT | +22.91% | $20,795,792.70 |
+| BLUAI/USDT:USDT | +44.39% | $1,651,497.67 |
+| ALLO/USDT:USDT | +43.60% | $12,223,907.92 |
+| VELVET/USDT:USDT | +33.28% | $2,535,474.45 |
+| CLO/USDT:USDT | +31.91% | $2,490,216.54 |
+| ZEST/USDT:USDT | +25.13% | $1,791,608.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_relative_strength | +5.23% | +4.49% |
-| SIREN/USDT:USDT | below_relative_strength | +5.09% | +4.36% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.89% | +4.15% |
-| HEI/USDT:USDT | below_1h_threshold | +4.18% | +3.44% |
-| SPX/USDT:USDT | below_1h_threshold | +3.39% | +2.66% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.95% | +4.51% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.69% | +4.25% |
+| HEI/USDT:USDT | below_1h_threshold | +4.68% | +4.23% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.52% | +3.07% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +3.17% | +2.73% |
 
 ## 5. 次に見るべき不足
 
