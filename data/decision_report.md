@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T07:13:47.771874+00:00
+- generated_at: 2026-06-06T07:19:53.896387+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5791**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T07:13:45.133996+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=60978.3
+- 更新: 2026-06-06T07:19:51.457939+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=60968.3
 - Funnel: target 771 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +32.60% | $2,183,584.12 |
-| VELVET/USDT:USDT | +31.43% | $2,368,855.54 |
-| ALLO/USDT:USDT | +24.03% | $9,951,536.58 |
-| ZEST/USDT:USDT | +23.55% | $1,779,429.59 |
-| OPN/USDT:USDT | +19.22% | $22,163,965.01 |
+| VELVET/USDT:USDT | +33.00% | $2,383,061.00 |
+| CLO/USDT:USDT | +31.35% | $2,203,718.33 |
+| ALLO/USDT:USDT | +26.37% | $9,990,310.34 |
+| ZEST/USDT:USDT | +22.14% | $1,797,396.18 |
+| OPN/USDT:USDT | +19.46% | $22,221,152.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +1.92% | +1.57% |
-| CLO/USDT:USDT | below_1h_threshold | +1.58% | +1.24% |
-| DASH/USDT:USDT | below_1h_threshold | +1.52% | +1.17% |
-| UB/USDT:USDT | below_1h_threshold | +1.46% | +1.12% |
-| FET/USDT:USDT | below_1h_threshold | +1.39% | +1.05% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.86% | +2.54% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.29% | +1.96% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.06% | +1.73% |
+| DASH/USDT:USDT | below_1h_threshold | +2.04% | +1.71% |
+| STX/USDT:USDT | below_1h_threshold | +1.88% | +1.56% |
 
 ## 5. 次に見るべき不足
 
