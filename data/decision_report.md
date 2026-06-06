@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T18:16:23.248795+00:00
+- generated_at: 2026-06-06T18:22:11.376421+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5878**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T18:16:19.907519+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=60440.3
+- 更新: 2026-06-06T18:22:08.891184+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=60456.2
 - Funnel: target 771 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +17.37% | $1,140,527.51 |
-| SKYAI/USDT:USDT | +16.45% | $8,606,038.64 |
-| BLUAI/USDT:USDT | +7.96% | $7,095,969.72 |
-| BTW/USDT:USDT | +7.05% | $19,038,474.45 |
-| HOME/USDT:USDT | +5.23% | $10,204,425.36 |
+| FIDA/USDT:USDT | +19.10% | $1,163,449.76 |
+| SKYAI/USDT:USDT | +18.13% | $8,959,748.87 |
+| BLUAI/USDT:USDT | +9.18% | $7,107,948.32 |
+| HOME/USDT:USDT | +5.54% | $10,210,865.54 |
+| BTW/USDT:USDT | +4.80% | $19,060,985.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.06% | +3.25% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.50% | +2.69% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.27% | +2.45% |
-| LAB/USDT:USDT | below_1h_threshold | +2.21% | +2.40% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.86% | +2.04% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.74% | +4.90% |
+| BABY/USDT:USDT | below_1h_threshold | +3.36% | +3.52% |
+| BLUAI/USDT:USDT | below_1h_threshold | +2.98% | +3.14% |
+| LAB/USDT:USDT | below_1h_threshold | +2.94% | +3.10% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.88% |
 
 ## 5. 次に見るべき不足
 
