@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T15:41:10.805996+00:00
+- generated_at: 2026-06-06T15:46:57.401012+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5856**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T15:41:05.380417+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=60750.9
-- Funnel: target 771 → liquid 143 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.2 >= 65=1, 4h RSI 74.0 >= 65=1
+- 更新: 2026-06-06T15:46:53.635711+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=60840.1
+- Funnel: target 771 → liquid 143 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.0 >= 65=1, 4h RSI 76.3 >= 65=1, 4h RSI 85.9 >= 65=1, 4h RSI 86.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +128.09% | $77,113,625.26 |
-| HEI/USDT:USDT | +74.66% | $4,922,821.33 |
-| VELVET/USDT:USDT | +53.88% | $4,050,674.45 |
-| BLUAI/USDT:USDT | +34.87% | $6,596,299.94 |
-| SKYAI/USDT:USDT | +32.13% | $5,236,738.45 |
+| ALLO/USDT:USDT | +125.09% | $77,958,374.10 |
+| HEI/USDT:USDT | +78.96% | $5,036,765.14 |
+| VELVET/USDT:USDT | +54.95% | $4,114,405.67 |
+| SKYAI/USDT:USDT | +34.75% | $5,307,445.57 |
+| BLUAI/USDT:USDT | +33.72% | $6,635,129.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.43% | +4.45% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.48% | +3.50% |
-| HOME/USDT:USDT | below_1h_threshold | +2.60% | +2.62% |
-| ZEST/USDT:USDT | below_1h_threshold | +2.47% | +2.49% |
-| LIT/USDT:USDT | below_1h_threshold | +2.11% | +2.13% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.25% | +4.12% |
+| HOME/USDT:USDT | below_1h_threshold | +3.98% | +3.85% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.67% | +3.54% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.75% | +2.62% |
+| XLM/USDT:USDT | below_1h_threshold | +2.60% | +2.47% |
 
 ## 5. 次に見るべき不足
 
