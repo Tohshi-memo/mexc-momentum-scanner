@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T06:52:21.182715+00:00
+- generated_at: 2026-06-06T06:58:31.570584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5791**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T06:52:15.484914+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=60744.6
-- Funnel: target 771 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 80.4 >= 65=1
+- 更新: 2026-06-06T06:58:26.659956+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=60718.1
+- Funnel: target 771 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +33.91% | $2,169,260.78 |
-| VELVET/USDT:USDT | +30.54% | $2,303,070.59 |
-| ZEST/USDT:USDT | +20.74% | $1,791,704.74 |
-| ALLO/USDT:USDT | +20.34% | $9,744,885.79 |
-| OPN/USDT:USDT | +19.17% | $23,179,626.24 |
+| CLO/USDT:USDT | +30.29% | $2,231,265.05 |
+| VELVET/USDT:USDT | +28.85% | $2,327,305.83 |
+| ALLO/USDT:USDT | +25.56% | $9,955,606.65 |
+| ZEST/USDT:USDT | +23.02% | $1,799,005.28 |
+| OPN/USDT:USDT | +20.40% | $23,211,232.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BCH/USDT:USDT | below_1h_threshold | +3.68% | +3.97% |
-| GUA/USDT:USDT | below_1h_threshold | +3.19% | +3.48% |
-| ZEST/USDT:USDT | below_1h_threshold | +2.15% | +2.44% |
-| JTO/USDT:USDT | below_1h_threshold | +2.02% | +2.31% |
-| ENA/USDT:USDT | below_1h_threshold | +1.64% | +1.93% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.97% | +5.30% |
+| BCH/USDT:USDT | below_1h_threshold | +4.35% | +4.68% |
+| ZEST/USDT:USDT | below_1h_threshold | +4.08% | +4.41% |
+| GUA/USDT:USDT | below_1h_threshold | +3.18% | +3.51% |
+| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.99% |
 
 ## 5. 次に見るべき不足
 
