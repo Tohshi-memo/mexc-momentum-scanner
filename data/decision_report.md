@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T17:42:15.822155+00:00
+- generated_at: 2026-06-06T17:47:55.511939+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5874**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T17:42:12.638495+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=60601.1
-- Funnel: target 771 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
+- 更新: 2026-06-06T17:47:52.456692+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=60548.2
+- Funnel: target 771 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.3 >= 65=1, 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +6.96% | $7,298,547.33 |
-| BLUAI/USDT:USDT | +5.28% | $7,031,261.57 |
-| SIREN/USDT:USDT | +5.12% | $5,255,325.87 |
-| SLX/USDT:USDT | +4.77% | $1,182,382.20 |
-| GUN/USDT:USDT | +4.42% | $1,086,328.89 |
+| SKYAI/USDT:USDT | +10.27% | $7,429,400.11 |
+| BLUAI/USDT:USDT | +8.41% | $7,051,217.15 |
+| HOME/USDT:USDT | +4.80% | $10,193,656.50 |
+| SIREN/USDT:USDT | +4.59% | $5,314,542.00 |
+| BTW/USDT:USDT | +3.94% | $20,245,193.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.26% | +4.50% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.45% | +2.70% |
-| SLX/USDT:USDT | below_1h_threshold | +0.97% | +1.21% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.82% | +1.06% |
-| LIT/USDT:USDT | below_1h_threshold | +0.81% | +1.05% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.35% | +1.68% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.06% | +1.40% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.32% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.92% | +1.25% |
+| LIT/USDT:USDT | below_1h_threshold | +0.78% | +1.12% |
 
 ## 5. 次に見るべき不足
 
