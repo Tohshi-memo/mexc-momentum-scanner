@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T09:20:03.075007+00:00
+- generated_at: 2026-06-06T09:25:36.395671+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5798**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T09:19:57.422002+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=61197.6
+- 更新: 2026-06-06T09:25:31.533220+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=61128.0
 - Funnel: target 771 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +47.47% | $12,554,833.32 |
-| BLUAI/USDT:USDT | +46.78% | $1,735,971.89 |
-| VELVET/USDT:USDT | +31.75% | $2,548,492.57 |
-| CLO/USDT:USDT | +31.23% | $2,495,386.13 |
-| ZEST/USDT:USDT | +23.24% | $1,744,696.24 |
+| ALLO/USDT:USDT | +48.00% | $12,777,148.59 |
+| BLUAI/USDT:USDT | +45.73% | $1,789,177.45 |
+| VELVET/USDT:USDT | +32.54% | $2,555,617.91 |
+| CLO/USDT:USDT | +31.10% | $2,501,652.23 |
+| ZEST/USDT:USDT | +23.68% | $1,746,810.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.21% | +4.28% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.27% | +3.34% |
-| HEI/USDT:USDT | below_1h_threshold | +2.76% | +2.83% |
-| ENA/USDT:USDT | below_1h_threshold | +1.85% | +1.92% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.79% | +1.86% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.39% | +4.57% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.66% | +3.84% |
+| HEI/USDT:USDT | below_1h_threshold | +2.86% | +3.04% |
+| ENA/USDT:USDT | below_1h_threshold | +2.04% | +2.22% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.92% | +2.10% |
 
 ## 5. 次に見るべき不足
 
