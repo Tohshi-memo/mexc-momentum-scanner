@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T22:21:35.975797+00:00
+- generated_at: 2026-06-06T22:27:17.219513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5907**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T22:21:33.503811+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=60708.7
-- Funnel: target 771 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-06T22:27:14.541803+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=60410.6
+- Funnel: target 771 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +49.18% | $62,478,525.48 |
-| SKYAI/USDT:USDT | +36.20% | $24,745,948.92 |
-| FIDA/USDT:USDT | +33.81% | $2,517,402.87 |
-| BTW/USDT:USDT | +22.35% | $13,566,447.35 |
-| BSB/USDT:USDT | +11.52% | $4,381,813.05 |
+| LAB/USDT:USDT | +43.77% | $62,935,415.52 |
+| SKYAI/USDT:USDT | +37.56% | $24,985,802.26 |
+| FIDA/USDT:USDT | +35.98% | $2,575,330.36 |
+| BTW/USDT:USDT | +20.46% | $13,575,245.64 |
+| BSB/USDT:USDT | +10.21% | $4,430,222.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIDA/USDT:USDT | below_1h_threshold | +4.74% | +4.75% |
-| LAB/USDT:USDT | below_1h_threshold | +3.08% | +3.09% |
-| TONCOIN/USDT:USDT | below_1h_threshold | +1.83% | +1.85% |
-| BABY/USDT:USDT | below_1h_threshold | +1.76% | +1.78% |
-| 0G/USDT:USDT | below_1h_threshold | +1.62% | +1.63% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.08% | +1.59% |
+| 0G/USDT:USDT | below_1h_threshold | +0.98% | +1.49% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.94% | +1.45% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.76% | +1.27% |
+| MYX/USDT:USDT | below_1h_threshold | +0.72% | +1.23% |
 
 ## 5. 次に見るべき不足
 
