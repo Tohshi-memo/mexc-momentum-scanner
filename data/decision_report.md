@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T11:22:38.602893+00:00
+- generated_at: 2026-06-06T11:28:24.001676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5816**
 
@@ -52,32 +52,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T11:22:35.189105+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=60674.7
-- Funnel: target 771 → liquid 149 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1, 4h RSI 85.3 >= 65=1, 4h RSI 84.8 >= 65=1
+- 更新: 2026-06-06T11:28:18.312653+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=60717.1
+- Funnel: target 771 → liquid 150 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.8 >= 65=1, 4h RSI 84.9 >= 65=1, 4h RSI 85.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +118.50% | $36,603,938.66 |
-| BLUAI/USDT:USDT | +58.11% | $2,840,775.82 |
-| VELVET/USDT:USDT | +49.28% | $3,053,317.99 |
-| HEI/USDT:USDT | +24.33% | $2,837,822.45 |
-| CLO/USDT:USDT | +19.98% | $2,575,553.51 |
+| ALLO/USDT:USDT | +121.52% | $37,540,514.90 |
+| BLUAI/USDT:USDT | +59.49% | $2,867,317.68 |
+| VELVET/USDT:USDT | +46.84% | $3,097,201.35 |
+| CLO/USDT:USDT | +21.54% | $2,580,512.73 |
+| HEI/USDT:USDT | +21.36% | $2,869,668.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +4.63% | +4.45% |
-| CLO/USDT:USDT | below_1h_threshold | +2.89% | +2.71% |
-| HOME/USDT:USDT | below_1h_threshold | +2.84% | +2.65% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.66% | +2.48% |
-| VVV/USDT:USDT | below_1h_threshold | +1.99% | +1.80% |
+| CLO/USDT:USDT | below_1h_threshold | +4.23% | +3.98% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.95% | +3.70% |
+| LYN/USDT:USDT | below_1h_threshold | +2.08% | +1.83% |
+| VVV/USDT:USDT | below_1h_threshold | +1.74% | +1.49% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.48% |
 
 ## 5. 次に見るべき不足
 
