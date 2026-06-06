@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-06T01:33:44.879547+00:00
+- generated_at: 2026-06-06T01:39:04.132423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5771**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-06T01:33:42.468357+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=61185.3
+- 更新: 2026-06-06T01:39:01.720686+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=61072.1
 - Funnel: target 771 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +26.30% | $1,869,059.20 |
-| HOME/USDT:USDT | +25.25% | $5,538,973.12 |
-| ZEC/USDT:USDT | +20.19% | $1,179,037,798.72 |
-| VVV/USDT:USDT | +19.49% | $8,689,649.58 |
-| OPN/USDT:USDT | +18.33% | $24,316,825.26 |
+| VELVET/USDT:USDT | +25.87% | $1,888,243.04 |
+| HOME/USDT:USDT | +24.67% | $5,573,835.07 |
+| VVV/USDT:USDT | +19.64% | $8,708,152.78 |
+| ZEC/USDT:USDT | +18.61% | $1,181,440,796.74 |
+| ASTEROID/USDT:USDT | +18.08% | $1,005,496.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPN/USDT:USDT | below_1h_threshold | +4.29% | +4.38% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.07% | +3.16% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.65% | +2.74% |
-| HOME/USDT:USDT | below_1h_threshold | +2.08% | +2.17% |
-| CLO/USDT:USDT | below_1h_threshold | +1.91% | +2.00% |
+| CLO/USDT:USDT | below_1h_threshold | +4.06% | +4.33% |
+| OPN/USDT:USDT | below_1h_threshold | +3.47% | +3.74% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.67% | +2.94% |
+| MEME/USDT:USDT | below_1h_threshold | +2.08% | +2.35% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.99% | +2.26% |
 
 ## 5. 次に見るべき不足
 
