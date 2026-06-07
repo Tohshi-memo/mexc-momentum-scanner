@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T12:17:42.977372+00:00
+- generated_at: 2026-06-07T12:24:05.254123+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5957**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T12:17:40.138175+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.98% price=61985.1
+- 更新: 2026-06-07T12:24:02.131560+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.05% price=61941.1
 - Funnel: target 768 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.6 >= 65=1
+- Strict後reject: 4h RSI 74.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +61.52% | $7,750,952.58 |
-| SIREN/USDT:USDT | +49.50% | $12,571,460.25 |
-| LAB/USDT:USDT | +41.80% | $63,443,629.57 |
-| BSB/USDT:USDT | +38.27% | $7,307,601.23 |
-| BTW/USDT:USDT | +36.94% | $13,084,757.34 |
+| FIDA/USDT:USDT | +63.52% | $7,829,352.34 |
+| SIREN/USDT:USDT | +51.00% | $13,075,648.37 |
+| LAB/USDT:USDT | +40.51% | $63,601,310.80 |
+| EDEN/USDT:USDT | +37.14% | $4,989,839.29 |
+| BSB/USDT:USDT | +34.68% | $7,386,582.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.66% | +4.64% |
-| LAB/USDT:USDT | below_1h_threshold | +2.75% | +3.73% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.57% | +2.55% |
-| FIDA/USDT:USDT | below_1h_threshold | +1.46% | +2.45% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.38% | +2.36% |
+| BTW/USDT:USDT | below_1h_threshold | +2.85% | +3.90% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.72% | +3.77% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.61% | +3.67% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.34% | +3.39% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.79% | +2.84% |
 
 ## 5. 次に見るべき不足
 
