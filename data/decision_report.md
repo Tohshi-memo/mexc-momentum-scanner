@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T08:37:08.383363+00:00
+- generated_at: 2026-06-07T08:42:45.726406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5933**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T08:37:05.576496+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=62567.5
-- Funnel: target 771 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1
+- 更新: 2026-06-07T08:42:42.789164+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=62450.2
+- Funnel: target 771 → liquid 125 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.8 >= 65=1, 4h RSI 79.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +60.13% | $6,250,749.03 |
-| LAB/USDT:USDT | +39.09% | $64,055,069.90 |
-| EDEN/USDT:USDT | +34.32% | $2,979,007.57 |
-| BTW/USDT:USDT | +34.24% | $9,192,328.21 |
-| BSB/USDT:USDT | +28.31% | $6,138,801.37 |
+| FIDA/USDT:USDT | +60.02% | $6,294,892.25 |
+| LAB/USDT:USDT | +39.62% | $64,091,650.21 |
+| BTW/USDT:USDT | +34.33% | $9,219,510.35 |
+| EDEN/USDT:USDT | +32.51% | $3,012,557.31 |
+| BSB/USDT:USDT | +31.04% | $6,177,854.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIDA/USDT:USDT | below_1h_threshold | +4.88% | +4.56% |
-| B/USDT:USDT | below_1h_threshold | +3.63% | +3.30% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.20% | +1.87% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.16% | +1.84% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.85% | +1.53% |
+| B/USDT:USDT | below_1h_threshold | +4.42% | +4.28% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.29% | +3.15% |
+| BSB/USDT:USDT | below_1h_threshold | +2.74% | +2.60% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.49% | +2.35% |
+| BABY/USDT:USDT | below_1h_threshold | +1.91% | +1.78% |
 
 ## 5. 次に見るべき不足
 
