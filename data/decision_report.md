@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T10:45:55.839751+00:00
+- generated_at: 2026-06-07T10:50:25.465436+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5948**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T10:45:52.622205+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=62326.0
-- Funnel: target 768 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1
+- 更新: 2026-06-07T10:50:20.679004+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=62382.2
+- Funnel: target 768 → liquid 123 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 88.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +58.46% | $7,278,559.89 |
-| EDEN/USDT:USDT | +43.93% | $4,296,897.92 |
-| LAB/USDT:USDT | +39.91% | $63,186,080.22 |
-| BSB/USDT:USDT | +29.77% | $6,917,929.94 |
-| BTW/USDT:USDT | +27.97% | $12,750,479.54 |
+| FIDA/USDT:USDT | +57.13% | $7,307,259.73 |
+| EDEN/USDT:USDT | +39.68% | $4,397,303.03 |
+| LAB/USDT:USDT | +39.13% | $63,232,488.23 |
+| BSB/USDT:USDT | +29.17% | $6,943,496.61 |
+| BTW/USDT:USDT | +28.85% | $12,871,694.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.89% | +5.18% |
-| BTW/USDT:USDT | below_1h_threshold | +3.28% | +3.57% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.16% | +3.45% |
-| BANK/USDT:USDT | below_1h_threshold | +2.88% | +3.18% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.74% | +3.03% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.77% | +3.97% |
+| BTW/USDT:USDT | below_1h_threshold | +3.39% | +3.59% |
+| UB/USDT:USDT | below_1h_threshold | +3.04% | +3.24% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.70% | +2.91% |
+| BILL/USDT:USDT | below_1h_threshold | +2.45% | +2.65% |
 
 ## 5. 次に見るべき不足
 
