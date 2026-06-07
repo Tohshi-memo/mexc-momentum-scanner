@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T17:38:40.554404+00:00
+- generated_at: 2026-06-07T17:44:27.897932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5990**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T17:38:34.841096+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=62272.7
-- Funnel: target 768 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.2 >= 65=1
+- 更新: 2026-06-07T17:44:25.171766+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=62232.7
+- Funnel: target 768 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +27.82% | $2,284,466.94 |
-| PIPPIN/USDT:USDT | +9.44% | $2,458,412.47 |
-| LAB/USDT:USDT | +5.04% | $63,407,309.32 |
-| VELVET/USDT:USDT | +4.93% | $2,802,795.01 |
-| ESPORTS/USDT:USDT | +4.36% | $4,083,193.87 |
+| BANK/USDT:USDT | +28.38% | $2,340,319.81 |
+| VELVET/USDT:USDT | +8.37% | $2,857,688.98 |
+| PIPPIN/USDT:USDT | +7.37% | $2,538,012.00 |
+| BEAT/USDT:USDT | +5.70% | $52,304,039.39 |
+| LAB/USDT:USDT | +4.52% | $63,604,595.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.74% | +3.39% |
-| BTW/USDT:USDT | below_1h_threshold | +2.67% | +2.32% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.37% | +2.02% |
-| BABY/USDT:USDT | below_1h_threshold | +2.35% | +2.00% |
-| B/USDT:USDT | below_1h_threshold | +1.78% | +1.43% |
+| BANK/USDT:USDT | below_1h_threshold | +4.22% | +3.93% |
+| BTW/USDT:USDT | below_1h_threshold | +4.07% | +3.79% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.73% | +3.44% |
+| BABY/USDT:USDT | below_1h_threshold | +2.73% | +2.44% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.89% | +1.60% |
 
 ## 5. 次に見るべき不足
 
