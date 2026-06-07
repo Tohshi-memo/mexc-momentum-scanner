@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T08:54:05.322625+00:00
+- generated_at: 2026-06-07T08:58:35.453527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5935**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T08:54:02.227933+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=62720.5
-- Funnel: target 771 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.0 >= 65=1
+- 更新: 2026-06-07T08:58:32.849231+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.72% price=62813.0
+- Funnel: target 771 → liquid 126 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.9 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +55.58% | $6,370,815.72 |
-| BTW/USDT:USDT | +52.43% | $9,671,313.90 |
-| LAB/USDT:USDT | +38.87% | $64,265,043.10 |
-| BSB/USDT:USDT | +32.96% | $6,269,925.80 |
-| EDEN/USDT:USDT | +30.02% | $3,071,939.28 |
+| FIDA/USDT:USDT | +55.63% | $6,398,421.51 |
+| BTW/USDT:USDT | +53.75% | $10,083,384.46 |
+| LAB/USDT:USDT | +38.62% | $64,317,606.43 |
+| BSB/USDT:USDT | +31.09% | $6,327,109.61 |
+| EDEN/USDT:USDT | +29.16% | $3,092,432.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_relative_strength | +5.14% | +4.57% |
-| B/USDT:USDT | below_1h_threshold | +4.80% | +4.23% |
-| BSB/USDT:USDT | below_1h_threshold | +4.36% | +3.79% |
-| SPX/USDT:USDT | below_1h_threshold | +3.43% | +2.86% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.70% | +2.13% |
+| SIREN/USDT:USDT | below_relative_strength | +5.12% | +4.40% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.68% | +2.97% |
+| SPX/USDT:USDT | below_1h_threshold | +3.68% | +2.97% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.16% | +2.44% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.09% | +2.37% |
 
 ## 5. 次に見るべき不足
 
