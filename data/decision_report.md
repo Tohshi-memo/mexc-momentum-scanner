@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T12:47:16.420920+00:00
+- generated_at: 2026-06-07T12:53:02.160062+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5959**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T12:47:13.504091+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.33% price=61765.1
-- Funnel: target 768 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-07T12:52:59.410177+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.31% price=61781.4
+- Funnel: target 768 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +60.63% | $8,201,513.16 |
-| SIREN/USDT:USDT | +54.88% | $15,107,777.66 |
-| LAB/USDT:USDT | +41.69% | $63,868,579.71 |
-| BSB/USDT:USDT | +36.29% | $7,586,154.11 |
-| BLESS/USDT:USDT | +31.42% | $5,262,814.23 |
+| FIDA/USDT:USDT | +59.68% | $8,238,388.27 |
+| SIREN/USDT:USDT | +58.56% | $15,668,981.38 |
+| LAB/USDT:USDT | +41.26% | $63,942,976.30 |
+| BSB/USDT:USDT | +35.74% | $7,640,761.78 |
+| BLESS/USDT:USDT | +32.54% | $5,287,631.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +4.85% | +6.18% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.82% | +5.16% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.49% | +4.82% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.18% | +4.52% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.71% | +4.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.39% | +5.70% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.17% | +5.48% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.90% | +5.21% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.64% | +4.95% |
+| LAB/USDT:USDT | below_1h_threshold | +2.32% | +3.62% |
 
 ## 5. 次に見るべき不足
 
