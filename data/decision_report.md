@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-07T19:28:01.592167+00:00
+- generated_at: 2026-06-07T19:33:51.295112+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5994**
+- closed shadow trades: **5995**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5994, expectancy=-0.04%
+- 全期間 MARKET基準: n=5995, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=-0.36%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 2/3 | 66.7% | +5.69% | **+3.79%** |
+| LIMIT_BB3S_LONG | 2/2 | 100.0% | +5.69% | **+5.69%** |
 | LIMIT_FIB1272_LONG | 8/20 | 40.0% | +3.05% | **+1.22%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +8.00% | **+1.20%** |
-| LIMIT_2PCT_LONG | 13/20 | 65.0% | +0.89% | **+0.58%** |
-| LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.56% | **+0.42%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.27% | **+0.89%** |
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.45% | **+0.80%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$148.88** / 初期 $100.00 (+48.88%)
-- 確定: 1111件 (Win 268 / Loss 335 / Flat 508) / skip 1444件
-- 成長率目線: 平均log +0.000358 / 幾何平均 +0.036% per trade / maxDD +7.25%
+- 残高: **$150.02** / 初期 $100.00 (+50.02%)
+- 確定: 1112件 (Win 269 / Loss 335 / Flat 508) / skip 1444件
+- 成長率目線: 平均log +0.000365 / 幾何平均 +0.036% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BLESS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $148.88
+- 最新: BEAT/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.77% 残高後 $150.02
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T19:27:58.391908+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.08% price=61327.9
-- Funnel: target 768 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.6 >= 65=1, 4h RSI 78.3 >= 65=1
+- 更新: 2026-06-07T19:33:48.082030+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.07% price=61336.5
+- Funnel: target 768 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +22.88% | $3,147,564.60 |
-| EPIC/USDT:USDT | +12.22% | $1,132,381.58 |
-| BTW/USDT:USDT | +8.86% | $14,422,134.23 |
-| BEAT/USDT:USDT | +8.64% | $53,565,925.97 |
-| VELVET/USDT:USDT | +7.67% | $2,864,542.34 |
+| BANK/USDT:USDT | +24.09% | $3,172,311.42 |
+| EPIC/USDT:USDT | +12.87% | $1,141,794.96 |
+| BEAT/USDT:USDT | +12.04% | $54,549,286.85 |
+| BTW/USDT:USDT | +8.07% | $14,470,449.07 |
+| VELVET/USDT:USDT | +8.01% | $2,877,837.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.85% | +2.93% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.74% | +2.82% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.54% | +2.62% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.49% | +2.57% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.68% | +1.76% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.82% | +4.89% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.06% | +3.13% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.04% | +3.11% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.68% | +2.74% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.57% | +2.63% |
 
 ## 5. 次に見るべき不足
 
