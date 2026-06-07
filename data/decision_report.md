@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T21:29:37.362841+00:00
+- generated_at: 2026-06-07T21:35:14.441948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6000**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T21:29:34.515272+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=61741.9
-- Funnel: target 768 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-07T21:35:11.905877+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=61698.3
+- Funnel: target 768 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +21.88% | $3,702,436.12 |
-| BTW/USDT:USDT | +21.03% | $13,926,702.21 |
-| BEAT/USDT:USDT | +19.30% | $66,495,030.81 |
-| EPIC/USDT:USDT | +16.69% | $1,328,466.51 |
-| BLESS/USDT:USDT | +12.97% | $7,954,452.67 |
+| BANK/USDT:USDT | +21.85% | $3,715,038.64 |
+| BTW/USDT:USDT | +21.02% | $13,985,180.71 |
+| BEAT/USDT:USDT | +17.65% | $67,543,233.89 |
+| EPIC/USDT:USDT | +16.46% | $1,333,823.24 |
+| BLESS/USDT:USDT | +11.73% | $7,979,875.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +3.05% | +3.21% |
-| BTW/USDT:USDT | below_1h_threshold | +1.80% | +1.96% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.21% | +1.38% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +1.22% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.74% | +4.97% |
+| SPX/USDT:USDT | below_1h_threshold | +2.65% | +2.89% |
+| BTW/USDT:USDT | below_1h_threshold | +1.79% | +2.03% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.15% | +1.39% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.00% | +1.23% |
 
 ## 5. 次に見るべき不足
 
