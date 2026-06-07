@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-07T06:10:14.328268+00:00
+- generated_at: 2026-06-07T06:15:45.885977+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5927**
+- closed shadow trades: **5928**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5927, expectancy=-0.02%
+- 全期間 MARKET基準: n=5928, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.26%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_7PCT | 4/20 | 20.0% | +2.80% | **+0.56%** |
+| LIMIT_7PCT | 5/20 | 25.0% | +2.80% | **+0.70%** |
+| LIMIT_BB3S | 7/15 | 46.7% | +1.21% | **+0.57%** |
 | LIMIT_8PCT | 3/20 | 15.0% | +3.70% | **+0.56%** |
-| LIMIT_BB3S | 6/15 | 40.0% | +0.93% | **+0.37%** |
-| LIMIT_5PCT | 8/20 | 40.0% | +0.33% | **+0.13%** |
-| LIMIT_6PCT | 4/20 | 20.0% | +0.42% | **+0.08%** |
+| LIMIT_5PCT | 9/20 | 45.0% | +0.40% | **+0.18%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
 
 ### シャドウ上位 LONG
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$137.39** / 初期 $100.00 (+37.39%)
-- 確定: 1046件 (Win 251 / Loss 321 / Flat 474) / skip 1442件
-- 成長率目線: 平均log +0.000304 / 幾何平均 +0.030% per trade / maxDD +7.25%
+- 残高: **$138.77** / 初期 $100.00 (+38.77%)
+- 確定: 1047件 (Win 252 / Loss 321 / Flat 474) / skip 1442件
+- 成長率目線: 平均log +0.000313 / 幾何平均 +0.031% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: FIDA/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $137.39
+- 最新: BSB/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +1.00% 残高後 $138.77
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T06:10:11.829674+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=61656.8
+- 更新: 2026-06-07T06:15:43.036857+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=61669.6
 - Funnel: target 771 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +58.63% | $5,065,890.76 |
-| LAB/USDT:USDT | +39.28% | $63,971,392.31 |
-| BSB/USDT:USDT | +23.00% | $4,586,547.21 |
-| EDEN/USDT:USDT | +21.54% | $1,614,427.08 |
-| BLESS/USDT:USDT | +20.22% | $4,518,517.84 |
+| FIDA/USDT:USDT | +57.46% | $5,142,849.12 |
+| LAB/USDT:USDT | +38.80% | $64,030,825.89 |
+| BSB/USDT:USDT | +27.35% | $4,679,458.21 |
+| EDEN/USDT:USDT | +22.39% | $1,623,405.12 |
+| BLESS/USDT:USDT | +20.12% | $4,529,129.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +1.50% | +1.58% |
-| BSB/USDT:USDT | below_1h_threshold | +1.08% | +1.17% |
-| DASH/USDT:USDT | below_1h_threshold | +0.76% | +0.85% |
-| INJ/USDT:USDT | below_1h_threshold | +0.69% | +0.78% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.63% | +0.72% |
+| BSB/USDT:USDT | below_1h_threshold | +4.49% | +4.56% |
+| HOME/USDT:USDT | below_1h_threshold | +3.39% | +3.46% |
+| INJ/USDT:USDT | below_1h_threshold | +1.48% | +1.55% |
+| DASH/USDT:USDT | below_1h_threshold | +1.23% | +1.30% |
+| ICP/USDT:USDT | below_1h_threshold | +1.16% | +1.23% |
 
 ## 5. 次に見るべき不足
 
