@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T18:59:41.129691+00:00
+- generated_at: 2026-06-07T19:05:13.264040+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5992**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T18:59:38.074061+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=62020.1
-- Funnel: target 768 → liquid 125 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1, 4h RSI 82.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-07T19:05:10.584681+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=61837.2
+- Funnel: target 768 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +23.74% | $2,907,764.81 |
-| EPIC/USDT:USDT | +14.04% | $1,084,053.72 |
-| BTW/USDT:USDT | +10.64% | $14,442,917.18 |
-| BABY/USDT:USDT | +8.22% | $3,318,172.22 |
-| BEAT/USDT:USDT | +7.89% | $52,709,286.19 |
+| BANK/USDT:USDT | +24.04% | $2,945,563.06 |
+| EPIC/USDT:USDT | +12.57% | $1,088,360.79 |
+| BTW/USDT:USDT | +8.17% | $14,266,383.92 |
+| BABY/USDT:USDT | +7.39% | $3,233,318.37 |
+| BEAT/USDT:USDT | +7.11% | $51,044,400.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BABY/USDT:USDT | below_1h_threshold | +3.82% | +4.00% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.81% | +2.99% |
-| B/USDT:USDT | below_1h_threshold | +2.37% | +2.54% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.45% | +1.63% |
-| CTR/USDT:USDT | below_1h_threshold | +0.67% | +0.85% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.03% | +1.29% |
+| LAB/USDT:USDT | below_1h_threshold | +0.80% | +1.06% |
+| MYX/USDT:USDT | below_1h_threshold | +0.54% | +0.80% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.52% | +0.78% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.52% | +0.78% |
 
 ## 5. 次に見るべき不足
 
