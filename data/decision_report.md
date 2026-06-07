@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T02:49:26.947391+00:00
+- generated_at: 2026-06-07T02:55:20.386115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5923**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T02:49:23.967136+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=61429.9
-- Funnel: target 771 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.2 >= 65=1
+- 更新: 2026-06-07T02:55:14.920669+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=61490.2
+- Funnel: target 771 → liquid 129 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.1 >= 65=1, 4h RSI 68.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +57.58% | $64,725,763.63 |
-| SKYAI/USDT:USDT | +35.75% | $34,028,190.32 |
-| FIDA/USDT:USDT | +33.03% | $3,644,284.91 |
-| BTW/USDT:USDT | +25.66% | $10,757,377.89 |
-| BLESS/USDT:USDT | +23.97% | $4,206,479.49 |
+| LAB/USDT:USDT | +52.64% | $64,927,635.33 |
+| SKYAI/USDT:USDT | +33.40% | $34,271,020.80 |
+| FIDA/USDT:USDT | +32.59% | $3,650,770.77 |
+| BTW/USDT:USDT | +24.36% | $10,789,750.20 |
+| EDEN/USDT:USDT | +21.86% | $1,266,337.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.41% | +4.45% |
-| LAB/USDT:USDT | below_1h_threshold | +3.95% | +3.99% |
-| BSB/USDT:USDT | below_1h_threshold | +3.27% | +3.31% |
-| H/USDT:USDT | below_1h_threshold | +2.92% | +2.95% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.82% | +2.85% |
+| BSB/USDT:USDT | below_1h_threshold | +3.40% | +3.34% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.52% | +2.46% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.27% | +2.21% |
+| BABY/USDT:USDT | below_1h_threshold | +1.53% | +1.47% |
+| TAO/USDT:USDT | below_1h_threshold | +1.50% | +1.44% |
 
 ## 5. 次に見るべき不足
 
