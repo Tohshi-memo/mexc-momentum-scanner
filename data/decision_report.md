@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T18:01:16.627292+00:00
+- generated_at: 2026-06-07T18:07:05.981647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5991**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T18:01:13.943651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=62160.7
+- 更新: 2026-06-07T18:07:03.289058+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62156.2
 - Funnel: target 768 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +25.98% | $2,495,643.57 |
-| MYX/USDT:USDT | +7.81% | $1,761,470.48 |
-| VELVET/USDT:USDT | +7.74% | $2,812,814.40 |
-| BEAT/USDT:USDT | +7.71% | $49,663,880.03 |
-| PIPPIN/USDT:USDT | +6.54% | $2,713,653.57 |
+| BANK/USDT:USDT | +25.45% | $2,534,774.75 |
+| BEAT/USDT:USDT | +8.73% | $49,897,972.69 |
+| MYX/USDT:USDT | +8.42% | $1,806,971.45 |
+| VELVET/USDT:USDT | +7.57% | $2,832,888.18 |
+| PIPPIN/USDT:USDT | +6.27% | $2,740,237.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +1.28% | +1.23% |
-| BANK/USDT:USDT | below_1h_threshold | +0.68% | +0.63% |
-| LIT/USDT:USDT | below_1h_threshold | +0.56% | +0.51% |
-| INJ/USDT:USDT | below_1h_threshold | +0.54% | +0.49% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.39% | +0.34% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.98% | +2.94% |
+| BABY/USDT:USDT | below_1h_threshold | +1.11% | +1.07% |
+| MYX/USDT:USDT | below_1h_threshold | +0.69% | +0.65% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.57% | +0.53% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.49% | +0.45% |
 
 ## 5. 次に見るべき不足
 
