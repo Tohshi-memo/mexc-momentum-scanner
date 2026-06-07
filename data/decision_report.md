@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T10:50:25.465436+00:00
+- generated_at: 2026-06-07T10:56:14.066038+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5948**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T10:50:20.679004+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=62382.2
-- Funnel: target 768 → liquid 123 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 88.2 >= 65=1
+- 更新: 2026-06-07T10:56:08.345877+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=62364.7
+- Funnel: target 768 → liquid 123 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 88.3 >= 65=1, 4h RSI 74.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +57.13% | $7,307,259.73 |
-| EDEN/USDT:USDT | +39.68% | $4,397,303.03 |
-| LAB/USDT:USDT | +39.13% | $63,232,488.23 |
-| BSB/USDT:USDT | +29.17% | $6,943,496.61 |
-| BTW/USDT:USDT | +28.85% | $12,871,694.36 |
+| FIDA/USDT:USDT | +56.13% | $7,337,891.53 |
+| LAB/USDT:USDT | +39.89% | $63,319,741.68 |
+| EDEN/USDT:USDT | +38.62% | $4,445,140.96 |
+| BSB/USDT:USDT | +29.42% | $6,951,835.36 |
+| BTW/USDT:USDT | +28.56% | $12,967,639.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +3.77% | +3.97% |
-| BTW/USDT:USDT | below_1h_threshold | +3.39% | +3.59% |
-| UB/USDT:USDT | below_1h_threshold | +3.04% | +3.24% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.70% | +2.91% |
-| BILL/USDT:USDT | below_1h_threshold | +2.45% | +2.65% |
+| BILL/USDT:USDT | below_1h_threshold | +4.35% | +4.58% |
+| UB/USDT:USDT | below_1h_threshold | +3.61% | +3.84% |
+| BTW/USDT:USDT | below_1h_threshold | +3.42% | +3.65% |
+| JTO/USDT:USDT | below_1h_threshold | +2.13% | +2.36% |
+| BSB/USDT:USDT | below_1h_threshold | +2.11% | +2.34% |
 
 ## 5. 次に見るべき不足
 
