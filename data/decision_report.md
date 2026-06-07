@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T22:27:16.759057+00:00
+- generated_at: 2026-06-07T22:32:56.409950+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6004**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T22:27:13.643648+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.07% price=63033.4
-- Funnel: target 768 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1
+- 更新: 2026-06-07T22:32:53.236888+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.70% price=62803.3
+- Funnel: target 768 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.8 >= 65=1, 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +26.69% | $3,949,701.46 |
-| BEAT/USDT:USDT | +25.78% | $74,844,711.04 |
-| BTW/USDT:USDT | +22.71% | $13,920,879.29 |
-| PIPPIN/USDT:USDT | +18.05% | $3,851,119.72 |
-| BLESS/USDT:USDT | +14.86% | $8,267,883.74 |
+| BTW/USDT:USDT | +28.34% | $14,092,913.51 |
+| BANK/USDT:USDT | +26.69% | $3,998,625.77 |
+| BEAT/USDT:USDT | +25.65% | $75,237,178.78 |
+| PIPPIN/USDT:USDT | +18.05% | $3,917,143.67 |
+| BLESS/USDT:USDT | +16.19% | $8,328,914.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +6.87% | +4.80% |
-| PIPPIN/USDT:USDT | below_relative_strength | +5.30% | +3.23% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.82% | +2.75% |
-| MYX/USDT:USDT | below_1h_threshold | +4.48% | +2.41% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +4.30% | +2.23% |
+| DYDX/USDT:USDT | below_relative_strength | +6.00% | +4.31% |
+| PIPPIN/USDT:USDT | below_relative_strength | +5.61% | +3.91% |
+| BTW/USDT:USDT | below_relative_strength | +5.10% | +3.41% |
+| MYX/USDT:USDT | below_1h_threshold | +4.35% | +2.66% |
+| RIVER/USDT:USDT | below_1h_threshold | +4.05% | +2.36% |
 
 ## 5. 次に見るべき不足
 
