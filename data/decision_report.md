@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T22:56:44.955084+00:00
+- generated_at: 2026-06-07T23:02:22.482394+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6005**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T22:56:41.519543+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.73% price=62823.5
-- Funnel: target 768 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1, 4h RSI 72.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-07T23:02:19.994222+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=62990.4
+- Funnel: target 769 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +32.36% | $14,997,616.90 |
-| BANK/USDT:USDT | +26.40% | $4,047,657.08 |
-| BEAT/USDT:USDT | +24.21% | $77,332,733.88 |
-| PIPPIN/USDT:USDT | +20.19% | $4,236,813.66 |
-| BLESS/USDT:USDT | +14.57% | $8,482,504.30 |
+| BTW/USDT:USDT | +33.50% | $14,825,556.12 |
+| BANK/USDT:USDT | +28.52% | $4,040,699.68 |
+| BEAT/USDT:USDT | +23.28% | $76,989,012.47 |
+| PIPPIN/USDT:USDT | +21.01% | $4,298,942.75 |
+| BLESS/USDT:USDT | +15.95% | $8,415,838.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_relative_strength | +6.66% | +4.93% |
-| BLESS/USDT:USDT | below_relative_strength | +6.12% | +4.39% |
-| DYDX/USDT:USDT | below_relative_strength | +5.08% | +3.34% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.87% | +3.14% |
-| MYX/USDT:USDT | below_1h_threshold | +4.23% | +2.50% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.67% | +0.42% |
+| GUA/USDT:USDT | below_1h_threshold | +0.62% | +0.38% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.54% | +0.29% |
+| SAHARA/USDT:USDT | below_1h_threshold | +0.45% | +0.21% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.45% | +0.20% |
 
 ## 5. 次に見るべき不足
 
