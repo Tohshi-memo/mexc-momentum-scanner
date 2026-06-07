@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-07T17:44:27.897932+00:00
+- generated_at: 2026-06-07T17:50:00.180686+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5990**
+- closed shadow trades: **5991**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5990, expectancy=-0.04%
+- 全期間 MARKET基準: n=5991, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=-1.56%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_10PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
-| LIMIT_5PCT | 8/20 | 40.0% | -0.29% | **-0.11%** |
+| LIMIT_5PCT | 9/20 | 45.0% | -0.15% | **-0.07%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$151.13** / 初期 $100.00 (+51.13%)
-- 確定: 1107件 (Win 268 / Loss 332 / Flat 507) / skip 1444件
+- 確定: 1108件 (Win 268 / Loss 332 / Flat 508) / skip 1444件
 - 成長率目線: 平均log +0.000373 / 幾何平均 +0.037% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PIPPIN/USDT:USDT `LIMIT_3PCT_LONG` EXPIRED account +0.00% 残高後 $151.13
+- 最新: ESPORTS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $151.13
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T17:44:25.171766+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=62232.7
+- 更新: 2026-06-07T17:49:57.030498+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=62133.2
 - Funnel: target 768 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 79.4 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +28.38% | $2,340,319.81 |
-| VELVET/USDT:USDT | +8.37% | $2,857,688.98 |
-| PIPPIN/USDT:USDT | +7.37% | $2,538,012.00 |
-| BEAT/USDT:USDT | +5.70% | $52,304,039.39 |
-| LAB/USDT:USDT | +4.52% | $63,604,595.07 |
+| BANK/USDT:USDT | +26.28% | $2,424,882.98 |
+| PIPPIN/USDT:USDT | +8.68% | $2,636,506.84 |
+| BEAT/USDT:USDT | +7.66% | $52,640,966.57 |
+| VELVET/USDT:USDT | +7.23% | $2,885,679.55 |
+| MYX/USDT:USDT | +6.36% | $2,131,800.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.22% | +3.93% |
-| BTW/USDT:USDT | below_1h_threshold | +4.07% | +3.79% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.73% | +3.44% |
-| BABY/USDT:USDT | below_1h_threshold | +2.73% | +2.44% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.89% | +1.60% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +4.92% | +4.80% |
+| BTW/USDT:USDT | below_1h_threshold | +4.76% | +4.63% |
+| MYX/USDT:USDT | below_1h_threshold | +4.35% | +4.22% |
+| BABY/USDT:USDT | below_1h_threshold | +2.67% | +2.54% |
+| BANK/USDT:USDT | below_1h_threshold | +2.56% | +2.44% |
 
 ## 5. 次に見るべき不足
 
