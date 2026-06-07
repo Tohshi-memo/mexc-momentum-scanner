@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T11:24:49.097545+00:00
+- generated_at: 2026-06-07T11:31:30.063818+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5951**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T11:24:46.003729+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=62498.2
+- 更新: 2026-06-07T11:31:27.230771+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=62480.7
 - Funnel: target 768 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.9 >= 65=1
+- Strict後reject: 4h RSI 82.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +55.24% | $7,488,910.46 |
-| SIREN/USDT:USDT | +47.01% | $8,634,749.16 |
-| LAB/USDT:USDT | +43.10% | $62,712,522.88 |
-| EDEN/USDT:USDT | +37.34% | $4,639,304.07 |
-| BSB/USDT:USDT | +31.04% | $6,808,214.10 |
+| FIDA/USDT:USDT | +55.46% | $7,508,728.24 |
+| SIREN/USDT:USDT | +46.39% | $9,409,615.84 |
+| LAB/USDT:USDT | +43.17% | $62,951,225.33 |
+| EDEN/USDT:USDT | +39.05% | $4,673,202.17 |
+| BSB/USDT:USDT | +32.55% | $6,832,036.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.52% | +3.27% |
-| BTW/USDT:USDT | below_1h_threshold | +3.43% | +3.19% |
-| ZEST/USDT:USDT | below_1h_threshold | +3.30% | +3.05% |
-| LAB/USDT:USDT | below_1h_threshold | +2.53% | +2.28% |
-| H/USDT:USDT | below_1h_threshold | +1.94% | +1.69% |
+| BANK/USDT:USDT | below_1h_threshold | +3.56% | +3.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.29% | +3.07% |
+| ZEST/USDT:USDT | below_1h_threshold | +3.12% | +2.90% |
+| H/USDT:USDT | below_1h_threshold | +2.95% | +2.73% |
+| LAB/USDT:USDT | below_1h_threshold | +2.58% | +2.36% |
 
 ## 5. 次に見るべき不足
 
