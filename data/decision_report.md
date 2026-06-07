@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T22:38:38.009868+00:00
+- generated_at: 2026-06-07T22:45:05.896703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6004**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T22:38:34.080942+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.51% price=63303.8
-- Funnel: target 768 → liquid 131 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=44, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.9 >= 65=1, 4h RSI 86.0 >= 65=1, 4h RSI 81.4 >= 65=1
+- 更新: 2026-06-07T22:45:03.104990+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +2.22% price=63123.9
+- Funnel: target 768 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=5, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +32.03% | $14,473,988.92 |
-| BANK/USDT:USDT | +28.41% | $4,015,178.71 |
-| BEAT/USDT:USDT | +26.88% | $75,729,831.73 |
-| PIPPIN/USDT:USDT | +18.60% | $4,004,983.65 |
-| BLESS/USDT:USDT | +17.16% | $8,363,670.73 |
+| BTW/USDT:USDT | +30.23% | $14,754,768.23 |
+| BANK/USDT:USDT | +26.49% | $4,026,673.30 |
+| BEAT/USDT:USDT | +22.56% | $76,444,679.73 |
+| PIPPIN/USDT:USDT | +19.22% | $4,074,808.17 |
+| BLESS/USDT:USDT | +15.97% | $8,405,427.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_relative_strength | +6.79% | +4.28% |
-| PIPPIN/USDT:USDT | below_relative_strength | +6.23% | +3.72% |
-| ZEC/USDT:USDT | below_relative_strength | +5.68% | +3.18% |
-| MYX/USDT:USDT | below_1h_threshold | +4.80% | +2.30% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.69% | +2.18% |
+| PIPPIN/USDT:USDT | below_relative_strength | +6.91% | +4.69% |
+| BTW/USDT:USDT | below_relative_strength | +6.81% | +4.59% |
+| DYDX/USDT:USDT | below_relative_strength | +6.22% | +4.00% |
+| BEAT/USDT:USDT | below_relative_strength | +5.28% | +3.07% |
+| ZEC/USDT:USDT | below_relative_strength | +5.27% | +3.05% |
 
 ## 5. 次に見るべき不足
 
