@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-07T01:55:28.884701+00:00
+- generated_at: 2026-06-07T02:01:20.409636+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5918**
+- closed shadow trades: **5919**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.94% / filled 20/20。**
-- 全期間 MARKET基準: n=5918, expectancy=-0.02%
+- 全期間 MARKET基準: n=5919, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.94%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +0.94% | **+0.94%** |
-| LIMIT_1PCT | 19/20 | 95.0% | +0.84% | **+0.80%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +0.90% | **+0.72%** |
-| LIMIT_7PCT | 2/20 | 10.0% | +5.40% | **+0.54%** |
-| ASK | 20/20 | 100.0% | +0.44% | **+0.44%** |
+| ASK | 20/20 | 100.0% | +0.76% | **+0.76%** |
+| LIMIT_1PCT | 19/20 | 95.0% | +0.79% | **+0.75%** |
+| LIMIT_7PCT | 3/20 | 15.0% | +4.54% | **+0.68%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +0.77% | **+0.62%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$138.08** / 初期 $100.00 (+38.08%)
-- 確定: 1042件 (Win 251 / Loss 320 / Flat 471) / skip 1437件
+- 確定: 1042件 (Win 251 / Loss 320 / Flat 471) / skip 1438件
 - 成長率目線: 平均log +0.000310 / 幾何平均 +0.031% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BLESS/USDT:USDT `LIMIT_BB3S_LONG` SL_HIT account -0.50% 残高後 $138.08
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T01:55:18.457725+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.03% price=61376.2
-- Funnel: target 771 → liquid 133 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-07T02:01:17.538095+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=61417.2
+- Funnel: target 771 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +49.34% | $64,725,464.41 |
-| SKYAI/USDT:USDT | +32.84% | $32,358,744.28 |
-| FIDA/USDT:USDT | +29.03% | $3,501,770.22 |
-| BTW/USDT:USDT | +25.00% | $11,577,109.45 |
-| BLESS/USDT:USDT | +22.91% | $3,776,115.71 |
+| LAB/USDT:USDT | +53.38% | $62,600,553.10 |
+| SKYAI/USDT:USDT | +37.08% | $32,426,005.82 |
+| FIDA/USDT:USDT | +30.37% | $3,549,058.48 |
+| BTW/USDT:USDT | +24.99% | $10,639,752.33 |
+| BIANRENSHENG/USDT:USDT | +17.00% | $1,009,984.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +5.00% | +3.97% |
-| XPL/USDT:USDT | below_1h_threshold | +4.90% | +3.87% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +4.59% | +3.55% |
-| SUI/USDT:USDT | below_1h_threshold | +4.19% | +3.15% |
-| PENGU/USDT:USDT | below_1h_threshold | +4.13% | +3.09% |
+| LAB/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.26% | +1.32% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.83% | +0.88% |
+| FIDA/USDT:USDT | below_1h_threshold | +0.69% | +0.74% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.25% | +0.31% |
 
 ## 5. 次に見るべき不足
 
