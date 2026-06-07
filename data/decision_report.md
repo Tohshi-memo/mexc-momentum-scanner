@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-06-07T13:11:42.458748+00:00
+- generated_at: 2026-06-07T13:17:13.435189+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **5959**
+- closed shadow trades: **5960**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=5959, expectancy=-0.03%
-- 直近20件 MARKET基準: n=20, expectancy=-1.06%
+- 全期間 MARKET基準: n=5960, expectancy=-0.03%
+- 直近20件 MARKET基準: n=20, expectancy=-1.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.06% | **-1.06%** |
+| MARKET | 20/20 | 100.0% | -1.16% | **-1.16%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -25,15 +25,15 @@
 | LIMIT_5PCT | 6/20 | 30.0% | +0.95% | **+0.29%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
-| LIMIT_FIB1272 | 5/20 | 25.0% | +0.53% | **+0.13%** |
+| LIMIT_FIB1272 | 4/20 | 20.0% | +0.38% | **+0.08%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | +3.34% | **+1.84%** |
+| LIMIT_3PCT_LONG | 12/20 | 60.0% | +2.84% | **+1.71%** |
 | LIMIT_FIB1272_LONG | 9/20 | 45.0% | +3.58% | **+1.61%** |
-| LIMIT_4PCT_LONG | 10/20 | 50.0% | +2.87% | **+1.44%** |
-| LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.45% | **+1.35%** |
 | LIMIT_5PCT_LONG | 9/20 | 45.0% | +2.95% | **+1.33%** |
 | LIMIT_6PCT_LONG | 8/20 | 40.0% | +2.94% | **+1.17%** |
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$147.65** / 初期 $100.00 (+47.65%)
-- 確定: 1076件 (Win 263 / Loss 327 / Flat 486) / skip 1444件
+- 確定: 1077件 (Win 263 / Loss 327 / Flat 487) / skip 1444件
 - 成長率目線: 平均log +0.000362 / 幾何平均 +0.036% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BTW/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.38% 残高後 $147.65
+- 最新: SIREN/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $147.65
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T13:11:39.944522+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=61712.4
+- 更新: 2026-06-07T13:17:10.571878+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=61678.3
 - Funnel: target 768 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIDA/USDT:USDT | +59.13% | $8,388,760.42 |
-| SIREN/USDT:USDT | +57.16% | $17,166,434.86 |
-| LAB/USDT:USDT | +38.81% | $63,203,486.73 |
-| BSB/USDT:USDT | +37.46% | $7,716,937.05 |
-| EDEN/USDT:USDT | +34.52% | $5,325,785.84 |
+| FIDA/USDT:USDT | +58.24% | $8,413,770.54 |
+| SIREN/USDT:USDT | +56.21% | $18,042,600.89 |
+| BSB/USDT:USDT | +38.82% | $7,799,046.72 |
+| LAB/USDT:USDT | +38.78% | $63,427,142.74 |
+| EDEN/USDT:USDT | +34.59% | $5,331,546.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.12% | +2.38% |
-| GUN/USDT:USDT | below_1h_threshold | +1.54% | +1.80% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.14% | +1.40% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.01% | +1.26% |
-| CLO/USDT:USDT | below_1h_threshold | +1.01% | +1.26% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.62% | +1.94% |
+| H/USDT:USDT | below_1h_threshold | +1.26% | +1.57% |
+| BSB/USDT:USDT | below_1h_threshold | +1.26% | +1.57% |
+| GUN/USDT:USDT | below_1h_threshold | +1.20% | +1.51% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.13% | +1.45% |
 
 ## 5. 次に見るべき不足
 
