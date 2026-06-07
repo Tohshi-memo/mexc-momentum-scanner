@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-07T19:39:39.172807+00:00
+- generated_at: 2026-06-07T19:45:15.948679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **5995**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-07T19:39:36.473870+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.14% price=61294.5
+- 更新: 2026-06-07T19:45:13.077994+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.32% price=61179.2
 - Funnel: target 768 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +21.88% | $3,217,990.10 |
-| EPIC/USDT:USDT | +12.18% | $1,157,969.22 |
-| BEAT/USDT:USDT | +10.56% | $55,387,019.94 |
-| BTW/USDT:USDT | +10.18% | $14,510,476.53 |
-| VELVET/USDT:USDT | +7.41% | $2,888,559.14 |
+| BANK/USDT:USDT | +19.78% | $3,260,501.78 |
+| EPIC/USDT:USDT | +12.62% | $1,165,265.71 |
+| BEAT/USDT:USDT | +11.08% | $55,567,859.43 |
+| BTW/USDT:USDT | +9.64% | $14,552,695.09 |
+| VELVET/USDT:USDT | +8.42% | $2,903,452.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.13% | +4.26% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.40% | +3.53% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.90% | +3.03% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.58% | +2.71% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.50% | +2.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.81% | +5.13% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.29% | +4.62% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.46% | +3.78% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.90% | +3.22% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.58% | +2.90% |
 
 ## 5. 次に見るべき不足
 
