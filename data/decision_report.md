@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T14:48:25.663552+00:00
+- generated_at: 2026-06-08T14:54:30.772616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6081**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T14:48:20.611167+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=63886.5
+- 更新: 2026-06-08T14:54:25.403490+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63861.0
 - Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 96.6 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +61.23% | $10,962,662.38 |
-| ALLO/USDT:USDT | +42.85% | $81,772,049.16 |
-| BEAT/USDT:USDT | +42.33% | $156,185,364.66 |
-| PIPPIN/USDT:USDT | +37.35% | $16,397,055.28 |
-| MYX/USDT:USDT | +23.70% | $4,321,454.94 |
+| VELVET/USDT:USDT | +61.91% | $11,171,994.81 |
+| BEAT/USDT:USDT | +53.14% | $158,112,385.99 |
+| ALLO/USDT:USDT | +45.53% | $82,504,272.97 |
+| PIPPIN/USDT:USDT | +36.52% | $16,472,675.48 |
+| BANK/USDT:USDT | +24.71% | $5,690,228.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +3.86% | +3.60% |
-| JTO/USDT:USDT | below_1h_threshold | +3.51% | +3.25% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +2.99% |
-| GLWSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.25% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.16% |
+| HEI/USDT:USDT | below_1h_threshold | +4.07% | +3.86% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.72% | +3.51% |
+| JTO/USDT:USDT | below_1h_threshold | +3.51% | +3.29% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +3.35% | +3.14% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.05% | +2.83% |
 
 ## 5. 次に見るべき不足
 
