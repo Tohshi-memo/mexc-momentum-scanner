@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T11:36:13.410802+00:00
+- generated_at: 2026-06-08T11:42:04.860278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6071**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T11:36:10.267614+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.82% price=63646.8
-- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.8 >= 65=1, 4h RSI 95.8 >= 65=1
+- 更新: 2026-06-08T11:41:58.933801+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.89% price=63689.2
+- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 96.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +71.43% | $61,558,667.67 |
-| BEAT/USDT:USDT | +56.73% | $132,150,410.72 |
-| VELVET/USDT:USDT | +48.00% | $5,986,519.80 |
-| PIPPIN/USDT:USDT | +38.59% | $14,443,350.50 |
-| MYX/USDT:USDT | +29.45% | $3,495,986.85 |
+| ALLO/USDT:USDT | +72.00% | $62,288,029.17 |
+| BEAT/USDT:USDT | +56.80% | $133,674,289.09 |
+| VELVET/USDT:USDT | +50.11% | $6,092,380.54 |
+| PIPPIN/USDT:USDT | +39.62% | $14,563,229.19 |
+| BANK/USDT:USDT | +26.49% | $5,544,746.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.35% | +3.53% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.96% | +3.14% |
-| STG/USDT:USDT | below_1h_threshold | +3.84% | +3.02% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.77% | +2.96% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.47% | +2.65% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +4.91% | +4.03% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +3.89% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.37% | +2.48% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.96% | +2.08% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.56% | +1.67% |
 
 ## 5. 次に見るべき不足
 
