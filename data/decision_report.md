@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T13:19:36.152585+00:00
+- generated_at: 2026-06-08T13:25:27.671968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6078**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T13:19:30.405811+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=63644.4
-- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-06-08T13:25:20.004869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63709.6
+- Funnel: target 777 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.5 >= 65=1, 4h RSI 73.3 >= 65=1
+- Strict後reject: 4h RSI 73.6 >= 65=1, 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +52.91% | $145,752,171.98 |
-| VELVET/USDT:USDT | +44.33% | $8,436,900.58 |
-| ALLO/USDT:USDT | +38.50% | $74,232,633.64 |
-| PIPPIN/USDT:USDT | +34.80% | $15,316,536.98 |
-| BLESS/USDT:USDT | +25.13% | $10,355,186.06 |
+| BEAT/USDT:USDT | +54.34% | $146,463,830.47 |
+| ALLO/USDT:USDT | +42.81% | $74,754,486.61 |
+| VELVET/USDT:USDT | +42.28% | $8,533,330.57 |
+| PIPPIN/USDT:USDT | +36.45% | $15,368,469.67 |
+| BLESS/USDT:USDT | +27.39% | $10,396,996.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.73% | +2.01% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.08% | +1.36% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.91% | +1.20% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.75% | +1.03% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.87% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.67% | +3.85% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.01% | +2.19% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.00% | +2.18% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.59% | +1.76% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.27% | +1.45% |
 
 ## 5. 次に見るべき不足
 
