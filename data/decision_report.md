@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T12:21:58.146945+00:00
+- generated_at: 2026-06-08T12:27:51.361426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6074**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T12:21:54.838329+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.81% price=62936.0
+- 更新: 2026-06-08T12:27:48.697711+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.76% price=62967.5
 - Funnel: target 777 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +56.98% | $138,195,885.77 |
-| VELVET/USDT:USDT | +38.39% | $6,892,396.89 |
-| PIPPIN/USDT:USDT | +37.76% | $15,066,937.39 |
-| ALLO/USDT:USDT | +33.88% | $71,042,452.69 |
-| MYX/USDT:USDT | +24.18% | $3,776,867.52 |
+| BEAT/USDT:USDT | +54.93% | $138,801,380.75 |
+| ALLO/USDT:USDT | +42.87% | $72,134,824.54 |
+| VELVET/USDT:USDT | +40.20% | $7,209,642.79 |
+| PIPPIN/USDT:USDT | +35.63% | $15,115,480.42 |
+| MOVE/USDT:USDT | +24.91% | $1,143,726.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.17% | +2.98% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.13% | +2.94% |
-| BTW/USDT:USDT | below_1h_threshold | +2.13% | +2.94% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.80% | +1.61% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +1.57% |
+| MYX/USDT:USDT | below_1h_threshold | +2.89% | +3.65% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.27% | +2.03% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.90% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.95% | +1.71% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.76% | +1.52% |
 
 ## 5. 次に見るべき不足
 
