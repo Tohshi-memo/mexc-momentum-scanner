@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T09:26:13.853068+00:00
+- generated_at: 2026-06-08T09:32:03.474880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6063**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T09:26:11.350800+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=63393.7
-- Funnel: target 777 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-08T09:32:00.746319+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=63375.3
+- Funnel: target 777 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +51.52% | $118,318,729.47 |
-| ALLO/USDT:USDT | +51.51% | $46,192,782.55 |
-| BANK/USDT:USDT | +26.49% | $5,415,839.07 |
-| BLESS/USDT:USDT | +26.27% | $9,060,819.53 |
-| PIPPIN/USDT:USDT | +26.18% | $12,371,342.65 |
+| ALLO/USDT:USDT | +52.96% | $46,598,091.04 |
+| BEAT/USDT:USDT | +51.42% | $118,757,360.11 |
+| BLESS/USDT:USDT | +32.30% | $9,132,315.02 |
+| PIPPIN/USDT:USDT | +27.42% | $12,426,715.71 |
+| BANK/USDT:USDT | +25.54% | $5,421,471.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.38% | +3.92% |
-| MYX/USDT:USDT | below_1h_threshold | +2.98% | +2.52% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.78% | +2.31% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.74% | +2.27% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.71% | +2.25% |
+| MYX/USDT:USDT | below_1h_threshold | +4.25% | +3.82% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.83% | +3.40% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.75% | +2.32% |
+| B/USDT:USDT | below_1h_threshold | +2.19% | +1.76% |
+| SAHARA/USDT:USDT | below_1h_threshold | +2.17% | +1.73% |
 
 ## 5. 次に見るべき不足
 
