@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T02:47:46.934997+00:00
+- generated_at: 2026-06-08T02:53:33.130976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6025**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T02:47:43.828633+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=62998.2
+- 更新: 2026-06-08T02:53:30.601636+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63076.3
 - Funnel: target 773 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +25.35% | $5,952,051.39 |
-| BEAT/USDT:USDT | +24.26% | $94,496,961.19 |
-| PIPPIN/USDT:USDT | +23.70% | $6,528,873.25 |
-| ALLO/USDT:USDT | +20.61% | $43,247,099.38 |
-| BANK/USDT:USDT | +17.69% | $4,847,003.78 |
+| PIPPIN/USDT:USDT | +23.70% | $6,569,466.29 |
+| ESPORTS/USDT:USDT | +23.64% | $6,021,067.46 |
+| ALLO/USDT:USDT | +23.37% | $43,450,929.71 |
+| BEAT/USDT:USDT | +20.58% | $94,877,246.60 |
+| BANK/USDT:USDT | +18.13% | $4,873,336.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.44% | +3.74% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.99% | +3.29% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.61% | +2.91% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.48% | +2.78% |
-| EWY/USDT:USDT | below_1h_threshold | +2.32% | +2.62% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.04% | +3.22% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.83% | +3.01% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.58% | +2.76% |
+| EWY/USDT:USDT | below_1h_threshold | +2.25% | +2.43% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.91% | +2.09% |
 
 ## 5. 次に見るべき不足
 
