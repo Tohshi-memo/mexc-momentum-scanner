@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T01:22:31.672306+00:00
+- generated_at: 2026-06-08T01:28:10.087417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6014**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$99.00** / 初期 $100.00 (-1.00%)
-- 確定トレード: 5件 (TP 1 / SL 4 / EXP 0)
-- 最新: BSB/USDT:USDT SL_HIT PnL -4.00% 残高後 $99.00
+- 残高: **$99.07** / 初期 $100.00 (-0.93%)
+- 確定トレード: 6件 (TP 1 / SL 4 / EXP 1)
+- 最新: LUNC/USDT:USDT EXPIRED PnL +0.53% 残高後 $99.07
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T01:22:29.261582+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.88% price=63036.5
+- 更新: 2026-06-08T01:28:07.576247+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.98% price=62975.5
 - Funnel: target 772 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +28.89% | $87,103,234.06 |
-| BANK/USDT:USDT | +28.44% | $4,464,298.35 |
-| BLESS/USDT:USDT | +22.19% | $7,632,193.97 |
-| PIPPIN/USDT:USDT | +20.74% | $6,186,000.43 |
-| ESPORTS/USDT:USDT | +18.55% | $5,342,225.61 |
+| BANK/USDT:USDT | +31.80% | $4,545,811.19 |
+| BEAT/USDT:USDT | +29.78% | $87,471,348.27 |
+| BLESS/USDT:USDT | +24.99% | $7,685,477.92 |
+| PIPPIN/USDT:USDT | +21.84% | $6,230,075.14 |
+| ALLO/USDT:USDT | +16.87% | $42,459,772.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.44% | +4.32% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.60% | +2.49% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.36% | +2.25% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.32% | +2.21% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.04% | +1.92% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.40% | +4.38% |
+| BANK/USDT:USDT | below_1h_threshold | +3.05% | +4.03% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.37% | +3.35% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.95% | +2.93% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.90% | +2.88% |
 
 ## 5. 次に見るべき不足
 
