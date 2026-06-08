@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T00:30:40.206857+00:00
+- generated_at: 2026-06-08T00:36:23.184698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6011**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T00:30:37.344898+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=63476.0
-- Funnel: target 772 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1
+- 更新: 2026-06-08T00:36:17.805458+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=63478.1
+- Funnel: target 772 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +28.91% | $4,312,319.28 |
-| PIPPIN/USDT:USDT | +25.63% | $5,776,397.13 |
-| BEAT/USDT:USDT | +23.30% | $84,911,243.25 |
-| BLESS/USDT:USDT | +15.30% | $9,118,786.83 |
-| EPIC/USDT:USDT | +14.02% | $1,448,530.64 |
+| BANK/USDT:USDT | +28.35% | $4,355,318.02 |
+| BEAT/USDT:USDT | +24.09% | $85,185,470.28 |
+| PIPPIN/USDT:USDT | +22.60% | $5,878,694.20 |
+| ALLO/USDT:USDT | +18.82% | $45,649,647.65 |
+| BLESS/USDT:USDT | +18.23% | $9,170,606.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_relative_strength | +5.28% | +5.00% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.04% | +2.75% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.92% | +2.64% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.91% | +2.63% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +2.77% | +2.49% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.12% | +3.83% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.15% | +2.86% |
+| HYPE/USDT:USDT | below_1h_threshold | +3.14% | +2.86% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.99% | +2.70% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +2.17% |
 
 ## 5. 次に見るべき不足
 
