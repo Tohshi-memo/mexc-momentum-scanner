@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T02:53:33.130976+00:00
+- generated_at: 2026-06-08T02:59:21.395104+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6025**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T02:53:30.601636+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=63076.3
-- Funnel: target 773 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-08T02:59:18.515726+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=63093.3
+- Funnel: target 773 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +23.70% | $6,569,466.29 |
-| ESPORTS/USDT:USDT | +23.64% | $6,021,067.46 |
-| ALLO/USDT:USDT | +23.37% | $43,450,929.71 |
-| BEAT/USDT:USDT | +20.58% | $94,877,246.60 |
-| BANK/USDT:USDT | +18.13% | $4,873,336.79 |
+| PIPPIN/USDT:USDT | +26.18% | $6,605,030.12 |
+| BEAT/USDT:USDT | +24.71% | $95,228,382.73 |
+| ALLO/USDT:USDT | +23.37% | $43,749,738.03 |
+| ESPORTS/USDT:USDT | +22.60% | $6,084,957.23 |
+| BANK/USDT:USDT | +17.83% | $4,889,704.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.04% | +3.22% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.83% | +3.01% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.58% | +2.76% |
-| EWY/USDT:USDT | below_1h_threshold | +2.25% | +2.43% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.91% | +2.09% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.68% | +2.83% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.27% |
+| EWY/USDT:USDT | below_1h_threshold | +1.81% | +1.96% |
+| EWT/USDT:USDT | below_1h_threshold | +1.79% | +1.94% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.76% | +1.91% |
 
 ## 5. 次に見るべき不足
 
