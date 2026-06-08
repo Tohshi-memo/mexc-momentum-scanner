@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T04:26:09.470715+00:00
+- generated_at: 2026-06-08T04:31:44.844887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6029**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T04:26:06.965073+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=62904.1
-- Funnel: target 773 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-08T04:31:41.952438+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=62867.1
+- Funnel: target 773 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +32.56% | $95,649,494.15 |
-| ALLO/USDT:USDT | +29.43% | $42,102,530.82 |
-| PIPPIN/USDT:USDT | +21.22% | $7,327,154.05 |
-| VELVET/USDT:USDT | +13.69% | $3,227,838.38 |
-| BLESS/USDT:USDT | +13.27% | $8,541,530.97 |
+| BEAT/USDT:USDT | +32.24% | $95,973,661.56 |
+| ALLO/USDT:USDT | +23.51% | $42,309,946.96 |
+| PIPPIN/USDT:USDT | +20.81% | $7,346,940.48 |
+| BLESS/USDT:USDT | +13.93% | $8,573,580.59 |
+| VELVET/USDT:USDT | +13.45% | $3,237,816.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.83% | +5.14% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.67% | +4.98% |
-| ALLO/USDT:USDT | below_1h_threshold | +4.46% | +4.77% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.15% | +2.46% |
-| DASH/USDT:USDT | below_1h_threshold | +1.11% | +1.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.44% | +4.81% |
+| LUNC/USDT:USDT | below_1h_threshold | +2.05% | +2.42% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.93% | +2.30% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.99% | +1.36% |
+| EWT/USDT:USDT | below_1h_threshold | +0.30% | +0.68% |
 
 ## 5. 次に見るべき不足
 
