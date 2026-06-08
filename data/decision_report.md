@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T03:28:26.149288+00:00
+- generated_at: 2026-06-08T03:34:22.768534+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6028**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T03:28:19.969937+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=63218.3
-- Funnel: target 773 → liquid 140 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 68.4 >= 65=1
+- 更新: 2026-06-08T03:34:16.995268+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=63173.7
+- Funnel: target 773 → liquid 140 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 66.8 >= 65=1, 4h RSI 67.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +31.15% | $93,631,067.51 |
-| PIPPIN/USDT:USDT | +29.22% | $6,835,921.95 |
-| ALLO/USDT:USDT | +26.63% | $43,364,470.96 |
-| BANK/USDT:USDT | +19.99% | $4,906,955.16 |
-| VELVET/USDT:USDT | +14.30% | $3,186,382.57 |
+| BEAT/USDT:USDT | +33.18% | $94,108,508.69 |
+| ALLO/USDT:USDT | +29.24% | $43,584,709.54 |
+| PIPPIN/USDT:USDT | +25.49% | $6,961,253.86 |
+| BANK/USDT:USDT | +19.84% | $4,912,457.48 |
+| ESPORTS/USDT:USDT | +14.57% | $6,372,411.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.81% | +4.62% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.39% | +3.20% |
-| GUA/USDT:USDT | below_1h_threshold | +3.32% | +3.13% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.46% | +2.27% |
-| BANK/USDT:USDT | below_1h_threshold | +1.98% | +1.79% |
+| SAHARA/USDT:USDT | below_1h_threshold | +2.07% | +1.95% |
+| BANK/USDT:USDT | below_1h_threshold | +1.86% | +1.74% |
+| GUA/USDT:USDT | below_1h_threshold | +1.78% | +1.66% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.56% | +1.44% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.18% | +1.06% |
 
 ## 5. 次に見るべき不足
 
