@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T08:15:51.154466+00:00
+- generated_at: 2026-06-08T08:21:42.871281+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6060**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T08:15:48.531677+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63191.6
-- Funnel: target 777 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-08T08:21:40.094822+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=62988.0
+- Funnel: target 777 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +50.64% | $41,033,164.58 |
-| PIPPIN/USDT:USDT | +47.00% | $10,401,582.28 |
-| BEAT/USDT:USDT | +46.92% | $111,467,269.93 |
-| BANK/USDT:USDT | +26.66% | $5,236,166.95 |
-| ESPORTS/USDT:USDT | +23.79% | $11,927,683.84 |
+| BEAT/USDT:USDT | +49.28% | $112,584,111.47 |
+| ALLO/USDT:USDT | +49.02% | $41,535,053.88 |
+| PIPPIN/USDT:USDT | +48.51% | $10,531,687.83 |
+| BANK/USDT:USDT | +24.95% | $5,259,090.57 |
+| SKYAI/USDT:USDT | +23.34% | $15,329,289.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +3.28% | +3.38% |
-| HOME/USDT:USDT | below_1h_threshold | +2.56% | +2.66% |
-| BANK/USDT:USDT | below_1h_threshold | +2.29% | +2.39% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.86% | +1.97% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.52% | +1.63% |
+| HOME/USDT:USDT | below_1h_threshold | +4.33% | +4.75% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.25% | +3.67% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.15% | +3.58% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.91% | +3.34% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.68% | +2.10% |
 
 ## 5. 次に見るべき不足
 
