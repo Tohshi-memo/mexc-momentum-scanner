@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T03:52:16.854832+00:00
+- generated_at: 2026-06-08T03:58:49.662840+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6029**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$99.07** / 初期 $100.00 (-0.93%)
-- 確定トレード: 6件 (TP 1 / SL 4 / EXP 1)
-- 最新: LUNC/USDT:USDT EXPIRED PnL +0.53% 残高後 $99.07
+- 残高: **$98.58** / 初期 $100.00 (-1.42%)
+- 確定トレード: 7件 (TP 1 / SL 5 / EXP 1)
+- 最新: HEI/USDT:USDT SL_HIT PnL -4.00% 残高後 $98.58
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T03:52:14.211722+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63070.1
-- Funnel: target 773 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-08T03:58:43.962169+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63110.7
+- Funnel: target 773 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +26.15% | $95,631,132.81 |
-| PIPPIN/USDT:USDT | +22.88% | $7,154,789.76 |
-| ALLO/USDT:USDT | +22.49% | $44,481,175.31 |
-| BANK/USDT:USDT | +13.76% | $4,952,909.76 |
-| VELVET/USDT:USDT | +11.87% | $3,216,365.59 |
+| BEAT/USDT:USDT | +27.28% | $95,871,070.12 |
+| PIPPIN/USDT:USDT | +23.84% | $7,195,294.46 |
+| ALLO/USDT:USDT | +23.20% | $44,677,508.29 |
+| BANK/USDT:USDT | +12.34% | $4,993,814.54 |
+| VELVET/USDT:USDT | +11.79% | $3,217,585.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.72% | +4.77% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.29% | +3.33% |
-| BTW/USDT:USDT | below_1h_threshold | +3.09% | +3.14% |
-| GUA/USDT:USDT | below_1h_threshold | +2.77% | +2.81% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.66% | +1.71% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.30% | +4.28% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.49% | +3.47% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.94% | +2.92% |
+| GUA/USDT:USDT | below_1h_threshold | +2.66% | +2.64% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.96% | +1.94% |
 
 ## 5. 次に見るべき不足
 
