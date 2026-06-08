@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T06:38:29.639405+00:00
+- generated_at: 2026-06-08T06:44:20.374572+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6037**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T06:38:26.348675+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=62931.6
-- Funnel: target 773 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.1 >= 65=1
+- 更新: 2026-06-08T06:44:17.430639+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=62992.5
+- Funnel: target 773 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.9 >= 65=1, 4h RSI 66.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +45.35% | $104,514,630.04 |
-| PIPPIN/USDT:USDT | +28.80% | $9,072,636.12 |
-| ALLO/USDT:USDT | +24.58% | $37,676,812.41 |
-| VELVET/USDT:USDT | +16.16% | $3,507,150.46 |
-| ESPORTS/USDT:USDT | +15.95% | $7,011,092.92 |
+| BEAT/USDT:USDT | +44.76% | $105,642,368.56 |
+| PIPPIN/USDT:USDT | +29.84% | $9,094,719.49 |
+| ALLO/USDT:USDT | +26.47% | $37,836,777.18 |
+| ESPORTS/USDT:USDT | +18.61% | $7,038,046.64 |
+| VELVET/USDT:USDT | +16.21% | $3,529,117.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.36% | +4.05% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.89% | +3.58% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.22% | +2.91% |
-| ONDO/USDT:USDT | below_1h_threshold | +3.20% | +2.89% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.04% | +2.73% |
+| SKYAI/USDT:USDT | below_relative_strength | +5.38% | +4.97% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.52% | +3.11% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.19% | +2.78% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.94% | +2.53% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.78% | +2.37% |
 
 ## 5. 次に見るべき不足
 
