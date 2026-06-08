@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T11:24:37.671458+00:00
+- generated_at: 2026-06-08T11:30:27.281587+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6071**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T11:24:34.824454+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.74% price=63597.4
-- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.6 >= 65=1
+- 更新: 2026-06-08T11:30:24.233107+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.76% price=63609.5
+- Funnel: target 777 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.1 >= 65=1, 4h RSI 91.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +73.45% | $60,260,319.07 |
-| BEAT/USDT:USDT | +52.61% | $130,019,397.06 |
-| VELVET/USDT:USDT | +42.87% | $5,503,942.23 |
-| PIPPIN/USDT:USDT | +36.11% | $14,244,029.60 |
-| MYX/USDT:USDT | +26.07% | $3,372,413.05 |
+| ALLO/USDT:USDT | +71.80% | $60,875,149.97 |
+| BEAT/USDT:USDT | +53.88% | $130,846,170.06 |
+| VELVET/USDT:USDT | +50.69% | $5,723,683.75 |
+| PIPPIN/USDT:USDT | +38.18% | $14,330,125.47 |
+| MYX/USDT:USDT | +28.70% | $3,395,950.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.08% | +2.34% |
-| STG/USDT:USDT | below_1h_threshold | +2.86% | +2.12% |
-| SPX/USDT:USDT | below_1h_threshold | +2.10% | +1.36% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.07% | +1.33% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.90% | +1.16% |
+| MYX/USDT:USDT | below_1h_threshold | +3.86% | +3.10% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.67% | +2.91% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +2.72% |
+| STG/USDT:USDT | below_1h_threshold | +3.43% | +2.67% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.27% | +2.51% |
 
 ## 5. 次に見るべき不足
 
