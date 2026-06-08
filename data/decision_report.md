@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T13:31:23.073588+00:00
+- generated_at: 2026-06-08T13:37:16.605357+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6078**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T13:31:17.804974+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=63627.9
+- 更新: 2026-06-08T13:37:10.686336+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=63663.1
 - Funnel: target 777 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1, 4h RSI 66.6 >= 65=1
+- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +54.32% | $146,931,996.44 |
-| VELVET/USDT:USDT | +44.72% | $8,583,337.82 |
-| ALLO/USDT:USDT | +42.40% | $75,078,345.77 |
-| PIPPIN/USDT:USDT | +38.45% | $15,442,856.79 |
-| BLESS/USDT:USDT | +27.81% | $10,444,355.13 |
+| BEAT/USDT:USDT | +54.76% | $147,210,630.95 |
+| VELVET/USDT:USDT | +45.05% | $8,644,229.38 |
+| ALLO/USDT:USDT | +44.33% | $75,393,330.66 |
+| PIPPIN/USDT:USDT | +38.04% | $15,522,725.99 |
+| BLESS/USDT:USDT | +28.09% | $10,473,292.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.87% | +5.17% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.00% | +3.31% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.82% | +3.13% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.89% | +2.20% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.79% | +2.09% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.47% | +4.72% |
+| VVV/USDT:USDT | below_1h_threshold | +3.20% | +3.45% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.77% | +3.02% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.03% | +2.28% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.94% | +2.19% |
 
 ## 5. 次に見るべき不足
 
