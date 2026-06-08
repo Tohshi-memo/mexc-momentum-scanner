@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T01:50:17.734582+00:00
+- generated_at: 2026-06-08T01:56:20.120195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6019**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T01:50:10.860377+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.87% price=63044.2
-- Funnel: target 773 → liquid 142 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.6 >= 65=1, 4h RSI 83.2 >= 65=1, 4h RSI 88.6 >= 65=1
+- 更新: 2026-06-08T01:56:14.114664+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.75% price=63121.5
+- Funnel: target 773 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 82.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +34.81% | $90,214,780.84 |
-| BANK/USDT:USDT | +33.81% | $4,641,508.30 |
-| BLESS/USDT:USDT | +29.98% | $8,313,752.01 |
-| EPIC/USDT:USDT | +24.21% | $1,572,432.20 |
-| ESPORTS/USDT:USDT | +24.20% | $5,492,780.79 |
+| BEAT/USDT:USDT | +34.92% | $90,809,588.93 |
+| BANK/USDT:USDT | +32.30% | $4,662,140.33 |
+| BLESS/USDT:USDT | +26.40% | $8,476,857.23 |
+| EPIC/USDT:USDT | +25.30% | $1,583,935.78 |
+| ESPORTS/USDT:USDT | +23.06% | $5,535,800.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.62% | +5.49% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.32% | +5.20% |
-| OPENAI/USDT:USDT | below_1h_threshold | +2.11% | +2.98% |
-| MYX/USDT:USDT | below_1h_threshold | +1.75% | +2.62% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.99% | +1.86% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.59% | +5.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.49% | +5.24% |
+| BANK/USDT:USDT | below_1h_threshold | +3.44% | +4.19% |
+| OPENAI/USDT:USDT | below_1h_threshold | +2.14% | +2.89% |
+| MYX/USDT:USDT | below_1h_threshold | +1.67% | +2.42% |
 
 ## 5. 次に見るべき不足
 
