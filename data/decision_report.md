@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T16:00:56.920206+00:00
+- generated_at: 2026-06-08T16:06:36.552297+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6082**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T16:00:54.228404+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=63670.1
+- 更新: 2026-06-08T16:06:33.837083+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63883.3
 - Funnel: target 777 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +1.03% | $83,439,854.22 |
-| PIPPIN/USDT:USDT | +0.77% | $17,316,391.45 |
-| OPN/USDT:USDT | +0.45% | $5,139,756.26 |
-| SKHYNIXSTOCK/USDT:USDT | +0.39% | $5,310,909.08 |
-| FHE/USDT:USDT | +0.36% | $1,330,391.70 |
+| UB/USDT:USDT | +3.09% | $1,284,907.03 |
+| BLESS/USDT:USDT | +3.03% | $9,961,626.77 |
+| SIREN/USDT:USDT | +2.77% | $25,675,465.30 |
+| RAVE/USDT:USDT | +2.55% | $3,138,655.01 |
+| FHE/USDT:USDT | +2.25% | $1,352,049.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.87% | +0.99% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.67% | +0.79% |
-| OPN/USDT:USDT | below_1h_threshold | +0.46% | +0.58% |
-| FHE/USDT:USDT | below_1h_threshold | +0.37% | +0.49% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.35% | +0.47% |
+| UB/USDT:USDT | below_1h_threshold | +3.10% | +2.88% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.80% | +2.58% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.78% | +2.56% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.56% | +2.34% |
+| FHE/USDT:USDT | below_1h_threshold | +2.30% | +2.09% |
 
 ## 5. 次に見るべき不足
 
