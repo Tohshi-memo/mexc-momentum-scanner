@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T09:20:27.303943+00:00
+- generated_at: 2026-06-08T09:26:13.853068+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6063**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T09:20:24.707755+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.56% price=63457.3
+- 更新: 2026-06-08T09:26:11.350800+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=63393.7
 - Funnel: target 777 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +51.62% | $45,704,721.52 |
-| BEAT/USDT:USDT | +49.78% | $117,699,247.37 |
-| BANK/USDT:USDT | +27.55% | $5,403,752.77 |
-| PIPPIN/USDT:USDT | +26.94% | $12,305,416.84 |
-| BLESS/USDT:USDT | +26.37% | $8,973,547.49 |
+| BEAT/USDT:USDT | +51.52% | $118,318,729.47 |
+| ALLO/USDT:USDT | +51.51% | $46,192,782.55 |
+| BANK/USDT:USDT | +26.49% | $5,415,839.07 |
+| BLESS/USDT:USDT | +26.27% | $9,060,819.53 |
+| PIPPIN/USDT:USDT | +26.18% | $12,371,342.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.44% | +3.87% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.28% | +2.71% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.72% | +2.16% |
-| B/USDT:USDT | below_1h_threshold | +1.91% | +1.34% |
-| MYX/USDT:USDT | below_1h_threshold | +1.76% | +1.19% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.38% | +3.92% |
+| MYX/USDT:USDT | below_1h_threshold | +2.98% | +2.52% |
+| SAHARA/USDT:USDT | below_1h_threshold | +2.78% | +2.31% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.74% | +2.27% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.71% | +2.25% |
 
 ## 5. 次に見るべき不足
 
