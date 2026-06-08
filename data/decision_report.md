@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T19:25:56.946917+00:00
+- generated_at: 2026-06-08T19:31:39.263743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6095**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T19:25:54.439004+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63449.9
+- 更新: 2026-06-08T19:31:36.725113+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63489.9
 - Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +28.65% | $20,175,736.69 |
-| PIPPIN/USDT:USDT | +19.89% | $26,896,698.36 |
-| LAYER/USDT:USDT | +16.22% | $1,521,986.13 |
-| WLD/USDT:USDT | +15.40% | $116,977,620.42 |
-| B/USDT:USDT | +10.33% | $2,110,191.97 |
+| ESPORTS/USDT:USDT | +24.72% | $20,263,347.81 |
+| PIPPIN/USDT:USDT | +18.10% | $27,074,125.30 |
+| LAYER/USDT:USDT | +17.39% | $1,530,086.64 |
+| WLD/USDT:USDT | +14.25% | $118,213,674.93 |
+| B/USDT:USDT | +8.89% | $2,124,728.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.70% | +3.68% |
-| LAYER/USDT:USDT | below_1h_threshold | +3.11% | +3.09% |
-| B/USDT:USDT | below_1h_threshold | +2.52% | +2.50% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.49% | +2.47% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.87% | +1.85% |
+| LAYER/USDT:USDT | below_1h_threshold | +4.02% | +3.94% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.80% | +2.72% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.95% | +1.87% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.57% | +1.49% |
+| UB/USDT:USDT | below_1h_threshold | +1.56% | +1.48% |
 
 ## 5. 次に見るべき不足
 
