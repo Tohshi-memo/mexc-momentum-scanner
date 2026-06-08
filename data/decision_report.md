@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T00:13:29.733440+00:00
+- generated_at: 2026-06-08T00:19:06.995502+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6011**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T00:13:26.816686+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63200.0
+- 更新: 2026-06-08T00:19:04.061807+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=63223.2
 - Funnel: target 772 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 87.2 >= 65=1
@@ -65,21 +65,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +27.67% | $4,253,794.54 |
-| PIPPIN/USDT:USDT | +24.05% | $5,470,051.17 |
-| BLESS/USDT:USDT | +23.58% | $8,912,790.53 |
-| BEAT/USDT:USDT | +21.97% | $83,954,616.79 |
-| EPIC/USDT:USDT | +13.71% | $1,440,878.70 |
+| BANK/USDT:USDT | +27.20% | $4,262,893.11 |
+| PIPPIN/USDT:USDT | +21.98% | $5,678,123.51 |
+| BEAT/USDT:USDT | +21.74% | $84,143,230.26 |
+| BLESS/USDT:USDT | +20.95% | $8,982,699.33 |
+| BTW/USDT:USDT | +14.92% | $16,299,242.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.35% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +2.34% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.07% | +2.22% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +2.02% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.65% | +1.80% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +3.39% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.25% | +3.36% |
+| EWY/USDT:USDT | below_1h_threshold | +3.06% | +3.18% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.97% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.55% | +2.67% |
 
 ## 5. 次に見るべき不足
 
