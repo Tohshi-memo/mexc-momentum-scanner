@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T01:06:52.980979+00:00
+- generated_at: 2026-06-08T01:11:28.909215+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6013**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T01:06:50.199112+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=63310.5
+- 更新: 2026-06-08T01:11:26.754921+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.63% price=63199.9
 - Funnel: target 772 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +28.92% | $85,969,281.53 |
-| BANK/USDT:USDT | +27.93% | $4,421,525.16 |
-| BLESS/USDT:USDT | +20.71% | $7,551,610.21 |
-| PIPPIN/USDT:USDT | +18.95% | $6,064,499.92 |
-| ESPORTS/USDT:USDT | +17.83% | $5,253,898.64 |
+| BEAT/USDT:USDT | +27.69% | $86,262,933.54 |
+| BANK/USDT:USDT | +27.46% | $4,432,039.37 |
+| PIPPIN/USDT:USDT | +18.95% | $6,107,841.26 |
+| BLESS/USDT:USDT | +16.92% | $7,571,969.54 |
+| MYX/USDT:USDT | +15.05% | $2,348,575.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.08% | +3.53% |
-| BABY/USDT:USDT | below_1h_threshold | +1.33% | +1.78% |
-| MYX/USDT:USDT | below_1h_threshold | +1.14% | +1.59% |
-| GUA/USDT:USDT | below_1h_threshold | +0.81% | +1.26% |
-| SAHARA/USDT:USDT | below_1h_threshold | +0.26% | +0.71% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.70% | +1.33% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +1.16% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.31% | +0.94% |
+| GUA/USDT:USDT | below_1h_threshold | -0.20% | +0.43% |
+| PLAY/USDT:USDT | below_1h_threshold | -0.23% | +0.40% |
 
 ## 5. 次に見るべき不足
 
