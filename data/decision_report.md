@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T05:27:39.013960+00:00
+- generated_at: 2026-06-09T05:33:29.515718+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6115**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T05:27:36.256270+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=63285.1
-- Funnel: target 775 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1
+- 更新: 2026-06-09T05:33:26.520184+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=63392.2
+- Funnel: target 774 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.2 >= 65=1, 4h RSI 65.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +44.24% | $24,461,174.24 |
-| ZEST/USDT:USDT | +30.59% | $1,004,123.33 |
-| SLX/USDT:USDT | +14.81% | $1,339,860.47 |
-| CTR/USDT:USDT | +13.45% | $1,151,967.73 |
-| POWER/USDT:USDT | +12.83% | $1,221,135.53 |
+| ESPORTS/USDT:USDT | +42.90% | $24,511,532.44 |
+| ZEST/USDT:USDT | +29.44% | $1,082,967.67 |
+| SLX/USDT:USDT | +16.01% | $1,341,035.55 |
+| CTR/USDT:USDT | +15.41% | $1,159,910.89 |
+| POWER/USDT:USDT | +14.35% | $1,232,077.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.51% | +4.40% |
-| BANK/USDT:USDT | below_1h_threshold | +2.74% | +2.63% |
-| CTR/USDT:USDT | below_1h_threshold | +2.58% | +2.47% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.53% | +2.42% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.23% | +2.11% |
+| CTR/USDT:USDT | below_1h_threshold | +4.28% | +4.00% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.19% | +3.91% |
+| BANK/USDT:USDT | below_1h_threshold | +4.06% | +3.78% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.70% | +3.42% |
+| POWER/USDT:USDT | below_1h_threshold | +1.48% | +1.20% |
 
 ## 5. 次に見るべき不足
 
