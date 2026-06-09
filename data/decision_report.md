@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T00:26:30.749430+00:00
+- generated_at: 2026-06-09T00:32:26.656896+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6103**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T00:26:27.992303+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=62841.4
-- Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-09T00:32:24.082299+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.78% price=62567.3
+- Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +41.46% | $23,635,133.43 |
-| 4/USDT:USDT | +27.50% | $1,360,129.84 |
-| PIPPIN/USDT:USDT | +24.42% | $31,535,014.13 |
-| LAYER/USDT:USDT | +11.11% | $2,343,484.99 |
-| B/USDT:USDT | +6.57% | $1,781,965.39 |
+| ESPORTS/USDT:USDT | +43.20% | $23,681,224.41 |
+| 4/USDT:USDT | +28.73% | $1,377,751.11 |
+| PIPPIN/USDT:USDT | +20.66% | $31,652,012.90 |
+| LAYER/USDT:USDT | +9.64% | $2,345,640.53 |
+| FOLKS/USDT:USDT | +6.26% | $1,290,160.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.90% | +3.24% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.54% | +2.88% |
-| BANK/USDT:USDT | below_1h_threshold | +2.22% | +2.57% |
-| LLYSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.31% |
-| UB/USDT:USDT | below_1h_threshold | +0.94% | +1.29% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.24% | +5.02% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.98% | +3.76% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.82% | +2.60% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.82% | +2.60% |
+| BANK/USDT:USDT | below_1h_threshold | +1.79% | +2.57% |
 
 ## 5. 次に見るべき不足
 
