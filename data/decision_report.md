@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T16:37:40.896317+00:00
+- generated_at: 2026-06-09T16:43:45.256691+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6150**
 
@@ -54,9 +54,9 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T16:37:37.644875+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=61263.3
-- Funnel: target 778 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-09T16:43:42.361614+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=61085.4
+- Funnel: target 778 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SIREN/USDT:USDT | +22.50% | $9,717,580.06 |
-| CHZ/USDT:USDT | +4.62% | $10,611,280.27 |
-| BEAT/USDT:USDT | +2.90% | $126,033,464.24 |
-| POL/USDT:USDT | +2.29% | $1,360,088.86 |
-| PLAY/USDT:USDT | +2.20% | $2,854,761.16 |
+| SIREN/USDT:USDT | +13.35% | $9,925,803.58 |
+| CHZ/USDT:USDT | +3.43% | $10,829,478.73 |
+| BEAT/USDT:USDT | +3.04% | $126,531,310.22 |
+| UKOIL/USDT:USDT | +1.86% | $27,754,983.24 |
+| USOIL/USDT:USDT | +1.84% | $91,213,002.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHZ/USDT:USDT | below_1h_threshold | +4.62% | +4.36% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.86% | +2.60% |
-| POL/USDT:USDT | below_1h_threshold | +2.29% | +2.03% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.21% | +1.95% |
-| LIT/USDT:USDT | below_1h_threshold | +2.06% | +1.80% |
+| CHZ/USDT:USDT | below_1h_threshold | +3.43% | +3.46% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.05% | +3.09% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.89% | +1.93% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.81% | +1.84% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.73% | +1.76% |
 
 ## 5. 次に見るべき不足
 
