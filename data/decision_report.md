@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-09T03:01:07.195012+00:00
+- generated_at: 2026-06-09T03:06:47.480789+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6111**
+- closed shadow trades: **6112**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.40% / filled 20/20。**
-- 全期間 MARKET基準: n=6111, expectancy=-0.05%
+- 全期間 MARKET基準: n=6112, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,31 +31,31 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK_LONG | 20/20 | 100.0% | +1.47% | **+1.47%** |
+| ASK_LONG | 20/20 | 100.0% | +1.45% | **+1.45%** |
 | LIMIT_BB3S_LONG | 5/6 | 83.3% | +1.49% | **+1.24%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.74% | **+0.74%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 | LIMIT_7PCT_LONG | 6/20 | 30.0% | +1.46% | **+0.44%** |
+| LIMIT_8PCT_LONG | 6/20 | 30.0% | +1.33% | **+0.40%** |
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.59** / 初期 $100.00 (-2.41%)
-- 確定トレード: 9件 (TP 1 / SL 7 / EXP 1)
-- 最新: SKYAI/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.59
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$97.11** / 初期 $100.00 (-2.89%)
+- 確定トレード: 10件 (TP 1 / SL 8 / EXP 1)
+- 最新: ESPORTS/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.11
+- 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$154.25** / 初期 $100.00 (+54.25%)
-- 確定: 1151件 (Win 285 / Loss 352 / Flat 514) / skip 1521件
-- 成長率目線: 平均log +0.000377 / 幾何平均 +0.038% per trade / maxDD +7.25%
+- 残高: **$153.48** / 初期 $100.00 (+53.48%)
+- 確定: 1152件 (Win 285 / Loss 353 / Flat 514) / skip 1521件
+- 成長率目線: 平均log +0.000372 / 幾何平均 +0.037% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SLX/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $154.25
+- 最新: ESPORTS/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $153.48
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T03:01:04.667041+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=62877.4
+- 更新: 2026-06-09T03:06:44.524999+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=62798.8
 - Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +31.82% | $23,418,141.68 |
-| SLX/USDT:USDT | +13.67% | $1,125,182.96 |
-| CTR/USDT:USDT | +9.69% | $1,012,024.84 |
-| MOVE/USDT:USDT | +6.59% | $3,878,722.68 |
-| FOLKS/USDT:USDT | +4.59% | $1,472,127.39 |
+| ESPORTS/USDT:USDT | +36.14% | $23,466,451.34 |
+| SLX/USDT:USDT | +15.32% | $1,133,493.85 |
+| CTR/USDT:USDT | +8.57% | $1,019,366.42 |
+| MOVE/USDT:USDT | +6.74% | $3,888,306.81 |
+| FOLKS/USDT:USDT | +5.13% | $1,473,490.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +0.62% | +0.56% |
-| SLX/USDT:USDT | below_1h_threshold | +0.50% | +0.44% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.44% | +0.38% |
-| BTW/USDT:USDT | below_1h_threshold | +0.37% | +0.31% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.34% | +0.29% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.46% | +3.53% |
+| SLX/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
+| MOVE/USDT:USDT | below_1h_threshold | +0.61% | +0.68% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.40% | +0.46% |
+| GLWSTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.28% |
 
 ## 5. 次に見るべき不足
 
