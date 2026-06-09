@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T00:15:08.451995+00:00
+- generated_at: 2026-06-09T00:20:42.606915+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6103**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T00:15:06.806419+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=62970.1
+- 更新: 2026-06-09T00:20:40.075641+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=62996.0
 - Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +37.46% | $23,518,709.56 |
-| 4/USDT:USDT | +24.74% | $1,344,347.17 |
-| PIPPIN/USDT:USDT | +22.27% | $31,215,236.57 |
-| LAYER/USDT:USDT | +10.23% | $2,327,554.97 |
-| FOLKS/USDT:USDT | +7.70% | $1,278,699.47 |
+| ESPORTS/USDT:USDT | +41.60% | $23,573,813.32 |
+| 4/USDT:USDT | +27.30% | $1,351,698.64 |
+| PIPPIN/USDT:USDT | +21.63% | $31,348,700.61 |
+| LAYER/USDT:USDT | +12.42% | $2,332,858.46 |
+| FOLKS/USDT:USDT | +7.28% | $1,284,362.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +4.29% | +4.43% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.69% | +3.83% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.59% | +2.73% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.58% | +1.72% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.18% | +1.32% |
+| CLO/USDT:USDT | below_1h_threshold | +3.97% | +4.06% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.28% | +3.38% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.14% | +3.24% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.04% | +3.13% |
+| BANK/USDT:USDT | below_1h_threshold | +2.85% | +2.95% |
 
 ## 5. 次に見るべき不足
 
