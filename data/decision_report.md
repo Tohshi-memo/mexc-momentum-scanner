@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T05:10:12.192920+00:00
+- generated_at: 2026-06-09T05:16:07.608190+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6115**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T05:10:09.518222+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=63105.1
+- 更新: 2026-06-09T05:16:04.996210+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=63300.6
 - Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +50.03% | $24,279,051.94 |
-| SLX/USDT:USDT | +13.44% | $1,303,492.11 |
-| POWER/USDT:USDT | +12.33% | $1,160,623.53 |
-| CTR/USDT:USDT | +11.85% | $1,136,590.65 |
-| MOVE/USDT:USDT | +9.42% | $5,643,289.05 |
+| ESPORTS/USDT:USDT | +49.32% | $24,332,716.83 |
+| SLX/USDT:USDT | +14.87% | $1,323,008.79 |
+| POWER/USDT:USDT | +14.35% | $1,184,689.68 |
+| CTR/USDT:USDT | +12.69% | $1,140,277.38 |
+| MOVE/USDT:USDT | +8.77% | $5,652,879.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +1.37% | +1.54% |
-| CTR/USDT:USDT | below_1h_threshold | +1.07% | +1.24% |
-| SIREN/USDT:USDT | below_1h_threshold | +0.56% | +0.73% |
-| MOVE/USDT:USDT | below_1h_threshold | +0.53% | +0.70% |
-| XMR/USDT:USDT | below_1h_threshold | +0.50% | +0.67% |
+| BANK/USDT:USDT | below_1h_threshold | +2.01% | +1.87% |
+| CTR/USDT:USDT | below_1h_threshold | +1.83% | +1.69% |
+| POWER/USDT:USDT | below_1h_threshold | +1.40% | +1.26% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.18% | +1.04% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.89% | +0.75% |
 
 ## 5. 次に見るべき不足
 
