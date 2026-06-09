@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T07:36:06.263314+00:00
+- generated_at: 2026-06-09T07:41:51.720689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6122**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T07:36:02.943188+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=63083.3
+- 更新: 2026-06-09T07:41:48.949620+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=63168.8
 - Funnel: target 774 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.0 >= 65=1
+- Strict後reject: 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +55.87% | $25,490,855.58 |
-| SLX/USDT:USDT | +47.29% | $2,244,432.70 |
-| LIGHT/USDT:USDT | +12.21% | $1,066,540.33 |
-| POWER/USDT:USDT | +11.52% | $1,755,390.33 |
-| ZEST/USDT:USDT | +8.87% | $1,522,254.60 |
+| ESPORTS/USDT:USDT | +55.13% | $25,554,679.89 |
+| SLX/USDT:USDT | +50.31% | $2,339,895.13 |
+| LIGHT/USDT:USDT | +12.67% | $1,068,814.81 |
+| POWER/USDT:USDT | +11.70% | $1,765,271.60 |
+| SKHYNIXSTOCK/USDT:USDT | +7.85% | $4,349,454.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.14% | +4.45% |
-| CTR/USDT:USDT | below_1h_threshold | +2.48% | +2.79% |
-| WLD/USDT:USDT | below_1h_threshold | +2.40% | +2.71% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.57% | +1.88% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.38% | +1.69% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.85% | +4.03% |
+| CTR/USDT:USDT | below_1h_threshold | +2.75% | +2.93% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.97% | +2.15% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.84% | +2.01% |
+| WLD/USDT:USDT | below_1h_threshold | +1.49% | +1.66% |
 
 ## 5. 次に見るべき不足
 
