@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T12:21:32.604572+00:00
+- generated_at: 2026-06-09T12:27:16.765643+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6135**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T12:21:29.678198+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=62725.0
+- 更新: 2026-06-09T12:27:14.214556+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=62717.4
 - Funnel: target 774 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +47.16% | $21,650,157.43 |
-| SLX/USDT:USDT | +30.08% | $5,359,526.76 |
-| POWER/USDT:USDT | +25.75% | $2,798,478.37 |
-| PLAY/USDT:USDT | +16.11% | $2,016,234.06 |
-| CHZ/USDT:USDT | +11.93% | $7,965,027.92 |
+| ESPORTS/USDT:USDT | +50.66% | $21,845,763.94 |
+| SLX/USDT:USDT | +28.03% | $5,415,381.90 |
+| POWER/USDT:USDT | +26.92% | $2,868,028.14 |
+| PLAY/USDT:USDT | +16.44% | $2,038,466.29 |
+| CHIP/USDT:USDT | +11.24% | $1,933,326.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.57% | +2.49% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.33% | +2.26% |
-| CHZ/USDT:USDT | below_1h_threshold | +2.17% | +2.10% |
-| POWER/USDT:USDT | below_1h_threshold | +2.00% | +1.93% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.70% | +1.63% |
+| WLD/USDT:USDT | below_1h_threshold | +4.21% | +4.15% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.00% | +2.93% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.87% | +2.81% |
+| POWER/USDT:USDT | below_1h_threshold | +2.67% | +2.61% |
+| JTO/USDT:USDT | below_1h_threshold | +1.90% | +1.84% |
 
 ## 5. 次に見るべき不足
 
