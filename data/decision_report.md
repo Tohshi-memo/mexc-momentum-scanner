@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-09T19:50:40.131079+00:00
+- generated_at: 2026-06-09T19:58:10.587819+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6159**
+- closed shadow trades: **6160**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6159, expectancy=-0.05%
+- 全期間 MARKET基準: n=6160, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_5PCT | 4/20 | 20.0% | -0.29% | **-0.06%** |
 | LIMIT_7PCT | 2/20 | 10.0% | -0.60% | **-0.06%** |
 | LIMIT_6PCT | 2/20 | 10.0% | -1.06% | **-0.11%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | -0.38% | **-0.15%** |
+| LIMIT_3PCT | 15/20 | 75.0% | -0.18% | **-0.13%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$148.01** / 初期 $100.00 (+48.01%)
-- 確定: 1188件 (Win 297 / Loss 374 / Flat 517) / skip 1532件
+- 確定: 1188件 (Win 297 / Loss 374 / Flat 517) / skip 1533件
 - 成長率目線: 平均log +0.000330 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_4PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: EPIC/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $148.01
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T19:50:37.309343+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=61940.5
-- Funnel: target 778 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.6 >= 65=1
+- 更新: 2026-06-09T19:58:04.786267+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=62047.1
+- Funnel: target 778 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +17.12% | $3,776,338.30 |
-| BTW/USDT:USDT | +17.03% | $5,422,824.54 |
-| ESPORTS/USDT:USDT | +16.74% | $21,993,397.38 |
-| BLESS/USDT:USDT | +9.12% | $4,459,128.85 |
-| STG/USDT:USDT | +8.86% | $1,204,201.38 |
+| HOME/USDT:USDT | +22.16% | $3,835,466.55 |
+| BTW/USDT:USDT | +18.34% | $5,594,152.75 |
+| STG/USDT:USDT | +10.41% | $1,225,805.85 |
+| OPN/USDT:USDT | +9.30% | $2,572,201.39 |
+| BLESS/USDT:USDT | +8.83% | $4,481,579.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPN/USDT:USDT | below_1h_threshold | +4.54% | +4.24% |
-| STG/USDT:USDT | below_1h_threshold | +3.38% | +3.08% |
-| JCT/USDT:USDT | below_1h_threshold | +2.28% | +1.98% |
-| HOME/USDT:USDT | below_1h_threshold | +1.64% | +1.34% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.20% | +0.91% |
+| STG/USDT:USDT | below_1h_threshold | +4.84% | +4.37% |
+| JCT/USDT:USDT | below_1h_threshold | +3.27% | +2.81% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.41% | +1.94% |
+| IO/USDT:USDT | below_1h_threshold | +1.43% | +0.96% |
+| POL/USDT:USDT | below_1h_threshold | +1.19% | +0.72% |
 
 ## 5. 次に見るべき不足
 
