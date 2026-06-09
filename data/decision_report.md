@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T11:10:38.281159+00:00
+- generated_at: 2026-06-09T11:16:24.318940+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6130**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T11:10:35.473805+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=62610.2
-- Funnel: target 774 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-09T11:16:21.582318+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=62514.2
+- Funnel: target 774 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +56.90% | $20,932,022.10 |
-| SLX/USDT:USDT | +27.06% | $4,894,832.18 |
-| PLAY/USDT:USDT | +20.93% | $1,433,576.47 |
-| POWER/USDT:USDT | +18.86% | $2,440,916.96 |
-| SKHYNIXSTOCK/USDT:USDT | +10.72% | $4,339,067.96 |
+| ESPORTS/USDT:USDT | +55.22% | $21,012,082.35 |
+| SLX/USDT:USDT | +27.17% | $4,914,241.91 |
+| POWER/USDT:USDT | +19.81% | $2,449,951.44 |
+| PLAY/USDT:USDT | +17.78% | $1,488,684.29 |
+| SKHYNIXSTOCK/USDT:USDT | +11.13% | $4,369,231.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +2.81% | +3.03% |
-| CTR/USDT:USDT | below_1h_threshold | +2.53% | +2.75% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.45% | +2.67% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.21% | +1.43% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.99% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.80% | +4.18% |
+| CTR/USDT:USDT | below_1h_threshold | +2.00% | +2.37% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.65% | +2.03% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.60% | +1.98% |
+| BSB/USDT:USDT | below_1h_threshold | +1.57% | +1.95% |
 
 ## 5. 次に見るべき不足
 
