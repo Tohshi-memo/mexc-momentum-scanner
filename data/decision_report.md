@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T05:50:43.949811+00:00
+- generated_at: 2026-06-09T05:56:25.460137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6119**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$97.11** / 初期 $100.00 (-2.89%)
-- 確定トレード: 10件 (TP 1 / SL 8 / EXP 1)
-- 最新: ESPORTS/USDT:USDT SL_HIT PnL -4.00% 残高後 $97.11
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$96.62** / 初期 $100.00 (-3.38%)
+- 確定トレード: 11件 (TP 1 / SL 9 / EXP 1)
+- 最新: SLX/USDT:USDT SL_HIT PnL -4.00% 残高後 $96.62
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T05:50:40.660068+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=63370.5
+- 更新: 2026-06-09T05:56:22.648480+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63310.0
 - Funnel: target 774 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +38.48% | $24,664,493.37 |
-| ZEST/USDT:USDT | +21.46% | $1,252,673.21 |
-| SLX/USDT:USDT | +18.80% | $1,369,151.85 |
-| POWER/USDT:USDT | +14.15% | $1,313,178.89 |
-| CTR/USDT:USDT | +12.69% | $1,181,576.08 |
+| ESPORTS/USDT:USDT | +40.61% | $24,767,950.16 |
+| ZEST/USDT:USDT | +23.59% | $1,277,757.92 |
+| SLX/USDT:USDT | +20.34% | $1,401,804.16 |
+| POWER/USDT:USDT | +13.55% | $1,322,569.04 |
+| CTR/USDT:USDT | +12.62% | $1,183,127.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +3.78% | +3.53% |
-| BANK/USDT:USDT | below_1h_threshold | +3.66% | +3.41% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.37% | +3.12% |
-| JTO/USDT:USDT | below_1h_threshold | +2.55% | +2.30% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +1.87% |
+| SLX/USDT:USDT | below_relative_strength | +5.13% | +4.97% |
+| LIT/USDT:USDT | below_1h_threshold | +4.61% | +4.45% |
+| BANK/USDT:USDT | below_1h_threshold | +2.34% | +2.18% |
+| TONCOIN/USDT:USDT | below_1h_threshold | +2.20% | +2.05% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.99% | +1.84% |
 
 ## 5. 次に見るべき不足
 
