@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T07:48:26.008161+00:00
+- generated_at: 2026-06-09T07:54:23.794888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6122**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T07:48:23.310473+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=63166.7
-- Funnel: target 774 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1
+- 更新: 2026-06-09T07:54:20.713997+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=63158.8
+- Funnel: target 774 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +55.71% | $25,622,189.87 |
-| SLX/USDT:USDT | +47.46% | $2,459,207.92 |
-| POWER/USDT:USDT | +13.98% | $1,785,886.29 |
-| LIGHT/USDT:USDT | +9.64% | $1,083,119.22 |
-| SKHYNIXSTOCK/USDT:USDT | +8.17% | $4,358,229.72 |
+| ESPORTS/USDT:USDT | +57.56% | $25,677,555.97 |
+| SLX/USDT:USDT | +44.72% | $2,551,610.48 |
+| POWER/USDT:USDT | +13.72% | $1,811,739.53 |
+| LIGHT/USDT:USDT | +11.01% | $1,087,905.58 |
+| SKHYNIXSTOCK/USDT:USDT | +8.30% | $4,367,471.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.45% | +4.63% |
-| CTR/USDT:USDT | below_1h_threshold | +3.30% | +3.48% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.45% | +2.63% |
-| BANK/USDT:USDT | below_1h_threshold | +2.18% | +2.36% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.03% | +2.21% |
+| CTR/USDT:USDT | below_1h_threshold | +4.34% | +4.53% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.66% | +1.86% |
+| MOVE/USDT:USDT | below_1h_threshold | +1.64% | +1.83% |
+| WLD/USDT:USDT | below_1h_threshold | +1.60% | +1.79% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.56% | +1.75% |
 
 ## 5. 次に見るべき不足
 
