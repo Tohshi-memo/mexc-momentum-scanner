@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T01:17:51.268162+00:00
+- generated_at: 2026-06-09T01:23:45.425134+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6108**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T01:17:48.347203+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=62678.0
+- 更新: 2026-06-09T01:23:42.655848+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=62797.3
 - Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1
+- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVE/USDT:USDT | +35.02% | $2,434,995.13 |
-| ESPORTS/USDT:USDT | +33.80% | $23,689,186.10 |
-| 4/USDT:USDT | +28.83% | $1,506,540.46 |
-| PIPPIN/USDT:USDT | +13.10% | $31,383,366.09 |
-| FOLKS/USDT:USDT | +8.77% | $1,406,399.29 |
+| MOVE/USDT:USDT | +41.69% | $2,638,111.25 |
+| ESPORTS/USDT:USDT | +34.10% | $23,710,430.38 |
+| 4/USDT:USDT | +31.79% | $1,514,877.65 |
+| PIPPIN/USDT:USDT | +13.29% | $31,410,109.06 |
+| FOLKS/USDT:USDT | +8.35% | $1,409,049.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNT/USDT:USDT | below_1h_threshold | +2.35% | +2.11% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.71% | +1.47% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.33% | +1.09% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.27% | +1.03% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.90% | +0.66% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.93% | +2.50% |
+| 4/USDT:USDT | below_1h_threshold | +2.63% | +2.20% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.66% | +1.22% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.64% | +1.21% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.49% | +1.06% |
 
 ## 5. 次に見るべき不足
 
