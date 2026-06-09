@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-09T08:23:48.920473+00:00
+- generated_at: 2026-06-09T08:30:22.852335+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6122**
+- closed shadow trades: **6123**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6122, expectancy=-0.05%
+- 全期間 MARKET基準: n=6123, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.07%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,10 +31,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 2/2 | 100.0% | +2.00% | **+2.00%** |
 | ASK_LONG | 20/20 | 100.0% | +1.52% | **+1.52%** |
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.46% | **+1.36%** |
-| LIMIT_ATR_LONG | 11/20 | 55.0% | +2.20% | **+1.21%** |
+| LIMIT_5PCT_LONG | 7/20 | 35.0% | +3.30% | **+1.16%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +1.99% | **+1.09%** |
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +1.65% | **+1.07%** |
 
 ## 2. $100 Live Portfolio
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$155.00** / 初期 $100.00 (+55.00%)
-- 確定: 1162件 (Win 291 / Loss 357 / Flat 514) / skip 1521件
-- 成長率目線: 平均log +0.000377 / 幾何平均 +0.038% per trade / maxDD +7.25%
+- 残高: **$154.22** / 初期 $100.00 (+54.22%)
+- 確定: 1163件 (Win 291 / Loss 358 / Flat 514) / skip 1521件
+- 成長率目線: 平均log +0.000373 / 幾何平均 +0.037% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SLX/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $155.00
+- 最新: SLX/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $154.22
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T08:23:46.266344+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=62916.9
+- 更新: 2026-06-09T08:30:20.032732+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=62812.7
 - Funnel: target 774 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +59.39% | $22,543,383.56 |
-| SLX/USDT:USDT | +47.40% | $3,072,266.24 |
-| POWER/USDT:USDT | +16.24% | $1,874,989.52 |
-| LIGHT/USDT:USDT | +11.01% | $1,100,530.70 |
-| FOLKS/USDT:USDT | +10.62% | $1,610,854.00 |
+| ESPORTS/USDT:USDT | +57.49% | $22,645,630.19 |
+| SLX/USDT:USDT | +38.68% | $3,235,468.02 |
+| POWER/USDT:USDT | +15.13% | $1,881,180.80 |
+| FOLKS/USDT:USDT | +13.25% | $1,703,780.49 |
+| LIGHT/USDT:USDT | +11.29% | $1,107,451.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +4.18% | +4.58% |
-| FOLKS/USDT:USDT | below_1h_threshold | +2.99% | +3.39% |
-| STG/USDT:USDT | below_1h_threshold | +2.80% | +3.20% |
-| POWER/USDT:USDT | below_1h_threshold | +2.53% | +2.93% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.64% | +2.04% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.98% | +5.55% |
+| ZEST/USDT:USDT | below_1h_threshold | +4.54% | +5.10% |
+| CTR/USDT:USDT | below_1h_threshold | +2.05% | +2.62% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +2.18% |
+| POWER/USDT:USDT | below_1h_threshold | +1.44% | +2.00% |
 
 ## 5. 次に見るべき不足
 
