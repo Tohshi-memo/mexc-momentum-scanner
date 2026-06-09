@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T03:30:53.671418+00:00
+- generated_at: 2026-06-09T03:36:35.623460+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6113**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T03:30:50.552100+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62799.4
-- Funnel: target 777 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-06-09T03:36:32.395966+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=62728.9
+- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1
+- Strict後reject: 4h RSI 71.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +45.26% | $23,874,378.61 |
-| SLX/USDT:USDT | +16.80% | $1,180,751.29 |
-| MOVE/USDT:USDT | +12.83% | $4,011,729.07 |
-| CTR/USDT:USDT | +9.83% | $1,040,029.28 |
-| FOLKS/USDT:USDT | +6.08% | $1,482,978.45 |
+| ESPORTS/USDT:USDT | +46.20% | $24,002,498.21 |
+| SLX/USDT:USDT | +16.06% | $1,189,454.35 |
+| MOVE/USDT:USDT | +13.92% | $4,053,695.90 |
+| CTR/USDT:USDT | +11.64% | $1,049,985.77 |
+| FOLKS/USDT:USDT | +5.31% | $1,486,326.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +3.27% | +3.33% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.65% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.31% | +1.38% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.37% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.12% |
+| SLX/USDT:USDT | below_1h_threshold | +2.41% | +2.59% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.27% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.60% |
+| CTR/USDT:USDT | below_1h_threshold | +1.26% | +1.44% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.20% | +1.38% |
 
 ## 5. 次に見るべき不足
 
