@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T01:58:56.580751+00:00
+- generated_at: 2026-06-09T02:04:51.942866+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6110**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T01:58:51.059519+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=62755.9
-- Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-09T02:04:49.400826+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=62814.4
+- Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +23.82% | $23,905,104.37 |
-| MOVE/USDT:USDT | +18.78% | $3,387,187.96 |
-| SLX/USDT:USDT | +15.04% | $1,018,683.77 |
-| FOLKS/USDT:USDT | +6.02% | $1,433,072.03 |
-| LAYER/USDT:USDT | +4.82% | $2,463,347.77 |
+| ESPORTS/USDT:USDT | +22.31% | $23,589,711.92 |
+| MOVE/USDT:USDT | +14.57% | $3,478,139.81 |
+| FOLKS/USDT:USDT | +5.49% | $1,438,152.32 |
+| LAYER/USDT:USDT | +4.09% | $2,464,417.85 |
+| CHZ/USDT:USDT | +3.44% | $4,958,050.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +3.97% | +3.60% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.87% | +3.50% |
-| CHZ/USDT:USDT | below_1h_threshold | +2.32% | +1.95% |
-| GLWSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.35% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +0.98% |
+| LAYER/USDT:USDT | below_1h_threshold | +0.85% | +0.72% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.52% | +0.39% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.28% | +0.15% |
+| DASH/USDT:USDT | below_1h_threshold | +0.27% | +0.14% |
+| LLYSTOCK/USDT:USDT | below_1h_threshold | +0.24% | +0.11% |
 
 ## 5. 次に見るべき不足
 
