@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-08T23:54:24.855431+00:00
+- generated_at: 2026-06-09T00:00:10.092860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6103**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-08T23:54:22.372343+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.64% price=63000.0
+- 更新: 2026-06-09T00:00:07.502443+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=63049.1
 - Funnel: target 777 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +39.59% | $23,495,179.92 |
-| 4/USDT:USDT | +26.07% | $1,282,357.48 |
-| PIPPIN/USDT:USDT | +17.32% | $31,726,077.47 |
-| LAYER/USDT:USDT | +11.84% | $2,218,337.57 |
-| FOLKS/USDT:USDT | +6.86% | $1,264,693.52 |
+| ESPORTS/USDT:USDT | +37.42% | $23,528,118.44 |
+| 4/USDT:USDT | +28.32% | $1,304,242.70 |
+| PIPPIN/USDT:USDT | +18.19% | $31,828,829.66 |
+| LAYER/USDT:USDT | +11.84% | $2,231,445.06 |
+| B/USDT:USDT | +6.43% | $1,818,527.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.46% | +5.11% |
-| 4/USDT:USDT | below_1h_threshold | +2.66% | +3.31% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.24% | +2.88% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +2.63% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.85% | +1.49% |
+| 4/USDT:USDT | below_1h_threshold | +4.50% | +5.06% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.95% | +3.52% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.84% | +3.40% |
+| CLO/USDT:USDT | below_1h_threshold | +2.61% | +3.17% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.86% |
 
 ## 5. 次に見るべき不足
 
