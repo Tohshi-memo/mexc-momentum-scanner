@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-09T18:43:53.775836+00:00
+- generated_at: 2026-06-09T18:50:23.369582+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6155**
+- closed shadow trades: **6156**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6155, expectancy=-0.05%
+- 全期間 MARKET基準: n=6156, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT | 16/20 | 80.0% | +0.90% | **+0.72%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +0.42% | **+0.32%** |
 | ASK | 20/20 | 100.0% | +0.23% | **+0.23%** |
 | MARKET | 20/20 | 100.0% | +0.20% | **+0.20%** |
 | LIMIT_FIB1618 | 2/20 | 10.0% | +0.66% | **+0.07%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.07% | **+0.06%** |
+| LIMIT_6PCT | 3/20 | 15.0% | -0.08% | **-0.01%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$148.01** / 初期 $100.00 (+48.01%)
-- 確定: 1188件 (Win 297 / Loss 374 / Flat 517) / skip 1528件
+- 確定: 1188件 (Win 297 / Loss 374 / Flat 517) / skip 1529件
 - 成長率目線: 平均log +0.000330 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: EPIC/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $148.01
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T18:43:50.852571+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=61646.4
+- 更新: 2026-06-09T18:50:20.398250+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=61649.0
 - Funnel: target 778 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +15.09% | $21,884,261.13 |
-| HOME/USDT:USDT | +14.18% | $3,776,609.18 |
-| SENT/USDT:USDT | +11.80% | $1,285,539.52 |
-| BTW/USDT:USDT | +9.91% | $4,637,837.46 |
-| BLESS/USDT:USDT | +8.45% | $4,604,545.43 |
+| ESPORTS/USDT:USDT | +15.05% | $21,948,788.04 |
+| HOME/USDT:USDT | +14.22% | $3,783,225.53 |
+| SENT/USDT:USDT | +10.82% | $1,301,215.74 |
+| BTW/USDT:USDT | +10.18% | $4,684,095.67 |
+| LIT/USDT:USDT | +8.59% | $3,232,101.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPN/USDT:USDT | below_1h_threshold | +4.72% | +4.75% |
-| BSB/USDT:USDT | below_1h_threshold | +4.38% | +4.41% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.23% | +4.26% |
-| HOME/USDT:USDT | below_1h_threshold | +3.15% | +3.18% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.66% | +2.70% |
+| OPN/USDT:USDT | below_1h_threshold | +4.37% | +4.40% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.24% | +4.27% |
+| HOME/USDT:USDT | below_1h_threshold | +3.18% | +3.21% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.68% | +2.71% |
+| 4/USDT:USDT | below_1h_threshold | +2.21% | +2.24% |
 
 ## 5. 次に見るべき不足
 
