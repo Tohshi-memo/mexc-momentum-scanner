@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T08:30:22.852335+00:00
+- generated_at: 2026-06-09T08:36:49.693859+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6123**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T08:30:20.032732+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=62812.7
-- Funnel: target 774 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-09T08:36:47.040031+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=62878.7
+- Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +57.49% | $22,645,630.19 |
-| SLX/USDT:USDT | +38.68% | $3,235,468.02 |
-| POWER/USDT:USDT | +15.13% | $1,881,180.80 |
-| FOLKS/USDT:USDT | +13.25% | $1,703,780.49 |
-| LIGHT/USDT:USDT | +11.29% | $1,107,451.61 |
+| ESPORTS/USDT:USDT | +56.71% | $22,752,893.73 |
+| SLX/USDT:USDT | +39.14% | $3,310,049.69 |
+| POWER/USDT:USDT | +15.99% | $1,892,545.65 |
+| FOLKS/USDT:USDT | +13.67% | $1,734,942.76 |
+| LIGHT/USDT:USDT | +9.73% | $1,118,676.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +4.98% | +5.55% |
-| ZEST/USDT:USDT | below_1h_threshold | +4.54% | +5.10% |
-| CTR/USDT:USDT | below_1h_threshold | +2.05% | +2.62% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +2.18% |
-| POWER/USDT:USDT | below_1h_threshold | +1.44% | +2.00% |
+| ZEST/USDT:USDT | below_1h_threshold | +4.02% | +4.49% |
+| POWER/USDT:USDT | below_1h_threshold | +2.19% | +2.65% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +2.01% |
+| GLWSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.97% |
+| JTO/USDT:USDT | below_1h_threshold | +1.48% | +1.94% |
 
 ## 5. 次に見るべき不足
 
