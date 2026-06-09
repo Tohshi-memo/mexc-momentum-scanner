@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T12:32:58.287201+00:00
+- generated_at: 2026-06-09T12:38:53.558617+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6135**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T12:32:55.729072+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=62616.9
-- Funnel: target 774 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-09T12:38:50.939094+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=62546.7
+- Funnel: target 774 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +55.39% | $22,052,551.67 |
-| SLX/USDT:USDT | +27.29% | $5,441,571.07 |
-| POWER/USDT:USDT | +23.43% | $2,934,128.90 |
-| PLAY/USDT:USDT | +17.05% | $2,082,368.00 |
-| WLD/USDT:USDT | +11.49% | $132,352,997.38 |
+| ESPORTS/USDT:USDT | +56.17% | $22,202,045.08 |
+| SLX/USDT:USDT | +27.86% | $5,447,515.46 |
+| POWER/USDT:USDT | +21.53% | $3,035,690.08 |
+| PLAY/USDT:USDT | +17.24% | $2,110,948.92 |
+| CHIP/USDT:USDT | +11.82% | $2,014,617.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +4.70% | +4.80% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.85% | +2.95% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.83% | +2.93% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.46% | +2.56% |
-| JTO/USDT:USDT | below_1h_threshold | +2.03% | +2.13% |
+| WLD/USDT:USDT | below_1h_threshold | +4.46% | +4.68% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.42% | +3.63% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.40% | +3.61% |
+| JTO/USDT:USDT | below_1h_threshold | +2.33% | +2.55% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.05% | +2.26% |
 
 ## 5. 次に見るべき不足
 
