@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T14:53:22.346368+00:00
+- generated_at: 2026-06-09T14:59:12.178517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6144**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T14:53:19.740384+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.56% price=61274.0
+- 更新: 2026-06-09T14:59:09.586011+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.34% price=61411.9
 - Funnel: target 774 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +37.31% | $24,165,329.60 |
-| SLX/USDT:USDT | +31.85% | $5,866,620.53 |
-| JCT/USDT:USDT | +27.72% | $1,814,655.85 |
-| VELVET/USDT:USDT | +23.15% | $22,965,696.12 |
-| ZEREBRO/USDT:USDT | +19.50% | $1,035,552.29 |
+| ESPORTS/USDT:USDT | +37.41% | $24,248,272.33 |
+| SLX/USDT:USDT | +35.38% | $5,920,272.33 |
+| JCT/USDT:USDT | +27.01% | $1,860,258.86 |
+| VELVET/USDT:USDT | +23.36% | $23,105,805.07 |
+| ZEREBRO/USDT:USDT | +20.74% | $1,040,443.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.11% | +5.67% |
-| FOLKS/USDT:USDT | below_1h_threshold | +3.60% | +5.16% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.79% | +4.35% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.58% | +4.14% |
-| SLX/USDT:USDT | below_1h_threshold | +0.92% | +2.48% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.45% | +5.79% |
+| SLX/USDT:USDT | below_1h_threshold | +3.98% | +5.32% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.64% | +4.98% |
+| FOLKS/USDT:USDT | below_1h_threshold | +3.60% | +4.93% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.45% | +2.79% |
 
 ## 5. 次に見るべき不足
 
