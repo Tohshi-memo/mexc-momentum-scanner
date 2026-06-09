@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T01:01:38.352426+00:00
+- generated_at: 2026-06-09T01:07:27.164949+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6108**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T01:01:35.413145+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=62635.5
-- Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-09T01:07:24.397462+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=62592.3
+- Funnel: target 777 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +34.01% | $23,617,334.32 |
-| 4/USDT:USDT | +29.75% | $1,489,229.65 |
-| MOVE/USDT:USDT | +21.46% | $1,760,376.05 |
-| PIPPIN/USDT:USDT | +13.38% | $31,290,054.27 |
-| LAYER/USDT:USDT | +7.89% | $2,400,465.99 |
+| MOVE/USDT:USDT | +44.23% | $1,977,669.98 |
+| ESPORTS/USDT:USDT | +34.18% | $23,644,828.24 |
+| 4/USDT:USDT | +29.55% | $1,493,762.57 |
+| PIPPIN/USDT:USDT | +12.87% | $31,340,812.62 |
+| FOLKS/USDT:USDT | +8.53% | $1,385,425.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +0.91% | +0.73% |
-| 4/USDT:USDT | below_1h_threshold | +0.64% | +0.46% |
-| MOVE/USDT:USDT | below_1h_threshold | +0.60% | +0.42% |
-| STG/USDT:USDT | below_1h_threshold | +0.46% | +0.28% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.42% | +0.25% |
+| SNT/USDT:USDT | below_1h_threshold | +2.07% | +1.97% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.77% | +1.66% |
+| 4/USDT:USDT | below_1h_threshold | +0.80% | +0.69% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.78% | +0.67% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.55% | +0.45% |
 
 ## 5. 次に見るべき不足
 
