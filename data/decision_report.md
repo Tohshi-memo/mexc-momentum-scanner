@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-09T14:41:44.611899+00:00
+- generated_at: 2026-06-09T14:47:32.452224+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6143**
+- closed shadow trades: **6144**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.25% / filled 20/20。**
-- 全期間 MARKET基準: n=6143, expectancy=-0.05%
+- 全期間 MARKET基準: n=6144, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+1.25%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$148.88** / 初期 $100.00 (+48.88%)
-- 確定: 1183件 (Win 296 / Loss 371 / Flat 516) / skip 1521件
+- 確定: 1184件 (Win 296 / Loss 371 / Flat 517) / skip 1521件
 - 成長率目線: 平均log +0.000336 / 幾何平均 +0.034% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $148.88
+- 最新: FOLKS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $148.88
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T14:41:41.836844+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.24% price=61474.1
+- 更新: 2026-06-09T14:47:29.238906+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.60% price=61247.0
 - Funnel: target 774 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1
+- Strict後reject: 4h RSI 80.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +42.46% | $24,067,887.28 |
-| JCT/USDT:USDT | +35.78% | $1,602,024.91 |
-| SLX/USDT:USDT | +29.00% | $5,813,738.67 |
-| VELVET/USDT:USDT | +24.99% | $22,652,699.85 |
-| POWER/USDT:USDT | +20.62% | $4,661,729.23 |
+| ESPORTS/USDT:USDT | +38.71% | $24,111,011.90 |
+| JCT/USDT:USDT | +32.65% | $1,676,402.10 |
+| SLX/USDT:USDT | +30.37% | $5,830,733.34 |
+| VELVET/USDT:USDT | +24.43% | $22,764,766.49 |
+| POWER/USDT:USDT | +21.30% | $4,687,873.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +2.95% | +4.19% |
-| JCT/USDT:USDT | below_1h_threshold | +2.70% | +3.94% |
-| POWER/USDT:USDT | below_1h_threshold | +2.47% | +3.71% |
-| FOLKS/USDT:USDT | below_1h_threshold | +2.34% | +3.58% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.76% | +3.00% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.55% | +5.15% |
+| FOLKS/USDT:USDT | below_1h_threshold | +3.43% | +5.04% |
+| POWER/USDT:USDT | below_1h_threshold | +2.59% | +4.19% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.58% | +4.18% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.72% | +2.33% |
 
 ## 5. 次に見るべき不足
 
