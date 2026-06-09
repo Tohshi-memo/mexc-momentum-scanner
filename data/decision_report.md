@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-09T06:08:06.230619+00:00
+- generated_at: 2026-06-09T06:13:57.521336+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6119**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-09T06:08:03.666841+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63357.3
-- Funnel: target 774 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-09T06:13:54.964913+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63339.3
+- Funnel: target 774 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +45.82% | $24,702,478.73 |
-| ZEST/USDT:USDT | +24.26% | $1,283,352.05 |
-| SLX/USDT:USDT | +21.59% | $1,408,715.58 |
-| POWER/USDT:USDT | +11.52% | $1,378,593.62 |
-| SKHYNIXSTOCK/USDT:USDT | +8.48% | $4,136,747.45 |
+| ESPORTS/USDT:USDT | +48.35% | $24,786,399.33 |
+| SLX/USDT:USDT | +25.18% | $1,454,673.98 |
+| ZEST/USDT:USDT | +14.16% | $1,361,071.74 |
+| POWER/USDT:USDT | +11.46% | $1,394,051.02 |
+| SKHYNIXSTOCK/USDT:USDT | +8.95% | $4,163,998.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.48% | +2.42% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.67% | +1.61% |
-| POWER/USDT:USDT | below_1h_threshold | +1.32% | +1.26% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.81% | +0.75% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.37% | +3.33% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.20% | +3.17% |
+| SLX/USDT:USDT | below_1h_threshold | +2.34% | +2.30% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| POWER/USDT:USDT | below_1h_threshold | +1.27% | +1.24% |
 
 ## 5. 次に見るべき不足
 
