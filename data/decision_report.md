@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T06:11:23.819158+00:00
+- generated_at: 2026-06-10T06:17:58.191264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6187**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T06:11:20.680268+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=61318.3
+- 更新: 2026-06-10T06:17:55.617327+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=61398.4
 - Funnel: target 779 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +32.63% | $5,458,816.25 |
-| BTW/USDT:USDT | +23.52% | $28,702,412.43 |
-| UB/USDT:USDT | +9.33% | $1,732,035.66 |
-| BABY/USDT:USDT | +8.92% | $1,019,115.61 |
-| HOME/USDT:USDT | +8.81% | $4,122,179.15 |
+| STG/USDT:USDT | +30.26% | $5,638,993.30 |
+| BTW/USDT:USDT | +22.97% | $28,789,346.48 |
+| UB/USDT:USDT | +11.09% | $1,760,124.50 |
+| BABY/USDT:USDT | +10.03% | $1,038,117.54 |
+| OPN/USDT:USDT | +8.48% | $2,231,373.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EWY/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
-| UB/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.72% | +0.73% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| UB/USDT:USDT | below_1h_threshold | +2.18% | +2.06% |
+| EWY/USDT:USDT | below_1h_threshold | +1.64% | +1.52% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.40% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.31% | +1.18% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.15% |
 
 ## 5. 次に見るべき不足
 
