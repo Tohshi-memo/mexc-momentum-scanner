@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T14:06:50.147847+00:00
+- generated_at: 2026-06-10T14:12:57.933385+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6218**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T14:06:46.627748+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=62184.1
+- 更新: 2026-06-10T14:12:55.315655+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62153.0
 - Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +52.92% | $18,121,940.57 |
-| MAGMA/USDT:USDT | +47.99% | $2,144,192.06 |
-| ESPORTS/USDT:USDT | +44.36% | $25,156,251.18 |
-| HMSTR/USDT:USDT | +34.61% | $1,125,466.31 |
-| BLEND/USDT:USDT | +34.12% | $2,296,546.13 |
+| STG/USDT:USDT | +47.43% | $18,444,379.51 |
+| ESPORTS/USDT:USDT | +46.18% | $25,221,971.04 |
+| MAGMA/USDT:USDT | +45.79% | $2,183,726.24 |
+| BLEND/USDT:USDT | +34.14% | $2,305,263.95 |
+| HMSTR/USDT:USDT | +29.12% | $1,168,976.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.02% | +1.92% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.02% | +1.92% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.80% | +1.70% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.53% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.15% | +1.05% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.19% | +4.14% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.64% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.91% | +1.86% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.71% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
 
 ## 5. 次に見るべき不足
 
