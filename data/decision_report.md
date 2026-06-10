@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T00:06:50.130316+00:00
+- generated_at: 2026-06-10T00:12:51.803942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6169**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T00:06:46.617964+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=61821.4
+- 更新: 2026-06-10T00:12:49.255362+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=61799.4
 - Funnel: target 778 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +39.33% | $10,141,153.26 |
-| STG/USDT:USDT | +24.73% | $2,622,034.21 |
-| H/USDT:USDT | +20.24% | $50,977,157.86 |
-| HOME/USDT:USDT | +18.61% | $4,436,190.51 |
-| BLESS/USDT:USDT | +10.80% | $4,281,818.93 |
+| BTW/USDT:USDT | +35.44% | $10,348,355.18 |
+| STG/USDT:USDT | +24.41% | $2,663,871.24 |
+| HOME/USDT:USDT | +18.43% | $4,441,120.88 |
+| H/USDT:USDT | +15.85% | $51,098,665.80 |
+| UB/USDT:USDT | +9.52% | $1,345,551.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EWY/USDT:USDT | below_1h_threshold | +2.64% | +2.44% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.17% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.02% | +1.82% |
-| BTW/USDT:USDT | below_1h_threshold | +1.90% | +1.70% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.56% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.12% | +2.95% |
+| EWY/USDT:USDT | below_1h_threshold | +2.84% | +2.67% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.36% | +2.19% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.10% | +1.93% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.78% |
 
 ## 5. 次に見るべき不足
 
