@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T22:51:18.707030+00:00
+- generated_at: 2026-06-10T22:57:20.469956+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6276**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T22:51:15.311160+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=61415.1
+- 更新: 2026-06-10T22:57:17.210915+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=61399.1
 - Funnel: target 785 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.9 >= 65=1, 4h RSI 72.0 >= 65=1
+- Strict後reject: 4h RSI 83.7 >= 65=1, 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +90.63% | $35,891,387.57 |
-| BEAT/USDT:USDT | +27.62% | $179,115,925.81 |
-| STRAX/USDT:USDT | +13.71% | $1,258,238.30 |
-| FOLKS/USDT:USDT | +7.10% | $12,135,933.48 |
-| STG/USDT:USDT | +5.59% | $23,175,348.26 |
+| VELVET/USDT:USDT | +90.72% | $36,361,852.80 |
+| BEAT/USDT:USDT | +27.50% | $180,551,626.00 |
+| STRAX/USDT:USDT | +13.11% | $1,258,881.14 |
+| FOLKS/USDT:USDT | +8.99% | $12,178,487.76 |
+| POWER/USDT:USDT | +5.87% | $1,487,110.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XMR/USDT:USDT | below_1h_threshold | +3.06% | +2.92% |
-| HMSTR/USDT:USDT | below_1h_threshold | +2.76% | +2.62% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.37% | +2.23% |
-| KITE/USDT:USDT | below_1h_threshold | +1.32% | +1.17% |
-| MYX/USDT:USDT | below_1h_threshold | +1.13% | +0.98% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.83% | +2.71% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.38% | +2.26% |
+| XMR/USDT:USDT | below_1h_threshold | +2.33% | +2.21% |
+| HMSTR/USDT:USDT | below_1h_threshold | +2.33% | +2.21% |
+| KITE/USDT:USDT | below_1h_threshold | +1.96% | +1.84% |
 
 ## 5. 次に見るべき不足
 
