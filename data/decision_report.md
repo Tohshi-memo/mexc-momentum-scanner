@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T02:31:25.932234+00:00
+- generated_at: 2026-06-10T02:37:09.472709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6178**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T02:31:23.338802+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=61449.1
+- 更新: 2026-06-10T02:37:06.898427+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=61345.9
 - Funnel: target 778 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +83.83% | $18,848,251.48 |
-| STG/USDT:USDT | +28.65% | $3,900,444.81 |
-| HOME/USDT:USDT | +12.91% | $4,375,472.61 |
-| OPN/USDT:USDT | +11.30% | $2,036,643.56 |
-| SENT/USDT:USDT | +10.76% | $1,720,373.40 |
+| BTW/USDT:USDT | +84.48% | $19,010,561.49 |
+| STG/USDT:USDT | +29.91% | $3,919,891.39 |
+| HOME/USDT:USDT | +12.95% | $4,378,202.61 |
+| SENT/USDT:USDT | +10.82% | $1,738,097.41 |
+| JCT/USDT:USDT | +9.81% | $3,791,973.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JCT/USDT:USDT | below_1h_threshold | +4.17% | +4.55% |
-| ZEST/USDT:USDT | below_1h_threshold | +2.34% | +2.71% |
-| BTW/USDT:USDT | below_1h_threshold | +1.63% | +2.00% |
-| OPN/USDT:USDT | below_1h_threshold | +1.61% | +1.99% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.35% | +1.73% |
+| H/USDT:USDT | below_1h_threshold | +4.51% | +5.06% |
+| JCT/USDT:USDT | below_1h_threshold | +4.27% | +4.82% |
+| BTW/USDT:USDT | below_1h_threshold | +2.19% | +2.73% |
+| SENT/USDT:USDT | below_1h_threshold | +0.89% | +1.43% |
+| UAI/USDT:USDT | below_1h_threshold | +0.85% | +1.40% |
 
 ## 5. 次に見るべき不足
 
