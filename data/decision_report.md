@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-10T11:44:42.004849+00:00
+- generated_at: 2026-06-10T11:50:56.251606+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6212**
+- closed shadow trades: **6213**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6212, expectancy=-0.05%
+- 全期間 MARKET基準: n=6213, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,7 +23,7 @@
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +0.98% | **+0.98%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_FIB1272 | 5/20 | 25.0% | +2.68% | **+0.67%** |
+| LIMIT_FIB1272 | 6/20 | 30.0% | +1.97% | **+0.59%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +2.27% | **+0.34%** |
 | MARKET | 20/20 | 100.0% | +0.20% | **+0.20%** |
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR_LONG | 10/20 | 50.0% | +2.17% | **+1.09%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| ASK_LONG | 20/20 | 100.0% | +0.61% | **+0.61%** |
-| LIMIT_3PCT_LONG | 13/20 | 65.0% | +0.56% | **+0.36%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +2.70% | **+1.49%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.40% | **+0.40%** |
+| LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.83% | **+0.37%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.83% | **+0.33%** |
+| ASK_LONG | 20/20 | 100.0% | +0.20% | **+0.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$149.75** / 初期 $100.00 (+49.75%)
-- 確定: 1228件 (Win 306 / Loss 383 / Flat 539) / skip 1545件
-- 成長率目線: 平均log +0.000329 / 幾何平均 +0.033% per trade / maxDD +7.25%
+- 残高: **$149.00** / 初期 $100.00 (+49.00%)
+- 確定: 1229件 (Win 306 / Loss 384 / Flat 539) / skip 1545件
+- 成長率目線: 平均log +0.000324 / 幾何平均 +0.032% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BLEND/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $149.75
+- 最新: BTW/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $149.00
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T11:44:38.657629+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=60995.9
-- Funnel: target 785 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
+- 更新: 2026-06-10T11:50:52.384063+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.56% price=61008.0
+- Funnel: target 785 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.5 >= 65=1, 4h RSI 71.9 >= 65=1, 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +52.49% | $13,096,154.19 |
-| MAGMA/USDT:USDT | +40.48% | $1,075,544.71 |
-| BLEND/USDT:USDT | +36.24% | $1,800,556.76 |
-| ESPORTS/USDT:USDT | +35.59% | $27,612,702.39 |
-| KAT/USDT:USDT | +23.26% | $1,157,377.70 |
+| STG/USDT:USDT | +51.45% | $13,185,006.41 |
+| MAGMA/USDT:USDT | +42.27% | $1,118,572.75 |
+| ESPORTS/USDT:USDT | +37.21% | $27,715,954.60 |
+| BLEND/USDT:USDT | +31.28% | $1,863,749.69 |
+| BTW/USDT:USDT | +28.76% | $31,600,806.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +4.57% | +5.14% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.91% | +4.48% |
-| H/USDT:USDT | below_1h_threshold | +3.34% | +3.91% |
-| USOIL/USDT:USDT | below_1h_threshold | +2.20% | +2.77% |
-| UKOIL/USDT:USDT | below_1h_threshold | +2.12% | +2.70% |
+| STG/USDT:USDT | below_1h_threshold | +3.61% | +4.17% |
+| H/USDT:USDT | below_1h_threshold | +2.33% | +2.88% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.07% | +2.63% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.99% | +2.54% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.56% | +2.11% |
 
 ## 5. 次に見るべき不足
 
