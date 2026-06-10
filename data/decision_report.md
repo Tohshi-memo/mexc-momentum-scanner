@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T14:43:26.155604+00:00
+- generated_at: 2026-06-10T14:49:20.978195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6219**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T14:43:22.967853+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=62015.5
-- Funnel: target 785 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-06-10T14:49:17.897391+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=61918.5
+- Funnel: target 785 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.6 >= 65=1, 4h RSI 80.7 >= 65=1
+- Strict後reject: 4h RSI 67.0 >= 65=1, 4h RSI 81.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +51.70% | $19,323,511.75 |
-| MAGMA/USDT:USDT | +45.17% | $2,312,766.51 |
-| ESPORTS/USDT:USDT | +41.77% | $25,709,812.50 |
-| HMSTR/USDT:USDT | +36.59% | $1,426,109.24 |
-| BLEND/USDT:USDT | +32.06% | $2,346,042.03 |
+| STRAX/USDT:USDT | +51.05% | $1,000,922.23 |
+| STG/USDT:USDT | +50.08% | $19,445,023.57 |
+| MAGMA/USDT:USDT | +45.43% | $2,326,661.59 |
+| ESPORTS/USDT:USDT | +41.95% | $25,739,348.77 |
+| BLEND/USDT:USDT | +32.00% | $2,348,504.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.50% | +4.67% |
-| UAI/USDT:USDT | below_1h_threshold | +3.36% | +3.53% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.42% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.14% |
-| HOME/USDT:USDT | below_1h_threshold | +2.84% | +3.01% |
+| UAI/USDT:USDT | below_1h_threshold | +3.58% | +3.90% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.49% | +2.82% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.72% |
+| HOME/USDT:USDT | below_1h_threshold | +2.26% | +2.59% |
+| OPN/USDT:USDT | below_1h_threshold | +1.89% | +2.22% |
 
 ## 5. 次に見るべき不足
 
