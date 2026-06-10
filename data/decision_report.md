@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T12:32:56.018702+00:00
+- generated_at: 2026-06-10T12:38:47.559644+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6214**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T12:32:53.423759+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.90% price=61553.6
+- 更新: 2026-06-10T12:38:44.915742+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.11% price=61680.1
 - Funnel: target 785 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +60.43% | $14,873,907.24 |
-| MAGMA/USDT:USDT | +44.55% | $1,483,879.26 |
-| ESPORTS/USDT:USDT | +37.01% | $27,325,511.89 |
-| BLEND/USDT:USDT | +28.73% | $2,057,393.73 |
-| BTW/USDT:USDT | +26.51% | $31,892,772.96 |
+| STG/USDT:USDT | +59.71% | $15,212,992.03 |
+| MAGMA/USDT:USDT | +44.11% | $1,551,039.27 |
+| ESPORTS/USDT:USDT | +37.75% | $27,396,973.32 |
+| BLEND/USDT:USDT | +27.69% | $2,064,449.00 |
+| BTW/USDT:USDT | +26.84% | $31,929,064.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_relative_strength | +5.49% | +4.59% |
-| IO/USDT:USDT | below_1h_threshold | +4.60% | +3.69% |
-| FOLKS/USDT:USDT | below_1h_threshold | +4.26% | +3.36% |
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +4.07% | +3.17% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +2.80% |
+| STG/USDT:USDT | below_relative_strength | +5.73% | +4.62% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.66% | +3.55% |
+| DRAM/USDT:USDT | below_1h_threshold | +4.57% | +3.46% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.48% | +3.37% |
+| IO/USDT:USDT | below_1h_threshold | +4.29% | +3.18% |
 
 ## 5. 次に見るべき不足
 
