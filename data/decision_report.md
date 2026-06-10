@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T09:24:18.600452+00:00
+- generated_at: 2026-06-10T09:30:56.781099+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6206**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T09:24:15.634277+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=60881.9
-- Funnel: target 785 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-10T09:30:53.865165+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=61194.8
+- Funnel: target 785 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +47.28% | $10,116,847.47 |
-| ESPORTS/USDT:USDT | +37.55% | $26,164,419.66 |
-| KAT/USDT:USDT | +23.82% | $1,042,351.90 |
-| UB/USDT:USDT | +21.46% | $2,476,743.77 |
-| BEAT/USDT:USDT | +17.67% | $102,135,493.06 |
+| STG/USDT:USDT | +43.80% | $10,362,883.17 |
+| ESPORTS/USDT:USDT | +42.20% | $26,393,569.80 |
+| KAT/USDT:USDT | +26.48% | $1,044,360.57 |
+| UB/USDT:USDT | +22.79% | $2,524,068.41 |
+| BTW/USDT:USDT | +21.05% | $30,794,579.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.35% | +2.92% |
-| UB/USDT:USDT | below_1h_threshold | +2.17% | +2.74% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.24% | +1.81% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.07% | +1.64% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.90% | +1.47% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.41% | +4.47% |
+| UB/USDT:USDT | below_1h_threshold | +3.38% | +3.44% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.78% | +1.84% |
+| KAT/USDT:USDT | below_1h_threshold | +1.14% | +1.20% |
+| SENT/USDT:USDT | below_1h_threshold | +0.84% | +0.90% |
 
 ## 5. 次に見るべき不足
 
