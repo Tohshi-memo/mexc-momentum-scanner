@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T15:42:44.623844+00:00
+- generated_at: 2026-06-10T15:48:57.011126+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6225**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T15:42:38.747621+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=62266.9
+- 更新: 2026-06-10T15:48:50.843296+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=62268.0
 - Funnel: target 785 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STRAX/USDT:USDT | +50.18% | $1,039,279.66 |
-| MAGMA/USDT:USDT | +45.63% | $2,417,120.20 |
-| STG/USDT:USDT | +45.35% | $20,600,624.40 |
-| ESPORTS/USDT:USDT | +44.53% | $25,669,149.82 |
-| HMSTR/USDT:USDT | +40.49% | $2,310,135.33 |
+| STRAX/USDT:USDT | +48.69% | $1,042,543.57 |
+| MAGMA/USDT:USDT | +45.76% | $2,434,489.89 |
+| STG/USDT:USDT | +45.42% | $20,707,227.59 |
+| ESPORTS/USDT:USDT | +43.82% | $25,727,425.31 |
+| HMSTR/USDT:USDT | +42.47% | $2,349,683.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +3.72% | +3.56% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.33% | +2.17% |
-| SPX/USDT:USDT | below_1h_threshold | +2.27% | +2.11% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.71% | +1.55% |
-| LIT/USDT:USDT | below_1h_threshold | +1.42% | +1.27% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.49% | +4.33% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.59% | +1.43% |
+| LIT/USDT:USDT | below_1h_threshold | +1.23% | +1.07% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.53% |
+| SPX/USDT:USDT | below_1h_threshold | +0.67% | +0.51% |
 
 ## 5. 次に見るべき不足
 
