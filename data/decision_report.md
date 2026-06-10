@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T09:11:43.702248+00:00
+- generated_at: 2026-06-10T09:17:34.973674+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6205**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T09:11:40.634907+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=61158.7
-- Funnel: target 785 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-10T09:17:31.727049+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=61057.1
+- Funnel: target 785 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +53.32% | $9,763,914.59 |
-| ESPORTS/USDT:USDT | +41.22% | $25,601,284.76 |
-| KAT/USDT:USDT | +24.66% | $1,030,918.98 |
-| UB/USDT:USDT | +20.62% | $2,400,905.63 |
-| BEAT/USDT:USDT | +17.08% | $100,789,496.38 |
+| STG/USDT:USDT | +51.99% | $9,906,911.76 |
+| ESPORTS/USDT:USDT | +41.98% | $25,861,023.42 |
+| KAT/USDT:USDT | +25.87% | $1,035,382.51 |
+| BTW/USDT:USDT | +21.41% | $30,678,197.99 |
+| UB/USDT:USDT | +21.41% | $2,448,795.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.99% | +4.11% |
-| STG/USDT:USDT | below_1h_threshold | +1.96% | +2.07% |
-| UB/USDT:USDT | below_1h_threshold | +1.51% | +1.63% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.17% | +1.29% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.92% | +1.03% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.15% | +4.43% |
+| UB/USDT:USDT | below_1h_threshold | +2.17% | +2.45% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.12% | +1.40% |
+| STG/USDT:USDT | below_1h_threshold | +1.07% | +1.35% |
+| KAT/USDT:USDT | below_1h_threshold | +0.66% | +0.94% |
 
 ## 5. 次に見るべき不足
 
