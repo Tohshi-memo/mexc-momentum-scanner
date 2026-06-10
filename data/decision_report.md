@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T13:02:52.387613+00:00
+- generated_at: 2026-06-10T13:08:56.157396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6215**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T13:02:49.688900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=61479.5
+- 更新: 2026-06-10T13:08:53.420064+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=61582.3
 - Funnel: target 785 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +56.62% | $15,817,986.67 |
-| MAGMA/USDT:USDT | +42.42% | $1,855,795.91 |
-| ESPORTS/USDT:USDT | +36.32% | $25,914,194.04 |
-| BLEND/USDT:USDT | +32.60% | $2,135,101.80 |
-| BTW/USDT:USDT | +30.59% | $32,127,143.89 |
+| STG/USDT:USDT | +53.78% | $15,978,171.53 |
+| MAGMA/USDT:USDT | +42.84% | $1,887,778.02 |
+| ESPORTS/USDT:USDT | +42.01% | $26,028,129.17 |
+| BLEND/USDT:USDT | +35.29% | $2,169,903.42 |
+| BTW/USDT:USDT | +30.76% | $32,197,524.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.69% | +1.78% |
-| BLEND/USDT:USDT | below_1h_threshold | +1.49% | +1.58% |
-| LIT/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
-| OPN/USDT:USDT | below_1h_threshold | +0.46% | +0.54% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.40% | +0.49% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.04% | +3.96% |
+| BLEND/USDT:USDT | below_1h_threshold | +3.30% | +3.22% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.86% | +1.78% |
+| UB/USDT:USDT | below_1h_threshold | +1.03% | +0.95% |
+| CHZ/USDT:USDT | below_1h_threshold | +0.94% | +0.86% |
 
 ## 5. 次に見るべき不足
 
