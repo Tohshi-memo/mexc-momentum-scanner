@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-10T01:02:19.809908+00:00
+- generated_at: 2026-06-10T01:07:48.064574+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6171**
+- closed shadow trades: **6172**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6171, expectancy=-0.05%
+- 全期間 MARKET基準: n=6172, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$147.27** / 初期 $100.00 (+47.27%)
-- 確定: 1190件 (Win 297 / Loss 375 / Flat 518) / skip 1542件
+- 確定: 1190件 (Win 297 / Loss 375 / Flat 518) / skip 1543件
 - 成長率目線: 平均log +0.000325 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_5PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BTW/USDT:USDT `LIMIT_5PCT_LONG` EXPIRED account +0.00% 残高後 $147.27
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T01:02:16.651640+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=61856.1
-- Funnel: target 778 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-10T01:07:45.611853+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=61752.7
+- Funnel: target 778 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +53.64% | $11,932,154.36 |
-| STG/USDT:USDT | +27.00% | $2,932,884.55 |
-| HOME/USDT:USDT | +14.55% | $4,400,555.41 |
-| UB/USDT:USDT | +13.06% | $1,378,425.04 |
-| H/USDT:USDT | +11.09% | $49,180,753.40 |
+| BTW/USDT:USDT | +52.83% | $12,154,264.32 |
+| STG/USDT:USDT | +27.43% | $3,074,813.58 |
+| HOME/USDT:USDT | +14.44% | $4,408,391.70 |
+| UB/USDT:USDT | +12.87% | $1,391,192.27 |
+| SENT/USDT:USDT | +9.00% | $1,630,980.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +1.09% | +1.14% |
-| IO/USDT:USDT | below_1h_threshold | +0.98% | +1.03% |
-| LIT/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.60% | +0.65% |
-| UB/USDT:USDT | below_1h_threshold | +0.55% | +0.60% |
+| BTW/USDT:USDT | below_1h_threshold | +4.39% | +4.61% |
+| STG/USDT:USDT | below_1h_threshold | +1.72% | +1.94% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.07% | +1.28% |
+| LIT/USDT:USDT | below_1h_threshold | +1.02% | +1.24% |
+| IO/USDT:USDT | below_1h_threshold | +0.68% | +0.89% |
 
 ## 5. 次に見るべき不足
 
