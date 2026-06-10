@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T10:06:54.073200+00:00
+- generated_at: 2026-06-10T10:12:54.550472+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6209**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T10:06:51.068563+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=61159.9
-- Funnel: target 785 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-10T10:12:51.874307+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=61194.8
+- Funnel: target 785 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +46.46% | $11,054,423.16 |
-| KAT/USDT:USDT | +30.14% | $1,075,139.65 |
-| ESPORTS/USDT:USDT | +29.03% | $26,613,982.04 |
-| BTW/USDT:USDT | +20.55% | $30,925,456.13 |
-| BEAT/USDT:USDT | +17.09% | $98,877,003.83 |
+| STG/USDT:USDT | +46.28% | $11,311,571.40 |
+| BLEND/USDT:USDT | +41.01% | $1,009,281.68 |
+| ESPORTS/USDT:USDT | +29.00% | $26,662,045.04 |
+| KAT/USDT:USDT | +28.61% | $1,078,157.86 |
+| BTW/USDT:USDT | +21.23% | $30,939,971.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAT/USDT:USDT | below_1h_threshold | +2.46% | +2.70% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.58% | +1.81% |
-| IO/USDT:USDT | below_1h_threshold | +1.33% | +1.56% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.70% | +0.94% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.54% | +0.77% |
+| HOME/USDT:USDT | below_1h_threshold | +3.90% | +4.08% |
+| UB/USDT:USDT | below_1h_threshold | +2.22% | +2.40% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.57% | +1.75% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.53% | +1.71% |
+| KAT/USDT:USDT | below_1h_threshold | +1.26% | +1.44% |
 
 ## 5. 次に見るべき不足
 
