@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-10T16:34:41.757830+00:00
+- generated_at: 2026-06-10T16:40:48.378388+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6231**
+- closed shadow trades: **6232**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6231, expectancy=-0.05%
+- 全期間 MARKET基準: n=6232, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.97%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$149.00** / 初期 $100.00 (+49.00%)
-- 確定: 1229件 (Win 306 / Loss 384 / Flat 539) / skip 1563件
+- 確定: 1229件 (Win 306 / Loss 384 / Flat 539) / skip 1564件
 - 成長率目線: 平均log +0.000324 / 幾何平均 +0.032% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BTW/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $149.00
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T16:34:35.742855+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.65% price=62197.8
-- Funnel: target 785 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1, 4h RSI 69.5 >= 65=1
+- 更新: 2026-06-10T16:40:42.107297+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.44% price=62324.0
+- Funnel: target 785 → liquid 154 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 81.7 >= 65=1, 4h RSI 82.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPN/USDT:USDT | +10.17% | $4,076,933.83 |
-| VELVET/USDT:USDT | +6.32% | $13,892,167.98 |
-| BEAT/USDT:USDT | +6.28% | $111,760,893.57 |
-| FOLKS/USDT:USDT | +4.88% | $2,855,442.56 |
-| SKYAI/USDT:USDT | +4.18% | $5,587,428.06 |
+| VELVET/USDT:USDT | +8.42% | $14,046,632.84 |
+| FOLKS/USDT:USDT | +6.17% | $3,046,897.59 |
+| SKYAI/USDT:USDT | +5.82% | $5,628,812.35 |
+| BEAT/USDT:USDT | +5.71% | $112,561,126.44 |
+| HMSTR/USDT:USDT | +3.55% | $2,670,826.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +4.89% | +5.53% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.39% | +5.03% |
-| STG/USDT:USDT | below_1h_threshold | +3.82% | +4.47% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.01% | +3.66% |
-| BTW/USDT:USDT | below_1h_threshold | +2.73% | +3.37% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.75% | +4.19% |
+| STG/USDT:USDT | below_1h_threshold | +3.55% | +3.99% |
+| BTW/USDT:USDT | below_1h_threshold | +3.36% | +3.80% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.27% | +3.71% |
+| OPN/USDT:USDT | below_1h_threshold | +3.23% | +3.68% |
 
 ## 5. 次に見るべき不足
 
