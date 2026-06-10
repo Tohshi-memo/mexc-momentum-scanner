@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T08:35:25.459085+00:00
+- generated_at: 2026-06-10T08:41:11.421968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6203**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T08:35:22.919876+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=61340.0
+- 更新: 2026-06-10T08:41:08.844408+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.56% price=61308.7
 - Funnel: target 785 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +49.15% | $8,651,322.81 |
-| BTW/USDT:USDT | +27.33% | $30,128,113.22 |
-| KAT/USDT:USDT | +23.37% | $1,005,538.26 |
-| ESPORTS/USDT:USDT | +22.10% | $25,171,410.40 |
-| UB/USDT:USDT | +19.33% | $2,216,167.34 |
+| STG/USDT:USDT | +50.87% | $8,852,230.19 |
+| BTW/USDT:USDT | +30.70% | $30,204,563.39 |
+| ESPORTS/USDT:USDT | +27.41% | $25,468,616.40 |
+| KAT/USDT:USDT | +25.13% | $1,013,737.90 |
+| UB/USDT:USDT | +18.25% | $2,255,697.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.23% | +3.74% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.71% | +3.22% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.28% | +2.79% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.36% | +1.87% |
-| OPN/USDT:USDT | below_1h_threshold | +1.20% | +1.71% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.23% | +4.79% |
+| BTW/USDT:USDT | below_1h_threshold | +3.21% | +3.77% |
+| KAT/USDT:USDT | below_1h_threshold | +2.17% | +2.73% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.90% | +2.46% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.89% | +2.45% |
 
 ## 5. 次に見るべき不足
 
