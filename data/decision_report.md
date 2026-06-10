@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-10T12:09:02.767772+00:00
+- generated_at: 2026-06-10T12:15:12.893614+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6213**
+- closed shadow trades: **6214**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6213, expectancy=-0.05%
+- 全期間 MARKET基準: n=6214, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,7 +21,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +0.98% | **+0.98%** |
+| ASK | 20/20 | 100.0% | +0.96% | **+0.96%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_FIB1272 | 6/20 | 30.0% | +1.97% | **+0.59%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +2.27% | **+0.34%** |
@@ -35,7 +35,7 @@
 | MARKET_LONG | 20/20 | 100.0% | +0.40% | **+0.40%** |
 | LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.83% | **+0.37%** |
 | LIMIT_7PCT_LONG | 8/20 | 40.0% | +0.83% | **+0.33%** |
-| ASK_LONG | 20/20 | 100.0% | +0.20% | **+0.20%** |
+| ASK_LONG | 20/20 | 100.0% | +0.23% | **+0.23%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$149.00** / 初期 $100.00 (+49.00%)
-- 確定: 1229件 (Win 306 / Loss 384 / Flat 539) / skip 1545件
+- 確定: 1229件 (Win 306 / Loss 384 / Flat 539) / skip 1546件
 - 成長率目線: 平均log +0.000324 / 幾何平均 +0.032% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BTW/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $149.00
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T12:09:00.060430+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=61022.2
+- 更新: 2026-06-10T12:15:09.875044+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=61160.5
 - Funnel: target 785 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +50.44% | $13,633,019.84 |
-| MAGMA/USDT:USDT | +40.07% | $1,279,037.19 |
-| ESPORTS/USDT:USDT | +38.11% | $26,893,102.60 |
-| BLEND/USDT:USDT | +32.50% | $1,975,812.70 |
-| BTW/USDT:USDT | +27.19% | $31,678,139.24 |
+| STG/USDT:USDT | +53.07% | $13,781,999.07 |
+| MAGMA/USDT:USDT | +44.21% | $1,340,641.20 |
+| ESPORTS/USDT:USDT | +40.42% | $26,969,217.85 |
+| BLEND/USDT:USDT | +31.87% | $1,983,934.15 |
+| BTW/USDT:USDT | +26.45% | $31,727,748.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +4.10% | +4.07% |
-| BTW/USDT:USDT | below_1h_threshold | +1.39% | +1.36% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.69% | +0.66% |
-| UAI/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.21% | +3.95% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.63% | +2.37% |
+| IO/USDT:USDT | below_1h_threshold | +1.84% | +1.58% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.46% | +1.21% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.15% | +0.90% |
 
 ## 5. 次に見るべき不足
 
