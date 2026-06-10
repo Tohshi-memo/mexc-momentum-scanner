@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T21:37:24.123012+00:00
+- generated_at: 2026-06-10T21:43:34.926086+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6268**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T21:37:20.703465+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=61628.1
-- Funnel: target 785 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 88.3 >= 65=1
+- 更新: 2026-06-10T21:43:29.040322+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=61615.8
+- Funnel: target 785 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.4 >= 65=1, 4h RSI 88.5 >= 65=1, 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +59.12% | $31,103,631.14 |
-| BEAT/USDT:USDT | +35.48% | $157,764,521.66 |
-| STRAX/USDT:USDT | +13.96% | $1,235,240.56 |
-| SKYAI/USDT:USDT | +8.74% | $5,893,891.67 |
-| LAB/USDT:USDT | +6.01% | $24,563,128.27 |
+| VELVET/USDT:USDT | +57.36% | $31,610,598.43 |
+| BEAT/USDT:USDT | +36.67% | $158,728,203.73 |
+| STRAX/USDT:USDT | +12.25% | $1,237,528.28 |
+| FOLKS/USDT:USDT | +7.42% | $11,813,894.42 |
+| AGT/USDT:USDT | +7.25% | $1,151,710.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +3.49% | +3.73% |
-| LAB/USDT:USDT | below_1h_threshold | +2.95% | +3.18% |
-| STG/USDT:USDT | below_1h_threshold | +2.31% | +2.55% |
-| MYX/USDT:USDT | below_1h_threshold | +1.38% | +1.61% |
-| XMR/USDT:USDT | below_1h_threshold | +0.86% | +1.09% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.55% | +3.80% |
+| STG/USDT:USDT | below_1h_threshold | +2.99% | +3.24% |
+| LAB/USDT:USDT | below_1h_threshold | +2.50% | +2.75% |
+| MYX/USDT:USDT | below_1h_threshold | +2.22% | +2.47% |
+| XMR/USDT:USDT | below_1h_threshold | +1.09% | +1.34% |
 
 ## 5. 次に見るべき不足
 
