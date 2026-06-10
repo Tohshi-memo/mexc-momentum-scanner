@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T13:48:51.894984+00:00
+- generated_at: 2026-06-10T13:54:52.151842+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6216**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T13:48:46.513221+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.20% price=62271.9
-- Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1
+- 更新: 2026-06-10T13:54:46.244824+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.02% price=62158.5
+- Funnel: target 785 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 77.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +56.44% | $17,686,599.61 |
-| MAGMA/USDT:USDT | +44.93% | $2,012,417.92 |
-| ESPORTS/USDT:USDT | +43.82% | $26,655,985.54 |
-| BLEND/USDT:USDT | +33.01% | $2,282,637.41 |
-| BTW/USDT:USDT | +28.53% | $32,821,907.25 |
+| STG/USDT:USDT | +56.69% | $17,820,842.65 |
+| MAGMA/USDT:USDT | +45.37% | $2,038,634.70 |
+| ESPORTS/USDT:USDT | +44.38% | $26,695,754.81 |
+| HMSTR/USDT:USDT | +36.02% | $1,049,967.86 |
+| BLEND/USDT:USDT | +33.23% | $2,291,587.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_relative_strength | +5.97% | +4.77% |
-| ESPORTS/USDT:USDT | below_relative_strength | +5.19% | +3.99% |
-| WLFI/USDT:USDT | below_1h_threshold | +4.96% | +3.75% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.66% | +3.46% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.55% | +3.35% |
+| ESPORTS/USDT:USDT | below_relative_strength | +5.75% | +4.73% |
+| WLFI/USDT:USDT | below_relative_strength | +5.29% | +4.27% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.59% | +3.57% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +3.35% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.92% | +2.91% |
 
 ## 5. 次に見るべき不足
 
