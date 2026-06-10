@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-10T03:24:12.768889+00:00
+- generated_at: 2026-06-10T03:29:59.675837+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6181**
+- closed shadow trades: **6182**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6181, expectancy=-0.05%
+- 全期間 MARKET基準: n=6182, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.11%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +3.43% | **+1.20%** |
+| LIMIT_7PCT_LONG | 7/20 | 35.0% | +2.81% | **+0.98%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.91% | **+0.91%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.17% | **+0.82%** |
-| LIMIT_8PCT_LONG | 7/20 | 35.0% | +2.29% | **+0.80%** |
-| ASK_LONG | 20/20 | 100.0% | +0.74% | **+0.74%** |
-| LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.89% | **+0.71%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +2.53% | **+0.89%** |
+| LIMIT_9PCT_LONG | 3/20 | 15.0% | +5.70% | **+0.85%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$148.52** / 初期 $100.00 (+48.52%)
-- 確定: 1197件 (Win 299 / Loss 376 / Flat 522) / skip 1545件
+- 確定: 1198件 (Win 299 / Loss 376 / Flat 523) / skip 1545件
 - 成長率目線: 平均log +0.000330 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: JCT/USDT:USDT `LIMIT_5PCT_LONG` EXPIRED account +0.00% 残高後 $148.52
+- 最新: BTW/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $148.52
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T03:24:09.972917+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=61360.7
-- Funnel: target 778 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-10T03:29:56.569286+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=61548.7
+- Funnel: target 778 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +39.53% | $24,659,144.50 |
-| STG/USDT:USDT | +16.26% | $4,420,298.70 |
-| OPN/USDT:USDT | +14.72% | $2,070,706.32 |
-| HOME/USDT:USDT | +12.48% | $4,357,589.94 |
-| JCT/USDT:USDT | +10.42% | $3,888,755.78 |
+| BTW/USDT:USDT | +36.59% | $25,063,127.61 |
+| STG/USDT:USDT | +15.15% | $4,430,945.09 |
+| OPN/USDT:USDT | +13.19% | $2,108,643.91 |
+| JCT/USDT:USDT | +12.32% | $3,904,952.81 |
+| HOME/USDT:USDT | +11.90% | $4,358,393.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPN/USDT:USDT | below_1h_threshold | +3.73% | +3.58% |
-| UB/USDT:USDT | below_1h_threshold | +2.49% | +2.34% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.08% | +1.93% |
-| WLD/USDT:USDT | below_1h_threshold | +2.02% | +1.87% |
-| JCT/USDT:USDT | below_1h_threshold | +1.78% | +1.64% |
+| BTW/USDT:USDT | below_1h_threshold | +4.09% | +3.64% |
+| JCT/USDT:USDT | below_1h_threshold | +3.41% | +2.95% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.60% | +2.15% |
+| OPN/USDT:USDT | below_1h_threshold | +2.34% | +1.89% |
+| H/USDT:USDT | below_1h_threshold | +2.31% | +1.85% |
 
 ## 5. 次に見るべき不足
 
