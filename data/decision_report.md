@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-10T11:38:33.618662+00:00
+- generated_at: 2026-06-10T11:44:42.004849+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6211**
+- closed shadow trades: **6212**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6211, expectancy=-0.05%
+- 全期間 MARKET基準: n=6212, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,38 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$150.50** / 初期 $100.00 (+50.50%)
-- 確定: 1227件 (Win 306 / Loss 382 / Flat 539) / skip 1545件
-- 成長率目線: 平均log +0.000333 / 幾何平均 +0.033% per trade / maxDD +7.25%
+- 残高: **$149.75** / 初期 $100.00 (+49.75%)
+- 確定: 1228件 (Win 306 / Loss 383 / Flat 539) / skip 1545件
+- 成長率目線: 平均log +0.000329 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ESPORTS/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $150.50
+- 最新: BLEND/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $149.75
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T11:38:30.985587+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.66% price=60943.4
-- Funnel: target 785 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-10T11:44:38.657629+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.58% price=60995.9
+- Funnel: target 785 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +53.21% | $12,969,659.27 |
-| BLEND/USDT:USDT | +42.65% | $1,683,098.95 |
-| MAGMA/USDT:USDT | +40.69% | $1,018,157.81 |
-| ESPORTS/USDT:USDT | +34.68% | $27,557,366.28 |
-| KAT/USDT:USDT | +25.70% | $1,151,624.05 |
+| STG/USDT:USDT | +52.49% | $13,096,154.19 |
+| MAGMA/USDT:USDT | +40.48% | $1,075,544.71 |
+| BLEND/USDT:USDT | +36.24% | $1,800,556.76 |
+| ESPORTS/USDT:USDT | +35.59% | $27,612,702.39 |
+| KAT/USDT:USDT | +23.26% | $1,157,377.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +4.74% | +5.40% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.25% | +4.91% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.17% | +4.84% |
-| H/USDT:USDT | below_1h_threshold | +2.73% | +3.39% |
-| USOIL/USDT:USDT | below_1h_threshold | +2.28% | +2.94% |
+| STG/USDT:USDT | below_1h_threshold | +4.57% | +5.14% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.91% | +4.48% |
+| H/USDT:USDT | below_1h_threshold | +3.34% | +3.91% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.20% | +2.77% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.12% | +2.70% |
 
 ## 5. 次に見るべき不足
 
