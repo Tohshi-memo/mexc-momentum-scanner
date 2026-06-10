@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T18:02:31.155814+00:00
+- generated_at: 2026-06-10T18:08:24.173754+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6236**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T18:02:28.543366+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=61938.8
-- Funnel: target 785 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-10T18:08:21.572647+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=61932.4
+- Funnel: target 785 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FOLKS/USDT:USDT | +13.92% | $5,164,587.77 |
-| STRAX/USDT:USDT | +8.31% | $1,129,803.85 |
-| BTW/USDT:USDT | +7.22% | $33,198,497.52 |
-| VELVET/USDT:USDT | +5.98% | $15,357,760.11 |
-| POWER/USDT:USDT | +4.80% | $1,779,440.55 |
+| FOLKS/USDT:USDT | +14.20% | $5,332,219.96 |
+| STRAX/USDT:USDT | +8.39% | $1,136,461.04 |
+| VELVET/USDT:USDT | +8.23% | $15,523,855.83 |
+| BTW/USDT:USDT | +7.82% | $33,240,362.56 |
+| BEAT/USDT:USDT | +4.38% | $115,139,195.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRAX/USDT:USDT | below_1h_threshold | +2.51% | +2.52% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.76% | +1.76% |
-| MYX/USDT:USDT | below_1h_threshold | +1.56% | +1.56% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.94% | +0.94% |
-| BTW/USDT:USDT | below_1h_threshold | +0.66% | +0.66% |
+| STRAX/USDT:USDT | below_1h_threshold | +2.51% | +2.53% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.18% | +1.20% |
+| BTW/USDT:USDT | below_1h_threshold | +0.98% | +0.99% |
+| MYX/USDT:USDT | below_1h_threshold | +0.76% | +0.77% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.55% | +0.57% |
 
 ## 5. 次に見るべき不足
 
