@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-10T13:54:52.151842+00:00
+- generated_at: 2026-06-10T14:00:45.336701+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6216**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-10T13:54:46.244824+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.02% price=62158.5
-- Funnel: target 785 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 77.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-10T14:00:42.506255+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62100.4
+- Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +56.69% | $17,820,842.65 |
-| MAGMA/USDT:USDT | +45.37% | $2,038,634.70 |
-| ESPORTS/USDT:USDT | +44.38% | $26,695,754.81 |
-| HMSTR/USDT:USDT | +36.02% | $1,049,967.86 |
-| BLEND/USDT:USDT | +33.23% | $2,291,587.68 |
+| STG/USDT:USDT | +54.07% | $17,851,406.89 |
+| MAGMA/USDT:USDT | +45.24% | $2,040,494.94 |
+| ESPORTS/USDT:USDT | +44.57% | $25,094,346.58 |
+| HMSTR/USDT:USDT | +37.04% | $1,076,377.90 |
+| BLEND/USDT:USDT | +34.57% | $2,292,397.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_relative_strength | +5.75% | +4.73% |
-| WLFI/USDT:USDT | below_relative_strength | +5.29% | +4.27% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.59% | +3.57% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +3.35% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.92% | +2.91% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.74% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.46% | +0.50% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.50% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.42% | +0.45% |
 
 ## 5. 次に見るべき不足
 
