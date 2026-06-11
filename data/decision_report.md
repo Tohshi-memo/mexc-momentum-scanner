@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-11T08:56:17.103277+00:00
+- generated_at: 2026-06-11T09:02:32.834443+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6329**
+- closed shadow trades: **6330**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6329, expectancy=-0.06%
+- 全期間 MARKET基準: n=6330, expectancy=-0.06%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,39 +47,37 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$147.45** / 初期 $100.00 (+47.45%)
-- 確定: 1271件 (Win 319 / Loss 401 / Flat 551) / skip 1619件
+- 確定: 1271件 (Win 319 / Loss 401 / Flat 551) / skip 1620件
 - 成長率目線: 平均log +0.000306 / 幾何平均 +0.031% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: STG/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $147.45
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T08:56:09.198941+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=62929.8
-- Funnel: target 781 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 76.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-11T09:02:29.670201+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62906.1
+- Funnel: target 781 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +83.74% | $71,880,825.30 |
-| AIO/USDT:USDT | +66.77% | $5,679,653.39 |
-| BEAT/USDT:USDT | +51.74% | $218,647,206.24 |
-| COLLECT/USDT:USDT | +50.18% | $1,654,969.82 |
-| H/USDT:USDT | +36.75% | $13,138,776.48 |
+| VELVET/USDT:USDT | +82.28% | $72,185,670.62 |
+| AIO/USDT:USDT | +72.53% | $5,723,732.89 |
+| BEAT/USDT:USDT | +49.86% | $213,833,774.11 |
+| COLLECT/USDT:USDT | +46.18% | $1,681,469.72 |
+| H/USDT:USDT | +43.28% | $12,672,189.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LRCXSTOCK/USDT:USDT | below_relative_strength | +5.21% | +4.83% |
-| FIGHT/USDT:USDT | below_1h_threshold | +4.84% | +4.46% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.16% | +3.78% |
-| CRV/USDT:USDT | below_1h_threshold | +3.68% | +3.30% |
-| TXNSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +1.75% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.00% | +2.03% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.38% | +1.41% |
+| BTW/USDT:USDT | below_1h_threshold | +1.29% | +1.32% |
+| AIO/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
+| H/USDT:USDT | below_1h_threshold | +1.13% | +1.16% |
 
 ## 5. 次に見るべき不足
 
