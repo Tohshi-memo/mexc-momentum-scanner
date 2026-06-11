@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T23:01:35.052698+00:00
+- generated_at: 2026-06-11T23:07:40.543520+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6424**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T23:01:31.444043+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63401.9
+- 更新: 2026-06-11T23:07:37.930099+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=63372.3
 - Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +110.75% | $19,810,880.53 |
-| VELVET/USDT:USDT | +93.06% | $126,117,684.31 |
-| STG/USDT:USDT | +25.12% | $13,562,151.95 |
-| UB/USDT:USDT | +21.74% | $1,771,106.84 |
-| NAORIS/USDT:USDT | +16.90% | $1,449,930.73 |
+| VELVET/USDT:USDT | +84.73% | $126,898,797.39 |
+| ESPORTS/USDT:USDT | +69.88% | $20,822,889.63 |
+| STG/USDT:USDT | +22.13% | $13,639,459.71 |
+| UB/USDT:USDT | +20.00% | $1,779,754.96 |
+| NAORIS/USDT:USDT | +15.32% | $1,452,003.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.51% | +2.61% |
-| UB/USDT:USDT | below_1h_threshold | +0.70% | +0.80% |
-| NAORIS/USDT:USDT | below_1h_threshold | +0.30% | +0.41% |
-| UAI/USDT:USDT | below_1h_threshold | +0.20% | +0.31% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.11% | +0.22% |
+| BTW/USDT:USDT | below_1h_threshold | +1.69% | +1.84% |
+| UAI/USDT:USDT | below_1h_threshold | +0.84% | +1.00% |
+| SPX/USDT:USDT | below_1h_threshold | +0.48% | +0.63% |
+| XMR/USDT:USDT | below_1h_threshold | +0.42% | +0.57% |
+| XPL/USDT:USDT | below_1h_threshold | +0.39% | +0.54% |
 
 ## 5. 次に見るべき不足
 
