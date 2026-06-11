@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T01:10:22.506673+00:00
+- generated_at: 2026-06-11T01:17:03.318181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6287**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T01:10:19.854549+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=61894.6
+- 更新: 2026-06-11T01:17:00.825976+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=62078.9
 - Funnel: target 785 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +95.71% | $44,612,598.52 |
-| BEAT/USDT:USDT | +25.52% | $187,285,676.91 |
-| FIGHT/USDT:USDT | +18.62% | $1,061,607.77 |
-| H/USDT:USDT | +12.07% | $11,657,146.39 |
-| FOLKS/USDT:USDT | +11.57% | $12,626,888.33 |
+| VELVET/USDT:USDT | +101.56% | $44,843,079.12 |
+| BEAT/USDT:USDT | +25.16% | $187,606,278.98 |
+| FIGHT/USDT:USDT | +19.46% | $1,067,483.26 |
+| FOLKS/USDT:USDT | +9.95% | $12,654,696.43 |
+| STG/USDT:USDT | +8.86% | $23,022,366.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.43% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.36% | +1.20% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.30% | +1.14% |
-| STRAX/USDT:USDT | below_1h_threshold | +1.25% | +1.09% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.13% | +0.97% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.55% |
+| BSB/USDT:USDT | below_1h_threshold | +1.81% | +1.35% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.80% | +1.34% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.29% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.73% | +1.27% |
 
 ## 5. 次に見るべき不足
 
