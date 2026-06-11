@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T07:54:11.844526+00:00
+- generated_at: 2026-06-11T08:00:19.319835+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6326**
 
@@ -54,31 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T07:54:04.466734+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=62690.1
-- Funnel: target 783 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-11T08:00:14.184289+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=62688.9
+- Funnel: target 783 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +99.82% | $67,444,054.08 |
-| AIO/USDT:USDT | +69.65% | $5,408,872.59 |
-| BEAT/USDT:USDT | +49.88% | $215,177,650.10 |
-| H/USDT:USDT | +45.30% | $12,253,909.22 |
-| COLLECT/USDT:USDT | +39.32% | $1,549,838.46 |
+| VELVET/USDT:USDT | +97.19% | $67,616,082.67 |
+| AIO/USDT:USDT | +67.12% | $5,462,537.99 |
+| BEAT/USDT:USDT | +45.26% | $217,649,558.11 |
+| COLLECT/USDT:USDT | +40.38% | $1,551,786.89 |
+| H/USDT:USDT | +38.23% | $12,357,282.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +2.55% | +2.62% |
-| H/USDT:USDT | below_1h_threshold | +2.48% | +2.55% |
-| XMR/USDT:USDT | below_1h_threshold | +1.66% | +1.73% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.59% | +1.66% |
-| ADA/USDT:USDT | below_1h_threshold | +1.59% | +1.66% |
+| XMR/USDT:USDT | below_1h_threshold | +1.71% | +1.78% |
+| FIGHT/USDT:USDT | below_1h_threshold | +1.53% | +1.60% |
+| MYX/USDT:USDT | below_1h_threshold | +1.51% | +1.58% |
+| COLLECT/USDT:USDT | below_1h_threshold | +0.91% | +0.98% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.48% | +0.55% |
 
 ## 5. 次に見るべき不足
 
