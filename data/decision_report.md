@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T02:35:21.184510+00:00
+- generated_at: 2026-06-11T02:41:22.552611+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6294**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T02:35:18.385446+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=61942.2
-- Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-11T02:41:19.934919+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=62071.6
+- Funnel: target 785 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +80.01% | $2,089,203.94 |
-| VELVET/USDT:USDT | +68.08% | $48,632,851.36 |
-| BEAT/USDT:USDT | +28.43% | $190,459,874.31 |
-| FIGHT/USDT:USDT | +15.64% | $1,106,167.12 |
-| SKYAI/USDT:USDT | +12.67% | $6,015,467.03 |
+| AIO/USDT:USDT | +75.69% | $2,155,139.78 |
+| VELVET/USDT:USDT | +73.46% | $48,904,283.82 |
+| COLLECT/USDT:USDT | +40.36% | $1,012,582.13 |
+| BEAT/USDT:USDT | +23.23% | $191,741,449.75 |
+| FIGHT/USDT:USDT | +15.75% | $1,113,003.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +4.60% | +4.98% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.49% | +3.87% |
-| AIO/USDT:USDT | below_1h_threshold | +3.12% | +3.50% |
-| XLM/USDT:USDT | below_1h_threshold | +0.65% | +1.03% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +1.03% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.92% | +4.10% |
+| COLLECT/USDT:USDT | below_1h_threshold | +3.71% | +3.88% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.00% | +3.17% |
+| UAI/USDT:USDT | below_1h_threshold | +2.17% | +2.34% |
+| XLM/USDT:USDT | below_1h_threshold | +1.07% | +1.24% |
 
 ## 5. 次に見るべき不足
 
