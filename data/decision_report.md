@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T08:13:01.536870+00:00
+- generated_at: 2026-06-11T08:18:58.762473+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6326**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T08:12:58.924895+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=62771.2
-- Funnel: target 781 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-11T08:18:56.124012+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=62808.9
+- Funnel: target 781 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +93.11% | $68,233,895.81 |
-| AIO/USDT:USDT | +66.43% | $5,508,021.96 |
-| BEAT/USDT:USDT | +47.17% | $214,031,809.88 |
-| H/USDT:USDT | +44.26% | $12,206,101.18 |
-| COLLECT/USDT:USDT | +40.14% | $1,552,336.35 |
+| VELVET/USDT:USDT | +92.64% | $68,540,209.26 |
+| AIO/USDT:USDT | +69.23% | $5,548,862.25 |
+| BEAT/USDT:USDT | +48.01% | $214,893,631.54 |
+| H/USDT:USDT | +43.69% | $12,305,310.47 |
+| COLLECT/USDT:USDT | +40.89% | $1,555,550.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LRCXSTOCK/USDT:USDT | below_1h_threshold | +3.79% | +3.66% |
-| H/USDT:USDT | below_1h_threshold | +3.62% | +3.49% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.61% | +2.49% |
-| FOLKS/USDT:USDT | below_1h_threshold | +2.20% | +2.08% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.88% |
+| LRCXSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.04% |
+| H/USDT:USDT | below_1h_threshold | +3.50% | +3.32% |
+| BSB/USDT:USDT | below_1h_threshold | +2.73% | +2.54% |
+| JCT/USDT:USDT | below_1h_threshold | +2.55% | +2.36% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.36% | +2.17% |
 
 ## 5. 次に見るべき不足
 
