@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T05:22:34.168689+00:00
+- generated_at: 2026-06-11T05:29:17.495494+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6304**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T05:22:31.122551+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=62673.4
-- Funnel: target 785 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-11T05:29:14.184849+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=62574.9
+- Funnel: target 785 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.0 >= 65=1, 4h RSI 80.0 >= 65=1, 4h RSI 90.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +91.08% | $54,777,470.10 |
-| AIO/USDT:USDT | +59.83% | $4,267,209.10 |
-| BEAT/USDT:USDT | +43.60% | $203,487,311.66 |
-| COLLECT/USDT:USDT | +38.66% | $1,423,262.29 |
-| FIGHT/USDT:USDT | +22.92% | $1,235,102.08 |
+| VELVET/USDT:USDT | +97.51% | $55,316,740.00 |
+| AIO/USDT:USDT | +64.55% | $4,312,609.99 |
+| BEAT/USDT:USDT | +48.98% | $205,351,477.71 |
+| COLLECT/USDT:USDT | +35.75% | $1,436,915.05 |
+| FIGHT/USDT:USDT | +23.20% | $1,239,880.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIO/USDT:USDT | below_1h_threshold | +3.73% | +3.76% |
-| COLLECT/USDT:USDT | below_1h_threshold | +2.38% | +2.41% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.38% | +2.41% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.27% | +2.30% |
-| HOME/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
+| H/USDT:USDT | below_1h_threshold | +2.91% | +3.10% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.42% | +2.60% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.39% | +2.58% |
+| HOME/USDT:USDT | below_1h_threshold | +1.17% | +1.36% |
+| FIGHT/USDT:USDT | below_1h_threshold | +1.08% | +1.26% |
 
 ## 5. 次に見るべき不足
 
