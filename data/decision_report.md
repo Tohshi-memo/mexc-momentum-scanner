@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T03:59:34.326740+00:00
+- generated_at: 2026-06-11T04:05:26.537521+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6297**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T03:59:31.117921+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.94% price=62701.7
-- Funnel: target 785 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 88.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-11T04:05:23.947875+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=62601.7
+- Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +80.09% | $52,363,483.71 |
-| AIO/USDT:USDT | +67.83% | $3,613,513.97 |
-| BEAT/USDT:USDT | +34.91% | $196,566,504.55 |
-| COLLECT/USDT:USDT | +23.83% | $1,302,762.95 |
-| FIGHT/USDT:USDT | +21.72% | $1,148,009.80 |
+| VELVET/USDT:USDT | +79.84% | $52,420,489.00 |
+| AIO/USDT:USDT | +67.76% | $3,644,121.24 |
+| BEAT/USDT:USDT | +34.71% | $195,101,151.23 |
+| COLLECT/USDT:USDT | +25.98% | $1,307,315.33 |
+| FIGHT/USDT:USDT | +25.29% | $1,160,673.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_relative_strength | +5.65% | +4.70% |
-| CRV/USDT:USDT | below_1h_threshold | +4.13% | +3.19% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.66% | +2.72% |
-| SPX/USDT:USDT | below_1h_threshold | +3.58% | +2.63% |
-| FIGHT/USDT:USDT | below_1h_threshold | +3.46% | +2.52% |
+| FIGHT/USDT:USDT | below_1h_threshold | +2.99% | +3.08% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.58% | +2.67% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.51% | +0.60% |
+| SPX/USDT:USDT | below_1h_threshold | +0.44% | +0.52% |
+| KITE/USDT:USDT | below_1h_threshold | +0.34% | +0.43% |
 
 ## 5. 次に見るべき不足
 
