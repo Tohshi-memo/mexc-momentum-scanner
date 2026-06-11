@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T16:34:32.783353+00:00
+- generated_at: 2026-06-11T16:40:42.467111+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6377**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T16:34:29.584092+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=62681.5
-- Funnel: target 782 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-11T16:40:39.397385+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62702.4
+- Funnel: target 782 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZBT/USDT:USDT | +4.58% | $1,142,040.68 |
-| ESPORTS/USDT:USDT | +3.94% | $8,512,682.54 |
-| VELVET/USDT:USDT | +3.81% | $93,129,600.03 |
-| SIREN/USDT:USDT | +3.43% | $5,768,005.06 |
-| HMSTR/USDT:USDT | +3.17% | $4,893,664.77 |
+| ESPORTS/USDT:USDT | +6.85% | $8,686,603.83 |
+| SKYAI/USDT:USDT | +4.82% | $9,881,428.95 |
+| SIREN/USDT:USDT | +4.70% | $5,787,119.76 |
+| HMSTR/USDT:USDT | +4.50% | $4,903,139.17 |
+| ZBT/USDT:USDT | +3.78% | $1,161,769.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZBT/USDT:USDT | below_1h_threshold | +4.59% | +4.65% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.87% | +3.94% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.65% | +3.72% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.44% | +3.51% |
-| HMSTR/USDT:USDT | below_1h_threshold | +3.31% | +3.38% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.78% | +4.82% |
+| HMSTR/USDT:USDT | below_1h_threshold | +4.71% | +4.74% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.65% | +4.68% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.69% | +3.72% |
+| BILL/USDT:USDT | below_1h_threshold | +3.06% | +3.09% |
 
 ## 5. 次に見るべき不足
 
