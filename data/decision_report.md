@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T11:55:23.052064+00:00
+- generated_at: 2026-06-11T12:01:36.097664+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6343**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T11:55:17.281687+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63153.0
-- Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 82.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-11T12:01:33.451284+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63024.4
+- Funnel: target 782 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +84.73% | $18,343,696.77 |
-| VELVET/USDT:USDT | +73.63% | $80,836,902.44 |
-| BEAT/USDT:USDT | +51.75% | $222,922,230.59 |
-| AIO/USDT:USDT | +50.72% | $7,980,284.81 |
-| COLLECT/USDT:USDT | +49.93% | $2,029,174.90 |
+| H/USDT:USDT | +88.12% | $18,098,338.11 |
+| VELVET/USDT:USDT | +72.01% | $80,794,539.69 |
+| BEAT/USDT:USDT | +52.78% | $220,269,619.56 |
+| AIO/USDT:USDT | +50.87% | $8,010,821.12 |
+| COLLECT/USDT:USDT | +49.50% | $2,038,198.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +3.95% | +3.89% |
-| STG/USDT:USDT | below_1h_threshold | +3.19% | +3.13% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.00% | +2.95% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.44% | +2.38% |
-| AIO/USDT:USDT | below_1h_threshold | +2.29% | +2.23% |
+| LAB/USDT:USDT | below_1h_threshold | +1.57% | +1.66% |
+| BTW/USDT:USDT | below_1h_threshold | +1.48% | +1.57% |
+| H/USDT:USDT | below_1h_threshold | +1.32% | +1.40% |
+| AIO/USDT:USDT | below_1h_threshold | +1.24% | +1.32% |
+| SPACE/USDT:USDT | below_1h_threshold | +1.14% | +1.23% |
 
 ## 5. 次に見るべき不足
 
