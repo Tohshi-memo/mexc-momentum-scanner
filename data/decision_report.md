@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-06-11T18:14:50.224784+00:00
+- generated_at: 2026-06-11T18:21:07.700960+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6393**
+- closed shadow trades: **6394**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6393, expectancy=-0.06%
-- 直近20件 MARKET基準: n=20, expectancy=-1.00%
+- 全期間 MARKET基準: n=6394, expectancy=-0.06%
+- 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.00% | **-1.00%** |
+| MARKET | 20/20 | 100.0% | -0.40% | **-0.40%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.33% | **+0.93%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| LIMIT_1PCT_LONG | 15/20 | 75.0% | +1.02% | **+0.77%** |
-| LIMIT_3PCT_LONG | 11/20 | 55.0% | +1.31% | **+0.72%** |
 | LIMIT_FIB1272_LONG | 7/20 | 35.0% | +1.78% | **+0.62%** |
+| LIMIT_3PCT_LONG | 12/20 | 60.0% | +0.87% | **+0.52%** |
+| LIMIT_9PCT_LONG | 2/20 | 10.0% | +4.55% | **+0.45%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.61% | **+0.42%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.40% | **+0.40%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,40 +46,40 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$154.96** / 初期 $100.00 (+54.96%)
-- 確定: 1310件 (Win 340 / Loss 416 / Flat 554) / skip 1644件
-- 成長率目線: 平均log +0.000334 / 幾何平均 +0.033% per trade / maxDD +7.25%
+- 残高: **$154.18** / 初期 $100.00 (+54.18%)
+- 確定: 1311件 (Win 340 / Loss 417 / Flat 554) / skip 1644件
+- 成長率目線: 平均log +0.000330 / 幾何平均 +0.033% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $154.96
+- 最新: AIO/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $154.18
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T18:14:46.311180+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=63413.6
-- Funnel: target 782 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 78.6 >= 65=1
+- 更新: 2026-06-11T18:21:04.101197+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=63514.8
+- Funnel: target 782 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +36.65% | $100,480,775.69 |
-| ESPORTS/USDT:USDT | +29.83% | $11,922,739.90 |
-| SKYAI/USDT:USDT | +12.33% | $11,230,727.99 |
-| AIO/USDT:USDT | +10.84% | $10,546,612.94 |
-| POWER/USDT:USDT | +6.56% | $1,087,989.25 |
+| VELVET/USDT:USDT | +32.48% | $101,843,311.75 |
+| ESPORTS/USDT:USDT | +29.38% | $12,025,664.11 |
+| SKYAI/USDT:USDT | +10.33% | $11,345,731.96 |
+| HMSTR/USDT:USDT | +5.59% | $4,428,226.77 |
+| SOXL/USDT:USDT | +5.58% | $1,475,152.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +2.84% | +3.15% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.08% | +2.40% |
-| ARB/USDT:USDT | below_1h_threshold | +1.32% | +1.63% |
-| UB/USDT:USDT | below_1h_threshold | +0.78% | +1.09% |
-| ASTR/USDT:USDT | below_1h_threshold | +0.74% | +1.05% |
+| AIO/USDT:USDT | below_1h_threshold | +3.34% | +3.50% |
+| ARB/USDT:USDT | below_1h_threshold | +1.37% | +1.52% |
+| POWER/USDT:USDT | below_1h_threshold | +1.37% | +1.52% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.24% | +1.40% |
+| UB/USDT:USDT | below_1h_threshold | +1.13% | +1.28% |
 
 ## 5. 次に見るべき不足
 
