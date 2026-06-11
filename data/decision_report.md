@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T10:06:16.302341+00:00
+- generated_at: 2026-06-11T10:12:12.226314+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6335**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T10:06:13.069556+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62858.2
+- 更新: 2026-06-11T10:12:09.178181+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=62892.5
 - Funnel: target 782 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- Strict後reject: 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +73.00% | $6,465,474.14 |
-| VELVET/USDT:USDT | +70.62% | $75,653,191.40 |
-| H/USDT:USDT | +53.82% | $13,040,714.12 |
-| COLLECT/USDT:USDT | +48.65% | $1,815,393.90 |
-| BEAT/USDT:USDT | +44.84% | $216,999,430.56 |
+| AIO/USDT:USDT | +74.18% | $6,502,392.04 |
+| VELVET/USDT:USDT | +68.77% | $76,029,667.06 |
+| H/USDT:USDT | +52.23% | $13,116,126.71 |
+| COLLECT/USDT:USDT | +49.38% | $1,823,173.23 |
+| BEAT/USDT:USDT | +49.25% | $217,833,233.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.86% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.17% | +1.23% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +1.09% |
-| H/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.76% | +0.83% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.06% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.47% | +2.48% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.38% | +1.38% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
 
 ## 5. 次に見るべき不足
 
