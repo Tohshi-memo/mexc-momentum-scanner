@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-11T03:16:34.976219+00:00
+- generated_at: 2026-06-11T03:22:53.019198+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6295**
+- closed shadow trades: **6296**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=6295, expectancy=-0.06%
+- 全期間 MARKET基準: n=6296, expectancy=-0.06%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT | 20/20 | 100.0% | +0.95% | **+0.95%** |
 | ASK | 20/20 | 100.0% | +0.82% | **+0.82%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
-| LIMIT_8PCT | 3/20 | 15.0% | +5.14% | **+0.77%** |
+| LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
+| LIMIT_FIB1272 | 4/20 | 20.0% | +2.91% | **+0.58%** |
 
 ### シャドウ上位 LONG
 
@@ -47,39 +47,39 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$147.45** / 初期 $100.00 (+47.45%)
-- 確定: 1270件 (Win 319 / Loss 401 / Flat 550) / skip 1586件
+- 確定: 1270件 (Win 319 / Loss 401 / Flat 550) / skip 1587件
 - 成長率目線: 平均log +0.000306 / 幾何平均 +0.031% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: VELVET/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $147.45
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T03:16:32.039659+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=62048.8
-- Funnel: target 785 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-11T03:22:49.636734+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=62034.9
+- Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.8 >= 65=1
+- Strict後reject: 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +80.93% | $50,402,101.83 |
-| AIO/USDT:USDT | +70.91% | $2,931,012.57 |
-| COLLECT/USDT:USDT | +42.52% | $1,091,132.04 |
-| BEAT/USDT:USDT | +24.00% | $191,815,268.24 |
-| FIGHT/USDT:USDT | +18.62% | $1,121,451.15 |
+| VELVET/USDT:USDT | +82.61% | $50,662,308.69 |
+| AIO/USDT:USDT | +64.52% | $3,120,026.67 |
+| COLLECT/USDT:USDT | +39.24% | $1,116,469.27 |
+| BEAT/USDT:USDT | +27.34% | $192,268,576.97 |
+| FIGHT/USDT:USDT | +17.93% | $1,122,740.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +4.53% | +4.64% |
-| HOME/USDT:USDT | below_1h_threshold | +3.31% | +3.42% |
-| CRV/USDT:USDT | below_1h_threshold | +2.02% | +2.13% |
-| POWER/USDT:USDT | below_1h_threshold | +1.50% | +1.61% |
-| JCT/USDT:USDT | below_1h_threshold | +1.21% | +1.31% |
+| STG/USDT:USDT | below_1h_threshold | +2.58% | +2.71% |
+| CRV/USDT:USDT | below_1h_threshold | +2.37% | +2.50% |
+| HOME/USDT:USDT | below_1h_threshold | +2.09% | +2.22% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.06% | +2.19% |
+| MYX/USDT:USDT | below_1h_threshold | +1.71% | +1.84% |
 
 ## 5. 次に見るべき不足
 
