@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T03:53:28.815290+00:00
+- generated_at: 2026-06-11T03:59:34.326740+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6297**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T03:53:26.144913+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=62418.3
-- Funnel: target 785 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.2 >= 65=1
+- 更新: 2026-06-11T03:59:31.117921+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.94% price=62701.7
+- Funnel: target 785 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 88.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +82.31% | $52,119,901.53 |
-| AIO/USDT:USDT | +65.48% | $3,537,386.22 |
-| BEAT/USDT:USDT | +32.97% | $195,545,112.65 |
-| COLLECT/USDT:USDT | +24.31% | $1,283,764.30 |
-| FIGHT/USDT:USDT | +21.05% | $1,145,873.41 |
+| VELVET/USDT:USDT | +80.09% | $52,363,483.71 |
+| AIO/USDT:USDT | +67.83% | $3,613,513.97 |
+| BEAT/USDT:USDT | +34.91% | $196,566,504.55 |
+| COLLECT/USDT:USDT | +23.83% | $1,302,762.95 |
+| FIGHT/USDT:USDT | +21.72% | $1,148,009.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_relative_strength | +5.41% | +4.92% |
-| WLD/USDT:USDT | below_1h_threshold | +3.09% | +2.61% |
-| FIGHT/USDT:USDT | below_1h_threshold | +2.94% | +2.45% |
-| CRV/USDT:USDT | below_1h_threshold | +2.90% | +2.41% |
-| MYX/USDT:USDT | below_1h_threshold | +1.88% | +1.39% |
+| PENGU/USDT:USDT | below_relative_strength | +5.65% | +4.70% |
+| CRV/USDT:USDT | below_1h_threshold | +4.13% | +3.19% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.66% | +2.72% |
+| SPX/USDT:USDT | below_1h_threshold | +3.58% | +2.63% |
+| FIGHT/USDT:USDT | below_1h_threshold | +3.46% | +2.52% |
 
 ## 5. 次に見るべき不足
 
