@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T19:54:02.347009+00:00
+- generated_at: 2026-06-11T20:00:00.948409+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6400**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T19:53:56.967670+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=63615.8
+- 更新: 2026-06-11T19:59:55.619057+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=63597.0
 - Funnel: target 782 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +53.05% | $114,488,287.73 |
-| ESPORTS/USDT:USDT | +41.75% | $14,032,219.14 |
-| NAORIS/USDT:USDT | +15.52% | $1,024,797.85 |
-| UB/USDT:USDT | +12.16% | $1,591,436.63 |
-| SOXL/USDT:USDT | +11.22% | $1,639,030.16 |
+| VELVET/USDT:USDT | +53.80% | $114,876,927.97 |
+| ESPORTS/USDT:USDT | +44.65% | $14,222,183.47 |
+| NAORIS/USDT:USDT | +16.08% | $1,052,472.36 |
+| UB/USDT:USDT | +12.99% | $1,599,957.30 |
+| SOXL/USDT:USDT | +11.46% | $1,647,300.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_relative_strength | +5.23% | +4.93% |
-| STG/USDT:USDT | below_1h_threshold | +4.59% | +4.30% |
-| SOXL/USDT:USDT | below_1h_threshold | +4.14% | +3.84% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.97% | +2.67% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.88% | +2.58% |
+| ESPORTS/USDT:USDT | below_relative_strength | +5.22% | +4.96% |
+| UAI/USDT:USDT | below_1h_threshold | +4.25% | +3.99% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.23% | +3.96% |
+| GUA/USDT:USDT | below_1h_threshold | +3.98% | +3.72% |
+| STG/USDT:USDT | below_1h_threshold | +3.60% | +3.34% |
 
 ## 5. 次に見るべき不足
 
