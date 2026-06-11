@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T13:37:16.421200+00:00
+- generated_at: 2026-06-11T13:43:37.384799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6355**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T13:37:13.356737+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=62850.9
-- Funnel: target 782 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1
+- 更新: 2026-06-11T13:43:34.141576+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=62782.8
+- Funnel: target 782 → liquid 155 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.1 >= 65=1, 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +109.39% | $23,541,907.52 |
-| VELVET/USDT:USDT | +76.05% | $83,599,979.95 |
-| BEAT/USDT:USDT | +59.89% | $234,334,828.96 |
-| COLLECT/USDT:USDT | +50.93% | $2,324,719.63 |
-| AIO/USDT:USDT | +49.87% | $8,742,678.35 |
+| H/USDT:USDT | +109.90% | $23,942,342.01 |
+| VELVET/USDT:USDT | +76.97% | $83,768,419.22 |
+| BEAT/USDT:USDT | +61.62% | $237,267,230.56 |
+| AIO/USDT:USDT | +52.61% | $8,753,162.63 |
+| COLLECT/USDT:USDT | +48.80% | $2,329,217.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.29% | +4.49% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.06% | +4.26% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.00% | +4.20% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.97% |
-| AMCSTOCK/USDT:USDT | below_1h_threshold | +3.10% | +3.30% |
+| H/USDT:USDT | below_1h_threshold | +4.70% | +5.01% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.33% | +4.64% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.08% | +4.39% |
+| AIO/USDT:USDT | below_1h_threshold | +4.01% | +4.32% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.72% | +4.03% |
 
 ## 5. 次に見るべき不足
 
