@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T00:46:08.870893+00:00
+- generated_at: 2026-06-11T00:52:30.861026+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6286**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T00:46:05.700175+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=61832.1
-- Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-11T00:52:27.712220+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=61864.5
+- Funnel: target 785 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +92.36% | $43,786,349.40 |
-| BEAT/USDT:USDT | +25.85% | $188,659,640.82 |
-| FIGHT/USDT:USDT | +16.92% | $1,046,443.09 |
-| STRAX/USDT:USDT | +11.39% | $1,274,162.22 |
-| FOLKS/USDT:USDT | +8.29% | $12,595,829.59 |
+| VELVET/USDT:USDT | +89.80% | $44,030,595.69 |
+| BEAT/USDT:USDT | +25.69% | $189,048,410.26 |
+| FIGHT/USDT:USDT | +17.40% | $1,047,556.73 |
+| H/USDT:USDT | +11.44% | $14,180,406.09 |
+| STRAX/USDT:USDT | +10.53% | $1,275,655.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVNT/USDT:USDT | below_1h_threshold | +4.84% | +4.27% |
-| FOLKS/USDT:USDT | below_1h_threshold | +4.49% | +3.92% |
-| LAB/USDT:USDT | below_1h_threshold | +4.09% | +3.52% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.65% | +3.08% |
-| CRV/USDT:USDT | below_1h_threshold | +2.80% | +2.23% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.94% | +4.31% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.79% | +3.17% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +3.13% |
+| AVNT/USDT:USDT | below_1h_threshold | +3.65% | +3.03% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.17% | +2.55% |
 
 ## 5. 次に見るべき不足
 
