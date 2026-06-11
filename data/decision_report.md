@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T20:42:51.406901+00:00
+- generated_at: 2026-06-11T20:49:04.770596+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6405**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T20:42:47.911993+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=63282.8
-- Funnel: target 782 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.4 >= 65=1
+- 更新: 2026-06-11T20:48:58.576755+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=63245.8
+- Funnel: target 782 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.6 >= 65=1, 4h RSI 76.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +95.18% | $118,524,121.20 |
-| ESPORTS/USDT:USDT | +49.76% | $14,606,753.95 |
-| NAORIS/USDT:USDT | +22.10% | $1,281,716.62 |
-| UB/USDT:USDT | +15.32% | $1,694,352.91 |
-| SKYAI/USDT:USDT | +11.70% | $12,410,954.41 |
+| VELVET/USDT:USDT | +85.25% | $119,907,758.22 |
+| ESPORTS/USDT:USDT | +49.93% | $14,665,796.45 |
+| NAORIS/USDT:USDT | +23.39% | $1,298,587.72 |
+| UB/USDT:USDT | +16.21% | $1,703,667.06 |
+| SKYAI/USDT:USDT | +10.72% | $12,465,434.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +4.93% | +5.39% |
-| XPL/USDT:USDT | below_1h_threshold | +4.89% | +5.35% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.60% | +5.06% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.80% | +3.26% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.73% | +3.19% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.99% | +5.50% |
+| UB/USDT:USDT | below_1h_threshold | +2.92% | +3.44% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.59% | +3.11% |
+| PLSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.74% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.65% | +2.17% |
 
 ## 5. 次に見るべき不足
 
