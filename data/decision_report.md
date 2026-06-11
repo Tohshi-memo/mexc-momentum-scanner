@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T13:43:37.384799+00:00
+- generated_at: 2026-06-11T13:49:43.748693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6355**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T13:43:34.141576+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=62782.8
-- Funnel: target 782 → liquid 155 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.1 >= 65=1, 4h RSI 65.3 >= 65=1
+- 更新: 2026-06-11T13:49:40.325735+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63028.2
+- Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.9 >= 65=1, 4h RSI 71.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +109.90% | $23,942,342.01 |
-| VELVET/USDT:USDT | +76.97% | $83,768,419.22 |
-| BEAT/USDT:USDT | +61.62% | $237,267,230.56 |
-| AIO/USDT:USDT | +52.61% | $8,753,162.63 |
-| COLLECT/USDT:USDT | +48.80% | $2,329,217.98 |
+| H/USDT:USDT | +111.39% | $24,353,356.40 |
+| VELVET/USDT:USDT | +75.43% | $83,890,674.47 |
+| BEAT/USDT:USDT | +62.00% | $239,033,008.62 |
+| AIO/USDT:USDT | +55.22% | $8,775,463.93 |
+| COLLECT/USDT:USDT | +49.76% | $2,332,749.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.70% | +5.01% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.33% | +4.64% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.08% | +4.39% |
-| AIO/USDT:USDT | below_1h_threshold | +4.01% | +4.32% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.72% | +4.03% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.73% | +4.65% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.60% | +4.52% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.50% | +4.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.19% | +4.11% |
+| AMCSTOCK/USDT:USDT | below_1h_threshold | +4.14% | +4.05% |
 
 ## 5. 次に見るべき不足
 
