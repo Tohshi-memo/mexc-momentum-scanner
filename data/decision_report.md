@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T18:27:30.875225+00:00
+- generated_at: 2026-06-11T18:34:05.843319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6394**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T18:27:27.915429+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=63405.2
+- 更新: 2026-06-11T18:34:02.801443+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=63394.6
 - Funnel: target 782 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +32.68% | $102,577,676.74 |
-| ESPORTS/USDT:USDT | +31.42% | $12,358,989.70 |
-| SKYAI/USDT:USDT | +12.22% | $11,375,351.31 |
-| POWER/USDT:USDT | +5.95% | $1,103,836.08 |
-| UB/USDT:USDT | +5.86% | $1,499,193.48 |
+| VELVET/USDT:USDT | +37.03% | $103,170,441.16 |
+| ESPORTS/USDT:USDT | +27.78% | $12,517,948.16 |
+| SKYAI/USDT:USDT | +13.52% | $11,440,238.21 |
+| POWER/USDT:USDT | +8.39% | $1,120,737.82 |
+| UB/USDT:USDT | +5.62% | $1,505,895.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.15% | +2.48% |
-| POWER/USDT:USDT | below_1h_threshold | +2.01% | +2.33% |
-| UB/USDT:USDT | below_1h_threshold | +1.66% | +1.98% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.59% | +1.92% |
-| AIO/USDT:USDT | below_1h_threshold | +1.50% | +1.83% |
+| POWER/USDT:USDT | below_1h_threshold | +4.48% | +4.82% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.19% | +3.54% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +2.06% |
+| UB/USDT:USDT | below_1h_threshold | +1.18% | +1.52% |
+| ID/USDT:USDT | below_1h_threshold | +1.05% | +1.39% |
 
 ## 5. 次に見るべき不足
 
