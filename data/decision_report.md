@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T01:04:28.330555+00:00
+- generated_at: 2026-06-11T01:10:22.506673+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6287**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T01:04:25.762421+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=61887.7
+- 更新: 2026-06-11T01:10:19.854549+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=61894.6
 - Funnel: target 785 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +103.30% | $44,346,903.33 |
-| BEAT/USDT:USDT | +27.22% | $186,976,572.21 |
-| FIGHT/USDT:USDT | +18.87% | $1,049,137.75 |
-| H/USDT:USDT | +11.34% | $11,629,416.50 |
-| FOLKS/USDT:USDT | +10.32% | $12,592,520.16 |
+| VELVET/USDT:USDT | +95.71% | $44,612,598.52 |
+| BEAT/USDT:USDT | +25.52% | $187,285,676.91 |
+| FIGHT/USDT:USDT | +18.62% | $1,061,607.77 |
+| H/USDT:USDT | +12.07% | $11,657,146.39 |
+| FOLKS/USDT:USDT | +11.57% | $12,626,888.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.26% | +2.11% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.92% | +0.77% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.85% | +0.70% |
-| FIGHT/USDT:USDT | below_1h_threshold | +0.83% | +0.68% |
-| BTW/USDT:USDT | below_1h_threshold | +0.71% | +0.56% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.43% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.36% | +1.20% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.30% | +1.14% |
+| STRAX/USDT:USDT | below_1h_threshold | +1.25% | +1.09% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.13% | +0.97% |
 
 ## 5. 次に見るべき不足
 
