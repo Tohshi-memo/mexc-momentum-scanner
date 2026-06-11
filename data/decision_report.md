@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T08:49:49.109116+00:00
+- generated_at: 2026-06-11T08:56:17.103277+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6329**
 
@@ -54,31 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T08:49:44.226410+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=62976.2
-- Funnel: target 781 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-11T08:56:09.198941+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=62929.8
+- Funnel: target 781 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +76.14% | $71,176,038.46 |
-| AIO/USDT:USDT | +65.14% | $5,663,622.35 |
-| BEAT/USDT:USDT | +52.05% | $218,263,172.38 |
-| COLLECT/USDT:USDT | +46.73% | $1,627,151.66 |
-| H/USDT:USDT | +40.06% | $12,988,017.48 |
+| VELVET/USDT:USDT | +83.74% | $71,880,825.30 |
+| AIO/USDT:USDT | +66.77% | $5,679,653.39 |
+| BEAT/USDT:USDT | +51.74% | $218,647,206.24 |
+| COLLECT/USDT:USDT | +50.18% | $1,654,969.82 |
+| H/USDT:USDT | +36.75% | $13,138,776.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LRCXSTOCK/USDT:USDT | below_relative_strength | +5.03% | +4.58% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.94% | +4.49% |
-| COLLECT/USDT:USDT | below_1h_threshold | +4.63% | +4.18% |
-| FIGHT/USDT:USDT | below_1h_threshold | +4.58% | +4.13% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.41% | +3.96% |
+| LRCXSTOCK/USDT:USDT | below_relative_strength | +5.21% | +4.83% |
+| FIGHT/USDT:USDT | below_1h_threshold | +4.84% | +4.46% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.16% | +3.78% |
+| CRV/USDT:USDT | below_1h_threshold | +3.68% | +3.30% |
+| TXNSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +1.75% |
 
 ## 5. 次に見るべき不足
 
