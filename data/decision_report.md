@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T18:51:58.645209+00:00
+- generated_at: 2026-06-11T18:57:59.570783+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6396**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T18:51:54.954507+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=63479.4
+- 更新: 2026-06-11T18:57:56.515328+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63499.4
 - Funnel: target 782 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.1 >= 65=1
+- Strict後reject: 4h RSI 81.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +56.69% | $107,695,820.88 |
-| ESPORTS/USDT:USDT | +35.62% | $12,817,707.85 |
-| SKYAI/USDT:USDT | +13.01% | $11,661,712.70 |
-| POWER/USDT:USDT | +8.54% | $1,151,022.34 |
-| HMSTR/USDT:USDT | +7.90% | $4,496,753.99 |
+| VELVET/USDT:USDT | +55.38% | $108,799,432.22 |
+| ESPORTS/USDT:USDT | +36.99% | $12,957,556.34 |
+| SKYAI/USDT:USDT | +14.62% | $11,785,339.03 |
+| POWER/USDT:USDT | +6.99% | $1,168,742.64 |
+| SOXL/USDT:USDT | +6.85% | $1,568,174.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +4.64% | +4.85% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.70% | +3.91% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.17% | +3.38% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.55% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +2.14% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.93% | +5.11% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.16% | +4.34% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.46% | +3.63% |
+| POWER/USDT:USDT | below_1h_threshold | +3.28% | +3.45% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.37% | +2.55% |
 
 ## 5. 次に見るべき不足
 
