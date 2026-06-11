@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T13:55:54.134366+00:00
+- generated_at: 2026-06-11T14:02:11.049366+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6356**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T13:55:49.815537+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63083.5
-- Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 6 → strict 0
-- Surge前reject: below_1h_threshold=43, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 71.6 >= 65=1, 4h RSI n/a=1, 4h RSI 71.4 >= 65=1, 4h RSI 91.7 >= 65=1
+- 更新: 2026-06-11T14:02:08.069172+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=62969.0
+- Funnel: target 782 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +110.66% | $24,498,175.18 |
-| VELVET/USDT:USDT | +76.10% | $83,964,512.24 |
-| BEAT/USDT:USDT | +62.74% | $239,950,156.25 |
-| AIO/USDT:USDT | +55.15% | $8,788,051.46 |
-| COLLECT/USDT:USDT | +49.81% | $2,341,317.19 |
+| H/USDT:USDT | +118.12% | $24,203,798.07 |
+| VELVET/USDT:USDT | +90.47% | $83,083,783.64 |
+| BEAT/USDT:USDT | +62.84% | $236,789,001.84 |
+| AIO/USDT:USDT | +55.34% | $8,791,705.69 |
+| COLLECT/USDT:USDT | +50.88% | $2,340,436.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_relative_strength | +5.02% | +4.85% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.82% | +4.65% |
-| PLSTOCK/USDT:USDT | below_1h_threshold | +4.77% | +4.60% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.76% | +3.59% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.33% | +3.16% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.76% | +2.87% |
+| SPACE/USDT:USDT | below_1h_threshold | +1.80% | +1.90% |
+| HMSTR/USDT:USDT | below_1h_threshold | +1.78% | +1.89% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.82% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.67% |
 
 ## 5. 次に見るべき不足
 
