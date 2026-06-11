@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T22:10:48.934364+00:00
+- generated_at: 2026-06-11T22:17:24.720004+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6417**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T22:10:45.564425+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=63580.2
-- Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1
+- 更新: 2026-06-11T22:17:21.614503+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63604.9
+- Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.9 >= 65=1, 4h RSI 83.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +80.14% | $16,572,097.96 |
-| VELVET/USDT:USDT | +68.00% | $125,300,650.45 |
-| STG/USDT:USDT | +18.97% | $13,063,856.47 |
-| UB/USDT:USDT | +15.58% | $1,721,024.27 |
-| NAORIS/USDT:USDT | +14.88% | $1,544,954.62 |
+| ESPORTS/USDT:USDT | +77.21% | $16,898,650.75 |
+| VELVET/USDT:USDT | +74.35% | $126,031,646.83 |
+| STG/USDT:USDT | +21.37% | $13,194,561.14 |
+| NAORIS/USDT:USDT | +17.39% | $1,547,715.79 |
+| UB/USDT:USDT | +15.59% | $1,732,680.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.21% | +3.06% |
-| UB/USDT:USDT | below_1h_threshold | +2.60% | +2.44% |
-| COAI/USDT:USDT | below_1h_threshold | +1.93% | +1.78% |
-| UAI/USDT:USDT | below_1h_threshold | +1.37% | +1.22% |
-| AMCSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.08% |
+| UB/USDT:USDT | below_1h_threshold | +2.60% | +2.41% |
+| COAI/USDT:USDT | below_1h_threshold | +2.03% | +1.84% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.58% | +1.38% |
+| PLSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.37% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.32% |
 
 ## 5. 次に見るべき不足
 
