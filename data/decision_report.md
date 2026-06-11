@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-11T17:50:33.202622+00:00
+- generated_at: 2026-06-11T17:55:56.828475+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6388**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-11T17:50:24.542943+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.64% price=63569.5
-- Funnel: target 782 → liquid 158 → pre 50 → checked 50 → surge 6 → strict 2
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.6 >= 65=1, 4h RSI 75.4 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-06-11T17:55:53.766324+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.44% price=63447.4
+- Funnel: target 782 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=43, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.9 >= 65=1, 4h RSI 75.9 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +26.77% | $11,026,012.38 |
-| VELVET/USDT:USDT | +18.61% | $96,937,329.70 |
-| SKYAI/USDT:USDT | +9.89% | $10,940,107.13 |
-| AIO/USDT:USDT | +7.31% | $10,225,900.39 |
-| ZBT/USDT:USDT | +6.58% | $1,163,759.51 |
+| ESPORTS/USDT:USDT | +28.74% | $11,322,527.10 |
+| VELVET/USDT:USDT | +21.25% | $97,734,027.01 |
+| SKYAI/USDT:USDT | +11.42% | $10,999,102.87 |
+| ZBT/USDT:USDT | +6.97% | $1,166,630.72 |
+| HMSTR/USDT:USDT | +6.00% | $4,703,648.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| A/USDT:USDT | below_1h_threshold | +4.96% | +3.32% |
-| RAVE/USDT:USDT | below_1h_threshold | +4.52% | +2.89% |
-| HYPE/USDT:USDT | below_1h_threshold | +4.51% | +2.87% |
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +4.48% | +2.84% |
-| NEAR/USDT:USDT | below_1h_threshold | +4.29% | +2.65% |
+| VVV/USDT:USDT | below_relative_strength | +6.39% | +4.95% |
+| STG/USDT:USDT | below_relative_strength | +5.28% | +3.84% |
+| A/USDT:USDT | below_relative_strength | +5.10% | +3.66% |
+| NEAR/USDT:USDT | below_1h_threshold | +4.59% | +3.15% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +4.40% | +2.96% |
 
 ## 5. 次に見るべき不足
 
