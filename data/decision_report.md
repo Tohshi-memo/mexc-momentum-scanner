@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T16:29:11.739068+00:00
+- generated_at: 2026-06-12T16:35:53.315474+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6523**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T16:29:03.411548+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=63876.2
-- Funnel: target 774 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.4 >= 65=1
+- 更新: 2026-06-12T16:35:44.167573+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=63773.0
+- Funnel: target 774 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +7.98% | $2,679,021.32 |
-| RKLBSTOCK/USDT:USDT | +6.86% | $1,151,953.50 |
-| NAORIS/USDT:USDT | +5.93% | $7,052,562.82 |
-| ESPORTS/USDT:USDT | +5.17% | $65,412,992.36 |
-| COAI/USDT:USDT | +4.77% | $4,180,308.83 |
+| VELVET/USDT:USDT | +12.87% | $172,716,575.49 |
+| ESPORTS/USDT:USDT | +8.45% | $65,708,773.30 |
+| BTW/USDT:USDT | +7.59% | $2,779,594.08 |
+| RKLBSTOCK/USDT:USDT | +7.34% | $1,318,240.56 |
+| PLAY/USDT:USDT | +4.41% | $5,681,356.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_relative_strength | +5.48% | +4.98% |
-| COAI/USDT:USDT | below_relative_strength | +5.07% | +4.57% |
-| AIO/USDT:USDT | below_1h_threshold | +3.46% | +2.96% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.35% | +2.85% |
-| PLSTOCK/USDT:USDT | below_1h_threshold | +3.33% | +2.83% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.60% | +4.26% |
+| COAI/USDT:USDT | below_1h_threshold | +4.26% | +3.92% |
+| PLSTOCK/USDT:USDT | below_1h_threshold | +4.06% | +3.72% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.01% | +3.68% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.55% | +3.21% |
 
 ## 5. 次に見るべき不足
 
