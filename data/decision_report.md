@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T20:40:04.228209+00:00
+- generated_at: 2026-06-12T20:46:25.165002+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6543**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T20:40:00.888614+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63490.3
-- Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-12T20:46:22.464863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63495.8
+- Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +18.51% | $1,120,174.33 |
-| PLAY/USDT:USDT | +18.45% | $10,065,160.07 |
-| AIN/USDT:USDT | +9.65% | $1,796,543.09 |
-| ORDI/USDT:USDT | +7.04% | $4,192,322.39 |
-| CLO/USDT:USDT | +6.31% | $1,011,995.51 |
+| PLAY/USDT:USDT | +16.76% | $10,125,263.85 |
+| ORCA/USDT:USDT | +16.40% | $1,148,260.57 |
+| AIN/USDT:USDT | +10.06% | $1,803,374.96 |
+| ESPORTS/USDT:USDT | +6.44% | $69,207,376.61 |
+| ORDI/USDT:USDT | +6.40% | $4,224,252.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.16% | +3.26% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.81% | +2.92% |
-| AIN/USDT:USDT | below_1h_threshold | +2.21% | +2.31% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.64% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.43% | +1.53% |
+| CLO/USDT:USDT | below_1h_threshold | +4.88% | +4.97% |
+| BILL/USDT:USDT | below_1h_threshold | +3.64% | +3.73% |
+| AIN/USDT:USDT | below_1h_threshold | +2.60% | +2.69% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.17% | +2.26% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.58% |
 
 ## 5. 次に見るべき不足
 
