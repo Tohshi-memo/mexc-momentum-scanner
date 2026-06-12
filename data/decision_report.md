@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T03:42:21.438896+00:00
+- generated_at: 2026-06-12T03:48:33.596366+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6449**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T03:42:18.290641+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=63448.8
-- Funnel: target 782 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.3 >= 65=1, 4h RSI 74.3 >= 65=1
+- 更新: 2026-06-12T03:48:24.883723+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=63462.6
+- Funnel: target 782 → liquid 158 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.5 >= 65=1, 4h RSI 74.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +105.23% | $136,503,918.53 |
-| XPL/USDT:USDT | +26.56% | $4,828,118.84 |
-| SKYAI/USDT:USDT | +20.52% | $13,926,723.54 |
-| NAORIS/USDT:USDT | +19.61% | $1,532,031.72 |
-| STG/USDT:USDT | +16.81% | $14,752,599.36 |
+| VELVET/USDT:USDT | +109.71% | $136,961,322.44 |
+| XPL/USDT:USDT | +27.89% | $4,904,228.14 |
+| SKYAI/USDT:USDT | +20.28% | $13,967,375.72 |
+| NAORIS/USDT:USDT | +18.77% | $1,536,512.00 |
+| STG/USDT:USDT | +17.55% | $14,839,038.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.91% | +5.13% |
-| XPL/USDT:USDT | below_1h_threshold | +2.95% | +3.17% |
-| SPACE/USDT:USDT | below_1h_threshold | +2.21% | +2.43% |
-| CRV/USDT:USDT | below_1h_threshold | +1.94% | +2.16% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.89% | +2.11% |
+| FHE/USDT:USDT | below_1h_threshold | +4.70% | +4.90% |
+| XPL/USDT:USDT | below_1h_threshold | +4.15% | +4.35% |
+| SPACE/USDT:USDT | below_1h_threshold | +3.25% | +3.44% |
+| CRV/USDT:USDT | below_1h_threshold | +1.90% | +2.10% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.66% | +1.86% |
 
 ## 5. 次に見るべき不足
 
