@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T08:48:48.011406+00:00
+- generated_at: 2026-06-12T08:55:09.915911+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6489**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T08:48:44.627387+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.53% price=63400.0
-- Funnel: target 779 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1
+- 更新: 2026-06-12T08:55:06.651830+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.57% price=63424.4
+- Funnel: target 779 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.7 >= 65=1, 4h RSI 72.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +106.44% | $148,870,989.55 |
-| ESPORTS/USDT:USDT | +49.86% | $37,509,023.74 |
-| NAORIS/USDT:USDT | +42.19% | $2,884,402.95 |
-| XPL/USDT:USDT | +37.39% | $9,349,240.44 |
-| H/USDT:USDT | +26.20% | $44,976,965.38 |
+| VELVET/USDT:USDT | +105.71% | $149,470,140.09 |
+| ESPORTS/USDT:USDT | +51.89% | $37,792,356.74 |
+| NAORIS/USDT:USDT | +42.89% | $2,929,863.60 |
+| XPL/USDT:USDT | +35.91% | $9,471,130.82 |
+| H/USDT:USDT | +26.03% | $45,092,900.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +4.30% | +3.78% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.94% | +3.42% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.24% | +1.71% |
-| COAI/USDT:USDT | below_1h_threshold | +2.03% | +1.51% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.96% | +1.43% |
+| TRUMPOFFICIAL/USDT:USDT | below_relative_strength | +5.44% | +4.88% |
+| COAI/USDT:USDT | below_1h_threshold | +2.70% | +2.13% |
+| JUP/USDT:USDT | below_1h_threshold | +2.47% | +1.91% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.25% | +1.69% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.20% | +1.64% |
 
 ## 5. 次に見るべき不足
 
