@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T18:34:11.182316+00:00
+- generated_at: 2026-06-12T18:40:13.394316+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6538**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T18:34:08.123499+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=63758.3
+- 更新: 2026-06-12T18:40:10.450915+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63797.1
 - Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +16.34% | $9,496,411.53 |
-| HOME/USDT:USDT | +6.54% | $3,076,145.18 |
-| H/USDT:USDT | +5.16% | $29,796,710.97 |
-| SIREN/USDT:USDT | +5.06% | $5,023,272.42 |
-| NBISSTOCK/USDT:USDT | +4.77% | $1,333,393.95 |
+| PLAY/USDT:USDT | +17.51% | $9,553,374.44 |
+| ESPORTS/USDT:USDT | +7.96% | $66,574,611.26 |
+| HOME/USDT:USDT | +6.33% | $3,081,847.48 |
+| ENJ/USDT:USDT | +5.94% | $1,964,642.62 |
+| BTW/USDT:USDT | +5.39% | $2,885,478.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +2.27% | +2.39% |
-| LUMIA/USDT:USDT | below_1h_threshold | +0.75% | +0.88% |
-| ENJ/USDT:USDT | below_1h_threshold | +0.58% | +0.70% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.47% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.29% | +0.41% |
+| ENJ/USDT:USDT | below_1h_threshold | +2.42% | +2.48% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.63% | +1.69% |
+| BTW/USDT:USDT | below_1h_threshold | +1.46% | +1.52% |
+| LUMIA/USDT:USDT | below_1h_threshold | +0.95% | +1.01% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.69% | +0.75% |
 
 ## 5. 次に見るべき不足
 
