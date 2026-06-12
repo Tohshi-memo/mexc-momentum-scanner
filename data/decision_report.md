@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-06-12T07:05:04.163507+00:00
+- generated_at: 2026-06-12T07:11:20.619202+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6477**
+- closed shadow trades: **6478**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6477, expectancy=-0.07%
-- 直近20件 MARKET基準: n=20, expectancy=-2.20%
+- 全期間 MARKET基準: n=6478, expectancy=-0.07%
+- 直近20件 MARKET基準: n=20, expectancy=-2.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -2.20% | **-2.20%** |
+| MARKET | 20/20 | 100.0% | -2.80% | **-2.80%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET_LONG | 20/20 | 100.0% | +2.60% | **+2.60%** |
-| ASK_LONG | 20/20 | 100.0% | +2.49% | **+2.49%** |
-| LIMIT_1PCT_LONG | 14/20 | 70.0% | +2.68% | **+1.87%** |
-| LIMIT_2PCT_LONG | 12/20 | 60.0% | +2.90% | **+1.74%** |
-| LIMIT_ATR_LONG | 6/20 | 30.0% | +5.24% | **+1.57%** |
+| MARKET_LONG | 20/20 | 100.0% | +3.00% | **+3.00%** |
+| ASK_LONG | 20/20 | 100.0% | +2.93% | **+2.93%** |
+| LIMIT_1PCT_LONG | 14/20 | 70.0% | +3.32% | **+2.33%** |
+| LIMIT_2PCT_LONG | 11/20 | 55.0% | +3.53% | **+1.94%** |
+| LIMIT_ATR_LONG | 5/20 | 25.0% | +4.69% | **+1.17%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,38 +46,38 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$163.97** / 初期 $100.00 (+63.97%)
-- 確定: 1352件 (Win 364 / Loss 432 / Flat 556) / skip 1686件
-- 成長率目線: 平均log +0.000366 / 幾何平均 +0.037% per trade / maxDD +7.25%
+- 残高: **$164.79** / 初期 $100.00 (+64.79%)
+- 確定: 1353件 (Win 365 / Loss 432 / Flat 556) / skip 1686件
+- 成長率目線: 平均log +0.000369 / 幾何平均 +0.037% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SPACE/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $163.97
+- 最新: VELVET/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $164.79
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T07:05:00.947389+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=63067.7
-- Funnel: target 779 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-12T07:11:17.431144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63052.5
+- Funnel: target 779 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +96.77% | $137,280,587.40 |
-| ESPORTS/USDT:USDT | +50.25% | $33,618,250.76 |
-| H/USDT:USDT | +35.48% | $43,553,429.40 |
-| NAORIS/USDT:USDT | +32.48% | $2,109,708.94 |
-| XPL/USDT:USDT | +31.68% | $7,198,985.46 |
+| VELVET/USDT:USDT | +102.48% | $138,001,997.94 |
+| ESPORTS/USDT:USDT | +55.48% | $33,811,043.83 |
+| NAORIS/USDT:USDT | +36.78% | $2,116,085.99 |
+| XPL/USDT:USDT | +32.28% | $7,234,595.81 |
+| STG/USDT:USDT | +29.80% | $14,473,653.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_relative_strength | +5.09% | +4.91% |
-| H/USDT:USDT | below_1h_threshold | +3.53% | +3.36% |
-| CLO/USDT:USDT | below_1h_threshold | +1.87% | +1.69% |
-| HMSTR/USDT:USDT | below_1h_threshold | +1.69% | +1.51% |
-| XMR/USDT:USDT | below_1h_threshold | +1.44% | +1.27% |
+| STG/USDT:USDT | below_1h_threshold | +3.35% | +3.20% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.83% | +2.68% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.77% | +2.61% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.69% | +2.54% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.10% | +1.95% |
 
 ## 5. 次に見るべき不足
 
