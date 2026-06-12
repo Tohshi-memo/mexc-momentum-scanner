@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T21:30:58.894040+00:00
+- generated_at: 2026-06-12T21:37:08.063800+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6547**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T21:30:55.547632+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=63486.6
+- 更新: 2026-06-12T21:37:05.049905+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=63507.7
 - Funnel: target 774 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 72.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +16.59% | $1,280,228.06 |
-| ESPORTS/USDT:USDT | +13.34% | $69,932,161.95 |
-| PLAY/USDT:USDT | +10.31% | $10,467,796.77 |
-| H/USDT:USDT | +9.81% | $29,911,201.22 |
-| AIN/USDT:USDT | +7.47% | $1,749,707.97 |
+| ORCA/USDT:USDT | +16.31% | $1,285,542.90 |
+| ESPORTS/USDT:USDT | +12.08% | $70,104,487.25 |
+| PLAY/USDT:USDT | +10.05% | $10,492,327.30 |
+| H/USDT:USDT | +8.22% | $29,997,323.33 |
+| AIN/USDT:USDT | +7.05% | $1,751,783.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.99% | +1.89% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.51% | +1.40% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.41% | +1.30% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.24% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.31% | +1.21% |
+| STG/USDT:USDT | below_1h_threshold | +3.97% | +3.83% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +1.63% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.61% | +1.46% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.30% | +1.16% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.11% | +0.96% |
 
 ## 5. 次に見るべき不足
 
