@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T14:50:45.973334+00:00
+- generated_at: 2026-06-12T14:57:01.299761+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6517**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T14:50:40.513995+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=63520.0
-- Funnel: target 774 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
+- 更新: 2026-06-12T14:56:53.771886+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.16% price=63933.6
+- Funnel: target 774 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +134.87% | $56,668,261.31 |
-| VELVET/USDT:USDT | +80.04% | $164,130,809.03 |
-| NAORIS/USDT:USDT | +46.19% | $6,574,127.59 |
-| AIN/USDT:USDT | +40.32% | $1,391,335.75 |
-| XPL/USDT:USDT | +38.60% | $15,420,551.89 |
+| ESPORTS/USDT:USDT | +112.24% | $57,779,565.43 |
+| VELVET/USDT:USDT | +68.02% | $164,905,006.73 |
+| NAORIS/USDT:USDT | +45.99% | $6,604,012.66 |
+| AIN/USDT:USDT | +39.20% | $1,408,172.75 |
+| XPL/USDT:USDT | +39.01% | $15,480,830.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_relative_strength | +5.12% | +4.61% |
-| MSTRSTOCK/USDT:USDT | below_relative_strength | +5.01% | +4.51% |
-| ETHFI/USDT:USDT | below_1h_threshold | +5.00% | +4.49% |
-| SPX/USDT:USDT | below_1h_threshold | +3.17% | +2.66% |
-| DOGE/USDT:USDT | below_1h_threshold | +3.07% | +2.57% |
+| ETHFI/USDT:USDT | below_relative_strength | +5.85% | +4.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.47% | +3.31% |
+| SPX/USDT:USDT | below_1h_threshold | +4.32% | +3.16% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.10% | +2.94% |
+| STG/USDT:USDT | below_1h_threshold | +3.76% | +2.60% |
 
 ## 5. 次に見るべき不足
 
