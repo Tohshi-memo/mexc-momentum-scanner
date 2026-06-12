@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T14:37:50.987786+00:00
+- generated_at: 2026-06-12T14:43:54.642539+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6517**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T14:37:47.974746+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.77% price=63686.8
-- Funnel: target 774 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1
+- 更新: 2026-06-12T14:43:51.238407+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=63520.7
+- Funnel: target 774 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +129.49% | $55,870,449.07 |
-| VELVET/USDT:USDT | +82.67% | $163,510,215.95 |
-| NAORIS/USDT:USDT | +44.12% | $6,540,345.64 |
-| SKYAI/USDT:USDT | +38.83% | $17,737,994.44 |
-| AIN/USDT:USDT | +38.78% | $1,375,616.11 |
+| ESPORTS/USDT:USDT | +131.36% | $56,283,714.10 |
+| VELVET/USDT:USDT | +81.03% | $163,768,727.41 |
+| NAORIS/USDT:USDT | +43.77% | $6,561,567.62 |
+| AIN/USDT:USDT | +38.93% | $1,387,111.64 |
+| SKYAI/USDT:USDT | +37.93% | $17,805,590.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGE/USDT:USDT | below_relative_strength | +5.57% | +4.80% |
-| MSTRSTOCK/USDT:USDT | below_relative_strength | +5.37% | +4.60% |
-| ETHFI/USDT:USDT | below_1h_threshold | +4.30% | +3.54% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.51% | +2.74% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +2.30% |
+| MSTRSTOCK/USDT:USDT | below_relative_strength | +5.10% | +4.60% |
+| DOGE/USDT:USDT | below_1h_threshold | +4.04% | +3.53% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.74% | +3.23% |
+| SPX/USDT:USDT | below_1h_threshold | +3.32% | +2.81% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.07% | +2.56% |
 
 ## 5. 次に見るべき不足
 
