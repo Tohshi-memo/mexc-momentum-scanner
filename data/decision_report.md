@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T08:30:08.333341+00:00
+- generated_at: 2026-06-12T08:36:23.206858+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6487**
 
@@ -54,30 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T08:30:04.717133+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.68% price=63495.1
-- Funnel: target 779 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-12T08:36:20.426373+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.58% price=63434.5
+- Funnel: target 779 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +97.67% | $146,598,756.46 |
-| XPL/USDT:USDT | +42.57% | $8,872,437.56 |
-| NAORIS/USDT:USDT | +39.15% | $2,751,549.54 |
-| ESPORTS/USDT:USDT | +32.70% | $36,703,306.73 |
-| STG/USDT:USDT | +28.31% | $14,714,073.34 |
+| VELVET/USDT:USDT | +104.48% | $147,515,932.98 |
+| XPL/USDT:USDT | +39.16% | $9,035,599.85 |
+| NAORIS/USDT:USDT | +36.14% | $2,820,464.90 |
+| ESPORTS/USDT:USDT | +33.87% | $36,941,644.68 |
+| H/USDT:USDT | +31.97% | $44,599,249.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +4.36% | +3.68% |
-| XPL/USDT:USDT | below_1h_threshold | +3.96% | +3.28% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.11% | +2.43% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.23% | +1.55% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.90% | +1.22% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.50% | +2.92% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.94% | +2.36% |
+| UB/USDT:USDT | below_1h_threshold | +2.16% | +1.58% |
+| JUP/USDT:USDT | below_1h_threshold | +1.98% | +1.40% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.87% | +1.28% |
 
 ## 5. 次に見るべき不足
 
