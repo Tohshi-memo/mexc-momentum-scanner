@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T11:48:21.943154+00:00
+- generated_at: 2026-06-12T11:54:38.756203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6505**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T11:48:18.814396+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=63793.3
+- 更新: 2026-06-12T11:54:35.469207+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63804.9
 - Funnel: target 774 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 73.5 >= 65=1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.2 >= 65=1, 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +91.81% | $156,385,912.84 |
-| ESPORTS/USDT:USDT | +85.72% | $46,371,396.04 |
-| NAORIS/USDT:USDT | +48.68% | $5,237,168.89 |
-| SKYAI/USDT:USDT | +37.35% | $16,446,456.71 |
-| XPL/USDT:USDT | +36.32% | $12,736,213.14 |
+| VELVET/USDT:USDT | +86.46% | $156,973,642.66 |
+| ESPORTS/USDT:USDT | +81.73% | $46,605,044.51 |
+| NAORIS/USDT:USDT | +44.85% | $5,260,885.01 |
+| SKYAI/USDT:USDT | +38.53% | $16,613,532.11 |
+| XPL/USDT:USDT | +38.01% | $12,857,825.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XMR/USDT:USDT | below_1h_threshold | +4.34% | +4.14% |
-| LAB/USDT:USDT | below_1h_threshold | +4.00% | +3.80% |
-| COAI/USDT:USDT | below_1h_threshold | +3.96% | +3.76% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.89% | +2.69% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.66% |
+| XMR/USDT:USDT | below_relative_strength | +5.07% | +4.85% |
+| LAB/USDT:USDT | below_1h_threshold | +2.63% | +2.41% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.74% | +1.52% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.49% | +1.27% |
+| SEI/USDT:USDT | below_1h_threshold | +1.38% | +1.16% |
 
 ## 5. 次に見るべき不足
 
