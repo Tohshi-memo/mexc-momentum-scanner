@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T06:28:21.523791+00:00
+- generated_at: 2026-06-12T06:34:37.192951+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6472**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T06:28:16.266908+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=63140.3
+- 更新: 2026-06-12T06:34:31.771483+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.72% price=62865.0
 - Funnel: target 783 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -64,21 +64,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +78.84% | $140,385,763.46 |
-| H/USDT:USDT | +47.30% | $43,194,787.84 |
-| ESPORTS/USDT:USDT | +42.19% | $32,767,061.79 |
-| NAORIS/USDT:USDT | +35.96% | $1,963,637.31 |
-| XPL/USDT:USDT | +27.30% | $7,006,645.39 |
+| VELVET/USDT:USDT | +79.62% | $140,859,757.14 |
+| H/USDT:USDT | +45.65% | $43,369,223.95 |
+| ESPORTS/USDT:USDT | +42.58% | $32,876,650.43 |
+| NAORIS/USDT:USDT | +32.66% | $1,991,720.55 |
+| STG/USDT:USDT | +26.33% | $15,171,027.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.56% | +4.85% |
-| STG/USDT:USDT | below_1h_threshold | +4.44% | +4.72% |
-| SPACE/USDT:USDT | below_1h_threshold | +4.30% | +4.58% |
-| NAORIS/USDT:USDT | below_1h_threshold | +4.08% | +4.37% |
-| UB/USDT:USDT | below_1h_threshold | +3.56% | +3.85% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.88% | +4.60% |
+| UB/USDT:USDT | below_1h_threshold | +3.85% | +4.57% |
+| UAI/USDT:USDT | below_1h_threshold | +3.68% | +4.40% |
+| H/USDT:USDT | below_1h_threshold | +3.59% | +4.31% |
+| SPACE/USDT:USDT | below_1h_threshold | +3.41% | +4.13% |
 
 ## 5. 次に見るべき不足
 
