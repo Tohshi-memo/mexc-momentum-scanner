@@ -1,31 +1,31 @@
 # Decision Report
 
-- generated_at: 2026-06-12T22:52:11.302875+00:00
+- generated_at: 2026-06-12T22:58:19.434634+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6547**
+- closed shadow trades: **6548**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +4.82% / filled 20/20。**
-- 全期間 MARKET基準: n=6547, expectancy=-0.05%
-- 直近20件 MARKET基準: n=20, expectancy=+4.82%
+- 結論: **MARKET SHORTは実行候補。直近EV +5.12% / filled 20/20。**
+- 全期間 MARKET基準: n=6548, expectancy=-0.05%
+- 直近20件 MARKET基準: n=20, expectancy=+5.12%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +4.82% | **+4.82%** |
+| MARKET | 20/20 | 100.0% | +5.12% | **+5.12%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +4.82% | **+4.82%** |
-| ASK | 20/20 | 100.0% | +4.27% | **+4.27%** |
-| LIMIT_1PCT | 14/20 | 70.0% | +3.79% | **+2.65%** |
-| LIMIT_2PCT | 12/20 | 60.0% | +3.51% | **+2.11%** |
-| LIMIT_ATR | 7/20 | 35.0% | +5.05% | **+1.77%** |
+| MARKET | 20/20 | 100.0% | +5.12% | **+5.12%** |
+| ASK | 20/20 | 100.0% | +4.57% | **+4.57%** |
+| LIMIT_1PCT | 14/20 | 70.0% | +4.28% | **+3.00%** |
+| LIMIT_2PCT | 11/20 | 55.0% | +4.19% | **+2.31%** |
+| LIMIT_ATR | 7/20 | 35.0% | +5.07% | **+1.77%** |
 
 ### シャドウ上位 LONG
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$163.82** / 初期 $100.00 (+63.82%)
-- 確定: 1420件 (Win 388 / Loss 462 / Flat 570) / skip 1688件
-- 成長率目線: 平均log +0.000348 / 幾何平均 +0.035% per trade / maxDD +7.25%
+- 残高: **$163.00** / 初期 $100.00 (+63.00%)
+- 確定: 1421件 (Win 388 / Loss 463 / Flat 570) / skip 1688件
+- 成長率目線: 平均log +0.000344 / 幾何平均 +0.034% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ESPORTS/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $163.82
+- 最新: MSTRSTOCK/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $163.00
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T22:52:08.493070+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63460.1
+- 更新: 2026-06-12T22:58:16.194018+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63478.4
 - Funnel: target 774 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +13.01% | $1,510,720.47 |
-| AIN/USDT:USDT | +12.93% | $1,839,745.01 |
-| EDGE/USDT:USDT | +11.90% | $1,011,603.69 |
-| ESPORTS/USDT:USDT | +11.03% | $70,434,362.26 |
-| H/USDT:USDT | +8.87% | $29,708,216.46 |
+| ORCA/USDT:USDT | +13.56% | $1,525,388.51 |
+| AIN/USDT:USDT | +12.94% | $1,847,930.02 |
+| ESPORTS/USDT:USDT | +12.60% | $70,621,520.24 |
+| EDGE/USDT:USDT | +12.04% | $1,040,447.31 |
+| H/USDT:USDT | +9.45% | $29,731,379.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.32% | +3.31% |
-| HOME/USDT:USDT | below_1h_threshold | +3.09% | +3.08% |
-| COAI/USDT:USDT | below_1h_threshold | +2.39% | +2.37% |
-| H/USDT:USDT | below_1h_threshold | +1.75% | +1.74% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.47% | +1.45% |
+| HOME/USDT:USDT | below_1h_threshold | +3.53% | +3.49% |
+| AIN/USDT:USDT | below_1h_threshold | +3.19% | +3.15% |
+| H/USDT:USDT | below_1h_threshold | +2.16% | +2.12% |
+| COAI/USDT:USDT | below_1h_threshold | +1.74% | +1.70% |
+| STG/USDT:USDT | below_1h_threshold | +1.65% | +1.60% |
 
 ## 5. 次に見るべき不足
 
