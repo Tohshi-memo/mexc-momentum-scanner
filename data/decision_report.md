@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T11:42:11.717188+00:00
+- generated_at: 2026-06-12T11:48:21.943154+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6505**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T11:42:08.701126+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=63758.2
-- Funnel: target 774 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1
+- 更新: 2026-06-12T11:48:18.814396+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=63793.3
+- Funnel: target 774 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 73.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +93.54% | $156,108,944.93 |
-| ESPORTS/USDT:USDT | +82.41% | $46,102,204.75 |
-| NAORIS/USDT:USDT | +47.89% | $5,226,141.19 |
-| XPL/USDT:USDT | +36.48% | $12,667,090.96 |
-| SKYAI/USDT:USDT | +34.74% | $16,265,646.21 |
+| VELVET/USDT:USDT | +91.81% | $156,385,912.84 |
+| ESPORTS/USDT:USDT | +85.72% | $46,371,396.04 |
+| NAORIS/USDT:USDT | +48.68% | $5,237,168.89 |
+| SKYAI/USDT:USDT | +37.35% | $16,446,456.71 |
+| XPL/USDT:USDT | +36.32% | $12,736,213.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_relative_strength | +5.05% | +4.91% |
-| XMR/USDT:USDT | below_1h_threshold | +4.21% | +4.07% |
-| COAI/USDT:USDT | below_1h_threshold | +4.11% | +3.96% |
-| LAB/USDT:USDT | below_1h_threshold | +3.94% | +3.80% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.35% | +2.20% |
+| XMR/USDT:USDT | below_1h_threshold | +4.34% | +4.14% |
+| LAB/USDT:USDT | below_1h_threshold | +4.00% | +3.80% |
+| COAI/USDT:USDT | below_1h_threshold | +3.96% | +3.76% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.89% | +2.69% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.66% |
 
 ## 5. 次に見るべき不足
 
