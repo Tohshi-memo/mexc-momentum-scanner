@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-12T16:54:04.908867+00:00
+- generated_at: 2026-06-12T17:00:28.592638+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6525**
+- closed shadow trades: **6526**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.56% / filled 20/20。**
-- 全期間 MARKET基準: n=6525, expectancy=-0.07%
+- 全期間 MARKET基準: n=6526, expectancy=-0.07%
 - 直近20件 MARKET基準: n=20, expectancy=+0.56%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +0.56% | **+0.56%** |
 | LIMIT_6PCT | 5/20 | 25.0% | +1.89% | **+0.47%** |
-| LIMIT_ATR | 11/20 | 55.0% | +0.80% | **+0.44%** |
-| ASK | 20/20 | 100.0% | +0.38% | **+0.38%** |
-| LIMIT_5PCT | 7/20 | 35.0% | +0.95% | **+0.33%** |
+| LIMIT_ATR | 12/20 | 60.0% | +0.73% | **+0.44%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +0.95% | **+0.38%** |
+| ASK | 20/20 | 100.0% | +0.34% | **+0.34%** |
 
 ### シャドウ上位 LONG
 
@@ -39,47 +39,47 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$95.16** / 初期 $100.00 (-4.84%)
-- 確定トレード: 20件 (TP 3 / SL 16 / EXP 1)
-- 最新: VELVET/USDT:USDT SL_HIT PnL -4.00% 残高後 $95.16
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$94.22** / 初期 $100.00 (-5.78%)
+- 確定トレード: 22件 (TP 3 / SL 18 / EXP 1)
+- 最新: BTW/USDT:USDT SL_HIT PnL -4.00% 残高後 $94.22
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$163.85** / 初期 $100.00 (+63.85%)
-- 確定: 1398件 (Win 385 / Loss 457 / Flat 556) / skip 1688件
+- 確定: 1399件 (Win 385 / Loss 457 / Flat 557) / skip 1688件
 - 成長率目線: 平均log +0.000353 / 幾何平均 +0.035% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $163.85
+- 最新: PLAY/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $163.85
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T16:53:53.791959+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=63907.2
-- Funnel: target 774 → liquid 161 → pre 50 → checked 50 → surge 7 → strict 4
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1, 4h RSI 80.8 >= 65=1, 4h RSI 80.1 >= 65=1
+- 更新: 2026-06-12T17:00:19.111872+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=63950.0
+- Funnel: target 774 → liquid 161 → pre 50 → checked 50 → surge 8 → strict 5
+- Surge前reject: below_1h_threshold=41, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.9 >= 65=1, 4h RSI 80.1 >= 65=1, 4h RSI 74.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +12.88% | $6,049,143.65 |
-| ESPORTS/USDT:USDT | +10.89% | $66,425,235.07 |
-| BEAT/USDT:USDT | +9.29% | $209,433,328.53 |
-| COAI/USDT:USDT | +7.28% | $4,447,479.33 |
-| RKLBSTOCK/USDT:USDT | +7.05% | $1,487,666.77 |
+| PLAY/USDT:USDT | +17.56% | $6,369,622.17 |
+| BTW/USDT:USDT | +9.64% | $2,933,585.58 |
+| AIN/USDT:USDT | +9.27% | $1,524,491.45 |
+| BEAT/USDT:USDT | +7.89% | $213,067,381.60 |
+| RKLBSTOCK/USDT:USDT | +7.17% | $1,502,776.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.43% |
-| SOXL/USDT:USDT | below_1h_threshold | +4.42% | +3.87% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +2.69% |
-| UB/USDT:USDT | below_1h_threshold | +3.20% | +2.65% |
-| LIT/USDT:USDT | below_1h_threshold | +3.19% | +2.64% |
+| COAI/USDT:USDT | below_relative_strength | +5.35% | +4.74% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.53% | +3.92% |
+| ENJ/USDT:USDT | below_1h_threshold | +4.28% | +3.67% |
+| PLSTOCK/USDT:USDT | below_1h_threshold | +3.99% | +3.38% |
+| LIT/USDT:USDT | below_1h_threshold | +3.77% | +3.15% |
 
 ## 5. 次に見るべき不足
 
