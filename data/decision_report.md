@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T06:03:34.842986+00:00
+- generated_at: 2026-06-12T06:09:47.878597+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6472**
 
@@ -54,30 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T06:03:31.162686+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63342.0
-- Funnel: target 783 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-12T06:09:42.818821+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63307.6
+- Funnel: target 783 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +74.85% | $138,622,818.20 |
-| H/USDT:USDT | +47.37% | $42,123,505.90 |
-| ESPORTS/USDT:USDT | +36.35% | $31,883,395.08 |
-| NAORIS/USDT:USDT | +30.32% | $1,882,049.66 |
-| XPL/USDT:USDT | +28.59% | $6,829,864.36 |
+| VELVET/USDT:USDT | +74.28% | $139,232,353.97 |
+| H/USDT:USDT | +48.75% | $42,428,562.12 |
+| ESPORTS/USDT:USDT | +36.50% | $32,066,113.31 |
+| NAORIS/USDT:USDT | +33.18% | $1,887,602.61 |
+| XPL/USDT:USDT | +27.09% | $6,864,207.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.64% | +4.61% |
-| LAB/USDT:USDT | below_1h_threshold | +1.70% | +1.67% |
-| STG/USDT:USDT | below_1h_threshold | +1.33% | +1.29% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.94% | +0.91% |
+| STG/USDT:USDT | below_1h_threshold | +3.53% | +3.55% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.15% | +2.17% |
+| UB/USDT:USDT | below_1h_threshold | +1.82% | +1.84% |
+| LAB/USDT:USDT | below_1h_threshold | +1.71% | +1.73% |
+| XAN/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
 
 ## 5. 次に見るべき不足
 
