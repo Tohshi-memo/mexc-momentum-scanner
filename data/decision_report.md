@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T23:09:15.180575+00:00
+- generated_at: 2026-06-12T23:15:27.928977+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6548**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T23:09:12.944982+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63462.3
+- 更新: 2026-06-12T23:15:25.260437+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63444.4
 - Funnel: target 774 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +14.99% | $66,557,532.82 |
-| AIN/USDT:USDT | +13.78% | $1,850,661.25 |
-| H/USDT:USDT | +12.56% | $29,148,196.21 |
-| ORCA/USDT:USDT | +12.19% | $1,545,992.36 |
-| EDGE/USDT:USDT | +12.17% | $1,040,845.71 |
+| ESPORTS/USDT:USDT | +15.59% | $66,685,545.55 |
+| AIN/USDT:USDT | +13.63% | $1,864,929.49 |
+| H/USDT:USDT | +13.48% | $29,284,370.65 |
+| ORCA/USDT:USDT | +12.46% | $1,550,381.04 |
+| EDGE/USDT:USDT | +11.49% | $1,052,326.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.40% | +2.43% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.21% | +2.24% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.13% | +2.16% |
-| AIN/USDT:USDT | below_1h_threshold | +0.91% | +0.94% |
-| COAI/USDT:USDT | below_1h_threshold | +0.83% | +0.86% |
+| H/USDT:USDT | below_1h_threshold | +3.27% | +3.33% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.70% | +2.76% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.04% | +1.10% |
+| COAI/USDT:USDT | below_1h_threshold | +0.83% | +0.89% |
+| AIN/USDT:USDT | below_1h_threshold | +0.57% | +0.63% |
 
 ## 5. 次に見るべき不足
 
