@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T07:23:23.441886+00:00
+- generated_at: 2026-06-12T07:28:28.064426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6479**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$95.65** / 初期 $100.00 (-4.35%)
-- 確定トレード: 16件 (TP 2 / SL 13 / EXP 1)
-- 最新: UB/USDT:USDT TP_HIT PnL +8.00% 残高後 $95.65
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$95.17** / 初期 $100.00 (-4.83%)
+- 確定トレード: 17件 (TP 2 / SL 14 / EXP 1)
+- 最新: ZBT/USDT:USDT SL_HIT PnL -4.00% 残高後 $95.17
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -54,31 +54,31 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T07:23:17.966605+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=62958.6
-- Funnel: target 779 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-12T07:28:21.882139+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=62999.1
+- Funnel: target 779 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +103.94% | $139,596,460.75 |
-| ESPORTS/USDT:USDT | +49.80% | $34,297,254.11 |
-| H/USDT:USDT | +37.04% | $44,238,623.75 |
-| NAORIS/USDT:USDT | +33.74% | $2,165,375.81 |
-| XPL/USDT:USDT | +30.56% | $7,325,487.30 |
+| VELVET/USDT:USDT | +101.65% | $139,965,866.29 |
+| ESPORTS/USDT:USDT | +47.80% | $34,500,973.09 |
+| H/USDT:USDT | +38.85% | $44,320,335.07 |
+| NAORIS/USDT:USDT | +37.42% | $2,200,389.63 |
+| XPL/USDT:USDT | +30.20% | $7,384,886.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.61% | +4.61% |
-| STG/USDT:USDT | below_1h_threshold | +4.17% | +4.17% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.84% | +3.84% |
-| HMSTR/USDT:USDT | below_1h_threshold | +3.21% | +3.21% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.88% | +2.88% |
+| HMSTR/USDT:USDT | below_1h_threshold | +4.27% | +4.20% |
+| LAB/USDT:USDT | below_1h_threshold | +3.80% | +3.73% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.25% | +3.18% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.98% | +2.91% |
+| UB/USDT:USDT | below_1h_threshold | +2.45% | +2.39% |
 
 ## 5. 次に見るべき不足
 
