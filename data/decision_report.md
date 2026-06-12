@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T21:49:52.796074+00:00
+- generated_at: 2026-06-12T21:56:01.682272+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6547**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T21:49:49.539400+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63451.3
-- Funnel: target 774 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1, 4h RSI 71.1 >= 65=1
+- 更新: 2026-06-12T21:55:58.768072+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63465.0
+- Funnel: target 774 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +14.84% | $1,316,222.67 |
-| ESPORTS/USDT:USDT | +13.10% | $70,464,399.33 |
-| PLAY/USDT:USDT | +12.08% | $10,572,432.66 |
-| AIN/USDT:USDT | +8.82% | $1,763,472.76 |
-| H/USDT:USDT | +7.34% | $30,117,283.15 |
+| ORCA/USDT:USDT | +15.67% | $1,340,173.93 |
+| ESPORTS/USDT:USDT | +13.65% | $70,649,587.55 |
+| PLAY/USDT:USDT | +11.22% | $10,611,687.37 |
+| AIN/USDT:USDT | +8.99% | $1,769,388.10 |
+| H/USDT:USDT | +7.55% | $30,172,230.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.53% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.12% | +1.07% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.07% | +1.02% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.38% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.31% | +1.24% |
+| NIGHT/USDT:USDT | below_1h_threshold | +0.95% | +0.87% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
 
 ## 5. 次に見るべき不足
 
