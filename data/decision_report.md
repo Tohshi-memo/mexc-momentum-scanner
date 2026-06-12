@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T16:41:29.782141+00:00
+- generated_at: 2026-06-12T16:47:46.409823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6524**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T16:41:22.850163+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.61% price=63948.9
-- Funnel: target 774 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=44, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
+- 更新: 2026-06-12T16:47:35.908242+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=63846.9
+- Funnel: target 774 → liquid 160 → pre 50 → checked 50 → surge 6 → strict 4
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.3 >= 65=1, 4h RSI 79.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +14.08% | $174,272,363.92 |
-| ESPORTS/USDT:USDT | +10.28% | $66,050,019.06 |
-| BTW/USDT:USDT | +9.62% | $2,833,183.40 |
-| RKLBSTOCK/USDT:USDT | +7.36% | $1,382,978.94 |
-| PLAY/USDT:USDT | +5.45% | $5,785,587.04 |
+| PLAY/USDT:USDT | +11.12% | $5,929,538.64 |
+| ESPORTS/USDT:USDT | +9.80% | $66,265,350.93 |
+| VELVET/USDT:USDT | +9.63% | $175,380,503.82 |
+| RKLBSTOCK/USDT:USDT | +6.85% | $1,440,619.11 |
+| COAI/USDT:USDT | +6.21% | $4,286,850.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_relative_strength | +5.46% | +4.84% |
-| COAI/USDT:USDT | below_relative_strength | +5.30% | +4.68% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.93% | +3.31% |
-| PLSTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.21% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.40% | +2.79% |
+| NAORIS/USDT:USDT | below_1h_threshold | +4.80% | +4.34% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.76% | +3.31% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.44% | +2.99% |
+| PLSTOCK/USDT:USDT | below_1h_threshold | +3.26% | +2.81% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.98% | +2.52% |
 
 ## 5. 次に見るべき不足
 
