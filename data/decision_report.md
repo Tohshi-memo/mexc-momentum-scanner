@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T13:27:58.090339+00:00
+- generated_at: 2026-06-12T13:34:11.968124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6513**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T13:27:53.865764+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63369.6
-- Funnel: target 774 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-12T13:34:09.270418+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=63229.2
+- Funnel: target 774 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +108.38% | $49,735,042.61 |
-| VELVET/USDT:USDT | +89.70% | $159,873,915.83 |
-| NAORIS/USDT:USDT | +54.03% | $5,783,181.55 |
-| AIN/USDT:USDT | +41.43% | $1,299,084.99 |
-| SKYAI/USDT:USDT | +39.24% | $17,795,500.22 |
+| ESPORTS/USDT:USDT | +105.48% | $50,166,386.27 |
+| VELVET/USDT:USDT | +95.01% | $160,274,547.82 |
+| NAORIS/USDT:USDT | +56.40% | $5,862,952.23 |
+| AIN/USDT:USDT | +41.29% | $1,304,985.24 |
+| SKYAI/USDT:USDT | +37.46% | $17,953,709.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.59% | +3.70% |
-| STG/USDT:USDT | below_1h_threshold | +2.42% | +2.52% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.39% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +1.89% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.54% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.96% | +5.28% |
+| STG/USDT:USDT | below_1h_threshold | +2.75% | +3.07% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.31% | +2.63% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.10% | +2.42% |
+| LAB/USDT:USDT | below_1h_threshold | +1.50% | +1.83% |
 
 ## 5. 次に見るべき不足
 
