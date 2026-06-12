@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T16:04:33.900750+00:00
+- generated_at: 2026-06-12T16:10:38.362738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6521**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T16:04:30.947386+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=63700.0
-- Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-12T16:10:35.273012+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63680.0
+- Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPACE/USDT:USDT | +3.58% | $4,413,347.47 |
-| ALLO/USDT:USDT | +3.20% | $13,837,471.84 |
-| HMSTR/USDT:USDT | +2.96% | $3,985,676.35 |
-| AIO/USDT:USDT | +2.49% | $4,407,433.00 |
-| NAORIS/USDT:USDT | +1.94% | $6,914,940.25 |
+| ESPORTS/USDT:USDT | +13.53% | $63,900,914.62 |
+| AIO/USDT:USDT | +3.56% | $4,437,415.22 |
+| SPACE/USDT:USDT | +2.56% | $4,452,080.77 |
+| HMSTR/USDT:USDT | +2.38% | $4,002,915.22 |
+| SOXL/USDT:USDT | +2.18% | $4,048,132.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPACE/USDT:USDT | below_1h_threshold | +3.59% | +3.36% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.20% | +2.98% |
-| HMSTR/USDT:USDT | below_1h_threshold | +3.15% | +2.93% |
-| AIO/USDT:USDT | below_1h_threshold | +2.99% | +2.77% |
-| NAORIS/USDT:USDT | below_1h_threshold | +2.18% | +1.96% |
+| AIO/USDT:USDT | below_1h_threshold | +3.48% | +3.29% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.77% | +2.58% |
+| HMSTR/USDT:USDT | below_1h_threshold | +2.70% | +2.51% |
+| BILL/USDT:USDT | below_1h_threshold | +2.25% | +2.06% |
+| AIN/USDT:USDT | below_1h_threshold | +2.01% | +1.82% |
 
 ## 5. 次に見るべき不足
 
