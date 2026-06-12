@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T10:58:45.231085+00:00
+- generated_at: 2026-06-12T11:05:03.484547+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6503**
 
@@ -54,32 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T10:58:41.888861+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=63674.6
-- Funnel: target 774 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.8 >= 65=1, 4h RSI 73.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-12T11:05:00.788171+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=63776.4
+- Funnel: target 774 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +92.69% | $156,024,159.81 |
-| ESPORTS/USDT:USDT | +71.81% | $44,658,578.16 |
-| NAORIS/USDT:USDT | +44.50% | $4,886,079.82 |
-| XPL/USDT:USDT | +39.50% | $11,903,400.93 |
-| AIN/USDT:USDT | +33.59% | $1,104,010.01 |
+| VELVET/USDT:USDT | +89.28% | $153,374,796.16 |
+| ESPORTS/USDT:USDT | +75.05% | $44,648,824.42 |
+| NAORIS/USDT:USDT | +45.81% | $4,922,742.52 |
+| XPL/USDT:USDT | +40.39% | $11,972,003.22 |
+| AIN/USDT:USDT | +34.49% | $1,084,308.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.79% | +3.87% |
-| AIN/USDT:USDT | below_1h_threshold | +2.75% | +2.83% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.53% | +2.61% |
-| WLFI/USDT:USDT | below_1h_threshold | +2.10% | +2.19% |
-| SEI/USDT:USDT | below_1h_threshold | +1.39% | +1.48% |
+| AIN/USDT:USDT | below_1h_threshold | +2.13% | +1.96% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.62% | +1.44% |
+| SPACE/USDT:USDT | below_1h_threshold | +1.41% | +1.24% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.25% | +1.08% |
+| XMR/USDT:USDT | below_1h_threshold | +1.12% | +0.94% |
 
 ## 5. 次に見るべき不足
 
