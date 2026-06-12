@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T15:13:55.534171+00:00
+- generated_at: 2026-06-12T15:19:56.575578+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6518**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T15:13:53.255064+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=64338.7
+- 更新: 2026-06-12T15:19:53.890117+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=64254.5
 - Funnel: target 774 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +89.92% | $60,568,261.84 |
-| NAORIS/USDT:USDT | +42.57% | $6,722,930.76 |
-| XPL/USDT:USDT | +41.49% | $15,757,586.30 |
-| SKYAI/USDT:USDT | +37.85% | $17,563,946.04 |
-| AIN/USDT:USDT | +36.05% | $1,432,397.73 |
+| ESPORTS/USDT:USDT | +89.04% | $61,043,753.86 |
+| NAORIS/USDT:USDT | +41.81% | $6,737,575.17 |
+| XPL/USDT:USDT | +41.27% | $15,804,527.64 |
+| SKYAI/USDT:USDT | +39.41% | $17,624,007.90 |
+| AIN/USDT:USDT | +35.68% | $1,437,004.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TONCOIN/USDT:USDT | below_1h_threshold | +2.23% | +1.65% |
-| XPL/USDT:USDT | below_1h_threshold | +2.15% | +1.57% |
-| VVV/USDT:USDT | below_1h_threshold | +1.79% | +1.21% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.73% | +1.15% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.67% | +1.09% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.40% | +1.96% |
+| XPL/USDT:USDT | below_1h_threshold | +1.96% | +1.52% |
+| VVV/USDT:USDT | below_1h_threshold | +1.69% | +1.24% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.59% | +1.15% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.54% | +1.09% |
 
 ## 5. 次に見るべき不足
 
