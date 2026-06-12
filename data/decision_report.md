@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T21:43:23.421854+00:00
+- generated_at: 2026-06-12T21:49:52.796074+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6547**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T21:43:20.366885+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63527.7
-- Funnel: target 774 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
+- 更新: 2026-06-12T21:49:49.539400+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63451.3
+- Funnel: target 774 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.1 >= 65=1, 4h RSI 71.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ORCA/USDT:USDT | +14.39% | $1,302,005.71 |
-| ESPORTS/USDT:USDT | +13.00% | $70,306,673.39 |
-| PLAY/USDT:USDT | +9.64% | $10,546,894.05 |
-| AIN/USDT:USDT | +8.09% | $1,757,631.62 |
-| H/USDT:USDT | +6.72% | $30,082,424.19 |
+| ORCA/USDT:USDT | +14.84% | $1,316,222.67 |
+| ESPORTS/USDT:USDT | +13.10% | $70,464,399.33 |
+| PLAY/USDT:USDT | +12.08% | $10,572,432.66 |
+| AIN/USDT:USDT | +8.82% | $1,763,472.76 |
+| H/USDT:USDT | +7.34% | $30,117,283.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +4.57% | +4.40% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.14% | +1.97% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.56% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.39% | +1.22% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.30% | +1.13% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.53% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.12% | +1.07% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.07% | +1.02% |
 
 ## 5. 次に見るべき不足
 
