@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T18:14:36.156151+00:00
+- generated_at: 2026-06-12T18:21:47.571190+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6538**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$95.16** / 初期 $100.00 (-4.84%)
-- 確定トレード: 23件 (TP 4 / SL 18 / EXP 1)
-- 最新: AIO/USDT:USDT TP_HIT PnL +8.00% 残高後 $95.16
+- 残高: **$96.11** / 初期 $100.00 (-3.89%)
+- 確定トレード: 24件 (TP 5 / SL 18 / EXP 1)
+- 最新: H/USDT:USDT TP_HIT PnL +8.00% 残高後 $96.11
 - 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T18:14:33.091727+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63799.4
-- Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-12T18:21:44.644095+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=63664.0
+- Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLAY/USDT:USDT | +13.79% | $9,223,474.13 |
-| ESPORTS/USDT:USDT | +8.80% | $65,679,978.33 |
-| HOME/USDT:USDT | +7.64% | $3,043,846.76 |
-| BTW/USDT:USDT | +6.20% | $2,859,340.04 |
-| RKLBSTOCK/USDT:USDT | +5.88% | $1,494,438.27 |
+| PLAY/USDT:USDT | +14.83% | $9,302,732.13 |
+| ESPORTS/USDT:USDT | +8.76% | $65,815,138.26 |
+| HOME/USDT:USDT | +7.18% | $3,063,602.58 |
+| ASTEROID/USDT:USDT | +6.09% | $1,224,067.35 |
+| RKLBSTOCK/USDT:USDT | +4.92% | $1,495,522.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +2.94% | +3.00% |
-| BTW/USDT:USDT | below_1h_threshold | +2.13% | +2.19% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +0.82% | +0.88% |
-| LUMIA/USDT:USDT | below_1h_threshold | +0.44% | +0.49% |
-| ENJ/USDT:USDT | below_1h_threshold | +0.35% | +0.41% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.93% | +4.20% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.05% | +2.32% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.32% | +0.59% |
+| ENJ/USDT:USDT | below_1h_threshold | +0.32% | +0.59% |
+| XAU/USDT:USDT | below_1h_threshold | +0.31% | +0.58% |
 
 ## 5. 次に見るべき不足
 
