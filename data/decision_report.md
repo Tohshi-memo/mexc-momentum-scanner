@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-12T23:58:30.383401+00:00
+- generated_at: 2026-06-13T00:04:32.181539+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6549**
 
@@ -54,30 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-12T23:58:27.700120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63538.8
-- Funnel: target 774 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-13T00:04:29.251809+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63565.0
+- Funnel: target 774 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +16.57% | $67,611,709.65 |
-| ORCA/USDT:USDT | +12.92% | $1,605,795.31 |
-| H/USDT:USDT | +12.77% | $29,747,649.41 |
-| AIN/USDT:USDT | +11.78% | $1,906,824.71 |
-| EDGE/USDT:USDT | +11.41% | $1,085,380.94 |
+| ESPORTS/USDT:USDT | +23.10% | $63,514,247.90 |
+| H/USDT:USDT | +11.12% | $28,817,996.95 |
+| ORCA/USDT:USDT | +10.99% | $1,614,816.14 |
+| EDGE/USDT:USDT | +10.26% | $1,076,823.47 |
+| AIN/USDT:USDT | +8.26% | $1,893,085.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.47% | +3.39% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.22% | +2.14% |
-| H/USDT:USDT | below_1h_threshold | +2.20% | +2.12% |
-| COAI/USDT:USDT | below_1h_threshold | +1.86% | +1.77% |
-| SEI/USDT:USDT | below_1h_threshold | +1.27% | +1.19% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.21% | +1.18% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.44% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.41% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +0.12% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.14% | +0.11% |
 
 ## 5. 次に見るべき不足
 
