@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T14:18:07.270601+00:00
+- generated_at: 2026-06-13T14:24:11.355360+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6583**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-13T14:18:04.388106+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64147.2
+- 更新: 2026-06-13T14:24:08.558985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64099.9
 - Funnel: target 770 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +46.59% | $9,284,364.29 |
-| COAI/USDT:USDT | +41.45% | $7,242,827.39 |
-| RIF/USDT:USDT | +28.61% | $4,803,727.56 |
-| TAO/USDT:USDT | +21.99% | $179,214,400.04 |
-| EDGE/USDT:USDT | +15.88% | $3,330,832.39 |
+| COAI/USDT:USDT | +46.51% | $7,706,477.12 |
+| JCT/USDT:USDT | +45.06% | $9,375,733.20 |
+| RIF/USDT:USDT | +31.06% | $4,831,828.97 |
+| TAO/USDT:USDT | +22.75% | $181,856,763.18 |
+| EDGE/USDT:USDT | +14.79% | $3,354,781.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +2.18% | +2.06% |
-| BTW/USDT:USDT | below_1h_threshold | +1.84% | +1.73% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.47% | +1.35% |
-| TAO/USDT:USDT | below_1h_threshold | +1.21% | +1.09% |
-| H/USDT:USDT | below_1h_threshold | +1.11% | +0.99% |
+| BTW/USDT:USDT | below_1h_threshold | +2.47% | +2.42% |
+| COAI/USDT:USDT | below_1h_threshold | +2.12% | +2.08% |
+| TAO/USDT:USDT | below_1h_threshold | +1.86% | +1.82% |
+| RIF/USDT:USDT | below_1h_threshold | +1.53% | +1.48% |
+| H/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
 
 ## 5. 次に見るべき不足
 
