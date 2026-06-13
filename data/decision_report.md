@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T04:53:30.331586+00:00
+- generated_at: 2026-06-13T04:59:48.002460+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6560**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-13T04:53:27.609344+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=63573.9
+- 更新: 2026-06-13T04:59:45.344108+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63479.9
 - Funnel: target 774 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDGE/USDT:USDT | +20.86% | $1,936,479.90 |
-| VVV/USDT:USDT | +13.48% | $4,842,953.20 |
-| SQD/USDT:USDT | +13.30% | $1,163,084.09 |
-| TRUMPOFFICIAL/USDT:USDT | +10.38% | $42,617,138.34 |
-| ORCA/USDT:USDT | +7.79% | $1,802,098.76 |
+| EDGE/USDT:USDT | +21.19% | $1,944,719.83 |
+| VVV/USDT:USDT | +12.61% | $4,865,831.58 |
+| SQD/USDT:USDT | +12.37% | $1,166,032.27 |
+| TRUMPOFFICIAL/USDT:USDT | +8.25% | $42,906,319.22 |
+| ORCA/USDT:USDT | +7.97% | $1,816,575.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.84% | +3.71% |
-| ICP/USDT:USDT | below_1h_threshold | +3.07% | +2.94% |
-| SEI/USDT:USDT | below_1h_threshold | +1.67% | +1.55% |
-| BTW/USDT:USDT | below_1h_threshold | +1.52% | +1.40% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.25% | +1.13% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.63% | +4.65% |
+| BTW/USDT:USDT | below_1h_threshold | +3.35% | +3.37% |
+| ICP/USDT:USDT | below_1h_threshold | +2.90% | +2.92% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.10% | +2.12% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.92% | +0.95% |
 
 ## 5. 次に見るべき不足
 
