@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T22:49:20.324942+00:00
+- generated_at: 2026-06-13T22:55:37.546279+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6616**
 
@@ -60,30 +60,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-13T22:49:15.557826+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64459.4
-- Funnel: target 770 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-13T22:55:33.341407+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64430.9
+- Funnel: target 770 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +26.29% | $11,752,953.24 |
-| TRADOOR/USDT:USDT | +25.71% | $1,567,824.15 |
-| MEGA/USDT:USDT | +16.62% | $2,587,123.14 |
-| BTW/USDT:USDT | +11.22% | $1,886,923.70 |
-| JASMY/USDT:USDT | +8.54% | $2,235,891.13 |
+| TRADOOR/USDT:USDT | +26.48% | $1,634,212.00 |
+| RIF/USDT:USDT | +21.06% | $12,034,307.39 |
+| MEGA/USDT:USDT | +16.69% | $2,614,222.01 |
+| BTW/USDT:USDT | +10.02% | $1,903,419.13 |
+| JASMY/USDT:USDT | +8.37% | $2,273,407.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.94% | +4.90% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +4.78% | +4.74% |
-| MEGA/USDT:USDT | below_1h_threshold | +2.99% | +2.95% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.67% | +2.63% |
-| BILL/USDT:USDT | below_1h_threshold | +2.25% | +2.21% |
+| MEGA/USDT:USDT | below_1h_threshold | +3.23% | +3.23% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.51% | +2.52% |
+| BILL/USDT:USDT | below_1h_threshold | +2.26% | +2.27% |
+| JCT/USDT:USDT | below_1h_threshold | +1.30% | +1.31% |
+| TAO/USDT:USDT | below_1h_threshold | +1.15% | +1.16% |
 
 ## 6. 次に見るべき不足
 
