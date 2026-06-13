@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T05:16:45.699069+00:00
+- generated_at: 2026-06-13T05:23:13.869514+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6560**
 
@@ -54,32 +54,32 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-13T05:16:42.637223+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63530.4
-- Funnel: target 774 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-13T05:23:10.759352+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63536.0
+- Funnel: target 774 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.6 >= 65=1
+- Strict後reject: 4h RSI 74.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +33.40% | $1,042,867.65 |
-| EDGE/USDT:USDT | +21.35% | $1,996,189.23 |
-| SQD/USDT:USDT | +10.46% | $1,192,327.39 |
-| NOT/USDT:USDT | +9.65% | $1,085,847.66 |
-| VVV/USDT:USDT | +9.62% | $4,926,368.14 |
+| JCT/USDT:USDT | +35.56% | $1,100,944.08 |
+| EDGE/USDT:USDT | +21.92% | $2,042,775.56 |
+| SKYAI/USDT:USDT | +10.76% | $15,576,447.17 |
+| VVV/USDT:USDT | +10.55% | $4,954,973.33 |
+| SQD/USDT:USDT | +10.49% | $1,195,231.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_1h_threshold | +1.79% | +1.71% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.45% | +1.36% |
-| ICP/USDT:USDT | below_1h_threshold | +1.33% | +1.24% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.70% | +0.61% |
-| JTO/USDT:USDT | below_1h_threshold | +0.62% | +0.53% |
+| ICP/USDT:USDT | below_1h_threshold | +2.11% | +2.02% |
+| NOT/USDT:USDT | below_1h_threshold | +1.77% | +1.68% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.73% | +1.63% |
+| JCT/USDT:USDT | below_1h_threshold | +1.09% | +1.00% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
 
 ## 5. 次に見るべき不足
 
