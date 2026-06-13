@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T18:06:47.160249+00:00
+- generated_at: 2026-06-13T18:12:56.241541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6596**
 
@@ -60,8 +60,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-13T18:06:42.014593+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64015.5
+- 更新: 2026-06-13T18:12:52.316256+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=64020.1
 - Funnel: target 770 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -69,21 +69,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +16.57% | $62,028,161.79 |
-| NOT/USDT:USDT | +5.36% | $2,662,423.48 |
-| SKYAI/USDT:USDT | +3.03% | $18,413,431.35 |
-| SQD/USDT:USDT | +2.20% | $2,163,004.66 |
-| BTW/USDT:USDT | +1.88% | $1,487,603.05 |
+| VELVET/USDT:USDT | +14.52% | $62,453,430.36 |
+| NOT/USDT:USDT | +5.58% | $2,679,018.91 |
+| SKYAI/USDT:USDT | +4.25% | $18,481,202.80 |
+| SQD/USDT:USDT | +2.54% | $2,165,639.50 |
+| EDGE/USDT:USDT | +2.40% | $3,510,877.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.94% | +2.82% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.30% | +1.18% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.15% | +1.03% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.09% | +0.97% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.69% | +2.56% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.75% | +1.63% |
+| H/USDT:USDT | below_1h_threshold | +1.68% | +1.56% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.25% | +1.12% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.07% | +0.94% |
 
 ## 6. 次に見るべき不足
 
