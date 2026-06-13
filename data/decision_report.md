@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T04:08:49.628216+00:00
+- generated_at: 2026-06-13T04:15:00.033286+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6560**
 
@@ -54,8 +54,8 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-13T04:08:46.799404+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63471.8
+- 更新: 2026-06-13T04:14:57.346767+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63482.0
 - Funnel: target 774 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -63,21 +63,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDGE/USDT:USDT | +19.25% | $1,832,629.13 |
-| VVV/USDT:USDT | +14.39% | $4,555,490.03 |
-| SQD/USDT:USDT | +13.68% | $1,138,287.49 |
-| TRUMPOFFICIAL/USDT:USDT | +10.77% | $41,152,599.64 |
-| H/USDT:USDT | +9.16% | $25,894,858.20 |
+| EDGE/USDT:USDT | +19.50% | $1,853,903.25 |
+| SQD/USDT:USDT | +13.57% | $1,139,649.15 |
+| VVV/USDT:USDT | +11.94% | $4,624,872.56 |
+| TRUMPOFFICIAL/USDT:USDT | +9.66% | $41,481,587.23 |
+| NOT/USDT:USDT | +8.82% | $1,035,044.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +1.27% | +1.31% |
-| VVV/USDT:USDT | below_1h_threshold | +0.72% | +0.76% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.53% | +0.56% |
-| RIF/USDT:USDT | below_1h_threshold | +0.28% | +0.32% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +0.12% | +0.15% |
+| NOT/USDT:USDT | below_1h_threshold | +1.24% | +1.26% |
+| AIN/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
+| BTW/USDT:USDT | below_1h_threshold | +0.54% | +0.56% |
+| HOME/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
+| RIF/USDT:USDT | below_1h_threshold | +0.35% | +0.37% |
 
 ## 5. 次に見るべき不足
 
