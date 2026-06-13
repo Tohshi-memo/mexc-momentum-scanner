@@ -34,6 +34,7 @@ from core.live_filter import LiveTradeFilter
 from core.live_portfolio import LivePortfolio
 from core.live_strategy import DIR_SHORT, ENTRY_MARKET, LiveStrategyBuilder, LiveTradePlan
 from core.market_context import MarketContextRecorder
+from core.robust_adaptive_portfolio import RobustAdaptivePortfolio
 from core.safe_adaptive_portfolio import SafeAdaptivePortfolio
 from core.scanner import MarketScanner
 from core.strategy_ranker import StrategyRanker
@@ -650,6 +651,7 @@ def main() -> None:
     experiment_tracker   = ExperimentTracker()
     live_portfolio       = LivePortfolio()
     safe_adaptive_portfolio = SafeAdaptivePortfolio()
+    robust_adaptive_portfolio = RobustAdaptivePortfolio()
     live_filter          = LiveTradeFilter()
     strategy_ranker      = StrategyRanker(experiment_tracker)
     live_strategy        = LiveStrategyBuilder(
@@ -689,6 +691,10 @@ def main() -> None:
                 safe_adaptive_portfolio.update()
             except Exception as e:
                 logger.warning("Failed to update safe adaptive portfolio: %s", e)
+            try:
+                robust_adaptive_portfolio.update()
+            except Exception as e:
+                logger.warning("Failed to update robust adaptive portfolio: %s", e)
             # シャドウトレードの集計レポートを再生成
             # （Claude が次回セッションでフィルター粒度を再評価するための入力）
             if generate_experiment_report_enabled:
