@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T15:14:23.534445+00:00
+- generated_at: 2026-06-13T15:16:07.270737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6585**
 
@@ -60,30 +60,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-13T15:08:59.245220+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64168.5
-- Funnel: target 770 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-13T15:16:03.473103+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64251.0
+- Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COAI/USDT:USDT | +60.24% | $10,659,818.22 |
-| JCT/USDT:USDT | +44.62% | $9,652,246.38 |
-| RIF/USDT:USDT | +33.21% | $5,323,266.00 |
-| TAO/USDT:USDT | +25.98% | $194,666,602.26 |
-| EDGE/USDT:USDT | +16.45% | $3,414,847.10 |
+| COAI/USDT:USDT | +61.16% | $11,202,914.11 |
+| JCT/USDT:USDT | +44.72% | $9,676,295.25 |
+| RIF/USDT:USDT | +32.07% | $5,379,271.17 |
+| TAO/USDT:USDT | +26.49% | $198,341,097.46 |
+| SKYAI/USDT:USDT | +16.20% | $17,964,850.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.01% | +3.03% |
-| RIF/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.85% | +1.88% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.65% | +1.68% |
-| JCT/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.56% | +4.46% |
+| BTW/USDT:USDT | below_1h_threshold | +3.05% | +2.94% |
+| TIA/USDT:USDT | below_1h_threshold | +3.01% | +2.90% |
+| RIF/USDT:USDT | below_1h_threshold | +1.93% | +1.83% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.83% | +1.73% |
 
 ## 6. 次に見るべき不足
 
