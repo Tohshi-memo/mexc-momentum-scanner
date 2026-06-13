@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-13T10:59:49.436508+00:00
+- generated_at: 2026-06-13T11:06:14.857937+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6576**
 
@@ -54,31 +54,30 @@
 
 ## 4. Latest Market Context
 
-- 更新: 2026-06-13T10:59:46.358410+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=63811.8
-- Funnel: target 770 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-13T11:06:12.004531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63830.0
+- Funnel: target 770 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +65.68% | $5,157,598.44 |
-| RIF/USDT:USDT | +23.76% | $2,914,856.64 |
-| NOT/USDT:USDT | +18.68% | $1,816,439.84 |
-| VVV/USDT:USDT | +18.10% | $7,007,852.79 |
-| SKYAI/USDT:USDT | +16.94% | $18,574,021.08 |
+| JCT/USDT:USDT | +66.53% | $5,235,766.84 |
+| RIF/USDT:USDT | +26.72% | $3,004,216.88 |
+| NOT/USDT:USDT | +18.70% | $1,822,998.39 |
+| VVV/USDT:USDT | +17.84% | $6,855,641.49 |
+| SKYAI/USDT:USDT | +16.99% | $17,846,696.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +4.44% | +4.28% |
-| JCT/USDT:USDT | below_1h_threshold | +3.95% | +3.79% |
-| VVV/USDT:USDT | below_1h_threshold | +2.65% | +2.49% |
-| NOT/USDT:USDT | below_1h_threshold | +2.60% | +2.44% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.57% | +1.40% |
+| RIF/USDT:USDT | below_1h_threshold | +2.46% | +2.43% |
+| H/USDT:USDT | below_1h_threshold | +2.20% | +2.17% |
+| AIO/USDT:USDT | below_1h_threshold | +0.97% | +0.95% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
 
 ## 5. 次に見るべき不足
 
