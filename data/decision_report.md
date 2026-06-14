@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T21:25:43.112519+00:00
+- generated_at: 2026-06-14T21:32:23.765890+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6700**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T21:25:38.231770+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.41% price=64877.2
-- Funnel: target 770 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-14T21:32:19.380741+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.14% price=64707.1
+- Funnel: target 770 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +36.35% | $10,514,725.77 |
-| OPG/USDT:USDT | +14.85% | $2,226,325.80 |
-| EDEN/USDT:USDT | +12.83% | $1,022,784.55 |
-| BABY/USDT:USDT | +10.89% | $1,711,447.67 |
-| PIPPIN/USDT:USDT | +7.49% | $2,828,750.88 |
+| EVAA/USDT:USDT | +38.95% | $10,797,470.01 |
+| OPG/USDT:USDT | +16.40% | $2,284,024.16 |
+| EDEN/USDT:USDT | +14.53% | $1,043,838.86 |
+| BABY/USDT:USDT | +12.19% | $1,789,860.67 |
+| BP/USDT:USDT | +11.81% | $1,051,923.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OPG/USDT:USDT | below_relative_strength | +6.23% | +4.83% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +4.73% | +3.33% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.42% | +2.02% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.38% | +1.97% |
-| PENGU/USDT:USDT | below_1h_threshold | +3.21% | +1.81% |
+| BP/USDT:USDT | below_1h_threshold | +4.40% | +3.26% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +4.03% | +2.89% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +4.02% | +2.88% |
+| LIT/USDT:USDT | below_1h_threshold | +3.87% | +2.73% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.65% | +2.51% |
 
 ## 6. 次に見るべき不足
 
