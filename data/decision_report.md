@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T13:00:59.013671+00:00
+- generated_at: 2026-06-14T13:07:14.116768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6663**
 
@@ -60,30 +60,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T13:00:54.113238+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64315.5
-- Funnel: target 770 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-14T13:07:10.088917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64335.9
+- Funnel: target 770 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +53.64% | $65,634,124.46 |
-| BANANAS31/USDT:USDT | +25.90% | $1,239,025.88 |
-| TRADOOR/USDT:USDT | +22.96% | $8,204,064.87 |
-| OPG/USDT:USDT | +20.56% | $1,549,696.69 |
-| MITO/USDT:USDT | +17.33% | $1,050,690.85 |
+| H/USDT:USDT | +44.32% | $66,701,616.46 |
+| CLO/USDT:USDT | +25.88% | $1,009,371.10 |
+| BANANAS31/USDT:USDT | +24.40% | $1,285,063.81 |
+| TRADOOR/USDT:USDT | +21.58% | $8,217,083.38 |
+| OPG/USDT:USDT | +20.38% | $1,557,896.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MITO/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +0.48% | +0.45% |
-| MEGA/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
-| OPG/USDT:USDT | below_1h_threshold | +0.44% | +0.41% |
-| LAB/USDT:USDT | below_1h_threshold | +0.38% | +0.35% |
+| CLO/USDT:USDT | below_1h_threshold | +2.60% | +2.54% |
+| BLUAI/USDT:USDT | below_1h_threshold | +1.39% | +1.33% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.34% | +1.28% |
+| BSB/USDT:USDT | below_1h_threshold | +1.31% | +1.25% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.25% | +1.19% |
 
 ## 6. 次に見るべき不足
 
