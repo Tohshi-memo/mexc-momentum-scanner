@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-14T19:11:05.721606+00:00
+- generated_at: 2026-06-14T19:17:20.332048+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6693**
+- closed shadow trades: **6694**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.40% / filled 20/20。**
-- 全期間 MARKET基準: n=6693, expectancy=-0.04%
+- 全期間 MARKET基準: n=6694, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=+1.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.40% | **+1.40%** |
 | ASK | 20/20 | 100.0% | +1.21% | **+1.21%** |
-| LIMIT_ATR | 11/20 | 55.0% | +2.06% | **+1.13%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +1.07% | **+0.80%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +1.20% | **+0.90%** |
+| LIMIT_3PCT | 13/20 | 65.0% | +1.32% | **+0.86%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +0.87% | **+0.70%** |
 
 ### シャドウ上位 LONG
 
@@ -47,45 +47,45 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$171.58** / 初期 $100.00 (+71.58%)
-- 確定: 1566件 (Win 417 / Loss 498 / Flat 651) / skip 1688件
+- 確定: 1567件 (Win 417 / Loss 498 / Flat 652) / skip 1688件
 - 成長率目線: 平均log +0.000345 / 幾何平均 +0.034% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SKYAI/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.26% 残高後 $171.58
+- 最新: EVAA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $171.58
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$98.57** / 初期 $100.00 (-1.43%)
-- 確定: 72件 (Win 19 / Loss 15 / Flat 38) / skip 32件
+- 確定: 72件 (Win 19 / Loss 15 / Flat 38) / skip 33件
 - 成長率目線: 平均log -0.000200 / 幾何平均 -0.020% per trade / maxDD +2.07%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.19% 残高後 $98.57
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T19:11:01.629685+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63747.1
-- Funnel: target 770 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-14T19:17:15.486235+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63823.3
+- Funnel: target 770 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +19.59% | $5,592,036.54 |
-| BANANAS31/USDT:USDT | +6.60% | $2,284,595.47 |
-| CLO/USDT:USDT | +6.18% | $1,479,224.99 |
-| BABY/USDT:USDT | +5.64% | $1,107,722.38 |
-| SKYAI/USDT:USDT | +4.49% | $7,349,455.36 |
+| EVAA/USDT:USDT | +24.06% | $5,985,156.19 |
+| BANANAS31/USDT:USDT | +7.35% | $2,296,065.34 |
+| CLO/USDT:USDT | +7.12% | $1,483,853.42 |
+| BABY/USDT:USDT | +5.64% | $1,123,142.66 |
+| SKYAI/USDT:USDT | +4.28% | $7,387,372.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +2.54% | +2.59% |
-| OPG/USDT:USDT | below_1h_threshold | +0.84% | +0.90% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.83% | +0.89% |
-| BSB/USDT:USDT | below_1h_threshold | +0.67% | +0.73% |
-| BTW/USDT:USDT | below_1h_threshold | +0.65% | +0.70% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.27% | +4.21% |
+| OPG/USDT:USDT | below_1h_threshold | +1.91% | +1.85% |
+| BSB/USDT:USDT | below_1h_threshold | +1.30% | +1.24% |
+| MEGA/USDT:USDT | below_1h_threshold | +1.26% | +1.20% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
 
 ## 6. 次に見るべき不足
 
