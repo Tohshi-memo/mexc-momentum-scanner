@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T18:32:39.795670+00:00
+- generated_at: 2026-06-14T18:38:53.931824+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6693**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T18:32:35.766239+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63702.6
+- 更新: 2026-06-14T18:38:49.903682+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63733.7
 - Funnel: target 770 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +14.98% | $4,535,759.29 |
-| BANANAS31/USDT:USDT | +8.42% | $2,190,408.27 |
-| CLO/USDT:USDT | +5.34% | $1,459,387.24 |
-| EDGE/USDT:USDT | +3.97% | $1,108,841.20 |
-| PIPPIN/USDT:USDT | +3.83% | $2,520,032.56 |
+| EVAA/USDT:USDT | +14.96% | $4,728,186.16 |
+| BANANAS31/USDT:USDT | +7.05% | $2,196,148.81 |
+| BABY/USDT:USDT | +4.34% | $1,156,966.56 |
+| PIPPIN/USDT:USDT | +4.06% | $2,543,910.67 |
+| EDGE/USDT:USDT | +3.83% | $1,109,581.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.64% | +3.64% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.74% | +2.74% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.42% | +1.43% |
-| IP/USDT:USDT | below_1h_threshold | +1.13% | +1.14% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.40% | +3.36% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.40% | +2.36% |
+| BABY/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.44% | +1.39% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.34% | +1.29% |
 
 ## 6. 次に見るべき不足
 
