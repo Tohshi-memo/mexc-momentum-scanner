@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T20:28:07.613755+00:00
+- generated_at: 2026-06-14T20:34:30.326090+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6696**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T20:28:03.744230+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=63927.9
+- 更新: 2026-06-14T20:34:25.759642+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63925.0
 - Funnel: target 770 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +25.99% | $8,712,599.58 |
-| BABY/USDT:USDT | +8.23% | $1,488,785.24 |
-| BP/USDT:USDT | +7.20% | $1,034,335.48 |
-| H/USDT:USDT | +5.92% | $124,212,871.99 |
-| CLO/USDT:USDT | +5.79% | $1,520,877.46 |
+| EVAA/USDT:USDT | +25.36% | $8,806,742.08 |
+| BP/USDT:USDT | +8.32% | $1,038,301.53 |
+| BABY/USDT:USDT | +7.78% | $1,496,864.32 |
+| BTW/USDT:USDT | +5.98% | $3,567,339.62 |
+| CLO/USDT:USDT | +5.79% | $1,522,292.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +2.00% | +1.76% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.52% | +1.29% |
-| MITO/USDT:USDT | below_1h_threshold | +1.42% | +1.19% |
-| BTW/USDT:USDT | below_1h_threshold | +1.32% | +1.09% |
-| AKT/USDT:USDT | below_1h_threshold | +1.19% | +0.95% |
+| BTW/USDT:USDT | below_1h_threshold | +2.58% | +2.35% |
+| XPL/USDT:USDT | below_1h_threshold | +2.47% | +2.24% |
+| OPG/USDT:USDT | below_1h_threshold | +2.05% | +1.82% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.86% | +1.62% |
+| MITO/USDT:USDT | below_1h_threshold | +1.57% | +1.34% |
 
 ## 6. 次に見るべき不足
 
