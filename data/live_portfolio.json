@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 101.0,
+  "balance": 101.49995,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -20,6 +20,44 @@
       "strategy_entry_style": "MARKET",
       "strategy_boosters": [],
       "strategy_score": 0.0
+    },
+    {
+      "symbol": "TRADOOR/USDT:USDT",
+      "detected_at": "2026-06-14T12:48:33.528479+00:00",
+      "closed_at": "2026-06-14T14:13:10.998784+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -4.000000000000006,
+      "sl_pct": 4.000000000000006,
+      "risk_pct": 0.5,
+      "notional_usdt": 12.62499999999998,
+      "pnl_usdt": -0.505,
+      "balance_before": 101.0,
+      "balance_after": 100.495,
+      "strategy_tier": "B",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [],
+      "strategy_score": 0.0
+    },
+    {
+      "symbol": "H/USDT:USDT",
+      "detected_at": "2026-06-14T14:06:17.755132+00:00",
+      "closed_at": "2026-06-14T14:13:10.998784+00:00",
+      "outcome": "TP_HIT",
+      "pnl_pct": 7.999999999999989,
+      "sl_pct": 4.0000000000000115,
+      "risk_pct": 0.5,
+      "notional_usdt": 12.561874999999963,
+      "pnl_usdt": 1.0049499999999958,
+      "balance_before": 100.495,
+      "balance_after": 101.49995,
+      "strategy_tier": "A",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "4h_green=7"
+      ],
+      "strategy_score": 0.15
     }
   ]
 }
