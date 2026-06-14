@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T14:45:58.405864+00:00
+- generated_at: 2026-06-14T14:52:08.613635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6672**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T14:45:54.373715+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=63930.1
+- 更新: 2026-06-14T14:52:04.430229+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.65% price=63867.2
 - Funnel: target 770 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZKC/USDT:USDT | +31.28% | $1,607,178.49 |
-| H/USDT:USDT | +29.87% | $92,103,022.70 |
-| TRADOOR/USDT:USDT | +28.04% | $8,781,876.56 |
-| CLO/USDT:USDT | +26.66% | $1,108,090.91 |
-| OPG/USDT:USDT | +22.85% | $1,702,522.62 |
+| H/USDT:USDT | +31.59% | $92,739,448.01 |
+| ZKC/USDT:USDT | +29.81% | $1,638,215.78 |
+| TRADOOR/USDT:USDT | +29.42% | $8,797,865.17 |
+| OPG/USDT:USDT | +23.61% | $1,707,512.33 |
+| BANANAS31/USDT:USDT | +20.28% | $1,592,027.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKC/USDT:USDT | below_1h_threshold | +4.32% | +4.87% |
-| BSB/USDT:USDT | below_1h_threshold | +3.89% | +4.44% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +2.89% | +3.44% |
-| RIF/USDT:USDT | below_1h_threshold | +2.61% | +3.16% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.39% | +1.93% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +3.89% | +4.54% |
+| BSB/USDT:USDT | below_1h_threshold | +3.48% | +4.12% |
+| RIF/USDT:USDT | below_1h_threshold | +3.19% | +3.83% |
+| ZKC/USDT:USDT | below_1h_threshold | +3.17% | +3.81% |
+| BTW/USDT:USDT | below_1h_threshold | +1.91% | +2.55% |
 
 ## 6. 次に見るべき不足
 
