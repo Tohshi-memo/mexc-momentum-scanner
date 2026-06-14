@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T18:45:26.333134+00:00
+- generated_at: 2026-06-14T18:51:49.021437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6693**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T18:45:22.340836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63750.9
-- Funnel: target 770 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-14T18:51:44.758957+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63760.9
+- Funnel: target 770 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +16.13% | $4,925,203.06 |
-| BANANAS31/USDT:USDT | +8.27% | $2,230,530.90 |
-| CLO/USDT:USDT | +6.12% | $1,477,998.12 |
-| PIPPIN/USDT:USDT | +5.14% | $2,586,218.69 |
-| BABY/USDT:USDT | +4.86% | $1,163,373.09 |
+| EVAA/USDT:USDT | +19.24% | $5,121,715.51 |
+| BANANAS31/USDT:USDT | +6.87% | $2,273,819.61 |
+| CLO/USDT:USDT | +5.62% | $1,483,255.27 |
+| PIPPIN/USDT:USDT | +5.03% | $2,616,597.85 |
+| BABY/USDT:USDT | +4.40% | $1,165,987.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.87% | +4.80% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.60% | +2.53% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.45% | +2.38% |
-| BABY/USDT:USDT | below_1h_threshold | +2.15% | +2.08% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.28% | +2.20% |
+| BABY/USDT:USDT | below_1h_threshold | +1.71% | +1.62% |
+| OPG/USDT:USDT | below_1h_threshold | +1.61% | +1.52% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.41% | +1.33% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.33% | +1.24% |
 
 ## 6. 次に見るべき不足
 
