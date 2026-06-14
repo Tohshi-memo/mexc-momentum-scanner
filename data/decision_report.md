@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T21:12:33.033175+00:00
+- generated_at: 2026-06-14T21:19:09.836813+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6699**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T21:12:29.829109+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64000.0
-- Funnel: target 770 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-14T21:19:05.769060+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.93% price=64570.7
+- Funnel: target 770 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +34.22% | $10,047,619.62 |
-| OPG/USDT:USDT | +9.55% | $2,068,668.82 |
-| BABY/USDT:USDT | +9.53% | $1,580,829.53 |
-| BP/USDT:USDT | +6.81% | $1,040,829.51 |
-| BTW/USDT:USDT | +6.42% | $3,528,183.55 |
+| EVAA/USDT:USDT | +35.06% | $10,292,052.98 |
+| OPG/USDT:USDT | +11.62% | $2,120,435.41 |
+| EDEN/USDT:USDT | +11.60% | $1,015,518.28 |
+| BABY/USDT:USDT | +10.44% | $1,596,225.02 |
+| CLO/USDT:USDT | +6.68% | $1,532,704.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_1h_threshold | +2.88% | +2.85% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.32% | +2.28% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.48% | +1.45% |
-| OPG/USDT:USDT | below_1h_threshold | +1.17% | +1.13% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.60% | +0.56% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +3.83% | +2.90% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.01% | +2.09% |
+| OPG/USDT:USDT | below_1h_threshold | +2.94% | +2.02% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.82% | +1.89% |
+| ENA/USDT:USDT | below_1h_threshold | +2.79% | +1.87% |
 
 ## 6. 次に見るべき不足
 
