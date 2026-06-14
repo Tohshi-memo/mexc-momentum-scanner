@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T13:13:25.338876+00:00
+- generated_at: 2026-06-14T13:20:31.562530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6663**
 
@@ -60,30 +60,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T13:13:21.311931+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64315.2
-- Funnel: target 770 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-14T13:20:25.226539+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64295.0
+- Funnel: target 770 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +30.48% | $68,465,164.63 |
-| BANANAS31/USDT:USDT | +25.00% | $1,313,977.35 |
-| CLO/USDT:USDT | +23.12% | $1,018,487.10 |
-| TRADOOR/USDT:USDT | +22.06% | $8,226,999.07 |
-| OPG/USDT:USDT | +20.50% | $1,561,668.32 |
+| ZKC/USDT:USDT | +29.24% | $1,028,855.76 |
+| CLO/USDT:USDT | +24.04% | $1,025,749.90 |
+| BANANAS31/USDT:USDT | +23.61% | $1,343,182.23 |
+| TRADOOR/USDT:USDT | +22.43% | $8,245,185.95 |
+| OPG/USDT:USDT | +21.73% | $1,576,845.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUAI/USDT:USDT | below_1h_threshold | +4.31% | +4.28% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
-| BSB/USDT:USDT | below_1h_threshold | +1.15% | +1.12% |
-| MEGA/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
-| TWLOSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.55% |
+| OPG/USDT:USDT | below_1h_threshold | +1.47% | +1.47% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.45% | +1.46% |
+| BSB/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| CLO/USDT:USDT | below_1h_threshold | +1.16% | +1.16% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.90% | +0.90% |
 
 ## 6. 次に見るべき不足
 
