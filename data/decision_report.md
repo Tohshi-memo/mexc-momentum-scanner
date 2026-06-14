@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T21:07:25.580594+00:00
+- generated_at: 2026-06-14T21:12:33.033175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6699**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T21:07:19.641784+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64009.4
+- 更新: 2026-06-14T21:12:29.829109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64000.0
 - Funnel: target 770 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +35.42% | $9,887,905.02 |
-| BABY/USDT:USDT | +9.92% | $1,576,111.21 |
-| OPG/USDT:USDT | +7.87% | $2,042,275.61 |
-| PIPPIN/USDT:USDT | +7.32% | $2,740,003.23 |
-| BP/USDT:USDT | +6.50% | $1,040,145.67 |
+| EVAA/USDT:USDT | +34.22% | $10,047,619.62 |
+| OPG/USDT:USDT | +9.55% | $2,068,668.82 |
+| BABY/USDT:USDT | +9.53% | $1,580,829.53 |
+| BP/USDT:USDT | +6.81% | $1,040,829.51 |
+| BTW/USDT:USDT | +6.42% | $3,528,183.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +2.66% | +2.61% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +1.93% | +1.89% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.78% | +0.73% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.58% | +0.53% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.37% | +0.33% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +2.88% | +2.85% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.32% | +2.28% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.48% | +1.45% |
+| OPG/USDT:USDT | below_1h_threshold | +1.17% | +1.13% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.60% | +0.56% |
 
 ## 6. 次に見るべき不足
 
