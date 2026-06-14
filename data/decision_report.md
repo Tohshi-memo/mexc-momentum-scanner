@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T10:33:48.342350+00:00
+- generated_at: 2026-06-14T10:40:55.402117+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6658**
 
@@ -60,30 +60,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T10:33:44.402181+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64581.1
-- Funnel: target 770 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-14T10:40:51.160393+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64585.6
+- Funnel: target 770 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +111.67% | $50,712,922.88 |
-| VELVET/USDT:USDT | +19.81% | $65,158,167.66 |
-| TRADOOR/USDT:USDT | +14.06% | $7,867,767.95 |
-| BTW/USDT:USDT | +11.51% | $3,328,819.96 |
-| BILL/USDT:USDT | +10.85% | $2,097,137.39 |
+| H/USDT:USDT | +111.66% | $51,002,389.89 |
+| VELVET/USDT:USDT | +20.00% | $65,377,424.85 |
+| TRADOOR/USDT:USDT | +14.85% | $7,895,493.44 |
+| BTW/USDT:USDT | +12.23% | $3,331,276.36 |
+| AIOT/USDT:USDT | +12.08% | $2,626,568.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +2.52% | +2.52% |
-| H/USDT:USDT | below_1h_threshold | +2.12% | +2.12% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.08% | +2.08% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
-| TAO/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.95% | +2.95% |
+| TAO/USDT:USDT | below_1h_threshold | +2.26% | +2.26% |
+| BSB/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
+| H/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.10% | +2.10% |
 
 ## 6. 次に見るべき不足
 
