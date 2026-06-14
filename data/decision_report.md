@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T18:51:49.021437+00:00
+- generated_at: 2026-06-14T18:58:16.614018+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6693**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T18:51:44.758957+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63760.9
+- 更新: 2026-06-14T18:58:12.451807+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63767.2
 - Funnel: target 770 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 87.1 >= 65=1
@@ -73,21 +73,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +19.24% | $5,121,715.51 |
-| BANANAS31/USDT:USDT | +6.87% | $2,273,819.61 |
-| CLO/USDT:USDT | +5.62% | $1,483,255.27 |
-| PIPPIN/USDT:USDT | +5.03% | $2,616,597.85 |
-| BABY/USDT:USDT | +4.40% | $1,165,987.17 |
+| EVAA/USDT:USDT | +18.45% | $5,232,767.53 |
+| BANANAS31/USDT:USDT | +7.98% | $2,280,539.82 |
+| CLO/USDT:USDT | +5.73% | $1,486,101.96 |
+| PIPPIN/USDT:USDT | +5.26% | $2,635,419.48 |
+| BABY/USDT:USDT | +4.92% | $1,178,191.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.28% | +2.20% |
-| BABY/USDT:USDT | below_1h_threshold | +1.71% | +1.62% |
-| OPG/USDT:USDT | below_1h_threshold | +1.61% | +1.52% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.41% | +1.33% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.33% | +1.24% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.51% | +2.41% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.32% | +2.23% |
+| BABY/USDT:USDT | below_1h_threshold | +2.21% | +2.12% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.04% | +1.95% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.97% | +1.87% |
 
 ## 6. 次に見るべき不足
 
