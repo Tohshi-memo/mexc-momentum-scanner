@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T06:08:01.496201+00:00
+- generated_at: 2026-06-14T06:14:22.269413+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6646**
 
@@ -60,8 +60,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T06:07:57.287428+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64412.0
+- 更新: 2026-06-14T06:14:18.077871+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=64423.9
 - Funnel: target 770 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -70,21 +70,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +76.99% | $29,003,202.37 |
-| TRADOOR/USDT:USDT | +46.87% | $5,904,015.08 |
-| BTW/USDT:USDT | +20.77% | $2,674,400.58 |
-| VELVET/USDT:USDT | +16.80% | $56,747,766.81 |
-| MEGA/USDT:USDT | +14.66% | $4,262,947.90 |
+| H/USDT:USDT | +80.10% | $29,285,678.22 |
+| TRADOOR/USDT:USDT | +43.85% | $5,975,236.68 |
+| BTW/USDT:USDT | +22.34% | $2,685,088.84 |
+| MEGA/USDT:USDT | +16.73% | $4,278,649.23 |
+| JCT/USDT:USDT | +14.33% | $10,218,519.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_1h_threshold | +3.78% | +3.63% |
-| MEGA/USDT:USDT | below_1h_threshold | +2.10% | +1.94% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.47% | +1.32% |
-| JCT/USDT:USDT | below_1h_threshold | +1.28% | +1.13% |
-| PLAY/USDT:USDT | below_1h_threshold | +1.26% | +1.10% |
+| MEGA/USDT:USDT | below_1h_threshold | +3.93% | +3.75% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.44% | +1.27% |
+| FET/USDT:USDT | below_1h_threshold | +1.23% | +1.06% |
+| JCT/USDT:USDT | below_1h_threshold | +1.22% | +1.04% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
 
 ## 6. 次に見るべき不足
 
