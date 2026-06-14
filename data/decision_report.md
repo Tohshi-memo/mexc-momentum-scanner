@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T21:58:54.751242+00:00
+- generated_at: 2026-06-14T22:05:18.389996+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6705**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T21:58:49.749348+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.11% price=65328.2
-- Funnel: target 770 → liquid 135 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=41, below_relative_strength=5, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.7 >= 65=1, 4h RSI 69.6 >= 65=1, 4h RSI 67.2 >= 65=1, 4h RSI 65.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-14T22:05:14.295007+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=65257.1
+- Funnel: target 770 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +36.03% | $2,891,023.03 |
-| EVAA/USDT:USDT | +31.79% | $12,180,909.38 |
-| RIF/USDT:USDT | +15.12% | $8,894,116.72 |
-| EDEN/USDT:USDT | +14.89% | $1,130,935.06 |
-| BP/USDT:USDT | +12.72% | $1,070,768.53 |
+| OPG/USDT:USDT | +36.69% | $3,010,884.75 |
+| EVAA/USDT:USDT | +23.28% | $12,729,646.74 |
+| RIF/USDT:USDT | +15.52% | $7,318,702.54 |
+| EDEN/USDT:USDT | +14.48% | $1,136,446.68 |
+| BP/USDT:USDT | +12.22% | $1,064,514.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_relative_strength | +5.55% | +3.44% |
-| BANANAS31/USDT:USDT | below_relative_strength | +5.47% | +3.36% |
-| RIVER/USDT:USDT | below_relative_strength | +5.25% | +3.14% |
-| BP/USDT:USDT | below_relative_strength | +5.22% | +3.11% |
-| RAVE/USDT:USDT | below_relative_strength | +5.15% | +3.04% |
+| BTW/USDT:USDT | below_1h_threshold | +1.46% | +1.51% |
+| BP/USDT:USDT | below_1h_threshold | +1.41% | +1.46% |
+| MITO/USDT:USDT | below_1h_threshold | +1.37% | +1.42% |
+| OPG/USDT:USDT | below_1h_threshold | +1.10% | +1.15% |
+| JTO/USDT:USDT | below_1h_threshold | +0.86% | +0.91% |
 
 ## 6. 次に見るべき不足
 
