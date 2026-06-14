@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T12:29:14.336612+00:00
+- generated_at: 2026-06-14T12:35:44.909852+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6662**
 
@@ -60,8 +60,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T12:29:10.373014+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64435.5
+- 更新: 2026-06-14T12:35:40.876497+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=64351.8
 - Funnel: target 770 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -69,21 +69,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +65.62% | $61,350,290.87 |
-| BANANAS31/USDT:USDT | +26.02% | $1,115,544.95 |
-| OPG/USDT:USDT | +20.74% | $1,500,495.11 |
-| TRADOOR/USDT:USDT | +19.62% | $8,139,103.78 |
-| MITO/USDT:USDT | +15.96% | $1,047,452.46 |
+| H/USDT:USDT | +71.41% | $62,810,576.73 |
+| BANANAS31/USDT:USDT | +26.71% | $1,156,808.16 |
+| OPG/USDT:USDT | +20.44% | $1,529,110.08 |
+| TRADOOR/USDT:USDT | +18.77% | $8,155,941.85 |
+| BTW/USDT:USDT | +16.66% | $3,330,998.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUAI/USDT:USDT | below_1h_threshold | +4.49% | +4.61% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.50% | +3.62% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +3.00% | +3.11% |
-| RIF/USDT:USDT | below_1h_threshold | +2.65% | +2.77% |
-| WLFI/USDT:USDT | below_1h_threshold | +2.39% | +2.51% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.54% | +4.79% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +4.34% | +4.59% |
+| RIF/USDT:USDT | below_1h_threshold | +2.88% | +3.13% |
+| BTW/USDT:USDT | below_1h_threshold | +2.73% | +2.98% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.67% | +2.92% |
 
 ## 6. 次に見るべき不足
 
