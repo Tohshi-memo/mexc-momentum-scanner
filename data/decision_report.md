@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-14T17:34:58.311301+00:00
+- generated_at: 2026-06-14T17:41:26.278049+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6687**
+- closed shadow trades: **6688**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.30% / filled 20/20。**
-- 全期間 MARKET基準: n=6687, expectancy=-0.05%
+- 全期間 MARKET基準: n=6688, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.30%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | ASK_LONG | 20/20 | 100.0% | +1.39% | **+1.39%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.83% | **+0.83%** |
-| LIMIT_10PCT_LONG | 4/20 | 20.0% | +2.11% | **+0.42%** |
 | LIMIT_9PCT_LONG | 5/20 | 25.0% | +1.46% | **+0.36%** |
-| LIMIT_ATR_LONG | 9/20 | 45.0% | +0.12% | **+0.06%** |
+| LIMIT_10PCT_LONG | 3/20 | 15.0% | +2.07% | **+0.31%** |
+| LIMIT_6PCT_LONG | 8/20 | 40.0% | -0.53% | **-0.21%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,24 +46,24 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$174.64** / 初期 $100.00 (+74.64%)
-- 確定: 1560件 (Win 417 / Loss 494 / Flat 649) / skip 1688件
-- 成長率目線: 平均log +0.000357 / 幾何平均 +0.036% per trade / maxDD +7.25%
+- 残高: **$173.76** / 初期 $100.00 (+73.76%)
+- 確定: 1561件 (Win 417 / Loss 495 / Flat 649) / skip 1688件
+- 成長率目線: 平均log +0.000354 / 幾何平均 +0.035% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: H/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $174.64
+- 最新: BEAT/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $173.76
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$98.77** / 初期 $100.00 (-1.23%)
-- 確定: 68件 (Win 19 / Loss 14 / Flat 35) / skip 30件
+- 確定: 68件 (Win 19 / Loss 14 / Flat 35) / skip 31件
 - 成長率目線: 平均log -0.000183 / 幾何平均 -0.018% per trade / maxDD +2.00%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0361 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: H/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $98.77
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T17:34:54.209767+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63922.0
+- 更新: 2026-06-14T17:41:21.501569+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63799.7
 - Funnel: target 770 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +14.88% | $2,698,940.43 |
-| BANANAS31/USDT:USDT | +8.07% | $1,995,522.62 |
-| CLO/USDT:USDT | +5.79% | $1,415,108.37 |
-| STG/USDT:USDT | +5.47% | $6,517,655.42 |
-| EDGE/USDT:USDT | +4.32% | $1,133,130.14 |
+| EVAA/USDT:USDT | +12.58% | $2,827,539.52 |
+| BANANAS31/USDT:USDT | +7.64% | $2,042,494.20 |
+| STG/USDT:USDT | +6.32% | $6,537,506.14 |
+| CLO/USDT:USDT | +5.06% | $1,421,782.43 |
+| EDGE/USDT:USDT | +4.46% | $1,135,402.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.56% | +4.55% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.35% | +3.34% |
-| MITO/USDT:USDT | below_1h_threshold | +3.25% | +3.24% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.73% | +2.72% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.72% | +2.71% |
+| MITO/USDT:USDT | below_1h_threshold | +3.79% | +3.97% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.86% | +3.04% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.84% | +3.02% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.33% | +2.51% |
+| STG/USDT:USDT | below_1h_threshold | +2.24% | +2.42% |
 
 ## 6. 次に見るべき不足
 
