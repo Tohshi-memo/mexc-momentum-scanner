@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T21:52:37.634629+00:00
+- generated_at: 2026-06-14T21:58:54.751242+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6705**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T21:52:30.847540+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.28% price=65434.1
-- Funnel: target 770 → liquid 135 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=34, below_relative_strength=11, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.6 >= 65=1, 4h RSI 69.9 >= 65=1, 4h RSI 68.7 >= 65=1, 4h RSI 66.0 >= 65=1, 4h RSI 67.4 >= 65=1
+- 更新: 2026-06-14T21:58:49.749348+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +2.11% price=65328.2
+- Funnel: target 770 → liquid 135 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=41, below_relative_strength=5, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.7 >= 65=1, 4h RSI 69.6 >= 65=1, 4h RSI 67.2 >= 65=1, 4h RSI 65.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +41.38% | $11,984,161.72 |
-| OPG/USDT:USDT | +35.98% | $2,718,534.13 |
-| EDEN/USDT:USDT | +16.71% | $1,119,184.61 |
-| RIF/USDT:USDT | +14.91% | $8,811,689.61 |
-| BP/USDT:USDT | +14.77% | $1,063,781.59 |
+| OPG/USDT:USDT | +36.03% | $2,891,023.03 |
+| EVAA/USDT:USDT | +31.79% | $12,180,909.38 |
+| RIF/USDT:USDT | +15.12% | $8,894,116.72 |
+| EDEN/USDT:USDT | +14.89% | $1,130,935.06 |
+| BP/USDT:USDT | +12.72% | $1,070,768.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BP/USDT:USDT | below_relative_strength | +7.07% | +4.79% |
-| PENGU/USDT:USDT | below_relative_strength | +6.22% | +3.94% |
-| LIT/USDT:USDT | below_relative_strength | +6.00% | +3.72% |
-| JELLYJELLY/USDT:USDT | below_relative_strength | +5.92% | +3.65% |
-| EDEN/USDT:USDT | below_relative_strength | +5.73% | +3.45% |
+| PENGU/USDT:USDT | below_relative_strength | +5.55% | +3.44% |
+| BANANAS31/USDT:USDT | below_relative_strength | +5.47% | +3.36% |
+| RIVER/USDT:USDT | below_relative_strength | +5.25% | +3.14% |
+| BP/USDT:USDT | below_relative_strength | +5.22% | +3.11% |
+| RAVE/USDT:USDT | below_relative_strength | +5.15% | +3.04% |
 
 ## 6. 次に見るべき不足
 
