@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T20:02:27.115921+00:00
+- generated_at: 2026-06-14T20:07:46.122592+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6696**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T20:02:23.126202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63834.5
+- 更新: 2026-06-14T20:07:42.937995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63791.0
 - Funnel: target 770 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +29.21% | $7,992,934.01 |
-| BP/USDT:USDT | +8.76% | $1,018,019.83 |
-| BABY/USDT:USDT | +7.71% | $1,453,677.12 |
-| BANANAS31/USDT:USDT | +6.20% | $2,398,406.18 |
-| CLO/USDT:USDT | +6.06% | $1,512,868.86 |
+| EVAA/USDT:USDT | +28.20% | $8,161,932.70 |
+| BABY/USDT:USDT | +8.75% | $1,460,748.28 |
+| BP/USDT:USDT | +8.22% | $1,022,441.65 |
+| CLO/USDT:USDT | +6.62% | $1,514,414.00 |
+| JELLYJELLY/USDT:USDT | +5.90% | $1,042,130.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +0.94% | +0.85% |
-| BSB/USDT:USDT | below_1h_threshold | +0.92% | +0.83% |
-| OPG/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
-| AKT/USDT:USDT | below_1h_threshold | +0.45% | +0.36% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.40% | +0.31% |
+| JTO/USDT:USDT | below_1h_threshold | +0.91% | +0.89% |
+| CLO/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| BABY/USDT:USDT | below_1h_threshold | +0.66% | +0.64% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
+| AKT/USDT:USDT | below_1h_threshold | +0.41% | +0.39% |
 
 ## 6. 次に見るべき不足
 
