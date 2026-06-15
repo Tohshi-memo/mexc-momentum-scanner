@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T18:40:50.106682+00:00
+- generated_at: 2026-06-15T18:47:25.976812+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6801**
 
@@ -62,31 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T18:40:43.873283+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=66785.6
-- Funnel: target 772 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-15T18:47:21.937269+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=66769.7
+- Funnel: target 772 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +20.88% | $43,556,115.86 |
-| ROAM/USDT:USDT | +19.83% | $1,482,727.83 |
-| BEAT/USDT:USDT | +8.07% | $105,065,927.40 |
-| SPCXSTOCK/USDT:USDT | +6.07% | $172,536,437.36 |
-| ARMSTOCK/USDT:USDT | +4.70% | $6,146,729.08 |
+| ROAM/USDT:USDT | +21.71% | $1,514,418.74 |
+| EVAA/USDT:USDT | +19.88% | $43,715,434.40 |
+| BEAT/USDT:USDT | +5.85% | $105,945,353.25 |
+| SPCXSTOCK/USDT:USDT | +5.31% | $174,213,788.10 |
+| ARMSTOCK/USDT:USDT | +4.67% | $6,154,222.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +1.96% | +2.01% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.35% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +1.07% |
-| XMR/USDT:USDT | below_1h_threshold | +0.77% | +0.82% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.14% | +4.22% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.40% | +1.47% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.46% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.36% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.18% | +1.25% |
 
 ## 6. 次に見るべき不足
 
