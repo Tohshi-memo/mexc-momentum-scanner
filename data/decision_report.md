@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T17:05:10.762653+00:00
+- generated_at: 2026-06-15T17:12:02.421792+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6799**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T17:05:06.637683+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=66820.7
+- 更新: 2026-06-15T17:11:58.335189+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=66775.6
 - Funnel: target 772 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +10.37% | $41,386,225.65 |
-| UAI/USDT:USDT | +3.14% | $4,153,105.32 |
-| SPCXSTOCK/USDT:USDT | +2.75% | $132,601,852.25 |
-| ASTEROID/USDT:USDT | +2.51% | $6,082,670.36 |
-| BANANAS31/USDT:USDT | +2.04% | $1,951,580.43 |
+| EVAA/USDT:USDT | +9.01% | $41,528,619.46 |
+| UAI/USDT:USDT | +5.35% | $4,256,743.61 |
+| SPCXSTOCK/USDT:USDT | +4.18% | $137,561,316.71 |
+| ASTEROID/USDT:USDT | +4.02% | $6,087,302.80 |
+| BEAT/USDT:USDT | +2.86% | $102,712,442.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.61% | +4.06% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.91% | +2.36% |
-| XLM/USDT:USDT | below_1h_threshold | +0.85% | +1.30% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +1.27% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +0.79% | +1.24% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.84% | +4.36% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.86% |
+| UAI/USDT:USDT | below_1h_threshold | +1.95% | +2.46% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.90% | +1.42% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +1.23% |
 
 ## 6. 次に見るべき不足
 
