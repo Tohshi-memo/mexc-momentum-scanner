@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T16:24:29.871688+00:00
+- generated_at: 2026-06-15T16:30:58.052565+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6795**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T16:24:24.425335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=67131.6
-- Funnel: target 772 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 78.9 >= 65=1
+- 更新: 2026-06-15T16:30:53.663178+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=67189.1
+- Funnel: target 772 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +9.44% | $40,532,552.95 |
-| BSB/USDT:USDT | +5.64% | $13,507,801.60 |
-| SKYAI/USDT:USDT | +3.39% | $8,456,613.92 |
-| UAI/USDT:USDT | +2.95% | $4,148,501.52 |
-| BEAT/USDT:USDT | +1.97% | $103,779,886.66 |
+| EVAA/USDT:USDT | +9.54% | $40,859,025.64 |
+| UAI/USDT:USDT | +3.86% | $4,176,690.29 |
+| SKYAI/USDT:USDT | +3.53% | $8,491,931.61 |
+| ASTEROID/USDT:USDT | +2.31% | $6,044,528.40 |
+| SPCXSTOCK/USDT:USDT | +1.68% | $125,482,969.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.39% | +3.56% |
-| UAI/USDT:USDT | below_1h_threshold | +3.01% | +3.18% |
-| XLM/USDT:USDT | below_1h_threshold | +1.93% | +2.11% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.81% | +1.99% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.81% | +1.98% |
+| UAI/USDT:USDT | below_1h_threshold | +3.89% | +3.98% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.36% | +3.45% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.31% | +2.40% |
+| BSB/USDT:USDT | below_1h_threshold | +2.29% | +2.37% |
+| XRP/USDT:USDT | below_1h_threshold | +1.66% | +1.75% |
 
 ## 6. 次に見るべき不足
 
