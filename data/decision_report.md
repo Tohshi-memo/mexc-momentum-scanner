@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T12:36:14.150154+00:00
+- generated_at: 2026-06-15T12:43:27.144618+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6780**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T12:36:09.668577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=66227.2
+- 更新: 2026-06-15T12:43:22.540068+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=66404.7
 - Funnel: target 771 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.2 >= 65=1, 4h RSI 69.9 >= 65=1
+- Strict後reject: 4h RSI 86.0 >= 65=1, 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +82.55% | $31,957,654.69 |
-| ASTEROID/USDT:USDT | +72.72% | $5,131,894.15 |
-| CLO/USDT:USDT | +40.47% | $2,357,764.45 |
-| UAI/USDT:USDT | +27.16% | $3,562,210.84 |
-| ZEC/USDT:USDT | +25.22% | $267,057,944.07 |
+| EVAA/USDT:USDT | +83.59% | $32,121,903.41 |
+| ASTEROID/USDT:USDT | +72.72% | $5,143,320.95 |
+| CLO/USDT:USDT | +42.37% | $2,373,869.66 |
+| UAI/USDT:USDT | +28.12% | $3,607,866.27 |
+| ZEC/USDT:USDT | +25.35% | $268,745,832.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +2.28% | +2.23% |
-| BABY/USDT:USDT | below_1h_threshold | +2.26% | +2.21% |
-| FLOKI/USDT:USDT | below_1h_threshold | +1.33% | +1.28% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.29% | +1.24% |
-| ADA/USDT:USDT | below_1h_threshold | +1.14% | +1.08% |
+| XLM/USDT:USDT | below_1h_threshold | +3.05% | +2.72% |
+| BABY/USDT:USDT | below_1h_threshold | +2.98% | +2.66% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.13% | +1.81% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.92% | +1.60% |
+| ADA/USDT:USDT | below_1h_threshold | +1.62% | +1.30% |
 
 ## 6. 次に見るべき不足
 
