@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T00:24:28.374405+00:00
+- generated_at: 2026-06-15T00:29:39.117004+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6713**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T00:24:22.004667+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=65669.6
+- 更新: 2026-06-15T00:29:32.866112+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=65715.0
 - Funnel: target 770 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +43.58% | $5,977,618.53 |
-| EVAA/USDT:USDT | +31.04% | $16,024,943.70 |
-| BABY/USDT:USDT | +17.18% | $2,284,636.98 |
-| EDEN/USDT:USDT | +15.31% | $1,368,414.92 |
-| RIF/USDT:USDT | +14.65% | $5,553,599.68 |
+| OPG/USDT:USDT | +45.03% | $6,016,497.99 |
+| EVAA/USDT:USDT | +29.36% | $16,068,089.18 |
+| RIF/USDT:USDT | +16.84% | $5,559,207.31 |
+| BABY/USDT:USDT | +16.08% | $2,290,421.63 |
+| USELESS/USDT:USDT | +16.01% | $1,040,989.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +4.60% | +4.65% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.94% | +4.00% |
-| H/USDT:USDT | below_1h_threshold | +3.15% | +3.20% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.95% | +3.00% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.76% | +2.82% |
+| H/USDT:USDT | below_1h_threshold | +4.51% | +4.50% |
+| JELLYJELLY/USDT:USDT | below_1h_threshold | +3.65% | +3.63% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.11% |
+| VVV/USDT:USDT | below_1h_threshold | +1.93% | +1.91% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.86% | +1.84% |
 
 ## 6. 次に見るべき不足
 
