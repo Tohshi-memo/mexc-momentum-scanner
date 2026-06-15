@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T15:24:20.899276+00:00
+- generated_at: 2026-06-15T15:30:48.638030+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6792**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T15:24:15.443419+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=66619.8
-- Funnel: target 772 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI 77.2 >= 65=1
+- 更新: 2026-06-15T15:30:44.237451+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=66590.0
+- Funnel: target 772 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +81.44% | $38,684,740.09 |
-| ASTEROID/USDT:USDT | +68.53% | $5,876,881.45 |
-| JTO/USDT:USDT | +44.88% | $5,055,078.78 |
-| CLO/USDT:USDT | +40.97% | $2,221,462.83 |
-| BSB/USDT:USDT | +38.34% | $10,500,181.96 |
+| EVAA/USDT:USDT | +85.59% | $38,825,494.17 |
+| ASTEROID/USDT:USDT | +67.13% | $5,890,120.51 |
+| JTO/USDT:USDT | +42.75% | $5,464,448.57 |
+| CLO/USDT:USDT | +39.53% | $2,227,124.54 |
+| BSB/USDT:USDT | +36.02% | $10,810,338.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +2.49% | +2.39% |
-| CLO/USDT:USDT | below_1h_threshold | +2.30% | +2.20% |
-| FHE/USDT:USDT | below_1h_threshold | +1.90% | +1.80% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.62% | +1.52% |
-| JTO/USDT:USDT | below_1h_threshold | +1.58% | +1.48% |
+| MEGA/USDT:USDT | below_1h_threshold | +4.34% | +4.28% |
+| FHE/USDT:USDT | below_1h_threshold | +1.90% | +1.85% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +1.73% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.54% | +1.49% |
+| CLO/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
 
 ## 6. 次に見るべき不足
 
