@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-15T03:46:17.924308+00:00
+- generated_at: 2026-06-15T03:52:49.016723+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6732**
+- closed shadow trades: **6734**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.97% / filled 20/20。**
-- 全期間 MARKET基準: n=6732, expectancy=-0.04%
+- 全期間 MARKET基準: n=6734, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=+0.97%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,20 +21,20 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +1.68% | **+1.68%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +1.81% | **+1.63%** |
+| ASK | 20/20 | 100.0% | +1.59% | **+1.59%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +1.75% | **+1.58%** |
 | MARKET | 20/20 | 100.0% | +0.97% | **+0.97%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +0.98% | **+0.78%** |
-| LIMIT_5PCT | 6/20 | 30.0% | +2.13% | **+0.64%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +0.85% | **+0.68%** |
+| LIMIT_5PCT | 7/20 | 35.0% | +1.25% | **+0.44%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_9PCT_LONG | 7/20 | 35.0% | +3.33% | **+1.16%** |
+| LIMIT_9PCT_LONG | 6/20 | 30.0% | +3.70% | **+1.11%** |
 | LIMIT_8PCT_LONG | 9/20 | 45.0% | +1.78% | **+0.80%** |
-| LIMIT_FIB1272_LONG | 5/20 | 25.0% | +2.77% | **+0.69%** |
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | +4.00% | **+0.60%** |
+| LIMIT_FIB1272_LONG | 5/20 | 25.0% | +1.89% | **+0.47%** |
 | LIMIT_7PCT_LONG | 10/20 | 50.0% | -0.14% | **-0.07%** |
 
 ## 2. $100 Live Portfolio
@@ -46,48 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$174.41** / 初期 $100.00 (+74.41%)
-- 確定: 1605件 (Win 423 / Loss 500 / Flat 682) / skip 1688件
-- 成長率目線: 平均log +0.000347 / 幾何平均 +0.035% per trade / maxDD +7.25%
+- 残高: **$173.89** / 初期 $100.00 (+73.89%)
+- 確定: 1607件 (Win 423 / Loss 501 / Flat 683) / skip 1688件
+- 成長率目線: 平均log +0.000344 / 幾何平均 +0.034% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EVAA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $174.41
+- 最新: ASTEROID/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $173.89
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$100.55** / 初期 $100.00 (+0.55%)
-- 確定: 100件 (Win 24 / Loss 16 / Flat 60) / skip 43件
-- 成長率目線: 平均log +0.000055 / 幾何平均 +0.005% per trade / maxDD +2.07%
+- 確定: 101件 (Win 24 / Loss 16 / Flat 61) / skip 44件
+- 成長率目線: 平均log +0.000054 / 幾何平均 +0.005% per trade / maxDD +2.07%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0744 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: EVAA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $100.55
+- 最新: ASTEROID/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $100.55
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T03:46:11.392830+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.64% price=65850.8
-- Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 93.1 >= 65=1
+- 更新: 2026-06-15T03:52:42.359583+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.67% price=65867.5
+- Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.9 >= 65=1, 4h RSI 92.8 >= 65=1, 4h RSI 75.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +131.64% | $1,659,978.14 |
-| EVAA/USDT:USDT | +62.50% | $18,298,006.35 |
-| CLO/USDT:USDT | +33.74% | $2,056,328.77 |
-| RIF/USDT:USDT | +31.28% | $4,661,926.32 |
-| GRASS/USDT:USDT | +21.85% | $1,014,488.86 |
+| ASTEROID/USDT:USDT | +139.16% | $1,767,278.73 |
+| EVAA/USDT:USDT | +58.29% | $18,395,840.15 |
+| CLO/USDT:USDT | +35.74% | $2,068,936.44 |
+| RIF/USDT:USDT | +35.65% | $4,702,814.82 |
+| GRASS/USDT:USDT | +22.69% | $1,053,936.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_relative_strength | +5.01% | +4.37% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.65% | +2.01% |
-| JTO/USDT:USDT | below_1h_threshold | +1.99% | +1.35% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.71% | +1.07% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.47% | +0.83% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.40% | +2.73% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.76% | +1.10% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.46% | +0.79% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.44% | +0.77% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.39% | +0.72% |
 
 ## 6. 次に見るべき不足
 
