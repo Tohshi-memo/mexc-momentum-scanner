@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T21:48:29.532014+00:00
+- generated_at: 2026-06-15T21:54:56.870816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6815**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T21:48:25.238614+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=66353.4
-- Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-15T21:54:52.538217+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=66366.9
+- Funnel: target 772 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +32.93% | $2,338,714.66 |
-| HOME/USDT:USDT | +14.12% | $1,099,206.39 |
-| SPCXSTOCK/USDT:USDT | +11.83% | $253,650,506.31 |
-| EVAA/USDT:USDT | +10.85% | $43,831,735.91 |
-| FOLKS/USDT:USDT | +10.47% | $2,286,566.66 |
+| ROAM/USDT:USDT | +29.80% | $2,382,183.42 |
+| EVAA/USDT:USDT | +15.72% | $44,134,710.45 |
+| HOME/USDT:USDT | +13.84% | $1,102,129.59 |
+| SPCXSTOCK/USDT:USDT | +12.11% | $255,916,535.93 |
+| FOLKS/USDT:USDT | +11.36% | $2,291,639.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.41% | +2.62% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.19% | +2.40% |
-| UNI/USDT:USDT | below_1h_threshold | +2.08% | +2.28% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.18% |
-| AKT/USDT:USDT | below_1h_threshold | +1.75% | +1.96% |
+| UNI/USDT:USDT | below_1h_threshold | +3.19% | +3.38% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.18% | +3.37% |
+| BTW/USDT:USDT | below_1h_threshold | +3.00% | +3.18% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.61% | +2.80% |
+| AERO/USDT:USDT | below_1h_threshold | +2.21% | +2.39% |
 
 ## 6. 次に見るべき不足
 
