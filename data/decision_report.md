@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T08:28:25.357803+00:00
+- generated_at: 2026-06-15T08:35:06.705062+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6764**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T08:28:20.850290+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=65663.4
-- Funnel: target 770 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- 更新: 2026-06-15T08:35:01.707560+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=65688.0
+- Funnel: target 770 → liquid 145 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.6 >= 65=1, 4h RSI 69.6 >= 65=1, 4h RSI 94.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +87.76% | $4,002,686.52 |
-| EVAA/USDT:USDT | +87.65% | $24,548,935.80 |
-| CLO/USDT:USDT | +43.09% | $2,191,502.14 |
-| PUFFER/USDT:USDT | +32.32% | $1,089,277.54 |
-| TRADOOR/USDT:USDT | +29.15% | $4,293,329.71 |
+| EVAA/USDT:USDT | +89.73% | $24,688,517.87 |
+| ASTEROID/USDT:USDT | +76.57% | $4,056,586.61 |
+| CLO/USDT:USDT | +40.86% | $2,206,441.01 |
+| PUFFER/USDT:USDT | +32.49% | $1,093,509.03 |
+| TRADOOR/USDT:USDT | +32.36% | $4,316,698.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.53% | +4.50% |
-| EVAA/USDT:USDT | below_1h_threshold | +4.12% | +4.09% |
-| PUFFER/USDT:USDT | below_1h_threshold | +3.47% | +3.44% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.55% | +2.52% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.28% | +2.25% |
+| PUFFER/USDT:USDT | below_1h_threshold | +4.01% | +3.94% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.95% | +2.88% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.41% | +2.34% |
+| TAO/USDT:USDT | below_1h_threshold | +1.94% | +1.87% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.92% | +1.85% |
 
 ## 6. 次に見るべき不足
 
