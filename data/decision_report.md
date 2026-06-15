@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T06:55:13.459120+00:00
+- generated_at: 2026-06-15T07:01:45.942080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6756**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T06:55:07.982118+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65819.4
-- Funnel: target 770 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.8 >= 65=1, 4h RSI 90.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-15T07:01:41.884220+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=65676.0
+- Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +84.96% | $3,615,830.78 |
-| EVAA/USDT:USDT | +64.67% | $22,260,488.50 |
-| CLO/USDT:USDT | +45.54% | $2,201,635.88 |
-| JELLYJELLY/USDT:USDT | +26.72% | $1,568,513.06 |
-| GRASS/USDT:USDT | +21.75% | $1,658,961.57 |
+| ASTEROID/USDT:USDT | +88.98% | $3,653,371.04 |
+| EVAA/USDT:USDT | +59.28% | $22,299,778.44 |
+| CLO/USDT:USDT | +44.54% | $2,052,709.46 |
+| JELLYJELLY/USDT:USDT | +27.88% | $1,571,577.38 |
+| GRASS/USDT:USDT | +22.63% | $1,677,667.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +4.52% | +4.53% |
-| JTO/USDT:USDT | below_1h_threshold | +3.80% | +3.81% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.08% | +3.09% |
-| AKT/USDT:USDT | below_1h_threshold | +2.12% | +2.14% |
-| TAO/USDT:USDT | below_1h_threshold | +1.95% | +1.96% |
+| CLO/USDT:USDT | below_1h_threshold | +1.17% | +1.31% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.53% | +0.68% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.28% | +0.43% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.16% | +0.31% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +0.14% | +0.28% |
 
 ## 6. 次に見るべき不足
 
