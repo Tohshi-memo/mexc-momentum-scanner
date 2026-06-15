@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T04:32:03.309899+00:00
+- generated_at: 2026-06-15T04:38:35.955396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6743**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T04:31:58.757024+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=65689.3
+- 更新: 2026-06-15T04:38:31.469814+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=65643.8
 - Funnel: target 770 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 93.8 >= 65=1
+- Strict後reject: 4h RSI 93.8 >= 65=1, 4h RSI 72.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +141.25% | $2,331,595.62 |
-| EVAA/USDT:USDT | +71.66% | $19,038,190.84 |
-| CLO/USDT:USDT | +36.97% | $2,086,888.81 |
-| RIF/USDT:USDT | +30.80% | $5,069,068.12 |
-| WLD/USDT:USDT | +19.27% | $104,372,055.36 |
+| ASTEROID/USDT:USDT | +136.18% | $2,394,565.68 |
+| EVAA/USDT:USDT | +73.08% | $19,163,207.44 |
+| CLO/USDT:USDT | +35.24% | $2,093,131.88 |
+| RIF/USDT:USDT | +24.87% | $5,176,283.64 |
+| WLD/USDT:USDT | +19.15% | $104,937,518.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +3.22% | +3.53% |
-| NIL/USDT:USDT | below_1h_threshold | +2.41% | +2.72% |
-| JTO/USDT:USDT | below_1h_threshold | +1.91% | +2.22% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.90% | +2.21% |
-| LAB/USDT:USDT | below_1h_threshold | +1.86% | +2.17% |
+| WLD/USDT:USDT | below_1h_threshold | +3.08% | +3.46% |
+| NIL/USDT:USDT | below_1h_threshold | +2.41% | +2.79% |
+| LAB/USDT:USDT | below_1h_threshold | +1.82% | +2.20% |
+| AKT/USDT:USDT | below_1h_threshold | +1.48% | +1.86% |
+| JTO/USDT:USDT | below_1h_threshold | +1.44% | +1.82% |
 
 ## 6. 次に見るべき不足
 
