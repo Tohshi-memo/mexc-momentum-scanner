@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T02:20:08.442075+00:00
+- generated_at: 2026-06-15T02:26:50.078950+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6723**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T02:20:04.053537+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=65661.2
+- 更新: 2026-06-15T02:26:45.879239+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=65639.8
 - Funnel: target 770 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.4 >= 65=1
+- Strict後reject: 4h RSI 90.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +37.44% | $16,815,249.78 |
-| CLO/USDT:USDT | +27.28% | $1,812,422.00 |
-| RIF/USDT:USDT | +24.44% | $4,385,128.89 |
-| EDEN/USDT:USDT | +17.32% | $1,512,026.88 |
-| BABY/USDT:USDT | +16.53% | $2,554,317.48 |
+| EVAA/USDT:USDT | +40.02% | $16,931,902.85 |
+| CLO/USDT:USDT | +27.89% | $1,847,221.31 |
+| RIF/USDT:USDT | +23.66% | $4,418,105.88 |
+| EDEN/USDT:USDT | +17.73% | $1,522,064.82 |
+| BABY/USDT:USDT | +17.31% | $2,559,030.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +3.53% | +3.26% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.26% | +2.98% |
-| JUP/USDT:USDT | below_1h_threshold | +3.11% | +2.83% |
-| BABY/USDT:USDT | below_1h_threshold | +1.76% | +1.48% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.62% | +1.34% |
+| JUP/USDT:USDT | below_1h_threshold | +4.41% | +4.16% |
+| CLO/USDT:USDT | below_1h_threshold | +4.03% | +3.79% |
+| TAO/USDT:USDT | below_1h_threshold | +3.19% | +2.94% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.09% | +2.84% |
+| BABY/USDT:USDT | below_1h_threshold | +2.55% | +2.30% |
 
 ## 6. 次に見るべき不足
 
