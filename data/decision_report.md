@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T15:37:44.708101+00:00
+- generated_at: 2026-06-15T15:44:12.392367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6792**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T15:37:40.553809+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=66719.8
+- 更新: 2026-06-15T15:44:08.184564+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=66831.9
 - Funnel: target 772 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +80.66% | $39,012,691.65 |
-| ASTEROID/USDT:USDT | +66.78% | $5,897,992.25 |
-| JTO/USDT:USDT | +49.17% | $6,108,257.76 |
-| CLO/USDT:USDT | +39.19% | $2,233,274.83 |
-| BSB/USDT:USDT | +36.16% | $11,108,228.10 |
+| EVAA/USDT:USDT | +81.39% | $39,096,491.75 |
+| ASTEROID/USDT:USDT | +69.75% | $5,909,057.46 |
+| JTO/USDT:USDT | +46.34% | $6,725,685.39 |
+| CLO/USDT:USDT | +38.47% | $2,235,030.31 |
+| BSB/USDT:USDT | +35.81% | $11,288,504.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +4.89% | +4.64% |
-| XLM/USDT:USDT | below_1h_threshold | +4.11% | +3.86% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.50% | +2.24% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +1.28% |
-| XRP/USDT:USDT | below_1h_threshold | +1.18% | +0.93% |
+| XLM/USDT:USDT | below_1h_threshold | +4.58% | +4.16% |
+| JTO/USDT:USDT | below_1h_threshold | +2.78% | +2.36% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.88% | +1.46% |
+| XRP/USDT:USDT | below_1h_threshold | +1.70% | +1.28% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.49% | +1.07% |
 
 ## 6. 次に見るべき不足
 
