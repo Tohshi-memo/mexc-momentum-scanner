@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T05:24:35.399784+00:00
+- generated_at: 2026-06-15T05:30:52.595070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6748**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T05:24:31.327326+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=65791.2
-- Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-15T05:30:48.437600+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=65790.0
+- Funnel: target 770 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +104.72% | $2,906,262.77 |
-| EVAA/USDT:USDT | +79.61% | $19,881,251.02 |
-| CLO/USDT:USDT | +39.86% | $2,102,603.12 |
-| WLD/USDT:USDT | +19.51% | $106,813,294.27 |
-| GRASS/USDT:USDT | +18.39% | $1,418,116.02 |
+| ASTEROID/USDT:USDT | +109.26% | $2,958,633.04 |
+| EVAA/USDT:USDT | +77.89% | $19,986,106.18 |
+| CLO/USDT:USDT | +38.53% | $2,111,974.60 |
+| WLD/USDT:USDT | +20.62% | $107,702,586.70 |
+| BABY/USDT:USDT | +19.00% | $2,661,230.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +1.88% | +1.61% |
-| ENA/USDT:USDT | below_1h_threshold | +1.84% | +1.56% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.64% | +1.37% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.64% | +1.37% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.58% | +1.30% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.33% | +2.06% |
+| ENA/USDT:USDT | below_1h_threshold | +2.25% | +1.98% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.17% | +1.90% |
+| LIT/USDT:USDT | below_1h_threshold | +1.93% | +1.65% |
+| NIL/USDT:USDT | below_1h_threshold | +1.86% | +1.59% |
 
 ## 6. 次に見るべき不足
 
