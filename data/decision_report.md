@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T13:03:04.173109+00:00
+- generated_at: 2026-06-15T13:09:42.628819+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6781**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T13:03:00.111810+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=66457.0
+- 更新: 2026-06-15T13:09:38.590001+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=66554.9
 - Funnel: target 771 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +84.36% | $32,504,362.28 |
-| ASTEROID/USDT:USDT | +73.25% | $5,220,976.94 |
-| CLO/USDT:USDT | +41.59% | $2,257,607.30 |
-| ZRO/USDT:USDT | +27.45% | $2,070,170.42 |
-| UAI/USDT:USDT | +25.75% | $3,541,309.27 |
+| EVAA/USDT:USDT | +78.32% | $32,708,226.58 |
+| ASTEROID/USDT:USDT | +74.47% | $5,234,699.89 |
+| CLO/USDT:USDT | +42.65% | $2,263,726.31 |
+| ZRO/USDT:USDT | +28.49% | $2,214,209.38 |
+| UAI/USDT:USDT | +27.02% | $3,558,971.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOKI/USDT:USDT | below_1h_threshold | +3.29% | +3.40% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.86% | +2.96% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.49% | +1.59% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.33% | +1.43% |
-| TIA/USDT:USDT | below_1h_threshold | +0.94% | +1.04% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.51% | +2.46% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.82% | +1.77% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.64% | +1.59% |
+| JTO/USDT:USDT | below_1h_threshold | +1.58% | +1.54% |
 
 ## 6. 次に見るべき不足
 
