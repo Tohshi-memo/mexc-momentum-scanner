@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T10:24:13.975443+00:00
+- generated_at: 2026-06-15T10:30:42.759943+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6772**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T10:24:10.078990+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=65692.4
-- Funnel: target 770 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-15T10:30:38.397281+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=65676.5
+- Funnel: target 770 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +94.18% | $27,347,710.56 |
-| ASTEROID/USDT:USDT | +71.67% | $4,631,644.71 |
-| CLO/USDT:USDT | +40.53% | $2,267,986.09 |
-| H/USDT:USDT | +34.64% | $141,307,499.30 |
-| PUFFER/USDT:USDT | +30.79% | $1,452,294.69 |
+| EVAA/USDT:USDT | +95.34% | $27,464,330.68 |
+| ASTEROID/USDT:USDT | +76.39% | $4,647,733.06 |
+| CLO/USDT:USDT | +37.08% | $2,282,915.60 |
+| H/USDT:USDT | +33.86% | $141,762,396.92 |
+| UAI/USDT:USDT | +28.37% | $2,390,713.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BABY/USDT:USDT | below_1h_threshold | +4.33% | +4.12% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.21% | +2.01% |
-| FHE/USDT:USDT | below_1h_threshold | +1.66% | +1.46% |
-| AKT/USDT:USDT | below_1h_threshold | +1.44% | +1.23% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.33% | +1.13% |
+| FHE/USDT:USDT | below_1h_threshold | +3.06% | +2.88% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.68% | +2.50% |
+| JTO/USDT:USDT | below_1h_threshold | +2.25% | +2.08% |
+| NIL/USDT:USDT | below_1h_threshold | +1.94% | +1.76% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.05% | +0.87% |
 
 ## 6. 次に見るべき不足
 
