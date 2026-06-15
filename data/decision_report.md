@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T08:48:28.094692+00:00
+- generated_at: 2026-06-15T08:54:50.328307+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6767**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T08:48:22.466561+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=65745.0
-- Funnel: target 770 → liquid 145 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.6 >= 65=1, 4h RSI 71.9 >= 65=1, 4h RSI 74.0 >= 65=1
+- 更新: 2026-06-15T08:54:45.452127+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=65660.7
+- Funnel: target 770 → liquid 146 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.0 >= 65=1, 4h RSI 74.3 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 69.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +84.90% | $25,032,672.51 |
-| ASTEROID/USDT:USDT | +78.67% | $4,164,024.20 |
-| CLO/USDT:USDT | +36.74% | $2,254,616.21 |
-| H/USDT:USDT | +34.06% | $140,060,897.32 |
-| TRADOOR/USDT:USDT | +32.30% | $4,396,887.17 |
+| EVAA/USDT:USDT | +85.26% | $25,148,992.42 |
+| ASTEROID/USDT:USDT | +68.88% | $4,190,901.54 |
+| CLO/USDT:USDT | +39.53% | $2,286,163.94 |
+| H/USDT:USDT | +34.81% | $140,814,259.11 |
+| TRADOOR/USDT:USDT | +34.07% | $4,436,742.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.53% | +4.37% |
-| JTO/USDT:USDT | below_1h_threshold | +3.32% | +3.16% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.98% | +2.83% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.97% | +2.81% |
-| PUFFER/USDT:USDT | below_1h_threshold | +2.18% | +2.02% |
+| FHE/USDT:USDT | below_1h_threshold | +3.23% | +3.20% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.90% | +2.87% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.84% | +2.81% |
+| JTO/USDT:USDT | below_1h_threshold | +2.65% | +2.62% |
+| AKT/USDT:USDT | below_1h_threshold | +2.49% | +2.46% |
 
 ## 6. 次に見るべき不足
 
