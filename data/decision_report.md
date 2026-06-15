@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T07:01:45.942080+00:00
+- generated_at: 2026-06-15T07:09:08.177347+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6756**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T07:01:41.884220+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=65676.0
+- 更新: 2026-06-15T07:09:04.272208+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=65764.0
 - Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +88.98% | $3,653,371.04 |
-| EVAA/USDT:USDT | +59.28% | $22,299,778.44 |
-| CLO/USDT:USDT | +44.54% | $2,052,709.46 |
-| JELLYJELLY/USDT:USDT | +27.88% | $1,571,577.38 |
-| GRASS/USDT:USDT | +22.63% | $1,677,667.93 |
+| ASTEROID/USDT:USDT | +89.68% | $3,686,294.57 |
+| EVAA/USDT:USDT | +65.49% | $22,397,681.15 |
+| CLO/USDT:USDT | +44.20% | $2,069,562.42 |
+| GRASS/USDT:USDT | +24.09% | $1,735,330.56 |
+| JELLYJELLY/USDT:USDT | +23.05% | $1,647,852.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +1.17% | +1.31% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.53% | +0.68% |
-| EDEN/USDT:USDT | below_1h_threshold | +0.28% | +0.43% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.16% | +0.31% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +0.14% | +0.28% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.43% | +3.44% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.95% | +0.97% |
+| AKT/USDT:USDT | below_1h_threshold | +0.89% | +0.91% |
+| UAI/USDT:USDT | below_1h_threshold | +0.89% | +0.90% |
+| CLO/USDT:USDT | below_1h_threshold | +0.74% | +0.75% |
 
 ## 6. 次に見るべき不足
 
