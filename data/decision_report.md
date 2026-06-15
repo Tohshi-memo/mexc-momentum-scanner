@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T02:01:02.598960+00:00
+- generated_at: 2026-06-15T02:07:21.909434+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6723**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T02:00:57.653002+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=65438.1
+- 更新: 2026-06-15T02:07:17.868591+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=65585.5
 - Funnel: target 770 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +31.06% | $8,106,806.50 |
-| EVAA/USDT:USDT | +28.29% | $16,627,797.63 |
-| CLO/USDT:USDT | +24.44% | $1,704,285.14 |
-| RIF/USDT:USDT | +23.35% | $4,311,735.96 |
-| H/USDT:USDT | +16.07% | $131,418,676.75 |
+| EVAA/USDT:USDT | +29.23% | $16,655,145.08 |
+| CLO/USDT:USDT | +26.39% | $1,731,129.29 |
+| RIF/USDT:USDT | +23.25% | $4,343,759.16 |
+| OPG/USDT:USDT | +17.85% | $8,495,718.64 |
+| EDEN/USDT:USDT | +15.55% | $1,503,947.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
-| CLO/USDT:USDT | below_1h_threshold | +1.31% | +1.38% |
-| UAI/USDT:USDT | below_1h_threshold | +0.57% | +0.63% |
-| FET/USDT:USDT | below_1h_threshold | +0.24% | +0.30% |
-| IP/USDT:USDT | below_1h_threshold | +0.16% | +0.22% |
+| CLO/USDT:USDT | below_1h_threshold | +3.22% | +3.05% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.44% | +2.28% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.93% | +0.77% |
+| XPL/USDT:USDT | below_1h_threshold | +0.76% | +0.60% |
+| JELLYJELLY/USDT:USDT | below_1h_threshold | +0.69% | +0.53% |
 
 ## 6. 次に見るべき不足
 
