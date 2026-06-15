@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T06:21:29.400134+00:00
+- generated_at: 2026-06-15T06:28:00.053439+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6753**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T06:21:24.419436+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=65841.8
-- Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-15T06:27:55.770139+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=65910.0
+- Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +90.55% | $3,365,228.26 |
-| EVAA/USDT:USDT | +54.90% | $21,356,403.96 |
-| CLO/USDT:USDT | +37.52% | $2,095,266.33 |
-| GRASS/USDT:USDT | +19.93% | $1,514,214.25 |
-| JELLYJELLY/USDT:USDT | +18.73% | $1,446,539.46 |
+| ASTEROID/USDT:USDT | +83.56% | $3,440,408.72 |
+| EVAA/USDT:USDT | +63.96% | $21,660,344.05 |
+| CLO/USDT:USDT | +37.86% | $2,104,545.63 |
+| GRASS/USDT:USDT | +20.94% | $1,541,919.56 |
+| JELLYJELLY/USDT:USDT | +19.96% | $1,457,827.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +2.60% | +2.58% |
-| JTO/USDT:USDT | below_1h_threshold | +2.40% | +2.38% |
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +2.33% | +2.30% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
-| UAI/USDT:USDT | below_1h_threshold | +1.35% | +1.32% |
+| JTO/USDT:USDT | below_1h_threshold | +3.39% | +3.27% |
+| JELLYJELLY/USDT:USDT | below_1h_threshold | +3.19% | +3.06% |
+| TAO/USDT:USDT | below_1h_threshold | +2.78% | +2.66% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.26% | +2.13% |
+| DASH/USDT:USDT | below_1h_threshold | +2.02% | +1.90% |
 
 ## 6. 次に見るべき不足
 
