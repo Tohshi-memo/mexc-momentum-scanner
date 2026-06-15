@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T17:45:45.273252+00:00
+- generated_at: 2026-06-15T17:52:19.386542+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6800**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T17:45:38.475007+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=66854.7
-- Funnel: target 772 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.4 >= 65=1
+- 更新: 2026-06-15T17:52:10.600368+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=66884.7
+- Funnel: target 772 → liquid 154 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +21.59% | $42,902,375.36 |
-| FOLKS/USDT:USDT | +7.11% | $1,588,359.99 |
-| SPCXSTOCK/USDT:USDT | +4.91% | $151,457,630.33 |
-| ASTEROID/USDT:USDT | +4.82% | $6,155,470.58 |
-| UAI/USDT:USDT | +4.52% | $4,316,863.44 |
+| EVAA/USDT:USDT | +22.34% | $43,373,329.52 |
+| FOLKS/USDT:USDT | +6.10% | $1,657,393.90 |
+| SPCXSTOCK/USDT:USDT | +6.07% | $154,758,445.08 |
+| ASTEROID/USDT:USDT | +4.92% | $6,178,896.10 |
+| UAI/USDT:USDT | +4.52% | $4,329,096.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.00% | +4.39% |
-| AKT/USDT:USDT | below_1h_threshold | +3.72% | +4.12% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.41% |
-| BABY/USDT:USDT | below_1h_threshold | +2.79% | +3.19% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +3.03% |
+| AKT/USDT:USDT | below_1h_threshold | +4.39% | +4.74% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.03% | +4.39% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.86% | +3.21% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +3.14% |
+| BABY/USDT:USDT | below_1h_threshold | +2.02% | +2.38% |
 
 ## 6. 次に見るべき不足
 
