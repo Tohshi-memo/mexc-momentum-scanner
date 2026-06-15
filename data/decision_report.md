@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-14T23:54:58.334600+00:00
+- generated_at: 2026-06-15T00:01:29.793942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6713**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-14T23:54:53.215736+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.52% price=65725.5
-- Funnel: target 770 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-15T00:01:25.758686+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65729.4
+- Funnel: target 770 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +47.09% | $5,624,036.30 |
-| EVAA/USDT:USDT | +34.01% | $15,568,720.58 |
-| RIF/USDT:USDT | +17.88% | $6,153,246.55 |
-| BABY/USDT:USDT | +15.43% | $2,223,835.93 |
-| USELESS/USDT:USDT | +14.79% | $1,012,072.65 |
+| OPG/USDT:USDT | +48.45% | $5,745,345.27 |
+| EVAA/USDT:USDT | +34.82% | $15,680,083.09 |
+| RIF/USDT:USDT | +16.30% | $5,479,728.71 |
+| BABY/USDT:USDT | +15.49% | $2,224,241.24 |
+| USELESS/USDT:USDT | +14.43% | $1,025,936.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ADA/USDT:USDT | below_1h_threshold | +4.52% | +4.00% |
-| RIF/USDT:USDT | below_1h_threshold | +4.47% | +3.95% |
-| AGI/USDT:USDT | below_1h_threshold | +3.64% | +3.12% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.41% | +2.89% |
-| H/USDT:USDT | below_1h_threshold | +3.26% | +2.74% |
+| OPG/USDT:USDT | below_1h_threshold | +4.40% | +4.37% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.82% | +1.78% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.77% | +1.74% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.61% | +1.58% |
+| IP/USDT:USDT | below_1h_threshold | +0.96% | +0.92% |
 
 ## 6. 次に見るべき不足
 
