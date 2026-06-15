@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T11:08:27.607571+00:00
+- generated_at: 2026-06-15T11:14:55.972412+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6773**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T11:08:24.223062+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=65910.8
-- Funnel: target 771 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-15T11:14:51.955150+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=65926.7
+- Funnel: target 771 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +87.06% | $4,671,981.08 |
-| EVAA/USDT:USDT | +86.21% | $28,795,216.28 |
-| CLO/USDT:USDT | +40.31% | $2,282,619.85 |
-| UAI/USDT:USDT | +30.94% | $2,567,711.55 |
-| PUFFER/USDT:USDT | +23.73% | $1,525,241.49 |
+| ASTEROID/USDT:USDT | +88.46% | $4,679,999.78 |
+| EVAA/USDT:USDT | +87.09% | $28,953,058.82 |
+| CLO/USDT:USDT | +37.24% | $2,294,742.91 |
+| UAI/USDT:USDT | +32.84% | $2,655,146.50 |
+| TRADOOR/USDT:USDT | +25.14% | $4,333,750.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.16% | +2.12% |
-| PUFFER/USDT:USDT | below_1h_threshold | +1.49% | +1.45% |
-| JTO/USDT:USDT | below_1h_threshold | +1.45% | +1.41% |
-| UAI/USDT:USDT | below_1h_threshold | +1.25% | +1.21% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.20% | +1.16% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +3.25% | +3.19% |
+| UAI/USDT:USDT | below_1h_threshold | +2.69% | +2.62% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.40% | +2.34% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.22% | +2.16% |
+| MEGA/USDT:USDT | below_1h_threshold | +1.99% | +1.93% |
 
 ## 6. 次に見るべき不足
 
