@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T19:42:02.995241+00:00
+- generated_at: 2026-06-15T19:48:27.462055+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6807**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T19:41:57.643862+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=66660.2
+- 更新: 2026-06-15T19:48:23.182446+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=66584.0
 - Funnel: target 772 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.3 >= 65=1
+- Strict後reject: 4h RSI 74.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +27.17% | $1,665,138.35 |
-| EVAA/USDT:USDT | +16.65% | $44,338,060.98 |
-| FOLKS/USDT:USDT | +10.63% | $2,050,729.87 |
-| XMR/USDT:USDT | +5.71% | $7,990,645.12 |
-| MRVLSTOCK/USDT:USDT | +5.44% | $14,712,576.67 |
+| ROAM/USDT:USDT | +25.87% | $1,685,836.99 |
+| EVAA/USDT:USDT | +18.33% | $44,565,095.41 |
+| FOLKS/USDT:USDT | +10.35% | $2,068,556.15 |
+| SPCXSTOCK/USDT:USDT | +7.54% | $198,544,219.55 |
+| MRVLSTOCK/USDT:USDT | +5.50% | $14,751,268.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +3.93% | +4.03% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.82% | +3.92% |
-| BSB/USDT:USDT | below_1h_threshold | +2.47% | +2.57% |
-| XMR/USDT:USDT | below_1h_threshold | +1.62% | +1.72% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.57% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.71% | +4.93% |
+| FOLKS/USDT:USDT | below_1h_threshold | +3.36% | +3.57% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.73% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.56% |
+| BSB/USDT:USDT | below_1h_threshold | +1.25% | +1.46% |
 
 ## 6. 次に見るべき不足
 
