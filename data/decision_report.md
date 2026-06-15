@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T20:06:59.937642+00:00
+- generated_at: 2026-06-15T20:13:42.899696+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6807**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T20:06:55.777063+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=66567.7
-- Funnel: target 772 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-15T20:13:38.634867+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=66539.2
+- Funnel: target 772 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +22.92% | $1,718,820.62 |
-| EVAA/USDT:USDT | +19.66% | $42,587,641.15 |
-| FOLKS/USDT:USDT | +10.69% | $2,114,769.79 |
-| SPCXSTOCK/USDT:USDT | +8.44% | $212,929,444.03 |
-| XMR/USDT:USDT | +6.96% | $8,300,249.91 |
+| ROAM/USDT:USDT | +24.83% | $1,734,877.96 |
+| EVAA/USDT:USDT | +18.85% | $42,819,587.64 |
+| FOLKS/USDT:USDT | +10.63% | $2,142,841.23 |
+| SPCXSTOCK/USDT:USDT | +8.49% | $215,354,986.27 |
+| XMR/USDT:USDT | +7.74% | $8,494,605.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.75% | +2.76% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.01% | +2.02% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.54% | +1.54% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.04% | +2.09% |
+| INJ/USDT:USDT | below_1h_threshold | +1.86% | +1.90% |
+| ROAM/USDT:USDT | below_1h_threshold | +1.75% | +1.80% |
+| BABY/USDT:USDT | below_1h_threshold | +1.54% | +1.59% |
+| WLD/USDT:USDT | below_1h_threshold | +1.25% | +1.30% |
 
 ## 6. 次に見るべき不足
 
