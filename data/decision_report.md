@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T05:11:51.859599+00:00
+- generated_at: 2026-06-15T05:18:18.101198+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6748**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T05:11:47.792609+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=65658.7
+- 更新: 2026-06-15T05:18:14.029245+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=65666.0
 - Funnel: target 770 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +108.56% | $2,739,340.03 |
-| EVAA/USDT:USDT | +78.58% | $19,661,229.17 |
-| CLO/USDT:USDT | +37.75% | $2,087,261.66 |
-| WLD/USDT:USDT | +19.13% | $105,667,380.74 |
-| UAI/USDT:USDT | +17.12% | $1,287,452.61 |
+| ASTEROID/USDT:USDT | +112.93% | $2,806,790.60 |
+| EVAA/USDT:USDT | +75.72% | $19,763,764.21 |
+| CLO/USDT:USDT | +38.25% | $2,089,489.56 |
+| WLD/USDT:USDT | +18.89% | $106,530,022.91 |
+| UAI/USDT:USDT | +17.15% | $1,288,064.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +1.40% | +1.33% |
-| UAI/USDT:USDT | below_1h_threshold | +1.19% | +1.12% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.92% | +0.85% |
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +0.91% | +0.84% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.29% | +2.21% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.67% | +1.58% |
+| ENA/USDT:USDT | below_1h_threshold | +1.39% | +1.30% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.11% | +1.03% |
+| UAI/USDT:USDT | below_1h_threshold | +1.10% | +1.02% |
 
 ## 6. 次に見るべき不足
 
