@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-15T16:17:57.771384+00:00
+- generated_at: 2026-06-15T16:24:29.871688+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6794**
+- closed shadow trades: **6795**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.25% / filled 20/20。**
-- 全期間 MARKET基準: n=6794, expectancy=-0.04%
+- 全期間 MARKET基準: n=6795, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=+0.25%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,9 +32,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +1.04% | **+0.67%** |
+| LIMIT_FIB1272_LONG | 5/20 | 25.0% | +1.71% | **+0.43%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.35% | **+0.35%** |
 | ASK_LONG | 20/20 | 100.0% | +0.29% | **+0.29%** |
-| LIMIT_FIB1272_LONG | 6/20 | 30.0% | +0.76% | **+0.23%** |
 | LIMIT_7PCT_LONG | 7/20 | 35.0% | -0.20% | **-0.07%** |
 
 ## 2. $100 Live Portfolio
@@ -46,48 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$178.16** / 初期 $100.00 (+78.16%)
-- 確定: 1667件 (Win 435 / Loss 517 / Flat 715) / skip 1688件
-- 成長率目線: 平均log +0.000346 / 幾何平均 +0.035% per trade / maxDD +7.25%
+- 残高: **$177.27** / 初期 $100.00 (+77.27%)
+- 確定: 1668件 (Win 435 / Loss 518 / Flat 715) / skip 1688件
+- 成長率目線: 平均log +0.000343 / 幾何平均 +0.034% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EVAA/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +1.00% 残高後 $178.16
+- 最新: BSB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $177.27
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$97.82** / 初期 $100.00 (-2.18%)
-- 確定: 154件 (Win 28 / Loss 29 / Flat 97) / skip 51件
+- 確定: 154件 (Win 28 / Loss 29 / Flat 97) / skip 52件
 - 成長率目線: 平均log -0.000143 / 幾何平均 -0.014% per trade / maxDD +2.82%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: CLO/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.35% 残高後 $97.82
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T16:17:53.189599+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=67151.1
+- 更新: 2026-06-15T16:24:24.425335+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=67131.6
 - Funnel: target 772 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 88.5 >= 65=1
+- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 78.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +15.04% | $12,575,377.36 |
-| EVAA/USDT:USDT | +6.19% | $40,222,978.56 |
-| SKYAI/USDT:USDT | +2.72% | $8,383,657.21 |
-| UAI/USDT:USDT | +2.59% | $4,138,348.03 |
-| ASTEROID/USDT:USDT | +2.41% | $6,005,687.91 |
+| EVAA/USDT:USDT | +9.44% | $40,532,552.95 |
+| BSB/USDT:USDT | +5.64% | $13,507,801.60 |
+| SKYAI/USDT:USDT | +3.39% | $8,456,613.92 |
+| UAI/USDT:USDT | +2.95% | $4,148,501.52 |
+| BEAT/USDT:USDT | +1.97% | $103,779,886.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.74% | +2.88% |
-| UAI/USDT:USDT | below_1h_threshold | +2.59% | +2.74% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.41% | +2.56% |
-| JELLYJELLY/USDT:USDT | below_1h_threshold | +1.83% | +1.97% |
-| CLO/USDT:USDT | below_1h_threshold | +1.41% | +1.56% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.39% | +3.56% |
+| UAI/USDT:USDT | below_1h_threshold | +3.01% | +3.18% |
+| XLM/USDT:USDT | below_1h_threshold | +1.93% | +2.11% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.81% | +1.99% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.81% | +1.98% |
 
 ## 6. 次に見るべき不足
 
