@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T06:03:29.755538+00:00
+- generated_at: 2026-06-15T06:10:00.626876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6751**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T06:03:24.654398+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=65830.0
+- 更新: 2026-06-15T06:09:56.638573+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65831.2
 - Funnel: target 770 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +101.57% | $3,213,145.59 |
-| EVAA/USDT:USDT | +61.34% | $20,800,148.10 |
-| CLO/USDT:USDT | +39.08% | $2,071,374.63 |
-| GRASS/USDT:USDT | +21.02% | $1,467,627.73 |
-| WLD/USDT:USDT | +18.12% | $108,787,138.60 |
+| ASTEROID/USDT:USDT | +94.05% | $3,284,874.56 |
+| EVAA/USDT:USDT | +51.93% | $21,026,767.08 |
+| CLO/USDT:USDT | +37.75% | $2,079,082.39 |
+| GRASS/USDT:USDT | +20.01% | $1,489,222.11 |
+| WLD/USDT:USDT | +17.82% | $109,282,717.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.31% | +1.31% |
-| BP/USDT:USDT | below_1h_threshold | +0.83% | +0.82% |
-| DASH/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
+| DASH/USDT:USDT | below_1h_threshold | +2.50% | +2.49% |
+| BP/USDT:USDT | below_1h_threshold | +2.17% | +2.16% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.06% | +1.06% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.04% | +1.03% |
 
 ## 6. 次に見るべき不足
 
