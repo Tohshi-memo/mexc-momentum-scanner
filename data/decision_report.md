@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T18:20:31.936524+00:00
+- generated_at: 2026-06-15T18:27:09.598877+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6800**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T18:20:27.858386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=66799.2
+- 更新: 2026-06-15T18:27:05.451968+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=66805.5
 - Funnel: target 772 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +20.51% | $42,933,080.22 |
-| ROAM/USDT:USDT | +11.35% | $1,362,303.22 |
-| ARMSTOCK/USDT:USDT | +5.27% | $6,116,491.26 |
-| SPCXSTOCK/USDT:USDT | +5.04% | $167,211,703.01 |
-| FOLKS/USDT:USDT | +4.53% | $1,696,059.02 |
+| EVAA/USDT:USDT | +20.36% | $43,242,599.71 |
+| ROAM/USDT:USDT | +12.87% | $1,400,896.83 |
+| ARMSTOCK/USDT:USDT | +5.41% | $6,129,158.95 |
+| SPCXSTOCK/USDT:USDT | +5.39% | $168,638,742.41 |
+| BEAT/USDT:USDT | +4.78% | $102,563,548.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETC/USDT:USDT | below_1h_threshold | +1.12% | +1.15% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.77% |
-| INJ/USDT:USDT | below_1h_threshold | +0.72% | +0.75% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.68% | +0.71% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.04% | +3.06% |
+| BTW/USDT:USDT | below_1h_threshold | +0.99% | +1.01% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.86% |
+| ETC/USDT:USDT | below_1h_threshold | +0.81% | +0.84% |
+| LIT/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
 
 ## 6. 次に見るべき不足
 
