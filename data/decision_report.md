@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-15T10:37:13.817935+00:00
+- generated_at: 2026-06-15T10:43:49.178165+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6772**
+- closed shadow trades: **6773**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6772, expectancy=-0.05%
+- 全期間 MARKET基準: n=6773, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=-1.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,46 +46,46 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$175.39** / 初期 $100.00 (+75.39%)
-- 確定: 1645件 (Win 429 / Loss 509 / Flat 707) / skip 1688件
-- 成長率目線: 平均log +0.000342 / 幾何平均 +0.034% per trade / maxDD +7.25%
+- 残高: **$174.51** / 初期 $100.00 (+74.51%)
+- 確定: 1646件 (Win 429 / Loss 510 / Flat 707) / skip 1688件
+- 成長率目線: 平均log +0.000338 / 幾何平均 +0.034% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ASTEROID/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $175.39
+- 最新: H/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $174.51
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$98.81** / 初期 $100.00 (-1.19%)
-- 確定: 139件 (Win 27 / Loss 24 / Flat 88) / skip 44件
-- 成長率目線: 平均log -0.000086 / 幾何平均 -0.009% per trade / maxDD +2.07%
-- 次の候補: `LIMIT_ATR_LONG` (selected_by_robust_growth_score) / robust_score -0.0165 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: ASTEROID/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.35% 残高後 $98.81
+- 残高: **$98.46** / 初期 $100.00 (-1.54%)
+- 確定: 140件 (Win 27 / Loss 25 / Flat 88) / skip 44件
+- 成長率目線: 平均log -0.000111 / 幾何平均 -0.011% per trade / maxDD +2.18%
+- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: H/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.35% 残高後 $98.46
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T10:37:09.712808+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=65685.7
-- Funnel: target 770 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-15T10:43:44.091713+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=65717.5
+- Funnel: target 771 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +88.55% | $27,696,084.32 |
-| ASTEROID/USDT:USDT | +80.41% | $4,668,458.26 |
-| CLO/USDT:USDT | +40.81% | $2,300,039.47 |
-| H/USDT:USDT | +33.77% | $142,427,597.82 |
-| UAI/USDT:USDT | +31.84% | $2,452,285.76 |
+| EVAA/USDT:USDT | +85.41% | $28,067,344.42 |
+| ASTEROID/USDT:USDT | +81.64% | $4,682,457.69 |
+| CLO/USDT:USDT | +40.36% | $2,311,285.53 |
+| UAI/USDT:USDT | +31.18% | $2,502,275.63 |
+| PUFFER/USDT:USDT | +24.92% | $1,464,328.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BABY/USDT:USDT | below_1h_threshold | +3.27% | +3.08% |
-| JTO/USDT:USDT | below_1h_threshold | +2.85% | +2.65% |
-| NIL/USDT:USDT | below_1h_threshold | +2.68% | +2.49% |
-| FHE/USDT:USDT | below_1h_threshold | +2.67% | +2.48% |
-| UAI/USDT:USDT | below_1h_threshold | +2.24% | +2.05% |
+| BABY/USDT:USDT | below_1h_threshold | +3.62% | +3.38% |
+| NIL/USDT:USDT | below_1h_threshold | +2.81% | +2.57% |
+| JTO/USDT:USDT | below_1h_threshold | +2.76% | +2.52% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.05% | +1.81% |
+| UAI/USDT:USDT | below_1h_threshold | +1.81% | +1.57% |
 
 ## 6. 次に見るべき不足
 
