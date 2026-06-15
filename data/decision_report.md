@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-15T15:30:48.638030+00:00
+- generated_at: 2026-06-15T15:37:44.708101+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6792**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-15T15:30:44.237451+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=66590.0
-- Funnel: target 772 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-15T15:37:40.553809+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=66719.8
+- Funnel: target 772 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +85.59% | $38,825,494.17 |
-| ASTEROID/USDT:USDT | +67.13% | $5,890,120.51 |
-| JTO/USDT:USDT | +42.75% | $5,464,448.57 |
-| CLO/USDT:USDT | +39.53% | $2,227,124.54 |
-| BSB/USDT:USDT | +36.02% | $10,810,338.08 |
+| EVAA/USDT:USDT | +80.66% | $39,012,691.65 |
+| ASTEROID/USDT:USDT | +66.78% | $5,897,992.25 |
+| JTO/USDT:USDT | +49.17% | $6,108,257.76 |
+| CLO/USDT:USDT | +39.19% | $2,233,274.83 |
+| BSB/USDT:USDT | +36.16% | $11,108,228.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEGA/USDT:USDT | below_1h_threshold | +4.34% | +4.28% |
-| FHE/USDT:USDT | below_1h_threshold | +1.90% | +1.85% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +1.73% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.54% | +1.49% |
-| CLO/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
+| JTO/USDT:USDT | below_1h_threshold | +4.89% | +4.64% |
+| XLM/USDT:USDT | below_1h_threshold | +4.11% | +3.86% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.50% | +2.24% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +1.28% |
+| XRP/USDT:USDT | below_1h_threshold | +1.18% | +0.93% |
 
 ## 6. 次に見るべき不足
 
