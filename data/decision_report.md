@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T02:38:08.433340+00:00
+- generated_at: 2026-06-16T02:44:33.719605+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6832**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$103.01** / 初期 $100.00 (+3.01%)
-- 確定トレード: 9件 (TP 5 / SL 4 / EXP 0)
-- 最新: ASTEROID/USDT:USDT SL_HIT PnL -4.00% 残高後 $103.01
+- 残高: **$102.50** / 初期 $100.00 (+2.50%)
+- 確定トレード: 10件 (TP 5 / SL 5 / EXP 0)
+- 最新: BEAT/USDT:USDT SL_HIT PnL -4.00% 残高後 $102.50
 - 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T02:38:03.371619+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=65856.0
+- 更新: 2026-06-16T02:44:29.378784+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.71% price=65841.8
 - Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- Strict後reject: 4h RSI 71.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +38.32% | $7,303,433.62 |
-| ROAM/USDT:USDT | +32.99% | $2,744,396.34 |
-| SPCXSTOCK/USDT:USDT | +22.47% | $416,732,948.67 |
-| PUFFER/USDT:USDT | +22.15% | $1,378,130.61 |
-| VELVET/USDT:USDT | +16.29% | $12,087,132.48 |
+| ASTEROID/USDT:USDT | +40.04% | $7,349,115.90 |
+| ROAM/USDT:USDT | +32.99% | $2,749,365.16 |
+| PUFFER/USDT:USDT | +22.25% | $1,384,123.79 |
+| SPCXSTOCK/USDT:USDT | +21.60% | $419,372,685.38 |
+| VELVET/USDT:USDT | +15.61% | $12,140,787.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.70% | +5.38% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.82% | +4.50% |
-| RIF/USDT:USDT | below_1h_threshold | +3.53% | +4.21% |
-| ROAM/USDT:USDT | below_1h_threshold | +2.81% | +3.49% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.05% | +1.73% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.62% | +5.33% |
+| RIF/USDT:USDT | below_1h_threshold | +4.01% | +4.71% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.54% | +4.25% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.64% | +3.35% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.16% | +1.87% |
 
 ## 6. 次に見るべき不足
 
