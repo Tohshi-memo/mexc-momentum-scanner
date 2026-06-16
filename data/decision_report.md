@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T01:03:54.372635+00:00
+- generated_at: 2026-06-16T01:11:09.218181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6822**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T01:03:48.178610+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=66269.5
-- Funnel: target 772 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-16T01:11:04.909534+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=66284.8
+- Funnel: target 772 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +26.31% | $2,669,099.46 |
-| SPCXSTOCK/USDT:USDT | +25.03% | $346,388,842.93 |
-| EVAA/USDT:USDT | +23.87% | $41,768,951.08 |
-| ASTEROID/USDT:USDT | +22.43% | $6,719,001.36 |
-| VELVET/USDT:USDT | +17.60% | $11,128,226.85 |
+| ROAM/USDT:USDT | +25.49% | $2,675,208.14 |
+| ASTEROID/USDT:USDT | +23.74% | $6,770,335.12 |
+| SPCXSTOCK/USDT:USDT | +22.57% | $357,091,676.54 |
+| EVAA/USDT:USDT | +18.95% | $41,912,388.58 |
+| FOLKS/USDT:USDT | +18.53% | $2,495,562.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +2.37% | +2.29% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.16% | +2.08% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.56% | +1.48% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.16% | +1.08% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.13% | +1.05% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.08% | +3.98% |
+| BTW/USDT:USDT | below_1h_threshold | +3.20% | +3.10% |
+| COAI/USDT:USDT | below_1h_threshold | +1.65% | +1.55% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.64% | +1.54% |
+| CRV/USDT:USDT | below_1h_threshold | +1.35% | +1.25% |
 
 ## 6. 次に見るべき不足
 
