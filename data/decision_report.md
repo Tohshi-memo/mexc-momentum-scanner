@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T05:23:58.005168+00:00
+- generated_at: 2026-06-16T05:30:56.098068+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6838**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T05:23:54.171859+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=66065.7
-- Funnel: target 777 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1, 4h RSI 77.2 >= 65=1
+- 更新: 2026-06-16T05:30:51.699773+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=66055.6
+- Funnel: target 777 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +34.71% | $3,076,820.02 |
-| ASTEROID/USDT:USDT | +27.26% | $5,891,577.04 |
-| BSB/USDT:USDT | +22.53% | $19,172,844.43 |
-| SPACE/USDT:USDT | +22.53% | $2,121,445.04 |
-| VELVET/USDT:USDT | +21.69% | $12,978,092.25 |
+| ROAM/USDT:USDT | +44.35% | $3,141,058.00 |
+| ASTEROID/USDT:USDT | +27.26% | $5,918,346.82 |
+| BSB/USDT:USDT | +23.99% | $19,409,809.79 |
+| SPACE/USDT:USDT | +23.12% | $2,154,660.88 |
+| SYN/USDT:USDT | +20.79% | $1,090,145.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPACE/USDT:USDT | below_1h_threshold | +4.70% | +4.31% |
-| SYN/USDT:USDT | below_1h_threshold | +2.54% | +2.15% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.88% | +1.49% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.87% | +1.48% |
-| HOME/USDT:USDT | below_1h_threshold | +1.63% | +1.25% |
+| SPACE/USDT:USDT | below_1h_threshold | +4.90% | +4.52% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.24% | +3.87% |
+| SPX/USDT:USDT | below_1h_threshold | +3.86% | +3.49% |
+| ROAM/USDT:USDT | below_1h_threshold | +3.41% | +3.04% |
+| SYN/USDT:USDT | below_1h_threshold | +2.95% | +2.58% |
 
 ## 6. 次に見るべき不足
 
