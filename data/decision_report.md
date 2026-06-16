@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T02:24:17.677630+00:00
+- generated_at: 2026-06-16T02:30:44.655951+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6831**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T02:24:13.313919+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=66027.1
-- Funnel: target 772 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.7 >= 65=1
+- 更新: 2026-06-16T02:30:40.041908+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.84% price=65750.4
+- Funnel: target 772 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 71.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +33.19% | $7,225,390.03 |
-| ROAM/USDT:USDT | +30.95% | $2,728,038.63 |
-| PUFFER/USDT:USDT | +26.10% | $1,351,779.51 |
-| SPCXSTOCK/USDT:USDT | +23.44% | $405,265,555.66 |
-| VELVET/USDT:USDT | +20.26% | $11,824,352.02 |
+| ROAM/USDT:USDT | +30.56% | $2,733,957.34 |
+| PUFFER/USDT:USDT | +30.27% | $1,360,849.23 |
+| ASTEROID/USDT:USDT | +28.37% | $7,254,132.73 |
+| SPCXSTOCK/USDT:USDT | +23.03% | $411,890,006.40 |
+| VELVET/USDT:USDT | +17.10% | $11,949,725.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.38% | +3.81% |
-| RIF/USDT:USDT | below_1h_threshold | +2.97% | +3.40% |
-| PUFFER/USDT:USDT | below_1h_threshold | +2.80% | +3.22% |
-| BSB/USDT:USDT | below_1h_threshold | +2.32% | +2.74% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.23% | +1.65% |
+| RIF/USDT:USDT | below_1h_threshold | +2.96% | +3.80% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.27% | +2.11% |
+| ROAM/USDT:USDT | below_1h_threshold | +0.92% | +1.77% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +1.55% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +1.10% |
 
 ## 6. 次に見るべき不足
 
