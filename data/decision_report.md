@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T17:28:23.947823+00:00
+- generated_at: 2026-06-16T17:35:13.246094+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6876**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T17:28:15.473132+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=65748.1
+- 更新: 2026-06-16T17:35:06.821223+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=65789.0
 - Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +13.38% | $23,024,069.01 |
-| STG/USDT:USDT | +10.00% | $3,343,906.60 |
-| BSB/USDT:USDT | +9.62% | $38,214,218.62 |
-| H/USDT:USDT | +6.86% | $62,680,894.00 |
-| ESPORTS/USDT:USDT | +6.36% | $1,573,572.12 |
+| VELVET/USDT:USDT | +15.55% | $23,281,167.36 |
+| STG/USDT:USDT | +9.92% | $3,403,855.76 |
+| BSB/USDT:USDT | +9.03% | $38,655,309.52 |
+| ESPORTS/USDT:USDT | +6.33% | $1,581,157.04 |
+| COAI/USDT:USDT | +6.12% | $2,503,416.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.65% | +4.62% |
-| MYX/USDT:USDT | below_1h_threshold | +3.01% | +2.99% |
-| COAI/USDT:USDT | below_1h_threshold | +2.79% | +2.76% |
-| WLD/USDT:USDT | below_1h_threshold | +2.64% | +2.62% |
-| BSB/USDT:USDT | below_1h_threshold | +1.68% | +1.66% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.57% | +4.48% |
+| COAI/USDT:USDT | below_1h_threshold | +4.39% | +4.30% |
+| WLD/USDT:USDT | below_1h_threshold | +4.19% | +4.10% |
+| MYX/USDT:USDT | below_1h_threshold | +3.26% | +3.17% |
+| XPL/USDT:USDT | below_1h_threshold | +2.89% | +2.80% |
 
 ## 6. 次に見るべき不足
 
