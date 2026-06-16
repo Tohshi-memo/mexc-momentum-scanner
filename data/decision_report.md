@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T12:24:03.333540+00:00
+- generated_at: 2026-06-16T12:31:35.124127+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6862**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T12:23:58.976520+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=66573.9
+- 更新: 2026-06-16T12:31:30.958609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=66584.6
 - Funnel: target 777 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 73.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +46.96% | $3,190,727.78 |
-| PORTAL/USDT:USDT | +39.72% | $2,941,669.68 |
-| BSB/USDT:USDT | +35.97% | $33,547,461.66 |
-| LAB/USDT:USDT | +31.54% | $13,152,537.45 |
-| ASTEROID/USDT:USDT | +24.34% | $4,357,196.45 |
+| BR/USDT:USDT | +48.11% | $3,317,222.95 |
+| BSB/USDT:USDT | +38.20% | $33,701,073.57 |
+| PORTAL/USDT:USDT | +38.17% | $2,984,140.47 |
+| LAB/USDT:USDT | +32.74% | $13,604,509.33 |
+| SPACE/USDT:USDT | +23.66% | $4,441,710.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +4.95% | +4.77% |
-| JTO/USDT:USDT | below_1h_threshold | +2.26% | +2.08% |
-| STG/USDT:USDT | below_1h_threshold | +2.25% | +2.07% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.98% | +1.81% |
-| SYN/USDT:USDT | below_1h_threshold | +1.69% | +1.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.11% | +2.92% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.03% | +2.83% |
+| JTO/USDT:USDT | below_1h_threshold | +3.01% | +2.81% |
+| STG/USDT:USDT | below_1h_threshold | +2.81% | +2.62% |
+| XLM/USDT:USDT | below_1h_threshold | +2.56% | +2.36% |
 
 ## 6. 次に見るべき不足
 
