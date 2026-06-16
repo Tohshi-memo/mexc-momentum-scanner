@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T05:12:01.084717+00:00
+- generated_at: 2026-06-16T05:18:40.182570+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6838**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T05:11:56.743392+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=65981.2
-- Funnel: target 777 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
+- 更新: 2026-06-16T05:18:35.858194+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=65985.2
+- Funnel: target 777 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +40.08% | $3,040,303.19 |
-| ASTEROID/USDT:USDT | +29.77% | $5,846,617.05 |
-| SPACE/USDT:USDT | +28.74% | $1,899,811.41 |
-| SYN/USDT:USDT | +22.07% | $1,071,718.58 |
-| SPCXSTOCK/USDT:USDT | +20.92% | $455,595,340.32 |
+| ROAM/USDT:USDT | +35.39% | $3,060,977.70 |
+| ASTEROID/USDT:USDT | +31.69% | $5,858,853.39 |
+| BSB/USDT:USDT | +22.34% | $18,988,659.03 |
+| SYN/USDT:USDT | +21.39% | $1,080,063.19 |
+| SPCXSTOCK/USDT:USDT | +20.74% | $457,085,054.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +4.47% | +4.21% |
-| SYN/USDT:USDT | below_1h_threshold | +3.74% | +3.48% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.53% | +3.27% |
-| BSB/USDT:USDT | below_1h_threshold | +2.85% | +2.59% |
-| HOME/USDT:USDT | below_1h_threshold | +2.13% | +1.87% |
+| ASTEROID/USDT:USDT | below_relative_strength | +5.06% | +4.79% |
+| SPX/USDT:USDT | below_1h_threshold | +4.58% | +4.31% |
+| SYN/USDT:USDT | below_1h_threshold | +3.22% | +2.95% |
+| SPACE/USDT:USDT | below_1h_threshold | +2.99% | +2.72% |
+| BABY/USDT:USDT | below_1h_threshold | +2.16% | +1.90% |
 
 ## 6. 次に見るべき不足
 
