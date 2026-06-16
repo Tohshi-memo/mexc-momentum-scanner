@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T14:23:10.535194+00:00
+- generated_at: 2026-06-16T14:29:39.123443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6868**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T14:23:05.124636+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=65701.1
-- Funnel: target 782 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- 更新: 2026-06-16T14:29:34.593197+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.61% price=65609.3
+- Funnel: target 782 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +50.22% | $4,321,945.52 |
-| BSB/USDT:USDT | +48.15% | $35,185,738.38 |
-| PORTAL/USDT:USDT | +33.27% | $3,695,612.49 |
-| LAB/USDT:USDT | +27.89% | $17,298,175.15 |
-| ASTEROID/USDT:USDT | +23.74% | $3,925,030.29 |
+| BR/USDT:USDT | +48.81% | $4,374,225.63 |
+| BSB/USDT:USDT | +45.01% | $35,437,283.23 |
+| PORTAL/USDT:USDT | +35.97% | $3,722,020.58 |
+| LAB/USDT:USDT | +27.33% | $17,442,374.67 |
+| ASTEROID/USDT:USDT | +24.74% | $3,929,860.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.87% | +5.34% |
-| BR/USDT:USDT | below_1h_threshold | +1.64% | +2.11% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.50% | +1.97% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.33% | +1.81% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.44% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.00% | +2.62% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.34% | +1.95% |
+| STG/USDT:USDT | below_1h_threshold | +1.09% | +1.70% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.85% | +1.47% |
+| RUNE/USDT:USDT | below_1h_threshold | +0.84% | +1.45% |
 
 ## 6. 次に見るべき不足
 
