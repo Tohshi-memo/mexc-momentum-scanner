@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T08:57:54.003188+00:00
+- generated_at: 2026-06-16T09:04:18.073222+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6853**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T08:57:48.396438+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.89% price=66933.9
-- Funnel: target 777 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1, 4h RSI 85.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-16T09:04:13.954246+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=66780.1
+- Funnel: target 777 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +76.68% | $4,612,129.91 |
-| BR/USDT:USDT | +44.95% | $1,199,574.90 |
-| VELVET/USDT:USDT | +38.33% | $17,127,488.23 |
-| BSB/USDT:USDT | +34.98% | $27,781,051.76 |
-| ASTEROID/USDT:USDT | +34.30% | $5,029,987.59 |
+| ROAM/USDT:USDT | +73.51% | $4,641,342.61 |
+| BR/USDT:USDT | +44.65% | $1,257,469.91 |
+| VELVET/USDT:USDT | +36.56% | $16,873,722.68 |
+| BSB/USDT:USDT | +35.59% | $27,878,368.72 |
+| ASTEROID/USDT:USDT | +33.50% | $4,723,777.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.40% | +3.51% |
-| LAB/USDT:USDT | below_1h_threshold | +3.60% | +2.71% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.57% | +2.68% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.56% | +2.67% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.28% | +2.39% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.74% | +1.85% |
+| BR/USDT:USDT | below_1h_threshold | +1.70% | +1.81% |
+| STG/USDT:USDT | below_1h_threshold | +1.34% | +1.45% |
+| BSB/USDT:USDT | below_1h_threshold | +1.19% | +1.30% |
+| NTAPSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.92% |
 
 ## 6. 次に見るべき不足
 
