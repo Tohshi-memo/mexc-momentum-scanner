@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T20:21:52.286701+00:00
+- generated_at: 2026-06-16T20:28:39.769208+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6884**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T20:21:47.129721+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=65789.9
+- 更新: 2026-06-16T20:28:35.606276+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=65660.0
 - Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +17.11% | $27,689,423.95 |
-| BLESS/USDT:USDT | +13.47% | $1,463,946.17 |
-| PLAY/USDT:USDT | +13.15% | $1,487,195.41 |
-| SENT/USDT:USDT | +10.86% | $1,112,827.08 |
-| ESPORTS/USDT:USDT | +8.47% | $1,648,805.29 |
+| VELVET/USDT:USDT | +17.13% | $27,861,903.69 |
+| BLESS/USDT:USDT | +13.45% | $1,513,318.90 |
+| PLAY/USDT:USDT | +13.34% | $1,506,547.54 |
+| ESPORTS/USDT:USDT | +11.43% | $1,671,499.79 |
+| SENT/USDT:USDT | +10.81% | $1,133,190.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +3.11% | +2.90% |
-| WLD/USDT:USDT | below_1h_threshold | +2.73% | +2.52% |
-| FLOKI/USDT:USDT | below_1h_threshold | +2.69% | +2.48% |
-| VVV/USDT:USDT | below_1h_threshold | +2.33% | +2.12% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.19% | +1.98% |
+| BSB/USDT:USDT | below_1h_threshold | +3.27% | +3.25% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.22% | +3.21% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.38% | +2.36% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.35% | +2.33% |
+| UAI/USDT:USDT | below_1h_threshold | +2.02% | +2.01% |
 
 ## 6. 次に見るべき不足
 
