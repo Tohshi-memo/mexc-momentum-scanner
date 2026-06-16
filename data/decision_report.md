@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T16:46:17.640595+00:00
+- generated_at: 2026-06-16T16:53:54.531647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6873**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T16:46:07.282586+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=65755.6
-- Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-16T16:53:42.312579+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=65709.6
+- Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +8.60% | $64,901,945.23 |
-| VELVET/USDT:USDT | +7.92% | $21,885,717.74 |
-| STG/USDT:USDT | +7.04% | $3,132,524.52 |
-| ESPORTS/USDT:USDT | +3.70% | $1,592,835.96 |
-| BSB/USDT:USDT | +3.57% | $38,949,508.86 |
+| VELVET/USDT:USDT | +7.71% | $22,070,183.78 |
+| STG/USDT:USDT | +7.29% | $3,153,086.37 |
+| ESPORTS/USDT:USDT | +5.16% | $1,604,928.80 |
+| BSB/USDT:USDT | +5.10% | $39,255,658.18 |
+| H/USDT:USDT | +4.38% | $65,168,828.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.83% | +3.96% |
-| BSB/USDT:USDT | below_1h_threshold | +3.55% | +3.69% |
-| BILL/USDT:USDT | below_1h_threshold | +3.31% | +3.44% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +3.29% | +3.42% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.81% | +2.94% |
+| H/USDT:USDT | below_1h_threshold | +4.77% | +4.97% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.53% |
+| BILL/USDT:USDT | below_1h_threshold | +3.18% | +3.38% |
+| BR/USDT:USDT | below_1h_threshold | +2.82% | +3.02% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.93% |
 
 ## 6. 次に見るべき不足
 
