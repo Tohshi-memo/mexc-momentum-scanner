@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T08:12:26.177891+00:00
+- generated_at: 2026-06-16T08:17:43.269756+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6849**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T08:12:21.184647+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=66425.1
-- Funnel: target 777 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-16T08:17:39.944269+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=66514.3
+- Funnel: target 777 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +61.09% | $4,143,107.55 |
-| SPACE/USDT:USDT | +32.11% | $3,896,528.37 |
-| VELVET/USDT:USDT | +31.45% | $16,351,432.14 |
-| BSB/USDT:USDT | +29.75% | $26,724,808.18 |
-| ASTEROID/USDT:USDT | +24.64% | $4,967,105.57 |
+| ROAM/USDT:USDT | +64.09% | $4,177,157.59 |
+| VELVET/USDT:USDT | +31.45% | $16,431,274.42 |
+| BSB/USDT:USDT | +30.99% | $26,818,635.42 |
+| SPACE/USDT:USDT | +30.31% | $3,904,739.08 |
+| ASTEROID/USDT:USDT | +24.94% | $4,975,126.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +2.61% | +2.48% |
-| LAB/USDT:USDT | below_1h_threshold | +1.98% | +1.86% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.36% |
-| COAI/USDT:USDT | below_1h_threshold | +1.46% | +1.34% |
-| AERO/USDT:USDT | below_1h_threshold | +1.38% | +1.26% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.61% | +2.35% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.18% | +1.92% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.61% |
+| ROAM/USDT:USDT | below_1h_threshold | +1.82% | +1.56% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.76% | +1.50% |
 
 ## 6. 次に見るべき不足
 
