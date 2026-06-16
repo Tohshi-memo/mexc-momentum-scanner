@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T14:37:10.317946+00:00
+- generated_at: 2026-06-16T14:43:59.154143+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6868**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T14:37:05.754143+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.67% price=65572.7
-- Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.1 >= 65=1, 4h RSI 70.5 >= 65=1
+- 更新: 2026-06-16T14:43:54.806751+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.59% price=65625.0
+- Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +48.83% | $4,450,092.44 |
-| BSB/USDT:USDT | +44.07% | $35,938,780.64 |
-| PORTAL/USDT:USDT | +42.74% | $3,816,788.20 |
-| LAB/USDT:USDT | +27.38% | $17,592,735.61 |
-| ASTEROID/USDT:USDT | +22.63% | $3,935,055.99 |
+| BR/USDT:USDT | +49.41% | $4,485,173.53 |
+| BSB/USDT:USDT | +48.48% | $36,321,957.69 |
+| PORTAL/USDT:USDT | +37.27% | $3,911,584.38 |
+| LAB/USDT:USDT | +27.77% | $17,655,411.65 |
+| SKYAI/USDT:USDT | +22.59% | $8,834,525.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.19% | +4.86% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.16% | +1.83% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +1.38% |
-| BR/USDT:USDT | below_1h_threshold | +0.63% | +1.30% |
-| SPACE/USDT:USDT | below_1h_threshold | +0.57% | +1.23% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +2.82% | +3.41% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.67% | +3.26% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.86% | +2.45% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.95% |
+| BSB/USDT:USDT | below_1h_threshold | +1.24% | +1.83% |
 
 ## 6. 次に見るべき不足
 
