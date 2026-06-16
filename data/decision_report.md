@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T19:46:07.987363+00:00
+- generated_at: 2026-06-16T19:53:31.749817+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6882**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T19:46:01.483510+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=65653.2
+- 更新: 2026-06-16T19:53:24.882481+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.40% price=65556.4
 - Funnel: target 782 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +14.21% | $26,884,186.61 |
-| H/USDT:USDT | +13.20% | $59,687,731.67 |
-| BLESS/USDT:USDT | +11.06% | $1,153,226.82 |
-| STG/USDT:USDT | +9.63% | $3,532,719.53 |
-| PLAY/USDT:USDT | +9.43% | $1,347,180.37 |
+| VELVET/USDT:USDT | +15.37% | $27,084,491.01 |
+| H/USDT:USDT | +11.89% | $59,874,961.99 |
+| BLESS/USDT:USDT | +11.78% | $1,185,874.50 |
+| PLAY/USDT:USDT | +11.20% | $1,360,551.43 |
+| STG/USDT:USDT | +8.78% | $3,575,170.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.69% | +3.95% |
-| STG/USDT:USDT | below_1h_threshold | +3.36% | +3.62% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.51% | +2.77% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.90% | +2.16% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.64% | +1.90% |
+| BILL/USDT:USDT | below_1h_threshold | +3.22% | +3.62% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.03% | +3.43% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.93% | +3.33% |
+| STG/USDT:USDT | below_1h_threshold | +2.56% | +2.96% |
+| BR/USDT:USDT | below_1h_threshold | +1.51% | +1.92% |
 
 ## 6. 次に見るべき不足
 
