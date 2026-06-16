@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-16T06:32:05.591501+00:00
+- generated_at: 2026-06-16T06:38:41.069706+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6845**
+- closed shadow trades: **6846**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6845, expectancy=-0.05%
+- 全期間 MARKET基準: n=6846, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.55%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | LIMIT_FIB1272_LONG | 7/20 | 35.0% | +3.00% | **+1.05%** |
 | LIMIT_5PCT_LONG | 7/20 | 35.0% | +2.98% | **+1.04%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.98% | **+0.98%** |
-| ASK_LONG | 20/20 | 100.0% | +0.82% | **+0.82%** |
+| ASK_LONG | 20/20 | 100.0% | +0.81% | **+0.81%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,23 +47,23 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$184.26** / 初期 $100.00 (+84.26%)
-- 確定: 1718件 (Win 448 / Loss 535 / Flat 735) / skip 1688件
+- 確定: 1719件 (Win 448 / Loss 535 / Flat 736) / skip 1688件
 - 成長率目線: 平均log +0.000356 / 幾何平均 +0.036% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $184.26
+- 最新: VELVET/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $184.26
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$97.60** / 初期 $100.00 (-2.40%)
-- 確定: 156件 (Win 28 / Loss 30 / Flat 98) / skip 100件
+- 確定: 156件 (Win 28 / Loss 30 / Flat 98) / skip 101件
 - 成長率目線: 平均log -0.000155 / 幾何平均 -0.016% per trade / maxDD +3.03%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0612 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $97.60
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T06:32:00.005294+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=66306.8
+- 更新: 2026-06-16T06:38:35.839561+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=66464.8
 - Funnel: target 777 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +65.32% | $3,646,124.75 |
-| VELVET/USDT:USDT | +35.51% | $13,362,084.89 |
-| BSB/USDT:USDT | +32.92% | $21,849,470.79 |
-| SPACE/USDT:USDT | +32.81% | $2,562,270.80 |
-| ASTEROID/USDT:USDT | +26.76% | $5,427,745.92 |
+| ROAM/USDT:USDT | +61.79% | $3,692,035.94 |
+| VELVET/USDT:USDT | +40.81% | $13,704,696.75 |
+| BSB/USDT:USDT | +35.04% | $22,111,984.34 |
+| SPACE/USDT:USDT | +33.10% | $2,586,179.48 |
+| ASTEROID/USDT:USDT | +26.76% | $5,434,512.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.08% | +3.66% |
-| SPACE/USDT:USDT | below_1h_threshold | +4.04% | +3.63% |
-| ROAM/USDT:USDT | below_1h_threshold | +3.74% | +3.32% |
-| FOLKS/USDT:USDT | below_1h_threshold | +3.03% | +2.61% |
-| BSB/USDT:USDT | below_1h_threshold | +2.10% | +1.68% |
+| SPACE/USDT:USDT | below_1h_threshold | +4.43% | +3.78% |
+| RIF/USDT:USDT | below_1h_threshold | +4.08% | +3.42% |
+| BSB/USDT:USDT | below_1h_threshold | +3.77% | +3.11% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.64% | +2.98% |
+| WLD/USDT:USDT | below_1h_threshold | +2.34% | +1.69% |
 
 ## 6. 次に見るべき不足
 
