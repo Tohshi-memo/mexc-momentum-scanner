@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T02:44:33.719605+00:00
+- generated_at: 2026-06-16T02:50:59.329231+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6832**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T02:44:29.378784+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.71% price=65841.8
+- 更新: 2026-06-16T02:50:54.969548+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.73% price=65827.4
 - Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.0 >= 65=1
+- Strict後reject: 4h RSI 72.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +40.04% | $7,349,115.90 |
-| ROAM/USDT:USDT | +32.99% | $2,749,365.16 |
-| PUFFER/USDT:USDT | +22.25% | $1,384,123.79 |
-| SPCXSTOCK/USDT:USDT | +21.60% | $419,372,685.38 |
-| VELVET/USDT:USDT | +15.61% | $12,140,787.63 |
+| ASTEROID/USDT:USDT | +39.03% | $7,374,218.24 |
+| ROAM/USDT:USDT | +32.41% | $2,756,532.05 |
+| PUFFER/USDT:USDT | +20.35% | $1,392,977.16 |
+| SPCXSTOCK/USDT:USDT | +20.32% | $422,909,356.11 |
+| SPACE/USDT:USDT | +15.01% | $1,441,912.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.62% | +5.33% |
-| RIF/USDT:USDT | below_1h_threshold | +4.01% | +4.71% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.54% | +4.25% |
-| ROAM/USDT:USDT | below_1h_threshold | +2.64% | +3.35% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.16% | +1.87% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.70% | +5.42% |
+| RIF/USDT:USDT | below_1h_threshold | +4.66% | +5.39% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.78% | +4.51% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.44% | +3.16% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.36% | +3.09% |
 
 ## 6. 次に見るべき不足
 
