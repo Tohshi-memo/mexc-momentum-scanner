@@ -1,40 +1,40 @@
 # Decision Report
 
-- generated_at: 2026-06-16T00:24:56.269187+00:00
+- generated_at: 2026-06-16T00:31:33.307564+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6818**
+- closed shadow trades: **6819**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6818, expectancy=-0.04%
-- 直近20件 MARKET基準: n=20, expectancy=+0.19%
+- 全期間 MARKET基準: n=6819, expectancy=-0.04%
+- 直近20件 MARKET基準: n=20, expectancy=-0.29%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.19% | **+0.19%** |
+| MARKET | 20/20 | 100.0% | -0.29% | **-0.29%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR | 9/20 | 45.0% | +3.05% | **+1.37%** |
-| LIMIT_5PCT | 7/20 | 35.0% | +0.95% | **+0.33%** |
+| LIMIT_ATR | 9/20 | 45.0% | +2.25% | **+1.01%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +0.95% | **+0.38%** |
 | LIMIT_FIB1272 | 4/20 | 20.0% | +1.29% | **+0.26%** |
-| ASK | 20/20 | 100.0% | +0.26% | **+0.26%** |
-| MARKET | 20/20 | 100.0% | +0.19% | **+0.19%** |
+| LIMIT_BB3S | 3/19 | 15.8% | +0.81% | **+0.13%** |
+| LIMIT_4PCT | 13/20 | 65.0% | +0.00% | **+0.00%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 18/20 | 90.0% | +1.87% | **+1.68%** |
-| LIMIT_3PCT_LONG | 15/20 | 75.0% | +2.11% | **+1.58%** |
-| LIMIT_4PCT_LONG | 13/20 | 65.0% | +1.97% | **+1.28%** |
-| LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.47% | **+0.45%** |
+| LIMIT_2PCT_LONG | 17/20 | 85.0% | +2.22% | **+1.88%** |
+| LIMIT_3PCT_LONG | 14/20 | 70.0% | +2.45% | **+1.72%** |
+| LIMIT_4PCT_LONG | 12/20 | 60.0% | +2.28% | **+1.37%** |
+| LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.95% | **+0.90%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.97% | **+0.30%** |
 
 ## 2. $100 Live Portfolio
@@ -47,45 +47,46 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$182.91** / 初期 $100.00 (+82.91%)
-- 確定: 1691件 (Win 444 / Loss 528 / Flat 719) / skip 1688件
+- 確定: 1692件 (Win 444 / Loss 528 / Flat 720) / skip 1688件
 - 成長率目線: 平均log +0.000357 / 幾何平均 +0.036% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.77% 残高後 $182.91
+- 最新: EVAA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $182.91
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$97.60** / 初期 $100.00 (-2.40%)
-- 確定: 155件 (Win 28 / Loss 30 / Flat 97) / skip 74件
+- 確定: 155件 (Win 28 / Loss 30 / Flat 97) / skip 75件
 - 成長率目線: 平均log -0.000156 / 幾何平均 -0.016% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MEGA/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account -0.22% 残高後 $97.60
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T00:24:52.160589+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=66252.3
-- Funnel: target 772 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-16T00:31:25.920255+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=66244.3
+- Funnel: target 772 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +26.93% | $41,182,220.42 |
-| ROAM/USDT:USDT | +24.12% | $2,650,879.57 |
-| VELVET/USDT:USDT | +18.28% | $10,717,184.19 |
-| SPCXSTOCK/USDT:USDT | +16.95% | $294,805,123.28 |
-| HOME/USDT:USDT | +15.28% | $1,297,692.31 |
+| EVAA/USDT:USDT | +27.94% | $41,517,583.77 |
+| ROAM/USDT:USDT | +23.87% | $2,655,821.74 |
+| VELVET/USDT:USDT | +23.42% | $10,906,072.78 |
+| SPCXSTOCK/USDT:USDT | +17.70% | $304,527,294.49 |
+| HOME/USDT:USDT | +15.20% | $1,300,444.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.95% | +5.00% |
-| COAI/USDT:USDT | below_1h_threshold | +4.17% | +4.23% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.21% | +3.26% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.16% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.08% | +3.13% |
+| COAI/USDT:USDT | below_1h_threshold | +4.11% | +4.17% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.82% | +3.89% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.32% | +3.38% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.92% | +2.98% |
+| BSB/USDT:USDT | below_1h_threshold | +2.76% | +2.82% |
 
 ## 6. 次に見るべき不足
 
