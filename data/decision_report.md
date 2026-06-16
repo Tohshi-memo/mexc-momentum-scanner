@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T01:30:58.042748+00:00
+- generated_at: 2026-06-16T01:37:30.720886+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6826**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T01:30:50.141277+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=66335.1
-- Funnel: target 772 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 66.7 >= 65=1
+- 更新: 2026-06-16T01:37:25.990588+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=66332.0
+- Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 66.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +30.18% | $6,932,573.05 |
-| PUFFER/USDT:USDT | +27.16% | $1,202,185.74 |
-| ROAM/USDT:USDT | +24.41% | $2,688,251.33 |
-| SPCXSTOCK/USDT:USDT | +21.28% | $377,730,508.09 |
-| FOLKS/USDT:USDT | +19.87% | $2,620,944.05 |
+| PUFFER/USDT:USDT | +29.48% | $1,241,309.45 |
+| ASTEROID/USDT:USDT | +27.56% | $6,951,472.20 |
+| ROAM/USDT:USDT | +25.72% | $2,691,916.40 |
+| SPCXSTOCK/USDT:USDT | +21.64% | $381,524,882.86 |
+| FOLKS/USDT:USDT | +19.26% | $2,644,380.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.53% | +2.35% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.00% | +1.83% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.92% | +1.74% |
-| BSB/USDT:USDT | below_1h_threshold | +1.78% | +1.60% |
-| BTW/USDT:USDT | below_1h_threshold | +1.16% | +0.99% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.67% | +4.50% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.60% | +2.42% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.55% | +2.38% |
+| COAI/USDT:USDT | below_1h_threshold | +2.17% | +2.00% |
+| BSB/USDT:USDT | below_1h_threshold | +1.99% | +1.82% |
 
 ## 6. 次に見るべき不足
 
