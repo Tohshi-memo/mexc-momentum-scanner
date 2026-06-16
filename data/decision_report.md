@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T04:05:56.311463+00:00
+- generated_at: 2026-06-16T04:12:40.895686+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6836**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T04:05:52.118784+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=66248.6
+- 更新: 2026-06-16T04:12:36.765853+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=66172.2
 - Funnel: target 772 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +39.82% | $2,858,099.18 |
-| ASTEROID/USDT:USDT | +23.64% | $6,367,232.08 |
-| SPACE/USDT:USDT | +20.07% | $1,589,872.72 |
-| SPCXSTOCK/USDT:USDT | +19.78% | $441,156,695.71 |
-| PUFFER/USDT:USDT | +18.82% | $1,438,978.08 |
+| ROAM/USDT:USDT | +41.92% | $2,888,437.45 |
+| ASTEROID/USDT:USDT | +25.55% | $6,386,570.54 |
+| SPACE/USDT:USDT | +20.99% | $1,600,501.58 |
+| SPCXSTOCK/USDT:USDT | +20.62% | $442,856,642.61 |
+| PUFFER/USDT:USDT | +18.35% | $1,444,254.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +1.55% | +1.36% |
-| AERO/USDT:USDT | below_1h_threshold | +1.44% | +1.25% |
-| SPACE/USDT:USDT | below_1h_threshold | +1.18% | +0.99% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.17% | +0.99% |
-| RIF/USDT:USDT | below_1h_threshold | +0.89% | +0.70% |
+| SPACE/USDT:USDT | below_1h_threshold | +1.95% | +1.88% |
+| RIF/USDT:USDT | below_1h_threshold | +1.61% | +1.54% |
+| CRV/USDT:USDT | below_1h_threshold | +1.17% | +1.10% |
+| BABY/USDT:USDT | below_1h_threshold | +1.10% | +1.03% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.00% | +0.93% |
 
 ## 6. 次に見るべき不足
 
