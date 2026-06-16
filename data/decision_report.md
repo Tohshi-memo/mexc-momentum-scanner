@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T18:09:58.094969+00:00
+- generated_at: 2026-06-16T18:15:33.666005+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6877**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T18:09:53.934577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=66063.5
+- 更新: 2026-06-16T18:15:30.231607+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=66078.4
 - Funnel: target 782 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +15.63% | $24,637,077.14 |
-| TRIA/USDT:USDT | +8.98% | $1,080,033.71 |
-| H/USDT:USDT | +8.47% | $60,404,131.60 |
-| STG/USDT:USDT | +7.04% | $3,472,389.29 |
-| COAI/USDT:USDT | +6.27% | $2,457,967.19 |
+| VELVET/USDT:USDT | +13.69% | $24,828,860.37 |
+| H/USDT:USDT | +10.13% | $60,593,072.07 |
+| STG/USDT:USDT | +6.72% | $3,474,726.28 |
+| UNI/USDT:USDT | +6.58% | $34,725,706.22 |
+| ESPORTS/USDT:USDT | +6.31% | $1,564,404.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +1.62% | +1.44% |
-| JTO/USDT:USDT | below_1h_threshold | +1.47% | +1.29% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.37% | +1.19% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.23% | +1.05% |
-| APT/USDT:USDT | below_1h_threshold | +1.03% | +0.85% |
+| RIF/USDT:USDT | below_1h_threshold | +2.59% | +2.39% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.92% | +1.72% |
+| VVV/USDT:USDT | below_1h_threshold | +1.71% | +1.51% |
+| JTO/USDT:USDT | below_1h_threshold | +1.52% | +1.32% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.49% | +1.29% |
 
 ## 6. 次に見るべき不足
 
