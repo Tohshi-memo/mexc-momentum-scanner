@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T16:32:16.805135+00:00
+- generated_at: 2026-06-16T16:37:36.290974+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6873**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T16:32:07.625936+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=65698.9
-- Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-16T16:37:28.413443+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=65717.8
+- Funnel: target 782 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +7.65% | $3,054,197.12 |
-| BSB/USDT:USDT | +4.97% | $38,200,784.58 |
-| H/USDT:USDT | +4.72% | $64,325,262.54 |
-| PLAY/USDT:USDT | +3.62% | $1,051,416.94 |
-| WDCSTOCK/USDT:USDT | +3.28% | $1,062,755.09 |
+| STG/USDT:USDT | +7.65% | $3,098,407.80 |
+| BSB/USDT:USDT | +6.03% | $38,488,747.38 |
+| H/USDT:USDT | +5.27% | $64,458,162.38 |
+| VELVET/USDT:USDT | +4.73% | $21,637,803.03 |
+| WDCSTOCK/USDT:USDT | +3.15% | $1,078,781.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.87% | +5.09% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.63% | +3.85% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +3.28% | +3.50% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.05% | +3.27% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.22% | +2.44% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.58% | +4.77% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +3.04% | +3.23% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.97% | +3.15% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.74% | +2.93% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.71% | +2.89% |
 
 ## 6. 次に見るべき不足
 
