@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T13:36:37.818943+00:00
+- generated_at: 2026-06-16T13:43:21.787901+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6866**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T13:36:34.146340+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=65940.9
+- 更新: 2026-06-16T13:43:17.378617+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=66093.5
 - Funnel: target 777 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.4 >= 65=1
+- Strict後reject: 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +47.43% | $3,918,631.49 |
-| BSB/USDT:USDT | +43.27% | $35,875,087.68 |
-| PORTAL/USDT:USDT | +34.01% | $3,498,551.38 |
-| LAB/USDT:USDT | +27.15% | $15,887,461.10 |
-| SPCXSTOCK/USDT:USDT | +19.30% | $619,441,575.80 |
+| BR/USDT:USDT | +48.42% | $3,980,428.40 |
+| BSB/USDT:USDT | +44.65% | $36,053,272.63 |
+| PORTAL/USDT:USDT | +33.36% | $3,526,880.13 |
+| LAB/USDT:USDT | +26.19% | $16,117,025.31 |
+| SPCXSTOCK/USDT:USDT | +20.11% | $625,938,588.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.73% | +4.40% |
-| BSB/USDT:USDT | below_1h_threshold | +2.79% | +3.46% |
-| STG/USDT:USDT | below_1h_threshold | +2.74% | +3.42% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +3.25% |
-| JTO/USDT:USDT | below_1h_threshold | +2.04% | +2.72% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.53% | +4.98% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.24% | +4.69% |
+| BSB/USDT:USDT | below_1h_threshold | +3.77% | +4.22% |
+| STG/USDT:USDT | below_1h_threshold | +2.25% | +2.70% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.83% | +2.28% |
 
 ## 6. 次に見るべき不足
 
