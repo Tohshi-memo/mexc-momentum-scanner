@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T00:38:01.942044+00:00
+- generated_at: 2026-06-16T00:44:23.815910+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6819**
 
@@ -62,31 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T00:37:55.280960+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=66333.0
-- Funnel: target 772 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-16T00:44:19.490271+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=66387.2
+- Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +28.02% | $41,744,194.80 |
-| ROAM/USDT:USDT | +25.00% | $2,659,313.99 |
-| VELVET/USDT:USDT | +21.07% | $11,038,272.13 |
-| SPCXSTOCK/USDT:USDT | +17.70% | $309,424,675.01 |
-| HOME/USDT:USDT | +15.47% | $1,319,441.96 |
+| EVAA/USDT:USDT | +26.24% | $41,849,248.69 |
+| ROAM/USDT:USDT | +23.07% | $2,661,998.32 |
+| VELVET/USDT:USDT | +20.45% | $11,117,345.12 |
+| SPCXSTOCK/USDT:USDT | +18.80% | $314,649,451.87 |
+| HOME/USDT:USDT | +16.23% | $1,342,593.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.82% | +3.75% |
-| COAI/USDT:USDT | below_1h_threshold | +3.46% | +3.39% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.41% | +3.34% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.37% | +3.29% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.23% | +3.16% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.91% | +4.76% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.74% | +4.58% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.21% | +3.06% |
+| UNI/USDT:USDT | below_1h_threshold | +3.20% | +3.05% |
+| PUFFER/USDT:USDT | below_1h_threshold | +3.13% | +2.98% |
 
 ## 6. 次に見るべき不足
 
