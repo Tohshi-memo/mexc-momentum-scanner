@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T10:31:08.059415+00:00
+- generated_at: 2026-06-16T10:37:51.798826+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6856**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T10:31:03.415139+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=66545.2
-- Funnel: target 777 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.3 >= 65=1, 4h RSI 72.4 >= 65=1
+- 更新: 2026-06-16T10:37:47.485825+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=66607.4
+- Funnel: target 777 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +46.42% | $1,895,150.83 |
-| ROAM/USDT:USDT | +35.44% | $5,766,851.53 |
-| BSB/USDT:USDT | +34.18% | $31,233,802.07 |
-| ASTEROID/USDT:USDT | +32.29% | $4,602,831.68 |
-| SPACE/USDT:USDT | +29.65% | $4,253,574.20 |
+| BR/USDT:USDT | +46.01% | $1,955,880.44 |
+| BSB/USDT:USDT | +36.66% | $31,391,859.35 |
+| ROAM/USDT:USDT | +33.43% | $5,791,146.18 |
+| ASTEROID/USDT:USDT | +31.79% | $4,606,315.11 |
+| SPACE/USDT:USDT | +29.45% | $4,256,745.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +2.24% | +2.14% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.92% | +1.82% |
-| INJ/USDT:USDT | below_1h_threshold | +1.61% | +1.51% |
-| BR/USDT:USDT | below_1h_threshold | +1.49% | +1.39% |
-| KAS/USDT:USDT | below_1h_threshold | +1.41% | +1.31% |
+| UNI/USDT:USDT | below_1h_threshold | +3.60% | +3.41% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.79% | +2.60% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.54% | +2.35% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.36% | +2.16% |
+| INJ/USDT:USDT | below_1h_threshold | +2.25% | +2.06% |
 
 ## 6. 次に見るべき不足
 
