@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-16T02:50:59.329231+00:00
+- generated_at: 2026-06-16T02:58:20.771585+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6832**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-16T02:50:54.969548+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.73% price=65827.4
-- Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1
+- 更新: 2026-06-16T02:58:16.336999+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.88% price=65724.6
+- Funnel: target 772 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 72.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +39.03% | $7,374,218.24 |
-| ROAM/USDT:USDT | +32.41% | $2,756,532.05 |
-| PUFFER/USDT:USDT | +20.35% | $1,392,977.16 |
-| SPCXSTOCK/USDT:USDT | +20.32% | $422,909,356.11 |
-| SPACE/USDT:USDT | +15.01% | $1,441,912.63 |
+| ASTEROID/USDT:USDT | +50.40% | $7,466,209.56 |
+| ROAM/USDT:USDT | +33.48% | $2,763,645.01 |
+| SPCXSTOCK/USDT:USDT | +21.08% | $426,922,482.17 |
+| PUFFER/USDT:USDT | +20.30% | $1,403,908.52 |
+| SPACE/USDT:USDT | +14.95% | $1,445,523.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.70% | +5.42% |
-| RIF/USDT:USDT | below_1h_threshold | +4.66% | +5.39% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.78% | +4.51% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.44% | +3.16% |
-| ROAM/USDT:USDT | below_1h_threshold | +2.36% | +3.09% |
+| RIF/USDT:USDT | below_1h_threshold | +3.67% | +4.56% |
+| ROAM/USDT:USDT | below_1h_threshold | +3.19% | +4.07% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.12% | +3.00% |
+| XMR/USDT:USDT | below_1h_threshold | +0.61% | +1.49% |
+| SIREN/USDT:USDT | below_1h_threshold | +0.54% | +1.42% |
 
 ## 6. 次に見るべき不足
 
