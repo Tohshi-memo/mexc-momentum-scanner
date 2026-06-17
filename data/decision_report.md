@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T00:06:37.980272+00:00
+- generated_at: 2026-06-17T00:13:07.642335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6889**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T00:06:33.768411+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=65672.9
+- 更新: 2026-06-17T00:13:03.454997+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=65744.7
 - Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +24.24% | $3,780,866.41 |
-| SQD/USDT:USDT | +17.44% | $1,066,950.04 |
-| VELVET/USDT:USDT | +17.13% | $30,199,485.49 |
-| H/USDT:USDT | +12.75% | $55,311,002.63 |
-| UAI/USDT:USDT | +10.10% | $1,787,182.33 |
+| BLESS/USDT:USDT | +23.71% | $3,905,727.07 |
+| SQD/USDT:USDT | +17.87% | $1,083,171.38 |
+| VELVET/USDT:USDT | +16.80% | $30,245,168.23 |
+| H/USDT:USDT | +13.66% | $55,413,577.55 |
+| UNI/USDT:USDT | +9.86% | $40,395,769.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.07% | +2.03% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.65% |
-| SQD/USDT:USDT | below_1h_threshold | +1.56% | +1.51% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.03% | +0.99% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.98% | +0.94% |
+| BSB/USDT:USDT | below_1h_threshold | +2.61% | +2.45% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +1.97% |
+| JUP/USDT:USDT | below_1h_threshold | +2.07% | +1.92% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.04% | +1.89% |
+| SQD/USDT:USDT | below_1h_threshold | +2.03% | +1.88% |
 
 ## 6. 次に見るべき不足
 
