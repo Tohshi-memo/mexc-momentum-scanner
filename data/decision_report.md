@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T21:17:37.165420+00:00
+- generated_at: 2026-06-17T21:25:08.320687+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6968**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T21:17:33.007365+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=64270.0
+- 更新: 2026-06-17T21:25:04.120510+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64332.2
 - Funnel: target 790 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +77.25% | $1,148,427.09 |
-| SYN/USDT:USDT | +57.42% | $2,922,451.82 |
-| RE/USDT:USDT | +15.13% | $1,726,715.92 |
-| TAC/USDT:USDT | +11.27% | $2,491,226.68 |
-| MITO/USDT:USDT | +8.44% | $1,515,197.17 |
+| O/USDT:USDT | +75.41% | $1,154,775.43 |
+| SYN/USDT:USDT | +57.15% | $3,001,131.38 |
+| RE/USDT:USDT | +13.63% | $1,730,871.69 |
+| TAC/USDT:USDT | +11.46% | $2,511,306.97 |
+| MITO/USDT:USDT | +9.00% | $1,527,698.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +3.58% | +3.79% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.91% | +2.12% |
-| UP/USDT:USDT | below_1h_threshold | +1.73% | +1.94% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.98% | +1.19% |
-| STG/USDT:USDT | below_1h_threshold | +0.97% | +1.18% |
+| TAC/USDT:USDT | below_1h_threshold | +3.78% | +3.90% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.86% | +2.97% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.60% | +2.71% |
+| UP/USDT:USDT | below_1h_threshold | +1.57% | +1.68% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.18% | +1.29% |
 
 ## 6. 次に見るべき不足
 
