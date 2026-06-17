@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T11:10:47.479567+00:00
+- generated_at: 2026-06-17T11:17:15.424110+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6925**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T11:10:43.265993+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64657.5
+- 更新: 2026-06-17T11:17:11.249909+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=64582.2
 - Funnel: target 786 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +57.54% | $7,424,150.55 |
-| HIGH/USDT:USDT | +37.52% | $3,103,622.79 |
-| ID/USDT:USDT | +22.78% | $1,338,983.65 |
-| SQD/USDT:USDT | +22.02% | $3,030,971.15 |
-| PLAY/USDT:USDT | +16.44% | $2,613,422.55 |
+| ESPORTS/USDT:USDT | +58.16% | $7,567,993.41 |
+| HIGH/USDT:USDT | +38.01% | $3,162,512.93 |
+| ID/USDT:USDT | +23.82% | $1,351,169.80 |
+| SQD/USDT:USDT | +17.37% | $3,104,055.51 |
+| PLAY/USDT:USDT | +15.93% | $2,625,922.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COAI/USDT:USDT | below_1h_threshold | +3.43% | +3.61% |
-| BSB/USDT:USDT | below_1h_threshold | +2.21% | +2.38% |
-| STG/USDT:USDT | below_1h_threshold | +1.61% | +1.79% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.44% | +1.61% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.93% | +1.10% |
+| COAI/USDT:USDT | below_1h_threshold | +3.71% | +4.00% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.95% | +3.24% |
+| BSB/USDT:USDT | below_1h_threshold | +2.48% | +2.77% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.78% | +2.07% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.25% | +1.54% |
 
 ## 6. 次に見るべき不足
 
