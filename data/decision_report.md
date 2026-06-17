@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T15:13:15.713775+00:00
+- generated_at: 2026-06-17T15:22:16.770653+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6952**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T15:13:11.529059+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=65096.4
-- Funnel: target 790 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-17T15:22:12.540665+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=65235.9
+- Funnel: target 790 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +106.18% | $6,057,898.07 |
-| ESPORTS/USDT:USDT | +43.58% | $12,987,676.25 |
-| TAC/USDT:USDT | +32.38% | $1,338,317.63 |
-| MAGMA/USDT:USDT | +30.33% | $1,048,637.17 |
-| BLESS/USDT:USDT | +27.81% | $17,651,327.51 |
+| AGT/USDT:USDT | +107.00% | $6,328,678.35 |
+| ESPORTS/USDT:USDT | +44.73% | $13,058,466.15 |
+| TAC/USDT:USDT | +30.88% | $1,436,791.99 |
+| MAGMA/USDT:USDT | +29.50% | $1,085,114.10 |
+| BLESS/USDT:USDT | +29.13% | $17,723,531.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.82% | +2.79% |
-| AGT/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
-| XPL/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.25% |
-| WIF/USDT:USDT | below_1h_threshold | +1.12% | +1.09% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.66% | +3.41% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.68% | +2.43% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.49% | +2.24% |
+| AGT/USDT:USDT | below_1h_threshold | +2.40% | +2.15% |
+| ENA/USDT:USDT | below_1h_threshold | +2.28% | +2.02% |
 
 ## 6. 次に見るべき不足
 
