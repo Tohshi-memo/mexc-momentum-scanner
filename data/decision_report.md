@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T20:00:34.828010+00:00
+- generated_at: 2026-06-17T20:07:14.546407+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6964**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T20:00:30.476331+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64197.4
-- Funnel: target 790 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-17T20:07:10.273924+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=64344.7
+- Funnel: target 790 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +74.96% | $1,039,782.75 |
-| SYN/USDT:USDT | +53.43% | $1,475,945.27 |
-| MITO/USDT:USDT | +15.17% | $1,385,860.19 |
-| RE/USDT:USDT | +14.67% | $1,662,419.83 |
-| ESPORTS/USDT:USDT | +7.59% | $14,891,114.99 |
+| O/USDT:USDT | +72.45% | $1,047,754.56 |
+| SYN/USDT:USDT | +54.26% | $1,616,528.07 |
+| RE/USDT:USDT | +15.85% | $1,664,515.73 |
+| MITO/USDT:USDT | +9.92% | $1,408,348.22 |
+| TAC/USDT:USDT | +6.03% | $2,329,358.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +0.99% | +1.11% |
-| O/USDT:USDT | below_1h_threshold | +0.77% | +0.89% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.53% | +0.65% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.53% |
-| BR/USDT:USDT | below_1h_threshold | +0.39% | +0.51% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.32% | +1.21% |
+| RE/USDT:USDT | below_1h_threshold | +1.26% | +1.15% |
+| SYN/USDT:USDT | below_1h_threshold | +1.11% | +1.00% |
+| BR/USDT:USDT | below_1h_threshold | +0.97% | +0.86% |
+| BSB/USDT:USDT | below_1h_threshold | +0.88% | +0.77% |
 
 ## 6. 次に見るべき不足
 
