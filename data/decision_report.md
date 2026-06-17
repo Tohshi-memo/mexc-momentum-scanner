@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-17T16:21:11.059878+00:00
+- generated_at: 2026-06-17T16:28:12.281481+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6955**
+- closed shadow trades: **6956**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6955, expectancy=-0.06%
+- 全期間 MARKET基準: n=6956, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.52%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,47 +47,45 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$197.54** / 初期 $100.00 (+97.54%)
-- 確定: 1815件 (Win 495 / Loss 573 / Flat 747) / skip 1701件
+- 確定: 1815件 (Win 495 / Loss 573 / Flat 747) / skip 1702件
 - 成長率目線: 平均log +0.000375 / 幾何平均 +0.038% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: XPL/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account +0.77% 残高後 $197.54
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$103.27** / 初期 $100.00 (+3.27%)
-- 確定: 228件 (Win 59 / Loss 53 / Flat 116) / skip 138件
-- 成長率目線: 平均log +0.000141 / 幾何平均 +0.014% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1026 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: BTW/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $103.27
+- 残高: **$102.91** / 初期 $100.00 (+2.91%)
+- 確定: 229件 (Win 59 / Loss 54 / Flat 116) / skip 138件
+- 成長率目線: 平均log +0.000125 / 幾何平均 +0.013% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0942 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: TAC/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $102.91
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T16:21:04.480190+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=65880.8
-- Funnel: target 790 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-17T16:28:07.071021+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.73% price=66195.1
+- Funnel: target 790 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +8.96% | $1,652,729.47 |
-| RIF/USDT:USDT | +7.30% | $2,276,926.71 |
-| ASTER/USDT:USDT | +3.70% | $80,446,728.30 |
-| SIREN/USDT:USDT | +2.89% | $4,071,244.96 |
-| XPL/USDT:USDT | +2.42% | $14,768,624.27 |
+| ASTER/USDT:USDT | +5.12% | $81,675,251.47 |
+| RIF/USDT:USDT | +4.87% | $2,339,184.55 |
+| MAGMA/USDT:USDT | +3.12% | $1,167,760.69 |
+| TAC/USDT:USDT | +2.81% | $1,713,805.32 |
+| HYPE/USDT:USDT | +2.44% | $425,963,596.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTER/USDT:USDT | below_1h_threshold | +3.66% | +3.41% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.94% | +2.68% |
-| XPL/USDT:USDT | below_1h_threshold | +2.67% | +2.42% |
-| AGT/USDT:USDT | below_1h_threshold | +2.32% | +2.07% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.21% | +1.96% |
+| ASTER/USDT:USDT | below_relative_strength | +5.12% | +4.39% |
+| RIF/USDT:USDT | below_1h_threshold | +4.87% | +4.14% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.12% | +2.39% |
+| TAC/USDT:USDT | below_1h_threshold | +2.79% | +2.05% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.54% | +1.81% |
 
 ## 6. 次に見るべき不足
 
