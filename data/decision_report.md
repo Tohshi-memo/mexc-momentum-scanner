@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T14:18:55.583038+00:00
+- generated_at: 2026-06-17T14:25:38.486923+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6950**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T14:18:50.482474+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=65278.3
+- 更新: 2026-06-17T14:25:34.321248+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=65180.0
 - Funnel: target 790 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +88.01% | $4,167,739.85 |
-| TAC/USDT:USDT | +35.92% | $1,007,752.65 |
-| ESPORTS/USDT:USDT | +35.80% | $12,266,088.61 |
-| PLAY/USDT:USDT | +28.58% | $3,396,287.85 |
-| XPL/USDT:USDT | +26.98% | $11,155,874.30 |
+| AGT/USDT:USDT | +89.19% | $4,333,384.99 |
+| TAC/USDT:USDT | +37.68% | $1,039,090.21 |
+| ESPORTS/USDT:USDT | +36.86% | $12,418,567.11 |
+| XPL/USDT:USDT | +27.15% | $11,382,961.80 |
+| PLAY/USDT:USDT | +26.31% | $3,420,847.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.47% | +4.41% |
-| PLAY/USDT:USDT | below_1h_threshold | +4.23% | +4.16% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.19% | +4.13% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.72% | +3.65% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.33% | +3.27% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.67% | +4.76% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.35% | +4.44% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +4.33% | +4.42% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.76% | +3.84% |
+| WDCSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.51% |
 
 ## 6. 次に見るべき不足
 
