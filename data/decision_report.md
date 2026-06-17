@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T08:37:13.433564+00:00
+- generated_at: 2026-06-17T08:43:57.603976+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6916**
 
@@ -62,32 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T08:37:08.960521+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.61% price=65106.3
-- Funnel: target 784 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-17T08:43:51.016044+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.82% price=64965.8
+- Funnel: target 784 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +42.34% | $5,194,475.98 |
-| ROAM/USDT:USDT | +33.42% | $3,096,936.79 |
-| SQD/USDT:USDT | +22.11% | $2,498,067.87 |
-| UNI/USDT:USDT | +17.34% | $53,680,793.69 |
-| SPX/USDT:USDT | +15.07% | $8,967,533.85 |
+| ESPORTS/USDT:USDT | +42.50% | $5,341,918.89 |
+| ROAM/USDT:USDT | +24.35% | $3,127,667.97 |
+| SQD/USDT:USDT | +22.77% | $2,514,911.58 |
+| UNI/USDT:USDT | +16.81% | $54,153,228.30 |
+| SPX/USDT:USDT | +14.30% | $9,113,847.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.60% | +5.21% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.22% | +3.83% |
-| STG/USDT:USDT | below_1h_threshold | +0.95% | +1.56% |
-| LIT/USDT:USDT | below_1h_threshold | +0.80% | +1.41% |
-| ZINC/USDT:USDT | below_1h_threshold | +0.52% | +1.13% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.85% | +3.67% |
+| STG/USDT:USDT | below_1h_threshold | +0.76% | +1.58% |
+| HIGH/USDT:USDT | below_1h_threshold | +0.68% | +1.50% |
+| ZINC/USDT:USDT | below_1h_threshold | +0.47% | +1.30% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +1.07% |
 
 ## 6. 次に見るべき不足
 
