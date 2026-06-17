@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T17:29:07.071033+00:00
+- generated_at: 2026-06-17T17:35:47.336606+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6957**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T17:29:00.371546+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=65913.2
+- 更新: 2026-06-17T17:35:40.688608+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=65891.3
 - Funnel: target 790 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +14.67% | $1,292,008.35 |
-| TAC/USDT:USDT | +6.67% | $1,978,914.72 |
-| ESPORTS/USDT:USDT | +5.33% | $13,806,028.80 |
-| MAGMA/USDT:USDT | +3.08% | $1,254,997.95 |
-| WLD/USDT:USDT | +2.81% | $155,769,039.08 |
+| RE/USDT:USDT | +11.22% | $1,313,484.41 |
+| TAC/USDT:USDT | +5.72% | $1,999,769.35 |
+| ESPORTS/USDT:USDT | +5.36% | $13,861,977.99 |
+| ETHFI/USDT:USDT | +3.55% | $2,140,129.23 |
+| MAGMA/USDT:USDT | +3.44% | $1,265,691.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BP/USDT:USDT | below_1h_threshold | +3.24% | +3.11% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.94% | +2.81% |
-| RE/USDT:USDT | below_1h_threshold | +2.45% | +2.33% |
-| LIT/USDT:USDT | below_1h_threshold | +2.39% | +2.26% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.54% |
+| BP/USDT:USDT | below_1h_threshold | +4.01% | +3.91% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.79% | +3.69% |
+| AERO/USDT:USDT | below_1h_threshold | +2.45% | +2.35% |
+| LIT/USDT:USDT | below_1h_threshold | +2.20% | +2.11% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +1.94% |
 
 ## 6. 次に見るべき不足
 
