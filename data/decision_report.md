@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T23:30:19.951568+00:00
+- generated_at: 2026-06-17T23:37:17.501374+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6975**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T23:30:13.220978+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64467.6
+- 更新: 2026-06-17T23:37:10.289414+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=64410.6
 - Funnel: target 790 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +84.61% | $1,433,551.90 |
-| ESPORTS/USDT:USDT | +70.10% | $19,784,913.29 |
-| SYN/USDT:USDT | +43.81% | $4,148,962.99 |
-| RE/USDT:USDT | +15.98% | $1,823,768.54 |
-| MITO/USDT:USDT | +15.05% | $1,654,722.30 |
+| O/USDT:USDT | +81.76% | $1,439,440.76 |
+| ESPORTS/USDT:USDT | +73.24% | $20,026,924.90 |
+| SYN/USDT:USDT | +42.71% | $4,166,066.46 |
+| RE/USDT:USDT | +15.91% | $1,824,629.16 |
+| MITO/USDT:USDT | +14.94% | $1,657,559.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +3.66% | +3.35% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.03% | +2.71% |
-| ENA/USDT:USDT | below_1h_threshold | +2.91% | +2.60% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.87% | +2.56% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.81% | +2.49% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.61% | +4.38% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.69% | +3.46% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.40% | +3.18% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.05% | +2.82% |
+| ENA/USDT:USDT | below_1h_threshold | +2.42% | +2.19% |
 
 ## 6. 次に見るべき不足
 
