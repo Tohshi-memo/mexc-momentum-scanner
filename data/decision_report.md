@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T00:53:30.142330+00:00
+- generated_at: 2026-06-17T00:58:51.420294+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6890**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T00:53:22.601907+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=65677.3
-- Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.9 >= 65=1, 4h RSI 82.1 >= 65=1
+- 更新: 2026-06-17T00:58:44.774624+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=65727.7
+- Funnel: target 782 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +31.02% | $4,953,314.41 |
-| SQD/USDT:USDT | +22.04% | $1,220,675.14 |
-| H/USDT:USDT | +20.33% | $56,247,606.24 |
-| VELVET/USDT:USDT | +18.94% | $30,693,879.46 |
-| ESPORTS/USDT:USDT | +15.53% | $2,271,958.00 |
+| BLESS/USDT:USDT | +34.71% | $5,167,111.91 |
+| SQD/USDT:USDT | +20.86% | $1,238,396.47 |
+| VELVET/USDT:USDT | +19.20% | $30,737,402.01 |
+| H/USDT:USDT | +17.17% | $56,355,792.25 |
+| ESPORTS/USDT:USDT | +15.89% | $2,286,887.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.90% | +3.85% |
-| UNI/USDT:USDT | below_1h_threshold | +3.19% | +3.14% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.60% | +2.55% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.54% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.70% | +4.57% |
+| SQD/USDT:USDT | below_1h_threshold | +4.43% | +4.30% |
+| UNI/USDT:USDT | below_1h_threshold | +4.01% | +3.88% |
+| PLAY/USDT:USDT | below_1h_threshold | +3.29% | +3.17% |
+| VVV/USDT:USDT | below_1h_threshold | +3.01% | +2.89% |
 
 ## 6. 次に見るべき不足
 
