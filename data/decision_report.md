@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T16:46:15.586096+00:00
+- generated_at: 2026-06-17T16:53:08.815127+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6957**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T16:46:11.524212+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=65927.5
-- Funnel: target 790 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-17T16:53:04.484689+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=65846.0
+- Funnel: target 790 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +12.06% | $1,166,441.88 |
-| RIF/USDT:USDT | +3.71% | $2,430,051.79 |
-| SIREN/USDT:USDT | +3.44% | $4,103,091.08 |
-| TAC/USDT:USDT | +3.43% | $1,800,345.22 |
-| MAGMA/USDT:USDT | +3.42% | $1,198,594.55 |
+| RE/USDT:USDT | +11.72% | $1,183,388.41 |
+| TAC/USDT:USDT | +4.65% | $1,823,794.26 |
+| RIF/USDT:USDT | +4.48% | $2,446,249.51 |
+| MAGMA/USDT:USDT | +4.07% | $1,213,673.91 |
+| SIREN/USDT:USDT | +3.31% | $4,107,077.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +3.72% | +3.39% |
-| SIREN/USDT:USDT | below_1h_threshold | +3.44% | +3.12% |
-| TAC/USDT:USDT | below_1h_threshold | +3.44% | +3.11% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.43% | +3.10% |
-| HYPE/USDT:USDT | below_1h_threshold | +2.12% | +1.80% |
+| TAC/USDT:USDT | below_1h_threshold | +4.65% | +4.45% |
+| RIF/USDT:USDT | below_1h_threshold | +4.36% | +4.15% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.08% | +3.87% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.20% | +3.00% |
+| COAI/USDT:USDT | below_1h_threshold | +2.08% | +1.88% |
 
 ## 6. 次に見るべき不足
 
