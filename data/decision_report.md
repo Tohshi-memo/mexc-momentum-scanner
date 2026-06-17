@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T12:52:03.002920+00:00
+- generated_at: 2026-06-17T12:56:00.003527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6938**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T12:51:58.278493+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=64970.6
+- 更新: 2026-06-17T12:55:56.675185+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=64962.9
 - Funnel: target 790 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.3 >= 65=1, 4h RSI 81.4 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.0 >= 65=1, 4h RSI 80.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +62.55% | $1,493,553.45 |
-| ESPORTS/USDT:USDT | +61.23% | $10,719,251.17 |
-| BP/USDT:USDT | +26.83% | $1,079,837.12 |
-| HIGH/USDT:USDT | +25.55% | $3,543,890.42 |
-| PLAY/USDT:USDT | +21.11% | $2,958,847.90 |
+| ESPORTS/USDT:USDT | +62.05% | $10,833,842.95 |
+| AGT/USDT:USDT | +61.73% | $1,536,061.12 |
+| HIGH/USDT:USDT | +27.75% | $3,553,176.22 |
+| BP/USDT:USDT | +23.98% | $1,086,900.52 |
+| PLAY/USDT:USDT | +20.95% | $2,961,704.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BP/USDT:USDT | below_relative_strength | +5.19% | +4.88% |
-| AGT/USDT:USDT | below_relative_strength | +5.04% | +4.74% |
-| BLESS/USDT:USDT | below_1h_threshold | +4.37% | +4.07% |
-| UNI/USDT:USDT | below_1h_threshold | +2.48% | +2.17% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.28% | +1.98% |
+| AGT/USDT:USDT | below_1h_threshold | +4.33% | +4.04% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.30% | +4.01% |
+| VVV/USDT:USDT | below_1h_threshold | +3.11% | +2.82% |
+| UNI/USDT:USDT | below_1h_threshold | +2.75% | +2.46% |
+| BP/USDT:USDT | below_1h_threshold | +2.66% | +2.37% |
 
 ## 6. 次に見るべき不足
 
