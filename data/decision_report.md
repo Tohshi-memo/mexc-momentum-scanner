@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-17T14:12:05.621969+00:00
+- generated_at: 2026-06-17T14:18:55.583038+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6949**
+- closed shadow trades: **6950**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6949, expectancy=-0.05%
+- 全期間 MARKET基準: n=6950, expectancy=-0.06%
 - 直近20件 MARKET基準: n=20, expectancy=+0.17%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,7 +21,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 3/14 | 21.4% | +2.91% | **+0.62%** |
+| LIMIT_BB3S | 3/15 | 20.0% | +2.91% | **+0.58%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
 | LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
 | LIMIT_4PCT | 12/20 | 60.0% | +0.47% | **+0.28%** |
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.16% | **+1.16%** |
-| LIMIT_BB3S_LONG | 3/6 | 50.0% | +2.14% | **+1.07%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.01% | **+0.81%** |
-| ASK_LONG | 20/20 | 100.0% | +0.78% | **+0.78%** |
+| ASK_LONG | 20/20 | 100.0% | +0.76% | **+0.76%** |
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +0.67% | **+0.44%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +1.46% | **+0.36%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,45 +47,45 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$197.02** / 初期 $100.00 (+97.02%)
-- 確定: 1813件 (Win 494 / Loss 572 / Flat 747) / skip 1697件
+- 確定: 1813件 (Win 494 / Loss 572 / Flat 747) / skip 1698件
 - 成長率目線: 平均log +0.000374 / 幾何平均 +0.037% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: COAI/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $197.02
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$102.57** / 初期 $100.00 (+2.57%)
-- 確定: 222件 (Win 56 / Loss 51 / Flat 115) / skip 138件
-- 成長率目線: 平均log +0.000114 / 幾何平均 +0.011% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0728 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: AGT/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $102.57
+- 残高: **$103.01** / 初期 $100.00 (+3.01%)
+- 確定: 223件 (Win 57 / Loss 51 / Flat 115) / skip 138件
+- 成長率目線: 平均log +0.000133 / 幾何平均 +0.013% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0847 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: BLESS/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $103.01
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T14:11:59.645900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65233.9
-- Funnel: target 790 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-17T14:18:50.482474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=65278.3
+- Funnel: target 790 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +90.27% | $3,972,181.14 |
-| ESPORTS/USDT:USDT | +43.98% | $12,063,332.26 |
-| PLAY/USDT:USDT | +28.11% | $3,328,994.42 |
-| XPL/USDT:USDT | +25.95% | $10,949,937.69 |
-| BP/USDT:USDT | +25.49% | $1,097,048.76 |
+| AGT/USDT:USDT | +88.01% | $4,167,739.85 |
+| TAC/USDT:USDT | +35.92% | $1,007,752.65 |
+| ESPORTS/USDT:USDT | +35.80% | $12,266,088.61 |
+| PLAY/USDT:USDT | +28.58% | $3,396,287.85 |
+| XPL/USDT:USDT | +26.98% | $11,155,874.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +3.92% | +3.92% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.90% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.43% |
-| XPL/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
-| VVV/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.47% | +4.41% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.23% | +4.16% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.19% | +4.13% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.72% | +3.65% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.33% | +3.27% |
 
 ## 6. 次に見るべき不足
 
