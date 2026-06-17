@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T18:10:11.705516+00:00
+- generated_at: 2026-06-17T18:18:07.150105+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6961**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T18:10:07.485732+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.06% price=65363.1
+- 更新: 2026-06-17T18:18:02.872872+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.14% price=65314.2
 - Funnel: target 790 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +16.78% | $1,366,563.41 |
-| ESPORTS/USDT:USDT | +6.20% | $14,225,604.00 |
-| TAC/USDT:USDT | +5.36% | $2,067,441.01 |
-| BRETT/USDT:USDT | +5.27% | $1,049,644.23 |
-| BR/USDT:USDT | +3.29% | $7,264,800.77 |
+| RE/USDT:USDT | +16.15% | $1,380,073.31 |
+| TAC/USDT:USDT | +6.44% | $2,075,060.21 |
+| BRETT/USDT:USDT | +4.02% | $1,078,813.11 |
+| ESPORTS/USDT:USDT | +3.99% | $14,286,748.23 |
+| MAGMA/USDT:USDT | +3.20% | $1,298,308.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.85% | +3.91% |
-| BR/USDT:USDT | below_1h_threshold | +0.80% | +1.86% |
-| HYPE/USDT:USDT | below_1h_threshold | +0.70% | +1.76% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.57% | +1.63% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.52% | +1.59% |
+| RE/USDT:USDT | below_1h_threshold | +2.29% | +3.43% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.00% | +2.14% |
+| TAC/USDT:USDT | below_1h_threshold | +0.47% | +1.61% |
+| FOXASTOCK/USDT:USDT | below_1h_threshold | +0.37% | +1.50% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.34% | +1.48% |
 
 ## 6. 次に見るべき不足
 
