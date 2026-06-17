@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T22:24:16.341987+00:00
+- generated_at: 2026-06-17T22:28:19.933937+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6970**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T22:24:04.795916+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64205.5
+- 更新: 2026-06-17T22:28:14.516507+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=64345.0
 - Funnel: target 790 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +98.16% | $1,350,132.34 |
-| SYN/USDT:USDT | +43.69% | $3,711,741.42 |
-| RE/USDT:USDT | +18.65% | $1,800,400.72 |
-| MITO/USDT:USDT | +12.39% | $1,586,012.57 |
-| UP/USDT:USDT | +9.79% | $2,731,335.50 |
+| O/USDT:USDT | +94.59% | $1,358,013.82 |
+| SYN/USDT:USDT | +41.91% | $3,805,691.31 |
+| RE/USDT:USDT | +16.52% | $1,803,028.64 |
+| MITO/USDT:USDT | +14.58% | $1,596,326.13 |
+| TAC/USDT:USDT | +9.75% | $2,664,533.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
-| TAC/USDT:USDT | below_1h_threshold | +1.56% | +1.60% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.17% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.54% | +3.36% |
+| TAC/USDT:USDT | below_1h_threshold | +1.93% | +1.75% |
+| MITO/USDT:USDT | below_1h_threshold | +1.85% | +1.67% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.56% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.46% | +1.28% |
 
 ## 6. 次に見るべき不足
 
