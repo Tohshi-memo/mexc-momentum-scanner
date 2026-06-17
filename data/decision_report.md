@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T18:58:01.737731+00:00
+- generated_at: 2026-06-17T19:04:42.355932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6962**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T18:57:57.509955+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.74% price=65575.6
-- Funnel: target 790 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-17T19:04:38.144885+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=65423.4
+- Funnel: target 790 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MITO/USDT:USDT | +20.99% | $1,231,966.57 |
-| RE/USDT:USDT | +15.40% | $1,420,508.30 |
-| ETHFI/USDT:USDT | +5.39% | $2,700,749.46 |
-| BRETT/USDT:USDT | +4.78% | $1,165,212.81 |
-| TAC/USDT:USDT | +4.70% | $2,211,684.23 |
+| RE/USDT:USDT | +14.83% | $1,421,672.53 |
+| MITO/USDT:USDT | +12.58% | $1,250,560.01 |
+| ETHFI/USDT:USDT | +5.25% | $2,798,386.37 |
+| NBISSTOCK/USDT:USDT | +4.91% | $1,329,520.65 |
+| TAC/USDT:USDT | +4.65% | $2,224,103.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +3.35% | +4.09% |
-| MITO/USDT:USDT | below_1h_threshold | +3.02% | +3.76% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.52% | +3.26% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.07% | +2.81% |
-| RE/USDT:USDT | below_1h_threshold | +1.64% | +2.38% |
+| AGT/USDT:USDT | below_1h_threshold | +0.63% | +0.73% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.59% | +0.68% |
+| AERO/USDT:USDT | below_1h_threshold | +0.45% | +0.54% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.53% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.50% |
 
 ## 6. 次に見るべき不足
 
