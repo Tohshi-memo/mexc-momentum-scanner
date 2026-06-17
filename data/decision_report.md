@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T14:45:55.637247+00:00
+- generated_at: 2026-06-17T14:53:04.867560+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6951**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T14:45:51.076937+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=65092.4
-- Funnel: target 790 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
+- 更新: 2026-06-17T14:52:58.001634+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=65092.5
+- Funnel: target 790 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +95.97% | $4,824,990.42 |
-| ESPORTS/USDT:USDT | +46.66% | $12,799,580.72 |
-| TAC/USDT:USDT | +40.45% | $1,130,683.87 |
-| MAGMA/USDT:USDT | +32.59% | $1,006,664.87 |
-| XPL/USDT:USDT | +27.90% | $12,022,101.83 |
+| AGT/USDT:USDT | +98.48% | $5,113,312.74 |
+| ESPORTS/USDT:USDT | +46.95% | $12,880,305.74 |
+| TAC/USDT:USDT | +41.44% | $1,167,526.60 |
+| MAGMA/USDT:USDT | +32.31% | $1,019,234.30 |
+| BLESS/USDT:USDT | +27.86% | $17,524,875.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.80% | +5.03% |
-| ETHFI/USDT:USDT | below_1h_threshold | +4.09% | +4.32% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +4.10% |
-| TAC/USDT:USDT | below_1h_threshold | +3.20% | +3.43% |
-| XPL/USDT:USDT | below_1h_threshold | +2.90% | +3.12% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.99% | +4.21% |
+| TAC/USDT:USDT | below_1h_threshold | +3.80% | +4.03% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.21% | +3.43% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.97% | +3.20% |
+| AGT/USDT:USDT | below_1h_threshold | +2.95% | +3.17% |
 
 ## 6. 次に見るべき不足
 
