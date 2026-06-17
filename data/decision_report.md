@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T04:47:14.383521+00:00
+- generated_at: 2026-06-17T04:53:52.262210+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6903**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T04:47:07.935037+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=65939.5
-- Funnel: target 782 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-17T04:53:45.050254+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=65913.9
+- Funnel: target 782 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +33.10% | $10,343,357.08 |
-| ESPORTS/USDT:USDT | +26.59% | $3,861,045.81 |
-| BTW/USDT:USDT | +21.01% | $3,249,928.58 |
-| SPX/USDT:USDT | +20.86% | $7,292,384.67 |
-| SQD/USDT:USDT | +18.53% | $1,446,341.20 |
+| BLESS/USDT:USDT | +31.57% | $10,453,201.37 |
+| ESPORTS/USDT:USDT | +26.60% | $3,870,708.24 |
+| SPX/USDT:USDT | +22.81% | $7,450,001.90 |
+| BTW/USDT:USDT | +19.78% | $3,264,369.60 |
+| UNI/USDT:USDT | +18.13% | $44,542,041.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.50% | +3.31% |
-| SENT/USDT:USDT | below_1h_threshold | +3.21% | +3.02% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.63% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.79% | +2.60% |
-| SQD/USDT:USDT | below_1h_threshold | +2.38% | +2.19% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.47% | +3.32% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.43% | +3.27% |
+| HIGH/USDT:USDT | below_1h_threshold | +2.90% | +2.74% |
+| TIA/USDT:USDT | below_1h_threshold | +2.65% | +2.50% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.22% | +2.06% |
 
 ## 6. 次に見るべき不足
 
