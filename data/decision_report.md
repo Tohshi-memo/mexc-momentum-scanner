@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T13:36:51.763647+00:00
+- generated_at: 2026-06-17T13:43:48.320151+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6944**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T13:36:44.047797+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=65042.2
-- Funnel: target 790 → liquid 167 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 77.0 >= 65=1, 4h RSI 81.9 >= 65=1
+- 更新: 2026-06-17T13:43:39.028408+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=65196.7
+- Funnel: target 790 → liquid 167 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 82.7 >= 65=1, 4h RSI 75.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGT/USDT:USDT | +79.22% | $2,485,992.35 |
-| ESPORTS/USDT:USDT | +60.08% | $11,401,864.77 |
-| XPL/USDT:USDT | +27.91% | $9,963,552.50 |
-| BP/USDT:USDT | +27.64% | $1,083,718.89 |
-| PLAY/USDT:USDT | +26.50% | $3,105,615.89 |
+| AGT/USDT:USDT | +85.60% | $2,717,889.87 |
+| ESPORTS/USDT:USDT | +55.90% | $11,487,925.79 |
+| BP/USDT:USDT | +28.45% | $1,089,240.30 |
+| PLAY/USDT:USDT | +27.42% | $3,173,007.76 |
+| XPL/USDT:USDT | +26.09% | $10,403,282.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.37% | +4.32% |
-| WDCSTOCK/USDT:USDT | below_1h_threshold | +3.68% | +3.63% |
-| BP/USDT:USDT | below_1h_threshold | +2.28% | +2.23% |
-| COAI/USDT:USDT | below_1h_threshold | +2.20% | +2.15% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.92% | +1.86% |
+| BR/USDT:USDT | below_1h_threshold | +4.92% | +4.63% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.25% | +3.96% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.25% | +3.96% |
+| COAI/USDT:USDT | below_1h_threshold | +3.14% | +2.85% |
+| FOXASTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.67% |
 
 ## 6. 次に見るべき不足
 
