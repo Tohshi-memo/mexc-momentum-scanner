@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T18:18:07.150105+00:00
+- generated_at: 2026-06-17T18:24:59.287103+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6961**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T18:18:02.872872+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.14% price=65314.2
-- Funnel: target 790 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-17T18:24:55.025006+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.07% price=65360.0
+- Funnel: target 790 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +16.15% | $1,380,073.31 |
-| TAC/USDT:USDT | +6.44% | $2,075,060.21 |
-| BRETT/USDT:USDT | +4.02% | $1,078,813.11 |
-| ESPORTS/USDT:USDT | +3.99% | $14,286,748.23 |
-| MAGMA/USDT:USDT | +3.20% | $1,298,308.33 |
+| MITO/USDT:USDT | +16.73% | $1,043,738.38 |
+| RE/USDT:USDT | +15.72% | $1,382,722.84 |
+| TAC/USDT:USDT | +6.51% | $2,086,842.32 |
+| BRETT/USDT:USDT | +4.16% | $1,088,633.28 |
+| NBISSTOCK/USDT:USDT | +2.63% | $1,126,661.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.29% | +3.43% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.00% | +2.14% |
-| TAC/USDT:USDT | below_1h_threshold | +0.47% | +1.61% |
-| FOXASTOCK/USDT:USDT | below_1h_threshold | +0.37% | +1.50% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.34% | +1.48% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.90% | +4.96% |
+| RE/USDT:USDT | below_1h_threshold | +1.92% | +2.99% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.91% | +1.98% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.57% | +1.64% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +1.57% |
 
 ## 6. 次に見るべき不足
 
