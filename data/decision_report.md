@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-17T16:40:52.169548+00:00
+- generated_at: 2026-06-17T16:46:15.586096+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6956**
+- closed shadow trades: **6957**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6956, expectancy=-0.05%
+- 全期間 MARKET基準: n=6957, expectancy=-0.06%
 - 直近20件 MARKET基準: n=20, expectancy=-0.52%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,7 +21,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S | 5/15 | 33.3% | +2.54% | **+0.85%** |
+| LIMIT_BB3S | 6/16 | 37.5% | +2.12% | **+0.79%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
 | LIMIT_5PCT | 6/20 | 30.0% | +0.95% | **+0.29%** |
 | LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/5 | 80.0% | +3.13% | **+2.50%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.69% | **+1.18%** |
+| LIMIT_BB3S_LONG | 3/4 | 75.0% | +2.51% | **+1.89%** |
+| LIMIT_2PCT_LONG | 15/20 | 75.0% | +2.11% | **+1.58%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +1.17% | **+0.94%** |
+| LIMIT_ATR_LONG | 14/20 | 70.0% | +1.25% | **+0.87%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.87% | **+0.87%** |
-| ASK_LONG | 20/20 | 100.0% | +0.53% | **+0.53%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,23 +47,23 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$197.54** / 初期 $100.00 (+97.54%)
-- 確定: 1815件 (Win 495 / Loss 573 / Flat 747) / skip 1702件
+- 確定: 1815件 (Win 495 / Loss 573 / Flat 747) / skip 1703件
 - 成長率目線: 平均log +0.000375 / 幾何平均 +0.038% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: XPL/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account +0.77% 残高後 $197.54
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$102.91** / 初期 $100.00 (+2.91%)
-- 確定: 229件 (Win 59 / Loss 54 / Flat 116) / skip 138件
-- 成長率目線: 平均log +0.000125 / 幾何平均 +0.013% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0942 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: TAC/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $102.91
+- 残高: **$103.35** / 初期 $100.00 (+3.35%)
+- 確定: 230件 (Win 60 / Loss 54 / Flat 116) / skip 138件
+- 成長率目線: 平均log +0.000143 / 幾何平均 +0.014% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0955 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: CLO/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $103.35
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T16:40:47.914059+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=65900.2
+- 更新: 2026-06-17T16:46:11.524212+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=65927.5
 - Funnel: target 790 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +12.63% | $1,129,724.20 |
-| TAC/USDT:USDT | +4.65% | $1,776,443.39 |
-| RIF/USDT:USDT | +4.40% | $2,402,590.04 |
-| MAGMA/USDT:USDT | +3.32% | $1,189,034.13 |
-| SIREN/USDT:USDT | +2.80% | $4,098,968.87 |
+| RE/USDT:USDT | +12.06% | $1,166,441.88 |
+| RIF/USDT:USDT | +3.71% | $2,430,051.79 |
+| SIREN/USDT:USDT | +3.44% | $4,103,091.08 |
+| TAC/USDT:USDT | +3.43% | $1,800,345.22 |
+| MAGMA/USDT:USDT | +3.42% | $1,198,594.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +4.52% | +4.23% |
-| RIF/USDT:USDT | below_1h_threshold | +4.41% | +4.12% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.33% | +3.04% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.80% | +2.52% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.57% | +2.28% |
+| RIF/USDT:USDT | below_1h_threshold | +3.72% | +3.39% |
+| SIREN/USDT:USDT | below_1h_threshold | +3.44% | +3.12% |
+| TAC/USDT:USDT | below_1h_threshold | +3.44% | +3.11% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.43% | +3.10% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.12% | +1.80% |
 
 ## 6. 次に見るべき不足
 
