@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-17T02:12:34.310984+00:00
+- generated_at: 2026-06-17T02:19:17.137537+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **6895**
+- closed shadow trades: **6896**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=6895, expectancy=-0.05%
+- 全期間 MARKET基準: n=6896, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.18%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.60% | **+1.60%** |
 | LIMIT_1PCT_LONG | 14/20 | 70.0% | +2.24% | **+1.57%** |
-| ASK_LONG | 20/20 | 100.0% | +1.37% | **+1.37%** |
+| ASK_LONG | 20/20 | 100.0% | +1.33% | **+1.33%** |
 | LIMIT_BB3S_LONG | 2/2 | 100.0% | +0.85% | **+0.85%** |
-| LIMIT_2PCT_LONG | 10/20 | 50.0% | +1.25% | **+0.62%** |
+| LIMIT_2PCT_LONG | 9/20 | 45.0% | +0.71% | **+0.32%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,46 +46,47 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$192.02** / 初期 $100.00 (+92.02%)
-- 確定: 1768件 (Win 472 / Loss 553 / Flat 743) / skip 1688件
-- 成長率目線: 平均log +0.000369 / 幾何平均 +0.037% per trade / maxDD +7.25%
+- 残高: **$192.98** / 初期 $100.00 (+92.98%)
+- 確定: 1769件 (Win 473 / Loss 553 / Flat 743) / skip 1688件
+- 成長率目線: 平均log +0.000372 / 幾何平均 +0.037% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ESPORTS/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $192.02
+- 最新: H/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $192.98
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$98.91** / 初期 $100.00 (-1.09%)
-- 確定: 168件 (Win 33 / Loss 31 / Flat 104) / skip 138件
-- 成長率目線: 平均log -0.000065 / 幾何平均 -0.007% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0623 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: ESPORTS/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $98.91
+- 残高: **$99.34** / 初期 $100.00 (-0.66%)
+- 確定: 169件 (Win 34 / Loss 31 / Flat 104) / skip 138件
+- 成長率目線: 平均log -0.000039 / 幾何平均 -0.004% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0742 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: H/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $99.34
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T02:12:30.217685+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=65833.0
-- Funnel: target 782 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-17T02:19:09.836440+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=65867.1
+- Funnel: target 782 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +37.66% | $2,981,252.05 |
-| BLESS/USDT:USDT | +36.15% | $6,846,307.62 |
-| H/USDT:USDT | +24.28% | $55,983,100.60 |
-| SQD/USDT:USDT | +18.33% | $1,330,689.48 |
-| UNI/USDT:USDT | +16.35% | $42,200,403.47 |
+| ESPORTS/USDT:USDT | +34.35% | $3,075,392.62 |
+| BLESS/USDT:USDT | +34.18% | $6,961,581.08 |
+| H/USDT:USDT | +30.12% | $56,332,958.71 |
+| SQD/USDT:USDT | +18.46% | $1,333,692.58 |
+| UNI/USDT:USDT | +16.21% | $42,417,560.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.45% | +3.55% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.69% | +2.79% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.86% | +1.97% |
-| UNI/USDT:USDT | below_1h_threshold | +1.18% | +1.28% |
-| VVV/USDT:USDT | below_1h_threshold | +1.16% | +1.26% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.92% | +2.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.89% | +2.94% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.47% | +2.52% |
+| VVV/USDT:USDT | below_1h_threshold | +1.49% | +1.54% |
+| ROSE/USDT:USDT | below_1h_threshold | +1.31% | +1.36% |
 
 ## 6. 次に見るべき不足
 
