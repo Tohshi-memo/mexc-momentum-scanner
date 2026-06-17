@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-17T07:31:37.323483+00:00
+- generated_at: 2026-06-17T07:36:58.730112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6912**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-17T07:31:32.169854+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=65516.5
+- 更新: 2026-06-17T07:36:55.346355+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=65517.2
 - Funnel: target 784 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +33.96% | $4,367,950.67 |
-| SQD/USDT:USDT | +28.69% | $2,168,066.76 |
-| SPX/USDT:USDT | +22.02% | $8,160,310.34 |
-| UNI/USDT:USDT | +20.98% | $50,590,652.07 |
-| ROAM/USDT:USDT | +18.43% | $3,293,985.36 |
+| ESPORTS/USDT:USDT | +31.94% | $4,401,067.84 |
+| SQD/USDT:USDT | +29.97% | $2,185,337.91 |
+| SPX/USDT:USDT | +21.86% | $8,183,998.32 |
+| UNI/USDT:USDT | +21.51% | $50,982,665.15 |
+| ROAM/USDT:USDT | +19.22% | $3,300,482.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.63% | +3.75% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.17% | +2.28% |
-| SPX/USDT:USDT | below_1h_threshold | +1.28% | +1.39% |
-| SPACE/USDT:USDT | below_1h_threshold | +0.86% | +0.97% |
-| BR/USDT:USDT | below_1h_threshold | +0.76% | +0.87% |
+| LAB/USDT:USDT | below_1h_threshold | +2.80% | +2.91% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.03% | +2.14% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.88% | +1.99% |
+| SPACE/USDT:USDT | below_1h_threshold | +1.46% | +1.57% |
+| SQD/USDT:USDT | below_1h_threshold | +1.44% | +1.55% |
 
 ## 6. 次に見るべき不足
 
