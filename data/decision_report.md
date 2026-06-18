@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T20:40:55.838015+00:00
+- generated_at: 2026-06-18T20:47:43.135304+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7077**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T20:40:51.003892+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=63110.5
-- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.1 >= 65=1, 4h RSI 66.4 >= 65=1, 4h RSI 68.7 >= 65=1
+- 更新: 2026-06-18T20:47:37.899053+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63064.2
+- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.5 >= 65=1, 4h RSI 87.9 >= 65=1, 4h RSI 69.7 >= 65=1, 4h RSI 66.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +20.84% | $2,089,421.19 |
-| SYN/USDT:USDT | +17.12% | $18,719,611.17 |
-| EDEN/USDT:USDT | +15.11% | $1,376,752.31 |
-| BASED/USDT:USDT | +14.63% | $1,567,743.56 |
-| PLAY/USDT:USDT | +14.36% | $1,886,766.28 |
+| ZEREBRO/USDT:USDT | +23.22% | $2,219,935.72 |
+| SYN/USDT:USDT | +21.25% | $18,867,347.82 |
+| BASED/USDT:USDT | +15.89% | $1,601,885.17 |
+| EDEN/USDT:USDT | +15.50% | $1,411,934.34 |
+| PLAY/USDT:USDT | +14.33% | $1,900,171.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.57% | +4.28% |
-| DYDX/USDT:USDT | below_1h_threshold | +4.08% | +3.79% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.97% | +3.68% |
-| ENJ/USDT:USDT | below_1h_threshold | +3.13% | +2.84% |
-| TIA/USDT:USDT | below_1h_threshold | +2.85% | +2.56% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.32% | +4.10% |
+| DYDX/USDT:USDT | below_1h_threshold | +3.91% | +3.69% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.58% | +3.36% |
+| TIA/USDT:USDT | below_1h_threshold | +2.62% | +2.40% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.46% | +2.24% |
 
 ## 6. 次に見るべき不足
 
