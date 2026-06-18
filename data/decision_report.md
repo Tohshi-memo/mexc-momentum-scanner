@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T22:42:42.598963+00:00
+- generated_at: 2026-06-18T22:49:39.320242+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7084**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T22:42:37.147733+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=62783.8
+- 更新: 2026-06-18T22:49:35.017754+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=62812.9
 - Funnel: target 795 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +118.99% | $3,021,318.00 |
-| ZEREBRO/USDT:USDT | +19.95% | $2,777,241.79 |
-| EDEN/USDT:USDT | +18.65% | $1,872,235.23 |
-| BASED/USDT:USDT | +17.46% | $2,454,374.21 |
-| SYN/USDT:USDT | +14.03% | $18,409,429.32 |
+| ASTEROID/USDT:USDT | +106.37% | $3,203,431.95 |
+| ZEREBRO/USDT:USDT | +21.04% | $2,791,686.51 |
+| BASED/USDT:USDT | +16.62% | $2,513,943.63 |
+| EDEN/USDT:USDT | +16.08% | $1,901,490.73 |
+| SYN/USDT:USDT | +16.01% | $18,471,772.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +1.45% | +1.70% |
-| HEI/USDT:USDT | below_1h_threshold | +1.36% | +1.61% |
-| TAC/USDT:USDT | below_1h_threshold | +1.16% | +1.41% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.98% | +1.23% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.90% | +1.15% |
+| HEI/USDT:USDT | below_1h_threshold | +2.27% | +2.47% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.43% | +1.63% |
+| LIT/USDT:USDT | below_1h_threshold | +0.90% | +1.10% |
+| APE/USDT:USDT | below_1h_threshold | +0.83% | +1.03% |
+| TAC/USDT:USDT | below_1h_threshold | +0.80% | +1.00% |
 
 ## 6. 次に見るべき不足
 
