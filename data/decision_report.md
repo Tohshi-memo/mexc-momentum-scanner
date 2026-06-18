@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T02:00:23.481642+00:00
+- generated_at: 2026-06-18T02:06:58.697525+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6991**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T02:00:19.266565+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64520.9
-- Funnel: target 790 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-18T02:06:54.453468+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=64638.4
+- Funnel: target 790 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +163.41% | $27,710,877.58 |
-| O/USDT:USDT | +79.11% | $1,538,375.22 |
-| SYN/USDT:USDT | +49.15% | $4,405,155.06 |
-| H/USDT:USDT | +21.72% | $38,219,007.27 |
-| MITO/USDT:USDT | +17.55% | $1,741,106.30 |
+| ESPORTS/USDT:USDT | +167.77% | $28,116,037.68 |
+| O/USDT:USDT | +79.53% | $1,544,426.27 |
+| SYN/USDT:USDT | +40.46% | $4,411,183.01 |
+| H/USDT:USDT | +26.64% | $38,404,125.61 |
+| MITO/USDT:USDT | +18.72% | $1,745,238.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MITO/USDT:USDT | below_1h_threshold | +4.51% | +4.37% |
-| FOLKS/USDT:USDT | below_1h_threshold | +3.35% | +3.22% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.45% | +1.32% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.39% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.32% | +0.19% |
+| H/USDT:USDT | below_1h_threshold | +3.74% | +3.56% |
+| CLO/USDT:USDT | below_1h_threshold | +3.08% | +2.89% |
+| GUA/USDT:USDT | below_1h_threshold | +1.52% | +1.33% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.24% | +1.05% |
+| TAC/USDT:USDT | below_1h_threshold | +1.17% | +0.99% |
 
 ## 6. 次に見るべき不足
 
