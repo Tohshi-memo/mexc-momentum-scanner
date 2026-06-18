@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T03:56:27.660230+00:00
+- generated_at: 2026-06-18T04:03:07.291761+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7001**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T03:56:17.560888+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=64310.9
-- Funnel: target 790 → liquid 174 → pre 50 → checked 50 → surge 6 → strict 2
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1, 4h RSI 73.5 >= 65=1, 4h RSI 78.1 >= 65=1, 4h RSI 66.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-18T04:03:03.005921+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64285.0
+- Funnel: target 790 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +123.42% | $33,620,216.91 |
-| O/USDT:USDT | +67.71% | $1,931,597.78 |
-| SYN/USDT:USDT | +52.27% | $4,557,651.72 |
-| HOME/USDT:USDT | +42.82% | $1,172,134.48 |
-| H/USDT:USDT | +25.37% | $37,672,054.78 |
+| ESPORTS/USDT:USDT | +127.04% | $33,707,527.29 |
+| O/USDT:USDT | +60.13% | $1,961,907.94 |
+| SYN/USDT:USDT | +49.17% | $4,559,055.19 |
+| HOME/USDT:USDT | +39.22% | $1,190,961.90 |
+| H/USDT:USDT | +25.89% | $33,404,505.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.82% | +5.35% |
-| SYN/USDT:USDT | below_1h_threshold | +4.81% | +5.34% |
-| MITO/USDT:USDT | below_1h_threshold | +3.52% | +4.05% |
-| STG/USDT:USDT | below_1h_threshold | +2.52% | +3.05% |
-| OPN/USDT:USDT | below_1h_threshold | +2.23% | +2.75% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.54% | +3.49% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.90% | +0.85% |
+| BASED/USDT:USDT | below_1h_threshold | +0.72% | +0.67% |
+| AGT/USDT:USDT | below_1h_threshold | +0.65% | +0.60% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.60% | +0.55% |
 
 ## 6. 次に見るべき不足
 
