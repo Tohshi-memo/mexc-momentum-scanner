@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T01:27:55.086614+00:00
+- generated_at: 2026-06-18T01:33:14.824093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6989**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T01:27:50.449140+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=64650.7
-- Funnel: target 790 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.8 >= 65=1, 4h RSI 70.3 >= 65=1
+- 更新: 2026-06-18T01:33:11.197311+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=64670.6
+- Funnel: target 790 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +123.09% | $26,997,698.51 |
-| O/USDT:USDT | +72.84% | $1,520,829.15 |
-| SYN/USDT:USDT | +41.31% | $4,375,321.23 |
-| H/USDT:USDT | +21.50% | $39,205,040.37 |
-| MITO/USDT:USDT | +14.94% | $1,718,387.76 |
+| ESPORTS/USDT:USDT | +160.75% | $27,499,451.76 |
+| O/USDT:USDT | +73.40% | $1,523,834.00 |
+| SYN/USDT:USDT | +41.91% | $4,380,928.22 |
+| H/USDT:USDT | +21.36% | $39,289,779.71 |
+| TAC/USDT:USDT | +13.93% | $2,938,960.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +4.04% | +3.70% |
-| SIREN/USDT:USDT | below_1h_threshold | +2.95% | +2.61% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.65% | +2.31% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.68% | +1.34% |
-| MITO/USDT:USDT | below_1h_threshold | +1.66% | +1.32% |
+| AGT/USDT:USDT | below_relative_strength | +5.11% | +4.75% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.76% | +2.39% |
+| UP/USDT:USDT | below_1h_threshold | +2.67% | +2.30% |
+| SIREN/USDT:USDT | below_1h_threshold | +2.60% | +2.24% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.43% | +2.07% |
 
 ## 6. 次に見るべき不足
 
