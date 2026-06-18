@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T01:09:33.711461+00:00
+- generated_at: 2026-06-18T01:13:46.012346+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6989**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T01:09:29.475184+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=64700.0
+- 更新: 2026-06-18T01:13:42.937518+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=64745.1
 - Funnel: target 790 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +155.75% | $25,922,218.55 |
-| O/USDT:USDT | +79.34% | $1,512,284.64 |
-| SYN/USDT:USDT | +42.69% | $4,346,292.03 |
-| H/USDT:USDT | +16.77% | $38,718,378.00 |
-| MITO/USDT:USDT | +14.66% | $1,709,208.09 |
+| ESPORTS/USDT:USDT | +155.09% | $26,092,808.23 |
+| O/USDT:USDT | +78.72% | $1,513,363.47 |
+| SYN/USDT:USDT | +42.26% | $4,355,438.88 |
+| H/USDT:USDT | +18.72% | $38,815,184.23 |
+| SIREN/USDT:USDT | +14.83% | $2,690,276.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SIREN/USDT:USDT | below_1h_threshold | +4.54% | +4.13% |
-| SYN/USDT:USDT | below_1h_threshold | +2.56% | +2.15% |
-| XLM/USDT:USDT | below_1h_threshold | +2.11% | +1.70% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.60% | +1.19% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.50% | +1.08% |
+| SIREN/USDT:USDT | below_1h_threshold | +4.99% | +4.50% |
+| FOLKS/USDT:USDT | below_1h_threshold | +4.04% | +3.56% |
+| XLM/USDT:USDT | below_1h_threshold | +3.66% | +3.17% |
+| SYN/USDT:USDT | below_1h_threshold | +2.25% | +1.77% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.62% | +1.13% |
 
 ## 6. 次に見るべき不足
 
