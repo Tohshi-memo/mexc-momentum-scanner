@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T20:06:13.241052+00:00
+- generated_at: 2026-06-18T20:13:06.441658+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7074**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T20:06:07.958777+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=63147.4
-- Funnel: target 795 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-18T20:13:01.886210+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=63100.1
+- Funnel: target 795 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +16.23% | $1,889,662.85 |
-| VELVET/USDT:USDT | +16.12% | $30,831,590.70 |
-| PLAY/USDT:USDT | +13.19% | $1,806,960.83 |
-| EDEN/USDT:USDT | +10.74% | $1,258,421.15 |
-| BEAT/USDT:USDT | +10.67% | $53,077,570.14 |
+| VELVET/USDT:USDT | +15.29% | $31,259,594.30 |
+| PLAY/USDT:USDT | +14.00% | $1,815,128.57 |
+| ZEREBRO/USDT:USDT | +13.81% | $1,925,743.11 |
+| BASED/USDT:USDT | +10.70% | $1,223,614.62 |
+| EDEN/USDT:USDT | +10.46% | $1,271,431.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +2.61% | +2.26% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.65% | +1.30% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.58% | +1.23% |
-| INJ/USDT:USDT | below_1h_threshold | +1.44% | +1.09% |
-| LIT/USDT:USDT | below_1h_threshold | +1.37% | +1.02% |
+| ENJ/USDT:USDT | below_1h_threshold | +3.77% | +3.49% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.38% | +2.10% |
+| INJ/USDT:USDT | below_1h_threshold | +2.20% | +1.93% |
+| BR/USDT:USDT | below_1h_threshold | +2.09% | +1.82% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.07% | +1.79% |
 
 ## 6. 次に見るべき不足
 
