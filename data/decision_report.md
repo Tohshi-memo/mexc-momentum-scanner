@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T03:36:49.749047+00:00
+- generated_at: 2026-06-18T03:43:39.755178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **6999**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T03:36:44.183241+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=64296.0
-- Funnel: target 790 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1, 4h RSI 76.5 >= 65=1
+- 更新: 2026-06-18T03:43:32.248732+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=64250.0
+- Funnel: target 790 → liquid 173 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.6 >= 65=1, 4h RSI 77.0 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +137.09% | $32,773,486.73 |
-| O/USDT:USDT | +55.64% | $1,793,631.23 |
-| SYN/USDT:USDT | +46.36% | $4,507,587.33 |
-| HOME/USDT:USDT | +35.78% | $1,069,802.69 |
-| H/USDT:USDT | +27.56% | $37,252,867.23 |
+| ESPORTS/USDT:USDT | +134.41% | $33,076,353.90 |
+| O/USDT:USDT | +65.12% | $1,850,245.18 |
+| SYN/USDT:USDT | +48.97% | $4,515,875.11 |
+| HOME/USDT:USDT | +37.27% | $1,101,723.90 |
+| H/USDT:USDT | +28.04% | $37,455,210.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +4.96% | +5.51% |
-| US/USDT:USDT | below_1h_threshold | +4.68% | +5.23% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.79% | +4.34% |
-| H/USDT:USDT | below_1h_threshold | +3.38% | +3.93% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.66% | +3.21% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.53% | +4.15% |
+| H/USDT:USDT | below_1h_threshold | +3.52% | +4.14% |
+| SYN/USDT:USDT | below_1h_threshold | +2.67% | +3.29% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.61% | +3.23% |
+| TAC/USDT:USDT | below_1h_threshold | +2.24% | +2.87% |
 
 ## 6. 次に見るべき不足
 
