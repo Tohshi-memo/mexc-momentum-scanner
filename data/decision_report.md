@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T06:25:17.601957+00:00
+- generated_at: 2026-06-18T06:32:58.390581+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7014**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T06:25:12.206897+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63904.4
-- Funnel: target 793 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-18T06:32:53.921305+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=64041.7
+- Funnel: target 793 → liquid 175 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +96.15% | $37,733,800.01 |
-| SYN/USDT:USDT | +63.25% | $5,025,498.67 |
-| O/USDT:USDT | +58.71% | $2,552,189.60 |
-| H/USDT:USDT | +38.14% | $31,925,578.15 |
-| HOME/USDT:USDT | +28.00% | $1,972,961.36 |
+| ESPORTS/USDT:USDT | +100.15% | $37,994,465.77 |
+| SYN/USDT:USDT | +63.39% | $5,050,598.53 |
+| O/USDT:USDT | +59.57% | $2,600,962.67 |
+| H/USDT:USDT | +38.07% | $32,117,018.91 |
+| HOME/USDT:USDT | +26.67% | $1,986,158.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.65% | +3.75% |
-| PLAY/USDT:USDT | below_1h_threshold | +3.44% | +3.53% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.88% | +2.97% |
-| MEGA/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
-| FOLKS/USDT:USDT | below_1h_threshold | +2.63% | +2.72% |
+| UP/USDT:USDT | below_1h_threshold | +3.75% | +3.63% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.32% | +3.20% |
+| MEGA/USDT:USDT | below_1h_threshold | +3.31% | +3.19% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.08% | +2.96% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.63% | +2.51% |
 
 ## 6. 次に見るべき不足
 
