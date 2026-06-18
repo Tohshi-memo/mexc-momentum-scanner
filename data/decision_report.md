@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T05:48:35.858716+00:00
+- generated_at: 2026-06-18T05:57:53.156317+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7010**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T05:46:08.863928+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63900.1
-- Funnel: target 793 → liquid 175 → pre 50 → checked 50 → surge 4 → strict 1
+- 更新: 2026-06-18T05:55:25.836006+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63893.7
+- Funnel: target 793 → liquid 176 → pre 50 → checked 50 → surge 4 → strict 1
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 83.6 >= 65=1, 4h RSI 85.9 >= 65=1
+- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 84.0 >= 65=1, 4h RSI 86.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +94.93% | $36,690,087.13 |
-| SYN/USDT:USDT | +56.90% | $4,818,450.73 |
-| O/USDT:USDT | +46.16% | $2,323,090.65 |
-| H/USDT:USDT | +29.39% | $32,685,735.47 |
-| HOME/USDT:USDT | +29.01% | $1,908,056.46 |
+| ESPORTS/USDT:USDT | +84.20% | $37,028,791.07 |
+| SYN/USDT:USDT | +56.04% | $4,840,042.74 |
+| O/USDT:USDT | +48.36% | $2,365,134.71 |
+| H/USDT:USDT | +31.02% | $33,012,747.73 |
+| HOME/USDT:USDT | +28.43% | $1,938,940.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +4.21% | +4.13% |
-| TRIA/USDT:USDT | below_1h_threshold | +3.05% | +2.97% |
-| MITO/USDT:USDT | below_1h_threshold | +2.44% | +2.37% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.67% | +1.59% |
-| TAC/USDT:USDT | below_1h_threshold | +1.56% | +1.49% |
+| CLO/USDT:USDT | below_1h_threshold | +4.06% | +3.99% |
+| APE/USDT:USDT | below_1h_threshold | +3.18% | +3.12% |
+| MITO/USDT:USDT | below_1h_threshold | +2.21% | +2.15% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +1.90% |
+| TAC/USDT:USDT | below_1h_threshold | +1.82% | +1.75% |
 
 ## 6. 次に見るべき不足
 
