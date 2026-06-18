@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T16:07:26.445937+00:00
+- generated_at: 2026-06-18T16:15:40.460838+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7058**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T16:07:22.769495+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=62564.1
-- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-18T16:15:36.085917+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=62600.0
+- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +6.56% | $50,331,558.61 |
-| H/USDT:USDT | +5.24% | $34,014,158.08 |
-| BEAT/USDT:USDT | +2.81% | $52,564,135.80 |
-| HEI/USDT:USDT | +2.41% | $1,230,360.90 |
-| SYN/USDT:USDT | +2.37% | $16,184,368.66 |
+| TAC/USDT:USDT | +5.57% | $2,226,478.65 |
+| BEAT/USDT:USDT | +5.39% | $53,221,114.39 |
+| ESPORTS/USDT:USDT | +3.12% | $50,470,492.15 |
+| EVAA/USDT:USDT | +3.00% | $1,787,601.95 |
+| GRASS/USDT:USDT | +2.82% | $1,289,158.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_relative_strength | +5.31% | +4.96% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.75% | +2.40% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.48% | +2.13% |
-| HEI/USDT:USDT | below_1h_threshold | +2.42% | +2.06% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.29% | +1.93% |
+| BEAT/USDT:USDT | below_relative_strength | +5.39% | +4.98% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.23% | +2.82% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.17% | +2.76% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.91% | +2.49% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.66% | +2.25% |
 
 ## 6. 次に見るべき不足
 
