@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-18T16:33:49.617635+00:00
+- generated_at: 2026-06-18T16:41:38.295333+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7059**
+- closed shadow trades: **7060**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.22% / filled 20/20。**
-- 全期間 MARKET基準: n=7059, expectancy=-0.05%
+- 全期間 MARKET基準: n=7060, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+2.22%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$215.71** / 初期 $100.00 (+115.71%)
-- 確定: 1882件 (Win 530 / Loss 601 / Flat 751) / skip 1738件
+- 確定: 1882件 (Win 530 / Loss 601 / Flat 751) / skip 1739件
 - 成長率目線: 平均log +0.000408 / 幾何平均 +0.041% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: SYN/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $215.71
@@ -55,38 +55,39 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.40** / 初期 $100.00 (+6.40%)
-- 確定: 308件 (Win 89 / Loss 86 / Flat 133) / skip 162件
+- 確定: 308件 (Win 89 / Loss 86 / Flat 133) / skip 163件
 - 成長率目線: 平均log +0.000202 / 幾何平均 +0.020% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MITO/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $106.40
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T16:33:40.025651+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=62563.6
-- Funnel: target 795 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-18T16:41:27.903046+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=62649.9
+- Funnel: target 795 → liquid 171 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=43, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +7.28% | $1,820,222.47 |
-| ESPORTS/USDT:USDT | +6.79% | $50,705,718.48 |
-| VELVET/USDT:USDT | +5.81% | $17,414,674.61 |
-| TAC/USDT:USDT | +4.98% | $2,251,825.32 |
-| GRASS/USDT:USDT | +4.52% | $1,352,357.10 |
+| ESPORTS/USDT:USDT | +10.31% | $50,847,382.54 |
+| EVAA/USDT:USDT | +6.23% | $1,841,827.70 |
+| TAC/USDT:USDT | +5.90% | $2,258,824.96 |
+| VELVET/USDT:USDT | +5.86% | $17,617,749.29 |
+| AIOT/USDT:USDT | +5.35% | $1,335,667.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_relative_strength | +5.16% | +4.81% |
-| GRASS/USDT:USDT | below_1h_threshold | +4.52% | +4.17% |
-| AIOT/USDT:USDT | below_1h_threshold | +4.32% | +3.97% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.19% | +3.83% |
-| H/USDT:USDT | below_1h_threshold | +3.50% | +3.14% |
+| AIOT/USDT:USDT | below_relative_strength | +5.36% | +4.86% |
+| BEAT/USDT:USDT | below_relative_strength | +5.22% | +4.73% |
+| GRASS/USDT:USDT | below_relative_strength | +5.13% | +4.63% |
+| PLAY/USDT:USDT | below_1h_threshold | +4.01% | +3.51% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.90% | +2.41% |
 
 ## 6. 次に見るべき不足
 
