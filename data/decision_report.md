@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T08:45:25.168261+00:00
+- generated_at: 2026-06-18T08:53:20.320214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7026**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T08:45:15.429188+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64485.4
-- Funnel: target 793 → liquid 174 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1
+- 更新: 2026-06-18T08:53:11.120118+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64429.3
+- Funnel: target 793 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +100.26% | $41,832,052.88 |
-| O/USDT:USDT | +70.67% | $4,175,921.30 |
-| SYN/USDT:USDT | +59.03% | $5,769,779.96 |
-| HOME/USDT:USDT | +39.89% | $2,240,800.57 |
-| FOLKS/USDT:USDT | +24.81% | $2,920,713.31 |
+| ESPORTS/USDT:USDT | +87.50% | $42,219,193.44 |
+| O/USDT:USDT | +69.22% | $4,244,476.98 |
+| SYN/USDT:USDT | +58.22% | $5,809,011.37 |
+| HOME/USDT:USDT | +38.44% | $2,274,148.51 |
+| H/USDT:USDT | +31.83% | $34,002,302.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +3.98% | +3.96% |
-| LAB/USDT:USDT | below_1h_threshold | +3.81% | +3.79% |
-| COAI/USDT:USDT | below_1h_threshold | +3.72% | +3.69% |
-| UP/USDT:USDT | below_1h_threshold | +3.39% | +3.36% |
-| MITO/USDT:USDT | below_1h_threshold | +3.17% | +3.15% |
+| MITO/USDT:USDT | below_1h_threshold | +3.83% | +3.90% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.76% | +3.82% |
+| UP/USDT:USDT | below_1h_threshold | +3.05% | +3.12% |
+| LAB/USDT:USDT | below_1h_threshold | +3.00% | +3.07% |
+| HOME/USDT:USDT | below_1h_threshold | +2.70% | +2.77% |
 
 ## 6. 次に見るべき不足
 
