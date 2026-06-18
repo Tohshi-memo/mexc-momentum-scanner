@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T18:31:28.535471+00:00
+- generated_at: 2026-06-18T18:37:18.099140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7068**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T18:31:23.122692+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=62740.2
-- Funnel: target 795 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-06-18T18:37:11.430864+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=62758.6
+- Funnel: target 795 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +19.71% | $28,072,695.38 |
-| PLAY/USDT:USDT | +10.22% | $1,628,731.56 |
-| BASED/USDT:USDT | +9.48% | $1,023,073.43 |
-| ZEREBRO/USDT:USDT | +9.24% | $1,270,444.23 |
-| LAB/USDT:USDT | +7.05% | $25,883,944.48 |
+| VELVET/USDT:USDT | +20.20% | $28,479,434.55 |
+| ZEREBRO/USDT:USDT | +10.42% | $1,301,996.19 |
+| PLAY/USDT:USDT | +9.97% | $1,642,737.86 |
+| BASED/USDT:USDT | +8.87% | $1,076,967.35 |
+| LAB/USDT:USDT | +8.85% | $26,197,471.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.97% | +4.72% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +4.76% | +4.51% |
-| BASED/USDT:USDT | below_1h_threshold | +3.81% | +3.56% |
-| JTO/USDT:USDT | below_1h_threshold | +2.37% | +2.12% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.92% | +1.67% |
+| RE/USDT:USDT | below_1h_threshold | +4.78% | +4.49% |
+| BASED/USDT:USDT | below_1h_threshold | +3.49% | +3.20% |
+| LAB/USDT:USDT | below_1h_threshold | +2.41% | +2.13% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.82% | +1.54% |
+| JTO/USDT:USDT | below_1h_threshold | +1.66% | +1.38% |
 
 ## 6. 次に見るべき不足
 
