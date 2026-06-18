@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T20:47:43.135304+00:00
+- generated_at: 2026-06-18T20:54:29.786407+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7077**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T20:47:37.899053+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=63064.2
-- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.5 >= 65=1, 4h RSI 87.9 >= 65=1, 4h RSI 69.7 >= 65=1, 4h RSI 66.9 >= 65=1
+- 更新: 2026-06-18T20:54:24.829288+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=63087.7
+- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.9 >= 65=1, 4h RSI 70.1 >= 65=1, 4h RSI 66.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +23.22% | $2,219,935.72 |
-| SYN/USDT:USDT | +21.25% | $18,867,347.82 |
-| BASED/USDT:USDT | +15.89% | $1,601,885.17 |
-| EDEN/USDT:USDT | +15.50% | $1,411,934.34 |
-| PLAY/USDT:USDT | +14.33% | $1,900,171.46 |
+| SYN/USDT:USDT | +24.84% | $19,053,357.02 |
+| ZEREBRO/USDT:USDT | +21.62% | $2,274,623.83 |
+| BASED/USDT:USDT | +16.73% | $1,673,680.89 |
+| PLAY/USDT:USDT | +14.28% | $1,904,872.01 |
+| EDEN/USDT:USDT | +13.93% | $1,451,752.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.32% | +4.10% |
-| DYDX/USDT:USDT | below_1h_threshold | +3.91% | +3.69% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.58% | +3.36% |
-| TIA/USDT:USDT | below_1h_threshold | +2.62% | +2.40% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.46% | +2.24% |
+| ZEREBRO/USDT:USDT | below_relative_strength | +5.25% | +4.99% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.43% | +4.17% |
+| DYDX/USDT:USDT | below_1h_threshold | +4.34% | +4.09% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.89% | +2.63% |
+| WLD/USDT:USDT | below_1h_threshold | +2.87% | +2.61% |
 
 ## 6. 次に見るべき不足
 
