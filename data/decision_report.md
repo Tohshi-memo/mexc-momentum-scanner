@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T20:33:59.935705+00:00
+- generated_at: 2026-06-18T20:40:55.838015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7077**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T20:33:55.463421+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=63122.2
-- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.2 >= 65=1
+- 更新: 2026-06-18T20:40:51.003892+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=63110.5
+- Funnel: target 795 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.1 >= 65=1, 4h RSI 66.4 >= 65=1, 4h RSI 68.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +19.34% | $18,578,654.94 |
-| ZEREBRO/USDT:USDT | +19.21% | $2,055,209.77 |
-| EDEN/USDT:USDT | +14.88% | $1,334,296.76 |
-| BASED/USDT:USDT | +13.91% | $1,408,327.31 |
-| PLAY/USDT:USDT | +13.60% | $1,863,931.06 |
+| ZEREBRO/USDT:USDT | +20.84% | $2,089,421.19 |
+| SYN/USDT:USDT | +17.12% | $18,719,611.17 |
+| EDEN/USDT:USDT | +15.11% | $1,376,752.31 |
+| BASED/USDT:USDT | +14.63% | $1,567,743.56 |
+| PLAY/USDT:USDT | +14.36% | $1,886,766.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +4.92% | +4.61% |
-| EIGEN/USDT:USDT | below_1h_threshold | +4.70% | +4.39% |
-| DYDX/USDT:USDT | below_1h_threshold | +4.26% | +3.94% |
-| ENJ/USDT:USDT | below_1h_threshold | +3.85% | +3.54% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.76% | +3.44% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +4.57% | +4.28% |
+| DYDX/USDT:USDT | below_1h_threshold | +4.08% | +3.79% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.97% | +3.68% |
+| ENJ/USDT:USDT | below_1h_threshold | +3.13% | +2.84% |
+| TIA/USDT:USDT | below_1h_threshold | +2.85% | +2.56% |
 
 ## 6. 次に見るべき不足
 
