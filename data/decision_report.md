@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T08:03:23.275056+00:00
+- generated_at: 2026-06-18T08:10:18.267977+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7023**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T08:03:17.987760+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=64407.2
+- 更新: 2026-06-18T08:10:14.027259+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=64588.3
 - Funnel: target 793 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +107.99% | $40,618,703.65 |
-| O/USDT:USDT | +69.50% | $3,747,562.62 |
-| SYN/USDT:USDT | +64.37% | $5,545,672.59 |
-| HOME/USDT:USDT | +35.39% | $2,168,912.24 |
-| H/USDT:USDT | +25.45% | $31,650,607.43 |
+| ESPORTS/USDT:USDT | +105.45% | $40,815,742.44 |
+| O/USDT:USDT | +69.89% | $3,794,151.96 |
+| SYN/USDT:USDT | +65.17% | $5,576,670.11 |
+| HOME/USDT:USDT | +35.74% | $2,180,200.44 |
+| FOLKS/USDT:USDT | +22.78% | $2,631,423.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +0.94% | +1.04% |
-| SYN/USDT:USDT | below_1h_threshold | +0.84% | +0.94% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.73% | +0.83% |
-| HOME/USDT:USDT | below_1h_threshold | +0.64% | +0.74% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.72% |
+| AGT/USDT:USDT | below_1h_threshold | +2.20% | +2.01% |
+| US/USDT:USDT | below_1h_threshold | +2.00% | +1.81% |
+| COAI/USDT:USDT | below_1h_threshold | +1.39% | +1.20% |
+| SYN/USDT:USDT | below_1h_threshold | +1.32% | +1.14% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.30% | +1.12% |
 
 ## 6. 次に見るべき不足
 
