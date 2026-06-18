@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T21:26:08.406193+00:00
+- generated_at: 2026-06-18T21:34:08.664170+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7079**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T21:26:05.609706+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=62949.0
+- 更新: 2026-06-18T21:34:04.361396+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=62948.7
 - Funnel: target 795 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +22.49% | $2,402,986.08 |
-| SYN/USDT:USDT | +19.18% | $18,301,891.72 |
-| BASED/USDT:USDT | +16.65% | $2,156,068.16 |
-| EDEN/USDT:USDT | +14.13% | $1,529,200.38 |
-| PLAY/USDT:USDT | +12.91% | $1,892,064.18 |
+| ZEREBRO/USDT:USDT | +23.59% | $2,418,922.58 |
+| EDEN/USDT:USDT | +18.03% | $1,616,382.79 |
+| BASED/USDT:USDT | +17.78% | $2,234,618.75 |
+| SYN/USDT:USDT | +16.53% | $18,419,981.21 |
+| EIGEN/USDT:USDT | +11.23% | $2,535,309.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +2.82% | +3.00% |
-| TAC/USDT:USDT | below_1h_threshold | +2.26% | +2.44% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.56% | +1.74% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.12% | +1.30% |
-| ENJ/USDT:USDT | below_1h_threshold | +0.87% | +1.05% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.60% | +4.78% |
+| LAB/USDT:USDT | below_1h_threshold | +3.09% | +3.27% |
+| JTO/USDT:USDT | below_1h_threshold | +3.04% | +3.22% |
+| TAC/USDT:USDT | below_1h_threshold | +2.16% | +2.34% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.74% | +1.92% |
 
 ## 6. 次に見るべき不足
 
