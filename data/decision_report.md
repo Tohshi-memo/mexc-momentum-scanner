@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T18:59:08.935840+00:00
+- generated_at: 2026-06-18T19:06:39.052705+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7069**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T18:58:59.499616+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=62677.3
-- Funnel: target 795 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.2 >= 65=1, 4h RSI 72.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-18T19:06:34.760497+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=62649.5
+- Funnel: target 795 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +20.35% | $29,272,302.19 |
-| ZEREBRO/USDT:USDT | +16.65% | $1,543,502.61 |
-| PLAY/USDT:USDT | +15.53% | $1,710,469.88 |
-| EDEN/USDT:USDT | +13.33% | $1,103,595.50 |
-| FOLKS/USDT:USDT | +7.95% | $6,059,217.89 |
+| VELVET/USDT:USDT | +21.24% | $28,741,669.46 |
+| PLAY/USDT:USDT | +15.64% | $1,697,534.35 |
+| ZEREBRO/USDT:USDT | +15.11% | $1,613,737.01 |
+| EDEN/USDT:USDT | +10.55% | $1,079,127.66 |
+| BASED/USDT:USDT | +7.34% | $1,087,461.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.92% | +3.77% |
-| BASED/USDT:USDT | below_1h_threshold | +2.04% | +1.89% |
-| OP/USDT:USDT | below_1h_threshold | +1.81% | +1.65% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.62% | +1.47% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.53% | +1.37% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.94% | +1.99% |
+| LAB/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
+| HEI/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.87% | +0.93% |
+| RE/USDT:USDT | below_1h_threshold | +0.71% | +0.77% |
 
 ## 6. 次に見るべき不足
 
