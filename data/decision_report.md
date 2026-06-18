@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-06-18T06:52:00.649632+00:00
+- generated_at: 2026-06-18T06:59:41.877010+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7015**
+- closed shadow trades: **7016**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.79% / filled 20/20。**
-- 全期間 MARKET基準: n=7015, expectancy=-0.06%
-- 直近20件 MARKET基準: n=20, expectancy=+0.79%
+- 結論: **MARKET SHORTは実行候補。直近EV +1.39% / filled 20/20。**
+- 全期間 MARKET基準: n=7016, expectancy=-0.05%
+- 直近20件 MARKET基準: n=20, expectancy=+1.39%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.79% | **+0.79%** |
+| MARKET | 20/20 | 100.0% | +1.39% | **+1.39%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.79% | **+0.79%** |
+| MARKET | 20/20 | 100.0% | +1.39% | **+1.39%** |
+| ASK | 20/20 | 100.0% | +0.66% | **+0.66%** |
 | LIMIT_5PCT | 4/20 | 20.0% | +1.48% | **+0.30%** |
+| LIMIT_ATR | 10/20 | 50.0% | +0.45% | **+0.23%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
-| LIMIT_ATR | 11/20 | 55.0% | +0.22% | **+0.12%** |
-| ASK | 20/20 | 100.0% | +0.07% | **+0.07%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK_LONG | 20/20 | 100.0% | +0.30% | **+0.30%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.22% | **+0.22%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.20% | **+0.20%** |
-| LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.23% | **+0.17%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +1.10% | **+0.16%** |
+| LIMIT_8PCT_LONG | 9/20 | 45.0% | +0.02% | **+0.01%** |
+| LIMIT_1PCT_LONG | 16/20 | 80.0% | -0.04% | **-0.03%** |
+| ASK_LONG | 20/20 | 100.0% | -0.10% | **-0.10%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,48 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$214.01** / 初期 $100.00 (+114.01%)
-- 確定: 1861件 (Win 520 / Loss 590 / Flat 751) / skip 1715件
-- 成長率目線: 平均log +0.000409 / 幾何平均 +0.041% per trade / maxDD +7.25%
+- 残高: **$212.94** / 初期 $100.00 (+112.94%)
+- 確定: 1862件 (Win 520 / Loss 591 / Flat 751) / skip 1715件
+- 成長率目線: 平均log +0.000406 / 幾何平均 +0.041% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ESPORTS/USDT:USDT `MARKET_LONG` TP_HIT account +1.00% 残高後 $214.01
+- 最新: ESPORTS/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $212.94
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$105.80** / 初期 $100.00 (+5.80%)
-- 確定: 288件 (Win 81 / Loss 76 / Flat 131) / skip 138件
-- 成長率目線: 平均log +0.000196 / 幾何平均 +0.020% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0609 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: ESPORTS/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $105.80
+- 残高: **$105.43** / 初期 $100.00 (+5.43%)
+- 確定: 289件 (Win 81 / Loss 77 / Flat 131) / skip 138件
+- 成長率目線: 平均log +0.000183 / 幾何平均 +0.018% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0586 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: ESPORTS/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $105.43
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T06:51:56.157539+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64063.7
-- Funnel: target 793 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
+- 更新: 2026-06-18T06:59:36.506948+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=64070.2
+- Funnel: target 793 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 70.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +113.73% | $38,680,720.85 |
-| O/USDT:USDT | +62.97% | $2,842,720.98 |
-| SYN/USDT:USDT | +59.03% | $5,127,730.75 |
-| H/USDT:USDT | +35.50% | $32,598,103.50 |
-| HOME/USDT:USDT | +28.00% | $2,021,219.06 |
+| ESPORTS/USDT:USDT | +112.42% | $38,962,837.59 |
+| O/USDT:USDT | +64.48% | $2,955,683.51 |
+| SYN/USDT:USDT | +55.17% | $5,177,281.46 |
+| H/USDT:USDT | +34.29% | $32,726,326.97 |
+| HOME/USDT:USDT | +27.72% | $2,030,031.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.92% | +4.76% |
-| LAB/USDT:USDT | below_1h_threshold | +4.30% | +4.15% |
-| MEGA/USDT:USDT | below_1h_threshold | +3.86% | +3.71% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.30% | +3.15% |
-| UP/USDT:USDT | below_1h_threshold | +3.13% | +2.98% |
+| LAB/USDT:USDT | below_1h_threshold | +4.27% | +4.11% |
+| H/USDT:USDT | below_1h_threshold | +3.85% | +3.69% |
+| UP/USDT:USDT | below_1h_threshold | +3.72% | +3.56% |
+| RUNE/USDT:USDT | below_1h_threshold | +3.04% | +2.88% |
+| US/USDT:USDT | below_1h_threshold | +2.89% | +2.73% |
 
 ## 6. 次に見るべき不足
 
