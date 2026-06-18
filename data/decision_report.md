@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T05:39:25.142152+00:00
+- generated_at: 2026-06-18T05:48:35.858716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7010**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T05:39:17.553883+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63862.8
-- Funnel: target 793 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.2 >= 65=1, 4h RSI 83.5 >= 65=1
+- 更新: 2026-06-18T05:46:08.863928+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63900.1
+- Funnel: target 793 → liquid 175 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 83.6 >= 65=1, 4h RSI 85.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +96.48% | $36,551,120.20 |
-| O/USDT:USDT | +58.32% | $2,252,933.33 |
-| SYN/USDT:USDT | +56.21% | $4,799,126.71 |
-| H/USDT:USDT | +34.56% | $32,504,598.74 |
-| HOME/USDT:USDT | +31.83% | $1,851,194.07 |
+| ESPORTS/USDT:USDT | +94.93% | $36,690,087.13 |
+| SYN/USDT:USDT | +56.90% | $4,818,450.73 |
+| O/USDT:USDT | +46.16% | $2,323,090.65 |
+| H/USDT:USDT | +29.39% | $32,685,735.47 |
+| HOME/USDT:USDT | +29.01% | $1,908,056.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +4.57% | +4.55% |
-| EVAA/USDT:USDT | below_1h_threshold | +4.25% | +4.24% |
-| RE/USDT:USDT | below_1h_threshold | +3.20% | +3.18% |
-| CLO/USDT:USDT | below_1h_threshold | +2.25% | +2.23% |
-| UP/USDT:USDT | below_1h_threshold | +1.65% | +1.64% |
+| CLO/USDT:USDT | below_1h_threshold | +4.21% | +4.13% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.05% | +2.97% |
+| MITO/USDT:USDT | below_1h_threshold | +2.44% | +2.37% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.67% | +1.59% |
+| TAC/USDT:USDT | below_1h_threshold | +1.56% | +1.49% |
 
 ## 6. 次に見るべき不足
 
