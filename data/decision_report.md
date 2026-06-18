@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-18T21:08:15.137057+00:00
+- generated_at: 2026-06-18T21:15:17.076831+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7077**
+- closed shadow trades: **7078**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7077, expectancy=-0.05%
+- 全期間 MARKET基準: n=7078, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,35 +35,35 @@
 | MARKET_LONG | 20/20 | 100.0% | +1.08% | **+1.08%** |
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +1.08% | **+0.70%** |
 | ASK_LONG | 20/20 | 100.0% | +0.69% | **+0.69%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.55% | **+0.31%** |
+| LIMIT_3PCT_LONG | 11/20 | 55.0% | +0.47% | **+0.26%** |
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$102.48** / 初期 $100.00 (+2.48%)
-- 確定トレード: 16件 (TP 7 / SL 9 / EXP 0)
-- 最新: FOLKS/USDT:USDT TP_HIT PnL +8.00% 残高後 $102.48
+- 残高: **$103.51** / 初期 $100.00 (+3.51%)
+- 確定トレード: 17件 (TP 8 / SL 9 / EXP 0)
+- 最新: BEAT/USDT:USDT TP_HIT PnL +8.00% 残高後 $103.51
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$224.45** / 初期 $100.00 (+124.45%)
-- 確定: 1897件 (Win 540 / Loss 606 / Flat 751) / skip 1741件
-- 成長率目線: 平均log +0.000426 / 幾何平均 +0.043% per trade / maxDD +7.25%
+- 残高: **$223.32** / 初期 $100.00 (+123.32%)
+- 確定: 1898件 (Win 540 / Loss 607 / Flat 751) / skip 1741件
+- 成長率目線: 平均log +0.000423 / 幾何平均 +0.042% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ZEREBRO/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $224.45
+- 最新: BEAT/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $223.32
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.40** / 初期 $100.00 (+6.40%)
-- 確定: 308件 (Win 89 / Loss 86 / Flat 133) / skip 180件
+- 確定: 308件 (Win 89 / Loss 86 / Flat 133) / skip 181件
 - 成長率目線: 平均log +0.000202 / 幾何平均 +0.020% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MITO/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $106.40
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T21:08:10.856155+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63068.4
+- 更新: 2026-06-18T21:15:11.693130+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=62895.5
 - Funnel: target 795 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEREBRO/USDT:USDT | +22.74% | $2,297,179.96 |
-| SYN/USDT:USDT | +18.23% | $18,116,745.60 |
-| BASED/USDT:USDT | +15.74% | $1,918,665.96 |
-| PLAY/USDT:USDT | +13.24% | $1,857,018.67 |
-| EDEN/USDT:USDT | +12.65% | $1,468,467.42 |
+| ZEREBRO/USDT:USDT | +21.65% | $2,341,013.54 |
+| SYN/USDT:USDT | +19.25% | $18,189,008.67 |
+| BASED/USDT:USDT | +14.81% | $2,032,351.73 |
+| EDEN/USDT:USDT | +13.21% | $1,490,735.26 |
+| PLAY/USDT:USDT | +12.29% | $1,865,727.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TIA/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.65% | +0.64% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.58% | +0.57% |
-| ENJ/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
-| FET/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.92% | +1.18% |
+| ENJ/USDT:USDT | below_1h_threshold | +0.53% | +0.80% |
+| TAC/USDT:USDT | below_1h_threshold | +0.51% | +0.77% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.49% | +0.75% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.30% | +0.57% |
 
 ## 6. 次に見るべき不足
 
