@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-18T16:48:42.351862+00:00
+- generated_at: 2026-06-18T16:55:40.445924+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7061**
 
@@ -62,32 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-18T16:48:28.123016+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=62681.9
-- Funnel: target 795 → liquid 171 → pre 50 → checked 50 → surge 6 → strict 5
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1
+- 更新: 2026-06-18T16:55:27.253218+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=62627.8
+- Funnel: target 795 → liquid 171 → pre 50 → checked 50 → surge 5 → strict 5
+- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +15.20% | $18,384,122.21 |
-| BEAT/USDT:USDT | +8.89% | $55,685,034.25 |
-| EVAA/USDT:USDT | +7.78% | $1,855,472.66 |
-| ESPORTS/USDT:USDT | +7.10% | $50,990,211.28 |
-| TAC/USDT:USDT | +5.87% | $2,266,590.05 |
+| VELVET/USDT:USDT | +15.89% | $18,955,338.84 |
+| ESPORTS/USDT:USDT | +10.21% | $51,060,034.43 |
+| BEAT/USDT:USDT | +6.71% | $56,163,710.37 |
+| EVAA/USDT:USDT | +6.69% | $1,863,482.82 |
+| PLAY/USDT:USDT | +5.53% | $1,669,346.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.47% | +3.92% |
-| GRASS/USDT:USDT | below_1h_threshold | +4.37% | +3.83% |
-| RE/USDT:USDT | below_1h_threshold | +4.24% | +3.69% |
-| H/USDT:USDT | below_1h_threshold | +3.13% | +2.59% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.80% | +2.25% |
+| TAC/USDT:USDT | below_relative_strength | +5.03% | +4.57% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.95% | +4.49% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.47% | +4.01% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.98% | +3.52% |
+| COAI/USDT:USDT | below_1h_threshold | +3.46% | +3.00% |
 
 ## 6. 次に見るべき不足
 
