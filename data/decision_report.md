@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-19T23:23:01.935820+00:00
+- generated_at: 2026-06-19T23:28:27.524113+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7178**
+- closed shadow trades: **7179**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7178, expectancy=-0.05%
+- 全期間 MARKET基準: n=7179, expectancy=-0.06%
 - 直近20件 MARKET基準: n=20, expectancy=-0.03%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,16 +22,16 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | ASK | 20/20 | 100.0% | +0.59% | **+0.59%** |
-| LIMIT_BB3S | 3/16 | 18.8% | +1.30% | **+0.24%** |
-| LIMIT_5PCT | 7/20 | 35.0% | +0.54% | **+0.19%** |
+| LIMIT_BB3S | 3/17 | 17.6% | +1.30% | **+0.23%** |
 | LIMIT_3PCT | 15/20 | 75.0% | +0.22% | **+0.16%** |
-| LIMIT_FIB1272 | 8/20 | 40.0% | +0.29% | **+0.12%** |
+| LIMIT_5PCT | 6/20 | 30.0% | +0.48% | **+0.14%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +0.47% | **+0.09%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.40% | **+1.19%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | +1.61% | **+1.45%** |
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.19% | **+0.83%** |
 | LIMIT_3PCT_LONG | 13/20 | 65.0% | +0.89% | **+0.58%** |
 | LIMIT_FIB1272_LONG | 8/20 | 40.0% | +1.07% | **+0.43%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$225.97** / 初期 $100.00 (+125.97%)
-- 確定: 1969件 (Win 571 / Loss 640 / Flat 758) / skip 1770件
+- 確定: 1969件 (Win 571 / Loss 640 / Flat 758) / skip 1771件
 - 成長率目線: 平均log +0.000414 / 幾何平均 +0.041% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BICO/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $225.97
@@ -55,15 +55,15 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.03** / 初期 $100.00 (+6.03%)
-- 確定: 310件 (Win 89 / Loss 87 / Flat 134) / skip 279件
+- 確定: 310件 (Win 89 / Loss 87 / Flat 134) / skip 280件
 - 成長率目線: 平均log +0.000189 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $106.03
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T23:22:57.594962+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63261.1
+- 更新: 2026-06-19T23:28:23.181254+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63268.2
 - Funnel: target 795 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +30.91% | $11,563,129.24 |
-| BTW/USDT:USDT | +27.01% | $8,942,663.27 |
-| RE/USDT:USDT | +19.87% | $70,034,449.23 |
-| BLESS/USDT:USDT | +19.69% | $4,732,375.88 |
-| PORTAL/USDT:USDT | +8.53% | $1,881,598.91 |
+| BICO/USDT:USDT | +32.24% | $11,663,641.34 |
+| BTW/USDT:USDT | +26.81% | $9,039,703.03 |
+| RE/USDT:USDT | +20.36% | $70,865,271.55 |
+| BLESS/USDT:USDT | +19.72% | $4,751,820.43 |
+| RIF/USDT:USDT | +9.16% | $1,715,314.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.39% | +2.43% |
-| BTW/USDT:USDT | below_1h_threshold | +2.36% | +2.40% |
-| BICO/USDT:USDT | below_1h_threshold | +2.32% | +2.36% |
-| GUA/USDT:USDT | below_1h_threshold | +1.70% | +1.74% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
+| BICO/USDT:USDT | below_1h_threshold | +2.92% | +2.95% |
+| BTW/USDT:USDT | below_1h_threshold | +2.12% | +2.15% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
+| RE/USDT:USDT | below_1h_threshold | +1.61% | +1.64% |
+| GUA/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
 
 ## 6. 次に見るべき不足
 
