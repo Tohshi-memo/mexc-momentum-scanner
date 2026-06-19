@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T01:14:22.989585+00:00
+- generated_at: 2026-06-19T01:21:18.918036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7090**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T01:14:17.562789+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=62913.1
-- Funnel: target 795 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-19T01:21:14.614392+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63019.3
+- Funnel: target 795 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +103.29% | $5,432,721.12 |
-| ZEREBRO/USDT:USDT | +24.43% | $3,207,948.87 |
-| BASED/USDT:USDT | +23.69% | $3,365,860.02 |
-| EDEN/USDT:USDT | +16.72% | $2,073,109.32 |
-| VELVET/USDT:USDT | +16.63% | $38,614,542.13 |
+| ASTEROID/USDT:USDT | +94.42% | $5,528,045.40 |
+| BASED/USDT:USDT | +26.60% | $3,406,461.01 |
+| ZEREBRO/USDT:USDT | +24.66% | $3,222,973.41 |
+| EDEN/USDT:USDT | +15.50% | $2,084,345.37 |
+| EIGEN/USDT:USDT | +13.96% | $3,346,959.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +1.56% | +1.69% |
-| TAC/USDT:USDT | below_1h_threshold | +1.43% | +1.55% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.35% | +1.48% |
-| DYDX/USDT:USDT | below_1h_threshold | +0.67% | +0.80% |
-| EDEN/USDT:USDT | below_1h_threshold | +0.63% | +0.75% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +4.38% | +4.34% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.37% | +1.33% |
+| MYX/USDT:USDT | below_1h_threshold | +1.28% | +1.24% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.23% |
+| BASED/USDT:USDT | below_1h_threshold | +1.17% | +1.12% |
 
 ## 6. 次に見るべき不足
 
