@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T04:43:06.590658+00:00
+- generated_at: 2026-06-19T04:50:05.243654+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7101**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T04:43:00.073523+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=62580.1
-- Funnel: target 795 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1
+- 更新: 2026-06-19T04:50:00.445824+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=62621.0
+- Funnel: target 795 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 77.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +69.85% | $6,712,600.67 |
-| BASED/USDT:USDT | +19.34% | $5,567,234.26 |
-| ZEREBRO/USDT:USDT | +18.50% | $3,616,752.89 |
-| HEI/USDT:USDT | +15.09% | $1,344,287.66 |
-| BTW/USDT:USDT | +14.58% | $3,358,502.32 |
+| ASTEROID/USDT:USDT | +68.94% | $6,767,788.32 |
+| ZEREBRO/USDT:USDT | +18.61% | $3,625,394.73 |
+| BASED/USDT:USDT | +18.03% | $5,608,447.34 |
+| HEI/USDT:USDT | +17.62% | $1,355,580.13 |
+| BTW/USDT:USDT | +15.34% | $3,382,920.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.76% | +4.03% |
-| HEI/USDT:USDT | below_1h_threshold | +3.74% | +4.00% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.53% | +3.80% |
-| BR/USDT:USDT | below_1h_threshold | +1.94% | +2.21% |
-| TWLOSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.79% |
+| BTW/USDT:USDT | below_1h_threshold | +4.56% | +4.76% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.53% | +3.73% |
+| TWLOSTOCK/USDT:USDT | below_1h_threshold | +2.27% | +2.46% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.79% | +1.99% |
+| RIF/USDT:USDT | below_1h_threshold | +1.24% | +1.43% |
 
 ## 6. 次に見るべき不足
 
