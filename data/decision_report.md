@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T09:26:39.511132+00:00
+- generated_at: 2026-06-19T09:33:35.989278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7115**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T09:26:32.813078+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=62392.5
-- Funnel: target 795 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 89.6 >= 65=1
+- 更新: 2026-06-19T09:33:31.458236+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=62415.8
+- Funnel: target 795 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +76.90% | $8,030,244.00 |
-| HEI/USDT:USDT | +64.40% | $5,961,543.99 |
-| BTW/USDT:USDT | +27.74% | $3,213,992.23 |
-| ZEREBRO/USDT:USDT | +18.37% | $3,929,998.67 |
-| BASED/USDT:USDT | +15.96% | $7,327,908.41 |
+| ASTEROID/USDT:USDT | +75.42% | $8,049,050.68 |
+| HEI/USDT:USDT | +61.40% | $6,215,405.13 |
+| BTW/USDT:USDT | +28.00% | $3,237,020.94 |
+| ZEREBRO/USDT:USDT | +17.48% | $3,955,318.98 |
+| BASED/USDT:USDT | +15.34% | $7,358,048.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.42% | +3.71% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.85% | +3.14% |
-| BTW/USDT:USDT | below_1h_threshold | +0.78% | +1.07% |
-| ENJ/USDT:USDT | below_1h_threshold | +0.59% | +0.87% |
-| XMR/USDT:USDT | below_1h_threshold | +0.45% | +0.74% |
+| HEI/USDT:USDT | below_1h_threshold | +3.63% | +3.88% |
+| SYN/USDT:USDT | below_1h_threshold | +3.57% | +3.82% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.14% | +2.39% |
+| VVV/USDT:USDT | below_1h_threshold | +1.90% | +2.15% |
+| ENJ/USDT:USDT | below_1h_threshold | +1.28% | +1.53% |
 
 ## 6. 次に見るべき不足
 
