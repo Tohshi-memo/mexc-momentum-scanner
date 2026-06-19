@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T11:33:48.863509+00:00
+- generated_at: 2026-06-19T11:40:52.347148+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7133**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T11:33:42.596699+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=62612.9
-- Funnel: target 795 → liquid 162 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 71.2 >= 65=1, 4h RSI 82.7 >= 65=1
+- 更新: 2026-06-19T11:40:47.055447+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=62594.3
+- Funnel: target 795 → liquid 163 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 70.3 >= 65=1, 4h RSI 82.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +78.04% | $8,384,356.73 |
-| RE/USDT:USDT | +52.40% | $28,148,249.36 |
-| HEI/USDT:USDT | +44.70% | $8,424,964.15 |
-| BTW/USDT:USDT | +33.77% | $3,486,910.25 |
-| ZEREBRO/USDT:USDT | +30.69% | $4,438,802.37 |
+| ASTEROID/USDT:USDT | +79.97% | $8,393,952.57 |
+| RE/USDT:USDT | +55.43% | $28,765,371.88 |
+| HEI/USDT:USDT | +40.89% | $8,582,560.37 |
+| BICO/USDT:USDT | +39.92% | $1,002,269.26 |
+| BTW/USDT:USDT | +37.71% | $3,579,598.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +3.83% | +3.66% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.35% | +2.18% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +2.35% | +2.18% |
-| AGT/USDT:USDT | below_1h_threshold | +2.04% | +1.87% |
-| CLO/USDT:USDT | below_1h_threshold | +1.35% | +1.18% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.33% | +3.19% |
+| BTW/USDT:USDT | below_1h_threshold | +3.22% | +3.08% |
+| AGT/USDT:USDT | below_1h_threshold | +2.99% | +2.85% |
+| CLO/USDT:USDT | below_1h_threshold | +2.94% | +2.80% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.51% | +2.37% |
 
 ## 6. 次に見るべき不足
 
