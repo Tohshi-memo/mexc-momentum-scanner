@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T07:12:04.447457+00:00
+- generated_at: 2026-06-19T07:19:33.535117+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7111**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$104.02** / 初期 $100.00 (+4.02%)
-- 確定トレード: 19件 (TP 9 / SL 10 / EXP 0)
-- 最新: BEAT/USDT:USDT TP_HIT PnL +8.00% 残高後 $104.02
+- 残高: **$103.50** / 初期 $100.00 (+3.50%)
+- 確定トレード: 20件 (TP 9 / SL 11 / EXP 0)
+- 最新: AIOT/USDT:USDT SL_HIT PnL -4.00% 残高後 $103.50
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T07:11:58.950449+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62825.4
+- 更新: 2026-06-19T07:19:28.977442+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=62720.0
 - Funnel: target 795 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1
+- Strict後reject: 4h RSI 77.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +78.15% | $7,436,589.21 |
-| HEI/USDT:USDT | +47.46% | $2,583,040.40 |
-| ZEREBRO/USDT:USDT | +18.19% | $3,786,937.81 |
-| BASED/USDT:USDT | +16.33% | $6,600,827.08 |
-| BTW/USDT:USDT | +10.99% | $3,125,029.64 |
+| ASTEROID/USDT:USDT | +78.04% | $7,463,302.48 |
+| HEI/USDT:USDT | +49.07% | $2,746,140.42 |
+| ZEREBRO/USDT:USDT | +18.47% | $3,802,545.05 |
+| BASED/USDT:USDT | +15.38% | $6,660,485.47 |
+| BTW/USDT:USDT | +13.61% | $3,146,806.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +3.14% | +3.21% |
-| RIF/USDT:USDT | below_1h_threshold | +1.40% | +1.46% |
-| JTO/USDT:USDT | below_1h_threshold | +0.96% | +1.02% |
-| ENJ/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.56% | +0.63% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.59% | +4.82% |
+| HEI/USDT:USDT | below_1h_threshold | +4.03% | +4.26% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.11% | +2.34% |
+| CLO/USDT:USDT | below_1h_threshold | +1.73% | +1.96% |
+| BTW/USDT:USDT | below_1h_threshold | +1.37% | +1.61% |
 
 ## 6. 次に見るべき不足
 
