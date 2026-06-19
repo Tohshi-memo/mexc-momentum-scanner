@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T17:34:41.541986+00:00
+- generated_at: 2026-06-19T17:41:45.802641+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7159**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T17:34:36.187272+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=62990.5
-- Funnel: target 795 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-06-19T17:41:41.106625+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=63034.0
+- Funnel: target 795 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.3 >= 65=1
+- Strict後reject: 4h RSI 90.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +25.51% | $5,188,954.60 |
-| BLESS/USDT:USDT | +17.44% | $1,490,822.12 |
-| MYX/USDT:USDT | +9.09% | $3,375,860.83 |
-| FOLKS/USDT:USDT | +4.31% | $1,773,200.22 |
-| BASED/USDT:USDT | +4.17% | $8,554,131.94 |
+| BICO/USDT:USDT | +25.11% | $5,374,186.32 |
+| BLESS/USDT:USDT | +17.49% | $1,546,270.39 |
+| MYX/USDT:USDT | +7.70% | $3,455,884.52 |
+| ORDI/USDT:USDT | +5.92% | $3,980,912.56 |
+| BASED/USDT:USDT | +4.67% | $8,571,147.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +4.28% | +4.21% |
-| BTW/USDT:USDT | below_1h_threshold | +3.23% | +3.16% |
-| JTO/USDT:USDT | below_1h_threshold | +2.61% | +2.54% |
-| XPL/USDT:USDT | below_1h_threshold | +2.57% | +2.50% |
-| ETC/USDT:USDT | below_1h_threshold | +2.16% | +2.08% |
+| BTW/USDT:USDT | below_1h_threshold | +4.03% | +3.89% |
+| RE/USDT:USDT | below_1h_threshold | +4.00% | +3.85% |
+| MET/USDT:USDT | below_1h_threshold | +3.98% | +3.84% |
+| JTO/USDT:USDT | below_1h_threshold | +3.69% | +3.55% |
+| XPL/USDT:USDT | below_1h_threshold | +3.33% | +3.19% |
 
 ## 6. 次に見るべき不足
 
