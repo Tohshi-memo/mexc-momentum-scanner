@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-19T01:07:21.586930+00:00
+- generated_at: 2026-06-19T01:14:22.989585+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7089**
+- closed shadow trades: **7090**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7089, expectancy=-0.05%
+- 全期間 MARKET基準: n=7090, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.18%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,7 +22,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_10PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +0.31% | **+0.28%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +0.26% | **+0.23%** |
 | LIMIT_9PCT | 3/20 | 15.0% | -0.00% | **-0.00%** |
 | ASK | 20/20 | 100.0% | -0.06% | **-0.06%** |
 | LIMIT_FIB1272 | 6/20 | 30.0% | -0.29% | **-0.09%** |
@@ -35,7 +35,7 @@
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +1.02% | **+0.97%** |
 | LIMIT_3PCT_LONG | 13/20 | 65.0% | +0.85% | **+0.55%** |
 | LIMIT_7PCT_LONG | 6/20 | 30.0% | +1.46% | **+0.44%** |
-| LIMIT_ATR_LONG | 13/20 | 65.0% | +0.65% | **+0.42%** |
+| LIMIT_FIB1618_LONG | 3/20 | 15.0% | +2.23% | **+0.33%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,48 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$222.17** / 初期 $100.00 (+122.17%)
-- 確定: 1909件 (Win 544 / Loss 613 / Flat 752) / skip 1741件
-- 成長率目線: 平均log +0.000418 / 幾何平均 +0.042% per trade / maxDD +7.25%
+- 残高: **$223.29** / 初期 $100.00 (+123.29%)
+- 確定: 1910件 (Win 545 / Loss 613 / Flat 752) / skip 1741件
+- 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AIOT/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $222.17
+- 最新: ASTEROID/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $223.29
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.40** / 初期 $100.00 (+6.40%)
-- 確定: 308件 (Win 89 / Loss 86 / Flat 133) / skip 192件
+- 確定: 308件 (Win 89 / Loss 86 / Flat 133) / skip 193件
 - 成長率目線: 平均log +0.000202 / 幾何平均 +0.020% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MITO/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $106.40
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T01:07:17.105393+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63034.5
+- 更新: 2026-06-19T01:14:17.562789+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=62913.1
 - Funnel: target 795 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1
+- Strict後reject: 4h RSI 74.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +96.70% | $5,365,802.06 |
-| BASED/USDT:USDT | +26.04% | $3,336,366.06 |
-| ZEREBRO/USDT:USDT | +24.48% | $3,189,398.21 |
-| EDEN/USDT:USDT | +16.42% | $2,069,141.96 |
-| EIGEN/USDT:USDT | +14.46% | $3,305,046.14 |
+| ASTEROID/USDT:USDT | +103.29% | $5,432,721.12 |
+| ZEREBRO/USDT:USDT | +24.43% | $3,207,948.87 |
+| BASED/USDT:USDT | +23.69% | $3,365,860.02 |
+| EDEN/USDT:USDT | +16.72% | $2,073,109.32 |
+| VELVET/USDT:USDT | +16.63% | $38,614,542.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +1.31% | +1.24% |
-| BASED/USDT:USDT | below_1h_threshold | +0.75% | +0.68% |
-| AAVE/USDT:USDT | below_1h_threshold | +0.65% | +0.58% |
-| TAC/USDT:USDT | below_1h_threshold | +0.64% | +0.57% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.62% | +0.55% |
+| CLO/USDT:USDT | below_1h_threshold | +1.56% | +1.69% |
+| TAC/USDT:USDT | below_1h_threshold | +1.43% | +1.55% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.35% | +1.48% |
+| DYDX/USDT:USDT | below_1h_threshold | +0.67% | +0.80% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.63% | +0.75% |
 
 ## 6. 次に見るべき不足
 
