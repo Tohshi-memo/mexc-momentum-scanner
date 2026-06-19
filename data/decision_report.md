@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T04:14:59.629084+00:00
+- generated_at: 2026-06-19T04:22:25.610927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7097**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T04:14:55.304736+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=62830.8
-- Funnel: target 795 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-19T04:22:21.073311+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=62719.9
+- Funnel: target 795 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +82.13% | $6,516,985.07 |
-| BASED/USDT:USDT | +28.38% | $5,149,389.65 |
-| ZEREBRO/USDT:USDT | +20.75% | $3,569,550.59 |
-| EIGEN/USDT:USDT | +13.76% | $3,792,357.83 |
-| EDEN/USDT:USDT | +13.57% | $2,377,176.59 |
+| ASTEROID/USDT:USDT | +81.11% | $6,538,453.50 |
+| BASED/USDT:USDT | +31.75% | $5,221,233.86 |
+| ZEREBRO/USDT:USDT | +20.47% | $3,586,248.82 |
+| EDEN/USDT:USDT | +13.66% | $2,384,422.24 |
+| EIGEN/USDT:USDT | +13.02% | $3,806,795.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.88% | +2.74% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.34% | +2.20% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.22% | +2.09% |
-| HEI/USDT:USDT | below_1h_threshold | +1.25% | +1.11% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.18% | +1.04% |
+| BASED/USDT:USDT | below_1h_threshold | +3.82% | +3.86% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.67% | +2.71% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.96% | +2.00% |
+| HEI/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
+| TWLOSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.04% |
 
 ## 6. 次に見るべき不足
 
