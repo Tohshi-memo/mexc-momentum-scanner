@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T04:57:01.675921+00:00
+- generated_at: 2026-06-19T05:03:41.975618+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7101**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T04:56:57.045648+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.56% price=62393.6
-- Funnel: target 795 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 78.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-19T05:03:37.622746+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=62545.3
+- Funnel: target 795 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +69.51% | $6,796,951.03 |
-| HEI/USDT:USDT | +19.23% | $1,407,371.01 |
-| ZEREBRO/USDT:USDT | +18.97% | $3,634,545.25 |
-| BASED/USDT:USDT | +16.92% | $5,654,063.41 |
-| BTW/USDT:USDT | +14.84% | $3,410,960.08 |
+| ASTEROID/USDT:USDT | +74.63% | $6,818,398.08 |
+| ZEREBRO/USDT:USDT | +21.11% | $3,631,548.41 |
+| HEI/USDT:USDT | +19.12% | $1,428,158.16 |
+| EDEN/USDT:USDT | +14.94% | $2,432,755.29 |
+| BASED/USDT:USDT | +14.90% | $5,749,898.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.72% | +5.28% |
-| RIF/USDT:USDT | below_1h_threshold | +1.72% | +2.28% |
-| TWLOSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +2.09% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.40% | +1.96% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.87% | +1.43% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.45% | +2.25% |
+| SYN/USDT:USDT | below_1h_threshold | +1.15% | +0.95% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.01% | +0.81% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +0.84% | +0.64% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +0.79% | +0.59% |
 
 ## 6. 次に見るべき不足
 
