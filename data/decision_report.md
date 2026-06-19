@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-19T15:57:48.467966+00:00
+- generated_at: 2026-06-19T16:03:20.377550+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7149**
+- closed shadow trades: **7150**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.12% / filled 20/20。**
-- 全期間 MARKET基準: n=7149, expectancy=-0.05%
+- 全期間 MARKET基準: n=7150, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+1.12%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.12% | **+1.12%** |
 | ASK | 20/20 | 100.0% | +1.10% | **+1.10%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +1.28% | **+1.02%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +0.84% | **+0.63%** |
-| LIMIT_FIB1618 | 2/20 | 10.0% | +1.09% | **+0.11%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +1.22% | **+0.97%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +0.70% | **+0.53%** |
+| LIMIT_8PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
 ### シャドウ上位 LONG
 
@@ -35,7 +35,7 @@
 | LIMIT_7PCT_LONG | 10/20 | 50.0% | +1.06% | **+0.53%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
 | LIMIT_FIB1272_LONG | 9/20 | 45.0% | +1.01% | **+0.45%** |
-| LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.22% | **+0.22%** |
+| LIMIT_ATR_LONG | 14/20 | 70.0% | +0.33% | **+0.23%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$227.11** / 初期 $100.00 (+127.11%)
-- 確定: 1968件 (Win 571 / Loss 639 / Flat 758) / skip 1742件
+- 確定: 1968件 (Win 571 / Loss 639 / Flat 758) / skip 1743件
 - 成長率目線: 平均log +0.000417 / 幾何平均 +0.042% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BLESS/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $227.11
@@ -55,39 +55,39 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.03** / 初期 $100.00 (+6.03%)
-- 確定: 309件 (Win 89 / Loss 87 / Flat 133) / skip 251件
+- 確定: 309件 (Win 89 / Loss 87 / Flat 133) / skip 252件
 - 成長率目線: 平均log +0.000190 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $106.03
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T15:57:43.700056+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63182.1
-- Funnel: target 795 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.3 >= 65=1, 4h RSI 69.7 >= 65=1
+- 更新: 2026-06-19T16:03:16.004873+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63206.1
+- Funnel: target 795 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ASTEROID/USDT:USDT | +93.06% | $9,743,538.59 |
-| RE/USDT:USDT | +49.21% | $51,777,940.95 |
-| BTW/USDT:USDT | +46.41% | $4,469,567.26 |
-| BICO/USDT:USDT | +39.17% | $1,539,714.14 |
-| HEI/USDT:USDT | +39.05% | $13,771,497.41 |
+| BICO/USDT:USDT | +7.75% | $1,679,179.00 |
+| XPL/USDT:USDT | +1.88% | $9,468,361.43 |
+| ZEREBRO/USDT:USDT | +1.59% | $5,009,801.82 |
+| MYX/USDT:USDT | +1.25% | $2,367,623.69 |
+| ASTEROID/USDT:USDT | +1.11% | $9,737,432.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.52% | +4.51% |
-| AERO/USDT:USDT | below_1h_threshold | +4.13% | +4.12% |
-| EDEN/USDT:USDT | below_1h_threshold | +4.04% | +4.03% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +3.35% | +3.34% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.14% | +3.13% |
+| XPL/USDT:USDT | below_1h_threshold | +1.91% | +1.89% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.59% | +1.57% |
+| MYX/USDT:USDT | below_1h_threshold | +1.39% | +1.37% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.12% | +1.10% |
+| HEI/USDT:USDT | below_1h_threshold | +1.07% | +1.05% |
 
 ## 6. 次に見るべき不足
 
