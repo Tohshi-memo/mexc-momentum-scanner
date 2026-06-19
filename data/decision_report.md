@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T17:06:03.262222+00:00
+- generated_at: 2026-06-19T17:13:14.666450+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7157**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T17:05:55.985589+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62905.6
-- Funnel: target 795 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.6 >= 65=1
+- 更新: 2026-06-19T17:13:09.834868+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=62979.8
+- Funnel: target 795 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +27.02% | $3,929,266.41 |
-| MYX/USDT:USDT | +9.79% | $3,100,633.23 |
-| FOLKS/USDT:USDT | +7.02% | $1,718,253.39 |
-| ORDI/USDT:USDT | +4.20% | $3,198,274.44 |
-| BASED/USDT:USDT | +3.51% | $8,470,729.15 |
+| BICO/USDT:USDT | +26.98% | $4,351,018.92 |
+| MYX/USDT:USDT | +10.00% | $3,181,700.26 |
+| BLESS/USDT:USDT | +6.02% | $1,075,028.52 |
+| ORDI/USDT:USDT | +5.20% | $3,354,093.58 |
+| BASED/USDT:USDT | +4.42% | $8,486,981.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.27% | +2.33% |
-| UAI/USDT:USDT | below_1h_threshold | +1.36% | +1.42% |
-| BASED/USDT:USDT | below_1h_threshold | +1.31% | +1.37% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.02% | +1.08% |
-| AGT/USDT:USDT | below_1h_threshold | +0.41% | +0.47% |
+| MYX/USDT:USDT | below_1h_threshold | +2.59% | +2.53% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.16% | +2.10% |
+| BASED/USDT:USDT | below_1h_threshold | +1.97% | +1.91% |
+| CLO/USDT:USDT | below_1h_threshold | +1.91% | +1.85% |
+| MET/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
 
 ## 6. 次に見るべき不足
 
