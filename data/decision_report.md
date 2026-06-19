@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-19T17:13:14.666450+00:00
+- generated_at: 2026-06-19T17:20:04.123695+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7157**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$102.47** / 初期 $100.00 (+2.47%)
-- 確定トレード: 22件 (TP 9 / SL 13 / EXP 0)
-- 最新: AERO/USDT:USDT SL_HIT PnL -3.64% 残高後 $102.47
+- 残高: **$101.96** / 初期 $100.00 (+1.96%)
+- 確定トレード: 23件 (TP 9 / SL 14 / EXP 0)
+- 最新: BLESS/USDT:USDT SL_HIT PnL -4.00% 残高後 $101.96
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-19T17:13:09.834868+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=62979.8
+- 更新: 2026-06-19T17:19:59.373113+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=63060.1
 - Funnel: target 795 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.7 >= 65=1
+- Strict後reject: 4h RSI 90.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +26.98% | $4,351,018.92 |
-| MYX/USDT:USDT | +10.00% | $3,181,700.26 |
-| BLESS/USDT:USDT | +6.02% | $1,075,028.52 |
-| ORDI/USDT:USDT | +5.20% | $3,354,093.58 |
-| BASED/USDT:USDT | +4.42% | $8,486,981.44 |
+| BICO/USDT:USDT | +28.12% | $4,618,176.01 |
+| MYX/USDT:USDT | +9.72% | $3,263,489.60 |
+| BLESS/USDT:USDT | +9.59% | $1,170,746.48 |
+| ORDI/USDT:USDT | +5.98% | $3,481,429.22 |
+| BR/USDT:USDT | +5.03% | $2,053,008.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.59% | +2.53% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.16% | +2.10% |
-| BASED/USDT:USDT | below_1h_threshold | +1.97% | +1.91% |
-| CLO/USDT:USDT | below_1h_threshold | +1.91% | +1.85% |
-| MET/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
+| BR/USDT:USDT | below_1h_threshold | +3.46% | +3.27% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.83% | +2.64% |
+| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.48% |
+| MYX/USDT:USDT | below_1h_threshold | +2.40% | +2.21% |
+| MET/USDT:USDT | below_1h_threshold | +2.30% | +2.11% |
 
 ## 6. 次に見るべき不足
 
