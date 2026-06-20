@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T21:49:46.026480+00:00
+- generated_at: 2026-06-20T21:56:57.722715+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7273**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T21:49:41.352889+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=64008.3
+- 更新: 2026-06-20T21:56:53.120872+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63997.8
 - Funnel: target 796 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1
+- Strict後reject: 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +46.08% | $46,812,045.06 |
-| ALICE/USDT:USDT | +19.44% | $1,873,288.07 |
-| ASTEROID/USDT:USDT | +9.49% | $1,656,407.53 |
-| VELVET/USDT:USDT | +9.48% | $16,843,920.53 |
-| LAB/USDT:USDT | +7.67% | $24,082,906.44 |
+| BICO/USDT:USDT | +43.16% | $47,055,586.48 |
+| ALICE/USDT:USDT | +22.15% | $1,902,119.36 |
+| VELVET/USDT:USDT | +9.11% | $16,907,724.92 |
+| LAB/USDT:USDT | +8.65% | $24,305,700.72 |
+| ASTEROID/USDT:USDT | +8.53% | $1,661,741.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.95% | +3.77% |
-| AXS/USDT:USDT | below_1h_threshold | +2.70% | +2.53% |
-| JUP/USDT:USDT | below_1h_threshold | +1.57% | +1.40% |
-| LAB/USDT:USDT | below_1h_threshold | +1.24% | +1.07% |
-| AERO/USDT:USDT | below_1h_threshold | +1.08% | +0.91% |
+| AXS/USDT:USDT | below_1h_threshold | +2.53% | +2.37% |
+| LAB/USDT:USDT | below_1h_threshold | +2.02% | +1.87% |
+| RIF/USDT:USDT | below_1h_threshold | +1.86% | +1.70% |
+| BICO/USDT:USDT | below_1h_threshold | +1.77% | +1.61% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.73% | +1.58% |
 
 ## 6. 次に見るべき不足
 
