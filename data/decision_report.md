@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T16:14:42.711541+00:00
+- generated_at: 2026-06-20T16:21:56.251696+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7249**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T16:14:33.775558+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=63953.4
+- 更新: 2026-06-20T16:21:47.725665+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64020.1
 - Funnel: target 796 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +7.13% | $29,037,218.09 |
-| VELVET/USDT:USDT | +5.63% | $11,930,941.55 |
-| BICO/USDT:USDT | +4.97% | $33,430,666.90 |
-| BTW/USDT:USDT | +3.00% | $50,566,267.94 |
-| PIPPIN/USDT:USDT | +2.79% | $1,763,046.46 |
+| VELVET/USDT:USDT | +7.99% | $12,349,805.09 |
+| LAB/USDT:USDT | +5.13% | $29,455,295.19 |
+| BICO/USDT:USDT | +3.56% | $33,508,465.57 |
+| BTW/USDT:USDT | +1.80% | $51,317,188.29 |
+| ORDI/USDT:USDT | +1.32% | $8,577,205.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +5.00% | +5.27% |
-| BTW/USDT:USDT | below_1h_threshold | +3.12% | +3.39% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.86% | +3.13% |
-| GUA/USDT:USDT | below_1h_threshold | +2.37% | +2.65% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.53% | +1.80% |
+| BICO/USDT:USDT | below_1h_threshold | +3.56% | +3.73% |
+| BTW/USDT:USDT | below_1h_threshold | +1.69% | +1.86% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.32% | +1.49% |
+| SIREN/USDT:USDT | below_1h_threshold | +1.15% | +1.33% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +1.10% | +1.28% |
 
 ## 6. 次に見るべき不足
 
