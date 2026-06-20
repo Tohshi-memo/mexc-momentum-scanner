@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T19:09:12.429890+00:00
+- generated_at: 2026-06-20T19:16:14.404758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7268**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T19:09:06.120515+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63815.0
+- 更新: 2026-06-20T19:16:09.984258+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=63864.1
 - Funnel: target 796 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +50.76% | $41,095,738.06 |
-| BTW/USDT:USDT | +17.01% | $63,753,069.59 |
-| VELVET/USDT:USDT | +13.61% | $16,818,071.27 |
-| CHIP/USDT:USDT | +6.50% | $1,373,453.89 |
-| AGT/USDT:USDT | +5.81% | $2,517,898.52 |
+| BICO/USDT:USDT | +49.78% | $41,527,586.31 |
+| BTW/USDT:USDT | +19.07% | $64,426,870.26 |
+| VELVET/USDT:USDT | +12.38% | $16,884,835.92 |
+| AGT/USDT:USDT | +5.85% | $2,519,560.29 |
+| CHIP/USDT:USDT | +5.35% | $1,381,278.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEL/USDT:USDT | below_1h_threshold | +1.91% | +1.85% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.97% | +0.91% |
-| RIF/USDT:USDT | below_1h_threshold | +0.96% | +0.90% |
-| ALICE/USDT:USDT | below_1h_threshold | +0.81% | +0.75% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.76% | +0.70% |
+| ALICE/USDT:USDT | below_1h_threshold | +2.51% | +2.37% |
+| BEL/USDT:USDT | below_1h_threshold | +2.25% | +2.11% |
+| RE/USDT:USDT | below_1h_threshold | +2.24% | +2.10% |
+| SLX/USDT:USDT | below_1h_threshold | +1.22% | +1.08% |
+| RIF/USDT:USDT | below_1h_threshold | +0.74% | +0.60% |
 
 ## 6. 次に見るべき不足
 
