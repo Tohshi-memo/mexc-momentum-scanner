@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T04:52:11.279971+00:00
+- generated_at: 2026-06-20T04:58:58.444411+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7204**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T04:52:06.854338+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=63541.1
-- Funnel: target 795 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.6 >= 65=1
+- 更新: 2026-06-20T04:58:53.612702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63537.9
+- Funnel: target 795 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1, 4h RSI 75.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +41.24% | $17,269,335.09 |
-| BLESS/USDT:USDT | +25.47% | $5,860,380.30 |
-| BICO/USDT:USDT | +24.70% | $19,506,769.42 |
-| AXS/USDT:USDT | +20.63% | $3,049,108.71 |
-| EIGEN/USDT:USDT | +19.98% | $6,725,890.34 |
+| BTW/USDT:USDT | +42.47% | $17,432,579.06 |
+| BLESS/USDT:USDT | +26.24% | $5,878,003.62 |
+| BICO/USDT:USDT | +26.21% | $19,585,555.78 |
+| AXS/USDT:USDT | +23.06% | $3,174,461.99 |
+| EIGEN/USDT:USDT | +18.63% | $6,739,660.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.94% | +4.78% |
-| PORTAL/USDT:USDT | below_1h_threshold | +4.20% | +4.04% |
-| BSB/USDT:USDT | below_1h_threshold | +1.84% | +1.68% |
-| AXS/USDT:USDT | below_1h_threshold | +1.51% | +1.35% |
-| CLO/USDT:USDT | below_1h_threshold | +1.42% | +1.26% |
+| PORTAL/USDT:USDT | below_1h_threshold | +4.32% | +4.17% |
+| AXS/USDT:USDT | below_1h_threshold | +3.37% | +3.22% |
+| BSB/USDT:USDT | below_1h_threshold | +2.87% | +2.71% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.34% | +2.19% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.70% | +1.54% |
 
 ## 6. 次に見るべき不足
 
