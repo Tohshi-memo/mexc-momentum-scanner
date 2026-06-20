@@ -2,12 +2,12 @@
   "mode": "safe_adaptive_dry_run",
   "enabled": true,
   "initial_capital": 100.0,
-  "balance": 225.93324148751756,
+  "balance": 227.06290769495516,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-06-20T16:45:01.825924+00:00",
+  "updated_at": "2026-06-20T16:52:27.167432+00:00",
   "high_watermark": 235.22432961897283,
   "max_drawdown_pct": 7.2507555389838,
-  "loss_streak": 3,
+  "loss_streak": 0,
   "cooldown_until": "2026-06-20T11:12:34.207322+00:00",
   "daily_pnl_usdt": {
     "2026-05-06": -2.495118139464748,
@@ -55,7 +55,7 @@
     "2026-06-17": 17.438168847493397,
     "2026-06-18": 15.82943993917377,
     "2026-06-19": 5.416323618799143,
-    "2026-06-20": -0.03948619769658923
+    "2026-06-20": 1.0901800097409986
   },
   "trades": [
     {
@@ -95097,6 +95097,54 @@
         "max_drawdown_pct": 46.333936027109985,
         "max_loss_streak": 12
       }
+    },
+    {
+      "key": "BICO/USDT:USDT|2026-06-20T16:44:57.237807+00:00",
+      "symbol": "BICO/USDT:USDT",
+      "detected_at": "2026-06-20T16:44:57.237807+00:00",
+      "closed_at": "2026-06-20T16:51:56.716752+00:00",
+      "strategy": "MARKET_LONG",
+      "direction": "long",
+      "outcome": "EXPIRED",
+      "filled": true,
+      "pnl_pct": 4.000000000000004,
+      "sl_pct": 4.000000000000004,
+      "risk_pct": 0.5,
+      "account_return_pct": 0.5,
+      "log_return": 0.004987541511039188,
+      "pnl_usdt": 1.1296662074375878,
+      "balance_before": 225.93324148751756,
+      "balance_after": 227.06290769495516,
+      "drawdown_after_pct": 3.469633407920822,
+      "selector_reason": "selected_by_recent_avg_log_return",
+      "selector_recent": {
+        "strategy": "MARKET_LONG",
+        "direction": "long",
+        "total": 50,
+        "filled": 50,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 0.6533176823701963,
+        "effective_ev_pct": 0.6533176823701963,
+        "avg_log_return": 0.0007830362314945008,
+        "geometric_return_pct": 0.07833428843992962,
+        "avg_account_return_pct": 0.07999999999999997,
+        "max_drawdown_pct": 2.965174995646854,
+        "max_loss_streak": 4
+      },
+      "selector_all": {
+        "strategy": "MARKET_LONG",
+        "direction": "long",
+        "total": 7057,
+        "filled": 7057,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 0.08242495197495438,
+        "effective_ev_pct": 0.08242495197495438,
+        "avg_log_return": 8.971664650310293e-05,
+        "geometric_return_pct": 0.008972067116186366,
+        "avg_account_return_pct": 0.010482577490493665,
+        "max_drawdown_pct": 46.333936027109985,
+        "max_loss_streak": 12
+      }
     }
   ],
   "skipped": [
@@ -162527,6 +162575,7 @@
     "BICO/USDT:USDT|2026-06-20T06:51:15.107462+00:00",
     "BICO/USDT:USDT|2026-06-20T08:47:22.172241+00:00",
     "BICO/USDT:USDT|2026-06-20T10:55:19.339092+00:00",
+    "BICO/USDT:USDT|2026-06-20T16:44:57.237807+00:00",
     "BILL/USDT:USDT|2026-05-06T10:17:32.953707+00:00",
     "BILL/USDT:USDT|2026-05-06T11:12:32.929241+00:00",
     "BILL/USDT:USDT|2026-05-06T11:32:35.337058+00:00",
@@ -165897,7 +165946,7 @@
     "strategy": "MARKET_LONG",
     "direction": "long",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 7249,
+    "history_count": 7250,
     "recent_count": 50,
     "recent": {
       "strategy": "MARKET_LONG",
@@ -165905,25 +165954,25 @@
       "total": 50,
       "filled": 50,
       "fill_rate": 1.0,
-      "avg_pnl_pct": 0.6533176823701963,
-      "effective_ev_pct": 0.6533176823701963,
+      "avg_pnl_pct": 0.6913562007237922,
+      "effective_ev_pct": 0.6913562007237922,
       "avg_log_return": 0.0007830362314945008,
       "geometric_return_pct": 0.07833428843992962,
-      "avg_account_return_pct": 0.07999999999999997,
-      "max_drawdown_pct": 2.965174995646854,
+      "avg_account_return_pct": 0.07999999999999996,
+      "max_drawdown_pct": 2.9651749956468354,
       "max_loss_streak": 4
     },
     "all": {
       "strategy": "MARKET_LONG",
       "direction": "long",
-      "total": 7057,
-      "filled": 7057,
+      "total": 7058,
+      "filled": 7058,
       "fill_rate": 1.0,
-      "avg_pnl_pct": 0.08242495197495438,
-      "effective_ev_pct": 0.08242495197495438,
-      "avg_log_return": 8.971664650310293e-05,
-      "geometric_return_pct": 0.008972067116186366,
-      "avg_account_return_pct": 0.010482577490493665,
+      "avg_pnl_pct": 0.08298000652978932,
+      "effective_ev_pct": 0.08298000652978932,
+      "avg_log_return": 9.04105859851851e-05,
+      "geometric_return_pct": 0.009041467314530038,
+      "avg_account_return_pct": 0.01055193388359504,
       "max_drawdown_pct": 46.333936027109985,
       "max_loss_streak": 12
     },
@@ -165948,14 +165997,14 @@
         "all": {
           "strategy": "LIMIT_8PCT_LONG",
           "direction": "long",
-          "total": 7051,
+          "total": 7052,
           "filled": 2147,
-          "fill_rate": 0.30449581619628424,
+          "fill_rate": 0.3044526375496313,
           "avg_pnl_pct": 0.5918886387117919,
-          "effective_ev_pct": 0.18022761414185468,
-          "avg_log_return": 0.00022254427661060663,
-          "geometric_return_pct": 0.02225690414252579,
-          "avg_account_return_pct": 0.022544147191734188,
+          "effective_ev_pct": 0.18020205719146584,
+          "avg_log_return": 0.0002225127189990623,
+          "geometric_return_pct": 0.022253747679035207,
+          "avg_account_return_pct": 0.022540950347265706,
           "max_drawdown_pct": 7.7071013078480135,
           "max_loss_streak": 14
         }
@@ -165963,13 +166012,13 @@
     ]
   },
   "summary": {
-    "trade_count": 1980,
-    "wins": 576,
+    "trade_count": 1981,
+    "wins": 577,
     "losses": 646,
     "flat": 758,
-    "avg_log_return": 0.00041165120100977016,
-    "geometric_return_pct": 0.041173594099275235,
-    "return_pct": 125.93324148751756
+    "avg_log_return": 0.0004139610901112489,
+    "geometric_return_pct": 0.04140467838276152,
+    "return_pct": 127.06290769495516
   },
   "config": {
     "enabled": true,
