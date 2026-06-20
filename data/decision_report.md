@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T07:34:13.898087+00:00
+- generated_at: 2026-06-20T07:41:16.164699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7218**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T07:34:08.257631+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63715.2
+- 更新: 2026-06-20T07:41:11.361016+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63735.5
 - Funnel: target 795 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +58.37% | $21,617,582.53 |
-| BICO/USDT:USDT | +52.35% | $23,357,458.50 |
-| GUA/USDT:USDT | +33.79% | $2,820,525.30 |
-| RIF/USDT:USDT | +23.18% | $2,756,775.25 |
-| RE/USDT:USDT | +20.41% | $92,123,701.84 |
+| BTW/USDT:USDT | +59.25% | $21,811,740.49 |
+| BICO/USDT:USDT | +50.36% | $23,492,656.64 |
+| GUA/USDT:USDT | +34.90% | $2,912,876.14 |
+| EIGEN/USDT:USDT | +20.89% | $7,427,551.76 |
+| RE/USDT:USDT | +19.69% | $92,262,085.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAX/USDT:USDT | below_1h_threshold | +4.45% | +4.44% |
-| MET/USDT:USDT | below_1h_threshold | +3.66% | +3.65% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.47% | +1.47% |
-| BICO/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
-| RE/USDT:USDT | below_1h_threshold | +1.28% | +1.27% |
+| MET/USDT:USDT | below_1h_threshold | +2.76% | +2.72% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.52% | +2.48% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.88% | +1.83% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
 
 ## 6. 次に見るべき不足
 
