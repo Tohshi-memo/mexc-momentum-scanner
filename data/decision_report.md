@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T15:07:39.607522+00:00
+- generated_at: 2026-06-20T15:14:49.921688+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7248**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T15:07:35.235062+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63864.2
+- 更新: 2026-06-20T15:14:45.511544+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63970.0
 - Funnel: target 796 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +102.23% | $46,702,751.40 |
-| BICO/USDT:USDT | +53.82% | $32,612,685.98 |
-| BEL/USDT:USDT | +38.37% | $2,597,824.83 |
-| RE/USDT:USDT | +34.35% | $77,527,257.03 |
-| ALICE/USDT:USDT | +32.25% | $1,019,164.79 |
+| BTW/USDT:USDT | +101.77% | $47,129,187.61 |
+| BICO/USDT:USDT | +58.86% | $32,785,571.54 |
+| BEL/USDT:USDT | +39.63% | $2,618,654.39 |
+| RE/USDT:USDT | +38.34% | $78,334,729.40 |
+| CLO/USDT:USDT | +31.79% | $1,296,118.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALICE/USDT:USDT | below_1h_threshold | +4.25% | +4.35% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.34% | +1.44% |
-| BICO/USDT:USDT | below_1h_threshold | +0.97% | +1.06% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.80% | +0.90% |
-| JUP/USDT:USDT | below_1h_threshold | +0.69% | +0.79% |
+| BICO/USDT:USDT | below_1h_threshold | +4.25% | +4.18% |
+| ALICE/USDT:USDT | below_1h_threshold | +3.79% | +3.72% |
+| AERO/USDT:USDT | below_1h_threshold | +3.59% | +3.52% |
+| RE/USDT:USDT | below_1h_threshold | +3.53% | +3.47% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.17% | +2.10% |
 
 ## 6. 次に見るべき不足
 
