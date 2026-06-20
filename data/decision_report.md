@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T14:45:39.806431+00:00
+- generated_at: 2026-06-20T14:53:28.959955+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7248**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T14:45:32.367898+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=63466.1
-- Funnel: target 796 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-20T14:53:24.743355+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.91% price=63943.6
+- Funnel: target 796 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +111.29% | $44,924,090.34 |
-| BICO/USDT:USDT | +47.02% | $32,301,995.21 |
-| BEL/USDT:USDT | +40.27% | $2,544,417.45 |
-| SLX/USDT:USDT | +32.72% | $1,440,831.77 |
-| RE/USDT:USDT | +27.91% | $82,607,884.18 |
+| BTW/USDT:USDT | +109.98% | $45,763,268.80 |
+| BICO/USDT:USDT | +53.12% | $32,434,586.72 |
+| BEL/USDT:USDT | +36.12% | $2,582,257.34 |
+| RE/USDT:USDT | +33.48% | $83,285,679.54 |
+| SLX/USDT:USDT | +29.90% | $1,453,272.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_relative_strength | +5.09% | +4.93% |
-| CLO/USDT:USDT | below_1h_threshold | +3.27% | +3.12% |
-| SAND/USDT:USDT | below_1h_threshold | +3.26% | +3.10% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.05% | +2.90% |
-| MANA/USDT:USDT | below_1h_threshold | +2.56% | +2.41% |
+| RE/USDT:USDT | below_relative_strength | +5.60% | +4.69% |
+| BICO/USDT:USDT | below_relative_strength | +5.46% | +4.55% |
+| CLO/USDT:USDT | below_1h_threshold | +4.69% | +3.79% |
+| BTW/USDT:USDT | below_1h_threshold | +4.64% | +3.73% |
+| AERO/USDT:USDT | below_1h_threshold | +4.10% | +3.19% |
 
 ## 6. 次に見るべき不足
 
