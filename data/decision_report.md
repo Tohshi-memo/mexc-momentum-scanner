@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T05:12:57.956513+00:00
+- generated_at: 2026-06-20T05:19:52.631008+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7205**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T05:12:52.418056+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=63722.0
+- 更新: 2026-06-20T05:19:48.002188+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=63721.2
 - Funnel: target 795 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 80.9 >= 65=1
@@ -73,21 +73,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +42.43% | $17,524,436.80 |
-| BICO/USDT:USDT | +36.02% | $19,921,493.85 |
-| BLESS/USDT:USDT | +26.54% | $5,906,356.14 |
-| AXS/USDT:USDT | +23.49% | $3,483,123.27 |
-| EIGEN/USDT:USDT | +21.29% | $6,639,009.57 |
+| BTW/USDT:USDT | +39.47% | $17,723,929.51 |
+| BICO/USDT:USDT | +35.55% | $20,098,171.93 |
+| BLESS/USDT:USDT | +25.05% | $5,940,654.98 |
+| AXS/USDT:USDT | +21.58% | $3,589,185.20 |
+| EIGEN/USDT:USDT | +18.71% | $6,730,518.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOL/USDT:USDT | below_1h_threshold | +1.69% | +1.43% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.53% | +1.27% |
-| CLO/USDT:USDT | below_1h_threshold | +1.20% | +0.94% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.18% | +0.92% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.16% | +0.90% |
+| RIF/USDT:USDT | below_1h_threshold | +1.86% | +1.60% |
+| CLO/USDT:USDT | below_1h_threshold | +1.68% | +1.41% |
+| SOL/USDT:USDT | below_1h_threshold | +1.65% | +1.39% |
+| VVV/USDT:USDT | below_1h_threshold | +1.53% | +1.27% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.23% | +0.96% |
 
 ## 6. 次に見るべき不足
 
