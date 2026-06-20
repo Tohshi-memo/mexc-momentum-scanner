@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T13:00:11.750442+00:00
+- generated_at: 2026-06-20T13:07:02.782809+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7241**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T13:00:06.979158+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63627.8
-- Funnel: target 795 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1, 4h RSI 84.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-20T13:06:58.361958+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63602.7
+- Funnel: target 795 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +91.78% | $38,503,408.41 |
-| BICO/USDT:USDT | +53.60% | $30,405,373.66 |
-| BEL/USDT:USDT | +50.69% | $1,906,180.42 |
-| SLX/USDT:USDT | +38.43% | $1,201,381.73 |
-| RE/USDT:USDT | +33.58% | $92,599,298.00 |
+| BTW/USDT:USDT | +91.68% | $38,465,380.25 |
+| BICO/USDT:USDT | +53.41% | $30,356,980.85 |
+| BEL/USDT:USDT | +52.24% | $1,905,424.74 |
+| SLX/USDT:USDT | +38.18% | $1,205,166.76 |
+| RE/USDT:USDT | +32.50% | $84,526,102.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.60% | +3.64% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.34% | +2.38% |
-| BEL/USDT:USDT | below_1h_threshold | +1.92% | +1.95% |
-| MET/USDT:USDT | below_1h_threshold | +1.63% | +1.67% |
-| XMR/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| BEL/USDT:USDT | below_1h_threshold | +1.38% | +1.42% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.72% | +0.75% |
+| MET/USDT:USDT | below_1h_threshold | +0.67% | +0.71% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
+| AXS/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
 
 ## 6. 次に見るべき不足
 
