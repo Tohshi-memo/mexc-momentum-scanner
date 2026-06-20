@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T02:50:50.965151+00:00
+- generated_at: 2026-06-20T02:57:40.722060+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7202**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T02:50:46.153885+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=63371.9
-- Funnel: target 795 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1
+- 更新: 2026-06-20T02:57:35.697109+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=63325.6
+- Funnel: target 795 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.3 >= 65=1, 4h RSI 74.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +30.97% | $14,927,841.37 |
-| BLESS/USDT:USDT | +23.85% | $5,447,919.01 |
-| EIGEN/USDT:USDT | +21.42% | $6,312,061.93 |
-| AXS/USDT:USDT | +21.37% | $1,251,305.77 |
-| RE/USDT:USDT | +17.72% | $81,720,778.75 |
+| BTW/USDT:USDT | +32.79% | $15,025,772.50 |
+| BLESS/USDT:USDT | +25.42% | $5,479,261.87 |
+| AXS/USDT:USDT | +19.15% | $1,320,390.72 |
+| EIGEN/USDT:USDT | +19.02% | $6,500,912.17 |
+| BICO/USDT:USDT | +17.79% | $18,258,040.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXS/USDT:USDT | below_1h_threshold | +4.67% | +4.96% |
-| CLO/USDT:USDT | below_1h_threshold | +4.24% | +4.52% |
-| MET/USDT:USDT | below_1h_threshold | +3.76% | +4.04% |
-| JUP/USDT:USDT | below_1h_threshold | +1.72% | +2.00% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.97% |
+| CLO/USDT:USDT | below_1h_threshold | +4.05% | +4.41% |
+| AXS/USDT:USDT | below_1h_threshold | +3.21% | +3.56% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.60% | +2.95% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.96% |
+| BTW/USDT:USDT | below_1h_threshold | +1.41% | +1.77% |
 
 ## 6. 次に見るべき不足
 
