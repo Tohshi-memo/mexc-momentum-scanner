@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T00:38:23.677085+00:00
+- generated_at: 2026-06-20T00:45:36.551753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7185**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T00:38:17.644593+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63617.9
-- Funnel: target 795 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1, 4h RSI 77.2 >= 65=1, 4h RSI 75.9 >= 65=1
+- 更新: 2026-06-20T00:45:30.872167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63564.1
+- Funnel: target 795 → liquid 147 → pre 50 → checked 50 → surge 7 → strict 2
+- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.5 >= 65=1, 4h RSI 93.2 >= 65=1, 4h RSI 76.0 >= 65=1, 4h RSI 77.6 >= 65=1, 4h RSI 69.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +55.51% | $14,145,253.41 |
-| BTW/USDT:USDT | +45.26% | $11,103,737.89 |
-| BLESS/USDT:USDT | +27.02% | $4,910,321.94 |
-| MET/USDT:USDT | +18.18% | $1,505,218.94 |
-| RE/USDT:USDT | +14.96% | $75,128,700.02 |
+| BICO/USDT:USDT | +47.27% | $14,597,310.00 |
+| BTW/USDT:USDT | +46.22% | $11,285,129.31 |
+| BLESS/USDT:USDT | +27.54% | $4,961,586.99 |
+| MET/USDT:USDT | +21.05% | $1,562,466.27 |
+| EIGEN/USDT:USDT | +16.05% | $5,501,775.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +4.96% | +4.79% |
-| O/USDT:USDT | below_1h_threshold | +4.56% | +4.40% |
-| HIGH/USDT:USDT | below_1h_threshold | +3.51% | +3.35% |
-| GUA/USDT:USDT | below_1h_threshold | +2.95% | +2.79% |
-| BSB/USDT:USDT | below_1h_threshold | +2.54% | +2.37% |
+| HIGH/USDT:USDT | below_1h_threshold | +3.78% | +3.70% |
+| GUA/USDT:USDT | below_1h_threshold | +1.92% | +1.84% |
+| AGT/USDT:USDT | below_1h_threshold | +1.88% | +1.80% |
+| POL/USDT:USDT | below_1h_threshold | +1.73% | +1.65% |
+| APE/USDT:USDT | below_1h_threshold | +1.68% | +1.60% |
 
 ## 6. 次に見るべき不足
 
