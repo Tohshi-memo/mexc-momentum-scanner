@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-20T16:52:30.355669+00:00
+- generated_at: 2026-06-20T16:59:27.596549+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7252**
+- closed shadow trades: **7253**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.96% / filled 20/20。**
-- 全期間 MARKET基準: n=7252, expectancy=-0.05%
+- 全期間 MARKET基準: n=7253, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+1.96%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.96% | **+1.96%** |
-| ASK | 20/20 | 100.0% | +1.94% | **+1.94%** |
+| ASK | 20/20 | 100.0% | +1.90% | **+1.90%** |
 | LIMIT_2PCT | 15/20 | 75.0% | +2.19% | **+1.64%** |
 | LIMIT_3PCT | 13/20 | 65.0% | +1.62% | **+1.05%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +1.29% | **+1.03%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +1.22% | **+0.98%** |
 
 ### シャドウ上位 LONG
 
@@ -39,55 +39,55 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$101.96** / 初期 $100.00 (+1.96%)
-- 確定トレード: 23件 (TP 9 / SL 14 / EXP 0)
-- 最新: BLESS/USDT:USDT SL_HIT PnL -4.00% 残高後 $101.96
+- 残高: **$101.45** / 初期 $100.00 (+1.45%)
+- 確定トレード: 24件 (TP 9 / SL 15 / EXP 0)
+- 最新: VELVET/USDT:USDT SL_HIT PnL -4.00% 残高後 $101.45
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$227.06** / 初期 $100.00 (+127.06%)
-- 確定: 1981件 (Win 577 / Loss 646 / Flat 758) / skip 1832件
-- 成長率目線: 平均log +0.000414 / 幾何平均 +0.041% per trade / maxDD +7.25%
+- 残高: **$228.20** / 初期 $100.00 (+128.20%)
+- 確定: 1982件 (Win 578 / Loss 646 / Flat 758) / skip 1832件
+- 成長率目線: 平均log +0.000416 / 幾何平均 +0.042% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BICO/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $227.06
+- 最新: VELVET/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $228.20
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.03** / 初期 $100.00 (+6.03%)
-- 確定: 310件 (Win 89 / Loss 87 / Flat 134) / skip 353件
+- 確定: 310件 (Win 89 / Loss 87 / Flat 134) / skip 354件
 - 成長率目線: 平均log +0.000189 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $106.03
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T16:52:20.052659+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64018.4
-- Funnel: target 796 → liquid 145 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1
+- 更新: 2026-06-20T16:59:21.811559+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=63983.8
+- Funnel: target 796 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +11.13% | $34,073,524.63 |
-| VELVET/USDT:USDT | +8.01% | $13,064,913.03 |
-| ASTEROID/USDT:USDT | +5.00% | $1,977,923.01 |
-| LAB/USDT:USDT | +4.69% | $30,044,304.87 |
-| MYX/USDT:USDT | +3.34% | $6,423,875.11 |
+| BICO/USDT:USDT | +14.41% | $34,454,475.86 |
+| VELVET/USDT:USDT | +7.84% | $13,399,286.19 |
+| AGT/USDT:USDT | +4.44% | $2,409,414.89 |
+| ASTEROID/USDT:USDT | +3.38% | $1,981,096.71 |
+| MYX/USDT:USDT | +3.34% | $6,450,112.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.70% | +4.87% |
-| MYX/USDT:USDT | below_1h_threshold | +3.18% | +3.35% |
-| SPX/USDT:USDT | below_1h_threshold | +2.26% | +2.43% |
-| BTW/USDT:USDT | below_1h_threshold | +2.10% | +2.27% |
-| SYN/USDT:USDT | below_1h_threshold | +1.96% | +2.13% |
+| AGT/USDT:USDT | below_1h_threshold | +4.73% | +4.96% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.38% | +3.61% |
+| LAB/USDT:USDT | below_1h_threshold | +3.32% | +3.55% |
+| MYX/USDT:USDT | below_1h_threshold | +3.10% | +3.33% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.04% | +3.27% |
 
 ## 6. 次に見るべき不足
 
