@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T15:33:50.869900+00:00
+- generated_at: 2026-06-20T15:39:33.348116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7249**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T15:33:47.819148+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64125.9
-- Funnel: target 796 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
+- 更新: 2026-06-20T15:39:29.644940+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=64091.5
+- Funnel: target 796 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +104.55% | $48,423,259.24 |
-| BICO/USDT:USDT | +58.71% | $33,040,580.01 |
-| BEL/USDT:USDT | +37.79% | $2,666,740.86 |
-| RE/USDT:USDT | +36.34% | $80,267,840.13 |
-| ALICE/USDT:USDT | +35.78% | $1,074,819.51 |
+| BTW/USDT:USDT | +101.99% | $48,755,424.82 |
+| BICO/USDT:USDT | +57.02% | $33,114,289.65 |
+| RE/USDT:USDT | +37.66% | $80,540,155.45 |
+| BEL/USDT:USDT | +37.25% | $2,683,234.72 |
+| ALICE/USDT:USDT | +37.05% | $1,085,175.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_relative_strength | +5.16% | +4.85% |
-| BICO/USDT:USDT | below_1h_threshold | +4.27% | +3.96% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.83% | +2.52% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.44% | +2.12% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.29% | +1.98% |
+| AERO/USDT:USDT | below_1h_threshold | +4.46% | +4.21% |
+| RE/USDT:USDT | below_1h_threshold | +3.18% | +2.93% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.12% | +2.87% |
+| BICO/USDT:USDT | below_1h_threshold | +3.06% | +2.81% |
+| SAND/USDT:USDT | below_1h_threshold | +2.94% | +2.69% |
 
 ## 6. 次に見るべき不足
 
