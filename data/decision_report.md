@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-06-20T20:42:39.207223+00:00
+- generated_at: 2026-06-20T20:49:43.858227+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7271**
+- closed shadow trades: **7272**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7271, expectancy=-0.05%
-- 直近20件 MARKET基準: n=20, expectancy=-1.60%
+- 全期間 MARKET基準: n=7272, expectancy=-0.05%
+- 直近20件 MARKET基準: n=20, expectancy=-1.54%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.60% | **-1.60%** |
+| MARKET | 20/20 | 100.0% | -1.54% | **-1.54%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,9 +31,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET_LONG | 20/20 | 100.0% | +2.00% | **+2.00%** |
-| ASK_LONG | 20/20 | 100.0% | +1.27% | **+1.27%** |
-| LIMIT_ATR_LONG | 7/20 | 35.0% | +1.11% | **+0.39%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.94% | **+1.94%** |
+| ASK_LONG | 20/20 | 100.0% | +1.24% | **+1.24%** |
+| LIMIT_ATR_LONG | 8/20 | 40.0% | +1.44% | **+0.58%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.22% | **+0.22%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +1.10% | **+0.16%** |
 
@@ -46,24 +46,24 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$237.44** / 初期 $100.00 (+137.44%)
-- 確定: 2000件 (Win 590 / Loss 652 / Flat 758) / skip 1832件
-- 成長率目線: 平均log +0.000432 / 幾何平均 +0.043% per trade / maxDD +7.25%
+- 残高: **$238.63** / 初期 $100.00 (+138.63%)
+- 確定: 2001件 (Win 591 / Loss 652 / Flat 758) / skip 1832件
+- 成長率目線: 平均log +0.000435 / 幾何平均 +0.043% per trade / maxDD +7.25%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ALICE/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $237.44
+- 最新: PIPPIN/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $238.63
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.03** / 初期 $100.00 (+6.03%)
-- 確定: 310件 (Win 89 / Loss 87 / Flat 134) / skip 372件
+- 確定: 310件 (Win 89 / Loss 87 / Flat 134) / skip 373件
 - 成長率目線: 平均log +0.000189 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $106.03
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T20:42:32.542638+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63865.7
+- 更新: 2026-06-20T20:49:35.542299+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63868.4
 - Funnel: target 796 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +38.50% | $44,831,095.28 |
-| ALICE/USDT:USDT | +12.25% | $1,609,222.01 |
-| VELVET/USDT:USDT | +11.56% | $16,912,978.88 |
-| ASTEROID/USDT:USDT | +9.41% | $1,556,660.47 |
-| BTW/USDT:USDT | +8.51% | $70,603,574.81 |
+| BICO/USDT:USDT | +40.60% | $45,228,615.10 |
+| ALICE/USDT:USDT | +12.69% | $1,620,232.38 |
+| VELVET/USDT:USDT | +10.47% | $16,935,501.75 |
+| ASTEROID/USDT:USDT | +8.90% | $1,587,339.41 |
+| LAB/USDT:USDT | +6.73% | $24,981,790.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.73% | +2.80% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.76% | +1.82% |
-| AERO/USDT:USDT | below_1h_threshold | +1.40% | +1.46% |
-| CLO/USDT:USDT | below_1h_threshold | +0.50% | +0.56% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
+| CLO/USDT:USDT | below_1h_threshold | +4.46% | +4.52% |
+| O/USDT:USDT | below_1h_threshold | +4.01% | +4.07% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.29% | +2.35% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.42% | +1.48% |
+| AERO/USDT:USDT | below_1h_threshold | +1.07% | +1.12% |
 
 ## 6. 次に見るべき不足
 
