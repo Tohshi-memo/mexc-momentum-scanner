@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-20T17:35:31.249360+00:00
+- generated_at: 2026-06-20T17:42:47.282017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7258**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-20T17:35:22.337583+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63976.3
-- Funnel: target 796 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 2
+- 更新: 2026-06-20T17:42:39.842152+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=63823.3
+- Funnel: target 796 → liquid 143 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.0 >= 65=1
+- Strict後reject: 4h RSI 88.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +31.93% | $36,378,373.69 |
-| VELVET/USDT:USDT | +13.43% | $13,985,891.98 |
-| AGT/USDT:USDT | +11.59% | $2,481,287.19 |
-| LAB/USDT:USDT | +5.94% | $29,221,221.77 |
-| AXS/USDT:USDT | +4.17% | $10,275,046.35 |
+| BICO/USDT:USDT | +31.90% | $36,823,676.52 |
+| VELVET/USDT:USDT | +16.44% | $14,415,979.47 |
+| AGT/USDT:USDT | +11.34% | $2,505,889.84 |
+| LAB/USDT:USDT | +4.73% | $29,368,169.59 |
+| MYX/USDT:USDT | +4.15% | $5,636,015.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +3.80% | +3.83% |
-| SAND/USDT:USDT | below_1h_threshold | +3.67% | +3.70% |
-| MET/USDT:USDT | below_1h_threshold | +2.22% | +2.25% |
-| LAB/USDT:USDT | below_1h_threshold | +2.22% | +2.25% |
-| GUA/USDT:USDT | below_1h_threshold | +1.81% | +1.84% |
+| O/USDT:USDT | below_1h_threshold | +3.95% | +4.22% |
+| SAND/USDT:USDT | below_1h_threshold | +2.31% | +2.58% |
+| MYX/USDT:USDT | below_1h_threshold | +1.11% | +1.38% |
+| LAB/USDT:USDT | below_1h_threshold | +1.05% | +1.31% |
+| AXS/USDT:USDT | below_1h_threshold | +0.68% | +0.95% |
 
 ## 6. 次に見るべき不足
 
