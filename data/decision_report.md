@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T22:15:18.758146+00:00
+- generated_at: 2026-06-21T22:22:33.111017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7331**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T22:15:13.387449+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=63601.6
+- 更新: 2026-06-21T22:22:28.592476+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=63714.2
 - Funnel: target 796 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NAORIS/USDT:USDT | +26.33% | $1,522,433.71 |
-| SYN/USDT:USDT | +16.30% | $2,527,668.72 |
-| EVAA/USDT:USDT | +12.66% | $1,098,414.30 |
-| STO/USDT:USDT | +9.56% | $4,815,974.08 |
-| UB/USDT:USDT | +8.76% | $6,406,654.81 |
+| NAORIS/USDT:USDT | +25.67% | $1,662,951.00 |
+| SYN/USDT:USDT | +13.71% | $2,547,695.50 |
+| EVAA/USDT:USDT | +12.15% | $1,114,459.73 |
+| STO/USDT:USDT | +10.04% | $4,825,522.38 |
+| UB/USDT:USDT | +8.04% | $6,441,971.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +2.84% | +3.11% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.24% | +2.52% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.60% | +1.88% |
-| LIT/USDT:USDT | below_1h_threshold | +0.93% | +1.21% |
-| W/USDT:USDT | below_1h_threshold | +0.79% | +1.06% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.83% | +1.93% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.66% | +1.76% |
+| O/USDT:USDT | below_1h_threshold | +1.46% | +1.56% |
+| W/USDT:USDT | below_1h_threshold | +1.23% | +1.33% |
+| SYN/USDT:USDT | below_1h_threshold | +0.81% | +0.91% |
 
 ## 6. 次に見るべき不足
 
