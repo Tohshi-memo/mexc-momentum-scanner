@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T11:23:32.786430+00:00
+- generated_at: 2026-06-21T11:30:46.135428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7302**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T11:23:28.315372+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64284.0
+- 更新: 2026-06-21T11:30:41.685441+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64370.0
 - Funnel: target 796 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TNSR/USDT:USDT | +73.01% | $9,709,489.78 |
-| LAB/USDT:USDT | +25.05% | $26,614,137.87 |
-| BULLA/USDT:USDT | +24.32% | $1,332,756.64 |
-| UB/USDT:USDT | +22.64% | $1,618,410.52 |
-| BICO/USDT:USDT | +21.08% | $52,344,133.35 |
+| TNSR/USDT:USDT | +73.32% | $9,880,753.55 |
+| LAB/USDT:USDT | +25.08% | $26,852,506.90 |
+| BULLA/USDT:USDT | +24.13% | $1,352,706.58 |
+| UB/USDT:USDT | +21.13% | $1,670,098.30 |
+| BICO/USDT:USDT | +20.81% | $52,455,620.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.77% | +3.86% |
-| TNSR/USDT:USDT | below_1h_threshold | +2.78% | +2.86% |
-| LAB/USDT:USDT | below_1h_threshold | +2.07% | +2.15% |
-| W/USDT:USDT | below_1h_threshold | +1.35% | +1.43% |
-| BTR/USDT:USDT | below_1h_threshold | +0.95% | +1.04% |
+| TNSR/USDT:USDT | below_1h_threshold | +3.13% | +3.08% |
+| LAB/USDT:USDT | below_1h_threshold | +2.07% | +2.02% |
+| UB/USDT:USDT | below_1h_threshold | +1.93% | +1.88% |
+| W/USDT:USDT | below_1h_threshold | +1.35% | +1.30% |
+| AERO/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
 
 ## 6. 次に見るべき不足
 
