@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T11:52:32.997262+00:00
+- generated_at: 2026-06-21T11:59:42.348695+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7302**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T11:52:26.049600+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=64112.4
+- 更新: 2026-06-21T11:59:35.029260+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=64117.8
 - Funnel: target 796 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TNSR/USDT:USDT | +73.63% | $10,411,827.64 |
-| LAB/USDT:USDT | +26.02% | $27,530,170.50 |
-| UB/USDT:USDT | +21.59% | $1,721,097.22 |
-| BULLA/USDT:USDT | +19.98% | $1,377,003.63 |
-| MET/USDT:USDT | +18.16% | $1,232,451.14 |
+| TNSR/USDT:USDT | +77.11% | $10,526,856.39 |
+| LAB/USDT:USDT | +28.29% | $28,105,752.37 |
+| UB/USDT:USDT | +21.27% | $1,733,401.04 |
+| BULLA/USDT:USDT | +19.65% | $1,384,954.04 |
+| BICO/USDT:USDT | +19.28% | $52,996,489.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TNSR/USDT:USDT | below_1h_threshold | +3.39% | +3.74% |
-| LAB/USDT:USDT | below_1h_threshold | +2.81% | +3.16% |
-| UB/USDT:USDT | below_1h_threshold | +2.05% | +2.40% |
-| UAI/USDT:USDT | below_1h_threshold | +0.82% | +1.17% |
-| AERO/USDT:USDT | below_1h_threshold | +0.81% | +1.16% |
+| TNSR/USDT:USDT | below_1h_threshold | +4.91% | +5.25% |
+| LAB/USDT:USDT | below_1h_threshold | +4.60% | +4.94% |
+| W/USDT:USDT | below_1h_threshold | +2.34% | +2.68% |
+| UB/USDT:USDT | below_1h_threshold | +1.96% | +2.30% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.80% | +2.14% |
 
 ## 6. 次に見るべき不足
 
