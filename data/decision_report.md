@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T17:08:52.630540+00:00
+- generated_at: 2026-06-21T17:16:10.251816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7318**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T17:08:48.207394+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64175.4
+- 更新: 2026-06-21T17:16:05.873632+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64169.1
 - Funnel: target 796 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RESOLV/USDT:USDT | +9.35% | $12,781,528.96 |
-| UAI/USDT:USDT | +5.41% | $1,456,962.53 |
-| UB/USDT:USDT | +5.31% | $3,976,841.79 |
-| SAGA/USDT:USDT | +3.76% | $1,732,768.57 |
-| SLX/USDT:USDT | +2.35% | $1,005,043.99 |
+| RESOLV/USDT:USDT | +8.29% | $13,077,068.47 |
+| SLX/USDT:USDT | +4.46% | $1,012,013.91 |
+| UB/USDT:USDT | +4.25% | $4,037,356.47 |
+| UAI/USDT:USDT | +3.83% | $1,478,712.20 |
+| SAGA/USDT:USDT | +3.13% | $1,755,066.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.18% | +2.09% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.61% | +0.52% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
-| MMT/USDT:USDT | below_1h_threshold | +0.57% | +0.49% |
-| WLD/USDT:USDT | below_1h_threshold | +0.41% | +0.32% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.32% | +3.25% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.55% | +2.47% |
+| SLX/USDT:USDT | below_1h_threshold | +2.46% | +2.39% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.85% | +1.78% |
+| TNSR/USDT:USDT | below_1h_threshold | +1.73% | +1.66% |
 
 ## 6. 次に見るべき不足
 
