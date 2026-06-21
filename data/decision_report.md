@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T03:25:55.164859+00:00
+- generated_at: 2026-06-21T03:32:54.650942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7288**
 
@@ -62,30 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T03:25:50.665409+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=64399.5
-- Funnel: target 796 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-21T03:32:47.986045+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64312.4
+- Funnel: target 796 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +49.04% | $48,824,369.83 |
-| ALICE/USDT:USDT | +37.56% | $3,098,802.42 |
-| RESOLV/USDT:USDT | +24.80% | $3,744,898.41 |
-| ASTEROID/USDT:USDT | +11.47% | $1,545,892.53 |
-| CHIP/USDT:USDT | +11.12% | $1,743,659.01 |
+| BICO/USDT:USDT | +50.50% | $48,961,693.03 |
+| ALICE/USDT:USDT | +38.59% | $3,112,247.35 |
+| RESOLV/USDT:USDT | +24.93% | $3,762,012.95 |
+| CHIP/USDT:USDT | +10.41% | $1,809,906.50 |
+| ASTEROID/USDT:USDT | +10.30% | $1,547,891.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.73% | +2.45% |
-| JTO/USDT:USDT | below_1h_threshold | +2.50% | +2.21% |
-| ASTEROID/USDT:USDT | below_1h_threshold | +1.81% | +1.53% |
-| AERO/USDT:USDT | below_1h_threshold | +1.47% | +1.19% |
-| ENA/USDT:USDT | below_1h_threshold | +1.33% | +1.05% |
+| JTO/USDT:USDT | below_1h_threshold | +2.94% | +2.80% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.38% | +2.23% |
+| AERO/USDT:USDT | below_1h_threshold | +1.72% | +1.58% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.16% | +1.02% |
+| ENA/USDT:USDT | below_1h_threshold | +1.13% | +0.99% |
 
 ## 6. 次に見るべき不足
 
