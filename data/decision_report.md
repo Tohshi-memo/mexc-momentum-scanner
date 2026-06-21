@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T23:13:30.422365+00:00
+- generated_at: 2026-06-21T23:20:54.527048+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7332**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T23:13:24.870630+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=63729.5
+- 更新: 2026-06-21T23:20:50.114521+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=63728.7
 - Funnel: target 796 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NAORIS/USDT:USDT | +27.12% | $2,644,182.82 |
-| EVAA/USDT:USDT | +13.54% | $1,218,348.00 |
-| SYN/USDT:USDT | +11.69% | $2,715,815.28 |
-| STO/USDT:USDT | +10.23% | $4,912,100.81 |
-| UAI/USDT:USDT | +9.15% | $2,331,140.46 |
+| NAORIS/USDT:USDT | +24.46% | $2,807,166.87 |
+| SYN/USDT:USDT | +12.00% | $2,737,031.44 |
+| EVAA/USDT:USDT | +11.52% | $1,242,007.66 |
+| STO/USDT:USDT | +10.11% | $4,914,369.98 |
+| UAI/USDT:USDT | +7.95% | $2,350,130.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.99% | +3.06% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.88% | +1.95% |
-| LAB/USDT:USDT | below_1h_threshold | +1.63% | +1.71% |
-| TNSR/USDT:USDT | below_1h_threshold | +1.08% | +1.16% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.08% | +1.15% |
+| LAB/USDT:USDT | below_1h_threshold | +4.33% | +4.41% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.86% | +2.94% |
+| CLO/USDT:USDT | below_1h_threshold | +2.11% | +2.18% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.13% | +1.20% |
+| SLX/USDT:USDT | below_1h_threshold | +0.77% | +0.84% |
 
 ## 6. 次に見るべき不足
 
