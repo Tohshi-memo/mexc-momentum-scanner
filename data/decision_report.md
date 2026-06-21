@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T01:58:24.043041+00:00
+- generated_at: 2026-06-21T02:06:19.368644+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7287**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T01:58:18.259715+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64244.3
-- Funnel: target 796 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.5 >= 65=1, 4h RSI 85.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-21T02:06:15.128770+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64213.9
+- Funnel: target 796 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +47.82% | $49,286,286.53 |
-| ALICE/USDT:USDT | +39.61% | $2,882,165.55 |
-| RESOLV/USDT:USDT | +25.59% | $3,495,890.38 |
-| VELVET/USDT:USDT | +11.29% | $17,048,479.23 |
-| ASTEROID/USDT:USDT | +9.78% | $1,632,314.70 |
+| BICO/USDT:USDT | +48.90% | $48,053,472.41 |
+| ALICE/USDT:USDT | +42.11% | $2,916,384.63 |
+| RESOLV/USDT:USDT | +26.99% | $3,509,177.54 |
+| VELVET/USDT:USDT | +12.31% | $16,920,340.73 |
+| ASTEROID/USDT:USDT | +9.86% | $1,557,807.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +4.43% | +4.46% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.86% | +2.89% |
-| RIF/USDT:USDT | below_1h_threshold | +2.74% | +2.77% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
-| LIT/USDT:USDT | below_1h_threshold | +1.92% | +1.95% |
+| ALICE/USDT:USDT | below_1h_threshold | +2.92% | +2.93% |
+| BICO/USDT:USDT | below_1h_threshold | +2.10% | +2.11% |
+| JTO/USDT:USDT | below_1h_threshold | +1.24% | +1.25% |
+| SLX/USDT:USDT | below_1h_threshold | +1.08% | +1.09% |
+| RESOLV/USDT:USDT | below_1h_threshold | +1.00% | +1.02% |
 
 ## 6. 次に見るべき不足
 
