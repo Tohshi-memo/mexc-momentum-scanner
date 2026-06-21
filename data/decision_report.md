@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T19:41:57.202622+00:00
+- generated_at: 2026-06-21T19:49:06.201698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7325**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T19:41:52.860590+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64182.2
+- 更新: 2026-06-21T19:49:01.784575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64170.9
 - Funnel: target 796 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +13.72% | $2,203,526.24 |
-| STO/USDT:USDT | +12.61% | $4,124,734.13 |
-| UB/USDT:USDT | +9.39% | $5,353,586.85 |
-| UAI/USDT:USDT | +9.24% | $1,844,912.22 |
-| EVAA/USDT:USDT | +8.99% | $1,002,848.44 |
+| STO/USDT:USDT | +12.34% | $4,168,020.02 |
+| SYN/USDT:USDT | +11.96% | $2,251,182.42 |
+| UAI/USDT:USDT | +10.45% | $1,859,327.04 |
+| UB/USDT:USDT | +8.92% | $5,425,853.70 |
+| EVAA/USDT:USDT | +8.08% | $1,009,404.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.74% | +3.74% |
-| SYN/USDT:USDT | below_1h_threshold | +3.72% | +3.72% |
-| BSB/USDT:USDT | below_1h_threshold | +2.35% | +2.35% |
-| MMT/USDT:USDT | below_1h_threshold | +1.87% | +1.86% |
-| O/USDT:USDT | below_1h_threshold | +1.63% | +1.63% |
+| TNSR/USDT:USDT | below_1h_threshold | +3.87% | +3.89% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.77% | +3.79% |
+| BSB/USDT:USDT | below_1h_threshold | +2.20% | +2.22% |
+| MMT/USDT:USDT | below_1h_threshold | +2.12% | +2.13% |
+| SYN/USDT:USDT | below_1h_threshold | +2.11% | +2.13% |
 
 ## 6. 次に見るべき不足
 
