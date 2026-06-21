@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T20:48:28.380042+00:00
+- generated_at: 2026-06-21T20:56:35.944513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7329**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T20:48:23.959284+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.59% price=63795.1
-- Funnel: target 796 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-21T20:56:31.683390+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.58% price=63801.0
+- Funnel: target 796 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +13.01% | $2,012,447.61 |
-| STO/USDT:USDT | +10.73% | $4,596,331.33 |
-| UB/USDT:USDT | +9.23% | $5,933,522.31 |
-| EVAA/USDT:USDT | +7.70% | $1,043,408.41 |
-| MMT/USDT:USDT | +7.26% | $1,154,318.75 |
+| STO/USDT:USDT | +11.44% | $4,622,960.18 |
+| UAI/USDT:USDT | +11.02% | $2,037,594.99 |
+| UB/USDT:USDT | +8.17% | $6,023,133.06 |
+| MMT/USDT:USDT | +7.26% | $1,157,715.00 |
+| EVAA/USDT:USDT | +7.04% | $1,047,793.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTEROID/USDT:USDT | below_1h_threshold | +4.50% | +5.09% |
-| MMT/USDT:USDT | below_1h_threshold | +2.83% | +3.42% |
-| UAI/USDT:USDT | below_1h_threshold | +2.18% | +2.77% |
-| H/USDT:USDT | below_1h_threshold | +1.81% | +2.40% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.41% | +2.00% |
+| ASTEROID/USDT:USDT | below_1h_threshold | +3.43% | +4.01% |
+| MMT/USDT:USDT | below_1h_threshold | +2.77% | +3.35% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.63% | +2.22% |
+| SLX/USDT:USDT | below_1h_threshold | +0.86% | +1.44% |
+| SITMSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +1.20% |
 
 ## 6. 次に見るべき不足
 
