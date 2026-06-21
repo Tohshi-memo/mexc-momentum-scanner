@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T06:26:59.261731+00:00
+- generated_at: 2026-06-21T06:32:32.847200+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7290**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T06:26:56.108910+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64235.0
+- 更新: 2026-06-21T06:32:29.363862+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64233.5
 - Funnel: target 796 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +24.68% | $51,985,186.66 |
-| RESOLV/USDT:USDT | +16.55% | $4,230,468.91 |
-| LAB/USDT:USDT | +15.61% | $19,872,534.45 |
-| ALICE/USDT:USDT | +14.30% | $3,554,413.60 |
-| UB/USDT:USDT | +13.19% | $1,048,648.94 |
+| BICO/USDT:USDT | +25.76% | $52,095,280.43 |
+| LAB/USDT:USDT | +17.31% | $20,121,167.61 |
+| RESOLV/USDT:USDT | +15.29% | $4,246,752.04 |
+| ALICE/USDT:USDT | +14.67% | $3,564,475.92 |
+| UB/USDT:USDT | +11.50% | $1,051,879.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.95% | +1.94% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.17% | +1.16% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.49% | +0.48% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.47% | +0.46% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.00% | +1.99% |
+| LAB/USDT:USDT | below_1h_threshold | +1.88% | +1.87% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.10% | +1.09% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.99% | +0.98% |
+| APT/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
 
 ## 6. 次に見るべき不足
 
