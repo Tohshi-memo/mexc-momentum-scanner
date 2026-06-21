@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T04:51:51.167047+00:00
+- generated_at: 2026-06-21T04:59:05.251229+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7289**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T04:51:46.788355+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=64311.3
+- 更新: 2026-06-21T04:59:00.813980+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=64240.3
 - Funnel: target 796 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +49.35% | $49,989,760.82 |
-| ALICE/USDT:USDT | +28.76% | $3,361,928.95 |
-| RESOLV/USDT:USDT | +18.48% | $3,983,028.42 |
-| VELVET/USDT:USDT | +9.89% | $17,169,958.95 |
-| CHIP/USDT:USDT | +8.76% | $1,882,494.69 |
+| BICO/USDT:USDT | +48.80% | $50,143,096.51 |
+| ALICE/USDT:USDT | +27.43% | $3,372,223.04 |
+| RESOLV/USDT:USDT | +17.75% | $3,991,935.80 |
+| VELVET/USDT:USDT | +10.60% | $17,203,685.10 |
+| CHIP/USDT:USDT | +8.97% | $1,895,148.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.19% | +3.32% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.47% | +2.61% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.50% | +0.63% |
-| FOXASTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.38% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.17% | +0.31% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.01% | +3.26% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.04% | +1.28% |
+| LAB/USDT:USDT | below_1h_threshold | +0.47% | +0.72% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.40% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.15% | +0.39% |
 
 ## 6. 次に見るべき不足
 
