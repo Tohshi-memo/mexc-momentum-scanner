@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T16:32:43.172356+00:00
+- generated_at: 2026-06-21T16:40:02.724902+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7318**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T16:32:38.331982+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=64130.4
-- Funnel: target 796 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1, 4h RSI 85.1 >= 65=1
+- 更新: 2026-06-21T16:39:57.495433+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=64037.1
+- Funnel: target 796 → liquid 134 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 85.8 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RESOLV/USDT:USDT | +14.22% | $11,111,591.37 |
-| SAGA/USDT:USDT | +8.08% | $1,500,274.42 |
-| TNSR/USDT:USDT | +4.39% | $16,458,618.94 |
-| UB/USDT:USDT | +3.90% | $3,735,862.26 |
-| EIGEN/USDT:USDT | +3.51% | $4,796,044.58 |
+| RESOLV/USDT:USDT | +13.59% | $11,407,074.92 |
+| SAGA/USDT:USDT | +9.84% | $1,539,372.74 |
+| SLX/USDT:USDT | +5.52% | $1,010,665.74 |
+| UB/USDT:USDT | +5.22% | $3,772,143.53 |
+| TNSR/USDT:USDT | +4.49% | $16,571,369.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TNSR/USDT:USDT | below_1h_threshold | +4.40% | +4.50% |
-| UB/USDT:USDT | below_1h_threshold | +3.90% | +4.01% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.37% | +3.47% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.13% | +2.24% |
-| MMT/USDT:USDT | below_1h_threshold | +1.86% | +1.97% |
+| TNSR/USDT:USDT | below_1h_threshold | +4.28% | +4.53% |
+| UAI/USDT:USDT | below_1h_threshold | +2.95% | +3.20% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.94% | +3.19% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.32% | +2.57% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.13% | +2.38% |
 
 ## 6. 次に見るべき不足
 
