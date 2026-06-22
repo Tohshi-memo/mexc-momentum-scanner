@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T00:49:43.443538+00:00
+- generated_at: 2026-06-22T01:07:22.338691+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7339**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T00:49:38.525988+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.85% price=63822.7
-- Funnel: target 796 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.5 >= 65=1, 4h RSI 70.9 >= 65=1
+- 更新: 2026-06-22T01:07:17.560866+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63941.1
+- Funnel: target 796 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +29.82% | $46,003,344.72 |
-| NAORIS/USDT:USDT | +25.54% | $3,742,724.85 |
-| SYN/USDT:USDT | +18.70% | $2,914,911.10 |
-| UB/USDT:USDT | +14.49% | $7,194,732.86 |
-| BEL/USDT:USDT | +11.99% | $1,043,695.66 |
+| NAORIS/USDT:USDT | +27.50% | $3,866,329.98 |
+| SYN/USDT:USDT | +25.21% | $2,936,406.52 |
+| LAB/USDT:USDT | +23.53% | $47,714,233.62 |
+| BEL/USDT:USDT | +14.84% | $1,012,711.38 |
+| UB/USDT:USDT | +12.24% | $7,282,305.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_relative_strength | +5.11% | +4.26% |
-| UB/USDT:USDT | below_relative_strength | +5.10% | +4.26% |
-| CLO/USDT:USDT | below_1h_threshold | +4.67% | +3.83% |
-| TNSR/USDT:USDT | below_1h_threshold | +4.12% | +3.27% |
-| W/USDT:USDT | below_1h_threshold | +3.87% | +3.03% |
+| TNSR/USDT:USDT | below_1h_threshold | +2.26% | +2.14% |
+| BEL/USDT:USDT | below_1h_threshold | +1.71% | +1.58% |
+| BSB/USDT:USDT | below_1h_threshold | +1.42% | +1.30% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.78% | +0.66% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.67% | +0.54% |
 
 ## 6. 次に見るべき不足
 
