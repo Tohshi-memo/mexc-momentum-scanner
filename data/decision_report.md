@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T05:54:36.988103+00:00
+- generated_at: 2026-06-22T06:01:53.368491+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7349**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T05:54:32.497797+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=64181.8
-- Funnel: target 802 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-22T06:01:48.870086+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64186.0
+- Funnel: target 802 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +41.01% | $5,176,266.06 |
-| UB/USDT:USDT | +29.63% | $9,384,884.69 |
-| CLO/USDT:USDT | +25.22% | $4,263,377.94 |
-| ZEST/USDT:USDT | +24.33% | $1,044,616.27 |
-| ID/USDT:USDT | +18.39% | $1,120,784.52 |
+| SYN/USDT:USDT | +40.30% | $5,133,391.30 |
+| UB/USDT:USDT | +31.87% | $9,379,674.65 |
+| CLO/USDT:USDT | +25.66% | $3,763,966.97 |
+| ZEST/USDT:USDT | +24.23% | $1,043,761.13 |
+| ID/USDT:USDT | +19.08% | $1,154,502.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TNSR/USDT:USDT | below_1h_threshold | +4.28% | +4.10% |
-| ID/USDT:USDT | below_1h_threshold | +4.26% | +4.08% |
-| SYN/USDT:USDT | below_1h_threshold | +3.80% | +3.62% |
-| UB/USDT:USDT | below_1h_threshold | +3.56% | +3.38% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.12% | +2.93% |
+| ID/USDT:USDT | below_1h_threshold | +0.80% | +0.85% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.62% | +0.67% |
+| W/USDT:USDT | below_1h_threshold | +0.51% | +0.56% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.47% | +0.52% |
+| SYN/USDT:USDT | below_1h_threshold | +0.44% | +0.49% |
 
 ## 6. 次に見るべき不足
 
