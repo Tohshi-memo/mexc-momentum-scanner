@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T20:29:33.751155+00:00
+- generated_at: 2026-06-22T20:36:52.722876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7395**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T20:29:29.248428+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=64348.9
+- 更新: 2026-06-22T20:36:48.227580+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64386.1
 - Funnel: target 808 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +16.52% | $13,454,784.68 |
-| RE/USDT:USDT | +14.65% | $27,434,429.11 |
-| BLESS/USDT:USDT | +12.71% | $7,846,781.89 |
-| SYN/USDT:USDT | +12.68% | $27,810,908.19 |
-| LAB/USDT:USDT | +11.45% | $40,176,576.03 |
+| VELVET/USDT:USDT | +20.03% | $13,866,576.04 |
+| RE/USDT:USDT | +15.94% | $27,494,576.09 |
+| BLESS/USDT:USDT | +14.14% | $8,047,160.86 |
+| SYN/USDT:USDT | +13.94% | $27,876,766.58 |
+| LAB/USDT:USDT | +12.62% | $40,428,385.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.37% | +1.49% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.21% | +1.33% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.23% |
-| BASED/USDT:USDT | below_1h_threshold | +0.94% | +1.07% |
-| AXONSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.96% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.22% | +4.29% |
+| BASED/USDT:USDT | below_1h_threshold | +1.84% | +1.91% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.30% | +1.37% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.27% | +1.33% |
+| SUI/USDT:USDT | below_1h_threshold | +1.21% | +1.28% |
 
 ## 6. 次に見るべき不足
 
