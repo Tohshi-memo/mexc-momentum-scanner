@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-21T23:52:56.211099+00:00
+- generated_at: 2026-06-22T00:02:33.512902+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7334**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-21T23:52:48.441775+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.72% price=63317.4
+- 更新: 2026-06-22T00:00:06.458666+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.76% price=63292.7
 - Funnel: target 796 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NAORIS/USDT:USDT | +26.21% | $3,031,638.21 |
-| SYN/USDT:USDT | +14.06% | $2,823,490.48 |
-| LAB/USDT:USDT | +13.18% | $40,878,159.77 |
-| EVAA/USDT:USDT | +11.00% | $1,261,983.87 |
-| UB/USDT:USDT | +10.44% | $6,807,592.03 |
+| NAORIS/USDT:USDT | +26.87% | $3,060,850.23 |
+| SYN/USDT:USDT | +14.99% | $2,841,926.60 |
+| LAB/USDT:USDT | +13.98% | $41,239,039.09 |
+| BEL/USDT:USDT | +10.55% | $1,038,994.63 |
+| EVAA/USDT:USDT | +10.34% | $1,266,794.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.17% | +2.88% |
-| UB/USDT:USDT | below_1h_threshold | +1.94% | +2.65% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.35% | +2.07% |
-| MMT/USDT:USDT | below_1h_threshold | +0.73% | +1.45% |
-| STO/USDT:USDT | below_1h_threshold | +0.57% | +1.29% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.91% | +2.66% |
+| MYX/USDT:USDT | below_1h_threshold | +1.47% | +2.22% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.25% | +2.01% |
+| BILL/USDT:USDT | below_1h_threshold | +0.69% | +1.45% |
+| MMT/USDT:USDT | below_1h_threshold | +0.61% | +1.36% |
 
 ## 6. 次に見るべき不足
 
