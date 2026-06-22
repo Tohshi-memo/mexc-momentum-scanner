@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T13:30:44.807218+00:00
+- generated_at: 2026-06-22T13:39:37.705676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7370**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T13:30:40.135050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=65073.2
-- Funnel: target 808 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.7 >= 65=1, 4h RSI 71.1 >= 65=1
+- 更新: 2026-06-22T13:39:32.697069+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=65255.1
+- Funnel: target 808 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 71.7 >= 65=1, 4h RSI 74.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +61.99% | $18,616,184.34 |
-| BEL/USDT:USDT | +41.39% | $1,900,803.16 |
-| BTW/USDT:USDT | +25.31% | $37,630,597.98 |
-| LAYER/USDT:USDT | +17.61% | $3,512,878.64 |
-| NAORIS/USDT:USDT | +16.23% | $5,778,433.02 |
+| SYN/USDT:USDT | +63.02% | $18,893,617.26 |
+| BEL/USDT:USDT | +37.83% | $2,035,912.95 |
+| BTW/USDT:USDT | +26.49% | $37,749,389.79 |
+| LAYER/USDT:USDT | +17.24% | $3,560,615.53 |
+| BLESS/USDT:USDT | +16.15% | $1,776,628.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.82% | +3.89% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.26% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.86% | +1.93% |
-| SPX/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
-| LIT/USDT:USDT | below_1h_threshold | +1.62% | +1.69% |
+| BTW/USDT:USDT | below_1h_threshold | +4.70% | +4.49% |
+| SPX/USDT:USDT | below_1h_threshold | +2.54% | +2.33% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.52% | +2.31% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.52% |
+| NAORIS/USDT:USDT | below_1h_threshold | +1.53% | +1.32% |
 
 ## 6. 次に見るべき不足
 
