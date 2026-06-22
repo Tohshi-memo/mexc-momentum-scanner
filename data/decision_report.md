@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T14:19:11.445661+00:00
+- generated_at: 2026-06-22T14:23:32.532292+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7373**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T14:19:05.703788+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=65188.6
+- 更新: 2026-06-22T14:23:29.409897+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.73% price=65068.7
 - Funnel: target 808 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1
+- Strict後reject: 4h RSI 70.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +66.86% | $20,562,166.32 |
-| BEL/USDT:USDT | +34.91% | $2,455,021.52 |
-| BTW/USDT:USDT | +31.94% | $35,311,098.91 |
-| BLESS/USDT:USDT | +23.64% | $2,189,395.15 |
-| CLO/USDT:USDT | +22.42% | $3,305,292.56 |
+| SYN/USDT:USDT | +63.16% | $20,760,117.67 |
+| BEL/USDT:USDT | +36.45% | $2,495,872.47 |
+| BTW/USDT:USDT | +32.34% | $35,535,022.82 |
+| CLO/USDT:USDT | +24.63% | $3,316,570.85 |
+| BLESS/USDT:USDT | +22.32% | $2,271,365.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.82% | +5.37% |
-| LAYER/USDT:USDT | below_1h_threshold | +2.24% | +2.79% |
-| BTW/USDT:USDT | below_1h_threshold | +1.55% | +2.10% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.45% | +1.99% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.20% | +1.74% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.74% | +4.47% |
+| CLO/USDT:USDT | below_1h_threshold | +2.35% | +3.08% |
+| BTW/USDT:USDT | below_1h_threshold | +1.70% | +2.43% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.84% |
+| LAYER/USDT:USDT | below_1h_threshold | +1.01% | +1.74% |
 
 ## 6. 次に見るべき不足
 
