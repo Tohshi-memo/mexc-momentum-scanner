@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T13:39:37.705676+00:00
+- generated_at: 2026-06-22T13:47:11.961939+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7370**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T13:39:32.697069+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=65255.1
-- Funnel: target 808 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 71.7 >= 65=1, 4h RSI 74.5 >= 65=1
+- 更新: 2026-06-22T13:47:07.039139+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=65449.9
+- Funnel: target 808 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.9 >= 65=1, 4h RSI 74.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +63.02% | $18,893,617.26 |
-| BEL/USDT:USDT | +37.83% | $2,035,912.95 |
-| BTW/USDT:USDT | +26.49% | $37,749,389.79 |
-| LAYER/USDT:USDT | +17.24% | $3,560,615.53 |
-| BLESS/USDT:USDT | +16.15% | $1,776,628.79 |
+| SYN/USDT:USDT | +55.48% | $19,202,236.35 |
+| BEL/USDT:USDT | +37.19% | $2,133,145.12 |
+| BTW/USDT:USDT | +26.57% | $37,840,653.94 |
+| CLO/USDT:USDT | +18.32% | $3,381,212.57 |
+| LAYER/USDT:USDT | +17.78% | $3,600,366.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.70% | +4.49% |
-| SPX/USDT:USDT | below_1h_threshold | +2.54% | +2.33% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.52% | +2.31% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.52% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.53% | +1.32% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.87% | +4.36% |
+| BTW/USDT:USDT | below_1h_threshold | +4.86% | +4.35% |
+| PANWSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.24% |
+| SPX/USDT:USDT | below_1h_threshold | +2.44% | +1.93% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.95% | +1.44% |
 
 ## 6. 次に見るべき不足
 
