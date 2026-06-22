@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T10:17:19.767414+00:00
+- generated_at: 2026-06-22T10:24:38.068250+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7362**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T10:17:15.338940+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64206.2
+- 更新: 2026-06-22T10:24:33.486623+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64175.0
 - Funnel: target 806 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +86.19% | $12,003,579.55 |
-| UB/USDT:USDT | +27.59% | $15,219,884.25 |
-| CLO/USDT:USDT | +27.22% | $3,538,313.24 |
-| ZEST/USDT:USDT | +21.16% | $2,350,901.72 |
-| ID/USDT:USDT | +20.88% | $1,832,139.08 |
+| SYN/USDT:USDT | +86.04% | $12,202,997.35 |
+| UB/USDT:USDT | +28.19% | $15,307,997.94 |
+| CLO/USDT:USDT | +26.46% | $3,548,050.31 |
+| ID/USDT:USDT | +21.32% | $1,848,800.58 |
+| HMSTR/USDT:USDT | +20.03% | $1,221,120.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.67% | +2.53% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.59% | +1.45% |
-| LIT/USDT:USDT | below_1h_threshold | +1.21% | +1.06% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.06% | +0.91% |
-| ENA/USDT:USDT | below_1h_threshold | +1.03% | +0.89% |
+| BTW/USDT:USDT | below_1h_threshold | +4.70% | +4.60% |
+| MMT/USDT:USDT | below_1h_threshold | +1.67% | +1.57% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.18% | +1.08% |
+| UB/USDT:USDT | below_1h_threshold | +1.15% | +1.05% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.02% | +0.93% |
 
 ## 6. 次に見るべき不足
 
