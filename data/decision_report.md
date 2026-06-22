@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T00:24:38.638229+00:00
+- generated_at: 2026-06-22T00:34:30.297093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7336**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T00:24:32.822494+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=63579.0
-- Funnel: target 796 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- 更新: 2026-06-22T00:32:03.299374+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.78% price=63780.0
+- Funnel: target 796 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NAORIS/USDT:USDT | +31.02% | $3,458,787.54 |
-| LAB/USDT:USDT | +19.71% | $42,873,554.65 |
-| SYN/USDT:USDT | +14.85% | $2,840,250.36 |
-| UB/USDT:USDT | +14.00% | $7,021,779.24 |
-| BEL/USDT:USDT | +13.56% | $1,021,034.23 |
+| NAORIS/USDT:USDT | +30.19% | $3,530,055.25 |
+| LAB/USDT:USDT | +23.03% | $43,730,201.10 |
+| SYN/USDT:USDT | +15.02% | $2,850,532.09 |
+| UB/USDT:USDT | +14.90% | $7,101,045.91 |
+| BEL/USDT:USDT | +14.40% | $1,034,691.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_relative_strength | +5.32% | +4.86% |
-| UB/USDT:USDT | below_1h_threshold | +4.66% | +4.20% |
-| BSB/USDT:USDT | below_1h_threshold | +3.64% | +3.18% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.48% | +3.02% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.11% | +2.65% |
+| UB/USDT:USDT | below_relative_strength | +5.40% | +4.62% |
+| EIGEN/USDT:USDT | below_1h_threshold | +4.22% | +3.44% |
+| BSB/USDT:USDT | below_1h_threshold | +3.70% | +2.92% |
+| BEL/USDT:USDT | below_1h_threshold | +3.24% | +2.46% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.71% | +1.93% |
 
 ## 6. 次に見るべき不足
 
