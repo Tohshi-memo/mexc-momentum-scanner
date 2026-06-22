@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T07:40:49.596336+00:00
+- generated_at: 2026-06-22T07:48:22.398767+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7354**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T07:40:45.292206+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=64287.5
-- Funnel: target 801 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.1 >= 65=1, 4h RSI 68.8 >= 65=1, 4h RSI 77.8 >= 65=1
+- 更新: 2026-06-22T07:48:17.453343+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=64237.2
+- Funnel: target 801 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 68.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +65.76% | $6,726,327.83 |
-| UB/USDT:USDT | +41.73% | $11,547,851.81 |
-| CLO/USDT:USDT | +27.00% | $3,725,085.79 |
-| ZEST/USDT:USDT | +23.44% | $1,957,445.04 |
-| ID/USDT:USDT | +22.92% | $1,471,572.47 |
+| SYN/USDT:USDT | +63.92% | $6,983,575.77 |
+| UB/USDT:USDT | +41.29% | $11,791,774.28 |
+| ZEST/USDT:USDT | +24.92% | $1,960,692.25 |
+| CLO/USDT:USDT | +23.50% | $3,742,787.29 |
+| ID/USDT:USDT | +21.03% | $1,510,654.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_relative_strength | +5.01% | +4.49% |
-| BILL/USDT:USDT | below_1h_threshold | +4.47% | +3.96% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.39% | +1.88% |
-| IP/USDT:USDT | below_1h_threshold | +2.21% | +1.70% |
-| TIA/USDT:USDT | below_1h_threshold | +1.88% | +1.37% |
+| UB/USDT:USDT | below_relative_strength | +5.01% | +4.57% |
+| BILL/USDT:USDT | below_1h_threshold | +4.50% | +4.07% |
+| ID/USDT:USDT | below_1h_threshold | +4.34% | +3.90% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.03% | +1.59% |
+| IP/USDT:USDT | below_1h_threshold | +2.01% | +1.58% |
 
 ## 6. 次に見るべき不足
 
