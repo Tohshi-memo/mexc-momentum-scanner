@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T03:57:44.061931+00:00
+- generated_at: 2026-06-22T04:15:15.760087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7347**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T03:57:39.563967+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=63924.0
-- Funnel: target 801 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-22T04:15:11.132337+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63931.4
+- Funnel: target 801 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +32.70% | $4,436,477.42 |
-| BEL/USDT:USDT | +25.22% | $1,154,317.50 |
-| CLO/USDT:USDT | +21.23% | $4,209,332.30 |
-| NAORIS/USDT:USDT | +19.72% | $4,858,035.49 |
-| UB/USDT:USDT | +17.98% | $7,982,355.15 |
+| SYN/USDT:USDT | +35.49% | $4,506,012.76 |
+| BEL/USDT:USDT | +25.30% | $1,204,873.11 |
+| CLO/USDT:USDT | +19.56% | $3,981,408.19 |
+| UB/USDT:USDT | +17.59% | $8,004,976.52 |
+| NAORIS/USDT:USDT | +15.44% | $4,979,530.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEL/USDT:USDT | below_1h_threshold | +4.83% | +5.30% |
-| MMT/USDT:USDT | below_1h_threshold | +3.75% | +4.22% |
-| UB/USDT:USDT | below_1h_threshold | +2.78% | +3.25% |
-| TNSR/USDT:USDT | below_1h_threshold | +2.03% | +2.50% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.00% | +2.47% |
+| LAB/USDT:USDT | below_1h_threshold | +4.00% | +4.01% |
+| BTW/USDT:USDT | below_1h_threshold | +3.45% | +3.45% |
+| UAI/USDT:USDT | below_1h_threshold | +2.77% | +2.77% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.53% | +2.54% |
+| CLO/USDT:USDT | below_1h_threshold | +2.07% | +2.08% |
 
 ## 6. 次に見るべき不足
 
