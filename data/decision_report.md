@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T12:21:13.657683+00:00
+- generated_at: 2026-06-22T12:28:48.051547+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7364**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$101.95** / 初期 $100.00 (+1.95%)
-- 確定トレード: 26件 (TP 10 / SL 16 / EXP 0)
-- 最新: UB/USDT:USDT SL_HIT PnL -4.00% 残高後 $101.95
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$102.97** / 初期 $100.00 (+2.97%)
+- 確定トレード: 27件 (TP 11 / SL 16 / EXP 0)
+- 最新: BEAT/USDT:USDT TP_HIT PnL +8.00% 残高後 $102.97
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T12:21:07.977281+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64705.0
+- 更新: 2026-06-22T12:28:43.337082+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=64900.0
 - Funnel: target 806 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
+- Strict後reject: 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +88.94% | $16,403,255.94 |
-| CLO/USDT:USDT | +27.81% | $3,161,438.39 |
-| LAYER/USDT:USDT | +25.69% | $2,902,465.57 |
-| BTW/USDT:USDT | +20.41% | $41,212,849.87 |
-| NAORIS/USDT:USDT | +15.03% | $5,711,741.94 |
+| SYN/USDT:USDT | +87.92% | $16,645,928.59 |
+| CLO/USDT:USDT | +30.08% | $3,175,439.53 |
+| LAYER/USDT:USDT | +25.12% | $2,959,580.68 |
+| BTW/USDT:USDT | +18.58% | $41,322,606.09 |
+| NAORIS/USDT:USDT | +14.37% | $5,721,957.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMCSTOCK/USDT:USDT | below_1h_threshold | +4.60% | +4.47% |
-| BEL/USDT:USDT | below_1h_threshold | +2.39% | +2.27% |
-| BILL/USDT:USDT | below_1h_threshold | +1.57% | +1.44% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.57% | +1.44% |
-| NAORIS/USDT:USDT | below_1h_threshold | +1.37% | +1.24% |
+| BEL/USDT:USDT | below_1h_threshold | +3.19% | +2.76% |
+| AMCSTOCK/USDT:USDT | below_1h_threshold | +2.96% | +2.53% |
+| CLO/USDT:USDT | below_1h_threshold | +2.59% | +2.16% |
+| UB/USDT:USDT | below_1h_threshold | +1.93% | +1.50% |
+| TIA/USDT:USDT | below_1h_threshold | +1.69% | +1.27% |
 
 ## 6. 次に見るべき不足
 
