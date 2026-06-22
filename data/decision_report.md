@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-22T16:46:36.268370+00:00
+- generated_at: 2026-06-22T16:54:03.095426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7381**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-22T16:46:31.470249+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=64505.7
-- Funnel: target 808 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1
+- 更新: 2026-06-22T16:53:57.801773+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=64687.1
+- Funnel: target 808 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 75.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +8.08% | $24,513,569.03 |
-| VELVET/USDT:USDT | +5.20% | $9,905,684.67 |
-| RE/USDT:USDT | +4.17% | $22,633,267.50 |
-| BLESS/USDT:USDT | +4.12% | $3,242,169.45 |
-| NAORIS/USDT:USDT | +3.41% | $5,910,791.53 |
+| SYN/USDT:USDT | +8.65% | $24,866,183.04 |
+| BLESS/USDT:USDT | +6.43% | $3,301,563.62 |
+| VELVET/USDT:USDT | +5.08% | $10,063,562.33 |
+| RE/USDT:USDT | +4.22% | $22,724,547.71 |
+| RESOLV/USDT:USDT | +3.92% | $12,901,359.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.16% | +4.63% |
-| RE/USDT:USDT | below_1h_threshold | +3.92% | +4.38% |
-| NAORIS/USDT:USDT | below_1h_threshold | +3.42% | +3.88% |
-| RESOLV/USDT:USDT | below_1h_threshold | +3.35% | +3.82% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.86% | +3.32% |
+| RE/USDT:USDT | below_1h_threshold | +4.22% | +4.41% |
+| RESOLV/USDT:USDT | below_1h_threshold | +3.92% | +4.11% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.53% | +3.72% |
+| AMCSTOCK/USDT:USDT | below_1h_threshold | +3.10% | +3.29% |
+| POWER/USDT:USDT | below_1h_threshold | +2.91% | +3.10% |
 
 ## 6. 次に見るべき不足
 
