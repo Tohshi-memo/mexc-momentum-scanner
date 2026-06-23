@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T21:40:29.855728+00:00
+- generated_at: 2026-06-23T21:48:12.905639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7444**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T21:40:26.045372+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=62560.4
+- 更新: 2026-06-23T21:48:08.462776+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=62623.9
 - Funnel: target 802 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +38.84% | $5,943,143.11 |
-| BEAT/USDT:USDT | +21.94% | $45,089,972.35 |
-| ALLO/USDT:USDT | +7.16% | $4,977,661.54 |
-| DYDX/USDT:USDT | +7.12% | $3,026,531.29 |
-| BASED/USDT:USDT | +6.99% | $3,035,169.09 |
+| HEI/USDT:USDT | +34.88% | $6,059,416.25 |
+| BEAT/USDT:USDT | +10.05% | $47,141,512.30 |
+| DYDX/USDT:USDT | +8.07% | $3,091,921.71 |
+| RAVE/USDT:USDT | +7.40% | $2,341,373.23 |
+| BASED/USDT:USDT | +6.79% | $3,049,585.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +4.35% | +4.16% |
-| HEI/USDT:USDT | below_1h_threshold | +3.02% | +2.82% |
-| SAHARA/USDT:USDT | below_1h_threshold | +2.72% | +2.53% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.40% | +2.21% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.02% | +1.83% |
+| BASED/USDT:USDT | below_1h_threshold | +4.15% | +3.86% |
+| ICP/USDT:USDT | below_1h_threshold | +1.89% | +1.59% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.84% | +1.54% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.67% | +1.38% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.62% | +1.32% |
 
 ## 6. 次に見るべき不足
 
