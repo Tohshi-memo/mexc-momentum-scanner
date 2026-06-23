@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T10:53:57.176350+00:00
+- generated_at: 2026-06-23T11:01:38.072231+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7420**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T10:53:51.463417+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=62243.2
-- Funnel: target 801 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-23T11:01:33.509139+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=62354.4
+- Funnel: target 801 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +34.85% | $16,955,047.40 |
-| RESOLV/USDT:USDT | +31.12% | $6,732,206.75 |
-| BR/USDT:USDT | +16.83% | $1,306,086.43 |
-| VELVET/USDT:USDT | +11.59% | $21,708,350.99 |
-| BLESS/USDT:USDT | +9.93% | $20,615,499.44 |
+| ARX/USDT:USDT | +33.04% | $17,019,178.87 |
+| RESOLV/USDT:USDT | +30.51% | $6,769,721.48 |
+| BR/USDT:USDT | +16.59% | $1,322,981.99 |
+| BLESS/USDT:USDT | +10.76% | $20,712,725.96 |
+| FOLKS/USDT:USDT | +10.55% | $16,352,948.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.90% | +5.07% |
-| BASED/USDT:USDT | below_1h_threshold | +3.35% | +3.52% |
-| POWER/USDT:USDT | below_1h_threshold | +2.03% | +2.20% |
-| LYN/USDT:USDT | below_1h_threshold | +1.65% | +1.82% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.53% | +1.70% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.32% | +1.22% |
+| RESOLV/USDT:USDT | below_1h_threshold | +0.51% | +0.41% |
+| MYX/USDT:USDT | below_1h_threshold | +0.38% | +0.28% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.37% | +0.27% |
+| ARX/USDT:USDT | below_1h_threshold | +0.35% | +0.25% |
 
 ## 6. 次に見るべき不足
 
