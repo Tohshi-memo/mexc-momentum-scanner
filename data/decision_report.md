@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T22:14:41.562380+00:00
+- generated_at: 2026-06-23T22:23:30.793009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7444**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T22:14:36.931823+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=62730.8
+- 更新: 2026-06-23T22:23:26.487705+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=62598.2
 - Funnel: target 802 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +39.97% | $6,237,774.47 |
-| BEAT/USDT:USDT | +14.94% | $49,427,934.04 |
-| RAVE/USDT:USDT | +7.24% | $2,389,050.78 |
-| DYDX/USDT:USDT | +6.83% | $3,063,850.72 |
-| SAHARA/USDT:USDT | +6.00% | $1,174,963.72 |
+| HEI/USDT:USDT | +36.46% | $6,314,582.38 |
+| BEAT/USDT:USDT | +13.10% | $50,533,053.86 |
+| DYDX/USDT:USDT | +11.63% | $3,219,965.83 |
+| RAVE/USDT:USDT | +7.24% | $2,405,877.00 |
+| ALLO/USDT:USDT | +6.33% | $4,995,278.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.36% | +3.09% |
-| POPCAT/USDT:USDT | below_1h_threshold | +3.08% | +2.81% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.31% | +2.04% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.96% | +0.70% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.88% | +0.61% |
+| DYDX/USDT:USDT | below_1h_threshold | +4.30% | +4.24% |
+| POPCAT/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.13% | +2.07% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.26% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.29% | +1.23% |
 
 ## 6. 次に見るべき不足
 
