@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T13:28:43.479354+00:00
+- generated_at: 2026-06-23T13:36:17.307253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7423**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T13:28:37.079011+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=62016.8
+- 更新: 2026-06-23T13:36:10.578765+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=62369.6
 - Funnel: target 802 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +27.19% | $18,235,105.17 |
-| G/USDT:USDT | +21.56% | $1,679,121.97 |
-| BR/USDT:USDT | +19.10% | $1,719,577.03 |
-| ESPORTS/USDT:USDT | +15.74% | $2,726,814.62 |
-| BLESS/USDT:USDT | +15.20% | $22,916,635.42 |
+| ARX/USDT:USDT | +29.10% | $18,296,962.31 |
+| BR/USDT:USDT | +19.45% | $1,743,212.87 |
+| G/USDT:USDT | +19.44% | $1,867,280.66 |
+| ESPORTS/USDT:USDT | +17.07% | $2,752,017.83 |
+| BLESS/USDT:USDT | +15.42% | $23,099,442.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.43% | +2.77% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.97% | +2.31% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.16% | +1.50% |
-| JTO/USDT:USDT | below_1h_threshold | +0.96% | +1.30% |
-| FOXASTOCK/USDT:USDT | below_1h_threshold | +0.74% | +1.07% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.36% | +2.13% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.29% | +2.07% |
+| JTO/USDT:USDT | below_1h_threshold | +2.29% | +2.07% |
+| BASED/USDT:USDT | below_1h_threshold | +1.63% | +1.41% |
+| ARX/USDT:USDT | below_1h_threshold | +1.39% | +1.16% |
 
 ## 6. 次に見るべき不足
 
