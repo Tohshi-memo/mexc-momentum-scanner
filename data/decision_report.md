@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T10:14:32.598537+00:00
+- generated_at: 2026-06-23T10:22:17.759733+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7418**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T10:14:27.907995+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=62421.1
-- Funnel: target 801 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-06-23T10:22:13.115008+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62380.2
+- Funnel: target 801 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
+- Strict後reject: 4h RSI 68.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +38.67% | $16,533,508.47 |
-| RESOLV/USDT:USDT | +20.45% | $5,862,312.88 |
-| BR/USDT:USDT | +15.63% | $1,186,135.51 |
-| FOLKS/USDT:USDT | +14.98% | $15,018,428.13 |
-| VELVET/USDT:USDT | +11.66% | $21,295,539.09 |
+| ARX/USDT:USDT | +38.24% | $16,634,996.71 |
+| RESOLV/USDT:USDT | +21.06% | $5,929,124.12 |
+| FOLKS/USDT:USDT | +15.45% | $15,243,700.94 |
+| BR/USDT:USDT | +14.62% | $1,210,738.66 |
+| CLO/USDT:USDT | +11.64% | $4,160,224.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.71% | +3.59% |
-| BASED/USDT:USDT | below_1h_threshold | +3.26% | +3.14% |
-| LYN/USDT:USDT | below_1h_threshold | +2.24% | +2.13% |
-| LAYER/USDT:USDT | below_1h_threshold | +2.09% | +1.97% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.66% | +1.54% |
+| SYN/USDT:USDT | below_1h_threshold | +3.91% | +3.86% |
+| LAB/USDT:USDT | below_1h_threshold | +3.29% | +3.25% |
+| POWER/USDT:USDT | below_1h_threshold | +3.05% | +3.00% |
+| BASED/USDT:USDT | below_1h_threshold | +3.05% | +3.00% |
+| BTW/USDT:USDT | below_1h_threshold | +2.25% | +2.20% |
 
 ## 6. 次に見るべき不足
 
