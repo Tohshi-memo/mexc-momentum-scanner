@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T20:33:23.946669+00:00
+- generated_at: 2026-06-23T20:41:07.900480+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7443**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T20:33:18.444925+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=62436.6
-- Funnel: target 802 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-23T20:41:03.356737+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=62441.9
+- Funnel: target 802 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +29.55% | $5,060,734.76 |
-| BEAT/USDT:USDT | +26.00% | $32,882,707.95 |
-| SYN/USDT:USDT | +9.66% | $17,163,090.28 |
-| RAVE/USDT:USDT | +7.05% | $1,992,035.82 |
-| CBRSSTOCK/USDT:USDT | +6.20% | $1,203,277.56 |
+| HEI/USDT:USDT | +32.16% | $5,170,207.49 |
+| BEAT/USDT:USDT | +22.63% | $34,298,919.63 |
+| SYN/USDT:USDT | +7.75% | $17,229,113.66 |
+| RAVE/USDT:USDT | +7.01% | $2,033,616.11 |
+| DYDX/USDT:USDT | +6.25% | $2,902,546.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.58% | +4.48% |
-| SAHARA/USDT:USDT | below_1h_threshold | +3.50% | +3.39% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.90% | +2.80% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.94% | +1.84% |
-| APE/USDT:USDT | below_1h_threshold | +1.82% | +1.72% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.32% | +3.21% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.86% | +2.75% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.19% | +2.07% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.06% | +1.94% |
+| APE/USDT:USDT | below_1h_threshold | +1.82% | +1.71% |
 
 ## 6. 次に見るべき不足
 
