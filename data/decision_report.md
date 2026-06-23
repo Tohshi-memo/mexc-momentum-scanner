@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T08:45:53.119159+00:00
+- generated_at: 2026-06-23T08:53:32.074669+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7415**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T08:45:48.602390+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.86% price=62308.3
-- Funnel: target 801 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-23T08:53:27.366815+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.72% price=62396.5
+- Funnel: target 801 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +40.33% | $15,770,482.80 |
-| FOLKS/USDT:USDT | +27.07% | $11,723,529.04 |
-| CLO/USDT:USDT | +16.72% | $4,068,701.87 |
-| RESOLV/USDT:USDT | +13.65% | $5,817,133.93 |
-| VELVET/USDT:USDT | +9.92% | $21,160,898.02 |
+| ARX/USDT:USDT | +42.68% | $15,871,366.98 |
+| FOLKS/USDT:USDT | +23.07% | $12,244,070.00 |
+| RESOLV/USDT:USDT | +14.78% | $5,871,571.34 |
+| CLO/USDT:USDT | +14.05% | $4,129,429.69 |
+| BR/USDT:USDT | +13.15% | $1,007,381.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAYER/USDT:USDT | below_1h_threshold | +4.80% | +5.66% |
-| KAS/USDT:USDT | below_1h_threshold | +3.56% | +4.42% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.88% | +2.74% |
-| JTO/USDT:USDT | below_1h_threshold | +1.76% | +2.62% |
-| CMCSASTOCK/USDT:USDT | below_1h_threshold | +1.31% | +2.17% |
+| KAS/USDT:USDT | below_1h_threshold | +4.08% | +4.80% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.97% | +3.69% |
+| JTO/USDT:USDT | below_1h_threshold | +2.26% | +2.98% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.63% | +2.35% |
+| TWLOSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +2.08% |
 
 ## 6. 次に見るべき不足
 
