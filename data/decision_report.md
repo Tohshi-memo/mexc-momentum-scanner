@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T10:30:51.656162+00:00
+- generated_at: 2026-06-23T10:38:35.828558+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7419**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T10:30:46.179463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62325.2
+- 更新: 2026-06-23T10:38:31.185513+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=62262.3
 - Funnel: target 801 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +33.91% | $16,766,397.65 |
-| RESOLV/USDT:USDT | +23.19% | $6,220,864.97 |
-| FOLKS/USDT:USDT | +16.60% | $15,523,633.03 |
-| BR/USDT:USDT | +15.01% | $1,226,751.85 |
-| VELVET/USDT:USDT | +10.45% | $21,415,935.95 |
+| ARX/USDT:USDT | +35.50% | $16,858,389.05 |
+| RESOLV/USDT:USDT | +22.81% | $6,379,408.80 |
+| FOLKS/USDT:USDT | +15.83% | $15,619,482.96 |
+| BR/USDT:USDT | +15.50% | $1,249,829.92 |
+| VELVET/USDT:USDT | +10.47% | $21,466,253.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +3.68% | +3.72% |
-| BTW/USDT:USDT | below_1h_threshold | +3.47% | +3.51% |
-| FOLKS/USDT:USDT | below_1h_threshold | +3.47% | +3.51% |
-| LAB/USDT:USDT | below_1h_threshold | +2.62% | +2.66% |
-| SYN/USDT:USDT | below_1h_threshold | +2.43% | +2.47% |
+| RE/USDT:USDT | below_1h_threshold | +3.89% | +4.03% |
+| BASED/USDT:USDT | below_1h_threshold | +3.66% | +3.80% |
+| BTW/USDT:USDT | below_1h_threshold | +3.42% | +3.56% |
+| LAB/USDT:USDT | below_1h_threshold | +2.86% | +3.01% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.60% | +2.74% |
 
 ## 6. 次に見るべき不足
 
