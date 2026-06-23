@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T07:43:53.607644+00:00
+- generated_at: 2026-06-23T07:51:41.968629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7413**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T07:43:48.949614+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=62920.0
-- Funnel: target 802 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.3 >= 65=1
+- 更新: 2026-06-23T07:51:37.251321+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=62896.1
+- Funnel: target 802 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +41.71% | $14,626,115.54 |
-| CLO/USDT:USDT | +23.70% | $3,912,204.01 |
-| FOLKS/USDT:USDT | +21.37% | $8,600,361.94 |
-| RESOLV/USDT:USDT | +21.35% | $5,320,231.93 |
-| SYN/USDT:USDT | +10.95% | $31,174,162.87 |
+| ARX/USDT:USDT | +39.32% | $14,746,491.50 |
+| FOLKS/USDT:USDT | +21.66% | $8,674,770.79 |
+| CLO/USDT:USDT | +20.32% | $3,941,337.68 |
+| RESOLV/USDT:USDT | +20.02% | $5,372,375.65 |
+| SYN/USDT:USDT | +12.50% | $31,279,846.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CLO/USDT:USDT | below_1h_threshold | +4.36% | +4.34% |
-| FOLKS/USDT:USDT | below_1h_threshold | +3.03% | +3.01% |
-| BTW/USDT:USDT | below_1h_threshold | +2.60% | +2.58% |
-| RESOLV/USDT:USDT | below_1h_threshold | +2.39% | +2.37% |
-| RE/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
+| ARX/USDT:USDT | below_1h_threshold | +4.84% | +4.85% |
+| POWER/USDT:USDT | below_1h_threshold | +4.34% | +4.35% |
+| FOLKS/USDT:USDT | below_1h_threshold | +3.18% | +3.19% |
+| CLO/USDT:USDT | below_1h_threshold | +1.57% | +1.59% |
+| RESOLV/USDT:USDT | below_1h_threshold | +1.24% | +1.25% |
 
 ## 6. 次に見るべき不足
 
