@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T23:17:53.638049+00:00
+- generated_at: 2026-06-23T23:25:47.490037+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7446**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T23:17:49.112168+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62537.4
-- Funnel: target 802 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-23T23:25:42.970354+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=62622.0
+- Funnel: target 802 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +46.43% | $6,901,804.28 |
-| BEAT/USDT:USDT | +14.31% | $54,918,771.61 |
-| SAHARA/USDT:USDT | +9.98% | $1,111,707.78 |
-| DYDX/USDT:USDT | +8.65% | $3,703,026.41 |
-| RAVE/USDT:USDT | +5.75% | $2,468,924.90 |
+| HEI/USDT:USDT | +48.58% | $7,109,154.92 |
+| BEAT/USDT:USDT | +16.31% | $55,407,641.62 |
+| SAHARA/USDT:USDT | +9.54% | $1,123,641.87 |
+| DYDX/USDT:USDT | +8.94% | $3,712,883.02 |
+| ALLO/USDT:USDT | +6.58% | $5,077,992.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAHARA/USDT:USDT | below_1h_threshold | +3.49% | +3.53% |
-| HEI/USDT:USDT | below_1h_threshold | +3.44% | +3.48% |
-| UP/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
-| UB/USDT:USDT | below_1h_threshold | +0.42% | +0.46% |
-| KAS/USDT:USDT | below_1h_threshold | +0.38% | +0.42% |
+| HEI/USDT:USDT | below_relative_strength | +5.04% | +4.94% |
+| SAHARA/USDT:USDT | below_1h_threshold | +3.08% | +2.98% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.19% | +1.09% |
+| UB/USDT:USDT | below_1h_threshold | +1.07% | +0.97% |
+| UP/USDT:USDT | below_1h_threshold | +0.74% | +0.64% |
 
 ## 6. 次に見るべき不足
 
