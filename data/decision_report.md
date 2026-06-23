@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T16:28:57.890341+00:00
+- generated_at: 2026-06-23T16:36:40.954972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7431**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T16:28:53.432948+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=62561.9
+- 更新: 2026-06-23T16:36:36.418088+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=62587.7
 - Funnel: target 802 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +2.93% | $1,961,448.54 |
-| MVLL/USDT:USDT | +2.82% | $1,554,282.38 |
-| BTW/USDT:USDT | +2.59% | $14,478,022.16 |
-| CLO/USDT:USDT | +2.55% | $4,561,583.60 |
-| ESPORTS/USDT:USDT | +2.24% | $6,395,876.67 |
+| MMT/USDT:USDT | +3.41% | $1,969,670.03 |
+| ESPORTS/USDT:USDT | +3.27% | $6,450,408.14 |
+| CLO/USDT:USDT | +3.10% | $4,579,347.96 |
+| ARX/USDT:USDT | +2.77% | $18,023,209.30 |
+| MVLL/USDT:USDT | +2.65% | $1,694,703.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +3.41% | +3.24% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.82% | +2.65% |
-| BTW/USDT:USDT | below_1h_threshold | +2.59% | +2.42% |
-| CLO/USDT:USDT | below_1h_threshold | +2.51% | +2.34% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.28% | +2.11% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.42% | +3.21% |
+| MMT/USDT:USDT | below_1h_threshold | +3.41% | +3.20% |
+| CLO/USDT:USDT | below_1h_threshold | +3.10% | +2.89% |
+| ARX/USDT:USDT | below_1h_threshold | +2.75% | +2.54% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.66% | +2.45% |
 
 ## 6. 次に見るべき不足
 
