@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T16:06:05.926348+00:00
+- generated_at: 2026-06-23T16:13:50.239416+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7431**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T16:06:01.519114+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=62515.3
+- 更新: 2026-06-23T16:13:45.634170+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=62752.4
 - Funnel: target 802 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UB/USDT:USDT | +4.43% | $6,559,113.99 |
-| PIPPIN/USDT:USDT | +3.04% | $1,350,064.24 |
-| MVLL/USDT:USDT | +2.62% | $1,133,138.34 |
-| VELVET/USDT:USDT | +2.56% | $22,109,333.97 |
-| SOXL/USDT:USDT | +2.36% | $8,156,042.24 |
+| OPN/USDT:USDT | +3.81% | $1,134,272.40 |
+| MVLL/USDT:USDT | +3.81% | $1,229,327.49 |
+| SOXL/USDT:USDT | +3.27% | $8,303,022.48 |
+| UB/USDT:USDT | +3.04% | $6,650,980.21 |
+| VELVET/USDT:USDT | +2.96% | $22,272,261.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.46% | +4.37% |
-| MVLL/USDT:USDT | below_1h_threshold | +3.93% | +3.84% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.04% | +2.95% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.57% | +2.47% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.32% | +2.23% |
+| OPN/USDT:USDT | below_1h_threshold | +3.82% | +3.34% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.82% | +3.34% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.27% | +2.80% |
+| UB/USDT:USDT | below_1h_threshold | +3.04% | +2.56% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.97% | +2.49% |
 
 ## 6. 次に見るべき不足
 
