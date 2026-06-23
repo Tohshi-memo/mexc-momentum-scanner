@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-23T15:50:29.956682+00:00
+- generated_at: 2026-06-23T15:58:21.188352+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7430**
+- closed shadow trades: **7431**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.60% / filled 20/20。**
-- 全期間 MARKET基準: n=7430, expectancy=-0.05%
+- 全期間 MARKET基準: n=7431, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.60%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1618_LONG | 6/20 | 30.0% | +2.58% | **+0.77%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +2.82% | **+0.56%** |
-| LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.14% | **+0.40%** |
-| LIMIT_7PCT_LONG | 9/20 | 45.0% | +0.62% | **+0.28%** |
+| LIMIT_FIB1618_LONG | 5/20 | 25.0% | +3.18% | **+0.80%** |
+| LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
+| LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.55% | **+0.31%** |
 | LIMIT_ATR_LONG | 14/20 | 70.0% | +0.34% | **+0.24%** |
+| LIMIT_8PCT_LONG | 7/20 | 35.0% | +0.57% | **+0.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$228.71** / 初期 $100.00 (+128.71%)
-- 確定: 2081件 (Win 617 / Loss 690 / Flat 774) / skip 1910件
+- 確定: 2081件 (Win 617 / Loss 690 / Flat 774) / skip 1911件
 - 成長率目線: 平均log +0.000398 / 幾何平均 +0.040% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BTW/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $228.71
@@ -55,37 +55,39 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.73** / 初期 $100.00 (+6.73%)
-- 確定: 320件 (Win 92 / Loss 87 / Flat 141) / skip 521件
-- 成長率目線: 平均log +0.000204 / 幾何平均 +0.020% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0224 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 確定: 321件 (Win 92 / Loss 87 / Flat 142) / skip 521件
+- 成長率目線: 平均log +0.000203 / 幾何平均 +0.020% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0222 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $106.73
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T15:50:25.331496+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=62204.4
-- Funnel: target 802 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-23T15:58:15.364999+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=62413.2
+- Funnel: target 802 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +36.97% | $5,370,842.77 |
-| ARX/USDT:USDT | +28.85% | $18,272,235.02 |
-| BR/USDT:USDT | +20.81% | $2,306,680.76 |
-| LIGHT/USDT:USDT | +16.82% | $1,283,008.87 |
-| RESOLV/USDT:USDT | +15.49% | $10,365,016.85 |
+| ARX/USDT:USDT | +30.15% | $18,315,376.94 |
+| ESPORTS/USDT:USDT | +25.45% | $5,950,736.78 |
+| BR/USDT:USDT | +21.11% | $2,339,360.29 |
+| LIGHT/USDT:USDT | +17.17% | $1,303,132.10 |
+| RESOLV/USDT:USDT | +16.20% | $10,397,173.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.67% | +4.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.78% | +3.19% |
-| RESOLV/USDT:USDT | below_1h_threshold | +2.34% | +2.76% |
-| LYN/USDT:USDT | below_1h_threshold | +2.31% | +2.72% |
-| FIDA/USDT:USDT | below_1h_threshold | +2.16% | +2.58% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.81% | +3.89% |
+| RESOLV/USDT:USDT | below_1h_threshold | +2.93% | +3.01% |
+| BASED/USDT:USDT | below_1h_threshold | +2.92% | +3.00% |
+| FIDA/USDT:USDT | below_1h_threshold | +2.30% | +2.38% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
 
 ## 6. 次に見るべき不足
 
