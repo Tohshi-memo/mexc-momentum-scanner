@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T20:17:02.215618+00:00
+- generated_at: 2026-06-23T20:25:44.988178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7442**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T20:16:57.731406+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=62441.5
+- 更新: 2026-06-23T20:25:40.633957+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=62408.2
 - Funnel: target 802 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +37.93% | $4,769,037.36 |
-| BEAT/USDT:USDT | +23.52% | $30,176,023.19 |
-| SYN/USDT:USDT | +10.73% | $16,996,436.38 |
-| ESPORTS/USDT:USDT | +7.47% | $7,126,151.23 |
-| DYDX/USDT:USDT | +6.98% | $2,839,758.65 |
+| HEI/USDT:USDT | +33.18% | $4,896,154.24 |
+| BEAT/USDT:USDT | +23.00% | $31,399,382.37 |
+| SYN/USDT:USDT | +8.19% | $17,096,570.00 |
+| DYDX/USDT:USDT | +7.12% | $2,855,901.14 |
+| CBRSSTOCK/USDT:USDT | +5.96% | $1,201,798.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.40% | +2.29% |
-| DYDX/USDT:USDT | below_1h_threshold | +2.15% | +2.04% |
-| DASH/USDT:USDT | below_1h_threshold | +2.05% | +1.94% |
-| SAHARA/USDT:USDT | below_1h_threshold | +1.84% | +1.73% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.58% | +1.47% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.29% | +2.24% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.75% | +1.69% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.65% | +1.60% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.62% | +1.56% |
 
 ## 6. 次に見るべき不足
 
