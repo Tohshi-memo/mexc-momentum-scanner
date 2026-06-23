@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-23T22:23:30.793009+00:00
+- generated_at: 2026-06-23T22:31:24.024896+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7444**
+- closed shadow trades: **7445**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.20% / filled 20/20。**
-- 全期間 MARKET基準: n=7444, expectancy=-0.05%
+- 全期間 MARKET基準: n=7445, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.20%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,7 +23,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1618 | 2/20 | 10.0% | +3.82% | **+0.38%** |
 | MARKET | 20/20 | 100.0% | +0.20% | **+0.20%** |
-| ASK | 20/20 | 100.0% | +0.16% | **+0.16%** |
+| ASK | 20/20 | 100.0% | +0.17% | **+0.17%** |
 | LIMIT_5PCT | 6/20 | 30.0% | +0.13% | **+0.04%** |
 | LIMIT_4PCT | 13/20 | 65.0% | -0.23% | **-0.15%** |
 
@@ -39,15 +39,15 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$101.43** / 初期 $100.00 (+1.43%)
-- 確定トレード: 30件 (TP 11 / SL 19 / EXP 0)
-- 最新: HEI/USDT:USDT SL_HIT PnL -4.00% 残高後 $101.43
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$102.45** / 初期 $100.00 (+2.45%)
+- 確定トレード: 31件 (TP 12 / SL 19 / EXP 0)
+- 最新: GUA/USDT:USDT TP_HIT PnL +8.00% 残高後 $102.45
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$228.71** / 初期 $100.00 (+128.71%)
-- 確定: 2081件 (Win 617 / Loss 690 / Flat 774) / skip 1924件
+- 確定: 2081件 (Win 617 / Loss 690 / Flat 774) / skip 1925件
 - 成長率目線: 平均log +0.000398 / 幾何平均 +0.040% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BTW/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $228.71
@@ -55,37 +55,37 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.36** / 初期 $100.00 (+6.36%)
-- 確定: 326件 (Win 92 / Loss 88 / Flat 146) / skip 529件
+- 確定: 326件 (Win 92 / Loss 88 / Flat 146) / skip 530件
 - 成長率目線: 平均log +0.000189 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MYX/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $106.36
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T22:23:26.487705+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=62598.2
-- Funnel: target 802 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-23T22:31:18.502890+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62592.0
+- Funnel: target 802 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +36.46% | $6,314,582.38 |
-| BEAT/USDT:USDT | +13.10% | $50,533,053.86 |
-| DYDX/USDT:USDT | +11.63% | $3,219,965.83 |
-| RAVE/USDT:USDT | +7.24% | $2,405,877.00 |
-| ALLO/USDT:USDT | +6.33% | $4,995,278.60 |
+| HEI/USDT:USDT | +38.84% | $6,381,600.50 |
+| BEAT/USDT:USDT | +13.42% | $51,683,073.62 |
+| DYDX/USDT:USDT | +11.49% | $3,323,427.92 |
+| RAVE/USDT:USDT | +7.40% | $2,434,380.47 |
+| ALLO/USDT:USDT | +5.95% | $5,015,930.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DYDX/USDT:USDT | below_1h_threshold | +4.30% | +4.24% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.13% | +2.07% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.26% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.29% | +1.23% |
+| DYDX/USDT:USDT | below_1h_threshold | +4.64% | +4.60% |
+| POPCAT/USDT:USDT | below_1h_threshold | +1.97% | +1.92% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.47% | +1.42% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.16% | +1.12% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.08% | +1.03% |
 
 ## 6. 次に見るべき不足
 
