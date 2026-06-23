@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T17:16:34.802100+00:00
+- generated_at: 2026-06-23T17:24:20.372599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7431**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T17:16:27.721906+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=62429.9
-- Funnel: target 802 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1
+- 更新: 2026-06-23T17:24:15.650988+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=62577.5
+- Funnel: target 802 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +14.66% | $4,962,699.67 |
-| SYN/USDT:USDT | +8.10% | $16,157,211.84 |
-| UB/USDT:USDT | +6.21% | $6,441,804.73 |
-| BASED/USDT:USDT | +6.17% | $2,433,673.36 |
-| LIGHT/USDT:USDT | +3.39% | $1,399,264.91 |
+| CLO/USDT:USDT | +9.79% | $5,056,174.29 |
+| BASED/USDT:USDT | +6.32% | $2,464,465.34 |
+| MMT/USDT:USDT | +5.06% | $1,814,389.77 |
+| SYN/USDT:USDT | +4.91% | $16,355,379.49 |
+| UB/USDT:USDT | +3.74% | $6,489,145.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIGHT/USDT:USDT | below_1h_threshold | +2.12% | +2.27% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.64% | +1.79% |
-| UB/USDT:USDT | below_1h_threshold | +1.26% | +1.41% |
-| TERSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +1.05% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.83% | +0.98% |
+| CLO/USDT:USDT | below_1h_threshold | +2.63% | +2.54% |
+| MMT/USDT:USDT | below_1h_threshold | +1.81% | +1.72% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.54% | +1.46% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.29% | +1.21% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.24% | +1.15% |
 
 ## 6. 次に見るべき不足
 
