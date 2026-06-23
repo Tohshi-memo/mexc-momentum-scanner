@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-23T08:23:17.570038+00:00
+- generated_at: 2026-06-23T08:32:09.238710+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7415**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-23T08:23:12.975423+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.73% price=62389.1
+- 更新: 2026-06-23T08:32:04.880255+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.05% price=62189.2
 - Funnel: target 801 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +45.03% | $15,285,620.64 |
-| FOLKS/USDT:USDT | +30.39% | $10,785,786.10 |
-| CLO/USDT:USDT | +16.17% | $3,953,072.77 |
-| RESOLV/USDT:USDT | +12.99% | $5,618,758.33 |
-| LAB/USDT:USDT | +9.25% | $30,876,698.20 |
+| ARX/USDT:USDT | +44.60% | $15,404,432.05 |
+| FOLKS/USDT:USDT | +29.79% | $11,233,718.14 |
+| CLO/USDT:USDT | +19.43% | $3,989,893.82 |
+| RESOLV/USDT:USDT | +14.50% | $5,761,830.83 |
+| SYN/USDT:USDT | +10.87% | $29,957,524.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FOLKS/USDT:USDT | below_1h_threshold | +3.51% | +4.24% |
-| ARX/USDT:USDT | below_1h_threshold | +2.21% | +2.94% |
-| LAYER/USDT:USDT | below_1h_threshold | +1.52% | +2.26% |
-| MMT/USDT:USDT | below_1h_threshold | +1.01% | +1.74% |
-| CMCSASTOCK/USDT:USDT | below_1h_threshold | +0.93% | +1.66% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.94% | +3.99% |
+| LAYER/USDT:USDT | below_1h_threshold | +2.89% | +3.94% |
+| ARX/USDT:USDT | below_1h_threshold | +2.44% | +3.49% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.08% | +3.13% |
+| CMCSASTOCK/USDT:USDT | below_1h_threshold | +1.24% | +2.29% |
 
 ## 6. 次に見るべき不足
 
