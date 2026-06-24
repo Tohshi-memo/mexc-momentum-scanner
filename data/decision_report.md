@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T05:33:08.861761+00:00
+- generated_at: 2026-06-24T05:41:06.622126+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7460**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T05:33:02.527477+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=62865.1
-- Funnel: target 807 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI 72.4 >= 65=1
+- 更新: 2026-06-24T05:41:01.438201+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=62895.6
+- Funnel: target 807 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.7 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 68.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +52.32% | $12,722,702.41 |
-| CLO/USDT:USDT | +33.61% | $5,220,961.17 |
-| SLX/USDT:USDT | +31.58% | $1,073,718.53 |
-| BEAT/USDT:USDT | +26.89% | $71,146,852.20 |
-| ID/USDT:USDT | +12.03% | $1,400,538.75 |
+| HEI/USDT:USDT | +51.52% | $12,847,036.70 |
+| SLX/USDT:USDT | +32.95% | $1,184,840.74 |
+| BEAT/USDT:USDT | +28.05% | $71,435,659.09 |
+| CLO/USDT:USDT | +26.72% | $5,275,172.42 |
+| ID/USDT:USDT | +11.88% | $1,404,569.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.65% | +4.42% |
-| SYN/USDT:USDT | below_1h_threshold | +3.73% | +3.50% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.99% | +1.76% |
-| AERO/USDT:USDT | below_1h_threshold | +1.96% | +1.73% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.90% | +1.67% |
+| KORU/USDT:USDT | below_1h_threshold | +4.64% | +4.36% |
+| SYN/USDT:USDT | below_1h_threshold | +3.06% | +2.78% |
+| LIT/USDT:USDT | below_1h_threshold | +2.92% | +2.64% |
+| AERO/USDT:USDT | below_1h_threshold | +2.66% | +2.38% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.32% | +2.04% |
 
 ## 6. 次に見るべき不足
 
