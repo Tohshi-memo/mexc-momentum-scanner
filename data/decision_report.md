@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T13:22:44.944929+00:00
+- generated_at: 2026-06-24T13:30:32.095381+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7477**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T13:22:39.100012+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.99% price=61972.0
-- Funnel: target 808 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-24T13:30:27.561651+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.43% price=61692.3
+- Funnel: target 808 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +42.01% | $6,540,628.61 |
-| HEI/USDT:USDT | +41.78% | $18,094,088.96 |
-| BAS/USDT:USDT | +38.11% | $2,548,697.48 |
-| O/USDT:USDT | +23.69% | $5,267,200.35 |
-| ID/USDT:USDT | +16.71% | $1,743,544.07 |
+| SLX/USDT:USDT | +40.45% | $6,604,187.72 |
+| BAS/USDT:USDT | +38.63% | $2,646,526.02 |
+| HEI/USDT:USDT | +35.78% | $18,219,323.36 |
+| O/USDT:USDT | +22.03% | $5,341,425.38 |
+| SAHARA/USDT:USDT | +16.87% | $3,133,410.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +3.42% |
-| ID/USDT:USDT | below_1h_threshold | +1.21% | +2.19% |
-| CCLSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.92% |
-| BAS/USDT:USDT | below_1h_threshold | +0.63% | +1.62% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.30% | +1.29% |
+| SYN/USDT:USDT | below_1h_threshold | +4.61% | +6.05% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +2.61% |
+| BAS/USDT:USDT | below_1h_threshold | +1.13% | +2.56% |
+| CCLSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +2.49% |
+| MCDSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +1.84% |
 
 ## 6. 次に見るべき不足
 
