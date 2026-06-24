@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-24T06:36:34.241177+00:00
+- generated_at: 2026-06-24T06:44:31.914066+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7464**
+- closed shadow trades: **7465**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.30% / filled 20/20。**
-- 全期間 MARKET基準: n=7464, expectancy=-0.05%
+- 全期間 MARKET基準: n=7465, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+0.30%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.61% | **+0.52%** |
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +0.30% | **+0.22%** |
-| LIMIT_10PCT_LONG | 3/20 | 15.0% | +0.15% | **+0.02%** |
+| LIMIT_7PCT_LONG | 8/20 | 40.0% | -0.02% | **-0.01%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,47 +47,47 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$230.52** / 初期 $100.00 (+130.52%)
-- 確定: 2095件 (Win 621 / Loss 695 / Flat 779) / skip 1930件
-- 成長率目線: 平均log +0.000399 / 幾何平均 +0.040% per trade / maxDD +7.25%
+- 確定: 2096件 (Win 621 / Loss 695 / Flat 780) / skip 1930件
+- 成長率目線: 平均log +0.000398 / 幾何平均 +0.040% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: LAB/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $230.52
+- 最新: SYN/USDT:USDT `LIMIT_FIB1618_LONG` EXPIRED account +0.00% 残高後 $230.52
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.82** / 初期 $100.00 (+6.82%)
-- 確定: 329件 (Win 93 / Loss 88 / Flat 148) / skip 546件
+- 確定: 329件 (Win 93 / Loss 88 / Flat 148) / skip 547件
 - 成長率目線: 平均log +0.000200 / 幾何平均 +0.020% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0444 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0443 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: LAB/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $106.82
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T06:36:29.482912+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62851.9
+- 更新: 2026-06-24T06:44:26.152872+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=62795.9
 - Funnel: target 807 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.0 >= 65=1
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +43.26% | $13,521,232.71 |
-| SLX/USDT:USDT | +41.28% | $1,951,801.20 |
-| BEAT/USDT:USDT | +31.15% | $75,706,476.65 |
-| CLO/USDT:USDT | +20.91% | $5,221,232.39 |
-| ID/USDT:USDT | +14.99% | $1,375,825.67 |
+| HEI/USDT:USDT | +44.39% | $13,622,496.62 |
+| SLX/USDT:USDT | +40.98% | $2,022,238.75 |
+| BEAT/USDT:USDT | +34.05% | $76,242,061.79 |
+| CLO/USDT:USDT | +23.81% | $5,242,762.56 |
+| ID/USDT:USDT | +15.02% | $1,379,227.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.14% | +4.15% |
-| SLX/USDT:USDT | below_1h_threshold | +3.07% | +3.09% |
-| CHZ/USDT:USDT | below_1h_threshold | +2.28% | +2.29% |
-| INX/USDT:USDT | below_1h_threshold | +1.99% | +2.00% |
-| ID/USDT:USDT | below_1h_threshold | +1.47% | +1.48% |
+| LAB/USDT:USDT | below_1h_threshold | +4.47% | +4.57% |
+| SLX/USDT:USDT | below_1h_threshold | +3.11% | +3.21% |
+| CHZ/USDT:USDT | below_1h_threshold | +2.43% | +2.53% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.04% | +2.14% |
+| SPX/USDT:USDT | below_1h_threshold | +1.93% | +2.03% |
 
 ## 6. 次に見るべき不足
 
