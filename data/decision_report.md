@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T10:32:49.355990+00:00
+- generated_at: 2026-06-24T10:41:20.642207+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7470**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T10:32:43.541438+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=62540.2
-- Funnel: target 808 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
+- 更新: 2026-06-24T10:41:13.564243+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=62571.7
+- Funnel: target 808 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +46.20% | $16,140,415.75 |
-| SLX/USDT:USDT | +41.62% | $3,798,023.46 |
-| SAHARA/USDT:USDT | +23.67% | $2,381,539.73 |
-| ID/USDT:USDT | +20.85% | $1,725,602.68 |
-| BEAT/USDT:USDT | +17.26% | $98,393,238.89 |
+| HEI/USDT:USDT | +46.88% | $16,208,201.84 |
+| SLX/USDT:USDT | +41.33% | $3,849,116.21 |
+| SAHARA/USDT:USDT | +23.76% | $2,482,316.27 |
+| ID/USDT:USDT | +20.43% | $1,736,740.05 |
+| BEAT/USDT:USDT | +15.15% | $99,024,400.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.59% | +3.77% |
-| LIGHT/USDT:USDT | below_1h_threshold | +3.03% | +3.21% |
-| SLX/USDT:USDT | below_1h_threshold | +2.44% | +2.62% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.84% | +2.02% |
-| MMT/USDT:USDT | below_1h_threshold | +1.63% | +1.81% |
+| LAB/USDT:USDT | below_1h_threshold | +4.26% | +4.39% |
+| LIGHT/USDT:USDT | below_1h_threshold | +3.03% | +3.16% |
+| SLX/USDT:USDT | below_1h_threshold | +2.16% | +2.29% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.12% | +2.25% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.46% | +1.59% |
 
 ## 6. 次に見るべき不足
 
