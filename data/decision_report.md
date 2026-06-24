@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T17:47:15.504848+00:00
+- generated_at: 2026-06-24T17:55:07.412690+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7489**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T17:47:10.932407+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.00% price=59210.3
+- 更新: 2026-06-24T17:55:02.845951+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.68% price=59400.4
 - Funnel: target 808 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +16.76% | $14,295,976.32 |
-| BSB/USDT:USDT | +5.21% | $6,166,575.45 |
-| O/USDT:USDT | +2.26% | $7,411,841.20 |
-| ARX/USDT:USDT | +2.25% | $3,675,449.56 |
-| SYN/USDT:USDT | +1.82% | $17,466,352.84 |
+| H/USDT:USDT | +17.42% | $14,481,254.67 |
+| BSB/USDT:USDT | +4.10% | $6,222,310.64 |
+| O/USDT:USDT | +3.76% | $7,449,948.81 |
+| ARX/USDT:USDT | +2.72% | $3,687,820.45 |
+| SYN/USDT:USDT | +2.04% | $17,571,299.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +2.31% | +3.31% |
-| BR/USDT:USDT | below_1h_threshold | +2.25% | +3.25% |
-| XPL/USDT:USDT | below_1h_threshold | +2.18% | +3.18% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.93% | +2.93% |
-| ARX/USDT:USDT | below_1h_threshold | +1.31% | +2.31% |
+| O/USDT:USDT | below_1h_threshold | +3.81% | +4.49% |
+| XPL/USDT:USDT | below_1h_threshold | +2.46% | +3.14% |
+| H/USDT:USDT | below_1h_threshold | +1.88% | +2.56% |
+| ARX/USDT:USDT | below_1h_threshold | +1.77% | +2.46% |
+| BR/USDT:USDT | below_1h_threshold | +1.63% | +2.31% |
 
 ## 6. 次に見るべき不足
 
