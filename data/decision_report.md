@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T01:46:16.958529+00:00
+- generated_at: 2026-06-24T01:54:23.294117+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7454**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T01:46:08.905159+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=62930.3
-- Funnel: target 802 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
+- 更新: 2026-06-24T01:54:13.545104+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62985.2
+- Funnel: target 802 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +61.49% | $9,623,417.08 |
-| BEAT/USDT:USDT | +22.63% | $64,280,555.21 |
-| CLO/USDT:USDT | +18.55% | $5,481,388.58 |
-| SYN/USDT:USDT | +13.82% | $15,394,822.57 |
-| ALLO/USDT:USDT | +9.31% | $5,276,593.60 |
+| HEI/USDT:USDT | +60.13% | $9,702,156.37 |
+| BEAT/USDT:USDT | +23.36% | $64,484,271.26 |
+| CLO/USDT:USDT | +20.62% | $5,516,865.62 |
+| SYN/USDT:USDT | +15.23% | $15,469,692.95 |
+| ID/USDT:USDT | +8.70% | $1,606,071.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ID/USDT:USDT | below_1h_threshold | +4.25% | +4.33% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.75% | +1.83% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.59% | +1.67% |
-| OPN/USDT:USDT | below_1h_threshold | +1.57% | +1.66% |
-| UP/USDT:USDT | below_1h_threshold | +1.29% | +1.38% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
+| OPN/USDT:USDT | below_1h_threshold | +1.80% | +1.79% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
 
 ## 6. 次に見るべき不足
 
