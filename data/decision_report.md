@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T02:18:06.900994+00:00
+- generated_at: 2026-06-24T02:25:57.433931+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7456**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T02:18:02.369324+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=62791.9
-- Funnel: target 802 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-24T02:25:52.946262+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=62695.0
+- Funnel: target 802 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +59.56% | $9,980,972.32 |
-| CLO/USDT:USDT | +21.50% | $5,446,983.52 |
-| BEAT/USDT:USDT | +15.68% | $65,340,183.42 |
-| SYN/USDT:USDT | +13.11% | $15,182,491.08 |
-| ID/USDT:USDT | +10.15% | $1,595,245.41 |
+| HEI/USDT:USDT | +54.58% | $10,182,523.94 |
+| CLO/USDT:USDT | +19.93% | $5,467,292.46 |
+| SYN/USDT:USDT | +15.51% | $15,249,489.88 |
+| BEAT/USDT:USDT | +15.42% | $65,601,457.77 |
+| DYDX/USDT:USDT | +10.61% | $4,102,079.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POPCAT/USDT:USDT | below_1h_threshold | +1.85% | +2.03% |
-| LAYER/USDT:USDT | below_1h_threshold | +1.74% | +1.92% |
-| HEI/USDT:USDT | below_1h_threshold | +1.73% | +1.91% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.47% | +1.65% |
-| CLO/USDT:USDT | below_1h_threshold | +1.19% | +1.37% |
+| LAYER/USDT:USDT | below_1h_threshold | +2.78% | +3.12% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.01% | +2.34% |
+| POPCAT/USDT:USDT | below_1h_threshold | +1.66% | +1.99% |
+| OPN/USDT:USDT | below_1h_threshold | +1.01% | +1.35% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.00% | +1.34% |
 
 ## 6. 次に見るべき不足
 
