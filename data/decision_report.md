@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T00:44:07.863230+00:00
+- generated_at: 2026-06-24T00:51:44.494040+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7449**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T00:44:02.925174+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=62945.0
-- Funnel: target 802 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-06-24T00:51:39.688888+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=62955.7
+- Funnel: target 802 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +61.72% | $8,471,311.20 |
-| BEAT/USDT:USDT | +19.36% | $61,277,734.74 |
-| DYDX/USDT:USDT | +8.43% | $3,853,233.63 |
-| ALLO/USDT:USDT | +8.04% | $5,230,846.62 |
-| RAVE/USDT:USDT | +7.20% | $2,576,569.58 |
+| HEI/USDT:USDT | +59.68% | $8,666,818.00 |
+| BEAT/USDT:USDT | +19.52% | $61,881,923.40 |
+| DYDX/USDT:USDT | +10.47% | $3,866,104.06 |
+| ALLO/USDT:USDT | +8.07% | $5,262,671.36 |
+| RAVE/USDT:USDT | +7.32% | $2,593,377.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +5.18% | +4.78% |
-| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.07% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.27% | +3.88% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +3.79% |
-| DRAM/USDT:USDT | below_1h_threshold | +4.11% | +3.71% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.62% | +4.21% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.22% | +3.80% |
+| SYN/USDT:USDT | below_1h_threshold | +4.00% | +3.59% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.44% | +3.03% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.15% | +2.73% |
 
 ## 6. 次に見るべき不足
 
