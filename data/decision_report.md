@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T21:02:13.336153+00:00
+- generated_at: 2026-06-24T21:10:11.558754+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7501**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T21:02:08.751899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=60874.4
+- 更新: 2026-06-24T21:10:06.957088+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=60741.3
 - Funnel: target 808 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KORU/USDT:USDT | +20.93% | $3,606,249.14 |
-| MUSTOCK/USDT:USDT | +14.64% | $85,818,280.23 |
-| DRAM/USDT:USDT | +12.41% | $7,448,622.47 |
-| SOXL/USDT:USDT | +12.30% | $5,797,312.67 |
-| H/USDT:USDT | +11.97% | $16,765,002.06 |
+| KORU/USDT:USDT | +21.56% | $3,758,557.11 |
+| MUSTOCK/USDT:USDT | +14.15% | $86,394,991.86 |
+| H/USDT:USDT | +13.19% | $16,866,794.33 |
+| SOXL/USDT:USDT | +12.38% | $5,818,571.56 |
+| DRAM/USDT:USDT | +12.36% | $7,497,148.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +0.95% | +1.04% |
-| AERO/USDT:USDT | below_1h_threshold | +0.34% | +0.42% |
-| UB/USDT:USDT | below_1h_threshold | +0.34% | +0.42% |
-| LIT/USDT:USDT | below_1h_threshold | +0.31% | +0.40% |
-| H/USDT:USDT | below_1h_threshold | +0.24% | +0.32% |
+| SYN/USDT:USDT | below_1h_threshold | +1.70% | +2.01% |
+| H/USDT:USDT | below_1h_threshold | +1.37% | +1.67% |
+| LIT/USDT:USDT | below_1h_threshold | +1.00% | +1.30% |
+| UB/USDT:USDT | below_1h_threshold | +0.60% | +0.90% |
+| O/USDT:USDT | below_1h_threshold | +0.57% | +0.87% |
 
 ## 6. 次に見るべき不足
 
