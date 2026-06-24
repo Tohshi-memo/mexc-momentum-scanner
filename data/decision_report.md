@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T18:17:27.726991+00:00
+- generated_at: 2026-06-24T18:26:14.156968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7489**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T18:17:23.822711+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=59609.2
+- 更新: 2026-06-24T18:26:09.643223+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.64% price=59744.2
 - Funnel: target 808 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +23.87% | $14,444,051.94 |
-| O/USDT:USDT | +4.96% | $7,740,861.14 |
-| BSB/USDT:USDT | +3.78% | $6,214,374.75 |
-| XPL/USDT:USDT | +2.60% | $7,098,934.24 |
-| EVAA/USDT:USDT | +1.95% | $1,266,540.01 |
+| H/USDT:USDT | +23.12% | $14,622,012.99 |
+| BSB/USDT:USDT | +4.86% | $6,270,316.61 |
+| O/USDT:USDT | +3.56% | $7,814,522.03 |
+| XPL/USDT:USDT | +3.08% | $7,148,522.77 |
+| ARX/USDT:USDT | +2.99% | $3,359,429.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.63% | +3.22% |
-| MAVIA/USDT:USDT | below_1h_threshold | +2.96% | +2.55% |
-| UB/USDT:USDT | below_1h_threshold | +2.65% | +2.23% |
-| ID/USDT:USDT | below_1h_threshold | +2.58% | +2.17% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.87% | +1.46% |
+| AAVE/USDT:USDT | below_1h_threshold | +4.88% | +4.24% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.88% | +3.24% |
+| MAVIA/USDT:USDT | below_1h_threshold | +3.63% | +2.99% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.58% | +2.94% |
+| ID/USDT:USDT | below_1h_threshold | +3.25% | +2.61% |
 
 ## 6. 次に見るべき不足
 
