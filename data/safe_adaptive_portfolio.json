@@ -2,12 +2,12 @@
   "mode": "safe_adaptive_dry_run",
   "enabled": true,
   "initial_capital": 100.0,
-  "balance": 224.81464890482144,
+  "balance": 223.69057566029733,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-06-24T18:34:15.057762+00:00",
+  "updated_at": "2026-06-24T18:42:12.789515+00:00",
   "high_watermark": 238.65118661707703,
   "max_drawdown_pct": 7.2507555389838,
-  "loss_streak": 3,
+  "loss_streak": 4,
   "cooldown_until": "2026-06-22T14:10:19.621025+00:00",
   "daily_pnl_usdt": {
     "2026-05-06": -2.495118139464748,
@@ -59,7 +59,7 @@
     "2026-06-21": -1.1682283524927801,
     "2026-06-22": 3.267243958766711,
     "2026-06-23": -5.161213038236906,
-    "2026-06-24": -3.8918764588700183
+    "2026-06-24": -5.015949703394126
   },
   "trades": [
     {
@@ -101821,6 +101821,54 @@
         "max_drawdown_pct": 46.333936027109985,
         "max_loss_streak": 12
       }
+    },
+    {
+      "key": "SYN/USDT:USDT|2026-06-24T16:19:06.828278+00:00",
+      "symbol": "SYN/USDT:USDT",
+      "detected_at": "2026-06-24T16:19:06.828278+00:00",
+      "closed_at": "2026-06-24T18:41:52.577629+00:00",
+      "strategy": "MARKET_LONG",
+      "direction": "long",
+      "outcome": "SL_HIT",
+      "filled": true,
+      "pnl_pct": -4.000000000000003,
+      "sl_pct": 4.000000000000003,
+      "risk_pct": 0.5,
+      "account_return_pct": -0.5,
+      "log_return": -0.005012541823544286,
+      "pnl_usdt": -1.1240732445241073,
+      "balance_before": 224.81464890482144,
+      "balance_after": 223.69057566029733,
+      "drawdown_after_pct": 6.2688190110633935,
+      "selector_reason": "selected_by_recent_avg_log_return",
+      "selector_recent": {
+        "strategy": "MARKET_LONG",
+        "direction": "long",
+        "total": 50,
+        "filled": 50,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 0.4000000000000005,
+        "effective_ev_pct": 0.4000000000000005,
+        "avg_log_return": 0.00048526887096676227,
+        "geometric_return_pct": 0.048538663295327744,
+        "avg_account_return_pct": 0.05000000000000008,
+        "max_drawdown_pct": 2.4775628096952795,
+        "max_loss_streak": 4
+      },
+      "selector_all": {
+        "strategy": "MARKET_LONG",
+        "direction": "long",
+        "total": 7293,
+        "filled": 7293,
+        "fill_rate": 1.0,
+        "avg_pnl_pct": 0.08934626935529223,
+        "effective_ev_pct": 0.08934626935529223,
+        "avg_log_return": 9.78121814569613e-05,
+        "geometric_return_pct": 0.009781696522437322,
+        "avg_account_return_pct": 0.01128994175010182,
+        "max_drawdown_pct": 46.333936027109985,
+        "max_loss_streak": 12
+      }
     }
   ],
   "skipped": [
@@ -170927,6 +170975,7 @@
     "SYN/USDT:USDT|2026-06-24T12:51:41.926796+00:00",
     "SYN/USDT:USDT|2026-06-24T13:22:39.545206+00:00",
     "SYN/USDT:USDT|2026-06-24T13:38:08.601730+00:00",
+    "SYN/USDT:USDT|2026-06-24T16:19:06.828278+00:00",
     "TA/USDT:USDT|2026-05-30T18:44:54.996168+00:00",
     "TA/USDT:USDT|2026-05-31T01:20:31.624149+00:00",
     "TAC/USDT:USDT|2026-06-17T16:21:04.912420+00:00",
@@ -171409,7 +171458,7 @@
     "strategy": "MARKET_LONG",
     "direction": "long",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 7487,
+    "history_count": 7488,
     "recent_count": 50,
     "recent": {
       "strategy": "MARKET_LONG",
@@ -171417,25 +171466,25 @@
       "total": 50,
       "filled": 50,
       "fill_rate": 1.0,
-      "avg_pnl_pct": 0.4000000000000005,
-      "effective_ev_pct": 0.4000000000000005,
+      "avg_pnl_pct": 0.4000000000000006,
+      "effective_ev_pct": 0.4000000000000006,
       "avg_log_return": 0.0004852688709667622,
       "geometric_return_pct": 0.048538663295327744,
-      "avg_account_return_pct": 0.05000000000000008,
-      "max_drawdown_pct": 2.4775628096953093,
-      "max_loss_streak": 4
+      "avg_account_return_pct": 0.050000000000000086,
+      "max_drawdown_pct": 2.501916482835288,
+      "max_loss_streak": 5
     },
     "all": {
       "strategy": "MARKET_LONG",
       "direction": "long",
-      "total": 7295,
-      "filled": 7295,
+      "total": 7296,
+      "filled": 7296,
       "fill_rate": 1.0,
-      "avg_pnl_pct": 0.0893217741477925,
-      "effective_ev_pct": 0.0893217741477925,
-      "avg_log_return": 9.778193818411425e-05,
-      "geometric_return_pct": 0.009778671899374203,
-      "avg_account_return_pct": 0.011286846495338256,
+      "avg_pnl_pct": 0.08876128596602881,
+      "effective_ev_pct": 0.08876128596602881,
+      "avg_log_return": 9.708151003694753e-05,
+      "geometric_return_pct": 0.009708622259929633,
+      "avg_account_return_pct": 0.011216768802562031,
       "max_drawdown_pct": 46.333936027109985,
       "max_loss_streak": 12
     },
@@ -171460,14 +171509,14 @@
         "all": {
           "strategy": "LIMIT_5PCT",
           "direction": "short",
-          "total": 7429,
+          "total": 7430,
           "filled": 2620,
-          "fill_rate": 0.3526719612330058,
+          "fill_rate": 0.35262449528936746,
           "avg_pnl_pct": 0.535803041833853,
-          "effective_ev_pct": 0.1889627095981552,
-          "avg_log_return": 0.0002346303645755094,
-          "geometric_return_pct": 0.023465789243237722,
-          "avg_account_return_pct": 0.023679329534053745,
+          "effective_ev_pct": 0.18893727720117023,
+          "avg_log_return": 0.00023459878579158266,
+          "geometric_return_pct": 0.02346263062387166,
+          "avg_account_return_pct": 0.02367614254488362,
           "max_drawdown_pct": 5.7830581998028485,
           "max_loss_streak": 4
         }
@@ -171475,13 +171524,13 @@
     ]
   },
   "summary": {
-    "trade_count": 2120,
+    "trade_count": 2121,
     "wins": 627,
-    "losses": 708,
+    "losses": 709,
     "flat": 785,
-    "avg_log_return": 0.0003821255160734519,
-    "geometric_return_pct": 0.03821985353289481,
-    "return_pct": 124.81464890482144
+    "avg_log_return": 0.0003795820614107373,
+    "geometric_return_pct": 0.03796541117975227,
+    "return_pct": 123.69057566029733
   },
   "config": {
     "enabled": true,
