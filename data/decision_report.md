@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T00:21:04.478737+00:00
+- generated_at: 2026-06-24T00:28:54.962908+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7448**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T00:20:58.958058+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=62833.7
-- Funnel: target 802 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-24T00:28:50.172293+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=62781.2
+- Funnel: target 802 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +54.47% | $7,841,469.24 |
-| BEAT/USDT:USDT | +22.94% | $59,575,413.06 |
-| SAHARA/USDT:USDT | +10.15% | $1,240,529.95 |
-| DYDX/USDT:USDT | +10.10% | $3,830,736.91 |
-| ALLO/USDT:USDT | +7.20% | $5,148,166.20 |
+| HEI/USDT:USDT | +58.55% | $8,001,660.25 |
+| BEAT/USDT:USDT | +24.47% | $60,080,668.66 |
+| DYDX/USDT:USDT | +9.16% | $3,833,935.82 |
+| SAHARA/USDT:USDT | +7.59% | $1,268,203.46 |
+| ALLO/USDT:USDT | +6.58% | $5,192,572.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.09% | +3.87% |
-| SOXL/USDT:USDT | below_1h_threshold | +4.02% | +3.80% |
-| HEI/USDT:USDT | below_1h_threshold | +3.73% | +3.51% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.76% | +2.55% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.35% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.68% | +3.55% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.93% | +2.80% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.72% | +2.58% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.62% | +2.49% |
+| ARMSTOCK/USDT:USDT | below_1h_threshold | +2.06% | +1.93% |
 
 ## 6. 次に見るべき不足
 
