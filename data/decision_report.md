@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T20:27:50.697231+00:00
+- generated_at: 2026-06-24T20:37:08.611541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7497**
 
@@ -62,10 +62,10 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T20:27:28.953210+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.35% price=60733.2
-- Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 8 → strict 7
-- Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-24T20:36:50.952196+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.36% price=60740.5
+- Funnel: target 808 → liquid 162 → pre 50 → checked 50 → surge 7 → strict 6
+- Surge前reject: below_1h_threshold=41, below_relative_strength=2, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -73,21 +73,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KORU/USDT:USDT | +19.53% | $2,945,805.24 |
-| MUSTOCK/USDT:USDT | +14.43% | $81,841,964.43 |
-| H/USDT:USDT | +13.55% | $16,544,632.12 |
-| DRAM/USDT:USDT | +12.97% | $6,733,107.35 |
-| MVLL/USDT:USDT | +12.72% | $2,489,995.05 |
+| KORU/USDT:USDT | +17.72% | $3,268,737.32 |
+| MUSTOCK/USDT:USDT | +12.56% | $84,438,483.65 |
+| H/USDT:USDT | +12.56% | $16,731,929.50 |
+| DRAM/USDT:USDT | +11.56% | $7,074,028.94 |
+| SOXL/USDT:USDT | +10.24% | $5,613,179.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.92% | +3.58% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.66% | +3.31% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +3.19% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.68% | +2.33% |
-| SPX/USDT:USDT | below_1h_threshold | +3.23% | +1.89% |
+| SAMSUNGSTOCK/USDT:USDT | below_relative_strength | +5.65% | +4.29% |
+| ARMSTOCK/USDT:USDT | below_relative_strength | +5.45% | +4.09% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.51% | +2.15% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +2.10% |
+| SPX/USDT:USDT | below_1h_threshold | +3.45% | +2.09% |
 
 ## 6. 次に見るべき不足
 
