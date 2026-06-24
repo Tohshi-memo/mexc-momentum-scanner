@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T19:40:14.187440+00:00
+- generated_at: 2026-06-24T19:48:09.051242+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7492**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T19:40:09.507083+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=59781.1
+- 更新: 2026-06-24T19:48:04.326531+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=59748.2
 - Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
+- Strict後reject: 4h RSI 68.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +17.49% | $16,129,322.69 |
-| MAVIA/USDT:USDT | +14.06% | $1,151,511.61 |
-| BSB/USDT:USDT | +6.15% | $6,200,238.29 |
-| CLO/USDT:USDT | +4.68% | $3,279,338.52 |
-| VELVET/USDT:USDT | +4.29% | $5,708,251.08 |
+| H/USDT:USDT | +18.26% | $16,299,537.18 |
+| MAVIA/USDT:USDT | +11.35% | $1,213,179.66 |
+| BSB/USDT:USDT | +5.56% | $6,207,174.37 |
+| VELVET/USDT:USDT | +4.23% | $5,836,696.21 |
+| ALLO/USDT:USDT | +4.02% | $7,334,126.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.20% | +2.85% |
-| UB/USDT:USDT | below_1h_threshold | +2.96% | +2.60% |
-| LIT/USDT:USDT | below_1h_threshold | +2.69% | +2.34% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.32% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +1.68% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.21% | +2.91% |
+| LIT/USDT:USDT | below_1h_threshold | +2.61% | +2.31% |
+| MMT/USDT:USDT | below_1h_threshold | +2.24% | +1.94% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.57% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.68% | +1.38% |
 
 ## 6. 次に見るべき不足
 
