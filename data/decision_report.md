@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-24T02:49:57.424601+00:00
+- generated_at: 2026-06-24T02:57:32.305156+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7456**
+- closed shadow trades: **7457**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7456, expectancy=-0.05%
+- 全期間 MARKET基準: n=7457, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-0.32%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
 | ASK_LONG | 20/20 | 100.0% | +0.95% | **+0.95%** |
 | LIMIT_2PCT_LONG | 15/20 | 75.0% | +0.85% | **+0.64%** |
-| LIMIT_BB3S_LONG | 2/3 | 66.7% | +0.34% | **+0.23%** |
+| LIMIT_7PCT_LONG | 7/20 | 35.0% | +0.21% | **+0.07%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,24 +46,24 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$232.20** / 初期 $100.00 (+132.20%)
-- 確定: 2087件 (Win 620 / Loss 692 / Flat 775) / skip 1930件
-- 成長率目線: 平均log +0.000404 / 幾何平均 +0.040% per trade / maxDD +7.25%
+- 残高: **$231.38** / 初期 $100.00 (+131.38%)
+- 確定: 2088件 (Win 620 / Loss 693 / Flat 775) / skip 1930件
+- 成長率目線: 平均log +0.000402 / 幾何平均 +0.040% per trade / maxDD +7.25%
 - 次の候補: `LIMIT_FIB1618_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CLO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $232.20
+- 最新: KORU/USDT:USDT `LIMIT_FIB1618_LONG` EXPIRED account -0.35% 残高後 $231.38
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.36** / 初期 $100.00 (+6.36%)
-- 確定: 328件 (Win 92 / Loss 88 / Flat 148) / skip 539件
+- 確定: 328件 (Win 92 / Loss 88 / Flat 148) / skip 540件
 - 成長率目線: 平均log +0.000188 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: G/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $106.36
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T02:49:53.033820+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=62669.2
+- 更新: 2026-06-24T02:57:26.777347+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=62644.2
 - Funnel: target 802 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +47.45% | $10,643,194.17 |
-| CLO/USDT:USDT | +23.42% | $5,531,474.51 |
-| BEAT/USDT:USDT | +19.94% | $67,032,110.97 |
-| SYN/USDT:USDT | +14.38% | $15,406,981.30 |
-| ID/USDT:USDT | +11.06% | $1,640,723.90 |
+| HEI/USDT:USDT | +46.31% | $10,761,462.66 |
+| CLO/USDT:USDT | +24.90% | $5,554,789.10 |
+| BEAT/USDT:USDT | +18.26% | $67,243,598.20 |
+| SYN/USDT:USDT | +12.98% | $15,453,476.53 |
+| ID/USDT:USDT | +11.18% | $1,646,817.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAYER/USDT:USDT | below_1h_threshold | +3.77% | +4.14% |
-| UB/USDT:USDT | below_1h_threshold | +3.20% | +3.58% |
-| CLO/USDT:USDT | below_1h_threshold | +2.91% | +3.28% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.18% | +2.55% |
-| ID/USDT:USDT | below_1h_threshold | +1.89% | +2.26% |
+| CLO/USDT:USDT | below_1h_threshold | +4.06% | +4.47% |
+| LAYER/USDT:USDT | below_1h_threshold | +3.16% | +3.57% |
+| ID/USDT:USDT | below_1h_threshold | +2.00% | +2.41% |
+| SAHARA/USDT:USDT | below_1h_threshold | +1.23% | +1.65% |
+| SATSSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.61% |
 
 ## 6. 次に見るべき不足
 
