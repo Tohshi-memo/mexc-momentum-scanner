@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T20:10:57.626219+00:00
+- generated_at: 2026-06-24T20:19:20.410943+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7494**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T20:10:37.391455+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.25% price=60676.0
+- 更新: 2026-06-24T20:19:02.404513+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.31% price=60709.4
 - Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 7 → strict 6
 - Surge前reject: below_1h_threshold=42, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
@@ -73,21 +73,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +13.65% | $16,269,136.36 |
-| KORU/USDT:USDT | +12.54% | $2,663,214.64 |
-| MVLL/USDT:USDT | +10.71% | $2,469,166.40 |
-| MUSTOCK/USDT:USDT | +10.57% | $75,916,743.08 |
-| MAVIA/USDT:USDT | +10.22% | $1,287,042.82 |
+| H/USDT:USDT | +16.61% | $16,416,287.90 |
+| KORU/USDT:USDT | +12.28% | $2,788,935.81 |
+| MUSTOCK/USDT:USDT | +9.82% | $78,957,297.32 |
+| MVLL/USDT:USDT | +9.82% | $2,475,743.14 |
+| MAVIA/USDT:USDT | +9.09% | $1,298,316.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_relative_strength | +6.06% | +4.81% |
-| ARMSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +2.52% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +2.44% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.22% | +1.97% |
-| RESOLV/USDT:USDT | below_1h_threshold | +3.09% | +1.84% |
+| SAMSUNGSTOCK/USDT:USDT | below_relative_strength | +5.75% | +4.44% |
+| DYDX/USDT:USDT | below_1h_threshold | +3.27% | +1.97% |
+| RESOLV/USDT:USDT | below_1h_threshold | +3.19% | +1.88% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +1.87% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.16% | +1.85% |
 
 ## 6. 次に見るべき不足
 
