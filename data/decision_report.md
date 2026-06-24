@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T11:52:20.848449+00:00
+- generated_at: 2026-06-24T11:58:34.390664+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7474**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T11:52:15.114024+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.77% price=62895.5
-- Funnel: target 808 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.1 >= 65=1
+- 更新: 2026-06-24T11:58:30.505389+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.72% price=62865.8
+- Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +51.22% | $4,947,549.04 |
-| HEI/USDT:USDT | +44.73% | $17,286,913.46 |
-| BAS/USDT:USDT | +32.92% | $1,186,126.19 |
-| O/USDT:USDT | +21.08% | $3,535,653.11 |
-| SAHARA/USDT:USDT | +20.67% | $2,917,247.13 |
+| SLX/USDT:USDT | +49.16% | $5,046,522.61 |
+| HEI/USDT:USDT | +43.94% | $17,332,787.80 |
+| BAS/USDT:USDT | +34.15% | $1,284,266.99 |
+| SAHARA/USDT:USDT | +21.46% | $2,923,544.69 |
+| O/USDT:USDT | +21.31% | $3,663,976.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_relative_strength | +5.72% | +4.95% |
-| LIGHT/USDT:USDT | below_1h_threshold | +4.78% | +4.01% |
-| AAVE/USDT:USDT | below_1h_threshold | +4.50% | +3.73% |
-| JTO/USDT:USDT | below_1h_threshold | +3.70% | +2.93% |
-| LAB/USDT:USDT | below_1h_threshold | +3.01% | +2.24% |
+| SLX/USDT:USDT | below_1h_threshold | +4.32% | +3.60% |
+| JTO/USDT:USDT | below_1h_threshold | +3.82% | +3.10% |
+| SYN/USDT:USDT | below_1h_threshold | +3.65% | +2.93% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.79% | +2.07% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.53% | +1.81% |
 
 ## 6. 次に見るべき不足
 
