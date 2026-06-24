@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-24T18:03:02.007011+00:00
+- generated_at: 2026-06-24T18:10:54.122315+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7489**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-24T18:02:57.371395+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=59292.0
+- 更新: 2026-06-24T18:10:49.586294+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=59544.4
 - Funnel: target 808 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| H/USDT:USDT | +17.50% | $14,031,802.83 |
-| O/USDT:USDT | +6.86% | $7,533,135.13 |
-| BSB/USDT:USDT | +3.61% | $6,155,700.09 |
-| EVAA/USDT:USDT | +1.23% | $1,257,608.60 |
-| ARX/USDT:USDT | +0.97% | $3,310,356.66 |
+| H/USDT:USDT | +19.17% | $14,261,371.40 |
+| BSB/USDT:USDT | +3.61% | $6,196,945.26 |
+| O/USDT:USDT | +3.46% | $7,652,917.88 |
+| XPL/USDT:USDT | +1.87% | $7,025,695.85 |
+| EVAA/USDT:USDT | +1.62% | $1,262,367.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +1.13% | +1.25% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.05% | +1.17% |
-| O/USDT:USDT | below_1h_threshold | +0.91% | +1.04% |
-| ID/USDT:USDT | below_1h_threshold | +0.91% | +1.03% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.42% | +0.54% |
+| ENA/USDT:USDT | below_1h_threshold | +1.39% | +1.09% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.37% | +1.07% |
+| ID/USDT:USDT | below_1h_threshold | +1.34% | +1.04% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.26% | +0.96% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.24% | +0.94% |
 
 ## 6. 次に見るべき不足
 
