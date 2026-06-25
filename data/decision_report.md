@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T23:44:46.571880+00:00
+- generated_at: 2026-06-25T23:53:02.967404+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7592**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T23:44:40.506905+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=59936.9
-- Funnel: target 807 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.2 >= 65=1, 4h RSI 77.3 >= 65=1
+- 更新: 2026-06-25T23:52:58.123844+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=59797.4
+- Funnel: target 807 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +20.87% | $1,222,428.09 |
-| IP/USDT:USDT | +16.48% | $3,129,934.58 |
-| AIN/USDT:USDT | +15.38% | $1,713,599.76 |
-| HEI/USDT:USDT | +14.46% | $6,280,005.23 |
-| M/USDT:USDT | +14.42% | $24,741,270.07 |
+| G/USDT:USDT | +19.09% | $1,492,582.00 |
+| IP/USDT:USDT | +15.91% | $3,160,517.82 |
+| M/USDT:USDT | +15.71% | $24,844,386.93 |
+| HEI/USDT:USDT | +15.04% | $6,301,120.44 |
+| AIN/USDT:USDT | +14.79% | $1,726,967.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.51% | +3.31% |
-| XPL/USDT:USDT | below_1h_threshold | +2.74% | +2.54% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.41% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.49% | +2.29% |
-| BAS/USDT:USDT | below_1h_threshold | +2.44% | +2.23% |
+| IP/USDT:USDT | below_1h_threshold | +4.59% | +4.62% |
+| SLX/USDT:USDT | below_1h_threshold | +4.42% | +4.45% |
+| AIN/USDT:USDT | below_1h_threshold | +2.97% | +3.00% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.48% | +2.50% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.96% | +1.99% |
 
 ## 6. 次に見るべき不足
 
