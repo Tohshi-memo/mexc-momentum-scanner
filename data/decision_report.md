@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T03:17:33.054775+00:00
+- generated_at: 2026-06-25T03:25:32.164936+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7515**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T03:17:28.479437+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=60747.7
+- 更新: 2026-06-25T03:25:27.542483+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=60788.3
 - Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KORU/USDT:USDT | +17.38% | $5,805,734.19 |
-| SLX/USDT:USDT | +17.09% | $11,937,248.66 |
-| MUSTOCK/USDT:USDT | +15.85% | $99,818,239.99 |
-| UB/USDT:USDT | +15.27% | $4,754,614.47 |
-| BSB/USDT:USDT | +12.96% | $6,402,814.64 |
+| SLX/USDT:USDT | +18.04% | $11,993,031.02 |
+| KORU/USDT:USDT | +17.11% | $5,818,804.92 |
+| MUSTOCK/USDT:USDT | +15.83% | $99,964,392.50 |
+| UB/USDT:USDT | +14.20% | $4,771,868.90 |
+| MVLL/USDT:USDT | +13.04% | $2,383,550.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ID/USDT:USDT | below_1h_threshold | +1.57% | +1.60% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.28% | +1.31% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.04% | +1.07% |
-| RESOLV/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
+| MMT/USDT:USDT | below_1h_threshold | +1.92% | +1.88% |
+| ID/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.45% | +1.41% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.35% | +1.31% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.23% | +1.19% |
 
 ## 6. 次に見るべき不足
 
