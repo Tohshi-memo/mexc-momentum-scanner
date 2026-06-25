@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T04:30:46.585784+00:00
+- generated_at: 2026-06-25T04:38:43.363056+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7521**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T04:30:35.200685+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=60860.0
-- Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-25T04:38:36.233888+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=60863.1
+- Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +22.72% | $12,444,196.04 |
-| KORU/USDT:USDT | +17.40% | $5,691,166.91 |
-| MUSTOCK/USDT:USDT | +16.89% | $101,927,685.02 |
-| MAVIA/USDT:USDT | +13.98% | $1,538,450.60 |
-| RESOLV/USDT:USDT | +13.71% | $2,665,506.83 |
+| SLX/USDT:USDT | +23.53% | $12,572,464.55 |
+| MUSTOCK/USDT:USDT | +17.19% | $102,445,453.85 |
+| KORU/USDT:USDT | +17.12% | $5,712,093.45 |
+| RESOLV/USDT:USDT | +15.87% | $2,712,200.80 |
+| MAVIA/USDT:USDT | +14.63% | $1,542,596.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +3.90% | +3.89% |
-| RESOLV/USDT:USDT | below_1h_threshold | +3.07% | +3.06% |
-| SYN/USDT:USDT | below_1h_threshold | +2.65% | +2.64% |
-| MMT/USDT:USDT | below_1h_threshold | +2.12% | +2.11% |
-| ID/USDT:USDT | below_1h_threshold | +1.99% | +1.98% |
+| RESOLV/USDT:USDT | below_1h_threshold | +4.70% | +4.69% |
+| ID/USDT:USDT | below_1h_threshold | +3.37% | +3.36% |
+| SYN/USDT:USDT | below_1h_threshold | +1.85% | +1.84% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
+| MAVIA/USDT:USDT | below_1h_threshold | +1.18% | +1.16% |
 
 ## 6. 次に見るべき不足
 
