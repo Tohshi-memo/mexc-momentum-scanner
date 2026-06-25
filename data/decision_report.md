@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T20:06:31.719975+00:00
+- generated_at: 2026-06-25T20:15:01.045212+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7581**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T20:06:26.105531+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.59% price=59651.1
+- 更新: 2026-06-25T20:14:56.335588+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=59534.4
 - Funnel: target 807 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +18.89% | $1,412,276.54 |
-| HEI/USDT:USDT | +15.88% | $5,217,157.08 |
-| IP/USDT:USDT | +8.61% | $1,753,535.76 |
-| M/USDT:USDT | +7.21% | $23,158,154.31 |
-| SNDKSTOCK/USDT:USDT | +7.18% | $36,076,141.45 |
+| IDOL/USDT:USDT | +20.10% | $1,436,167.47 |
+| HEI/USDT:USDT | +17.62% | $5,287,990.74 |
+| IP/USDT:USDT | +8.88% | $1,787,795.35 |
+| EDEN/USDT:USDT | +7.12% | $1,269,825.25 |
+| SNDKSTOCK/USDT:USDT | +6.38% | $36,353,691.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +2.44% | +1.85% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.06% | +1.47% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.17% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.61% | +1.02% |
-| IP/USDT:USDT | below_1h_threshold | +1.51% | +0.92% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.59% | +4.19% |
+| XPL/USDT:USDT | below_1h_threshold | +4.29% | +3.89% |
+| HEI/USDT:USDT | below_1h_threshold | +2.82% | +2.43% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.42% | +2.03% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.11% | +1.72% |
 
 ## 6. 次に見るべき不足
 
