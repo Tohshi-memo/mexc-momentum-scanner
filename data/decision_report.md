@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T15:09:06.691082+00:00
+- generated_at: 2026-06-25T15:17:08.341479+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7568**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T15:09:02.235779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=59332.1
+- 更新: 2026-06-25T15:17:03.696313+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.00% price=58851.8
 - Funnel: target 806 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +47.91% | $22,898,730.43 |
-| SYN/USDT:USDT | +31.63% | $27,155,249.64 |
-| TNSR/USDT:USDT | +30.63% | $1,644,686.94 |
-| HEI/USDT:USDT | +28.10% | $4,032,815.37 |
-| RESOLV/USDT:USDT | +24.89% | $4,749,145.70 |
+| SLX/USDT:USDT | +46.00% | $23,087,960.13 |
+| HEI/USDT:USDT | +27.51% | $4,067,389.41 |
+| TNSR/USDT:USDT | +25.66% | $1,798,886.88 |
+| RESOLV/USDT:USDT | +23.04% | $4,778,114.56 |
+| IDOL/USDT:USDT | +18.04% | $1,060,145.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +2.13% | +2.32% |
-| HEI/USDT:USDT | below_1h_threshold | +2.07% | +2.26% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.54% | +1.73% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.28% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +1.25% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.85% | +2.85% |
+| HEI/USDT:USDT | below_1h_threshold | +1.54% | +2.54% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.23% | +2.23% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.08% | +2.08% |
+| VVV/USDT:USDT | below_1h_threshold | +0.91% | +1.92% |
 
 ## 6. 次に見るべき不足
 
