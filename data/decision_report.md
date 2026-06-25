@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T16:16:03.660223+00:00
+- generated_at: 2026-06-25T16:24:02.817889+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7568**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T16:15:59.135386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=59174.0
+- 更新: 2026-06-25T16:23:58.793860+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=59174.1
 - Funnel: target 807 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ETH/USDT:USDT | n/a | $1,943,303,254.09 |
-| XAU/USDT:USDT | n/a | $476,786,636.20 |
-| MUSTOCK/USDT:USDT | n/a | $172,173,520.94 |
-| SYN/USDT:USDT | n/a | $28,642,374.66 |
-| SOXL/USDT:USDT | n/a | $9,419,597.27 |
+| SLX/USDT:USDT | +2.28% | $23,754,704.11 |
+| UB/USDT:USDT | +0.30% | $3,071,360.66 |
+| BEAT/USDT:USDT | +0.15% | $35,652,774.18 |
+| AIN/USDT:USDT | +0.14% | $1,387,367.66 |
+| DOGE/USDT:USDT | +0.09% | $116,168,640.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETH/USDT:USDT | below_1h_threshold | +0.00% | +0.00% |
-| XAU/USDT:USDT | below_1h_threshold | +0.00% | +0.00% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.00% | +0.00% |
-| SYN/USDT:USDT | below_1h_threshold | +0.00% | +0.00% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.00% | +0.00% |
+| UB/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
+| ADA/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.15% | +0.15% |
+| AIN/USDT:USDT | below_1h_threshold | +0.14% | +0.14% |
+| TNSR/USDT:USDT | below_1h_threshold | +0.09% | +0.09% |
 
 ## 6. 次に見るべき不足
 
