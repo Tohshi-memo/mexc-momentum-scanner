@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T03:09:24.791633+00:00
+- generated_at: 2026-06-25T03:17:33.054775+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7515**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T03:09:20.419384+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=60798.0
+- 更新: 2026-06-25T03:17:28.479437+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=60747.7
 - Funnel: target 808 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KORU/USDT:USDT | +17.65% | $5,791,706.80 |
-| SLX/USDT:USDT | +16.35% | $11,766,907.96 |
-| MUSTOCK/USDT:USDT | +15.95% | $99,243,024.37 |
-| UB/USDT:USDT | +14.43% | $4,711,175.15 |
-| BSB/USDT:USDT | +13.03% | $6,371,793.71 |
+| KORU/USDT:USDT | +17.38% | $5,805,734.19 |
+| SLX/USDT:USDT | +17.09% | $11,937,248.66 |
+| MUSTOCK/USDT:USDT | +15.85% | $99,818,239.99 |
+| UB/USDT:USDT | +15.27% | $4,754,614.47 |
+| BSB/USDT:USDT | +12.96% | $6,402,814.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.12% | +2.06% |
-| ID/USDT:USDT | below_1h_threshold | +1.64% | +1.59% |
-| MMT/USDT:USDT | below_1h_threshold | +0.91% | +0.85% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
-| DYDX/USDT:USDT | below_1h_threshold | +0.75% | +0.69% |
+| ID/USDT:USDT | below_1h_threshold | +1.57% | +1.60% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.28% | +1.31% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.04% | +1.07% |
+| RESOLV/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
 
 ## 6. 次に見るべき不足
 
