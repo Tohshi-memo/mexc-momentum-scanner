@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-25T19:58:13.196721+00:00
+- generated_at: 2026-06-25T20:06:31.719975+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7580**
+- closed shadow trades: **7581**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +3.15% / filled 20/20。**
-- 全期間 MARKET基準: n=7580, expectancy=-0.04%
+- 全期間 MARKET基準: n=7581, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=+3.15%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,7 +23,7 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +3.15% | **+3.15%** |
 | ASK | 20/20 | 100.0% | +2.98% | **+2.98%** |
-| LIMIT_BB3S | 5/14 | 35.7% | +2.09% | **+0.75%** |
+| LIMIT_BB3S | 5/15 | 33.3% | +2.09% | **+0.70%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 
@@ -47,23 +47,23 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$219.24** / 初期 $100.00 (+119.24%)
-- 確定: 2132件 (Win 629 / Loss 715 / Flat 788) / skip 2009件
+- 確定: 2132件 (Win 629 / Loss 715 / Flat 788) / skip 2010件
 - 成長率目線: 平均log +0.000368 / 幾何平均 +0.037% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: UB/USDT:USDT `LIMIT_4PCT_LONG` SL_HIT account -0.50% 残高後 $219.24
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$107.51** / 初期 $100.00 (+7.51%)
-- 確定: 370件 (Win 102 / Loss 100 / Flat 168) / skip 621件
-- 成長率目線: 平均log +0.000196 / 幾何平均 +0.020% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0488 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: IDOL/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $107.51
+- 残高: **$107.60** / 初期 $100.00 (+7.60%)
+- 確定: 371件 (Win 103 / Loss 100 / Flat 168) / skip 621件
+- 成長率目線: 平均log +0.000197 / 幾何平均 +0.020% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0517 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: LAB/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.08% 残高後 $107.60
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T19:58:09.300749+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=59302.3
+- 更新: 2026-06-25T20:06:26.105531+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=59651.1
 - Funnel: target 807 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +17.17% | $1,540,370.22 |
-| HEI/USDT:USDT | +14.84% | $5,227,281.22 |
-| IP/USDT:USDT | +6.79% | $1,733,127.52 |
-| EDEN/USDT:USDT | +6.05% | $1,243,216.65 |
-| SNDKSTOCK/USDT:USDT | +5.77% | $36,455,925.48 |
+| IDOL/USDT:USDT | +18.89% | $1,412,276.54 |
+| HEI/USDT:USDT | +15.88% | $5,217,157.08 |
+| IP/USDT:USDT | +8.61% | $1,753,535.76 |
+| M/USDT:USDT | +7.21% | $23,158,154.31 |
+| SNDKSTOCK/USDT:USDT | +7.18% | $36,076,141.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +3.85% | +4.14% |
-| IP/USDT:USDT | below_1h_threshold | +2.79% | +3.08% |
-| AMCSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.90% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.57% | +2.85% |
-| UB/USDT:USDT | below_1h_threshold | +2.09% | +2.38% |
+| M/USDT:USDT | below_1h_threshold | +2.44% | +1.85% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.06% | +1.47% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.17% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.61% | +1.02% |
+| IP/USDT:USDT | below_1h_threshold | +1.51% | +0.92% |
 
 ## 6. 次に見るべき不足
 
