@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T10:36:38.176838+00:00
+- generated_at: 2026-06-25T10:45:41.248809+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7542**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T10:36:32.429802+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=61519.1
-- Funnel: target 807 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-25T10:45:36.698216+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=61375.3
+- Funnel: target 807 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAS/USDT:USDT | +27.22% | $9,755,490.45 |
-| RESOLV/USDT:USDT | +21.85% | $3,191,771.74 |
-| SLX/USDT:USDT | +21.62% | $18,012,902.48 |
-| MUSTOCK/USDT:USDT | +18.22% | $128,170,110.85 |
-| SYN/USDT:USDT | +17.96% | $17,219,721.30 |
+| BAS/USDT:USDT | +24.76% | $9,874,969.03 |
+| RESOLV/USDT:USDT | +21.75% | $3,201,982.78 |
+| SLX/USDT:USDT | +20.55% | $18,174,123.34 |
+| SYN/USDT:USDT | +19.11% | $17,373,145.69 |
+| MUSTOCK/USDT:USDT | +18.49% | $129,144,654.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +2.74% | +3.05% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.51% | +2.82% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.39% | +2.70% |
-| RESOLV/USDT:USDT | below_1h_threshold | +1.98% | +2.29% |
-| BAS/USDT:USDT | below_1h_threshold | +1.76% | +2.07% |
+| SYN/USDT:USDT | below_1h_threshold | +3.58% | +4.12% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.29% | +3.83% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.72% | +3.26% |
+| RESOLV/USDT:USDT | below_1h_threshold | +1.85% | +2.39% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +2.04% |
 
 ## 6. 次に見るべき不足
 
