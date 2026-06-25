@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T06:51:11.985830+00:00
+- generated_at: 2026-06-25T07:09:18.427853+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7531**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T06:51:06.923781+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=61749.0
-- Funnel: target 807 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-06-25T07:09:13.477320+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=61636.0
+- Funnel: target 807 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +31.71% | $15,260,914.26 |
-| RESOLV/USDT:USDT | +19.94% | $2,811,980.74 |
-| MUSTOCK/USDT:USDT | +18.75% | $115,164,265.88 |
-| KORU/USDT:USDT | +17.32% | $5,471,699.90 |
-| DRAM/USDT:USDT | +12.54% | $6,158,486.62 |
+| SLX/USDT:USDT | +28.39% | $14,867,105.46 |
+| RESOLV/USDT:USDT | +21.64% | $2,687,588.81 |
+| MUSTOCK/USDT:USDT | +18.92% | $115,405,841.95 |
+| KORU/USDT:USDT | +17.63% | $5,451,982.00 |
+| SOXL/USDT:USDT | +12.79% | $5,658,810.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.80% | +4.50% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.77% | +1.47% |
-| RESOLV/USDT:USDT | below_1h_threshold | +1.66% | +1.36% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.64% | +1.34% |
-| ENA/USDT:USDT | below_1h_threshold | +1.53% | +1.23% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.59% | +2.69% |
+| RESOLV/USDT:USDT | below_1h_threshold | +1.11% | +1.21% |
+| BAS/USDT:USDT | below_1h_threshold | +1.05% | +1.14% |
+| MAVIA/USDT:USDT | below_1h_threshold | +0.84% | +0.94% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.74% | +0.83% |
 
 ## 6. 次に見るべき不足
 
