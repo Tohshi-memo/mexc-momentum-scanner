@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T08:27:22.537744+00:00
+- generated_at: 2026-06-25T08:35:18.995788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7536**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T08:27:16.870117+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=61710.6
+- 更新: 2026-06-25T08:35:14.459603+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=61702.5
 - Funnel: target 807 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +37.34% | $15,702,903.20 |
-| RESOLV/USDT:USDT | +21.54% | $2,966,817.21 |
-| MUSTOCK/USDT:USDT | +18.15% | $120,944,917.66 |
-| KORU/USDT:USDT | +16.96% | $5,502,576.01 |
-| SOXL/USDT:USDT | +14.74% | $5,870,922.13 |
+| SLX/USDT:USDT | +37.86% | $15,819,533.01 |
+| RESOLV/USDT:USDT | +21.39% | $2,981,047.18 |
+| MUSTOCK/USDT:USDT | +17.84% | $121,658,264.91 |
+| KORU/USDT:USDT | +16.97% | $5,518,733.56 |
+| SOXL/USDT:USDT | +14.53% | $5,941,484.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +2.84% | +3.13% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.77% | +3.06% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.08% | +2.36% |
-| SLX/USDT:USDT | below_1h_threshold | +1.33% | +1.62% |
-| SEI/USDT:USDT | below_1h_threshold | +1.30% | +1.59% |
+| POPCAT/USDT:USDT | below_1h_threshold | +4.76% | +5.06% |
+| BAS/USDT:USDT | below_1h_threshold | +3.45% | +3.75% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.44% | +2.73% |
+| SLX/USDT:USDT | below_1h_threshold | +1.82% | +2.12% |
+| SEI/USDT:USDT | below_1h_threshold | +1.50% | +1.79% |
 
 ## 6. 次に見るべき不足
 
