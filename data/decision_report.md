@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T08:43:19.649004+00:00
+- generated_at: 2026-06-25T08:51:09.945009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7536**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T08:43:14.911184+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=61712.0
-- Funnel: target 807 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-25T08:51:04.961075+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=61761.5
+- Funnel: target 807 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +37.82% | $15,929,508.11 |
-| RESOLV/USDT:USDT | +21.13% | $3,042,046.82 |
-| MUSTOCK/USDT:USDT | +17.72% | $122,051,224.94 |
-| KORU/USDT:USDT | +17.05% | $5,526,325.95 |
-| BAS/USDT:USDT | +14.52% | $8,005,003.32 |
+| SLX/USDT:USDT | +37.86% | $16,045,415.50 |
+| RESOLV/USDT:USDT | +19.84% | $3,056,873.08 |
+| BAS/USDT:USDT | +17.27% | $8,078,920.05 |
+| MUSTOCK/USDT:USDT | +17.01% | $123,278,908.30 |
+| KORU/USDT:USDT | +16.98% | $5,527,054.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +4.92% | +5.20% |
-| GUA/USDT:USDT | below_1h_threshold | +3.88% | +4.16% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.21% | +2.49% |
-| SLX/USDT:USDT | below_1h_threshold | +1.80% | +2.08% |
-| SEI/USDT:USDT | below_1h_threshold | +1.60% | +1.88% |
+| SEI/USDT:USDT | below_1h_threshold | +2.11% | +2.31% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.90% | +2.10% |
+| SLX/USDT:USDT | below_1h_threshold | +1.82% | +2.03% |
+| HEI/USDT:USDT | below_1h_threshold | +0.97% | +1.17% |
+| BCH/USDT:USDT | below_1h_threshold | +0.72% | +0.92% |
 
 ## 6. 次に見るべき不足
 
