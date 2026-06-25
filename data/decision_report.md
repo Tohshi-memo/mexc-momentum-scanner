@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T23:11:49.857945+00:00
+- generated_at: 2026-06-25T23:19:47.593655+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7591**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T23:11:45.290627+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=59809.7
+- 更新: 2026-06-25T23:19:43.013464+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=60058.4
 - Funnel: target 807 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IP/USDT:USDT | +14.06% | $2,984,159.75 |
-| IDOL/USDT:USDT | +13.70% | $1,585,298.16 |
-| AIN/USDT:USDT | +13.17% | $1,650,402.92 |
-| HEI/USDT:USDT | +12.52% | $6,148,409.05 |
-| FOGO/USDT:USDT | +10.73% | $2,580,377.76 |
+| AIN/USDT:USDT | +15.26% | $1,669,730.68 |
+| IP/USDT:USDT | +14.72% | $3,012,628.48 |
+| IDOL/USDT:USDT | +12.89% | $1,589,663.15 |
+| HEI/USDT:USDT | +12.33% | $6,175,112.08 |
+| FOGO/USDT:USDT | +11.29% | $2,613,309.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IP/USDT:USDT | below_1h_threshold | +2.92% | +2.92% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.29% | +2.30% |
-| AIN/USDT:USDT | below_1h_threshold | +1.66% | +1.67% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
-| BAS/USDT:USDT | below_1h_threshold | +1.39% | +1.40% |
+| IP/USDT:USDT | below_1h_threshold | +3.51% | +3.10% |
+| AIN/USDT:USDT | below_1h_threshold | +3.34% | +2.93% |
+| KORU/USDT:USDT | below_1h_threshold | +2.94% | +2.53% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.15% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.97% | +1.56% |
 
 ## 6. 次に見るべき不足
 
