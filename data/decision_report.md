@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T09:32:12.402593+00:00
+- generated_at: 2026-06-25T09:40:19.994699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7539**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T09:32:06.528361+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=61669.7
-- Funnel: target 807 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.1 >= 65=1
+- 更新: 2026-06-25T09:40:14.536504+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=61716.1
+- Funnel: target 807 → liquid 162 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.6 >= 65=1, 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +32.04% | $16,768,930.93 |
-| BAS/USDT:USDT | +21.15% | $8,741,879.38 |
-| RESOLV/USDT:USDT | +20.56% | $3,128,538.51 |
-| MUSTOCK/USDT:USDT | +16.91% | $124,787,847.72 |
-| KORU/USDT:USDT | +16.64% | $5,546,407.55 |
+| SLX/USDT:USDT | +31.30% | $16,947,876.66 |
+| BAS/USDT:USDT | +23.18% | $8,847,930.50 |
+| RESOLV/USDT:USDT | +19.74% | $3,145,337.46 |
+| MUSTOCK/USDT:USDT | +17.23% | $125,398,333.95 |
+| KORU/USDT:USDT | +16.95% | $5,556,251.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.54% | +4.57% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.57% | +3.60% |
-| ID/USDT:USDT | below_1h_threshold | +2.45% | +2.47% |
-| AERO/USDT:USDT | below_1h_threshold | +1.11% | +1.14% |
-| BSB/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.49% | +2.44% |
+| ID/USDT:USDT | below_1h_threshold | +2.45% | +2.40% |
+| AERO/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
+| APE/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.24% |
 
 ## 6. 次に見るべき不足
 
