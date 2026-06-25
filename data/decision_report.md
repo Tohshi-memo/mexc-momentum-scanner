@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T13:28:14.322789+00:00
+- generated_at: 2026-06-25T13:36:19.136233+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7559**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T13:28:05.509014+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=61198.3
-- Funnel: target 806 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1, 4h RSI 78.2 >= 65=1
+- 更新: 2026-06-25T13:36:13.493196+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=61006.7
+- Funnel: target 806 → liquid 162 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.2 >= 65=1, 4h RSI 81.0 >= 65=1, 4h RSI 67.9 >= 65=1, 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +51.17% | $25,038,285.68 |
-| SLX/USDT:USDT | +47.77% | $20,482,879.29 |
-| HEI/USDT:USDT | +41.27% | $3,826,409.05 |
-| RESOLV/USDT:USDT | +30.30% | $4,380,559.51 |
-| IDOL/USDT:USDT | +25.06% | $1,005,946.06 |
+| SLX/USDT:USDT | +49.24% | $20,882,785.42 |
+| SYN/USDT:USDT | +47.38% | $25,512,138.76 |
+| HEI/USDT:USDT | +42.78% | $3,943,408.58 |
+| RESOLV/USDT:USDT | +28.45% | $4,464,311.10 |
+| IDOL/USDT:USDT | +24.08% | $1,009,823.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +4.14% | +4.17% |
-| BBSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.73% |
-| XPL/USDT:USDT | below_1h_threshold | +2.90% | +2.93% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.58% | +2.60% |
-| JUP/USDT:USDT | below_1h_threshold | +2.14% | +2.17% |
+| RESOLV/USDT:USDT | below_1h_threshold | +4.18% | +4.52% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.40% | +2.75% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.12% | +2.46% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.36% |
+| AIN/USDT:USDT | below_1h_threshold | +1.31% | +1.65% |
 
 ## 6. 次に見るべき不足
 
