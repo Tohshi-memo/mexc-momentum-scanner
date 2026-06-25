@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T14:27:02.247158+00:00
+- generated_at: 2026-06-25T14:34:54.611884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7566**
 
@@ -62,32 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T14:26:56.470128+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.00% price=59423.2
-- Funnel: target 806 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=43, below_relative_strength=6, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.0 >= 65=1
+- 更新: 2026-06-25T14:34:49.725775+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +2.95% price=59980.9
+- Funnel: target 806 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=33, below_relative_strength=16, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +42.32% | $22,423,699.90 |
-| SYN/USDT:USDT | +35.79% | $27,360,802.65 |
-| TNSR/USDT:USDT | +32.98% | $1,014,180.64 |
-| HEI/USDT:USDT | +31.62% | $4,051,041.61 |
-| RESOLV/USDT:USDT | +25.72% | $4,652,477.58 |
+| SLX/USDT:USDT | +46.26% | $22,774,626.38 |
+| SYN/USDT:USDT | +33.55% | $27,706,935.77 |
+| HEI/USDT:USDT | +33.55% | $4,110,687.58 |
+| TNSR/USDT:USDT | +28.22% | $1,145,870.26 |
+| RESOLV/USDT:USDT | +27.26% | $4,698,618.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +6.80% | +4.81% |
-| KORU/USDT:USDT | below_relative_strength | +5.63% | +3.63% |
-| ETHFI/USDT:USDT | below_relative_strength | +5.47% | +3.47% |
-| BEAT/USDT:USDT | below_relative_strength | +5.36% | +3.36% |
-| OP/USDT:USDT | below_relative_strength | +5.02% | +3.02% |
+| AIN/USDT:USDT | below_relative_strength | +7.31% | +4.36% |
+| BEAT/USDT:USDT | below_relative_strength | +7.25% | +4.30% |
+| SOXL/USDT:USDT | below_relative_strength | +6.87% | +3.92% |
+| SLX/USDT:USDT | below_relative_strength | +6.51% | +3.56% |
+| ETHFI/USDT:USDT | below_relative_strength | +6.48% | +3.53% |
 
 ## 6. 次に見るべき不足
 
