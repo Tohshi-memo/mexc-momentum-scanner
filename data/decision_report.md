@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T07:39:20.571091+00:00
+- generated_at: 2026-06-25T07:47:10.013934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7534**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T07:39:14.952255+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=61858.6
-- Funnel: target 807 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-25T07:47:05.315619+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=61845.1
+- Funnel: target 807 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +33.29% | $15,489,940.58 |
-| MUSTOCK/USDT:USDT | +18.88% | $117,857,706.38 |
-| KORU/USDT:USDT | +17.47% | $5,476,908.32 |
-| RESOLV/USDT:USDT | +17.37% | $2,863,222.80 |
-| SOXL/USDT:USDT | +13.78% | $5,697,684.11 |
+| SLX/USDT:USDT | +33.62% | $15,585,932.77 |
+| MUSTOCK/USDT:USDT | +18.70% | $118,670,460.74 |
+| RESOLV/USDT:USDT | +17.68% | $2,891,827.26 |
+| KORU/USDT:USDT | +17.14% | $5,478,003.70 |
+| SOXL/USDT:USDT | +14.46% | $5,725,490.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.46% | +4.20% |
-| BAS/USDT:USDT | below_1h_threshold | +4.10% | +3.83% |
-| POPCAT/USDT:USDT | below_1h_threshold | +3.31% | +3.04% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.98% | +2.71% |
-| SYN/USDT:USDT | below_1h_threshold | +2.41% | +2.15% |
+| BEAT/USDT:USDT | below_relative_strength | +5.19% | +4.94% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.98% | +4.74% |
+| SYN/USDT:USDT | below_1h_threshold | +2.87% | +2.63% |
+| BSB/USDT:USDT | below_1h_threshold | +2.82% | +2.58% |
+| POPCAT/USDT:USDT | below_1h_threshold | +2.79% | +2.54% |
 
 ## 6. 次に見るべき不足
 
