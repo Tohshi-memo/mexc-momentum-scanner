@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T03:43:52.293676+00:00
+- generated_at: 2026-06-25T03:51:59.598208+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7516**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T03:43:46.974125+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=60737.6
+- 更新: 2026-06-25T03:51:54.999069+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=60770.2
 - Funnel: target 808 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +19.41% | $12,102,455.01 |
-| KORU/USDT:USDT | +16.10% | $5,852,419.70 |
-| MUSTOCK/USDT:USDT | +15.77% | $100,882,537.10 |
-| MAVIA/USDT:USDT | +12.61% | $1,519,029.32 |
-| RESOLV/USDT:USDT | +11.90% | $2,709,606.26 |
+| SLX/USDT:USDT | +18.08% | $12,150,648.88 |
+| KORU/USDT:USDT | +16.44% | $5,914,661.02 |
+| MUSTOCK/USDT:USDT | +16.36% | $101,191,624.97 |
+| MAVIA/USDT:USDT | +13.21% | $1,524,646.64 |
+| DRAM/USDT:USDT | +11.63% | $6,347,826.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +1.99% | +2.03% |
-| ID/USDT:USDT | below_1h_threshold | +1.62% | +1.66% |
-| JUP/USDT:USDT | below_1h_threshold | +1.52% | +1.56% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.51% | +1.56% |
-| SLX/USDT:USDT | below_1h_threshold | +1.19% | +1.23% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.90% | +1.89% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.61% | +1.60% |
+| JUP/USDT:USDT | below_1h_threshold | +1.33% | +1.32% |
+| ID/USDT:USDT | below_1h_threshold | +1.28% | +1.27% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.04% | +1.03% |
 
 ## 6. 次に見るべき不足
 
