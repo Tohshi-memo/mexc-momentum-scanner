@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T01:56:48.301499+00:00
+- generated_at: 2026-06-25T02:04:38.233436+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7515**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T01:56:43.494158+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=60939.3
-- Funnel: target 808 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-25T02:04:33.637128+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=60912.6
+- Funnel: target 808 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SLX/USDT:USDT | +22.90% | $11,201,756.28 |
-| KORU/USDT:USDT | +16.69% | $5,795,112.31 |
-| MUSTOCK/USDT:USDT | +15.53% | $99,005,502.34 |
-| BSB/USDT:USDT | +11.89% | $6,381,451.29 |
-| DRAM/USDT:USDT | +11.13% | $7,251,411.08 |
+| SLX/USDT:USDT | +21.69% | $11,215,508.73 |
+| KORU/USDT:USDT | +16.51% | $5,746,365.93 |
+| MUSTOCK/USDT:USDT | +15.54% | $97,792,416.39 |
+| BSB/USDT:USDT | +12.58% | $6,297,518.81 |
+| MAVIA/USDT:USDT | +12.00% | $1,496,827.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ID/USDT:USDT | below_1h_threshold | +3.14% | +2.89% |
-| BR/USDT:USDT | below_1h_threshold | +2.85% | +2.60% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.56% | +2.31% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.55% | +2.30% |
-| KORU/USDT:USDT | below_1h_threshold | +2.42% | +2.17% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
+| UB/USDT:USDT | below_1h_threshold | +1.15% | +1.12% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
+| MAVIA/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
+| MVLL/USDT:USDT | below_1h_threshold | +0.59% | +0.56% |
 
 ## 6. 次に見るべき不足
 
