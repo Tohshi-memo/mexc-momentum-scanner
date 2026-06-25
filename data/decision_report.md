@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-25T15:42:42.980298+00:00
+- generated_at: 2026-06-25T15:50:57.711671+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7568**
 
@@ -62,10 +62,10 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-25T15:42:38.455670+00:00 / 保存件数 288/288
+- 更新: 2026-06-25T15:50:53.076274+00:00 / 保存件数 288/288
 - BTC: BULLISH 1h -0.46% price=59174.0
-- Funnel: target 807 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Funnel: target 807 → liquid 167 → pre 50 → checked 49 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
 
 ### 24h上昇上位
 
