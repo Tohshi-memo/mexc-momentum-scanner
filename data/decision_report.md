@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T11:31:09.644065+00:00
+- generated_at: 2026-06-26T11:39:19.616308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7625**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T11:31:04.720440+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=59420.9
+- 更新: 2026-06-26T11:39:14.816922+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=59466.7
 - Funnel: target 809 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
+- Strict後reject: 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +40.81% | $1,879,716.72 |
-| MAGMA/USDT:USDT | +39.85% | $2,153,569.21 |
-| AIN/USDT:USDT | +32.68% | $6,516,844.19 |
-| BEAT/USDT:USDT | +22.34% | $46,091,083.88 |
-| UB/USDT:USDT | +21.01% | $3,626,319.58 |
+| ICNT/USDT:USDT | +41.48% | $1,894,551.04 |
+| MAGMA/USDT:USDT | +39.78% | $2,210,175.39 |
+| AIN/USDT:USDT | +33.61% | $6,559,394.80 |
+| BEAT/USDT:USDT | +23.56% | $46,335,666.83 |
+| UB/USDT:USDT | +20.33% | $3,709,567.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.88% | +3.66% |
-| BAS/USDT:USDT | below_1h_threshold | +3.06% | +2.84% |
-| UB/USDT:USDT | below_1h_threshold | +2.57% | +2.35% |
-| ARX/USDT:USDT | below_1h_threshold | +2.38% | +2.16% |
-| LIT/USDT:USDT | below_1h_threshold | +1.69% | +1.46% |
+| ARX/USDT:USDT | below_1h_threshold | +4.21% | +3.91% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.79% | +3.49% |
+| LIT/USDT:USDT | below_1h_threshold | +3.11% | +2.81% |
+| AIN/USDT:USDT | below_1h_threshold | +2.14% | +1.84% |
+| IDOL/USDT:USDT | below_1h_threshold | +1.86% | +1.56% |
 
 ## 6. 次に見るべき不足
 
