@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T16:36:45.933149+00:00
+- generated_at: 2026-06-26T16:44:52.588998+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7644**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T16:36:38.674495+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=60245.0
+- 更新: 2026-06-26T16:44:45.172315+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=60131.5
 - Funnel: target 806 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
@@ -73,21 +73,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +7.82% | $2,455,682.56 |
-| MYX/USDT:USDT | +6.56% | $1,970,302.80 |
-| RESOLV/USDT:USDT | +4.06% | $1,708,328.27 |
-| ZEC/USDT:USDT | +3.40% | $133,305,872.49 |
-| ICNT/USDT:USDT | +3.24% | $3,397,320.21 |
+| NES/USDT:USDT | +7.82% | $2,492,461.62 |
+| MYX/USDT:USDT | +5.14% | $2,041,320.07 |
+| SYN/USDT:USDT | +4.49% | $16,702,990.25 |
+| RESOLV/USDT:USDT | +4.44% | $1,715,635.66 |
+| ICNT/USDT:USDT | +3.07% | $3,427,736.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RESOLV/USDT:USDT | below_1h_threshold | +4.07% | +4.16% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.46% | +3.55% |
-| ICNT/USDT:USDT | below_1h_threshold | +3.24% | +3.33% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.76% | +2.84% |
-| SYN/USDT:USDT | below_1h_threshold | +2.58% | +2.67% |
+| SYN/USDT:USDT | below_1h_threshold | +4.50% | +4.77% |
+| RESOLV/USDT:USDT | below_1h_threshold | +4.45% | +4.72% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.08% | +3.35% |
+| JTO/USDT:USDT | below_1h_threshold | +3.05% | +3.32% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.87% | +3.15% |
 
 ## 6. 次に見るべき不足
 
