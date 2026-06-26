@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T23:10:41.095398+00:00
+- generated_at: 2026-06-26T23:18:42.346961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7649**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T23:10:36.553200+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=60042.4
-- Funnel: target 806 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-26T23:18:37.812295+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=59960.1
+- Funnel: target 806 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUNDIX/USDT:USDT | +11.46% | $1,960,515.62 |
-| O/USDT:USDT | +8.73% | $5,267,175.56 |
-| VELVET/USDT:USDT | +7.67% | $27,210,593.92 |
-| AGLD/USDT:USDT | +7.16% | $4,720,966.99 |
-| PUMPFUN/USDT:USDT | +7.15% | $6,290,295.30 |
+| PUNDIX/USDT:USDT | +11.34% | $1,962,120.04 |
+| O/USDT:USDT | +10.61% | $5,293,139.50 |
+| AGLD/USDT:USDT | +8.39% | $4,739,190.89 |
+| NES/USDT:USDT | +7.54% | $2,078,599.82 |
+| VELVET/USDT:USDT | +6.95% | $27,361,886.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +2.36% | +2.30% |
-| O/USDT:USDT | below_1h_threshold | +2.33% | +2.27% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.75% | +1.69% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.66% | +0.60% |
+| O/USDT:USDT | below_1h_threshold | +4.10% | +4.18% |
+| SLX/USDT:USDT | below_1h_threshold | +3.52% | +3.60% |
+| SYN/USDT:USDT | below_1h_threshold | +1.91% | +1.99% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.64% | +1.72% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.90% | +0.98% |
 
 ## 6. 次に見るべき不足
 
