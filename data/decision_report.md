@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T02:20:46.439248+00:00
+- generated_at: 2026-06-26T02:38:57.439285+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7601**
 
@@ -62,30 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T02:20:41.857633+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.37% price=58597.1
-- Funnel: target 807 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-26T02:38:49.955585+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.21% price=58694.8
+- Funnel: target 807 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +25.21% | $4,136,266.53 |
-| AIN/USDT:USDT | +21.23% | $2,168,849.05 |
-| IP/USDT:USDT | +19.38% | $4,680,334.18 |
-| IDOL/USDT:USDT | +14.11% | $1,634,544.40 |
-| BEAT/USDT:USDT | +13.05% | $36,145,900.35 |
+| G/USDT:USDT | +27.00% | $4,285,737.58 |
+| AIN/USDT:USDT | +26.35% | $2,266,773.42 |
+| IP/USDT:USDT | +20.07% | $4,783,513.08 |
+| IDOL/USDT:USDT | +17.71% | $1,643,468.27 |
+| BEAT/USDT:USDT | +13.81% | $36,446,952.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.68% | +5.05% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.27% | +2.65% |
-| BSB/USDT:USDT | below_1h_threshold | +1.15% | +2.52% |
-| UB/USDT:USDT | below_1h_threshold | +0.95% | +2.32% |
-| SLBSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +1.90% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.39% | +3.60% |
+| AIN/USDT:USDT | below_1h_threshold | +2.11% | +3.32% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.82% | +3.03% |
+| ARX/USDT:USDT | below_1h_threshold | +1.20% | +2.41% |
+| BSB/USDT:USDT | below_1h_threshold | +1.02% | +2.23% |
 
 ## 6. 次に見るべき不足
 
