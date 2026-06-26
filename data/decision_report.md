@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T19:01:43.566714+00:00
+- generated_at: 2026-06-26T19:09:48.372155+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7648**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T19:01:38.981316+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=59611.0
-- Funnel: target 806 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-26T19:09:43.789518+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=59854.9
+- Funnel: target 806 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUNDIX/USDT:USDT | +15.24% | $1,527,049.80 |
-| VELVET/USDT:USDT | +9.51% | $19,008,290.92 |
-| JTO/USDT:USDT | +8.59% | $9,578,276.46 |
-| ICNT/USDT:USDT | +7.07% | $3,454,065.70 |
-| IDOL/USDT:USDT | +6.23% | $1,106,749.44 |
+| PUNDIX/USDT:USDT | +15.48% | $1,555,971.26 |
+| JTO/USDT:USDT | +9.06% | $9,749,504.29 |
+| SLX/USDT:USDT | +8.13% | $11,721,787.48 |
+| VELVET/USDT:USDT | +7.29% | $19,248,313.83 |
+| IDOL/USDT:USDT | +6.27% | $1,108,471.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICNT/USDT:USDT | below_1h_threshold | +3.17% | +3.23% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.17% | +1.24% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.37% | +0.43% |
-| TIA/USDT:USDT | below_1h_threshold | +0.37% | +0.43% |
-| SYN/USDT:USDT | below_1h_threshold | +0.33% | +0.39% |
+| SLX/USDT:USDT | below_1h_threshold | +1.96% | +1.61% |
+| INJ/USDT:USDT | below_1h_threshold | +1.47% | +1.13% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.46% | +1.12% |
+| FOGO/USDT:USDT | below_1h_threshold | +1.33% | +0.98% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.30% | +0.95% |
 
 ## 6. 次に見るべき不足
 
