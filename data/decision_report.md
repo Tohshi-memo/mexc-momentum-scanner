@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-26T14:51:04.493911+00:00
+- generated_at: 2026-06-26T14:59:43.253383+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7636**
+- closed shadow trades: **7637**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7636, expectancy=-0.04%
+- 全期間 MARKET基準: n=7637, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=-0.27%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,18 +21,18 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_5PCT | 6/20 | 30.0% | +0.95% | **+0.29%** |
 | LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
+| LIMIT_5PCT | 5/20 | 25.0% | +0.95% | **+0.24%** |
 | LIMIT_4PCT | 13/20 | 65.0% | +0.00% | **+0.00%** |
 | LIMIT_2PCT | 17/20 | 85.0% | -0.04% | **-0.03%** |
-| LIMIT_FIB1272 | 6/20 | 30.0% | -0.61% | **-0.18%** |
+| LIMIT_FIB1272 | 6/20 | 30.0% | -0.41% | **-0.12%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.25% | **+1.25%** |
-| ASK_LONG | 20/20 | 100.0% | +1.15% | **+1.15%** |
+| ASK_LONG | 20/20 | 100.0% | +1.13% | **+1.13%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
 | LIMIT_1PCT_LONG | 13/20 | 65.0% | +0.33% | **+0.21%** |
 | LIMIT_8PCT_LONG | 5/20 | 25.0% | +0.00% | **+0.00%** |
@@ -46,47 +46,47 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$231.38** / 初期 $100.00 (+131.38%)
-- 確定: 2161件 (Win 640 / Loss 715 / Flat 806) / skip 2036件
-- 成長率目線: 平均log +0.000388 / 幾何平均 +0.039% per trade / maxDD +8.13%
+- 残高: **$232.54** / 初期 $100.00 (+132.54%)
+- 確定: 2162件 (Win 641 / Loss 715 / Flat 806) / skip 2036件
+- 成長率目線: 平均log +0.000390 / 幾何平均 +0.039% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ESPORTS/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $231.38
+- 最新: ESPORTS/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $232.54
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$107.60** / 初期 $100.00 (+7.60%)
-- 確定: 382件 (Win 103 / Loss 100 / Flat 179) / skip 665件
+- 確定: 382件 (Win 103 / Loss 100 / Flat 179) / skip 666件
 - 成長率目線: 平均log +0.000192 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AIN/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $107.60
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T14:50:54.655517+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=59737.9
-- Funnel: target 806 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-26T14:59:33.058363+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.85% price=59637.8
+- Funnel: target 806 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +69.47% | $6,846,145.42 |
-| ICNT/USDT:USDT | +43.99% | $3,162,250.99 |
-| AGLD/USDT:USDT | +34.64% | $1,199,497.06 |
-| VELVET/USDT:USDT | +26.73% | $9,440,990.01 |
-| BEAT/USDT:USDT | +20.82% | $49,845,671.37 |
+| MAGMA/USDT:USDT | +69.35% | $7,007,811.23 |
+| CAP/USDT:USDT | +47.35% | $1,109,276.67 |
+| ICNT/USDT:USDT | +44.60% | $3,172,532.86 |
+| AGLD/USDT:USDT | +34.32% | $1,231,229.43 |
+| BEAT/USDT:USDT | +21.22% | $50,110,891.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JTO/USDT:USDT | below_1h_threshold | +3.69% | +4.37% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.76% | +3.44% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.61% | +3.29% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.48% | +3.16% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +2.33% |
+| JTO/USDT:USDT | below_1h_threshold | +3.97% | +4.81% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.33% | +4.18% |
+| ICNT/USDT:USDT | below_1h_threshold | +3.09% | +3.93% |
+| LIT/USDT:USDT | below_1h_threshold | +2.68% | +3.53% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.32% | +3.17% |
 
 ## 6. 次に見るべき不足
 
