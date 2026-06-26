@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T08:36:29.875290+00:00
+- generated_at: 2026-06-26T08:45:32.523966+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7616**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T08:36:24.815604+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=60149.3
-- Funnel: target 810 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.9 >= 65=1, 4h RSI 69.4 >= 65=1
+- 更新: 2026-06-26T08:45:27.569976+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.50% price=60188.8
+- Funnel: target 810 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.8 >= 65=1, 4h RSI 69.0 >= 65=1, 4h RSI 72.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ICNT/USDT:USDT | +38.37% | $1,143,204.99 |
-| G/USDT:USDT | +33.09% | $8,792,831.80 |
-| AIN/USDT:USDT | +30.00% | $5,684,267.30 |
-| BAS/USDT:USDT | +27.35% | $6,674,590.21 |
-| BEAT/USDT:USDT | +24.07% | $42,980,998.01 |
+| ICNT/USDT:USDT | +37.40% | $1,169,144.20 |
+| G/USDT:USDT | +33.71% | $8,930,703.09 |
+| AIN/USDT:USDT | +27.24% | $5,738,836.48 |
+| BAS/USDT:USDT | +26.05% | $6,717,974.67 |
+| BEAT/USDT:USDT | +23.31% | $43,377,519.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +4.94% | +5.50% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.25% | +3.81% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.86% | +3.43% |
-| UB/USDT:USDT | below_1h_threshold | +2.50% | +3.06% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.40% | +2.96% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.24% | +3.75% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.13% | +3.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +2.48% |
+| UB/USDT:USDT | below_1h_threshold | +1.73% | +2.24% |
+| INJ/USDT:USDT | below_1h_threshold | +1.21% | +1.71% |
 
 ## 6. 次に見るべき不足
 
