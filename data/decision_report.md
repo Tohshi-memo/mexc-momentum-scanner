@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T22:37:42.081302+00:00
+- generated_at: 2026-06-26T22:45:51.854443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7648**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T22:37:37.464115+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=59857.1
+- 更新: 2026-06-26T22:45:47.224238+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=59907.7
 - Funnel: target 806 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUNDIX/USDT:USDT | +10.24% | $1,936,202.88 |
-| O/USDT:USDT | +9.66% | $5,078,631.93 |
-| VELVET/USDT:USDT | +7.26% | $26,773,245.63 |
-| AGLD/USDT:USDT | +6.81% | $4,553,862.37 |
-| BAS/USDT:USDT | +6.61% | $2,586,451.60 |
+| PUNDIX/USDT:USDT | +11.46% | $1,950,099.41 |
+| VELVET/USDT:USDT | +8.97% | $26,917,059.09 |
+| O/USDT:USDT | +6.99% | $5,189,388.38 |
+| NES/USDT:USDT | +6.87% | $2,154,137.09 |
+| AGLD/USDT:USDT | +6.56% | $4,584,889.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGLD/USDT:USDT | below_1h_threshold | +4.09% | +4.14% |
-| BICO/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.17% | +2.22% |
-| O/USDT:USDT | below_1h_threshold | +2.06% | +2.11% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.67% | +1.72% |
+| AGLD/USDT:USDT | below_1h_threshold | +3.90% | +3.86% |
+| BICO/USDT:USDT | below_1h_threshold | +3.30% | +3.26% |
+| AVAX/USDT:USDT | below_1h_threshold | +3.04% | +3.01% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.63% | +2.60% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.33% | +2.30% |
 
 ## 6. 次に見るべき不足
 
