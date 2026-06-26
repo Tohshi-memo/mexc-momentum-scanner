@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T04:16:10.452448+00:00
+- generated_at: 2026-06-26T04:25:23.522647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7604**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T04:16:05.820251+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=59883.9
+- 更新: 2026-06-26T04:25:19.130594+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=59959.2
 - Funnel: target 810 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +30.60% | $2,616,295.19 |
-| G/USDT:USDT | +30.50% | $5,009,017.07 |
-| BEAT/USDT:USDT | +19.34% | $37,369,723.01 |
-| IP/USDT:USDT | +18.94% | $5,644,227.31 |
-| IDOL/USDT:USDT | +17.98% | $1,676,423.61 |
+| AIN/USDT:USDT | +33.67% | $2,690,997.33 |
+| G/USDT:USDT | +30.78% | $5,068,486.37 |
+| BEAT/USDT:USDT | +18.28% | $37,655,078.68 |
+| IDOL/USDT:USDT | +18.12% | $1,679,623.18 |
+| IP/USDT:USDT | +16.81% | $5,760,524.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| G/USDT:USDT | below_1h_threshold | +1.36% | +1.58% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.14% | +1.36% |
-| BICO/USDT:USDT | below_1h_threshold | +1.11% | +1.33% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.06% | +1.29% |
-| HEI/USDT:USDT | below_1h_threshold | +0.60% | +0.83% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.31% | +4.41% |
+| BAS/USDT:USDT | below_1h_threshold | +2.53% | +2.63% |
+| G/USDT:USDT | below_1h_threshold | +1.58% | +1.67% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.04% | +1.14% |
+| AIN/USDT:USDT | below_1h_threshold | +0.98% | +1.08% |
 
 ## 6. 次に見るべき不足
 
