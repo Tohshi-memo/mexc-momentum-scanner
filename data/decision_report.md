@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T15:07:59.350223+00:00
+- generated_at: 2026-06-26T15:16:00.081877+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7637**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T15:07:54.803542+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=59754.0
+- 更新: 2026-06-26T15:15:55.528258+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=59796.5
 - Funnel: target 806 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +69.24% | $7,188,511.37 |
-| ICNT/USDT:USDT | +45.94% | $3,184,113.40 |
-| CAP/USDT:USDT | +41.55% | $1,388,301.52 |
-| AGLD/USDT:USDT | +35.82% | $1,208,474.99 |
-| VELVET/USDT:USDT | +25.93% | $9,793,566.41 |
+| MAGMA/USDT:USDT | +71.17% | $7,389,280.97 |
+| CAP/USDT:USDT | +47.39% | $1,493,846.90 |
+| ICNT/USDT:USDT | +44.60% | $3,200,032.02 |
+| AGLD/USDT:USDT | +37.94% | $1,233,912.50 |
+| VELVET/USDT:USDT | +24.10% | $9,925,384.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_relative_strength | +5.18% | +4.87% |
-| BAS/USDT:USDT | below_1h_threshold | +2.67% | +2.36% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.51% | +2.20% |
-| AIN/USDT:USDT | below_1h_threshold | +1.86% | +1.55% |
-| AGLD/USDT:USDT | below_1h_threshold | +1.47% | +1.16% |
+| BAS/USDT:USDT | below_1h_threshold | +4.98% | +4.60% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.43% | +3.04% |
+| CAP/USDT:USDT | below_1h_threshold | +3.36% | +2.98% |
+| AGLD/USDT:USDT | below_1h_threshold | +2.99% | +2.61% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.61% | +2.23% |
 
 ## 6. 次に見るべき不足
 
