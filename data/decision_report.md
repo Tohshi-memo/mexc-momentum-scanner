@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-26T23:02:33.119282+00:00
+- generated_at: 2026-06-26T23:10:41.095398+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7649**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-26T23:02:28.446849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=60009.7
+- 更新: 2026-06-26T23:10:36.553200+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=60042.4
 - Funnel: target 806 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUNDIX/USDT:USDT | +12.31% | $1,958,800.31 |
-| VELVET/USDT:USDT | +10.54% | $26,943,513.75 |
-| BAS/USDT:USDT | +9.14% | $2,574,470.36 |
-| AGLD/USDT:USDT | +9.13% | $4,692,182.26 |
-| O/USDT:USDT | +8.09% | $5,199,604.27 |
+| PUNDIX/USDT:USDT | +11.46% | $1,960,515.62 |
+| O/USDT:USDT | +8.73% | $5,267,175.56 |
+| VELVET/USDT:USDT | +7.67% | $27,210,593.92 |
+| AGLD/USDT:USDT | +7.16% | $4,720,966.99 |
+| PUMPFUN/USDT:USDT | +7.15% | $6,290,295.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
-| BAS/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| PORTAL/USDT:USDT | below_1h_threshold | +0.47% | +0.47% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
+| SLX/USDT:USDT | below_1h_threshold | +2.36% | +2.30% |
+| O/USDT:USDT | below_1h_threshold | +2.33% | +2.27% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.75% | +1.69% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.66% | +0.60% |
 
 ## 6. 次に見るべき不足
 
