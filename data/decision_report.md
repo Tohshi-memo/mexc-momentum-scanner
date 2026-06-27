@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-27T05:39:07.966096+00:00
+- generated_at: 2026-06-27T05:47:35.780205+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7672**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T05:39:03.249329+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=60189.8
+- 更新: 2026-06-27T05:47:30.949960+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=60219.4
 - Funnel: target 806 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.3 >= 65=1
+- Strict後reject: 4h RSI 85.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +44.20% | $42,264,851.87 |
-| MYX/USDT:USDT | +26.12% | $4,547,671.95 |
-| PUNDIX/USDT:USDT | +25.73% | $5,751,577.71 |
-| SLX/USDT:USDT | +19.10% | $10,805,407.23 |
-| SYRUP/USDT:USDT | +16.25% | $1,246,271.00 |
+| VELVET/USDT:USDT | +45.77% | $42,883,430.93 |
+| MYX/USDT:USDT | +27.54% | $4,606,400.38 |
+| PUNDIX/USDT:USDT | +25.24% | $5,778,781.10 |
+| SYRUP/USDT:USDT | +16.58% | $1,251,426.68 |
+| ARX/USDT:USDT | +16.36% | $2,836,908.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +1.93% | +1.97% |
-| SNT/USDT:USDT | below_1h_threshold | +1.54% | +1.58% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.46% | +1.51% |
-| RE/USDT:USDT | below_1h_threshold | +1.28% | +1.33% |
-| PAYPSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.31% |
+| O/USDT:USDT | below_1h_threshold | +2.13% | +2.13% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
+| RE/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
+| SNT/USDT:USDT | below_1h_threshold | +1.24% | +1.24% |
+| WIF/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
 
 ## 6. 次に見るべき不足
 
