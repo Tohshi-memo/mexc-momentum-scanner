@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-27T05:56:13.753454+00:00
+- generated_at: 2026-06-27T06:04:20.423616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7672**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T05:56:08.910772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=60215.4
-- Funnel: target 806 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-27T06:04:15.819135+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=60170.7
+- Funnel: target 806 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +42.47% | $43,953,128.66 |
-| MYX/USDT:USDT | +31.27% | $4,707,179.25 |
-| PUNDIX/USDT:USDT | +25.60% | $5,807,886.76 |
-| ARX/USDT:USDT | +18.24% | $2,875,678.60 |
-| SLX/USDT:USDT | +16.11% | $10,924,141.64 |
+| VELVET/USDT:USDT | +45.82% | $44,618,721.98 |
+| MYX/USDT:USDT | +32.04% | $4,739,002.84 |
+| PUNDIX/USDT:USDT | +27.07% | $5,829,462.28 |
+| SLX/USDT:USDT | +16.49% | $10,391,142.80 |
+| SYRUP/USDT:USDT | +16.41% | $1,280,571.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.19% | +2.19% |
-| MYX/USDT:USDT | below_1h_threshold | +1.49% | +1.49% |
-| SNT/USDT:USDT | below_1h_threshold | +1.38% | +1.38% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
-| TIA/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| SLX/USDT:USDT | below_1h_threshold | +1.01% | +1.07% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.75% | +0.82% |
+| RE/USDT:USDT | below_1h_threshold | +0.57% | +0.64% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.46% | +0.52% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.38% | +0.45% |
 
 ## 6. 次に見るべき不足
 
