@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-27T06:21:55.745060+00:00
+- generated_at: 2026-06-27T06:30:31.159632+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7672**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T06:21:51.163832+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=60165.4
-- Funnel: target 806 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-27T06:30:23.252727+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=60178.9
+- Funnel: target 806 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +48.36% | $47,433,585.49 |
-| MYX/USDT:USDT | +36.03% | $6,634,486.02 |
-| PUNDIX/USDT:USDT | +26.70% | $5,913,857.27 |
-| SLX/USDT:USDT | +17.30% | $10,526,262.98 |
-| SYRUP/USDT:USDT | +16.66% | $1,316,868.48 |
+| VELVET/USDT:USDT | +48.59% | $48,376,608.30 |
+| MYX/USDT:USDT | +45.55% | $7,114,555.54 |
+| PUNDIX/USDT:USDT | +26.70% | $5,938,785.48 |
+| SYRUP/USDT:USDT | +17.74% | $1,332,310.38 |
+| SLX/USDT:USDT | +17.35% | $10,588,985.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +3.22% | +3.29% |
-| RE/USDT:USDT | below_1h_threshold | +2.92% | +2.99% |
-| SLX/USDT:USDT | below_1h_threshold | +1.71% | +1.79% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.54% | +1.61% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.34% | +1.41% |
+| BICO/USDT:USDT | below_1h_threshold | +1.90% | +1.94% |
+| SYN/USDT:USDT | below_1h_threshold | +1.82% | +1.87% |
+| SLX/USDT:USDT | below_1h_threshold | +1.76% | +1.81% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.66% | +1.71% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.59% | +1.64% |
 
 ## 6. 次に見るべき不足
 
