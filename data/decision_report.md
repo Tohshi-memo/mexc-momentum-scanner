@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-27T00:00:26.776828+00:00
+- generated_at: 2026-06-27T00:08:50.268995+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7652**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T00:00:19.778027+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=60071.9
-- Funnel: target 806 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-27T00:08:45.631548+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=60100.0
+- Funnel: target 806 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +11.89% | $2,193,676.01 |
-| BICO/USDT:USDT | +9.83% | $1,492,650.64 |
-| PUNDIX/USDT:USDT | +9.51% | $2,011,200.89 |
-| O/USDT:USDT | +7.78% | $5,389,516.73 |
-| BEAT/USDT:USDT | +7.66% | $52,722,615.55 |
+| NES/USDT:USDT | +15.36% | $2,132,663.57 |
+| VELVET/USDT:USDT | +10.21% | $27,853,849.20 |
+| PUNDIX/USDT:USDT | +8.41% | $2,013,285.22 |
+| SLX/USDT:USDT | +7.47% | $10,215,232.22 |
+| SKYAI/USDT:USDT | +6.42% | $4,086,146.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +4.52% | +4.41% |
-| NES/USDT:USDT | below_1h_threshold | +4.38% | +4.27% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.46% | +2.35% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.14% | +2.03% |
-| FET/USDT:USDT | below_1h_threshold | +2.01% | +1.91% |
+| NES/USDT:USDT | below_1h_threshold | +3.04% | +3.00% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.03% | +1.98% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.91% | +1.86% |
+| SLX/USDT:USDT | below_1h_threshold | +1.29% | +1.24% |
 
 ## 6. 次に見るべき不足
 
