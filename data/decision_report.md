@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-27T09:47:08.994584+00:00
+- generated_at: 2026-06-27T09:55:39.572790+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7687**
+- closed shadow trades: **7688**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7687, expectancy=-0.05%
+- 全期間 MARKET基準: n=7688, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.24%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,7 +32,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
-| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.43% | **+0.97%** |
+| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +2.19% | **+0.87%** |
 | ASK_LONG | 20/20 | 100.0% | +0.87% | **+0.87%** |
 | LIMIT_4PCT_LONG | 8/20 | 40.0% | +2.00% | **+0.80%** |
 | LIMIT_5PCT_LONG | 7/20 | 35.0% | +1.38% | **+0.48%** |
@@ -46,26 +46,26 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$234.86** / 初期 $100.00 (+134.86%)
-- 確定: 2212件 (Win 662 / Loss 737 / Flat 813) / skip 2036件
-- 成長率目線: 平均log +0.000386 / 幾何平均 +0.039% per trade / maxDD +8.13%
+- 残高: **$233.69** / 初期 $100.00 (+133.69%)
+- 確定: 2213件 (Win 662 / Loss 738 / Flat 813) / skip 2036件
+- 成長率目線: 平均log +0.000384 / 幾何平均 +0.038% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $234.86
+- 最新: ESPORTS/USDT:USDT `LIMIT_FIB1272_LONG` SL_HIT account -0.50% 残高後 $233.69
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$108.17** / 初期 $100.00 (+8.17%)
-- 確定: 418件 (Win 114 / Loss 104 / Flat 200) / skip 680件
-- 成長率目線: 平均log +0.000188 / 幾何平均 +0.019% per trade / maxDD +3.03%
+- 確定: 419件 (Win 114 / Loss 104 / Flat 201) / skip 680件
+- 成長率目線: 平均log +0.000187 / 幾何平均 +0.019% per trade / maxDD +3.03%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0468 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: VELVET/USDT:USDT `LIMIT_6PCT` SL_HIT account -0.35% 残高後 $108.17
+- 最新: ESPORTS/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $108.17
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T09:47:03.156389+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=60410.9
-- Funnel: target 806 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-27T09:55:31.399435+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=60384.5
+- Funnel: target 806 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 90.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -73,21 +73,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +90.21% | $85,943,942.66 |
-| MYX/USDT:USDT | +37.06% | $11,464,702.53 |
-| SYRUP/USDT:USDT | +18.40% | $1,933,702.41 |
-| ARX/USDT:USDT | +18.24% | $2,803,112.49 |
-| PUNDIX/USDT:USDT | +17.80% | $6,320,663.95 |
+| VELVET/USDT:USDT | +88.25% | $88,371,562.64 |
+| MYX/USDT:USDT | +38.99% | $11,698,003.35 |
+| SYRUP/USDT:USDT | +19.15% | $1,946,135.97 |
+| PUNDIX/USDT:USDT | +19.02% | $6,326,314.02 |
+| WIF/USDT:USDT | +16.21% | $7,615,228.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.86% | +4.88% |
-| SYN/USDT:USDT | below_1h_threshold | +3.91% | +3.93% |
-| ARX/USDT:USDT | below_1h_threshold | +3.70% | +3.72% |
-| WIF/USDT:USDT | below_1h_threshold | +2.81% | +2.84% |
-| UB/USDT:USDT | below_1h_threshold | +2.21% | +2.23% |
+| UB/USDT:USDT | below_1h_threshold | +4.07% | +4.14% |
+| SYN/USDT:USDT | below_1h_threshold | +3.34% | +3.40% |
+| WIF/USDT:USDT | below_1h_threshold | +3.05% | +3.12% |
+| MYX/USDT:USDT | below_1h_threshold | +3.05% | +3.12% |
+| AGLD/USDT:USDT | below_1h_threshold | +2.49% | +2.56% |
 
 ## 6. 次に見るべき不足
 
