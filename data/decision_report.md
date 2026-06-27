@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-27T02:25:26.578376+00:00
+- generated_at: 2026-06-27T02:33:38.134115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7665**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T02:25:22.062017+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=60274.0
+- 更新: 2026-06-27T02:33:33.399438+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.52% price=60234.2
 - Funnel: target 806 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PUNDIX/USDT:USDT | +39.02% | $4,305,697.11 |
-| MYX/USDT:USDT | +27.28% | $2,862,775.85 |
-| SLX/USDT:USDT | +19.48% | $10,990,329.54 |
-| VELVET/USDT:USDT | +16.76% | $31,406,234.65 |
-| AGLD/USDT:USDT | +15.55% | $7,171,064.97 |
+| PUNDIX/USDT:USDT | +41.82% | $4,387,928.62 |
+| MYX/USDT:USDT | +28.70% | $2,985,854.71 |
+| VELVET/USDT:USDT | +18.46% | $31,706,530.51 |
+| SLX/USDT:USDT | +17.10% | $11,064,989.92 |
+| AGLD/USDT:USDT | +16.74% | $7,223,718.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +3.68% | +3.09% |
-| FOLKS/USDT:USDT | below_1h_threshold | +3.59% | +3.01% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.98% | +2.40% |
-| BICO/USDT:USDT | below_1h_threshold | +2.79% | +2.21% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.22% | +1.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.25% | +2.73% |
+| BICO/USDT:USDT | below_1h_threshold | +3.09% | +2.58% |
+| RE/USDT:USDT | below_1h_threshold | +2.62% | +2.10% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.26% | +1.74% |
+| ARX/USDT:USDT | below_1h_threshold | +1.92% | +1.40% |
 
 ## 6. 次に見るべき不足
 
