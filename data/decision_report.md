@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-27T06:48:04.840389+00:00
+- generated_at: 2026-06-27T06:56:30.696058+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7673**
+- closed shadow trades: **7674**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7673, expectancy=-0.05%
+- 全期間 MARKET基準: n=7674, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.61%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,48 +46,47 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$239.32** / 初期 $100.00 (+139.32%)
-- 確定: 2198件 (Win 660 / Loss 731 / Flat 807) / skip 2036件
-- 成長率目線: 平均log +0.000397 / 幾何平均 +0.040% per trade / maxDD +8.13%
+- 残高: **$238.12** / 初期 $100.00 (+138.12%)
+- 確定: 2199件 (Win 660 / Loss 732 / Flat 807) / skip 2036件
+- 成長率目線: 平均log +0.000395 / 幾何平均 +0.039% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $239.32
+- 最新: MYX/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $238.12
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$108.98** / 初期 $100.00 (+8.98%)
-- 確定: 404件 (Win 111 / Loss 100 / Flat 193) / skip 680件
-- 成長率目線: 平均log +0.000213 / 幾何平均 +0.021% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0964 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: VELVET/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $108.98
+- 残高: **$108.60** / 初期 $100.00 (+8.60%)
+- 確定: 405件 (Win 111 / Loss 101 / Flat 193) / skip 680件
+- 成長率目線: 平均log +0.000204 / 幾何平均 +0.020% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0953 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: MYX/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $108.60
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T06:47:59.960234+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=60425.8
-- Funnel: target 806 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.4 >= 65=1, 4h RSI 66.1 >= 65=1
+- 更新: 2026-06-27T06:56:22.968284+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=60339.9
+- Funnel: target 806 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +48.87% | $50,533,389.76 |
-| MYX/USDT:USDT | +39.51% | $8,132,682.12 |
-| PUNDIX/USDT:USDT | +27.80% | $5,985,333.79 |
-| SYRUP/USDT:USDT | +19.40% | $1,411,476.54 |
-| SLX/USDT:USDT | +17.96% | $10,819,323.20 |
+| VELVET/USDT:USDT | +46.15% | $51,569,103.12 |
+| MYX/USDT:USDT | +35.26% | $8,755,612.57 |
+| PUNDIX/USDT:USDT | +27.31% | $5,996,520.09 |
+| SYRUP/USDT:USDT | +20.14% | $1,449,114.23 |
+| SLX/USDT:USDT | +19.28% | $10,921,258.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_relative_strength | +5.13% | +4.77% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.73% | +2.37% |
-| SYRUP/USDT:USDT | below_1h_threshold | +2.42% | +2.06% |
-| SLX/USDT:USDT | below_1h_threshold | +2.15% | +1.79% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.97% | +1.61% |
+| AGLD/USDT:USDT | below_1h_threshold | +4.65% | +4.44% |
+| SLX/USDT:USDT | below_1h_threshold | +3.34% | +3.12% |
+| SYRUP/USDT:USDT | below_1h_threshold | +3.06% | +2.84% |
+| MYX/USDT:USDT | below_1h_threshold | +2.73% | +2.52% |
+| G/USDT:USDT | below_1h_threshold | +2.47% | +2.25% |
 
 ## 6. 次に見るべき不足
 
