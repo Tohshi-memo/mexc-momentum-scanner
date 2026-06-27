@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-27T14:30:13.538705+00:00
+- generated_at: 2026-06-27T14:39:39.337773+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7696**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T14:30:08.836180+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=60576.8
-- Funnel: target 806 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-27T14:39:31.873561+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=60585.9
+- Funnel: target 806 → liquid 136 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +116.78% | $159,114,949.75 |
-| MYX/USDT:USDT | +30.88% | $17,376,057.78 |
-| SYRUP/USDT:USDT | +29.93% | $3,144,501.04 |
-| SLX/USDT:USDT | +22.17% | $9,102,254.94 |
-| PUNDIX/USDT:USDT | +18.78% | $6,541,206.18 |
+| VELVET/USDT:USDT | +121.58% | $162,017,848.71 |
+| MYX/USDT:USDT | +33.20% | $17,501,278.00 |
+| SYRUP/USDT:USDT | +29.60% | $3,194,352.55 |
+| SLX/USDT:USDT | +23.03% | $9,194,382.71 |
+| PUNDIX/USDT:USDT | +19.39% | $6,554,794.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGLD/USDT:USDT | below_1h_threshold | +4.06% | +4.02% |
-| MYX/USDT:USDT | below_1h_threshold | +3.88% | +3.84% |
-| WIF/USDT:USDT | below_1h_threshold | +2.40% | +2.37% |
-| SLX/USDT:USDT | below_1h_threshold | +2.09% | +2.06% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
+| BICO/USDT:USDT | below_1h_threshold | +4.42% | +4.37% |
+| SLX/USDT:USDT | below_1h_threshold | +2.24% | +2.19% |
+| PUNDIX/USDT:USDT | below_1h_threshold | +2.19% | +2.14% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.95% | +1.90% |
+| WIF/USDT:USDT | below_1h_threshold | +1.70% | +1.65% |
 
 ## 6. 次に見るべき不足
 
