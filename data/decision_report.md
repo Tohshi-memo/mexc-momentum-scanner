@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-27T06:38:45.961225+00:00
+- generated_at: 2026-06-27T06:48:04.840389+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7673**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-27T06:38:40.056471+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=60266.5
-- Funnel: target 806 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.5 >= 65=1
+- 更新: 2026-06-27T06:47:59.960234+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=60425.8
+- Funnel: target 806 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.4 >= 65=1, 4h RSI 66.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +49.20% | $49,757,183.00 |
-| MYX/USDT:USDT | +45.30% | $7,464,718.84 |
-| PUNDIX/USDT:USDT | +26.46% | $5,957,675.91 |
-| SYRUP/USDT:USDT | +18.65% | $1,354,923.39 |
-| SLX/USDT:USDT | +15.91% | $10,703,469.38 |
+| VELVET/USDT:USDT | +48.87% | $50,533,389.76 |
+| MYX/USDT:USDT | +39.51% | $8,132,682.12 |
+| PUNDIX/USDT:USDT | +27.80% | $5,985,333.79 |
+| SYRUP/USDT:USDT | +19.40% | $1,411,476.54 |
+| SLX/USDT:USDT | +17.96% | $10,819,323.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.75% | +3.66% |
-| RE/USDT:USDT | below_1h_threshold | +2.75% | +2.65% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.19% | +2.09% |
-| BICO/USDT:USDT | below_1h_threshold | +1.80% | +1.70% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.78% | +1.68% |
+| SYN/USDT:USDT | below_relative_strength | +5.13% | +4.77% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.73% | +2.37% |
+| SYRUP/USDT:USDT | below_1h_threshold | +2.42% | +2.06% |
+| SLX/USDT:USDT | below_1h_threshold | +2.15% | +1.79% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.97% | +1.61% |
 
 ## 6. 次に見るべき不足
 
