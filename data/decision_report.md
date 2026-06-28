@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T09:46:14.240811+00:00
+- generated_at: 2026-06-28T09:53:17.376023+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7737**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T09:46:06.833666+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=60350.1
+- 更新: 2026-06-28T09:53:10.940760+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=60276.2
 - Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +41.11% | $9,353,380.46 |
-| S/USDT:USDT | +20.93% | $6,718,240.61 |
-| SIREN/USDT:USDT | +19.28% | $1,546,080.51 |
-| LAB/USDT:USDT | +16.86% | $36,831,135.67 |
-| POWR/USDT:USDT | +15.32% | $2,858,565.26 |
+| O/USDT:USDT | +42.28% | $9,624,313.91 |
+| S/USDT:USDT | +21.37% | $6,758,147.09 |
+| POWR/USDT:USDT | +19.98% | $2,886,410.07 |
+| SIREN/USDT:USDT | +19.39% | $1,560,070.37 |
+| LAB/USDT:USDT | +17.73% | $36,891,468.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.87% | +2.85% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.51% | +2.49% |
-| BILL/USDT:USDT | below_1h_threshold | +2.22% | +2.20% |
-| SIREN/USDT:USDT | below_1h_threshold | +1.09% | +1.07% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.17% | +3.27% |
+| POWR/USDT:USDT | below_1h_threshold | +2.96% | +3.06% |
+| BILL/USDT:USDT | below_1h_threshold | +2.53% | +2.63% |
+| UB/USDT:USDT | below_1h_threshold | +1.13% | +1.24% |
+| HOT/USDT:USDT | below_1h_threshold | +1.10% | +1.21% |
 
 ## 6. 次に見るべき不足
 
