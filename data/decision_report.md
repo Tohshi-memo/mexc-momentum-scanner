@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T10:36:40.125688+00:00
+- generated_at: 2026-06-28T10:45:25.325595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7740**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T10:36:34.208986+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=60058.4
+- 更新: 2026-06-28T10:45:20.418320+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=60110.4
 - Funnel: target 805 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1
+- Strict後reject: 4h RSI 77.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +29.93% | $10,944,635.69 |
-| ACT/USDT:USDT | +25.59% | $1,819,269.19 |
-| SIREN/USDT:USDT | +20.08% | $1,649,927.29 |
-| S/USDT:USDT | +18.88% | $7,236,414.45 |
-| BASED/USDT:USDT | +16.63% | $1,814,238.50 |
+| O/USDT:USDT | +31.77% | $11,084,905.92 |
+| ACT/USDT:USDT | +28.58% | $1,938,268.78 |
+| S/USDT:USDT | +19.81% | $7,283,971.30 |
+| SIREN/USDT:USDT | +18.62% | $1,664,961.72 |
+| BASED/USDT:USDT | +16.31% | $1,833,206.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.12% | +2.40% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.59% | +1.87% |
-| TIA/USDT:USDT | below_1h_threshold | +0.78% | +1.06% |
-| JTO/USDT:USDT | below_1h_threshold | +0.58% | +0.86% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.55% | +0.83% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.21% | +3.41% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.33% | +2.53% |
+| TIA/USDT:USDT | below_1h_threshold | +2.17% | +2.37% |
+| JTO/USDT:USDT | below_1h_threshold | +1.09% | +1.29% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.72% | +0.92% |
 
 ## 6. 次に見るべき不足
 
