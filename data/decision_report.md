@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T17:22:36.269561+00:00
+- generated_at: 2026-06-28T17:31:19.267180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7765**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T17:22:31.513269+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=59608.0
+- 更新: 2026-06-28T17:31:14.487123+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=59574.8
 - Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +12.63% | $1,663,910.05 |
-| BAS/USDT:USDT | +4.33% | $5,667,876.20 |
-| RAVE/USDT:USDT | +2.41% | $12,112,287.55 |
-| MAGMA/USDT:USDT | +2.25% | $1,304,289.22 |
-| SLX/USDT:USDT | +1.94% | $18,646,527.51 |
+| NES/USDT:USDT | +9.24% | $1,762,259.90 |
+| BAS/USDT:USDT | +5.03% | $5,685,894.98 |
+| SLX/USDT:USDT | +2.64% | $18,670,387.13 |
+| MAGMA/USDT:USDT | +2.48% | $1,309,492.47 |
+| RAVE/USDT:USDT | +2.45% | $12,150,743.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +1.63% | +1.71% |
-| SLX/USDT:USDT | below_1h_threshold | +1.23% | +1.31% |
-| NES/USDT:USDT | below_1h_threshold | +1.08% | +1.16% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.26% | +0.34% |
+| BAS/USDT:USDT | below_1h_threshold | +2.29% | +2.43% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.97% | +2.11% |
+| SLX/USDT:USDT | below_1h_threshold | +1.73% | +1.86% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.25% | +1.38% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.64% | +0.78% |
 
 ## 6. 次に見るべき不足
 
