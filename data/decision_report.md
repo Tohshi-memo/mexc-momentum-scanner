@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T17:05:06.475942+00:00
+- generated_at: 2026-06-28T17:13:52.867682+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7765**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T17:05:01.827157+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=59668.6
+- 更新: 2026-06-28T17:13:48.178133+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=59610.3
 - Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +12.00% | $1,603,459.43 |
-| RAVE/USDT:USDT | +4.26% | $11,797,405.43 |
-| PUMPFUN/USDT:USDT | +3.16% | $11,691,243.55 |
-| BAS/USDT:USDT | +3.01% | $5,631,364.96 |
-| O/USDT:USDT | +2.30% | $13,934,136.09 |
+| NES/USDT:USDT | +15.04% | $1,634,428.59 |
+| BAS/USDT:USDT | +3.02% | $5,645,679.60 |
+| RIF/USDT:USDT | +1.97% | $1,494,494.32 |
+| M/USDT:USDT | +1.70% | $1,869,326.90 |
+| FOLKS/USDT:USDT | +1.60% | $1,093,284.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.69% | +0.67% |
-| NES/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.40% | +0.38% |
-| BAS/USDT:USDT | below_1h_threshold | +0.33% | +0.31% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.32% | +0.30% |
+| NES/USDT:USDT | below_1h_threshold | +3.30% | +3.38% |
+| SLX/USDT:USDT | below_1h_threshold | +0.88% | +0.96% |
+| BAS/USDT:USDT | below_1h_threshold | +0.34% | +0.42% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.29% | +0.37% |
+| M/USDT:USDT | below_1h_threshold | +0.23% | +0.31% |
 
 ## 6. 次に見るべき不足
 
