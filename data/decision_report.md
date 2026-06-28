@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T00:51:49.305030+00:00
+- generated_at: 2026-06-28T00:57:06.647043+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7722**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T00:51:41.418496+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=60126.1
-- Funnel: target 806 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-28T00:57:00.783325+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=60129.2
+- Funnel: target 806 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAS/USDT:USDT | +17.26% | $2,536,376.09 |
-| LAB/USDT:USDT | +14.20% | $42,892,436.46 |
-| SLX/USDT:USDT | +9.45% | $19,148,028.48 |
-| S/USDT:USDT | +8.66% | $4,551,327.66 |
-| SIREN/USDT:USDT | +7.46% | $1,196,984.70 |
+| BAS/USDT:USDT | +18.23% | $2,553,209.76 |
+| LAB/USDT:USDT | +13.68% | $43,008,178.78 |
+| SLX/USDT:USDT | +10.04% | $19,151,201.02 |
+| S/USDT:USDT | +8.86% | $4,556,546.69 |
+| BEAT/USDT:USDT | +7.59% | $44,531,142.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +3.95% | +3.74% |
-| LAB/USDT:USDT | below_1h_threshold | +3.79% | +3.58% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.15% | +2.94% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.07% | +2.86% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.70% | +2.49% |
+| BAS/USDT:USDT | below_1h_threshold | +4.65% | +4.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.20% | +3.98% |
+| LAB/USDT:USDT | below_1h_threshold | +3.43% | +3.21% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.34% | +3.12% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.73% | +2.51% |
 
 ## 6. 次に見るべき不足
 
