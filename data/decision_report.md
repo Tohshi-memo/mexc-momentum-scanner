@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T15:08:34.468541+00:00
+- generated_at: 2026-06-28T15:17:27.425881+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7761**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T15:08:27.628312+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=60044.5
-- Funnel: target 805 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-28T15:17:20.228200+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=60013.6
+- Funnel: target 805 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MANTA/USDT:USDT | +83.90% | $6,206,066.74 |
-| ACT/USDT:USDT | +63.79% | $9,826,516.27 |
-| S/USDT:USDT | +28.87% | $9,811,986.87 |
-| VELVET/USDT:USDT | +24.46% | $223,118,202.39 |
-| RAVE/USDT:USDT | +20.79% | $10,757,231.69 |
+| MANTA/USDT:USDT | +78.95% | $7,012,311.40 |
+| ACT/USDT:USDT | +56.80% | $10,010,417.04 |
+| S/USDT:USDT | +32.47% | $9,849,016.45 |
+| VELVET/USDT:USDT | +25.66% | $224,239,562.01 |
+| RAVE/USDT:USDT | +19.95% | $10,798,835.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MANTA/USDT:USDT | below_1h_threshold | +2.67% | +2.59% |
-| O/USDT:USDT | below_1h_threshold | +1.60% | +1.52% |
-| BILL/USDT:USDT | below_1h_threshold | +1.60% | +1.52% |
-| UB/USDT:USDT | below_1h_threshold | +1.38% | +1.30% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.12% | +1.04% |
+| OPN/USDT:USDT | below_1h_threshold | +3.34% | +3.31% |
+| S/USDT:USDT | below_1h_threshold | +2.33% | +2.30% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.95% | +1.92% |
+| UB/USDT:USDT | below_1h_threshold | +1.84% | +1.81% |
 
 ## 6. 次に見るべき不足
 
