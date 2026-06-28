@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T13:14:22.979169+00:00
+- generated_at: 2026-06-28T13:23:01.707193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7756**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T13:14:17.381995+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=60083.9
+- 更新: 2026-06-28T13:22:57.012115+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=60099.9
 - Funnel: target 805 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACT/USDT:USDT | +79.90% | $7,761,527.96 |
-| VELVET/USDT:USDT | +25.21% | $238,971,517.75 |
-| S/USDT:USDT | +23.41% | $8,683,779.06 |
-| SYN/USDT:USDT | +21.89% | $8,668,784.93 |
-| O/USDT:USDT | +19.30% | $13,471,255.15 |
+| ACT/USDT:USDT | +76.40% | $7,949,578.33 |
+| S/USDT:USDT | +22.83% | $8,737,830.05 |
+| VELVET/USDT:USDT | +22.12% | $240,440,705.05 |
+| SYN/USDT:USDT | +22.07% | $8,738,831.48 |
+| RAVE/USDT:USDT | +17.83% | $10,102,213.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.29% | +4.60% |
-| S/USDT:USDT | below_1h_threshold | +2.18% | +2.49% |
-| ZEREBRO/USDT:USDT | below_1h_threshold | +1.86% | +2.16% |
-| HNT/USDT:USDT | below_1h_threshold | +0.60% | +0.91% |
-| BAS/USDT:USDT | below_1h_threshold | +0.49% | +0.80% |
+| SYN/USDT:USDT | below_1h_threshold | +4.47% | +4.75% |
+| CAP/USDT:USDT | below_1h_threshold | +1.81% | +2.10% |
+| S/USDT:USDT | below_1h_threshold | +1.69% | +1.97% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.68% | +1.96% |
+| JTO/USDT:USDT | below_1h_threshold | +1.00% | +1.28% |
 
 ## 6. 次に見るべき不足
 
