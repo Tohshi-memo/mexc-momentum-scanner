@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T00:09:16.440934+00:00
+- generated_at: 2026-06-28T00:17:50.076338+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7719**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T00:09:11.788404+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=60103.4
+- 更新: 2026-06-28T00:17:45.494862+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=60124.9
 - Funnel: target 806 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BAS/USDT:USDT | +14.42% | $2,356,784.12 |
-| LAB/USDT:USDT | +11.34% | $41,891,466.74 |
-| SLX/USDT:USDT | +10.39% | $18,835,486.56 |
-| VELVET/USDT:USDT | +9.33% | $245,744,928.96 |
-| SNX/USDT:USDT | +7.44% | $1,224,271.19 |
+| BAS/USDT:USDT | +16.57% | $2,387,392.28 |
+| LAB/USDT:USDT | +13.16% | $42,229,945.25 |
+| SLX/USDT:USDT | +12.82% | $18,959,082.60 |
+| SNX/USDT:USDT | +8.42% | $1,238,644.45 |
+| VELVET/USDT:USDT | +8.18% | $247,346,497.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +3.51% | +3.33% |
-| UB/USDT:USDT | below_1h_threshold | +2.65% | +2.48% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.20% | +2.02% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +1.81% |
-| ARX/USDT:USDT | below_1h_threshold | +1.44% | +1.27% |
+| UB/USDT:USDT | below_relative_strength | +5.11% | +4.90% |
+| M/USDT:USDT | below_1h_threshold | +3.96% | +3.75% |
+| SLX/USDT:USDT | below_1h_threshold | +3.40% | +3.19% |
+| BAS/USDT:USDT | below_1h_threshold | +3.18% | +2.97% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.92% | +2.71% |
 
 ## 6. 次に見るべき不足
 
