@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-28T22:50:12.124951+00:00
+- generated_at: 2026-06-28T22:58:54.709088+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7775**
+- closed shadow trades: **7776**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.73% / filled 20/20。**
-- 全期間 MARKET基準: n=7775, expectancy=-0.05%
+- 全期間 MARKET基準: n=7776, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=+2.73%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.73% | **+2.73%** |
 | ASK | 20/20 | 100.0% | +2.69% | **+2.69%** |
-| LIMIT_BB3S | 7/14 | 50.0% | +4.40% | **+2.20%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +1.99% | **+1.59%** |
+| LIMIT_BB3S | 6/14 | 42.9% | +3.80% | **+1.63%** |
 | LIMIT_2PCT | 13/20 | 65.0% | +2.06% | **+1.34%** |
+| LIMIT_FIB1272 | 8/20 | 40.0% | +3.20% | **+1.28%** |
 
 ### シャドウ上位 LONG
 
@@ -47,45 +47,45 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$260.10** / 初期 $100.00 (+160.10%)
-- 確定: 2279件 (Win 694 / Loss 761 / Flat 824) / skip 2057件
+- 確定: 2280件 (Win 694 / Loss 761 / Flat 825) / skip 2057件
 - 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CELO/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $260.10
+- 最新: OPN/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $260.10
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.45** / 初期 $100.00 (+6.45%)
-- 確定: 455件 (Win 120 / Loss 119 / Flat 216) / skip 731件
+- 確定: 455件 (Win 120 / Loss 119 / Flat 216) / skip 732件
 - 成長率目線: 平均log +0.000137 / 幾何平均 +0.014% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MYX/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $106.45
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T22:50:07.293867+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=59175.3
-- Funnel: target 805 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-28T22:58:48.979548+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=59026.1
+- Funnel: target 805 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +13.49% | $2,610,771.32 |
-| BAS/USDT:USDT | +9.27% | $5,650,633.04 |
-| RAVE/USDT:USDT | +6.98% | $13,055,000.02 |
-| BEAT/USDT:USDT | +5.97% | $32,825,647.78 |
-| SLX/USDT:USDT | +5.87% | $10,035,853.39 |
+| NES/USDT:USDT | +14.35% | $2,630,056.31 |
+| RAVE/USDT:USDT | +8.12% | $13,137,987.69 |
+| BAS/USDT:USDT | +7.85% | $5,679,440.76 |
+| SLX/USDT:USDT | +5.61% | $10,053,693.06 |
+| BEAT/USDT:USDT | +5.54% | $32,921,820.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CELO/USDT:USDT | below_1h_threshold | +2.82% | +3.23% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.95% | +2.36% |
-| FET/USDT:USDT | below_1h_threshold | +1.67% | +2.08% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.99% | +1.40% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.35% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.02% | +3.68% |
+| SYN/USDT:USDT | below_1h_threshold | +2.86% | +3.52% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.17% | +2.83% |
+| CELO/USDT:USDT | below_1h_threshold | +2.02% | +2.68% |
+| UB/USDT:USDT | below_1h_threshold | +0.66% | +1.32% |
 
 ## 6. 次に見るべき不足
 
