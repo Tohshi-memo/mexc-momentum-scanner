@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T07:46:22.682114+00:00
+- generated_at: 2026-06-28T07:53:05.369054+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7736**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T07:46:16.374136+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=60197.4
+- 更新: 2026-06-28T07:53:01.012421+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=60182.7
 - Funnel: target 806 → liquid 121 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.0 >= 65=1, 4h RSI 67.7 >= 65=1, 4h RSI 69.5 >= 65=1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1, 4h RSI 67.7 >= 65=1, 4h RSI 66.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +29.53% | $6,757,303.18 |
-| S/USDT:USDT | +23.46% | $5,761,806.73 |
-| SIREN/USDT:USDT | +18.71% | $1,398,984.33 |
-| LAB/USDT:USDT | +17.53% | $38,474,320.14 |
-| POWR/USDT:USDT | +16.63% | $2,291,404.83 |
+| O/USDT:USDT | +31.14% | $6,888,229.80 |
+| S/USDT:USDT | +23.17% | $5,813,893.36 |
+| SIREN/USDT:USDT | +18.74% | $1,411,913.71 |
+| LAB/USDT:USDT | +17.98% | $38,522,709.46 |
+| POWR/USDT:USDT | +15.53% | $2,296,578.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.79% | +4.41% |
-| RAVE/USDT:USDT | below_1h_threshold | +3.82% | +3.44% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.02% | +1.64% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.84% | +1.46% |
-| SLX/USDT:USDT | below_1h_threshold | +1.72% | +1.34% |
+| S/USDT:USDT | below_relative_strength | +5.29% | +4.93% |
+| SYN/USDT:USDT | below_relative_strength | +5.18% | +4.82% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.67% | +3.32% |
+| CAP/USDT:USDT | below_1h_threshold | +2.37% | +2.02% |
+| SLX/USDT:USDT | below_1h_threshold | +2.27% | +1.92% |
 
 ## 6. 次に見るべき不足
 
