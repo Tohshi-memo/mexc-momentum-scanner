@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T16:28:59.879193+00:00
+- generated_at: 2026-06-28T16:37:45.645144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7765**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T16:28:52.487734+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=59714.9
+- 更新: 2026-06-28T16:37:38.540590+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=59623.1
 - Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +15.45% | $1,139,223.57 |
-| M/USDT:USDT | +4.10% | $1,915,855.26 |
-| SLX/USDT:USDT | +2.48% | $18,974,333.30 |
-| RAVE/USDT:USDT | +2.38% | $11,093,782.14 |
-| FOLKS/USDT:USDT | +1.99% | $1,042,812.25 |
+| NES/USDT:USDT | +11.43% | $1,419,365.69 |
+| SYN/USDT:USDT | +2.53% | $9,433,284.28 |
+| RAVE/USDT:USDT | +2.18% | $11,287,463.60 |
+| SLX/USDT:USDT | +1.77% | $19,008,193.33 |
+| FOLKS/USDT:USDT | +1.55% | $1,082,531.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +3.99% | +4.22% |
-| SLX/USDT:USDT | below_1h_threshold | +2.46% | +2.69% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.45% | +2.68% |
-| SYN/USDT:USDT | below_1h_threshold | +2.08% | +2.30% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.95% | +2.17% |
+| SYN/USDT:USDT | below_1h_threshold | +2.54% | +2.92% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.18% | +2.56% |
+| SLX/USDT:USDT | below_1h_threshold | +1.72% | +2.10% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +1.68% | +2.06% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.56% | +1.94% |
 
 ## 6. 次に見るべき不足
 
