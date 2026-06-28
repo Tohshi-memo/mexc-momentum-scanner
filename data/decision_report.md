@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T18:02:13.862388+00:00
+- generated_at: 2026-06-28T18:11:49.255457+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7765**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T18:02:09.083909+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=59614.9
+- 更新: 2026-06-28T18:11:44.733071+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=59625.0
 - Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGIC/USDT:USDT | +15.38% | $1,056,102.03 |
-| NES/USDT:USDT | +8.96% | $1,812,360.38 |
-| ZEREBRO/USDT:USDT | +4.96% | $1,244,111.25 |
-| BAS/USDT:USDT | +3.73% | $5,711,386.37 |
-| RAVE/USDT:USDT | +3.52% | $10,488,740.84 |
+| MAGIC/USDT:USDT | +14.83% | $1,237,425.57 |
+| NES/USDT:USDT | +10.79% | $1,844,285.71 |
+| SLX/USDT:USDT | +4.75% | $17,413,914.43 |
+| BAS/USDT:USDT | +4.63% | $5,721,732.90 |
+| ZEREBRO/USDT:USDT | +4.52% | $1,265,889.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEREBRO/USDT:USDT | below_1h_threshold | +2.87% | +2.77% |
-| H/USDT:USDT | below_1h_threshold | +0.91% | +0.81% |
-| SLX/USDT:USDT | below_1h_threshold | +0.67% | +0.58% |
-| AGLD/USDT:USDT | below_1h_threshold | +0.45% | +0.35% |
-| M/USDT:USDT | below_1h_threshold | +0.32% | +0.22% |
+| SLX/USDT:USDT | below_1h_threshold | +2.74% | +2.63% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.64% | +2.53% |
+| ZEREBRO/USDT:USDT | below_1h_threshold | +2.44% | +2.33% |
+| H/USDT:USDT | below_1h_threshold | +1.87% | +1.76% |
+| NES/USDT:USDT | below_1h_threshold | +1.47% | +1.36% |
 
 ## 6. 次に見るべき不足
 
