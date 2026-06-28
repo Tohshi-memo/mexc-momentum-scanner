@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-28T03:30:35.287533+00:00
+- generated_at: 2026-06-28T03:39:20.742808+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7728**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-28T03:30:29.662830+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=60244.9
+- 更新: 2026-06-28T03:39:16.078816+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=60165.7
 - Funnel: target 806 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWR/USDT:USDT | +20.23% | $1,401,681.08 |
-| LAB/USDT:USDT | +15.37% | $40,462,981.59 |
-| S/USDT:USDT | +12.65% | $4,828,669.83 |
-| BAS/USDT:USDT | +9.55% | $3,246,119.23 |
-| BASED/USDT:USDT | +9.39% | $1,291,967.86 |
+| POWR/USDT:USDT | +17.86% | $1,471,632.97 |
+| LAB/USDT:USDT | +16.36% | $40,554,020.03 |
+| S/USDT:USDT | +12.51% | $4,846,411.85 |
+| BASED/USDT:USDT | +10.87% | $1,302,094.56 |
+| SIREN/USDT:USDT | +9.49% | $1,233,967.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +3.44% | +3.23% |
-| POWR/USDT:USDT | below_1h_threshold | +3.00% | +2.80% |
-| S/USDT:USDT | below_1h_threshold | +2.62% | +2.41% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.21% | +2.01% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.17% | +1.96% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.69% | +4.62% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.70% | +2.63% |
+| S/USDT:USDT | below_1h_threshold | +2.44% | +2.37% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.38% | +2.31% |
+| LAB/USDT:USDT | below_1h_threshold | +1.60% | +1.52% |
 
 ## 6. 次に見るべき不足
 
