@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T15:18:28.517440+00:00
+- generated_at: 2026-06-29T15:28:11.077495+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7823**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T15:18:23.529919+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=59289.6
-- Funnel: target 810 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.5 >= 65=1
+- 更新: 2026-06-29T15:28:03.514463+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=59290.2
+- Funnel: target 811 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +161.95% | $35,442,889.96 |
-| GWEI/USDT:USDT | +35.41% | $2,892,767.61 |
-| RAVE/USDT:USDT | +34.76% | $45,881,640.31 |
-| UB/USDT:USDT | +25.44% | $2,621,949.86 |
-| RE/USDT:USDT | +23.83% | $8,948,173.85 |
+| TAC/USDT:USDT | +165.44% | $35,790,114.65 |
+| RAVE/USDT:USDT | +34.56% | $45,988,973.33 |
+| GWEI/USDT:USDT | +30.71% | $2,908,158.94 |
+| UB/USDT:USDT | +25.81% | $2,637,810.07 |
+| RE/USDT:USDT | +25.54% | $9,732,562.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +2.44% | +2.70% |
-| O/USDT:USDT | below_1h_threshold | +1.49% | +1.75% |
-| TERSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.58% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.70% | +0.96% |
-| BASED/USDT:USDT | below_1h_threshold | +0.70% | +0.96% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.02% | +2.28% |
+| SYN/USDT:USDT | below_1h_threshold | +1.51% | +1.77% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.68% |
+| AGLD/USDT:USDT | below_1h_threshold | +1.17% | +1.43% |
+| TERSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.39% |
 
 ## 6. 次に見るべき不足
 
