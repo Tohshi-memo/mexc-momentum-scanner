@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T15:28:11.077495+00:00
+- generated_at: 2026-06-29T15:37:31.736283+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7823**
 
@@ -62,32 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T15:28:03.514463+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=59290.2
-- Funnel: target 811 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.3 >= 65=1
+- 更新: 2026-06-29T15:37:26.743362+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.56% price=59777.0
+- Funnel: target 811 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +165.44% | $35,790,114.65 |
-| RAVE/USDT:USDT | +34.56% | $45,988,973.33 |
-| GWEI/USDT:USDT | +30.71% | $2,908,158.94 |
-| UB/USDT:USDT | +25.81% | $2,637,810.07 |
-| RE/USDT:USDT | +25.54% | $9,732,562.45 |
+| TAC/USDT:USDT | +168.32% | $36,141,823.33 |
+| RAVE/USDT:USDT | +39.70% | $46,209,075.76 |
+| UB/USDT:USDT | +26.79% | $2,652,475.23 |
+| GWEI/USDT:USDT | +26.22% | $2,966,818.72 |
+| RE/USDT:USDT | +23.86% | $9,916,128.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +2.02% | +2.28% |
-| SYN/USDT:USDT | below_1h_threshold | +1.51% | +1.77% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.68% |
-| AGLD/USDT:USDT | below_1h_threshold | +1.17% | +1.43% |
-| TERSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.39% |
+| RE/USDT:USDT | below_1h_threshold | +4.57% | +4.01% |
+| RAVE/USDT:USDT | below_1h_threshold | +4.37% | +3.81% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.07% | +3.51% |
+| AGLD/USDT:USDT | below_1h_threshold | +3.36% | +2.80% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.29% |
 
 ## 6. 次に見るべき不足
 
