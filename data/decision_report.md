@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-29T11:39:32.451378+00:00
+- generated_at: 2026-06-29T11:49:25.646673+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7812**
+- closed shadow trades: **7813**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7812, expectancy=-0.05%
+- 全期間 MARKET基準: n=7813, expectancy=-0.05%
 - 直近20件 MARKET基準: n=20, expectancy=-1.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | LIMIT_6PCT | 8/20 | 40.0% | +2.68% | **+1.07%** |
 | LIMIT_7PCT | 6/20 | 30.0% | +2.54% | **+0.76%** |
 | LIMIT_8PCT | 5/20 | 25.0% | +3.02% | **+0.76%** |
+| LIMIT_FIB1272 | 5/20 | 25.0% | +1.33% | **+0.33%** |
 | LIMIT_5PCT | 9/20 | 45.0% | +0.40% | **+0.18%** |
-| LIMIT_FIB1272 | 5/20 | 25.0% | +0.11% | **+0.03%** |
 
 ### シャドウ上位 LONG
 
@@ -34,8 +34,8 @@
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.40% | **+1.32%** |
 | LIMIT_FIB1272_LONG | 5/20 | 25.0% | +4.29% | **+1.07%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
+| LIMIT_BB3S_LONG | 5/11 | 45.5% | +1.86% | **+0.85%** |
 | LIMIT_ATR_LONG | 13/20 | 65.0% | +1.29% | **+0.84%** |
-| LIMIT_5PCT_LONG | 8/20 | 40.0% | +2.00% | **+0.80%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,47 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$261.96** / 初期 $100.00 (+161.96%)
-- 確定: 2316件 (Win 705 / Loss 772 / Flat 839) / skip 2057件
-- 成長率目線: 平均log +0.000416 / 幾何平均 +0.042% per trade / maxDD +8.13%
+- 残高: **$264.58** / 初期 $100.00 (+164.58%)
+- 確定: 2317件 (Win 706 / Loss 772 / Flat 839) / skip 2057件
+- 成長率目線: 平均log +0.000420 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: GWEI/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $261.96
+- 最新: RE/USDT:USDT `MARKET_LONG` TP_HIT account +1.00% 残高後 $264.58
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.45** / 初期 $100.00 (+6.45%)
-- 確定: 456件 (Win 120 / Loss 119 / Flat 217) / skip 767件
+- 確定: 456件 (Win 120 / Loss 119 / Flat 217) / skip 768件
 - 成長率目線: 平均log +0.000137 / 幾何平均 +0.014% per trade / maxDD +3.03%
-- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_robust_growth_score) / robust_score +0.0341 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SYN/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $106.45
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T11:39:25.373660+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=59837.4
-- Funnel: target 810 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-06-29T11:49:19.873001+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=59863.6
+- Funnel: target 810 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +137.77% | $20,234,332.06 |
-| GWEI/USDT:USDT | +38.43% | $1,698,110.00 |
-| RAVE/USDT:USDT | +27.41% | $42,437,286.35 |
-| UB/USDT:USDT | +24.33% | $2,042,835.24 |
-| G/USDT:USDT | +23.71% | $2,333,344.76 |
+| TAC/USDT:USDT | +141.66% | $21,071,481.87 |
+| GWEI/USDT:USDT | +43.31% | $1,744,327.88 |
+| RAVE/USDT:USDT | +28.24% | $42,844,817.57 |
+| G/USDT:USDT | +24.69% | $2,359,348.57 |
+| RE/USDT:USDT | +24.60% | $5,689,335.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +2.40% | +2.78% |
-| UB/USDT:USDT | below_1h_threshold | +2.15% | +2.52% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +2.09% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.20% | +1.58% |
-| TAC/USDT:USDT | below_1h_threshold | +0.79% | +1.16% |
+| SYN/USDT:USDT | below_1h_threshold | +3.62% | +3.95% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.33% | +2.66% |
+| TAC/USDT:USDT | below_1h_threshold | +2.29% | +2.62% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.10% | +2.43% |
+| UB/USDT:USDT | below_1h_threshold | +1.77% | +2.10% |
 
 ## 6. 次に見るべき不足
 
