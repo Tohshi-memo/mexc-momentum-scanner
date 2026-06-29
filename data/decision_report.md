@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T16:02:52.813411+00:00
+- generated_at: 2026-06-29T16:11:33.660586+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7825**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T16:02:45.924729+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=59790.7
-- Funnel: target 811 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-29T16:11:28.832811+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=59766.8
+- Funnel: target 811 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GWEI/USDT:USDT | +1.69% | $3,174,710.96 |
-| O/USDT:USDT | +0.96% | $5,246,847.45 |
-| BAS/USDT:USDT | +0.95% | $1,982,944.69 |
-| SOXL/USDT:USDT | +0.83% | $6,768,680.14 |
-| AEHRSTOCK/USDT:USDT | +0.77% | $3,624,456.10 |
+| GWEI/USDT:USDT | +4.55% | $3,212,358.88 |
+| BSB/USDT:USDT | +3.24% | $2,540,657.99 |
+| BEAT/USDT:USDT | +2.86% | $28,466,968.49 |
+| SKYAI/USDT:USDT | +2.08% | $12,379,558.40 |
+| SYN/USDT:USDT | +1.73% | $9,942,995.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +1.13% | +1.14% |
-| GWEI/USDT:USDT | below_1h_threshold | +1.05% | +1.07% |
-| O/USDT:USDT | below_1h_threshold | +0.97% | +0.98% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.83% | +0.85% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
+| GWEI/USDT:USDT | below_1h_threshold | +4.56% | +4.61% |
+| BSB/USDT:USDT | below_1h_threshold | +3.13% | +3.18% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.90% | +2.96% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.26% | +2.32% |
+| XPL/USDT:USDT | below_1h_threshold | +1.76% | +1.82% |
 
 ## 6. 次に見るべき不足
 
