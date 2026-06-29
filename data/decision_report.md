@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T16:38:44.601337+00:00
+- generated_at: 2026-06-29T16:47:33.717481+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7827**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T16:38:38.919794+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=59748.6
+- 更新: 2026-06-29T16:47:29.013986+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=59841.1
 - Funnel: target 811 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +3.43% | $12,747,271.61 |
-| BAS/USDT:USDT | +3.17% | $2,036,249.20 |
-| BEAT/USDT:USDT | +2.97% | $29,379,223.07 |
-| BSB/USDT:USDT | +2.51% | $2,640,279.35 |
-| H/USDT:USDT | +2.17% | $3,790,280.66 |
+| BSB/USDT:USDT | +3.93% | $2,673,577.87 |
+| ORDI/USDT:USDT | +3.74% | $13,124,620.71 |
+| ACT/USDT:USDT | +3.00% | $5,358,708.58 |
+| SOXL/USDT:USDT | +2.86% | $7,597,009.89 |
+| MUSTOCK/USDT:USDT | +2.64% | $58,315,994.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.43% | +3.52% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.97% | +3.06% |
-| BAS/USDT:USDT | below_1h_threshold | +2.92% | +3.01% |
-| BSB/USDT:USDT | below_1h_threshold | +2.68% | +2.77% |
-| MYX/USDT:USDT | below_1h_threshold | +2.18% | +2.27% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.12% | +4.05% |
+| BSB/USDT:USDT | below_1h_threshold | +3.94% | +3.87% |
+| ACT/USDT:USDT | below_1h_threshold | +3.00% | +2.93% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.87% | +2.80% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.61% |
 
 ## 6. 次に見るべき不足
 
