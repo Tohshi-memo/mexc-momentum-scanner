@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T18:09:07.961472+00:00
+- generated_at: 2026-06-29T18:18:47.920780+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7831**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T18:09:02.158013+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=60476.6
+- 更新: 2026-06-29T18:18:43.264441+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=60379.7
 - Funnel: target 811 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +9.02% | $1,312,619.39 |
-| ORDI/USDT:USDT | +7.63% | $17,055,265.18 |
-| H/USDT:USDT | +5.68% | $3,977,047.62 |
-| MYX/USDT:USDT | +5.55% | $2,491,629.86 |
-| ACT/USDT:USDT | +5.50% | $4,576,540.17 |
+| MYX/USDT:USDT | +7.29% | $2,522,827.67 |
+| ORDI/USDT:USDT | +7.13% | $17,467,338.11 |
+| SYN/USDT:USDT | +7.07% | $11,773,416.15 |
+| H/USDT:USDT | +6.89% | $4,034,137.98 |
+| BILL/USDT:USDT | +6.85% | $1,385,207.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +1.28% | +1.14% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.08% | +0.93% |
-| AGLD/USDT:USDT | below_1h_threshold | +0.98% | +0.84% |
-| SLX/USDT:USDT | below_1h_threshold | +0.92% | +0.78% |
-| SPX/USDT:USDT | below_1h_threshold | +0.92% | +0.78% |
+| KAS/USDT:USDT | below_1h_threshold | +1.61% | +1.63% |
+| KORU/USDT:USDT | below_1h_threshold | +1.40% | +1.42% |
+| UB/USDT:USDT | below_1h_threshold | +1.17% | +1.19% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.95% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
 
 ## 6. 次に見るべき不足
 
