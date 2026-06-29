@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T02:44:19.328157+00:00
+- generated_at: 2026-06-29T02:53:07.065535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7783**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T02:44:13.320332+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=59703.3
-- Funnel: target 805 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.6 >= 65=1
+- 更新: 2026-06-29T02:53:01.604632+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=59702.1
+- Funnel: target 805 → liquid 128 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.5 >= 65=1, 4h RSI 92.5 >= 65=1, 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWR/USDT:USDT | +19.98% | $6,619,424.77 |
-| SYN/USDT:USDT | +19.37% | $9,450,108.05 |
-| BAS/USDT:USDT | +14.76% | $4,664,913.80 |
-| RAVE/USDT:USDT | +14.30% | $13,037,289.92 |
-| VELVET/USDT:USDT | +13.47% | $177,461,105.61 |
+| SYN/USDT:USDT | +18.39% | $9,509,995.68 |
+| POWR/USDT:USDT | +16.90% | $6,701,929.09 |
+| VELVET/USDT:USDT | +16.79% | $178,688,107.20 |
+| RAVE/USDT:USDT | +15.45% | $13,083,193.33 |
+| NES/USDT:USDT | +13.15% | $3,068,992.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_relative_strength | +5.30% | +4.82% |
-| HEI/USDT:USDT | below_1h_threshold | +3.90% | +3.41% |
-| SYN/USDT:USDT | below_1h_threshold | +2.57% | +2.08% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.33% | +1.84% |
-| MAGIC/USDT:USDT | below_1h_threshold | +2.20% | +1.71% |
+| HEI/USDT:USDT | below_relative_strength | +5.44% | +4.96% |
+| UB/USDT:USDT | below_1h_threshold | +3.12% | +2.63% |
+| MAGIC/USDT:USDT | below_1h_threshold | +2.79% | +2.30% |
+| G/USDT:USDT | below_1h_threshold | +2.69% | +2.21% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.63% | +2.15% |
 
 ## 6. 次に見るべき不足
 
