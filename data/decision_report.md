@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T13:43:32.400361+00:00
+- generated_at: 2026-06-29T13:52:26.664806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7817**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T13:43:23.739629+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=59598.1
+- 更新: 2026-06-29T13:52:17.783006+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.86% price=59407.5
 - Funnel: target 810 → liquid 146 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +140.51% | $27,904,183.87 |
-| GWEI/USDT:USDT | +42.99% | $2,511,232.81 |
-| RAVE/USDT:USDT | +32.91% | $44,657,244.07 |
-| RE/USDT:USDT | +26.75% | $7,726,829.60 |
-| G/USDT:USDT | +25.30% | $2,751,676.12 |
+| TAC/USDT:USDT | +131.86% | $28,698,499.96 |
+| GWEI/USDT:USDT | +39.65% | $2,607,514.60 |
+| RAVE/USDT:USDT | +35.47% | $44,737,239.72 |
+| RE/USDT:USDT | +25.79% | $8,066,235.93 |
+| G/USDT:USDT | +25.14% | $2,762,938.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +3.19% | +3.74% |
-| BSB/USDT:USDT | below_1h_threshold | +2.22% | +2.76% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.99% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.99% | +1.54% |
-| BASED/USDT:USDT | below_1h_threshold | +0.47% | +1.01% |
+| RE/USDT:USDT | below_1h_threshold | +2.46% | +3.32% |
+| H/USDT:USDT | below_1h_threshold | +1.83% | +2.69% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.98% | +1.84% |
+| TIA/USDT:USDT | below_1h_threshold | +0.43% | +1.29% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.43% | +1.29% |
 
 ## 6. 次に見るべき不足
 
