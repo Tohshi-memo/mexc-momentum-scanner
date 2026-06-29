@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T00:33:13.009605+00:00
+- generated_at: 2026-06-29T00:42:04.114723+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7779**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T00:33:05.018879+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.82% price=59061.9
-- Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1
+- 更新: 2026-06-29T00:41:59.214627+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=59246.9
+- Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +13.72% | $2,898,126.53 |
-| POWR/USDT:USDT | +11.14% | $6,610,202.67 |
-| BAS/USDT:USDT | +10.30% | $5,080,090.43 |
-| G/USDT:USDT | +9.85% | $1,140,348.61 |
-| SYN/USDT:USDT | +9.68% | $8,252,192.55 |
+| NES/USDT:USDT | +14.70% | $2,918,179.33 |
+| BAS/USDT:USDT | +10.41% | $5,087,930.66 |
+| G/USDT:USDT | +10.33% | $1,145,963.12 |
+| POWR/USDT:USDT | +10.10% | $6,679,753.73 |
+| SYN/USDT:USDT | +8.26% | $8,330,462.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APDSTOCK/USDT:USDT | below_1h_threshold | +2.14% | +2.96% |
-| BAS/USDT:USDT | below_1h_threshold | +1.52% | +2.34% |
-| BSB/USDT:USDT | below_1h_threshold | +1.44% | +2.26% |
-| BIANRENSHENG/USDT:USDT | below_1h_threshold | +0.87% | +1.69% |
-| HEI/USDT:USDT | below_1h_threshold | +0.81% | +1.63% |
+| SYN/USDT:USDT | below_1h_threshold | +4.69% | +5.20% |
+| APDSTOCK/USDT:USDT | below_1h_threshold | +3.49% | +4.00% |
+| BSB/USDT:USDT | below_1h_threshold | +1.90% | +2.41% |
+| HEI/USDT:USDT | below_1h_threshold | +1.78% | +2.28% |
+| BAS/USDT:USDT | below_1h_threshold | +1.58% | +2.09% |
 
 ## 6. 次に見るべき不足
 
