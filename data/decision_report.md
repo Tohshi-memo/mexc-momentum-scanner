@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-29T00:42:04.114723+00:00
+- generated_at: 2026-06-29T00:50:34.389233+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7779**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-29T00:41:59.214627+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=59246.9
-- Funnel: target 805 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.0 >= 65=1
+- 更新: 2026-06-29T00:50:26.931488+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=59329.9
+- Funnel: target 805 → liquid 126 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +14.70% | $2,918,179.33 |
-| BAS/USDT:USDT | +10.41% | $5,087,930.66 |
-| G/USDT:USDT | +10.33% | $1,145,963.12 |
-| POWR/USDT:USDT | +10.10% | $6,679,753.73 |
-| SYN/USDT:USDT | +8.26% | $8,330,462.40 |
+| NES/USDT:USDT | +14.58% | $2,933,109.71 |
+| BAS/USDT:USDT | +11.15% | $5,098,348.83 |
+| SYN/USDT:USDT | +9.86% | $8,378,072.74 |
+| G/USDT:USDT | +9.34% | $1,158,492.68 |
+| POWR/USDT:USDT | +8.95% | $6,727,190.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.69% | +5.20% |
-| APDSTOCK/USDT:USDT | below_1h_threshold | +3.49% | +4.00% |
-| BSB/USDT:USDT | below_1h_threshold | +1.90% | +2.41% |
-| HEI/USDT:USDT | below_1h_threshold | +1.78% | +2.28% |
-| BAS/USDT:USDT | below_1h_threshold | +1.58% | +2.09% |
+| HEI/USDT:USDT | below_1h_threshold | +3.48% | +3.85% |
+| BAS/USDT:USDT | below_1h_threshold | +2.27% | +2.64% |
+| BASED/USDT:USDT | below_1h_threshold | +1.05% | +1.42% |
+| MAGIC/USDT:USDT | below_1h_threshold | +0.99% | +1.36% |
+| KAS/USDT:USDT | below_1h_threshold | +0.98% | +1.34% |
 
 ## 6. 次に見るべき不足
 
