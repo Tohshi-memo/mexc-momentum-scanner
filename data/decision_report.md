@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T13:45:27.676988+00:00
+- generated_at: 2026-06-30T13:54:33.372836+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7899**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T13:45:15.096250+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=58544.9
-- Funnel: target 818 → liquid 157 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 68.0 >= 65=1, 4h RSI 72.9 >= 65=1
+- 更新: 2026-06-30T13:54:24.734586+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=58672.8
+- Funnel: target 818 → liquid 158 → pre 50 → checked 50 → surge 7 → strict 2
+- Surge前reject: below_1h_threshold=42, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI 85.7 >= 65=1, 4h RSI 73.5 >= 65=1, 4h RSI 72.2 >= 65=1, 4h RSI 74.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +54.34% | $50,601,723.31 |
-| ANSEM/USDT:USDT | +43.57% | $1,098,842.83 |
-| AIGENSYN/USDT:USDT | +37.60% | $14,284,106.69 |
-| BTW/USDT:USDT | +25.38% | $9,022,215.49 |
-| CAP/USDT:USDT | +24.38% | $4,571,738.87 |
+| SYN/USDT:USDT | +48.15% | $51,991,424.59 |
+| ANSEM/USDT:USDT | +41.47% | $1,122,379.70 |
+| AIGENSYN/USDT:USDT | +37.72% | $14,379,525.28 |
+| IN/USDT:USDT | +30.24% | $1,018,462.78 |
+| CAP/USDT:USDT | +27.72% | $5,026,894.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +5.27% | +4.98% |
-| M/USDT:USDT | below_1h_threshold | +4.47% | +4.18% |
-| H/USDT:USDT | below_1h_threshold | +3.59% | +3.30% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.39% | +3.10% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.23% | +2.94% |
+| MRVLSTOCK/USDT:USDT | below_relative_strength | +5.09% | +4.58% |
+| H/USDT:USDT | below_1h_threshold | +4.81% | +4.30% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.99% | +3.48% |
+| LIT/USDT:USDT | below_1h_threshold | +3.43% | +2.92% |
+| TAC/USDT:USDT | below_1h_threshold | +3.08% | +2.57% |
 
 ## 6. 次に見るべき不足
 
