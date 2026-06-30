@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T00:34:18.962970+00:00
+- generated_at: 2026-06-30T00:40:41.786880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7841**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T00:34:14.299142+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.65% price=59835.2
-- Funnel: target 811 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-30T00:40:38.296874+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.80% price=59745.0
+- Funnel: target 811 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +20.99% | $3,340,789.52 |
-| AVAVSTOCK/USDT:USDT | +17.46% | $1,807,088.41 |
-| BILL/USDT:USDT | +15.14% | $3,087,357.55 |
-| BAS/USDT:USDT | +14.94% | $2,949,453.54 |
-| SYN/USDT:USDT | +14.02% | $22,166,165.44 |
+| AIGENSYN/USDT:USDT | +21.57% | $3,353,992.54 |
+| AVAVSTOCK/USDT:USDT | +17.43% | $1,812,501.94 |
+| BAS/USDT:USDT | +17.08% | $2,967,119.64 |
+| BILL/USDT:USDT | +16.11% | $3,102,350.38 |
+| UB/USDT:USDT | +14.33% | $4,255,981.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +4.14% | +4.80% |
-| GWEI/USDT:USDT | below_1h_threshold | +4.09% | +4.74% |
-| POWR/USDT:USDT | below_1h_threshold | +3.50% | +4.15% |
-| BAS/USDT:USDT | below_1h_threshold | +3.27% | +3.92% |
-| CAP/USDT:USDT | below_1h_threshold | +1.79% | +2.44% |
+| POWR/USDT:USDT | below_1h_threshold | +4.45% | +5.25% |
+| GWEI/USDT:USDT | below_1h_threshold | +4.21% | +5.01% |
+| CAP/USDT:USDT | below_1h_threshold | +3.27% | +4.07% |
+| M/USDT:USDT | below_1h_threshold | +2.92% | +3.72% |
+| KAS/USDT:USDT | below_1h_threshold | +1.25% | +2.06% |
 
 ## 6. 次に見るべき不足
 
