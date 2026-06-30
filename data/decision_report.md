@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T18:43:25.927564+00:00
+- generated_at: 2026-06-30T18:50:48.567358+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7929**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T18:43:21.163034+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=58436.7
+- 更新: 2026-06-30T18:50:44.785997+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=58570.1
 - Funnel: target 818 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +10.57% | $1,078,386.23 |
-| GLM/USDT:USDT | +6.31% | $1,264,818.22 |
-| RE/USDT:USDT | +5.91% | $8,278,457.25 |
-| H/USDT:USDT | +3.38% | $13,599,013.94 |
-| SNDKSTOCK/USDT:USDT | +3.13% | $14,594,829.49 |
+| RE/USDT:USDT | +5.57% | $8,290,421.10 |
+| TAIKO/USDT:USDT | +5.57% | $1,098,674.36 |
+| GLM/USDT:USDT | +5.19% | $1,272,358.64 |
+| AIGENSYN/USDT:USDT | +3.83% | $15,322,937.17 |
+| SNDKSTOCK/USDT:USDT | +3.72% | $14,773,579.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.41% | +3.34% |
-| H/USDT:USDT | below_1h_threshold | +2.91% | +2.84% |
-| TAIKO/USDT:USDT | below_1h_threshold | +2.65% | +2.58% |
-| XLM/USDT:USDT | below_1h_threshold | +2.48% | +2.41% |
-| LAB/USDT:USDT | below_1h_threshold | +1.22% | +1.15% |
+| M/USDT:USDT | below_1h_threshold | +4.58% | +4.29% |
+| XLM/USDT:USDT | below_1h_threshold | +3.06% | +2.76% |
+| BTW/USDT:USDT | below_1h_threshold | +2.58% | +2.29% |
+| H/USDT:USDT | below_1h_threshold | +2.08% | +1.79% |
+| LAB/USDT:USDT | below_1h_threshold | +2.03% | +1.73% |
 
 ## 6. 次に見るべき不足
 
