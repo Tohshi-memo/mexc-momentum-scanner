@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T10:58:55.361742+00:00
+- generated_at: 2026-06-30T11:18:10.894002+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7882**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T10:58:49.014766+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=59375.0
-- Funnel: target 813 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1, 4h RSI 92.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-30T11:18:06.196287+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=59300.7
+- Funnel: target 813 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +41.52% | $33,563,355.70 |
-| AIGENSYN/USDT:USDT | +34.95% | $12,305,385.88 |
-| BTW/USDT:USDT | +33.29% | $7,319,704.96 |
-| AVAVSTOCK/USDT:USDT | +24.63% | $1,789,793.49 |
-| CAP/USDT:USDT | +18.43% | $3,822,987.51 |
+| SYN/USDT:USDT | +47.15% | $34,766,960.01 |
+| BTW/USDT:USDT | +39.26% | $7,431,466.78 |
+| AIGENSYN/USDT:USDT | +37.60% | $12,367,566.23 |
+| AVAVSTOCK/USDT:USDT | +26.58% | $1,882,223.61 |
+| CAP/USDT:USDT | +17.63% | $3,874,230.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +4.26% | +4.22% |
-| SYN/USDT:USDT | below_1h_threshold | +3.81% | +3.77% |
-| H/USDT:USDT | below_1h_threshold | +2.11% | +2.07% |
-| MYX/USDT:USDT | below_1h_threshold | +1.59% | +1.55% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.35% | +1.30% |
+| BTW/USDT:USDT | below_1h_threshold | +4.36% | +4.36% |
+| SYN/USDT:USDT | below_1h_threshold | +4.09% | +4.10% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.90% | +2.91% |
+| H/USDT:USDT | below_1h_threshold | +2.14% | +2.15% |
+| AVAVSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.61% |
 
 ## 6. 次に見るべき不足
 
