@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-30T07:57:46.740430+00:00
+- generated_at: 2026-06-30T08:06:49.881267+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7872**
+- closed shadow trades: **7873**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.00% / filled 20/20。**
-- 全期間 MARKET基準: n=7872, expectancy=-0.03%
+- 全期間 MARKET基準: n=7873, expectancy=-0.03%
 - 直近20件 MARKET基準: n=20, expectancy=+2.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,19 +23,19 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.00% | **+2.00%** |
 | ASK | 20/20 | 100.0% | +1.98% | **+1.98%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +1.18% | **+1.01%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +1.14% | **+0.91%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +3.11% | **+0.78%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +1.24% | **+1.06%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +1.26% | **+1.01%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +3.42% | **+0.68%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 10/20 | 50.0% | +0.47% | **+0.24%** |
+| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.05% | **+0.58%** |
+| LIMIT_2PCT_LONG | 16/20 | 80.0% | +0.27% | **+0.21%** |
 | LIMIT_9PCT_LONG | 2/20 | 10.0% | +1.10% | **+0.11%** |
 | LIMIT_8PCT_LONG | 10/20 | 50.0% | +0.00% | **+0.00%** |
-| LIMIT_2PCT_LONG | 15/20 | 75.0% | -0.13% | **-0.09%** |
-| LIMIT_FIB1618_LONG | 2/20 | 10.0% | -2.65% | **-0.27%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | -0.15% | **-0.14%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$259.13** / 初期 $100.00 (+159.13%)
-- 確定: 2354件 (Win 714 / Loss 785 / Flat 855) / skip 2079件
+- 確定: 2354件 (Win 714 / Loss 785 / Flat 855) / skip 2080件
 - 成長率目線: 平均log +0.000404 / 幾何平均 +0.040% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: AGLD/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $259.13
@@ -55,39 +55,38 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.45** / 初期 $100.00 (+6.45%)
-- 確定: 457件 (Win 120 / Loss 119 / Flat 218) / skip 826件
+- 確定: 457件 (Win 120 / Loss 119 / Flat 218) / skip 827件
 - 成長率目線: 平均log +0.000137 / 幾何平均 +0.014% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: GWEI/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $106.45
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T07:57:36.700308+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=59500.1
-- Funnel: target 813 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1
+- 更新: 2026-06-30T08:06:41.443972+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=59485.0
+- Funnel: target 813 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +41.16% | $4,506,887.89 |
-| AIGENSYN/USDT:USDT | +38.47% | $9,280,883.09 |
-| SYN/USDT:USDT | +26.42% | $25,898,031.48 |
-| M/USDT:USDT | +21.73% | $3,678,628.12 |
-| AVAVSTOCK/USDT:USDT | +17.68% | $1,927,348.71 |
+| BTW/USDT:USDT | +42.74% | $4,888,095.06 |
+| AIGENSYN/USDT:USDT | +42.35% | $9,470,113.44 |
+| SYN/USDT:USDT | +25.14% | $25,809,334.34 |
+| M/USDT:USDT | +21.05% | $3,659,750.03 |
+| AVAVSTOCK/USDT:USDT | +16.61% | $1,924,135.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +4.38% | +4.50% |
-| BASED/USDT:USDT | below_1h_threshold | +4.09% | +4.21% |
-| TAC/USDT:USDT | below_1h_threshold | +3.07% | +3.19% |
-| HEI/USDT:USDT | below_1h_threshold | +2.06% | +2.18% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.54% | +1.66% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
+| TAC/USDT:USDT | below_1h_threshold | +1.39% | +1.41% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.19% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
 
 ## 6. 次に見るべき不足
 
