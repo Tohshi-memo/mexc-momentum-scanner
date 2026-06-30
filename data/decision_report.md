@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T03:39:44.171727+00:00
+- generated_at: 2026-06-30T03:48:53.203620+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7856**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T03:39:37.933552+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=59740.1
-- Funnel: target 811 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1, 4h RSI 75.7 >= 65=1
+- 更新: 2026-06-30T03:48:46.044581+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=59660.0
+- Funnel: target 811 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.2 >= 65=1, 4h RSI 75.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +63.09% | $5,114,766.76 |
-| ANSEM/USDT:USDT | +26.25% | $1,084,091.94 |
-| BAS/USDT:USDT | +21.77% | $3,575,913.09 |
-| M/USDT:USDT | +21.03% | $2,979,249.32 |
-| AVAVSTOCK/USDT:USDT | +17.50% | $1,870,672.72 |
+| AIGENSYN/USDT:USDT | +64.66% | $5,248,243.77 |
+| BAS/USDT:USDT | +21.43% | $3,643,423.54 |
+| M/USDT:USDT | +20.62% | $3,019,997.24 |
+| ANSEM/USDT:USDT | +18.32% | $1,091,522.45 |
+| AVAVSTOCK/USDT:USDT | +17.53% | $1,872,801.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.20% | +4.50% |
-| MYX/USDT:USDT | below_1h_threshold | +3.10% | +3.40% |
-| BILL/USDT:USDT | below_1h_threshold | +2.17% | +2.47% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.84% | +2.14% |
-| XLM/USDT:USDT | below_1h_threshold | +1.81% | +2.11% |
+| BILL/USDT:USDT | below_1h_threshold | +3.81% | +4.24% |
+| MYX/USDT:USDT | below_1h_threshold | +3.60% | +4.03% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.44% | +2.87% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.87% | +2.30% |
+| BTW/USDT:USDT | below_1h_threshold | +1.54% | +1.97% |
 
 ## 6. 次に見るべき不足
 
