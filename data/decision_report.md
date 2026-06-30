@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T10:39:50.397943+00:00
+- generated_at: 2026-06-30T10:49:50.526313+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7881**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T10:39:44.143917+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=59298.2
+- 更新: 2026-06-30T10:49:45.047809+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=59328.8
 - Funnel: target 813 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 91.9 >= 65=1
+- Strict後reject: 4h RSI 67.4 >= 65=1, 4h RSI 91.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +35.90% | $12,165,496.16 |
-| SYN/USDT:USDT | +34.94% | $32,270,207.66 |
-| BTW/USDT:USDT | +27.14% | $6,999,250.08 |
-| AVAVSTOCK/USDT:USDT | +21.43% | $1,708,181.43 |
-| M/USDT:USDT | +19.05% | $3,732,342.98 |
+| SYN/USDT:USDT | +35.70% | $32,670,021.64 |
+| AIGENSYN/USDT:USDT | +35.53% | $12,276,693.68 |
+| BTW/USDT:USDT | +33.95% | $7,191,585.84 |
+| AVAVSTOCK/USDT:USDT | +21.68% | $1,724,151.88 |
+| CAP/USDT:USDT | +18.98% | $3,757,896.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.64% | +2.73% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.72% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.48% | +1.57% |
-| MYX/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.83% | +0.91% |
+| H/USDT:USDT | below_1h_threshold | +2.03% | +2.06% |
+| AVAVSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.88% |
+| MYX/USDT:USDT | below_1h_threshold | +1.38% | +1.42% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.27% | +1.30% |
+| LIT/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
 
 ## 6. 次に見るべき不足
 
