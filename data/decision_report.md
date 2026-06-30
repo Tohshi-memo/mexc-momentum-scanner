@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T04:29:54.988253+00:00
+- generated_at: 2026-06-30T04:38:59.984067+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7861**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T04:29:49.046693+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=59530.9
-- Funnel: target 812 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-30T04:38:50.274863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=59609.9
+- Funnel: target 816 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +49.42% | $5,943,084.75 |
-| M/USDT:USDT | +28.17% | $3,257,680.32 |
-| AVAVSTOCK/USDT:USDT | +17.56% | $1,881,839.08 |
-| ANSEM/USDT:USDT | +17.41% | $1,083,508.60 |
-| MYX/USDT:USDT | +14.48% | $3,020,198.76 |
+| AIGENSYN/USDT:USDT | +52.56% | $6,058,539.70 |
+| M/USDT:USDT | +25.40% | $3,318,576.37 |
+| ANSEM/USDT:USDT | +21.14% | $1,089,335.51 |
+| SYN/USDT:USDT | +18.36% | $22,848,652.12 |
+| AVAVSTOCK/USDT:USDT | +17.61% | $1,882,542.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.42% | +4.53% |
-| KORU/USDT:USDT | below_1h_threshold | +4.11% | +4.22% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.90% | +4.01% |
-| H/USDT:USDT | below_1h_threshold | +3.66% | +3.77% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.71% |
+| M/USDT:USDT | below_1h_threshold | +4.30% | +4.27% |
+| SYN/USDT:USDT | below_1h_threshold | +3.92% | +3.90% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.21% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.80% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.20% | +2.18% |
 
 ## 6. 次に見るべき不足
 
