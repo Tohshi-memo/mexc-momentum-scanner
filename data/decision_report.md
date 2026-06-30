@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T07:47:48.852799+00:00
+- generated_at: 2026-06-30T07:57:46.740430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7872**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T07:47:40.859640+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=59513.3
-- Funnel: target 813 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-30T07:57:36.700308+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=59500.1
+- Funnel: target 813 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +41.22% | $4,381,791.91 |
-| AIGENSYN/USDT:USDT | +35.74% | $9,148,198.88 |
-| SYN/USDT:USDT | +23.84% | $25,610,676.83 |
-| M/USDT:USDT | +20.21% | $3,666,547.96 |
-| AVAVSTOCK/USDT:USDT | +17.70% | $1,925,944.41 |
+| BTW/USDT:USDT | +41.16% | $4,506,887.89 |
+| AIGENSYN/USDT:USDT | +38.47% | $9,280,883.09 |
+| SYN/USDT:USDT | +26.42% | $25,898,031.48 |
+| M/USDT:USDT | +21.73% | $3,678,628.12 |
+| AVAVSTOCK/USDT:USDT | +17.68% | $1,927,348.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +4.66% | +4.76% |
-| CAP/USDT:USDT | below_1h_threshold | +4.22% | +4.32% |
-| TAC/USDT:USDT | below_1h_threshold | +4.13% | +4.22% |
-| SYN/USDT:USDT | below_1h_threshold | +3.56% | +3.66% |
-| M/USDT:USDT | below_1h_threshold | +3.07% | +3.17% |
+| M/USDT:USDT | below_1h_threshold | +4.38% | +4.50% |
+| BASED/USDT:USDT | below_1h_threshold | +4.09% | +4.21% |
+| TAC/USDT:USDT | below_1h_threshold | +3.07% | +3.19% |
+| HEI/USDT:USDT | below_1h_threshold | +2.06% | +2.18% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.54% | +1.66% |
 
 ## 6. 次に見るべき不足
 
