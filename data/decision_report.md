@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T03:48:53.203620+00:00
+- generated_at: 2026-06-30T03:57:55.481368+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7856**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T03:48:46.044581+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=59660.0
-- Funnel: target 811 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.2 >= 65=1, 4h RSI 75.7 >= 65=1
+- 更新: 2026-06-30T03:57:48.065224+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.55% price=59589.9
+- Funnel: target 811 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.9 >= 65=1, 4h RSI 75.6 >= 65=1, 4h RSI 66.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +64.66% | $5,248,243.77 |
-| BAS/USDT:USDT | +21.43% | $3,643,423.54 |
-| M/USDT:USDT | +20.62% | $3,019,997.24 |
-| ANSEM/USDT:USDT | +18.32% | $1,091,522.45 |
-| AVAVSTOCK/USDT:USDT | +17.53% | $1,872,801.09 |
+| AIGENSYN/USDT:USDT | +63.22% | $5,366,194.46 |
+| BAS/USDT:USDT | +21.99% | $3,684,229.71 |
+| M/USDT:USDT | +20.59% | $3,036,333.98 |
+| AVAVSTOCK/USDT:USDT | +17.58% | $1,873,546.60 |
+| MYX/USDT:USDT | +14.92% | $2,948,078.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.81% | +4.24% |
-| MYX/USDT:USDT | below_1h_threshold | +3.60% | +4.03% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.44% | +2.87% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.87% | +2.30% |
-| BTW/USDT:USDT | below_1h_threshold | +1.54% | +1.97% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.88% | +2.43% |
+| BTW/USDT:USDT | below_1h_threshold | +1.80% | +2.36% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.78% | +2.33% |
+| BILL/USDT:USDT | below_1h_threshold | +1.42% | +1.98% |
+| XLM/USDT:USDT | below_1h_threshold | +1.16% | +1.71% |
 
 ## 6. 次に見るべき不足
 
