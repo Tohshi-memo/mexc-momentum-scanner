@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T07:20:50.635872+00:00
+- generated_at: 2026-06-30T07:29:46.486335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7871**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T07:20:43.807332+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=59449.0
-- Funnel: target 813 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-30T07:29:41.841337+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=59454.1
+- Funnel: target 813 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +40.95% | $8,618,715.33 |
-| BTW/USDT:USDT | +36.44% | $3,793,095.56 |
-| SYN/USDT:USDT | +24.72% | $24,528,459.96 |
-| M/USDT:USDT | +18.15% | $3,634,356.87 |
-| AVAVSTOCK/USDT:USDT | +17.68% | $1,920,172.60 |
+| AIGENSYN/USDT:USDT | +41.73% | $8,954,052.71 |
+| BTW/USDT:USDT | +38.88% | $4,033,063.64 |
+| SYN/USDT:USDT | +24.71% | $24,891,427.31 |
+| AVAVSTOCK/USDT:USDT | +17.70% | $1,922,907.60 |
+| M/USDT:USDT | +17.38% | $3,657,973.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.05% | +4.25% |
-| BTW/USDT:USDT | below_1h_threshold | +2.49% | +2.69% |
-| M/USDT:USDT | below_1h_threshold | +1.19% | +1.40% |
-| LIT/USDT:USDT | below_1h_threshold | +0.86% | +1.07% |
-| NES/USDT:USDT | below_1h_threshold | +0.74% | +0.94% |
+| SYN/USDT:USDT | below_1h_threshold | +4.49% | +4.69% |
+| BTW/USDT:USDT | below_1h_threshold | +4.37% | +4.57% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.74% | +2.94% |
+| BASED/USDT:USDT | below_1h_threshold | +0.89% | +1.08% |
+| LIT/USDT:USDT | below_1h_threshold | +0.85% | +1.05% |
 
 ## 6. 次に見るべき不足
 
