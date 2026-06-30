@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T03:22:08.557154+00:00
+- generated_at: 2026-06-30T03:30:52.632401+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7855**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T03:22:01.308789+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=59970.1
+- 更新: 2026-06-30T03:30:47.377090+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=59816.1
 - Funnel: target 811 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.9 >= 65=1, 4h RSI 73.6 >= 65=1
+- Strict後reject: 4h RSI 92.2 >= 65=1, 4h RSI 74.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +64.21% | $4,716,379.46 |
-| M/USDT:USDT | +26.41% | $2,777,838.82 |
-| ANSEM/USDT:USDT | +17.86% | $1,060,956.36 |
-| AVAVSTOCK/USDT:USDT | +17.51% | $1,864,348.09 |
-| BAS/USDT:USDT | +17.37% | $3,435,027.15 |
+| AIGENSYN/USDT:USDT | +65.16% | $4,955,577.25 |
+| M/USDT:USDT | +28.00% | $2,848,514.18 |
+| ANSEM/USDT:USDT | +21.23% | $1,075,750.69 |
+| BAS/USDT:USDT | +20.44% | $3,507,043.93 |
+| AVAVSTOCK/USDT:USDT | +17.51% | $1,868,753.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +4.25% | +4.16% |
-| BILL/USDT:USDT | below_1h_threshold | +2.45% | +2.36% |
-| SYN/USDT:USDT | below_1h_threshold | +2.35% | +2.27% |
-| AGLD/USDT:USDT | below_1h_threshold | +2.26% | +2.17% |
-| XLM/USDT:USDT | below_1h_threshold | +1.85% | +1.77% |
+| M/USDT:USDT | below_1h_threshold | +4.73% | +4.90% |
+| MYX/USDT:USDT | below_1h_threshold | +2.60% | +2.77% |
+| SYN/USDT:USDT | below_1h_threshold | +2.42% | +2.60% |
+| XLM/USDT:USDT | below_1h_threshold | +1.82% | +2.00% |
+| BILL/USDT:USDT | below_1h_threshold | +1.74% | +1.92% |
 
 ## 6. 次に見るべき不足
 
