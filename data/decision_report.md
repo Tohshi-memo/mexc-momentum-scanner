@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T09:28:14.508138+00:00
+- generated_at: 2026-06-30T09:37:11.917961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7876**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T09:28:09.554728+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=59280.4
-- Funnel: target 813 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-06-30T09:37:06.863467+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=59288.9
+- Funnel: target 813 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 70.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +41.96% | $5,957,594.52 |
-| AIGENSYN/USDT:USDT | +35.57% | $10,426,695.43 |
-| SYN/USDT:USDT | +32.76% | $29,842,978.62 |
-| M/USDT:USDT | +21.03% | $3,633,988.01 |
-| AVAVSTOCK/USDT:USDT | +17.31% | $1,596,669.41 |
+| BTW/USDT:USDT | +41.26% | $6,097,644.98 |
+| AIGENSYN/USDT:USDT | +34.42% | $10,494,380.58 |
+| SYN/USDT:USDT | +33.07% | $30,118,517.34 |
+| M/USDT:USDT | +21.42% | $3,650,848.24 |
+| AVAVSTOCK/USDT:USDT | +17.31% | $1,598,918.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +4.10% | +4.11% |
-| BTW/USDT:USDT | below_1h_threshold | +3.28% | +3.30% |
-| BILL/USDT:USDT | below_1h_threshold | +3.26% | +3.27% |
-| SLX/USDT:USDT | below_1h_threshold | +2.04% | +2.06% |
-| SYN/USDT:USDT | below_1h_threshold | +1.34% | +1.35% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.72% | +3.72% |
+| BTW/USDT:USDT | below_1h_threshold | +2.48% | +2.48% |
+| BILL/USDT:USDT | below_1h_threshold | +2.32% | +2.32% |
+| CAP/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| SYN/USDT:USDT | below_1h_threshold | +1.69% | +1.69% |
 
 ## 6. 次に見るべき不足
 
