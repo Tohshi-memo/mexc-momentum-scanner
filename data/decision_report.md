@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-06-30T08:24:55.790578+00:00
+- generated_at: 2026-06-30T08:34:00.932501+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7873**
+- closed shadow trades: **7874**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.00% / filled 20/20。**
-- 全期間 MARKET基準: n=7873, expectancy=-0.03%
+- 全期間 MARKET基準: n=7874, expectancy=-0.03%
 - 直近20件 MARKET基準: n=20, expectancy=+2.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | MARKET | 20/20 | 100.0% | +2.00% | **+2.00%** |
 | ASK | 20/20 | 100.0% | +1.98% | **+1.98%** |
 | LIMIT_1PCT | 17/20 | 85.0% | +1.24% | **+1.06%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +1.26% | **+1.01%** |
-| LIMIT_6PCT | 4/20 | 20.0% | +3.42% | **+0.68%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +1.14% | **+0.91%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +3.11% | **+0.78%** |
 
 ### シャドウ上位 LONG
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.05% | **+0.58%** |
 | LIMIT_2PCT_LONG | 16/20 | 80.0% | +0.27% | **+0.21%** |
+| LIMIT_1PCT_LONG | 19/20 | 95.0% | +0.12% | **+0.12%** |
 | LIMIT_9PCT_LONG | 2/20 | 10.0% | +1.10% | **+0.11%** |
 | LIMIT_8PCT_LONG | 10/20 | 50.0% | +0.00% | **+0.00%** |
-| LIMIT_1PCT_LONG | 18/20 | 90.0% | -0.15% | **-0.14%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$259.13** / 初期 $100.00 (+159.13%)
-- 確定: 2354件 (Win 714 / Loss 785 / Flat 855) / skip 2080件
+- 確定: 2354件 (Win 714 / Loss 785 / Flat 855) / skip 2081件
 - 成長率目線: 平均log +0.000404 / 幾何平均 +0.040% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: AGLD/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $259.13
@@ -55,37 +55,38 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.45** / 初期 $100.00 (+6.45%)
-- 確定: 457件 (Win 120 / Loss 119 / Flat 218) / skip 827件
+- 確定: 457件 (Win 120 / Loss 119 / Flat 218) / skip 828件
 - 成長率目線: 平均log +0.000137 / 幾何平均 +0.014% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: GWEI/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $106.45
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T08:24:50.906166+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=59400.5
-- Funnel: target 813 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-06-30T08:33:52.833937+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=59339.1
+- Funnel: target 813 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +39.34% | $5,326,689.88 |
-| AIGENSYN/USDT:USDT | +36.73% | $9,877,707.17 |
-| SYN/USDT:USDT | +27.90% | $26,669,801.69 |
-| M/USDT:USDT | +23.76% | $3,707,561.70 |
-| AVAVSTOCK/USDT:USDT | +16.52% | $2,059,534.61 |
+| AIGENSYN/USDT:USDT | +40.90% | $9,957,613.98 |
+| BTW/USDT:USDT | +40.48% | $5,510,097.85 |
+| SYN/USDT:USDT | +28.57% | $26,936,686.69 |
+| M/USDT:USDT | +21.66% | $3,727,727.87 |
+| AVAVSTOCK/USDT:USDT | +16.68% | $2,061,191.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +4.47% | +4.64% |
-| CAP/USDT:USDT | below_1h_threshold | +3.00% | +3.16% |
-| BTW/USDT:USDT | below_1h_threshold | +2.91% | +3.07% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.85% | +3.01% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.18% | +2.35% |
+| BTW/USDT:USDT | below_1h_threshold | +3.29% | +3.56% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.23% | +3.50% |
+| NES/USDT:USDT | below_1h_threshold | +2.26% | +2.53% |
+| SYN/USDT:USDT | below_1h_threshold | +2.02% | +2.29% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.76% | +2.02% |
 
 ## 6. 次に見るべき不足
 
