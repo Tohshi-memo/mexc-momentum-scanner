@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T04:47:53.576769+00:00
+- generated_at: 2026-06-30T04:57:05.775216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7861**
 
@@ -62,32 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T04:47:44.292329+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=59546.5
-- Funnel: target 816 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-06-30T04:56:56.125277+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=59436.6
+- Funnel: target 816 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +51.15% | $6,145,707.28 |
-| M/USDT:USDT | +24.70% | $3,368,297.61 |
-| ANSEM/USDT:USDT | +22.60% | $1,092,880.84 |
-| SYN/USDT:USDT | +18.49% | $22,928,630.86 |
-| AVAVSTOCK/USDT:USDT | +17.67% | $1,883,169.72 |
+| AIGENSYN/USDT:USDT | +54.00% | $6,225,484.77 |
+| M/USDT:USDT | +21.05% | $3,396,470.10 |
+| SYN/USDT:USDT | +18.69% | $22,997,104.65 |
+| AVAVSTOCK/USDT:USDT | +17.51% | $1,884,684.25 |
+| ANSEM/USDT:USDT | +17.31% | $1,095,811.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.98% | +4.07% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.89% | +3.97% |
-| M/USDT:USDT | below_1h_threshold | +3.39% | +3.48% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.09% |
-| NES/USDT:USDT | below_1h_threshold | +2.45% | +2.53% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.63% | +4.89% |
+| SYN/USDT:USDT | below_1h_threshold | +4.11% | +4.37% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.72% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.62% | +2.89% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.58% | +2.84% |
 
 ## 6. 次に見るべき不足
 
