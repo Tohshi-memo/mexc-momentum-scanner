@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-06-30T15:08:12.137481+00:00
+- generated_at: 2026-06-30T15:17:26.383687+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7913**
+- closed shadow trades: **7914**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7913, expectancy=-0.04%
-- 直近20件 MARKET基準: n=20, expectancy=-2.09%
+- 全期間 MARKET基準: n=7914, expectancy=-0.04%
+- 直近20件 MARKET基準: n=20, expectancy=-2.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -2.09% | **-2.09%** |
+| MARKET | 20/20 | 100.0% | -2.10% | **-2.10%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +2.46% | **+2.46%** |
 | ASK_LONG | 20/20 | 100.0% | +2.12% | **+2.12%** |
-| LIMIT_3PCT_LONG | 7/20 | 35.0% | +2.58% | **+0.90%** |
-| LIMIT_6PCT_LONG | 5/20 | 25.0% | +1.72% | **+0.43%** |
-| LIMIT_5PCT_LONG | 5/20 | 25.0% | +1.31% | **+0.33%** |
+| LIMIT_3PCT_LONG | 7/20 | 35.0% | +2.59% | **+0.90%** |
+| LIMIT_6PCT_LONG | 5/20 | 25.0% | +2.11% | **+0.53%** |
+| LIMIT_5PCT_LONG | 5/20 | 25.0% | +1.49% | **+0.37%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,47 +47,47 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$257.84** / 初期 $100.00 (+157.84%)
-- 確定: 2355件 (Win 714 / Loss 786 / Flat 855) / skip 2119件
+- 確定: 2355件 (Win 714 / Loss 786 / Flat 855) / skip 2120件
 - 成長率目線: 平均log +0.000402 / 幾何平均 +0.040% per trade / maxDD +8.13%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ANSEM/USDT:USDT `LIMIT_6PCT` SL_HIT account -0.50% 残高後 $257.84
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.73** / 初期 $100.00 (+6.73%)
-- 確定: 463件 (Win 124 / Loss 120 / Flat 219) / skip 861件
-- 成長率目線: 平均log +0.000141 / 幾何平均 +0.014% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0340 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: IN/USDT:USDT `LIMIT_6PCT` SL_HIT account +0.15% 残高後 $106.73
+- 確定: 464件 (Win 124 / Loss 120 / Flat 220) / skip 861件
+- 成長率目線: 平均log +0.000140 / 幾何平均 +0.014% per trade / maxDD +3.03%
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0203 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: PYTH/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $106.73
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T15:08:06.049384+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=58307.7
+- 更新: 2026-06-30T15:17:20.338394+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=58243.8
 - Funnel: target 818 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.1 >= 65=1
+- Strict後reject: 4h RSI 93.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IN/USDT:USDT | +91.37% | $5,598,743.98 |
-| ANSEM/USDT:USDT | +40.10% | $1,158,539.03 |
-| SYN/USDT:USDT | +37.28% | $58,771,039.48 |
-| AIGENSYN/USDT:USDT | +35.12% | $14,778,052.53 |
-| H/USDT:USDT | +27.08% | $11,108,375.67 |
+| IN/USDT:USDT | +96.91% | $6,277,128.28 |
+| ANSEM/USDT:USDT | +42.20% | $1,165,219.67 |
+| SYN/USDT:USDT | +40.20% | $59,445,392.42 |
+| AIGENSYN/USDT:USDT | +29.87% | $14,917,016.40 |
+| CAP/USDT:USDT | +28.05% | $5,540,309.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +2.62% | +2.88% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.75% | +2.01% |
-| SYN/USDT:USDT | below_1h_threshold | +1.63% | +1.88% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.72% |
-| KORU/USDT:USDT | below_1h_threshold | +1.41% | +1.67% |
+| SYN/USDT:USDT | below_1h_threshold | +3.84% | +4.20% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +2.35% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.88% | +2.25% |
+| CAP/USDT:USDT | below_1h_threshold | +1.75% | +2.11% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.73% | +2.10% |
 
 ## 6. 次に見るべき不足
 
