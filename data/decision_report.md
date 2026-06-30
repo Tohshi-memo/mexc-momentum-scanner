@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T19:55:18.665031+00:00
+- generated_at: 2026-06-30T20:04:13.816526+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7932**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T19:55:13.645763+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=58739.0
-- Funnel: target 818 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-06-30T20:04:09.103444+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=58764.1
+- Funnel: target 818 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIGENSYN/USDT:USDT | +11.77% | $15,601,721.34 |
-| TAIKO/USDT:USDT | +7.14% | $1,125,461.85 |
-| H/USDT:USDT | +6.79% | $13,286,125.10 |
-| BEAT/USDT:USDT | +5.27% | $17,024,248.10 |
-| SNDKSTOCK/USDT:USDT | +4.00% | $15,606,524.77 |
+| AIGENSYN/USDT:USDT | +10.09% | $15,395,509.61 |
+| TAIKO/USDT:USDT | +7.57% | $1,121,022.09 |
+| H/USDT:USDT | +5.36% | $11,765,853.40 |
+| ORDI/USDT:USDT | +4.19% | $12,032,601.99 |
+| BAS/USDT:USDT | +3.58% | $5,369,586.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.78% | +3.65% |
-| H/USDT:USDT | below_1h_threshold | +2.76% | +2.63% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +1.77% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.16% |
-| BILL/USDT:USDT | below_1h_threshold | +1.29% | +1.15% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.11% | +1.17% |
+| NES/USDT:USDT | below_1h_threshold | +0.76% | +0.83% |
+| BAS/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
+| RE/USDT:USDT | below_1h_threshold | +0.37% | +0.44% |
+| DYDX/USDT:USDT | below_1h_threshold | +0.35% | +0.41% |
 
 ## 6. 次に見るべき不足
 
