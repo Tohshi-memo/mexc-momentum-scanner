@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-06-30T23:34:42.193936+00:00
+- generated_at: 2026-06-30T23:43:50.317906+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7933**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-06-30T23:34:36.472915+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=58564.8
-- Funnel: target 818 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-06-30T23:43:45.550699+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=58571.2
+- Funnel: target 818 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +14.71% | $1,196,641.98 |
-| AIGENSYN/USDT:USDT | +14.12% | $15,018,490.95 |
-| OPG/USDT:USDT | +13.90% | $1,061,797.86 |
-| BESTOCK/USDT:USDT | +12.86% | $1,147,983.24 |
-| BASED/USDT:USDT | +9.14% | $2,456,008.25 |
+| TAIKO/USDT:USDT | +15.71% | $1,205,262.81 |
+| OPG/USDT:USDT | +12.96% | $1,071,548.42 |
+| BESTOCK/USDT:USDT | +12.92% | $1,148,657.44 |
+| AIGENSYN/USDT:USDT | +12.89% | $15,060,138.66 |
+| BASED/USDT:USDT | +9.21% | $2,482,907.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAIKO/USDT:USDT | below_1h_threshold | +2.03% | +2.05% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.99% | +2.01% |
-| BASED/USDT:USDT | below_1h_threshold | +1.84% | +1.86% |
-| XLM/USDT:USDT | below_1h_threshold | +1.42% | +1.44% |
-| NES/USDT:USDT | below_1h_threshold | +1.34% | +1.36% |
+| BAS/USDT:USDT | below_1h_threshold | +3.04% | +3.05% |
+| TAIKO/USDT:USDT | below_1h_threshold | +2.92% | +2.93% |
+| M/USDT:USDT | below_1h_threshold | +2.63% | +2.63% |
+| BASED/USDT:USDT | below_1h_threshold | +1.91% | +1.92% |
+| XLM/USDT:USDT | below_1h_threshold | +1.87% | +1.88% |
 
 ## 6. 次に見るべき不足
 
