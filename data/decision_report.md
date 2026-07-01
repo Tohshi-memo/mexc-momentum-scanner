@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T09:19:48.214158+00:00
+- generated_at: 2026-07-01T09:28:50.884325+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7965**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T09:19:43.419622+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=58943.0
-- Funnel: target 820 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1
+- 更新: 2026-07-01T09:28:45.620222+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=58858.4
+- Funnel: target 820 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 77.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +34.28% | $1,685,483.20 |
-| BASED/USDT:USDT | +24.74% | $10,356,054.52 |
-| BAS/USDT:USDT | +21.67% | $2,926,531.09 |
-| BTW/USDT:USDT | +18.74% | $8,989,728.41 |
-| DYDX/USDT:USDT | +16.37% | $17,320,940.05 |
+| TAIKO/USDT:USDT | +36.14% | $1,749,962.21 |
+| BASED/USDT:USDT | +25.34% | $10,712,131.89 |
+| BTW/USDT:USDT | +20.05% | $9,012,204.73 |
+| TRIA/USDT:USDT | +14.83% | $1,209,514.38 |
+| DYDX/USDT:USDT | +14.50% | $17,752,490.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +4.67% | +4.68% |
-| DYDX/USDT:USDT | below_1h_threshold | +4.45% | +4.47% |
-| BAS/USDT:USDT | below_1h_threshold | +4.05% | +4.06% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.81% | +2.82% |
-| TAC/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
+| ZBT/USDT:USDT | below_1h_threshold | +4.22% | +4.37% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.00% | +3.16% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.57% | +2.72% |
+| FET/USDT:USDT | below_1h_threshold | +1.99% | +2.15% |
+| TIA/USDT:USDT | below_1h_threshold | +1.72% | +1.88% |
 
 ## 6. 次に見るべき不足
 
