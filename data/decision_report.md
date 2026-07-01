@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T16:29:40.383667+00:00
+- generated_at: 2026-07-01T16:38:56.880524+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8000**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T16:29:35.430496+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=60148.0
+- 更新: 2026-07-01T16:38:51.835933+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=60018.8
 - Funnel: target 825 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1
+- Strict後reject: 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| M/USDT:USDT | +8.28% | $7,652,527.09 |
-| VELVET/USDT:USDT | +4.73% | $27,310,024.03 |
-| AIGENSYN/USDT:USDT | +4.38% | $6,374,187.15 |
-| RAVE/USDT:USDT | +3.31% | $6,530,242.45 |
-| VVV/USDT:USDT | +3.12% | $3,710,355.27 |
+| M/USDT:USDT | +9.04% | $7,766,074.54 |
+| SYN/USDT:USDT | +4.31% | $37,250,843.19 |
+| AIGENSYN/USDT:USDT | +4.08% | $6,420,400.67 |
+| TOWNS/USDT:USDT | +3.80% | $1,112,742.95 |
+| BEAT/USDT:USDT | +3.59% | $57,295,435.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.73% | +4.68% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +4.29% | +4.24% |
-| RAVE/USDT:USDT | below_1h_threshold | +3.39% | +3.34% |
-| VVV/USDT:USDT | below_1h_threshold | +3.11% | +3.06% |
-| SYN/USDT:USDT | below_1h_threshold | +2.55% | +2.50% |
+| SYN/USDT:USDT | below_1h_threshold | +4.16% | +4.33% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.09% | +4.25% |
+| TOWNS/USDT:USDT | below_1h_threshold | +3.85% | +4.02% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.30% | +3.47% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.47% | +2.64% |
 
 ## 6. 次に見るべき不足
 
