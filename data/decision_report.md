@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T23:05:49.600337+00:00
+- generated_at: 2026-07-01T23:14:50.157404+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8033**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T23:05:41.616533+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=60294.5
+- 更新: 2026-07-01T23:14:45.313152+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=60231.1
 - Funnel: target 825 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +173.33% | $43,904,516.88 |
-| TLM/USDT:USDT | +77.07% | $5,244,079.01 |
-| NOM/USDT:USDT | +20.06% | $5,667,531.26 |
-| LIT/USDT:USDT | +16.21% | $8,831,138.41 |
-| RIF/USDT:USDT | +12.84% | $2,896,179.61 |
+| TAIKO/USDT:USDT | +176.74% | $46,086,375.86 |
+| TLM/USDT:USDT | +82.50% | $5,475,230.09 |
+| NOM/USDT:USDT | +22.35% | $5,690,917.84 |
+| LIT/USDT:USDT | +17.57% | $8,874,311.31 |
+| COOKIE/USDT:USDT | +13.97% | $1,099,161.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +2.36% | +2.61% |
-| LAB/USDT:USDT | below_1h_threshold | +0.59% | +0.84% |
-| BASED/USDT:USDT | below_1h_threshold | +0.33% | +0.58% |
-| BSB/USDT:USDT | below_1h_threshold | +0.27% | +0.52% |
-| CYS/USDT:USDT | below_1h_threshold | +0.26% | +0.51% |
+| SLX/USDT:USDT | below_1h_threshold | +4.08% | +4.44% |
+| NOM/USDT:USDT | below_1h_threshold | +0.82% | +1.17% |
+| CYS/USDT:USDT | below_1h_threshold | +0.55% | +0.91% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.48% | +0.84% |
+| RIF/USDT:USDT | below_1h_threshold | +0.34% | +0.70% |
 
 ## 6. 次に見るべき不足
 
