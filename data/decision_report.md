@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T13:59:56.119327+00:00
+- generated_at: 2026-07-01T14:09:11.345806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7990**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T13:59:49.334464+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.52% price=59388.2
-- Funnel: target 825 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-01T14:09:06.332764+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=59428.3
+- Funnel: target 825 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +109.71% | $14,655,701.12 |
-| M/USDT:USDT | +50.07% | $6,808,692.59 |
-| BAS/USDT:USDT | +46.72% | $4,102,270.39 |
-| BASED/USDT:USDT | +27.70% | $13,781,003.50 |
-| ZBT/USDT:USDT | +22.89% | $2,860,298.14 |
+| TAIKO/USDT:USDT | +88.42% | $15,260,982.29 |
+| M/USDT:USDT | +60.13% | $6,850,638.79 |
+| BAS/USDT:USDT | +35.52% | $4,316,260.07 |
+| BASED/USDT:USDT | +28.33% | $13,778,647.72 |
+| BTW/USDT:USDT | +21.82% | $6,293,966.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +4.98% | +3.46% |
-| GRASS/USDT:USDT | below_1h_threshold | +4.92% | +3.40% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +3.31% |
-| HIGH/USDT:USDT | below_1h_threshold | +3.81% | +2.29% |
-| NES/USDT:USDT | below_1h_threshold | +3.78% | +2.26% |
+| NES/USDT:USDT | below_1h_threshold | +2.44% | +2.50% |
+| O/USDT:USDT | below_1h_threshold | +1.60% | +1.66% |
+| NKESTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.63% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.35% |
 
 ## 6. 次に見るべき不足
 
