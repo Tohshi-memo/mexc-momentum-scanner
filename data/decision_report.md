@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T17:24:22.010163+00:00
+- generated_at: 2026-07-01T17:33:52.460017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8002**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T17:24:17.261107+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=60112.3
+- 更新: 2026-07-01T17:33:47.725154+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=60074.8
 - Funnel: target 825 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NOM/USDT:USDT | +9.34% | $1,052,896.58 |
-| AIGENSYN/USDT:USDT | +4.61% | $6,308,873.78 |
-| BASED/USDT:USDT | +3.06% | $15,886,170.43 |
-| VELVET/USDT:USDT | +2.34% | $27,410,341.26 |
-| SPCXSTOCK/USDT:USDT | +2.31% | $76,074,905.94 |
+| NOM/USDT:USDT | +12.19% | $1,255,199.72 |
+| AIGENSYN/USDT:USDT | +4.76% | $6,337,743.40 |
+| BASED/USDT:USDT | +3.88% | $16,025,458.33 |
+| BILL/USDT:USDT | +3.12% | $1,954,999.07 |
+| SPCXSTOCK/USDT:USDT | +2.50% | $76,514,461.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.23% | +1.88% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.08% | +1.73% |
-| NOM/USDT:USDT | below_1h_threshold | +1.73% | +1.38% |
-| SYN/USDT:USDT | below_1h_threshold | +1.69% | +1.34% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.08% |
+| NOM/USDT:USDT | below_1h_threshold | +4.03% | +3.74% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.46% | +2.17% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.42% | +2.13% |
+| BILL/USDT:USDT | below_1h_threshold | +1.67% | +1.38% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.31% |
 
 ## 6. 次に見るべき不足
 
