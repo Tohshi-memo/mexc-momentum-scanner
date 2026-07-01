@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-01T10:14:54.455146+00:00
+- generated_at: 2026-07-01T10:24:10.685353+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7967**
+- closed shadow trades: **7968**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.34% / filled 20/20。**
-- 全期間 MARKET基準: n=7967, expectancy=-0.04%
+- 全期間 MARKET基準: n=7968, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=+0.34%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 5/20 | 25.0% | +1.89% | **+0.47%** |
-| LIMIT_3PCT | 15/20 | 75.0% | +0.62% | **+0.47%** |
 | ASK | 20/20 | 100.0% | +0.42% | **+0.42%** |
 | MARKET | 20/20 | 100.0% | +0.34% | **+0.34%** |
-| LIMIT_5PCT | 7/20 | 35.0% | +0.95% | **+0.33%** |
+| LIMIT_3PCT | 15/20 | 75.0% | +0.42% | **+0.31%** |
+| LIMIT_ATR | 16/20 | 80.0% | +0.38% | **+0.31%** |
+| LIMIT_6PCT | 6/20 | 30.0% | +0.91% | **+0.27%** |
 
 ### シャドウ上位 LONG
 
@@ -33,8 +33,8 @@
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 2/3 | 66.7% | +1.15% | **+0.77%** |
 | LIMIT_10PCT_LONG | 3/20 | 15.0% | +4.15% | **+0.62%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.40% | **+0.40%** |
-| ASK_LONG | 20/20 | 100.0% | +0.23% | **+0.23%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.60% | **+0.60%** |
+| ASK_LONG | 20/20 | 100.0% | +0.42% | **+0.42%** |
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.10% | **+0.22%** |
 
 ## 2. $100 Live Portfolio
@@ -46,48 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$259.59** / 初期 $100.00 (+159.59%)
-- 確定: 2366件 (Win 719 / Loss 787 / Flat 860) / skip 2162件
-- 成長率目線: 平均log +0.000403 / 幾何平均 +0.040% per trade / maxDD +8.13%
+- 残高: **$258.29** / 初期 $100.00 (+158.29%)
+- 確定: 2367件 (Win 719 / Loss 788 / Flat 860) / skip 2162件
+- 成長率目線: 平均log +0.000401 / 幾何平均 +0.040% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: TAIKO/USDT:USDT `LIMIT_6PCT` SL_HIT account +0.24% 残高後 $259.59
+- 最新: TAIKO/USDT:USDT `LIMIT_6PCT` SL_HIT account -0.50% 残高後 $258.29
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$107.00** / 初期 $100.00 (+7.00%)
-- 確定: 502件 (Win 128 / Loss 121 / Flat 253) / skip 876件
+- 確定: 502件 (Win 128 / Loss 121 / Flat 253) / skip 877件
 - 成長率目線: 平均log +0.000135 / 幾何平均 +0.013% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $107.00
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T10:14:49.432467+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=58742.3
+- 更新: 2026-07-01T10:24:04.289294+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=58752.7
 - Funnel: target 820 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.5 >= 65=1
+- Strict後reject: 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +63.00% | $2,607,002.48 |
-| BTW/USDT:USDT | +25.19% | $8,566,279.89 |
-| BASED/USDT:USDT | +24.43% | $11,196,648.04 |
-| BAS/USDT:USDT | +22.25% | $2,624,994.54 |
-| DYDX/USDT:USDT | +14.38% | $18,822,632.23 |
+| TAIKO/USDT:USDT | +126.85% | $5,896,755.12 |
+| BTW/USDT:USDT | +26.82% | $8,621,812.99 |
+| BASED/USDT:USDT | +25.80% | $11,382,287.70 |
+| BAS/USDT:USDT | +22.14% | $2,654,832.54 |
+| DYDX/USDT:USDT | +16.31% | $18,922,696.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +2.77% | +3.08% |
-| AALSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.65% |
-| TAC/USDT:USDT | below_1h_threshold | +1.33% | +1.63% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.06% | +1.37% |
-| JUP/USDT:USDT | below_1h_threshold | +0.99% | +1.29% |
+| ZBT/USDT:USDT | below_1h_threshold | +4.32% | +4.61% |
+| TAC/USDT:USDT | below_1h_threshold | +2.99% | +3.28% |
+| BAS/USDT:USDT | below_1h_threshold | +2.64% | +2.93% |
+| BTW/USDT:USDT | below_1h_threshold | +1.98% | +2.26% |
+| JUP/USDT:USDT | below_1h_threshold | +1.16% | +1.45% |
 
 ## 6. 次に見るべき不足
 
