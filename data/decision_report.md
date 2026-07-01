@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-01T08:05:14.906338+00:00
+- generated_at: 2026-07-01T08:14:28.512328+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7960**
+- closed shadow trades: **7961**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7960, expectancy=-0.04%
+- 全期間 MARKET基準: n=7961, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=-1.46%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.40% | **+1.40%** |
 | ASK_LONG | 20/20 | 100.0% | +1.27% | **+1.27%** |
+| LIMIT_10PCT_LONG | 3/20 | 15.0% | +4.15% | **+0.62%** |
 | LIMIT_BB3S_LONG | 2/4 | 50.0% | +1.15% | **+0.58%** |
 | LIMIT_FIB1272_LONG | 6/20 | 30.0% | +1.39% | **+0.42%** |
-| LIMIT_3PCT_LONG | 8/20 | 40.0% | +0.89% | **+0.36%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,45 +47,45 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$258.37** / 初期 $100.00 (+158.37%)
-- 確定: 2359件 (Win 717 / Loss 787 / Flat 855) / skip 2162件
+- 確定: 2360件 (Win 717 / Loss 787 / Flat 856) / skip 2162件
 - 成長率目線: 平均log +0.000402 / 幾何平均 +0.040% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: TAIKO/USDT:USDT `LIMIT_6PCT` SL_HIT account +0.24% 残高後 $258.37
+- 最新: BAS/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $258.37
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$107.00** / 初期 $100.00 (+7.00%)
-- 確定: 500件 (Win 128 / Loss 121 / Flat 251) / skip 871件
+- 確定: 501件 (Win 128 / Loss 121 / Flat 252) / skip 871件
 - 成長率目線: 平均log +0.000135 / 幾何平均 +0.014% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0475 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: TAIKO/USDT:USDT `LIMIT_6PCT` SL_HIT account +0.15% 残高後 $107.00
+- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: BAS/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $107.00
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T08:05:09.044927+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=58715.0
-- Funnel: target 820 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-01T08:14:22.731080+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=58697.6
+- Funnel: target 820 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +37.14% | $1,381,535.06 |
-| BASED/USDT:USDT | +29.48% | $8,256,662.15 |
-| BAS/USDT:USDT | +16.31% | $2,885,762.22 |
-| BTW/USDT:USDT | +12.77% | $9,896,760.77 |
-| AIGENSYN/USDT:USDT | +12.18% | $10,693,883.44 |
+| TAIKO/USDT:USDT | +35.71% | $1,438,841.71 |
+| BASED/USDT:USDT | +29.35% | $8,612,738.97 |
+| BTW/USDT:USDT | +15.88% | $9,913,317.84 |
+| BESTOCK/USDT:USDT | +12.94% | $1,444,703.53 |
+| TRIA/USDT:USDT | +12.54% | $1,178,463.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAIKO/USDT:USDT | below_1h_threshold | +3.80% | +3.84% |
-| BAS/USDT:USDT | below_1h_threshold | +2.65% | +2.69% |
-| JUP/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
-| BASED/USDT:USDT | below_1h_threshold | +0.47% | +0.51% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
+| TAIKO/USDT:USDT | below_1h_threshold | +3.25% | +3.33% |
+| BTW/USDT:USDT | below_1h_threshold | +2.47% | +2.55% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.23% | +1.30% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.94% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.80% | +0.88% |
 
 ## 6. 次に見るべき不足
 
