@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-01T22:56:33.814147+00:00
+- generated_at: 2026-07-01T23:05:49.600337+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8030**
+- closed shadow trades: **8033**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8030, expectancy=-0.04%
+- 全期間 MARKET基準: n=8033, expectancy=-0.03%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,7 +21,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1618 | 3/20 | 15.0% | +2.01% | **+0.30%** |
+| LIMIT_FIB1618 | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_10PCT | 8/20 | 40.0% | -0.14% | **-0.05%** |
 | LIMIT_9PCT | 8/20 | 40.0% | -0.35% | **-0.14%** |
 | MARKET | 20/20 | 100.0% | -0.40% | **-0.40%** |
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +2.80% | **+2.80%** |
-| ASK_LONG | 20/20 | 100.0% | +2.38% | **+2.38%** |
+| ASK_LONG | 20/20 | 100.0% | +2.37% | **+2.37%** |
 | LIMIT_1PCT_LONG | 13/20 | 65.0% | +1.78% | **+1.16%** |
-| LIMIT_7PCT_LONG | 6/20 | 30.0% | +2.97% | **+0.89%** |
 | LIMIT_2PCT_LONG | 11/20 | 55.0% | +1.11% | **+0.61%** |
+| LIMIT_7PCT_LONG | 6/20 | 30.0% | +0.97% | **+0.29%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,48 +46,46 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$294.88** / 初期 $100.00 (+194.88%)
-- 確定: 2427件 (Win 749 / Loss 804 / Flat 874) / skip 2164件
-- 成長率目線: 平均log +0.000446 / 幾何平均 +0.045% per trade / maxDD +8.13%
+- 残高: **$293.40** / 初期 $100.00 (+193.40%)
+- 確定: 2430件 (Win 750 / Loss 806 / Flat 874) / skip 2164件
+- 成長率目線: 平均log +0.000443 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: TAIKO/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $294.88
+- 最新: SLX/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $293.40
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$106.25** / 初期 $100.00 (+6.25%)
-- 確定: 542件 (Win 136 / Loss 128 / Flat 278) / skip 899件
-- 成長率目線: 平均log +0.000112 / 幾何平均 +0.011% per trade / maxDD +3.03%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0374 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: TAIKO/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $106.25
+- 残高: **$105.51** / 初期 $100.00 (+5.51%)
+- 確定: 544件 (Win 136 / Loss 130 / Flat 278) / skip 900件
+- 成長率目線: 平均log +0.000099 / 幾何平均 +0.010% per trade / maxDD +3.19%
+- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: TAIKO/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $105.51
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T22:56:23.229958+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.62% price=60420.4
-- Funnel: target 825 → liquid 158 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.9 >= 65=1, 4h RSI 94.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-01T23:05:41.616533+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=60294.5
+- Funnel: target 825 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +245.00% | $41,159,133.76 |
-| TLM/USDT:USDT | +111.96% | $4,866,402.09 |
-| NOM/USDT:USDT | +26.00% | $5,648,240.76 |
-| LIT/USDT:USDT | +15.83% | $8,879,560.32 |
-| COOKIE/USDT:USDT | +15.34% | $1,091,369.27 |
+| TAIKO/USDT:USDT | +173.33% | $43,904,516.88 |
+| TLM/USDT:USDT | +77.07% | $5,244,079.01 |
+| NOM/USDT:USDT | +20.06% | $5,667,531.26 |
+| LIT/USDT:USDT | +16.21% | $8,831,138.41 |
+| RIF/USDT:USDT | +12.84% | $2,896,179.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.01% | +3.63% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.97% | +3.59% |
-| NOM/USDT:USDT | below_1h_threshold | +2.16% | +2.78% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.67% | +2.29% |
-| CRV/USDT:USDT | below_1h_threshold | +1.62% | +2.24% |
+| SLX/USDT:USDT | below_1h_threshold | +2.36% | +2.61% |
+| LAB/USDT:USDT | below_1h_threshold | +0.59% | +0.84% |
+| BASED/USDT:USDT | below_1h_threshold | +0.33% | +0.58% |
+| BSB/USDT:USDT | below_1h_threshold | +0.27% | +0.52% |
+| CYS/USDT:USDT | below_1h_threshold | +0.26% | +0.51% |
 
 ## 6. 次に見るべき不足
 
