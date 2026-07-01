@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T17:06:02.135525+00:00
+- generated_at: 2026-07-01T17:15:11.215677+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8002**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T17:05:57.333520+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=59806.4
+- 更新: 2026-07-01T17:15:06.285724+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=59879.8
 - Funnel: target 825 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOWNS/USDT:USDT | +2.98% | $1,114,317.72 |
-| VELVET/USDT:USDT | +2.53% | $27,140,495.43 |
-| AIGENSYN/USDT:USDT | +2.19% | $6,272,698.09 |
-| SYN/USDT:USDT | +2.03% | $34,625,030.16 |
-| BASED/USDT:USDT | +1.80% | $15,820,555.34 |
+| TOWNS/USDT:USDT | +2.41% | $1,117,372.71 |
+| AIGENSYN/USDT:USDT | +2.21% | $6,283,657.29 |
+| LIT/USDT:USDT | +2.07% | $3,090,021.21 |
+| BASED/USDT:USDT | +1.89% | $15,854,744.12 |
+| RIF/USDT:USDT | +1.66% | $2,293,103.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.21% | +2.37% |
-| SYN/USDT:USDT | below_1h_threshold | +1.70% | +1.86% |
-| UB/USDT:USDT | below_1h_threshold | +0.95% | +1.11% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.61% | +0.77% |
-| RIF/USDT:USDT | below_1h_threshold | +0.52% | +0.68% |
+| SYN/USDT:USDT | below_1h_threshold | +1.26% | +1.29% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.09% | +1.12% |
+| LIT/USDT:USDT | below_1h_threshold | +1.06% | +1.10% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.53% | +0.57% |
+| RIF/USDT:USDT | below_1h_threshold | +0.52% | +0.56% |
 
 ## 6. 次に見るべき不足
 
