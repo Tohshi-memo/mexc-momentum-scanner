@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T16:20:18.573105+00:00
+- generated_at: 2026-07-01T16:29:40.383667+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8000**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T16:20:12.518247+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=60102.0
-- Funnel: target 825 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-01T16:29:35.430496+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=60148.0
+- Funnel: target 825 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 70.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| M/USDT:USDT | +5.90% | $7,527,873.53 |
-| AIGENSYN/USDT:USDT | +2.89% | $6,320,110.90 |
-| SYN/USDT:USDT | +2.68% | $36,867,982.10 |
-| VVV/USDT:USDT | +2.09% | $3,602,024.49 |
-| VELVET/USDT:USDT | +1.90% | $26,781,520.97 |
+| M/USDT:USDT | +8.28% | $7,652,527.09 |
+| VELVET/USDT:USDT | +4.73% | $27,310,024.03 |
+| AIGENSYN/USDT:USDT | +4.38% | $6,374,187.15 |
+| RAVE/USDT:USDT | +3.31% | $6,530,242.45 |
+| VVV/USDT:USDT | +3.12% | $3,710,355.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.89% | +2.92% |
-| SYN/USDT:USDT | below_1h_threshold | +2.59% | +2.62% |
-| VVV/USDT:USDT | below_1h_threshold | +2.02% | +2.05% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.88% | +1.91% |
-| CAP/USDT:USDT | below_1h_threshold | +1.62% | +1.64% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.73% | +4.68% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +4.29% | +4.24% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.39% | +3.34% |
+| VVV/USDT:USDT | below_1h_threshold | +3.11% | +3.06% |
+| SYN/USDT:USDT | below_1h_threshold | +2.55% | +2.50% |
 
 ## 6. 次に見るべき不足
 
