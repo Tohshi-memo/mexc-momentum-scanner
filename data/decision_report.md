@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T04:30:57.531061+00:00
+- generated_at: 2026-07-01T04:40:12.007927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7949**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T04:30:51.286873+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=59242.0
+- 更新: 2026-07-01T04:40:06.694067+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=59219.7
 - Funnel: target 818 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.8 >= 65=1, 4h RSI 65.3 >= 65=1
+- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 65.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYDX/USDT:USDT | +35.78% | $5,402,640.92 |
-| TAIKO/USDT:USDT | +20.85% | $1,576,572.63 |
-| BTW/USDT:USDT | +18.19% | $11,524,685.12 |
-| BEAT/USDT:USDT | +17.40% | $22,369,479.50 |
-| M/USDT:USDT | +17.12% | $4,415,861.75 |
+| DYDX/USDT:USDT | +33.85% | $5,797,862.06 |
+| BEAT/USDT:USDT | +24.68% | $23,263,569.12 |
+| TAIKO/USDT:USDT | +21.00% | $1,590,708.20 |
+| BTW/USDT:USDT | +18.35% | $11,541,862.04 |
+| TRIA/USDT:USDT | +17.90% | $1,037,861.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NES/USDT:USDT | below_1h_threshold | +2.71% | +2.59% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.54% | +2.42% |
-| SPX/USDT:USDT | below_1h_threshold | +2.34% | +2.21% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.96% | +1.84% |
-| ADA/USDT:USDT | below_1h_threshold | +1.81% | +1.69% |
+| NES/USDT:USDT | below_1h_threshold | +4.73% | +4.65% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.58% | +4.49% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.22% | +3.14% |
+| SPX/USDT:USDT | below_1h_threshold | +2.39% | +2.31% |
+| ADA/USDT:USDT | below_1h_threshold | +1.67% | +1.59% |
 
 ## 6. 次に見るべき不足
 
