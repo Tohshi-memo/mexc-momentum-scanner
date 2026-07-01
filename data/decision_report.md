@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T09:47:14.613945+00:00
+- generated_at: 2026-07-01T09:56:16.353490+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7966**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T09:47:08.385629+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=58846.4
-- Funnel: target 820 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 77.9 >= 65=1
+- 更新: 2026-07-01T09:56:10.600187+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=58948.8
+- Funnel: target 820 → liquid 150 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.2 >= 65=1, 4h RSI 80.2 >= 65=1, 4h RSI 65.9 >= 65=1, 4h RSI 71.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +42.14% | $1,980,899.47 |
-| BASED/USDT:USDT | +26.35% | $11,034,694.95 |
-| BTW/USDT:USDT | +22.04% | $9,058,548.45 |
-| BAS/USDT:USDT | +16.65% | $3,042,321.56 |
-| TRIA/USDT:USDT | +14.66% | $1,226,276.84 |
+| TAIKO/USDT:USDT | +45.71% | $2,139,912.04 |
+| BASED/USDT:USDT | +27.74% | $11,199,029.39 |
+| BTW/USDT:USDT | +23.92% | $9,102,307.01 |
+| BAS/USDT:USDT | +17.99% | $3,071,780.22 |
+| DYDX/USDT:USDT | +17.36% | $18,762,377.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.94% | +3.12% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.70% | +2.88% |
-| DYDX/USDT:USDT | below_1h_threshold | +2.25% | +2.43% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.72% | +1.89% |
-| BTW/USDT:USDT | below_1h_threshold | +1.44% | +1.61% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.91% | +3.91% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.60% | +3.60% |
+| BTW/USDT:USDT | below_1h_threshold | +3.00% | +3.00% |
+| NES/USDT:USDT | below_1h_threshold | +1.32% | +1.32% |
+| FET/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
 
 ## 6. 次に見るべき不足
 
