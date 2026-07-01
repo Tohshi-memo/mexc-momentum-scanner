@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-01T06:54:32.654609+00:00
+- generated_at: 2026-07-01T07:03:45.114614+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7957**
+- closed shadow trades: **7958**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=7957, expectancy=-0.04%
+- 全期間 MARKET基準: n=7958, expectancy=-0.04%
 - 直近20件 MARKET基準: n=20, expectancy=-0.86%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT | 19/20 | 95.0% | +0.77% | **+0.73%** |
+| LIMIT_2PCT | 19/20 | 95.0% | +0.67% | **+0.63%** |
 | LIMIT_FIB1618 | 2/20 | 10.0% | +3.20% | **+0.32%** |
-| LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
-| LIMIT_5PCT | 5/20 | 25.0% | -0.04% | **-0.01%** |
-| LIMIT_3PCT | 16/20 | 80.0% | -0.04% | **-0.03%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
+| LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
+| LIMIT_5PCT | 6/20 | 30.0% | +0.13% | **+0.04%** |
 
 ### シャドウ上位 LONG
 
@@ -34,8 +34,8 @@
 | LIMIT_FIB1272_LONG | 8/20 | 40.0% | +1.55% | **+0.62%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.60% | **+0.60%** |
 | LIMIT_BB3S_LONG | 2/4 | 50.0% | +1.15% | **+0.58%** |
-| ASK_LONG | 20/20 | 100.0% | +0.57% | **+0.57%** |
 | LIMIT_3PCT_LONG | 10/20 | 50.0% | +1.03% | **+0.52%** |
+| ASK_LONG | 20/20 | 100.0% | +0.51% | **+0.51%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,48 +46,46 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$256.55** / 初期 $100.00 (+156.55%)
-- 確定: 2356件 (Win 714 / Loss 787 / Flat 855) / skip 2162件
-- 成長率目線: 平均log +0.000400 / 幾何平均 +0.040% per trade / maxDD +8.13%
+- 残高: **$257.15** / 初期 $100.00 (+157.15%)
+- 確定: 2357件 (Win 715 / Loss 787 / Flat 855) / skip 2162件
+- 成長率目線: 平均log +0.000401 / 幾何平均 +0.040% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AIGENSYN/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $256.55
+- 最新: BASED/USDT:USDT `LIMIT_6PCT` SL_HIT account +0.24% 残高後 $257.15
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.84** / 初期 $100.00 (+6.84%)
-- 確定: 499件 (Win 127 / Loss 121 / Flat 251) / skip 869件
+- 確定: 499件 (Win 127 / Loss 121 / Flat 251) / skip 870件
 - 成長率目線: 平均log +0.000133 / 幾何平均 +0.013% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $106.84
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T06:54:25.375684+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.69% price=58716.0
-- Funnel: target 823 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-01T07:03:39.213995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=58673.7
+- Funnel: target 820 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYDX/USDT:USDT | +25.78% | $11,609,718.68 |
-| TAIKO/USDT:USDT | +24.00% | $1,328,073.76 |
-| BASED/USDT:USDT | +20.36% | $4,932,886.20 |
-| M/USDT:USDT | +14.79% | $4,375,882.47 |
-| TRIA/USDT:USDT | +12.71% | $1,108,580.32 |
+| BASED/USDT:USDT | +27.59% | $5,336,688.51 |
+| TAIKO/USDT:USDT | +23.57% | $1,303,590.11 |
+| DYDX/USDT:USDT | +22.45% | $11,965,094.53 |
+| BTW/USDT:USDT | +15.78% | $10,937,471.35 |
+| TRIA/USDT:USDT | +12.93% | $1,108,722.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +2.82% | +3.51% |
-| RIF/USDT:USDT | below_1h_threshold | +2.06% | +2.75% |
-| O/USDT:USDT | below_1h_threshold | +2.01% | +2.70% |
-| BTW/USDT:USDT | below_1h_threshold | +1.00% | +1.69% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.90% | +1.59% |
+| BASED/USDT:USDT | below_1h_threshold | +2.44% | +2.53% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.67% | +1.76% |
+| TAIKO/USDT:USDT | below_1h_threshold | +1.53% | +1.62% |
+| O/USDT:USDT | below_1h_threshold | +1.39% | +1.48% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.17% | +1.26% |
 
 ## 6. 次に見るべき不足
 
