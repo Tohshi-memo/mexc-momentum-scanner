@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-01T11:18:55.221724+00:00
+- generated_at: 2026-07-01T11:27:57.157667+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **7977**
+- closed shadow trades: **7978**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.00% / filled 20/20。**
-- 全期間 MARKET基準: n=7977, expectancy=-0.03%
+- 全期間 MARKET基準: n=7978, expectancy=-0.03%
 - 直近20件 MARKET基準: n=20, expectancy=+2.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.00% | **+2.00%** |
 | ASK | 20/20 | 100.0% | +1.08% | **+1.08%** |
+| LIMIT_ATR | 13/20 | 65.0% | +1.10% | **+0.71%** |
 | LIMIT_6PCT | 9/20 | 45.0% | +1.26% | **+0.57%** |
-| LIMIT_ATR | 13/20 | 65.0% | +0.69% | **+0.45%** |
-| LIMIT_7PCT | 5/20 | 25.0% | +1.12% | **+0.28%** |
+| LIMIT_FIB1618 | 3/20 | 15.0% | +1.19% | **+0.18%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$260.18** / 初期 $100.00 (+160.18%)
-- 確定: 2376件 (Win 721 / Loss 789 / Flat 866) / skip 2162件
+- 確定: 2377件 (Win 721 / Loss 789 / Flat 867) / skip 2162件
 - 成長率目線: 平均log +0.000402 / 幾何平均 +0.040% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_8PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: TAIKO/USDT:USDT `LIMIT_8PCT_LONG` EXPIRED account +0.00% 残高後 $260.18
@@ -55,39 +55,39 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$107.00** / 初期 $100.00 (+7.00%)
-- 確定: 502件 (Win 128 / Loss 121 / Flat 253) / skip 886件
+- 確定: 502件 (Win 128 / Loss 121 / Flat 253) / skip 887件
 - 成長率目線: 平均log +0.000135 / 幾何平均 +0.013% per trade / maxDD +3.03%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $107.00
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T11:18:47.914590+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=58669.4
+- 更新: 2026-07-01T11:27:50.858144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=58696.8
 - Funnel: target 825 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.7 >= 65=1
+- Strict後reject: 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +81.57% | $9,590,406.13 |
-| M/USDT:USDT | +44.11% | $6,042,195.46 |
-| BASED/USDT:USDT | +29.13% | $11,978,010.92 |
-| BAS/USDT:USDT | +24.38% | $2,575,802.08 |
-| BTW/USDT:USDT | +22.24% | $7,893,427.84 |
+| TAIKO/USDT:USDT | +86.14% | $9,894,701.90 |
+| M/USDT:USDT | +41.28% | $6,256,909.53 |
+| BASED/USDT:USDT | +29.60% | $12,060,438.37 |
+| BTW/USDT:USDT | +26.77% | $7,959,481.72 |
+| BAS/USDT:USDT | +24.61% | $2,583,186.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOWNS/USDT:USDT | below_1h_threshold | +2.12% | +2.06% |
-| KAS/USDT:USDT | below_1h_threshold | +2.12% | +2.06% |
-| NES/USDT:USDT | below_1h_threshold | +1.94% | +1.88% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.41% | +1.35% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.34% |
+| O/USDT:USDT | below_1h_threshold | +3.23% | +3.12% |
+| NES/USDT:USDT | below_1h_threshold | +3.06% | +2.95% |
+| KAS/USDT:USDT | below_1h_threshold | +2.48% | +2.37% |
+| TOWNS/USDT:USDT | below_1h_threshold | +1.52% | +1.42% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.27% | +1.16% |
 
 ## 6. 次に見るべき不足
 
