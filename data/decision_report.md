@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T05:44:23.789426+00:00
+- generated_at: 2026-07-01T05:53:42.087775+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7956**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T05:44:15.915131+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=59155.3
+- 更新: 2026-07-01T05:53:37.357727+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=59120.0
 - Funnel: target 823 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DYDX/USDT:USDT | +34.26% | $8,937,290.10 |
-| TAIKO/USDT:USDT | +24.42% | $1,335,303.29 |
-| BASED/USDT:USDT | +13.46% | $4,380,631.60 |
-| BEAT/USDT:USDT | +12.59% | $29,253,221.86 |
-| OPG/USDT:USDT | +12.45% | $1,202,096.01 |
+| DYDX/USDT:USDT | +33.39% | $9,359,414.99 |
+| TAIKO/USDT:USDT | +24.14% | $1,350,895.52 |
+| BEAT/USDT:USDT | +15.06% | $30,631,065.06 |
+| OPG/USDT:USDT | +13.31% | $1,206,718.01 |
+| TRIA/USDT:USDT | +12.93% | $1,092,288.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NES/USDT:USDT | below_1h_threshold | +2.46% | +2.72% |
-| XPL/USDT:USDT | below_1h_threshold | +1.95% | +2.21% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.08% | +1.34% |
-| OPG/USDT:USDT | below_1h_threshold | +0.84% | +1.10% |
-| ENA/USDT:USDT | below_1h_threshold | +0.65% | +0.90% |
+| NES/USDT:USDT | below_1h_threshold | +2.46% | +2.78% |
+| OPG/USDT:USDT | below_1h_threshold | +1.68% | +2.00% |
+| O/USDT:USDT | below_1h_threshold | +1.35% | +1.67% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.14% | +1.46% |
+| XPL/USDT:USDT | below_1h_threshold | +1.01% | +1.33% |
 
 ## 6. 次に見るべき不足
 
