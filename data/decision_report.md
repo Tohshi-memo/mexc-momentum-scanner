@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T23:14:50.157404+00:00
+- generated_at: 2026-07-01T23:24:08.520395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8033**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T23:14:45.313152+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=60231.1
-- Funnel: target 825 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-01T23:24:03.420548+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=60170.1
+- Funnel: target 825 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +176.74% | $46,086,375.86 |
-| TLM/USDT:USDT | +82.50% | $5,475,230.09 |
-| NOM/USDT:USDT | +22.35% | $5,690,917.84 |
-| LIT/USDT:USDT | +17.57% | $8,874,311.31 |
-| COOKIE/USDT:USDT | +13.97% | $1,099,161.56 |
+| TAIKO/USDT:USDT | +289.60% | $49,530,712.87 |
+| TLM/USDT:USDT | +82.94% | $5,642,488.28 |
+| NOM/USDT:USDT | +20.12% | $5,702,517.13 |
+| LIT/USDT:USDT | +17.73% | $8,952,348.92 |
+| COOKIE/USDT:USDT | +15.12% | $1,103,865.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +4.08% | +4.44% |
-| NOM/USDT:USDT | below_1h_threshold | +0.82% | +1.17% |
-| CYS/USDT:USDT | below_1h_threshold | +0.55% | +0.91% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.48% | +0.84% |
-| RIF/USDT:USDT | below_1h_threshold | +0.34% | +0.70% |
+| SLX/USDT:USDT | below_1h_threshold | +4.87% | +5.33% |
+| SYN/USDT:USDT | below_1h_threshold | +1.38% | +1.84% |
+| BASED/USDT:USDT | below_1h_threshold | +0.91% | +1.37% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.85% | +1.31% |
+| COOKIE/USDT:USDT | below_1h_threshold | +0.60% | +1.06% |
 
 ## 6. 次に見るべき不足
 
