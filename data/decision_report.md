@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T11:37:10.870134+00:00
+- generated_at: 2026-07-01T11:46:36.974922+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7979**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T11:37:04.608919+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=58695.1
-- Funnel: target 825 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.8 >= 65=1
+- 更新: 2026-07-01T11:46:29.758504+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=58657.5
+- Funnel: target 825 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +94.28% | $10,211,942.23 |
-| M/USDT:USDT | +39.84% | $6,360,421.01 |
-| BASED/USDT:USDT | +28.63% | $12,182,167.96 |
-| BAS/USDT:USDT | +25.66% | $2,614,318.79 |
-| BTW/USDT:USDT | +24.05% | $8,016,285.61 |
+| TAIKO/USDT:USDT | +89.42% | $10,442,765.68 |
+| M/USDT:USDT | +41.29% | $6,388,864.89 |
+| BASED/USDT:USDT | +28.11% | $12,344,462.68 |
+| BAS/USDT:USDT | +26.23% | $2,632,758.95 |
+| BTW/USDT:USDT | +22.43% | $8,081,988.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NES/USDT:USDT | below_1h_threshold | +4.44% | +4.34% |
-| O/USDT:USDT | below_1h_threshold | +3.19% | +3.09% |
-| KAS/USDT:USDT | below_1h_threshold | +2.28% | +2.18% |
-| TOWNS/USDT:USDT | below_1h_threshold | +1.58% | +1.47% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.13% | +1.02% |
+| O/USDT:USDT | below_1h_threshold | +2.85% | +2.80% |
+| KAS/USDT:USDT | below_1h_threshold | +2.18% | +2.14% |
+| TOWNS/USDT:USDT | below_1h_threshold | +1.96% | +1.92% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.90% | +1.86% |
+| BAS/USDT:USDT | below_1h_threshold | +1.65% | +1.61% |
 
 ## 6. 次に見るべき不足
 
