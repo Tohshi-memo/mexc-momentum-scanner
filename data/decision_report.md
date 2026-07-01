@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T00:55:35.924467+00:00
+- generated_at: 2026-07-01T01:04:27.460453+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7938**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T00:55:23.916284+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=58537.1
-- Funnel: target 818 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-01T01:04:22.684690+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=58438.1
+- Funnel: target 818 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +19.57% | $1,482,504.78 |
-| AIGENSYN/USDT:USDT | +18.76% | $14,659,045.37 |
-| OPG/USDT:USDT | +15.18% | $1,106,261.15 |
-| BASED/USDT:USDT | +12.94% | $3,001,048.51 |
-| BESTOCK/USDT:USDT | +11.92% | $1,181,561.88 |
+| TAIKO/USDT:USDT | +20.28% | $1,500,443.01 |
+| AIGENSYN/USDT:USDT | +17.34% | $13,939,241.02 |
+| OPG/USDT:USDT | +15.61% | $1,101,102.65 |
+| BASED/USDT:USDT | +13.42% | $3,088,475.91 |
+| BESTOCK/USDT:USDT | +11.88% | $1,178,776.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +3.28% | +3.40% |
-| OPG/USDT:USDT | below_1h_threshold | +3.13% | +3.24% |
-| MYX/USDT:USDT | below_1h_threshold | +2.97% | +3.09% |
-| XLM/USDT:USDT | below_1h_threshold | +2.84% | +2.95% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.44% | +2.55% |
+| TAIKO/USDT:USDT | below_1h_threshold | +1.94% | +2.13% |
+| BAS/USDT:USDT | below_1h_threshold | +1.10% | +1.29% |
+| OPG/USDT:USDT | below_1h_threshold | +0.82% | +1.01% |
+| M/USDT:USDT | below_1h_threshold | +0.70% | +0.88% |
+| RIF/USDT:USDT | below_1h_threshold | +0.47% | +0.66% |
 
 ## 6. 次に見るべき不足
 
