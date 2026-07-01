@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-01T07:03:45.114614+00:00
+- generated_at: 2026-07-01T07:13:23.125509+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **7958**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-01T07:03:39.213995+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=58673.7
+- 更新: 2026-07-01T07:13:18.325167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=58655.0
 - Funnel: target 820 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASED/USDT:USDT | +27.59% | $5,336,688.51 |
-| TAIKO/USDT:USDT | +23.57% | $1,303,590.11 |
-| DYDX/USDT:USDT | +22.45% | $11,965,094.53 |
-| BTW/USDT:USDT | +15.78% | $10,937,471.35 |
-| TRIA/USDT:USDT | +12.93% | $1,108,722.58 |
+| BASED/USDT:USDT | +25.41% | $5,677,342.41 |
+| TAIKO/USDT:USDT | +21.28% | $1,314,730.87 |
+| BTW/USDT:USDT | +16.19% | $10,962,592.61 |
+| DYDX/USDT:USDT | +14.50% | $12,808,854.74 |
+| TRIA/USDT:USDT | +13.94% | $1,137,272.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASED/USDT:USDT | below_1h_threshold | +2.44% | +2.53% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.67% | +1.76% |
-| TAIKO/USDT:USDT | below_1h_threshold | +1.53% | +1.62% |
-| O/USDT:USDT | below_1h_threshold | +1.39% | +1.48% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.17% | +1.26% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.33% | +3.45% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +2.08% | +2.20% |
+| O/USDT:USDT | below_1h_threshold | +1.77% | +1.90% |
+| BTW/USDT:USDT | below_1h_threshold | +1.15% | +1.27% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.94% | +1.06% |
 
 ## 6. 次に見るべき不足
 
