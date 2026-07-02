@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T07:46:35.266750+00:00
+- generated_at: 2026-07-02T07:56:06.919742+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8054**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T07:46:30.427848+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=60101.0
+- 更新: 2026-07-02T07:56:02.076363+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=60094.8
 - Funnel: target 830 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +101.34% | $93,142,500.26 |
-| BIRB/USDT:USDT | +52.18% | $4,797,367.28 |
-| RIF/USDT:USDT | +35.12% | $5,874,189.20 |
-| TLM/USDT:USDT | +27.79% | $8,228,468.48 |
-| SYN/USDT:USDT | +20.29% | $22,732,950.50 |
+| TAIKO/USDT:USDT | +106.03% | $93,428,425.48 |
+| BIRB/USDT:USDT | +49.66% | $4,848,748.47 |
+| RIF/USDT:USDT | +33.88% | $5,914,747.56 |
+| TLM/USDT:USDT | +27.57% | $8,264,602.79 |
+| LIT/USDT:USDT | +20.58% | $11,436,568.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.18% | +4.42% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.56% | +2.80% |
-| NES/USDT:USDT | below_1h_threshold | +2.56% | +2.80% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.91% | +2.15% |
-| BSB/USDT:USDT | below_1h_threshold | +1.72% | +1.97% |
+| BTW/USDT:USDT | below_1h_threshold | +2.20% | +2.46% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.96% | +2.22% |
+| LIT/USDT:USDT | below_1h_threshold | +1.79% | +2.04% |
+| BSB/USDT:USDT | below_1h_threshold | +1.42% | +1.67% |
+| SYN/USDT:USDT | below_1h_threshold | +1.36% | +1.61% |
 
 ## 6. 次に見るべき不足
 
