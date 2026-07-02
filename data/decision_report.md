@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-07-02T15:50:28.424446+00:00
+- generated_at: 2026-07-02T15:57:59.852802+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8091**
+- closed shadow trades: **8092**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8091, expectancy=-0.02%
-- 直近20件 MARKET基準: n=20, expectancy=-0.90%
+- 全期間 MARKET基準: n=8092, expectancy=-0.02%
+- 直近20件 MARKET基準: n=20, expectancy=-0.30%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.90% | **-0.90%** |
+| MARKET | 20/20 | 100.0% | -0.30% | **-0.30%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_10PCT | 4/20 | 20.0% | +3.73% | **+0.75%** |
 | LIMIT_FIB1618 | 2/20 | 10.0% | +5.22% | **+0.52%** |
-| LIMIT_9PCT | 4/20 | 20.0% | +1.15% | **+0.23%** |
-| LIMIT_7PCT | 6/20 | 30.0% | -0.60% | **-0.18%** |
-| LIMIT_BB3S | 7/19 | 36.8% | -0.66% | **-0.24%** |
+| LIMIT_10PCT | 3/20 | 15.0% | +3.15% | **+0.47%** |
+| LIMIT_9PCT | 3/20 | 15.0% | +2.86% | **+0.43%** |
+| LIMIT_7PCT | 5/20 | 25.0% | +0.08% | **+0.02%** |
+| ASK | 20/20 | 100.0% | -0.00% | **-0.00%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 16/20 | 80.0% | +2.77% | **+2.21%** |
-| LIMIT_2PCT_LONG | 13/20 | 65.0% | +2.57% | **+1.67%** |
-| LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.41% | **+1.32%** |
-| MARKET_LONG | 20/20 | 100.0% | +1.18% | **+1.18%** |
-| ASK_LONG | 20/20 | 100.0% | +0.45% | **+0.45%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | +2.37% | **+2.01%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +2.10% | **+1.47%** |
+| LIMIT_3PCT_LONG | 12/20 | 60.0% | +1.87% | **+1.12%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.58% | **+0.58%** |
+| LIMIT_7PCT_LONG | 6/20 | 30.0% | +0.88% | **+0.26%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$284.67** / 初期 $100.00 (+184.67%)
-- 確定: 2444件 (Win 754 / Loss 816 / Flat 874) / skip 2208件
+- 確定: 2444件 (Win 754 / Loss 816 / Flat 874) / skip 2209件
 - 成長率目線: 平均log +0.000428 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LAB/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $284.67
@@ -55,39 +55,38 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.14** / 初期 $100.00 (+5.14%)
-- 確定: 556件 (Win 136 / Loss 131 / Flat 289) / skip 946件
+- 確定: 556件 (Win 136 / Loss 131 / Flat 289) / skip 947件
 - 成長率目線: 平均log +0.000090 / 幾何平均 +0.009% per trade / maxDD +3.53%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: NOM/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $105.14
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T15:50:20.819212+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=61583.4
-- Funnel: target 834 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.2 >= 65=1
+- 更新: 2026-07-02T15:57:53.256481+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=61554.1
+- Funnel: target 834 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TLM/USDT:USDT | +111.07% | $24,784,787.38 |
-| BIRB/USDT:USDT | +68.79% | $9,615,285.10 |
-| M/USDT:USDT | +45.62% | $5,904,207.34 |
-| US/USDT:USDT | +29.38% | $2,392,382.21 |
-| BREV/USDT:USDT | +26.80% | $6,458,311.03 |
+| TLM/USDT:USDT | +100.11% | $25,265,775.57 |
+| BIRB/USDT:USDT | +67.54% | $9,656,571.24 |
+| M/USDT:USDT | +42.01% | $5,940,279.37 |
+| US/USDT:USDT | +31.97% | $2,407,338.73 |
+| BREV/USDT:USDT | +27.80% | $6,462,789.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +3.34% | +3.48% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.15% | +3.29% |
-| SLX/USDT:USDT | below_1h_threshold | +2.99% | +3.13% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.95% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.94% | +2.08% |
+| RE/USDT:USDT | below_1h_threshold | +3.59% | +3.78% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.92% | +3.10% |
+| SLX/USDT:USDT | below_1h_threshold | +2.68% | +2.87% |
+| AVAVSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.78% |
+| TLM/USDT:USDT | below_1h_threshold | +2.43% | +2.62% |
 
 ## 6. 次に見るべき不足
 
