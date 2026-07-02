@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T18:23:44.927070+00:00
+- generated_at: 2026-07-02T18:33:23.522059+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8097**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T18:23:39.591221+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=61778.6
+- 更新: 2026-07-02T18:33:17.969917+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=61810.0
 - Funnel: target 834 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1, 4h RSI 69.1 >= 65=1
+- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +25.07% | $3,070,676.01 |
-| ALLO/USDT:USDT | +14.71% | $17,314,025.29 |
-| BASED/USDT:USDT | +12.59% | $14,026,440.66 |
-| TLM/USDT:USDT | +7.38% | $29,921,876.56 |
-| O/USDT:USDT | +6.91% | $2,959,886.98 |
+| MAGMA/USDT:USDT | +24.65% | $3,295,841.91 |
+| ALLO/USDT:USDT | +14.23% | $17,834,191.37 |
+| BASED/USDT:USDT | +11.78% | $14,086,182.36 |
+| TLM/USDT:USDT | +7.49% | $30,098,446.32 |
+| O/USDT:USDT | +6.39% | $2,966,929.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.19% | +3.97% |
-| TAIKO/USDT:USDT | below_1h_threshold | +3.78% | +3.56% |
-| TAC/USDT:USDT | below_1h_threshold | +3.16% | +2.94% |
-| AIGENSYN/USDT:USDT | below_1h_threshold | +2.72% | +2.50% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.97% | +1.75% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.50% | +3.23% |
+| BREV/USDT:USDT | below_1h_threshold | +3.14% | +2.87% |
+| TAIKO/USDT:USDT | below_1h_threshold | +2.90% | +2.63% |
+| US/USDT:USDT | below_1h_threshold | +2.82% | +2.55% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.68% |
 
 ## 6. 次に見るべき不足
 
