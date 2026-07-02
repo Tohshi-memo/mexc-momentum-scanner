@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T08:50:19.006791+00:00
+- generated_at: 2026-07-02T08:59:41.284925+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8055**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T08:50:12.670069+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=60472.3
+- 更新: 2026-07-02T08:59:35.945607+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=60478.6
 - Funnel: target 829 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 72.7 >= 65=1
+- Strict後reject: 4h RSI 88.2 >= 65=1, 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +85.47% | $96,921,132.62 |
-| BREV/USDT:USDT | +51.95% | $2,163,748.00 |
-| BIRB/USDT:USDT | +50.71% | $5,228,336.47 |
-| RIF/USDT:USDT | +28.14% | $5,976,583.54 |
-| TLM/USDT:USDT | +25.80% | $8,621,687.96 |
+| TAIKO/USDT:USDT | +86.58% | $97,382,255.61 |
+| BIRB/USDT:USDT | +54.38% | $5,266,730.58 |
+| BREV/USDT:USDT | +49.36% | $2,353,116.22 |
+| RIF/USDT:USDT | +29.29% | $6,028,747.46 |
+| TLM/USDT:USDT | +27.02% | $8,648,585.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.87% | +1.29% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.73% | +1.15% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.61% | +1.03% |
-| ENA/USDT:USDT | below_1h_threshold | +1.28% | +0.70% |
-| ADA/USDT:USDT | below_1h_threshold | +0.97% | +0.39% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.06% | +1.48% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.91% | +1.33% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.64% | +1.05% |
+| NOM/USDT:USDT | below_1h_threshold | +1.55% | +0.96% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.34% | +0.75% |
 
 ## 6. 次に見るべき不足
 
