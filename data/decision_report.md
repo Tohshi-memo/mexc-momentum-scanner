@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T21:15:40.055693+00:00
+- generated_at: 2026-07-02T21:25:05.050982+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8109**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T21:15:34.080864+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=61509.1
+- 更新: 2026-07-02T21:25:00.182379+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=61515.0
 - Funnel: target 834 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +15.64% | $4,598,117.59 |
-| LAB/USDT:USDT | +12.97% | $11,683,927.89 |
-| PIPPIN/USDT:USDT | +12.93% | $3,831,321.40 |
-| TAIKO/USDT:USDT | +12.17% | $101,317,975.24 |
-| BASED/USDT:USDT | +10.46% | $14,535,056.15 |
+| MAGMA/USDT:USDT | +18.33% | $4,643,997.98 |
+| LAB/USDT:USDT | +14.87% | $12,013,314.06 |
+| BASED/USDT:USDT | +12.91% | $14,627,661.18 |
+| PIPPIN/USDT:USDT | +12.82% | $3,874,437.55 |
+| TAIKO/USDT:USDT | +9.47% | $101,388,986.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +1.52% | +1.59% |
-| US/USDT:USDT | below_1h_threshold | +1.20% | +1.28% |
-| NES/USDT:USDT | below_1h_threshold | +1.16% | +1.24% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.08% | +1.15% |
-| LAB/USDT:USDT | below_1h_threshold | +0.94% | +1.01% |
+| UB/USDT:USDT | below_1h_threshold | +3.61% | +3.68% |
+| LAB/USDT:USDT | below_1h_threshold | +2.65% | +2.71% |
+| BIRB/USDT:USDT | below_1h_threshold | +2.37% | +2.43% |
+| NES/USDT:USDT | below_1h_threshold | +2.13% | +2.20% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.73% | +1.80% |
 
 ## 6. 次に見るべき不足
 
