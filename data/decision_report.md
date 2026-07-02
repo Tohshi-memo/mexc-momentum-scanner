@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T22:41:41.494332+00:00
+- generated_at: 2026-07-02T22:51:19.017230+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8114**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T22:41:35.319370+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=61509.6
-- Funnel: target 834 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1
+- 更新: 2026-07-02T22:51:13.723646+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=61500.0
+- Funnel: target 834 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 76.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| THE/USDT:USDT | +39.57% | $1,502,105.69 |
-| PIPPIN/USDT:USDT | +16.16% | $4,842,326.91 |
-| MAGMA/USDT:USDT | +15.99% | $4,842,885.81 |
-| LAB/USDT:USDT | +14.14% | $13,095,936.17 |
-| GUA/USDT:USDT | +10.36% | $8,923,274.07 |
+| THE/USDT:USDT | +38.79% | $1,561,152.00 |
+| MAGMA/USDT:USDT | +19.86% | $4,888,012.15 |
+| PIPPIN/USDT:USDT | +16.98% | $4,942,765.28 |
+| LAB/USDT:USDT | +15.59% | $13,316,684.95 |
+| TAIKO/USDT:USDT | +10.53% | $99,786,436.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +2.32% | +2.41% |
-| SYN/USDT:USDT | below_1h_threshold | +2.02% | +2.12% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.55% | +1.65% |
-| O/USDT:USDT | below_1h_threshold | +1.39% | +1.49% |
-| AERO/USDT:USDT | below_1h_threshold | +1.15% | +1.25% |
+| O/USDT:USDT | below_1h_threshold | +2.61% | +2.72% |
+| TAIKO/USDT:USDT | below_1h_threshold | +1.81% | +1.92% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.79% | +1.90% |
+| LAB/USDT:USDT | below_1h_threshold | +1.74% | +1.85% |
+| AERO/USDT:USDT | below_1h_threshold | +1.65% | +1.76% |
 
 ## 6. 次に見るべき不足
 
