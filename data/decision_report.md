@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T19:08:54.786275+00:00
+- generated_at: 2026-07-02T19:14:39.322643+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8097**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T19:08:49.865631+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=61638.3
-- Funnel: target 834 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-02T19:14:35.977697+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=61632.6
+- Funnel: target 834 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +18.39% | $3,726,965.98 |
-| ALLO/USDT:USDT | +11.82% | $19,319,650.46 |
-| BASED/USDT:USDT | +11.29% | $13,917,900.36 |
-| BICO/USDT:USDT | +7.69% | $1,030,392.89 |
-| TAIKO/USDT:USDT | +6.61% | $100,865,047.69 |
+| MAGMA/USDT:USDT | +19.01% | $3,766,880.69 |
+| BASED/USDT:USDT | +12.13% | $13,971,684.23 |
+| ALLO/USDT:USDT | +10.29% | $19,618,499.60 |
+| BICO/USDT:USDT | +8.64% | $1,041,503.45 |
+| O/USDT:USDT | +6.95% | $2,848,337.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +3.33% | +3.48% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.27% | +2.43% |
-| TAIKO/USDT:USDT | below_1h_threshold | +1.48% | +1.63% |
-| RE/USDT:USDT | below_1h_threshold | +0.86% | +1.02% |
-| US/USDT:USDT | below_1h_threshold | +0.75% | +0.90% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.33% | +2.49% |
+| TLM/USDT:USDT | below_1h_threshold | +2.02% | +2.18% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.76% | +1.93% |
+| TAIKO/USDT:USDT | below_1h_threshold | +1.56% | +1.72% |
+| RE/USDT:USDT | below_1h_threshold | +1.23% | +1.39% |
 
 ## 6. 次に見るべき不足
 
