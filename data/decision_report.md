@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T00:48:43.469529+00:00
+- generated_at: 2026-07-02T00:57:42.443919+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8039**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T00:48:37.321748+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.56% price=59663.4
+- 更新: 2026-07-02T00:57:37.397822+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.56% price=59664.1
 - Funnel: target 825 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAIKO/USDT:USDT | +244.84% | $64,941,522.13 |
-| TLM/USDT:USDT | +46.40% | $7,018,901.46 |
-| RIF/USDT:USDT | +19.55% | $3,048,940.71 |
-| SLX/USDT:USDT | +17.18% | $7,957,992.26 |
-| H/USDT:USDT | +15.03% | $6,860,357.38 |
+| TAIKO/USDT:USDT | +249.44% | $65,487,594.04 |
+| TLM/USDT:USDT | +47.28% | $7,060,185.45 |
+| RIF/USDT:USDT | +20.97% | $3,112,802.64 |
+| H/USDT:USDT | +16.47% | $6,904,049.30 |
+| SLX/USDT:USDT | +16.40% | $8,040,287.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +3.59% | +4.15% |
-| ZBT/USDT:USDT | below_1h_threshold | +3.17% | +3.73% |
-| SLX/USDT:USDT | below_1h_threshold | +2.88% | +3.44% |
-| B/USDT:USDT | below_1h_threshold | +2.45% | +3.01% |
-| LAB/USDT:USDT | below_1h_threshold | +2.13% | +2.69% |
+| RIF/USDT:USDT | below_1h_threshold | +4.53% | +5.09% |
+| ZBT/USDT:USDT | below_1h_threshold | +4.10% | +4.66% |
+| SLX/USDT:USDT | below_1h_threshold | +2.65% | +3.21% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.99% | +1.55% |
+| B/USDT:USDT | below_1h_threshold | +0.89% | +1.45% |
 
 ## 6. 次に見るべき不足
 
