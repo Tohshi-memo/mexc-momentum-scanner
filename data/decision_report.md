@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T13:32:45.986203+00:00
+- generated_at: 2026-07-02T13:42:35.596268+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8084**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T13:32:41.056991+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=61777.5
-- Funnel: target 834 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-02T13:42:30.390161+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=61868.8
+- Funnel: target 834 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BIRB/USDT:USDT | +68.59% | $8,174,641.61 |
-| TLM/USDT:USDT | +66.99% | $15,045,738.35 |
-| M/USDT:USDT | +38.72% | $6,014,945.16 |
-| US/USDT:USDT | +31.47% | $2,087,316.17 |
-| BREV/USDT:USDT | +28.57% | $6,034,013.16 |
+| TLM/USDT:USDT | +77.96% | $15,340,748.54 |
+| BIRB/USDT:USDT | +73.26% | $8,416,490.33 |
+| M/USDT:USDT | +38.85% | $6,055,240.39 |
+| US/USDT:USDT | +32.81% | $2,128,424.09 |
+| BREV/USDT:USDT | +28.92% | $6,050,870.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +2.27% | +1.83% |
-| ETH/USDT:USDT | below_1h_threshold | +1.79% | +1.35% |
-| WENSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.34% |
-| M/USDT:USDT | below_1h_threshold | +1.78% | +1.34% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.71% | +1.27% |
+| TLM/USDT:USDT | below_relative_strength | +5.56% | +4.98% |
+| WENSTOCK/USDT:USDT | below_1h_threshold | +4.80% | +4.21% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.11% |
+| BIRB/USDT:USDT | below_1h_threshold | +3.59% | +3.00% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.59% | +2.01% |
 
 ## 6. 次に見るべき不足
 
