@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-02T23:48:34.524332+00:00
+- generated_at: 2026-07-02T23:58:00.387856+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8115**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T23:48:29.650894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=61508.8
+- 更新: 2026-07-02T23:57:55.491148+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=61545.7
 - Funnel: target 834 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| THE/USDT:USDT | +28.76% | $1,739,884.52 |
-| PIPPIN/USDT:USDT | +18.95% | $5,613,952.83 |
-| MAGMA/USDT:USDT | +16.64% | $5,028,427.00 |
-| LAB/USDT:USDT | +15.90% | $14,705,525.12 |
-| BEAT/USDT:USDT | +10.25% | $24,590,182.21 |
+| THE/USDT:USDT | +29.55% | $1,754,419.84 |
+| PIPPIN/USDT:USDT | +19.67% | $5,704,635.83 |
+| MAGMA/USDT:USDT | +16.53% | $5,047,747.10 |
+| LAB/USDT:USDT | +16.26% | $14,949,219.46 |
+| BEAT/USDT:USDT | +11.14% | $25,035,760.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +3.65% | +3.54% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.33% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.48% | +2.38% |
-| RIF/USDT:USDT | below_1h_threshold | +1.94% | +1.84% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.49% | +1.39% |
+| GUA/USDT:USDT | below_1h_threshold | +4.64% | +4.48% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.34% | +3.17% |
+| CAP/USDT:USDT | below_1h_threshold | +3.24% | +3.07% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.77% |
+| SYN/USDT:USDT | below_1h_threshold | +1.84% | +1.68% |
 
 ## 6. 次に見るべき不足
 
