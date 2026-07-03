@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T09:26:15.704284+00:00
+- generated_at: 2026-07-03T09:35:42.642047+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8150**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T09:26:09.797042+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=61666.4
+- 更新: 2026-07-03T09:35:37.759306+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=61590.9
 - Funnel: target 834 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARPA/USDT:USDT | +41.34% | $1,412,511.87 |
-| NEX/USDT:USDT | +38.56% | $1,707,143.82 |
-| ZKP/USDT:USDT | +29.74% | $4,179,976.70 |
-| RIF/USDT:USDT | +28.74% | $8,221,337.04 |
-| MAGMA/USDT:USDT | +25.98% | $6,863,234.79 |
+| NEX/USDT:USDT | +44.13% | $1,723,316.29 |
+| RIF/USDT:USDT | +34.63% | $8,357,200.00 |
+| ARPA/USDT:USDT | +33.74% | $1,742,998.88 |
+| ZKP/USDT:USDT | +31.30% | $4,206,017.73 |
+| MAGMA/USDT:USDT | +26.44% | $6,884,323.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_1h_threshold | +2.32% | +2.14% |
-| ZKP/USDT:USDT | below_1h_threshold | +1.83% | +1.64% |
-| ARPA/USDT:USDT | below_1h_threshold | +1.71% | +1.52% |
-| TIA/USDT:USDT | below_1h_threshold | +0.98% | +0.80% |
-| GALA/USDT:USDT | below_1h_threshold | +0.80% | +0.62% |
+| TLM/USDT:USDT | below_1h_threshold | +3.85% | +3.79% |
+| ZKP/USDT:USDT | below_1h_threshold | +3.18% | +3.12% |
+| NEX/USDT:USDT | below_1h_threshold | +2.69% | +2.63% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.51% | +2.45% |
+| NOM/USDT:USDT | below_1h_threshold | +2.31% | +2.25% |
 
 ## 6. 次に見るべき不足
 
