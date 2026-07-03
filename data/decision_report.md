@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-03T23:09:27.191192+00:00
+- generated_at: 2026-07-03T23:19:06.616421+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8203**
+- closed shadow trades: **8204**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8203, expectancy=-0.02%
+- 全期間 MARKET基準: n=8204, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.68%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$293.20** / 初期 $100.00 (+193.20%)
-- 確定: 2522件 (Win 777 / Loss 841 / Flat 904) / skip 2242件
+- 確定: 2522件 (Win 777 / Loss 841 / Flat 904) / skip 2243件
 - 成長率目線: 平均log +0.000427 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ANSEM/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $293.20
@@ -55,15 +55,15 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.83** / 初期 $100.00 (+5.83%)
-- 確定: 612件 (Win 147 / Loss 148 / Flat 317) / skip 1002件
+- 確定: 612件 (Win 147 / Loss 148 / Flat 317) / skip 1003件
 - 成長率目線: 平均log +0.000093 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ALLO/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.20% 残高後 $105.83
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T23:09:22.239350+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62513.7
+- 更新: 2026-07-03T23:19:00.458614+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62572.5
 - Funnel: target 834 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +56.34% | $3,013,936.25 |
-| TLM/USDT:USDT | +51.84% | $34,312,298.56 |
-| MAGMA/USDT:USDT | +39.36% | $13,094,193.23 |
-| BAS/USDT:USDT | +28.23% | $3,815,115.95 |
-| TA/USDT:USDT | +13.86% | $2,227,349.96 |
+| TLM/USDT:USDT | +50.89% | $35,034,220.77 |
+| ANSEM/USDT:USDT | +47.04% | $3,073,812.22 |
+| MAGMA/USDT:USDT | +39.18% | $13,165,003.68 |
+| BAS/USDT:USDT | +30.68% | $3,864,213.89 |
+| TA/USDT:USDT | +14.03% | $2,230,050.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIRB/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
-| HMSTR/USDT:USDT | below_1h_threshold | +1.40% | +1.46% |
-| NEX/USDT:USDT | below_1h_threshold | +1.23% | +1.29% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.75% | +0.80% |
+| NEX/USDT:USDT | below_1h_threshold | +2.94% | +2.90% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.59% | +1.55% |
+| HMSTR/USDT:USDT | below_1h_threshold | +1.32% | +1.29% |
+| US/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
+| TRB/USDT:USDT | below_1h_threshold | +0.74% | +0.71% |
 
 ## 6. 次に見るべき不足
 
