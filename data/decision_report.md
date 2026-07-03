@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T08:48:50.929479+00:00
+- generated_at: 2026-07-03T08:58:10.855143+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8148**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T08:48:43.267119+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=61765.3
-- Funnel: target 834 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.1 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 65.6 >= 65=1
+- 更新: 2026-07-03T08:58:05.763157+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=61567.0
+- Funnel: target 834 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NEX/USDT:USDT | +49.05% | $1,567,363.63 |
-| RIF/USDT:USDT | +39.85% | $7,933,787.49 |
-| ZKP/USDT:USDT | +28.15% | $4,023,790.42 |
-| BLESS/USDT:USDT | +27.61% | $4,908,607.48 |
-| MAGMA/USDT:USDT | +25.83% | $6,770,924.80 |
+| NEX/USDT:USDT | +41.31% | $1,624,647.97 |
+| RIF/USDT:USDT | +38.14% | $8,047,672.89 |
+| ZKP/USDT:USDT | +27.34% | $4,056,203.98 |
+| MAGMA/USDT:USDT | +26.69% | $6,805,535.22 |
+| BLESS/USDT:USDT | +21.95% | $5,153,716.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RPL/USDT:USDT | below_1h_threshold | +3.55% | +3.50% |
-| THE/USDT:USDT | below_1h_threshold | +3.32% | +3.27% |
-| RIF/USDT:USDT | below_1h_threshold | +3.17% | +3.12% |
-| M/USDT:USDT | below_1h_threshold | +3.05% | +3.00% |
-| KORU/USDT:USDT | below_1h_threshold | +2.96% | +2.91% |
+| NEX/USDT:USDT | below_1h_threshold | +4.48% | +4.75% |
+| M/USDT:USDT | below_1h_threshold | +3.04% | +3.31% |
+| THE/USDT:USDT | below_1h_threshold | +2.92% | +3.19% |
+| KORU/USDT:USDT | below_1h_threshold | +2.16% | +2.43% |
+| RPL/USDT:USDT | below_1h_threshold | +1.83% | +2.10% |
 
 ## 6. 次に見るべき不足
 
