@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T19:10:20.100710+00:00
+- generated_at: 2026-07-03T19:20:01.398684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8185**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T19:10:15.091535+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=62164.5
+- 更新: 2026-07-03T19:19:56.390005+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=62242.8
 - Funnel: target 834 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +32.31% | $9,401,697.02 |
-| ANSEM/USDT:USDT | +29.40% | $1,209,864.53 |
-| TA/USDT:USDT | +20.26% | $1,933,328.79 |
-| TLM/USDT:USDT | +13.19% | $15,442,330.75 |
-| VELVET/USDT:USDT | +12.50% | $28,605,531.41 |
+| MAGMA/USDT:USDT | +32.42% | $9,703,002.82 |
+| ANSEM/USDT:USDT | +29.04% | $1,264,681.65 |
+| TLM/USDT:USDT | +16.29% | $15,619,528.19 |
+| TA/USDT:USDT | +13.94% | $2,023,290.39 |
+| BAS/USDT:USDT | +10.45% | $3,184,529.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.44% | +2.47% |
-| TA/USDT:USDT | below_1h_threshold | +2.39% | +2.42% |
-| BASED/USDT:USDT | below_1h_threshold | +2.05% | +2.07% |
-| ADA/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
-| GPS/USDT:USDT | below_1h_threshold | +1.44% | +1.46% |
+| GPS/USDT:USDT | below_1h_threshold | +2.92% | +2.82% |
+| HMSTR/USDT:USDT | below_1h_threshold | +2.56% | +2.46% |
+| BAS/USDT:USDT | below_1h_threshold | +2.43% | +2.33% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.34% | +2.24% |
+| ADA/USDT:USDT | below_1h_threshold | +2.24% | +2.14% |
 
 ## 6. 次に見るべき不足
 
