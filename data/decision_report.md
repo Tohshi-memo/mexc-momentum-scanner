@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T12:45:59.053806+00:00
+- generated_at: 2026-07-03T12:56:11.518728+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8160**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T12:45:53.050379+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=61923.1
+- 更新: 2026-07-03T12:56:06.085904+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=61947.6
 - Funnel: target 834 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NEX/USDT:USDT | +47.97% | $2,828,606.47 |
-| ARPA/USDT:USDT | +43.96% | $4,871,789.11 |
-| RIF/USDT:USDT | +36.19% | $9,124,154.45 |
-| BLESS/USDT:USDT | +29.29% | $6,766,504.06 |
-| ZKP/USDT:USDT | +28.30% | $5,335,671.72 |
+| NEX/USDT:USDT | +49.59% | $2,853,407.39 |
+| ARPA/USDT:USDT | +45.08% | $4,989,026.67 |
+| RIF/USDT:USDT | +37.00% | $9,186,158.43 |
+| THE/USDT:USDT | +27.24% | $2,987,336.82 |
+| BLESS/USDT:USDT | +27.09% | $6,820,197.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.63% | +3.74% |
-| MANA/USDT:USDT | below_1h_threshold | +3.47% | +3.58% |
-| XPL/USDT:USDT | below_1h_threshold | +3.20% | +3.32% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.94% | +3.06% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.72% | +2.83% |
+| MANA/USDT:USDT | below_1h_threshold | +3.19% | +3.27% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.02% | +3.09% |
+| XPL/USDT:USDT | below_1h_threshold | +2.88% | +2.95% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.47% | +2.54% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.69% | +1.76% |
 
 ## 6. 次に見るべき不足
 
