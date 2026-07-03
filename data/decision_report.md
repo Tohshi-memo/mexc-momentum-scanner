@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T01:50:14.315273+00:00
+- generated_at: 2026-07-03T01:59:36.044141+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8124**
 
@@ -62,31 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T01:50:01.632943+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=61622.8
+- 更新: 2026-07-03T01:59:24.510151+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.52% price=61599.8
 - Funnel: target 834 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +22.02% | $6,981,080.01 |
-| THE/USDT:USDT | +21.69% | $1,972,942.62 |
-| MAGMA/USDT:USDT | +13.76% | $5,262,087.57 |
-| WLD/USDT:USDT | +13.55% | $62,740,500.87 |
-| LAB/USDT:USDT | +13.32% | $17,851,540.42 |
+| THE/USDT:USDT | +24.20% | $1,977,875.67 |
+| PIPPIN/USDT:USDT | +19.94% | $7,113,012.73 |
+| LAB/USDT:USDT | +14.23% | $18,040,527.22 |
+| MAGMA/USDT:USDT | +13.82% | $5,265,529.98 |
+| WLD/USDT:USDT | +13.74% | $63,640,389.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +4.90% | +4.35% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.70% | +4.15% |
-| RAVE/USDT:USDT | below_1h_threshold | +4.65% | +4.10% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.70% | +3.15% |
-| US/USDT:USDT | below_1h_threshold | +3.46% | +2.90% |
+| SAMSUNGSTOCK/USDT:USDT | below_relative_strength | +5.48% | +4.96% |
+| RAVE/USDT:USDT | below_relative_strength | +5.00% | +4.49% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.64% | +3.12% |
+| VVV/USDT:USDT | below_1h_threshold | +3.57% | +3.05% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.49% | +2.97% |
 
 ## 6. 次に見るべき不足
 
