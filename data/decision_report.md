@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T07:13:03.388972+00:00
+- generated_at: 2026-07-03T07:22:30.932708+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8143**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T07:12:55.294417+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=61692.5
+- 更新: 2026-07-03T07:22:25.993144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=61729.1
 - Funnel: target 834 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NEX/USDT:USDT | +36.01% | $1,214,686.75 |
-| RIF/USDT:USDT | +28.92% | $6,988,355.03 |
-| ZKP/USDT:USDT | +26.54% | $3,232,445.90 |
-| MAGMA/USDT:USDT | +21.59% | $6,524,831.38 |
-| PIPPIN/USDT:USDT | +19.83% | $10,588,137.20 |
+| NEX/USDT:USDT | +41.04% | $1,239,856.85 |
+| RIF/USDT:USDT | +28.98% | $7,131,539.44 |
+| ZKP/USDT:USDT | +25.95% | $3,273,114.88 |
+| MAGMA/USDT:USDT | +20.89% | $6,564,827.37 |
+| PIPPIN/USDT:USDT | +19.83% | $10,699,712.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| M/USDT:USDT | below_1h_threshold | +4.52% | +4.50% |
-| RIF/USDT:USDT | below_1h_threshold | +4.16% | +4.14% |
-| THE/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
-| JTO/USDT:USDT | below_1h_threshold | +1.20% | +1.18% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.06% | +1.04% |
+| RIF/USDT:USDT | below_1h_threshold | +4.27% | +4.19% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.16% | +2.08% |
+| THE/USDT:USDT | below_1h_threshold | +2.03% | +1.95% |
+| NEX/USDT:USDT | below_1h_threshold | +1.55% | +1.48% |
+| JTO/USDT:USDT | below_1h_threshold | +1.19% | +1.11% |
 
 ## 6. 次に見るべき不足
 
