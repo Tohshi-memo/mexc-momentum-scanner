@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T02:47:46.833315+00:00
+- generated_at: 2026-07-03T02:57:16.074649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8126**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T02:47:37.434358+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=61314.2
+- 更新: 2026-07-03T02:57:06.364072+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=61380.1
 - Funnel: target 834 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
+- Strict後reject: 4h RSI 66.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +26.01% | $5,466,359.14 |
-| THE/USDT:USDT | +24.32% | $2,062,372.91 |
-| PIPPIN/USDT:USDT | +21.04% | $7,321,163.72 |
-| MAGMA/USDT:USDT | +20.19% | $5,337,321.85 |
-| GUA/USDT:USDT | +14.21% | $10,130,363.73 |
+| RIF/USDT:USDT | +25.71% | $5,600,935.22 |
+| THE/USDT:USDT | +24.36% | $2,075,755.82 |
+| PIPPIN/USDT:USDT | +21.64% | $7,416,966.24 |
+| MAGMA/USDT:USDT | +21.06% | $5,355,936.20 |
+| GUA/USDT:USDT | +14.88% | $10,142,689.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.05% | +4.46% |
-| BTW/USDT:USDT | below_1h_threshold | +3.47% | +3.88% |
-| GUA/USDT:USDT | below_1h_threshold | +1.79% | +2.20% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.61% | +2.02% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +1.21% |
+| BTW/USDT:USDT | below_1h_threshold | +3.42% | +3.72% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.29% | +3.59% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.12% | +2.42% |
+| GUA/USDT:USDT | below_1h_threshold | +2.09% | +2.39% |
+| US/USDT:USDT | below_1h_threshold | +1.87% | +2.17% |
 
 ## 6. 次に見るべき不足
 
