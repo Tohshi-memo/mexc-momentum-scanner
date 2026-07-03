@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T22:59:56.774282+00:00
+- generated_at: 2026-07-03T23:09:27.191192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8203**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T22:59:51.917681+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=62555.4
-- Funnel: target 834 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-03T23:09:22.239350+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=62513.7
+- Funnel: target 834 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +65.75% | $2,913,826.71 |
-| TLM/USDT:USDT | +56.24% | $33,886,188.34 |
-| MAGMA/USDT:USDT | +38.70% | $13,182,763.58 |
-| BAS/USDT:USDT | +29.95% | $3,873,604.91 |
-| TA/USDT:USDT | +13.73% | $2,226,310.51 |
+| ANSEM/USDT:USDT | +56.34% | $3,013,936.25 |
+| TLM/USDT:USDT | +51.84% | $34,312,298.56 |
+| MAGMA/USDT:USDT | +39.36% | $13,094,193.23 |
+| BAS/USDT:USDT | +28.23% | $3,815,115.95 |
+| TA/USDT:USDT | +13.86% | $2,227,349.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.25% | +3.49% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.77% | +3.02% |
-| ZKP/USDT:USDT | below_1h_threshold | +1.98% | +2.23% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.85% | +2.10% |
-| M/USDT:USDT | below_1h_threshold | +1.56% | +1.80% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
+| HMSTR/USDT:USDT | below_1h_threshold | +1.40% | +1.46% |
+| NEX/USDT:USDT | below_1h_threshold | +1.23% | +1.29% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.76% | +0.82% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.75% | +0.80% |
 
 ## 6. 次に見るべき不足
 
