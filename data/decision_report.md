@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-02T23:58:00.387856+00:00
+- generated_at: 2026-07-03T00:07:24.109286+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8115**
+- closed shadow trades: **8116**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.81% / filled 20/20。**
-- 全期間 MARKET基準: n=8115, expectancy=-0.02%
+- 全期間 MARKET基準: n=8116, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.81%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,14 +24,14 @@
 | ASK | 20/20 | 100.0% | +0.86% | **+0.86%** |
 | MARKET | 20/20 | 100.0% | +0.81% | **+0.81%** |
 | LIMIT_6PCT | 5/20 | 25.0% | +1.77% | **+0.44%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +0.51% | **+0.41%** |
 | LIMIT_5PCT | 7/20 | 35.0% | +1.13% | **+0.40%** |
+| LIMIT_4PCT | 11/20 | 55.0% | +0.32% | **+0.17%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +2.70% | **+1.48%** |
+| LIMIT_FIB1272_LONG | 12/20 | 60.0% | +2.14% | **+1.28%** |
 | LIMIT_5PCT_LONG | 12/20 | 60.0% | +1.02% | **+0.61%** |
 | LIMIT_3PCT_LONG | 17/20 | 85.0% | +0.65% | **+0.55%** |
 | LIMIT_6PCT_LONG | 10/20 | 50.0% | +0.93% | **+0.46%** |
@@ -47,45 +47,47 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$284.67** / 初期 $100.00 (+184.67%)
-- 確定: 2444件 (Win 754 / Loss 816 / Flat 874) / skip 2232件
+- 確定: 2444件 (Win 754 / Loss 816 / Flat 874) / skip 2233件
 - 成長率目線: 平均log +0.000428 / 幾何平均 +0.043% per trade / maxDD +8.13%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: LAB/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $284.67
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$106.57** / 初期 $100.00 (+6.57%)
-- 確定: 573件 (Win 140 / Loss 134 / Flat 299) / skip 953件
-- 成長率目線: 平均log +0.000111 / 幾何平均 +0.011% per trade / maxDD +3.55%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0751 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: PIPPIN/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.52% 残高後 $106.57
+- 残高: **$106.20** / 初期 $100.00 (+6.20%)
+- 確定: 574件 (Win 140 / Loss 135 / Flat 299) / skip 953件
+- 成長率目線: 平均log +0.000105 / 幾何平均 +0.010% per trade / maxDD +3.55%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0566 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: BIRB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $106.20
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-02T23:57:55.491148+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=61545.7
-- Funnel: target 834 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-03T00:07:17.986602+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=61428.6
+- Funnel: target 834 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| THE/USDT:USDT | +29.55% | $1,754,419.84 |
-| PIPPIN/USDT:USDT | +19.67% | $5,704,635.83 |
-| MAGMA/USDT:USDT | +16.53% | $5,047,747.10 |
-| LAB/USDT:USDT | +16.26% | $14,949,219.46 |
-| BEAT/USDT:USDT | +11.14% | $25,035,760.14 |
+| THE/USDT:USDT | +33.73% | $1,782,630.59 |
+| MAGMA/USDT:USDT | +18.00% | $5,044,753.40 |
+| RPL/USDT:USDT | +16.53% | $1,151,123.34 |
+| PIPPIN/USDT:USDT | +14.79% | $5,888,238.24 |
+| GUA/USDT:USDT | +11.70% | $9,216,894.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +4.64% | +4.48% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.34% | +3.17% |
-| CAP/USDT:USDT | below_1h_threshold | +3.24% | +3.07% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.77% |
-| SYN/USDT:USDT | below_1h_threshold | +1.84% | +1.68% |
+| THE/USDT:USDT | below_1h_threshold | +3.98% | +4.16% |
+| GUA/USDT:USDT | below_1h_threshold | +2.77% | +2.95% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.77% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.95% | +2.13% |
+| NOM/USDT:USDT | below_1h_threshold | +1.73% | +1.91% |
 
 ## 6. 次に見るべき不足
 
