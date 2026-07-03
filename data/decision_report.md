@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T05:57:42.277419+00:00
+- generated_at: 2026-07-03T06:07:03.667047+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8136**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T05:57:36.682096+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=61702.2
-- Funnel: target 834 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=2, 4h RSI 79.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-03T06:06:58.833451+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=61799.4
+- Funnel: target 834 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +40.80% | $6,591,546.63 |
-| NEX/USDT:USDT | +31.26% | $1,010,476.26 |
-| ZKP/USDT:USDT | +27.56% | $2,781,089.97 |
-| GUA/USDT:USDT | +23.57% | $10,165,042.24 |
-| MAGMA/USDT:USDT | +23.03% | $6,224,729.09 |
+| RIF/USDT:USDT | +35.72% | $6,372,837.58 |
+| NEX/USDT:USDT | +32.50% | $1,027,926.17 |
+| ZKP/USDT:USDT | +29.17% | $2,846,967.47 |
+| GUA/USDT:USDT | +23.41% | $9,656,968.66 |
+| MAGMA/USDT:USDT | +21.94% | $6,258,770.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +5.44% | +4.99% |
-| RPL/USDT:USDT | below_1h_threshold | +3.73% | +3.27% |
-| SPX/USDT:USDT | below_1h_threshold | +3.03% | +2.57% |
-| RIF/USDT:USDT | below_1h_threshold | +2.90% | +2.44% |
-| GUA/USDT:USDT | below_1h_threshold | +2.21% | +1.75% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.87% | +1.66% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.41% |
+| ZKP/USDT:USDT | below_1h_threshold | +1.45% | +1.25% |
+| BTW/USDT:USDT | below_1h_threshold | +1.18% | +0.98% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +0.95% |
 
 ## 6. 次に見るべき不足
 
