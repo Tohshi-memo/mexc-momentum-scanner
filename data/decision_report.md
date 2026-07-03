@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T10:42:36.951047+00:00
+- generated_at: 2026-07-03T10:52:06.077662+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8153**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T10:42:26.291201+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=61795.7
-- Funnel: target 834 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-07-03T10:51:58.608870+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=61900.0
+- Funnel: target 834 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NEX/USDT:USDT | +56.46% | $2,297,024.63 |
-| ARPA/USDT:USDT | +36.98% | $2,587,127.85 |
-| RIF/USDT:USDT | +31.47% | $8,570,249.23 |
-| ZKP/USDT:USDT | +30.37% | $4,442,316.21 |
-| BLESS/USDT:USDT | +26.79% | $5,828,795.02 |
+| NEX/USDT:USDT | +53.97% | $2,370,653.95 |
+| ARPA/USDT:USDT | +33.25% | $2,662,799.76 |
+| RIF/USDT:USDT | +32.84% | $8,651,616.69 |
+| ZKP/USDT:USDT | +29.50% | $4,464,919.70 |
+| THE/USDT:USDT | +28.94% | $2,801,664.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| THE/USDT:USDT | below_1h_threshold | +3.67% | +3.50% |
-| NEX/USDT:USDT | below_1h_threshold | +2.84% | +2.67% |
-| ZKP/USDT:USDT | below_1h_threshold | +2.17% | +1.99% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.72% | +1.54% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.68% | +1.51% |
+| XPL/USDT:USDT | below_1h_threshold | +2.76% | +2.42% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.63% | +2.28% |
+| RIF/USDT:USDT | below_1h_threshold | +2.37% | +2.03% |
+| SPX/USDT:USDT | below_1h_threshold | +2.05% | +1.71% |
+| HYPE/USDT:USDT | below_1h_threshold | +2.03% | +1.68% |
 
 ## 6. 次に見るべき不足
 
