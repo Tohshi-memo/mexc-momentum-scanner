@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T06:44:05.742290+00:00
+- generated_at: 2026-07-03T06:53:43.673607+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8138**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T06:43:57.122000+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=61617.9
-- Funnel: target 834 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-07-03T06:53:37.997770+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=61673.7
+- Funnel: target 834 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 80.0 >= 65=1
+- Strict後reject: 4h RSI 69.8 >= 65=1, 4h RSI 66.6 >= 65=1, 4h RSI 94.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NEX/USDT:USDT | +32.01% | $1,099,700.58 |
-| ZKP/USDT:USDT | +31.78% | $3,102,166.18 |
-| NOM/USDT:USDT | +21.13% | $2,775,401.70 |
-| MAGMA/USDT:USDT | +18.52% | $6,467,209.34 |
-| RIF/USDT:USDT | +17.85% | $6,998,254.50 |
+| NEX/USDT:USDT | +42.23% | $1,137,224.73 |
+| ZKP/USDT:USDT | +30.41% | $3,148,847.67 |
+| RIF/USDT:USDT | +25.56% | $7,255,267.27 |
+| NOM/USDT:USDT | +22.45% | $2,830,786.98 |
+| MAGMA/USDT:USDT | +20.49% | $6,483,153.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKP/USDT:USDT | below_1h_threshold | +3.19% | +3.28% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.92% | +3.01% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.51% | +1.60% |
-| SPX/USDT:USDT | below_1h_threshold | +1.44% | +1.53% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.24% |
+| US/USDT:USDT | below_1h_threshold | +4.24% | +4.24% |
+| SYN/USDT:USDT | below_1h_threshold | +3.95% | +3.95% |
+| POPCAT/USDT:USDT | below_1h_threshold | +2.52% | +2.52% |
+| ZKP/USDT:USDT | below_1h_threshold | +2.11% | +2.11% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.00% | +2.00% |
 
 ## 6. 次に見るべき不足
 
