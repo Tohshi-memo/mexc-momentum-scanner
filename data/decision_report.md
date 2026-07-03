@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T04:15:04.933325+00:00
+- generated_at: 2026-07-03T04:24:25.582617+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8129**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T04:15:00.124118+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=61407.9
+- 更新: 2026-07-03T04:24:20.779624+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=61386.4
 - Funnel: target 834 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZKP/USDT:USDT | +32.31% | $1,699,187.82 |
-| RIF/USDT:USDT | +27.12% | $5,796,943.84 |
-| MAGMA/USDT:USDT | +24.89% | $5,601,821.50 |
-| THE/USDT:USDT | +19.52% | $2,146,166.66 |
-| GUA/USDT:USDT | +17.05% | $10,279,616.24 |
+| RIF/USDT:USDT | +28.64% | $5,907,421.61 |
+| ZKP/USDT:USDT | +28.43% | $1,873,945.44 |
+| MAGMA/USDT:USDT | +23.64% | $5,615,774.12 |
+| THE/USDT:USDT | +18.98% | $2,150,934.96 |
+| GUA/USDT:USDT | +16.88% | $10,294,396.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZKP/USDT:USDT | below_1h_threshold | +3.26% | +3.26% |
-| NOM/USDT:USDT | below_1h_threshold | +1.84% | +1.84% |
-| US/USDT:USDT | below_1h_threshold | +1.78% | +1.78% |
-| BTW/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
+| NOM/USDT:USDT | below_1h_threshold | +3.58% | +3.61% |
+| KORU/USDT:USDT | below_1h_threshold | +3.08% | +3.12% |
+| US/USDT:USDT | below_1h_threshold | +2.87% | +2.91% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.49% |
+| LAB/USDT:USDT | below_1h_threshold | +1.35% | +1.38% |
 
 ## 6. 次に見るべき不足
 
