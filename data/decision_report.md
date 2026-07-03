@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-03T05:11:48.564621+00:00
+- generated_at: 2026-07-03T05:21:22.439767+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8132**
+- closed shadow trades: **8133**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8132, expectancy=-0.02%
+- 全期間 MARKET基準: n=8133, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.14%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,18 +24,18 @@
 | LIMIT_2PCT | 18/20 | 90.0% | +1.46% | **+1.31%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +5.45% | **+0.55%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +4.59% | **+0.46%** |
-| LIMIT_FIB1272 | 9/20 | 45.0% | +0.86% | **+0.39%** |
 | LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
+| LIMIT_FIB1272 | 10/20 | 50.0% | +0.66% | **+0.33%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1618_LONG | 2/20 | 10.0% | +6.84% | **+0.68%** |
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.78% | **+0.66%** |
-| LIMIT_2PCT_LONG | 16/20 | 80.0% | +0.78% | **+0.62%** |
-| ASK_LONG | 20/20 | 100.0% | +0.59% | **+0.59%** |
+| ASK_LONG | 20/20 | 100.0% | +0.61% | **+0.61%** |
 | LIMIT_6PCT_LONG | 9/20 | 45.0% | +1.08% | **+0.49%** |
+| LIMIT_BB3S_LONG | 2/2 | 100.0% | +0.43% | **+0.43%** |
+| LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.51% | **+0.41%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,45 +47,45 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$289.03** / 初期 $100.00 (+189.03%)
-- 確定: 2454件 (Win 757 / Loss 818 / Flat 879) / skip 2239件
+- 確定: 2455件 (Win 757 / Loss 818 / Flat 880) / skip 2239件
 - 成長率目線: 平均log +0.000432 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: LAB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $289.03
+- 最新: NOM/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $289.03
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.44** / 初期 $100.00 (+5.44%)
-- 確定: 586件 (Win 141 / Loss 139 / Flat 306) / skip 957件
+- 確定: 587件 (Win 141 / Loss 139 / Flat 307) / skip 957件
 - 成長率目線: 平均log +0.000090 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_robust_growth_score) / robust_score -0.0356 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: LAB/USDT:USDT `LIMIT_FIB1272_LONG` SL_HIT account -0.35% 残高後 $105.44
+- 最新: NOM/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $105.44
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T05:11:42.687259+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=61509.9
-- Funnel: target 834 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-03T05:21:16.520640+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=61589.2
+- Funnel: target 834 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +37.76% | $6,016,536.75 |
-| MAGMA/USDT:USDT | +31.39% | $5,941,178.28 |
-| ZKP/USDT:USDT | +29.72% | $2,423,769.83 |
-| GUA/USDT:USDT | +22.40% | $10,073,061.84 |
-| THE/USDT:USDT | +18.11% | $2,193,209.13 |
+| RIF/USDT:USDT | +37.15% | $6,135,374.61 |
+| ZKP/USDT:USDT | +30.96% | $2,510,735.25 |
+| MAGMA/USDT:USDT | +30.56% | $5,994,682.05 |
+| GUA/USDT:USDT | +23.74% | $10,081,265.24 |
+| PIPPIN/USDT:USDT | +17.20% | $8,781,722.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.83% | +2.68% |
-| CAP/USDT:USDT | below_1h_threshold | +2.32% | +2.17% |
-| RPL/USDT:USDT | below_1h_threshold | +2.18% | +2.03% |
-| US/USDT:USDT | below_1h_threshold | +1.80% | +1.65% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.39% | +1.24% |
+| MYX/USDT:USDT | below_1h_threshold | +3.70% | +3.43% |
+| CAP/USDT:USDT | below_1h_threshold | +3.36% | +3.09% |
+| RPL/USDT:USDT | below_1h_threshold | +2.42% | +2.15% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.30% | +2.02% |
+| GUA/USDT:USDT | below_1h_threshold | +1.93% | +1.66% |
 
 ## 6. 次に見るべき不足
 
