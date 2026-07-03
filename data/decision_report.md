@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-03T16:55:26.020916+00:00
+- generated_at: 2026-07-03T17:04:57.515947+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8176**
+- closed shadow trades: **8177**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.39% / filled 20/20。**
-- 全期間 MARKET基準: n=8176, expectancy=-0.01%
+- 全期間 MARKET基準: n=8177, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+2.39%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,47 +47,45 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$286.20** / 初期 $100.00 (+186.20%)
-- 確定: 2495件 (Win 768 / Loss 833 / Flat 894) / skip 2242件
+- 確定: 2496件 (Win 768 / Loss 833 / Flat 895) / skip 2242件
 - 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MAGMA/USDT:USDT `LIMIT_6PCT` SL_HIT account +0.24% 残高後 $286.20
+- 最新: MAGMA/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $286.20
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.04** / 初期 $100.00 (+6.04%)
-- 確定: 611件 (Win 147 / Loss 147 / Flat 317) / skip 976件
+- 確定: 611件 (Win 147 / Loss 147 / Flat 317) / skip 977件
 - 成長率目線: 平均log +0.000096 / 幾何平均 +0.010% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BAS/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $106.04
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T16:55:18.490090+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=62037.9
-- Funnel: target 834 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-03T17:04:51.570026+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=62141.6
+- Funnel: target 834 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +21.78% | $9,015,627.90 |
-| GUA/USDT:USDT | +15.71% | $6,254,353.70 |
-| BASED/USDT:USDT | +6.60% | $9,095,947.28 |
-| BSB/USDT:USDT | +4.64% | $3,186,297.39 |
-| SKYAI/USDT:USDT | +4.52% | $5,248,699.68 |
+| MAGMA/USDT:USDT | +22.37% | $8,313,369.55 |
+| GUA/USDT:USDT | +12.85% | $5,883,008.35 |
+| TLM/USDT:USDT | +7.13% | $16,922,607.33 |
+| VELVET/USDT:USDT | +6.69% | $26,645,652.06 |
+| BASED/USDT:USDT | +6.40% | $8,891,878.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.64% | +4.41% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.53% | +4.30% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.33% | +4.10% |
-| ZKP/USDT:USDT | below_1h_threshold | +4.05% | +3.82% |
-| XPL/USDT:USDT | below_1h_threshold | +3.05% | +2.82% |
+| TLM/USDT:USDT | below_1h_threshold | +4.85% | +4.75% |
+| NEX/USDT:USDT | below_1h_threshold | +3.60% | +3.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
+| BAS/USDT:USDT | below_1h_threshold | +1.16% | +1.07% |
+| ZKP/USDT:USDT | below_1h_threshold | +1.16% | +1.06% |
 
 ## 6. 次に見るべき不足
 
