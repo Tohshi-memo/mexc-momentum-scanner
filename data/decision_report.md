@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T02:38:04.366378+00:00
+- generated_at: 2026-07-03T02:47:46.833315+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8126**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T02:37:53.169921+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=61402.5
-- Funnel: target 834 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-03T02:47:37.434358+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=61314.2
+- Funnel: target 834 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| THE/USDT:USDT | +27.78% | $2,044,930.14 |
-| RIF/USDT:USDT | +26.35% | $5,353,128.42 |
-| PIPPIN/USDT:USDT | +19.83% | $7,267,483.93 |
-| MAGMA/USDT:USDT | +18.15% | $5,302,239.15 |
-| GUA/USDT:USDT | +13.54% | $10,108,197.23 |
+| RIF/USDT:USDT | +26.01% | $5,466,359.14 |
+| THE/USDT:USDT | +24.32% | $2,062,372.91 |
+| PIPPIN/USDT:USDT | +21.04% | $7,321,163.72 |
+| MAGMA/USDT:USDT | +20.19% | $5,337,321.85 |
+| GUA/USDT:USDT | +14.21% | $10,130,363.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.81% | +4.07% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.27% | +3.53% |
-| THE/USDT:USDT | below_1h_threshold | +2.75% | +3.01% |
-| US/USDT:USDT | below_1h_threshold | +2.07% | +2.34% |
-| TAIKO/USDT:USDT | below_1h_threshold | +1.38% | +1.64% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.05% | +4.46% |
+| BTW/USDT:USDT | below_1h_threshold | +3.47% | +3.88% |
+| GUA/USDT:USDT | below_1h_threshold | +1.79% | +2.20% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.61% | +2.02% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +1.21% |
 
 ## 6. 次に見るべき不足
 
