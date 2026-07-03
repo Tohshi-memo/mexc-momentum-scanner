@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-03T18:31:49.235666+00:00
+- generated_at: 2026-07-03T18:41:17.288655+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8184**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-03T18:31:41.755489+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62162.7
-- Funnel: target 834 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 80.2 >= 65=1
+- 更新: 2026-07-03T18:41:11.916685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62199.6
+- Funnel: target 834 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +27.10% | $9,381,397.08 |
-| TA/USDT:USDT | +20.14% | $1,393,516.19 |
-| VELVET/USDT:USDT | +13.06% | $28,807,178.39 |
-| TLM/USDT:USDT | +10.10% | $16,607,699.36 |
-| BAS/USDT:USDT | +7.84% | $3,267,881.90 |
+| TA/USDT:USDT | +30.04% | $1,534,362.88 |
+| MAGMA/USDT:USDT | +28.56% | $9,581,168.69 |
+| TLM/USDT:USDT | +11.41% | $16,708,160.60 |
+| VELVET/USDT:USDT | +10.55% | $29,055,390.23 |
+| BASED/USDT:USDT | +7.11% | $8,455,807.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TA/USDT:USDT | below_1h_threshold | +4.90% | +4.92% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.41% | +3.42% |
-| GPS/USDT:USDT | below_1h_threshold | +2.91% | +2.92% |
-| BAS/USDT:USDT | below_1h_threshold | +2.89% | +2.90% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.88% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.63% | +4.58% |
+| NOM/USDT:USDT | below_1h_threshold | +4.18% | +4.14% |
+| TLM/USDT:USDT | below_1h_threshold | +2.58% | +2.53% |
+| GPS/USDT:USDT | below_1h_threshold | +2.57% | +2.53% |
+| ADA/USDT:USDT | below_1h_threshold | +2.39% | +2.35% |
 
 ## 6. 次に見るべき不足
 
