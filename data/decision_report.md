@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T15:48:30.903383+00:00
+- generated_at: 2026-07-04T15:58:03.584788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8271**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T15:48:23.482941+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=62961.3
-- Funnel: target 834 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.0 >= 65=1
+- 更新: 2026-07-04T15:57:55.633705+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=62907.6
+- Funnel: target 834 → liquid 154 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 66.7 >= 65=1, 4h RSI 75.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +144.31% | $94,460,768.75 |
-| ANSEM/USDT:USDT | +62.87% | $6,370,873.58 |
-| TLM/USDT:USDT | +55.17% | $59,644,804.53 |
-| VANRY/USDT:USDT | +52.56% | $1,345,217.62 |
-| HMSTR/USDT:USDT | +43.37% | $15,039,592.12 |
+| LAB/USDT:USDT | +141.60% | $95,710,592.25 |
+| ANSEM/USDT:USDT | +62.98% | $6,393,719.84 |
+| VANRY/USDT:USDT | +56.44% | $1,396,043.49 |
+| TLM/USDT:USDT | +54.63% | $59,781,573.45 |
+| BAS/USDT:USDT | +46.19% | $5,211,345.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_relative_strength | +5.46% | +5.00% |
-| ADA/USDT:USDT | below_1h_threshold | +3.80% | +3.34% |
-| VANRY/USDT:USDT | below_1h_threshold | +3.78% | +3.32% |
-| MIRA/USDT:USDT | below_1h_threshold | +3.24% | +2.77% |
-| TRB/USDT:USDT | below_1h_threshold | +2.18% | +1.72% |
+| ADA/USDT:USDT | below_1h_threshold | +3.97% | +3.59% |
+| NEX/USDT:USDT | below_1h_threshold | +3.38% | +3.01% |
+| BTW/USDT:USDT | below_1h_threshold | +3.14% | +2.76% |
+| XLM/USDT:USDT | below_1h_threshold | +2.52% | +2.14% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.40% | +2.03% |
 
 ## 6. 次に見るべき不足
 
