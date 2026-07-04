@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T18:36:55.963207+00:00
+- generated_at: 2026-07-04T18:46:44.644502+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8284**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T18:36:46.310547+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=63105.2
-- Funnel: target 834 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.0 >= 65=1, 4h RSI 70.1 >= 65=1
+- 更新: 2026-07-04T18:46:37.070390+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63114.3
+- Funnel: target 834 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +18.44% | $2,246,690.20 |
-| RPL/USDT:USDT | +12.81% | $1,298,729.54 |
-| H/USDT:USDT | +9.00% | $2,508,238.43 |
-| HMSTR/USDT:USDT | +8.31% | $15,878,750.46 |
-| CAP/USDT:USDT | +7.72% | $1,372,320.79 |
+| HEI/USDT:USDT | +17.75% | $2,279,742.14 |
+| RPL/USDT:USDT | +12.98% | $1,315,894.63 |
+| H/USDT:USDT | +9.37% | $2,617,326.02 |
+| CAP/USDT:USDT | +8.18% | $1,405,485.09 |
+| O/USDT:USDT | +7.68% | $1,927,502.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +3.28% | +3.51% |
-| O/USDT:USDT | below_1h_threshold | +2.45% | +2.67% |
-| ARPA/USDT:USDT | below_1h_threshold | +1.62% | +1.84% |
-| GUN/USDT:USDT | below_1h_threshold | +1.34% | +1.57% |
-| CAP/USDT:USDT | below_1h_threshold | +1.15% | +1.37% |
+| O/USDT:USDT | below_1h_threshold | +3.47% | +3.68% |
+| HMSTR/USDT:USDT | below_1h_threshold | +2.72% | +2.94% |
+| MYX/USDT:USDT | below_1h_threshold | +2.70% | +2.91% |
+| BAS/USDT:USDT | below_1h_threshold | +1.78% | +1.99% |
+| ARPA/USDT:USDT | below_1h_threshold | +1.71% | +1.92% |
 
 ## 6. 次に見るべき不足
 
