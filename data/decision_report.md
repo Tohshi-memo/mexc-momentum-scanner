@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T14:51:05.447794+00:00
+- generated_at: 2026-07-04T15:00:40.910165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8271**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T14:51:00.478852+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=62642.9
-- Funnel: target 834 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-04T15:00:35.884445+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=62688.5
+- Funnel: target 834 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +126.57% | $86,905,791.79 |
-| TLM/USDT:USDT | +58.73% | $58,742,648.16 |
-| BAS/USDT:USDT | +51.43% | $5,034,221.96 |
-| ANSEM/USDT:USDT | +50.12% | $6,173,186.06 |
-| HMSTR/USDT:USDT | +47.61% | $14,439,809.82 |
+| LAB/USDT:USDT | +129.05% | $84,415,361.31 |
+| ANSEM/USDT:USDT | +53.41% | $6,200,388.13 |
+| BAS/USDT:USDT | +52.87% | $4,926,918.93 |
+| TLM/USDT:USDT | +52.85% | $58,921,385.20 |
+| HMSTR/USDT:USDT | +52.07% | $14,451,268.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.63% | +4.50% |
-| BASED/USDT:USDT | below_1h_threshold | +2.04% | +1.91% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.80% | +1.68% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.61% | +1.48% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.46% | +1.33% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.93% | +0.91% |
+| ADA/USDT:USDT | below_1h_threshold | +0.49% | +0.46% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.43% | +0.41% |
+| BTW/USDT:USDT | below_1h_threshold | +0.40% | +0.38% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
 
 ## 6. 次に見るべき不足
 
