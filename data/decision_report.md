@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T16:52:47.919369+00:00
+- generated_at: 2026-07-04T17:03:03.470070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8277**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T16:52:38.494621+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=62929.8
-- Funnel: target 834 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-04T17:02:58.442043+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=62810.9
+- Funnel: target 834 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TLM/USDT:USDT | +9.05% | $61,110,455.15 |
-| HMSTR/USDT:USDT | +8.65% | $15,428,088.66 |
-| VELVET/USDT:USDT | +4.49% | $38,425,518.92 |
-| EIGEN/USDT:USDT | +4.23% | $2,480,954.34 |
-| ETHFI/USDT:USDT | +3.85% | $5,887,128.43 |
+| ETHFI/USDT:USDT | +4.53% | $6,130,778.94 |
+| TLM/USDT:USDT | +4.33% | $61,137,446.50 |
+| EIGEN/USDT:USDT | +3.46% | $2,547,340.63 |
+| BAS/USDT:USDT | +3.27% | $5,118,814.18 |
+| MAGMA/USDT:USDT | +2.92% | $15,403,424.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.74% | +4.71% |
-| EIGEN/USDT:USDT | below_1h_threshold | +4.19% | +4.15% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.95% | +3.92% |
-| BSB/USDT:USDT | below_1h_threshold | +3.41% | +3.37% |
-| TIA/USDT:USDT | below_1h_threshold | +3.37% | +3.33% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.65% | +1.79% |
+| BAS/USDT:USDT | below_1h_threshold | +0.86% | +1.00% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.38% | +0.51% |
+| TRB/USDT:USDT | below_1h_threshold | +0.36% | +0.49% |
+| TAIKO/USDT:USDT | below_1h_threshold | +0.17% | +0.30% |
 
 ## 6. 次に見るべき不足
 
