@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-04T00:23:11.211921+00:00
+- generated_at: 2026-07-04T00:32:49.763252+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8205**
+- closed shadow trades: **8206**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8205, expectancy=-0.02%
+- 全期間 MARKET基準: n=8206, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-2.28%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_8PCT | 5/20 | 25.0% | +3.02% | **+0.76%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +2.00% | **+0.20%** |
 | LIMIT_7PCT | 6/20 | 30.0% | +0.54% | **+0.16%** |
-| LIMIT_6PCT | 6/20 | 30.0% | -0.08% | **-0.02%** |
+| LIMIT_6PCT | 7/20 | 35.0% | +0.20% | **+0.07%** |
 
 ### シャドウ上位 LONG
 
@@ -35,7 +35,7 @@
 | LIMIT_4PCT_LONG | 9/20 | 45.0% | +4.17% | **+1.87%** |
 | LIMIT_3PCT_LONG | 9/20 | 45.0% | +3.83% | **+1.72%** |
 | LIMIT_2PCT_LONG | 11/20 | 55.0% | +2.78% | **+1.53%** |
-| ASK_LONG | 20/20 | 100.0% | +1.42% | **+1.42%** |
+| ASK_LONG | 20/20 | 100.0% | +1.38% | **+1.38%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,46 +46,47 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$291.73** / 初期 $100.00 (+191.73%)
-- 確定: 2523件 (Win 777 / Loss 842 / Flat 904) / skip 2243件
-- 成長率目線: 平均log +0.000424 / 幾何平均 +0.042% per trade / maxDD +8.13%
+- 残高: **$293.19** / 初期 $100.00 (+193.19%)
+- 確定: 2524件 (Win 778 / Loss 842 / Flat 904) / skip 2243件
+- 成長率目線: 平均log +0.000426 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MAGMA/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $291.73
+- 最新: VELVET/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $293.19
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.83** / 初期 $100.00 (+5.83%)
-- 確定: 612件 (Win 147 / Loss 148 / Flat 317) / skip 1004件
+- 確定: 612件 (Win 147 / Loss 148 / Flat 317) / skip 1005件
 - 成長率目線: 平均log +0.000093 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ALLO/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.20% 残高後 $105.83
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T00:23:06.296820+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=62773.7
-- Funnel: target 834 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-04T00:32:43.532075+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=62750.1
+- Funnel: target 834 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TLM/USDT:USDT | +54.16% | $36,629,635.52 |
-| ANSEM/USDT:USDT | +53.21% | $3,294,018.93 |
-| MAGMA/USDT:USDT | +37.04% | $13,831,657.19 |
-| BAS/USDT:USDT | +19.00% | $4,199,226.53 |
-| VELVET/USDT:USDT | +18.26% | $25,632,979.46 |
+| ANSEM/USDT:USDT | +52.28% | $3,306,544.07 |
+| TLM/USDT:USDT | +51.60% | $36,904,170.69 |
+| MAGMA/USDT:USDT | +37.40% | $13,895,627.76 |
+| BAS/USDT:USDT | +24.03% | $4,275,967.46 |
+| VELVET/USDT:USDT | +20.82% | $26,171,852.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_relative_strength | +5.23% | +4.90% |
-| TLM/USDT:USDT | below_1h_threshold | +4.09% | +3.76% |
-| HMSTR/USDT:USDT | below_1h_threshold | +2.61% | +2.28% |
-| M/USDT:USDT | below_1h_threshold | +2.32% | +1.99% |
-| MIRA/USDT:USDT | below_1h_threshold | +1.67% | +1.34% |
+| MIRA/USDT:USDT | below_1h_threshold | +4.21% | +3.92% |
+| TLM/USDT:USDT | below_1h_threshold | +2.41% | +2.11% |
+| WLD/USDT:USDT | below_1h_threshold | +2.28% | +1.99% |
+| M/USDT:USDT | below_1h_threshold | +2.07% | +1.78% |
+| HMSTR/USDT:USDT | below_1h_threshold | +1.83% | +1.54% |
 
 ## 6. 次に見るべき不足
 
