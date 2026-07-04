@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T21:13:52.996442+00:00
+- generated_at: 2026-07-04T21:19:58.274659+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8294**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T21:13:46.421149+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63316.5
-- Funnel: target 834 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-04T21:19:54.355318+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63356.4
+- Funnel: target 834 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1
+- Strict後reject: 4h RSI 71.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| O/USDT:USDT | +25.33% | $2,793,750.21 |
-| RPL/USDT:USDT | +23.08% | $2,399,011.44 |
-| HOT/USDT:USDT | +19.52% | $1,044,597.54 |
-| H/USDT:USDT | +12.97% | $3,003,421.79 |
-| HEI/USDT:USDT | +12.15% | $2,747,333.40 |
+| O/USDT:USDT | +26.16% | $2,952,294.70 |
+| RPL/USDT:USDT | +24.19% | $2,438,482.34 |
+| HOT/USDT:USDT | +20.05% | $1,076,809.46 |
+| HEI/USDT:USDT | +14.05% | $2,752,287.24 |
+| H/USDT:USDT | +12.40% | $3,012,337.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.42% | +2.25% |
-| H/USDT:USDT | below_1h_threshold | +2.35% | +2.18% |
-| RPL/USDT:USDT | below_1h_threshold | +1.98% | +1.81% |
-| HEI/USDT:USDT | below_1h_threshold | +1.47% | +1.30% |
-| HMSTR/USDT:USDT | below_1h_threshold | +1.25% | +1.08% |
+| RPL/USDT:USDT | below_1h_threshold | +2.90% | +2.66% |
+| HEI/USDT:USDT | below_1h_threshold | +2.56% | +2.32% |
+| H/USDT:USDT | below_1h_threshold | +2.07% | +1.83% |
+| HMSTR/USDT:USDT | below_1h_threshold | +1.77% | +1.53% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.65% | +1.42% |
 
 ## 6. 次に見るべき不足
 
