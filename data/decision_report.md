@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-04T16:23:28.724791+00:00
+- generated_at: 2026-07-04T16:33:14.721147+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8273**
+- closed shadow trades: **8274**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8273, expectancy=-0.03%
+- 全期間 MARKET基準: n=8274, expectancy=-0.03%
 - 直近20件 MARKET基準: n=20, expectancy=-0.56%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_ATR_LONG | 12/20 | 60.0% | +1.55% | **+0.93%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +5.70% | **+0.85%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.81% | **+0.65%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.54% | **+0.54%** |
 | ASK_LONG | 20/20 | 100.0% | +0.50% | **+0.50%** |
+| LIMIT_9PCT_LONG | 2/20 | 10.0% | +4.55% | **+0.45%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,47 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$330.22** / 初期 $100.00 (+230.22%)
-- 確定: 2590件 (Win 820 / Loss 866 / Flat 904) / skip 2244件
-- 成長率目線: 平均log +0.000461 / 幾何平均 +0.046% per trade / maxDD +8.13%
+- 残高: **$328.57** / 初期 $100.00 (+228.57%)
+- 確定: 2591件 (Win 820 / Loss 867 / Flat 904) / skip 2244件
+- 成長率目線: 平均log +0.000459 / 幾何平均 +0.046% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VANRY/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $330.22
+- 最新: VANRY/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $328.57
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$106.13** / 初期 $100.00 (+6.13%)
-- 確定: 637件 (Win 152 / Loss 156 / Flat 329) / skip 1047件
+- 確定: 637件 (Win 152 / Loss 156 / Flat 329) / skip 1048件
 - 成長率目線: 平均log +0.000093 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: LAB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $106.13
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T16:23:21.338365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=62830.7
-- Funnel: target 834 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-04T16:33:08.224242+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=62885.4
+- Funnel: target 834 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +5.69% | $9,182,273.19 |
-| VELVET/USDT:USDT | +4.66% | $37,645,778.74 |
-| RAVE/USDT:USDT | +4.55% | $3,415,329.78 |
-| TLM/USDT:USDT | +4.52% | $60,249,602.14 |
-| HMSTR/USDT:USDT | +4.09% | $15,201,761.30 |
+| VELVET/USDT:USDT | +7.18% | $37,899,613.53 |
+| HMSTR/USDT:USDT | +6.40% | $15,257,219.73 |
+| SKYAI/USDT:USDT | +3.81% | $9,344,511.14 |
+| TLM/USDT:USDT | +3.52% | $60,426,101.25 |
+| MAGMA/USDT:USDT | +3.42% | $16,856,571.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.82% | +4.94% |
-| RAVE/USDT:USDT | below_1h_threshold | +4.52% | +4.65% |
-| TLM/USDT:USDT | below_1h_threshold | +4.49% | +4.61% |
-| HMSTR/USDT:USDT | below_1h_threshold | +4.09% | +4.22% |
-| ACT/USDT:USDT | below_1h_threshold | +4.00% | +4.12% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.82% | +3.85% |
+| TLM/USDT:USDT | below_1h_threshold | +3.64% | +3.67% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.42% | +3.46% |
+| BSB/USDT:USDT | below_1h_threshold | +3.36% | +3.39% |
+| CRV/USDT:USDT | below_1h_threshold | +3.25% | +3.29% |
 
 ## 6. 次に見るべき不足
 
