@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T04:48:46.632599+00:00
+- generated_at: 2026-07-04T04:58:22.098023+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8219**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T04:48:41.711787+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=62680.8
-- Funnel: target 834 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-04T04:58:16.624456+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=62625.8
+- Funnel: target 834 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.8 >= 65=1, 4h RSI 68.3 >= 65=1, 4h RSI 72.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +88.32% | $4,347,251.48 |
-| TLM/USDT:USDT | +43.51% | $40,527,911.87 |
-| HMSTR/USDT:USDT | +34.76% | $2,860,878.38 |
-| BAS/USDT:USDT | +30.28% | $4,184,357.15 |
-| MAGMA/USDT:USDT | +26.57% | $15,458,557.46 |
+| ANSEM/USDT:USDT | +90.23% | $4,397,797.62 |
+| TLM/USDT:USDT | +44.17% | $40,657,646.38 |
+| HMSTR/USDT:USDT | +35.95% | $2,961,835.45 |
+| BAS/USDT:USDT | +29.77% | $4,194,660.09 |
+| MAGMA/USDT:USDT | +25.96% | $15,530,503.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +4.87% | +4.75% |
-| ANSEM/USDT:USDT | below_1h_threshold | +4.37% | +4.25% |
-| GRAM/USDT:USDT | below_1h_threshold | +3.74% | +3.62% |
-| LAB/USDT:USDT | below_1h_threshold | +2.87% | +2.75% |
-| HMSTR/USDT:USDT | below_1h_threshold | +2.56% | +2.44% |
+| POPCAT/USDT:USDT | below_1h_threshold | +4.49% | +4.46% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.12% | +4.10% |
+| NEX/USDT:USDT | below_1h_threshold | +3.61% | +3.59% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.50% | +3.47% |
+| LAB/USDT:USDT | below_1h_threshold | +2.84% | +2.82% |
 
 ## 6. 次に見るべき不足
 
