@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T05:37:41.702178+00:00
+- generated_at: 2026-07-04T05:47:32.641521+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8222**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T05:37:36.236895+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=62496.6
-- Funnel: target 834 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1, 4h RSI 75.0 >= 65=1
+- 更新: 2026-07-04T05:47:26.958636+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=62553.8
+- Funnel: target 834 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 74.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +79.94% | $4,557,944.27 |
-| TLM/USDT:USDT | +64.26% | $42,262,610.12 |
-| HMSTR/USDT:USDT | +41.43% | $3,356,831.38 |
-| BAS/USDT:USDT | +31.90% | $4,102,662.79 |
-| MAGMA/USDT:USDT | +29.37% | $15,566,265.66 |
+| ANSEM/USDT:USDT | +81.74% | $4,598,537.20 |
+| TLM/USDT:USDT | +61.65% | $42,552,789.72 |
+| HMSTR/USDT:USDT | +40.68% | $3,447,475.03 |
+| BAS/USDT:USDT | +33.01% | $4,127,183.41 |
+| MAGMA/USDT:USDT | +24.91% | $15,626,860.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +4.32% | +4.59% |
-| M/USDT:USDT | below_1h_threshold | +3.54% | +3.81% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.08% | +3.34% |
-| BAS/USDT:USDT | below_1h_threshold | +2.88% | +3.14% |
-| UB/USDT:USDT | below_1h_threshold | +2.67% | +2.93% |
+| M/USDT:USDT | below_1h_threshold | +4.51% | +4.68% |
+| BAS/USDT:USDT | below_1h_threshold | +3.89% | +4.06% |
+| HMSTR/USDT:USDT | below_1h_threshold | +3.61% | +3.78% |
+| UB/USDT:USDT | below_1h_threshold | +2.19% | +2.36% |
+| NIL/USDT:USDT | below_1h_threshold | +1.70% | +1.87% |
 
 ## 6. 次に見るべき不足
 
