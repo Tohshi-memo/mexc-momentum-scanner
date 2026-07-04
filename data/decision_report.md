@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T03:45:13.408506+00:00
+- generated_at: 2026-07-04T03:54:42.825517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8215**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T03:45:08.074650+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=62678.5
-- Funnel: target 834 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-04T03:54:37.620402+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=62634.9
+- Funnel: target 834 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +76.45% | $4,056,843.28 |
-| TLM/USDT:USDT | +37.51% | $39,547,060.93 |
-| MAGMA/USDT:USDT | +36.15% | $14,760,031.15 |
-| BAS/USDT:USDT | +32.88% | $4,133,352.28 |
-| HMSTR/USDT:USDT | +30.43% | $2,422,270.98 |
+| ANSEM/USDT:USDT | +80.46% | $4,096,669.75 |
+| TLM/USDT:USDT | +36.92% | $39,633,828.09 |
+| MAGMA/USDT:USDT | +36.15% | $14,836,793.61 |
+| HMSTR/USDT:USDT | +31.27% | $2,466,598.12 |
+| BAS/USDT:USDT | +29.91% | $4,166,084.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BAS/USDT:USDT | below_1h_threshold | +2.30% | +2.04% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.24% | +1.97% |
-| M/USDT:USDT | below_1h_threshold | +2.12% | +1.86% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.78% | +1.52% |
-| BASED/USDT:USDT | below_1h_threshold | +1.62% | +1.36% |
+| M/USDT:USDT | below_1h_threshold | +2.73% | +2.54% |
+| LIT/USDT:USDT | below_1h_threshold | +1.60% | +1.40% |
+| BASED/USDT:USDT | below_1h_threshold | +1.29% | +1.10% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.24% | +1.05% |
+| HMSTR/USDT:USDT | below_1h_threshold | +1.19% | +1.00% |
 
 ## 6. 次に見るべき不足
 
