@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-04T17:22:17.513457+00:00
+- generated_at: 2026-07-04T17:31:45.181257+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8278**
 
@@ -62,32 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-04T17:22:11.297898+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=62893.8
-- Funnel: target 834 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-04T17:31:38.010477+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=62995.9
+- Funnel: target 834 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +30.60% | $1,100,852.14 |
-| VELVET/USDT:USDT | +5.20% | $37,820,869.34 |
-| BAS/USDT:USDT | +5.04% | $5,225,182.81 |
-| BSB/USDT:USDT | +4.67% | $3,479,752.12 |
-| MAGMA/USDT:USDT | +4.42% | $15,448,752.92 |
+| HEI/USDT:USDT | +27.58% | $1,434,913.36 |
+| RPL/USDT:USDT | +10.71% | $1,040,149.36 |
+| VELVET/USDT:USDT | +7.75% | $38,046,900.78 |
+| SKYAI/USDT:USDT | +5.92% | $9,597,918.84 |
+| ETHFI/USDT:USDT | +5.45% | $6,690,587.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.06% | +3.06% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.66% | +2.66% |
-| BAS/USDT:USDT | below_1h_threshold | +2.63% | +2.63% |
-| BSB/USDT:USDT | below_1h_threshold | +2.03% | +2.03% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.03% | +2.03% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.85% | +3.69% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.59% | +3.43% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.55% | +3.39% |
+| BAS/USDT:USDT | below_1h_threshold | +2.89% | +2.73% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.34% | +2.17% |
 
 ## 6. 次に見るべき不足
 
