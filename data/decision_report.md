@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-05T16:58:50.785102+00:00
+- generated_at: 2026-07-05T17:19:02.792148+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8338**
+- closed shadow trades: **8340**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8338, expectancy=-0.02%
+- 全期間 MARKET基準: n=8340, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.60%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,19 +23,19 @@
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
 | LIMIT_6PCT | 6/20 | 30.0% | +0.91% | **+0.27%** |
-| LIMIT_5PCT | 8/20 | 40.0% | +0.33% | **+0.13%** |
+| LIMIT_5PCT | 7/20 | 35.0% | +0.24% | **+0.09%** |
 | LIMIT_4PCT | 16/20 | 80.0% | -0.25% | **-0.20%** |
-| LIMIT_FIB1272 | 7/20 | 35.0% | -0.74% | **-0.26%** |
+| LIMIT_BB3S | 7/17 | 41.2% | -0.59% | **-0.24%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK_LONG | 20/20 | 100.0% | +1.73% | **+1.73%** |
+| ASK_LONG | 20/20 | 100.0% | +1.82% | **+1.82%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.40% | **+1.40%** |
-| LIMIT_1PCT_LONG | 12/20 | 60.0% | +0.77% | **+0.46%** |
+| LIMIT_2PCT_LONG | 12/20 | 60.0% | +1.22% | **+0.73%** |
+| LIMIT_1PCT_LONG | 13/20 | 65.0% | +1.10% | **+0.72%** |
 | LIMIT_7PCT_LONG | 6/20 | 30.0% | +1.46% | **+0.44%** |
-| LIMIT_2PCT_LONG | 11/20 | 55.0% | +0.77% | **+0.42%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$321.94** / 初期 $100.00 (+221.94%)
-- 確定: 2620件 (Win 832 / Loss 884 / Flat 904) / skip 2279件
+- 確定: 2620件 (Win 832 / Loss 884 / Flat 904) / skip 2281件
 - 成長率目線: 平均log +0.000446 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MAGMA/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $321.94
@@ -55,39 +55,39 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.76** / 初期 $100.00 (+5.76%)
-- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1111件
+- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1113件
 - 成長率目線: 平均log +0.000088 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: HMSTR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $105.76
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T16:58:44.169515+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=62617.7
-- Funnel: target 835 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 69.6 >= 65=1
+- 更新: 2026-07-05T17:18:55.396997+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=62679.8
+- Funnel: target 835 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +7.57% | $4,054,950.27 |
-| ZEROC0MPUTE/USDT:USDT | +6.51% | $1,085,864.49 |
-| CAP/USDT:USDT | +4.07% | $5,856,122.51 |
-| TLM/USDT:USDT | +3.62% | $30,968,878.57 |
-| BASED/USDT:USDT | +3.49% | $3,140,260.99 |
+| NES/USDT:USDT | +13.69% | $4,309,929.53 |
+| ZEROC0MPUTE/USDT:USDT | +5.07% | $1,098,032.17 |
+| BASED/USDT:USDT | +3.51% | $3,031,883.69 |
+| VELVET/USDT:USDT | +3.44% | $14,185,802.02 |
+| VANRY/USDT:USDT | +3.29% | $5,722,739.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.08% | +4.23% |
-| TLM/USDT:USDT | below_1h_threshold | +3.63% | +3.78% |
-| BASED/USDT:USDT | below_1h_threshold | +3.50% | +3.65% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.56% | +2.71% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.79% | +1.94% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.14% | +2.03% |
+| XPL/USDT:USDT | below_1h_threshold | +1.50% | +1.39% |
+| HEI/USDT:USDT | below_1h_threshold | +1.39% | +1.29% |
+| XTZ/USDT:USDT | below_1h_threshold | +1.17% | +1.06% |
+| BTW/USDT:USDT | below_1h_threshold | +0.88% | +0.77% |
 
 ## 6. 次に見るべき不足
 
