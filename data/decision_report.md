@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-05T11:16:57.123732+00:00
+- generated_at: 2026-07-05T11:26:47.122422+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8319**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T11:16:52.180967+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=62629.1
-- Funnel: target 835 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-05T11:26:41.682140+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=62605.0
+- Funnel: target 835 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +28.12% | $2,922,456.94 |
-| BTW/USDT:USDT | +25.95% | $3,417,379.75 |
-| CAP/USDT:USDT | +19.61% | $3,130,794.15 |
-| HOT/USDT:USDT | +17.51% | $3,570,166.83 |
-| RPL/USDT:USDT | +10.93% | $6,716,276.82 |
+| NES/USDT:USDT | +29.00% | $2,947,206.57 |
+| BTW/USDT:USDT | +23.55% | $3,736,799.82 |
+| CAP/USDT:USDT | +22.66% | $3,189,673.09 |
+| HOT/USDT:USDT | +18.05% | $3,583,416.60 |
+| RPL/USDT:USDT | +13.81% | $6,785,211.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.89% | +4.06% |
-| VANRY/USDT:USDT | below_1h_threshold | +3.83% | +4.01% |
-| CAP/USDT:USDT | below_1h_threshold | +2.79% | +2.97% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.34% | +2.51% |
-| ARX/USDT:USDT | below_1h_threshold | +1.48% | +1.66% |
+| RPL/USDT:USDT | below_1h_threshold | +4.11% | +4.33% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.39% | +2.60% |
+| ARX/USDT:USDT | below_1h_threshold | +2.07% | +2.28% |
+| LIT/USDT:USDT | below_1h_threshold | +2.05% | +2.26% |
+| BIRB/USDT:USDT | below_1h_threshold | +1.42% | +1.63% |
 
 ## 6. 次に見るべき不足
 
