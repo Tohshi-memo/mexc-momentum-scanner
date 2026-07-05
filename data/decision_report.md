@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-05T23:40:49.061203+00:00
+- generated_at: 2026-07-05T23:50:38.441633+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8356**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T23:40:42.879214+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63624.0
+- 更新: 2026-07-05T23:50:33.424135+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=63589.8
 - Funnel: target 835 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRB/USDT:USDT | +17.40% | $5,957,909.40 |
-| 4/USDT:USDT | +15.17% | $1,001,997.70 |
-| GIGGLE/USDT:USDT | +12.05% | $1,249,109.32 |
-| TLM/USDT:USDT | +11.47% | $40,891,151.63 |
-| ZEROC0MPUTE/USDT:USDT | +11.17% | $1,621,834.29 |
+| TRB/USDT:USDT | +17.49% | $6,055,892.38 |
+| 4/USDT:USDT | +14.89% | $1,017,594.92 |
+| TLM/USDT:USDT | +11.90% | $40,981,774.46 |
+| GIGGLE/USDT:USDT | +11.61% | $1,273,178.95 |
+| ZEROC0MPUTE/USDT:USDT | +9.08% | $1,623,868.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARX/USDT:USDT | below_1h_threshold | +2.01% | +2.16% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.73% | +1.88% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.60% | +1.75% |
-| TRB/USDT:USDT | below_1h_threshold | +1.58% | +1.73% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.34% | +1.49% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.63% | +2.83% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.10% | +2.30% |
+| TRB/USDT:USDT | below_1h_threshold | +1.84% | +2.04% |
+| ARX/USDT:USDT | below_1h_threshold | +1.47% | +1.67% |
+| MYX/USDT:USDT | below_1h_threshold | +1.33% | +1.53% |
 
 ## 6. 次に見るべき不足
 
