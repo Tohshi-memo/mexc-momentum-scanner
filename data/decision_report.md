@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-05T15:50:04.761623+00:00
+- generated_at: 2026-07-05T15:59:59.061375+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8335**
+- closed shadow trades: **8336**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8335, expectancy=-0.02%
+- 全期間 MARKET基準: n=8336, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.00%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_6PCT | 6/20 | 30.0% | +0.91% | **+0.27%** |
 | LIMIT_5PCT | 8/20 | 40.0% | +0.33% | **+0.13%** |
 | LIMIT_4PCT | 15/20 | 75.0% | -0.27% | **-0.20%** |
-| LIMIT_FIB1272 | 7/20 | 35.0% | -0.79% | **-0.28%** |
+| LIMIT_FIB1272 | 6/20 | 30.0% | -0.82% | **-0.25%** |
 
 ### シャドウ上位 LONG
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | ASK_LONG | 20/20 | 100.0% | +1.38% | **+1.38%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.00% | **+1.00%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.20% | **+0.84%** |
-| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +1.75% | **+0.61%** |
+| LIMIT_2PCT_LONG | 13/20 | 65.0% | +0.82% | **+0.53%** |
 | LIMIT_1PCT_LONG | 14/20 | 70.0% | +0.74% | **+0.52%** |
+| LIMIT_7PCT_LONG | 7/20 | 35.0% | +0.68% | **+0.24%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$321.94** / 初期 $100.00 (+221.94%)
-- 確定: 2620件 (Win 832 / Loss 884 / Flat 904) / skip 2276件
+- 確定: 2620件 (Win 832 / Loss 884 / Flat 904) / skip 2277件
 - 成長率目線: 平均log +0.000446 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MAGMA/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $321.94
@@ -55,39 +55,38 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.76** / 初期 $100.00 (+5.76%)
-- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1108件
+- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1109件
 - 成長率目線: 平均log +0.000088 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: HMSTR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $105.76
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T15:49:55.976709+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=62700.7
-- Funnel: target 835 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.4 >= 65=1
+- 更新: 2026-07-05T15:59:50.650079+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=62711.9
+- Funnel: target 835 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +34.24% | $3,624,736.63 |
-| CAP/USDT:USDT | +30.53% | $4,726,914.34 |
-| ULTIMA/USDT:USDT | +28.44% | $1,355,079.67 |
-| TLM/USDT:USDT | +22.20% | $29,088,361.28 |
-| HOT/USDT:USDT | +21.90% | $4,172,082.65 |
+| NES/USDT:USDT | +36.15% | $3,684,994.18 |
+| CAP/USDT:USDT | +33.13% | $4,847,462.74 |
+| ULTIMA/USDT:USDT | +27.94% | $1,369,534.38 |
+| HOT/USDT:USDT | +21.15% | $4,244,310.20 |
+| TLM/USDT:USDT | +18.45% | $29,746,816.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +4.17% | +4.31% |
-| ARX/USDT:USDT | below_1h_threshold | +3.28% | +3.41% |
-| HOT/USDT:USDT | below_1h_threshold | +3.27% | +3.40% |
-| LIT/USDT:USDT | below_1h_threshold | +2.81% | +2.94% |
-| H/USDT:USDT | below_1h_threshold | +2.77% | +2.90% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.51% | +4.63% |
+| LIT/USDT:USDT | below_1h_threshold | +3.50% | +3.62% |
+| ARX/USDT:USDT | below_1h_threshold | +2.88% | +3.00% |
+| TLM/USDT:USDT | below_1h_threshold | +2.65% | +2.77% |
+| HOT/USDT:USDT | below_1h_threshold | +2.47% | +2.59% |
 
 ## 6. 次に見るべき不足
 
