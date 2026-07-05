@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-05T04:49:28.614865+00:00
+- generated_at: 2026-07-05T04:59:15.160809+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8307**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T04:49:21.634218+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=62825.7
+- 更新: 2026-07-05T04:59:08.156055+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=62806.2
 - Funnel: target 834 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +30.32% | $1,012,547.14 |
-| RPL/USDT:USDT | +19.20% | $5,284,758.62 |
-| H/USDT:USDT | +12.94% | $5,020,088.55 |
-| O/USDT:USDT | +11.73% | $6,909,546.83 |
-| HEI/USDT:USDT | +8.70% | $3,101,914.57 |
+| NES/USDT:USDT | +28.95% | $1,055,537.50 |
+| RPL/USDT:USDT | +18.70% | $5,303,055.19 |
+| O/USDT:USDT | +12.13% | $6,983,545.92 |
+| H/USDT:USDT | +11.09% | $5,063,096.51 |
+| HEI/USDT:USDT | +9.05% | $3,104,782.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NES/USDT:USDT | below_1h_threshold | +4.72% | +4.59% |
-| RIF/USDT:USDT | below_1h_threshold | +3.06% | +2.92% |
-| BAS/USDT:USDT | below_1h_threshold | +2.13% | +1.99% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.54% | +1.41% |
-| XMR/USDT:USDT | below_1h_threshold | +0.89% | +0.76% |
+| RIF/USDT:USDT | below_1h_threshold | +4.81% | +4.71% |
+| NES/USDT:USDT | below_1h_threshold | +3.62% | +3.52% |
+| BAS/USDT:USDT | below_1h_threshold | +3.20% | +3.09% |
+| LIT/USDT:USDT | below_1h_threshold | +1.52% | +1.41% |
+| BCH/USDT:USDT | below_1h_threshold | +1.29% | +1.18% |
 
 ## 6. 次に見るべき不足
 
