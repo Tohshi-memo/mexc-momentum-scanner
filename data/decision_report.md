@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-05T15:00:40.196742+00:00
+- generated_at: 2026-07-05T15:10:43.291177+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8330**
+- closed shadow trades: **8331**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8330, expectancy=-0.02%
+- 全期間 MARKET基準: n=8331, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,18 +21,18 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
 | LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
 | ASK | 20/20 | 100.0% | +0.16% | **+0.16%** |
 | LIMIT_5PCT | 7/20 | 35.0% | +0.24% | **+0.09%** |
+| LIMIT_4PCT | 14/20 | 70.0% | -0.29% | **-0.20%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK_LONG | 20/20 | 100.0% | +0.95% | **+0.95%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
+| ASK_LONG | 20/20 | 100.0% | +1.01% | **+1.01%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.60% | **+0.60%** |
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +0.82% | **+0.53%** |
 | LIMIT_1PCT_LONG | 13/20 | 65.0% | +0.40% | **+0.26%** |
 | LIMIT_4PCT_LONG | 9/20 | 45.0% | +0.00% | **+0.00%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$321.94** / 初期 $100.00 (+221.94%)
-- 確定: 2620件 (Win 832 / Loss 884 / Flat 904) / skip 2271件
+- 確定: 2620件 (Win 832 / Loss 884 / Flat 904) / skip 2272件
 - 成長率目線: 平均log +0.000446 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MAGMA/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $321.94
@@ -55,37 +55,37 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.76** / 初期 $100.00 (+5.76%)
-- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1103件
+- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1104件
 - 成長率目線: 平均log +0.000088 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: HMSTR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $105.76
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T15:00:35.137868+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=62770.7
-- Funnel: target 835 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-05T15:10:37.244875+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=62845.7
+- Funnel: target 835 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +36.15% | $3,500,432.05 |
-| ULTIMA/USDT:USDT | +35.42% | $1,056,985.77 |
-| CAP/USDT:USDT | +20.98% | $4,172,397.62 |
-| HOT/USDT:USDT | +19.21% | $4,047,893.62 |
-| TLM/USDT:USDT | +16.51% | $24,566,965.12 |
+| NES/USDT:USDT | +35.57% | $3,517,928.43 |
+| ULTIMA/USDT:USDT | +27.49% | $1,146,160.62 |
+| CAP/USDT:USDT | +24.39% | $4,252,161.50 |
+| TLM/USDT:USDT | +20.46% | $25,241,299.41 |
+| HOT/USDT:USDT | +18.77% | $4,063,406.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +1.17% | +1.20% |
-| HOT/USDT:USDT | below_1h_threshold | +0.98% | +1.01% |
-| HMSTR/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| BTW/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| CAP/USDT:USDT | below_1h_threshold | +0.38% | +0.40% |
+| TLM/USDT:USDT | below_1h_threshold | +4.50% | +4.40% |
+| CAP/USDT:USDT | below_1h_threshold | +3.20% | +3.11% |
+| BTW/USDT:USDT | below_1h_threshold | +1.28% | +1.18% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.22% | +1.13% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.11% | +1.02% |
 
 ## 6. 次に見るべき不足
 
