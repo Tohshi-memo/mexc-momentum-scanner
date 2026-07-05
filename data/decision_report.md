@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-05T06:54:33.336246+00:00
+- generated_at: 2026-07-05T07:04:28.867882+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8312**
+- closed shadow trades: **8313**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.19% / filled 20/20。**
-- 全期間 MARKET基準: n=8312, expectancy=-0.02%
+- 全期間 MARKET基準: n=8313, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+2.19%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,7 +21,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK | 20/20 | 100.0% | +2.21% | **+2.21%** |
+| ASK | 20/20 | 100.0% | +2.23% | **+2.23%** |
 | MARKET | 20/20 | 100.0% | +2.19% | **+2.19%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
 | LIMIT_5PCT | 3/20 | 15.0% | +0.95% | **+0.14%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$323.56** / 初期 $100.00 (+223.56%)
-- 確定: 2619件 (Win 832 / Loss 883 / Flat 904) / skip 2254件
+- 確定: 2619件 (Win 832 / Loss 883 / Flat 904) / skip 2255件
 - 成長率目線: 平均log +0.000448 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: VELVET/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $323.56
@@ -55,39 +55,37 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.76** / 初期 $100.00 (+5.76%)
-- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1085件
+- 確定: 638件 (Win 152 / Loss 157 / Flat 329) / skip 1086件
 - 成長率目線: 平均log +0.000088 / 幾何平均 +0.009% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: HMSTR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $105.76
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T06:54:26.149256+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=62763.4
-- Funnel: target 834 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-05T07:04:22.808113+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=62768.4
+- Funnel: target 834 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +31.65% | $1,398,873.03 |
-| RPL/USDT:USDT | +20.58% | $5,714,033.96 |
-| HOT/USDT:USDT | +19.39% | $2,223,607.71 |
-| BIRB/USDT:USDT | +18.98% | $1,206,820.68 |
-| O/USDT:USDT | +10.11% | $8,154,248.59 |
+| NES/USDT:USDT | +36.10% | $1,554,505.39 |
+| RPL/USDT:USDT | +20.31% | $5,723,877.21 |
+| HOT/USDT:USDT | +19.39% | $2,267,110.49 |
+| BIRB/USDT:USDT | +17.49% | $1,217,313.05 |
+| O/USDT:USDT | +11.46% | $8,039,089.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.51% | +3.43% |
-| BIRB/USDT:USDT | below_1h_threshold | +3.48% | +3.40% |
-| ARX/USDT:USDT | below_1h_threshold | +3.45% | +3.37% |
-| CAP/USDT:USDT | below_1h_threshold | +2.93% | +2.85% |
-| NES/USDT:USDT | below_1h_threshold | +1.78% | +1.71% |
+| NES/USDT:USDT | below_1h_threshold | +4.01% | +3.98% |
+| LAB/USDT:USDT | below_1h_threshold | +1.94% | +1.91% |
+| VANRY/USDT:USDT | below_1h_threshold | +1.36% | +1.33% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.06% | +1.03% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.95% | +0.92% |
 
 ## 6. 次に見るべき不足
 
