@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-05T05:37:50.917836+00:00
+- generated_at: 2026-07-05T05:47:45.176576+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8307**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T05:37:45.486569+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=62755.7
-- Funnel: target 834 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 83.8 >= 65=1
+- 更新: 2026-07-05T05:47:39.596012+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=62654.9
+- Funnel: target 834 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1, 4h RSI 83.7 >= 65=1, 4h RSI 71.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +31.30% | $1,149,879.74 |
-| RPL/USDT:USDT | +21.25% | $5,434,222.06 |
-| PLAY/USDT:USDT | +15.92% | $1,051,332.53 |
-| LAB/USDT:USDT | +12.93% | $146,483,460.13 |
-| O/USDT:USDT | +12.81% | $7,567,108.45 |
+| NES/USDT:USDT | +32.43% | $1,178,368.17 |
+| RPL/USDT:USDT | +22.03% | $5,482,912.74 |
+| PLAY/USDT:USDT | +17.25% | $1,125,320.07 |
+| BIRB/USDT:USDT | +15.53% | $1,025,826.23 |
+| O/USDT:USDT | +15.23% | $7,602,339.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PLAY/USDT:USDT | below_1h_threshold | +4.51% | +4.56% |
-| HOT/USDT:USDT | below_1h_threshold | +3.66% | +3.72% |
-| RE/USDT:USDT | below_1h_threshold | +3.01% | +3.06% |
-| NES/USDT:USDT | below_1h_threshold | +2.02% | +2.07% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.89% | +1.94% |
+| O/USDT:USDT | below_1h_threshold | +3.47% | +3.68% |
+| RE/USDT:USDT | below_1h_threshold | +2.93% | +3.14% |
+| NES/USDT:USDT | below_1h_threshold | +2.40% | +2.61% |
+| RPL/USDT:USDT | below_1h_threshold | +2.37% | +2.59% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.68% | +1.89% |
 
 ## 6. 次に見るべき不足
 
