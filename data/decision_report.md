@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-05T21:35:10.253904+00:00
+- generated_at: 2026-07-05T21:45:00.751759+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8354**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T21:35:02.690513+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=62889.3
-- Funnel: target 835 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-05T21:44:53.285431+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=62997.7
+- Funnel: target 835 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEROC0MPUTE/USDT:USDT | +38.34% | $1,659,000.35 |
-| TRB/USDT:USDT | +14.49% | $4,337,797.82 |
-| VELVET/USDT:USDT | +12.11% | $16,872,646.37 |
-| TLM/USDT:USDT | +9.77% | $38,563,127.85 |
-| GIGGLE/USDT:USDT | +9.41% | $1,053,623.19 |
+| ZEROC0MPUTE/USDT:USDT | +34.43% | $1,664,504.52 |
+| TRB/USDT:USDT | +15.77% | $4,594,298.19 |
+| TLM/USDT:USDT | +12.85% | $39,190,927.55 |
+| VELVET/USDT:USDT | +12.58% | $16,934,919.06 |
+| GIGGLE/USDT:USDT | +9.88% | $1,072,388.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRB/USDT:USDT | below_1h_threshold | +2.42% | +2.12% |
-| RE/USDT:USDT | below_1h_threshold | +1.60% | +1.30% |
-| XPL/USDT:USDT | below_1h_threshold | +1.52% | +1.23% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.48% | +1.19% |
-| JTO/USDT:USDT | below_1h_threshold | +1.21% | +0.91% |
+| TRB/USDT:USDT | below_1h_threshold | +3.56% | +3.09% |
+| RE/USDT:USDT | below_1h_threshold | +2.31% | +1.84% |
+| NES/USDT:USDT | below_1h_threshold | +1.81% | +1.34% |
+| XPL/USDT:USDT | below_1h_threshold | +1.69% | +1.22% |
+| UAI/USDT:USDT | below_1h_threshold | +1.37% | +0.91% |
 
 ## 6. 次に見るべき不足
 
