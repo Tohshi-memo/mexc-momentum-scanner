@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-05T13:12:36.425971+00:00
+- generated_at: 2026-07-05T13:22:39.168578+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8326**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-05T13:12:31.462962+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=62739.5
+- 更新: 2026-07-05T13:22:34.160311+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62697.1
 - Funnel: target 835 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +29.69% | $3,154,521.86 |
-| BTW/USDT:USDT | +25.39% | $5,662,724.84 |
-| VANRY/USDT:USDT | +22.41% | $6,103,537.61 |
-| CAP/USDT:USDT | +22.10% | $3,466,408.95 |
-| HOT/USDT:USDT | +19.46% | $3,874,376.99 |
+| NES/USDT:USDT | +29.05% | $3,165,193.30 |
+| BTW/USDT:USDT | +24.15% | $6,100,477.29 |
+| VANRY/USDT:USDT | +22.41% | $6,200,149.88 |
+| CAP/USDT:USDT | +20.32% | $3,562,729.19 |
+| HOT/USDT:USDT | +19.83% | $3,887,296.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIGENSYN/USDT:USDT | below_1h_threshold | +1.67% | +1.64% |
-| HMSTR/USDT:USDT | below_1h_threshold | +1.29% | +1.26% |
-| BIRB/USDT:USDT | below_1h_threshold | +1.14% | +1.11% |
-| RIF/USDT:USDT | below_1h_threshold | +1.09% | +1.06% |
-| A/USDT:USDT | below_1h_threshold | +0.94% | +0.91% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.53% | +2.56% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
+| TLM/USDT:USDT | below_1h_threshold | +1.17% | +1.20% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.09% | +1.13% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
 
 ## 6. 次に見るべき不足
 
