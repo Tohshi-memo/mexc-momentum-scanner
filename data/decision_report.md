@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T09:14:12.042733+00:00
+- generated_at: 2026-07-06T09:24:14.328752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8378**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T09:14:07.099160+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62850.6
+- 更新: 2026-07-06T09:24:09.310041+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=62769.7
 - Funnel: target 841 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEROC0MPUTE/USDT:USDT | +16.50% | $1,581,153.52 |
-| TRB/USDT:USDT | +11.59% | $11,724,083.58 |
-| YFI/USDT:USDT | +11.20% | $1,000,981.38 |
-| VANRY/USDT:USDT | +10.50% | $5,877,083.09 |
-| BEL/USDT:USDT | +10.24% | $1,644,404.23 |
+| ZEROC0MPUTE/USDT:USDT | +15.89% | $1,583,385.14 |
+| BEL/USDT:USDT | +14.13% | $1,697,436.60 |
+| VANRY/USDT:USDT | +11.33% | $5,963,431.68 |
+| TRB/USDT:USDT | +11.18% | $11,892,453.54 |
+| YFI/USDT:USDT | +10.26% | $1,044,999.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ID/USDT:USDT | below_1h_threshold | +1.65% | +1.69% |
-| GOAT/USDT:USDT | below_1h_threshold | +1.22% | +1.26% |
-| YFI/USDT:USDT | below_1h_threshold | +1.21% | +1.25% |
-| TRB/USDT:USDT | below_1h_threshold | +1.20% | +1.24% |
-| NES/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
+| BEL/USDT:USDT | below_1h_threshold | +3.08% | +3.25% |
+| GOAT/USDT:USDT | below_1h_threshold | +1.22% | +1.39% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.06% | +1.22% |
+| ID/USDT:USDT | below_1h_threshold | +0.98% | +1.15% |
+| VANRY/USDT:USDT | below_1h_threshold | +0.92% | +1.09% |
 
 ## 6. 次に見るべき不足
 
