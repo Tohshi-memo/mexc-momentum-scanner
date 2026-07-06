@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T23:01:37.211378+00:00
+- generated_at: 2026-07-06T23:11:35.377157+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8409**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T23:01:32.244742+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64200.0
+- 更新: 2026-07-06T23:11:30.455782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64227.1
 - Funnel: target 841 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +35.64% | $11,322,329.21 |
-| BLUR/USDT:USDT | +27.45% | $4,590,136.43 |
-| ANSEM/USDT:USDT | +16.42% | $5,120,887.35 |
-| ALLO/USDT:USDT | +14.14% | $16,469,689.55 |
-| HMSTR/USDT:USDT | +13.70% | $5,253,035.20 |
+| US/USDT:USDT | +36.18% | $11,816,924.18 |
+| BLUR/USDT:USDT | +28.66% | $4,621,266.61 |
+| ANSEM/USDT:USDT | +16.73% | $5,150,781.98 |
+| ALLO/USDT:USDT | +14.00% | $16,587,749.47 |
+| EDGE/USDT:USDT | +12.98% | $1,846,117.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LINSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
-| B/USDT:USDT | below_1h_threshold | +0.65% | +0.70% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.52% | +0.57% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
-| STG/USDT:USDT | below_1h_threshold | +0.40% | +0.45% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.76% | +1.76% |
+| STG/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.79% | +0.79% |
+| BLUR/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| UB/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
 
 ## 6. 次に見るべき不足
 
