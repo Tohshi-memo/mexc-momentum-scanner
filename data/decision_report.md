@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T22:01:21.817460+00:00
+- generated_at: 2026-07-06T22:11:43.806295+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8409**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T22:01:16.004539+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64414.9
+- 更新: 2026-07-06T22:11:38.802711+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=64280.4
 - Funnel: target 841 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +41.64% | $8,570,402.25 |
-| BLUR/USDT:USDT | +27.81% | $4,390,212.94 |
-| ANSEM/USDT:USDT | +19.74% | $4,777,607.38 |
-| HMSTR/USDT:USDT | +12.59% | $5,215,120.23 |
-| ALLO/USDT:USDT | +12.27% | $15,610,672.89 |
+| US/USDT:USDT | +41.41% | $8,976,020.38 |
+| BLUR/USDT:USDT | +27.57% | $4,436,589.45 |
+| ANSEM/USDT:USDT | +18.02% | $4,904,140.96 |
+| ALLO/USDT:USDT | +12.96% | $15,920,962.21 |
+| HMSTR/USDT:USDT | +10.90% | $5,250,352.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HMSTR/USDT:USDT | below_1h_threshold | +0.79% | +0.89% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.32% | +0.41% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.30% | +0.39% |
-| BLUR/USDT:USDT | below_1h_threshold | +0.29% | +0.38% |
-| US/USDT:USDT | below_1h_threshold | +0.22% | +0.31% |
+| YFI/USDT:USDT | below_1h_threshold | +1.25% | +1.55% |
+| JTO/USDT:USDT | below_1h_threshold | +1.09% | +1.39% |
+| H/USDT:USDT | below_1h_threshold | +0.92% | +1.22% |
+| UB/USDT:USDT | below_1h_threshold | +0.83% | +1.13% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.79% | +1.09% |
 
 ## 6. 次に見るべき不足
 
