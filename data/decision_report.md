@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T09:54:25.424122+00:00
+- generated_at: 2026-07-06T10:04:16.993349+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8380**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T09:54:18.875306+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=62668.7
-- Funnel: target 841 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 79.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-06T10:04:12.100250+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=62740.9
+- Funnel: target 841 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +25.05% | $6,997,907.31 |
-| ZEROC0MPUTE/USDT:USDT | +17.15% | $1,591,192.30 |
-| BEL/USDT:USDT | +14.40% | $1,790,090.15 |
-| DEXE/USDT:USDT | +12.92% | $1,236,836.97 |
-| TRB/USDT:USDT | +11.45% | $12,141,576.81 |
+| VANRY/USDT:USDT | +23.41% | $7,073,282.64 |
+| ZEROC0MPUTE/USDT:USDT | +18.59% | $1,559,408.40 |
+| BEL/USDT:USDT | +15.15% | $1,814,471.73 |
+| DEXE/USDT:USDT | +12.63% | $1,306,909.59 |
+| YFI/USDT:USDT | +11.69% | $1,133,338.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEL/USDT:USDT | below_1h_threshold | +3.32% | +3.65% |
-| TLM/USDT:USDT | below_1h_threshold | +2.86% | +3.19% |
-| IMX/USDT:USDT | below_1h_threshold | +2.43% | +2.76% |
-| GOAT/USDT:USDT | below_1h_threshold | +1.76% | +2.09% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.64% | +1.97% |
+| BEL/USDT:USDT | below_1h_threshold | +0.71% | +0.56% |
+| TLM/USDT:USDT | below_1h_threshold | +0.65% | +0.50% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.50% | +0.35% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.46% | +0.31% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.43% | +0.28% |
 
 ## 6. 次に見るべき不足
 
