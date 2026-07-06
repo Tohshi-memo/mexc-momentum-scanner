@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T12:04:16.573315+00:00
+- generated_at: 2026-07-06T12:14:12.643858+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8386**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T12:04:11.602896+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.71% price=62018.8
+- 更新: 2026-07-06T12:14:07.651642+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=62066.6
 - Funnel: target 841 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +34.49% | $8,753,038.52 |
-| BEL/USDT:USDT | +20.58% | $2,052,468.30 |
-| YFI/USDT:USDT | +16.39% | $2,975,166.39 |
-| DEXE/USDT:USDT | +12.76% | $1,707,361.44 |
-| ZEROC0MPUTE/USDT:USDT | +11.76% | $1,546,924.94 |
+| VANRY/USDT:USDT | +35.75% | $8,909,987.82 |
+| BEL/USDT:USDT | +19.66% | $2,086,577.04 |
+| YFI/USDT:USDT | +15.28% | $3,110,972.43 |
+| ANSEM/USDT:USDT | +14.36% | $2,297,022.73 |
+| DEXE/USDT:USDT | +13.57% | $1,759,007.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEL/USDT:USDT | below_1h_threshold | +0.47% | +1.18% |
-| KORU/USDT:USDT | below_1h_threshold | +0.41% | +1.13% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +1.06% |
-| VANRY/USDT:USDT | below_1h_threshold | +0.19% | +0.91% |
-| AMATSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.87% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.42% | +2.05% |
+| VANRY/USDT:USDT | below_1h_threshold | +0.97% | +1.61% |
+| LIT/USDT:USDT | below_1h_threshold | +0.82% | +1.46% |
+| KORU/USDT:USDT | below_1h_threshold | +0.59% | +1.23% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +1.22% |
 
 ## 6. 次に見るべき不足
 
