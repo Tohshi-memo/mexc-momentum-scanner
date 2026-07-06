@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-06T12:41:56.229858+00:00
+- generated_at: 2026-07-06T12:51:51.452969+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8386**
+- closed shadow trades: **8387**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.42% / filled 20/20。**
-- 全期間 MARKET基準: n=8386, expectancy=-0.02%
+- 全期間 MARKET基準: n=8387, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.42%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$317.13** / 初期 $100.00 (+217.13%)
-- 確定: 2623件 (Win 832 / Loss 887 / Flat 904) / skip 2324件
+- 確定: 2623件 (Win 832 / Loss 887 / Flat 904) / skip 2325件
 - 成長率目線: 平均log +0.000440 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: VANRY/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $317.13
@@ -55,37 +55,38 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.48** / 初期 $100.00 (+5.48%)
-- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1158件
+- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1159件
 - 成長率目線: 平均log +0.000084 / 幾何平均 +0.008% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BASED/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.26% 残高後 $105.48
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T12:41:51.244194+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.79% price=61966.9
-- Funnel: target 841 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-06T12:51:45.126947+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.15% price=61744.4
+- Funnel: target 841 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +31.63% | $9,371,724.08 |
-| BEL/USDT:USDT | +15.34% | $2,176,420.11 |
-| YFI/USDT:USDT | +15.01% | $3,412,635.29 |
-| DEXE/USDT:USDT | +13.49% | $1,812,248.29 |
-| TRIA/USDT:USDT | +12.62% | $1,682,337.47 |
+| VANRY/USDT:USDT | +32.49% | $9,483,199.02 |
+| YFI/USDT:USDT | +15.28% | $3,473,545.74 |
+| TRIA/USDT:USDT | +14.09% | $1,761,972.88 |
+| BEL/USDT:USDT | +13.98% | $2,195,742.20 |
+| DEXE/USDT:USDT | +13.04% | $1,828,396.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +4.27% | +5.07% |
-| LIT/USDT:USDT | below_1h_threshold | +2.22% | +3.02% |
-| MYX/USDT:USDT | below_1h_threshold | +2.06% | +2.85% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.25% | +2.05% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.04% | +1.84% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.12% | +3.27% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.91% | +3.07% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.38% | +2.53% |
+| LIT/USDT:USDT | below_1h_threshold | +1.20% | +2.35% |
+| MYX/USDT:USDT | below_1h_threshold | +0.80% | +1.95% |
 
 ## 6. 次に見るべき不足
 
