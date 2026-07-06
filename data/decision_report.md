@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T02:58:08.343188+00:00
+- generated_at: 2026-07-06T03:07:57.851087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8367**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T02:58:00.609579+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=63423.9
-- Funnel: target 836 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-06T03:07:52.851443+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63416.5
+- Funnel: target 836 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEROC0MPUTE/USDT:USDT | +21.02% | $1,608,178.11 |
-| TRB/USDT:USDT | +15.99% | $7,420,312.75 |
-| SYN/USDT:USDT | +11.34% | $12,486,514.34 |
-| UB/USDT:USDT | +10.63% | $1,222,225.37 |
-| LIT/USDT:USDT | +7.61% | $11,250,731.71 |
+| ZEROC0MPUTE/USDT:USDT | +19.98% | $1,594,784.95 |
+| TRB/USDT:USDT | +16.88% | $7,509,420.57 |
+| UB/USDT:USDT | +10.04% | $1,218,563.39 |
+| LIT/USDT:USDT | +7.89% | $11,449,679.23 |
+| SYN/USDT:USDT | +7.44% | $12,419,171.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RPL/USDT:USDT | below_1h_threshold | +4.84% | +5.03% |
-| LAB/USDT:USDT | below_1h_threshold | +3.89% | +4.08% |
-| BASED/USDT:USDT | below_1h_threshold | +2.36% | +2.55% |
-| TRB/USDT:USDT | below_1h_threshold | +2.31% | +2.50% |
-| RESOLV/USDT:USDT | below_1h_threshold | +1.83% | +2.02% |
+| BASED/USDT:USDT | below_1h_threshold | +1.00% | +1.01% |
+| RESOLV/USDT:USDT | below_1h_threshold | +0.89% | +0.91% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.67% | +0.68% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +0.49% | +0.50% |
+| PLAY/USDT:USDT | below_1h_threshold | +0.49% | +0.50% |
 
 ## 6. 次に見るべき不足
 
