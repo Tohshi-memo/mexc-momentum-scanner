@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T13:32:07.182309+00:00
+- generated_at: 2026-07-06T13:40:01.360080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8390**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T13:31:59.694370+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=61514.4
-- Funnel: target 841 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1
+- 更新: 2026-07-06T13:39:56.872305+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=61428.9
+- Funnel: target 841 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.7 >= 65=1, 4h RSI 65.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +67.65% | $10,269,574.80 |
-| YFI/USDT:USDT | +17.16% | $3,700,809.41 |
-| TRIA/USDT:USDT | +16.50% | $2,186,241.95 |
-| DEXE/USDT:USDT | +13.74% | $1,904,274.99 |
-| TLM/USDT:USDT | +13.44% | $46,036,944.81 |
+| VANRY/USDT:USDT | +69.03% | $10,554,938.70 |
+| YFI/USDT:USDT | +17.82% | $3,763,919.41 |
+| TRIA/USDT:USDT | +16.42% | $2,209,833.82 |
+| DEXE/USDT:USDT | +13.61% | $1,929,348.27 |
+| ANSEM/USDT:USDT | +12.02% | $2,537,692.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +4.09% | +4.45% |
-| TLM/USDT:USDT | below_1h_threshold | +3.09% | +3.45% |
-| AALSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.78% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.80% | +2.15% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +2.12% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.44% | +3.93% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.84% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.28% | +3.78% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.20% | +2.70% |
+| YFI/USDT:USDT | below_1h_threshold | +1.76% | +2.26% |
 
 ## 6. 次に見るべき不足
 
