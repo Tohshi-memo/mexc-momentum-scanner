@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T14:20:38.830800+00:00
+- generated_at: 2026-07-06T14:30:47.927834+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8395**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T14:20:32.666858+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=61779.3
+- 更新: 2026-07-06T14:30:42.954809+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=62114.9
 - Funnel: target 841 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +73.74% | $11,423,452.63 |
-| YFI/USDT:USDT | +19.37% | $4,313,643.51 |
-| TRIA/USDT:USDT | +16.62% | $2,677,033.62 |
-| DEXE/USDT:USDT | +15.95% | $2,097,264.15 |
-| BEL/USDT:USDT | +13.63% | $2,260,950.62 |
+| VANRY/USDT:USDT | +75.74% | $11,626,956.82 |
+| YFI/USDT:USDT | +20.75% | $4,437,574.98 |
+| TRIA/USDT:USDT | +18.25% | $2,754,684.78 |
+| DEXE/USDT:USDT | +16.11% | $2,142,315.90 |
+| FOLKS/USDT:USDT | +14.62% | $2,566,773.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| W/USDT:USDT | below_1h_threshold | +2.62% | +2.57% |
-| ZEROC0MPUTE/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.82% | +1.76% |
-| LIT/USDT:USDT | below_1h_threshold | +1.63% | +1.58% |
-| BEL/USDT:USDT | below_1h_threshold | +1.56% | +1.51% |
+| ZEROC0MPUTE/USDT:USDT | below_1h_threshold | +3.32% | +2.73% |
+| TLM/USDT:USDT | below_1h_threshold | +2.80% | +2.20% |
+| W/USDT:USDT | below_1h_threshold | +2.72% | +2.13% |
+| FOLKS/USDT:USDT | below_1h_threshold | +2.66% | +2.06% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.52% | +1.92% |
 
 ## 6. 次に見るべき不足
 
