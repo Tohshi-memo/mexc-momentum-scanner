@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T11:54:20.322427+00:00
+- generated_at: 2026-07-06T12:04:16.573315+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8386**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T11:54:13.640360+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=62915.0
-- Funnel: target 841 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 82.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-06T12:04:11.602896+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.71% price=62018.8
+- Funnel: target 841 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +37.06% | $8,862,000.18 |
-| BEL/USDT:USDT | +19.38% | $2,027,250.70 |
-| YFI/USDT:USDT | +18.37% | $2,797,150.56 |
-| ANSEM/USDT:USDT | +15.54% | $2,196,263.32 |
-| ZEROC0MPUTE/USDT:USDT | +14.57% | $1,566,962.77 |
+| VANRY/USDT:USDT | +34.49% | $8,753,038.52 |
+| BEL/USDT:USDT | +20.58% | $2,052,468.30 |
+| YFI/USDT:USDT | +16.39% | $2,975,166.39 |
+| DEXE/USDT:USDT | +12.76% | $1,707,361.44 |
+| ZEROC0MPUTE/USDT:USDT | +11.76% | $1,546,924.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +4.13% | +3.94% |
-| BEL/USDT:USDT | below_1h_threshold | +2.74% | +2.56% |
-| TRB/USDT:USDT | below_1h_threshold | +2.31% | +2.13% |
-| YFI/USDT:USDT | below_1h_threshold | +2.29% | +2.10% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.85% | +1.66% |
+| BEL/USDT:USDT | below_1h_threshold | +0.47% | +1.18% |
+| KORU/USDT:USDT | below_1h_threshold | +0.41% | +1.13% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +1.06% |
+| VANRY/USDT:USDT | below_1h_threshold | +0.19% | +0.91% |
+| AMATSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.87% |
 
 ## 6. 次に見るべき不足
 
