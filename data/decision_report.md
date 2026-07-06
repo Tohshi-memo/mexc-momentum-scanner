@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T21:00:51.929314+00:00
+- generated_at: 2026-07-06T21:10:41.567904+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8408**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T21:00:46.936778+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63814.4
+- 更新: 2026-07-06T21:10:36.603721+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.19% price=64554.4
 - Funnel: target 841 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +36.49% | $6,265,425.05 |
-| BLUR/USDT:USDT | +24.78% | $3,765,161.56 |
-| EDGE/USDT:USDT | +11.99% | $1,520,441.97 |
-| ALLO/USDT:USDT | +10.39% | $14,607,990.81 |
-| ANSEM/USDT:USDT | +10.38% | $4,497,681.50 |
+| US/USDT:USDT | +36.55% | $6,642,116.92 |
+| BLUR/USDT:USDT | +27.63% | $3,900,436.99 |
+| ANSEM/USDT:USDT | +14.24% | $4,556,643.68 |
+| ALLO/USDT:USDT | +12.94% | $14,817,984.91 |
+| EDGE/USDT:USDT | +12.58% | $1,550,818.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +1.62% | +1.60% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.25% | +1.22% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.67% | +0.64% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.45% | +0.42% |
-| CAP/USDT:USDT | below_1h_threshold | +0.42% | +0.39% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.83% | +2.64% |
+| BLUR/USDT:USDT | below_1h_threshold | +3.10% | +1.91% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.41% | +1.23% |
+| FET/USDT:USDT | below_1h_threshold | +2.37% | +1.19% |
+| APT/USDT:USDT | below_1h_threshold | +2.35% | +1.16% |
 
 ## 6. 次に見るべき不足
 
