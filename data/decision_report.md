@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T14:40:45.926758+00:00
+- generated_at: 2026-07-06T14:48:42.556219+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8395**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T14:40:40.916526+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=62105.0
-- Funnel: target 841 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-06T14:48:38.132023+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=62000.0
+- Funnel: target 841 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +74.60% | $11,898,592.92 |
-| YFI/USDT:USDT | +21.19% | $4,684,986.56 |
-| TRIA/USDT:USDT | +19.56% | $2,914,185.29 |
-| SCRT/USDT:USDT | +16.71% | $1,036,707.59 |
-| DEXE/USDT:USDT | +16.60% | $2,181,250.98 |
+| VANRY/USDT:USDT | +72.36% | $12,070,287.64 |
+| YFI/USDT:USDT | +23.17% | $4,865,819.83 |
+| TRIA/USDT:USDT | +22.22% | $3,116,716.59 |
+| SCRT/USDT:USDT | +17.91% | $1,050,467.55 |
+| TLM/USDT:USDT | +17.00% | $47,667,751.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_relative_strength | +5.33% | +4.75% |
-| LIT/USDT:USDT | below_1h_threshold | +3.94% | +3.36% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.82% | +2.24% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.49% | +1.91% |
-| BEL/USDT:USDT | below_1h_threshold | +2.45% | +1.87% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.00% | +3.59% |
+| YFI/USDT:USDT | below_1h_threshold | +3.33% | +2.92% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.96% | +2.55% |
+| LIT/USDT:USDT | below_1h_threshold | +2.92% | +2.51% |
+| SCRT/USDT:USDT | below_1h_threshold | +2.63% | +2.22% |
 
 ## 6. 次に見るべき不足
 
