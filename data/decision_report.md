@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T20:20:52.460306+00:00
+- generated_at: 2026-07-06T20:30:40.355642+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8408**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T20:20:46.284347+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=63606.4
-- Funnel: target 841 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-06T20:30:35.149275+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63731.7
+- Funnel: target 841 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +35.60% | $4,464,955.95 |
-| BLUR/USDT:USDT | +20.18% | $3,602,590.66 |
-| ANSEM/USDT:USDT | +12.25% | $4,444,277.48 |
-| HMSTR/USDT:USDT | +11.84% | $4,980,444.54 |
-| EDGE/USDT:USDT | +9.01% | $1,409,608.67 |
+| US/USDT:USDT | +36.98% | $4,939,038.56 |
+| BLUR/USDT:USDT | +20.66% | $3,633,871.79 |
+| HMSTR/USDT:USDT | +13.56% | $5,028,071.67 |
+| ANSEM/USDT:USDT | +12.17% | $4,481,203.53 |
+| EDGE/USDT:USDT | +9.56% | $1,433,141.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +4.14% | +4.30% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.00% | +3.17% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.23% | +2.40% |
-| RESOLV/USDT:USDT | below_1h_threshold | +2.16% | +2.32% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.15% |
+| RESOLV/USDT:USDT | below_1h_threshold | +4.14% | +4.11% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.64% | +2.61% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.17% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.89% | +1.86% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.76% | +1.73% |
 
 ## 6. 次に見るべき不足
 
