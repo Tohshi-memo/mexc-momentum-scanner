@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T02:18:21.261236+00:00
+- generated_at: 2026-07-06T02:28:22.489517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8367**
 
@@ -62,9 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T02:18:10.632919+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=63421.2
-- Funnel: target 835 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-06T02:28:15.090228+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63551.2
+- Funnel: target 835 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEROC0MPUTE/USDT:USDT | +14.73% | $1,600,275.10 |
-| TRB/USDT:USDT | +12.25% | $7,262,958.18 |
-| UB/USDT:USDT | +8.82% | $1,100,505.19 |
-| GIGGLE/USDT:USDT | +8.38% | $1,640,073.69 |
-| SYN/USDT:USDT | +8.20% | $11,917,663.82 |
+| ZEROC0MPUTE/USDT:USDT | +15.89% | $1,601,986.93 |
+| TRB/USDT:USDT | +13.68% | $7,305,619.52 |
+| UB/USDT:USDT | +9.36% | $1,121,513.02 |
+| RPL/USDT:USDT | +8.99% | $3,669,102.62 |
+| GIGGLE/USDT:USDT | +8.93% | $1,648,817.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.46% | +3.66% |
-| LAB/USDT:USDT | below_1h_threshold | +3.23% | +3.42% |
-| MYX/USDT:USDT | below_1h_threshold | +0.80% | +0.99% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.65% | +0.84% |
-| LIT/USDT:USDT | below_1h_threshold | +0.63% | +0.83% |
+| SYN/USDT:USDT | below_1h_threshold | +3.00% | +2.99% |
+| BASED/USDT:USDT | below_1h_threshold | +2.82% | +2.81% |
+| MYX/USDT:USDT | below_1h_threshold | +2.28% | +2.27% |
+| LIT/USDT:USDT | below_1h_threshold | +1.19% | +1.18% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
 
 ## 6. 次に見るべき不足
 
