@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-06T11:44:25.684394+00:00
+- generated_at: 2026-07-06T11:54:20.322427+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8385**
+- closed shadow trades: **8386**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.42% / filled 20/20。**
-- 全期間 MARKET基準: n=8385, expectancy=-0.02%
+- 全期間 MARKET基準: n=8386, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.42%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,10 +21,10 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_8PCT | 4/20 | 20.0% | +5.85% | **+1.17%** |
+| LIMIT_8PCT | 5/20 | 25.0% | +5.42% | **+1.36%** |
+| LIMIT_9PCT | 4/20 | 20.0% | +6.29% | **+1.26%** |
+| LIMIT_BB3S | 7/15 | 46.7% | +2.50% | **+1.17%** |
 | LIMIT_10PCT | 3/20 | 15.0% | +7.15% | **+1.07%** |
-| LIMIT_9PCT | 3/20 | 15.0% | +6.86% | **+1.03%** |
-| LIMIT_BB3S | 6/15 | 40.0% | +2.45% | **+0.98%** |
 | LIMIT_FIB1618 | 4/20 | 20.0% | +3.83% | **+0.77%** |
 
 ### シャドウ上位 LONG
@@ -32,8 +32,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1618_LONG | 5/20 | 25.0% | +3.27% | **+0.82%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.43% | **+0.43%** |
-| ASK_LONG | 20/20 | 100.0% | +0.13% | **+0.13%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.63% | **+0.63%** |
+| ASK_LONG | 20/20 | 100.0% | +0.39% | **+0.39%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | -0.05% | **-0.03%** |
 | LIMIT_9PCT_LONG | 2/20 | 10.0% | -1.45% | **-0.15%** |
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$317.13** / 初期 $100.00 (+217.13%)
-- 確定: 2623件 (Win 832 / Loss 887 / Flat 904) / skip 2323件
+- 確定: 2623件 (Win 832 / Loss 887 / Flat 904) / skip 2324件
 - 成長率目線: 平均log +0.000440 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: VANRY/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $317.13
@@ -55,38 +55,39 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.48** / 初期 $100.00 (+5.48%)
-- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1157件
+- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1158件
 - 成長率目線: 平均log +0.000084 / 幾何平均 +0.008% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BASED/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.26% 残高後 $105.48
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T11:44:19.360683+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=62899.9
-- Funnel: target 841 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-06T11:54:13.640360+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=62915.0
+- Funnel: target 841 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 82.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +26.58% | $8,482,386.18 |
-| ZEROC0MPUTE/USDT:USDT | +19.72% | $1,565,058.12 |
-| YFI/USDT:USDT | +18.21% | $2,670,508.36 |
-| BEL/USDT:USDT | +17.33% | $1,982,614.94 |
-| DEXE/USDT:USDT | +13.45% | $1,665,388.55 |
+| VANRY/USDT:USDT | +37.06% | $8,862,000.18 |
+| BEL/USDT:USDT | +19.38% | $2,027,250.70 |
+| YFI/USDT:USDT | +18.37% | $2,797,150.56 |
+| ANSEM/USDT:USDT | +15.54% | $2,196,263.32 |
+| ZEROC0MPUTE/USDT:USDT | +14.57% | $1,566,962.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +4.32% | +4.16% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.99% | +2.83% |
-| TRB/USDT:USDT | below_1h_threshold | +2.37% | +2.21% |
-| YFI/USDT:USDT | below_1h_threshold | +1.96% | +1.79% |
-| BILL/USDT:USDT | below_1h_threshold | +1.28% | +1.12% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.13% | +3.94% |
+| BEL/USDT:USDT | below_1h_threshold | +2.74% | +2.56% |
+| TRB/USDT:USDT | below_1h_threshold | +2.31% | +2.13% |
+| YFI/USDT:USDT | below_1h_threshold | +2.29% | +2.10% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.85% | +1.66% |
 
 ## 6. 次に見るべき不足
 
