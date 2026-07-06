@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T04:05:37.301522+00:00
+- generated_at: 2026-07-06T04:15:29.198887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8369**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T04:05:33.268345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63360.1
+- 更新: 2026-07-06T04:15:24.259667+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63297.3
 - Funnel: target 836 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEROC0MPUTE/USDT:USDT | +15.72% | $1,588,451.79 |
-| TRB/USDT:USDT | +13.14% | $8,083,434.15 |
-| LIT/USDT:USDT | +10.16% | $12,517,042.52 |
-| UB/USDT:USDT | +8.48% | $1,363,597.77 |
-| EPIC/USDT:USDT | +7.02% | $4,033,454.27 |
+| ZEROC0MPUTE/USDT:USDT | +15.76% | $1,590,689.42 |
+| TRB/USDT:USDT | +13.64% | $8,211,039.59 |
+| LIT/USDT:USDT | +11.07% | $12,874,950.68 |
+| UB/USDT:USDT | +8.24% | $1,381,812.59 |
+| EPIC/USDT:USDT | +7.93% | $4,055,540.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.23% | +2.09% |
-| DYDX/USDT:USDT | below_1h_threshold | +1.76% | +1.62% |
-| LIT/USDT:USDT | below_1h_threshold | +0.72% | +0.58% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.69% | +0.55% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.59% | +0.45% |
+| LIT/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.64% | +1.60% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.61% | +1.57% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
+| JUP/USDT:USDT | below_1h_threshold | +0.49% | +0.45% |
 
 ## 6. 次に見るべき不足
 
