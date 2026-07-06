@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T08:03:53.614513+00:00
+- generated_at: 2026-07-06T08:13:55.586103+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8376**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T08:03:48.683342+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63102.7
-- Funnel: target 836 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-06T08:13:50.423132+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=62986.1
+- Funnel: target 836 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZEROC0MPUTE/USDT:USDT | +14.03% | $1,589,938.08 |
-| BEL/USDT:USDT | +11.90% | $1,253,533.51 |
-| TRB/USDT:USDT | +10.12% | $11,056,053.05 |
-| UB/USDT:USDT | +9.61% | $2,009,113.15 |
-| VELVET/USDT:USDT | +9.47% | $15,706,254.27 |
+| ZEROC0MPUTE/USDT:USDT | +16.31% | $1,593,738.62 |
+| TRB/USDT:USDT | +10.25% | $11,134,371.25 |
+| VELVET/USDT:USDT | +9.88% | $15,858,809.01 |
+| BEL/USDT:USDT | +8.93% | $1,322,592.19 |
+| UB/USDT:USDT | +8.17% | $2,019,396.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +0.60% | +0.54% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.38% | +0.32% |
-| MYX/USDT:USDT | below_1h_threshold | +0.34% | +0.28% |
-| BASED/USDT:USDT | below_1h_threshold | +0.33% | +0.27% |
-| BSB/USDT:USDT | below_1h_threshold | +0.31% | +0.25% |
+| ZEROC0MPUTE/USDT:USDT | below_1h_threshold | +1.56% | +1.69% |
+| XLM/USDT:USDT | below_1h_threshold | +1.48% | +1.60% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.78% | +0.91% |
+| BSB/USDT:USDT | below_1h_threshold | +0.77% | +0.90% |
+| NES/USDT:USDT | below_1h_threshold | +0.69% | +0.82% |
 
 ## 6. 次に見るべき不足
 
