@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-06T04:35:15.612539+00:00
+- generated_at: 2026-07-06T04:45:14.427104+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8370**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-06T04:35:09.227053+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63233.3
+- 更新: 2026-07-06T04:45:09.171450+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63283.1
 - Funnel: target 836 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRB/USDT:USDT | +13.01% | $8,419,037.15 |
-| EPIC/USDT:USDT | +11.03% | $4,091,133.75 |
-| UB/USDT:USDT | +9.44% | $1,424,721.31 |
-| BILL/USDT:USDT | +8.49% | $1,104,239.26 |
-| LIT/USDT:USDT | +8.20% | $13,315,636.76 |
+| TRB/USDT:USDT | +13.65% | $8,546,301.51 |
+| UB/USDT:USDT | +11.34% | $1,482,895.82 |
+| EPIC/USDT:USDT | +9.85% | $4,121,685.41 |
+| BILL/USDT:USDT | +9.85% | $1,112,702.45 |
+| TLM/USDT:USDT | +9.54% | $45,168,192.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +4.17% | +4.23% |
-| NES/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
-| JUP/USDT:USDT | below_1h_threshold | +1.06% | +1.12% |
-| TLM/USDT:USDT | below_1h_threshold | +0.86% | +0.92% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.83% | +0.89% |
+| KORU/USDT:USDT | below_1h_threshold | +3.72% | +3.71% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.25% | +3.23% |
+| TLM/USDT:USDT | below_1h_threshold | +3.14% | +3.12% |
+| UB/USDT:USDT | below_1h_threshold | +2.07% | +2.05% |
+| BILL/USDT:USDT | below_1h_threshold | +1.75% | +1.74% |
 
 ## 6. 次に見るべき不足
 
