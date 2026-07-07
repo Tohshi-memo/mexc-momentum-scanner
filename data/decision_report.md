@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T23:12:33.932702+00:00
+- generated_at: 2026-07-07T23:22:31.983736+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8456**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T23:12:27.839163+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=63593.4
+- 更新: 2026-07-07T23:22:26.947937+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63634.7
 - Funnel: target 847 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +20.74% | $44,316,118.98 |
-| EDGE/USDT:USDT | +14.52% | $12,877,912.15 |
-| SPELL/USDT:USDT | +8.71% | $2,162,433.97 |
-| SYN/USDT:USDT | +6.38% | $4,489,161.39 |
-| PENGSTOCK/USDT:USDT | +5.90% | $1,401,220.62 |
+| EVAA/USDT:USDT | +22.56% | $44,563,872.77 |
+| EDGE/USDT:USDT | +14.18% | $12,900,151.65 |
+| PENGSTOCK/USDT:USDT | +6.48% | $1,404,668.56 |
+| SYN/USDT:USDT | +6.04% | $4,507,058.75 |
+| US/USDT:USDT | +5.89% | $8,319,981.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +1.87% | +1.74% |
-| SPELL/USDT:USDT | below_1h_threshold | +1.27% | +1.14% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.13% | +1.00% |
-| POL/USDT:USDT | below_1h_threshold | +0.61% | +0.49% |
-| APE/USDT:USDT | below_1h_threshold | +0.57% | +0.45% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.75% | +2.56% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.68% | +1.50% |
+| SYN/USDT:USDT | below_1h_threshold | +1.59% | +1.40% |
+| XTZ/USDT:USDT | below_1h_threshold | +1.15% | +0.96% |
+| ROKSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.68% |
 
 ## 6. 次に見るべき不足
 
