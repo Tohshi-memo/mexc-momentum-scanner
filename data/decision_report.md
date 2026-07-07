@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T05:28:23.094037+00:00
+- generated_at: 2026-07-07T05:38:10.370494+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8420**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T05:28:18.012678+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=62867.5
+- 更新: 2026-07-07T05:38:05.317502+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63148.9
 - Funnel: target 842 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OPG/USDT:USDT | +30.16% | $2,422,007.35 |
-| EPIC/USDT:USDT | +24.53% | $3,074,392.77 |
-| BLUR/USDT:USDT | +22.90% | $7,202,216.78 |
-| EDGE/USDT:USDT | +17.91% | $4,041,606.91 |
-| EVAA/USDT:USDT | +15.92% | $1,162,067.90 |
+| OPG/USDT:USDT | +30.16% | $2,531,296.46 |
+| EPIC/USDT:USDT | +29.61% | $3,142,050.04 |
+| BLUR/USDT:USDT | +23.51% | $7,258,324.77 |
+| EDGE/USDT:USDT | +19.79% | $4,095,738.76 |
+| EVAA/USDT:USDT | +12.90% | $1,203,663.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +3.89% | +4.21% |
-| OPG/USDT:USDT | below_1h_threshold | +2.33% | +2.65% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.10% | +2.42% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.45% | +1.77% |
-| BTW/USDT:USDT | below_1h_threshold | +1.14% | +1.46% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.60% | +4.48% |
+| BLUR/USDT:USDT | below_1h_threshold | +4.41% | +4.28% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.63% | +3.50% |
+| OPG/USDT:USDT | below_1h_threshold | +2.33% | +2.20% |
+| BILL/USDT:USDT | below_1h_threshold | +2.16% | +2.03% |
 
 ## 6. 次に見るべき不足
 
