@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T16:06:19.537914+00:00
+- generated_at: 2026-07-07T16:26:37.640817+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8444**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T16:06:13.448234+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63963.3
-- Funnel: target 847 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-07T16:26:32.057293+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=64015.8
+- Funnel: target 847 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.8 >= 65=1, 4h RSI 92.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDGE/USDT:USDT | +4.65% | $7,451,142.10 |
-| EVAA/USDT:USDT | +2.11% | $19,111,799.60 |
-| BANANA/USDT:USDT | +1.70% | $1,340,667.05 |
-| BTW/USDT:USDT | +1.47% | $1,113,748.53 |
-| CAP/USDT:USDT | +1.45% | $2,393,490.98 |
+| EDGE/USDT:USDT | +9.16% | $8,137,675.63 |
+| EVAA/USDT:USDT | +8.55% | $20,994,958.28 |
+| CAP/USDT:USDT | +4.28% | $2,423,770.65 |
+| VVV/USDT:USDT | +3.93% | $3,737,357.97 |
+| SOXL/USDT:USDT | +3.89% | $17,594,137.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +4.99% | +4.91% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.16% | +2.08% |
-| BANANA/USDT:USDT | below_1h_threshold | +1.82% | +1.74% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.62% | +1.54% |
-| BTW/USDT:USDT | below_1h_threshold | +1.49% | +1.40% |
+| CAP/USDT:USDT | below_1h_threshold | +4.42% | +4.26% |
+| VVV/USDT:USDT | below_1h_threshold | +4.04% | +3.87% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.91% | +3.75% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.26% | +3.10% |
+| BANANA/USDT:USDT | below_1h_threshold | +3.19% | +3.02% |
 
 ## 6. 次に見るべき不足
 
