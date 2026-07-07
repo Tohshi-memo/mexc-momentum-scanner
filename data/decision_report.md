@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T15:36:17.057678+00:00
+- generated_at: 2026-07-07T15:46:09.873978+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8441**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T15:36:10.343562+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=63763.3
-- Funnel: target 847 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1, 4h RSI 88.9 >= 65=1
+- 更新: 2026-07-07T15:46:04.704973+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=63953.3
+- Funnel: target 847 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +103.40% | $17,923,560.26 |
-| BLUR/USDT:USDT | +43.09% | $13,528,437.81 |
-| BANANA/USDT:USDT | +31.32% | $1,059,528.26 |
-| EDGE/USDT:USDT | +29.83% | $7,083,842.26 |
-| M/USDT:USDT | +19.26% | $1,047,663.98 |
+| EVAA/USDT:USDT | +107.41% | $18,434,265.52 |
+| BLUR/USDT:USDT | +46.12% | $13,787,729.53 |
+| EDGE/USDT:USDT | +28.73% | $7,249,319.60 |
+| BANANA/USDT:USDT | +23.79% | $1,167,441.10 |
+| M/USDT:USDT | +16.89% | $1,052,386.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.76% | +3.40% |
-| LDO/USDT:USDT | below_1h_threshold | +2.55% | +2.20% |
-| DDOGSTOCK/USDT:USDT | below_1h_threshold | +2.35% | +1.99% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.77% | +1.41% |
-| UAI/USDT:USDT | below_1h_threshold | +1.25% | +0.89% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.88% | +4.22% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.60% | +3.95% |
+| LDO/USDT:USDT | below_1h_threshold | +3.13% | +2.48% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.57% | +1.91% |
+| DDOGSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +1.66% |
 
 ## 6. 次に見るべき不足
 
