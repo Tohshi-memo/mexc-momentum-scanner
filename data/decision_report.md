@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-07T01:18:42.917097+00:00
+- generated_at: 2026-07-07T01:28:43.158620+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8413**
+- closed shadow trades: **8414**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.05% / filled 20/20。**
-- 全期間 MARKET基準: n=8413, expectancy=-0.02%
+- 全期間 MARKET基準: n=8414, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.55% | **+0.31%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +1.46% | **+0.36%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.10% | **+0.10%** |
 | ASK_LONG | 20/20 | 100.0% | +0.00% | **+0.00%** |
 | LIMIT_BB3S_LONG | 5/9 | 55.6% | -0.05% | **-0.03%** |
@@ -46,24 +46,24 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$318.72** / 初期 $100.00 (+218.72%)
-- 確定: 2625件 (Win 833 / Loss 887 / Flat 905) / skip 2349件
-- 成長率目線: 平均log +0.000442 / 幾何平均 +0.044% per trade / maxDD +8.13%
+- 残高: **$317.13** / 初期 $100.00 (+217.13%)
+- 確定: 2626件 (Win 833 / Loss 888 / Flat 905) / skip 2349件
+- 成長率目線: 平均log +0.000440 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EPIC/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $318.72
+- 最新: EDGE/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $317.13
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.48** / 初期 $100.00 (+5.48%)
-- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1185件
+- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1186件
 - 成長率目線: 平均log +0.000084 / 幾何平均 +0.008% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BASED/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.26% 残高後 $105.48
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T01:18:37.778015+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=63990.2
+- 更新: 2026-07-07T01:28:37.097466+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=63949.0
 - Funnel: target 841 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +21.15% | $5,911,156.98 |
-| EPIC/USDT:USDT | +17.44% | $2,026,206.58 |
-| EDGE/USDT:USDT | +15.37% | $2,922,870.26 |
-| ANSEM/USDT:USDT | +15.07% | $5,526,788.87 |
-| ALLO/USDT:USDT | +14.89% | $18,165,134.88 |
+| BLUR/USDT:USDT | +20.18% | $5,954,940.08 |
+| EPIC/USDT:USDT | +18.06% | $2,074,245.30 |
+| ANSEM/USDT:USDT | +15.73% | $5,543,794.95 |
+| EDGE/USDT:USDT | +15.23% | $2,969,341.81 |
+| ALLO/USDT:USDT | +14.85% | $18,349,760.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +3.07% | +3.35% |
-| NES/USDT:USDT | below_1h_threshold | +2.29% | +2.58% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.28% | +2.57% |
-| RIF/USDT:USDT | below_1h_threshold | +1.57% | +1.86% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.30% | +1.59% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.76% | +5.11% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.61% | +3.97% |
+| NES/USDT:USDT | below_1h_threshold | +2.17% | +2.53% |
+| RIF/USDT:USDT | below_1h_threshold | +1.27% | +1.62% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.21% | +1.56% |
 
 ## 6. 次に見るべき不足
 
