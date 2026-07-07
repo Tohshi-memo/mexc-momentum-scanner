@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-07T02:29:35.408706+00:00
+- generated_at: 2026-07-07T02:39:42.490181+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8415**
+- closed shadow trades: **8416**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.05% / filled 20/20。**
-- 全期間 MARKET基準: n=8415, expectancy=-0.02%
+- 全期間 MARKET基準: n=8416, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+1.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,17 +23,17 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.05% | **+1.05%** |
 | ASK | 20/20 | 100.0% | +1.01% | **+1.01%** |
-| LIMIT_FIB1272 | 6/20 | 30.0% | +1.12% | **+0.34%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
-| LIMIT_5PCT | 8/20 | 40.0% | +0.33% | **+0.13%** |
+| LIMIT_FIB1272 | 6/20 | 30.0% | +1.74% | **+0.52%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +1.89% | **+0.38%** |
+| LIMIT_BB3S | 5/12 | 41.7% | +0.84% | **+0.35%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK_LONG | 20/20 | 100.0% | +0.60% | **+0.60%** |
+| ASK_LONG | 20/20 | 100.0% | +0.37% | **+0.37%** |
 | LIMIT_9PCT_LONG | 5/20 | 25.0% | +1.46% | **+0.36%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.30% | **+0.30%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.10% | **+0.10%** |
 | LIMIT_BB3S_LONG | 5/8 | 62.5% | -0.05% | **-0.03%** |
 | LIMIT_8PCT_LONG | 7/20 | 35.0% | -0.57% | **-0.20%** |
 
@@ -46,48 +46,48 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$320.30** / 初期 $100.00 (+220.30%)
-- 確定: 2627件 (Win 834 / Loss 888 / Flat 905) / skip 2349件
-- 成長率目線: 平均log +0.000443 / 幾何平均 +0.044% per trade / maxDD +8.13%
+- 残高: **$321.90** / 初期 $100.00 (+221.90%)
+- 確定: 2628件 (Win 835 / Loss 888 / Flat 905) / skip 2349件
+- 成長率目線: 平均log +0.000445 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: EPIC/USDT:USDT `MARKET_LONG` TP_HIT account +1.00% 残高後 $320.30
+- 最新: TRIA/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $321.90
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.48** / 初期 $100.00 (+5.48%)
-- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1187件
+- 確定: 639件 (Win 152 / Loss 158 / Flat 329) / skip 1188件
 - 成長率目線: 平均log +0.000084 / 幾何平均 +0.008% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BASED/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.26% 残高後 $105.48
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T02:29:30.159492+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=63579.5
-- Funnel: target 841 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-07T02:39:35.950264+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.55% price=63467.1
+- Funnel: target 841 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
+- Strict後reject: 4h RSI 94.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +19.93% | $6,221,938.51 |
-| EPIC/USDT:USDT | +19.89% | $2,464,702.10 |
-| ANSEM/USDT:USDT | +18.63% | $5,638,618.73 |
-| EDGE/USDT:USDT | +18.50% | $3,135,320.38 |
-| STG/USDT:USDT | +14.87% | $1,571,064.04 |
+| EPIC/USDT:USDT | +24.16% | $2,531,096.27 |
+| BLUR/USDT:USDT | +19.33% | $6,243,641.62 |
+| EDGE/USDT:USDT | +19.09% | $3,152,931.31 |
+| ANSEM/USDT:USDT | +17.55% | $5,681,251.73 |
+| STG/USDT:USDT | +14.94% | $1,583,675.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +4.85% | +5.22% |
-| YFI/USDT:USDT | below_1h_threshold | +3.56% | +3.93% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.29% | +1.66% |
-| BLUR/USDT:USDT | below_1h_threshold | +1.18% | +1.54% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.10% | +1.47% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.13% | +4.68% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.12% | +2.66% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.86% | +2.40% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.65% | +2.20% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.06% | +1.61% |
 
 ## 6. 次に見るべき不足
 
