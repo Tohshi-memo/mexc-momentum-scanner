@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T04:37:57.058097+00:00
+- generated_at: 2026-07-07T04:48:00.121528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8419**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T04:37:51.939388+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63147.1
-- Funnel: target 841 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-07T04:47:54.877924+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63109.5
+- Funnel: target 841 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EPIC/USDT:USDT | +26.92% | $3,018,717.81 |
-| BLUR/USDT:USDT | +23.27% | $6,811,302.19 |
-| EDGE/USDT:USDT | +19.02% | $3,736,443.32 |
-| ALLO/USDT:USDT | +14.86% | $19,738,620.90 |
-| STG/USDT:USDT | +10.79% | $1,667,102.49 |
+| OPG/USDT:USDT | +39.82% | $1,657,018.46 |
+| EPIC/USDT:USDT | +27.29% | $3,085,591.16 |
+| BLUR/USDT:USDT | +17.33% | $6,895,747.98 |
+| EDGE/USDT:USDT | +15.34% | $3,833,230.71 |
+| ALLO/USDT:USDT | +14.73% | $19,862,154.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +4.90% | +4.93% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.36% | +2.39% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.31% | +1.34% |
-| SLX/USDT:USDT | below_1h_threshold | +0.84% | +0.87% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.45% | +2.54% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.25% | +2.34% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.66% | +1.74% |
+| RIF/USDT:USDT | below_1h_threshold | +1.46% | +1.55% |
+| BILL/USDT:USDT | below_1h_threshold | +0.71% | +0.80% |
 
 ## 6. 次に見るべき不足
 
