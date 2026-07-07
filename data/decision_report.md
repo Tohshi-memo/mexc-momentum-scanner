@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T07:49:34.726173+00:00
+- generated_at: 2026-07-07T07:59:43.157375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8421**
 
@@ -62,31 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T07:49:27.489526+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=63162.9
-- Funnel: target 846 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-07T07:59:37.967143+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=63070.5
+- Funnel: target 846 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +22.54% | $7,951,503.80 |
-| EVAA/USDT:USDT | +21.79% | $1,629,952.54 |
-| EDGE/USDT:USDT | +19.46% | $4,636,870.87 |
-| ANSEM/USDT:USDT | +18.85% | $6,459,654.93 |
-| OPG/USDT:USDT | +14.65% | $3,453,458.10 |
+| BLUR/USDT:USDT | +21.33% | $8,028,136.18 |
+| EVAA/USDT:USDT | +20.80% | $1,711,814.98 |
+| EDGE/USDT:USDT | +19.97% | $4,695,580.12 |
+| ANSEM/USDT:USDT | +18.71% | $6,512,727.86 |
+| OPG/USDT:USDT | +15.97% | $3,487,560.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.83% | +4.06% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.46% | +3.69% |
-| UB/USDT:USDT | below_1h_threshold | +2.38% | +2.61% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.94% | +2.18% |
-| CAP/USDT:USDT | below_1h_threshold | +1.86% | +2.09% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.59% | +4.97% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.29% | +3.67% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.18% | +3.56% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.99% | +3.37% |
+| UB/USDT:USDT | below_1h_threshold | +2.00% | +2.38% |
 
 ## 6. 次に見るべき不足
 
