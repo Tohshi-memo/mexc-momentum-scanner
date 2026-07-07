@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T08:40:20.243924+00:00
+- generated_at: 2026-07-07T08:50:30.978848+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8422**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T08:40:11.394225+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63067.6
+- 更新: 2026-07-07T08:50:23.085782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63050.3
 - Funnel: target 846 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1
+- Strict後reject: 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +41.70% | $2,095,645.39 |
-| EVAA/USDT:USDT | +25.79% | $1,888,213.16 |
-| BLUR/USDT:USDT | +21.15% | $8,255,585.13 |
-| M/USDT:USDT | +18.12% | $1,105,606.88 |
-| EDGE/USDT:USDT | +16.96% | $5,007,680.18 |
+| TAC/USDT:USDT | +43.53% | $2,769,570.35 |
+| EVAA/USDT:USDT | +26.72% | $1,961,871.46 |
+| BLUR/USDT:USDT | +26.48% | $8,381,465.86 |
+| EDGE/USDT:USDT | +19.86% | $5,072,243.07 |
+| M/USDT:USDT | +18.48% | $1,121,362.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.10% | +4.09% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.40% | +2.39% |
-| RE/USDT:USDT | below_1h_threshold | +2.09% | +2.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.83% | +1.82% |
-| US/USDT:USDT | below_1h_threshold | +1.61% | +1.60% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.87% | +4.89% |
+| BLUR/USDT:USDT | below_1h_threshold | +4.15% | +4.17% |
+| RE/USDT:USDT | below_1h_threshold | +3.28% | +3.30% |
+| CAP/USDT:USDT | below_1h_threshold | +1.66% | +1.68% |
+| LINSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
 
 ## 6. 次に見るべき不足
 
