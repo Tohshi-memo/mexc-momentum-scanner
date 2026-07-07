@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T17:27:56.238425+00:00
+- generated_at: 2026-07-07T17:37:58.980036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8448**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$100.55** / 初期 $100.00 (+0.55%)
-- 確定トレード: 69件 (TP 23 / SL 45 / EXP 1)
-- 最新: M/USDT:USDT SL_HIT PnL -4.00% 残高後 $100.55
+- 残高: **$101.56** / 初期 $100.00 (+1.56%)
+- 確定トレード: 70件 (TP 24 / SL 45 / EXP 1)
+- 最新: BEAT/USDT:USDT TP_HIT PnL +8.00% 残高後 $101.56
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T17:27:49.801376+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64052.9
-- Funnel: target 847 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.7 >= 65=1
+- 更新: 2026-07-07T17:37:51.502008+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=64113.7
+- Funnel: target 847 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +24.71% | $25,902,920.83 |
-| EDGE/USDT:USDT | +16.25% | $9,635,855.29 |
-| USELESS/USDT:USDT | +4.93% | $1,674,328.72 |
-| SOXL/USDT:USDT | +4.31% | $19,120,975.15 |
-| SYN/USDT:USDT | +4.26% | $4,745,878.27 |
+| EVAA/USDT:USDT | +25.63% | $26,563,316.73 |
+| EDGE/USDT:USDT | +13.84% | $9,852,526.22 |
+| USELESS/USDT:USDT | +5.76% | $1,701,712.79 |
+| US/USDT:USDT | +5.55% | $18,544,024.62 |
+| SOXL/USDT:USDT | +4.79% | $19,260,165.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| YFI/USDT:USDT | below_1h_threshold | +3.82% | +3.68% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.78% | +2.64% |
-| SYN/USDT:USDT | below_1h_threshold | +2.56% | +2.42% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.45% | +2.31% |
-| KORU/USDT:USDT | below_1h_threshold | +1.95% | +1.81% |
+| LUNC/USDT:USDT | below_1h_threshold | +3.87% | +3.63% |
+| KORU/USDT:USDT | below_1h_threshold | +2.25% | +2.01% |
+| SYN/USDT:USDT | below_1h_threshold | +2.17% | +1.93% |
+| YFI/USDT:USDT | below_1h_threshold | +2.04% | +1.80% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.53% | +1.29% |
 
 ## 6. 次に見るべき不足
 
