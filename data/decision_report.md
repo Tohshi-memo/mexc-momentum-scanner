@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T03:19:20.557649+00:00
+- generated_at: 2026-07-07T03:39:27.372737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8416**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T03:19:15.612134+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63283.8
+- 更新: 2026-07-07T03:39:22.353363+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63283.4
 - Funnel: target 841 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EPIC/USDT:USDT | +27.00% | $2,694,828.98 |
-| BLUR/USDT:USDT | +19.39% | $6,311,002.21 |
-| EDGE/USDT:USDT | +17.07% | $3,270,048.91 |
-| ANSEM/USDT:USDT | +14.60% | $5,779,711.30 |
-| STG/USDT:USDT | +13.92% | $1,597,461.55 |
+| EPIC/USDT:USDT | +28.25% | $2,782,997.99 |
+| EDGE/USDT:USDT | +21.85% | $3,343,568.51 |
+| BLUR/USDT:USDT | +15.87% | $6,421,616.02 |
+| ANSEM/USDT:USDT | +13.94% | $5,800,075.76 |
+| STG/USDT:USDT | +13.40% | $1,613,285.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +3.70% | +3.73% |
-| CAP/USDT:USDT | below_1h_threshold | +3.23% | +3.25% |
-| B/USDT:USDT | below_1h_threshold | +1.67% | +1.69% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.06% | +1.08% |
-| AERO/USDT:USDT | below_1h_threshold | +0.82% | +0.84% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.73% | +4.75% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.59% | +3.62% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.79% | +2.82% |
+| B/USDT:USDT | below_1h_threshold | +2.44% | +2.47% |
+| RE/USDT:USDT | below_1h_threshold | +1.91% | +1.94% |
 
 ## 6. 次に見るべき不足
 
