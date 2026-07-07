@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T07:08:57.504013+00:00
+- generated_at: 2026-07-07T07:18:59.235351+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8421**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T07:08:52.496339+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63344.7
+- 更新: 2026-07-07T07:18:54.260837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63307.6
 - Funnel: target 846 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUR/USDT:USDT | +28.96% | $7,618,068.80 |
-| EPIC/USDT:USDT | +25.86% | $4,808,503.15 |
-| EVAA/USDT:USDT | +18.22% | $1,425,549.93 |
-| EDGE/USDT:USDT | +17.43% | $4,433,114.01 |
-| ANSEM/USDT:USDT | +15.40% | $6,273,514.92 |
+| BLUR/USDT:USDT | +26.48% | $7,728,513.23 |
+| EDGE/USDT:USDT | +18.43% | $4,465,638.85 |
+| EVAA/USDT:USDT | +17.63% | $1,445,932.74 |
+| ALLO/USDT:USDT | +14.84% | $21,296,327.49 |
+| ANSEM/USDT:USDT | +14.49% | $6,313,606.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUR/USDT:USDT | below_1h_threshold | +4.02% | +3.96% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.15% | +2.10% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.79% | +0.74% |
-| JTO/USDT:USDT | below_1h_threshold | +0.48% | +0.43% |
-| ANSEM/USDT:USDT | below_1h_threshold | +0.41% | +0.35% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.67% | +2.68% |
+| BLUR/USDT:USDT | below_1h_threshold | +2.25% | +2.26% |
+| BTW/USDT:USDT | below_1h_threshold | +1.14% | +1.15% |
+| LDO/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
+| APT/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
 
 ## 6. 次に見るべき不足
 
