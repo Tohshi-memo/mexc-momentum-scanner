@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T20:39:59.541812+00:00
+- generated_at: 2026-07-07T20:50:02.158320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8454**
 
@@ -62,31 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T20:39:52.016400+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=63641.6
-- Funnel: target 847 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-07T20:49:54.456852+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=63589.3
+- Funnel: target 847 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +28.80% | $39,651,723.31 |
-| EDGE/USDT:USDT | +11.82% | $11,579,234.79 |
-| PENGSTOCK/USDT:USDT | +8.45% | $1,274,606.84 |
-| US/USDT:USDT | +5.14% | $16,078,976.98 |
-| SPELL/USDT:USDT | +4.54% | $1,893,030.02 |
+| EVAA/USDT:USDT | +17.64% | $40,135,848.55 |
+| EDGE/USDT:USDT | +12.73% | $11,655,665.02 |
+| PENGSTOCK/USDT:USDT | +7.58% | $1,286,937.73 |
+| US/USDT:USDT | +6.35% | $16,086,469.64 |
+| SPELL/USDT:USDT | +6.00% | $1,924,702.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPELL/USDT:USDT | below_1h_threshold | +4.85% | +5.09% |
-| EVAA/USDT:USDT | below_1h_threshold | +4.01% | +4.25% |
-| H/USDT:USDT | below_1h_threshold | +2.06% | +2.29% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.38% | +1.62% |
-| US/USDT:USDT | below_1h_threshold | +1.29% | +1.53% |
+| US/USDT:USDT | below_1h_threshold | +2.42% | +2.74% |
+| H/USDT:USDT | below_1h_threshold | +2.13% | +2.45% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.38% | +1.70% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +1.29% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.87% | +1.18% |
 
 ## 6. 次に見るべき不足
 
