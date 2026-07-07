@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-07T01:59:05.585362+00:00
+- generated_at: 2026-07-07T02:29:35.408706+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8415**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-07T01:58:58.996840+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=63875.1
-- Funnel: target 841 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.8 >= 65=1
+- 更新: 2026-07-07T02:29:30.159492+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=63579.5
+- Funnel: target 841 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EPIC/USDT:USDT | +28.75% | $2,292,641.23 |
-| BLUR/USDT:USDT | +18.18% | $6,155,172.65 |
-| EDGE/USDT:USDT | +17.03% | $3,070,118.50 |
-| STG/USDT:USDT | +15.07% | $1,539,697.82 |
-| ALLO/USDT:USDT | +13.96% | $18,744,443.19 |
+| BLUR/USDT:USDT | +19.93% | $6,221,938.51 |
+| EPIC/USDT:USDT | +19.89% | $2,464,702.10 |
+| ANSEM/USDT:USDT | +18.63% | $5,638,618.73 |
+| EDGE/USDT:USDT | +18.50% | $3,135,320.38 |
+| STG/USDT:USDT | +14.87% | $1,571,064.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +4.00% | +4.47% |
-| RIF/USDT:USDT | below_1h_threshold | +1.98% | +2.45% |
-| AERO/USDT:USDT | below_1h_threshold | +1.26% | +1.73% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.18% | +1.65% |
-| STG/USDT:USDT | below_1h_threshold | +1.12% | +1.59% |
+| VANRY/USDT:USDT | below_1h_threshold | +4.85% | +5.22% |
+| YFI/USDT:USDT | below_1h_threshold | +3.56% | +3.93% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.29% | +1.66% |
+| BLUR/USDT:USDT | below_1h_threshold | +1.18% | +1.54% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.10% | +1.47% |
 
 ## 6. 次に見るべき不足
 
