@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T02:13:03.414808+00:00
+- generated_at: 2026-07-08T02:23:23.051052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8463**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T02:12:58.455692+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=62881.9
+- 更新: 2026-07-08T02:23:18.035209+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=62812.1
 - Funnel: target 847 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +46.46% | $51,637,219.66 |
-| EDGE/USDT:USDT | +13.84% | $12,837,432.45 |
-| US/USDT:USDT | +9.20% | $3,614,975.39 |
-| SYN/USDT:USDT | +6.44% | $4,284,167.24 |
-| PENGSTOCK/USDT:USDT | +5.98% | $1,528,031.28 |
+| EVAA/USDT:USDT | +41.32% | $51,971,007.14 |
+| EDGE/USDT:USDT | +14.80% | $12,906,056.37 |
+| PENGSTOCK/USDT:USDT | +6.18% | $1,529,099.91 |
+| SNDKSTOCK/USDT:USDT | +5.41% | $64,411,227.13 |
+| XTZ/USDT:USDT | +5.15% | $1,972,460.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.09% | +2.28% |
-| SYN/USDT:USDT | below_1h_threshold | +1.34% | +1.53% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.51% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.22% | +0.42% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.21% | +0.40% |
+| XTZ/USDT:USDT | below_1h_threshold | +1.76% | +2.07% |
+| BTW/USDT:USDT | below_1h_threshold | +1.24% | +1.54% |
+| APE/USDT:USDT | below_1h_threshold | +1.11% | +1.41% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.67% | +0.98% |
+| AVAVSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.67% |
 
 ## 6. 次に見るべき不足
 
