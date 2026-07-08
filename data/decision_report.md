@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T00:02:57.933105+00:00
+- generated_at: 2026-07-08T00:21:07.288219+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8460**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T00:02:49.495946+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63299.9
-- Funnel: target 847 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-08T00:21:03.116038+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63476.2
+- Funnel: target 847 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +33.10% | $45,797,876.81 |
-| EDGE/USDT:USDT | +11.06% | $13,031,201.41 |
-| SYN/USDT:USDT | +7.10% | $4,455,348.87 |
-| US/USDT:USDT | +5.90% | $6,534,558.56 |
-| UAI/USDT:USDT | +5.46% | $1,849,381.90 |
+| EVAA/USDT:USDT | +37.80% | $46,572,745.10 |
+| AGLD/USDT:USDT | +15.68% | $1,324,732.02 |
+| EDGE/USDT:USDT | +14.43% | $13,269,036.71 |
+| US/USDT:USDT | +8.02% | $6,553,595.73 |
+| SPELL/USDT:USDT | +6.87% | $2,777,061.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +1.27% | +1.32% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.21% | +1.26% |
-| CAP/USDT:USDT | below_1h_threshold | +0.76% | +0.81% |
-| FCXSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.74% |
-| CCJSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.74% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.06% | +3.83% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.94% | +3.71% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.48% |
+| VVV/USDT:USDT | below_1h_threshold | +3.45% | +3.22% |
+| SPELL/USDT:USDT | below_1h_threshold | +3.08% | +2.85% |
 
 ## 6. 次に見るべき不足
 
