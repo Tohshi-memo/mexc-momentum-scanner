@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T06:17:39.850021+00:00
+- generated_at: 2026-07-08T06:27:54.785395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8469**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T06:17:33.634544+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=62562.0
+- 更新: 2026-07-08T06:27:49.672898+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62640.7
 - Funnel: target 847 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +46.96% | $60,592,859.82 |
-| EDGE/USDT:USDT | +29.95% | $14,116,854.76 |
-| NES/USDT:USDT | +15.28% | $1,159,873.88 |
-| SYN/USDT:USDT | +10.36% | $4,904,336.48 |
-| LDO/USDT:USDT | +7.29% | $8,761,032.26 |
+| EVAA/USDT:USDT | +52.64% | $60,972,083.06 |
+| EDGE/USDT:USDT | +29.53% | $14,376,035.85 |
+| NES/USDT:USDT | +14.86% | $1,171,896.03 |
+| SYN/USDT:USDT | +12.25% | $4,951,102.74 |
+| CLO/USDT:USDT | +7.80% | $1,172,468.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NES/USDT:USDT | below_1h_threshold | +1.60% | +1.68% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.08% | +1.16% |
-| SLX/USDT:USDT | below_1h_threshold | +0.92% | +1.00% |
-| VVV/USDT:USDT | below_1h_threshold | +0.91% | +0.99% |
-| PENGSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.75% |
+| CLO/USDT:USDT | below_1h_threshold | +2.11% | +2.07% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.05% | +2.01% |
+| SLX/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.35% |
+| NES/USDT:USDT | below_1h_threshold | +1.10% | +1.06% |
 
 ## 6. 次に見るべき不足
 
