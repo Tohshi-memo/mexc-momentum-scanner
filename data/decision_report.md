@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T12:43:24.383890+00:00
+- generated_at: 2026-07-08T12:53:30.956663+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8480**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T12:43:17.264269+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=62084.1
+- 更新: 2026-07-08T12:53:23.201470+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=62070.6
 - Funnel: target 850 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +51.81% | $77,764,921.94 |
-| EDGE/USDT:USDT | +50.12% | $22,402,659.14 |
-| KAITO/USDT:USDT | +24.37% | $2,506,700.26 |
-| SYN/USDT:USDT | +20.96% | $6,915,516.15 |
-| CLO/USDT:USDT | +15.29% | $1,448,918.50 |
+| EDGE/USDT:USDT | +49.90% | $22,618,705.64 |
+| EVAA/USDT:USDT | +39.18% | $79,069,655.50 |
+| SYN/USDT:USDT | +19.41% | $7,062,264.30 |
+| KAITO/USDT:USDT | +14.77% | $2,674,937.49 |
+| CLO/USDT:USDT | +12.71% | $1,462,899.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPELL/USDT:USDT | below_1h_threshold | +3.06% | +3.36% |
-| CLO/USDT:USDT | below_1h_threshold | +2.47% | +2.77% |
-| UAI/USDT:USDT | below_1h_threshold | +1.96% | +2.26% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.84% |
-| LDO/USDT:USDT | below_1h_threshold | +1.47% | +1.77% |
+| SPELL/USDT:USDT | below_1h_threshold | +2.96% | +3.28% |
+| PENGSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.91% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.87% |
+| UAI/USDT:USDT | below_1h_threshold | +1.93% | +2.25% |
+| LDO/USDT:USDT | below_1h_threshold | +1.18% | +1.50% |
 
 ## 6. 次に見るべき不足
 
