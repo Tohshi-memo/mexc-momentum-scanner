@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T10:11:47.122622+00:00
+- generated_at: 2026-07-08T10:20:02.497551+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8476**
 
@@ -62,32 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T10:11:41.821083+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=61929.6
+- 更新: 2026-07-08T10:19:58.223910+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=61977.6
 - Funnel: target 848 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.5 >= 65=1
+- Strict後reject: 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +66.57% | $68,910,963.85 |
-| EDGE/USDT:USDT | +44.62% | $18,823,877.60 |
-| SYN/USDT:USDT | +16.12% | $5,676,704.65 |
-| NES/USDT:USDT | +15.54% | $1,730,729.62 |
-| KMNO/USDT:USDT | +12.01% | $1,165,439.74 |
+| EVAA/USDT:USDT | +64.96% | $69,456,341.04 |
+| EDGE/USDT:USDT | +47.37% | $19,087,734.59 |
+| SYN/USDT:USDT | +16.63% | $5,753,779.84 |
+| NES/USDT:USDT | +14.44% | $1,745,767.08 |
+| KMNO/USDT:USDT | +12.17% | $1,169,561.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +1.59% | +1.76% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.47% | +1.63% |
-| APE/USDT:USDT | below_1h_threshold | +1.30% | +1.47% |
-| LDO/USDT:USDT | below_1h_threshold | +1.17% | +1.33% |
-| BTW/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.23% | +2.31% |
+| CLO/USDT:USDT | below_1h_threshold | +2.06% | +2.14% |
+| SLX/USDT:USDT | below_1h_threshold | +1.96% | +2.05% |
+| LDO/USDT:USDT | below_1h_threshold | +1.82% | +1.91% |
+| APE/USDT:USDT | below_1h_threshold | +1.71% | +1.80% |
 
 ## 6. 次に見るべき不足
 
