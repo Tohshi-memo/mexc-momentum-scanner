@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T01:02:02.403161+00:00
+- generated_at: 2026-07-08T01:12:15.604329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8462**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T01:01:55.160088+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63567.8
-- Funnel: target 847 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-08T01:12:10.409897+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63517.8
+- Funnel: target 847 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +44.96% | $48,302,823.84 |
-| EDGE/USDT:USDT | +16.59% | $12,933,589.05 |
-| AGLD/USDT:USDT | +15.62% | $1,857,439.22 |
-| KORU/USDT:USDT | +11.70% | $6,365,199.91 |
-| US/USDT:USDT | +8.78% | $4,350,184.21 |
+| EVAA/USDT:USDT | +39.34% | $48,695,198.18 |
+| EDGE/USDT:USDT | +13.61% | $12,997,609.93 |
+| AGLD/USDT:USDT | +12.10% | $1,957,990.97 |
+| KORU/USDT:USDT | +9.81% | $6,467,705.77 |
+| US/USDT:USDT | +8.14% | $4,356,017.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.09% | +1.11% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.72% | +0.75% |
-| SPELL/USDT:USDT | below_1h_threshold | +0.64% | +0.67% |
-| KORU/USDT:USDT | below_1h_threshold | +0.58% | +0.61% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.93% | +2.04% |
+| SYN/USDT:USDT | below_1h_threshold | +1.08% | +1.18% |
+| APE/USDT:USDT | below_1h_threshold | +0.77% | +0.87% |
+| SPELL/USDT:USDT | below_1h_threshold | +0.73% | +0.84% |
+| LEAD/USDT:USDT | below_1h_threshold | +0.51% | +0.62% |
 
 ## 6. 次に見るべき不足
 
