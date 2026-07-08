@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T23:44:51.358570+00:00
+- generated_at: 2026-07-08T23:55:06.785332+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8511**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$103.58** / 初期 $100.00 (+3.58%)
-- 確定トレード: 81件 (TP 29 / SL 51 / EXP 1)
-- 最新: ANSEM/USDT:USDT SL_HIT PnL -4.00% 残高後 $103.58
+- 残高: **$103.06** / 初期 $100.00 (+3.06%)
+- 確定トレード: 82件 (TP 29 / SL 52 / EXP 1)
+- 最新: ANSEM/USDT:USDT SL_HIT PnL -4.00% 残高後 $103.06
 - 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -62,31 +62,31 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T23:44:43.224675+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=62228.4
-- Funnel: target 851 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-08T23:55:01.228287+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=62269.1
+- Funnel: target 851 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +87.14% | $3,785,685.95 |
-| LAB/USDT:USDT | +16.46% | $57,286,495.17 |
-| CAP/USDT:USDT | +14.42% | $1,262,362.51 |
-| OGN/USDT:USDT | +14.23% | $5,017,636.08 |
-| ALLO/USDT:USDT | +13.45% | $11,744,289.85 |
+| TAG/USDT:USDT | +90.57% | $3,886,973.42 |
+| OGN/USDT:USDT | +15.69% | $5,062,238.49 |
+| CAP/USDT:USDT | +13.82% | $1,304,701.34 |
+| ALLO/USDT:USDT | +13.75% | $11,826,850.45 |
+| KORU/USDT:USDT | +12.40% | $7,380,521.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.27% | +4.39% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.88% | +4.00% |
-| BSB/USDT:USDT | below_1h_threshold | +2.39% | +2.51% |
-| NES/USDT:USDT | below_1h_threshold | +2.07% | +2.19% |
-| YFI/USDT:USDT | below_1h_threshold | +1.64% | +1.76% |
+| CAP/USDT:USDT | below_1h_threshold | +3.73% | +3.78% |
+| BSB/USDT:USDT | below_1h_threshold | +2.53% | +2.59% |
+| YFI/USDT:USDT | below_1h_threshold | +2.50% | +2.56% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.71% | +1.77% |
+| MYX/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
 
 ## 6. 次に見るべき不足
 
