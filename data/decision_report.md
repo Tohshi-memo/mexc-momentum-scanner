@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T11:00:59.554892+00:00
+- generated_at: 2026-07-08T11:11:16.461118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8478**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T11:00:53.343174+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62124.3
+- 更新: 2026-07-08T11:11:11.239826+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=62119.3
 - Funnel: target 848 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +70.68% | $73,471,086.33 |
-| EDGE/USDT:USDT | +46.15% | $19,847,208.05 |
-| NES/USDT:USDT | +17.67% | $1,749,996.28 |
-| SYN/USDT:USDT | +17.12% | $5,840,030.83 |
-| KMNO/USDT:USDT | +13.18% | $1,176,779.28 |
+| EVAA/USDT:USDT | +66.60% | $74,617,883.94 |
+| EDGE/USDT:USDT | +42.07% | $20,029,237.27 |
+| NES/USDT:USDT | +15.81% | $1,909,787.62 |
+| SYN/USDT:USDT | +15.52% | $5,906,279.33 |
+| KMNO/USDT:USDT | +13.07% | $1,182,052.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPELL/USDT:USDT | below_1h_threshold | +0.67% | +0.71% |
-| NES/USDT:USDT | below_1h_threshold | +0.42% | +0.46% |
-| EDGE/USDT:USDT | below_1h_threshold | +0.41% | +0.45% |
-| ETNSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.44% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.28% | +0.32% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.07% | +1.12% |
+| SPELL/USDT:USDT | below_1h_threshold | +0.96% | +1.01% |
+| PENGSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.94% |
+| UAI/USDT:USDT | below_1h_threshold | +0.55% | +0.60% |
+| POL/USDT:USDT | below_1h_threshold | +0.45% | +0.50% |
 
 ## 6. 次に見るべき不足
 
