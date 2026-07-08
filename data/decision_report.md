@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T08:40:10.093054+00:00
+- generated_at: 2026-07-08T08:50:23.361515+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8472**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T08:40:05.964951+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.45% price=61940.8
-- Funnel: target 847 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-08T08:50:18.344159+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.14% price=62135.2
+- Funnel: target 847 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +51.77% | $66,991,846.88 |
-| EDGE/USDT:USDT | +36.59% | $17,211,610.38 |
-| SYN/USDT:USDT | +16.32% | $5,271,791.42 |
-| NES/USDT:USDT | +13.46% | $1,473,179.29 |
-| KMNO/USDT:USDT | +11.21% | $1,095,250.31 |
+| EVAA/USDT:USDT | +51.23% | $67,308,629.43 |
+| EDGE/USDT:USDT | +42.07% | $17,458,144.73 |
+| SYN/USDT:USDT | +15.14% | $5,350,632.60 |
+| KMNO/USDT:USDT | +12.97% | $1,112,219.96 |
+| NES/USDT:USDT | +12.89% | $1,597,995.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +3.48% | +4.93% |
-| UKOIL/USDT:USDT | below_1h_threshold | +3.31% | +4.76% |
-| O/USDT:USDT | below_1h_threshold | +1.03% | +2.49% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.89% | +2.34% |
-| SYN/USDT:USDT | below_1h_threshold | +0.57% | +2.02% |
+| USOIL/USDT:USDT | below_1h_threshold | +3.44% | +4.58% |
+| UKOIL/USDT:USDT | below_1h_threshold | +3.19% | +4.33% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.53% | +3.67% |
+| CLO/USDT:USDT | below_1h_threshold | +2.07% | +3.21% |
+| O/USDT:USDT | below_1h_threshold | +1.32% | +2.47% |
 
 ## 6. 次に見るべき不足
 
