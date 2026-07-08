@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T04:16:52.360617+00:00
+- generated_at: 2026-07-08T04:26:56.452395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8464**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T04:16:47.227718+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=62769.6
-- Funnel: target 847 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-08T04:26:51.440744+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=62857.3
+- Funnel: target 847 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +41.77% | $56,513,613.99 |
-| EDGE/USDT:USDT | +13.75% | $13,208,947.12 |
-| SYN/USDT:USDT | +10.85% | $4,078,933.57 |
-| LDO/USDT:USDT | +7.72% | $7,115,645.13 |
-| SNDKSTOCK/USDT:USDT | +4.63% | $62,367,447.21 |
+| EVAA/USDT:USDT | +43.74% | $56,755,786.33 |
+| EDGE/USDT:USDT | +14.46% | $13,234,810.11 |
+| SYN/USDT:USDT | +9.67% | $4,118,643.47 |
+| LDO/USDT:USDT | +8.02% | $7,166,649.65 |
+| SNDKSTOCK/USDT:USDT | +5.00% | $62,586,470.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.12% | +3.08% |
-| SLX/USDT:USDT | below_1h_threshold | +2.81% | +2.77% |
-| SYN/USDT:USDT | below_1h_threshold | +2.71% | +2.66% |
-| LDO/USDT:USDT | below_1h_threshold | +0.87% | +0.82% |
-| RIF/USDT:USDT | below_1h_threshold | +0.86% | +0.81% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.51% | +4.32% |
+| SLX/USDT:USDT | below_1h_threshold | +4.08% | +3.89% |
+| SYN/USDT:USDT | below_1h_threshold | +1.62% | +1.43% |
+| H/USDT:USDT | below_1h_threshold | +1.19% | +1.01% |
+| ROKSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +0.99% |
 
 ## 6. 次に見るべき不足
 
