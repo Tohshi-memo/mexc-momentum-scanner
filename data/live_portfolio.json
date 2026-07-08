@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 101.55935437451136,
+  "balance": 102.06207317866519,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -1390,6 +1390,47 @@
         "daily_RED"
       ],
       "strategy_score": 0.2
+    },
+    {
+      "symbol": "LAB/USDT:USDT",
+      "detected_at": "2026-07-08T00:31:14.531380+00:00",
+      "closed_at": "2026-07-08T01:01:35.426016+00:00",
+      "outcome": "TP_HIT",
+      "pnl_pct": 8.000000000000002,
+      "sl_pct": 4.000000000000001,
+      "risk_pct": 0.5,
+      "notional_usdt": 12.694919296813918,
+      "pnl_usdt": 1.0155935437451138,
+      "balance_before": 101.55935437451136,
+      "balance_after": 102.57494791825647,
+      "strategy_tier": "A",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "daily_RED"
+      ],
+      "strategy_score": 0.2
+    },
+    {
+      "symbol": "KORU/USDT:USDT",
+      "detected_at": "2026-07-08T00:31:16.437915+00:00",
+      "closed_at": "2026-07-08T01:01:35.426016+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -3.9999999999999947,
+      "sl_pct": 3.9999999999999947,
+      "risk_pct": 0.5,
+      "notional_usdt": 12.821868489782076,
+      "pnl_usdt": -0.5128747395912824,
+      "balance_before": 102.57494791825647,
+      "balance_after": 102.06207317866519,
+      "strategy_tier": "B",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "OBV_BEAR_DIV",
+        "daily_RED"
+      ],
+      "strategy_score": 0.35
     }
   ]
 }
