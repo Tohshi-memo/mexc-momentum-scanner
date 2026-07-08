@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-08T07:08:51.305195+00:00
+- generated_at: 2026-07-08T07:18:53.874085+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8470**
 
@@ -62,30 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-08T07:08:46.261263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=62554.8
-- Funnel: target 847 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-08T07:18:48.884820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62659.1
+- Funnel: target 847 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +42.85% | $62,394,727.74 |
-| EDGE/USDT:USDT | +22.75% | $15,239,283.08 |
-| SYN/USDT:USDT | +15.32% | $5,030,283.18 |
-| NES/USDT:USDT | +13.34% | $1,193,086.43 |
-| CLO/USDT:USDT | +7.75% | $1,201,931.77 |
+| EVAA/USDT:USDT | +45.28% | $62,739,313.89 |
+| EDGE/USDT:USDT | +23.43% | $15,324,020.41 |
+| SYN/USDT:USDT | +13.74% | $5,114,374.16 |
+| NES/USDT:USDT | +13.57% | $1,203,121.61 |
+| CLO/USDT:USDT | +8.05% | $1,207,038.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +2.96% | +3.08% |
-| CLO/USDT:USDT | below_1h_threshold | +1.29% | +1.40% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.74% | +0.86% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.40% | +0.52% |
-| APPSTOCK/USDT:USDT | below_1h_threshold | +0.20% | +0.32% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.07% | +2.02% |
+| CLO/USDT:USDT | below_1h_threshold | +1.57% | +1.52% |
+| SYN/USDT:USDT | below_1h_threshold | +1.48% | +1.43% |
+| ROKSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.84% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.54% | +0.49% |
 
 ## 6. 次に見るべき不足
 
