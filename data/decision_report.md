@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-09T07:26:12.874340+00:00
+- generated_at: 2026-07-09T07:40:51.043074+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8524**
 
@@ -62,30 +62,32 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-09T07:26:08.014548+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=62826.5
-- Funnel: target 851 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-09T07:40:45.756254+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=62795.7
+- Funnel: target 851 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +105.14% | $8,401,652.28 |
-| VANRY/USDT:USDT | +18.55% | $7,944,346.76 |
-| SKYAI/USDT:USDT | +15.72% | $18,529,246.39 |
-| CAP/USDT:USDT | +15.21% | $1,956,192.79 |
-| BASED/USDT:USDT | +13.99% | $2,505,358.78 |
+| TAG/USDT:USDT | +107.71% | $8,528,078.79 |
+| SKYAI/USDT:USDT | +21.00% | $18,866,998.58 |
+| VANRY/USDT:USDT | +19.00% | $8,036,094.05 |
+| BASED/USDT:USDT | +14.20% | $2,581,721.41 |
+| EGLD/USDT:USDT | +13.21% | $1,319,601.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +1.11% | +1.28% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.10% | +1.27% |
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.26% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.16% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +1.10% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.48% | +2.70% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.73% | +1.95% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.66% | +1.88% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.48% | +1.70% |
+| TSEMSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.34% |
 
 ## 6. 次に見るべき不足
 
