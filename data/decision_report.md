@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-09T09:25:25.414053+00:00
+- generated_at: 2026-07-09T09:35:10.072579+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8526**
 
@@ -62,31 +62,9 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-09T09:25:20.061926+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=62817.1
-- Funnel: target 851 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
-
-### 24h上昇上位
-
-| symbol | 24h | volume |
-|---|---:|---:|
-| TAG/USDT:USDT | +112.28% | $10,256,641.73 |
-| SKYAI/USDT:USDT | +21.88% | $20,668,939.83 |
-| VANRY/USDT:USDT | +16.35% | $7,847,855.54 |
-| MYX/USDT:USDT | +16.16% | $2,544,533.34 |
-| BASED/USDT:USDT | +15.95% | $2,753,518.46 |
-
-### Near Miss
-
-| symbol | reason | 1h | RS |
-|---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.22% | +2.31% |
-| OGN/USDT:USDT | below_1h_threshold | +2.07% | +2.16% |
-| BSB/USDT:USDT | below_1h_threshold | +1.87% | +1.96% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.02% | +1.11% |
+- 更新: 2026-07-09T09:35:04.892280+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=0.0
+- Funnel: target 0 → liquid 0 → pre 0 → checked 0 → surge 0 → strict 0
 
 ## 6. 次に見るべき不足
 
