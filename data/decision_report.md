@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-09T05:25:43.076241+00:00
+- generated_at: 2026-07-09T05:35:59.823123+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8522**
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-09T05:25:37.784638+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=62286.6
+- 更新: 2026-07-09T05:35:54.483211+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=62260.4
 - Funnel: target 851 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -72,21 +72,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +96.57% | $6,834,310.78 |
-| SKYAI/USDT:USDT | +22.48% | $16,234,833.54 |
-| VANRY/USDT:USDT | +17.45% | $7,268,397.98 |
-| ALLO/USDT:USDT | +14.59% | $11,600,897.19 |
-| MYX/USDT:USDT | +14.57% | $2,629,870.70 |
+| TAG/USDT:USDT | +91.71% | $6,908,649.09 |
+| SKYAI/USDT:USDT | +22.41% | $16,391,896.80 |
+| VANRY/USDT:USDT | +20.19% | $7,329,784.01 |
+| MYX/USDT:USDT | +15.08% | $2,637,307.91 |
+| ALLO/USDT:USDT | +14.10% | $11,652,662.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.19% | +3.41% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.69% | +2.90% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.47% | +2.69% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.27% | +2.48% |
-| BASED/USDT:USDT | below_1h_threshold | +2.20% | +2.42% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.09% | +3.35% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.85% | +3.11% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.69% | +2.94% |
+| JTO/USDT:USDT | below_1h_threshold | +2.42% | +2.68% |
+| UAI/USDT:USDT | below_1h_threshold | +2.33% | +2.59% |
 
 ## 6. 次に見るべき不足
 
