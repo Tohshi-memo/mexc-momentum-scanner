@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-09T06:00:54.926158+00:00
+- generated_at: 2026-07-09T06:16:10.614576+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8522**
+- closed shadow trades: **8523**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8522, expectancy=-0.01%
+- 全期間 MARKET基準: n=8523, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.10%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| ASK_LONG | 20/20 | 100.0% | +0.63% | **+0.63%** |
+| ASK_LONG | 20/20 | 100.0% | +0.62% | **+0.62%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.60% | **+0.60%** |
 | LIMIT_ATR_LONG | 6/20 | 30.0% | +1.08% | **+0.33%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +0.57% | **+0.31%** |
@@ -46,46 +46,46 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$321.27** / 初期 $100.00 (+221.27%)
-- 確定: 2710件 (Win 856 / Loss 907 / Flat 947) / skip 2373件
-- 成長率目線: 平均log +0.000431 / 幾何平均 +0.043% per trade / maxDD +8.13%
+- 残高: **$322.88** / 初期 $100.00 (+222.88%)
+- 確定: 2711件 (Win 857 / Loss 907 / Flat 947) / skip 2373件
+- 成長率目線: 平均log +0.000432 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SKYAI/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $321.27
+- 最新: VANRY/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $322.88
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.11** / 初期 $100.00 (+5.11%)
-- 確定: 642件 (Win 152 / Loss 159 / Flat 331) / skip 1291件
+- 確定: 642件 (Win 152 / Loss 159 / Flat 331) / skip 1292件
 - 成長率目線: 平均log +0.000078 / 幾何平均 +0.008% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: VANRY/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.35% 残高後 $105.11
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-09T06:00:49.844609+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=62579.2
-- Funnel: target 851 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-09T06:16:04.445681+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=62494.2
+- Funnel: target 851 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +93.42% | $7,107,484.74 |
-| SKYAI/USDT:USDT | +22.82% | $16,389,393.17 |
-| VANRY/USDT:USDT | +19.71% | $7,429,079.80 |
-| ALLO/USDT:USDT | +13.76% | $11,407,915.57 |
-| ANSEM/USDT:USDT | +13.28% | $4,730,173.26 |
+| TAG/USDT:USDT | +94.57% | $7,243,416.64 |
+| VANRY/USDT:USDT | +23.48% | $7,590,866.85 |
+| SKYAI/USDT:USDT | +20.25% | $16,712,636.55 |
+| MYX/USDT:USDT | +14.37% | $2,558,458.69 |
+| ARB/USDT:USDT | +12.95% | $8,161,274.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +0.97% | +0.95% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.56% | +0.54% |
-| BSB/USDT:USDT | below_1h_threshold | +0.28% | +0.26% |
-| VVV/USDT:USDT | below_1h_threshold | +0.25% | +0.23% |
-| UAI/USDT:USDT | below_1h_threshold | +0.22% | +0.20% |
+| VANRY/USDT:USDT | below_1h_threshold | +4.15% | +4.27% |
+| POWER/USDT:USDT | below_1h_threshold | +3.82% | +3.93% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.49% | +2.60% |
+| ARB/USDT:USDT | below_1h_threshold | +2.07% | +2.18% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.90% | +1.02% |
 
 ## 6. 次に見るべき不足
 
