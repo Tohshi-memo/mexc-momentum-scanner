@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-09T05:04:53.019180+00:00
+- generated_at: 2026-07-09T05:15:12.399538+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8522**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$103.06** / 初期 $100.00 (+3.06%)
-- 確定トレード: 82件 (TP 29 / SL 52 / EXP 1)
-- 最新: ANSEM/USDT:USDT SL_HIT PnL -4.00% 残高後 $103.06
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$104.09** / 初期 $100.00 (+4.09%)
+- 確定トレード: 83件 (TP 30 / SL 52 / EXP 1)
+- 最新: NES/USDT:USDT TP_HIT PnL +8.00% 残高後 $104.09
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -62,8 +62,8 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-09T05:04:47.860992+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=62378.3
+- 更新: 2026-07-09T05:15:07.324347+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=62462.1
 - Funnel: target 851 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -71,21 +71,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAG/USDT:USDT | +96.00% | $6,702,810.72 |
-| SKYAI/USDT:USDT | +23.48% | $15,748,921.34 |
-| MYX/USDT:USDT | +14.56% | $2,594,727.14 |
-| ALLO/USDT:USDT | +13.95% | $11,467,522.56 |
-| VANRY/USDT:USDT | +12.35% | $7,170,802.05 |
+| TAG/USDT:USDT | +98.85% | $6,781,271.17 |
+| SKYAI/USDT:USDT | +22.48% | $15,955,974.00 |
+| MYX/USDT:USDT | +15.08% | $2,601,202.25 |
+| VANRY/USDT:USDT | +14.52% | $7,221,865.48 |
+| ALLO/USDT:USDT | +13.98% | $11,503,881.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.87% | +3.94% |
-| UAI/USDT:USDT | below_1h_threshold | +1.50% | +1.57% |
-| APE/USDT:USDT | below_1h_threshold | +1.34% | +1.41% |
-| BASED/USDT:USDT | below_1h_threshold | +1.29% | +1.36% |
-| TAG/USDT:USDT | below_1h_threshold | +0.88% | +0.95% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.42% | +3.35% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.90% | +2.83% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.60% | +2.54% |
+| TAG/USDT:USDT | below_1h_threshold | +2.50% | +2.43% |
+| UAI/USDT:USDT | below_1h_threshold | +2.13% | +2.06% |
 
 ## 6. 次に見るべき不足
 
