@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T18:51:10.812145+00:00
+- generated_at: 2026-07-11T18:56:09.912165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8546**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-11T18:51:04.657734+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64297.0
-- Funnel: target 863 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.8 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-11T18:56:03.925050+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64267.0
+- Funnel: target 863 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +33.39% | $4,039,436.33 |
-| B/USDT:USDT | +12.98% | $47,126,957.06 |
-| CASHCAT/USDT:USDT | +10.39% | $1,604,241.36 |
-| HIGH/USDT:USDT | +7.13% | $1,616,892.15 |
-| CLO/USDT:USDT | +6.68% | $1,348,466.49 |
+| SXT/USDT:USDT | +30.28% | $4,262,317.79 |
+| B/USDT:USDT | +14.75% | $47,393,991.02 |
+| CASHCAT/USDT:USDT | +9.67% | $1,611,767.24 |
+| HIGH/USDT:USDT | +6.59% | $1,647,999.99 |
+| CLO/USDT:USDT | +6.19% | $1,352,229.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +2.53% | +2.52% |
-| CLO/USDT:USDT | below_1h_threshold | +2.16% | +2.15% |
-| TAC/USDT:USDT | below_1h_threshold | +1.92% | +1.91% |
-| ENA/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
+| SXT/USDT:USDT | below_1h_threshold | +4.15% | +4.19% |
+| CLO/USDT:USDT | below_1h_threshold | +2.32% | +2.36% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.18% | +2.22% |
+| ENA/USDT:USDT | below_1h_threshold | +1.91% | +1.95% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.44% | +1.48% |
 
 ## 7. 次に見るべき不足
 
