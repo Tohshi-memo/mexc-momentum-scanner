@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T07:44:31.957910+00:00
+- generated_at: 2026-07-11T08:06:18.063660+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8531**
 
@@ -62,9 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-11T07:44:28.134523+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=0.0
-- Funnel: target 0 → liquid 0 → pre 0 → checked 0 → surge 0 → strict 0
+- 更新: 2026-07-11T08:06:13.236913+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64132.2
+- Funnel: target 862 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+
+### 24h上昇上位
+
+| symbol | 24h | volume |
+|---|---:|---:|
+| CASHCAT/USDT:USDT | +18.51% | $1,342,876.85 |
+| ANSEM/USDT:USDT | +17.68% | $7,197,010.44 |
+| B3/USDT:USDT | +17.66% | $1,032,443.58 |
+| BEAT/USDT:USDT | +14.88% | $21,599,659.46 |
+| VIRTUAL/USDT:USDT | +12.87% | $32,425,981.88 |
+
+### Near Miss
+
+| symbol | reason | 1h | RS |
+|---|---|---:|---:|
+| OPN/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
+| XPIN/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.90% | +0.90% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.81% | +0.81% |
+| MYX/USDT:USDT | below_1h_threshold | +0.74% | +0.75% |
 
 ## 6. 次に見るべき不足
 
