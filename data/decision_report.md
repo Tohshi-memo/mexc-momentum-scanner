@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T16:16:10.363304+00:00
+- generated_at: 2026-07-11T16:21:10.490319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8537**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.82** / 初期 $100.00 (-0.18%)
-- 確定: 4件 (Win 1 / Loss 3 / Flat 0) / pending 3件 / skip 0件
+- 確定: 4件 (Win 1 / Loss 3 / Flat 0) / pending 4件 / skip 0件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000319 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.82
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-11T16:16:04.347398+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64161.1
-- Funnel: target 863 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-11T16:21:02.075375+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64172.9
+- Funnel: target 863 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +4.59% | $41,960,223.55 |
-| XPIN/USDT:USDT | +3.71% | $2,642,320.96 |
-| EVAA/USDT:USDT | +3.29% | $27,809,278.00 |
-| THETA/USDT:USDT | +2.14% | $1,747,525.12 |
-| EDGE/USDT:USDT | +2.10% | $2,304,462.25 |
+| B/USDT:USDT | +5.65% | $42,177,397.91 |
+| XPIN/USDT:USDT | +3.77% | $2,649,377.33 |
+| EVAA/USDT:USDT | +2.42% | $27,870,184.57 |
+| EDGE/USDT:USDT | +1.91% | $2,315,231.38 |
+| CAP/USDT:USDT | +1.87% | $1,244,575.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +4.51% | +4.47% |
-| XPIN/USDT:USDT | below_1h_threshold | +3.72% | +3.69% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.45% | +3.41% |
-| THETA/USDT:USDT | below_1h_threshold | +2.15% | +2.11% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.08% | +2.04% |
+| XPIN/USDT:USDT | below_1h_threshold | +3.77% | +3.72% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
+| CAP/USDT:USDT | below_1h_threshold | +2.12% | +2.06% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.91% | +1.86% |
+| LDO/USDT:USDT | below_1h_threshold | +1.74% | +1.69% |
 
 ## 7. 次に見るべき不足
 
