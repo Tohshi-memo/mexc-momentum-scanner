@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T08:56:08.149167+00:00
+- generated_at: 2026-07-11T09:01:06.079612+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8532**
 
@@ -62,32 +62,30 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-11T08:56:01.919712+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64231.5
-- Funnel: target 862 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.4 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-11T09:01:01.363836+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64241.3
+- Funnel: target 862 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +22.96% | $7,575,534.88 |
-| XPIN/USDT:USDT | +21.79% | $1,605,291.66 |
-| HMSTR/USDT:USDT | +20.37% | $1,003,299.57 |
-| B3/USDT:USDT | +17.98% | $1,087,227.35 |
-| BEAT/USDT:USDT | +16.82% | $24,312,048.90 |
+| XPIN/USDT:USDT | +23.37% | $1,639,352.26 |
+| HMSTR/USDT:USDT | +23.09% | $1,003,819.26 |
+| ANSEM/USDT:USDT | +22.24% | $7,472,823.27 |
+| B3/USDT:USDT | +18.97% | $1,099,311.37 |
+| BEAT/USDT:USDT | +17.26% | $24,280,587.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +3.06% | +2.91% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.76% | +1.61% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.31% | +1.15% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.93% | +0.77% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.91% | +0.76% |
+| RE/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
+| HMSTR/USDT:USDT | below_1h_threshold | +0.84% | +0.84% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
+| XPIN/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
 
 ## 6. 次に見るべき不足
 
