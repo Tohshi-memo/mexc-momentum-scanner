@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T04:56:26.581432+00:00
+- generated_at: 2026-07-11T05:06:37.491392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8531**
 
@@ -62,7 +62,7 @@
 
 ## 5. Latest Market Context
 
-- 更新: 2026-07-11T04:56:21.579981+00:00 / 保存件数 288/288
+- 更新: 2026-07-11T05:06:32.498275+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h +0.00% price=0.0
 - Funnel: target 0 → liquid 0 → pre 0 → checked 0 → surge 0 → strict 0
 
