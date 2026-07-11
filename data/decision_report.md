@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T10:21:03.983406+00:00
+- generated_at: 2026-07-11T10:26:06.545535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8532**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.00** / 初期 $100.00 (+0.00%)
-- 確定: 0件 (Win 0 / Loss 0 / Flat 0) / pending 1件 / skip 0件
+- 確定: 0件 (Win 0 / Loss 0 / Flat 0) / pending 2件 / skip 0件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000196 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 状態: 新しい$100口座を開始済み。開始後のシグナルを待っています。
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-11T10:20:59.285509+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64123.7
-- Funnel: target 862 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-11T10:26:00.299573+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64155.6
+- Funnel: target 862 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.4 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +26.19% | $1,391,644.47 |
-| XPIN/USDT:USDT | +20.16% | $1,958,496.15 |
-| HMSTR/USDT:USDT | +20.06% | $1,291,258.94 |
-| BEAT/USDT:USDT | +20.04% | $28,461,255.98 |
-| ANSEM/USDT:USDT | +18.16% | $7,588,101.30 |
+| CASHCAT/USDT:USDT | +25.23% | $1,406,396.10 |
+| XPIN/USDT:USDT | +20.61% | $1,964,041.84 |
+| HMSTR/USDT:USDT | +20.47% | $1,305,405.90 |
+| BEAT/USDT:USDT | +19.52% | $28,619,615.29 |
+| ANSEM/USDT:USDT | +17.06% | $7,603,654.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.95% | +4.98% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.98% | +4.01% |
-| MMT/USDT:USDT | below_1h_threshold | +2.00% | +2.03% |
-| B3/USDT:USDT | below_1h_threshold | +1.95% | +1.98% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.59% | +1.62% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.42% | +3.40% |
+| MMT/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
+| B3/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
 
 ## 7. 次に見るべき不足
 
