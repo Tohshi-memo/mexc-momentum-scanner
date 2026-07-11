@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T09:04:16.599982+00:00
+- generated_at: 2026-07-11T09:04:47.638322+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8532**
 
@@ -65,7 +65,7 @@
 - 残高: **$100.00** / 初期 $100.00 (+0.00%)
 - 確定: 0件 (Win 0 / Loss 0 / Flat 0) / pending 0件 / skip 0件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000196 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 状態: 新しい$100口座を開始済み。開始後のシグナルを待っています。
 
 ## 6. Latest Market Context
