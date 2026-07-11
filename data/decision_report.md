@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T09:41:10.296457+00:00
+- generated_at: 2026-07-11T09:46:14.061384+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8532**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.00** / 初期 $100.00 (+0.00%)
-- 確定: 0件 (Win 0 / Loss 0 / Flat 0) / pending 0件 / skip 0件
+- 確定: 0件 (Win 0 / Loss 0 / Flat 0) / pending 1件 / skip 0件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000196 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 状態: 新しい$100口座を開始済み。開始後のシグナルを待っています。
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-11T09:41:04.145603+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64221.7
-- Funnel: target 862 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-11T09:46:05.609513+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=64152.9
+- Funnel: target 862 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +23.92% | $7,598,290.93 |
-| HMSTR/USDT:USDT | +22.27% | $1,159,713.24 |
-| XPIN/USDT:USDT | +20.44% | $1,853,224.57 |
-| BEAT/USDT:USDT | +18.63% | $25,645,470.41 |
-| B3/USDT:USDT | +17.33% | $1,136,617.49 |
+| ANSEM/USDT:USDT | +23.68% | $7,616,713.86 |
+| HMSTR/USDT:USDT | +23.19% | $1,175,629.28 |
+| XPIN/USDT:USDT | +21.74% | $1,870,167.41 |
+| BEAT/USDT:USDT | +18.99% | $25,818,165.67 |
+| CASHCAT/USDT:USDT | +16.78% | $1,381,672.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +4.87% | +4.90% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.66% | +4.69% |
-| WLD/USDT:USDT | below_1h_threshold | +2.70% | +2.73% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.66% | +1.69% |
-| UB/USDT:USDT | below_1h_threshold | +1.64% | +1.67% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.46% | +3.60% |
+| WLD/USDT:USDT | below_1h_threshold | +2.50% | +2.64% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.11% | +2.24% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.01% | +1.15% |
+| UB/USDT:USDT | below_1h_threshold | +0.98% | +1.11% |
 
 ## 7. 次に見るべき不足
 
