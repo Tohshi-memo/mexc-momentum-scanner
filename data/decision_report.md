@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T12:31:07.975309+00:00
+- generated_at: 2026-07-11T12:36:04.062584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8534**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-11T12:31:02.070954+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64150.0
+- 更新: 2026-07-11T12:35:58.131565+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64125.0
 - Funnel: target 862 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CLO/USDT:USDT | +25.58% | $1,029,736.19 |
-| BEAT/USDT:USDT | +21.05% | $33,057,972.07 |
-| HMSTR/USDT:USDT | +19.90% | $1,535,651.01 |
-| XPIN/USDT:USDT | +17.69% | $2,311,624.15 |
-| CASHCAT/USDT:USDT | +17.50% | $1,468,519.36 |
+| CLO/USDT:USDT | +24.95% | $1,034,100.59 |
+| BEAT/USDT:USDT | +20.65% | $33,227,029.84 |
+| CASHCAT/USDT:USDT | +18.33% | $1,477,255.09 |
+| XPIN/USDT:USDT | +18.14% | $2,321,977.79 |
+| ANSEM/USDT:USDT | +17.88% | $7,361,489.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.35% | +3.39% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.76% | +2.80% |
-| HMSTR/USDT:USDT | below_1h_threshold | +1.70% | +1.74% |
-| JUP/USDT:USDT | below_1h_threshold | +1.40% | +1.44% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.08% | +4.16% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.55% | +1.63% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.19% | +1.27% |
+| JUP/USDT:USDT | below_1h_threshold | +1.11% | +1.19% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.01% | +1.09% |
 
 ## 7. 次に見るべき不足
 
