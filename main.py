@@ -195,11 +195,8 @@ def run_once(
     # BTC データが取れなかった場合のみスキップ (regime は常にスキャン)
     if not btc_status.is_signal_active:
         print_no_candidates()
-        _record_market_context(
-            cycle, btc_status, scanner, market_context, [], logger
-        )
         _finalize_expired(tracker, stats, notifier, live_portfolio)
-        return
+        raise RuntimeError("BTC market data unavailable; scanner cycle failed")
 
     # ── Step 2: 急騰銘柄リスト ────────────────────────────────────────
     print_scan_result(surge_candidates, regime=btc_status.regime)
@@ -663,6 +660,7 @@ def main() -> None:
 
     while True:
         cycle += 1
+        cycle_error: Exception | None = None
         try:
             run_once(
                 cycle, scanner, analyzer, fundamental_analyzer,
@@ -676,6 +674,7 @@ def main() -> None:
             console.print("\n  [dim]Interrupted. Shutting down.[/dim]")
             break
         except Exception as e:
+            cycle_error = e
             logger.error("Unhandled error in cycle #%d: %s", cycle, e, exc_info=True)
         finally:
             try:
@@ -717,6 +716,8 @@ def main() -> None:
 
         if run_once_mode:
             print_cycle_footer(cycle)
+            if cycle_error is not None:
+                raise cycle_error
             break
 
         print_cycle_footer(cycle, next_in=scan_interval)

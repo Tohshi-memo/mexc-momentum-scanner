@@ -48,6 +48,19 @@ class MarketContextRecorder:
         if not self._enabled:
             return
 
+        scan = scan_context or {}
+        if (
+            not btc_status.is_signal_active
+            or float(btc_status.price or 0) <= 0
+            or not scan.get("available", False)
+        ):
+            logger.warning(
+                "Skipping invalid market context: btc_price=%s available=%s",
+                btc_status.price,
+                scan.get("available"),
+            )
+            return
+
         now = datetime.now(timezone.utc).isoformat()
         payload = self._load()
         records = payload.get("records", [])

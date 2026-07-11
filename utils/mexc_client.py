@@ -4,10 +4,13 @@ MEXC APIへのセキュアな接続ラッパー (ccxt ベース)
 """
 from __future__ import annotations
 
+import json
 import logging
 import os
 import time
 from typing import Any
+from urllib.parse import urlencode
+from urllib.request import Request, urlopen
 
 import ccxt
 
@@ -23,6 +26,20 @@ class MEXCClient:
 
     # ccxt が報告する Rate Limit の余裕係数（安全マージン）
     RATE_LIMIT_SAFETY_FACTOR: float = 1.2
+    CONTRACT_API_BASE: str = "https://contract.mexc.com/api/v1/contract"
+    DIRECT_TIMEOUT_SECONDS: float = float(os.getenv("MEXC_PUBLIC_API_TIMEOUT", "15"))
+    KLINE_INTERVALS: dict[str, str] = {
+        "1m": "Min1",
+        "5m": "Min5",
+        "15m": "Min15",
+        "30m": "Min30",
+        "1h": "Min60",
+        "4h": "Hour4",
+        "8h": "Hour8",
+        "1d": "Day1",
+        "1w": "Week1",
+        "1M": "Month1",
+    }
 
     def __init__(self) -> None:
         api_key: str = os.getenv("MEXC_API_KEY", "")
@@ -46,6 +63,7 @@ class MEXCClient:
             logger.info("MEXC client initialized without API credentials (public mode).")
 
         self._exchange: ccxt.mexc = ccxt.mexc(config)
+        self._direct_markets_cache: list[dict[str, Any]] | None = None
 
     # ------------------------------------------------------------------
     # Market Data (Public)
@@ -53,7 +71,14 @@ class MEXCClient:
 
     def fetch_markets(self) -> list[dict[str, Any]]:
         """全マーケット情報を取得する。"""
-        return self._call_with_retry(self._exchange.fetch_markets)
+        try:
+            markets = self._call_with_retry(self._exchange.fetch_markets)
+            if not markets:
+                raise RuntimeError("ccxt returned no markets")
+            return markets
+        except Exception as e:
+            logger.warning("ccxt fetch_markets failed; using MEXC public API: %s", e)
+            return self._fetch_direct_markets()
 
     def fetch_swap_usdt_symbols(self) -> list[str]:
         """アクティブな USDT建て Swap 銘柄のシンボルリストを返す。
@@ -61,13 +86,23 @@ class MEXCClient:
         fetch_tickers() の defaultType が正しく機能しない場合のフォールバックとして、
         fetch_markets() から確実にスワップ銘柄のみを抽出する。
         """
-        markets = self._call_with_retry(self._exchange.fetch_markets)
-        return [
+        markets = self.fetch_markets()
+        symbols = [
             m["symbol"]
             for m in markets
             if m.get("type") == "swap"
             and m.get("quote") == "USDT"
             and m.get("active", True)
+        ]
+        if symbols:
+            return symbols
+        logger.warning(
+            "ccxt markets contained no active USDT swaps; using MEXC public API"
+        )
+        return [
+            m["symbol"]
+            for m in self._fetch_direct_markets()
+            if m.get("active", True)
         ]
 
     def fetch_tickers(self, symbols: list[str] | None = None) -> dict[str, Any]:
@@ -76,9 +111,40 @@ class MEXCClient:
         Args:
             symbols: 対象シンボルリスト。None の場合は全ティッカーを取得。
         """
-        if symbols:
-            return self._call_with_retry(self._exchange.fetch_tickers, symbols)
-        return self._call_with_retry(self._exchange.fetch_tickers)
+        try:
+            if symbols:
+                tickers = self._call_with_retry(self._exchange.fetch_tickers, symbols)
+            else:
+                tickers = self._call_with_retry(self._exchange.fetch_tickers)
+            if not tickers:
+                raise RuntimeError("ccxt returned no tickers")
+            return tickers
+        except Exception as e:
+            logger.warning("ccxt fetch_tickers failed; using MEXC public API: %s", e)
+            rows = self._direct_get("/ticker")
+            if not isinstance(rows, list):
+                raise RuntimeError("MEXC ticker response is not a list")
+
+            wanted = set(symbols or [])
+            tickers: dict[str, Any] = {}
+            for row in rows:
+                symbol = self._to_unified_symbol(str(row.get("symbol", "")))
+                if not symbol or (wanted and symbol not in wanted):
+                    continue
+                tickers[symbol] = {
+                    "symbol": symbol,
+                    "last": self._as_float(row.get("lastPrice")),
+                    "percentage": self._as_float(row.get("riseFallRate")) * 100,
+                    "quoteVolume": self._as_float(row.get("amount24")),
+                    "baseVolume": self._as_float(row.get("volume24")),
+                    "bid": self._as_float(row.get("bid1")),
+                    "ask": self._as_float(row.get("ask1")),
+                    "timestamp": int(time.time() * 1000),
+                    "info": row,
+                }
+            if not tickers:
+                raise RuntimeError("MEXC public API returned no matching tickers")
+            return tickers
 
     def fetch_ohlcv(
         self,
@@ -95,13 +161,51 @@ class MEXCClient:
         Returns:
             [[timestamp, open, high, low, close, volume], ...]
         """
-        return self._call_with_retry(
-            self._exchange.fetch_ohlcv,
-            symbol,
-            timeframe,
-            None,  # since
-            limit,
-        )
+        try:
+            candles = self._call_with_retry(
+                self._exchange.fetch_ohlcv,
+                symbol,
+                timeframe,
+                None,  # since
+                limit,
+            )
+            if not candles:
+                raise RuntimeError("ccxt returned no OHLCV candles")
+            return candles
+        except Exception as e:
+            logger.warning(
+                "ccxt fetch_ohlcv failed for %s; using MEXC public API: %s",
+                symbol,
+                e,
+            )
+            interval = self.KLINE_INTERVALS.get(timeframe)
+            if interval is None:
+                raise ValueError(f"Unsupported MEXC kline timeframe: {timeframe}") from e
+            data = self._direct_get(
+                f"/kline/{self._to_contract_symbol(symbol)}",
+                {"interval": interval, "limit": limit},
+            )
+            if not isinstance(data, dict):
+                raise RuntimeError("MEXC kline response is not an object")
+            columns = [
+                data.get(key, [])
+                for key in ("time", "open", "high", "low", "close", "vol")
+            ]
+            count = min((len(column) for column in columns), default=0)
+            candles = [
+                [
+                    int(columns[0][index]) * 1000,
+                    self._as_float(columns[1][index]),
+                    self._as_float(columns[2][index]),
+                    self._as_float(columns[3][index]),
+                    self._as_float(columns[4][index]),
+                    self._as_float(columns[5][index]),
+                ]
+                for index in range(count)
+            ]
+            if not candles:
+                raise RuntimeError("MEXC public API returned no OHLCV candles")
+            return candles
 
     def fetch_order_book(self, symbol: str, limit: int = 20) -> dict[str, Any]:
         """板情報を取得する。"""
@@ -212,6 +316,80 @@ class MEXCClient:
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------
+
+    def _direct_get(
+        self,
+        path: str,
+        params: dict[str, Any] | None = None,
+    ) -> Any:
+        query = f"?{urlencode(params)}" if params else ""
+        request = Request(
+            f"{self.CONTRACT_API_BASE}{path}{query}",
+            headers={"User-Agent": "mexc-momentum-scanner/1.0"},
+        )
+        with urlopen(request, timeout=self.DIRECT_TIMEOUT_SECONDS) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+        if not isinstance(payload, dict):
+            raise RuntimeError("MEXC public API returned an invalid response")
+        if payload.get("success") is False or payload.get("code") not in (None, 0):
+            raise RuntimeError(
+                f"MEXC public API error code={payload.get('code')}: "
+                f"{payload.get('message')}"
+            )
+        if payload.get("data") is None:
+            raise RuntimeError("MEXC public API response has no data")
+        return payload["data"]
+
+    def _fetch_direct_markets(self) -> list[dict[str, Any]]:
+        if self._direct_markets_cache is not None:
+            return self._direct_markets_cache
+        rows = self._direct_get("/detail")
+        if not isinstance(rows, list):
+            raise RuntimeError("MEXC contract detail response is not a list")
+        markets: list[dict[str, Any]] = []
+        for row in rows:
+            quote = str(row.get("quoteCoin", ""))
+            raw_symbol = str(row.get("symbol", ""))
+            symbol = self._to_unified_symbol(raw_symbol)
+            if not symbol or quote != "USDT":
+                continue
+            markets.append(
+                {
+                    "id": raw_symbol,
+                    "symbol": symbol,
+                    "base": str(row.get("baseCoin", "")),
+                    "quote": quote,
+                    "settle": quote,
+                    "type": "swap",
+                    "swap": True,
+                    "active": row.get("state") == 0
+                    and row.get("apiAllowed") is not False,
+                    "contractSize": self._as_float(row.get("contractSize"), 1.0),
+                    "info": row,
+                }
+            )
+        if not markets:
+            raise RuntimeError("MEXC public API returned no contract markets")
+        self._direct_markets_cache = markets
+        return markets
+
+    @staticmethod
+    def _to_contract_symbol(symbol: str) -> str:
+        return symbol.split(":", 1)[0].replace("/", "_")
+
+    @staticmethod
+    def _to_unified_symbol(symbol: str) -> str:
+        if not symbol or "_" not in symbol:
+            return ""
+        base, quote = symbol.rsplit("_", 1)
+        return f"{base}/{quote}:{quote}"
+
+    @staticmethod
+    def _as_float(value: Any, default: float = 0.0) -> float:
+        try:
+            return float(value)
+        except (TypeError, ValueError):
+            return default
 
     def _call_with_retry(
         self,
