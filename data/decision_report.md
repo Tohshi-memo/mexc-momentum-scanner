@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T23:21:11.141532+00:00
+- generated_at: 2026-07-11T23:26:13.051219+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8553**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-11T23:21:05.269689+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64058.3
-- Funnel: target 863 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-11T23:26:08.041762+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=63892.0
+- Funnel: target 863 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +24.88% | $10,939,873.71 |
-| CASHCAT/USDT:USDT | +18.13% | $1,942,935.37 |
-| EVAA/USDT:USDT | +14.13% | $24,685,882.20 |
-| TAC/USDT:USDT | +11.25% | $2,473,239.70 |
-| B/USDT:USDT | +7.59% | $49,091,291.30 |
+| SXT/USDT:USDT | +28.14% | $11,024,493.87 |
+| CASHCAT/USDT:USDT | +17.19% | $1,946,615.97 |
+| EVAA/USDT:USDT | +14.27% | $24,712,050.57 |
+| FHE/USDT:USDT | +10.76% | $1,004,396.95 |
+| TAC/USDT:USDT | +10.61% | $2,479,355.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +1.39% | +1.56% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.37% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.09% | +1.26% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.98% | +1.15% |
-| SXT/USDT:USDT | below_1h_threshold | +0.86% | +1.04% |
+| SXT/USDT:USDT | below_1h_threshold | +3.49% | +3.92% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.63% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.09% | +1.52% |
+| TAC/USDT:USDT | below_1h_threshold | +0.80% | +1.23% |
+| XMR/USDT:USDT | below_1h_threshold | +0.27% | +0.70% |
 
 ## 7. 次に見るべき不足
 
