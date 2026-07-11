@@ -27,6 +27,7 @@ elif _env_example_path.exists():
     )
 
 from core.analyzer import TechnicalAnalyzer
+from core.causal_adaptive_portfolio import CausalAdaptivePortfolio
 from core.executor import ExecutorFactory, ProposalBuilder, TradeProposal
 from core.experiment import ExperimentTracker, FilterSnapshot
 from core.fundamental import FundamentalAnalyzer
@@ -649,6 +650,7 @@ def main() -> None:
     live_portfolio       = LivePortfolio()
     safe_adaptive_portfolio = SafeAdaptivePortfolio()
     robust_adaptive_portfolio = RobustAdaptivePortfolio()
+    causal_adaptive_portfolio = CausalAdaptivePortfolio()
     live_filter          = LiveTradeFilter()
     strategy_ranker      = StrategyRanker(experiment_tracker)
     live_strategy        = LiveStrategyBuilder(
@@ -694,6 +696,10 @@ def main() -> None:
                 robust_adaptive_portfolio.update()
             except Exception as e:
                 logger.warning("Failed to update robust adaptive portfolio: %s", e)
+            try:
+                causal_adaptive_portfolio.update()
+            except Exception as e:
+                logger.warning("Failed to update causal adaptive portfolio: %s", e)
             # シャドウトレードの集計レポートを再生成
             # （Claude が次回セッションでフィルター粒度を再評価するための入力）
             if generate_experiment_report_enabled:

@@ -234,17 +234,29 @@ class SafeAdaptivePortfolio:
         start_dt = _parse_dt(self._state.get("started_at")) or datetime.now(timezone.utc)
         applied_keys = self._applied_keys()
 
+        pending = [
+            trade
+            for trade in closed
+            if _trade_key(trade) not in applied_keys
+            and (_parse_dt(trade.get("detected_at")) or start_dt) >= start_dt
+        ]
+        pending.sort(
+            key=lambda trade: (
+                _parse_dt(trade.get("outcome_at"))
+                or _parse_dt(trade.get("detected_at"))
+                or start_dt
+            )
+        )
+
         applied = 0
         skipped = 0
-        for idx, trade in enumerate(closed):
+        for trade in pending:
             key = _trade_key(trade)
-            if key in applied_keys:
-                continue
             detected = _parse_dt(trade.get("detected_at"))
             if detected is None or detected < start_dt:
                 continue
 
-            history = closed[:idx]
+            history = self._history_available_at(closed, detected)
             decision = self._select_strategy(history)
             if not decision.get("strategy"):
                 self._record_skip(trade, key, decision.get("reason", "no_strategy"), decision)
@@ -277,6 +289,26 @@ class SafeAdaptivePortfolio:
         self._refresh_summary()
         self.save()
         return {"enabled": True, "applied": applied, "skipped": skipped}
+
+    @staticmethod
+    def _history_available_at(
+        trades: list[dict[str, Any]],
+        detected_at: datetime,
+    ) -> list[dict[str, Any]]:
+        """Return only outcomes that were knowable at signal detection time."""
+        available: list[tuple[datetime, dict[str, Any]]] = []
+        for trade in trades:
+            prior_detected = _parse_dt(trade.get("detected_at"))
+            closed_at = _parse_dt(trade.get("outcome_at"))
+            if (
+                prior_detected is not None
+                and prior_detected < detected_at
+                and closed_at is not None
+                and closed_at <= detected_at
+            ):
+                available.append((closed_at, trade))
+        available.sort(key=lambda item: item[0])
+        return [trade for _, trade in available]
 
     def save(self) -> None:
         self._file.parent.mkdir(parents=True, exist_ok=True)

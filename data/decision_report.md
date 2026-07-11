@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T09:01:06.079612+00:00
+- generated_at: 2026-07-11T09:04:16.599982+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8532**
 
@@ -60,7 +60,15 @@
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: VANRY/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.35% 残高後 $105.11
 
-## 5. Latest Market Context
+## 5. Causal Adaptive DryRun ($100)
+
+- 残高: **$100.00** / 初期 $100.00 (+0.00%)
+- 確定: 0件 (Win 0 / Loss 0 / Flat 0) / pending 0件 / skip 0件
+- 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 状態: 新しい$100口座を開始済み。開始後のシグナルを待っています。
+
+## 6. Latest Market Context
 
 - 更新: 2026-07-11T09:01:01.363836+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h +0.00% price=64241.3
@@ -87,7 +95,7 @@
 | BEAT/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
 | XPIN/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
 
-## 6. 次に見るべき不足
+## 7. 次に見るべき不足
 
 - LIMIT戦略は期待値が高く出やすいので、実行するならpending注文/約定待ち/未約定失効をlive側で実装してから昇格。
 - near miss銘柄の1h/4h後リターンを保存すると、閾値を5%固定にするべきか判断しやすい。

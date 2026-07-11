@@ -36,6 +36,7 @@ DEFAULT_OUTPUT = Path("data/decision_report.md")
 LIVE_PORTFOLIO_FILE = Path("data/live_portfolio.json")
 SAFE_ADAPTIVE_FILE = Path("data/safe_adaptive_portfolio.json")
 ROBUST_ADAPTIVE_FILE = Path("data/robust_adaptive_portfolio.json")
+CAUSAL_ADAPTIVE_FILE = Path("data/causal_adaptive_portfolio.json")
 MARKET_CONTEXT_FILE = Path("data/market_context.json")
 
 
@@ -269,12 +270,74 @@ def _robust_adaptive_section(path: Path) -> list[str]:
     return lines
 
 
+def _causal_adaptive_section(path: Path) -> list[str]:
+    data = _load_json(path)
+    if not data:
+        return [
+            "## 5. Causal Adaptive DryRun ($100)",
+            "",
+            "- 状態: `data/causal_adaptive_portfolio.json` はまだありません。",
+            "",
+        ]
+
+    initial = float(data.get("initial_capital") or 0.0)
+    balance = float(data.get("balance") or 0.0)
+    trades = data.get("trades") if isinstance(data.get("trades"), list) else []
+    summary = data.get("summary") if isinstance(data.get("summary"), dict) else {}
+    config = data.get("config") if isinstance(data.get("config"), dict) else {}
+    decision = data.get("last_decision") if isinstance(data.get("last_decision"), dict) else {}
+    signals = data.get("signals") if isinstance(data.get("signals"), dict) else {}
+    pending = sum(
+        1
+        for signal in signals.values()
+        if isinstance(signal, dict) and signal.get("status") == "pending"
+    )
+    strategy = decision.get("strategy") or "見送り"
+    reason = decision.get("reason") or "n/a"
+    score = decision.get("causal_score")
+    score_text = f"{float(score):+.6f}" if score is not None else "n/a"
+    ret = (balance - initial) / initial * 100 if initial > 0 else 0.0
+    latest = trades[-1] if trades else None
+
+    lines = [
+        "## 5. Causal Adaptive DryRun ($100)",
+        "",
+        f"- 残高: **{_fmt_usd(balance)}** / 初期 {_fmt_usd(initial)} ({_fmt_pct(ret)})",
+        (
+            f"- 確定: {len(trades)}件 "
+            f"(Win {summary.get('wins', 0)} / Loss {summary.get('losses', 0)} / Flat {summary.get('flat', 0)}) "
+            f"/ pending {pending}件 / skip {data.get('skipped_count', 0)}件"
+        ),
+        "- 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定",
+        (
+            f"- 次の候補: `{strategy}` ({reason}) / causal_score {score_text} "
+            f"/ risk {float(config.get('risk_pct') or 0.0):.3f}% "
+            f"/ cost {float(config.get('cost_pct') or 0.0):.2f}% "
+            f"/ batch最大 {int(config.get('max_trades_per_signal_batch') or 0)}件 "
+            f"/ open risk上限 {float(config.get('max_open_risk_pct') or 0.0):.2f}% "
+            f"/ DD stop {float(config.get('max_portfolio_dd_pct') or 0.0):.1f}%"
+        ),
+    ]
+    if latest:
+        lines.append(
+            "- 最新: "
+            f"{latest.get('symbol', '?')} `{latest.get('strategy', '?')}` "
+            f"{latest.get('outcome', '?')} "
+            f"account {_fmt_pct(float(latest.get('account_return_pct') or 0.0))} "
+            f"残高後 {_fmt_usd(float(latest.get('balance_after') or 0.0))}"
+        )
+    else:
+        lines.append("- 状態: 新しい$100口座を開始済み。開始後のシグナルを待っています。")
+    lines.append("")
+    return lines
+
+
 def _market_context_section(path: Path) -> list[str]:
     data = _load_json(path)
     records = data.get("records") if data else None
     if not isinstance(records, list) or not records:
         return [
-            "## 5. Latest Market Context",
+            "## 6. Latest Market Context",
             "",
             "- 状態: `data/market_context.json` はまだ蓄積中です。",
             "",
@@ -292,7 +355,7 @@ def _market_context_section(path: Path) -> list[str]:
     top_by_24h = scan.get("top_by_24h") or []
 
     lines = [
-        "## 5. Latest Market Context",
+        "## 6. Latest Market Context",
         "",
         f"- 更新: {latest.get('timestamp', 'n/a')} / 保存件数 {len(records)}/{data.get('max_records', 'n/a')}",
         (
@@ -431,9 +494,10 @@ def generate_report(
     lines += _portfolio_section(LIVE_PORTFOLIO_FILE)
     lines += _safe_adaptive_section(SAFE_ADAPTIVE_FILE)
     lines += _robust_adaptive_section(ROBUST_ADAPTIVE_FILE)
+    lines += _causal_adaptive_section(CAUSAL_ADAPTIVE_FILE)
     lines += _market_context_section(MARKET_CONTEXT_FILE)
     lines += [
-        "## 6. 次に見るべき不足",
+        "## 7. 次に見るべき不足",
         "",
         "- LIMIT戦略は期待値が高く出やすいので、実行するならpending注文/約定待ち/未約定失効をlive側で実装してから昇格。",
         "- near miss銘柄の1h/4h後リターンを保存すると、閾値を5%固定にするべきか判断しやすい。",
