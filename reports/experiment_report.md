@@ -1,6 +1,6 @@
 # Filter Granularity Experiment Report
 
-- source: `data/experiments.json` + 8031 archived from `data/archive/`
+- source: `data\experiments.json` + 8031 archived from `data/archive/`
 - closed shadow trades: **8531** (hot 500 + archive 8031)
 
 シャドウトレードは『現行 STRICT フィルターを通ったか否かに関わらず』
