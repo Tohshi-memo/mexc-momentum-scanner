@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-11T10:31:07.914286+00:00
+- generated_at: 2026-07-11T10:36:07.830465+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8532**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-11T10:31:01.819844+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64153.1
-- Funnel: target 862 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-11T10:36:01.773580+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64143.5
+- Funnel: target 862 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.1 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +24.10% | $1,416,762.65 |
-| HMSTR/USDT:USDT | +20.98% | $1,316,181.37 |
-| XPIN/USDT:USDT | +20.50% | $1,975,586.81 |
-| BEAT/USDT:USDT | +19.60% | $28,789,218.64 |
-| ANSEM/USDT:USDT | +15.53% | $7,666,223.04 |
+| CASHCAT/USDT:USDT | +25.83% | $1,443,925.51 |
+| XPIN/USDT:USDT | +21.46% | $1,984,083.11 |
+| HMSTR/USDT:USDT | +21.45% | $1,330,390.55 |
+| BEAT/USDT:USDT | +19.16% | $28,980,371.67 |
+| ANSEM/USDT:USDT | +14.86% | $7,680,033.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.25% | +4.23% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.31% | +3.30% |
-| MMT/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
-| B3/USDT:USDT | below_1h_threshold | +1.83% | +1.81% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.37% | +1.36% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.07% | +3.07% |
+| MMT/USDT:USDT | below_1h_threshold | +2.59% | +2.59% |
+| B3/USDT:USDT | below_1h_threshold | +2.05% | +2.05% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.74% | +1.74% |
+| ARB/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
 
 ## 7. 次に見るべき不足
 
