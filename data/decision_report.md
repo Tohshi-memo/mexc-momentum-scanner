@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T23:46:02.991503+00:00
+- generated_at: 2026-07-12T23:51:07.304390+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8618**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.00** / 初期 $100.00 (-1.00%)
-- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 59件
+- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 60件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000483 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T23:45:57.225133+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63760.0
-- Funnel: target 863 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-12T23:51:00.712941+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=63750.6
+- Funnel: target 863 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +39.44% | $3,584,001.36 |
-| BLAST/USDT:USDT | +13.43% | $1,828,741.88 |
-| ANSEM/USDT:USDT | +11.43% | $4,118,531.44 |
-| PIPPIN/USDT:USDT | +3.75% | $7,426,882.84 |
-| SYN/USDT:USDT | +3.74% | $3,023,705.06 |
+| DODO/USDT:USDT | +36.93% | $3,653,290.95 |
+| BLAST/USDT:USDT | +14.21% | $1,842,494.11 |
+| ANSEM/USDT:USDT | +13.92% | $4,159,607.50 |
+| PIPPIN/USDT:USDT | +3.38% | $7,454,337.51 |
+| SYN/USDT:USDT | +3.25% | $3,026,556.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +4.41% | +4.56% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.83% | +0.98% |
-| UB/USDT:USDT | below_1h_threshold | +0.82% | +0.97% |
-| EDGE/USDT:USDT | below_1h_threshold | +0.73% | +0.88% |
-| BASED/USDT:USDT | below_1h_threshold | +0.59% | +0.74% |
+| BILL/USDT:USDT | below_1h_threshold | +2.74% | +2.90% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.97% | +1.13% |
+| APE/USDT:USDT | below_1h_threshold | +0.86% | +1.02% |
+| UB/USDT:USDT | below_1h_threshold | +0.65% | +0.82% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.53% | +0.69% |
 
 ## 7. 次に見るべき不足
 
