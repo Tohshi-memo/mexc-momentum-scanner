@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T21:01:06.974443+00:00
+- generated_at: 2026-07-12T21:06:06.729767+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8608**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T21:01:01.956260+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64173.5
+- 更新: 2026-07-12T21:06:00.472948+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64199.0
 - Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +6.91% | $20,300,896.23 |
-| PIPPIN/USDT:USDT | +6.03% | $6,505,985.59 |
-| FHE/USDT:USDT | +5.12% | $2,885,282.08 |
-| BILL/USDT:USDT | +4.11% | $8,933,078.73 |
-| ALLO/USDT:USDT | +4.08% | $17,034,894.79 |
+| PIPPIN/USDT:USDT | +7.02% | $6,543,443.30 |
+| T/USDT:USDT | +6.58% | $20,347,934.63 |
+| FHE/USDT:USDT | +5.63% | $2,896,312.95 |
+| ALLO/USDT:USDT | +4.44% | $17,061,690.34 |
+| BLAST/USDT:USDT | +4.23% | $1,167,270.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
-| 2Z/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.17% | +0.16% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.16% |
-| LDO/USDT:USDT | below_1h_threshold | +0.16% | +0.15% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.09% | +1.04% |
+| BLAST/USDT:USDT | below_1h_threshold | +0.84% | +0.80% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.75% | +0.71% |
+| LDO/USDT:USDT | below_1h_threshold | +0.68% | +0.63% |
+| UNI/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
 
 ## 7. 次に見るべき不足
 
