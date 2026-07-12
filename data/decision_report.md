@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T00:16:28.175325+00:00
+- generated_at: 2026-07-12T00:21:11.755321+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8553**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T00:16:22.005038+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63798.3
+- 更新: 2026-07-12T00:21:05.509717+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63817.8
 - Funnel: target 863 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +25.38% | $11,889,911.09 |
-| EVAA/USDT:USDT | +16.42% | $23,157,692.58 |
-| CASHCAT/USDT:USDT | +11.88% | $1,998,567.79 |
-| TAC/USDT:USDT | +10.08% | $2,455,856.78 |
-| FHE/USDT:USDT | +9.16% | $1,182,416.09 |
+| SXT/USDT:USDT | +25.79% | $11,947,455.19 |
+| TAC/USDT:USDT | +10.90% | $2,461,709.79 |
+| CASHCAT/USDT:USDT | +10.55% | $2,006,166.34 |
+| FHE/USDT:USDT | +8.20% | $1,196,137.13 |
+| XPIN/USDT:USDT | +5.73% | $2,372,341.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.43% | +4.40% |
-| B/USDT:USDT | below_1h_threshold | +2.63% | +2.61% |
-| US/USDT:USDT | below_1h_threshold | +2.31% | +2.29% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.28% | +2.26% |
-| TAC/USDT:USDT | below_1h_threshold | +1.62% | +1.59% |
+| TAC/USDT:USDT | below_1h_threshold | +2.32% | +2.27% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.52% | +1.47% |
+| XPIN/USDT:USDT | below_1h_threshold | +1.27% | +1.22% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
+| US/USDT:USDT | below_1h_threshold | +1.12% | +1.06% |
 
 ## 7. 次に見るべき不足
 
