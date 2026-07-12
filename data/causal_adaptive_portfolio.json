@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 99.51692621652643,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-12T01:21:08.778508+00:00",
+  "updated_at": "2026-07-12T01:26:11.360955+00:00",
   "high_watermark": 100.39228961245912,
   "max_drawdown_pct": 1.059581297614244,
   "loss_streak": 5,
@@ -4468,6 +4468,103 @@
       },
       "settled_at": "2026-07-12T00:35:29.246275+00:00",
       "outcome": "SL_HIT"
+    },
+    "CASHCAT/USDT:USDT|2026-07-12T01:26:06.448849+00:00": {
+      "key": "CASHCAT/USDT:USDT|2026-07-12T01:26:06.448849+00:00",
+      "symbol": "CASHCAT/USDT:USDT",
+      "detected_at": "2026-07-12T01:26:06.448849+00:00",
+      "registered_at": "2026-07-12T01:26:11.302677+00:00",
+      "signal_batch": "2026-07-12T01:26Z",
+      "status": "pending",
+      "strategy": "MARKET",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 5.730179735082465,
+      "decision": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.00030489387218827493,
+        "robust_score": 0.00030489387218827493,
+        "causal_history_count": 8556,
+        "fast": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.7301525395089398,
+          "effective_ev_pct": 0.7301525395089398,
+          "avg_log_return": 0.00035295584293809987,
+          "geometric_return_pct": 0.03530181391806497,
+          "avg_account_return_pct": 0.03558042253135316,
+          "max_drawdown_pct": 1.9155592982515652,
+          "max_loss_streak": 10
+        },
+        "recent": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.7301525395089398,
+          "effective_ev_pct": 0.7301525395089398,
+          "avg_log_return": 0.00035295584293809987,
+          "geometric_return_pct": 0.03530181391806497,
+          "avg_account_return_pct": 0.03558042253135316,
+          "max_drawdown_pct": 1.9155592982515652,
+          "max_loss_streak": 10
+        },
+        "mid": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 200,
+          "filled": 200,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.5764994836281122,
+          "effective_ev_pct": 0.5764994836281122,
+          "avg_log_return": 0.0003139318748189232,
+          "geometric_return_pct": 0.03139811565868733,
+          "avg_account_return_pct": 0.03170241917773211,
+          "max_drawdown_pct": 1.9155592982516032,
+          "max_loss_streak": 10
+        },
+        "long": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.16072238130774538,
+          "effective_ev_pct": 0.16072238130774538,
+          "avg_log_return": 0.00011059064084428693,
+          "geometric_return_pct": 0.011059675621472032,
+          "avg_account_return_pct": 0.011352464529537157,
+          "max_drawdown_pct": 5.838877892900832,
+          "max_loss_streak": 15
+        },
+        "all": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.16072238130774538,
+          "effective_ev_pct": 0.16072238130774538,
+          "avg_log_return": 0.00011059064084428693,
+          "geometric_return_pct": 0.011059675621472032,
+          "avg_account_return_pct": 0.011352464529537157,
+          "max_drawdown_pct": 5.838877892900832,
+          "max_loss_streak": 15
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 1.5657226498216805e-05
+          }
+        ]
+      }
     }
   },
   "causal_history": true
