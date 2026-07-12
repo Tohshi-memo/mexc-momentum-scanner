@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T04:51:10.200927+00:00
+- generated_at: 2026-07-12T04:56:07.578304+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8570**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T04:51:03.929116+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=63960.1
+- 更新: 2026-07-12T04:56:02.614453+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=63978.6
 - Funnel: target 863 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +24.89% | $14,874,474.48 |
-| B/USDT:USDT | +18.19% | $50,245,559.87 |
-| CASHCAT/USDT:USDT | +18.02% | $2,178,425.71 |
-| ELSA/USDT:USDT | +12.91% | $1,224,430.30 |
-| T/USDT:USDT | +10.48% | $14,487,579.24 |
+| SXT/USDT:USDT | +26.44% | $14,898,300.64 |
+| CASHCAT/USDT:USDT | +18.29% | $2,180,621.18 |
+| B/USDT:USDT | +15.54% | $50,365,946.94 |
+| ELSA/USDT:USDT | +12.93% | $1,229,793.83 |
+| T/USDT:USDT | +11.52% | $14,530,900.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPIN/USDT:USDT | below_1h_threshold | +3.03% | +3.40% |
-| BASED/USDT:USDT | below_1h_threshold | +2.30% | +2.67% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.09% | +2.47% |
-| US/USDT:USDT | below_1h_threshold | +1.71% | +2.09% |
-| ELSA/USDT:USDT | below_1h_threshold | +1.47% | +1.84% |
+| BASED/USDT:USDT | below_1h_threshold | +2.53% | +2.87% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.09% | +2.44% |
+| XPIN/USDT:USDT | below_1h_threshold | +1.85% | +2.19% |
+| US/USDT:USDT | below_1h_threshold | +1.66% | +2.01% |
+| VANRY/USDT:USDT | below_1h_threshold | +1.54% | +1.88% |
 
 ## 7. 次に見るべき不足
 
