@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T04:46:18.879701+00:00
+- generated_at: 2026-07-12T04:51:10.200927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8570**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T04:46:10.776967+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=64001.5
-- Funnel: target 863 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1
+- 更新: 2026-07-12T04:51:03.929116+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=63960.1
+- Funnel: target 863 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +25.81% | $14,844,228.25 |
-| B/USDT:USDT | +18.63% | $50,146,762.06 |
-| CASHCAT/USDT:USDT | +16.08% | $2,175,184.13 |
-| ELSA/USDT:USDT | +13.94% | $1,209,343.16 |
-| FHE/USDT:USDT | +11.38% | $1,767,956.72 |
+| SXT/USDT:USDT | +24.89% | $14,874,474.48 |
+| B/USDT:USDT | +18.19% | $50,245,559.87 |
+| CASHCAT/USDT:USDT | +18.02% | $2,178,425.71 |
+| ELSA/USDT:USDT | +12.91% | $1,224,430.30 |
+| T/USDT:USDT | +10.48% | $14,487,579.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +2.39% | +2.70% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.19% | +2.50% |
-| US/USDT:USDT | below_1h_threshold | +1.49% | +1.80% |
-| HIGH/USDT:USDT | below_1h_threshold | +1.39% | +1.70% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.39% | +1.70% |
+| XPIN/USDT:USDT | below_1h_threshold | +3.03% | +3.40% |
+| BASED/USDT:USDT | below_1h_threshold | +2.30% | +2.67% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.09% | +2.47% |
+| US/USDT:USDT | below_1h_threshold | +1.71% | +2.09% |
+| ELSA/USDT:USDT | below_1h_threshold | +1.47% | +1.84% |
 
 ## 7. 次に見るべき不足
 
