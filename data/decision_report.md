@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T01:56:23.514418+00:00
+- generated_at: 2026-07-12T02:01:09.711195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8559**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T01:56:12.660979+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=64103.8
-- Funnel: target 863 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.5 >= 65=1, 4h RSI 69.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-12T02:01:03.583928+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64085.0
+- Funnel: target 863 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +18.29% | $2,103,294.04 |
-| SXT/USDT:USDT | +17.92% | $12,971,192.63 |
-| BILL/USDT:USDT | +8.39% | $1,210,390.90 |
-| FHE/USDT:USDT | +7.17% | $1,430,013.34 |
-| T/USDT:USDT | +5.58% | $12,101,061.66 |
+| SXT/USDT:USDT | +19.33% | $13,001,313.65 |
+| CASHCAT/USDT:USDT | +18.02% | $2,083,396.92 |
+| BILL/USDT:USDT | +8.77% | $1,240,982.46 |
+| FHE/USDT:USDT | +6.83% | $1,426,333.54 |
+| BSB/USDT:USDT | +5.76% | $2,397,354.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.39% | +3.91% |
-| BILL/USDT:USDT | below_1h_threshold | +3.17% | +2.69% |
-| BSB/USDT:USDT | below_1h_threshold | +2.93% | +2.45% |
-| VVV/USDT:USDT | below_1h_threshold | +2.40% | +1.92% |
-| LIT/USDT:USDT | below_1h_threshold | +2.19% | +1.71% |
+| XPIN/USDT:USDT | below_1h_threshold | +1.12% | +1.15% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.94% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.35% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.29% | +0.32% |
+| SXT/USDT:USDT | below_1h_threshold | +0.17% | +0.20% |
 
 ## 7. 次に見るべき不足
 
