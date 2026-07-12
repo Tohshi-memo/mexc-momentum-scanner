@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T22:51:13.710502+00:00
+- generated_at: 2026-07-12T22:56:24.188989+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8615**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T22:51:06.273931+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=63669.2
-- Funnel: target 863 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.7 >= 65=1
+- 更新: 2026-07-12T22:56:15.286464+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=63800.6
+- Funnel: target 863 → liquid 137 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +44.29% | $3,010,268.76 |
-| BLAST/USDT:USDT | +30.05% | $1,528,139.18 |
-| PIPPIN/USDT:USDT | +5.11% | $7,197,610.94 |
-| FHE/USDT:USDT | +4.41% | $3,036,247.96 |
-| ANSEM/USDT:USDT | +3.86% | $4,006,587.61 |
+| DODO/USDT:USDT | +42.57% | $3,081,217.93 |
+| BLAST/USDT:USDT | +32.10% | $1,568,994.22 |
+| PIPPIN/USDT:USDT | +5.05% | $7,222,229.06 |
+| ANSEM/USDT:USDT | +4.94% | $4,021,363.80 |
+| FHE/USDT:USDT | +4.69% | $3,040,712.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +4.99% | +5.33% |
-| DODO/USDT:USDT | below_1h_threshold | +1.38% | +1.73% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.10% | +0.44% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.07% | +0.41% |
-| TWLOSTOCK/USDT:USDT | below_1h_threshold | +0.05% | +0.39% |
+| SYN/USDT:USDT | below_1h_threshold | +0.70% | +0.84% |
+| DODO/USDT:USDT | below_1h_threshold | +0.43% | +0.57% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.33% | +0.47% |
+| TWLOSTOCK/USDT:USDT | below_1h_threshold | +0.05% | +0.19% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.03% | +0.17% |
 
 ## 7. 次に見るべき不足
 
