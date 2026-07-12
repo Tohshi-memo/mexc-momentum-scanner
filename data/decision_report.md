@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T19:31:12.468695+00:00
+- generated_at: 2026-07-12T19:36:08.128662+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8608**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T19:31:04.963055+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64160.0
+- 更新: 2026-07-12T19:36:03.236798+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64140.8
 - Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +13.98% | $4,356,216.67 |
-| T/USDT:USDT | +4.61% | $20,089,265.33 |
-| ALLO/USDT:USDT | +4.38% | $16,806,429.16 |
-| UB/USDT:USDT | +4.07% | $1,071,432.54 |
-| BILL/USDT:USDT | +3.52% | $6,886,425.18 |
+| PIPPIN/USDT:USDT | +13.55% | $4,541,491.51 |
+| ALLO/USDT:USDT | +4.49% | $16,924,457.35 |
+| T/USDT:USDT | +4.36% | $20,111,489.76 |
+| UB/USDT:USDT | +3.81% | $1,075,424.85 |
+| CAP/USDT:USDT | +3.21% | $1,115,349.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +2.69% | +2.64% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.44% | +2.38% |
-| T/USDT:USDT | below_1h_threshold | +1.85% | +1.79% |
-| CRV/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
-| BILL/USDT:USDT | below_1h_threshold | +1.05% | +1.00% |
+| WLD/USDT:USDT | below_1h_threshold | +2.86% | +2.83% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.99% | +1.97% |
+| CRV/USDT:USDT | below_1h_threshold | +1.79% | +1.76% |
+| T/USDT:USDT | below_1h_threshold | +1.58% | +1.56% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.27% | +1.24% |
 
 ## 7. 次に見るべき不足
 
