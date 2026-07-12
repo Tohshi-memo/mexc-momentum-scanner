@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T01:01:13.112615+00:00
+- generated_at: 2026-07-12T01:06:04.204651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8558**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T01:01:05.918480+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63789.6
+- 更新: 2026-07-12T01:05:58.127711+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=63886.1
 - Funnel: target 863 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +22.02% | $12,480,861.46 |
-| CASHCAT/USDT:USDT | +8.89% | $2,031,501.86 |
-| CLO/USDT:USDT | +4.93% | $1,486,836.82 |
-| XPIN/USDT:USDT | +4.62% | $2,226,036.27 |
-| BILL/USDT:USDT | +4.57% | $1,154,350.59 |
+| SXT/USDT:USDT | +21.33% | $12,522,169.97 |
+| CASHCAT/USDT:USDT | +12.21% | $2,039,145.18 |
+| CLO/USDT:USDT | +4.93% | $1,489,713.45 |
+| XPIN/USDT:USDT | +4.72% | $2,227,540.94 |
+| VANRY/USDT:USDT | +3.88% | $1,372,567.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UKOIL/USDT:USDT | below_1h_threshold | +0.97% | +0.98% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.55% |
-| TAG/USDT:USDT | below_1h_threshold | +0.52% | +0.53% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.84% | +2.70% |
+| TAG/USDT:USDT | below_1h_threshold | +1.24% | +1.10% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.21% | +1.07% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.13% | +0.99% |
+| BSB/USDT:USDT | below_1h_threshold | +1.12% | +0.98% |
 
 ## 7. 次に見るべき不足
 
