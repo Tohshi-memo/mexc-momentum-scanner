@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T15:46:16.455533+00:00
+- generated_at: 2026-07-12T15:51:23.542496+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8598**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.00** / 初期 $100.00 (-1.00%)
-- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 44件
+- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 45件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T15:46:09.618225+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=64111.1
-- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- 更新: 2026-07-12T15:51:15.576230+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64143.5
+- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 80.0 >= 65=1, 4h RSI 71.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +34.22% | $14,775,978.49 |
-| SXT/USDT:USDT | +25.86% | $26,602,844.07 |
-| DEXE/USDT:USDT | +25.68% | $12,380,677.66 |
-| FHE/USDT:USDT | +21.98% | $2,561,347.33 |
-| BILL/USDT:USDT | +21.41% | $4,570,080.01 |
+| VELVET/USDT:USDT | +29.88% | $15,206,014.46 |
+| SXT/USDT:USDT | +26.45% | $26,713,638.94 |
+| DEXE/USDT:USDT | +26.08% | $12,453,281.10 |
+| BILL/USDT:USDT | +24.54% | $4,747,718.02 |
+| FHE/USDT:USDT | +21.35% | $2,583,114.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +4.72% | +4.82% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.20% | +4.29% |
-| BILL/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
-| FHE/USDT:USDT | below_1h_threshold | +2.34% | +2.44% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.85% | +1.95% |
+| FHE/USDT:USDT | below_1h_threshold | +1.77% | +1.82% |
+| BLAST/USDT:USDT | below_1h_threshold | +1.77% | +1.81% |
+| T/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
+| VANRY/USDT:USDT | below_1h_threshold | +1.09% | +1.14% |
+| CLO/USDT:USDT | below_1h_threshold | +0.89% | +0.94% |
 
 ## 7. 次に見るべき不足
 
