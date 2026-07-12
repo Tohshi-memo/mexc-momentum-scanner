@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T11:01:13.730200+00:00
+- generated_at: 2026-07-12T11:06:12.736598+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8587**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T11:01:06.469252+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63838.9
+- 更新: 2026-07-12T11:06:06.502048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63886.9
 - Funnel: target 863 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +26.99% | $21,131,292.25 |
-| SXT/USDT:USDT | +22.05% | $20,150,407.33 |
-| CLO/USDT:USDT | +18.37% | $1,125,902.47 |
-| VANRY/USDT:USDT | +15.59% | $3,207,560.99 |
-| DEXE/USDT:USDT | +15.21% | $7,056,901.00 |
+| T/USDT:USDT | +24.94% | $21,363,346.46 |
+| SXT/USDT:USDT | +22.48% | $20,209,990.69 |
+| CLO/USDT:USDT | +17.15% | $1,130,914.27 |
+| DEXE/USDT:USDT | +15.88% | $7,188,615.27 |
+| VANRY/USDT:USDT | +15.36% | $3,224,358.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.10% | +2.10% |
-| TLM/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
-| BANK/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
-| B/USDT:USDT | below_1h_threshold | +0.23% | +0.23% |
-| BSB/USDT:USDT | below_1h_threshold | +0.21% | +0.21% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.65% | +3.58% |
+| HIGH/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
+| TLM/USDT:USDT | below_1h_threshold | +0.93% | +0.85% |
+| FHE/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
 
 ## 7. 次に見るべき不足
 
