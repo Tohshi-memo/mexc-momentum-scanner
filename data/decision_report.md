@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T22:06:17.023407+00:00
+- generated_at: 2026-07-12T22:11:08.706613+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8611**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T22:06:09.615174+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=63721.8
+- 更新: 2026-07-12T22:11:02.413122+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=63783.4
 - Funnel: target 863 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +41.47% | $2,337,685.71 |
-| FHE/USDT:USDT | +6.48% | $2,954,066.41 |
-| PIPPIN/USDT:USDT | +5.97% | $6,968,253.92 |
-| BLAST/USDT:USDT | +5.80% | $1,209,435.43 |
-| T/USDT:USDT | +5.27% | $20,687,459.15 |
+| DODO/USDT:USDT | +40.61% | $2,383,100.38 |
+| BLAST/USDT:USDT | +6.91% | $1,212,208.69 |
+| PIPPIN/USDT:USDT | +6.22% | $7,010,729.83 |
+| FHE/USDT:USDT | +6.20% | $2,959,157.96 |
+| T/USDT:USDT | +3.89% | $20,731,395.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +1.30% | +1.56% |
-| SYN/USDT:USDT | below_1h_threshold | +0.48% | +0.74% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.17% | +0.43% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.12% | +0.38% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.10% | +0.36% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.30% | +1.47% |
+| SYN/USDT:USDT | below_1h_threshold | +0.54% | +0.71% |
+| BLAST/USDT:USDT | below_1h_threshold | +0.37% | +0.53% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.29% | +0.46% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.13% | +0.30% |
 
 ## 7. 次に見るべき不足
 
