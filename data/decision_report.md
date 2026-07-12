@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T03:21:12.507347+00:00
+- generated_at: 2026-07-12T03:26:09.906867+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8563**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.17** / 初期 $100.00 (-0.83%)
-- 確定: 26件 (Win 9 / Loss 17 / Flat 0) / pending 0件 / skip 7件
+- 確定: 26件 (Win 9 / Loss 17 / Flat 0) / pending 0件 / skip 8件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: T/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.17
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T03:21:05.252976+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64107.0
-- Funnel: target 863 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-12T03:26:04.916557+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64097.0
+- Funnel: target 863 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.2 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +27.75% | $13,852,731.87 |
-| CASHCAT/USDT:USDT | +18.85% | $2,116,871.59 |
-| T/USDT:USDT | +15.43% | $13,440,578.84 |
-| FHE/USDT:USDT | +12.47% | $1,582,049.43 |
-| BILL/USDT:USDT | +8.51% | $1,381,239.30 |
+| SXT/USDT:USDT | +27.75% | $13,877,439.15 |
+| CASHCAT/USDT:USDT | +18.18% | $2,122,368.08 |
+| T/USDT:USDT | +16.38% | $13,487,074.09 |
+| FHE/USDT:USDT | +14.52% | $1,609,290.60 |
+| BILL/USDT:USDT | +8.82% | $1,390,941.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| T/USDT:USDT | below_1h_threshold | +4.92% | +4.83% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.37% | +3.28% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.46% | +2.37% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.45% | +2.36% |
-| FHE/USDT:USDT | below_1h_threshold | +2.38% | +2.29% |
+| FHE/USDT:USDT | below_1h_threshold | +4.30% | +4.23% |
+| DEXE/USDT:USDT | below_1h_threshold | +4.05% | +3.97% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.31% | +3.24% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.23% | +3.16% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.84% | +2.76% |
 
 ## 7. 次に見るべき不足
 
