@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T20:56:12.178361+00:00
+- generated_at: 2026-07-12T21:01:06.974443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8608**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T20:56:06.621909+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64158.4
-- Funnel: target 863 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-12T21:01:01.956260+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64173.5
+- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +8.12% | $20,512,635.49 |
-| FHE/USDT:USDT | +7.18% | $2,920,715.70 |
-| PIPPIN/USDT:USDT | +6.40% | $6,505,431.12 |
-| BILL/USDT:USDT | +4.19% | $9,028,389.46 |
-| ALLO/USDT:USDT | +4.13% | $17,416,126.12 |
+| T/USDT:USDT | +6.91% | $20,300,896.23 |
+| PIPPIN/USDT:USDT | +6.03% | $6,505,985.59 |
+| FHE/USDT:USDT | +5.12% | $2,885,282.08 |
+| BILL/USDT:USDT | +4.11% | $8,933,078.73 |
+| ALLO/USDT:USDT | +4.08% | $17,034,894.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| T/USDT:USDT | below_1h_threshold | +4.48% | +4.54% |
-| US/USDT:USDT | below_1h_threshold | +3.66% | +3.73% |
-| BLAST/USDT:USDT | below_1h_threshold | +2.31% | +2.37% |
-| KORU/USDT:USDT | below_1h_threshold | +1.17% | +1.23% |
-| DOT/USDT:USDT | below_1h_threshold | +0.83% | +0.90% |
+| US/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
+| 2Z/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.17% | +0.16% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.16% | +0.16% |
+| LDO/USDT:USDT | below_1h_threshold | +0.16% | +0.15% |
 
 ## 7. 次に見るべき不足
 
