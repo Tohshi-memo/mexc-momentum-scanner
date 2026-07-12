@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T16:51:20.978446+00:00
+- generated_at: 2026-07-12T16:56:22.520854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8602**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$101.51** / 初期 $100.00 (+1.51%)
-- 確定トレード: 88件 (TP 30 / SL 57 / EXP 1)
-- 最新: BEAT/USDT:USDT SL_HIT PnL -4.00% 残高後 $101.51
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$102.22** / 初期 $100.00 (+2.22%)
+- 確定トレード: 89件 (TP 30 / SL 57 / EXP 2)
+- 最新: BSB/USDT:USDT EXPIRED PnL +5.08% 残高後 $102.22
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T16:51:11.250906+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64115.6
-- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-12T16:56:14.763436+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64101.2
+- Funnel: target 863 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +5.54% | $1,708,043.07 |
-| VANRY/USDT:USDT | +2.38% | $3,661,839.31 |
-| ZEC/USDT:USDT | +2.25% | $196,450,996.86 |
-| SXT/USDT:USDT | +1.98% | $28,913,142.44 |
-| BASED/USDT:USDT | +1.94% | $2,480,984.27 |
+| PIPPIN/USDT:USDT | +5.91% | $1,744,838.28 |
+| ZEC/USDT:USDT | +2.08% | $197,093,778.95 |
+| BASED/USDT:USDT | +1.94% | $2,490,647.25 |
+| T/USDT:USDT | +1.35% | $20,691,565.82 |
+| BXSTOCK/USDT:USDT | +1.29% | $2,600,096.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +2.60% | +2.65% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.23% | +2.29% |
-| SXT/USDT:USDT | below_1h_threshold | +1.95% | +2.01% |
-| BASED/USDT:USDT | below_1h_threshold | +1.83% | +1.88% |
-| LIT/USDT:USDT | below_1h_threshold | +1.52% | +1.57% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.08% | +2.16% |
+| BASED/USDT:USDT | below_1h_threshold | +1.95% | +2.03% |
+| T/USDT:USDT | below_1h_threshold | +1.36% | +1.43% |
+| SXT/USDT:USDT | below_1h_threshold | +1.29% | +1.37% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
 
 ## 7. 次に見るべき不足
 
