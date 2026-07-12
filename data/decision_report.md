@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T03:06:15.376373+00:00
+- generated_at: 2026-07-12T03:11:11.609365+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8562**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T03:06:07.919960+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64057.3
+- 更新: 2026-07-12T03:11:05.531617+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64018.1
 - Funnel: target 863 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +28.24% | $13,649,869.69 |
-| CASHCAT/USDT:USDT | +13.87% | $2,105,067.64 |
-| FHE/USDT:USDT | +10.42% | $1,561,465.13 |
-| T/USDT:USDT | +9.85% | $13,228,621.13 |
-| ELSA/USDT:USDT | +8.63% | $1,020,366.88 |
+| SXT/USDT:USDT | +25.76% | $13,766,179.30 |
+| CASHCAT/USDT:USDT | +16.30% | $2,109,298.88 |
+| FHE/USDT:USDT | +10.87% | $1,567,658.47 |
+| T/USDT:USDT | +9.80% | $13,277,014.67 |
+| ELSA/USDT:USDT | +9.23% | $1,025,829.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ELSA/USDT:USDT | below_1h_threshold | +2.01% | +2.00% |
-| HIGH/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
-| BSB/USDT:USDT | below_1h_threshold | +0.61% | +0.60% |
-| FHE/USDT:USDT | below_1h_threshold | +0.57% | +0.56% |
-| APE/USDT:USDT | below_1h_threshold | +0.44% | +0.43% |
+| ELSA/USDT:USDT | below_1h_threshold | +2.67% | +2.72% |
+| HIGH/USDT:USDT | below_1h_threshold | +2.09% | +2.14% |
+| XPL/USDT:USDT | below_1h_threshold | +1.28% | +1.33% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.15% | +1.20% |
+| FHE/USDT:USDT | below_1h_threshold | +0.93% | +0.98% |
 
 ## 7. 次に見るべき不足
 
