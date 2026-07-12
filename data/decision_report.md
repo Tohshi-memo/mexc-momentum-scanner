@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T05:41:16.157095+00:00
+- generated_at: 2026-07-12T05:46:20.498499+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8574**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.17** / 初期 $100.00 (-0.83%)
-- 確定: 26件 (Win 9 / Loss 17 / Flat 0) / pending 0件 / skip 20件
+- 確定: 26件 (Win 9 / Loss 17 / Flat 0) / pending 0件 / skip 21件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000214 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: T/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.17
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T05:41:09.835361+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63943.0
-- Funnel: target 863 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-12T05:46:11.265857+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63949.3
+- Funnel: target 863 → liquid 144 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +20.60% | $15,343,442.33 |
-| B/USDT:USDT | +19.08% | $49,424,694.33 |
-| CASHCAT/USDT:USDT | +15.36% | $2,149,795.82 |
-| VANRY/USDT:USDT | +13.81% | $1,442,104.36 |
-| BILL/USDT:USDT | +10.40% | $1,533,552.30 |
+| SXT/USDT:USDT | +20.71% | $15,368,577.12 |
+| B/USDT:USDT | +19.96% | $49,519,473.71 |
+| CASHCAT/USDT:USDT | +14.42% | $2,156,200.27 |
+| VANRY/USDT:USDT | +12.04% | $1,485,161.93 |
+| BILL/USDT:USDT | +10.40% | $1,539,112.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.64% | +3.69% |
-| HIGH/USDT:USDT | below_1h_threshold | +2.83% | +2.88% |
-| TAC/USDT:USDT | below_1h_threshold | +2.76% | +2.81% |
-| MMT/USDT:USDT | below_1h_threshold | +1.48% | +1.53% |
-| BASED/USDT:USDT | below_1h_threshold | +1.40% | +1.45% |
+| TLM/USDT:USDT | below_1h_threshold | +4.64% | +4.68% |
+| TAC/USDT:USDT | below_1h_threshold | +3.42% | +3.46% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.50% | +1.54% |
+| DYDX/USDT:USDT | below_1h_threshold | +1.46% | +1.50% |
+| HIGH/USDT:USDT | below_1h_threshold | +1.17% | +1.21% |
 
 ## 7. 次に見るべき不足
 
