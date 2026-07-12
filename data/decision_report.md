@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T18:21:08.752463+00:00
+- generated_at: 2026-07-12T18:26:10.032669+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8605**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.00** / 初期 $100.00 (-1.00%)
-- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 49件
+- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 50件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000288 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T18:21:02.785280+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64003.9
-- Funnel: target 863 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-12T18:26:03.666737+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=63997.8
+- Funnel: target 863 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.2 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +7.39% | $2,641,639.97 |
-| BILL/USDT:USDT | +4.27% | $6,008,041.92 |
-| T/USDT:USDT | +3.87% | $19,846,885.52 |
-| ALLO/USDT:USDT | +3.73% | $15,363,046.62 |
-| TAC/USDT:USDT | +2.94% | $2,077,970.41 |
+| PIPPIN/USDT:USDT | +7.51% | $2,677,664.66 |
+| BILL/USDT:USDT | +4.67% | $6,077,364.36 |
+| T/USDT:USDT | +4.30% | $19,889,516.64 |
+| ALLO/USDT:USDT | +4.15% | $15,549,830.56 |
+| CAP/USDT:USDT | +3.32% | $1,033,847.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.68% | +4.75% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.37% | +2.45% |
-| CAP/USDT:USDT | below_1h_threshold | +2.33% | +2.40% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.18% | +2.25% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.60% | +1.67% |
+| CAP/USDT:USDT | below_1h_threshold | +3.09% | +3.17% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.63% | +2.71% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.39% | +2.47% |
+| SYN/USDT:USDT | below_1h_threshold | +1.60% | +1.68% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.60% | +1.68% |
 
 ## 7. 次に見るべき不足
 
