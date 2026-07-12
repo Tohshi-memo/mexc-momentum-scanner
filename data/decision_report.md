@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T16:01:18.002531+00:00
+- generated_at: 2026-07-12T16:06:15.276497+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8598**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.00** / 初期 $100.00 (-1.00%)
-- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 45件
+- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 46件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T16:01:12.968003+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64148.1
-- Funnel: target 863 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-12T16:06:06.815557+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64119.9
+- Funnel: target 863 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +0.75% | $3,557,112.03 |
-| CASHCAT/USDT:USDT | +0.57% | $1,921,931.23 |
-| TAG/USDT:USDT | +0.41% | $3,511,275.68 |
-| SYN/USDT:USDT | +0.35% | $2,871,443.61 |
-| 2Z/USDT:USDT | +0.35% | $1,138,604.90 |
+| EVAA/USDT:USDT | +5.82% | $30,440,960.19 |
+| PIPPIN/USDT:USDT | +3.69% | $1,224,199.17 |
+| ANSEM/USDT:USDT | +2.03% | $4,055,600.30 |
+| 2Z/USDT:USDT | +1.28% | $1,142,288.20 |
+| CASHCAT/USDT:USDT | +1.03% | $1,923,255.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
-| TAG/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
-| FHE/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
-| 2Z/USDT:USDT | below_1h_threshold | +0.35% | +0.36% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.88% | +3.93% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
+| 2Z/USDT:USDT | below_1h_threshold | +1.35% | +1.40% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
+| BASED/USDT:USDT | below_1h_threshold | +0.57% | +0.62% |
 
 ## 7. 次に見るべき不足
 
