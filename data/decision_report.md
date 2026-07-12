@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T16:36:18.658193+00:00
+- generated_at: 2026-07-12T16:41:18.698227+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8600**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T16:36:09.413823+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64099.7
-- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.5 >= 65=1
+- 更新: 2026-07-12T16:41:09.298038+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64081.9
+- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1, 4h RSI 74.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +8.96% | $1,266,717.04 |
-| PIPPIN/USDT:USDT | +5.79% | $1,637,507.95 |
-| SXT/USDT:USDT | +4.08% | $28,159,315.51 |
-| EVAA/USDT:USDT | +2.29% | $31,083,327.20 |
-| ZEC/USDT:USDT | +2.25% | $193,462,221.64 |
+| MAGMA/USDT:USDT | +6.36% | $1,369,489.25 |
+| PIPPIN/USDT:USDT | +5.73% | $1,656,036.09 |
+| SXT/USDT:USDT | +5.45% | $28,352,718.62 |
+| T/USDT:USDT | +3.21% | $20,530,819.32 |
+| ZEC/USDT:USDT | +2.08% | $194,252,065.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +4.27% | +4.35% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.45% | +2.52% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.27% | +2.35% |
-| T/USDT:USDT | below_1h_threshold | +1.36% | +1.44% |
-| FHE/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
+| T/USDT:USDT | below_1h_threshold | +3.22% | +3.32% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.08% | +2.19% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.83% | +1.93% |
+| LIT/USDT:USDT | below_1h_threshold | +1.31% | +1.42% |
+| 2Z/USDT:USDT | below_1h_threshold | +1.08% | +1.18% |
 
 ## 7. 次に見るべき不足
 
