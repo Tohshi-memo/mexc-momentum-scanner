@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 102.53661626248292,
+  "balance": 102.0239331811705,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -1704,6 +1704,27 @@
       "strategy_entry_style": "MARKET",
       "strategy_boosters": [],
       "strategy_score": 0.0
+    },
+    {
+      "symbol": "VANRY/USDT:USDT",
+      "detected_at": "2026-07-12T03:56:08.306141+00:00",
+      "closed_at": "2026-07-12T05:10:33.528033+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -4.0,
+      "sl_pct": 4.0,
+      "risk_pct": 0.5,
+      "notional_usdt": 12.817077032810364,
+      "pnl_usdt": -0.5126830813124146,
+      "balance_before": 102.53661626248292,
+      "balance_after": 102.0239331811705,
+      "strategy_tier": "B",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "OBV_BEAR_DIV",
+        "daily_RED"
+      ],
+      "strategy_score": 0.35
     }
   ]
 }
