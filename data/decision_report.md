@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T17:56:05.486105+00:00
+- generated_at: 2026-07-12T18:01:04.825630+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8603**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T17:56:00.409726+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64039.1
-- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-12T18:00:59.986977+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64050.4
+- Funnel: target 863 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +7.27% | $2,393,067.23 |
-| T/USDT:USDT | +4.06% | $20,006,263.51 |
-| FHE/USDT:USDT | +2.67% | $2,825,400.01 |
-| ZEC/USDT:USDT | +2.53% | $201,125,109.13 |
-| TAC/USDT:USDT | +2.43% | $2,127,190.01 |
+| PIPPIN/USDT:USDT | +7.64% | $2,381,845.60 |
+| TAC/USDT:USDT | +3.90% | $2,061,541.69 |
+| T/USDT:USDT | +3.89% | $19,569,178.74 |
+| ZEC/USDT:USDT | +2.49% | $196,740,224.10 |
+| PYTH/USDT:USDT | +2.19% | $1,673,129.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +3.52% | +3.69% |
-| TAC/USDT:USDT | below_1h_threshold | +3.26% | +3.42% |
-| FHE/USDT:USDT | below_1h_threshold | +3.02% | +3.19% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.76% | +2.93% |
-| T/USDT:USDT | below_1h_threshold | +1.95% | +2.12% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.55% | +0.55% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.51% | +0.51% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
+| TAC/USDT:USDT | below_1h_threshold | +0.43% | +0.43% |
 
 ## 7. 次に見るべき不足
 
