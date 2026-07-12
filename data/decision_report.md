@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-12T16:31:13.309868+00:00
+- generated_at: 2026-07-12T16:36:18.658193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8600**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.00** / 初期 $100.00 (-1.00%)
-- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 47件
+- 確定: 27件 (Win 9 / Loss 18 / Flat 0) / pending 0件 / skip 49件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000328 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-12T16:31:06.988998+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64142.9
-- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.2 >= 65=1
+- 更新: 2026-07-12T16:36:09.413823+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64099.7
+- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +5.20% | $28,060,339.79 |
-| EVAA/USDT:USDT | +4.29% | $31,019,746.83 |
-| PIPPIN/USDT:USDT | +4.06% | $1,548,746.84 |
-| MAGMA/USDT:USDT | +3.74% | $1,168,566.59 |
-| ZEC/USDT:USDT | +2.61% | $191,676,120.99 |
+| MAGMA/USDT:USDT | +8.96% | $1,266,717.04 |
+| PIPPIN/USDT:USDT | +5.79% | $1,637,507.95 |
+| SXT/USDT:USDT | +4.08% | $28,159,315.51 |
+| EVAA/USDT:USDT | +2.29% | $31,083,327.20 |
+| ZEC/USDT:USDT | +2.25% | $193,462,221.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.36% | +4.37% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +4.00% | +4.02% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.74% | +3.75% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.59% | +2.60% |
-| 2Z/USDT:USDT | below_1h_threshold | +1.92% | +1.93% |
+| SXT/USDT:USDT | below_1h_threshold | +4.27% | +4.35% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.45% | +2.52% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.27% | +2.35% |
+| T/USDT:USDT | below_1h_threshold | +1.36% | +1.44% |
+| FHE/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
 
 ## 7. 次に見るべき不足
 
