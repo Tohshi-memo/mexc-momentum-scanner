@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T06:36:12.748381+00:00
+- generated_at: 2026-07-13T06:41:16.131403+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8623**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T06:36:06.407699+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=62778.9
+- 更新: 2026-07-13T06:41:09.773625+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=62775.7
 - Funnel: target 863 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1
+- Strict後reject: 4h RSI 88.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XEC/USDT:USDT | +35.65% | $1,604,365.28 |
-| DODO/USDT:USDT | +26.99% | $6,557,942.94 |
-| KITE/USDT:USDT | +12.94% | $1,130,166.40 |
-| BLAST/USDT:USDT | +10.24% | $2,692,818.98 |
-| ANSEM/USDT:USDT | +6.73% | $4,726,741.64 |
+| XEC/USDT:USDT | +35.82% | $1,678,953.64 |
+| DODO/USDT:USDT | +27.54% | $6,570,595.36 |
+| KITE/USDT:USDT | +12.23% | $1,150,118.09 |
+| BLAST/USDT:USDT | +10.06% | $2,699,666.18 |
+| ANSEM/USDT:USDT | +6.65% | $4,728,931.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +1.59% | +1.57% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
-| TIA/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.73% | +0.71% |
-| EDGE/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
+| OP/USDT:USDT | below_1h_threshold | +1.69% | +1.67% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.28% | +1.27% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.80% | +0.78% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.77% | +0.75% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.55% | +0.53% |
 
 ## 7. 次に見るべき不足
 
