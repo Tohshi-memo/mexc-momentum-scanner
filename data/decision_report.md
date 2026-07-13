@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T14:06:09.520264+00:00
+- generated_at: 2026-07-13T14:11:14.594146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8635**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.48** / 初期 $100.00 (-0.52%)
-- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 64件
+- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 65件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000565 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.48
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T14:06:03.248790+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62264.3
-- Funnel: target 867 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-13T14:11:05.948605+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=62286.7
+- Funnel: target 867 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +37.85% | $12,160,786.30 |
-| XEC/USDT:USDT | +26.65% | $5,671,648.07 |
-| JCT/USDT:USDT | +25.89% | $2,048,323.89 |
-| KITE/USDT:USDT | +15.80% | $4,481,332.12 |
-| BILL/USDT:USDT | +13.93% | $14,491,737.88 |
+| DODO/USDT:USDT | +38.52% | $12,207,218.97 |
+| XEC/USDT:USDT | +27.17% | $5,673,938.63 |
+| JCT/USDT:USDT | +25.98% | $2,062,286.27 |
+| KITE/USDT:USDT | +14.60% | $4,489,714.32 |
+| BILL/USDT:USDT | +13.14% | $14,625,341.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CMCSASTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.65% | +1.71% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +1.12% |
-| TRIA/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
-| KITE/USDT:USDT | below_1h_threshold | +0.90% | +0.95% |
+| CMCSASTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.68% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.39% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
+| DODO/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
 
 ## 7. 次に見るべき不足
 
