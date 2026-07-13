@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T06:01:15.911375+00:00
+- generated_at: 2026-07-13T06:06:08.499373+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8622**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T06:01:10.491397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=62798.7
+- 更新: 2026-07-13T06:06:02.311783+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62791.7
 - Funnel: target 863 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +30.49% | $6,306,863.69 |
-| BLAST/USDT:USDT | +14.96% | $2,636,937.42 |
-| KITE/USDT:USDT | +12.82% | $1,033,281.50 |
-| ANSEM/USDT:USDT | +9.43% | $4,679,450.41 |
-| CAP/USDT:USDT | +7.00% | $1,166,872.03 |
+| DODO/USDT:USDT | +29.69% | $6,332,472.50 |
+| BLAST/USDT:USDT | +16.53% | $2,645,788.28 |
+| KITE/USDT:USDT | +12.04% | $1,048,520.77 |
+| ANSEM/USDT:USDT | +8.81% | $4,689,235.61 |
+| CAP/USDT:USDT | +6.89% | $1,168,549.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +0.70% | +0.64% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.36% | +0.31% |
-| LDO/USDT:USDT | below_1h_threshold | +0.33% | +0.27% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.21% |
-| TRIA/USDT:USDT | below_1h_threshold | +0.25% | +0.20% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
+| LDO/USDT:USDT | below_1h_threshold | +0.36% | +0.31% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.22% |
+| SYN/USDT:USDT | below_1h_threshold | +0.25% | +0.21% |
+| DOT/USDT:USDT | below_1h_threshold | +0.24% | +0.20% |
 
 ## 7. 次に見るべき不足
 
