@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T13:56:15.784703+00:00
+- generated_at: 2026-07-13T14:01:17.269193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8635**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T13:56:09.493610+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.63% price=62204.9
-- Funnel: target 867 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-13T14:01:10.933779+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=62344.5
+- Funnel: target 867 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +38.03% | $12,076,028.13 |
-| XEC/USDT:USDT | +27.72% | $5,640,054.61 |
-| JCT/USDT:USDT | +27.64% | $2,032,216.95 |
-| KITE/USDT:USDT | +15.97% | $4,458,118.70 |
-| BILL/USDT:USDT | +12.98% | $14,659,709.61 |
+| DODO/USDT:USDT | +37.48% | $12,114,894.88 |
+| JCT/USDT:USDT | +27.52% | $2,031,312.22 |
+| XEC/USDT:USDT | +26.96% | $5,658,800.19 |
+| KITE/USDT:USDT | +15.30% | $4,472,618.69 |
+| BILL/USDT:USDT | +13.45% | $14,366,781.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.20% | +3.83% |
-| ARB/USDT:USDT | below_1h_threshold | +2.33% | +2.96% |
-| BASED/USDT:USDT | below_1h_threshold | +1.19% | +1.82% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +1.28% |
-| WIF/USDT:USDT | below_1h_threshold | +0.60% | +1.23% |
+| CMCSASTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.59% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +0.99% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.77% | +0.70% |
+| KITE/USDT:USDT | below_1h_threshold | +0.59% | +0.52% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.56% | +0.48% |
 
 ## 7. 次に見るべき不足
 
