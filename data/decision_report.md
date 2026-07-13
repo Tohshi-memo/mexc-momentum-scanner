@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T11:46:09.453215+00:00
+- generated_at: 2026-07-13T11:51:11.682705+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8632**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T11:46:03.017344+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=62933.0
+- 更新: 2026-07-13T11:51:05.252431+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=62929.4
 - Funnel: target 867 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
+- Strict後reject: 4h RSI 70.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +43.80% | $9,208,871.36 |
-| JCT/USDT:USDT | +27.49% | $1,616,533.12 |
-| XEC/USDT:USDT | +27.48% | $5,273,165.30 |
-| KITE/USDT:USDT | +20.35% | $3,500,145.44 |
-| CAP/USDT:USDT | +12.14% | $1,571,189.51 |
+| DODO/USDT:USDT | +41.71% | $9,341,270.75 |
+| XEC/USDT:USDT | +28.22% | $5,292,615.88 |
+| JCT/USDT:USDT | +27.34% | $1,624,320.72 |
+| KITE/USDT:USDT | +20.00% | $3,514,695.03 |
+| CAP/USDT:USDT | +11.33% | $1,581,164.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.25% | +3.11% |
-| BASED/USDT:USDT | below_1h_threshold | +3.04% | +2.90% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.79% | +2.65% |
-| XEC/USDT:USDT | below_1h_threshold | +2.56% | +2.42% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.00% | +1.86% |
+| XEC/USDT:USDT | below_1h_threshold | +3.04% | +2.91% |
+| BILL/USDT:USDT | below_1h_threshold | +2.76% | +2.63% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.47% | +2.34% |
+| BASED/USDT:USDT | below_1h_threshold | +2.32% | +2.19% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.08% | +1.95% |
 
 ## 7. 次に見るべき不足
 
