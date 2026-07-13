@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T16:16:11.112205+00:00
+- generated_at: 2026-07-13T16:21:18.484409+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8639**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.48** / 初期 $100.00 (-0.52%)
-- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 69件
+- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 70件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000513 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.48
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T16:16:03.849589+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=62501.0
-- Funnel: target 867 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-13T16:21:12.002318+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.48% price=62296.2
+- Funnel: target 867 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +3.28% | $5,373,491.55 |
-| ALLO/USDT:USDT | +3.09% | $16,534,862.24 |
-| ANSEM/USDT:USDT | +3.03% | $4,202,148.83 |
-| RAVE/USDT:USDT | +2.23% | $1,419,292.89 |
-| SLX/USDT:USDT | +2.08% | $1,781,314.07 |
+| AIOT/USDT:USDT | +4.93% | $1,587,932.82 |
+| ANSEM/USDT:USDT | +2.81% | $4,251,487.45 |
+| SLX/USDT:USDT | +1.94% | $1,808,996.97 |
+| ALLO/USDT:USDT | +1.68% | $16,880,412.06 |
+| BILL/USDT:USDT | +1.63% | $18,277,465.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.28% | +3.44% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.25% | +3.40% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.18% | +3.33% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.23% | +2.38% |
-| SLX/USDT:USDT | below_1h_threshold | +2.08% | +2.24% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.81% | +3.29% |
+| SLX/USDT:USDT | below_1h_threshold | +1.95% | +2.43% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.68% | +2.16% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.59% | +2.07% |
+| BILL/USDT:USDT | below_1h_threshold | +1.50% | +1.98% |
 
 ## 7. 次に見るべき不足
 
