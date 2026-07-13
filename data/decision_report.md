@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-13T06:10:46.461769+00:00
+- generated_at: 2026-07-13T06:16:16.760084+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8622**
+- closed shadow trades: **8623**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.57% / filled 20/20。**
-- 全期間 MARKET基準: n=8622, expectancy=-0.00%
+- 全期間 MARKET基準: n=8623, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.57%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$321.39** / 初期 $100.00 (+221.39%)
-- 確定: 2793件 (Win 876 / Loss 923 / Flat 994) / skip 2390件
+- 確定: 2793件 (Win 876 / Loss 923 / Flat 994) / skip 2391件
 - 成長率目線: 平均log +0.000418 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: FHE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $321.39
@@ -55,45 +55,47 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.11** / 初期 $100.00 (+5.11%)
-- 確定: 645件 (Win 152 / Loss 159 / Flat 334) / skip 1388件
+- 確定: 645件 (Win 152 / Loss 159 / Flat 334) / skip 1389件
 - 成長率目線: 平均log +0.000077 / 幾何平均 +0.008% per trade / maxDD +3.57%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ANSEM/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $105.11
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$99.34** / 初期 $100.00 (-0.66%)
-- 確定: 28件 (Win 10 / Loss 18 / Flat 0) / pending 2件 / skip 62件
+- 残高: **$99.68** / 初期 $100.00 (-0.32%)
+- 確定: 29件 (Win 11 / Loss 18 / Flat 0) / pending 2件 / skip 62件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000540 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: DODO/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.34
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000604 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: BLAST/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.68
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T06:06:02.311783+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=62791.7
-- Funnel: target 863 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-13T06:16:08.978911+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=62722.8
+- Funnel: target 863 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.6 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +29.69% | $6,332,472.50 |
-| BLAST/USDT:USDT | +16.53% | $2,645,788.28 |
-| KITE/USDT:USDT | +12.04% | $1,048,520.77 |
-| ANSEM/USDT:USDT | +8.81% | $4,689,235.61 |
-| CAP/USDT:USDT | +6.89% | $1,168,549.95 |
+| XEC/USDT:USDT | +35.96% | $1,121,900.48 |
+| DODO/USDT:USDT | +27.42% | $6,435,870.42 |
+| KITE/USDT:USDT | +12.62% | $1,089,817.49 |
+| BLAST/USDT:USDT | +12.35% | $2,668,787.09 |
+| ANSEM/USDT:USDT | +9.23% | $4,693,993.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
-| LDO/USDT:USDT | below_1h_threshold | +0.36% | +0.31% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.22% |
-| SYN/USDT:USDT | below_1h_threshold | +0.25% | +0.21% |
-| DOT/USDT:USDT | below_1h_threshold | +0.24% | +0.20% |
+| OP/USDT:USDT | below_1h_threshold | +0.90% | +0.96% |
+| EDGE/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
+| BILL/USDT:USDT | below_1h_threshold | +0.37% | +0.43% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.36% | +0.43% |
 
 ## 7. 次に見るべき不足
 
