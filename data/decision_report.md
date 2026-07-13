@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T08:31:19.559038+00:00
+- generated_at: 2026-07-13T08:36:12.880277+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8627**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T08:31:11.699891+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63059.5
-- Funnel: target 863 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 66.9 >= 65=1
+- 更新: 2026-07-13T08:36:07.938647+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63044.1
+- Funnel: target 863 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XEC/USDT:USDT | +27.95% | $4,127,707.04 |
-| DODO/USDT:USDT | +25.15% | $7,156,405.84 |
-| JCT/USDT:USDT | +22.25% | $1,092,905.84 |
-| KITE/USDT:USDT | +17.70% | $1,846,691.31 |
-| BLAST/USDT:USDT | +7.63% | $2,996,223.92 |
+| XEC/USDT:USDT | +28.59% | $4,163,851.26 |
+| DODO/USDT:USDT | +24.66% | $7,165,990.10 |
+| JCT/USDT:USDT | +23.05% | $1,098,477.25 |
+| KITE/USDT:USDT | +17.85% | $1,882,697.97 |
+| BLAST/USDT:USDT | +8.86% | $2,996,866.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +2.72% | +2.55% |
-| CAP/USDT:USDT | below_1h_threshold | +2.19% | +2.02% |
-| KITE/USDT:USDT | below_1h_threshold | +1.90% | +1.73% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.28% | +1.11% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.26% | +1.09% |
+| BILL/USDT:USDT | below_1h_threshold | +4.96% | +4.82% |
+| CAP/USDT:USDT | below_1h_threshold | +2.36% | +2.21% |
+| DODO/USDT:USDT | below_1h_threshold | +2.27% | +2.12% |
+| KITE/USDT:USDT | below_1h_threshold | +2.02% | +1.88% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.32% | +1.18% |
 
 ## 7. 次に見るべき不足
 
