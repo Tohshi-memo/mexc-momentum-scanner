@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T04:46:08.884488+00:00
+- generated_at: 2026-07-13T04:51:08.875378+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8622**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T04:46:04.008930+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=62711.9
-- Funnel: target 863 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-13T04:51:02.934164+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=62757.0
+- Funnel: target 863 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +30.36% | $5,820,572.54 |
-| BLAST/USDT:USDT | +15.11% | $2,371,015.14 |
-| CAP/USDT:USDT | +5.54% | $1,117,226.41 |
-| JTO/USDT:USDT | +4.79% | $1,739,795.71 |
-| PIPPIN/USDT:USDT | +4.18% | $8,016,913.97 |
+| DODO/USDT:USDT | +33.12% | $5,860,537.49 |
+| BLAST/USDT:USDT | +17.40% | $2,375,561.93 |
+| CAP/USDT:USDT | +6.13% | $1,125,729.73 |
+| ANSEM/USDT:USDT | +5.44% | $4,793,656.94 |
+| JTO/USDT:USDT | +5.15% | $1,744,879.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.03% | +4.14% |
-| US/USDT:USDT | below_1h_threshold | +3.66% | +3.77% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.82% | +2.93% |
-| JTO/USDT:USDT | below_1h_threshold | +1.74% | +1.85% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.69% | +1.80% |
+| CAP/USDT:USDT | below_1h_threshold | +4.67% | +4.70% |
+| US/USDT:USDT | below_1h_threshold | +3.50% | +3.54% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.69% | +2.73% |
+| UB/USDT:USDT | below_1h_threshold | +2.44% | +2.48% |
+| BLAST/USDT:USDT | below_1h_threshold | +2.17% | +2.21% |
 
 ## 7. 次に見るべき不足
 
