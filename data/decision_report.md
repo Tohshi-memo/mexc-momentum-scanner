@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T18:56:27.548831+00:00
+- generated_at: 2026-07-13T19:01:10.659061+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8650**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T18:56:21.259799+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=62025.7
-- Funnel: target 867 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-13T19:01:04.345298+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=61996.4
+- Funnel: target 867 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +24.30% | $2,977,532.97 |
-| ALLO/USDT:USDT | +19.24% | $29,266,726.24 |
-| EVAA/USDT:USDT | +8.59% | $21,370,019.39 |
-| VELVET/USDT:USDT | +5.33% | $29,043,929.41 |
-| BEAT/USDT:USDT | +4.97% | $17,209,694.61 |
+| AIOT/USDT:USDT | +25.92% | $3,022,200.44 |
+| ALLO/USDT:USDT | +20.69% | $28,306,854.67 |
+| EVAA/USDT:USDT | +8.87% | $20,717,646.16 |
+| VELVET/USDT:USDT | +6.03% | $28,251,236.30 |
+| BEAT/USDT:USDT | +4.85% | $16,261,993.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +4.97% | +4.74% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.65% | +4.41% |
-| US/USDT:USDT | below_1h_threshold | +4.20% | +3.96% |
-| AIOT/USDT:USDT | below_1h_threshold | +3.60% | +3.37% |
-| USOIL/USDT:USDT | below_1h_threshold | +2.38% | +2.15% |
+| JCT/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.97% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.81% | +0.81% |
+| T/USDT:USDT | below_1h_threshold | +0.32% | +0.32% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
 
 ## 7. 次に見るべき不足
 
