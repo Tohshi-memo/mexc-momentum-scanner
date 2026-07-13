@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T03:21:13.801250+00:00
+- generated_at: 2026-07-13T03:26:16.408868+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8621**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T03:21:07.505338+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.69% price=62907.8
+- 更新: 2026-07-13T03:26:10.130938+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.56% price=62987.7
 - Funnel: target 863 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +40.18% | $4,833,097.36 |
-| BLAST/USDT:USDT | +18.06% | $2,201,066.28 |
-| ANSEM/USDT:USDT | +6.15% | $4,657,154.36 |
-| PIPPIN/USDT:USDT | +5.48% | $7,836,040.92 |
-| BILL/USDT:USDT | +4.59% | $11,525,762.23 |
+| DODO/USDT:USDT | +43.55% | $4,866,707.61 |
+| BLAST/USDT:USDT | +15.56% | $2,220,632.48 |
+| PIPPIN/USDT:USDT | +5.97% | $7,839,063.21 |
+| ANSEM/USDT:USDT | +5.77% | $4,664,485.88 |
+| BILL/USDT:USDT | +5.04% | $11,542,680.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +1.51% | +2.20% |
-| DODO/USDT:USDT | below_1h_threshold | +1.38% | +2.07% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +1.36% |
-| SYN/USDT:USDT | below_1h_threshold | +0.63% | +1.32% |
-| UB/USDT:USDT | below_1h_threshold | +0.46% | +1.15% |
+| DODO/USDT:USDT | below_1h_threshold | +3.95% | +4.51% |
+| BILL/USDT:USDT | below_1h_threshold | +1.89% | +2.45% |
+| SYN/USDT:USDT | below_1h_threshold | +1.36% | +1.93% |
+| UB/USDT:USDT | below_1h_threshold | +0.67% | +1.24% |
+| OGN/USDT:USDT | below_1h_threshold | +0.47% | +1.03% |
 
 ## 7. 次に見るべき不足
 
