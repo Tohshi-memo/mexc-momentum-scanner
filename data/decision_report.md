@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T04:36:11.632304+00:00
+- generated_at: 2026-07-13T04:41:11.332590+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8622**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T04:36:05.341070+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=62679.0
+- 更新: 2026-07-13T04:41:06.492305+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=62705.6
 - Funnel: target 863 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +31.28% | $5,749,236.10 |
-| BLAST/USDT:USDT | +13.10% | $2,354,642.45 |
-| BILL/USDT:USDT | +5.47% | $11,811,318.32 |
-| CAP/USDT:USDT | +5.43% | $1,110,517.94 |
-| ANSEM/USDT:USDT | +5.07% | $4,767,265.38 |
+| DODO/USDT:USDT | +31.90% | $5,787,501.64 |
+| BLAST/USDT:USDT | +15.96% | $2,362,675.41 |
+| CAP/USDT:USDT | +5.37% | $1,114,724.79 |
+| BILL/USDT:USDT | +5.06% | $11,837,909.99 |
+| JTO/USDT:USDT | +4.41% | $1,727,455.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +3.97% | +4.14% |
-| US/USDT:USDT | below_1h_threshold | +3.49% | +3.65% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.56% | +2.72% |
-| JTO/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.45% | +1.61% |
+| US/USDT:USDT | below_1h_threshold | +4.09% | +4.21% |
+| CAP/USDT:USDT | below_1h_threshold | +3.92% | +4.04% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.18% | +2.30% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.69% | +1.81% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.36% | +1.48% |
 
 ## 7. 次に見るべき不足
 
