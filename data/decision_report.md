@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T10:56:13.664557+00:00
+- generated_at: 2026-07-13T11:01:11.261752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8629**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T10:56:07.121455+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=62926.9
-- Funnel: target 867 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-13T11:01:05.092825+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=62889.7
+- Funnel: target 867 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +28.89% | $8,025,429.77 |
-| JCT/USDT:USDT | +25.24% | $1,485,393.82 |
-| XEC/USDT:USDT | +24.32% | $5,069,374.78 |
-| KITE/USDT:USDT | +19.24% | $3,257,488.74 |
-| JTO/USDT:USDT | +9.75% | $2,808,319.06 |
+| JCT/USDT:USDT | +26.84% | $1,494,774.05 |
+| XEC/USDT:USDT | +24.46% | $5,109,582.67 |
+| DODO/USDT:USDT | +23.37% | $8,119,065.82 |
+| KITE/USDT:USDT | +19.60% | $3,260,219.68 |
+| CAP/USDT:USDT | +10.51% | $1,456,586.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +4.89% | +5.13% |
-| JTO/USDT:USDT | below_1h_threshold | +2.65% | +2.89% |
-| WLD/USDT:USDT | below_1h_threshold | +1.83% | +2.07% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.83% | +2.06% |
-| TIA/USDT:USDT | below_1h_threshold | +1.43% | +1.66% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.79% | +0.72% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.79% | +0.72% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.65% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.43% |
+| JCT/USDT:USDT | below_1h_threshold | +0.35% | +0.28% |
 
 ## 7. 次に見るべき不足
 
