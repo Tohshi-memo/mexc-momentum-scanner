@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T16:31:19.811046+00:00
+- generated_at: 2026-07-13T16:36:22.009968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8640**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.48** / 初期 $100.00 (-0.52%)
-- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 72件
+- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 73件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000448 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.48
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T16:31:11.987014+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=62266.3
-- Funnel: target 867 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-13T16:36:10.730435+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.63% price=62202.8
+- Funnel: target 867 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +8.34% | $1,676,565.14 |
-| EVAA/USDT:USDT | +4.22% | $20,003,311.12 |
-| ANSEM/USDT:USDT | +3.71% | $4,406,205.63 |
-| ALLO/USDT:USDT | +2.89% | $17,230,076.08 |
-| LAB/USDT:USDT | +2.55% | $11,184,219.85 |
+| AIOT/USDT:USDT | +8.86% | $1,711,236.30 |
+| EVAA/USDT:USDT | +6.03% | $20,089,178.86 |
+| ANSEM/USDT:USDT | +2.81% | $4,426,174.89 |
+| ALLO/USDT:USDT | +2.57% | $18,105,423.66 |
+| USELESS/USDT:USDT | +2.15% | $1,289,932.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.31% | +4.84% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.79% | +4.32% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.90% | +3.43% |
-| LAB/USDT:USDT | below_1h_threshold | +2.65% | +3.18% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.09% | +2.62% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.81% | +3.44% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.57% | +3.20% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.12% | +2.74% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.82% | +2.45% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.28% | +1.91% |
 
 ## 7. 次に見るべき不足
 
