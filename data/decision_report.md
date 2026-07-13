@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T17:11:15.753171+00:00
+- generated_at: 2026-07-13T17:16:16.238679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8644**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T17:11:09.407797+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=62342.6
-- Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-13T17:16:09.800408+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62280.2
+- Funnel: target 867 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +16.66% | $2,188,526.16 |
-| EVAA/USDT:USDT | +8.59% | $19,534,267.26 |
-| ALLO/USDT:USDT | +5.90% | $20,398,597.75 |
-| USELESS/USDT:USDT | +3.25% | $1,293,638.21 |
-| BILL/USDT:USDT | +3.02% | $18,916,982.38 |
+| AIOT/USDT:USDT | +16.50% | $2,255,394.15 |
+| EVAA/USDT:USDT | +11.87% | $19,615,367.35 |
+| ALLO/USDT:USDT | +7.58% | $20,621,286.04 |
+| USELESS/USDT:USDT | +3.32% | $1,295,460.45 |
+| BILL/USDT:USDT | +3.02% | $18,986,396.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +2.70% | +2.56% |
-| CRV/USDT:USDT | below_1h_threshold | +1.40% | +1.26% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.21% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.08% | +0.95% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.04% | +0.90% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.12% | +4.08% |
+| CRV/USDT:USDT | below_1h_threshold | +1.59% | +1.55% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.31% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.26% | +1.23% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.25% | +1.22% |
 
 ## 7. 次に見るべき不足
 
