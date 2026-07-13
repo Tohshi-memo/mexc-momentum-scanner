@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T14:01:17.269193+00:00
+- generated_at: 2026-07-13T14:06:09.520264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8635**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T14:01:10.933779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=62344.5
+- 更新: 2026-07-13T14:06:03.248790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=62264.3
 - Funnel: target 867 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +37.48% | $12,114,894.88 |
-| JCT/USDT:USDT | +27.52% | $2,031,312.22 |
-| XEC/USDT:USDT | +26.96% | $5,658,800.19 |
-| KITE/USDT:USDT | +15.30% | $4,472,618.69 |
-| BILL/USDT:USDT | +13.45% | $14,366,781.31 |
+| DODO/USDT:USDT | +37.85% | $12,160,786.30 |
+| XEC/USDT:USDT | +26.65% | $5,671,648.07 |
+| JCT/USDT:USDT | +25.89% | $2,048,323.89 |
+| KITE/USDT:USDT | +15.80% | $4,481,332.12 |
+| BILL/USDT:USDT | +13.93% | $14,491,737.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CMCSASTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.59% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +0.99% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.77% | +0.70% |
-| KITE/USDT:USDT | below_1h_threshold | +0.59% | +0.52% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.56% | +0.48% |
+| CMCSASTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.65% | +1.71% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +1.12% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
+| KITE/USDT:USDT | below_1h_threshold | +0.90% | +0.95% |
 
 ## 7. 次に見るべき不足
 
