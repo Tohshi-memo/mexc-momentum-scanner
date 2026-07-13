@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T11:01:11.261752+00:00
+- generated_at: 2026-07-13T11:06:06.327532+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8629**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T11:01:05.092825+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=62889.7
+- 更新: 2026-07-13T11:06:00.163919+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=62985.0
 - Funnel: target 867 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JCT/USDT:USDT | +26.84% | $1,494,774.05 |
-| XEC/USDT:USDT | +24.46% | $5,109,582.67 |
-| DODO/USDT:USDT | +23.37% | $8,119,065.82 |
-| KITE/USDT:USDT | +19.60% | $3,260,219.68 |
-| CAP/USDT:USDT | +10.51% | $1,456,586.10 |
+| JCT/USDT:USDT | +27.14% | $1,511,963.83 |
+| XEC/USDT:USDT | +24.73% | $5,125,514.62 |
+| DODO/USDT:USDT | +23.86% | $8,163,071.83 |
+| KITE/USDT:USDT | +19.73% | $3,308,284.45 |
+| CAP/USDT:USDT | +9.57% | $1,466,031.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +0.79% | +0.72% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.79% | +0.72% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.65% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.43% |
-| JCT/USDT:USDT | below_1h_threshold | +0.35% | +0.28% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.90% | +0.67% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.79% | +0.57% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.50% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.60% | +0.38% |
+| JCT/USDT:USDT | below_1h_threshold | +0.56% | +0.34% |
 
 ## 7. 次に見るべき不足
 
