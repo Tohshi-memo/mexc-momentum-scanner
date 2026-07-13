@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T15:56:12.713856+00:00
+- generated_at: 2026-07-13T16:01:21.987931+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8637**
 
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.48** / 初期 $100.00 (-0.52%)
-- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 68件
+- 確定: 39件 (Win 14 / Loss 25 / Flat 0) / pending 0件 / skip 69件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000565 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.48
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T15:56:05.078349+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=62578.0
-- Funnel: target 867 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-13T16:01:12.301954+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=62567.7
+- Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +43.49% | $13,514,058.99 |
-| JCT/USDT:USDT | +28.41% | $2,197,125.24 |
-| XEC/USDT:USDT | +25.70% | $6,318,836.61 |
-| BILL/USDT:USDT | +22.16% | $17,904,243.98 |
-| ALLO/USDT:USDT | +14.84% | $15,928,765.13 |
+| LAB/USDT:USDT | +5.68% | $10,217,849.44 |
+| BEAT/USDT:USDT | +1.73% | $16,502,496.49 |
+| DEXE/USDT:USDT | +0.84% | $10,762,546.09 |
+| VELVET/USDT:USDT | +0.69% | $30,996,178.71 |
+| EDGE/USDT:USDT | +0.45% | $1,329,775.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +3.45% | +3.76% |
-| JCT/USDT:USDT | below_1h_threshold | +2.70% | +3.01% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.15% | +2.46% |
-| BILL/USDT:USDT | below_1h_threshold | +2.00% | +2.30% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.98% | +2.29% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.74% | +1.78% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.53% | +0.58% |
 
 ## 7. 次に見るべき不足
 
