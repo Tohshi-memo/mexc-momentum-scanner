@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T20:01:08.102359+00:00
+- generated_at: 2026-07-13T20:06:04.907205+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8652**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T20:01:00.739475+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62233.5
+- 更新: 2026-07-13T20:05:59.950116+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=62274.4
 - Funnel: target 867 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +32.13% | $3,605,865.28 |
-| EVAA/USDT:USDT | +25.12% | $21,347,375.99 |
-| ALLO/USDT:USDT | +19.12% | $34,473,715.71 |
-| VELVET/USDT:USDT | +8.42% | $28,997,465.96 |
-| BEAT/USDT:USDT | +6.43% | $14,898,811.86 |
+| AIOT/USDT:USDT | +31.57% | $3,685,876.99 |
+| EVAA/USDT:USDT | +27.62% | $21,461,204.77 |
+| ALLO/USDT:USDT | +20.75% | $35,084,142.52 |
+| VELVET/USDT:USDT | +6.53% | $29,148,591.08 |
+| BEAT/USDT:USDT | +5.60% | $14,947,955.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.89% | +3.93% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
-| JCT/USDT:USDT | below_1h_threshold | +0.37% | +0.41% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.89% | +3.87% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.93% | +2.91% |
+| LDO/USDT:USDT | below_1h_threshold | +1.39% | +1.37% |
+| DODO/USDT:USDT | below_1h_threshold | +1.32% | +1.30% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
 
 ## 7. 次に見るべき不足
 
