@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T08:21:12.267356+00:00
+- generated_at: 2026-07-13T08:26:14.431765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8626**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.36** / 初期 $100.00 (+0.36%)
-- 確定: 31件 (Win 13 / Loss 18 / Flat 0) / pending 2件 / skip 62件
+- 確定: 31件 (Win 13 / Loss 18 / Flat 0) / pending 3件 / skip 62件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000685 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $100.36
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T08:21:06.976626+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=62979.1
-- Funnel: target 863 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1
+- 更新: 2026-07-13T08:26:07.560541+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63000.0
+- Funnel: target 863 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.6 >= 65=1, 4h RSI 65.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XEC/USDT:USDT | +27.31% | $4,065,591.42 |
-| DODO/USDT:USDT | +25.58% | $7,120,537.31 |
-| JCT/USDT:USDT | +23.11% | $1,073,336.84 |
-| KITE/USDT:USDT | +15.61% | $1,740,380.04 |
-| BLAST/USDT:USDT | +8.86% | $2,994,306.62 |
+| XEC/USDT:USDT | +26.71% | $4,097,170.58 |
+| DODO/USDT:USDT | +25.46% | $7,139,715.17 |
+| JCT/USDT:USDT | +21.65% | $1,082,783.38 |
+| KITE/USDT:USDT | +16.58% | $1,797,783.94 |
+| BLAST/USDT:USDT | +8.20% | $2,994,941.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.02% | +3.98% |
-| DODO/USDT:USDT | below_1h_threshold | +3.17% | +3.13% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.42% | +1.37% |
-| OGN/USDT:USDT | below_1h_threshold | +1.40% | +1.36% |
-| JTO/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
+| DODO/USDT:USDT | below_1h_threshold | +3.12% | +3.05% |
+| KITE/USDT:USDT | below_1h_threshold | +1.81% | +1.73% |
+| OGN/USDT:USDT | below_1h_threshold | +1.34% | +1.26% |
+| CAP/USDT:USDT | below_1h_threshold | +1.23% | +1.16% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.11% | +1.04% |
 
 ## 7. 次に見るべき不足
 
