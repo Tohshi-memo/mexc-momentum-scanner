@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T07:06:09.808540+00:00
+- generated_at: 2026-07-13T07:11:09.581639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8623**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T07:06:03.606936+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=62732.8
+- 更新: 2026-07-13T07:11:03.346658+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62795.3
 - Funnel: target 863 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XEC/USDT:USDT | +37.49% | $2,065,898.37 |
-| DODO/USDT:USDT | +24.66% | $6,688,599.57 |
-| KITE/USDT:USDT | +13.39% | $1,231,948.35 |
-| BLAST/USDT:USDT | +10.48% | $2,839,671.35 |
-| ANSEM/USDT:USDT | +8.81% | $4,559,125.29 |
+| XEC/USDT:USDT | +35.84% | $2,100,736.70 |
+| DODO/USDT:USDT | +25.64% | $6,718,407.94 |
+| BLAST/USDT:USDT | +16.05% | $2,882,784.84 |
+| KITE/USDT:USDT | +14.19% | $1,246,823.22 |
+| ANSEM/USDT:USDT | +8.60% | $4,576,541.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.78% | +3.84% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.72% | +0.78% |
-| OGN/USDT:USDT | below_1h_threshold | +0.46% | +0.52% |
-| US30/USDT:USDT | below_1h_threshold | +0.21% | +0.26% |
-| HBAR/USDT:USDT | below_1h_threshold | +0.19% | +0.25% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.55% | +3.50% |
+| BLAST/USDT:USDT | below_1h_threshold | +2.08% | +2.04% |
+| FET/USDT:USDT | below_1h_threshold | +1.07% | +1.03% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.77% | +0.73% |
+| KITE/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
 
 ## 7. 次に見るべき不足
 
