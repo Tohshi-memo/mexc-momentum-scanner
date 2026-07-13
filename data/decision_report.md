@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T15:11:13.087831+00:00
+- generated_at: 2026-07-13T15:16:16.855163+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8635**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T15:11:06.975391+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=62773.2
+- 更新: 2026-07-13T15:16:10.677978+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62774.8
 - Funnel: target 867 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +40.00% | $12,870,348.03 |
-| XEC/USDT:USDT | +32.35% | $5,992,063.37 |
-| JCT/USDT:USDT | +26.78% | $2,155,418.21 |
-| BILL/USDT:USDT | +19.34% | $16,292,894.66 |
-| KITE/USDT:USDT | +15.27% | $4,712,964.53 |
+| DODO/USDT:USDT | +39.50% | $12,903,863.94 |
+| XEC/USDT:USDT | +30.66% | $6,027,090.15 |
+| JCT/USDT:USDT | +26.78% | $2,159,560.41 |
+| BILL/USDT:USDT | +20.82% | $16,556,812.91 |
+| KITE/USDT:USDT | +15.69% | $4,718,274.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XEC/USDT:USDT | below_1h_threshold | +3.69% | +3.68% |
-| JCT/USDT:USDT | below_1h_threshold | +1.40% | +1.39% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.23% | +1.22% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.17% | +1.17% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.92% | +0.91% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.34% | +2.33% |
+| XEC/USDT:USDT | below_1h_threshold | +2.16% | +2.15% |
+| JCT/USDT:USDT | below_1h_threshold | +1.45% | +1.44% |
+| JUP/USDT:USDT | below_1h_threshold | +1.27% | +1.26% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.12% | +1.11% |
 
 ## 7. 次に見るべき不足
 
