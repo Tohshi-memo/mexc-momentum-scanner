@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T17:56:24.387771+00:00
+- generated_at: 2026-07-13T18:01:14.496503+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8646**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T17:56:14.802260+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=62007.9
-- Funnel: target 867 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.6 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-13T18:01:08.206148+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=61900.2
+- Funnel: target 867 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +26.46% | $20,718,875.65 |
-| AIOT/USDT:USDT | +20.79% | $2,534,512.26 |
-| ALLO/USDT:USDT | +9.81% | $24,141,591.51 |
-| VELVET/USDT:USDT | +3.64% | $29,293,266.35 |
-| USOIL/USDT:USDT | +3.14% | $95,261,049.72 |
+| EVAA/USDT:USDT | +24.69% | $19,770,327.64 |
+| AIOT/USDT:USDT | +19.98% | $2,557,618.67 |
+| ALLO/USDT:USDT | +11.10% | $24,091,354.31 |
+| USOIL/USDT:USDT | +3.37% | $95,947,892.14 |
+| VELVET/USDT:USDT | +3.24% | $28,051,496.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.72% | +4.12% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.67% | +3.07% |
-| KITE/USDT:USDT | below_1h_threshold | +2.10% | +2.50% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.75% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.08% | +1.48% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.38% | +2.35% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.31% | +2.28% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.21% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.83% | +0.80% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.44% |
 
 ## 7. 次に見るべき不足
 
