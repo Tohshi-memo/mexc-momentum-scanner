@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T01:11:08.929134+00:00
+- generated_at: 2026-07-13T01:16:14.506853+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8620**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T01:11:02.745832+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.60% price=63658.7
-- Funnel: target 863 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-13T01:16:08.291621+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63909.4
+- Funnel: target 863 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +43.12% | $4,294,078.95 |
-| ANSEM/USDT:USDT | +12.39% | $4,349,796.55 |
-| BLAST/USDT:USDT | +7.24% | $1,937,510.92 |
-| BILL/USDT:USDT | +5.69% | $10,856,482.65 |
-| SYN/USDT:USDT | +3.64% | $2,767,712.39 |
+| DODO/USDT:USDT | +41.10% | $4,316,776.11 |
+| ANSEM/USDT:USDT | +10.60% | $4,388,976.08 |
+| BILL/USDT:USDT | +8.79% | $10,927,572.72 |
+| BLAST/USDT:USDT | +8.68% | $1,942,173.80 |
+| PIPPIN/USDT:USDT | +4.43% | $7,551,426.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +1.08% | +1.67% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.76% | +1.36% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.67% | +1.26% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.50% | +1.10% |
-| SYN/USDT:USDT | below_1h_threshold | +0.38% | +0.98% |
+| US/USDT:USDT | below_1h_threshold | +2.79% | +3.00% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.96% | +1.17% |
+| BILL/USDT:USDT | below_1h_threshold | +0.92% | +1.13% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.67% | +0.87% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.50% | +0.70% |
 
 ## 7. 次に見るべき不足
 
