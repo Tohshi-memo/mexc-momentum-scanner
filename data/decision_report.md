@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T13:36:28.400963+00:00
+- generated_at: 2026-07-13T13:41:13.276844+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8634**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.14** / 初期 $100.00 (-0.86%)
-- 確定: 38件 (Win 13 / Loss 25 / Flat 0) / pending 1件 / skip 63件
+- 確定: 38件 (Win 13 / Loss 25 / Flat 0) / pending 1件 / skip 64件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000499 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: B/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.14
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T13:36:22.237608+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=62727.2
-- Funnel: target 867 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-13T13:41:06.757856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=62554.2
+- Funnel: target 867 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +37.42% | $11,795,492.87 |
-| JCT/USDT:USDT | +28.82% | $1,986,354.91 |
-| XEC/USDT:USDT | +27.68% | $5,592,039.96 |
-| KITE/USDT:USDT | +16.46% | $4,347,936.03 |
-| CAP/USDT:USDT | +11.91% | $1,679,479.54 |
+| DODO/USDT:USDT | +38.28% | $11,903,807.81 |
+| JCT/USDT:USDT | +29.54% | $1,994,929.49 |
+| XEC/USDT:USDT | +27.79% | $5,605,694.51 |
+| KITE/USDT:USDT | +16.71% | $4,382,273.19 |
+| CAP/USDT:USDT | +12.55% | $1,682,041.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +4.77% | +4.57% |
-| BILL/USDT:USDT | below_1h_threshold | +1.44% | +1.24% |
-| CAP/USDT:USDT | below_1h_threshold | +1.32% | +1.12% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.93% | +0.73% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.68% | +0.48% |
+| CAP/USDT:USDT | below_1h_threshold | +2.01% | +2.08% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.25% | +1.32% |
+| BILL/USDT:USDT | below_1h_threshold | +0.74% | +0.81% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.71% | +0.78% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.72% |
 
 ## 7. 次に見るべき不足
 
