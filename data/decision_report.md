@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-13T12:31:11.985831+00:00
+- generated_at: 2026-07-13T12:36:10.424783+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8633**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T12:31:05.754157+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=62743.2
+- 更新: 2026-07-13T12:36:04.162619+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=62681.1
 - Funnel: target 867 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +33.49% | $10,918,417.58 |
-| JCT/USDT:USDT | +28.80% | $1,730,595.56 |
-| XEC/USDT:USDT | +24.88% | $5,412,877.21 |
-| KITE/USDT:USDT | +19.71% | $3,753,676.89 |
-| BILL/USDT:USDT | +12.88% | $14,096,791.78 |
+| DODO/USDT:USDT | +31.53% | $11,002,497.71 |
+| JCT/USDT:USDT | +29.71% | $1,746,913.73 |
+| XEC/USDT:USDT | +25.04% | $5,431,907.38 |
+| KITE/USDT:USDT | +19.07% | $3,763,205.57 |
+| BILL/USDT:USDT | +11.38% | $14,162,492.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.15% | +3.37% |
-| BILL/USDT:USDT | below_1h_threshold | +2.28% | +2.50% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.04% | +2.27% |
-| B/USDT:USDT | below_1h_threshold | +1.24% | +1.47% |
-| JCT/USDT:USDT | below_1h_threshold | +1.02% | +1.25% |
+| EDGE/USDT:USDT | below_1h_threshold | +4.14% | +4.46% |
+| B/USDT:USDT | below_1h_threshold | +3.73% | +4.05% |
+| JCT/USDT:USDT | below_1h_threshold | +1.74% | +2.06% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.55% | +1.87% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.11% | +1.43% |
 
 ## 7. 次に見るべき不足
 
