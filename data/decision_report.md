@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-13T18:01:14.496503+00:00
+- generated_at: 2026-07-13T18:06:14.290868+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8646**
+- closed shadow trades: **8647**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8646, expectancy=-0.00%
+- 全期間 MARKET基準: n=8647, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-1.60%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,8 +21,8 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 6/20 | 30.0% | +2.91% | **+0.87%** |
-| LIMIT_5PCT | 9/20 | 45.0% | +1.74% | **+0.78%** |
+| LIMIT_6PCT | 7/20 | 35.0% | +2.76% | **+0.97%** |
+| LIMIT_5PCT | 10/20 | 50.0% | +1.66% | **+0.83%** |
 | LIMIT_7PCT | 2/20 | 10.0% | +2.80% | **+0.28%** |
 | LIMIT_FIB1618 | 5/20 | 25.0% | +0.85% | **+0.21%** |
 | LIMIT_BB3S | 4/20 | 20.0% | +0.02% | **+0.00%** |
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +4.31% | **+2.37%** |
 | LIMIT_FIB1272_LONG | 12/20 | 60.0% | +3.66% | **+2.19%** |
-| LIMIT_ATR_LONG | 10/20 | 50.0% | +3.94% | **+1.97%** |
-| LIMIT_3PCT_LONG | 12/20 | 60.0% | +2.80% | **+1.68%** |
+| LIMIT_3PCT_LONG | 13/20 | 65.0% | +3.20% | **+2.08%** |
 | LIMIT_5PCT_LONG | 7/20 | 35.0% | +4.69% | **+1.64%** |
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.50% | **+1.27%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | +1.69% | **+1.53%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,19 +46,19 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$327.71** / 初期 $100.00 (+227.71%)
-- 確定: 2814件 (Win 885 / Loss 923 / Flat 1006) / skip 2393件
+- 残高: **$328.48** / 初期 $100.00 (+228.48%)
+- 確定: 2815件 (Win 886 / Loss 923 / Flat 1006) / skip 2393件
 - 成長率目線: 平均log +0.000422 / 幾何平均 +0.042% per trade / maxDD +8.13%
-- 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ANSEM/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $327.71
+- 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: AIOT/USDT:USDT `LIMIT_6PCT` SL_HIT account +0.24% 残高後 $328.48
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$105.19** / 初期 $100.00 (+5.19%)
-- 確定: 647件 (Win 153 / Loss 159 / Flat 335) / skip 1410件
-- 成長率目線: 平均log +0.000078 / 幾何平均 +0.008% per trade / maxDD +3.57%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0128 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: EVAA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $105.19
+- 残高: **$105.26** / 初期 $100.00 (+5.26%)
+- 確定: 648件 (Win 154 / Loss 159 / Flat 335) / skip 1410件
+- 成長率目線: 平均log +0.000079 / 幾何平均 +0.008% per trade / maxDD +3.57%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0164 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: AIOT/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.07% 残高後 $105.26
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-13T18:01:08.206148+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=61900.2
-- Funnel: target 867 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-13T18:06:06.863894+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=62008.2
+- Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +24.69% | $19,770,327.64 |
-| AIOT/USDT:USDT | +19.98% | $2,557,618.67 |
-| ALLO/USDT:USDT | +11.10% | $24,091,354.31 |
-| USOIL/USDT:USDT | +3.37% | $95,947,892.14 |
-| VELVET/USDT:USDT | +3.24% | $28,051,496.64 |
+| EVAA/USDT:USDT | +23.62% | $19,927,741.59 |
+| AIOT/USDT:USDT | +21.73% | $2,640,745.08 |
+| ALLO/USDT:USDT | +10.93% | $24,299,240.84 |
+| VELVET/USDT:USDT | +3.64% | $28,140,716.45 |
+| USOIL/USDT:USDT | +3.50% | $96,783,063.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +2.38% | +2.35% |
-| UKOIL/USDT:USDT | below_1h_threshold | +2.31% | +2.28% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.21% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.83% | +0.80% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.44% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.38% | +2.18% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.31% | +2.10% |
+| AIOT/USDT:USDT | below_1h_threshold | +2.11% | +1.91% |
+| XPL/USDT:USDT | below_1h_threshold | +1.66% | +1.45% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.03% |
 
 ## 7. 次に見るべき不足
 
