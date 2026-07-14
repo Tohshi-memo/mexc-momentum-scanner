@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 102.20111567879223,
+  "balance": 103.22312683558016,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -1875,6 +1875,27 @@
       "balance_before": 101.18922344434874,
       "balance_after": 102.20111567879223,
       "strategy_tier": "B",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "OBV_BEAR_DIV",
+        "daily_RED"
+      ],
+      "strategy_score": 0.35
+    },
+    {
+      "symbol": "LAB/USDT:USDT",
+      "detected_at": "2026-07-14T03:41:10.805136+00:00",
+      "closed_at": "2026-07-14T03:45:30.603488+00:00",
+      "outcome": "TP_HIT",
+      "pnl_pct": 7.999999999999989,
+      "sl_pct": 4.000000000000003,
+      "risk_pct": 0.5,
+      "notional_usdt": 12.77513945984902,
+      "pnl_usdt": 1.0220111567879202,
+      "balance_before": 102.20111567879223,
+      "balance_after": 103.22312683558016,
+      "strategy_tier": "A",
       "strategy_direction": "short",
       "strategy_entry_style": "MARKET",
       "strategy_boosters": [
