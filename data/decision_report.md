@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T18:31:18.857717+00:00
+- generated_at: 2026-07-14T18:36:18.399160+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 111件
+- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 112件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000203 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SXT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T18:31:12.617904+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=64468.1
-- Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-14T18:36:09.646763+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64539.3
+- Funnel: target 862 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +7.54% | $11,960,109.08 |
-| SKHYSTOCK/USDT:USDT | +5.77% | $6,635,811.54 |
-| SXT/USDT:USDT | +5.51% | $10,081,056.30 |
-| TAC/USDT:USDT | +4.88% | $1,082,258.06 |
-| VELVET/USDT:USDT | +4.37% | $31,127,957.15 |
+| BSB/USDT:USDT | +6.86% | $12,044,449.32 |
+| CASHCAT/USDT:USDT | +6.61% | $1,292,539.64 |
+| SKHYSTOCK/USDT:USDT | +5.78% | $6,777,392.88 |
+| TAC/USDT:USDT | +5.74% | $1,087,589.62 |
+| VELVET/USDT:USDT | +5.41% | $31,202,309.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.02% | +3.22% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.43% |
-| EGLD/USDT:USDT | below_1h_threshold | +2.21% | +2.41% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.75% |
-| BSB/USDT:USDT | below_1h_threshold | +1.52% | +1.72% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.32% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.03% | +2.12% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.64% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.36% | +1.45% |
+| SLX/USDT:USDT | below_1h_threshold | +1.16% | +1.25% |
 
 ## 7. 次に見るべき不足
 
