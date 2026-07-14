@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T09:26:10.596760+00:00
+- generated_at: 2026-07-14T09:31:12.893267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8681**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T09:26:04.311953+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=62661.6
+- 更新: 2026-07-14T09:31:06.666609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=62634.8
 - Funnel: target 862 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +29.49% | $8,246,289.08 |
-| SXT/USDT:USDT | +19.99% | $4,831,993.56 |
-| TRIA/USDT:USDT | +19.54% | $4,315,595.21 |
-| BSB/USDT:USDT | +19.27% | $3,346,498.70 |
-| EVAA/USDT:USDT | +15.88% | $21,401,949.74 |
+| AIOT/USDT:USDT | +28.55% | $8,270,304.84 |
+| SXT/USDT:USDT | +20.00% | $4,929,302.17 |
+| BSB/USDT:USDT | +19.94% | $3,400,569.18 |
+| TRIA/USDT:USDT | +18.91% | $4,337,265.08 |
+| ZBT/USDT:USDT | +15.32% | $3,750,669.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.91% | +3.94% |
-| UAI/USDT:USDT | below_1h_threshold | +3.49% | +3.52% |
-| US/USDT:USDT | below_1h_threshold | +2.42% | +2.45% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.02% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.88% |
+| BILL/USDT:USDT | below_1h_threshold | +4.97% | +5.05% |
+| UAI/USDT:USDT | below_1h_threshold | +3.79% | +3.86% |
+| US/USDT:USDT | below_1h_threshold | +2.56% | +2.63% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.99% | +2.07% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.86% | +1.94% |
 
 ## 7. 次に見るべき不足
 
