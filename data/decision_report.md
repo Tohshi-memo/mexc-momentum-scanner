@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T22:21:09.292793+00:00
+- generated_at: 2026-07-14T22:26:14.088775+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8705**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 115件
+- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 116件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000173 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T22:21:02.928888+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=64837.3
-- Funnel: target 862 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-14T22:26:05.573326+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=64927.6
+- Funnel: target 862 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +30.25% | $2,467,692.30 |
-| DODO/USDT:USDT | +13.28% | $3,301,098.25 |
-| VELVET/USDT:USDT | +9.65% | $30,358,285.00 |
-| US/USDT:USDT | +5.69% | $1,771,926.83 |
-| POETSTOCK/USDT:USDT | +5.28% | $7,094,511.42 |
+| AEHRSTOCK/USDT:USDT | +30.95% | $2,563,312.08 |
+| DODO/USDT:USDT | +13.08% | $3,367,517.12 |
+| VELVET/USDT:USDT | +12.42% | $30,563,205.91 |
+| US/USDT:USDT | +5.71% | $1,777,266.20 |
+| POETSTOCK/USDT:USDT | +5.21% | $7,095,107.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.24% | +2.95% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.49% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.73% | +1.44% |
-| RVN/USDT:USDT | below_1h_threshold | +1.42% | +1.13% |
-| LIT/USDT:USDT | below_1h_threshold | +1.37% | +1.08% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.35% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.73% | +1.30% |
+| TAG/USDT:USDT | below_1h_threshold | +1.45% | +1.02% |
+| LIT/USDT:USDT | below_1h_threshold | +1.42% | +0.99% |
+| RVN/USDT:USDT | below_1h_threshold | +1.34% | +0.91% |
 
 ## 7. 次に見るべき不足
 

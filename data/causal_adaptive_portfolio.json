@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 98.74846501582911,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-14T22:21:08.082780+00:00",
+  "updated_at": "2026-07-14T22:26:12.881909+00:00",
   "high_watermark": 100.39228961245912,
   "max_drawdown_pct": 1.6374012416447623,
   "loss_streak": 6,
@@ -14852,9 +14852,100 @@
           }
         ]
       }
+    },
+    {
+      "key": "VELVET/USDT:USDT|2026-07-14T22:26:05.967048+00:00",
+      "symbol": "VELVET/USDT:USDT",
+      "detected_at": "2026-07-14T22:26:05.967048+00:00",
+      "reason": "loss_streak_cooldown",
+      "decision": {
+        "strategy": "MARKET_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.00017278127698984458,
+        "robust_score": 0.00017278127698984458,
+        "causal_history_count": 8703,
+        "fast": {
+          "strategy": "MARKET_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.5675589766656052,
+          "effective_ev_pct": 0.5675589766656052,
+          "avg_log_return": 0.0002776041971074171,
+          "geometric_return_pct": 0.02776427327182418,
+          "avg_account_return_pct": 0.027952119152399722,
+          "max_drawdown_pct": 1.2253611788657803,
+          "max_loss_streak": 7
+        },
+        "recent": {
+          "strategy": "MARKET_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.5675589766656052,
+          "effective_ev_pct": 0.5675589766656052,
+          "avg_log_return": 0.0002776041971074171,
+          "geometric_return_pct": 0.02776427327182418,
+          "avg_account_return_pct": 0.027952119152399722,
+          "max_drawdown_pct": 1.2253611788657803,
+          "max_loss_streak": 7
+        },
+        "mid": {
+          "strategy": "MARKET_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 200,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.057971489278667826,
+          "effective_ev_pct": -0.057971489278667826,
+          "avg_log_return": 8.295209501684836e-06,
+          "geometric_return_pct": 0.000829524390710823,
+          "avg_account_return_pct": 0.0010017447821537397,
+          "max_drawdown_pct": 3.4310050971994848,
+          "max_loss_streak": 8
+        },
+        "long": {
+          "strategy": "MARKET_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.19413027385979564,
+          "effective_ev_pct": 0.19413027385979564,
+          "avg_log_return": 0.00011740270486839805,
+          "geometric_return_pct": 0.011740959683570473,
+          "avg_account_return_pct": 0.011929305962015028,
+          "max_drawdown_pct": 3.810818483247585,
+          "max_loss_streak": 10
+        },
+        "all": {
+          "strategy": "MARKET_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.19413027385979564,
+          "effective_ev_pct": 0.19413027385979564,
+          "avg_log_return": 0.00011740270486839805,
+          "geometric_return_pct": 0.011740959683570473,
+          "avg_account_return_pct": 0.011929305962015028,
+          "max_drawdown_pct": 3.810818483247585,
+          "max_loss_streak": 10
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_2PCT_LONG",
+            "direction": "long",
+            "causal_score": 0.0001667991044970229
+          }
+        ]
+      }
     }
   ],
-  "skipped_count": 115,
+  "skipped_count": 116,
   "applied_keys": [
     "AEHRSTOCK/USDT:USDT|2026-07-14T21:01:08.175747+00:00",
     "AEHRSTOCK/USDT:USDT|2026-07-14T21:16:10.494312+00:00",
@@ -15028,6 +15119,7 @@
     "VELVET/USDT:USDT|2026-07-13T08:26:08.436616+00:00",
     "VELVET/USDT:USDT|2026-07-13T08:31:12.065890+00:00",
     "VELVET/USDT:USDT|2026-07-14T05:56:16.897887+00:00",
+    "VELVET/USDT:USDT|2026-07-14T22:26:05.967048+00:00",
     "XEC/USDT:USDT|2026-07-13T06:16:09.327379+00:00",
     "XPIN/USDT:USDT|2026-07-11T15:36:03.105125+00:00",
     "XPIN/USDT:USDT|2026-07-12T04:16:09.027047+00:00"
