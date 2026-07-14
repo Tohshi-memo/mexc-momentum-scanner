@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T15:31:06.529678+00:00
+- generated_at: 2026-07-14T15:36:15.157533+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8696**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T15:31:00.096884+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=64512.3
+- 更新: 2026-07-14T15:36:10.149557+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.84% price=64820.0
 - Funnel: target 862 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +78.96% | $37,961,705.91 |
-| BSB/USDT:USDT | +40.06% | $7,431,797.15 |
-| CASHCAT/USDT:USDT | +25.92% | $1,028,767.47 |
-| AIOT/USDT:USDT | +25.86% | $8,794,935.46 |
-| AXTISTOCK/USDT:USDT | +17.82% | $3,092,071.82 |
+| EVAA/USDT:USDT | +79.33% | $38,305,140.91 |
+| BSB/USDT:USDT | +38.47% | $7,531,125.87 |
+| AIOT/USDT:USDT | +27.12% | $8,800,446.41 |
+| CASHCAT/USDT:USDT | +24.57% | $1,032,513.86 |
+| HEI/USDT:USDT | +18.90% | $1,874,755.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +2.76% | +2.39% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.33% | +1.97% |
-| BSB/USDT:USDT | below_1h_threshold | +2.33% | +1.96% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.94% | +1.57% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.34% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.10% | +2.25% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.33% | +1.49% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.85% | +1.01% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +0.87% |
+| ADA/USDT:USDT | below_1h_threshold | +1.58% | +0.74% |
 
 ## 7. 次に見るべき不足
 
