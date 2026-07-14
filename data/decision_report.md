@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T01:01:11.711942+00:00
+- generated_at: 2026-07-14T01:06:11.601603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8655**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T01:01:06.499154+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=62505.0
+- 更新: 2026-07-14T01:06:05.377673+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=62436.1
 - Funnel: target 867 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +26.08% | $23,000,211.83 |
-| AIOT/USDT:USDT | +22.15% | $5,649,617.11 |
-| ZBT/USDT:USDT | +19.30% | $1,649,236.29 |
-| ALLO/USDT:USDT | +10.55% | $50,686,732.92 |
-| USOIL/USDT:USDT | +5.85% | $161,606,369.97 |
+| EVAA/USDT:USDT | +26.49% | $23,031,831.38 |
+| AIOT/USDT:USDT | +21.15% | $5,664,153.70 |
+| ZBT/USDT:USDT | +18.79% | $1,684,987.40 |
+| ALLO/USDT:USDT | +9.87% | $50,783,755.20 |
+| USOIL/USDT:USDT | +5.89% | $162,454,076.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.92% | +4.94% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.91% | +3.94% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.68% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.60% | +3.62% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.77% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.92% | +5.05% |
+| BLAST/USDT:USDT | below_1h_threshold | +4.64% | +4.77% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.42% | +4.56% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.91% | +4.05% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.79% |
 
 ## 7. 次に見るべき不足
 
