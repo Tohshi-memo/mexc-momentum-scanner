@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T16:46:16.344008+00:00
+- generated_at: 2026-07-14T16:51:12.868756+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 109件
+- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 110件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000203 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SXT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T16:46:08.411312+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64778.0
-- Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-14T16:51:03.938636+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64770.8
+- Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +6.42% | $10,073,282.80 |
-| SKHYSTOCK/USDT:USDT | +3.67% | $5,424,670.39 |
-| SXT/USDT:USDT | +3.06% | $8,791,276.63 |
-| LIT/USDT:USDT | +2.66% | $5,017,230.47 |
-| SLX/USDT:USDT | +2.53% | $2,114,513.60 |
+| VANRY/USDT:USDT | +5.15% | $1,023,086.04 |
+| BSB/USDT:USDT | +4.69% | $10,303,065.82 |
+| XPL/USDT:USDT | +3.70% | $7,291,795.89 |
+| SXT/USDT:USDT | +3.00% | $8,816,064.63 |
+| SLX/USDT:USDT | +2.90% | $2,130,105.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +3.17% | +3.09% |
-| LIT/USDT:USDT | below_1h_threshold | +2.66% | +2.59% |
-| SLX/USDT:USDT | below_1h_threshold | +2.53% | +2.46% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.38% | +2.31% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.07% |
+| BSB/USDT:USDT | below_1h_threshold | +4.76% | +4.69% |
+| XPL/USDT:USDT | below_1h_threshold | +3.69% | +3.62% |
+| SXT/USDT:USDT | below_1h_threshold | +2.98% | +2.91% |
+| SLX/USDT:USDT | below_1h_threshold | +2.91% | +2.84% |
+| TAG/USDT:USDT | below_1h_threshold | +2.61% | +2.54% |
 
 ## 7. 次に見るべき不足
 
