@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T16:31:17.219808+00:00
+- generated_at: 2026-07-14T16:36:12.049320+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T16:31:12.014596+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64792.4
+- 更新: 2026-07-14T16:36:05.555650+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=64854.3
 - Funnel: target 862 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- Strict後reject: 4h RSI 72.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +5.37% | $9,672,404.99 |
-| SKHYSTOCK/USDT:USDT | +4.86% | $5,149,980.68 |
-| SXT/USDT:USDT | +4.74% | $8,695,404.51 |
-| XPL/USDT:USDT | +4.42% | $6,096,816.55 |
-| PUMPFUN/USDT:USDT | +4.24% | $5,647,359.65 |
+| BSB/USDT:USDT | +7.10% | $9,762,736.30 |
+| PUMPFUN/USDT:USDT | +3.96% | $5,714,210.83 |
+| SKHYSTOCK/USDT:USDT | +3.95% | $5,233,745.99 |
+| SXT/USDT:USDT | +3.40% | $8,727,916.94 |
+| LIT/USDT:USDT | +2.95% | $4,967,328.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +4.66% | +4.56% |
-| XPL/USDT:USDT | below_1h_threshold | +4.46% | +4.36% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.31% | +4.21% |
-| LIT/USDT:USDT | below_1h_threshold | +2.86% | +2.76% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.05% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.97% | +3.77% |
+| SXT/USDT:USDT | below_1h_threshold | +3.45% | +3.26% |
+| LIT/USDT:USDT | below_1h_threshold | +3.01% | +2.81% |
+| XPL/USDT:USDT | below_1h_threshold | +2.23% | +2.03% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.15% | +1.95% |
 
 ## 7. 次に見るべき不足
 
