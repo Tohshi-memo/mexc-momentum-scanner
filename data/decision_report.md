@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T00:51:11.860946+00:00
+- generated_at: 2026-07-14T00:56:06.852965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8655**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T00:51:05.551006+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=62376.5
+- 更新: 2026-07-14T00:56:00.607689+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=62624.9
 - Funnel: target 867 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +25.83% | $23,431,173.49 |
-| AIOT/USDT:USDT | +22.38% | $5,636,534.09 |
-| ZBT/USDT:USDT | +16.59% | $1,620,278.71 |
-| ALLO/USDT:USDT | +9.44% | $50,782,806.17 |
-| USOIL/USDT:USDT | +6.20% | $163,071,091.51 |
+| EVAA/USDT:USDT | +26.78% | $23,458,008.14 |
+| AIOT/USDT:USDT | +22.64% | $5,639,092.57 |
+| ZBT/USDT:USDT | +18.28% | $1,627,374.79 |
+| ALLO/USDT:USDT | +9.60% | $50,846,923.38 |
+| USOIL/USDT:USDT | +6.19% | $163,623,204.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EGLD/USDT:USDT | below_1h_threshold | +4.74% | +4.63% |
-| KITE/USDT:USDT | below_1h_threshold | +3.09% | +2.97% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.58% | +2.47% |
-| T/USDT:USDT | below_1h_threshold | +1.62% | +1.51% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.43% | +1.32% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.68% | +3.17% |
+| KITE/USDT:USDT | below_1h_threshold | +3.36% | +2.85% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.16% | +1.65% |
+| WIF/USDT:USDT | below_1h_threshold | +1.59% | +1.08% |
+| JCT/USDT:USDT | below_1h_threshold | +1.48% | +0.97% |
 
 ## 7. 次に見るべき不足
 
