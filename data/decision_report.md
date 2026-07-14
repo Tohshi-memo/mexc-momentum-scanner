@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T05:51:13.907284+00:00
+- generated_at: 2026-07-14T05:56:27.259227+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8672**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.62** / 初期 $100.00 (-0.38%)
-- 確定: 53件 (Win 19 / Loss 34 / Flat 0) / pending 3件 / skip 86件
+- 確定: 53件 (Win 19 / Loss 34 / Flat 0) / pending 5件 / skip 87件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000200 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TRIA/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.62
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T05:51:07.428740+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=62674.8
-- Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-14T05:56:15.552155+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=62690.1
+- Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +30.13% | $1,936,885.25 |
-| AIOT/USDT:USDT | +28.65% | $7,269,499.68 |
-| ZBT/USDT:USDT | +23.45% | $2,809,824.08 |
-| EVAA/USDT:USDT | +14.23% | $21,864,538.49 |
-| VELVET/USDT:USDT | +12.82% | $33,804,656.79 |
+| AIOT/USDT:USDT | +32.00% | $7,307,490.08 |
+| TRIA/USDT:USDT | +31.65% | $2,021,417.29 |
+| ZBT/USDT:USDT | +24.47% | $2,821,793.05 |
+| VELVET/USDT:USDT | +14.43% | $33,985,339.36 |
+| EVAA/USDT:USDT | +13.73% | $21,899,890.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.77% | +4.83% |
-| SXT/USDT:USDT | below_1h_threshold | +4.73% | +4.79% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.67% | +4.74% |
-| LAB/USDT:USDT | below_1h_threshold | +4.21% | +4.28% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.99% | +4.05% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.67% | +4.72% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.41% | +4.45% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.49% | +3.53% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.99% | +3.03% |
+| CRV/USDT:USDT | below_1h_threshold | +2.19% | +2.23% |
 
 ## 7. 次に見るべき不足
 
