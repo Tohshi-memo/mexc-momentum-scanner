@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T03:36:09.799262+00:00
+- generated_at: 2026-07-14T03:41:16.887714+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8661**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.47** / 初期 $100.00 (-0.53%)
-- 確定: 42件 (Win 15 / Loss 27 / Flat 0) / pending 1件 / skip 86件
+- 確定: 42件 (Win 15 / Loss 27 / Flat 0) / pending 2件 / skip 86件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000279 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AIOT/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.47
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T03:36:03.381969+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=62447.1
+- 更新: 2026-07-14T03:41:07.917451+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=62480.4
 - Funnel: target 867 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +27.90% | $7,041,532.94 |
-| TRIA/USDT:USDT | +21.56% | $1,221,583.69 |
-| EVAA/USDT:USDT | +17.91% | $22,197,967.23 |
-| ZBT/USDT:USDT | +15.15% | $2,064,264.73 |
-| VELVET/USDT:USDT | +6.94% | $32,412,672.83 |
+| AIOT/USDT:USDT | +27.22% | $7,087,297.92 |
+| TRIA/USDT:USDT | +20.55% | $1,260,692.55 |
+| EVAA/USDT:USDT | +19.52% | $22,240,960.75 |
+| ZBT/USDT:USDT | +15.58% | $2,069,414.55 |
+| LAB/USDT:USDT | +9.51% | $12,939,294.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.89% | +3.01% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.99% | +2.10% |
-| BSB/USDT:USDT | below_1h_threshold | +1.78% | +1.90% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.84% | +0.95% |
-| ICP/USDT:USDT | below_1h_threshold | +0.41% | +0.53% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.37% | +4.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.21% | +3.27% |
+| US/USDT:USDT | below_1h_threshold | +1.94% | +2.00% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.90% | +1.96% |
+| BSB/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
 
 ## 7. 次に見るべき不足
 
