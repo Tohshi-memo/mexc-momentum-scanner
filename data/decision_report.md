@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T02:11:10.912750+00:00
+- generated_at: 2026-07-14T02:16:07.951270+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8657**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T02:11:04.459535+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=62554.2
+- 更新: 2026-07-14T02:16:01.821144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=62459.8
 - Funnel: target 867 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +25.04% | $5,884,702.28 |
-| EVAA/USDT:USDT | +24.08% | $22,034,299.80 |
-| ZBT/USDT:USDT | +15.66% | $1,913,389.42 |
-| BLAST/USDT:USDT | +10.54% | $1,642,854.68 |
-| VELVET/USDT:USDT | +9.22% | $31,145,554.10 |
+| AIOT/USDT:USDT | +24.00% | $5,896,181.17 |
+| EVAA/USDT:USDT | +21.41% | $22,070,204.27 |
+| ZBT/USDT:USDT | +14.90% | $1,930,300.07 |
+| BLAST/USDT:USDT | +9.01% | $1,655,749.16 |
+| VELVET/USDT:USDT | +8.58% | $31,201,509.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +1.04% | +0.96% |
-| T/USDT:USDT | below_1h_threshold | +0.99% | +0.91% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.68% | +0.60% |
-| ANSEM/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
-| XEC/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
+| T/USDT:USDT | below_1h_threshold | +2.42% | +2.50% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.81% | +0.88% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.45% | +0.53% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.27% | +0.34% |
+| XAU/USDT:USDT | below_1h_threshold | +0.19% | +0.27% |
 
 ## 7. 次に見るべき不足
 
