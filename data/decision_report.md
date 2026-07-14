@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T19:01:13.271214+00:00
+- generated_at: 2026-07-14T19:06:10.417544+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8700**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T19:01:06.933048+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64558.1
+- 更新: 2026-07-14T19:06:04.207169+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64546.0
 - Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +7.01% | $30,674,037.85 |
-| TAC/USDT:USDT | +6.57% | $1,102,614.70 |
-| BSB/USDT:USDT | +5.62% | $12,242,234.79 |
-| US/USDT:USDT | +5.32% | $1,612,640.68 |
-| SXT/USDT:USDT | +4.13% | $10,285,864.38 |
+| VELVET/USDT:USDT | +6.22% | $30,761,544.77 |
+| BSB/USDT:USDT | +5.87% | $12,306,736.65 |
+| US/USDT:USDT | +5.30% | $1,615,149.10 |
+| TAC/USDT:USDT | +4.92% | $1,114,488.84 |
+| SKHYSTOCK/USDT:USDT | +4.09% | $7,235,709.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.28% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.84% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.69% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.48% | +0.46% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.34% | +2.33% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.60% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.30% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.79% | +0.79% |
 
 ## 7. 次に見るべき不足
 
