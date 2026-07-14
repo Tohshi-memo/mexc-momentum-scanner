@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T18:36:18.399160+00:00
+- generated_at: 2026-07-14T18:41:11.469875+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T18:36:09.646763+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64539.3
-- Funnel: target 862 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-14T18:41:05.220587+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64589.4
+- Funnel: target 862 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +6.86% | $12,044,449.32 |
-| CASHCAT/USDT:USDT | +6.61% | $1,292,539.64 |
-| SKHYSTOCK/USDT:USDT | +5.78% | $6,777,392.88 |
-| TAC/USDT:USDT | +5.74% | $1,087,589.62 |
-| VELVET/USDT:USDT | +5.41% | $31,202,309.76 |
+| TAC/USDT:USDT | +6.15% | $1,092,614.72 |
+| VELVET/USDT:USDT | +6.07% | $31,282,929.85 |
+| SKHYSTOCK/USDT:USDT | +5.84% | $6,833,570.64 |
+| US/USDT:USDT | +5.64% | $1,633,711.91 |
+| BSB/USDT:USDT | +5.56% | $12,105,402.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POETSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.32% |
-| EGLD/USDT:USDT | below_1h_threshold | +2.03% | +2.12% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.64% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.36% | +1.45% |
-| SLX/USDT:USDT | below_1h_threshold | +1.16% | +1.25% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.84% | +2.85% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.24% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.87% | +1.88% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.83% | +1.85% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
 
 ## 7. 次に見るべき不足
 
