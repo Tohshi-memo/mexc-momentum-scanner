@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 98.74846501582911,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-14T20:56:09.089105+00:00",
+  "updated_at": "2026-07-14T21:01:13.008483+00:00",
   "high_watermark": 100.39228961245912,
   "max_drawdown_pct": 1.6374012416447623,
   "loss_streak": 6,
@@ -21030,6 +21030,103 @@
       },
       "settled_at": "2026-07-14T07:10:33.305464+00:00",
       "outcome": "EXPIRED"
+    },
+    "AEHRSTOCK/USDT:USDT|2026-07-14T21:01:08.175747+00:00": {
+      "key": "AEHRSTOCK/USDT:USDT|2026-07-14T21:01:08.175747+00:00",
+      "symbol": "AEHRSTOCK/USDT:USDT",
+      "detected_at": "2026-07-14T21:01:08.175747+00:00",
+      "registered_at": "2026-07-14T21:01:12.953085+00:00",
+      "signal_batch": "2026-07-14T21:01Z",
+      "status": "pending",
+      "strategy": "LIMIT_2PCT_LONG",
+      "direction": "long",
+      "risk_pct": 0.175,
+      "relative_strength": 26.11656708364978,
+      "decision": {
+        "strategy": "LIMIT_2PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.000145334429627086,
+        "robust_score": 0.000145334429627086,
+        "causal_history_count": 8701,
+        "fast": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 37,
+          "fill_rate": 0.74,
+          "avg_pnl_pct": 0.7146762192292553,
+          "effective_ev_pct": 0.5288604022296489,
+          "avg_log_return": 0.0002558914849542099,
+          "geometric_return_pct": 0.025592422797315884,
+          "avg_account_return_pct": 0.025792438014113763,
+          "max_drawdown_pct": 0.8719428546872015,
+          "max_loss_streak": 5
+        },
+        "recent": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 37,
+          "fill_rate": 0.74,
+          "avg_pnl_pct": 0.7146762192292553,
+          "effective_ev_pct": 0.5288604022296489,
+          "avg_log_return": 0.0002558914849542099,
+          "geometric_return_pct": 0.025592422797315884,
+          "avg_account_return_pct": 0.025792438014113763,
+          "max_drawdown_pct": 0.8719428546872015,
+          "max_loss_streak": 5
+        },
+        "mid": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 144,
+          "fill_rate": 0.72,
+          "avg_pnl_pct": 0.02395464353700144,
+          "effective_ev_pct": 0.017247343346641037,
+          "avg_log_return": 3.208514395935046e-05,
+          "geometric_return_pct": 0.003208565869305957,
+          "avg_account_return_pct": 0.003388875547336305,
+          "max_drawdown_pct": 3.308240676916283,
+          "max_loss_streak": 10
+        },
+        "long": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 666,
+          "fill_rate": 0.666,
+          "avg_pnl_pct": -0.18804023871984415,
+          "effective_ev_pct": -0.1252347989874162,
+          "avg_log_return": -3.354286857023049e-05,
+          "geometric_return_pct": -0.0033542306014489043,
+          "avg_account_return_pct": -0.003188709501788422,
+          "max_drawdown_pct": 5.886607590863037,
+          "max_loss_streak": 14
+        },
+        "all": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 666,
+          "fill_rate": 0.666,
+          "avg_pnl_pct": -0.18804023871984415,
+          "effective_ev_pct": -0.1252347989874162,
+          "avg_log_return": -3.354286857023049e-05,
+          "geometric_return_pct": -0.0033542306014489043,
+          "avg_account_return_pct": -0.003188709501788422,
+          "max_drawdown_pct": 5.886607590863037,
+          "max_loss_streak": 14
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 5.3882176209139026e-05
+          }
+        ]
+      }
     }
   },
   "causal_history": true

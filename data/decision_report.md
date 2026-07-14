@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T20:56:10.294827+00:00
+- generated_at: 2026-07-14T21:01:14.196324+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8703**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 112件
+- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 1件 / skip 112件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000145 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SXT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T20:56:04.057046+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64481.1
-- Funnel: target 862 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-14T21:01:07.841893+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64563.9
+- Funnel: target 862 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.9 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +27.31% | $1,579,756.68 |
-| SKHYSTOCK/USDT:USDT | +6.69% | $9,964,303.71 |
-| VELVET/USDT:USDT | +6.54% | $31,065,150.50 |
-| POETSTOCK/USDT:USDT | +5.58% | $7,026,048.29 |
-| US/USDT:USDT | +5.14% | $1,754,366.18 |
+| AEHRSTOCK/USDT:USDT | +27.69% | $1,610,171.23 |
+| VELVET/USDT:USDT | +6.46% | $29,976,710.28 |
+| SKHYSTOCK/USDT:USDT | +6.08% | $10,037,789.11 |
+| POETSTOCK/USDT:USDT | +5.54% | $7,018,987.82 |
+| US/USDT:USDT | +5.24% | $1,729,668.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.11% |
-| DODO/USDT:USDT | below_1h_threshold | +2.59% | +2.68% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.16% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.00% | +2.09% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.61% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.91% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.76% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
+| AVAVSTOCK/USDT:USDT | below_1h_threshold | +0.49% | +0.46% |
+| SXT/USDT:USDT | below_1h_threshold | +0.24% | +0.20% |
 
 ## 7. 次に見るべき不足
 
