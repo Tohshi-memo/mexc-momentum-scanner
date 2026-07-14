@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T16:01:19.090504+00:00
+- generated_at: 2026-07-14T16:06:12.329325+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8697**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T16:01:11.662045+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64779.4
+- 更新: 2026-07-14T16:06:06.062702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64734.5
 - Funnel: target 862 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +0.54% | $6,205,281.50 |
-| SKHYNIXSTOCK/USDT:USDT | +0.52% | $32,706,096.98 |
-| SYN/USDT:USDT | +0.40% | $6,262,891.31 |
-| SKHYSTOCK/USDT:USDT | +0.37% | $4,319,172.07 |
-| IBMSTOCK/USDT:USDT | +0.37% | $5,623,930.19 |
+| PIPPIN/USDT:USDT | +1.88% | $1,635,422.74 |
+| DEXE/USDT:USDT | +1.32% | $6,213,801.63 |
+| B/USDT:USDT | +1.22% | $4,278,372.38 |
+| SKHYSTOCK/USDT:USDT | +1.19% | $4,368,553.73 |
+| SPX/USDT:USDT | +1.15% | $2,131,848.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.39% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.02% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +1.97% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.12% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.54% | +0.46% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.14% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.09% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +2.04% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
+| KITE/USDT:USDT | below_1h_threshold | +1.56% | +1.55% |
 
 ## 7. 次に見るべき不足
 
