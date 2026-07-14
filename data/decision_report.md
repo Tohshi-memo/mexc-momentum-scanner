@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T17:41:12.292973+00:00
+- generated_at: 2026-07-14T17:46:14.478267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 110件
+- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 111件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000203 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SXT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T17:41:06.015467+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=64430.0
-- Funnel: target 862 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-14T17:46:08.099601+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=64480.3
+- Funnel: target 862 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.9 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +7.81% | $9,118,101.02 |
-| BSB/USDT:USDT | +7.10% | $11,236,695.30 |
-| TAC/USDT:USDT | +6.95% | $1,033,584.15 |
-| US/USDT:USDT | +6.88% | $1,481,205.63 |
-| SKHYSTOCK/USDT:USDT | +4.43% | $5,897,756.26 |
+| SXT/USDT:USDT | +8.67% | $9,208,538.22 |
+| US/USDT:USDT | +6.90% | $1,490,184.82 |
+| TAC/USDT:USDT | +6.60% | $1,035,218.34 |
+| BSB/USDT:USDT | +6.48% | $11,350,731.22 |
+| VELVET/USDT:USDT | +5.76% | $31,084,028.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +4.50% | +4.93% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.55% | +3.97% |
-| US/USDT:USDT | below_1h_threshold | +3.06% | +3.48% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.74% |
-| JUP/USDT:USDT | below_1h_threshold | +2.06% | +2.48% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.92% | +5.26% |
+| US/USDT:USDT | below_1h_threshold | +3.26% | +3.60% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.67% |
+| JUP/USDT:USDT | below_1h_threshold | +2.16% | +2.50% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +2.14% |
 
 ## 7. 次に見るべき不足
 
