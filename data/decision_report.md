@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T17:26:14.234877+00:00
+- generated_at: 2026-07-14T17:31:13.390771+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T17:26:07.965460+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=64435.6
-- Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-14T17:31:07.096208+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=64467.1
+- Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +6.19% | $1,005,238.76 |
-| SXT/USDT:USDT | +6.16% | $8,970,755.11 |
-| BSB/USDT:USDT | +5.99% | $10,889,795.35 |
-| US/USDT:USDT | +5.99% | $1,418,074.90 |
-| SLX/USDT:USDT | +5.58% | $2,076,414.58 |
+| BSB/USDT:USDT | +6.92% | $10,983,996.62 |
+| TAC/USDT:USDT | +5.81% | $1,019,779.93 |
+| US/USDT:USDT | +5.64% | $1,429,335.37 |
+| SXT/USDT:USDT | +5.29% | $8,990,280.70 |
+| SLX/USDT:USDT | +4.76% | $2,085,530.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +2.67% | +3.09% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.74% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.32% | +2.73% |
-| US/USDT:USDT | below_1h_threshold | +2.24% | +2.66% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +2.21% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.83% | +4.20% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.58% | +2.95% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.69% |
+| SXT/USDT:USDT | below_1h_threshold | +2.01% | +2.37% |
+| US/USDT:USDT | below_1h_threshold | +1.87% | +2.24% |
 
 ## 7. 次に見るべき不足
 
