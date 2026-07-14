@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T19:31:05.568276+00:00
+- generated_at: 2026-07-14T19:36:08.361248+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8701**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T19:30:59.286156+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64485.0
+- 更新: 2026-07-14T19:36:01.901940+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64470.0
 - Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +6.55% | $12,604,573.92 |
-| SKHYSTOCK/USDT:USDT | +5.99% | $7,835,027.25 |
-| US/USDT:USDT | +5.96% | $1,669,154.07 |
-| TAC/USDT:USDT | +5.74% | $1,139,950.95 |
-| VELVET/USDT:USDT | +4.46% | $31,364,725.28 |
+| BSB/USDT:USDT | +7.04% | $12,660,807.02 |
+| US/USDT:USDT | +6.01% | $1,677,601.20 |
+| TAC/USDT:USDT | +5.91% | $1,148,199.55 |
+| SKHYSTOCK/USDT:USDT | +5.88% | $7,937,500.20 |
+| VELVET/USDT:USDT | +4.80% | $31,440,882.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.69% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.54% | +1.63% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.49% | +1.59% |
-| BSB/USDT:USDT | below_1h_threshold | +1.35% | +1.44% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.40% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +2.06% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.83% | +1.94% |
+| BSB/USDT:USDT | below_1h_threshold | +1.76% | +1.88% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.71% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.42% |
 
 ## 7. 次に見るべき不足
 
