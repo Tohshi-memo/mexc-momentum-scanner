@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T22:56:14.762625+00:00
+- generated_at: 2026-07-14T23:01:08.270146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8705**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T22:56:06.467882+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=64888.1
-- Funnel: target 862 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-14T23:01:02.064029+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64860.0
+- Funnel: target 862 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +27.91% | $2,714,625.59 |
-| DODO/USDT:USDT | +17.65% | $3,648,101.30 |
-| VELVET/USDT:USDT | +13.85% | $31,690,790.94 |
-| US/USDT:USDT | +5.91% | $1,792,695.67 |
-| POETSTOCK/USDT:USDT | +5.57% | $7,126,062.04 |
+| AEHRSTOCK/USDT:USDT | +29.17% | $2,721,456.05 |
+| DODO/USDT:USDT | +17.29% | $3,505,737.98 |
+| VELVET/USDT:USDT | +12.06% | $31,223,059.66 |
+| US/USDT:USDT | +6.04% | $1,740,385.28 |
+| POETSTOCK/USDT:USDT | +5.37% | $7,123,687.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_relative_strength | +5.34% | +4.97% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.64% | +3.27% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.97% | +2.60% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.42% |
-| LIT/USDT:USDT | below_1h_threshold | +2.42% | +2.05% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.09% |
+| DODO/USDT:USDT | below_1h_threshold | +1.11% | +1.07% |
+| EWY/USDT:USDT | below_1h_threshold | +1.01% | +0.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.81% | +0.78% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.55% |
 
 ## 7. 次に見るべき不足
 
