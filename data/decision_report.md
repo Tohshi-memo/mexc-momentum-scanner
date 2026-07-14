@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T05:16:15.900135+00:00
+- generated_at: 2026-07-14T05:21:13.128016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8669**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T05:16:07.530120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=62795.3
+- 更新: 2026-07-14T05:21:04.827563+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62746.9
 - Funnel: target 867 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +33.69% | $7,107,460.76 |
-| ZBT/USDT:USDT | +23.70% | $2,671,616.25 |
-| TRIA/USDT:USDT | +16.77% | $1,638,344.41 |
-| EVAA/USDT:USDT | +14.53% | $21,702,592.31 |
-| FOLKS/USDT:USDT | +9.33% | $1,305,174.32 |
+| AIOT/USDT:USDT | +33.07% | $7,121,452.14 |
+| ZBT/USDT:USDT | +24.21% | $2,702,286.66 |
+| TRIA/USDT:USDT | +19.29% | $1,656,305.67 |
+| EVAA/USDT:USDT | +15.13% | $21,735,610.78 |
+| LAB/USDT:USDT | +10.69% | $18,646,013.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.67% | +4.55% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.49% | +3.36% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.99% | +2.87% |
-| SXT/USDT:USDT | below_1h_threshold | +2.76% | +2.63% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.33% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.67% | +4.63% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.49% | +3.44% |
+| SXT/USDT:USDT | below_1h_threshold | +3.06% | +3.01% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.05% | +3.00% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.01% | +2.97% |
 
 ## 7. 次に見るべき不足
 
