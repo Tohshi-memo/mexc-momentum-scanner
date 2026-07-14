@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T22:51:14.202839+00:00
+- generated_at: 2026-07-14T22:56:14.762625+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8705**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T22:51:05.475486+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=64879.6
+- 更新: 2026-07-14T22:56:06.467882+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=64888.1
 - Funnel: target 862 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +28.67% | $2,695,277.74 |
-| DODO/USDT:USDT | +17.08% | $3,629,169.70 |
-| VELVET/USDT:USDT | +13.80% | $31,512,843.39 |
-| US/USDT:USDT | +5.82% | $1,787,202.92 |
-| POETSTOCK/USDT:USDT | +5.58% | $7,125,455.26 |
+| AEHRSTOCK/USDT:USDT | +27.91% | $2,714,625.59 |
+| DODO/USDT:USDT | +17.65% | $3,648,101.30 |
+| VELVET/USDT:USDT | +13.85% | $31,690,790.94 |
+| US/USDT:USDT | +5.91% | $1,792,695.67 |
+| POETSTOCK/USDT:USDT | +5.57% | $7,126,062.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.29% | +3.94% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.97% | +2.61% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.43% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.66% | +2.30% |
-| LIT/USDT:USDT | below_1h_threshold | +2.40% | +2.04% |
+| CASHCAT/USDT:USDT | below_relative_strength | +5.34% | +4.97% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.64% | +3.27% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.97% | +2.60% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.42% |
+| LIT/USDT:USDT | below_1h_threshold | +2.42% | +2.05% |
 
 ## 7. 次に見るべき不足
 
