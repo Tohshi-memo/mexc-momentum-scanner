@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T20:31:07.391752+00:00
+- generated_at: 2026-07-14T20:36:09.958860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8703**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T20:31:02.722259+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=64419.5
+- 更新: 2026-07-14T20:36:03.519438+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=64416.0
 - Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +29.71% | $1,260,780.19 |
-| SKHYSTOCK/USDT:USDT | +6.70% | $9,585,477.40 |
-| POETSTOCK/USDT:USDT | +5.41% | $6,936,864.49 |
-| US/USDT:USDT | +4.94% | $1,723,759.71 |
-| VELVET/USDT:USDT | +4.90% | $30,752,203.80 |
+| AEHRSTOCK/USDT:USDT | +29.44% | $1,356,268.09 |
+| SKHYSTOCK/USDT:USDT | +6.64% | $9,612,438.38 |
+| VELVET/USDT:USDT | +5.54% | $30,815,560.50 |
+| POETSTOCK/USDT:USDT | +5.54% | $6,989,235.57 |
+| US/USDT:USDT | +5.35% | $1,733,602.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.21% |
-| DODO/USDT:USDT | below_1h_threshold | +2.29% | +2.47% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.10% | +2.29% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.25% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.71% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.22% |
+| DODO/USDT:USDT | below_1h_threshold | +2.54% | +2.73% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.26% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.66% | +1.85% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.72% |
 
 ## 7. 次に見るべき不足
 
