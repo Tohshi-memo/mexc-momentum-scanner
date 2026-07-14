@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T13:36:16.716750+00:00
+- generated_at: 2026-07-14T13:41:15.706907+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8692**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T13:36:09.108669+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=63804.3
-- Funnel: target 864 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.1 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-14T13:41:09.786441+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63897.6
+- Funnel: target 864 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +82.93% | $32,453,214.18 |
-| BSB/USDT:USDT | +31.34% | $4,905,485.52 |
-| AIOT/USDT:USDT | +23.74% | $8,663,215.49 |
-| HEI/USDT:USDT | +20.32% | $1,432,778.87 |
-| SXT/USDT:USDT | +16.70% | $8,074,971.97 |
+| EVAA/USDT:USDT | +79.49% | $33,150,112.68 |
+| BSB/USDT:USDT | +27.74% | $5,049,296.52 |
+| AIOT/USDT:USDT | +23.61% | $8,675,258.03 |
+| HEI/USDT:USDT | +21.13% | $1,440,364.14 |
+| TSEMSTOCK/USDT:USDT | +16.88% | $1,285,094.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.62% | +4.82% |
-| KORU/USDT:USDT | below_1h_threshold | +3.81% | +4.01% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.60% | +3.80% |
-| MVLL/USDT:USDT | below_1h_threshold | +3.09% | +3.29% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.49% | +2.69% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.82% | +3.87% |
+| KORU/USDT:USDT | below_1h_threshold | +3.81% | +3.86% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.60% | +3.65% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.09% | +3.14% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.09% | +3.14% |
 
 ## 7. 次に見るべき不足
 
