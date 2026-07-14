@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T14:16:26.748497+00:00
+- generated_at: 2026-07-14T14:21:15.961181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8694**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 105件
+- 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 106件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000255 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SXT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T14:16:20.243455+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63794.8
-- Funnel: target 862 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-14T14:21:07.186078+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63804.1
+- Funnel: target 862 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +75.46% | $34,409,300.17 |
-| BSB/USDT:USDT | +33.52% | $5,567,222.02 |
-| HEI/USDT:USDT | +25.68% | $1,538,066.34 |
-| AIOT/USDT:USDT | +24.23% | $8,692,256.45 |
-| SYN/USDT:USDT | +18.76% | $5,822,665.62 |
+| EVAA/USDT:USDT | +64.75% | $35,319,032.41 |
+| BSB/USDT:USDT | +32.60% | $5,688,417.16 |
+| AIOT/USDT:USDT | +28.46% | $8,721,280.26 |
+| HEI/USDT:USDT | +26.39% | $1,546,274.68 |
+| SYN/USDT:USDT | +18.76% | $5,924,149.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.79% | +4.80% |
-| JPMSTOCK/USDT:USDT | below_1h_threshold | +3.81% | +3.82% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.79% | +3.80% |
-| BSB/USDT:USDT | below_1h_threshold | +3.51% | +3.52% |
-| HEI/USDT:USDT | below_1h_threshold | +1.55% | +1.57% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.79% | +4.79% |
+| AIOT/USDT:USDT | below_1h_threshold | +4.51% | +4.51% |
+| JPMSTOCK/USDT:USDT | below_1h_threshold | +3.81% | +3.81% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.79% | +3.79% |
+| BSB/USDT:USDT | below_1h_threshold | +2.79% | +2.79% |
 
 ## 7. 次に見るべき不足
 
