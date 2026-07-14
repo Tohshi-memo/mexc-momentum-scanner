@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T16:56:13.214229+00:00
+- generated_at: 2026-07-14T17:01:08.019341+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T16:56:06.923651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64751.0
-- Funnel: target 862 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-14T17:01:01.751886+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64664.4
+- Funnel: target 862 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +4.31% | $1,060,574.07 |
-| XPL/USDT:USDT | +3.62% | $7,347,163.99 |
-| BSB/USDT:USDT | +3.46% | $10,431,084.90 |
-| SXT/USDT:USDT | +3.20% | $8,830,848.47 |
-| SLX/USDT:USDT | +3.20% | $2,130,924.85 |
+| BSB/USDT:USDT | +4.38% | $10,366,128.11 |
+| VANRY/USDT:USDT | +4.29% | $1,004,534.03 |
+| SXT/USDT:USDT | +3.73% | $8,728,130.90 |
+| SLX/USDT:USDT | +3.72% | $1,962,382.10 |
+| XPL/USDT:USDT | +3.49% | $7,460,167.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +4.31% | +4.28% |
-| XPL/USDT:USDT | below_1h_threshold | +3.72% | +3.69% |
-| BSB/USDT:USDT | below_1h_threshold | +3.46% | +3.42% |
-| SLX/USDT:USDT | below_1h_threshold | +3.20% | +3.17% |
-| SXT/USDT:USDT | below_1h_threshold | +3.20% | +3.17% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.38% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.86% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.42% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.19% |
 
 ## 7. 次に見るべき不足
 
