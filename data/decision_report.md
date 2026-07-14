@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-14T20:11:10.629427+00:00
+- generated_at: 2026-07-14T20:16:25.493683+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8701**
+- closed shadow trades: **8702**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8701, expectancy=-0.00%
+- 全期間 MARKET基準: n=8702, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 9/10 | 90.0% | +1.57% | **+1.42%** |
+| LIMIT_BB3S_LONG | 8/9 | 88.9% | +2.27% | **+2.02%** |
 | LIMIT_2PCT_LONG | 16/20 | 80.0% | +1.73% | **+1.38%** |
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.44% | **+1.22%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.80% | **+0.80%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$329.76** / 初期 $100.00 (+229.76%)
-- 確定: 2863件 (Win 894 / Loss 931 / Flat 1038) / skip 2399件
+- 確定: 2863件 (Win 894 / Loss 931 / Flat 1038) / skip 2400件
 - 成長率目線: 平均log +0.000417 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: VANRY/USDT:USDT `LIMIT_BB3S_LONG` SL_HIT account -0.50% 残高後 $329.76
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.49** / 初期 $100.00 (+5.49%)
-- 確定: 693件 (Win 161 / Loss 162 / Flat 370) / skip 1419件
+- 確定: 693件 (Win 161 / Loss 162 / Flat 370) / skip 1420件
 - 成長率目線: 平均log +0.000077 / 幾何平均 +0.008% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0356 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0296 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: DEXE/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $105.49
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,35 +65,35 @@
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
 - 確定: 59件 (Win 19 / Loss 39 / Flat 1) / pending 0件 / skip 112件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000170 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000148 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SXT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T20:11:04.255329+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64461.3
-- Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-14T20:16:18.075346+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64428.9
+- Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKHYSTOCK/USDT:USDT | +6.96% | $9,276,434.60 |
-| POETSTOCK/USDT:USDT | +6.19% | $6,068,313.26 |
-| VELVET/USDT:USDT | +6.05% | $30,527,882.77 |
-| TAC/USDT:USDT | +6.02% | $1,160,105.73 |
-| US/USDT:USDT | +5.65% | $1,704,708.10 |
+| AEHRSTOCK/USDT:USDT | +23.61% | $1,030,969.62 |
+| SKHYSTOCK/USDT:USDT | +6.73% | $9,384,808.69 |
+| VELVET/USDT:USDT | +6.03% | $30,557,668.88 |
+| POETSTOCK/USDT:USDT | +5.89% | $6,304,639.35 |
+| US/USDT:USDT | +5.18% | $1,710,835.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.14% |
-| DODO/USDT:USDT | below_1h_threshold | +3.05% | +3.17% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.19% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.77% | +1.89% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.65% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.02% | +4.20% |
+| DODO/USDT:USDT | below_1h_threshold | +2.95% | +3.12% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.24% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.77% | +1.94% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.70% |
 
 ## 7. 次に見るべき不足
 
