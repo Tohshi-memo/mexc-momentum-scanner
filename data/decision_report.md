@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T17:51:18.052745+00:00
+- generated_at: 2026-07-14T17:56:14.025637+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T17:51:11.933079+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=64537.1
+- 更新: 2026-07-14T17:56:07.615876+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64634.3
 - Funnel: target 862 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 68.2 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +8.84% | $9,299,269.33 |
-| BSB/USDT:USDT | +7.35% | $11,504,398.88 |
-| US/USDT:USDT | +7.22% | $1,503,614.53 |
-| VELVET/USDT:USDT | +5.71% | $31,267,049.95 |
-| TAC/USDT:USDT | +5.67% | $1,040,717.71 |
+| SXT/USDT:USDT | +8.94% | $9,382,253.13 |
+| US/USDT:USDT | +7.29% | $1,511,860.99 |
+| TAC/USDT:USDT | +7.19% | $1,047,001.87 |
+| VELVET/USDT:USDT | +5.61% | $31,358,357.95 |
+| BSB/USDT:USDT | +4.07% | $11,590,789.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.97% | +5.23% |
-| US/USDT:USDT | below_1h_threshold | +3.63% | +3.88% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.58% |
-| JUP/USDT:USDT | below_1h_threshold | +2.11% | +2.36% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +2.05% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.69% | +4.80% |
+| US/USDT:USDT | below_1h_threshold | +3.50% | +3.61% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.43% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.23% | +2.33% |
+| JUP/USDT:USDT | below_1h_threshold | +2.11% | +2.21% |
 
 ## 7. 次に見るべき不足
 
