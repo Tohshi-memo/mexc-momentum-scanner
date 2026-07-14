@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T17:01:08.019341+00:00
+- generated_at: 2026-07-14T17:06:12.410131+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T17:01:01.751886+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64664.4
+- 更新: 2026-07-14T17:06:06.090486+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64669.2
 - Funnel: target 862 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BSB/USDT:USDT | +4.38% | $10,366,128.11 |
-| VANRY/USDT:USDT | +4.29% | $1,004,534.03 |
-| SXT/USDT:USDT | +3.73% | $8,728,130.90 |
-| SLX/USDT:USDT | +3.72% | $1,962,382.10 |
-| XPL/USDT:USDT | +3.49% | $7,460,167.88 |
+| SXT/USDT:USDT | +5.98% | $8,805,234.43 |
+| SLX/USDT:USDT | +5.36% | $1,988,094.22 |
+| US/USDT:USDT | +4.69% | $1,259,654.19 |
+| BSB/USDT:USDT | +4.32% | $10,469,029.67 |
+| XPL/USDT:USDT | +4.25% | $7,524,409.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.38% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.85% | +1.91% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.86% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.42% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.19% |
+| SXT/USDT:USDT | below_1h_threshold | +2.73% | +2.78% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.32% | +2.37% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.85% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.78% | +1.83% |
+| SLX/USDT:USDT | below_1h_threshold | +1.51% | +1.56% |
 
 ## 7. 次に見るべき不足
 
