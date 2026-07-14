@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T02:41:08.484512+00:00
+- generated_at: 2026-07-14T02:46:28.018246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8657**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.31** / 初期 $100.00 (-0.69%)
-- 確定: 40件 (Win 14 / Loss 26 / Flat 0) / pending 0件 / skip 86件
+- 確定: 40件 (Win 14 / Loss 26 / Flat 0) / pending 1件 / skip 86件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000241 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLAST/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $99.31
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T02:41:02.228816+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62497.3
-- Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-14T02:46:21.699439+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=62559.0
+- Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +31.90% | $6,003,393.50 |
-| EVAA/USDT:USDT | +20.22% | $22,224,958.21 |
-| ZBT/USDT:USDT | +15.49% | $1,996,020.32 |
-| BLAST/USDT:USDT | +13.14% | $1,685,424.01 |
-| VELVET/USDT:USDT | +11.26% | $31,690,467.36 |
+| AIOT/USDT:USDT | +36.32% | $6,049,452.40 |
+| EVAA/USDT:USDT | +20.05% | $22,269,364.67 |
+| ZBT/USDT:USDT | +15.83% | $2,000,819.71 |
+| BLAST/USDT:USDT | +13.86% | $1,695,738.66 |
+| VELVET/USDT:USDT | +11.35% | $31,740,291.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIOT/USDT:USDT | below_1h_threshold | +4.94% | +4.95% |
-| BSB/USDT:USDT | below_1h_threshold | +3.87% | +3.88% |
-| BLAST/USDT:USDT | below_1h_threshold | +2.66% | +2.68% |
-| T/USDT:USDT | below_1h_threshold | +2.46% | +2.48% |
-| CAP/USDT:USDT | below_1h_threshold | +1.61% | +1.63% |
+| BSB/USDT:USDT | below_1h_threshold | +3.70% | +3.62% |
+| BLAST/USDT:USDT | below_1h_threshold | +3.40% | +3.31% |
+| CAP/USDT:USDT | below_1h_threshold | +1.87% | +1.78% |
+| T/USDT:USDT | below_1h_threshold | +1.70% | +1.62% |
+| JTO/USDT:USDT | below_1h_threshold | +1.61% | +1.53% |
 
 ## 7. 次に見るべき不足
 
