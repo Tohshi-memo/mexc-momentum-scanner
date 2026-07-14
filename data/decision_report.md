@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T08:01:10.780175+00:00
+- generated_at: 2026-07-14T08:06:14.207627+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8679**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T08:01:04.501581+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62525.0
-- Funnel: target 862 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-14T08:06:09.194637+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62559.9
+- Funnel: target 862 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +36.45% | $7,919,410.82 |
-| TRIA/USDT:USDT | +30.01% | $3,258,517.00 |
-| ZBT/USDT:USDT | +18.88% | $3,374,944.96 |
-| SXT/USDT:USDT | +18.56% | $2,827,190.57 |
-| BSB/USDT:USDT | +16.42% | $2,520,971.46 |
+| AIOT/USDT:USDT | +36.09% | $7,931,781.37 |
+| TRIA/USDT:USDT | +28.12% | $3,330,927.51 |
+| SXT/USDT:USDT | +20.53% | $2,881,334.76 |
+| ZBT/USDT:USDT | +18.62% | $3,385,651.72 |
+| BSB/USDT:USDT | +15.42% | $2,556,808.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.42% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
-| AIOT/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.78% |
+| SXT/USDT:USDT | below_1h_threshold | +1.57% | +1.52% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +0.99% |
+| ENA/USDT:USDT | below_1h_threshold | +1.00% | +0.95% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.90% |
 
 ## 7. 次に見るべき不足
 
