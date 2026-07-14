@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T01:51:10.871943+00:00
+- generated_at: 2026-07-14T01:56:09.897810+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8656**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T01:51:04.552397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=62477.8
+- 更新: 2026-07-14T01:56:04.657121+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=62484.7
 - Funnel: target 867 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 65.1 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EVAA/USDT:USDT | +25.97% | $23,405,809.83 |
-| AIOT/USDT:USDT | +18.94% | $5,838,029.47 |
-| ZBT/USDT:USDT | +18.28% | $1,836,566.26 |
-| BLAST/USDT:USDT | +9.73% | $1,640,804.99 |
-| VELVET/USDT:USDT | +9.70% | $31,410,627.31 |
+| AIOT/USDT:USDT | +24.04% | $5,869,306.77 |
+| EVAA/USDT:USDT | +23.69% | $23,434,169.09 |
+| ZBT/USDT:USDT | +17.61% | $1,842,073.88 |
+| VELVET/USDT:USDT | +10.00% | $31,519,046.08 |
+| BLAST/USDT:USDT | +9.61% | $1,646,607.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.92% | +4.98% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.37% | +4.44% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.91% | +3.98% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.72% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.31% | +3.38% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.92% | +4.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.74% | +4.80% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.71% |
+| BILL/USDT:USDT | below_1h_threshold | +3.62% | +3.68% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.38% | +3.44% |
 
 ## 7. 次に見るべき不足
 
