@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T21:56:20.140147+00:00
+- generated_at: 2026-07-14T22:01:11.995430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8705**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T21:56:11.204349+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64630.0
-- Funnel: target 862 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-14T22:01:05.731099+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64602.1
+- Funnel: target 862 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +30.93% | $2,300,111.98 |
-| DODO/USDT:USDT | +18.62% | $3,371,967.55 |
-| POETSTOCK/USDT:USDT | +5.16% | $7,097,478.26 |
-| US/USDT:USDT | +4.73% | $1,793,133.09 |
-| VELVET/USDT:USDT | +4.58% | $30,613,643.28 |
+| AEHRSTOCK/USDT:USDT | +31.08% | $2,379,044.44 |
+| DODO/USDT:USDT | +17.70% | $3,137,770.33 |
+| VELVET/USDT:USDT | +6.76% | $29,916,493.02 |
+| POETSTOCK/USDT:USDT | +5.15% | $7,092,901.82 |
+| US/USDT:USDT | +4.73% | $1,748,419.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +2.20% | +2.06% |
-| SYN/USDT:USDT | below_1h_threshold | +1.65% | +1.50% |
-| TIA/USDT:USDT | below_1h_threshold | +1.30% | +1.16% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.16% | +1.02% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.00% | +0.86% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.86% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.39% | +0.46% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.37% |
+| INJ/USDT:USDT | below_1h_threshold | +0.16% | +0.23% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.14% | +0.22% |
 
 ## 7. 次に見るべき不足
 
