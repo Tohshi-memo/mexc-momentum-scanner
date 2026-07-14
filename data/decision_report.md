@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T18:01:14.681497+00:00
+- generated_at: 2026-07-14T18:06:14.179923+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8699**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T18:01:08.344833+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64588.7
+- 更新: 2026-07-14T18:06:07.932184+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64541.0
 - Funnel: target 862 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SXT/USDT:USDT | +7.78% | $9,350,704.87 |
-| US/USDT:USDT | +6.94% | $1,516,292.95 |
-| TAC/USDT:USDT | +6.22% | $1,004,636.99 |
-| BSB/USDT:USDT | +5.68% | $11,577,118.24 |
-| VELVET/USDT:USDT | +4.75% | $30,562,857.00 |
+| SXT/USDT:USDT | +8.32% | $9,430,489.91 |
+| US/USDT:USDT | +7.45% | $1,526,646.06 |
+| TAC/USDT:USDT | +6.36% | $1,020,216.95 |
+| VELVET/USDT:USDT | +4.71% | $30,625,092.39 |
+| RIVER/USDT:USDT | +3.93% | $1,676,360.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POETSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.25% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
-| PLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.34% |
-| IONQSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.89% | +0.90% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.32% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.63% |
+| IONQSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.24% |
+| SLX/USDT:USDT | below_1h_threshold | +0.94% | +1.03% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.89% | +0.97% |
 
 ## 7. 次に見るべき不足
 
