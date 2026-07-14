@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-14T07:56:25.450248+00:00
+- generated_at: 2026-07-14T08:01:10.780175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8679**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-14T07:56:15.865975+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=62540.4
-- Funnel: target 862 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 65.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-14T08:01:04.501581+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=62525.0
+- Funnel: target 862 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIOT/USDT:USDT | +36.93% | $7,929,027.10 |
-| TRIA/USDT:USDT | +31.52% | $3,244,155.59 |
-| ZBT/USDT:USDT | +20.15% | $3,380,438.84 |
-| SXT/USDT:USDT | +18.63% | $2,867,280.38 |
-| BSB/USDT:USDT | +16.01% | $2,478,374.11 |
+| AIOT/USDT:USDT | +36.45% | $7,919,410.82 |
+| TRIA/USDT:USDT | +30.01% | $3,258,517.00 |
+| ZBT/USDT:USDT | +18.88% | $3,374,944.96 |
+| SXT/USDT:USDT | +18.56% | $2,827,190.57 |
+| BSB/USDT:USDT | +16.42% | $2,520,971.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.36% | +4.45% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.19% | +2.28% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.17% | +1.26% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.03% | +1.12% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.08% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.42% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
+| AIOT/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.78% |
 
 ## 7. 次に見るべき不足
 
