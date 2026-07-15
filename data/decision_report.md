@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T11:41:13.810679+00:00
+- generated_at: 2026-07-15T11:46:14.897567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8738**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 2件 / skip 149件
+- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 3件 / skip 149件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000340 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T11:41:07.495593+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64688.0
-- Funnel: target 870 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-15T11:46:08.266890+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64672.4
+- Funnel: target 870 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +195.12% | $18,043,290.95 |
-| DODO/USDT:USDT | +38.17% | $11,018,310.54 |
-| AEHRSTOCK/USDT:USDT | +31.02% | $3,947,320.48 |
-| US/USDT:USDT | +30.09% | $4,681,185.04 |
-| XEC/USDT:USDT | +14.88% | $1,400,820.86 |
+| AKE/USDT:USDT | +194.34% | $18,188,818.80 |
+| DODO/USDT:USDT | +40.48% | $11,054,741.25 |
+| US/USDT:USDT | +32.19% | $4,772,489.39 |
+| AEHRSTOCK/USDT:USDT | +31.22% | $3,954,605.82 |
+| MAGMA/USDT:USDT | +14.46% | $2,248,612.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 0G/USDT:USDT | below_1h_threshold | +4.58% | +4.50% |
-| RAVE/USDT:USDT | below_1h_threshold | +3.84% | +3.75% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.76% | +1.67% |
-| TIA/USDT:USDT | below_1h_threshold | +1.60% | +1.51% |
-| TAC/USDT:USDT | below_1h_threshold | +1.58% | +1.49% |
+| 0G/USDT:USDT | below_1h_threshold | +3.36% | +3.30% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.99% | +1.92% |
+| TIA/USDT:USDT | below_1h_threshold | +1.94% | +1.88% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.80% | +1.74% |
+| US/USDT:USDT | below_1h_threshold | +1.45% | +1.39% |
 
 ## 7. 次に見るべき不足
 
