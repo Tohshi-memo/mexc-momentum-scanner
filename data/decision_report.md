@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T16:06:15.403926+00:00
+- generated_at: 2026-07-15T16:11:12.363084+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8755**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T16:06:09.046336+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=65285.6
+- 更新: 2026-07-15T16:11:05.999190+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.40% price=65131.1
 - Funnel: target 871 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +3.19% | $36,170,337.92 |
-| BASED/USDT:USDT | +1.86% | $2,438,475.63 |
-| DODO/USDT:USDT | +1.51% | $13,793,983.39 |
-| BSPSTOCK/USDT:USDT | +1.02% | $1,730,257.12 |
-| JASMY/USDT:USDT | +0.76% | $1,312,124.89 |
+| DODO/USDT:USDT | +2.93% | $13,858,296.00 |
+| BASED/USDT:USDT | +2.67% | $2,469,552.08 |
+| BSPSTOCK/USDT:USDT | +1.38% | $1,735,620.22 |
+| ALCH/USDT:USDT | +1.16% | $2,883,438.07 |
+| ZBT/USDT:USDT | +0.66% | $2,326,483.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.12% | +3.29% |
-| BASED/USDT:USDT | below_1h_threshold | +2.14% | +2.31% |
-| DODO/USDT:USDT | below_1h_threshold | +1.45% | +1.61% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.93% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.70% | +0.86% |
+| DODO/USDT:USDT | below_1h_threshold | +3.07% | +3.47% |
+| BASED/USDT:USDT | below_1h_threshold | +2.67% | +3.07% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.23% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.16% | +1.56% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +1.17% |
 
 ## 7. 次に見るべき不足
 
