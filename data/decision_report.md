@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T00:21:23.470288+00:00
+- generated_at: 2026-07-15T00:26:12.915877+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8708**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T00:21:15.885487+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=64875.6
+- 更新: 2026-07-15T00:26:06.583662+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=64828.9
 - Funnel: target 862 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 73.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +42.58% | $4,396,410.60 |
-| AEHRSTOCK/USDT:USDT | +30.15% | $2,957,926.79 |
-| VELVET/USDT:USDT | +11.87% | $32,334,755.62 |
-| US/USDT:USDT | +8.55% | $1,801,233.08 |
-| SKHYSTOCK/USDT:USDT | +7.51% | $12,293,862.93 |
+| DODO/USDT:USDT | +42.89% | $4,550,137.55 |
+| AEHRSTOCK/USDT:USDT | +30.15% | $2,963,149.69 |
+| VELVET/USDT:USDT | +12.46% | $32,365,067.97 |
+| US/USDT:USDT | +7.69% | $1,804,819.33 |
+| SKHYSTOCK/USDT:USDT | +7.34% | $12,416,905.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.91% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.82% |
-| T/USDT:USDT | below_1h_threshold | +2.03% | +2.24% |
-| US/USDT:USDT | below_1h_threshold | +1.94% | +2.15% |
-| SYN/USDT:USDT | below_1h_threshold | +1.80% | +2.01% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.98% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.89% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.52% | +2.80% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +2.08% |
+| LIT/USDT:USDT | below_1h_threshold | +1.62% | +1.91% |
 
 ## 7. 次に見るべき不足
 
