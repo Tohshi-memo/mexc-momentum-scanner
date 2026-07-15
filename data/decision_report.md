@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T08:41:21.275130+00:00
+- generated_at: 2026-07-15T08:46:25.086067+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8732**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 146件
+- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 147件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000308 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T08:41:13.551151+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=64705.8
-- Funnel: target 866 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1
+- 更新: 2026-07-15T08:46:18.060489+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=64720.1
+- Funnel: target 867 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.0 >= 65=1, 4h RSI 70.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +205.24% | $10,949,953.46 |
-| DODO/USDT:USDT | +34.88% | $9,405,814.33 |
-| AEHRSTOCK/USDT:USDT | +30.14% | $3,720,003.35 |
-| US/USDT:USDT | +27.02% | $4,032,741.65 |
-| MAGMA/USDT:USDT | +21.45% | $2,799,953.60 |
+| AKE/USDT:USDT | +210.53% | $11,212,496.23 |
+| DODO/USDT:USDT | +35.50% | $9,435,200.89 |
+| AEHRSTOCK/USDT:USDT | +30.51% | $3,721,000.27 |
+| US/USDT:USDT | +25.50% | $4,060,935.29 |
+| MAGMA/USDT:USDT | +20.95% | $2,808,433.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_relative_strength | +5.24% | +4.97% |
-| DODO/USDT:USDT | below_1h_threshold | +3.79% | +3.52% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.29% | +1.03% |
-| LIT/USDT:USDT | below_1h_threshold | +1.07% | +0.80% |
-| XEC/USDT:USDT | below_1h_threshold | +0.99% | +0.72% |
+| DODO/USDT:USDT | below_1h_threshold | +4.26% | +3.97% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.40% | +1.11% |
+| LIT/USDT:USDT | below_1h_threshold | +1.11% | +0.82% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.95% | +0.66% |
+| MORPHO/USDT:USDT | below_1h_threshold | +0.89% | +0.60% |
 
 ## 7. 次に見るべき不足
 
