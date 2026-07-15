@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T16:11:12.363084+00:00
+- generated_at: 2026-07-15T16:16:13.879989+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8755**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T16:11:05.999190+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=65131.1
-- Funnel: target 871 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T16:16:07.464628+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=65109.3
+- Funnel: target 871 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +2.93% | $13,858,296.00 |
-| BASED/USDT:USDT | +2.67% | $2,469,552.08 |
-| BSPSTOCK/USDT:USDT | +1.38% | $1,735,620.22 |
-| ALCH/USDT:USDT | +1.16% | $2,883,438.07 |
-| ZBT/USDT:USDT | +0.66% | $2,326,483.64 |
+| DODO/USDT:USDT | +2.71% | $13,923,941.92 |
+| BASED/USDT:USDT | +2.48% | $2,502,625.76 |
+| ALCH/USDT:USDT | +1.20% | $2,903,905.54 |
+| BSPSTOCK/USDT:USDT | +1.20% | $1,737,892.83 |
+| ZBT/USDT:USDT | +0.77% | $2,330,700.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +3.07% | +3.47% |
-| BASED/USDT:USDT | below_1h_threshold | +2.67% | +3.07% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.23% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.16% | +1.56% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +1.17% |
+| DODO/USDT:USDT | below_1h_threshold | +2.72% | +3.15% |
+| BASED/USDT:USDT | below_1h_threshold | +2.48% | +2.91% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.26% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.20% | +1.63% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +1.20% |
 
 ## 7. 次に見るべき不足
 
