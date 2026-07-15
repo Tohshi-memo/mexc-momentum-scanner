@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T01:51:12.439704+00:00
+- generated_at: 2026-07-15T01:56:23.458246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8709**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T01:51:07.197079+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=64640.0
+- 更新: 2026-07-15T01:56:17.024615+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=64633.6
 - Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.4 >= 65=1
+- Strict後reject: 4h RSI 69.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +30.53% | $2,904,541.96 |
-| DODO/USDT:USDT | +29.75% | $5,992,168.95 |
-| PUMPFUN/USDT:USDT | +11.36% | $10,268,006.82 |
-| MAGMA/USDT:USDT | +10.28% | $2,199,452.61 |
-| VELVET/USDT:USDT | +6.46% | $32,970,452.56 |
+| DODO/USDT:USDT | +31.50% | $6,123,919.10 |
+| AEHRSTOCK/USDT:USDT | +31.05% | $2,907,085.96 |
+| PUMPFUN/USDT:USDT | +11.70% | $10,373,837.42 |
+| MAGMA/USDT:USDT | +10.55% | $2,201,225.31 |
+| VELVET/USDT:USDT | +7.27% | $33,120,773.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.91% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.57% | +2.81% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.02% | +2.26% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.71% | +1.95% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.62% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.92% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.45% | +2.71% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.67% | +1.93% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.63% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.59% |
 
 ## 7. 次に見るべき不足
 
