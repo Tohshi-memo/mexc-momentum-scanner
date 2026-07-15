@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T08:46:25.086067+00:00
+- generated_at: 2026-07-15T08:51:18.090146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8732**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T08:46:18.060489+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=64720.1
-- Funnel: target 867 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.0 >= 65=1, 4h RSI 70.1 >= 65=1
+- 更新: 2026-07-15T08:51:11.741755+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=64710.5
+- Funnel: target 867 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +210.53% | $11,212,496.23 |
-| DODO/USDT:USDT | +35.50% | $9,435,200.89 |
-| AEHRSTOCK/USDT:USDT | +30.51% | $3,721,000.27 |
-| US/USDT:USDT | +25.50% | $4,060,935.29 |
-| MAGMA/USDT:USDT | +20.95% | $2,808,433.53 |
+| AKE/USDT:USDT | +207.78% | $11,411,361.89 |
+| DODO/USDT:USDT | +35.45% | $9,457,094.13 |
+| AEHRSTOCK/USDT:USDT | +31.16% | $3,724,377.52 |
+| US/USDT:USDT | +23.65% | $4,125,373.09 |
+| MAGMA/USDT:USDT | +20.72% | $2,811,450.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +4.26% | +3.97% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.40% | +1.11% |
-| LIT/USDT:USDT | below_1h_threshold | +1.11% | +0.82% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.95% | +0.66% |
-| MORPHO/USDT:USDT | below_1h_threshold | +0.89% | +0.60% |
+| B3/USDT:USDT | below_1h_threshold | +4.59% | +4.31% |
+| TAC/USDT:USDT | below_1h_threshold | +4.22% | +3.94% |
+| DODO/USDT:USDT | below_1h_threshold | +3.91% | +3.63% |
+| XEC/USDT:USDT | below_1h_threshold | +1.90% | +1.62% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.48% | +1.20% |
 
 ## 7. 次に見るべき不足
 
