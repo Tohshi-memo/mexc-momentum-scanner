@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T04:21:12.196950+00:00
+- generated_at: 2026-07-15T04:26:11.236888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8711**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T04:21:05.912776+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64764.9
+- 更新: 2026-07-15T04:26:04.940893+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64763.2
 - Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,11 +79,11 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +35.04% | $7,858,806.03 |
-| AEHRSTOCK/USDT:USDT | +31.84% | $3,074,614.31 |
-| MAGMA/USDT:USDT | +17.19% | $2,464,430.43 |
-| PUMPFUN/USDT:USDT | +12.25% | $12,441,615.92 |
-| US/USDT:USDT | +9.95% | $2,034,870.24 |
+| DODO/USDT:USDT | +32.47% | $7,941,699.64 |
+| AEHRSTOCK/USDT:USDT | +31.99% | $3,079,828.06 |
+| MAGMA/USDT:USDT | +17.88% | $2,482,484.07 |
+| PUMPFUN/USDT:USDT | +12.04% | $12,445,444.51 |
+| US/USDT:USDT | +9.25% | $2,039,836.07 |
 
 ### Near Miss
 
