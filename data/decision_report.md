@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T14:56:20.678175+00:00
+- generated_at: 2026-07-15T15:01:12.971116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8751**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T14:56:13.430460+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=65388.2
-- Funnel: target 871 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.6 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI 69.5 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-15T15:01:06.722304+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=65328.1
+- Funnel: target 871 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +338.09% | $30,855,315.29 |
-| DODO/USDT:USDT | +45.25% | $12,724,456.40 |
-| US/USDT:USDT | +40.02% | $7,178,872.89 |
-| AEHRSTOCK/USDT:USDT | +30.08% | $6,495,929.74 |
-| RAVE/USDT:USDT | +15.91% | $4,853,446.89 |
+| AKE/USDT:USDT | +336.63% | $31,036,448.36 |
+| DODO/USDT:USDT | +42.53% | $12,909,264.42 |
+| US/USDT:USDT | +39.87% | $7,205,437.05 |
+| AEHRSTOCK/USDT:USDT | +29.47% | $6,523,052.87 |
+| RAVE/USDT:USDT | +18.04% | $4,873,457.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.32% |
-| TAC/USDT:USDT | below_1h_threshold | +1.74% | +1.28% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.11% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +0.66% |
-| UB/USDT:USDT | below_1h_threshold | +0.93% | +0.48% |
+| CCLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.89% |
+| FLUTSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.85% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.77% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.10% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +1.04% |
 
 ## 7. 次に見るべき不足
 
