@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T18:41:12.342081+00:00
+- generated_at: 2026-07-15T18:46:15.329203+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8758**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.49** / 初期 $100.00 (-1.51%)
-- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 165件
+- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 166件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000277 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.09% 残高後 $98.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T18:41:07.402069+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=65000.0
-- Funnel: target 871 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-15T18:46:08.816189+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64964.0
+- Funnel: target 871 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKL/USDT:USDT | +18.67% | $1,049,262.12 |
-| CAP/USDT:USDT | +7.67% | $1,193,682.37 |
-| LDO/USDT:USDT | +4.93% | $3,662,641.94 |
-| SNDKSTOCK/USDT:USDT | +4.90% | $109,277,941.01 |
-| ORDI/USDT:USDT | +4.32% | $3,550,955.38 |
+| SKL/USDT:USDT | +18.65% | $1,066,194.98 |
+| SNXX/USDT:USDT | +8.97% | $1,013,992.32 |
+| CAP/USDT:USDT | +7.73% | $1,195,792.91 |
+| LDO/USDT:USDT | +4.84% | $3,755,439.81 |
+| ORDI/USDT:USDT | +4.81% | $3,572,429.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.86% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.82% |
-| SKL/USDT:USDT | below_1h_threshold | +3.96% | +3.99% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.83% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.92% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.87% |
+| SKL/USDT:USDT | below_1h_threshold | +3.81% | +3.91% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.94% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.89% |
 
 ## 7. 次に見るべき不足
 
