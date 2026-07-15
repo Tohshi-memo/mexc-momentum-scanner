@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T14:51:20.370919+00:00
+- generated_at: 2026-07-15T14:56:20.678175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8751**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 62件 (Win 19 / Loss 39 / Flat 4) / pending 2件 / skip 158件
+- 確定: 62件 (Win 19 / Loss 39 / Flat 4) / pending 2件 / skip 159件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000316 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RAVE/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T14:51:11.445840+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=65415.6
-- Funnel: target 871 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.7 >= 65=1, 4h RSI 83.7 >= 65=1
+- 更新: 2026-07-15T14:56:13.430460+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=65388.2
+- Funnel: target 871 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.6 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI 69.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +342.03% | $30,604,934.86 |
-| DODO/USDT:USDT | +42.12% | $12,624,884.95 |
-| US/USDT:USDT | +39.22% | $7,101,728.96 |
-| AEHRSTOCK/USDT:USDT | +31.96% | $6,472,678.98 |
-| RAVE/USDT:USDT | +16.15% | $4,842,823.55 |
+| AKE/USDT:USDT | +338.09% | $30,855,315.29 |
+| DODO/USDT:USDT | +45.25% | $12,724,456.40 |
+| US/USDT:USDT | +40.02% | $7,178,872.89 |
+| AEHRSTOCK/USDT:USDT | +30.08% | $6,495,929.74 |
+| RAVE/USDT:USDT | +15.91% | $4,853,446.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +3.13% | +2.63% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.28% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.69% | +1.19% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.07% |
-| TAC/USDT:USDT | below_1h_threshold | +1.34% | +0.84% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.32% |
+| TAC/USDT:USDT | below_1h_threshold | +1.74% | +1.28% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.11% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +0.66% |
+| UB/USDT:USDT | below_1h_threshold | +0.93% | +0.48% |
 
 ## 7. 次に見るべき不足
 
