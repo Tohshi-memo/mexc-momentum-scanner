@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T18:36:15.092553+00:00
+- generated_at: 2026-07-15T18:41:12.342081+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8758**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T18:36:08.924733+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65032.2
+- 更新: 2026-07-15T18:41:07.402069+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=65000.0
 - Funnel: target 871 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKL/USDT:USDT | +17.97% | $1,035,114.28 |
-| CAP/USDT:USDT | +8.35% | $1,186,751.31 |
-| SNDKSTOCK/USDT:USDT | +5.54% | $108,673,212.22 |
-| LDO/USDT:USDT | +5.35% | $3,570,207.55 |
-| SKHYSTOCK/USDT:USDT | +4.76% | $21,041,318.07 |
+| SKL/USDT:USDT | +18.67% | $1,049,262.12 |
+| CAP/USDT:USDT | +7.67% | $1,193,682.37 |
+| LDO/USDT:USDT | +4.93% | $3,662,641.94 |
+| SNDKSTOCK/USDT:USDT | +4.90% | $109,277,941.01 |
+| ORDI/USDT:USDT | +4.32% | $3,550,955.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.81% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.77% |
-| SKL/USDT:USDT | below_1h_threshold | +3.32% | +3.31% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.84% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.78% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.86% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.82% |
+| SKL/USDT:USDT | below_1h_threshold | +3.96% | +3.99% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.83% |
 
 ## 7. 次に見るべき不足
 
