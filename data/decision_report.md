@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T18:06:16.069620+00:00
+- generated_at: 2026-07-15T18:11:16.716684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8757**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T18:06:09.795783+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=64960.9
+- 更新: 2026-07-15T18:11:10.381509+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=65014.3
 - Funnel: target 871 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +7.11% | $1,152,788.94 |
-| SNDKSTOCK/USDT:USDT | +5.53% | $104,395,504.50 |
-| LDO/USDT:USDT | +5.08% | $3,232,377.38 |
-| ALCH/USDT:USDT | +4.49% | $2,513,497.99 |
-| SOXL/USDT:USDT | +4.29% | $30,961,582.66 |
+| CAP/USDT:USDT | +8.17% | $1,158,189.71 |
+| SNDKSTOCK/USDT:USDT | +5.54% | $105,258,575.36 |
+| LDO/USDT:USDT | +4.99% | $3,256,102.72 |
+| SKHYSTOCK/USDT:USDT | +4.76% | $20,481,775.28 |
+| VELVET/USDT:USDT | +4.63% | $21,060,999.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.92% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.88% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.94% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.89% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.54% | +2.64% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.84% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.80% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.86% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.81% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.54% | +2.56% |
 
 ## 7. 次に見るべき不足
 
