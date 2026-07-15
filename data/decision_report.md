@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T15:01:12.971116+00:00
+- generated_at: 2026-07-15T15:06:17.310812+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8751**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T15:01:06.722304+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=65328.1
-- Funnel: target 871 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T15:06:11.074671+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=65346.6
+- Funnel: target 871 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +336.63% | $31,036,448.36 |
-| DODO/USDT:USDT | +42.53% | $12,909,264.42 |
-| US/USDT:USDT | +39.87% | $7,205,437.05 |
-| AEHRSTOCK/USDT:USDT | +29.47% | $6,523,052.87 |
-| RAVE/USDT:USDT | +18.04% | $4,873,457.65 |
+| AKE/USDT:USDT | +342.08% | $31,377,701.38 |
+| DODO/USDT:USDT | +43.25% | $12,986,106.69 |
+| US/USDT:USDT | +40.22% | $7,246,197.45 |
+| AEHRSTOCK/USDT:USDT | +29.47% | $6,547,122.29 |
+| RAVE/USDT:USDT | +17.85% | $4,896,417.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CCLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.89% |
-| FLUTSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.85% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.77% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.10% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +1.04% |
+| TAC/USDT:USDT | below_1h_threshold | +2.92% | +2.95% |
+| CCLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.87% |
+| FLUTSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.82% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.74% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.07% |
 
 ## 7. 次に見るべき不足
 
