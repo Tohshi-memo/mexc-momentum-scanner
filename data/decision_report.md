@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T00:46:15.051557+00:00
+- generated_at: 2026-07-15T00:51:12.940121+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8708**
 
@@ -70,22 +70,22 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T00:46:08.850566+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=64780.2
+- 更新: 2026-07-15T00:51:06.572326+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=64778.9
 - Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1
+- Strict後reject: 4h RSI 72.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +40.58% | $5,059,881.73 |
-| AEHRSTOCK/USDT:USDT | +30.69% | $3,002,875.85 |
-| VELVET/USDT:USDT | +13.53% | $32,771,939.09 |
-| US/USDT:USDT | +7.93% | $1,829,287.90 |
-| SKHYSTOCK/USDT:USDT | +6.71% | $12,705,071.19 |
+| DODO/USDT:USDT | +38.17% | $5,182,129.89 |
+| AEHRSTOCK/USDT:USDT | +30.58% | $3,025,169.74 |
+| VELVET/USDT:USDT | +11.51% | $32,935,718.48 |
+| US/USDT:USDT | +7.73% | $1,845,306.22 |
+| MAGMA/USDT:USDT | +7.55% | $2,114,912.00 |
 
 ### Near Miss
 
@@ -93,9 +93,9 @@
 |---|---|---:|---:|
 | SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +4.06% |
 | AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.97% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.09% | +2.45% |
-| SYN/USDT:USDT | below_1h_threshold | +1.80% | +2.16% |
-| ARB/USDT:USDT | below_1h_threshold | +1.66% | +2.02% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +2.15% |
+| SYN/USDT:USDT | below_1h_threshold | +1.72% | +2.09% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.39% | +1.75% |
 
 ## 7. 次に見るべき不足
 
