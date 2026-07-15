@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T22:21:11.670876+00:00
+- generated_at: 2026-07-15T22:26:12.490381+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8770**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.49** / 初期 $100.00 (-1.51%)
-- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 178件
+- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 179件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000319 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.09% 残高後 $98.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T22:21:05.536789+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64769.7
-- Funnel: target 871 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-15T22:26:06.016546+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64830.4
+- Funnel: target 871 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +19.11% | $5,305,905.20 |
-| CAP/USDT:USDT | +15.15% | $1,511,680.26 |
-| HOME/USDT:USDT | +11.10% | $1,169,317.73 |
-| SKL/USDT:USDT | +10.20% | $1,778,421.11 |
-| ONDO/USDT:USDT | +8.85% | $33,724,068.87 |
+| ROAM/USDT:USDT | +20.47% | $5,321,250.95 |
+| HOME/USDT:USDT | +15.60% | $1,197,488.13 |
+| CAP/USDT:USDT | +13.22% | $1,538,572.66 |
+| SKL/USDT:USDT | +10.62% | $1,786,707.95 |
+| ONDO/USDT:USDT | +9.21% | $33,989,614.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +4.58% | +4.62% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.45% | +0.50% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.44% | +0.49% |
-| XPT/USDT:USDT | below_1h_threshold | +0.42% | +0.46% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.41% | +0.45% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.23% | +1.19% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
+| ROAM/USDT:USDT | below_1h_threshold | +0.79% | +0.74% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.70% | +0.65% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.59% | +0.54% |
 
 ## 7. 次に見るべき不足
 
