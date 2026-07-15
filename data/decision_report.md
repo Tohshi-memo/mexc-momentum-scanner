@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T11:16:11.794924+00:00
+- generated_at: 2026-07-15T11:21:13.372181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8736**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T11:16:05.527181+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64692.1
-- Funnel: target 870 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T11:21:08.478618+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64639.9
+- Funnel: target 870 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +203.06% | $17,319,801.47 |
-| DODO/USDT:USDT | +37.60% | $10,780,613.41 |
-| AEHRSTOCK/USDT:USDT | +31.66% | $3,932,879.41 |
-| US/USDT:USDT | +31.14% | $4,606,700.25 |
-| XEC/USDT:USDT | +15.74% | $1,367,144.14 |
+| AKE/USDT:USDT | +199.42% | $17,560,498.33 |
+| DODO/USDT:USDT | +37.35% | $10,823,995.05 |
+| AEHRSTOCK/USDT:USDT | +31.98% | $3,934,000.49 |
+| US/USDT:USDT | +31.35% | $4,624,726.15 |
+| XEC/USDT:USDT | +15.51% | $1,370,470.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 0G/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.47% | +1.38% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.32% | +1.23% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.86% |
-| US/USDT:USDT | below_1h_threshold | +0.84% | +0.75% |
+| 0G/USDT:USDT | below_1h_threshold | +2.82% | +2.81% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.18% | +1.17% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.10% | +1.09% |
+| US/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.94% |
 
 ## 7. 次に見るべき不足
 
