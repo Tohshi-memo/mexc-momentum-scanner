@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T06:16:25.506529+00:00
+- generated_at: 2026-07-15T06:21:21.188104+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8714**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T06:16:15.761105+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64957.0
-- Funnel: target 864 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.9 >= 65=1
+- 更新: 2026-07-15T06:21:14.783133+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64988.4
+- Funnel: target 864 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +107.99% | $1,893,406.05 |
-| DODO/USDT:USDT | +35.86% | $8,695,386.00 |
-| AEHRSTOCK/USDT:USDT | +30.88% | $3,173,828.80 |
-| MAGMA/USDT:USDT | +19.95% | $2,662,574.00 |
-| US/USDT:USDT | +13.79% | $2,114,554.35 |
+| AKE/USDT:USDT | +105.13% | $2,111,794.06 |
+| DODO/USDT:USDT | +35.81% | $8,729,776.64 |
+| AEHRSTOCK/USDT:USDT | +31.04% | $3,174,943.52 |
+| MAGMA/USDT:USDT | +21.14% | $2,670,787.10 |
+| PUMPFUN/USDT:USDT | +12.38% | $13,562,242.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XEC/USDT:USDT | below_1h_threshold | +1.70% | +1.65% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.20% | +1.14% |
-| US/USDT:USDT | below_1h_threshold | +1.08% | +1.02% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
-| ANSEM/USDT:USDT | below_1h_threshold | +0.56% | +0.50% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.80% | +3.69% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.16% | +3.05% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.14% | +2.03% |
+| XEC/USDT:USDT | below_1h_threshold | +1.19% | +1.08% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.96% | +0.85% |
 
 ## 7. 次に見るべき不足
 
