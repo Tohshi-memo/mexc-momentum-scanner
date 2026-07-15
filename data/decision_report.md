@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T21:41:12.083613+00:00
+- generated_at: 2026-07-15T21:46:11.425967+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8768**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T21:41:03.596156+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=64770.6
+- 更新: 2026-07-15T21:46:04.272552+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=64794.6
 - Funnel: target 871 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +23.15% | $4,962,221.53 |
-| CAP/USDT:USDT | +14.59% | $1,454,423.84 |
-| SKL/USDT:USDT | +12.10% | $1,702,355.00 |
-| HOME/USDT:USDT | +11.82% | $1,123,861.14 |
-| ONDO/USDT:USDT | +9.57% | $31,309,127.34 |
+| ROAM/USDT:USDT | +25.52% | $5,006,820.95 |
+| CAP/USDT:USDT | +14.47% | $1,464,387.98 |
+| SKL/USDT:USDT | +12.12% | $1,713,611.39 |
+| SNXX/USDT:USDT | +9.89% | $1,347,013.50 |
+| HOME/USDT:USDT | +9.57% | $1,132,669.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +1.89% | +2.14% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.86% | +2.11% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.78% | +2.04% |
-| LDO/USDT:USDT | below_1h_threshold | +1.60% | +1.85% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.25% | +1.50% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.69% | +2.91% |
+| LDO/USDT:USDT | below_1h_threshold | +1.68% | +1.90% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.31% | +1.53% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.06% | +1.28% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.84% | +1.06% |
 
 ## 7. 次に見るべき不足
 
