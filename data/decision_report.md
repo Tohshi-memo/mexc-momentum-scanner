@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-07-15T20:21:22.171264+00:00
+- generated_at: 2026-07-15T20:26:23.527200+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8762**
+- closed shadow trades: **8763**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +2.75% / filled 20/20。**
-- 全期間 MARKET基準: n=8762, expectancy=+0.00%
-- 直近20件 MARKET基準: n=20, expectancy=+2.75%
+- 結論: **MARKET SHORTは実行候補。直近EV +3.35% / filled 20/20。**
+- 全期間 MARKET基準: n=8763, expectancy=+0.00%
+- 直近20件 MARKET基準: n=20, expectancy=+3.35%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +2.75% | **+2.75%** |
+| MARKET | 20/20 | 100.0% | +3.35% | **+3.35%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +2.75% | **+2.75%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +2.60% | **+2.34%** |
-| LIMIT_2PCT | 15/20 | 75.0% | +2.80% | **+2.10%** |
-| LIMIT_3PCT | 11/20 | 55.0% | +1.74% | **+0.96%** |
-| LIMIT_ATR | 11/20 | 55.0% | +1.17% | **+0.64%** |
+| MARKET | 20/20 | 100.0% | +3.35% | **+3.35%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +3.27% | **+2.94%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +3.46% | **+2.59%** |
+| LIMIT_3PCT | 11/20 | 55.0% | +2.56% | **+1.41%** |
+| LIMIT_ATR | 11/20 | 55.0% | +2.13% | **+1.17%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_BB3S_LONG | 4/4 | 100.0% | +1.18% | **+1.18%** |
-| LIMIT_8PCT_LONG | 11/20 | 55.0% | +1.09% | **+0.60%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +1.70% | **+0.25%** |
-| LIMIT_10PCT_LONG | 2/20 | 10.0% | +2.00% | **+0.20%** |
-| LIMIT_6PCT_LONG | 12/20 | 60.0% | -0.31% | **-0.19%** |
+| LIMIT_8PCT_LONG | 12/20 | 60.0% | +0.67% | **+0.40%** |
+| LIMIT_BB3S_LONG | 5/5 | 100.0% | +0.14% | **+0.14%** |
+| LIMIT_9PCT_LONG | 4/20 | 20.0% | +0.27% | **+0.05%** |
+| LIMIT_10PCT_LONG | 3/20 | 15.0% | +0.00% | **+0.00%** |
+| LIMIT_6PCT_LONG | 13/20 | 65.0% | -0.59% | **-0.39%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$344.62** / 初期 $100.00 (+244.62%)
-- 確定: 2883件 (Win 903 / Loss 937 / Flat 1043) / skip 2440件
-- 成長率目線: 平均log +0.000429 / 幾何平均 +0.043% per trade / maxDD +8.13%
+- 残高: **$342.89** / 初期 $100.00 (+242.89%)
+- 確定: 2884件 (Win 903 / Loss 938 / Flat 1043) / skip 2440件
+- 成長率目線: 平均log +0.000427 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ROAM/USDT:USDT `LIMIT_BB3S_LONG` TP_HIT account +1.00% 残高後 $344.62
+- 最新: ROAM/USDT:USDT `LIMIT_BB3S_LONG` SL_HIT account -0.50% 残高後 $342.89
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.40** / 初期 $100.00 (+5.40%)
-- 確定: 726件 (Win 167 / Loss 168 / Flat 391) / skip 1447件
+- 確定: 727件 (Win 167 / Loss 168 / Flat 392) / skip 1447件
 - 成長率目線: 平均log +0.000072 / 幾何平均 +0.007% per trade / maxDD +3.89%
 - 次の候補: `LIMIT_7PCT` (selected_by_robust_growth_score) / robust_score +0.0942 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ROAM/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $105.40
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T20:21:14.282302+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64977.5
-- Funnel: target 871 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.3 >= 65=1, 4h RSI 76.5 >= 65=1
+- 更新: 2026-07-15T20:26:13.238340+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64970.5
+- Funnel: target 871 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +66.62% | $2,527,398.26 |
-| SKL/USDT:USDT | +14.27% | $1,540,597.15 |
-| CAP/USDT:USDT | +11.35% | $1,237,962.35 |
-| SNXX/USDT:USDT | +9.77% | $1,308,981.05 |
-| LDO/USDT:USDT | +6.07% | $4,896,231.12 |
+| ROAM/USDT:USDT | +16.20% | $2,835,677.56 |
+| SKL/USDT:USDT | +13.22% | $1,556,138.63 |
+| CAP/USDT:USDT | +12.03% | $1,241,996.02 |
+| SNXX/USDT:USDT | +10.97% | $1,321,180.15 |
+| ONDO/USDT:USDT | +6.09% | $27,366,647.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.86% | +2.79% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.22% |
-| SEI/USDT:USDT | below_1h_threshold | +1.82% | +1.75% |
-| WLD/USDT:USDT | below_1h_threshold | +1.77% | +1.69% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.59% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.86% | +2.80% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.23% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.06% | +1.99% |
+| WLD/USDT:USDT | below_1h_threshold | +1.70% | +1.63% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.60% |
 
 ## 7. 次に見るべき不足
 
