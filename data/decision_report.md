@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T19:06:11.255399+00:00
+- generated_at: 2026-07-15T19:11:09.319342+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8759**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T19:06:04.960459+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64892.7
-- Funnel: target 871 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T19:11:04.235554+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64890.0
+- Funnel: target 871 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +41.12% | $1,418,801.78 |
-| SKL/USDT:USDT | +18.09% | $1,138,001.50 |
-| SNXX/USDT:USDT | +11.14% | $1,070,591.20 |
-| CAP/USDT:USDT | +7.48% | $1,164,729.42 |
-| SNDKSTOCK/USDT:USDT | +4.98% | $119,104,635.42 |
+| ROAM/USDT:USDT | +37.33% | $1,520,586.02 |
+| SKL/USDT:USDT | +20.69% | $1,168,584.43 |
+| SNXX/USDT:USDT | +11.43% | $1,084,030.18 |
+| CAP/USDT:USDT | +7.86% | $1,167,725.20 |
+| SNDKSTOCK/USDT:USDT | +5.07% | $119,727,598.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROAM/USDT:USDT | below_1h_threshold | +1.65% | +1.56% |
-| BANK/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.75% | +0.67% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.67% | +0.59% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
+| SKL/USDT:USDT | below_1h_threshold | +2.55% | +2.47% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.35% | +2.26% |
+| MYX/USDT:USDT | below_1h_threshold | +1.37% | +1.29% |
+| BANK/USDT:USDT | below_1h_threshold | +1.12% | +1.04% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.04% | +0.96% |
 
 ## 7. 次に見るべき不足
 
