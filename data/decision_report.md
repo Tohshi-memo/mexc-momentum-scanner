@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T17:01:12.505416+00:00
+- generated_at: 2026-07-15T17:06:11.562223+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8756**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T17:01:06.191573+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=65115.8
-- Funnel: target 871 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T17:06:05.257236+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65088.2
+- Funnel: target 871 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIRTUAL/USDT:USDT | +3.30% | $4,565,628.10 |
-| VELVET/USDT:USDT | +2.20% | $20,934,499.96 |
-| US/USDT:USDT | +1.94% | $7,950,778.98 |
-| BILL/USDT:USDT | +1.82% | $12,762,258.04 |
-| DODO/USDT:USDT | +1.69% | $14,294,983.38 |
+| BILL/USDT:USDT | +2.82% | $12,842,992.36 |
+| VIRTUAL/USDT:USDT | +2.74% | $4,757,733.95 |
+| US/USDT:USDT | +2.21% | $8,094,468.18 |
+| VELVET/USDT:USDT | +1.67% | $20,987,019.44 |
+| LDO/USDT:USDT | +1.59% | $2,802,590.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.85% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.62% | +0.58% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.61% | +0.57% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.48% |
+| LDO/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
 
 ## 7. 次に見るべき不足
 
