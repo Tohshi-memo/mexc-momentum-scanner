@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T14:11:18.561427+00:00
+- generated_at: 2026-07-15T14:16:23.322685+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8747**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 62件 (Win 19 / Loss 39 / Flat 4) / pending 2件 / skip 154件
+- 確定: 62件 (Win 19 / Loss 39 / Flat 4) / pending 2件 / skip 155件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000329 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RAVE/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T14:11:12.470504+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=65344.6
-- Funnel: target 871 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1
+- 更新: 2026-07-15T14:16:16.293957+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=65248.6
+- Funnel: target 871 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.5 >= 65=1, 4h RSI 85.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +277.63% | $27,187,548.21 |
-| US/USDT:USDT | +39.94% | $6,403,100.54 |
-| DODO/USDT:USDT | +39.09% | $12,187,973.07 |
-| AEHRSTOCK/USDT:USDT | +37.26% | $6,096,776.65 |
-| XEC/USDT:USDT | +17.56% | $1,409,293.12 |
+| AKE/USDT:USDT | +320.34% | $27,948,341.34 |
+| US/USDT:USDT | +39.46% | $6,450,133.07 |
+| DODO/USDT:USDT | +38.63% | $12,223,899.19 |
+| AEHRSTOCK/USDT:USDT | +35.30% | $6,116,714.09 |
+| XEC/USDT:USDT | +16.05% | $1,409,926.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.25% |
-| AKE/USDT:USDT | below_1h_threshold | +1.85% | +1.46% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.39% |
-| XEC/USDT:USDT | below_1h_threshold | +1.75% | +1.36% |
-| TAC/USDT:USDT | below_1h_threshold | +1.48% | +1.09% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.40% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.54% |
+| TAC/USDT:USDT | below_1h_threshold | +1.38% | +1.13% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +0.87% |
+| DODO/USDT:USDT | below_1h_threshold | +0.97% | +0.73% |
 
 ## 7. 次に見るべき不足
 
