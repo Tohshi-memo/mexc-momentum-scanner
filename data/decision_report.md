@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T00:41:15.331555+00:00
+- generated_at: 2026-07-15T00:46:15.051557+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8708**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T00:41:09.104488+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=64810.6
+- 更新: 2026-07-15T00:46:08.850566+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=64780.2
 - Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- Strict後reject: 4h RSI 72.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +39.04% | $4,939,531.57 |
-| AEHRSTOCK/USDT:USDT | +31.07% | $2,995,997.80 |
-| VELVET/USDT:USDT | +13.55% | $32,675,744.58 |
-| US/USDT:USDT | +7.90% | $1,820,799.98 |
-| SKHYSTOCK/USDT:USDT | +7.43% | $12,672,626.59 |
+| DODO/USDT:USDT | +40.58% | $5,059,881.73 |
+| AEHRSTOCK/USDT:USDT | +30.69% | $3,002,875.85 |
+| VELVET/USDT:USDT | +13.53% | $32,771,939.09 |
+| US/USDT:USDT | +7.93% | $1,829,287.90 |
+| SKHYSTOCK/USDT:USDT | +6.71% | $12,705,071.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +4.01% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.92% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.17% | +2.49% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.10% | +2.42% |
-| SYN/USDT:USDT | below_1h_threshold | +2.02% | +2.33% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +4.06% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.09% | +2.45% |
+| SYN/USDT:USDT | below_1h_threshold | +1.80% | +2.16% |
+| ARB/USDT:USDT | below_1h_threshold | +1.66% | +2.02% |
 
 ## 7. 次に見るべき不足
 
