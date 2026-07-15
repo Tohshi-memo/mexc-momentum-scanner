@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T09:56:17.192907+00:00
+- generated_at: 2026-07-15T10:01:13.537082+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8735**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T09:56:10.836534+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64652.9
-- Funnel: target 867 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-15T10:01:06.987350+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64639.9
+- Funnel: target 867 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +199.84% | $14,433,729.00 |
-| DODO/USDT:USDT | +37.14% | $9,997,076.38 |
-| AEHRSTOCK/USDT:USDT | +31.11% | $3,768,957.46 |
-| US/USDT:USDT | +28.85% | $4,515,973.40 |
-| MAGMA/USDT:USDT | +17.65% | $2,823,748.54 |
+| AKE/USDT:USDT | +184.89% | $14,679,927.81 |
+| DODO/USDT:USDT | +36.99% | $9,916,049.17 |
+| AEHRSTOCK/USDT:USDT | +31.11% | $3,765,446.05 |
+| US/USDT:USDT | +29.88% | $4,346,906.48 |
+| MAGMA/USDT:USDT | +18.15% | $2,224,587.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PI/USDT:USDT | below_1h_threshold | +2.60% | +2.74% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.78% | +1.92% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.44% | +1.59% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.33% | +1.48% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.44% |
+| XEC/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
+| US/USDT:USDT | below_1h_threshold | +0.50% | +0.51% |
+| MARSTOCK/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
 
 ## 7. 次に見るべき不足
 
