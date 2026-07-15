@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-15T18:11:16.716684+00:00
+- generated_at: 2026-07-15T18:16:14.032527+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8757**
+- closed shadow trades: **8758**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.80% / filled 20/20。**
-- 全期間 MARKET基準: n=8757, expectancy=+0.00%
+- 全期間 MARKET基準: n=8758, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,8 +22,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.80% | **+1.80%** |
+| LIMIT_2PCT | 15/20 | 75.0% | +2.02% | **+1.51%** |
 | LIMIT_1PCT | 17/20 | 85.0% | +1.60% | **+1.36%** |
-| LIMIT_2PCT | 14/20 | 70.0% | +1.59% | **+1.11%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_3PCT | 12/20 | 60.0% | +1.29% | **+0.77%** |
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$341.20** / 初期 $100.00 (+241.20%)
-- 確定: 2882件 (Win 902 / Loss 937 / Flat 1043) / skip 2436件
+- 確定: 2882件 (Win 902 / Loss 937 / Flat 1043) / skip 2437件
 - 成長率目線: 平均log +0.000426 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: TAC/USDT:USDT `LIMIT_BB3S_LONG` SL_HIT account -0.50% 残高後 $341.20
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.77** / 初期 $100.00 (+5.77%)
-- 確定: 721件 (Win 167 / Loss 167 / Flat 387) / skip 1447件
+- 確定: 722件 (Win 167 / Loss 167 / Flat 388) / skip 1447件
 - 成長率目線: 平均log +0.000078 / 幾何平均 +0.008% per trade / maxDD +3.89%
 - 次の候補: `LIMIT_7PCT` (selected_by_robust_growth_score) / robust_score +0.1104 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: XEC/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $105.77
+- 最新: DODO/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $105.77
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.49** / 初期 $100.00 (-1.51%)
 - 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 165件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000297 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000277 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.09% 残高後 $98.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T18:11:10.381509+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65014.3
+- 更新: 2026-07-15T18:16:06.564090+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=65057.0
 - Funnel: target 871 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +8.17% | $1,158,189.71 |
-| SNDKSTOCK/USDT:USDT | +5.54% | $105,258,575.36 |
-| LDO/USDT:USDT | +4.99% | $3,256,102.72 |
-| SKHYSTOCK/USDT:USDT | +4.76% | $20,481,775.28 |
-| VELVET/USDT:USDT | +4.63% | $21,060,999.10 |
+| CAP/USDT:USDT | +7.92% | $1,162,957.12 |
+| LDO/USDT:USDT | +5.53% | $3,290,459.24 |
+| ORDI/USDT:USDT | +4.69% | $3,326,901.87 |
+| SNDKSTOCK/USDT:USDT | +4.25% | $105,698,738.70 |
+| BILL/USDT:USDT | +4.07% | $11,792,663.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.84% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.80% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.86% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.81% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.54% | +2.56% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.83% | +4.77% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.73% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.80% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.74% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.54% | +2.49% |
 
 ## 7. 次に見るべき不足
 
