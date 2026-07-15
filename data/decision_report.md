@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T00:11:11.479261+00:00
+- generated_at: 2026-07-15T00:16:09.629847+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8707**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 116件
+- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 117件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000096 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T00:11:05.321218+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64981.1
-- Funnel: target 862 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-15T00:16:03.981085+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64900.1
+- Funnel: target 862 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.4 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +29.80% | $2,913,048.22 |
-| DODO/USDT:USDT | +24.47% | $3,886,765.12 |
-| VELVET/USDT:USDT | +13.29% | $32,219,623.29 |
-| MAGMA/USDT:USDT | +6.86% | $2,094,877.08 |
-| US/USDT:USDT | +6.45% | $1,767,552.64 |
+| DODO/USDT:USDT | +38.07% | $4,144,213.94 |
+| AEHRSTOCK/USDT:USDT | +30.25% | $2,934,556.50 |
+| VELVET/USDT:USDT | +12.25% | $32,283,257.46 |
+| MAGMA/USDT:USDT | +7.63% | $2,101,409.74 |
+| US/USDT:USDT | +7.46% | $1,779,563.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.75% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.66% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.02% | +2.07% |
-| DODO/USDT:USDT | below_1h_threshold | +1.71% | +1.76% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.40% | +1.45% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.87% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.78% |
+| SXT/USDT:USDT | below_1h_threshold | +1.83% | +2.00% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.39% | +1.56% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.37% | +1.55% |
 
 ## 7. 次に見るべき不足
 
