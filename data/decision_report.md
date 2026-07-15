@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T05:56:18.905903+00:00
+- generated_at: 2026-07-15T06:01:21.480995+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8713**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
-- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 125件
+- 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 126件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000031 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T05:56:10.359912+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64750.0
-- Funnel: target 864 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-15T06:01:16.213262+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64885.5
+- Funnel: target 864 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +36.73% | $8,689,502.89 |
-| AEHRSTOCK/USDT:USDT | +30.60% | $3,172,243.76 |
-| MAGMA/USDT:USDT | +18.76% | $2,658,388.38 |
-| PUMPFUN/USDT:USDT | +12.04% | $13,455,883.75 |
-| US/USDT:USDT | +11.94% | $2,093,013.91 |
+| AKE/USDT:USDT | +91.85% | $1,173,329.86 |
+| DODO/USDT:USDT | +38.32% | $8,627,150.32 |
+| AEHRSTOCK/USDT:USDT | +31.22% | $3,166,542.56 |
+| MAGMA/USDT:USDT | +18.68% | $2,637,770.16 |
+| US/USDT:USDT | +12.58% | $2,052,771.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PI/USDT:USDT | below_1h_threshold | +4.39% | +4.34% |
-| LIT/USDT:USDT | below_1h_threshold | +2.32% | +2.28% |
-| US/USDT:USDT | below_1h_threshold | +1.82% | +1.77% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.73% | +1.69% |
-| JUP/USDT:USDT | below_1h_threshold | +1.07% | +1.03% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
+| DODO/USDT:USDT | below_1h_threshold | +0.56% | +0.61% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.52% | +0.57% |
+| XEC/USDT:USDT | below_1h_threshold | +0.51% | +0.57% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.50% | +0.55% |
 
 ## 7. 次に見るべき不足
 
