@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T09:51:16.843356+00:00
+- generated_at: 2026-07-15T09:56:17.192907+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8735**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T09:51:10.534990+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64699.1
+- 更新: 2026-07-15T09:56:10.836534+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=64652.9
 - Funnel: target 867 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 66.7 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +203.99% | $14,262,340.03 |
-| DODO/USDT:USDT | +37.09% | $9,927,973.64 |
-| AEHRSTOCK/USDT:USDT | +31.37% | $3,766,880.15 |
-| US/USDT:USDT | +28.76% | $4,479,699.77 |
-| MAGMA/USDT:USDT | +17.72% | $2,822,443.34 |
+| AKE/USDT:USDT | +199.84% | $14,433,729.00 |
+| DODO/USDT:USDT | +37.14% | $9,997,076.38 |
+| AEHRSTOCK/USDT:USDT | +31.11% | $3,768,957.46 |
+| US/USDT:USDT | +28.85% | $4,515,973.40 |
+| MAGMA/USDT:USDT | +17.65% | $2,823,748.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PI/USDT:USDT | below_1h_threshold | +2.72% | +2.79% |
-| B3/USDT:USDT | below_1h_threshold | +1.78% | +1.85% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.67% | +1.74% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.40% | +1.47% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.37% |
+| PI/USDT:USDT | below_1h_threshold | +2.60% | +2.74% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.78% | +1.92% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.44% | +1.59% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.33% | +1.48% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.44% |
 
 ## 7. 次に見るべき不足
 
