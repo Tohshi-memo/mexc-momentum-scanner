@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T16:56:10.011163+00:00
+- generated_at: 2026-07-15T17:01:12.505416+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8756**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T16:56:03.776783+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=65043.9
-- Funnel: target 871 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T17:01:06.191573+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65115.8
+- Funnel: target 871 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +2.80% | $21,449,227.29 |
-| VIRTUAL/USDT:USDT | +2.67% | $4,622,916.95 |
-| US/USDT:USDT | +1.40% | $7,947,569.55 |
-| BILL/USDT:USDT | +1.11% | $14,694,084.31 |
-| PUMPFUN/USDT:USDT | +1.02% | $21,697,162.22 |
+| VIRTUAL/USDT:USDT | +3.30% | $4,565,628.10 |
+| VELVET/USDT:USDT | +2.20% | $20,934,499.96 |
+| US/USDT:USDT | +1.94% | $7,950,778.98 |
+| BILL/USDT:USDT | +1.82% | $12,762,258.04 |
+| DODO/USDT:USDT | +1.69% | $14,294,983.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.80% | +3.33% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.68% | +3.21% |
-| US/USDT:USDT | below_1h_threshold | +1.68% | +2.22% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.88% |
-| BILL/USDT:USDT | below_1h_threshold | +1.11% | +1.64% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.85% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.62% | +0.58% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.61% | +0.57% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.48% |
 
 ## 7. 次に見るべき不足
 
