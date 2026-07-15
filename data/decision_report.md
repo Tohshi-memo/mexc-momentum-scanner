@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T20:01:14.600960+00:00
+- generated_at: 2026-07-15T20:06:22.266475+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8760**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.49** / 初期 $100.00 (-1.51%)
-- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 167件
+- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 168件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000277 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.09% 残高後 $98.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T20:01:08.135506+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64889.3
-- Funnel: target 871 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-15T20:06:15.616262+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64918.8
+- Funnel: target 871 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.3 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +39.39% | $1,975,265.45 |
-| SKL/USDT:USDT | +18.44% | $1,428,998.88 |
-| SNXX/USDT:USDT | +10.52% | $1,275,987.03 |
-| CAP/USDT:USDT | +10.41% | $1,208,399.27 |
-| LDO/USDT:USDT | +5.71% | $4,558,347.11 |
+| ROAM/USDT:USDT | +47.75% | $2,045,270.67 |
+| SKL/USDT:USDT | +15.63% | $1,472,422.19 |
+| CAP/USDT:USDT | +11.10% | $1,224,061.86 |
+| SNXX/USDT:USDT | +9.43% | $1,287,301.72 |
+| LDO/USDT:USDT | +5.74% | $4,699,231.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.86% | +2.92% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.36% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.70% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.60% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.81% | +3.82% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.86% | +2.88% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.31% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.68% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
 
 ## 7. 次に見るべき不足
 
