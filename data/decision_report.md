@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T13:41:35.821412+00:00
+- generated_at: 2026-07-15T13:46:11.633753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8745**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T13:41:28.406755+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=65349.1
-- Funnel: target 871 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T13:46:05.440390+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=65178.1
+- Funnel: target 871 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +269.59% | $25,785,294.65 |
-| AEHRSTOCK/USDT:USDT | +51.69% | $5,837,999.74 |
-| DODO/USDT:USDT | +41.04% | $12,060,526.43 |
-| US/USDT:USDT | +39.74% | $6,190,743.42 |
-| RAVE/USDT:USDT | +22.03% | $3,766,577.37 |
+| AKE/USDT:USDT | +266.11% | $25,995,553.93 |
+| AEHRSTOCK/USDT:USDT | +41.64% | $5,975,267.82 |
+| DODO/USDT:USDT | +40.48% | $12,077,633.75 |
+| US/USDT:USDT | +40.12% | $6,234,070.85 |
+| RAVE/USDT:USDT | +21.48% | $3,949,026.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +4.88% | +4.55% |
-| AKE/USDT:USDT | below_1h_threshold | +3.91% | +3.58% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +3.09% | +2.76% |
-| PEPE/USDT:USDT | below_1h_threshold | +3.05% | +2.72% |
-| XEC/USDT:USDT | below_1h_threshold | +2.50% | +2.17% |
+| RAVE/USDT:USDT | below_1h_threshold | +4.38% | +4.31% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +3.09% | +3.02% |
+| AKE/USDT:USDT | below_1h_threshold | +2.96% | +2.89% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.30% | +2.24% |
+| US/USDT:USDT | below_1h_threshold | +1.63% | +1.57% |
 
 ## 7. 次に見るべき不足
 
