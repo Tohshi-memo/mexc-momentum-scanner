@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T13:16:18.439229+00:00
+- generated_at: 2026-07-15T13:21:23.543327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8743**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T13:16:12.031613+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=65372.8
-- Funnel: target 871 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-15T13:21:16.009881+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.56% price=65500.3
+- Funnel: target 871 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +280.59% | $23,752,062.95 |
-| US/USDT:USDT | +39.85% | $5,811,157.28 |
-| DODO/USDT:USDT | +37.35% | $11,654,668.64 |
-| AEHRSTOCK/USDT:USDT | +34.84% | $4,149,945.66 |
-| MAGMA/USDT:USDT | +18.80% | $2,219,403.53 |
+| AKE/USDT:USDT | +272.65% | $24,164,362.39 |
+| DODO/USDT:USDT | +43.20% | $11,842,533.21 |
+| US/USDT:USDT | +39.10% | $5,851,010.66 |
+| AEHRSTOCK/USDT:USDT | +33.98% | $4,172,201.45 |
+| RAVE/USDT:USDT | +19.82% | $3,217,955.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +3.09% | +2.72% |
-| UB/USDT:USDT | below_1h_threshold | +1.86% | +1.50% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.66% | +1.29% |
-| XLM/USDT:USDT | below_1h_threshold | +1.57% | +1.20% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.47% | +1.10% |
+| AKE/USDT:USDT | below_relative_strength | +5.24% | +4.68% |
+| UB/USDT:USDT | below_1h_threshold | +3.18% | +2.62% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +3.09% | +2.52% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.92% | +2.35% |
+| DODO/USDT:USDT | below_1h_threshold | +2.43% | +1.87% |
 
 ## 7. 次に見るべき不足
 
