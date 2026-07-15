@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T22:31:22.030596+00:00
+- generated_at: 2026-07-15T22:36:18.028385+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8770**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T22:31:15.573185+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64886.0
+- 更新: 2026-07-15T22:36:11.623842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=64880.0
 - Funnel: target 871 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.6 >= 65=1
+- Strict後reject: 4h RSI 72.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +20.00% | $5,336,320.62 |
-| HOME/USDT:USDT | +15.74% | $1,220,160.70 |
-| CAP/USDT:USDT | +12.16% | $1,557,265.71 |
-| SKL/USDT:USDT | +10.72% | $1,789,767.91 |
-| ONDO/USDT:USDT | +9.36% | $34,235,737.21 |
+| ROAM/USDT:USDT | +21.20% | $5,339,890.70 |
+| HOME/USDT:USDT | +18.14% | $1,241,242.84 |
+| CAP/USDT:USDT | +13.03% | $1,561,809.16 |
+| SKL/USDT:USDT | +10.41% | $1,791,580.92 |
+| ONDO/USDT:USDT | +9.87% | $34,463,451.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_1h_threshold | +1.71% | +1.58% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.23% | +1.09% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.96% | +0.83% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.67% | +0.53% |
-| MYX/USDT:USDT | below_1h_threshold | +0.64% | +0.50% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.57% | +1.44% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.46% | +1.33% |
+| ROAM/USDT:USDT | below_1h_threshold | +1.17% | +1.04% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.04% | +0.91% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.99% | +0.87% |
 
 ## 7. 次に見るべき不足
 
