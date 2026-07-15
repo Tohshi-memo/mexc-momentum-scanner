@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T04:16:08.472423+00:00
+- generated_at: 2026-07-15T04:21:12.196950+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8711**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T04:16:02.205708+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64790.0
-- Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T04:21:05.912776+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64764.9
+- Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +36.48% | $7,794,172.94 |
-| AEHRSTOCK/USDT:USDT | +31.95% | $3,070,453.48 |
-| MAGMA/USDT:USDT | +21.14% | $2,450,958.96 |
-| PUMPFUN/USDT:USDT | +12.18% | $12,365,695.17 |
-| US/USDT:USDT | +10.98% | $2,022,075.52 |
+| DODO/USDT:USDT | +35.04% | $7,858,806.03 |
+| AEHRSTOCK/USDT:USDT | +31.84% | $3,074,614.31 |
+| MAGMA/USDT:USDT | +17.19% | $2,464,430.43 |
+| PUMPFUN/USDT:USDT | +12.25% | $12,441,615.92 |
+| US/USDT:USDT | +9.95% | $2,034,870.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.06% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.56% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.38% | +1.33% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.10% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.60% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.57% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.38% | +1.37% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.35% |
 
 ## 7. 次に見るべき不足
 
