@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T01:56:23.458246+00:00
+- generated_at: 2026-07-15T02:01:10.080944+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8709**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T01:56:17.024615+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=64633.6
-- Funnel: target 862 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.8 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-15T02:01:03.815749+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64622.1
+- Funnel: target 862 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +31.50% | $6,123,919.10 |
-| AEHRSTOCK/USDT:USDT | +31.05% | $2,907,085.96 |
-| PUMPFUN/USDT:USDT | +11.70% | $10,373,837.42 |
-| MAGMA/USDT:USDT | +10.55% | $2,201,225.31 |
-| VELVET/USDT:USDT | +7.27% | $33,120,773.91 |
+| AEHRSTOCK/USDT:USDT | +31.46% | $2,861,278.37 |
+| DODO/USDT:USDT | +30.52% | $6,088,791.70 |
+| PUMPFUN/USDT:USDT | +12.04% | $10,311,972.19 |
+| MAGMA/USDT:USDT | +10.24% | $2,155,502.29 |
+| VELVET/USDT:USDT | +8.95% | $32,560,791.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.92% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.45% | +2.71% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.67% | +1.93% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.63% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.59% |
+| HK50/USDT:USDT | below_1h_threshold | +1.17% | +1.20% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.81% | +0.85% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.80% | +0.84% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.81% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
 
 ## 7. 次に見るべき不足
 
