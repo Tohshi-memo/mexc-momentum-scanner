@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T16:31:11.062768+00:00
+- generated_at: 2026-07-15T16:36:14.836113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8756**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T16:31:04.778284+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=65142.0
-- Funnel: target 871 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-15T16:36:08.397224+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.77% price=64888.5
+- Funnel: target 871 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KAITO/USDT:USDT | +1.56% | $2,708,814.70 |
-| ALCH/USDT:USDT | +1.31% | $2,912,685.31 |
-| DODO/USDT:USDT | +1.23% | $14,068,153.82 |
-| PUMPFUN/USDT:USDT | +1.08% | $21,245,180.61 |
-| PYTH/USDT:USDT | +0.90% | $1,703,601.60 |
+| VELVET/USDT:USDT | +2.48% | $20,998,968.94 |
+| KAITO/USDT:USDT | +1.76% | $2,722,648.48 |
+| US/USDT:USDT | +0.87% | $7,783,746.44 |
+| AAPLSTOCK/USDT:USDT | +0.50% | $1,608,735.37 |
+| USOIL/USDT:USDT | +0.47% | $116,383,201.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.21% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.57% | +1.95% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.32% | +1.70% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.08% | +1.46% |
-| DODO/USDT:USDT | below_1h_threshold | +0.99% | +1.37% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.90% | +3.67% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.60% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.76% | +2.53% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +2.12% |
+| US/USDT:USDT | below_1h_threshold | +0.80% | +1.57% |
 
 ## 7. 次に見るべき不足
 
