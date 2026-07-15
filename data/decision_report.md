@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T17:21:13.015871+00:00
+- generated_at: 2026-07-15T17:26:11.550214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8756**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T17:21:06.640661+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=64988.7
+- 更新: 2026-07-15T17:26:05.191368+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=65040.0
 - Funnel: target 871 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VIRTUAL/USDT:USDT | +3.28% | $4,979,307.68 |
-| VELVET/USDT:USDT | +3.15% | $21,137,698.39 |
-| US/USDT:USDT | +2.60% | $8,266,588.00 |
-| CRCLSTOCK/USDT:USDT | +2.17% | $2,038,933.86 |
-| SNDKSTOCK/USDT:USDT | +1.95% | $94,559,973.10 |
+| VELVET/USDT:USDT | +4.02% | $21,209,206.69 |
+| VIRTUAL/USDT:USDT | +3.66% | $5,113,013.20 |
+| SKHYSTOCK/USDT:USDT | +2.62% | $20,599,553.74 |
+| CRCLSTOCK/USDT:USDT | +2.15% | $2,074,301.96 |
+| SOXL/USDT:USDT | +2.10% | $30,968,887.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +1.25% | +1.40% |
-| LDO/USDT:USDT | below_1h_threshold | +1.23% | +1.38% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.08% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.91% | +1.06% |
-| ZBT/USDT:USDT | below_1h_threshold | +0.89% | +1.04% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.77% | +1.85% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.59% | +1.66% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.22% | +1.30% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.11% | +1.18% |
+| LDO/USDT:USDT | below_1h_threshold | +1.05% | +1.12% |
 
 ## 7. 次に見るべき不足
 
