@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T00:56:14.312453+00:00
+- generated_at: 2026-07-15T01:01:05.775427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8708**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T00:56:07.913534+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=64810.2
-- Funnel: target 862 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.4 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-15T01:00:59.602083+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64782.6
+- Funnel: target 862 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +39.09% | $5,254,401.23 |
-| AEHRSTOCK/USDT:USDT | +30.58% | $3,028,754.92 |
-| VELVET/USDT:USDT | +11.65% | $32,990,312.62 |
-| US/USDT:USDT | +7.78% | $1,849,817.21 |
-| SKHYNIXSTOCK/USDT:USDT | +7.42% | $31,380,009.00 |
+| DODO/USDT:USDT | +34.32% | $5,250,030.29 |
+| AEHRSTOCK/USDT:USDT | +30.73% | $2,848,655.41 |
+| VELVET/USDT:USDT | +11.80% | $32,106,517.68 |
+| MAGMA/USDT:USDT | +8.40% | $2,068,577.16 |
+| US/USDT:USDT | +7.31% | $1,838,865.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +4.01% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.92% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.79% | +2.11% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.39% | +1.70% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.65% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.69% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.40% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.36% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.26% | +1.29% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.26% |
 
 ## 7. 次に見るべき不足
 
