@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T16:36:14.836113+00:00
+- generated_at: 2026-07-15T16:41:13.608214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8756**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T16:36:08.397224+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.77% price=64888.5
+- 更新: 2026-07-15T16:41:07.328014+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.84% price=64839.9
 - Funnel: target 871 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +2.48% | $20,998,968.94 |
-| KAITO/USDT:USDT | +1.76% | $2,722,648.48 |
-| US/USDT:USDT | +0.87% | $7,783,746.44 |
-| AAPLSTOCK/USDT:USDT | +0.50% | $1,608,735.37 |
-| USOIL/USDT:USDT | +0.47% | $116,383,201.99 |
+| VELVET/USDT:USDT | +2.62% | $21,276,649.89 |
+| US/USDT:USDT | +1.74% | $7,822,700.32 |
+| KAITO/USDT:USDT | +0.92% | $2,739,693.94 |
+| USOIL/USDT:USDT | +0.54% | $116,595,455.76 |
+| VIRTUAL/USDT:USDT | +0.50% | $4,491,942.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.90% | +3.67% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.60% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.76% | +2.53% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +2.12% |
-| US/USDT:USDT | below_1h_threshold | +0.80% | +1.57% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.68% | +3.53% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.83% | +2.68% |
+| US/USDT:USDT | below_1h_threshold | +1.74% | +2.59% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +2.19% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.93% | +1.78% |
 
 ## 7. 次に見るべき不足
 
