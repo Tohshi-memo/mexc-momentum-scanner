@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T20:36:25.200120+00:00
+- generated_at: 2026-07-15T20:41:19.335162+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8764**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T20:36:16.986587+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64970.8
+- 更新: 2026-07-15T20:41:12.348322+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64992.9
 - Funnel: target 871 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- Strict後reject: 4h RSI 77.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +27.94% | $3,032,841.65 |
-| SKL/USDT:USDT | +14.39% | $1,578,260.51 |
-| CAP/USDT:USDT | +11.60% | $1,258,241.76 |
-| SNXX/USDT:USDT | +10.00% | $1,323,936.39 |
-| ONDO/USDT:USDT | +6.69% | $28,460,746.96 |
+| ROAM/USDT:USDT | +26.84% | $3,091,221.76 |
+| SKL/USDT:USDT | +14.27% | $1,594,740.63 |
+| CAP/USDT:USDT | +12.28% | $1,273,573.67 |
+| SNXX/USDT:USDT | +10.80% | $1,325,137.56 |
+| LAB/USDT:USDT | +6.46% | $17,367,223.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.86% | +2.80% |
-| WLD/USDT:USDT | below_1h_threshold | +2.31% | +2.25% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.23% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.19% | +2.12% |
-| XEC/USDT:USDT | below_1h_threshold | +2.07% | +2.00% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.86% | +2.76% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.52% | +2.42% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.20% |
+| WLD/USDT:USDT | below_1h_threshold | +2.02% | +1.92% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.80% | +1.70% |
 
 ## 7. 次に見るべき不足
 
