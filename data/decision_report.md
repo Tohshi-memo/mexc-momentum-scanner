@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-15T07:26:23.248446+00:00
+- generated_at: 2026-07-15T07:31:18.430964+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8722**
+- closed shadow trades: **8723**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=8722, expectancy=-0.00%
+- 全期間 MARKET基準: n=8723, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,15 +24,15 @@
 | LIMIT_FIB1618 | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_8PCT | 4/20 | 20.0% | +3.93% | **+0.79%** |
+| LIMIT_3PCT | 15/20 | 75.0% | +1.03% | **+0.77%** |
 | LIMIT_7PCT | 6/20 | 30.0% | +2.54% | **+0.76%** |
-| LIMIT_5PCT | 10/20 | 50.0% | +1.37% | **+0.69%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | +2.55% | **+1.40%** |
 | LIMIT_BB3S_LONG | 7/10 | 70.0% | +1.70% | **+1.19%** |
-| LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.45% | **+0.80%** |
 | LIMIT_5PCT_LONG | 9/20 | 45.0% | +1.61% | **+0.73%** |
 | LIMIT_10PCT_LONG | 2/20 | 10.0% | +5.11% | **+0.51%** |
 | LIMIT_9PCT_LONG | 3/20 | 15.0% | +3.40% | **+0.51%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$334.81** / 初期 $100.00 (+234.81%)
-- 確定: 2873件 (Win 898 / Loss 934 / Flat 1041) / skip 2410件
+- 確定: 2873件 (Win 898 / Loss 934 / Flat 1041) / skip 2411件
 - 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: AKE/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account -0.03% 残高後 $334.81
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.12** / 初期 $100.00 (+5.12%)
-- 確定: 695件 (Win 161 / Loss 163 / Flat 371) / skip 1438件
+- 確定: 695件 (Win 161 / Loss 163 / Flat 371) / skip 1439件
 - 成長率目線: 平均log +0.000072 / 幾何平均 +0.007% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0056 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0035 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $105.12
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,14 +65,14 @@
 - 残高: **$98.75** / 初期 $100.00 (-1.25%)
 - 確定: 60件 (Win 19 / Loss 39 / Flat 2) / pending 0件 / skip 136件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000209 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $98.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T07:26:16.866030+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=64616.0
-- Funnel: target 866 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-15T07:31:10.849640+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.44% price=64503.9
+- Funnel: target 866 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 94.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +159.57% | $4,833,163.57 |
-| US/USDT:USDT | +33.80% | $3,089,780.01 |
-| AEHRSTOCK/USDT:USDT | +31.53% | $3,253,197.15 |
-| DODO/USDT:USDT | +28.57% | $9,083,244.75 |
-| MAGMA/USDT:USDT | +20.95% | $2,673,070.05 |
+| AKE/USDT:USDT | +157.13% | $4,995,060.84 |
+| US/USDT:USDT | +32.08% | $3,129,391.35 |
+| AEHRSTOCK/USDT:USDT | +30.38% | $3,254,802.21 |
+| DODO/USDT:USDT | +27.24% | $9,120,123.19 |
+| MAGMA/USDT:USDT | +20.10% | $2,683,624.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +3.31% | +3.57% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.11% | +3.37% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.83% |
-| B/USDT:USDT | below_1h_threshold | +1.99% | +2.25% |
-| XEC/USDT:USDT | below_1h_threshold | +1.33% | +1.60% |
+| RAVE/USDT:USDT | below_1h_threshold | +4.77% | +5.21% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +3.01% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.42% | +2.86% |
+| B/USDT:USDT | below_1h_threshold | +1.73% | +2.17% |
+| XEC/USDT:USDT | below_1h_threshold | +1.33% | +1.77% |
 
 ## 7. 次に見るべき不足
 
