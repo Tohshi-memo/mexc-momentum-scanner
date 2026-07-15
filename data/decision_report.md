@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-15T06:56:20.926350+00:00
+- generated_at: 2026-07-15T07:01:14.864327+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **8718**
+- closed shadow trades: **8719**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.04% / filled 20/20。**
-- 全期間 MARKET基準: n=8718, expectancy=-0.00%
+- 全期間 MARKET基準: n=8719, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.04%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 7/10 | 70.0% | +1.16% | **+0.81%** |
 | LIMIT_7PCT_LONG | 10/20 | 50.0% | +1.06% | **+0.53%** |
-| LIMIT_FIB1618_LONG | 4/20 | 20.0% | +2.23% | **+0.45%** |
+| LIMIT_FIB1618_LONG | 5/20 | 25.0% | +1.54% | **+0.38%** |
 | LIMIT_5PCT_LONG | 11/20 | 55.0% | +0.67% | **+0.37%** |
-| LIMIT_8PCT_LONG | 8/20 | 40.0% | +0.50% | **+0.20%** |
+| LIMIT_10PCT_LONG | 3/20 | 15.0% | +0.15% | **+0.02%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$334.92** / 初期 $100.00 (+234.92%)
-- 確定: 2872件 (Win 898 / Loss 933 / Flat 1041) / skip 2407件
+- 確定: 2872件 (Win 898 / Loss 933 / Flat 1041) / skip 2408件
 - 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: US/USDT:USDT `LIMIT_BB3S_LONG` EXPIRED account +0.00% 残高後 $334.92
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$105.12** / 初期 $100.00 (+5.12%)
-- 確定: 695件 (Win 161 / Loss 163 / Flat 371) / skip 1434件
+- 確定: 695件 (Win 161 / Loss 163 / Flat 371) / skip 1435件
 - 成長率目線: 平均log +0.000072 / 幾何平均 +0.007% per trade / maxDD +3.89%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AEHRSTOCK/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $105.12
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T06:56:13.362474+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64939.1
-- Funnel: target 866 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.6 >= 65=1, 4h RSI 81.8 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-15T07:01:07.349577+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64729.8
+- Funnel: target 866 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +125.16% | $3,068,065.63 |
-| US/USDT:USDT | +33.87% | $2,704,600.35 |
-| AEHRSTOCK/USDT:USDT | +31.26% | $3,231,743.01 |
-| DODO/USDT:USDT | +28.78% | $9,028,084.77 |
-| MAGMA/USDT:USDT | +19.26% | $2,709,543.43 |
+| AKE/USDT:USDT | +119.56% | $3,212,368.41 |
+| US/USDT:USDT | +34.30% | $2,754,962.57 |
+| DODO/USDT:USDT | +31.70% | $8,953,981.79 |
+| AEHRSTOCK/USDT:USDT | +31.16% | $3,228,306.35 |
+| MAGMA/USDT:USDT | +18.03% | $2,635,505.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +4.12% | +4.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.26% | +3.23% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.36% | +2.33% |
-| B/USDT:USDT | below_1h_threshold | +1.39% | +1.36% |
-| PI/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.66% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.08% | +1.16% |
+| FLUTSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +1.04% |
+| DODO/USDT:USDT | below_1h_threshold | +0.59% | +0.68% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.55% | +0.64% |
 
 ## 7. 次に見るべき不足
 
