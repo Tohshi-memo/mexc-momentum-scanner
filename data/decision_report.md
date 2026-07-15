@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T02:46:07.139228+00:00
+- generated_at: 2026-07-15T02:51:07.884284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8710**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T02:46:02.183155+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=64539.6
+- 更新: 2026-07-15T02:51:01.595382+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=64490.3
 - Funnel: target 862 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEHRSTOCK/USDT:USDT | +32.22% | $2,984,723.65 |
-| DODO/USDT:USDT | +31.55% | $6,933,726.31 |
-| MAGMA/USDT:USDT | +14.08% | $2,227,923.46 |
-| VELVET/USDT:USDT | +10.06% | $33,209,554.84 |
-| PUMPFUN/USDT:USDT | +10.06% | $11,292,018.33 |
+| DODO/USDT:USDT | +34.12% | $6,989,904.32 |
+| AEHRSTOCK/USDT:USDT | +32.71% | $2,986,509.41 |
+| MAGMA/USDT:USDT | +14.88% | $2,236,146.93 |
+| VELVET/USDT:USDT | +10.27% | $33,241,881.77 |
+| PUMPFUN/USDT:USDT | +9.37% | $11,314,009.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.44% | +3.61% |
-| BASED/USDT:USDT | below_1h_threshold | +2.14% | +2.30% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.80% | +1.96% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.46% | +1.62% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.19% | +1.35% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.25% | +4.48% |
+| DODO/USDT:USDT | below_1h_threshold | +2.43% | +2.67% |
+| US/USDT:USDT | below_1h_threshold | +2.21% | +2.45% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.93% | +2.17% |
+| BASED/USDT:USDT | below_1h_threshold | +1.87% | +2.10% |
 
 ## 7. 次に見るべき不足
 
