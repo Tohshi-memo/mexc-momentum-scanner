@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-15T12:06:18.368533+00:00
+- generated_at: 2026-07-15T12:11:15.330162+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8739**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$102.71** / 初期 $100.00 (+2.71%)
-- 確定トレード: 97件 (TP 33 / SL 62 / EXP 2)
-- 最新: DODO/USDT:USDT SL_HIT PnL -4.00% 残高後 $102.71
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$103.73** / 初期 $100.00 (+3.73%)
+- 確定トレード: 98件 (TP 34 / SL 62 / EXP 2)
+- 最新: MAGMA/USDT:USDT TP_HIT PnL +8.00% 残高後 $103.73
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-15T12:06:12.420198+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=64624.4
+- 更新: 2026-07-15T12:11:09.005340+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=64630.0
 - Funnel: target 870 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
+- Strict後reject: 4h RSI 74.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +176.23% | $19,268,547.08 |
-| DODO/USDT:USDT | +38.42% | $11,139,698.18 |
-| US/USDT:USDT | +33.18% | $5,004,356.82 |
-| AEHRSTOCK/USDT:USDT | +30.87% | $3,949,065.26 |
-| 0G/USDT:USDT | +19.66% | $1,621,650.49 |
+| AKE/USDT:USDT | +172.85% | $19,427,979.21 |
+| DODO/USDT:USDT | +37.81% | $11,197,539.45 |
+| US/USDT:USDT | +35.10% | $5,053,802.66 |
+| AEHRSTOCK/USDT:USDT | +31.07% | $3,958,338.04 |
+| 0G/USDT:USDT | +18.46% | $1,748,841.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XLM/USDT:USDT | below_1h_threshold | +0.64% | +0.76% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.73% |
-| 2Z/USDT:USDT | below_1h_threshold | +0.49% | +0.62% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.54% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.39% |
+| TAC/USDT:USDT | below_1h_threshold | +1.85% | +1.97% |
+| US/USDT:USDT | below_1h_threshold | +1.34% | +1.46% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.72% |
+| XLM/USDT:USDT | below_1h_threshold | +0.53% | +0.65% |
+| 2Z/USDT:USDT | below_1h_threshold | +0.42% | +0.54% |
 
 ## 7. 次に見るべき不足
 
