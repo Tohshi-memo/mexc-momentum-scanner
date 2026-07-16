@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 107.93803201735814,
+  "balance": 109.01741233753172,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -2078,6 +2078,27 @@
       "strategy_entry_style": "MARKET",
       "strategy_boosters": [],
       "strategy_score": 0.0
+    },
+    {
+      "symbol": "DEXE/USDT:USDT",
+      "detected_at": "2026-07-16T05:41:16.025917+00:00",
+      "closed_at": "2026-07-16T12:55:37.767663+00:00",
+      "outcome": "TP_HIT",
+      "pnl_pct": 8.000000000000004,
+      "sl_pct": 4.000000000000011,
+      "risk_pct": 0.5,
+      "notional_usdt": 13.492254002169732,
+      "pnl_usdt": 1.079380320173579,
+      "balance_before": 107.93803201735814,
+      "balance_after": 109.01741233753172,
+      "strategy_tier": "B",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "OBV_BEAR_DIV",
+        "daily_RED"
+      ],
+      "strategy_score": 0.35
     }
   ]
 }
