@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T15:11:19.867616+00:00
+- generated_at: 2026-07-16T15:16:16.595662+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8812**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T15:11:12.076896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=64408.1
+- 更新: 2026-07-16T15:16:10.167715+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=64349.2
 - Funnel: target 880 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1
+- Strict後reject: 4h RSI 86.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +78.17% | $7,408,176.13 |
-| AKE/USDT:USDT | +27.18% | $40,175,085.06 |
-| MANTRA/USDT:USDT | +21.60% | $2,438,911.37 |
-| US/USDT:USDT | +21.38% | $15,688,659.55 |
-| BANK/USDT:USDT | +16.56% | $5,011,159.77 |
+| ESPORTS/USDT:USDT | +77.27% | $7,636,405.13 |
+| AKE/USDT:USDT | +25.93% | $40,449,359.22 |
+| MANTRA/USDT:USDT | +21.33% | $2,534,163.62 |
+| US/USDT:USDT | +20.28% | $15,704,543.73 |
+| ROAM/USDT:USDT | +17.38% | $6,094,039.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +2.15% | +2.31% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.85% | +2.00% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.21% |
-| RE/USDT:USDT | below_1h_threshold | +0.82% | +0.98% |
-| ROAM/USDT:USDT | below_1h_threshold | +0.62% | +0.77% |
+| ROAM/USDT:USDT | below_1h_threshold | +1.89% | +2.14% |
+| US/USDT:USDT | below_1h_threshold | +1.23% | +1.48% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.30% |
+| AIGENSYN/USDT:USDT | below_1h_threshold | +0.68% | +0.93% |
+| BANK/USDT:USDT | below_1h_threshold | +0.56% | +0.81% |
 
 ## 7. 次に見るべき不足
 
