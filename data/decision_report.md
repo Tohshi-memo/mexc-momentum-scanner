@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T14:21:14.186355+00:00
+- generated_at: 2026-07-16T14:26:24.318420+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8810**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T14:21:06.806353+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=64582.6
+- 更新: 2026-07-16T14:26:17.996323+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=64599.7
 - Funnel: target 880 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +47.39% | $5,198,372.75 |
-| AKE/USDT:USDT | +30.43% | $43,219,973.21 |
-| US/USDT:USDT | +22.02% | $16,274,294.30 |
-| ONDO/USDT:USDT | +17.55% | $100,651,780.12 |
-| CAP/USDT:USDT | +14.66% | $3,194,125.09 |
+| ESPORTS/USDT:USDT | +50.38% | $5,380,451.12 |
+| AKE/USDT:USDT | +30.23% | $43,331,314.73 |
+| US/USDT:USDT | +21.88% | $16,298,669.47 |
+| ONDO/USDT:USDT | +17.31% | $101,321,665.69 |
+| CAP/USDT:USDT | +14.28% | $3,195,530.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PYTH/USDT:USDT | below_1h_threshold | +2.52% | +2.16% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.34% |
-| BASED/USDT:USDT | below_1h_threshold | +1.64% | +1.28% |
-| CAP/USDT:USDT | below_1h_threshold | +1.60% | +1.24% |
-| US/USDT:USDT | below_1h_threshold | +1.36% | +1.00% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.95% | +2.57% |
+| BASED/USDT:USDT | below_1h_threshold | +2.56% | +2.17% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.31% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.67% | +1.29% |
+| CAP/USDT:USDT | below_1h_threshold | +1.33% | +0.94% |
 
 ## 7. 次に見るべき不足
 
