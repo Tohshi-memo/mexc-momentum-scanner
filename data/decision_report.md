@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T18:31:16.974446+00:00
+- generated_at: 2026-07-16T18:36:22.746514+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8819**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$97.25** / 初期 $100.00 (-2.75%)
-- 確定: 86件 (Win 24 / Loss 58 / Flat 4) / pending 4件 / skip 200件
+- 確定: 86件 (Win 24 / Loss 58 / Flat 4) / pending 5件 / skip 200件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $97.25
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T18:31:08.502124+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=64170.1
-- Funnel: target 880 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-16T18:36:11.515205+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=64119.6
+- Funnel: target 880 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +12.63% | $4,913,604.79 |
-| SKYAI/USDT:USDT | +6.55% | $3,455,711.89 |
-| TAC/USDT:USDT | +6.43% | $1,444,896.44 |
-| KAITO/USDT:USDT | +5.94% | $1,086,019.48 |
-| CRO/USDT:USDT | +5.55% | $2,685,734.47 |
+| ANSEM/USDT:USDT | +12.38% | $4,970,806.54 |
+| TAC/USDT:USDT | +6.27% | $1,455,977.66 |
+| KAITO/USDT:USDT | +5.62% | $1,105,152.21 |
+| SKYAI/USDT:USDT | +5.61% | $3,490,956.81 |
+| SLX/USDT:USDT | +4.87% | $1,524,000.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +3.89% | +3.70% |
-| MYX/USDT:USDT | below_1h_threshold | +3.53% | +3.34% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.50% | +2.31% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.76% | +1.57% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.59% | +1.40% |
+| MYX/USDT:USDT | below_1h_threshold | +2.82% | +2.71% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.10% | +1.98% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.56% | +1.45% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.50% | +1.39% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.35% | +1.23% |
 
 ## 7. 次に見るべき不足
 
