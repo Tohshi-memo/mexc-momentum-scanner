@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T05:51:16.341979+00:00
+- generated_at: 2026-07-16T05:56:19.824078+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8790**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T05:51:09.942239+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=64877.6
+- 更新: 2026-07-16T05:56:13.348574+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=64883.3
 - Funnel: target 873 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.3 >= 65=1
+- Strict後reject: 4h RSI 85.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +27.89% | $12,757,028.53 |
-| CAP/USDT:USDT | +15.97% | $2,443,517.25 |
-| AKE/USDT:USDT | +12.31% | $49,001,833.70 |
-| ONDO/USDT:USDT | +11.70% | $60,850,945.25 |
-| LDO/USDT:USDT | +11.37% | $9,200,226.67 |
+| US/USDT:USDT | +28.01% | $12,820,044.32 |
+| CAP/USDT:USDT | +17.77% | $2,477,082.85 |
+| LDO/USDT:USDT | +11.49% | $9,240,130.70 |
+| ONDO/USDT:USDT | +11.34% | $61,186,898.50 |
+| AKE/USDT:USDT | +10.63% | $49,102,021.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XEC/USDT:USDT | below_1h_threshold | +2.80% | +2.39% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.59% | +2.18% |
-| US/USDT:USDT | below_1h_threshold | +2.52% | +2.10% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.70% | +1.28% |
-| LDO/USDT:USDT | below_1h_threshold | +1.56% | +1.15% |
+| CAP/USDT:USDT | below_1h_threshold | +2.89% | +2.47% |
+| US/USDT:USDT | below_1h_threshold | +2.24% | +1.82% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.15% | +1.73% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.82% | +1.40% |
+| LDO/USDT:USDT | below_1h_threshold | +1.76% | +1.34% |
 
 ## 7. 次に見るべき不足
 
