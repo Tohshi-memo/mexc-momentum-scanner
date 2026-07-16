@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T21:56:46.181791+00:00
+- generated_at: 2026-07-16T22:01:11.063383+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8823**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T21:56:40.986361+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64139.0
-- Funnel: target 880 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-16T22:01:04.847705+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64200.0
+- Funnel: target 880 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +14.88% | $2,235,227.65 |
-| LRC/USDT:USDT | +11.63% | $1,073,723.48 |
-| KAITO/USDT:USDT | +10.67% | $2,260,510.14 |
-| DEXE/USDT:USDT | +8.45% | $3,719,115.94 |
-| SLX/USDT:USDT | +7.83% | $1,834,966.03 |
+| TAC/USDT:USDT | +14.37% | $2,238,119.96 |
+| KAITO/USDT:USDT | +11.53% | $2,235,916.93 |
+| LRC/USDT:USDT | +11.45% | $1,074,620.37 |
+| SLX/USDT:USDT | +8.70% | $1,818,018.15 |
+| DEXE/USDT:USDT | +8.51% | $3,202,927.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.96% | +4.89% |
-| TAC/USDT:USDT | below_1h_threshold | +2.68% | +2.60% |
-| DOT/USDT:USDT | below_1h_threshold | +2.12% | +2.04% |
-| BANK/USDT:USDT | below_1h_threshold | +2.05% | +1.98% |
-| MYX/USDT:USDT | below_1h_threshold | +2.00% | +1.92% |
+| UB/USDT:USDT | below_1h_threshold | +0.70% | +0.60% |
+| BANK/USDT:USDT | below_1h_threshold | +0.63% | +0.53% |
+| MYX/USDT:USDT | below_1h_threshold | +0.54% | +0.44% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.48% | +0.38% |
+| GALA/USDT:USDT | below_1h_threshold | +0.34% | +0.24% |
 
 ## 7. 次に見るべき不足
 
