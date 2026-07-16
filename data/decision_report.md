@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T23:06:09.306242+00:00
+- generated_at: 2026-07-16T23:11:11.840631+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8823**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T23:06:02.961784+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63910.9
+- 更新: 2026-07-16T23:11:05.499010+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63905.1
 - Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +16.06% | $2,455,224.93 |
-| KAITO/USDT:USDT | +12.63% | $2,555,820.81 |
-| LRC/USDT:USDT | +10.73% | $1,155,996.64 |
-| DEXE/USDT:USDT | +9.37% | $3,012,423.98 |
-| SKYAI/USDT:USDT | +8.51% | $4,345,936.20 |
+| TAC/USDT:USDT | +17.43% | $2,466,602.60 |
+| KAITO/USDT:USDT | +12.66% | $2,569,048.34 |
+| LRC/USDT:USDT | +10.82% | $1,156,594.06 |
+| DEXE/USDT:USDT | +9.12% | $3,020,736.33 |
+| SKYAI/USDT:USDT | +8.60% | $4,367,860.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.02% | +2.07% |
-| LAB/USDT:USDT | below_1h_threshold | +1.67% | +1.71% |
-| AKE/USDT:USDT | below_1h_threshold | +0.94% | +0.98% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.93% | +0.97% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.65% | +0.70% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.02% | +2.08% |
+| LAB/USDT:USDT | below_1h_threshold | +1.99% | +2.05% |
+| RESOLV/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.74% | +0.79% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.70% | +0.76% |
 
 ## 7. 次に見るべき不足
 
