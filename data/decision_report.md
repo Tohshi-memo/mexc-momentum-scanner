@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T03:16:15.249163+00:00
+- generated_at: 2026-07-16T03:21:16.320552+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8783**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.49** / 初期 $100.00 (-1.51%)
-- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 190件
+- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 191件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000517 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.09% 残高後 $98.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T03:16:07.744205+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64650.1
-- Funnel: target 873 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-16T03:21:09.823289+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64602.1
+- Funnel: target 873 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.7 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +19.15% | $2,030,004.82 |
-| HOME/USDT:USDT | +17.19% | $2,054,539.01 |
-| ROAM/USDT:USDT | +11.56% | $5,683,686.85 |
-| SKL/USDT:USDT | +11.44% | $1,889,081.97 |
-| LDO/USDT:USDT | +11.01% | $7,811,318.31 |
+| CAP/USDT:USDT | +18.71% | $2,034,255.09 |
+| HOME/USDT:USDT | +15.89% | $2,055,551.51 |
+| US/USDT:USDT | +13.07% | $10,245,299.59 |
+| SKL/USDT:USDT | +11.72% | $1,890,711.44 |
+| ROAM/USDT:USDT | +11.43% | $5,684,300.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +4.59% | +4.54% |
-| BANK/USDT:USDT | below_1h_threshold | +3.71% | +3.65% |
-| SKL/USDT:USDT | below_1h_threshold | +2.26% | +2.21% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.03% |
-| NICKEL/USDT:USDT | below_1h_threshold | +1.75% | +1.70% |
+| BANK/USDT:USDT | below_1h_threshold | +4.61% | +4.64% |
+| AKE/USDT:USDT | below_1h_threshold | +3.18% | +3.21% |
+| SKL/USDT:USDT | below_1h_threshold | +2.82% | +2.84% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.10% |
+| NICKEL/USDT:USDT | below_1h_threshold | +1.75% | +1.78% |
 
 ## 7. 次に見るべき不足
 
