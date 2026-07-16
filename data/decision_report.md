@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T05:46:15.081898+00:00
+- generated_at: 2026-07-16T05:51:16.341979+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8790**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.49** / 初期 $100.00 (-1.51%)
-- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 198件
+- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 1件 / skip 198件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000584 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.09% 残高後 $98.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T05:46:06.688041+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=64897.3
-- Funnel: target 873 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-16T05:51:09.942239+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=64877.6
+- Funnel: target 873 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +25.48% | $12,669,113.60 |
-| CAP/USDT:USDT | +16.28% | $2,434,452.88 |
-| ONDO/USDT:USDT | +11.76% | $60,733,291.61 |
-| LDO/USDT:USDT | +11.67% | $9,132,331.10 |
-| ROAM/USDT:USDT | +10.75% | $5,723,349.65 |
+| US/USDT:USDT | +27.89% | $12,757,028.53 |
+| CAP/USDT:USDT | +15.97% | $2,443,517.25 |
+| AKE/USDT:USDT | +12.31% | $49,001,833.70 |
+| ONDO/USDT:USDT | +11.70% | $60,850,945.25 |
+| LDO/USDT:USDT | +11.37% | $9,200,226.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.67% | +4.22% |
-| XEC/USDT:USDT | below_1h_threshold | +3.33% | +2.88% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.59% | +2.15% |
-| LDO/USDT:USDT | below_1h_threshold | +1.81% | +1.37% |
-| CAP/USDT:USDT | below_1h_threshold | +1.58% | +1.14% |
+| XEC/USDT:USDT | below_1h_threshold | +2.80% | +2.39% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.59% | +2.18% |
+| US/USDT:USDT | below_1h_threshold | +2.52% | +2.10% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.70% | +1.28% |
+| LDO/USDT:USDT | below_1h_threshold | +1.56% | +1.15% |
 
 ## 7. 次に見るべき不足
 
