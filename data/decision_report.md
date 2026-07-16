@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T00:36:13.219659+00:00
+- generated_at: 2026-07-16T00:41:14.263490+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8778**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T00:36:05.814231+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=64540.6
+- 更新: 2026-07-16T00:41:07.961563+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=64473.1
 - Funnel: target 871 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +20.31% | $1,905,979.12 |
-| ROAM/USDT:USDT | +18.08% | $5,610,729.02 |
-| CAP/USDT:USDT | +15.15% | $1,698,400.84 |
-| ONDO/USDT:USDT | +9.06% | $42,716,435.94 |
-| LDO/USDT:USDT | +8.90% | $6,676,443.60 |
+| HOME/USDT:USDT | +20.82% | $1,916,715.07 |
+| ROAM/USDT:USDT | +18.44% | $5,611,011.46 |
+| CAP/USDT:USDT | +15.72% | $1,699,322.81 |
+| LDO/USDT:USDT | +8.93% | $6,710,657.59 |
+| SKL/USDT:USDT | +8.45% | $1,856,830.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.90% | +4.18% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.87% | +2.15% |
-| T/USDT:USDT | below_1h_threshold | +1.65% | +1.93% |
-| BANK/USDT:USDT | below_1h_threshold | +1.60% | +1.88% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.60% | +1.88% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.76% | +4.14% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.20% | +2.58% |
+| BANK/USDT:USDT | below_1h_threshold | +2.01% | +2.40% |
+| T/USDT:USDT | below_1h_threshold | +1.98% | +2.36% |
+| CAP/USDT:USDT | below_1h_threshold | +1.59% | +1.97% |
 
 ## 7. 次に見るべき不足
 
