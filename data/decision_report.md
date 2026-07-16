@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T03:56:19.834298+00:00
+- generated_at: 2026-07-16T04:01:15.542622+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8785**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T03:56:14.271399+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64588.1
-- Funnel: target 873 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 84.6 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-16T04:01:09.181727+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64597.6
+- Funnel: target 873 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +21.45% | $2,136,961.10 |
-| US/USDT:USDT | +21.05% | $11,039,860.87 |
-| HOME/USDT:USDT | +13.57% | $2,085,209.60 |
-| SKL/USDT:USDT | +10.86% | $1,904,695.01 |
-| ROAM/USDT:USDT | +10.51% | $5,692,374.19 |
+| CAP/USDT:USDT | +21.83% | $2,126,969.96 |
+| US/USDT:USDT | +20.77% | $11,046,037.19 |
+| HOME/USDT:USDT | +12.84% | $2,082,101.29 |
+| SKL/USDT:USDT | +10.72% | $1,898,971.97 |
+| LDO/USDT:USDT | +10.17% | $7,846,460.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +4.94% | +4.99% |
-| XEC/USDT:USDT | below_1h_threshold | +4.15% | +4.20% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.13% |
-| SKL/USDT:USDT | below_1h_threshold | +2.02% | +2.07% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.83% | +1.87% |
+| US/USDT:USDT | below_1h_threshold | +1.97% | +1.96% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| SXT/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
 
 ## 7. 次に見るべき不足
 
