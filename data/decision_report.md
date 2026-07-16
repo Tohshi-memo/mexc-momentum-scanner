@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T16:56:18.961777+00:00
+- generated_at: 2026-07-16T17:01:12.340122+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8814**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T16:56:11.495199+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=64481.5
-- Funnel: target 880 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-16T17:01:06.125138+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64420.5
+- Funnel: target 880 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +2.64% | $6,283,036.74 |
-| US/USDT:USDT | +2.60% | $15,976,751.21 |
-| DODO/USDT:USDT | +2.43% | $5,381,711.33 |
-| IBMSTOCK/USDT:USDT | +2.06% | $4,071,577.29 |
-| SKYAI/USDT:USDT | +1.95% | $3,019,130.71 |
+| DODO/USDT:USDT | +5.19% | $4,853,726.56 |
+| BSB/USDT:USDT | +3.22% | $3,880,968.38 |
+| US/USDT:USDT | +3.03% | $15,607,924.71 |
+| ROAM/USDT:USDT | +2.34% | $6,278,485.15 |
+| IBMSTOCK/USDT:USDT | +1.98% | $3,384,193.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROAM/USDT:USDT | below_1h_threshold | +2.64% | +2.94% |
-| US/USDT:USDT | below_1h_threshold | +2.61% | +2.91% |
-| DODO/USDT:USDT | below_1h_threshold | +2.43% | +2.74% |
-| CAP/USDT:USDT | below_1h_threshold | +2.10% | +2.40% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.02% | +2.32% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.29% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.67% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.64% |
+| BANK/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.53% | +0.58% |
 
 ## 7. 次に見るべき不足
 
