@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T17:26:07.651306+00:00
+- generated_at: 2026-07-16T17:31:08.864791+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8814**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T17:26:02.704555+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=64142.2
+- 更新: 2026-07-16T17:31:03.890437+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=64221.5
 - Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +9.40% | $1,092,288.03 |
-| DODO/USDT:USDT | +3.44% | $4,934,485.84 |
-| KAITO/USDT:USDT | +3.33% | $1,023,176.45 |
-| SKYAI/USDT:USDT | +2.99% | $3,214,637.11 |
-| ESPORTS/USDT:USDT | +2.91% | $10,792,492.60 |
+| TAC/USDT:USDT | +10.07% | $1,125,716.70 |
+| SLX/USDT:USDT | +3.91% | $1,437,760.49 |
+| ROAM/USDT:USDT | +3.74% | $6,291,981.48 |
+| KAITO/USDT:USDT | +3.57% | $1,034,768.77 |
+| SKYAI/USDT:USDT | +3.18% | $3,215,639.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.72% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.99% | +2.47% |
-| SLX/USDT:USDT | below_1h_threshold | +1.55% | +2.03% |
-| TAC/USDT:USDT | below_1h_threshold | +1.54% | +2.02% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.49% | +1.97% |
+| SLX/USDT:USDT | below_1h_threshold | +2.93% | +3.29% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.60% |
+| LAB/USDT:USDT | below_1h_threshold | +2.23% | +2.59% |
+| TAC/USDT:USDT | below_1h_threshold | +2.22% | +2.58% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.90% | +2.26% |
 
 ## 7. 次に見るべき不足
 
