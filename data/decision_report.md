@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T04:36:08.291373+00:00
+- generated_at: 2026-07-16T04:41:09.119737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8787**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T04:36:02.050948+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64591.7
+- 更新: 2026-07-16T04:41:02.941297+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64570.0
 - Funnel: target 873 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +19.65% | $11,664,006.21 |
-| CAP/USDT:USDT | +15.53% | $2,309,557.06 |
-| HOME/USDT:USDT | +10.52% | $2,118,552.51 |
-| LDO/USDT:USDT | +10.41% | $8,419,359.04 |
-| ROAM/USDT:USDT | +10.05% | $5,707,126.32 |
+| US/USDT:USDT | +21.52% | $11,739,641.09 |
+| CAP/USDT:USDT | +15.34% | $2,319,652.20 |
+| HOME/USDT:USDT | +11.97% | $2,130,814.81 |
+| SKL/USDT:USDT | +10.69% | $1,915,995.70 |
+| LDO/USDT:USDT | +10.41% | $8,444,321.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.03% | +3.03% |
-| AKE/USDT:USDT | below_1h_threshold | +2.30% | +2.30% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
-| SXT/USDT:USDT | below_1h_threshold | +1.47% | +1.47% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| AKE/USDT:USDT | below_1h_threshold | +3.94% | +3.97% |
+| US/USDT:USDT | below_1h_threshold | +2.73% | +2.77% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.44% | +2.47% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.80% | +1.84% |
+| SXT/USDT:USDT | below_1h_threshold | +1.78% | +1.82% |
 
 ## 7. 次に見るべき不足
 
