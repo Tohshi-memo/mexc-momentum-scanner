@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T23:31:12.785731+00:00
+- generated_at: 2026-07-16T23:36:07.526427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8824**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T23:31:06.488378+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=63783.6
+- 更新: 2026-07-16T23:36:02.632408+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=63745.1
 - Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +12.61% | $2,571,133.88 |
-| KAITO/USDT:USDT | +12.61% | $2,620,053.43 |
-| LRC/USDT:USDT | +11.72% | $1,184,577.88 |
-| DEXE/USDT:USDT | +8.79% | $3,047,614.44 |
-| SLX/USDT:USDT | +8.18% | $1,928,037.07 |
+| TAC/USDT:USDT | +13.76% | $2,582,441.95 |
+| KAITO/USDT:USDT | +11.65% | $2,659,752.53 |
+| LRC/USDT:USDT | +10.45% | $1,193,139.18 |
+| DEXE/USDT:USDT | +8.94% | $3,052,482.23 |
+| SLX/USDT:USDT | +8.00% | $1,929,128.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.39% | +2.64% |
-| BSB/USDT:USDT | below_1h_threshold | +2.34% | +2.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.02% | +2.27% |
-| RESOLV/USDT:USDT | below_1h_threshold | +1.82% | +2.06% |
-| LAB/USDT:USDT | below_1h_threshold | +1.76% | +2.01% |
+| BSB/USDT:USDT | below_1h_threshold | +2.64% | +2.95% |
+| LAB/USDT:USDT | below_1h_threshold | +2.09% | +2.39% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.02% | +2.33% |
+| AKE/USDT:USDT | below_1h_threshold | +1.75% | +2.06% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.68% | +1.98% |
 
 ## 7. 次に見るべき不足
 
