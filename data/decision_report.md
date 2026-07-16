@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T01:06:15.085695+00:00
+- generated_at: 2026-07-16T01:11:15.907258+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8779**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T01:06:08.830009+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64615.9
+- 更新: 2026-07-16T01:11:10.046213+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64607.9
 - Funnel: target 871 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +19.73% | $1,927,751.00 |
-| ROAM/USDT:USDT | +17.13% | $5,623,506.59 |
-| CAP/USDT:USDT | +14.22% | $1,716,942.39 |
-| LDO/USDT:USDT | +8.75% | $6,905,225.43 |
-| SKL/USDT:USDT | +8.30% | $1,855,336.88 |
+| HOME/USDT:USDT | +19.95% | $1,936,360.78 |
+| CAP/USDT:USDT | +15.34% | $1,726,922.78 |
+| ROAM/USDT:USDT | +13.73% | $5,626,067.35 |
+| ONDO/USDT:USDT | +8.37% | $44,612,230.25 |
+| LDO/USDT:USDT | +8.03% | $6,923,035.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.09% | +1.00% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.77% | +0.68% |
-| ROAM/USDT:USDT | below_1h_threshold | +0.67% | +0.58% |
-| TIA/USDT:USDT | below_1h_threshold | +0.46% | +0.36% |
-| RE/USDT:USDT | below_1h_threshold | +0.45% | +0.35% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.21% | +1.13% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.75% | +0.67% |
+| CAP/USDT:USDT | below_1h_threshold | +0.71% | +0.63% |
+| MYX/USDT:USDT | below_1h_threshold | +0.47% | +0.39% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.41% | +0.33% |
 
 ## 7. 次に見るべき不足
 
