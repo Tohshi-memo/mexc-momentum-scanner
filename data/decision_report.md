@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T12:01:17.090078+00:00
+- generated_at: 2026-07-16T12:06:08.223675+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8806**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T12:01:09.716818+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64200.0
+- 更新: 2026-07-16T12:06:01.881548+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=64137.3
 - Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +29.74% | $3,185,974.90 |
-| US/USDT:USDT | +20.90% | $16,617,990.03 |
-| AKE/USDT:USDT | +19.18% | $43,274,989.07 |
-| ROAM/USDT:USDT | +16.42% | $5,971,128.90 |
-| BANK/USDT:USDT | +15.59% | $3,648,637.60 |
+| ESPORTS/USDT:USDT | +28.76% | $3,259,578.71 |
+| US/USDT:USDT | +20.75% | $16,672,116.27 |
+| AKE/USDT:USDT | +20.74% | $43,410,513.43 |
+| ROAM/USDT:USDT | +16.99% | $5,973,669.01 |
+| BANK/USDT:USDT | +14.55% | $3,737,718.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NICKEL/USDT:USDT | below_1h_threshold | +0.44% | +0.48% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.38% | +0.42% |
-| BASED/USDT:USDT | below_1h_threshold | +0.28% | +0.32% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.27% | +0.31% |
-| ALCH/USDT:USDT | below_1h_threshold | +0.26% | +0.30% |
+| AKE/USDT:USDT | below_1h_threshold | +1.11% | +1.25% |
+| FLOCK/USDT:USDT | below_1h_threshold | +0.87% | +1.01% |
+| ALCH/USDT:USDT | below_1h_threshold | +0.86% | +1.00% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.82% | +0.96% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.72% | +0.86% |
 
 ## 7. 次に見るべき不足
 
