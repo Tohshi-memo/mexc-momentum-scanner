@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T04:01:15.542622+00:00
+- generated_at: 2026-07-16T04:06:09.595340+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8785**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T04:01:09.181727+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64597.6
+- 更新: 2026-07-16T04:06:03.221578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64596.2
 - Funnel: target 873 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,20 +79,20 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +21.83% | $2,126,969.96 |
-| US/USDT:USDT | +20.77% | $11,046,037.19 |
-| HOME/USDT:USDT | +12.84% | $2,082,101.29 |
-| SKL/USDT:USDT | +10.72% | $1,898,971.97 |
-| LDO/USDT:USDT | +10.17% | $7,846,460.99 |
+| CAP/USDT:USDT | +22.39% | $2,130,796.88 |
+| US/USDT:USDT | +21.98% | $11,161,482.58 |
+| HOME/USDT:USDT | +12.48% | $2,095,759.93 |
+| LDO/USDT:USDT | +10.50% | $7,903,210.11 |
+| ONDO/USDT:USDT | +10.02% | $54,336,776.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +1.97% | +1.96% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
-| SXT/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| US/USDT:USDT | below_1h_threshold | +3.03% | +3.03% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.72% | +0.72% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.67% | +0.67% |
 | SNXX/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
 
 ## 7. 次に見るべき不足
