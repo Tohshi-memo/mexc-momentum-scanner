@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T21:21:15.565689+00:00
+- generated_at: 2026-07-16T21:26:19.218251+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8823**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$97.72** / 初期 $100.00 (-2.28%)
-- 確定: 90件 (Win 26 / Loss 60 / Flat 4) / pending 1件 / skip 200件
+- 確定: 90件 (Win 26 / Loss 60 / Flat 4) / pending 2件 / skip 200件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ANSEM/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $97.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T21:21:09.242053+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64173.7
-- Funnel: target 880 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-16T21:26:12.786720+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64132.4
+- Funnel: target 880 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.8 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +17.43% | $1,988,746.31 |
-| DEXE/USDT:USDT | +10.40% | $3,619,069.44 |
-| KAITO/USDT:USDT | +10.25% | $2,153,635.72 |
-| SLX/USDT:USDT | +6.61% | $1,775,137.99 |
-| RESOLV/USDT:USDT | +6.00% | $1,055,645.85 |
+| TAC/USDT:USDT | +18.32% | $2,039,615.46 |
+| LRC/USDT:USDT | +11.81% | $1,026,041.10 |
+| KAITO/USDT:USDT | +10.25% | $2,162,608.51 |
+| DEXE/USDT:USDT | +8.64% | $3,636,332.00 |
+| SLX/USDT:USDT | +6.52% | $1,776,024.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_relative_strength | +5.07% | +4.94% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.79% | +1.66% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.39% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.23% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.20% | +1.08% |
+| MYX/USDT:USDT | below_1h_threshold | +1.82% | +1.75% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.56% | +1.49% |
+| DOT/USDT:USDT | below_1h_threshold | +1.53% | +1.46% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.46% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.39% | +1.33% |
 
 ## 7. 次に見るべき不足
 
