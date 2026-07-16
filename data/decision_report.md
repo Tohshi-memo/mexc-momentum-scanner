@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T09:01:12.781435+00:00
+- generated_at: 2026-07-16T09:06:15.134514+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8793**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T09:01:06.496885+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64144.0
+- 更新: 2026-07-16T09:06:08.848081+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64131.7
 - Funnel: target 875 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +17.71% | $2,811,671.27 |
-| ROAM/USDT:USDT | +13.95% | $5,797,656.14 |
-| ONDO/USDT:USDT | +10.62% | $70,116,245.33 |
-| AKE/USDT:USDT | +10.60% | $43,949,186.29 |
-| LDO/USDT:USDT | +9.93% | $10,673,131.17 |
+| CAP/USDT:USDT | +18.21% | $2,814,978.05 |
+| ROAM/USDT:USDT | +17.81% | $5,801,649.41 |
+| AKE/USDT:USDT | +11.87% | $44,092,089.86 |
+| ONDO/USDT:USDT | +10.80% | $70,254,024.62 |
+| LDO/USDT:USDT | +10.02% | $10,751,283.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROAM/USDT:USDT | below_1h_threshold | +1.59% | +1.52% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.46% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.85% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.82% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.78% |
+| ROAM/USDT:USDT | below_1h_threshold | +4.96% | +4.90% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.87% |
+| AKE/USDT:USDT | below_1h_threshold | +0.91% | +0.85% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.84% |
 
 ## 7. 次に見るべき不足
 
