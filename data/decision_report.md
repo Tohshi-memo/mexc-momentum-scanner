@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T07:31:09.373883+00:00
+- generated_at: 2026-07-16T07:36:09.680694+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8793**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T07:31:04.866363+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=64474.4
+- 更新: 2026-07-16T07:36:04.586426+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=64420.0
 - Funnel: target 875 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +27.66% | $13,343,539.57 |
-| CAP/USDT:USDT | +16.40% | $2,688,072.73 |
-| ONDO/USDT:USDT | +12.30% | $64,504,054.79 |
-| LDO/USDT:USDT | +12.00% | $9,726,063.23 |
-| AKE/USDT:USDT | +11.45% | $49,502,329.52 |
+| US/USDT:USDT | +27.26% | $13,400,965.01 |
+| CAP/USDT:USDT | +16.53% | $2,698,035.30 |
+| AKE/USDT:USDT | +12.27% | $49,644,993.58 |
+| ONDO/USDT:USDT | +11.91% | $64,774,531.56 |
+| LDO/USDT:USDT | +11.55% | $9,759,101.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +1.08% | +1.50% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.96% | +1.39% |
-| AKE/USDT:USDT | below_1h_threshold | +0.67% | +1.10% |
-| SKL/USDT:USDT | below_1h_threshold | +0.66% | +1.08% |
-| RE/USDT:USDT | below_1h_threshold | +0.55% | +0.98% |
+| AKE/USDT:USDT | below_1h_threshold | +1.32% | +1.83% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.00% | +1.51% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.87% | +1.38% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.83% | +1.34% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.77% | +1.28% |
 
 ## 7. 次に見るべき不足
 
