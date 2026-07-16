@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T12:56:22.176825+00:00
+- generated_at: 2026-07-16T13:01:17.548135+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8808**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T12:56:14.635506+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=63971.2
-- Funnel: target 880 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.6 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-16T13:01:11.287393+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63971.5
+- Funnel: target 880 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +32.59% | $3,863,584.72 |
-| AKE/USDT:USDT | +28.20% | $46,791,312.89 |
-| US/USDT:USDT | +22.18% | $17,113,606.56 |
-| ROAM/USDT:USDT | +18.83% | $6,008,538.19 |
-| BANK/USDT:USDT | +15.94% | $4,149,404.42 |
+| ESPORTS/USDT:USDT | +33.35% | $3,877,819.37 |
+| AKE/USDT:USDT | +26.91% | $43,903,207.93 |
+| US/USDT:USDT | +21.46% | $16,398,254.02 |
+| ROAM/USDT:USDT | +16.60% | $6,008,783.05 |
+| BANK/USDT:USDT | +15.38% | $4,182,911.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.25% | +2.65% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.06% | +2.46% |
-| CAP/USDT:USDT | below_1h_threshold | +1.96% | +2.35% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.76% | +2.16% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.73% | +2.13% |
+| UNHSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.44% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.91% | +0.86% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.88% | +0.83% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.73% | +0.67% |
+| AKE/USDT:USDT | below_1h_threshold | +0.61% | +0.56% |
 
 ## 7. 次に見るべき不足
 
