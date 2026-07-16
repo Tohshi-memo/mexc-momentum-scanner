@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T09:21:19.637283+00:00
+- generated_at: 2026-07-16T09:26:18.438135+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8794**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T09:21:11.979022+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64094.0
-- Funnel: target 875 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.2 >= 65=1
+- 更新: 2026-07-16T09:26:09.308869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64043.1
+- Funnel: target 875 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +17.45% | $5,811,711.19 |
-| CAP/USDT:USDT | +16.09% | $2,870,634.80 |
-| AKE/USDT:USDT | +13.35% | $44,375,956.88 |
-| BANK/USDT:USDT | +11.59% | $2,406,797.58 |
-| US/USDT:USDT | +10.92% | $15,185,285.98 |
+| ROAM/USDT:USDT | +17.99% | $5,815,086.26 |
+| CAP/USDT:USDT | +15.40% | $2,871,064.71 |
+| AKE/USDT:USDT | +13.20% | $44,436,387.14 |
+| US/USDT:USDT | +13.20% | $15,306,624.63 |
+| FLOCK/USDT:USDT | +11.07% | $1,031,103.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROAM/USDT:USDT | below_1h_threshold | +4.71% | +4.71% |
-| BANK/USDT:USDT | below_1h_threshold | +4.04% | +4.04% |
-| BASED/USDT:USDT | below_1h_threshold | +3.56% | +3.56% |
-| AKE/USDT:USDT | below_1h_threshold | +2.51% | +2.51% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.54% |
+| BASED/USDT:USDT | below_1h_threshold | +3.24% | +3.33% |
+| BANK/USDT:USDT | below_1h_threshold | +2.86% | +2.95% |
+| AKE/USDT:USDT | below_1h_threshold | +2.14% | +2.22% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.62% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.25% | +1.33% |
 
 ## 7. 次に見るべき不足
 
