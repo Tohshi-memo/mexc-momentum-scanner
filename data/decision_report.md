@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T16:36:21.049378+00:00
+- generated_at: 2026-07-16T16:41:15.328767+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8813**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T16:36:14.449202+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=64525.9
+- 更新: 2026-07-16T16:41:08.928086+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=64425.9
 - Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +7.87% | $6,229,183.56 |
-| CAP/USDT:USDT | +4.14% | $3,244,694.12 |
-| DODO/USDT:USDT | +3.49% | $5,309,703.67 |
-| US/USDT:USDT | +2.49% | $15,883,495.75 |
-| SLX/USDT:USDT | +2.08% | $1,439,686.79 |
+| ROAM/USDT:USDT | +5.28% | $6,257,895.82 |
+| CAP/USDT:USDT | +3.74% | $3,253,950.18 |
+| DODO/USDT:USDT | +3.26% | $5,339,855.14 |
+| US/USDT:USDT | +2.52% | $15,941,407.79 |
+| KAITO/USDT:USDT | +1.92% | $1,084,796.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.03% | +4.26% |
-| DODO/USDT:USDT | below_1h_threshold | +3.26% | +3.49% |
-| US/USDT:USDT | below_1h_threshold | +2.36% | +2.59% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.22% | +2.46% |
-| SLX/USDT:USDT | below_1h_threshold | +2.00% | +2.24% |
+| CAP/USDT:USDT | below_1h_threshold | +3.69% | +4.08% |
+| DODO/USDT:USDT | below_1h_threshold | +3.26% | +3.65% |
+| US/USDT:USDT | below_1h_threshold | +2.57% | +2.96% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.01% | +2.40% |
+| H/USDT:USDT | below_1h_threshold | +1.90% | +2.29% |
 
 ## 7. 次に見るべき不足
 
