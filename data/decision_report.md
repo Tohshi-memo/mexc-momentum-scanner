@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T17:46:08.768182+00:00
+- generated_at: 2026-07-16T17:51:12.743152+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8814**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$97.26** / 初期 $100.00 (-2.74%)
-- 確定: 83件 (Win 23 / Loss 56 / Flat 4) / pending 3件 / skip 198件
+- 確定: 83件 (Win 23 / Loss 56 / Flat 4) / pending 4件 / skip 198件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000207 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $97.26
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T17:46:02.465382+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=64096.8
-- Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-16T17:51:06.263543+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.59% price=64076.6
+- Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.1 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +12.39% | $1,234,323.89 |
-| SLX/USDT:USDT | +5.04% | $1,506,106.49 |
-| SKYAI/USDT:USDT | +4.82% | $3,351,742.25 |
-| ESPORTS/USDT:USDT | +4.51% | $11,237,739.16 |
-| CAP/USDT:USDT | +4.25% | $3,222,303.91 |
+| TAC/USDT:USDT | +12.90% | $1,272,475.09 |
+| ESPORTS/USDT:USDT | +8.38% | $11,421,530.26 |
+| SKYAI/USDT:USDT | +5.01% | $3,361,178.36 |
+| CAP/USDT:USDT | +4.82% | $3,224,636.25 |
+| SLX/USDT:USDT | +4.09% | $1,510,220.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +4.38% | +4.93% |
-| SLX/USDT:USDT | below_1h_threshold | +3.88% | +4.43% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.49% | +4.04% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.29% | +3.85% |
-| CAP/USDT:USDT | below_1h_threshold | +2.28% | +2.84% |
+| TAC/USDT:USDT | below_1h_threshold | +4.71% | +5.29% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.48% | +4.06% |
+| SLX/USDT:USDT | below_1h_threshold | +3.01% | +3.60% |
+| CAP/USDT:USDT | below_1h_threshold | +2.84% | +3.42% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.83% |
 
 ## 7. 次に見るべき不足
 
