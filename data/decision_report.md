@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T03:01:14.037810+00:00
+- generated_at: 2026-07-16T03:06:09.335474+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8782**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T03:01:06.960149+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64608.3
-- Funnel: target 873 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-16T03:06:03.186128+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64574.8
+- Funnel: target 873 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +19.33% | $1,979,358.13 |
-| HOME/USDT:USDT | +15.82% | $2,050,815.86 |
-| ONDO/USDT:USDT | +11.19% | $52,216,727.20 |
-| ROAM/USDT:USDT | +11.18% | $5,678,988.54 |
-| LDO/USDT:USDT | +10.41% | $7,755,320.66 |
+| CAP/USDT:USDT | +18.21% | $1,997,062.91 |
+| HOME/USDT:USDT | +16.69% | $2,051,407.72 |
+| ROAM/USDT:USDT | +11.36% | $5,679,773.94 |
+| ONDO/USDT:USDT | +10.86% | $52,463,812.07 |
+| LDO/USDT:USDT | +10.29% | $7,792,859.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.10% |
-| NICKEL/USDT:USDT | below_1h_threshold | +1.75% | +1.77% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.70% | +1.71% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
+| AKE/USDT:USDT | below_1h_threshold | +2.32% | +2.39% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.08% | +2.15% |
+| NICKEL/USDT:USDT | below_1h_threshold | +1.75% | +1.82% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
+| BANK/USDT:USDT | below_1h_threshold | +1.11% | +1.18% |
 
 ## 7. 次に見るべき不足
 
