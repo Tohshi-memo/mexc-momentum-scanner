@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T14:36:16.473758+00:00
+- generated_at: 2026-07-16T14:41:18.474066+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8810**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T14:36:11.254438+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.64% price=64765.2
-- Funnel: target 880 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1
+- 更新: 2026-07-16T14:41:11.988663+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=64645.2
+- Funnel: target 880 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +51.91% | $5,578,997.08 |
-| MANTRA/USDT:USDT | +33.32% | $1,332,188.75 |
-| AKE/USDT:USDT | +29.52% | $43,585,414.40 |
-| US/USDT:USDT | +21.55% | $16,339,083.96 |
-| ONDO/USDT:USDT | +17.04% | $102,630,875.53 |
+| ESPORTS/USDT:USDT | +53.71% | $5,691,110.95 |
+| MANTRA/USDT:USDT | +29.78% | $1,552,567.01 |
+| AKE/USDT:USDT | +29.69% | $43,703,041.12 |
+| US/USDT:USDT | +21.57% | $16,355,439.80 |
+| ONDO/USDT:USDT | +16.53% | $103,126,143.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.95% | +3.31% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.91% | +2.27% |
-| BASED/USDT:USDT | below_1h_threshold | +2.21% | +1.56% |
-| CAP/USDT:USDT | below_1h_threshold | +1.55% | +0.91% |
-| UNHSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +0.60% |
+| ESPORTS/USDT:USDT | below_relative_strength | +5.28% | +4.83% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.79% | +2.34% |
+| CAP/USDT:USDT | below_1h_threshold | +1.33% | +0.87% |
+| BASED/USDT:USDT | below_1h_threshold | +1.30% | +0.84% |
+| UNHSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +0.79% |
 
 ## 7. 次に見るべき不足
 
