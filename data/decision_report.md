@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T20:16:12.809090+00:00
+- generated_at: 2026-07-16T20:21:06.000182+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8823**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T20:16:06.404285+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64130.1
-- Funnel: target 880 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-16T20:21:01.087266+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64215.8
+- Funnel: target 880 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KAITO/USDT:USDT | +9.78% | $1,822,937.05 |
-| TAC/USDT:USDT | +9.46% | $1,766,517.18 |
-| DEXE/USDT:USDT | +8.54% | $3,823,149.80 |
-| ANSEM/USDT:USDT | +6.61% | $5,078,196.61 |
-| SLX/USDT:USDT | +5.48% | $1,661,204.67 |
+| TAC/USDT:USDT | +10.96% | $1,780,677.88 |
+| KAITO/USDT:USDT | +9.64% | $1,874,167.63 |
+| DEXE/USDT:USDT | +9.09% | $3,846,422.32 |
+| H/USDT:USDT | +8.37% | $1,008,524.98 |
+| SLX/USDT:USDT | +6.35% | $1,679,578.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +4.03% | +4.20% |
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.95% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.21% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.72% | +1.89% |
-| CRO/USDT:USDT | below_1h_threshold | +1.52% | +1.69% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.82% |
+| H/USDT:USDT | below_1h_threshold | +3.41% | +3.45% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.47% | +2.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.44% | +2.48% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.08% |
 
 ## 7. 次に見るべき不足
 
