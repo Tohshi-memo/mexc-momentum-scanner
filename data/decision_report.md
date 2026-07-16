@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T06:21:13.168499+00:00
+- generated_at: 2026-07-16T06:26:11.764167+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8791**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T06:21:06.904907+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64872.2
+- 更新: 2026-07-16T06:26:06.745429+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64838.6
 - Funnel: target 873 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +26.38% | $13,042,617.45 |
-| CAP/USDT:USDT | +18.15% | $2,490,104.45 |
-| AKE/USDT:USDT | +12.65% | $49,589,230.42 |
-| ROAM/USDT:USDT | +12.00% | $5,749,756.23 |
-| ONDO/USDT:USDT | +11.28% | $61,819,493.15 |
+| US/USDT:USDT | +25.60% | $13,201,298.96 |
+| CAP/USDT:USDT | +18.52% | $2,536,715.60 |
+| ROAM/USDT:USDT | +12.76% | $5,752,622.27 |
+| AKE/USDT:USDT | +11.99% | $49,749,542.96 |
+| ONDO/USDT:USDT | +11.52% | $61,950,478.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.21% | +3.25% |
-| XEC/USDT:USDT | below_1h_threshold | +2.31% | +2.35% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.12% | +2.16% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.98% | +2.02% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.98% | +2.02% |
+| XEC/USDT:USDT | below_1h_threshold | +2.69% | +2.78% |
+| AKE/USDT:USDT | below_1h_threshold | +2.68% | +2.77% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.17% | +2.27% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.12% | +2.21% |
 
 ## 7. 次に見るべき不足
 
