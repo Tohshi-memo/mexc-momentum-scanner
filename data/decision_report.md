@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T10:26:20.886284+00:00
+- generated_at: 2026-07-16T10:31:19.262933+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8799**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T10:26:14.883397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64168.1
+- 更新: 2026-07-16T10:31:12.740476+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=64200.0
 - Funnel: target 875 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
+- Strict後reject: 4h RSI 86.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROAM/USDT:USDT | +18.41% | $5,942,123.51 |
-| US/USDT:USDT | +18.06% | $16,035,569.50 |
-| BANK/USDT:USDT | +15.17% | $2,684,298.26 |
-| AKE/USDT:USDT | +14.27% | $43,902,256.32 |
-| CAP/USDT:USDT | +14.16% | $2,907,740.47 |
+| ROAM/USDT:USDT | +18.23% | $5,948,999.39 |
+| US/USDT:USDT | +17.69% | $16,074,407.94 |
+| BANK/USDT:USDT | +15.21% | $2,722,595.38 |
+| AKE/USDT:USDT | +14.84% | $44,040,649.38 |
+| CAP/USDT:USDT | +13.53% | $2,908,807.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNHSTOCK/USDT:USDT | below_1h_threshold | +4.77% | +4.61% |
-| BANK/USDT:USDT | below_1h_threshold | +3.33% | +3.17% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.19% | +2.03% |
-| ENJ/USDT:USDT | below_1h_threshold | +1.51% | +1.35% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.42% | +1.26% |
+| UNHSTOCK/USDT:USDT | below_1h_threshold | +4.77% | +4.56% |
+| BANK/USDT:USDT | below_1h_threshold | +3.40% | +3.19% |
+| BASED/USDT:USDT | below_1h_threshold | +2.69% | +2.47% |
+| ENJ/USDT:USDT | below_1h_threshold | +2.15% | +1.94% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.99% | +1.78% |
 
 ## 7. 次に見るべき不足
 
