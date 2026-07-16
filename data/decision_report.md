@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T16:01:11.523161+00:00
+- generated_at: 2026-07-16T16:06:17.339153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8812**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T16:01:05.318900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64680.1
+- 更新: 2026-07-16T16:06:10.852478+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=64530.2
 - Funnel: target 880 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GALA/USDT:USDT | +0.73% | $1,571,690.37 |
-| ESPORTS/USDT:USDT | +0.49% | $9,095,506.68 |
-| US/USDT:USDT | +0.49% | $15,458,254.97 |
-| BASED/USDT:USDT | +0.47% | $2,917,730.02 |
-| LAB/USDT:USDT | +0.46% | $11,588,653.91 |
+| VELVET/USDT:USDT | +2.18% | $7,766,087.35 |
+| US/USDT:USDT | +1.82% | $15,540,464.85 |
+| RE/USDT:USDT | +1.31% | $1,501,578.41 |
+| ROAM/USDT:USDT | +1.20% | $6,130,452.71 |
+| EVAA/USDT:USDT | +1.19% | $8,554,717.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.60% |
-| GALA/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.67% | +0.66% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
-| US/USDT:USDT | below_1h_threshold | +0.49% | +0.49% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.90% | +2.13% |
+| US/USDT:USDT | below_1h_threshold | +1.86% | +2.09% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.83% |
+| RE/USDT:USDT | below_1h_threshold | +1.32% | +1.54% |
+| ROAM/USDT:USDT | below_1h_threshold | +1.26% | +1.49% |
 
 ## 7. 次に見るべき不足
 
