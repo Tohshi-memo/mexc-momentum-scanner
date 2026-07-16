@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T00:06:13.521928+00:00
+- generated_at: 2026-07-16T00:11:17.380399+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8776**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.49** / 初期 $100.00 (-1.51%)
-- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 183件
+- 確定: 64件 (Win 19 / Loss 41 / Flat 4) / pending 0件 / skip 184件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000358 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.09% 残高後 $98.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T00:06:06.116053+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64786.0
-- Funnel: target 871 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-16T00:11:11.990595+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=64798.9
+- Funnel: target 871 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +26.85% | $1,814,583.93 |
-| ROAM/USDT:USDT | +17.45% | $5,591,228.90 |
-| CAP/USDT:USDT | +14.53% | $1,651,393.55 |
-| LAB/USDT:USDT | +13.27% | $15,813,515.36 |
-| ONDO/USDT:USDT | +10.38% | $39,952,480.50 |
+| HOME/USDT:USDT | +24.02% | $1,837,287.18 |
+| ROAM/USDT:USDT | +19.29% | $5,594,049.04 |
+| CAP/USDT:USDT | +15.72% | $1,664,555.76 |
+| LAB/USDT:USDT | +15.17% | $15,956,884.08 |
+| ONDO/USDT:USDT | +10.08% | $40,239,231.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.90% | +4.80% |
-| BANK/USDT:USDT | below_1h_threshold | +1.70% | +1.60% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.37% | +1.27% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.81% |
-| GRASS/USDT:USDT | below_1h_threshold | +0.78% | +0.68% |
+| CAP/USDT:USDT | below_1h_threshold | +1.53% | +1.41% |
+| ROAM/USDT:USDT | below_1h_threshold | +1.34% | +1.22% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.30% | +1.18% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.24% | +1.13% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.20% | +1.08% |
 
 ## 7. 次に見るべき不足
 
