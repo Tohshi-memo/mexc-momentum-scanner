@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T15:51:13.634467+00:00
+- generated_at: 2026-07-16T15:56:28.002829+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8812**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T15:51:08.497676+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=64739.9
-- Funnel: target 880 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.3 >= 65=1
+- 更新: 2026-07-16T15:56:21.484784+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=64679.9
+- Funnel: target 880 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +81.93% | $8,796,243.34 |
-| AKE/USDT:USDT | +29.27% | $41,740,153.59 |
-| MANTRA/USDT:USDT | +22.70% | $2,981,327.16 |
-| ROAM/USDT:USDT | +21.64% | $6,121,874.13 |
-| US/USDT:USDT | +19.96% | $15,837,619.76 |
+| ESPORTS/USDT:USDT | +81.93% | $8,930,568.35 |
+| AKE/USDT:USDT | +29.57% | $41,835,770.11 |
+| MANTRA/USDT:USDT | +22.73% | $2,999,293.44 |
+| ROAM/USDT:USDT | +21.27% | $6,125,907.66 |
+| US/USDT:USDT | +20.09% | $15,854,326.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +3.81% | +3.45% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.42% | +3.06% |
-| RE/USDT:USDT | below_1h_threshold | +3.33% | +2.97% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.19% | +1.83% |
-| US/USDT:USDT | below_1h_threshold | +1.58% | +1.22% |
+| ROAM/USDT:USDT | below_relative_strength | +5.15% | +4.89% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.14% | +2.88% |
+| RE/USDT:USDT | below_1h_threshold | +2.78% | +2.52% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.70% | +2.44% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.04% | +1.78% |
 
 ## 7. 次に見るべき不足
 
