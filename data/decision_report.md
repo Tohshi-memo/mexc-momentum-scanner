@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T15:41:19.143761+00:00
+- generated_at: 2026-07-16T15:46:26.348903+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8812**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$109.02** / 初期 $100.00 (+9.02%)
-- 確定トレード: 106件 (TP 40 / SL 64 / EXP 2)
-- 最新: DEXE/USDT:USDT TP_HIT PnL +8.00% 残高後 $109.02
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$109.89** / 初期 $100.00 (+9.89%)
+- 確定トレード: 107件 (TP 40 / SL 64 / EXP 3)
+- 最新: ALLO/USDT:USDT EXPIRED PnL +6.44% 残高後 $109.89
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T15:41:12.166254+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=64754.5
+- 更新: 2026-07-16T15:46:19.255013+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=64639.9
 - Funnel: target 880 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.9 >= 65=1
+- Strict後reject: 4h RSI 86.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +78.38% | $8,554,850.00 |
-| AKE/USDT:USDT | +30.18% | $41,495,007.31 |
-| ROAM/USDT:USDT | +23.43% | $6,113,987.79 |
-| MANTRA/USDT:USDT | +22.55% | $2,789,378.15 |
-| US/USDT:USDT | +20.08% | $15,799,032.88 |
+| ESPORTS/USDT:USDT | +78.52% | $8,633,535.95 |
+| AKE/USDT:USDT | +30.25% | $41,636,588.56 |
+| MANTRA/USDT:USDT | +22.95% | $2,941,679.90 |
+| ROAM/USDT:USDT | +22.23% | $6,118,422.56 |
+| US/USDT:USDT | +19.55% | $15,814,373.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +4.35% | +3.97% |
-| RE/USDT:USDT | below_1h_threshold | +4.21% | +3.83% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.18% | +2.80% |
-| MYX/USDT:USDT | below_1h_threshold | +2.40% | +2.02% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.38% | +2.00% |
+| RE/USDT:USDT | below_1h_threshold | +4.34% | +4.14% |
+| RAVE/USDT:USDT | below_1h_threshold | +3.91% | +3.71% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.52% | +2.32% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.53% | +1.33% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.38% | +1.18% |
 
 ## 7. 次に見るべき不足
 
