@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T01:46:13.737698+00:00
+- generated_at: 2026-07-16T01:51:14.002383+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8779**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T01:46:07.472174+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64583.5
+- 更新: 2026-07-16T01:51:07.833768+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=64787.6
 - Funnel: target 871 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +18.94% | $1,991,689.79 |
-| CAP/USDT:USDT | +16.15% | $1,800,405.72 |
-| ROAM/USDT:USDT | +11.96% | $5,658,431.84 |
-| SKL/USDT:USDT | +9.85% | $1,876,672.24 |
-| ONDO/USDT:USDT | +9.66% | $49,137,758.32 |
+| HOME/USDT:USDT | +19.08% | $1,998,708.38 |
+| CAP/USDT:USDT | +16.03% | $1,803,485.78 |
+| ROAM/USDT:USDT | +12.35% | $5,660,163.39 |
+| ONDO/USDT:USDT | +10.62% | $49,373,007.36 |
+| SKL/USDT:USDT | +9.57% | $1,877,652.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SXT/USDT:USDT | below_1h_threshold | +2.64% | +2.59% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.29% | +2.24% |
-| CAP/USDT:USDT | below_1h_threshold | +1.42% | +1.37% |
-| SKL/USDT:USDT | below_1h_threshold | +1.19% | +1.14% |
-| MYX/USDT:USDT | below_1h_threshold | +1.17% | +1.13% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.87% | +2.51% |
+| SXT/USDT:USDT | below_1h_threshold | +2.41% | +2.04% |
+| CAP/USDT:USDT | below_1h_threshold | +1.31% | +0.95% |
+| MYX/USDT:USDT | below_1h_threshold | +1.29% | +0.92% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.23% | +0.87% |
 
 ## 7. 次に見るべき不足
 
