@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T14:31:16.011697+00:00
+- generated_at: 2026-07-16T14:36:16.473758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8810**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T14:31:09.423355+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.65% price=64770.8
+- 更新: 2026-07-16T14:36:11.254438+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.64% price=64765.2
 - Funnel: target 880 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.1 >= 65=1
+- Strict後reject: 4h RSI 92.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +50.38% | $5,487,654.69 |
-| MANTRA/USDT:USDT | +33.23% | $1,170,965.34 |
-| AKE/USDT:USDT | +30.22% | $43,446,668.01 |
-| US/USDT:USDT | +21.70% | $16,329,847.51 |
-| ONDO/USDT:USDT | +16.95% | $102,290,351.40 |
+| ESPORTS/USDT:USDT | +51.91% | $5,578,997.08 |
+| MANTRA/USDT:USDT | +33.32% | $1,332,188.75 |
+| AKE/USDT:USDT | +29.52% | $43,585,414.40 |
+| US/USDT:USDT | +21.55% | $16,339,083.96 |
+| ONDO/USDT:USDT | +17.04% | $102,630,875.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.14% | +2.49% |
-| BASED/USDT:USDT | below_1h_threshold | +2.32% | +1.67% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.10% | +1.44% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +1.04% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.30% | +0.65% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.95% | +3.31% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.91% | +2.27% |
+| BASED/USDT:USDT | below_1h_threshold | +2.21% | +1.56% |
+| CAP/USDT:USDT | below_1h_threshold | +1.55% | +0.91% |
+| UNHSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +0.60% |
 
 ## 7. 次に見るべき不足
 
