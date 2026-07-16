@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-16T02:11:08.681058+00:00
+- generated_at: 2026-07-16T02:16:10.706127+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8780**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$104.25** / 初期 $100.00 (+4.25%)
-- 確定トレード: 100件 (TP 35 / SL 63 / EXP 2)
-- 最新: ROAM/USDT:USDT TP_HIT PnL +8.00% 残高後 $104.25
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$105.29** / 初期 $100.00 (+5.29%)
+- 確定トレード: 101件 (TP 36 / SL 63 / EXP 2)
+- 最新: FLUTSTOCK/USDT:USDT TP_HIT PnL +8.00% 残高後 $105.29
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-16T02:11:02.577707+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64645.9
-- Funnel: target 873 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-16T02:16:04.526865+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64634.2
+- Funnel: target 873 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +18.09% | $1,804,994.51 |
-| HOME/USDT:USDT | +15.52% | $2,030,409.16 |
-| ROAM/USDT:USDT | +11.73% | $5,667,880.26 |
-| ONDO/USDT:USDT | +9.63% | $50,131,003.34 |
-| SKL/USDT:USDT | +8.66% | $1,873,307.56 |
+| CAP/USDT:USDT | +17.96% | $1,817,587.17 |
+| HOME/USDT:USDT | +16.61% | $2,038,790.89 |
+| ROAM/USDT:USDT | +12.16% | $5,671,087.34 |
+| ONDO/USDT:USDT | +9.60% | $50,262,546.66 |
+| SKL/USDT:USDT | +7.98% | $1,873,903.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +1.67% | +1.75% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.28% | +1.36% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.68% | +0.76% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +0.76% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.68% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
+| PI/USDT:USDT | below_1h_threshold | +2.29% | +2.39% |
+| BANK/USDT:USDT | below_1h_threshold | +2.13% | +2.23% |
+| LAB/USDT:USDT | below_1h_threshold | +2.09% | +2.19% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.28% | +1.38% |
 
 ## 7. 次に見るべき不足
 
