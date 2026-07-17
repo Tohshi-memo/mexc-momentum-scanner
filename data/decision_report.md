@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T23:26:21.686269+00:00
+- generated_at: 2026-07-17T23:31:13.866230+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8894**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T23:26:13.366473+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63921.9
-- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1
+- 更新: 2026-07-17T23:31:07.904617+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63940.0
+- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +32.69% | $9,383,705.79 |
-| CASHCAT/USDT:USDT | +24.70% | $1,198,407.43 |
-| AKE/USDT:USDT | +16.31% | $49,088,605.08 |
-| CRO/USDT:USDT | +7.45% | $2,138,171.03 |
-| VVV/USDT:USDT | +6.64% | $2,561,961.27 |
+| ESPORTS/USDT:USDT | +36.90% | $9,494,186.07 |
+| CASHCAT/USDT:USDT | +19.59% | $1,207,259.82 |
+| AKE/USDT:USDT | +15.92% | $49,126,220.73 |
+| CRO/USDT:USDT | +7.97% | $2,152,213.76 |
+| XEC/USDT:USDT | +7.50% | $3,366,946.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +1.20% | +1.25% |
-| DODO/USDT:USDT | below_1h_threshold | +1.02% | +1.07% |
-| UNI/USDT:USDT | below_1h_threshold | +0.95% | +1.00% |
-| CRO/USDT:USDT | below_1h_threshold | +0.77% | +0.82% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.67% | +0.72% |
+| UNI/USDT:USDT | below_1h_threshold | +1.52% | +1.54% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
+| TAG/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
+| CRO/USDT:USDT | below_1h_threshold | +1.20% | +1.22% |
+| ARB/USDT:USDT | below_1h_threshold | +0.90% | +0.92% |
 
 ## 7. 次に見るべき不足
 
