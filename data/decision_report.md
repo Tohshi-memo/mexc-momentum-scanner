@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T18:31:17.277946+00:00
+- generated_at: 2026-07-17T18:36:13.357051+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8875**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T18:31:10.704765+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63972.2
+- 更新: 2026-07-17T18:36:06.755934+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63981.8
 - Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +17.75% | $11,765,051.84 |
-| CASHCAT/USDT:USDT | +14.69% | $1,245,997.94 |
-| VVV/USDT:USDT | +7.78% | $2,116,208.22 |
-| AKE/USDT:USDT | +7.60% | $37,953,879.42 |
-| BANK/USDT:USDT | +5.46% | $19,947,297.32 |
+| ESPORTS/USDT:USDT | +19.62% | $11,839,026.54 |
+| CASHCAT/USDT:USDT | +14.36% | $1,248,343.00 |
+| AKE/USDT:USDT | +10.36% | $38,230,264.09 |
+| BANK/USDT:USDT | +8.34% | $20,070,394.43 |
+| VVV/USDT:USDT | +6.43% | $2,169,316.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.49% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.38% | +2.45% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.42% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.23% |
-| GALA/USDT:USDT | below_1h_threshold | +1.83% | +1.89% |
+| BANK/USDT:USDT | below_1h_threshold | +2.85% | +2.90% |
+| GALA/USDT:USDT | below_1h_threshold | +2.58% | +2.63% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.47% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.41% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.28% | +2.33% |
 
 ## 7. 次に見るべき不足
 
