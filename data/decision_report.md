@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T16:51:18.837429+00:00
+- generated_at: 2026-07-17T16:56:20.386563+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8868**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T16:51:09.284038+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=63623.3
+- 更新: 2026-07-17T16:56:10.565444+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=63611.7
 - Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +6.92% | $1,083,379.24 |
-| AKE/USDT:USDT | +3.81% | $40,217,449.32 |
-| CRCLSTOCK/USDT:USDT | +2.74% | $1,721,319.99 |
-| LAB/USDT:USDT | +2.72% | $10,061,449.22 |
-| BSB/USDT:USDT | +2.68% | $2,181,539.00 |
+| CASHCAT/USDT:USDT | +8.65% | $1,087,716.56 |
+| AKE/USDT:USDT | +4.20% | $40,299,271.30 |
+| VVV/USDT:USDT | +3.73% | $1,636,367.64 |
+| BSB/USDT:USDT | +3.23% | $2,193,819.48 |
+| KIOXIASTOCK/USDT:USDT | +2.77% | $1,442,829.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.63% |
-| AKE/USDT:USDT | below_1h_threshold | +3.66% | +3.36% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.40% | +3.10% |
-| LAB/USDT:USDT | below_1h_threshold | +2.72% | +2.42% |
-| BSB/USDT:USDT | below_1h_threshold | +2.68% | +2.38% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.65% |
+| AKE/USDT:USDT | below_1h_threshold | +4.20% | +3.92% |
+| VVV/USDT:USDT | below_1h_threshold | +3.70% | +3.41% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.40% | +3.11% |
+| BSB/USDT:USDT | below_1h_threshold | +3.31% | +3.03% |
 
 ## 7. 次に見るべき不足
 
