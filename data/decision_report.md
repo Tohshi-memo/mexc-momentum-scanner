@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T20:31:15.269278+00:00
+- generated_at: 2026-07-17T20:36:13.672023+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8884**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T20:31:08.828497+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=64029.2
+- 更新: 2026-07-17T20:36:07.280243+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=63970.6
 - Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +19.85% | $9,677,132.91 |
-| AKE/USDT:USDT | +16.52% | $37,871,370.05 |
-| XEC/USDT:USDT | +8.45% | $3,097,201.91 |
-| VVV/USDT:USDT | +6.28% | $2,407,684.95 |
-| BULLA/USDT:USDT | +4.78% | $1,413,909.77 |
+| ESPORTS/USDT:USDT | +19.43% | $9,722,635.99 |
+| AKE/USDT:USDT | +15.36% | $38,055,499.13 |
+| XEC/USDT:USDT | +8.06% | $3,108,313.05 |
+| VVV/USDT:USDT | +5.68% | $2,409,347.21 |
+| BULLA/USDT:USDT | +4.82% | $1,416,855.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENS/USDT:USDT | below_1h_threshold | +1.70% | +1.86% |
-| XMR/USDT:USDT | below_1h_threshold | +1.60% | +1.76% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.13% | +1.29% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.86% | +1.02% |
+| XMR/USDT:USDT | below_1h_threshold | +2.00% | +2.25% |
+| ENS/USDT:USDT | below_1h_threshold | +1.61% | +1.86% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.07% | +1.32% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.28% |
+| JTO/USDT:USDT | below_1h_threshold | +0.94% | +1.19% |
 
 ## 7. 次に見るべき不足
 
