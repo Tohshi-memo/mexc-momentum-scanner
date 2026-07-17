@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T15:01:19.778529+00:00
+- generated_at: 2026-07-17T15:06:14.062863+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8858**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.32** / 初期 $100.00 (-0.68%)
-- 確定: 124件 (Win 41 / Loss 72 / Flat 11) / pending 4件 / skip 201件
+- 確定: 124件 (Win 41 / Loss 72 / Flat 11) / pending 5件 / skip 201件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000306 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BANK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $99.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T15:01:13.474199+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=63092.1
-- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T15:06:05.885476+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63066.1
+- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LRC/USDT:USDT | +45.98% | $4,870,320.91 |
-| XEC/USDT:USDT | +30.94% | $2,287,900.81 |
-| AKE/USDT:USDT | +27.65% | $38,861,992.16 |
-| BANK/USDT:USDT | +25.02% | $16,036,461.21 |
-| KAITO/USDT:USDT | +20.71% | $5,625,655.22 |
+| LRC/USDT:USDT | +45.62% | $4,923,106.97 |
+| XEC/USDT:USDT | +31.56% | $2,294,034.75 |
+| AKE/USDT:USDT | +28.61% | $39,025,471.87 |
+| BANK/USDT:USDT | +21.15% | $16,234,545.27 |
+| KAITO/USDT:USDT | +20.84% | $5,642,869.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.90% |
-| AKE/USDT:USDT | below_1h_threshold | +1.36% | +1.45% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.31% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.85% |
-| US/USDT:USDT | below_1h_threshold | +0.64% | +0.73% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.94% |
+| UB/USDT:USDT | below_1h_threshold | +2.07% | +2.20% |
+| AKE/USDT:USDT | below_1h_threshold | +2.00% | +2.13% |
+| TAG/USDT:USDT | below_1h_threshold | +1.45% | +1.58% |
+| O/USDT:USDT | below_1h_threshold | +0.99% | +1.12% |
 
 ## 7. 次に見るべき不足
 
