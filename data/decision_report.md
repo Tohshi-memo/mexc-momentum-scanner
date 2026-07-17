@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T09:51:15.931908+00:00
+- generated_at: 2026-07-17T09:56:17.742823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8838**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T09:51:07.848874+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=62984.0
+- 更新: 2026-07-17T09:56:10.772130+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=62973.5
 - Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.0 >= 65=1, 4h RSI 75.4 >= 65=1
+- Strict後reject: 4h RSI 91.0 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +26.76% | $2,508,455.52 |
-| XEC/USDT:USDT | +26.03% | $1,182,095.38 |
-| LRC/USDT:USDT | +23.44% | $1,619,788.30 |
-| AKE/USDT:USDT | +19.51% | $42,579,197.46 |
-| BANK/USDT:USDT | +18.41% | $6,046,120.50 |
+| LUMIA/USDT:USDT | +26.19% | $2,518,226.53 |
+| XEC/USDT:USDT | +25.89% | $1,191,948.56 |
+| LRC/USDT:USDT | +20.28% | $1,656,188.72 |
+| AKE/USDT:USDT | +18.99% | $42,719,372.78 |
+| BANK/USDT:USDT | +17.47% | $6,104,783.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.60% | +4.40% |
-| LRC/USDT:USDT | below_1h_threshold | +3.96% | +3.76% |
-| RAVE/USDT:USDT | below_1h_threshold | +3.37% | +3.17% |
-| TAC/USDT:USDT | below_1h_threshold | +2.42% | +2.22% |
-| RESOLV/USDT:USDT | below_1h_threshold | +1.99% | +1.79% |
+| AKE/USDT:USDT | below_1h_threshold | +4.66% | +4.47% |
+| PI/USDT:USDT | below_1h_threshold | +2.86% | +2.68% |
+| UB/USDT:USDT | below_1h_threshold | +2.56% | +2.37% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.36% | +2.17% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.71% | +1.52% |
 
 ## 7. 次に見るべき不足
 
