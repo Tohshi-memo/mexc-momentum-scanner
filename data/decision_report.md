@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T17:01:22.511520+00:00
+- generated_at: 2026-07-17T17:06:16.873956+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8869**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T17:01:16.169349+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63597.6
+- 更新: 2026-07-17T17:06:10.535674+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63638.5
 - Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +12.30% | $1,073,825.90 |
-| AKE/USDT:USDT | +4.93% | $39,285,625.92 |
-| VVV/USDT:USDT | +4.71% | $1,667,258.56 |
-| LAB/USDT:USDT | +4.46% | $9,790,564.85 |
-| ARX/USDT:USDT | +3.96% | $1,089,776.35 |
+| CASHCAT/USDT:USDT | +10.84% | $1,078,463.90 |
+| AKE/USDT:USDT | +6.41% | $39,456,722.22 |
+| VVV/USDT:USDT | +4.80% | $1,720,663.70 |
+| ARX/USDT:USDT | +4.35% | $1,107,308.40 |
+| MVLL/USDT:USDT | +4.28% | $2,091,443.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +2.89% | +2.82% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.67% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.57% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.44% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.30% | +2.24% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.61% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.51% |
+| XEC/USDT:USDT | below_1h_threshold | +2.51% | +2.38% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.38% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.30% | +2.17% |
 
 ## 7. 次に見るべき不足
 
