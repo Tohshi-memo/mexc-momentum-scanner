@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T16:06:23.234940+00:00
+- generated_at: 2026-07-17T16:11:29.150288+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8868**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.06** / 初期 $100.00 (-0.94%)
-- 確定: 134件 (Win 42 / Loss 75 / Flat 17) / pending 5件 / skip 202件
+- 確定: 134件 (Win 42 / Loss 75 / Flat 17) / pending 6件 / skip 202件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LRC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $99.06
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T16:06:12.171854+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63401.6
-- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T16:11:15.380539+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63513.7
+- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | +3.42% | $1,374,504.68 |
-| RESOLV/USDT:USDT | +2.71% | $1,628,405.73 |
-| AERO/USDT:USDT | +1.68% | $2,823,761.98 |
-| AXTISTOCK/USDT:USDT | +1.33% | $5,845,270.65 |
-| TAG/USDT:USDT | +1.01% | $1,300,501.32 |
+| RESOLV/USDT:USDT | +4.01% | $1,644,067.30 |
+| KIOXIASTOCK/USDT:USDT | +3.54% | $1,390,175.92 |
+| H/USDT:USDT | +2.24% | $1,022,558.95 |
+| AKE/USDT:USDT | +2.20% | $39,114,558.26 |
+| AXTISTOCK/USDT:USDT | +1.88% | $5,845,604.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.98% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.80% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.14% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.70% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.29% | +3.34% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.80% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.62% |
+| DRAM/USDT:USDT | below_1h_threshold | +4.44% | +4.31% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.09% | +3.96% |
+| RESOLV/USDT:USDT | below_1h_threshold | +4.02% | +3.89% |
 
 ## 7. 次に見るべき不足
 
