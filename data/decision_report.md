@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T20:21:17.697836+00:00
+- generated_at: 2026-07-17T20:26:14.774869+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8884**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T20:21:09.957619+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=64018.0
+- 更新: 2026-07-17T20:26:08.756743+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=64033.9
 - Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +18.54% | $9,598,132.78 |
-| AKE/USDT:USDT | +15.25% | $37,101,479.94 |
-| XEC/USDT:USDT | +8.72% | $3,072,925.91 |
-| VVV/USDT:USDT | +6.82% | $2,387,469.05 |
-| LIT/USDT:USDT | +4.51% | $5,068,151.43 |
+| ESPORTS/USDT:USDT | +20.04% | $9,630,164.70 |
+| AKE/USDT:USDT | +13.17% | $37,434,790.86 |
+| XEC/USDT:USDT | +8.44% | $3,081,638.10 |
+| VVV/USDT:USDT | +6.56% | $2,393,149.20 |
+| SOXS/USDT:USDT | +3.60% | $2,479,136.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +1.47% | +1.64% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.21% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.98% | +1.15% |
-| XMR/USDT:USDT | below_1h_threshold | +0.96% | +1.13% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.52% | +0.69% |
+| XMR/USDT:USDT | below_1h_threshold | +1.54% | +1.69% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.87% | +1.02% |
+| LAB/USDT:USDT | below_1h_threshold | +0.54% | +0.69% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.52% | +0.67% |
 
 ## 7. 次に見るべき不足
 
