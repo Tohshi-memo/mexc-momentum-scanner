@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T11:31:11.943179+00:00
+- generated_at: 2026-07-17T11:36:18.756323+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8842**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.20** / 初期 $100.00 (-1.80%)
-- 確定: 109件 (Win 34 / Loss 70 / Flat 5) / pending 2件 / skip 200件
+- 確定: 109件 (Win 34 / Loss 70 / Flat 5) / pending 4件 / skip 201件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000252 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BANK/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $98.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T11:31:04.515326+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63086.2
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T11:36:11.157064+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63149.2
+- Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.5 >= 65=1, 4h RSI 76.8 >= 65=1, 4h RSI 94.3 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +37.69% | $7,849,214.84 |
-| XEC/USDT:USDT | +24.39% | $1,616,207.98 |
-| LRC/USDT:USDT | +20.19% | $1,826,639.72 |
-| LUMIA/USDT:USDT | +19.62% | $2,782,310.81 |
-| AKE/USDT:USDT | +18.10% | $40,449,107.05 |
+| BANK/USDT:USDT | +41.08% | $8,215,587.13 |
+| XEC/USDT:USDT | +24.33% | $1,637,995.39 |
+| BULLA/USDT:USDT | +23.84% | $1,018,523.06 |
+| LRC/USDT:USDT | +21.46% | $1,853,293.45 |
+| LUMIA/USDT:USDT | +19.96% | $2,799,071.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LRC/USDT:USDT | below_1h_threshold | +4.06% | +4.15% |
-| BANK/USDT:USDT | below_1h_threshold | +2.76% | +2.86% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.77% | +1.87% |
-| RESOLV/USDT:USDT | below_1h_threshold | +1.16% | +1.26% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.93% | +1.02% |
+| AKE/USDT:USDT | below_1h_threshold | +2.29% | +2.29% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.28% | +2.27% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| ENS/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
+| RESOLV/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
 
 ## 7. 次に見るべき不足
 
