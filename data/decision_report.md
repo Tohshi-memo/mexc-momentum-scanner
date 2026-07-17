@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T19:06:11.423635+00:00
+- generated_at: 2026-07-17T19:11:06.931258+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8879**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T19:06:03.710195+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64149.6
+- 更新: 2026-07-17T19:11:01.962448+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=64069.3
 - Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +32.55% | $9,360,286.84 |
-| CASHCAT/USDT:USDT | +16.53% | $1,173,280.10 |
-| AKE/USDT:USDT | +11.28% | $34,398,028.97 |
-| GALA/USDT:USDT | +7.27% | $1,922,525.29 |
-| VVV/USDT:USDT | +6.60% | $2,240,736.34 |
+| ESPORTS/USDT:USDT | +29.74% | $9,470,356.47 |
+| CASHCAT/USDT:USDT | +16.53% | $1,178,618.54 |
+| AKE/USDT:USDT | +10.65% | $34,663,736.38 |
+| VVV/USDT:USDT | +6.62% | $2,250,434.52 |
+| GALA/USDT:USDT | +6.20% | $2,001,448.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.99% | +5.11% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.83% | +1.95% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.78% | +1.90% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.20% | +1.31% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.16% | +1.27% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.20% | +3.44% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.83% | +2.07% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.16% | +1.40% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.15% | +1.39% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.09% | +1.33% |
 
 ## 7. 次に見るべき不足
 
