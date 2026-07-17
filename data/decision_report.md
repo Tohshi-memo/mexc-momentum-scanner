@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T08:26:16.632631+00:00
+- generated_at: 2026-07-17T08:31:11.101233+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8833**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T08:26:08.734052+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62784.7
-- Funnel: target 885 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
+- 更新: 2026-07-17T08:31:04.639489+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=62757.5
+- Funnel: target 885 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +27.50% | $2,172,890.47 |
-| AKE/USDT:USDT | +16.18% | $41,814,114.08 |
-| SOXS/USDT:USDT | +15.36% | $1,668,648.55 |
-| KAITO/USDT:USDT | +15.20% | $4,092,211.48 |
-| TAC/USDT:USDT | +10.96% | $3,430,572.97 |
+| LUMIA/USDT:USDT | +28.53% | $2,180,648.16 |
+| SOXS/USDT:USDT | +15.28% | $1,694,199.67 |
+| KAITO/USDT:USDT | +15.11% | $4,107,977.52 |
+| AKE/USDT:USDT | +13.68% | $41,967,594.55 |
+| TAC/USDT:USDT | +10.13% | $3,434,939.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +3.01% | +3.02% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.26% | +2.27% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.60% | +1.62% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.58% | +1.59% |
-| BANK/USDT:USDT | below_1h_threshold | +1.50% | +1.51% |
+| DODO/USDT:USDT | below_1h_threshold | +4.96% | +5.02% |
+| US/USDT:USDT | below_1h_threshold | +3.11% | +3.16% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.26% | +2.31% |
+| CAP/USDT:USDT | below_1h_threshold | +1.73% | +1.78% |
+| MYX/USDT:USDT | below_1h_threshold | +1.63% | +1.69% |
 
 ## 7. 次に見るべき不足
 
