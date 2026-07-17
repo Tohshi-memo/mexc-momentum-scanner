@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T04:31:11.700705+00:00
+- generated_at: 2026-07-17T04:36:11.805825+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8825**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T04:31:05.492651+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=63348.7
+- 更新: 2026-07-17T04:36:05.545425+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=63351.5
 - Funnel: target 880 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +24.29% | $1,110,489.24 |
-| SKYAI/USDT:USDT | +12.73% | $6,875,747.87 |
-| MYX/USDT:USDT | +11.15% | $1,851,846.02 |
-| O/USDT:USDT | +9.90% | $1,161,894.04 |
-| SOXS/USDT:USDT | +9.65% | $1,268,956.62 |
+| LUMIA/USDT:USDT | +24.00% | $1,130,432.53 |
+| SKYAI/USDT:USDT | +11.79% | $6,897,682.22 |
+| MYX/USDT:USDT | +11.52% | $1,858,847.71 |
+| O/USDT:USDT | +10.57% | $1,173,583.11 |
+| SOXS/USDT:USDT | +10.14% | $1,277,928.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.03% | +3.33% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.75% | +3.05% |
-| CAP/USDT:USDT | below_1h_threshold | +2.68% | +2.98% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.17% | +2.47% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.94% | +2.23% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.39% | +4.69% |
+| BANK/USDT:USDT | below_1h_threshold | +3.46% | +3.75% |
+| TAC/USDT:USDT | below_1h_threshold | +2.27% | +2.56% |
+| CAP/USDT:USDT | below_1h_threshold | +2.18% | +2.47% |
+| RESOLV/USDT:USDT | below_1h_threshold | +2.12% | +2.42% |
 
 ## 7. 次に見るべき不足
 
