@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T12:11:10.083058+00:00
+- generated_at: 2026-07-17T12:16:07.080023+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8847**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T12:11:02.678386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63248.0
+- 更新: 2026-07-17T12:16:02.171064+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63250.0
 - Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LRC/USDT:USDT | +28.13% | $2,061,360.89 |
-| XEC/USDT:USDT | +25.78% | $1,690,645.10 |
-| LUMIA/USDT:USDT | +21.42% | $2,869,111.50 |
-| AKE/USDT:USDT | +20.36% | $39,724,469.14 |
-| BANK/USDT:USDT | +20.13% | $9,691,490.94 |
+| LRC/USDT:USDT | +29.75% | $2,078,700.59 |
+| XEC/USDT:USDT | +26.23% | $1,716,905.84 |
+| BANK/USDT:USDT | +21.78% | $10,068,481.33 |
+| AKE/USDT:USDT | +20.48% | $39,829,618.19 |
+| LUMIA/USDT:USDT | +19.74% | $2,889,905.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LRC/USDT:USDT | below_1h_threshold | +2.82% | +2.86% |
+| LRC/USDT:USDT | below_1h_threshold | +4.12% | +4.16% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.77% | +1.80% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
 | SOXS/USDT:USDT | below_1h_threshold | +1.37% | +1.41% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.36% | +1.39% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.21% | +1.25% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +1.01% |
+| ENS/USDT:USDT | below_1h_threshold | +1.29% | +1.32% |
 
 ## 7. 次に見るべき不足
 
