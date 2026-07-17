@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T15:26:26.302718+00:00
+- generated_at: 2026-07-17T15:31:19.311994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8862**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T15:26:15.758303+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63137.6
+- 更新: 2026-07-17T15:31:10.295393+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=63276.0
 - Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 88.6 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LRC/USDT:USDT | +65.01% | $5,282,292.82 |
-| AKE/USDT:USDT | +25.21% | $39,814,672.83 |
-| XEC/USDT:USDT | +24.55% | $2,413,023.68 |
-| KAITO/USDT:USDT | +18.90% | $5,734,322.70 |
-| LUMIA/USDT:USDT | +17.15% | $3,122,498.70 |
+| LRC/USDT:USDT | +60.77% | $5,403,479.02 |
+| XEC/USDT:USDT | +22.96% | $2,435,876.97 |
+| AKE/USDT:USDT | +21.65% | $39,980,391.00 |
+| KAITO/USDT:USDT | +18.82% | $5,753,219.75 |
+| BULLA/USDT:USDT | +17.54% | $1,290,767.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.78% | +3.79% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.07% | +3.09% |
-| T/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.10% |
-| O/USDT:USDT | below_1h_threshold | +1.98% | +2.00% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.78% | +3.57% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.84% | +2.64% |
+| AEHRSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.61% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.51% | +2.31% |
+| T/USDT:USDT | below_1h_threshold | +2.09% | +1.89% |
 
 ## 7. 次に見るべき不足
 
