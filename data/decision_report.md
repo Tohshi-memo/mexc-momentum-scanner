@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T01:41:07.783863+00:00
+- generated_at: 2026-07-17T01:46:05.074125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8825**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T01:41:01.582221+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63832.6
+- 更新: 2026-07-17T01:46:00.070717+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=63675.0
 - Funnel: target 880 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +17.11% | $2,960,822.44 |
-| KAITO/USDT:USDT | +10.96% | $3,074,913.86 |
-| SKYAI/USDT:USDT | +9.26% | $5,518,693.69 |
-| RESOLV/USDT:USDT | +8.02% | $1,204,022.74 |
-| ALLO/USDT:USDT | +7.36% | $4,996,033.30 |
+| TAC/USDT:USDT | +15.86% | $2,974,142.28 |
+| KAITO/USDT:USDT | +10.70% | $3,082,618.58 |
+| SKYAI/USDT:USDT | +9.67% | $5,553,250.30 |
+| RESOLV/USDT:USDT | +7.68% | $1,205,945.50 |
+| ALLO/USDT:USDT | +7.51% | $5,036,905.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
-| BANK/USDT:USDT | below_1h_threshold | +1.50% | +1.54% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.30% | +1.34% |
-| H/USDT:USDT | below_1h_threshold | +0.79% | +0.83% |
-| CRO/USDT:USDT | below_1h_threshold | +0.73% | +0.77% |
+| DODO/USDT:USDT | below_1h_threshold | +2.56% | +2.85% |
+| BANK/USDT:USDT | below_1h_threshold | +1.98% | +2.27% |
+| MYX/USDT:USDT | below_1h_threshold | +1.34% | +1.63% |
+| H/USDT:USDT | below_1h_threshold | +0.79% | +1.08% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.65% | +0.94% |
 
 ## 7. 次に見るべき不足
 
