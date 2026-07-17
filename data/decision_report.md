@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T16:31:15.565053+00:00
+- generated_at: 2026-07-17T16:36:21.153474+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8868**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T16:31:08.610522+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63454.6
+- 更新: 2026-07-17T16:36:12.271494+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=63370.7
 - Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RESOLV/USDT:USDT | +5.32% | $1,712,231.85 |
-| CASHCAT/USDT:USDT | +2.64% | $1,075,321.77 |
-| CRCLSTOCK/USDT:USDT | +2.54% | $1,696,614.52 |
-| KIOXIASTOCK/USDT:USDT | +2.48% | $1,438,188.20 |
-| ANSEM/USDT:USDT | +2.44% | $4,557,701.55 |
+| RESOLV/USDT:USDT | +3.43% | $1,734,831.50 |
+| CASHCAT/USDT:USDT | +2.69% | $1,076,568.10 |
+| KIOXIASTOCK/USDT:USDT | +2.47% | $1,438,634.84 |
+| CRCLSTOCK/USDT:USDT | +2.22% | $1,702,880.86 |
+| LIT/USDT:USDT | +2.15% | $4,974,620.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.90% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.61% | +2.57% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +2.42% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.45% | +2.41% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.36% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +5.03% |
+| RESOLV/USDT:USDT | below_1h_threshold | +3.44% | +3.53% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.70% | +2.79% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +2.55% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.50% |
 
 ## 7. 次に見るべき不足
 
