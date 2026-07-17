@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T16:21:17.537043+00:00
+- generated_at: 2026-07-17T16:26:16.095735+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8868**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T16:21:08.985477+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63478.5
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-17T16:26:09.805735+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63349.3
+- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RESOLV/USDT:USDT | +3.82% | $1,688,756.73 |
-| KIOXIASTOCK/USDT:USDT | +3.76% | $1,415,162.53 |
-| CASHCAT/USDT:USDT | +3.04% | $1,070,546.16 |
-| BANK/USDT:USDT | +2.91% | $18,588,420.36 |
-| AKE/USDT:USDT | +2.88% | $39,412,115.12 |
+| RESOLV/USDT:USDT | +3.58% | $1,696,510.64 |
+| CASHCAT/USDT:USDT | +3.31% | $1,073,708.71 |
+| LAB/USDT:USDT | +2.72% | $9,899,619.54 |
+| KIOXIASTOCK/USDT:USDT | +2.37% | $1,434,535.79 |
+| AKE/USDT:USDT | +2.23% | $39,528,381.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.86% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.42% | +4.34% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.02% |
-| RESOLV/USDT:USDT | below_1h_threshold | +3.87% | +3.80% |
-| BANK/USDT:USDT | below_1h_threshold | +3.36% | +3.28% |
+| RESOLV/USDT:USDT | below_1h_threshold | +3.58% | +3.71% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.32% | +3.45% |
+| LAB/USDT:USDT | below_1h_threshold | +2.94% | +3.07% |
+| AKE/USDT:USDT | below_1h_threshold | +2.30% | +2.43% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.22% |
 
 ## 7. 次に見るべき不足
 
