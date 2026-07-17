@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T10:51:08.228231+00:00
+- generated_at: 2026-07-17T10:56:14.916847+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8841**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.20** / 初期 $100.00 (-1.80%)
-- 確定: 108件 (Win 34 / Loss 70 / Flat 4) / pending 2件 / skip 200件
+- 確定: 108件 (Win 34 / Loss 70 / Flat 4) / pending 3件 / skip 200件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XEC/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $98.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T10:51:01.848511+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=63133.3
-- Funnel: target 885 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1
+- 更新: 2026-07-17T10:56:07.794809+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=63137.9
+- Funnel: target 885 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.6 >= 65=1, 4h RSI 67.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +33.58% | $7,169,604.17 |
-| XEC/USDT:USDT | +26.50% | $1,529,285.96 |
-| LUMIA/USDT:USDT | +23.06% | $2,676,394.58 |
-| AKE/USDT:USDT | +18.11% | $42,688,883.68 |
-| KAITO/USDT:USDT | +17.10% | $4,558,247.47 |
+| BANK/USDT:USDT | +34.07% | $7,412,867.26 |
+| XEC/USDT:USDT | +25.88% | $1,534,392.21 |
+| LUMIA/USDT:USDT | +21.25% | $2,688,721.60 |
+| AKE/USDT:USDT | +18.56% | $42,778,129.21 |
+| KAITO/USDT:USDT | +16.44% | $4,574,987.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.72% | +4.45% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.48% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.40% | +2.12% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.09% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +1.82% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.08% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.79% | +1.51% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.47% | +1.19% |
+| SLX/USDT:USDT | below_1h_threshold | +1.28% | +1.00% |
+| APDSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +0.92% |
 
 ## 7. 次に見るべき不足
 
