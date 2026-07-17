@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T16:16:25.796670+00:00
+- generated_at: 2026-07-17T16:21:17.537043+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8868**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T16:16:12.668002+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63402.1
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T16:21:08.985477+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63478.5
+- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RESOLV/USDT:USDT | +4.50% | $1,674,063.00 |
-| KIOXIASTOCK/USDT:USDT | +4.33% | $1,398,240.17 |
-| H/USDT:USDT | +3.33% | $1,051,054.05 |
-| ESPORTS/USDT:USDT | +2.06% | $13,386,726.33 |
-| LUMIA/USDT:USDT | +1.91% | $3,153,455.05 |
+| RESOLV/USDT:USDT | +3.82% | $1,688,756.73 |
+| KIOXIASTOCK/USDT:USDT | +3.76% | $1,415,162.53 |
+| CASHCAT/USDT:USDT | +3.04% | $1,070,546.16 |
+| BANK/USDT:USDT | +2.91% | $18,588,420.36 |
+| AKE/USDT:USDT | +2.88% | $39,412,115.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.98% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.80% |
-| RESOLV/USDT:USDT | below_1h_threshold | +4.50% | +4.55% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.14% |
-| H/USDT:USDT | below_1h_threshold | +3.34% | +3.39% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.86% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.42% | +4.34% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.02% |
+| RESOLV/USDT:USDT | below_1h_threshold | +3.87% | +3.80% |
+| BANK/USDT:USDT | below_1h_threshold | +3.36% | +3.28% |
 
 ## 7. 次に見るべき不足
 
