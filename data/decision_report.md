@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T09:16:17.188145+00:00
+- generated_at: 2026-07-17T09:21:15.633375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8837**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T09:16:09.327026+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=62914.1
+- 更新: 2026-07-17T09:21:10.390877+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62861.6
 - Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.4 >= 65=1
+- Strict後reject: 4h RSI 91.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +29.01% | $2,340,298.15 |
-| BANK/USDT:USDT | +21.12% | $5,548,173.36 |
-| AKE/USDT:USDT | +20.48% | $41,590,219.88 |
-| LRC/USDT:USDT | +19.02% | $1,503,053.68 |
-| KAITO/USDT:USDT | +16.01% | $4,269,577.19 |
+| LUMIA/USDT:USDT | +27.50% | $2,357,527.75 |
+| BANK/USDT:USDT | +22.59% | $5,668,770.59 |
+| AKE/USDT:USDT | +18.61% | $41,767,278.75 |
+| LRC/USDT:USDT | +17.49% | $1,515,109.50 |
+| KAITO/USDT:USDT | +15.71% | $4,288,833.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.94% | +4.85% |
-| MYX/USDT:USDT | below_1h_threshold | +1.56% | +1.47% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.13% | +1.04% |
-| LDO/USDT:USDT | below_1h_threshold | +1.13% | +1.04% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.08% | +0.99% |
+| AKE/USDT:USDT | below_1h_threshold | +4.32% | +4.32% |
+| MYX/USDT:USDT | below_1h_threshold | +1.17% | +1.16% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
+| PI/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
 
 ## 7. 次に見るべき不足
 
