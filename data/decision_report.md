@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T09:41:10.590363+00:00
+- generated_at: 2026-07-17T09:46:16.209288+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8837**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T09:41:04.184849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=62970.2
-- Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.4 >= 65=1
+- 更新: 2026-07-17T09:46:09.257909+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=63024.8
+- Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.2 >= 65=1, 4h RSI 75.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +27.94% | $2,478,635.23 |
-| XEC/USDT:USDT | +23.64% | $1,077,456.00 |
-| BANK/USDT:USDT | +20.87% | $5,924,878.52 |
-| AKE/USDT:USDT | +17.08% | $42,298,306.00 |
-| LRC/USDT:USDT | +16.23% | $1,552,860.72 |
+| LUMIA/USDT:USDT | +27.82% | $2,489,280.99 |
+| XEC/USDT:USDT | +26.34% | $1,124,981.74 |
+| BANK/USDT:USDT | +17.93% | $5,988,541.02 |
+| AKE/USDT:USDT | +17.82% | $42,420,807.43 |
+| LRC/USDT:USDT | +17.76% | $1,564,980.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XEC/USDT:USDT | below_1h_threshold | +4.16% | +3.98% |
-| AKE/USDT:USDT | below_1h_threshold | +2.83% | +2.65% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.75% | +2.57% |
-| TAC/USDT:USDT | below_1h_threshold | +2.16% | +1.98% |
-| UB/USDT:USDT | below_1h_threshold | +1.94% | +1.76% |
+| AKE/USDT:USDT | below_1h_threshold | +3.41% | +3.14% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.62% | +2.35% |
+| UB/USDT:USDT | below_1h_threshold | +1.93% | +1.67% |
+| TAC/USDT:USDT | below_1h_threshold | +1.81% | +1.55% |
+| RESOLV/USDT:USDT | below_1h_threshold | +1.62% | +1.36% |
 
 ## 7. 次に見るべき不足
 
