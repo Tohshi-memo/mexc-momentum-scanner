@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T14:51:12.838069+00:00
+- generated_at: 2026-07-17T14:56:09.258071+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8858**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T14:51:05.069333+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63163.0
+- 更新: 2026-07-17T14:56:02.789815+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63161.9
 - Funnel: target 885 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1
+- Strict後reject: 4h RSI 79.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LRC/USDT:USDT | +44.99% | $4,848,130.15 |
-| AKE/USDT:USDT | +32.45% | $39,875,710.16 |
-| XEC/USDT:USDT | +30.61% | $2,283,848.26 |
-| BANK/USDT:USDT | +22.54% | $15,809,991.38 |
-| KAITO/USDT:USDT | +21.48% | $5,588,620.65 |
+| LRC/USDT:USDT | +46.70% | $4,884,727.17 |
+| XEC/USDT:USDT | +31.88% | $2,295,681.97 |
+| AKE/USDT:USDT | +29.84% | $40,051,960.62 |
+| BANK/USDT:USDT | +22.44% | $16,063,538.18 |
+| KAITO/USDT:USDT | +20.73% | $5,638,511.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| TAC/USDT:USDT | below_1h_threshold | +3.66% | +3.61% |
+| US/USDT:USDT | below_1h_threshold | +2.83% | +2.78% |
 | NBISSTOCK/USDT:USDT | below_1h_threshold | +2.78% | +2.73% |
 | TAG/USDT:USDT | below_1h_threshold | +2.75% | +2.70% |
-| US/USDT:USDT | below_1h_threshold | +2.72% | +2.67% |
-| UB/USDT:USDT | below_1h_threshold | +2.59% | +2.53% |
-| AKE/USDT:USDT | below_1h_threshold | +2.57% | +2.51% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.14% | +2.08% |
 
 ## 7. 次に見るべき不足
 
