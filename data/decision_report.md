@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T08:01:13.473692+00:00
+- generated_at: 2026-07-17T08:06:15.666035+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8831**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T08:01:07.237171+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=62750.9
+- 更新: 2026-07-17T08:06:09.427404+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=62808.7
 - Funnel: target 885 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +32.02% | $2,065,333.21 |
-| TAC/USDT:USDT | +15.99% | $3,376,849.41 |
-| KAITO/USDT:USDT | +13.84% | $3,999,053.83 |
-| SOXS/USDT:USDT | +13.53% | $1,611,337.20 |
-| O/USDT:USDT | +8.65% | $1,480,328.64 |
+| LUMIA/USDT:USDT | +29.18% | $2,096,074.72 |
+| TAC/USDT:USDT | +15.64% | $3,394,551.02 |
+| KAITO/USDT:USDT | +14.37% | $4,019,457.11 |
+| SOXS/USDT:USDT | +12.89% | $1,619,034.12 |
+| DEXE/USDT:USDT | +8.67% | $2,700,407.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.26% | +2.32% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.73% |
-| O/USDT:USDT | below_1h_threshold | +0.65% | +0.72% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.63% |
-| CAP/USDT:USDT | below_1h_threshold | +0.49% | +0.55% |
+| US/USDT:USDT | below_1h_threshold | +2.46% | +2.43% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.90% | +0.88% |
+| ENS/USDT:USDT | below_1h_threshold | +0.88% | +0.86% |
+| CAP/USDT:USDT | below_1h_threshold | +0.75% | +0.73% |
 
 ## 7. 次に見るべき不足
 
