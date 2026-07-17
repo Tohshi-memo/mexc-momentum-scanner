@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T16:26:16.095735+00:00
+- generated_at: 2026-07-17T16:31:15.565053+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8868**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.06** / 初期 $100.00 (-0.94%)
-- 確定: 134件 (Win 42 / Loss 75 / Flat 17) / pending 6件 / skip 202件
+- 確定: 134件 (Win 42 / Loss 75 / Flat 17) / pending 6件 / skip 203件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LRC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $99.06
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T16:26:09.805735+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=63349.3
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T16:31:08.610522+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63454.6
+- Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RESOLV/USDT:USDT | +3.58% | $1,696,510.64 |
-| CASHCAT/USDT:USDT | +3.31% | $1,073,708.71 |
-| LAB/USDT:USDT | +2.72% | $9,899,619.54 |
-| KIOXIASTOCK/USDT:USDT | +2.37% | $1,434,535.79 |
-| AKE/USDT:USDT | +2.23% | $39,528,381.56 |
+| RESOLV/USDT:USDT | +5.32% | $1,712,231.85 |
+| CASHCAT/USDT:USDT | +2.64% | $1,075,321.77 |
+| CRCLSTOCK/USDT:USDT | +2.54% | $1,696,614.52 |
+| KIOXIASTOCK/USDT:USDT | +2.48% | $1,438,188.20 |
+| ANSEM/USDT:USDT | +2.44% | $4,557,701.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RESOLV/USDT:USDT | below_1h_threshold | +3.58% | +3.71% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.32% | +3.45% |
-| LAB/USDT:USDT | below_1h_threshold | +2.94% | +3.07% |
-| AKE/USDT:USDT | below_1h_threshold | +2.30% | +2.43% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.22% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.90% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.61% | +2.57% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +2.46% | +2.42% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.45% | +2.41% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.36% |
 
 ## 7. 次に見るべき不足
 
