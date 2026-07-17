@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T16:01:27.188632+00:00
+- generated_at: 2026-07-17T16:06:23.234940+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8868**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T16:01:13.702754+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63426.8
-- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T16:06:12.171854+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63401.6
+- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +1.82% | $5,827,757.37 |
-| SNXX/USDT:USDT | +1.19% | $2,210,951.13 |
-| RAVE/USDT:USDT | +0.93% | $3,198,607.42 |
-| SYN/USDT:USDT | +0.90% | $1,928,794.38 |
-| KAITO/USDT:USDT | +0.83% | $5,886,361.86 |
+| KIOXIASTOCK/USDT:USDT | +3.42% | $1,374,504.68 |
+| RESOLV/USDT:USDT | +2.71% | $1,628,405.73 |
+| AERO/USDT:USDT | +1.68% | $2,823,761.98 |
+| AXTISTOCK/USDT:USDT | +1.33% | $5,845,270.65 |
+| TAG/USDT:USDT | +1.01% | $1,300,501.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.94% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.76% |
-| DRAM/USDT:USDT | below_1h_threshold | +4.44% | +4.45% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.10% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.66% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.93% | +4.98% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.80% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.14% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.65% | +3.70% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.29% | +3.34% |
 
 ## 7. 次に見るべき不足
 
