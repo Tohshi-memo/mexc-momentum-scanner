@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T05:11:13.336985+00:00
+- generated_at: 2026-07-17T05:16:08.073185+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8825**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T05:11:06.923736+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=63413.9
+- 更新: 2026-07-17T05:16:02.899985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=63400.0
 - Funnel: target 881 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +26.13% | $1,219,909.21 |
-| SKYAI/USDT:USDT | +13.43% | $7,114,501.39 |
-| KAITO/USDT:USDT | +11.72% | $3,445,696.65 |
-| MYX/USDT:USDT | +11.21% | $1,942,467.42 |
-| SOXS/USDT:USDT | +10.56% | $1,345,353.80 |
+| LUMIA/USDT:USDT | +25.06% | $1,230,583.30 |
+| SKYAI/USDT:USDT | +13.05% | $7,188,384.85 |
+| KAITO/USDT:USDT | +11.71% | $3,464,230.90 |
+| TAC/USDT:USDT | +11.12% | $3,156,370.30 |
+| SOXS/USDT:USDT | +10.75% | $1,350,028.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.07% | +3.15% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.42% | +1.50% |
-| LUMIA/USDT:USDT | below_1h_threshold | +0.89% | +0.97% |
-| DODO/USDT:USDT | below_1h_threshold | +0.69% | +0.77% |
-| H/USDT:USDT | below_1h_threshold | +0.67% | +0.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.07% | +3.17% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.42% | +1.53% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.04% | +1.15% |
+| H/USDT:USDT | below_1h_threshold | +0.88% | +0.98% |
+| TAC/USDT:USDT | below_1h_threshold | +0.78% | +0.88% |
 
 ## 7. 次に見るべき不足
 
