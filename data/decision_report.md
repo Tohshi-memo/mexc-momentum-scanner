@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T20:01:09.641180+00:00
+- generated_at: 2026-07-17T20:06:11.254258+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8883**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T20:01:03.282085+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64041.7
-- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-17T20:06:04.817859+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=64034.8
+- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +22.81% | $9,337,597.25 |
-| AKE/USDT:USDT | +19.13% | $35,882,559.73 |
-| XEC/USDT:USDT | +11.80% | $2,880,827.78 |
-| CASHCAT/USDT:USDT | +9.07% | $1,103,355.45 |
-| VVV/USDT:USDT | +6.77% | $2,354,372.08 |
+| ESPORTS/USDT:USDT | +20.84% | $9,386,851.08 |
+| AKE/USDT:USDT | +17.62% | $36,236,794.50 |
+| XEC/USDT:USDT | +10.85% | $2,929,014.27 |
+| DODO/USDT:USDT | +7.41% | $2,049,032.56 |
+| VVV/USDT:USDT | +6.65% | $2,363,021.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.17% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.57% |
-| GALA/USDT:USDT | below_1h_threshold | +0.37% | +0.51% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.24% | +0.38% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.13% | +0.27% |
+| DODO/USDT:USDT | below_1h_threshold | +3.75% | +3.90% |
+| LIT/USDT:USDT | below_1h_threshold | +1.20% | +1.35% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.18% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.42% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.24% | +0.39% |
 
 ## 7. 次に見るべき不足
 
