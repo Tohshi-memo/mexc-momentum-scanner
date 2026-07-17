@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T07:21:11.049855+00:00
+- generated_at: 2026-07-17T07:26:13.454557+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8827**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T07:21:04.684422+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=62790.1
+- 更新: 2026-07-17T07:26:07.114936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=62846.3
 - Funnel: target 885 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +28.81% | $1,908,347.16 |
-| TAC/USDT:USDT | +16.63% | $3,317,146.66 |
-| T/USDT:USDT | +15.12% | $1,872,178.87 |
-| KAITO/USDT:USDT | +14.85% | $3,869,476.05 |
-| SOXS/USDT:USDT | +11.89% | $1,583,978.76 |
+| LUMIA/USDT:USDT | +30.23% | $1,920,394.43 |
+| TAC/USDT:USDT | +16.44% | $3,326,272.14 |
+| KAITO/USDT:USDT | +15.12% | $3,884,725.16 |
+| T/USDT:USDT | +14.71% | $1,879,089.76 |
+| SOXS/USDT:USDT | +12.30% | $1,588,470.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUMIA/USDT:USDT | below_1h_threshold | +2.95% | +3.15% |
-| APDSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.99% |
-| TAC/USDT:USDT | below_1h_threshold | +2.23% | +2.43% |
-| ENS/USDT:USDT | below_1h_threshold | +1.00% | +1.19% |
-| AKE/USDT:USDT | below_1h_threshold | +0.91% | +1.11% |
+| LUMIA/USDT:USDT | below_1h_threshold | +4.08% | +4.18% |
+| APDSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.91% |
+| TAC/USDT:USDT | below_1h_threshold | +1.96% | +2.06% |
+| ENS/USDT:USDT | below_1h_threshold | +1.53% | +1.64% |
+| AKE/USDT:USDT | below_1h_threshold | +1.38% | +1.49% |
 
 ## 7. 次に見るべき不足
 
