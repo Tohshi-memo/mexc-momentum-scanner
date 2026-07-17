@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T18:11:19.257685+00:00
+- generated_at: 2026-07-17T18:16:10.604550+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8874**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T18:11:11.845286+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64046.1
+- 更新: 2026-07-17T18:16:06.215414+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64011.7
 - Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +20.54% | $1,209,866.50 |
-| AKE/USDT:USDT | +10.08% | $37,425,985.75 |
-| ESPORTS/USDT:USDT | +8.85% | $11,424,164.53 |
-| ANSEM/USDT:USDT | +7.44% | $4,163,994.34 |
-| VVV/USDT:USDT | +7.12% | $1,963,367.92 |
+| CASHCAT/USDT:USDT | +20.69% | $1,214,104.07 |
+| ESPORTS/USDT:USDT | +14.09% | $11,486,510.89 |
+| ANSEM/USDT:USDT | +8.71% | $4,183,910.98 |
+| AKE/USDT:USDT | +8.60% | $37,648,337.14 |
+| BANK/USDT:USDT | +8.46% | $19,805,893.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.31% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.12% |
-| XEC/USDT:USDT | below_1h_threshold | +1.79% | +1.74% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.64% | +1.58% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.89% | +3.89% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.65% | +2.65% |
+| BANK/USDT:USDT | below_1h_threshold | +2.44% | +2.44% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.43% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.36% |
 
 ## 7. 次に見るべき不足
 
