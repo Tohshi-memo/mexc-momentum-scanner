@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T21:51:17.760750+00:00
+- generated_at: 2026-07-17T21:56:10.179243+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8887**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T21:51:08.528670+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64069.9
-- Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.2 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-17T21:56:05.017412+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64075.6
+- Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +37.58% | $45,783,949.53 |
-| ESPORTS/USDT:USDT | +25.52% | $9,496,949.73 |
-| XEC/USDT:USDT | +9.50% | $3,208,230.54 |
-| BULLA/USDT:USDT | +5.79% | $1,473,486.51 |
-| VVV/USDT:USDT | +5.72% | $2,503,764.66 |
+| AKE/USDT:USDT | +30.19% | $46,070,707.13 |
+| ESPORTS/USDT:USDT | +20.60% | $9,542,866.75 |
+| XEC/USDT:USDT | +10.61% | $3,230,216.95 |
+| BULLA/USDT:USDT | +6.17% | $1,474,279.74 |
+| VVV/USDT:USDT | +5.82% | $2,517,817.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +3.21% | +3.24% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.66% | +1.69% |
-| XEC/USDT:USDT | below_1h_threshold | +1.22% | +1.25% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.04% | +1.06% |
-| LUNC/USDT:USDT | below_1h_threshold | +0.83% | +0.86% |
+| US/USDT:USDT | below_1h_threshold | +3.19% | +3.21% |
+| XEC/USDT:USDT | below_1h_threshold | +2.50% | +2.51% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.79% | +1.81% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
+| SLX/USDT:USDT | below_1h_threshold | +1.01% | +1.03% |
 
 ## 7. 次に見るべき不足
 
