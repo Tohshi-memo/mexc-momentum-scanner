@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T09:06:20.028949+00:00
+- generated_at: 2026-07-17T09:11:12.709775+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8835**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T09:06:12.354200+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62853.4
+- 更新: 2026-07-17T09:11:06.275051+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=62871.0
 - Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.4 >= 65=1
+- Strict後reject: 4h RSI 90.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +31.66% | $2,299,770.59 |
-| BANK/USDT:USDT | +16.25% | $5,306,372.21 |
-| AKE/USDT:USDT | +16.16% | $41,094,609.17 |
-| KAITO/USDT:USDT | +16.11% | $4,223,395.62 |
-| SOXS/USDT:USDT | +14.98% | $1,801,721.20 |
+| LUMIA/USDT:USDT | +31.29% | $2,316,539.32 |
+| LRC/USDT:USDT | +18.21% | $1,492,340.22 |
+| BANK/USDT:USDT | +17.17% | $5,376,395.90 |
+| KAITO/USDT:USDT | +16.42% | $4,245,587.97 |
+| AKE/USDT:USDT | +15.77% | $41,160,849.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.98% | +1.99% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.24% | +1.25% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.24% | +1.24% |
-| MYX/USDT:USDT | below_1h_threshold | +0.64% | +0.65% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.63% | +0.64% |
+| AKE/USDT:USDT | below_1h_threshold | +1.71% | +1.69% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.53% | +1.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
+| MYX/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
+| LDO/USDT:USDT | below_1h_threshold | +1.32% | +1.30% |
 
 ## 7. 次に見るべき不足
 
