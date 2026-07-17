@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T02:41:08.685413+00:00
+- generated_at: 2026-07-17T02:46:10.404165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8825**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$109.89** / 初期 $100.00 (+9.89%)
-- 確定トレード: 107件 (TP 40 / SL 64 / EXP 3)
-- 最新: ALLO/USDT:USDT EXPIRED PnL +6.44% 残高後 $109.89
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$110.16** / 初期 $100.00 (+10.16%)
+- 確定トレード: 108件 (TP 40 / SL 64 / EXP 4)
+- 最新: ZBT/USDT:USDT EXPIRED PnL +1.95% 残高後 $110.16
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T02:41:02.494039+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=63421.8
+- 更新: 2026-07-17T02:46:04.406044+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=63432.4
 - Funnel: target 880 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +16.92% | $3,037,507.78 |
-| SKYAI/USDT:USDT | +13.43% | $6,097,214.11 |
-| KAITO/USDT:USDT | +10.99% | $3,133,301.18 |
-| RESOLV/USDT:USDT | +7.83% | $1,252,061.90 |
-| SOXS/USDT:USDT | +7.52% | $1,215,216.66 |
+| TAC/USDT:USDT | +17.49% | $3,041,981.45 |
+| SKYAI/USDT:USDT | +13.77% | $6,147,999.97 |
+| KAITO/USDT:USDT | +10.13% | $3,145,494.26 |
+| RESOLV/USDT:USDT | +7.24% | $1,259,570.63 |
+| SOXS/USDT:USDT | +7.17% | $1,222,758.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.92% | +3.06% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.28% |
-| PI/USDT:USDT | below_1h_threshold | +1.40% | +1.54% |
-| MYX/USDT:USDT | below_1h_threshold | +1.05% | +1.19% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.92% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.15% | +3.27% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.27% |
+| PI/USDT:USDT | below_1h_threshold | +1.76% | +1.88% |
+| MYX/USDT:USDT | below_1h_threshold | +1.49% | +1.61% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.28% | +1.41% |
 
 ## 7. 次に見るべき不足
 
