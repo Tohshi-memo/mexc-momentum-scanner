@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T07:26:13.454557+00:00
+- generated_at: 2026-07-17T07:31:13.593393+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8827**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.00** / 初期 $100.00 (-1.00%)
-- 確定: 94件 (Win 30 / Loss 60 / Flat 4) / pending 4件 / skip 200件
+- 確定: 94件 (Win 30 / Loss 60 / Flat 4) / pending 5件 / skip 200件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $99.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T07:26:07.114936+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=62846.3
-- Funnel: target 885 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T07:31:05.145128+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=62904.1
+- Funnel: target 885 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +30.23% | $1,920,394.43 |
-| TAC/USDT:USDT | +16.44% | $3,326,272.14 |
-| KAITO/USDT:USDT | +15.12% | $3,884,725.16 |
-| T/USDT:USDT | +14.71% | $1,879,089.76 |
-| SOXS/USDT:USDT | +12.30% | $1,588,470.56 |
+| LUMIA/USDT:USDT | +30.41% | $1,937,411.64 |
+| TAC/USDT:USDT | +17.01% | $3,335,268.44 |
+| KAITO/USDT:USDT | +14.73% | $3,914,083.51 |
+| T/USDT:USDT | +13.22% | $1,927,431.42 |
+| SOXS/USDT:USDT | +12.14% | $1,590,534.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LUMIA/USDT:USDT | below_1h_threshold | +4.08% | +4.18% |
-| APDSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.91% |
-| TAC/USDT:USDT | below_1h_threshold | +1.96% | +2.06% |
-| ENS/USDT:USDT | below_1h_threshold | +1.53% | +1.64% |
-| AKE/USDT:USDT | below_1h_threshold | +1.38% | +1.49% |
+| LUMIA/USDT:USDT | below_1h_threshold | +4.24% | +4.25% |
+| AKE/USDT:USDT | below_1h_threshold | +3.29% | +3.31% |
+| APDSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.81% |
+| TAC/USDT:USDT | below_1h_threshold | +2.57% | +2.59% |
+| ENS/USDT:USDT | below_1h_threshold | +2.06% | +2.08% |
 
 ## 7. 次に見るべき不足
 
