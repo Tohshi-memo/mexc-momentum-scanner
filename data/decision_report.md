@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T19:56:22.576977+00:00
+- generated_at: 2026-07-17T20:01:09.641180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8883**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T19:56:11.748059+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64131.9
-- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.2 >= 65=1, 4h RSI 77.4 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-17T20:01:03.282085+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=64041.7
+- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +21.63% | $10,327,756.06 |
-| AKE/USDT:USDT | +18.99% | $37,247,956.27 |
-| XEC/USDT:USDT | +13.40% | $2,868,118.94 |
-| CASHCAT/USDT:USDT | +9.02% | $1,232,292.20 |
-| VVV/USDT:USDT | +6.88% | $2,403,962.09 |
+| ESPORTS/USDT:USDT | +22.81% | $9,337,597.25 |
+| AKE/USDT:USDT | +19.13% | $35,882,559.73 |
+| XEC/USDT:USDT | +11.80% | $2,880,827.78 |
+| CASHCAT/USDT:USDT | +9.07% | $1,103,355.45 |
+| VVV/USDT:USDT | +6.77% | $2,354,372.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +1.86% | +2.00% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.47% | +1.62% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.16% | +1.30% |
-| H/USDT:USDT | below_1h_threshold | +0.96% | +1.10% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.99% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.17% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.57% |
+| GALA/USDT:USDT | below_1h_threshold | +0.37% | +0.51% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.24% | +0.38% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.13% | +0.27% |
 
 ## 7. 次に見るべき不足
 
