@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T17:26:19.620044+00:00
+- generated_at: 2026-07-17T17:31:16.691329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8869**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.06** / 初期 $100.00 (-0.94%)
-- 確定: 134件 (Win 42 / Loss 75 / Flat 17) / pending 6件 / skip 205件
+- 確定: 134件 (Win 42 / Loss 75 / Flat 17) / pending 6件 / skip 206件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000221 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LRC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $99.06
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T17:26:11.510475+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.70% price=64001.7
-- Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T17:31:10.146573+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.70% price=63999.6
+- Funnel: target 885 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +19.45% | $1,125,321.90 |
-| AKE/USDT:USDT | +5.79% | $40,108,356.35 |
-| KIOXIASTOCK/USDT:USDT | +5.40% | $1,442,980.21 |
-| ARX/USDT:USDT | +5.37% | $1,188,823.26 |
-| MVLL/USDT:USDT | +4.23% | $2,098,364.63 |
+| CASHCAT/USDT:USDT | +17.83% | $1,144,278.89 |
+| BANK/USDT:USDT | +8.55% | $19,293,405.02 |
+| AKE/USDT:USDT | +8.11% | $40,211,241.56 |
+| ARX/USDT:USDT | +5.77% | $1,194,569.72 |
+| KIOXIASTOCK/USDT:USDT | +5.40% | $1,443,580.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARX/USDT:USDT | below_1h_threshold | +2.87% | +2.16% |
-| BANK/USDT:USDT | below_1h_threshold | +2.79% | +2.09% |
+| CASHCAT/USDT:USDT | below_relative_strength | +5.28% | +4.58% |
+| AKE/USDT:USDT | below_1h_threshold | +3.78% | +3.08% |
+| ARX/USDT:USDT | below_1h_threshold | +3.20% | +2.50% |
 | KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.04% |
 | GALA/USDT:USDT | below_1h_threshold | +2.69% | +1.99% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +2.64% | +1.93% |
 
 ## 7. 次に見るべき不足
 
