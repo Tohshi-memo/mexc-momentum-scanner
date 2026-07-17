@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T03:51:12.800276+00:00
+- generated_at: 2026-07-17T03:56:13.175017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8825**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.32** / 初期 $100.00 (-1.68%)
-- 確定: 92件 (Win 28 / Loss 60 / Flat 4) / pending 2件 / skip 200件
+- 確定: 92件 (Win 28 / Loss 60 / Flat 4) / pending 3件 / skip 200件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000266 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUMPFUN/USDT:USDT `MARKET` EXPIRED account +0.27% 残高後 $98.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T03:51:06.495492+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=63524.7
-- Funnel: target 880 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-17T03:56:06.624991+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63552.9
+- Funnel: target 880 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.0 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUMIA/USDT:USDT | +24.54% | $1,021,683.32 |
-| SKYAI/USDT:USDT | +10.93% | $6,648,815.97 |
-| MYX/USDT:USDT | +10.52% | $1,758,711.55 |
-| KAITO/USDT:USDT | +9.26% | $3,253,562.58 |
-| O/USDT:USDT | +8.96% | $1,024,250.55 |
+| LUMIA/USDT:USDT | +23.96% | $1,030,931.58 |
+| MYX/USDT:USDT | +11.32% | $1,777,595.37 |
+| O/USDT:USDT | +10.00% | $1,033,154.99 |
+| SKYAI/USDT:USDT | +9.80% | $6,663,054.93 |
+| KAITO/USDT:USDT | +8.85% | $3,271,451.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.64% | +4.53% |
-| LUMIA/USDT:USDT | below_1h_threshold | +2.29% | +2.18% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.21% | +2.10% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.91% | +1.81% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.75% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.55% | +2.40% |
+| UB/USDT:USDT | below_1h_threshold | +1.98% | +1.83% |
+| LRC/USDT:USDT | below_1h_threshold | +1.93% | +1.78% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.91% | +1.76% |
+| LUMIA/USDT:USDT | below_1h_threshold | +1.88% | +1.73% |
 
 ## 7. 次に見るべき不足
 
