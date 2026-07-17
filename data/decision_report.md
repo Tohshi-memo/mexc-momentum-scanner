@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T19:41:14.905624+00:00
+- generated_at: 2026-07-17T19:46:23.475868+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8882**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.17** / 初期 $100.00 (-0.83%)
-- 確定: 142件 (Win 45 / Loss 78 / Flat 19) / pending 2件 / skip 209件
+- 確定: 142件 (Win 45 / Loss 78 / Flat 19) / pending 3件 / skip 209件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000345 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KORU/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $99.17
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T19:41:08.167455+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64113.8
-- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1
+- 更新: 2026-07-17T19:46:17.716491+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64171.6
+- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.1 >= 65=1, 4h RSI 83.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +22.62% | $10,076,641.39 |
-| AKE/USDT:USDT | +16.15% | $36,317,197.28 |
-| CASHCAT/USDT:USDT | +9.22% | $1,219,141.71 |
-| XEC/USDT:USDT | +9.07% | $2,698,796.12 |
-| VVV/USDT:USDT | +6.96% | $2,337,852.71 |
+| ESPORTS/USDT:USDT | +20.65% | $10,131,225.48 |
+| AKE/USDT:USDT | +16.91% | $36,628,762.43 |
+| XEC/USDT:USDT | +12.55% | $2,762,934.12 |
+| CASHCAT/USDT:USDT | +10.24% | $1,222,553.72 |
+| VVV/USDT:USDT | +7.02% | $2,356,467.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XEC/USDT:USDT | below_1h_threshold | +3.10% | +3.27% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.46% | +2.63% |
-| LIT/USDT:USDT | below_1h_threshold | +1.46% | +1.63% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.16% | +1.33% |
-| H/USDT:USDT | below_1h_threshold | +1.01% | +1.18% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.87% | +1.95% |
+| LIT/USDT:USDT | below_1h_threshold | +1.53% | +1.61% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.16% | +1.24% |
+| H/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.83% |
 
 ## 7. 次に見るべき不足
 
