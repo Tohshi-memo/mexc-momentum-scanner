@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T02:06:08.687840+00:00
+- generated_at: 2026-07-17T02:11:12.080464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8825**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T02:06:02.461909+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63546.4
+- 更新: 2026-07-17T02:11:07.720608+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=63424.1
 - Funnel: target 880 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +18.54% | $2,984,414.90 |
-| KAITO/USDT:USDT | +11.53% | $3,057,946.07 |
-| RESOLV/USDT:USDT | +9.60% | $1,217,742.37 |
-| SKYAI/USDT:USDT | +9.58% | $5,701,407.31 |
-| ALLO/USDT:USDT | +6.26% | $4,978,072.06 |
+| TAC/USDT:USDT | +17.59% | $2,992,779.04 |
+| KAITO/USDT:USDT | +11.17% | $3,064,094.66 |
+| SKYAI/USDT:USDT | +10.52% | $5,761,692.26 |
+| RESOLV/USDT:USDT | +8.57% | $1,218,829.17 |
+| SOXS/USDT:USDT | +5.60% | $1,192,896.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.09% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.67% | +1.61% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
-| US/USDT:USDT | below_1h_threshold | +0.85% | +0.80% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.72% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.28% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.91% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.53% | +0.67% |
+| PI/USDT:USDT | below_1h_threshold | +0.46% | +0.60% |
+| CRO/USDT:USDT | below_1h_threshold | +0.35% | +0.49% |
 
 ## 7. 次に見るべき不足
 
