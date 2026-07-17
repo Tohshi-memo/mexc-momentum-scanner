@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-17T23:31:13.866230+00:00
+- generated_at: 2026-07-17T23:36:22.970592+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8894**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-17T23:31:07.904617+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63940.0
-- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1
+- 更新: 2026-07-17T23:36:16.078691+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63982.6
+- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +36.90% | $9,494,186.07 |
-| CASHCAT/USDT:USDT | +19.59% | $1,207,259.82 |
-| AKE/USDT:USDT | +15.92% | $49,126,220.73 |
-| CRO/USDT:USDT | +7.97% | $2,152,213.76 |
-| XEC/USDT:USDT | +7.50% | $3,366,946.56 |
+| ESPORTS/USDT:USDT | +35.08% | $9,558,703.89 |
+| CASHCAT/USDT:USDT | +27.62% | $1,213,461.65 |
+| AKE/USDT:USDT | +17.07% | $49,217,310.66 |
+| CRO/USDT:USDT | +8.32% | $2,157,500.41 |
+| XEC/USDT:USDT | +7.72% | $3,373,172.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +1.52% | +1.54% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
-| TAG/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
-| CRO/USDT:USDT | below_1h_threshold | +1.20% | +1.22% |
-| ARB/USDT:USDT | below_1h_threshold | +0.90% | +0.92% |
+| UNI/USDT:USDT | below_1h_threshold | +2.08% | +2.03% |
+| CRO/USDT:USDT | below_1h_threshold | +1.55% | +1.50% |
+| TAG/USDT:USDT | below_1h_threshold | +1.30% | +1.25% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
+| DODO/USDT:USDT | below_1h_threshold | +1.15% | +1.10% |
 
 ## 7. 次に見るべき不足
 
