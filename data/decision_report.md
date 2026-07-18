@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T09:21:16.717077+00:00
+- generated_at: 2026-07-18T09:26:08.913472+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8927**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T09:21:10.098204+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63938.8
-- Funnel: target 885 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-18T09:26:02.548963+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63939.8
+- Funnel: target 885 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +59.70% | $60,884,005.71 |
-| TRADOOR/USDT:USDT | +35.21% | $3,518,259.96 |
-| ESPORTS/USDT:USDT | +27.21% | $14,299,818.44 |
-| XEC/USDT:USDT | +15.12% | $3,678,972.43 |
-| BSB/USDT:USDT | +12.47% | $1,435,295.94 |
+| AKE/USDT:USDT | +54.70% | $61,316,767.03 |
+| TRADOOR/USDT:USDT | +32.49% | $3,618,705.80 |
+| ESPORTS/USDT:USDT | +25.24% | $14,389,426.28 |
+| XEC/USDT:USDT | +13.42% | $3,686,018.61 |
+| BSB/USDT:USDT | +11.83% | $1,439,453.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_1h_threshold | +3.23% | +3.29% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.81% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.43% | +0.49% |
-| VVV/USDT:USDT | below_1h_threshold | +0.40% | +0.46% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.27% | +0.33% |
+| AKE/USDT:USDT | below_1h_threshold | +2.23% | +2.29% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.23% | +1.29% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
+| PI/USDT:USDT | below_1h_threshold | +0.71% | +0.77% |
 
 ## 7. 次に見るべき不足
 
