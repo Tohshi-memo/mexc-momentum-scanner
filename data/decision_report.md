@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T03:56:16.863399+00:00
+- generated_at: 2026-07-18T04:01:10.158293+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8911**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T03:56:10.389341+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63937.1
-- Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-18T04:01:03.748802+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63975.3
+- Funnel: target 885 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +52.88% | $12,163,152.97 |
-| AKE/USDT:USDT | +31.42% | $48,783,190.37 |
-| BANK/USDT:USDT | +18.17% | $22,884,756.41 |
-| TRADOOR/USDT:USDT | +16.47% | $1,315,444.15 |
-| VVV/USDT:USDT | +9.45% | $2,792,342.36 |
+| ESPORTS/USDT:USDT | +57.51% | $11,833,808.49 |
+| AKE/USDT:USDT | +31.88% | $48,422,277.96 |
+| BANK/USDT:USDT | +16.97% | $22,840,121.35 |
+| TRADOOR/USDT:USDT | +16.69% | $1,321,963.55 |
+| VVV/USDT:USDT | +9.20% | $2,726,797.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +2.17% | +2.16% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.15% | +2.14% |
-| BRETT/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
-| XEC/USDT:USDT | below_1h_threshold | +1.04% | +1.03% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
+| BANK/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
+| AKE/USDT:USDT | below_1h_threshold | +0.28% | +0.30% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.21% | +0.23% |
+| SYN/USDT:USDT | below_1h_threshold | +0.19% | +0.21% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.13% | +0.15% |
 
 ## 7. 次に見るべき不足
 
