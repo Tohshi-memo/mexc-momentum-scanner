@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T08:11:18.682721+00:00
+- generated_at: 2026-07-18T08:16:16.486065+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8924**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T08:11:12.020826+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63958.7
-- Funnel: target 885 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.3 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-18T08:16:09.959411+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63956.3
+- Funnel: target 885 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +54.72% | $57,050,404.35 |
-| ESPORTS/USDT:USDT | +37.93% | $13,900,176.38 |
-| TRADOOR/USDT:USDT | +27.30% | $2,719,706.71 |
-| XEC/USDT:USDT | +13.55% | $3,889,057.51 |
-| BSB/USDT:USDT | +12.07% | $1,324,439.64 |
+| AKE/USDT:USDT | +49.73% | $57,386,233.50 |
+| ESPORTS/USDT:USDT | +34.33% | $13,939,125.80 |
+| TRADOOR/USDT:USDT | +26.00% | $2,793,460.73 |
+| VVV/USDT:USDT | +11.90% | $2,886,841.45 |
+| BSB/USDT:USDT | +11.44% | $1,326,144.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_1h_threshold | +3.51% | +3.54% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.84% | +1.87% |
-| STAR/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
-| XEC/USDT:USDT | below_1h_threshold | +1.37% | +1.40% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.82% | +0.85% |
+| STAR/USDT:USDT | below_1h_threshold | +2.94% | +2.98% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +2.51% | +2.55% |
+| AKE/USDT:USDT | below_1h_threshold | +1.67% | +1.70% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.98% | +1.02% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.49% | +0.53% |
 
 ## 7. 次に見るべき不足
 
