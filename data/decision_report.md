@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T05:56:16.881258+00:00
+- generated_at: 2026-07-18T06:01:12.242308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8916**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T05:56:09.894897+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63914.1
-- Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-18T06:01:05.908533+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63933.2
+- Funnel: target 885 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +53.91% | $12,788,522.78 |
-| AKE/USDT:USDT | +45.98% | $51,240,714.12 |
-| TRADOOR/USDT:USDT | +20.27% | $1,531,447.36 |
-| BSB/USDT:USDT | +12.15% | $1,191,463.34 |
-| VVV/USDT:USDT | +8.21% | $2,838,284.03 |
+| ESPORTS/USDT:USDT | +52.88% | $12,629,566.44 |
+| AKE/USDT:USDT | +45.73% | $50,744,996.49 |
+| TRADOOR/USDT:USDT | +18.80% | $1,550,817.31 |
+| BSB/USDT:USDT | +11.99% | $1,158,204.26 |
+| VVV/USDT:USDT | +8.90% | $2,751,669.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.18% | +3.23% |
-| XEC/USDT:USDT | below_1h_threshold | +3.09% | +3.14% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.48% | +2.53% |
-| AKE/USDT:USDT | below_1h_threshold | +2.38% | +2.43% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.21% |
+| XEC/USDT:USDT | below_1h_threshold | +0.82% | +0.82% |
+| AKE/USDT:USDT | below_1h_threshold | +0.63% | +0.63% |
+| SYN/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +0.29% | +0.29% |
+| VVV/USDT:USDT | below_1h_threshold | +0.27% | +0.28% |
 
 ## 7. 次に見るべき不足
 
