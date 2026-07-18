@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T05:01:10.674928+00:00
+- generated_at: 2026-07-18T05:06:10.663805+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8913**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T05:01:04.194038+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63941.0
+- 更新: 2026-07-18T05:06:04.090070+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63938.2
 - Funnel: target 885 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +65.85% | $12,072,058.05 |
-| AKE/USDT:USDT | +41.50% | $49,375,896.63 |
-| TRADOOR/USDT:USDT | +12.26% | $1,411,511.23 |
-| BSB/USDT:USDT | +10.33% | $1,107,141.93 |
-| VVV/USDT:USDT | +8.04% | $2,752,144.62 |
+| ESPORTS/USDT:USDT | +65.24% | $12,128,781.19 |
+| AKE/USDT:USDT | +41.47% | $49,512,990.82 |
+| TRADOOR/USDT:USDT | +13.34% | $1,420,660.87 |
+| BSB/USDT:USDT | +9.07% | $1,120,420.21 |
+| VVV/USDT:USDT | +7.89% | $2,752,997.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +0.59% | +0.60% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
+| XEC/USDT:USDT | below_1h_threshold | +3.10% | +3.12% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.56% | +1.57% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
 | ZINC/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
 
 ## 7. 次に見るべき不足
 
