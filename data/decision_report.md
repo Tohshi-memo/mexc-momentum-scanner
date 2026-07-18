@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T22:56:20.015818+00:00
+- generated_at: 2026-07-18T23:01:12.259893+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8984**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T22:56:08.986400+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64764.0
-- Funnel: target 885 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-18T23:01:06.520268+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64778.6
+- Funnel: target 885 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +64.49% | $27,751,424.58 |
-| BANK/USDT:USDT | +39.12% | $18,835,980.08 |
-| TLM/USDT:USDT | +26.35% | $1,801,562.73 |
-| B/USDT:USDT | +16.53% | $31,185,504.45 |
-| ANSEM/USDT:USDT | +12.74% | $1,987,038.52 |
+| ESPORTS/USDT:USDT | +65.97% | $27,559,206.17 |
+| BANK/USDT:USDT | +39.69% | $18,632,863.66 |
+| TLM/USDT:USDT | +29.07% | $1,778,360.24 |
+| B/USDT:USDT | +16.96% | $31,164,371.74 |
+| AKE/USDT:USDT | +13.23% | $80,809,148.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +3.42% | +3.32% |
-| BILL/USDT:USDT | below_1h_threshold | +2.27% | +2.17% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.85% | +1.74% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
-| WLD/USDT:USDT | below_1h_threshold | +0.86% | +0.76% |
+| FWDISTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.49% | +0.49% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.42% | +0.41% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
 
 ## 7. 次に見るべき不足
 
