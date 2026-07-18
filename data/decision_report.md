@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T11:46:16.598028+00:00
+- generated_at: 2026-07-18T11:51:21.166790+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8941**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T11:46:11.447318+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63996.7
-- Funnel: target 885 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.5 >= 65=1
+- 更新: 2026-07-18T11:51:14.044334+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63997.5
+- Funnel: target 885 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +53.97% | $8,827,158.70 |
-| AKE/USDT:USDT | +47.89% | $73,571,160.82 |
-| TRADOOR/USDT:USDT | +31.02% | $4,887,956.81 |
-| XEC/USDT:USDT | +23.95% | $3,596,702.52 |
-| ROAM/USDT:USDT | +17.21% | $1,036,896.23 |
+| B/USDT:USDT | +54.84% | $9,111,036.99 |
+| AKE/USDT:USDT | +45.35% | $73,805,710.96 |
+| TRADOOR/USDT:USDT | +28.81% | $4,927,087.22 |
+| XEC/USDT:USDT | +24.31% | $3,623,945.88 |
+| ROAM/USDT:USDT | +16.13% | $1,037,384.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.44% | +4.42% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.86% | +3.83% |
-| SYN/USDT:USDT | below_1h_threshold | +3.76% | +3.73% |
-| US/USDT:USDT | below_1h_threshold | +2.62% | +2.60% |
-| BANK/USDT:USDT | below_1h_threshold | +2.27% | +2.24% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.93% | +4.90% |
+| BILL/USDT:USDT | below_1h_threshold | +4.05% | +4.03% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.79% | +3.76% |
+| BANK/USDT:USDT | below_1h_threshold | +3.05% | +3.02% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.24% | +2.21% |
 
 ## 7. 次に見るべき不足
 
