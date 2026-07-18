@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T00:11:13.370789+00:00
+- generated_at: 2026-07-18T00:16:11.604723+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8900**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T00:11:06.705788+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63876.3
+- 更新: 2026-07-18T00:16:05.151325+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63945.5
 - Funnel: target 885 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1
+- Strict後reject: 4h RSI 81.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +48.43% | $10,080,364.04 |
-| CASHCAT/USDT:USDT | +25.54% | $1,194,948.76 |
-| AKE/USDT:USDT | +24.74% | $48,698,439.97 |
-| CRO/USDT:USDT | +8.39% | $2,191,639.26 |
-| XEC/USDT:USDT | +7.41% | $3,421,097.21 |
+| ESPORTS/USDT:USDT | +52.41% | $10,145,713.70 |
+| AKE/USDT:USDT | +23.00% | $48,832,800.00 |
+| CASHCAT/USDT:USDT | +19.74% | $1,197,776.57 |
+| CRO/USDT:USDT | +8.25% | $2,220,441.72 |
+| VVV/USDT:USDT | +7.41% | $2,634,238.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.33% | +4.38% |
-| PI/USDT:USDT | below_1h_threshold | +1.74% | +1.78% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.42% | +1.46% |
-| SLX/USDT:USDT | below_1h_threshold | +1.02% | +1.06% |
-| 0G/USDT:USDT | below_1h_threshold | +0.91% | +0.96% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.29% | +4.22% |
+| PI/USDT:USDT | below_1h_threshold | +3.65% | +3.58% |
+| TAG/USDT:USDT | below_1h_threshold | +0.90% | +0.84% |
+| 0G/USDT:USDT | below_1h_threshold | +0.64% | +0.58% |
+| ADA/USDT:USDT | below_1h_threshold | +0.60% | +0.54% |
 
 ## 7. 次に見るべき不足
 
