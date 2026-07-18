@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T00:36:16.301721+00:00
+- generated_at: 2026-07-18T00:41:24.677682+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8901**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.71** / 初期 $100.00 (-0.29%)
-- 確定: 159件 (Win 51 / Loss 85 / Flat 23) / pending 5件 / skip 209件
+- 確定: 159件 (Win 51 / Loss 85 / Flat 23) / pending 6件 / skip 209件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000179 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $99.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T00:36:09.723186+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63907.2
-- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- 更新: 2026-07-18T00:41:16.587448+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63896.2
+- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1, 4h RSI 71.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +51.61% | $10,505,598.69 |
-| AKE/USDT:USDT | +21.37% | $49,004,565.84 |
-| CASHCAT/USDT:USDT | +19.59% | $1,219,454.14 |
-| BANK/USDT:USDT | +11.58% | $21,550,951.29 |
-| CRO/USDT:USDT | +8.57% | $2,266,447.68 |
+| ESPORTS/USDT:USDT | +53.25% | $10,569,461.53 |
+| AKE/USDT:USDT | +19.87% | $49,065,930.42 |
+| CASHCAT/USDT:USDT | +15.71% | $1,223,115.26 |
+| BANK/USDT:USDT | +11.28% | $21,604,641.94 |
+| CRO/USDT:USDT | +8.02% | $2,278,229.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.41% | +4.41% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.09% | +4.09% |
-| PI/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.42% |
-| DODO/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
+| AKE/USDT:USDT | below_1h_threshold | +2.88% | +2.90% |
+| PI/USDT:USDT | below_1h_threshold | +2.80% | +2.81% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.73% | +2.74% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.14% | +2.16% |
+| DODO/USDT:USDT | below_1h_threshold | +1.43% | +1.45% |
 
 ## 7. 次に見るべき不足
 
