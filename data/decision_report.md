@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T15:36:13.704401+00:00
+- generated_at: 2026-07-18T15:41:15.639872+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8950**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T15:36:07.314312+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64052.2
+- 更新: 2026-07-18T15:41:09.692119+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64034.8
 - Funnel: target 885 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XEC/USDT:USDT | +30.91% | $4,279,789.06 |
-| TRADOOR/USDT:USDT | +24.77% | $5,831,144.55 |
-| AKE/USDT:USDT | +22.75% | $78,857,415.09 |
-| B/USDT:USDT | +20.50% | $24,035,033.03 |
-| AVAAI/USDT:USDT | +17.87% | $1,000,639.24 |
+| XEC/USDT:USDT | +28.97% | $4,305,037.15 |
+| TRADOOR/USDT:USDT | +25.07% | $5,864,588.56 |
+| B/USDT:USDT | +22.23% | $24,137,268.38 |
+| AKE/USDT:USDT | +21.98% | $79,407,341.97 |
+| AVAAI/USDT:USDT | +19.84% | $1,013,976.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XEC/USDT:USDT | below_1h_threshold | +2.85% | +2.92% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.75% | +1.82% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.74% | +1.81% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +1.09% | +1.16% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.97% | +1.04% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.45% | +1.55% |
+| ROAM/USDT:USDT | below_1h_threshold | +1.33% | +1.43% |
+| XEC/USDT:USDT | below_1h_threshold | +1.28% | +1.38% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.91% | +1.01% |
+| B/USDT:USDT | below_1h_threshold | +0.85% | +0.95% |
 
 ## 7. 次に見るべき不足
 
