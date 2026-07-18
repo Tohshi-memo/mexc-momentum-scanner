@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T01:41:19.495214+00:00
+- generated_at: 2026-07-18T01:46:11.731072+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8908**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T01:41:09.878356+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63910.6
-- Funnel: target 885 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-18T01:46:05.321016+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63916.6
+- Funnel: target 885 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +61.68% | $11,292,255.79 |
-| AKE/USDT:USDT | +16.19% | $47,828,427.77 |
-| BANK/USDT:USDT | +12.76% | $21,915,395.47 |
-| TRADOOR/USDT:USDT | +11.67% | $1,019,381.53 |
-| CRO/USDT:USDT | +9.25% | $2,261,271.91 |
+| ESPORTS/USDT:USDT | +54.47% | $11,394,016.69 |
+| AKE/USDT:USDT | +18.64% | $47,898,798.82 |
+| TRADOOR/USDT:USDT | +11.90% | $1,022,297.72 |
+| BANK/USDT:USDT | +11.52% | $21,995,062.72 |
+| CRO/USDT:USDT | +9.18% | $2,262,757.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_1h_threshold | +3.97% | +3.93% |
-| BANK/USDT:USDT | below_1h_threshold | +3.69% | +3.65% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.18% | +3.13% |
-| ARB/USDT:USDT | below_1h_threshold | +1.76% | +1.72% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.67% | +1.63% |
+| T/USDT:USDT | below_1h_threshold | +4.74% | +4.68% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.42% | +4.37% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +4.31% | +4.26% |
+| AKE/USDT:USDT | below_1h_threshold | +2.96% | +2.91% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.25% | +2.19% |
 
 ## 7. 次に見るべき不足
 
