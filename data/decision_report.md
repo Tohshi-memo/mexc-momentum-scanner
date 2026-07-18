@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T05:31:14.824327+00:00
+- generated_at: 2026-07-18T05:36:16.651098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8915**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T05:31:07.702010+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63956.2
-- Funnel: target 885 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1, 4h RSI 68.3 >= 65=1
+- 更新: 2026-07-18T05:36:09.870265+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63953.7
+- Funnel: target 885 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +63.84% | $12,430,118.34 |
-| AKE/USDT:USDT | +41.85% | $50,220,591.71 |
-| TRADOOR/USDT:USDT | +18.60% | $1,454,660.00 |
-| XEC/USDT:USDT | +10.65% | $3,669,217.98 |
-| BSB/USDT:USDT | +9.78% | $1,138,391.79 |
+| ESPORTS/USDT:USDT | +64.73% | $12,510,172.10 |
+| AKE/USDT:USDT | +43.51% | $50,428,783.52 |
+| TRADOOR/USDT:USDT | +19.14% | $1,469,984.63 |
+| BSB/USDT:USDT | +9.70% | $1,150,485.60 |
+| XEC/USDT:USDT | +9.11% | $3,678,034.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.03% | +3.02% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.09% |
-| BANK/USDT:USDT | below_1h_threshold | +1.68% | +1.67% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.24% | +1.23% |
-| GALA/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
+| XEC/USDT:USDT | below_1h_threshold | +4.23% | +4.22% |
+| SYN/USDT:USDT | below_1h_threshold | +3.70% | +3.69% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.27% |
+| BANK/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.43% | +1.41% |
 
 ## 7. 次に見るべき不足
 
