@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T19:51:16.740754+00:00
+- generated_at: 2026-07-18T19:56:13.239238+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8974**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.04** / 初期 $100.00 (-0.96%)
-- 確定: 196件 (Win 62 / Loss 107 / Flat 27) / pending 0件 / skip 247件
+- 確定: 196件 (Win 62 / Loss 107 / Flat 27) / pending 0件 / skip 248件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000572 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RAVE/USDT:USDT `MARKET` EXPIRED account +0.16% 残高後 $99.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T19:51:07.215398+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64498.7
+- 更新: 2026-07-18T19:56:05.282839+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64527.1
 - Funnel: target 885 → liquid 133 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.2 >= 65=1
+- Strict後reject: 4h RSI 83.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +56.01% | $23,181,424.19 |
-| BANK/USDT:USDT | +39.98% | $17,766,484.74 |
-| AKE/USDT:USDT | +18.45% | $88,497,979.28 |
-| B/USDT:USDT | +14.69% | $28,912,459.88 |
-| TAG/USDT:USDT | +7.62% | $1,336,543.28 |
+| ESPORTS/USDT:USDT | +50.64% | $23,387,979.38 |
+| BANK/USDT:USDT | +40.96% | $17,789,920.64 |
+| AKE/USDT:USDT | +20.77% | $88,846,945.84 |
+| B/USDT:USDT | +15.19% | $28,926,404.48 |
+| TAG/USDT:USDT | +8.67% | $1,347,772.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +4.37% | +4.34% |
-| BASED/USDT:USDT | below_1h_threshold | +2.99% | +2.96% |
-| SYN/USDT:USDT | below_1h_threshold | +2.62% | +2.59% |
-| TAG/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
-| BANK/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.84% | +4.76% |
+| BASED/USDT:USDT | below_1h_threshold | +3.38% | +3.31% |
+| TAG/USDT:USDT | below_1h_threshold | +2.87% | +2.80% |
+| BANK/USDT:USDT | below_1h_threshold | +2.11% | +2.03% |
+| SYN/USDT:USDT | below_1h_threshold | +2.03% | +1.95% |
 
 ## 7. 次に見るべき不足
 
