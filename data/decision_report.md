@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T09:46:11.767381+00:00
+- generated_at: 2026-07-18T09:51:19.579254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8929**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$111.25** / 初期 $100.00 (+11.25%)
-- 確定トレード: 115件 (TP 43 / SL 68 / EXP 4)
-- 最新: LAB/USDT:USDT SL_HIT PnL -4.00% 残高後 $111.25
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$110.69** / 初期 $100.00 (+10.69%)
+- 確定トレード: 116件 (TP 43 / SL 69 / EXP 4)
+- 最新: B/USDT:USDT SL_HIT PnL -3.30% 残高後 $110.69
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T09:46:04.222067+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63950.8
-- Funnel: target 885 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-18T09:51:12.930699+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63949.1
+- Funnel: target 885 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +35.63% | $64,250,958.40 |
-| TRADOOR/USDT:USDT | +29.77% | $3,850,441.03 |
-| ESPORTS/USDT:USDT | +15.78% | $14,835,524.42 |
-| ROAM/USDT:USDT | +14.53% | $1,012,733.93 |
-| XEC/USDT:USDT | +12.86% | $3,713,480.85 |
+| AKE/USDT:USDT | +33.35% | $64,973,810.25 |
+| TRADOOR/USDT:USDT | +30.92% | $3,914,553.29 |
+| B/USDT:USDT | +14.18% | $1,355,577.96 |
+| ROAM/USDT:USDT | +13.68% | $1,018,415.29 |
+| XEC/USDT:USDT | +13.16% | $3,717,135.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.43% | +4.48% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.12% | +2.16% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.42% | +1.46% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.34% | +0.38% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.17% | +4.21% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.83% | +3.88% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.42% | +2.47% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.47% | +1.52% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
 
 ## 7. 次に見るべき不足
 
