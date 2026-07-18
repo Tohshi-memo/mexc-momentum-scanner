@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T09:56:20.340375+00:00
+- generated_at: 2026-07-18T10:01:13.265125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8931**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T09:56:12.510552+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63963.5
-- Funnel: target 885 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-18T10:01:06.871612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63961.1
+- Funnel: target 885 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRADOOR/USDT:USDT | +30.48% | $3,959,245.51 |
-| AKE/USDT:USDT | +27.67% | $65,511,779.89 |
-| B/USDT:USDT | +18.77% | $1,620,606.79 |
-| ROAM/USDT:USDT | +14.46% | $1,021,681.61 |
-| ESPORTS/USDT:USDT | +14.09% | $15,044,095.10 |
+| AKE/USDT:USDT | +27.45% | $64,335,976.55 |
+| TRADOOR/USDT:USDT | +26.51% | $4,065,596.58 |
+| B/USDT:USDT | +20.32% | $1,961,442.35 |
+| ESPORTS/USDT:USDT | +13.34% | $14,668,998.31 |
+| ROAM/USDT:USDT | +12.93% | $1,017,990.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +3.83% | +3.86% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.39% | +2.41% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.88% | +1.90% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.41% | +1.43% |
-| PI/USDT:USDT | below_1h_threshold | +0.77% | +0.79% |
+| B/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +0.66% | +0.66% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.42% | +0.42% |
 
 ## 7. 次に見るべき不足
 
