@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T10:31:18.074982+00:00
+- generated_at: 2026-07-18T10:36:15.922046+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8934**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T10:31:09.827957+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63980.3
+- 更新: 2026-07-18T10:36:08.610707+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63984.2
 - Funnel: target 885 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1, 4h RSI 81.2 >= 65=1
+- Strict後reject: 4h RSI 75.4 >= 65=1, 4h RSI 81.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +41.23% | $68,769,380.40 |
-| B/USDT:USDT | +32.35% | $3,709,031.41 |
-| TRADOOR/USDT:USDT | +30.11% | $4,351,376.00 |
-| ROAM/USDT:USDT | +13.27% | $1,023,998.41 |
-| ALLO/USDT:USDT | +13.23% | $4,241,762.48 |
+| AKE/USDT:USDT | +41.78% | $69,013,757.39 |
+| B/USDT:USDT | +31.05% | $4,045,487.83 |
+| TRADOOR/USDT:USDT | +29.84% | $4,403,974.72 |
+| ESPORTS/USDT:USDT | +14.33% | $14,973,631.48 |
+| ROAM/USDT:USDT | +13.34% | $1,027,386.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +4.31% | +4.28% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +3.53% | +3.50% |
-| BANK/USDT:USDT | below_1h_threshold | +2.28% | +2.25% |
-| LAB/USDT:USDT | below_1h_threshold | +2.14% | +2.11% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.89% | +1.86% |
+| RAVE/USDT:USDT | below_1h_threshold | +4.41% | +4.37% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +3.21% | +3.18% |
+| LAB/USDT:USDT | below_1h_threshold | +2.73% | +2.69% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.92% | +1.89% |
+| BANK/USDT:USDT | below_1h_threshold | +1.72% | +1.69% |
 
 ## 7. 次に見るべき不足
 
