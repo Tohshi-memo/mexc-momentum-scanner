@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T10:16:17.849151+00:00
+- generated_at: 2026-07-18T10:21:18.227400+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8933**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T10:16:10.133915+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63967.9
-- Funnel: target 885 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1
+- 更新: 2026-07-18T10:21:12.516140+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63967.4
+- Funnel: target 885 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.8 >= 65=1, 4h RSI 79.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +41.44% | $67,386,883.93 |
-| TRADOOR/USDT:USDT | +30.06% | $4,227,212.23 |
-| B/USDT:USDT | +21.97% | $2,771,053.52 |
-| ROAM/USDT:USDT | +14.63% | $1,020,879.30 |
-| ESPORTS/USDT:USDT | +12.55% | $14,836,421.77 |
+| AKE/USDT:USDT | +36.88% | $68,056,674.36 |
+| TRADOOR/USDT:USDT | +28.89% | $4,269,726.24 |
+| B/USDT:USDT | +27.59% | $3,026,457.81 |
+| ROAM/USDT:USDT | +15.06% | $1,021,782.06 |
+| ESPORTS/USDT:USDT | +13.06% | $14,867,428.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.59% | +3.58% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +3.45% | +3.44% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.53% | +2.52% |
-| B/USDT:USDT | below_1h_threshold | +2.40% | +2.39% |
-| ROAM/USDT:USDT | below_1h_threshold | +1.68% | +1.67% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +2.59% | +2.58% |
+| BANK/USDT:USDT | below_1h_threshold | +2.52% | +2.52% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.57% | +1.56% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
 
 ## 7. 次に見るべき不足
 
