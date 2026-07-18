@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T15:21:21.104992+00:00
+- generated_at: 2026-07-18T15:22:43.033833+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8950**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T15:21:14.719438+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64084.5
+- 更新: 2026-07-18T15:22:36.549790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64073.4
 - Funnel: target 885 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XEC/USDT:USDT | +30.00% | $4,197,373.11 |
-| AKE/USDT:USDT | +27.95% | $77,586,471.98 |
-| TRADOOR/USDT:USDT | +22.23% | $5,755,185.16 |
-| B/USDT:USDT | +20.67% | $23,770,230.18 |
-| ROAM/USDT:USDT | +15.03% | $1,159,758.67 |
+| XEC/USDT:USDT | +28.48% | $4,212,077.66 |
+| AKE/USDT:USDT | +27.62% | $77,666,976.68 |
+| TRADOOR/USDT:USDT | +22.47% | $5,757,952.21 |
+| B/USDT:USDT | +20.41% | $23,777,575.03 |
+| FWDISTOCK/USDT:USDT | +14.67% | $1,004,372.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XEC/USDT:USDT | below_1h_threshold | +2.20% | +2.22% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.09% | +2.11% |
-| BRETT/USDT:USDT | below_1h_threshold | +0.95% | +0.97% |
-| BSB/USDT:USDT | below_1h_threshold | +0.91% | +0.93% |
-| PI/USDT:USDT | below_1h_threshold | +0.55% | +0.57% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.86% | +1.90% |
+| XEC/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
+| BSB/USDT:USDT | below_1h_threshold | +0.91% | +0.94% |
+| BRETT/USDT:USDT | below_1h_threshold | +0.89% | +0.93% |
+| PI/USDT:USDT | below_1h_threshold | +0.75% | +0.79% |
 
 ## 7. 次に見るべき不足
 
