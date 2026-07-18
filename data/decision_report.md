@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T00:31:17.920733+00:00
+- generated_at: 2026-07-18T00:36:16.301721+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8901**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T00:31:10.467605+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63951.3
-- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 75.5 >= 65=1, 4h RSI 81.5 >= 65=1
+- 更新: 2026-07-18T00:36:09.723186+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63907.2
+- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +55.59% | $10,394,261.40 |
-| AKE/USDT:USDT | +22.85% | $48,976,246.84 |
-| CASHCAT/USDT:USDT | +15.09% | $1,215,153.57 |
-| BANK/USDT:USDT | +12.73% | $21,497,643.30 |
-| CRO/USDT:USDT | +8.83% | $2,253,876.72 |
+| ESPORTS/USDT:USDT | +51.61% | $10,505,598.69 |
+| AKE/USDT:USDT | +21.37% | $49,004,565.84 |
+| CASHCAT/USDT:USDT | +19.59% | $1,219,454.14 |
+| BANK/USDT:USDT | +11.58% | $21,550,951.29 |
+| CRO/USDT:USDT | +8.57% | $2,266,447.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PI/USDT:USDT | below_1h_threshold | +3.83% | +3.76% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.35% |
-| VVV/USDT:USDT | below_1h_threshold | +1.53% | +1.46% |
-| TAG/USDT:USDT | below_1h_threshold | +1.40% | +1.32% |
-| DODO/USDT:USDT | below_1h_threshold | +1.31% | +1.23% |
+| AKE/USDT:USDT | below_1h_threshold | +4.41% | +4.41% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.09% | +4.09% |
+| PI/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.42% |
+| DODO/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
 
 ## 7. 次に見るべき不足
 
