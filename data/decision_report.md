@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-18T16:01:21.208216+00:00
+- generated_at: 2026-07-18T16:06:09.929451+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8951**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$98.89** / 初期 $100.00 (-1.11%)
-- 確定: 195件 (Win 61 / Loss 107 / Flat 27) / pending 1件 / skip 225件
+- 確定: 195件 (Win 61 / Loss 107 / Flat 27) / pending 1件 / skip 226件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ALLO/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $98.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-18T16:01:13.364950+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64089.9
-- Funnel: target 885 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-18T16:06:03.275028+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64074.9
+- Funnel: target 885 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.7 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FWDISTOCK/USDT:USDT | +3.79% | $1,218,645.91 |
-| BANK/USDT:USDT | +1.34% | $12,074,791.21 |
-| ESPORTS/USDT:USDT | +0.71% | $16,096,350.17 |
-| BILL/USDT:USDT | +0.41% | $3,190,357.19 |
-| LAB/USDT:USDT | +0.37% | $6,389,696.36 |
+| BANK/USDT:USDT | +7.82% | $12,431,645.77 |
+| FWDISTOCK/USDT:USDT | +5.31% | $1,248,905.17 |
+| ESPORTS/USDT:USDT | +4.45% | $16,149,228.72 |
+| ROAM/USDT:USDT | +2.09% | $1,186,240.72 |
+| MYX/USDT:USDT | +1.39% | $1,507,987.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.72% | +0.72% |
-| BILL/USDT:USDT | below_1h_threshold | +0.42% | +0.42% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
-| LAB/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.17% | +4.19% |
+| ROAM/USDT:USDT | below_1h_threshold | +2.10% | +2.12% |
+| MYX/USDT:USDT | below_1h_threshold | +1.38% | +1.41% |
+| LAB/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
+| AVAAI/USDT:USDT | below_1h_threshold | +1.01% | +1.03% |
 
 ## 7. 次に見るべき不足
 
