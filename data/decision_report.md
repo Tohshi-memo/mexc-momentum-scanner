@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T08:36:31.650385+00:00
+- generated_at: 2026-07-19T08:41:22.418397+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9014**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T08:36:19.638612+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64611.5
-- Funnel: target 885 → liquid 123 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.9 >= 65=1, 4h RSI 74.0 >= 65=1, 4h RSI 73.3 >= 65=1
+- 更新: 2026-07-19T08:41:12.551178+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64627.7
+- Funnel: target 885 → liquid 123 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 73.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +140.48% | $43,601,840.95 |
-| BANK/USDT:USDT | +64.56% | $18,923,735.38 |
-| TLM/USDT:USDT | +50.37% | $5,483,501.75 |
-| B/USDT:USDT | +36.25% | $40,118,849.00 |
-| BULLA/USDT:USDT | +25.50% | $1,288,657.84 |
+| ESPORTS/USDT:USDT | +132.63% | $43,795,017.09 |
+| BANK/USDT:USDT | +65.69% | $19,096,575.90 |
+| TLM/USDT:USDT | +52.03% | $5,523,822.65 |
+| B/USDT:USDT | +38.79% | $40,359,057.79 |
+| BULLA/USDT:USDT | +25.26% | $1,299,245.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.72% | +3.84% |
-| AKE/USDT:USDT | below_1h_threshold | +2.98% | +3.11% |
-| TAG/USDT:USDT | below_1h_threshold | +2.46% | +2.58% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.91% | +2.03% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.72% | +1.85% |
+| TAG/USDT:USDT | below_1h_threshold | +4.13% | +4.23% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.70% | +3.80% |
+| PI/USDT:USDT | below_1h_threshold | +3.24% | +3.33% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.87% | +2.97% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.82% | +2.92% |
 
 ## 7. 次に見るべき不足
 
