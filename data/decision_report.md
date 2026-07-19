@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T14:01:15.122555+00:00
+- generated_at: 2026-07-19T14:06:18.370970+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9042**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.86** / 初期 $100.00 (+0.86%)
-- 確定: 243件 (Win 82 / Loss 121 / Flat 40) / pending 1件 / skip 266件
+- 確定: 243件 (Win 82 / Loss 121 / Flat 40) / pending 2件 / skip 266件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000340 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BANK/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $100.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T14:01:05.829050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64452.9
-- Funnel: target 885 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-19T14:06:09.645072+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64501.7
+- Funnel: target 885 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +139.58% | $39,961,811.23 |
-| TLM/USDT:USDT | +74.16% | $8,409,913.48 |
-| B/USDT:USDT | +43.81% | $31,326,147.10 |
-| TAG/USDT:USDT | +26.85% | $4,742,108.54 |
-| ESPORTS/USDT:USDT | +26.30% | $58,768,501.50 |
+| BANK/USDT:USDT | +137.78% | $40,402,041.76 |
+| TLM/USDT:USDT | +75.75% | $8,499,664.16 |
+| B/USDT:USDT | +41.27% | $31,551,160.69 |
+| ESPORTS/USDT:USDT | +35.26% | $59,172,217.23 |
+| TAG/USDT:USDT | +26.01% | $4,756,570.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.09% | +3.09% |
-| TLM/USDT:USDT | below_1h_threshold | +1.50% | +1.50% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.04% | +1.04% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.63% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.50% |
+| TLM/USDT:USDT | below_1h_threshold | +2.16% | +2.08% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.14% | +1.07% |
+| PI/USDT:USDT | below_1h_threshold | +0.75% | +0.68% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
+| BASED/USDT:USDT | below_1h_threshold | +0.59% | +0.51% |
 
 ## 7. 次に見るべき不足
 
