@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T11:11:23.751504+00:00
+- generated_at: 2026-07-19T11:16:14.612781+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9025**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T11:11:15.096551+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64572.8
-- Funnel: target 885 → liquid 123 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.2 >= 65=1, 4h RSI 65.6 >= 65=1
+- 更新: 2026-07-19T11:16:07.978119+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64570.0
+- Funnel: target 885 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +112.60% | $26,849,169.16 |
-| ESPORTS/USDT:USDT | +81.40% | $50,025,268.55 |
-| TLM/USDT:USDT | +53.32% | $6,195,696.51 |
-| B/USDT:USDT | +50.03% | $40,140,107.28 |
-| TAG/USDT:USDT | +28.52% | $4,348,711.42 |
+| BANK/USDT:USDT | +117.28% | $27,274,947.38 |
+| ESPORTS/USDT:USDT | +82.03% | $50,380,806.75 |
+| TLM/USDT:USDT | +50.83% | $6,238,619.14 |
+| B/USDT:USDT | +49.11% | $40,260,089.99 |
+| TAG/USDT:USDT | +28.94% | $4,369,357.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.57% | +3.55% |
-| US/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.34% | +1.32% |
-| TAG/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.07% | +1.05% |
+| TLM/USDT:USDT | below_1h_threshold | +4.01% | +4.00% |
+| B/USDT:USDT | below_1h_threshold | +3.23% | +3.21% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.02% | +2.01% |
+| TAG/USDT:USDT | below_1h_threshold | +1.40% | +1.38% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.24% | +1.22% |
 
 ## 7. 次に見るべき不足
 
