@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T05:46:20.627016+00:00
+- generated_at: 2026-07-19T05:51:20.434201+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9004**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T05:46:11.129388+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64687.1
-- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 77.0 >= 65=1
+- 更新: 2026-07-19T05:51:11.068533+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64698.6
+- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +121.27% | $39,324,791.88 |
-| BANK/USDT:USDT | +41.43% | $17,986,323.63 |
-| TLM/USDT:USDT | +28.47% | $3,338,165.77 |
-| B/USDT:USDT | +28.26% | $36,739,046.48 |
-| TAG/USDT:USDT | +25.39% | $1,360,539.73 |
+| ESPORTS/USDT:USDT | +122.32% | $39,507,468.69 |
+| BANK/USDT:USDT | +41.57% | $18,037,740.19 |
+| TLM/USDT:USDT | +30.74% | $3,395,662.92 |
+| B/USDT:USDT | +28.83% | $36,809,713.88 |
+| TAG/USDT:USDT | +27.06% | $1,399,243.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +2.55% | +2.56% |
-| HOME/USDT:USDT | below_1h_threshold | +2.15% | +2.16% |
-| RE/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
-| GALA/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.60% | +1.61% |
+| AKE/USDT:USDT | below_1h_threshold | +4.63% | +4.62% |
+| HOME/USDT:USDT | below_1h_threshold | +3.36% | +3.35% |
+| BILL/USDT:USDT | below_1h_threshold | +2.30% | +2.29% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.01% | +2.00% |
+| GALA/USDT:USDT | below_1h_threshold | +1.80% | +1.79% |
 
 ## 7. 次に見るべき不足
 
