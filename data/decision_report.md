@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T18:11:08.542786+00:00
+- generated_at: 2026-07-19T18:16:03.094090+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9064**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T18:11:02.085914+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64413.2
+- 更新: 2026-07-19T18:15:58.692458+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=64442.8
 - Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +21.92% | $60,187,093.19 |
-| B/USDT:USDT | +10.97% | $36,011,789.02 |
-| DEXE/USDT:USDT | +8.13% | $1,460,366.37 |
-| ESPORTS/USDT:USDT | +7.46% | $61,956,961.34 |
-| SYN/USDT:USDT | +3.88% | $3,459,874.55 |
+| BANK/USDT:USDT | +23.43% | $60,693,446.72 |
+| B/USDT:USDT | +10.97% | $36,272,175.96 |
+| DEXE/USDT:USDT | +8.53% | $1,464,085.38 |
+| ESPORTS/USDT:USDT | +6.75% | $62,023,692.02 |
+| TLM/USDT:USDT | +5.37% | $12,289,337.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_1h_threshold | +2.22% | +2.39% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.56% | +1.73% |
-| B/USDT:USDT | below_1h_threshold | +1.05% | +1.22% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +1.19% |
-| XEC/USDT:USDT | below_1h_threshold | +0.68% | +0.85% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +2.55% | +2.67% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +1.14% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.94% | +1.06% |
+| B/USDT:USDT | below_1h_threshold | +0.93% | +1.05% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.74% |
 
 ## 7. 次に見るべき不足
 
