@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T10:16:13.775304+00:00
+- generated_at: 2026-07-19T10:21:14.024928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9021**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T10:16:07.134833+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64546.8
-- Funnel: target 885 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-19T10:21:09.038340+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=64573.4
+- Funnel: target 885 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.2 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +102.44% | $47,795,185.99 |
-| BANK/USDT:USDT | +78.33% | $22,056,901.47 |
-| TLM/USDT:USDT | +46.82% | $6,022,790.44 |
-| B/USDT:USDT | +41.48% | $41,942,865.93 |
-| TAG/USDT:USDT | +28.10% | $3,858,996.18 |
+| ESPORTS/USDT:USDT | +104.88% | $48,098,339.36 |
+| BANK/USDT:USDT | +77.17% | $22,187,561.95 |
+| TLM/USDT:USDT | +45.99% | $6,047,751.13 |
+| B/USDT:USDT | +41.20% | $42,018,496.23 |
+| TAG/USDT:USDT | +28.42% | $3,917,534.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_relative_strength | +5.02% | +4.94% |
-| TLM/USDT:USDT | below_1h_threshold | +1.30% | +1.22% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.09% | +1.01% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.03% | +0.95% |
-| LYN/USDT:USDT | below_1h_threshold | +1.03% | +0.95% |
+| BASED/USDT:USDT | below_1h_threshold | +1.39% | +1.26% |
+| TAG/USDT:USDT | below_1h_threshold | +0.99% | +0.86% |
+| LYN/USDT:USDT | below_1h_threshold | +0.92% | +0.80% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.80% | +0.68% |
+| NEO/USDT:USDT | below_1h_threshold | +0.78% | +0.66% |
 
 ## 7. 次に見るべき不足
 
