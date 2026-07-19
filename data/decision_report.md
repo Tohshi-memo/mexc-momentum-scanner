@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T04:56:20.277753+00:00
+- generated_at: 2026-07-19T05:01:15.609076+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8999**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T04:56:11.938346+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64682.6
-- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 73.9 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-19T05:01:09.256637+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64709.5
+- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +126.25% | $37,974,189.90 |
-| BANK/USDT:USDT | +40.82% | $18,791,186.58 |
-| B/USDT:USDT | +27.84% | $35,796,017.39 |
-| TLM/USDT:USDT | +15.48% | $3,238,202.28 |
-| TAG/USDT:USDT | +15.04% | $1,196,902.28 |
+| ESPORTS/USDT:USDT | +126.64% | $37,778,222.71 |
+| BANK/USDT:USDT | +42.09% | $17,783,374.03 |
+| B/USDT:USDT | +29.46% | $35,966,162.56 |
+| TLM/USDT:USDT | +16.69% | $3,160,776.06 |
+| TAG/USDT:USDT | +15.67% | $1,154,527.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +4.38% | +4.39% |
-| KAITO/USDT:USDT | below_1h_threshold | +4.06% | +4.07% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.29% | +3.30% |
-| BASED/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
-| FWDISTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.96% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.71% |
+| TAG/USDT:USDT | below_1h_threshold | +0.64% | +0.61% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.61% | +0.58% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.51% |
 
 ## 7. 次に見るべき不足
 
