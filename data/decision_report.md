@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T07:41:12.304408+00:00
+- generated_at: 2026-07-19T07:46:18.288846+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9011**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T07:41:05.558914+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64717.8
+- 更新: 2026-07-19T07:46:11.761533+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64744.3
 - Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1
+- Strict後reject: 4h RSI 67.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +119.59% | $41,833,881.69 |
-| TLM/USDT:USDT | +49.69% | $4,690,020.46 |
-| BANK/USDT:USDT | +33.20% | $17,692,887.62 |
-| B/USDT:USDT | +32.36% | $39,187,831.49 |
-| TAG/USDT:USDT | +20.58% | $3,237,585.00 |
+| ESPORTS/USDT:USDT | +118.78% | $41,989,707.95 |
+| TLM/USDT:USDT | +48.64% | $4,783,313.91 |
+| BANK/USDT:USDT | +37.49% | $17,800,990.09 |
+| B/USDT:USDT | +33.00% | $39,268,854.94 |
+| BULLA/USDT:USDT | +20.51% | $1,252,694.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +3.30% | +3.25% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.38% | +2.33% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.12% | +2.06% |
-| MYX/USDT:USDT | below_1h_threshold | +1.16% | +1.10% |
-| VVV/USDT:USDT | below_1h_threshold | +1.07% | +1.02% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.22% | +3.13% |
+| BILL/USDT:USDT | below_1h_threshold | +1.87% | +1.77% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.39% | +1.30% |
+| VVV/USDT:USDT | below_1h_threshold | +1.12% | +1.03% |
+| B/USDT:USDT | below_1h_threshold | +1.02% | +0.92% |
 
 ## 7. 次に見るべき不足
 
