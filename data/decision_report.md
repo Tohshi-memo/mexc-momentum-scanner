@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T19:06:17.514759+00:00
+- generated_at: 2026-07-19T19:11:11.874537+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9065**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T19:06:09.918439+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64371.8
+- 更新: 2026-07-19T19:11:05.483334+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64429.2
 - Funnel: target 885 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +31.21% | $63,029,852.09 |
-| B/USDT:USDT | +12.26% | $36,943,736.39 |
-| ESPORTS/USDT:USDT | +11.57% | $61,198,505.65 |
-| TLM/USDT:USDT | +7.70% | $12,590,624.18 |
-| DEXE/USDT:USDT | +6.21% | $1,498,487.55 |
+| BANK/USDT:USDT | +27.04% | $63,599,253.48 |
+| B/USDT:USDT | +12.68% | $37,087,940.90 |
+| ESPORTS/USDT:USDT | +10.44% | $61,244,312.09 |
+| DEXE/USDT:USDT | +6.83% | $1,502,557.88 |
+| TLM/USDT:USDT | +6.64% | $12,622,186.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +1.21% | +1.25% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.15% |
-| TLM/USDT:USDT | below_1h_threshold | +0.83% | +0.87% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.83% | +0.86% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.74% | +0.77% |
+| LIT/USDT:USDT | below_1h_threshold | +1.34% | +1.29% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.19% | +1.14% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.18% | +1.13% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.14% | +1.09% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
 
 ## 7. 次に見るべき不足
 
