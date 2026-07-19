@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-19T17:46:22.889569+00:00
+- generated_at: 2026-07-19T17:51:26.185123+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9061**
+- closed shadow trades: **9062**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.41% / filled 20/20。**
-- 全期間 MARKET基準: n=9061, expectancy=-0.00%
+- 全期間 MARKET基準: n=9062, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.41%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,55 +47,55 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$401.25** / 初期 $100.00 (+301.25%)
-- 確定: 3123件 (Win 982 / Loss 999 / Flat 1142) / skip 2499件
+- 確定: 3124件 (Win 982 / Loss 999 / Flat 1143) / skip 2499件
 - 成長率目線: 平均log +0.000445 / 幾何平均 +0.044% per trade / maxDD +8.13%
-- 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: DEXE/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $401.25
+- 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: BANK/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $401.25
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$125.55** / 初期 $100.00 (+25.55%)
-- 確定: 1022件 (Win 264 / Loss 218 / Flat 540) / skip 1450件
-- 成長率目線: 平均log +0.000223 / 幾何平均 +0.022% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0792 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: DEXE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $125.55
+- 確定: 1023件 (Win 264 / Loss 218 / Flat 541) / skip 1450件
+- 成長率目線: 平均log +0.000222 / 幾何平均 +0.022% per trade / maxDD +3.89%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0582 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: BANK/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $125.55
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.97** / 初期 $100.00 (+0.97%)
-- 確定: 261件 (Win 91 / Loss 130 / Flat 40) / pending 4件 / skip 268件
+- 確定: 262件 (Win 91 / Loss 130 / Flat 41) / pending 5件 / skip 268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: DEXE/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $100.97
+- 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000234 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: BANK/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $100.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T17:46:14.396664+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=64578.7
-- Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 80.7 >= 65=1
+- 更新: 2026-07-19T17:51:16.970337+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64561.6
+- Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1, 4h RSI 80.9 >= 65=1, 4h RSI 74.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +27.86% | $60,504,656.97 |
-| ESPORTS/USDT:USDT | +11.72% | $64,613,798.49 |
-| B/USDT:USDT | +9.49% | $35,972,960.71 |
-| DEXE/USDT:USDT | +8.78% | $1,493,634.36 |
-| TLM/USDT:USDT | +7.15% | $12,133,065.06 |
+| BANK/USDT:USDT | +29.30% | $61,030,290.06 |
+| ESPORTS/USDT:USDT | +14.74% | $64,739,215.55 |
+| B/USDT:USDT | +10.60% | $36,204,767.23 |
+| DEXE/USDT:USDT | +9.15% | $1,498,291.69 |
+| TLM/USDT:USDT | +7.95% | $12,165,387.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +2.63% | +2.52% |
-| PI/USDT:USDT | below_1h_threshold | +2.55% | +2.44% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.05% | +1.95% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.02% | +1.92% |
-| SYN/USDT:USDT | below_1h_threshold | +1.70% | +1.59% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.30% | +4.23% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.80% | +2.72% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.14% | +2.06% |
+| SYN/USDT:USDT | below_1h_threshold | +1.61% | +1.53% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.44% | +1.36% |
 
 ## 7. 次に見るべき不足
 
