@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T11:36:24.578832+00:00
+- generated_at: 2026-07-19T11:41:23.824186+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9027**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T11:36:15.591635+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64530.2
-- Funnel: target 885 → liquid 126 → pre 50 → checked 50 → surge 3 → strict 0
+- 更新: 2026-07-19T11:41:16.147796+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64487.6
+- Funnel: target 885 → liquid 127 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.6 >= 65=1, 4h RSI 70.2 >= 65=1, 4h RSI 77.2 >= 65=1
+- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 70.2 >= 65=1, 4h RSI 77.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +120.74% | $28,900,128.72 |
-| ESPORTS/USDT:USDT | +70.81% | $51,117,800.91 |
-| TLM/USDT:USDT | +61.40% | $6,620,198.86 |
-| B/USDT:USDT | +51.66% | $40,700,117.21 |
-| TAG/USDT:USDT | +29.88% | $4,411,740.87 |
+| BANK/USDT:USDT | +122.98% | $29,238,253.68 |
+| ESPORTS/USDT:USDT | +75.80% | $51,336,875.34 |
+| TLM/USDT:USDT | +59.29% | $6,691,836.20 |
+| B/USDT:USDT | +52.86% | $40,867,207.81 |
+| TAG/USDT:USDT | +30.61% | $4,422,476.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PI/USDT:USDT | below_1h_threshold | +3.76% | +3.80% |
-| BILL/USDT:USDT | below_1h_threshold | +2.42% | +2.46% |
-| TAG/USDT:USDT | below_1h_threshold | +2.39% | +2.43% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.97% | +2.02% |
-| HOME/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
+| PI/USDT:USDT | below_1h_threshold | +3.17% | +3.28% |
+| TAG/USDT:USDT | below_1h_threshold | +2.88% | +2.99% |
+| HOME/USDT:USDT | below_1h_threshold | +1.96% | +2.07% |
+| BILL/USDT:USDT | below_1h_threshold | +1.19% | +1.30% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.15% | +1.26% |
 
 ## 7. 次に見るべき不足
 
