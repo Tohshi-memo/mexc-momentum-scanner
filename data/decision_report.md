@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T14:31:17.419197+00:00
+- generated_at: 2026-07-19T14:36:18.262835+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9045**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.68** / 初期 $100.00 (+0.68%)
-- 確定: 246件 (Win 83 / Loss 123 / Flat 40) / pending 5件 / skip 266件
+- 確定: 246件 (Win 83 / Loss 123 / Flat 40) / pending 6件 / skip 266件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000372 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BANK/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $100.68
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T14:31:10.972265+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64421.6
+- 更新: 2026-07-19T14:36:10.566498+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64494.4
 - Funnel: target 885 → liquid 126 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.6 >= 65=1, 4h RSI 81.0 >= 65=1, 4h RSI 77.8 >= 65=1
+- Strict後reject: 4h RSI 91.0 >= 65=1, 4h RSI 78.1 >= 65=1, 4h RSI 75.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +158.28% | $43,782,866.55 |
-| TLM/USDT:USDT | +75.98% | $8,819,776.38 |
-| B/USDT:USDT | +53.21% | $32,617,174.72 |
-| ESPORTS/USDT:USDT | +23.04% | $60,376,903.78 |
-| TAG/USDT:USDT | +21.94% | $4,886,839.00 |
+| BANK/USDT:USDT | +160.71% | $44,250,448.10 |
+| TLM/USDT:USDT | +82.47% | $8,987,242.68 |
+| B/USDT:USDT | +54.55% | $32,769,807.91 |
+| TAG/USDT:USDT | +23.09% | $4,901,328.51 |
+| ESPORTS/USDT:USDT | +19.31% | $60,489,989.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.20% | +4.25% |
-| ANSEM/USDT:USDT | below_1h_threshold | +4.09% | +4.14% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.35% | +3.40% |
-| TLM/USDT:USDT | below_1h_threshold | +2.42% | +2.47% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.40% | +2.45% |
+| PI/USDT:USDT | below_1h_threshold | +4.24% | +4.18% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.72% | +3.65% |
+| AKE/USDT:USDT | below_1h_threshold | +3.15% | +3.09% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.31% | +2.25% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.13% | +2.07% |
 
 ## 7. 次に見るべき不足
 
