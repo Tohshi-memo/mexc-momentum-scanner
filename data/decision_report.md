@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T17:36:10.980966+00:00
+- generated_at: 2026-07-19T17:41:19.320546+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9060**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.81** / 初期 $100.00 (+0.81%)
-- 確定: 260件 (Win 90 / Loss 130 / Flat 40) / pending 3件 / skip 268件
+- 確定: 260件 (Win 90 / Loss 130 / Flat 40) / pending 5件 / skip 268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000231 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TLM/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $100.81
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T17:36:04.422916+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=64673.6
-- Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-19T17:41:12.620993+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=64641.5
+- Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.5 >= 65=1, 4h RSI 79.9 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +20.52% | $59,370,312.18 |
-| ESPORTS/USDT:USDT | +9.12% | $64,429,588.10 |
-| DEXE/USDT:USDT | +7.88% | $1,460,992.75 |
-| TLM/USDT:USDT | +6.89% | $12,055,475.15 |
-| SYN/USDT:USDT | +6.75% | $3,589,169.34 |
+| BANK/USDT:USDT | +25.15% | $60,062,777.41 |
+| ESPORTS/USDT:USDT | +9.87% | $64,514,906.79 |
+| B/USDT:USDT | +9.12% | $35,734,269.63 |
+| DEXE/USDT:USDT | +8.44% | $1,473,537.55 |
+| TLM/USDT:USDT | +7.95% | $12,098,128.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.10% | +3.85% |
-| B/USDT:USDT | below_1h_threshold | +2.42% | +2.17% |
-| SYN/USDT:USDT | below_1h_threshold | +2.30% | +2.04% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.82% | +1.57% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.75% | +1.50% |
+| PI/USDT:USDT | below_1h_threshold | +3.12% | +2.92% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.28% | +2.07% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.16% | +1.96% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.88% | +1.67% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.62% | +1.41% |
 
 ## 7. 次に見るべき不足
 
