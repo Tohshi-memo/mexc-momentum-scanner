@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T08:51:30.550015+00:00
+- generated_at: 2026-07-19T08:56:25.033060+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9016**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T08:51:18.480194+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64702.3
-- Funnel: target 885 → liquid 123 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-07-19T08:56:15.543424+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64661.6
+- Funnel: target 885 → liquid 124 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1, 4h RSI 73.6 >= 65=1
+- Strict後reject: 4h RSI 82.9 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +126.73% | $44,094,066.87 |
-| BANK/USDT:USDT | +68.08% | $19,513,483.45 |
-| TLM/USDT:USDT | +49.92% | $5,569,492.51 |
-| B/USDT:USDT | +37.52% | $40,578,416.77 |
-| BULLA/USDT:USDT | +25.61% | $1,308,103.42 |
+| ESPORTS/USDT:USDT | +125.39% | $44,219,194.31 |
+| BANK/USDT:USDT | +67.52% | $19,665,934.44 |
+| TLM/USDT:USDT | +50.75% | $5,595,025.88 |
+| B/USDT:USDT | +35.90% | $40,665,612.23 |
+| BULLA/USDT:USDT | +25.04% | $1,312,905.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.94% | +3.93% |
-| TAG/USDT:USDT | below_1h_threshold | +3.60% | +3.58% |
-| PI/USDT:USDT | below_1h_threshold | +3.31% | +3.29% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.60% | +2.58% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.48% | +2.46% |
+| TAG/USDT:USDT | below_1h_threshold | +4.04% | +4.09% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.42% | +3.47% |
+| PI/USDT:USDT | below_1h_threshold | +3.22% | +3.27% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.13% | +3.18% |
+| LYN/USDT:USDT | below_1h_threshold | +2.56% | +2.61% |
 
 ## 7. 次に見るべき不足
 
