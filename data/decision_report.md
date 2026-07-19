@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T20:06:11.732532+00:00
+- generated_at: 2026-07-19T20:11:11.469852+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9067**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T20:06:05.095691+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64470.0
+- 更新: 2026-07-19T20:11:04.963440+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64492.9
 - Funnel: target 885 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +39.83% | $68,762,452.55 |
-| B/USDT:USDT | +15.04% | $38,190,972.05 |
-| ESPORTS/USDT:USDT | +8.97% | $58,341,528.70 |
-| DEXE/USDT:USDT | +7.98% | $1,511,283.61 |
-| TLM/USDT:USDT | +7.53% | $12,895,826.99 |
+| BANK/USDT:USDT | +39.69% | $69,173,838.76 |
+| B/USDT:USDT | +14.58% | $38,292,410.17 |
+| ESPORTS/USDT:USDT | +9.97% | $58,371,169.38 |
+| TLM/USDT:USDT | +8.42% | $12,903,689.37 |
+| DEXE/USDT:USDT | +8.28% | $1,513,072.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.31% | +2.26% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.19% | +1.14% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.91% |
-| G/USDT:USDT | below_1h_threshold | +0.84% | +0.79% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.06% | +2.97% |
+| US/USDT:USDT | below_1h_threshold | +2.85% | +2.76% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +1.39% | +1.31% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.12% | +1.03% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.88% |
 
 ## 7. 次に見るべき不足
 
