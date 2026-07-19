@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T01:51:16.271637+00:00
+- generated_at: 2026-07-19T01:56:11.153617+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8993**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$110.69** / 初期 $100.00 (+10.69%)
-- 確定トレード: 116件 (TP 43 / SL 69 / EXP 4)
-- 最新: B/USDT:USDT SL_HIT PnL -3.30% 残高後 $110.69
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$110.80** / 初期 $100.00 (+10.80%)
+- 確定トレード: 117件 (TP 43 / SL 69 / EXP 5)
+- 最新: SKYAI/USDT:USDT EXPIRED PnL +0.79% 残高後 $110.80
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T01:51:09.726849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64750.1
-- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-19T01:56:04.530484+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64752.9
+- Funnel: target 885 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
+- Strict後reject: 4h RSI 70.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +113.79% | $32,685,517.37 |
-| BANK/USDT:USDT | +41.85% | $18,872,611.44 |
-| TLM/USDT:USDT | +20.99% | $2,977,559.08 |
-| B/USDT:USDT | +20.84% | $32,927,852.05 |
-| AKE/USDT:USDT | +15.57% | $84,199,227.14 |
+| ESPORTS/USDT:USDT | +112.17% | $32,835,623.19 |
+| BANK/USDT:USDT | +39.31% | $18,910,314.09 |
+| B/USDT:USDT | +20.91% | $33,052,332.03 |
+| TLM/USDT:USDT | +20.84% | $2,983,776.92 |
+| AKE/USDT:USDT | +16.63% | $84,409,385.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRADOOR/USDT:USDT | below_1h_threshold | +4.77% | +4.78% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.36% | +3.37% |
-| BILL/USDT:USDT | below_1h_threshold | +2.28% | +2.29% |
-| VVV/USDT:USDT | below_1h_threshold | +1.61% | +1.62% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +4.34% | +4.34% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.59% | +3.59% |
+| BILL/USDT:USDT | below_1h_threshold | +3.17% | +3.18% |
+| BSB/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.24% | +1.25% |
 
 ## 7. 次に見るべき不足
 
