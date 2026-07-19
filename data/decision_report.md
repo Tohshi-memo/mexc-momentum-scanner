@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T23:51:10.235846+00:00
+- generated_at: 2026-07-19T23:56:14.802948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9069**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T23:51:03.708625+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64629.9
+- 更新: 2026-07-19T23:56:08.217048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64655.9
 - Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +35.05% | $81,289,208.71 |
-| ACE/USDT:USDT | +30.70% | $1,646,867.68 |
-| PUMPFUN/USDT:USDT | +18.79% | $12,825,973.19 |
-| B/USDT:USDT | +14.95% | $39,442,371.98 |
-| PROM/USDT:USDT | +12.53% | $1,964,722.94 |
+| BANK/USDT:USDT | +38.41% | $81,526,877.30 |
+| ACE/USDT:USDT | +27.51% | $1,683,688.04 |
+| PUMPFUN/USDT:USDT | +19.68% | $13,183,489.23 |
+| B/USDT:USDT | +16.38% | $39,532,840.03 |
+| PROM/USDT:USDT | +12.04% | $1,966,143.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.27% | +4.29% |
-| AKE/USDT:USDT | below_1h_threshold | +2.91% | +2.93% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.91% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.63% | +1.65% |
-| PROM/USDT:USDT | below_1h_threshold | +1.59% | +1.61% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.27% | +4.25% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.04% |
+| BANK/USDT:USDT | below_1h_threshold | +2.70% | +2.68% |
+| AKE/USDT:USDT | below_1h_threshold | +2.69% | +2.67% |
+| B/USDT:USDT | below_1h_threshold | +2.44% | +2.42% |
 
 ## 7. 次に見るべき不足
 
