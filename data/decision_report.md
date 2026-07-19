@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T04:46:12.255537+00:00
+- generated_at: 2026-07-19T04:51:21.955592+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8998**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$99.55** / 初期 $100.00 (-0.45%)
-- 確定: 202件 (Win 65 / Loss 109 / Flat 28) / pending 3件 / skip 264件
+- 確定: 202件 (Win 65 / Loss 109 / Flat 28) / pending 5件 / skip 264件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000647 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $99.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T04:46:05.725555+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64734.8
-- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
+- 更新: 2026-07-19T04:51:14.055088+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64733.8
+- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 72.4 >= 65=1, 4h RSI 65.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +126.30% | $37,653,985.43 |
-| BANK/USDT:USDT | +39.29% | $18,769,965.19 |
-| B/USDT:USDT | +27.06% | $35,671,550.75 |
-| TLM/USDT:USDT | +15.78% | $3,227,331.67 |
-| BULLA/USDT:USDT | +11.22% | $1,072,775.69 |
+| ESPORTS/USDT:USDT | +129.22% | $37,836,369.86 |
+| BANK/USDT:USDT | +39.16% | $18,786,555.06 |
+| B/USDT:USDT | +27.42% | $35,755,361.58 |
+| TLM/USDT:USDT | +15.33% | $3,230,370.69 |
+| TAG/USDT:USDT | +13.27% | $1,178,745.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +4.33% | +4.26% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.84% | +3.77% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.68% | +3.61% |
-| B/USDT:USDT | below_1h_threshold | +3.57% | +3.50% |
-| HOME/USDT:USDT | below_1h_threshold | +3.39% | +3.31% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.12% | +4.05% |
+| B/USDT:USDT | below_1h_threshold | +3.63% | +3.56% |
+| HOME/USDT:USDT | below_1h_threshold | +2.71% | +2.64% |
+| DASH/USDT:USDT | below_1h_threshold | +0.87% | +0.80% |
+| FWDISTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.76% |
 
 ## 7. 次に見るべき不足
 
