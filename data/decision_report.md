@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T00:56:22.997133+00:00
+- generated_at: 2026-07-19T01:01:07.677482+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **8989**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T00:56:13.798861+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64752.6
-- Funnel: target 885 → liquid 126 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1, 4h RSI 66.1 >= 65=1, 4h RSI 83.3 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-19T01:01:01.253152+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64765.5
+- Funnel: target 885 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +77.86% | $30,165,004.61 |
-| BANK/USDT:USDT | +38.57% | $18,983,149.63 |
-| TLM/USDT:USDT | +26.66% | $2,829,124.35 |
-| AKE/USDT:USDT | +23.25% | $83,462,350.82 |
-| B/USDT:USDT | +17.95% | $32,344,919.28 |
+| ESPORTS/USDT:USDT | +77.00% | $29,319,972.61 |
+| BANK/USDT:USDT | +41.16% | $18,447,035.05 |
+| TLM/USDT:USDT | +24.54% | $2,802,285.70 |
+| AKE/USDT:USDT | +20.37% | $82,675,170.96 |
+| B/USDT:USDT | +19.50% | $32,461,129.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +3.72% | +3.80% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.14% | +3.22% |
-| BILL/USDT:USDT | below_1h_threshold | +2.71% | +2.79% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.25% | +2.34% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.74% | +1.83% |
+| MYX/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
+| BILL/USDT:USDT | below_1h_threshold | +0.66% | +0.64% |
+| BANK/USDT:USDT | below_1h_threshold | +0.44% | +0.43% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.19% | +0.18% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.17% | +0.16% |
 
 ## 7. 次に見るべき不足
 
