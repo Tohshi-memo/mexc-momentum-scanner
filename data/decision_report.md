@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T11:26:16.511954+00:00
+- generated_at: 2026-07-19T11:31:24.229312+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9026**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T11:26:09.331641+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64543.1
-- Funnel: target 885 → liquid 125 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-07-19T11:31:16.888926+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64518.9
+- Funnel: target 885 → liquid 126 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.3 >= 65=1, 4h RSI 67.8 >= 65=1
+- Strict後reject: 4h RSI 88.7 >= 65=1, 4h RSI 69.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +114.41% | $28,071,526.07 |
-| ESPORTS/USDT:USDT | +72.01% | $50,705,966.29 |
-| TLM/USDT:USDT | +57.32% | $6,453,997.67 |
-| B/USDT:USDT | +48.12% | $40,460,512.38 |
-| TAG/USDT:USDT | +29.15% | $4,385,094.48 |
+| BANK/USDT:USDT | +122.60% | $28,421,377.56 |
+| ESPORTS/USDT:USDT | +71.53% | $50,908,531.59 |
+| TLM/USDT:USDT | +58.30% | $6,539,035.11 |
+| B/USDT:USDT | +51.02% | $40,613,780.93 |
+| TAG/USDT:USDT | +29.36% | $4,397,763.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +2.45% | +2.47% |
-| TAG/USDT:USDT | below_1h_threshold | +1.73% | +1.75% |
-| HOME/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
-| ZBT/USDT:USDT | below_1h_threshold | +1.14% | +1.16% |
-| BASED/USDT:USDT | below_1h_threshold | +1.00% | +1.02% |
+| B/USDT:USDT | below_1h_threshold | +4.55% | +4.61% |
+| BILL/USDT:USDT | below_1h_threshold | +1.90% | +1.96% |
+| TAG/USDT:USDT | below_1h_threshold | +1.89% | +1.96% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.34% | +1.41% |
+| BASED/USDT:USDT | below_1h_threshold | +1.30% | +1.36% |
 
 ## 7. 次に見るべき不足
 
