@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-19T20:36:08.356587+00:00
+- generated_at: 2026-07-19T20:41:19.486710+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9068**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.87** / 初期 $100.00 (+0.87%)
-- 確定: 268件 (Win 93 / Loss 131 / Flat 44) / pending 0件 / skip 268件
+- 確定: 268件 (Win 93 / Loss 131 / Flat 44) / pending 1件 / skip 268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000233 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VANRY/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $100.87
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-19T20:36:03.230624+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64491.4
-- Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-19T20:41:12.795994+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64451.0
+- Funnel: target 885 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.3 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +42.16% | $71,110,043.25 |
-| PROM/USDT:USDT | +18.59% | $1,088,373.14 |
-| B/USDT:USDT | +13.47% | $38,827,610.59 |
-| PUMPFUN/USDT:USDT | +9.30% | $4,873,808.48 |
-| DEXE/USDT:USDT | +7.67% | $1,533,570.48 |
+| BANK/USDT:USDT | +42.29% | $71,387,100.21 |
+| PROM/USDT:USDT | +20.84% | $1,138,803.74 |
+| B/USDT:USDT | +12.91% | $38,875,112.45 |
+| PUMPFUN/USDT:USDT | +9.48% | $5,030,007.98 |
+| DEXE/USDT:USDT | +8.01% | $1,535,232.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +3.69% | +3.61% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.04% | +2.95% |
-| US/USDT:USDT | below_1h_threshold | +2.97% | +2.88% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.81% | +2.73% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.13% | +2.04% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.26% | +3.24% |
+| US/USDT:USDT | below_1h_threshold | +3.04% | +3.02% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.77% | +2.75% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.77% | +1.75% |
+| BASED/USDT:USDT | below_1h_threshold | +1.51% | +1.49% |
 
 ## 7. 次に見るべき不足
 
