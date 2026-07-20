@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T01:21:19.768111+00:00
+- generated_at: 2026-07-20T01:26:21.253935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9073**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T01:21:14.401695+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=64664.8
+- 更新: 2026-07-20T01:26:14.568903+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=64852.4
 - Funnel: target 885 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +42.83% | $85,812,100.76 |
-| ACE/USDT:USDT | +38.70% | $2,452,445.93 |
-| PUMPFUN/USDT:USDT | +21.71% | $15,858,583.67 |
-| PROM/USDT:USDT | +16.61% | $2,030,374.53 |
-| ANSEM/USDT:USDT | +11.11% | $1,633,163.49 |
+| ACE/USDT:USDT | +43.51% | $2,489,102.48 |
+| BANK/USDT:USDT | +43.22% | $85,920,047.19 |
+| PUMPFUN/USDT:USDT | +21.18% | $16,071,050.32 |
+| PROM/USDT:USDT | +17.18% | $2,035,776.43 |
+| ANSEM/USDT:USDT | +13.49% | $1,665,091.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.51% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.41% | +2.19% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.02% |
-| DRAM/USDT:USDT | below_1h_threshold | +2.02% | +1.81% |
-| PROM/USDT:USDT | below_1h_threshold | +1.91% | +1.69% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.21% |
+| ACE/USDT:USDT | below_1h_threshold | +4.55% | +4.05% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.66% | +3.15% |
+| PROM/USDT:USDT | below_1h_threshold | +2.40% | +1.89% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +1.73% |
 
 ## 7. 次に見るべき不足
 
