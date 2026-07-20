@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T18:36:16.038409+00:00
+- generated_at: 2026-07-20T18:41:14.899614+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9124**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T18:36:09.461688+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=65488.1
+- 更新: 2026-07-20T18:41:08.303063+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=65440.0
 - Funnel: target 885 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +41.36% | $1,020,779.45 |
-| ACE/USDT:USDT | +8.12% | $32,536,516.87 |
-| ANSEM/USDT:USDT | +5.53% | $2,401,242.23 |
-| ON/USDT:USDT | +5.10% | $1,462,924.05 |
-| ESPORTS/USDT:USDT | +5.02% | $9,301,494.35 |
+| JIMOTHY/USDT:USDT | +41.20% | $1,050,534.21 |
+| ACE/USDT:USDT | +7.59% | $32,592,189.83 |
+| ANSEM/USDT:USDT | +7.13% | $2,419,760.72 |
+| ON/USDT:USDT | +6.41% | $1,466,559.62 |
+| UB/USDT:USDT | +5.15% | $1,253,323.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.28% | +4.39% |
-| ACE/USDT:USDT | below_1h_threshold | +4.02% | +4.13% |
-| AKE/USDT:USDT | below_1h_threshold | +3.82% | +3.93% |
-| AXONSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.42% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.15% | +2.26% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.45% | +4.63% |
+| ACE/USDT:USDT | below_1h_threshold | +3.61% | +3.80% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.65% | +2.84% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.59% | +2.78% |
+| AXONSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.50% |
 
 ## 7. 次に見るべき不足
 
