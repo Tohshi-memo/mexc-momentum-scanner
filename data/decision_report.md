@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T19:46:14.539364+00:00
+- generated_at: 2026-07-20T19:51:11.659265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9126**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T19:46:07.817244+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=65105.0
-- Funnel: target 885 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-20T19:51:07.145755+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=65085.6
+- Funnel: target 885 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +52.23% | $1,318,301.67 |
-| ACE/USDT:USDT | +16.84% | $34,028,063.66 |
-| LDO/USDT:USDT | +6.07% | $3,525,596.30 |
-| ESPORTS/USDT:USDT | +4.76% | $8,728,349.74 |
-| ON/USDT:USDT | +4.65% | $1,486,651.26 |
+| JIMOTHY/USDT:USDT | +47.68% | $1,330,081.09 |
+| ACE/USDT:USDT | +13.00% | $34,191,813.05 |
+| LDO/USDT:USDT | +5.73% | $3,798,861.04 |
+| ESPORTS/USDT:USDT | +5.48% | $8,780,268.22 |
+| UB/USDT:USDT | +4.75% | $1,207,423.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.25% | +3.42% |
-| LAB/USDT:USDT | below_1h_threshold | +1.92% | +2.09% |
-| RE/USDT:USDT | below_1h_threshold | +1.25% | +1.42% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.17% | +1.34% |
-| LDO/USDT:USDT | below_1h_threshold | +1.14% | +1.31% |
+| AKE/USDT:USDT | below_1h_threshold | +3.56% | +3.76% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.88% | +3.08% |
+| ACE/USDT:USDT | below_1h_threshold | +2.66% | +2.86% |
+| LAB/USDT:USDT | below_1h_threshold | +1.59% | +1.79% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.47% | +1.67% |
 
 ## 7. 次に見るべき不足
 
