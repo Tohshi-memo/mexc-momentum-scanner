@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T05:41:24.578814+00:00
+- generated_at: 2026-07-20T05:46:24.304595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9084**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T05:41:13.136813+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=64182.2
+- 更新: 2026-07-20T05:46:12.886681+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=64163.3
 - Funnel: target 885 → liquid 135 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +55.03% | $99,150,468.01 |
-| ACE/USDT:USDT | +39.26% | $4,571,086.41 |
-| PUMPFUN/USDT:USDT | +17.42% | $18,708,101.43 |
-| PROM/USDT:USDT | +13.87% | $2,423,988.74 |
-| VELVET/USDT:USDT | +13.04% | $5,756,024.76 |
+| BANK/USDT:USDT | +55.17% | $99,413,571.93 |
+| ACE/USDT:USDT | +40.96% | $4,622,975.60 |
+| PUMPFUN/USDT:USDT | +17.36% | $18,804,606.70 |
+| VELVET/USDT:USDT | +13.49% | $5,834,153.20 |
+| PROM/USDT:USDT | +12.46% | $2,432,953.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.65% | +2.16% |
-| XPL/USDT:USDT | below_1h_threshold | +1.07% | +1.58% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.51% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.43% |
-| PI/USDT:USDT | below_1h_threshold | +0.70% | +1.21% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.16% | +2.70% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.00% | +2.54% |
+| ACE/USDT:USDT | below_1h_threshold | +1.37% | +1.91% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.54% |
+| XPL/USDT:USDT | below_1h_threshold | +0.99% | +1.53% |
 
 ## 7. 次に見るべき不足
 
