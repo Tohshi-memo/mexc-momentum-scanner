@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T19:41:17.467927+00:00
+- generated_at: 2026-07-20T19:46:14.539364+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9126**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T19:41:10.770692+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=65118.5
+- 更新: 2026-07-20T19:46:07.817244+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=65105.0
 - Funnel: target 885 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.5 >= 65=1
+- Strict後reject: 4h RSI 75.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +51.35% | $1,293,887.86 |
-| ACE/USDT:USDT | +17.32% | $33,964,396.49 |
-| LDO/USDT:USDT | +5.82% | $3,401,540.75 |
-| ON/USDT:USDT | +4.94% | $1,477,554.76 |
-| UB/USDT:USDT | +4.61% | $1,204,831.71 |
+| JIMOTHY/USDT:USDT | +52.23% | $1,318,301.67 |
+| ACE/USDT:USDT | +16.84% | $34,028,063.66 |
+| LDO/USDT:USDT | +6.07% | $3,525,596.30 |
+| ESPORTS/USDT:USDT | +4.76% | $8,728,349.74 |
+| ON/USDT:USDT | +4.65% | $1,486,651.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.46% | +4.60% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.58% | +1.73% |
-| LAB/USDT:USDT | below_1h_threshold | +1.52% | +1.67% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.51% | +1.66% |
-| RE/USDT:USDT | below_1h_threshold | +1.51% | +1.66% |
+| AKE/USDT:USDT | below_1h_threshold | +3.25% | +3.42% |
+| LAB/USDT:USDT | below_1h_threshold | +1.92% | +2.09% |
+| RE/USDT:USDT | below_1h_threshold | +1.25% | +1.42% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.17% | +1.34% |
+| LDO/USDT:USDT | below_1h_threshold | +1.14% | +1.31% |
 
 ## 7. 次に見るべき不足
 
