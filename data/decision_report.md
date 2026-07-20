@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T04:26:09.845210+00:00
+- generated_at: 2026-07-20T04:31:07.269148+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9082**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T04:26:03.379425+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=64699.6
+- 更新: 2026-07-20T04:31:02.188190+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64728.2
 - Funnel: target 885 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +59.95% | $93,202,141.66 |
-| ACE/USDT:USDT | +43.71% | $4,066,461.47 |
-| PROM/USDT:USDT | +17.74% | $2,290,349.98 |
-| PUMPFUN/USDT:USDT | +17.06% | $18,108,168.63 |
-| DEXE/USDT:USDT | +9.00% | $1,569,704.50 |
+| BANK/USDT:USDT | +63.83% | $93,894,413.26 |
+| ACE/USDT:USDT | +44.04% | $4,107,214.67 |
+| PROM/USDT:USDT | +17.88% | $2,301,695.53 |
+| PUMPFUN/USDT:USDT | +17.18% | $18,183,614.53 |
+| DEXE/USDT:USDT | +9.12% | $1,575,131.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +2.90% | +3.11% |
-| BANK/USDT:USDT | below_1h_threshold | +2.42% | +2.63% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.04% | +1.26% |
-| PI/USDT:USDT | below_1h_threshold | +1.00% | +1.21% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.90% | +1.11% |
+| BANK/USDT:USDT | below_1h_threshold | +4.78% | +4.95% |
+| PROM/USDT:USDT | below_1h_threshold | +3.14% | +3.31% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.29% | +2.46% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.16% | +1.34% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.90% | +1.07% |
 
 ## 7. 次に見るべき不足
 
