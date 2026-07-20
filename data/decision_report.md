@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T02:01:18.708172+00:00
+- generated_at: 2026-07-20T02:06:10.794819+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9074**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T02:01:12.254071+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64632.4
+- 更新: 2026-07-20T02:06:04.280143+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=64893.9
 - Funnel: target 885 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +49.30% | $2,810,540.06 |
-| BANK/USDT:USDT | +38.30% | $86,436,471.75 |
-| PUMPFUN/USDT:USDT | +21.36% | $16,671,610.80 |
-| PROM/USDT:USDT | +17.53% | $2,068,692.53 |
-| ANSEM/USDT:USDT | +17.46% | $1,773,484.52 |
+| ACE/USDT:USDT | +57.37% | $2,850,806.64 |
+| BANK/USDT:USDT | +39.84% | $86,519,606.44 |
+| PUMPFUN/USDT:USDT | +21.89% | $16,793,402.03 |
+| ANSEM/USDT:USDT | +18.41% | $1,794,409.67 |
+| PROM/USDT:USDT | +17.39% | $2,070,144.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +0.63% | +0.58% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.37% | +0.32% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.36% | +0.30% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.30% | +0.24% |
-| TIA/USDT:USDT | below_1h_threshold | +0.28% | +0.22% |
+| ACE/USDT:USDT | below_1h_threshold | +4.81% | +4.34% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.43% | +2.97% |
+| HOME/USDT:USDT | below_1h_threshold | +1.54% | +1.08% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.22% | +0.76% |
+| AVAX/USDT:USDT | below_1h_threshold | +1.09% | +0.63% |
 
 ## 7. 次に見るべき不足
 
