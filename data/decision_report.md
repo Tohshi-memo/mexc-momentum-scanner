@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T00:21:17.798440+00:00
+- generated_at: 2026-07-20T00:31:20.069702+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9070**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.90** / 初期 $100.00 (+0.90%)
-- 確定: 270件 (Win 94 / Loss 131 / Flat 45) / pending 2件 / skip 268件
+- 確定: 270件 (Win 94 / Loss 131 / Flat 45) / pending 3件 / skip 268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000243 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.04% 残高後 $100.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T00:21:11.316482+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=64942.9
-- Funnel: target 885 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-20T00:31:13.369428+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=64821.0
+- Funnel: target 885 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +44.71% | $82,988,830.66 |
-| ACE/USDT:USDT | +32.24% | $1,928,374.35 |
-| PUMPFUN/USDT:USDT | +22.49% | $14,739,932.17 |
-| PROM/USDT:USDT | +13.94% | $1,996,602.23 |
-| DEXE/USDT:USDT | +9.43% | $1,558,875.08 |
+| BANK/USDT:USDT | +43.37% | $83,367,095.06 |
+| ACE/USDT:USDT | +33.95% | $1,990,064.28 |
+| PUMPFUN/USDT:USDT | +21.59% | $14,916,981.68 |
+| PROM/USDT:USDT | +15.84% | $2,002,378.46 |
+| B/USDT:USDT | +9.76% | $39,984,805.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_relative_strength | +5.07% | +4.69% |
-| JTO/USDT:USDT | below_1h_threshold | +3.90% | +3.51% |
-| AKE/USDT:USDT | below_1h_threshold | +3.31% | +2.93% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.80% | +2.42% |
-| BANK/USDT:USDT | below_1h_threshold | +2.80% | +2.42% |
+| JTO/USDT:USDT | below_1h_threshold | +4.13% | +3.93% |
+| AKE/USDT:USDT | below_1h_threshold | +3.57% | +3.37% |
+| PROM/USDT:USDT | below_1h_threshold | +3.13% | +2.93% |
+| JUP/USDT:USDT | below_1h_threshold | +2.35% | +2.15% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.05% | +1.86% |
 
 ## 7. 次に見るべき不足
 
