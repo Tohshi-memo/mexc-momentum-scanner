@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T12:16:15.088249+00:00
+- generated_at: 2026-07-20T12:21:10.885717+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9107**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T12:16:08.536733+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=64745.0
-- Funnel: target 884 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-20T12:21:05.614216+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=64649.7
+- Funnel: target 884 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.5 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +99.23% | $22,136,334.46 |
-| BANK/USDT:USDT | +78.82% | $121,310,741.23 |
-| PROM/USDT:USDT | +27.11% | $3,722,097.67 |
-| EVAA/USDT:USDT | +25.29% | $7,194,380.46 |
-| PUMPFUN/USDT:USDT | +16.82% | $34,870,031.18 |
+| ACE/USDT:USDT | +99.16% | $22,416,823.07 |
+| BANK/USDT:USDT | +76.64% | $121,586,532.19 |
+| PROM/USDT:USDT | +31.69% | $3,774,253.86 |
+| EVAA/USDT:USDT | +24.99% | $7,255,206.36 |
+| PUMPFUN/USDT:USDT | +16.58% | $34,901,706.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +3.26% | +3.61% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.48% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.21% | +2.56% |
-| B/USDT:USDT | below_1h_threshold | +1.58% | +1.93% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.87% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.63% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.74% | +3.23% |
+| B/USDT:USDT | below_1h_threshold | +1.97% | +2.47% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +2.01% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.95% |
 
 ## 7. 次に見るべき不足
 
