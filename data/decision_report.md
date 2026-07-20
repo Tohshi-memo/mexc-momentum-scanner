@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T09:26:11.813375+00:00
+- generated_at: 2026-07-20T09:31:10.125131+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9103**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T09:26:05.232393+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=64149.9
+- 更新: 2026-07-20T09:31:03.559386+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=64155.5
 - Funnel: target 884 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +110.73% | $14,656,939.95 |
-| BANK/USDT:USDT | +59.40% | $111,756,967.48 |
-| EVAA/USDT:USDT | +33.11% | $5,749,132.12 |
-| PROM/USDT:USDT | +22.04% | $3,162,781.11 |
-| PUMPFUN/USDT:USDT | +19.03% | $26,506,015.41 |
+| ACE/USDT:USDT | +112.88% | $14,788,207.08 |
+| BANK/USDT:USDT | +62.55% | $112,597,010.37 |
+| EVAA/USDT:USDT | +31.92% | $5,775,424.41 |
+| PROM/USDT:USDT | +22.32% | $3,167,441.06 |
+| PUMPFUN/USDT:USDT | +18.91% | $26,512,678.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.77% | +3.58% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +2.86% | +2.67% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.77% | +2.58% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.64% | +2.45% |
-| SONYSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.20% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.98% | +4.79% |
+| SYN/USDT:USDT | below_1h_threshold | +2.58% | +2.39% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +2.27% | +2.07% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.06% | +1.87% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.71% | +1.51% |
 
 ## 7. 次に見るべき不足
 
