@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T23:01:15.605427+00:00
+- generated_at: 2026-07-20T23:06:17.652110+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9132**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T23:01:08.914032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65112.9
-- Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-20T23:06:11.088493+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65147.5
+- Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +50.27% | $2,467,937.98 |
-| HEMI/USDT:USDT | +22.97% | $2,610,787.26 |
-| BLESS/USDT:USDT | +10.08% | $1,290,583.98 |
-| ON/USDT:USDT | +7.12% | $1,457,219.50 |
-| SOXS/USDT:USDT | +7.12% | $1,095,608.17 |
+| JIMOTHY/USDT:USDT | +44.17% | $2,488,634.02 |
+| HEMI/USDT:USDT | +23.51% | $2,625,221.13 |
+| BLESS/USDT:USDT | +8.96% | $1,326,453.18 |
+| BULLA/USDT:USDT | +8.27% | $1,018,677.58 |
+| ON/USDT:USDT | +7.30% | $1,465,876.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
-| HEMI/USDT:USDT | below_1h_threshold | +0.42% | +0.43% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.19% | +0.20% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.08% | +1.03% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.04% | +1.00% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.89% | +0.84% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.60% | +0.55% |
+| WLD/USDT:USDT | below_1h_threshold | +0.56% | +0.52% |
 
 ## 7. 次に見るべき不足
 
