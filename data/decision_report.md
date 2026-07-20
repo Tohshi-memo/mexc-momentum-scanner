@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T11:16:12.811396+00:00
+- generated_at: 2026-07-20T11:21:13.339556+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9106**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T11:16:06.234524+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64354.4
+- 更新: 2026-07-20T11:21:06.795518+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64315.7
 - Funnel: target 884 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +112.02% | $18,817,415.05 |
-| BANK/USDT:USDT | +84.67% | $122,658,046.01 |
-| EVAA/USDT:USDT | +30.83% | $6,587,617.37 |
-| PROM/USDT:USDT | +23.94% | $3,568,267.98 |
-| PUMPFUN/USDT:USDT | +14.61% | $32,772,465.25 |
+| ACE/USDT:USDT | +119.83% | $19,037,715.30 |
+| BANK/USDT:USDT | +81.97% | $123,075,545.98 |
+| EVAA/USDT:USDT | +31.25% | $6,613,577.53 |
+| PROM/USDT:USDT | +25.84% | $3,583,994.82 |
+| PUMPFUN/USDT:USDT | +14.26% | $33,522,096.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +1.29% | +1.18% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.02% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.83% | +0.72% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.65% | +0.53% |
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.52% |
+| ACE/USDT:USDT | below_1h_threshold | +3.73% | +3.68% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.08% |
+| INJ/USDT:USDT | below_1h_threshold | +0.86% | +0.81% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.85% | +0.80% |
 
 ## 7. 次に見るべき不足
 
