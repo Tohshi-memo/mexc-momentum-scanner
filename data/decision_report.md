@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T10:06:15.171266+00:00
+- generated_at: 2026-07-20T10:11:08.435732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9105**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T10:06:07.350111+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64196.8
-- Funnel: target 884 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-20T10:11:01.841019+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64215.0
+- Funnel: target 884 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +114.92% | $16,002,554.16 |
-| BANK/USDT:USDT | +71.21% | $115,639,411.40 |
-| EVAA/USDT:USDT | +33.34% | $5,933,788.86 |
-| PROM/USDT:USDT | +25.84% | $3,234,767.18 |
-| PUMPFUN/USDT:USDT | +18.49% | $27,181,071.92 |
+| ACE/USDT:USDT | +108.03% | $16,182,017.37 |
+| BANK/USDT:USDT | +70.93% | $116,170,396.59 |
+| EVAA/USDT:USDT | +32.68% | $5,964,629.11 |
+| PROM/USDT:USDT | +25.07% | $3,247,568.95 |
+| PUMPFUN/USDT:USDT | +18.13% | $27,239,630.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +2.00% | +1.96% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.92% | +1.89% |
-| ACE/USDT:USDT | below_1h_threshold | +1.85% | +1.82% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.53% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.92% | +1.86% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.58% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.50% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.35% |
+| PI/USDT:USDT | below_1h_threshold | +1.39% | +1.33% |
 
 ## 7. 次に見るべき不足
 
