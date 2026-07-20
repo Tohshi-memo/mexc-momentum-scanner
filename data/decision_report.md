@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T21:01:12.946018+00:00
+- generated_at: 2026-07-20T21:06:17.505476+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9130**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T21:01:05.424171+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=65297.2
-- Funnel: target 885 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-20T21:06:10.958743+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=65316.8
+- Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +82.81% | $1,979,283.92 |
-| HEMI/USDT:USDT | +40.85% | $1,910,493.86 |
-| ON/USDT:USDT | +8.49% | $1,423,327.97 |
-| ESPORTS/USDT:USDT | +6.35% | $7,797,606.24 |
-| MONAD/USDT:USDT | +6.07% | $1,075,307.46 |
+| JIMOTHY/USDT:USDT | +84.25% | $2,023,225.39 |
+| HEMI/USDT:USDT | +37.03% | $1,953,508.05 |
+| ON/USDT:USDT | +8.70% | $1,438,704.55 |
+| MONAD/USDT:USDT | +6.39% | $1,078,355.21 |
+| SOXS/USDT:USDT | +6.10% | $1,087,639.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +1.34% | +1.41% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.57% | +0.64% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.39% | +0.46% |
-| ON/USDT:USDT | below_1h_threshold | +0.32% | +0.39% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.87% | +0.92% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
+| JTO/USDT:USDT | below_1h_threshold | +0.60% | +0.64% |
+| BCH/USDT:USDT | below_1h_threshold | +0.52% | +0.56% |
+| AKE/USDT:USDT | below_1h_threshold | +0.46% | +0.50% |
 
 ## 7. 次に見るべき不足
 
