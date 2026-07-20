@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T20:51:19.635329+00:00
+- generated_at: 2026-07-20T20:56:16.305980+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9129**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T20:51:12.860054+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=65314.0
+- 更新: 2026-07-20T20:56:09.731669+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=65359.1
 - Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.8 >= 65=1
+- Strict後reject: 4h RSI 94.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +89.62% | $1,885,495.47 |
-| HEMI/USDT:USDT | +35.39% | $1,816,287.66 |
-| ON/USDT:USDT | +6.42% | $1,471,572.56 |
-| SOXS/USDT:USDT | +6.26% | $1,076,525.92 |
-| ESPORTS/USDT:USDT | +5.99% | $8,285,893.52 |
+| JIMOTHY/USDT:USDT | +87.02% | $1,945,116.61 |
+| HEMI/USDT:USDT | +39.85% | $1,871,151.27 |
+| ON/USDT:USDT | +7.44% | $1,473,687.62 |
+| ESPORTS/USDT:USDT | +6.56% | $8,293,522.92 |
+| SOXS/USDT:USDT | +6.22% | $1,103,254.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.23% | +1.93% |
-| US/USDT:USDT | below_1h_threshold | +2.21% | +1.90% |
-| ON/USDT:USDT | below_1h_threshold | +2.03% | +1.72% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.78% | +1.48% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.35% | +1.05% |
+| ON/USDT:USDT | below_1h_threshold | +2.27% | +1.89% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.23% | +1.86% |
+| US/USDT:USDT | below_1h_threshold | +1.62% | +1.24% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.56% | +1.19% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.46% | +1.09% |
 
 ## 7. 次に見るべき不足
 
