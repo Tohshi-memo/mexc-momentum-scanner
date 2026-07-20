@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T01:26:21.253935+00:00
+- generated_at: 2026-07-20T01:31:23.126367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9073**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.90** / 初期 $100.00 (+0.90%)
-- 確定: 272件 (Win 94 / Loss 131 / Flat 47) / pending 2件 / skip 268件
+- 確定: 272件 (Win 94 / Loss 131 / Flat 47) / pending 3件 / skip 268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000206 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $100.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T01:26:14.568903+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=64852.4
-- Funnel: target 885 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-20T01:31:15.782019+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=64823.3
+- Funnel: target 885 → liquid 130 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +43.51% | $2,489,102.48 |
-| BANK/USDT:USDT | +43.22% | $85,920,047.19 |
-| PUMPFUN/USDT:USDT | +21.18% | $16,071,050.32 |
-| PROM/USDT:USDT | +17.18% | $2,035,776.43 |
-| ANSEM/USDT:USDT | +13.49% | $1,665,091.27 |
+| ACE/USDT:USDT | +44.87% | $2,516,081.70 |
+| BANK/USDT:USDT | +42.52% | $86,004,912.85 |
+| PUMPFUN/USDT:USDT | +19.68% | $16,123,909.56 |
+| PROM/USDT:USDT | +16.61% | $2,039,600.37 |
+| AKE/USDT:USDT | +12.85% | $31,847,448.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.21% |
-| ACE/USDT:USDT | below_1h_threshold | +4.55% | +4.05% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.66% | +3.15% |
-| PROM/USDT:USDT | below_1h_threshold | +2.40% | +1.89% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +1.73% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.26% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +1.78% |
+| DRAM/USDT:USDT | below_1h_threshold | +2.02% | +1.56% |
+| JTO/USDT:USDT | below_1h_threshold | +1.99% | +1.53% |
+| PROM/USDT:USDT | below_1h_threshold | +1.91% | +1.45% |
 
 ## 7. 次に見るべき不足
 
