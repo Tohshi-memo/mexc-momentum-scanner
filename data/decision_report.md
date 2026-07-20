@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T19:16:26.078202+00:00
+- generated_at: 2026-07-20T19:21:21.588609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9126**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.84** / 初期 $100.00 (+1.84%)
-- 確定: 324件 (Win 114 / Loss 141 / Flat 69) / pending 4件 / skip 270件
+- 確定: 324件 (Win 114 / Loss 141 / Flat 69) / pending 5件 / skip 270件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $101.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T19:16:15.438190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=65123.5
+- 更新: 2026-07-20T19:21:12.386118+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=65129.4
 - Funnel: target 885 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +51.65% | $1,189,750.78 |
-| ACE/USDT:USDT | +15.00% | $33,153,173.03 |
-| ON/USDT:USDT | +6.11% | $1,435,009.92 |
-| ESPORTS/USDT:USDT | +5.22% | $8,661,420.73 |
-| ANSEM/USDT:USDT | +5.11% | $2,507,642.89 |
+| JIMOTHY/USDT:USDT | +45.57% | $1,206,347.46 |
+| ACE/USDT:USDT | +16.44% | $33,311,077.86 |
+| ON/USDT:USDT | +7.14% | $1,436,522.85 |
+| ANSEM/USDT:USDT | +5.63% | $2,517,288.84 |
+| LDO/USDT:USDT | +5.15% | $3,133,723.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.38% | +4.52% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.27% | +1.41% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.13% | +1.27% |
-| RE/USDT:USDT | below_1h_threshold | +1.09% | +1.23% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.88% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.67% | +1.80% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.21% | +1.34% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.87% |
+| ON/USDT:USDT | below_1h_threshold | +0.70% | +0.84% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.69% | +0.82% |
 
 ## 7. 次に見るべき不足
 
