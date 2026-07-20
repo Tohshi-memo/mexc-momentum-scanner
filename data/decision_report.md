@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T01:46:12.457862+00:00
+- generated_at: 2026-07-20T01:51:22.833101+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9074**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T01:46:05.633467+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=64731.1
-- Funnel: target 885 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1
+- 更新: 2026-07-20T01:51:15.684490+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=64696.1
+- Funnel: target 885 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +49.85% | $2,712,021.05 |
-| BANK/USDT:USDT | +42.03% | $86,394,258.24 |
-| PUMPFUN/USDT:USDT | +20.34% | $16,274,879.60 |
-| PROM/USDT:USDT | +18.94% | $2,049,722.47 |
-| ANSEM/USDT:USDT | +17.03% | $1,759,306.94 |
+| ACE/USDT:USDT | +50.73% | $2,759,181.71 |
+| BANK/USDT:USDT | +41.88% | $86,486,674.76 |
+| PUMPFUN/USDT:USDT | +20.52% | $16,462,536.07 |
+| PROM/USDT:USDT | +18.80% | $2,053,961.03 |
+| ANSEM/USDT:USDT | +16.40% | $1,773,353.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.40% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.67% | +4.35% |
-| PROM/USDT:USDT | below_1h_threshold | +3.94% | +3.62% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.80% | +3.48% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +1.92% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.46% |
+| PROM/USDT:USDT | below_1h_threshold | +3.75% | +3.49% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.57% | +3.30% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +1.98% |
+| PI/USDT:USDT | below_1h_threshold | +1.95% | +1.68% |
 
 ## 7. 次に見るべき不足
 
