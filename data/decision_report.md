@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T09:56:13.622039+00:00
+- generated_at: 2026-07-20T10:01:11.827036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9104**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T09:56:07.011283+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=64196.6
-- Funnel: target 884 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.6 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-20T10:01:05.176122+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64185.6
+- Funnel: target 884 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +114.13% | $15,727,631.93 |
-| BANK/USDT:USDT | +71.65% | $116,770,140.58 |
-| EVAA/USDT:USDT | +32.91% | $5,996,497.36 |
-| PROM/USDT:USDT | +24.92% | $3,227,281.64 |
-| PUMPFUN/USDT:USDT | +18.61% | $27,175,083.61 |
+| ACE/USDT:USDT | +111.48% | $15,859,992.74 |
+| BANK/USDT:USDT | +74.59% | $114,983,552.14 |
+| EVAA/USDT:USDT | +32.16% | $5,897,885.12 |
+| PROM/USDT:USDT | +25.63% | $3,228,697.98 |
+| PUMPFUN/USDT:USDT | +18.49% | $27,011,545.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.60% | +4.34% |
-| PROM/USDT:USDT | below_1h_threshold | +2.60% | +2.34% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.55% | +2.30% |
-| ACE/USDT:USDT | below_1h_threshold | +2.46% | +2.20% |
-| INJ/USDT:USDT | below_1h_threshold | +2.04% | +1.79% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.92% | +1.91% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.39% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.32% | +1.30% |
 
 ## 7. 次に見るべき不足
 
