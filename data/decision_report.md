@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T08:46:30.659616+00:00
+- generated_at: 2026-07-20T08:51:29.251331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9101**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T08:46:17.796054+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=63945.8
-- Funnel: target 884 → liquid 140 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 89.6 >= 65=1
+- 更新: 2026-07-20T08:51:18.947196+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=64060.0
+- Funnel: target 884 → liquid 140 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +97.03% | $13,145,573.82 |
-| BANK/USDT:USDT | +64.91% | $110,339,384.88 |
-| EVAA/USDT:USDT | +31.87% | $5,507,568.64 |
-| PROM/USDT:USDT | +23.87% | $3,007,212.15 |
-| PUMPFUN/USDT:USDT | +17.54% | $25,782,661.39 |
+| ACE/USDT:USDT | +110.58% | $13,451,060.64 |
+| BANK/USDT:USDT | +60.27% | $110,887,195.27 |
+| EVAA/USDT:USDT | +34.97% | $5,596,276.68 |
+| PROM/USDT:USDT | +21.90% | $3,069,091.71 |
+| PUMPFUN/USDT:USDT | +18.31% | $25,895,275.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.27% | +4.74% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.60% | +3.08% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.34% | +2.82% |
-| TRADOOR/USDT:USDT | below_1h_threshold | +2.11% | +2.59% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.69% |
+| PROM/USDT:USDT | below_1h_threshold | +4.34% | +4.64% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.59% | +3.89% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.97% | +3.27% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.34% | +2.64% |
+| TRADOOR/USDT:USDT | below_1h_threshold | +2.24% | +2.53% |
 
 ## 7. 次に見るべき不足
 
