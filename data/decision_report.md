@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T16:26:16.934854+00:00
+- generated_at: 2026-07-20T16:31:16.629743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9121**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T16:26:08.283579+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=65445.0
-- Funnel: target 885 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-20T16:31:08.185511+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=65435.3
+- Funnel: target 885 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +4.63% | $2,912,859.51 |
-| USELESS/USDT:USDT | +3.91% | $1,157,964.35 |
-| B/USDT:USDT | +2.62% | $28,005,575.76 |
-| ANSEM/USDT:USDT | +2.15% | $2,367,938.30 |
-| FARTCOIN/USDT:USDT | +1.72% | $9,203,324.75 |
+| USELESS/USDT:USDT | +4.12% | $1,164,359.08 |
+| B/USDT:USDT | +3.48% | $28,082,891.69 |
+| ALLO/USDT:USDT | +3.40% | $3,054,819.31 |
+| US/USDT:USDT | +2.66% | $1,923,440.63 |
+| ANSEM/USDT:USDT | +2.06% | $2,371,336.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +4.53% | +4.73% |
-| KORU/USDT:USDT | below_1h_threshold | +4.21% | +4.40% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.91% | +4.11% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.72% | +3.92% |
-| B/USDT:USDT | below_1h_threshold | +2.67% | +2.86% |
+| KORU/USDT:USDT | below_1h_threshold | +4.21% | +4.42% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.13% | +4.33% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.49% | +3.70% |
+| B/USDT:USDT | below_1h_threshold | +3.49% | +3.69% |
+| US/USDT:USDT | below_1h_threshold | +2.94% | +3.15% |
 
 ## 7. 次に見るべき不足
 
