@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T13:41:26.677959+00:00
+- generated_at: 2026-07-20T13:46:22.894095+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9112**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T13:41:17.771633+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64624.8
-- Funnel: target 887 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.9 >= 65=1, 4h RSI 74.1 >= 65=1, 4h RSI 68.1 >= 65=1
+- 更新: 2026-07-20T13:46:15.492675+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64606.5
+- Funnel: target 887 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.4 >= 65=1, 4h RSI 68.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +78.94% | $25,511,368.13 |
-| BANK/USDT:USDT | +70.22% | $123,708,171.81 |
-| PROM/USDT:USDT | +60.14% | $5,540,156.51 |
-| EVAA/USDT:USDT | +22.62% | $7,863,517.20 |
-| ANSEM/USDT:USDT | +16.29% | $2,375,749.40 |
+| ACE/USDT:USDT | +78.47% | $25,724,109.75 |
+| BANK/USDT:USDT | +68.40% | $124,049,935.07 |
+| PROM/USDT:USDT | +51.19% | $5,783,086.36 |
+| EVAA/USDT:USDT | +23.38% | $7,900,121.39 |
+| PUMPFUN/USDT:USDT | +15.81% | $37,801,553.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +4.43% | +4.43% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.11% | +3.12% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.84% | +1.84% |
-| PI/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.86% | +2.89% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.48% | +2.51% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.43% | +1.46% |
+| PI/USDT:USDT | below_1h_threshold | +1.41% | +1.44% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.31% | +1.35% |
 
 ## 7. 次に見るべき不足
 
