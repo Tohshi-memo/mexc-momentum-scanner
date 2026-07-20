@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T12:31:18.537852+00:00
+- generated_at: 2026-07-20T12:36:11.877009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9107**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T12:31:11.876211+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=64673.7
-- Funnel: target 885 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.6 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-20T12:36:06.678556+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=64701.2
+- Funnel: target 885 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +104.86% | $22,713,469.19 |
-| BANK/USDT:USDT | +76.40% | $122,351,994.33 |
-| PROM/USDT:USDT | +31.12% | $3,850,949.66 |
-| EVAA/USDT:USDT | +23.86% | $7,325,423.48 |
-| PUMPFUN/USDT:USDT | +16.70% | $35,138,676.53 |
+| ACE/USDT:USDT | +107.75% | $22,914,247.72 |
+| BANK/USDT:USDT | +76.98% | $122,653,258.91 |
+| PROM/USDT:USDT | +28.52% | $3,926,625.23 |
+| EVAA/USDT:USDT | +24.59% | $7,375,193.63 |
+| PUMPFUN/USDT:USDT | +16.70% | $35,406,225.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.59% |
-| B/USDT:USDT | below_1h_threshold | +2.19% | +2.65% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.62% | +2.07% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.98% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.91% |
+| PROM/USDT:USDT | below_1h_threshold | +4.46% | +4.88% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.55% |
+| B/USDT:USDT | below_1h_threshold | +2.15% | +2.57% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.93% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.51% | +1.93% |
 
 ## 7. 次に見るべき不足
 
