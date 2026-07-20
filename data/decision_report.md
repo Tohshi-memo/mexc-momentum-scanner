@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T16:31:16.629743+00:00
+- generated_at: 2026-07-20T16:36:15.065613+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9121**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T16:31:08.185511+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=65435.3
-- Funnel: target 885 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-20T16:36:08.444520+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=65437.3
+- Funnel: target 885 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +4.12% | $1,164,359.08 |
-| B/USDT:USDT | +3.48% | $28,082,891.69 |
-| ALLO/USDT:USDT | +3.40% | $3,054,819.31 |
-| US/USDT:USDT | +2.66% | $1,923,440.63 |
-| ANSEM/USDT:USDT | +2.06% | $2,371,336.49 |
+| ACE/USDT:USDT | +6.28% | $30,611,343.30 |
+| USELESS/USDT:USDT | +3.62% | $1,179,098.44 |
+| B/USDT:USDT | +3.28% | $28,145,324.32 |
+| ANSEM/USDT:USDT | +3.00% | $2,375,836.77 |
+| ALLO/USDT:USDT | +2.83% | $3,133,931.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +4.21% | +4.42% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.13% | +4.33% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.49% | +3.70% |
-| B/USDT:USDT | below_1h_threshold | +3.49% | +3.69% |
-| US/USDT:USDT | below_1h_threshold | +2.94% | +3.15% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.65% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.39% | +3.60% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.53% |
+| B/USDT:USDT | below_1h_threshold | +3.28% | +3.49% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.00% | +3.21% |
 
 ## 7. 次に見るべき不足
 
