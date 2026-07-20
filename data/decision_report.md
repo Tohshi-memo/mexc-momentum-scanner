@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T12:56:15.861878+00:00
+- generated_at: 2026-07-20T13:01:14.049626+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9107**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T12:56:09.103233+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=64630.0
-- Funnel: target 887 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.2 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-20T13:01:07.459034+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64641.1
+- Funnel: target 887 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +108.87% | $23,334,353.41 |
-| BANK/USDT:USDT | +76.23% | $124,558,957.83 |
-| PROM/USDT:USDT | +29.78% | $4,057,842.78 |
-| EVAA/USDT:USDT | +21.94% | $7,665,064.23 |
-| PUMPFUN/USDT:USDT | +17.36% | $35,963,495.88 |
+| ACE/USDT:USDT | +106.78% | $23,426,462.58 |
+| BANK/USDT:USDT | +78.00% | $119,255,831.90 |
+| PROM/USDT:USDT | +28.23% | $4,074,396.38 |
+| EVAA/USDT:USDT | +21.61% | $7,521,798.03 |
+| PUMPFUN/USDT:USDT | +17.12% | $36,002,855.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.47% | +3.99% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.13% | +3.66% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.59% | +3.12% |
-| SPX/USDT:USDT | below_1h_threshold | +2.38% | +2.90% |
-| B/USDT:USDT | below_1h_threshold | +2.19% | +2.72% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.52% | +0.50% |
+| PROM/USDT:USDT | below_1h_threshold | +0.50% | +0.47% |
+| APDSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.38% |
+| PI/USDT:USDT | below_1h_threshold | +0.35% | +0.33% |
+| B/USDT:USDT | below_1h_threshold | +0.26% | +0.24% |
 
 ## 7. 次に見るべき不足
 
