@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T14:21:27.427387+00:00
+- generated_at: 2026-07-20T14:26:16.599510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9115**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T14:21:17.070669+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=64176.1
-- Funnel: target 887 → liquid 151 → pre 50 → checked 48 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=2
-- Strict後reject: 4h RSI 71.7 >= 65=1, 4h RSI 95.1 >= 65=1
+- 更新: 2026-07-20T14:26:08.395856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64307.2
+- Funnel: target 887 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +79.20% | $26,992,917.25 |
-| BANK/USDT:USDT | +78.65% | $125,374,920.95 |
-| PROM/USDT:USDT | +58.30% | $6,498,265.63 |
-| EVAA/USDT:USDT | +23.17% | $7,879,508.01 |
-| PUMPFUN/USDT:USDT | +16.10% | $38,510,801.99 |
+| ACE/USDT:USDT | +81.68% | $27,126,086.26 |
+| BANK/USDT:USDT | +78.46% | $125,787,311.57 |
+| PROM/USDT:USDT | +51.47% | $6,641,717.44 |
+| EVAA/USDT:USDT | +24.56% | $7,920,740.30 |
+| PUMPFUN/USDT:USDT | +15.93% | $38,614,378.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +1.83% | +2.04% |
-| KORU/USDT:USDT | below_1h_threshold | +1.68% | +1.89% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.62% | +1.83% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.71% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.14% | +1.36% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.94% | +1.95% |
+| KORU/USDT:USDT | below_1h_threshold | +1.68% | +1.69% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.60% | +1.61% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.58% | +1.59% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.51% |
 
 ## 7. 次に見るべき不足
 
