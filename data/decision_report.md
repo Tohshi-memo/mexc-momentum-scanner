@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T04:31:07.269148+00:00
+- generated_at: 2026-07-20T04:36:15.893172+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9082**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.94** / 初期 $100.00 (+0.94%)
-- 確定: 281件 (Win 95 / Loss 131 / Flat 55) / pending 3件 / skip 268件
+- 確定: 281件 (Win 95 / Loss 131 / Flat 55) / pending 4件 / skip 268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000170 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $100.94
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T04:31:02.188190+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64728.2
-- Funnel: target 885 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-20T04:36:09.436682+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=64735.9
+- Funnel: target 885 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.3 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +63.83% | $93,894,413.26 |
-| ACE/USDT:USDT | +44.04% | $4,107,214.67 |
-| PROM/USDT:USDT | +17.88% | $2,301,695.53 |
-| PUMPFUN/USDT:USDT | +17.18% | $18,183,614.53 |
-| DEXE/USDT:USDT | +9.12% | $1,575,131.88 |
+| BANK/USDT:USDT | +64.63% | $94,530,231.69 |
+| ACE/USDT:USDT | +43.01% | $4,131,145.50 |
+| PROM/USDT:USDT | +18.45% | $2,306,369.18 |
+| PUMPFUN/USDT:USDT | +17.54% | $18,229,834.42 |
+| ESPORTS/USDT:USDT | +11.10% | $43,499,853.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.78% | +4.95% |
-| PROM/USDT:USDT | below_1h_threshold | +3.14% | +3.31% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.29% | +2.46% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.16% | +1.34% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.90% | +1.07% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.41% | +3.57% |
+| PROM/USDT:USDT | below_1h_threshold | +3.39% | +3.55% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.61% | +1.77% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.12% | +1.28% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.90% | +1.06% |
 
 ## 7. 次に見るべき不足
 
