@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T20:21:14.240029+00:00
+- generated_at: 2026-07-20T20:26:21.526349+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9128**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T20:21:07.454801+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=65279.4
+- 更新: 2026-07-20T20:26:14.747666+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=65287.0
 - Funnel: target 885 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 93.2 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +61.55% | $1,530,433.22 |
-| HEMI/USDT:USDT | +29.56% | $1,450,774.14 |
-| SOXS/USDT:USDT | +6.81% | $1,027,611.45 |
-| ON/USDT:USDT | +6.30% | $1,455,891.65 |
-| LDO/USDT:USDT | +5.21% | $4,354,980.12 |
+| JIMOTHY/USDT:USDT | +70.76% | $1,627,563.11 |
+| HEMI/USDT:USDT | +26.36% | $1,514,197.40 |
+| SOXS/USDT:USDT | +6.59% | $1,030,499.23 |
+| LDO/USDT:USDT | +5.54% | $4,369,432.12 |
+| ON/USDT:USDT | +5.31% | $1,459,378.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.23% | +1.98% |
-| ON/USDT:USDT | below_1h_threshold | +1.91% | +1.66% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.39% | +1.14% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.07% | +0.81% |
-| AXONSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.67% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.23% | +1.97% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.77% | +1.51% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.39% | +1.13% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.21% | +0.94% |
+| ON/USDT:USDT | below_1h_threshold | +0.96% | +0.70% |
 
 ## 7. 次に見るべき不足
 
