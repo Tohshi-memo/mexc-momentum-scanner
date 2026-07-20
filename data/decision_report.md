@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T21:16:16.240503+00:00
+- generated_at: 2026-07-20T21:21:14.705124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9130**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T21:16:09.637279+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=65308.0
+- 更新: 2026-07-20T21:21:08.051398+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=65295.6
 - Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +73.58% | $2,078,521.63 |
-| HEMI/USDT:USDT | +37.00% | $2,042,978.98 |
-| MONAD/USDT:USDT | +8.23% | $1,137,014.31 |
-| SOXS/USDT:USDT | +6.18% | $1,092,552.66 |
-| ON/USDT:USDT | +6.11% | $1,445,944.66 |
+| JIMOTHY/USDT:USDT | +74.78% | $2,121,993.78 |
+| HEMI/USDT:USDT | +33.11% | $2,107,165.17 |
+| MONAD/USDT:USDT | +8.09% | $1,164,821.77 |
+| ON/USDT:USDT | +6.27% | $1,451,501.64 |
+| SOXS/USDT:USDT | +6.16% | $1,095,180.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.11% | +3.17% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.66% | +2.72% |
-| JTO/USDT:USDT | below_1h_threshold | +0.88% | +0.93% |
-| XPL/USDT:USDT | below_1h_threshold | +0.56% | +0.62% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.49% | +0.55% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.85% | +3.93% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.40% | +2.47% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.58% | +1.66% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.89% | +0.96% |
+| JTO/USDT:USDT | below_1h_threshold | +0.83% | +0.90% |
 
 ## 7. 次に見るべき不足
 
