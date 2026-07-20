@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T23:51:14.182987+00:00
+- generated_at: 2026-07-20T23:56:18.308480+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9133**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T23:51:07.682089+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=65175.2
+- 更新: 2026-07-20T23:56:12.944096+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65147.7
 - Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +44.17% | $2,596,693.50 |
-| HEMI/USDT:USDT | +20.60% | $2,783,485.96 |
-| ON/USDT:USDT | +12.26% | $1,733,867.47 |
-| BLESS/USDT:USDT | +9.71% | $1,399,311.74 |
-| BULLA/USDT:USDT | +8.73% | $1,105,624.63 |
+| JIMOTHY/USDT:USDT | +45.94% | $2,601,331.22 |
+| HEMI/USDT:USDT | +21.83% | $2,798,331.39 |
+| ON/USDT:USDT | +11.63% | $1,741,145.93 |
+| BLESS/USDT:USDT | +9.34% | $1,401,324.48 |
+| BULLA/USDT:USDT | +9.09% | $1,118,975.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.93% | +4.84% |
-| WLD/USDT:USDT | below_1h_threshold | +1.76% | +1.68% |
-| CAP/USDT:USDT | below_1h_threshold | +1.69% | +1.60% |
-| RE/USDT:USDT | below_1h_threshold | +1.52% | +1.43% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.08% | +0.99% |
+| ON/USDT:USDT | below_1h_threshold | +4.26% | +4.21% |
+| B/USDT:USDT | below_1h_threshold | +2.24% | +2.20% |
+| CAP/USDT:USDT | below_1h_threshold | +2.03% | +1.98% |
+| WLD/USDT:USDT | below_1h_threshold | +1.66% | +1.61% |
+| RE/USDT:USDT | below_1h_threshold | +1.63% | +1.58% |
 
 ## 7. 次に見るべき不足
 
