@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T06:26:23.366402+00:00
+- generated_at: 2026-07-20T06:31:17.404635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9088**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T06:26:14.944025+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64090.6
-- Funnel: target 886 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1
+- 更新: 2026-07-20T06:31:10.738026+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64090.8
+- Funnel: target 886 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +66.35% | $5,131,040.91 |
-| BANK/USDT:USDT | +51.77% | $101,096,568.12 |
-| EVAA/USDT:USDT | +18.29% | $3,512,668.33 |
-| PUMPFUN/USDT:USDT | +17.72% | $19,165,990.20 |
-| PROM/USDT:USDT | +15.00% | $2,489,625.44 |
+| ACE/USDT:USDT | +71.18% | $5,332,157.33 |
+| BANK/USDT:USDT | +51.99% | $101,375,009.91 |
+| PUMPFUN/USDT:USDT | +17.72% | $19,246,408.43 |
+| EVAA/USDT:USDT | +16.49% | $3,556,158.34 |
+| PROM/USDT:USDT | +15.07% | $2,494,238.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +1.92% | +1.93% |
-| PROM/USDT:USDT | below_1h_threshold | +1.43% | +1.45% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.42% | +4.44% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.96% | +1.98% |
+| PROM/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
 | PUMPFUN/USDT:USDT | below_1h_threshold | +0.97% | +0.99% |
-| GRAM/USDT:USDT | below_1h_threshold | +0.89% | +0.91% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.83% | +0.85% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.76% | +0.77% |
 
 ## 7. 次に見るべき不足
 
