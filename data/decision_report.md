@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T05:16:12.351478+00:00
+- generated_at: 2026-07-20T05:21:12.180036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9083**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T05:16:07.495993+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=64216.5
-- Funnel: target 885 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-20T05:21:05.750023+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=64346.1
+- Funnel: target 885 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +59.44% | $97,073,110.17 |
-| ACE/USDT:USDT | +35.67% | $4,437,213.81 |
-| PUMPFUN/USDT:USDT | +16.94% | $18,569,773.26 |
-| PROM/USDT:USDT | +15.77% | $2,356,391.53 |
-| VELVET/USDT:USDT | +13.18% | $4,996,924.70 |
+| BANK/USDT:USDT | +57.68% | $97,433,048.83 |
+| ACE/USDT:USDT | +38.77% | $4,469,705.25 |
+| PUMPFUN/USDT:USDT | +17.42% | $18,579,984.54 |
+| PROM/USDT:USDT | +14.64% | $2,375,309.96 |
+| VELVET/USDT:USDT | +14.43% | $5,128,709.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.77% | +2.23% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.36% | +1.82% |
-| SYN/USDT:USDT | below_1h_threshold | +1.03% | +1.48% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.46% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +1.38% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.88% | +3.13% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.04% | +2.29% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.94% | +2.20% |
+| PI/USDT:USDT | below_1h_threshold | +1.35% | +1.61% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.26% |
 
 ## 7. 次に見るべき不足
 
