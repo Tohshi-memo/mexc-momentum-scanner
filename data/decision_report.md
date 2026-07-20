@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T16:06:25.349643+00:00
+- generated_at: 2026-07-20T16:11:19.536417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9121**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T16:06:14.996138+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=65487.1
+- 更新: 2026-07-20T16:11:10.738814+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=65511.5
 - Funnel: target 885 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALLO/USDT:USDT | +3.09% | $2,351,904.77 |
-| ON/USDT:USDT | +2.94% | $1,422,604.71 |
-| ACE/USDT:USDT | +2.81% | $29,936,475.82 |
-| LDO/USDT:USDT | +1.19% | $2,635,509.70 |
-| ORDI/USDT:USDT | +0.86% | $4,187,077.75 |
+| ACE/USDT:USDT | +4.59% | $30,086,291.89 |
+| B/USDT:USDT | +3.11% | $27,726,969.14 |
+| ALLO/USDT:USDT | +2.99% | $2,446,116.88 |
+| LDO/USDT:USDT | +1.46% | $2,646,416.50 |
+| SOXL/USDT:USDT | +1.13% | $19,878,354.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +4.21% | +4.34% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.72% | +3.85% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.15% | +3.28% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.14% |
-| ON/USDT:USDT | below_1h_threshold | +2.94% | +3.07% |
+| ACE/USDT:USDT | below_1h_threshold | +4.56% | +4.65% |
+| KORU/USDT:USDT | below_1h_threshold | +4.21% | +4.30% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.72% | +3.81% |
+| B/USDT:USDT | below_1h_threshold | +3.12% | +3.21% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.05% | +3.14% |
 
 ## 7. 次に見るべき不足
 
