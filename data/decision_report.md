@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T16:36:15.065613+00:00
+- generated_at: 2026-07-20T16:41:15.645649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9121**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.85** / 初期 $100.00 (+1.85%)
-- 確定: 320件 (Win 112 / Loss 139 / Flat 69) / pending 3件 / skip 268件
+- 確定: 320件 (Win 112 / Loss 139 / Flat 69) / pending 4件 / skip 268件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000321 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: APDSTOCK/USDT:USDT `MARKET_LONG` EXPIRED account +0.01% 残高後 $101.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T16:36:08.444520+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=65437.3
+- 更新: 2026-07-20T16:41:08.949552+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=65451.0
 - Funnel: target 885 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1
+- Strict後reject: 4h RSI 75.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +6.28% | $30,611,343.30 |
-| USELESS/USDT:USDT | +3.62% | $1,179,098.44 |
-| B/USDT:USDT | +3.28% | $28,145,324.32 |
-| ANSEM/USDT:USDT | +3.00% | $2,375,836.77 |
-| ALLO/USDT:USDT | +2.83% | $3,133,931.95 |
+| B/USDT:USDT | +6.23% | $28,328,006.01 |
+| ALLO/USDT:USDT | +4.61% | $3,212,277.82 |
+| ACE/USDT:USDT | +4.35% | $30,697,806.13 |
+| ANSEM/USDT:USDT | +3.80% | $2,380,934.88 |
+| LAB/USDT:USDT | +3.59% | $5,813,131.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.65% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.39% | +3.60% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.53% |
-| B/USDT:USDT | below_1h_threshold | +3.28% | +3.49% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.00% | +3.21% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.62% | +4.80% |
+| ACE/USDT:USDT | below_1h_threshold | +4.36% | +4.54% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.80% | +3.98% |
+| LAB/USDT:USDT | below_1h_threshold | +3.60% | +3.78% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.63% |
 
 ## 7. 次に見るべき不足
 
