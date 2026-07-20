@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T22:51:10.193868+00:00
+- generated_at: 2026-07-20T22:56:09.021481+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9132**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T22:51:03.577891+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=65114.5
+- 更新: 2026-07-20T22:56:04.401753+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=65117.1
 - Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +51.95% | $2,448,863.24 |
-| HEMI/USDT:USDT | +23.58% | $2,573,692.42 |
-| BLESS/USDT:USDT | +9.09% | $1,278,175.20 |
-| SOXS/USDT:USDT | +7.14% | $1,125,395.18 |
-| LDO/USDT:USDT | +6.73% | $5,142,589.09 |
+| JIMOTHY/USDT:USDT | +51.95% | $2,459,811.70 |
+| HEMI/USDT:USDT | +21.99% | $2,588,043.43 |
+| BLESS/USDT:USDT | +9.48% | $1,299,653.05 |
+| SOXS/USDT:USDT | +7.02% | $1,128,292.43 |
+| LDO/USDT:USDT | +6.70% | $5,243,319.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | NBISSTOCK/USDT:USDT | below_1h_threshold | +3.62% | +3.84% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.23% | +2.45% |
 | CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +2.22% |
-| ON/USDT:USDT | below_1h_threshold | +1.38% | +1.60% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.43% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.76% | +1.98% |
+| SYN/USDT:USDT | below_1h_threshold | +1.39% | +1.60% |
+| OP/USDT:USDT | below_1h_threshold | +1.28% | +1.50% |
 
 ## 7. 次に見るべき不足
 
