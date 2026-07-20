@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T18:11:17.679277+00:00
+- generated_at: 2026-07-20T18:16:18.478393+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9122**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T18:11:11.026751+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=65558.7
+- 更新: 2026-07-20T18:16:13.271506+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=65693.2
 - Funnel: target 885 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +7.30% | $1,409,852.32 |
-| UB/USDT:USDT | +6.03% | $1,145,375.74 |
-| B/USDT:USDT | +5.58% | $25,714,706.71 |
-| LDO/USDT:USDT | +5.26% | $2,458,562.52 |
-| USELESS/USDT:USDT | +4.87% | $1,054,727.22 |
+| ACE/USDT:USDT | +7.92% | $31,991,502.57 |
+| ON/USDT:USDT | +7.57% | $1,421,610.50 |
+| UB/USDT:USDT | +6.48% | $1,157,125.31 |
+| USELESS/USDT:USDT | +4.61% | $1,057,661.37 |
+| LDO/USDT:USDT | +4.24% | $2,505,728.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXONSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.32% |
-| UB/USDT:USDT | below_1h_threshold | +1.55% | +1.56% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.41% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.37% |
+| ACE/USDT:USDT | below_1h_threshold | +3.98% | +3.78% |
+| AXONSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.11% |
+| UB/USDT:USDT | below_1h_threshold | +1.98% | +1.78% |
+| ADA/USDT:USDT | below_1h_threshold | +1.91% | +1.71% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.72% | +1.52% |
 
 ## 7. 次に見るべき不足
 
