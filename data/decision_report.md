@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-20T03:51:20.767876+00:00
+- generated_at: 2026-07-20T03:56:14.328146+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9080**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-20T03:51:12.868627+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=64869.8
+- 更新: 2026-07-20T03:56:07.703972+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64820.1
 - Funnel: target 885 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +50.76% | $91,213,993.73 |
-| ACE/USDT:USDT | +49.38% | $3,797,739.63 |
-| ESPORTS/USDT:USDT | +20.08% | $44,985,955.74 |
-| PUMPFUN/USDT:USDT | +17.84% | $17,542,689.43 |
-| PROM/USDT:USDT | +14.15% | $2,225,188.55 |
+| BANK/USDT:USDT | +51.61% | $91,410,132.74 |
+| ACE/USDT:USDT | +45.57% | $3,834,993.56 |
+| ESPORTS/USDT:USDT | +20.32% | $45,038,028.26 |
+| PUMPFUN/USDT:USDT | +17.24% | $17,670,027.63 |
+| PROM/USDT:USDT | +14.22% | $2,231,321.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.83% | +4.72% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.10% | +3.99% |
-| ACE/USDT:USDT | below_1h_threshold | +3.48% | +3.38% |
-| B/USDT:USDT | below_1h_threshold | +3.26% | +3.15% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.27% | +2.16% |
+| EVAA/USDT:USDT | below_relative_strength | +5.02% | +4.99% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.61% | +4.58% |
+| B/USDT:USDT | below_1h_threshold | +2.51% | +2.48% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.38% | +2.35% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.27% | +2.24% |
 
 ## 7. 次に見るべき不足
 
