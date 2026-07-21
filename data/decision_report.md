@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T18:31:15.750828+00:00
+- generated_at: 2026-07-21T18:36:18.880521+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9201**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T18:31:09.211797+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=66205.2
+- 更新: 2026-07-21T18:36:12.194808+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=66209.5
 - Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TLM/USDT:USDT | +11.58% | $1,529,582.62 |
-| BTW/USDT:USDT | +10.64% | $1,206,473.74 |
-| BANK/USDT:USDT | +7.96% | $116,152,913.48 |
-| BEAT/USDT:USDT | +4.42% | $6,624,094.84 |
-| AKE/USDT:USDT | +4.32% | $13,917,667.63 |
+| BTW/USDT:USDT | +12.59% | $1,287,427.52 |
+| TLM/USDT:USDT | +9.96% | $1,565,566.61 |
+| BANK/USDT:USDT | +7.32% | $116,424,303.89 |
+| BEAT/USDT:USDT | +5.47% | $6,685,866.95 |
+| AKE/USDT:USDT | +4.86% | $13,939,287.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +4.04% | +4.00% |
-| LIT/USDT:USDT | below_1h_threshold | +2.57% | +2.54% |
+| LIT/USDT:USDT | below_1h_threshold | +3.75% | +3.71% |
+| BTW/USDT:USDT | below_1h_threshold | +3.30% | +3.26% |
+| TLM/USDT:USDT | below_1h_threshold | +2.80% | +2.76% |
 | SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +1.96% |
-| BTW/USDT:USDT | below_1h_threshold | +1.84% | +1.81% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.19% | +1.15% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
 
 ## 7. 次に見るべき不足
 
