@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T15:51:19.905859+00:00
+- generated_at: 2026-07-21T15:56:16.091551+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9190**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T15:51:13.104398+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=66658.4
+- 更新: 2026-07-21T15:56:09.273171+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=66659.8
 - Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +115.67% | $5,229,116.13 |
-| PONS/USDT:USDT | +96.09% | $1,439,638.56 |
-| ERA/USDT:USDT | +63.11% | $12,598,910.45 |
-| ESPORTS/USDT:USDT | +54.12% | $9,027,678.21 |
-| ONE/USDT:USDT | +34.83% | $2,510,562.83 |
+| JIMOTHY/USDT:USDT | +108.21% | $5,255,098.56 |
+| PONS/USDT:USDT | +96.09% | $1,445,157.21 |
+| ERA/USDT:USDT | +62.31% | $12,612,826.24 |
+| ESPORTS/USDT:USDT | +52.84% | $9,139,920.43 |
+| ONE/USDT:USDT | +34.21% | $2,526,061.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | NBISSTOCK/USDT:USDT | below_1h_threshold | +4.28% | +4.50% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.71% | +3.93% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.12% | +3.34% |
 | TSEMSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +3.09% |
 | MUU/USDT:USDT | below_1h_threshold | +2.63% | +2.85% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.50% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.39% | +2.61% |
 
 ## 7. 次に見るべき不足
 
