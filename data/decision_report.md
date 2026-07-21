@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T18:11:16.744077+00:00
+- generated_at: 2026-07-21T18:16:14.478627+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9201**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T18:11:10.157358+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=66279.3
+- 更新: 2026-07-21T18:16:07.854903+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=66260.5
 - Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +8.38% | $1,030,438.20 |
-| TLM/USDT:USDT | +8.22% | $1,340,120.80 |
-| BANK/USDT:USDT | +7.46% | $115,035,290.89 |
-| AKE/USDT:USDT | +6.35% | $13,798,079.94 |
-| PONS/USDT:USDT | +5.68% | $1,639,949.88 |
+| TLM/USDT:USDT | +9.24% | $1,365,729.35 |
+| BTW/USDT:USDT | +9.06% | $1,104,266.91 |
+| BANK/USDT:USDT | +6.72% | $115,322,449.01 |
+| PONS/USDT:USDT | +6.22% | $1,643,421.15 |
+| AKE/USDT:USDT | +5.76% | $13,820,931.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +1.85% |
-| PONS/USDT:USDT | below_1h_threshold | +1.50% | +1.35% |
-| TLM/USDT:USDT | below_1h_threshold | +1.18% | +1.03% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.88% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.83% |
+| TLM/USDT:USDT | below_1h_threshold | +2.19% | +2.07% |
+| LIT/USDT:USDT | below_1h_threshold | +2.08% | +1.96% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +1.88% |
+| PONS/USDT:USDT | below_1h_threshold | +1.54% | +1.42% |
+| US/USDT:USDT | below_1h_threshold | +1.41% | +1.29% |
 
 ## 7. 次に見るべき不足
 
