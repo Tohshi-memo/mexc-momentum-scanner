@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-21T22:36:18.248160+00:00
+- generated_at: 2026-07-21T22:41:16.497688+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9217**
+- closed shadow trades: **9218**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9217, expectancy=-0.01%
+- 全期間 MARKET基準: n=9218, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.09%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.37% | **+0.75%** |
+| LIMIT_FIB1272_LONG | 11/20 | 55.0% | +1.25% | **+0.69%** |
 | LIMIT_5PCT_LONG | 10/20 | 50.0% | +1.34% | **+0.67%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.25% | **+0.25%** |
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +0.46% | **+0.25%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$419.29** / 初期 $100.00 (+319.29%)
-- 確定: 3250件 (Win 1021 / Loss 1039 / Flat 1190) / skip 2528件
+- 確定: 3250件 (Win 1021 / Loss 1039 / Flat 1190) / skip 2529件
 - 成長率目線: 平均log +0.000441 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BNCSTOCK/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $419.29
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$131.28** / 初期 $100.00 (+31.28%)
-- 確定: 1159件 (Win 312 / Loss 252 / Flat 595) / skip 1469件
+- 確定: 1159件 (Win 312 / Loss 252 / Flat 595) / skip 1470件
 - 成長率目線: 平均log +0.000235 / 幾何平均 +0.023% per trade / maxDD +3.89%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $131.28
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.03** / 初期 $100.00 (+1.03%)
-- 確定: 363件 (Win 123 / Loss 155 / Flat 85) / pending 5件 / skip 324件
+- 確定: 364件 (Win 123 / Loss 155 / Flat 86) / pending 4件 / skip 324件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: FWDISTOCK/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $101.03
+- 最新: TLM/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $101.03
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T22:36:11.336853+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=66294.2
-- Funnel: target 885 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-21T22:41:10.095502+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=66295.9
+- Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.5 >= 65=1
+- Strict後reject: 4h RSI 74.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SMCISTOCK/USDT:USDT | +19.38% | $3,135,366.87 |
-| FWDISTOCK/USDT:USDT | +12.19% | $3,826,756.60 |
-| SNXX/USDT:USDT | +10.79% | $1,750,225.06 |
-| NIGHT/USDT:USDT | +8.11% | $7,010,938.08 |
-| BOTSTOCK/USDT:USDT | +7.62% | $2,672,255.84 |
+| SMCISTOCK/USDT:USDT | +19.42% | $3,141,352.25 |
+| FWDISTOCK/USDT:USDT | +14.72% | $3,834,315.07 |
+| SNXX/USDT:USDT | +11.15% | $1,766,739.34 |
+| AKE/USDT:USDT | +8.75% | $13,626,702.04 |
+| NIGHT/USDT:USDT | +8.52% | $7,023,861.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.02% | +2.11% |
+| AKE/USDT:USDT | below_1h_threshold | +4.45% | +4.54% |
 | ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.62% |
-| KORU/USDT:USDT | below_1h_threshold | +1.13% | +1.22% |
-| BILL/USDT:USDT | below_1h_threshold | +1.02% | +1.11% |
-| RE/USDT:USDT | below_1h_threshold | +0.85% | +0.94% |
+| KORU/USDT:USDT | below_1h_threshold | +1.13% | +1.21% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.79% |
+| RE/USDT:USDT | below_1h_threshold | +0.64% | +0.73% |
 
 ## 7. 次に見るべき不足
 
