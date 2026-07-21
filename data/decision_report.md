@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T15:11:16.143583+00:00
+- generated_at: 2026-07-21T15:16:24.960125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9185**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.91** / 初期 $100.00 (+0.91%)
-- 確定: 343件 (Win 120 / Loss 152 / Flat 71) / pending 3件 / skip 314件
+- 確定: 343件 (Win 120 / Loss 152 / Flat 71) / pending 4件 / skip 314件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $100.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T15:11:09.600452+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=66705.3
-- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-21T15:16:18.036695+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=66655.8
+- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +101.75% | $1,380,329.34 |
-| JIMOTHY/USDT:USDT | +89.31% | $4,966,823.70 |
-| ERA/USDT:USDT | +63.45% | $12,441,278.82 |
-| ESPORTS/USDT:USDT | +45.36% | $8,282,192.40 |
-| ONE/USDT:USDT | +38.00% | $2,137,013.73 |
+| JIMOTHY/USDT:USDT | +125.76% | $5,021,870.28 |
+| PONS/USDT:USDT | +102.03% | $1,383,649.38 |
+| ERA/USDT:USDT | +62.40% | $12,464,195.74 |
+| ESPORTS/USDT:USDT | +45.20% | $8,327,810.65 |
+| ONE/USDT:USDT | +38.18% | $2,185,656.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.28% | +4.43% |
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +3.02% |
-| AVAVSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.43% |
-| KORU/USDT:USDT | below_1h_threshold | +2.22% | +2.37% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.25% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.28% | +4.51% |
+| TSEMSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +3.10% |
+| KORU/USDT:USDT | below_1h_threshold | +2.22% | +2.44% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.32% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.25% |
 
 ## 7. 次に見るべき不足
 
