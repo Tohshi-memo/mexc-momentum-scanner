@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T14:56:26.825272+00:00
+- generated_at: 2026-07-21T15:01:15.109581+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9185**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T14:56:17.584849+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=66817.3
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.1 >= 65=1, 4h RSI 84.3 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-21T15:01:08.507035+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=66738.9
+- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +103.84% | $1,362,408.07 |
-| JIMOTHY/USDT:USDT | +81.14% | $5,056,597.70 |
-| ERA/USDT:USDT | +62.48% | $12,380,448.51 |
-| ESPORTS/USDT:USDT | +46.28% | $8,189,138.80 |
-| ONE/USDT:USDT | +38.44% | $1,885,907.45 |
+| PONS/USDT:USDT | +105.34% | $1,365,024.54 |
+| JIMOTHY/USDT:USDT | +85.53% | $4,939,943.91 |
+| ERA/USDT:USDT | +62.04% | $12,390,284.18 |
+| ESPORTS/USDT:USDT | +49.71% | $8,029,165.40 |
+| ONE/USDT:USDT | +39.24% | $1,952,756.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.46% | +4.36% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.50% | +3.39% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +3.47% | +3.37% |
-| GRAM/USDT:USDT | below_1h_threshold | +2.83% | +2.73% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.30% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.28% | +4.38% |
+| TSEMSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.97% |
+| KORU/USDT:USDT | below_1h_threshold | +2.22% | +2.32% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.20% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +2.08% |
 
 ## 7. 次に見るべき不足
 
