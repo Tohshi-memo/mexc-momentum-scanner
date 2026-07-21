@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T23:01:13.101273+00:00
+- generated_at: 2026-07-21T23:06:16.017169+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9220**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T23:01:05.312571+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=66251.0
+- 更新: 2026-07-21T23:06:09.366270+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=66208.1
 - Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SMCISTOCK/USDT:USDT | +20.10% | $3,183,410.53 |
-| FWDISTOCK/USDT:USDT | +18.88% | $3,856,825.71 |
-| SNXX/USDT:USDT | +10.26% | $1,771,282.29 |
-| NIGHT/USDT:USDT | +9.72% | $6,470,881.39 |
-| BOTSTOCK/USDT:USDT | +9.08% | $2,675,335.89 |
+| SMCISTOCK/USDT:USDT | +20.06% | $3,185,592.96 |
+| FWDISTOCK/USDT:USDT | +16.71% | $3,862,799.18 |
+| NIGHT/USDT:USDT | +10.46% | $6,532,638.52 |
+| SNXX/USDT:USDT | +10.14% | $1,772,028.36 |
+| BOTSTOCK/USDT:USDT | +8.76% | $2,676,089.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.41% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.03% |
-| MUU/USDT:USDT | below_1h_threshold | +0.89% | +0.92% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.79% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.56% | +0.59% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.47% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.34% | +1.43% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.10% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.93% | +1.02% |
+| MUU/USDT:USDT | below_1h_threshold | +0.89% | +0.99% |
 
 ## 7. 次に見るべき不足
 
