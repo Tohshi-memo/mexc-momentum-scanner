@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T12:51:27.761051+00:00
+- generated_at: 2026-07-21T12:56:25.335338+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9175**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T12:51:19.018283+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=66495.2
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.2 >= 65=1, 4h RSI 81.8 >= 65=1
+- 更新: 2026-07-21T12:56:17.523170+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=66481.5
+- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.3 >= 65=1, 4h RSI 82.7 >= 65=1, 4h RSI 66.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +105.10% | $1,012,738.76 |
-| JIMOTHY/USDT:USDT | +104.43% | $4,860,015.86 |
-| ERA/USDT:USDT | +73.12% | $10,368,991.33 |
-| ESPORTS/USDT:USDT | +34.90% | $7,138,268.56 |
-| ZHIPUSTOCK/USDT:USDT | +32.45% | $3,192,615.91 |
+| PONS/USDT:USDT | +106.38% | $1,022,193.39 |
+| JIMOTHY/USDT:USDT | +102.80% | $4,873,979.01 |
+| ERA/USDT:USDT | +70.44% | $10,492,401.82 |
+| ZHIPUSTOCK/USDT:USDT | +32.70% | $3,192,927.00 |
+| ESPORTS/USDT:USDT | +31.67% | $7,333,422.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.42% | +3.15% |
-| US/USDT:USDT | below_1h_threshold | +2.34% | +2.07% |
-| LA/USDT:USDT | below_1h_threshold | +1.58% | +1.31% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.25% | +0.98% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.93% | +0.66% |
+| US/USDT:USDT | below_1h_threshold | +2.75% | +2.50% |
+| LA/USDT:USDT | below_1h_threshold | +1.67% | +1.42% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.87% | +0.63% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.79% | +0.55% |
+| XMR/USDT:USDT | below_1h_threshold | +0.79% | +0.54% |
 
 ## 7. 次に見るべき不足
 
