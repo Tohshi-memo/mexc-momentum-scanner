@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T10:21:17.277349+00:00
+- generated_at: 2026-07-21T10:26:12.839204+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9172**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T10:21:10.640667+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=66314.5
-- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-21T10:26:06.215395+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=66340.9
+- Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +98.97% | $4,562,215.54 |
-| ERA/USDT:USDT | +53.33% | $7,238,541.27 |
-| ZHIPUSTOCK/USDT:USDT | +32.08% | $3,083,200.32 |
-| ESPORTS/USDT:USDT | +23.42% | $5,843,759.78 |
-| ONDO/USDT:USDT | +14.31% | $47,866,665.11 |
+| JIMOTHY/USDT:USDT | +101.72% | $4,570,524.37 |
+| ERA/USDT:USDT | +49.94% | $7,283,198.86 |
+| ZHIPUSTOCK/USDT:USDT | +31.76% | $3,096,720.16 |
+| ESPORTS/USDT:USDT | +25.01% | $5,875,691.21 |
+| ONDO/USDT:USDT | +15.33% | $48,337,297.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +3.03% | +2.95% |
-| LIT/USDT:USDT | below_1h_threshold | +1.12% | +1.04% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.95% | +0.87% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.94% | +0.86% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.72% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.70% | +1.58% |
+| LIT/USDT:USDT | below_1h_threshold | +1.33% | +1.21% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.33% | +1.21% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.23% | +1.11% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.68% |
 
 ## 7. 次に見るべき不足
 
