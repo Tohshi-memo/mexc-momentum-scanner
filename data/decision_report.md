@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T19:01:13.040064+00:00
+- generated_at: 2026-07-21T19:06:13.695612+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9201**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T19:01:06.757642+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=66295.6
+- 更新: 2026-07-21T19:06:06.942223+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=66320.2
 - Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TLM/USDT:USDT | +14.10% | $1,761,977.95 |
-| BTW/USDT:USDT | +9.91% | $1,378,699.46 |
-| MYX/USDT:USDT | +7.26% | $2,218,079.62 |
-| BEAT/USDT:USDT | +6.02% | $6,912,272.15 |
-| BANK/USDT:USDT | +5.31% | $114,554,729.16 |
+| TLM/USDT:USDT | +12.54% | $1,806,785.93 |
+| BTW/USDT:USDT | +9.19% | $1,395,145.78 |
+| MYX/USDT:USDT | +7.81% | $2,238,907.93 |
+| BEAT/USDT:USDT | +7.03% | $7,029,125.03 |
+| AKE/USDT:USDT | +6.02% | $13,626,968.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| NVDL/USDT:USDT | below_1h_threshold | +0.77% | +0.75% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.55% | +0.53% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.30% |
+| LAB/USDT:USDT | below_1h_threshold | +4.61% | +4.56% |
+| AKE/USDT:USDT | below_1h_threshold | +2.39% | +2.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.12% | +1.07% |
+| RE/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.02% | +0.98% |
 
 ## 7. 次に見るべき不足
 
