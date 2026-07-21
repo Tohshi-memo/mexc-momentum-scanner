@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T21:26:32.251356+00:00
+- generated_at: 2026-07-21T21:31:33.640082+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9211**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.03** / 初期 $100.00 (+1.03%)
-- 確定: 360件 (Win 123 / Loss 155 / Flat 82) / pending 6件 / skip 321件
+- 確定: 360件 (Win 123 / Loss 155 / Flat 82) / pending 6件 / skip 322件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000079 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BOTSTOCK/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $101.03
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T21:26:20.849447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=66323.9
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.8 >= 65=1, 4h RSI 73.7 >= 65=1, 4h RSI 70.8 >= 65=1, 4h RSI 67.3 >= 65=1
+- 更新: 2026-07-21T21:31:25.634150+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=66278.3
+- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.9 >= 65=1, 4h RSI 74.0 >= 65=1, 4h RSI 75.3 >= 65=1, 4h RSI 70.4 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SMCISTOCK/USDT:USDT | +20.30% | $2,490,426.39 |
-| SNXX/USDT:USDT | +12.69% | $1,363,049.61 |
-| BEAT/USDT:USDT | +11.54% | $10,714,359.47 |
-| FWDISTOCK/USDT:USDT | +10.83% | $3,377,056.49 |
-| BOTSTOCK/USDT:USDT | +10.29% | $2,554,018.21 |
+| SMCISTOCK/USDT:USDT | +20.06% | $2,773,100.12 |
+| FWDISTOCK/USDT:USDT | +13.09% | $3,452,888.91 |
+| SNXX/USDT:USDT | +13.04% | $1,379,648.69 |
+| BEAT/USDT:USDT | +10.90% | $10,837,345.09 |
+| BOTSTOCK/USDT:USDT | +10.76% | $2,575,607.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.48% | +4.55% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.42% | +2.50% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.20% |
-| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.15% |
-| MUU/USDT:USDT | below_1h_threshold | +1.65% | +1.72% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.48% | +4.62% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.27% | +3.41% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.27% |
+| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.21% |
+| MUU/USDT:USDT | below_1h_threshold | +1.65% | +1.79% |
 
 ## 7. 次に見るべき不足
 
