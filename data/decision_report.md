@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T02:26:31.624361+00:00
+- generated_at: 2026-07-21T02:31:22.730763+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9142**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T02:26:20.762299+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=65267.2
-- Funnel: target 885 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1, 4h RSI 74.9 >= 65=1
+- 更新: 2026-07-21T02:31:13.609824+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=65253.1
+- Funnel: target 885 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ERA/USDT:USDT | +56.54% | $1,436,931.96 |
-| JIMOTHY/USDT:USDT | +26.44% | $2,797,765.25 |
-| BLESS/USDT:USDT | +18.80% | $1,778,058.77 |
-| HEMI/USDT:USDT | +10.33% | $3,176,272.56 |
-| LDO/USDT:USDT | +9.12% | $6,243,451.61 |
+| ERA/USDT:USDT | +56.77% | $1,506,828.47 |
+| JIMOTHY/USDT:USDT | +29.07% | $2,800,540.74 |
+| BLESS/USDT:USDT | +14.19% | $1,896,283.27 |
+| HEMI/USDT:USDT | +12.11% | $3,181,075.72 |
+| LDO/USDT:USDT | +9.06% | $6,272,922.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.31% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.07% | +0.98% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.84% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.91% | +0.81% |
-| AKE/USDT:USDT | below_1h_threshold | +0.60% | +0.50% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.79% | +2.71% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.33% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.94% |
+| MYX/USDT:USDT | below_1h_threshold | +1.13% | +1.06% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
 
 ## 7. 次に見るべき不足
 
