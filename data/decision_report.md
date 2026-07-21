@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T00:16:19.906220+00:00
+- generated_at: 2026-07-21T00:21:13.542266+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9133**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T00:16:12.937158+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=65142.2
-- Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.1 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-21T00:21:06.994235+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=65315.7
+- Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +53.70% | $2,626,799.28 |
-| HEMI/USDT:USDT | +29.31% | $2,855,280.82 |
-| ON/USDT:USDT | +12.93% | $1,747,069.94 |
-| BLESS/USDT:USDT | +11.15% | $1,397,856.57 |
-| SOXS/USDT:USDT | +7.32% | $1,133,656.02 |
+| JIMOTHY/USDT:USDT | +46.50% | $2,636,320.05 |
+| HEMI/USDT:USDT | +27.45% | $2,869,803.37 |
+| BLESS/USDT:USDT | +12.10% | $1,426,271.57 |
+| ON/USDT:USDT | +8.37% | $1,781,116.03 |
+| LDO/USDT:USDT | +7.12% | $5,613,954.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +3.75% | +3.88% |
-| AKE/USDT:USDT | below_1h_threshold | +3.01% | +3.14% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.99% | +3.12% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.38% | +2.50% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.91% | +2.04% |
+| ANSEM/USDT:USDT | below_relative_strength | +5.05% | +4.91% |
+| HEMI/USDT:USDT | below_1h_threshold | +4.23% | +4.09% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.44% | +3.31% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.25% | +3.11% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.58% | +2.44% |
 
 ## 7. 次に見るべき不足
 
