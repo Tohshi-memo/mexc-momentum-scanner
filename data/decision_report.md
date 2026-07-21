@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T20:56:11.766924+00:00
+- generated_at: 2026-07-21T21:01:35.314900+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9204**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.03** / 初期 $100.00 (+1.03%)
-- 確定: 358件 (Win 123 / Loss 155 / Flat 80) / pending 3件 / skip 314件
+- 確定: 358件 (Win 123 / Loss 155 / Flat 80) / pending 5件 / skip 318件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000116 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LAB/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $101.03
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T20:56:05.187084+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=66388.7
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-21T21:01:23.878398+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=66325.8
+- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.8 >= 65=1, 4h RSI 71.0 >= 65=1, 4h RSI 77.5 >= 65=1, 4h RSI 69.0 >= 65=1, 4h RSI 66.8 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SMCISTOCK/USDT:USDT | +18.27% | $1,501,873.48 |
-| BEAT/USDT:USDT | +12.00% | $10,137,091.44 |
-| FWDISTOCK/USDT:USDT | +11.51% | $2,746,547.64 |
-| BOTSTOCK/USDT:USDT | +10.26% | $1,377,978.10 |
-| SNXX/USDT:USDT | +9.01% | $1,240,150.71 |
+| SMCISTOCK/USDT:USDT | +18.43% | $1,658,343.36 |
+| BEAT/USDT:USDT | +12.76% | $10,059,320.23 |
+| SNXX/USDT:USDT | +11.03% | $1,221,471.44 |
+| BOTSTOCK/USDT:USDT | +9.55% | $1,848,691.85 |
+| FWDISTOCK/USDT:USDT | +9.43% | $2,881,212.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.68% | +3.71% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.48% | +3.51% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.25% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.21% | +3.24% |
-| LIT/USDT:USDT | below_1h_threshold | +2.97% | +3.00% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.48% | +4.55% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.20% |
+| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.14% |
+| MUU/USDT:USDT | below_1h_threshold | +1.65% | +1.72% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.64% |
 
 ## 7. 次に見るべき不足
 
