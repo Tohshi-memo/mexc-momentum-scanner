@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T16:41:18.457165+00:00
+- generated_at: 2026-07-21T16:46:12.881140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9195**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T16:41:10.091621+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=66594.6
+- 更新: 2026-07-21T16:46:06.195477+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=66520.0
 - Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +8.08% | $118,786,257.00 |
-| MUU/USDT:USDT | +4.80% | $1,171,887.06 |
-| ALLO/USDT:USDT | +3.95% | $7,764,851.02 |
-| B/USDT:USDT | +3.89% | $9,943,414.99 |
-| RIF/USDT:USDT | +3.75% | $1,093,408.79 |
+| ZHIPUSTOCK/USDT:USDT | +32.12% | $3,556,008.74 |
+| KIOXIASTOCK/USDT:USDT | +19.88% | $1,377,458.16 |
+| KORU/USDT:USDT | +19.55% | $20,934,681.14 |
+| SOXL/USDT:USDT | +15.92% | $32,797,184.09 |
+| UB/USDT:USDT | +12.41% | $1,866,878.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.90% | +3.98% |
-| B/USDT:USDT | below_1h_threshold | +3.85% | +3.93% |
-| RIF/USDT:USDT | below_1h_threshold | +3.63% | +3.71% |
-| RE/USDT:USDT | below_1h_threshold | +3.03% | +3.11% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.47% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.79% | +3.98% |
+| RE/USDT:USDT | below_1h_threshold | +3.14% | +3.33% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.07% | +3.26% |
+| UB/USDT:USDT | below_1h_threshold | +2.76% | +2.95% |
+| B/USDT:USDT | below_1h_threshold | +2.57% | +2.76% |
 
 ## 7. 次に見るべき不足
 
