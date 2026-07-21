@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T04:56:19.826230+00:00
+- generated_at: 2026-07-21T05:01:16.298090+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9153**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T04:56:12.132979+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=65460.0
-- Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.0 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-21T05:01:11.574369+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=65482.0
+- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ERA/USDT:USDT | +69.65% | $4,092,728.09 |
-| JIMOTHY/USDT:USDT | +65.96% | $3,000,820.48 |
-| ZHIPUSTOCK/USDT:USDT | +22.56% | $1,638,388.62 |
-| LDO/USDT:USDT | +11.67% | $8,086,989.75 |
-| ESPORTS/USDT:USDT | +11.17% | $6,147,198.43 |
+| JIMOTHY/USDT:USDT | +78.42% | $3,022,545.23 |
+| ERA/USDT:USDT | +65.53% | $4,230,575.55 |
+| ZHIPUSTOCK/USDT:USDT | +24.30% | $1,638,330.46 |
+| ESPORTS/USDT:USDT | +13.58% | $5,303,634.72 |
+| LDO/USDT:USDT | +11.39% | $8,113,151.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.95% | +4.07% |
-| KORU/USDT:USDT | below_1h_threshold | +3.70% | +3.82% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.98% |
-| AKE/USDT:USDT | below_1h_threshold | +2.47% | +2.59% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.54% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.10% | +1.12% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
+| ERA/USDT:USDT | below_1h_threshold | +0.56% | +0.58% |
+| AKE/USDT:USDT | below_1h_threshold | +0.55% | +0.57% |
+| APT/USDT:USDT | below_1h_threshold | +0.43% | +0.45% |
 
 ## 7. 次に見るべき不足
 
