@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T00:11:20.630082+00:00
+- generated_at: 2026-07-21T00:16:19.906220+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9133**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.81** / 初期 $100.00 (+1.81%)
-- 確定: 330件 (Win 117 / Loss 144 / Flat 69) / pending 5件 / skip 270件
+- 確定: 330件 (Win 117 / Loss 144 / Flat 69) / pending 6件 / skip 270件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000320 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MVLL/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $101.81
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T00:11:14.070311+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=65150.0
-- Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-21T00:16:12.937158+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=65142.2
+- Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.1 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +53.27% | $2,622,338.60 |
-| HEMI/USDT:USDT | +24.81% | $2,838,049.58 |
-| ON/USDT:USDT | +11.84% | $1,723,517.54 |
-| BLESS/USDT:USDT | +10.73% | $1,389,583.23 |
-| SOXS/USDT:USDT | +7.65% | $1,129,567.73 |
+| JIMOTHY/USDT:USDT | +53.70% | $2,626,799.28 |
+| HEMI/USDT:USDT | +29.31% | $2,855,280.82 |
+| ON/USDT:USDT | +12.93% | $1,747,069.94 |
+| BLESS/USDT:USDT | +11.15% | $1,397,856.57 |
+| SOXS/USDT:USDT | +7.32% | $1,133,656.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.35% | +3.47% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.48% | +2.60% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.14% | +2.26% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.00% | +2.11% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.81% | +1.93% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.75% | +3.88% |
+| AKE/USDT:USDT | below_1h_threshold | +3.01% | +3.14% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.99% | +3.12% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.38% | +2.50% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.91% | +2.04% |
 
 ## 7. 次に見るべき不足
 
