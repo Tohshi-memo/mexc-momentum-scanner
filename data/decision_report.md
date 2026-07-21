@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T11:36:18.125970+00:00
+- generated_at: 2026-07-21T11:41:24.810118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9173**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.91** / 初期 $100.00 (+0.91%)
-- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 305件
+- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 306件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000256 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 1000BONK/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $100.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T11:36:11.377483+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=66239.9
-- Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-21T11:41:17.901993+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=66276.8
+- Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +86.59% | $4,715,600.68 |
-| ERA/USDT:USDT | +66.05% | $8,417,223.30 |
-| ZHIPUSTOCK/USDT:USDT | +30.76% | $3,208,001.17 |
-| ESPORTS/USDT:USDT | +27.62% | $6,311,603.60 |
-| LA/USDT:USDT | +18.12% | $1,003,534.45 |
+| JIMOTHY/USDT:USDT | +88.46% | $4,719,174.78 |
+| ERA/USDT:USDT | +63.76% | $8,532,062.84 |
+| ESPORTS/USDT:USDT | +35.98% | $6,413,395.06 |
+| ZHIPUSTOCK/USDT:USDT | +30.56% | $3,209,787.17 |
+| LA/USDT:USDT | +16.27% | $1,020,399.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.20% | +3.08% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.46% | +2.35% |
-| LA/USDT:USDT | below_1h_threshold | +1.80% | +1.68% |
-| LUNC/USDT:USDT | below_1h_threshold | +1.35% | +1.23% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.08% | +0.96% |
+| ERA/USDT:USDT | below_1h_threshold | +3.79% | +3.61% |
+| UB/USDT:USDT | below_1h_threshold | +3.61% | +3.43% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.95% | +1.77% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.71% | +1.53% |
+| LUNC/USDT:USDT | below_1h_threshold | +1.28% | +1.11% |
 
 ## 7. 次に見るべき不足
 
