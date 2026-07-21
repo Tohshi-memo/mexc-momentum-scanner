@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T22:51:18.121779+00:00
+- generated_at: 2026-07-21T22:56:14.723087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9219**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T22:51:10.116332+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=66249.9
+- 更新: 2026-07-21T22:56:07.874885+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=66269.8
 - Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
+- Strict後reject: 4h RSI 75.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SMCISTOCK/USDT:USDT | +20.22% | $3,173,497.77 |
-| FWDISTOCK/USDT:USDT | +14.88% | $3,843,071.50 |
-| SNXX/USDT:USDT | +10.32% | $1,778,044.36 |
-| NIGHT/USDT:USDT | +9.03% | $7,076,638.81 |
-| BOTSTOCK/USDT:USDT | +8.73% | $2,679,012.18 |
+| SMCISTOCK/USDT:USDT | +20.06% | $3,179,539.62 |
+| FWDISTOCK/USDT:USDT | +15.29% | $3,849,469.27 |
+| SNXX/USDT:USDT | +10.26% | $1,781,223.03 |
+| NIGHT/USDT:USDT | +9.35% | $7,105,443.43 |
+| BOTSTOCK/USDT:USDT | +8.44% | $2,680,436.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.28% | +3.43% |
-| PLAY/USDT:USDT | below_1h_threshold | +2.24% | +2.40% |
-| BANK/USDT:USDT | below_1h_threshold | +1.63% | +1.78% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.69% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.27% | +1.42% |
+| AKE/USDT:USDT | below_1h_threshold | +3.03% | +3.16% |
+| PLAY/USDT:USDT | below_1h_threshold | +2.13% | +2.26% |
+| BANK/USDT:USDT | below_1h_threshold | +2.05% | +2.17% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.61% | +1.74% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.66% |
 
 ## 7. 次に見るべき不足
 
