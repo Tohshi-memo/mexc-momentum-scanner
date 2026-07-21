@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T08:56:15.523723+00:00
+- generated_at: 2026-07-21T09:01:13.059703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9166**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T08:56:06.799177+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=66188.3
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-21T09:01:06.392375+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=66204.0
+- Funnel: target 885 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +118.91% | $4,313,100.44 |
-| ERA/USDT:USDT | +54.45% | $6,616,203.64 |
-| ZHIPUSTOCK/USDT:USDT | +34.85% | $3,047,400.38 |
-| ON/USDT:USDT | +12.74% | $2,751,474.97 |
-| ONDO/USDT:USDT | +10.88% | $39,848,847.96 |
+| JIMOTHY/USDT:USDT | +111.56% | $4,340,456.63 |
+| ERA/USDT:USDT | +54.59% | $6,634,330.57 |
+| ZHIPUSTOCK/USDT:USDT | +34.77% | $2,946,702.07 |
+| ON/USDT:USDT | +14.52% | $2,754,398.69 |
+| ESPORTS/USDT:USDT | +12.30% | $5,419,535.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.56% | +3.53% |
-| ON/USDT:USDT | below_1h_threshold | +2.78% | +2.75% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.72% |
-| ENS/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.37% | +1.33% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.52% | +2.52% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.15% | +2.14% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.10% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
 
 ## 7. 次に見るべき不足
 
