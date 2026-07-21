@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T16:26:19.887209+00:00
+- generated_at: 2026-07-21T16:31:21.130376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9193**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T16:26:11.097526+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=66562.1
+- 更新: 2026-07-21T16:31:11.808659+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=66470.7
 - Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +5.14% | $1,015,092.73 |
-| SNXX/USDT:USDT | +3.73% | $1,127,169.80 |
-| MUU/USDT:USDT | +3.68% | $1,138,921.57 |
-| BANK/USDT:USDT | +3.57% | $116,800,254.64 |
-| ALLO/USDT:USDT | +3.32% | $7,580,415.11 |
+| RIF/USDT:USDT | +5.57% | $1,025,045.38 |
+| ALLO/USDT:USDT | +3.42% | $7,671,455.25 |
+| MUU/USDT:USDT | +3.38% | $1,142,190.16 |
+| SNXX/USDT:USDT | +3.08% | $1,131,292.15 |
+| BULLA/USDT:USDT | +2.96% | $1,448,286.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.32% | +3.45% |
-| BANK/USDT:USDT | below_1h_threshold | +3.14% | +3.27% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.02% | +3.15% |
-| BILL/USDT:USDT | below_1h_threshold | +2.39% | +2.52% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.52% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.42% | +3.69% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.97% | +3.23% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.65% |
+| RE/USDT:USDT | below_1h_threshold | +2.23% | +2.49% |
+| UB/USDT:USDT | below_1h_threshold | +2.10% | +2.37% |
 
 ## 7. 次に見るべき不足
 
