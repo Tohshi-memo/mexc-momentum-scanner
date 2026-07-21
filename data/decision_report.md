@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T01:16:11.809843+00:00
+- generated_at: 2026-07-21T01:21:18.337949+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9136**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.63** / 初期 $100.00 (+1.63%)
-- 確定: 333件 (Win 118 / Loss 146 / Flat 69) / pending 4件 / skip 272件
+- 確定: 333件 (Win 118 / Loss 146 / Flat 69) / pending 5件 / skip 272件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000320 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $101.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T01:16:05.336425+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=65487.5
-- Funnel: target 885 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-21T01:21:09.778336+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=65411.4
+- Funnel: target 885 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +31.71% | $2,705,490.71 |
-| HEMI/USDT:USDT | +18.32% | $3,041,622.80 |
-| ESPORTS/USDT:USDT | +9.84% | $7,156,375.58 |
-| BLESS/USDT:USDT | +9.56% | $1,533,800.21 |
-| LDO/USDT:USDT | +9.06% | $5,883,387.41 |
+| JIMOTHY/USDT:USDT | +36.86% | $2,716,876.86 |
+| HEMI/USDT:USDT | +17.46% | $3,053,981.56 |
+| BLESS/USDT:USDT | +9.83% | $1,540,957.70 |
+| ESPORTS/USDT:USDT | +9.32% | $7,163,964.75 |
+| LDO/USDT:USDT | +9.17% | $5,954,734.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +2.95% | +3.03% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.12% | +2.21% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.85% | +1.93% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.47% | +1.55% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.12% | +1.21% |
+| UB/USDT:USDT | below_1h_threshold | +1.75% | +1.95% |
+| ON/USDT:USDT | below_1h_threshold | +1.64% | +1.84% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.09% | +1.29% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.21% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.16% |
 
 ## 7. 次に見るべき不足
 
