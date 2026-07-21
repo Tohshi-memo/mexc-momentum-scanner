@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T07:06:20.147874+00:00
+- generated_at: 2026-07-21T07:11:15.924742+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9158**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T07:06:12.412627+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65888.2
-- Funnel: target 885 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-21T07:11:09.342181+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=65846.1
+- Funnel: target 885 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +94.81% | $3,670,371.13 |
-| ERA/USDT:USDT | +52.79% | $5,465,455.23 |
-| ZHIPUSTOCK/USDT:USDT | +31.80% | $2,792,184.63 |
-| VVV/USDT:USDT | +12.41% | $1,546,141.05 |
-| LDO/USDT:USDT | +11.06% | $9,105,918.48 |
+| JIMOTHY/USDT:USDT | +99.56% | $3,692,863.89 |
+| ERA/USDT:USDT | +53.75% | $5,505,881.65 |
+| ZHIPUSTOCK/USDT:USDT | +30.72% | $2,810,115.76 |
+| VVV/USDT:USDT | +11.74% | $1,582,220.80 |
+| LDO/USDT:USDT | +10.95% | $9,109,522.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +3.46% | +3.46% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.83% | +1.84% |
-| ERA/USDT:USDT | below_1h_threshold | +1.78% | +1.79% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
-| ON/USDT:USDT | below_1h_threshold | +1.18% | +1.19% |
+| MVLL/USDT:USDT | below_1h_threshold | +3.46% | +3.53% |
+| ERA/USDT:USDT | below_1h_threshold | +2.37% | +2.44% |
+| US/USDT:USDT | below_1h_threshold | +2.19% | +2.26% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.80% |
 
 ## 7. 次に見るべき不足
 
