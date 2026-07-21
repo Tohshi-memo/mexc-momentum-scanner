@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T01:51:17.511341+00:00
+- generated_at: 2026-07-21T01:56:13.824486+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9137**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T01:51:09.086643+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=65263.9
-- Funnel: target 885 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-21T01:56:07.994083+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=65235.6
+- Funnel: target 885 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +36.77% | $2,751,379.96 |
-| HEMI/USDT:USDT | +13.45% | $3,118,405.12 |
-| BLESS/USDT:USDT | +10.73% | $1,624,800.67 |
-| ON/USDT:USDT | +10.39% | $1,925,319.79 |
-| LDO/USDT:USDT | +9.50% | $6,099,515.77 |
+| JIMOTHY/USDT:USDT | +34.05% | $2,754,454.71 |
+| HEMI/USDT:USDT | +14.43% | $3,123,631.80 |
+| BLESS/USDT:USDT | +11.41% | $1,625,832.69 |
+| ON/USDT:USDT | +9.76% | $1,928,533.40 |
+| LDO/USDT:USDT | +9.25% | $6,109,442.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.02% | +4.44% |
-| UB/USDT:USDT | below_1h_threshold | +3.71% | +4.14% |
-| SLX/USDT:USDT | below_1h_threshold | +1.64% | +2.07% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.54% | +1.97% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.46% | +1.89% |
+| UB/USDT:USDT | below_1h_threshold | +4.42% | +4.89% |
+| ON/USDT:USDT | below_1h_threshold | +3.24% | +3.71% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.04% | +2.51% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.85% | +2.32% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.07% | +1.54% |
 
 ## 7. 次に見るべき不足
 
