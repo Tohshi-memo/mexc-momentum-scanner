@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T00:01:19.345224+00:00
+- generated_at: 2026-07-21T00:06:19.205376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9133**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T00:01:12.788543+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=65176.9
-- Funnel: target 885 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-21T00:06:12.651614+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=65175.5
+- Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +48.75% | $2,609,202.53 |
-| HEMI/USDT:USDT | +23.69% | $2,809,498.05 |
-| ON/USDT:USDT | +11.50% | $1,702,998.92 |
-| BULLA/USDT:USDT | +8.83% | $1,113,292.71 |
-| BLESS/USDT:USDT | +8.83% | $1,379,955.72 |
+| JIMOTHY/USDT:USDT | +53.51% | $2,618,421.27 |
+| HEMI/USDT:USDT | +26.74% | $2,826,281.50 |
+| ON/USDT:USDT | +11.96% | $1,712,418.19 |
+| BLESS/USDT:USDT | +9.75% | $1,384,213.60 |
+| SOXS/USDT:USDT | +7.06% | $1,121,226.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +1.27% | +1.34% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.36% | +3.43% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.33% | +2.40% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.27% | +1.35% |
 | IRENSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.28% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
-| AKE/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
-| RENDER/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.07% | +1.15% |
 
 ## 7. 次に見るべき不足
 
