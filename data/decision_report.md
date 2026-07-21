@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T11:56:21.914688+00:00
+- generated_at: 2026-07-21T12:01:13.039561+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9173**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T11:56:15.060507+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=66300.0
-- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-21T12:01:07.778869+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=66336.0
+- Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +82.59% | $4,733,092.12 |
-| ERA/USDT:USDT | +62.51% | $8,710,179.10 |
-| ESPORTS/USDT:USDT | +35.93% | $6,566,258.86 |
-| ZHIPUSTOCK/USDT:USDT | +30.69% | $3,226,401.86 |
-| LA/USDT:USDT | +17.62% | $1,028,687.55 |
+| JIMOTHY/USDT:USDT | +84.32% | $4,739,031.28 |
+| ERA/USDT:USDT | +56.86% | $9,413,935.26 |
+| ESPORTS/USDT:USDT | +36.23% | $6,447,424.16 |
+| ZHIPUSTOCK/USDT:USDT | +32.38% | $3,164,434.69 |
+| LA/USDT:USDT | +14.66% | $1,064,825.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +3.25% | +3.04% |
-| B/USDT:USDT | below_1h_threshold | +3.25% | +3.04% |
-| UB/USDT:USDT | below_1h_threshold | +3.03% | +2.82% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.85% | +2.64% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.71% | +1.50% |
+| AXONSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.34% |
+| US/USDT:USDT | below_1h_threshold | +0.64% | +0.62% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.64% | +0.61% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.44% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.39% | +0.36% |
 
 ## 7. 次に見るべき不足
 
