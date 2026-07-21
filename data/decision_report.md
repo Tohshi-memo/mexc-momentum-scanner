@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T06:51:17.506521+00:00
+- generated_at: 2026-07-21T06:56:27.898604+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9157**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T06:51:08.189975+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=65902.3
-- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-21T06:56:17.690118+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=65888.0
+- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +107.10% | $3,571,828.92 |
-| ERA/USDT:USDT | +53.90% | $5,280,060.03 |
-| ZHIPUSTOCK/USDT:USDT | +31.14% | $2,859,796.71 |
-| VVV/USDT:USDT | +12.12% | $1,481,580.04 |
-| LDO/USDT:USDT | +10.72% | $9,017,955.28 |
+| JIMOTHY/USDT:USDT | +105.62% | $3,613,432.42 |
+| ERA/USDT:USDT | +53.94% | $5,337,712.36 |
+| ZHIPUSTOCK/USDT:USDT | +31.79% | $2,868,480.26 |
+| VVV/USDT:USDT | +12.70% | $1,541,013.53 |
+| LDO/USDT:USDT | +10.64% | $9,099,858.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_relative_strength | +5.09% | +4.82% |
-| DOT/USDT:USDT | below_1h_threshold | +1.89% | +1.62% |
-| UB/USDT:USDT | below_1h_threshold | +1.78% | +1.51% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.36% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.41% | +1.13% |
+| ONDO/USDT:USDT | below_1h_threshold | +4.05% | +3.80% |
+| UB/USDT:USDT | below_1h_threshold | +2.47% | +2.22% |
+| AKE/USDT:USDT | below_1h_threshold | +1.74% | +1.49% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.38% |
+| DOT/USDT:USDT | below_1h_threshold | +1.42% | +1.17% |
 
 ## 7. 次に見るべき不足
 
