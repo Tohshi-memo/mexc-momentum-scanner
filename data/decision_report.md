@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T20:21:14.215423+00:00
+- generated_at: 2026-07-21T20:26:18.513255+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9203**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T20:21:06.392404+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=66360.0
-- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-21T20:26:11.811103+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=66347.7
+- Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +12.34% | $9,274,585.76 |
-| TLM/USDT:USDT | +8.94% | $2,144,506.53 |
-| MYX/USDT:USDT | +8.51% | $2,705,916.44 |
-| SNXX/USDT:USDT | +6.76% | $1,159,266.61 |
-| BTW/USDT:USDT | +6.29% | $1,572,956.82 |
+| SMCISTOCK/USDT:USDT | +16.20% | $1,105,213.40 |
+| BEAT/USDT:USDT | +12.08% | $9,361,616.97 |
+| MYX/USDT:USDT | +9.03% | $2,714,131.85 |
+| TLM/USDT:USDT | +8.82% | $2,153,984.37 |
+| SNXX/USDT:USDT | +7.41% | $1,161,195.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.68% | +3.76% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.48% | +3.55% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.40% | +3.47% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.30% |
-| LIT/USDT:USDT | below_1h_threshold | +2.72% | +2.79% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.68% | +3.78% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.48% | +3.57% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.31% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.63% | +2.72% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.41% |
 
 ## 7. 次に見るべき不足
 
