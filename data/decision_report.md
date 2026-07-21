@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T06:31:13.713006+00:00
+- generated_at: 2026-07-21T06:36:12.542138+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9157**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T06:31:06.299561+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=65798.6
-- Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1
+- 更新: 2026-07-21T06:36:05.878653+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=65900.9
+- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +73.08% | $3,469,815.60 |
-| ERA/USDT:USDT | +64.15% | $5,025,203.29 |
-| ZHIPUSTOCK/USDT:USDT | +31.11% | $2,742,466.48 |
-| VVV/USDT:USDT | +12.52% | $1,385,973.86 |
-| LDO/USDT:USDT | +11.58% | $8,793,242.93 |
+| JIMOTHY/USDT:USDT | +72.10% | $3,481,795.22 |
+| ERA/USDT:USDT | +65.32% | $5,058,300.49 |
+| ZHIPUSTOCK/USDT:USDT | +30.51% | $2,788,857.38 |
+| VVV/USDT:USDT | +12.32% | $1,418,967.02 |
+| LDO/USDT:USDT | +11.58% | $8,800,180.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.52% |
-| UB/USDT:USDT | below_1h_threshold | +1.32% | +1.21% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.01% | +0.90% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.93% | +0.82% |
-| AXONSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.79% |
+| VVV/USDT:USDT | below_relative_strength | +5.25% | +4.98% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.36% |
+| B/USDT:USDT | below_1h_threshold | +1.19% | +0.92% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.01% | +0.75% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.01% | +0.74% |
 
 ## 7. 次に見るべき不足
 
