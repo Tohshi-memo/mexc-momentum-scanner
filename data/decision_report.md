@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T21:31:33.640082+00:00
+- generated_at: 2026-07-21T21:36:28.711935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9211**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T21:31:25.634150+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=66278.3
-- Funnel: target 885 → liquid 177 → pre 50 → checked 50 → surge 6 → strict 1
+- 更新: 2026-07-21T21:36:19.429253+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=66302.8
+- Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 6 → strict 1
 - Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.9 >= 65=1, 4h RSI 74.0 >= 65=1, 4h RSI 75.3 >= 65=1, 4h RSI 70.4 >= 65=1, 4h RSI 66.2 >= 65=1
+- Strict後reject: 4h RSI 85.8 >= 65=1, 4h RSI 74.3 >= 65=1, 4h RSI 75.8 >= 65=1, 4h RSI 70.0 >= 65=1, 4h RSI 67.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SMCISTOCK/USDT:USDT | +20.06% | $2,773,100.12 |
-| FWDISTOCK/USDT:USDT | +13.09% | $3,452,888.91 |
-| SNXX/USDT:USDT | +13.04% | $1,379,648.69 |
-| BEAT/USDT:USDT | +10.90% | $10,837,345.09 |
-| BOTSTOCK/USDT:USDT | +10.76% | $2,575,607.56 |
+| SMCISTOCK/USDT:USDT | +19.74% | $2,812,388.44 |
+| FWDISTOCK/USDT:USDT | +12.98% | $3,482,557.74 |
+| SNXX/USDT:USDT | +12.57% | $1,395,622.10 |
+| BEAT/USDT:USDT | +11.71% | $10,900,481.51 |
+| BOTSTOCK/USDT:USDT | +9.76% | $2,595,099.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.48% | +4.62% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.27% | +3.41% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.27% |
-| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.21% |
-| MUU/USDT:USDT | below_1h_threshold | +1.65% | +1.79% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.48% | +4.59% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.55% | +3.66% |
+| RE/USDT:USDT | below_1h_threshold | +2.77% | +2.88% |
+| B/USDT:USDT | below_1h_threshold | +2.64% | +2.74% |
+| BRKBSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.32% |
 
 ## 7. 次に見るべき不足
 
