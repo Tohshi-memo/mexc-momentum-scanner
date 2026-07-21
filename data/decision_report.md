@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T06:41:14.928353+00:00
+- generated_at: 2026-07-21T06:46:15.964174+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9157**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.91** / 初期 $100.00 (+0.91%)
-- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 286件
+- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 287件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000200 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 1000BONK/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $100.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T06:41:08.198080+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=65901.2
-- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-21T06:46:06.794860+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=65944.8
+- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +78.46% | $3,499,305.47 |
-| ERA/USDT:USDT | +64.24% | $5,088,108.65 |
-| ZHIPUSTOCK/USDT:USDT | +30.98% | $2,808,867.76 |
-| VVV/USDT:USDT | +12.11% | $1,450,132.16 |
-| LDO/USDT:USDT | +10.72% | $8,874,728.00 |
+| JIMOTHY/USDT:USDT | +84.37% | $3,523,518.84 |
+| ERA/USDT:USDT | +61.33% | $5,123,239.14 |
+| ZHIPUSTOCK/USDT:USDT | +31.70% | $2,849,808.89 |
+| VVV/USDT:USDT | +12.29% | $1,461,700.44 |
+| LDO/USDT:USDT | +10.95% | $8,994,727.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_relative_strength | +5.06% | +4.79% |
-| UB/USDT:USDT | below_1h_threshold | +1.87% | +1.60% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.72% | +1.45% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.36% |
-| DOT/USDT:USDT | below_1h_threshold | +1.30% | +1.03% |
+| VVV/USDT:USDT | below_relative_strength | +5.11% | +4.78% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.22% | +1.88% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.29% |
+| UB/USDT:USDT | below_1h_threshold | +1.62% | +1.28% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.19% | +0.85% |
 
 ## 7. 次に見るべき不足
 
