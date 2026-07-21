@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T08:21:21.799425+00:00
+- generated_at: 2026-07-21T08:26:24.165488+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9164**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.91** / 初期 $100.00 (+0.91%)
-- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 297件
+- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 298件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000289 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 1000BONK/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $100.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T08:21:13.753729+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=66280.0
-- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
+- 更新: 2026-07-21T08:26:16.878848+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=66253.0
+- Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +108.43% | $4,149,486.79 |
-| ERA/USDT:USDT | +57.92% | $6,409,664.07 |
-| ZHIPUSTOCK/USDT:USDT | +35.06% | $2,918,900.41 |
-| DEXE/USDT:USDT | +19.64% | $2,575,638.91 |
-| ESPORTS/USDT:USDT | +11.32% | $5,310,603.04 |
+| JIMOTHY/USDT:USDT | +113.51% | $4,173,792.05 |
+| ERA/USDT:USDT | +54.46% | $6,441,823.12 |
+| ZHIPUSTOCK/USDT:USDT | +35.36% | $2,927,522.96 |
+| DEXE/USDT:USDT | +12.69% | $2,667,845.45 |
+| ESPORTS/USDT:USDT | +11.89% | $5,346,544.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.90% | +4.73% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.58% |
-| ERA/USDT:USDT | below_1h_threshold | +2.08% | +1.91% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.88% | +0.71% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.57% | +0.40% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.62% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.76% | +0.63% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.57% | +0.44% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.52% | +0.39% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.32% |
 
 ## 7. 次に見るべき不足
 
