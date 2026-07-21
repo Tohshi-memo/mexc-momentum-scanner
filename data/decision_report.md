@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T23:41:06.337319+00:00
+- generated_at: 2026-07-21T23:46:13.250580+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9220**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.23** / 初期 $100.00 (+1.23%)
-- 確定: 366件 (Win 124 / Loss 155 / Flat 87) / pending 2件 / skip 324件
+- 確定: 366件 (Win 124 / Loss 155 / Flat 87) / pending 2件 / skip 325件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FWDISTOCK/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $101.23
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T23:41:01.240157+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=66413.1
-- Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-21T23:46:07.351958+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=66420.2
+- Funnel: target 885 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SMCISTOCK/USDT:USDT | +21.53% | $3,307,785.28 |
-| FWDISTOCK/USDT:USDT | +13.20% | $3,885,970.24 |
-| SNXX/USDT:USDT | +11.68% | $1,832,211.48 |
-| NIGHT/USDT:USDT | +9.26% | $6,725,587.38 |
-| BANK/USDT:USDT | +8.47% | $113,239,104.86 |
+| JIMOTHY/USDT:USDT | +22.23% | $3,611,572.10 |
+| SMCISTOCK/USDT:USDT | +21.41% | $3,343,268.82 |
+| FWDISTOCK/USDT:USDT | +12.03% | $3,890,761.55 |
+| SNXX/USDT:USDT | +11.56% | $1,832,573.39 |
+| BANK/USDT:USDT | +9.11% | $113,400,973.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.06% | +1.85% |
-| BANK/USDT:USDT | below_1h_threshold | +1.90% | +1.68% |
-| VVV/USDT:USDT | below_1h_threshold | +1.68% | +1.46% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.16% |
-| B/USDT:USDT | below_1h_threshold | +1.36% | +1.14% |
+| BANK/USDT:USDT | below_1h_threshold | +2.65% | +2.43% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.98% | +1.76% |
+| B/USDT:USDT | below_1h_threshold | +1.69% | +1.46% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.15% |
+| MYX/USDT:USDT | below_1h_threshold | +1.32% | +1.09% |
 
 ## 7. 次に見るべき不足
 
