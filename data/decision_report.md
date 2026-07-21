@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T10:31:15.457184+00:00
+- generated_at: 2026-07-21T10:36:15.272022+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9172**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T10:31:08.814506+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=66339.9
+- 更新: 2026-07-21T10:36:08.547374+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=66385.7
 - Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +103.45% | $4,579,762.94 |
-| ERA/USDT:USDT | +51.37% | $7,309,044.54 |
-| ZHIPUSTOCK/USDT:USDT | +30.56% | $3,102,527.66 |
-| ESPORTS/USDT:USDT | +26.96% | $5,938,811.02 |
-| ON/USDT:USDT | +16.80% | $3,247,580.50 |
+| JIMOTHY/USDT:USDT | +109.98% | $4,597,662.62 |
+| ERA/USDT:USDT | +51.80% | $7,348,520.20 |
+| ZHIPUSTOCK/USDT:USDT | +29.10% | $3,119,374.96 |
+| ESPORTS/USDT:USDT | +26.80% | $5,973,280.60 |
+| ON/USDT:USDT | +16.08% | $3,260,140.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.17% | +2.05% |
-| UB/USDT:USDT | below_1h_threshold | +2.01% | +1.89% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.96% | +1.84% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.88% | +1.76% |
-| ERA/USDT:USDT | below_1h_threshold | +1.77% | +1.65% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.25% | +4.06% |
+| US/USDT:USDT | below_1h_threshold | +2.07% | +1.88% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.00% | +1.82% |
+| ERA/USDT:USDT | below_1h_threshold | +2.00% | +1.81% |
+| UB/USDT:USDT | below_1h_threshold | +1.69% | +1.51% |
 
 ## 7. 次に見るべき不足
 
