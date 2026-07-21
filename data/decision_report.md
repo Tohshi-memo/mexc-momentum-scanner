@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T16:06:17.766483+00:00
+- generated_at: 2026-07-21T16:11:18.485532+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9193**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T16:06:09.960870+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=66690.6
-- Funnel: target 885 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-21T16:11:11.832546+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=66585.1
+- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +2.22% | $5,163,688.29 |
-| KORU/USDT:USDT | +1.49% | $20,854,435.19 |
-| SNXX/USDT:USDT | +1.42% | $1,090,283.55 |
-| MUSTOCK/USDT:USDT | +1.17% | $112,708,636.52 |
-| BULLA/USDT:USDT | +1.13% | $1,416,448.66 |
+| ONE/USDT:USDT | +3.92% | $2,759,006.11 |
+| MUU/USDT:USDT | +3.21% | $1,030,701.23 |
+| ALLO/USDT:USDT | +2.05% | $7,464,893.29 |
+| RE/USDT:USDT | +1.93% | $1,105,776.62 |
+| BANK/USDT:USDT | +1.86% | $115,678,368.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.32% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +1.84% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.62% | +1.56% |
-| COINBASE/USDT:USDT | below_1h_threshold | +1.40% | +1.33% |
-| SYN/USDT:USDT | below_1h_threshold | +1.17% | +1.11% |
+| ONE/USDT:USDT | below_1h_threshold | +4.12% | +4.21% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.39% | +2.48% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.12% | +2.21% |
+| UB/USDT:USDT | below_1h_threshold | +1.96% | +2.05% |
+| RE/USDT:USDT | below_1h_threshold | +1.93% | +2.03% |
 
 ## 7. 次に見るべき不足
 
