@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-21T23:51:20.292145+00:00
+- generated_at: 2026-07-21T23:56:17.251616+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9221**
+- closed shadow trades: **9222**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9221, expectancy=-0.01%
+- 全期間 MARKET基準: n=9222, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-1.11%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,19 +23,19 @@
 |---|---:|---:|---:|---:|
 | LIMIT_8PCT | 6/20 | 30.0% | +2.14% | **+0.64%** |
 | LIMIT_9PCT | 5/20 | 25.0% | +0.97% | **+0.24%** |
-| LIMIT_7PCT | 7/20 | 35.0% | +0.52% | **+0.18%** |
-| LIMIT_6PCT | 7/20 | 35.0% | +0.39% | **+0.14%** |
-| LIMIT_10PCT | 4/20 | 20.0% | -0.79% | **-0.16%** |
+| LIMIT_7PCT | 6/20 | 30.0% | +0.14% | **+0.04%** |
+| LIMIT_6PCT | 6/20 | 30.0% | +0.14% | **+0.04%** |
+| LIMIT_5PCT | 10/20 | 50.0% | +0.06% | **+0.03%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_3PCT_LONG | 12/20 | 60.0% | +2.75% | **+1.65%** |
+| LIMIT_3PCT_LONG | 13/20 | 65.0% | +3.16% | **+2.05%** |
 | LIMIT_5PCT_LONG | 9/20 | 45.0% | +3.18% | **+1.43%** |
+| LIMIT_4PCT_LONG | 10/20 | 50.0% | +2.28% | **+1.14%** |
 | LIMIT_FIB1272_LONG | 10/20 | 50.0% | +1.97% | **+0.99%** |
 | LIMIT_6PCT_LONG | 7/20 | 35.0% | +2.46% | **+0.86%** |
-| LIMIT_4PCT_LONG | 9/20 | 45.0% | +1.65% | **+0.74%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$419.29** / 初期 $100.00 (+319.29%)
-- 確定: 3250件 (Win 1021 / Loss 1039 / Flat 1190) / skip 2532件
+- 確定: 3250件 (Win 1021 / Loss 1039 / Flat 1190) / skip 2533件
 - 成長率目線: 平均log +0.000441 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BNCSTOCK/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $419.29
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$131.28** / 初期 $100.00 (+31.28%)
-- 確定: 1159件 (Win 312 / Loss 252 / Flat 595) / skip 1473件
+- 確定: 1159件 (Win 312 / Loss 252 / Flat 595) / skip 1474件
 - 成長率目線: 平均log +0.000235 / 幾何平均 +0.023% per trade / maxDD +3.89%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $131.28
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.23** / 初期 $100.00 (+1.23%)
-- 確定: 366件 (Win 124 / Loss 155 / Flat 87) / pending 4件 / skip 325件
+- 確定: 367件 (Win 124 / Loss 155 / Flat 88) / pending 4件 / skip 325件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000076 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: FWDISTOCK/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $101.23
+- 最新: JIMOTHY/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $101.23
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T23:51:12.200988+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=66459.0
+- 更新: 2026-07-21T23:56:08.677927+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=66525.2
 - Funnel: target 885 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 79.4 >= 65=1
+- Strict後reject: 4h RSI n/a=1, 4h RSI 79.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +29.18% | $3,668,113.75 |
-| SMCISTOCK/USDT:USDT | +21.17% | $3,347,578.50 |
-| FWDISTOCK/USDT:USDT | +12.55% | $3,901,201.51 |
-| SNXX/USDT:USDT | +11.62% | $1,833,235.63 |
-| BANK/USDT:USDT | +10.51% | $113,620,349.10 |
+| JIMOTHY/USDT:USDT | +29.63% | $3,717,997.72 |
+| SMCISTOCK/USDT:USDT | +21.81% | $3,351,914.73 |
+| FWDISTOCK/USDT:USDT | +12.46% | $3,903,571.38 |
+| SNXX/USDT:USDT | +11.86% | $1,837,598.09 |
+| BANK/USDT:USDT | +9.83% | $113,813,784.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.12% | +3.83% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.96% | +1.68% |
-| VVV/USDT:USDT | below_1h_threshold | +1.77% | +1.49% |
-| B/USDT:USDT | below_1h_threshold | +1.65% | +1.36% |
-| MYX/USDT:USDT | below_1h_threshold | +1.42% | +1.13% |
+| BANK/USDT:USDT | below_1h_threshold | +3.37% | +2.98% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.89% | +1.51% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.86% | +1.48% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.00% |
+| MYX/USDT:USDT | below_1h_threshold | +1.34% | +0.96% |
 
 ## 7. 次に見るべき不足
 
