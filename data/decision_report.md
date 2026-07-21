@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T13:56:32.071572+00:00
+- generated_at: 2026-07-21T14:01:21.165816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9177**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.91** / 初期 $100.00 (+0.91%)
-- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 311件
+- 確定: 341件 (Win 120 / Loss 152 / Flat 69) / pending 0件 / skip 312件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000286 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 1000BONK/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $100.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T13:56:22.692814+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=66716.5
-- Funnel: target 885 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1
+- 更新: 2026-07-21T14:01:14.328237+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=66719.9
+- Funnel: target 885 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +124.38% | $1,232,626.53 |
-| JIMOTHY/USDT:USDT | +84.73% | $4,978,929.95 |
-| ERA/USDT:USDT | +64.80% | $11,670,430.63 |
-| ESPORTS/USDT:USDT | +34.39% | $7,580,967.51 |
-| ZHIPUSTOCK/USDT:USDT | +34.09% | $3,261,518.18 |
+| PONS/USDT:USDT | +119.53% | $1,242,678.41 |
+| JIMOTHY/USDT:USDT | +78.12% | $4,963,121.89 |
+| ERA/USDT:USDT | +63.51% | $11,774,005.60 |
+| ESPORTS/USDT:USDT | +35.77% | $7,344,851.01 |
+| ZHIPUSTOCK/USDT:USDT | +34.25% | $3,249,782.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.88% | +4.60% |
-| UB/USDT:USDT | below_1h_threshold | +2.48% | +2.19% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.20% | +1.91% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.90% | +1.61% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.15% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.46% | +4.50% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +3.47% | +3.51% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.93% | +2.97% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.44% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.40% |
 
 ## 7. 次に見るべき不足
 
