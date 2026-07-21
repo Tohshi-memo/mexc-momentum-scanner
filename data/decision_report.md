@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T06:36:12.542138+00:00
+- generated_at: 2026-07-21T06:41:14.928353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9157**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T06:36:05.878653+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=65900.9
+- 更新: 2026-07-21T06:41:08.198080+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=65901.2
 - Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +72.10% | $3,481,795.22 |
-| ERA/USDT:USDT | +65.32% | $5,058,300.49 |
-| ZHIPUSTOCK/USDT:USDT | +30.51% | $2,788,857.38 |
-| VVV/USDT:USDT | +12.32% | $1,418,967.02 |
-| LDO/USDT:USDT | +11.58% | $8,800,180.23 |
+| JIMOTHY/USDT:USDT | +78.46% | $3,499,305.47 |
+| ERA/USDT:USDT | +64.24% | $5,088,108.65 |
+| ZHIPUSTOCK/USDT:USDT | +30.98% | $2,808,867.76 |
+| VVV/USDT:USDT | +12.11% | $1,450,132.16 |
+| LDO/USDT:USDT | +10.72% | $8,874,728.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_relative_strength | +5.25% | +4.98% |
+| VVV/USDT:USDT | below_relative_strength | +5.06% | +4.79% |
+| UB/USDT:USDT | below_1h_threshold | +1.87% | +1.60% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.72% | +1.45% |
 | KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.36% |
-| B/USDT:USDT | below_1h_threshold | +1.19% | +0.92% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.01% | +0.75% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.01% | +0.74% |
+| DOT/USDT:USDT | below_1h_threshold | +1.30% | +1.03% |
 
 ## 7. 次に見るべき不足
 
