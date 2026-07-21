@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T02:06:26.317523+00:00
+- generated_at: 2026-07-21T02:11:20.258051+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9138**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.45** / 初期 $100.00 (+1.45%)
-- 確定: 334件 (Win 118 / Loss 147 / Flat 69) / pending 6件 / skip 272件
+- 確定: 334件 (Win 118 / Loss 147 / Flat 69) / pending 6件 / skip 273件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000277 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: US/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $101.45
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T02:06:13.869265+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=65319.8
-- Funnel: target 885 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-07-21T02:11:10.693452+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=65264.1
+- Funnel: target 885 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +32.88% | $2,767,956.16 |
-| AKE/USDT:USDT | +14.12% | $19,327,889.29 |
-| BLESS/USDT:USDT | +11.23% | $1,618,901.15 |
-| HEMI/USDT:USDT | +10.66% | $3,144,608.50 |
-| LDO/USDT:USDT | +9.50% | $6,104,044.43 |
+| ERA/USDT:USDT | +47.62% | $1,065,730.04 |
+| JIMOTHY/USDT:USDT | +22.85% | $2,782,683.97 |
+| BLESS/USDT:USDT | +12.55% | $1,627,652.78 |
+| HEMI/USDT:USDT | +9.63% | $3,156,991.76 |
+| LDO/USDT:USDT | +8.95% | $6,108,542.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.23% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.83% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.07% | +0.90% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.07% | +0.90% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.76% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.32% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.57% | +1.49% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.34% | +1.25% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.07% | +0.98% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.85% |
 
 ## 7. 次に見るべき不足
 
