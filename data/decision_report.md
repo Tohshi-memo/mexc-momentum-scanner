@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T17:46:23.836798+00:00
+- generated_at: 2026-07-21T17:51:19.034367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9200**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T17:46:15.918613+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=66473.7
+- 更新: 2026-07-21T17:51:12.190402+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=66316.9
 - Funnel: target 885 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.5 >= 65=1
+- Strict後reject: 4h RSI 82.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +9.06% | $1,621,487.92 |
-| BANK/USDT:USDT | +5.16% | $117,886,912.28 |
-| TLM/USDT:USDT | +4.44% | $1,346,524.24 |
-| MUU/USDT:USDT | +3.94% | $1,380,027.63 |
-| AKE/USDT:USDT | +3.75% | $13,860,889.23 |
+| BANK/USDT:USDT | +8.68% | $118,162,471.19 |
+| TLM/USDT:USDT | +6.48% | $1,353,511.21 |
+| PONS/USDT:USDT | +6.09% | $1,633,410.26 |
+| AKE/USDT:USDT | +4.61% | $13,870,604.49 |
+| MUU/USDT:USDT | +4.38% | $1,385,391.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.86% | +4.91% |
-| SNXX/USDT:USDT | below_1h_threshold | +4.15% | +4.20% |
-| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.76% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.65% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.25% |
+| MUU/USDT:USDT | below_1h_threshold | +4.86% | +5.15% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.15% | +4.44% |
+| BANK/USDT:USDT | below_1h_threshold | +3.79% | +4.08% |
+| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.99% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.89% |
 
 ## 7. 次に見るべき不足
 
