@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-21T01:11:18.622826+00:00
+- generated_at: 2026-07-21T01:16:11.809843+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9136**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-21T01:11:10.957212+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=65603.2
+- 更新: 2026-07-21T01:16:05.336425+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=65487.5
 - Funnel: target 885 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +37.40% | $2,695,428.44 |
-| HEMI/USDT:USDT | +16.14% | $3,019,849.33 |
-| BLESS/USDT:USDT | +9.27% | $1,529,664.95 |
-| LDO/USDT:USDT | +8.98% | $5,856,028.85 |
-| ESPORTS/USDT:USDT | +8.40% | $7,149,719.66 |
+| JIMOTHY/USDT:USDT | +31.71% | $2,705,490.71 |
+| HEMI/USDT:USDT | +18.32% | $3,041,622.80 |
+| ESPORTS/USDT:USDT | +9.84% | $7,156,375.58 |
+| BLESS/USDT:USDT | +9.56% | $1,533,800.21 |
+| LDO/USDT:USDT | +9.06% | $5,883,387.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +1.49% | +1.40% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.39% | +1.29% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +0.92% |
-| SYN/USDT:USDT | below_1h_threshold | +0.97% | +0.88% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.90% | +0.81% |
+| UB/USDT:USDT | below_1h_threshold | +2.95% | +3.03% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.12% | +2.21% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.85% | +1.93% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.47% | +1.55% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.12% | +1.21% |
 
 ## 7. 次に見るべき不足
 
