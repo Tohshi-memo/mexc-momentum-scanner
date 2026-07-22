@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T12:51:26.876069+00:00
+- generated_at: 2026-07-22T12:56:23.923801+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9283**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T12:51:15.848584+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=65680.7
+- 更新: 2026-07-22T12:56:12.857664+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=65670.2
 - Funnel: target 888 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +38.56% | $3,465,703.98 |
-| RE/USDT:USDT | +25.80% | $11,261,989.15 |
-| AKE/USDT:USDT | +21.13% | $10,655,587.00 |
-| UB/USDT:USDT | +15.16% | $1,835,087.67 |
-| ZAMA/USDT:USDT | +13.77% | $1,338,777.22 |
+| JIMOTHY/USDT:USDT | +40.88% | $3,471,236.23 |
+| RE/USDT:USDT | +24.38% | $11,486,903.26 |
+| AKE/USDT:USDT | +22.58% | $10,908,524.24 |
+| UB/USDT:USDT | +15.39% | $1,850,089.31 |
+| TLM/USDT:USDT | +15.00% | $2,401,890.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.82% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.05% | +2.51% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.67% | +2.13% |
-| BANK/USDT:USDT | below_1h_threshold | +1.12% | +1.58% |
-| OPENAI/USDT:USDT | below_1h_threshold | +0.97% | +1.43% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.84% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.05% | +2.52% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +1.30% |
+| JTO/USDT:USDT | below_1h_threshold | +0.80% | +1.27% |
+| CMCSASTOCK/USDT:USDT | below_1h_threshold | +0.78% | +1.25% |
 
 ## 7. 次に見るべき不足
 
