@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T15:06:25.074284+00:00
+- generated_at: 2026-07-22T15:11:24.608043+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9289**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.72** / 初期 $100.00 (+1.72%)
-- 確定: 424件 (Win 142 / Loss 175 / Flat 107) / pending 4件 / skip 343件
+- 確定: 424件 (Win 142 / Loss 175 / Flat 107) / pending 4件 / skip 344件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000156 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTW/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $101.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T15:06:18.411690+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=65845.7
-- Funnel: target 890 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-22T15:11:17.762963+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=65879.3
+- Funnel: target 890 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +43.28% | $1,115,370.47 |
-| RE/USDT:USDT | +27.81% | $15,531,323.82 |
-| SMCISTOCK/USDT:USDT | +26.53% | $5,936,578.78 |
-| BLESS/USDT:USDT | +26.15% | $2,552,362.51 |
-| JIMOTHY/USDT:USDT | +21.88% | $3,458,722.10 |
+| BROCCOLIF3B/USDT:USDT | +41.15% | $1,142,722.82 |
+| RE/USDT:USDT | +28.94% | $15,631,148.35 |
+| JIMOTHY/USDT:USDT | +26.40% | $3,471,456.13 |
+| SMCISTOCK/USDT:USDT | +25.98% | $5,971,548.93 |
+| BLESS/USDT:USDT | +24.25% | $2,632,726.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.70% |
-| TLM/USDT:USDT | below_1h_threshold | +2.18% | +2.06% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.01% | +1.89% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.72% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.63% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.65% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.67% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.58% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.65% | +1.48% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.54% | +1.38% |
 
 ## 7. 次に見るべき不足
 
