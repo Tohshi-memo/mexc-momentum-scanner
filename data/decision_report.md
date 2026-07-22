@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T13:56:26.658054+00:00
+- generated_at: 2026-07-22T14:01:51.421263+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9284**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$102.26** / 初期 $100.00 (+2.26%)
-- 確定: 420件 (Win 142 / Loss 172 / Flat 106) / pending 5件 / skip 332件
+- 確定: 420件 (Win 142 / Loss 172 / Flat 106) / pending 6件 / skip 340件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000328 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TLM/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $102.26
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T13:56:19.269736+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=65895.0
-- Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 72.9 >= 65=1
+- 更新: 2026-07-22T14:01:33.974217+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65924.2
+- Funnel: target 890 → liquid 177 → pre 50 → checked 50 → surge 9 → strict 3
+- Surge前reject: below_1h_threshold=41, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.9 >= 65=1, 4h RSI 79.0 >= 65=1, 4h RSI 65.5 >= 65=1, 4h RSI 75.3 >= 65=1, 4h RSI 71.5 >= 65=1, 4h RSI 68.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +30.71% | $13,842,562.61 |
-| JIMOTHY/USDT:USDT | +29.21% | $3,479,041.76 |
-| SMCISTOCK/USDT:USDT | +23.63% | $5,123,694.29 |
-| CBRSSTOCK/USDT:USDT | +22.19% | $1,674,465.63 |
-| BLESS/USDT:USDT | +17.35% | $1,525,336.30 |
+| RE/USDT:USDT | +30.47% | $14,012,583.74 |
+| JIMOTHY/USDT:USDT | +28.93% | $3,385,200.51 |
+| SMCISTOCK/USDT:USDT | +25.30% | $5,183,734.84 |
+| CBRSSTOCK/USDT:USDT | +22.41% | $1,610,043.99 |
+| BLESS/USDT:USDT | +17.04% | $1,509,290.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +2.23% | +1.79% |
-| SILVER/USDT:USDT | below_1h_threshold | +2.03% | +1.59% |
-| LAB/USDT:USDT | below_1h_threshold | +1.96% | +1.52% |
-| BILL/USDT:USDT | below_1h_threshold | +1.89% | +1.45% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +1.28% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.76% | +4.76% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +4.63% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +4.53% | +4.53% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.51% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.91% | +3.90% |
 
 ## 7. 次に見るべき不足
 
