@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T21:11:21.427619+00:00
+- generated_at: 2026-07-22T21:16:25.149443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9323**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T21:11:14.605107+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65895.4
+- 更新: 2026-07-22T21:16:18.411694+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=65905.0
 - Funnel: target 890 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +68.30% | $4,671,618.84 |
-| BROCCOLIF3B/USDT:USDT | +18.68% | $1,753,770.26 |
-| BANK/USDT:USDT | +17.15% | $104,767,264.74 |
-| ON/USDT:USDT | +10.59% | $1,721,454.22 |
-| ZAMA/USDT:USDT | +8.75% | $2,274,904.80 |
+| JIMOTHY/USDT:USDT | +66.73% | $4,793,436.95 |
+| BROCCOLIF3B/USDT:USDT | +18.46% | $1,757,630.36 |
+| BANK/USDT:USDT | +16.89% | $104,962,484.77 |
+| ON/USDT:USDT | +9.59% | $1,726,826.15 |
+| ZAMA/USDT:USDT | +9.23% | $2,293,402.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.23% |
-| MUU/USDT:USDT | below_1h_threshold | +3.15% | +3.14% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.56% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.37% | +2.36% |
-| KORU/USDT:USDT | below_1h_threshold | +1.87% | +1.86% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.22% |
+| MUU/USDT:USDT | below_1h_threshold | +3.15% | +3.12% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.54% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.37% | +2.35% |
+| KORU/USDT:USDT | below_1h_threshold | +1.87% | +1.85% |
 
 ## 7. 次に見るべき不足
 
