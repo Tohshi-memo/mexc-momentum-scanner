@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T17:21:25.163284+00:00
+- generated_at: 2026-07-22T17:26:24.234749+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9298**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T17:21:18.374376+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=66028.6
+- 更新: 2026-07-22T17:26:17.246878+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=66000.4
 - Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +7.87% | $13,747,609.21 |
-| BANK/USDT:USDT | +6.04% | $90,997,319.03 |
-| BROCCOLIF3B/USDT:USDT | +4.52% | $1,559,240.55 |
-| RIF/USDT:USDT | +4.43% | $3,894,299.93 |
-| WLD/USDT:USDT | +4.32% | $33,261,455.53 |
+| DEXE/USDT:USDT | +7.11% | $13,849,673.07 |
+| BANK/USDT:USDT | +6.91% | $91,556,574.43 |
+| RIF/USDT:USDT | +5.25% | $3,898,010.18 |
+| BROCCOLIF3B/USDT:USDT | +4.94% | $1,565,228.00 |
+| WLD/USDT:USDT | +4.85% | $33,611,557.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.45% |
-| BANK/USDT:USDT | below_1h_threshold | +1.81% | +2.07% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.33% | +1.59% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.11% | +1.37% |
-| WLD/USDT:USDT | below_1h_threshold | +1.07% | +1.33% |
+| BANK/USDT:USDT | below_1h_threshold | +2.53% | +2.83% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.49% |
+| PROM/USDT:USDT | below_1h_threshold | +2.14% | +2.44% |
+| WLD/USDT:USDT | below_1h_threshold | +1.42% | +1.72% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.26% | +1.56% |
 
 ## 7. 次に見るべき不足
 
