@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T01:46:19.211776+00:00
+- generated_at: 2026-07-22T01:51:18.551971+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9231**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T01:46:14.545461+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=66337.5
+- 更新: 2026-07-22T01:51:11.733244+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=66427.7
 - Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.0 >= 65=1
+- Strict後reject: 4h RSI 84.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +27.16% | $3,967,468.40 |
-| PONS/USDT:USDT | +25.42% | $2,083,215.94 |
-| SMCISTOCK/USDT:USDT | +19.62% | $3,525,951.33 |
-| FWDISTOCK/USDT:USDT | +13.59% | $3,944,883.68 |
-| RE/USDT:USDT | +11.61% | $1,483,096.64 |
+| JIMOTHY/USDT:USDT | +32.65% | $3,981,335.41 |
+| PONS/USDT:USDT | +25.34% | $2,087,921.35 |
+| SMCISTOCK/USDT:USDT | +19.82% | $3,542,199.13 |
+| FWDISTOCK/USDT:USDT | +15.60% | $3,945,211.34 |
+| RE/USDT:USDT | +10.99% | $1,494,266.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.75% | +4.13% |
-| TLM/USDT:USDT | below_1h_threshold | +2.57% | +2.96% |
-| LAB/USDT:USDT | below_1h_threshold | +2.40% | +2.78% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.69% | +2.07% |
-| US/USDT:USDT | below_1h_threshold | +1.68% | +2.06% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.70% | +3.95% |
+| OPENAI/USDT:USDT | below_1h_threshold | +2.40% | +2.65% |
+| LAB/USDT:USDT | below_1h_threshold | +1.77% | +2.01% |
+| TLM/USDT:USDT | below_1h_threshold | +1.62% | +1.86% |
+| XPT/USDT:USDT | below_1h_threshold | +1.43% | +1.68% |
 
 ## 7. 次に見るべき不足
 
