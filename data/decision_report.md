@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T21:56:25.503241+00:00
+- generated_at: 2026-07-22T22:01:14.536689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9326**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T21:56:17.371252+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=66021.4
-- Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.4 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-22T22:01:09.324977+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=66014.9
+- Funnel: target 890 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +79.22% | $5,297,158.03 |
-| BANK/USDT:USDT | +20.38% | $107,103,555.74 |
-| BROCCOLIF3B/USDT:USDT | +17.05% | $1,790,764.33 |
-| RIF/USDT:USDT | +13.66% | $4,194,731.92 |
-| ON/USDT:USDT | +12.88% | $1,930,731.82 |
+| JIMOTHY/USDT:USDT | +79.42% | $5,284,670.26 |
+| BANK/USDT:USDT | +19.62% | $105,775,178.58 |
+| BROCCOLIF3B/USDT:USDT | +17.53% | $1,788,587.27 |
+| RIF/USDT:USDT | +13.56% | $4,312,306.20 |
+| ON/USDT:USDT | +11.45% | $1,906,878.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TLM/USDT:USDT | below_1h_threshold | +4.48% | +4.27% |
-| RIF/USDT:USDT | below_1h_threshold | +3.42% | +3.22% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.04% |
-| MUU/USDT:USDT | below_1h_threshold | +3.15% | +2.95% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.95% | +2.75% |
+| KORU/USDT:USDT | below_1h_threshold | +2.69% | +2.72% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.08% |
+| DRAM/USDT:USDT | below_1h_threshold | +0.97% | +1.00% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.99% |
 
 ## 7. 次に見るべき不足
 
