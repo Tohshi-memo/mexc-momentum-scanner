@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T17:26:24.234749+00:00
+- generated_at: 2026-07-22T17:31:26.503417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9298**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.55** / 初期 $100.00 (+1.55%)
-- 確定: 425件 (Win 142 / Loss 176 / Flat 107) / pending 3件 / skip 351件
+- 確定: 425件 (Win 142 / Loss 176 / Flat 107) / pending 3件 / skip 352件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000171 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $101.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T17:26:17.246878+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=66000.4
-- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-22T17:31:19.133181+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=65973.5
+- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +7.11% | $13,849,673.07 |
-| BANK/USDT:USDT | +6.91% | $91,556,574.43 |
-| RIF/USDT:USDT | +5.25% | $3,898,010.18 |
-| BROCCOLIF3B/USDT:USDT | +4.94% | $1,565,228.00 |
-| WLD/USDT:USDT | +4.85% | $33,611,557.88 |
+| BANK/USDT:USDT | +7.71% | $92,061,987.11 |
+| DEXE/USDT:USDT | +6.40% | $13,914,274.64 |
+| BROCCOLIF3B/USDT:USDT | +4.76% | $1,570,221.66 |
+| WLD/USDT:USDT | +4.50% | $33,870,017.20 |
+| RIF/USDT:USDT | +4.15% | $3,902,140.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +2.53% | +2.83% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.49% |
-| PROM/USDT:USDT | below_1h_threshold | +2.14% | +2.44% |
-| WLD/USDT:USDT | below_1h_threshold | +1.42% | +1.72% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.26% | +1.56% |
+| BANK/USDT:USDT | below_1h_threshold | +3.26% | +3.60% |
+| PROM/USDT:USDT | below_1h_threshold | +2.41% | +2.75% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.53% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.01% | +2.35% |
+| WLD/USDT:USDT | below_1h_threshold | +1.22% | +1.56% |
 
 ## 7. 次に見るべき不足
 
