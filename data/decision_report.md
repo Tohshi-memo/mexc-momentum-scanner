@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T00:41:19.195320+00:00
+- generated_at: 2026-07-22T00:46:21.168542+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9228**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T00:41:12.085933+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=66666.1
-- Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.4 >= 65=1
+- 更新: 2026-07-22T00:46:14.398622+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=66683.8
+- Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +33.34% | $3,846,548.84 |
-| BANK/USDT:USDT | +23.08% | $115,681,513.84 |
-| PONS/USDT:USDT | +22.47% | $1,955,933.10 |
-| SMCISTOCK/USDT:USDT | +20.69% | $3,432,634.90 |
-| FWDISTOCK/USDT:USDT | +11.98% | $3,926,192.52 |
+| JIMOTHY/USDT:USDT | +35.35% | $3,866,946.76 |
+| SMCISTOCK/USDT:USDT | +20.65% | $3,435,705.63 |
+| PONS/USDT:USDT | +20.01% | $1,964,305.92 |
+| BANK/USDT:USDT | +11.99% | $116,477,835.73 |
+| FWDISTOCK/USDT:USDT | +11.49% | $3,930,982.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +4.28% | +4.06% |
-| RE/USDT:USDT | below_1h_threshold | +3.36% | +3.15% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.64% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.20% | +1.98% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.71% |
+| LAB/USDT:USDT | below_1h_threshold | +4.57% | +4.33% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.61% |
+| RE/USDT:USDT | below_1h_threshold | +2.58% | +2.34% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.30% | +2.06% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.68% |
 
 ## 7. 次に見るべき不足
 
