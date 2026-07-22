@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T16:16:20.894242+00:00
+- generated_at: 2026-07-22T16:21:17.330359+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9296**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T16:16:12.802726+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=66030.7
-- Funnel: target 890 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-22T16:21:12.609482+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=66006.4
+- Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +5.97% | $91,960,617.08 |
-| BLESS/USDT:USDT | +3.34% | $4,059,388.33 |
-| ZAMA/USDT:USDT | +2.25% | $1,676,621.45 |
-| SNXX/USDT:USDT | +1.93% | $2,263,831.51 |
-| RIF/USDT:USDT | +1.81% | $4,015,772.35 |
+| BANK/USDT:USDT | +7.08% | $92,673,171.44 |
+| RIF/USDT:USDT | +2.49% | $4,033,003.44 |
+| ZAMA/USDT:USDT | +1.91% | $1,693,792.64 |
+| BROCCOLIF3B/USDT:USDT | +1.84% | $1,452,269.19 |
+| ZHIPUSTOCK/USDT:USDT | +1.83% | $2,343,253.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.85% | +3.83% |
-| NVDL/USDT:USDT | below_1h_threshold | +3.75% | +3.72% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.50% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.93% | +1.90% |
+| NVDL/USDT:USDT | below_1h_threshold | +3.75% | +3.76% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.54% |
+| RIF/USDT:USDT | below_1h_threshold | +2.52% | +2.53% |
+| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +1.96% | +1.97% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
 
 ## 7. 次に見るべき不足
 
