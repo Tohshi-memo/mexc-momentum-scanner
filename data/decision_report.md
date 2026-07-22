@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T06:11:23.337563+00:00
+- generated_at: 2026-07-22T06:16:24.570952+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9258**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$102.37** / 初期 $100.00 (+2.37%)
-- 確定: 399件 (Win 137 / Loss 163 / Flat 99) / pending 3件 / skip 326件
+- 確定: 399件 (Win 137 / Loss 163 / Flat 99) / pending 4件 / skip 326件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000370 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: QNTSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $102.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T06:11:16.454279+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=65865.5
-- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1
+- 更新: 2026-07-22T06:16:17.214653+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=65930.9
+- Funnel: target 887 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +35.72% | $3,962,038.56 |
-| LAB/USDT:USDT | +20.89% | $11,554,811.41 |
-| SMCISTOCK/USDT:USDT | +17.71% | $4,075,246.53 |
-| RE/USDT:USDT | +15.79% | $2,554,757.54 |
-| QNTSTOCK/USDT:USDT | +13.97% | $5,105,803.55 |
+| JIMOTHY/USDT:USDT | +34.76% | $3,968,821.43 |
+| DODO/USDT:USDT | +28.32% | $1,007,475.78 |
+| SMCISTOCK/USDT:USDT | +17.79% | $4,077,609.41 |
+| LAB/USDT:USDT | +16.55% | $11,768,826.36 |
+| RE/USDT:USDT | +14.86% | $2,569,045.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.28% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.86% |
-| AKE/USDT:USDT | below_1h_threshold | +1.16% | +1.30% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.07% | +1.20% |
-| ENS/USDT:USDT | below_1h_threshold | +0.72% | +0.86% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.18% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.99% | +2.02% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.76% |
+| AKE/USDT:USDT | below_1h_threshold | +1.55% | +1.59% |
+| ENS/USDT:USDT | below_1h_threshold | +0.77% | +0.80% |
 
 ## 7. 次に見るべき不足
 
