@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T13:46:18.541060+00:00
+- generated_at: 2026-07-22T13:51:20.347500+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9284**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T13:46:12.555522+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=65897.6
-- Funnel: target 890 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-07-22T13:51:12.915902+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=65850.0
+- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1, 4h RSI 73.2 >= 65=1
+- Strict後reject: 4h RSI 71.1 >= 65=1, 4h RSI 73.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +31.06% | $13,471,531.55 |
-| JIMOTHY/USDT:USDT | +28.84% | $3,463,060.11 |
-| SMCISTOCK/USDT:USDT | +21.89% | $5,011,869.97 |
-| BLESS/USDT:USDT | +18.36% | $1,445,672.78 |
-| CBRSSTOCK/USDT:USDT | +17.59% | $1,443,539.07 |
+| RE/USDT:USDT | +31.33% | $13,680,313.12 |
+| JIMOTHY/USDT:USDT | +30.08% | $3,473,240.14 |
+| SMCISTOCK/USDT:USDT | +23.16% | $5,057,109.48 |
+| CBRSSTOCK/USDT:USDT | +19.74% | $1,566,252.00 |
+| BLESS/USDT:USDT | +18.11% | $1,500,296.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +3.88% | +3.43% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.26% | +1.81% |
-| LAB/USDT:USDT | below_1h_threshold | +1.96% | +1.51% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.81% | +1.36% |
-| MIRA/USDT:USDT | below_1h_threshold | +1.51% | +1.06% |
+| LAB/USDT:USDT | below_1h_threshold | +2.70% | +2.33% |
+| BILL/USDT:USDT | below_1h_threshold | +1.97% | +1.60% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.96% | +1.59% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.80% | +1.43% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.72% | +1.35% |
 
 ## 7. 次に見るべき不足
 
