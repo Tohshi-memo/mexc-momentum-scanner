@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T19:26:29.463487+00:00
+- generated_at: 2026-07-22T19:31:21.790843+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9313**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T19:26:20.277149+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=65828.1
-- Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-07-22T19:31:14.978405+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=65875.4
+- Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +35.47% | $3,693,716.66 |
-| BANK/USDT:USDT | +26.35% | $99,458,369.31 |
-| ON/USDT:USDT | +12.82% | $1,307,039.73 |
-| BROCCOLIF3B/USDT:USDT | +10.76% | $1,654,264.87 |
-| ZAMA/USDT:USDT | +4.36% | $2,039,967.80 |
+| JIMOTHY/USDT:USDT | +25.45% | $3,730,313.22 |
+| BANK/USDT:USDT | +25.13% | $100,223,249.90 |
+| ON/USDT:USDT | +13.45% | $1,361,359.43 |
+| BROCCOLIF3B/USDT:USDT | +8.95% | $1,657,975.32 |
+| RE/USDT:USDT | +4.82% | $19,314,069.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.79% | +3.85% |
-| RIF/USDT:USDT | below_1h_threshold | +1.47% | +1.52% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
-| PROM/USDT:USDT | below_1h_threshold | +0.93% | +0.98% |
-| RAVE/USDT:USDT | below_1h_threshold | +0.65% | +0.70% |
+| ON/USDT:USDT | below_1h_threshold | +4.37% | +4.35% |
+| RIF/USDT:USDT | below_1h_threshold | +2.92% | +2.90% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.82% | +0.80% |
+| ENA/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
 
 ## 7. 次に見るべき不足
 
