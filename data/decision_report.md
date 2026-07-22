@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T18:56:30.837496+00:00
+- generated_at: 2026-07-22T19:01:19.829030+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9310**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T18:56:22.209608+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=65886.6
-- Funnel: target 890 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-22T19:01:13.117410+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=65886.0
+- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +28.21% | $3,542,730.81 |
-| BANK/USDT:USDT | +16.68% | $99,198,916.05 |
-| BROCCOLIF3B/USDT:USDT | +10.60% | $1,643,564.23 |
-| ON/USDT:USDT | +9.94% | $1,182,340.66 |
-| WLD/USDT:USDT | +4.29% | $36,623,080.15 |
+| JIMOTHY/USDT:USDT | +25.75% | $3,499,906.32 |
+| BANK/USDT:USDT | +17.05% | $96,592,126.41 |
+| BROCCOLIF3B/USDT:USDT | +10.16% | $1,641,684.90 |
+| ON/USDT:USDT | +8.79% | $1,171,850.51 |
+| RE/USDT:USDT | +4.22% | $18,765,066.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.16% | +4.33% |
-| RE/USDT:USDT | below_1h_threshold | +1.90% | +2.06% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.73% | +1.90% |
-| HYPE/USDT:USDT | below_1h_threshold | +1.12% | +1.29% |
-| APT/USDT:USDT | below_1h_threshold | +1.04% | +1.21% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.05% | +1.01% |
+| SPOTSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
+| BANK/USDT:USDT | below_1h_threshold | +0.34% | +0.31% |
 
 ## 7. 次に見るべき不足
 
