@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T06:41:14.226091+00:00
+- generated_at: 2026-07-22T06:46:17.476246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9258**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T06:41:09.550240+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=65907.7
+- 更新: 2026-07-22T06:46:10.755020+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=65923.7
 - Funnel: target 888 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- Strict後reject: 4h RSI 78.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +35.12% | $4,006,677.43 |
-| DODO/USDT:USDT | +26.18% | $1,267,840.25 |
-| SMCISTOCK/USDT:USDT | +17.83% | $4,113,380.34 |
-| RE/USDT:USDT | +17.73% | $2,657,797.85 |
-| LAB/USDT:USDT | +16.85% | $12,451,217.25 |
+| JIMOTHY/USDT:USDT | +32.63% | $4,011,569.70 |
+| DODO/USDT:USDT | +26.06% | $1,296,619.08 |
+| RE/USDT:USDT | +18.45% | $2,705,376.87 |
+| LAB/USDT:USDT | +17.73% | $12,553,967.18 |
+| SMCISTOCK/USDT:USDT | +17.56% | $4,116,862.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +4.42% | +4.49% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.56% | +2.63% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.21% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.80% |
-| OPN/USDT:USDT | below_1h_threshold | +1.70% | +1.77% |
+| DODO/USDT:USDT | below_1h_threshold | +4.13% | +4.17% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.98% | +3.03% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.19% |
+| RE/USDT:USDT | below_1h_threshold | +2.08% | +2.13% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.77% |
 
 ## 7. 次に見るべき不足
 
