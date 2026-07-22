@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T08:06:18.320247+00:00
+- generated_at: 2026-07-22T08:11:21.807521+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9260**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T08:06:10.682342+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=65985.5
+- 更新: 2026-07-22T08:11:14.310558+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=66011.8
 - Funnel: target 888 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.2 >= 65=1
+- Strict後reject: 4h RSI 80.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +38.09% | $3,429,570.14 |
-| ERA/USDT:USDT | +28.53% | $10,867,184.33 |
-| RE/USDT:USDT | +21.91% | $4,051,586.93 |
-| SMCISTOCK/USDT:USDT | +17.52% | $4,244,707.70 |
-| AKE/USDT:USDT | +15.69% | $10,967,828.49 |
+| JIMOTHY/USDT:USDT | +36.43% | $3,438,483.95 |
+| ERA/USDT:USDT | +33.44% | $11,245,992.49 |
+| RE/USDT:USDT | +20.17% | $4,101,463.62 |
+| SMCISTOCK/USDT:USDT | +16.24% | $4,248,154.72 |
+| AKE/USDT:USDT | +14.23% | $11,058,471.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +1.86% | +1.60% |
-| MYX/USDT:USDT | below_1h_threshold | +1.52% | +1.26% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.42% | +1.16% |
-| BOTSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.06% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.26% | +1.00% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.86% | +1.56% |
+| BOTSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.02% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.29% | +0.99% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.26% | +0.96% |
+| JTO/USDT:USDT | below_1h_threshold | +1.06% | +0.76% |
 
 ## 7. 次に見るべき不足
 
