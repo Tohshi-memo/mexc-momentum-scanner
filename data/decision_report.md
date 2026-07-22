@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T05:51:16.354320+00:00
+- generated_at: 2026-07-22T05:56:17.667663+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9256**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T05:51:08.364593+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=65963.3
+- 更新: 2026-07-22T05:56:10.892869+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.61% price=65944.5
 - Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +35.54% | $11,037,464.92 |
-| JIMOTHY/USDT:USDT | +29.08% | $4,256,873.44 |
-| SMCISTOCK/USDT:USDT | +18.19% | $4,057,315.43 |
-| RE/USDT:USDT | +15.28% | $2,495,203.02 |
-| BANK/USDT:USDT | +13.74% | $125,099,891.59 |
+| JIMOTHY/USDT:USDT | +34.23% | $4,267,064.06 |
+| LAB/USDT:USDT | +33.18% | $11,238,840.88 |
+| SMCISTOCK/USDT:USDT | +18.83% | $4,063,696.33 |
+| RE/USDT:USDT | +15.58% | $2,503,050.73 |
+| BNCSTOCK/USDT:USDT | +12.83% | $2,858,012.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.70% | +4.29% |
-| BILL/USDT:USDT | below_1h_threshold | +3.68% | +4.26% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.80% | +3.38% |
-| OPENAI/USDT:USDT | below_1h_threshold | +2.48% | +3.06% |
-| LAB/USDT:USDT | below_1h_threshold | +2.22% | +2.80% |
+| OPENAI/USDT:USDT | below_1h_threshold | +3.48% | +4.09% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.14% | +3.75% |
+| AKE/USDT:USDT | below_1h_threshold | +2.92% | +3.53% |
+| BILL/USDT:USDT | below_1h_threshold | +2.47% | +3.08% |
+| JTO/USDT:USDT | below_1h_threshold | +1.20% | +1.81% |
 
 ## 7. 次に見るべき不足
 
