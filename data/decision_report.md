@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T19:36:20.410974+00:00
+- generated_at: 2026-07-22T19:41:21.764030+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9314**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T19:36:12.381180+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=65894.8
-- Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-22T19:41:16.168116+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=65877.5
+- Funnel: target 890 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +24.05% | $3,758,844.42 |
-| BANK/USDT:USDT | +23.90% | $100,714,945.37 |
-| ON/USDT:USDT | +11.89% | $1,398,611.18 |
-| BROCCOLIF3B/USDT:USDT | +10.94% | $1,661,529.66 |
-| RE/USDT:USDT | +4.88% | $19,353,900.87 |
+| BANK/USDT:USDT | +22.86% | $101,263,744.86 |
+| JIMOTHY/USDT:USDT | +22.19% | $3,787,070.59 |
+| ON/USDT:USDT | +11.92% | $1,422,693.36 |
+| BROCCOLIF3B/USDT:USDT | +10.73% | $1,663,020.90 |
+| RE/USDT:USDT | +4.29% | $19,439,711.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.79% | +2.74% |
-| RIF/USDT:USDT | below_1h_threshold | +2.58% | +2.53% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.43% | +1.38% |
-| ENA/USDT:USDT | below_1h_threshold | +1.35% | +1.31% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.05% | +1.00% |
+| ON/USDT:USDT | below_1h_threshold | +3.00% | +2.98% |
+| RIF/USDT:USDT | below_1h_threshold | +1.57% | +1.55% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.50% | +1.48% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.26% | +1.24% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
 
 ## 7. 次に見るべき不足
 
