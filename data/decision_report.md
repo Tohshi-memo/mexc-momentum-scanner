@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T16:41:17.883349+00:00
+- generated_at: 2026-07-22T16:46:20.141819+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9297**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T16:41:11.123383+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=66291.6
-- Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-22T16:46:13.591835+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=66250.8
+- Funnel: target 890 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1
+- Strict後reject: 4h RSI 67.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +7.23% | $1,501,486.41 |
-| RIF/USDT:USDT | +4.99% | $4,058,731.30 |
-| BANK/USDT:USDT | +3.15% | $95,345,960.87 |
-| BLESS/USDT:USDT | +2.95% | $4,150,696.81 |
-| LAB/USDT:USDT | +2.40% | $15,643,803.52 |
+| BROCCOLIF3B/USDT:USDT | +8.71% | $1,507,116.09 |
+| RIF/USDT:USDT | +3.79% | $4,065,414.74 |
+| WLD/USDT:USDT | +3.77% | $30,585,046.10 |
+| BANK/USDT:USDT | +3.67% | $95,572,501.72 |
+| BLESS/USDT:USDT | +3.37% | $4,170,987.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +5.00% | +4.58% |
-| BANK/USDT:USDT | below_1h_threshold | +3.08% | +2.66% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.96% | +2.54% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.11% |
-| LAB/USDT:USDT | below_1h_threshold | +2.28% | +1.86% |
+| RIF/USDT:USDT | below_1h_threshold | +3.87% | +3.51% |
+| WLD/USDT:USDT | below_1h_threshold | +3.75% | +3.39% |
+| BANK/USDT:USDT | below_1h_threshold | +3.42% | +3.07% |
+| LAB/USDT:USDT | below_1h_threshold | +3.08% | +2.72% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.05% | +2.69% |
 
 ## 7. 次に見るべき不足
 
