@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T01:11:23.354646+00:00
+- generated_at: 2026-07-22T01:16:18.193147+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9231**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T01:11:15.136683+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=66523.1
-- Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-22T01:16:11.433330+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=66438.1
+- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1
+- Strict後reject: 4h RSI 84.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +29.74% | $2,010,049.60 |
-| JIMOTHY/USDT:USDT | +27.19% | $3,890,467.48 |
-| SMCISTOCK/USDT:USDT | +19.66% | $3,491,995.72 |
-| FWDISTOCK/USDT:USDT | +12.14% | $3,933,979.61 |
-| NIGHT/USDT:USDT | +11.70% | $6,110,919.60 |
+| JIMOTHY/USDT:USDT | +30.76% | $3,904,372.76 |
+| PONS/USDT:USDT | +27.58% | $2,029,498.81 |
+| SMCISTOCK/USDT:USDT | +19.98% | $3,497,800.04 |
+| FWDISTOCK/USDT:USDT | +12.01% | $3,934,773.01 |
+| NIGHT/USDT:USDT | +11.38% | $6,126,767.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.29% |
-| LAB/USDT:USDT | below_1h_threshold | +2.83% | +2.93% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.19% | +1.30% |
-| KORU/USDT:USDT | below_1h_threshold | +0.98% | +1.09% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.82% |
+| LAB/USDT:USDT | below_1h_threshold | +4.59% | +4.82% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.19% | +3.42% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.10% | +1.33% |
+| KORU/USDT:USDT | below_1h_threshold | +0.98% | +1.21% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.83% | +1.07% |
 
 ## 7. 次に見るべき不足
 
