@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T14:42:04.349443+00:00
+- generated_at: 2026-07-22T14:47:00.050442+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9288**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T14:41:45.988428+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=65642.9
-- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 9 → strict 4
-- Surge前reject: below_1h_threshold=41, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 78.9 >= 65=1, 4h RSI 73.5 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 69.5 >= 65=1
+- 更新: 2026-07-22T14:46:42.567079+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=65636.7
+- Funnel: target 890 → liquid 183 → pre 50 → checked 50 → surge 10 → strict 4
+- Surge前reject: below_1h_threshold=40, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 73.4 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 74.8 >= 65=1, 4h RSI 69.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +37.35% | $1,005,408.33 |
-| RE/USDT:USDT | +31.03% | $14,903,686.47 |
-| SMCISTOCK/USDT:USDT | +24.63% | $5,754,135.62 |
-| JIMOTHY/USDT:USDT | +23.97% | $3,498,755.87 |
-| BLESS/USDT:USDT | +22.48% | $2,338,024.52 |
+| BROCCOLIF3B/USDT:USDT | +37.83% | $1,008,897.73 |
+| RE/USDT:USDT | +30.71% | $15,009,953.38 |
+| SMCISTOCK/USDT:USDT | +25.50% | $5,777,099.68 |
+| BLESS/USDT:USDT | +23.99% | $2,406,954.60 |
+| JIMOTHY/USDT:USDT | +23.30% | $3,508,789.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.85% | +5.27% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.76% | +5.19% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.94% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.91% | +4.33% |
-| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +3.08% | +3.50% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.76% | +5.20% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.95% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.91% | +4.34% |
+| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +3.44% | +3.87% |
+| AKE/USDT:USDT | below_1h_threshold | +3.36% | +3.79% |
 
 ## 7. 次に見るべき不足
 
