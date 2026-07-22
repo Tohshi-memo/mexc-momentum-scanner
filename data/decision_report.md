@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T06:21:18.032039+00:00
+- generated_at: 2026-07-22T06:26:18.121861+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9258**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T06:21:10.814717+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=65870.0
-- Funnel: target 888 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.0 >= 65=1
+- 更新: 2026-07-22T06:26:11.322583+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=65833.8
+- Funnel: target 888 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +35.28% | $3,972,519.71 |
-| DODO/USDT:USDT | +27.13% | $1,071,985.88 |
-| SMCISTOCK/USDT:USDT | +17.48% | $4,084,647.19 |
-| LAB/USDT:USDT | +17.36% | $11,923,052.66 |
-| RE/USDT:USDT | +15.45% | $2,582,742.11 |
+| JIMOTHY/USDT:USDT | +36.77% | $3,983,646.96 |
+| DODO/USDT:USDT | +24.10% | $1,129,713.19 |
+| SMCISTOCK/USDT:USDT | +17.40% | $4,093,739.00 |
+| LAB/USDT:USDT | +16.11% | $12,136,934.14 |
+| RE/USDT:USDT | +15.66% | $2,602,796.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.27% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.86% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.34% | +1.47% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.75% | +0.88% |
-| B/USDT:USDT | below_1h_threshold | +0.25% | +0.38% |
+| DODO/USDT:USDT | below_1h_threshold | +3.19% | +3.38% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.14% | +2.32% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.91% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.24% | +1.42% |
+| AKE/USDT:USDT | below_1h_threshold | +0.42% | +0.61% |
 
 ## 7. 次に見るべき不足
 
