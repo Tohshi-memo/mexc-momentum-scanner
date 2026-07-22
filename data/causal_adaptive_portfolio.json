@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 101.34356229766108,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-22T00:06:10.635721+00:00",
+  "updated_at": "2026-07-22T00:11:11.406091+00:00",
   "high_watermark": 102.17209303337744,
   "max_drawdown_pct": 3.463237719717767,
   "loss_streak": 0,
@@ -96722,6 +96722,103 @@
       },
       "settled_at": "2026-07-22T00:00:38.080218+00:00",
       "outcome": "SL_HIT"
+    },
+    "PONS/USDT:USDT|2026-07-22T00:11:07.418994+00:00": {
+      "key": "PONS/USDT:USDT|2026-07-22T00:11:07.418994+00:00",
+      "symbol": "PONS/USDT:USDT",
+      "detected_at": "2026-07-22T00:11:07.418994+00:00",
+      "registered_at": "2026-07-22T00:11:11.366490+00:00",
+      "signal_batch": "2026-07-22T00:11Z",
+      "status": "pending",
+      "strategy": "LIMIT_7PCT",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 6.782562468750524,
+      "decision": {
+        "strategy": "LIMIT_7PCT",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 9.152671614097648e-05,
+        "robust_score": 9.152671614097648e-05,
+        "causal_history_count": 9222,
+        "fast": {
+          "strategy": "LIMIT_7PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 9,
+          "fill_rate": 0.18,
+          "avg_pnl_pct": 0.8782711796300177,
+          "effective_ev_pct": 0.15808881233340316,
+          "avg_log_return": 6.663722073592779e-05,
+          "geometric_return_pct": 0.006663944104490227,
+          "avg_account_return_pct": 0.006703563084112121,
+          "max_drawdown_pct": 0.5240817859375104,
+          "max_loss_streak": 3
+        },
+        "recent": {
+          "strategy": "LIMIT_7PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 9,
+          "fill_rate": 0.18,
+          "avg_pnl_pct": 0.8782711796300177,
+          "effective_ev_pct": 0.15808881233340316,
+          "avg_log_return": 6.663722073592779e-05,
+          "geometric_return_pct": 0.006663944104490227,
+          "avg_account_return_pct": 0.006703563084112121,
+          "max_drawdown_pct": 0.5240817859375104,
+          "max_loss_streak": 3
+        },
+        "mid": {
+          "strategy": "LIMIT_7PCT",
+          "direction": "short",
+          "total": 200,
+          "filled": 29,
+          "fill_rate": 0.145,
+          "avg_pnl_pct": 3.536182773439801,
+          "effective_ev_pct": 0.512746502148771,
+          "avg_log_return": 0.00022341916902441882,
+          "geometric_return_pct": 0.022344412894570453,
+          "avg_account_return_pct": 0.02237945385514016,
+          "max_drawdown_pct": 0.5240817859375221,
+          "max_loss_streak": 3
+        },
+        "long": {
+          "strategy": "LIMIT_7PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 145,
+          "fill_rate": 0.145,
+          "avg_pnl_pct": 2.344762435984597,
+          "effective_ev_pct": 0.33999055321776656,
+          "avg_log_return": 0.00015045016192840628,
+          "geometric_return_pct": 0.015046148012154426,
+          "avg_account_return_pct": 0.015074802666211718,
+          "max_drawdown_pct": 0.5828741679010682,
+          "max_loss_streak": 3
+        },
+        "all": {
+          "strategy": "LIMIT_7PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 145,
+          "fill_rate": 0.145,
+          "avg_pnl_pct": 2.344762435984597,
+          "effective_ev_pct": 0.33999055321776656,
+          "avg_log_return": 0.00015045016192840628,
+          "geometric_return_pct": 0.015046148012154426,
+          "avg_account_return_pct": 0.015074802666211718,
+          "max_drawdown_pct": 0.5828741679010682,
+          "max_loss_streak": 3
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 6.746598350172789e-05
+          }
+        ]
+      }
     }
   },
   "causal_history": true
