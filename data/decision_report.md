@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T00:16:15.116886+00:00
+- generated_at: 2026-07-22T00:21:18.188112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9225**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.34** / 初期 $100.00 (+1.34%)
-- 確定: 370件 (Win 125 / Loss 155 / Flat 90) / pending 3件 / skip 325件
+- 確定: 370件 (Win 125 / Loss 155 / Flat 90) / pending 4件 / skip 325件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000088 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $101.34
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T00:16:08.929871+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=66649.0
-- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-22T00:21:11.233734+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=66622.9
+- Funnel: target 885 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +33.36% | $3,748,568.01 |
-| SMCISTOCK/USDT:USDT | +20.81% | $3,373,243.49 |
-| SNXX/USDT:USDT | +13.93% | $1,900,914.31 |
-| PONS/USDT:USDT | +13.22% | $1,877,879.99 |
-| FWDISTOCK/USDT:USDT | +12.19% | $3,914,834.53 |
+| JIMOTHY/USDT:USDT | +37.20% | $3,776,348.43 |
+| SMCISTOCK/USDT:USDT | +21.49% | $3,394,662.55 |
+| BANK/USDT:USDT | +17.28% | $113,724,282.99 |
+| SNXX/USDT:USDT | +13.87% | $1,901,933.35 |
+| FWDISTOCK/USDT:USDT | +12.37% | $3,915,781.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.66% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.25% | +2.06% |
-| POETSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.73% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.36% |
-| BANK/USDT:USDT | below_1h_threshold | +1.43% | +1.24% |
+| PONS/USDT:USDT | below_1h_threshold | +3.40% | +3.25% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.70% |
+| LAB/USDT:USDT | below_1h_threshold | +2.32% | +2.17% |
+| POETSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.77% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.40% |
 
 ## 7. 次に見るべき不足
 
