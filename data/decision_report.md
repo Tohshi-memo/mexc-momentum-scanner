@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T07:11:18.249236+00:00
+- generated_at: 2026-07-22T07:16:13.775389+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9259**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T07:11:13.696708+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=65871.1
+- 更新: 2026-07-22T07:16:07.073661+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=65891.9
 - Funnel: target 888 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +33.81% | $3,746,252.13 |
-| RE/USDT:USDT | +21.51% | $2,937,262.54 |
-| SMCISTOCK/USDT:USDT | +17.28% | $4,143,319.51 |
-| DODO/USDT:USDT | +16.74% | $1,545,279.71 |
-| LAB/USDT:USDT | +15.15% | $12,686,064.61 |
+| JIMOTHY/USDT:USDT | +34.35% | $3,750,632.35 |
+| RE/USDT:USDT | +20.43% | $3,029,310.25 |
+| SMCISTOCK/USDT:USDT | +17.00% | $4,145,965.31 |
+| DODO/USDT:USDT | +16.15% | $1,570,096.98 |
+| QNTSTOCK/USDT:USDT | +14.06% | $5,159,053.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.25% | +2.31% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.34% | +1.40% |
-| PONS/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.13% | +1.18% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +0.97% | +1.02% |
+| PONS/USDT:USDT | below_1h_threshold | +3.15% | +3.17% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.34% | +1.36% |
+| AKE/USDT:USDT | below_1h_threshold | +1.34% | +1.36% |
+| RE/USDT:USDT | below_1h_threshold | +1.19% | +1.22% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.19% | +1.21% |
 
 ## 7. 次に見るべき不足
 
