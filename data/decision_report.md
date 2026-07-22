@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T13:01:15.737558+00:00
+- generated_at: 2026-07-22T13:06:15.126261+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9284**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T13:01:07.847030+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65610.4
+- 更新: 2026-07-22T13:06:08.425971+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=65611.0
 - Funnel: target 888 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +40.31% | $3,327,690.12 |
-| RE/USDT:USDT | +23.44% | $11,667,607.35 |
-| AKE/USDT:USDT | +16.62% | $10,687,196.84 |
-| UB/USDT:USDT | +15.66% | $1,818,223.95 |
-| TLM/USDT:USDT | +14.04% | $2,449,442.00 |
+| JIMOTHY/USDT:USDT | +36.90% | $3,335,875.72 |
+| RE/USDT:USDT | +24.11% | $11,791,137.11 |
+| AKE/USDT:USDT | +16.94% | $10,794,811.23 |
+| UB/USDT:USDT | +16.08% | $1,823,971.37 |
+| TLM/USDT:USDT | +14.10% | $2,492,553.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +1.17% | +1.16% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.12% | +1.11% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +0.91% | +0.90% |
-| SPOTSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.73% |
-| CMCSASTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.65% |
+| BANK/USDT:USDT | below_1h_threshold | +3.30% | +3.29% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.44% | +1.43% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.24% | +1.23% |
+| DODO/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
+| BILL/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
 
 ## 7. 次に見るべき不足
 
