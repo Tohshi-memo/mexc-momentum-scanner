@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T00:51:15.201836+00:00
+- generated_at: 2026-07-22T00:56:15.090860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9230**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T00:51:07.815070+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=66637.3
+- 更新: 2026-07-22T00:56:08.309724+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=66592.3
 - Funnel: target 885 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 82.6 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +39.51% | $3,901,523.10 |
-| SMCISTOCK/USDT:USDT | +20.34% | $3,449,414.15 |
-| PONS/USDT:USDT | +17.38% | $1,978,322.57 |
-| BANK/USDT:USDT | +12.76% | $117,097,839.45 |
-| FWDISTOCK/USDT:USDT | +11.03% | $3,931,339.87 |
+| JIMOTHY/USDT:USDT | +41.54% | $3,920,726.58 |
+| SMCISTOCK/USDT:USDT | +20.58% | $3,457,761.67 |
+| PONS/USDT:USDT | +17.84% | $1,980,885.24 |
+| BANK/USDT:USDT | +14.52% | $117,538,055.99 |
+| FWDISTOCK/USDT:USDT | +11.55% | $3,932,558.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.36% | +3.19% |
-| RE/USDT:USDT | below_1h_threshold | +3.29% | +3.11% |
-| LAB/USDT:USDT | below_1h_threshold | +3.26% | +3.09% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.05% | +2.87% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.68% |
+| RE/USDT:USDT | below_1h_threshold | +4.85% | +4.75% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.20% | +4.09% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.40% | +3.29% |
+| BANK/USDT:USDT | below_1h_threshold | +3.21% | +3.11% |
+| LAB/USDT:USDT | below_1h_threshold | +2.97% | +2.87% |
 
 ## 7. 次に見るべき不足
 
