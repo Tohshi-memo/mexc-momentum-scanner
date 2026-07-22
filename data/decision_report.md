@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T01:36:26.847019+00:00
+- generated_at: 2026-07-22T01:41:18.613498+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9231**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T01:36:19.299550+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=66376.1
-- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1
+- 更新: 2026-07-22T01:41:13.258943+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=66368.0
+- Funnel: target 885 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +33.35% | $3,953,623.85 |
-| PONS/USDT:USDT | +27.81% | $2,073,662.68 |
-| SMCISTOCK/USDT:USDT | +19.82% | $3,520,820.41 |
-| FWDISTOCK/USDT:USDT | +15.13% | $3,941,760.27 |
-| NIGHT/USDT:USDT | +12.30% | $6,205,976.95 |
+| JIMOTHY/USDT:USDT | +31.19% | $3,960,600.23 |
+| PONS/USDT:USDT | +26.01% | $2,078,556.39 |
+| SMCISTOCK/USDT:USDT | +19.54% | $3,524,302.75 |
+| FWDISTOCK/USDT:USDT | +14.54% | $3,942,747.33 |
+| NIGHT/USDT:USDT | +12.71% | $6,216,635.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.91% | +4.23% |
-| XPT/USDT:USDT | below_1h_threshold | +1.40% | +1.72% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.13% | +1.45% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.11% | +1.43% |
-| KORU/USDT:USDT | below_1h_threshold | +0.98% | +1.31% |
+| LAB/USDT:USDT | below_1h_threshold | +4.03% | +4.36% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.63% | +3.96% |
+| PLAY/USDT:USDT | below_1h_threshold | +1.60% | +1.93% |
+| XPT/USDT:USDT | below_1h_threshold | +1.37% | +1.71% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.15% | +1.48% |
 
 ## 7. 次に見るべき不足
 
