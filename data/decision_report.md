@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T16:01:28.746036+00:00
+- generated_at: 2026-07-22T16:06:25.689368+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9293**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.55** / 初期 $100.00 (+1.55%)
-- 確定: 425件 (Win 142 / Loss 176 / Flat 107) / pending 3件 / skip 346件
+- 確定: 425件 (Win 142 / Loss 176 / Flat 107) / pending 3件 / skip 347件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000144 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $101.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T16:01:20.709012+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=65994.8
-- Funnel: target 890 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-22T16:06:16.413035+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=65979.3
+- Funnel: target 890 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +1.12% | $3,845,566.37 |
-| BEAT/USDT:USDT | +1.11% | $13,524,877.17 |
-| RAVE/USDT:USDT | +0.75% | $1,285,864.85 |
-| ZHIPUSTOCK/USDT:USDT | +0.63% | $2,337,296.68 |
-| ERA/USDT:USDT | +0.47% | $8,215,483.08 |
+| RIF/USDT:USDT | +8.05% | $3,909,758.44 |
+| RAVE/USDT:USDT | +2.52% | $1,338,003.15 |
+| ZAMA/USDT:USDT | +1.65% | $1,637,959.92 |
+| BEAT/USDT:USDT | +1.07% | $13,572,381.48 |
+| BLESS/USDT:USDT | +0.92% | $3,963,007.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVDL/USDT:USDT | below_1h_threshold | +3.75% | +3.78% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.55% | +2.58% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.56% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.98% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.93% | +1.96% |
+| NVDL/USDT:USDT | below_1h_threshold | +3.75% | +3.80% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.55% | +2.60% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.53% | +2.58% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.58% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.93% | +1.98% |
 
 ## 7. 次に見るべき不足
 
