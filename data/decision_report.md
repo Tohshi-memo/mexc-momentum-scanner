@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T20:01:19.409663+00:00
+- generated_at: 2026-07-22T20:06:20.688975+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9316**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T20:01:11.459037+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65900.4
-- Funnel: target 890 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-22T20:06:13.944186+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=65804.0
+- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +17.46% | $101,101,627.00 |
-| JIMOTHY/USDT:USDT | +16.50% | $3,794,160.90 |
-| BROCCOLIF3B/USDT:USDT | +13.01% | $1,678,153.94 |
-| ON/USDT:USDT | +10.93% | $1,511,440.61 |
-| RIF/USDT:USDT | +5.06% | $3,913,485.02 |
+| BANK/USDT:USDT | +17.38% | $101,551,889.67 |
+| JIMOTHY/USDT:USDT | +15.29% | $3,814,301.14 |
+| BROCCOLIF3B/USDT:USDT | +12.44% | $1,681,367.56 |
+| ON/USDT:USDT | +11.55% | $1,542,536.53 |
+| RIF/USDT:USDT | +7.15% | $3,924,803.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.04% |
-| ON/USDT:USDT | below_1h_threshold | +0.91% | +0.89% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.58% |
-| NKESTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.32% |
+| RIF/USDT:USDT | below_1h_threshold | +1.63% | +1.76% |
+| DODO/USDT:USDT | below_1h_threshold | +1.48% | +1.61% |
+| ON/USDT:USDT | below_1h_threshold | +1.47% | +1.60% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.10% | +1.24% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.18% |
 
 ## 7. 次に見るべき不足
 
