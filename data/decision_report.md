@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T02:51:21.331386+00:00
+- generated_at: 2026-07-22T02:56:19.334106+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9239**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.32** / 初期 $100.00 (+1.32%)
-- 確定: 383件 (Win 128 / Loss 158 / Flat 97) / pending 3件 / skip 325件
+- 確定: 383件 (Win 128 / Loss 158 / Flat 97) / pending 4件 / skip 325件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000187 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $101.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T02:51:12.159065+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=66331.5
-- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-07-22T02:56:12.040630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=66303.8
+- Funnel: target 885 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 85.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +50.05% | $4,130,282.22 |
-| PONS/USDT:USDT | +23.31% | $2,110,121.26 |
-| SMCISTOCK/USDT:USDT | +19.11% | $3,694,678.45 |
-| FWDISTOCK/USDT:USDT | +17.57% | $4,046,615.01 |
-| BNCSTOCK/USDT:USDT | +15.66% | $2,735,673.89 |
+| JIMOTHY/USDT:USDT | +49.70% | $4,156,833.72 |
+| PONS/USDT:USDT | +31.25% | $2,123,932.56 |
+| SMCISTOCK/USDT:USDT | +18.99% | $3,711,483.58 |
+| FWDISTOCK/USDT:USDT | +16.78% | $4,057,561.80 |
+| BNCSTOCK/USDT:USDT | +15.85% | $2,746,285.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRAM/USDT:USDT | below_1h_threshold | +3.39% | +3.49% |
-| NIGHT/USDT:USDT | below_1h_threshold | +2.87% | +2.97% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.73% | +2.83% |
-| FWDISTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.07% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.81% | +1.91% |
+| GRAM/USDT:USDT | below_1h_threshold | +3.57% | +3.72% |
+| NIGHT/USDT:USDT | below_1h_threshold | +2.87% | +3.01% |
+| UB/USDT:USDT | below_1h_threshold | +2.37% | +2.52% |
+| FWDISTOCK/USDT:USDT | below_1h_threshold | +1.97% | +2.11% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.81% | +1.95% |
 
 ## 7. 次に見るべき不足
 
