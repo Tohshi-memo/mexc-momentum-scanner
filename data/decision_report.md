@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T16:56:22.090644+00:00
+- generated_at: 2026-07-22T17:01:20.467542+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9297**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T16:56:15.272575+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=66164.2
-- Funnel: target 890 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.9 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-22T17:01:13.780049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=66200.0
+- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +8.15% | $1,520,372.44 |
-| BANK/USDT:USDT | +4.19% | $96,057,685.21 |
-| DODO/USDT:USDT | +3.56% | $2,608,218.47 |
-| RIF/USDT:USDT | +3.40% | $4,082,231.85 |
-| WLD/USDT:USDT | +3.32% | $31,745,816.74 |
+| BROCCOLIF3B/USDT:USDT | +9.35% | $1,525,042.64 |
+| LAB/USDT:USDT | +6.03% | $15,591,727.70 |
+| BANK/USDT:USDT | +4.36% | $89,716,201.09 |
+| BLESS/USDT:USDT | +3.61% | $4,194,277.46 |
+| RIF/USDT:USDT | +3.40% | $3,866,578.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.20% | +3.97% |
-| NVDL/USDT:USDT | below_1h_threshold | +3.75% | +3.52% |
-| DODO/USDT:USDT | below_1h_threshold | +3.57% | +3.34% |
-| RIF/USDT:USDT | below_1h_threshold | +3.40% | +3.18% |
-| WLD/USDT:USDT | below_1h_threshold | +3.36% | +3.13% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.19% |
+| LAB/USDT:USDT | below_1h_threshold | +1.64% | +1.64% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
+| SPOTSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
 
 ## 7. 次に見るべき不足
 
