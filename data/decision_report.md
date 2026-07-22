@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T11:36:31.728347+00:00
+- generated_at: 2026-07-22T11:41:34.438593+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9276**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T11:36:20.910641+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=66004.2
-- Funnel: target 888 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- 更新: 2026-07-22T11:41:21.666864+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=65973.0
+- Funnel: target 888 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +49.52% | $3,362,713.91 |
-| RE/USDT:USDT | +28.99% | $9,127,327.74 |
-| UB/USDT:USDT | +18.82% | $1,564,366.77 |
-| SMCISTOCK/USDT:USDT | +17.87% | $4,491,177.44 |
-| BNCSTOCK/USDT:USDT | +14.12% | $2,932,929.11 |
+| JIMOTHY/USDT:USDT | +49.79% | $3,368,313.98 |
+| RE/USDT:USDT | +29.47% | $9,292,037.11 |
+| UB/USDT:USDT | +17.77% | $1,601,383.68 |
+| SMCISTOCK/USDT:USDT | +17.44% | $4,499,923.66 |
+| BNCSTOCK/USDT:USDT | +13.86% | $2,933,215.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.67% | +2.69% |
-| BOTSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +2.64% |
-| DODO/USDT:USDT | below_1h_threshold | +2.20% | +2.21% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.85% | +1.87% |
-| FWDISTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.48% | +3.55% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.64% | +2.70% |
+| BOTSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +2.68% |
+| LAB/USDT:USDT | below_1h_threshold | +2.61% | +2.68% |
+| DODO/USDT:USDT | below_1h_threshold | +1.98% | +2.04% |
 
 ## 7. 次に見るべき不足
 
