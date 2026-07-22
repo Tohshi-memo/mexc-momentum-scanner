@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T03:21:33.637807+00:00
+- generated_at: 2026-07-22T03:26:28.363567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9244**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.87** / 初期 $100.00 (+1.87%)
-- 確定: 388件 (Win 132 / Loss 159 / Flat 97) / pending 4件 / skip 325件
+- 確定: 388件 (Win 132 / Loss 159 / Flat 97) / pending 5件 / skip 325件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000336 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LAB/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $101.87
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T03:21:24.086851+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=66233.9
-- Funnel: target 885 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 76.9 >= 65=1
+- 更新: 2026-07-22T03:26:19.952043+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=66239.9
+- Funnel: target 885 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.0 >= 65=1, 4h RSI 78.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +41.57% | $4,164,811.49 |
-| PONS/USDT:USDT | +22.36% | $2,154,817.13 |
-| LAB/USDT:USDT | +19.20% | $6,480,628.07 |
-| SMCISTOCK/USDT:USDT | +18.79% | $3,783,291.60 |
-| FWDISTOCK/USDT:USDT | +15.94% | $4,183,108.15 |
+| JIMOTHY/USDT:USDT | +44.32% | $4,173,497.58 |
+| LAB/USDT:USDT | +22.14% | $6,571,319.00 |
+| PONS/USDT:USDT | +19.90% | $2,157,958.90 |
+| SMCISTOCK/USDT:USDT | +19.46% | $3,789,940.59 |
+| FWDISTOCK/USDT:USDT | +16.62% | $4,190,513.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.08% | +4.15% |
-| FWDISTOCK/USDT:USDT | below_1h_threshold | +2.76% | +2.84% |
-| TLM/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
-| B/USDT:USDT | below_1h_threshold | +1.80% | +1.87% |
-| MYX/USDT:USDT | below_1h_threshold | +1.51% | +1.58% |
+| FWDISTOCK/USDT:USDT | below_1h_threshold | +2.76% | +2.83% |
+| RE/USDT:USDT | below_1h_threshold | +2.17% | +2.23% |
+| MYX/USDT:USDT | below_1h_threshold | +2.10% | +2.17% |
+| B/USDT:USDT | below_1h_threshold | +2.05% | +2.12% |
+| TLM/USDT:USDT | below_1h_threshold | +1.54% | +1.60% |
 
 ## 7. 次に見るべき不足
 
