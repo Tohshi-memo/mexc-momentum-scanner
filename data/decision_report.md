@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T18:06:27.153467+00:00
+- generated_at: 2026-07-22T18:11:36.354946+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9303**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.55** / 初期 $100.00 (+1.55%)
-- 確定: 425件 (Win 142 / Loss 176 / Flat 107) / pending 3件 / skip 354件
+- 確定: 425件 (Win 142 / Loss 176 / Flat 107) / pending 3件 / skip 355件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000219 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $101.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T18:06:19.117244+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=66031.2
-- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-22T18:11:31.370857+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=65978.1
+- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +17.20% | $92,452,745.65 |
-| BROCCOLIF3B/USDT:USDT | +9.73% | $1,601,738.15 |
-| JIMOTHY/USDT:USDT | +6.23% | $3,267,905.75 |
-| WLD/USDT:USDT | +4.79% | $34,645,664.56 |
-| DEXE/USDT:USDT | +3.58% | $13,748,818.66 |
+| BANK/USDT:USDT | +18.25% | $93,200,772.56 |
+| BROCCOLIF3B/USDT:USDT | +9.97% | $1,605,800.86 |
+| WLD/USDT:USDT | +4.37% | $34,810,742.37 |
+| ZAMA/USDT:USDT | +3.33% | $1,973,670.41 |
+| AERO/USDT:USDT | +2.47% | $1,141,570.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.76% | +4.71% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.87% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.59% | +0.53% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.57% | +0.52% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.38% | +0.33% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.91% | +0.94% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.57% | +0.60% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.38% | +0.41% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.38% | +0.41% |
 
 ## 7. 次に見るべき不足
 
