@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T17:01:20.467542+00:00
+- generated_at: 2026-07-22T17:06:22.296557+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9297**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T17:01:13.780049+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=66200.0
+- 更新: 2026-07-22T17:06:15.538474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=66214.6
 - Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +9.35% | $1,525,042.64 |
-| LAB/USDT:USDT | +6.03% | $15,591,727.70 |
-| BANK/USDT:USDT | +4.36% | $89,716,201.09 |
-| BLESS/USDT:USDT | +3.61% | $4,194,277.46 |
-| RIF/USDT:USDT | +3.40% | $3,866,578.76 |
+| BROCCOLIF3B/USDT:USDT | +8.10% | $1,536,278.34 |
+| BANK/USDT:USDT | +5.83% | $90,002,376.35 |
+| RIF/USDT:USDT | +4.96% | $3,874,140.57 |
+| WLD/USDT:USDT | +4.01% | $32,156,550.39 |
+| AERO/USDT:USDT | +2.37% | $1,155,347.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.19% |
-| LAB/USDT:USDT | below_1h_threshold | +1.64% | +1.64% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
-| SPOTSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.16% |
+| BANK/USDT:USDT | below_1h_threshold | +1.51% | +1.49% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| UB/USDT:USDT | below_1h_threshold | +1.06% | +1.04% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.86% |
 
 ## 7. 次に見るべき不足
 
