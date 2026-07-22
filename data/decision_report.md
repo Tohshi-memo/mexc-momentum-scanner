@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T15:51:28.229954+00:00
+- generated_at: 2026-07-22T15:56:27.303217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9292**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T15:51:21.085299+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=66009.3
+- 更新: 2026-07-22T15:56:21.758816+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=66015.6
 - Funnel: target 890 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1
+- Strict後reject: 4h RSI 75.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +26.60% | $16,410,980.31 |
-| SMCISTOCK/USDT:USDT | +25.66% | $6,192,169.11 |
-| JIMOTHY/USDT:USDT | +22.00% | $3,546,909.98 |
-| MIRA/USDT:USDT | +19.89% | $1,424,207.12 |
-| BROCCOLIF3B/USDT:USDT | +19.79% | $1,362,047.33 |
+| RE/USDT:USDT | +26.39% | $16,511,276.14 |
+| SMCISTOCK/USDT:USDT | +26.02% | $6,256,915.11 |
+| MIRA/USDT:USDT | +24.14% | $1,522,320.32 |
+| JIMOTHY/USDT:USDT | +20.49% | $3,551,787.12 |
+| LAB/USDT:USDT | +19.35% | $15,453,544.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.50% | +3.13% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.45% |
-| AKE/USDT:USDT | below_1h_threshold | +2.03% | +1.66% |
-| LIT/USDT:USDT | below_1h_threshold | +2.00% | +1.64% |
-| ADA/USDT:USDT | below_1h_threshold | +2.00% | +1.63% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.34% | +2.97% |
+| LAB/USDT:USDT | below_1h_threshold | +3.12% | +2.74% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.44% |
+| LIT/USDT:USDT | below_1h_threshold | +1.96% | +1.59% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.47% |
 
 ## 7. 次に見るべき不足
 
