@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T16:21:17.330359+00:00
+- generated_at: 2026-07-22T16:26:19.066440+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9296**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T16:21:12.609482+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=66006.4
+- 更新: 2026-07-22T16:26:12.272440+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=65941.9
 - Funnel: target 890 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +7.08% | $92,673,171.44 |
-| RIF/USDT:USDT | +2.49% | $4,033,003.44 |
-| ZAMA/USDT:USDT | +1.91% | $1,693,792.64 |
-| BROCCOLIF3B/USDT:USDT | +1.84% | $1,452,269.19 |
-| ZHIPUSTOCK/USDT:USDT | +1.83% | $2,343,253.73 |
+| BANK/USDT:USDT | +5.41% | $93,439,804.59 |
+| RIF/USDT:USDT | +2.70% | $4,040,400.08 |
+| BROCCOLIF3B/USDT:USDT | +2.38% | $1,458,409.25 |
+| DODO/USDT:USDT | +1.75% | $2,574,280.81 |
+| LAB/USDT:USDT | +1.72% | $15,361,814.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NVDL/USDT:USDT | below_1h_threshold | +3.75% | +3.76% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.54% |
-| RIF/USDT:USDT | below_1h_threshold | +2.52% | +2.53% |
-| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +1.96% | +1.97% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
+| NVDL/USDT:USDT | below_1h_threshold | +3.75% | +3.86% |
+| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +2.74% | +2.85% |
+| RIF/USDT:USDT | below_1h_threshold | +2.67% | +2.78% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.64% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.93% | +2.04% |
 
 ## 7. 次に見るべき不足
 
