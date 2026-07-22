@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T21:21:25.227360+00:00
+- generated_at: 2026-07-22T21:26:20.838139+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9323**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$104.32** / 初期 $100.00 (+4.32%)
-- 確定トレード: 135件 (TP 45 / SL 85 / EXP 5)
-- 最新: SOXL/USDT:USDT SL_HIT PnL -3.72% 残高後 $104.32
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$103.79** / 初期 $100.00 (+3.79%)
+- 確定トレード: 136件 (TP 45 / SL 86 / EXP 5)
+- 最新: SKHYSTOCK/USDT:USDT SL_HIT PnL -2.63% 残高後 $103.79
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T21:21:18.537404+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=65902.8
-- Funnel: target 890 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-22T21:26:14.190602+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=65863.7
+- Funnel: target 890 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +60.72% | $4,860,516.49 |
-| BROCCOLIF3B/USDT:USDT | +18.88% | $1,763,943.70 |
-| BANK/USDT:USDT | +16.65% | $105,167,808.19 |
-| ON/USDT:USDT | +10.97% | $1,732,388.02 |
-| ZAMA/USDT:USDT | +9.86% | $2,314,421.01 |
+| JIMOTHY/USDT:USDT | +73.15% | $4,911,125.46 |
+| BROCCOLIF3B/USDT:USDT | +18.52% | $1,768,382.15 |
+| BANK/USDT:USDT | +18.22% | $105,436,985.58 |
+| ON/USDT:USDT | +11.45% | $1,750,918.74 |
+| ZAMA/USDT:USDT | +10.00% | $2,327,113.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.22% |
-| MUU/USDT:USDT | below_1h_threshold | +3.15% | +3.13% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.55% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.37% | +2.35% |
-| KORU/USDT:USDT | below_1h_threshold | +1.87% | +1.85% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.90% | +4.94% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.28% |
+| MUU/USDT:USDT | below_1h_threshold | +3.15% | +3.19% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.61% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.37% | +2.41% |
 
 ## 7. 次に見るべき不足
 
