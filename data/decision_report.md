@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T15:36:21.442799+00:00
+- generated_at: 2026-07-22T15:41:23.449421+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9292**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T15:36:14.754786+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=65962.3
+- 更新: 2026-07-22T15:41:16.354787+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=65924.9
 - Funnel: target 890 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +31.29% | $1,262,327.51 |
-| RE/USDT:USDT | +30.15% | $16,081,778.52 |
-| SMCISTOCK/USDT:USDT | +25.58% | $6,135,634.56 |
-| JIMOTHY/USDT:USDT | +25.44% | $3,523,721.11 |
-| AKE/USDT:USDT | +19.01% | $11,642,987.21 |
+| BROCCOLIF3B/USDT:USDT | +32.52% | $1,278,228.32 |
+| RE/USDT:USDT | +29.50% | $16,145,806.16 |
+| SMCISTOCK/USDT:USDT | +25.58% | $6,175,456.17 |
+| JIMOTHY/USDT:USDT | +21.81% | $3,530,302.63 |
+| AKE/USDT:USDT | +16.42% | $11,707,491.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.60% | +4.30% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.52% |
-| DODO/USDT:USDT | below_1h_threshold | +1.97% | +1.68% |
-| RE/USDT:USDT | below_1h_threshold | +1.95% | +1.66% |
-| AKE/USDT:USDT | below_1h_threshold | +1.75% | +1.46% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.58% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.31% | +2.07% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.51% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.65% | +1.41% |
+| NVDL/USDT:USDT | below_1h_threshold | +1.54% | +1.31% |
 
 ## 7. 次に見るべき不足
 
