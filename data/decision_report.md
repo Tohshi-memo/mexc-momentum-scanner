@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T12:16:19.711647+00:00
+- generated_at: 2026-07-22T12:21:13.823964+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9281**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T12:16:15.106137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=65901.5
+- 更新: 2026-07-22T12:21:07.096050+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=65843.1
 - Funnel: target 888 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +46.57% | $3,337,883.09 |
-| RE/USDT:USDT | +28.05% | $10,065,594.91 |
-| SMCISTOCK/USDT:USDT | +16.28% | $4,547,443.75 |
-| UB/USDT:USDT | +16.22% | $1,660,166.18 |
-| BLESS/USDT:USDT | +14.27% | $1,055,496.98 |
+| JIMOTHY/USDT:USDT | +39.32% | $3,360,103.58 |
+| RE/USDT:USDT | +27.70% | $10,190,897.26 |
+| SMCISTOCK/USDT:USDT | +16.24% | $4,551,943.92 |
+| BLESS/USDT:USDT | +15.23% | $1,077,747.97 |
+| UB/USDT:USDT | +13.82% | $1,718,696.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.50% | +3.62% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.49% |
-| ERA/USDT:USDT | below_1h_threshold | +1.53% | +1.65% |
-| BANK/USDT:USDT | below_1h_threshold | +1.32% | +1.44% |
-| PONS/USDT:USDT | below_1h_threshold | +1.25% | +1.37% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.27% | +4.48% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.58% |
+| ERA/USDT:USDT | below_1h_threshold | +1.63% | +1.84% |
+| BANK/USDT:USDT | below_1h_threshold | +1.11% | +1.32% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.11% | +1.32% |
 
 ## 7. 次に見るべき不足
 
