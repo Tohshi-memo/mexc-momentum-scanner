@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T22:06:22.274848+00:00
+- generated_at: 2026-07-22T22:11:17.343487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9330**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T22:06:14.185278+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=65970.8
+- 更新: 2026-07-22T22:11:10.638228+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=65989.5
 - Funnel: target 890 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +77.31% | $5,324,764.04 |
-| BANK/USDT:USDT | +20.86% | $106,080,984.63 |
-| BROCCOLIF3B/USDT:USDT | +18.01% | $1,790,872.59 |
-| ON/USDT:USDT | +11.17% | $1,918,495.07 |
-| ZAMA/USDT:USDT | +8.94% | $2,414,737.84 |
+| JIMOTHY/USDT:USDT | +82.34% | $5,392,301.74 |
+| BANK/USDT:USDT | +21.23% | $106,292,553.63 |
+| BROCCOLIF3B/USDT:USDT | +17.68% | $1,793,112.25 |
+| RIF/USDT:USDT | +13.22% | $4,383,621.89 |
+| ON/USDT:USDT | +11.72% | $1,931,028.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.69% | +2.79% |
-| BANK/USDT:USDT | below_1h_threshold | +1.08% | +1.17% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.14% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.97% | +1.07% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.06% |
+| KORU/USDT:USDT | below_1h_threshold | +2.69% | +2.76% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.84% | +1.91% |
+| BANK/USDT:USDT | below_1h_threshold | +1.26% | +1.32% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.21% | +1.27% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.11% |
 
 ## 7. 次に見るべき不足
 
