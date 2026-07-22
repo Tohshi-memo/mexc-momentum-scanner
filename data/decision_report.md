@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T08:01:18.024007+00:00
+- generated_at: 2026-07-22T08:06:18.320247+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9260**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$102.54** / 初期 $100.00 (+2.54%)
-- 確定: 401件 (Win 138 / Loss 164 / Flat 99) / pending 5件 / skip 326件
+- 確定: 401件 (Win 138 / Loss 164 / Flat 99) / pending 6件 / skip 327件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000372 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ERA/USDT:USDT `MARKET_LONG` TP_HIT account +0.34% 残高後 $102.54
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T08:01:10.144972+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=65847.4
-- Funnel: target 888 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-22T08:06:10.682342+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=65985.5
+- Funnel: target 888 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.2 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +41.51% | $3,413,809.89 |
-| RE/USDT:USDT | +21.91% | $3,881,194.23 |
-| SMCISTOCK/USDT:USDT | +18.07% | $4,241,308.51 |
-| DODO/USDT:USDT | +15.79% | $1,872,485.83 |
-| AKE/USDT:USDT | +15.72% | $10,868,168.85 |
+| JIMOTHY/USDT:USDT | +38.09% | $3,429,570.14 |
+| ERA/USDT:USDT | +28.53% | $10,867,184.33 |
+| RE/USDT:USDT | +21.91% | $4,051,586.93 |
+| SMCISTOCK/USDT:USDT | +17.52% | $4,244,707.70 |
+| AKE/USDT:USDT | +15.69% | $10,967,828.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +3.96% | +3.91% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.86% | +1.81% |
-| BOTSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.27% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.26% | +1.21% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.97% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.86% | +1.60% |
+| MYX/USDT:USDT | below_1h_threshold | +1.52% | +1.26% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.42% | +1.16% |
+| BOTSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.06% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.26% | +1.00% |
 
 ## 7. 次に見るべき不足
 
