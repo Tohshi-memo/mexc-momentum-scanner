@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T15:11:24.608043+00:00
+- generated_at: 2026-07-22T15:16:23.028130+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9289**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T15:11:17.762963+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=65879.3
-- Funnel: target 890 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-22T15:16:16.378668+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=65896.3
+- Funnel: target 890 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +41.15% | $1,142,722.82 |
-| RE/USDT:USDT | +28.94% | $15,631,148.35 |
-| JIMOTHY/USDT:USDT | +26.40% | $3,471,456.13 |
-| SMCISTOCK/USDT:USDT | +25.98% | $5,971,548.93 |
-| BLESS/USDT:USDT | +24.25% | $2,632,726.58 |
+| BROCCOLIF3B/USDT:USDT | +42.74% | $1,156,166.12 |
+| RE/USDT:USDT | +28.88% | $15,740,222.65 |
+| SMCISTOCK/USDT:USDT | +26.10% | $6,009,433.65 |
+| BLESS/USDT:USDT | +25.86% | $2,689,582.04 |
+| JIMOTHY/USDT:USDT | +24.57% | $3,483,301.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.65% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.67% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.58% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.65% | +1.48% |
-| NVDL/USDT:USDT | below_1h_threshold | +1.54% | +1.38% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.89% | +3.70% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.62% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.65% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.55% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.65% | +1.46% |
 
 ## 7. 次に見るべき不足
 
