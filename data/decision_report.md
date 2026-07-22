@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T14:06:40.057584+00:00
+- generated_at: 2026-07-22T14:11:45.885783+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9284**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T14:06:26.521678+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=66095.8
-- Funnel: target 890 → liquid 177 → pre 50 → checked 50 → surge 7 → strict 2
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.9 >= 65=1, 4h RSI 79.1 >= 65=1, 4h RSI 75.1 >= 65=1, 4h RSI 71.7 >= 65=1, 4h RSI 69.3 >= 65=1
+- 更新: 2026-07-22T14:11:30.369042+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=65960.0
+- Funnel: target 890 → liquid 177 → pre 50 → checked 50 → surge 8 → strict 3
+- Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.0 >= 65=1, 4h RSI 78.7 >= 65=1, 4h RSI 75.0 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 69.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +30.52% | $14,139,084.91 |
-| JIMOTHY/USDT:USDT | +29.87% | $3,394,644.47 |
-| SMCISTOCK/USDT:USDT | +24.91% | $5,228,169.57 |
-| CBRSSTOCK/USDT:USDT | +19.00% | $1,749,527.92 |
-| BLESS/USDT:USDT | +16.95% | $1,529,883.72 |
+| JIMOTHY/USDT:USDT | +33.42% | $3,405,692.36 |
+| RE/USDT:USDT | +31.30% | $14,261,820.53 |
+| SMCISTOCK/USDT:USDT | +24.35% | $5,279,807.86 |
+| BLESS/USDT:USDT | +20.47% | $1,654,702.52 |
+| AKE/USDT:USDT | +16.14% | $11,364,331.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.25% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.91% | +3.64% |
-| GSSTOCK/USDT:USDT | below_1h_threshold | +2.26% | +2.00% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.69% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.82% | +1.56% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.61% | +4.55% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.46% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.13% | +3.07% |
+| GSSTOCK/USDT:USDT | below_1h_threshold | +2.26% | +2.20% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.90% |
 
 ## 7. 次に見るべき不足
 
