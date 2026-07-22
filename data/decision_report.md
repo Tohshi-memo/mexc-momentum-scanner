@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T15:01:25.519616+00:00
+- generated_at: 2026-07-22T15:06:25.074284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9289**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T15:01:18.676824+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=65819.9
-- Funnel: target 890 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-22T15:06:18.411690+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=65845.7
+- Funnel: target 890 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +48.59% | $1,085,273.44 |
-| RE/USDT:USDT | +28.05% | $15,440,238.90 |
-| SMCISTOCK/USDT:USDT | +25.78% | $5,904,119.76 |
-| BLESS/USDT:USDT | +24.83% | $2,484,335.58 |
-| JIMOTHY/USDT:USDT | +19.59% | $3,442,580.04 |
+| BROCCOLIF3B/USDT:USDT | +43.28% | $1,115,370.47 |
+| RE/USDT:USDT | +27.81% | $15,531,323.82 |
+| SMCISTOCK/USDT:USDT | +26.53% | $5,936,578.78 |
+| BLESS/USDT:USDT | +26.15% | $2,552,362.51 |
+| JIMOTHY/USDT:USDT | +21.88% | $3,458,722.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +4.68% | +4.61% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.74% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.76% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.67% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.65% | +1.57% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.70% |
+| TLM/USDT:USDT | below_1h_threshold | +2.18% | +2.06% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.01% | +1.89% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.72% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.74% | +1.63% |
 
 ## 7. 次に見るべき不足
 
