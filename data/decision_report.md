@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-22T14:31:58.530452+00:00
+- generated_at: 2026-07-22T14:37:06.581462+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9287**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$102.08** / 初期 $100.00 (+2.08%)
-- 確定: 422件 (Win 142 / Loss 173 / Flat 107) / pending 6件 / skip 341件
+- 確定: 422件 (Win 142 / Loss 173 / Flat 107) / pending 6件 / skip 343件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000207 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $102.08
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-22T14:31:41.195472+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=65609.5
-- Funnel: target 890 → liquid 179 → pre 50 → checked 50 → surge 10 → strict 3
-- Surge前reject: below_1h_threshold=40, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 79.0 >= 65=1, 4h RSI 66.1 >= 65=1, 4h RSI 74.8 >= 65=1, 4h RSI 74.6 >= 65=1, 4h RSI 73.2 >= 65=1, 4h RSI 69.9 >= 65=1
+- 更新: 2026-07-22T14:36:48.377083+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=65676.4
+- Funnel: target 890 → liquid 180 → pre 50 → checked 50 → surge 12 → strict 5
+- Surge前reject: below_1h_threshold=38, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 78.8 >= 65=1, 4h RSI 65.5 >= 65=1, 4h RSI 74.3 >= 65=1, 4h RSI 73.0 >= 65=1, 4h RSI 74.9 >= 65=1, 4h RSI 69.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +30.12% | $14,720,844.72 |
-| BLESS/USDT:USDT | +24.84% | $2,106,050.43 |
-| SMCISTOCK/USDT:USDT | +24.75% | $5,652,662.57 |
-| JIMOTHY/USDT:USDT | +20.42% | $3,456,894.31 |
-| LAB/USDT:USDT | +16.70% | $14,925,823.39 |
+| RE/USDT:USDT | +30.28% | $14,831,857.41 |
+| SMCISTOCK/USDT:USDT | +24.15% | $5,691,275.68 |
+| BLESS/USDT:USDT | +23.59% | $2,243,853.64 |
+| JIMOTHY/USDT:USDT | +18.84% | $3,480,028.20 |
+| LAB/USDT:USDT | +18.10% | $14,990,425.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.76% | +5.24% |
-| LAB/USDT:USDT | below_1h_threshold | +4.68% | +5.15% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +5.10% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.99% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.91% | +4.38% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.76% | +5.14% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +4.63% | +5.00% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.89% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.91% | +4.28% |
+| TLM/USDT:USDT | below_1h_threshold | +2.23% | +2.60% |
 
 ## 7. 次に見るべき不足
 
