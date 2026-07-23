@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T07:41:12.260896+00:00
+- generated_at: 2026-07-23T07:46:08.833718+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9362**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T07:41:05.559406+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=65388.3
+- 更新: 2026-07-23T07:46:02.205652+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.63% price=65350.0
 - Funnel: target 892 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +35.69% | $5,915,361.30 |
-| BANK/USDT:USDT | +34.67% | $102,421,333.12 |
-| RIF/USDT:USDT | +32.88% | $5,768,379.39 |
-| ZAMA/USDT:USDT | +20.65% | $4,999,128.11 |
-| ON/USDT:USDT | +20.24% | $4,273,793.94 |
+| JIMOTHY/USDT:USDT | +36.91% | $5,925,124.17 |
+| BANK/USDT:USDT | +34.44% | $102,731,821.87 |
+| RIF/USDT:USDT | +32.50% | $5,777,780.19 |
+| ZAMA/USDT:USDT | +20.94% | $5,016,836.38 |
+| ON/USDT:USDT | +20.73% | $4,279,266.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.52% | +4.09% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.16% | +3.72% |
-| UAI/USDT:USDT | below_1h_threshold | +1.85% | +2.41% |
-| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +1.77% | +2.34% |
-| ERA/USDT:USDT | below_1h_threshold | +1.70% | +2.27% |
+| BANK/USDT:USDT | below_1h_threshold | +3.43% | +4.05% |
+| UAI/USDT:USDT | below_1h_threshold | +2.67% | +3.30% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.41% | +3.04% |
+| KORU/USDT:USDT | below_1h_threshold | +1.50% | +2.13% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.35% | +1.97% |
 
 ## 7. 次に見るべき不足
 
