@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T14:11:17.699595+00:00
+- generated_at: 2026-07-23T14:16:39.804430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9368**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.91** / 初期 $100.00 (+0.91%)
-- 確定: 434件 (Win 143 / Loss 180 / Flat 111) / pending 3件 / skip 401件
+- 確定: 434件 (Win 143 / Loss 180 / Flat 111) / pending 4件 / skip 401件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000084 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $100.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T14:11:10.839811+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64912.0
-- Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1
+- 更新: 2026-07-23T14:16:33.800577+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=65022.9
+- Funnel: target 897 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.4 >= 65=1, 4h RSI 88.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +57.55% | $6,832,696.40 |
-| BANK/USDT:USDT | +36.46% | $107,569,391.29 |
-| JIMOTHY/USDT:USDT | +33.07% | $5,603,173.16 |
-| ZAMA/USDT:USDT | +27.51% | $7,210,394.09 |
-| ON/USDT:USDT | +14.52% | $5,689,085.60 |
+| RIF/USDT:USDT | +58.85% | $6,969,733.84 |
+| JIMOTHY/USDT:USDT | +37.03% | $5,620,527.08 |
+| BANK/USDT:USDT | +36.15% | $108,425,800.31 |
+| ZAMA/USDT:USDT | +26.77% | $7,234,134.11 |
+| ON/USDT:USDT | +17.41% | $5,725,544.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_relative_strength | +5.03% | +4.94% |
-| RIF/USDT:USDT | below_1h_threshold | +3.89% | +3.80% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.88% | +3.80% |
-| BILL/USDT:USDT | below_1h_threshold | +3.54% | +3.46% |
-| JTO/USDT:USDT | below_1h_threshold | +2.93% | +2.84% |
+| RIF/USDT:USDT | below_1h_threshold | +4.92% | +4.66% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.88% | +3.63% |
+| BILL/USDT:USDT | below_1h_threshold | +2.86% | +2.61% |
+| CIENSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.43% |
+| MUU/USDT:USDT | below_1h_threshold | +2.38% | +2.13% |
 
 ## 7. 次に見るべき不足
 
