@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T17:41:16.188069+00:00
+- generated_at: 2026-07-23T17:46:13.190801+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9382**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T17:41:09.305835+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64781.8
+- 更新: 2026-07-23T17:46:06.567501+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=64829.9
 - Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +19.30% | $17,015,079.86 |
-| ON/USDT:USDT | +8.48% | $6,179,463.05 |
-| UB/USDT:USDT | +6.06% | $2,263,749.34 |
-| BILL/USDT:USDT | +5.98% | $2,252,046.71 |
-| ANTHROPIC/USDT:USDT | +4.66% | $17,204,622.74 |
+| AKE/USDT:USDT | +19.30% | $17,081,981.30 |
+| ON/USDT:USDT | +9.55% | $6,254,767.90 |
+| BILL/USDT:USDT | +6.62% | $2,275,200.68 |
+| UB/USDT:USDT | +5.54% | $2,277,838.48 |
+| CBRSSTOCK/USDT:USDT | +5.47% | $1,457,460.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.18% | +4.11% |
-| UB/USDT:USDT | below_1h_threshold | +4.13% | +4.05% |
-| ON/USDT:USDT | below_1h_threshold | +3.79% | +3.71% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.90% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.88% | +2.80% |
+| ON/USDT:USDT | below_1h_threshold | +4.97% | +4.82% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.62% | +4.47% |
+| UB/USDT:USDT | below_1h_threshold | +3.67% | +3.51% |
+| ERA/USDT:USDT | below_1h_threshold | +2.98% | +2.83% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.83% |
 
 ## 7. 次に見るべき不足
 
