@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T16:46:23.698891+00:00
+- generated_at: 2026-07-23T16:51:21.176459+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9379**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.03** / 初期 $100.00 (+1.03%)
-- 確定: 445件 (Win 149 / Loss 181 / Flat 115) / pending 5件 / skip 401件
+- 確定: 445件 (Win 149 / Loss 181 / Flat 115) / pending 6件 / skip 401件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000065 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.04% 残高後 $101.03
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T16:46:16.349560+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=64740.2
-- Funnel: target 897 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-07-23T16:51:12.590349+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=64718.2
+- Funnel: target 897 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1, 4h RSI 67.4 >= 65=1
+- Strict後reject: 4h RSI 74.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +19.33% | $14,264,819.72 |
-| BILL/USDT:USDT | +6.39% | $2,068,508.90 |
-| SNXX/USDT:USDT | +4.24% | $2,894,458.81 |
-| ERA/USDT:USDT | +4.07% | $2,066,071.46 |
-| ZAMA/USDT:USDT | +3.79% | $8,058,878.68 |
+| AKE/USDT:USDT | +18.55% | $14,495,422.34 |
+| RIF/USDT:USDT | +7.09% | $12,154,572.96 |
+| BILL/USDT:USDT | +4.58% | $2,175,766.42 |
+| SNXX/USDT:USDT | +4.50% | $2,898,369.71 |
+| ZAMA/USDT:USDT | +4.33% | $8,145,934.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.42% |
-| ERA/USDT:USDT | below_1h_threshold | +4.07% | +4.38% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.79% | +4.10% |
-| ON/USDT:USDT | below_1h_threshold | +2.98% | +3.29% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.94% | +3.25% |
+| BILL/USDT:USDT | below_1h_threshold | +4.59% | +4.93% |
+| ZAMA/USDT:USDT | below_1h_threshold | +4.33% | +4.67% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.45% |
+| ON/USDT:USDT | below_1h_threshold | +3.46% | +3.81% |
+| ERA/USDT:USDT | below_1h_threshold | +3.24% | +3.59% |
 
 ## 7. 次に見るべき不足
 
