@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T18:51:20.167432+00:00
+- generated_at: 2026-07-23T18:56:17.679624+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9385**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.85** / 初期 $100.00 (+0.85%)
-- 確定: 450件 (Win 149 / Loss 182 / Flat 119) / pending 5件 / skip 402件
+- 確定: 450件 (Win 149 / Loss 182 / Flat 119) / pending 6件 / skip 402件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000149 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ANTHROPIC/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $100.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T18:51:12.262709+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64856.0
-- Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-23T18:56:09.873670+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=64860.4
+- Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +13.50% | $20,217,074.09 |
-| B/USDT:USDT | +9.68% | $3,946,037.60 |
-| ON/USDT:USDT | +9.38% | $6,765,597.53 |
-| BILL/USDT:USDT | +8.95% | $2,626,051.61 |
-| UB/USDT:USDT | +8.11% | $2,304,806.39 |
+| AKE/USDT:USDT | +12.74% | $20,414,124.44 |
+| B/USDT:USDT | +10.45% | $3,963,017.75 |
+| PROM/USDT:USDT | +9.26% | $1,604,620.06 |
+| ON/USDT:USDT | +9.19% | $6,782,207.44 |
+| BILL/USDT:USDT | +9.14% | $2,656,977.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.65% | +4.34% |
-| RE/USDT:USDT | below_1h_threshold | +4.57% | +4.25% |
-| BANK/USDT:USDT | below_1h_threshold | +4.44% | +4.13% |
-| B/USDT:USDT | below_1h_threshold | +4.30% | +3.99% |
-| NIGHT/USDT:USDT | below_1h_threshold | +3.58% | +3.27% |
+| B/USDT:USDT | below_relative_strength | +5.08% | +4.76% |
+| BANK/USDT:USDT | below_1h_threshold | +5.00% | +4.68% |
+| RE/USDT:USDT | below_1h_threshold | +4.96% | +4.64% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.25% | +2.93% |
+| BILL/USDT:USDT | below_1h_threshold | +3.21% | +2.89% |
 
 ## 7. 次に見るべき不足
 
