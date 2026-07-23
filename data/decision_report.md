@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T03:11:17.322618+00:00
+- generated_at: 2026-07-23T03:16:11.617099+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9348**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T03:11:08.723511+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=65696.0
-- Funnel: target 892 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1
+- 更新: 2026-07-23T03:16:04.836304+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=65594.3
+- Funnel: target 892 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +71.43% | $5,751,257.89 |
-| RIF/USDT:USDT | +43.59% | $5,053,508.72 |
-| BANK/USDT:USDT | +24.20% | $106,487,472.64 |
-| ZAMA/USDT:USDT | +21.64% | $3,995,262.89 |
-| O/USDT:USDT | +17.84% | $5,374,662.63 |
+| JIMOTHY/USDT:USDT | +75.25% | $5,770,807.73 |
+| RIF/USDT:USDT | +38.49% | $5,090,792.29 |
+| BANK/USDT:USDT | +26.11% | $106,631,779.78 |
+| ZAMA/USDT:USDT | +21.18% | $4,032,959.44 |
+| O/USDT:USDT | +18.27% | $5,396,677.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +2.96% | +3.09% |
-| ON/USDT:USDT | below_1h_threshold | +1.90% | +2.03% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.66% | +1.79% |
-| BANK/USDT:USDT | below_1h_threshold | +1.06% | +1.19% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.00% | +1.13% |
+| RIF/USDT:USDT | below_1h_threshold | +3.39% | +3.67% |
+| ERA/USDT:USDT | below_1h_threshold | +2.70% | +2.98% |
+| BANK/USDT:USDT | below_1h_threshold | +2.40% | +2.68% |
+| NIGHT/USDT:USDT | below_1h_threshold | +1.34% | +1.62% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.07% | +1.35% |
 
 ## 7. 次に見るべき不足
 
