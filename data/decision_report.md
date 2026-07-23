@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T01:21:22.498837+00:00
+- generated_at: 2026-07-23T01:26:17.311115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9336**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T01:21:15.582477+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=65881.2
+- 更新: 2026-07-23T01:26:10.544782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=65903.4
 - Funnel: target 890 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +58.94% | $5,886,658.40 |
-| BANK/USDT:USDT | +37.03% | $108,798,907.80 |
-| RIF/USDT:USDT | +17.17% | $4,663,885.67 |
-| ZAMA/USDT:USDT | +16.96% | $3,411,366.79 |
-| ON/USDT:USDT | +15.72% | $2,391,829.23 |
+| JIMOTHY/USDT:USDT | +55.07% | $5,892,400.62 |
+| BANK/USDT:USDT | +36.73% | $109,051,858.50 |
+| RIF/USDT:USDT | +18.47% | $4,670,310.42 |
+| ZAMA/USDT:USDT | +16.84% | $3,415,380.42 |
+| ON/USDT:USDT | +14.67% | $2,401,502.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +3.85% | +4.06% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.04% | +3.26% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.57% | +2.78% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.35% | +2.57% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.35% | +2.57% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.90% | +4.08% |
+| KORU/USDT:USDT | below_1h_threshold | +3.85% | +4.03% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.75% | +2.93% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.35% | +2.53% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.18% | +2.36% |
 
 ## 7. 次に見るべき不足
 
