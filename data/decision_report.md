@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T00:51:08.697561+00:00
+- generated_at: 2026-07-23T00:56:14.746916+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9336**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.27** / 初期 $100.00 (+1.27%)
-- 確定: 428件 (Win 143 / Loss 178 / Flat 107) / pending 0件 / skip 376件
+- 確定: 428件 (Win 143 / Loss 178 / Flat 107) / pending 0件 / skip 377件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000355 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CBRSSTOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $101.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T00:51:01.955815+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=66108.8
-- Funnel: target 890 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-23T00:56:07.730642+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=66065.1
+- Funnel: target 890 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +59.43% | $6,144,061.58 |
-| BANK/USDT:USDT | +30.66% | $111,684,759.16 |
-| BROCCOLIF3B/USDT:USDT | +16.88% | $1,854,675.02 |
-| ZAMA/USDT:USDT | +15.83% | $3,264,746.69 |
-| ON/USDT:USDT | +15.09% | $2,325,344.39 |
+| JIMOTHY/USDT:USDT | +60.29% | $6,155,623.86 |
+| BANK/USDT:USDT | +28.74% | $111,992,504.51 |
+| RIF/USDT:USDT | +15.80% | $4,723,043.03 |
+| ZAMA/USDT:USDT | +15.33% | $3,274,266.40 |
+| ON/USDT:USDT | +13.96% | $2,352,459.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.60% | +4.56% |
-| TRIA/USDT:USDT | below_1h_threshold | +4.00% | +3.96% |
-| DODO/USDT:USDT | below_1h_threshold | +2.73% | +2.69% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.71% | +2.67% |
-| MUU/USDT:USDT | below_1h_threshold | +1.90% | +1.86% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.52% | +3.55% |
+| BANK/USDT:USDT | below_1h_threshold | +3.13% | +3.15% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.71% | +2.74% |
+| MUU/USDT:USDT | below_1h_threshold | +1.90% | +1.92% |
+| KORU/USDT:USDT | below_1h_threshold | +1.70% | +1.72% |
 
 ## 7. 次に見るべき不足
 
