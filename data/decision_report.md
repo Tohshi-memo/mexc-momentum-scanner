@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T14:06:22.383713+00:00
+- generated_at: 2026-07-23T14:11:17.699595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9368**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T14:06:14.872138+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64916.9
-- Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 89.0 >= 65=1
+- 更新: 2026-07-23T14:11:10.839811+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64912.0
+- Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +57.75% | $6,727,485.42 |
-| BANK/USDT:USDT | +37.95% | $107,377,920.36 |
-| JIMOTHY/USDT:USDT | +28.93% | $5,591,299.10 |
-| ZAMA/USDT:USDT | +28.57% | $7,179,034.22 |
-| ON/USDT:USDT | +18.68% | $5,632,749.50 |
+| RIF/USDT:USDT | +57.55% | $6,832,696.40 |
+| BANK/USDT:USDT | +36.46% | $107,569,391.29 |
+| JIMOTHY/USDT:USDT | +33.07% | $5,603,173.16 |
+| ZAMA/USDT:USDT | +27.51% | $7,210,394.09 |
+| ON/USDT:USDT | +14.52% | $5,689,085.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.30% | +4.21% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +3.89% |
-| RIF/USDT:USDT | below_1h_threshold | +3.97% | +3.88% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.88% | +3.79% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.60% |
+| JIMOTHY/USDT:USDT | below_relative_strength | +5.03% | +4.94% |
+| RIF/USDT:USDT | below_1h_threshold | +3.89% | +3.80% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.88% | +3.80% |
+| BILL/USDT:USDT | below_1h_threshold | +3.54% | +3.46% |
+| JTO/USDT:USDT | below_1h_threshold | +2.93% | +2.84% |
 
 ## 7. 次に見るべき不足
 
