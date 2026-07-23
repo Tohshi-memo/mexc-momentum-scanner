@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T12:41:06.083219+00:00
+- generated_at: 2026-07-23T12:46:08.744114+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9366**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T12:41:00.492085+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.64% price=65105.1
-- Funnel: target 898 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-23T12:46:02.069849+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.68% price=65078.2
+- Funnel: target 898 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +40.35% | $5,928,176.24 |
-| BANK/USDT:USDT | +38.27% | $106,475,711.72 |
-| ZAMA/USDT:USDT | +28.52% | $6,766,360.25 |
-| JIMOTHY/USDT:USDT | +23.95% | $5,784,526.20 |
-| ON/USDT:USDT | +17.71% | $5,369,441.56 |
+| RIF/USDT:USDT | +39.33% | $5,986,045.66 |
+| BANK/USDT:USDT | +36.34% | $106,866,540.81 |
+| ZAMA/USDT:USDT | +30.42% | $6,864,237.27 |
+| JIMOTHY/USDT:USDT | +23.16% | $5,790,744.20 |
+| ON/USDT:USDT | +17.98% | $5,415,807.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.40% | +5.05% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.45% | +4.09% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.28% | +3.93% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.84% | +2.48% |
-| PROM/USDT:USDT | below_1h_threshold | +1.60% | +2.25% |
+| RIF/USDT:USDT | below_1h_threshold | +3.64% | +4.32% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.62% | +3.30% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.14% | +2.82% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.21% | +1.90% |
+| LMTSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.70% |
 
 ## 7. 次に見るべき不足
 
