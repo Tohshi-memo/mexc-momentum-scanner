@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T02:01:10.558316+00:00
+- generated_at: 2026-07-23T02:06:17.187712+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9337**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.27** / 初期 $100.00 (+1.27%)
-- 確定: 428件 (Win 143 / Loss 178 / Flat 107) / pending 0件 / skip 379件
+- 確定: 428件 (Win 143 / Loss 178 / Flat 107) / pending 0件 / skip 380件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000335 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CBRSSTOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $101.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T02:01:03.954637+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=65776.2
-- Funnel: target 890 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-23T02:06:10.266890+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=65763.1
+- Funnel: target 890 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +50.43% | $5,845,110.73 |
-| BANK/USDT:USDT | +28.07% | $107,263,996.37 |
-| RIF/USDT:USDT | +20.25% | $4,619,756.34 |
-| ZAMA/USDT:USDT | +16.48% | $3,563,262.29 |
-| ON/USDT:USDT | +14.23% | $2,456,126.51 |
+| JIMOTHY/USDT:USDT | +49.30% | $5,850,691.96 |
+| BANK/USDT:USDT | +24.91% | $107,751,622.63 |
+| RIF/USDT:USDT | +24.44% | $4,657,397.76 |
+| ZAMA/USDT:USDT | +17.29% | $3,581,721.93 |
+| ON/USDT:USDT | +14.75% | $2,471,765.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +1.49% | +1.52% |
-| RIF/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.36% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.52% | +0.54% |
-| LEAD/USDT:USDT | below_1h_threshold | +0.36% | +0.38% |
+| TSEMSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.38% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.53% | +0.58% |
+| XMR/USDT:USDT | below_1h_threshold | +0.42% | +0.47% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.37% | +0.42% |
 
 ## 7. 次に見るべき不足
 
