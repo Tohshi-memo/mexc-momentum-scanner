@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T19:41:21.042324+00:00
+- generated_at: 2026-07-23T19:46:15.026008+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9386**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T19:41:15.354156+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=64777.4
+- 更新: 2026-07-23T19:46:08.160326+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64735.3
 - Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1
+- Strict後reject: 4h RSI 74.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +16.81% | $3,582,788.35 |
-| ON/USDT:USDT | +10.65% | $7,124,291.20 |
-| PROM/USDT:USDT | +8.34% | $1,710,642.74 |
-| UB/USDT:USDT | +7.74% | $2,353,887.61 |
-| B/USDT:USDT | +7.10% | $4,023,229.26 |
+| BILL/USDT:USDT | +16.36% | $3,850,248.93 |
+| ON/USDT:USDT | +8.85% | $7,169,598.88 |
+| UB/USDT:USDT | +7.58% | $2,366,427.95 |
+| PROM/USDT:USDT | +7.54% | $1,717,238.49 |
+| B/USDT:USDT | +6.40% | $4,037,595.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +4.58% | +4.68% |
-| ACE/USDT:USDT | below_1h_threshold | +1.99% | +2.09% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.89% | +1.99% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.83% | +1.93% |
-| O/USDT:USDT | below_1h_threshold | +1.64% | +1.75% |
+| DODO/USDT:USDT | below_1h_threshold | +4.10% | +4.27% |
+| ACE/USDT:USDT | below_1h_threshold | +1.94% | +2.10% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.86% | +2.02% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.44% | +1.60% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.27% | +1.44% |
 
 ## 7. 次に見るべき不足
 
