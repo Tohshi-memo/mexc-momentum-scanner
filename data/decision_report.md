@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T17:06:12.441789+00:00
+- generated_at: 2026-07-23T17:11:14.888512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9380**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T17:06:05.711361+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64731.0
+- 更新: 2026-07-23T17:11:10.112472+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64775.1
 - Funnel: target 897 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +17.94% | $14,712,504.02 |
-| RIF/USDT:USDT | +9.75% | $12,153,406.70 |
-| BILL/USDT:USDT | +4.40% | $2,091,612.44 |
-| ON/USDT:USDT | +4.32% | $5,923,455.97 |
-| ZAMA/USDT:USDT | +2.68% | $8,090,688.30 |
+| AKE/USDT:USDT | +17.98% | $14,999,364.86 |
+| RIF/USDT:USDT | +5.20% | $12,312,707.56 |
+| ON/USDT:USDT | +4.52% | $5,935,133.71 |
+| BILL/USDT:USDT | +4.25% | $2,126,165.71 |
+| SMCISTOCK/USDT:USDT | +3.03% | $2,017,098.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.98% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.88% | +2.88% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.38% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.30% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.63% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.91% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.88% | +2.82% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.67% | +2.60% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.38% | +2.31% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.24% |
 
 ## 7. 次に見るべき不足
 
