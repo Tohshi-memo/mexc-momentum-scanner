@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T21:56:27.983455+00:00
+- generated_at: 2026-07-23T22:01:17.480881+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9397**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T21:56:16.596677+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65113.9
-- Funnel: target 897 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 66.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-23T22:01:10.704840+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=65122.8
+- Funnel: target 897 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +22.06% | $6,159,416.18 |
-| AKE/USDT:USDT | +18.83% | $24,281,390.56 |
-| RIF/USDT:USDT | +17.44% | $16,790,177.82 |
-| BILL/USDT:USDT | +13.69% | $6,578,874.62 |
-| ON/USDT:USDT | +11.57% | $7,048,852.87 |
+| ESPORTS/USDT:USDT | +21.93% | $6,122,777.79 |
+| AKE/USDT:USDT | +18.93% | $23,918,357.97 |
+| RIF/USDT:USDT | +16.65% | $16,683,923.44 |
+| BILL/USDT:USDT | +13.54% | $6,608,926.84 |
+| ON/USDT:USDT | +10.89% | $6,809,375.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.45% | +3.45% |
-| BANK/USDT:USDT | below_1h_threshold | +2.88% | +2.89% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.70% |
-| ACE/USDT:USDT | below_1h_threshold | +2.40% | +2.40% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.22% |
+| LA/USDT:USDT | below_1h_threshold | +0.71% | +0.73% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.64% | +0.66% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.43% | +0.45% |
+| BKNGSTOCK/USDT:USDT | below_1h_threshold | +0.30% | +0.32% |
 
 ## 7. 次に見るべき不足
 
