@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T03:56:24.386616+00:00
+- generated_at: 2026-07-23T04:01:14.846045+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9351**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T03:56:16.348345+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=65620.2
-- Funnel: target 892 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-23T04:01:08.076516+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=65588.0
+- Funnel: target 892 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +54.56% | $5,869,745.48 |
-| RIF/USDT:USDT | +29.13% | $5,268,636.25 |
-| BANK/USDT:USDT | +28.63% | $109,343,031.77 |
-| ZAMA/USDT:USDT | +17.49% | $4,245,066.88 |
-| ERA/USDT:USDT | +11.02% | $5,751,845.75 |
+| JIMOTHY/USDT:USDT | +55.43% | $5,740,771.75 |
+| RIF/USDT:USDT | +31.24% | $5,201,111.78 |
+| BANK/USDT:USDT | +29.02% | $104,236,532.11 |
+| ON/USDT:USDT | +23.47% | $2,932,041.19 |
+| ZAMA/USDT:USDT | +17.17% | $4,229,086.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.79% | +5.03% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.24% | +1.48% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.00% | +1.24% |
-| UB/USDT:USDT | below_1h_threshold | +0.92% | +1.16% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.94% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.09% | +2.14% |
+| KORU/USDT:USDT | below_1h_threshold | +1.54% | +1.59% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.09% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.00% | +1.06% |
+| RIF/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
 
 ## 7. 次に見るべき不足
 
