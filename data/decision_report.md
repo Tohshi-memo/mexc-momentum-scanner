@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T22:56:11.589443+00:00
+- generated_at: 2026-07-23T23:01:16.279347+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9401**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T22:56:04.831393+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=65149.8
-- Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-23T23:01:09.466318+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=65168.5
+- Funnel: target 897 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +26.90% | $6,979,295.24 |
-| AKE/USDT:USDT | +18.93% | $24,310,576.98 |
-| BILL/USDT:USDT | +16.40% | $7,226,126.21 |
-| ON/USDT:USDT | +13.41% | $7,098,910.63 |
-| PROM/USDT:USDT | +9.57% | $2,203,038.73 |
+| ESPORTS/USDT:USDT | +26.67% | $6,929,476.72 |
+| AKE/USDT:USDT | +18.87% | $24,013,906.71 |
+| BILL/USDT:USDT | +17.23% | $7,230,556.89 |
+| ON/USDT:USDT | +13.62% | $6,991,912.68 |
+| PROM/USDT:USDT | +9.57% | $2,190,787.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.12% | +4.10% |
-| BILL/USDT:USDT | below_1h_threshold | +2.69% | +2.67% |
-| IDOL/USDT:USDT | below_1h_threshold | +2.14% | +2.12% |
-| ON/USDT:USDT | below_1h_threshold | +1.80% | +1.78% |
-| B2/USDT:USDT | below_1h_threshold | +1.30% | +1.28% |
+| B2/USDT:USDT | below_1h_threshold | +0.67% | +0.65% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.28% | +0.27% |
+| DRAM/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.25% | +0.23% |
 
 ## 7. 次に見るべき不足
 
