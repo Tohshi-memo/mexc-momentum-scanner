@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-23T18:46:23.272816+00:00
+- generated_at: 2026-07-23T18:51:20.167432+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9384**
+- closed shadow trades: **9385**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9384, expectancy=-0.01%
+- 全期間 MARKET基準: n=9385, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.91%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,17 +47,17 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$425.48** / 初期 $100.00 (+325.48%)
-- 確定: 3322件 (Win 1048 / Loss 1076 / Flat 1198) / skip 2623件
+- 確定: 3322件 (Win 1048 / Loss 1076 / Flat 1198) / skip 2624件
 - 成長率目線: 平均log +0.000436 / 幾何平均 +0.044% per trade / maxDD +8.13%
-- 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: B/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.13% 残高後 $425.48
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$130.36** / 初期 $100.00 (+30.36%)
-- 確定: 1162件 (Win 312 / Loss 254 / Flat 596) / skip 1633件
+- 確定: 1162件 (Win 312 / Loss 254 / Flat 596) / skip 1634件
 - 成長率目線: 平均log +0.000228 / 幾何平均 +0.023% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0429 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0282 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BROCCOLIF3B/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $130.36
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,13 +65,13 @@
 - 残高: **$100.85** / 初期 $100.00 (+0.85%)
 - 確定: 450件 (Win 149 / Loss 182 / Flat 119) / pending 5件 / skip 402件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000152 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000149 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ANTHROPIC/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $100.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T18:46:16.342599+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=64808.8
+- 更新: 2026-07-23T18:51:12.262709+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=64856.0
 - Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| B/USDT:USDT | +10.56% | $3,921,452.08 |
-| AKE/USDT:USDT | +10.37% | $19,969,159.25 |
-| BILL/USDT:USDT | +9.51% | $2,540,600.77 |
-| ON/USDT:USDT | +8.45% | $6,727,351.07 |
-| UB/USDT:USDT | +8.02% | $2,292,461.32 |
+| AKE/USDT:USDT | +13.50% | $20,217,074.09 |
+| B/USDT:USDT | +9.68% | $3,946,037.60 |
+| ON/USDT:USDT | +9.38% | $6,765,597.53 |
+| BILL/USDT:USDT | +8.95% | $2,626,051.61 |
+| UB/USDT:USDT | +8.11% | $2,304,806.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +4.97% | +4.73% |
-| PROM/USDT:USDT | below_1h_threshold | +4.17% | +3.93% |
-| RE/USDT:USDT | below_1h_threshold | +4.09% | +3.86% |
-| BANK/USDT:USDT | below_1h_threshold | +3.70% | +3.47% |
-| BILL/USDT:USDT | below_1h_threshold | +3.67% | +3.43% |
+| PROM/USDT:USDT | below_1h_threshold | +4.65% | +4.34% |
+| RE/USDT:USDT | below_1h_threshold | +4.57% | +4.25% |
+| BANK/USDT:USDT | below_1h_threshold | +4.44% | +4.13% |
+| B/USDT:USDT | below_1h_threshold | +4.30% | +3.99% |
+| NIGHT/USDT:USDT | below_1h_threshold | +3.58% | +3.27% |
 
 ## 7. 次に見るべき不足
 
