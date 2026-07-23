@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T03:36:23.346460+00:00
+- generated_at: 2026-07-23T03:41:25.816855+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9349**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T03:36:14.520485+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=65634.1
-- Funnel: target 892 → liquid 183 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 78.6 >= 65=1
+- 更新: 2026-07-23T03:41:18.525828+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=65668.7
+- Funnel: target 892 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +67.37% | $5,822,680.99 |
-| RIF/USDT:USDT | +36.49% | $5,170,679.35 |
-| BANK/USDT:USDT | +32.12% | $107,950,492.71 |
-| ZAMA/USDT:USDT | +20.72% | $4,158,731.61 |
-| DODO/USDT:USDT | +11.34% | $2,852,194.68 |
+| JIMOTHY/USDT:USDT | +62.86% | $5,838,102.12 |
+| RIF/USDT:USDT | +33.85% | $5,201,498.51 |
+| BANK/USDT:USDT | +32.57% | $108,191,859.48 |
+| ZAMA/USDT:USDT | +20.89% | $4,181,077.59 |
+| DODO/USDT:USDT | +9.90% | $2,854,421.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +2.18% | +2.39% |
-| UB/USDT:USDT | below_1h_threshold | +1.43% | +1.65% |
-| US/USDT:USDT | below_1h_threshold | +1.14% | +1.35% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.82% | +1.04% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.92% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.97% | +4.13% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.40% | +1.57% |
+| UB/USDT:USDT | below_1h_threshold | +1.34% | +1.51% |
+| ENA/USDT:USDT | below_1h_threshold | +1.06% | +1.22% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.86% |
 
 ## 7. 次に見るべき不足
 
