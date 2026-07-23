@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T14:51:22.187605+00:00
+- generated_at: 2026-07-23T14:56:20.891357+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9371**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T14:51:14.385202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64853.9
-- Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-07-23T14:56:13.063526+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64862.2
+- Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1, 4h RSI 88.1 >= 65=1
+- Strict後reject: 4h RSI 88.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +70.84% | $8,678,666.37 |
-| JIMOTHY/USDT:USDT | +41.28% | $5,732,342.70 |
-| BANK/USDT:USDT | +37.90% | $110,237,200.14 |
-| ZAMA/USDT:USDT | +27.01% | $7,399,589.98 |
-| ON/USDT:USDT | +17.84% | $5,857,847.97 |
+| RIF/USDT:USDT | +69.70% | $8,819,290.53 |
+| BANK/USDT:USDT | +38.58% | $110,584,749.61 |
+| JIMOTHY/USDT:USDT | +36.78% | $5,754,215.36 |
+| ZAMA/USDT:USDT | +25.47% | $7,416,500.61 |
+| ON/USDT:USDT | +18.78% | $5,865,534.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.88% | +3.89% |
-| AKE/USDT:USDT | below_1h_threshold | +2.80% | +2.81% |
-| JTO/USDT:USDT | below_1h_threshold | +2.74% | +2.74% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.69% |
-| MUU/USDT:USDT | below_1h_threshold | +2.38% | +2.39% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.88% | +3.88% |
+| JTO/USDT:USDT | below_1h_threshold | +3.42% | +3.41% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.96% | +2.95% |
+| PROM/USDT:USDT | below_1h_threshold | +2.72% | +2.71% |
+| CIENSTOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.68% |
 
 ## 7. 次に見るべき不足
 
