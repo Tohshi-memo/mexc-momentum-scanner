@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T19:01:18.996019+00:00
+- generated_at: 2026-07-23T19:06:12.422788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9386**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T19:01:11.037025+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64875.8
-- Funnel: target 897 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-23T19:06:05.579640+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64870.0
+- Funnel: target 897 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +13.93% | $20,193,379.41 |
-| ON/USDT:USDT | +10.45% | $6,620,860.23 |
-| BILL/USDT:USDT | +9.96% | $2,724,529.80 |
-| PROM/USDT:USDT | +9.38% | $1,588,327.74 |
-| B/USDT:USDT | +9.33% | $3,877,570.80 |
+| AKE/USDT:USDT | +12.58% | $20,302,361.80 |
+| ON/USDT:USDT | +10.36% | $6,649,856.10 |
+| BILL/USDT:USDT | +10.27% | $2,757,664.22 |
+| PROM/USDT:USDT | +8.58% | $1,627,922.94 |
+| UB/USDT:USDT | +8.29% | $2,278,046.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.95% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.72% |
-| ON/USDT:USDT | below_1h_threshold | +0.70% | +0.65% |
-| TWLOSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.56% |
-| RE/USDT:USDT | below_1h_threshold | +0.43% | +0.38% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.96% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.82% | +0.77% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.73% |
+| BILL/USDT:USDT | below_1h_threshold | +0.65% | +0.61% |
 
 ## 7. 次に見るべき不足
 
