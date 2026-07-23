@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T02:51:21.420324+00:00
+- generated_at: 2026-07-23T02:56:17.009493+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9345**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T02:51:13.485207+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=65750.1
-- Funnel: target 890 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.6 >= 65=1, 4h RSI 75.1 >= 65=1
+- 更新: 2026-07-23T02:56:09.776150+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=65756.1
+- Funnel: target 890 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +60.46% | $5,940,673.80 |
-| RIF/USDT:USDT | +34.06% | $5,013,071.61 |
-| BANK/USDT:USDT | +30.33% | $109,633,424.17 |
-| O/USDT:USDT | +22.49% | $5,241,477.39 |
-| ZAMA/USDT:USDT | +21.11% | $3,882,117.67 |
+| JIMOTHY/USDT:USDT | +57.72% | $5,953,951.39 |
+| RIF/USDT:USDT | +35.92% | $5,031,224.48 |
+| BANK/USDT:USDT | +25.53% | $109,924,742.27 |
+| ZAMA/USDT:USDT | +22.19% | $3,923,668.97 |
+| O/USDT:USDT | +22.04% | $5,278,461.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.84% | +3.91% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.70% | +3.76% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.82% | +2.88% |
-| DODO/USDT:USDT | below_1h_threshold | +2.59% | +2.65% |
-| NIGHT/USDT:USDT | below_1h_threshold | +1.88% | +1.94% |
+| ZAMA/USDT:USDT | below_1h_threshold | +4.62% | +4.68% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.34% | +3.40% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.19% | +3.25% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.94% | +3.00% |
+| MORPHO/USDT:USDT | below_1h_threshold | +2.17% | +2.23% |
 
 ## 7. 次に見るべき不足
 
