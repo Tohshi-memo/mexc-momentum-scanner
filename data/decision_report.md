@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T15:01:11.876741+00:00
+- generated_at: 2026-07-23T15:06:12.350596+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9371**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T15:01:05.198100+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64884.5
+- 更新: 2026-07-23T15:06:05.728080+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64832.6
 - Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +76.09% | $8,822,187.20 |
-| BANK/USDT:USDT | +38.11% | $107,744,298.11 |
-| JIMOTHY/USDT:USDT | +35.02% | $5,605,654.37 |
-| ZAMA/USDT:USDT | +26.70% | $7,320,907.68 |
-| ON/USDT:USDT | +17.62% | $5,856,314.61 |
+| RIF/USDT:USDT | +75.14% | $8,984,670.22 |
+| BANK/USDT:USDT | +37.61% | $107,961,446.45 |
+| JIMOTHY/USDT:USDT | +37.36% | $5,615,258.30 |
+| ZAMA/USDT:USDT | +26.53% | $7,329,526.72 |
+| ON/USDT:USDT | +16.94% | $5,860,228.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.07% | +4.07% |
-| RIF/USDT:USDT | below_1h_threshold | +2.96% | +2.96% |
-| MUU/USDT:USDT | below_1h_threshold | +2.44% | +2.44% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.07% | +4.15% |
+| MUU/USDT:USDT | below_1h_threshold | +2.44% | +2.52% |
+| RIF/USDT:USDT | below_1h_threshold | +2.11% | +2.19% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +2.00% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.47% | +1.55% |
 
 ## 7. 次に見るべき不足
 
