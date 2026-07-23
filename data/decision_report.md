@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T17:46:13.190801+00:00
+- generated_at: 2026-07-23T17:51:22.125115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9382**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.85** / 初期 $100.00 (+0.85%)
-- 確定: 448件 (Win 149 / Loss 182 / Flat 117) / pending 4件 / skip 401件
+- 確定: 448件 (Win 149 / Loss 182 / Flat 117) / pending 5件 / skip 401件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000068 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $100.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T17:46:06.567501+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64829.9
-- Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-23T17:51:12.860699+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=64812.3
+- Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +19.30% | $17,081,981.30 |
-| ON/USDT:USDT | +9.55% | $6,254,767.90 |
-| BILL/USDT:USDT | +6.62% | $2,275,200.68 |
-| UB/USDT:USDT | +5.54% | $2,277,838.48 |
-| CBRSSTOCK/USDT:USDT | +5.47% | $1,457,460.99 |
+| AKE/USDT:USDT | +19.52% | $17,215,050.30 |
+| CBRSSTOCK/USDT:USDT | +8.03% | $1,535,907.06 |
+| ON/USDT:USDT | +7.57% | $6,316,280.05 |
+| ZAMA/USDT:USDT | +7.05% | $8,318,430.66 |
+| ANTHROPIC/USDT:USDT | +6.42% | $17,235,140.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.97% | +4.82% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +4.62% | +4.47% |
-| UB/USDT:USDT | below_1h_threshold | +3.67% | +3.51% |
-| ERA/USDT:USDT | below_1h_threshold | +2.98% | +2.83% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.83% |
+| B/USDT:USDT | below_1h_threshold | +3.96% | +3.83% |
+| UB/USDT:USDT | below_1h_threshold | +3.75% | +3.62% |
+| ERA/USDT:USDT | below_1h_threshold | +3.11% | +2.98% |
+| ON/USDT:USDT | below_1h_threshold | +3.02% | +2.90% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.85% |
 
 ## 7. 次に見るべき不足
 
