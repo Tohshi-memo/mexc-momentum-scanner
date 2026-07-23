@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T16:06:19.670876+00:00
+- generated_at: 2026-07-23T16:11:17.928743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9376**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$100.92** / 初期 $100.00 (+0.92%)
-- 確定: 442件 (Win 146 / Loss 181 / Flat 115) / pending 4件 / skip 401件
+- 確定: 442件 (Win 146 / Loss 181 / Flat 115) / pending 5件 / skip 401件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000048 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_5PCT` SL_HIT account -0.17% 残高後 $100.92
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T16:06:14.407630+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64828.7
-- Funnel: target 897 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-23T16:11:10.883997+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=64834.5
+- Funnel: target 897 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +3.71% | $11,149,846.17 |
-| BILL/USDT:USDT | +2.52% | $1,766,366.51 |
-| SNXX/USDT:USDT | +1.78% | $2,602,312.16 |
-| RE/USDT:USDT | +1.17% | $11,444,321.78 |
-| SNDKSTOCK/USDT:USDT | +0.94% | $280,301,569.65 |
+| AKE/USDT:USDT | +5.02% | $11,409,748.49 |
+| BILL/USDT:USDT | +4.74% | $1,860,717.73 |
+| SNXX/USDT:USDT | +2.04% | $2,731,765.78 |
+| B/USDT:USDT | +1.35% | $3,150,799.73 |
+| BROCCOLIF3B/USDT:USDT | +1.18% | $1,147,119.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.59% | +3.76% |
-| BILL/USDT:USDT | below_1h_threshold | +2.71% | +2.88% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.74% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.93% | +1.11% |
-| RE/USDT:USDT | below_1h_threshold | +0.83% | +1.00% |
+| BILL/USDT:USDT | below_1h_threshold | +4.74% | +4.90% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.89% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.73% |
+| B/USDT:USDT | below_1h_threshold | +1.53% | +1.69% |
+| ERA/USDT:USDT | below_1h_threshold | +1.09% | +1.25% |
 
 ## 7. 次に見るべき不足
 

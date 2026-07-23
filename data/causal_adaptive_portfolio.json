@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 100.9222471024483,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-23T16:06:18.557225+00:00",
+  "updated_at": "2026-07-23T16:11:16.525582+00:00",
   "high_watermark": 102.97873819857506,
   "max_drawdown_pct": 3.463237719717767,
   "loss_streak": 1,
@@ -117279,6 +117279,103 @@
             "strategy": "LIMIT_9PCT_LONG",
             "direction": "long",
             "causal_score": 3.4352218159436783e-05
+          }
+        ]
+      }
+    },
+    "AKE/USDT:USDT|2026-07-23T16:11:11.284527+00:00": {
+      "key": "AKE/USDT:USDT|2026-07-23T16:11:11.284527+00:00",
+      "symbol": "AKE/USDT:USDT",
+      "detected_at": "2026-07-23T16:11:11.284527+00:00",
+      "registered_at": "2026-07-23T16:11:16.465839+00:00",
+      "signal_batch": "2026-07-23T16:11Z",
+      "status": "pending",
+      "strategy": "LIMIT_5PCT",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 5.657378279790167,
+      "decision": {
+        "strategy": "LIMIT_5PCT",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 4.7599741036985155e-05,
+        "robust_score": 4.7599741036985155e-05,
+        "causal_history_count": 9374,
+        "fast": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 17,
+          "fill_rate": 0.34,
+          "avg_pnl_pct": 0.342997198879551,
+          "effective_ev_pct": 0.11661904761904734,
+          "avg_log_return": 5.473265486505487e-05,
+          "geometric_return_pct": 0.005473415272416737,
+          "avg_account_return_pct": 0.005495833333333311,
+          "max_drawdown_pct": 0.3496937500000019,
+          "max_loss_streak": 2
+        },
+        "recent": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 17,
+          "fill_rate": 0.34,
+          "avg_pnl_pct": 0.342997198879551,
+          "effective_ev_pct": 0.11661904761904734,
+          "avg_log_return": 5.473265486505487e-05,
+          "geometric_return_pct": 0.005473415272416737,
+          "avg_account_return_pct": 0.005495833333333311,
+          "max_drawdown_pct": 0.3496937500000019,
+          "max_loss_streak": 2
+        },
+        "mid": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 200,
+          "filled": 77,
+          "fill_rate": 0.385,
+          "avg_pnl_pct": 0.1189774026116375,
+          "effective_ev_pct": 0.04580630000548044,
+          "avg_log_return": 2.534614168206926e-05,
+          "geometric_return_pct": 0.002534646289831244,
+          "avg_account_return_pct": 0.0025730360465784363,
+          "max_drawdown_pct": 0.7374417717596535,
+          "max_loss_streak": 3
+        },
+        "long": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 380,
+          "fill_rate": 0.38,
+          "avg_pnl_pct": 0.5200975230102004,
+          "effective_ev_pct": 0.19763705874387616,
+          "avg_log_return": 9.168251212694971e-05,
+          "geometric_return_pct": 0.009168671509685034,
+          "avg_account_return_pct": 0.0091984353890322,
+          "max_drawdown_pct": 0.800998363709815,
+          "max_loss_streak": 3
+        },
+        "all": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 380,
+          "fill_rate": 0.38,
+          "avg_pnl_pct": 0.5200975230102004,
+          "effective_ev_pct": 0.19763705874387616,
+          "avg_log_return": 9.168251212694971e-05,
+          "geometric_return_pct": 0.009168671509685034,
+          "avg_account_return_pct": 0.0091984353890322,
+          "max_drawdown_pct": 0.800998363709815,
+          "max_loss_streak": 3
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 3.449755981096284e-05
           }
         ]
       }
