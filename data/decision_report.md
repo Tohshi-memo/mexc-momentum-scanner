@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T19:11:10.812153+00:00
+- generated_at: 2026-07-23T19:16:11.754716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9386**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T19:11:04.067021+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64834.5
+- 更新: 2026-07-23T19:16:05.038527+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64818.1
 - Funnel: target 897 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BILL/USDT:USDT | +11.13% | $2,795,946.00 |
-| ON/USDT:USDT | +10.39% | $6,742,072.38 |
-| UB/USDT:USDT | +9.18% | $2,307,604.29 |
-| PROM/USDT:USDT | +8.65% | $1,637,483.09 |
-| B/USDT:USDT | +8.39% | $3,906,441.89 |
+| BILL/USDT:USDT | +11.88% | $2,908,593.37 |
+| ON/USDT:USDT | +10.30% | $6,791,279.33 |
+| UB/USDT:USDT | +9.20% | $2,321,655.21 |
+| PROM/USDT:USDT | +8.22% | $1,647,012.49 |
+| B/USDT:USDT | +7.63% | $3,911,511.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LMTSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.97% |
-| ACE/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
-| BILL/USDT:USDT | below_1h_threshold | +1.44% | +1.45% |
-| O/USDT:USDT | below_1h_threshold | +1.18% | +1.19% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.01% |
+| ACE/USDT:USDT | below_1h_threshold | +3.06% | +3.09% |
+| BILL/USDT:USDT | below_1h_threshold | +2.06% | +2.10% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.04% | +2.08% |
+| DODO/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
+| UB/USDT:USDT | below_1h_threshold | +1.27% | +1.31% |
 
 ## 7. 次に見るべき不足
 
