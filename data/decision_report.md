@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-23T19:56:17.492519+00:00
+- generated_at: 2026-07-23T20:01:21.102174+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9386**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-23T19:56:10.657125+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=64748.2
-- Funnel: target 897 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-23T20:01:14.657883+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64862.3
+- Funnel: target 897 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +16.08% | $1,010,910.75 |
-| BILL/USDT:USDT | +15.50% | $4,130,324.82 |
-| ON/USDT:USDT | +8.78% | $7,209,800.39 |
-| PROM/USDT:USDT | +8.22% | $1,726,939.64 |
-| UB/USDT:USDT | +6.87% | $2,406,444.04 |
+| BILL/USDT:USDT | +15.12% | $4,340,189.28 |
+| LA/USDT:USDT | +13.83% | $1,043,857.52 |
+| PROM/USDT:USDT | +10.61% | $1,725,430.30 |
+| ON/USDT:USDT | +8.63% | $6,881,875.83 |
+| UB/USDT:USDT | +7.14% | $2,385,728.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +4.37% | +4.51% |
-| ACE/USDT:USDT | below_1h_threshold | +1.96% | +2.11% |
-| LA/USDT:USDT | below_1h_threshold | +1.78% | +1.92% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.62% | +1.76% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.34% | +1.48% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.94% | +2.88% |
+| KORU/USDT:USDT | below_1h_threshold | +1.99% | +1.93% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.73% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.53% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.42% | +1.36% |
 
 ## 7. 次に見るべき不足
 
