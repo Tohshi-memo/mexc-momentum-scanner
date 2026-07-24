@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T08:41:21.602449+00:00
+- generated_at: 2026-07-24T08:46:22.375335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9421**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T08:41:11.856067+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=65419.7
-- Funnel: target 897 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1
+- 更新: 2026-07-24T08:46:13.283117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=65405.8
+- Funnel: target 897 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +37.95% | $11,453,879.84 |
-| RE/USDT:USDT | +26.87% | $17,091,650.30 |
-| BILL/USDT:USDT | +17.53% | $10,754,797.98 |
-| BEAT/USDT:USDT | +17.17% | $18,901,081.02 |
-| CAP/USDT:USDT | +12.98% | $1,100,038.58 |
+| ESPORTS/USDT:USDT | +34.85% | $11,526,299.96 |
+| RE/USDT:USDT | +26.16% | $17,128,092.75 |
+| BEAT/USDT:USDT | +17.58% | $18,937,466.69 |
+| BILL/USDT:USDT | +17.38% | $10,760,059.02 |
+| CAP/USDT:USDT | +13.33% | $1,101,290.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ERA/USDT:USDT | below_1h_threshold | +2.67% | +2.74% |
-| SLX/USDT:USDT | below_1h_threshold | +2.44% | +2.52% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.60% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.29% |
-| BARD/USDT:USDT | below_1h_threshold | +1.10% | +1.17% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.93% | +3.02% |
+| ERA/USDT:USDT | below_1h_threshold | +2.48% | +2.58% |
+| SLX/USDT:USDT | below_1h_threshold | +2.00% | +2.10% |
+| ON/USDT:USDT | below_1h_threshold | +1.60% | +1.70% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.63% |
 
 ## 7. 次に見るべき不足
 
