@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T15:01:17.701300+00:00
+- generated_at: 2026-07-24T15:06:06.338174+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9444**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T15:01:10.869619+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63992.8
+- 更新: 2026-07-24T15:06:01.672609+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=63893.1
 - Funnel: target 898 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +41.59% | $13,730,818.03 |
-| PONS/USDT:USDT | +34.16% | $1,154,180.26 |
-| LA/USDT:USDT | +27.73% | $2,252,858.19 |
-| RE/USDT:USDT | +22.67% | $22,614,115.99 |
-| B2/USDT:USDT | +20.94% | $2,073,390.21 |
+| ESPORTS/USDT:USDT | +40.91% | $13,768,669.31 |
+| PONS/USDT:USDT | +33.67% | $1,158,897.06 |
+| LA/USDT:USDT | +26.72% | $2,278,940.64 |
+| RE/USDT:USDT | +21.11% | $22,655,925.21 |
+| CAP/USDT:USDT | +19.12% | $1,872,048.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +1.75% | +1.82% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.58% | +1.64% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.28% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.95% | +1.02% |
-| B2/USDT:USDT | below_1h_threshold | +0.62% | +0.68% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.21% | +3.43% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.58% | +1.80% |
+| ON/USDT:USDT | below_1h_threshold | +1.53% | +1.74% |
+| BILL/USDT:USDT | below_1h_threshold | +1.52% | +1.74% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.43% |
 
 ## 7. 次に見るべき不足
 
