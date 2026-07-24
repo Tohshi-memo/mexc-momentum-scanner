@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T06:21:14.545416+00:00
+- generated_at: 2026-07-24T06:26:09.999073+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9416**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T06:21:06.496436+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=65457.5
-- Funnel: target 897 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-24T06:26:03.341508+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=65431.5
+- Funnel: target 897 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +34.14% | $10,314,986.41 |
-| AKE/USDT:USDT | +26.76% | $29,040,163.51 |
-| RE/USDT:USDT | +25.60% | $14,797,519.33 |
-| ON/USDT:USDT | +15.52% | $5,960,177.18 |
-| BILL/USDT:USDT | +14.82% | $10,006,800.17 |
+| ESPORTS/USDT:USDT | +34.05% | $10,370,993.90 |
+| RE/USDT:USDT | +26.33% | $14,937,110.04 |
+| AKE/USDT:USDT | +19.32% | $29,359,014.49 |
+| BILL/USDT:USDT | +15.27% | $10,022,335.09 |
+| ON/USDT:USDT | +15.26% | $5,968,738.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +1.72% | +1.45% |
-| RE/USDT:USDT | below_1h_threshold | +1.47% | +1.21% |
-| CAP/USDT:USDT | below_1h_threshold | +1.27% | +1.00% |
-| ENA/USDT:USDT | below_1h_threshold | +0.96% | +0.69% |
-| B/USDT:USDT | below_1h_threshold | +0.83% | +0.56% |
+| AKE/USDT:USDT | below_1h_threshold | +2.81% | +2.58% |
+| XPL/USDT:USDT | below_1h_threshold | +2.37% | +2.14% |
+| RE/USDT:USDT | below_1h_threshold | +2.11% | +1.88% |
+| B/USDT:USDT | below_1h_threshold | +1.83% | +1.60% |
+| CAP/USDT:USDT | below_1h_threshold | +1.27% | +1.04% |
 
 ## 7. 次に見るべき不足
 
