@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T08:11:12.072193+00:00
+- generated_at: 2026-07-24T08:16:17.740412+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9419**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$102.33** / 初期 $100.00 (+2.33%)
-- 確定: 480件 (Win 160 / Loss 191 / Flat 129) / pending 3件 / skip 406件
+- 確定: 480件 (Win 160 / Loss 191 / Flat 129) / pending 4件 / skip 406件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000517 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: B2/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $102.33
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T08:11:06.781576+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=65437.8
-- Funnel: target 897 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-24T08:16:10.820272+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=65422.0
+- Funnel: target 897 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.7 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +28.62% | $16,562,473.17 |
-| ESPORTS/USDT:USDT | +25.54% | $10,841,881.40 |
-| BILL/USDT:USDT | +19.26% | $10,555,194.72 |
-| BEAT/USDT:USDT | +16.27% | $17,972,850.52 |
-| AKE/USDT:USDT | +15.66% | $30,913,770.93 |
+| ESPORTS/USDT:USDT | +33.53% | $11,001,478.96 |
+| RE/USDT:USDT | +29.06% | $16,624,761.53 |
+| BILL/USDT:USDT | +18.96% | $10,575,848.23 |
+| ON/USDT:USDT | +15.87% | $6,073,712.87 |
+| BEAT/USDT:USDT | +15.60% | $18,109,236.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.87% | +4.92% |
-| ERA/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.58% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.26% |
-| BANK/USDT:USDT | below_1h_threshold | +1.08% | +1.13% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.09% | +2.16% |
+| ERA/USDT:USDT | below_1h_threshold | +1.97% | +2.05% |
+| BANK/USDT:USDT | below_1h_threshold | +1.64% | +1.71% |
+| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.60% |
+| RIF/USDT:USDT | below_1h_threshold | +1.44% | +1.52% |
 
 ## 7. 次に見るべき不足
 
