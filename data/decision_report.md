@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T10:46:18.633941+00:00
+- generated_at: 2026-07-24T10:51:10.584362+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9431**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$102.86** / 初期 $100.00 (+2.86%)
-- 確定: 492件 (Win 163 / Loss 193 / Flat 136) / pending 3件 / skip 406件
+- 確定: 492件 (Win 163 / Loss 193 / Flat 136) / pending 4件 / skip 406件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000375 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $102.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T10:46:09.675853+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64994.7
-- Funnel: target 897 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-24T10:51:03.710270+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=64992.5
+- Funnel: target 897 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +32.31% | $12,017,230.23 |
-| RE/USDT:USDT | +22.32% | $20,255,471.52 |
-| AKE/USDT:USDT | +21.49% | $33,276,612.84 |
-| CAP/USDT:USDT | +16.38% | $1,270,675.21 |
-| BILL/USDT:USDT | +15.72% | $11,384,728.70 |
+| ESPORTS/USDT:USDT | +32.37% | $12,040,331.34 |
+| RE/USDT:USDT | +23.47% | $20,418,648.34 |
+| AKE/USDT:USDT | +20.58% | $33,321,890.69 |
+| US/USDT:USDT | +17.58% | $2,000,255.93 |
+| BANK/USDT:USDT | +17.29% | $103,815,304.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +2.36% | +2.51% |
-| AKE/USDT:USDT | below_1h_threshold | +2.04% | +2.19% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.02% | +2.16% |
+| B2/USDT:USDT | below_1h_threshold | +4.38% | +4.53% |
+| BANK/USDT:USDT | below_1h_threshold | +2.52% | +2.67% |
 | INTCSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +2.06% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.62% | +1.76% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.77% | +1.92% |
+| LA/USDT:USDT | below_1h_threshold | +1.53% | +1.68% |
 
 ## 7. 次に見るべき不足
 
