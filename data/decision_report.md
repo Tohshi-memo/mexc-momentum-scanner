@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T14:11:14.336887+00:00
+- generated_at: 2026-07-24T14:16:16.934827+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9443**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$103.03** / 初期 $100.00 (+3.03%)
-- 確定: 503件 (Win 167 / Loss 198 / Flat 138) / pending 1件 / skip 407件
+- 確定: 503件 (Win 167 / Loss 198 / Flat 138) / pending 2件 / skip 407件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000335 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $103.03
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T14:11:06.320013+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64155.3
-- Funnel: target 898 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-24T14:16:07.667351+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=63964.7
+- Funnel: target 898 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +43.35% | $1,110,856.21 |
-| ESPORTS/USDT:USDT | +43.23% | $13,460,953.64 |
-| LA/USDT:USDT | +24.89% | $2,094,159.56 |
-| RE/USDT:USDT | +21.55% | $21,930,097.86 |
-| AKE/USDT:USDT | +19.09% | $39,721,308.21 |
+| PONS/USDT:USDT | +43.77% | $1,114,537.32 |
+| ESPORTS/USDT:USDT | +42.33% | $13,506,590.96 |
+| LA/USDT:USDT | +25.87% | $2,110,207.67 |
+| RE/USDT:USDT | +20.15% | $21,984,898.23 |
+| AKE/USDT:USDT | +18.79% | $39,778,999.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LMTSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +1.92% |
-| LA/USDT:USDT | below_1h_threshold | +1.86% | +1.83% |
-| PONS/USDT:USDT | below_1h_threshold | +1.68% | +1.65% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.53% | +1.49% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.48% | +1.44% |
+| LA/USDT:USDT | below_1h_threshold | +3.06% | +3.32% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.30% | +2.56% |
+| PONS/USDT:USDT | below_1h_threshold | +1.99% | +2.25% |
+| LMTSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +2.22% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.60% |
 
 ## 7. 次に見るべき不足
 
