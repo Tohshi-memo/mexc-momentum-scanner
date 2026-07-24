@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T16:06:26.919468+00:00
+- generated_at: 2026-07-24T16:27:09.585050+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9447**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$103.03** / 初期 $100.00 (+3.03%)
-- 確定: 507件 (Win 167 / Loss 198 / Flat 142) / pending 4件 / skip 407件
+- 確定: 507件 (Win 167 / Loss 198 / Flat 142) / pending 6件 / skip 407件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000249 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DEXE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $103.03
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T16:06:20.537287+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64109.7
-- Funnel: target 898 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-24T16:27:01.920794+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64124.1
+- Funnel: target 898 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.6 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +2.65% | $23,708,520.19 |
-| LAB/USDT:USDT | +1.61% | $3,155,258.45 |
-| UB/USDT:USDT | +1.38% | $2,398,763.66 |
-| RE/USDT:USDT | +1.26% | $24,282,975.26 |
-| B2/USDT:USDT | +1.05% | $2,091,723.28 |
+| DEXE/USDT:USDT | +16.30% | $25,160,522.33 |
+| AKE/USDT:USDT | +11.00% | $42,457,808.44 |
+| PROM/USDT:USDT | +4.95% | $3,358,639.89 |
+| ACE/USDT:USDT | +3.37% | $1,901,590.34 |
+| RE/USDT:USDT | +3.31% | $24,837,368.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.79% | +4.73% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +2.89% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.65% | +2.59% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.01% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.05% | +1.99% |
+| PROM/USDT:USDT | below_1h_threshold | +4.96% | +4.87% |
+| ACE/USDT:USDT | below_1h_threshold | +3.43% | +3.34% |
+| RE/USDT:USDT | below_1h_threshold | +3.31% | +3.23% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.91% | +2.82% |
+| UB/USDT:USDT | below_1h_threshold | +2.76% | +2.68% |
 
 ## 7. 次に見るべき不足
 
