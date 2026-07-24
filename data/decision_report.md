@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T18:31:17.223945+00:00
+- generated_at: 2026-07-24T18:36:17.811626+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9457**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T18:31:10.372091+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64129.9
-- Funnel: target 898 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-24T18:36:10.984195+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64117.7
+- Funnel: target 898 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +32.23% | $33,085,898.55 |
-| AKE/USDT:USDT | +26.37% | $43,454,759.01 |
-| ACE/USDT:USDT | +10.95% | $4,017,081.50 |
-| PROM/USDT:USDT | +9.55% | $3,433,453.89 |
-| PONS/USDT:USDT | +7.49% | $1,246,283.58 |
+| DEXE/USDT:USDT | +34.54% | $33,251,282.84 |
+| AKE/USDT:USDT | +24.70% | $43,825,530.22 |
+| ACE/USDT:USDT | +9.89% | $4,058,663.28 |
+| PROM/USDT:USDT | +8.72% | $3,438,686.40 |
+| SOXS/USDT:USDT | +5.57% | $1,163,211.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.09% | +4.13% |
-| US/USDT:USDT | below_1h_threshold | +2.46% | +2.50% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.23% | +2.27% |
-| VVV/USDT:USDT | below_1h_threshold | +1.13% | +1.17% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.07% |
+| CORE/USDT:USDT | below_1h_threshold | +4.76% | +4.82% |
+| AKE/USDT:USDT | below_1h_threshold | +4.11% | +4.17% |
+| PROM/USDT:USDT | below_1h_threshold | +3.46% | +3.52% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.51% | +2.57% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.09% |
 
 ## 7. 次に見るべき不足
 
