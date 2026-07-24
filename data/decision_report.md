@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T09:41:20.422912+00:00
+- generated_at: 2026-07-24T09:46:22.911112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9425**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T09:41:13.014547+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=65056.1
-- Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
+- 更新: 2026-07-24T09:46:15.810747+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=65047.0
+- Funnel: target 897 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.7 >= 65=1, 4h RSI 70.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +33.63% | $12,081,510.01 |
-| BEAT/USDT:USDT | +19.48% | $19,623,382.08 |
-| RE/USDT:USDT | +19.13% | $19,421,257.12 |
-| AKE/USDT:USDT | +18.33% | $32,443,767.81 |
-| CAP/USDT:USDT | +18.30% | $1,157,700.52 |
+| ESPORTS/USDT:USDT | +33.73% | $12,110,417.05 |
+| BEAT/USDT:USDT | +21.89% | $20,070,152.51 |
+| RE/USDT:USDT | +21.07% | $19,544,451.05 |
+| AKE/USDT:USDT | +18.83% | $32,535,501.12 |
+| BILL/USDT:USDT | +18.13% | $11,008,543.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.88% | +4.22% |
-| CAP/USDT:USDT | below_1h_threshold | +3.31% | +3.65% |
-| ON/USDT:USDT | below_1h_threshold | +3.17% | +3.50% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.98% | +3.31% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.05% | +2.39% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.04% | +4.38% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.96% | +4.31% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.33% | +3.67% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.75% | +3.10% |
+| CAP/USDT:USDT | below_1h_threshold | +1.94% | +2.29% |
 
 ## 7. 次に見るべき不足
 
