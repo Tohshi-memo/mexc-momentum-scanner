@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T01:41:14.208246+00:00
+- generated_at: 2026-07-24T01:46:09.584185+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9409**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$101.99** / 初期 $100.00 (+1.99%)
-- 確定: 470件 (Win 156 / Loss 186 / Flat 128) / pending 1件 / skip 406件
+- 確定: 470件 (Win 156 / Loss 186 / Flat 128) / pending 2件 / skip 406件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000324 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $101.99
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T01:41:06.221650+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=65116.2
-- Funnel: target 897 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-24T01:46:02.701936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=65069.1
+- Funnel: target 897 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.0 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +33.05% | $8,121,888.32 |
-| RE/USDT:USDT | +16.87% | $11,451,739.88 |
-| ON/USDT:USDT | +14.33% | $6,846,677.89 |
-| BANK/USDT:USDT | +13.73% | $98,508,255.95 |
-| BILL/USDT:USDT | +13.31% | $8,521,251.06 |
+| ESPORTS/USDT:USDT | +31.99% | $8,163,130.06 |
+| RE/USDT:USDT | +17.45% | $11,519,531.00 |
+| PROM/USDT:USDT | +15.52% | $2,378,330.16 |
+| BILL/USDT:USDT | +14.67% | $8,538,003.30 |
+| ON/USDT:USDT | +14.63% | $6,851,619.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +4.78% | +4.53% |
-| ACE/USDT:USDT | below_1h_threshold | +3.09% | +2.84% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.87% | +1.61% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.80% | +1.54% |
-| PROM/USDT:USDT | below_1h_threshold | +1.55% | +1.29% |
+| PROM/USDT:USDT | below_1h_threshold | +4.26% | +4.08% |
+| ACE/USDT:USDT | below_1h_threshold | +2.85% | +2.67% |
+| LA/USDT:USDT | below_1h_threshold | +2.37% | +2.19% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.71% | +1.53% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.66% | +1.48% |
 
 ## 7. 次に見るべき不足
 
