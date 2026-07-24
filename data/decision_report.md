@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T00:21:25.606654+00:00
+- generated_at: 2026-07-24T00:26:16.565597+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9405**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T00:21:18.904106+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=64880.1
+- 更新: 2026-07-24T00:26:09.837774+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=64935.0
 - Funnel: target 897 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +27.57% | $7,527,152.77 |
-| BILL/USDT:USDT | +18.05% | $7,808,835.29 |
-| ON/USDT:USDT | +15.60% | $6,906,857.75 |
-| AKE/USDT:USDT | +12.69% | $24,581,550.92 |
-| PROM/USDT:USDT | +10.73% | $2,265,762.27 |
+| ESPORTS/USDT:USDT | +28.06% | $7,563,984.00 |
+| BILL/USDT:USDT | +17.00% | $7,851,601.93 |
+| ON/USDT:USDT | +16.11% | $6,912,225.94 |
+| AKE/USDT:USDT | +12.04% | $24,629,770.54 |
+| RIF/USDT:USDT | +10.71% | $17,806,008.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.71% | +3.00% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.01% | +2.31% |
-| ACE/USDT:USDT | below_1h_threshold | +1.86% | +2.15% |
-| RIF/USDT:USDT | below_1h_threshold | +1.68% | +1.97% |
-| PROM/USDT:USDT | below_1h_threshold | +1.46% | +1.75% |
+| RE/USDT:USDT | below_1h_threshold | +3.53% | +3.73% |
+| RIF/USDT:USDT | below_1h_threshold | +3.20% | +3.41% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.65% | +2.86% |
+| BANK/USDT:USDT | below_1h_threshold | +2.58% | +2.78% |
+| ACE/USDT:USDT | below_1h_threshold | +2.20% | +2.41% |
 
 ## 7. 次に見るべき不足
 
