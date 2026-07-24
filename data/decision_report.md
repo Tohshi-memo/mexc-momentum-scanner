@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T00:51:21.119269+00:00
+- generated_at: 2026-07-24T00:56:20.512931+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9406**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T00:51:11.511246+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=64905.9
+- 更新: 2026-07-24T00:56:10.841000+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=64889.5
 - Funnel: target 897 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.7 >= 65=1
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +30.67% | $7,895,917.21 |
-| BILL/USDT:USDT | +17.83% | $8,153,762.36 |
-| ON/USDT:USDT | +14.60% | $6,995,983.01 |
-| RIF/USDT:USDT | +14.58% | $17,983,641.78 |
-| BANK/USDT:USDT | +12.03% | $96,802,419.26 |
+| ESPORTS/USDT:USDT | +30.73% | $7,918,350.26 |
+| BILL/USDT:USDT | +18.09% | $8,216,903.00 |
+| RIF/USDT:USDT | +14.01% | $18,023,548.26 |
+| ON/USDT:USDT | +13.48% | $7,004,413.68 |
+| RE/USDT:USDT | +11.46% | $11,509,080.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.77% | +5.02% |
-| ERA/USDT:USDT | below_1h_threshold | +3.73% | +3.98% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.75% | +3.00% |
-| ACE/USDT:USDT | below_1h_threshold | +2.49% | +2.74% |
-| INJ/USDT:USDT | below_1h_threshold | +1.99% | +2.24% |
+| BANK/USDT:USDT | below_1h_threshold | +4.34% | +4.62% |
+| ERA/USDT:USDT | below_1h_threshold | +3.57% | +3.85% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.12% | +3.40% |
+| ACE/USDT:USDT | below_1h_threshold | +2.40% | +2.68% |
+| INJ/USDT:USDT | below_1h_threshold | +2.01% | +2.29% |
 
 ## 7. 次に見るべき不足
 
