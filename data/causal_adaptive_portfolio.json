@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 103.03366922885293,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-24T16:27:08.129662+00:00",
+  "updated_at": "2026-07-24T16:31:29.826182+00:00",
   "high_watermark": 103.48766367620946,
   "max_drawdown_pct": 3.463237719717767,
   "loss_streak": 2,
@@ -73800,9 +73800,105 @@
           }
         ]
       }
+    },
+    {
+      "key": "ACE/USDT:USDT|2026-07-24T16:31:22.589824+00:00",
+      "symbol": "ACE/USDT:USDT",
+      "detected_at": "2026-07-24T16:31:22.589824+00:00",
+      "reason": "max_open_risk_cap",
+      "decision": {
+        "strategy": "LIMIT_2PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0002485173131560224,
+        "robust_score": 0.0002485173131560224,
+        "causal_history_count": 9445,
+        "fast": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 33,
+          "fill_rate": 0.66,
+          "avg_pnl_pct": 0.8219694320623822,
+          "effective_ev_pct": 0.5424998251611722,
+          "avg_log_return": 0.0002469145823626287,
+          "geometric_return_pct": 0.024694506827716012,
+          "avg_account_return_pct": 0.02486094535027111,
+          "max_drawdown_pct": 0.5240817859375034,
+          "max_loss_streak": 3
+        },
+        "recent": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 33,
+          "fill_rate": 0.66,
+          "avg_pnl_pct": 0.8219694320623822,
+          "effective_ev_pct": 0.5424998251611722,
+          "avg_log_return": 0.0002469145823626287,
+          "geometric_return_pct": 0.024694506827716012,
+          "avg_account_return_pct": 0.02486094535027111,
+          "max_drawdown_pct": 0.5240817859375034,
+          "max_loss_streak": 3
+        },
+        "mid": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 143,
+          "fill_rate": 0.715,
+          "avg_pnl_pct": 0.8749521782458123,
+          "effective_ev_pct": 0.6255908074457558,
+          "avg_log_return": 0.00029412900371726127,
+          "geometric_return_pct": 0.029417226389383266,
+          "avg_account_return_pct": 0.029605907075171387,
+          "max_drawdown_pct": 1.9155592982515777,
+          "max_loss_streak": 10
+        },
+        "long": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 694,
+          "fill_rate": 0.694,
+          "avg_pnl_pct": 0.4677961137262276,
+          "effective_ev_pct": 0.32465050292600195,
+          "avg_log_return": 0.0001631706116093214,
+          "geometric_return_pct": 0.016318392465763942,
+          "avg_account_return_pct": 0.016499279934654238,
+          "max_drawdown_pct": 3.5858963895688696,
+          "max_loss_streak": 15
+        },
+        "all": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 694,
+          "fill_rate": 0.694,
+          "avg_pnl_pct": 0.4677961137262276,
+          "effective_ev_pct": 0.32465050292600195,
+          "avg_log_return": 0.0001631706116093214,
+          "geometric_return_pct": 0.016318392465763942,
+          "avg_account_return_pct": 0.016499279934654238,
+          "max_drawdown_pct": 3.5858963895688696,
+          "max_loss_streak": 15
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 8.583351083212096e-05
+          },
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 5.181645238119944e-05
+          }
+        ]
+      }
     }
   ],
-  "skipped_count": 407,
+  "skipped_count": 408,
   "applied_keys": [
     "0G/USDT:USDT|2026-07-15T11:56:14.447509+00:00",
     "0G/USDT:USDT|2026-07-15T12:06:12.763179+00:00",
@@ -73825,6 +73921,7 @@
     "ACE/USDT:USDT|2026-07-22T08:06:11.586651+00:00",
     "ACE/USDT:USDT|2026-07-24T15:36:11.162116+00:00",
     "ACE/USDT:USDT|2026-07-24T15:46:16.099846+00:00",
+    "ACE/USDT:USDT|2026-07-24T16:31:22.589824+00:00",
     "AEHRSTOCK/USDT:USDT|2026-07-14T21:01:08.175747+00:00",
     "AEHRSTOCK/USDT:USDT|2026-07-14T21:16:10.494312+00:00",
     "AEHRSTOCK/USDT:USDT|2026-07-15T14:01:09.725550+00:00",
