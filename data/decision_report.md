@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T19:01:16.405153+00:00
+- generated_at: 2026-07-24T19:06:17.567799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9459**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T19:01:10.194231+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64226.5
+- 更新: 2026-07-24T19:06:10.893102+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64194.4
 - Funnel: target 898 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +32.40% | $33,515,017.91 |
-| AKE/USDT:USDT | +17.12% | $41,785,610.39 |
-| ACE/USDT:USDT | +13.34% | $4,358,854.96 |
-| PROM/USDT:USDT | +9.08% | $3,360,821.51 |
-| PONS/USDT:USDT | +6.55% | $1,235,822.19 |
+| DEXE/USDT:USDT | +32.87% | $33,699,263.83 |
+| ACE/USDT:USDT | +15.32% | $4,434,100.56 |
+| PROM/USDT:USDT | +9.85% | $3,366,658.29 |
+| SOXS/USDT:USDT | +5.86% | $1,177,503.90 |
+| PONS/USDT:USDT | +5.39% | $1,237,893.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.45% | +3.47% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.63% |
-| BNB/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.45% | +0.47% |
-| AKE/USDT:USDT | below_1h_threshold | +0.39% | +0.41% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.45% | +3.52% |
+| ACE/USDT:USDT | below_1h_threshold | +1.09% | +1.17% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.75% | +0.83% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.68% |
+| PROM/USDT:USDT | below_1h_threshold | +0.55% | +0.62% |
 
 ## 7. 次に見るべき不足
 
