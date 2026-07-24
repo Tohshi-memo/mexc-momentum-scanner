@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T14:31:18.078749+00:00
+- generated_at: 2026-07-24T14:36:16.121375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9443**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T14:31:09.047051+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=63800.1
-- Funnel: target 898 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-24T14:36:08.844112+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=63815.1
+- Funnel: target 898 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +46.51% | $1,124,801.70 |
-| ESPORTS/USDT:USDT | +40.91% | $13,671,460.59 |
-| LA/USDT:USDT | +23.49% | $2,179,883.02 |
-| RE/USDT:USDT | +21.88% | $22,376,530.73 |
-| AKE/USDT:USDT | +18.83% | $40,069,120.58 |
+| PONS/USDT:USDT | +46.22% | $1,133,550.34 |
+| ESPORTS/USDT:USDT | +41.01% | $13,763,452.25 |
+| LA/USDT:USDT | +23.41% | $2,199,654.41 |
+| RE/USDT:USDT | +21.40% | $22,473,715.49 |
+| AKE/USDT:USDT | +18.91% | $40,097,138.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.19% | +3.70% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.80% | +3.32% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.53% | +3.05% |
-| LMTSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +2.47% |
-| SLX/USDT:USDT | below_1h_threshold | +1.69% | +2.21% |
+| PONS/USDT:USDT | below_1h_threshold | +3.72% | +4.21% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.76% | +3.25% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.44% | +2.93% |
+| LMTSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +2.45% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +2.09% |
 
 ## 7. 次に見るべき不足
 
