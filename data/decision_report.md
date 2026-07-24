@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T10:11:15.760999+00:00
+- generated_at: 2026-07-24T10:16:14.160173+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9429**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T10:11:09.051403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=65046.0
+- 更新: 2026-07-24T10:16:09.478275+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64973.6
 - Funnel: target 897 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +32.50% | $11,725,087.87 |
-| RE/USDT:USDT | +22.72% | $19,792,271.29 |
-| ON/USDT:USDT | +18.39% | $6,055,383.07 |
-| AKE/USDT:USDT | +18.29% | $32,610,131.55 |
-| CAP/USDT:USDT | +16.60% | $1,166,717.92 |
+| ESPORTS/USDT:USDT | +31.60% | $11,759,850.00 |
+| RE/USDT:USDT | +23.68% | $19,888,737.20 |
+| ON/USDT:USDT | +17.42% | $6,081,453.35 |
+| CAP/USDT:USDT | +17.29% | $1,168,810.21 |
+| BILL/USDT:USDT | +17.26% | $11,182,696.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.02% | +2.08% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +1.98% |
-| US/USDT:USDT | below_1h_threshold | +1.55% | +1.62% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.06% | +1.13% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.02% | +2.19% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +2.09% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +2.03% |
+| US/USDT:USDT | below_1h_threshold | +1.75% | +1.92% |
+| RE/USDT:USDT | below_1h_threshold | +1.15% | +1.32% |
 
 ## 7. 次に見るべき不足
 
