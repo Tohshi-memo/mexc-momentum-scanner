@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T05:46:13.540348+00:00
+- generated_at: 2026-07-24T05:51:18.764859+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9414**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T05:46:06.036522+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=65279.9
-- Funnel: target 897 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 82.9 >= 65=1
+- 更新: 2026-07-24T05:51:11.934122+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=65271.0
+- Funnel: target 897 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +36.30% | $10,051,971.27 |
-| RE/USDT:USDT | +22.03% | $14,432,699.43 |
-| AKE/USDT:USDT | +18.64% | $28,192,838.52 |
-| BILL/USDT:USDT | +17.04% | $9,729,042.38 |
-| ON/USDT:USDT | +14.48% | $6,059,706.89 |
+| ESPORTS/USDT:USDT | +36.95% | $10,073,234.13 |
+| RE/USDT:USDT | +21.38% | $14,449,381.20 |
+| AKE/USDT:USDT | +18.90% | $28,282,381.00 |
+| BILL/USDT:USDT | +17.49% | $9,778,764.95 |
+| ON/USDT:USDT | +15.21% | $6,071,865.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +2.62% | +2.63% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.46% | +2.47% |
-| RIF/USDT:USDT | below_1h_threshold | +2.31% | +2.32% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.79% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.56% | +1.56% |
+| CAP/USDT:USDT | below_1h_threshold | +4.07% | +4.08% |
+| US/USDT:USDT | below_1h_threshold | +3.54% | +3.55% |
+| RIF/USDT:USDT | below_1h_threshold | +3.20% | +3.22% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.50% | +2.52% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.06% | +2.08% |
 
 ## 7. 次に見るべき不足
 
