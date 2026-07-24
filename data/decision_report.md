@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T18:01:13.616393+00:00
+- generated_at: 2026-07-24T18:06:11.218370+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9456**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T18:01:07.409115+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64164.2
-- Funnel: target 898 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-24T18:06:05.992639+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64154.8
+- Funnel: target 898 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +39.72% | $30,679,017.24 |
-| AKE/USDT:USDT | +23.31% | $41,004,650.75 |
-| ACE/USDT:USDT | +14.98% | $3,621,039.85 |
-| B2/USDT:USDT | +9.18% | $2,231,286.74 |
-| PONS/USDT:USDT | +7.52% | $1,237,214.84 |
+| DEXE/USDT:USDT | +42.10% | $31,054,846.20 |
+| AKE/USDT:USDT | +19.83% | $41,378,789.55 |
+| ACE/USDT:USDT | +12.21% | $3,751,808.35 |
+| B2/USDT:USDT | +9.06% | $2,249,398.43 |
+| PONS/USDT:USDT | +6.64% | $1,238,701.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.25% | +3.24% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.02% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
-| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.70% |
-| SAND/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.83% | +1.83% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
+| PROM/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.72% | +0.72% |
+| IBMSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
 
 ## 7. 次に見るべき不足
 
