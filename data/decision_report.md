@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T13:26:12.922769+00:00
+- generated_at: 2026-07-24T13:31:13.531692+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9441**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T13:26:06.231334+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.64% price=64335.0
+- 更新: 2026-07-24T13:31:08.250182+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.56% price=64385.6
 - Funnel: target 898 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +44.95% | $1,089,274.80 |
-| ESPORTS/USDT:USDT | +40.72% | $12,982,039.29 |
-| AKE/USDT:USDT | +26.73% | $38,205,926.11 |
-| LA/USDT:USDT | +22.55% | $1,927,374.47 |
-| RE/USDT:USDT | +22.28% | $21,827,651.78 |
+| PONS/USDT:USDT | +44.14% | $1,095,708.66 |
+| ESPORTS/USDT:USDT | +41.84% | $13,023,728.86 |
+| AKE/USDT:USDT | +25.47% | $38,369,470.99 |
+| LA/USDT:USDT | +22.91% | $1,954,096.86 |
+| RE/USDT:USDT | +22.44% | $21,889,026.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.54% | +3.17% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.64% | +2.28% |
-| LA/USDT:USDT | below_1h_threshold | +1.45% | +2.08% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.31% | +1.95% |
-| CAP/USDT:USDT | below_1h_threshold | +1.12% | +1.76% |
+| LA/USDT:USDT | below_1h_threshold | +2.00% | +2.56% |
+| PONS/USDT:USDT | below_1h_threshold | +1.96% | +2.52% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.64% | +2.20% |
+| PROM/USDT:USDT | below_1h_threshold | +1.54% | +2.10% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.31% | +1.87% |
 
 ## 7. 次に見るべき不足
 
