@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-24T19:06:17.567799+00:00
+- generated_at: 2026-07-24T19:11:17.544094+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9459**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-24T19:06:10.893102+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64194.4
+- 更新: 2026-07-24T19:11:10.772587+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64125.8
 - Funnel: target 898 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +32.87% | $33,699,263.83 |
-| ACE/USDT:USDT | +15.32% | $4,434,100.56 |
-| PROM/USDT:USDT | +9.85% | $3,366,658.29 |
-| SOXS/USDT:USDT | +5.86% | $1,177,503.90 |
-| PONS/USDT:USDT | +5.39% | $1,237,893.91 |
+| DEXE/USDT:USDT | +33.28% | $33,996,267.55 |
+| ACE/USDT:USDT | +15.03% | $4,485,522.79 |
+| PROM/USDT:USDT | +9.19% | $3,384,381.97 |
+| SOXS/USDT:USDT | +7.91% | $1,183,830.80 |
+| AKE/USDT:USDT | +6.60% | $43,701,193.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.45% | +3.52% |
-| ACE/USDT:USDT | below_1h_threshold | +1.09% | +1.17% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.75% | +0.83% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.68% |
-| PROM/USDT:USDT | below_1h_threshold | +0.55% | +0.62% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.45% | +3.63% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.87% | +1.05% |
+| ACE/USDT:USDT | below_1h_threshold | +0.86% | +1.04% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.67% | +0.85% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.79% |
 
 ## 7. 次に見るべき不足
 
