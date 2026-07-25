@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T21:41:13.006693+00:00
+- generated_at: 2026-07-25T21:46:21.928468+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9541**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.05** / 初期 $100.00 (+8.05%)
-- 確定: 585件 (Win 198 / Loss 224 / Flat 163) / pending 4件 / skip 424件
+- 確定: 585件 (Win 198 / Loss 224 / Flat 163) / pending 5件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000524 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EUL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $108.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T21:41:07.779433+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64328.3
-- Funnel: target 898 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-25T21:46:14.737805+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64309.5
+- Funnel: target 898 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +16.91% | $25,723,810.56 |
-| EUL/USDT:USDT | +15.42% | $18,290,740.44 |
-| ALLO/USDT:USDT | +13.08% | $17,932,132.23 |
-| VELVET/USDT:USDT | +12.66% | $8,074,658.51 |
-| BANK/USDT:USDT | +10.34% | $91,161,893.56 |
+| EUL/USDT:USDT | +17.76% | $18,333,780.83 |
+| ESPORTS/USDT:USDT | +17.50% | $25,761,250.25 |
+| ALLO/USDT:USDT | +12.53% | $17,952,154.23 |
+| DEXE/USDT:USDT | +12.29% | $125,829,268.01 |
+| VELVET/USDT:USDT | +11.11% | $8,096,099.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +2.56% | +2.52% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.48% | +2.44% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
-| FET/USDT:USDT | below_1h_threshold | +1.09% | +1.05% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.03% | +0.99% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.70% | +1.69% |
+| FET/USDT:USDT | below_1h_threshold | +1.41% | +1.40% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.15% | +1.14% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.04% | +1.03% |
 
 ## 7. 次に見るべき不足
 
