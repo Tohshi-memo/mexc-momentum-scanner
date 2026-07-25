@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T06:26:31.099265+00:00
+- generated_at: 2026-07-25T06:31:17.719498+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9488**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T06:26:19.350492+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63960.0
-- Funnel: target 898 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.3 >= 65=1, 4h RSI 66.2 >= 65=1
+- 更新: 2026-07-25T06:31:10.292992+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63959.2
+- Funnel: target 898 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.7 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +63.95% | $62,419,288.52 |
-| EUL/USDT:USDT | +40.35% | $1,634,390.72 |
-| AKE/USDT:USDT | +26.39% | $46,535,013.39 |
-| ZAMA/USDT:USDT | +20.51% | $4,218,273.16 |
-| PROM/USDT:USDT | +19.59% | $2,569,821.54 |
+| DEXE/USDT:USDT | +63.98% | $62,861,791.80 |
+| EUL/USDT:USDT | +42.49% | $1,702,083.07 |
+| AKE/USDT:USDT | +24.57% | $46,619,096.92 |
+| B2/USDT:USDT | +21.40% | $2,948,699.09 |
+| ZAMA/USDT:USDT | +21.24% | $4,278,732.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.13% | +3.17% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.41% | +2.45% |
-| RIF/USDT:USDT | below_1h_threshold | +2.28% | +2.32% |
-| BANK/USDT:USDT | below_1h_threshold | +2.20% | +2.25% |
-| AKE/USDT:USDT | below_1h_threshold | +1.55% | +1.59% |
+| SYN/USDT:USDT | below_1h_threshold | +2.99% | +3.04% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.96% | +3.01% |
+| PROM/USDT:USDT | below_1h_threshold | +2.20% | +2.24% |
+| BANK/USDT:USDT | below_1h_threshold | +1.91% | +1.96% |
+| RIF/USDT:USDT | below_1h_threshold | +1.83% | +1.88% |
 
 ## 7. 次に見るべき不足
 
