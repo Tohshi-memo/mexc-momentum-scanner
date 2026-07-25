@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T21:26:16.753349+00:00
+- generated_at: 2026-07-25T21:31:20.031457+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9541**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T21:26:10.072836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64258.6
+- 更新: 2026-07-25T21:31:13.164917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64268.4
 - Funnel: target 898 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +17.80% | $25,559,568.01 |
-| EUL/USDT:USDT | +15.15% | $18,132,597.16 |
-| ALLO/USDT:USDT | +12.41% | $17,795,580.78 |
-| VELVET/USDT:USDT | +12.13% | $7,954,142.99 |
-| BANK/USDT:USDT | +11.28% | $90,885,621.56 |
+| ESPORTS/USDT:USDT | +16.83% | $25,598,843.42 |
+| EUL/USDT:USDT | +16.46% | $18,179,794.65 |
+| ALLO/USDT:USDT | +13.56% | $17,817,832.31 |
+| VELVET/USDT:USDT | +12.40% | $7,994,354.26 |
+| BANK/USDT:USDT | +11.11% | $90,994,540.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +1.87% | +1.94% |
-| UB/USDT:USDT | below_1h_threshold | +1.64% | +1.71% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.40% | +1.47% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.86% | +0.93% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.52% | +0.59% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.84% | +2.90% |
+| UB/USDT:USDT | below_1h_threshold | +1.87% | +1.93% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.25% | +1.31% |
+| FET/USDT:USDT | below_1h_threshold | +0.71% | +0.76% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
 
 ## 7. 次に見るべき不足
 
