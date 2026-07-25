@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T18:01:16.539723+00:00
+- generated_at: 2026-07-25T18:06:14.139074+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9535**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T18:01:09.793512+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64250.5
+- 更新: 2026-07-25T18:06:07.229887+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64324.0
 - Funnel: target 898 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +15.10% | $90,090,196.95 |
-| ESPORTS/USDT:USDT | +12.03% | $21,805,023.89 |
-| DEXE/USDT:USDT | +6.85% | $127,645,819.38 |
-| ZAMA/USDT:USDT | +6.27% | $6,742,606.12 |
-| SHIB/USDT:USDT | +6.25% | $16,645,545.28 |
+| BANK/USDT:USDT | +14.79% | $90,254,474.50 |
+| ESPORTS/USDT:USDT | +12.33% | $21,864,773.67 |
+| EUL/USDT:USDT | +9.50% | $14,624,360.67 |
+| DEXE/USDT:USDT | +7.68% | $127,840,297.72 |
+| SHIB/USDT:USDT | +6.73% | $17,162,829.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.18% | +1.15% |
-| KORU/USDT:USDT | below_1h_threshold | +0.70% | +0.68% |
-| EUL/USDT:USDT | below_1h_threshold | +0.65% | +0.63% |
-| SHIB/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.44% |
+| EUL/USDT:USDT | below_1h_threshold | +4.06% | +3.92% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.18% | +1.04% |
+| VVV/USDT:USDT | below_1h_threshold | +1.01% | +0.87% |
+| WIF/USDT:USDT | below_1h_threshold | +0.98% | +0.85% |
+| SHIB/USDT:USDT | below_1h_threshold | +0.98% | +0.84% |
 
 ## 7. 次に見るべき不足
 
