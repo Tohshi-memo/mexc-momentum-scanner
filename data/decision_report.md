@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T12:06:10.478280+00:00
+- generated_at: 2026-07-25T12:11:12.861328+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9511**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T12:06:03.803802+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64047.8
+- 更新: 2026-07-25T12:11:06.073130+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64027.4
 - Funnel: target 897 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +59.94% | $8,312,668.23 |
-| DEXE/USDT:USDT | +36.45% | $108,810,944.18 |
-| AKE/USDT:USDT | +28.79% | $47,452,946.54 |
-| PROM/USDT:USDT | +20.01% | $4,456,178.83 |
-| BANK/USDT:USDT | +8.40% | $73,143,355.06 |
+| EUL/USDT:USDT | +63.25% | $8,422,863.92 |
+| AKE/USDT:USDT | +31.06% | $47,637,380.87 |
+| DEXE/USDT:USDT | +25.66% | $109,619,908.00 |
+| PROM/USDT:USDT | +20.19% | $4,480,484.46 |
+| BANK/USDT:USDT | +9.50% | $73,284,202.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +1.87% | +1.84% |
-| SYN/USDT:USDT | below_1h_threshold | +0.91% | +0.89% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.73% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.37% | +0.35% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.30% | +0.28% |
+| SYN/USDT:USDT | below_1h_threshold | +1.82% | +1.83% |
+| BANK/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.38% | +0.39% |
+| JTO/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.29% | +0.30% |
 
 ## 7. 次に見るべき不足
 
