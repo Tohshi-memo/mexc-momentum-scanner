@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T06:56:29.937202+00:00
+- generated_at: 2026-07-25T07:01:20.581385+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9490**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T06:56:18.495173+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63960.0
-- Funnel: target 898 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.2 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-25T07:01:13.675030+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63983.0
+- Funnel: target 898 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +76.65% | $64,833,341.45 |
-| EUL/USDT:USDT | +46.00% | $2,115,850.69 |
-| AKE/USDT:USDT | +26.50% | $48,326,805.94 |
-| B2/USDT:USDT | +20.37% | $3,040,041.35 |
-| ZAMA/USDT:USDT | +20.00% | $4,449,850.68 |
+| DEXE/USDT:USDT | +77.87% | $64,646,325.47 |
+| EUL/USDT:USDT | +46.68% | $2,170,769.06 |
+| AKE/USDT:USDT | +27.31% | $45,809,023.91 |
+| ZAMA/USDT:USDT | +20.89% | $4,300,987.80 |
+| B2/USDT:USDT | +19.05% | $3,029,891.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.40% | +3.45% |
-| RIF/USDT:USDT | below_1h_threshold | +2.02% | +2.07% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.94% | +1.98% |
-| AKE/USDT:USDT | below_1h_threshold | +1.86% | +1.90% |
-| UB/USDT:USDT | below_1h_threshold | +1.75% | +1.80% |
+| BANK/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
+| EUL/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| AKE/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
+| LINSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
 
 ## 7. 次に見るべき不足
 
