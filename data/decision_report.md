@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T20:01:20.698053+00:00
+- generated_at: 2026-07-25T20:06:17.224505+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9539**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T20:01:14.501559+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64364.5
+- 更新: 2026-07-25T20:06:10.339563+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64331.4
 - Funnel: target 898 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +22.90% | $24,510,719.12 |
-| EUL/USDT:USDT | +14.46% | $16,392,377.54 |
-| BANK/USDT:USDT | +13.71% | $89,803,128.04 |
-| ALLO/USDT:USDT | +10.92% | $17,147,047.17 |
-| SHIB/USDT:USDT | +7.03% | $27,744,775.18 |
+| EUL/USDT:USDT | +20.17% | $16,590,149.50 |
+| ESPORTS/USDT:USDT | +19.12% | $24,656,016.78 |
+| BANK/USDT:USDT | +13.14% | $90,018,331.09 |
+| ALLO/USDT:USDT | +11.81% | $17,197,296.69 |
+| SHIB/USDT:USDT | +6.98% | $29,752,430.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.80% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.48% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
-| FLOKI/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
+| EUL/USDT:USDT | below_1h_threshold | +4.69% | +4.74% |
+| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.85% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.50% | +0.54% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.53% |
 
 ## 7. 次に見るべき不足
 
