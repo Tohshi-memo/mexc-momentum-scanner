@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T17:51:17.456693+00:00
+- generated_at: 2026-07-25T17:56:16.961586+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9535**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T17:51:08.256441+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64268.1
+- 更新: 2026-07-25T17:56:07.985802+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64233.6
 - Funnel: target 898 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +13.66% | $92,531,325.61 |
-| ESPORTS/USDT:USDT | +11.71% | $22,462,271.75 |
-| DEXE/USDT:USDT | +8.01% | $133,606,338.02 |
-| ZAMA/USDT:USDT | +6.18% | $6,776,997.60 |
-| SHIB/USDT:USDT | +5.76% | $15,890,239.39 |
+| BANK/USDT:USDT | +13.90% | $92,778,103.88 |
+| ESPORTS/USDT:USDT | +12.57% | $22,536,911.99 |
+| SHIB/USDT:USDT | +6.92% | $16,384,272.69 |
+| DEXE/USDT:USDT | +6.81% | $133,722,347.78 |
+| ZAMA/USDT:USDT | +6.66% | $6,786,134.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +4.69% | +4.56% |
-| SHIB/USDT:USDT | below_1h_threshold | +3.65% | +3.52% |
-| FLOKI/USDT:USDT | below_1h_threshold | +2.29% | +2.15% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.24% | +2.10% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.18% | +2.04% |
+| SHIB/USDT:USDT | below_1h_threshold | +4.77% | +4.68% |
+| KAITO/USDT:USDT | below_1h_threshold | +4.52% | +4.44% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.74% | +2.66% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.45% | +2.37% |
+| ACE/USDT:USDT | below_1h_threshold | +2.29% | +2.20% |
 
 ## 7. 次に見るべき不足
 
