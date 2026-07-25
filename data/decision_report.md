@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T19:56:21.245372+00:00
+- generated_at: 2026-07-25T20:01:20.698053+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9539**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T19:56:12.200556+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64394.2
-- Funnel: target 898 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-25T20:01:14.501559+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64364.5
+- Funnel: target 898 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +22.84% | $24,911,957.10 |
-| EUL/USDT:USDT | +14.73% | $16,356,385.07 |
-| BANK/USDT:USDT | +13.28% | $92,176,712.25 |
-| ALLO/USDT:USDT | +10.52% | $17,675,218.94 |
-| ZAMA/USDT:USDT | +6.64% | $7,131,147.36 |
+| ESPORTS/USDT:USDT | +22.90% | $24,510,719.12 |
+| EUL/USDT:USDT | +14.46% | $16,392,377.54 |
+| BANK/USDT:USDT | +13.71% | $89,803,128.04 |
+| ALLO/USDT:USDT | +10.92% | $17,147,047.17 |
+| SHIB/USDT:USDT | +7.03% | $27,744,775.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +2.21% | +2.19% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.08% | +2.06% |
-| SHIB/USDT:USDT | below_1h_threshold | +2.06% | +2.05% |
-| WIF/USDT:USDT | below_1h_threshold | +1.43% | +1.41% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.80% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.48% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
+| FLOKI/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
 
 ## 7. 次に見るべき不足
 
