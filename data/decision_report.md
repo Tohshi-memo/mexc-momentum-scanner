@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T18:56:19.259095+00:00
+- generated_at: 2026-07-25T19:01:15.731036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9536**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T18:56:11.760519+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=64373.4
-- Funnel: target 898 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 74.6 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-25T19:01:08.997047+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64374.8
+- Funnel: target 898 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +23.58% | $23,494,205.54 |
-| BANK/USDT:USDT | +13.92% | $91,813,707.76 |
-| EUL/USDT:USDT | +12.25% | $15,589,525.70 |
-| VELVET/USDT:USDT | +6.25% | $7,111,520.07 |
-| ZAMA/USDT:USDT | +5.26% | $6,862,549.06 |
+| ESPORTS/USDT:USDT | +24.63% | $23,270,977.93 |
+| BANK/USDT:USDT | +14.19% | $90,100,303.10 |
+| EUL/USDT:USDT | +12.67% | $15,614,061.18 |
+| SHIB/USDT:USDT | +4.80% | $21,039,255.90 |
+| VELVET/USDT:USDT | +4.75% | $6,854,118.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +1.77% | +1.55% |
-| FET/USDT:USDT | below_1h_threshold | +1.23% | +1.01% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.18% | +0.96% |
-| WIF/USDT:USDT | below_1h_threshold | +1.11% | +0.90% |
-| VVV/USDT:USDT | below_1h_threshold | +1.01% | +0.79% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
+| SHIB/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
+| EUL/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
+| SEI/USDT:USDT | below_1h_threshold | +0.32% | +0.33% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.26% | +0.27% |
 
 ## 7. 次に見るべき不足
 
