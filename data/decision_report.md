@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T16:26:24.906920+00:00
+- generated_at: 2026-07-25T16:31:23.469789+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9531**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$107.77** / 初期 $100.00 (+7.77%)
-- 確定: 577件 (Win 195 / Loss 221 / Flat 161) / pending 5件 / skip 422件
+- 確定: 577件 (Win 195 / Loss 221 / Flat 161) / pending 6件 / skip 422件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000538 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DEXE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $107.77
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T16:26:14.713530+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64095.9
-- Funnel: target 898 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
+- 更新: 2026-07-25T16:31:15.348103+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64118.6
+- Funnel: target 898 → liquid 138 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 73.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +14.46% | $87,662,665.55 |
-| DEXE/USDT:USDT | +14.17% | $133,952,532.30 |
-| ESPORTS/USDT:USDT | +3.37% | $22,017,892.09 |
-| FLOKI/USDT:USDT | +2.35% | $1,220,378.52 |
-| RIF/USDT:USDT | +2.18% | $3,732,567.45 |
+| BANK/USDT:USDT | +13.96% | $88,381,946.39 |
+| DEXE/USDT:USDT | +13.74% | $134,426,425.11 |
+| ESPORTS/USDT:USDT | +6.75% | $22,173,021.90 |
+| EUL/USDT:USDT | +5.02% | $13,769,883.03 |
+| ZAMA/USDT:USDT | +3.03% | $6,520,579.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.42% | +3.50% |
-| FLOKI/USDT:USDT | below_1h_threshold | +2.40% | +2.48% |
-| RIF/USDT:USDT | below_1h_threshold | +2.21% | +2.29% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.89% | +1.97% |
-| US/USDT:USDT | below_1h_threshold | +1.88% | +1.97% |
+| EUL/USDT:USDT | below_1h_threshold | +4.75% | +4.80% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.03% | +3.08% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.86% | +2.91% |
+| RIF/USDT:USDT | below_1h_threshold | +2.22% | +2.27% |
+| SHIB/USDT:USDT | below_1h_threshold | +2.06% | +2.11% |
 
 ## 7. 次に見るべき不足
 
