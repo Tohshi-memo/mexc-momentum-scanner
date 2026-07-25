@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T21:51:16.761391+00:00
+- generated_at: 2026-07-25T21:56:16.726887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9541**
 
@@ -70,30 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T21:51:11.527541+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64355.7
-- Funnel: target 898 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-25T21:56:11.055331+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64330.1
+- Funnel: target 898 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +17.83% | $18,404,709.22 |
-| ESPORTS/USDT:USDT | +17.60% | $25,797,421.11 |
-| DEXE/USDT:USDT | +12.02% | $126,225,759.31 |
-| ALLO/USDT:USDT | +11.64% | $17,987,893.51 |
-| VELVET/USDT:USDT | +11.46% | $8,123,371.97 |
+| ESPORTS/USDT:USDT | +18.80% | $25,851,233.66 |
+| EUL/USDT:USDT | +18.18% | $18,432,491.84 |
+| DEXE/USDT:USDT | +13.50% | $126,468,994.06 |
+| ALLO/USDT:USDT | +12.71% | $18,042,947.12 |
+| VELVET/USDT:USDT | +12.17% | $8,158,394.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_relative_strength | +5.00% | +4.92% |
-| FET/USDT:USDT | below_1h_threshold | +1.92% | +1.84% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.73% | +1.65% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.20% | +1.12% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.17% | +1.09% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.18% | +2.14% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.09% | +2.05% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.09% | +2.05% |
+| FET/USDT:USDT | below_1h_threshold | +1.67% | +1.63% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.58% | +1.54% |
 
 ## 7. 次に見るべき不足
 
