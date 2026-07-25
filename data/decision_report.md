@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T00:26:16.874562+00:00
+- generated_at: 2026-07-25T00:31:14.811282+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9470**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T00:26:10.064351+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64134.5
+- 更新: 2026-07-25T00:31:07.985971+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64129.6
 - Funnel: target 898 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +38.08% | $43,946,098.21 |
-| ACE/USDT:USDT | +18.83% | $8,054,231.88 |
-| SAGA/USDT:USDT | +15.25% | $1,031,218.83 |
-| AKE/USDT:USDT | +9.51% | $48,075,027.17 |
-| SLX/USDT:USDT | +8.00% | $1,672,666.82 |
+| DEXE/USDT:USDT | +35.22% | $44,148,947.17 |
+| ACE/USDT:USDT | +20.09% | $8,100,838.25 |
+| SAGA/USDT:USDT | +14.69% | $1,033,878.72 |
+| SLX/USDT:USDT | +9.49% | $1,685,847.95 |
+| RIF/USDT:USDT | +8.05% | $9,625,503.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +4.70% | +4.67% |
-| RIF/USDT:USDT | below_1h_threshold | +3.25% | +3.22% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.04% | +3.01% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.77% | +2.75% |
-| ACE/USDT:USDT | below_1h_threshold | +2.76% | +2.73% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.07% | +4.05% |
+| RIF/USDT:USDT | below_1h_threshold | +3.76% | +3.74% |
+| ACE/USDT:USDT | below_1h_threshold | +3.67% | +3.65% |
+| PROM/USDT:USDT | below_1h_threshold | +3.14% | +3.12% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.59% | +2.57% |
 
 ## 7. 次に見るべき不足
 
