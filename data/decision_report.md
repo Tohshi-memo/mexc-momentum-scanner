@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T07:06:18.924968+00:00
+- generated_at: 2026-07-25T07:11:21.669607+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9491**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T07:06:10.953750+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63987.2
-- Funnel: target 898 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-25T07:11:14.910125+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63981.5
+- Funnel: target 898 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +74.74% | $64,895,822.97 |
-| EUL/USDT:USDT | +47.17% | $2,267,763.65 |
-| AKE/USDT:USDT | +26.87% | $45,946,873.18 |
-| ZAMA/USDT:USDT | +22.83% | $4,417,851.56 |
-| B2/USDT:USDT | +16.55% | $3,087,687.67 |
+| DEXE/USDT:USDT | +79.91% | $65,294,320.80 |
+| EUL/USDT:USDT | +42.00% | $2,385,533.48 |
+| AKE/USDT:USDT | +26.91% | $46,010,272.11 |
+| ZAMA/USDT:USDT | +22.73% | $4,469,316.04 |
+| B2/USDT:USDT | +17.60% | $3,094,786.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.40% | +1.39% |
-| RIF/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
-| BANK/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
-| EUL/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| RIF/USDT:USDT | below_1h_threshold | +2.08% | +2.08% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.75% | +1.75% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.51% | +1.51% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| LINSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.45% |
 
 ## 7. 次に見るべき不足
 
