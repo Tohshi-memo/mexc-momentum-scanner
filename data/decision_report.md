@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T09:46:22.841930+00:00
+- generated_at: 2026-07-25T09:51:24.353693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9507**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T09:46:13.354273+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=63910.3
-- Funnel: target 897 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.4 >= 65=1
+- 更新: 2026-07-25T09:51:17.730479+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=63961.6
+- Funnel: target 897 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.1 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +103.06% | $86,637,085.95 |
-| EUL/USDT:USDT | +70.76% | $4,665,256.16 |
-| AKE/USDT:USDT | +24.25% | $49,565,146.26 |
-| PROM/USDT:USDT | +22.46% | $3,722,906.26 |
-| B2/USDT:USDT | +16.01% | $3,504,359.04 |
+| DEXE/USDT:USDT | +100.98% | $87,653,837.22 |
+| EUL/USDT:USDT | +67.34% | $4,884,345.76 |
+| PROM/USDT:USDT | +24.19% | $3,846,989.05 |
+| AKE/USDT:USDT | +22.36% | $49,933,618.55 |
+| B2/USDT:USDT | +15.57% | $3,530,591.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +3.85% | +3.75% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.76% | +1.65% |
-| VVV/USDT:USDT | below_1h_threshold | +1.73% | +1.62% |
-| DOT/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
-| APE/USDT:USDT | below_1h_threshold | +0.75% | +0.64% |
+| VVV/USDT:USDT | below_1h_threshold | +1.73% | +1.55% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.53% | +1.34% |
+| INJ/USDT:USDT | below_1h_threshold | +1.00% | +0.82% |
+| DOT/USDT:USDT | below_1h_threshold | +0.80% | +0.62% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.75% | +0.57% |
 
 ## 7. 次に見るべき不足
 
