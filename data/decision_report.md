@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T03:21:20.733592+00:00
+- generated_at: 2026-07-25T03:26:19.048241+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9476**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T03:21:13.907742+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64047.2
-- Funnel: target 898 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-25T03:26:12.103124+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64050.0
+- Funnel: target 898 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +49.93% | $48,128,211.27 |
-| ACE/USDT:USDT | +14.72% | $9,468,010.06 |
-| SLX/USDT:USDT | +12.92% | $2,420,258.27 |
-| SAGA/USDT:USDT | +11.26% | $1,238,098.96 |
-| PROM/USDT:USDT | +9.73% | $2,896,392.98 |
+| DEXE/USDT:USDT | +49.72% | $48,348,102.07 |
+| ACE/USDT:USDT | +13.95% | $9,505,032.86 |
+| SLX/USDT:USDT | +13.72% | $2,424,685.99 |
+| SAGA/USDT:USDT | +11.58% | $1,242,529.74 |
+| PROM/USDT:USDT | +10.09% | $2,898,483.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
-| SLX/USDT:USDT | below_1h_threshold | +0.86% | +0.81% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.78% | +0.72% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.64% | +0.59% |
-| AKE/USDT:USDT | below_1h_threshold | +0.33% | +0.27% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.65% | +2.59% |
+| CORE/USDT:USDT | below_1h_threshold | +1.95% | +1.89% |
+| SLX/USDT:USDT | below_1h_threshold | +1.49% | +1.43% |
+| AKE/USDT:USDT | below_1h_threshold | +1.10% | +1.04% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.83% | +0.77% |
 
 ## 7. 次に見るべき不足
 
