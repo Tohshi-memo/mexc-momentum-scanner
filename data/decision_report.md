@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T20:26:15.537681+00:00
+- generated_at: 2026-07-25T20:31:19.473424+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9539**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$107.96** / 初期 $100.00 (+7.96%)
-- 確定: 583件 (Win 197 / Loss 223 / Flat 163) / pending 6件 / skip 423件
+- 確定: 583件 (Win 197 / Loss 223 / Flat 163) / pending 6件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000539 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ALLO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $107.96
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T20:26:08.352333+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64350.9
-- Funnel: target 898 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-25T20:31:10.110648+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64344.2
+- Funnel: target 898 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +21.76% | $17,237,740.85 |
-| ESPORTS/USDT:USDT | +20.31% | $24,978,098.83 |
-| ALLO/USDT:USDT | +10.88% | $17,716,608.58 |
-| BANK/USDT:USDT | +10.87% | $90,689,151.71 |
-| VELVET/USDT:USDT | +10.81% | $7,006,059.92 |
+| EUL/USDT:USDT | +19.97% | $17,332,890.67 |
+| ESPORTS/USDT:USDT | +19.75% | $25,054,098.47 |
+| VELVET/USDT:USDT | +12.08% | $7,070,566.69 |
+| BANK/USDT:USDT | +11.66% | $90,909,668.74 |
+| ALLO/USDT:USDT | +10.70% | $17,779,382.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.89% | +4.90% |
-| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.82% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.50% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.47% |
-| PI/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
+| EUL/USDT:USDT | below_1h_threshold | +4.81% | +4.84% |
+| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.83% |
+| ACE/USDT:USDT | below_1h_threshold | +0.74% | +0.76% |
+| PI/USDT:USDT | below_1h_threshold | +0.59% | +0.62% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.51% |
 
 ## 7. 次に見るべき不足
 
