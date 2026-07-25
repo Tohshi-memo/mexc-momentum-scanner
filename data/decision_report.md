@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T07:16:17.237352+00:00
+- generated_at: 2026-07-25T07:21:21.816240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9492**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$105.42** / 初期 $100.00 (+5.42%)
-- 確定: 542件 (Win 181 / Loss 209 / Flat 152) / pending 5件 / skip 417件
+- 確定: 542件 (Win 181 / Loss 209 / Flat 152) / pending 6件 / skip 417件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000397 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $105.42
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T07:16:08.928680+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63984.2
-- Funnel: target 898 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-25T07:21:14.693970+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63981.4
+- Funnel: target 898 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +84.03% | $66,155,367.52 |
-| EUL/USDT:USDT | +41.42% | $2,431,657.53 |
-| AKE/USDT:USDT | +24.99% | $46,057,217.44 |
-| ZAMA/USDT:USDT | +21.85% | $4,517,596.42 |
-| B2/USDT:USDT | +17.75% | $3,097,334.16 |
+| DEXE/USDT:USDT | +90.33% | $67,441,439.41 |
+| EUL/USDT:USDT | +42.30% | $2,477,053.86 |
+| AKE/USDT:USDT | +24.99% | $46,242,628.39 |
+| ZAMA/USDT:USDT | +20.72% | $4,581,251.34 |
+| B2/USDT:USDT | +16.75% | $3,102,519.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +3.67% | +3.67% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
-| RIF/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
-| BANK/USDT:USDT | below_1h_threshold | +0.78% | +0.78% |
+| RIF/USDT:USDT | below_1h_threshold | +2.51% | +2.51% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
+| BANK/USDT:USDT | below_1h_threshold | +1.10% | +1.10% |
+| SLX/USDT:USDT | below_1h_threshold | +1.06% | +1.06% |
+| SHIB/USDT:USDT | below_1h_threshold | +0.45% | +0.46% |
 
 ## 7. 次に見るべき不足
 
