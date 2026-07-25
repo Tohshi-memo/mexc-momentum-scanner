@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T00:51:30.534710+00:00
+- generated_at: 2026-07-25T00:56:18.106953+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9471**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T00:51:18.307913+00:00 / 保存件数 288/288
+- 更新: 2026-07-25T00:56:10.028932+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h -0.07% price=64069.1
-- Funnel: target 898 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1
+- Funnel: target 898 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +42.20% | $45,000,707.76 |
-| ACE/USDT:USDT | +17.56% | $8,246,998.74 |
-| SAGA/USDT:USDT | +16.69% | $1,061,136.81 |
-| PONS/USDT:USDT | +12.01% | $1,227,274.75 |
-| SLX/USDT:USDT | +11.08% | $1,774,729.27 |
+| DEXE/USDT:USDT | +38.18% | $45,347,346.54 |
+| SAGA/USDT:USDT | +17.41% | $1,068,290.53 |
+| ACE/USDT:USDT | +15.35% | $8,277,810.55 |
+| PONS/USDT:USDT | +12.49% | $1,228,606.12 |
+| SLX/USDT:USDT | +12.04% | $1,788,693.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.24% | +4.32% |
-| PONS/USDT:USDT | below_1h_threshold | +4.18% | +4.26% |
-| SLX/USDT:USDT | below_1h_threshold | +3.52% | +3.60% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.35% | +3.42% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.21% | +3.28% |
+| DEXE/USDT:USDT | below_1h_threshold | +4.72% | +4.80% |
+| PONS/USDT:USDT | below_1h_threshold | +4.63% | +4.70% |
+| SLX/USDT:USDT | below_1h_threshold | +4.43% | +4.50% |
+| ZAMA/USDT:USDT | below_1h_threshold | +4.34% | +4.41% |
+| RIF/USDT:USDT | below_1h_threshold | +4.23% | +4.30% |
 
 ## 7. 次に見るべき不足
 
