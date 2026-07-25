@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T10:46:13.852771+00:00
+- generated_at: 2026-07-25T10:51:20.826487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9509**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T10:46:07.050245+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63996.6
+- 更新: 2026-07-25T10:51:14.058009+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63996.7
 - Funnel: target 897 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +85.09% | $97,311,303.50 |
-| EUL/USDT:USDT | +65.10% | $6,117,095.20 |
-| AKE/USDT:USDT | +28.38% | $50,402,471.65 |
-| PROM/USDT:USDT | +17.38% | $3,964,070.32 |
-| BANK/USDT:USDT | +9.54% | $78,276,192.10 |
+| DEXE/USDT:USDT | +76.37% | $98,080,086.55 |
+| EUL/USDT:USDT | +65.98% | $6,213,759.70 |
+| AKE/USDT:USDT | +27.68% | $50,502,147.80 |
+| PROM/USDT:USDT | +16.00% | $3,984,339.42 |
+| BANK/USDT:USDT | +9.04% | $78,661,974.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.94% | +2.90% |
-| SLX/USDT:USDT | below_1h_threshold | +2.64% | +2.60% |
-| PONS/USDT:USDT | below_1h_threshold | +1.71% | +1.67% |
-| ACE/USDT:USDT | below_1h_threshold | +1.50% | +1.46% |
-| BANK/USDT:USDT | below_1h_threshold | +1.46% | +1.42% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +3.51% | +3.47% |
+| PONS/USDT:USDT | below_1h_threshold | +2.01% | +1.97% |
+| SLX/USDT:USDT | below_1h_threshold | +1.85% | +1.81% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.49% | +1.44% |
+| EUL/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
 
 ## 7. 次に見るべき不足
 
