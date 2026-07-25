@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T20:56:23.262738+00:00
+- generated_at: 2026-07-25T21:01:14.286028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9539**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T20:56:13.944309+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64310.0
-- Funnel: target 898 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-25T21:01:07.423338+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64307.0
+- Funnel: target 898 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +18.04% | $17,675,351.92 |
-| ESPORTS/USDT:USDT | +16.91% | $25,710,839.55 |
-| VELVET/USDT:USDT | +13.33% | $7,540,519.74 |
-| BANK/USDT:USDT | +12.05% | $91,565,064.48 |
-| ALLO/USDT:USDT | +10.83% | $18,020,035.76 |
+| EUL/USDT:USDT | +17.14% | $17,617,728.87 |
+| ESPORTS/USDT:USDT | +16.23% | $25,188,900.82 |
+| VELVET/USDT:USDT | +14.69% | $7,498,454.68 |
+| BANK/USDT:USDT | +11.44% | $90,250,264.31 |
+| ALLO/USDT:USDT | +10.61% | $17,417,177.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +4.15% | +4.23% |
-| EUL/USDT:USDT | below_1h_threshold | +2.89% | +2.97% |
-| PROM/USDT:USDT | below_1h_threshold | +1.42% | +1.49% |
-| ACE/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
-| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.88% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.16% | +0.16% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.12% | +0.12% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.10% | +0.10% |
 
 ## 7. 次に見るべき不足
 
