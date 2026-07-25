@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-25T02:01:13.452140+00:00
+- generated_at: 2026-07-25T02:06:15.316699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9473**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-25T02:01:06.378124+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64044.8
+- 更新: 2026-07-25T02:06:08.624948+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64057.3
 - Funnel: target 898 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +28.21% | $45,926,457.97 |
-| ACE/USDT:USDT | +19.05% | $8,774,507.42 |
-| SLX/USDT:USDT | +14.51% | $1,951,933.60 |
-| SAGA/USDT:USDT | +11.02% | $1,174,805.54 |
-| PONS/USDT:USDT | +8.57% | $1,217,076.10 |
+| DEXE/USDT:USDT | +30.66% | $46,065,560.24 |
+| ACE/USDT:USDT | +17.66% | $8,846,727.42 |
+| SLX/USDT:USDT | +15.83% | $1,966,177.35 |
+| SAGA/USDT:USDT | +9.90% | $1,190,455.37 |
+| ZAMA/USDT:USDT | +8.95% | $3,176,214.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +0.78% | +0.77% |
-| SYN/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
-| PROM/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
-| ACE/USDT:USDT | below_1h_threshold | +0.42% | +0.41% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.26% | +0.25% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.70% | +2.67% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
+| TLM/USDT:USDT | below_1h_threshold | +1.25% | +1.22% |
+| SLX/USDT:USDT | below_1h_threshold | +0.92% | +0.89% |
+| B2/USDT:USDT | below_1h_threshold | +0.91% | +0.89% |
 
 ## 7. 次に見るべき不足
 
