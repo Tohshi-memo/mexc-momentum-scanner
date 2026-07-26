@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T14:56:18.809513+00:00
+- generated_at: 2026-07-26T15:01:23.352030+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9575**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T14:56:11.640845+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=64676.2
-- Funnel: target 898 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-26T15:01:18.702223+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64671.3
+- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +55.09% | $40,628,136.99 |
-| ESP/USDT:USDT | +34.39% | $1,127,863.46 |
-| DIA/USDT:USDT | +28.29% | $5,240,210.36 |
-| KAITO/USDT:USDT | +26.31% | $8,897,496.42 |
-| BANK/USDT:USDT | +22.67% | $88,459,173.87 |
+| EUL/USDT:USDT | +59.43% | $39,684,786.91 |
+| ESP/USDT:USDT | +29.92% | $1,286,087.42 |
+| DIA/USDT:USDT | +29.50% | $5,267,378.14 |
+| KAITO/USDT:USDT | +27.65% | $8,781,256.87 |
+| BANK/USDT:USDT | +22.09% | $80,930,938.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.70% | +2.42% |
-| LDO/USDT:USDT | below_1h_threshold | +2.16% | +1.87% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.84% | +1.56% |
-| LAB/USDT:USDT | below_1h_threshold | +1.71% | +1.42% |
-| VVV/USDT:USDT | below_1h_threshold | +1.63% | +1.35% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.00% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
+| EPIC/USDT:USDT | below_1h_threshold | +0.68% | +0.71% |
+| DIA/USDT:USDT | below_1h_threshold | +0.39% | +0.41% |
+| EUL/USDT:USDT | below_1h_threshold | +0.22% | +0.24% |
 
 ## 7. 次に見るべき不足
 
