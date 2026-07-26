@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T14:06:19.221926+00:00
+- generated_at: 2026-07-26T14:11:16.295056+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9575**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T14:06:12.412399+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64694.7
+- 更新: 2026-07-26T14:11:09.459075+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=64662.0
 - Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +69.76% | $38,484,463.25 |
-| DIA/USDT:USDT | +38.97% | $4,796,634.73 |
-| KAITO/USDT:USDT | +27.62% | $8,017,585.34 |
-| BANK/USDT:USDT | +26.22% | $85,641,682.27 |
-| PIEVERSE/USDT:USDT | +20.17% | $7,005,961.29 |
+| EUL/USDT:USDT | +68.59% | $38,546,307.78 |
+| DIA/USDT:USDT | +39.57% | $4,811,943.19 |
+| KAITO/USDT:USDT | +29.09% | $8,111,708.78 |
+| BANK/USDT:USDT | +25.95% | $85,816,697.37 |
+| PIEVERSE/USDT:USDT | +19.37% | $7,056,190.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +1.15% | +0.83% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.78% | +0.47% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.71% | +0.40% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.63% | +0.31% |
-| VVV/USDT:USDT | below_1h_threshold | +0.61% | +0.30% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.14% | +0.87% |
+| BOME/USDT:USDT | below_1h_threshold | +0.77% | +0.50% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.73% | +0.46% |
+| TAO/USDT:USDT | below_1h_threshold | +0.66% | +0.40% |
+| FET/USDT:USDT | below_1h_threshold | +0.58% | +0.31% |
 
 ## 7. 次に見るべき不足
 
