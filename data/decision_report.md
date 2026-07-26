@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T00:36:12.727780+00:00
+- generated_at: 2026-07-26T00:41:18.856669+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9549**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.35** / 初期 $100.00 (+8.35%)
-- 確定: 593件 (Win 201 / Loss 228 / Flat 164) / pending 1件 / skip 424件
+- 確定: 593件 (Win 201 / Loss 228 / Flat 164) / pending 2件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000496 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EUL/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.35
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T00:36:05.898947+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64416.1
-- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-26T00:41:11.702805+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64385.9
+- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.5 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +36.63% | $22,651,036.69 |
-| ESPORTS/USDT:USDT | +23.00% | $28,432,848.40 |
-| ALLO/USDT:USDT | +17.89% | $18,450,000.40 |
-| BANK/USDT:USDT | +16.77% | $87,217,628.85 |
-| VELVET/USDT:USDT | +10.83% | $8,056,943.32 |
+| EUL/USDT:USDT | +41.11% | $22,912,029.86 |
+| ESPORTS/USDT:USDT | +24.25% | $28,541,189.06 |
+| BANK/USDT:USDT | +16.29% | $87,330,932.36 |
+| ALLO/USDT:USDT | +14.42% | $18,564,259.18 |
+| VELVET/USDT:USDT | +11.25% | $8,061,710.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.01% | +2.89% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.53% | +2.41% |
-| EUL/USDT:USDT | below_1h_threshold | +2.32% | +2.20% |
-| BANK/USDT:USDT | below_1h_threshold | +1.86% | +1.74% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.78% | +1.66% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.18% | +2.11% |
+| LAB/USDT:USDT | below_1h_threshold | +1.64% | +1.56% |
+| BANK/USDT:USDT | below_1h_threshold | +1.61% | +1.54% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.59% | +1.51% |
+| SHIB/USDT:USDT | below_1h_threshold | +1.19% | +1.11% |
 
 ## 7. 次に見るべき不足
 
