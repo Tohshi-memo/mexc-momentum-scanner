@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T01:21:11.486859+00:00
+- generated_at: 2026-07-26T01:26:18.208202+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9553**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T01:21:04.651544+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64444.0
+- 更新: 2026-07-26T01:26:11.116829+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64443.1
 - Funnel: target 898 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +45.93% | $27,543,289.74 |
-| BANK/USDT:USDT | +22.16% | $87,838,127.00 |
-| ESPORTS/USDT:USDT | +15.16% | $28,767,884.97 |
-| VELVET/USDT:USDT | +13.19% | $7,847,863.18 |
-| KAITO/USDT:USDT | +8.54% | $3,447,696.88 |
+| EUL/USDT:USDT | +45.73% | $27,770,618.53 |
+| BANK/USDT:USDT | +23.20% | $88,202,969.32 |
+| ESPORTS/USDT:USDT | +17.92% | $28,822,971.35 |
+| VELVET/USDT:USDT | +14.73% | $7,888,906.69 |
+| RIF/USDT:USDT | +11.15% | $3,055,521.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAVE/USDT:USDT | below_1h_threshold | +1.90% | +1.96% |
-| BANK/USDT:USDT | below_1h_threshold | +1.61% | +1.67% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.36% | +1.42% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.57% | +0.63% |
-| XMR/USDT:USDT | below_1h_threshold | +0.36% | +0.42% |
+| AKE/USDT:USDT | below_1h_threshold | +4.45% | +4.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.75% | +2.81% |
+| BANK/USDT:USDT | below_1h_threshold | +2.25% | +2.31% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.14% | +2.20% |
+| RIF/USDT:USDT | below_1h_threshold | +1.74% | +1.80% |
 
 ## 7. 次に見るべき不足
 
