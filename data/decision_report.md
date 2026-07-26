@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T03:21:15.648251+00:00
+- generated_at: 2026-07-26T03:26:15.310101+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9553**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T03:21:08.690926+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64512.1
+- 更新: 2026-07-26T03:26:08.399323+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64523.9
 - Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +44.07% | $31,489,551.00 |
-| BANK/USDT:USDT | +23.27% | $91,667,391.74 |
-| LIGHT/USDT:USDT | +16.31% | $1,251,636.60 |
-| SHIB/USDT:USDT | +11.57% | $49,545,309.13 |
-| VELVET/USDT:USDT | +9.47% | $7,472,397.20 |
+| EUL/USDT:USDT | +44.69% | $31,543,163.12 |
+| BANK/USDT:USDT | +23.68% | $91,771,121.05 |
+| LIGHT/USDT:USDT | +16.24% | $1,257,133.04 |
+| SHIB/USDT:USDT | +11.78% | $49,744,393.11 |
+| ORDI/USDT:USDT | +9.83% | $3,016,324.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.51% | +2.48% |
-| LIGHT/USDT:USDT | below_1h_threshold | +1.99% | +1.96% |
-| BANK/USDT:USDT | below_1h_threshold | +1.66% | +1.63% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.47% | +1.44% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.45% | +1.42% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.14% | +2.09% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.12% | +2.06% |
+| BANK/USDT:USDT | below_1h_threshold | +1.97% | +1.92% |
+| EUL/USDT:USDT | below_1h_threshold | +1.69% | +1.64% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.56% | +1.51% |
 
 ## 7. 次に見るべき不足
 
