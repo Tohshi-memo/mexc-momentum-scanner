@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T11:16:20.372855+00:00
+- generated_at: 2026-07-26T11:21:16.332222+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9570**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T11:16:12.036963+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64481.9
+- 更新: 2026-07-26T11:21:09.370156+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64492.4
 - Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1
+- Strict後reject: 4h RSI 73.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +67.21% | $37,759,904.24 |
-| DIA/USDT:USDT | +42.49% | $3,566,356.39 |
-| PIEVERSE/USDT:USDT | +34.32% | $5,298,702.26 |
-| BANK/USDT:USDT | +26.01% | $91,058,135.22 |
-| KAITO/USDT:USDT | +22.10% | $4,468,721.55 |
+| EUL/USDT:USDT | +67.28% | $37,838,551.96 |
+| DIA/USDT:USDT | +43.10% | $3,604,268.25 |
+| PIEVERSE/USDT:USDT | +34.35% | $5,332,778.51 |
+| BANK/USDT:USDT | +25.37% | $91,452,285.91 |
+| KAITO/USDT:USDT | +24.10% | $4,655,109.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +2.40% | +2.42% |
-| UNI/USDT:USDT | below_1h_threshold | +1.83% | +1.84% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.99% | +1.01% |
+| UNI/USDT:USDT | below_1h_threshold | +2.12% | +2.12% |
+| EUL/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.80% | +1.79% |
+| RIF/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
+| APT/USDT:USDT | below_1h_threshold | +0.94% | +0.94% |
 
 ## 7. 次に見るべき不足
 
