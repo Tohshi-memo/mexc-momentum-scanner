@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T15:36:15.174701+00:00
+- generated_at: 2026-07-26T15:41:19.128927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9575**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.09** / 初期 $100.00 (+8.09%)
-- 確定: 615件 (Win 206 / Loss 238 / Flat 171) / pending 1件 / skip 429件
+- 確定: 615件 (Win 206 / Loss 238 / Flat 171) / pending 1件 / skip 431件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000251 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SHIB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $108.09
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T15:36:08.288397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64731.4
-- Funnel: target 898 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-26T15:41:09.907953+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=64772.5
+- Funnel: target 898 → liquid 121 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.3 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +65.15% | $40,751,644.79 |
-| DIA/USDT:USDT | +33.23% | $5,462,046.84 |
-| ESP/USDT:USDT | +25.35% | $1,824,081.98 |
-| KAITO/USDT:USDT | +23.74% | $9,130,194.26 |
-| BANK/USDT:USDT | +23.15% | $82,321,474.13 |
+| EUL/USDT:USDT | +69.90% | $40,941,814.24 |
+| DIA/USDT:USDT | +33.93% | $5,479,971.28 |
+| ESP/USDT:USDT | +29.80% | $1,885,221.23 |
+| KAITO/USDT:USDT | +25.11% | $9,190,086.16 |
+| BANK/USDT:USDT | +24.56% | $82,653,228.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +3.85% | +3.78% |
-| CROSS/USDT:USDT | below_1h_threshold | +3.65% | +3.58% |
-| DIA/USDT:USDT | below_1h_threshold | +3.12% | +3.05% |
-| SHIB/USDT:USDT | below_1h_threshold | +2.11% | +2.04% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
+| CROSS/USDT:USDT | below_1h_threshold | +3.82% | +3.69% |
+| DIA/USDT:USDT | below_1h_threshold | +3.66% | +3.53% |
+| SHIB/USDT:USDT | below_1h_threshold | +2.48% | +2.35% |
+| BANK/USDT:USDT | below_1h_threshold | +1.92% | +1.79% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.91% | +1.78% |
 
 ## 7. 次に見るべき不足
 
