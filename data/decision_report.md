@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T16:11:22.208218+00:00
+- generated_at: 2026-07-26T16:16:19.078335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9578**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T16:11:11.786349+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64685.4
+- 更新: 2026-07-26T16:16:09.864819+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64698.7
 - Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +9.54% | $16,252,127.99 |
-| ONDO/USDT:USDT | +1.54% | $21,279,688.09 |
-| CROSS/USDT:USDT | +1.51% | $1,036,529.65 |
-| DIA/USDT:USDT | +1.40% | $5,641,487.22 |
-| ON/USDT:USDT | +1.14% | $4,683,271.83 |
+| AKE/USDT:USDT | +10.48% | $16,508,122.92 |
+| ONDO/USDT:USDT | +2.35% | $21,793,957.68 |
+| B/USDT:USDT | +2.33% | $1,091,484.30 |
+| CROSS/USDT:USDT | +2.20% | $1,046,585.86 |
+| FARTCOIN/USDT:USDT | +1.70% | $8,792,851.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONDO/USDT:USDT | below_1h_threshold | +1.54% | +1.62% |
-| DIA/USDT:USDT | below_1h_threshold | +1.48% | +1.56% |
-| BANK/USDT:USDT | below_1h_threshold | +1.24% | +1.31% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.21% | +1.28% |
-| ON/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.35% | +2.41% |
+| B/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
+| CROSS/USDT:USDT | below_1h_threshold | +2.21% | +2.27% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.71% | +1.77% |
+| ON/USDT:USDT | below_1h_threshold | +1.39% | +1.45% |
 
 ## 7. 次に見るべき不足
 
