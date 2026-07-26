@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T02:21:12.246990+00:00
+- generated_at: 2026-07-26T02:26:14.554176+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9553**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T02:21:06.837065+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64433.9
+- 更新: 2026-07-26T02:26:05.795746+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64415.3
 - Funnel: target 898 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +50.41% | $30,031,039.76 |
-| BANK/USDT:USDT | +19.88% | $91,335,140.22 |
-| VELVET/USDT:USDT | +13.35% | $7,501,088.67 |
-| ESPORTS/USDT:USDT | +11.35% | $29,201,374.06 |
-| SHIB/USDT:USDT | +10.77% | $47,276,997.18 |
+| EUL/USDT:USDT | +46.96% | $30,236,395.83 |
+| BANK/USDT:USDT | +20.71% | $91,746,322.49 |
+| VELVET/USDT:USDT | +11.50% | $7,518,444.65 |
+| SHIB/USDT:USDT | +11.20% | $47,551,543.24 |
+| LIGHT/USDT:USDT | +10.63% | $1,093,918.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +2.36% | +2.36% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.67% | +1.67% |
-| EUL/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
-| SHIB/USDT:USDT | below_1h_threshold | +1.25% | +1.25% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.17% | +1.17% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.77% | +1.79% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.67% | +1.70% |
+| SHIB/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.38% | +1.41% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.99% | +1.02% |
 
 ## 7. 次に見るべき不足
 
