@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T14:51:12.331515+00:00
+- generated_at: 2026-07-26T14:56:18.809513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9575**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.09** / 初期 $100.00 (+8.09%)
-- 確定: 615件 (Win 206 / Loss 238 / Flat 171) / pending 1件 / skip 428件
+- 確定: 615件 (Win 206 / Loss 238 / Flat 171) / pending 1件 / skip 429件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000251 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SHIB/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $108.09
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T14:51:05.276265+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=64664.7
-- Funnel: target 898 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-26T14:56:11.640845+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=64676.2
+- Funnel: target 898 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +49.79% | $40,446,423.17 |
-| DIA/USDT:USDT | +28.80% | $5,213,989.10 |
-| KAITO/USDT:USDT | +25.61% | $8,809,051.47 |
-| BANK/USDT:USDT | +20.37% | $88,111,211.97 |
-| BOME/USDT:USDT | +17.13% | $1,154,598.54 |
+| EUL/USDT:USDT | +55.09% | $40,628,136.99 |
+| ESP/USDT:USDT | +34.39% | $1,127,863.46 |
+| DIA/USDT:USDT | +28.29% | $5,240,210.36 |
+| KAITO/USDT:USDT | +26.31% | $8,897,496.42 |
+| BANK/USDT:USDT | +22.67% | $88,459,173.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +2.06% | +1.80% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.73% | +1.47% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.04% | +0.77% |
-| UNI/USDT:USDT | below_1h_threshold | +0.99% | +0.72% |
-| VVV/USDT:USDT | below_1h_threshold | +0.87% | +0.60% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.70% | +2.42% |
+| LDO/USDT:USDT | below_1h_threshold | +2.16% | +1.87% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.84% | +1.56% |
+| LAB/USDT:USDT | below_1h_threshold | +1.71% | +1.42% |
+| VVV/USDT:USDT | below_1h_threshold | +1.63% | +1.35% |
 
 ## 7. 次に見るべき不足
 
