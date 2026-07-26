@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T01:51:16.026415+00:00
+- generated_at: 2026-07-26T01:56:21.319873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9553**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.34** / 初期 $100.00 (+9.34%)
-- 確定: 597件 (Win 204 / Loss 228 / Flat 165) / pending 1件 / skip 424件
+- 確定: 597件 (Win 204 / Loss 228 / Flat 165) / pending 2件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000577 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $109.34
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T01:51:08.866044+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64439.5
-- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1
+- 更新: 2026-07-26T01:56:14.114646+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64458.6
+- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.9 >= 65=1, 4h RSI 69.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +55.99% | $28,814,597.31 |
-| BANK/USDT:USDT | +24.55% | $89,647,814.03 |
-| VELVET/USDT:USDT | +15.75% | $8,024,093.64 |
-| ESPORTS/USDT:USDT | +14.56% | $29,310,210.43 |
-| LIGHT/USDT:USDT | +11.13% | $1,033,098.45 |
+| EUL/USDT:USDT | +49.03% | $29,122,745.22 |
+| BANK/USDT:USDT | +27.38% | $90,614,025.75 |
+| ESPORTS/USDT:USDT | +17.17% | $29,352,419.05 |
+| VELVET/USDT:USDT | +14.20% | $8,042,918.66 |
+| LIGHT/USDT:USDT | +10.42% | $1,044,168.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.66% | +3.72% |
-| BANK/USDT:USDT | below_1h_threshold | +3.59% | +3.66% |
-| LIGHT/USDT:USDT | below_1h_threshold | +3.57% | +3.64% |
-| EUL/USDT:USDT | below_1h_threshold | +2.67% | +2.74% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.84% | +1.91% |
+| LIGHT/USDT:USDT | below_1h_threshold | +3.04% | +3.08% |
+| UB/USDT:USDT | below_1h_threshold | +2.65% | +2.69% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.47% | +2.51% |
+| SHIB/USDT:USDT | below_1h_threshold | +2.17% | +2.21% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.04% | +2.08% |
 
 ## 7. 次に見るべき不足
 
