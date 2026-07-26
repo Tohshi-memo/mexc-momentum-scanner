@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T07:46:16.271531+00:00
+- generated_at: 2026-07-26T07:51:13.658506+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9562**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T07:46:09.394451+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=64324.3
+- 更新: 2026-07-26T07:51:06.907574+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64345.7
 - Funnel: target 898 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +61.77% | $37,320,653.99 |
-| PIEVERSE/USDT:USDT | +50.92% | $2,805,608.51 |
-| DIA/USDT:USDT | +36.35% | $2,095,640.84 |
-| SHIB/USDT:USDT | +18.69% | $70,345,259.20 |
-| BANK/USDT:USDT | +16.00% | $94,655,732.60 |
+| EUL/USDT:USDT | +63.70% | $37,430,740.54 |
+| PIEVERSE/USDT:USDT | +51.62% | $2,894,698.23 |
+| DIA/USDT:USDT | +37.05% | $2,108,247.39 |
+| SHIB/USDT:USDT | +17.87% | $70,750,061.94 |
+| BANK/USDT:USDT | +16.63% | $94,753,284.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.56% | +3.69% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.20% | +3.33% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.92% | +2.05% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.74% | +1.87% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.58% | +1.71% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.47% | +3.57% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.76% | +2.86% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.47% | +2.56% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.26% | +2.36% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.02% | +2.12% |
 
 ## 7. 次に見るべき不足
 
