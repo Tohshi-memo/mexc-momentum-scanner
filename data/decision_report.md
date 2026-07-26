@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T17:01:13.410997+00:00
+- generated_at: 2026-07-26T17:06:14.641860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9579**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T17:01:06.503953+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64683.3
+- 更新: 2026-07-26T17:06:07.771317+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64681.9
 - Funnel: target 898 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +11.98% | $17,066,330.24 |
-| ETHFI/USDT:USDT | +3.13% | $2,125,976.35 |
-| ETC/USDT:USDT | +3.01% | $1,801,019.88 |
-| BANK/USDT:USDT | +2.52% | $67,370,775.45 |
-| ONDO/USDT:USDT | +2.19% | $23,835,467.83 |
+| AKE/USDT:USDT | +10.16% | $17,300,020.17 |
+| BANK/USDT:USDT | +3.22% | $67,719,629.72 |
+| ON/USDT:USDT | +2.39% | $4,716,322.46 |
+| ETC/USDT:USDT | +2.32% | $1,835,105.28 |
+| ANSEM/USDT:USDT | +2.02% | $1,082,546.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| LAB/USDT:USDT | below_1h_threshold | +1.35% | +1.38% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.02% | +1.05% |
+| BANK/USDT:USDT | below_1h_threshold | +0.83% | +0.86% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.82% | +0.85% |
 | PIEVERSE/USDT:USDT | below_1h_threshold | +0.72% | +0.74% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
-| BANK/USDT:USDT | below_1h_threshold | +0.24% | +0.27% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.22% | +0.25% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.21% | +0.24% |
 
 ## 7. 次に見るべき不足
 
