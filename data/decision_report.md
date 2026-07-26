@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T19:06:15.277659+00:00
+- generated_at: 2026-07-26T19:11:13.686179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9582**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T19:06:08.455391+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64699.3
+- 更新: 2026-07-26T19:11:06.718450+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64660.0
 - Funnel: target 898 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +13.95% | $17,950,695.25 |
-| CROSS/USDT:USDT | +7.25% | $1,491,068.31 |
-| BANK/USDT:USDT | +4.94% | $69,899,200.63 |
-| ESP/USDT:USDT | +4.48% | $2,853,514.13 |
-| PRL/USDT:USDT | +4.27% | $1,136,296.60 |
+| AKE/USDT:USDT | +13.14% | $18,039,259.11 |
+| ESP/USDT:USDT | +7.78% | $2,919,068.49 |
+| CROSS/USDT:USDT | +6.03% | $1,506,293.42 |
+| BANK/USDT:USDT | +5.03% | $70,319,298.11 |
+| PRL/USDT:USDT | +4.06% | $1,142,894.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +1.83% | +1.85% |
-| BANK/USDT:USDT | below_1h_threshold | +1.15% | +1.16% |
-| CROSS/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
-| B/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
+| ESP/USDT:USDT | below_1h_threshold | +4.01% | +4.08% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.43% | +1.50% |
+| BANK/USDT:USDT | below_1h_threshold | +1.21% | +1.29% |
+| BOME/USDT:USDT | below_1h_threshold | +0.78% | +0.85% |
+| PROM/USDT:USDT | below_1h_threshold | +0.74% | +0.81% |
 
 ## 7. 次に見るべき不足
 
