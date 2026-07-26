@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T11:56:23.008763+00:00
+- generated_at: 2026-07-26T12:01:15.319594+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9572**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T11:56:15.106644+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64483.2
-- Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.8 >= 65=1, 4h RSI 72.5 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-26T12:01:08.466504+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64485.5
+- Funnel: target 898 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +78.71% | $39,511,322.84 |
-| DIA/USDT:USDT | +44.10% | $3,816,674.31 |
-| PIEVERSE/USDT:USDT | +34.86% | $5,544,535.28 |
-| BANK/USDT:USDT | +24.87% | $92,790,630.97 |
-| KAITO/USDT:USDT | +22.85% | $5,283,538.46 |
+| EUL/USDT:USDT | +73.69% | $38,680,628.15 |
+| DIA/USDT:USDT | +45.72% | $3,821,940.85 |
+| PIEVERSE/USDT:USDT | +38.42% | $5,663,488.50 |
+| BANK/USDT:USDT | +25.19% | $89,418,955.76 |
+| KAITO/USDT:USDT | +24.37% | $5,160,917.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +2.69% | +2.70% |
-| BASED/USDT:USDT | below_1h_threshold | +1.59% | +1.60% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.56% | +1.57% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.38% | +1.39% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
+| DIA/USDT:USDT | below_1h_threshold | +1.40% | +1.39% |
+| LAB/USDT:USDT | below_1h_threshold | +0.52% | +0.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.52% | +0.51% |
+| VVV/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.24% | +0.23% |
 
 ## 7. 次に見るべき不足
 
