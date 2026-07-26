@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T05:46:12.613968+00:00
+- generated_at: 2026-07-26T05:51:18.094646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9560**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.24** / 初期 $100.00 (+9.24%)
-- 確定: 603件 (Win 205 / Loss 230 / Flat 168) / pending 1件 / skip 424件
+- 確定: 603件 (Win 205 / Loss 230 / Flat 168) / pending 2件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000604 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EUL/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $109.24
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T05:46:05.464092+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64436.8
-- Funnel: target 898 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.8 >= 65=1
+- 更新: 2026-07-26T05:51:10.543400+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64434.6
+- Funnel: target 898 → liquid 121 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 85.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +71.00% | $35,148,850.46 |
-| DIA/USDT:USDT | +41.79% | $1,482,836.15 |
-| BANK/USDT:USDT | +22.96% | $96,095,937.99 |
-| SHIB/USDT:USDT | +19.47% | $59,997,406.63 |
-| LIGHT/USDT:USDT | +17.09% | $1,517,616.98 |
+| EUL/USDT:USDT | +73.89% | $35,338,602.25 |
+| DIA/USDT:USDT | +39.87% | $1,510,797.61 |
+| BANK/USDT:USDT | +24.44% | $96,455,514.38 |
+| SHIB/USDT:USDT | +19.78% | $61,104,581.54 |
+| ORDI/USDT:USDT | +13.32% | $5,090,618.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHIB/USDT:USDT | below_1h_threshold | +4.67% | +4.76% |
-| BANK/USDT:USDT | below_1h_threshold | +2.40% | +2.49% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.35% | +2.44% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.08% | +2.16% |
-| FLOKI/USDT:USDT | below_1h_threshold | +1.59% | +1.67% |
+| BANK/USDT:USDT | below_1h_threshold | +3.46% | +3.55% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.16% | +2.25% |
+| FLOKI/USDT:USDT | below_1h_threshold | +2.07% | +2.16% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.05% | +2.14% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.76% | +1.85% |
 
 ## 7. 次に見るべき不足
 
