@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T16:41:19.305268+00:00
+- generated_at: 2026-07-26T16:46:20.649036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9579**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T16:41:08.794159+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64794.6
+- 更新: 2026-07-26T16:46:11.113912+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64795.8
 - Funnel: target 898 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +10.05% | $17,425,162.38 |
-| CROSS/USDT:USDT | +3.17% | $1,080,285.57 |
-| BANK/USDT:USDT | +2.46% | $75,411,248.02 |
-| ANSEM/USDT:USDT | +2.33% | $1,078,291.64 |
-| ETHFI/USDT:USDT | +2.22% | $2,108,147.95 |
+| AKE/USDT:USDT | +10.91% | $17,549,594.75 |
+| CROSS/USDT:USDT | +4.15% | $1,085,472.78 |
+| ETHFI/USDT:USDT | +2.19% | $2,127,535.23 |
+| BANK/USDT:USDT | +2.02% | $75,582,649.79 |
+| ANSEM/USDT:USDT | +1.86% | $1,082,464.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CROSS/USDT:USDT | below_1h_threshold | +3.17% | +3.08% |
-| BANK/USDT:USDT | below_1h_threshold | +2.50% | +2.40% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.33% | +2.24% |
+| CROSS/USDT:USDT | below_1h_threshold | +4.16% | +4.06% |
 | ETHFI/USDT:USDT | below_1h_threshold | +2.25% | +2.15% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.99% | +1.89% |
+| BANK/USDT:USDT | below_1h_threshold | +1.93% | +1.83% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.92% | +1.83% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.87% | +1.77% |
 
 ## 7. 次に見るべき不足
 
