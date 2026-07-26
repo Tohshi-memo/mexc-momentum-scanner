@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T21:11:12.537020+00:00
+- generated_at: 2026-07-26T21:16:14.146625+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9584**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T21:11:05.668776+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64637.5
+- 更新: 2026-07-26T21:16:07.300536+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64671.5
 - Funnel: target 898 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +20.89% | $1,356,375.98 |
-| UB/USDT:USDT | +13.55% | $1,929,978.42 |
-| ESP/USDT:USDT | +13.37% | $3,802,673.88 |
-| AKE/USDT:USDT | +9.68% | $18,489,792.87 |
-| CROSS/USDT:USDT | +8.01% | $1,772,747.73 |
+| 4/USDT:USDT | +21.59% | $1,372,465.81 |
+| UB/USDT:USDT | +14.74% | $2,010,445.74 |
+| ESP/USDT:USDT | +14.17% | $3,836,196.96 |
+| AKE/USDT:USDT | +8.75% | $18,548,793.39 |
+| CROSS/USDT:USDT | +7.97% | $1,776,469.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +1.18% | +1.16% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.06% | +1.04% |
-| BOME/USDT:USDT | below_1h_threshold | +0.83% | +0.80% |
-| EPIC/USDT:USDT | below_1h_threshold | +0.78% | +0.76% |
-| 4/USDT:USDT | below_1h_threshold | +0.78% | +0.76% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.56% | +1.48% |
+| UB/USDT:USDT | below_1h_threshold | +1.22% | +1.14% |
+| PROM/USDT:USDT | below_1h_threshold | +1.20% | +1.12% |
+| 4/USDT:USDT | below_1h_threshold | +1.18% | +1.10% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.96% | +0.88% |
 
 ## 7. 次に見るべき不足
 
