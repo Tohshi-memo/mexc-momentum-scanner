@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T09:11:12.840497+00:00
+- generated_at: 2026-07-26T09:16:14.315043+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9568**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T09:11:06.095840+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64475.7
+- 更新: 2026-07-26T09:16:07.515428+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64466.6
 - Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +63.22% | $38,673,485.17 |
-| DIA/USDT:USDT | +43.10% | $2,327,553.69 |
-| PIEVERSE/USDT:USDT | +41.74% | $4,127,889.35 |
-| BANK/USDT:USDT | +23.56% | $92,432,223.00 |
-| SHIB/USDT:USDT | +17.07% | $76,346,756.31 |
+| EUL/USDT:USDT | +64.04% | $38,740,373.36 |
+| DIA/USDT:USDT | +43.20% | $2,342,652.72 |
+| PIEVERSE/USDT:USDT | +40.91% | $4,232,949.70 |
+| BANK/USDT:USDT | +23.67% | $92,594,284.86 |
+| SHIB/USDT:USDT | +16.58% | $77,050,164.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.60% | +3.56% |
-| RIF/USDT:USDT | below_1h_threshold | +2.49% | +2.45% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.05% | +1.01% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
-| VVV/USDT:USDT | below_1h_threshold | +0.84% | +0.80% |
+| LAB/USDT:USDT | below_1h_threshold | +4.21% | +4.18% |
+| RIF/USDT:USDT | below_1h_threshold | +1.44% | +1.42% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.71% | +0.69% |
+| TSLL/USDT:USDT | below_1h_threshold | +0.67% | +0.64% |
+| EUL/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
 
 ## 7. 次に見るべき不足
 
