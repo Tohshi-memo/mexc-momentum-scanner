@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T10:51:11.040113+00:00
+- generated_at: 2026-07-26T10:56:11.579089+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9569**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T10:51:04.285407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64493.7
+- 更新: 2026-07-26T10:56:04.656590+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64498.1
 - Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +62.67% | $38,893,672.65 |
-| DIA/USDT:USDT | +45.92% | $3,336,836.14 |
-| PIEVERSE/USDT:USDT | +41.41% | $4,890,837.08 |
-| BANK/USDT:USDT | +25.87% | $94,399,964.47 |
-| KAITO/USDT:USDT | +16.16% | $3,892,929.12 |
+| EUL/USDT:USDT | +62.53% | $38,968,916.87 |
+| DIA/USDT:USDT | +46.72% | $3,364,207.09 |
+| PIEVERSE/USDT:USDT | +42.15% | $4,903,249.63 |
+| BANK/USDT:USDT | +25.51% | $94,540,008.86 |
+| ANSEM/USDT:USDT | +17.60% | $1,010,849.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +3.47% | +3.50% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.46% | +3.49% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.53% | +2.55% |
-| RIF/USDT:USDT | below_1h_threshold | +2.51% | +2.53% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.85% | +1.88% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.71% | +4.73% |
+| RIF/USDT:USDT | below_1h_threshold | +3.49% | +3.51% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.26% | +3.29% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.74% | +2.76% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.68% | +2.70% |
 
 ## 7. 次に見るべき不足
 
