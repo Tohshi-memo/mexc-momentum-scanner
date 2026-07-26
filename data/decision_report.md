@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T14:46:14.752523+00:00
+- generated_at: 2026-07-26T14:51:12.331515+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9575**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T14:46:07.793377+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64689.5
+- 更新: 2026-07-26T14:51:05.276265+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=64664.7
 - Funnel: target 898 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +50.82% | $40,353,903.52 |
-| DIA/USDT:USDT | +26.28% | $5,187,824.39 |
-| KAITO/USDT:USDT | +25.61% | $8,744,287.10 |
-| BANK/USDT:USDT | +22.45% | $87,833,836.66 |
-| BOME/USDT:USDT | +17.13% | $1,152,467.47 |
+| EUL/USDT:USDT | +49.79% | $40,446,423.17 |
+| DIA/USDT:USDT | +28.80% | $5,213,989.10 |
+| KAITO/USDT:USDT | +25.61% | $8,809,051.47 |
+| BANK/USDT:USDT | +20.37% | $88,111,211.97 |
+| BOME/USDT:USDT | +17.13% | $1,154,598.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +1.73% | +1.43% |
-| EPIC/USDT:USDT | below_1h_threshold | +1.38% | +1.07% |
-| UNI/USDT:USDT | below_1h_threshold | +1.22% | +0.92% |
-| LAB/USDT:USDT | below_1h_threshold | +0.82% | +0.52% |
-| VVV/USDT:USDT | below_1h_threshold | +0.81% | +0.50% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.06% | +1.80% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.73% | +1.47% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.04% | +0.77% |
+| UNI/USDT:USDT | below_1h_threshold | +0.99% | +0.72% |
+| VVV/USDT:USDT | below_1h_threshold | +0.87% | +0.60% |
 
 ## 7. 次に見るべき不足
 
