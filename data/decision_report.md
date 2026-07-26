@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T06:06:13.890021+00:00
+- generated_at: 2026-07-26T06:11:11.273471+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9560**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T06:06:07.107558+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64369.3
+- 更新: 2026-07-26T06:11:04.402597+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64353.4
 - Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +66.11% | $35,668,606.22 |
-| DIA/USDT:USDT | +42.90% | $1,606,501.46 |
-| BANK/USDT:USDT | +23.62% | $94,085,894.65 |
-| SHIB/USDT:USDT | +20.88% | $62,200,955.39 |
-| ORDI/USDT:USDT | +14.42% | $5,100,388.44 |
+| EUL/USDT:USDT | +65.97% | $35,799,980.00 |
+| DIA/USDT:USDT | +42.79% | $1,623,405.79 |
+| BANK/USDT:USDT | +22.71% | $94,341,871.14 |
+| SHIB/USDT:USDT | +20.52% | $63,048,005.86 |
+| ORDI/USDT:USDT | +13.41% | $5,159,423.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +1.77% | +1.80% |
-| SHIB/USDT:USDT | below_1h_threshold | +0.75% | +0.78% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| VVV/USDT:USDT | below_1h_threshold | +0.49% | +0.51% |
-| WIF/USDT:USDT | below_1h_threshold | +0.44% | +0.46% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.45% | +2.50% |
+| BANK/USDT:USDT | below_1h_threshold | +0.91% | +0.96% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.39% | +0.44% |
+| TAO/USDT:USDT | below_1h_threshold | +0.35% | +0.40% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.33% | +0.38% |
 
 ## 7. 次に見るべき不足
 
