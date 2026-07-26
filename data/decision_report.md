@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T01:31:10.843370+00:00
+- generated_at: 2026-07-26T01:36:17.294845+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9553**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.34** / 初期 $100.00 (+9.34%)
-- 確定: 597件 (Win 204 / Loss 228 / Flat 165) / pending 0件 / skip 424件
+- 確定: 597件 (Win 204 / Loss 228 / Flat 165) / pending 1件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000577 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $109.34
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T01:31:04.019819+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64460.0
-- Funnel: target 898 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-26T01:36:10.283119+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64468.6
+- Funnel: target 898 → liquid 117 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.4 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +43.93% | $27,966,678.68 |
-| BANK/USDT:USDT | +21.43% | $88,555,591.35 |
-| ESPORTS/USDT:USDT | +20.71% | $28,945,208.60 |
-| VELVET/USDT:USDT | +15.31% | $7,935,345.63 |
-| RIF/USDT:USDT | +11.39% | $3,065,940.90 |
+| EUL/USDT:USDT | +47.79% | $28,140,669.93 |
+| BANK/USDT:USDT | +22.25% | $88,685,751.28 |
+| ESPORTS/USDT:USDT | +20.63% | $29,060,476.85 |
+| VELVET/USDT:USDT | +14.99% | $7,985,607.47 |
+| KAITO/USDT:USDT | +8.23% | $3,453,305.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.62% | +4.66% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.30% | +3.34% |
-| RIF/USDT:USDT | below_1h_threshold | +2.29% | +2.33% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.07% | +2.11% |
-| BANK/USDT:USDT | below_1h_threshold | +0.94% | +0.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.97% | +3.00% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.24% | +2.26% |
+| BANK/USDT:USDT | below_1h_threshold | +1.50% | +1.52% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.91% | +0.93% |
+| ICP/USDT:USDT | below_1h_threshold | +0.84% | +0.86% |
 
 ## 7. 次に見るべき不足
 
