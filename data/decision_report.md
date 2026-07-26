@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T15:56:23.218790+00:00
+- generated_at: 2026-07-26T16:01:19.349249+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9576**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T15:56:13.824034+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64747.6
-- Funnel: target 898 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-26T16:01:12.404526+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64748.0
+- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +74.93% | $41,796,916.56 |
-| DIA/USDT:USDT | +34.23% | $5,558,253.36 |
-| ESP/USDT:USDT | +30.77% | $2,001,279.15 |
-| BANK/USDT:USDT | +25.91% | $83,406,942.80 |
-| KAITO/USDT:USDT | +24.59% | $9,388,597.55 |
+| LAB/USDT:USDT | +0.91% | $3,020,812.41 |
+| ARB/USDT:USDT | +0.47% | $5,453,655.79 |
+| KAITO/USDT:USDT | +0.45% | $9,285,244.29 |
+| SYN/USDT:USDT | +0.45% | $3,563,293.89 |
+| AAVE/USDT:USDT | +0.34% | $41,014,855.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CROSS/USDT:USDT | below_1h_threshold | +4.48% | +4.39% |
-| DIA/USDT:USDT | below_1h_threshold | +4.13% | +4.04% |
-| BANK/USDT:USDT | below_1h_threshold | +3.02% | +2.93% |
-| BOME/USDT:USDT | below_1h_threshold | +2.78% | +2.69% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.67% | +2.58% |
+| LAB/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
+| ARB/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
+| SYN/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
+| BOME/USDT:USDT | below_1h_threshold | +0.39% | +0.37% |
 
 ## 7. 次に見るべき不足
 
