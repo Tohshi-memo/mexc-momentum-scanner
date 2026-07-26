@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T06:51:14.546925+00:00
+- generated_at: 2026-07-26T06:56:19.273629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9560**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T06:51:09.052959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64375.1
-- Funnel: target 898 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1
+- 更新: 2026-07-26T06:56:13.236578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64422.9
+- Funnel: target 898 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.9 >= 65=1, 4h RSI 71.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +73.34% | $36,702,125.73 |
-| DIA/USDT:USDT | +42.09% | $1,883,020.14 |
-| PIEVERSE/USDT:USDT | +37.04% | $1,383,522.06 |
-| SHIB/USDT:USDT | +19.47% | $66,461,491.41 |
-| BANK/USDT:USDT | +19.15% | $96,020,368.96 |
+| EUL/USDT:USDT | +70.45% | $36,875,767.98 |
+| DIA/USDT:USDT | +42.29% | $1,918,466.64 |
+| PIEVERSE/USDT:USDT | +37.72% | $1,417,724.06 |
+| SHIB/USDT:USDT | +21.15% | $66,949,401.44 |
+| BANK/USDT:USDT | +17.54% | $96,321,300.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.66% | +4.68% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.55% | +3.57% |
-| LIGHT/USDT:USDT | below_1h_threshold | +3.24% | +3.25% |
-| EUL/USDT:USDT | below_1h_threshold | +2.90% | +2.92% |
-| VVV/USDT:USDT | below_1h_threshold | +1.62% | +1.64% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.37% | +3.31% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.16% | +2.10% |
+| VVV/USDT:USDT | below_1h_threshold | +1.32% | +1.26% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.26% | +1.20% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
 
 ## 7. 次に見るべき不足
 
