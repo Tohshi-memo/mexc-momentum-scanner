@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T05:06:09.640187+00:00
+- generated_at: 2026-07-26T05:11:11.911791+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9556**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.63** / 初期 $100.00 (+9.63%)
-- 確定: 599件 (Win 205 / Loss 228 / Flat 166) / pending 1件 / skip 424件
+- 確定: 599件 (Win 205 / Loss 228 / Flat 166) / pending 2件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000601 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EUL/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $109.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T05:06:02.861231+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64470.1
-- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-26T05:11:04.711109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64474.2
+- Funnel: target 898 → liquid 119 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.8 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +59.50% | $33,499,343.41 |
-| DIA/USDT:USDT | +44.41% | $1,097,678.61 |
-| BANK/USDT:USDT | +19.37% | $93,328,194.64 |
-| LIGHT/USDT:USDT | +15.10% | $1,428,857.80 |
-| SHIB/USDT:USDT | +14.98% | $55,156,865.87 |
+| EUL/USDT:USDT | +61.91% | $33,861,337.39 |
+| DIA/USDT:USDT | +46.92% | $1,162,213.70 |
+| BANK/USDT:USDT | +19.82% | $93,694,728.56 |
+| SHIB/USDT:USDT | +17.49% | $56,509,809.13 |
+| LIGHT/USDT:USDT | +15.88% | $1,434,312.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +4.35% | +4.39% |
-| DIA/USDT:USDT | below_1h_threshold | +1.56% | +1.59% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.14% | +1.18% |
-| SHIB/USDT:USDT | below_1h_threshold | +0.78% | +0.81% |
-| TSLL/USDT:USDT | below_1h_threshold | +0.53% | +0.56% |
+| DIA/USDT:USDT | below_1h_threshold | +3.61% | +3.64% |
+| SHIB/USDT:USDT | below_1h_threshold | +2.99% | +3.02% |
+| FLOKI/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.79% | +0.82% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.74% | +0.77% |
 
 ## 7. 次に見るべき不足
 
