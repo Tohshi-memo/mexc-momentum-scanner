@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-26T09:26:16.987710+00:00
+- generated_at: 2026-07-26T09:31:11.342731+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9568**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.85** / 初期 $100.00 (+8.85%)
-- 確定: 611件 (Win 206 / Loss 234 / Flat 171) / pending 2件 / skip 424件
+- 確定: 611件 (Win 206 / Loss 234 / Flat 171) / pending 3件 / skip 424件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000316 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-26T09:26:10.099104+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64516.5
-- Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-26T09:31:05.233000+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64494.8
+- Funnel: target 898 → liquid 118 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EUL/USDT:USDT | +68.25% | $38,915,952.82 |
-| PIEVERSE/USDT:USDT | +44.59% | $4,428,798.91 |
-| DIA/USDT:USDT | +40.08% | $2,382,245.76 |
-| BANK/USDT:USDT | +24.50% | $93,096,082.76 |
-| SHIB/USDT:USDT | +13.91% | $79,022,525.60 |
+| EUL/USDT:USDT | +72.10% | $39,069,016.91 |
+| PIEVERSE/USDT:USDT | +42.06% | $4,475,761.23 |
+| DIA/USDT:USDT | +40.08% | $2,419,247.64 |
+| BANK/USDT:USDT | +26.75% | $93,843,710.82 |
+| SHIB/USDT:USDT | +12.90% | $79,883,879.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +3.21% | +3.11% |
-| LAB/USDT:USDT | below_1h_threshold | +3.19% | +3.09% |
-| RIF/USDT:USDT | below_1h_threshold | +1.81% | +1.71% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.56% | +1.45% |
-| BANK/USDT:USDT | below_1h_threshold | +1.27% | +1.17% |
+| LAB/USDT:USDT | below_1h_threshold | +3.05% | +2.98% |
+| BANK/USDT:USDT | below_1h_threshold | +3.02% | +2.95% |
+| RIF/USDT:USDT | below_1h_threshold | +2.22% | +2.15% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.71% | +0.64% |
+| TSLL/USDT:USDT | below_1h_threshold | +0.67% | +0.60% |
 
 ## 7. 次に見るべき不足
 
