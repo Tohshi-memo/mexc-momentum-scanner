@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T06:01:13.817357+00:00
+- generated_at: 2026-07-27T06:06:13.686833+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9597**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T06:01:06.864266+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65424.8
-- Funnel: target 903 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-27T06:06:06.919310+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=65472.1
+- Funnel: target 903 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +25.37% | $19,007,692.87 |
-| ON/USDT:USDT | +22.45% | $3,603,279.25 |
-| BTW/USDT:USDT | +21.49% | $1,184,341.13 |
-| DIA/USDT:USDT | +19.62% | $7,546,798.59 |
-| NIL/USDT:USDT | +15.36% | $1,554,284.18 |
+| AKE/USDT:USDT | +24.83% | $19,147,660.32 |
+| BTW/USDT:USDT | +22.30% | $1,213,470.93 |
+| ON/USDT:USDT | +21.13% | $3,643,821.91 |
+| DIA/USDT:USDT | +19.48% | $7,584,391.85 |
+| 4/USDT:USDT | +15.49% | $2,567,258.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DIA/USDT:USDT | below_1h_threshold | +1.06% | +1.07% |
-| ASXSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.96% |
-| NIL/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.63% |
-| LIGHT/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
+| 4/USDT:USDT | below_1h_threshold | +1.13% | +1.07% |
+| BTW/USDT:USDT | below_1h_threshold | +1.00% | +0.94% |
+| ASXSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
+| LDO/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
+| DIA/USDT:USDT | below_1h_threshold | +0.62% | +0.57% |
 
 ## 7. 次に見るべき不足
 
