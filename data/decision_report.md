@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T19:51:25.674400+00:00
+- generated_at: 2026-07-27T19:56:17.267298+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9647**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$106.92** / 初期 $100.00 (+6.92%)
-- 確定トレード: 145件 (TP 50 / SL 90 / EXP 5)
-- 最新: ON/USDT:USDT SL_HIT PnL -4.00% 残高後 $106.92
+- 残高: **$106.39** / 初期 $100.00 (+6.39%)
+- 確定トレード: 146件 (TP 50 / SL 91 / EXP 5)
+- 最新: RIF/USDT:USDT SL_HIT PnL -4.00% 残高後 $106.39
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.47** / 初期 $100.00 (+8.47%)
-- 確定: 667件 (Win 219 / Loss 254 / Flat 194) / pending 3件 / skip 447件
+- 確定: 667件 (Win 219 / Loss 254 / Flat 194) / pending 4件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000291 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.47
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T19:51:14.863676+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64910.7
-- Funnel: target 902 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T19:56:11.114403+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64942.3
+- Funnel: target 902 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +43.39% | $3,776,079.76 |
-| RIF/USDT:USDT | +26.87% | $5,730,186.56 |
-| AEON1/USDT:USDT | +15.55% | $1,440,612.90 |
-| SOONNETWORK/USDT:USDT | +10.83% | $1,007,389.61 |
-| ON/USDT:USDT | +6.34% | $9,889,752.16 |
+| LA/USDT:USDT | +40.29% | $3,823,078.79 |
+| RIF/USDT:USDT | +28.49% | $5,770,461.34 |
+| AEON1/USDT:USDT | +19.72% | $1,488,396.90 |
+| SOONNETWORK/USDT:USDT | +11.73% | $1,013,131.20 |
+| JIMOTHY/USDT:USDT | +6.97% | $2,037,664.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +4.37% | +4.28% |
-| BANK/USDT:USDT | below_1h_threshold | +4.34% | +4.25% |
-| CAP/USDT:USDT | below_1h_threshold | +3.37% | +3.28% |
-| AEON1/USDT:USDT | below_1h_threshold | +3.21% | +3.12% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.90% | +2.82% |
+| BANK/USDT:USDT | below_1h_threshold | +4.91% | +4.77% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.80% | +2.66% |
+| MUU/USDT:USDT | below_1h_threshold | +2.66% | +2.52% |
+| CAP/USDT:USDT | below_1h_threshold | +2.64% | +2.51% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.36% |
 
 ## 7. 次に見るべき不足
 
