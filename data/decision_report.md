@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T20:06:29.559306+00:00
+- generated_at: 2026-07-27T20:11:17.582144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9648**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T20:06:21.380028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64962.5
-- Funnel: target 902 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-27T20:11:12.748830+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64923.9
+- Funnel: target 902 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +39.40% | $3,879,977.77 |
-| BROCCOLIF3B/USDT:USDT | +34.83% | $1,012,467.46 |
-| RIF/USDT:USDT | +28.80% | $5,814,511.95 |
-| AEON1/USDT:USDT | +16.45% | $1,549,642.52 |
-| SOONNETWORK/USDT:USDT | +11.49% | $1,008,907.35 |
+| LA/USDT:USDT | +42.03% | $3,910,139.84 |
+| BROCCOLIF3B/USDT:USDT | +32.33% | $1,039,616.46 |
+| RIF/USDT:USDT | +30.29% | $5,860,733.54 |
+| AEON1/USDT:USDT | +17.58% | $1,572,938.36 |
+| SOONNETWORK/USDT:USDT | +12.81% | $1,018,306.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.28% |
-| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.80% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.39% | +2.38% |
-| BANK/USDT:USDT | below_1h_threshold | +2.34% | +2.34% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| BANK/USDT:USDT | below_1h_threshold | +4.72% | +4.77% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.34% |
+| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.86% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.22% | +2.27% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.15% |
 
 ## 7. 次に見るべき不足
 
