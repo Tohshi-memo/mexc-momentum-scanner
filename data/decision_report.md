@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T13:11:21.459279+00:00
+- generated_at: 2026-07-27T13:16:21.103018+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9630**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T13:11:13.345120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=65000.0
+- 更新: 2026-07-27T13:16:14.057006+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=64964.6
 - Funnel: target 902 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +54.43% | $5,955,658.57 |
-| AKE/USDT:USDT | +50.01% | $44,008,762.67 |
-| ON/USDT:USDT | +45.64% | $7,209,989.07 |
-| DIA/USDT:USDT | +20.59% | $10,828,995.93 |
-| TAG/USDT:USDT | +20.28% | $1,868,264.39 |
+| BTW/USDT:USDT | +53.14% | $6,069,447.52 |
+| AKE/USDT:USDT | +48.11% | $44,082,209.42 |
+| ON/USDT:USDT | +45.33% | $7,234,871.83 |
+| NIL/USDT:USDT | +22.29% | $3,955,453.94 |
+| DIA/USDT:USDT | +20.96% | $10,885,343.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +1.21% | +1.31% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.17% | +1.26% |
-| US/USDT:USDT | below_1h_threshold | +1.16% | +1.26% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.07% | +1.17% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.74% | +0.84% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.04% | +2.19% |
+| US/USDT:USDT | below_1h_threshold | +1.19% | +1.34% |
+| ENA/USDT:USDT | below_1h_threshold | +0.95% | +1.11% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.77% |
+| XPL/USDT:USDT | below_1h_threshold | +0.60% | +0.76% |
 
 ## 7. 次に見るべき不足
 
