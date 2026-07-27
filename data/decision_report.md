@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T08:36:10.844196+00:00
+- generated_at: 2026-07-27T08:41:16.003675+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9619**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.08** / 初期 $100.00 (+8.08%)
-- 確定: 643件 (Win 213 / Loss 245 / Flat 185) / pending 2件 / skip 443件
+- 確定: 643件 (Win 213 / Loss 245 / Flat 185) / pending 3件 / skip 443件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000221 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DIA/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $108.08
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T08:36:03.938223+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=65143.5
-- Funnel: target 901 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T08:41:10.106271+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=65136.3
+- Funnel: target 901 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.0 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +41.77% | $9,419,829.88 |
-| AKE/USDT:USDT | +38.90% | $36,129,381.86 |
-| BTW/USDT:USDT | +33.05% | $2,490,453.18 |
-| ON/USDT:USDT | +31.37% | $3,593,783.08 |
-| NIL/USDT:USDT | +20.39% | $1,985,682.60 |
+| AKE/USDT:USDT | +44.80% | $36,521,164.48 |
+| DIA/USDT:USDT | +39.33% | $9,508,640.50 |
+| ON/USDT:USDT | +32.94% | $3,637,997.04 |
+| BTW/USDT:USDT | +28.10% | $2,555,526.04 |
+| TAG/USDT:USDT | +19.66% | $1,007,070.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.79% | +3.87% |
-| DIA/USDT:USDT | below_1h_threshold | +3.35% | +3.44% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.25% | +3.33% |
-| NIL/USDT:USDT | below_1h_threshold | +2.99% | +3.07% |
-| LIT/USDT:USDT | below_1h_threshold | +1.94% | +2.03% |
+| ON/USDT:USDT | below_1h_threshold | +4.93% | +5.02% |
+| TAG/USDT:USDT | below_1h_threshold | +3.00% | +3.09% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.95% | +3.04% |
+| NIL/USDT:USDT | below_1h_threshold | +2.15% | +2.24% |
+| LIT/USDT:USDT | below_1h_threshold | +1.76% | +1.85% |
 
 ## 7. 次に見るべき不足
 
