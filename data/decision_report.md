@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T17:01:18.853070+00:00
+- generated_at: 2026-07-27T17:06:14.436170+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9638**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T17:01:10.518353+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64869.7
-- Funnel: target 902 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-27T17:06:09.156256+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=64780.6
+- Funnel: target 902 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +17.39% | $4,239,819.22 |
-| ON/USDT:USDT | +4.14% | $8,689,993.99 |
-| ALLO/USDT:USDT | +3.38% | $4,034,272.90 |
-| ACE/USDT:USDT | +3.38% | $1,102,152.75 |
-| 4/USDT:USDT | +2.40% | $3,177,652.85 |
+| RIF/USDT:USDT | +14.15% | $4,409,286.96 |
+| ALLO/USDT:USDT | +3.73% | $4,062,677.31 |
+| ON/USDT:USDT | +3.57% | $8,759,582.00 |
+| ACE/USDT:USDT | +2.74% | $1,112,202.03 |
+| DEXE/USDT:USDT | +2.68% | $16,324,422.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.57% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.45% |
-| RIF/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.91% |
-| CELHSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.40% | +3.54% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.71% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.59% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +1.05% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.02% |
 
 ## 7. 次に見るべき不足
 
