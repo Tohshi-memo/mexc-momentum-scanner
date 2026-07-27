@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T14:36:28.946682+00:00
+- generated_at: 2026-07-27T14:41:24.090375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9634**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T14:36:15.981697+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=64605.6
-- Funnel: target 902 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-07-27T14:41:14.095988+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.95% price=64569.5
+- Funnel: target 902 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1, 4h RSI 84.4 >= 65=1
+- Strict後reject: 4h RSI 74.0 >= 65=1, 4h RSI 83.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +48.02% | $45,220,669.06 |
-| ON/USDT:USDT | +41.09% | $8,070,991.56 |
-| BTW/USDT:USDT | +34.68% | $8,459,412.93 |
-| NIL/USDT:USDT | +26.39% | $4,459,533.76 |
-| TAG/USDT:USDT | +23.41% | $2,339,514.28 |
+| AKE/USDT:USDT | +49.85% | $45,265,257.01 |
+| ON/USDT:USDT | +49.08% | $8,207,185.85 |
+| BTW/USDT:USDT | +44.63% | $8,656,137.46 |
+| NIL/USDT:USDT | +25.94% | $4,480,756.29 |
+| TAG/USDT:USDT | +23.86% | $2,367,457.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.31% | +4.20% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +3.97% |
-| B/USDT:USDT | below_1h_threshold | +1.86% | +2.75% |
-| CELHSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +2.51% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.40% | +2.29% |
+| ON/USDT:USDT | below_1h_threshold | +3.94% | +4.89% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +4.02% |
+| NIL/USDT:USDT | below_1h_threshold | +3.01% | +3.96% |
+| B/USDT:USDT | below_1h_threshold | +2.24% | +3.19% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +2.56% |
 
 ## 7. 次に見るべき不足
 
