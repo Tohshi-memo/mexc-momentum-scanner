@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T06:21:18.047702+00:00
+- generated_at: 2026-07-27T06:26:17.679276+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9600**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$107.91** / 初期 $100.00 (+7.91%)
-- 確定: 627件 (Win 209 / Loss 240 / Flat 178) / pending 3件 / skip 440件
+- 確定: 627件 (Win 209 / Loss 240 / Flat 178) / pending 5件 / skip 441件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000172 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BANK/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $107.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T06:21:08.568466+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=65522.4
-- Funnel: target 903 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T06:26:11.075436+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=65490.9
+- Funnel: target 903 → liquid 148 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.4 >= 65=1, 4h RSI 68.7 >= 65=1, 4h RSI 75.8 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +26.59% | $1,364,314.47 |
-| DIA/USDT:USDT | +21.33% | $7,766,948.15 |
-| ON/USDT:USDT | +20.52% | $3,740,164.51 |
-| NIL/USDT:USDT | +14.07% | $1,610,597.09 |
-| 4/USDT:USDT | +13.96% | $2,584,636.51 |
+| AKE/USDT:USDT | +48.10% | $25,274,140.00 |
+| BANK/USDT:USDT | +27.05% | $72,856,978.47 |
+| BTW/USDT:USDT | +26.74% | $1,393,094.36 |
+| US/USDT:USDT | +26.41% | $1,459,262.58 |
+| DIA/USDT:USDT | +22.88% | $7,804,186.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +4.42% | +4.28% |
-| BTW/USDT:USDT | below_1h_threshold | +4.39% | +4.26% |
-| BANK/USDT:USDT | below_1h_threshold | +3.94% | +3.81% |
-| DIA/USDT:USDT | below_1h_threshold | +2.37% | +2.24% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.33% | +2.20% |
+| BTW/USDT:USDT | below_1h_threshold | +4.92% | +4.83% |
+| DIA/USDT:USDT | below_1h_threshold | +3.37% | +3.28% |
+| LDO/USDT:USDT | below_1h_threshold | +2.97% | +2.88% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.08% | +1.99% |
+| B/USDT:USDT | below_1h_threshold | +1.50% | +1.42% |
 
 ## 7. 次に見るべき不足
 
