@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T14:51:31.989500+00:00
+- generated_at: 2026-07-27T14:56:29.045905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9634**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T14:51:22.969472+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.78% price=64680.7
+- 更新: 2026-07-27T14:56:19.320761+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.85% price=64632.3
 - Funnel: target 902 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 84.9 >= 65=1
+- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 84.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +50.86% | $8,988,641.40 |
-| ON/USDT:USDT | +48.55% | $8,483,974.46 |
-| AKE/USDT:USDT | +48.12% | $45,389,782.89 |
-| TAG/USDT:USDT | +24.66% | $2,392,202.06 |
-| NIL/USDT:USDT | +23.88% | $4,557,519.66 |
+| AKE/USDT:USDT | +49.03% | $45,443,230.89 |
+| BTW/USDT:USDT | +47.59% | $9,155,280.10 |
+| ON/USDT:USDT | +45.94% | $8,531,658.21 |
+| NIL/USDT:USDT | +26.64% | $4,584,676.92 |
+| TAG/USDT:USDT | +24.75% | $2,399,084.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +3.85% |
-| B/USDT:USDT | below_1h_threshold | +3.00% | +3.78% |
-| ON/USDT:USDT | below_1h_threshold | +2.96% | +3.74% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.89% | +2.67% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +2.42% |
+| B/USDT:USDT | below_1h_threshold | +3.49% | +4.35% |
+| NIL/USDT:USDT | below_1h_threshold | +3.40% | +4.25% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +3.92% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.34% | +3.19% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.85% | +2.71% |
 
 ## 7. 次に見るべき不足
 
