@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T14:56:29.045905+00:00
+- generated_at: 2026-07-27T15:01:18.276441+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9634**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T14:56:19.320761+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.85% price=64632.3
-- Funnel: target 902 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1, 4h RSI 84.9 >= 65=1
+- 更新: 2026-07-27T15:01:11.214615+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64730.2
+- Funnel: target 902 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +49.03% | $45,443,230.89 |
-| BTW/USDT:USDT | +47.59% | $9,155,280.10 |
-| ON/USDT:USDT | +45.94% | $8,531,658.21 |
-| NIL/USDT:USDT | +26.64% | $4,584,676.92 |
-| TAG/USDT:USDT | +24.75% | $2,399,084.24 |
+| AKE/USDT:USDT | +49.38% | $45,080,795.36 |
+| BTW/USDT:USDT | +48.41% | $9,229,148.79 |
+| ON/USDT:USDT | +47.82% | $8,371,990.92 |
+| NIL/USDT:USDT | +24.38% | $4,584,396.67 |
+| BEAT/USDT:USDT | +23.95% | $26,361,212.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B/USDT:USDT | below_1h_threshold | +3.49% | +4.35% |
-| NIL/USDT:USDT | below_1h_threshold | +3.40% | +4.25% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +3.92% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.34% | +3.19% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.85% | +2.71% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.38% |
+| AAPU/USDT:USDT | below_1h_threshold | +1.65% | +1.55% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.86% | +0.76% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.71% |
+| MCDSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.66% |
 
 ## 7. 次に見るべき不足
 
