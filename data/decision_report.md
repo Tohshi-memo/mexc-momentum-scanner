@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T21:56:26.875173+00:00
+- generated_at: 2026-07-27T22:01:26.437102+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9653**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T21:56:19.728231+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=64824.0
-- Funnel: target 902 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.3 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-27T22:01:19.573899+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64750.9
+- Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +40.24% | $3,955,215.50 |
-| JIMOTHY/USDT:USDT | +15.74% | $1,894,466.84 |
-| SOONNETWORK/USDT:USDT | +14.14% | $1,227,435.21 |
-| KAITO/USDT:USDT | +8.53% | $7,069,169.45 |
-| SOXL/USDT:USDT | +6.37% | $60,451,340.25 |
+| COTI/USDT:USDT | +35.45% | $4,075,904.36 |
+| JIMOTHY/USDT:USDT | +16.02% | $1,716,944.39 |
+| SOONNETWORK/USDT:USDT | +14.00% | $1,191,000.78 |
+| KAITO/USDT:USDT | +8.97% | $6,847,330.45 |
+| AKE/USDT:USDT | +6.95% | $43,775,142.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +3.62% | +3.80% |
-| NIL/USDT:USDT | below_1h_threshold | +2.64% | +2.82% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.42% | +2.59% |
-| BANK/USDT:USDT | below_1h_threshold | +2.14% | +2.32% |
-| LDO/USDT:USDT | below_1h_threshold | +2.01% | +2.19% |
+| RIF/USDT:USDT | below_1h_threshold | +1.47% | +1.53% |
+| KORU/USDT:USDT | below_1h_threshold | +0.93% | +1.00% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.52% |
+| AKE/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.27% | +0.34% |
 
 ## 7. 次に見るべき不足
 
