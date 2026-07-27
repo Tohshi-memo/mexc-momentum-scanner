@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T23:41:16.842200+00:00
+- generated_at: 2026-07-27T23:46:08.927001+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9658**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T23:41:09.848058+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63722.7
+- 更新: 2026-07-27T23:46:02.017234+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63671.8
 - Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +47.20% | $6,615,849.56 |
-| JIMOTHY/USDT:USDT | +17.38% | $1,762,594.09 |
-| SOONNETWORK/USDT:USDT | +12.63% | $1,255,872.62 |
-| AEON1/USDT:USDT | +11.95% | $1,856,526.20 |
-| KAITO/USDT:USDT | +6.62% | $8,491,846.68 |
+| COTI/USDT:USDT | +46.21% | $6,671,419.20 |
+| JIMOTHY/USDT:USDT | +19.57% | $1,766,664.24 |
+| SOONNETWORK/USDT:USDT | +12.25% | $1,257,749.13 |
+| AEON1/USDT:USDT | +11.27% | $1,858,520.47 |
+| KAITO/USDT:USDT | +6.28% | $8,519,326.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRV/USDT:USDT | below_1h_threshold | +1.93% | +1.98% |
-| O/USDT:USDT | below_1h_threshold | +1.53% | +1.59% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.36% | +1.41% |
-| VVV/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
-| BANK/USDT:USDT | below_1h_threshold | +0.71% | +0.76% |
+| CRV/USDT:USDT | below_1h_threshold | +1.98% | +2.11% |
+| O/USDT:USDT | below_1h_threshold | +1.26% | +1.39% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.23% | +1.37% |
+| VVV/USDT:USDT | below_1h_threshold | +0.85% | +0.99% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.82% | +0.95% |
 
 ## 7. 次に見るべき不足
 
