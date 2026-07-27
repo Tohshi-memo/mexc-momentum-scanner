@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T14:16:28.217838+00:00
+- generated_at: 2026-07-27T14:21:29.040604+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9632**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T14:16:18.764972+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=65301.0
-- Funnel: target 902 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 0
+- 更新: 2026-07-27T14:21:18.855352+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=65054.5
+- Funnel: target 902 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 85.4 >= 65=1, 4h RSI 65.5 >= 65=1
+- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 84.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +46.54% | $44,831,758.22 |
-| BTW/USDT:USDT | +45.42% | $7,537,055.28 |
-| ON/USDT:USDT | +43.83% | $7,667,163.90 |
-| NIL/USDT:USDT | +28.07% | $4,318,895.47 |
-| TAG/USDT:USDT | +25.64% | $2,213,640.24 |
+| AKE/USDT:USDT | +46.82% | $44,905,793.50 |
+| BTW/USDT:USDT | +45.76% | $7,812,709.67 |
+| ON/USDT:USDT | +42.84% | $7,933,630.17 |
+| TAG/USDT:USDT | +25.91% | $2,250,682.96 |
+| NIL/USDT:USDT | +25.81% | $4,369,140.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.49% | +4.32% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +2.90% |
-| CAP/USDT:USDT | below_1h_threshold | +2.04% | +1.87% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.47% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.62% | +1.45% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +3.28% |
+| NIL/USDT:USDT | below_1h_threshold | +2.76% | +2.97% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.06% | +2.27% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.84% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.82% |
 
 ## 7. 次に見るべき不足
 
