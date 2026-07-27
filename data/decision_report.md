@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T09:41:14.160784+00:00
+- generated_at: 2026-07-27T09:46:14.065809+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9623**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T09:41:07.289835+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=65303.6
+- 更新: 2026-07-27T09:46:07.129494+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=65261.3
 - Funnel: target 901 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +50.37% | $10,398,469.64 |
-| AKE/USDT:USDT | +42.26% | $38,674,332.79 |
-| ON/USDT:USDT | +40.88% | $4,062,891.56 |
-| BTW/USDT:USDT | +27.65% | $2,827,317.27 |
-| NIL/USDT:USDT | +21.56% | $2,112,827.30 |
+| DIA/USDT:USDT | +47.18% | $10,516,512.33 |
+| AKE/USDT:USDT | +46.19% | $38,791,531.82 |
+| ON/USDT:USDT | +40.55% | $4,077,552.75 |
+| BTW/USDT:USDT | +25.86% | $2,852,061.77 |
+| NIL/USDT:USDT | +22.06% | $2,131,779.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DIA/USDT:USDT | below_1h_threshold | +4.00% | +3.75% |
-| ON/USDT:USDT | below_1h_threshold | +3.81% | +3.56% |
-| NIL/USDT:USDT | below_1h_threshold | +2.98% | +2.73% |
-| 4/USDT:USDT | below_1h_threshold | +2.48% | +2.23% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.29% | +2.04% |
+| NIL/USDT:USDT | below_1h_threshold | +3.45% | +3.27% |
+| ON/USDT:USDT | below_1h_threshold | +3.41% | +3.23% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.72% | +2.53% |
+| 4/USDT:USDT | below_1h_threshold | +2.27% | +2.08% |
+| PROM/USDT:USDT | below_1h_threshold | +2.20% | +2.01% |
 
 ## 7. 次に見るべき不足
 
