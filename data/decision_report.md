@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T00:21:16.255771+00:00
+- generated_at: 2026-07-27T00:26:12.784138+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9587**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T00:21:09.436711+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=65097.7
+- 更新: 2026-07-27T00:26:05.923736+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=65167.1
 - Funnel: target 898 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAFE/USDT:USDT | +16.11% | $1,294,437.10 |
-| ESP/USDT:USDT | +15.41% | $5,653,839.03 |
-| UB/USDT:USDT | +11.63% | $3,556,536.31 |
-| AKE/USDT:USDT | +10.22% | $17,392,186.98 |
-| 4/USDT:USDT | +9.85% | $2,235,008.22 |
+| ESP/USDT:USDT | +18.50% | $5,697,653.64 |
+| SAFE/USDT:USDT | +15.17% | $1,317,111.22 |
+| UB/USDT:USDT | +11.52% | $3,582,883.40 |
+| 4/USDT:USDT | +10.44% | $2,240,769.83 |
+| AKE/USDT:USDT | +9.95% | $17,415,887.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PRL/USDT:USDT | below_1h_threshold | +2.13% | +2.55% |
-| DIA/USDT:USDT | below_1h_threshold | +1.87% | +2.30% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.51% | +1.93% |
-| US/USDT:USDT | below_1h_threshold | +1.28% | +1.70% |
-| AKE/USDT:USDT | below_1h_threshold | +1.17% | +1.59% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.06% | +3.38% |
+| PRL/USDT:USDT | below_1h_threshold | +2.59% | +2.91% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +2.35% |
+| US/USDT:USDT | below_1h_threshold | +1.94% | +2.26% |
+| ESP/USDT:USDT | below_1h_threshold | +1.80% | +2.12% |
 
 ## 7. 次に見るべき不足
 
