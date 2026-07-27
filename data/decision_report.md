@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T01:56:15.146287+00:00
+- generated_at: 2026-07-27T02:01:21.123860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9588**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T01:56:09.834779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=65160.4
-- Funnel: target 898 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-27T02:01:14.168946+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65181.9
+- Funnel: target 898 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESP/USDT:USDT | +21.05% | $6,894,824.30 |
-| SAFE/USDT:USDT | +20.46% | $1,550,999.78 |
-| 4/USDT:USDT | +18.30% | $2,360,048.40 |
-| AKE/USDT:USDT | +12.06% | $17,702,899.91 |
-| CROSS/USDT:USDT | +9.91% | $2,123,059.36 |
+| SAFE/USDT:USDT | +26.11% | $1,620,039.45 |
+| ESP/USDT:USDT | +21.17% | $6,957,873.18 |
+| 4/USDT:USDT | +17.84% | $2,359,118.82 |
+| AKE/USDT:USDT | +13.48% | $16,742,938.68 |
+| CXMTSTOCK/USDT:USDT | +9.37% | $1,392,312.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.48% | +4.40% |
-| BOME/USDT:USDT | below_1h_threshold | +4.37% | +4.29% |
-| DIA/USDT:USDT | below_1h_threshold | +3.74% | +3.65% |
-| 4/USDT:USDT | below_1h_threshold | +3.28% | +3.20% |
-| AKE/USDT:USDT | below_1h_threshold | +3.03% | +2.95% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.28% |
+| B/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
+| LIT/USDT:USDT | below_1h_threshold | +0.48% | +0.47% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.43% | +0.43% |
+| DIA/USDT:USDT | below_1h_threshold | +0.42% | +0.42% |
 
 ## 7. 次に見るべき不足
 
