@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T10:11:12.535838+00:00
+- generated_at: 2026-07-27T10:16:10.495684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9623**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T10:11:05.807734+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=65212.5
-- Funnel: target 901 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-27T10:16:03.580773+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=65228.3
+- Funnel: target 901 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +44.85% | $39,166,269.60 |
-| ON/USDT:USDT | +39.66% | $4,390,424.52 |
-| DIA/USDT:USDT | +37.70% | $10,440,904.35 |
-| BTW/USDT:USDT | +29.40% | $2,906,458.93 |
-| NIL/USDT:USDT | +21.20% | $2,277,152.01 |
+| AKE/USDT:USDT | +46.54% | $39,266,240.56 |
+| ON/USDT:USDT | +39.46% | $4,428,537.60 |
+| DIA/USDT:USDT | +36.59% | $10,541,515.65 |
+| BTW/USDT:USDT | +31.49% | $2,932,686.94 |
+| NIL/USDT:USDT | +23.88% | $2,318,845.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +1.58% | +1.62% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.93% | +0.97% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.96% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.91% | +0.95% |
-| KORU/USDT:USDT | below_1h_threshold | +0.87% | +0.90% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.70% | +1.72% |
+| BTW/USDT:USDT | below_1h_threshold | +1.41% | +1.43% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.93% | +0.95% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.94% |
+| KORU/USDT:USDT | below_1h_threshold | +0.87% | +0.88% |
 
 ## 7. 次に見るべき不足
 
