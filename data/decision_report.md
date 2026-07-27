@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T19:56:17.267298+00:00
+- generated_at: 2026-07-27T20:01:18.505248+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9647**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T19:56:11.114403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64942.3
-- Funnel: target 902 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.9 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-27T20:01:11.565516+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=65028.4
+- Funnel: target 902 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +40.29% | $3,823,078.79 |
-| RIF/USDT:USDT | +28.49% | $5,770,461.34 |
-| AEON1/USDT:USDT | +19.72% | $1,488,396.90 |
-| SOONNETWORK/USDT:USDT | +11.73% | $1,013,131.20 |
-| JIMOTHY/USDT:USDT | +6.97% | $2,037,664.15 |
+| LA/USDT:USDT | +40.72% | $3,838,462.76 |
+| RIF/USDT:USDT | +29.10% | $5,754,375.42 |
+| AEON1/USDT:USDT | +17.92% | $1,503,791.35 |
+| SOXL/USDT:USDT | +7.01% | $60,163,137.31 |
+| ALLO/USDT:USDT | +6.10% | $4,429,587.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.91% | +4.77% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.80% | +2.66% |
-| MUU/USDT:USDT | below_1h_threshold | +2.66% | +2.52% |
-| CAP/USDT:USDT | below_1h_threshold | +2.64% | +2.51% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.36% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.18% |
+| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.70% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.22% | +2.11% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +1.99% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.08% | +1.97% |
 
 ## 7. 次に見るべき不足
 
