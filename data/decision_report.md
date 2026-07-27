@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T12:56:20.706655+00:00
+- generated_at: 2026-07-27T13:01:16.321823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9629**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T12:56:13.712077+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65067.2
-- Funnel: target 902 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-27T13:01:10.208222+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=65054.1
+- Funnel: target 902 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +53.12% | $5,683,113.62 |
-| AKE/USDT:USDT | +50.49% | $44,401,440.88 |
-| ON/USDT:USDT | +46.40% | $7,206,410.46 |
-| NIL/USDT:USDT | +30.02% | $3,809,621.46 |
-| DIA/USDT:USDT | +23.11% | $11,217,132.67 |
+| BTW/USDT:USDT | +53.59% | $5,757,717.70 |
+| AKE/USDT:USDT | +50.31% | $43,871,523.40 |
+| ON/USDT:USDT | +48.17% | $7,142,808.44 |
+| NIL/USDT:USDT | +24.66% | $3,800,850.63 |
+| DIA/USDT:USDT | +22.59% | $10,782,844.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +3.86% | +3.87% |
-| APE/USDT:USDT | below_1h_threshold | +2.69% | +2.70% |
-| BTW/USDT:USDT | below_1h_threshold | +2.51% | +2.52% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.00% | +2.01% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.97% | +1.98% |
+| NIL/USDT:USDT | below_1h_threshold | +1.45% | +1.46% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.44% | +1.45% |
+| B/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.63% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.50% |
 
 ## 7. 次に見るべき不足
 
