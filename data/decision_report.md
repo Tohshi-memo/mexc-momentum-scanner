@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T20:46:23.443132+00:00
+- generated_at: 2026-07-27T20:51:26.375711+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9650**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.80** / 初期 $100.00 (+8.80%)
-- 確定: 670件 (Win 220 / Loss 254 / Flat 196) / pending 3件 / skip 447件
+- 確定: 670件 (Win 220 / Loss 254 / Flat 196) / pending 4件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.80
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T20:46:16.242262+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64917.7
-- Funnel: target 902 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T20:51:18.800346+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64893.6
+- Funnel: target 902 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +33.06% | $4,256,352.24 |
-| RIF/USDT:USDT | +25.44% | $6,325,148.15 |
-| AEON1/USDT:USDT | +15.55% | $1,631,394.85 |
-| SOONNETWORK/USDT:USDT | +15.13% | $1,120,956.23 |
-| JIMOTHY/USDT:USDT | +10.87% | $1,988,571.09 |
+| COTI/USDT:USDT | +38.99% | $1,254,459.96 |
+| LA/USDT:USDT | +28.00% | $4,377,339.02 |
+| RIF/USDT:USDT | +26.29% | $6,371,703.83 |
+| AEON1/USDT:USDT | +15.44% | $1,632,504.17 |
+| SOONNETWORK/USDT:USDT | +15.13% | $1,136,955.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.35% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.53% | +3.60% |
-| NIL/USDT:USDT | below_1h_threshold | +3.48% | +3.54% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.05% | +3.11% |
-| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.87% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.42% | +4.52% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.39% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.05% | +3.15% |
+| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.91% |
+| NIL/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
 
 ## 7. 次に見るべき不足
 
