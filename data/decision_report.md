@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T00:41:10.215657+00:00
+- generated_at: 2026-07-27T00:46:08.173751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9588**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T00:41:03.404455+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=65113.1
+- 更新: 2026-07-27T00:46:02.445690+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=65145.1
 - Funnel: target 898 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESP/USDT:USDT | +20.50% | $5,780,495.35 |
-| SAFE/USDT:USDT | +15.02% | $1,352,800.66 |
-| UB/USDT:USDT | +14.08% | $3,677,311.08 |
-| 4/USDT:USDT | +12.79% | $2,263,679.18 |
-| CROSS/USDT:USDT | +9.58% | $2,040,343.66 |
+| ESP/USDT:USDT | +20.85% | $5,864,184.24 |
+| SAFE/USDT:USDT | +16.61% | $1,364,635.81 |
+| UB/USDT:USDT | +14.62% | $3,693,226.43 |
+| 4/USDT:USDT | +12.08% | $2,270,699.72 |
+| CROSS/USDT:USDT | +8.97% | $2,048,647.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESP/USDT:USDT | below_1h_threshold | +3.63% | +4.03% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.38% | +3.78% |
-| CROSS/USDT:USDT | below_1h_threshold | +2.87% | +3.27% |
-| BOME/USDT:USDT | below_1h_threshold | +2.76% | +3.16% |
-| 4/USDT:USDT | below_1h_threshold | +2.24% | +2.64% |
+| ESP/USDT:USDT | below_1h_threshold | +3.94% | +4.29% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.65% | +4.00% |
+| BOME/USDT:USDT | below_1h_threshold | +3.60% | +3.95% |
+| CROSS/USDT:USDT | below_1h_threshold | +2.41% | +2.76% |
+| UB/USDT:USDT | below_1h_threshold | +2.38% | +2.73% |
 
 ## 7. 次に見るべき不足
 
