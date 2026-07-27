@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T20:11:17.582144+00:00
+- generated_at: 2026-07-27T20:21:22.614637+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9648**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.80** / 初期 $100.00 (+8.80%)
-- 確定: 668件 (Win 220 / Loss 254 / Flat 194) / pending 3件 / skip 447件
+- 確定: 668件 (Win 220 / Loss 254 / Flat 194) / pending 4件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000343 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: QBTSSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.30% 残高後 $108.80
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T20:11:12.748830+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64923.9
-- Funnel: target 902 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T20:21:13.354701+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=64906.4
+- Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +42.03% | $3,910,139.84 |
-| BROCCOLIF3B/USDT:USDT | +32.33% | $1,039,616.46 |
-| RIF/USDT:USDT | +30.29% | $5,860,733.54 |
-| AEON1/USDT:USDT | +17.58% | $1,572,938.36 |
-| SOONNETWORK/USDT:USDT | +12.81% | $1,018,306.80 |
+| LA/USDT:USDT | +39.25% | $3,997,407.65 |
+| RIF/USDT:USDT | +27.38% | $5,961,378.07 |
+| AEON1/USDT:USDT | +13.52% | $1,607,544.70 |
+| SOONNETWORK/USDT:USDT | +13.52% | $1,028,361.97 |
+| JIMOTHY/USDT:USDT | +10.07% | $1,954,989.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.72% | +4.77% |
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.34% |
-| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.86% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.22% | +2.27% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.15% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.37% |
+| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.89% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.57% | +2.65% |
+| BANK/USDT:USDT | below_1h_threshold | +2.47% | +2.56% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.22% | +2.30% |
 
 ## 7. 次に見るべき不足
 
