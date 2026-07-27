@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T16:21:20.130696+00:00
+- generated_at: 2026-07-27T16:26:22.748841+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9635**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T16:21:10.859853+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64560.4
+- 更新: 2026-07-27T16:26:12.858204+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=64703.3
 - Funnel: target 902 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +5.15% | $1,828,133.67 |
-| RIF/USDT:USDT | +3.95% | $3,794,124.95 |
-| 4/USDT:USDT | +3.34% | $3,081,385.20 |
-| NIL/USDT:USDT | +2.78% | $5,161,091.36 |
-| INFQSTOCK/USDT:USDT | +1.84% | $1,216,328.98 |
+| RIF/USDT:USDT | +5.45% | $3,837,506.95 |
+| 4/USDT:USDT | +3.44% | $3,093,465.89 |
+| NIL/USDT:USDT | +2.90% | $5,175,094.82 |
+| SOXL/USDT:USDT | +2.82% | $50,491,043.94 |
+| INFQSTOCK/USDT:USDT | +2.63% | $1,218,244.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +3.95% | +3.88% |
-| 4/USDT:USDT | below_1h_threshold | +3.66% | +3.59% |
-| NIL/USDT:USDT | below_1h_threshold | +2.78% | +2.72% |
-| US/USDT:USDT | below_1h_threshold | +1.48% | +1.41% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.45% | +1.38% |
+| 4/USDT:USDT | below_1h_threshold | +3.45% | +3.16% |
+| NIL/USDT:USDT | below_1h_threshold | +2.91% | +2.62% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.25% | +1.96% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.00% | +1.71% |
+| AERO/USDT:USDT | below_1h_threshold | +1.60% | +1.31% |
 
 ## 7. 次に見るべき不足
 
