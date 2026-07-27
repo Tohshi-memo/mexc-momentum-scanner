@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T03:06:16.196229+00:00
+- generated_at: 2026-07-27T03:11:15.943015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9593**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T03:06:09.251201+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=65193.3
-- Funnel: target 898 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-27T03:11:09.028690+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=65157.0
+- Funnel: target 898 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +17.67% | $17,128,813.86 |
-| DIA/USDT:USDT | +17.48% | $6,941,371.30 |
-| NIL/USDT:USDT | +17.37% | $1,158,736.78 |
-| SAFE/USDT:USDT | +16.73% | $1,974,837.11 |
-| 4/USDT:USDT | +14.90% | $2,426,235.29 |
+| DIA/USDT:USDT | +20.22% | $6,990,508.91 |
+| AKE/USDT:USDT | +17.90% | $17,156,135.93 |
+| CXMTSTOCK/USDT:USDT | +16.53% | $1,852,625.00 |
+| 4/USDT:USDT | +14.78% | $2,429,278.76 |
+| NIL/USDT:USDT | +13.18% | $1,180,025.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +4.34% | +4.27% |
-| ON/USDT:USDT | below_1h_threshold | +1.33% | +1.25% |
-| ESP/USDT:USDT | below_1h_threshold | +1.27% | +1.19% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.74% |
-| CROSS/USDT:USDT | below_1h_threshold | +0.57% | +0.50% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +4.34% | +4.32% |
+| ESP/USDT:USDT | below_1h_threshold | +2.50% | +2.48% |
+| ON/USDT:USDT | below_1h_threshold | +1.45% | +1.44% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
+| DIA/USDT:USDT | below_1h_threshold | +1.00% | +0.98% |
 
 ## 7. 次に見るべき不足
 
