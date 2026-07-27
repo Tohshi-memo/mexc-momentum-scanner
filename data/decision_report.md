@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T15:16:21.035086+00:00
+- generated_at: 2026-07-27T15:21:18.467025+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9634**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T15:16:13.997805+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64688.1
+- 更新: 2026-07-27T15:21:11.340654+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64725.4
 - Funnel: target 902 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 71.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +48.43% | $8,500,784.62 |
-| AKE/USDT:USDT | +45.66% | $45,299,280.09 |
-| BTW/USDT:USDT | +43.68% | $9,559,506.90 |
-| BEAT/USDT:USDT | +25.04% | $26,914,765.35 |
-| TAG/USDT:USDT | +22.43% | $2,382,628.72 |
+| ON/USDT:USDT | +47.45% | $8,532,222.30 |
+| AKE/USDT:USDT | +46.38% | $45,458,248.59 |
+| BTW/USDT:USDT | +36.80% | $9,827,372.35 |
+| BEAT/USDT:USDT | +26.69% | $27,349,731.81 |
+| TAG/USDT:USDT | +23.05% | $2,389,601.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CELHSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.44% |
-| AAPU/USDT:USDT | below_1h_threshold | +1.65% | +1.61% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.55% | +1.51% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.38% | +1.34% |
-| ON/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.18% | +3.09% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.39% |
+| AAPU/USDT:USDT | below_1h_threshold | +1.65% | +1.56% |
+| 4/USDT:USDT | below_1h_threshold | +1.37% | +1.27% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.37% | +1.27% |
 
 ## 7. 次に見るべき不足
 
