@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T02:06:14.716463+00:00
+- generated_at: 2026-07-27T02:11:11.975793+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9589**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$106.40** / 初期 $100.00 (+6.40%)
-- 確定トレード: 143件 (TP 49 / SL 89 / EXP 5)
-- 最新: PRL/USDT:USDT TP_HIT PnL +8.00% 残高後 $106.40
+- 残高: **$107.46** / 初期 $100.00 (+7.46%)
+- 確定トレード: 144件 (TP 50 / SL 89 / EXP 5)
+- 最新: NIGHT/USDT:USDT TP_HIT PnL +4.75% 残高後 $107.46
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T02:06:06.611089+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=65163.0
+- 更新: 2026-07-27T02:11:05.158710+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=65164.2
 - Funnel: target 898 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAFE/USDT:USDT | +25.25% | $1,656,240.03 |
-| 4/USDT:USDT | +17.60% | $2,363,854.19 |
-| AKE/USDT:USDT | +17.44% | $16,948,770.50 |
-| ESP/USDT:USDT | +9.64% | $7,216,985.52 |
-| CXMTSTOCK/USDT:USDT | +8.67% | $1,468,184.50 |
+| AKE/USDT:USDT | +16.85% | $17,026,056.73 |
+| 4/USDT:USDT | +15.49% | $2,393,764.61 |
+| SAFE/USDT:USDT | +15.20% | $1,746,675.69 |
+| CXMTSTOCK/USDT:USDT | +11.30% | $1,507,113.81 |
+| ESP/USDT:USDT | +10.90% | $7,292,193.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.38% | +3.41% |
+| AKE/USDT:USDT | below_1h_threshold | +2.83% | +2.85% |
 | CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.31% |
-| B/USDT:USDT | below_1h_threshold | +0.80% | +0.82% |
-| LIT/USDT:USDT | below_1h_threshold | +0.79% | +0.82% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.50% | +0.53% |
+| UB/USDT:USDT | below_1h_threshold | +1.59% | +1.61% |
+| LIT/USDT:USDT | below_1h_threshold | +1.51% | +1.54% |
+| DIA/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
 
 ## 7. 次に見るべき不足
 
