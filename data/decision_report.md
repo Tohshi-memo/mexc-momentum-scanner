@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T21:26:14.267403+00:00
+- generated_at: 2026-07-27T21:31:19.534650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9653**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.61** / 初期 $100.00 (+8.61%)
-- 確定: 673件 (Win 220 / Loss 255 / Flat 198) / pending 2件 / skip 447件
+- 確定: 673件 (Win 220 / Loss 255 / Flat 198) / pending 3件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000192 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T21:26:07.454155+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64828.6
-- Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T21:31:12.419433+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64825.8
+- Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +36.07% | $3,162,324.17 |
-| JIMOTHY/USDT:USDT | +21.64% | $1,841,507.85 |
-| SOONNETWORK/USDT:USDT | +10.21% | $1,184,806.47 |
-| RIF/USDT:USDT | +9.11% | $6,844,094.86 |
-| AEON1/USDT:USDT | +8.45% | $1,735,024.85 |
+| COTI/USDT:USDT | +39.05% | $3,281,975.85 |
+| JIMOTHY/USDT:USDT | +22.01% | $1,859,894.94 |
+| SOONNETWORK/USDT:USDT | +11.16% | $1,186,161.22 |
+| RIF/USDT:USDT | +7.46% | $6,887,243.01 |
+| AEON1/USDT:USDT | +6.98% | $1,760,510.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.87% | +5.04% |
-| BANK/USDT:USDT | below_1h_threshold | +3.94% | +4.11% |
-| NIL/USDT:USDT | below_1h_threshold | +2.38% | +2.55% |
-| US/USDT:USDT | below_1h_threshold | +2.31% | +2.48% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.69% | +1.86% |
+| BANK/USDT:USDT | below_1h_threshold | +4.37% | +4.55% |
+| NIL/USDT:USDT | below_1h_threshold | +3.41% | +3.58% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.71% | +1.89% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.33% | +1.51% |
+| US/USDT:USDT | below_1h_threshold | +1.30% | +1.48% |
 
 ## 7. 次に見るべき不足
 
