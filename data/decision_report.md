@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T02:11:11.975793+00:00
+- generated_at: 2026-07-27T02:16:16.589119+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9589**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.21** / 初期 $100.00 (+8.21%)
-- 確定: 617件 (Win 207 / Loss 238 / Flat 172) / pending 0件 / skip 440件
+- 確定: 617件 (Win 207 / Loss 238 / Flat 172) / pending 1件 / skip 440件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000057 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESP/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $108.21
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T02:11:05.158710+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=65164.2
-- Funnel: target 898 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T02:16:09.275478+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=65160.0
+- Funnel: target 898 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.5 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +16.85% | $17,026,056.73 |
-| 4/USDT:USDT | +15.49% | $2,393,764.61 |
-| SAFE/USDT:USDT | +15.20% | $1,746,675.69 |
-| CXMTSTOCK/USDT:USDT | +11.30% | $1,507,113.81 |
-| ESP/USDT:USDT | +10.90% | $7,292,193.10 |
+| SAFE/USDT:USDT | +18.99% | $1,798,214.99 |
+| AKE/USDT:USDT | +17.23% | $17,183,834.58 |
+| 4/USDT:USDT | +14.31% | $2,405,982.25 |
+| UB/USDT:USDT | +11.67% | $3,967,531.42 |
+| CXMTSTOCK/USDT:USDT | +10.16% | $1,554,513.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.83% | +2.85% |
+| AKE/USDT:USDT | below_1h_threshold | +3.22% | +3.25% |
+| UB/USDT:USDT | below_1h_threshold | +2.49% | +2.52% |
 | CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.31% |
-| UB/USDT:USDT | below_1h_threshold | +1.59% | +1.61% |
-| LIT/USDT:USDT | below_1h_threshold | +1.51% | +1.54% |
-| DIA/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
+| LIT/USDT:USDT | below_1h_threshold | +1.07% | +1.10% |
+| B/USDT:USDT | below_1h_threshold | +0.95% | +0.98% |
 
 ## 7. 次に見るべき不足
 
