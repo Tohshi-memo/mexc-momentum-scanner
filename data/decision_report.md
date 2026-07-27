@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T10:01:11.553976+00:00
+- generated_at: 2026-07-27T10:06:14.336379+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9623**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T10:01:04.769678+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=65225.6
-- Funnel: target 901 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-27T10:06:07.594421+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=65208.8
+- Funnel: target 901 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +47.99% | $38,842,846.98 |
-| ON/USDT:USDT | +43.39% | $4,246,239.91 |
-| DIA/USDT:USDT | +42.44% | $10,272,163.51 |
-| BTW/USDT:USDT | +29.63% | $2,890,873.66 |
-| NIL/USDT:USDT | +22.73% | $2,227,852.38 |
+| AKE/USDT:USDT | +47.26% | $39,012,185.77 |
+| ON/USDT:USDT | +40.69% | $4,312,631.68 |
+| DIA/USDT:USDT | +38.59% | $10,400,315.60 |
+| BTW/USDT:USDT | +29.39% | $2,902,032.21 |
+| NIL/USDT:USDT | +22.43% | $2,256,680.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.94% |
-| KORU/USDT:USDT | below_1h_threshold | +0.87% | +0.88% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
-| ON/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| AKE/USDT:USDT | below_1h_threshold | +0.49% | +0.51% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.90% | +0.94% |
+| KORU/USDT:USDT | below_1h_threshold | +0.87% | +0.91% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.79% |
+| BOME/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
 
 ## 7. 次に見るべき不足
 
