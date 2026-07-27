@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T20:36:16.710205+00:00
+- generated_at: 2026-07-27T20:41:25.856452+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9650**
 
@@ -70,30 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T20:36:09.797932+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64992.6
-- Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T20:41:18.886790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64921.4
+- Funnel: target 902 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +36.67% | $4,123,307.26 |
-| RIF/USDT:USDT | +28.32% | $6,151,108.95 |
-| AEON1/USDT:USDT | +15.55% | $1,614,999.35 |
-| SOONNETWORK/USDT:USDT | +15.42% | $1,075,613.42 |
-| ALLO/USDT:USDT | +8.84% | $4,855,673.51 |
+| LA/USDT:USDT | +36.08% | $4,166,207.45 |
+| RIF/USDT:USDT | +26.89% | $6,205,034.68 |
+| AEON1/USDT:USDT | +15.55% | $1,629,138.47 |
+| SOONNETWORK/USDT:USDT | +15.08% | $1,099,210.85 |
+| JIMOTHY/USDT:USDT | +10.01% | $1,980,645.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.46% | +4.41% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.30% | +4.24% |
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.23% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.30% | +3.25% |
-| NIL/USDT:USDT | below_1h_threshold | +2.92% | +2.87% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.34% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.12% | +3.18% |
+| BANK/USDT:USDT | below_1h_threshold | +3.09% | +3.15% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.01% | +3.06% |
+| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.87% |
 
 ## 7. 次に見るべき不足
 
