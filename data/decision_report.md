@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T08:51:30.238535+00:00
+- generated_at: 2026-07-27T08:56:23.857351+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9620**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T08:51:20.212469+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=65144.9
-- Funnel: target 901 → liquid 155 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1, 4h RSI 91.8 >= 65=1, 4h RSI 74.5 >= 65=1
+- 更新: 2026-07-27T08:56:15.682559+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=65155.1
+- Funnel: target 901 → liquid 155 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 91.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +45.50% | $37,357,722.26 |
-| DIA/USDT:USDT | +45.25% | $9,708,614.00 |
-| ON/USDT:USDT | +34.23% | $3,683,055.39 |
-| BTW/USDT:USDT | +31.67% | $2,594,075.12 |
-| TAG/USDT:USDT | +19.30% | $1,040,262.77 |
+| AKE/USDT:USDT | +45.56% | $37,609,021.87 |
+| DIA/USDT:USDT | +44.07% | $9,792,267.21 |
+| ON/USDT:USDT | +34.80% | $3,701,005.31 |
+| BTW/USDT:USDT | +30.15% | $2,601,432.78 |
+| TAG/USDT:USDT | +19.39% | $1,044,210.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.39% | +3.46% |
-| TAG/USDT:USDT | below_1h_threshold | +2.77% | +2.85% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.12% | +2.20% |
-| LIT/USDT:USDT | below_1h_threshold | +1.66% | +1.74% |
-| KAS/USDT:USDT | below_1h_threshold | +1.48% | +1.56% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.86% | +4.93% |
+| TAG/USDT:USDT | below_1h_threshold | +2.77% | +2.83% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.14% | +2.20% |
+| BANK/USDT:USDT | below_1h_threshold | +2.08% | +2.14% |
+| KAS/USDT:USDT | below_1h_threshold | +1.59% | +1.65% |
 
 ## 7. 次に見るべき不足
 
