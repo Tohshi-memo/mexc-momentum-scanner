@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T16:11:36.347165+00:00
+- generated_at: 2026-07-27T16:16:25.779089+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9635**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T16:11:23.707487+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=64638.3
+- 更新: 2026-07-27T16:16:14.009140+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64547.8
 - Funnel: target 902 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +10.87% | $3,541,188.97 |
-| JIMOTHY/USDT:USDT | +5.86% | $1,812,239.13 |
-| ALLO/USDT:USDT | +3.16% | $4,053,868.18 |
-| SNXX/USDT:USDT | +2.58% | $2,967,544.72 |
-| INFQSTOCK/USDT:USDT | +2.33% | $1,215,030.73 |
+| JIMOTHY/USDT:USDT | +9.27% | $1,820,284.43 |
+| RIF/USDT:USDT | +8.21% | $3,655,540.67 |
+| ALLO/USDT:USDT | +2.65% | $4,086,134.19 |
+| INFQSTOCK/USDT:USDT | +2.10% | $1,215,351.00 |
+| 4/USDT:USDT | +2.08% | $3,071,526.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.16% | +2.98% |
-| NIL/USDT:USDT | below_1h_threshold | +2.15% | +1.96% |
-| EUL/USDT:USDT | below_1h_threshold | +1.73% | +1.54% |
-| 4/USDT:USDT | below_1h_threshold | +1.67% | +1.48% |
-| ESP/USDT:USDT | below_1h_threshold | +1.65% | +1.46% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.56% | +2.51% |
+| 4/USDT:USDT | below_1h_threshold | +2.30% | +2.25% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.08% | +2.04% |
+| NIL/USDT:USDT | below_1h_threshold | +1.61% | +1.56% |
+| ESP/USDT:USDT | below_1h_threshold | +1.60% | +1.55% |
 
 ## 7. 次に見るべき不足
 
