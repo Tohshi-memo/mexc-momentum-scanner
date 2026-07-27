@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T15:56:16.030833+00:00
+- generated_at: 2026-07-27T16:01:15.835256+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9635**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T15:56:09.447134+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=64578.5
-- Funnel: target 902 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 67.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-27T16:01:08.944820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64526.9
+- Funnel: target 902 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +49.33% | $46,131,690.17 |
-| ON/USDT:USDT | +48.56% | $8,915,096.21 |
-| BTW/USDT:USDT | +30.95% | $10,628,531.60 |
-| BEAT/USDT:USDT | +25.24% | $29,757,608.74 |
-| TAG/USDT:USDT | +23.50% | $2,448,106.07 |
+| JIMOTHY/USDT:USDT | +3.32% | $1,802,791.07 |
+| RIF/USDT:USDT | +2.37% | $3,349,332.37 |
+| BANK/USDT:USDT | +1.51% | $98,900,029.92 |
+| AKE/USDT:USDT | +0.57% | $44,951,282.27 |
+| ALLO/USDT:USDT | +0.43% | $3,965,647.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +3.75% | +3.88% |
-| CELHSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.61% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.04% | +2.17% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.86% | +1.99% |
-| AAPU/USDT:USDT | below_1h_threshold | +1.65% | +1.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.22% | +3.21% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.00% | +2.99% |
+| RIF/USDT:USDT | below_1h_threshold | +2.65% | +2.63% |
+| BANK/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
+| AKE/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
 
 ## 7. 次に見るべき不足
 
