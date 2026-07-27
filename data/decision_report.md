@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T02:36:17.735708+00:00
+- generated_at: 2026-07-27T02:41:19.042269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9590**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T02:36:10.703659+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=65106.1
+- 更新: 2026-07-27T02:41:11.866377+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=65213.7
 - Funnel: target 898 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 86.5 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAFE/USDT:USDT | +20.32% | $1,885,855.17 |
-| NIL/USDT:USDT | +18.60% | $1,018,844.13 |
-| AKE/USDT:USDT | +18.36% | $17,677,689.61 |
-| DIA/USDT:USDT | +18.22% | $6,673,485.94 |
-| 4/USDT:USDT | +15.72% | $2,419,977.03 |
+| SAFE/USDT:USDT | +22.06% | $1,899,565.95 |
+| DIA/USDT:USDT | +19.55% | $6,711,634.95 |
+| AKE/USDT:USDT | +17.38% | $17,737,687.78 |
+| NIL/USDT:USDT | +17.03% | $1,055,839.47 |
+| 4/USDT:USDT | +16.07% | $2,423,451.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.94% | +5.05% |
-| BANK/USDT:USDT | below_1h_threshold | +4.38% | +4.50% |
-| NIL/USDT:USDT | below_1h_threshold | +4.10% | +4.22% |
-| AKE/USDT:USDT | below_1h_threshold | +3.95% | +4.06% |
-| US/USDT:USDT | below_1h_threshold | +3.37% | +3.48% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.94% | +4.89% |
+| US/USDT:USDT | below_1h_threshold | +4.89% | +4.83% |
+| UB/USDT:USDT | below_1h_threshold | +3.47% | +3.42% |
+| AKE/USDT:USDT | below_1h_threshold | +3.45% | +3.40% |
+| CROSS/USDT:USDT | below_1h_threshold | +2.73% | +2.68% |
 
 ## 7. 次に見るべき不足
 
