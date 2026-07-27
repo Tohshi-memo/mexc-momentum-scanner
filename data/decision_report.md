@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T16:41:17.426756+00:00
+- generated_at: 2026-07-27T16:46:18.955589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9637**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T16:41:08.212195+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.63% price=64921.0
+- 更新: 2026-07-27T16:46:09.665419+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.59% price=64896.1
 - Funnel: target 902 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +10.71% | $3,985,965.04 |
-| SOXL/USDT:USDT | +3.54% | $53,133,643.50 |
-| INFQSTOCK/USDT:USDT | +3.01% | $1,443,428.72 |
-| AERO/USDT:USDT | +2.87% | $1,160,626.96 |
-| SNXX/USDT:USDT | +2.66% | $3,143,681.86 |
+| RIF/USDT:USDT | +10.21% | $4,084,766.38 |
+| ON/USDT:USDT | +3.95% | $8,564,679.26 |
+| NIL/USDT:USDT | +3.32% | $5,291,594.24 |
+| AERO/USDT:USDT | +2.85% | $1,161,218.29 |
+| 4/USDT:USDT | +2.82% | $3,146,812.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +2.88% | +2.25% |
-| NIL/USDT:USDT | below_1h_threshold | +2.71% | +2.08% |
-| ON/USDT:USDT | below_1h_threshold | +2.44% | +1.82% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.25% | +1.62% |
-| VVV/USDT:USDT | below_1h_threshold | +2.12% | +1.49% |
+| ON/USDT:USDT | below_1h_threshold | +3.95% | +3.37% |
+| NIL/USDT:USDT | below_1h_threshold | +3.00% | +2.42% |
+| 4/USDT:USDT | below_1h_threshold | +2.93% | +2.34% |
+| AERO/USDT:USDT | below_1h_threshold | +2.86% | +2.27% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.35% | +1.76% |
 
 ## 7. 次に見るべき不足
 
