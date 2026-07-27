@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T14:06:23.700378+00:00
+- generated_at: 2026-07-27T14:11:27.264634+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9631**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T14:06:15.578430+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=65275.6
-- Funnel: target 902 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 0
+- 更新: 2026-07-27T14:11:17.300091+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=65256.6
+- Funnel: target 902 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1, 4h RSI 86.2 >= 65=1, 4h RSI 68.1 >= 65=1
+- Strict後reject: 4h RSI 68.1 >= 65=1, 4h RSI 85.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +54.95% | $7,143,284.32 |
-| AKE/USDT:USDT | +45.63% | $44,538,190.51 |
-| ON/USDT:USDT | +43.23% | $7,594,717.69 |
-| TAG/USDT:USDT | +25.02% | $2,188,583.04 |
-| NIL/USDT:USDT | +23.85% | $4,209,037.26 |
+| BTW/USDT:USDT | +53.86% | $7,274,152.58 |
+| AKE/USDT:USDT | +49.02% | $44,659,328.29 |
+| ON/USDT:USDT | +44.29% | $7,605,554.73 |
+| NIL/USDT:USDT | +25.67% | $4,267,489.69 |
+| TAG/USDT:USDT | +25.55% | $2,197,214.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +2.94% |
-| 4/USDT:USDT | below_1h_threshold | +1.65% | +1.51% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.51% |
-| CELHSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.48% |
-| BKNGSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.15% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.07% | +2.97% |
+| NIL/USDT:USDT | below_1h_threshold | +2.60% | +2.50% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.53% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.51% |
+| BKNGSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.18% |
 
 ## 7. 次に見るべき不足
 
