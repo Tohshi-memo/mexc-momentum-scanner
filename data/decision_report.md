@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T10:56:18.491270+00:00
+- generated_at: 2026-07-27T11:01:14.190944+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9627**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T10:56:11.598948+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=65328.9
-- Funnel: target 902 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.5 >= 65=1, 4h RSI 78.5 >= 65=1, 4h RSI 72.7 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-27T11:01:08.779024+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=65279.7
+- Funnel: target 902 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +52.77% | $40,657,848.99 |
-| BTW/USDT:USDT | +43.91% | $3,451,449.72 |
-| ON/USDT:USDT | +41.15% | $5,379,404.89 |
-| DIA/USDT:USDT | +28.22% | $11,288,169.33 |
-| NIL/USDT:USDT | +28.12% | $2,759,662.14 |
+| AKE/USDT:USDT | +52.38% | $40,639,511.23 |
+| ON/USDT:USDT | +47.83% | $5,541,858.65 |
+| BTW/USDT:USDT | +41.56% | $3,517,523.87 |
+| NIL/USDT:USDT | +27.90% | $2,737,223.63 |
+| DIA/USDT:USDT | +26.88% | $10,746,055.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.44% | +4.30% |
-| AKE/USDT:USDT | below_1h_threshold | +3.70% | +3.56% |
-| B/USDT:USDT | below_1h_threshold | +3.53% | +3.39% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.76% | +2.62% |
-| BANK/USDT:USDT | below_1h_threshold | +2.47% | +2.33% |
+| ON/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
+| AKE/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.44% |
+| UB/USDT:USDT | below_1h_threshold | +0.30% | +0.36% |
+| PROM/USDT:USDT | below_1h_threshold | +0.25% | +0.30% |
 
 ## 7. 次に見るべき不足
 
