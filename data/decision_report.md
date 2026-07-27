@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T20:41:25.856452+00:00
+- generated_at: 2026-07-27T20:46:23.443132+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9650**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T20:41:18.886790+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64921.4
+- 更新: 2026-07-27T20:46:16.242262+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64917.7
 - Funnel: target 902 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,20 +80,20 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +36.08% | $4,166,207.45 |
-| RIF/USDT:USDT | +26.89% | $6,205,034.68 |
-| AEON1/USDT:USDT | +15.55% | $1,629,138.47 |
-| SOONNETWORK/USDT:USDT | +15.08% | $1,099,210.85 |
-| JIMOTHY/USDT:USDT | +10.01% | $1,980,645.89 |
+| LA/USDT:USDT | +33.06% | $4,256,352.24 |
+| RIF/USDT:USDT | +25.44% | $6,325,148.15 |
+| AEON1/USDT:USDT | +15.55% | $1,631,394.85 |
+| SOONNETWORK/USDT:USDT | +15.13% | $1,120,956.23 |
+| JIMOTHY/USDT:USDT | +10.87% | $1,988,571.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.34% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.12% | +3.18% |
-| BANK/USDT:USDT | below_1h_threshold | +3.09% | +3.15% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.01% | +3.06% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +4.29% | +4.35% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.53% | +3.60% |
+| NIL/USDT:USDT | below_1h_threshold | +3.48% | +3.54% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.05% | +3.11% |
 | KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.87% |
 
 ## 7. 次に見るべき不足
