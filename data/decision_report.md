@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T19:11:21.253609+00:00
+- generated_at: 2026-07-27T19:16:15.951603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9645**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T19:11:14.316827+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=64983.1
+- 更新: 2026-07-27T19:16:09.126853+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=64959.2
 - Funnel: target 902 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LA/USDT:USDT | +43.60% | $3,409,682.85 |
-| RIF/USDT:USDT | +17.83% | $5,296,865.86 |
-| AEON1/USDT:USDT | +14.54% | $1,196,317.74 |
-| JIMOTHY/USDT:USDT | +14.10% | $1,972,267.40 |
-| ALLO/USDT:USDT | +7.99% | $4,382,868.02 |
+| LA/USDT:USDT | +43.49% | $3,448,437.57 |
+| RIF/USDT:USDT | +17.35% | $5,317,269.69 |
+| AEON1/USDT:USDT | +13.97% | $1,220,794.56 |
+| JIMOTHY/USDT:USDT | +10.39% | $1,976,714.64 |
+| ALLO/USDT:USDT | +7.71% | $4,389,675.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.39% | +3.19% |
-| RIF/USDT:USDT | below_1h_threshold | +3.17% | +2.97% |
-| MUU/USDT:USDT | below_1h_threshold | +2.66% | +2.46% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.30% |
-| KORU/USDT:USDT | below_1h_threshold | +2.32% | +2.12% |
+| RIF/USDT:USDT | below_1h_threshold | +2.74% | +2.58% |
+| MUU/USDT:USDT | below_1h_threshold | +2.66% | +2.49% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.50% | +2.33% |
+| KORU/USDT:USDT | below_1h_threshold | +2.32% | +2.16% |
+| AERO/USDT:USDT | below_1h_threshold | +2.01% | +1.85% |
 
 ## 7. 次に見るべき不足
 
