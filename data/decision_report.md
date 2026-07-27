@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T08:56:23.857351+00:00
+- generated_at: 2026-07-27T09:01:19.588088+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9620**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T08:56:15.682559+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=65155.1
-- Funnel: target 901 → liquid 155 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 91.5 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-27T09:01:12.729082+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=65086.0
+- Funnel: target 901 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +45.56% | $37,609,021.87 |
-| DIA/USDT:USDT | +44.07% | $9,792,267.21 |
-| ON/USDT:USDT | +34.80% | $3,701,005.31 |
-| BTW/USDT:USDT | +30.15% | $2,601,432.78 |
-| TAG/USDT:USDT | +19.39% | $1,044,210.14 |
+| AKE/USDT:USDT | +44.03% | $37,462,337.71 |
+| DIA/USDT:USDT | +43.03% | $9,648,790.84 |
+| ON/USDT:USDT | +36.60% | $3,682,133.09 |
+| BTW/USDT:USDT | +31.21% | $2,593,838.67 |
+| TAG/USDT:USDT | +20.01% | $1,039,513.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.86% | +4.93% |
-| TAG/USDT:USDT | below_1h_threshold | +2.77% | +2.83% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.14% | +2.20% |
-| BANK/USDT:USDT | below_1h_threshold | +2.08% | +2.14% |
-| KAS/USDT:USDT | below_1h_threshold | +1.59% | +1.65% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.81% | +1.89% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.23% | +1.32% |
+| NIL/USDT:USDT | below_1h_threshold | +0.97% | +1.05% |
+| QBTSSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.99% |
+| ASXSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.75% |
 
 ## 7. 次に見るべき不足
 
