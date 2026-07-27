@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T03:56:09.821824+00:00
+- generated_at: 2026-07-27T04:01:16.712675+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9593**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.29** / 初期 $100.00 (+8.29%)
-- 確定: 620件 (Win 209 / Loss 238 / Flat 173) / pending 5件 / skip 440件
+- 確定: 620件 (Win 209 / Loss 238 / Flat 173) / pending 6件 / skip 440件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000067 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DIA/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.04% 残高後 $108.29
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T03:56:03.075594+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=65280.7
-- Funnel: target 898 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T04:01:11.083068+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=65256.1
+- Funnel: target 898 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.7 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +20.37% | $7,358,490.03 |
-| CXMTSTOCK/USDT:USDT | +19.07% | $2,160,231.37 |
-| 4/USDT:USDT | +17.60% | $2,449,100.99 |
-| AKE/USDT:USDT | +17.42% | $17,449,521.09 |
-| UB/USDT:USDT | +13.40% | $4,108,898.44 |
+| DIA/USDT:USDT | +21.03% | $7,293,440.79 |
+| CXMTSTOCK/USDT:USDT | +18.94% | $2,171,727.52 |
+| 4/USDT:USDT | +18.19% | $2,440,885.90 |
+| AKE/USDT:USDT | +17.34% | $16,805,670.32 |
+| UB/USDT:USDT | +14.00% | $4,114,071.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESP/USDT:USDT | below_1h_threshold | +4.48% | +4.27% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +4.34% | +4.13% |
-| PROM/USDT:USDT | below_1h_threshold | +3.16% | +2.95% |
-| ON/USDT:USDT | below_1h_threshold | +3.12% | +2.91% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.81% | +2.61% |
+| CROSS/USDT:USDT | below_1h_threshold | +0.87% | +0.88% |
+| DIA/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
+| UB/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
+| NIL/USDT:USDT | below_1h_threshold | +0.28% | +0.29% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.21% | +0.22% |
 
 ## 7. 次に見るべき不足
 
