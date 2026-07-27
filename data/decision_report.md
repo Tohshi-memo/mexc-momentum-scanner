@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T22:01:26.437102+00:00
+- generated_at: 2026-07-27T22:06:18.225603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9653**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T22:01:19.573899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64750.9
+- 更新: 2026-07-27T22:06:11.438980+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64671.5
 - Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +35.45% | $4,075,904.36 |
-| JIMOTHY/USDT:USDT | +16.02% | $1,716,944.39 |
-| SOONNETWORK/USDT:USDT | +14.00% | $1,191,000.78 |
-| KAITO/USDT:USDT | +8.97% | $6,847,330.45 |
-| AKE/USDT:USDT | +6.95% | $43,775,142.66 |
+| COTI/USDT:USDT | +38.84% | $4,166,817.56 |
+| SOONNETWORK/USDT:USDT | +12.53% | $1,193,874.71 |
+| JIMOTHY/USDT:USDT | +11.92% | $1,724,438.42 |
+| KAITO/USDT:USDT | +8.42% | $6,986,278.15 |
+| AEON1/USDT:USDT | +7.32% | $1,798,821.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +1.47% | +1.53% |
-| KORU/USDT:USDT | below_1h_threshold | +0.93% | +1.00% |
-| QBTSSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.52% |
-| AKE/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.27% | +0.34% |
+| COTI/USDT:USDT | below_1h_threshold | +1.28% | +1.46% |
+| RIF/USDT:USDT | below_1h_threshold | +1.28% | +1.46% |
+| AEON1/USDT:USDT | below_1h_threshold | +1.17% | +1.36% |
+| KORU/USDT:USDT | below_1h_threshold | +0.93% | +1.12% |
+| VANRY/USDT:USDT | below_1h_threshold | +0.55% | +0.73% |
 
 ## 7. 次に見るべき不足
 
