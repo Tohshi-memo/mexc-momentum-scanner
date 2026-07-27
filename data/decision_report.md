@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T11:01:14.190944+00:00
+- generated_at: 2026-07-27T11:06:16.687873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9627**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T11:01:08.779024+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=65279.7
+- 更新: 2026-07-27T11:06:09.797739+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=65264.5
 - Funnel: target 902 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +52.38% | $40,639,511.23 |
-| ON/USDT:USDT | +47.83% | $5,541,858.65 |
-| BTW/USDT:USDT | +41.56% | $3,517,523.87 |
-| NIL/USDT:USDT | +27.90% | $2,737,223.63 |
-| DIA/USDT:USDT | +26.88% | $10,746,055.07 |
+| AKE/USDT:USDT | +54.20% | $41,273,637.74 |
+| ON/USDT:USDT | +48.78% | $5,682,814.10 |
+| BTW/USDT:USDT | +42.98% | $3,588,635.69 |
+| NIL/USDT:USDT | +27.79% | $2,755,293.54 |
+| DIA/USDT:USDT | +26.59% | $10,810,705.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
-| AKE/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.44% |
-| UB/USDT:USDT | below_1h_threshold | +0.30% | +0.36% |
-| PROM/USDT:USDT | below_1h_threshold | +0.25% | +0.30% |
+| AKE/USDT:USDT | below_1h_threshold | +1.92% | +2.00% |
+| ON/USDT:USDT | below_1h_threshold | +1.58% | +1.66% |
+| APE/USDT:USDT | below_1h_threshold | +0.45% | +0.52% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.46% |
+| PROM/USDT:USDT | below_1h_threshold | +0.34% | +0.42% |
 
 ## 7. 次に見るべき不足
 
