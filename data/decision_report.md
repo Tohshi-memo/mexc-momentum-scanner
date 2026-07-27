@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T06:06:13.686833+00:00
+- generated_at: 2026-07-27T06:11:17.054779+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9597**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T06:06:06.919310+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=65472.1
+- 更新: 2026-07-27T06:11:11.973928+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=65573.2
 - Funnel: target 903 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +24.83% | $19,147,660.32 |
-| BTW/USDT:USDT | +22.30% | $1,213,470.93 |
-| ON/USDT:USDT | +21.13% | $3,643,821.91 |
-| DIA/USDT:USDT | +19.48% | $7,584,391.85 |
-| 4/USDT:USDT | +15.49% | $2,567,258.60 |
+| AKE/USDT:USDT | +25.45% | $19,236,339.17 |
+| BTW/USDT:USDT | +23.22% | $1,242,996.18 |
+| ON/USDT:USDT | +20.48% | $3,672,847.60 |
+| DIA/USDT:USDT | +19.48% | $7,610,164.72 |
+| 4/USDT:USDT | +16.90% | $2,568,094.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +1.13% | +1.07% |
-| BTW/USDT:USDT | below_1h_threshold | +1.00% | +0.94% |
-| ASXSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.88% |
-| LDO/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
-| DIA/USDT:USDT | below_1h_threshold | +0.62% | +0.57% |
+| BANK/USDT:USDT | below_1h_threshold | +3.59% | +3.38% |
+| LDO/USDT:USDT | below_1h_threshold | +2.23% | +2.01% |
+| 4/USDT:USDT | below_1h_threshold | +2.05% | +1.84% |
+| BTW/USDT:USDT | below_1h_threshold | +1.76% | +1.55% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +0.94% |
 
 ## 7. 次に見るべき不足
 
