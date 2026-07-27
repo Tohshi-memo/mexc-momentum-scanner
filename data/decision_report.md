@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-27T16:06:14.062232+00:00
+- generated_at: 2026-07-27T16:11:36.347165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9635**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.26** / 初期 $100.00 (+8.26%)
-- 確定: 656件 (Win 216 / Loss 249 / Flat 191) / pending 5件 / skip 446件
+- 確定: 656件 (Win 216 / Loss 249 / Flat 191) / pending 6件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000348 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PROM/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $108.26
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-27T16:06:07.240439+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64621.1
-- Funnel: target 902 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-27T16:11:23.707487+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=64638.3
+- Funnel: target 902 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIF/USDT:USDT | +4.32% | $3,407,049.34 |
-| ALLO/USDT:USDT | +2.43% | $4,018,501.24 |
-| NIL/USDT:USDT | +2.31% | $5,122,002.51 |
-| EUL/USDT:USDT | +2.01% | $9,944,764.39 |
-| SOXL/USDT:USDT | +1.85% | $49,314,848.29 |
+| RIF/USDT:USDT | +10.87% | $3,541,188.97 |
+| JIMOTHY/USDT:USDT | +5.86% | $1,812,239.13 |
+| ALLO/USDT:USDT | +3.16% | $4,053,868.18 |
+| SNXX/USDT:USDT | +2.58% | $2,967,544.72 |
+| INFQSTOCK/USDT:USDT | +2.33% | $1,215,030.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.33% | +4.17% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.44% | +2.28% |
-| NIL/USDT:USDT | below_1h_threshold | +2.32% | +2.16% |
-| EUL/USDT:USDT | below_1h_threshold | +2.02% | +1.86% |
-| 4/USDT:USDT | below_1h_threshold | +1.67% | +1.51% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.16% | +2.98% |
+| NIL/USDT:USDT | below_1h_threshold | +2.15% | +1.96% |
+| EUL/USDT:USDT | below_1h_threshold | +1.73% | +1.54% |
+| 4/USDT:USDT | below_1h_threshold | +1.67% | +1.48% |
+| ESP/USDT:USDT | below_1h_threshold | +1.65% | +1.46% |
 
 ## 7. 次に見るべき不足
 
