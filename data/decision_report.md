@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T10:46:25.360223+00:00
+- generated_at: 2026-07-28T10:51:25.734652+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9690**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$106.92** / 初期 $100.00 (+6.92%)
-- 確定トレード: 148件 (TP 51 / SL 92 / EXP 5)
-- 最新: BANK/USDT:USDT TP_HIT PnL +8.00% 残高後 $106.92
+- 残高: **$106.38** / 初期 $100.00 (+6.38%)
+- 確定トレード: 149件 (TP 51 / SL 93 / EXP 5)
+- 最新: BANK/USDT:USDT SL_HIT PnL -4.00% 残高後 $106.38
 - 最新戦略メタ: tier=A, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T10:46:13.892143+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=63500.1
+- 更新: 2026-07-28T10:51:16.024440+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63514.5
 - Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +45.93% | $17,815,235.17 |
-| DEXE/USDT:USDT | +29.22% | $16,537,937.11 |
-| ON/USDT:USDT | +20.23% | $18,839,129.45 |
-| VANRY/USDT:USDT | +17.05% | $1,276,761.55 |
-| BULLA/USDT:USDT | +15.76% | $1,673,507.30 |
+| COTI/USDT:USDT | +45.24% | $17,868,113.37 |
+| DEXE/USDT:USDT | +27.48% | $16,614,255.08 |
+| ON/USDT:USDT | +20.74% | $18,884,089.84 |
+| BULLA/USDT:USDT | +15.64% | $1,682,903.86 |
+| SOONNETWORK/USDT:USDT | +15.27% | $1,899,336.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.62% | +4.41% |
-| AEON1/USDT:USDT | below_1h_threshold | +3.95% | +3.74% |
-| UNI/USDT:USDT | below_1h_threshold | +1.79% | +1.58% |
-| REZ/USDT:USDT | below_1h_threshold | +1.62% | +1.41% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.34% |
+| AKE/USDT:USDT | below_1h_threshold | +4.36% | +4.13% |
+| AEON1/USDT:USDT | below_1h_threshold | +4.26% | +4.03% |
+| REZ/USDT:USDT | below_1h_threshold | +1.92% | +1.69% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.57% | +1.34% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.32% |
 
 ## 7. 次に見るべき不足
 
