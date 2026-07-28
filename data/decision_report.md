@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T12:21:22.877100+00:00
+- generated_at: 2026-07-28T12:26:21.646827+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9698**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T12:21:14.752078+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63410.3
+- 更新: 2026-07-28T12:26:14.690009+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63434.4
 - Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +56.35% | $20,134,458.81 |
-| ON/USDT:USDT | +25.45% | $18,627,808.49 |
-| DEXE/USDT:USDT | +20.86% | $16,311,045.02 |
-| SOONNETWORK/USDT:USDT | +19.96% | $2,165,453.43 |
-| BULLA/USDT:USDT | +19.65% | $1,722,786.41 |
+| COTI/USDT:USDT | +59.80% | $20,280,621.68 |
+| ON/USDT:USDT | +28.25% | $18,713,952.95 |
+| BULLA/USDT:USDT | +20.55% | $1,741,936.49 |
+| SOONNETWORK/USDT:USDT | +20.19% | $2,190,523.27 |
+| DEXE/USDT:USDT | +20.07% | $16,381,286.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.11% | +3.14% |
-| COTI/USDT:USDT | below_1h_threshold | +1.94% | +1.97% |
-| VVV/USDT:USDT | below_1h_threshold | +1.89% | +1.92% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
-| SYN/USDT:USDT | below_1h_threshold | +1.15% | +1.18% |
+| VVV/USDT:USDT | below_1h_threshold | +4.15% | +4.14% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.92% | +3.91% |
+| COTI/USDT:USDT | below_1h_threshold | +3.59% | +3.58% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.98% | +1.97% |
+| SYN/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
 
 ## 7. 次に見るべき不足
 
