@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T03:11:17.783699+00:00
+- generated_at: 2026-07-28T03:16:14.519805+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9671**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T03:11:12.300343+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63167.9
+- 更新: 2026-07-28T03:16:07.742099+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63230.5
 - Funnel: target 902 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +77.72% | $10,784,972.42 |
-| RIF/USDT:USDT | +16.52% | $7,386,816.30 |
-| ON/USDT:USDT | +15.98% | $12,785,149.43 |
-| SOONNETWORK/USDT:USDT | +14.94% | $1,359,736.31 |
-| DEXE/USDT:USDT | +10.51% | $13,837,071.00 |
+| COTI/USDT:USDT | +72.29% | $10,856,005.63 |
+| ON/USDT:USDT | +17.65% | $12,857,977.20 |
+| RIF/USDT:USDT | +16.48% | $7,398,255.76 |
+| SOONNETWORK/USDT:USDT | +13.67% | $1,363,882.29 |
+| DEXE/USDT:USDT | +11.94% | $13,867,110.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +3.88% | +3.85% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.28% | +3.25% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.37% | +2.34% |
-| ON/USDT:USDT | below_1h_threshold | +1.87% | +1.84% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
+| ON/USDT:USDT | below_1h_threshold | +3.21% | +3.08% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.49% | +2.36% |
+| O/USDT:USDT | below_1h_threshold | +2.39% | +2.26% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.75% | +1.62% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.44% | +1.31% |
 
 ## 7. 次に見るべき不足
 
