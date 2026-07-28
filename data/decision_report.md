@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T18:56:23.901087+00:00
+- generated_at: 2026-07-28T19:01:21.292211+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9720**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T18:56:17.085490+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63674.3
-- Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-28T19:01:14.408882+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63758.2
+- Funnel: target 904 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +22.86% | $1,317,560.82 |
-| ON/USDT:USDT | +18.18% | $30,514,229.57 |
-| BTW/USDT:USDT | +14.74% | $5,948,719.83 |
-| RIF/USDT:USDT | +9.10% | $5,193,888.97 |
-| BULLA/USDT:USDT | +7.78% | $2,870,286.33 |
+| JIMOTHY/USDT:USDT | +25.77% | $1,249,713.27 |
+| ON/USDT:USDT | +18.61% | $30,437,110.43 |
+| BTW/USDT:USDT | +13.86% | $5,679,657.84 |
+| RIF/USDT:USDT | +10.37% | $4,811,352.31 |
+| BULLA/USDT:USDT | +8.86% | $2,843,577.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.83% | +4.82% |
-| RIF/USDT:USDT | below_1h_threshold | +4.55% | +4.54% |
-| CAP/USDT:USDT | below_1h_threshold | +2.24% | +2.23% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.09% | +2.08% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.06% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.67% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.50% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.48% |
 
 ## 7. 次に見るべき不足
 
