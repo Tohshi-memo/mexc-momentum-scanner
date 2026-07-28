@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T01:51:30.646579+00:00
+- generated_at: 2026-07-28T01:56:13.949290+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9665**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T01:51:19.364550+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=63249.2
-- Funnel: target 902 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.7 >= 65=1, 4h RSI 94.6 >= 65=1
+- 更新: 2026-07-28T01:56:05.026706+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.43% price=63179.3
+- Funnel: target 902 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +52.15% | $8,915,938.72 |
-| RIF/USDT:USDT | +14.07% | $7,322,154.23 |
-| SOONNETWORK/USDT:USDT | +11.63% | $1,344,142.38 |
-| ALLO/USDT:USDT | +8.74% | $5,502,426.35 |
-| DEXE/USDT:USDT | +8.54% | $15,091,804.04 |
+| COTI/USDT:USDT | +50.88% | $8,967,594.70 |
+| RIF/USDT:USDT | +14.14% | $7,339,116.14 |
+| SOONNETWORK/USDT:USDT | +11.35% | $1,346,472.82 |
+| ALLO/USDT:USDT | +9.33% | $5,507,683.94 |
+| KAITO/USDT:USDT | +8.96% | $9,736,010.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +3.44% | +3.76% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.21% | +2.53% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.85% | +2.17% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.83% | +2.15% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.76% | +2.08% |
+| AKE/USDT:USDT | below_1h_threshold | +4.90% | +5.34% |
+| COTI/USDT:USDT | below_1h_threshold | +4.23% | +4.66% |
+| RIF/USDT:USDT | below_1h_threshold | +3.50% | +3.93% |
+| ON/USDT:USDT | below_1h_threshold | +2.66% | +3.09% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.39% | +2.82% |
 
 ## 7. 次に見るべき不足
 
