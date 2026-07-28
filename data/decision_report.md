@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T12:56:24.952402+00:00
+- generated_at: 2026-07-28T13:01:14.231470+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9700**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T12:56:15.454873+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63482.0
-- Funnel: target 903 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-28T13:01:07.544434+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63521.3
+- Funnel: target 903 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +46.13% | $20,933,951.74 |
-| ON/USDT:USDT | +32.21% | $19,478,031.28 |
-| DEXE/USDT:USDT | +28.01% | $16,754,688.72 |
-| SOONNETWORK/USDT:USDT | +21.19% | $2,343,408.90 |
-| BULLA/USDT:USDT | +20.59% | $1,861,064.76 |
+| COTI/USDT:USDT | +46.26% | $20,943,872.48 |
+| ON/USDT:USDT | +32.99% | $18,580,275.01 |
+| DEXE/USDT:USDT | +30.24% | $16,247,620.39 |
+| SOONNETWORK/USDT:USDT | +22.94% | $2,306,400.02 |
+| BULLA/USDT:USDT | +21.42% | $1,846,379.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.34% | +4.26% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.98% | +3.90% |
-| VVV/USDT:USDT | below_1h_threshold | +3.33% | +3.25% |
-| O/USDT:USDT | below_1h_threshold | +3.10% | +3.01% |
-| RIF/USDT:USDT | below_1h_threshold | +1.84% | +1.76% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
+| MSFU/USDT:USDT | below_1h_threshold | +0.57% | +0.57% |
+| AAPU/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.56% | +0.56% |
 
 ## 7. 次に見るべき不足
 
