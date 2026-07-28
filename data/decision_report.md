@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-28T12:15:55.766632+00:00
+- generated_at: 2026-07-28T12:21:22.877100+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9697**
+- closed shadow trades: **9698**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
-- 全期間 MARKET基準: n=9697, expectancy=-0.02%
+- 全期間 MARKET基準: n=9698, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -34,8 +34,8 @@
 | LIMIT_2PCT_LONG | 18/20 | 90.0% | +2.04% | **+1.84%** |
 | LIMIT_1PCT_LONG | 20/20 | 100.0% | +1.27% | **+1.27%** |
 | LIMIT_3PCT_LONG | 14/20 | 70.0% | +1.03% | **+0.72%** |
-| LIMIT_9PCT_LONG | 4/20 | 20.0% | +2.82% | **+0.56%** |
-| LIMIT_FIB1272_LONG | 8/20 | 40.0% | +0.46% | **+0.18%** |
+| LIMIT_9PCT_LONG | 5/20 | 25.0% | +2.48% | **+0.62%** |
+| LIMIT_FIB1272_LONG | 9/20 | 45.0% | +0.51% | **+0.23%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$467.75** / 初期 $100.00 (+367.75%)
-- 確定: 3467件 (Win 1093 / Loss 1125 / Flat 1249) / skip 2791件
-- 成長率目線: 平均log +0.000445 / 幾何平均 +0.045% per trade / maxDD +8.13%
+- 残高: **$465.42** / 初期 $100.00 (+365.42%)
+- 確定: 3468件 (Win 1093 / Loss 1126 / Flat 1249) / skip 2791件
+- 成長率目線: 平均log +0.000443 / 幾何平均 +0.044% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SOONNETWORK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $467.75
+- 最新: BANK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $465.42
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$137.24** / 初期 $100.00 (+37.24%)
-- 確定: 1225件 (Win 338 / Loss 275 / Flat 612) / skip 1883件
+- 確定: 1225件 (Win 338 / Loss 275 / Flat 612) / skip 1884件
 - 成長率目線: 平均log +0.000258 / 幾何平均 +0.026% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0597 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0513 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $137.24
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$108.64** / 初期 $100.00 (+8.64%)
-- 確定: 716件 (Win 232 / Loss 274 / Flat 210) / pending 5件 / skip 448件
+- 残高: **$108.45** / 初期 $100.00 (+8.45%)
+- 確定: 717件 (Win 232 / Loss 275 / Flat 210) / pending 4件 / skip 448件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000318 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: COTI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $108.64
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000259 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: BANK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $108.45
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T12:11:10.490219+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63446.3
+- 更新: 2026-07-28T12:21:14.752078+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63410.3
 - Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +51.01% | $19,827,046.62 |
-| ON/USDT:USDT | +28.88% | $18,326,690.12 |
-| SOONNETWORK/USDT:USDT | +26.06% | $2,035,634.92 |
-| DEXE/USDT:USDT | +19.77% | $16,171,644.81 |
-| BULLA/USDT:USDT | +18.43% | $1,683,543.82 |
+| COTI/USDT:USDT | +56.35% | $20,134,458.81 |
+| ON/USDT:USDT | +25.45% | $18,627,808.49 |
+| DEXE/USDT:USDT | +20.86% | $16,311,045.02 |
+| SOONNETWORK/USDT:USDT | +19.96% | $2,165,453.43 |
+| BULLA/USDT:USDT | +19.65% | $1,722,786.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +2.80% | +2.78% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.77% | +2.75% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.06% | +2.04% |
-| ON/USDT:USDT | below_1h_threshold | +1.70% | +1.67% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.47% | +1.45% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.11% | +3.14% |
+| COTI/USDT:USDT | below_1h_threshold | +1.94% | +1.97% |
+| VVV/USDT:USDT | below_1h_threshold | +1.89% | +1.92% |
+| VANRY/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
+| SYN/USDT:USDT | below_1h_threshold | +1.15% | +1.18% |
 
 ## 7. 次に見るべき不足
 
