@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T01:01:19.085110+00:00
+- generated_at: 2026-07-28T01:06:16.133498+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9659**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T01:01:12.181822+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=63450.4
+- 更新: 2026-07-28T01:06:09.276805+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63338.4
 - Funnel: target 902 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +43.34% | $8,456,452.33 |
-| RIF/USDT:USDT | +10.53% | $7,200,669.63 |
-| SOONNETWORK/USDT:USDT | +9.27% | $1,301,779.18 |
-| KAITO/USDT:USDT | +7.23% | $8,968,827.84 |
-| ALLO/USDT:USDT | +7.16% | $5,310,702.02 |
+| COTI/USDT:USDT | +41.18% | $8,487,782.95 |
+| RIF/USDT:USDT | +10.08% | $7,221,653.70 |
+| SOONNETWORK/USDT:USDT | +8.46% | $1,302,606.18 |
+| ALLO/USDT:USDT | +7.90% | $5,333,369.31 |
+| KAITO/USDT:USDT | +7.23% | $9,010,540.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.27% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
-| AEON1/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
+| DEXE/USDT:USDT | below_1h_threshold | +4.75% | +4.93% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.39% | +2.57% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.45% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.94% | +1.12% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.66% | +0.84% |
 
 ## 7. 次に見るべき不足
 
