@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T05:21:13.543809+00:00
+- generated_at: 2026-07-28T05:26:20.850748+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9678**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$107.92** / 初期 $100.00 (+7.92%)
-- 確定: 698件 (Win 225 / Loss 267 / Flat 206) / pending 1件 / skip 447件
+- 確定: 698件 (Win 225 / Loss 267 / Flat 206) / pending 3件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000083 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $107.92
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T05:21:06.678191+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=63499.5
-- Funnel: target 902 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T05:26:09.325856+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63467.8
+- Funnel: target 902 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +62.65% | $12,604,026.26 |
-| SOONNETWORK/USDT:USDT | +15.70% | $1,527,714.05 |
-| RIF/USDT:USDT | +14.30% | $7,499,793.85 |
-| DEXE/USDT:USDT | +13.19% | $13,781,890.00 |
-| BULLA/USDT:USDT | +12.65% | $1,232,061.86 |
+| COTI/USDT:USDT | +59.78% | $12,664,859.32 |
+| DEXE/USDT:USDT | +16.33% | $13,896,051.56 |
+| SOONNETWORK/USDT:USDT | +15.46% | $1,529,691.06 |
+| RIF/USDT:USDT | +14.61% | $7,506,600.78 |
+| BULLA/USDT:USDT | +13.53% | $1,242,788.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_relative_strength | +5.28% | +5.00% |
-| DEXE/USDT:USDT | below_1h_threshold | +4.20% | +3.92% |
-| COTI/USDT:USDT | below_1h_threshold | +2.99% | +2.71% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.58% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.05% | +0.77% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.63% |
+| AKE/USDT:USDT | below_1h_threshold | +1.28% | +1.05% |
+| CAP/USDT:USDT | below_1h_threshold | +1.03% | +0.80% |
+| ACE/USDT:USDT | below_1h_threshold | +0.89% | +0.67% |
+| COTI/USDT:USDT | below_1h_threshold | +0.82% | +0.59% |
 
 ## 7. 次に見るべき不足
 
