@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T00:51:39.812816+00:00
+- generated_at: 2026-07-28T00:56:24.786776+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9659**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T00:51:24.532586+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=63499.3
-- Funnel: target 902 → liquid 179 → pre 50 → checked 50 → surge 5 → strict 4
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1
+- 更新: 2026-07-28T00:56:14.473954+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=63524.7
+- Funnel: target 902 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +47.00% | $8,353,847.09 |
-| RIF/USDT:USDT | +10.21% | $7,214,652.30 |
-| O/USDT:USDT | +8.94% | $1,198,486.34 |
-| SOONNETWORK/USDT:USDT | +7.89% | $1,318,001.63 |
-| ALLO/USDT:USDT | +7.42% | $5,556,713.16 |
+| COTI/USDT:USDT | +44.80% | $8,399,126.81 |
+| RIF/USDT:USDT | +10.16% | $7,221,926.43 |
+| SOONNETWORK/USDT:USDT | +9.88% | $1,327,742.96 |
+| O/USDT:USDT | +8.46% | $1,207,349.71 |
+| KAITO/USDT:USDT | +6.88% | $9,043,431.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +3.30% | +3.65% |
-| SAFE/USDT:USDT | below_1h_threshold | +3.04% | +3.39% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.56% | +2.91% |
-| SYN/USDT:USDT | below_1h_threshold | +2.12% | +2.47% |
-| US/USDT:USDT | below_1h_threshold | +1.26% | +1.61% |
+| O/USDT:USDT | below_1h_threshold | +4.44% | +4.75% |
+| COTI/USDT:USDT | below_1h_threshold | +4.13% | +4.44% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.92% | +4.23% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.42% | +3.73% |
+| SAFE/USDT:USDT | below_1h_threshold | +3.11% | +3.42% |
 
 ## 7. 次に見るべき不足
 
