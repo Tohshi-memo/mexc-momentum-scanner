@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T22:41:18.851762+00:00
+- generated_at: 2026-07-28T22:46:15.330945+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9735**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T22:41:11.914899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=63864.9
+- 更新: 2026-07-28T22:46:08.235168+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=63840.3
 - Funnel: target 904 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +27.59% | $44,715,531.23 |
-| BTW/USDT:USDT | +22.82% | $6,158,066.97 |
-| ZIL/USDT:USDT | +19.00% | $5,726,992.70 |
-| RIF/USDT:USDT | +17.94% | $3,534,732.20 |
-| JIMOTHY/USDT:USDT | +16.11% | $1,406,406.33 |
+| ON/USDT:USDT | +29.48% | $44,923,516.02 |
+| BTW/USDT:USDT | +21.99% | $6,202,558.67 |
+| ZIL/USDT:USDT | +17.71% | $5,818,065.55 |
+| RIF/USDT:USDT | +17.40% | $3,546,889.55 |
+| JIMOTHY/USDT:USDT | +17.00% | $1,409,550.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.67% | +3.81% |
-| ON/USDT:USDT | below_1h_threshold | +2.04% | +2.17% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.69% | +1.83% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.57% | +1.71% |
-| ADA/USDT:USDT | below_1h_threshold | +1.12% | +1.26% |
+| ON/USDT:USDT | below_1h_threshold | +3.57% | +3.74% |
+| BTW/USDT:USDT | below_1h_threshold | +2.69% | +2.86% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.69% | +1.87% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.57% | +1.75% |
+| ADA/USDT:USDT | below_1h_threshold | +0.81% | +0.98% |
 
 ## 7. 次に見るべき不足
 
