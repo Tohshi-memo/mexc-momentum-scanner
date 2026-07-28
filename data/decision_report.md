@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T14:31:27.058826+00:00
+- generated_at: 2026-07-28T14:36:25.244485+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9701**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T14:31:20.069180+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=63179.5
+- 更新: 2026-07-28T14:36:19.483049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63176.3
 - Funnel: target 904 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- Strict後reject: 4h RSI 76.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +55.41% | $22,622,164.51 |
-| ON/USDT:USDT | +33.44% | $20,255,334.57 |
-| SOONNETWORK/USDT:USDT | +31.03% | $2,631,766.17 |
-| DEXE/USDT:USDT | +25.59% | $16,480,600.52 |
-| VANRY/USDT:USDT | +20.48% | $1,474,617.92 |
+| COTI/USDT:USDT | +56.12% | $22,695,248.16 |
+| ON/USDT:USDT | +33.06% | $20,299,943.39 |
+| SOONNETWORK/USDT:USDT | +29.04% | $2,655,879.65 |
+| DEXE/USDT:USDT | +24.68% | $16,519,112.05 |
+| VANRY/USDT:USDT | +21.75% | $1,477,172.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.23% | +4.07% |
-| COAI/USDT:USDT | below_1h_threshold | +4.00% | +3.84% |
-| RIF/USDT:USDT | below_1h_threshold | +3.72% | +3.56% |
-| COTI/USDT:USDT | below_1h_threshold | +3.05% | +2.89% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.26% | +2.10% |
+| COAI/USDT:USDT | below_1h_threshold | +3.92% | +3.76% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.67% | +3.51% |
+| COTI/USDT:USDT | below_1h_threshold | +3.51% | +3.36% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.80% | +2.64% |
+| ACH/USDT:USDT | below_1h_threshold | +2.43% | +2.28% |
 
 ## 7. 次に見るべき不足
 
