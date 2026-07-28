@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T10:56:13.793375+00:00
+- generated_at: 2026-07-28T11:01:16.926889+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9691**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T10:56:06.130448+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63476.0
-- Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-28T11:01:09.856434+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63480.9
+- Funnel: target 898 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +48.41% | $17,943,233.91 |
-| DEXE/USDT:USDT | +25.44% | $16,707,829.84 |
-| ON/USDT:USDT | +20.52% | $19,124,351.65 |
-| BULLA/USDT:USDT | +15.69% | $1,689,670.11 |
-| SOONNETWORK/USDT:USDT | +14.75% | $1,902,450.10 |
+| COTI/USDT:USDT | +48.56% | $17,986,156.33 |
+| DEXE/USDT:USDT | +23.17% | $15,913,414.30 |
+| ON/USDT:USDT | +20.35% | $17,838,733.95 |
+| VANRY/USDT:USDT | +15.11% | $1,298,361.68 |
+| BULLA/USDT:USDT | +14.99% | $1,640,135.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.47% | +4.30% |
-| DEXE/USDT:USDT | below_1h_threshold | +4.37% | +4.20% |
-| AEON1/USDT:USDT | below_1h_threshold | +3.84% | +3.67% |
-| REZ/USDT:USDT | below_1h_threshold | +1.85% | +1.68% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.38% |
+| COTI/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.36% | +0.30% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.20% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.15% |
+| ETNSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.12% |
 
 ## 7. 次に見るべき不足
 
