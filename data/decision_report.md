@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T20:06:18.379801+00:00
+- generated_at: 2026-07-28T20:11:11.075153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9725**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T20:06:11.201783+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=63960.6
-- Funnel: target 904 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-28T20:11:04.126217+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63900.6
+- Funnel: target 904 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +29.32% | $1,349,133.00 |
-| ON/USDT:USDT | +23.27% | $35,275,159.74 |
-| BTW/USDT:USDT | +16.89% | $5,714,917.55 |
-| RIF/USDT:USDT | +14.36% | $4,538,805.42 |
-| BEAT/USDT:USDT | +10.96% | $58,429,050.91 |
+| JIMOTHY/USDT:USDT | +31.65% | $1,357,669.39 |
+| BTW/USDT:USDT | +16.36% | $5,730,209.57 |
+| RIF/USDT:USDT | +14.95% | $4,554,142.68 |
+| ON/USDT:USDT | +14.36% | $35,873,857.40 |
+| BEAT/USDT:USDT | +10.64% | $58,675,737.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.90% | +4.78% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.23% | +1.10% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.09% |
-| TAO/USDT:USDT | below_1h_threshold | +0.87% | +0.75% |
-| CELHSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.39% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.19% |
+| TAO/USDT:USDT | below_1h_threshold | +1.15% | +1.12% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
+| ACH/USDT:USDT | below_1h_threshold | +0.70% | +0.67% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
 
 ## 7. 次に見るべき不足
 
