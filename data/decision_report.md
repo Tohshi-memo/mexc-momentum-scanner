@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T15:51:21.911750+00:00
+- generated_at: 2026-07-28T15:56:34.282508+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9705**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.20** / 初期 $100.00 (+9.20%)
-- 確定: 723件 (Win 235 / Loss 276 / Flat 212) / pending 5件 / skip 449件
+- 確定: 723件 (Win 235 / Loss 276 / Flat 212) / pending 6件 / skip 449件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000383 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $109.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T15:51:14.735079+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.66% price=63805.4
-- Funnel: target 904 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.9 >= 65=1
+- 更新: 2026-07-28T15:56:26.330991+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.65% price=63798.3
+- Funnel: target 904 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.4 >= 65=1, 4h RSI 77.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +52.89% | $23,788,621.03 |
-| ON/USDT:USDT | +45.58% | $22,793,679.35 |
-| SOONNETWORK/USDT:USDT | +36.75% | $3,069,217.82 |
-| BULLA/USDT:USDT | +28.32% | $2,262,506.58 |
-| VANRY/USDT:USDT | +24.61% | $1,564,510.15 |
+| COTI/USDT:USDT | +74.54% | $24,355,604.45 |
+| ON/USDT:USDT | +46.25% | $23,012,561.22 |
+| SOONNETWORK/USDT:USDT | +37.27% | $3,084,147.46 |
+| BULLA/USDT:USDT | +28.87% | $2,271,706.82 |
+| VANRY/USDT:USDT | +25.56% | $1,579,304.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_relative_strength | +5.47% | +4.80% |
-| VANRY/USDT:USDT | below_1h_threshold | +3.82% | +3.16% |
-| VVV/USDT:USDT | below_1h_threshold | +3.14% | +2.47% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.40% |
-| XPL/USDT:USDT | below_1h_threshold | +2.56% | +1.89% |
+| SPCXSTOCK/USDT:USDT | below_relative_strength | +5.47% | +4.81% |
+| VANRY/USDT:USDT | below_1h_threshold | +4.35% | +3.70% |
+| VVV/USDT:USDT | below_1h_threshold | +3.56% | +2.91% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.41% |
+| XPL/USDT:USDT | below_1h_threshold | +2.96% | +2.30% |
 
 ## 7. 次に見るべき不足
 
