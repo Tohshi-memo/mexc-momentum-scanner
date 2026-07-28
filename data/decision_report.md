@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-28T08:26:22.159174+00:00
+- generated_at: 2026-07-28T08:31:35.805839+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9684**
+- closed shadow trades: **9685**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9684, expectancy=-0.02%
+- 全期間 MARKET基準: n=9685, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,55 +47,55 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$466.10** / 初期 $100.00 (+366.10%)
-- 確定: 3454件 (Win 1091 / Loss 1121 / Flat 1242) / skip 2791件
+- 確定: 3455件 (Win 1091 / Loss 1121 / Flat 1243) / skip 2791件
 - 成長率目線: 平均log +0.000446 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BANK/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.28% 残高後 $466.10
+- 最新: DEXE/USDT:USDT `LIMIT_4PCT_LONG` EXPIRED account +0.00% 残高後 $466.10
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$137.24** / 初期 $100.00 (+37.24%)
-- 確定: 1225件 (Win 338 / Loss 275 / Flat 612) / skip 1870件
+- 確定: 1225件 (Win 338 / Loss 275 / Flat 612) / skip 1871件
 - 成長率目線: 平均log +0.000258 / 幾何平均 +0.026% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0338 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0345 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $137.24
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$107.72** / 初期 $100.00 (+7.72%)
-- 確定: 704件 (Win 227 / Loss 271 / Flat 206) / pending 4件 / skip 447件
+- 残高: **$107.90** / 初期 $100.00 (+7.90%)
+- 確定: 705件 (Win 228 / Loss 271 / Flat 206) / pending 4件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000126 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: BANK/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $107.72
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000197 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: DEXE/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $107.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T08:26:15.148586+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63444.1
-- Funnel: target 898 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1
+- 更新: 2026-07-28T08:31:24.281184+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63435.7
+- Funnel: target 898 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.6 >= 65=1, 4h RSI 68.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +48.43% | $15,767,037.36 |
-| DEXE/USDT:USDT | +30.09% | $15,014,494.46 |
-| RIF/USDT:USDT | +14.84% | $7,693,562.28 |
-| SOONNETWORK/USDT:USDT | +14.42% | $1,741,176.98 |
-| ON/USDT:USDT | +14.14% | $16,036,414.22 |
+| COTI/USDT:USDT | +47.53% | $15,832,654.80 |
+| DEXE/USDT:USDT | +33.61% | $15,169,333.84 |
+| ON/USDT:USDT | +16.85% | $16,080,491.37 |
+| RIF/USDT:USDT | +16.06% | $7,713,680.17 |
+| SOONNETWORK/USDT:USDT | +14.42% | $1,742,242.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +3.96% | +4.01% |
-| ON/USDT:USDT | below_1h_threshold | +3.94% | +3.99% |
-| LIT/USDT:USDT | below_1h_threshold | +1.76% | +1.81% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.74% | +1.79% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.38% | +1.43% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.68% | +1.74% |
+| LIT/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.38% | +1.45% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.34% | +1.41% |
+| O/USDT:USDT | below_1h_threshold | +1.08% | +1.14% |
 
 ## 7. 次に見るべき不足
 
