@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T04:56:15.071957+00:00
+- generated_at: 2026-07-28T05:01:08.077040+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9678**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T04:56:10.117096+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63327.8
-- Funnel: target 902 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.1 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-28T05:01:01.132535+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63296.6
+- Funnel: target 902 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +59.98% | $12,307,664.69 |
-| SOONNETWORK/USDT:USDT | +17.78% | $1,501,124.42 |
-| RIF/USDT:USDT | +17.15% | $7,496,764.08 |
-| BULLA/USDT:USDT | +16.16% | $1,127,230.73 |
-| ON/USDT:USDT | +13.23% | $14,425,434.12 |
+| COTI/USDT:USDT | +58.84% | $12,350,345.01 |
+| SOONNETWORK/USDT:USDT | +18.07% | $1,496,411.37 |
+| ON/USDT:USDT | +17.58% | $14,340,995.66 |
+| BULLA/USDT:USDT | +17.39% | $1,132,510.45 |
+| RIF/USDT:USDT | +16.97% | $7,440,459.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +4.36% | +4.33% |
-| BASED/USDT:USDT | below_1h_threshold | +2.86% | +2.83% |
-| O/USDT:USDT | below_1h_threshold | +1.72% | +1.70% |
-| LIT/USDT:USDT | below_1h_threshold | +1.35% | +1.32% |
-| CRV/USDT:USDT | below_1h_threshold | +0.81% | +0.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.90% |
+| COTI/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.51% | +0.55% |
+| BASED/USDT:USDT | below_1h_threshold | +0.40% | +0.45% |
+| CRV/USDT:USDT | below_1h_threshold | +0.24% | +0.28% |
 
 ## 7. 次に見るべき不足
 
