@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T09:31:19.975166+00:00
+- generated_at: 2026-07-28T09:36:21.922033+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9688**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T09:31:12.827085+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=63480.8
-- Funnel: target 898 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1
+- 更新: 2026-07-28T09:36:12.600184+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63500.0
+- Funnel: target 898 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +40.50% | $16,645,911.96 |
-| VANRY/USDT:USDT | +27.88% | $1,022,962.75 |
-| ON/USDT:USDT | +18.86% | $16,865,288.79 |
-| DEXE/USDT:USDT | +18.22% | $16,033,303.35 |
-| SOONNETWORK/USDT:USDT | +15.89% | $1,737,254.61 |
+| COTI/USDT:USDT | +41.17% | $16,709,490.04 |
+| VANRY/USDT:USDT | +23.97% | $1,084,498.66 |
+| DEXE/USDT:USDT | +20.00% | $16,166,126.03 |
+| ON/USDT:USDT | +18.35% | $16,929,896.89 |
+| SOONNETWORK/USDT:USDT | +16.88% | $1,753,684.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.16% | +4.04% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.12% | +3.99% |
-| O/USDT:USDT | below_1h_threshold | +3.15% | +3.02% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.83% | +1.70% |
-| AERO/USDT:USDT | below_1h_threshold | +1.79% | +1.67% |
+| JIMOTHY/USDT:USDT | below_relative_strength | +5.03% | +4.88% |
+| O/USDT:USDT | below_1h_threshold | +3.86% | +3.70% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.96% | +2.81% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.74% | +2.59% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.71% | +1.56% |
 
 ## 7. 次に見るべき不足
 
