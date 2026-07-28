@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T05:01:08.077040+00:00
+- generated_at: 2026-07-28T05:06:12.939732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9678**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T05:01:01.132535+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63296.6
+- 更新: 2026-07-28T05:06:06.152050+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=63411.6
 - Funnel: target 902 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +58.84% | $12,350,345.01 |
-| SOONNETWORK/USDT:USDT | +18.07% | $1,496,411.37 |
-| ON/USDT:USDT | +17.58% | $14,340,995.66 |
-| BULLA/USDT:USDT | +17.39% | $1,132,510.45 |
-| RIF/USDT:USDT | +16.97% | $7,440,459.87 |
+| COTI/USDT:USDT | +59.96% | $12,418,908.76 |
+| ON/USDT:USDT | +20.93% | $14,388,228.46 |
+| SOONNETWORK/USDT:USDT | +17.78% | $1,500,801.90 |
+| BULLA/USDT:USDT | +16.56% | $1,150,276.84 |
+| RIF/USDT:USDT | +15.72% | $7,449,040.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.90% |
-| COTI/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.51% | +0.55% |
-| BASED/USDT:USDT | below_1h_threshold | +0.40% | +0.45% |
-| CRV/USDT:USDT | below_1h_threshold | +0.24% | +0.28% |
+| ON/USDT:USDT | below_1h_threshold | +2.70% | +2.56% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.29% | +2.15% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.72% |
+| COTI/USDT:USDT | below_1h_threshold | +1.16% | +1.02% |
+| ACE/USDT:USDT | below_1h_threshold | +0.91% | +0.77% |
 
 ## 7. 次に見るべき不足
 
