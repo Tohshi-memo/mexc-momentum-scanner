@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T17:36:22.586574+00:00
+- generated_at: 2026-07-28T17:41:24.208169+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9714**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T17:36:15.404266+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.60% price=63633.6
+- 更新: 2026-07-28T17:41:17.019947+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.70% price=63568.9
 - Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.4 >= 65=1
+- Strict後reject: 4h RSI 82.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +15.48% | $6,350,192.01 |
-| ON/USDT:USDT | +11.47% | $26,986,906.34 |
-| BULLA/USDT:USDT | +8.98% | $2,638,564.97 |
-| JIMOTHY/USDT:USDT | +7.55% | $1,270,317.69 |
-| ZIL/USDT:USDT | +5.58% | $1,666,082.19 |
+| BTW/USDT:USDT | +14.13% | $6,407,894.23 |
+| ON/USDT:USDT | +11.42% | $27,219,749.66 |
+| JIMOTHY/USDT:USDT | +11.18% | $1,274,218.50 |
+| BULLA/USDT:USDT | +7.60% | $2,647,333.45 |
+| ZIL/USDT:USDT | +5.26% | $1,680,360.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_1h_threshold | +3.22% | +3.82% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.39% | +2.99% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.05% | +2.65% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.99% | +2.60% |
-| ZIL/USDT:USDT | below_1h_threshold | +1.94% | +2.54% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.90% | +3.61% |
+| REZ/USDT:USDT | below_1h_threshold | +2.81% | +3.52% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.90% | +2.60% |
+| ZIL/USDT:USDT | below_1h_threshold | +1.71% | +2.41% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +2.14% |
 
 ## 7. 次に見るべき不足
 
