@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T17:31:29.828498+00:00
+- generated_at: 2026-07-28T17:36:22.586574+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9714**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.39** / 初期 $100.00 (+9.39%)
-- 確定: 732件 (Win 237 / Loss 279 / Flat 216) / pending 5件 / skip 450件
+- 確定: 732件 (Win 237 / Loss 279 / Flat 216) / pending 6件 / skip 450件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000429 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $109.39
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T17:31:21.743516+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=63668.5
-- Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T17:36:15.404266+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=63633.6
+- Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.4 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +13.46% | $6,299,960.46 |
-| BULLA/USDT:USDT | +8.42% | $2,616,688.13 |
-| ON/USDT:USDT | +8.30% | $26,373,443.04 |
-| JIMOTHY/USDT:USDT | +6.59% | $1,268,402.36 |
-| ZIL/USDT:USDT | +5.86% | $1,612,884.79 |
+| BTW/USDT:USDT | +15.48% | $6,350,192.01 |
+| ON/USDT:USDT | +11.47% | $26,986,906.34 |
+| BULLA/USDT:USDT | +8.98% | $2,638,564.97 |
+| JIMOTHY/USDT:USDT | +7.55% | $1,270,317.69 |
+| ZIL/USDT:USDT | +5.58% | $1,666,082.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.21% | +4.76% |
-| REZ/USDT:USDT | below_1h_threshold | +3.76% | +4.31% |
-| ZIL/USDT:USDT | below_1h_threshold | +2.37% | +2.92% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.21% | +2.76% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.98% |
+| REZ/USDT:USDT | below_1h_threshold | +3.22% | +3.82% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.39% | +2.99% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.05% | +2.65% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.99% | +2.60% |
+| ZIL/USDT:USDT | below_1h_threshold | +1.94% | +2.54% |
 
 ## 7. 次に見るべき不足
 
