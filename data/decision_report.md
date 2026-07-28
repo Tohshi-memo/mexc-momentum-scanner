@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T19:11:25.731317+00:00
+- generated_at: 2026-07-28T19:16:19.575603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9720**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T19:11:18.849234+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63764.5
+- 更新: 2026-07-28T19:16:14.692967+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63722.2
 - Funnel: target 904 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +21.79% | $1,262,645.40 |
-| ON/USDT:USDT | +19.95% | $30,852,508.03 |
-| BTW/USDT:USDT | +14.02% | $5,711,755.21 |
-| RIF/USDT:USDT | +10.00% | $4,863,057.02 |
-| BULLA/USDT:USDT | +6.20% | $2,878,027.53 |
+| JIMOTHY/USDT:USDT | +30.47% | $1,271,882.48 |
+| ON/USDT:USDT | +21.52% | $31,151,285.97 |
+| BTW/USDT:USDT | +15.77% | $5,728,292.43 |
+| RIF/USDT:USDT | +11.63% | $4,871,863.39 |
+| RAVE/USDT:USDT | +6.40% | $1,365,650.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.55% | +1.46% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.18% | +1.10% |
-| ON/USDT:USDT | below_1h_threshold | +1.16% | +1.08% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.05% |
-| AGT/USDT:USDT | below_1h_threshold | +1.01% | +0.92% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.80% | +3.79% |
+| ON/USDT:USDT | below_1h_threshold | +2.38% | +2.36% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.29% | +2.27% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.55% | +1.53% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.28% | +1.27% |
 
 ## 7. 次に見るべき不足
 
