@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T11:21:17.921189+00:00
+- generated_at: 2026-07-28T11:26:22.374130+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9691**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T11:21:10.848325+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63549.3
-- Funnel: target 898 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.2 >= 65=1
+- 更新: 2026-07-28T11:26:15.347768+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63435.1
+- Funnel: target 898 → liquid 174 → pre 50 → checked 49 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- Strict後reject: 4h RSI 81.3 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +55.90% | $18,485,185.77 |
-| ON/USDT:USDT | +23.15% | $18,301,802.85 |
-| DEXE/USDT:USDT | +22.53% | $16,188,969.61 |
-| SOONNETWORK/USDT:USDT | +16.13% | $1,854,998.39 |
-| BULLA/USDT:USDT | +15.26% | $1,668,254.12 |
+| COTI/USDT:USDT | +60.55% | $18,653,814.29 |
+| DEXE/USDT:USDT | +23.25% | $16,266,281.46 |
+| ON/USDT:USDT | +23.09% | $18,349,533.41 |
+| SOONNETWORK/USDT:USDT | +15.98% | $1,857,281.17 |
+| VANRY/USDT:USDT | +15.27% | $1,341,247.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +2.29% | +2.12% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.27% | +2.10% |
-| ON/USDT:USDT | below_1h_threshold | +2.02% | +1.86% |
-| BANK/USDT:USDT | below_1h_threshold | +1.97% | +1.80% |
-| CAP/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.32% | +3.33% |
+| ON/USDT:USDT | below_1h_threshold | +1.97% | +1.99% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.91% | +1.92% |
+| BANK/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
 
 ## 7. 次に見るべき不足
 
