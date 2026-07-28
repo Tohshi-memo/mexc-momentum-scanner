@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T15:16:29.824727+00:00
+- generated_at: 2026-07-28T15:21:30.290217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9702**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T15:16:20.198198+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63389.0
-- Funnel: target 904 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1
+- 更新: 2026-07-28T15:21:21.292478+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=63545.5
+- Funnel: target 904 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +54.49% | $23,236,672.81 |
-| ON/USDT:USDT | +41.37% | $20,769,697.36 |
-| SOONNETWORK/USDT:USDT | +33.82% | $2,930,613.03 |
-| BULLA/USDT:USDT | +25.47% | $2,172,109.58 |
-| DEXE/USDT:USDT | +21.13% | $15,827,448.79 |
+| COTI/USDT:USDT | +51.99% | $23,309,505.14 |
+| ON/USDT:USDT | +41.26% | $21,142,847.53 |
+| SOONNETWORK/USDT:USDT | +33.06% | $2,966,868.79 |
+| BULLA/USDT:USDT | +25.45% | $2,184,695.73 |
+| VANRY/USDT:USDT | +23.59% | $1,512,311.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.06% |
-| MSFU/USDT:USDT | below_1h_threshold | +2.14% | +2.13% |
-| GGLL/USDT:USDT | below_1h_threshold | +1.80% | +1.79% |
-| BILL/USDT:USDT | below_1h_threshold | +1.77% | +1.76% |
-| JUP/USDT:USDT | below_1h_threshold | +1.51% | +1.50% |
+| ON/USDT:USDT | below_relative_strength | +5.20% | +4.95% |
+| BILL/USDT:USDT | below_1h_threshold | +3.08% | +2.82% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.81% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.72% | +2.46% |
+| JUP/USDT:USDT | below_1h_threshold | +2.69% | +2.44% |
 
 ## 7. 次に見るべき不足
 
