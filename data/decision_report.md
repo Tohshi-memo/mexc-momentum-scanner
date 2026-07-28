@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T21:36:30.994385+00:00
+- generated_at: 2026-07-28T21:41:26.559753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9730**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T21:36:19.046418+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=63977.0
-- Funnel: target 904 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1
+- 更新: 2026-07-28T21:41:16.617473+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63971.9
+- Funnel: target 904 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +24.72% | $1,441,107.10 |
-| ON/USDT:USDT | +23.81% | $40,592,315.19 |
-| ZIL/USDT:USDT | +18.92% | $3,873,795.06 |
-| BTW/USDT:USDT | +17.88% | $5,886,053.21 |
-| RIF/USDT:USDT | +17.63% | $4,120,482.16 |
+| ON/USDT:USDT | +24.93% | $40,721,140.09 |
+| ZIL/USDT:USDT | +22.41% | $3,977,462.98 |
+| JIMOTHY/USDT:USDT | +21.10% | $1,453,813.54 |
+| BTW/USDT:USDT | +18.19% | $5,923,366.90 |
+| RIF/USDT:USDT | +16.04% | $4,127,170.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.10% | +3.98% |
+| ON/USDT:USDT | below_1h_threshold | +3.65% | +3.53% |
 | SNXX/USDT:USDT | below_1h_threshold | +3.62% | +3.49% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.84% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.83% | +2.70% |
-| ON/USDT:USDT | below_1h_threshold | +2.77% | +2.64% |
-| RIF/USDT:USDT | below_1h_threshold | +2.73% | +2.59% |
+| BTW/USDT:USDT | below_1h_threshold | +3.15% | +3.03% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.98% | +2.85% |
 
 ## 7. 次に見るべき不足
 
