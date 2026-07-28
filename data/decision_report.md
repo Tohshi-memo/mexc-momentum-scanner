@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T09:46:27.101938+00:00
+- generated_at: 2026-07-28T09:51:15.073901+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9688**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T09:46:17.854448+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=63481.8
-- Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-28T09:51:08.213083+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63524.9
+- Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +43.86% | $16,811,878.94 |
-| DEXE/USDT:USDT | +20.98% | $16,342,183.16 |
-| VANRY/USDT:USDT | +20.50% | $1,160,193.22 |
-| ON/USDT:USDT | +19.30% | $17,015,804.48 |
-| SOONNETWORK/USDT:USDT | +16.69% | $1,769,288.41 |
+| COTI/USDT:USDT | +48.17% | $16,935,062.32 |
+| ON/USDT:USDT | +20.80% | $17,386,828.49 |
+| DEXE/USDT:USDT | +20.49% | $16,424,159.58 |
+| VANRY/USDT:USDT | +18.76% | $1,182,147.90 |
+| SOONNETWORK/USDT:USDT | +18.21% | $1,784,913.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.59% | +3.46% |
-| SYN/USDT:USDT | below_1h_threshold | +2.91% | +2.78% |
-| O/USDT:USDT | below_1h_threshold | +2.74% | +2.61% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.70% | +2.58% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.66% | +2.53% |
+| VANRY/USDT:USDT | below_1h_threshold | +4.99% | +4.79% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.87% | +3.67% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.72% | +3.53% |
+| SYN/USDT:USDT | below_1h_threshold | +3.46% | +3.27% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.39% | +3.19% |
 
 ## 7. 次に見るべき不足
 
