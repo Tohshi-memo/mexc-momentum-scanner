@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T09:21:16.817837+00:00
+- generated_at: 2026-07-28T09:26:26.444292+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9688**
 
@@ -63,36 +63,37 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$107.71** / 初期 $100.00 (+7.71%)
-- 確定: 708件 (Win 228 / Loss 272 / Flat 208) / pending 3件 / skip 447件
+- 確定: 708件 (Win 228 / Loss 272 / Flat 208) / pending 4件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000208 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $107.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T09:21:08.639039+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63443.7
-- Funnel: target 898 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T09:26:19.162853+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63441.9
+- Funnel: target 898 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +42.23% | $16,547,805.08 |
-| DEXE/USDT:USDT | +20.03% | $15,732,940.89 |
-| ON/USDT:USDT | +15.93% | $16,637,694.64 |
-| SOONNETWORK/USDT:USDT | +14.75% | $1,720,628.21 |
-| BULLA/USDT:USDT | +12.79% | $1,573,216.74 |
+| COTI/USDT:USDT | +43.86% | $16,593,874.27 |
+| DEXE/USDT:USDT | +18.67% | $15,878,114.14 |
+| ON/USDT:USDT | +18.56% | $16,799,417.63 |
+| SOONNETWORK/USDT:USDT | +15.79% | $1,731,518.25 |
+| BULLA/USDT:USDT | +12.00% | $1,584,426.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.72% | +4.66% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.74% | +2.67% |
-| O/USDT:USDT | below_1h_threshold | +1.34% | +1.27% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.56% | +3.50% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
+| O/USDT:USDT | below_1h_threshold | +1.60% | +1.53% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.14% | +1.08% |
 | INFQSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.92% |
 
 ## 7. 次に見るべき不足
