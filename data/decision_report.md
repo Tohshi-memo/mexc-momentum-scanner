@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T16:41:21.118502+00:00
+- generated_at: 2026-07-28T16:46:23.113565+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9710**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T16:41:11.703521+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=63847.0
+- 更新: 2026-07-28T16:46:15.294143+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63900.0
 - Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +12.47% | $6,337,129.08 |
-| AEON1/USDT:USDT | +4.64% | $2,724,429.79 |
-| ZIL/USDT:USDT | +4.13% | $1,186,585.57 |
-| BULLA/USDT:USDT | +2.93% | $2,388,735.63 |
-| LIT/USDT:USDT | +2.84% | $3,371,453.07 |
+| BTW/USDT:USDT | +16.95% | $6,457,173.03 |
+| BULLA/USDT:USDT | +4.04% | $2,399,717.33 |
+| ZIL/USDT:USDT | +3.45% | $1,230,315.82 |
+| LIT/USDT:USDT | +3.00% | $3,414,660.09 |
+| AEON1/USDT:USDT | +2.65% | $2,729,491.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +4.65% | +4.73% |
-| ZIL/USDT:USDT | below_1h_threshold | +4.14% | +4.22% |
-| LIT/USDT:USDT | below_1h_threshold | +2.94% | +3.02% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.94% | +3.02% |
-| BASTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.53% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.25% | +4.25% |
+| ZIL/USDT:USDT | below_1h_threshold | +3.58% | +3.57% |
+| LIT/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
+| BASTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.44% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.43% | +2.43% |
 
 ## 7. 次に見るべき不足
 
