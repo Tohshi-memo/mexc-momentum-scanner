@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T04:36:16.090396+00:00
+- generated_at: 2026-07-28T04:41:05.713307+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9678**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T04:36:09.192082+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63212.6
+- 更新: 2026-07-28T04:41:00.361630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=63199.5
 - Funnel: target 902 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +55.30% | $12,038,599.21 |
-| ON/USDT:USDT | +19.18% | $14,158,043.83 |
-| RIF/USDT:USDT | +18.09% | $7,461,496.39 |
-| SOONNETWORK/USDT:USDT | +15.79% | $1,471,126.42 |
-| BULLA/USDT:USDT | +14.78% | $1,076,277.05 |
+| COTI/USDT:USDT | +63.26% | $12,111,306.88 |
+| RIF/USDT:USDT | +19.58% | $7,470,622.57 |
+| ON/USDT:USDT | +18.26% | $14,251,745.58 |
+| SOONNETWORK/USDT:USDT | +16.50% | $1,472,842.11 |
+| BULLA/USDT:USDT | +15.46% | $1,082,613.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.69% | +3.84% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.60% | +2.75% |
-| O/USDT:USDT | below_1h_threshold | +2.05% | +2.21% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.30% | +1.45% |
-| LIT/USDT:USDT | below_1h_threshold | +1.06% | +1.21% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.62% | +4.80% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.23% | +3.40% |
+| O/USDT:USDT | below_1h_threshold | +2.13% | +2.31% |
+| RIF/USDT:USDT | below_1h_threshold | +1.95% | +2.12% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.49% | +1.67% |
 
 ## 7. 次に見るべき不足
 
