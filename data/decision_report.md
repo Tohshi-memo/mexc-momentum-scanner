@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T06:21:18.655171+00:00
+- generated_at: 2026-07-28T06:26:19.017087+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9679**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.10** / 初期 $100.00 (+8.10%)
-- 確定: 699件 (Win 226 / Loss 267 / Flat 206) / pending 3件 / skip 447件
+- 確定: 699件 (Win 226 / Loss 267 / Flat 206) / pending 4件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000126 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DEXE/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $108.10
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T06:21:11.444940+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63429.8
-- Funnel: target 902 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-28T06:26:09.721840+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63457.0
+- Funnel: target 902 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +71.35% | $13,469,543.87 |
-| DEXE/USDT:USDT | +20.60% | $13,974,294.32 |
-| RIF/USDT:USDT | +16.96% | $7,510,870.61 |
-| REZ/USDT:USDT | +16.15% | $1,000,152.29 |
-| BULLA/USDT:USDT | +12.38% | $1,356,394.17 |
+| COTI/USDT:USDT | +67.56% | $13,567,285.45 |
+| DEXE/USDT:USDT | +23.81% | $14,071,870.92 |
+| RIF/USDT:USDT | +17.17% | $7,523,188.84 |
+| REZ/USDT:USDT | +13.50% | $1,005,932.47 |
+| BULLA/USDT:USDT | +13.06% | $1,359,363.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +3.34% | +3.32% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.38% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.84% | +1.82% |
-| REZ/USDT:USDT | below_1h_threshold | +0.71% | +0.69% |
+| COTI/USDT:USDT | below_1h_threshold | +3.79% | +3.72% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.41% | +2.35% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.34% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.84% | +1.78% |
+| LIT/USDT:USDT | below_1h_threshold | +1.18% | +1.12% |
 
 ## 7. 次に見るべき不足
 
