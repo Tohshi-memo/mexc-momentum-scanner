@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T14:21:22.244093+00:00
+- generated_at: 2026-07-28T14:26:24.813278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9701**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.10** / 初期 $100.00 (+9.10%)
-- 確定: 720件 (Win 234 / Loss 275 / Flat 211) / pending 4件 / skip 448件
+- 確定: 720件 (Win 234 / Loss 275 / Flat 211) / pending 5件 / skip 448件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000328 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $109.10
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T14:21:15.088992+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=63019.5
-- Funnel: target 904 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1
+- 更新: 2026-07-28T14:26:17.217774+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63163.1
+- Funnel: target 904 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +57.12% | $22,436,088.24 |
-| ON/USDT:USDT | +31.61% | $20,173,620.47 |
-| SOONNETWORK/USDT:USDT | +28.85% | $2,601,921.45 |
-| DEXE/USDT:USDT | +26.04% | $16,439,900.13 |
-| VANRY/USDT:USDT | +20.76% | $1,453,447.25 |
+| COTI/USDT:USDT | +58.52% | $22,540,379.95 |
+| ON/USDT:USDT | +33.16% | $20,219,805.87 |
+| SOONNETWORK/USDT:USDT | +31.12% | $2,618,247.33 |
+| DEXE/USDT:USDT | +25.82% | $16,459,213.02 |
+| VANRY/USDT:USDT | +21.55% | $1,467,932.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.57% | +4.67% |
-| COTI/USDT:USDT | below_1h_threshold | +4.47% | +4.56% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.91% | +3.01% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.58% | +2.68% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.33% | +2.43% |
+| COTI/USDT:USDT | below_1h_threshold | +4.98% | +4.85% |
+| RIF/USDT:USDT | below_1h_threshold | +3.82% | +3.69% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.28% | +3.14% |
+| ACH/USDT:USDT | below_1h_threshold | +2.00% | +1.86% |
+| BASTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.79% |
 
 ## 7. 次に見るべき不足
 
