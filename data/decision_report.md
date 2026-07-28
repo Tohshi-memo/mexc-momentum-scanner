@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T08:21:27.921416+00:00
+- generated_at: 2026-07-28T08:26:22.159174+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9684**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T08:21:21.783342+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63456.1
-- Funnel: target 898 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1, 4h RSI 68.2 >= 65=1
+- 更新: 2026-07-28T08:26:15.148586+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63444.1
+- Funnel: target 898 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +47.64% | $15,660,101.17 |
-| DEXE/USDT:USDT | +28.99% | $14,903,478.74 |
-| ON/USDT:USDT | +15.95% | $15,983,493.53 |
-| RIF/USDT:USDT | +15.01% | $7,685,637.00 |
-| SOONNETWORK/USDT:USDT | +14.52% | $1,737,274.80 |
+| COTI/USDT:USDT | +48.43% | $15,767,037.36 |
+| DEXE/USDT:USDT | +30.09% | $15,014,494.46 |
+| RIF/USDT:USDT | +14.84% | $7,693,562.28 |
+| SOONNETWORK/USDT:USDT | +14.42% | $1,741,176.98 |
+| ON/USDT:USDT | +14.14% | $16,036,414.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +3.05% | +3.08% |
-| CAP/USDT:USDT | below_1h_threshold | +1.64% | +1.67% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
-| LIT/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.38% | +1.42% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.96% | +4.01% |
+| ON/USDT:USDT | below_1h_threshold | +3.94% | +3.99% |
+| LIT/USDT:USDT | below_1h_threshold | +1.76% | +1.81% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.74% | +1.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.38% | +1.43% |
 
 ## 7. 次に見るべき不足
 
