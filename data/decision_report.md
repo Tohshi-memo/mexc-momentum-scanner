@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T17:06:30.100560+00:00
+- generated_at: 2026-07-28T17:11:21.446952+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9713**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T17:06:23.062124+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63955.3
+- 更新: 2026-07-28T17:11:14.461323+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=63785.8
 - Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +18.34% | $5,941,831.66 |
-| JIMOTHY/USDT:USDT | +8.88% | $1,245,291.86 |
-| BULLA/USDT:USDT | +8.04% | $2,468,932.93 |
-| AEON1/USDT:USDT | +4.31% | $2,210,708.78 |
-| ZIL/USDT:USDT | +3.97% | $1,524,603.05 |
+| BTW/USDT:USDT | +16.08% | $6,025,601.94 |
+| BULLA/USDT:USDT | +7.77% | $2,499,061.13 |
+| JIMOTHY/USDT:USDT | +7.27% | $1,250,765.42 |
+| ZIL/USDT:USDT | +4.09% | $1,539,085.55 |
+| REZ/USDT:USDT | +3.80% | $1,042,720.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.53% |
-| REZ/USDT:USDT | below_1h_threshold | +1.39% | +1.49% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.29% | +1.39% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.38% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.21% | +1.31% |
+| REZ/USDT:USDT | below_1h_threshold | +2.60% | +2.96% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.64% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.51% |
+| B/USDT:USDT | below_1h_threshold | +0.98% | +1.35% |
+| LA/USDT:USDT | below_1h_threshold | +0.93% | +1.30% |
 
 ## 7. 次に見るべき不足
 
