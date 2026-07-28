@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T08:56:29.078698+00:00
+- generated_at: 2026-07-28T09:01:16.597538+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9686**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T08:56:19.521759+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63381.4
-- Funnel: target 898 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-28T09:01:09.650316+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63401.7
+- Funnel: target 898 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +46.12% | $16,170,342.04 |
-| DEXE/USDT:USDT | +30.73% | $16,027,351.99 |
-| ON/USDT:USDT | +18.77% | $16,448,942.98 |
-| SOONNETWORK/USDT:USDT | +13.81% | $1,774,663.03 |
-| RIF/USDT:USDT | +13.10% | $7,797,240.12 |
+| COTI/USDT:USDT | +46.01% | $16,209,560.81 |
+| DEXE/USDT:USDT | +32.21% | $14,980,347.96 |
+| ON/USDT:USDT | +19.21% | $16,173,132.21 |
+| SOONNETWORK/USDT:USDT | +14.61% | $1,695,167.78 |
+| RIF/USDT:USDT | +12.52% | $7,750,836.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.62% | +4.77% |
-| DEXE/USDT:USDT | below_1h_threshold | +4.59% | +4.74% |
-| AEON1/USDT:USDT | below_1h_threshold | +4.09% | +4.24% |
-| SYN/USDT:USDT | below_1h_threshold | +1.89% | +2.04% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.58% | +1.73% |
+| PROM/USDT:USDT | below_1h_threshold | +1.70% | +1.70% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
+| AAPU/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
 
 ## 7. 次に見るべき不足
 
