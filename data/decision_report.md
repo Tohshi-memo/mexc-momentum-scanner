@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T11:31:21.923672+00:00
+- generated_at: 2026-07-28T11:36:25.008212+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9693**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T11:31:11.945428+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63434.1
-- Funnel: target 898 → liquid 175 → pre 50 → checked 49 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
-- Strict後reject: 4h RSI 81.4 >= 65=1
+- 更新: 2026-07-28T11:36:17.813408+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63473.4
+- Funnel: target 898 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +62.01% | $18,901,568.01 |
-| DEXE/USDT:USDT | +24.00% | $16,295,619.46 |
-| ON/USDT:USDT | +22.99% | $18,382,022.60 |
-| SOONNETWORK/USDT:USDT | +16.84% | $1,868,164.61 |
-| VANRY/USDT:USDT | +14.70% | $1,344,761.65 |
+| COTI/USDT:USDT | +55.65% | $19,066,907.11 |
+| DEXE/USDT:USDT | +25.33% | $16,378,302.79 |
+| ON/USDT:USDT | +22.74% | $18,423,691.45 |
+| VANRY/USDT:USDT | +16.49% | $1,349,332.28 |
+| SOONNETWORK/USDT:USDT | +16.31% | $1,873,023.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.40% | +4.41% |
-| BANK/USDT:USDT | below_1h_threshold | +3.41% | +3.42% |
-| ON/USDT:USDT | below_1h_threshold | +1.89% | +1.91% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.51% | +1.52% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.40% | +1.41% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.40% | +4.35% |
+| BANK/USDT:USDT | below_1h_threshold | +2.31% | +2.26% |
+| COAI/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
+| ON/USDT:USDT | below_1h_threshold | +1.62% | +1.57% |
+| CAP/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
 
 ## 7. 次に見るべき不足
 
