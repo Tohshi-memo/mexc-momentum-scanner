@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T01:41:22.228218+00:00
+- generated_at: 2026-07-28T01:46:25.936211+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9664**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T01:41:11.297768+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=63209.5
+- 更新: 2026-07-28T01:46:15.662701+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=63144.4
 - Funnel: target 902 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- Strict後reject: 4h RSI 72.5 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +47.96% | $8,837,640.11 |
-| RIF/USDT:USDT | +12.56% | $7,309,363.93 |
-| SOONNETWORK/USDT:USDT | +10.97% | $1,339,631.30 |
-| DEXE/USDT:USDT | +9.41% | $14,958,146.37 |
-| ESPORTS/USDT:USDT | +9.14% | $5,115,594.60 |
+| COTI/USDT:USDT | +50.60% | $8,868,185.97 |
+| RIF/USDT:USDT | +12.71% | $7,311,853.28 |
+| SOONNETWORK/USDT:USDT | +12.10% | $1,342,682.83 |
+| DEXE/USDT:USDT | +12.02% | $15,045,412.87 |
+| ALLO/USDT:USDT | +8.49% | $5,490,635.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.63% | +4.02% |
-| COTI/USDT:USDT | below_1h_threshold | +2.25% | +2.64% |
-| RIF/USDT:USDT | below_1h_threshold | +2.07% | +2.46% |
-| LAB/USDT:USDT | below_1h_threshold | +1.84% | +2.22% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.67% | +2.06% |
+| COTI/USDT:USDT | below_1h_threshold | +4.00% | +4.49% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.56% | +3.04% |
+| RIF/USDT:USDT | below_1h_threshold | +2.21% | +2.69% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.05% | +2.54% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.95% | +2.44% |
 
 ## 7. 次に見るべき不足
 
