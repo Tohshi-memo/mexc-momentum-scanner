@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T16:30:54.154825+00:00
+- generated_at: 2026-07-28T16:36:26.378912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9708**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.38** / 初期 $100.00 (+9.38%)
-- 確定: 726件 (Win 236 / Loss 277 / Flat 213) / pending 5件 / skip 449件
+- 確定: 726件 (Win 236 / Loss 277 / Flat 213) / pending 6件 / skip 449件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000392 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DEXE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $109.38
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T16:26:12.258043+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=63797.3
-- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T16:36:19.251512+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63783.4
+- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | +3.15% | $1,810,743.29 |
-| JIMOTHY/USDT:USDT | +2.18% | $1,274,091.58 |
-| COAI/USDT:USDT | +2.11% | $2,291,131.65 |
-| BULLA/USDT:USDT | +2.02% | $2,334,283.67 |
-| ZAMA/USDT:USDT | +1.90% | $4,592,080.97 |
+| BTW/USDT:USDT | +9.56% | $6,170,953.25 |
+| AEON1/USDT:USDT | +4.75% | $2,719,736.99 |
+| BULLA/USDT:USDT | +3.02% | $2,364,757.34 |
+| LIT/USDT:USDT | +2.57% | $3,342,657.10 |
+| ZIL/USDT:USDT | +2.33% | $1,171,957.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +3.16% | +3.32% |
-| GGLL/USDT:USDT | below_1h_threshold | +2.93% | +3.09% |
-| BASTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.60% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.19% | +2.35% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.25% |
+| AEON1/USDT:USDT | below_1h_threshold | +4.76% | +4.94% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.99% | +3.17% |
+| GGLL/USDT:USDT | below_1h_threshold | +2.93% | +3.12% |
+| LIT/USDT:USDT | below_1h_threshold | +2.57% | +2.75% |
+| BASTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.63% |
 
 ## 7. 次に見るべき不足
 
