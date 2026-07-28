@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T15:26:37.001431+00:00
+- generated_at: 2026-07-28T15:31:33.421267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9704**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T15:26:27.004761+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.71% price=63833.7
-- Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-28T15:31:26.785066+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.55% price=63733.5
+- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1
+- Strict後reject: 4h RSI 77.8 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +57.24% | $23,503,347.92 |
-| ON/USDT:USDT | +45.05% | $21,679,452.37 |
-| SOONNETWORK/USDT:USDT | +37.13% | $2,999,721.03 |
-| BULLA/USDT:USDT | +26.81% | $2,191,612.17 |
-| VANRY/USDT:USDT | +23.79% | $1,528,335.36 |
+| COTI/USDT:USDT | +54.50% | $23,562,054.29 |
+| ON/USDT:USDT | +44.61% | $21,835,302.03 |
+| SOONNETWORK/USDT:USDT | +35.28% | $3,023,098.77 |
+| BULLA/USDT:USDT | +26.49% | $2,201,080.04 |
+| VANRY/USDT:USDT | +23.23% | $1,533,517.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_relative_strength | +5.47% | +4.76% |
-| JUP/USDT:USDT | below_1h_threshold | +3.12% | +2.41% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.35% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.89% | +2.18% |
-| XPL/USDT:USDT | below_1h_threshold | +2.88% | +2.18% |
+| SPCXSTOCK/USDT:USDT | below_relative_strength | +5.47% | +4.92% |
+| XPL/USDT:USDT | below_1h_threshold | +3.14% | +2.59% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +2.51% |
+| JUP/USDT:USDT | below_1h_threshold | +2.69% | +2.14% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.61% | +2.06% |
 
 ## 7. 次に見るべき不足
 
