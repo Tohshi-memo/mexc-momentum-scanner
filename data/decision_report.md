@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T15:01:33.784365+00:00
+- generated_at: 2026-07-28T15:06:32.816667+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9702**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T15:01:24.346246+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63403.7
+- 更新: 2026-07-28T15:06:23.560775+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63251.7
 - Funnel: target 904 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +55.43% | $22,998,194.15 |
-| SOONNETWORK/USDT:USDT | +36.51% | $2,828,380.60 |
-| ON/USDT:USDT | +33.88% | $19,622,454.13 |
-| BULLA/USDT:USDT | +26.36% | $2,119,605.23 |
-| DEXE/USDT:USDT | +25.82% | $15,667,142.65 |
+| COTI/USDT:USDT | +55.11% | $23,058,563.11 |
+| SOONNETWORK/USDT:USDT | +35.38% | $2,867,751.79 |
+| ON/USDT:USDT | +34.30% | $19,729,402.16 |
+| BULLA/USDT:USDT | +25.79% | $2,141,485.12 |
+| DEXE/USDT:USDT | +24.12% | $15,711,025.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.03% |
-| MSFU/USDT:USDT | below_1h_threshold | +2.14% | +2.11% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.99% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.86% |
-| GGLL/USDT:USDT | below_1h_threshold | +1.80% | +1.77% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.27% |
+| MSFU/USDT:USDT | below_1h_threshold | +2.14% | +2.35% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.23% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +2.10% |
+| GGLL/USDT:USDT | below_1h_threshold | +1.80% | +2.01% |
 
 ## 7. 次に見るべき不足
 
