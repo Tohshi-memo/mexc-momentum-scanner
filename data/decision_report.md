@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T07:51:14.536302+00:00
+- generated_at: 2026-07-28T07:56:10.775278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9682**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T07:51:06.314018+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=63450.9
+- 更新: 2026-07-28T07:56:03.636416+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63475.1
 - Funnel: target 898 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +49.09% | $15,022,255.59 |
-| DEXE/USDT:USDT | +24.83% | $14,922,859.92 |
-| BULLA/USDT:USDT | +15.14% | $1,417,984.70 |
-| RIF/USDT:USDT | +14.50% | $7,576,577.65 |
-| SOONNETWORK/USDT:USDT | +12.34% | $1,729,016.77 |
+| COTI/USDT:USDT | +48.15% | $15,098,346.44 |
+| DEXE/USDT:USDT | +24.87% | $14,994,275.64 |
+| RIF/USDT:USDT | +15.96% | $7,588,985.26 |
+| BULLA/USDT:USDT | +14.72% | $1,432,230.52 |
+| ON/USDT:USDT | +13.65% | $16,103,758.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +4.45% | +4.70% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.54% | +3.79% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.02% | +2.27% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.85% | +2.09% |
-| CAP/USDT:USDT | below_1h_threshold | +1.84% | +2.09% |
+| AEON1/USDT:USDT | below_1h_threshold | +3.67% | +3.89% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.48% | +3.69% |
+| SOONNETWORK/USDT:USDT | below_1h_threshold | +2.32% | +2.53% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.04% | +2.25% |
+| CAP/USDT:USDT | below_1h_threshold | +1.55% | +1.76% |
 
 ## 7. 次に見るべき不足
 
