@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T03:26:29.428074+00:00
+- generated_at: 2026-07-28T03:31:17.959724+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9673**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T03:26:18.874326+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=63290.0
+- 更新: 2026-07-28T03:31:08.652145+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63242.0
 - Funnel: target 902 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +70.48% | $11,029,684.15 |
-| RIF/USDT:USDT | +18.32% | $7,404,622.10 |
-| DEXE/USDT:USDT | +17.05% | $14,024,598.38 |
-| ON/USDT:USDT | +16.98% | $13,053,463.27 |
-| SOONNETWORK/USDT:USDT | +13.38% | $1,376,006.82 |
+| COTI/USDT:USDT | +69.06% | $11,063,359.94 |
+| ON/USDT:USDT | +18.20% | $13,094,454.00 |
+| DEXE/USDT:USDT | +16.89% | $14,075,910.89 |
+| RIF/USDT:USDT | +16.83% | $7,412,134.77 |
+| SOONNETWORK/USDT:USDT | +14.56% | $1,380,293.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +3.92% | +3.70% |
-| RIF/USDT:USDT | below_1h_threshold | +2.78% | +2.55% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.37% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.26% | +2.03% |
-| ON/USDT:USDT | below_1h_threshold | +1.93% | +1.71% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.75% | +3.60% |
+| ON/USDT:USDT | below_1h_threshold | +3.56% | +3.42% |
+| O/USDT:USDT | below_1h_threshold | +3.45% | +3.30% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.45% |
+| TAG/USDT:USDT | below_1h_threshold | +2.02% | +1.87% |
 
 ## 7. 次に見るべき不足
 
