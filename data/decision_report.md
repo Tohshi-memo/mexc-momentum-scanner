@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T08:51:36.287346+00:00
+- generated_at: 2026-07-28T08:56:29.078698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9686**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T08:51:26.732263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63452.8
+- 更新: 2026-07-28T08:56:19.521759+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=63381.4
 - Funnel: target 898 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.8 >= 65=1
+- Strict後reject: 4h RSI 69.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +47.79% | $16,104,062.98 |
-| DEXE/USDT:USDT | +30.32% | $15,823,676.33 |
-| ON/USDT:USDT | +19.95% | $16,348,907.17 |
-| SOONNETWORK/USDT:USDT | +14.47% | $1,763,471.92 |
-| RIF/USDT:USDT | +14.27% | $7,760,291.05 |
+| COTI/USDT:USDT | +46.12% | $16,170,342.04 |
+| DEXE/USDT:USDT | +30.73% | $16,027,351.99 |
+| ON/USDT:USDT | +18.77% | $16,448,942.98 |
+| SOONNETWORK/USDT:USDT | +13.81% | $1,774,663.03 |
+| RIF/USDT:USDT | +13.10% | $7,797,240.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.37% | +4.41% |
-| DEXE/USDT:USDT | below_1h_threshold | +4.11% | +4.15% |
-| AEON1/USDT:USDT | below_1h_threshold | +3.66% | +3.69% |
-| SYN/USDT:USDT | below_1h_threshold | +1.75% | +1.79% |
-| REZ/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
+| AKE/USDT:USDT | below_1h_threshold | +4.62% | +4.77% |
+| DEXE/USDT:USDT | below_1h_threshold | +4.59% | +4.74% |
+| AEON1/USDT:USDT | below_1h_threshold | +4.09% | +4.24% |
+| SYN/USDT:USDT | below_1h_threshold | +1.89% | +2.04% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.58% | +1.73% |
 
 ## 7. 次に見るべき不足
 
