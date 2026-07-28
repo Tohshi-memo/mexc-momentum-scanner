@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T14:56:27.638295+00:00
+- generated_at: 2026-07-28T15:01:33.784365+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9702**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.39** / 初期 $100.00 (+9.39%)
-- 確定: 721件 (Win 235 / Loss 275 / Flat 211) / pending 5件 / skip 448件
+- 確定: 721件 (Win 235 / Loss 275 / Flat 211) / pending 6件 / skip 448件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000383 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SOONNETWORK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $109.39
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T14:56:20.288553+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.63% price=63478.2
-- Funnel: target 904 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.2 >= 65=1
+- 更新: 2026-07-28T15:01:24.346246+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63403.7
+- Funnel: target 904 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +57.22% | $22,962,467.17 |
-| SOONNETWORK/USDT:USDT | +38.26% | $2,819,712.94 |
-| ON/USDT:USDT | +34.20% | $20,538,207.60 |
-| BULLA/USDT:USDT | +25.89% | $2,178,280.87 |
-| DEXE/USDT:USDT | +24.83% | $16,658,212.77 |
+| COTI/USDT:USDT | +55.43% | $22,998,194.15 |
+| SOONNETWORK/USDT:USDT | +36.51% | $2,828,380.60 |
+| ON/USDT:USDT | +33.88% | $19,622,454.13 |
+| BULLA/USDT:USDT | +26.36% | $2,119,605.23 |
+| DEXE/USDT:USDT | +25.82% | $15,667,142.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_relative_strength | +5.56% | +4.92% |
-| COAI/USDT:USDT | below_1h_threshold | +4.96% | +4.33% |
-| COTI/USDT:USDT | below_1h_threshold | +4.20% | +3.56% |
-| VANRY/USDT:USDT | below_1h_threshold | +3.78% | +3.14% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.60% | +2.97% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.06% | +3.03% |
+| MSFU/USDT:USDT | below_1h_threshold | +2.14% | +2.11% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.99% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.86% |
+| GGLL/USDT:USDT | below_1h_threshold | +1.80% | +1.77% |
 
 ## 7. 次に見るべき不足
 
