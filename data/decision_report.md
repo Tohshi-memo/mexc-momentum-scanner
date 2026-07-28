@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T16:11:20.627782+00:00
+- generated_at: 2026-07-28T16:16:25.308710+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9707**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T16:11:13.690531+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=63793.0
-- Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-28T16:16:18.311895+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63786.6
+- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VANRY/USDT:USDT | +4.34% | $1,537,934.27 |
-| ESPORTS/USDT:USDT | +3.91% | $3,166,695.05 |
-| ON/USDT:USDT | +3.60% | $24,430,838.51 |
-| BULLA/USDT:USDT | +3.18% | $2,255,226.11 |
-| ZAMA/USDT:USDT | +1.48% | $4,575,475.66 |
+| ESPORTS/USDT:USDT | +4.83% | $3,186,268.97 |
+| VANRY/USDT:USDT | +3.53% | $1,562,533.13 |
+| BULLA/USDT:USDT | +2.69% | $2,294,243.05 |
+| ON/USDT:USDT | +2.52% | $24,817,360.49 |
+| JIMOTHY/USDT:USDT | +1.88% | $1,271,495.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +4.15% | +4.32% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.76% | +3.93% |
-| ON/USDT:USDT | below_1h_threshold | +3.40% | +3.57% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.19% | +3.35% |
-| BASTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.61% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.83% | +5.01% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.53% | +3.71% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.70% | +2.87% |
+| ON/USDT:USDT | below_1h_threshold | +2.47% | +2.64% |
+| BASTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.62% |
 
 ## 7. 次に見るべき不足
 
