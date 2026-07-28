@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T10:36:25.887396+00:00
+- generated_at: 2026-07-28T10:41:31.807089+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9690**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T10:36:16.207417+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63390.9
+- 更新: 2026-07-28T10:41:20.482048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63462.5
 - Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +46.55% | $17,684,223.11 |
-| DEXE/USDT:USDT | +26.69% | $16,320,242.01 |
-| ON/USDT:USDT | +20.73% | $18,305,871.05 |
-| VANRY/USDT:USDT | +18.02% | $1,263,974.76 |
-| BULLA/USDT:USDT | +16.36% | $1,661,532.47 |
+| COTI/USDT:USDT | +44.00% | $17,759,119.80 |
+| DEXE/USDT:USDT | +28.73% | $16,437,565.08 |
+| ON/USDT:USDT | +19.63% | $18,790,227.57 |
+| VANRY/USDT:USDT | +16.72% | $1,270,592.11 |
+| BULLA/USDT:USDT | +16.17% | $1,664,508.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +4.57% | +4.53% |
-| AKE/USDT:USDT | below_1h_threshold | +3.75% | +3.72% |
-| PROM/USDT:USDT | below_1h_threshold | +3.10% | +3.06% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.51% |
+| AKE/USDT:USDT | below_1h_threshold | +4.38% | +4.23% |
+| AEON1/USDT:USDT | below_1h_threshold | +3.84% | +3.69% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.25% | +2.10% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.40% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.42% | +1.27% |
 
 ## 7. 次に見るべき不足
 
