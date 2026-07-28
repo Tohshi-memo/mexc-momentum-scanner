@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T11:41:22.728623+00:00
+- generated_at: 2026-07-28T11:46:15.561572+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9693**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.46** / 初期 $100.00 (+8.46%)
-- 確定: 713件 (Win 231 / Loss 273 / Flat 209) / pending 5件 / skip 447件
+- 確定: 713件 (Win 231 / Loss 273 / Flat 209) / pending 6件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000238 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $108.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T11:41:15.681762+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63437.0
-- Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T11:46:09.898566+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63374.6
+- Funnel: target 898 → liquid 178 → pre 50 → checked 48 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=2
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +53.59% | $19,194,543.05 |
-| DEXE/USDT:USDT | +25.14% | $16,416,694.20 |
-| ON/USDT:USDT | +23.51% | $18,457,094.46 |
-| VANRY/USDT:USDT | +17.79% | $1,364,397.72 |
-| SOONNETWORK/USDT:USDT | +15.89% | $1,876,163.81 |
+| COTI/USDT:USDT | +54.20% | $19,263,966.93 |
+| DEXE/USDT:USDT | +23.28% | $16,496,394.98 |
+| ON/USDT:USDT | +23.26% | $18,514,549.25 |
+| VANRY/USDT:USDT | +18.25% | $1,370,536.83 |
+| SOONNETWORK/USDT:USDT | +15.18% | $1,880,072.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.42% | +4.43% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.40% | +4.41% |
-| PEOPLE/USDT:USDT | below_1h_threshold | +3.66% | +3.67% |
-| BANK/USDT:USDT | below_1h_threshold | +3.00% | +3.01% |
-| COAI/USDT:USDT | below_1h_threshold | +2.65% | +2.66% |
+| COTI/USDT:USDT | below_1h_threshold | +4.88% | +4.99% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +3.98% | +4.08% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.32% | +3.42% |
+| COAI/USDT:USDT | below_1h_threshold | +2.46% | +2.57% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.14% | +2.25% |
 
 ## 7. 次に見るべき不足
 
