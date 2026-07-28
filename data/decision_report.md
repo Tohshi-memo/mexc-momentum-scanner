@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T10:31:20.122420+00:00
+- generated_at: 2026-07-28T10:36:25.887396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9690**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$107.80** / 初期 $100.00 (+7.80%)
-- 確定: 710件 (Win 229 / Loss 273 / Flat 208) / pending 4件 / skip 447件
+- 確定: 710件 (Win 229 / Loss 273 / Flat 208) / pending 5件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000216 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $107.80
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T10:31:11.022541+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63350.9
-- Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T10:36:16.207417+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63390.9
+- Funnel: target 898 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +47.46% | $17,633,538.09 |
-| DEXE/USDT:USDT | +24.08% | $16,240,860.74 |
-| ON/USDT:USDT | +20.67% | $18,009,398.99 |
-| VANRY/USDT:USDT | +17.64% | $1,256,965.88 |
-| BULLA/USDT:USDT | +16.84% | $1,655,316.30 |
+| COTI/USDT:USDT | +46.55% | $17,684,223.11 |
+| DEXE/USDT:USDT | +26.69% | $16,320,242.01 |
+| ON/USDT:USDT | +20.73% | $18,305,871.05 |
+| VANRY/USDT:USDT | +18.02% | $1,263,974.76 |
+| BULLA/USDT:USDT | +16.36% | $1,661,532.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +4.98% | +5.01% |
-| AKE/USDT:USDT | below_1h_threshold | +4.04% | +4.07% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.18% | +3.20% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.02% | +3.05% |
-| PROM/USDT:USDT | below_1h_threshold | +2.43% | +2.46% |
+| AEON1/USDT:USDT | below_1h_threshold | +4.57% | +4.53% |
+| AKE/USDT:USDT | below_1h_threshold | +3.75% | +3.72% |
+| PROM/USDT:USDT | below_1h_threshold | +3.10% | +3.06% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.55% | +1.51% |
 
 ## 7. 次に見るべき不足
 
