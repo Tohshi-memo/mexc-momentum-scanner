@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T16:01:24.801325+00:00
+- generated_at: 2026-07-28T16:06:33.690445+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9707**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.57** / 初期 $100.00 (+9.57%)
-- 確定: 725件 (Win 236 / Loss 276 / Flat 213) / pending 5件 / skip 449件
+- 確定: 725件 (Win 236 / Loss 276 / Flat 213) / pending 6件 / skip 449件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000392 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $109.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T16:01:13.300848+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63885.6
-- Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T16:06:24.166250+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63863.1
+- Funnel: target 904 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.6 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +3.35% | $24,858,887.40 |
-| SNXX/USDT:USDT | +0.96% | $5,208,196.61 |
-| VANRY/USDT:USDT | +0.74% | $1,514,615.54 |
-| MUU/USDT:USDT | +0.67% | $1,280,307.47 |
-| SNDKSTOCK/USDT:USDT | +0.60% | $449,767,964.41 |
+| ON/USDT:USDT | +5.57% | $24,015,922.61 |
+| ESPORTS/USDT:USDT | +4.05% | $3,139,343.30 |
+| BULLA/USDT:USDT | +2.66% | $2,232,162.10 |
+| COTI/USDT:USDT | +2.22% | $25,447,725.40 |
+| SNXX/USDT:USDT | +2.17% | $5,248,821.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +4.98% | +5.00% |
-| MUU/USDT:USDT | below_1h_threshold | +3.90% | +3.92% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.89% | +3.92% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.67% | +3.69% |
-| COTI/USDT:USDT | below_1h_threshold | +3.37% | +3.39% |
+| KORU/USDT:USDT | below_1h_threshold | +4.98% | +5.04% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.24% | +4.30% |
+| MUU/USDT:USDT | below_1h_threshold | +3.90% | +3.96% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.89% | +3.95% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.67% | +3.73% |
 
 ## 7. 次に見るべき不足
 
