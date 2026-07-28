@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T13:11:13.628814+00:00
+- generated_at: 2026-07-28T13:16:13.028246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9701**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.10** / 初期 $100.00 (+9.10%)
-- 確定: 720件 (Win 234 / Loss 275 / Flat 211) / pending 2件 / skip 448件
+- 確定: 720件 (Win 234 / Loss 275 / Flat 211) / pending 3件 / skip 448件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000328 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $109.10
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T13:11:06.631796+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63459.9
-- Funnel: target 903 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T13:16:05.882803+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=63477.4
+- Funnel: target 903 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +46.63% | $21,095,439.08 |
-| ON/USDT:USDT | +32.40% | $18,800,681.36 |
-| SOONNETWORK/USDT:USDT | +27.53% | $2,351,426.64 |
-| DEXE/USDT:USDT | +25.36% | $16,469,796.89 |
-| BULLA/USDT:USDT | +22.14% | $1,870,533.02 |
+| COTI/USDT:USDT | +50.05% | $21,176,486.75 |
+| ON/USDT:USDT | +34.88% | $18,956,082.03 |
+| SOONNETWORK/USDT:USDT | +29.61% | $2,364,330.87 |
+| BULLA/USDT:USDT | +22.88% | $1,900,257.60 |
+| DEXE/USDT:USDT | +22.53% | $16,551,938.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +4.17% | +4.27% |
-| CAP/USDT:USDT | below_1h_threshold | +1.64% | +1.74% |
-| CELHSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.93% |
-| CHZ/USDT:USDT | below_1h_threshold | +0.60% | +0.70% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.69% |
+| COTI/USDT:USDT | below_1h_threshold | +2.31% | +2.37% |
+| CAP/USDT:USDT | below_1h_threshold | +1.85% | +1.92% |
+| ON/USDT:USDT | below_1h_threshold | +1.79% | +1.86% |
+| AEON1/USDT:USDT | below_1h_threshold | +0.93% | +1.00% |
+| CELHSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.90% |
 
 ## 7. 次に見るべき不足
 
