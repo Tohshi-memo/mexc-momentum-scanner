@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T03:46:28.870048+00:00
+- generated_at: 2026-07-28T03:51:21.922854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9674**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T03:46:19.121817+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=63310.4
-- Funnel: target 902 → liquid 174 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1
+- 更新: 2026-07-28T03:51:12.799753+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=63271.8
+- Funnel: target 902 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +68.34% | $11,249,758.56 |
-| ON/USDT:USDT | +22.36% | $13,402,805.20 |
-| RIF/USDT:USDT | +17.24% | $7,446,622.83 |
-| SOONNETWORK/USDT:USDT | +16.41% | $1,428,365.00 |
-| DEXE/USDT:USDT | +11.98% | $14,211,490.26 |
+| COTI/USDT:USDT | +69.79% | $11,313,833.08 |
+| ON/USDT:USDT | +19.65% | $13,472,249.42 |
+| RIF/USDT:USDT | +18.21% | $7,472,185.38 |
+| SOONNETWORK/USDT:USDT | +16.46% | $1,446,755.28 |
+| DEXE/USDT:USDT | +10.81% | $14,251,782.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +3.86% | +3.60% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.98% | +2.72% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.67% | +2.41% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.34% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.59% | +2.33% |
+| ON/USDT:USDT | below_relative_strength | +5.01% | +4.81% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.66% | +4.46% |
+| AEON1/USDT:USDT | below_1h_threshold | +4.62% | +4.42% |
+| O/USDT:USDT | below_1h_threshold | +3.69% | +3.49% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.60% | +2.40% |
 
 ## 7. 次に見るべき不足
 
