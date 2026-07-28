@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T07:21:10.930703+00:00
+- generated_at: 2026-07-28T07:26:11.839658+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9680**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T07:21:04.599964+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=63490.7
+- 更新: 2026-07-28T07:26:05.003616+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=63533.1
 - Funnel: target 898 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +57.91% | $14,525,102.16 |
-| DEXE/USDT:USDT | +25.86% | $14,336,470.42 |
-| BULLA/USDT:USDT | +16.12% | $1,364,505.81 |
-| ON/USDT:USDT | +15.68% | $15,812,574.52 |
-| RIF/USDT:USDT | +15.17% | $7,514,580.17 |
+| COTI/USDT:USDT | +53.69% | $14,573,746.71 |
+| DEXE/USDT:USDT | +24.99% | $14,410,099.13 |
+| BULLA/USDT:USDT | +15.72% | $1,366,393.10 |
+| RIF/USDT:USDT | +15.47% | $7,518,166.95 |
+| ON/USDT:USDT | +14.38% | $15,898,043.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +4.23% | +4.42% |
-| ON/USDT:USDT | below_1h_threshold | +2.34% | +2.53% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.99% | +2.17% |
-| AKE/USDT:USDT | below_1h_threshold | +1.82% | +2.01% |
-| BANK/USDT:USDT | below_1h_threshold | +1.50% | +1.68% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.79% | +3.91% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.91% | +2.03% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.66% | +1.78% |
+| BANK/USDT:USDT | below_1h_threshold | +1.66% | +1.78% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.64% | +1.76% |
 
 ## 7. 次に見るべき不足
 
