@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T00:06:14.267568+00:00
+- generated_at: 2026-07-28T00:11:17.908702+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9658**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$108.60** / 初期 $100.00 (+8.60%)
-- 確定: 678件 (Win 221 / Loss 257 / Flat 200) / pending 2件 / skip 447件
+- 確定: 678件 (Win 221 / Loss 257 / Flat 200) / pending 3件 / skip 447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000175 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $108.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T00:06:07.427754+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63691.9
-- Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T00:11:10.719009+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=63610.1
+- Funnel: target 902 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +37.49% | $7,826,288.70 |
-| JIMOTHY/USDT:USDT | +24.03% | $1,675,500.60 |
-| AEON1/USDT:USDT | +13.75% | $1,877,920.34 |
-| SOONNETWORK/USDT:USDT | +9.60% | $1,260,064.62 |
-| ALLO/USDT:USDT | +7.36% | $5,381,265.70 |
+| COTI/USDT:USDT | +42.89% | $7,902,533.80 |
+| JIMOTHY/USDT:USDT | +25.82% | $1,685,801.78 |
+| AEON1/USDT:USDT | +11.83% | $1,887,107.09 |
+| SOONNETWORK/USDT:USDT | +10.69% | $1,265,496.48 |
+| ALLO/USDT:USDT | +7.02% | $5,401,918.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.02% | +4.07% |
-| RIF/USDT:USDT | below_1h_threshold | +3.22% | +3.27% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.13% | +2.18% |
-| BANK/USDT:USDT | below_1h_threshold | +1.91% | +1.96% |
-| CRV/USDT:USDT | below_1h_threshold | +0.82% | +0.87% |
+| RIF/USDT:USDT | below_1h_threshold | +3.95% | +4.13% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.90% | +3.08% |
+| COTI/USDT:USDT | below_1h_threshold | +2.50% | +2.68% |
+| VANRY/USDT:USDT | below_1h_threshold | +1.90% | +2.08% |
+| BANK/USDT:USDT | below_1h_threshold | +0.73% | +0.91% |
 
 ## 7. 次に見るべき不足
 
