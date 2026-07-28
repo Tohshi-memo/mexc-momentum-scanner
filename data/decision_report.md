@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T13:51:13.226898+00:00
+- generated_at: 2026-07-28T13:56:30.384601+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9701**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T13:51:08.305135+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.94% price=62926.0
-- Funnel: target 904 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T13:56:22.976011+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.84% price=62985.4
+- Funnel: target 904 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.0 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +53.49% | $21,813,625.49 |
-| ON/USDT:USDT | +32.21% | $19,868,358.24 |
-| SOONNETWORK/USDT:USDT | +28.24% | $2,484,492.96 |
-| DEXE/USDT:USDT | +24.80% | $16,986,470.86 |
-| BULLA/USDT:USDT | +22.81% | $2,038,610.27 |
+| COTI/USDT:USDT | +50.16% | $21,895,221.83 |
+| ON/USDT:USDT | +31.52% | $19,933,380.25 |
+| SOONNETWORK/USDT:USDT | +29.23% | $2,510,248.49 |
+| DEXE/USDT:USDT | +25.29% | $17,021,636.80 |
+| BULLA/USDT:USDT | +23.16% | $2,051,805.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +4.83% | +5.77% |
-| COTI/USDT:USDT | below_1h_threshold | +4.63% | +5.57% |
-| UB/USDT:USDT | below_1h_threshold | +3.80% | +4.74% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.09% | +3.02% |
-| REZ/USDT:USDT | below_1h_threshold | +1.47% | +2.41% |
+| UB/USDT:USDT | below_1h_threshold | +3.83% | +4.68% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.34% | +4.18% |
+| COTI/USDT:USDT | below_1h_threshold | +2.32% | +3.17% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.78% | +2.62% |
+| CAP/USDT:USDT | below_1h_threshold | +1.44% | +2.28% |
 
 ## 7. 次に見るべき不足
 
