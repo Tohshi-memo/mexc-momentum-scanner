@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T20:16:20.424266+00:00
+- generated_at: 2026-07-28T20:21:19.070639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9725**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T20:16:14.952899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63972.0
+- 更新: 2026-07-28T20:21:12.227300+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=63950.1
 - Funnel: target 904 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +28.66% | $1,363,891.62 |
-| ON/USDT:USDT | +15.94% | $36,422,800.53 |
-| BTW/USDT:USDT | +15.20% | $5,750,021.80 |
-| RIF/USDT:USDT | +14.51% | $4,573,857.89 |
-| BEAT/USDT:USDT | +11.00% | $58,828,848.48 |
+| JIMOTHY/USDT:USDT | +27.73% | $1,368,381.31 |
+| RIF/USDT:USDT | +16.13% | $4,578,769.65 |
+| BTW/USDT:USDT | +16.06% | $5,758,460.96 |
+| ON/USDT:USDT | +14.25% | $36,886,908.01 |
+| BEAT/USDT:USDT | +10.83% | $58,993,185.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +1.67% | +1.53% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.41% | +1.27% |
-| TAO/USDT:USDT | below_1h_threshold | +1.34% | +1.20% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.07% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.87% | +0.73% |
+| CAP/USDT:USDT | below_1h_threshold | +2.30% | +2.20% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.67% | +1.56% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.56% | +1.45% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.11% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.14% | +1.03% |
 
 ## 7. 次に見るべき不足
 
