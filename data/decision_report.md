@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T11:01:16.926889+00:00
+- generated_at: 2026-07-28T11:06:17.063266+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9691**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T11:01:09.856434+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63480.9
-- Funnel: target 898 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-28T11:06:10.066686+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=63397.9
+- Funnel: target 898 → liquid 173 → pre 50 → checked 49 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +48.56% | $17,986,156.33 |
-| DEXE/USDT:USDT | +23.17% | $15,913,414.30 |
-| ON/USDT:USDT | +20.35% | $17,838,733.95 |
-| VANRY/USDT:USDT | +15.11% | $1,298,361.68 |
-| BULLA/USDT:USDT | +14.99% | $1,640,135.87 |
+| COTI/USDT:USDT | +50.88% | $18,069,106.54 |
+| DEXE/USDT:USDT | +22.72% | $15,987,363.99 |
+| ON/USDT:USDT | +19.80% | $17,929,707.89 |
+| BULLA/USDT:USDT | +15.33% | $1,652,422.33 |
+| SOONNETWORK/USDT:USDT | +15.27% | $1,831,156.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.36% | +0.30% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.20% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.15% |
-| ETNSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.12% |
+| COTI/USDT:USDT | below_1h_threshold | +2.25% | +2.32% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.47% | +0.54% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.36% | +0.43% |
+| UNI/USDT:USDT | below_1h_threshold | +0.26% | +0.33% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.28% |
 
 ## 7. 次に見るべき不足
 
