@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-28T16:21:24.781644+00:00
+- generated_at: 2026-07-28T16:26:19.197141+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9708**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-28T16:21:16.458741+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63884.7
+- 更新: 2026-07-28T16:26:12.258043+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=63797.3
 - Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +3.83% | $3,230,584.35 |
-| BULLA/USDT:USDT | +3.27% | $2,309,424.15 |
-| ZAMA/USDT:USDT | +2.56% | $4,585,989.02 |
-| LIT/USDT:USDT | +2.29% | $3,193,561.95 |
-| ON/USDT:USDT | +1.88% | $24,981,192.63 |
+| BROCCOLIF3B/USDT:USDT | +3.15% | $1,810,743.29 |
+| JIMOTHY/USDT:USDT | +2.18% | $1,274,091.58 |
+| COAI/USDT:USDT | +2.11% | $2,291,131.65 |
+| BULLA/USDT:USDT | +2.02% | $2,334,283.67 |
+| ZAMA/USDT:USDT | +1.90% | $4,592,080.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.91% | +3.93% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.32% | +3.34% |
-| GGLL/USDT:USDT | below_1h_threshold | +2.93% | +2.96% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.56% | +2.59% |
-| LIT/USDT:USDT | below_1h_threshold | +2.17% | +2.19% |
+| BROCCOLIF3B/USDT:USDT | below_1h_threshold | +3.16% | +3.32% |
+| GGLL/USDT:USDT | below_1h_threshold | +2.93% | +3.09% |
+| BASTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.60% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.19% | +2.35% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.25% |
 
 ## 7. 次に見るべき不足
 
