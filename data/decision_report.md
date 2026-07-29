@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T07:36:20.070698+00:00
+- generated_at: 2026-07-29T07:41:16.520772+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9778**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T07:36:13.194229+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64421.9
+- 更新: 2026-07-29T07:41:09.424650+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64435.1
 - Funnel: target 907 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +69.60% | $1,993,678.09 |
-| AEON1/USDT:USDT | +19.35% | $1,887,335.28 |
-| BTW/USDT:USDT | +18.91% | $8,045,240.81 |
-| BEAT/USDT:USDT | +16.83% | $43,572,378.40 |
-| EUL/USDT:USDT | +15.67% | $2,930,603.11 |
+| JIMOTHY/USDT:USDT | +72.53% | $2,017,510.76 |
+| BEAT/USDT:USDT | +20.10% | $43,898,768.80 |
+| AEON1/USDT:USDT | +19.02% | $1,911,584.72 |
+| EUL/USDT:USDT | +14.84% | $2,941,044.53 |
+| BTW/USDT:USDT | +14.62% | $8,103,800.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.40% | +2.38% |
-| PHAROS/USDT:USDT | below_1h_threshold | +1.24% | +1.22% |
-| PI/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
-| EUL/USDT:USDT | below_1h_threshold | +1.17% | +1.15% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.98% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.21% | +4.17% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.89% | +1.85% |
+| PHAROS/USDT:USDT | below_1h_threshold | +1.15% | +1.11% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.96% |
+| PI/USDT:USDT | below_1h_threshold | +0.97% | +0.92% |
 
 ## 7. 次に見るべき不足
 
