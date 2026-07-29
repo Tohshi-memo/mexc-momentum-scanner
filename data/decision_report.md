@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T05:36:16.103316+00:00
+- generated_at: 2026-07-29T05:41:16.532541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9775**
 
@@ -63,17 +63,17 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.16** / 初期 $100.00 (+10.16%)
-- 確定: 760件 (Win 246 / Loss 291 / Flat 223) / pending 0件 / skip 485件
+- 確定: 760件 (Win 246 / Loss 291 / Flat 223) / pending 0件 / skip 486件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000434 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STXSTOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.16
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T05:36:08.978087+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63988.0
-- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T05:41:08.860304+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63988.2
+- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +73.25% | $1,692,229.41 |
-| BTW/USDT:USDT | +34.61% | $7,334,715.08 |
-| BEAT/USDT:USDT | +18.14% | $45,325,795.41 |
-| EUL/USDT:USDT | +17.67% | $2,972,730.00 |
-| AEON1/USDT:USDT | +17.36% | $1,562,197.20 |
+| JIMOTHY/USDT:USDT | +80.67% | $1,726,171.00 |
+| BTW/USDT:USDT | +34.00% | $7,381,572.69 |
+| AEON1/USDT:USDT | +20.02% | $1,632,771.81 |
+| EUL/USDT:USDT | +18.58% | $2,984,217.30 |
+| BEAT/USDT:USDT | +18.33% | $45,384,766.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.29% | +4.23% |
-| LIT/USDT:USDT | below_1h_threshold | +2.02% | +1.95% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.43% | +1.36% |
-| ZIL/USDT:USDT | below_1h_threshold | +1.16% | +1.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.09% | +1.02% |
+| EUL/USDT:USDT | below_1h_threshold | +1.80% | +1.73% |
+| LIT/USDT:USDT | below_1h_threshold | +1.54% | +1.47% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
+| JUP/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
 
 ## 7. 次に見るべき不足
 
