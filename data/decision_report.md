@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T02:16:25.196958+00:00
+- generated_at: 2026-07-29T02:21:22.497898+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9754**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T02:16:18.016534+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63790.8
+- 更新: 2026-07-29T02:21:15.304954+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63748.2
 - Funnel: target 904 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +23.87% | $1,239,722.24 |
-| BTW/USDT:USDT | +13.88% | $6,155,646.88 |
-| BEAT/USDT:USDT | +13.71% | $45,405,326.03 |
-| KAITO/USDT:USDT | +10.29% | $9,500,221.29 |
-| ZIL/USDT:USDT | +9.20% | $8,735,286.51 |
+| JIMOTHY/USDT:USDT | +23.93% | $1,244,398.11 |
+| BEAT/USDT:USDT | +14.44% | $45,488,003.53 |
+| BTW/USDT:USDT | +13.89% | $6,165,891.24 |
+| KAITO/USDT:USDT | +10.33% | $9,517,900.90 |
+| ZIL/USDT:USDT | +8.95% | $8,747,064.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.46% | +4.29% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.04% |
-| TAG/USDT:USDT | below_1h_threshold | +1.62% | +1.45% |
-| O/USDT:USDT | below_1h_threshold | +1.24% | +1.07% |
-| UB/USDT:USDT | below_1h_threshold | +0.80% | +0.63% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.42% | +4.32% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.10% |
+| O/USDT:USDT | below_1h_threshold | +1.80% | +1.69% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
+| LA/USDT:USDT | below_1h_threshold | +0.84% | +0.74% |
 
 ## 7. 次に見るべき不足
 
