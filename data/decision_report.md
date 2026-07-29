@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T07:01:14.254073+00:00
+- generated_at: 2026-07-29T07:06:21.455251+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9778**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T07:01:08.642731+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64407.4
+- 更新: 2026-07-29T07:06:14.511410+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64397.5
 - Funnel: target 907 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +66.29% | $1,920,647.40 |
-| BTW/USDT:USDT | +35.38% | $7,468,180.04 |
-| AEON1/USDT:USDT | +18.58% | $1,798,350.81 |
-| BEAT/USDT:USDT | +18.10% | $41,738,466.92 |
-| EUL/USDT:USDT | +14.89% | $2,858,032.69 |
+| JIMOTHY/USDT:USDT | +66.69% | $1,928,527.24 |
+| BTW/USDT:USDT | +33.34% | $7,514,126.03 |
+| AEON1/USDT:USDT | +18.91% | $1,811,699.57 |
+| BEAT/USDT:USDT | +15.74% | $42,429,096.56 |
+| RIF/USDT:USDT | +14.10% | $3,631,227.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COPSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.00% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
-| GGLL/USDT:USDT | below_1h_threshold | +0.63% | +0.63% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.01% | +1.02% |
+| COPSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.01% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.75% |
+| GGLL/USDT:USDT | below_1h_threshold | +0.63% | +0.64% |
 
 ## 7. 次に見るべき不足
 
