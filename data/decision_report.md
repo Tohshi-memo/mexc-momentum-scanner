@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T02:21:22.497898+00:00
+- generated_at: 2026-07-29T02:26:22.797443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9754**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T02:21:15.304954+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=63748.2
-- Funnel: target 904 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- 更新: 2026-07-29T02:26:15.239773+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=63843.0
+- Funnel: target 904 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.0 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +23.93% | $1,244,398.11 |
-| BEAT/USDT:USDT | +14.44% | $45,488,003.53 |
-| BTW/USDT:USDT | +13.89% | $6,165,891.24 |
-| KAITO/USDT:USDT | +10.33% | $9,517,900.90 |
-| ZIL/USDT:USDT | +8.95% | $8,747,064.72 |
+| JIMOTHY/USDT:USDT | +28.29% | $1,249,059.78 |
+| BEAT/USDT:USDT | +14.93% | $45,596,572.35 |
+| BTW/USDT:USDT | +14.59% | $6,178,207.37 |
+| KAITO/USDT:USDT | +10.77% | $9,536,059.12 |
+| ZIL/USDT:USDT | +8.15% | $8,783,397.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.42% | +4.32% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.10% |
-| O/USDT:USDT | below_1h_threshold | +1.80% | +1.69% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
-| LA/USDT:USDT | below_1h_threshold | +0.84% | +0.74% |
+| TAG/USDT:USDT | below_1h_threshold | +2.62% | +2.37% |
+| O/USDT:USDT | below_1h_threshold | +2.29% | +2.04% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +1.95% |
+| BTW/USDT:USDT | below_1h_threshold | +1.21% | +0.96% |
+| LA/USDT:USDT | below_1h_threshold | +1.20% | +0.95% |
 
 ## 7. 次に見るべき不足
 
