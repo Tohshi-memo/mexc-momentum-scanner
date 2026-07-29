@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T09:21:19.570193+00:00
+- generated_at: 2026-07-29T09:26:23.358879+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9782**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T09:21:12.648334+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64436.5
+- 更新: 2026-07-29T09:26:16.357828+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64449.9
 - Funnel: target 907 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +98.42% | $2,719,200.11 |
-| AEON1/USDT:USDT | +22.56% | $2,104,035.32 |
-| BEAT/USDT:USDT | +22.20% | $43,408,284.34 |
-| EUL/USDT:USDT | +14.51% | $3,118,398.48 |
-| KAITO/USDT:USDT | +8.86% | $7,812,803.34 |
+| JIMOTHY/USDT:USDT | +108.91% | $2,742,326.63 |
+| AEON1/USDT:USDT | +22.01% | $2,120,123.30 |
+| BEAT/USDT:USDT | +21.34% | $43,486,992.19 |
+| EUL/USDT:USDT | +13.06% | $3,126,299.54 |
+| KAITO/USDT:USDT | +9.35% | $7,873,952.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +2.09% | +2.02% |
-| UNI/USDT:USDT | below_1h_threshold | +1.78% | +1.71% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +0.95% |
-| UB/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
-| AEON1/USDT:USDT | below_1h_threshold | +0.73% | +0.66% |
+| UNI/USDT:USDT | below_1h_threshold | +2.11% | +2.02% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.04% | +1.95% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +0.93% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.74% | +0.64% |
+| TAO/USDT:USDT | below_1h_threshold | +0.67% | +0.58% |
 
 ## 7. 次に見るべき不足
 
