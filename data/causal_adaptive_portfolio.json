@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 110.16490462676056,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-29T05:56:21.574831+00:00",
+  "updated_at": "2026-07-29T06:01:22.733249+00:00",
   "high_watermark": 110.9894074191052,
   "max_drawdown_pct": 3.463237719717767,
   "loss_streak": 2,
@@ -97479,9 +97479,100 @@
           }
         ]
       }
+    },
+    {
+      "key": "CXMTSTOCK/USDT:USDT|2026-07-29T06:01:15.334295+00:00",
+      "symbol": "CXMTSTOCK/USDT:USDT",
+      "detected_at": "2026-07-29T06:01:15.334295+00:00",
+      "reason": "loss_streak_cooldown",
+      "decision": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0004907725645824404,
+        "robust_score": 0.0004907725645824404,
+        "causal_history_count": 9775,
+        "fast": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 1.888699234531756,
+          "effective_ev_pct": 1.888699234531756,
+          "avg_log_return": 0.0008961693153854327,
+          "geometric_return_pct": 0.08965709950883305,
+          "avg_account_return_pct": 0.0899857841174113,
+          "max_drawdown_pct": 1.0601749450651432,
+          "max_loss_streak": 5
+        },
+        "recent": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 1.888699234531756,
+          "effective_ev_pct": 1.888699234531756,
+          "avg_log_return": 0.0008961693153854327,
+          "geometric_return_pct": 0.08965709950883305,
+          "avg_account_return_pct": 0.0899857841174113,
+          "max_drawdown_pct": 1.0601749450651432,
+          "max_loss_streak": 5
+        },
+        "mid": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 200,
+          "filled": 200,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.0178009780425084,
+          "effective_ev_pct": -0.0178009780425084,
+          "avg_log_return": 4.5970555207281566e-05,
+          "geometric_return_pct": 0.004597161186947751,
+          "avg_account_return_pct": 0.004892255894779919,
+          "max_drawdown_pct": 5.000845733690892,
+          "max_loss_streak": 11
+        },
+        "long": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.34013022543429416,
+          "effective_ev_pct": -0.34013022543429416,
+          "avg_log_return": -0.00010607816961154776,
+          "geometric_return_pct": -0.010607254352146267,
+          "avg_account_return_pct": -0.010332618196873755,
+          "max_drawdown_pct": 16.73120276052259,
+          "max_loss_streak": 17
+        },
+        "all": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.34013022543429416,
+          "effective_ev_pct": -0.34013022543429416,
+          "avg_log_return": -0.00010607816961154776,
+          "geometric_return_pct": -0.010607254352146267,
+          "avg_account_return_pct": -0.010332618196873755,
+          "max_drawdown_pct": 16.73120276052259,
+          "max_loss_streak": 17
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 0.00014173400480471877
+          }
+        ]
+      }
     }
   ],
-  "skipped_count": 488,
+  "skipped_count": 489,
   "applied_keys": [
     "0G/USDT:USDT|2026-07-15T11:56:14.447509+00:00",
     "0G/USDT:USDT|2026-07-15T12:06:12.763179+00:00",
@@ -97917,6 +98008,7 @@
     "CRO/USDT:USDT|2026-07-16T18:06:16.297112+00:00",
     "CROSS/USDT:USDT|2026-07-26T18:51:07.576604+00:00",
     "CXMTSTOCK/USDT:USDT|2026-07-27T04:01:11.415073+00:00",
+    "CXMTSTOCK/USDT:USDT|2026-07-29T06:01:15.334295+00:00",
     "DELLSTOCK/USDT:USDT|2026-07-21T21:01:26.273545+00:00",
     "DELLSTOCK/USDT:USDT|2026-07-22T14:01:37.385241+00:00",
     "DELLSTOCK/USDT:USDT|2026-07-22T14:26:41.747655+00:00",
