@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T05:41:16.532541+00:00
+- generated_at: 2026-07-29T05:46:14.658095+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9775**
 
@@ -70,10 +70,10 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T05:41:08.860304+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63988.2
-- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T05:46:07.495157+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63993.8
+- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +80.67% | $1,726,171.00 |
-| BTW/USDT:USDT | +34.00% | $7,381,572.69 |
-| AEON1/USDT:USDT | +20.02% | $1,632,771.81 |
-| EUL/USDT:USDT | +18.58% | $2,984,217.30 |
-| BEAT/USDT:USDT | +18.33% | $45,384,766.56 |
+| JIMOTHY/USDT:USDT | +69.13% | $1,751,332.90 |
+| BTW/USDT:USDT | +32.06% | $7,423,692.60 |
+| BEAT/USDT:USDT | +19.12% | $45,514,860.61 |
+| AEON1/USDT:USDT | +18.80% | $1,678,785.02 |
+| EUL/USDT:USDT | +18.04% | $2,999,641.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +1.80% | +1.73% |
-| LIT/USDT:USDT | below_1h_threshold | +1.54% | +1.47% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
-| JUP/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.93% | +0.86% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.93% | +1.86% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.67% | +1.59% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.22% | +1.15% |
+| JUP/USDT:USDT | below_1h_threshold | +1.15% | +1.08% |
+| EUL/USDT:USDT | below_1h_threshold | +1.10% | +1.02% |
 
 ## 7. 次に見るべき不足
 
