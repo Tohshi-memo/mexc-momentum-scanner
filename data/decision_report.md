@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T17:21:26.827475+00:00
+- generated_at: 2026-07-29T17:26:19.081562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9816**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T17:21:19.613567+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63790.9
+- 更新: 2026-07-29T17:26:12.011360+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63760.8
 - Funnel: target 911 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +8.94% | $1,257,232.51 |
-| JIMOTHY/USDT:USDT | +7.36% | $5,712,945.82 |
-| BESTOCK/USDT:USDT | +6.39% | $1,086,115.85 |
-| RE/USDT:USDT | +6.19% | $2,331,754.96 |
-| NBISSTOCK/USDT:USDT | +6.15% | $2,201,088.06 |
+| DIA/USDT:USDT | +8.15% | $1,267,484.04 |
+| RE/USDT:USDT | +6.91% | $2,336,856.34 |
+| BESTOCK/USDT:USDT | +5.59% | $1,091,991.45 |
+| JIMOTHY/USDT:USDT | +5.01% | $5,731,036.96 |
+| NBISSTOCK/USDT:USDT | +5.01% | $2,225,481.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.96% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.48% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +3.30% | +3.29% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.97% |
-| ON/USDT:USDT | below_1h_threshold | +2.46% | +2.45% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +4.01% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.52% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +3.30% | +3.34% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.01% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.42% | +2.46% |
 
 ## 7. 次に見るべき不足
 
