@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T03:26:41.974208+00:00
+- generated_at: 2026-07-29T03:31:30.229255+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9761**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T03:26:28.609040+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=63847.9
+- 更新: 2026-07-29T03:31:17.227584+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=63713.8
 - Funnel: target 904 → liquid 168 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +52.00% | $1,301,912.30 |
-| BTW/USDT:USDT | +29.76% | $6,709,203.74 |
-| EUL/USDT:USDT | +19.22% | $2,556,730.02 |
-| BEAT/USDT:USDT | +13.52% | $44,726,668.85 |
-| KAITO/USDT:USDT | +12.22% | $9,601,437.54 |
+| JIMOTHY/USDT:USDT | +46.72% | $1,317,480.17 |
+| BTW/USDT:USDT | +29.86% | $6,836,804.59 |
+| KAITO/USDT:USDT | +12.99% | $9,697,384.84 |
+| EUL/USDT:USDT | +11.91% | $2,620,506.28 |
+| BEAT/USDT:USDT | +11.75% | $44,805,980.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| O/USDT:USDT | below_1h_threshold | +2.04% | +2.21% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.95% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.81% |
-| UB/USDT:USDT | below_1h_threshold | +0.43% | +0.60% |
-| XMR/USDT:USDT | below_1h_threshold | +0.28% | +0.45% |
+| UB/USDT:USDT | below_1h_threshold | +0.90% | +1.27% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +1.16% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +1.02% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +0.60% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.19% | +0.56% |
 
 ## 7. 次に見るべき不足
 
