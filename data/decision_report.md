@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T18:16:18.800514+00:00
+- generated_at: 2026-07-29T18:21:35.778120+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9820**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.01** / 初期 $100.00 (+9.01%)
-- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 525件
+- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 527件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000191 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T18:16:11.638992+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64343.5
-- Funnel: target 911 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T18:21:23.464839+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64200.0
+- Funnel: target 911 → liquid 169 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +14.56% | $1,511,783.29 |
-| RE/USDT:USDT | +13.39% | $2,798,879.96 |
-| KORU/USDT:USDT | +10.37% | $68,244,789.49 |
-| SNXX/USDT:USDT | +9.82% | $8,189,165.88 |
-| LAB/USDT:USDT | +8.81% | $1,814,245.60 |
+| DIA/USDT:USDT | +18.50% | $1,551,697.48 |
+| RE/USDT:USDT | +12.58% | $2,951,505.76 |
+| LAB/USDT:USDT | +9.53% | $1,860,554.69 |
+| KORU/USDT:USDT | +7.96% | $68,624,204.22 |
+| BESTOCK/USDT:USDT | +6.74% | $1,115,904.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_relative_strength | +5.02% | +4.87% |
-| KORU/USDT:USDT | below_1h_threshold | +3.91% | +3.76% |
-| DIA/USDT:USDT | below_1h_threshold | +3.90% | +3.75% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.33% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.96% | +2.81% |
+| KORU/USDT:USDT | below_1h_threshold | +3.91% | +3.98% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.56% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.90% | +2.97% |
+| LAB/USDT:USDT | below_1h_threshold | +2.89% | +2.97% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.30% |
 
 ## 7. 次に見るべき不足
 
