@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T02:36:21.493259+00:00
+- generated_at: 2026-07-29T02:41:13.869844+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9754**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T02:36:14.431175+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=63943.3
+- 更新: 2026-07-29T02:41:07.100372+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.67% price=64108.5
 - Funnel: target 904 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +22.81% | $1,255,451.76 |
-| BTW/USDT:USDT | +16.39% | $6,236,959.55 |
-| BEAT/USDT:USDT | +14.27% | $45,740,444.59 |
-| KAITO/USDT:USDT | +12.70% | $9,640,927.57 |
-| ZIL/USDT:USDT | +7.95% | $8,811,455.92 |
+| JIMOTHY/USDT:USDT | +25.03% | $1,258,552.17 |
+| BTW/USDT:USDT | +16.87% | $6,247,349.17 |
+| BEAT/USDT:USDT | +13.22% | $45,804,716.98 |
+| KAITO/USDT:USDT | +13.00% | $9,681,576.96 |
+| ZIL/USDT:USDT | +8.19% | $8,817,657.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_relative_strength | +5.39% | +4.98% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.72% | +3.31% |
-| TAG/USDT:USDT | below_1h_threshold | +3.08% | +2.67% |
-| O/USDT:USDT | below_1h_threshold | +2.97% | +2.56% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.92% | +2.51% |
+| JIMOTHY/USDT:USDT | below_relative_strength | +5.58% | +4.91% |
+| SOXS/USDT:USDT | below_relative_strength | +5.39% | +4.72% |
+| BTW/USDT:USDT | below_1h_threshold | +3.26% | +2.59% |
+| KAITO/USDT:USDT | below_1h_threshold | +3.11% | +2.44% |
+| TAG/USDT:USDT | below_1h_threshold | +2.85% | +2.18% |
 
 ## 7. 次に見るべき不足
 
