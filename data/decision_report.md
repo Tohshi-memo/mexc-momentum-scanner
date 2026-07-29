@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T17:36:26.112040+00:00
+- generated_at: 2026-07-29T17:41:23.305135+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9817**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T17:36:18.251696+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63816.0
+- 更新: 2026-07-29T17:41:16.218048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=63859.9
 - Funnel: target 911 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +8.85% | $1,298,940.98 |
-| RE/USDT:USDT | +7.18% | $2,386,407.58 |
-| NBISSTOCK/USDT:USDT | +6.59% | $2,249,452.50 |
-| KAITO/USDT:USDT | +6.23% | $10,220,090.60 |
-| BESTOCK/USDT:USDT | +5.57% | $1,093,076.88 |
+| DIA/USDT:USDT | +8.68% | $1,324,589.73 |
+| RE/USDT:USDT | +7.25% | $2,393,687.86 |
+| KAITO/USDT:USDT | +6.37% | $10,356,130.83 |
+| NBISSTOCK/USDT:USDT | +5.91% | $2,253,509.48 |
+| DEXE/USDT:USDT | +5.71% | $5,233,918.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.92% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.44% |
-| RIF/USDT:USDT | below_1h_threshold | +3.43% | +3.38% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +3.30% | +3.25% |
-| LA/USDT:USDT | below_1h_threshold | +2.98% | +2.94% |
+| EUL/USDT:USDT | below_1h_threshold | +4.00% | +3.88% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.86% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.37% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.47% | +3.35% |
+| RIF/USDT:USDT | below_1h_threshold | +3.42% | +3.30% |
 
 ## 7. 次に見るべき不足
 
