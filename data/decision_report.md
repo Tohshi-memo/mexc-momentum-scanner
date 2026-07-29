@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T00:52:05.497847+00:00
+- generated_at: 2026-07-29T00:57:02.536118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9743**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T00:51:43.648056+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=64020.0
+- 更新: 2026-07-29T00:56:42.325692+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=64012.9
 - Funnel: target 904 → liquid 169 → pre 50 → checked 50 → surge 6 → strict 6
 - Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +21.46% | $1,320,883.40 |
-| ZIL/USDT:USDT | +19.52% | $8,388,138.21 |
-| BTW/USDT:USDT | +17.07% | $6,456,128.89 |
-| ON/USDT:USDT | +14.27% | $49,978,863.02 |
-| BEAT/USDT:USDT | +12.80% | $48,943,560.17 |
+| JIMOTHY/USDT:USDT | +20.47% | $1,326,837.85 |
+| ZIL/USDT:USDT | +18.96% | $8,425,922.83 |
+| BTW/USDT:USDT | +16.15% | $6,481,764.37 |
+| ON/USDT:USDT | +15.80% | $50,340,030.52 |
+| BEAT/USDT:USDT | +13.49% | $49,017,395.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.14% | +3.96% |
-| AKE/USDT:USDT | below_1h_threshold | +3.77% | +3.58% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.23% |
-| BTW/USDT:USDT | below_1h_threshold | +3.40% | +3.21% |
-| ZIL/USDT:USDT | below_1h_threshold | +3.34% | +3.15% |
+| AKE/USDT:USDT | below_1h_threshold | +4.46% | +4.29% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.52% | +3.35% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.37% | +3.20% |
+| ZIL/USDT:USDT | below_1h_threshold | +2.99% | +2.82% |
+| BTW/USDT:USDT | below_1h_threshold | +2.61% | +2.44% |
 
 ## 7. 次に見るべき不足
 
