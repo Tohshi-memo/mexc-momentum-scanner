@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T01:46:44.714043+00:00
+- generated_at: 2026-07-29T01:51:26.908723+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9749**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$112.93** / 初期 $100.00 (+12.93%)
-- 確定トレード: 155件 (TP 57 / SL 93 / EXP 5)
-- 最新: SKHYNIXSTOCK/USDT:USDT TP_HIT PnL +8.00% 残高後 $112.93
-- 最新戦略メタ: tier=B, direction=short, entry=MARKET
+- 残高: **$115.20** / 初期 $100.00 (+15.20%)
+- 確定トレード: 157件 (TP 59 / SL 93 / EXP 5)
+- 最新: KIOXIASTOCK/USDT:USDT TP_HIT PnL +8.00% 残高後 $115.20
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T01:46:28.901389+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=63795.7
-- Funnel: target 904 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T01:51:17.509233+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=63755.0
+- Funnel: target 904 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +14.57% | $47,467,787.44 |
-| ZIL/USDT:USDT | +13.13% | $8,586,395.59 |
-| JIMOTHY/USDT:USDT | +12.96% | $1,267,103.66 |
-| ON/USDT:USDT | +12.25% | $51,987,741.76 |
-| BTW/USDT:USDT | +9.98% | $6,533,634.59 |
+| JIMOTHY/USDT:USDT | +15.85% | $1,268,645.18 |
+| BEAT/USDT:USDT | +15.29% | $47,601,155.71 |
+| ON/USDT:USDT | +13.56% | $52,086,118.04 |
+| BTW/USDT:USDT | +11.68% | $6,544,719.39 |
+| ZIL/USDT:USDT | +10.64% | $8,629,492.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +3.33% | +3.54% |
-| UB/USDT:USDT | below_1h_threshold | +3.09% | +3.29% |
-| BILL/USDT:USDT | below_1h_threshold | +2.71% | +2.92% |
-| RIF/USDT:USDT | below_1h_threshold | +2.44% | +2.65% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.31% | +2.52% |
+| BILL/USDT:USDT | below_1h_threshold | +4.70% | +4.97% |
+| CAP/USDT:USDT | below_1h_threshold | +3.48% | +3.75% |
+| UB/USDT:USDT | below_1h_threshold | +3.30% | +3.57% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.31% | +2.58% |
+| RIF/USDT:USDT | below_1h_threshold | +2.26% | +2.53% |
 
 ## 7. 次に見るべき不足
 
