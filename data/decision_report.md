@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T16:46:42.240675+00:00
+- generated_at: 2026-07-29T16:51:36.035183+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9813**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.01** / 初期 $100.00 (+9.01%)
-- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 520件
+- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 521件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000183 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T16:46:29.851539+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=63649.9
-- Funnel: target 911 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.6 >= 65=1
+- 更新: 2026-07-29T16:51:23.686914+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=63680.8
+- Funnel: target 911 → liquid 165 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.4 >= 65=1, 4h RSI 71.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +6.97% | $8,245,176.74 |
-| BEAT/USDT:USDT | +6.35% | $45,747,145.65 |
-| DIA/USDT:USDT | +5.87% | $1,105,334.11 |
-| KAITO/USDT:USDT | +4.61% | $9,568,444.40 |
-| RE/USDT:USDT | +4.27% | $2,220,888.55 |
+| DIA/USDT:USDT | +9.12% | $1,143,862.94 |
+| UAI/USDT:USDT | +6.63% | $8,343,196.43 |
+| KAITO/USDT:USDT | +6.02% | $9,816,008.58 |
+| RE/USDT:USDT | +5.67% | $2,262,935.41 |
+| ON/USDT:USDT | +3.93% | $60,716,108.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +4.62% | +5.07% |
-| RE/USDT:USDT | below_1h_threshold | +4.27% | +4.72% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.32% | +3.78% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.17% | +3.62% |
-| LAB/USDT:USDT | below_1h_threshold | +2.58% | +3.03% |
+| ON/USDT:USDT | below_1h_threshold | +3.87% | +4.27% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.69% | +4.10% |
+| UB/USDT:USDT | below_1h_threshold | +3.35% | +3.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.17% | +3.57% |
+| SYN/USDT:USDT | below_1h_threshold | +2.51% | +2.92% |
 
 ## 7. 次に見るべき不足
 
