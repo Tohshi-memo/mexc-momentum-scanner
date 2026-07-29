@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T04:26:19.638158+00:00
+- generated_at: 2026-07-29T04:31:13.613601+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9773**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T04:26:12.417795+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63744.9
-- Funnel: target 904 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-29T04:31:06.550419+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63780.2
+- Funnel: target 904 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +53.88% | $1,500,687.80 |
-| BTW/USDT:USDT | +27.82% | $7,137,241.55 |
-| EUL/USDT:USDT | +14.65% | $2,809,626.02 |
-| BEAT/USDT:USDT | +14.17% | $44,604,120.53 |
-| SOXS/USDT:USDT | +12.90% | $8,768,445.60 |
+| JIMOTHY/USDT:USDT | +58.92% | $1,509,303.69 |
+| BTW/USDT:USDT | +30.64% | $7,153,298.96 |
+| BEAT/USDT:USDT | +15.42% | $44,757,811.05 |
+| EUL/USDT:USDT | +13.84% | $2,822,152.04 |
+| SOXS/USDT:USDT | +13.43% | $8,950,431.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +3.94% | +3.91% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.23% |
-| RIF/USDT:USDT | below_1h_threshold | +2.52% | +2.49% |
-| BILL/USDT:USDT | below_1h_threshold | +1.46% | +1.43% |
-| UB/USDT:USDT | below_1h_threshold | +1.33% | +1.30% |
+| ON/USDT:USDT | below_1h_threshold | +4.71% | +4.62% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.18% |
+| EUL/USDT:USDT | below_1h_threshold | +3.16% | +3.07% |
+| RIF/USDT:USDT | below_1h_threshold | +2.71% | +2.63% |
+| ZIL/USDT:USDT | below_1h_threshold | +1.68% | +1.59% |
 
 ## 7. 次に見るべき不足
 
