@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T14:46:20.866250+00:00
+- generated_at: 2026-07-29T14:51:23.065403+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9805**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T14:46:11.099967+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.90% price=64054.6
-- Funnel: target 911 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1
+- 更新: 2026-07-29T14:51:15.964154+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.77% price=64141.1
+- Funnel: target 911 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +113.22% | $4,877,172.25 |
-| UAI/USDT:USDT | +31.97% | $4,897,361.53 |
-| BEAT/USDT:USDT | +27.43% | $44,216,858.18 |
-| RIF/USDT:USDT | +22.32% | $3,576,187.54 |
-| COTI/USDT:USDT | +17.47% | $18,075,298.01 |
+| JIMOTHY/USDT:USDT | +118.12% | $4,904,065.40 |
+| UAI/USDT:USDT | +34.35% | $5,172,489.15 |
+| BEAT/USDT:USDT | +27.30% | $44,412,909.85 |
+| RIF/USDT:USDT | +22.23% | $3,584,663.44 |
+| COTI/USDT:USDT | +15.70% | $18,201,114.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.33% | +5.23% |
-| UB/USDT:USDT | below_1h_threshold | +4.21% | +5.11% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.83% | +3.73% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.83% | +3.73% |
-| RIF/USDT:USDT | below_1h_threshold | +2.53% | +3.43% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.33% | +5.10% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.11% | +4.87% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.94% | +4.71% |
+| UB/USDT:USDT | below_1h_threshold | +3.88% | +4.64% |
+| ACH/USDT:USDT | below_1h_threshold | +3.08% | +3.85% |
 
 ## 7. 次に見るべき不足
 
