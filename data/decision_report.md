@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T17:01:23.045104+00:00
+- generated_at: 2026-07-29T17:06:31.307543+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9814**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.01** / 初期 $100.00 (+9.01%)
-- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 521件
+- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 522件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000175 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T17:01:14.649246+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63775.0
-- Funnel: target 911 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T17:06:24.019735+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=63681.3
+- Funnel: target 911 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +8.50% | $1,149,501.06 |
-| RE/USDT:USDT | +6.25% | $2,260,483.17 |
-| KAITO/USDT:USDT | +5.91% | $9,657,777.12 |
-| UAI/USDT:USDT | +4.17% | $8,489,056.43 |
-| BESTOCK/USDT:USDT | +3.81% | $1,072,749.31 |
+| DIA/USDT:USDT | +7.54% | $1,188,865.00 |
+| RE/USDT:USDT | +5.64% | $2,298,091.39 |
+| KAITO/USDT:USDT | +4.85% | $9,719,729.71 |
+| BESTOCK/USDT:USDT | +4.70% | $1,075,518.81 |
+| UAI/USDT:USDT | +4.36% | $8,640,573.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.99% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.50% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +3.30% | +3.32% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.99% |
-| AMZU/USDT:USDT | below_1h_threshold | +1.72% | +1.73% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +4.14% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.65% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +3.30% | +3.46% |
+| RIF/USDT:USDT | below_1h_threshold | +3.09% | +3.25% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.14% |
 
 ## 7. 次に見るべき不足
 
