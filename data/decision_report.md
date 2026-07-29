@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T08:31:13.830183+00:00
+- generated_at: 2026-07-29T08:36:13.829245+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9781**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T08:31:07.105380+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=64268.5
-- Funnel: target 907 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.1 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-29T08:36:08.323015+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.38% price=64286.8
+- Funnel: target 907 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +118.18% | $2,497,659.98 |
-| BEAT/USDT:USDT | +19.22% | $44,303,391.50 |
-| AEON1/USDT:USDT | +19.02% | $1,979,901.38 |
-| EUL/USDT:USDT | +11.72% | $3,009,095.94 |
-| BTW/USDT:USDT | +9.93% | $8,352,019.13 |
+| JIMOTHY/USDT:USDT | +118.58% | $2,516,038.04 |
+| BEAT/USDT:USDT | +20.33% | $44,530,504.16 |
+| AEON1/USDT:USDT | +17.69% | $1,998,396.80 |
+| BTW/USDT:USDT | +12.83% | $8,378,825.78 |
+| EUL/USDT:USDT | +11.82% | $3,020,684.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.26% | +1.67% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.50% |
-| MSFU/USDT:USDT | below_1h_threshold | +0.65% | +1.06% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.96% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.95% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.26% | +1.64% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.47% |
+| MSFU/USDT:USDT | below_1h_threshold | +0.65% | +1.03% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.93% |
+| UB/USDT:USDT | below_1h_threshold | +0.54% | +0.92% |
 
 ## 7. 次に見るべき不足
 
