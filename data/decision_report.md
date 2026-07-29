@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T02:46:18.535385+00:00
+- generated_at: 2026-07-29T02:51:26.122618+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9754**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.36** / 初期 $100.00 (+10.36%)
-- 確定: 759件 (Win 246 / Loss 290 / Flat 223) / pending 1件 / skip 467件
+- 確定: 759件 (Win 246 / Loss 290 / Flat 223) / pending 1件 / skip 468件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000372 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.36
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T02:46:11.596430+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=64002.1
-- Funnel: target 904 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T02:51:17.357681+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.39% price=63927.8
+- Funnel: target 904 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.3 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +20.78% | $1,261,857.67 |
-| BTW/USDT:USDT | +18.34% | $6,297,721.15 |
-| KAITO/USDT:USDT | +13.20% | $9,724,546.77 |
-| BEAT/USDT:USDT | +10.70% | $45,983,559.26 |
-| ZIL/USDT:USDT | +9.36% | $8,827,299.26 |
+| BTW/USDT:USDT | +21.13% | $6,360,304.14 |
+| JIMOTHY/USDT:USDT | +21.11% | $1,269,811.37 |
+| KAITO/USDT:USDT | +12.70% | $9,782,452.82 |
+| BEAT/USDT:USDT | +11.29% | $46,053,127.90 |
+| ZIL/USDT:USDT | +8.91% | $8,843,013.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_relative_strength | +5.39% | +4.89% |
-| BTW/USDT:USDT | below_1h_threshold | +4.52% | +4.01% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.30% | +2.80% |
-| ADA/USDT:USDT | below_1h_threshold | +3.03% | +2.53% |
-| TAG/USDT:USDT | below_1h_threshold | +2.47% | +1.97% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.84% | +2.46% |
+| O/USDT:USDT | below_1h_threshold | +2.54% | +2.15% |
+| TAG/USDT:USDT | below_1h_threshold | +2.31% | +1.93% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +1.82% |
+| ADA/USDT:USDT | below_1h_threshold | +2.16% | +1.78% |
 
 ## 7. 次に見るべき不足
 
