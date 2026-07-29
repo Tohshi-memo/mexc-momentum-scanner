@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-29T15:26:30.952354+00:00
+- generated_at: 2026-07-29T15:31:34.128852+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9807**
+- closed shadow trades: **9808**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9807, expectancy=-0.01%
+- 全期間 MARKET基準: n=9808, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-1.76%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,17 +47,17 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$494.05** / 初期 $100.00 (+394.05%)
-- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2849件
+- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2850件
 - 成長率目線: 平均log +0.000454 / 幾何平均 +0.045% per trade / maxDD +8.13%
-- 次の候補: `LIMIT_4PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $494.05
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$137.24** / 初期 $100.00 (+37.24%)
-- 確定: 1227件 (Win 338 / Loss 275 / Flat 614) / skip 1991件
+- 確定: 1227件 (Win 338 / Loss 275 / Flat 614) / skip 1992件
 - 成長率目線: 平均log +0.000258 / 幾何平均 +0.026% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0492 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0537 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: EUL/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $137.24
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,36 +65,37 @@
 - 残高: **$109.01** / 初期 $100.00 (+9.01%)
 - 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 512件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000173 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000116 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T15:26:20.174577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=63992.0
-- Funnel: target 911 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T15:31:22.755871+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64046.1
+- Funnel: target 911 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +83.33% | $5,296,813.10 |
-| UAI/USDT:USDT | +33.63% | $5,766,859.87 |
-| BEAT/USDT:USDT | +26.19% | $42,083,896.88 |
-| RIF/USDT:USDT | +22.58% | $3,524,504.77 |
-| COTI/USDT:USDT | +21.02% | $17,853,862.13 |
+| JIMOTHY/USDT:USDT | +84.06% | $5,318,823.57 |
+| UAI/USDT:USDT | +33.89% | $5,835,278.35 |
+| BEAT/USDT:USDT | +26.35% | $42,139,484.05 |
+| RIF/USDT:USDT | +23.45% | $3,592,005.37 |
+| COTI/USDT:USDT | +22.03% | $17,980,457.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.96% | +5.09% |
-| AGT/USDT:USDT | below_1h_threshold | +2.44% | +2.58% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.32% | +2.45% |
-| CAP/USDT:USDT | below_1h_threshold | +1.71% | +1.84% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.43% | +1.57% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.71% | +3.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.32% | +2.37% |
+| AGT/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.15% | +2.20% |
+| RIF/USDT:USDT | below_1h_threshold | +1.04% | +1.09% |
 
 ## 7. 次に見るべき不足
 
