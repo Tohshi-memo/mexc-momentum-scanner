@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T01:56:31.892190+00:00
+- generated_at: 2026-07-29T02:01:22.924884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9751**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.55** / 初期 $100.00 (+10.55%)
-- 確定: 758件 (Win 246 / Loss 289 / Flat 223) / pending 2件 / skip 465件
+- 確定: 758件 (Win 246 / Loss 289 / Flat 223) / pending 2件 / skip 466件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000242 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KAITO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $110.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T01:56:19.072028+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=63720.0
-- Funnel: target 904 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-29T02:01:16.819457+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63656.0
+- Funnel: target 904 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.1 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +19.54% | $1,276,042.00 |
-| ON/USDT:USDT | +18.59% | $52,297,112.37 |
-| BEAT/USDT:USDT | +13.71% | $47,659,998.59 |
-| BTW/USDT:USDT | +13.56% | $6,565,607.01 |
-| ZIL/USDT:USDT | +10.08% | $8,677,544.38 |
+| JIMOTHY/USDT:USDT | +17.95% | $1,227,211.01 |
+| ON/USDT:USDT | +15.56% | $51,796,413.80 |
+| BEAT/USDT:USDT | +13.65% | $45,127,166.88 |
+| BTW/USDT:USDT | +13.30% | $6,129,324.99 |
+| KAITO/USDT:USDT | +9.67% | $9,439,406.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BILL/USDT:USDT | below_1h_threshold | +4.74% | +5.07% |
-| CAP/USDT:USDT | below_1h_threshold | +3.37% | +3.69% |
-| RIF/USDT:USDT | below_1h_threshold | +2.38% | +2.70% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.31% | +2.64% |
-| UB/USDT:USDT | below_1h_threshold | +2.15% | +2.47% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.25% |
+| LA/USDT:USDT | below_1h_threshold | +1.44% | +1.48% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.75% | +0.79% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.54% | +0.58% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.48% | +0.52% |
 
 ## 7. 次に見るべき不足
 
