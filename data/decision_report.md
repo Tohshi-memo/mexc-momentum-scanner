@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T17:56:21.904091+00:00
+- generated_at: 2026-07-29T18:01:19.099009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9819**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T17:56:13.397208+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.60% price=64170.7
-- Funnel: target 911 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T18:01:12.099778+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=64477.1
+- Funnel: target 911 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DIA/USDT:USDT | +11.05% | $1,400,294.94 |
-| RE/USDT:USDT | +10.16% | $2,578,398.30 |
-| BESTOCK/USDT:USDT | +6.86% | $1,095,369.52 |
-| LAB/USDT:USDT | +6.81% | $1,864,564.79 |
-| KAITO/USDT:USDT | +6.35% | $10,642,917.60 |
+| KORU/USDT:USDT | +11.02% | $67,071,328.10 |
+| SNXX/USDT:USDT | +10.98% | $7,915,878.51 |
+| RE/USDT:USDT | +10.84% | $2,615,538.59 |
+| DIA/USDT:USDT | +10.26% | $1,369,562.51 |
+| BESTOCK/USDT:USDT | +8.57% | $1,091,628.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.95% | +4.35% |
-| RE/USDT:USDT | below_1h_threshold | +4.43% | +3.83% |
-| LAB/USDT:USDT | below_1h_threshold | +4.20% | +3.59% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.37% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.61% | +3.01% |
+| SNXX/USDT:USDT | below_relative_strength | +5.02% | +4.66% |
+| KORU/USDT:USDT | below_1h_threshold | +3.91% | +3.55% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.13% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.90% | +2.54% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +1.87% |
 
 ## 7. 次に見るべき不足
 
