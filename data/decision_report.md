@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T16:06:25.529143+00:00
+- generated_at: 2026-07-29T16:11:41.977269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9812**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T16:06:16.981623+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63904.9
+- 更新: 2026-07-29T16:11:34.890641+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63985.0
 - Funnel: target 911 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOXS/USDT:USDT | +2.12% | $7,085,000.01 |
-| COTI/USDT:USDT | +1.39% | $17,691,944.50 |
-| SOONNETWORK/USDT:USDT | +1.31% | $1,742,157.91 |
-| BULLA/USDT:USDT | +1.24% | $2,756,254.66 |
-| EUL/USDT:USDT | +1.18% | $2,924,514.16 |
+| KAITO/USDT:USDT | +2.42% | $8,356,556.97 |
+| ON/USDT:USDT | +1.68% | $59,586,911.09 |
+| BANK/USDT:USDT | +1.41% | $94,932,237.61 |
+| BULLA/USDT:USDT | +1.22% | $2,766,443.62 |
+| BEAT/USDT:USDT | +1.20% | $42,260,701.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.17% | +3.22% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +1.46% | +1.52% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.25% | +1.30% |
-| EUL/USDT:USDT | below_1h_threshold | +1.18% | +1.24% |
-| BANK/USDT:USDT | below_1h_threshold | +1.08% | +1.13% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.17% | +3.10% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.66% | +2.59% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.74% | +1.67% |
+| ON/USDT:USDT | below_1h_threshold | +1.69% | +1.62% |
+| BANK/USDT:USDT | below_1h_threshold | +1.41% | +1.33% |
 
 ## 7. 次に見るべき不足
 
