@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T04:51:25.444235+00:00
+- generated_at: 2026-07-29T04:56:39.324240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9773**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.16** / 初期 $100.00 (+10.16%)
-- 確定: 760件 (Win 246 / Loss 291 / Flat 223) / pending 0件 / skip 483件
+- 確定: 760件 (Win 246 / Loss 291 / Flat 223) / pending 0件 / skip 484件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000498 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STXSTOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.16
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T04:51:13.110456+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=63867.1
-- Funnel: target 904 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 2
+- 更新: 2026-07-29T04:56:28.908772+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=63884.2
+- Funnel: target 904 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
+- Strict後reject: 4h RSI 71.9 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +63.93% | $1,566,024.02 |
-| BTW/USDT:USDT | +34.77% | $7,264,525.94 |
-| EUL/USDT:USDT | +18.13% | $2,914,303.10 |
-| BEAT/USDT:USDT | +15.19% | $45,171,566.73 |
-| ON/USDT:USDT | +13.73% | $55,569,633.58 |
+| JIMOTHY/USDT:USDT | +72.91% | $1,599,260.63 |
+| BTW/USDT:USDT | +35.07% | $7,283,989.49 |
+| EUL/USDT:USDT | +16.82% | $2,939,852.16 |
+| ON/USDT:USDT | +16.31% | $55,631,473.12 |
+| BEAT/USDT:USDT | +15.42% | $45,214,725.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIF/USDT:USDT | below_1h_threshold | +4.61% | +4.38% |
-| BTW/USDT:USDT | below_1h_threshold | +4.25% | +4.02% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.04% |
-| LIT/USDT:USDT | below_1h_threshold | +2.91% | +2.68% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.63% | +2.41% |
+| RIF/USDT:USDT | below_1h_threshold | +4.58% | +4.33% |
+| BTW/USDT:USDT | below_1h_threshold | +4.55% | +4.30% |
+| LIT/USDT:USDT | below_1h_threshold | +3.37% | +3.12% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.27% | +3.02% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.81% | +2.56% |
 
 ## 7. 次に見るべき不足
 
