@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T15:06:17.482012+00:00
+- generated_at: 2026-07-29T15:11:34.463308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9805**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T15:06:11.880073+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64064.0
+- 更新: 2026-07-29T15:11:27.447542+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=64150.1
 - Funnel: target 911 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +93.85% | $5,109,147.97 |
-| UAI/USDT:USDT | +33.60% | $5,389,646.48 |
-| BEAT/USDT:USDT | +26.94% | $41,624,171.94 |
-| RIF/USDT:USDT | +22.76% | $3,419,977.25 |
-| COTI/USDT:USDT | +16.99% | $17,421,072.53 |
+| JIMOTHY/USDT:USDT | +88.17% | $5,137,047.17 |
+| UAI/USDT:USDT | +33.57% | $5,438,633.24 |
+| BEAT/USDT:USDT | +26.58% | $41,750,961.02 |
+| RIF/USDT:USDT | +22.47% | $3,433,170.52 |
+| COTI/USDT:USDT | +14.32% | $17,520,283.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.94% | +2.96% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.32% | +2.34% |
-| COTI/USDT:USDT | below_1h_threshold | +1.45% | +1.48% |
-| AKE/USDT:USDT | below_1h_threshold | +1.11% | +1.13% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.96% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.73% | +2.62% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.32% | +2.21% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.04% | +0.93% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.82% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.73% | +0.62% |
 
 ## 7. 次に見るべき不足
 
