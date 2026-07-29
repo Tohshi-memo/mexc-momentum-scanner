@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T10:01:27.597705+00:00
+- generated_at: 2026-07-29T10:06:31.786313+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9786**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.16** / 初期 $100.00 (+10.16%)
-- 確定: 760件 (Win 246 / Loss 291 / Flat 223) / pending 0件 / skip 498件
+- 確定: 760件 (Win 246 / Loss 291 / Flat 223) / pending 0件 / skip 499件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000514 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STXSTOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.16
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T10:01:18.480330+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64657.8
-- Funnel: target 907 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-29T10:06:19.509302+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64636.9
+- Funnel: target 907 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +114.80% | $2,848,634.69 |
-| BEAT/USDT:USDT | +21.38% | $40,553,643.30 |
-| AEON1/USDT:USDT | +20.24% | $2,108,695.73 |
-| UAI/USDT:USDT | +15.74% | $1,026,530.63 |
-| EUL/USDT:USDT | +12.68% | $3,127,156.10 |
+| JIMOTHY/USDT:USDT | +121.05% | $2,896,403.97 |
+| BEAT/USDT:USDT | +23.08% | $40,779,094.59 |
+| AEON1/USDT:USDT | +19.91% | $2,124,064.49 |
+| UAI/USDT:USDT | +16.94% | $1,041,711.64 |
+| EUL/USDT:USDT | +16.05% | $3,142,033.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STXSTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.01% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.04% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +2.96% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.69% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.91% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.13% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.04% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.07% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +2.99% |
+| EUL/USDT:USDT | below_1h_threshold | +2.70% | +2.74% |
 
 ## 7. 次に見るべき不足
 
