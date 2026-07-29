@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T19:02:07.646718+00:00
+- generated_at: 2026-07-29T19:07:07.695856+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9823**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T19:01:34.667943+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64484.6
+- 更新: 2026-07-29T19:06:40.460127+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=64391.7
 - Funnel: target 911 → liquid 171 → pre 50 → checked 50 → surge 8 → strict 8
 - Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SNXX/USDT:USDT | +19.50% | $8,395,702.22 |
-| KORU/USDT:USDT | +18.10% | $70,132,202.54 |
-| RE/USDT:USDT | +15.58% | $3,476,900.18 |
-| DIA/USDT:USDT | +15.26% | $1,856,065.92 |
-| SOXL/USDT:USDT | +12.08% | $87,245,341.44 |
+| SNXX/USDT:USDT | +19.36% | $8,467,481.40 |
+| RE/USDT:USDT | +16.01% | $3,517,022.13 |
+| KORU/USDT:USDT | +15.60% | $70,672,659.92 |
+| DIA/USDT:USDT | +15.00% | $1,880,009.36 |
+| KIOXIASTOCK/USDT:USDT | +10.89% | $1,045,398.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.70% |
-| DRAM/USDT:USDT | below_1h_threshold | +4.45% | +4.43% |
-| EWY/USDT:USDT | below_1h_threshold | +3.98% | +3.96% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.95% |
-| TQQQ/USDT:USDT | below_1h_threshold | +3.64% | +3.63% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.72% | +4.84% |
+| DRAM/USDT:USDT | below_1h_threshold | +4.45% | +4.57% |
+| EWY/USDT:USDT | below_1h_threshold | +3.98% | +4.10% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +3.97% | +4.09% |
+| TQQQ/USDT:USDT | below_1h_threshold | +3.64% | +3.77% |
 
 ## 7. 次に見るべき不足
 
