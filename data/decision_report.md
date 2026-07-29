@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-29T21:16:24.381997+00:00
+- generated_at: 2026-07-29T21:21:29.222222+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9838**
+- closed shadow trades: **9839**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +3.80% / filled 20/20。**
-- 全期間 MARKET基準: n=9838, expectancy=-0.01%
+- 全期間 MARKET基準: n=9839, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+3.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | MARKET | 20/20 | 100.0% | +3.80% | **+3.80%** |
 | LIMIT_1PCT | 14/20 | 70.0% | +3.15% | **+2.21%** |
 | LIMIT_2PCT | 9/20 | 45.0% | +1.36% | **+0.61%** |
-| LIMIT_3PCT | 7/20 | 35.0% | +0.32% | **+0.11%** |
+| LIMIT_3PCT | 7/20 | 35.0% | +0.31% | **+0.11%** |
 | LIMIT_5PCT | 2/20 | 10.0% | +0.95% | **+0.10%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$494.05** / 初期 $100.00 (+394.05%)
-- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2880件
+- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2881件
 - 成長率目線: 平均log +0.000454 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $494.05
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$136.91** / 初期 $100.00 (+36.91%)
-- 確定: 1242件 (Win 344 / Loss 283 / Flat 615) / skip 2007件
+- 確定: 1242件 (Win 344 / Loss 283 / Flat 615) / skip 2008件
 - 成長率目線: 平均log +0.000253 / 幾何平均 +0.025% per trade / maxDD +3.89%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SOXL/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $136.91
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T21:16:17.201365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63425.4
-- Funnel: target 911 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-29T21:21:20.744331+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63472.2
+- Funnel: target 911 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +12.13% | $6,156,825.33 |
-| LAB/USDT:USDT | +8.17% | $2,201,602.33 |
-| DIA/USDT:USDT | +7.45% | $2,376,158.24 |
-| SOXS/USDT:USDT | +7.17% | $8,295,016.02 |
-| AEON1/USDT:USDT | +6.54% | $2,606,694.19 |
+| RE/USDT:USDT | +11.83% | $6,197,821.44 |
+| LAB/USDT:USDT | +8.38% | $2,209,851.93 |
+| DIA/USDT:USDT | +7.80% | $2,393,492.47 |
+| AEON1/USDT:USDT | +7.30% | $2,608,753.11 |
+| SOXS/USDT:USDT | +6.50% | $8,353,077.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.91% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.39% |
-| ON/USDT:USDT | below_1h_threshold | +1.61% | +1.71% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.35% | +1.45% |
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.92% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.84% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.32% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.21% | +2.23% |
+| TIA/USDT:USDT | below_1h_threshold | +1.00% | +1.02% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.89% | +0.92% |
 
 ## 7. 次に見るべき不足
 
