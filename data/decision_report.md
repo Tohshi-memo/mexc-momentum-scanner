@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T13:06:26.257406+00:00
+- generated_at: 2026-07-29T13:11:28.307549+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9798**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T13:06:19.242575+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64195.1
+- 更新: 2026-07-29T13:11:21.145307+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64260.7
 - Funnel: target 907 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +144.83% | $3,855,666.56 |
-| BEAT/USDT:USDT | +24.49% | $42,392,989.62 |
-| UAI/USDT:USDT | +23.90% | $2,759,023.13 |
-| RIF/USDT:USDT | +14.90% | $3,157,447.94 |
-| AEON1/USDT:USDT | +13.16% | $2,203,897.46 |
+| JIMOTHY/USDT:USDT | +144.40% | $3,888,964.97 |
+| UAI/USDT:USDT | +25.08% | $2,804,415.54 |
+| BEAT/USDT:USDT | +24.16% | $42,538,048.78 |
+| RIF/USDT:USDT | +17.36% | $3,169,508.23 |
+| AEON1/USDT:USDT | +12.94% | $2,205,071.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +2.37% | +2.46% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.89% | +1.97% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.74% | +1.82% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.09% | +1.17% |
-| COPSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.95% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.37% | +2.35% |
+| AKE/USDT:USDT | below_1h_threshold | +2.36% | +2.34% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.89% | +1.87% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.74% | +1.72% |
+| ACH/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
 
 ## 7. 次に見るべき不足
 
