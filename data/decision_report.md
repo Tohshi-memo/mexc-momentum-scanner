@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T01:06:33.803616+00:00
+- generated_at: 2026-07-29T01:11:34.380015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9743**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T01:06:23.925062+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63940.1
-- Funnel: target 904 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-29T01:11:25.089936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63855.9
+- Funnel: target 904 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZIL/USDT:USDT | +18.60% | $8,310,896.29 |
-| BTW/USDT:USDT | +14.68% | $6,381,710.68 |
-| JIMOTHY/USDT:USDT | +14.17% | $1,253,152.02 |
-| ON/USDT:USDT | +13.47% | $50,336,231.00 |
-| BEAT/USDT:USDT | +12.31% | $46,727,575.61 |
+| ZIL/USDT:USDT | +20.49% | $8,342,999.55 |
+| ON/USDT:USDT | +19.85% | $50,616,951.91 |
+| BTW/USDT:USDT | +17.01% | $6,388,428.14 |
+| JIMOTHY/USDT:USDT | +14.86% | $1,254,249.44 |
+| BEAT/USDT:USDT | +11.49% | $46,827,810.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +2.71% | +2.69% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.31% | +2.29% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.87% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.87% | +0.85% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.71% | +0.69% |
+| EUL/USDT:USDT | below_1h_threshold | +2.73% | +2.84% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.31% | +2.42% |
+| ON/USDT:USDT | below_1h_threshold | +2.21% | +2.32% |
+| BTW/USDT:USDT | below_1h_threshold | +1.48% | +1.60% |
+| ZIL/USDT:USDT | below_1h_threshold | +1.35% | +1.46% |
 
 ## 7. 次に見るべき不足
 
