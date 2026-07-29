@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T21:41:24.107791+00:00
+- generated_at: 2026-07-29T21:46:25.963985+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9839**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.01** / 初期 $100.00 (+9.01%)
-- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 546件
+- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 547件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T21:41:16.878929+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=63580.3
-- Funnel: target 911 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1
+- 更新: 2026-07-29T21:46:18.346304+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63518.3
+- Funnel: target 911 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.2 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +10.95% | $6,440,666.98 |
-| LAB/USDT:USDT | +8.96% | $2,238,254.95 |
-| DIA/USDT:USDT | +8.77% | $2,432,489.17 |
-| SOXS/USDT:USDT | +8.57% | $8,872,011.42 |
-| AEON1/USDT:USDT | +6.73% | $2,632,858.62 |
+| RE/USDT:USDT | +11.72% | $6,502,708.92 |
+| LAB/USDT:USDT | +9.10% | $2,248,723.85 |
+| DIA/USDT:USDT | +8.42% | $2,450,887.81 |
+| SOXS/USDT:USDT | +8.25% | $8,933,948.12 |
+| AEON1/USDT:USDT | +6.92% | $2,637,103.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.54% | +4.39% |
-| PI/USDT:USDT | below_1h_threshold | +3.88% | +3.73% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.67% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.15% |
-| ON/USDT:USDT | below_1h_threshold | +2.15% | +2.00% |
+| PI/USDT:USDT | below_1h_threshold | +3.02% | +2.97% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +2.81% | +2.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
+| SYN/USDT:USDT | below_1h_threshold | +2.04% | +1.99% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.87% | +1.82% |
 
 ## 7. 次に見るべき不足
 
