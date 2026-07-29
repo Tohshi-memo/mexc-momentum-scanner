@@ -1,31 +1,31 @@
 # Decision Report
 
-- generated_at: 2026-07-29T22:01:16.718724+00:00
+- generated_at: 2026-07-29T22:06:36.456761+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9839**
+- closed shadow trades: **9840**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +3.80% / filled 20/20。**
-- 全期間 MARKET基準: n=9839, expectancy=-0.01%
-- 直近20件 MARKET基準: n=20, expectancy=+3.80%
+- 結論: **MARKET SHORTは実行候補。直近EV +3.86% / filled 20/20。**
+- 全期間 MARKET基準: n=9840, expectancy=-0.01%
+- 直近20件 MARKET基準: n=20, expectancy=+3.86%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +3.80% | **+3.80%** |
+| MARKET | 20/20 | 100.0% | +3.86% | **+3.86%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +3.80% | **+3.80%** |
-| LIMIT_1PCT | 14/20 | 70.0% | +3.15% | **+2.21%** |
-| LIMIT_2PCT | 9/20 | 45.0% | +1.36% | **+0.61%** |
-| LIMIT_3PCT | 7/20 | 35.0% | +0.31% | **+0.11%** |
-| LIMIT_5PCT | 2/20 | 10.0% | +0.95% | **+0.10%** |
+| MARKET | 20/20 | 100.0% | +3.86% | **+3.86%** |
+| LIMIT_1PCT | 14/20 | 70.0% | +3.24% | **+2.26%** |
+| LIMIT_2PCT | 9/20 | 45.0% | +1.26% | **+0.57%** |
+| LIMIT_3PCT | 7/20 | 35.0% | +0.05% | **+0.02%** |
+| LIMIT_5PCT | 2/20 | 10.0% | -0.93% | **-0.09%** |
 
 ### シャドウ上位 LONG
 
@@ -35,19 +35,19 @@
 | LIMIT_7PCT_LONG | 14/20 | 70.0% | -0.43% | **-0.30%** |
 | LIMIT_FIB1618_LONG | 8/20 | 40.0% | -2.24% | **-0.89%** |
 | LIMIT_6PCT_LONG | 14/20 | 70.0% | -1.54% | **-1.08%** |
-| LIMIT_1PCT_LONG | 19/20 | 95.0% | -1.62% | **-1.54%** |
+| LIMIT_1PCT_LONG | 19/20 | 95.0% | -1.59% | **-1.51%** |
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.06** / 初期 $100.00 (+21.06%)
-- 確定トレード: 165件 (TP 65 / SL 95 / EXP 5)
-- 最新: JIMOTHY/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.06
-- 最新戦略メタ: tier=A, direction=short, entry=MARKET
+- 残高: **$120.46** / 初期 $100.00 (+20.46%)
+- 確定トレード: 166件 (TP 65 / SL 96 / EXP 5)
+- 最新: MSFU/USDT:USDT SL_HIT PnL -3.27% 残高後 $120.46
+- 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$494.05** / 初期 $100.00 (+394.05%)
-- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2881件
+- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2882件
 - 成長率目線: 平均log +0.000454 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $494.05
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$136.91** / 初期 $100.00 (+36.91%)
-- 確定: 1242件 (Win 344 / Loss 283 / Flat 615) / skip 2008件
+- 確定: 1242件 (Win 344 / Loss 283 / Flat 615) / skip 2009件
 - 成長率目線: 平均log +0.000253 / 幾何平均 +0.025% per trade / maxDD +3.89%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SOXL/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $136.91
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T22:01:09.701905+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63860.6
-- Funnel: target 911 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-29T22:06:28.078892+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=64017.2
+- Funnel: target 911 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +12.97% | $2,278,475.25 |
-| RE/USDT:USDT | +11.50% | $6,561,891.79 |
-| AEON1/USDT:USDT | +7.49% | $2,617,435.14 |
-| DIA/USDT:USDT | +7.36% | $2,397,971.91 |
-| SOXS/USDT:USDT | +6.29% | $8,990,782.67 |
+| MSFU/USDT:USDT | +13.78% | $6,942,533.26 |
+| LAB/USDT:USDT | +13.54% | $2,336,372.51 |
+| RE/USDT:USDT | +12.33% | $6,644,809.23 |
+| AEON1/USDT:USDT | +7.96% | $2,618,228.61 |
+| MSFTSTOCK/USDT:USDT | +6.88% | $2,290,831.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.45% | +1.41% |
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.55% |
-| LINSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.42% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.40% | +0.35% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.39% | +0.35% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.11% | +1.82% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.45% | +1.16% |
+| FET/USDT:USDT | below_1h_threshold | +0.95% | +0.66% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.94% | +0.65% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.87% | +0.58% |
 
 ## 7. 次に見るべき不足
 
