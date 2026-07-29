@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T10:16:31.908239+00:00
+- generated_at: 2026-07-29T10:21:23.683701+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9786**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T10:16:22.731492+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64641.1
+- 更新: 2026-07-29T10:21:14.560346+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64631.7
 - Funnel: target 907 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +118.59% | $2,932,870.99 |
-| BEAT/USDT:USDT | +23.47% | $41,581,928.61 |
-| UAI/USDT:USDT | +18.68% | $1,122,328.18 |
-| EUL/USDT:USDT | +17.00% | $3,183,701.37 |
-| AEON1/USDT:USDT | +16.92% | $2,158,846.61 |
+| JIMOTHY/USDT:USDT | +115.11% | $2,954,307.27 |
+| BEAT/USDT:USDT | +24.32% | $41,720,907.56 |
+| UAI/USDT:USDT | +18.87% | $1,141,462.23 |
+| AEON1/USDT:USDT | +16.15% | $2,178,168.35 |
+| EUL/USDT:USDT | +14.86% | $3,199,571.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STXSTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.04% |
-| EUL/USDT:USDT | below_1h_threshold | +3.52% | +3.55% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.06% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +2.98% |
-| UAI/USDT:USDT | below_1h_threshold | +2.91% | +2.94% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.09% | +4.14% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.05% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.08% |
+| UAI/USDT:USDT | below_1h_threshold | +2.97% | +3.02% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.95% | +3.00% |
 
 ## 7. 次に見るべき不足
 
