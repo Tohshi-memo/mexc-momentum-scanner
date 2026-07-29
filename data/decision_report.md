@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-29T14:56:25.159167+00:00
+- generated_at: 2026-07-29T15:01:33.998535+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9805**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-29T14:56:17.830250+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.69% price=64193.1
-- Funnel: target 911 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1
-- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-29T15:01:27.067799+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64034.1
+- Funnel: target 911 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +96.53% | $4,975,408.37 |
-| UAI/USDT:USDT | +32.85% | $5,248,322.92 |
-| BEAT/USDT:USDT | +26.65% | $44,563,791.59 |
-| RIF/USDT:USDT | +22.58% | $3,595,952.19 |
-| COTI/USDT:USDT | +15.44% | $18,279,222.96 |
+| JIMOTHY/USDT:USDT | +87.24% | $5,064,509.87 |
+| UAI/USDT:USDT | +34.25% | $5,331,850.85 |
+| BEAT/USDT:USDT | +26.29% | $41,510,849.01 |
+| RIF/USDT:USDT | +22.42% | $3,400,847.53 |
+| COTI/USDT:USDT | +18.43% | $17,361,624.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.88% | +5.57% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.82% | +5.50% |
-| SOXS/USDT:USDT | below_1h_threshold | +4.33% | +5.02% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.12% | +3.81% |
-| ON/USDT:USDT | below_1h_threshold | +3.10% | +3.79% |
+| COTI/USDT:USDT | below_1h_threshold | +3.04% | +3.11% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.32% | +2.39% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +1.01% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.85% | +0.92% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.73% | +0.80% |
 
 ## 7. 次に見るべき不足
 
