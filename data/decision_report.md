@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-29T03:01:17.973162+00:00
+- generated_at: 2026-07-29T03:05:59.429761+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9756**
+- closed shadow trades: **9757**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +4.78% / filled 20/20。**
-- 全期間 MARKET基準: n=9756, expectancy=-0.01%
+- 全期間 MARKET基準: n=9757, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+4.78%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +4.78% | **+4.78%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +4.98% | **+3.98%** |
-| LIMIT_ATR | 13/20 | 65.0% | +4.41% | **+2.87%** |
-| LIMIT_2PCT | 12/20 | 60.0% | +4.49% | **+2.69%** |
-| LIMIT_FIB1272 | 6/20 | 30.0% | +3.63% | **+1.09%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +4.91% | **+3.93%** |
+| LIMIT_ATR | 13/20 | 65.0% | +4.41% | **+2.86%** |
+| LIMIT_2PCT | 12/20 | 60.0% | +4.32% | **+2.59%** |
+| LIMIT_FIB1272 | 7/20 | 35.0% | +3.26% | **+1.14%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$494.05** / 初期 $100.00 (+394.05%)
-- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2798件
+- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2799件
 - 成長率目線: 平均log +0.000454 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $494.05
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$137.24** / 初期 $100.00 (+37.24%)
-- 確定: 1226件 (Win 338 / Loss 275 / Flat 613) / skip 1941件
+- 確定: 1226件 (Win 338 / Loss 275 / Flat 613) / skip 1942件
 - 成長率目線: 平均log +0.000258 / 幾何平均 +0.026% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0373 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0346 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SPCXSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $137.24
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,7 +65,7 @@
 - 残高: **$110.16** / 初期 $100.00 (+10.16%)
 - 確定: 760件 (Win 246 / Loss 291 / Flat 223) / pending 0件 / skip 468件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000439 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000431 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STXSTOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.16
 
 ## 6. Latest Market Context
