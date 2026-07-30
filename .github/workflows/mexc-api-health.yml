@@ -2,7 +2,9 @@ name: MEXC Live API Health
 
 on:
   schedule:
-    - cron: '*/15 * * * *'
+    # Once daily at 09:10 JST. Telegram is sent only for state changes or
+    # configured expiry thresholds, not for every successful check.
+    - cron: '10 0 * * *'
   workflow_dispatch:
 
 permissions:
@@ -22,6 +24,7 @@ jobs:
       MEXC_SECRET_KEY: ${{ secrets.MEXC_LIVE_SECRET_KEY }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      MEXC_LIVE_API_EXPIRES_AT: ${{ vars.MEXC_LIVE_API_EXPIRES_AT }}
       LIVE_POSITION_MODE: 'hedged'
 
     steps:
@@ -60,7 +63,7 @@ jobs:
         continue-on-error: true
         run: python tools/check_live_api_health.py
 
-      - name: Persist health transition
+      - name: Persist health and expiry notification state
         if: >-
           always() &&
           steps.monitor_config.outputs.enabled == 'true'
@@ -70,10 +73,10 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/mexc_api_health.json 2>/dev/null || true
           if git diff --staged --quiet; then
-            echo "No API health transition to persist."
+            echo "No API health or expiry notification state to persist."
             exit 0
           fi
-          git commit -m "chore: record MEXC API health transition [skip ci]"
+          git commit -m "chore: record MEXC API monitor state [skip ci]"
           for attempt in 1 2 3; do
             if git fetch --depth=50 origin "${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}" && \
                git rebase "origin/${GITHUB_REF_NAME}" && \
@@ -83,7 +86,7 @@ jobs:
             git rebase --abort 2>/dev/null || true
             sleep 5
           done
-          echo "Failed to persist MEXC API health transition."
+          echo "Failed to persist MEXC API monitor state."
           exit 1
 
       - name: Fail workflow when API health failed

@@ -247,6 +247,27 @@ class Notifier:
             lines.append(f"オープンポジション: {open_positions}")
         return self._send_telegram("\n".join(lines))
 
+    def notify_api_expiry(
+        self,
+        *,
+        expires_at_jst: str,
+        threshold_days: int,
+    ) -> bool:
+        """Notify only at selected API-key expiry thresholds."""
+        if threshold_days > 0:
+            title = (
+                f"⏳ MEXC APIキー期限: あと{threshold_days}日以内"
+            )
+        else:
+            title = "🚨 MEXC APIキーの登録期限に到達"
+        lines = [
+            title,
+            f"登録済み失効日時: {expires_at_jst}",
+            "MEXCで更新後、GitHub変数 "
+            "MEXC_LIVE_API_EXPIRES_AT も新しい日時へ更新してください。",
+        ]
+        return self._send_telegram("\n".join(lines))
+
     # ------------------------------------------------------------------
     # Internal
     # ------------------------------------------------------------------

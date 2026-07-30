@@ -5,7 +5,7 @@ import argparse
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Callable
 
@@ -23,6 +23,8 @@ from utils.notifier import Notifier
 
 
 DEFAULT_STATE_FILE = Path("data/mexc_api_health.json")
+EXPIRY_ALERT_THRESHOLDS_DAYS = (5, 1, 0)
+JST = timezone(timedelta(hours=9), name="JST")
 
 
 def _load_state(path: Path) -> dict[str, Any]:
@@ -57,6 +59,43 @@ def _sanitize_error(error: Exception) -> str:
         if value:
             message = message.replace(value, "***")
     return message[:800]
+
+
+def _parse_expiry(value: str) -> datetime:
+    normalized = value.strip()
+    if normalized.endswith("Z"):
+        normalized = normalized[:-1] + "+00:00"
+    try:
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError as error:
+        raise ValueError(
+            "MEXC_LIVE_API_EXPIRES_AT must be an ISO-8601 datetime"
+        ) from error
+    if parsed.tzinfo is None:
+        raise ValueError(
+            "MEXC_LIVE_API_EXPIRES_AT must include a timezone"
+        )
+    return parsed.astimezone(timezone.utc)
+
+
+def _expiry_notification(
+    *,
+    expires_at: datetime,
+    now: datetime,
+    notified_thresholds: set[int],
+) -> tuple[int | None, set[int]]:
+    remaining_days = (
+        expires_at - now
+    ).total_seconds() / (24 * 60 * 60)
+    reached = {
+        threshold
+        for threshold in EXPIRY_ALERT_THRESHOLDS_DAYS
+        if remaining_days <= threshold
+    }
+    pending = reached - notified_thresholds
+    if not pending:
+        return None, notified_thresholds
+    return min(pending), notified_thresholds | reached
 
 
 def _run_url() -> str:
@@ -104,11 +143,29 @@ def run_monitor(
     state_file: Path,
     notifier: Notifier,
     client_factory: Callable[[], MEXCClient] = MEXCClient,
+    now: datetime | None = None,
 ) -> int:
     """Return 0 healthy, 1 API unhealthy, or 2 notification/setup failure."""
     previous = _load_state(state_file)
     previous_status = str(previous.get("status") or "unknown")
-    checked_at = datetime.now(timezone.utc).isoformat()
+    checked_at_datetime = now or datetime.now(timezone.utc)
+    if checked_at_datetime.tzinfo is None:
+        raise ValueError("now must include a timezone")
+    checked_at_datetime = checked_at_datetime.astimezone(timezone.utc)
+    checked_at = checked_at_datetime.isoformat()
+
+    expiry_value = os.getenv(
+        "MEXC_LIVE_API_EXPIRES_AT",
+        "",
+    ).strip()
+    try:
+        expires_at = _parse_expiry(expiry_value) if expiry_value else None
+    except ValueError as error:
+        print(str(error), file=sys.stderr)
+        return 2
+
+    next_state = dict(previous)
+    state_changed = False
 
     result: dict[str, Any] | None = None
     try:
@@ -155,14 +212,66 @@ def run_monitor(
                 file=sys.stderr,
             )
             return 2
-        _write_state(
-            state_file,
-            {
-                "status": status,
-                "changed_at": checked_at,
-                "detail": detail,
-            },
+        next_state.update(
+            status=status,
+            changed_at=checked_at,
+            detail=detail,
         )
+        state_changed = True
+
+    if expires_at is None:
+        if "expiry" in next_state:
+            del next_state["expiry"]
+            state_changed = True
+    else:
+        canonical_expiry = expires_at.isoformat()
+        previous_expiry = previous.get("expiry")
+        if not isinstance(previous_expiry, dict):
+            previous_expiry = {}
+        same_expiry = (
+            previous_expiry.get("expires_at") == canonical_expiry
+        )
+        raw_notified = (
+            previous_expiry.get("notified_threshold_days", [])
+            if same_expiry
+            else []
+        )
+        notified_thresholds = {
+            int(value)
+            for value in raw_notified
+            if isinstance(value, int)
+        }
+        threshold, advanced_thresholds = _expiry_notification(
+            expires_at=expires_at,
+            now=checked_at_datetime,
+            notified_thresholds=notified_thresholds,
+        )
+        expiry_state = {
+            "expires_at": canonical_expiry,
+            "notified_threshold_days": sorted(advanced_thresholds),
+        }
+        if threshold is not None:
+            sent = notifier.notify_api_expiry(
+                expires_at_jst=expires_at.astimezone(JST).strftime(
+                    "%Y-%m-%d %H:%M JST"
+                ),
+                threshold_days=threshold,
+            )
+            if not sent:
+                if state_changed:
+                    _write_state(state_file, next_state)
+                print(
+                    "Telegram expiry notification failed; expiry state "
+                    "was not advanced.",
+                    file=sys.stderr,
+                )
+                return 2
+        if previous_expiry != expiry_state:
+            next_state["expiry"] = expiry_state
+            state_changed = True
+
+    if state_changed:
+        _write_state(state_file, next_state)
 
     if status == "healthy":
         assert result is not None

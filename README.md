@@ -74,8 +74,11 @@ TELEGRAM_CHAT_ID
 
 `TELEGRAM_BOT_TOKEN` と `TELEGRAM_CHAT_ID` を設定すると、確認済みの
 実弾約定、実弾注文エラー／緊急クローズ、ライブWorkflow失敗を通知します。
-`MEXC Live API Health` は15分ごとに認証済みread endpointを確認し、
-API異常と復旧の状態変化時だけTelegramへ通知します。
+`MEXC Live API Health` は毎日09:10 JSTに1回だけ認証済みread endpointを確認し、
+API異常と復旧の状態変化時だけTelegramへ通知します。MEXC画面に失効日時が
+表示されるキーは、GitHub repository variable `MEXC_LIVE_API_EXPIRES_AT` に
+タイムゾーン付きISO-8601形式（例: `2026-10-28T20:46:00+09:00`）で登録すると、
+5日前・1日前・期限到達時だけ追加通知します。期限なしのキーは未設定にします。
 
 ### 3. GitHub Environment を作る
 

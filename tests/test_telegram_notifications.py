@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import tempfile
 import unittest
+from datetime import datetime, timezone
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -89,9 +90,14 @@ class _RecordingNotifier:
 
     def __init__(self) -> None:
         self.events: list[dict] = []
+        self.expiry_events: list[dict] = []
 
     def notify_api_health(self, **kwargs):
         self.events.append(kwargs)
+        return True
+
+    def notify_api_expiry(self, **kwargs):
+        self.expiry_events.append(kwargs)
         return True
 
 
@@ -106,6 +112,7 @@ class ApiHealthTransitionTest(unittest.TestCase):
                     "MEXC_API_KEY": "key",
                     "MEXC_SECRET_KEY": "secret",
                     "LIVE_POSITION_MODE": "hedged",
+                    "MEXC_LIVE_API_EXPIRES_AT": "",
                 },
                 clear=False,
             ):
@@ -166,6 +173,152 @@ class ApiHealthTransitionTest(unittest.TestCase):
                 self.assertEqual(len(notifier.events), 3)
                 self.assertTrue(notifier.events[-1]["healthy"])
                 self.assertFalse(notifier.events[-1]["initial"])
+
+    def test_expiry_alerts_only_at_five_one_and_zero_day_thresholds(self) -> None:
+        notifier = _RecordingNotifier()
+        with tempfile.TemporaryDirectory() as directory:
+            state_file = Path(directory) / "health.json"
+            environment = {
+                "MEXC_API_KEY": "key",
+                "MEXC_SECRET_KEY": "secret",
+                "LIVE_POSITION_MODE": "hedged",
+                "MEXC_LIVE_API_EXPIRES_AT": "2026-08-10T00:00:00Z",
+            }
+            with patch.dict(os.environ, environment, clear=False):
+                self.assertEqual(
+                    run_monitor(
+                        state_file=state_file,
+                        notifier=notifier,
+                        client_factory=_HealthyClient,
+                        now=datetime(
+                            2026,
+                            8,
+                            4,
+                            23,
+                            0,
+                            tzinfo=timezone.utc,
+                        ),
+                    ),
+                    0,
+                )
+                self.assertEqual(notifier.expiry_events, [])
+
+                self.assertEqual(
+                    run_monitor(
+                        state_file=state_file,
+                        notifier=notifier,
+                        client_factory=_HealthyClient,
+                        now=datetime(
+                            2026,
+                            8,
+                            5,
+                            1,
+                            0,
+                            tzinfo=timezone.utc,
+                        ),
+                    ),
+                    0,
+                )
+                self.assertEqual(
+                    [
+                        event["threshold_days"]
+                        for event in notifier.expiry_events
+                    ],
+                    [5],
+                )
+
+                self.assertEqual(
+                    run_monitor(
+                        state_file=state_file,
+                        notifier=notifier,
+                        client_factory=_HealthyClient,
+                        now=datetime(
+                            2026,
+                            8,
+                            5,
+                            2,
+                            0,
+                            tzinfo=timezone.utc,
+                        ),
+                    ),
+                    0,
+                )
+                self.assertEqual(len(notifier.expiry_events), 1)
+
+                self.assertEqual(
+                    run_monitor(
+                        state_file=state_file,
+                        notifier=notifier,
+                        client_factory=_HealthyClient,
+                        now=datetime(
+                            2026,
+                            8,
+                            9,
+                            1,
+                            0,
+                            tzinfo=timezone.utc,
+                        ),
+                    ),
+                    0,
+                )
+                self.assertEqual(
+                    [
+                        event["threshold_days"]
+                        for event in notifier.expiry_events
+                    ],
+                    [5, 1],
+                )
+
+                self.assertEqual(
+                    run_monitor(
+                        state_file=state_file,
+                        notifier=notifier,
+                        client_factory=_HealthyClient,
+                        now=datetime(
+                            2026,
+                            8,
+                            10,
+                            0,
+                            1,
+                            tzinfo=timezone.utc,
+                        ),
+                    ),
+                    0,
+                )
+                self.assertEqual(
+                    [
+                        event["threshold_days"]
+                        for event in notifier.expiry_events
+                    ],
+                    [5, 1, 0],
+                )
+
+                state = state_file.read_text(encoding="utf-8")
+                self.assertIn(
+                    '"notified_threshold_days": [\n      0,\n      1,\n      5',
+                    state,
+                )
+
+    def test_expiry_timestamp_requires_timezone(self) -> None:
+        notifier = _RecordingNotifier()
+        with tempfile.TemporaryDirectory() as directory:
+            with patch.dict(
+                os.environ,
+                {
+                    "MEXC_LIVE_API_EXPIRES_AT": "2026-08-10T00:00:00",
+                },
+                clear=False,
+            ):
+                self.assertEqual(
+                    run_monitor(
+                        state_file=Path(directory) / "health.json",
+                        notifier=notifier,
+                        client_factory=_HealthyClient,
+                    ),
+                    2,
+                )
+        self.assertEqual(notifier.events, [])
+        self.assertEqual(notifier.expiry_events, [])
 
 
 if __name__ == "__main__":
