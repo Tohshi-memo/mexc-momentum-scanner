@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T13:21:27.045308+00:00
+- generated_at: 2026-07-30T13:26:23.241815+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9885**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T13:21:19.393752+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=64797.7
-- Funnel: target 920 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-07-30T13:26:15.528999+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64850.8
+- Funnel: target 920 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +55.56% | $2,792,176.19 |
-| ESP/USDT:USDT | +24.16% | $4,746,332.07 |
-| MMT/USDT:USDT | +22.18% | $1,629,016.22 |
-| CAP/USDT:USDT | +21.66% | $1,624,138.55 |
-| ROBO/USDT:USDT | +20.70% | $1,104,758.13 |
+| KOMA/USDT:USDT | +56.90% | $2,825,522.86 |
+| ESP/USDT:USDT | +25.08% | $4,780,719.69 |
+| MMT/USDT:USDT | +21.53% | $1,647,281.35 |
+| CAP/USDT:USDT | +21.39% | $1,658,114.87 |
+| ROBO/USDT:USDT | +20.51% | $1,132,007.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.56% | +4.70% |
-| KORU/USDT:USDT | below_1h_threshold | +4.53% | +4.67% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +3.42% | +3.57% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +3.42% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +3.29% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.56% | +4.62% |
+| KORU/USDT:USDT | below_1h_threshold | +4.53% | +4.59% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.98% | +4.05% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +3.42% | +3.49% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +3.33% |
 
 ## 7. 次に見るべき不足
 
