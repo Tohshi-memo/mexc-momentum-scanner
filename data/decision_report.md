@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T09:26:17.658953+00:00
+- generated_at: 2026-07-30T09:31:23.207709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9873**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T09:26:10.594528+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=64459.1
-- Funnel: target 916 → liquid 185 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-07-30T09:31:16.011882+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=64489.9
+- Funnel: target 916 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESP/USDT:USDT | +26.20% | $2,526,592.23 |
-| MMT/USDT:USDT | +16.21% | $1,207,804.32 |
-| MSFU/USDT:USDT | +14.00% | $2,909,698.25 |
-| ADVANTESTSTOCK/USDT:USDT | +11.09% | $1,273,584.51 |
-| US/USDT:USDT | +10.76% | $1,844,878.94 |
+| ESP/USDT:USDT | +27.69% | $2,560,870.36 |
+| MMT/USDT:USDT | +16.98% | $1,210,089.45 |
+| MSFU/USDT:USDT | +13.94% | $2,911,941.43 |
+| ADVANTESTSTOCK/USDT:USDT | +10.88% | $1,274,281.55 |
+| US/USDT:USDT | +10.58% | $1,848,186.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESP/USDT:USDT | below_1h_threshold | +4.22% | +3.94% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.54% |
-| MSFU/USDT:USDT | below_1h_threshold | +2.24% | +1.97% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.34% |
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.12% |
+| ESP/USDT:USDT | below_relative_strength | +5.13% | +4.80% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.50% |
+| MSFU/USDT:USDT | below_1h_threshold | +2.24% | +1.92% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.29% |
+| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.07% |
 
 ## 7. 次に見るべき不足
 
