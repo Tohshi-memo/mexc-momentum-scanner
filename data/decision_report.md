@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T17:46:23.383748+00:00
+- generated_at: 2026-07-30T17:51:32.358183+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9911**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T17:46:17.520593+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=64919.6
+- 更新: 2026-07-30T17:51:25.100456+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64851.3
 - Funnel: target 920 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +12.89% | $4,284,655.00 |
-| ROBO/USDT:USDT | +10.92% | $2,002,857.83 |
-| CAP/USDT:USDT | +10.01% | $3,097,756.84 |
-| EVAA/USDT:USDT | +5.85% | $2,110,591.03 |
-| UAI/USDT:USDT | +4.35% | $23,434,662.58 |
+| MMT/USDT:USDT | +12.57% | $4,452,804.31 |
+| ROBO/USDT:USDT | +10.75% | $2,054,089.04 |
+| CAP/USDT:USDT | +9.61% | $3,119,413.98 |
+| EVAA/USDT:USDT | +7.23% | $2,156,789.70 |
+| UAI/USDT:USDT | +4.32% | $23,451,657.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +4.97% | +4.77% |
-| BTW/USDT:USDT | below_1h_threshold | +4.26% | +4.05% |
-| MMT/USDT:USDT | below_1h_threshold | +3.89% | +3.69% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.60% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.75% | +2.55% |
+| ROBO/USDT:USDT | below_1h_threshold | +4.74% | +4.64% |
+| BTW/USDT:USDT | below_1h_threshold | +4.61% | +4.52% |
+| MMT/USDT:USDT | below_1h_threshold | +3.72% | +3.62% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.30% | +3.20% |
+| ESP/USDT:USDT | below_1h_threshold | +2.88% | +2.79% |
 
 ## 7. 次に見るべき不足
 
