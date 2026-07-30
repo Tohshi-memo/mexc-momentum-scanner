@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T13:16:27.175207+00:00
+- generated_at: 2026-07-30T13:21:27.045308+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9885**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.29** / 初期 $100.00 (+21.29%)
-- 確定トレード: 173件 (TP 67 / SL 101 / EXP 5)
-- 最新: SAMSUNGSTOCK/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.29
+- 残高: **$121.17** / 初期 $100.00 (+21.17%)
+- 確定トレード: 174件 (TP 67 / SL 102 / EXP 5)
+- 最新: SKHYSTOCK/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.17
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T13:16:17.593187+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64799.1
+- 更新: 2026-07-30T13:21:19.393752+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=64797.7
 - Funnel: target 920 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,11 +80,11 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +54.47% | $2,700,614.40 |
-| MMT/USDT:USDT | +21.42% | $1,616,158.10 |
-| ESP/USDT:USDT | +21.08% | $4,700,578.19 |
-| CAP/USDT:USDT | +20.93% | $1,610,375.59 |
-| ROBO/USDT:USDT | +16.97% | $1,067,212.91 |
+| KOMA/USDT:USDT | +55.56% | $2,792,176.19 |
+| ESP/USDT:USDT | +24.16% | $4,746,332.07 |
+| MMT/USDT:USDT | +22.18% | $1,629,016.22 |
+| CAP/USDT:USDT | +21.66% | $1,624,138.55 |
+| ROBO/USDT:USDT | +20.70% | $1,104,758.13 |
 
 ### Near Miss
 
@@ -93,7 +93,7 @@
 | SOXL/USDT:USDT | below_1h_threshold | +4.56% | +4.70% |
 | KORU/USDT:USDT | below_1h_threshold | +4.53% | +4.67% |
 | STXSTOCK/USDT:USDT | below_1h_threshold | +3.42% | +3.57% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +3.41% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +3.42% |
 | MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +3.29% |
 
 ## 7. 次に見るべき不足
