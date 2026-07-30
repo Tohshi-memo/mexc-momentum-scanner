@@ -1,6 +1,10 @@
 name: MEXC Live Trader
 
 on:
+  # 1h足戦略なので毎時1回評価する。GitHub Actionsの無料枠も圧迫しにくい。
+  # Repository variable MEXC_LIVE_AUTOTRADE_ENABLED=true の間だけ実行する。
+  schedule:
+    - cron: '7 * * * *'
   workflow_dispatch:
     inputs:
       live_trading_enabled:
@@ -27,6 +31,7 @@ concurrency:
 
 jobs:
   trade:
+    if: github.event_name != 'schedule' || vars.MEXC_LIVE_AUTOTRADE_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     environment: live-trading
@@ -35,8 +40,8 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
       RUN_ONCE: 'true'
       DRY_RUN: 'false'
-      LIVE_TRADING_ENABLED: ${{ github.event.inputs.live_trading_enabled }}
-      LIVE_TRADING_CONFIRMATION: ${{ github.event.inputs.confirmation }}
+      LIVE_TRADING_ENABLED: ${{ github.event_name == 'schedule' && 'true' || github.event.inputs.live_trading_enabled }}
+      LIVE_TRADING_CONFIRMATION: ${{ github.event_name == 'schedule' && 'LIVE' || github.event.inputs.confirmation }}
       # Non-secret stable account namespace used only for order idempotency.
       LIVE_ACCOUNT_ID: 'mexc-primary'
       LIVE_POLICY_VERSION: 'live-v1-20260729'
