@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T10:01:17.849268+00:00
+- generated_at: 2026-07-30T10:06:19.966303+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9875**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T10:01:10.840392+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64550.0
-- Funnel: target 916 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-30T10:06:12.793435+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64577.5
+- Funnel: target 916 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +37.00% | $1,025,555.11 |
-| ESP/USDT:USDT | +28.93% | $2,890,378.36 |
-| MMT/USDT:USDT | +17.75% | $1,257,596.71 |
-| MSFU/USDT:USDT | +14.73% | $2,912,855.37 |
-| US/USDT:USDT | +11.69% | $1,868,941.01 |
+| KOMA/USDT:USDT | +35.94% | $1,042,380.84 |
+| ESP/USDT:USDT | +27.32% | $2,981,740.43 |
+| MMT/USDT:USDT | +18.10% | $1,263,204.39 |
+| MSFU/USDT:USDT | +14.60% | $2,913,246.47 |
+| CAP/USDT:USDT | +10.90% | $1,115,307.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMZU/USDT:USDT | below_1h_threshold | +1.26% | +1.26% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.07% |
-| CAP/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
-| ETNSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.17% |
+| CAP/USDT:USDT | below_1h_threshold | +1.97% | +1.93% |
+| AMZU/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.02% |
+| LAB/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
 
 ## 7. 次に見るべき不足
 
