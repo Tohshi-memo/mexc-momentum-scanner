@@ -156,7 +156,21 @@ jobs:
           MEXC_API_KEY: ${{ secrets.MEXC_LIVE_API_KEY }}
           MEXC_SECRET_KEY: ${{ secrets.MEXC_LIVE_SECRET_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python main.py
+
+      - name: Notify Telegram when live workflow fails
+        if: failure()
+        continue-on-error: true
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_MESSAGE: >-
+            🚨 MEXC本番Workflow失敗
+            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            MEXC画面でポジションとSL/TPを確認してください。
+        run: python tools/send_telegram_alert.py
 
       - name: Sync live audit events to Sakura
         if: always()

@@ -29,10 +29,19 @@ class Notifier:
 
     def __init__(self) -> None:
         self._url = os.getenv("DISCORD_WEBHOOK_URL", "")
+        self._telegram_token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+        self._telegram_chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
         if self._url:
             logger.info("Discord notifications enabled.")
         else:
             logger.info("DISCORD_WEBHOOK_URL not set. Notifications disabled.")
+        if self.telegram_enabled:
+            logger.info("Telegram notifications enabled.")
+        else:
+            logger.info(
+                "TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID not set. "
+                "Telegram notifications disabled."
+            )
 
     # ------------------------------------------------------------------
     # Public
@@ -147,6 +156,97 @@ class Notifier:
         }
         self._send({"embeds": [embed]})
 
+    @property
+    def telegram_enabled(self) -> bool:
+        """Return True only when both Telegram credentials are configured."""
+        return bool(self._telegram_token and self._telegram_chat_id)
+
+    def send_telegram_message(self, text: str) -> bool:
+        """Send a plain UTF-8 Telegram message without affecting trading."""
+        return self._send_telegram(text)
+
+    def notify_live_trade_opened(
+        self,
+        *,
+        symbol: str,
+        direction: str,
+        order_id: str,
+        filled_amount: float,
+        average_fill_price: float,
+        notional_usdt: float,
+        sl_price: float,
+        tp_price: float,
+        risk_usdt: float,
+        leverage: float,
+        protection_verified: bool,
+    ) -> bool:
+        """Notify only after a live fill and exchange-side protection are verified."""
+        protected = "確認済み" if protection_verified else "未確認"
+        message = (
+            "🟢 MEXC 実弾エントリー\n"
+            f"銘柄: {symbol}\n"
+            f"方向: {direction.upper()}\n"
+            f"約定数量: {filled_amount:.8g}\n"
+            f"平均約定価格: {average_fill_price:.8g}\n"
+            f"建玉: {notional_usdt:.2f} USDT\n"
+            f"最大想定損失: {risk_usdt:.4f} USDT\n"
+            f"レバレッジ: {leverage:.2f}x\n"
+            f"SL: {sl_price:.8g}\n"
+            f"TP: {tp_price:.8g}\n"
+            f"取引所側SL/TP: {protected}\n"
+            f"注文ID: {order_id}"
+        )
+        return self._send_telegram(message)
+
+    def notify_live_execution_error(
+        self,
+        *,
+        symbol: str,
+        status: str,
+        reason: str,
+        emergency_close: dict[str, Any] | None,
+    ) -> bool:
+        """Alert when a live mutation is unsafe or needs emergency recovery."""
+        close_status = "未実施"
+        close_order_id = ""
+        if isinstance(emergency_close, dict):
+            close_status = str(emergency_close.get("status") or "不明")
+            close_order_id = str(emergency_close.get("order_id") or "")
+        message = (
+            "🚨 MEXC 実弾注文エラー\n"
+            f"銘柄: {symbol}\n"
+            f"状態: {status or 'unknown'}\n"
+            f"理由: {reason[:800]}\n"
+            f"緊急クローズ: {close_status}"
+        )
+        if close_order_id:
+            message += f"\nクローズ注文ID: {close_order_id}"
+        message += "\nMEXC画面でポジションとSL/TPを確認してください。"
+        return self._send_telegram(message)
+
+    def notify_api_health(
+        self,
+        *,
+        healthy: bool,
+        detail: str,
+        free_usdt: float | None = None,
+        open_positions: int | None = None,
+        initial: bool = False,
+    ) -> bool:
+        """Notify on API monitor startup, failure transition, and recovery."""
+        if healthy and initial:
+            title = "🟢 MEXC API監視を開始"
+        elif healthy:
+            title = "✅ MEXC API復旧"
+        else:
+            title = "🚨 MEXC API異常"
+        lines = [title, f"詳細: {detail[:800]}"]
+        if free_usdt is not None:
+            lines.append(f"利用可能残高: {free_usdt:.2f} USDT")
+        if open_positions is not None:
+            lines.append(f"オープンポジション: {open_positions}")
+        return self._send_telegram("\n".join(lines))
+
     # ------------------------------------------------------------------
     # Internal
     # ------------------------------------------------------------------
@@ -158,5 +258,43 @@ class Notifier:
         try:
             resp = requests.post(self._url, json=payload, timeout=10)
             resp.raise_for_status()
-        except requests.RequestException as e:
-            logger.warning("Discord notification failed: %s", e)
+        except requests.RequestException as error:
+            logger.warning(
+                "Discord notification failed (%s).",
+                type(error).__name__,
+            )
+
+    def _send_telegram(self, text: str) -> bool:
+        """POST sendMessage while keeping the bot token out of logs."""
+        if not self.telegram_enabled:
+            return False
+        endpoint = (
+            f"https://api.telegram.org/bot{self._telegram_token}/sendMessage"
+        )
+        payload = {
+            "chat_id": self._telegram_chat_id,
+            "text": str(text)[:4000],
+        }
+        try:
+            response = requests.post(endpoint, json=payload, timeout=10)
+        except requests.RequestException as error:
+            logger.warning(
+                "Telegram notification request failed (%s).",
+                type(error).__name__,
+            )
+            return False
+        if response.status_code < 200 or response.status_code >= 300:
+            logger.warning(
+                "Telegram notification failed with HTTP %d.",
+                response.status_code,
+            )
+            return False
+        try:
+            body = response.json()
+        except ValueError:
+            logger.warning("Telegram notification returned invalid JSON.")
+            return False
+        if body.get("ok") is not True:
+            logger.warning("Telegram Bot API rejected the notification.")
+            return False
+        return True

@@ -509,6 +509,42 @@ def run_once(
                 live_orders_placed += 1
                 live_execution_committed = True
                 append_confirmed_live_execution(proposal, exec_result)
+                try:
+                    notifier.notify_live_trade_opened(
+                        symbol=result.symbol,
+                        direction=proposal.direction,
+                        order_id=str(exec_result.get("order_id") or ""),
+                        filled_amount=float(
+                            exec_result.get("filled_amount")
+                            or exec_result.get("amount")
+                            or 0.0
+                        ),
+                        average_fill_price=float(
+                            exec_result.get("average_fill_price") or 0.0
+                        ),
+                        notional_usdt=float(
+                            exec_result.get("actual_notional_usdt")
+                            or exec_result.get("notional_usdt")
+                            or 0.0
+                        ),
+                        sl_price=float(exec_result.get("sl_price") or 0.0),
+                        tp_price=float(exec_result.get("tp_price") or 0.0),
+                        risk_usdt=float(
+                            exec_result.get("actual_risk_usdt")
+                            or exec_result.get("risk_usdt")
+                            or 0.0
+                        ),
+                        leverage=float(exec_result.get("leverage") or 0.0),
+                        protection_verified=bool(
+                            exec_result.get("protection_verified")
+                        ),
+                    )
+                except Exception as notification_error:
+                    logger.warning(
+                        "Telegram live-fill notification failed for %s (%s).",
+                        result.symbol,
+                        type(notification_error).__name__,
+                    )
             elif exec_status == "dry_run" and dry_run:
                 pass
             elif exec_status.startswith("skipped_"):
@@ -558,6 +594,20 @@ def run_once(
                     fundamental=fundamental,
                 )
                 if not dry_run:
+                    try:
+                        notifier.notify_live_execution_error(
+                            symbol=result.symbol,
+                            status=exec_status or "missing",
+                            reason=str(exec_result.get("reason") or message),
+                            emergency_close=exec_result.get("emergency_close"),
+                        )
+                    except Exception as notification_error:
+                        logger.warning(
+                            "Telegram live-error notification failed for %s "
+                            "(%s).",
+                            result.symbol,
+                            type(notification_error).__name__,
+                        )
                     raise LiveExecutionSafetyError(
                         f"Live execution state is not safely confirmed for "
                         f"{result.symbol}: {message}"

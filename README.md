@@ -65,10 +65,17 @@ GitHub の repository settings には、scanner用のread-only secretsを登録�
 MEXC_API_KEY       # scanner専用・read-only
 MEXC_SECRET_KEY    # scanner専用・read-only
 DISCORD_WEBHOOK_URL
+TELEGRAM_BOT_TOKEN
+TELEGRAM_CHAT_ID
 ```
 
 `DISCORD_WEBHOOK_URL` は任意ですが、本番注文では発注・スキップ・失敗理由を確認するため設定推奨です。
 `MEXC_API_KEY` / `MEXC_SECRET_KEY` に本番取引権限を与えないでください。
+
+`TELEGRAM_BOT_TOKEN` と `TELEGRAM_CHAT_ID` を設定すると、確認済みの
+実弾約定、実弾注文エラー／緊急クローズ、ライブWorkflow失敗を通知します。
+`MEXC Live API Health` は15分ごとに認証済みread endpointを確認し、
+API異常と復旧の状態変化時だけTelegramへ通知します。
 
 ### 3. GitHub Environment を作る
 

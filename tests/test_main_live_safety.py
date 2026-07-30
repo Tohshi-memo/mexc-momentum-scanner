@@ -261,6 +261,10 @@ class RunOnceLiveAbortTest(unittest.TestCase):
         executor.execute.return_value = {
             "status": "error",
             "reason": "protection verification failed",
+            "emergency_close": {
+                "status": "ok",
+                "order_id": "close-1",
+            },
         }
         dependencies = self._dependencies(executor)
 
@@ -268,6 +272,36 @@ class RunOnceLiveAbortTest(unittest.TestCase):
             self._run_silently(dependencies)
 
         self.assertEqual(executor.execute.call_count, 1)
+        dependencies[
+            "notifier"
+        ].notify_live_execution_error.assert_called_once()
+
+    def test_confirmed_live_fill_sends_one_telegram_notification(self) -> None:
+        executor = Mock()
+        executor.execute.return_value = {
+            "status": "ok",
+            "order_id": "order-1",
+            "amount": 0.01,
+            "filled_amount": 0.01,
+            "average_fill_price": 100.0,
+            "notional_usdt": 1.0,
+            "actual_notional_usdt": 1.0,
+            "risk_usdt": 0.04,
+            "actual_risk_usdt": 0.04,
+            "sl_price": 104.0,
+            "tp_price": 92.0,
+            "leverage": 2.0,
+            "protection_verified": True,
+        }
+        dependencies = self._dependencies(executor)
+        dependencies["max_live_orders_per_run"] = 1
+
+        self._run_silently(dependencies)
+
+        self.assertEqual(executor.execute.call_count, 1)
+        dependencies[
+            "notifier"
+        ].notify_live_trade_opened.assert_called_once()
 
     def test_post_ok_processing_error_aborts_before_second_candidate(self) -> None:
         executor = Mock()

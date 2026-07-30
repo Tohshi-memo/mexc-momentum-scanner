@@ -1,0 +1,95 @@
+name: MEXC Live API Health
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: mexc-live-api-health
+  cancel-in-progress: false
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
+      MEXC_API_KEY: ${{ secrets.MEXC_LIVE_API_KEY }}
+      MEXC_SECRET_KEY: ${{ secrets.MEXC_LIVE_SECRET_KEY }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+      LIVE_POSITION_MODE: 'hedged'
+
+    steps:
+      - name: Check Telegram monitor configuration
+        id: monitor_config
+        shell: bash
+        run: |
+          if [ -n "${TELEGRAM_BOT_TOKEN}" ] && [ -n "${TELEGRAM_CHAT_ID}" ]; then
+            echo "enabled=true" >> "${GITHUB_OUTPUT}"
+          else
+            echo "enabled=false" >> "${GITHUB_OUTPUT}"
+            echo "Telegram secrets are not configured; API monitor is dormant."
+          fi
+
+      - name: Checkout repository
+        if: steps.monitor_config.outputs.enabled == 'true'
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 50
+
+      - name: Set up Python
+        if: steps.monitor_config.outputs.enabled == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        if: steps.monitor_config.outputs.enabled == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Check authenticated MEXC read endpoints
+        if: steps.monitor_config.outputs.enabled == 'true'
+        id: api_health
+        continue-on-error: true
+        run: python tools/check_live_api_health.py
+
+      - name: Persist health transition
+        if: >-
+          always() &&
+          steps.monitor_config.outputs.enabled == 'true'
+        shell: bash
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/mexc_api_health.json 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No API health transition to persist."
+            exit 0
+          fi
+          git commit -m "chore: record MEXC API health transition [skip ci]"
+          for attempt in 1 2 3; do
+            if git fetch --depth=50 origin "${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}" && \
+               git rebase "origin/${GITHUB_REF_NAME}" && \
+               git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "Failed to persist MEXC API health transition."
+          exit 1
+
+      - name: Fail workflow when API health failed
+        if: >-
+          steps.monitor_config.outputs.enabled == 'true' &&
+          steps.api_health.outcome == 'failure'
+        run: |
+          echo "MEXC live API health check or Telegram delivery failed."
+          exit 1
