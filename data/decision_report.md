@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T19:21:27.742316+00:00
+- generated_at: 2026-07-30T19:26:17.445214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9915**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T19:21:19.294930+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=64808.1
-- Funnel: target 920 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-30T19:26:10.419608+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=64833.7
+- Funnel: target 920 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +13.98% | $5,697,562.78 |
-| CAP/USDT:USDT | +13.48% | $3,831,397.16 |
-| ROBO/USDT:USDT | +12.92% | $2,418,755.69 |
-| EVAA/USDT:USDT | +10.55% | $2,783,249.70 |
-| MUU/USDT:USDT | +5.12% | $4,692,917.39 |
+| CAP/USDT:USDT | +14.59% | $3,885,218.37 |
+| MMT/USDT:USDT | +13.39% | $5,748,080.11 |
+| ROBO/USDT:USDT | +12.76% | $2,430,472.09 |
+| EVAA/USDT:USDT | +10.48% | $2,825,552.54 |
+| MUU/USDT:USDT | +5.12% | $4,703,502.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +1.56% | +1.34% |
-| EUL/USDT:USDT | below_1h_threshold | +1.32% | +1.10% |
-| MYX/USDT:USDT | below_1h_threshold | +1.31% | +1.10% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +0.98% | +0.76% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.98% | +0.76% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.16% | +1.90% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.97% | +1.72% |
+| EUL/USDT:USDT | below_1h_threshold | +1.44% | +1.18% |
+| MYX/USDT:USDT | below_1h_threshold | +1.26% | +1.00% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.14% | +0.89% |
 
 ## 7. 次に見るべき不足
 
