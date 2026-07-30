@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T23:41:27.055196+00:00
+- generated_at: 2026-07-30T23:46:18.934929+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9940**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T23:41:18.573279+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=64973.1
+- 更新: 2026-07-30T23:46:11.720912+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64822.1
 - Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +27.71% | $3,033,932.77 |
-| ROBO/USDT:USDT | +19.76% | $3,328,478.20 |
-| ESPORTS/USDT:USDT | +16.65% | $5,100,543.01 |
-| MMT/USDT:USDT | +15.93% | $8,588,317.16 |
-| SNXX/USDT:USDT | +15.80% | $10,808,413.30 |
+| AXTISTOCK/USDT:USDT | +28.16% | $3,041,501.76 |
+| ROBO/USDT:USDT | +19.26% | $3,334,108.66 |
+| SNXX/USDT:USDT | +15.60% | $10,817,350.19 |
+| AMZU/USDT:USDT | +15.58% | $2,361,151.05 |
+| ESPORTS/USDT:USDT | +15.53% | $5,123,243.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +4.75% | +4.53% |
-| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.59% |
-| AKE/USDT:USDT | below_1h_threshold | +2.15% | +1.93% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.12% | +1.90% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +1.81% |
+| ROBO/USDT:USDT | below_1h_threshold | +4.61% | +4.62% |
+| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.82% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.13% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.05% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.79% |
 
 ## 7. 次に見るべき不足
 
