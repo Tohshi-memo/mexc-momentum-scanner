@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T12:31:34.875034+00:00
+- generated_at: 2026-07-30T12:36:22.665294+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9883**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T12:31:25.582548+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=64896.0
+- 更新: 2026-07-30T12:36:15.037249+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=64897.9
 - Funnel: target 917 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.6 >= 65=1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +66.42% | $2,114,578.26 |
-| ESP/USDT:USDT | +24.80% | $4,468,917.33 |
-| MMT/USDT:USDT | +23.66% | $1,523,215.07 |
-| CAP/USDT:USDT | +17.52% | $1,427,187.08 |
-| ROBO/USDT:USDT | +17.06% | $1,053,421.12 |
+| KOMA/USDT:USDT | +68.29% | $2,173,459.04 |
+| ESP/USDT:USDT | +24.75% | $4,504,978.26 |
+| MMT/USDT:USDT | +23.43% | $1,530,158.62 |
+| CAP/USDT:USDT | +18.29% | $1,436,592.44 |
+| ROBO/USDT:USDT | +17.54% | $1,055,086.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | ARMSTOCK/USDT:USDT | below_relative_strength | +5.09% | +4.89% |
+| KOMA/USDT:USDT | below_relative_strength | +5.09% | +4.88% |
 | NBISSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +4.17% |
 | KORU/USDT:USDT | below_1h_threshold | +3.99% | +3.79% |
-| KOMA/USDT:USDT | below_1h_threshold | +3.96% | +3.76% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.35% | +3.15% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.35% | +3.14% |
 
 ## 7. 次に見るべき不足
 
