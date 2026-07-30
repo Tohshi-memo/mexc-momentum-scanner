@@ -25,7 +25,7 @@ git clone <this-repo>
 cd mexc-momentum-scanner
 pip install -r requirements.txt
 cp .env.example .env
-# .env を編集 (MEXC_API_KEY / MEXC_SECRET_KEY など)
+# .env を編集（ローカル/DryRun用のread-only MEXC_API_KEY / MEXC_SECRET_KEYなど）
 python main.py
 ```
 
@@ -38,7 +38,7 @@ python main.py
 |---|---|---|---|
 | `MEXC Momentum Scanner` | データ収集・DryRun・シグナル追跡 | しない (`DRY_RUN=true` 固定) | `data/` を commit/push |
 | `MEXC Momentum Analysis` | 重い分析レポート生成 | しない | `analysis-results` の `reports/` を更新 |
-| `MEXC Live Trader` | MEXC 本番注文 | 条件を満たすと実注文 | `data/` は push しない |
+| `MEXC Live Trader` | MEXC 本番注文 | 全安全ゲート通過時のみ実注文 | `data/` は push せず、`logs/` を artifact 保存 |
 | `Show MEXC Balance` | 残高確認 | しない | 保存なし |
 
 `MEXC Momentum Scanner` は外部 cron から5分ごとに呼び出す想定です。GitHub Actions 内蔵の
@@ -51,34 +51,46 @@ DryRun 固定なので、そこから本番注文に切り替えることはで�
 
 ### 1. MEXC API キーを用意する
 
-MEXC の API 管理画面で、USDT-M 先物の取引に使える API キーを作成します。
+MEXC の API 管理画面で、用途を分離した2組の API キーを作成します。
 
-- DryRun だけなら Read-only で十分です。
-- 本番注文には `Futures Trade` 権限が必要です。
+- scanner / DryRun用は **Read-only** とし、`MEXC_API_KEY` / `MEXC_SECRET_KEY` に使います。
+- 本番専用キーだけに `Futures Trade` 権限を与え、scanner用キーと使い回しません。
 - IP 制限を使う場合は、GitHub Actions の実行元 IP の扱いに注意してください。固定IPが必要なら GitHub Actions より VPS 運用の方が向いています。
 
 ### 2. GitHub Secrets を設定する
 
-GitHub の repository settings で以下の secrets を登録します。
+GitHub の repository settings には、scanner用のread-only secretsを登録します。
 
 ```text
-MEXC_API_KEY
-MEXC_SECRET_KEY
+MEXC_API_KEY       # scanner専用・read-only
+MEXC_SECRET_KEY    # scanner専用・read-only
 DISCORD_WEBHOOK_URL
 ```
 
 `DISCORD_WEBHOOK_URL` は任意ですが、本番注文では発注・スキップ・失敗理由を確認するため設定推奨です。
+`MEXC_API_KEY` / `MEXC_SECRET_KEY` に本番取引権限を与えないでください。
 
 ### 3. GitHub Environment を作る
 
 `MEXC Live Trader` は `environment: live-trading` を使います。
 GitHub の `Settings` → `Environments` で `live-trading` を作成してください。
 
-推奨設定:
+このEnvironmentのsecretsに、本番専用キーを次の名前で登録します。
+
+```text
+MEXC_LIVE_API_KEY
+MEXC_LIVE_SECRET_KEY
+```
+
+本番キーはrepository secretsやローカルの `.env` には置かず、`live-trading`
+Environment内だけに保存します。workflowは本番stepの実行中だけ、これらをコードが読む
+`MEXC_API_KEY` / `MEXC_SECRET_KEY` へ割り当てます。
+
+必須の保護設定:
 
 - `Required reviewers` を有効にする
-- 自分の承認なしに本番Actionが進まないようにする
-- 本番用のAPIキーを environment secrets に分けて置く運用も可
+- workflow の入力確認とは別に、Environment の手動承認なしで本番Actionが進まないようにする
+- deployment branch ruleでdefault branchだけを許可する
 
 ### 4. 残高を確認する
 
@@ -105,37 +117,75 @@ confirmation = LIVE
 `LIVE_TRADING_ENABLED=true` と `LIVE_TRADING_CONFIRMATION=LIVE` がない限り
 `LiveExecutor` は起動しません。
 
+本番 workflow は、これらの二重ロックに加えて次も強制します。
+
+- repository の **default branch** からの dispatch だけを許可
+- dispatch 時点の `${{ github.sha }}` を指定して、不変の commit SHA を checkout
+- `live-trading` Environment の承認を workflow 入力とは別に要求
+- unit test と read-only の MEXC preflight が成功するまで `main.py` を実行しない
+
+実注文を許可する最終操作は、毎回の `workflow_dispatch` と
+`live-trading` Environment 承認です。設定だけで定期的に実注文へ移行する仕組みではありません。
+
 ### 6. 初期の本番リスク設定
 
 `MEXC Live Trader` の初期設定は、小さく試す前提です。
 
 ```yaml
 LIVE_MAX_ORDERS_PER_RUN: '1'
+LIVE_MAX_NEW_ENTRIES_PER_UTC_DAY: '1'
 LIVE_MAX_OPEN_POSITIONS: '1'
-LIVE_BASE_RISK_PCT: '0.25'
-LIVE_MAX_RISK_PCT: '0.25'
+LIVE_BASE_RISK_PCT: '0.10'
+LIVE_MAX_RISK_PCT: '0.10'
 LIVE_MAX_LEVERAGE: '2.0'
 LIVE_MIN_BALANCE_USDT: '5.0'
+LIVE_MARGIN_MODE: 'isolated'
+LIVE_POSITION_MODE: 'hedged'
 ```
 
-つまり、1回のActionで最大1注文、同時保有も最大1ポジションです。
-安定確認後に増やす場合も、まずは `LIVE_BASE_RISK_PCT` と `LIVE_MAX_OPEN_POSITIONS` を小さく保ってください。
+1ポジションの計画リスクは口座残高の最大 **0.10%**、1回のActionで最大1注文、
+同時保有も最大1ポジションです。証拠金は isolated、ポジションモードは hedged、
+レバレッジ上限は2倍に固定しています。検証履歴を増やす目的でリスク上限や
+ポジション数を緩めないでください。
 
-### 7. SL/TP 付き発注の仕組み
+### 7. 本番判定と発注のフェイルクローズ設計
 
 本番注文は `core/executor.py` の `LiveExecutor` が担当します。
-通過した場合のみ `market sell` に `stopLossPrice` と `takeProfitPrice` を付けて発注します。
+不足・不明・不整合は許可とみなさず、すべてREJECTまたは実行エラーにします。
 
-発注前に以下のガードを通ります。
+1. **read-only preflight**
+   `tools/live_preflight.py` が、ccxt/MEXC APIの必要メソッド、認証、有限なUSDT残高、
+   hedgedモード、既存ポジション数を照合します。この段階では注文の作成・変更・取消を行いません。
+2. **同一ポリシーのOOS実績ゲート**
+   `LIVE_POLICY_VERSION` とコード・判定ENVから作る policy fingerprint が一致する
+   closed シャドー履歴だけを母集団にします。20/50/100/200件の**全窓**で、欠損なし、
+   約定率80%以上かつ最低20約定、手数料0.16%・スリッページ0.20%・Funding 0.15%控除後の
+   net EVが0.20%以上であることを要求します。さらに直近データ24時間以内、
+   最大200件が30 UTC日以上に分散し、日次clusterの95%下限が0%を超える必要があります。
+3. **最新L2の執行可能性ゲート**
+   発注直前にorder bookを再取得し、データ鮮度10秒以内、シグナル価格からの乖離0.50%以内、
+   spread 0.10%以内、想定slippage 0.10%以内、必要数量に対するdepth 1.0倍以上を確認します。
+4. **`externalOid` による exactly-once**
+   account・symbol・direction・entry style・signal candle から安定した注文intentを作り、
+   決定的な `externalOid` を付与します。発注前と応答不明時はread-only APIで取引所を照合し、
+   mutatingな注文作成は自動再試行しません。同じintentが見つかれば新規注文を出さず再照合します。
+   さらにUTC当日の全symbol履歴を照合し、新規entryを1日1件までに制限します。
+5. **約定・保護・実リスク検証**
+   entryの約定と、全数量を覆うTP/SLを取引所側で確認します。実約定価格・SL・数量から
+   actual riskを再計算し、計画値の1.05倍を超えないことまで確認して初めて成功扱いにします。
+   いずれかが確認できずポジションが存在する場合は、`reduceOnly` の成行注文で緊急クローズし、
+   その実行も取引所へread-only照合します。
 
-1. `fundamental == AVOID` ならスキップ
-2. 残高 `< LIVE_MIN_BALANCE_USDT` ならスキップ
-3. 同じシンボルに既存ポジションがあればスキップ
-4. 開いているポジション数が `LIVE_MAX_OPEN_POSITIONS` 以上ならスキップ
-5. SL/TP が不正ならエラー
-6. 最小ロットまたは最小名目額を下回るならスキップ
+現在の保存履歴は、新しい `LIVE_POLICY_VERSION` / policy fingerprint に一致する
+`eligible` が **0件**のため、本番判定は当面 **REJECT** です。これは安全側の意図した状態です。
+同一ポリシーで最低200件、かつ30 UTC日以上のclosed OOS履歴が新たに蓄積され、
+上記の全窓を通過するまで実注文は出ません。発注を急ぐためにversionを偽装したり、
+ゲート閾値を緩めたりしないでください。
 
-通過した場合だけ、SL/TP を付けた注文をMEXCへ送ります。
+確認済みの実行結果はrunner-localの `logs/live-executions.jsonl` に追記され、
+workflow終了時に `logs/` artifactとして14日保存されます。このledgerは監査用スナップショットで、
+runner間の永続状態や重複防止の根拠ではありません。注文・約定・ポジション・保護注文の
+source of truthは常にMEXCです。
 
 ## DryRun と本番の違い
 
@@ -144,9 +194,9 @@ LIVE_MIN_BALANCE_USDT: '5.0'
 | 実注文 | しない | 条件を満たすと行う |
 | 実行頻度 | 外部 cron で5分ごと | 最初は手動推奨 |
 | `DRY_RUN` | `true` 固定 | `false` 固定 |
-| 追加ロック | 不要 | `live_trading_enabled=true` + `confirmation=LIVE` |
+| 追加ロック | 不要 | `true` + `LIVE`、default branch、不変SHA、Environment承認、preflight |
 | `data/` push | する | しない |
-| SL/TP | 仮想追跡 | 注文時にMEXCへ送信 |
+| SL/TP | 仮想追跡 | MEXCで約定・保護を再照合。失敗時は緊急reduceOnly close |
 
 ### サーキットブレーカーの挙動
 
@@ -193,16 +243,16 @@ All new entries are skipped this cycle.
 
 ### 残高が少ない場合の注意
 
-残高 $28 でデフォルト設定 (`LIVE_BASE_RISK_PCT=0.5`, `SL≈2%`) の場合:
+残高 $28 で本番設定 (`LIVE_BASE_RISK_PCT=0.10`, `SL≈2%`) の場合:
 
 ```
-risk_usdt = 28 × 0.5% = $0.14
-notional  = 0.14 / 0.02 = $7
+risk_usdt = 28 × 0.10% = $0.028
+notional  = 0.028 / 0.02 = $1.40
 ```
 
-MEXC の最小名目額 (通常 $5 程度) を下回る銘柄も多く、`skipped_below_min_cost` で
-多くの候補がスキップされます。少額テストの場合は `LIVE_BASE_RISK_PCT` を
-2〜3% に引き上げるか、DRY_RUN でデータ蓄積を継続してください。
+銘柄ごとのMEXC最小ロット・最小名目額を下回る場合は `skipped_below_min_cost` となり、
+注文しないのが正常です。注文を成立させるために `LIVE_BASE_RISK_PCT` やレバレッジを
+引き上げず、DryRunで同一ポリシーの検証履歴を蓄積してください。
 
 ## トレード戦略の更新
 
@@ -256,6 +306,47 @@ python tools/analyze_experiments.py --no-archives
 ```
 
 ホット `experiments.json` のみで report を生成します (直近分析用)。
+
+## さくらへの増分データ同期
+
+GitHub Actions はスキャン/実弾runの終了後に
+`tools/sync_trading_data.py` を実行します。送信先は
+`https://leatherwallet.sakura.ne.jp/trading-ingest`、repo namespace は
+`mexc-momentum-scanner` で固定しています。
+
+GitHub Actions のsecretに `TD_HMAC_SECRET` を登録すると同期が有効になります。
+未登録中は同期だけがno-opになり、既存スキャン・DryRun・実弾安全判定には
+影響しません。secretは32 bytes以上とし、リポジトリへ保存しないでください。
+
+同期するのは累積JSONそのものではなく、次のappend-only eventです。
+
+- `mexc.shadow_signal`: STRICT却下を含む全候補、判定時点feature、時刻
+- `mexc.live_decision` / `mexc.live_reject`: 採用・見送り理由とpolicy
+- `mexc.outcome`: 親outcome、MFE/MAE、全entry variantの最終結果
+- `mexc.execution`: 検証済み実弾fill・SL/TP保護・実リスク
+- `mexc.policy`: policy version、fingerprint、非secret判定設定
+
+`event_time` と `available_at` を分け、同じmarket observationの反復runは
+`signal_group_id` でまとめられます。event IDとPOST idempotency keyは
+決定的に生成されるため、通信断後に再送しても二重保存されません。
+
+初回だけ既存のhot/archiveを読み、以後は
+`data/trading_data_sync_state.json` のstream別high-water cursorより新しい
+eventだけを送ります。cursorはサーバーがbatchを受理した後にだけ進みます。
+runner-local outboxは受理済みprefixだけを削るため、途中失敗時も未送信分が
+ログartifactに残ります。累積 `experiments.json` を毎回アップロードする
+処理はありません。
+
+```bash
+# secret未設定なら安全にno-op
+python tools/sync_trading_data.py --runtime-only
+
+# gateway設定後: 既存履歴の初回backfill + 今後のincremental sync
+python tools/sync_trading_data.py
+```
+
+移行期間中は従来のGit data commitも継続します。さくら側の件数・checksum・
+判定再生結果を照合してから、別変更でGitへのdata commitを停止します。
 
 ## 主要ディレクトリ
 

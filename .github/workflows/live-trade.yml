@@ -18,36 +18,82 @@ on:
         type: string
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: mexc-live-trader-${{ github.ref }}
+  # MEXC口座全体で常に1実行。dispatch元branchが違っても並走させない。
+  group: mexc-live-trader-account
   cancel-in-progress: false
 
 jobs:
   trade:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
     environment: live-trading
 
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
-      MEXC_API_KEY:    ${{ secrets.MEXC_API_KEY }}
-      MEXC_SECRET_KEY: ${{ secrets.MEXC_SECRET_KEY }}
-      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
-
       RUN_ONCE: 'true'
       DRY_RUN: 'false'
       LIVE_TRADING_ENABLED: ${{ github.event.inputs.live_trading_enabled }}
       LIVE_TRADING_CONFIRMATION: ${{ github.event.inputs.confirmation }}
+      # Non-secret stable account namespace used only for order idempotency.
+      LIVE_ACCOUNT_ID: 'mexc-primary'
+      LIVE_POLICY_VERSION: 'live-v1-20260729'
+      LIVE_POLICY_EFFECTIVE_AT: '2026-07-29T00:00:00+00:00'
+      LIVE_REQUIRE_POLICY_VERSION: 'true'
+
+      # Sakura dual-write. Missing URL+secret disables only the sync step.
+      TD_BASE_URL: 'https://leatherwallet.sakura.ne.jp/trading-ingest'
+      TD_REPO: 'mexc-momentum-scanner'
+      TD_OUTBOX_FILE: 'data/trading_data_outbox.jsonl'
 
       # Fail small while proving the live path.
       LIVE_MAX_ORDERS_PER_RUN: '1'
+      LIVE_MAX_NEW_ENTRIES_PER_UTC_DAY: '1'
       LIVE_MAX_OPEN_POSITIONS: '1'
-      LIVE_BASE_RISK_PCT: '0.25'
-      LIVE_MAX_RISK_PCT: '0.25'
+      LIVE_BASE_RISK_PCT: '0.10'
+      LIVE_MAX_RISK_PCT: '0.10'
       LIVE_MAX_LEVERAGE: '2.0'
       LIVE_MIN_BALANCE_USDT: '5.0'
+      LIVE_MARGIN_MODE: 'isolated'
+      LIVE_POSITION_MODE: 'hedged'
+      LIVE_ORDER_VERIFY_ATTEMPTS: '5'
+      LIVE_ORDER_VERIFY_DELAY_SECONDS: '1.0'
+      LIVE_SYMBOL_REENTRY_COOLDOWN_HOURS: '48'
+
+      # Reject stale/thin markets before a MARKET mutation and cap realized risk.
+      LIVE_MARKET_DATA_MAX_AGE_SECONDS: '10'
+      LIVE_MAX_ENTRY_DRIFT_PCT: '0.50'
+      LIVE_MAX_SPREAD_PCT: '0.10'
+      LIVE_MAX_SLIPPAGE_PCT: '0.10'
+      LIVE_MIN_DEPTH_MULTIPLE: '1.0'
+      LIVE_MAX_ACTUAL_RISK_MULTIPLIER: '1.05'
+
+      # 実弾判定は全窓・コスト・日次clusterが揃った時だけ通す。
+      LIVE_USE_RANKER: 'true'
+      LIVE_GATE_WINDOWS: '20,50,100,200'
+      LIVE_GATE_FEE_PCT: '0.16'
+      # 0.10% entry ceiling plus 0.10% exit reserve.
+      LIVE_GATE_SLIPPAGE_PCT: '0.20'
+      # Up to three 0.05% funding settlements are budgeted for a 24h hold.
+      LIVE_GATE_FUNDING_PCT: '0.15'
+      LIVE_GATE_MIN_NET_EV_PCT: '0.20'
+      LIVE_GATE_MIN_FILLED: '20'
+      LIVE_GATE_MIN_FILL_RATE: '0.80'
+      LIVE_GATE_MAX_DATA_AGE_HOURS: '24'
+      LIVE_GATE_MIN_DISTINCT_DAYS: '30'
+      LIVE_GATE_MIN_CI_PCT: '0.0'
+
+      # 取得失敗を売買根拠として扱わない。
+      LIVE_REQUIRE_COMPLETE_TECHNICAL_DATA: 'true'
+      LIVE_SIGNAL_MAX_AGE_HOURS: '3.0'
+      LIVE_REQUIRE_FUNDING_DATA: 'true'
+      LIVE_MIN_FUNDING_RATE_PCT: '-0.05'
+      LIVE_REQUIRE_FUND_NON_AVOID: 'true'
+      LIVE_ALLOWED_FUNDAMENTAL_CONVICTIONS: 'HIGH,MEDIUM'
+      LIVE_BLOCK_UPPER_WICK: 'false'
+      LIVE_BOOST_MULT: '0.0'
 
       # Keep live execution short and independent from heavy report generation.
       EXPERIMENT_MAX_PER_CYCLE: '0'
@@ -56,13 +102,27 @@ jobs:
       LOG_FILE: 'logs/live-trader.log'
 
     steps:
+      - name: Verify protected source ref
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          if [ "${GITHUB_REF_NAME}" != "${DEFAULT_BRANCH}" ]; then
+            echo "Live workflow must be dispatched from the default branch."
+            exit 1
+          fi
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          # workflow dispatch時点のdefault-branch commitを不変SHAで実行。
+          ref: ${{ github.sha }}
           fetch-depth: 1
+          persist-credentials: false
 
       - name: Preflight live lock
+        env:
+          MEXC_API_KEY: ${{ secrets.MEXC_LIVE_API_KEY }}
+          MEXC_SECRET_KEY: ${{ secrets.MEXC_LIVE_SECRET_KEY }}
         run: |
           if [ "${LIVE_TRADING_ENABLED}" != "true" ] || [ "${LIVE_TRADING_CONFIRMATION}" != "LIVE" ]; then
             echo "Live trading is locked. Choose true and type LIVE to run real orders."
@@ -82,13 +142,71 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Run safety tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Verify MEXC live API preflight
+        env:
+          MEXC_API_KEY: ${{ secrets.MEXC_LIVE_API_KEY }}
+          MEXC_SECRET_KEY: ${{ secrets.MEXC_LIVE_SECRET_KEY }}
+        run: python tools/live_preflight.py
+
       - name: Run live trader
+        env:
+          MEXC_API_KEY: ${{ secrets.MEXC_LIVE_API_KEY }}
+          MEXC_SECRET_KEY: ${{ secrets.MEXC_LIVE_SECRET_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
         run: python main.py
+
+      - name: Sync live audit events to Sakura
+        if: always()
+        env:
+          TD_HMAC_SECRET: ${{ secrets.TD_HMAC_SECRET }}
+        run: python tools/sync_trading_data.py --runtime-only
+
+      - name: Checkout isolated outbox persistence workspace
+        if: always()
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 50
+          path: .outbox-persist
+
+      - name: Persist unacknowledged audit outbox
+        if: always()
+        shell: bash
+        run: |
+          if [ -f data/trading_data_outbox.jsonl ]; then
+            mkdir -p .outbox-persist/data
+            cp data/trading_data_outbox.jsonl .outbox-persist/data/trading_data_outbox.jsonl
+          fi
+          cd .outbox-persist
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add --force data/trading_data_outbox.jsonl 2>/dev/null || true
+          if git diff --staged --quiet; then
+            echo "No audit outbox change to persist."
+            exit 0
+          fi
+          git commit -m "chore: persist trading-data outbox [skip ci]"
+          for attempt in 1 2 3; do
+            if git fetch --depth=50 origin "${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}" && \
+               git rebase "origin/${GITHUB_REF_NAME}" && \
+               git push origin "HEAD:${GITHUB_REF_NAME}"; then
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "Failed to persist the unacknowledged audit outbox."
+          exit 1
 
       - name: Upload logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: live-trader-logs-${{ github.run_number }}
-          path: logs/
+          path: |
+            logs/
+            data/trading_data_outbox.jsonl
           retention-days: 14

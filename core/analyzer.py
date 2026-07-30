@@ -125,6 +125,11 @@ class AnalysisResult:
     is_confirmed_signal: bool
     reject_reasons: list[str] # 却下理由（デバッグ/ログ用）
 
+    # この判定に使った最新の確定 1h 足。Live 注文の冪等キーに使う。
+    # 形成中の足や現在時刻を使うと再実行時に別注文になり得るため、
+    # 必ず取引所 OHLCV の確定足時刻を保持する。
+    signal_candle_at: str | None = None
+
 
 class TechnicalAnalyzer:
     """抽出された急騰候補銘柄に対してテクニカル分析を行う。
@@ -384,6 +389,11 @@ class TechnicalAnalyzer:
 
         # ローソク足実体比率 (直前完成1h足)
         candle_body_ratio = self._calc_candle_body_ratio(df, idx=-2)
+        signal_candle_at = (
+            df.index[-2].isoformat()
+            if len(df) >= 2 and df.index[-2].tzinfo is not None
+            else None
+        )
 
         # --- 総合判定 + 却下理由収集 (STRICT v2) ---
         # データ分析結果 (data/experiment_report.md):
@@ -437,6 +447,7 @@ class TechnicalAnalyzer:
             daily_direction=daily_direction,
             is_confirmed_signal=is_confirmed,
             reject_reasons=reject_reasons,
+            signal_candle_at=signal_candle_at,
         )
 
     # ------------------------------------------------------------------

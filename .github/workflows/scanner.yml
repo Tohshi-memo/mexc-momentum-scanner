@@ -14,7 +14,7 @@ concurrency:
 jobs:
   scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 30
 
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
@@ -22,6 +22,10 @@ jobs:
       # --- API 認証情報 ---
       MEXC_API_KEY:           ${{ secrets.MEXC_API_KEY }}
       MEXC_SECRET_KEY:        ${{ secrets.MEXC_SECRET_KEY }}
+
+      # --- さくら trading-data gateway (未設定なら同期だけ無効) ---
+      TD_BASE_URL:            'https://leatherwallet.sakura.ne.jp/trading-ingest'
+      TD_REPO:                'mexc-momentum-scanner'
 
       # --- 通知 ---
       DISCORD_WEBHOOK_URL:    ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -78,6 +82,10 @@ jobs:
       TRACKING_HOURS:    '24'
 
       # --- フィルター粒度実験 (シャドウトレード) ---
+      # Threshold/cost変更時は必ずversionを上げ、OOS検証時計をリセットする。
+      LIVE_POLICY_VERSION:       'live-v1-20260729'
+      LIVE_POLICY_EFFECTIVE_AT:  '2026-07-29T00:00:00+00:00'
+      LIVE_REQUIRE_POLICY_VERSION: 'true'
       # 全候補 (STRICT 通過/外問わず) を仮想追跡し、フィルター変更時の
       # PnL を後から再評価できるようにする。実トレードには影響しない。
       EXPERIMENT_TRACKING_HOURS: '8'
@@ -170,6 +178,12 @@ jobs:
 
       - name: Run scanner (single cycle)
         run: python main.py
+
+      - name: Incrementally sync trading data to Sakura
+        if: always()
+        env:
+          TD_HMAC_SECRET: ${{ secrets.TD_HMAC_SECRET }}
+        run: python tools/sync_trading_data.py
 
       - name: Save tracking data to repository
         if: always()

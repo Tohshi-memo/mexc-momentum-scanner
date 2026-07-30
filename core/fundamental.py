@@ -90,6 +90,7 @@ class FundamentalResult:
 
     reason: str = ""
     sources_checked: int = 0    # 参照ソース数
+    sources_succeeded: int = 0  # 正常応答を確認できたソース数
 
 
 # ───────────────────────────────────────────────
@@ -112,6 +113,8 @@ class FundamentalAnalyzer:
         self._use_reddit: bool = (
             os.getenv("USE_REDDIT_NEWS", "true").lower() != "false"
         )
+        self._sources_attempted: int = 0
+        self._sources_succeeded: int = 0
         logger.info(
             "FundamentalAnalyzer: RSS + Reddit mode "
             "(lookback=%dh, reddit=%s)",
@@ -139,6 +142,8 @@ class FundamentalAnalyzer:
 
     def _collect_news(self, currency: str) -> list[dict[str, Any]]:
         """RSS + Reddit から記事を収集し、cutoff 以内のものだけ返す。"""
+        self._sources_attempted = 0
+        self._sources_succeeded = 0
         cutoff = datetime.now(timezone.utc) - timedelta(hours=self._lookback_hours)
         articles: list[dict[str, Any]] = []
 
@@ -169,8 +174,17 @@ class FundamentalAnalyzer:
         search_term = currency.lower()
 
         for feed_url in _RSS_FEEDS:
+            self._sources_attempted += 1
             try:
                 feed = feedparser.parse(feed_url)
+                status = getattr(feed, "status", None)
+                if status is not None and int(status) >= 400:
+                    raise RuntimeError(f"HTTP {status}")
+                if getattr(feed, "bozo", False) and not getattr(feed, "entries", []):
+                    raise RuntimeError(
+                        str(getattr(feed, "bozo_exception", "invalid RSS feed"))
+                    )
+                self._sources_succeeded += 1
                 for entry in feed.entries:
                     title   = entry.get("title", "")
                     summary = entry.get("summary", "")
@@ -208,6 +222,7 @@ class FundamentalAnalyzer:
         headers = {"User-Agent": "mexc-momentum-scanner/1.0"}
 
         for sub in subreddits:
+            self._sources_attempted += 1
             try:
                 resp = requests.get(
                     self._REDDIT_SUBS.format(sub=sub),
@@ -223,6 +238,7 @@ class FundamentalAnalyzer:
                 )
                 if resp.status_code != 200:
                     continue
+                self._sources_succeeded += 1
 
                 for post in resp.json().get("data", {}).get("children", []):
                     data  = post.get("data", {})
@@ -262,7 +278,23 @@ class FundamentalAnalyzer:
     ) -> FundamentalResult:
         """記事リストを解析し catalyst 判定と conviction を返す。"""
         headlines = [a.get("title", "") for a in articles[:5]]
-        sources_checked = len(_RSS_FEEDS) + (3 if self._use_reddit else 0)
+        sources_checked = self._sources_attempted
+
+        if self._sources_succeeded == 0:
+            return FundamentalResult(
+                symbol=symbol,
+                base_currency=base,
+                news_count=-1,
+                top_headlines=[],
+                catalyst_type="UNKNOWN",
+                short_conviction="UNKNOWN",
+                reason=(
+                    "All configured news sources failed or were unavailable. "
+                    "Live short conviction cannot be established."
+                ),
+                sources_checked=sources_checked,
+                sources_succeeded=0,
+            )
 
         if not articles:
             return FundamentalResult(
@@ -278,6 +310,7 @@ class FundamentalAnalyzer:
                     "Pump has no visible fundamental catalyst → HIGH conviction short."
                 ),
                 sources_checked=sources_checked,
+                sources_succeeded=self._sources_succeeded,
             )
 
         all_text = " ".join(
@@ -298,6 +331,7 @@ class FundamentalAnalyzer:
                     "Bad-news-driven pump tends to be short-lived → MEDIUM conviction."
                 ),
                 sources_checked=sources_checked,
+                sources_succeeded=self._sources_succeeded,
             )
 
         if has_positive:
@@ -310,6 +344,7 @@ class FundamentalAnalyzer:
                     "Pump may be fundamentally justified → AVOID short."
                 ),
                 sources_checked=sources_checked,
+                sources_succeeded=self._sources_succeeded,
             )
 
         return FundamentalResult(
@@ -321,6 +356,7 @@ class FundamentalAnalyzer:
                 "Proceed with caution → MEDIUM conviction."
             ),
             sources_checked=sources_checked,
+            sources_succeeded=self._sources_succeeded,
         )
 
     # ------------------------------------------------------------------

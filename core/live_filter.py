@@ -34,11 +34,14 @@ Block リスト (統計的に劣るゾーン — 強制却下):
 from __future__ import annotations
 
 import logging
+import math
 import os
 from dataclasses import dataclass, field
+from datetime import datetime, timezone
 from typing import TYPE_CHECKING
 
 from core.analyzer import AnalysisResult, VOL_TREND_RISING
+from core.live_policy import live_policy_fingerprint
 
 if TYPE_CHECKING:
     from core.stats import StatsManager
@@ -109,6 +112,90 @@ class LiveTradeFilter:
         self._require_fundamental_pass: bool = (
             os.getenv("LIVE_REQUIRE_FUND_NON_AVOID", "true").lower() != "false"
         )
+        self._allowed_fundamental: set[str] = {
+            value.strip().upper()
+            for value in os.getenv(
+                "LIVE_ALLOWED_FUNDAMENTAL_CONVICTIONS",
+                "HIGH,MEDIUM",
+            ).split(",")
+            if value.strip()
+        }
+        self._require_complete_technical: bool = (
+            os.getenv("LIVE_REQUIRE_COMPLETE_TECHNICAL_DATA", "true").lower()
+            != "false"
+        )
+        self._require_funding_data: bool = (
+            os.getenv("LIVE_REQUIRE_FUNDING_DATA", "true").lower() != "false"
+        )
+        self._min_funding_rate_pct: float = float(
+            os.getenv("LIVE_MIN_FUNDING_RATE_PCT", "-0.05")
+        )
+        self._signal_max_age_hours: float = float(
+            os.getenv("LIVE_SIGNAL_MAX_AGE_HOURS", "3.0")
+        )
+        self._max_historical_spread_pct: float = float(
+            os.getenv("LIVE_MAX_SPREAD_PCT", "0.10")
+        )
+        if (
+            not math.isfinite(self._signal_max_age_hours)
+            or self._signal_max_age_hours <= 0
+        ):
+            raise ValueError(
+                "LIVE_SIGNAL_MAX_AGE_HOURS must be a finite positive number"
+            )
+        if (
+            not math.isfinite(self._max_historical_spread_pct)
+            or self._max_historical_spread_pct < 0
+        ):
+            raise ValueError(
+                "LIVE_MAX_SPREAD_PCT must be finite and non-negative"
+            )
+        # 最新のフォワード集計では上ヒゲ>=0.6は負け条件ではなかったため、
+        # 古い仮説を既定の強制blockには使わない。再検証時だけ明示的に有効化。
+        self._block_upper_wick: bool = (
+            os.getenv("LIVE_BLOCK_UPPER_WICK", "false").lower() == "true"
+        )
+        self._policy_fingerprint = live_policy_fingerprint()
+
+        numeric_config = {
+            "LIVE_RSI_MIN": self._rsi_min,
+            "LIVE_RSI_4H_MAX": self._rsi_4h_max,
+            "LIVE_ATR_HIGH": self._atr_high,
+            "LIVE_REL_STRENGTH_MIN": self._rel_strength_min,
+            "BLOCK_BBW_LO": self._block_bbw_lo,
+            "BLOCK_BBW_HI": self._block_bbw_hi,
+            "BLOCK_MA_DEV_LO": self._block_ma_dev_lo,
+            "BLOCK_MA_DEV_HI": self._block_ma_dev_hi,
+            "BLOCK_ATR_LO": self._block_atr_lo,
+            "BLOCK_ATR_HI": self._block_atr_hi,
+            "BLOCK_WICK_RATIO": self._block_wick_ratio,
+            "BOOST_FUNDING_RATE": self._boost_funding,
+            "LIVE_MIN_FUNDING_RATE_PCT": self._min_funding_rate_pct,
+        }
+        invalid_names = [
+            name
+            for name, value in numeric_config.items()
+            if not math.isfinite(value)
+        ]
+        if invalid_names:
+            raise ValueError(
+                "Live filter config must be finite: "
+                + ", ".join(invalid_names)
+            )
+        if self._block_consec_green_1h <= 0:
+            raise ValueError("BLOCK_CONSEC_GREEN_1H must be positive")
+        if not (
+            self._block_bbw_lo < self._block_bbw_hi
+            and self._block_ma_dev_lo < self._block_ma_dev_hi
+            and self._block_atr_lo < self._block_atr_hi
+        ):
+            raise ValueError("Live filter block ranges must have lo < hi")
+        if not 0 <= self._block_wick_ratio <= 1:
+            raise ValueError("BLOCK_WICK_RATIO must be between 0 and 1")
+        if not self._allowed_fundamental:
+            raise ValueError(
+                "LIVE_ALLOWED_FUNDAMENTAL_CONVICTIONS must not be empty"
+            )
 
         logger.info(
             "LiveTradeFilter | RSI≥%.0f 4h<%.0f ATR_high=%.1f | "
@@ -144,22 +231,67 @@ class LiveTradeFilter:
         # ─── 前提条件 (全 tier 共通) ────────────────────────────────
         pre_reasons: list[str] = []
 
-        if result.rsi is None or result.rsi < self._rsi_min:
+        signal_time_error = self._signal_candle_error(
+            getattr(result, "signal_candle_at", None)
+        )
+        if signal_time_error:
+            pre_reasons.append(signal_time_error)
+
+        if not self._is_finite_number(result.rsi):
+            pre_reasons.append("RSI(1h) n/a or non-finite")
+        elif float(result.rsi) < self._rsi_min:
             pre_reasons.append(
-                f"RSI(1h) {result.rsi:.1f} < {self._rsi_min:.0f}"
-                if result.rsi is not None else "RSI(1h) n/a"
+                f"RSI(1h) {float(result.rsi):.1f} < {self._rsi_min:.0f}"
             )
 
-        if result.rsi_4h is None:
-            pre_reasons.append("4h RSI n/a")
+        if not self._is_finite_number(result.rsi_4h):
+            pre_reasons.append("4h RSI n/a or non-finite")
 
-        if result.relative_strength_pct < self._rel_strength_min:
+        if not self._is_finite_number(result.relative_strength_pct):
+            pre_reasons.append("rel_strength n/a or non-finite")
+        elif float(result.relative_strength_pct) < self._rel_strength_min:
             pre_reasons.append(
-                f"rel_strength {result.relative_strength_pct:.1f} < {self._rel_strength_min:.0f}"
+                f"rel_strength {float(result.relative_strength_pct):.1f} "
+                f"< {self._rel_strength_min:.0f}"
             )
 
-        if self._require_fundamental_pass and fundamental_conviction == "AVOID":
-            pre_reasons.append("fundamental=AVOID (正材料あり)")
+        if self._require_complete_technical:
+            required_fields = {
+                "ATR": result.atr_pct,
+                "consec_green_1h": result.consecutive_green_1h,
+                "BB width": result.bb_width_pct,
+                "MA20 deviation": result.ma20_deviation_pct,
+            }
+            if self._block_upper_wick:
+                required_fields["upper_wick"] = result.upper_wick_ratio_1h
+            missing = [
+                name
+                for name, value in required_fields.items()
+                if not self._is_finite_number(value)
+            ]
+            if not result.volume_trend:
+                missing.append("volume_trend")
+            if missing:
+                pre_reasons.append(
+                    "required technical data n/a: " + ", ".join(missing)
+                )
+
+        if self._require_funding_data:
+            if not self._is_finite_number(result.funding_rate):
+                pre_reasons.append("funding_rate n/a or non-finite")
+            elif float(result.funding_rate) < self._min_funding_rate_pct:
+                pre_reasons.append(
+                    f"funding_rate {float(result.funding_rate):+.3f}% "
+                    f"< {self._min_funding_rate_pct:+.3f}%"
+                )
+
+        if self._require_fundamental_pass:
+            conviction = (fundamental_conviction or "UNKNOWN").upper()
+            if conviction not in self._allowed_fundamental:
+                pre_reasons.append(
+                    f"fundamental={conviction} not in "
+                    f"{sorted(self._allowed_fundamental)}"
+                )
 
         if pre_reasons:
             return LiveFilterDecision(
@@ -195,6 +327,36 @@ class LiveTradeFilter:
     # ------------------------------------------------------------------
     # Internal
     # ------------------------------------------------------------------
+
+    def _signal_candle_error(self, raw_timestamp: object) -> str | None:
+        if not isinstance(raw_timestamp, str) or not raw_timestamp.strip():
+            return "signal_candle_at n/a"
+        timestamp = raw_timestamp.strip()
+        normalized = (
+            f"{timestamp[:-1]}+00:00"
+            if timestamp.endswith(("Z", "z"))
+            else timestamp
+        )
+        try:
+            parsed = datetime.fromisoformat(normalized)
+        except ValueError:
+            return "signal_candle_at invalid"
+        if parsed.tzinfo is None or parsed.utcoffset() is None:
+            return "signal_candle_at has no timezone"
+
+        age_hours = (
+            datetime.now(timezone.utc) - parsed.astimezone(timezone.utc)
+        ).total_seconds() / 3600
+        if not math.isfinite(age_hours):
+            return "signal_candle_at age non-finite"
+        if age_hours < 0:
+            return "signal_candle_at is in the future"
+        if age_hours > self._signal_max_age_hours:
+            return (
+                f"signal_candle_at stale ({age_hours:.2f}h > "
+                f"{self._signal_max_age_hours:.2f}h)"
+            )
+        return None
 
     def _check_blocks(self, r: AnalysisResult) -> list[str]:
         """Block 条件 (強制却下) に該当するかチェック。"""
@@ -236,6 +398,8 @@ class LiveTradeFilter:
             )
 
         if (
+            self._block_upper_wick
+            and
             r.upper_wick_ratio_1h is not None
             and r.upper_wick_ratio_1h >= self._block_wick_ratio
         ):
@@ -303,3 +467,132 @@ class LiveTradeFilter:
             score *= 0.8  # 慎重側に割引
 
         return boosters, score
+
+    def historical_trade_passes(self, trade: object) -> bool:
+        """現在のlive母集団に入る過去シャドートレードだけを返す。
+
+        StrategyRanker の実弾ゲートへ渡すpredicate。現在の候補はlive filter
+        通過後なのに、EVだけ全候補から計算する母集団不一致を防ぐ。
+        不足・不明値はすべてFalseとして扱う。
+        """
+        try:
+            required_policy_version = os.getenv(
+                "LIVE_POLICY_VERSION", ""
+            ).strip()
+            if (
+                required_policy_version
+                and getattr(trade, "policy_version", None)
+                != required_policy_version
+            ):
+                return False
+            if (
+                required_policy_version
+                and getattr(trade, "policy_fingerprint", None)
+                != self._policy_fingerprint
+            ):
+                return False
+            if not bool(getattr(trade, "confirmed_strict", False)):
+                return False
+            filters = getattr(trade, "filters", None)
+            if filters is None:
+                return False
+
+            rsi = getattr(filters, "rsi", None)
+            rsi_4h = getattr(filters, "rsi_4h", None)
+            relative_strength = getattr(filters, "relative_strength", None)
+            atr_pct = getattr(filters, "atr_pct", None)
+            consecutive_green = getattr(filters, "consecutive_green_1h", None)
+            bb_width = getattr(filters, "bb_width_pct", None)
+            ma_deviation = getattr(filters, "ma20_deviation_pct", None)
+            upper_wick = getattr(filters, "upper_wick_ratio_1h", None)
+            volume_trend = getattr(filters, "volume_trend", None)
+            funding_rate = getattr(filters, "funding_rate", None)
+            spread_pct = getattr(trade, "spread_pct", None)
+
+            if (
+                not self._is_finite_number(rsi)
+                or not self._is_finite_number(rsi_4h)
+                or not self._is_finite_number(relative_strength)
+                or float(rsi) < self._rsi_min
+                or float(rsi_4h) >= self._rsi_4h_max
+                or float(relative_strength) < self._rel_strength_min
+            ):
+                return False
+
+            if self._require_complete_technical and (
+                not self._is_finite_number(atr_pct)
+                or not self._is_finite_number(consecutive_green)
+                or not self._is_finite_number(bb_width)
+                or not self._is_finite_number(ma_deviation)
+                or not volume_trend
+                or (
+                    self._block_upper_wick
+                    and not self._is_finite_number(upper_wick)
+                )
+            ):
+                return False
+
+            if self._require_funding_data and (
+                not self._is_finite_number(funding_rate)
+                or float(funding_rate) < self._min_funding_rate_pct
+            ):
+                return False
+            if (
+                not self._is_finite_number(spread_pct)
+                or float(spread_pct) < 0
+                or float(spread_pct) > self._max_historical_spread_pct
+            ):
+                return False
+
+            conviction = str(
+                getattr(trade, "short_conviction", "UNKNOWN") or "UNKNOWN"
+            ).upper()
+            if (
+                self._require_fundamental_pass
+                and conviction not in self._allowed_fundamental
+            ):
+                return False
+
+            if (
+                consecutive_green is not None
+                and int(consecutive_green) >= self._block_consec_green_1h
+            ):
+                return False
+            if (
+                bb_width is not None
+                and self._block_bbw_lo
+                <= float(bb_width)
+                < self._block_bbw_hi
+            ):
+                return False
+            if (
+                ma_deviation is not None
+                and self._block_ma_dev_lo
+                <= float(ma_deviation)
+                < self._block_ma_dev_hi
+            ):
+                return False
+            if (
+                atr_pct is not None
+                and self._block_atr_lo
+                <= float(atr_pct)
+                < self._block_atr_hi
+            ):
+                return False
+            if (
+                self._block_upper_wick
+                and upper_wick is not None
+                and float(upper_wick) >= self._block_wick_ratio
+            ):
+                return False
+
+            return True
+        except (TypeError, ValueError, OverflowError):
+            return False
+
+    @staticmethod
+    def _is_finite_number(value: object) -> bool:
+        try:
+            return math.isfinite(float(value))
+        except (TypeError, ValueError, OverflowError):
+            return False

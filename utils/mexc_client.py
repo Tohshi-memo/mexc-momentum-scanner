@@ -26,7 +26,8 @@ class MEXCClient:
 
     # ccxt が報告する Rate Limit の余裕係数（安全マージン）
     RATE_LIMIT_SAFETY_FACTOR: float = 1.2
-    CONTRACT_API_BASE: str = "https://contract.mexc.com/api/v1/contract"
+    # contract.mexc.com was retired in January 2026.
+    CONTRACT_API_BASE: str = "https://api.mexc.com/api/v1/contract"
     DIRECT_TIMEOUT_SECONDS: float = float(os.getenv("MEXC_PUBLIC_API_TIMEOUT", "15"))
     KLINE_INTERVALS: dict[str, str] = {
         "1m": "Min1",
@@ -224,11 +225,28 @@ class MEXCClient:
             result = self._call_with_retry(self._exchange.fetch_funding_rate, symbol)
             rate = result.get("fundingRate")
             if rate is None:
-                return None
+                raise RuntimeError("ccxt returned no fundingRate")
             return float(rate) * 100  # 小数 → %
         except Exception as e:
-            logger.debug("fetch_funding_rate failed for %s: %s", symbol, e)
-            return None
+            logger.debug(
+                "ccxt fetch_funding_rate failed for %s; using MEXC public API: %s",
+                symbol,
+                e,
+            )
+            try:
+                data = self._direct_get(
+                    f"/funding_rate/{self._to_contract_symbol(symbol)}"
+                )
+                if not isinstance(data, dict) or data.get("fundingRate") is None:
+                    raise RuntimeError("MEXC funding response has no fundingRate")
+                return float(data["fundingRate"]) * 100
+            except Exception as direct_error:
+                logger.warning(
+                    "fetch_funding_rate unavailable for %s: %s",
+                    symbol,
+                    direct_error,
+                )
+                return None
 
     def fetch_open_interest(self, symbol: str) -> tuple[float | None, float | None]:
         """現在の未決済建玉 (OI) を取得する。
@@ -292,14 +310,19 @@ class MEXCClient:
         price: float | None = None,
         params: dict[str, Any] | None = None,
     ) -> dict[str, Any]:
-        """注文を発行する（Trade権限が必要）。
+        """注文を1回だけ発行する（Trade権限が必要）。
 
         DRY_RUN=true の場合は executor.py 側で呼び出しをスキップするため、
         このメソッドは実装済みだが通常は呼ばれない。
+
+        注文のような書き込み系APIは、通信エラー時に結果が不明なまま同じ
+        リクエストを再送すると重複約定し得る。そのため読み取り系で使う
+        ``_call_with_retry`` は意図的に使わない。呼び出し側は externalOid
+        を必ず付け、失敗時は注文・ポジションを照合すること。
         """
         if params is None:
             params = {}
-        return self._call_with_retry(
+        return self._call_once(
             self._exchange.create_order,
             symbol,
             order_type,
@@ -309,6 +332,108 @@ class MEXCClient:
             params,
         )
 
+    def fetch_order_by_external_id(
+        self,
+        symbol: str,
+        external_oid: str,
+    ) -> dict[str, Any] | None:
+        """MEXC Futures の externalOid で注文を照合する。
+
+        ccxt の統一 ``fetch_order`` は注文IDを要求するため、MEXC公式の
+        ``GET /order/external/{symbol}/{external_oid}`` を利用する。
+        見つからない場合は ``None``、API障害時は例外を返して、呼び出し側が
+        「未発注」と誤認しないよう fail-closed にする。
+        """
+        if not external_oid:
+            raise ValueError("external_oid is required")
+        market = self._exchange.market(symbol)
+        method = getattr(
+            self._exchange,
+            "contractPrivateGetOrderExternalSymbolExternalOid",
+            None,
+        )
+        if method is None:
+            raise RuntimeError(
+                "Installed ccxt does not expose MEXC external order lookup"
+            )
+        response = self._call_with_retry(
+            method,
+            {
+                "symbol": market["id"],
+                "external_oid": external_oid,
+            },
+        )
+        if not isinstance(response, dict):
+            raise RuntimeError("MEXC external order lookup returned invalid data")
+        data = response.get("data")
+        return data if isinstance(data, dict) and data else None
+
+    def fetch_current_tpsl_orders(self, symbol: str) -> list[dict[str, Any]]:
+        """現在有効なMEXC Futures TP/SL注文を取得する。"""
+        market = self._exchange.market(symbol)
+        method = getattr(
+            self._exchange,
+            "contractPrivateGetStoporderOpenOrders",
+            None,
+        )
+        if method is None:
+            raise RuntimeError(
+                "Installed ccxt does not expose MEXC TP/SL order lookup"
+            )
+        response = self._call_with_retry(method, {"symbol": market["id"]})
+        if not isinstance(response, dict):
+            raise RuntimeError("MEXC TP/SL lookup returned invalid data")
+        data = response.get("data")
+        if data is None:
+            return []
+        if not isinstance(data, list):
+            raise RuntimeError("MEXC TP/SL lookup data is not a list")
+        return [row for row in data if isinstance(row, dict)]
+
+    def place_position_tpsl(
+        self,
+        *,
+        position_id: int | str,
+        amount: float,
+        stop_loss_price: float,
+        take_profit_price: float,
+    ) -> dict[str, Any]:
+        """既存ポジションへTP/SLを1回だけ設定する。
+
+        主注文へのattachが確認できない場合の保護フォールバック用。これも
+        書き込み系のため自動再試行しない。
+        """
+        if not position_id:
+            raise ValueError("position_id is required")
+        if amount <= 0 or stop_loss_price <= 0 or take_profit_price <= 0:
+            raise ValueError("amount and TP/SL prices must be positive")
+        method = getattr(
+            self._exchange,
+            "contractPrivatePostStoporderPlace",
+            None,
+        )
+        if method is None:
+            raise RuntimeError(
+                "Installed ccxt does not expose MEXC position TP/SL placement"
+            )
+        return self._call_once(
+            method,
+            {
+                "positionId": position_id,
+                "vol": amount,
+                "stopLossPrice": stop_loss_price,
+                "takeProfitPrice": take_profit_price,
+                "lossTrend": 2,
+                "profitTrend": 1,
+                "profitLossVolType": "SAME",
+                "volType": 2,
+                "takeProfitType": 0,
+                "stopLossType": 0,
+                "takeProfitOrderPrice": 0,
+                "stopLossOrderPrice": 0,
+            },
+        )
+
     def fetch_balance(self) -> dict[str, Any]:
         """口座残高を取得する（認証が必要）。"""
         return self._call_with_retry(self._exchange.fetch_balance)
@@ -316,6 +441,13 @@ class MEXCClient:
     # ------------------------------------------------------------------
     # Internal helpers
     # ------------------------------------------------------------------
+
+    def _call_once(self, func: Any, *args: Any) -> Any:
+        """書き込み系APIを単回実行し、成功時だけrate-limit余白を取る。"""
+        result = func(*args)
+        sleep_ms: int = getattr(self._exchange, "rateLimit", 100)
+        time.sleep(sleep_ms * self.RATE_LIMIT_SAFETY_FACTOR / 1000)
+        return result
 
     def _direct_get(
         self,

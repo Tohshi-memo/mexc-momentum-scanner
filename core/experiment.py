@@ -26,6 +26,7 @@ from pathlib import Path
 from typing import TYPE_CHECKING
 
 from core.experiment_archive import append_records as _archive_append
+from core.live_policy import live_policy_fingerprint
 
 if TYPE_CHECKING:
     from utils.mexc_client import MEXCClient
@@ -116,6 +117,13 @@ class ExperimentTrade:
     catalyst_type: str = "UNKNOWN"         # NONE / POSITIVE / NEGATIVE / WEAK / UNKNOWN
     short_conviction: str = "UNKNOWN"      # HIGH / MEDIUM / LOW / AVOID / UNKNOWN
     news_count: int = -1                   # -1 = 未取得
+    # 実弾判定ポリシーを固定した後に収集したOOS標本かを識別する。
+    policy_version: str = "unversioned"
+    policy_fingerprint: str = ""
+    # 取引所の確定1h足と当時の却下理由を保持し、未来情報なしで
+    # signal/decision/outcome を後から結合できるようにする。
+    signal_candle_at: str | None = None
+    strict_reject_reasons: list[str] | None = None
 
     # スプレッド情報 (検出時点)
     ask_price: float | None = None         # 売り気配 (成行ショートの実質エントリー)
@@ -166,6 +174,11 @@ class ExperimentTracker:
         self._file = file_path
         self._tracking_hours = int(os.getenv("EXPERIMENT_TRACKING_HOURS", "8"))
         self._hot_max = int(os.getenv("EXPERIMENT_HOT_MAX", str(self.DEFAULT_HOT_MAX)))
+        self._policy_version = (
+            os.getenv("LIVE_POLICY_VERSION", "unversioned").strip()
+            or "unversioned"
+        )
+        self._policy_fingerprint = live_policy_fingerprint()
         self._active: dict[str, ExperimentTrade] = {}
         self._closed: list[ExperimentTrade] = []
         self._load()
@@ -185,6 +198,9 @@ class ExperimentTracker:
         market_regime: str,
         filters: FilterSnapshot,
         confirmed_strict: bool,
+        signal_candle_at: str | None = None,
+        strict_reject_reasons: list[str] | None = None,
+        detected_at: str | None = None,
         catalyst_type: str = "UNKNOWN",
         short_conviction: str = "UNKNOWN",
         news_count: int = -1,
@@ -204,7 +220,13 @@ class ExperimentTracker:
         if symbol in self._active:
             return False
 
-        now     = datetime.now(timezone.utc)
+        if detected_at:
+            now = datetime.fromisoformat(detected_at)
+            if now.tzinfo is None or now.utcoffset() is None:
+                raise ValueError("detected_at must be timezone-aware")
+            now = now.astimezone(timezone.utc)
+        else:
+            now = datetime.now(timezone.utc)
         expires = now + timedelta(hours=self._tracking_hours)
 
         # スプレッド計算
@@ -237,6 +259,10 @@ class ExperimentTracker:
             catalyst_type=catalyst_type,
             short_conviction=short_conviction,
             news_count=news_count,
+            policy_version=self._policy_version,
+            policy_fingerprint=self._policy_fingerprint,
+            signal_candle_at=signal_candle_at,
+            strict_reject_reasons=list(strict_reject_reasons or []),
             ask_price=ask_price,
             bid_price=bid_price,
             spread_pct=spread_pct,
@@ -700,6 +726,10 @@ class ExperimentTracker:
         entry.setdefault("catalyst_type", "UNKNOWN")
         entry.setdefault("short_conviction", "UNKNOWN")
         entry.setdefault("news_count", -1)
+        entry.setdefault("policy_version", "unversioned")
+        entry.setdefault("policy_fingerprint", "")
+        entry.setdefault("signal_candle_at", None)
+        entry.setdefault("strict_reject_reasons", [])
         # スプレッド / バリアントの後方互換
         entry.setdefault("ask_price", None)
         entry.setdefault("bid_price", None)

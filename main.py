@@ -32,7 +32,9 @@ from core.executor import ExecutorFactory, ProposalBuilder, TradeProposal
 from core.experiment import ExperimentTracker, FilterSnapshot
 from core.fundamental import FundamentalAnalyzer
 from core.live_filter import LiveTradeFilter
+from core.live_execution_ledger import append_confirmed_live_execution
 from core.live_portfolio import LivePortfolio
+from core.live_policy import live_policy_fingerprint
 from core.live_strategy import DIR_SHORT, ENTRY_MARKET, LiveStrategyBuilder, LiveTradePlan
 from core.market_context import MarketContextRecorder
 from core.robust_adaptive_portfolio import RobustAdaptivePortfolio
@@ -41,6 +43,12 @@ from core.scanner import MarketScanner
 from core.strategy_ranker import StrategyRanker
 from core.stats import StatsManager
 from core.tracker import SymbolTracker
+from core.trading_data_events import (
+    record_analysis_event,
+    record_live_decision_event,
+    try_record,
+    utc_now_iso,
+)
 from tools.analyze_experiments import generate_report as generate_experiment_report
 from tools.decision_report import generate_report as generate_decision_report
 from tools.virtual_portfolio import update_portfolio_report
@@ -60,6 +68,10 @@ from utils.display import (
 )
 from utils.mexc_client import MEXCClient
 from utils.notifier import Notifier
+
+
+class LiveExecutionSafetyError(RuntimeError):
+    """Abort the whole run when a live order may exist or needs intervention."""
 
 
 def setup_logging() -> None:
@@ -128,6 +140,11 @@ def run_once(
       7. 期限切れ追跡を EXPIRED として記録
     """
     logger = logging.getLogger(__name__)
+    policy_version = (
+        os.getenv("LIVE_POLICY_VERSION", "unversioned").strip()
+        or "unversioned"
+    )
+    policy_fingerprint = live_policy_fingerprint()
 
     # ── ヘッダー ─────────────────────────────────────────────────────
     print_header(cycle, dry_run)
@@ -229,6 +246,9 @@ def run_once(
         btc_change_1h=btc_status.change_1h_pct,
         regime=btc_status.regime,
         max_per_cycle=experiment_max_per_cycle,
+        policy_version=policy_version,
+        policy_fingerprint=policy_fingerprint,
+        dry_run=dry_run,
         logger=logger,
     )
 
@@ -242,6 +262,20 @@ def run_once(
 
     # サーキットブレーカー発動中ならここでエントリーをスキップ
     if circuit_open:
+        for result in confirmed:
+            try_record(
+                record_live_decision_event,
+                result,
+                accepted=False,
+                stage="circuit_breaker",
+                reasons=[
+                    f"recent_losses={summary.recent_losses}/{cb_window}",
+                    f"loss_threshold={cb_loss_threshold}",
+                ],
+                policy_version=policy_version,
+                policy_fingerprint=policy_fingerprint,
+                dry_run=dry_run,
+            )
         console.print(
             "\n  [bright_red]▸ Circuit breaker active — all confirmed signals skipped.[/bright_red]\n"
         )
@@ -251,9 +285,25 @@ def run_once(
     # ── Step 4: ファンダ考察 + 追跡登録 + 通知 ───────────────────────
     console.print()
     live_orders_placed = 0
-    for result in confirmed:
+    for result_index, result in enumerate(confirmed):
+        live_execution_committed = False
+        live_execution_attempted = False
         try:
             if not dry_run and live_orders_placed >= max_live_orders_per_run:
+                for skipped_result in confirmed[result_index:]:
+                    try_record(
+                        record_live_decision_event,
+                        skipped_result,
+                        accepted=False,
+                        stage="run_order_cap",
+                        reasons=[
+                            f"live_orders_placed={live_orders_placed}",
+                            f"max_live_orders_per_run={max_live_orders_per_run}",
+                        ],
+                        policy_version=policy_version,
+                        policy_fingerprint=policy_fingerprint,
+                        dry_run=dry_run,
+                    )
                 logger.warning(
                     "Live order cap reached (%d). Skipping remaining signals.",
                     max_live_orders_per_run,
@@ -262,6 +312,17 @@ def run_once(
 
             # Cooldown チェック (直近 SL で食らった銘柄はスキップ)
             if stats.had_sl_within(result.symbol, hours=cooldown_hours):
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage="cooldown",
+                    reasons=[f"SL within last {cooldown_hours}h"],
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    context={"cooldown_hours": cooldown_hours},
+                )
                 print_cooldown_skip(result.symbol)
                 logger.info(
                     "Cooldown skip: %s (SL within last %dh)",
@@ -273,6 +334,24 @@ def run_once(
             fund_conviction = (
                 fundamental.short_conviction if fundamental else None
             )
+            # Attach fundamentals to the shadow record regardless of whether
+            # the current live gate later rejects the candidate.  Otherwise a
+            # fail-closed live gate would prevent its own OOS population from
+            # ever accumulating eligible fundamental observations.
+            if fundamental:
+                try:
+                    experiment_tracker.update_fundamental(
+                        symbol=result.symbol,
+                        catalyst_type=fundamental.catalyst_type,
+                        short_conviction=fundamental.short_conviction,
+                        news_count=fundamental.news_count,
+                    )
+                except Exception as error:
+                    logger.warning(
+                        "Failed to attach shadow fundamental for %s: %s",
+                        result.symbol,
+                        error,
+                    )
 
             # Live filter (Tier S/A/B gating) + Strategy (direction/sizing)
             live_decision = live_filter.evaluate(
@@ -282,6 +361,21 @@ def run_once(
                 fundamental_conviction=fund_conviction,
             )
             if not live_decision.passed:
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage="live_filter",
+                    reasons=(
+                        list(getattr(live_decision, "block_reasons", []) or [])
+                        or list(getattr(live_decision, "reasons", []) or [])
+                    ),
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    filter_decision=live_decision,
+                    fundamental=fundamental,
+                )
                 console.print(
                     f"  [dim]▸ [bright_yellow]{result.symbol}[/bright_yellow] "
                     f"live_filter REJECT ({live_decision.summary()})[/dim]"
@@ -299,6 +393,20 @@ def run_once(
                 recent_short_edge_pct=None,
             )
             if live_plan.direction != DIR_SHORT:
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage="strategy_direction",
+                    reasons=list(live_plan.reasons)
+                    or [f"direction={live_plan.direction}"],
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    filter_decision=live_decision,
+                    plan=live_plan,
+                    fundamental=fundamental,
+                )
                 console.print(
                     f"  [dim]▸ [bright_yellow]{result.symbol}[/bright_yellow] "
                     f"live_strategy direction={live_plan.direction} — skipped "
@@ -317,6 +425,22 @@ def run_once(
 
             proposal = _proposal_from_live_plan(result, fundamental, live_plan)
             if proposal is None:
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage="unsupported_execution_plan",
+                    reasons=[
+                        "executor supports immediate MARKET SHORT only",
+                        *list(live_plan.reasons),
+                    ],
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    filter_decision=live_decision,
+                    plan=live_plan,
+                    fundamental=fundamental,
+                )
                 console.print(
                     f"  [dim]▸ [bright_yellow]{result.symbol}[/bright_yellow] "
                     f"live_strategy {live_plan.entry_style} is shadow-only for now; "
@@ -328,25 +452,142 @@ def run_once(
                 )
                 continue
 
-            exec_result = executor.execute(proposal)
+            if not dry_run and not proposal.idempotency_key:
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage="missing_order_identity",
+                    reasons=[
+                        "LIVE_ACCOUNT_ID or signal_candle_at unavailable"
+                    ],
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    filter_decision=live_decision,
+                    plan=live_plan,
+                    fundamental=fundamental,
+                )
+                raise LiveExecutionSafetyError(
+                    f"Stable live intent identity is unavailable for "
+                    f"{result.symbol}; require LIVE_ACCOUNT_ID and a fresh "
+                    "signal_candle_at"
+                )
 
-            # シャドウトレードにファンダ情報を後付け
-            # (シャドウ登録はファンダ分析前に行われるため)
-            if fundamental:
-                experiment_tracker.update_fundamental(
-                    symbol=result.symbol,
-                    catalyst_type=fundamental.catalyst_type,
-                    short_conviction=fundamental.short_conviction,
-                    news_count=fundamental.news_count,
+            # Persist the accepted intent before the first exchange mutation.
+            # Network dual-write happens after the cycle from the local outbox.
+            try_record(
+                record_live_decision_event,
+                result,
+                accepted=True,
+                stage="approved_intent",
+                reasons=list(live_plan.reasons),
+                policy_version=policy_version,
+                policy_fingerprint=policy_fingerprint,
+                dry_run=dry_run,
+                filter_decision=live_decision,
+                plan=live_plan,
+                fundamental=fundamental,
+                context={"idempotency_key": proposal.idempotency_key},
+            )
+
+            # From this boundary onward a transport exception may mean the
+            # exchange accepted an order even when no response reached us.
+            live_execution_attempted = not dry_run
+            exec_result = executor.execute(proposal)
+            if not isinstance(exec_result, dict):
+                raise LiveExecutionSafetyError(
+                    f"Executor contract violation for {result.symbol}: "
+                    f"{type(exec_result).__name__}"
+                )
+            exec_status = str(exec_result.get("status") or "")
+
+            # A successful live entry consumes the run budget immediately.
+            # Everything below (tracking, display and notification) can fail and
+            # must never make a second symbol eligible in the same run.
+            if exec_status == "ok" and not dry_run:
+                live_orders_placed += 1
+                live_execution_committed = True
+                append_confirmed_live_execution(proposal, exec_result)
+            elif exec_status == "dry_run" and dry_run:
+                pass
+            elif exec_status.startswith("skipped_"):
+                live_execution_attempted = False
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage="executor_skip",
+                    reasons=[str(exec_result.get("reason") or exec_status)],
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    filter_decision=live_decision,
+                    plan=live_plan,
+                    fundamental=fundamental,
+                    context={
+                        "executor_status": exec_status,
+                        "external_oid": exec_result.get("external_oid"),
+                    },
+                )
+                logger.warning(
+                    "Skip tracking %s: executor status=%s reason=%s",
+                    result.symbol,
+                    exec_status,
+                    (exec_result or {}).get("reason"),
+                )
+                continue
+            else:
+                message = (
+                    f"executor status={exec_status or 'missing'} "
+                    f"reason={(exec_result or {}).get('reason')} "
+                    f"external_oid={(exec_result or {}).get('external_oid')} "
+                    f"emergency_close={(exec_result or {}).get('emergency_close')}"
+                )
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage="executor_error",
+                    reasons=[message],
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    filter_decision=live_decision,
+                    plan=live_plan,
+                    fundamental=fundamental,
+                )
+                if not dry_run:
+                    raise LiveExecutionSafetyError(
+                        f"Live execution state is not safely confirmed for "
+                        f"{result.symbol}: {message}"
+                    )
+                logger.error("Dry-run executor failure %s: %s", result.symbol, message)
+                continue
+
+            tracked_entry = proposal.entry_price
+            tracked_sl = proposal.stop_loss
+            tracked_tp = proposal.take_profit
+            tracked_sl_pct = proposal.sl_pct
+            tracked_tp_pct = proposal.tp_pct
+            if exec_status == "ok":
+                tracked_entry = float(exec_result["average_fill_price"])
+                tracked_sl = float(exec_result["sl_price"])
+                tracked_tp = float(exec_result["tp_price"])
+                tracked_sl_pct = (
+                    (tracked_sl - tracked_entry) / tracked_entry * 100
+                )
+                tracked_tp_pct = (
+                    (tracked_entry - tracked_tp) / tracked_entry * 100
                 )
 
             print_confirmed_signal(
                 symbol=result.symbol,
-                entry=proposal.entry_price,
-                sl=proposal.stop_loss,
-                tp=proposal.take_profit,
-                sl_pct=proposal.sl_pct,
-                tp_pct=proposal.tp_pct,
+                entry=tracked_entry,
+                sl=tracked_sl,
+                tp=tracked_tp,
+                sl_pct=tracked_sl_pct,
+                tp_pct=tracked_tp_pct,
                 rsi=result.rsi,
                 bb_upper=result.bb_upper,
                 change_1h=result.change_1h_pct,
@@ -358,32 +599,15 @@ def run_once(
 
             conviction = fundamental.short_conviction if fundamental else "MEDIUM"
 
-            # AVOID なら追跡もしない
-            if conviction == "AVOID":
-                continue
-
-            # LIVE モードで発注がスキップ/失敗した場合は tracker にも入れない。
-            # (DRY RUN は status="dry_run" で常に通過 → tracker 登録される)
-            exec_status = (exec_result or {}).get("status", "")
-            if exec_status not in ("dry_run", "ok"):
-                logger.warning(
-                    "Skip tracking %s: executor status=%s reason=%s",
-                    result.symbol, exec_status, (exec_result or {}).get("reason"),
-                )
-                continue
-
             # 追跡登録 (どのライブ戦略で発注したかを保存しておき、決済時に
             # LivePortfolio へ転記する)
-            if exec_status == "ok" and not dry_run:
-                live_orders_placed += 1
-
             is_new = tracker.add_if_new(
                 symbol=result.symbol,
-                detection_price=proposal.entry_price,
+                detection_price=tracked_entry,
                 rsi=result.rsi,
                 change_1h=result.change_1h_pct,
-                sl_price=proposal.stop_loss,
-                tp_price=proposal.take_profit,
+                sl_price=tracked_sl,
+                tp_price=tracked_tp,
                 conviction=conviction,
                 catalyst_type=fundamental.catalyst_type if fundamental else "UNKNOWN",
                 market_regime=btc_status.regime,
@@ -398,11 +622,11 @@ def run_once(
             if is_new:
                 notifier.notify_new_signal(
                     symbol=result.symbol,
-                    entry=proposal.entry_price,
-                    sl=proposal.stop_loss,
-                    tp=proposal.take_profit,
-                    sl_pct=proposal.sl_pct,
-                    tp_pct=proposal.tp_pct,
+                    entry=tracked_entry,
+                    sl=tracked_sl,
+                    tp=tracked_tp,
+                    sl_pct=tracked_sl_pct,
+                    tp_pct=tracked_tp_pct,
                     rsi=result.rsi,
                     change_1h=result.change_1h_pct,
                     conviction=conviction,
@@ -412,7 +636,45 @@ def run_once(
                     relative_strength=result.relative_strength_pct,
                 )
 
+        except LiveExecutionSafetyError:
+            raise
         except Exception as e:
+            if live_execution_attempted or live_execution_committed:
+                try_record(
+                    record_live_decision_event,
+                    result,
+                    accepted=False,
+                    stage=(
+                        "post_execution_processing_error"
+                        if live_execution_committed
+                        else "execution_state_unknown"
+                    ),
+                    reasons=[f"{type(e).__name__}: {e}"],
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    filter_decision=locals().get("live_decision"),
+                    plan=locals().get("live_plan"),
+                    fundamental=locals().get("fundamental"),
+                    context={
+                        "live_execution_attempted": live_execution_attempted,
+                        "live_execution_committed": live_execution_committed,
+                    },
+                )
+                raise LiveExecutionSafetyError(
+                    f"Live execution or post-order processing failed for "
+                    f"{result.symbol}; aborting before another live order"
+                ) from e
+            try_record(
+                record_live_decision_event,
+                result,
+                accepted=False,
+                stage="processing_error",
+                reasons=[f"{type(e).__name__}: {e}"],
+                policy_version=policy_version,
+                policy_fingerprint=policy_fingerprint,
+                dry_run=dry_run,
+            )
             logger.error("Failed to process %s: %s", result.symbol, e)
 
     # ── 期限切れ追跡の処理 ──────────────────────────────────────────
@@ -477,6 +739,31 @@ def _proposal_from_live_plan(
         volume_24h_usdt=result.volume_24h_usdt,
         change_1h_pct=result.change_1h_pct,
         fundamental=fundamental,
+        risk_pct_of_account=live_plan.risk_pct_of_account,
+        idempotency_key=_live_intent_key(result, live_plan),
+    )
+
+
+def _live_intent_key(result, live_plan: LiveTradePlan) -> str | None:
+    """Return a restart-stable identity for one exchange entry intent.
+
+    The identity deliberately excludes policy/config hashes: changing a policy
+    must not make the same symbol/candle eligible for a second order.
+    """
+    account_id = os.getenv("LIVE_ACCOUNT_ID", "").strip()
+    signal_candle_at = str(
+        getattr(result, "signal_candle_at", "") or ""
+    ).strip()
+    if not account_id or not signal_candle_at:
+        return None
+    return "|".join(
+        (
+            account_id,
+            result.symbol,
+            live_plan.direction,
+            live_plan.entry_style,
+            signal_candle_at,
+        )
     )
 
 
@@ -489,6 +776,9 @@ def _register_shadow_trades(
     btc_change_1h: float,
     regime: str,
     max_per_cycle: int,
+    policy_version: str,
+    policy_fingerprint: str,
+    dry_run: bool,
     logger: logging.Logger,
 ) -> None:
     """全候補をシャドウトレードとして登録する。
@@ -500,13 +790,11 @@ def _register_shadow_trades(
     各候補について order book の best ask/bid を取得し、スプレッド情報と
     複数のエントリー戦略バリアント (MARKET / ASK / LIMIT) を記録する。
     """
-    if not analysis_results or max_per_cycle <= 0:
+    if not analysis_results:
         return
 
     added = 0
     for r in analysis_results:
-        if added >= max_per_cycle:
-            break
         try:
             proposal = builder.build(r)
             price_vs_bb = (
@@ -538,40 +826,75 @@ def _register_shadow_trades(
                 daily_direction=r.daily_direction,
             )
 
-            # Order book からスプレッド情報を取得
+            # Order book は実験追跡枠に入る候補だけ取得する。実弾専用run
+            # (EXPERIMENT_MAX_PER_CYCLE=0) の注文前レイテンシは増やさない。
             ask_price: float | None = None
             bid_price: float | None = None
-            try:
-                ob = client.fetch_order_book(r.symbol, limit=5)
-                asks = ob.get("asks") or []
-                bids = ob.get("bids") or []
-                if asks:
-                    ask_price = float(asks[0][0])
-                if bids:
-                    bid_price = float(bids[0][0])
-            except Exception as e:
-                logger.debug("Order book unavailable for %s: %s", r.symbol, e)
+            can_track = max_per_cycle > 0 and added < max_per_cycle
+            if can_track:
+                try:
+                    ob = client.fetch_order_book(r.symbol, limit=5)
+                    asks = ob.get("asks") or []
+                    bids = ob.get("bids") or []
+                    if asks:
+                        ask_price = float(asks[0][0])
+                    if bids:
+                        bid_price = float(bids[0][0])
+                except Exception as e:
+                    logger.debug("Order book unavailable for %s: %s", r.symbol, e)
 
-            registered = experiment_tracker.add_candidate(
-                symbol=r.symbol,
-                entry_price=proposal.entry_price,
-                sl_price=proposal.stop_loss,
-                tp_price=proposal.take_profit,
-                sl_pct=proposal.sl_pct,
-                tp_pct=proposal.tp_pct,
-                market_regime=regime,
-                filters=snapshot,
-                confirmed_strict=r.is_confirmed_signal,
+            # 全候補をappend-only eventとして先に保持する。STRICT却下も
+            # outcome母集団から消さず、採用バイアスを測定できるようにする。
+            captured_at = utc_now_iso()
+            try_record(
+                record_analysis_event,
+                r,
+                regime=regime,
+                proposal=proposal,
+                policy_version=policy_version,
+                policy_fingerprint=policy_fingerprint,
+                btc_change_1h=btc_change_1h,
                 ask_price=ask_price,
                 bid_price=bid_price,
-                # テクニカル指値バリアント用
-                bb_upper=r.bb_upper,
-                bb_middle=r.bb_middle,
-                atr_pct=r.atr_pct,
-                swing_low_1h=r.swing_low_1h,
+                recorded_at=captured_at,
             )
-            if registered:
-                added += 1
+            if not r.is_confirmed_signal:
+                try_record(
+                    record_live_decision_event,
+                    r,
+                    accepted=False,
+                    stage="strict_filter",
+                    reasons=list(r.reject_reasons or []),
+                    policy_version=policy_version,
+                    policy_fingerprint=policy_fingerprint,
+                    dry_run=dry_run,
+                    context={"market_regime": regime},
+                )
+
+            if can_track:
+                registered = experiment_tracker.add_candidate(
+                    symbol=r.symbol,
+                    entry_price=proposal.entry_price,
+                    sl_price=proposal.stop_loss,
+                    tp_price=proposal.take_profit,
+                    sl_pct=proposal.sl_pct,
+                    tp_pct=proposal.tp_pct,
+                    market_regime=regime,
+                    filters=snapshot,
+                    confirmed_strict=r.is_confirmed_signal,
+                    signal_candle_at=r.signal_candle_at,
+                    strict_reject_reasons=list(r.reject_reasons or []),
+                    detected_at=captured_at,
+                    ask_price=ask_price,
+                    bid_price=bid_price,
+                    # テクニカル指値バリアント用
+                    bb_upper=r.bb_upper,
+                    bb_middle=r.bb_middle,
+                    atr_pct=r.atr_pct,
+                    swing_low_1h=r.swing_low_1h,
+                )
+                if registered:
+                    added += 1
         except Exception as e:
             logger.debug("Shadow registration failed for %s: %s", r.symbol, e)
 
@@ -652,7 +975,10 @@ def main() -> None:
     robust_adaptive_portfolio = RobustAdaptivePortfolio()
     causal_adaptive_portfolio = CausalAdaptivePortfolio()
     live_filter          = LiveTradeFilter()
-    strategy_ranker      = StrategyRanker(experiment_tracker)
+    strategy_ranker      = StrategyRanker(
+        experiment_tracker,
+        live_trade_predicate=live_filter.historical_trade_passes,
+    )
     live_strategy        = LiveStrategyBuilder(
         proposal_builder=builder, ranker=strategy_ranker,
     )

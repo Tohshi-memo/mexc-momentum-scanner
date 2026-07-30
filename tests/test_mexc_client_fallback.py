@@ -4,7 +4,9 @@ import tempfile
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
-from unittest.mock import patch
+from unittest.mock import MagicMock, patch
+
+import ccxt
 
 from core.market_context import MarketContextRecorder
 from utils.mexc_client import MEXCClient
@@ -76,6 +78,42 @@ class MEXCClientFallbackTest(unittest.TestCase):
             "/kline/BTC_USDT",
             {"interval": "Min60", "limit": 2},
         )
+
+    def test_mutating_create_order_is_never_retried(self) -> None:
+        create_order = MagicMock(side_effect=ccxt.NetworkError("timeout"))
+        self.client._exchange = SimpleNamespace(
+            create_order=create_order,
+            rateLimit=0,
+        )
+
+        with self.assertRaises(ccxt.NetworkError):
+            self.client.create_order(
+                "BTC/USDT:USDT",
+                "market",
+                "sell",
+                1.0,
+                params={"externalOid": "test-idempotency-key"},
+            )
+
+        create_order.assert_called_once()
+
+    def test_funding_rate_uses_direct_official_fallback(self) -> None:
+        with (
+            patch.object(
+                self.client,
+                "_call_with_retry",
+                side_effect=RuntimeError("ccxt unavailable"),
+            ),
+            patch.object(
+                self.client,
+                "_direct_get",
+                return_value={"fundingRate": "0.00018"},
+            ) as direct_get,
+        ):
+            rate = self.client.fetch_funding_rate("BTC/USDT:USDT")
+
+        self.assertAlmostEqual(rate or 0.0, 0.018)
+        direct_get.assert_called_once_with("/funding_rate/BTC_USDT")
 
 
 class MarketContextValidationTest(unittest.TestCase):

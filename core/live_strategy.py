@@ -225,6 +225,18 @@ class LiveStrategyBuilder:
         # SL/TP は既存の ATR ベースロジックで計算
         proposal = self._proposal.build(result)
 
+        if self._use_ranker and self._ranker is None:
+            logger.error(
+                "LIVE_USE_RANKER=true but StrategyRanker is unavailable; fail closed"
+            )
+            return LiveTradePlan(
+                symbol=result.symbol,
+                direction=DIR_SKIP,
+                entry_style=ENTRY_MARKET,
+                reasons=["ranker unavailable"],
+                created_from_proposal=proposal,
+            )
+
         # ─── ランカー採用: 直近20件で実質期待値トップの戦略を選ぶ ───
         ranker_pick: StrategyStat | None = None
         if self._use_ranker and self._ranker is not None:
@@ -333,6 +345,11 @@ class LiveStrategyBuilder:
         if self._ranker is None:
             return None
 
+        live_gate = self._ranker.evaluate_live_gate(strategy="MARKET")
+        if not live_gate.passed:
+            logger.warning("Live ranker gate rejected MARKET: %s", live_gate.summary())
+            return None
+
         ranked = self._ranker.compute()
         for s in ranked:
             if s.effective_ev <= self._min_ev_pct:
@@ -397,8 +414,8 @@ class LiveStrategyBuilder:
         """
         edge = recent_short_edge_pct
         if edge is None:
-            # データなし → 現行の SHORT 路線をデフォルトに
-            return DIR_SHORT
+            # データなしで実弾方向を推測しない。
+            return DIR_SKIP
 
         if edge >= self._long_bias_pct:  # ショート優位
             return DIR_SHORT
