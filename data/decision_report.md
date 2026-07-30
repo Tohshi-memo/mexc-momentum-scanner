@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T07:46:18.020098+00:00
+- generated_at: 2026-07-30T07:51:31.929544+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9870**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.46** / 初期 $100.00 (+11.46%)
-- 確定: 777件 (Win 254 / Loss 300 / Flat 223) / pending 1件 / skip 562件
+- 確定: 777件 (Win 254 / Loss 300 / Flat 223) / pending 2件 / skip 562件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000962 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ESP/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $111.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T07:46:10.693855+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63995.0
-- Funnel: target 916 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-30T07:51:25.368384+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63957.7
+- Funnel: target 916 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESP/USDT:USDT | +31.09% | $1,413,054.36 |
-| MMT/USDT:USDT | +16.62% | $1,108,795.01 |
-| RE/USDT:USDT | +14.36% | $9,230,634.66 |
-| MSFU/USDT:USDT | +12.11% | $2,844,869.40 |
-| ADVANTESTSTOCK/USDT:USDT | +10.82% | $1,302,882.75 |
+| ESP/USDT:USDT | +25.74% | $1,528,951.48 |
+| MMT/USDT:USDT | +16.44% | $1,114,843.17 |
+| RE/USDT:USDT | +14.16% | $9,245,457.56 |
+| MSFU/USDT:USDT | +12.44% | $2,846,003.40 |
+| ADVANTESTSTOCK/USDT:USDT | +10.62% | $1,303,227.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.83% |
-| FET/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
-| HOLO/USDT:USDT | below_1h_threshold | +1.80% | +1.77% |
-| INJ/USDT:USDT | below_1h_threshold | +1.31% | +1.28% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.23% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.89% |
+| INJ/USDT:USDT | below_1h_threshold | +1.75% | +1.78% |
+| FET/USDT:USDT | below_1h_threshold | +1.61% | +1.63% |
+| BILL/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.28% |
 
 ## 7. 次に見るべき不足
 
