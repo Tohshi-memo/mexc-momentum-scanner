@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 110.5102820533702,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-07-30T06:21:17.033997+00:00",
+  "updated_at": "2026-07-30T06:26:23.127377+00:00",
   "high_watermark": 110.9894074191052,
   "max_drawdown_pct": 3.463237719717767,
   "loss_streak": 1,
@@ -181906,6 +181906,103 @@
       },
       "settled_at": "2026-07-30T04:20:42.406667+00:00",
       "outcome": "SL_HIT"
+    },
+    "SOONNETWORK/USDT:USDT|2026-07-30T06:26:17.718312+00:00": {
+      "key": "SOONNETWORK/USDT:USDT|2026-07-30T06:26:17.718312+00:00",
+      "symbol": "SOONNETWORK/USDT:USDT",
+      "detected_at": "2026-07-30T06:26:17.718312+00:00",
+      "registered_at": "2026-07-30T06:26:23.071440+00:00",
+      "signal_batch": "2026-07-30T06:26Z",
+      "status": "pending",
+      "strategy": "MARKET",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 5.054197057662624,
+      "decision": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0008739812044931854,
+        "robust_score": 0.0008739812044931854,
+        "causal_history_count": 9861,
+        "fast": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 3.044990197996997,
+          "effective_ev_pct": 3.044990197996997,
+          "avg_log_return": 0.0013704121137845548,
+          "geometric_return_pct": 0.1371351557557965,
+          "avg_account_return_pct": 0.13744820917136355,
+          "max_drawdown_pct": 0.8719428546872218,
+          "max_loss_streak": 5
+        },
+        "recent": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 3.044990197996997,
+          "effective_ev_pct": 3.044990197996997,
+          "avg_log_return": 0.0013704121137845548,
+          "geometric_return_pct": 0.1371351557557965,
+          "avg_account_return_pct": 0.13744820917136355,
+          "max_drawdown_pct": 0.8719428546872218,
+          "max_loss_streak": 5
+        },
+        "mid": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 200,
+          "filled": 200,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.8699082913940446,
+          "effective_ev_pct": 0.8699082913940446,
+          "avg_log_return": 0.00042506982657237427,
+          "geometric_return_pct": 0.04251601815530304,
+          "avg_account_return_pct": 0.04283467211081262,
+          "max_drawdown_pct": 2.566110291395385,
+          "max_loss_streak": 8
+        },
+        "long": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.20465287155912606,
+          "effective_ev_pct": -0.20465287155912606,
+          "avg_log_return": -4.8442707066880694e-05,
+          "geometric_return_pct": -0.004844153373784188,
+          "avg_account_return_pct": -0.004563571165425811,
+          "max_drawdown_pct": 16.731202760522635,
+          "max_loss_streak": 17
+        },
+        "all": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.20465287155912606,
+          "effective_ev_pct": -0.20465287155912606,
+          "avg_log_return": -4.8442707066880694e-05,
+          "geometric_return_pct": -0.004844153373784188,
+          "avg_account_return_pct": -0.004563571165425811,
+          "max_drawdown_pct": 16.731202760522635,
+          "max_loss_streak": 17
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 4.60009110790964e-05
+          }
+        ]
+      }
     }
   },
   "causal_history": true

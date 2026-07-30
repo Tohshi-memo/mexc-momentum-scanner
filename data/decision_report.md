@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T06:21:18.577816+00:00
+- generated_at: 2026-07-30T06:26:24.626958+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9863**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.51** / 初期 $100.00 (+10.51%)
-- 確定: 773件 (Win 251 / Loss 299 / Flat 223) / pending 0件 / skip 562件
+- 確定: 773件 (Win 251 / Loss 299 / Flat 223) / pending 1件 / skip 562件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000874 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: US/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $110.51
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T06:21:11.554433+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63949.0
-- Funnel: target 911 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-30T06:26:17.375187+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64050.0
+- Funnel: target 916 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +18.88% | $1,536,615.55 |
-| MMT/USDT:USDT | +15.02% | $1,063,020.25 |
-| RE/USDT:USDT | +14.12% | $8,887,303.03 |
-| MSFU/USDT:USDT | +12.86% | $2,828,234.32 |
-| ADVANTESTSTOCK/USDT:USDT | +10.76% | $1,396,610.76 |
+| US/USDT:USDT | +18.11% | $1,566,650.23 |
+| MMT/USDT:USDT | +14.49% | $1,064,676.95 |
+| RE/USDT:USDT | +13.84% | $8,921,364.44 |
+| MSFU/USDT:USDT | +13.02% | $2,828,599.48 |
+| ADVANTESTSTOCK/USDT:USDT | +11.19% | $1,398,721.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +4.28% |
-| SOONNETWORK/USDT:USDT | below_1h_threshold | +3.79% | +3.89% |
-| US/USDT:USDT | below_1h_threshold | +1.79% | +1.89% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.59% | +1.69% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.39% | +1.49% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +4.12% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.59% | +1.53% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +1.23% | +1.18% |
+| US/USDT:USDT | below_1h_threshold | +1.16% | +1.10% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.86% |
 
 ## 7. 次に見るべき不足
 
