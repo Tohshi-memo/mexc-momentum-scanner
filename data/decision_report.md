@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T08:16:23.282972+00:00
+- generated_at: 2026-07-30T08:21:15.168290+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9873**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T08:16:16.229928+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63983.9
+- 更新: 2026-07-30T08:21:08.080962+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64031.3
 - Funnel: target 916 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +15.02% | $1,155,202.70 |
-| MSFU/USDT:USDT | +13.07% | $2,852,328.82 |
-| RE/USDT:USDT | +11.90% | $9,340,644.55 |
-| ADVANTESTSTOCK/USDT:USDT | +10.69% | $1,296,190.36 |
-| ESP/USDT:USDT | +10.27% | $1,987,684.24 |
+| MMT/USDT:USDT | +15.68% | $1,157,262.02 |
+| MSFU/USDT:USDT | +12.88% | $2,852,936.69 |
+| RE/USDT:USDT | +11.50% | $9,390,254.47 |
+| ADVANTESTSTOCK/USDT:USDT | +10.69% | $1,296,541.18 |
+| US/USDT:USDT | +9.24% | $1,875,497.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNI/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.11% |
-| AKE/USDT:USDT | below_1h_threshold | +1.05% | +1.05% |
-| ZIL/USDT:USDT | below_1h_threshold | +0.91% | +0.91% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.20% | +2.12% |
+| UNI/USDT:USDT | below_1h_threshold | +1.30% | +1.23% |
+| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.04% |
+| MMT/USDT:USDT | below_1h_threshold | +0.88% | +0.80% |
+| ZIL/USDT:USDT | below_1h_threshold | +0.76% | +0.68% |
 
 ## 7. 次に見るべき不足
 
