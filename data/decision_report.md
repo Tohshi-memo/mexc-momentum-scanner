@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T02:26:37.756527+00:00
+- generated_at: 2026-07-30T02:31:26.549930+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9850**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.01** / 初期 $100.00 (+9.01%)
-- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 3件 / skip 562件
+- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 4件 / skip 562件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000424 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T02:26:30.116803+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64310.1
+- 更新: 2026-07-30T02:31:18.642609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64303.9
 - Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +17.16% | $65,550,799.77 |
-| UAI/USDT:USDT | +16.09% | $15,493,647.70 |
-| RE/USDT:USDT | +15.56% | $8,201,943.44 |
-| MSFU/USDT:USDT | +13.31% | $4,314,791.61 |
-| ADVANTESTSTOCK/USDT:USDT | +12.31% | $1,492,047.51 |
+| BANK/USDT:USDT | +19.72% | $65,848,034.20 |
+| UAI/USDT:USDT | +15.34% | $15,509,519.55 |
+| RE/USDT:USDT | +15.11% | $8,221,432.90 |
+| MSFU/USDT:USDT | +13.36% | $4,315,053.44 |
+| ADVANTESTSTOCK/USDT:USDT | +11.60% | $1,495,021.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.89% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.88% |
-| COTI/USDT:USDT | below_1h_threshold | +4.18% | +4.08% |
-| BANK/USDT:USDT | below_1h_threshold | +3.79% | +3.69% |
-| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.25% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.90% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.89% |
+| COTI/USDT:USDT | below_1h_threshold | +3.77% | +3.68% |
+| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.26% |
+| FLEXSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.82% |
 
 ## 7. 次に見るべき不足
 
