@@ -101,7 +101,12 @@ class ForwardRegistrationTest(unittest.TestCase):
             experiment_path = Path(directory) / "experiments.json"
             portfolio_path = Path(directory) / "portfolio.json"
             portfolio = CausalAdaptivePortfolio(portfolio_path, experiment_path)
-            detected = datetime.now(timezone.utc) + timedelta(minutes=1)
+            # Keep all three samples in the same minute-based signal batch.
+            # A wall-clock second near :59 otherwise makes this test flaky.
+            detected = (datetime.now(timezone.utc) + timedelta(minutes=1)).replace(
+                second=10,
+                microsecond=0,
+            )
             active = [
                 _trade("LOW/USDT:USDT", detected, relative_strength=5.0),
                 _trade("HIGH/USDT:USDT", detected + timedelta(seconds=1), relative_strength=9.0),
