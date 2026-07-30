@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-07-30T23:06:15.749154+00:00
+- generated_at: 2026-07-30T23:11:17.901466+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9938**
+- closed shadow trades: **9939**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9938, expectancy=-0.01%
-- 直近20件 MARKET基準: n=20, expectancy=-2.67%
+- 全期間 MARKET基準: n=9939, expectancy=-0.01%
+- 直近20件 MARKET基準: n=20, expectancy=-2.07%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -2.67% | **-2.67%** |
+| MARKET | 20/20 | 100.0% | -2.07% | **-2.07%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -31,11 +31,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +4.66% | **+3.26%** |
 | LIMIT_1PCT_LONG | 20/20 | 100.0% | +3.06% | **+3.06%** |
+| LIMIT_ATR_LONG | 15/20 | 75.0% | +4.04% | **+3.03%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +3.94% | **+2.76%** |
 | LIMIT_BB3S_LONG | 2/2 | 100.0% | +2.75% | **+2.75%** |
-| LIMIT_ATR_LONG | 15/20 | 75.0% | +3.24% | **+2.43%** |
-| LIMIT_3PCT_LONG | 9/20 | 45.0% | +4.92% | **+2.21%** |
+| LIMIT_3PCT_LONG | 9/20 | 45.0% | +3.67% | **+1.65%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,18 +46,18 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$523.44** / 初期 $100.00 (+423.44%)
-- 確定: 3529件 (Win 1121 / Loss 1148 / Flat 1260) / skip 2970件
-- 成長率目線: 平均log +0.000469 / 幾何平均 +0.047% per trade / maxDD +8.13%
+- 残高: **$520.82** / 初期 $100.00 (+420.82%)
+- 確定: 3530件 (Win 1121 / Loss 1149 / Flat 1260) / skip 2970件
+- 成長率目線: 平均log +0.000467 / 幾何平均 +0.047% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: JIMOTHY/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $523.44
+- 最新: JIMOTHY/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $520.82
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$136.91** / 初期 $100.00 (+36.91%)
-- 確定: 1243件 (Win 344 / Loss 283 / Flat 616) / skip 2106件
+- 確定: 1243件 (Win 344 / Loss 283 / Flat 616) / skip 2107件
 - 成長率目線: 平均log +0.000253 / 幾何平均 +0.025% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.2193 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.2132 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $136.91
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -65,13 +65,13 @@
 - 残高: **$110.57** / 初期 $100.00 (+10.57%)
 - 確定: 805件 (Win 262 / Loss 320 / Flat 223) / pending 0件 / skip 607件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000689 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000641 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ARMSTOCK/USDT:USDT `MARKET` EXPIRED account -0.04% 残高後 $110.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T23:06:08.799202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64852.6
+- 更新: 2026-07-30T23:11:09.542672+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64855.1
 - Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +29.31% | $2,896,572.64 |
-| MMT/USDT:USDT | +21.19% | $8,106,036.42 |
-| ESPORTS/USDT:USDT | +16.93% | $5,013,267.65 |
-| SNXX/USDT:USDT | +15.80% | $10,542,874.22 |
-| AMZU/USDT:USDT | +15.52% | $2,348,303.75 |
+| AXTISTOCK/USDT:USDT | +26.54% | $2,942,149.98 |
+| MMT/USDT:USDT | +19.92% | $8,163,609.01 |
+| ESPORTS/USDT:USDT | +17.49% | $5,022,333.94 |
+| AMZU/USDT:USDT | +15.43% | $2,350,709.36 |
+| ROBO/USDT:USDT | +15.09% | $3,157,041.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.77% |
-| LA/USDT:USDT | below_1h_threshold | +2.69% | +2.65% |
+| LA/USDT:USDT | below_1h_threshold | +2.48% | +2.43% |
 | AXTISTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.08% |
 | CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.00% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.74% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.73% |
 
 ## 7. 次に見るべき不足
 
