@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T22:36:22.999687+00:00
+- generated_at: 2026-07-30T22:41:15.131368+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9938**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T22:36:16.226518+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64905.5
+- 更新: 2026-07-30T22:41:08.049640+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=64863.4
 - Funnel: target 920 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +30.73% | $2,557,049.82 |
-| MMT/USDT:USDT | +21.47% | $7,703,849.67 |
-| ESPORTS/USDT:USDT | +17.66% | $5,042,038.94 |
-| JIMOTHY/USDT:USDT | +16.99% | $1,631,116.68 |
-| SNXX/USDT:USDT | +16.60% | $10,627,939.41 |
+| AXTISTOCK/USDT:USDT | +30.95% | $2,658,433.67 |
+| MMT/USDT:USDT | +22.01% | $7,794,569.27 |
+| ESPORTS/USDT:USDT | +18.00% | $5,049,448.39 |
+| JIMOTHY/USDT:USDT | +17.99% | $1,634,374.76 |
+| SNXX/USDT:USDT | +15.80% | $10,695,958.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +4.72% | +4.41% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.33% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.25% | +1.94% |
-| XPL/USDT:USDT | below_1h_threshold | +2.24% | +1.93% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.16% | +1.85% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.22% | +3.98% |
+| AKE/USDT:USDT | below_1h_threshold | +2.80% | +2.56% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.40% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.25% | +2.01% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.14% | +1.90% |
 
 ## 7. 次に見るべき不足
 
