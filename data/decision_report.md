@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-30T19:26:17.445214+00:00
+- generated_at: 2026-07-30T19:31:25.940567+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9915**
+- closed shadow trades: **9916**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9915, expectancy=-0.00%
+- 全期間 MARKET基準: n=9916, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-2.92%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,19 +23,19 @@
 |---|---:|---:|---:|---:|
 | LIMIT_7PCT | 2/20 | 10.0% | +5.40% | **+0.54%** |
 | LIMIT_6PCT | 3/20 | 15.0% | +1.89% | **+0.28%** |
-| LIMIT_5PCT | 4/20 | 20.0% | +1.05% | **+0.21%** |
+| LIMIT_5PCT | 5/20 | 25.0% | +1.03% | **+0.26%** |
 | LIMIT_4PCT | 15/20 | 75.0% | -0.24% | **-0.18%** |
-| LIMIT_FIB1272 | 7/20 | 35.0% | -0.78% | **-0.27%** |
+| LIMIT_FIB1272 | 8/20 | 40.0% | -0.70% | **-0.28%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
+| MARKET_LONG | 20/20 | 100.0% | +2.71% | **+2.71%** |
 | LIMIT_1PCT_LONG | 15/20 | 75.0% | +3.52% | **+2.64%** |
-| MARKET_LONG | 20/20 | 100.0% | +2.31% | **+2.31%** |
+| LIMIT_BB3S_LONG | 3/3 | 100.0% | +2.43% | **+2.43%** |
 | LIMIT_2PCT_LONG | 11/20 | 55.0% | +3.74% | **+2.06%** |
-| LIMIT_ATR_LONG | 11/20 | 55.0% | +3.69% | **+2.03%** |
-| LIMIT_BB3S_LONG | 2/2 | 100.0% | +1.57% | **+1.57%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +3.54% | **+1.95%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$494.05** / 初期 $100.00 (+394.05%)
-- 確定: 3520件 (Win 1113 / Loss 1147 / Flat 1260) / skip 2956件
+- 確定: 3520件 (Win 1113 / Loss 1147 / Flat 1260) / skip 2957件
 - 成長率目線: 平均log +0.000454 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: UAI/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $494.05
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$136.91** / 初期 $100.00 (+36.91%)
-- 確定: 1243件 (Win 344 / Loss 283 / Flat 616) / skip 2083件
+- 確定: 1243件 (Win 344 / Loss 283 / Flat 616) / skip 2084件
 - 成長率目線: 平均log +0.000253 / 幾何平均 +0.025% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0333 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0528 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $136.91
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T19:26:10.419608+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=64833.7
+- 更新: 2026-07-30T19:31:17.423844+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=64850.2
 - Funnel: target 920 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +14.59% | $3,885,218.37 |
-| MMT/USDT:USDT | +13.39% | $5,748,080.11 |
-| ROBO/USDT:USDT | +12.76% | $2,430,472.09 |
-| EVAA/USDT:USDT | +10.48% | $2,825,552.54 |
-| MUU/USDT:USDT | +5.12% | $4,703,502.40 |
+| ROBO/USDT:USDT | +15.01% | $2,463,195.11 |
+| CAP/USDT:USDT | +14.44% | $3,917,108.92 |
+| MMT/USDT:USDT | +14.07% | $5,775,392.38 |
+| EVAA/USDT:USDT | +10.61% | $2,932,539.17 |
+| KOMA/USDT:USDT | +4.62% | $5,607,160.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EIGEN/USDT:USDT | below_1h_threshold | +2.16% | +1.90% |
-| KOMA/USDT:USDT | below_1h_threshold | +1.97% | +1.72% |
-| EUL/USDT:USDT | below_1h_threshold | +1.44% | +1.18% |
-| MYX/USDT:USDT | below_1h_threshold | +1.26% | +1.00% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.14% | +0.89% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.49% | +3.21% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.19% | +1.91% |
+| ROBO/USDT:USDT | below_1h_threshold | +1.77% | +1.49% |
+| FET/USDT:USDT | below_1h_threshold | +1.54% | +1.26% |
+| MYX/USDT:USDT | below_1h_threshold | +1.44% | +1.16% |
 
 ## 7. 次に見るべき不足
 
