@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T20:36:26.976347+00:00
+- generated_at: 2026-07-30T20:41:17.743098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9923**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T20:36:19.710913+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64764.8
-- Funnel: target 920 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-30T20:41:11.241043+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64812.0
+- Funnel: target 920 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +33.81% | $1,104,360.58 |
-| MMT/USDT:USDT | +20.24% | $6,402,019.48 |
-| ESPORTS/USDT:USDT | +17.21% | $4,579,439.56 |
-| ROBO/USDT:USDT | +15.26% | $2,897,798.00 |
-| AMZU/USDT:USDT | +14.61% | $2,637,294.69 |
+| AXTISTOCK/USDT:USDT | +33.56% | $1,352,884.78 |
+| MMT/USDT:USDT | +18.97% | $6,577,867.04 |
+| ROBO/USDT:USDT | +16.84% | $2,951,866.33 |
+| ESPORTS/USDT:USDT | +15.31% | $4,621,024.80 |
+| CAP/USDT:USDT | +13.57% | $4,258,845.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.97% | +3.98% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.46% |
-| KORU/USDT:USDT | below_1h_threshold | +3.23% | +3.24% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.11% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.05% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.97% | +3.91% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.39% |
+| KORU/USDT:USDT | below_1h_threshold | +3.23% | +3.17% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.03% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +1.97% |
 
 ## 7. 次に見るべき不足
 
