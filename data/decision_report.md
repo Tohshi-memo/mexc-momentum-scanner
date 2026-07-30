@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T20:11:26.362136+00:00
+- generated_at: 2026-07-30T20:16:22.923313+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9923**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T20:11:19.354879+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64792.1
+- 更新: 2026-07-30T20:16:15.631987+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64760.1
 - Funnel: target 920 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +19.42% | $6,196,129.67 |
-| ROBO/USDT:USDT | +17.93% | $2,758,323.82 |
-| ESPORTS/USDT:USDT | +16.04% | $4,308,194.29 |
-| EVAA/USDT:USDT | +12.93% | $3,175,299.87 |
-| CAP/USDT:USDT | +12.30% | $4,186,820.97 |
+| MMT/USDT:USDT | +19.38% | $6,236,668.71 |
+| ESPORTS/USDT:USDT | +16.82% | $4,406,129.22 |
+| ROBO/USDT:USDT | +16.68% | $2,815,586.98 |
+| EVAA/USDT:USDT | +15.10% | $3,246,403.91 |
+| AMZU/USDT:USDT | +13.69% | $2,531,863.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.97% | +3.94% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.42% |
-| KORU/USDT:USDT | below_1h_threshold | +3.23% | +3.20% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.06% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.00% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.97% | +3.99% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.47% |
+| KORU/USDT:USDT | below_1h_threshold | +3.23% | +3.25% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.05% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.96% | +1.98% |
 
 ## 7. 次に見るべき不足
 
