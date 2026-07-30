@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T18:01:35.019912+00:00
+- generated_at: 2026-07-30T18:06:27.601682+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9911**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T18:01:27.649078+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64836.5
+- 更新: 2026-07-30T18:06:20.576046+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64846.4
 - Funnel: target 920 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +12.59% | $2,117,773.06 |
-| MMT/USDT:USDT | +9.94% | $4,600,436.44 |
-| EVAA/USDT:USDT | +7.78% | $2,140,189.88 |
-| CAP/USDT:USDT | +4.76% | $3,172,786.55 |
-| ESP/USDT:USDT | +4.64% | $5,243,685.15 |
+| ROBO/USDT:USDT | +11.92% | $2,162,006.93 |
+| MMT/USDT:USDT | +10.93% | $4,691,250.89 |
+| EVAA/USDT:USDT | +9.22% | $2,207,120.41 |
+| ESP/USDT:USDT | +5.26% | $5,253,743.68 |
+| MUU/USDT:USDT | +4.27% | $4,979,936.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.65% | +2.66% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.53% |
-| AAPU/USDT:USDT | below_1h_threshold | +1.00% | +1.01% |
-| KOMA/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.81% |
+| MUU/USDT:USDT | below_1h_threshold | +2.65% | +2.64% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.65% | +1.65% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
+| MMT/USDT:USDT | below_1h_threshold | +1.37% | +1.36% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
 
 ## 7. 次に見るべき不足
 
