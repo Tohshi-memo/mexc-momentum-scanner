@@ -1,0 +1,43 @@
+name: Show MEXC Live Balance (Read Only)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    env:
+      # Reuse the live credential only for authenticated read endpoints.
+      # This workflow never invokes main.py or any order mutation.
+      MEXC_API_KEY: ${{ secrets.MEXC_LIVE_API_KEY }}
+      MEXC_SECRET_KEY: ${{ secrets.MEXC_LIVE_SECRET_KEY }}
+
+    steps:
+      - name: Verify live credentials are present
+        run: |
+          if [ -z "${MEXC_API_KEY}" ] || [ -z "${MEXC_SECRET_KEY}" ]; then
+            echo "MEXC live API secrets are missing."
+            exit 1
+          fi
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Show futures balance and positions
+        run: python tools/show_balance.py
