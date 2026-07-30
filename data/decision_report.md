@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T11:31:22.285545+00:00
+- generated_at: 2026-07-30T11:36:27.027355+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9877**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.64** / 初期 $100.00 (+11.64%)
-- 確定: 782件 (Win 256 / Loss 303 / Flat 223) / pending 4件 / skip 562件
+- 確定: 782件 (Win 256 / Loss 303 / Flat 223) / pending 5件 / skip 562件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000960 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UAI/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $111.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T11:31:13.090401+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64553.8
-- Funnel: target 916 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.6 >= 65=1
+- 更新: 2026-07-30T11:36:18.607404+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64536.3
+- Funnel: target 916 → liquid 185 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.6 >= 65=1, 4h RSI 91.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +44.73% | $1,412,577.93 |
-| ESP/USDT:USDT | +32.90% | $3,991,460.90 |
-| MMT/USDT:USDT | +21.18% | $1,418,114.69 |
-| UAI/USDT:USDT | +17.41% | $21,885,317.71 |
-| ROBO/USDT:USDT | +17.16% | $1,000,581.18 |
+| KOMA/USDT:USDT | +59.31% | $1,531,604.08 |
+| ESP/USDT:USDT | +33.54% | $4,047,178.38 |
+| MMT/USDT:USDT | +22.13% | $1,422,995.64 |
+| MSFU/USDT:USDT | +16.87% | $2,993,016.79 |
+| ROBO/USDT:USDT | +16.29% | $1,001,470.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +3.64% | +3.63% |
-| ESP/USDT:USDT | below_1h_threshold | +3.62% | +3.62% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.78% | +2.77% |
-| CAP/USDT:USDT | below_1h_threshold | +2.61% | +2.60% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +2.18% |
+| ESP/USDT:USDT | below_1h_threshold | +4.57% | +4.59% |
+| KORU/USDT:USDT | below_1h_threshold | +3.64% | +3.66% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.78% | +2.80% |
+| CAP/USDT:USDT | below_1h_threshold | +2.61% | +2.63% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +2.20% |
 
 ## 7. 次に見るべき不足
 
