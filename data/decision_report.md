@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T08:31:10.213129+00:00
+- generated_at: 2026-07-30T08:36:15.702919+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9873**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T08:31:04.726541+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=64262.2
+- 更新: 2026-07-30T08:36:08.642277+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=64234.5
 - Funnel: target 916 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +16.39% | $1,174,576.89 |
-| MSFU/USDT:USDT | +13.29% | $2,855,614.12 |
-| RE/USDT:USDT | +11.02% | $9,447,534.84 |
-| ADVANTESTSTOCK/USDT:USDT | +10.97% | $1,297,166.64 |
-| US/USDT:USDT | +10.32% | $1,882,884.27 |
+| MMT/USDT:USDT | +16.15% | $1,178,694.17 |
+| MSFU/USDT:USDT | +13.72% | $2,858,883.06 |
+| RE/USDT:USDT | +11.07% | $9,481,543.73 |
+| ADVANTESTSTOCK/USDT:USDT | +10.86% | $1,297,468.98 |
+| US/USDT:USDT | +9.52% | $1,886,193.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +2.29% | +1.86% |
-| PI/USDT:USDT | below_1h_threshold | +1.87% | +1.43% |
-| UNI/USDT:USDT | below_1h_threshold | +1.66% | +1.22% |
-| ZIL/USDT:USDT | below_1h_threshold | +1.52% | +1.08% |
-| MMT/USDT:USDT | below_1h_threshold | +1.39% | +0.95% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.58% | +2.19% |
+| ZIL/USDT:USDT | below_1h_threshold | +2.31% | +1.92% |
+| PI/USDT:USDT | below_1h_threshold | +1.64% | +1.25% |
+| UNI/USDT:USDT | below_1h_threshold | +1.25% | +0.86% |
+| MMT/USDT:USDT | below_1h_threshold | +1.24% | +0.84% |
 
 ## 7. 次に見るべき不足
 
