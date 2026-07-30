@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T00:11:30.656182+00:00
+- generated_at: 2026-07-30T00:16:16.915880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9842**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T00:11:21.966997+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64015.9
+- 更新: 2026-07-30T00:16:09.787297+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=64044.9
 - Funnel: target 911 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 72.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MSFU/USDT:USDT | +14.44% | $4,754,710.80 |
-| RE/USDT:USDT | +12.44% | $7,386,700.64 |
-| LAB/USDT:USDT | +11.61% | $2,565,262.99 |
-| UAI/USDT:USDT | +9.65% | $12,573,837.72 |
-| AEON1/USDT:USDT | +8.06% | $2,764,020.87 |
+| MSFU/USDT:USDT | +14.34% | $4,755,983.59 |
+| RE/USDT:USDT | +13.73% | $7,504,970.64 |
+| LAB/USDT:USDT | +12.83% | $2,587,453.67 |
+| UAI/USDT:USDT | +9.65% | $12,675,520.33 |
+| ADVANTESTSTOCK/USDT:USDT | +8.75% | $1,384,078.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.00% | +3.92% |
-| MSFU/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
-| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.54% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.35% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.94% |
+| UAI/USDT:USDT | below_1h_threshold | +3.94% | +3.80% |
+| MSFU/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.49% |
+| RE/USDT:USDT | below_1h_threshold | +1.49% | +1.36% |
+| ACH/USDT:USDT | below_1h_threshold | +1.47% | +1.33% |
 
 ## 7. 次に見るべき不足
 
