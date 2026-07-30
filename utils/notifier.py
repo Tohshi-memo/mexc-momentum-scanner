@@ -182,10 +182,14 @@ class Notifier:
     ) -> bool:
         """Notify only after a live fill and exchange-side protection are verified."""
         protected = "確認済み" if protection_verified else "未確認"
+        direction_label = {
+            "long": "ロング",
+            "short": "ショート",
+        }.get(direction.strip().lower(), direction)
         message = (
             "🟢 MEXC 実弾エントリー\n"
             f"銘柄: {symbol}\n"
-            f"方向: {direction.upper()}\n"
+            f"方向: {direction_label}\n"
             f"約定数量: {filled_amount:.8g}\n"
             f"平均約定価格: {average_fill_price:.8g}\n"
             f"建玉: {notional_usdt:.2f} USDT\n"
@@ -210,12 +214,26 @@ class Notifier:
         close_status = "未実施"
         close_order_id = ""
         if isinstance(emergency_close, dict):
-            close_status = str(emergency_close.get("status") or "不明")
+            raw_close_status = str(
+                emergency_close.get("status") or "不明"
+            )
+            close_status = {
+                "ok": "成功",
+                "failed": "失敗",
+                "error": "エラー",
+            }.get(raw_close_status.lower(), raw_close_status)
             close_order_id = str(emergency_close.get("order_id") or "")
+        status_label = {
+            "ok": "正常",
+            "missing": "実行結果なし",
+            "failed": "失敗",
+            "error": "エラー",
+            "dry_run": "テスト実行",
+        }.get(status.strip().lower(), status or "不明")
         message = (
             "🚨 MEXC 実弾注文エラー\n"
             f"銘柄: {symbol}\n"
-            f"状態: {status or 'unknown'}\n"
+            f"状態: {status_label}\n"
             f"理由: {reason[:800]}\n"
             f"緊急クローズ: {close_status}"
         )

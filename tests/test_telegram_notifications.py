@@ -45,6 +45,7 @@ class TelegramNotifierTest(unittest.TestCase):
         payload = post.call_args.kwargs["json"]
         self.assertEqual(payload["chat_id"], "987654")
         self.assertIn("BTC/USDT:USDT", payload["text"])
+        self.assertIn("方向: ショート", payload["text"])
         self.assertIn("取引所側SL/TP: 確認済み", payload["text"])
         self.assertNotIn("secret-token", payload["text"])
 

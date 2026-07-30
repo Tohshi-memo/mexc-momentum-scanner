@@ -167,8 +167,8 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           TELEGRAM_MESSAGE: >-
-            🚨 MEXC本番Workflow失敗
-            Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            🚨 MEXC本番処理が失敗
+            実行ログ: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
             MEXC画面でポジションとSL/TPを確認してください。
         run: python tools/send_telegram_alert.py
 
