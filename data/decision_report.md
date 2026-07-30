@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T16:46:34.828695+00:00
+- generated_at: 2026-07-30T16:51:45.041180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9906**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.82** / 初期 $100.00 (+10.82%)
-- 確定: 801件 (Win 261 / Loss 317 / Flat 223) / pending 4件 / skip 587件
+- 確定: 801件 (Win 261 / Loss 317 / Flat 223) / pending 4件 / skip 589件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000246 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EVAA/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $110.82
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T16:46:27.710436+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64756.4
-- Funnel: target 920 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
+- 更新: 2026-07-30T16:51:36.793907+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64761.8
+- Funnel: target 920 → liquid 186 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.5 >= 65=1, 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +6.25% | $1,690,447.96 |
-| CAP/USDT:USDT | +4.32% | $2,578,723.10 |
-| EVAA/USDT:USDT | +4.21% | $1,688,497.15 |
-| UAI/USDT:USDT | +4.08% | $25,095,965.23 |
-| UNI/USDT:USDT | +2.84% | $25,664,498.56 |
+| CAP/USDT:USDT | +8.34% | $2,688,427.04 |
+| EVAA/USDT:USDT | +7.44% | $1,764,084.99 |
+| ROBO/USDT:USDT | +5.92% | $1,696,720.89 |
+| UAI/USDT:USDT | +4.81% | $25,151,944.86 |
+| UNI/USDT:USDT | +2.72% | $25,699,729.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.33% | +4.23% |
-| EVAA/USDT:USDT | below_1h_threshold | +4.22% | +4.12% |
-| UAI/USDT:USDT | below_1h_threshold | +4.08% | +3.99% |
-| KORU/USDT:USDT | below_1h_threshold | +3.53% | +3.44% |
-| UNI/USDT:USDT | below_1h_threshold | +2.82% | +2.72% |
+| UAI/USDT:USDT | below_1h_threshold | +4.82% | +4.71% |
+| KORU/USDT:USDT | below_1h_threshold | +3.53% | +3.43% |
+| UNI/USDT:USDT | below_1h_threshold | +2.75% | +2.65% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.55% |
+| MMT/USDT:USDT | below_1h_threshold | +2.59% | +2.48% |
 
 ## 7. 次に見るべき不足
 
