@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T13:01:21.542589+00:00
+- generated_at: 2026-07-30T13:06:28.358156+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9884**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.41** / 初期 $100.00 (+21.41%)
-- 確定トレード: 172件 (TP 67 / SL 100 / EXP 5)
-- 最新: SNDKSTOCK/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.41
+- 残高: **$121.29** / 初期 $100.00 (+21.29%)
+- 確定トレード: 173件 (TP 67 / SL 101 / EXP 5)
+- 最新: SAMSUNGSTOCK/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.29
 - 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T13:01:13.847559+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64889.3
-- Funnel: target 920 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-07-30T13:06:20.518004+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64865.1
+- Funnel: target 920 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +64.25% | $2,500,264.12 |
-| ESP/USDT:USDT | +23.95% | $4,616,881.82 |
-| MMT/USDT:USDT | +22.89% | $1,561,886.51 |
-| CAP/USDT:USDT | +20.35% | $1,555,827.38 |
-| ROBO/USDT:USDT | +17.73% | $1,061,726.53 |
+| KOMA/USDT:USDT | +66.35% | $2,552,377.05 |
+| ESP/USDT:USDT | +23.30% | $4,632,696.55 |
+| MMT/USDT:USDT | +22.66% | $1,595,586.37 |
+| CAP/USDT:USDT | +21.08% | $1,582,568.39 |
+| ROBO/USDT:USDT | +18.12% | $1,063,374.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.56% | +4.56% |
-| KORU/USDT:USDT | below_1h_threshold | +4.53% | +4.53% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +3.42% | +3.43% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +3.27% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +3.15% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.56% | +4.60% |
+| KORU/USDT:USDT | below_1h_threshold | +4.53% | +4.57% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +3.42% | +3.47% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.27% | +3.31% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.15% | +3.19% |
 
 ## 7. 次に見るべき不足
 
