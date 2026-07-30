@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T14:37:38.428252+00:00
+- generated_at: 2026-07-30T14:42:27.767643+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9899**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T14:37:20.233810+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=64713.5
-- Funnel: target 920 → liquid 185 → pre 50 → checked 50 → surge 20 → strict 16
-- Surge前reject: below_1h_threshold=30, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1, 4h RSI 67.5 >= 65=1, 4h RSI 93.1 >= 65=1, 4h RSI 83.2 >= 65=1
+- 更新: 2026-07-30T14:42:11.488658+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=64814.9
+- Funnel: target 920 → liquid 185 → pre 50 → checked 50 → surge 19 → strict 16
+- Surge前reject: below_1h_threshold=31, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 83.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +74.72% | $3,495,351.79 |
-| SNXX/USDT:USDT | +45.23% | $8,179,381.81 |
-| NBISSTOCK/USDT:USDT | +28.18% | $3,794,813.65 |
-| MSFU/USDT:USDT | +27.72% | $3,226,508.71 |
-| MMT/USDT:USDT | +24.08% | $1,866,833.37 |
+| KOMA/USDT:USDT | +71.18% | $3,550,414.19 |
+| SNXX/USDT:USDT | +44.07% | $8,403,880.16 |
+| NBISSTOCK/USDT:USDT | +28.18% | $3,811,886.41 |
+| MSFU/USDT:USDT | +28.15% | $3,239,597.15 |
+| MMT/USDT:USDT | +26.50% | $1,976,024.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.65% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.54% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.42% |
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +3.93% |
-| EWY/USDT:USDT | below_1h_threshold | +3.46% | +3.90% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.50% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.39% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.26% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +3.77% |
+| EWY/USDT:USDT | below_1h_threshold | +3.46% | +3.74% |
 
 ## 7. 次に見るべき不足
 
