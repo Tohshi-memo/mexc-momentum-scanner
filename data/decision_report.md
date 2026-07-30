@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T07:06:32.613956+00:00
+- generated_at: 2026-07-30T07:11:21.823142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9867**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T07:06:21.482046+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64057.7
+- 更新: 2026-07-30T07:11:14.833412+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64034.1
 - Funnel: target 916 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +16.62% | $1,084,311.17 |
-| US/USDT:USDT | +14.82% | $1,715,262.76 |
-| RE/USDT:USDT | +14.18% | $9,070,523.75 |
-| MSFU/USDT:USDT | +12.94% | $2,824,908.48 |
-| ADVANTESTSTOCK/USDT:USDT | +10.93% | $1,300,475.82 |
+| MMT/USDT:USDT | +16.44% | $1,089,563.14 |
+| US/USDT:USDT | +14.97% | $1,757,859.93 |
+| RE/USDT:USDT | +14.27% | $9,077,866.10 |
+| MSFU/USDT:USDT | +13.23% | $2,825,612.49 |
+| ADVANTESTSTOCK/USDT:USDT | +11.06% | $1,300,747.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.09% | +1.96% |
-| COTI/USDT:USDT | below_1h_threshold | +1.44% | +1.31% |
-| ACH/USDT:USDT | below_1h_threshold | +1.30% | +1.17% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.13% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.04% |
+| UAI/USDT:USDT | below_1h_threshold | +2.49% | +2.40% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.86% | +1.77% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
+| HOLO/USDT:USDT | below_1h_threshold | +1.21% | +1.11% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.08% |
 
 ## 7. 次に見るべき不足
 
