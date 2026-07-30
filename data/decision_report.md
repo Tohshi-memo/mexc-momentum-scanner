@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T05:41:24.360764+00:00
+- generated_at: 2026-07-30T05:46:19.145647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9862**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T05:41:17.300155+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64050.1
+- 更新: 2026-07-30T05:46:13.718732+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64086.6
 - Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +15.19% | $1,408,778.38 |
-| MMT/USDT:USDT | +14.67% | $1,057,813.85 |
-| MSFU/USDT:USDT | +13.52% | $3,234,020.13 |
-| UAI/USDT:USDT | +11.86% | $17,512,703.15 |
-| ADVANTESTSTOCK/USDT:USDT | +11.23% | $1,543,259.78 |
+| US/USDT:USDT | +15.06% | $1,432,562.84 |
+| MMT/USDT:USDT | +14.85% | $1,058,463.87 |
+| MSFU/USDT:USDT | +13.43% | $3,234,349.70 |
+| ADVANTESTSTOCK/USDT:USDT | +12.16% | $1,544,172.79 |
+| RE/USDT:USDT | +11.29% | $8,840,151.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +1.94% | +1.86% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.55% | +1.47% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.50% | +1.42% |
-| BILL/USDT:USDT | below_1h_threshold | +1.16% | +1.08% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.99% | +0.91% |
+| INJ/USDT:USDT | below_1h_threshold | +1.92% | +1.78% |
+| AEON1/USDT:USDT | below_1h_threshold | +1.92% | +1.78% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.62% | +1.49% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.31% | +1.17% |
+| BILL/USDT:USDT | below_1h_threshold | +1.20% | +1.06% |
 
 ## 7. 次に見るべき不足
 
