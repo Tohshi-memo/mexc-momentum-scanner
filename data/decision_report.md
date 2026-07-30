@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T16:16:25.863982+00:00
+- generated_at: 2026-07-30T16:21:21.469517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9904**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T16:16:18.687656+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=64900.1
+- 更新: 2026-07-30T16:21:14.399530+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=64866.7
 - Funnel: target 920 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARMSTOCK/USDT:USDT | +4.78% | $1,422,660.53 |
-| ROBO/USDT:USDT | +4.00% | $1,502,988.14 |
-| KIOXIASTOCK/USDT:USDT | +2.95% | $1,283,946.09 |
-| ZHIPUSTOCK/USDT:USDT | +2.83% | $3,925,650.78 |
-| MSFU/USDT:USDT | +2.38% | $3,349,334.19 |
+| ROBO/USDT:USDT | +5.08% | $1,519,111.01 |
+| ARMSTOCK/USDT:USDT | +3.76% | $1,441,666.18 |
+| CAP/USDT:USDT | +3.06% | $2,406,208.34 |
+| ZHIPUSTOCK/USDT:USDT | +2.40% | $3,934,438.42 |
+| MSFU/USDT:USDT | +2.29% | $3,349,868.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +4.00% | +3.69% |
-| KORU/USDT:USDT | below_1h_threshold | +3.53% | +3.22% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.34% |
-| COTI/USDT:USDT | below_1h_threshold | +2.58% | +2.26% |
-| MUU/USDT:USDT | below_1h_threshold | +2.43% | +2.11% |
+| ROBO/USDT:USDT | below_relative_strength | +5.09% | +4.82% |
+| KORU/USDT:USDT | below_1h_threshold | +3.53% | +3.27% |
+| CAP/USDT:USDT | below_1h_threshold | +2.88% | +2.61% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.39% |
+| MUU/USDT:USDT | below_1h_threshold | +2.43% | +2.16% |
 
 ## 7. 次に見るべき不足
 
