@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-30T02:31:26.549930+00:00
+- generated_at: 2026-07-30T02:36:30.013531+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9850**
+- closed shadow trades: **9851**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.16% / filled 20/20。**
-- 全期間 MARKET基準: n=9850, expectancy=-0.01%
+- 全期間 MARKET基準: n=9851, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+2.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$494.05** / 初期 $100.00 (+394.05%)
-- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2892件
+- 確定: 3519件 (Win 1113 / Loss 1147 / Flat 1259) / skip 2893件
 - 成長率目線: 平均log +0.000454 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $494.05
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$136.91** / 初期 $100.00 (+36.91%)
-- 確定: 1242件 (Win 344 / Loss 283 / Flat 615) / skip 2019件
+- 確定: 1242件 (Win 344 / Loss 283 / Flat 615) / skip 2020件
 - 成長率目線: 平均log +0.000253 / 幾何平均 +0.025% per trade / maxDD +3.89%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: SOXL/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $136.91
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$109.01** / 初期 $100.00 (+9.01%)
-- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 4件 / skip 562件
+- 残高: **$109.39** / 初期 $100.00 (+9.39%)
+- 確定: 767件 (Win 247 / Loss 297 / Flat 223) / pending 4件 / skip 562件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000424 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000489 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: KORU/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $109.39
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T02:31:18.642609+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64303.9
+- 更新: 2026-07-30T02:36:20.796174+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64199.9
 - Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BANK/USDT:USDT | +19.72% | $65,848,034.20 |
-| UAI/USDT:USDT | +15.34% | $15,509,519.55 |
-| RE/USDT:USDT | +15.11% | $8,221,432.90 |
-| MSFU/USDT:USDT | +13.36% | $4,315,053.44 |
-| ADVANTESTSTOCK/USDT:USDT | +11.60% | $1,495,021.35 |
+| BANK/USDT:USDT | +20.40% | $66,189,448.77 |
+| RE/USDT:USDT | +15.65% | $8,243,402.62 |
+| UAI/USDT:USDT | +15.03% | $15,630,447.98 |
+| MSFU/USDT:USDT | +13.47% | $4,315,889.33 |
+| ADVANTESTSTOCK/USDT:USDT | +11.91% | $1,495,665.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.90% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.89% |
-| COTI/USDT:USDT | below_1h_threshold | +3.77% | +3.68% |
-| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.26% |
-| FLEXSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.82% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +5.06% |
+| FLEXSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.98% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +2.25% |
+| US/USDT:USDT | below_1h_threshold | +1.96% | +2.03% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.59% |
 
 ## 7. 次に見るべき不足
 
