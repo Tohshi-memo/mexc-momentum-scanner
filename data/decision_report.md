@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T02:01:28.230233+00:00
+- generated_at: 2026-07-30T02:06:30.549409+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9850**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T02:01:21.109426+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64289.5
-- Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-30T02:06:22.815356+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64249.9
+- Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +15.87% | $15,182,360.17 |
-| RE/USDT:USDT | +14.61% | $8,098,206.82 |
-| ADVANTESTSTOCK/USDT:USDT | +13.75% | $1,415,448.02 |
-| MSFU/USDT:USDT | +13.53% | $4,294,362.32 |
-| BANK/USDT:USDT | +13.32% | $63,925,296.28 |
+| RE/USDT:USDT | +15.18% | $8,116,103.64 |
+| UAI/USDT:USDT | +14.98% | $15,207,640.07 |
+| ADVANTESTSTOCK/USDT:USDT | +13.30% | $1,418,367.01 |
+| MSFU/USDT:USDT | +13.25% | $4,310,423.41 |
+| BANK/USDT:USDT | +12.15% | $64,317,228.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.92% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.91% |
-| DRAM/USDT:USDT | below_1h_threshold | +4.04% | +3.97% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.69% | +3.63% |
-| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.28% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.98% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.98% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.69% | +3.69% |
+| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.34% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +3.17% |
 
 ## 7. 次に見るべき不足
 
