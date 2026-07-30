@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T01:46:35.551052+00:00
+- generated_at: 2026-07-30T01:51:28.852513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9850**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T01:46:25.363566+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=64043.8
-- Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1, 4h RSI 74.2 >= 65=1
+- 更新: 2026-07-30T01:51:22.885726+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.79% price=64179.8
+- Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.7 >= 65=1
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +15.48% | $15,003,923.00 |
-| ADVANTESTSTOCK/USDT:USDT | +14.92% | $1,556,556.55 |
-| KIOXIASTOCK/USDT:USDT | +14.34% | $1,110,862.65 |
-| RE/USDT:USDT | +14.07% | $8,095,222.12 |
-| MSFU/USDT:USDT | +13.30% | $4,478,315.34 |
+| UAI/USDT:USDT | +15.34% | $15,073,766.65 |
+| RE/USDT:USDT | +14.57% | $8,137,427.37 |
+| ADVANTESTSTOCK/USDT:USDT | +14.31% | $1,560,757.28 |
+| KIOXIASTOCK/USDT:USDT | +13.51% | $1,122,146.29 |
+| MSFU/USDT:USDT | +13.38% | $4,478,587.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +4.08% | +3.50% |
-| ACH/USDT:USDT | below_1h_threshold | +4.07% | +3.49% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.52% | +2.94% |
-| AEON1/USDT:USDT | below_1h_threshold | +3.49% | +2.91% |
-| ON/USDT:USDT | below_1h_threshold | +2.82% | +2.24% |
+| COTI/USDT:USDT | below_relative_strength | +5.29% | +4.50% |
+| ACH/USDT:USDT | below_1h_threshold | +4.37% | +3.57% |
+| AEON1/USDT:USDT | below_1h_threshold | +4.34% | +3.55% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.26% | +3.46% |
+| BANK/USDT:USDT | below_1h_threshold | +4.02% | +3.22% |
 
 ## 7. 次に見るべき不足
 
