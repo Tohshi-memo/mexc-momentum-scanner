@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T00:01:17.101220+00:00
+- generated_at: 2026-07-30T00:06:25.706954+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9841**
 
@@ -39,10 +39,10 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$120.46** / 初期 $100.00 (+20.46%)
-- 確定トレード: 166件 (TP 65 / SL 96 / EXP 5)
-- 最新: MSFU/USDT:USDT SL_HIT PnL -3.27% 残高後 $120.46
-- 最新戦略メタ: tier=S, direction=short, entry=MARKET
+- 残高: **$121.66** / 初期 $100.00 (+21.66%)
+- 確定トレード: 167件 (TP 66 / SL 96 / EXP 5)
+- 最新: KIOXIASTOCK/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.66
+- 最新戦略メタ: tier=B, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$109.01** / 初期 $100.00 (+9.01%)
-- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 550件
+- 確定: 766件 (Win 246 / Loss 297 / Flat 223) / pending 0件 / skip 551件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIF/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $109.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T00:01:10.074199+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63986.9
-- Funnel: target 911 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-30T00:06:20.002666+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64000.0
+- Funnel: target 911 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.8 >= 65=1
+- データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MSFU/USDT:USDT | +14.92% | $4,733,027.59 |
-| RE/USDT:USDT | +12.31% | $7,268,645.07 |
-| LAB/USDT:USDT | +11.54% | $2,556,717.58 |
-| ON/USDT:USDT | +9.25% | $39,082,119.55 |
-| AEON1/USDT:USDT | +8.34% | $2,754,781.95 |
+| MSFU/USDT:USDT | +14.71% | $4,748,515.06 |
+| RE/USDT:USDT | +11.72% | $7,322,524.47 |
+| LAB/USDT:USDT | +11.39% | $2,560,354.68 |
+| ON/USDT:USDT | +8.84% | $39,199,965.35 |
+| AEON1/USDT:USDT | +8.25% | $2,759,316.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSFU/USDT:USDT | below_1h_threshold | +2.19% | +2.14% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.70% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.99% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.70% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.35% | +0.30% |
+| MSFU/USDT:USDT | below_1h_threshold | +2.19% | +2.12% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.56% |
+| UAI/USDT:USDT | below_1h_threshold | +1.10% | +1.03% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.96% |
+| PI/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
 
 ## 7. 次に見るべき不足
 
