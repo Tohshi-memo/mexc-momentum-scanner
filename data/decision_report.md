@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T02:16:27.246388+00:00
+- generated_at: 2026-07-30T02:21:28.022250+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9850**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T02:16:20.494058+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64291.1
-- Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.9 >= 65=1
+- 更新: 2026-07-30T02:21:20.272133+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=64343.1
+- Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +15.72% | $15,294,503.67 |
-| RE/USDT:USDT | +14.68% | $8,173,912.13 |
-| MSFU/USDT:USDT | +13.18% | $4,312,163.30 |
-| COTI/USDT:USDT | +12.63% | $19,529,218.66 |
-| ADVANTESTSTOCK/USDT:USDT | +11.55% | $1,460,912.35 |
+| RE/USDT:USDT | +14.75% | $8,189,730.25 |
+| BANK/USDT:USDT | +14.64% | $65,205,973.52 |
+| UAI/USDT:USDT | +14.28% | $15,366,612.47 |
+| MSFU/USDT:USDT | +13.33% | $4,312,509.64 |
+| ADVANTESTSTOCK/USDT:USDT | +12.13% | $1,475,014.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.92% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.91% |
-| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.28% |
-| FLEXSTOCK/USDT:USDT | below_1h_threshold | +2.91% | +2.84% |
-| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +2.18% | +2.10% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.84% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.83% |
+| COTI/USDT:USDT | below_1h_threshold | +4.55% | +4.39% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.69% | +3.54% |
+| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.20% |
 
 ## 7. 次に見るべき不足
 
