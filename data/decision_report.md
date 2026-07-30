@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T14:47:27.099331+00:00
+- generated_at: 2026-07-30T14:52:26.300962+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9899**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.20** / 初期 $100.00 (+11.20%)
-- 確定: 799件 (Win 261 / Loss 315 / Flat 223) / pending 6件 / skip 584件
+- 確定: 799件 (Win 261 / Loss 315 / Flat 223) / pending 6件 / skip 585件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000475 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SNXX/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $111.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T14:47:10.768969+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=64754.7
-- Funnel: target 920 → liquid 185 → pre 50 → checked 50 → surge 19 → strict 16
-- Surge前reject: below_1h_threshold=31, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.7 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 83.3 >= 65=1
+- 更新: 2026-07-30T14:52:09.601935+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=64777.2
+- Funnel: target 920 → liquid 185 → pre 50 → checked 50 → surge 20 → strict 16
+- Surge前reject: below_1h_threshold=30, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1, 4h RSI 67.5 >= 65=1, 4h RSI 73.9 >= 65=1, 4h RSI 82.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +72.43% | $3,616,411.18 |
-| SNXX/USDT:USDT | +43.64% | $8,573,476.29 |
-| MSFU/USDT:USDT | +28.61% | $3,245,120.65 |
-| NBISSTOCK/USDT:USDT | +27.70% | $3,833,026.21 |
-| MMT/USDT:USDT | +26.56% | $2,049,699.74 |
+| KOMA/USDT:USDT | +71.58% | $3,653,602.56 |
+| SNXX/USDT:USDT | +44.07% | $8,764,158.09 |
+| MMT/USDT:USDT | +30.59% | $2,126,863.20 |
+| MSFU/USDT:USDT | +28.09% | $3,247,518.38 |
+| NBISSTOCK/USDT:USDT | +27.36% | $3,883,860.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +4.27% | +4.64% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.59% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.48% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.35% |
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +3.87% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.55% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.44% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.32% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.65% | +3.98% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +3.83% |
 
 ## 7. 次に見るべき不足
 
