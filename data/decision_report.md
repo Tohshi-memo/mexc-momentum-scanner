@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T19:01:26.689270+00:00
+- generated_at: 2026-07-30T19:06:21.235715+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9914**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T19:01:17.737871+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64683.7
-- Funnel: target 920 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-30T19:06:14.026656+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=64738.6
+- Funnel: target 920 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +15.25% | $5,434,317.80 |
-| CAP/USDT:USDT | +14.13% | $3,692,556.22 |
-| ROBO/USDT:USDT | +13.26% | $2,342,347.79 |
-| EVAA/USDT:USDT | +9.53% | $2,570,604.88 |
-| ESP/USDT:USDT | +4.80% | $5,316,859.80 |
+| CAP/USDT:USDT | +13.66% | $3,752,917.84 |
+| ROBO/USDT:USDT | +13.17% | $2,367,849.55 |
+| MMT/USDT:USDT | +12.48% | $5,530,030.80 |
+| EVAA/USDT:USDT | +10.33% | $2,660,212.51 |
+| ESP/USDT:USDT | +5.01% | $5,337,732.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +1.61% | +1.58% |
-| PI/USDT:USDT | below_1h_threshold | +0.63% | +0.61% |
-| CMCSASTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
-| LMTSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.36% |
+| MYX/USDT:USDT | below_1h_threshold | +1.30% | +1.19% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.88% | +0.77% |
+| CMCSASTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.49% |
+| LMTSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.48% |
+| PI/USDT:USDT | below_1h_threshold | +0.55% | +0.44% |
 
 ## 7. 次に見るべき不足
 
