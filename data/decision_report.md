@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T14:17:21.009193+00:00
+- generated_at: 2026-07-30T14:22:30.257731+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9894**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T14:17:06.007238+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=64689.6
-- Funnel: target 920 → liquid 183 → pre 50 → checked 50 → surge 17 → strict 15
+- 更新: 2026-07-30T14:22:15.634558+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=64624.5
+- Funnel: target 920 → liquid 184 → pre 50 → checked 50 → surge 17 → strict 15
 - Surge前reject: below_1h_threshold=33, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1, 4h RSI 82.2 >= 65=1
+- Strict後reject: 4h RSI 83.5 >= 65=1, 4h RSI 82.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +67.27% | $3,266,973.02 |
-| SNXX/USDT:USDT | +37.28% | $7,281,703.07 |
-| MSFU/USDT:USDT | +26.30% | $3,213,226.81 |
-| NBISSTOCK/USDT:USDT | +25.09% | $3,643,317.66 |
-| MMT/USDT:USDT | +21.95% | $1,805,565.70 |
+| KOMA/USDT:USDT | +72.02% | $3,333,717.66 |
+| SNXX/USDT:USDT | +37.71% | $7,499,390.60 |
+| NBISSTOCK/USDT:USDT | +27.00% | $3,713,683.93 |
+| MSFU/USDT:USDT | +25.74% | $3,217,736.13 |
+| MMT/USDT:USDT | +22.42% | $1,811,630.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.58% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.45% |
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +3.97% |
-| EWY/USDT:USDT | below_1h_threshold | +3.46% | +3.93% |
-| TQQQ/USDT:USDT | below_1h_threshold | +3.44% | +3.91% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.79% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.11% | +4.68% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.68% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.55% |
+| EPIC/USDT:USDT | below_1h_threshold | +3.73% | +4.30% |
 
 ## 7. 次に見るべき不足
 
