@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T17:41:43.490795+00:00
+- generated_at: 2026-07-30T17:46:23.383748+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9911**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.62** / 初期 $100.00 (+10.62%)
-- 確定: 802件 (Win 261 / Loss 318 / Flat 223) / pending 3件 / skip 592件
+- 確定: 802件 (Win 261 / Loss 318 / Flat 223) / pending 3件 / skip 593件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000122 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUU/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $110.62
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T17:41:36.206256+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64864.7
-- Funnel: target 920 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-30T17:46:17.520593+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=64919.6
+- Funnel: target 920 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +13.66% | $4,210,124.23 |
-| ROBO/USDT:USDT | +11.42% | $1,951,642.98 |
-| CAP/USDT:USDT | +10.76% | $3,067,765.38 |
-| EVAA/USDT:USDT | +5.73% | $2,105,898.63 |
-| UAI/USDT:USDT | +4.43% | $23,423,847.10 |
+| MMT/USDT:USDT | +12.89% | $4,284,655.00 |
+| ROBO/USDT:USDT | +10.92% | $2,002,857.83 |
+| CAP/USDT:USDT | +10.01% | $3,097,756.84 |
+| EVAA/USDT:USDT | +5.85% | $2,110,591.03 |
+| UAI/USDT:USDT | +4.35% | $23,434,662.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.68% | +4.57% |
-| KOMA/USDT:USDT | below_1h_threshold | +3.84% | +3.72% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.86% | +2.74% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.69% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.49% | +2.37% |
+| ROBO/USDT:USDT | below_1h_threshold | +4.97% | +4.77% |
+| BTW/USDT:USDT | below_1h_threshold | +4.26% | +4.05% |
+| MMT/USDT:USDT | below_1h_threshold | +3.89% | +3.69% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.60% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.75% | +2.55% |
 
 ## 7. 次に見るべき不足
 
