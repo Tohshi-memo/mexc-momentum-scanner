@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T14:57:32.138624+00:00
+- generated_at: 2026-07-30T15:01:29.698556+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9899**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T14:57:16.373682+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=64663.7
-- Funnel: target 920 → liquid 186 → pre 50 → checked 50 → surge 21 → strict 17
-- Surge前reject: below_1h_threshold=29, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.0 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 82.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-30T15:01:22.541413+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64611.1
+- Funnel: target 920 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +71.46% | $3,694,595.07 |
-| SNXX/USDT:USDT | +40.31% | $8,843,866.68 |
-| MMT/USDT:USDT | +30.00% | $2,205,944.93 |
-| MSFU/USDT:USDT | +26.89% | $3,263,403.92 |
-| NBISSTOCK/USDT:USDT | +26.20% | $4,050,353.32 |
+| KOMA/USDT:USDT | +71.71% | $3,725,075.82 |
+| SNXX/USDT:USDT | +40.75% | $8,244,542.17 |
+| MMT/USDT:USDT | +31.30% | $2,198,637.56 |
+| MSFU/USDT:USDT | +25.24% | $3,293,517.95 |
+| NBISSTOCK/USDT:USDT | +25.12% | $3,597,168.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.62% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.49% |
-| KOMA/USDT:USDT | below_1h_threshold | +3.62% | +4.13% |
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +4.01% |
-| EWY/USDT:USDT | below_1h_threshold | +3.46% | +3.97% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.95% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.94% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.42% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.41% |
+| MUU/USDT:USDT | below_1h_threshold | +1.33% | +1.39% |
 
 ## 7. 次に見るべき不足
 
