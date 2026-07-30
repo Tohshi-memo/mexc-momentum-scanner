@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T14:42:27.767643+00:00
+- generated_at: 2026-07-30T14:47:27.099331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9899**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T14:42:11.488658+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=64814.9
+- 更新: 2026-07-30T14:47:10.768969+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=64754.7
 - Funnel: target 920 → liquid 185 → pre 50 → checked 50 → surge 19 → strict 16
 - Surge前reject: below_1h_threshold=31, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 83.2 >= 65=1
+- Strict後reject: 4h RSI 84.7 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 83.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +71.18% | $3,550,414.19 |
-| SNXX/USDT:USDT | +44.07% | $8,403,880.16 |
-| NBISSTOCK/USDT:USDT | +28.18% | $3,811,886.41 |
-| MSFU/USDT:USDT | +28.15% | $3,239,597.15 |
-| MMT/USDT:USDT | +26.50% | $1,976,024.43 |
+| KOMA/USDT:USDT | +72.43% | $3,616,411.18 |
+| SNXX/USDT:USDT | +43.64% | $8,573,476.29 |
+| MSFU/USDT:USDT | +28.61% | $3,245,120.65 |
+| NBISSTOCK/USDT:USDT | +27.70% | $3,833,026.21 |
+| MMT/USDT:USDT | +26.56% | $2,049,699.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.50% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.39% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.26% |
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +3.77% |
-| EWY/USDT:USDT | below_1h_threshold | +3.46% | +3.74% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.27% | +4.64% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +4.22% | +4.59% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.48% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.98% | +4.35% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.50% | +3.87% |
 
 ## 7. 次に見るべき不足
 
