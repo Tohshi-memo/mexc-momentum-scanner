@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T02:21:28.022250+00:00
+- generated_at: 2026-07-30T02:26:37.756527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9850**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T02:21:20.272133+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64343.1
+- 更新: 2026-07-30T02:26:30.116803+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64310.1
 - Funnel: target 911 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: funding_rate 0%, open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +14.75% | $8,189,730.25 |
-| BANK/USDT:USDT | +14.64% | $65,205,973.52 |
-| UAI/USDT:USDT | +14.28% | $15,366,612.47 |
-| MSFU/USDT:USDT | +13.33% | $4,312,509.64 |
-| ADVANTESTSTOCK/USDT:USDT | +12.13% | $1,475,014.68 |
+| BANK/USDT:USDT | +17.16% | $65,550,799.77 |
+| UAI/USDT:USDT | +16.09% | $15,493,647.70 |
+| RE/USDT:USDT | +15.56% | $8,201,943.44 |
+| MSFU/USDT:USDT | +13.31% | $4,314,791.61 |
+| ADVANTESTSTOCK/USDT:USDT | +12.31% | $1,492,047.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.84% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.83% |
-| COTI/USDT:USDT | below_1h_threshold | +4.55% | +4.39% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.69% | +3.54% |
-| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.20% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.99% | +4.89% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +4.98% | +4.88% |
+| COTI/USDT:USDT | below_1h_threshold | +4.18% | +4.08% |
+| BANK/USDT:USDT | below_1h_threshold | +3.79% | +3.69% |
+| EWY/USDT:USDT | below_1h_threshold | +3.35% | +3.25% |
 
 ## 7. 次に見るべき不足
 
