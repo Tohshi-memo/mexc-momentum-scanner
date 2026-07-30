@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T16:26:33.344034+00:00
+- generated_at: 2026-07-30T16:31:21.796733+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9905**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T16:26:24.628592+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=64838.6
-- Funnel: target 920 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-30T16:31:14.751060+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=64835.2
+- Funnel: target 920 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +5.42% | $1,556,353.29 |
-| ARMSTOCK/USDT:USDT | +3.41% | $1,446,349.40 |
-| UAI/USDT:USDT | +2.66% | $24,848,370.40 |
-| CAP/USDT:USDT | +2.59% | $2,425,736.47 |
-| ZHIPUSTOCK/USDT:USDT | +2.33% | $3,934,790.45 |
+| ROBO/USDT:USDT | +4.92% | $1,619,125.32 |
+| UAI/USDT:USDT | +3.37% | $24,940,632.54 |
+| CAP/USDT:USDT | +2.84% | $2,437,015.73 |
+| ARMSTOCK/USDT:USDT | +2.60% | $1,450,604.10 |
+| MMT/USDT:USDT | +2.36% | $2,947,451.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +3.53% | +3.31% |
-| CAP/USDT:USDT | below_1h_threshold | +2.66% | +2.44% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.43% |
-| UAI/USDT:USDT | below_1h_threshold | +2.51% | +2.29% |
-| MUU/USDT:USDT | below_1h_threshold | +2.43% | +2.20% |
+| ROBO/USDT:USDT | below_1h_threshold | +4.92% | +4.70% |
+| KORU/USDT:USDT | below_1h_threshold | +3.53% | +3.32% |
+| UAI/USDT:USDT | below_1h_threshold | +3.37% | +3.16% |
+| CAP/USDT:USDT | below_1h_threshold | +2.84% | +2.63% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.66% | +2.44% |
 
 ## 7. 次に見るべき不足
 
