@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T06:36:16.645176+00:00
+- generated_at: 2026-07-31T06:41:15.996415+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9968**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T06:36:09.428290+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64386.2
-- Funnel: target 920 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-07-31T06:41:09.039703+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64338.0
+- Funnel: target 920 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.0 >= 65=1
+- Strict後reject: 4h RSI 85.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +53.59% | $10,033,818.72 |
-| MMT/USDT:USDT | +36.76% | $11,732,469.83 |
-| AXTISTOCK/USDT:USDT | +30.35% | $4,365,553.06 |
-| BULLA/USDT:USDT | +21.23% | $1,207,006.89 |
-| AMZU/USDT:USDT | +18.10% | $1,679,235.07 |
+| KOMA/USDT:USDT | +57.56% | $10,091,915.27 |
+| MMT/USDT:USDT | +34.67% | $11,794,299.43 |
+| AXTISTOCK/USDT:USDT | +29.47% | $4,383,031.32 |
+| BULLA/USDT:USDT | +21.05% | $1,210,305.15 |
+| AMZU/USDT:USDT | +18.25% | $1,679,746.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.72% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.78% | +3.70% |
-| EUL/USDT:USDT | below_1h_threshold | +3.61% | +3.53% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.22% | +3.14% |
-| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.07% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.00% | +3.99% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.79% |
+| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.15% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +3.01% |
+| CAP/USDT:USDT | below_1h_threshold | +2.80% | +2.80% |
 
 ## 7. 次に見るべき不足
 
