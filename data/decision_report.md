@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T17:51:28.657845+00:00
+- generated_at: 2026-07-31T17:56:25.772655+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10021**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T17:51:20.151904+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=63116.2
-- Funnel: target 921 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1, 4h RSI 68.6 >= 65=1, 4h RSI 70.8 >= 65=1
+- 更新: 2026-07-31T17:56:17.967762+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.60% price=63224.0
+- Funnel: target 921 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 69.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +8.99% | $15,387,925.59 |
-| OUSTSTOCK/USDT:USDT | +7.65% | $2,201,529.70 |
-| SNXX/USDT:USDT | +7.41% | $17,584,610.77 |
-| SYN/USDT:USDT | +6.64% | $2,894,352.11 |
-| GIGGLE/USDT:USDT | +6.62% | $13,150,123.84 |
+| KOMA/USDT:USDT | +9.56% | $15,418,658.05 |
+| GIGGLE/USDT:USDT | +8.14% | $13,245,009.70 |
+| OUSTSTOCK/USDT:USDT | +7.95% | $2,202,600.27 |
+| SNXX/USDT:USDT | +7.20% | $17,700,584.99 |
+| SYN/USDT:USDT | +6.64% | $2,902,815.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.17% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +2.75% |
-| ORDI/USDT:USDT | below_1h_threshold | +3.11% | +2.69% |
-| KORU/USDT:USDT | below_1h_threshold | +2.72% | +2.29% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.61% | +2.18% |
+| CAP/USDT:USDT | below_relative_strength | +5.51% | +4.91% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.00% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.23% | +2.63% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +2.58% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.02% | +2.43% |
 
 ## 7. 次に見るべき不足
 
