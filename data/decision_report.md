@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T00:36:17.379534+00:00
+- generated_at: 2026-07-31T00:41:15.854218+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9941**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.57** / 初期 $100.00 (+10.57%)
-- 確定: 805件 (Win 262 / Loss 320 / Flat 223) / pending 0件 / skip 608件
+- 確定: 805件 (Win 262 / Loss 320 / Flat 223) / pending 0件 / skip 609件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000678 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ARMSTOCK/USDT:USDT `MARKET` EXPIRED account -0.04% 残高後 $110.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T00:36:11.656162+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64743.5
+- 更新: 2026-07-31T00:41:10.150848+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64747.1
 - Funnel: target 920 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +30.91% | $3,446,674.04 |
-| ROBO/USDT:USDT | +19.34% | $3,517,640.28 |
-| SNXX/USDT:USDT | +19.10% | $11,018,109.28 |
-| ADVANTESTSTOCK/USDT:USDT | +17.32% | $1,806,776.85 |
-| MVLL/USDT:USDT | +16.48% | $1,074,560.16 |
+| AXTISTOCK/USDT:USDT | +30.79% | $3,470,351.46 |
+| ROBO/USDT:USDT | +20.85% | $3,561,340.79 |
+| SNXX/USDT:USDT | +18.10% | $11,062,793.49 |
+| MVLL/USDT:USDT | +16.58% | $1,075,895.35 |
+| MMT/USDT:USDT | +16.43% | $8,751,645.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.25% | +3.26% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.61% | +2.62% |
+| LA/USDT:USDT | below_1h_threshold | +4.92% | +4.92% |
+| AEON1/USDT:USDT | below_1h_threshold | +4.29% | +4.29% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.06% | +3.06% |
 | LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.29% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.49% | +1.50% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
 
 ## 7. 次に見るべき不足
 
