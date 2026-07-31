@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T06:11:18.348497+00:00
+- generated_at: 2026-07-31T06:16:28.818229+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9968**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T06:11:11.204959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64357.4
-- Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-31T06:16:21.710920+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64352.9
+- Funnel: target 920 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +53.70% | $9,700,214.29 |
-| MMT/USDT:USDT | +35.17% | $11,513,175.33 |
-| AXTISTOCK/USDT:USDT | +33.61% | $4,303,394.84 |
-| SNXX/USDT:USDT | +23.20% | $12,648,738.76 |
-| BULLA/USDT:USDT | +20.98% | $1,174,032.30 |
+| KOMA/USDT:USDT | +52.56% | $9,778,039.06 |
+| MMT/USDT:USDT | +33.63% | $11,581,104.50 |
+| AXTISTOCK/USDT:USDT | +33.52% | $4,305,391.66 |
+| SNXX/USDT:USDT | +23.90% | $12,672,135.42 |
+| BULLA/USDT:USDT | +20.91% | $1,178,290.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.76% |
-| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.12% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.04% | +3.00% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +2.98% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.40% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.77% |
+| CAP/USDT:USDT | below_1h_threshold | +3.27% | +3.25% |
+| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.13% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +2.99% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.41% |
 
 ## 7. 次に見るべき不足
 
