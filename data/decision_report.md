@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T16:26:27.294535+00:00
+- generated_at: 2026-07-31T16:31:25.997663+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10017**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.49** / 初期 $100.00 (+11.49%)
-- 確定: 847件 (Win 274 / Loss 335 / Flat 238) / pending 6件 / skip 638件
+- 確定: 847件 (Win 274 / Loss 335 / Flat 238) / pending 6件 / skip 639件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000173 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTW/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $111.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T16:26:20.128139+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=62825.4
-- Funnel: target 921 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-31T16:31:20.010314+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=62891.2
+- Funnel: target 921 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +4.55% | $15,201,429.79 |
-| PUMPFUN/USDT:USDT | +3.57% | $40,953,218.91 |
-| BANK/USDT:USDT | +3.39% | $48,191,630.74 |
-| AIO/USDT:USDT | +3.03% | $1,241,026.37 |
-| ESPORTS/USDT:USDT | +2.39% | $4,463,041.11 |
+| BANK/USDT:USDT | +5.32% | $48,270,430.73 |
+| AKE/USDT:USDT | +5.25% | $15,283,713.91 |
+| KAITO/USDT:USDT | +4.06% | $4,993,771.82 |
+| SNXX/USDT:USDT | +3.38% | $17,976,041.36 |
+| AIO/USDT:USDT | +3.22% | $1,243,800.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.56% | +4.35% |
-| MSFU/USDT:USDT | below_1h_threshold | +4.52% | +4.31% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.53% | +3.32% |
-| BANK/USDT:USDT | below_1h_threshold | +3.39% | +3.18% |
-| AIO/USDT:USDT | below_1h_threshold | +3.04% | +2.83% |
+| AKE/USDT:USDT | below_relative_strength | +5.25% | +4.94% |
+| KAITO/USDT:USDT | below_1h_threshold | +4.10% | +3.79% |
+| AIO/USDT:USDT | below_1h_threshold | +3.23% | +2.91% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.04% | +2.73% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.67% | +2.36% |
 
 ## 7. 次に見るべき不足
 
