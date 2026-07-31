@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-30T23:56:17.679923+00:00
+- generated_at: 2026-07-31T00:01:21.898688+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9940**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-30T23:56:10.728147+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=64766.1
-- Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-31T00:01:14.853160+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64775.0
+- Funnel: target 920 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +29.33% | $3,096,001.51 |
-| ROBO/USDT:USDT | +18.93% | $3,363,261.35 |
-| AMZU/USDT:USDT | +16.52% | $2,366,831.93 |
-| SNXX/USDT:USDT | +16.50% | $10,865,719.23 |
-| MMT/USDT:USDT | +15.43% | $8,663,088.66 |
+| AXTISTOCK/USDT:USDT | +28.11% | $3,152,986.96 |
+| ROBO/USDT:USDT | +19.59% | $3,350,522.65 |
+| AMZU/USDT:USDT | +17.46% | $1,984,325.25 |
+| MMT/USDT:USDT | +15.66% | $8,571,946.80 |
+| SNXX/USDT:USDT | +15.20% | $10,693,239.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +4.32% | +4.41% |
-| KORU/USDT:USDT | below_1h_threshold | +2.81% | +2.91% |
-| AKE/USDT:USDT | below_1h_threshold | +2.32% | +2.41% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.12% | +2.22% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.13% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.24% |
+| LA/USDT:USDT | below_1h_threshold | +2.22% | +2.19% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.49% | +1.45% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.34% |
 
 ## 7. 次に見るべき不足
 
