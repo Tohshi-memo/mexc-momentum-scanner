@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T06:31:19.019973+00:00
+- generated_at: 2026-07-31T06:36:16.645176+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9968**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T06:31:13.228952+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64416.1
+- 更新: 2026-07-31T06:36:09.428290+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64386.2
 - Funnel: target 920 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1
+- Strict後reject: 4h RSI 85.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +51.51% | $9,977,661.15 |
-| MMT/USDT:USDT | +37.08% | $11,685,864.19 |
-| AXTISTOCK/USDT:USDT | +32.32% | $4,334,523.00 |
-| SNXX/USDT:USDT | +22.10% | $12,799,944.27 |
-| BULLA/USDT:USDT | +21.13% | $1,201,291.66 |
+| KOMA/USDT:USDT | +53.59% | $10,033,818.72 |
+| MMT/USDT:USDT | +36.76% | $11,732,469.83 |
+| AXTISTOCK/USDT:USDT | +30.35% | $4,365,553.06 |
+| BULLA/USDT:USDT | +21.23% | $1,207,006.89 |
+| AMZU/USDT:USDT | +18.10% | $1,679,235.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.67% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.48% | +3.35% |
-| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.03% |
-| CAP/USDT:USDT | below_1h_threshold | +3.11% | +2.98% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +2.89% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.72% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.78% | +3.70% |
+| EUL/USDT:USDT | below_1h_threshold | +3.61% | +3.53% |
+| KAITO/USDT:USDT | below_1h_threshold | +3.22% | +3.14% |
+| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.07% |
 
 ## 7. 次に見るべき不足
 
