@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T07:16:21.020343+00:00
+- generated_at: 2026-07-31T07:21:28.467124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9971**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.37** / 初期 $100.00 (+10.37%)
-- 確定: 808件 (Win 262 / Loss 321 / Flat 225) / pending 5件 / skip 634件
+- 確定: 808件 (Win 262 / Loss 321 / Flat 225) / pending 6件 / skip 634件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000467 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GIGGLE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $110.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T07:16:13.816512+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=64017.0
-- Funnel: target 920 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-31T07:21:21.183101+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=64033.6
+- Funnel: target 920 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +59.00% | $10,231,109.40 |
-| MMT/USDT:USDT | +34.90% | $12,042,975.87 |
-| AXTISTOCK/USDT:USDT | +31.28% | $4,529,281.80 |
-| BULLA/USDT:USDT | +27.91% | $1,212,786.85 |
-| GIGGLE/USDT:USDT | +24.70% | $2,192,860.04 |
+| KOMA/USDT:USDT | +55.91% | $10,304,813.16 |
+| MMT/USDT:USDT | +33.22% | $12,071,498.57 |
+| AXTISTOCK/USDT:USDT | +31.77% | $4,531,748.08 |
+| BULLA/USDT:USDT | +27.66% | $1,223,466.71 |
+| GIGGLE/USDT:USDT | +26.00% | $2,264,090.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +4.14% | +4.44% |
-| KOMA/USDT:USDT | below_1h_threshold | +2.44% | +2.73% |
-| CAP/USDT:USDT | below_1h_threshold | +2.12% | +2.42% |
-| US/USDT:USDT | below_1h_threshold | +1.30% | +1.60% |
-| SAND/USDT:USDT | below_1h_threshold | +1.18% | +1.47% |
+| US/USDT:USDT | below_1h_threshold | +2.12% | +2.39% |
+| CAP/USDT:USDT | below_1h_threshold | +2.04% | +2.31% |
+| SAND/USDT:USDT | below_1h_threshold | +1.08% | +1.35% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.99% | +1.26% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +1.12% |
 
 ## 7. 次に見るべき不足
 
