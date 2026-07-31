@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T10:51:20.487316+00:00
+- generated_at: 2026-07-31T10:56:31.669520+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9991**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.51** / 初期 $100.00 (+11.51%)
-- 確定: 824件 (Win 269 / Loss 327 / Flat 228) / pending 6件 / skip 634件
+- 確定: 824件 (Win 269 / Loss 327 / Flat 228) / pending 6件 / skip 635件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000366 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MMT/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $111.51
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T10:51:11.354209+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=63859.9
-- Funnel: target 921 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 88.1 >= 65=1
+- 更新: 2026-07-31T10:56:23.237499+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=63914.1
+- Funnel: target 921 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.4 >= 65=1, 4h RSI 89.1 >= 65=1, 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +67.82% | $12,684,472.46 |
-| MMT/USDT:USDT | +56.51% | $18,976,487.58 |
-| AXTISTOCK/USDT:USDT | +34.87% | $5,297,747.98 |
-| GIGGLE/USDT:USDT | +31.44% | $9,349,521.58 |
-| AMZU/USDT:USDT | +22.33% | $1,669,199.57 |
+| KOMA/USDT:USDT | +68.07% | $12,757,415.23 |
+| MMT/USDT:USDT | +57.14% | $19,478,972.08 |
+| AXTISTOCK/USDT:USDT | +34.76% | $5,312,345.66 |
+| GIGGLE/USDT:USDT | +32.70% | $9,440,161.24 |
+| BULLA/USDT:USDT | +22.15% | $1,631,342.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +4.99% | +4.72% |
-| KOMA/USDT:USDT | below_1h_threshold | +3.96% | +3.69% |
-| UB/USDT:USDT | below_1h_threshold | +3.21% | +2.94% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.59% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.69% | +1.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.67% | +4.32% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.22% | +3.87% |
+| UB/USDT:USDT | below_1h_threshold | +3.33% | +2.98% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.27% | +1.92% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.51% |
 
 ## 7. 次に見るべき不足
 
