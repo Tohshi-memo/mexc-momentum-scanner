@@ -67,6 +67,7 @@ from utils.display import (
     print_tracking_status,
 )
 from utils.mexc_client import MEXCClient
+from utils.live_alerts import notify_guard_transition
 from utils.notifier import Notifier
 
 
@@ -196,6 +197,22 @@ def run_once(
             "Circuit breaker active: recent_losses=%d/%d threshold=%d. "
             "Skipping all entries this cycle.",
             summary.recent_losses, cb_window, cb_loss_threshold,
+        )
+    if not dry_run:
+        notify_guard_transition(
+            notifier,
+            guard_key="circuit_breaker",
+            guard_name="サーキットブレーカー",
+            active=circuit_open,
+            reason=(
+                f"直近{cb_window}件中{summary.recent_losses}件が損切り。"
+                f"発動基準は{cb_loss_threshold}件以上です。"
+            ),
+            impact=(
+                "新規の実弾注文は送信されません。"
+                if circuit_open
+                else "次回以降、安全条件をすべて通過したシグナルは注文候補になります。"
+            ),
         )
 
     # ── Step 1: BTC ステータス確認 ────────────────────────────────────
@@ -393,6 +410,18 @@ def run_once(
                 recent_short_edge_pct=None,
             )
             if live_plan.direction != DIR_SHORT:
+                if not dry_run:
+                    notify_guard_transition(
+                        notifier,
+                        guard_key="strategy_gate",
+                        guard_name="期待値・戦略ゲート",
+                        active=True,
+                        reason=(
+                            f"{result.symbol} の正式シグナルを見送り。"
+                            f"判定理由: {', '.join(live_plan.reasons) or '不明'}"
+                        ),
+                        impact="このシグナルでは実弾注文を送信しません。",
+                    )
                 try_record(
                     record_live_decision_event,
                     result,
@@ -417,6 +446,16 @@ def run_once(
                     result.symbol, live_plan.direction, live_plan.reasons,
                 )
                 continue
+
+            if not dry_run:
+                notify_guard_transition(
+                    notifier,
+                    guard_key="strategy_gate",
+                    guard_name="期待値・戦略ゲート",
+                    active=False,
+                    reason="MARKETショートの期待値・データ品質条件を通過しました。",
+                    impact="他の安全条件も通過すれば実弾注文を送信できます。",
+                )
 
             logger.info(
                 "Live plan %s: %s",

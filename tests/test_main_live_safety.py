@@ -229,6 +229,11 @@ class RunOnceLiveAbortTest(unittest.TestCase):
             patch.object(main.console, "print"),
             patch.object(
                 main,
+                "notify_guard_transition",
+                return_value=False,
+            ),
+            patch.object(
+                main,
                 "append_confirmed_live_execution",
                 return_value={},
             ),

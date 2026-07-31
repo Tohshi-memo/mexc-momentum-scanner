@@ -242,6 +242,30 @@ class Notifier:
         message += "\nMEXC画面でポジションとSL/TPを確認してください。"
         return self._send_telegram(message)
 
+    def notify_live_guard_status(
+        self,
+        *,
+        guard_name: str,
+        active: bool,
+        reason: str,
+        impact: str,
+    ) -> bool:
+        """Notify when an important live-trading guard changes state."""
+        if active:
+            title = "🚨 MEXC実弾売買を安全停止"
+            state = "発動中"
+        else:
+            title = "✅ MEXC実弾売買の安全停止を解除"
+            state = "解除"
+        message = (
+            f"{title}\n"
+            f"安全装置: {guard_name}\n"
+            f"状態: {state}\n"
+            f"理由: {reason[:1000]}\n"
+            f"影響: {impact[:1000]}"
+        )
+        return self._send_telegram(message)
+
     def notify_api_health(
         self,
         *,

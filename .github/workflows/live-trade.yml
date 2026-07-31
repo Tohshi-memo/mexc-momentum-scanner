@@ -52,6 +52,8 @@ jobs:
       TD_BASE_URL: 'https://leatherwallet.sakura.ne.jp/trading-ingest'
       TD_REPO: 'mexc-momentum-scanner'
       TD_OUTBOX_FILE: 'data/trading_data_outbox.jsonl'
+      # Persist guard notification state so scheduled one-shot runs do not spam.
+      LIVE_ALERT_STATE_FILE: 'data/live_alert_state.json'
 
       # Fail small while proving the live path.
       LIVE_MAX_ORDERS_PER_RUN: '1'
@@ -199,15 +201,19 @@ jobs:
             mkdir -p .outbox-persist/data
             cp data/trading_data_outbox.jsonl .outbox-persist/data/trading_data_outbox.jsonl
           fi
+          if [ -f data/live_alert_state.json ]; then
+            mkdir -p .outbox-persist/data
+            cp data/live_alert_state.json .outbox-persist/data/live_alert_state.json
+          fi
           cd .outbox-persist
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add --force data/trading_data_outbox.jsonl 2>/dev/null || true
+          git add --force data/trading_data_outbox.jsonl data/live_alert_state.json 2>/dev/null || true
           if git diff --staged --quiet; then
             echo "No audit outbox change to persist."
             exit 0
           fi
-          git commit -m "chore: persist trading-data outbox [skip ci]"
+          git commit -m "chore: persist live runtime state [skip ci]"
           for attempt in 1 2 3; do
             if git fetch --depth=50 origin "${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}" && \
                git rebase "origin/${GITHUB_REF_NAME}" && \
@@ -228,4 +234,5 @@ jobs:
           path: |
             logs/
             data/trading_data_outbox.jsonl
+            data/live_alert_state.json
           retention-days: 14

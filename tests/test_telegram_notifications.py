@@ -66,6 +66,34 @@ class TelegramNotifierTest(unittest.TestCase):
             self.assertFalse(notifier.send_telegram_message("test"))
         post.assert_not_called()
 
+    def test_live_guard_message_is_japanese_and_actionable(self) -> None:
+        response = Mock(status_code=200)
+        response.json.return_value = {"ok": True, "result": {}}
+        with (
+            patch.dict(
+                os.environ,
+                {
+                    "TELEGRAM_BOT_TOKEN": "123:secret-token",
+                    "TELEGRAM_CHAT_ID": "987654",
+                },
+                clear=False,
+            ),
+            patch("utils.notifier.requests.post", return_value=response) as post,
+        ):
+            sent = Notifier().notify_live_guard_status(
+                guard_name="サーキットブレーカー",
+                active=True,
+                reason="直近10件中8件が損切り",
+                impact="新規の実弾注文は送信されません。",
+            )
+
+        self.assertTrue(sent)
+        message = post.call_args.kwargs["json"]["text"]
+        self.assertIn("MEXC実弾売買を安全停止", message)
+        self.assertIn("サーキットブレーカー", message)
+        self.assertIn("新規の実弾注文は送信されません", message)
+        self.assertNotIn("secret-token", message)
+
 
 class _HealthyExchange:
     def load_markets(self):
