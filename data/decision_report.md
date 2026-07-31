@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T04:51:26.412601+00:00
+- generated_at: 2026-07-31T04:56:19.959127+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9960**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T04:51:17.657425+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64268.1
+- 更新: 2026-07-31T04:56:12.717387+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64302.2
 - Funnel: target 920 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 96.7 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +53.02% | $8,583,057.65 |
-| MMT/USDT:USDT | +34.36% | $10,771,227.43 |
-| AXTISTOCK/USDT:USDT | +31.68% | $4,059,028.59 |
-| RLC/USDT:USDT | +20.35% | $1,255,157.43 |
-| SNXX/USDT:USDT | +20.00% | $12,291,079.65 |
+| KOMA/USDT:USDT | +53.51% | $8,654,100.28 |
+| MMT/USDT:USDT | +34.67% | $10,784,620.99 |
+| AXTISTOCK/USDT:USDT | +31.55% | $4,076,592.00 |
+| RLC/USDT:USDT | +22.01% | $1,269,611.87 |
+| SNXX/USDT:USDT | +20.00% | $12,298,251.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.50% | +4.62% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.60% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.67% | +2.79% |
-| MMT/USDT:USDT | below_1h_threshold | +2.32% | +2.43% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.29% | +2.41% |
+| UB/USDT:USDT | below_1h_threshold | +4.53% | +4.59% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.54% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.95% | +3.02% |
+| MMT/USDT:USDT | below_1h_threshold | +2.59% | +2.66% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.46% | +2.52% |
 
 ## 7. 次に見るべき不足
 
