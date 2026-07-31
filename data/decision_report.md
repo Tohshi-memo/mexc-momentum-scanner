@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T00:06:17.892860+00:00
+- generated_at: 2026-07-31T00:11:18.403099+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9941**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T00:06:11.133329+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64853.2
+- 更新: 2026-07-31T00:11:11.324025+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64743.8
 - Funnel: target 920 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +28.65% | $3,201,738.10 |
-| SNXX/USDT:USDT | +21.60% | $10,810,307.30 |
-| ROBO/USDT:USDT | +17.93% | $3,390,561.47 |
-| AMZU/USDT:USDT | +15.99% | $1,986,221.73 |
-| MMT/USDT:USDT | +15.79% | $8,582,567.63 |
+| AXTISTOCK/USDT:USDT | +28.09% | $3,355,602.77 |
+| SNXX/USDT:USDT | +18.60% | $10,850,579.68 |
+| ROBO/USDT:USDT | +18.26% | $3,407,474.88 |
+| AMZU/USDT:USDT | +15.97% | $1,986,727.30 |
+| MMT/USDT:USDT | +15.25% | $8,626,610.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.25% | +3.09% |
-| LA/USDT:USDT | below_1h_threshold | +2.83% | +2.67% |
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.12% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.63% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.49% | +1.33% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.39% | +3.40% |
+| LA/USDT:USDT | below_1h_threshold | +3.00% | +3.01% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.29% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.49% | +1.50% |
 
 ## 7. 次に見るべき不足
 
