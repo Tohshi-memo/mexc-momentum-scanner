@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T10:06:19.330603+00:00
+- generated_at: 2026-07-31T10:11:20.091269+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9985**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T10:06:12.220485+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63623.1
+- 更新: 2026-07-31T10:11:13.150884+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63687.0
 - Funnel: target 921 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +58.89% | $12,010,237.91 |
-| MMT/USDT:USDT | +43.89% | $13,787,936.02 |
-| GIGGLE/USDT:USDT | +33.93% | $8,157,806.03 |
-| AXTISTOCK/USDT:USDT | +33.03% | $4,970,414.68 |
-| AMZU/USDT:USDT | +22.69% | $1,640,862.27 |
+| KOMA/USDT:USDT | +61.59% | $12,060,431.86 |
+| MMT/USDT:USDT | +46.89% | $13,932,095.31 |
+| GIGGLE/USDT:USDT | +34.96% | $8,307,549.29 |
+| AXTISTOCK/USDT:USDT | +33.39% | $5,011,558.87 |
+| AMZU/USDT:USDT | +22.91% | $1,648,302.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_1h_threshold | +2.23% | +2.33% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.81% | +1.91% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +0.93% | +1.03% |
-| AMZU/USDT:USDT | below_1h_threshold | +0.79% | +0.89% |
-| US/USDT:USDT | below_1h_threshold | +0.58% | +0.69% |
+| GRVT/USDT:USDT | below_1h_threshold | +2.93% | +2.94% |
+| COTI/USDT:USDT | below_1h_threshold | +2.81% | +2.81% |
+| ROBO/USDT:USDT | below_1h_threshold | +1.56% | +1.57% |
+| CAP/USDT:USDT | below_1h_threshold | +1.52% | +1.53% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.44% | +1.44% |
 
 ## 7. 次に見るべき不足
 
