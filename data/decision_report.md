@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T17:01:18.177915+00:00
+- generated_at: 2026-07-31T17:06:21.157752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10018**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T17:01:11.099127+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=62837.5
-- Funnel: target 921 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.1 >= 65=1
+- 更新: 2026-07-31T17:06:13.821969+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62856.4
+- Funnel: target 921 → liquid 171 → pre 50 → checked 49 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- Strict後reject: 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +6.96% | $15,017,974.53 |
-| AXTISTOCK/USDT:USDT | +6.36% | $11,091,211.58 |
-| AKE/USDT:USDT | +6.07% | $14,973,074.09 |
-| SYN/USDT:USDT | +5.63% | $2,720,620.72 |
-| ESPORTS/USDT:USDT | +5.23% | $4,424,342.67 |
+| AXTISTOCK/USDT:USDT | +6.36% | $11,138,547.00 |
+| AKE/USDT:USDT | +5.87% | $15,005,674.38 |
+| SYN/USDT:USDT | +5.84% | $2,754,419.18 |
+| ESPORTS/USDT:USDT | +5.62% | $4,436,089.91 |
+| AEON1/USDT:USDT | +5.27% | $1,122,387.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.61% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +3.20% |
-| KORU/USDT:USDT | below_1h_threshold | +2.72% | +2.74% |
-| MUU/USDT:USDT | below_1h_threshold | +2.55% | +2.57% |
-| IRENSTOCK/USDT:USDT | below_1h_threshold | +2.40% | +2.42% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.58% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +3.17% |
+| KORU/USDT:USDT | below_1h_threshold | +2.72% | +2.71% |
+| MUU/USDT:USDT | below_1h_threshold | +2.55% | +2.54% |
+| BTW/USDT:USDT | below_1h_threshold | +2.44% | +2.43% |
 
 ## 7. 次に見るべき不足
 
