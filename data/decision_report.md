@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T19:56:27.819095+00:00
+- generated_at: 2026-07-31T20:01:26.777946+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10027**
 
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.46** / 初期 $100.00 (+12.46%)
-- 確定: 853件 (Win 278 / Loss 336 / Flat 239) / pending 6件 / skip 644件
+- 確定: 853件 (Win 278 / Loss 336 / Flat 239) / pending 6件 / skip 645件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000367 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T19:56:20.582556+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=62982.0
-- Funnel: target 921 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-31T20:01:19.294151+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62948.4
+- Funnel: target 921 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +34.15% | $1,105,978.72 |
-| GIGGLE/USDT:USDT | +15.42% | $16,210,409.90 |
-| KOMA/USDT:USDT | +14.91% | $15,705,598.51 |
-| AKE/USDT:USDT | +10.86% | $16,176,796.83 |
-| US/USDT:USDT | +10.15% | $1,647,572.90 |
+| JIMOTHY/USDT:USDT | +33.67% | $1,090,297.69 |
+| GIGGLE/USDT:USDT | +16.86% | $16,278,640.01 |
+| KOMA/USDT:USDT | +14.95% | $15,533,259.83 |
+| BANK/USDT:USDT | +11.73% | $37,571,984.03 |
+| AKE/USDT:USDT | +11.52% | $15,786,027.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.92% | +5.05% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +4.39% | +4.52% |
-| US/USDT:USDT | below_1h_threshold | +3.88% | +4.01% |
-| KOMA/USDT:USDT | below_1h_threshold | +2.32% | +2.46% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.86% | +1.99% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.65% | +3.65% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +1.96% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.97% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
 
 ## 7. 次に見るべき不足
 
