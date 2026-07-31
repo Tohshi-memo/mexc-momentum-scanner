@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T09:46:18.777652+00:00
+- generated_at: 2026-07-31T09:51:30.709935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9984**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.93** / 初期 $100.00 (+10.93%)
-- 確定: 817件 (Win 266 / Loss 325 / Flat 226) / pending 4件 / skip 634件
+- 確定: 817件 (Win 266 / Loss 325 / Flat 226) / pending 5件 / skip 634件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000315 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $110.93
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T09:46:11.066231+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=63670.5
-- Funnel: target 921 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-07-31T09:51:24.397451+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63719.9
+- Funnel: target 921 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.6 >= 65=1
+- Strict後reject: 4h RSI 89.9 >= 65=1, 4h RSI 87.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +58.73% | $11,983,150.47 |
-| MMT/USDT:USDT | +42.48% | $13,429,588.19 |
-| AXTISTOCK/USDT:USDT | +32.70% | $4,943,230.53 |
-| GIGGLE/USDT:USDT | +27.16% | $7,444,318.31 |
-| AMZU/USDT:USDT | +21.61% | $1,621,693.07 |
+| KOMA/USDT:USDT | +58.37% | $12,026,888.93 |
+| MMT/USDT:USDT | +44.16% | $13,545,525.17 |
+| AXTISTOCK/USDT:USDT | +32.72% | $4,956,600.37 |
+| GIGGLE/USDT:USDT | +30.72% | $7,577,690.65 |
+| BULLA/USDT:USDT | +22.01% | $1,523,823.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.60% | +4.80% |
-| COTI/USDT:USDT | below_1h_threshold | +4.03% | +4.24% |
-| AMZU/USDT:USDT | below_1h_threshold | +3.12% | +3.33% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.10% | +3.31% |
-| RLC/USDT:USDT | below_1h_threshold | +2.70% | +2.90% |
+| COTI/USDT:USDT | below_1h_threshold | +3.14% | +3.27% |
+| AMZU/USDT:USDT | below_1h_threshold | +3.12% | +3.25% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.10% | +3.23% |
+| RLC/USDT:USDT | below_1h_threshold | +2.99% | +3.12% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.82% | +2.95% |
 
 ## 7. 次に見るべき不足
 
