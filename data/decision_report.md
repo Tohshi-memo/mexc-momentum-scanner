@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T06:51:27.848789+00:00
+- generated_at: 2026-07-31T06:56:35.360216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9970**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.37** / 初期 $100.00 (+10.37%)
-- 確定: 807件 (Win 262 / Loss 321 / Flat 224) / pending 4件 / skip 634件
+- 確定: 807件 (Win 262 / Loss 321 / Flat 224) / pending 6件 / skip 634件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000471 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GIGGLE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $110.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T06:51:17.681810+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64224.4
-- Funnel: target 920 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
+- 更新: 2026-07-31T06:56:26.550954+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=64231.1
+- Funnel: target 920 → liquid 176 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.3 >= 65=1, 4h RSI 74.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +53.66% | $10,173,955.66 |
-| MMT/USDT:USDT | +36.08% | $11,863,002.98 |
-| AXTISTOCK/USDT:USDT | +30.13% | $4,453,643.13 |
-| BULLA/USDT:USDT | +23.90% | $1,243,702.99 |
-| GIGGLE/USDT:USDT | +18.13% | $1,855,949.53 |
+| KOMA/USDT:USDT | +53.64% | $10,201,341.04 |
+| MMT/USDT:USDT | +35.81% | $11,874,393.20 |
+| AXTISTOCK/USDT:USDT | +30.60% | $4,476,731.20 |
+| BULLA/USDT:USDT | +26.75% | $1,270,916.07 |
+| GIGGLE/USDT:USDT | +18.02% | $1,900,213.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.37% | +4.54% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.97% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.17% | +3.34% |
-| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.33% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +3.19% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.86% | +4.02% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.96% |
+| UB/USDT:USDT | below_1h_threshold | +3.30% | +3.46% |
+| KORU/USDT:USDT | below_1h_threshold | +3.16% | +3.32% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +3.18% |
 
 ## 7. 次に見るべき不足
 
