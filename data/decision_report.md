@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T00:41:15.854218+00:00
+- generated_at: 2026-07-31T00:46:21.031484+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9941**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T00:41:10.150848+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64747.1
+- 更新: 2026-07-31T00:46:14.388501+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64769.0
 - Funnel: target 920 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +30.79% | $3,470,351.46 |
-| ROBO/USDT:USDT | +20.85% | $3,561,340.79 |
-| SNXX/USDT:USDT | +18.10% | $11,062,793.49 |
-| MVLL/USDT:USDT | +16.58% | $1,075,895.35 |
-| MMT/USDT:USDT | +16.43% | $8,751,645.12 |
+| AXTISTOCK/USDT:USDT | +31.04% | $3,480,264.15 |
+| ROBO/USDT:USDT | +21.18% | $3,592,526.43 |
+| MMT/USDT:USDT | +18.83% | $8,829,374.74 |
+| AMZU/USDT:USDT | +18.43% | $2,003,041.24 |
+| SNXX/USDT:USDT | +17.30% | $11,106,085.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LA/USDT:USDT | below_1h_threshold | +4.92% | +4.92% |
-| AEON1/USDT:USDT | below_1h_threshold | +4.29% | +4.29% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.06% | +3.06% |
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.29% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
+| LA/USDT:USDT | below_1h_threshold | +4.45% | +4.42% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.83% | +3.80% |
+| AEON1/USDT:USDT | below_1h_threshold | +3.08% | +3.05% |
+| MMT/USDT:USDT | below_1h_threshold | +2.63% | +2.60% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.25% |
 
 ## 7. 次に見るべき不足
 
