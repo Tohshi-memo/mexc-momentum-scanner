@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T08:06:14.375039+00:00
+- generated_at: 2026-07-31T08:11:24.207392+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9976**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T08:06:07.239451+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63903.4
-- Funnel: target 920 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-31T08:11:17.125733+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63851.7
+- Funnel: target 920 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +64.98% | $10,776,937.69 |
-| GIGGLE/USDT:USDT | +45.94% | $4,224,436.90 |
-| MMT/USDT:USDT | +34.40% | $12,302,733.42 |
-| BULLA/USDT:USDT | +30.19% | $1,308,245.15 |
-| AXTISTOCK/USDT:USDT | +30.06% | $4,663,741.34 |
+| KOMA/USDT:USDT | +60.08% | $10,860,074.28 |
+| GIGGLE/USDT:USDT | +41.19% | $4,412,759.06 |
+| MMT/USDT:USDT | +34.40% | $12,318,906.21 |
+| BULLA/USDT:USDT | +29.94% | $1,315,497.11 |
+| AXTISTOCK/USDT:USDT | +29.29% | $4,682,880.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.93% | +2.94% |
-| KORU/USDT:USDT | below_1h_threshold | +2.93% | +2.94% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.51% |
-| ROBO/USDT:USDT | below_1h_threshold | +2.16% | +2.17% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.92% | +1.94% |
+| ROBO/USDT:USDT | below_1h_threshold | +3.54% | +3.63% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.93% | +3.02% |
+| KORU/USDT:USDT | below_1h_threshold | +2.93% | +3.02% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.59% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.92% | +2.02% |
 
 ## 7. 次に見るべき不足
 
