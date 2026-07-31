@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T02:11:30.123244+00:00
+- generated_at: 2026-07-31T02:16:23.050717+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9948**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T02:11:22.083167+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64529.0
-- Funnel: target 920 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.7 >= 65=1
+- 更新: 2026-07-31T02:16:15.738320+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=64437.1
+- Funnel: target 920 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +28.96% | $3,724,670.69 |
-| MMT/USDT:USDT | +24.05% | $9,292,036.86 |
-| AMZU/USDT:USDT | +17.01% | $1,928,641.22 |
-| SNXX/USDT:USDT | +16.30% | $11,334,219.09 |
-| ADVANTESTSTOCK/USDT:USDT | +14.92% | $1,611,937.83 |
+| AXTISTOCK/USDT:USDT | +28.03% | $3,740,417.86 |
+| MMT/USDT:USDT | +23.96% | $9,318,285.37 |
+| AMZU/USDT:USDT | +16.96% | $1,929,326.41 |
+| ZHIPUSTOCK/USDT:USDT | +15.26% | $5,564,735.94 |
+| ADVANTESTSTOCK/USDT:USDT | +14.76% | $1,612,235.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_1h_threshold | +3.64% | +3.65% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.89% | +1.90% |
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.31% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
-| MMT/USDT:USDT | below_1h_threshold | +0.96% | +0.97% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.77% | +4.92% |
+| GRVT/USDT:USDT | below_1h_threshold | +2.03% | +2.18% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.65% | +1.81% |
+| MMT/USDT:USDT | below_1h_threshold | +1.41% | +1.56% |
+| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.45% |
 
 ## 7. 次に見るべき不足
 
