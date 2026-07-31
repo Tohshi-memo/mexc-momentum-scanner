@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T03:56:19.627489+00:00
+- generated_at: 2026-07-31T04:01:22.882109+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9956**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T03:56:12.189442+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64376.5
-- Funnel: target 920 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-31T04:01:15.840287+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64363.2
+- Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +33.31% | $10,187,109.56 |
-| KOMA/USDT:USDT | +32.20% | $7,654,488.95 |
-| AXTISTOCK/USDT:USDT | +30.22% | $3,933,481.18 |
-| GRVT/USDT:USDT | +22.25% | $1,519,071.89 |
-| AMZU/USDT:USDT | +16.36% | $1,838,232.51 |
+| KOMA/USDT:USDT | +31.05% | $7,657,384.33 |
+| MMT/USDT:USDT | +31.00% | $10,133,241.88 |
+| AXTISTOCK/USDT:USDT | +30.48% | $3,958,534.85 |
+| GRVT/USDT:USDT | +21.55% | $1,525,796.80 |
+| AMZU/USDT:USDT | +16.34% | $1,824,253.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.23% | +3.07% |
-| MMT/USDT:USDT | below_1h_threshold | +3.05% | +2.89% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.77% | +2.61% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.74% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.56% | +1.39% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.45% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
 
 ## 7. 次に見るべき不足
 
