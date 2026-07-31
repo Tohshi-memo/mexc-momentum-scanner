@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-07-31T01:41:39.635585+00:00
+- generated_at: 2026-07-31T01:46:35.230431+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9947**
+- closed shadow trades: **9948**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9947, expectancy=-0.01%
+- 全期間 MARKET基準: n=9948, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.92%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,7 +23,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_2PCT | 15/20 | 75.0% | +0.82% | **+0.61%** |
 | LIMIT_5PCT | 3/20 | 15.0% | +3.30% | **+0.50%** |
-| LIMIT_FIB1272 | 4/20 | 20.0% | +1.73% | **+0.35%** |
+| LIMIT_FIB1272 | 5/20 | 25.0% | +1.34% | **+0.34%** |
 | LIMIT_1PCT | 17/20 | 85.0% | +0.29% | **+0.25%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
 
@@ -32,9 +32,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_BB3S_LONG | 2/2 | 100.0% | +2.75% | **+2.75%** |
-| LIMIT_ATR_LONG | 14/20 | 70.0% | +3.40% | **+2.38%** |
-| LIMIT_3PCT_LONG | 12/20 | 60.0% | +2.84% | **+1.70%** |
+| LIMIT_ATR_LONG | 14/20 | 70.0% | +3.37% | **+2.36%** |
 | LIMIT_2PCT_LONG | 13/20 | 65.0% | +2.27% | **+1.48%** |
+| LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.44% | **+1.34%** |
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +1.36% | **+1.29%** |
 
 ## 2. $100 Live Portfolio
@@ -46,56 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$528.06** / 初期 $100.00 (+428.06%)
-- 確定: 3538件 (Win 1125 / Loss 1152 / Flat 1261) / skip 2970件
-- 成長率目線: 平均log +0.000470 / 幾何平均 +0.047% per trade / maxDD +8.13%
+- 残高: **$531.39** / 初期 $100.00 (+431.39%)
+- 確定: 3539件 (Win 1126 / Loss 1152 / Flat 1261) / skip 2970件
+- 成長率目線: 平均log +0.000472 / 幾何平均 +0.047% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ZHIPUSTOCK/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $528.06
+- 最新: ZHIPUSTOCK/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $531.39
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$137.50** / 初期 $100.00 (+37.50%)
-- 確定: 1244件 (Win 345 / Loss 283 / Flat 616) / skip 2114件
-- 成長率目線: 平均log +0.000256 / 幾何平均 +0.026% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.2107 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: ZHIPUSTOCK/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $137.50
+- 残高: **$138.09** / 初期 $100.00 (+38.09%)
+- 確定: 1245件 (Win 346 / Loss 283 / Flat 616) / skip 2114件
+- 成長率目線: 平均log +0.000259 / 幾何平均 +0.026% per trade / maxDD +3.89%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.2162 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: ZHIPUSTOCK/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $138.09
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.57** / 初期 $100.00 (+10.57%)
-- 確定: 805件 (Win 262 / Loss 320 / Flat 223) / pending 0件 / skip 618件
+- 確定: 805件 (Win 262 / Loss 320 / Flat 223) / pending 0件 / skip 619件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000646 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000682 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ARMSTOCK/USDT:USDT `MARKET` EXPIRED account -0.04% 残高後 $110.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T01:41:32.266639+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=64881.3
-- Funnel: target 920 → liquid 167 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1
+- 更新: 2026-07-31T01:46:24.463276+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=64864.0
+- Funnel: target 920 → liquid 167 → pre 50 → checked 50 → surge 5 → strict 3
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.6 >= 65=1, 4h RSI 81.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +28.78% | $3,644,464.47 |
-| MMT/USDT:USDT | +23.24% | $9,225,509.20 |
-| ROBO/USDT:USDT | +18.76% | $3,728,530.75 |
-| SNXX/USDT:USDT | +18.00% | $11,467,966.24 |
-| AMZU/USDT:USDT | +16.33% | $2,058,227.17 |
+| AXTISTOCK/USDT:USDT | +29.07% | $3,661,896.63 |
+| MMT/USDT:USDT | +25.37% | $9,238,472.60 |
+| ROBO/USDT:USDT | +18.51% | $3,731,232.31 |
+| ZHIPUSTOCK/USDT:USDT | +18.51% | $5,827,657.57 |
+| SNXX/USDT:USDT | +17.40% | $11,492,027.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.71% | +4.42% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.25% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.24% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.14% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +2.90% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.28% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.26% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.17% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +2.93% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +2.93% |
 
 ## 7. 次に見るべき不足
 
