@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T23:16:17.304203+00:00
+- generated_at: 2026-07-31T23:21:18.571718+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10034**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T23:16:10.224042+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=62947.0
+- 更新: 2026-07-31T23:21:11.595351+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=62986.5
 - Funnel: target 921 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +28.87% | $1,131,995.56 |
-| KOMA/USDT:USDT | +24.59% | $16,825,862.62 |
-| TLM/USDT:USDT | +19.13% | $1,375,061.74 |
-| GIGGLE/USDT:USDT | +17.31% | $19,368,446.14 |
-| FLOW/USDT:USDT | +15.18% | $1,269,170.76 |
+| JIMOTHY/USDT:USDT | +29.50% | $1,143,664.05 |
+| KOMA/USDT:USDT | +20.03% | $16,906,246.26 |
+| GIGGLE/USDT:USDT | +19.39% | $19,510,596.91 |
+| TLM/USDT:USDT | +17.43% | $1,391,916.18 |
+| 1000RATS/USDT:USDT | +15.40% | $15,584,475.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.14% | +2.09% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.89% | +1.85% |
-| SYN/USDT:USDT | below_1h_threshold | +1.72% | +1.67% |
-| LAB/USDT:USDT | below_1h_threshold | +1.36% | +1.31% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.29% | +1.24% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.08% | +2.97% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.50% | +2.39% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.62% | +1.51% |
+| SYN/USDT:USDT | below_1h_threshold | +1.62% | +1.51% |
+| LAB/USDT:USDT | below_1h_threshold | +1.09% | +0.98% |
 
 ## 7. 次に見るべき不足
 
