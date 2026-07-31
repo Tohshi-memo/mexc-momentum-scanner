@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T09:41:35.165175+00:00
+- generated_at: 2026-07-31T09:46:18.777652+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9984**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T09:41:27.496007+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=63673.8
-- Funnel: target 921 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-07-31T09:46:11.066231+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63670.5
+- Funnel: target 921 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.3 >= 65=1
+- Strict後reject: 4h RSI 88.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +57.71% | $11,936,141.32 |
-| MMT/USDT:USDT | +42.30% | $13,327,825.17 |
-| AXTISTOCK/USDT:USDT | +32.12% | $4,941,637.75 |
-| GIGGLE/USDT:USDT | +25.14% | $7,373,169.31 |
-| AMZU/USDT:USDT | +21.59% | $1,621,156.60 |
+| KOMA/USDT:USDT | +58.73% | $11,983,150.47 |
+| MMT/USDT:USDT | +42.48% | $13,429,588.19 |
+| AXTISTOCK/USDT:USDT | +32.70% | $4,943,230.53 |
+| GIGGLE/USDT:USDT | +27.16% | $7,444,318.31 |
+| AMZU/USDT:USDT | +21.61% | $1,621,693.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.66% | +4.86% |
-| COTI/USDT:USDT | below_1h_threshold | +3.58% | +3.78% |
+| MMT/USDT:USDT | below_1h_threshold | +4.60% | +4.80% |
+| COTI/USDT:USDT | below_1h_threshold | +4.03% | +4.24% |
 | AMZU/USDT:USDT | below_1h_threshold | +3.12% | +3.33% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.10% | +3.30% |
-| RLC/USDT:USDT | below_1h_threshold | +2.86% | +3.06% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.10% | +3.31% |
+| RLC/USDT:USDT | below_1h_threshold | +2.70% | +2.90% |
 
 ## 7. 次に見るべき不足
 
