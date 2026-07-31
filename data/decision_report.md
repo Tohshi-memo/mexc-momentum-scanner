@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T14:46:41.908100+00:00
+- generated_at: 2026-07-31T14:51:45.673905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10013**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T14:46:31.102463+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.92% price=62669.2
+- 更新: 2026-07-31T14:51:36.329754+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.85% price=62712.9
 - Funnel: target 921 → liquid 180 → pre 50 → checked 50 → surge 5 → strict 0
 - Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.1 >= 65=1, 4h RSI 97.8 >= 65=1, 4h RSI 75.5 >= 65=1, 4h RSI 87.3 >= 65=1, 4h RSI 83.2 >= 65=1
+- Strict後reject: 4h RSI 92.7 >= 65=1, 4h RSI 97.8 >= 65=1, 4h RSI 75.7 >= 65=1, 4h RSI 87.2 >= 65=1, 4h RSI 82.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +88.02% | $14,891,799.07 |
-| 1000RATS/USDT:USDT | +73.56% | $2,271,931.70 |
-| GIGGLE/USDT:USDT | +33.76% | $11,335,405.18 |
-| AMZU/USDT:USDT | +27.69% | $1,854,298.64 |
-| AXTISTOCK/USDT:USDT | +27.38% | $9,985,528.83 |
+| KOMA/USDT:USDT | +87.14% | $14,971,351.36 |
+| 1000RATS/USDT:USDT | +67.41% | $2,571,120.51 |
+| GIGGLE/USDT:USDT | +34.10% | $11,382,902.56 |
+| AXTISTOCK/USDT:USDT | +29.00% | $10,008,984.51 |
+| AMZU/USDT:USDT | +27.23% | $1,856,707.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +3.91% | +4.82% |
-| GGLL/USDT:USDT | below_1h_threshold | +3.70% | +4.62% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.28% | +4.20% |
-| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.94% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.93% | +3.85% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.27% | +5.12% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.91% | +4.76% |
+| GGLL/USDT:USDT | below_1h_threshold | +3.70% | +4.55% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.38% | +4.23% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.87% |
 
 ## 7. 次に見るべき不足
 
