@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T19:01:17.714031+00:00
+- generated_at: 2026-07-31T19:06:24.144635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10024**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T19:01:10.629757+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63119.9
-- Funnel: target 921 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-31T19:06:17.363117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=63023.6
+- Funnel: target 921 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +32.27% | $1,014,131.14 |
-| KOMA/USDT:USDT | +12.06% | $15,318,124.32 |
-| AKE/USDT:USDT | +11.90% | $15,618,364.37 |
-| GIGGLE/USDT:USDT | +10.13% | $14,771,683.34 |
-| OUSTSTOCK/USDT:USDT | +8.42% | $2,187,330.98 |
+| JIMOTHY/USDT:USDT | +30.71% | $1,022,300.84 |
+| KOMA/USDT:USDT | +13.53% | $15,347,311.92 |
+| AKE/USDT:USDT | +11.18% | $15,748,286.11 |
+| GIGGLE/USDT:USDT | +8.64% | $14,861,279.85 |
+| OUSTSTOCK/USDT:USDT | +7.70% | $2,187,831.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COINBASE/USDT:USDT | below_1h_threshold | +1.63% | +1.55% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.20% |
-| BANK/USDT:USDT | below_1h_threshold | +1.00% | +0.91% |
-| AMZU/USDT:USDT | below_1h_threshold | +0.70% | +0.61% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.61% |
+| COINBASE/USDT:USDT | below_1h_threshold | +1.63% | +1.70% |
+| AAPU/USDT:USDT | below_1h_threshold | +1.60% | +1.67% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.35% |
+| TAG/USDT:USDT | below_1h_threshold | +1.21% | +1.28% |
+| BTW/USDT:USDT | below_1h_threshold | +1.05% | +1.11% |
 
 ## 7. 次に見るべき不足
 
