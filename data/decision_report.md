@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T01:11:33.359759+00:00
+- generated_at: 2026-07-31T01:16:28.014939+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9944**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T01:11:23.178285+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.95% price=65314.9
+- 更新: 2026-07-31T01:16:19.564734+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=65126.2
 - Funnel: target 920 → liquid 167 → pre 50 → checked 50 → surge 4 → strict 3
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.0 >= 65=1
+- Strict後reject: 4h RSI 84.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +31.59% | $3,523,430.05 |
-| SNXX/USDT:USDT | +25.20% | $11,221,241.74 |
-| MMT/USDT:USDT | +20.38% | $8,825,819.68 |
-| MVLL/USDT:USDT | +20.12% | $1,110,966.59 |
-| ROBO/USDT:USDT | +19.26% | $3,650,877.50 |
+| AXTISTOCK/USDT:USDT | +31.75% | $3,524,023.04 |
+| SNXX/USDT:USDT | +24.00% | $11,257,842.63 |
+| MMT/USDT:USDT | +21.47% | $8,878,130.60 |
+| ROBO/USDT:USDT | +20.01% | $3,664,858.12 |
+| MVLL/USDT:USDT | +17.94% | $1,119,109.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +3.58% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +3.57% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +2.47% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +2.23% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +2.23% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +3.88% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +3.86% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +2.77% |
+| MMT/USDT:USDT | below_1h_threshold | +3.20% | +2.54% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +2.52% |
 
 ## 7. 次に見るべき不足
 
