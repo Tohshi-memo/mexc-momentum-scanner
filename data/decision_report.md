@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T20:01:26.777946+00:00
+- generated_at: 2026-07-31T20:06:17.818860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10027**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T20:01:19.294151+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=62948.4
+- 更新: 2026-07-31T20:06:12.667854+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62950.2
 - Funnel: target 921 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +33.67% | $1,090,297.69 |
-| GIGGLE/USDT:USDT | +16.86% | $16,278,640.01 |
-| KOMA/USDT:USDT | +14.95% | $15,533,259.83 |
-| BANK/USDT:USDT | +11.73% | $37,571,984.03 |
-| AKE/USDT:USDT | +11.52% | $15,786,027.56 |
+| JIMOTHY/USDT:USDT | +33.40% | $1,093,818.27 |
+| GIGGLE/USDT:USDT | +17.21% | $16,372,752.01 |
+| KOMA/USDT:USDT | +14.08% | $15,558,872.46 |
+| BANK/USDT:USDT | +13.40% | $37,683,280.02 |
+| AKE/USDT:USDT | +11.81% | $15,858,114.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | SOXS/USDT:USDT | below_1h_threshold | +3.65% | +3.65% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +1.96% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
+| BANK/USDT:USDT | below_1h_threshold | +1.64% | +1.64% |
 | METASTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.97% |
 | NVIDIA/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
 
 ## 7. 次に見るべき不足
 
