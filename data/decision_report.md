@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T02:31:25.816308+00:00
+- generated_at: 2026-07-31T02:36:22.730555+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9950**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T02:31:17.636894+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=64355.3
-- Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1
+- 更新: 2026-07-31T02:36:14.880201+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=64311.1
+- Funnel: target 920 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +28.16% | $3,770,353.27 |
-| MMT/USDT:USDT | +28.00% | $9,474,050.92 |
-| GRVT/USDT:USDT | +26.34% | $1,344,796.52 |
-| AMZU/USDT:USDT | +17.07% | $1,947,036.55 |
-| ADVANTESTSTOCK/USDT:USDT | +14.41% | $1,613,743.66 |
+| AXTISTOCK/USDT:USDT | +28.25% | $3,771,642.71 |
+| MMT/USDT:USDT | +26.19% | $9,512,300.57 |
+| GRVT/USDT:USDT | +24.90% | $1,353,364.01 |
+| AMZU/USDT:USDT | +16.79% | $1,947,706.18 |
+| SNXX/USDT:USDT | +14.40% | $11,638,473.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.60% | +4.88% |
-| AKE/USDT:USDT | below_1h_threshold | +2.40% | +2.68% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.33% | +2.61% |
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.58% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.23% | +1.51% |
+| MMT/USDT:USDT | below_1h_threshold | +3.23% | +3.57% |
+| AKE/USDT:USDT | below_1h_threshold | +3.00% | +3.35% |
+| CAP/USDT:USDT | below_1h_threshold | +1.47% | +1.82% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.32% | +1.66% |
+| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.65% |
 
 ## 7. 次に見るべき不足
 
