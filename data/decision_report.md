@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T14:31:34.419681+00:00
+- generated_at: 2026-07-31T14:36:30.347649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10012**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.01** / 初期 $100.00 (+11.01%)
-- 確定: 844件 (Win 272 / Loss 334 / Flat 238) / pending 5件 / skip 635件
+- 確定: 844件 (Win 272 / Loss 334 / Flat 238) / pending 6件 / skip 636件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 1000RATS/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $111.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T14:31:23.564393+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.91% price=62671.9
-- Funnel: target 921 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.3 >= 65=1, 4h RSI 87.0 >= 65=1
+- 更新: 2026-07-31T14:36:21.603323+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.82% price=62732.5
+- Funnel: target 921 → liquid 180 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.2 >= 65=1, 4h RSI 87.3 >= 65=1, 4h RSI 75.2 >= 65=1, 4h RSI 97.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +77.47% | $1,459,539.28 |
-| KOMA/USDT:USDT | +72.85% | $14,540,427.01 |
-| AXTISTOCK/USDT:USDT | +31.75% | $9,860,852.08 |
-| GIGGLE/USDT:USDT | +31.30% | $11,146,857.50 |
-| AMZU/USDT:USDT | +26.69% | $1,836,118.61 |
+| KOMA/USDT:USDT | +81.36% | $14,628,108.18 |
+| 1000RATS/USDT:USDT | +72.54% | $1,803,283.21 |
+| GIGGLE/USDT:USDT | +33.45% | $11,236,292.91 |
+| AXTISTOCK/USDT:USDT | +30.06% | $9,906,133.75 |
+| AMZU/USDT:USDT | +27.67% | $1,846,027.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.08% | +4.99% |
-| GGLL/USDT:USDT | below_1h_threshold | +3.70% | +4.61% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +3.57% | +4.49% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.28% | +4.20% |
-| ORDI/USDT:USDT | below_1h_threshold | +3.02% | +3.93% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.25% | +5.06% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.00% | +4.82% |
+| GGLL/USDT:USDT | below_1h_threshold | +3.70% | +4.51% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.84% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.84% | +2.65% |
 
 ## 7. 次に見るべき不足
 
