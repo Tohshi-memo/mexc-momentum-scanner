@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T13:41:27.024678+00:00
+- generated_at: 2026-07-31T13:46:19.386731+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10007**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.82** / 初期 $100.00 (+10.82%)
-- 確定: 839件 (Win 270 / Loss 332 / Flat 237) / pending 4件 / skip 635件
+- 確定: 839件 (Win 270 / Loss 332 / Flat 237) / pending 5件 / skip 635件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000156 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MMT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.82
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T13:41:19.575111+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=63563.4
-- Funnel: target 921 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-31T13:46:12.025726+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=63478.5
+- Funnel: target 921 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +73.91% | $14,528,600.01 |
-| AXTISTOCK/USDT:USDT | +31.35% | $8,540,117.41 |
-| GIGGLE/USDT:USDT | +27.67% | $10,939,793.76 |
-| AMZU/USDT:USDT | +24.48% | $1,752,637.29 |
-| ROBO/USDT:USDT | +20.93% | $4,090,977.99 |
+| KOMA/USDT:USDT | +71.06% | $14,639,906.80 |
+| TAG/USDT:USDT | +34.11% | $1,017,068.20 |
+| AXTISTOCK/USDT:USDT | +32.50% | $8,787,767.45 |
+| GIGGLE/USDT:USDT | +26.54% | $10,988,230.09 |
+| AMZU/USDT:USDT | +23.47% | $1,754,066.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +3.65% | +3.90% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.42% | +3.68% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.46% | +2.71% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.93% | +2.19% |
-| BTW/USDT:USDT | below_1h_threshold | +1.38% | +1.63% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.42% | +3.81% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.13% | +3.52% |
+| COTI/USDT:USDT | below_1h_threshold | +2.60% | +2.99% |
+| ROBO/USDT:USDT | below_1h_threshold | +2.43% | +2.82% |
+| CFX/USDT:USDT | below_1h_threshold | +2.01% | +2.40% |
 
 ## 7. 次に見るべき不足
 
