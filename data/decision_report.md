@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T03:06:15.807799+00:00
+- generated_at: 2026-07-31T03:11:17.609590+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9953**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T03:06:08.779919+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=64200.8
+- 更新: 2026-07-31T03:11:10.401229+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64200.1
 - Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +29.60% | $3,836,619.18 |
-| MMT/USDT:USDT | +28.86% | $9,636,762.06 |
-| KOMA/USDT:USDT | +23.43% | $7,322,084.55 |
-| GRVT/USDT:USDT | +18.88% | $1,419,319.98 |
-| AMZU/USDT:USDT | +16.35% | $1,817,147.75 |
+| MMT/USDT:USDT | +29.59% | $9,687,499.32 |
+| AXTISTOCK/USDT:USDT | +29.13% | $3,855,478.00 |
+| KOMA/USDT:USDT | +23.82% | $7,365,750.41 |
+| GRVT/USDT:USDT | +19.21% | $1,425,737.15 |
+| AMZU/USDT:USDT | +16.36% | $1,817,466.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.01% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.02% |
 | AMZNSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.56% |
+| LAB/USDT:USDT | below_1h_threshold | +1.20% | +1.31% |
 | GGLL/USDT:USDT | below_1h_threshold | +0.69% | +0.80% |
 | SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.78% |
-| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.70% |
 
 ## 7. 次に見るべき不足
 
