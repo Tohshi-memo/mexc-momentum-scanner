@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T16:51:35.255365+00:00
+- generated_at: 2026-07-31T16:56:31.314128+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10018**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T16:51:25.374604+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=62834.9
+- 更新: 2026-07-31T16:56:23.724844+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=62848.2
 - Funnel: target 921 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 83.1 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +6.40% | $15,522,582.09 |
-| SYN/USDT:USDT | +6.24% | $2,733,081.39 |
-| KOMA/USDT:USDT | +6.14% | $15,484,796.04 |
-| AXTISTOCK/USDT:USDT | +5.31% | $11,010,112.78 |
-| ESPORTS/USDT:USDT | +4.56% | $4,535,800.82 |
+| KOMA/USDT:USDT | +6.07% | $15,534,623.60 |
+| AKE/USDT:USDT | +5.76% | $15,575,788.88 |
+| SYN/USDT:USDT | +5.63% | $2,766,542.97 |
+| AXTISTOCK/USDT:USDT | +5.35% | $11,050,783.99 |
+| ESPORTS/USDT:USDT | +4.45% | $4,538,649.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.68% | +4.46% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.48% | +3.26% |
-| COTI/USDT:USDT | below_1h_threshold | +3.17% | +2.95% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.09% | +2.87% |
-| TAG/USDT:USDT | below_1h_threshold | +2.43% | +2.20% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.57% | +4.32% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.77% | +3.53% |
+| KAITO/USDT:USDT | below_1h_threshold | +3.05% | +2.81% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.61% | +2.37% |
+| US/USDT:USDT | below_1h_threshold | +2.37% | +2.12% |
 
 ## 7. 次に見るべき不足
 
