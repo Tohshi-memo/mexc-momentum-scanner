@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T02:01:19.243777+00:00
+- generated_at: 2026-07-31T02:06:29.569500+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9948**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T02:01:11.906650+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64548.2
-- Funnel: target 920 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-07-31T02:06:22.162932+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64524.6
+- Funnel: target 920 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AXTISTOCK/USDT:USDT | +28.03% | $3,700,056.49 |
-| MMT/USDT:USDT | +23.55% | $9,250,895.61 |
-| ZHIPUSTOCK/USDT:USDT | +19.85% | $5,430,723.87 |
-| SNXX/USDT:USDT | +18.40% | $11,272,515.78 |
-| AMZU/USDT:USDT | +16.73% | $1,916,086.87 |
+| AXTISTOCK/USDT:USDT | +27.34% | $3,717,545.47 |
+| MMT/USDT:USDT | +23.42% | $9,273,353.81 |
+| ZHIPUSTOCK/USDT:USDT | +17.23% | $5,479,995.36 |
+| AMZU/USDT:USDT | +16.81% | $1,926,834.63 |
+| SNXX/USDT:USDT | +16.10% | $11,326,675.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.28% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
-| MMT/USDT:USDT | below_1h_threshold | +0.96% | +0.94% |
-| AMZU/USDT:USDT | below_1h_threshold | +0.40% | +0.38% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.31% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.45% | +2.47% |
+| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
+| GRVT/USDT:USDT | below_1h_threshold | +0.98% | +1.00% |
+| MMT/USDT:USDT | below_1h_threshold | +0.85% | +0.87% |
 
 ## 7. 次に見るべき不足
 
