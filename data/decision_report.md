@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T17:26:37.879292+00:00
+- generated_at: 2026-07-31T17:31:21.982662+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10021**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T17:26:29.295292+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=62950.0
+- 更新: 2026-07-31T17:31:15.806712+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=62939.1
 - Funnel: target 921 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 68.8 >= 65=1
+- Strict後reject: 4h RSI 71.8 >= 65=1, 4h RSI 68.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +8.24% | $15,262,156.13 |
-| OUSTSTOCK/USDT:USDT | +6.93% | $2,194,700.58 |
-| CAP/USDT:USDT | +6.61% | $7,136,871.63 |
-| AKE/USDT:USDT | +6.05% | $15,133,257.11 |
-| SNXX/USDT:USDT | +5.82% | $17,426,662.24 |
+| KOMA/USDT:USDT | +8.03% | $15,280,762.19 |
+| OUSTSTOCK/USDT:USDT | +7.18% | $2,196,787.86 |
+| SYN/USDT:USDT | +6.24% | $2,867,323.23 |
+| CAP/USDT:USDT | +6.19% | $7,148,693.32 |
+| SNXX/USDT:USDT | +6.03% | $17,444,341.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.43% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +3.02% |
-| KORU/USDT:USDT | below_1h_threshold | +2.72% | +2.56% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.62% | +2.46% |
-| MUU/USDT:USDT | below_1h_threshold | +2.55% | +2.39% |
+| OUSTSTOCK/USDT:USDT | below_1h_threshold | +3.59% | +3.45% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.26% | +3.12% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.18% | +3.04% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.85% | +2.71% |
+| KORU/USDT:USDT | below_1h_threshold | +2.72% | +2.57% |
 
 ## 7. 次に見るべき不足
 
