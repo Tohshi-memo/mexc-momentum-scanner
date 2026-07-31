@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T02:56:32.053621+00:00
+- generated_at: 2026-07-31T03:01:11.329423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9953**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T02:56:22.399704+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=64206.4
-- Funnel: target 920 → liquid 171 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.2 >= 65=1, 4h RSI 83.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-07-31T03:01:05.785179+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64250.1
+- Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +28.91% | $9,615,398.10 |
-| KOMA/USDT:USDT | +28.09% | $7,273,078.49 |
-| AXTISTOCK/USDT:USDT | +28.05% | $3,806,429.18 |
-| GRVT/USDT:USDT | +19.77% | $1,413,505.56 |
-| AMZU/USDT:USDT | +16.81% | $1,957,869.59 |
+| MMT/USDT:USDT | +30.14% | $9,601,685.36 |
+| AXTISTOCK/USDT:USDT | +28.45% | $3,803,962.81 |
+| KOMA/USDT:USDT | +24.24% | $7,273,472.07 |
+| GRVT/USDT:USDT | +19.28% | $1,416,370.12 |
+| AMZU/USDT:USDT | +16.69% | $1,816,532.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.93% | +2.43% |
-| CAP/USDT:USDT | below_1h_threshold | +1.62% | +2.13% |
-| QXOSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.81% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.23% | +1.74% |
-| UB/USDT:USDT | below_1h_threshold | +1.04% | +1.55% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.94% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.48% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.70% |
+| MMT/USDT:USDT | below_1h_threshold | +0.60% | +0.63% |
+| TSMSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.62% |
 
 ## 7. 次に見るべき不足
 
