@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T21:26:28.168115+00:00
+- generated_at: 2026-07-31T21:31:18.113435+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10027**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T21:26:21.037402+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=62996.4
+- 更新: 2026-07-31T21:31:10.887336+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=63002.9
 - Funnel: target 921 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.9 >= 65=1
+- Strict後reject: 4h RSI 95.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +28.94% | $1,121,251.20 |
-| GIGGLE/USDT:USDT | +14.08% | $17,898,133.56 |
-| 1000RATS/USDT:USDT | +11.81% | $13,178,158.19 |
-| AKE/USDT:USDT | +10.98% | $16,402,099.46 |
-| US/USDT:USDT | +10.86% | $1,972,767.40 |
+| JIMOTHY/USDT:USDT | +28.59% | $1,123,483.36 |
+| GIGGLE/USDT:USDT | +13.72% | $17,938,782.26 |
+| AKE/USDT:USDT | +12.75% | $16,433,235.47 |
+| KOMA/USDT:USDT | +10.97% | $15,956,017.08 |
+| US/USDT:USDT | +10.56% | $1,985,235.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.83% | +2.72% |
-| CAP/USDT:USDT | below_1h_threshold | +2.53% | +2.42% |
-| USOIL/USDT:USDT | below_1h_threshold | +2.50% | +2.39% |
-| UKOIL/USDT:USDT | below_1h_threshold | +2.36% | +2.25% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.51% | +1.41% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.88% | +2.76% |
+| CAP/USDT:USDT | below_1h_threshold | +2.88% | +2.76% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.58% | +2.46% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.50% | +2.38% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.36% | +2.24% |
 
 ## 7. 次に見るべき不足
 
