@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T04:01:22.882109+00:00
+- generated_at: 2026-07-31T04:06:14.368973+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **9956**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T04:01:15.840287+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64363.2
-- Funnel: target 920 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-07-31T04:06:07.294976+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64399.9
+- Funnel: target 920 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +31.05% | $7,657,384.33 |
-| MMT/USDT:USDT | +31.00% | $10,133,241.88 |
-| AXTISTOCK/USDT:USDT | +30.48% | $3,958,534.85 |
-| GRVT/USDT:USDT | +21.55% | $1,525,796.80 |
-| AMZU/USDT:USDT | +16.34% | $1,824,253.00 |
+| MMT/USDT:USDT | +33.31% | $10,191,981.00 |
+| RLC/USDT:USDT | +30.69% | $1,004,402.03 |
+| KOMA/USDT:USDT | +30.39% | $7,684,410.95 |
+| AXTISTOCK/USDT:USDT | +30.15% | $3,962,796.39 |
+| GRVT/USDT:USDT | +21.38% | $1,533,345.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.45% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
-| BESTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
-| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
+| RLC/USDT:USDT | below_1h_threshold | +4.20% | +4.12% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.39% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.08% | +1.99% |
+| MMT/USDT:USDT | below_1h_threshold | +1.56% | +1.47% |
+| BESTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.11% |
 
 ## 7. 次に見るべき不足
 
