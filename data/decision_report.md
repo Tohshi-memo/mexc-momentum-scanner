@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T22:46:34.879269+00:00
+- generated_at: 2026-07-31T22:51:31.575443+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10031**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T22:46:22.339506+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=62924.9
-- Funnel: target 921 → liquid 174 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1
+- 更新: 2026-07-31T22:51:20.983454+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62906.6
+- Funnel: target 921 → liquid 174 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +28.83% | $1,148,198.46 |
-| GIGGLE/USDT:USDT | +15.62% | $18,902,235.63 |
-| TLM/USDT:USDT | +15.34% | $1,342,416.95 |
-| FLOW/USDT:USDT | +15.00% | $1,117,695.59 |
-| AKE/USDT:USDT | +12.46% | $16,392,846.62 |
+| JIMOTHY/USDT:USDT | +24.62% | $1,155,588.57 |
+| TLM/USDT:USDT | +15.80% | $1,347,111.84 |
+| GIGGLE/USDT:USDT | +15.54% | $18,965,688.66 |
+| FLOW/USDT:USDT | +14.85% | $1,133,625.26 |
+| AKE/USDT:USDT | +12.49% | $16,402,839.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.47% | +2.47% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.62% | +1.62% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.62% | +1.62% |
-| UNI/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.32% | +1.32% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.22% | +3.25% |
+| MMT/USDT:USDT | below_1h_threshold | +3.14% | +3.17% |
+| BTW/USDT:USDT | below_1h_threshold | +2.96% | +2.99% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.73% | +1.76% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
 
 ## 7. 次に見るべき不足
 
