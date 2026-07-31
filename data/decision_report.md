@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T21:21:24.686743+00:00
+- generated_at: 2026-07-31T21:26:28.168115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10027**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.46** / 初期 $100.00 (+12.46%)
-- 確定: 853件 (Win 278 / Loss 336 / Flat 239) / pending 6件 / skip 645件
+- 確定: 853件 (Win 278 / Loss 336 / Flat 239) / pending 6件 / skip 646件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000367 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T21:21:17.665607+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=62984.9
-- Funnel: target 921 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-31T21:26:21.037402+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=62996.4
+- Funnel: target 921 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +28.02% | $1,116,923.60 |
-| GIGGLE/USDT:USDT | +12.94% | $17,826,955.75 |
-| AKE/USDT:USDT | +11.22% | $16,309,875.13 |
-| US/USDT:USDT | +11.15% | $1,966,184.14 |
-| 1000RATS/USDT:USDT | +7.78% | $12,913,016.27 |
+| JIMOTHY/USDT:USDT | +28.94% | $1,121,251.20 |
+| GIGGLE/USDT:USDT | +14.08% | $17,898,133.56 |
+| 1000RATS/USDT:USDT | +11.81% | $13,178,158.19 |
+| AKE/USDT:USDT | +10.98% | $16,402,099.46 |
+| US/USDT:USDT | +10.86% | $1,972,767.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.64% | +3.55% |
-| USOIL/USDT:USDT | below_1h_threshold | +2.50% | +2.41% |
-| UKOIL/USDT:USDT | below_1h_threshold | +2.36% | +2.27% |
-| CAP/USDT:USDT | below_1h_threshold | +2.13% | +2.04% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.87% | +1.78% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.83% | +2.72% |
+| CAP/USDT:USDT | below_1h_threshold | +2.53% | +2.42% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.50% | +2.39% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.36% | +2.25% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.51% | +1.41% |
 
 ## 7. 次に見るべき不足
 
