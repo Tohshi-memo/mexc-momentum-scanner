@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T15:46:22.782222+00:00
+- generated_at: 2026-07-31T15:51:24.917724+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10015**
 
@@ -70,30 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T15:46:17.164552+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=62728.0
-- Funnel: target 921 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-31T15:51:17.709126+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62691.1
+- Funnel: target 921 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +109.00% | $6,022,200.19 |
-| KOMA/USDT:USDT | +69.34% | $15,240,091.08 |
-| GIGGLE/USDT:USDT | +35.57% | $11,832,814.01 |
-| AXTISTOCK/USDT:USDT | +27.32% | $10,447,307.08 |
-| AMZU/USDT:USDT | +23.87% | $1,897,129.24 |
+| 1000RATS/USDT:USDT | +109.87% | $6,303,801.72 |
+| KOMA/USDT:USDT | +68.44% | $15,294,685.37 |
+| GIGGLE/USDT:USDT | +33.08% | $11,908,473.36 |
+| AXTISTOCK/USDT:USDT | +28.16% | $10,477,702.70 |
+| AMZU/USDT:USDT | +24.44% | $1,900,975.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_relative_strength | +5.06% | +4.96% |
-| GGLL/USDT:USDT | below_1h_threshold | +4.93% | +4.83% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.91% | +2.81% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.44% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.45% | +2.35% |
+| GGLL/USDT:USDT | below_1h_threshold | +4.93% | +4.89% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.21% | +3.17% |
+| COTI/USDT:USDT | below_1h_threshold | +3.10% | +3.05% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.50% |
+| GRVT/USDT:USDT | below_1h_threshold | +2.25% | +2.20% |
 
 ## 7. 次に見るべき不足
 
