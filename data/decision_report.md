@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-07-31T04:11:18.630564+00:00
+- generated_at: 2026-07-31T04:16:27.053220+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **9956**
+- closed shadow trades: **9957**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=9956, expectancy=-0.01%
-- 直近20件 MARKET基準: n=20, expectancy=-1.12%
+- 全期間 MARKET基準: n=9957, expectancy=-0.01%
+- 直近20件 MARKET基準: n=20, expectancy=-1.36%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -1.12% | **-1.12%** |
+| MARKET | 20/20 | 100.0% | -1.36% | **-1.36%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272 | 7/20 | 35.0% | +1.38% | **+0.48%** |
-| LIMIT_7PCT | 4/20 | 20.0% | +2.40% | **+0.48%** |
-| LIMIT_5PCT | 6/20 | 30.0% | +1.30% | **+0.39%** |
-| LIMIT_6PCT | 4/20 | 20.0% | +1.94% | **+0.39%** |
-| LIMIT_4PCT | 13/20 | 65.0% | -0.31% | **-0.20%** |
+| LIMIT_FIB1272 | 8/20 | 40.0% | +1.65% | **+0.66%** |
+| LIMIT_7PCT | 5/20 | 25.0% | +2.48% | **+0.62%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +1.93% | **+0.48%** |
+| LIMIT_5PCT | 7/20 | 35.0% | +0.54% | **+0.19%** |
+| LIMIT_9PCT | 2/20 | 10.0% | +0.29% | **+0.03%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR_LONG | 11/20 | 55.0% | +3.76% | **+2.07%** |
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.91% | **+1.63%** |
+| LIMIT_ATR_LONG | 10/20 | 50.0% | +4.13% | **+2.07%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | +2.36% | **+2.01%** |
+| LIMIT_2PCT_LONG | 13/20 | 65.0% | +2.56% | **+1.66%** |
 | LIMIT_3PCT_LONG | 10/20 | 50.0% | +3.07% | **+1.53%** |
-| LIMIT_2PCT_LONG | 12/20 | 60.0% | +2.11% | **+1.26%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.91% | **+0.91%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.34% | **+1.34%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,54 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$543.46** / 初期 $100.00 (+443.46%)
-- 確定: 3547件 (Win 1130 / Loss 1154 / Flat 1263) / skip 2970件
-- 成長率目線: 平均log +0.000477 / 幾何平均 +0.048% per trade / maxDD +8.13%
+- 残高: **$548.89** / 初期 $100.00 (+448.89%)
+- 確定: 3548件 (Win 1131 / Loss 1154 / Flat 1263) / skip 2970件
+- 成長率目線: 平均log +0.000480 / 幾何平均 +0.048% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: KOMA/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $543.46
+- 最新: KOMA/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +1.00% 残高後 $548.89
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$140.21** / 初期 $100.00 (+40.21%)
-- 確定: 1253件 (Win 350 / Loss 285 / Flat 618) / skip 2114件
-- 成長率目線: 平均log +0.000270 / 幾何平均 +0.027% per trade / maxDD +3.89%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.2040 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: KOMA/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $140.21
+- 残高: **$141.17** / 初期 $100.00 (+41.17%)
+- 確定: 1254件 (Win 351 / Loss 285 / Flat 618) / skip 2114件
+- 成長率目線: 平均log +0.000275 / 幾何平均 +0.027% per trade / maxDD +3.89%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.2127 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: KOMA/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +0.69% 残高後 $141.17
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.57** / 初期 $100.00 (+10.57%)
-- 確定: 805件 (Win 262 / Loss 320 / Flat 223) / pending 0件 / skip 628件
+- 確定: 805件 (Win 262 / Loss 320 / Flat 223) / pending 0件 / skip 629件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000667 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000672 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ARMSTOCK/USDT:USDT `MARKET` EXPIRED account -0.04% 残高後 $110.57
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T04:11:11.568490+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64364.9
-- Funnel: target 920 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-07-31T04:16:18.326854+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64335.5
+- Funnel: target 920 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MMT/USDT:USDT | +34.81% | $10,211,899.98 |
-| KOMA/USDT:USDT | +33.48% | $7,724,114.10 |
-| AXTISTOCK/USDT:USDT | +30.35% | $3,966,868.44 |
-| RLC/USDT:USDT | +26.35% | $1,046,499.29 |
-| AMZU/USDT:USDT | +17.02% | $1,825,772.63 |
+| KOMA/USDT:USDT | +40.55% | $7,859,311.09 |
+| MMT/USDT:USDT | +35.36% | $10,275,026.30 |
+| AXTISTOCK/USDT:USDT | +30.73% | $3,967,475.68 |
+| RLC/USDT:USDT | +18.77% | $1,110,481.63 |
+| AMZU/USDT:USDT | +16.93% | $1,826,092.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.45% |
-| MMT/USDT:USDT | below_1h_threshold | +2.87% | +2.84% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.04% |
-| KOMA/USDT:USDT | below_1h_threshold | +1.97% | +1.94% |
-| RLC/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.49% |
+| MMT/USDT:USDT | below_1h_threshold | +2.90% | +2.92% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.09% |
+| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
+| UNI/USDT:USDT | below_1h_threshold | +1.55% | +1.57% |
 
 ## 7. 次に見るべき不足
 
