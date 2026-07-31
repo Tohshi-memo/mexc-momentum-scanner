@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T15:26:18.682821+00:00
+- generated_at: 2026-07-31T15:31:30.945942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10015**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.82** / 初期 $100.00 (+10.82%)
-- 確定: 845件 (Win 272 / Loss 335 / Flat 238) / pending 6件 / skip 637件
+- 確定: 845件 (Win 272 / Loss 335 / Flat 238) / pending 6件 / skip 638件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000157 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 1000RATS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.82
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T15:26:11.469042+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=62508.3
-- Funnel: target 921 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.1 >= 65=1
+- 更新: 2026-07-31T15:31:23.062226+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=62566.9
+- Funnel: target 921 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1, 4h RSI 65.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +100.83% | $4,989,349.67 |
-| KOMA/USDT:USDT | +69.20% | $15,008,441.36 |
-| GIGGLE/USDT:USDT | +32.09% | $11,644,712.34 |
-| AXTISTOCK/USDT:USDT | +28.18% | $10,273,473.70 |
-| AMZU/USDT:USDT | +26.12% | $1,870,861.55 |
+| 1000RATS/USDT:USDT | +102.81% | $5,228,370.93 |
+| KOMA/USDT:USDT | +71.36% | $15,079,676.54 |
+| GIGGLE/USDT:USDT | +35.13% | $11,698,111.49 |
+| AXTISTOCK/USDT:USDT | +28.31% | $10,319,741.97 |
+| TAG/USDT:USDT | +25.70% | $1,512,316.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GGLL/USDT:USDT | below_1h_threshold | +4.93% | +5.18% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.72% | +2.97% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.64% | +2.89% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.79% |
-| COTI/USDT:USDT | below_1h_threshold | +2.29% | +2.53% |
+| GGLL/USDT:USDT | below_1h_threshold | +4.93% | +5.09% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.80% | +2.96% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.70% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.06% | +2.22% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.91% | +2.06% |
 
 ## 7. 次に見るべき不足
 
