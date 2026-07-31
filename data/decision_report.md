@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-07-31T14:51:45.673905+00:00
+- generated_at: 2026-07-31T14:56:37.547653+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10013**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-07-31T14:51:36.329754+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.85% price=62712.9
-- Funnel: target 921 → liquid 180 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.7 >= 65=1, 4h RSI 97.8 >= 65=1, 4h RSI 75.7 >= 65=1, 4h RSI 87.2 >= 65=1, 4h RSI 82.5 >= 65=1
+- 更新: 2026-07-31T14:56:29.912087+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.02% price=62605.5
+- Funnel: target 921 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.0 >= 65=1, 4h RSI 75.5 >= 65=1, 4h RSI 87.2 >= 65=1, 4h RSI 97.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +87.14% | $14,971,351.36 |
-| 1000RATS/USDT:USDT | +67.41% | $2,571,120.51 |
-| GIGGLE/USDT:USDT | +34.10% | $11,382,902.56 |
-| AXTISTOCK/USDT:USDT | +29.00% | $10,008,984.51 |
-| AMZU/USDT:USDT | +27.23% | $1,856,707.44 |
+| KOMA/USDT:USDT | +82.03% | $15,054,282.70 |
+| 1000RATS/USDT:USDT | +69.80% | $2,827,962.80 |
+| GIGGLE/USDT:USDT | +34.07% | $11,466,920.52 |
+| AXTISTOCK/USDT:USDT | +29.44% | $10,044,327.87 |
+| AMZU/USDT:USDT | +27.35% | $1,862,245.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.27% | +5.12% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.91% | +4.76% |
-| GGLL/USDT:USDT | below_1h_threshold | +3.70% | +4.55% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.38% | +4.23% |
-| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.87% |
+| DEXE/USDT:USDT | below_1h_threshold | +4.95% | +5.97% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.02% | +5.04% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.92% | +4.94% |
+| GGLL/USDT:USDT | below_1h_threshold | +3.70% | +4.72% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +4.04% |
 
 ## 7. 次に見るべき不足
 
