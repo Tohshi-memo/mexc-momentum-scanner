@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T11:56:13.574594+00:00
+- generated_at: 2026-08-01T12:01:19.677169+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10088**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T11:56:06.367063+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63044.9
-- Funnel: target 921 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-01T12:01:12.514126+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63066.0
+- Funnel: target 921 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +33.91% | $1,437,315.75 |
-| TAKE/USDT:USDT | +27.78% | $1,193,180.82 |
-| BTW/USDT:USDT | +21.96% | $9,226,666.24 |
-| ICNT/USDT:USDT | +18.56% | $1,155,013.92 |
-| BEAT/USDT:USDT | +14.78% | $33,971,225.66 |
+| JIMOTHY/USDT:USDT | +33.21% | $1,427,282.80 |
+| TAKE/USDT:USDT | +29.34% | $1,194,059.39 |
+| BTW/USDT:USDT | +21.63% | $9,305,550.58 |
+| ICNT/USDT:USDT | +18.84% | $1,151,125.57 |
+| BEAT/USDT:USDT | +15.19% | $31,006,549.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.73% | +4.70% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.47% | +2.45% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.41% | +2.38% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.59% | +1.57% |
-| SHIB/USDT:USDT | below_1h_threshold | +1.43% | +1.41% |
+| ICNT/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
+| UB/USDT:USDT | below_1h_threshold | +0.41% | +0.38% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.32% | +0.29% |
+| DASH/USDT:USDT | below_1h_threshold | +0.32% | +0.29% |
+| POL/USDT:USDT | below_1h_threshold | +0.32% | +0.28% |
 
 ## 7. 次に見るべき不足
 
