@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T14:11:13.865127+00:00
+- generated_at: 2026-08-01T14:16:43.726414+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10093**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.15** / 初期 $100.00 (+11.15%)
-- 確定: 904件 (Win 286 / Loss 353 / Flat 265) / pending 2件 / skip 656件
+- 確定: 904件 (Win 286 / Loss 353 / Flat 265) / pending 4件 / skip 656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000206 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $111.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T14:11:06.729983+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63070.6
-- Funnel: target 922 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-01T14:16:33.197635+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63050.1
+- Funnel: target 922 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +47.54% | $1,077,803.93 |
-| BTW/USDT:USDT | +28.88% | $11,749,079.44 |
-| EPIC/USDT:USDT | +26.30% | $1,184,680.84 |
-| UAI/USDT:USDT | +26.08% | $4,651,045.22 |
-| TAKE/USDT:USDT | +24.09% | $1,316,255.68 |
+| IDOL/USDT:USDT | +47.36% | $1,081,581.65 |
+| EPIC/USDT:USDT | +27.73% | $1,205,310.71 |
+| BTW/USDT:USDT | +27.14% | $11,808,036.19 |
+| UAI/USDT:USDT | +26.59% | $4,695,747.83 |
+| TAKE/USDT:USDT | +24.81% | $1,318,611.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +4.82% | +4.77% |
-| TAKE/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.88% | +0.83% |
-| SATS/USDT:USDT | below_1h_threshold | +0.72% | +0.67% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.65% | +0.59% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.09% | +2.07% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.76% | +1.74% |
+| US/USDT:USDT | below_1h_threshold | +1.14% | +1.11% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.99% | +0.97% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.94% | +0.92% |
 
 ## 7. 次に見るべき不足
 
