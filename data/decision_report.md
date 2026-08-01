@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T16:51:57.501590+00:00
+- generated_at: 2026-08-01T16:56:43.630847+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10104**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T16:51:37.879223+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=62924.5
-- Funnel: target 922 → liquid 143 → pre 50 → checked 50 → surge 7 → strict 4
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.8 >= 65=1, 4h RSI 67.4 >= 65=1, 4h RSI 82.1 >= 65=1
+- 更新: 2026-08-01T16:56:28.911495+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=62894.2
+- Funnel: target 922 → liquid 143 → pre 50 → checked 50 → surge 6 → strict 3
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 67.6 >= 65=1, 4h RSI 82.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEVO/USDT:USDT | +13.76% | $1,313,994.55 |
-| UAI/USDT:USDT | +10.58% | $7,111,093.24 |
-| AKE/USDT:USDT | +8.32% | $17,488,446.13 |
-| 1000RATS/USDT:USDT | +6.62% | $22,837,157.02 |
-| FIGHT/USDT:USDT | +6.49% | $2,290,981.19 |
+| AEVO/USDT:USDT | +11.41% | $1,438,307.15 |
+| UAI/USDT:USDT | +11.29% | $7,239,108.69 |
+| FIGHT/USDT:USDT | +7.56% | $2,297,295.95 |
+| AKE/USDT:USDT | +7.02% | $17,815,058.35 |
+| IDOL/USDT:USDT | +6.90% | $1,527,446.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +3.61% | +3.69% |
-| ON/USDT:USDT | below_1h_threshold | +2.87% | +2.95% |
-| ICNT/USDT:USDT | below_1h_threshold | +2.60% | +2.68% |
-| TAG/USDT:USDT | below_1h_threshold | +2.52% | +2.60% |
-| US/USDT:USDT | below_1h_threshold | +2.43% | +2.51% |
+| ON/USDT:USDT | below_1h_threshold | +4.99% | +5.12% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +4.20% | +4.33% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.14% | +4.27% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.07% | +3.20% |
+| TAG/USDT:USDT | below_1h_threshold | +2.74% | +2.87% |
 
 ## 7. 次に見るべき不足
 
