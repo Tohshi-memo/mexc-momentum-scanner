@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T15:01:18.338652+00:00
+- generated_at: 2026-08-01T15:06:18.460741+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10096**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T15:01:12.695572+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=63097.0
+- 更新: 2026-08-01T15:06:11.200595+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63093.0
 - Funnel: target 922 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +66.11% | $1,269,149.82 |
-| FIGHT/USDT:USDT | +34.44% | $1,240,735.91 |
-| JIMOTHY/USDT:USDT | +31.85% | $1,480,172.44 |
-| BTW/USDT:USDT | +30.33% | $12,242,211.44 |
-| EPIC/USDT:USDT | +26.17% | $1,649,962.18 |
+| IDOL/USDT:USDT | +62.99% | $1,284,852.81 |
+| JIMOTHY/USDT:USDT | +30.57% | $1,481,032.94 |
+| BTW/USDT:USDT | +29.89% | $12,298,966.04 |
+| FIGHT/USDT:USDT | +28.59% | $1,386,552.03 |
+| EPIC/USDT:USDT | +25.75% | $1,679,081.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EPIC/USDT:USDT | below_1h_threshold | +0.67% | +0.67% |
-| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.39% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
-| MYX/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
+| US/USDT:USDT | below_1h_threshold | +1.32% | +1.33% |
+| AKE/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| MYX/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.60% |
+| SHIB/USDT:USDT | below_1h_threshold | +0.42% | +0.43% |
 
 ## 7. 次に見るべき不足
 
