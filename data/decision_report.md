@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T04:21:17.315545+00:00
+- generated_at: 2026-08-01T04:26:29.280150+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10058**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.09** / 初期 $100.00 (+12.09%)
-- 確定: 874件 (Win 283 / Loss 345 / Flat 246) / pending 5件 / skip 653件
+- 確定: 874件 (Win 283 / Loss 345 / Flat 246) / pending 6件 / skip 654件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000306 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.09
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T04:21:10.948188+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=62999.9
-- Funnel: target 921 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-01T04:26:19.073033+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63020.4
+- Funnel: target 921 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +37.79% | $1,233,519.84 |
-| KOMA/USDT:USDT | +26.04% | $18,395,965.17 |
-| BTW/USDT:USDT | +22.71% | $2,845,857.43 |
-| LAB/USDT:USDT | +16.87% | $2,069,063.83 |
-| GIGGLE/USDT:USDT | +16.00% | $24,332,134.74 |
+| JIMOTHY/USDT:USDT | +33.73% | $1,238,442.01 |
+| KOMA/USDT:USDT | +30.10% | $18,431,396.89 |
+| BTW/USDT:USDT | +22.40% | $2,872,226.84 |
+| BANK/USDT:USDT | +19.89% | $28,335,121.25 |
+| GIGGLE/USDT:USDT | +16.13% | $24,364,572.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.42% | +3.37% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.94% | +2.90% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.55% | +1.51% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.16% | +1.11% |
-| PI/USDT:USDT | below_1h_threshold | +1.04% | +1.00% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.00% | +2.93% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.03% | +1.96% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.39% | +1.31% |
+| PI/USDT:USDT | below_1h_threshold | +0.99% | +0.92% |
+| TAG/USDT:USDT | below_1h_threshold | +0.73% | +0.66% |
 
 ## 7. 次に見るべき不足
 
