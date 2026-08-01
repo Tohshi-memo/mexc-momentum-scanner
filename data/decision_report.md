@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T14:31:25.823888+00:00
+- generated_at: 2026-08-01T14:36:33.894926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10093**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.15** / 初期 $100.00 (+11.15%)
-- 確定: 904件 (Win 286 / Loss 353 / Flat 265) / pending 4件 / skip 656件
+- 確定: 904件 (Win 286 / Loss 353 / Flat 265) / pending 5件 / skip 656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000206 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $111.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T14:31:18.525614+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63093.9
-- Funnel: target 922 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.5 >= 65=1
+- 更新: 2026-08-01T14:36:23.070059+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63071.3
+- Funnel: target 922 → liquid 144 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.5 >= 65=1, 4h RSI 83.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +51.65% | $1,103,046.26 |
-| BTW/USDT:USDT | +29.25% | $11,986,073.64 |
-| JIMOTHY/USDT:USDT | +26.46% | $1,492,764.66 |
-| TAKE/USDT:USDT | +26.26% | $1,329,376.67 |
-| EPIC/USDT:USDT | +21.43% | $1,397,528.78 |
+| IDOL/USDT:USDT | +54.41% | $1,153,714.17 |
+| BTW/USDT:USDT | +27.39% | $12,026,618.84 |
+| TAKE/USDT:USDT | +26.86% | $1,333,196.46 |
+| JIMOTHY/USDT:USDT | +26.46% | $1,495,609.37 |
+| EUL/USDT:USDT | +21.11% | $1,154,711.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.75% | +4.66% |
-| EUL/USDT:USDT | below_1h_threshold | +4.45% | +4.36% |
-| IDOL/USDT:USDT | below_1h_threshold | +3.18% | +3.09% |
-| TAKE/USDT:USDT | below_1h_threshold | +3.07% | +2.98% |
-| AKE/USDT:USDT | below_1h_threshold | +2.91% | +2.82% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.75% | +4.70% |
+| TAKE/USDT:USDT | below_1h_threshold | +3.56% | +3.51% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.73% | +1.67% |
+| AKE/USDT:USDT | below_1h_threshold | +1.54% | +1.49% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
 
 ## 7. 次に見るべき不足
 
