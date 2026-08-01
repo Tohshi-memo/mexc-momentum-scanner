@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T23:01:22.768959+00:00
+- generated_at: 2026-08-01T23:06:20.454994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10128**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T23:01:14.052000+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=62819.8
+- 更新: 2026-08-01T23:06:13.209030+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=62814.2
 - Funnel: target 922 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +40.27% | $18,771,099.41 |
-| AKE/USDT:USDT | +27.66% | $34,872,122.32 |
-| UAI/USDT:USDT | +25.59% | $15,618,195.73 |
-| BLESS/USDT:USDT | +17.27% | $4,636,771.86 |
-| HEI/USDT:USDT | +8.99% | $1,009,527.13 |
+| 1000RATS/USDT:USDT | +39.67% | $18,972,065.11 |
+| AKE/USDT:USDT | +28.20% | $35,037,958.42 |
+| UAI/USDT:USDT | +27.07% | $15,693,235.88 |
+| BLESS/USDT:USDT | +17.44% | $4,666,031.58 |
+| HEI/USDT:USDT | +8.74% | $1,009,866.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +0.26% | +0.22% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.25% | +0.22% |
-| TLM/USDT:USDT | below_1h_threshold | +0.25% | +0.22% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.25% | +0.22% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.25% | +0.21% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.03% | +3.01% |
+| UAI/USDT:USDT | below_1h_threshold | +0.66% | +0.64% |
+| ON/USDT:USDT | below_1h_threshold | +0.36% | +0.34% |
+| AKE/USDT:USDT | below_1h_threshold | +0.33% | +0.31% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.29% | +0.27% |
 
 ## 7. 次に見るべき不足
 
