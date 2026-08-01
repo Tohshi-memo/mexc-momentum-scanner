@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T18:51:27.250487+00:00
+- generated_at: 2026-08-01T18:56:27.851705+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10118**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T18:51:19.028228+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=62364.1
-- Funnel: target 922 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.4 >= 65=1, 4h RSI 83.2 >= 65=1
+- 更新: 2026-08-01T18:56:17.549635+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=62453.2
+- Funnel: target 922 → liquid 140 → pre 50 → checked 49 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- Strict後reject: 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +18.86% | $11,101,866.07 |
-| AKE/USDT:USDT | +15.73% | $30,636,584.70 |
-| 1000RATS/USDT:USDT | +14.20% | $20,857,107.06 |
-| BLESS/USDT:USDT | +12.82% | $1,745,964.51 |
-| TAG/USDT:USDT | +8.42% | $1,959,178.20 |
+| UAI/USDT:USDT | +20.61% | $11,216,730.93 |
+| 1000RATS/USDT:USDT | +13.95% | $20,893,230.61 |
+| AKE/USDT:USDT | +13.85% | $30,824,321.32 |
+| BLESS/USDT:USDT | +13.43% | $1,807,792.77 |
+| TAG/USDT:USDT | +8.85% | $1,976,160.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +2.48% | +2.99% |
-| TAG/USDT:USDT | below_1h_threshold | +2.24% | +2.75% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.80% | +2.31% |
-| CAP/USDT:USDT | below_1h_threshold | +1.21% | +1.72% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.48% |
+| TAG/USDT:USDT | below_1h_threshold | +2.65% | +3.02% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.31% | +2.68% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.75% | +2.12% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.34% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.86% | +1.23% |
 
 ## 7. 次に見るべき不足
 
