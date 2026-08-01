@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T12:16:19.542930+00:00
+- generated_at: 2026-08-01T12:21:14.194474+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10090**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T12:16:10.068731+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63077.0
+- 更新: 2026-08-01T12:21:04.995103+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63066.7
 - Funnel: target 921 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +29.25% | $1,435,391.53 |
-| TAKE/USDT:USDT | +26.34% | $1,215,862.02 |
-| BTW/USDT:USDT | +23.30% | $9,777,140.96 |
-| UAI/USDT:USDT | +22.79% | $3,693,024.76 |
-| ICNT/USDT:USDT | +17.75% | $1,169,739.10 |
+| JIMOTHY/USDT:USDT | +28.87% | $1,438,522.06 |
+| BTW/USDT:USDT | +27.46% | $9,920,259.92 |
+| TAKE/USDT:USDT | +26.90% | $1,218,690.37 |
+| UAI/USDT:USDT | +23.14% | $3,772,342.27 |
+| ICNT/USDT:USDT | +18.02% | $1,175,613.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATS/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
-| UB/USDT:USDT | below_1h_threshold | +1.27% | +1.22% |
-| SHIB/USDT:USDT | below_1h_threshold | +0.99% | +0.94% |
-| AKE/USDT:USDT | below_1h_threshold | +0.58% | +0.53% |
-| INJ/USDT:USDT | below_1h_threshold | +0.51% | +0.46% |
+| BTW/USDT:USDT | below_1h_threshold | +3.61% | +3.57% |
+| SATS/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.19% | +1.16% |
+| UB/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
+| AKE/USDT:USDT | below_1h_threshold | +0.87% | +0.83% |
 
 ## 7. 次に見るべき不足
 
