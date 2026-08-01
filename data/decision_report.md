@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T07:51:28.502385+00:00
+- generated_at: 2026-08-01T07:56:18.570818+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10074**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T07:51:19.975358+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63021.3
+- 更新: 2026-08-01T07:56:11.378458+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63025.6
 - Funnel: target 921 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +30.04% | $4,458,728.13 |
-| JIMOTHY/USDT:USDT | +29.16% | $1,288,475.28 |
-| TLM/USDT:USDT | +22.92% | $2,414,019.37 |
-| GIGGLE/USDT:USDT | +22.52% | $29,945,211.15 |
-| KOMA/USDT:USDT | +21.98% | $17,076,783.91 |
+| JIMOTHY/USDT:USDT | +32.12% | $1,290,243.04 |
+| BTW/USDT:USDT | +29.70% | $4,474,463.25 |
+| GIGGLE/USDT:USDT | +24.02% | $30,064,155.35 |
+| TLM/USDT:USDT | +23.51% | $2,464,786.19 |
+| KOMA/USDT:USDT | +22.78% | $17,097,204.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.35% | +4.39% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.35% | +3.40% |
-| TLM/USDT:USDT | below_1h_threshold | +2.01% | +2.06% |
-| US/USDT:USDT | below_1h_threshold | +1.68% | +1.72% |
-| UAI/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.12% | +3.16% |
+| TLM/USDT:USDT | below_1h_threshold | +2.61% | +2.65% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.52% | +2.56% |
+| US/USDT:USDT | below_1h_threshold | +2.38% | +2.42% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.19% | +1.23% |
 
 ## 7. 次に見るべき不足
 
