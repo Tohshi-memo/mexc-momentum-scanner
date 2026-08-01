@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T22:16:21.833140+00:00
+- generated_at: 2026-08-01T22:21:11.369879+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10126**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T22:16:14.654418+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=62826.3
+- 更新: 2026-08-01T22:21:05.764865+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=62816.9
 - Funnel: target 922 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +31.67% | $18,954,343.31 |
-| AKE/USDT:USDT | +27.43% | $34,246,436.52 |
-| UAI/USDT:USDT | +26.98% | $14,936,563.32 |
-| BLESS/USDT:USDT | +16.47% | $4,375,572.00 |
-| ESPORTS/USDT:USDT | +8.16% | $1,956,670.88 |
+| 1000RATS/USDT:USDT | +32.34% | $19,044,063.06 |
+| UAI/USDT:USDT | +27.77% | $15,013,985.64 |
+| AKE/USDT:USDT | +26.19% | $34,478,187.74 |
+| BLESS/USDT:USDT | +16.43% | $4,426,398.62 |
+| ESPORTS/USDT:USDT | +9.31% | $1,968,491.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.59% | +2.53% |
-| UAI/USDT:USDT | below_1h_threshold | +2.18% | +2.12% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.64% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.62% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
+| UAI/USDT:USDT | below_1h_threshold | +3.03% | +2.98% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.92% | +1.87% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.70% | +1.66% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.64% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.19% | +1.15% |
 
 ## 7. 次に見るべき不足
 
