@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-01T10:16:22.918315+00:00
+- generated_at: 2026-08-01T10:21:19.021573+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **10082**
+- closed shadow trades: **10083**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.26% / filled 20/20。**
-- 全期間 MARKET基準: n=10082, expectancy=-0.00%
+- 全期間 MARKET基準: n=10083, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.26%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | LIMIT_2PCT | 18/20 | 90.0% | +1.69% | **+1.52%** |
 | MARKET | 20/20 | 100.0% | +1.26% | **+1.26%** |
 | LIMIT_1PCT | 18/20 | 90.0% | +0.90% | **+0.81%** |
-| LIMIT_ATR | 12/20 | 60.0% | +1.20% | **+0.72%** |
+| LIMIT_ATR | 12/20 | 60.0% | +1.17% | **+0.70%** |
 | LIMIT_BB3S | 4/20 | 20.0% | +2.96% | **+0.59%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$573.69** / 初期 $100.00 (+473.69%)
-- 確定: 3629件 (Win 1158 / Loss 1190 / Flat 1281) / skip 3014件
+- 確定: 3629件 (Win 1158 / Loss 1190 / Flat 1281) / skip 3015件
 - 成長率目線: 平均log +0.000481 / 幾何平均 +0.048% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: GRVT/USDT:USDT `LIMIT_FIB1272_LONG` SL_HIT account -0.50% 残高後 $573.69
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$140.81** / 初期 $100.00 (+40.81%)
-- 確定: 1279件 (Win 359 / Loss 297 / Flat 623) / skip 2214件
+- 確定: 1279件 (Win 359 / Loss 297 / Flat 623) / skip 2215件
 - 成長率目線: 平均log +0.000268 / 幾何平均 +0.027% per trade / maxDD +3.89%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $140.81
@@ -63,37 +63,37 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.11** / 初期 $100.00 (+11.11%)
-- 確定: 893件 (Win 285 / Loss 353 / Flat 255) / pending 4件 / skip 656件
+- 確定: 894件 (Win 285 / Loss 353 / Flat 256) / pending 3件 / skip 656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000039 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: GRVT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $111.11
+- 最新: SATS/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $111.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T10:16:14.286556+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=62985.3
-- Funnel: target 921 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-01T10:21:10.224142+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63035.4
+- Funnel: target 921 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +43.81% | $16,675,476.02 |
-| JIMOTHY/USDT:USDT | +40.33% | $1,400,479.72 |
-| BTW/USDT:USDT | +39.61% | $6,277,189.46 |
-| TAKE/USDT:USDT | +31.02% | $1,050,905.93 |
-| ICNT/USDT:USDT | +25.81% | $1,014,924.17 |
+| KOMA/USDT:USDT | +45.10% | $16,740,082.87 |
+| JIMOTHY/USDT:USDT | +41.55% | $1,402,221.16 |
+| BTW/USDT:USDT | +38.96% | $6,346,802.21 |
+| TAKE/USDT:USDT | +31.94% | $1,056,640.94 |
+| ICNT/USDT:USDT | +23.55% | $1,022,254.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAG/USDT:USDT | below_1h_threshold | +2.61% | +2.67% |
-| SATS/USDT:USDT | below_1h_threshold | +2.33% | +2.39% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.08% | +2.14% |
-| AKE/USDT:USDT | below_1h_threshold | +1.93% | +1.99% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.51% | +1.57% |
+| SATS/USDT:USDT | below_1h_threshold | +4.93% | +4.91% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.97% | +2.95% |
+| AKE/USDT:USDT | below_1h_threshold | +2.35% | +2.33% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.17% | +2.15% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.39% | +1.37% |
 
 ## 7. 次に見るべき不足
 
