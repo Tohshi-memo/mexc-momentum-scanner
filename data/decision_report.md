@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T12:46:25.900874+00:00
+- generated_at: 2026-08-01T12:51:27.103065+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10091**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$111.15** / 初期 $100.00 (+11.15%)
-- 確定: 902件 (Win 286 / Loss 353 / Flat 263) / pending 1件 / skip 656件
+- 確定: 902件 (Win 286 / Loss 353 / Flat 263) / pending 2件 / skip 656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000075 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $111.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T12:46:16.572360+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63066.9
-- Funnel: target 921 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-01T12:51:17.083755+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63078.9
+- Funnel: target 921 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +46.13% | $1,019,056.85 |
-| BTW/USDT:USDT | +29.63% | $10,409,383.98 |
-| JIMOTHY/USDT:USDT | +26.18% | $1,455,226.80 |
-| UAI/USDT:USDT | +21.80% | $4,082,383.90 |
-| TAKE/USDT:USDT | +19.73% | $1,255,217.86 |
+| IDOL/USDT:USDT | +46.32% | $1,022,036.60 |
+| BTW/USDT:USDT | +29.71% | $10,532,641.82 |
+| JIMOTHY/USDT:USDT | +26.18% | $1,456,959.14 |
+| UAI/USDT:USDT | +21.94% | $4,121,674.47 |
+| ICNT/USDT:USDT | +20.10% | $1,199,026.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +5.00% | +4.97% |
-| AKE/USDT:USDT | below_1h_threshold | +2.01% | +1.97% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.00% | +0.97% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.97% | +0.94% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
+| AKE/USDT:USDT | below_1h_threshold | +1.98% | +1.93% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.53% | +1.48% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.27% | +1.22% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.24% | +1.19% |
+| SATS/USDT:USDT | below_1h_threshold | +1.13% | +1.08% |
 
 ## 7. 次に見るべき不足
 
