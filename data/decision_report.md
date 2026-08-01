@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T00:56:25.091879+00:00
+- generated_at: 2026-08-01T01:01:18.669926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10039**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T00:56:15.205451+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=62942.5
-- Funnel: target 921 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-01T01:01:11.524917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=62928.7
+- Funnel: target 921 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +29.73% | $17,763,054.40 |
-| GIGGLE/USDT:USDT | +24.45% | $21,657,596.14 |
-| JIMOTHY/USDT:USDT | +22.78% | $1,168,491.58 |
-| 1000RATS/USDT:USDT | +21.97% | $17,351,612.09 |
-| BTW/USDT:USDT | +15.42% | $1,884,153.24 |
+| KOMA/USDT:USDT | +25.10% | $17,621,453.29 |
+| JIMOTHY/USDT:USDT | +23.82% | $1,123,129.26 |
+| GIGGLE/USDT:USDT | +22.65% | $21,680,037.12 |
+| 1000RATS/USDT:USDT | +20.62% | $17,399,142.51 |
+| BTW/USDT:USDT | +15.26% | $1,827,071.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHIB/USDT:USDT | below_1h_threshold | +4.29% | +4.16% |
-| CAP/USDT:USDT | below_1h_threshold | +3.25% | +3.12% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.91% | +2.78% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.33% | +2.20% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.11% | +1.98% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.60% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.14% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.72% | +0.69% |
+| BTW/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.44% | +0.41% |
 
 ## 7. 次に見るべき不足
 
