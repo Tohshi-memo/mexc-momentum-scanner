@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T03:31:21.589112+00:00
+- generated_at: 2026-08-01T03:36:23.811730+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10054**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.28** / 初期 $100.00 (+12.28%)
-- 確定: 873件 (Win 283 / Loss 344 / Flat 246) / pending 6件 / skip 651件
+- 確定: 873件 (Win 283 / Loss 344 / Flat 246) / pending 6件 / skip 652件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000222 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $112.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T03:31:15.185874+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63000.0
+- 更新: 2026-08-01T03:36:15.984933+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=62970.7
 - Funnel: target 921 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.8 >= 65=1, 4h RSI 65.7 >= 65=1
+- Strict後reject: 4h RSI 65.3 >= 65=1, 4h RSI 76.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +35.39% | $1,209,073.36 |
-| KOMA/USDT:USDT | +31.53% | $18,303,317.79 |
-| BTW/USDT:USDT | +22.12% | $2,593,533.22 |
-| GIGGLE/USDT:USDT | +16.71% | $23,815,118.40 |
-| TLM/USDT:USDT | +15.67% | $1,860,376.23 |
+| JIMOTHY/USDT:USDT | +34.57% | $1,211,942.79 |
+| KOMA/USDT:USDT | +30.01% | $18,372,095.16 |
+| BTW/USDT:USDT | +21.75% | $2,624,342.53 |
+| GIGGLE/USDT:USDT | +17.52% | $23,882,989.21 |
+| TLM/USDT:USDT | +13.58% | $1,870,417.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +4.47% | +4.53% |
-| TAG/USDT:USDT | below_1h_threshold | +3.13% | +3.20% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.73% | +1.79% |
-| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.77% |
-| FLOW/USDT:USDT | below_1h_threshold | +1.33% | +1.39% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.55% | +4.66% |
+| TAG/USDT:USDT | below_1h_threshold | +2.98% | +3.09% |
+| UB/USDT:USDT | below_1h_threshold | +2.17% | +2.28% |
+| LAB/USDT:USDT | below_1h_threshold | +1.86% | +1.97% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.45% | +1.56% |
 
 ## 7. 次に見るべき不足
 
