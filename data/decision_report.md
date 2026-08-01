@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T20:26:13.931707+00:00
+- generated_at: 2026-08-01T20:31:16.997887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10121**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T20:26:07.979099+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=62572.6
+- 更新: 2026-08-01T20:31:09.879462+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=62591.4
 - Funnel: target 922 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +21.77% | $31,612,218.44 |
-| 1000RATS/USDT:USDT | +20.96% | $19,875,747.54 |
-| UAI/USDT:USDT | +19.46% | $13,016,518.31 |
-| BLESS/USDT:USDT | +13.81% | $3,312,570.34 |
-| TAG/USDT:USDT | +6.83% | $1,895,393.84 |
+| AKE/USDT:USDT | +21.34% | $31,780,062.44 |
+| 1000RATS/USDT:USDT | +20.36% | $19,911,565.63 |
+| UAI/USDT:USDT | +19.27% | $13,056,143.02 |
+| BLESS/USDT:USDT | +13.72% | $3,563,688.90 |
+| TAG/USDT:USDT | +7.48% | $1,897,974.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.17% | +3.05% |
-| AKE/USDT:USDT | below_1h_threshold | +1.56% | +1.45% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.05% | +0.94% |
-| SYN/USDT:USDT | below_1h_threshold | +1.02% | +0.91% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.78% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.19% | +3.05% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.69% | +1.55% |
+| AKE/USDT:USDT | below_1h_threshold | +1.22% | +1.08% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.75% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +0.89% | +0.75% |
 
 ## 7. 次に見るべき不足
 
