@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T16:26:18.745721+00:00
+- generated_at: 2026-08-01T16:31:32.067614+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10101**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$110.96** / 初期 $100.00 (+10.96%)
-- 確定: 912件 (Win 288 / Loss 357 / Flat 267) / pending 2件 / skip 656件
+- 確定: 912件 (Win 288 / Loss 357 / Flat 267) / pending 4件 / skip 657件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000165 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EUL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $110.96
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T16:26:11.399666+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=62926.6
-- Funnel: target 922 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-01T16:31:21.299570+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=62934.4
+- Funnel: target 922 → liquid 140 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 67.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIGHT/USDT:USDT | +4.08% | $2,245,345.71 |
-| IDOL/USDT:USDT | +3.83% | $1,492,438.87 |
-| 1000RATS/USDT:USDT | +3.20% | $22,648,825.34 |
-| ESPORTS/USDT:USDT | +3.15% | $1,550,798.57 |
-| UAI/USDT:USDT | +3.01% | $6,486,064.79 |
+| IDOL/USDT:USDT | +7.83% | $1,502,086.35 |
+| FIGHT/USDT:USDT | +5.74% | $2,253,342.85 |
+| UAI/USDT:USDT | +4.93% | $6,508,091.04 |
+| 1000RATS/USDT:USDT | +3.44% | $22,661,394.61 |
+| ESPORTS/USDT:USDT | +2.28% | $1,565,217.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IDOL/USDT:USDT | below_1h_threshold | +4.13% | +4.21% |
-| FIGHT/USDT:USDT | below_1h_threshold | +4.09% | +4.17% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.20% | +3.28% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.16% | +3.24% |
-| UAI/USDT:USDT | below_1h_threshold | +3.02% | +3.10% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.53% | +3.60% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.29% | +2.35% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.93% | +1.99% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.86% | +1.93% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.63% | +1.70% |
 
 ## 7. 次に見るべき不足
 
