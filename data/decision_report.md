@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T09:56:27.480880+00:00
+- generated_at: 2026-08-01T10:01:14.017375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10081**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T09:56:16.474146+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=63021.1
-- Funnel: target 921 → liquid 155 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 72.8 >= 65=1, 4h RSI 71.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-01T10:01:06.758686+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63058.4
+- Funnel: target 921 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +46.59% | $17,026,498.68 |
-| BTW/USDT:USDT | +38.69% | $6,064,236.42 |
-| JIMOTHY/USDT:USDT | +36.52% | $1,415,805.21 |
-| TAKE/USDT:USDT | +30.58% | $1,043,659.50 |
-| ICNT/USDT:USDT | +23.91% | $1,042,853.95 |
+| KOMA/USDT:USDT | +43.36% | $16,431,933.51 |
+| JIMOTHY/USDT:USDT | +38.79% | $1,394,828.85 |
+| BTW/USDT:USDT | +38.70% | $6,040,189.07 |
+| TAKE/USDT:USDT | +29.30% | $1,041,388.90 |
+| MYX/USDT:USDT | +14.09% | $1,249,499.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAKE/USDT:USDT | below_1h_threshold | +3.00% | +3.12% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.50% | +2.62% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.72% | +1.84% |
-| MYX/USDT:USDT | below_1h_threshold | +1.51% | +1.63% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.16% | +1.28% |
+| SATS/USDT:USDT | below_1h_threshold | +1.61% | +1.56% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +0.96% | +0.90% |
+| MYX/USDT:USDT | below_1h_threshold | +0.38% | +0.32% |
+| FLOW/USDT:USDT | below_1h_threshold | +0.23% | +0.18% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +0.17% |
 
 ## 7. 次に見るべき不足
 
