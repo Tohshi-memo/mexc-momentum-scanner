@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T10:01:14.017375+00:00
+- generated_at: 2026-08-01T10:06:21.773982+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10081**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T10:01:06.758686+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63058.4
-- Funnel: target 921 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-01T10:06:15.008231+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=62959.3
+- Funnel: target 921 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +43.36% | $16,431,933.51 |
-| JIMOTHY/USDT:USDT | +38.79% | $1,394,828.85 |
-| BTW/USDT:USDT | +38.70% | $6,040,189.07 |
-| TAKE/USDT:USDT | +29.30% | $1,041,388.90 |
-| MYX/USDT:USDT | +14.09% | $1,249,499.34 |
+| KOMA/USDT:USDT | +41.22% | $16,501,463.80 |
+| BTW/USDT:USDT | +39.17% | $6,120,517.17 |
+| JIMOTHY/USDT:USDT | +38.96% | $1,396,305.21 |
+| TAKE/USDT:USDT | +28.10% | $1,044,843.00 |
+| ICNT/USDT:USDT | +23.82% | $1,005,147.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SATS/USDT:USDT | below_1h_threshold | +1.61% | +1.56% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +0.96% | +0.90% |
-| MYX/USDT:USDT | below_1h_threshold | +0.38% | +0.32% |
-| FLOW/USDT:USDT | below_1h_threshold | +0.23% | +0.18% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +0.17% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.08% | +1.18% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.81% | +0.91% |
+| FLOW/USDT:USDT | below_1h_threshold | +0.50% | +0.60% |
+| BTW/USDT:USDT | below_1h_threshold | +0.40% | +0.50% |
+| SATS/USDT:USDT | below_1h_threshold | +0.36% | +0.46% |
 
 ## 7. 次に見るべき不足
 
