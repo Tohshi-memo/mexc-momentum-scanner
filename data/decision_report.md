@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T06:51:27.916260+00:00
+- generated_at: 2026-08-01T06:56:22.371348+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10069**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T06:51:17.759227+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63050.9
-- Funnel: target 921 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 82.7 >= 65=1
+- 更新: 2026-08-01T06:56:12.414037+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63051.0
+- Funnel: target 921 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +31.00% | $3,989,689.12 |
-| JIMOTHY/USDT:USDT | +27.09% | $1,261,836.21 |
-| KOMA/USDT:USDT | +26.49% | $17,466,927.47 |
-| GIGGLE/USDT:USDT | +25.76% | $28,479,365.30 |
-| TLM/USDT:USDT | +15.21% | $2,030,342.62 |
+| BTW/USDT:USDT | +31.49% | $4,017,242.17 |
+| GIGGLE/USDT:USDT | +29.45% | $28,772,176.15 |
+| JIMOTHY/USDT:USDT | +26.61% | $1,262,917.80 |
+| KOMA/USDT:USDT | +23.73% | $17,507,474.30 |
+| TLM/USDT:USDT | +17.24% | $2,036,788.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +3.75% | +3.67% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.60% | +3.52% |
-| BTW/USDT:USDT | below_1h_threshold | +3.14% | +3.06% |
-| TLM/USDT:USDT | below_1h_threshold | +2.44% | +2.36% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.02% |
+| MYX/USDT:USDT | below_relative_strength | +5.08% | +5.00% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.74% | +4.65% |
+| TLM/USDT:USDT | below_1h_threshold | +4.30% | +4.22% |
+| BTW/USDT:USDT | below_1h_threshold | +3.47% | +3.39% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.15% | +3.06% |
 
 ## 7. 次に見るべき不足
 
