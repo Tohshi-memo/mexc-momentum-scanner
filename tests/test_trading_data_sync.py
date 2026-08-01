@@ -9,6 +9,7 @@ from types import SimpleNamespace
 
 from core.trading_data_events import (
     record_analysis_event,
+    record_guard_state_event,
     record_live_decision_event,
 )
 from tools.sync_trading_data import (
@@ -157,6 +158,31 @@ def _historical_record() -> dict:
 
 
 class EventCaptureTest(unittest.TestCase):
+    def test_guard_state_event_contains_current_metrics(self) -> None:
+        with tempfile.TemporaryDirectory() as directory:
+            outbox = Path(directory) / "events.jsonl"
+            with patch.dict(
+                "os.environ",
+                {"TD_OUTBOX_FILE": str(outbox)},
+                clear=False,
+            ):
+                event = record_guard_state_event(
+                    guard_key="circuit_breaker",
+                    active=True,
+                    level="blocked",
+                    reasons=["losses=8/10>=7 and net_pnl<0"],
+                    metrics={"losses": 8, "window": 10, "net_pnl_pct": -19.76},
+                    policy_version="test-v1",
+                    policy_fingerprint="f" * 64,
+                    dry_run=True,
+                    decided_at="2026-08-01T01:00:00+00:00",
+                )
+
+        self.assertEqual("mexc.guard_state", event["event_type"])
+        self.assertEqual("circuit_breaker_state", event["payload"]["stage"])
+        self.assertTrue(event["payload"]["active"])
+        self.assertEqual(-19.76, event["payload"]["metrics"]["net_pnl_pct"])
+
     def test_direct_and_historical_signal_share_event_identity(self) -> None:
         with tempfile.TemporaryDirectory() as directory:
             outbox = Path(directory) / "events.jsonl"

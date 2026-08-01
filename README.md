@@ -219,14 +219,21 @@ Recent loss streak exceeded threshold.
 All new entries are skipped this cycle.
 ```
 
-#### 発動条件 (AND)
+#### 発動条件
 
 1. 直近 `CIRCUIT_BREAKER_LOOKBACK_HOURS` 時間内に closed した記録のみ対象
-2. 上記 pool が `CIRCUIT_BREAKER_WINDOW` 件以上ある
-3. pool 末尾 `CIRCUIT_BREAKER_WINDOW` 件のうち SL_HIT が
-   `CIRCUIT_BREAKER_LOSSES` 件以上
+2. 上記 pool が `CIRCUIT_BREAKER_MIN_SAMPLES` 件以上ある
+3. 各記録から `CIRCUIT_BREAKER_COST_PCT` を控除したネット損益を計算
+4. 次のどちらかなら新規エントリーを停止
+   - `CIRCUIT_BREAKER_WINDOW` 件が揃い、SL_HIT が
+     `CIRCUIT_BREAKER_LOSSES` 件以上、かつネット損益がマイナス
+   - 最低サンプル数が揃い、ネット損益が
+     `CIRCUIT_BREAKER_SEVERE_NET_LOSS_PCT` 以下
 
-デフォルト: **直近 48h 以内の 10 件中 5 件以上が SL なら発動**
+`CIRCUIT_BREAKER_WARN_LOSSES` 件以上は警戒ログだけを出し、停止はしません。
+
+デフォルト: **直近48hの10件で5敗は警戒、7敗以上かつネットマイナス、
+またはネット合計−8%以下で発動**（1件あたり想定コスト0.51%）。
 
 #### 自動解除
 

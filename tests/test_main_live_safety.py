@@ -144,7 +144,22 @@ class RunOnceLiveAbortTest(unittest.TestCase):
 
         stats = Mock()
         stats.summary.return_value = SimpleNamespace(recent_losses=0)
-        stats.circuit_breaker_active.return_value = False
+        stats.circuit_breaker_state.return_value = SimpleNamespace(
+            active=False,
+            warning=False,
+            level="normal",
+            sample_size=10,
+            minimum_sample_size=5,
+            window=10,
+            losses=0,
+            warning_loss_threshold=5,
+            loss_threshold=7,
+            gross_pnl_pct=8.0,
+            estimated_cost_pct=5.1,
+            net_pnl_pct=2.9,
+            severe_net_loss_pct=-8.0,
+            reasons=("recent risk is within limits",),
+        )
         stats.had_sl_within.return_value = False
 
         tracker = Mock()

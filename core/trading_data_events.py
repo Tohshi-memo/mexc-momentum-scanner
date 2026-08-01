@@ -461,6 +461,56 @@ def record_live_decision_event(
     return event
 
 
+def record_guard_state_event(
+    *,
+    guard_key: str,
+    active: bool,
+    level: str,
+    reasons: list[str],
+    metrics: Mapping[str, Any],
+    policy_version: str,
+    policy_fingerprint: str,
+    dry_run: bool,
+    decided_at: str | None = None,
+) -> dict[str, Any]:
+    """Record the current safety-guard state for the independent live runner.
+
+    This is emitted once per scanner cycle.  The live runner uses the newest
+    explicit state instead of inferring current status from an old rejected
+    candidate, which prevents stale circuit-breaker alerts and stale entries.
+    """
+    available_at = normalize_timestamp(decided_at or utc_now_iso())
+    mode = "dry_run" if dry_run else "live"
+    event = make_event(
+        event_type="mexc.guard_state",
+        dataset=DATASET_DECISIONS,
+        event_time=available_at,
+        available_at=available_at,
+        identity={
+            "guard_key": guard_key,
+            "observed_at": available_at,
+            "active": active,
+            "policy_fingerprint": policy_fingerprint,
+        },
+        policy_fingerprint=policy_fingerprint or None,
+        tags=[mode, "guard", level, "active" if active else "inactive"],
+        payload={
+            "stage": f"{guard_key}_state",
+            "guard_key": guard_key,
+            "active": active,
+            "level": level,
+            "reasons": list(reasons),
+            "metrics": json_value(dict(metrics)),
+            "policy_version": policy_version or "unversioned",
+            "policy_fingerprint": policy_fingerprint,
+            "mode": mode,
+            "decision_at": available_at,
+        },
+    )
+    append_outbox_event(event)
+    return event
+
+
 def try_record(func: Any, *args: Any, **kwargs: Any) -> dict[str, Any] | None:
     """Best-effort telemetry wrapper; storage must not change trade selection."""
     try:

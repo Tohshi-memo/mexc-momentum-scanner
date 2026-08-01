@@ -45,6 +45,7 @@ from core.stats import StatsManager
 from core.tracker import SymbolTracker
 from core.trading_data_events import (
     record_analysis_event,
+    record_guard_state_event,
     record_live_decision_event,
     try_record,
     utc_now_iso,
@@ -123,13 +124,17 @@ def run_once(
     cooldown_hours: int,
     cb_window: int,
     cb_loss_threshold: int,
+    cb_minimum_samples: int = 5,
+    cb_warning_threshold: int = 5,
+    cb_cost_pct: float = 0.51,
+    cb_severe_net_loss_pct: float = -8.0,
 ) -> None:
     """スキャン → テクニカル → ファンダ → 追跡更新 → 通知 の1サイクル。
 
     損失低減フィルターを組み込んだパイプライン:
       1. Stats を表示 (Performance panel)
       2. 追跡中の価格を更新 → TP/SL 確定したら記録 & 通知
-      3. Circuit breaker 判定 (直近 N 件中 M 件以上 SL なら当サイクル全スキップ)
+      3. Circuit breaker 判定 (損失件数 + コスト控除後損益で段階判定)
       4. BTC ステータス + サージ検知
       5. テクニカル分析 (RSI/BB/出来高/4h RSI)
       6. 各 confirmed シグナルごとに:
@@ -188,15 +193,56 @@ def run_once(
         print_tracking_status(active_tracked)
 
     # ── サーキットブレーカー判定 ─────────────────────────────────────
-    circuit_open = stats.circuit_breaker_active(
-        window=cb_window, loss_threshold=cb_loss_threshold,
+    circuit_state = stats.circuit_breaker_state(
+        window=cb_window,
+        minimum_sample_size=cb_minimum_samples,
+        warning_loss_threshold=cb_warning_threshold,
+        loss_threshold=cb_loss_threshold,
+        cost_pct=cb_cost_pct,
+        severe_net_loss_pct=cb_severe_net_loss_pct,
+    )
+    circuit_open = circuit_state.active
+    try_record(
+        record_guard_state_event,
+        guard_key="circuit_breaker",
+        active=circuit_state.active,
+        level=circuit_state.level,
+        reasons=list(circuit_state.reasons),
+        metrics={
+            "sample_size": circuit_state.sample_size,
+            "minimum_sample_size": circuit_state.minimum_sample_size,
+            "window": circuit_state.window,
+            "losses": circuit_state.losses,
+            "warning_loss_threshold": circuit_state.warning_loss_threshold,
+            "loss_threshold": circuit_state.loss_threshold,
+            "gross_pnl_pct": circuit_state.gross_pnl_pct,
+            "estimated_cost_pct": circuit_state.estimated_cost_pct,
+            "net_pnl_pct": circuit_state.net_pnl_pct,
+            "severe_net_loss_pct": circuit_state.severe_net_loss_pct,
+        },
+        policy_version=policy_version,
+        policy_fingerprint=policy_fingerprint,
+        dry_run=dry_run,
     )
     if circuit_open:
         print_circuit_breaker()
         logger.warning(
-            "Circuit breaker active: recent_losses=%d/%d threshold=%d. "
-            "Skipping all entries this cycle.",
-            summary.recent_losses, cb_window, cb_loss_threshold,
+            "Circuit breaker active: losses=%d/%d hard=%d net=%+.2f%% "
+            "severe=%+.2f%%. Skipping all entries this cycle.",
+            circuit_state.losses,
+            circuit_state.window,
+            circuit_state.loss_threshold,
+            circuit_state.net_pnl_pct,
+            circuit_state.severe_net_loss_pct,
+        )
+    elif circuit_state.warning:
+        logger.warning(
+            "Circuit breaker warning: losses=%d/%d warn=%d net=%+.2f%%. "
+            "Entries remain enabled.",
+            circuit_state.losses,
+            circuit_state.window,
+            circuit_state.warning_loss_threshold,
+            circuit_state.net_pnl_pct,
         )
     if not dry_run:
         notify_guard_transition(
@@ -205,8 +251,9 @@ def run_once(
             guard_name="サーキットブレーカー",
             active=circuit_open,
             reason=(
-                f"直近{cb_window}件中{summary.recent_losses}件が損切り。"
-                f"発動基準は{cb_loss_threshold}件以上です。"
+                f"直近{circuit_state.sample_size}件中"
+                f"{circuit_state.losses}件が損切り、"
+                f"コスト控除後損益は{circuit_state.net_pnl_pct:+.2f}%です。"
             ),
             impact=(
                 "新規の実弾注文は送信されません。"
@@ -286,8 +333,10 @@ def run_once(
                 accepted=False,
                 stage="circuit_breaker",
                 reasons=[
-                    f"recent_losses={summary.recent_losses}/{cb_window}",
-                    f"loss_threshold={cb_loss_threshold}",
+                    f"recent_losses={circuit_state.losses}/{circuit_state.window}",
+                    f"loss_threshold={circuit_state.loss_threshold}",
+                    f"net_pnl_pct={circuit_state.net_pnl_pct:+.2f}",
+                    f"severe_net_loss_pct={circuit_state.severe_net_loss_pct:+.2f}",
                 ],
                 policy_version=policy_version,
                 policy_fingerprint=policy_fingerprint,
@@ -1037,16 +1086,36 @@ def main() -> None:
     # 損失低減用パラメーター
     cooldown_hours:    int = int(os.getenv("COOLDOWN_HOURS", "48"))
     cb_window:         int = int(os.getenv("CIRCUIT_BREAKER_WINDOW", "10"))
-    cb_loss_threshold: int = int(os.getenv("CIRCUIT_BREAKER_LOSSES", "5"))
+    cb_minimum_samples: int = int(
+        os.getenv("CIRCUIT_BREAKER_MIN_SAMPLES", "5")
+    )
+    cb_warning_threshold: int = int(
+        os.getenv("CIRCUIT_BREAKER_WARN_LOSSES", "5")
+    )
+    cb_loss_threshold: int = int(os.getenv("CIRCUIT_BREAKER_LOSSES", "7"))
+    cb_cost_pct: float = float(os.getenv("CIRCUIT_BREAKER_COST_PCT", "0.51"))
+    cb_severe_net_loss_pct: float = float(
+        os.getenv("CIRCUIT_BREAKER_SEVERE_NET_LOSS_PCT", "-8.0")
+    )
 
     # 実験用シャドウトレード設定
     experiment_max_per_cycle: int = int(os.getenv("EXPERIMENT_MAX_PER_CYCLE", "20"))
     max_live_orders_per_run: int = int(os.getenv("LIVE_MAX_ORDERS_PER_RUN", "1"))
 
     logger.info(
-        "MEXC Scanner starting | mode=%s dry_run=%s cooldown=%dh cb=%d/%d",
+        "MEXC Scanner starting | mode=%s dry_run=%s cooldown=%dh "
+        "cb_min=%d cb_warn=%d/%d cb_hard=%d/%d "
+        "cb_cost=%.2f%% cb_severe=%+.2f%%",
         "RUN_ONCE" if run_once_mode else f"LOOP/{scan_interval}s",
-        dry_run, cooldown_hours, cb_loss_threshold, cb_window,
+        dry_run,
+        cooldown_hours,
+        cb_minimum_samples,
+        cb_warning_threshold,
+        cb_window,
+        cb_loss_threshold,
+        cb_window,
+        cb_cost_pct,
+        cb_severe_net_loss_pct,
     )
 
     client               = MEXCClient()
@@ -1086,6 +1155,8 @@ def main() -> None:
                 live_filter, live_strategy, market_context,
                 experiment_max_per_cycle, max_live_orders_per_run,
                 dry_run, cooldown_hours, cb_window, cb_loss_threshold,
+                cb_minimum_samples, cb_warning_threshold, cb_cost_pct,
+                cb_severe_net_loss_pct,
             )
         except KeyboardInterrupt:
             console.print("\n  [dim]Interrupted. Shutting down.[/dim]")

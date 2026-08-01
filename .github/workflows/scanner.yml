@@ -69,7 +69,13 @@ jobs:
       RISK_REWARD_RATIO:       '2.0'
       COOLDOWN_HOURS:          '48'
       CIRCUIT_BREAKER_WINDOW:  '10'
-      CIRCUIT_BREAKER_LOSSES:  '5'
+      CIRCUIT_BREAKER_MIN_SAMPLES: '5'
+      # 5/10 は警戒のみ。7/10 かつコスト控除後マイナスで新規停止。
+      CIRCUIT_BREAKER_WARN_LOSSES: '5'
+      CIRCUIT_BREAKER_LOSSES:  '7'
+      CIRCUIT_BREAKER_COST_PCT: '0.51'
+      # 損失件数にかかわらず、直近10件のネット合計が -8% 以下なら停止。
+      CIRCUIT_BREAKER_SEVERE_NET_LOSS_PCT: '-8.0'
       # 直近 N 時間内に closed した記録のみでカウント (0 で無効=全期間)
       # これを超えて古い連敗は自動で対象外になり、放置で自動解除される
       CIRCUIT_BREAKER_LOOKBACK_HOURS: '48'

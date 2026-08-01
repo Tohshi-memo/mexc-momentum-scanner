@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import os
 from dataclasses import asdict, dataclass, field
 from datetime import datetime, timedelta, timezone
@@ -120,6 +121,26 @@ class StatsSummary:
     total_pnl_pct: float = 0.0  # 累積損益率（%の総和）
     recent_losses: int  = 0     # 直近ウィンドウ内の SL 数
     recent_window: int  = 10    # 直近ウィンドウサイズ
+
+
+@dataclass(frozen=True)
+class CircuitBreakerState:
+    """損失件数とコスト控除後損益を組み合わせた停止判定。"""
+
+    active: bool
+    warning: bool
+    level: str
+    sample_size: int
+    minimum_sample_size: int
+    window: int
+    losses: int
+    warning_loss_threshold: int
+    loss_threshold: int
+    gross_pnl_pct: float
+    estimated_cost_pct: float
+    net_pnl_pct: float
+    severe_net_loss_pct: float
+    reasons: tuple[str, ...] = field(default_factory=tuple)
 
 
 class StatsManager:
@@ -241,22 +262,135 @@ class StatsManager:
         window: int = 10,
         loss_threshold: int = 5,
     ) -> bool:
-        """直近 `window` 件中 SL が `loss_threshold` 以上なら True。
-
-        判定対象は次の AND で絞り込む:
-          1. reset_circuit_breaker() 以降の記録
-          2. 直近 CIRCUIT_BREAKER_LOOKBACK_HOURS 時間内に closed したもの
-             (0 または未設定で無効化 = 全期間)
-
-        (2) により「何日も前に発動した連敗」が延々と引きずる問題を解消する。
-        新規トレードが無い限り自然に pool が空になり、breaker が解除される。
-        """
+        """従来どおり、直近 window 件の SL 件数だけを真偽値で返す。"""
         pool = self._filter_within_lookback(self._records_since_reset())
         if len(pool) < window:
             return False
         recent = pool[-window:]
         recent_losses = sum(1 for r in recent if r.outcome == OUTCOME_SL_HIT)
         return recent_losses >= loss_threshold
+
+    def circuit_breaker_state(
+        self,
+        *,
+        window: int = 10,
+        minimum_sample_size: int = 5,
+        warning_loss_threshold: int = 5,
+        loss_threshold: int = 7,
+        cost_pct: float = 0.51,
+        severe_net_loss_pct: float = -8.0,
+    ) -> CircuitBreakerState:
+        """直近成績を段階評価し、警戒または新規停止を返す。
+
+        判定対象は次の AND で絞り込む:
+          1. reset_circuit_breaker() 以降の記録
+          2. 直近 CIRCUIT_BREAKER_LOOKBACK_HOURS 時間内に closed したもの
+             (0 または未設定で無効化 = 全期間)
+
+        単純な損失件数だけでは、1:2 のリスクリワードで利益が残る
+        5勝5敗まで止めてしまう。そこで次の二段階にする:
+
+          - warning: 損失件数が警戒値以上、またはネット損益がマイナス
+          - active:  ハード損失件数以上かつネット損益がマイナス、または
+                     ネット損益が severe_net_loss_pct 以下
+
+        コストは各記録から ``cost_pct`` を控除する。通常の損失件数判定は
+        window 全件を要求するが、深いネット損失は minimum_sample_size 件から
+        早期停止する。それ未満は warmup とする。
+        """
+        if window <= 0:
+            raise ValueError("circuit breaker window must be positive")
+        if not 1 <= minimum_sample_size <= window:
+            raise ValueError(
+                "circuit breaker minimum_sample_size must be within window"
+            )
+        if not 0 <= warning_loss_threshold <= loss_threshold <= window:
+            raise ValueError(
+                "circuit breaker thresholds must satisfy "
+                "0 <= warning <= hard <= window"
+            )
+        if not math.isfinite(cost_pct) or cost_pct < 0:
+            raise ValueError(
+                "circuit breaker cost_pct must be finite and non-negative"
+            )
+        if not math.isfinite(severe_net_loss_pct) or severe_net_loss_pct > 0:
+            raise ValueError(
+                "circuit breaker severe_net_loss_pct must be finite and <= 0"
+            )
+
+        pool = self._filter_within_lookback(self._records_since_reset())
+        recent = pool[-window:]
+        recent_losses = sum(1 for r in recent if r.outcome == OUTCOME_SL_HIT)
+        gross_pnl = sum(r.pnl_pct for r in recent)
+        estimated_cost = len(recent) * cost_pct
+        net_pnl = gross_pnl - estimated_cost
+
+        if len(recent) < minimum_sample_size:
+            return CircuitBreakerState(
+                active=False,
+                warning=False,
+                level="warmup",
+                sample_size=len(recent),
+                minimum_sample_size=minimum_sample_size,
+                window=window,
+                losses=recent_losses,
+                warning_loss_threshold=warning_loss_threshold,
+                loss_threshold=loss_threshold,
+                gross_pnl_pct=gross_pnl,
+                estimated_cost_pct=estimated_cost,
+                net_pnl_pct=net_pnl,
+                severe_net_loss_pct=severe_net_loss_pct,
+                reasons=(
+                    f"sample={len(recent)}/{minimum_sample_size} minimum",
+                ),
+            )
+
+        hard_loss_cluster = (
+            len(recent) >= window
+            and recent_losses >= loss_threshold
+            and net_pnl < 0
+        )
+        severe_net_loss = net_pnl <= severe_net_loss_pct
+        active = hard_loss_cluster or severe_net_loss
+        warning = active or (
+            recent_losses >= warning_loss_threshold or net_pnl < 0
+        )
+        reasons: list[str] = []
+        if hard_loss_cluster:
+            reasons.append(
+                f"losses={recent_losses}/{window}>={loss_threshold} and net_pnl<0"
+            )
+        if severe_net_loss:
+            reasons.append(
+                f"net_pnl={net_pnl:+.2f}%<={severe_net_loss_pct:+.2f}%"
+            )
+        if not active and warning:
+            if recent_losses >= warning_loss_threshold:
+                reasons.append(
+                    f"warning_losses={recent_losses}/{window}>="
+                    f"{warning_loss_threshold}"
+                )
+            if net_pnl < 0:
+                reasons.append(f"warning_net_pnl={net_pnl:+.2f}%")
+        if not reasons:
+            reasons.append("recent risk is within limits")
+
+        return CircuitBreakerState(
+            active=active,
+            warning=warning,
+            level="blocked" if active else "warning" if warning else "normal",
+            sample_size=len(recent),
+            minimum_sample_size=minimum_sample_size,
+            window=window,
+            losses=recent_losses,
+            warning_loss_threshold=warning_loss_threshold,
+            loss_threshold=loss_threshold,
+            gross_pnl_pct=gross_pnl,
+            estimated_cost_pct=estimated_cost,
+            net_pnl_pct=net_pnl,
+            severe_net_loss_pct=severe_net_loss_pct,
+            reasons=tuple(reasons),
+        )
 
     def reset_circuit_breaker(self) -> str:
         """サーキットブレーカーのカウントを現時点からやり直す。
