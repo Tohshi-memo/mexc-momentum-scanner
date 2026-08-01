@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T16:21:14.578805+00:00
+- generated_at: 2026-08-01T16:26:18.745721+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10101**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T16:21:07.383406+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=62905.6
+- 更新: 2026-08-01T16:26:11.399666+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=62926.6
 - Funnel: target 922 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FIGHT/USDT:USDT | +5.22% | $2,221,880.87 |
-| UAI/USDT:USDT | +4.23% | $6,414,601.74 |
-| 1000RATS/USDT:USDT | +3.71% | $22,629,601.41 |
-| IDOL/USDT:USDT | +3.53% | $1,489,842.83 |
-| EPIC/USDT:USDT | +2.25% | $2,010,851.85 |
+| FIGHT/USDT:USDT | +4.08% | $2,245,345.71 |
+| IDOL/USDT:USDT | +3.83% | $1,492,438.87 |
+| 1000RATS/USDT:USDT | +3.20% | $22,648,825.34 |
+| ESPORTS/USDT:USDT | +3.15% | $1,550,798.57 |
+| UAI/USDT:USDT | +3.01% | $6,486,064.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FIGHT/USDT:USDT | below_1h_threshold | +4.70% | +4.81% |
-| UAI/USDT:USDT | below_1h_threshold | +4.26% | +4.37% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.71% | +3.82% |
-| IDOL/USDT:USDT | below_1h_threshold | +3.54% | +3.65% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.21% | +2.32% |
+| IDOL/USDT:USDT | below_1h_threshold | +4.13% | +4.21% |
+| FIGHT/USDT:USDT | below_1h_threshold | +4.09% | +4.17% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.20% | +3.28% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.16% | +3.24% |
+| UAI/USDT:USDT | below_1h_threshold | +3.02% | +3.10% |
 
 ## 7. 次に見るべき不足
 
