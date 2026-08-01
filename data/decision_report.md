@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T14:01:19.836536+00:00
+- generated_at: 2026-08-01T14:06:12.696254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10093**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T14:01:12.656779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63041.0
-- Funnel: target 921 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-01T14:06:05.566431+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63056.2
+- Funnel: target 922 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IDOL/USDT:USDT | +46.99% | $1,072,544.30 |
-| BTW/USDT:USDT | +29.17% | $11,580,345.57 |
-| EPIC/USDT:USDT | +28.14% | $1,169,345.96 |
-| UAI/USDT:USDT | +27.15% | $4,537,506.28 |
-| TAKE/USDT:USDT | +22.65% | $1,313,522.42 |
+| IDOL/USDT:USDT | +47.36% | $1,075,134.66 |
+| BTW/USDT:USDT | +29.95% | $11,662,412.21 |
+| EPIC/USDT:USDT | +25.85% | $1,178,109.92 |
+| UAI/USDT:USDT | +25.09% | $4,576,593.92 |
+| TAKE/USDT:USDT | +24.21% | $1,314,853.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.06% | +1.05% |
-| BTW/USDT:USDT | below_1h_threshold | +0.61% | +0.60% |
-| ICNT/USDT:USDT | below_1h_threshold | +0.47% | +0.46% |
-| UAI/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
-| IDOL/USDT:USDT | below_1h_threshold | +0.29% | +0.29% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +4.99% | +4.96% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
+| BTW/USDT:USDT | below_1h_threshold | +1.26% | +1.23% |
+| SATS/USDT:USDT | below_1h_threshold | +0.91% | +0.87% |
+| IDOL/USDT:USDT | below_1h_threshold | +0.67% | +0.64% |
 
 ## 7. 次に見るべき不足
 
