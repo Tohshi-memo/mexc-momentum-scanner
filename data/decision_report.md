@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T06:56:22.371348+00:00
+- generated_at: 2026-08-01T07:01:21.847353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10069**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T06:56:12.414037+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63051.0
-- Funnel: target 921 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-01T07:01:15.250888+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63050.0
+- Funnel: target 921 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +31.49% | $4,017,242.17 |
-| GIGGLE/USDT:USDT | +29.45% | $28,772,176.15 |
-| JIMOTHY/USDT:USDT | +26.61% | $1,262,917.80 |
-| KOMA/USDT:USDT | +23.73% | $17,507,474.30 |
-| TLM/USDT:USDT | +17.24% | $2,036,788.49 |
+| BTW/USDT:USDT | +32.38% | $3,989,023.59 |
+| GIGGLE/USDT:USDT | +32.33% | $28,592,895.22 |
+| JIMOTHY/USDT:USDT | +27.88% | $1,248,642.82 |
+| KOMA/USDT:USDT | +25.09% | $16,727,798.85 |
+| TLM/USDT:USDT | +20.50% | $2,043,388.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_relative_strength | +5.08% | +5.00% |
-| KOMA/USDT:USDT | below_1h_threshold | +4.74% | +4.65% |
-| TLM/USDT:USDT | below_1h_threshold | +4.30% | +4.22% |
-| BTW/USDT:USDT | below_1h_threshold | +3.47% | +3.39% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.15% | +3.06% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.33% | +2.33% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.34% | +1.34% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.57% | +0.57% |
+| UAI/USDT:USDT | below_1h_threshold | +0.51% | +0.51% |
+| XPL/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
 
 ## 7. 次に見るべき不足
 
