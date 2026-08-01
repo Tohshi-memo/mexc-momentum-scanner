@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-01T03:26:20.712175+00:00
+- generated_at: 2026-08-01T03:31:21.589112+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10054**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.28** / 初期 $100.00 (+12.28%)
-- 確定: 873件 (Win 283 / Loss 344 / Flat 246) / pending 5件 / skip 651件
+- 確定: 873件 (Win 283 / Loss 344 / Flat 246) / pending 6件 / skip 651件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000222 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $112.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-01T03:26:13.523247+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63025.0
-- Funnel: target 921 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.2 >= 65=1
+- 更新: 2026-08-01T03:31:15.185874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63000.0
+- Funnel: target 921 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.8 >= 65=1, 4h RSI 65.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +35.46% | $18,231,766.19 |
-| JIMOTHY/USDT:USDT | +34.54% | $1,207,264.31 |
-| BTW/USDT:USDT | +20.99% | $2,579,557.83 |
-| TLM/USDT:USDT | +15.21% | $1,856,716.41 |
-| GIGGLE/USDT:USDT | +14.18% | $23,749,038.66 |
+| JIMOTHY/USDT:USDT | +35.39% | $1,209,073.36 |
+| KOMA/USDT:USDT | +31.53% | $18,303,317.79 |
+| BTW/USDT:USDT | +22.12% | $2,593,533.22 |
+| GIGGLE/USDT:USDT | +16.71% | $23,815,118.40 |
+| TLM/USDT:USDT | +15.67% | $1,860,376.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.05% | +4.08% |
-| TAG/USDT:USDT | below_1h_threshold | +2.91% | +2.93% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.22% | +2.25% |
-| FLOW/USDT:USDT | below_1h_threshold | +1.66% | +1.69% |
-| UB/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +4.47% | +4.53% |
+| TAG/USDT:USDT | below_1h_threshold | +3.13% | +3.20% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.73% | +1.79% |
+| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.77% |
+| FLOW/USDT:USDT | below_1h_threshold | +1.33% | +1.39% |
 
 ## 7. 次に見るべき不足
 
