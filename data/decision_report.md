@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T22:41:24.982624+00:00
+- generated_at: 2026-08-02T22:46:25.889648+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10180**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T22:41:15.033482+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=63376.5
+- 更新: 2026-08-02T22:46:16.412235+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=63506.3
 - Funnel: target 922 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +22.72% | $40,114,742.44 |
-| FHE/USDT:USDT | +14.72% | $1,304,105.02 |
-| BLESS/USDT:USDT | +14.52% | $52,663,943.96 |
-| GRVT/USDT:USDT | +8.34% | $2,532,622.30 |
-| US/USDT:USDT | +5.87% | $2,369,109.26 |
+| 1000RATS/USDT:USDT | +22.95% | $40,196,864.63 |
+| BLESS/USDT:USDT | +16.38% | $52,815,110.29 |
+| FHE/USDT:USDT | +15.13% | $1,310,423.12 |
+| GRVT/USDT:USDT | +8.40% | $2,536,261.22 |
+| LUNC/USDT:USDT | +5.80% | $1,657,438.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.30% |
-| NIL/USDT:USDT | below_1h_threshold | +1.10% | +1.39% |
-| US/USDT:USDT | below_1h_threshold | +1.02% | +1.31% |
-| KORU/USDT:USDT | below_1h_threshold | +0.82% | +1.11% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.57% | +0.86% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.09% |
+| NIL/USDT:USDT | below_1h_threshold | +1.30% | +1.38% |
+| KORU/USDT:USDT | below_1h_threshold | +0.82% | +0.91% |
+| US/USDT:USDT | below_1h_threshold | +0.61% | +0.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.57% | +0.66% |
 
 ## 7. 次に見るべき不足
 
