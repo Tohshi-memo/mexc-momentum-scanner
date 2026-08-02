@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T14:56:33.703992+00:00
+- generated_at: 2026-08-02T15:01:15.174235+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10167**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T14:56:25.634332+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63034.6
-- Funnel: target 922 → liquid 135 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 68.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-02T15:01:07.910098+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63045.7
+- Funnel: target 922 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +72.51% | $24,920,433.63 |
-| HOME/USDT:USDT | +45.25% | $5,171,625.14 |
-| UAI/USDT:USDT | +30.35% | $28,249,581.80 |
-| MANTRA/USDT:USDT | +22.15% | $2,050,114.68 |
-| HYPER/USDT:USDT | +17.19% | $1,841,501.74 |
+| BLESS/USDT:USDT | +76.89% | $25,563,715.82 |
+| HOME/USDT:USDT | +44.33% | $5,183,406.23 |
+| UAI/USDT:USDT | +31.02% | $27,183,174.03 |
+| MANTRA/USDT:USDT | +21.45% | $2,219,592.99 |
+| HYPER/USDT:USDT | +17.78% | $1,835,380.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +3.76% | +3.85% |
-| ROSE/USDT:USDT | below_1h_threshold | +3.68% | +3.77% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.62% | +3.72% |
-| MANTRA/USDT:USDT | below_1h_threshold | +2.07% | +2.16% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.49% | +1.58% |
+| HOME/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.21% | +0.21% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.19% | +0.18% |
+| CAP/USDT:USDT | below_1h_threshold | +0.16% | +0.15% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
 
 ## 7. 次に見るべき不足
 
