@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T18:11:23.768456+00:00
+- generated_at: 2026-08-02T18:16:19.698595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10176**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T18:11:16.368485+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63276.3
+- 更新: 2026-08-02T18:16:13.118587+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63275.6
 - Funnel: target 922 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,20 +79,20 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +13.86% | $5,414,069.26 |
-| BLESS/USDT:USDT | +8.16% | $38,618,216.53 |
-| UB/USDT:USDT | +5.98% | $2,985,967.50 |
-| COTI/USDT:USDT | +4.53% | $1,871,059.04 |
-| US/USDT:USDT | +4.19% | $2,414,848.74 |
+| KOMA/USDT:USDT | +16.55% | $5,471,509.06 |
+| BLESS/USDT:USDT | +7.81% | $38,853,176.25 |
+| UB/USDT:USDT | +6.73% | $2,993,615.90 |
+| US/USDT:USDT | +4.52% | $2,416,496.15 |
+| COTI/USDT:USDT | +4.34% | $1,874,187.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
-| KAS/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
+| UB/USDT:USDT | below_1h_threshold | +2.43% | +2.43% |
+| BANK/USDT:USDT | below_1h_threshold | +2.29% | +2.29% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.87% | +1.87% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.34% | +1.34% |
 | USO/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
 
 ## 7. 次に見るべき不足
