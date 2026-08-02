@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T13:36:29.582439+00:00
+- generated_at: 2026-08-02T13:41:23.179876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10162**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T13:36:20.590017+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=63051.1
+- 更新: 2026-08-02T13:41:16.449859+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=63011.1
 - Funnel: target 922 → liquid 132 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.1 >= 65=1
+- Strict後reject: 4h RSI 76.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +59.51% | $20,306,131.01 |
-| HOME/USDT:USDT | +30.80% | $4,657,906.33 |
-| UAI/USDT:USDT | +26.52% | $27,421,654.65 |
-| MANTRA/USDT:USDT | +22.50% | $1,380,845.26 |
-| HYPER/USDT:USDT | +17.59% | $1,772,829.82 |
+| BLESS/USDT:USDT | +61.28% | $20,486,118.54 |
+| HOME/USDT:USDT | +30.88% | $4,668,228.96 |
+| UAI/USDT:USDT | +26.33% | $27,589,587.90 |
+| MANTRA/USDT:USDT | +20.82% | $1,421,765.47 |
+| HYPER/USDT:USDT | +17.78% | $1,778,290.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.75% | +1.82% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.57% | +1.64% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.46% | +1.53% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.84% |
-| ALGO/USDT:USDT | below_1h_threshold | +0.69% | +0.77% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.10% | +3.24% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.90% | +3.03% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.40% | +1.54% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.90% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.66% | +0.79% |
 
 ## 7. 次に見るべき不足
 
