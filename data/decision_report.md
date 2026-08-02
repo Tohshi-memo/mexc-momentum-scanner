@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T07:06:17.366107+00:00
+- generated_at: 2026-08-02T07:11:13.728309+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10147**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T07:06:09.605176+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63463.2
+- 更新: 2026-08-02T07:11:06.323861+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63458.0
 - Funnel: target 922 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +58.47% | $26,686,875.93 |
-| BLESS/USDT:USDT | +40.97% | $9,384,674.19 |
-| UAI/USDT:USDT | +30.04% | $22,883,928.49 |
-| HOME/USDT:USDT | +26.68% | $1,645,381.04 |
-| BULLA/USDT:USDT | +9.61% | $2,266,300.98 |
+| 1000RATS/USDT:USDT | +62.59% | $26,819,652.57 |
+| BLESS/USDT:USDT | +39.97% | $9,460,013.51 |
+| HOME/USDT:USDT | +28.70% | $1,669,274.88 |
+| UAI/USDT:USDT | +27.72% | $22,932,905.71 |
+| BULLA/USDT:USDT | +9.96% | $2,272,682.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +1.42% | +1.41% |
-| SYN/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.92% | +0.91% |
-| UAI/USDT:USDT | below_1h_threshold | +0.89% | +0.89% |
+| HOME/USDT:USDT | below_1h_threshold | +2.70% | +2.70% |
+| SYN/USDT:USDT | below_1h_threshold | +1.45% | +1.45% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
+| UNI/USDT:USDT | below_1h_threshold | +1.27% | +1.28% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
 
 ## 7. 次に見るべき不足
 
