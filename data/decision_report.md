@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T22:11:18.818700+00:00
+- generated_at: 2026-08-02T22:16:13.023486+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10180**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T22:11:11.536670+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=63725.3
+- 更新: 2026-08-02T22:16:05.760687+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=63676.8
 - Funnel: target 922 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +18.94% | $39,531,680.85 |
-| FHE/USDT:USDT | +15.86% | $1,189,233.84 |
-| BLESS/USDT:USDT | +13.96% | $50,361,694.04 |
-| GRVT/USDT:USDT | +11.93% | $2,459,734.37 |
-| LUNC/USDT:USDT | +6.46% | $1,574,124.42 |
+| 1000RATS/USDT:USDT | +19.73% | $39,653,735.19 |
+| BLESS/USDT:USDT | +15.39% | $50,736,896.90 |
+| FHE/USDT:USDT | +13.85% | $1,203,950.54 |
+| GRVT/USDT:USDT | +10.49% | $2,473,173.76 |
+| LUNC/USDT:USDT | +6.64% | $1,577,613.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +2.75% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.55% | +2.29% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.04% | +1.78% |
-| KORU/USDT:USDT | below_1h_threshold | +0.82% | +0.56% |
-| DOGE/USDT:USDT | below_1h_threshold | +0.58% | +0.32% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.22% | +3.04% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +2.82% |
+| NIL/USDT:USDT | below_1h_threshold | +1.46% | +1.28% |
+| KORU/USDT:USDT | below_1h_threshold | +0.82% | +0.64% |
+| US/USDT:USDT | below_1h_threshold | +0.82% | +0.64% |
 
 ## 7. 次に見るべき不足
 
