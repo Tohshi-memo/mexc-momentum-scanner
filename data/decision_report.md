@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T17:36:12.555562+00:00
+- generated_at: 2026-08-02T17:41:15.458370+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10175**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T17:36:05.357372+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=63269.0
+- 更新: 2026-08-02T17:41:08.187955+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=63290.8
 - Funnel: target 922 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +13.67% | $5,078,121.00 |
-| BLESS/USDT:USDT | +7.67% | $35,981,549.32 |
-| 1000RATS/USDT:USDT | +5.71% | $37,915,438.04 |
-| UB/USDT:USDT | +5.15% | $2,891,375.08 |
-| US/USDT:USDT | +3.86% | $2,467,685.00 |
+| KOMA/USDT:USDT | +16.33% | $5,129,474.21 |
+| BLESS/USDT:USDT | +7.03% | $36,414,605.81 |
+| UB/USDT:USDT | +5.25% | $2,919,316.57 |
+| 1000RATS/USDT:USDT | +4.93% | $38,000,567.93 |
+| ON/USDT:USDT | +3.96% | $5,454,908.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.96% | +3.79% |
-| ON/USDT:USDT | below_1h_threshold | +2.14% | +1.97% |
-| KOMA/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.97% | +0.79% |
-| WIF/USDT:USDT | below_1h_threshold | +0.87% | +0.69% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.41% | +3.21% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.09% | +2.89% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.56% | +2.35% |
+| ON/USDT:USDT | below_1h_threshold | +2.43% | +2.22% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.90% | +0.69% |
 
 ## 7. 次に見るべき不足
 
