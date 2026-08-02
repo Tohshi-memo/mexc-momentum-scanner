@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T17:56:24.565842+00:00
+- generated_at: 2026-08-02T18:01:14.441206+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10176**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T17:56:15.878211+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=63281.2
-- Funnel: target 922 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-02T18:01:07.292707+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63292.9
+- Funnel: target 922 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +12.04% | $5,405,344.56 |
-| HOME/USDT:USDT | +5.86% | $6,217,381.02 |
-| 1000RATS/USDT:USDT | +5.27% | $38,320,257.08 |
-| COTI/USDT:USDT | +4.66% | $2,050,964.90 |
-| US/USDT:USDT | +4.52% | $2,476,902.65 |
+| KOMA/USDT:USDT | +16.18% | $5,207,908.62 |
+| BLESS/USDT:USDT | +6.75% | $38,099,760.90 |
+| HOME/USDT:USDT | +6.57% | $6,266,389.70 |
+| US/USDT:USDT | +5.12% | $2,407,112.33 |
+| 1000RATS/USDT:USDT | +4.99% | $37,906,365.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +4.53% | +4.34% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.40% | +3.21% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.43% | +2.24% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.46% | +1.27% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.20% | +1.01% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
+| USO/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
+| TSEMSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.90% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +0.52% | +0.50% |
 
 ## 7. 次に見るべき不足
 
