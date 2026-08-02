@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T09:21:16.755306+00:00
+- generated_at: 2026-08-02T09:26:15.081317+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10150**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T09:21:09.526132+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63227.6
+- 更新: 2026-08-02T09:26:07.888455+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63264.2
 - Funnel: target 922 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +49.88% | $11,741,954.84 |
-| 1000RATS/USDT:USDT | +48.14% | $28,935,903.75 |
-| HOME/USDT:USDT | +41.85% | $2,802,699.50 |
-| UAI/USDT:USDT | +31.12% | $23,691,818.24 |
-| CAP/USDT:USDT | +10.28% | $3,337,115.78 |
+| BLESS/USDT:USDT | +50.03% | $11,843,935.11 |
+| 1000RATS/USDT:USDT | +48.85% | $29,143,104.48 |
+| HOME/USDT:USDT | +38.38% | $2,896,996.47 |
+| UAI/USDT:USDT | +32.03% | $23,734,663.03 |
+| CAP/USDT:USDT | +9.73% | $3,347,808.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.26% | +2.17% |
-| SYN/USDT:USDT | below_1h_threshold | +1.67% | +1.58% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.01% | +0.92% |
-| ENA/USDT:USDT | below_1h_threshold | +0.93% | +0.84% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.78% |
+| SYN/USDT:USDT | below_1h_threshold | +2.56% | +2.41% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.26% | +2.11% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.90% | +1.75% |
+| ENA/USDT:USDT | below_1h_threshold | +1.13% | +0.98% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.01% | +0.86% |
 
 ## 7. 次に見るべき不足
 
