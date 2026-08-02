@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T05:51:13.595030+00:00
+- generated_at: 2026-08-02T05:56:13.658528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10146**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T05:51:06.694563+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=63409.9
+- 更新: 2026-08-02T05:56:06.472317+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=63429.9
 - Funnel: target 922 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +62.61% | $26,818,438.84 |
-| BLESS/USDT:USDT | +33.45% | $8,700,490.21 |
-| HOME/USDT:USDT | +30.02% | $1,348,743.01 |
-| UAI/USDT:USDT | +28.63% | $21,923,678.70 |
-| ENA/USDT:USDT | +8.52% | $20,035,858.81 |
+| 1000RATS/USDT:USDT | +61.68% | $26,933,021.95 |
+| BLESS/USDT:USDT | +33.63% | $8,722,797.85 |
+| UAI/USDT:USDT | +28.22% | $21,942,389.09 |
+| HOME/USDT:USDT | +25.23% | $1,391,182.18 |
+| ENA/USDT:USDT | +8.68% | $20,159,641.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +4.89% | +5.12% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.45% | +2.68% |
-| AVAX/USDT:USDT | below_1h_threshold | +2.41% | +2.64% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.99% | +2.22% |
-| SATS/USDT:USDT | below_1h_threshold | +1.97% | +2.20% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.34% | +2.54% |
+| AVAX/USDT:USDT | below_1h_threshold | +2.21% | +2.41% |
+| SATS/USDT:USDT | below_1h_threshold | +2.06% | +2.26% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.02% | +2.22% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.61% | +1.81% |
 
 ## 7. 次に見るべき不足
 
