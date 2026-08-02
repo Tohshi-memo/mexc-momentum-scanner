@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T12:31:19.462416+00:00
+- generated_at: 2026-08-02T12:36:21.080649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10159**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T12:31:12.144152+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=63158.1
+- 更新: 2026-08-02T12:36:13.820693+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=63158.8
 - Funnel: target 922 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +60.81% | $18,747,224.50 |
-| HOME/USDT:USDT | +33.88% | $4,411,310.09 |
-| UAI/USDT:USDT | +27.91% | $27,270,094.03 |
-| HYPER/USDT:USDT | +15.69% | $1,669,642.96 |
-| ANSEM/USDT:USDT | +15.43% | $1,001,735.85 |
+| BLESS/USDT:USDT | +61.30% | $18,879,905.44 |
+| HOME/USDT:USDT | +31.07% | $4,434,381.42 |
+| UAI/USDT:USDT | +28.44% | $27,335,020.64 |
+| HYPER/USDT:USDT | +17.07% | $1,676,310.78 |
+| ANSEM/USDT:USDT | +15.38% | $1,008,172.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +2.97% | +2.73% |
-| ROSE/USDT:USDT | below_1h_threshold | +1.95% | +1.71% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.65% | +1.40% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.61% | +1.37% |
-| HOME/USDT:USDT | below_1h_threshold | +1.31% | +1.06% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.92% | +2.68% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.42% | +1.18% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.38% | +1.13% |
+| ROSE/USDT:USDT | below_1h_threshold | +1.36% | +1.12% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.16% | +0.92% |
 
 ## 7. 次に見るべき不足
 
