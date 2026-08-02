@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T16:01:10.532993+00:00
+- generated_at: 2026-08-02T16:06:16.449238+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10171**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T16:01:04.733497+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63090.1
+- 更新: 2026-08-02T16:06:09.250858+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63060.2
 - Funnel: target 922 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +1.67% | $4,581,415.33 |
-| 1000RATS/USDT:USDT | +1.25% | $36,334,063.34 |
-| HOME/USDT:USDT | +0.98% | $5,762,166.14 |
-| US/USDT:USDT | +0.40% | $2,429,096.67 |
-| UB/USDT:USDT | +0.40% | $2,485,164.90 |
+| GIGGLE/USDT:USDT | +3.29% | $8,296,564.71 |
+| 1000RATS/USDT:USDT | +3.19% | $36,517,757.27 |
+| KOMA/USDT:USDT | +1.95% | $4,612,760.21 |
+| COTI/USDT:USDT | +1.79% | $2,062,801.34 |
+| BILL/USDT:USDT | +1.65% | $1,281,453.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +1.69% | +1.67% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.38% | +1.37% |
-| HOME/USDT:USDT | below_1h_threshold | +1.15% | +1.14% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.09% | +1.08% |
-| UB/USDT:USDT | below_1h_threshold | +0.58% | +0.57% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.30% | +3.33% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.04% | +3.08% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.96% | +1.99% |
+| COTI/USDT:USDT | below_1h_threshold | +1.85% | +1.89% |
+| BILL/USDT:USDT | below_1h_threshold | +1.65% | +1.69% |
 
 ## 7. 次に見るべき不足
 
