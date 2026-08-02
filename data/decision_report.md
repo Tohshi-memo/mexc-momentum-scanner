@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T00:31:17.916722+00:00
+- generated_at: 2026-08-02T00:36:20.075768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10130**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.68** / 初期 $100.00 (+12.68%)
-- 確定: 938件 (Win 298 / Loss 365 / Flat 275) / pending 2件 / skip 659件
+- 確定: 938件 (Win 298 / Loss 365 / Flat 275) / pending 3件 / skip 659件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000389 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KOMA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $112.68
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T00:31:10.673601+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=62858.0
-- Funnel: target 922 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-02T00:36:10.407430+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=62840.0
+- Funnel: target 922 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +41.00% | $21,280,832.36 |
-| AKE/USDT:USDT | +35.10% | $38,385,344.00 |
-| UAI/USDT:USDT | +31.45% | $17,367,711.06 |
-| BLESS/USDT:USDT | +21.74% | $5,096,287.81 |
-| GIGGLE/USDT:USDT | +11.68% | $21,470,867.20 |
+| 1000RATS/USDT:USDT | +38.87% | $21,644,236.44 |
+| AKE/USDT:USDT | +35.19% | $38,668,002.42 |
+| UAI/USDT:USDT | +28.68% | $17,525,822.26 |
+| BLESS/USDT:USDT | +21.12% | $5,132,465.07 |
+| KOMA/USDT:USDT | +13.01% | $13,860,721.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +3.55% | +3.45% |
-| SATS/USDT:USDT | below_1h_threshold | +3.55% | +3.45% |
-| AKE/USDT:USDT | below_1h_threshold | +3.15% | +3.05% |
-| US/USDT:USDT | below_1h_threshold | +2.45% | +2.35% |
-| MYX/USDT:USDT | below_1h_threshold | +2.23% | +2.12% |
+| AKE/USDT:USDT | below_1h_threshold | +3.23% | +3.15% |
+| US/USDT:USDT | below_1h_threshold | +3.01% | +2.94% |
+| IDOL/USDT:USDT | below_1h_threshold | +2.13% | +2.06% |
+| TLM/USDT:USDT | below_1h_threshold | +1.73% | +1.65% |
+| ICNT/USDT:USDT | below_1h_threshold | +1.55% | +1.47% |
 
 ## 7. 次に見るべき不足
 
