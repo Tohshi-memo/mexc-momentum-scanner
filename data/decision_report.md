@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T12:51:17.691944+00:00
+- generated_at: 2026-08-02T12:56:21.696595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10160**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T12:51:09.638221+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=63120.5
+- 更新: 2026-08-02T12:56:12.390667+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63100.0
 - Funnel: target 922 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +57.57% | $19,266,296.63 |
-| HOME/USDT:USDT | +35.03% | $4,507,057.60 |
-| UAI/USDT:USDT | +27.38% | $27,536,841.36 |
-| HYPER/USDT:USDT | +17.57% | $1,715,562.35 |
-| GIGGLE/USDT:USDT | +13.61% | $10,161,160.14 |
+| BLESS/USDT:USDT | +56.21% | $19,395,431.39 |
+| HOME/USDT:USDT | +33.99% | $4,535,615.43 |
+| UAI/USDT:USDT | +28.32% | $27,559,369.38 |
+| HYPER/USDT:USDT | +17.61% | $1,720,239.65 |
+| GIGGLE/USDT:USDT | +14.36% | $10,190,482.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +2.22% | +2.03% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.65% | +1.46% |
-| ENA/USDT:USDT | below_1h_threshold | +1.24% | +1.06% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.18% | +0.99% |
-| HYPER/USDT:USDT | below_1h_threshold | +1.06% | +0.88% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.46% | +1.31% |
+| HOME/USDT:USDT | below_1h_threshold | +1.40% | +1.25% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.20% | +1.05% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.11% | +0.96% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.04% | +0.89% |
 
 ## 7. 次に見るべき不足
 
