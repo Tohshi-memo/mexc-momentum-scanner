@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T16:56:25.793849+00:00
+- generated_at: 2026-08-02T17:01:17.094144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10174**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T16:56:15.847202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=63176.7
-- Funnel: target 922 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-02T17:01:09.708699+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63155.5
+- Funnel: target 922 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +10.67% | $5,053,540.90 |
-| BLESS/USDT:USDT | +5.97% | $33,236,434.72 |
-| UB/USDT:USDT | +5.08% | $2,777,971.55 |
-| COTI/USDT:USDT | +5.03% | $2,184,374.96 |
-| GRVT/USDT:USDT | +4.11% | $2,419,477.07 |
+| KOMA/USDT:USDT | +12.59% | $4,711,929.41 |
+| BLESS/USDT:USDT | +6.89% | $33,676,003.15 |
+| UB/USDT:USDT | +5.43% | $2,761,436.16 |
+| COTI/USDT:USDT | +4.33% | $1,996,026.59 |
+| GRVT/USDT:USDT | +3.96% | $2,368,842.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_relative_strength | +5.08% | +4.93% |
-| COTI/USDT:USDT | below_relative_strength | +5.04% | +4.89% |
-| GRVT/USDT:USDT | below_1h_threshold | +4.25% | +4.10% |
-| US/USDT:USDT | below_1h_threshold | +3.09% | +2.94% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.46% | +2.31% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +0.72% | +0.73% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.60% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
 
 ## 7. 次に見るべき不足
 
