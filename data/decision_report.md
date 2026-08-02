@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T08:31:16.271249+00:00
+- generated_at: 2026-08-02T08:36:13.919843+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10150**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T08:31:08.988564+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=63364.7
+- 更新: 2026-08-02T08:36:06.725542+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=63319.0
 - Funnel: target 922 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +61.14% | $27,892,818.86 |
-| BLESS/USDT:USDT | +43.00% | $10,732,492.71 |
-| HOME/USDT:USDT | +38.04% | $2,340,777.41 |
-| UAI/USDT:USDT | +31.96% | $23,379,997.83 |
-| UB/USDT:USDT | +10.77% | $1,030,695.45 |
+| 1000RATS/USDT:USDT | +61.65% | $28,001,281.44 |
+| BLESS/USDT:USDT | +42.62% | $10,804,309.44 |
+| HOME/USDT:USDT | +39.46% | $2,380,101.38 |
+| UAI/USDT:USDT | +32.43% | $23,438,665.68 |
+| UB/USDT:USDT | +11.44% | $1,039,623.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.94% | +3.10% |
-| MYX/USDT:USDT | below_1h_threshold | +2.43% | +2.59% |
-| UB/USDT:USDT | below_1h_threshold | +1.05% | +1.21% |
-| UAI/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
-| KORU/USDT:USDT | below_1h_threshold | +0.89% | +1.05% |
+| UB/USDT:USDT | below_1h_threshold | +4.27% | +4.50% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.78% | +4.02% |
+| MYX/USDT:USDT | below_1h_threshold | +2.51% | +2.75% |
+| CAP/USDT:USDT | below_1h_threshold | +2.18% | +2.42% |
+| HOME/USDT:USDT | below_1h_threshold | +1.43% | +1.67% |
 
 ## 7. 次に見るべき不足
 
