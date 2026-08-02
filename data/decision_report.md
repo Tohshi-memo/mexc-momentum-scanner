@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T11:41:33.380759+00:00
+- generated_at: 2026-08-02T11:46:33.649183+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10157**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T11:41:21.400980+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63148.7
+- 更新: 2026-08-02T11:46:21.987621+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63122.5
 - Funnel: target 922 → liquid 132 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +52.18% | $17,185,037.00 |
-| HOME/USDT:USDT | +30.41% | $4,207,770.62 |
-| UAI/USDT:USDT | +29.87% | $25,715,904.62 |
-| 1000RATS/USDT:USDT | +24.49% | $33,725,267.76 |
-| HYPER/USDT:USDT | +17.52% | $1,280,433.87 |
+| BLESS/USDT:USDT | +53.48% | $17,336,821.18 |
+| HOME/USDT:USDT | +33.16% | $4,237,889.06 |
+| UAI/USDT:USDT | +31.86% | $25,941,898.61 |
+| 1000RATS/USDT:USDT | +23.16% | $33,958,474.16 |
+| HYPER/USDT:USDT | +17.02% | $1,294,598.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.66% | +4.70% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.43% | +4.47% |
-| HYPER/USDT:USDT | below_1h_threshold | +1.73% | +1.78% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.10% | +1.15% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.69% | +0.74% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.49% | +3.58% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.96% | +3.05% |
+| UAI/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
+| HYPER/USDT:USDT | below_1h_threshold | +1.45% | +1.53% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.78% | +0.86% |
 
 ## 7. 次に見るべき不足
 
