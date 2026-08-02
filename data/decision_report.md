@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T18:46:17.094833+00:00
+- generated_at: 2026-08-02T18:51:18.482115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10177**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T18:46:09.860211+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=63424.5
+- 更新: 2026-08-02T18:51:11.284388+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63360.9
 - Funnel: target 922 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +8.71% | $38,671,309.14 |
-| BLESS/USDT:USDT | +7.98% | $40,556,373.27 |
-| GRVT/USDT:USDT | +6.76% | $2,265,603.98 |
-| UB/USDT:USDT | +5.96% | $3,044,904.48 |
-| US/USDT:USDT | +5.50% | $2,463,600.31 |
+| BLESS/USDT:USDT | +8.09% | $40,848,265.75 |
+| 1000RATS/USDT:USDT | +7.87% | $38,774,040.64 |
+| GRVT/USDT:USDT | +6.86% | $2,272,570.12 |
+| UB/USDT:USDT | +5.98% | $3,048,514.79 |
+| US/USDT:USDT | +5.30% | $2,464,789.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.19% | +3.96% |
-| GRVT/USDT:USDT | below_1h_threshold | +3.10% | +2.87% |
-| BANK/USDT:USDT | below_1h_threshold | +2.45% | +2.22% |
-| UB/USDT:USDT | below_1h_threshold | +1.70% | +1.47% |
-| INJ/USDT:USDT | below_1h_threshold | +1.64% | +1.42% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.38% | +3.25% |
+| BANK/USDT:USDT | below_1h_threshold | +3.23% | +3.10% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.12% | +3.00% |
+| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.58% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.66% | +1.53% |
 
 ## 7. 次に見るべき不足
 
