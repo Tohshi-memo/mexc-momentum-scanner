@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T02:16:27.295645+00:00
+- generated_at: 2026-08-02T02:21:17.612485+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10134**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T02:16:16.589770+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.79% price=63459.4
+- 更新: 2026-08-02T02:21:11.352708+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.80% price=63465.6
 - Funnel: target 922 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 78.4 >= 65=1
+- Strict後reject: 4h RSI 87.9 >= 65=1, 4h RSI 78.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +55.74% | $24,193,052.33 |
-| UAI/USDT:USDT | +30.42% | $19,098,299.00 |
-| BLESS/USDT:USDT | +24.49% | $6,163,792.33 |
-| AKE/USDT:USDT | +20.34% | $48,533,513.02 |
-| KOMA/USDT:USDT | +11.95% | $12,995,370.91 |
+| 1000RATS/USDT:USDT | +58.83% | $24,461,282.76 |
+| UAI/USDT:USDT | +29.63% | $19,196,613.97 |
+| BLESS/USDT:USDT | +25.82% | $6,195,291.28 |
+| AKE/USDT:USDT | +16.26% | $48,836,931.37 |
+| KOMA/USDT:USDT | +14.45% | $13,003,476.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.56% | +3.77% |
-| SATS/USDT:USDT | below_1h_threshold | +3.44% | +2.65% |
-| IDOL/USDT:USDT | below_1h_threshold | +1.71% | +0.91% |
-| LDO/USDT:USDT | below_1h_threshold | +1.37% | +0.58% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.26% | +0.47% |
+| UAI/USDT:USDT | below_1h_threshold | +3.84% | +3.03% |
+| SATS/USDT:USDT | below_1h_threshold | +2.81% | +2.00% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.02% | +1.22% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.76% | +0.95% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.66% | +0.86% |
 
 ## 7. 次に見るべき不足
 
