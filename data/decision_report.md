@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T12:36:21.080649+00:00
+- generated_at: 2026-08-02T12:41:29.818502+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10159**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.52** / 初期 $100.00 (+12.52%)
-- 確定: 965件 (Win 306 / Loss 377 / Flat 282) / pending 4件 / skip 662件
+- 確定: 965件 (Win 306 / Loss 377 / Flat 282) / pending 4件 / skip 663件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000223 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GIGGLE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $112.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T12:36:13.820693+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=63158.8
-- Funnel: target 922 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-02T12:41:19.948368+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63123.1
+- Funnel: target 922 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +61.30% | $18,879,905.44 |
-| HOME/USDT:USDT | +31.07% | $4,434,381.42 |
-| UAI/USDT:USDT | +28.44% | $27,335,020.64 |
-| HYPER/USDT:USDT | +17.07% | $1,676,310.78 |
-| ANSEM/USDT:USDT | +15.38% | $1,008,172.78 |
+| BLESS/USDT:USDT | +60.91% | $18,960,286.27 |
+| HOME/USDT:USDT | +32.23% | $4,456,809.90 |
+| UAI/USDT:USDT | +27.72% | $27,425,922.17 |
+| HYPER/USDT:USDT | +16.13% | $1,692,051.88 |
+| ANSEM/USDT:USDT | +14.34% | $1,011,835.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +2.92% | +2.68% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.42% | +1.18% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.38% | +1.13% |
-| ROSE/USDT:USDT | below_1h_threshold | +1.36% | +1.12% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.16% | +0.92% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.46% | +2.27% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.34% | +1.15% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.19% | +1.01% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.17% | +0.99% |
+| ROSE/USDT:USDT | below_1h_threshold | +0.93% | +0.74% |
 
 ## 7. 次に見るべき不足
 
