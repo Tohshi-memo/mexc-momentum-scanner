@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T17:16:20.508600+00:00
+- generated_at: 2026-08-02T17:21:16.381716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10174**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T17:16:13.276050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63171.1
+- 更新: 2026-08-02T17:21:09.208266+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63193.5
 - Funnel: target 922 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +11.93% | $4,866,597.05 |
-| BLESS/USDT:USDT | +7.26% | $34,473,165.82 |
-| UB/USDT:USDT | +5.08% | $2,795,597.98 |
-| US/USDT:USDT | +3.92% | $2,453,700.32 |
-| COTI/USDT:USDT | +3.89% | $2,015,439.99 |
+| KOMA/USDT:USDT | +13.29% | $4,918,860.68 |
+| BLESS/USDT:USDT | +7.98% | $34,735,053.70 |
+| UB/USDT:USDT | +5.65% | $2,803,037.93 |
+| US/USDT:USDT | +4.13% | $2,458,675.42 |
+| 1000RATS/USDT:USDT | +3.98% | $37,668,116.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.59% | +1.57% |
-| ON/USDT:USDT | below_1h_threshold | +1.58% | +1.56% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.58% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.57% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.17% | +2.11% |
+| ON/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.12% | +1.06% |
+| KOMA/USDT:USDT | below_1h_threshold | +0.78% | +0.72% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.55% |
 
 ## 7. 次に見るべき不足
 
