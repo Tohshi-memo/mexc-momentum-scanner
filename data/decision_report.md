@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T01:51:18.051896+00:00
+- generated_at: 2026-08-02T01:56:30.833637+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10132**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T01:51:10.424877+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=62963.5
-- Funnel: target 922 → liquid 130 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
+- 更新: 2026-08-02T01:56:20.598033+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=62969.2
+- Funnel: target 922 → liquid 130 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +42.87% | $23,736,359.44 |
-| UAI/USDT:USDT | +22.86% | $18,711,001.27 |
-| AKE/USDT:USDT | +15.77% | $47,000,917.83 |
-| BLESS/USDT:USDT | +14.08% | $5,789,867.55 |
-| KOMA/USDT:USDT | +12.08% | $13,525,617.55 |
+| 1000RATS/USDT:USDT | +45.27% | $23,873,785.67 |
+| AKE/USDT:USDT | +24.50% | $47,627,225.02 |
+| UAI/USDT:USDT | +24.49% | $18,795,805.15 |
+| BLESS/USDT:USDT | +13.74% | $5,814,355.83 |
+| KOMA/USDT:USDT | +13.70% | $13,536,008.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +4.84% | +4.59% |
-| EUL/USDT:USDT | below_1h_threshold | +3.16% | +2.92% |
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.54% |
-| ENA/USDT:USDT | below_1h_threshold | +2.42% | +2.17% |
-| WLD/USDT:USDT | below_1h_threshold | +2.39% | +2.14% |
+| EUL/USDT:USDT | below_1h_threshold | +4.52% | +4.26% |
+| ENA/USDT:USDT | below_1h_threshold | +2.91% | +2.65% |
+| TSEMSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.53% |
+| WLD/USDT:USDT | below_1h_threshold | +2.26% | +2.00% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.25% | +2.00% |
 
 ## 7. 次に見るべき不足
 
