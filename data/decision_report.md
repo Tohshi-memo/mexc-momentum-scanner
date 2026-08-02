@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T15:01:15.174235+00:00
+- generated_at: 2026-08-02T15:06:16.101464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10167**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T15:01:07.910098+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63045.7
+- 更新: 2026-08-02T15:06:08.880798+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63052.4
 - Funnel: target 922 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +76.89% | $25,563,715.82 |
-| HOME/USDT:USDT | +44.33% | $5,183,406.23 |
-| UAI/USDT:USDT | +31.02% | $27,183,174.03 |
-| MANTRA/USDT:USDT | +21.45% | $2,219,592.99 |
-| HYPER/USDT:USDT | +17.78% | $1,835,380.94 |
+| BLESS/USDT:USDT | +76.08% | $25,862,954.04 |
+| HOME/USDT:USDT | +42.32% | $5,222,068.01 |
+| UAI/USDT:USDT | +31.86% | $27,265,038.93 |
+| MANTRA/USDT:USDT | +22.12% | $2,313,158.40 |
+| HYPER/USDT:USDT | +17.68% | $1,840,226.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
-| PEPE/USDT:USDT | below_1h_threshold | +0.21% | +0.21% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.19% | +0.18% |
-| CAP/USDT:USDT | below_1h_threshold | +0.16% | +0.15% |
-| ANSEM/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
+| UAI/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
+| MANTRA/USDT:USDT | below_1h_threshold | +0.50% | +0.49% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.43% | +0.41% |
+| ADA/USDT:USDT | below_1h_threshold | +0.37% | +0.35% |
+| SAND/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
 
 ## 7. 次に見るべき不足
 
