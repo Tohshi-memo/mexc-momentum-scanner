@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T20:31:16.984415+00:00
+- generated_at: 2026-08-02T20:36:22.137856+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10178**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.22** / 初期 $100.00 (+12.22%)
-- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 677件
+- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 678件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000139 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SYN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T20:31:09.698371+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=63389.0
-- Funnel: target 922 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-02T20:36:12.073938+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63419.7
+- Funnel: target 922 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +13.01% | $40,001,863.75 |
-| SYN/USDT:USDT | +9.10% | $1,551,490.17 |
-| BLESS/USDT:USDT | +6.77% | $44,655,618.40 |
-| GRVT/USDT:USDT | +6.01% | $2,284,452.31 |
-| COTI/USDT:USDT | +5.71% | $1,969,298.00 |
+| 1000RATS/USDT:USDT | +11.54% | $40,074,979.73 |
+| GRVT/USDT:USDT | +6.70% | $2,302,918.51 |
+| SYN/USDT:USDT | +6.37% | $1,571,475.08 |
+| BLESS/USDT:USDT | +6.10% | $44,908,808.26 |
+| COTI/USDT:USDT | +5.80% | $1,981,933.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.12% | +4.19% |
-| RE/USDT:USDT | below_1h_threshold | +2.19% | +2.26% |
-| US/USDT:USDT | below_1h_threshold | +1.41% | +1.48% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.15% | +1.22% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.06% | +1.13% |
+| RE/USDT:USDT | below_1h_threshold | +2.27% | +2.29% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.49% | +1.51% |
+| US/USDT:USDT | below_1h_threshold | +1.44% | +1.46% |
+| SYN/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
 
 ## 7. 次に見るべき不足
 
