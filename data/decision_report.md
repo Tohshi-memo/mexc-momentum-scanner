@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T17:41:15.458370+00:00
+- generated_at: 2026-08-02T17:46:23.367019+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10175**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.22** / 初期 $100.00 (+12.22%)
-- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 675件
+- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 676件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000138 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SYN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T17:41:08.187955+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=63290.8
-- Funnel: target 922 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-02T17:46:13.004178+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=63309.9
+- Funnel: target 922 → liquid 126 → pre 50 → checked 49 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +16.33% | $5,129,474.21 |
-| BLESS/USDT:USDT | +7.03% | $36,414,605.81 |
-| UB/USDT:USDT | +5.25% | $2,919,316.57 |
-| 1000RATS/USDT:USDT | +4.93% | $38,000,567.93 |
-| ON/USDT:USDT | +3.96% | $5,454,908.37 |
+| KOMA/USDT:USDT | +16.28% | $5,202,955.97 |
+| 1000RATS/USDT:USDT | +7.16% | $38,173,134.40 |
+| UB/USDT:USDT | +5.31% | $2,933,473.27 |
+| BLESS/USDT:USDT | +3.96% | $37,108,665.26 |
+| US/USDT:USDT | +3.95% | $2,474,083.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +3.41% | +3.21% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.09% | +2.89% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.56% | +2.35% |
-| ON/USDT:USDT | below_1h_threshold | +2.43% | +2.22% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.90% | +0.69% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.45% | +3.21% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.06% | +2.83% |
+| ON/USDT:USDT | below_1h_threshold | +2.38% | +2.14% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.89% | +0.65% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.80% | +0.56% |
 
 ## 7. 次に見るべき不足
 
