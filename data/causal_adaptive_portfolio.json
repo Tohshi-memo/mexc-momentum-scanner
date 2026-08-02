@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 112.90262862416682,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-08-02T07:31:31.863319+00:00",
+  "updated_at": "2026-08-02T07:36:24.821325+00:00",
   "high_watermark": 113.59890648456302,
   "max_drawdown_pct": 3.463237719717767,
   "loss_streak": 2,
@@ -213786,6 +213786,103 @@
             "strategy": "LIMIT_5PCT",
             "direction": "short",
             "causal_score": 5.2763572594889515e-05
+          }
+        ]
+      }
+    },
+    "CAP/USDT:USDT|2026-08-02T07:36:16.927770+00:00": {
+      "key": "CAP/USDT:USDT|2026-08-02T07:36:16.927770+00:00",
+      "symbol": "CAP/USDT:USDT",
+      "detected_at": "2026-08-02T07:36:16.927770+00:00",
+      "registered_at": "2026-08-02T07:36:24.758886+00:00",
+      "signal_batch": "2026-08-02T07:36Z",
+      "status": "pending",
+      "strategy": "LIMIT_2PCT_LONG",
+      "direction": "long",
+      "risk_pct": 0.175,
+      "relative_strength": 5.466885352973116,
+      "decision": {
+        "strategy": "LIMIT_2PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.00031271738986016575,
+        "robust_score": 0.00031271738986016575,
+        "causal_history_count": 10147,
+        "fast": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 37,
+          "fill_rate": 0.74,
+          "avg_pnl_pct": 1.110687288586842,
+          "effective_ev_pct": 0.821908593554263,
+          "avg_log_return": 0.00038122399729373575,
+          "geometric_return_pct": 0.03812966723966138,
+          "avg_account_return_pct": 0.03832100096799901,
+          "max_drawdown_pct": 0.6129265517981465,
+          "max_loss_streak": 3
+        },
+        "recent": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 37,
+          "fill_rate": 0.74,
+          "avg_pnl_pct": 1.110687288586842,
+          "effective_ev_pct": 0.821908593554263,
+          "avg_log_return": 0.00038122399729373575,
+          "geometric_return_pct": 0.03812966723966138,
+          "avg_account_return_pct": 0.03832100096799901,
+          "max_drawdown_pct": 0.6129265517981465,
+          "max_loss_streak": 3
+        },
+        "mid": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 151,
+          "fill_rate": 0.755,
+          "avg_pnl_pct": 0.6052695999385208,
+          "effective_ev_pct": 0.4569785479535832,
+          "avg_log_return": 0.00022177155041024063,
+          "geometric_return_pct": 0.022179614353845523,
+          "avg_account_return_pct": 0.022366471019981043,
+          "max_drawdown_pct": 1.5138293307700492,
+          "max_loss_streak": 6
+        },
+        "long": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 725,
+          "fill_rate": 0.725,
+          "avg_pnl_pct": 0.6938658269984008,
+          "effective_ev_pct": 0.5030527245738405,
+          "avg_log_return": 0.0002434181748369261,
+          "geometric_return_pct": 0.02434478034447629,
+          "avg_account_return_pct": 0.024534112590452,
+          "max_drawdown_pct": 5.890556084197436,
+          "max_loss_streak": 14
+        },
+        "all": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 725,
+          "fill_rate": 0.725,
+          "avg_pnl_pct": 0.6938658269984008,
+          "effective_ev_pct": 0.5030527245738405,
+          "avg_log_return": 0.0002434181748369261,
+          "geometric_return_pct": 0.02434478034447629,
+          "avg_account_return_pct": 0.024534112590452,
+          "max_drawdown_pct": 5.890556084197436,
+          "max_loss_streak": 14
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 5.4952027260958144e-05
           }
         ]
       }
