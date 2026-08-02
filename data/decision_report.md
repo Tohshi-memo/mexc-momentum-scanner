@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T08:56:21.496568+00:00
+- generated_at: 2026-08-02T09:01:25.995972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10150**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T08:56:14.240151+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=63192.1
-- Funnel: target 922 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-02T09:01:18.724582+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63197.0
+- Funnel: target 922 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +61.81% | $28,447,270.33 |
-| BLESS/USDT:USDT | +47.72% | $11,262,078.15 |
-| HOME/USDT:USDT | +40.42% | $2,630,391.02 |
-| UAI/USDT:USDT | +32.10% | $23,554,412.99 |
-| CAP/USDT:USDT | +11.82% | $3,338,921.21 |
+| 1000RATS/USDT:USDT | +63.68% | $28,018,988.79 |
+| BLESS/USDT:USDT | +47.27% | $11,287,827.08 |
+| HOME/USDT:USDT | +41.46% | $2,650,926.99 |
+| UAI/USDT:USDT | +31.72% | $23,498,223.52 |
+| CAP/USDT:USDT | +11.02% | $3,270,991.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +2.72% | +3.15% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.49% | +2.92% |
-| HOME/USDT:USDT | below_1h_threshold | +2.22% | +2.65% |
-| HEI/USDT:USDT | below_1h_threshold | +1.78% | +2.22% |
-| ON/USDT:USDT | below_1h_threshold | +1.66% | +2.10% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.01% | +0.97% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.83% |
+| HOME/USDT:USDT | below_1h_threshold | +0.58% | +0.54% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.47% | +0.43% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.42% |
 
 ## 7. 次に見るべき不足
 
