@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T16:46:13.986160+00:00
+- generated_at: 2026-08-02T16:51:16.495398+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10174**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.22** / 初期 $100.00 (+12.22%)
-- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 674件
+- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 675件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000127 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SYN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T16:46:06.618830+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=63204.0
-- Funnel: target 922 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-08-02T16:51:07.013898+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=63162.7
+- Funnel: target 922 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +5.14% | $32,628,883.88 |
-| UB/USDT:USDT | +4.80% | $2,754,722.47 |
-| US/USDT:USDT | +4.07% | $2,519,639.59 |
-| KOMA/USDT:USDT | +3.70% | $4,901,139.15 |
-| COTI/USDT:USDT | +3.05% | $2,143,591.76 |
+| KOMA/USDT:USDT | +10.32% | $5,004,870.21 |
+| UB/USDT:USDT | +4.99% | $2,774,386.16 |
+| COTI/USDT:USDT | +4.74% | $2,156,588.39 |
+| BLESS/USDT:USDT | +4.09% | $32,891,437.06 |
+| US/USDT:USDT | +3.92% | $2,523,021.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.95% | +4.75% |
-| US/USDT:USDT | below_1h_threshold | +4.08% | +3.88% |
-| KOMA/USDT:USDT | below_1h_threshold | +3.93% | +3.73% |
-| COTI/USDT:USDT | below_1h_threshold | +3.20% | +3.01% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.94% | +2.75% |
+| UB/USDT:USDT | below_1h_threshold | +5.00% | +4.87% |
+| COTI/USDT:USDT | below_1h_threshold | +4.64% | +4.52% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.09% | +3.96% |
+| US/USDT:USDT | below_1h_threshold | +3.93% | +3.80% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.02% | +2.89% |
 
 ## 7. 次に見るべき不足
 
