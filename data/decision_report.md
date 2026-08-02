@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T05:36:18.995259+00:00
+- generated_at: 2026-08-02T05:41:15.500955+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10146**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T05:36:11.730316+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=63431.3
+- 更新: 2026-08-02T05:41:09.801563+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63424.8
 - Funnel: target 922 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +60.03% | $26,470,533.75 |
-| BLESS/USDT:USDT | +36.13% | $8,613,732.98 |
-| UAI/USDT:USDT | +30.47% | $21,744,461.29 |
-| HOME/USDT:USDT | +26.24% | $1,279,870.46 |
-| ON/USDT:USDT | +10.03% | $6,420,527.94 |
+| 1000RATS/USDT:USDT | +62.34% | $26,669,210.71 |
+| BLESS/USDT:USDT | +33.71% | $8,635,712.48 |
+| HOME/USDT:USDT | +28.93% | $1,309,898.94 |
+| UAI/USDT:USDT | +27.74% | $21,841,087.25 |
+| SATS/USDT:USDT | +9.17% | $1,035,892.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAX/USDT:USDT | below_1h_threshold | +2.35% | +2.55% |
-| SATS/USDT:USDT | below_1h_threshold | +2.15% | +2.35% |
-| HOME/USDT:USDT | below_1h_threshold | +1.88% | +2.08% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.73% | +1.93% |
-| ARB/USDT:USDT | below_1h_threshold | +1.40% | +1.59% |
+| HOME/USDT:USDT | below_1h_threshold | +3.90% | +4.11% |
+| SATS/USDT:USDT | below_1h_threshold | +3.40% | +3.61% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.10% | +2.31% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.83% | +2.03% |
+| AVAX/USDT:USDT | below_1h_threshold | +1.78% | +1.98% |
 
 ## 7. 次に見るべき不足
 
