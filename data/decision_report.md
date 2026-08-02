@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T23:31:16.744263+00:00
+- generated_at: 2026-08-02T23:36:12.390355+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10180**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T23:31:09.552194+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=63520.8
+- 更新: 2026-08-02T23:36:05.136288+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63537.3
 - Funnel: target 922 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +26.98% | $1,075,070.17 |
-| 1000RATS/USDT:USDT | +22.93% | $40,036,348.42 |
-| BLESS/USDT:USDT | +18.98% | $54,288,447.76 |
-| GRVT/USDT:USDT | +9.05% | $2,464,099.46 |
-| FHE/USDT:USDT | +7.95% | $1,444,530.84 |
+| BICO/USDT:USDT | +30.44% | $1,153,212.51 |
+| 1000RATS/USDT:USDT | +22.65% | $40,096,443.59 |
+| BLESS/USDT:USDT | +20.68% | $54,619,669.07 |
+| FHE/USDT:USDT | +9.05% | $1,452,336.36 |
+| GRVT/USDT:USDT | +7.82% | $2,480,122.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.68% | +2.49% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.86% | +1.67% |
-| BICO/USDT:USDT | below_1h_threshold | +1.58% | +1.39% |
-| UB/USDT:USDT | below_1h_threshold | +1.12% | +0.93% |
-| KORU/USDT:USDT | below_1h_threshold | +1.01% | +0.81% |
+| BICO/USDT:USDT | below_1h_threshold | +3.95% | +3.73% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.68% | +2.46% |
+| UB/USDT:USDT | below_1h_threshold | +2.36% | +2.14% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.13% | +1.91% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.88% | +1.66% |
 
 ## 7. 次に見るべき不足
 
