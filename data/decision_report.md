@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-02T22:36:14.146381+00:00
+- generated_at: 2026-08-02T22:41:24.982624+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10180**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.22** / 初期 $100.00 (+12.22%)
-- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 679件
+- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 680件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000152 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SYN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-02T22:36:06.879730+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=63416.6
-- Funnel: target 922 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-02T22:41:15.033482+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=63376.5
+- Funnel: target 922 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +21.29% | $40,029,464.25 |
-| BLESS/USDT:USDT | +16.07% | $52,292,404.17 |
-| FHE/USDT:USDT | +14.63% | $1,298,836.65 |
-| GRVT/USDT:USDT | +8.06% | $2,505,035.72 |
-| US/USDT:USDT | +6.16% | $2,354,049.54 |
+| 1000RATS/USDT:USDT | +22.72% | $40,114,742.44 |
+| FHE/USDT:USDT | +14.72% | $1,304,105.02 |
+| BLESS/USDT:USDT | +14.52% | $52,663,943.96 |
+| GRVT/USDT:USDT | +8.34% | $2,532,622.30 |
+| US/USDT:USDT | +5.87% | $2,369,109.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.49% | +4.72% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.23% |
-| NIL/USDT:USDT | below_1h_threshold | +1.53% | +1.75% |
-| US/USDT:USDT | below_1h_threshold | +1.33% | +1.55% |
-| KORU/USDT:USDT | below_1h_threshold | +0.82% | +1.05% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +3.30% |
+| NIL/USDT:USDT | below_1h_threshold | +1.10% | +1.39% |
+| US/USDT:USDT | below_1h_threshold | +1.02% | +1.31% |
+| KORU/USDT:USDT | below_1h_threshold | +0.82% | +1.11% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.57% | +0.86% |
 
 ## 7. 次に見るべき不足
 
