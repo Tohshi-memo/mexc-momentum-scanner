@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T19:36:35.859041+00:00
+- generated_at: 2026-08-03T19:41:26.285999+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10245**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T19:36:24.367572+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=64017.2
+- 更新: 2026-08-03T19:41:16.663797+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63855.1
 - Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +30.94% | $2,434,046.96 |
-| HOME/USDT:USDT | +11.38% | $3,121,861.52 |
-| SKYAI/USDT:USDT | +9.95% | $10,582,859.86 |
-| PIPPIN/USDT:USDT | +9.53% | $3,163,492.34 |
-| 1000RATS/USDT:USDT | +6.83% | $37,594,091.78 |
+| KOMA/USDT:USDT | +30.27% | $2,470,946.35 |
+| HOME/USDT:USDT | +10.40% | $3,145,349.27 |
+| PIPPIN/USDT:USDT | +9.89% | $3,201,611.08 |
+| SKYAI/USDT:USDT | +8.47% | $10,636,999.83 |
+| 1000RATS/USDT:USDT | +6.83% | $37,612,993.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +2.71% | +2.42% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.53% | +2.24% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.14% | +1.85% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.12% | +1.83% |
-| UAI/USDT:USDT | below_1h_threshold | +1.86% | +1.57% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.14% | +2.11% |
+| UAI/USDT:USDT | below_1h_threshold | +1.94% | +1.91% |
+| HOME/USDT:USDT | below_1h_threshold | +1.93% | +1.90% |
+| MYX/USDT:USDT | below_1h_threshold | +1.81% | +1.78% |
+| FET/USDT:USDT | below_1h_threshold | +1.62% | +1.59% |
 
 ## 7. 次に見るべき不足
 
