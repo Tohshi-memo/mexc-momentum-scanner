@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T07:21:40.013827+00:00
+- generated_at: 2026-08-03T07:26:20.096064+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10195**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T07:21:32.770401+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62569.7
+- 更新: 2026-08-03T07:26:12.971021+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62628.0
 - Funnel: target 924 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +98.15% | $1,127,139.66 |
-| 1000RATS/USDT:USDT | +48.11% | $38,161,392.46 |
-| ICNT/USDT:USDT | +25.97% | $1,883,187.18 |
-| BICO/USDT:USDT | +20.13% | $7,231,796.92 |
-| BTW/USDT:USDT | +14.42% | $6,050,172.91 |
+| CATE/USDT:USDT | +92.38% | $1,147,874.99 |
+| 1000RATS/USDT:USDT | +47.79% | $38,233,707.66 |
+| ICNT/USDT:USDT | +19.75% | $1,972,872.99 |
+| BICO/USDT:USDT | +19.22% | $7,256,969.51 |
+| BTW/USDT:USDT | +14.48% | $6,069,158.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.29% | +2.33% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
-| UB/USDT:USDT | below_1h_threshold | +1.56% | +1.60% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
+| UB/USDT:USDT | below_1h_threshold | +1.71% | +1.66% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.59% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.55% |
+| LIT/USDT:USDT | below_1h_threshold | +1.56% | +1.51% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.35% | +1.29% |
 
 ## 7. 次に見るべき不足
 
