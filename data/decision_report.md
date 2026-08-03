@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T22:31:21.955160+00:00
+- generated_at: 2026-08-03T22:36:15.470571+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10253**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T22:31:13.532173+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63499.5
+- 更新: 2026-08-03T22:36:10.216974+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63476.2
 - Funnel: target 929 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +19.27% | $2,304,162.43 |
-| PLTRSTOCK/USDT:USDT | +15.45% | $3,025,669.61 |
-| PIPPIN/USDT:USDT | +15.16% | $5,829,734.88 |
-| VELVET/USDT:USDT | +10.26% | $2,359,059.24 |
-| KORU/USDT:USDT | +10.00% | $16,646,960.34 |
+| KOMA/USDT:USDT | +19.21% | $2,307,706.29 |
+| PLTRSTOCK/USDT:USDT | +15.42% | $3,096,063.10 |
+| PIPPIN/USDT:USDT | +15.04% | $5,872,802.21 |
+| KORU/USDT:USDT | +10.34% | $16,652,233.63 |
+| VELVET/USDT:USDT | +10.31% | $2,380,711.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.71% | +2.80% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.36% | +2.46% |
-| HOME/USDT:USDT | below_1h_threshold | +2.21% | +2.30% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.19% | +2.29% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.22% |
+| HOME/USDT:USDT | below_1h_threshold | +2.77% | +2.90% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.40% | +2.54% |
+| UAI/USDT:USDT | below_1h_threshold | +2.33% | +2.46% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.19% | +2.32% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.26% |
 
 ## 7. 次に見るべき不足
 
