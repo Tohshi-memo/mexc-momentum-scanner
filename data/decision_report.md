@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T02:01:09.156858+00:00
+- generated_at: 2026-08-03T02:06:22.886895+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10183**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T02:01:03.326862+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63181.1
+- 更新: 2026-08-03T02:06:15.492423+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63157.7
 - Funnel: target 922 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +45.29% | $3,433,465.35 |
-| 1000RATS/USDT:USDT | +28.28% | $36,560,381.03 |
-| BLESS/USDT:USDT | +17.66% | $65,074,765.13 |
-| TAKE/USDT:USDT | +14.52% | $1,074,231.37 |
-| KIOXIASTOCK/USDT:USDT | +13.63% | $1,106,370.26 |
+| BICO/USDT:USDT | +49.25% | $3,607,429.16 |
+| 1000RATS/USDT:USDT | +30.28% | $36,708,247.02 |
+| TAKE/USDT:USDT | +16.74% | $1,078,728.01 |
+| BLESS/USDT:USDT | +16.52% | $65,385,637.87 |
+| FHE/USDT:USDT | +11.65% | $1,662,466.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
-| BICO/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
-| AMZNSTOCK/USDT:USDT | below_1h_threshold | +0.25% | +0.26% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.20% | +0.21% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.18% | +0.19% |
+| BICO/USDT:USDT | below_1h_threshold | +2.72% | +2.77% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.10% | +2.14% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.24% | +1.29% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +0.96% | +1.01% |
+| RE/USDT:USDT | below_1h_threshold | +0.34% | +0.38% |
 
 ## 7. 次に見るべき不足
 
