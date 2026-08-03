@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T02:56:21.006241+00:00
+- generated_at: 2026-08-03T03:01:20.707323+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10183**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T02:56:11.854081+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=63131.1
-- Funnel: target 922 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-03T03:01:13.273145+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63091.4
+- Funnel: target 922 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +36.71% | $4,682,638.74 |
-| 1000RATS/USDT:USDT | +33.72% | $37,403,299.49 |
-| BLESS/USDT:USDT | +23.08% | $67,648,201.13 |
-| TAKE/USDT:USDT | +17.76% | $1,111,840.40 |
-| FHE/USDT:USDT | +9.96% | $1,706,095.63 |
+| BICO/USDT:USDT | +36.88% | $4,835,198.28 |
+| 1000RATS/USDT:USDT | +34.08% | $34,113,579.48 |
+| BLESS/USDT:USDT | +20.48% | $66,977,534.05 |
+| TAKE/USDT:USDT | +17.46% | $1,106,414.66 |
+| FHE/USDT:USDT | +10.15% | $1,701,557.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.78% | +3.87% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.34% | +3.43% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.78% | +2.86% |
-| RE/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.45% | +0.54% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.99% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.65% |
+| FHE/USDT:USDT | below_1h_threshold | +0.50% | +0.54% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.47% | +0.51% |
 
 ## 7. 次に見るべき不足
 
