@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T13:56:17.936122+00:00
+- generated_at: 2026-08-03T14:01:38.676300+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10218**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.97** / 初期 $100.00 (+14.97%)
-- 確定: 1003件 (Win 322 / Loss 391 / Flat 290) / pending 3件 / skip 682件
+- 確定: 1003件 (Win 322 / Loss 391 / Flat 290) / pending 5件 / skip 682件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000545 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BICO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $114.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T13:56:10.615937+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.98% price=63284.8
-- Funnel: target 929 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.3 >= 65=1
+- 更新: 2026-08-03T14:01:26.711552+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=63192.0
+- Funnel: target 929 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +146.45% | $2,783,598.28 |
-| BICO/USDT:USDT | +61.38% | $15,507,304.17 |
-| 1000RATS/USDT:USDT | +33.26% | $38,482,782.79 |
-| BTW/USDT:USDT | +22.14% | $6,539,461.06 |
-| SKYAI/USDT:USDT | +21.98% | $4,939,579.95 |
+| CATE/USDT:USDT | +152.22% | $2,822,221.77 |
+| BICO/USDT:USDT | +61.88% | $15,626,580.14 |
+| 1000RATS/USDT:USDT | +32.08% | $37,392,974.75 |
+| BTW/USDT:USDT | +22.33% | $6,192,256.73 |
+| SKYAI/USDT:USDT | +21.57% | $4,871,430.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.22% | +2.24% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.00% | +2.02% |
-| CATE/USDT:USDT | below_1h_threshold | +2.94% | +1.96% |
-| WLD/USDT:USDT | below_1h_threshold | +2.65% | +1.67% |
-| ADA/USDT:USDT | below_1h_threshold | +2.59% | +1.61% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +4.16% | +4.36% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +3.18% | +3.38% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.65% | +2.84% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.76% |
+| AMZNSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.73% |
 
 ## 7. 次に見るべき不足
 
