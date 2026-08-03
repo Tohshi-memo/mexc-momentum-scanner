@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T20:16:26.226536+00:00
+- generated_at: 2026-08-03T20:21:24.727097+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10248**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T20:16:18.910520+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63869.3
+- 更新: 2026-08-03T20:21:17.489817+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63956.9
 - Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +20.02% | $2,278,647.57 |
-| HOME/USDT:USDT | +10.52% | $3,051,703.36 |
-| PIPPIN/USDT:USDT | +10.49% | $3,523,269.55 |
-| PLTRSTOCK/USDT:USDT | +8.21% | $1,359,011.32 |
-| KORU/USDT:USDT | +7.58% | $16,197,180.59 |
+| KOMA/USDT:USDT | +18.80% | $2,292,010.12 |
+| PIPPIN/USDT:USDT | +12.05% | $3,611,570.37 |
+| HOME/USDT:USDT | +11.47% | $3,099,001.72 |
+| PLTRSTOCK/USDT:USDT | +9.85% | $1,388,832.20 |
+| KORU/USDT:USDT | +8.12% | $16,207,492.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.33% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.55% | +3.50% |
-| KOMA/USDT:USDT | below_1h_threshold | +1.83% | +1.78% |
-| NIL/USDT:USDT | below_1h_threshold | +1.79% | +1.74% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.20% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.82% | +2.63% |
+| NIL/USDT:USDT | below_1h_threshold | +2.65% | +2.46% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.29% | +2.10% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.88% | +1.70% |
 
 ## 7. 次に見るべき不足
 
