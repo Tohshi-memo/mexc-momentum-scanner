@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T13:51:18.420681+00:00
+- generated_at: 2026-08-03T13:56:17.936122+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10218**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T13:51:10.963264+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=62985.0
+- 更新: 2026-08-03T13:56:10.615937+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.98% price=63284.8
 - Funnel: target 929 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.4 >= 65=1
+- Strict後reject: 4h RSI 83.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +140.17% | $2,745,049.30 |
-| BICO/USDT:USDT | +59.07% | $15,323,272.48 |
-| 1000RATS/USDT:USDT | +30.82% | $38,361,368.96 |
-| BTW/USDT:USDT | +22.34% | $6,509,893.86 |
-| SKYAI/USDT:USDT | +21.71% | $4,911,523.36 |
+| CATE/USDT:USDT | +146.45% | $2,783,598.28 |
+| BICO/USDT:USDT | +61.38% | $15,507,304.17 |
+| 1000RATS/USDT:USDT | +33.26% | $38,482,782.79 |
+| BTW/USDT:USDT | +22.14% | $6,539,461.06 |
+| SKYAI/USDT:USDT | +21.98% | $4,939,579.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.80% | +2.30% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.85% | +1.34% |
-| WLD/USDT:USDT | below_1h_threshold | +1.74% | +1.24% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.60% | +1.09% |
-| BTW/USDT:USDT | below_1h_threshold | +1.39% | +0.89% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.22% | +2.24% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.00% | +2.02% |
+| CATE/USDT:USDT | below_1h_threshold | +2.94% | +1.96% |
+| WLD/USDT:USDT | below_1h_threshold | +2.65% | +1.67% |
+| ADA/USDT:USDT | below_1h_threshold | +2.59% | +1.61% |
 
 ## 7. 次に見るべき不足
 
