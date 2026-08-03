@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T01:41:23.851327+00:00
+- generated_at: 2026-08-03T01:46:17.866254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10183**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T01:41:13.842028+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=63168.2
-- Funnel: target 922 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1
+- 更新: 2026-08-03T01:46:10.663431+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=63207.7
+- Funnel: target 922 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +35.89% | $2,951,765.77 |
-| BLESS/USDT:USDT | +21.92% | $63,159,834.35 |
-| TAKE/USDT:USDT | +15.63% | $1,071,433.06 |
-| KIOXIASTOCK/USDT:USDT | +13.70% | $1,102,547.62 |
-| 1000RATS/USDT:USDT | +12.55% | $38,319,657.56 |
+| BICO/USDT:USDT | +37.62% | $3,018,175.90 |
+| BLESS/USDT:USDT | +20.63% | $63,657,271.11 |
+| 1000RATS/USDT:USDT | +18.47% | $38,524,580.67 |
+| TAKE/USDT:USDT | +15.09% | $1,072,803.29 |
+| KIOXIASTOCK/USDT:USDT | +13.45% | $1,106,327.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.88% | +4.09% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.50% | +3.71% |
-| TAKE/USDT:USDT | below_1h_threshold | +3.33% | +3.53% |
-| FHE/USDT:USDT | below_1h_threshold | +2.58% | +2.78% |
-| EUL/USDT:USDT | below_1h_threshold | +1.85% | +2.06% |
+| UB/USDT:USDT | below_1h_threshold | +4.00% | +4.14% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.50% | +3.65% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.01% | +3.16% |
+| BICO/USDT:USDT | below_1h_threshold | +2.96% | +3.11% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.84% | +2.99% |
 
 ## 7. 次に見るべき不足
 
