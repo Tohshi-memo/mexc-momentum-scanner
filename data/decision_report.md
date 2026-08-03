@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T18:31:26.061592+00:00
+- generated_at: 2026-08-03T18:36:28.020171+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10242**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T18:31:13.990076+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63848.9
+- 更新: 2026-08-03T18:36:15.090920+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=63822.2
 - Funnel: target 929 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +12.95% | $37,785,382.24 |
-| HOME/USDT:USDT | +11.00% | $3,238,921.66 |
-| PIPPIN/USDT:USDT | +8.87% | $2,728,507.34 |
-| BTW/USDT:USDT | +8.71% | $6,482,574.70 |
-| SKYAI/USDT:USDT | +7.64% | $9,619,801.54 |
+| 1000RATS/USDT:USDT | +13.75% | $37,845,747.63 |
+| HOME/USDT:USDT | +11.54% | $3,252,744.40 |
+| KOMA/USDT:USDT | +9.57% | $3,035,330.81 |
+| PIPPIN/USDT:USDT | +9.17% | $2,784,816.79 |
+| BTW/USDT:USDT | +8.93% | $6,502,288.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +4.72% | +4.76% |
-| BTW/USDT:USDT | below_1h_threshold | +4.14% | +4.18% |
-| MUU/USDT:USDT | below_1h_threshold | +3.94% | +3.97% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.90% | +3.94% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.38% | +3.42% |
+| KOMA/USDT:USDT | below_1h_threshold | +4.79% | +4.87% |
+| BTW/USDT:USDT | below_1h_threshold | +4.43% | +4.51% |
+| MUU/USDT:USDT | below_1h_threshold | +3.94% | +4.02% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.90% | +3.98% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.79% | +3.87% |
 
 ## 7. 次に見るべき不足
 
