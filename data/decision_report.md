@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T18:01:33.682631+00:00
+- generated_at: 2026-08-03T18:06:33.423765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10240**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T18:01:21.129098+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63870.1
+- 更新: 2026-08-03T18:06:20.216538+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63884.1
 - Funnel: target 929 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +10.55% | $37,406,081.32 |
-| SNXX/USDT:USDT | +8.76% | $6,420,414.73 |
-| PIPPIN/USDT:USDT | +8.21% | $2,497,883.64 |
-| CATE/USDT:USDT | +8.04% | $6,296,336.90 |
-| KORU/USDT:USDT | +7.05% | $13,865,964.95 |
+| 1000RATS/USDT:USDT | +9.99% | $37,457,240.22 |
+| SNXX/USDT:USDT | +9.36% | $6,515,318.30 |
+| PIPPIN/USDT:USDT | +8.39% | $2,558,284.86 |
+| HOME/USDT:USDT | +7.72% | $3,132,431.60 |
+| KORU/USDT:USDT | +7.18% | $14,061,712.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +3.94% | +3.94% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.90% | +3.91% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.38% | +3.39% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.79% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.49% |
+| MUU/USDT:USDT | below_1h_threshold | +3.94% | +3.92% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.90% | +3.89% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.38% | +3.37% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.77% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.46% |
 
 ## 7. 次に見るべき不足
 
