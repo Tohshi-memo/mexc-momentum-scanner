@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T17:11:19.503882+00:00
+- generated_at: 2026-08-03T17:16:22.117873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10237**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T17:11:10.740499+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63755.0
+- 更新: 2026-08-03T17:16:15.605342+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=63828.9
 - Funnel: target 929 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +14.08% | $5,846,110.14 |
-| PIPPIN/USDT:USDT | +8.99% | $1,877,470.55 |
-| UB/USDT:USDT | +5.70% | $3,380,846.98 |
-| SKYAI/USDT:USDT | +4.69% | $8,443,822.68 |
-| HOME/USDT:USDT | +4.35% | $3,177,462.09 |
+| CATE/USDT:USDT | +10.74% | $5,882,463.28 |
+| PIPPIN/USDT:USDT | +8.09% | $1,937,295.58 |
+| UB/USDT:USDT | +6.13% | $3,464,473.78 |
+| 1000RATS/USDT:USDT | +5.93% | $37,636,520.51 |
+| SKYAI/USDT:USDT | +5.62% | $8,545,597.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.12% | +3.10% |
-| COTI/USDT:USDT | below_1h_threshold | +2.46% | +2.43% |
-| CATE/USDT:USDT | below_1h_threshold | +2.21% | +2.18% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.73% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.68% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.12% | +2.98% |
+| CAP/USDT:USDT | below_1h_threshold | +2.21% | +2.07% |
+| COTI/USDT:USDT | below_1h_threshold | +2.00% | +1.85% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.62% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.71% | +1.57% |
 
 ## 7. 次に見るべき不足
 
