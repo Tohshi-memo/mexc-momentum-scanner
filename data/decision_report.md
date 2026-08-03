@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T08:07:10.222434+00:00
+- generated_at: 2026-08-03T08:11:29.304716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10200**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.08** / 初期 $100.00 (+13.08%)
-- 確定: 986件 (Win 313 / Loss 386 / Flat 287) / pending 2件 / skip 681件
+- 確定: 986件 (Win 313 / Loss 386 / Flat 287) / pending 3件 / skip 681件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000261 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ICNT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $113.08
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T08:07:02.621629+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=62589.1
+- 更新: 2026-08-03T08:11:23.263516+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=62510.2
 - Funnel: target 924 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1
+- Strict後reject: 4h RSI 85.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +87.79% | $1,216,213.94 |
-| 1000RATS/USDT:USDT | +46.03% | $37,870,306.31 |
-| BICO/USDT:USDT | +21.20% | $7,412,736.83 |
-| GRVT/USDT:USDT | +15.33% | $2,376,111.10 |
-| TAKE/USDT:USDT | +15.30% | $1,414,072.41 |
+| CATE/USDT:USDT | +96.26% | $1,235,112.77 |
+| 1000RATS/USDT:USDT | +46.15% | $37,927,949.33 |
+| BICO/USDT:USDT | +20.29% | $7,440,042.74 |
+| GRVT/USDT:USDT | +15.63% | $2,386,295.99 |
+| BTW/USDT:USDT | +14.61% | $6,045,365.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.81% | +2.81% |
-| CATE/USDT:USDT | below_1h_threshold | +2.17% | +2.17% |
-| ENA/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
-| UB/USDT:USDT | below_1h_threshold | +0.79% | +0.79% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.56% | +3.69% |
+| ON/USDT:USDT | below_1h_threshold | +2.79% | +2.91% |
+| ENA/USDT:USDT | below_1h_threshold | +1.05% | +1.17% |
+| FHE/USDT:USDT | below_1h_threshold | +1.01% | +1.14% |
+| BTW/USDT:USDT | below_1h_threshold | +0.92% | +1.05% |
 
 ## 7. 次に見るべき不足
 
