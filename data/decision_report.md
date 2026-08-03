@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T03:51:27.324267+00:00
+- generated_at: 2026-08-03T03:56:25.381931+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10184**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T03:51:17.162887+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=62914.2
-- Funnel: target 922 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-03T03:56:13.494892+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=62922.8
+- Funnel: target 922 → liquid 139 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +45.21% | $35,357,136.83 |
-| BICO/USDT:USDT | +24.91% | $5,644,976.13 |
-| BLESS/USDT:USDT | +24.58% | $69,068,433.37 |
-| TAKE/USDT:USDT | +16.50% | $1,141,216.28 |
-| KIOXIASTOCK/USDT:USDT | +12.21% | $1,183,352.59 |
+| 1000RATS/USDT:USDT | +44.26% | $35,458,395.67 |
+| BICO/USDT:USDT | +27.64% | $5,717,439.80 |
+| BLESS/USDT:USDT | +25.18% | $69,215,551.77 |
+| TAKE/USDT:USDT | +17.01% | $1,141,841.35 |
+| GRVT/USDT:USDT | +16.45% | $2,389,845.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.08% | +4.41% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +3.27% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.92% | +2.24% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.20% |
-| GRVT/USDT:USDT | below_1h_threshold | +0.73% | +1.05% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.31% | +4.62% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +3.25% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.32% | +2.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.64% | +1.95% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.19% |
 
 ## 7. 次に見るべき不足
 
