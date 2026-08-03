@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T00:51:22.288295+00:00
+- generated_at: 2026-08-03T00:56:28.179278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10182**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$112.22** / 初期 $100.00 (+12.22%)
-- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 0件 / skip 681件
+- 確定: 969件 (Win 307 / Loss 380 / Flat 282) / pending 1件 / skip 681件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000176 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SYN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $112.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T00:51:14.839252+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=63309.3
-- Funnel: target 922 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-03T00:56:18.225331+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.40% price=63294.6
+- Funnel: target 922 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +32.67% | $2,321,779.09 |
-| 1000RATS/USDT:USDT | +31.28% | $39,460,147.38 |
-| BLESS/USDT:USDT | +22.69% | $59,921,278.50 |
-| TAKE/USDT:USDT | +8.94% | $1,053,758.78 |
-| FHE/USDT:USDT | +8.64% | $1,569,426.46 |
+| 1000RATS/USDT:USDT | +33.47% | $39,529,369.61 |
+| BICO/USDT:USDT | +33.08% | $2,380,703.77 |
+| BLESS/USDT:USDT | +21.66% | $60,286,863.74 |
+| TAKE/USDT:USDT | +11.22% | $1,055,845.18 |
+| FHE/USDT:USDT | +8.55% | $1,570,427.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.00% | +4.38% |
-| KORU/USDT:USDT | below_1h_threshold | +1.87% | +2.25% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.82% | +2.20% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +2.05% |
-| ON/USDT:USDT | below_1h_threshold | +1.66% | +2.04% |
+| KORU/USDT:USDT | below_1h_threshold | +1.87% | +2.27% |
+| ON/USDT:USDT | below_1h_threshold | +1.83% | +2.24% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +2.08% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.74% |
+| UB/USDT:USDT | below_1h_threshold | +1.29% | +1.69% |
 
 ## 7. 次に見るべき不足
 
