@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T11:56:33.671596+00:00
+- generated_at: 2026-08-03T12:01:18.795899+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10213**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T11:56:24.672360+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=62592.6
-- Funnel: target 929 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-03T12:01:11.599715+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=62546.8
+- Funnel: target 929 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +146.69% | $2,063,813.91 |
-| BICO/USDT:USDT | +46.94% | $10,900,847.12 |
-| 1000RATS/USDT:USDT | +35.48% | $37,748,237.26 |
-| BLESS/USDT:USDT | +20.75% | $86,062,219.17 |
-| BTW/USDT:USDT | +18.56% | $6,548,753.79 |
+| CATE/USDT:USDT | +145.48% | $2,079,187.67 |
+| BICO/USDT:USDT | +50.57% | $11,062,669.60 |
+| 1000RATS/USDT:USDT | +39.01% | $35,829,479.18 |
+| BLESS/USDT:USDT | +19.78% | $84,244,747.10 |
+| BTW/USDT:USDT | +16.63% | $6,389,285.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.42% | +2.61% |
-| BICO/USDT:USDT | below_1h_threshold | +2.00% | +2.19% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.99% | +2.17% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.99% | +1.18% |
-| BTW/USDT:USDT | below_1h_threshold | +0.97% | +1.15% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.83% | +4.81% |
+| BICO/USDT:USDT | below_1h_threshold | +0.94% | +0.92% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.63% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
 
 ## 7. 次に見るべき不足
 
