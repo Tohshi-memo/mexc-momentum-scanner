@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T17:51:16.742661+00:00
+- generated_at: 2026-08-03T17:56:18.471042+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10240**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T17:51:11.561422+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=63906.1
+- 更新: 2026-08-03T17:56:10.829204+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=63866.3
 - Funnel: target 929 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +10.02% | $38,219,047.88 |
-| HOME/USDT:USDT | +8.45% | $3,325,229.24 |
-| PIPPIN/USDT:USDT | +7.55% | $2,402,637.70 |
-| SNXX/USDT:USDT | +7.35% | $6,386,211.45 |
-| KORU/USDT:USDT | +6.31% | $13,446,700.21 |
+| 1000RATS/USDT:USDT | +9.83% | $38,292,209.95 |
+| SNXX/USDT:USDT | +8.76% | $6,425,094.12 |
+| PIPPIN/USDT:USDT | +8.27% | $2,456,375.63 |
+| HOME/USDT:USDT | +8.02% | $3,336,873.87 |
+| CATE/USDT:USDT | +6.99% | $6,246,319.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.25% | +3.99% |
-| VVV/USDT:USDT | below_1h_threshold | +3.78% | +3.51% |
-| HOME/USDT:USDT | below_1h_threshold | +3.75% | +3.49% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.67% | +3.41% |
-| NIL/USDT:USDT | below_1h_threshold | +3.27% | +3.01% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.25% | +4.05% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +4.07% | +3.86% |
+| VVV/USDT:USDT | below_1h_threshold | +3.93% | +3.73% |
+| HOME/USDT:USDT | below_1h_threshold | +3.24% | +3.04% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.12% | +2.92% |
 
 ## 7. 次に見るべき不足
 
