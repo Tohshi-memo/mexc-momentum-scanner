@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T06:11:16.763404+00:00
+- generated_at: 2026-08-03T06:16:21.189272+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10193**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.48** / 初期 $100.00 (+13.48%)
-- 確定: 979件 (Win 312 / Loss 382 / Flat 285) / pending 2件 / skip 681件
+- 確定: 979件 (Win 312 / Loss 382 / Flat 285) / pending 3件 / skip 681件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000232 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ICNT/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $113.48
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T06:11:09.526188+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=62819.0
-- Funnel: target 924 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-03T06:16:11.590580+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=62815.5
+- Funnel: target 924 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +29.04% | $36,910,812.47 |
-| BICO/USDT:USDT | +24.42% | $6,624,448.94 |
-| TAKE/USDT:USDT | +19.86% | $1,261,240.49 |
-| BLESS/USDT:USDT | +14.12% | $73,112,116.43 |
-| BTW/USDT:USDT | +12.36% | $5,802,864.12 |
+| CATE/USDT:USDT | +73.72% | $1,005,993.79 |
+| 1000RATS/USDT:USDT | +31.87% | $37,088,182.07 |
+| BICO/USDT:USDT | +25.16% | $6,662,873.63 |
+| TAKE/USDT:USDT | +20.34% | $1,267,697.72 |
+| ICNT/USDT:USDT | +15.44% | $1,137,256.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.88% | +1.85% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.83% | +1.80% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.45% | +3.43% |
 | SNXX/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
-| ICNT/USDT:USDT | below_1h_threshold | +1.31% | +1.28% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.01% |
+| KORU/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.96% | +0.94% |
 
 ## 7. 次に見るべき不足
 
