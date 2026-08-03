@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T04:56:29.633955+00:00
+- generated_at: 2026-08-03T05:01:17.654193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10189**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T04:56:19.542367+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=62813.2
-- Funnel: target 924 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-03T05:01:10.308729+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=62799.9
+- Funnel: target 924 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +54.47% | $36,630,061.19 |
-| BLESS/USDT:USDT | +24.96% | $70,389,814.55 |
-| BICO/USDT:USDT | +23.76% | $6,247,997.24 |
-| TAKE/USDT:USDT | +20.28% | $1,188,225.87 |
-| GRVT/USDT:USDT | +12.85% | $2,475,556.56 |
+| 1000RATS/USDT:USDT | +51.67% | $35,599,739.04 |
+| BLESS/USDT:USDT | +23.59% | $69,896,638.79 |
+| BICO/USDT:USDT | +23.18% | $6,259,961.41 |
+| TAKE/USDT:USDT | +18.78% | $1,184,666.37 |
+| GRVT/USDT:USDT | +12.68% | $2,450,634.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAKE/USDT:USDT | below_1h_threshold | +3.20% | +3.24% |
-| ZRX/USDT:USDT | below_1h_threshold | +1.67% | +1.71% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.52% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.56% | +0.60% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.97% | +0.92% |
+| FHE/USDT:USDT | below_1h_threshold | +0.59% | +0.53% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +0.41% | +0.36% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.23% | +0.17% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.22% | +0.17% |
 
 ## 7. 次に見るべき不足
 
