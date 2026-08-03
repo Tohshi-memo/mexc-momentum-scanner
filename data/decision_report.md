@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T22:46:22.434505+00:00
+- generated_at: 2026-08-03T22:51:24.977208+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10254**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.71** / 初期 $100.00 (+16.71%)
-- 確定: 1029件 (Win 331 / Loss 398 / Flat 300) / pending 5件 / skip 694件
+- 確定: 1029件 (Win 331 / Loss 398 / Flat 300) / pending 6件 / skip 694件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000517 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KORU/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T22:46:13.756550+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=63479.4
-- Funnel: target 929 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-03T22:51:15.271017+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63546.5
+- Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +15.56% | $2,358,017.17 |
-| PLTRSTOCK/USDT:USDT | +15.41% | $3,162,658.73 |
-| PIPPIN/USDT:USDT | +14.20% | $5,924,788.59 |
-| KORU/USDT:USDT | +11.61% | $16,781,855.01 |
-| HOME/USDT:USDT | +9.73% | $3,133,177.58 |
+| KOMA/USDT:USDT | +15.82% | $2,368,247.79 |
+| PLTRSTOCK/USDT:USDT | +15.17% | $3,176,630.42 |
+| PIPPIN/USDT:USDT | +14.50% | $5,937,273.92 |
+| KORU/USDT:USDT | +11.82% | $16,792,135.82 |
+| HOME/USDT:USDT | +11.15% | $3,138,706.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +4.48% | +4.60% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.19% | +2.32% |
-| BTW/USDT:USDT | below_1h_threshold | +1.51% | +1.64% |
-| UAI/USDT:USDT | below_1h_threshold | +1.33% | +1.46% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.25% |
+| UAI/USDT:USDT | below_1h_threshold | +2.76% | +2.79% |
+| BTW/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.19% | +2.21% |
+| FHE/USDT:USDT | below_1h_threshold | +1.18% | +1.20% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.15% |
 
 ## 7. 次に見るべき不足
 
