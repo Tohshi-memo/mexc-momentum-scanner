@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T13:36:33.054137+00:00
+- generated_at: 2026-08-03T13:41:22.497519+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10217**
 
@@ -70,10 +70,10 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T13:36:23.103299+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=62772.1
-- Funnel: target 929 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-03T13:41:15.047950+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=62840.8
+- Funnel: target 929 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 81.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +138.90% | $2,656,140.85 |
-| BICO/USDT:USDT | +55.36% | $14,461,834.20 |
-| 1000RATS/USDT:USDT | +35.80% | $37,816,942.46 |
-| BTW/USDT:USDT | +21.89% | $6,397,381.53 |
-| SKYAI/USDT:USDT | +20.42% | $4,780,441.73 |
+| CATE/USDT:USDT | +135.13% | $2,680,101.25 |
+| BICO/USDT:USDT | +55.11% | $14,651,269.57 |
+| 1000RATS/USDT:USDT | +33.95% | $38,036,140.66 |
+| BTW/USDT:USDT | +22.11% | $6,439,430.72 |
+| SKYAI/USDT:USDT | +20.59% | $4,839,950.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.74% | +1.58% |
-| ZRX/USDT:USDT | below_1h_threshold | +1.00% | +0.84% |
-| ADA/USDT:USDT | below_1h_threshold | +0.90% | +0.74% |
-| DOT/USDT:USDT | below_1h_threshold | +0.86% | +0.70% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.65% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.78% | +3.50% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.97% | +1.70% |
+| WLD/USDT:USDT | below_1h_threshold | +1.78% | +1.50% |
+| BTW/USDT:USDT | below_1h_threshold | +1.35% | +1.08% |
+| ADA/USDT:USDT | below_1h_threshold | +1.27% | +1.00% |
 
 ## 7. 次に見るべき不足
 
