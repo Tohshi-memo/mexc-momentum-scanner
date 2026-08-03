@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T21:56:34.587374+00:00
+- generated_at: 2026-08-03T22:01:27.227629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10252**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T21:56:24.611004+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=63550.1
-- Funnel: target 929 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-03T22:01:19.964873+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63583.7
+- Funnel: target 929 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +20.86% | $2,366,418.80 |
-| PIPPIN/USDT:USDT | +13.36% | $5,508,512.92 |
-| PLTRSTOCK/USDT:USDT | +12.35% | $2,397,526.59 |
-| ON/USDT:USDT | +11.02% | $2,695,061.08 |
-| KORU/USDT:USDT | +9.73% | $16,445,952.99 |
+| KOMA/USDT:USDT | +20.87% | $2,243,577.37 |
+| PIPPIN/USDT:USDT | +14.98% | $5,538,371.44 |
+| PLTRSTOCK/USDT:USDT | +12.39% | $2,473,965.12 |
+| ON/USDT:USDT | +10.74% | $2,670,215.94 |
+| KORU/USDT:USDT | +9.93% | $16,393,772.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.74% | +4.06% |
-| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.40% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.93% | +2.25% |
-| NIL/USDT:USDT | below_1h_threshold | +1.65% | +1.97% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.66% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.19% | +2.15% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.09% |
+| MUU/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
+| KORU/USDT:USDT | below_1h_threshold | +0.68% | +0.64% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
 
 ## 7. 次に見るべき不足
 
