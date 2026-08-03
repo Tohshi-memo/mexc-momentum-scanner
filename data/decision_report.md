@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T15:11:27.799452+00:00
+- generated_at: 2026-08-03T15:16:38.750129+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10228**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T15:11:17.373935+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63835.0
-- Funnel: target 929 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-08-03T15:16:28.252193+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=63783.8
+- Funnel: target 929 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.4 >= 65=1
+- Strict後reject: 4h RSI 68.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +204.30% | $4,129,225.25 |
-| BICO/USDT:USDT | +56.43% | $17,645,119.49 |
-| 1000RATS/USDT:USDT | +30.11% | $38,179,424.38 |
-| SKYAI/USDT:USDT | +29.89% | $6,206,255.13 |
-| BTW/USDT:USDT | +25.30% | $6,228,122.41 |
+| CATE/USDT:USDT | +200.36% | $4,193,099.61 |
+| BICO/USDT:USDT | +56.43% | $17,756,106.97 |
+| 1000RATS/USDT:USDT | +30.28% | $38,273,727.93 |
+| SKYAI/USDT:USDT | +29.38% | $6,324,286.26 |
+| BTW/USDT:USDT | +25.18% | $6,252,679.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.74% | +4.89% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.16% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.36% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.97% | +2.11% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.86% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.74% | +4.97% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.24% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.38% | +3.61% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.44% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.97% | +2.19% |
 
 ## 7. 次に見るべき不足
 
