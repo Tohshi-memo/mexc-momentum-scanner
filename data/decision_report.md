@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T05:41:18.248733+00:00
+- generated_at: 2026-08-03T05:46:23.184406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10191**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T05:41:11.003491+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=62796.0
+- 更新: 2026-08-03T05:46:16.380317+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=62784.0
 - Funnel: target 924 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +43.67% | $36,984,976.97 |
-| BICO/USDT:USDT | +23.01% | $6,488,579.55 |
-| TAKE/USDT:USDT | +21.18% | $1,216,626.79 |
-| BLESS/USDT:USDT | +16.53% | $71,858,171.63 |
-| SKYAI/USDT:USDT | +13.56% | $3,331,560.16 |
+| 1000RATS/USDT:USDT | +42.41% | $37,137,107.78 |
+| BICO/USDT:USDT | +24.09% | $6,509,412.96 |
+| TAKE/USDT:USDT | +21.78% | $1,220,114.52 |
+| BLESS/USDT:USDT | +17.69% | $72,148,116.97 |
+| SKYAI/USDT:USDT | +12.71% | $3,337,291.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +2.26% | +2.22% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.19% | +2.14% |
-| BTW/USDT:USDT | below_1h_threshold | +2.06% | +2.01% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.73% | +1.68% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.66% | +1.61% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.45% | +2.42% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.09% | +2.06% |
+| UB/USDT:USDT | below_1h_threshold | +1.86% | +1.83% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.86% | +1.83% |
+| RE/USDT:USDT | below_1h_threshold | +1.54% | +1.51% |
 
 ## 7. 次に見るべき不足
 
