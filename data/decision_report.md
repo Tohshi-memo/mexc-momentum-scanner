@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T21:51:27.245698+00:00
+- generated_at: 2026-08-03T21:56:34.587374+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10252**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.71** / 初期 $100.00 (+16.71%)
-- 確定: 1028件 (Win 331 / Loss 398 / Flat 299) / pending 6件 / skip 693件
+- 確定: 1028件 (Win 331 / Loss 398 / Flat 299) / pending 6件 / skip 694件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000502 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T21:51:19.487959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=63631.5
-- Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
+- 更新: 2026-08-03T21:56:24.611004+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=63550.1
+- Funnel: target 929 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +19.54% | $2,356,899.07 |
-| PIPPIN/USDT:USDT | +12.94% | $5,443,332.63 |
-| PLTRSTOCK/USDT:USDT | +11.58% | $2,353,660.53 |
-| ON/USDT:USDT | +10.75% | $2,675,569.11 |
-| KORU/USDT:USDT | +10.14% | $16,427,303.29 |
+| KOMA/USDT:USDT | +20.86% | $2,366,418.80 |
+| PIPPIN/USDT:USDT | +13.36% | $5,508,512.92 |
+| PLTRSTOCK/USDT:USDT | +12.35% | $2,397,526.59 |
+| ON/USDT:USDT | +11.02% | $2,695,061.08 |
+| KORU/USDT:USDT | +9.73% | $16,445,952.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.44% | +3.63% |
-| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.27% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.39% | +1.59% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.35% | +1.54% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.54% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.74% | +4.06% |
+| KORU/USDT:USDT | below_1h_threshold | +2.07% | +2.40% |
+| VANRY/USDT:USDT | below_1h_threshold | +1.93% | +2.25% |
+| NIL/USDT:USDT | below_1h_threshold | +1.65% | +1.97% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.66% |
 
 ## 7. 次に見るべき不足
 
