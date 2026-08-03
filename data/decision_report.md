@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T20:46:34.608327+00:00
+- generated_at: 2026-08-03T20:51:28.750718+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10252**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.71** / 初期 $100.00 (+16.71%)
-- 確定: 1028件 (Win 331 / Loss 398 / Flat 299) / pending 6件 / skip 691件
+- 確定: 1028件 (Win 331 / Loss 398 / Flat 299) / pending 6件 / skip 692件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000502 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T20:46:21.904566+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63848.5
+- 更新: 2026-08-03T20:51:19.776458+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=63760.1
 - Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.5 >= 65=1, 4h RSI 79.2 >= 65=1
+- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +20.68% | $2,373,044.73 |
-| PIPPIN/USDT:USDT | +16.18% | $4,215,114.02 |
-| ON/USDT:USDT | +12.38% | $1,981,416.04 |
-| PLTRSTOCK/USDT:USDT | +11.97% | $1,492,766.44 |
-| KORU/USDT:USDT | +9.20% | $16,388,376.43 |
+| KOMA/USDT:USDT | +22.04% | $2,387,004.36 |
+| PIPPIN/USDT:USDT | +16.18% | $4,379,190.76 |
+| ON/USDT:USDT | +14.03% | $2,038,310.06 |
+| PLTRSTOCK/USDT:USDT | +13.33% | $1,536,037.83 |
+| VELVET/USDT:USDT | +9.99% | $1,954,495.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.37% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.26% | +4.24% |
-| BANK/USDT:USDT | below_1h_threshold | +3.39% | +3.37% |
-| UAI/USDT:USDT | below_1h_threshold | +3.34% | +3.32% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.67% | +2.65% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.50% |
+| UAI/USDT:USDT | below_1h_threshold | +4.22% | +4.34% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.83% | +3.95% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.45% | +3.57% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.41% | +3.53% |
 
 ## 7. 次に見るべき不足
 
