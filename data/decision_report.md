@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T15:31:29.413226+00:00
+- generated_at: 2026-08-03T15:36:28.133967+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10228**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T15:31:19.176329+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=63700.0
+- 更新: 2026-08-03T15:36:17.883501+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=63709.6
 - Funnel: target 929 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1
+- Strict後reject: 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +203.00% | $4,364,182.08 |
-| BICO/USDT:USDT | +59.07% | $18,058,962.14 |
-| 1000RATS/USDT:USDT | +33.07% | $38,565,004.70 |
-| SKYAI/USDT:USDT | +31.48% | $6,672,917.80 |
-| BTW/USDT:USDT | +26.45% | $6,365,819.89 |
+| CATE/USDT:USDT | +203.63% | $4,407,863.04 |
+| BICO/USDT:USDT | +58.58% | $18,149,610.44 |
+| SKYAI/USDT:USDT | +31.85% | $6,729,763.34 |
+| 1000RATS/USDT:USDT | +31.81% | $38,657,431.12 |
+| BTW/USDT:USDT | +27.58% | $6,429,199.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.74% | +5.10% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.37% |
-| BICO/USDT:USDT | below_1h_threshold | +2.82% | +3.18% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.57% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.97% | +2.32% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.74% | +5.08% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.35% |
+| BICO/USDT:USDT | below_1h_threshold | +2.40% | +2.74% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.55% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.12% | +2.46% |
 
 ## 7. 次に見るべき不足
 
