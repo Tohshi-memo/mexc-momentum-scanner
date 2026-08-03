@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T06:51:18.208194+00:00
+- generated_at: 2026-08-03T06:56:23.171814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10195**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.87** / 初期 $100.00 (+13.87%)
-- 確定: 981件 (Win 313 / Loss 382 / Flat 286) / pending 4件 / skip 681件
+- 確定: 981件 (Win 313 / Loss 382 / Flat 286) / pending 5件 / skip 681件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000317 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ICNT/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $113.87
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T06:51:10.767056+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=62631.4
-- Funnel: target 924 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1
+- 更新: 2026-08-03T06:56:15.266001+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=62622.9
+- Funnel: target 924 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.2 >= 65=1, 4h RSI 65.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +83.29% | $1,061,781.92 |
-| 1000RATS/USDT:USDT | +36.85% | $38,432,540.09 |
-| ICNT/USDT:USDT | +28.16% | $1,457,974.61 |
-| BICO/USDT:USDT | +26.48% | $6,940,333.50 |
-| BLESS/USDT:USDT | +13.60% | $77,303,239.90 |
+| CATE/USDT:USDT | +90.29% | $1,071,314.61 |
+| 1000RATS/USDT:USDT | +45.27% | $38,734,070.64 |
+| ICNT/USDT:USDT | +27.34% | $1,522,371.95 |
+| BICO/USDT:USDT | +23.51% | $6,992,581.93 |
+| BLESS/USDT:USDT | +15.42% | $77,751,473.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +3.12% | +3.38% |
-| BICO/USDT:USDT | below_1h_threshold | +1.99% | +2.26% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.64% | +1.91% |
-| NIL/USDT:USDT | below_1h_threshold | +1.63% | +1.90% |
-| UB/USDT:USDT | below_1h_threshold | +1.53% | +1.80% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +4.00% | +4.28% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.87% | +3.15% |
+| CATE/USDT:USDT | below_1h_threshold | +2.30% | +2.59% |
+| BTW/USDT:USDT | below_1h_threshold | +2.22% | +2.50% |
+| NIL/USDT:USDT | below_1h_threshold | +2.00% | +2.28% |
 
 ## 7. 次に見るべき不足
 
