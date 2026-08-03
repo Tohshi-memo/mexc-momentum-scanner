@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-03T20:06:14.178209+00:00
+- generated_at: 2026-08-03T20:11:25.676835+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **10247**
+- closed shadow trades: **10248**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=10247, expectancy=-0.02%
+- 全期間 MARKET基準: n=10248, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-0.93%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -34,7 +34,7 @@
 | LIMIT_3PCT_LONG | 14/20 | 70.0% | +3.66% | **+2.56%** |
 | LIMIT_5PCT_LONG | 12/20 | 60.0% | +3.07% | **+1.84%** |
 | LIMIT_4PCT_LONG | 12/20 | 60.0% | +3.00% | **+1.80%** |
-| LIMIT_ATR_LONG | 11/20 | 55.0% | +2.28% | **+1.25%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +2.19% | **+1.20%** |
 | LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.46% | **+1.02%** |
 
 ## 2. $100 Live Portfolio
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$591.32** / 初期 $100.00 (+491.32%)
-- 確定: 3705件 (Win 1175 / Loss 1212 / Flat 1318) / skip 3103件
-- 成長率目線: 平均log +0.000480 / 幾何平均 +0.048% per trade / maxDD +8.13%
+- 残高: **$588.37** / 初期 $100.00 (+488.37%)
+- 確定: 3706件 (Win 1175 / Loss 1213 / Flat 1318) / skip 3103件
+- 成長率目線: 平均log +0.000478 / 幾何平均 +0.048% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SKYAI/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $591.32
+- 最新: BICO/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $588.37
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$140.31** / 初期 $100.00 (+40.31%)
-- 確定: 1283件 (Win 359 / Loss 298 / Flat 626) / skip 2375件
+- 確定: 1283件 (Win 359 / Loss 298 / Flat 626) / skip 2376件
 - 成長率目線: 平均log +0.000264 / 幾何平均 +0.026% per trade / maxDD +3.89%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0371 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $140.31
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$116.77** / 初期 $100.00 (+16.77%)
-- 確定: 1023件 (Win 330 / Loss 396 / Flat 297) / pending 6件 / skip 691件
+- 残高: **$116.56** / 初期 $100.00 (+16.56%)
+- 確定: 1024件 (Win 330 / Loss 397 / Flat 297) / pending 5件 / skip 691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000464 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: NBISSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.77
+- 最新: BICO/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.56
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T20:06:09.058202+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63829.2
+- 更新: 2026-08-03T20:11:16.825154+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63878.0
 - Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| KOMA/USDT:USDT | +21.63% | $2,228,316.42 |
-| HOME/USDT:USDT | +10.82% | $3,016,832.32 |
-| PIPPIN/USDT:USDT | +10.37% | $3,431,478.80 |
-| KORU/USDT:USDT | +6.71% | $16,030,523.45 |
-| BEAT/USDT:USDT | +6.45% | $49,917,264.79 |
+| KOMA/USDT:USDT | +19.52% | $2,251,829.53 |
+| HOME/USDT:USDT | +11.20% | $3,027,250.78 |
+| PIPPIN/USDT:USDT | +9.41% | $3,484,100.06 |
+| PLTRSTOCK/USDT:USDT | +8.34% | $1,234,584.29 |
+| BEAT/USDT:USDT | +7.87% | $50,102,672.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.40% |
-| KOMA/USDT:USDT | below_1h_threshold | +3.06% | +3.08% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.85% | +1.86% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.55% |
-| MYX/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.32% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.17% | +3.11% |
+| MYX/USDT:USDT | below_1h_threshold | +2.29% | +2.22% |
+| BANK/USDT:USDT | below_1h_threshold | +1.72% | +1.66% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.47% |
 
 ## 7. 次に見るべき不足
 
