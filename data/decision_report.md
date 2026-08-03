@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T17:56:18.471042+00:00
+- generated_at: 2026-08-03T18:01:33.682631+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10240**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.77** / 初期 $100.00 (+16.77%)
-- 確定: 1022件 (Win 330 / Loss 396 / Flat 296) / pending 4件 / skip 686件
+- 確定: 1022件 (Win 330 / Loss 396 / Flat 296) / pending 6件 / skip 686件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000492 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 1000RATS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.77
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T17:56:10.829204+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=63866.3
-- Funnel: target 929 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-03T18:01:21.129098+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63870.1
+- Funnel: target 929 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 1000RATS/USDT:USDT | +9.83% | $38,292,209.95 |
-| SNXX/USDT:USDT | +8.76% | $6,425,094.12 |
-| PIPPIN/USDT:USDT | +8.27% | $2,456,375.63 |
-| HOME/USDT:USDT | +8.02% | $3,336,873.87 |
-| CATE/USDT:USDT | +6.99% | $6,246,319.08 |
+| 1000RATS/USDT:USDT | +10.55% | $37,406,081.32 |
+| SNXX/USDT:USDT | +8.76% | $6,420,414.73 |
+| PIPPIN/USDT:USDT | +8.21% | $2,497,883.64 |
+| CATE/USDT:USDT | +8.04% | $6,296,336.90 |
+| KORU/USDT:USDT | +7.05% | $13,865,964.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.25% | +4.05% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.07% | +3.86% |
-| VVV/USDT:USDT | below_1h_threshold | +3.93% | +3.73% |
-| HOME/USDT:USDT | below_1h_threshold | +3.24% | +3.04% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.12% | +2.92% |
+| MUU/USDT:USDT | below_1h_threshold | +3.94% | +3.94% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.90% | +3.91% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.38% | +3.39% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.79% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.49% |
 
 ## 7. 次に見るべき不足
 
