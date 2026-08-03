@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T00:11:17.162466+00:00
+- generated_at: 2026-08-03T00:16:10.563316+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10181**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T00:11:09.823294+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=63407.3
+- 更新: 2026-08-03T00:16:04.886478+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=63402.7
 - Funnel: target 922 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +32.09% | $1,632,579.24 |
-| 1000RATS/USDT:USDT | +26.66% | $38,716,920.62 |
-| BLESS/USDT:USDT | +25.88% | $56,428,985.75 |
-| TAKE/USDT:USDT | +9.54% | $1,017,870.18 |
-| GRVT/USDT:USDT | +7.46% | $2,411,336.16 |
+| BICO/USDT:USDT | +32.83% | $1,746,033.19 |
+| 1000RATS/USDT:USDT | +28.72% | $38,789,451.72 |
+| BLESS/USDT:USDT | +24.55% | $56,943,627.38 |
+| TAKE/USDT:USDT | +8.34% | $1,028,810.29 |
+| GRVT/USDT:USDT | +7.43% | $2,415,990.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.69% | +3.92% |
-| KORU/USDT:USDT | below_1h_threshold | +1.87% | +2.09% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.90% |
-| ON/USDT:USDT | below_1h_threshold | +1.52% | +1.75% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.34% | +1.56% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.20% | +2.43% |
+| ON/USDT:USDT | below_1h_threshold | +1.93% | +2.16% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.91% | +2.14% |
+| KORU/USDT:USDT | below_1h_threshold | +1.87% | +2.10% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.91% |
 
 ## 7. 次に見るべき不足
 
