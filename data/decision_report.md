@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T16:46:27.583322+00:00
+- generated_at: 2026-08-03T16:51:31.089962+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10235**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.47** / 初期 $100.00 (+16.47%)
-- 確定: 1018件 (Win 328 / Loss 394 / Flat 296) / pending 6件 / skip 685件
+- 確定: 1018件 (Win 328 / Loss 394 / Flat 296) / pending 6件 / skip 686件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000503 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PIPPIN/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.47
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T16:46:18.054547+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=63755.8
-- Funnel: target 929 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.4 >= 65=1, 4h RSI 73.7 >= 65=1
+- 更新: 2026-08-03T16:51:21.608375+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63809.0
+- Funnel: target 929 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.9 >= 65=1, 4h RSI 94.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +13.00% | $5,538,980.64 |
-| PIPPIN/USDT:USDT | +9.17% | $1,454,712.04 |
-| HOME/USDT:USDT | +5.11% | $3,394,143.98 |
-| RE/USDT:USDT | +4.51% | $1,619,107.95 |
-| SNXX/USDT:USDT | +4.43% | $5,958,317.97 |
+| PIPPIN/USDT:USDT | +9.17% | $1,522,475.72 |
+| CATE/USDT:USDT | +5.53% | $5,602,568.82 |
+| HOME/USDT:USDT | +5.49% | $3,411,636.17 |
+| RE/USDT:USDT | +4.89% | $1,620,461.39 |
+| SNXX/USDT:USDT | +4.83% | $5,997,094.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +4.86% | +4.71% |
-| RE/USDT:USDT | below_1h_threshold | +4.44% | +4.29% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.86% | +3.71% |
-| CAP/USDT:USDT | below_1h_threshold | +2.17% | +2.02% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.89% | +1.74% |
+| RE/USDT:USDT | below_1h_threshold | +4.90% | +4.66% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +4.03% | +3.79% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.19% | +2.95% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.54% | +2.30% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.32% | +2.08% |
 
 ## 7. 次に見るべき不足
 
