@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T02:06:22.886895+00:00
+- generated_at: 2026-08-03T02:11:18.405569+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10183**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T02:06:15.492423+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63157.7
+- 更新: 2026-08-03T02:11:11.148361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63150.0
 - Funnel: target 922 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +49.25% | $3,607,429.16 |
-| 1000RATS/USDT:USDT | +30.28% | $36,708,247.02 |
-| TAKE/USDT:USDT | +16.74% | $1,078,728.01 |
-| BLESS/USDT:USDT | +16.52% | $65,385,637.87 |
-| FHE/USDT:USDT | +11.65% | $1,662,466.21 |
+| BICO/USDT:USDT | +48.10% | $3,835,047.62 |
+| 1000RATS/USDT:USDT | +28.64% | $36,796,273.52 |
+| TAKE/USDT:USDT | +15.66% | $1,081,783.74 |
+| BLESS/USDT:USDT | +15.45% | $65,670,885.63 |
+| KIOXIASTOCK/USDT:USDT | +12.38% | $1,123,967.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +2.72% | +2.77% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.10% | +2.14% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.24% | +1.29% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +0.96% | +1.01% |
-| RE/USDT:USDT | below_1h_threshold | +0.34% | +0.38% |
+| BICO/USDT:USDT | below_1h_threshold | +1.82% | +1.87% |
+| TAKE/USDT:USDT | below_1h_threshold | +0.94% | +1.00% |
+| RE/USDT:USDT | below_1h_threshold | +0.53% | +0.59% |
+| ALGO/USDT:USDT | below_1h_threshold | +0.33% | +0.39% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.33% | +0.38% |
 
 ## 7. 次に見るべき不足
 
