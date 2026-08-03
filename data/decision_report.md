@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-03T16:01:27.987577+00:00
+- generated_at: 2026-08-03T16:06:26.450521+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10232**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-03T16:01:19.270893+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63638.9
+- 更新: 2026-08-03T16:06:19.113545+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=63850.0
 - Funnel: target 929 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRVT/USDT:USDT | +1.07% | $2,423,873.17 |
-| COTI/USDT:USDT | +0.72% | $1,613,975.18 |
-| SOXL/USDT:USDT | +0.70% | $77,235,653.51 |
-| ESPORTS/USDT:USDT | +0.57% | $1,318,443.86 |
-| KORU/USDT:USDT | +0.53% | $11,351,167.93 |
+| SKYAI/USDT:USDT | +3.16% | $7,653,100.44 |
+| CATE/USDT:USDT | +2.84% | $4,918,579.89 |
+| ON/USDT:USDT | +2.26% | $2,068,336.86 |
+| CAP/USDT:USDT | +2.13% | $1,377,235.76 |
+| KORU/USDT:USDT | +1.41% | $11,482,071.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_1h_threshold | +0.90% | +0.93% |
-| COTI/USDT:USDT | below_1h_threshold | +0.72% | +0.76% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.70% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +0.57% | +0.60% |
-| TAKE/USDT:USDT | below_1h_threshold | +0.56% | +0.59% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.08% | +2.78% |
+| CATE/USDT:USDT | below_1h_threshold | +2.60% | +2.30% |
+| CAP/USDT:USDT | below_1h_threshold | +2.46% | +2.16% |
+| ON/USDT:USDT | below_1h_threshold | +2.26% | +1.96% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.35% | +1.05% |
 
 ## 7. 次に見るべき不足
 
