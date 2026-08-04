@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T21:46:25.809907+00:00
+- generated_at: 2026-08-04T21:51:19.771502+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10319**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T21:46:18.189247+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=64180.4
+- 更新: 2026-08-04T21:51:12.089878+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=64189.9
 - Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.5 >= 65=1
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +26.18% | $3,070,571.85 |
-| TAKE/USDT:USDT | +19.74% | $1,089,971.39 |
-| BICO/USDT:USDT | +19.71% | $13,845,524.76 |
-| HFT/USDT:USDT | +13.08% | $1,347,490.80 |
-| PUMPFUN/USDT:USDT | +10.18% | $54,370,251.02 |
+| HEI/USDT:USDT | +29.69% | $3,117,954.08 |
+| TAKE/USDT:USDT | +21.13% | $1,099,743.95 |
+| BICO/USDT:USDT | +19.60% | $13,897,532.76 |
+| HFT/USDT:USDT | +14.48% | $1,354,543.08 |
+| BLESS/USDT:USDT | +10.23% | $28,109,970.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.84% | +4.05% |
-| BICO/USDT:USDT | below_1h_threshold | +2.82% | +3.03% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.64% | +2.85% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.96% | +2.17% |
-| COTI/USDT:USDT | below_1h_threshold | +1.42% | +1.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.24% | +4.44% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.13% | +4.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.84% | +4.03% |
+| AKE/USDT:USDT | below_1h_threshold | +2.91% | +3.10% |
+| BICO/USDT:USDT | below_1h_threshold | +2.87% | +3.06% |
 
 ## 7. 次に見るべき不足
 
