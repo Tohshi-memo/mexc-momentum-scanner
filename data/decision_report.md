@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T09:56:29.856515+00:00
+- generated_at: 2026-08-04T10:01:21.370159+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10283**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T09:56:19.463809+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63575.3
-- Funnel: target 936 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-04T10:01:13.983894+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63541.7
+- Funnel: target 936 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +43.73% | $2,624,237.05 |
-| SKYAI/USDT:USDT | +22.46% | $32,523,147.17 |
-| UNITREE/USDT:USDT | +22.29% | $1,224,001.16 |
-| PLTRSTOCK/USDT:USDT | +17.88% | $5,306,590.90 |
-| BTW/USDT:USDT | +15.26% | $9,398,181.69 |
+| CYS/USDT:USDT | +47.84% | $2,867,262.01 |
+| SKYAI/USDT:USDT | +24.46% | $32,056,463.78 |
+| UNITREE/USDT:USDT | +22.85% | $1,225,869.20 |
+| PLTRSTOCK/USDT:USDT | +17.77% | $5,327,016.00 |
+| BTW/USDT:USDT | +16.22% | $9,171,897.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.51% | +4.49% |
-| ON/USDT:USDT | below_1h_threshold | +4.39% | +4.36% |
-| BILL/USDT:USDT | below_1h_threshold | +3.32% | +3.29% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.45% |
-| TUT/USDT:USDT | below_1h_threshold | +2.31% | +2.29% |
+| BANK/USDT:USDT | below_1h_threshold | +1.40% | +1.45% |
+| COTI/USDT:USDT | below_1h_threshold | +1.18% | +1.24% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.94% |
+| BASTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.48% |
+| RCATSTOCK/USDT:USDT | below_1h_threshold | +0.28% | +0.34% |
 
 ## 7. 次に見るべき不足
 
