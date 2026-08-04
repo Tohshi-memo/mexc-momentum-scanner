@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T20:46:26.505899+00:00
+- generated_at: 2026-08-04T20:51:29.170460+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10318**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T20:46:18.320457+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=64322.5
-- Funnel: target 937 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1, 4h RSI 69.4 >= 65=1
+- 更新: 2026-08-04T20:51:21.463361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=64294.4
+- Funnel: target 937 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +29.89% | $2,469,397.89 |
-| TAKE/USDT:USDT | +21.73% | $1,016,877.01 |
-| HFT/USDT:USDT | +15.48% | $1,275,839.73 |
-| BICO/USDT:USDT | +14.69% | $14,292,442.78 |
-| PUMPFUN/USDT:USDT | +11.02% | $44,536,574.50 |
+| HEI/USDT:USDT | +30.92% | $2,548,076.17 |
+| TAKE/USDT:USDT | +21.87% | $1,023,855.91 |
+| BICO/USDT:USDT | +14.96% | $14,378,101.89 |
+| HFT/USDT:USDT | +12.88% | $1,281,796.91 |
+| PUMPFUN/USDT:USDT | +11.55% | $46,680,779.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.29% | +4.09% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.15% | +1.95% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.77% | +1.58% |
-| LAB/USDT:USDT | below_1h_threshold | +1.56% | +1.37% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.22% | +1.02% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.91% | +4.76% |
+| HFT/USDT:USDT | below_1h_threshold | +3.96% | +3.80% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.55% | +2.40% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.26% | +2.11% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.48% | +1.33% |
 
 ## 7. 次に見るべき不足
 
