@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T16:51:35.621307+00:00
+- generated_at: 2026-08-04T16:56:34.165774+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10311**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T16:51:24.741007+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=63969.6
-- Funnel: target 937 → liquid 183 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.2 >= 65=1, 4h RSI 81.1 >= 65=1
+- 更新: 2026-08-04T16:56:26.752564+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=63905.0
+- Funnel: target 937 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +14.74% | $15,114,075.70 |
-| HFT/USDT:USDT | +5.49% | $1,276,672.33 |
-| SKYAI/USDT:USDT | +5.20% | $46,690,566.43 |
-| SNXX/USDT:USDT | +3.94% | $7,425,288.69 |
-| UAI/USDT:USDT | +3.86% | $16,284,881.42 |
+| BICO/USDT:USDT | +13.10% | $15,386,021.47 |
+| HFT/USDT:USDT | +4.89% | $1,282,005.09 |
+| SKYAI/USDT:USDT | +4.57% | $46,835,687.99 |
+| SNXX/USDT:USDT | +3.86% | $7,427,629.50 |
+| CAP/USDT:USDT | +3.17% | $2,074,670.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.86% | +4.05% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.26% | +3.45% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.87% | +3.06% |
-| CAP/USDT:USDT | below_1h_threshold | +2.70% | +2.89% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.36% | +2.55% |
+| HFT/USDT:USDT | below_1h_threshold | +4.90% | +5.18% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.58% | +4.87% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.40% | +3.68% |
+| CAP/USDT:USDT | below_1h_threshold | +3.21% | +3.50% |
+| COTI/USDT:USDT | below_1h_threshold | +2.71% | +3.00% |
 
 ## 7. 次に見るべき不足
 
