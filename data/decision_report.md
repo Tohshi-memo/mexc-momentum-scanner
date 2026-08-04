@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T22:41:18.125187+00:00
+- generated_at: 2026-08-04T22:46:23.132512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10320**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T22:41:10.548500+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64201.6
-- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-04T22:46:15.805079+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64185.7
+- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +30.72% | $3,518,970.55 |
-| BICO/USDT:USDT | +26.92% | $14,798,232.27 |
-| TAKE/USDT:USDT | +24.64% | $1,152,483.87 |
-| HFT/USDT:USDT | +15.38% | $1,352,046.85 |
-| PUMPFUN/USDT:USDT | +8.32% | $52,252,354.65 |
+| HEI/USDT:USDT | +32.98% | $3,573,705.75 |
+| TAKE/USDT:USDT | +25.89% | $1,170,047.62 |
+| BICO/USDT:USDT | +25.39% | $14,873,740.69 |
+| HFT/USDT:USDT | +14.88% | $1,353,931.10 |
+| COTI/USDT:USDT | +7.80% | $5,406,612.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAKE/USDT:USDT | below_1h_threshold | +2.53% | +2.47% |
-| CYS/USDT:USDT | below_1h_threshold | +2.27% | +2.21% |
-| SYN/USDT:USDT | below_1h_threshold | +2.09% | +2.04% |
-| BTW/USDT:USDT | below_1h_threshold | +1.70% | +1.64% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.59% | +1.54% |
+| BICO/USDT:USDT | below_1h_threshold | +3.94% | +3.91% |
+| TAKE/USDT:USDT | below_1h_threshold | +3.31% | +3.28% |
+| CYS/USDT:USDT | below_1h_threshold | +2.82% | +2.79% |
+| BTW/USDT:USDT | below_1h_threshold | +2.59% | +2.56% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.93% | +1.90% |
 
 ## 7. 次に見るべき不足
 
