@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T14:16:35.163364+00:00
+- generated_at: 2026-08-04T14:21:35.522194+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10301**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T14:16:27.007744+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63751.3
-- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.7 >= 65=1, 4h RSI 72.6 >= 65=1
+- 更新: 2026-08-04T14:21:26.770906+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63650.2
+- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.6 >= 65=1, 4h RSI 93.1 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 79.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +67.01% | $11,839,715.30 |
-| HOME/USDT:USDT | +47.97% | $13,547,804.16 |
-| BANK/USDT:USDT | +36.38% | $15,883,027.78 |
-| SKYAI/USDT:USDT | +36.17% | $43,932,022.88 |
-| CASHCAT/USDT:USDT | +36.07% | $1,180,465.30 |
+| CYS/USDT:USDT | +74.88% | $12,063,383.27 |
+| HOME/USDT:USDT | +44.89% | $13,630,588.85 |
+| SKYAI/USDT:USDT | +37.80% | $44,097,502.37 |
+| BANK/USDT:USDT | +36.92% | $16,081,530.84 |
+| CASHCAT/USDT:USDT | +36.05% | $1,181,012.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRWVSTOCK/USDT:USDT | below_relative_strength | +5.14% | +5.00% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.89% | +4.75% |
-| BANK/USDT:USDT | below_1h_threshold | +4.46% | +4.32% |
-| KORU/USDT:USDT | below_1h_threshold | +3.41% | +3.27% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.19% | +3.05% |
+| BANK/USDT:USDT | below_1h_threshold | +4.71% | +4.74% |
+| KORU/USDT:USDT | below_1h_threshold | +3.41% | +3.43% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.19% | +3.21% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +3.17% |
+| CYS/USDT:USDT | below_1h_threshold | +2.93% | +2.95% |
 
 ## 7. 次に見るべき不足
 
