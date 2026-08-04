@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T07:31:28.854593+00:00
+- generated_at: 2026-08-04T07:36:27.600430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10275**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T07:31:17.952095+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63624.3
+- 更新: 2026-08-04T07:36:18.006500+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63677.1
 - Funnel: target 933 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +24.41% | $6,460,276.18 |
-| ON/USDT:USDT | +19.54% | $3,721,693.56 |
-| COTI/USDT:USDT | +16.53% | $1,416,021.92 |
-| PLTRSTOCK/USDT:USDT | +15.74% | $4,765,224.03 |
-| KORU/USDT:USDT | +14.10% | $30,939,549.16 |
+| HOME/USDT:USDT | +25.24% | $6,536,435.53 |
+| ON/USDT:USDT | +19.31% | $3,734,824.46 |
+| COTI/USDT:USDT | +16.67% | $1,491,787.38 |
+| PLTRSTOCK/USDT:USDT | +15.91% | $4,785,267.73 |
+| BTW/USDT:USDT | +15.17% | $9,164,622.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.36% | +2.41% |
-| MUU/USDT:USDT | below_1h_threshold | +2.32% | +2.36% |
-| HOME/USDT:USDT | below_1h_threshold | +2.06% | +2.11% |
-| KORU/USDT:USDT | below_1h_threshold | +1.27% | +1.31% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.25% |
+| VANRY/USDT:USDT | below_1h_threshold | +4.50% | +4.47% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +4.27% | +4.24% |
+| HOME/USDT:USDT | below_1h_threshold | +2.73% | +2.69% |
+| MUU/USDT:USDT | below_1h_threshold | +2.32% | +2.28% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.34% | +1.30% |
 
 ## 7. 次に見るべき不足
 
