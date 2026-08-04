@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T00:11:15.144393+00:00
+- generated_at: 2026-08-04T00:16:22.636125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10258**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T00:11:07.845917+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63524.5
-- Funnel: target 929 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-04T00:16:15.423786+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63424.9
+- Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIPPIN/USDT:USDT | +17.68% | $6,677,118.75 |
-| PLTRSTOCK/USDT:USDT | +15.29% | $3,493,617.45 |
-| KORU/USDT:USDT | +12.22% | $19,477,396.78 |
-| KOMA/USDT:USDT | +12.19% | $2,270,412.20 |
-| UAI/USDT:USDT | +10.75% | $11,991,691.06 |
+| PIPPIN/USDT:USDT | +17.74% | $6,771,513.34 |
+| PLTRSTOCK/USDT:USDT | +14.95% | $3,528,392.73 |
+| UAI/USDT:USDT | +11.92% | $12,030,906.70 |
+| KOMA/USDT:USDT | +11.74% | $2,281,582.26 |
+| KORU/USDT:USDT | +9.80% | $19,850,751.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.31% | +2.27% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.13% |
-| HOME/USDT:USDT | below_1h_threshold | +1.70% | +1.65% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.66% | +1.61% |
-| UAI/USDT:USDT | below_1h_threshold | +1.49% | +1.44% |
+| HOME/USDT:USDT | below_1h_threshold | +2.71% | +2.83% |
+| UAI/USDT:USDT | below_1h_threshold | +2.50% | +2.62% |
+| BTW/USDT:USDT | below_1h_threshold | +2.31% | +2.43% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.31% | +2.42% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.76% | +1.87% |
 
 ## 7. 次に見るべき不足
 
