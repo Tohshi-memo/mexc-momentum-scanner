@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T18:06:20.471884+00:00
+- generated_at: 2026-08-04T18:11:21.952327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10314**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T18:06:13.081959+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=64096.0
-- Funnel: target 937 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-04T18:11:14.119318+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=64079.6
+- Funnel: target 937 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +12.45% | $14,935,779.91 |
-| HFT/USDT:USDT | +5.39% | $1,222,677.78 |
-| SKYAI/USDT:USDT | +4.34% | $46,322,228.82 |
-| COTI/USDT:USDT | +3.81% | $4,402,011.68 |
-| SPCXSTOCK/USDT:USDT | +3.71% | $151,185,532.48 |
+| BICO/USDT:USDT | +11.46% | $14,963,355.26 |
+| HFT/USDT:USDT | +5.79% | $1,226,364.87 |
+| CASHCAT/USDT:USDT | +4.18% | $1,268,734.22 |
+| PLTRSTOCK/USDT:USDT | +3.42% | $11,725,616.27 |
+| KORU/USDT:USDT | +3.42% | $49,716,839.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.61% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.74% | +2.49% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.34% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.25% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.20% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.63% |
+| SYN/USDT:USDT | below_1h_threshold | +2.53% | +2.30% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.20% | +1.98% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.92% | +1.70% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.74% | +1.52% |
 
 ## 7. 次に見るべき不足
 
