@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T23:01:25.441033+00:00
+- generated_at: 2026-08-04T23:06:18.981181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10323**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T23:01:16.558696+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64212.6
+- 更新: 2026-08-04T23:06:11.355588+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64233.3
 - Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +33.19% | $3,675,843.71 |
-| BICO/USDT:USDT | +27.63% | $14,478,345.76 |
-| TAKE/USDT:USDT | +25.68% | $1,171,465.18 |
-| HFT/USDT:USDT | +23.47% | $1,347,165.21 |
-| PUMPFUN/USDT:USDT | +8.27% | $51,164,794.92 |
+| HEI/USDT:USDT | +30.92% | $3,719,316.27 |
+| TAKE/USDT:USDT | +25.46% | $1,179,822.16 |
+| BICO/USDT:USDT | +24.13% | $14,548,162.42 |
+| HFT/USDT:USDT | +22.37% | $1,359,196.39 |
+| PUMPFUN/USDT:USDT | +8.58% | $51,238,876.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HFT/USDT:USDT | below_1h_threshold | +1.31% | +1.35% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.97% |
-| BICO/USDT:USDT | below_1h_threshold | +0.82% | +0.86% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.83% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.63% | +0.67% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.63% | +0.63% |
 
 ## 7. 次に見るべき不足
 
