@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T02:57:04.565970+00:00
+- generated_at: 2026-08-04T03:01:13.999098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10261**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T02:56:45.079263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63792.5
-- Funnel: target 929 → liquid 173 → pre 50 → checked 50 → surge 6 → strict 5
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-04T03:01:08.035628+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63785.1
+- Funnel: target 929 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HFT/USDT:USDT | +16.11% | $1,018,644.98 |
-| SKYAI/USDT:USDT | +15.93% | $16,538,065.21 |
-| PLTRSTOCK/USDT:USDT | +14.98% | $3,857,315.57 |
-| NIL/USDT:USDT | +12.64% | $1,584,043.07 |
-| ON/USDT:USDT | +11.50% | $2,793,184.61 |
+| SKYAI/USDT:USDT | +16.58% | $16,407,599.16 |
+| PLTRSTOCK/USDT:USDT | +14.98% | $3,852,612.62 |
+| NIL/USDT:USDT | +13.22% | $1,531,667.57 |
+| HFT/USDT:USDT | +12.38% | $1,027,188.05 |
+| ON/USDT:USDT | +11.25% | $2,747,823.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VANRY/USDT:USDT | below_1h_threshold | +4.98% | +5.02% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.47% | +4.51% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.74% | +3.78% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.40% |
-| EWY/USDT:USDT | below_1h_threshold | +3.01% | +3.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.26% | +1.28% |
+| MYX/USDT:USDT | below_1h_threshold | +0.46% | +0.49% |
+| ON/USDT:USDT | below_1h_threshold | +0.38% | +0.40% |
+| KOMA/USDT:USDT | below_1h_threshold | +0.28% | +0.30% |
+| BTW/USDT:USDT | below_1h_threshold | +0.28% | +0.30% |
 
 ## 7. 次に見るべき不足
 
