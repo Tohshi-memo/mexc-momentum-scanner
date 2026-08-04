@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T02:36:38.178568+00:00
+- generated_at: 2026-08-04T02:41:45.314949+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10261**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T02:36:20.938937+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63817.6
+- 更新: 2026-08-04T02:41:29.071196+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63820.8
 - Funnel: target 929 → liquid 172 → pre 50 → checked 50 → surge 4 → strict 4
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +16.29% | $15,948,627.99 |
-| PLTRSTOCK/USDT:USDT | +14.83% | $3,846,424.61 |
-| PIPPIN/USDT:USDT | +12.76% | $8,131,208.38 |
-| NIL/USDT:USDT | +11.89% | $1,557,658.72 |
-| MYX/USDT:USDT | +11.73% | $1,085,656.11 |
+| SKYAI/USDT:USDT | +19.59% | $16,129,303.10 |
+| PLTRSTOCK/USDT:USDT | +14.85% | $3,847,589.43 |
+| NIL/USDT:USDT | +13.35% | $1,563,148.56 |
+| PIPPIN/USDT:USDT | +12.82% | $8,173,649.72 |
+| ON/USDT:USDT | +11.74% | $2,786,162.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.69% | +4.69% |
-| MYX/USDT:USDT | below_1h_threshold | +4.51% | +4.51% |
+| VANRY/USDT:USDT | below_1h_threshold | +4.78% | +4.78% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.51% | +4.51% |
 | KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.47% | +4.47% |
-| VANRY/USDT:USDT | below_1h_threshold | +4.24% | +4.24% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.74% | +3.74% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.74% | +3.73% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.48% | +3.47% |
 
 ## 7. 次に見るべき不足
 
