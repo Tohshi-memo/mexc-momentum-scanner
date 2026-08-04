@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T06:51:28.144855+00:00
+- generated_at: 2026-08-04T06:56:33.352611+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10269**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T06:51:15.772668+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=63645.7
+- 更新: 2026-08-04T06:56:21.393260+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=63648.7
 - Funnel: target 933 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,11 +80,11 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +21.79% | $25,362,989.40 |
-| ON/USDT:USDT | +19.64% | $3,295,797.50 |
-| HOME/USDT:USDT | +17.83% | $5,980,062.27 |
-| PLTRSTOCK/USDT:USDT | +16.42% | $4,558,277.60 |
-| BTW/USDT:USDT | +16.34% | $9,039,997.91 |
+| SKYAI/USDT:USDT | +22.82% | $25,449,400.90 |
+| ON/USDT:USDT | +19.96% | $3,329,702.36 |
+| HOME/USDT:USDT | +19.15% | $6,015,849.22 |
+| PLTRSTOCK/USDT:USDT | +16.53% | $4,560,528.86 |
+| BTW/USDT:USDT | +16.30% | $9,042,326.57 |
 
 ### Near Miss
 
@@ -92,8 +92,8 @@
 |---|---|---:|---:|
 | KORU/USDT:USDT | below_1h_threshold | +4.60% | +4.82% |
 | SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.47% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.04% | +3.27% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +3.09% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.99% | +3.21% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +3.08% |
 | SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +3.02% |
 
 ## 7. 次に見るべき不足
