@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T22:06:25.067684+00:00
+- generated_at: 2026-08-04T22:11:24.638925+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10319**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.11** / 初期 $100.00 (+17.11%)
-- 確定: 1076件 (Win 346 / Loss 416 / Flat 314) / pending 5件 / skip 714件
+- 確定: 1076件 (Win 346 / Loss 416 / Flat 314) / pending 6件 / skip 714件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000375 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BICO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $117.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T22:06:17.471676+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64200.0
-- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-04T22:11:17.071562+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64195.0
+- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +30.20% | $3,306,464.67 |
-| TAKE/USDT:USDT | +22.38% | $1,097,721.78 |
-| BICO/USDT:USDT | +22.06% | $13,755,271.77 |
-| HFT/USDT:USDT | +14.68% | $1,333,054.22 |
-| PUMPFUN/USDT:USDT | +9.65% | $51,670,359.18 |
+| HEI/USDT:USDT | +30.10% | $3,327,586.32 |
+| BICO/USDT:USDT | +28.01% | $14,054,758.76 |
+| TAKE/USDT:USDT | +23.34% | $1,105,502.62 |
+| HFT/USDT:USDT | +17.18% | $1,336,740.10 |
+| COTI/USDT:USDT | +10.25% | $5,340,992.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.32% | +1.27% |
-| COTI/USDT:USDT | below_1h_threshold | +1.27% | +1.21% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.20% | +1.15% |
-| BICO/USDT:USDT | below_1h_threshold | +1.18% | +1.13% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.70% |
+| COTI/USDT:USDT | below_1h_threshold | +2.25% | +2.20% |
+| HFT/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.45% | +1.41% |
+| CAP/USDT:USDT | below_1h_threshold | +0.91% | +0.87% |
+| AKE/USDT:USDT | below_1h_threshold | +0.77% | +0.72% |
 
 ## 7. 次に見るべき不足
 
