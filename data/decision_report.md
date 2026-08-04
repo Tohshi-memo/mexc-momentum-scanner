@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T17:21:20.610627+00:00
+- generated_at: 2026-08-04T17:26:19.002284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10313**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T17:21:13.316754+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64024.7
+- 更新: 2026-08-04T17:26:11.642208+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64019.7
 - Funnel: target 937 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +10.21% | $14,933,807.53 |
-| HFT/USDT:USDT | +6.39% | $1,249,554.79 |
-| SKYAI/USDT:USDT | +6.17% | $46,339,127.79 |
-| SNXX/USDT:USDT | +3.46% | $7,069,716.97 |
-| COTI/USDT:USDT | +3.33% | $4,187,702.16 |
+| BICO/USDT:USDT | +11.85% | $14,989,500.09 |
+| HFT/USDT:USDT | +8.09% | $1,252,883.76 |
+| COTI/USDT:USDT | +5.87% | $4,247,045.33 |
+| SKYAI/USDT:USDT | +4.54% | $46,546,096.27 |
+| SNXX/USDT:USDT | +3.62% | $7,075,185.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.11% | +3.96% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.99% | +2.85% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.72% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +1.97% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +1.85% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.11% | +3.97% |
+| COTI/USDT:USDT | below_1h_threshold | +3.95% | +3.81% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.99% | +2.86% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.73% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.12% | +1.98% |
 
 ## 7. 次に見るべき不足
 
