@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T01:06:14.847023+00:00
+- generated_at: 2026-08-04T01:11:20.371972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10259**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T01:06:07.686364+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=63455.5
+- 更新: 2026-08-04T01:11:13.681568+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63450.7
 - Funnel: target 929 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLTRSTOCK/USDT:USDT | +14.23% | $3,556,469.09 |
-| PIPPIN/USDT:USDT | +12.64% | $7,587,250.37 |
-| KOMA/USDT:USDT | +11.69% | $2,155,949.16 |
-| ON/USDT:USDT | +11.24% | $2,779,838.64 |
-| UAI/USDT:USDT | +9.92% | $12,198,639.27 |
+| PLTRSTOCK/USDT:USDT | +14.64% | $3,575,244.17 |
+| PIPPIN/USDT:USDT | +13.66% | $7,653,592.82 |
+| KOMA/USDT:USDT | +12.55% | $2,160,976.31 |
+| UAI/USDT:USDT | +11.43% | $12,252,236.28 |
+| ON/USDT:USDT | +10.57% | $2,790,366.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +1.19% | +1.00% |
-| BTW/USDT:USDT | below_1h_threshold | +1.16% | +0.96% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.13% | +0.94% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.95% | +0.75% |
-| BILL/USDT:USDT | below_1h_threshold | +0.87% | +0.67% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.37% | +2.19% |
+| BILL/USDT:USDT | below_1h_threshold | +1.57% | +1.38% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.95% | +0.76% |
+| AKT/USDT:USDT | below_1h_threshold | +0.85% | +0.66% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.83% | +0.64% |
 
 ## 7. 次に見るべき不足
 
