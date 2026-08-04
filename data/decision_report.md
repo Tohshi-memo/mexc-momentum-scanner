@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T06:46:18.290482+00:00
+- generated_at: 2026-08-04T06:51:28.144855+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10269**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.54** / 初期 $100.00 (+16.54%)
-- 確定: 1039件 (Win 334 / Loss 403 / Flat 302) / pending 5件 / skip 700件
+- 確定: 1039件 (Win 334 / Loss 403 / Flat 302) / pending 6件 / skip 700件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000182 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTW/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.54
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T06:46:08.538407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=63674.8
-- Funnel: target 933 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-04T06:51:15.772668+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=63645.7
+- Funnel: target 933 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +21.97% | $25,258,512.75 |
-| ON/USDT:USDT | +18.36% | $3,277,213.71 |
-| BTW/USDT:USDT | +16.54% | $9,011,952.04 |
-| PLTRSTOCK/USDT:USDT | +16.24% | $4,544,751.41 |
-| MYX/USDT:USDT | +15.42% | $1,366,168.98 |
+| SKYAI/USDT:USDT | +21.79% | $25,362,989.40 |
+| ON/USDT:USDT | +19.64% | $3,295,797.50 |
+| HOME/USDT:USDT | +17.83% | $5,980,062.27 |
+| PLTRSTOCK/USDT:USDT | +16.42% | $4,558,277.60 |
+| BTW/USDT:USDT | +16.34% | $9,039,997.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +4.60% | +4.78% |
-| HOME/USDT:USDT | below_1h_threshold | +4.38% | +4.55% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.50% | +3.68% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.43% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +3.04% |
+| KORU/USDT:USDT | below_1h_threshold | +4.60% | +4.82% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.25% | +3.47% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.04% | +3.27% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.87% | +3.09% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +3.02% |
 
 ## 7. 次に見るべき不足
 
