@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T10:21:17.623819+00:00
+- generated_at: 2026-08-04T10:26:16.182128+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10286**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T10:21:10.268509+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=63497.8
-- Funnel: target 937 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-04T10:26:08.823169+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=63475.0
+- Funnel: target 937 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +44.38% | $3,614,236.82 |
-| SKYAI/USDT:USDT | +20.29% | $32,791,846.93 |
-| PLTRSTOCK/USDT:USDT | +17.38% | $5,397,445.23 |
-| UNITREE/USDT:USDT | +17.34% | $1,284,020.21 |
-| BTW/USDT:USDT | +14.29% | $9,325,156.89 |
+| CYS/USDT:USDT | +47.70% | $3,686,406.65 |
+| SKYAI/USDT:USDT | +21.11% | $32,883,162.14 |
+| UNITREE/USDT:USDT | +17.28% | $1,286,832.05 |
+| PLTRSTOCK/USDT:USDT | +16.86% | $5,428,922.79 |
+| HOME/USDT:USDT | +16.61% | $8,071,614.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +3.62% | +3.74% |
-| NIL/USDT:USDT | below_1h_threshold | +1.78% | +1.90% |
-| COTI/USDT:USDT | below_1h_threshold | +1.45% | +1.57% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.08% | +1.21% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.01% |
+| BANK/USDT:USDT | below_1h_threshold | +3.07% | +3.23% |
+| HOME/USDT:USDT | below_1h_threshold | +2.12% | +2.28% |
+| COTI/USDT:USDT | below_1h_threshold | +1.94% | +2.10% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.18% | +1.33% |
+| NIL/USDT:USDT | below_1h_threshold | +1.16% | +1.32% |
 
 ## 7. 次に見るべき不足
 
