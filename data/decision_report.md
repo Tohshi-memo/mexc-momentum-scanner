@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T01:51:21.307167+00:00
+- generated_at: 2026-08-04T01:56:22.712259+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10259**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T01:51:13.722753+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.66% price=63752.6
+- 更新: 2026-08-04T01:56:15.277756+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.79% price=63833.4
 - Funnel: target 929 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.6 >= 65=1
+- Strict後reject: 4h RSI 90.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLTRSTOCK/USDT:USDT | +14.82% | $3,718,327.33 |
-| NIL/USDT:USDT | +12.80% | $1,428,616.02 |
-| PIPPIN/USDT:USDT | +12.52% | $7,905,727.24 |
-| ON/USDT:USDT | +11.57% | $2,820,165.76 |
-| KORU/USDT:USDT | +11.34% | $23,660,053.11 |
+| PLTRSTOCK/USDT:USDT | +15.01% | $3,720,275.48 |
+| PIPPIN/USDT:USDT | +13.96% | $7,932,512.33 |
+| KORU/USDT:USDT | +13.09% | $23,701,079.23 |
+| ON/USDT:USDT | +11.42% | $2,822,379.61 |
+| NIL/USDT:USDT | +11.08% | $1,478,115.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAX/USDT:USDT | below_1h_threshold | +3.92% | +3.25% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.14% | +2.48% |
-| MYX/USDT:USDT | below_1h_threshold | +2.76% | +2.10% |
-| NIL/USDT:USDT | below_1h_threshold | +2.25% | +1.58% |
-| ARB/USDT:USDT | below_1h_threshold | +1.65% | +0.98% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.14% | +3.35% |
+| AVAX/USDT:USDT | below_1h_threshold | +3.96% | +3.17% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.59% | +1.80% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.37% | +1.57% |
+| ARB/USDT:USDT | below_1h_threshold | +1.87% | +1.07% |
 
 ## 7. 次に見るべき不足
 
