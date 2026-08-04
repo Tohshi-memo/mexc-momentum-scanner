@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T08:56:18.674325+00:00
+- generated_at: 2026-08-04T09:01:15.476250+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10279**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T08:56:12.445687+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63569.9
-- Funnel: target 933 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-04T09:01:09.765961+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63548.1
+- Funnel: target 933 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLTRSTOCK/USDT:USDT | +16.29% | $4,985,582.06 |
-| SKYAI/USDT:USDT | +16.14% | $31,256,467.61 |
-| BTW/USDT:USDT | +14.79% | $9,537,909.02 |
-| COTI/USDT:USDT | +13.81% | $2,341,259.66 |
-| MYX/USDT:USDT | +13.59% | $1,821,065.73 |
+| SKYAI/USDT:USDT | +17.72% | $30,826,187.84 |
+| PLTRSTOCK/USDT:USDT | +16.66% | $4,953,363.52 |
+| BTW/USDT:USDT | +14.22% | $9,122,189.39 |
+| MYX/USDT:USDT | +13.89% | $1,819,932.71 |
+| COTI/USDT:USDT | +13.64% | $2,329,454.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +4.03% | +4.18% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.59% | +2.74% |
-| BTW/USDT:USDT | below_1h_threshold | +2.36% | +2.51% |
-| MYX/USDT:USDT | below_1h_threshold | +1.41% | +1.56% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.97% | +1.12% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.49% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.81% | +1.83% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.61% |
+| MUU/USDT:USDT | below_1h_threshold | +1.59% | +1.61% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
 
 ## 7. 次に見るべき不足
 
