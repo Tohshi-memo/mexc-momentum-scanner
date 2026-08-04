@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T21:16:33.277497+00:00
+- generated_at: 2026-08-04T21:21:26.759210+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10318**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T21:16:25.739582+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=64200.0
+- 更新: 2026-08-04T21:21:19.126472+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64204.9
 - Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1
+- Strict後reject: 4h RSI 80.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +22.88% | $2,824,544.73 |
-| TAKE/USDT:USDT | +21.81% | $1,029,985.02 |
-| HFT/USDT:USDT | +16.88% | $1,309,174.88 |
-| BICO/USDT:USDT | +16.00% | $13,517,397.87 |
-| PUMPFUN/USDT:USDT | +10.80% | $52,219,800.25 |
+| HEI/USDT:USDT | +22.88% | $2,869,633.09 |
+| TAKE/USDT:USDT | +21.89% | $1,041,406.94 |
+| BICO/USDT:USDT | +16.93% | $13,553,791.41 |
+| HFT/USDT:USDT | +14.88% | $1,319,497.85 |
+| COTI/USDT:USDT | +10.01% | $5,263,189.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.84% | +4.02% |
-| HFT/USDT:USDT | below_1h_threshold | +2.72% | +2.90% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.56% | +2.74% |
-| COTI/USDT:USDT | below_1h_threshold | +1.69% | +1.87% |
-| AKE/USDT:USDT | below_1h_threshold | +0.89% | +1.07% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.60% | +4.77% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.84% | +4.01% |
+| COTI/USDT:USDT | below_1h_threshold | +1.92% | +2.10% |
+| AKE/USDT:USDT | below_1h_threshold | +1.00% | +1.17% |
+| BTW/USDT:USDT | below_1h_threshold | +0.93% | +1.11% |
 
 ## 7. 次に見るべき不足
 
