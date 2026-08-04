@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T20:36:24.838771+00:00
+- generated_at: 2026-08-04T20:42:21.731735+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10318**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.80** / 初期 $100.00 (+16.80%)
-- 確定: 1075件 (Win 345 / Loss 416 / Flat 314) / pending 5件 / skip 711件
+- 確定: 1075件 (Win 345 / Loss 416 / Flat 314) / pending 6件 / skip 711件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000340 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AAOISTOCK/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $116.80
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T20:36:17.301259+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64153.0
-- Funnel: target 937 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.4 >= 65=1
+- 更新: 2026-08-04T20:42:13.691228+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=64350.2
+- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.6 >= 65=1, 4h RSI 69.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +27.83% | $2,411,947.11 |
-| BICO/USDT:USDT | +15.18% | $14,153,851.45 |
-| HFT/USDT:USDT | +12.88% | $1,263,683.75 |
-| PUMPFUN/USDT:USDT | +9.73% | $42,236,614.97 |
-| COTI/USDT:USDT | +7.72% | $5,236,739.80 |
+| HEI/USDT:USDT | +29.58% | $2,444,533.55 |
+| TAKE/USDT:USDT | +21.51% | $1,009,301.11 |
+| BICO/USDT:USDT | +16.38% | $14,243,618.65 |
+| HFT/USDT:USDT | +14.58% | $1,269,800.72 |
+| PUMPFUN/USDT:USDT | +10.57% | $44,255,580.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HFT/USDT:USDT | below_1h_threshold | +3.86% | +3.93% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.55% | +3.61% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.20% | +3.27% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.04% | +2.11% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.22% | +1.28% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.95% | +3.72% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.94% | +2.70% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.12% | +1.88% |
+| NIL/USDT:USDT | below_1h_threshold | +2.01% | +1.77% |
+| LAB/USDT:USDT | below_1h_threshold | +1.50% | +1.26% |
 
 ## 7. 次に見るべき不足
 
