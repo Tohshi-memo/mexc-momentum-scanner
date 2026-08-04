@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T22:01:17.633053+00:00
+- generated_at: 2026-08-04T22:06:25.067684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10319**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T22:01:12.582586+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64165.0
+- 更新: 2026-08-04T22:06:17.471676+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64200.0
 - Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +32.06% | $3,225,696.26 |
-| TAKE/USDT:USDT | +21.49% | $1,090,597.75 |
-| BICO/USDT:USDT | +21.13% | $13,675,133.12 |
-| HFT/USDT:USDT | +15.78% | $1,330,094.76 |
-| BLESS/USDT:USDT | +10.00% | $26,663,243.22 |
+| HEI/USDT:USDT | +30.20% | $3,306,464.67 |
+| TAKE/USDT:USDT | +22.38% | $1,097,721.78 |
+| BICO/USDT:USDT | +22.06% | $13,755,271.77 |
+| HFT/USDT:USDT | +14.68% | $1,333,054.22 |
+| PUMPFUN/USDT:USDT | +9.65% | $51,670,359.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.21% | +2.22% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
-| AKE/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| AKE/USDT:USDT | below_1h_threshold | +1.32% | +1.27% |
+| COTI/USDT:USDT | below_1h_threshold | +1.27% | +1.21% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.20% | +1.15% |
+| BICO/USDT:USDT | below_1h_threshold | +1.18% | +1.13% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.70% |
 
 ## 7. 次に見るべき不足
 
