@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T15:56:27.486224+00:00
+- generated_at: 2026-08-04T16:01:19.648411+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10306**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T15:56:18.594328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64129.9
-- Funnel: target 937 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-04T16:01:12.310870+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64097.9
+- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +83.48% | $15,691,555.90 |
-| BANK/USDT:USDT | +40.01% | $20,705,317.52 |
-| HOME/USDT:USDT | +39.46% | $15,340,471.18 |
-| SKYAI/USDT:USDT | +31.30% | $47,054,891.35 |
-| MVLL/USDT:USDT | +30.32% | $1,775,785.82 |
+| LAB/USDT:USDT | +1.61% | $1,422,645.81 |
+| SNXX/USDT:USDT | +1.28% | $7,281,698.32 |
+| VELVET/USDT:USDT | +0.73% | $3,716,178.29 |
+| KORU/USDT:USDT | +0.64% | $47,655,105.45 |
+| UAI/USDT:USDT | +0.62% | $15,625,950.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +2.76% | +2.72% |
-| BANK/USDT:USDT | below_1h_threshold | +2.54% | +2.49% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.42% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.36% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.32% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.36% | +2.35% |
+| KORU/USDT:USDT | below_1h_threshold | +2.30% | +2.29% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.15% | +2.14% |
+| LAB/USDT:USDT | below_1h_threshold | +2.04% | +2.03% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.90% | +1.89% |
 
 ## 7. 次に見るべき不足
 
