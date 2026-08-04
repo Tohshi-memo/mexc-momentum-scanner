@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T04:51:30.114458+00:00
+- generated_at: 2026-08-04T04:56:20.340060+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10267**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T04:51:17.739926+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.59% price=64147.9
-- Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-04T04:56:10.820503+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=64099.0
+- Funnel: target 929 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +23.37% | $20,405,633.90 |
-| ON/USDT:USDT | +16.10% | $3,005,634.80 |
-| PLTRSTOCK/USDT:USDT | +15.48% | $4,014,047.45 |
-| BTW/USDT:USDT | +13.52% | $8,777,061.46 |
-| HOME/USDT:USDT | +13.49% | $5,034,515.74 |
+| SKYAI/USDT:USDT | +16.86% | $20,719,430.65 |
+| ON/USDT:USDT | +15.86% | $3,012,239.51 |
+| PLTRSTOCK/USDT:USDT | +15.59% | $4,024,114.19 |
+| BTW/USDT:USDT | +14.27% | $8,785,248.34 |
+| HOME/USDT:USDT | +13.72% | $5,063,029.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.23% | +3.64% |
-| ON/USDT:USDT | below_1h_threshold | +3.31% | +2.71% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +1.82% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.74% | +1.15% |
-| COTI/USDT:USDT | below_1h_threshold | +1.64% | +1.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.30% | +3.79% |
+| ON/USDT:USDT | below_1h_threshold | +3.19% | +2.67% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +1.89% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.06% |
+| COTI/USDT:USDT | below_1h_threshold | +1.41% | +0.90% |
 
 ## 7. 次に見るべき不足
 
