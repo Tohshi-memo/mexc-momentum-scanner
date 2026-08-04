@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T11:21:29.101618+00:00
+- generated_at: 2026-08-04T11:26:26.541925+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10287**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T11:21:18.520372+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63717.2
-- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 76.1 >= 65=1
+- 更新: 2026-08-04T11:26:16.055636+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63754.8
+- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +34.19% | $1,053,677.72 |
-| CYS/USDT:USDT | +30.36% | $5,590,384.28 |
-| UNITREE/USDT:USDT | +21.81% | $1,478,510.85 |
-| HOME/USDT:USDT | +21.60% | $9,300,031.88 |
-| AAOISTOCK/USDT:USDT | +21.36% | $1,207,753.26 |
+| CASHCAT/USDT:USDT | +33.97% | $1,059,267.06 |
+| CYS/USDT:USDT | +32.71% | $5,722,538.72 |
+| HOME/USDT:USDT | +22.15% | $9,367,076.58 |
+| UNITREE/USDT:USDT | +21.41% | $1,488,427.42 |
+| BANK/USDT:USDT | +21.12% | $10,581,256.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.64% | +4.68% |
-| HOME/USDT:USDT | below_1h_threshold | +3.75% | +3.79% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +3.06% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.01% | +3.05% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.99% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.71% | +4.69% |
+| HOME/USDT:USDT | below_1h_threshold | +4.51% | +4.50% |
+| ON/USDT:USDT | below_1h_threshold | +3.21% | +3.20% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.02% | +3.00% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.01% | +3.00% |
 
 ## 7. 次に見るべき不足
 
