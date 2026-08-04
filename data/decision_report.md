@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T12:51:41.163250+00:00
+- generated_at: 2026-08-04T12:56:29.600110+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10295**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T12:51:30.298935+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63905.6
+- 更新: 2026-08-04T12:56:21.572465+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63914.0
 - Funnel: target 937 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.1 >= 65=1, 4h RSI 70.5 >= 65=1
+- Strict後reject: 4h RSI 94.4 >= 65=1, 4h RSI 70.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +52.88% | $7,398,189.08 |
-| CASHCAT/USDT:USDT | +42.97% | $1,125,040.52 |
-| HOME/USDT:USDT | +38.55% | $11,462,062.14 |
-| BANK/USDT:USDT | +25.66% | $13,421,281.13 |
-| UNITREE/USDT:USDT | +23.42% | $1,590,085.15 |
+| CYS/USDT:USDT | +57.75% | $7,611,321.26 |
+| CASHCAT/USDT:USDT | +44.64% | $1,126,243.77 |
+| HOME/USDT:USDT | +39.29% | $11,591,033.69 |
+| BANK/USDT:USDT | +27.61% | $13,524,495.58 |
+| UNITREE/USDT:USDT | +23.50% | $1,592,055.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +4.88% | +4.87% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.77% | +4.76% |
-| SNXX/USDT:USDT | below_1h_threshold | +4.35% | +4.34% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.63% | +3.62% |
-| COTI/USDT:USDT | below_1h_threshold | +3.19% | +3.18% |
+| KORU/USDT:USDT | below_1h_threshold | +4.88% | +4.86% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.77% | +4.75% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.35% | +4.33% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.63% | +3.61% |
+| BANK/USDT:USDT | below_1h_threshold | +3.12% | +3.10% |
 
 ## 7. 次に見るべき不足
 
