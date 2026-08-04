@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T17:46:18.834100+00:00
+- generated_at: 2026-08-04T17:51:20.313890+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10314**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T17:46:12.132300+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=64059.2
+- 更新: 2026-08-04T17:51:13.052894+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63952.1
 - Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +15.67% | $15,442,345.35 |
-| HFT/USDT:USDT | +5.39% | $1,271,939.87 |
-| SNXX/USDT:USDT | +4.83% | $7,139,677.95 |
-| KAITO/USDT:USDT | +4.28% | $3,687,538.28 |
-| SKYAI/USDT:USDT | +3.93% | $47,179,096.33 |
+| BICO/USDT:USDT | +15.56% | $15,544,175.38 |
+| HFT/USDT:USDT | +5.29% | $1,282,024.75 |
+| SKYAI/USDT:USDT | +4.36% | $47,256,795.89 |
+| SNXX/USDT:USDT | +4.10% | $7,168,442.51 |
+| PLTRSTOCK/USDT:USDT | +3.74% | $11,217,542.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.11% | +3.91% |
-| BICO/USDT:USDT | below_1h_threshold | +3.36% | +3.16% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.13% | +2.93% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.99% | +2.79% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.66% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.11% | +4.08% |
+| BICO/USDT:USDT | below_1h_threshold | +3.12% | +3.09% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.99% | +2.96% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.83% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.74% | +2.71% |
 
 ## 7. 次に見るべき不足
 
