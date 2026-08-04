@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T08:31:30.442265+00:00
+- generated_at: 2026-08-04T08:36:27.172462+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10278**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T08:31:18.628606+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=63590.4
-- Funnel: target 933 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1
+- 更新: 2026-08-04T08:36:19.646835+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=63547.1
+- Funnel: target 933 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +21.09% | $2,103,002.71 |
-| SKYAI/USDT:USDT | +17.28% | $29,559,397.06 |
-| PLTRSTOCK/USDT:USDT | +16.44% | $4,932,823.15 |
-| UAI/USDT:USDT | +15.41% | $9,847,112.09 |
-| KORU/USDT:USDT | +14.37% | $32,210,905.14 |
+| SKYAI/USDT:USDT | +19.40% | $29,820,079.26 |
+| COTI/USDT:USDT | +17.17% | $2,164,831.07 |
+| PLTRSTOCK/USDT:USDT | +16.50% | $4,940,986.28 |
+| UAI/USDT:USDT | +15.59% | $9,886,004.13 |
+| KORU/USDT:USDT | +13.63% | $32,258,758.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.47% | +2.59% |
-| UAI/USDT:USDT | below_1h_threshold | +1.45% | +1.57% |
-| KOMA/USDT:USDT | below_1h_threshold | +1.43% | +1.54% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.73% | +0.85% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.33% | +2.52% |
+| COTI/USDT:USDT | below_1h_threshold | +2.10% | +2.29% |
+| UB/USDT:USDT | below_1h_threshold | +1.99% | +2.18% |
+| UAI/USDT:USDT | below_1h_threshold | +1.60% | +1.79% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.39% | +1.58% |
 
 ## 7. 次に見るべき不足
 
