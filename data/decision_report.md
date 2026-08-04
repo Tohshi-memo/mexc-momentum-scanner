@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T01:31:19.803506+00:00
+- generated_at: 2026-08-04T01:36:21.703799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10259**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.45** / 初期 $100.00 (+16.45%)
-- 確定: 1032件 (Win 332 / Loss 400 / Flat 300) / pending 3件 / skip 694件
+- 確定: 1032件 (Win 332 / Loss 400 / Flat 300) / pending 4件 / skip 694件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000402 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.45
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T01:31:12.525037+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=63531.2
-- Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-04T01:36:14.034505+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=63645.0
+- Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLTRSTOCK/USDT:USDT | +14.48% | $3,590,141.28 |
-| PIPPIN/USDT:USDT | +12.70% | $7,792,296.60 |
-| NIL/USDT:USDT | +12.25% | $1,329,578.68 |
-| KOMA/USDT:USDT | +12.05% | $2,178,720.51 |
-| ON/USDT:USDT | +11.12% | $2,804,851.64 |
+| PLTRSTOCK/USDT:USDT | +14.67% | $3,594,297.64 |
+| NIL/USDT:USDT | +13.02% | $1,357,193.86 |
+| KOMA/USDT:USDT | +12.10% | $2,182,100.41 |
+| PIPPIN/USDT:USDT | +11.63% | $7,849,145.12 |
+| ON/USDT:USDT | +10.62% | $2,808,918.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.57% | +2.25% |
-| MYX/USDT:USDT | below_1h_threshold | +2.40% | +2.08% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.31% | +2.00% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +1.35% | +1.03% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.23% | +0.91% |
+| NIL/USDT:USDT | below_1h_threshold | +3.13% | +2.64% |
+| AVAX/USDT:USDT | below_1h_threshold | +3.07% | +2.57% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.91% | +2.41% |
+| MYX/USDT:USDT | below_1h_threshold | +2.57% | +2.08% |
+| VANRY/USDT:USDT | below_1h_threshold | +1.62% | +1.13% |
 
 ## 7. 次に見るべき不足
 
