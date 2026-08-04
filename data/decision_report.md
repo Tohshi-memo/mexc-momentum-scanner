@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T18:01:24.465176+00:00
+- generated_at: 2026-08-04T18:06:20.471884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10314**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T18:01:17.747146+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63963.8
+- 更新: 2026-08-04T18:06:13.081959+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=64096.0
 - Funnel: target 937 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +11.19% | $14,862,438.35 |
-| HFT/USDT:USDT | +4.69% | $1,221,788.02 |
-| SPCXSTOCK/USDT:USDT | +4.61% | $148,828,402.74 |
-| KAITO/USDT:USDT | +3.96% | $3,464,577.53 |
-| PLTRSTOCK/USDT:USDT | +3.70% | $11,498,622.50 |
+| BICO/USDT:USDT | +12.45% | $14,935,779.91 |
+| HFT/USDT:USDT | +5.39% | $1,222,677.78 |
+| SKYAI/USDT:USDT | +4.34% | $46,322,228.82 |
+| COTI/USDT:USDT | +3.81% | $4,402,011.68 |
+| SPCXSTOCK/USDT:USDT | +3.71% | $151,185,532.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.81% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.55% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.46% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.41% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.14% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.61% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.74% | +2.49% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.34% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.25% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.20% |
 
 ## 7. 次に見るべき不足
 
