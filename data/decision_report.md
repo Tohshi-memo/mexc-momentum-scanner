@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T01:36:21.703799+00:00
+- generated_at: 2026-08-04T01:41:19.752462+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10259**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T01:36:14.034505+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=63645.0
+- 更新: 2026-08-04T01:41:12.185403+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.67% price=63755.6
 - Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.0 >= 65=1
+- Strict後reject: 4h RSI 89.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLTRSTOCK/USDT:USDT | +14.67% | $3,594,297.64 |
-| NIL/USDT:USDT | +13.02% | $1,357,193.86 |
-| KOMA/USDT:USDT | +12.10% | $2,182,100.41 |
-| PIPPIN/USDT:USDT | +11.63% | $7,849,145.12 |
-| ON/USDT:USDT | +10.62% | $2,808,918.61 |
+| PLTRSTOCK/USDT:USDT | +14.51% | $3,594,720.76 |
+| NIL/USDT:USDT | +13.32% | $1,385,806.90 |
+| ON/USDT:USDT | +11.30% | $2,813,113.64 |
+| KOMA/USDT:USDT | +10.62% | $2,186,916.57 |
+| PIPPIN/USDT:USDT | +10.61% | $7,881,253.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.13% | +2.64% |
-| AVAX/USDT:USDT | below_1h_threshold | +3.07% | +2.57% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.91% | +2.41% |
-| MYX/USDT:USDT | below_1h_threshold | +2.57% | +2.08% |
-| VANRY/USDT:USDT | below_1h_threshold | +1.62% | +1.13% |
+| AVAX/USDT:USDT | below_1h_threshold | +4.57% | +3.90% |
+| NIL/USDT:USDT | below_1h_threshold | +3.55% | +2.88% |
+| MYX/USDT:USDT | below_1h_threshold | +3.37% | +2.70% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.93% | +2.26% |
+| BILL/USDT:USDT | below_1h_threshold | +1.44% | +0.77% |
 
 ## 7. 次に見るべき不足
 
