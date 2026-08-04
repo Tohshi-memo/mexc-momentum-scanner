@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T09:06:20.940493+00:00
+- generated_at: 2026-08-04T09:11:25.475008+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10280**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T09:06:12.148807+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63563.0
+- 更新: 2026-08-04T09:11:19.573720+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63520.1
 - Funnel: target 933 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UNITREE/USDT:USDT | +30.09% | $1,004,443.26 |
-| SKYAI/USDT:USDT | +18.06% | $30,938,956.22 |
-| PLTRSTOCK/USDT:USDT | +17.89% | $5,045,354.86 |
-| BTW/USDT:USDT | +14.53% | $9,145,947.08 |
-| MYX/USDT:USDT | +14.49% | $1,822,009.91 |
+| UNITREE/USDT:USDT | +26.79% | $1,027,283.43 |
+| SKYAI/USDT:USDT | +18.39% | $31,048,245.05 |
+| PLTRSTOCK/USDT:USDT | +17.93% | $5,073,607.59 |
+| BTW/USDT:USDT | +14.76% | $9,171,084.71 |
+| MYX/USDT:USDT | +14.06% | $1,831,601.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.47% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.81% | +1.81% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.59% |
-| MUU/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.45% | +1.44% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.54% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.81% | +1.87% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.66% |
+| MUU/USDT:USDT | below_1h_threshold | +1.59% | +1.65% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.45% | +1.51% |
 
 ## 7. 次に見るべき不足
 
