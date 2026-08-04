@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T02:46:43.139095+00:00
+- generated_at: 2026-08-04T02:51:44.173995+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10261**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.25** / 初期 $100.00 (+16.25%)
-- 確定: 1034件 (Win 332 / Loss 401 / Flat 301) / pending 6件 / skip 695件
+- 確定: 1034件 (Win 332 / Loss 401 / Flat 301) / pending 6件 / skip 696件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000340 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SNXX/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.25
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T02:46:23.382897+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=63882.2
-- Funnel: target 929 → liquid 172 → pre 50 → checked 50 → surge 5 → strict 5
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-04T02:51:22.453264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63816.2
+- Funnel: target 929 → liquid 172 → pre 50 → checked 50 → surge 6 → strict 6
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PLTRSTOCK/USDT:USDT | +15.01% | $3,847,892.21 |
-| SKYAI/USDT:USDT | +14.35% | $16,273,818.97 |
-| NIL/USDT:USDT | +13.06% | $1,567,751.06 |
-| ON/USDT:USDT | +11.62% | $2,787,997.25 |
-| PIPPIN/USDT:USDT | +11.21% | $8,236,529.19 |
+| SKYAI/USDT:USDT | +16.35% | $16,436,196.50 |
+| PLTRSTOCK/USDT:USDT | +14.91% | $3,849,104.02 |
+| NIL/USDT:USDT | +12.02% | $1,572,658.53 |
+| ON/USDT:USDT | +11.87% | $2,791,656.47 |
+| VANRY/USDT:USDT | +11.09% | $1,212,549.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.51% | +4.41% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.47% | +4.37% |
-| UAI/USDT:USDT | below_1h_threshold | +4.18% | +4.07% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.74% | +3.64% |
-| MYX/USDT:USDT | below_1h_threshold | +3.45% | +3.35% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +4.47% | +4.47% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.37% | +3.37% |
+| EWY/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
+| MYX/USDT:USDT | below_1h_threshold | +2.82% | +2.82% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.54% |
 
 ## 7. 次に見るべき不足
 
