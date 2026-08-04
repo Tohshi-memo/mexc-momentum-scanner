@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T23:51:22.851014+00:00
+- generated_at: 2026-08-04T23:56:25.224953+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10325**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.09** / 初期 $100.00 (+17.09%)
-- 確定: 1082件 (Win 348 / Loss 420 / Flat 314) / pending 2件 / skip 714件
+- 確定: 1082件 (Win 348 / Loss 420 / Flat 314) / pending 3件 / skip 714件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000291 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BICO/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.09
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T23:51:15.816956+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=64115.5
-- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.9 >= 65=1
+- 更新: 2026-08-04T23:56:18.381273+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=64093.2
+- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.5 >= 65=1, 4h RSI 72.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +33.91% | $3,880,074.90 |
-| MARSCOIN/USDT:USDT | +25.75% | $1,000,977.42 |
-| TAKE/USDT:USDT | +23.80% | $1,259,149.57 |
-| CASHCAT/USDT:USDT | +19.63% | $1,067,458.01 |
-| BICO/USDT:USDT | +18.07% | $15,016,813.84 |
+| HEI/USDT:USDT | +33.40% | $3,899,114.75 |
+| MARSCOIN/USDT:USDT | +26.03% | $1,005,647.54 |
+| TAKE/USDT:USDT | +24.56% | $1,262,197.44 |
+| CASHCAT/USDT:USDT | +20.04% | $1,069,581.26 |
+| BICO/USDT:USDT | +16.16% | $15,116,160.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.93% | +5.12% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.24% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.98% | +1.17% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +1.12% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.99% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.28% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.98% | +1.20% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +1.15% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +1.02% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.63% | +0.85% |
 
 ## 7. 次に見るべき不足
 
