@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T19:01:26.577433+00:00
+- generated_at: 2026-08-04T19:06:31.406529+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10315**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T19:01:17.711335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64261.0
-- Funnel: target 937 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-04T19:06:23.992325+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64267.7
+- Funnel: target 937 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +22.98% | $1,178,411.28 |
-| BICO/USDT:USDT | +13.21% | $13,720,799.43 |
-| COTI/USDT:USDT | +8.88% | $4,514,404.50 |
-| SKYAI/USDT:USDT | +7.25% | $46,741,107.53 |
-| HFT/USDT:USDT | +6.49% | $1,212,189.70 |
+| HEI/USDT:USDT | +19.79% | $1,289,977.44 |
+| BICO/USDT:USDT | +12.83% | $13,743,830.24 |
+| COTI/USDT:USDT | +10.33% | $4,562,622.55 |
+| SKYAI/USDT:USDT | +7.88% | $46,847,646.63 |
+| HFT/USDT:USDT | +5.39% | $1,213,645.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.20% |
-| SPOTSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.08% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.93% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.74% | +0.75% |
+| COTI/USDT:USDT | below_1h_threshold | +1.68% | +1.68% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
 
 ## 7. 次に見るべき不足
 
