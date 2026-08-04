@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T23:06:18.981181+00:00
+- generated_at: 2026-08-04T23:11:30.934204+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10323**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1080件 (Win 347 / Loss 419 / Flat 314) / pending 2件 / skip 714件
+- 確定: 1080件 (Win 347 / Loss 419 / Flat 314) / pending 3件 / skip 714件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000300 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HFT/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T23:06:11.355588+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64233.3
-- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-04T23:11:23.331248+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=64379.8
+- Funnel: target 937 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +30.92% | $3,719,316.27 |
-| TAKE/USDT:USDT | +25.46% | $1,179,822.16 |
-| BICO/USDT:USDT | +24.13% | $14,548,162.42 |
-| HFT/USDT:USDT | +22.37% | $1,359,196.39 |
-| PUMPFUN/USDT:USDT | +8.58% | $51,238,876.89 |
+| HEI/USDT:USDT | +31.85% | $3,744,265.07 |
+| TAKE/USDT:USDT | +24.72% | $1,193,984.30 |
+| BICO/USDT:USDT | +22.06% | $14,661,552.61 |
+| HFT/USDT:USDT | +18.68% | $1,368,858.92 |
+| CASHCAT/USDT:USDT | +17.44% | $1,008,027.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.63% | +0.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.90% | +1.67% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.64% | +1.42% |
+| AKE/USDT:USDT | below_1h_threshold | +1.38% | +1.16% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.71% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.57% |
 
 ## 7. 次に見るべき不足
 
