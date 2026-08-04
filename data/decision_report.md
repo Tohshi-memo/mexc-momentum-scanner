@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T03:56:28.596675+00:00
+- generated_at: 2026-08-04T04:01:27.178329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10263**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T03:56:20.653561+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63789.8
-- Funnel: target 929 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.7 >= 65=1, 4h RSI 65.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-04T04:01:19.729359+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63776.9
+- Funnel: target 929 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +25.80% | $17,814,867.25 |
-| PLTRSTOCK/USDT:USDT | +15.42% | $3,886,510.27 |
-| PIPPIN/USDT:USDT | +13.42% | $8,506,150.49 |
-| ON/USDT:USDT | +13.00% | $2,832,506.16 |
-| BTW/USDT:USDT | +12.54% | $8,648,792.43 |
+| SKYAI/USDT:USDT | +26.25% | $17,702,660.91 |
+| PLTRSTOCK/USDT:USDT | +15.54% | $3,908,380.24 |
+| PIPPIN/USDT:USDT | +13.66% | $8,449,182.37 |
+| ON/USDT:USDT | +12.48% | $2,802,650.51 |
+| BTW/USDT:USDT | +12.01% | $8,560,233.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +2.65% | +2.67% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
-| ON/USDT:USDT | below_1h_threshold | +1.98% | +2.00% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.58% | +1.60% |
-| JTO/USDT:USDT | below_1h_threshold | +1.56% | +1.58% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.40% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.56% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.67% |
 
 ## 7. 次に見るべき不足
 
