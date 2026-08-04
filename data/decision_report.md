@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T03:16:19.853625+00:00
+- generated_at: 2026-08-04T03:21:17.573489+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10262**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T03:16:12.340097+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=63664.0
+- 更新: 2026-08-04T03:21:10.179936+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63667.5
 - Funnel: target 929 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +19.17% | $16,751,846.46 |
-| PLTRSTOCK/USDT:USDT | +14.49% | $3,860,606.92 |
-| NIL/USDT:USDT | +13.51% | $1,593,053.05 |
-| ON/USDT:USDT | +12.77% | $2,757,544.73 |
-| PIPPIN/USDT:USDT | +11.51% | $8,363,467.70 |
+| SKYAI/USDT:USDT | +19.90% | $16,864,121.63 |
+| PLTRSTOCK/USDT:USDT | +14.72% | $3,863,019.14 |
+| NIL/USDT:USDT | +13.51% | $1,604,463.85 |
+| ON/USDT:USDT | +13.21% | $2,777,461.50 |
+| VANRY/USDT:USDT | +11.62% | $1,207,380.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.21% | +4.43% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.48% | +2.70% |
-| ON/USDT:USDT | below_1h_threshold | +1.73% | +1.94% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.50% | +1.72% |
-| KOMA/USDT:USDT | below_1h_threshold | +1.33% | +1.55% |
+| BTW/USDT:USDT | below_1h_threshold | +4.19% | +4.41% |
+| VANRY/USDT:USDT | below_1h_threshold | +3.20% | +3.41% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.45% | +2.66% |
+| ON/USDT:USDT | below_1h_threshold | +2.14% | +2.35% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.10% | +2.31% |
 
 ## 7. 次に見るべき不足
 
