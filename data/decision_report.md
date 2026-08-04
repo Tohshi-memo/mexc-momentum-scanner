@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T18:36:16.996404+00:00
+- generated_at: 2026-08-04T18:41:24.431772+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10314**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.40** / 初期 $100.00 (+16.40%)
-- 確定: 1072件 (Win 343 / Loss 415 / Flat 314) / pending 4件 / skip 711件
+- 確定: 1072件 (Win 343 / Loss 415 / Flat 314) / pending 5件 / skip 711件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000188 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.40
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T18:36:09.400517+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=64305.0
-- Funnel: target 937 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-04T18:41:17.548254+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=64178.3
+- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +12.56% | $15,168,468.36 |
-| HFT/USDT:USDT | +4.79% | $1,241,786.82 |
-| COTI/USDT:USDT | +4.59% | $4,443,139.87 |
-| KORU/USDT:USDT | +4.44% | $49,982,105.32 |
-| SPCXSTOCK/USDT:USDT | +3.55% | $158,361,648.11 |
+| HEI/USDT:USDT | +21.44% | $1,001,609.66 |
+| BICO/USDT:USDT | +12.28% | $15,196,670.29 |
+| HFT/USDT:USDT | +5.89% | $1,243,294.35 |
+| COTI/USDT:USDT | +5.11% | $4,452,813.83 |
+| SPCXSTOCK/USDT:USDT | +3.92% | $159,123,379.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.86% | +2.28% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.28% |
-| ROBO/USDT:USDT | below_1h_threshold | +2.39% | +1.82% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.31% | +1.73% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.69% | +1.11% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.95% | +2.57% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.48% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.50% | +2.13% |
+| BTW/USDT:USDT | below_1h_threshold | +2.09% | +1.71% |
+| COTI/USDT:USDT | below_1h_threshold | +1.97% | +1.59% |
 
 ## 7. 次に見るべき不足
 
