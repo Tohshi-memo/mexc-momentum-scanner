@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T10:51:25.765169+00:00
+- generated_at: 2026-08-04T10:56:24.944750+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10286**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T10:51:13.731934+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=63718.5
-- Funnel: target 937 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-08-04T10:56:13.282046+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63714.2
+- Funnel: target 937 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +45.28% | $4,582,954.11 |
-| SKYAI/USDT:USDT | +19.72% | $35,175,997.09 |
-| UNITREE/USDT:USDT | +18.98% | $1,382,045.07 |
-| PLTRSTOCK/USDT:USDT | +16.94% | $5,837,840.85 |
-| BANK/USDT:USDT | +16.49% | $8,940,548.37 |
+| CYS/USDT:USDT | +44.69% | $4,675,486.27 |
+| CASHCAT/USDT:USDT | +35.93% | $1,001,494.90 |
+| AAOISTOCK/USDT:USDT | +20.14% | $1,024,826.14 |
+| UNITREE/USDT:USDT | +19.57% | $1,386,372.71 |
+| HOME/USDT:USDT | +17.04% | $8,724,692.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOME/USDT:USDT | below_1h_threshold | +1.88% | +1.65% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.84% | +1.62% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.23% | +1.01% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.66% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.72% | +0.50% |
+| HOME/USDT:USDT | below_1h_threshold | +2.46% | +2.25% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.28% | +2.06% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.10% | +0.88% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.99% | +0.77% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.67% |
 
 ## 7. 次に見るべき不足
 
