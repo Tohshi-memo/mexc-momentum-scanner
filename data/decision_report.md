@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T19:46:20.195253+00:00
+- generated_at: 2026-08-04T19:51:27.661980+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10316**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T19:46:12.653727+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64337.6
+- 更新: 2026-08-04T19:51:20.278373+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64295.1
 - Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +20.92% | $1,791,186.61 |
-| BICO/USDT:USDT | +14.30% | $14,097,549.02 |
-| COTI/USDT:USDT | +11.23% | $5,012,232.19 |
-| PUMPFUN/USDT:USDT | +5.40% | $36,901,857.93 |
-| HFT/USDT:USDT | +5.39% | $1,227,311.53 |
+| HEI/USDT:USDT | +21.44% | $1,850,469.80 |
+| BICO/USDT:USDT | +15.61% | $14,138,129.08 |
+| COTI/USDT:USDT | +11.15% | $5,036,106.45 |
+| HFT/USDT:USDT | +5.69% | $1,229,482.34 |
+| PUMPFUN/USDT:USDT | +5.66% | $36,926,933.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.43% | +4.32% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.70% | +2.60% |
-| AKE/USDT:USDT | below_1h_threshold | +2.68% | +2.57% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.48% | +2.38% |
-| COTI/USDT:USDT | below_1h_threshold | +2.38% | +2.28% |
+| SYN/USDT:USDT | below_1h_threshold | +4.53% | +4.49% |
+| AKE/USDT:USDT | below_1h_threshold | +3.08% | +3.04% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.90% | +2.86% |
+| BICO/USDT:USDT | below_1h_threshold | +2.77% | +2.73% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.24% | +2.20% |
 
 ## 7. 次に見るべき不足
 
