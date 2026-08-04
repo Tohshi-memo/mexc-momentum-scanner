@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T05:11:15.709229+00:00
+- generated_at: 2026-08-04T05:16:20.411145+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10268**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T05:11:08.484122+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=63888.0
+- 更新: 2026-08-04T05:16:13.106641+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=63846.1
 - Funnel: target 929 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +15.64% | $3,019,311.37 |
-| SKYAI/USDT:USDT | +15.49% | $21,302,651.51 |
-| PLTRSTOCK/USDT:USDT | +15.46% | $4,055,581.02 |
-| BTW/USDT:USDT | +13.92% | $8,732,456.90 |
-| MYX/USDT:USDT | +13.42% | $1,171,081.82 |
+| SKYAI/USDT:USDT | +19.04% | $21,605,342.73 |
+| PLTRSTOCK/USDT:USDT | +15.46% | $4,058,625.08 |
+| ON/USDT:USDT | +15.11% | $3,025,240.88 |
+| BTW/USDT:USDT | +14.56% | $8,761,954.38 |
+| MYX/USDT:USDT | +13.37% | $1,198,780.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +2.09% | +2.27% |
-| MYX/USDT:USDT | below_1h_threshold | +1.30% | +1.49% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.99% | +1.17% |
-| UAI/USDT:USDT | below_1h_threshold | +0.89% | +1.07% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.76% | +0.94% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.68% | +1.93% |
+| MYX/USDT:USDT | below_1h_threshold | +1.50% | +1.74% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.26% | +1.50% |
+| BTW/USDT:USDT | below_1h_threshold | +1.21% | +1.46% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.99% | +1.24% |
 
 ## 7. 次に見るべき不足
 
