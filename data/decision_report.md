@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T15:26:32.290465+00:00
+- generated_at: 2026-08-04T15:31:26.951793+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10305**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T15:26:24.896803+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=63994.8
+- 更新: 2026-08-04T15:31:21.787490+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=63931.8
 - Funnel: target 937 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +79.62% | $14,674,258.77 |
-| BANK/USDT:USDT | +43.10% | $18,988,860.68 |
-| HOME/USDT:USDT | +40.52% | $15,020,979.89 |
-| SKYAI/USDT:USDT | +38.04% | $46,045,537.92 |
-| MVLL/USDT:USDT | +30.32% | $1,615,489.50 |
+| CYS/USDT:USDT | +80.34% | $14,784,647.14 |
+| BANK/USDT:USDT | +42.13% | $19,207,279.27 |
+| HOME/USDT:USDT | +39.31% | $15,083,197.22 |
+| SKYAI/USDT:USDT | +35.55% | $46,285,608.07 |
+| MVLL/USDT:USDT | +28.98% | $1,616,679.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANK/USDT:USDT | below_1h_threshold | +4.64% | +4.80% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.63% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.57% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.53% |
-| MUU/USDT:USDT | below_1h_threshold | +1.87% | +2.04% |
+| BANK/USDT:USDT | below_1h_threshold | +3.98% | +4.24% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.73% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.67% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.37% | +2.63% |
+| MUU/USDT:USDT | below_1h_threshold | +1.87% | +2.14% |
 
 ## 7. 次に見るべき不足
 
