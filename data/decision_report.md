@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T12:26:20.839831+00:00
+- generated_at: 2026-08-04T12:31:25.444153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10292**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T12:26:12.010428+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=63790.8
-- Funnel: target 937 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-04T12:31:17.942815+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63814.1
+- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +39.72% | $6,842,698.04 |
-| CASHCAT/USDT:USDT | +39.49% | $1,094,677.13 |
-| BANK/USDT:USDT | +25.28% | $12,489,434.73 |
-| SKYAI/USDT:USDT | +24.61% | $39,818,356.68 |
-| HOME/USDT:USDT | +24.41% | $10,684,931.96 |
+| CASHCAT/USDT:USDT | +42.15% | $1,102,768.06 |
+| CYS/USDT:USDT | +40.17% | $6,883,581.47 |
+| BANK/USDT:USDT | +24.76% | $12,709,739.75 |
+| UNITREE/USDT:USDT | +23.79% | $1,574,217.34 |
+| HOME/USDT:USDT | +23.78% | $10,725,123.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +4.88% | +5.05% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.77% | +4.94% |
-| SNXX/USDT:USDT | below_1h_threshold | +4.35% | +4.52% |
-| CYS/USDT:USDT | below_1h_threshold | +4.34% | +4.52% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.63% | +3.80% |
+| KORU/USDT:USDT | below_1h_threshold | +4.88% | +5.01% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +4.77% | +4.91% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.35% | +4.48% |
+| CYS/USDT:USDT | below_1h_threshold | +4.32% | +4.45% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.63% | +3.76% |
 
 ## 7. 次に見るべき不足
 
