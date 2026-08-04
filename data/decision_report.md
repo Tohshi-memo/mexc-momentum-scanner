@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T04:21:22.451254+00:00
+- generated_at: 2026-08-04T04:26:16.002015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10264**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T04:21:15.209563+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=63849.9
+- 更新: 2026-08-04T04:26:08.689531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63810.5
 - Funnel: target 929 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +26.79% | $18,497,108.76 |
-| ON/USDT:USDT | +17.27% | $2,938,190.40 |
-| PLTRSTOCK/USDT:USDT | +15.78% | $3,984,648.17 |
-| NIL/USDT:USDT | +13.96% | $1,739,914.54 |
-| VANRY/USDT:USDT | +13.69% | $1,090,768.48 |
+| SKYAI/USDT:USDT | +23.52% | $18,796,859.15 |
+| ON/USDT:USDT | +16.00% | $2,953,324.30 |
+| PLTRSTOCK/USDT:USDT | +15.86% | $3,985,717.87 |
+| NIL/USDT:USDT | +14.80% | $1,762,144.68 |
+| VANRY/USDT:USDT | +14.67% | $1,094,269.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.34% | +4.22% |
-| VANRY/USDT:USDT | below_1h_threshold | +3.75% | +3.63% |
-| NIL/USDT:USDT | below_1h_threshold | +2.83% | +2.71% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.29% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.45% |
+| VANRY/USDT:USDT | below_1h_threshold | +4.56% | +4.50% |
+| NIL/USDT:USDT | below_1h_threshold | +4.00% | +3.93% |
+| ON/USDT:USDT | below_1h_threshold | +3.09% | +3.03% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.41% | +2.35% |
+| COTI/USDT:USDT | below_1h_threshold | +1.97% | +1.91% |
 
 ## 7. 次に見るべき不足
 
