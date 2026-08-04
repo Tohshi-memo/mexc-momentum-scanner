@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T07:51:20.143823+00:00
+- generated_at: 2026-08-04T07:56:19.592009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10275**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T07:51:11.793367+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=63723.0
+- 更新: 2026-08-04T07:56:09.909785+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63685.0
 - Funnel: target 933 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOME/USDT:USDT | +24.54% | $6,667,299.57 |
-| COTI/USDT:USDT | +18.08% | $1,740,332.02 |
-| ON/USDT:USDT | +17.86% | $3,770,377.61 |
-| PLTRSTOCK/USDT:USDT | +15.66% | $4,815,452.45 |
-| KORU/USDT:USDT | +13.96% | $31,149,100.84 |
+| HOME/USDT:USDT | +21.21% | $6,738,267.33 |
+| ON/USDT:USDT | +18.50% | $3,800,042.26 |
+| PLTRSTOCK/USDT:USDT | +15.62% | $4,820,071.14 |
+| COTI/USDT:USDT | +15.33% | $1,798,479.57 |
+| BTW/USDT:USDT | +13.77% | $9,278,644.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.77% | +3.66% |
-| MUU/USDT:USDT | below_1h_threshold | +2.32% | +2.21% |
-| VANRY/USDT:USDT | below_1h_threshold | +2.06% | +1.95% |
-| HOME/USDT:USDT | below_1h_threshold | +2.02% | +1.91% |
-| UAI/USDT:USDT | below_1h_threshold | +1.27% | +1.16% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.09% | +3.04% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.36% | +2.31% |
+| MUU/USDT:USDT | below_1h_threshold | +2.32% | +2.27% |
+| NIL/USDT:USDT | below_1h_threshold | +1.27% | +1.22% |
+| KORU/USDT:USDT | below_1h_threshold | +1.27% | +1.22% |
 
 ## 7. 次に見るべき不足
 
