@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-04T03:41:33.324888+00:00
+- generated_at: 2026-08-04T03:46:18.895527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10263**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.55** / 初期 $100.00 (+16.55%)
-- 確定: 1035件 (Win 333 / Loss 401 / Flat 301) / pending 6件 / skip 697件
+- 確定: 1035件 (Win 333 / Loss 401 / Flat 301) / pending 6件 / skip 698件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000296 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VANRY/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $116.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-04T03:41:25.730521+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63809.7
-- Funnel: target 929 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1
+- 更新: 2026-08-04T03:46:12.409988+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63792.1
+- Funnel: target 929 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.5 >= 65=1, 4h RSI 65.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +21.37% | $17,248,602.80 |
-| PLTRSTOCK/USDT:USDT | +15.03% | $3,875,697.94 |
-| BTW/USDT:USDT | +12.54% | $8,583,263.55 |
-| ON/USDT:USDT | +12.25% | $2,806,385.93 |
-| NIL/USDT:USDT | +11.96% | $1,686,875.72 |
+| SKYAI/USDT:USDT | +24.95% | $17,483,071.67 |
+| PLTRSTOCK/USDT:USDT | +14.92% | $3,876,540.25 |
+| BTW/USDT:USDT | +12.87% | $8,614,269.09 |
+| ON/USDT:USDT | +12.40% | $2,811,424.70 |
+| PIPPIN/USDT:USDT | +12.29% | $8,466,762.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.67% | +3.66% |
-| COTI/USDT:USDT | below_1h_threshold | +1.86% | +1.85% |
-| MYX/USDT:USDT | below_1h_threshold | +1.59% | +1.58% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.44% | +1.43% |
+| COTI/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| MYX/USDT:USDT | below_1h_threshold | +2.09% | +2.11% |
+| VANRY/USDT:USDT | below_1h_threshold | +2.06% | +2.08% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.59% | +1.60% |
+| FHE/USDT:USDT | below_1h_threshold | +1.57% | +1.58% |
 
 ## 7. 次に見るべき不足
 
