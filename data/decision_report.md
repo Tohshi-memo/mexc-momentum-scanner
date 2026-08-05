@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T01:41:43.402921+00:00
+- generated_at: 2026-08-05T01:46:40.084518+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10336**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T01:41:32.758386+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=64214.9
-- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.2 >= 65=1, 4h RSI 84.6 >= 65=1, 4h RSI 72.4 >= 65=1, 4h RSI 76.5 >= 65=1
+- 更新: 2026-08-05T01:46:30.494855+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=64175.7
+- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.4 >= 65=1, 4h RSI 73.3 >= 65=1, 4h RSI 83.8 >= 65=1, 4h RSI 76.7 >= 65=1, 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +55.97% | $4,920,573.80 |
-| CASHCAT/USDT:USDT | +29.69% | $1,137,144.53 |
-| MARSCOIN/USDT:USDT | +29.11% | $1,063,967.71 |
-| TAKE/USDT:USDT | +28.78% | $1,358,252.39 |
-| SKYAI/USDT:USDT | +24.05% | $49,511,593.64 |
+| HEI/USDT:USDT | +57.31% | $5,053,243.04 |
+| MARSCOIN/USDT:USDT | +32.67% | $1,068,327.01 |
+| CASHCAT/USDT:USDT | +30.67% | $1,137,491.68 |
+| TAKE/USDT:USDT | +29.65% | $1,366,182.31 |
+| SKYAI/USDT:USDT | +21.12% | $49,756,853.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_relative_strength | +5.02% | +4.64% |
-| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.45% |
-| DEXE/USDT:USDT | below_1h_threshold | +4.18% | +3.80% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.03% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.11% | +2.73% |
+| DEXE/USDT:USDT | below_relative_strength | +5.17% | +4.85% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.51% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.09% | +3.77% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.09% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.00% | +2.68% |
 
 ## 7. 次に見るべき不足
 
