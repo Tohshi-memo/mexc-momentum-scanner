@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T02:01:33.477752+00:00
+- generated_at: 2026-08-05T02:06:16.227607+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10340**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T02:01:23.476913+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64305.2
+- 更新: 2026-08-05T02:06:08.852855+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64369.4
 - Funnel: target 937 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +70.41% | $5,494,968.89 |
-| MARSCOIN/USDT:USDT | +35.50% | $1,077,854.09 |
-| CASHCAT/USDT:USDT | +32.11% | $1,115,399.13 |
-| TAKE/USDT:USDT | +29.73% | $1,354,626.59 |
-| SKYAI/USDT:USDT | +24.52% | $49,688,468.01 |
+| HEI/USDT:USDT | +67.31% | $5,663,910.71 |
+| MARSCOIN/USDT:USDT | +33.55% | $1,081,554.64 |
+| CASHCAT/USDT:USDT | +32.92% | $1,116,501.08 |
+| TAKE/USDT:USDT | +29.59% | $1,358,928.77 |
+| SKYAI/USDT:USDT | +26.67% | $49,827,334.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.61% |
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.64% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.20% |
-| KORU/USDT:USDT | below_1h_threshold | +1.16% | +1.17% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.16% | +1.16% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.51% |
+| BICO/USDT:USDT | below_1h_threshold | +1.69% | +1.59% |
+| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.54% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.61% | +1.51% |
+| HFT/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
 
 ## 7. 次に見るべき不足
 
