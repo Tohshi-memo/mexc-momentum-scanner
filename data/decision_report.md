@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T21:06:24.320023+00:00
+- generated_at: 2026-08-05T21:11:21.387751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10461**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T21:06:13.998609+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64757.9
-- Funnel: target 948 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-05T21:11:16.176239+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64736.0
+- Funnel: target 948 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +43.95% | $2,010,956.09 |
-| HEI/USDT:USDT | +41.49% | $43,301,354.79 |
-| BLESS/USDT:USDT | +40.63% | $98,381,500.37 |
-| UB/USDT:USDT | +26.36% | $22,019,767.90 |
-| BICO/USDT:USDT | +24.12% | $13,085,926.65 |
+| DODO/USDT:USDT | +45.40% | $2,039,740.25 |
+| HEI/USDT:USDT | +42.64% | $43,355,653.23 |
+| BLESS/USDT:USDT | +40.26% | $98,609,579.79 |
+| UB/USDT:USDT | +22.56% | $22,076,570.93 |
+| BICO/USDT:USDT | +22.39% | $13,106,928.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +2.37% | +2.44% |
-| CYS/USDT:USDT | below_1h_threshold | +1.34% | +1.40% |
-| MYX/USDT:USDT | below_1h_threshold | +1.10% | +1.17% |
-| ON/USDT:USDT | below_1h_threshold | +1.07% | +1.13% |
-| LIT/USDT:USDT | below_1h_threshold | +0.53% | +0.60% |
+| DODO/USDT:USDT | below_1h_threshold | +3.44% | +3.54% |
+| CYS/USDT:USDT | below_1h_threshold | +2.81% | +2.91% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.76% | +1.86% |
+| HEI/USDT:USDT | below_1h_threshold | +1.17% | +1.28% |
+| SYN/USDT:USDT | below_1h_threshold | +0.99% | +1.09% |
 
 ## 7. 次に見るべき不足
 
