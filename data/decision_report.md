@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T02:56:27.911504+00:00
+- generated_at: 2026-08-05T03:01:16.039067+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10343**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T02:56:17.494662+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64389.4
-- Funnel: target 939 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.2 >= 65=1, 4h RSI 79.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-05T03:01:10.011418+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64380.2
+- Funnel: target 939 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +80.72% | $7,051,841.44 |
-| CASHCAT/USDT:USDT | +34.82% | $1,195,500.08 |
-| TAKE/USDT:USDT | +33.24% | $1,498,032.01 |
-| SKYAI/USDT:USDT | +28.47% | $52,365,642.77 |
-| MARSCOIN/USDT:USDT | +25.55% | $1,114,210.42 |
+| HEI/USDT:USDT | +84.74% | $7,182,157.65 |
+| CASHCAT/USDT:USDT | +35.82% | $1,151,549.92 |
+| TAKE/USDT:USDT | +32.88% | $1,479,522.20 |
+| SKYAI/USDT:USDT | +28.81% | $50,995,384.08 |
+| MARSCOIN/USDT:USDT | +27.70% | $1,110,268.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HFT/USDT:USDT | below_1h_threshold | +3.90% | +3.77% |
-| SYN/USDT:USDT | below_1h_threshold | +3.77% | +3.64% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.48% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.06% | +2.93% |
-| ON/USDT:USDT | below_1h_threshold | +2.96% | +2.83% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.89% | +0.82% |
+| TAKE/USDT:USDT | below_1h_threshold | +0.43% | +0.37% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.35% | +0.29% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.28% |
+| ETNSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.25% |
 
 ## 7. 次に見るべき不足
 
