@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T16:26:46.997002+00:00
+- generated_at: 2026-08-05T16:31:34.451445+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10421**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.94** / 初期 $100.00 (+17.94%)
-- 確定: 1141件 (Win 365 / Loss 443 / Flat 333) / pending 1件 / skip 758件
+- 確定: 1141件 (Win 365 / Loss 443 / Flat 333) / pending 1件 / skip 759件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000124 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ALLO/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.94
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T16:26:32.637208+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=64664.2
+- 更新: 2026-08-05T16:31:22.033793+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=64699.9
 - Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +6.45% | $72,437,045.47 |
-| ESPORTS/USDT:USDT | +5.48% | $3,535,469.45 |
-| ON/USDT:USDT | +4.63% | $5,231,873.06 |
-| BICO/USDT:USDT | +3.29% | $16,426,261.26 |
-| CYS/USDT:USDT | +2.93% | $32,059,344.73 |
+| ESPORTS/USDT:USDT | +7.85% | $3,639,953.14 |
+| UB/USDT:USDT | +5.86% | $25,365,952.23 |
+| ON/USDT:USDT | +5.04% | $5,328,490.33 |
+| BLESS/USDT:USDT | +4.57% | $72,899,418.94 |
+| BICO/USDT:USDT | +4.11% | $16,468,615.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.76% | +4.27% |
-| BICO/USDT:USDT | below_1h_threshold | +3.29% | +2.81% |
-| CYS/USDT:USDT | below_1h_threshold | +2.99% | +2.51% |
-| CAP/USDT:USDT | below_1h_threshold | +2.55% | +2.06% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.52% | +2.04% |
+| ON/USDT:USDT | below_1h_threshold | +5.00% | +4.46% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.52% | +3.98% |
+| BICO/USDT:USDT | below_1h_threshold | +4.29% | +3.75% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.02% | +2.48% |
+| UNI/USDT:USDT | below_1h_threshold | +2.62% | +2.08% |
 
 ## 7. 次に見るべき不足
 
