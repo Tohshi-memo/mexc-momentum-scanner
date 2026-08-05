@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T02:21:22.406612+00:00
+- generated_at: 2026-08-05T02:26:35.463058+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10342**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.59** / 初期 $100.00 (+17.59%)
-- 確定: 1098件 (Win 352 / Loss 424 / Flat 322) / pending 2件 / skip 715件
+- 確定: 1098件 (Win 352 / Loss 424 / Flat 322) / pending 4件 / skip 716件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000300 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TAKE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $117.59
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T02:21:13.394545+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64348.5
-- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.6 >= 65=1
+- 更新: 2026-08-05T02:26:23.952836+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=64423.0
+- Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.1 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +71.54% | $6,025,928.33 |
-| CASHCAT/USDT:USDT | +39.59% | $1,166,804.82 |
-| TAKE/USDT:USDT | +34.41% | $1,404,250.19 |
-| MARSCOIN/USDT:USDT | +25.92% | $1,092,900.92 |
-| SKYAI/USDT:USDT | +24.29% | $50,509,722.19 |
+| HEI/USDT:USDT | +71.23% | $6,229,857.85 |
+| CASHCAT/USDT:USDT | +40.05% | $1,169,090.49 |
+| TAKE/USDT:USDT | +36.80% | $1,419,352.36 |
+| MARSCOIN/USDT:USDT | +30.28% | $1,099,839.78 |
+| SKYAI/USDT:USDT | +25.33% | $50,603,640.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.40% | +4.33% |
-| TAKE/USDT:USDT | below_1h_threshold | +3.84% | +3.77% |
-| BICO/USDT:USDT | below_1h_threshold | +3.61% | +3.55% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.55% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.52% | +3.45% |
+| HFT/USDT:USDT | below_1h_threshold | +4.45% | +4.27% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.97% | +3.78% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.43% |
+| SYN/USDT:USDT | below_1h_threshold | +2.82% | +2.64% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.76% | +2.58% |
 
 ## 7. 次に見るべき不足
 
