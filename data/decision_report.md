@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T23:31:21.069664+00:00
+- generated_at: 2026-08-05T23:36:20.294040+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10475**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.53** / 初期 $100.00 (+17.53%)
-- 確定: 1143件 (Win 365 / Loss 445 / Flat 333) / pending 2件 / skip 804件
+- 確定: 1143件 (Win 365 / Loss 445 / Flat 333) / pending 3件 / skip 804件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000304 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T23:31:11.988999+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64657.6
-- Funnel: target 948 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.5 >= 65=1
+- 更新: 2026-08-05T23:36:10.029782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64654.1
+- Funnel: target 948 → liquid 186 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +47.98% | $4,963,960.26 |
-| BLESS/USDT:USDT | +40.24% | $102,695,228.76 |
-| HEI/USDT:USDT | +38.33% | $44,025,435.28 |
-| CASHCAT/USDT:USDT | +34.92% | $1,390,348.33 |
-| SITMSTOCK/USDT:USDT | +30.58% | $1,079,321.34 |
+| DODO/USDT:USDT | +46.48% | $5,006,337.24 |
+| BLESS/USDT:USDT | +41.96% | $102,919,506.71 |
+| HEI/USDT:USDT | +37.68% | $44,058,092.71 |
+| SITMSTOCK/USDT:USDT | +30.13% | $1,080,421.82 |
+| CASHCAT/USDT:USDT | +27.14% | $1,399,271.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.67% | +2.59% |
-| UB/USDT:USDT | below_1h_threshold | +2.03% | +1.96% |
-| HEI/USDT:USDT | below_1h_threshold | +1.51% | +1.44% |
-| PI/USDT:USDT | below_1h_threshold | +1.46% | +1.38% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.08% | +1.01% |
+| BTW/USDT:USDT | below_1h_threshold | +3.27% | +3.20% |
+| UB/USDT:USDT | below_1h_threshold | +2.24% | +2.17% |
+| PI/USDT:USDT | below_1h_threshold | +1.56% | +1.49% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.39% | +1.32% |
+| HFT/USDT:USDT | below_1h_threshold | +1.32% | +1.26% |
 
 ## 7. 次に見るべき不足
 
