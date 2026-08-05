@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T03:01:16.039067+00:00
+- generated_at: 2026-08-05T03:06:12.299264+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10343**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T03:01:10.011418+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64380.2
+- 更新: 2026-08-05T03:06:06.313890+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64347.1
 - Funnel: target 939 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +84.74% | $7,182,157.65 |
-| CASHCAT/USDT:USDT | +35.82% | $1,151,549.92 |
-| TAKE/USDT:USDT | +32.88% | $1,479,522.20 |
-| SKYAI/USDT:USDT | +28.81% | $50,995,384.08 |
-| MARSCOIN/USDT:USDT | +27.70% | $1,110,268.38 |
+| HEI/USDT:USDT | +85.46% | $7,293,463.92 |
+| TAKE/USDT:USDT | +34.79% | $1,490,268.79 |
+| CASHCAT/USDT:USDT | +34.18% | $1,153,208.42 |
+| MARSCOIN/USDT:USDT | +25.75% | $1,111,345.60 |
+| SKYAI/USDT:USDT | +25.00% | $51,367,674.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +0.89% | +0.82% |
-| TAKE/USDT:USDT | below_1h_threshold | +0.43% | +0.37% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.35% | +0.29% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.28% |
-| ETNSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.25% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.87% | +1.86% |
+| TUT/USDT:USDT | below_1h_threshold | +1.22% | +1.21% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.10% | +1.09% |
+| UNI/USDT:USDT | below_1h_threshold | +0.85% | +0.84% |
+| SYN/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
 
 ## 7. 次に見るべき不足
 
