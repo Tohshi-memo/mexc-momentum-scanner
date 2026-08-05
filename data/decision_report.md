@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T15:56:41.002170+00:00
+- generated_at: 2026-08-05T16:01:30.953830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10416**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T15:56:28.992723+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64408.9
-- Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.4 >= 65=1, 4h RSI 80.7 >= 65=1, 4h RSI 75.4 >= 65=1, 4h RSI 85.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-05T16:01:23.543774+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64398.8
+- Funnel: target 948 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +104.22% | $31,363,729.72 |
-| HFT/USDT:USDT | +76.12% | $4,804,466.36 |
-| BLESS/USDT:USDT | +72.51% | $70,716,130.39 |
-| CASHCAT/USDT:USDT | +38.56% | $1,023,685.83 |
-| CYS/USDT:USDT | +35.79% | $32,130,233.82 |
+| ESPORTS/USDT:USDT | +3.59% | $2,355,735.06 |
+| PIPPIN/USDT:USDT | +0.95% | $1,709,448.91 |
+| HFT/USDT:USDT | +0.90% | $4,799,488.55 |
+| VVV/USDT:USDT | +0.86% | $1,427,896.45 |
+| BANK/USDT:USDT | +0.83% | $17,703,208.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.26% | +4.31% |
-| BASED/USDT:USDT | below_1h_threshold | +2.46% | +2.51% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.18% | +2.23% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.22% | +1.27% |
-| LAB/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.59% | +3.52% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.69% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.65% | +1.58% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.39% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.37% | +1.30% |
 
 ## 7. 次に見るべき不足
 
