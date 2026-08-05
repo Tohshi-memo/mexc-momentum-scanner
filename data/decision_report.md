@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T14:16:27.094389+00:00
+- generated_at: 2026-08-05T14:21:33.492848+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10411**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.15** / 初期 $100.00 (+18.15%)
-- 確定: 1140件 (Win 365 / Loss 442 / Flat 333) / pending 2件 / skip 744件
+- 確定: 1140件 (Win 365 / Loss 442 / Flat 333) / pending 2件 / skip 745件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T14:16:18.469657+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64443.3
-- Funnel: target 948 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1, 4h RSI 73.9 >= 65=1, 4h RSI 65.9 >= 65=1
+- 更新: 2026-08-05T14:21:23.556114+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=64481.2
+- Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.0 >= 65=1, 4h RSI 73.5 >= 65=1, 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +88.24% | $28,254,358.20 |
-| BLESS/USDT:USDT | +84.02% | $61,706,346.72 |
-| HFT/USDT:USDT | +75.12% | $4,297,854.60 |
-| BICO/USDT:USDT | +31.34% | $16,393,107.13 |
-| TAKE/USDT:USDT | +29.62% | $1,885,705.00 |
+| HEI/USDT:USDT | +87.21% | $28,465,696.01 |
+| BLESS/USDT:USDT | +85.19% | $61,943,360.75 |
+| HFT/USDT:USDT | +69.13% | $4,346,217.72 |
+| CASHCAT/USDT:USDT | +40.47% | $1,000,133.58 |
+| TAKE/USDT:USDT | +28.99% | $1,889,906.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.62% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +4.64% | +4.55% |
-| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.45% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.91% | +3.82% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.92% | +2.83% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.57% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +4.64% | +4.49% |
+| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.39% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.78% | +3.64% |
+| SYN/USDT:USDT | below_1h_threshold | +3.67% | +3.52% |
 
 ## 7. 次に見るべき不足
 
