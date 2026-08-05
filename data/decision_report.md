@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T12:16:20.049512+00:00
+- generated_at: 2026-08-05T12:21:16.012223+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10404**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T12:16:12.523142+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=64166.5
+- 更新: 2026-08-05T12:21:09.938857+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=64468.7
 - Funnel: target 945 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.0 >= 65=1
+- Strict後reject: 4h RSI 79.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +93.09% | $23,527,114.02 |
-| BLESS/USDT:USDT | +91.90% | $51,358,808.97 |
-| HFT/USDT:USDT | +80.61% | $3,604,011.50 |
-| CASHCAT/USDT:USDT | +44.20% | $1,013,065.40 |
-| BICO/USDT:USDT | +29.05% | $16,444,161.00 |
+| HEI/USDT:USDT | +90.92% | $23,605,930.56 |
+| BLESS/USDT:USDT | +86.02% | $52,323,183.88 |
+| HFT/USDT:USDT | +85.61% | $3,628,299.13 |
+| CASHCAT/USDT:USDT | +42.78% | $1,014,583.72 |
+| MARSCOIN/USDT:USDT | +31.64% | $1,255,805.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +1.99% | +1.80% |
-| TAKE/USDT:USDT | below_1h_threshold | +1.74% | +1.55% |
-| HEI/USDT:USDT | below_1h_threshold | +1.30% | +1.11% |
-| UAI/USDT:USDT | below_1h_threshold | +1.10% | +0.91% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.09% | +0.90% |
+| BICO/USDT:USDT | below_1h_threshold | +3.55% | +2.88% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.08% | +1.42% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.79% | +1.13% |
+| UAI/USDT:USDT | below_1h_threshold | +1.63% | +0.97% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.59% | +0.93% |
 
 ## 7. 次に見るべき不足
 
