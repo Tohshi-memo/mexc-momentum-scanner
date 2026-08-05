@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T19:51:32.718380+00:00
+- generated_at: 2026-08-05T19:56:25.570469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10451**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T19:51:20.111964+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64849.0
+- 更新: 2026-08-05T19:56:14.668546+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=64881.7
 - Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.4 >= 65=1, 4h RSI 72.9 >= 65=1
+- Strict後reject: 4h RSI 86.3 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +43.81% | $95,400,081.12 |
-| DODO/USDT:USDT | +36.05% | $1,116,141.92 |
-| HEI/USDT:USDT | +31.91% | $42,585,496.06 |
-| BICO/USDT:USDT | +16.71% | $13,608,747.01 |
-| 1000RATS/USDT:USDT | +14.10% | $7,877,811.57 |
+| BLESS/USDT:USDT | +43.53% | $95,686,670.91 |
+| DODO/USDT:USDT | +37.13% | $1,261,313.85 |
+| HEI/USDT:USDT | +33.16% | $42,736,047.19 |
+| BICO/USDT:USDT | +17.66% | $13,627,939.45 |
+| 1000RATS/USDT:USDT | +13.58% | $7,959,031.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.64% | +4.51% |
-| ON/USDT:USDT | below_1h_threshold | +3.42% | +3.29% |
-| BTW/USDT:USDT | below_1h_threshold | +3.30% | +3.16% |
-| BASED/USDT:USDT | below_1h_threshold | +3.27% | +3.14% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.87% | +1.73% |
+| CYS/USDT:USDT | below_1h_threshold | +4.10% | +3.91% |
+| ON/USDT:USDT | below_1h_threshold | +3.57% | +3.39% |
+| BASED/USDT:USDT | below_1h_threshold | +3.23% | +3.05% |
+| BTW/USDT:USDT | below_1h_threshold | +2.92% | +2.74% |
+| MMT/USDT:USDT | below_1h_threshold | +2.28% | +2.09% |
 
 ## 7. 次に見るべき不足
 
