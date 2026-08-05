@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T01:16:26.177688+00:00
+- generated_at: 2026-08-05T01:21:34.239646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10330**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.88** / 初期 $100.00 (+16.88%)
-- 確定: 1086件 (Win 349 / Loss 423 / Flat 314) / pending 4件 / skip 714件
+- 確定: 1086件 (Win 349 / Loss 423 / Flat 314) / pending 5件 / skip 714件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000220 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $116.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T01:16:18.054836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63965.2
-- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.6 >= 65=1, 4h RSI 70.9 >= 65=1
+- 更新: 2026-08-05T01:21:25.208834+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64030.2
+- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.8 >= 65=1, 4h RSI 90.4 >= 65=1, 4h RSI 75.8 >= 65=1, 4h RSI 81.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +45.05% | $4,452,037.44 |
-| TAKE/USDT:USDT | +27.63% | $1,336,808.72 |
-| CASHCAT/USDT:USDT | +27.09% | $1,110,964.01 |
-| MARSCOIN/USDT:USDT | +24.22% | $1,033,282.44 |
-| HFT/USDT:USDT | +15.88% | $1,434,384.42 |
+| HEI/USDT:USDT | +43.71% | $4,535,977.44 |
+| CASHCAT/USDT:USDT | +31.57% | $1,122,595.60 |
+| TAKE/USDT:USDT | +26.22% | $1,342,154.72 |
+| MARSCOIN/USDT:USDT | +23.20% | $1,036,997.43 |
+| HFT/USDT:USDT | +14.98% | $1,437,105.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.98% | +4.98% |
-| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.84% |
-| TAKE/USDT:USDT | below_1h_threshold | +4.41% | +4.42% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.42% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.91% | +2.92% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.74% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.32% |
+| TAKE/USDT:USDT | below_1h_threshold | +3.32% | +3.23% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.46% | +2.36% |
+| COTI/USDT:USDT | below_1h_threshold | +2.33% | +2.24% |
 
 ## 7. 次に見るべき不足
 
