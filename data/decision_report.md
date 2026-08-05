@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T03:06:12.299264+00:00
+- generated_at: 2026-08-05T03:11:38.787972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10343**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T03:06:06.313890+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64347.1
-- Funnel: target 939 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-05T03:11:31.418508+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64370.3
+- Funnel: target 939 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +85.46% | $7,293,463.92 |
-| TAKE/USDT:USDT | +34.79% | $1,490,268.79 |
-| CASHCAT/USDT:USDT | +34.18% | $1,153,208.42 |
-| MARSCOIN/USDT:USDT | +25.75% | $1,111,345.60 |
-| SKYAI/USDT:USDT | +25.00% | $51,367,674.04 |
+| HEI/USDT:USDT | +81.44% | $7,497,208.43 |
+| CASHCAT/USDT:USDT | +35.52% | $1,155,723.77 |
+| MARSCOIN/USDT:USDT | +33.55% | $1,117,161.75 |
+| TAKE/USDT:USDT | +32.37% | $1,508,515.00 |
+| SKYAI/USDT:USDT | +25.82% | $51,838,679.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAKE/USDT:USDT | below_1h_threshold | +1.87% | +1.86% |
-| TUT/USDT:USDT | below_1h_threshold | +1.22% | +1.21% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.10% | +1.09% |
-| UNI/USDT:USDT | below_1h_threshold | +0.85% | +0.84% |
-| SYN/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.13% | +4.09% |
+| UNI/USDT:USDT | below_1h_threshold | +1.41% | +1.36% |
+| LIT/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.40% | +0.35% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.36% | +0.32% |
 
 ## 7. 次に見るべき不足
 
