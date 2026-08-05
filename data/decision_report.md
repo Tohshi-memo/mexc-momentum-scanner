@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T18:01:35.255967+00:00
+- generated_at: 2026-08-05T18:06:25.819732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10439**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.74** / 初期 $100.00 (+17.74%)
-- 確定: 1142件 (Win 365 / Loss 444 / Flat 333) / pending 0件 / skip 774件
+- 確定: 1142件 (Win 365 / Loss 444 / Flat 333) / pending 0件 / skip 775件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000402 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TAKE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.74
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T18:01:21.768528+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64732.9
-- Funnel: target 948 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-05T18:06:18.114175+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64712.5
+- Funnel: target 948 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +34.65% | $82,618,491.64 |
-| HEI/USDT:USDT | +29.85% | $35,880,763.73 |
-| UB/USDT:USDT | +19.41% | $23,114,011.39 |
-| ESPORTS/USDT:USDT | +16.93% | $4,626,144.93 |
-| BICO/USDT:USDT | +8.14% | $13,328,824.32 |
+| HEI/USDT:USDT | +36.12% | $36,441,564.20 |
+| BLESS/USDT:USDT | +33.44% | $84,370,760.88 |
+| UB/USDT:USDT | +21.25% | $23,188,740.11 |
+| ESPORTS/USDT:USDT | +15.10% | $4,648,552.82 |
+| BICO/USDT:USDT | +9.78% | $13,361,023.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHOPSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.61% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.90% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| KORU/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
+| BICO/USDT:USDT | below_1h_threshold | +2.10% | +2.13% |
+| BTW/USDT:USDT | below_1h_threshold | +1.72% | +1.75% |
+| UB/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
+| SHOPSTOCK/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
 
 ## 7. 次に見るべき不足
 
