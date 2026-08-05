@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T07:26:38.903480+00:00
+- generated_at: 2026-08-05T07:31:25.207868+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10376**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T07:26:26.881150+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=64035.8
-- Funnel: target 939 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1
+- 更新: 2026-08-05T07:31:17.587697+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=64031.5
+- Funnel: target 939 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HFT/USDT:USDT | +67.23% | $1,877,594.70 |
-| BLESS/USDT:USDT | +61.39% | $27,286,451.14 |
-| HEI/USDT:USDT | +56.90% | $16,043,772.69 |
-| BICO/USDT:USDT | +37.13% | $17,151,533.11 |
-| SYN/USDT:USDT | +34.26% | $2,995,524.39 |
+| HFT/USDT:USDT | +67.93% | $1,898,630.70 |
+| BLESS/USDT:USDT | +60.36% | $27,568,824.19 |
+| HEI/USDT:USDT | +59.27% | $16,245,625.21 |
+| BICO/USDT:USDT | +36.91% | $17,171,121.80 |
+| SYN/USDT:USDT | +35.41% | $3,016,078.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.59% | +3.89% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.77% | +2.07% |
-| LDO/USDT:USDT | below_1h_threshold | +1.76% | +2.06% |
-| TAKE/USDT:USDT | below_1h_threshold | +1.68% | +1.98% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.19% | +1.49% |
+| UAI/USDT:USDT | below_1h_threshold | +4.28% | +4.58% |
+| HEI/USDT:USDT | below_1h_threshold | +2.65% | +2.96% |
+| LDO/USDT:USDT | below_1h_threshold | +1.83% | +2.14% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.22% | +1.53% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.18% | +1.49% |
 
 ## 7. 次に見るべき不足
 
