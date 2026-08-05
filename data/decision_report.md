@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T03:51:27.573741+00:00
+- generated_at: 2026-08-05T03:56:30.806646+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10347**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.71** / 初期 $100.00 (+18.71%)
-- 確定: 1103件 (Win 356 / Loss 425 / Flat 322) / pending 4件 / skip 716件
+- 確定: 1103件 (Win 356 / Loss 425 / Flat 322) / pending 6件 / skip 716件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000318 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HFT/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $118.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T03:51:15.852544+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=64134.6
-- Funnel: target 939 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
+- 更新: 2026-08-05T03:56:18.040364+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=64132.3
+- Funnel: target 939 → liquid 183 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 70.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +89.48% | $8,734,014.02 |
-| TAKE/USDT:USDT | +36.50% | $1,553,867.88 |
-| CASHCAT/USDT:USDT | +30.65% | $1,184,046.86 |
-| BLESS/USDT:USDT | +29.07% | $22,921,632.98 |
-| MARSCOIN/USDT:USDT | +26.84% | $1,147,382.09 |
+| HEI/USDT:USDT | +83.40% | $8,855,573.54 |
+| TAKE/USDT:USDT | +37.26% | $1,561,835.81 |
+| CASHCAT/USDT:USDT | +31.82% | $1,187,158.48 |
+| MARSCOIN/USDT:USDT | +29.86% | $1,149,307.87 |
+| BLESS/USDT:USDT | +29.69% | $23,034,393.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.61% | +4.93% |
-| SYN/USDT:USDT | below_1h_threshold | +4.36% | +4.68% |
-| TAKE/USDT:USDT | below_1h_threshold | +3.17% | +3.49% |
-| HFT/USDT:USDT | below_1h_threshold | +2.59% | +2.91% |
-| HEI/USDT:USDT | below_1h_threshold | +2.51% | +2.83% |
+| TAKE/USDT:USDT | below_1h_threshold | +3.64% | +3.96% |
+| SYN/USDT:USDT | below_1h_threshold | +3.47% | +3.79% |
+| CAP/USDT:USDT | below_1h_threshold | +1.60% | +1.93% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.32% | +1.65% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.61% |
 
 ## 7. 次に見るべき不足
 
