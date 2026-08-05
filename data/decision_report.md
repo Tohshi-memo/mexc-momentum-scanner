@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T20:51:35.725086+00:00
+- generated_at: 2026-08-05T20:56:52.267981+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10458**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.74** / 初期 $100.00 (+17.74%)
-- 確定: 1142件 (Win 365 / Loss 444 / Flat 333) / pending 0件 / skip 790件
+- 確定: 1142件 (Win 365 / Loss 444 / Flat 333) / pending 0件 / skip 792件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000490 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TAKE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.74
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T20:51:24.677065+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64877.2
-- Funnel: target 948 → liquid 187 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.6 >= 65=1, 4h RSI 88.2 >= 65=1, 4h RSI 82.1 >= 65=1
+- 更新: 2026-08-05T20:56:40.027355+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64833.5
+- Funnel: target 948 → liquid 187 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 77.1 >= 65=1, 4h RSI 82.5 >= 65=1, 4h RSI 88.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +43.73% | $1,903,570.28 |
-| HEI/USDT:USDT | +37.28% | $43,757,272.42 |
-| BLESS/USDT:USDT | +37.03% | $97,854,182.42 |
-| UB/USDT:USDT | +25.72% | $22,906,458.15 |
-| BICO/USDT:USDT | +23.60% | $13,567,556.63 |
+| BLESS/USDT:USDT | +45.07% | $98,602,912.08 |
+| DODO/USDT:USDT | +42.50% | $1,950,506.14 |
+| HEI/USDT:USDT | +40.24% | $43,840,666.38 |
+| UB/USDT:USDT | +26.71% | $22,937,431.42 |
+| BICO/USDT:USDT | +25.07% | $13,618,830.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.98% | +3.86% |
-| MYX/USDT:USDT | below_1h_threshold | +3.64% | +3.52% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.26% | +2.14% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.20% | +2.08% |
-| SYN/USDT:USDT | below_1h_threshold | +2.06% | +1.94% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.99% | +4.93% |
+| HEI/USDT:USDT | below_1h_threshold | +3.60% | +3.55% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.87% | +2.82% |
+| SYN/USDT:USDT | below_1h_threshold | +2.43% | +2.38% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.20% | +2.15% |
 
 ## 7. 次に見るべき不足
 
