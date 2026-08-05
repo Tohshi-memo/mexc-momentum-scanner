@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T02:41:39.131709+00:00
+- generated_at: 2026-08-05T02:46:28.470927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10343**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T02:41:27.440678+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64400.4
-- Funnel: target 938 → liquid 182 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.3 >= 65=1, 4h RSI 79.3 >= 65=1, 4h RSI 66.7 >= 65=1, 4h RSI 79.5 >= 65=1
+- 更新: 2026-08-05T02:46:17.449993+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64398.8
+- Funnel: target 938 → liquid 182 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.3 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI 65.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +84.12% | $6,701,730.82 |
-| TAKE/USDT:USDT | +38.95% | $1,461,449.73 |
-| CASHCAT/USDT:USDT | +34.08% | $1,188,639.80 |
-| SKYAI/USDT:USDT | +28.12% | $51,581,529.60 |
-| MARSCOIN/USDT:USDT | +27.01% | $1,107,629.91 |
+| HEI/USDT:USDT | +84.12% | $6,795,770.24 |
+| TAKE/USDT:USDT | +38.35% | $1,470,193.99 |
+| CASHCAT/USDT:USDT | +34.46% | $1,190,395.29 |
+| SKYAI/USDT:USDT | +28.91% | $51,828,458.60 |
+| MARSCOIN/USDT:USDT | +23.74% | $1,109,946.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.46% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.23% | +3.08% |
-| ON/USDT:USDT | below_1h_threshold | +2.62% | +2.48% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.49% | +2.35% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.24% | +2.09% |
+| BICO/USDT:USDT | below_1h_threshold | +4.53% | +4.39% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.47% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.92% | +2.77% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.78% | +2.64% |
+| SYN/USDT:USDT | below_1h_threshold | +2.72% | +2.58% |
 
 ## 7. 次に見るべき不足
 
