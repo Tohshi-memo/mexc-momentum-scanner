@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T20:11:30.005900+00:00
+- generated_at: 2026-08-05T20:16:27.752684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10456**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.74** / 初期 $100.00 (+17.74%)
-- 確定: 1142件 (Win 365 / Loss 444 / Flat 333) / pending 0件 / skip 786件
+- 確定: 1142件 (Win 365 / Loss 444 / Flat 333) / pending 0件 / skip 787件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000450 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TAKE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.74
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T20:11:20.255483+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64849.9
-- Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-05T20:16:17.357598+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=64881.5
+- Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +39.54% | $1,463,327.46 |
-| BLESS/USDT:USDT | +39.38% | $96,168,793.28 |
-| HEI/USDT:USDT | +31.61% | $42,576,078.25 |
-| UB/USDT:USDT | +21.58% | $22,435,655.85 |
-| BICO/USDT:USDT | +18.70% | $13,111,710.77 |
+| DODO/USDT:USDT | +44.76% | $1,549,081.09 |
+| BLESS/USDT:USDT | +39.15% | $96,323,900.66 |
+| HEI/USDT:USDT | +31.71% | $42,753,670.76 |
+| UB/USDT:USDT | +21.40% | $22,493,519.61 |
+| BICO/USDT:USDT | +17.84% | $13,129,959.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +3.14% | +3.06% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +3.07% | +3.00% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.20% | +2.12% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.85% | +1.77% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.63% | +1.56% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.80% | +2.68% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.61% | +2.48% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.20% | +2.08% |
+| AAPU/USDT:USDT | below_1h_threshold | +1.44% | +1.31% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.43% | +1.30% |
 
 ## 7. 次に見るべき不足
 
