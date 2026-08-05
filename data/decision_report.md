@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T16:41:31.301262+00:00
+- generated_at: 2026-08-05T16:46:31.288015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10423**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T16:41:19.418085+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=64684.8
+- 更新: 2026-08-05T16:46:19.546256+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=64646.9
 - Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +9.50% | $3,777,226.83 |
-| BLESS/USDT:USDT | +9.08% | $74,091,239.78 |
-| BICO/USDT:USDT | +5.06% | $16,535,832.50 |
-| ON/USDT:USDT | +4.87% | $5,477,876.29 |
-| SOXL/USDT:USDT | +3.15% | $91,258,745.57 |
+| ESPORTS/USDT:USDT | +9.68% | $3,832,030.01 |
+| BLESS/USDT:USDT | +9.61% | $74,644,695.70 |
+| BICO/USDT:USDT | +5.15% | $16,561,034.06 |
+| ON/USDT:USDT | +4.84% | $5,515,651.59 |
+| CYS/USDT:USDT | +2.97% | $32,665,059.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_relative_strength | +5.08% | +4.57% |
-| BICO/USDT:USDT | below_relative_strength | +5.02% | +4.51% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.98% | +2.46% |
-| CYS/USDT:USDT | below_1h_threshold | +2.47% | +1.96% |
-| UB/USDT:USDT | below_1h_threshold | +2.29% | +1.78% |
+| BICO/USDT:USDT | below_relative_strength | +5.15% | +4.70% |
+| ON/USDT:USDT | below_1h_threshold | +4.87% | +4.41% |
+| CYS/USDT:USDT | below_1h_threshold | +2.84% | +2.39% |
+| UNI/USDT:USDT | below_1h_threshold | +2.37% | +1.91% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.35% | +1.89% |
 
 ## 7. 次に見るべき不足
 
