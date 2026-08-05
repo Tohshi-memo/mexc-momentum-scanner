@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T17:01:23.406939+00:00
+- generated_at: 2026-08-05T17:06:29.738740+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10426**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T17:01:17.327365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64633.5
+- 更新: 2026-08-05T17:06:22.229645+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64613.9
 - Funnel: target 948 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +16.26% | $3,955,629.68 |
-| BLESS/USDT:USDT | +11.08% | $75,744,869.63 |
-| BICO/USDT:USDT | +6.88% | $14,217,501.40 |
-| UB/USDT:USDT | +5.17% | $23,409,452.07 |
-| ON/USDT:USDT | +3.76% | $5,723,651.13 |
+| ESPORTS/USDT:USDT | +14.61% | $4,004,632.43 |
+| BLESS/USDT:USDT | +12.57% | $76,171,134.61 |
+| BICO/USDT:USDT | +6.53% | $14,257,250.82 |
+| UB/USDT:USDT | +5.60% | $23,466,527.70 |
+| VELVET/USDT:USDT | +3.27% | $4,421,505.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.98% | +2.97% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.60% | +2.59% |
-| MUU/USDT:USDT | below_1h_threshold | +2.14% | +2.14% |
-| KORU/USDT:USDT | below_1h_threshold | +2.06% | +2.06% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.62% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.98% | +3.01% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.60% | +2.63% |
+| MUU/USDT:USDT | below_1h_threshold | +2.14% | +2.17% |
+| KORU/USDT:USDT | below_1h_threshold | +2.06% | +2.09% |
+| UB/USDT:USDT | below_1h_threshold | +1.73% | +1.75% |
 
 ## 7. 次に見るべき不足
 
