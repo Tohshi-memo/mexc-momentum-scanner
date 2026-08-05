@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T13:51:21.658880+00:00
+- generated_at: 2026-08-05T13:56:31.465218+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10411**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.15** / 初期 $100.00 (+18.15%)
-- 確定: 1140件 (Win 365 / Loss 442 / Flat 333) / pending 2件 / skip 740件
+- 確定: 1140件 (Win 365 / Loss 442 / Flat 333) / pending 2件 / skip 741件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T13:51:13.634513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=64173.1
-- Funnel: target 948 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1
+- 更新: 2026-08-05T13:56:23.223538+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64272.2
+- Funnel: target 948 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.5 >= 65=1, 4h RSI 78.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +95.25% | $27,197,059.34 |
-| BLESS/USDT:USDT | +86.31% | $61,232,122.98 |
-| HFT/USDT:USDT | +81.81% | $4,214,886.93 |
-| CASHCAT/USDT:USDT | +43.14% | $1,024,234.86 |
-| CYS/USDT:USDT | +32.60% | $35,075,820.38 |
+| HEI/USDT:USDT | +107.83% | $27,472,444.17 |
+| BLESS/USDT:USDT | +87.09% | $61,429,483.52 |
+| HFT/USDT:USDT | +85.11% | $4,229,810.82 |
+| CASHCAT/USDT:USDT | +44.70% | $1,027,807.17 |
+| CYS/USDT:USDT | +30.84% | $35,245,422.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAKE/USDT:USDT | below_1h_threshold | +4.62% | +4.82% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.20% | +4.40% |
-| UAI/USDT:USDT | below_1h_threshold | +2.27% | +2.46% |
-| ON/USDT:USDT | below_1h_threshold | +2.22% | +2.41% |
-| SYN/USDT:USDT | below_1h_threshold | +1.84% | +2.04% |
+| TAKE/USDT:USDT | below_1h_threshold | +4.93% | +4.97% |
+| SYN/USDT:USDT | below_1h_threshold | +3.25% | +3.29% |
+| UAI/USDT:USDT | below_1h_threshold | +1.89% | +1.93% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.77% | +1.81% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.74% | +1.78% |
 
 ## 7. 次に見るべき不足
 
