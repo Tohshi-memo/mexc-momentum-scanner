@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T14:46:42.673609+00:00
+- generated_at: 2026-08-05T14:51:36.133709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10412**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T14:46:29.992650+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64386.1
-- Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 4 → strict 2
+- 更新: 2026-08-05T14:51:23.249702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64407.1
+- Funnel: target 948 → liquid 186 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.3 >= 65=1, 4h RSI 72.9 >= 65=1
+- Strict後reject: 4h RSI 68.0 >= 65=1, 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +85.97% | $29,163,357.69 |
-| BLESS/USDT:USDT | +82.94% | $63,529,869.78 |
-| HFT/USDT:USDT | +66.13% | $4,540,092.38 |
-| CASHCAT/USDT:USDT | +38.76% | $1,016,925.65 |
-| TAKE/USDT:USDT | +29.27% | $1,915,522.87 |
+| HEI/USDT:USDT | +87.42% | $29,253,528.45 |
+| BLESS/USDT:USDT | +84.29% | $63,768,697.48 |
+| HFT/USDT:USDT | +65.33% | $4,561,489.46 |
+| CASHCAT/USDT:USDT | +38.93% | $1,017,425.33 |
+| ON/USDT:USDT | +30.24% | $3,974,461.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.71% |
-| EVAA/USDT:USDT | below_1h_threshold | +4.59% | +4.59% |
-| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.54% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.66% | +3.66% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +2.79% | +2.79% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.68% |
+| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.51% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.77% | +3.74% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +2.79% | +2.76% |
+| AALSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.33% |
 
 ## 7. 次に見るべき不足
 
