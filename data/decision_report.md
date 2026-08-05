@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T10:56:28.017070+00:00
+- generated_at: 2026-08-05T11:01:21.113143+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10397**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.95** / 初期 $100.00 (+17.95%)
-- 確定: 1137件 (Win 364 / Loss 441 / Flat 332) / pending 5件 / skip 729件
+- 確定: 1137件 (Win 364 / Loss 441 / Flat 332) / pending 5件 / skip 730件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000103 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EVAA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.95
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T10:56:17.686759+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=64023.3
-- Funnel: target 945 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.4 >= 65=1, 4h RSI 80.4 >= 65=1, 4h RSI 65.3 >= 65=1
+- 更新: 2026-08-05T11:01:11.592985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64042.2
+- Funnel: target 945 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +87.42% | $40,383,043.98 |
-| HEI/USDT:USDT | +84.53% | $21,385,048.48 |
-| HFT/USDT:USDT | +69.93% | $3,455,526.95 |
-| CASHCAT/USDT:USDT | +47.08% | $1,004,747.57 |
-| BICO/USDT:USDT | +28.94% | $16,980,451.86 |
+| HEI/USDT:USDT | +88.35% | $21,517,007.70 |
+| BLESS/USDT:USDT | +86.97% | $39,962,964.16 |
+| HFT/USDT:USDT | +70.72% | $3,436,088.40 |
+| GRVT/USDT:USDT | +29.05% | $7,008,473.00 |
+| BICO/USDT:USDT | +28.61% | $16,514,153.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.07% | +4.23% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.29% | +3.46% |
-| HFT/USDT:USDT | below_1h_threshold | +3.28% | +3.44% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.10% | +3.26% |
-| CYS/USDT:USDT | below_1h_threshold | +3.07% | +3.23% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.11% | +4.09% |
+| LLYSTOCK/USDT:USDT | below_1h_threshold | +3.52% | +3.51% |
+| SHOPSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.49% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.98% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
 
 ## 7. 次に見るべき不足
 
