@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T14:36:30.814794+00:00
+- generated_at: 2026-08-05T14:41:29.817787+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10412**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.15** / 初期 $100.00 (+18.15%)
-- 確定: 1140件 (Win 365 / Loss 442 / Flat 333) / pending 2件 / skip 746件
+- 確定: 1140件 (Win 365 / Loss 442 / Flat 333) / pending 2件 / skip 747件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000151 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T14:36:20.253330+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64372.2
+- 更新: 2026-08-05T14:41:18.717504+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=64297.8
 - Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1, 4h RSI 67.0 >= 65=1
+- Strict後reject: 4h RSI 67.9 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +83.50% | $28,920,999.94 |
-| BLESS/USDT:USDT | +82.71% | $62,755,973.43 |
-| HFT/USDT:USDT | +59.54% | $4,475,957.92 |
-| CASHCAT/USDT:USDT | +38.91% | $1,014,728.87 |
-| CYS/USDT:USDT | +30.13% | $34,038,168.84 |
+| HEI/USDT:USDT | +85.67% | $29,032,764.54 |
+| BLESS/USDT:USDT | +85.37% | $63,187,983.99 |
+| HFT/USDT:USDT | +65.73% | $4,517,771.70 |
+| CASHCAT/USDT:USDT | +38.61% | $1,016,186.17 |
+| BICO/USDT:USDT | +28.56% | $16,645,772.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.74% |
-| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.56% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.44% | +4.46% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.26% | +4.28% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.74% | +3.76% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.85% |
+| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.68% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +4.42% | +4.55% |
+| EVAA/USDT:USDT | below_1h_threshold | +3.10% | +3.24% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +2.79% | +2.93% |
 
 ## 7. 次に見るべき不足
 
