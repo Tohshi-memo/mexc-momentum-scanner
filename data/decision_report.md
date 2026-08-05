@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T07:46:23.496043+00:00
+- generated_at: 2026-08-05T07:51:29.302806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10378**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T07:46:12.897490+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=63989.3
-- Funnel: target 939 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1
+- 更新: 2026-08-05T07:51:18.630119+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=64031.7
+- Funnel: target 939 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 71.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HFT/USDT:USDT | +67.33% | $2,037,615.27 |
-| BLESS/USDT:USDT | +63.19% | $28,414,480.28 |
-| HEI/USDT:USDT | +48.45% | $16,605,900.39 |
-| BICO/USDT:USDT | +35.99% | $17,312,141.14 |
-| CASHCAT/USDT:USDT | +32.20% | $1,137,451.45 |
+| HFT/USDT:USDT | +71.52% | $2,070,877.14 |
+| BLESS/USDT:USDT | +65.17% | $28,817,158.38 |
+| HEI/USDT:USDT | +46.49% | $16,694,108.95 |
+| BICO/USDT:USDT | +34.18% | $17,340,379.90 |
+| CASHCAT/USDT:USDT | +32.64% | $1,141,638.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.32% | +4.69% |
-| CYS/USDT:USDT | below_1h_threshold | +4.06% | +4.43% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.16% | +3.53% |
-| LDO/USDT:USDT | below_1h_threshold | +2.42% | +2.79% |
-| BTW/USDT:USDT | below_1h_threshold | +1.87% | +2.24% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.36% | +4.67% |
+| AKE/USDT:USDT | below_1h_threshold | +4.13% | +4.43% |
+| HFT/USDT:USDT | below_1h_threshold | +3.00% | +3.31% |
+| LDO/USDT:USDT | below_1h_threshold | +2.60% | +2.90% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.15% | +2.45% |
 
 ## 7. 次に見るべき不足
 
