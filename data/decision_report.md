@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T08:16:18.490179+00:00
+- generated_at: 2026-08-05T08:21:20.402191+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10380**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.69** / 初期 $100.00 (+18.69%)
-- 確定: 1127件 (Win 362 / Loss 435 / Flat 330) / pending 4件 / skip 721件
+- 確定: 1127件 (Win 362 / Loss 435 / Flat 330) / pending 5件 / skip 721件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000424 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HFT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T08:16:11.389230+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64152.8
-- Funnel: target 939 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-05T08:21:12.748066+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64162.0
+- Funnel: target 939 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +65.92% | $29,309,942.32 |
-| HFT/USDT:USDT | +62.43% | $2,203,554.90 |
-| HEI/USDT:USDT | +40.72% | $17,210,725.64 |
-| CASHCAT/USDT:USDT | +37.46% | $1,072,176.24 |
-| BICO/USDT:USDT | +35.93% | $16,998,013.59 |
+| BLESS/USDT:USDT | +67.09% | $29,694,444.87 |
+| HFT/USDT:USDT | +66.33% | $2,226,997.41 |
+| HEI/USDT:USDT | +45.36% | $17,336,776.11 |
+| BICO/USDT:USDT | +38.77% | $17,080,439.91 |
+| CASHCAT/USDT:USDT | +38.00% | $1,076,073.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.77% | +3.75% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.62% | +3.61% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.52% | +2.50% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.20% | +1.19% |
-| CYS/USDT:USDT | below_1h_threshold | +0.99% | +0.97% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.41% | +3.37% |
+| GRVT/USDT:USDT | below_1h_threshold | +2.56% | +2.53% |
+| BICO/USDT:USDT | below_1h_threshold | +2.50% | +2.47% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
 
 ## 7. 次に見るべき不足
 
