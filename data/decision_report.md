@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T08:01:21.824056+00:00
+- generated_at: 2026-08-05T08:06:14.322287+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10379**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T08:01:12.968907+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64163.9
+- 更新: 2026-08-05T08:06:06.909085+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64148.5
 - Funnel: target 939 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HFT/USDT:USDT | +72.32% | $2,101,565.32 |
-| BLESS/USDT:USDT | +67.00% | $28,417,629.62 |
-| HEI/USDT:USDT | +45.25% | $16,945,109.10 |
-| BICO/USDT:USDT | +35.22% | $16,870,210.40 |
-| CASHCAT/USDT:USDT | +32.92% | $1,065,411.03 |
+| HFT/USDT:USDT | +64.53% | $2,138,661.53 |
+| BLESS/USDT:USDT | +64.39% | $28,710,106.32 |
+| HEI/USDT:USDT | +43.60% | $17,006,748.23 |
+| CASHCAT/USDT:USDT | +34.50% | $1,066,695.60 |
+| MARSCOIN/USDT:USDT | +34.16% | $1,204,042.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.59% | +1.56% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.93% | +0.89% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.85% | +0.82% |
-| HFT/USDT:USDT | below_1h_threshold | +0.76% | +0.72% |
-| AAPU/USDT:USDT | below_1h_threshold | +0.48% | +0.44% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.81% | +2.80% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
+| AKE/USDT:USDT | below_1h_threshold | +0.83% | +0.82% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
+| CYS/USDT:USDT | below_1h_threshold | +0.49% | +0.48% |
 
 ## 7. 次に見るべき不足
 
