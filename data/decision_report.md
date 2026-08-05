@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T17:36:47.660935+00:00
+- generated_at: 2026-08-05T17:41:33.851020+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10432**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T17:36:32.856415+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64584.3
-- Funnel: target 948 → liquid 182 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 83.4 >= 65=1
+- 更新: 2026-08-05T17:41:23.088895+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64689.1
+- Funnel: target 948 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 83.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +22.41% | $4,431,435.51 |
-| HEI/USDT:USDT | +19.36% | $34,782,607.58 |
-| BLESS/USDT:USDT | +14.76% | $78,723,321.62 |
-| UB/USDT:USDT | +13.57% | $23,961,188.97 |
-| BICO/USDT:USDT | +7.27% | $14,435,803.67 |
+| HEI/USDT:USDT | +19.41% | $34,928,527.67 |
+| ESPORTS/USDT:USDT | +17.60% | $4,510,199.19 |
+| BLESS/USDT:USDT | +15.96% | $79,188,666.43 |
+| UB/USDT:USDT | +14.99% | $24,085,442.91 |
+| BICO/USDT:USDT | +7.36% | $14,443,886.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.98% | +3.06% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.98% | +3.05% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.60% | +2.67% |
-| MUU/USDT:USDT | below_1h_threshold | +2.14% | +2.21% |
-| KORU/USDT:USDT | below_1h_threshold | +2.06% | +2.13% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.71% | +3.62% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.98% | +2.89% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.60% | +2.51% |
+| GRVT/USDT:USDT | below_1h_threshold | +2.58% | +2.50% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.39% | +2.30% |
 
 ## 7. 次に見るべき不足
 
