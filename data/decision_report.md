@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T14:41:29.817787+00:00
+- generated_at: 2026-08-05T14:46:42.673609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10412**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T14:41:18.717504+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64297.8
-- Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.9 >= 65=1, 4h RSI 73.0 >= 65=1
+- 更新: 2026-08-05T14:46:29.992650+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64386.1
+- Funnel: target 948 → liquid 184 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1, 4h RSI 72.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +85.67% | $29,032,764.54 |
-| BLESS/USDT:USDT | +85.37% | $63,187,983.99 |
-| HFT/USDT:USDT | +65.73% | $4,517,771.70 |
-| CASHCAT/USDT:USDT | +38.61% | $1,016,186.17 |
-| BICO/USDT:USDT | +28.56% | $16,645,772.95 |
+| HEI/USDT:USDT | +85.97% | $29,163,357.69 |
+| BLESS/USDT:USDT | +82.94% | $63,529,869.78 |
+| HFT/USDT:USDT | +66.13% | $4,540,092.38 |
+| CASHCAT/USDT:USDT | +38.76% | $1,016,925.65 |
+| TAKE/USDT:USDT | +29.27% | $1,915,522.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.85% |
-| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.68% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.42% | +4.55% |
-| EVAA/USDT:USDT | below_1h_threshold | +3.10% | +3.24% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +2.79% | +2.93% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.71% | +4.71% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.59% | +4.59% |
+| AMGNSTOCK/USDT:USDT | below_1h_threshold | +4.54% | +4.54% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.66% | +3.66% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +2.79% | +2.79% |
 
 ## 7. 次に見るべき不足
 
