@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T01:06:21.094802+00:00
+- generated_at: 2026-08-05T01:11:30.703333+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10330**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.88** / 初期 $100.00 (+16.88%)
-- 確定: 1086件 (Win 349 / Loss 423 / Flat 314) / pending 2件 / skip 714件
+- 確定: 1086件 (Win 349 / Loss 423 / Flat 314) / pending 4件 / skip 714件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000220 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $116.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T01:06:14.945347+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63967.4
-- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
+- 更新: 2026-08-05T01:11:22.049309+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63998.0
+- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.1 >= 65=1, 4h RSI 90.5 >= 65=1, 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +34.02% | $4,190,774.06 |
-| CASHCAT/USDT:USDT | +25.12% | $1,108,929.95 |
-| TAKE/USDT:USDT | +23.55% | $1,301,181.69 |
-| MARSCOIN/USDT:USDT | +21.56% | $1,024,435.18 |
-| BICO/USDT:USDT | +15.18% | $14,788,040.38 |
+| HEI/USDT:USDT | +43.71% | $4,364,442.32 |
+| TAKE/USDT:USDT | +29.37% | $1,329,072.99 |
+| CASHCAT/USDT:USDT | +26.87% | $1,109,653.54 |
+| MARSCOIN/USDT:USDT | +24.39% | $1,028,365.02 |
+| HFT/USDT:USDT | +17.18% | $1,428,843.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.83% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.42% |
-| LASERTECSTOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
-| TAKE/USDT:USDT | below_1h_threshold | +1.14% | +1.14% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.79% |
+| HFT/USDT:USDT | below_1h_threshold | +3.99% | +3.95% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.37% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.74% | +2.70% |
+| COTI/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
 
 ## 7. 次に見るべき不足
 
