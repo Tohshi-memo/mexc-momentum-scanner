@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T02:31:34.338137+00:00
+- generated_at: 2026-08-05T02:36:35.629356+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10343**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.90** / 初期 $100.00 (+17.90%)
-- 確定: 1099件 (Win 353 / Loss 424 / Flat 322) / pending 4件 / skip 716件
+- 確定: 1099件 (Win 353 / Loss 424 / Flat 322) / pending 5件 / skip 716件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000302 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $117.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T02:31:21.695452+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64392.5
-- Funnel: target 937 → liquid 182 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.9 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 79.5 >= 65=1
+- 更新: 2026-08-05T02:36:23.834213+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=64442.6
+- Funnel: target 937 → liquid 182 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.3 >= 65=1, 4h RSI 77.9 >= 65=1, 4h RSI 66.3 >= 65=1, 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +74.32% | $6,302,655.84 |
-| CASHCAT/USDT:USDT | +39.69% | $1,176,832.58 |
-| TAKE/USDT:USDT | +36.26% | $1,434,873.09 |
-| MARSCOIN/USDT:USDT | +31.60% | $1,102,688.24 |
-| SKYAI/USDT:USDT | +26.47% | $50,963,455.57 |
+| HEI/USDT:USDT | +83.60% | $6,546,193.64 |
+| CASHCAT/USDT:USDT | +39.11% | $1,178,882.56 |
+| TAKE/USDT:USDT | +37.02% | $1,445,733.13 |
+| MARSCOIN/USDT:USDT | +32.02% | $1,104,020.95 |
+| SKYAI/USDT:USDT | +28.14% | $51,337,714.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAKE/USDT:USDT | below_relative_strength | +5.12% | +4.99% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +4.23% | +4.09% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.48% |
-| HEI/USDT:USDT | below_1h_threshold | +2.80% | +2.67% |
-| SYN/USDT:USDT | below_1h_threshold | +2.30% | +2.17% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +4.10% | +3.88% |
+| BICO/USDT:USDT | below_1h_threshold | +3.90% | +3.69% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.61% | +3.40% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.51% | +2.30% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.29% | +2.08% |
 
 ## 7. 次に見るべき不足
 
