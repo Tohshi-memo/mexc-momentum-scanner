@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T07:11:20.437381+00:00
+- generated_at: 2026-08-05T07:16:20.641922+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10375**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T07:11:12.141750+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=64158.0
+- 更新: 2026-08-05T07:16:13.095900+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=64143.1
 - Funnel: target 939 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1
+- Strict後reject: 4h RSI 79.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HFT/USDT:USDT | +62.73% | $1,768,234.44 |
-| BLESS/USDT:USDT | +55.88% | $26,431,514.57 |
-| HEI/USDT:USDT | +51.95% | $15,278,643.82 |
-| BICO/USDT:USDT | +44.45% | $16,653,695.99 |
-| CASHCAT/USDT:USDT | +33.89% | $1,126,911.26 |
+| HFT/USDT:USDT | +64.83% | $1,802,048.54 |
+| BLESS/USDT:USDT | +58.05% | $26,586,208.26 |
+| HEI/USDT:USDT | +49.69% | $15,485,754.34 |
+| BICO/USDT:USDT | +37.41% | $16,901,247.71 |
+| SYN/USDT:USDT | +35.09% | $2,962,348.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.90% | +5.00% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.64% | +2.75% |
-| CAP/USDT:USDT | below_1h_threshold | +1.93% | +2.04% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.56% | +0.66% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.56% | +0.66% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.96% | +3.09% |
+| UAI/USDT:USDT | below_1h_threshold | +2.27% | +2.40% |
+| CAP/USDT:USDT | below_1h_threshold | +1.67% | +1.80% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.19% | +1.32% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.03% | +1.16% |
 
 ## 7. 次に見るべき不足
 
