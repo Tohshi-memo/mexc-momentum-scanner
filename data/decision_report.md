@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T00:11:28.624176+00:00
+- generated_at: 2026-08-05T00:16:17.464921+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10327**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T00:11:19.754046+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=64012.3
+- 更新: 2026-08-05T00:16:10.019051+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64007.0
 - Funnel: target 937 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +33.50% | $3,971,166.22 |
-| TAKE/USDT:USDT | +23.42% | $1,268,725.61 |
-| CASHCAT/USDT:USDT | +20.10% | $1,054,576.47 |
-| HFT/USDT:USDT | +15.28% | $1,394,920.69 |
-| MARSCOIN/USDT:USDT | +12.84% | $1,010,473.58 |
+| HEI/USDT:USDT | +33.60% | $3,993,152.94 |
+| TAKE/USDT:USDT | +24.04% | $1,273,975.08 |
+| CASHCAT/USDT:USDT | +18.70% | $1,056,683.63 |
+| HFT/USDT:USDT | +18.38% | $1,402,001.91 |
+| MARSCOIN/USDT:USDT | +16.11% | $1,013,479.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.45% | +3.55% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.71% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.12% | +2.22% |
-| NIL/USDT:USDT | below_1h_threshold | +1.70% | +1.80% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.34% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.45% | +3.56% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.72% |
+| CAP/USDT:USDT | below_1h_threshold | +2.13% | +2.23% |
+| NIL/USDT:USDT | below_1h_threshold | +1.93% | +2.04% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.68% |
 
 ## 7. 次に見るべき不足
 
