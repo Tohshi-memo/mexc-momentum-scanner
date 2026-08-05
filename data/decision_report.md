@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T16:56:39.513920+00:00
+- generated_at: 2026-08-05T17:01:23.406939+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10426**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T16:56:23.038123+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=64604.6
-- Funnel: target 948 → liquid 185 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-05T17:01:17.327365+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64633.5
+- Funnel: target 948 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ESPORTS/USDT:USDT | +13.76% | $3,963,199.73 |
-| BLESS/USDT:USDT | +13.46% | $75,822,140.11 |
-| BICO/USDT:USDT | +6.27% | $16,651,599.77 |
-| UB/USDT:USDT | +3.13% | $25,814,104.24 |
-| SOXL/USDT:USDT | +3.06% | $91,974,511.04 |
+| ESPORTS/USDT:USDT | +16.26% | $3,955,629.68 |
+| BLESS/USDT:USDT | +11.08% | $75,744,869.63 |
+| BICO/USDT:USDT | +6.88% | $14,217,501.40 |
+| UB/USDT:USDT | +5.17% | $23,409,452.07 |
+| ON/USDT:USDT | +3.76% | $5,723,651.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.13% | +2.75% |
-| UNI/USDT:USDT | below_1h_threshold | +2.44% | +2.05% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.23% | +1.84% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.15% | +1.76% |
-| LIT/USDT:USDT | below_1h_threshold | +2.13% | +1.74% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.98% | +2.97% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.60% | +2.59% |
+| MUU/USDT:USDT | below_1h_threshold | +2.14% | +2.14% |
+| KORU/USDT:USDT | below_1h_threshold | +2.06% | +2.06% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.62% |
 
 ## 7. 次に見るべき不足
 
