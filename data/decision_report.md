@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T01:11:30.703333+00:00
+- generated_at: 2026-08-05T01:16:26.177688+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10330**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T01:11:22.049309+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63998.0
-- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1, 4h RSI 90.5 >= 65=1, 4h RSI 76.5 >= 65=1
+- 更新: 2026-08-05T01:16:18.054836+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63965.2
+- Funnel: target 937 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.6 >= 65=1, 4h RSI 70.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +43.71% | $4,364,442.32 |
-| TAKE/USDT:USDT | +29.37% | $1,329,072.99 |
-| CASHCAT/USDT:USDT | +26.87% | $1,109,653.54 |
-| MARSCOIN/USDT:USDT | +24.39% | $1,028,365.02 |
-| HFT/USDT:USDT | +17.18% | $1,428,843.57 |
+| HEI/USDT:USDT | +45.05% | $4,452,037.44 |
+| TAKE/USDT:USDT | +27.63% | $1,336,808.72 |
+| CASHCAT/USDT:USDT | +27.09% | $1,110,964.01 |
+| MARSCOIN/USDT:USDT | +24.22% | $1,033,282.44 |
+| HFT/USDT:USDT | +15.88% | $1,434,384.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.79% |
-| HFT/USDT:USDT | below_1h_threshold | +3.99% | +3.95% |
-| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.37% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.74% | +2.70% |
-| COTI/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.98% | +4.98% |
+| ADVANTESTSTOCK/USDT:USDT | below_1h_threshold | +4.83% | +4.84% |
+| TAKE/USDT:USDT | below_1h_threshold | +4.41% | +4.42% |
+| ALABSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.42% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.91% | +2.92% |
 
 ## 7. 次に見るべき不足
 
