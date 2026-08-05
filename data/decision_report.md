@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-05T11:51:35.942045+00:00
+- generated_at: 2026-08-05T11:56:29.124436+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10402**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-05T11:51:22.889004+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64065.9
-- Funnel: target 945 → liquid 182 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 86.0 >= 65=1, 4h RSI 69.1 >= 65=1
+- 更新: 2026-08-05T11:56:18.375670+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64036.1
+- Funnel: target 945 → liquid 183 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.4 >= 65=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +97.75% | $47,407,464.85 |
-| HEI/USDT:USDT | +85.15% | $22,572,663.07 |
-| HFT/USDT:USDT | +81.11% | $3,608,731.08 |
-| CASHCAT/USDT:USDT | +43.26% | $1,036,435.02 |
-| MARSCOIN/USDT:USDT | +30.83% | $1,242,898.66 |
+| BLESS/USDT:USDT | +94.40% | $48,335,144.74 |
+| HEI/USDT:USDT | +87.11% | $22,675,246.01 |
+| HFT/USDT:USDT | +82.61% | $3,615,755.95 |
+| CASHCAT/USDT:USDT | +45.13% | $1,037,866.29 |
+| SHOPSTOCK/USDT:USDT | +30.36% | $7,000,422.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LLYSTOCK/USDT:USDT | below_1h_threshold | +3.52% | +3.47% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.17% | +3.12% |
-| SHOPSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.45% |
-| CAP/USDT:USDT | below_1h_threshold | +2.42% | +2.37% |
-| ON/USDT:USDT | below_1h_threshold | +1.65% | +1.60% |
+| LLYSTOCK/USDT:USDT | below_1h_threshold | +3.52% | +3.51% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.38% | +3.37% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.26% | +3.26% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.25% | +3.25% |
+| CAP/USDT:USDT | below_1h_threshold | +3.20% | +3.19% |
 
 ## 7. 次に見るべき不足
 
