@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T23:01:35.990156+00:00
+- generated_at: 2026-08-06T23:06:28.117567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10639**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T23:01:26.988414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64305.9
+- 更新: 2026-08-06T23:06:20.457215+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64333.0
 - Funnel: target 958 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +27.17% | $2,438,502.31 |
-| SKYAI/USDT:USDT | +23.40% | $46,455,915.65 |
-| ON/USDT:USDT | +19.69% | $7,072,918.63 |
-| TWLOSTOCK/USDT:USDT | +17.28% | $1,343,784.71 |
-| NETSTOCK/USDT:USDT | +15.07% | $1,196,878.31 |
+| SKYAI/USDT:USDT | +24.13% | $46,721,758.13 |
+| STG/USDT:USDT | +23.66% | $2,559,925.10 |
+| ON/USDT:USDT | +20.67% | $7,415,209.16 |
+| TWLOSTOCK/USDT:USDT | +18.44% | $1,348,318.63 |
+| NETSTOCK/USDT:USDT | +15.19% | $1,208,643.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.01% | +2.03% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.53% |
-| KORU/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
-| AKAMSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.31% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.48% |
+| KORU/USDT:USDT | below_1h_threshold | +1.45% | +1.43% |
+| AKAMSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.27% |
+| UB/USDT:USDT | below_1h_threshold | +1.20% | +1.18% |
+| UAI/USDT:USDT | below_1h_threshold | +1.13% | +1.10% |
 
 ## 7. 次に見るべき不足
 
