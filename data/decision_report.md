@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T02:31:25.775237+00:00
+- generated_at: 2026-08-06T02:36:29.376994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10489**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T02:31:18.404514+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64483.3
-- Funnel: target 948 → liquid 185 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1, 4h RSI 91.0 >= 65=1, 4h RSI 79.7 >= 65=1
+- 更新: 2026-08-06T02:36:21.049209+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64519.9
+- Funnel: target 948 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.1 >= 65=1, 4h RSI 70.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +60.23% | $6,485,642.02 |
-| BLESS/USDT:USDT | +38.43% | $110,322,630.05 |
-| HEI/USDT:USDT | +34.67% | $44,203,764.53 |
-| ESPORTS/USDT:USDT | +31.85% | $6,922,987.34 |
-| ZBT/USDT:USDT | +26.22% | $1,696,243.81 |
+| DODO/USDT:USDT | +59.21% | $6,548,721.04 |
+| BLESS/USDT:USDT | +38.63% | $110,856,594.22 |
+| HEI/USDT:USDT | +32.51% | $44,264,029.89 |
+| ESPORTS/USDT:USDT | +31.54% | $6,936,727.72 |
+| CASHCAT/USDT:USDT | +25.86% | $1,262,371.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.65% | +3.77% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.29% | +3.41% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.53% | +1.64% |
-| CYS/USDT:USDT | below_1h_threshold | +0.93% | +1.05% |
-| SYN/USDT:USDT | below_1h_threshold | +0.93% | +1.05% |
+| BICO/USDT:USDT | below_1h_threshold | +4.75% | +4.81% |
+| DODO/USDT:USDT | below_1h_threshold | +4.55% | +4.61% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +3.80% | +3.86% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.53% | +1.59% |
+| MYX/USDT:USDT | below_1h_threshold | +1.19% | +1.25% |
 
 ## 7. 次に見るべき不足
 
