@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-06T05:51:30.021939+00:00
+- generated_at: 2026-08-06T05:56:32.294984+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **10533**
+- closed shadow trades: **10534**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=10533, expectancy=-0.03%
+- 全期間 MARKET基準: n=10534, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=-1.60%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$605.31** / 初期 $100.00 (+505.31%)
-- 確定: 3771件 (Win 1195 / Loss 1236 / Flat 1340) / skip 3323件
+- 確定: 3771件 (Win 1195 / Loss 1236 / Flat 1340) / skip 3324件
 - 成長率目線: 平均log +0.000477 / 幾何平均 +0.048% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $605.31
@@ -55,47 +55,47 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$140.11** / 初期 $100.00 (+40.11%)
-- 確定: 1371件 (Win 379 / Loss 321 / Flat 671) / skip 2573件
+- 確定: 1372件 (Win 379 / Loss 321 / Flat 672) / skip 2573件
 - 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1144 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: HFT/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $140.11
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1179 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: BLESS/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $140.11
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.91** / 初期 $100.00 (+16.91%)
-- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 863件
+- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 864件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000340 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000331 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T05:51:19.792953+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=64839.4
-- Funnel: target 952 → liquid 188 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.2 >= 65=1, 4h RSI 84.6 >= 65=1, 4h RSI 84.2 >= 65=1
+- 更新: 2026-08-06T05:56:21.381345+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=64833.6
+- Funnel: target 952 → liquid 188 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.4 >= 65=1, 4h RSI 84.9 >= 65=1, 4h RSI 79.2 >= 65=1, 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +120.97% | $52,874,867.62 |
-| DODO/USDT:USDT | +62.54% | $8,553,673.84 |
-| BLESS/USDT:USDT | +54.66% | $120,995,431.83 |
-| BICO/USDT:USDT | +30.53% | $11,898,872.22 |
-| ZBT/USDT:USDT | +26.91% | $1,808,234.47 |
+| HEI/USDT:USDT | +120.97% | $53,215,402.18 |
+| DODO/USDT:USDT | +57.97% | $8,603,785.32 |
+| BLESS/USDT:USDT | +52.46% | $121,320,249.64 |
+| CASHCAT/USDT:USDT | +32.38% | $1,246,328.05 |
+| BICO/USDT:USDT | +29.36% | $11,919,753.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.59% | +4.37% |
-| CAP/USDT:USDT | below_1h_threshold | +3.48% | +3.26% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.82% | +2.60% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.46% | +1.24% |
-| UB/USDT:USDT | below_1h_threshold | +1.37% | +1.15% |
+| CAP/USDT:USDT | below_1h_threshold | +4.76% | +4.55% |
+| SYN/USDT:USDT | below_1h_threshold | +2.52% | +2.31% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.15% | +1.94% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.48% | +1.26% |
+| RESOLV/USDT:USDT | below_1h_threshold | +1.42% | +1.21% |
 
 ## 7. 次に見るべき不足
 
