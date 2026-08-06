@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T07:06:27.449891+00:00
+- generated_at: 2026-08-06T07:11:23.753165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10542**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.91** / 初期 $100.00 (+16.91%)
-- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 867件
+- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 868件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000310 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T07:06:18.241299+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64818.8
-- Funnel: target 952 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-06T07:11:16.315839+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64825.9
+- Funnel: target 952 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +129.50% | $53,455,957.37 |
-| DODO/USDT:USDT | +60.72% | $9,082,647.92 |
-| BLESS/USDT:USDT | +40.81% | $120,533,844.55 |
-| ZBT/USDT:USDT | +26.04% | $1,875,666.34 |
-| BICO/USDT:USDT | +23.30% | $10,142,387.28 |
+| HEI/USDT:USDT | +136.67% | $53,853,269.18 |
+| DODO/USDT:USDT | +58.94% | $9,135,501.28 |
+| BLESS/USDT:USDT | +43.53% | $120,716,269.26 |
+| HFT/USDT:USDT | +28.91% | $5,469,361.31 |
+| ZBT/USDT:USDT | +26.40% | $1,882,404.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HFT/USDT:USDT | below_1h_threshold | +1.88% | +1.89% |
-| CYS/USDT:USDT | below_1h_threshold | +1.76% | +1.78% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.61% | +1.62% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.34% | +1.35% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.49% | +3.49% |
+| CYS/USDT:USDT | below_1h_threshold | +2.77% | +2.78% |
+| HEI/USDT:USDT | below_1h_threshold | +2.37% | +2.38% |
+| SYN/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.48% |
 
 ## 7. 次に見るべき不足
 
