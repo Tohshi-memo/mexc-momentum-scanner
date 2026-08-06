@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T03:46:32.570278+00:00
+- generated_at: 2026-08-06T03:51:30.739657+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10495**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T03:46:20.821822+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=64468.1
-- Funnel: target 949 → liquid 184 → pre 50 → checked 50 → surge 4 → strict 1
+- 更新: 2026-08-06T03:51:19.430543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64492.6
+- Funnel: target 949 → liquid 186 → pre 50 → checked 50 → surge 4 → strict 1
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1, 4h RSI 87.4 >= 65=1, 4h RSI 66.5 >= 65=1
+- Strict後reject: 4h RSI 78.9 >= 65=1, 4h RSI 87.2 >= 65=1, 4h RSI 66.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +53.78% | $43,731,621.70 |
-| BLESS/USDT:USDT | +32.49% | $114,486,287.27 |
-| ESPORTS/USDT:USDT | +30.26% | $7,146,400.32 |
-| CASHCAT/USDT:USDT | +27.55% | $1,240,120.48 |
-| BICO/USDT:USDT | +27.24% | $11,690,757.82 |
+| HEI/USDT:USDT | +52.38% | $43,919,907.89 |
+| BLESS/USDT:USDT | +34.22% | $114,741,423.41 |
+| ESPORTS/USDT:USDT | +30.69% | $7,154,664.31 |
+| DODO/USDT:USDT | +29.87% | $7,329,600.46 |
+| BICO/USDT:USDT | +29.62% | $11,707,828.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +4.20% |
-| HFT/USDT:USDT | below_1h_threshold | +2.84% | +2.97% |
-| BICO/USDT:USDT | below_1h_threshold | +1.94% | +2.07% |
-| RESOLV/USDT:USDT | below_1h_threshold | +1.49% | +1.62% |
-| CYS/USDT:USDT | below_1h_threshold | +1.47% | +1.60% |
+| SKR/USDT:USDT | below_1h_threshold | +4.36% | +4.45% |
+| BICO/USDT:USDT | below_1h_threshold | +4.09% | +4.18% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +4.08% | +4.17% |
+| CYS/USDT:USDT | below_1h_threshold | +3.01% | +3.10% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.49% | +2.58% |
 
 ## 7. 次に見るべき不足
 
