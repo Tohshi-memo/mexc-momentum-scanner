@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T00:56:24.307917+00:00
+- generated_at: 2026-08-06T01:01:16.175437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10482**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T00:56:15.004032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64660.2
-- Funnel: target 948 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-06T01:01:08.506379+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64600.0
+- Funnel: target 948 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +45.16% | $106,805,655.84 |
-| DODO/USDT:USDT | +44.43% | $5,752,678.04 |
-| ESPORTS/USDT:USDT | +34.34% | $6,493,345.08 |
-| SITMSTOCK/USDT:USDT | +29.70% | $1,045,030.19 |
-| HEI/USDT:USDT | +27.39% | $44,704,227.19 |
+| BLESS/USDT:USDT | +45.94% | $106,509,474.97 |
+| DODO/USDT:USDT | +44.92% | $5,778,750.97 |
+| ESPORTS/USDT:USDT | +32.52% | $6,499,960.98 |
+| HEI/USDT:USDT | +28.80% | $44,459,009.30 |
+| CASHCAT/USDT:USDT | +23.26% | $1,247,278.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.79% | +4.75% |
-| UB/USDT:USDT | below_1h_threshold | +3.29% | +3.25% |
-| BICO/USDT:USDT | below_1h_threshold | +2.94% | +2.90% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.93% | +1.89% |
-| RE/USDT:USDT | below_1h_threshold | +1.80% | +1.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.50% | +1.53% |
+| HEI/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
+| SYN/USDT:USDT | below_1h_threshold | +1.10% | +1.13% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.07% | +1.09% |
+| XPT/USDT:USDT | below_1h_threshold | +0.97% | +0.99% |
 
 ## 7. 次に見るべき不足
 
