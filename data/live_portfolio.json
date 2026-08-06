@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 121.16683854136865,
+  "balance": 121.04567170282728,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -3439,6 +3439,28 @@
         "daily_RED"
       ],
       "strategy_score": 0.16000000000000003
+    },
+    {
+      "symbol": "COTI/USDT:USDT",
+      "detected_at": "2026-08-06T06:06:15.712673+00:00",
+      "closed_at": "2026-08-06T06:55:56.804917+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -4.000000000000005,
+      "sl_pct": 4.000000000000005,
+      "risk_pct": 0.1,
+      "notional_usdt": 3.029170963534212,
+      "pnl_usdt": -0.12116683854136864,
+      "balance_before": 121.16683854136865,
+      "balance_after": 121.04567170282728,
+      "strategy_tier": "S",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "daily_RED",
+        "1h_green=3",
+        "fundamental_HIGH"
+      ],
+      "strategy_score": 0.0
     }
   ]
 }
