@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T08:26:23.909354+00:00
+- generated_at: 2026-08-06T08:31:22.300750+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10551**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T08:26:15.706172+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64805.1
-- Funnel: target 952 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-08-06T08:31:14.052973+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=64896.4
+- Funnel: target 952 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 76.5 >= 65=1
+- Strict後reject: 4h RSI 74.9 >= 65=1, 4h RSI 76.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +159.65% | $57,176,771.52 |
-| BLESS/USDT:USDT | +56.51% | $123,849,017.72 |
-| DODO/USDT:USDT | +56.20% | $9,728,946.69 |
-| ESPORTS/USDT:USDT | +33.49% | $8,280,493.90 |
-| ZBT/USDT:USDT | +30.76% | $2,083,952.81 |
+| HEI/USDT:USDT | +160.91% | $57,511,199.67 |
+| BLESS/USDT:USDT | +56.00% | $124,110,222.17 |
+| DODO/USDT:USDT | +53.25% | $9,761,143.70 |
+| ZBT/USDT:USDT | +33.19% | $2,100,631.95 |
+| ESPORTS/USDT:USDT | +32.64% | $8,290,688.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.37% | +3.34% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.17% | +1.14% |
-| HEI/USDT:USDT | below_1h_threshold | +1.09% | +1.07% |
-| ROBO/USDT:USDT | below_1h_threshold | +1.03% | +1.00% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.78% | +0.76% |
+| BICO/USDT:USDT | below_1h_threshold | +4.71% | +4.55% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.44% | +2.28% |
+| HEI/USDT:USDT | below_1h_threshold | +1.68% | +1.52% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.06% | +0.90% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.90% | +0.73% |
 
 ## 7. 次に見るべき不足
 
