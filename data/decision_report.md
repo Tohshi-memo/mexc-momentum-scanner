@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T22:00:07.259987+00:00
+- generated_at: 2026-08-06T22:02:01.265624+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10634**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T21:59:57.220269+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64411.9
-- Funnel: target 958 → liquid 190 → pre 50 → checked 50 → surge 6 → strict 0
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 79.0 >= 65=1, 4h RSI 76.6 >= 65=1, 4h RSI 90.1 >= 65=1, 4h RSI 69.1 >= 65=1, 4h RSI 89.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-06T22:01:53.814822+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64350.4
+- Funnel: target 958 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +29.65% | $3,309,248.54 |
-| SKYAI/USDT:USDT | +23.14% | $44,063,620.22 |
-| STG/USDT:USDT | +21.03% | $1,352,811.68 |
-| TWLOSTOCK/USDT:USDT | +17.74% | $1,307,353.40 |
-| NETSTOCK/USDT:USDT | +16.39% | $1,023,955.41 |
+| CATE/USDT:USDT | +31.19% | $3,264,377.83 |
+| SKYAI/USDT:USDT | +21.85% | $43,481,154.01 |
+| STG/USDT:USDT | +20.79% | $1,433,807.19 |
+| TWLOSTOCK/USDT:USDT | +18.00% | $1,313,336.21 |
+| NETSTOCK/USDT:USDT | +16.79% | $1,031,521.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.57% | +4.55% |
-| BTW/USDT:USDT | below_1h_threshold | +3.08% | +3.07% |
-| TIA/USDT:USDT | below_1h_threshold | +3.00% | +2.98% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.75% | +2.73% |
-| RESOLV/USDT:USDT | below_1h_threshold | +2.30% | +2.29% |
+| CATE/USDT:USDT | below_1h_threshold | +3.88% | +3.97% |
+| ZBT/USDT:USDT | below_1h_threshold | +1.75% | +1.85% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +1.06% | +1.15% |
+| REGNSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +1.12% |
+| BICO/USDT:USDT | below_1h_threshold | +0.85% | +0.95% |
 
 ## 7. 次に見るべき不足
 
