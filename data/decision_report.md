@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T08:41:34.154376+00:00
+- generated_at: 2026-08-06T08:46:21.942369+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10552**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T08:41:24.042076+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64854.9
-- Funnel: target 952 → liquid 192 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1, 4h RSI 77.3 >= 65=1, 4h RSI 76.1 >= 65=1
+- 更新: 2026-08-06T08:46:13.756463+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64854.1
+- Funnel: target 952 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 78.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +154.64% | $58,093,173.80 |
-| BLESS/USDT:USDT | +57.33% | $124,561,200.02 |
-| DODO/USDT:USDT | +56.31% | $9,820,610.66 |
-| ZBT/USDT:USDT | +34.00% | $2,119,693.35 |
-| TAKE/USDT:USDT | +32.33% | $1,047,100.89 |
+| HEI/USDT:USDT | +156.59% | $58,289,391.73 |
+| BLESS/USDT:USDT | +58.65% | $124,863,297.07 |
+| DODO/USDT:USDT | +53.84% | $9,831,487.56 |
+| TAKE/USDT:USDT | +35.49% | $1,058,138.95 |
+| ZBT/USDT:USDT | +34.38% | $2,139,062.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.80% | +3.70% |
-| ZBT/USDT:USDT | below_1h_threshold | +3.07% | +2.97% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.89% | +1.79% |
-| ROBO/USDT:USDT | below_1h_threshold | +1.03% | +0.93% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.68% | +0.58% |
+| CASHCAT/USDT:USDT | below_relative_strength | +5.02% | +4.92% |
+| ZBT/USDT:USDT | below_1h_threshold | +3.32% | +3.22% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.65% | +2.55% |
+| BTW/USDT:USDT | below_1h_threshold | +2.45% | +2.35% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.26% | +1.16% |
 
 ## 7. 次に見るべき不足
 
