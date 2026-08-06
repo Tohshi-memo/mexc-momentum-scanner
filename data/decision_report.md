@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T21:54:01.064390+00:00
+- generated_at: 2026-08-06T21:57:48.349340+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10634**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.09** / 初期 $100.00 (+17.09%)
-- 確定: 1153件 (Win 368 / Loss 452 / Flat 333) / pending 6件 / skip 950件
+- 確定: 1153件 (Win 368 / Loss 452 / Flat 333) / pending 6件 / skip 952件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000180 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $117.09
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T21:53:51.654936+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64438.6
-- Funnel: target 958 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.4 >= 65=1, 4h RSI 79.5 >= 65=1, 4h RSI 89.9 >= 65=1, 4h RSI 68.7 >= 65=1
+- 更新: 2026-08-06T21:57:37.351772+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64410.9
+- Funnel: target 958 → liquid 190 → pre 50 → checked 50 → surge 6 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 79.5 >= 65=1, 4h RSI 75.9 >= 65=1, 4h RSI 90.2 >= 65=1, 4h RSI 89.9 >= 65=1, 4h RSI 69.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +36.03% | $3,260,668.66 |
-| SKYAI/USDT:USDT | +26.43% | $43,480,404.61 |
-| STG/USDT:USDT | +20.15% | $1,241,941.32 |
-| TWLOSTOCK/USDT:USDT | +17.58% | $1,306,329.13 |
-| ACT/USDT:USDT | +14.23% | $1,107,597.35 |
+| CATE/USDT:USDT | +33.97% | $3,296,702.29 |
+| SKYAI/USDT:USDT | +25.09% | $43,685,182.34 |
+| STG/USDT:USDT | +21.75% | $1,303,334.68 |
+| TWLOSTOCK/USDT:USDT | +17.68% | $1,307,234.47 |
+| NETSTOCK/USDT:USDT | +15.86% | $1,017,133.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STG/USDT:USDT | below_1h_threshold | +4.93% | +4.88% |
-| BTW/USDT:USDT | below_1h_threshold | +3.36% | +3.31% |
-| UAI/USDT:USDT | below_1h_threshold | +3.06% | +3.00% |
-| TIA/USDT:USDT | below_1h_threshold | +3.00% | +2.94% |
-| RESOLV/USDT:USDT | below_1h_threshold | +2.85% | +2.80% |
+| UAI/USDT:USDT | below_1h_threshold | +3.83% | +3.82% |
+| BTW/USDT:USDT | below_1h_threshold | +2.88% | +2.87% |
+| TIA/USDT:USDT | below_1h_threshold | +2.79% | +2.77% |
+| BICO/USDT:USDT | below_1h_threshold | +2.65% | +2.64% |
+| RESOLV/USDT:USDT | below_1h_threshold | +2.60% | +2.59% |
 
 ## 7. 次に見るべき不足
 
