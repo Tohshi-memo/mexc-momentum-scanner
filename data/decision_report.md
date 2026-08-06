@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T02:06:28.916925+00:00
+- generated_at: 2026-08-06T02:11:25.349568+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10487**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T02:06:19.796562+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64533.4
+- 更新: 2026-08-06T02:11:17.646836+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64578.6
 - Funnel: target 948 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 67.2 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DODO/USDT:USDT | +58.14% | $6,254,526.49 |
-| BLESS/USDT:USDT | +46.47% | $109,196,890.22 |
-| HEI/USDT:USDT | +38.03% | $43,973,743.96 |
-| ESPORTS/USDT:USDT | +30.51% | $6,772,841.41 |
-| ZBT/USDT:USDT | +26.88% | $1,663,965.02 |
+| DODO/USDT:USDT | +55.23% | $6,298,308.16 |
+| BLESS/USDT:USDT | +44.60% | $109,339,393.14 |
+| HEI/USDT:USDT | +35.57% | $44,014,361.50 |
+| ESPORTS/USDT:USDT | +29.41% | $6,800,551.54 |
+| ZBT/USDT:USDT | +26.31% | $1,673,101.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +4.20% | +4.24% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.56% | +2.60% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.28% | +1.33% |
-| ZBT/USDT:USDT | below_1h_threshold | +0.82% | +0.86% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.28% | +3.25% |
+| DODO/USDT:USDT | below_1h_threshold | +1.69% | +1.66% |
+| BICO/USDT:USDT | below_1h_threshold | +1.55% | +1.52% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.23% | +1.20% |
 
 ## 7. 次に見るべき不足
 
