@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T12:56:43.802024+00:00
+- generated_at: 2026-08-06T13:01:23.039270+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10607**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T12:56:29.142306+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=64441.7
-- Funnel: target 955 → liquid 191 → pre 50 → checked 50 → surge 6 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1, 4h RSI 83.3 >= 65=1, 4h RSI 96.4 >= 65=1, 4h RSI 78.8 >= 65=1, 4h RSI 89.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-06T13:01:15.449830+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64399.8
+- Funnel: target 954 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +79.08% | $1,937,419.85 |
-| CTSI/USDT:USDT | +70.68% | $2,375,085.35 |
-| HFT/USDT:USDT | +61.21% | $5,127,380.69 |
-| ZBT/USDT:USDT | +55.81% | $4,234,318.41 |
-| TAKE/USDT:USDT | +39.63% | $1,724,503.20 |
+| CASHCAT/USDT:USDT | +72.23% | $1,932,133.48 |
+| CTSI/USDT:USDT | +68.91% | $2,411,348.32 |
+| HFT/USDT:USDT | +61.61% | $4,803,013.36 |
+| ZBT/USDT:USDT | +57.55% | $4,265,422.61 |
+| TAKE/USDT:USDT | +39.80% | $1,701,725.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.84% | +5.07% |
-| ROBO/USDT:USDT | below_1h_threshold | +3.15% | +3.38% |
-| MMT/USDT:USDT | below_1h_threshold | +2.76% | +2.99% |
-| CAP/USDT:USDT | below_1h_threshold | +2.49% | +2.72% |
-| SYN/USDT:USDT | below_1h_threshold | +1.56% | +1.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.21% | +2.20% |
+| CYS/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
+| SYN/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
+| DODO/USDT:USDT | below_1h_threshold | +0.53% | +0.51% |
+| HFT/USDT:USDT | below_1h_threshold | +0.49% | +0.48% |
 
 ## 7. 次に見るべき不足
 
