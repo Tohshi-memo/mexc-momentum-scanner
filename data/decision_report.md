@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T13:11:19.196935+00:00
+- generated_at: 2026-08-06T13:16:19.530716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10609**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T13:11:11.527569+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=64181.3
+- 更新: 2026-08-06T13:16:11.805230+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=64221.2
 - Funnel: target 954 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CTSI/USDT:USDT | +65.70% | $2,506,965.63 |
-| CASHCAT/USDT:USDT | +63.74% | $2,028,589.18 |
-| HFT/USDT:USDT | +59.30% | $4,874,875.78 |
-| ZBT/USDT:USDT | +57.78% | $4,405,234.00 |
-| CATE/USDT:USDT | +40.78% | $1,699,541.53 |
+| CTSI/USDT:USDT | +64.30% | $2,531,547.10 |
+| HFT/USDT:USDT | +62.57% | $4,906,334.10 |
+| ZBT/USDT:USDT | +58.52% | $4,455,429.17 |
+| CASHCAT/USDT:USDT | +56.24% | $2,067,436.41 |
+| CATE/USDT:USDT | +41.20% | $1,706,824.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.21% | +2.54% |
-| CATE/USDT:USDT | below_1h_threshold | +2.12% | +2.45% |
-| ROBO/USDT:USDT | below_1h_threshold | +1.61% | +1.94% |
-| ON/USDT:USDT | below_1h_threshold | +1.48% | +1.80% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.27% | +1.60% |
+| CATE/USDT:USDT | below_1h_threshold | +2.47% | +2.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.21% | +2.48% |
+| ON/USDT:USDT | below_1h_threshold | +2.11% | +2.37% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.37% | +1.63% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.33% | +1.60% |
 
 ## 7. 次に見るべき不足
 
