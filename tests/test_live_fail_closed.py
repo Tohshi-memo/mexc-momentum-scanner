@@ -77,6 +77,7 @@ class LiveFilterFailClosedTest(unittest.TestCase):
                 "LIVE_BLOCK_UPPER_WICK": "false",
                 "LIVE_POLICY_VERSION": "",
                 "LIVE_REQUIRE_POLICY_VERSION": "false",
+                "LIVE_DATA_DRIVEN_MARKET_SHORT_V2": "false",
             },
             clear=False,
         )
@@ -224,6 +225,92 @@ class LiveFilterFailClosedTest(unittest.TestCase):
             self.assertFalse(
                 live_filter.historical_trade_passes(historical)
             )
+
+
+class DataDrivenMarketShortFilterTest(unittest.TestCase):
+    def setUp(self) -> None:
+        self.env = patch.dict(
+            "os.environ",
+            {
+                "LIVE_DATA_DRIVEN_MARKET_SHORT_V2": "true",
+                "LIVE_MIN_FUNDING_RATE_PCT": "-0.05",
+                "LIVE_ALLOWED_FUNDAMENTAL_CONVICTIONS": (
+                    "HIGH,MEDIUM,UNKNOWN"
+                ),
+            },
+            clear=False,
+        )
+        self.env.start()
+        self.addCleanup(self.env.stop)
+        self.live_filter = LiveTradeFilter()
+
+    def test_accepts_reproduced_setup_with_unknown_fundamental(self) -> None:
+        decision = self.live_filter.evaluate(
+            _analysis_result(
+                daily_direction="RED",
+                consecutive_green_1h=3,
+                funding_rate=0.01,
+            ),
+            fundamental_conviction="UNKNOWN",
+        )
+
+        self.assertTrue(decision.passed)
+        self.assertEqual("S", decision.tier)
+        self.assertEqual(
+            "market_short_daily_red_green_3_4_v2",
+            decision.strategy_id,
+        )
+
+    def test_rejects_setup_miss_avoid_and_unsafe_funding(self) -> None:
+        cases = (
+            (
+                _analysis_result(
+                    daily_direction="GREEN", consecutive_green_1h=3
+                ),
+                "UNKNOWN",
+            ),
+            (
+                _analysis_result(
+                    daily_direction="RED", consecutive_green_1h=2
+                ),
+                "UNKNOWN",
+            ),
+            (
+                _analysis_result(
+                    daily_direction="RED",
+                    consecutive_green_1h=3,
+                    funding_rate=-0.051,
+                ),
+                "UNKNOWN",
+            ),
+            (
+                _analysis_result(
+                    daily_direction="RED", consecutive_green_1h=3
+                ),
+                "AVOID",
+            ),
+        )
+        for result, conviction in cases:
+            with self.subTest(conviction=conviction, result=result):
+                self.assertFalse(
+                    self.live_filter.evaluate(
+                        result,
+                        fundamental_conviction=conviction,
+                    ).passed
+                )
+
+    def test_historical_predicate_matches_the_same_setup(self) -> None:
+        historical = SimpleNamespace(
+            short_conviction="UNKNOWN",
+            filters=SimpleNamespace(
+                daily_direction="RED",
+                consecutive_green_1h=4,
+                funding_rate=0.01,
+            ),
+        )
+        self.assertTrue(self.live_filter.historical_trade_passes(historical))
+        historical.filters.consecutive_green_1h = 5
+        self.assertFalse(self.live_filter.historical_trade_passes(historical))
 
 
 if __name__ == "__main__":

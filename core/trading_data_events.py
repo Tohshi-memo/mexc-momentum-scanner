@@ -361,6 +361,7 @@ def _filter_payload(decision: Any | None) -> dict[str, Any] | None:
             ),
             "boosters": list(getattr(decision, "boosters", []) or []),
             "score": getattr(decision, "score", None),
+            "strategy_id": getattr(decision, "strategy_id", None),
         }
     )
 

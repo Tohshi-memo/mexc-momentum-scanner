@@ -54,6 +54,7 @@ TIER_S = "S"   # 最強確信 (4h<65 & RISING)
 TIER_A = "A"   # 高確信   (4h<65 & ATR≥11%)
 TIER_B = "B"   # 標準確信 (4h<65 単独)
 TIER_REJECT = "REJECT"
+DATA_DRIVEN_MARKET_SHORT_ID = "market_short_daily_red_green_3_4_v2"
 
 
 @dataclass
@@ -66,6 +67,7 @@ class LiveFilterDecision:
     block_reasons: list[str] = field(default_factory=list)
     boosters: list[str] = field(default_factory=list)
     score: float = 0.0           # ブースター加点後の確信度スコア
+    strategy_id: str = ""
 
     def summary(self) -> str:
         if not self.passed:
@@ -89,6 +91,10 @@ class LiveTradeFilter:
     """
 
     def __init__(self) -> None:
+        self._data_driven_market_short_v2: bool = (
+            os.getenv("LIVE_DATA_DRIVEN_MARKET_SHORT_V2", "true").lower()
+            != "false"
+        )
         # ─── Tier gating thresholds (STRICT v2) ──────────────────────
         # LIVE_RSI_MIN: RSI(1h) ゲートは無効化がデフォルト (シャドウで効果なし)。
         # LIVE_ATR_HIGH: Tier A 昇格閾値は 9% (旧 11%)、サンプル増で判定安定化。
@@ -116,7 +122,7 @@ class LiveTradeFilter:
             value.strip().upper()
             for value in os.getenv(
                 "LIVE_ALLOWED_FUNDAMENTAL_CONVICTIONS",
-                "HIGH,MEDIUM",
+                "HIGH,MEDIUM,UNKNOWN",
             ).split(",")
             if value.strip()
         }
@@ -228,6 +234,12 @@ class LiveTradeFilter:
             stats: 直近成績 (必要なら regime 別の追加抑制に使用)。
             fundamental_conviction: ファンダ結果 (AVOID の場合は却下)。
         """
+        if self._data_driven_market_short_v2:
+            return self._evaluate_data_driven_market_short(
+                result,
+                fundamental_conviction=fundamental_conviction,
+            )
+
         # ─── 前提条件 (全 tier 共通) ────────────────────────────────
         pre_reasons: list[str] = []
 
@@ -322,6 +334,81 @@ class LiveTradeFilter:
         return LiveFilterDecision(
             passed=True, tier=tier, reasons=[],
             boosters=boosters, score=score,
+        )
+
+    def _evaluate_data_driven_market_short(
+        self,
+        result: AnalysisResult,
+        *,
+        fundamental_conviction: str | None,
+    ) -> LiveFilterDecision:
+        """Evaluate the OOS-reproduced MARKET-short setup.
+
+        This deliberately does not reuse the old RSI/ATR tier blocks.  The
+        joined shadow sample showed that those blocks removed the profitable
+        live population.  Exchange-time spread, drift and depth checks remain
+        in the independent live runner.
+        """
+        reasons: list[str] = []
+        signal_time_error = self._signal_candle_error(
+            getattr(result, "signal_candle_at", None)
+        )
+        if signal_time_error:
+            reasons.append(signal_time_error)
+
+        daily_direction = str(
+            getattr(result, "daily_direction", "") or ""
+        ).upper()
+        consecutive_green = getattr(result, "consecutive_green_1h", None)
+        funding_rate = getattr(result, "funding_rate", None)
+        if not daily_direction:
+            reasons.append("daily_direction n/a")
+        if not self._is_finite_number(consecutive_green):
+            reasons.append("consecutive_green_1h n/a or non-finite")
+        if not self._is_finite_number(funding_rate):
+            reasons.append("funding_rate n/a or non-finite")
+        elif float(funding_rate) < self._min_funding_rate_pct:
+            reasons.append(
+                f"funding_rate {float(funding_rate):+.3f}% "
+                f"< {self._min_funding_rate_pct:+.3f}%"
+            )
+
+        conviction = (fundamental_conviction or "UNKNOWN").upper()
+        if conviction == "AVOID":
+            reasons.append("fundamental=AVOID")
+        if reasons:
+            return LiveFilterDecision(
+                passed=False,
+                tier=TIER_REJECT,
+                reasons=reasons,
+                strategy_id=DATA_DRIVEN_MARKET_SHORT_ID,
+            )
+
+        setup_misses: list[str] = []
+        if daily_direction != "RED":
+            setup_misses.append(f"daily_direction={daily_direction} != RED")
+        green_value = int(float(consecutive_green))
+        if green_value not in (3, 4):
+            setup_misses.append(
+                f"consecutive_green_1h={green_value} not in [3,4]"
+            )
+        if setup_misses:
+            return LiveFilterDecision(
+                passed=False,
+                tier=TIER_REJECT,
+                block_reasons=setup_misses,
+                strategy_id=DATA_DRIVEN_MARKET_SHORT_ID,
+            )
+
+        boosters = ["daily_RED", f"1h_green={green_value}"]
+        if conviction in {"HIGH", "MEDIUM"}:
+            boosters.append(f"fundamental_{conviction}")
+        return LiveFilterDecision(
+            passed=True,
+            tier=TIER_S,
+            boosters=boosters,
+            score=0.0,
+            strategy_id=DATA_DRIVEN_MARKET_SHORT_ID,
         )
 
     # ------------------------------------------------------------------
@@ -476,6 +563,30 @@ class LiveTradeFilter:
         不足・不明値はすべてFalseとして扱う。
         """
         try:
+            if self._data_driven_market_short_v2:
+                filters = getattr(trade, "filters", None)
+                if filters is None:
+                    return False
+                daily_direction = str(
+                    getattr(filters, "daily_direction", "") or ""
+                ).upper()
+                consecutive_green = getattr(
+                    filters, "consecutive_green_1h", None
+                )
+                funding_rate = getattr(filters, "funding_rate", None)
+                conviction = str(
+                    getattr(trade, "short_conviction", "UNKNOWN")
+                    or "UNKNOWN"
+                ).upper()
+                return (
+                    daily_direction == "RED"
+                    and self._is_finite_number(consecutive_green)
+                    and int(float(consecutive_green)) in (3, 4)
+                    and self._is_finite_number(funding_rate)
+                    and float(funding_rate) >= self._min_funding_rate_pct
+                    and conviction != "AVOID"
+                )
+
             required_policy_version = os.getenv(
                 "LIVE_POLICY_VERSION", ""
             ).strip()

@@ -37,7 +37,13 @@ from typing import Literal
 
 from core.analyzer import AnalysisResult
 from core.executor import ProposalBuilder, TradeProposal
-from core.live_filter import LiveFilterDecision, TIER_A, TIER_B, TIER_S
+from core.live_filter import (
+    DATA_DRIVEN_MARKET_SHORT_ID,
+    LiveFilterDecision,
+    TIER_A,
+    TIER_B,
+    TIER_S,
+)
 from core.strategy_ranker import StrategyRanker, StrategyStat
 
 logger = logging.getLogger(__name__)
@@ -225,7 +231,11 @@ class LiveStrategyBuilder:
         # SL/TP は既存の ATR ベースロジックで計算
         proposal = self._proposal.build(result)
 
-        if self._use_ranker and self._ranker is None:
+        data_driven_market_short = (
+            decision.strategy_id == DATA_DRIVEN_MARKET_SHORT_ID
+        )
+
+        if self._use_ranker and self._ranker is None and not data_driven_market_short:
             logger.error(
                 "LIVE_USE_RANKER=true but StrategyRanker is unavailable; fail closed"
             )
@@ -239,10 +249,16 @@ class LiveStrategyBuilder:
 
         # ─── ランカー採用: 直近20件で実質期待値トップの戦略を選ぶ ───
         ranker_pick: StrategyStat | None = None
-        if self._use_ranker and self._ranker is not None:
+        if data_driven_market_short:
+            direction = DIR_SHORT
+            entry_style = ENTRY_MARKET
+            legs = [EntryLeg(kind="MARKET", price=result.price, weight=1.0)]
+        elif self._use_ranker and self._ranker is not None:
             ranker_pick = self._select_from_ranker()
 
-        if ranker_pick is not None:
+        if data_driven_market_short:
+            pass
+        elif ranker_pick is not None:
             direction = DIR_LONG if ranker_pick.is_long else DIR_SHORT
             entry_style, legs = self._legs_from_ranker(
                 price=result.price,
@@ -268,7 +284,12 @@ class LiveStrategyBuilder:
             )
 
         # ランカー採用時に positive-EV 戦略が見つからなかった場合
-        if self._use_ranker and self._ranker is not None and ranker_pick is None:
+        if (
+            self._use_ranker
+            and self._ranker is not None
+            and ranker_pick is None
+            and not data_driven_market_short
+        ):
             return LiveTradePlan(
                 symbol=result.symbol,
                 direction=DIR_SKIP,
@@ -302,7 +323,9 @@ class LiveStrategyBuilder:
         )
 
         reasons = [f"tier={decision.tier}"] + decision.boosters
-        if ranker_pick is not None:
+        if data_driven_market_short:
+            reasons.append(f"strategy={DATA_DRIVEN_MARKET_SHORT_ID}")
+        elif ranker_pick is not None:
             reasons.append(
                 f"ranker={ranker_pick.strategy} EV={ranker_pick.effective_ev:+.2f}% "
                 f"(filled={ranker_pick.filled}/{ranker_pick.total})"

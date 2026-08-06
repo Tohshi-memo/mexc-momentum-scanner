@@ -89,9 +89,11 @@ jobs:
 
       # --- フィルター粒度実験 (シャドウトレード) ---
       # Threshold/cost変更時は必ずversionを上げ、OOS検証時計をリセットする。
-      LIVE_POLICY_VERSION:       'live-v1-20260729'
-      LIVE_POLICY_EFFECTIVE_AT:  '2026-07-29T00:00:00+00:00'
+      LIVE_POLICY_VERSION:       'live-v2-20260806'
+      LIVE_POLICY_EFFECTIVE_AT:  '2026-08-06T00:00:00+00:00'
       LIVE_REQUIRE_POLICY_VERSION: 'true'
+      LIVE_DATA_DRIVEN_MARKET_SHORT_V2: 'true'
+      LIVE_ALLOWED_FUNDAMENTAL_CONVICTIONS: 'HIGH,MEDIUM,UNKNOWN'
       # 全候補 (STRICT 通過/外問わず) を仮想追跡し、フィルター変更時の
       # PnL を後から再評価できるようにする。実トレードには影響しない。
       EXPERIMENT_TRACKING_HOURS: '8'
@@ -115,6 +117,10 @@ jobs:
       LIVE_MIN_EV_PCT:           '0.20'
       LIVE_MIN_RANKER_FILLED:    '10'
       LIVE_SHORT_ONLY:           'true'
+      LIVE_USE_RANKER:           'false'
+      LIVE_BASE_RISK_PCT:        '0.10'
+      LIVE_MAX_RISK_PCT:         '0.10'
+      LIVE_MAX_LEVERAGE:         '3.0'
 
       # --- Safe adaptive DryRun portfolio (separate from data/live_portfolio.json) ---
       SAFE_ADAPTIVE_ENABLED:                    'true'

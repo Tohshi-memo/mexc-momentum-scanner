@@ -9,8 +9,8 @@ MEXC USDT-M 先物の急騰アルトコインを検出し、テクニカル・�
 - **テクニカル分析**: RSI / BB / ATR / 出来高トレンド / 4h RSI (`core/analyzer.py`)
 - **ファンダ分析**: 無料 RSS + Reddit で材料の有無を判定 (`core/fundamental.py`)
 - **損失低減フィルター**: Cooldown / Circuit Breaker / ATR ベース SL
-- **Live フィルター (Tier S/A/B)**: シャドウ集計で期待値プラスが確認された
-  組み合わせのみを実トレードに昇格 (`core/live_filter.py`)
+- **Live フィルター**: シャドウ結果を時系列分割して再現した「日足RED＋1時間陽線
+  3～4本」のMARKETショートだけを承認候補にする (`core/live_filter.py`)
 - **Live 戦略**: 方向・エントリー方式・サイズ・トレーリングを統合 (`core/live_strategy.py`)
 - **仮想ポートフォリオ**: $100 ベースで戦略パフォーマンスを追跡 (`core/live_portfolio.py`)
 - **シャドウトレード**: STRICT 通過／外れに関わらず全候補を追跡し、フィルター
@@ -38,16 +38,15 @@ python main.py
 |---|---|---|---|
 | `MEXC Momentum Scanner` | データ収集・DryRun・シグナル追跡 | しない (`DRY_RUN=true` 固定) | `data/` を commit/push |
 | `MEXC Momentum Analysis` | 重い分析レポート生成 | しない | `analysis-results` の `reports/` を更新 |
-| `MEXC Live Trader` | MEXC 本番注文 | 全安全ゲート通過時のみ実注文 | `data/` は push せず、`logs/` を artifact 保存 |
-| `Show MEXC Balance` | 残高確認 | しない | 保存なし |
+| 別リポジトリ `mexc-live-trader` | MEXC 本番注文 | 全安全ゲート通過時のみ実注文 | さくらへ監査イベントを保存 |
 
 `MEXC Momentum Scanner` は外部 cron から5分ごとに呼び出す想定です。GitHub Actions 内蔵の
 `schedule` は使わず、二重起動を避けています。
 
 ## MEXC 本番トレードにする方法
 
-本番注文は `MEXC Live Trader` Action からだけ行います。`MEXC Momentum Scanner` は
-DryRun 固定なので、そこから本番注文に切り替えることはできません。
+本番注文は非公開の `mexc-live-trader` リポジトリからだけ行います。
+`MEXC Momentum Scanner` はDryRun固定で、署名付き候補をさくらへ保存します。
 
 ### 1. MEXC API キーを用意する
 
@@ -147,7 +146,7 @@ LIVE_MAX_NEW_ENTRIES_PER_UTC_DAY: '1'
 LIVE_MAX_OPEN_POSITIONS: '1'
 LIVE_BASE_RISK_PCT: '0.10'
 LIVE_MAX_RISK_PCT: '0.10'
-LIVE_MAX_LEVERAGE: '2.0'
+LIVE_MAX_LEVERAGE: '3.0'
 LIVE_MIN_BALANCE_USDT: '5.0'
 LIVE_MARGIN_MODE: 'isolated'
 LIVE_POSITION_MODE: 'hedged'
@@ -155,7 +154,8 @@ LIVE_POSITION_MODE: 'hedged'
 
 1ポジションの計画リスクは口座残高の最大 **0.10%**、1回のActionで最大1注文、
 同時保有も最大1ポジションです。証拠金は isolated、ポジションモードは hedged、
-レバレッジ上限は2倍に固定しています。検証履歴を増やす目的でリスク上限や
+レバレッジ上限は3倍です。数量は口座リスク0.10%とSL幅から逆算するため、レバレッジを
+上げても計画損失上限は増えません。検証履歴を増やす目的でリスク上限や
 ポジション数を緩めないでください。
 
 ### 7. 本番判定と発注のフェイルクローズ設計
@@ -166,12 +166,12 @@ LIVE_POSITION_MODE: 'hedged'
 1. **read-only preflight**
    `tools/live_preflight.py` が、ccxt/MEXC APIの必要メソッド、認証、有限なUSDT残高、
    hedgedモード、既存ポジション数を照合します。この段階では注文の作成・変更・取消を行いません。
-2. **同一ポリシーのOOS実績ゲート**
-   `LIVE_POLICY_VERSION` とコード・判定ENVから作る policy fingerprint が一致する
-   closed シャドー履歴だけを母集団にします。20/50/100/200件の**全窓**で、欠損なし、
-   約定率80%以上かつ最低20約定、手数料0.16%・スリッページ0.20%・Funding 0.15%控除後の
-   net EVが0.20%以上であることを要求します。さらに直近データ24時間以内、
-   最大200件が30 UTC日以上に分散し、日次clusterの95%下限が0%を超える必要があります。
+2. **フィルター一致の因果実績ゲート**
+   `Mexc-trading-BOT` がシグナルと結果を結合し、日足RED＋1時間陽線3～4本、
+   Funding≥-0.05%のMARKETショートだけを評価します。同一銘柄・同一足の重複を除外し、
+   UTC1日1件・同銘柄48時間・同時保有1件を適用した履歴で、手数料0.16%・
+   スリッページ0.20%・Funding予備0.15%控除後の全期間、直近20件、直近50件が
+   +0.20%以上、30日以上に分散し、95%信頼下限が0%以上の場合だけ推薦します。
 3. **最新L2の執行可能性ゲート**
    発注直前にorder bookを再取得し、データ鮮度10秒以内、シグナル価格からの乖離0.50%以内、
    spread 0.10%以内、想定slippage 0.10%以内、必要数量に対するdepth 1.0倍以上を確認します。
@@ -186,11 +186,9 @@ LIVE_POSITION_MODE: 'hedged'
    いずれかが確認できずポジションが存在する場合は、`reduceOnly` の成行注文で緊急クローズし、
    その実行も取引所へread-only照合します。
 
-現在の保存履歴は、新しい `LIVE_POLICY_VERSION` / policy fingerprint に一致する
-`eligible` が **0件**のため、本番判定は当面 **REJECT** です。これは安全側の意図した状態です。
-同一ポリシーで最低200件、かつ30 UTC日以上のclosed OOS履歴が新たに蓄積され、
-上記の全窓を通過するまで実注文は出ません。発注を急ぐためにversionを偽装したり、
-ゲート閾値を緩めたりしないでください。
+スキャナー自身は推薦の可否を決めません。保存済みの全履歴から毎日再計算される
+署名付き推薦と、スキャナーが今検出した同一戦略IDの候補が両方そろった場合だけ、
+別リポジトリの本番処理が発注可否を判断します。
 
 確認済みの実行結果はrunner-localの `logs/live-executions.jsonl` に追記され、
 workflow終了時に `logs/` artifactとして14日保存されます。このledgerは監査用スナップショットで、
