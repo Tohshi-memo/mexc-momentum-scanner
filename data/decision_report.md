@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T23:51:15.656025+00:00
+- generated_at: 2026-08-06T23:56:20.662635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10642**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T23:51:09.401953+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=64214.4
+- 更新: 2026-08-06T23:56:12.920354+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64286.6
 - Funnel: target 958 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +27.15% | $48,592,001.87 |
-| STG/USDT:USDT | +24.06% | $2,924,863.38 |
-| TWLOSTOCK/USDT:USDT | +17.50% | $1,361,849.21 |
-| NETSTOCK/USDT:USDT | +15.42% | $1,275,042.56 |
-| RIVER/USDT:USDT | +12.49% | $5,237,525.93 |
+| SKYAI/USDT:USDT | +28.32% | $48,961,525.24 |
+| STG/USDT:USDT | +22.07% | $2,969,273.43 |
+| TWLOSTOCK/USDT:USDT | +17.69% | $1,362,828.06 |
+| NETSTOCK/USDT:USDT | +15.47% | $1,275,654.30 |
+| RIVER/USDT:USDT | +13.50% | $5,286,444.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.62% | +3.78% |
-| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.82% |
-| ZBT/USDT:USDT | below_1h_threshold | +2.33% | +2.49% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.21% | +2.37% |
-| LIT/USDT:USDT | below_1h_threshold | +1.81% | +1.97% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.37% | +4.41% |
+| ZBT/USDT:USDT | below_1h_threshold | +2.51% | +2.56% |
+| BTW/USDT:USDT | below_1h_threshold | +2.43% | +2.48% |
+| LIT/USDT:USDT | below_1h_threshold | +2.21% | +2.26% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.74% | +1.79% |
 
 ## 7. 次に見るべき不足
 
