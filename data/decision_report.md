@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-06T04:16:16.681869+00:00
+- generated_at: 2026-08-06T04:21:17.348191+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **10502**
+- closed shadow trades: **10503**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.94% / filled 20/20。**
-- 全期間 MARKET基準: n=10502, expectancy=-0.02%
+- 全期間 MARKET基準: n=10503, expectancy=-0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+0.94%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | MARKET | 20/20 | 100.0% | +0.94% | **+0.94%** |
 | LIMIT_3PCT | 13/20 | 65.0% | +0.73% | **+0.47%** |
 | LIMIT_1PCT | 18/20 | 90.0% | +0.49% | **+0.44%** |
-| LIMIT_ATR | 14/20 | 70.0% | +0.54% | **+0.38%** |
 | LIMIT_BB3S | 4/19 | 21.1% | +0.95% | **+0.20%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$605.31** / 初期 $100.00 (+505.31%)
-- 確定: 3771件 (Win 1195 / Loss 1236 / Flat 1340) / skip 3292件
+- 確定: 3771件 (Win 1195 / Loss 1236 / Flat 1340) / skip 3293件
 - 成長率目線: 平均log +0.000477 / 幾何平均 +0.048% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: ESPORTS/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $605.31
@@ -55,47 +55,47 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$140.15** / 初期 $100.00 (+40.15%)
-- 確定: 1358件 (Win 379 / Loss 320 / Flat 659) / skip 2555件
-- 成長率目線: 平均log +0.000249 / 幾何平均 +0.025% per trade / maxDD +3.96%
+- 確定: 1359件 (Win 379 / Loss 320 / Flat 660) / skip 2555件
+- 成長率目線: 平均log +0.000248 / 幾何平均 +0.025% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: HEI/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $140.15
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.91** / 初期 $100.00 (+16.91%)
-- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 830件
+- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 831件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T04:16:10.319951+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64550.1
+- 更新: 2026-08-06T04:21:08.269823+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=64593.9
 - Funnel: target 949 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.0 >= 65=1
+- Strict後reject: 4h RSI 90.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +79.87% | $43,997,455.07 |
-| DODO/USDT:USDT | +39.38% | $7,545,782.48 |
-| BLESS/USDT:USDT | +36.96% | $115,035,072.08 |
-| ESPORTS/USDT:USDT | +33.55% | $7,180,957.79 |
-| BICO/USDT:USDT | +30.09% | $11,545,815.50 |
+| HEI/USDT:USDT | +86.40% | $44,609,152.15 |
+| DODO/USDT:USDT | +40.24% | $7,564,312.76 |
+| BLESS/USDT:USDT | +38.32% | $115,239,173.12 |
+| ESPORTS/USDT:USDT | +32.88% | $7,194,060.71 |
+| BICO/USDT:USDT | +29.83% | $11,578,638.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.41% | +3.32% |
-| HFT/USDT:USDT | below_1h_threshold | +3.33% | +3.25% |
-| SYN/USDT:USDT | below_1h_threshold | +2.90% | +2.82% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.78% | +2.70% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.43% | +2.35% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.09% | +3.94% |
+| UB/USDT:USDT | below_1h_threshold | +3.73% | +3.58% |
+| SYN/USDT:USDT | below_1h_threshold | +3.51% | +3.36% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.96% | +2.81% |
+| DODO/USDT:USDT | below_1h_threshold | +2.74% | +2.59% |
 
 ## 7. 次に見るべき不足
 
