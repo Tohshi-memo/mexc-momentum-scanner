@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-06T11:51:58.897239+00:00
+- generated_at: 2026-08-06T11:56:43.494989+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10591**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.91** / 初期 $100.00 (+16.91%)
-- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 921件
+- 確定: 1146件 (Win 365 / Loss 448 / Flat 333) / pending 0件 / skip 922件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000117 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKYAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-06T11:51:44.561323+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64587.1
-- Funnel: target 955 → liquid 190 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 70.9 >= 65=1
+- 更新: 2026-08-06T11:56:29.014705+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64573.9
+- Funnel: target 955 → liquid 190 → pre 50 → checked 50 → surge 6 → strict 2
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.4 >= 65=1, 4h RSI 95.5 >= 65=1, 4h RSI 69.7 >= 65=1, 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +60.36% | $73,746,746.10 |
-| CTSI/USDT:USDT | +54.70% | $1,547,053.35 |
-| HFT/USDT:USDT | +54.05% | $4,758,184.29 |
-| CASHCAT/USDT:USDT | +44.08% | $1,380,803.55 |
-| ZBT/USDT:USDT | +41.72% | $3,465,540.99 |
+| HEI/USDT:USDT | +62.87% | $74,003,550.57 |
+| CTSI/USDT:USDT | +57.92% | $1,565,050.78 |
+| HFT/USDT:USDT | +50.33% | $4,815,522.04 |
+| CASHCAT/USDT:USDT | +44.44% | $1,382,377.53 |
+| ZBT/USDT:USDT | +41.71% | $3,471,227.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.66% | +4.66% |
-| CTSI/USDT:USDT | below_1h_threshold | +3.72% | +3.72% |
-| CATE/USDT:USDT | below_1h_threshold | +3.46% | +3.47% |
-| CYS/USDT:USDT | below_1h_threshold | +3.46% | +3.47% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.95% | +2.96% |
+| BTW/USDT:USDT | below_1h_threshold | +4.41% | +4.44% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.39% | +4.42% |
+| RESOLV/USDT:USDT | below_1h_threshold | +3.55% | +3.58% |
+| UB/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.15% | +2.17% |
 
 ## 7. 次に見るべき不足
 
