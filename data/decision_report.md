@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T01:51:25.096702+00:00
+- generated_at: 2026-08-07T01:56:32.779839+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10646**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.56** / 初期 $100.00 (+16.56%)
-- 確定: 1157件 (Win 369 / Loss 455 / Flat 333) / pending 2件 / skip 963件
+- 確定: 1157件 (Win 369 / Loss 455 / Flat 333) / pending 2件 / skip 964件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000208 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIVER/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.56
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T01:51:16.909116+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64384.1
-- Funnel: target 958 → liquid 191 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.5 >= 65=1, 4h RSI 85.9 >= 65=1
+- 更新: 2026-08-07T01:56:24.682533+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64380.9
+- Funnel: target 958 → liquid 191 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.5 >= 65=1, 4h RSI 86.0 >= 65=1, 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +24.46% | $4,333,866.94 |
-| RIVER/USDT:USDT | +20.70% | $6,657,453.72 |
-| SKYAI/USDT:USDT | +20.45% | $53,274,458.84 |
-| ON/USDT:USDT | +20.38% | $8,473,753.87 |
-| TWLOSTOCK/USDT:USDT | +17.50% | $1,381,651.15 |
+| STG/USDT:USDT | +22.07% | $4,452,611.41 |
+| RIVER/USDT:USDT | +20.31% | $6,690,001.54 |
+| SKYAI/USDT:USDT | +18.69% | $53,513,863.28 |
+| ON/USDT:USDT | +17.93% | $8,574,853.63 |
+| TWLOSTOCK/USDT:USDT | +17.27% | $1,386,651.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +3.20% | +3.05% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.09% | +2.94% |
-| PLUME/USDT:USDT | below_1h_threshold | +2.50% | +2.36% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.14% | +2.00% |
-| COOKIE/USDT:USDT | below_1h_threshold | +1.92% | +1.78% |
+| COOKIE/USDT:USDT | below_1h_threshold | +3.21% | +3.07% |
+| BSB/USDT:USDT | below_1h_threshold | +2.99% | +2.85% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.88% | +2.74% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.73% | +2.60% |
+| PLUME/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
 
 ## 7. 次に見るべき不足
 
