@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T20:06:19.285788+00:00
+- generated_at: 2026-08-07T20:11:18.396912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10754**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T20:06:11.294396+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64922.8
-- Funnel: target 961 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-07T20:11:10.551964+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64950.9
+- Funnel: target 961 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +69.63% | $1,796,025.05 |
-| BLESS/USDT:USDT | +26.38% | $64,563,586.19 |
-| EPIC/USDT:USDT | +17.71% | $2,008,731.32 |
-| CYS/USDT:USDT | +9.92% | $14,959,697.75 |
-| SKYAI/USDT:USDT | +8.45% | $93,376,078.71 |
+| JIMOTHY/USDT:USDT | +64.26% | $1,812,502.56 |
+| BLESS/USDT:USDT | +25.91% | $65,033,363.92 |
+| EPIC/USDT:USDT | +18.20% | $2,019,049.41 |
+| CYS/USDT:USDT | +9.86% | $15,052,331.32 |
+| SKYAI/USDT:USDT | +7.45% | $93,657,113.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.92% | +2.94% |
-| KORU/USDT:USDT | below_1h_threshold | +2.84% | +2.86% |
-| CYS/USDT:USDT | below_1h_threshold | +2.69% | +2.70% |
-| TUT/USDT:USDT | below_1h_threshold | +2.04% | +2.05% |
-| TTWOSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.83% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.37% | +4.34% |
+| TUT/USDT:USDT | below_1h_threshold | +3.41% | +3.38% |
+| BICO/USDT:USDT | below_1h_threshold | +3.29% | +3.26% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.92% | +2.90% |
+| CYS/USDT:USDT | below_1h_threshold | +2.84% | +2.81% |
 
 ## 7. 次に見るべき不足
 
