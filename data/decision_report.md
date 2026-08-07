@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T13:51:42.579156+00:00
+- generated_at: 2026-08-07T13:56:33.557214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10717**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T13:51:25.911165+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=65201.0
-- Funnel: target 961 → liquid 197 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.1 >= 65=1
+- 更新: 2026-08-07T13:56:20.568922+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=65086.8
+- Funnel: target 961 → liquid 199 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +41.77% | $4,314,492.37 |
-| BICO/USDT:USDT | +36.55% | $32,818,653.21 |
-| C98/USDT:USDT | +35.50% | $1,629,233.03 |
-| SKYAI/USDT:USDT | +34.45% | $80,114,603.17 |
-| TUT/USDT:USDT | +32.42% | $1,206,193.85 |
+| CATE/USDT:USDT | +40.94% | $4,333,428.53 |
+| BICO/USDT:USDT | +37.66% | $32,948,399.31 |
+| C98/USDT:USDT | +36.32% | $1,674,509.95 |
+| SKYAI/USDT:USDT | +33.24% | $80,313,297.91 |
+| TUT/USDT:USDT | +32.04% | $1,213,599.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_1h_threshold | +4.96% | +5.05% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.88% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.65% |
-| TWLOSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.40% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.95% | +2.03% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.33% | +3.59% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.79% | +3.06% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.83% |
+| TWLOSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.58% |
+| UNITREE/USDT:USDT | below_1h_threshold | +2.05% | +2.31% |
 
 ## 7. 次に見るべき不足
 
