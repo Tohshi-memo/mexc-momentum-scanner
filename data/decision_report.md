@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T06:46:24.705976+00:00
+- generated_at: 2026-08-07T06:51:23.243536+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10684**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.67** / 初期 $100.00 (+16.67%)
-- 確定: 1159件 (Win 371 / Loss 455 / Flat 333) / pending 0件 / skip 996件
+- 確定: 1159件 (Win 371 / Loss 455 / Flat 333) / pending 0件 / skip 997件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000478 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKAMSTOCK/USDT:USDT `MARKET` EXPIRED account +0.09% 残高後 $116.67
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T06:46:13.257277+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64329.4
-- Funnel: target 960 → liquid 198 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-07T06:51:11.570889+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64290.9
+- Funnel: target 960 → liquid 198 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +26.37% | $9,878,484.70 |
-| ON/USDT:USDT | +21.70% | $9,936,053.34 |
-| XAI/USDT:USDT | +21.20% | $1,575,282.96 |
-| TWLOSTOCK/USDT:USDT | +17.33% | $1,435,018.50 |
-| ZHIPUSTOCK/USDT:USDT | +16.21% | $1,853,743.54 |
+| STG/USDT:USDT | +25.97% | $9,885,286.80 |
+| ON/USDT:USDT | +21.42% | $9,962,566.84 |
+| XAI/USDT:USDT | +19.15% | $1,666,343.37 |
+| TWLOSTOCK/USDT:USDT | +17.24% | $1,435,510.40 |
+| ZHIPUSTOCK/USDT:USDT | +16.32% | $1,857,578.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +4.73% | +4.70% |
-| ON/USDT:USDT | below_1h_threshold | +4.61% | +4.58% |
-| STG/USDT:USDT | below_1h_threshold | +3.93% | +3.90% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.67% | +3.64% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.36% | +3.33% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.85% | +4.88% |
+| ON/USDT:USDT | below_1h_threshold | +4.45% | +4.48% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.74% | +3.77% |
+| STG/USDT:USDT | below_1h_threshold | +3.60% | +3.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.17% | +3.20% |
 
 ## 7. 次に見るべき不足
 
