@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T05:36:19.523342+00:00
+- generated_at: 2026-08-07T05:41:28.379842+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10678**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T05:36:10.149401+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64171.6
+- 更新: 2026-08-07T05:41:17.208430+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64204.6
 - Funnel: target 958 → liquid 195 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 83.1 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +38.72% | $8,743,847.12 |
-| ON/USDT:USDT | +20.76% | $9,581,083.92 |
-| ACE/USDT:USDT | +18.20% | $19,344,970.71 |
-| TWLOSTOCK/USDT:USDT | +17.74% | $1,414,901.14 |
-| ZHIPUSTOCK/USDT:USDT | +17.46% | $1,892,671.39 |
+| STG/USDT:USDT | +36.81% | $8,826,995.61 |
+| ACE/USDT:USDT | +19.80% | $19,527,307.89 |
+| ZHIPUSTOCK/USDT:USDT | +19.01% | $1,911,984.03 |
+| ON/USDT:USDT | +17.56% | $9,620,972.50 |
+| TWLOSTOCK/USDT:USDT | +17.49% | $1,415,210.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.02% | +3.11% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.62% | +2.70% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.86% | +1.95% |
-| XPL/USDT:USDT | below_1h_threshold | +1.71% | +1.79% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.63% | +1.72% |
+| COOKIE/USDT:USDT | below_1h_threshold | +3.08% | +3.12% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.26% | +2.29% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.68% | +1.71% |
+| XPL/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.52% | +1.55% |
 
 ## 7. 次に見るべき不足
 
