@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T00:21:21.253475+00:00
+- generated_at: 2026-08-07T00:26:09.096084+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10643**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T00:21:13.399013+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=64203.0
+- 更新: 2026-08-07T00:26:01.989917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64239.9
 - Funnel: target 958 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +29.04% | $49,479,006.33 |
-| STG/USDT:USDT | +18.72% | $3,239,491.40 |
-| TWLOSTOCK/USDT:USDT | +17.69% | $1,362,769.76 |
-| RIVER/USDT:USDT | +16.00% | $5,594,346.46 |
-| NETSTOCK/USDT:USDT | +15.26% | $1,284,754.11 |
+| SKYAI/USDT:USDT | +30.40% | $49,812,389.71 |
+| STG/USDT:USDT | +18.64% | $3,272,909.52 |
+| TWLOSTOCK/USDT:USDT | +17.70% | $1,364,665.70 |
+| NETSTOCK/USDT:USDT | +15.45% | $1,285,117.51 |
+| RIVER/USDT:USDT | +14.80% | $5,635,107.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +4.18% | +4.33% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.60% | +3.76% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.77% | +2.92% |
-| UAI/USDT:USDT | below_1h_threshold | +2.35% | +2.50% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.04% | +2.19% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.88% | +4.97% |
+| UAI/USDT:USDT | below_1h_threshold | +2.72% | +2.81% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.24% | +2.34% |
+| CATE/USDT:USDT | below_1h_threshold | +2.22% | +2.31% |
 
 ## 7. 次に見るべき不足
 
