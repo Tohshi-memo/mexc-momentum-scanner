@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T21:36:31.241977+00:00
+- generated_at: 2026-08-07T21:41:30.231214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10762**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T21:36:19.113147+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64992.0
-- Funnel: target 961 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1
+- 更新: 2026-08-07T21:41:20.058742+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=65001.6
+- Funnel: target 961 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +94.11% | $2,477,479.60 |
-| BLESS/USDT:USDT | +32.57% | $72,350,662.28 |
-| EPIC/USDT:USDT | +18.56% | $2,149,374.68 |
-| GWEI/USDT:USDT | +10.55% | $1,495,143.80 |
-| CYS/USDT:USDT | +8.70% | $15,120,853.62 |
+| JIMOTHY/USDT:USDT | +90.16% | $2,498,080.15 |
+| BLESS/USDT:USDT | +34.62% | $72,740,027.09 |
+| EPIC/USDT:USDT | +18.60% | $2,153,147.87 |
+| GWEI/USDT:USDT | +12.09% | $1,500,983.55 |
+| HEI/USDT:USDT | +10.22% | $20,333,306.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_1h_threshold | +2.37% | +2.29% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.33% | +2.26% |
-| CAP/USDT:USDT | below_1h_threshold | +2.12% | +2.05% |
-| BTW/USDT:USDT | below_1h_threshold | +1.95% | +1.87% |
-| CYS/USDT:USDT | below_1h_threshold | +1.64% | +1.56% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.82% | +3.73% |
+| HEI/USDT:USDT | below_1h_threshold | +2.88% | +2.79% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.59% | +2.50% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.79% | +1.70% |
+| GWEI/USDT:USDT | below_1h_threshold | +1.69% | +1.60% |
 
 ## 7. 次に見るべき不足
 
