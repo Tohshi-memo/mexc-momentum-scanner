@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T19:06:20.302624+00:00
+- generated_at: 2026-08-07T19:11:17.129595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10750**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T19:06:13.774804+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64769.4
+- 更新: 2026-08-07T19:11:09.444313+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=64826.8
 - Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +63.31% | $1,655,785.66 |
-| EPIC/USDT:USDT | +16.50% | $1,883,397.07 |
-| BLESS/USDT:USDT | +14.82% | $62,320,805.35 |
-| GWEI/USDT:USDT | +13.13% | $1,278,857.57 |
-| NIL/USDT:USDT | +10.20% | $1,429,622.01 |
+| JIMOTHY/USDT:USDT | +54.68% | $1,691,540.77 |
+| EPIC/USDT:USDT | +17.14% | $1,893,750.09 |
+| BLESS/USDT:USDT | +12.29% | $62,834,146.33 |
+| GWEI/USDT:USDT | +11.48% | $1,292,846.75 |
+| NIL/USDT:USDT | +8.56% | $1,524,873.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TEMSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.93% |
-| ACE/USDT:USDT | below_1h_threshold | +1.49% | +1.40% |
-| AKE/USDT:USDT | below_1h_threshold | +1.00% | +0.91% |
-| UB/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.80% | +0.71% |
+| TEMSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.84% |
+| ACE/USDT:USDT | below_1h_threshold | +1.95% | +1.77% |
+| HEI/USDT:USDT | below_1h_threshold | +1.28% | +1.10% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.13% | +0.95% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.12% | +0.95% |
 
 ## 7. 次に見るべき不足
 
