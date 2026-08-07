@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T21:46:34.741936+00:00
+- generated_at: 2026-08-07T21:51:24.053116+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10762**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T21:46:24.602769+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64986.6
-- Funnel: target 961 → liquid 185 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1
+- 更新: 2026-08-07T21:51:13.289109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64944.6
+- Funnel: target 961 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +94.67% | $2,534,700.56 |
-| BLESS/USDT:USDT | +34.88% | $73,044,505.45 |
-| EPIC/USDT:USDT | +18.19% | $2,157,440.15 |
-| GWEI/USDT:USDT | +11.70% | $1,503,416.05 |
-| SLX/USDT:USDT | +10.34% | $1,228,485.59 |
+| JIMOTHY/USDT:USDT | +87.51% | $2,570,929.04 |
+| BLESS/USDT:USDT | +36.55% | $73,429,903.67 |
+| EPIC/USDT:USDT | +18.70% | $2,159,494.32 |
+| GWEI/USDT:USDT | +11.77% | $1,506,606.27 |
+| SLX/USDT:USDT | +9.83% | $1,234,055.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
-| BTW/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.76% | +1.69% |
-| SLX/USDT:USDT | below_1h_threshold | +1.53% | +1.46% |
-| GWEI/USDT:USDT | below_1h_threshold | +1.27% | +1.20% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.24% | +3.24% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.40% | +2.40% |
+| BTW/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.60% | +1.59% |
+| C98/USDT:USDT | below_1h_threshold | +1.44% | +1.43% |
 
 ## 7. 次に見るべき不足
 
