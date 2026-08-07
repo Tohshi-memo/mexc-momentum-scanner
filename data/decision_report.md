@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T12:36:17.396772+00:00
+- generated_at: 2026-08-07T12:41:21.278436+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10711**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T12:36:09.634028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=65031.3
+- 更新: 2026-08-07T12:41:13.563608+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=65148.0
 - Funnel: target 961 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +40.64% | $76,200,128.00 |
-| KGEN/USDT:USDT | +36.15% | $2,082,260.09 |
-| TUT/USDT:USDT | +32.08% | $1,084,319.03 |
-| C98/USDT:USDT | +28.32% | $1,199,536.73 |
-| CATE/USDT:USDT | +25.24% | $4,347,296.54 |
+| SKYAI/USDT:USDT | +37.84% | $77,012,184.97 |
+| KGEN/USDT:USDT | +36.44% | $2,121,442.57 |
+| TUT/USDT:USDT | +32.46% | $1,103,366.45 |
+| C98/USDT:USDT | +31.83% | $1,216,258.60 |
+| HEI/USDT:USDT | +25.28% | $34,612,825.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.63% | +4.57% |
-| SKYAI/USDT:USDT | below_1h_threshold | +4.46% | +4.40% |
-| BTW/USDT:USDT | below_1h_threshold | +2.44% | +2.38% |
-| CLSKSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.70% |
-| STG/USDT:USDT | below_1h_threshold | +1.60% | +1.55% |
+| CAP/USDT:USDT | below_relative_strength | +5.11% | +4.88% |
+| C98/USDT:USDT | below_1h_threshold | +3.88% | +3.65% |
+| BTW/USDT:USDT | below_1h_threshold | +2.86% | +2.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.44% | +2.20% |
+| CLSKSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.52% |
 
 ## 7. 次に見るべき不足
 
