@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T12:06:19.085239+00:00
+- generated_at: 2026-08-07T12:11:25.123934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10708**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T12:06:11.706517+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=65022.5
+- 更新: 2026-08-07T12:11:17.481255+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=65146.0
 - Funnel: target 961 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +36.85% | $72,800,555.35 |
-| KGEN/USDT:USDT | +35.82% | $1,710,019.76 |
-| CATE/USDT:USDT | +30.52% | $4,301,044.59 |
-| BICO/USDT:USDT | +28.02% | $28,719,788.89 |
-| ON/USDT:USDT | +26.88% | $11,721,396.16 |
+| SKYAI/USDT:USDT | +38.60% | $73,335,115.42 |
+| CATE/USDT:USDT | +33.40% | $4,312,617.49 |
+| KGEN/USDT:USDT | +31.55% | $1,832,376.32 |
+| BICO/USDT:USDT | +30.62% | $28,892,656.70 |
+| ON/USDT:USDT | +26.48% | $11,752,223.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.76% | +1.72% |
-| DKNGSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.10% | +1.06% |
-| STG/USDT:USDT | below_1h_threshold | +0.91% | +0.86% |
-| BTW/USDT:USDT | below_1h_threshold | +0.74% | +0.70% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.78% | +2.55% |
+| CATE/USDT:USDT | below_1h_threshold | +2.05% | +1.82% |
+| STG/USDT:USDT | below_1h_threshold | +1.60% | +1.37% |
+| DKNGSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.08% |
+| BTW/USDT:USDT | below_1h_threshold | +1.17% | +0.94% |
 
 ## 7. 次に見るべき不足
 
