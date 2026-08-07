@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T14:11:31.742010+00:00
+- generated_at: 2026-08-07T14:16:42.797541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10720**
 
@@ -63,29 +63,29 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.47** / 初期 $100.00 (+18.47%)
-- 確定: 1168件 (Win 377 / Loss 458 / Flat 333) / pending 6件 / skip 1025件
+- 確定: 1168件 (Win 377 / Loss 458 / Flat 333) / pending 6件 / skip 1026件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000473 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DKNGSTOCK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.47
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T14:11:24.399600+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=64825.0
-- Funnel: target 961 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1, 4h RSI 80.5 >= 65=1, 4h RSI 76.3 >= 65=1
+- 更新: 2026-08-07T14:16:31.348719+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=64825.9
+- Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 80.7 >= 65=1, 4h RSI 76.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +38.13% | $31,690,958.92 |
-| CATE/USDT:USDT | +36.85% | $4,244,713.35 |
-| TUT/USDT:USDT | +34.23% | $1,198,873.77 |
-| C98/USDT:USDT | +33.63% | $1,712,129.76 |
-| SKYAI/USDT:USDT | +33.48% | $79,139,086.71 |
+| BICO/USDT:USDT | +36.80% | $31,795,300.94 |
+| CATE/USDT:USDT | +36.24% | $4,252,875.97 |
+| SKYAI/USDT:USDT | +34.37% | $79,485,403.91 |
+| C98/USDT:USDT | +34.30% | $1,721,059.58 |
+| KGEN/USDT:USDT | +31.94% | $2,890,805.55 |
 
 ### Near Miss
 
@@ -93,9 +93,9 @@
 |---|---|---:|---:|
 | SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.76% |
 | RBRKSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.63% |
-| KGEN/USDT:USDT | below_1h_threshold | +2.96% | +3.20% |
-| TUT/USDT:USDT | below_1h_threshold | +2.30% | +2.55% |
+| KGEN/USDT:USDT | below_1h_threshold | +2.17% | +2.42% |
 | AAOISTOCK/USDT:USDT | below_1h_threshold | +2.06% | +2.31% |
+| TWLOSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +2.03% |
 
 ## 7. 次に見るべき不足
 
