@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T04:56:32.522404+00:00
+- generated_at: 2026-08-07T05:01:21.613600+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10675**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T04:56:19.175266+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64189.0
-- Funnel: target 958 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-07T05:01:13.901801+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64225.8
+- Funnel: target 958 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +34.42% | $7,938,935.20 |
-| ON/USDT:USDT | +26.83% | $9,280,693.04 |
-| CATE/USDT:USDT | +18.93% | $4,104,821.14 |
-| TWLOSTOCK/USDT:USDT | +17.79% | $1,413,873.72 |
-| ZHIPUSTOCK/USDT:USDT | +17.50% | $1,828,270.31 |
+| STG/USDT:USDT | +41.43% | $8,061,015.88 |
+| ON/USDT:USDT | +27.09% | $9,183,132.95 |
+| TWLOSTOCK/USDT:USDT | +17.81% | $1,411,304.75 |
+| ZHIPUSTOCK/USDT:USDT | +17.66% | $1,762,273.56 |
+| SKYAI/USDT:USDT | +14.76% | $57,854,409.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.92% | +5.04% |
-| GRVT/USDT:USDT | below_1h_threshold | +4.72% | +4.83% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.45% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.82% | +2.94% |
-| BSB/USDT:USDT | below_1h_threshold | +2.58% | +2.70% |
+| HEI/USDT:USDT | below_1h_threshold | +2.08% | +2.08% |
+| CATE/USDT:USDT | below_1h_threshold | +1.56% | +1.56% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.55% | +1.55% |
+| ON/USDT:USDT | below_1h_threshold | +1.10% | +1.10% |
+| TAKE/USDT:USDT | below_1h_threshold | +0.77% | +0.77% |
 
 ## 7. 次に見るべき不足
 
