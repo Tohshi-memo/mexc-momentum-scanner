@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T02:01:22.937603+00:00
+- generated_at: 2026-08-07T02:06:26.803036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10647**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.56** / 初期 $100.00 (+16.56%)
-- 確定: 1157件 (Win 369 / Loss 455 / Flat 333) / pending 2件 / skip 965件
+- 確定: 1157件 (Win 369 / Loss 455 / Flat 333) / pending 2件 / skip 966件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000208 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RIVER/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.56
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T02:01:13.642273+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64398.1
-- Funnel: target 958 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.9 >= 65=1
+- 更新: 2026-08-07T02:06:16.078993+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64360.0
+- Funnel: target 958 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +26.05% | $4,506,159.82 |
-| ON/USDT:USDT | +18.12% | $8,432,008.21 |
-| TWLOSTOCK/USDT:USDT | +17.34% | $1,382,984.29 |
-| RIVER/USDT:USDT | +15.61% | $6,792,185.76 |
-| NETSTOCK/USDT:USDT | +15.47% | $1,322,686.82 |
+| CATE/USDT:USDT | +26.50% | $3,851,166.71 |
+| STG/USDT:USDT | +24.38% | $4,525,400.15 |
+| TWLOSTOCK/USDT:USDT | +17.21% | $1,384,503.69 |
+| ON/USDT:USDT | +16.33% | $8,470,505.04 |
+| SKYAI/USDT:USDT | +15.74% | $53,769,224.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +2.21% | +2.21% |
-| STG/USDT:USDT | below_1h_threshold | +2.00% | +1.99% |
-| CATE/USDT:USDT | below_1h_threshold | +1.49% | +1.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +3.48% | +3.53% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.23% | +2.28% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.64% | +1.69% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.30% | +1.36% |
+| NICKEL/USDT:USDT | below_1h_threshold | +1.08% | +1.13% |
 
 ## 7. 次に見るべき不足
 
