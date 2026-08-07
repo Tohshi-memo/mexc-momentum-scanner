@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T11:16:13.004131+00:00
+- generated_at: 2026-08-07T11:21:19.250235+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10705**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T11:16:05.310554+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=64937.7
+- 更新: 2026-08-07T11:21:11.143253+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=64948.9
 - Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +41.16% | $26,502,411.27 |
-| CATE/USDT:USDT | +33.29% | $4,315,917.35 |
-| SKYAI/USDT:USDT | +32.40% | $71,086,597.36 |
-| EPIC/USDT:USDT | +26.38% | $1,126,822.10 |
-| ON/USDT:USDT | +25.96% | $11,704,234.84 |
+| BICO/USDT:USDT | +41.59% | $26,645,441.92 |
+| SKYAI/USDT:USDT | +32.34% | $71,422,319.64 |
+| CATE/USDT:USDT | +31.41% | $4,322,616.65 |
+| ON/USDT:USDT | +26.68% | $11,774,191.20 |
+| EPIC/USDT:USDT | +26.61% | $1,147,951.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.19% | +3.08% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.46% | +2.35% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.44% | +2.33% |
-| HEI/USDT:USDT | below_1h_threshold | +2.32% | +2.21% |
-| ON/USDT:USDT | below_1h_threshold | +1.68% | +1.57% |
+| BICO/USDT:USDT | below_1h_threshold | +3.70% | +3.58% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.19% | +3.07% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.36% | +2.23% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.24% | +2.11% |
+| CYS/USDT:USDT | below_1h_threshold | +1.94% | +1.82% |
 
 ## 7. 次に見るべき不足
 
