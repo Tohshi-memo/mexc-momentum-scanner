@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T06:26:32.819494+00:00
+- generated_at: 2026-08-07T06:31:29.392821+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10684**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T06:26:19.456779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64413.5
-- Funnel: target 960 → liquid 196 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.2 >= 65=1
+- 更新: 2026-08-07T06:31:18.056832+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64370.0
+- Funnel: target 960 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +24.06% | $9,712,310.71 |
-| ON/USDT:USDT | +22.74% | $9,806,735.30 |
-| XAI/USDT:USDT | +18.79% | $1,355,252.27 |
-| TWLOSTOCK/USDT:USDT | +17.30% | $1,418,140.19 |
-| ZHIPUSTOCK/USDT:USDT | +15.83% | $1,827,257.95 |
+| STG/USDT:USDT | +24.78% | $9,735,725.76 |
+| ON/USDT:USDT | +19.63% | $9,846,249.10 |
+| XAI/USDT:USDT | +18.50% | $1,410,094.74 |
+| TWLOSTOCK/USDT:USDT | +16.78% | $1,419,594.43 |
+| ZHIPUSTOCK/USDT:USDT | +15.91% | $1,827,661.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.49% | +3.33% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +2.17% | +2.01% |
-| STG/USDT:USDT | below_1h_threshold | +2.03% | +1.87% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.78% | +1.62% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.36% | +1.20% |
+| BICO/USDT:USDT | below_1h_threshold | +4.80% | +4.70% |
+| CATE/USDT:USDT | below_1h_threshold | +4.69% | +4.60% |
+| ON/USDT:USDT | below_1h_threshold | +2.86% | +2.77% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.66% | +2.57% |
+| STG/USDT:USDT | below_1h_threshold | +2.62% | +2.53% |
 
 ## 7. 次に見るべき不足
 
