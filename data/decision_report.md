@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T10:36:24.824408+00:00
+- generated_at: 2026-08-07T10:41:27.520839+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10700**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.67** / 初期 $100.00 (+16.67%)
-- 確定: 1159件 (Win 371 / Loss 455 / Flat 333) / pending 0件 / skip 1016件
+- 確定: 1159件 (Win 371 / Loss 455 / Flat 333) / pending 0件 / skip 1017件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000278 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKAMSTOCK/USDT:USDT `MARKET` EXPIRED account +0.09% 残高後 $116.67
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T10:36:15.570403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64856.0
-- Funnel: target 961 → liquid 187 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1, 4h RSI 90.9 >= 65=1, 4h RSI 88.4 >= 65=1
+- 更新: 2026-08-07T10:41:16.011214+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64827.5
+- Funnel: target 961 → liquid 189 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.6 >= 65=1, 4h RSI 88.5 >= 65=1, 4h RSI 90.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +35.01% | $25,322,806.45 |
-| CATE/USDT:USDT | +28.90% | $4,374,853.28 |
-| SKYAI/USDT:USDT | +28.81% | $69,642,123.71 |
-| ON/USDT:USDT | +22.35% | $11,732,413.18 |
-| HEI/USDT:USDT | +21.76% | $42,918,058.57 |
+| BICO/USDT:USDT | +35.52% | $25,464,042.62 |
+| SKYAI/USDT:USDT | +29.12% | $69,821,039.67 |
+| CATE/USDT:USDT | +27.43% | $4,382,337.05 |
+| ON/USDT:USDT | +23.80% | $11,798,583.61 |
+| EPIC/USDT:USDT | +21.38% | $1,007,602.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +2.86% | +2.79% |
-| KMNO/USDT:USDT | below_1h_threshold | +2.35% | +2.28% |
-| GRVT/USDT:USDT | below_1h_threshold | +2.05% | +1.98% |
-| ENA/USDT:USDT | below_1h_threshold | +1.36% | +1.29% |
-| NETSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.26% |
+| KMNO/USDT:USDT | below_1h_threshold | +3.67% | +3.65% |
+| ACE/USDT:USDT | below_1h_threshold | +2.59% | +2.56% |
+| ON/USDT:USDT | below_1h_threshold | +2.27% | +2.24% |
+| TAKE/USDT:USDT | below_1h_threshold | +2.08% | +2.06% |
+| ENA/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
 
 ## 7. 次に見るべき不足
 
