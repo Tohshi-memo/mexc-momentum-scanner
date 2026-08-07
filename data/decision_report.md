@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T07:01:14.011939+00:00
+- generated_at: 2026-08-07T07:06:19.008613+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10686**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T07:01:06.925008+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64251.7
+- 更新: 2026-08-07T07:06:11.314387+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64283.8
 - Funnel: target 960 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +24.06% | $9,982,036.49 |
-| ON/USDT:USDT | +21.65% | $9,877,591.84 |
-| TWLOSTOCK/USDT:USDT | +17.58% | $1,452,403.69 |
-| SKYAI/USDT:USDT | +16.31% | $60,366,915.11 |
-| ZHIPUSTOCK/USDT:USDT | +14.59% | $1,809,502.62 |
+| STG/USDT:USDT | +23.74% | $9,997,612.79 |
+| ON/USDT:USDT | +22.55% | $9,913,347.59 |
+| TWLOSTOCK/USDT:USDT | +17.60% | $1,453,563.44 |
+| SKYAI/USDT:USDT | +16.10% | $60,521,096.01 |
+| ALLO/USDT:USDT | +14.58% | $3,136,046.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKAMSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.26% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.21% |
-| ACE/USDT:USDT | below_1h_threshold | +1.30% | +1.34% |
-| BTW/USDT:USDT | below_1h_threshold | +0.97% | +1.01% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.29% | +0.33% |
+| BSB/USDT:USDT | below_1h_threshold | +4.85% | +4.85% |
+| TAKE/USDT:USDT | below_1h_threshold | +3.74% | +3.73% |
+| AKAMSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.13% | +2.13% |
 
 ## 7. 次に見るべき不足
 
