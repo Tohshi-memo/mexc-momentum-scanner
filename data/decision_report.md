@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T07:31:29.079895+00:00
+- generated_at: 2026-08-07T07:36:22.839604+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10687**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T07:31:19.079123+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=64377.1
-- Funnel: target 960 → liquid 194 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1, 4h RSI 81.8 >= 65=1
+- 更新: 2026-08-07T07:36:15.026109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=64391.0
+- Funnel: target 960 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +24.22% | $10,088,650.52 |
-| STG/USDT:USDT | +18.80% | $10,269,658.44 |
-| TWLOSTOCK/USDT:USDT | +17.58% | $1,457,110.46 |
-| SKYAI/USDT:USDT | +17.14% | $61,429,279.77 |
-| TAKE/USDT:USDT | +15.29% | $2,721,150.06 |
+| ON/USDT:USDT | +23.96% | $10,128,040.13 |
+| STG/USDT:USDT | +20.71% | $10,327,307.73 |
+| SKYAI/USDT:USDT | +17.56% | $61,649,963.84 |
+| TWLOSTOCK/USDT:USDT | +17.42% | $1,460,406.98 |
+| TAKE/USDT:USDT | +17.17% | $2,738,946.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.58% | +2.43% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.27% | +2.12% |
-| AKAMSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.07% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.16% | +2.01% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.07% | +1.92% |
+| BSB/USDT:USDT | below_1h_threshold | +3.67% | +3.50% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.55% | +2.38% |
+| CATE/USDT:USDT | below_1h_threshold | +2.39% | +2.22% |
+| AKAMSTOCK/USDT:USDT | below_1h_threshold | +2.22% | +2.05% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.16% | +1.99% |
 
 ## 7. 次に見るべき不足
 
