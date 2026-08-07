@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T23:11:23.609762+00:00
+- generated_at: 2026-08-07T23:16:23.667012+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10774**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.23** / 初期 $100.00 (+18.23%)
-- 確定: 1181件 (Win 381 / Loss 467 / Flat 333) / pending 1件 / skip 1063件
+- 確定: 1181件 (Win 381 / Loss 467 / Flat 333) / pending 1件 / skip 1064件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000171 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MMT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.23
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T23:11:12.536689+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64857.3
-- Funnel: target 961 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-08-07T23:16:13.537167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64859.9
+- Funnel: target 961 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +109.88% | $3,169,248.49 |
-| BLESS/USDT:USDT | +31.06% | $74,383,717.65 |
-| GWEI/USDT:USDT | +28.78% | $1,690,215.78 |
-| EPIC/USDT:USDT | +18.37% | $2,234,896.15 |
-| CYS/USDT:USDT | +12.33% | $15,601,660.98 |
+| JIMOTHY/USDT:USDT | +103.40% | $3,219,907.76 |
+| BLESS/USDT:USDT | +32.99% | $74,677,411.83 |
+| GWEI/USDT:USDT | +27.20% | $1,703,746.66 |
+| EPIC/USDT:USDT | +17.78% | $2,237,079.94 |
+| CYS/USDT:USDT | +12.33% | $15,657,594.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.89% | +3.89% |
-| GWEI/USDT:USDT | below_1h_threshold | +3.58% | +3.58% |
-| SLX/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
-| FET/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
-| US/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| SLX/USDT:USDT | below_1h_threshold | +2.21% | +2.20% |
+| GWEI/USDT:USDT | below_1h_threshold | +2.19% | +2.19% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.28% | +1.28% |
+| HEI/USDT:USDT | below_1h_threshold | +1.13% | +1.12% |
 
 ## 7. 次に見るべき不足
 
