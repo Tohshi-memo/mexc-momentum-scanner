@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T12:26:25.406697+00:00
+- generated_at: 2026-08-07T12:31:24.857698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10711**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.47** / 初期 $100.00 (+17.47%)
-- 確定: 1164件 (Win 374 / Loss 457 / Flat 333) / pending 3件 / skip 1017件
+- 確定: 1164件 (Win 374 / Loss 457 / Flat 333) / pending 4件 / skip 1017件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000391 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KGEN/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $117.47
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T12:26:14.821255+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=65076.3
-- Funnel: target 961 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-07T12:31:16.760738+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65021.2
+- Funnel: target 961 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +40.60% | $74,957,133.61 |
-| TUT/USDT:USDT | +34.31% | $1,050,139.28 |
-| KGEN/USDT:USDT | +33.35% | $2,031,241.43 |
-| CATE/USDT:USDT | +30.64% | $4,331,079.12 |
-| HEI/USDT:USDT | +27.35% | $34,378,716.83 |
+| SKYAI/USDT:USDT | +41.85% | $75,719,514.76 |
+| KGEN/USDT:USDT | +36.21% | $2,056,364.26 |
+| TUT/USDT:USDT | +30.27% | $1,071,556.55 |
+| CATE/USDT:USDT | +27.98% | $4,335,175.37 |
+| C98/USDT:USDT | +27.95% | $1,195,082.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.51% | +4.39% |
-| CAP/USDT:USDT | below_1h_threshold | +4.17% | +4.05% |
-| TUT/USDT:USDT | below_1h_threshold | +2.60% | +2.47% |
-| HEI/USDT:USDT | below_1h_threshold | +1.82% | +1.69% |
-| STG/USDT:USDT | below_1h_threshold | +1.81% | +1.69% |
+| CAP/USDT:USDT | below_1h_threshold | +3.54% | +3.50% |
+| STG/USDT:USDT | below_1h_threshold | +2.51% | +2.47% |
+| HEI/USDT:USDT | below_1h_threshold | +1.61% | +1.57% |
+| BTW/USDT:USDT | below_1h_threshold | +1.61% | +1.57% |
+| DKNGSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
 
 ## 7. 次に見るべき不足
 
