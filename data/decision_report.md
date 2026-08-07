@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T17:16:24.261520+00:00
+- generated_at: 2026-08-07T17:21:25.306760+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10737**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T17:16:12.822558+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=64646.0
+- 更新: 2026-08-07T17:21:15.239361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=64698.4
 - Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EPIC/USDT:USDT | +12.98% | $1,761,333.13 |
-| ACE/USDT:USDT | +11.11% | $34,505,586.54 |
-| C98/USDT:USDT | +7.10% | $2,146,009.71 |
-| HEI/USDT:USDT | +6.60% | $24,594,630.94 |
-| SKYAI/USDT:USDT | +5.85% | $88,639,199.62 |
+| EPIC/USDT:USDT | +13.78% | $1,772,921.98 |
+| ACE/USDT:USDT | +11.48% | $34,792,279.69 |
+| HEI/USDT:USDT | +7.63% | $24,669,043.46 |
+| C98/USDT:USDT | +7.58% | $2,161,582.27 |
+| BICO/USDT:USDT | +6.49% | $33,003,856.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| C98/USDT:USDT | below_1h_threshold | +2.34% | +2.55% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.79% | +2.00% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.48% | +1.69% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.47% |
-| TTWOSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.40% |
+| XAI/USDT:USDT | below_1h_threshold | +3.29% | +3.42% |
+| C98/USDT:USDT | below_1h_threshold | +2.74% | +2.86% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.62% | +1.75% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.43% | +1.56% |
+| TUT/USDT:USDT | below_1h_threshold | +1.33% | +1.46% |
 
 ## 7. 次に見るべき不足
 
