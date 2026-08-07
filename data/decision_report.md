@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T21:21:33.234354+00:00
+- generated_at: 2026-08-07T21:26:28.341905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10760**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T21:21:19.807467+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64950.4
-- Funnel: target 961 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.0 >= 65=1
+- 更新: 2026-08-07T21:26:18.322680+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64956.9
+- Funnel: target 961 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +96.16% | $2,308,121.92 |
-| BLESS/USDT:USDT | +35.76% | $70,660,425.31 |
-| EPIC/USDT:USDT | +15.17% | $2,133,587.96 |
-| HEI/USDT:USDT | +10.95% | $20,186,591.01 |
-| GWEI/USDT:USDT | +10.26% | $1,477,399.57 |
+| JIMOTHY/USDT:USDT | +91.13% | $2,362,501.93 |
+| BLESS/USDT:USDT | +37.21% | $71,322,033.03 |
+| EPIC/USDT:USDT | +15.40% | $2,136,376.69 |
+| GWEI/USDT:USDT | +11.66% | $1,481,913.21 |
+| SLX/USDT:USDT | +10.85% | $1,182,205.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +3.84% | +3.83% |
-| CYS/USDT:USDT | below_1h_threshold | +2.05% | +2.04% |
-| ACE/USDT:USDT | below_1h_threshold | +1.89% | +1.88% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.45% | +1.43% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.35% | +4.33% |
+| HEI/USDT:USDT | below_1h_threshold | +2.88% | +2.86% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.85% | +2.83% |
+| CAP/USDT:USDT | below_1h_threshold | +2.18% | +2.16% |
+| SLX/USDT:USDT | below_1h_threshold | +1.88% | +1.86% |
 
 ## 7. 次に見るべき不足
 
