@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T05:51:26.211394+00:00
+- generated_at: 2026-08-07T05:56:19.474214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10682**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T05:51:14.317502+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=64339.2
-- Funnel: target 958 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-07T05:56:11.771294+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=64357.8
+- Funnel: target 960 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +23.50% | $9,274,535.17 |
-| ZHIPUSTOCK/USDT:USDT | +18.02% | $1,936,761.13 |
-| TWLOSTOCK/USDT:USDT | +17.72% | $1,418,374.36 |
-| NETSTOCK/USDT:USDT | +14.26% | $1,349,235.98 |
-| ON/USDT:USDT | +13.41% | $9,755,187.31 |
+| STG/USDT:USDT | +23.34% | $9,408,339.40 |
+| TWLOSTOCK/USDT:USDT | +17.63% | $1,418,787.20 |
+| ZHIPUSTOCK/USDT:USDT | +16.57% | $1,943,353.98 |
+| ON/USDT:USDT | +14.83% | $9,804,527.62 |
+| NETSTOCK/USDT:USDT | +13.87% | $1,349,748.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +4.19% | +4.02% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.53% | +3.35% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +3.41% | +3.23% |
-| XPL/USDT:USDT | below_1h_threshold | +2.11% | +1.93% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.79% | +1.61% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.25% | +3.05% |
+| BICO/USDT:USDT | below_1h_threshold | +3.14% | +2.94% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.65% | +2.45% |
+| XPL/USDT:USDT | below_1h_threshold | +2.38% | +2.18% |
+| APE/USDT:USDT | below_1h_threshold | +1.05% | +0.84% |
 
 ## 7. 次に見るべき不足
 
