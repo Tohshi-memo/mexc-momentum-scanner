@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T19:51:24.305223+00:00
+- generated_at: 2026-08-07T19:56:25.907283+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10753**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T19:51:13.615523+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=64953.7
+- 更新: 2026-08-07T19:56:15.605942+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=64927.0
 - Funnel: target 961 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +55.72% | $1,802,657.66 |
-| BLESS/USDT:USDT | +21.31% | $65,505,169.76 |
-| EPIC/USDT:USDT | +19.10% | $2,008,924.02 |
-| NIL/USDT:USDT | +12.08% | $2,058,967.25 |
-| SKYAI/USDT:USDT | +8.41% | $93,744,030.69 |
+| JIMOTHY/USDT:USDT | +56.33% | $1,814,020.10 |
+| BLESS/USDT:USDT | +23.95% | $65,800,768.67 |
+| EPIC/USDT:USDT | +19.74% | $2,025,289.10 |
+| NIL/USDT:USDT | +10.84% | $2,106,806.06 |
+| SKYAI/USDT:USDT | +9.13% | $93,872,408.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +2.81% | +2.44% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.25% | +1.88% |
-| TAKE/USDT:USDT | below_1h_threshold | +2.21% | +1.84% |
-| TEMSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.64% |
-| NIL/USDT:USDT | below_1h_threshold | +1.70% | +1.33% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.72% | +2.39% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +2.31% | +1.98% |
+| TEMSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.68% |
+| BICO/USDT:USDT | below_1h_threshold | +1.58% | +1.25% |
+| ARB/USDT:USDT | below_1h_threshold | +1.31% | +0.98% |
 
 ## 7. 次に見るべき不足
 
