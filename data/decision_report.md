@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T14:16:42.797541+00:00
+- generated_at: 2026-08-07T14:21:31.130840+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10720**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T14:16:31.348719+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=64825.9
-- Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 80.7 >= 65=1, 4h RSI 76.1 >= 65=1
+- 更新: 2026-08-07T14:21:22.150623+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64994.4
+- Funnel: target 961 → liquid 192 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.0 >= 65=1, 4h RSI 81.3 >= 65=1, 4h RSI 77.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +36.80% | $31,795,300.94 |
-| CATE/USDT:USDT | +36.24% | $4,252,875.97 |
-| SKYAI/USDT:USDT | +34.37% | $79,485,403.91 |
-| C98/USDT:USDT | +34.30% | $1,721,059.58 |
-| KGEN/USDT:USDT | +31.94% | $2,890,805.55 |
+| CATE/USDT:USDT | +37.10% | $4,262,797.49 |
+| BICO/USDT:USDT | +36.42% | $32,044,277.29 |
+| C98/USDT:USDT | +34.97% | $1,731,763.97 |
+| SKYAI/USDT:USDT | +32.85% | $79,716,422.05 |
+| KGEN/USDT:USDT | +31.94% | $2,905,692.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.76% |
-| RBRKSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.63% |
-| KGEN/USDT:USDT | below_1h_threshold | +2.17% | +2.42% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.06% | +2.31% |
-| TWLOSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +2.03% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.52% | +4.50% |
+| RBRKSTOCK/USDT:USDT | below_1h_threshold | +4.38% | +4.37% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.29% | +2.27% |
+| KGEN/USDT:USDT | below_1h_threshold | +2.17% | +2.16% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.06% | +2.05% |
 
 ## 7. 次に見るべき不足
 
