@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T02:46:43.817413+00:00
+- generated_at: 2026-08-07T02:51:38.067464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10660**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T02:46:28.932699+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64381.3
-- Funnel: target 958 → liquid 191 → pre 50 → checked 50 → surge 5 → strict 1
+- 更新: 2026-08-07T02:51:25.743689+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64441.0
+- Funnel: target 958 → liquid 193 → pre 50 → checked 50 → surge 5 → strict 1
 - Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.9 >= 65=1, 4h RSI 79.0 >= 65=1, 4h RSI 79.2 >= 65=1, 4h RSI 92.7 >= 65=1
+- Strict後reject: 4h RSI 85.4 >= 65=1, 4h RSI 78.3 >= 65=1, 4h RSI 93.2 >= 65=1, 4h RSI 77.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STG/USDT:USDT | +32.74% | $5,171,744.86 |
-| CATE/USDT:USDT | +27.85% | $3,969,962.52 |
-| RIVER/USDT:USDT | +20.03% | $7,275,547.77 |
-| ZHIPUSTOCK/USDT:USDT | +18.31% | $3,381,064.87 |
-| TWLOSTOCK/USDT:USDT | +17.97% | $1,395,190.11 |
+| STG/USDT:USDT | +35.29% | $5,345,510.94 |
+| CATE/USDT:USDT | +22.93% | $3,978,653.86 |
+| RIVER/USDT:USDT | +19.36% | $7,319,566.53 |
+| TWLOSTOCK/USDT:USDT | +17.88% | $1,395,493.64 |
+| ON/USDT:USDT | +17.29% | $8,760,260.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +4.22% | +4.24% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.51% | +2.53% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.69% | +1.71% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +4.38% | +4.30% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.35% | +2.28% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.75% | +1.67% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.17% | +1.10% |
+| TIA/USDT:USDT | below_1h_threshold | +1.14% | +1.07% |
 
 ## 7. 次に見るべき不足
 
