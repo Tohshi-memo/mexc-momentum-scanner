@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T16:26:30.653999+00:00
+- generated_at: 2026-08-07T16:31:43.682847+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10731**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.65** / 初期 $100.00 (+18.65%)
-- 確定: 1176件 (Win 380 / Loss 463 / Flat 333) / pending 3件 / skip 1027件
+- 確定: 1176件 (Win 380 / Loss 463 / Flat 333) / pending 5件 / skip 1027件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000241 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEI/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.65
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T16:26:20.025904+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64884.6
-- Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.2 >= 65=1
+- 更新: 2026-08-07T16:31:24.580182+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64893.4
+- Funnel: target 961 → liquid 191 → pre 50 → checked 50 → surge 5 → strict 4
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +9.24% | $25,990,014.35 |
-| BLESS/USDT:USDT | +4.90% | $57,639,724.31 |
-| KGEN/USDT:USDT | +4.02% | $3,450,900.26 |
-| CYS/USDT:USDT | +3.54% | $12,601,916.43 |
-| CC/USDT:USDT | +2.64% | $1,829,927.56 |
+| HEI/USDT:USDT | +8.36% | $26,104,180.17 |
+| EPIC/USDT:USDT | +6.51% | $1,603,841.34 |
+| BLESS/USDT:USDT | +6.27% | $57,796,910.59 |
+| MMT/USDT:USDT | +5.06% | $1,017,451.51 |
+| CYS/USDT:USDT | +4.34% | $12,662,446.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.76% | +4.76% |
-| KGEN/USDT:USDT | below_1h_threshold | +3.98% | +3.98% |
-| CYS/USDT:USDT | below_1h_threshold | +3.30% | +3.30% |
-| CC/USDT:USDT | below_1h_threshold | +2.62% | +2.62% |
-| KIMISTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.56% |
+| CYS/USDT:USDT | below_1h_threshold | +4.38% | +4.36% |
+| C98/USDT:USDT | below_1h_threshold | +3.28% | +3.27% |
+| BICO/USDT:USDT | below_1h_threshold | +3.16% | +3.15% |
+| CC/USDT:USDT | below_1h_threshold | +2.96% | +2.95% |
+| KGEN/USDT:USDT | below_1h_threshold | +2.39% | +2.38% |
 
 ## 7. 次に見るべき不足
 
