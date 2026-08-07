@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T16:21:37.244365+00:00
+- generated_at: 2026-08-07T16:26:30.653999+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10731**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T16:21:22.896297+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64990.1
-- Funnel: target 961 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1
+- 更新: 2026-08-07T16:26:20.025904+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64884.6
+- Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +12.47% | $25,807,828.85 |
-| BLESS/USDT:USDT | +6.78% | $57,361,932.75 |
-| CC/USDT:USDT | +3.32% | $1,823,748.82 |
-| C98/USDT:USDT | +2.44% | $2,030,644.27 |
-| ZBT/USDT:USDT | +2.20% | $9,910,981.57 |
+| HEI/USDT:USDT | +9.24% | $25,990,014.35 |
+| BLESS/USDT:USDT | +4.90% | $57,639,724.31 |
+| KGEN/USDT:USDT | +4.02% | $3,450,900.26 |
+| CYS/USDT:USDT | +3.54% | $12,601,916.43 |
+| CC/USDT:USDT | +2.64% | $1,829,927.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.46% | +4.30% |
-| CC/USDT:USDT | below_1h_threshold | +3.60% | +3.44% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.29% |
-| KORU/USDT:USDT | below_1h_threshold | +3.43% | +3.27% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.33% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.76% | +4.76% |
+| KGEN/USDT:USDT | below_1h_threshold | +3.98% | +3.98% |
+| CYS/USDT:USDT | below_1h_threshold | +3.30% | +3.30% |
+| CC/USDT:USDT | below_1h_threshold | +2.62% | +2.62% |
+| KIMISTOCK/USDT:USDT | below_1h_threshold | +2.56% | +2.56% |
 
 ## 7. 次に見るべき不足
 
