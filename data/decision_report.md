@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T18:16:23.686781+00:00
+- generated_at: 2026-08-07T18:21:25.361461+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10745**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T18:16:15.827880+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64820.1
+- 更新: 2026-08-07T18:21:17.573539+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64802.8
 - Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +67.52% | $1,415,415.22 |
-| BLESS/USDT:USDT | +17.31% | $58,481,839.09 |
-| EPIC/USDT:USDT | +14.78% | $1,832,176.80 |
-| ACE/USDT:USDT | +8.72% | $34,855,858.58 |
-| SKYAI/USDT:USDT | +6.12% | $90,113,860.09 |
+| JIMOTHY/USDT:USDT | +66.84% | $1,435,533.15 |
+| BLESS/USDT:USDT | +20.09% | $58,794,012.38 |
+| EPIC/USDT:USDT | +16.06% | $1,837,794.45 |
+| SKYAI/USDT:USDT | +7.06% | $90,598,692.13 |
+| ACE/USDT:USDT | +6.83% | $34,957,549.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +2.02% | +1.90% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.76% | +1.64% |
-| AKE/USDT:USDT | below_1h_threshold | +1.70% | +1.57% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.06% | +0.94% |
-| TAKE/USDT:USDT | below_1h_threshold | +1.02% | +0.90% |
+| HEI/USDT:USDT | below_1h_threshold | +4.40% | +4.30% |
+| NIL/USDT:USDT | below_1h_threshold | +2.81% | +2.72% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.54% | +2.45% |
+| AKE/USDT:USDT | below_1h_threshold | +1.48% | +1.38% |
+| TAKE/USDT:USDT | below_1h_threshold | +1.04% | +0.94% |
 
 ## 7. 次に見るべき不足
 
