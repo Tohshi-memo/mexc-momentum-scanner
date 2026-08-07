@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-07T19:01:25.790803+00:00
+- generated_at: 2026-08-07T19:06:20.302624+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10750**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-07T19:01:19.550604+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64754.9
-- Funnel: target 961 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-07T19:06:13.774804+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=64769.4
+- Funnel: target 961 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +60.21% | $1,642,540.40 |
-| EPIC/USDT:USDT | +16.53% | $1,872,996.42 |
-| BLESS/USDT:USDT | +13.76% | $61,810,306.55 |
-| GWEI/USDT:USDT | +12.45% | $1,260,324.88 |
-| NIL/USDT:USDT | +10.23% | $1,313,485.91 |
+| JIMOTHY/USDT:USDT | +63.31% | $1,655,785.66 |
+| EPIC/USDT:USDT | +16.50% | $1,883,397.07 |
+| BLESS/USDT:USDT | +14.82% | $62,320,805.35 |
+| GWEI/USDT:USDT | +13.13% | $1,278,857.57 |
+| NIL/USDT:USDT | +10.20% | $1,429,622.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TEMSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.95% |
-| ACE/USDT:USDT | below_1h_threshold | +1.18% | +1.11% |
-| HEI/USDT:USDT | below_1h_threshold | +0.80% | +0.74% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.80% | +0.73% |
-| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.77% | +0.70% |
+| TEMSTOCK/USDT:USDT | below_1h_threshold | +2.02% | +1.93% |
+| ACE/USDT:USDT | below_1h_threshold | +1.49% | +1.40% |
+| AKE/USDT:USDT | below_1h_threshold | +1.00% | +0.91% |
+| UB/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.80% | +0.71% |
 
 ## 7. 次に見るべき不足
 
