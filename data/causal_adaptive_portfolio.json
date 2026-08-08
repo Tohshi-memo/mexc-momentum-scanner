@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 118.42416516334211,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-08-08T12:16:18.113708+00:00",
+  "updated_at": "2026-08-08T12:21:18.174350+00:00",
   "high_watermark": 119.485478480524,
   "max_drawdown_pct": 3.463237719717767,
   "loss_streak": 1,
@@ -261290,6 +261290,118 @@
       "direction": "long",
       "risk_pct": 0.175,
       "relative_strength": 10.316596098834054,
+      "decision": {
+        "strategy": "LIMIT_9PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0003136075586417765,
+        "robust_score": 0.0003136075586417765,
+        "causal_history_count": 10841,
+        "fast": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 15,
+          "fill_rate": 0.3,
+          "avg_pnl_pct": 3.9496336996337065,
+          "effective_ev_pct": 1.184890109890112,
+          "avg_log_return": 0.0005200030470297396,
+          "geometric_return_pct": 0.05201382720523284,
+          "avg_account_return_pct": 0.05210144230769233,
+          "max_drawdown_pct": 0.1750000000000031,
+          "max_loss_streak": 1
+        },
+        "recent": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 15,
+          "fill_rate": 0.3,
+          "avg_pnl_pct": 3.9496336996337065,
+          "effective_ev_pct": 1.184890109890112,
+          "avg_log_return": 0.0005200030470297396,
+          "geometric_return_pct": 0.05201382720523284,
+          "avg_account_return_pct": 0.05210144230769233,
+          "max_drawdown_pct": 0.1750000000000031,
+          "max_loss_streak": 1
+        },
+        "mid": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 41,
+          "fill_rate": 0.205,
+          "avg_pnl_pct": 2.066516917717609,
+          "effective_ev_pct": 0.42363596813210985,
+          "avg_log_return": 0.00018712188762639578,
+          "geometric_return_pct": 0.01871393960188872,
+          "avg_account_return_pct": 0.018750254114996888,
+          "max_drawdown_pct": 0.3496937500000114,
+          "max_loss_streak": 2
+        },
+        "long": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 160,
+          "fill_rate": 0.16,
+          "avg_pnl_pct": 1.5185255925911973,
+          "effective_ev_pct": 0.24296409481459158,
+          "avg_log_return": 0.00010846930862312706,
+          "geometric_return_pct": 0.01084751916313742,
+          "avg_account_return_pct": 0.010872083972547882,
+          "max_drawdown_pct": 0.8488971988997187,
+          "max_loss_streak": 2
+        },
+        "all": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 160,
+          "fill_rate": 0.16,
+          "avg_pnl_pct": 1.5185255925911973,
+          "effective_ev_pct": 0.24296409481459158,
+          "avg_log_return": 0.00010846930862312706,
+          "geometric_return_pct": 0.01084751916313742,
+          "avg_account_return_pct": 0.010872083972547882,
+          "max_drawdown_pct": 0.8488971988997187,
+          "max_loss_streak": 2
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_10PCT_LONG",
+            "direction": "long",
+            "causal_score": 0.00027385503215851856
+          },
+          {
+            "strategy": "LIMIT_7PCT",
+            "direction": "short",
+            "causal_score": 9.284471845123207e-05
+          },
+          {
+            "strategy": "LIMIT_8PCT",
+            "direction": "short",
+            "causal_score": 7.025211567454783e-05
+          },
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 5.423235395041762e-05
+          }
+        ]
+      }
+    },
+    "RAVE/USDT:USDT|2026-08-08T12:21:12.304383+00:00": {
+      "key": "RAVE/USDT:USDT|2026-08-08T12:21:12.304383+00:00",
+      "symbol": "RAVE/USDT:USDT",
+      "detected_at": "2026-08-08T12:21:12.304383+00:00",
+      "registered_at": "2026-08-08T12:21:18.117502+00:00",
+      "signal_batch": "2026-08-08T12:21Z",
+      "status": "pending",
+      "strategy": "LIMIT_9PCT_LONG",
+      "direction": "long",
+      "risk_pct": 0.175,
+      "relative_strength": 5.43962194447372,
       "decision": {
         "strategy": "LIMIT_9PCT_LONG",
         "direction": "long",
