@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T22:41:13.543221+00:00
+- generated_at: 2026-08-08T22:46:14.933806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10890**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T22:41:05.798204+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64950.0
+- 更新: 2026-08-08T22:46:07.068510+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64943.9
 - Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +31.39% | $20,045,140.59 |
-| COOKIE/USDT:USDT | +25.35% | $2,513,949.79 |
-| LIGHT/USDT:USDT | +13.60% | $2,157,642.69 |
-| SAGA/USDT:USDT | +13.10% | $1,026,462.46 |
-| BTW/USDT:USDT | +13.06% | $16,174,923.23 |
+| TUT/USDT:USDT | +32.71% | $20,126,127.13 |
+| COOKIE/USDT:USDT | +26.79% | $2,550,045.39 |
+| LIGHT/USDT:USDT | +13.54% | $2,202,556.76 |
+| BTW/USDT:USDT | +13.33% | $16,193,845.52 |
+| SAGA/USDT:USDT | +13.10% | $1,040,234.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +2.20% | +2.26% |
-| ACE/USDT:USDT | below_1h_threshold | +2.19% | +2.25% |
-| DODO/USDT:USDT | below_1h_threshold | +1.90% | +1.96% |
-| CAP/USDT:USDT | below_1h_threshold | +1.77% | +1.84% |
-| GWEI/USDT:USDT | below_1h_threshold | +1.30% | +1.36% |
+| BSB/USDT:USDT | below_1h_threshold | +2.08% | +2.15% |
+| GWEI/USDT:USDT | below_1h_threshold | +1.90% | +1.97% |
+| COOKIE/USDT:USDT | below_1h_threshold | +1.56% | +1.63% |
+| CAP/USDT:USDT | below_1h_threshold | +1.56% | +1.63% |
+| DODO/USDT:USDT | below_1h_threshold | +1.35% | +1.42% |
 
 ## 7. 次に見るべき不足
 
