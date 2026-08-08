@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T16:41:23.922047+00:00
+- generated_at: 2026-08-08T16:46:30.511222+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10867**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.76** / 初期 $100.00 (+18.76%)
-- 確定: 1233件 (Win 389 / Loss 473 / Flat 371) / pending 5件 / skip 1101件
+- 確定: 1233件 (Win 389 / Loss 473 / Flat 371) / pending 6件 / skip 1102件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000267 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T16:41:15.466855+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=65034.2
-- Funnel: target 961 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 94.3 >= 65=1
+- 更新: 2026-08-08T16:46:18.627029+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=65031.9
+- Funnel: target 961 → liquid 158 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 94.6 >= 65=1, 4h RSI 68.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +13.54% | $14,194,747.83 |
-| TUT/USDT:USDT | +5.41% | $13,954,584.99 |
-| CAP/USDT:USDT | +4.03% | $2,012,485.73 |
-| SKYAI/USDT:USDT | +3.70% | $69,279,770.87 |
-| GWEI/USDT:USDT | +3.48% | $2,046,852.88 |
+| ACE/USDT:USDT | +13.04% | $14,408,852.57 |
+| TUT/USDT:USDT | +8.07% | $14,081,449.84 |
+| CAP/USDT:USDT | +5.42% | $2,033,914.35 |
+| TAKE/USDT:USDT | +5.38% | $1,082,129.81 |
+| TST/USDT:USDT | +3.29% | $1,037,621.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.09% | +4.11% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.64% | +3.66% |
-| GWEI/USDT:USDT | below_1h_threshold | +3.48% | +3.51% |
-| TST/USDT:USDT | below_1h_threshold | +2.65% | +2.67% |
-| BICO/USDT:USDT | below_1h_threshold | +2.35% | +2.38% |
+| TST/USDT:USDT | below_1h_threshold | +3.23% | +3.26% |
+| GWEI/USDT:USDT | below_1h_threshold | +2.92% | +2.94% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.35% | +2.38% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.19% | +2.22% |
+| BANK/USDT:USDT | below_1h_threshold | +2.06% | +2.09% |
 
 ## 7. 次に見るべき不足
 
