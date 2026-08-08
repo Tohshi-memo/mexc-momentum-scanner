@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T04:51:10.836283+00:00
+- generated_at: 2026-08-08T04:56:20.891422+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10809**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.02** / 初期 $100.00 (+18.02%)
-- 確定: 1182件 (Win 381 / Loss 468 / Flat 333) / pending 0件 / skip 1096件
+- 確定: 1182件 (Win 381 / Loss 468 / Flat 333) / pending 0件 / skip 1097件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_10PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000273 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AXTISTOCK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T04:51:03.080320+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=65002.1
-- Funnel: target 961 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-08T04:56:12.762844+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64988.0
+- Funnel: target 961 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +241.41% | $6,127,132.89 |
-| MMT/USDT:USDT | +19.67% | $1,577,206.37 |
-| BLESS/USDT:USDT | +18.15% | $95,913,425.92 |
-| SLX/USDT:USDT | +17.62% | $2,698,657.23 |
-| TUT/USDT:USDT | +17.43% | $2,477,031.77 |
+| JIMOTHY/USDT:USDT | +292.38% | $6,276,159.04 |
+| MMT/USDT:USDT | +21.24% | $1,585,118.25 |
+| BLESS/USDT:USDT | +20.47% | $96,187,813.19 |
+| TUT/USDT:USDT | +19.37% | $2,487,126.93 |
+| SLX/USDT:USDT | +17.11% | $2,706,218.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +4.76% | +4.76% |
-| CAP/USDT:USDT | below_1h_threshold | +4.42% | +4.42% |
-| SLX/USDT:USDT | below_1h_threshold | +3.72% | +3.72% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.20% | +3.19% |
-| UB/USDT:USDT | below_1h_threshold | +2.40% | +2.40% |
+| CAP/USDT:USDT | below_1h_threshold | +4.53% | +4.54% |
+| ACE/USDT:USDT | below_1h_threshold | +3.82% | +3.84% |
+| RE/USDT:USDT | below_1h_threshold | +3.69% | +3.71% |
+| SLX/USDT:USDT | below_1h_threshold | +3.27% | +3.29% |
+| UB/USDT:USDT | below_1h_threshold | +2.85% | +2.87% |
 
 ## 7. 次に見るべき不足
 
