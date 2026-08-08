@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T14:01:17.356506+00:00
+- generated_at: 2026-08-08T14:06:15.139754+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10848**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T14:01:09.461577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64985.4
+- 更新: 2026-08-08T14:06:07.310897+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65008.2
 - Funnel: target 961 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +212.34% | $11,228,469.57 |
-| TUT/USDT:USDT | +86.23% | $9,035,455.34 |
-| BLUAI/USDT:USDT | +35.27% | $4,305,594.59 |
-| MMT/USDT:USDT | +31.89% | $6,612,365.26 |
-| BEAT/USDT:USDT | +31.88% | $27,908,603.09 |
+| JIMOTHY/USDT:USDT | +214.80% | $11,259,908.06 |
+| TUT/USDT:USDT | +87.08% | $9,180,634.84 |
+| BLUAI/USDT:USDT | +31.74% | $4,329,097.84 |
+| BEAT/USDT:USDT | +31.68% | $28,251,412.89 |
+| MMT/USDT:USDT | +28.34% | $6,763,500.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.38% | +1.38% |
-| ACE/USDT:USDT | below_1h_threshold | +0.78% | +0.78% |
-| CAP/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.72% |
-| KORU/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.31% | +2.27% |
+| EPIC/USDT:USDT | below_1h_threshold | +1.90% | +1.87% |
+| DODO/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
+| TUT/USDT:USDT | below_1h_threshold | +0.96% | +0.92% |
+| CAP/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
 
 ## 7. 次に見るべき不足
 
