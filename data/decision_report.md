@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T02:26:24.325762+00:00
+- generated_at: 2026-08-08T02:31:22.881056+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10789**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T02:26:14.695738+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64883.8
-- Funnel: target 961 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1
+- 更新: 2026-08-08T02:31:15.549257+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64920.0
+- Funnel: target 961 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 69.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +87.98% | $4,294,337.06 |
-| BLESS/USDT:USDT | +71.02% | $87,550,205.10 |
-| EPIC/USDT:USDT | +18.90% | $2,395,228.98 |
-| GWEI/USDT:USDT | +18.48% | $2,056,970.43 |
-| BTW/USDT:USDT | +15.78% | $7,020,106.79 |
+| JIMOTHY/USDT:USDT | +94.60% | $4,305,277.72 |
+| BLESS/USDT:USDT | +73.30% | $88,285,621.85 |
+| EPIC/USDT:USDT | +18.41% | $2,397,939.71 |
+| GWEI/USDT:USDT | +16.83% | $2,064,683.21 |
+| BTW/USDT:USDT | +16.17% | $7,049,121.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +4.37% | +4.37% |
-| TUT/USDT:USDT | below_1h_threshold | +3.39% | +3.38% |
-| EPIC/USDT:USDT | below_1h_threshold | +3.13% | +3.13% |
-| GWEI/USDT:USDT | below_1h_threshold | +1.91% | +1.91% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.81% | +1.81% |
+| BICO/USDT:USDT | below_1h_threshold | +2.91% | +2.85% |
+| EPIC/USDT:USDT | below_1h_threshold | +2.71% | +2.65% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.36% | +1.30% |
+| MMT/USDT:USDT | below_1h_threshold | +1.28% | +1.22% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.07% | +1.01% |
 
 ## 7. 次に見るべき不足
 
