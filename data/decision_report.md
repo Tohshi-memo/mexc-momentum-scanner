@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T23:01:19.578726+00:00
+- generated_at: 2026-08-08T23:06:14.644635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10892**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T23:01:10.357387+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64910.6
-- Funnel: target 961 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-08T23:06:08.548640+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64911.6
+- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +40.12% | $20,537,812.15 |
-| COOKIE/USDT:USDT | +26.59% | $2,692,336.36 |
-| SAGA/USDT:USDT | +15.81% | $1,112,378.20 |
-| BTW/USDT:USDT | +15.07% | $15,702,116.71 |
-| CYS/USDT:USDT | +12.19% | $30,880,613.18 |
+| TUT/USDT:USDT | +39.76% | $20,634,312.25 |
+| COOKIE/USDT:USDT | +26.89% | $2,706,898.24 |
+| BTW/USDT:USDT | +15.86% | $15,736,357.45 |
+| SAGA/USDT:USDT | +15.19% | $1,119,941.60 |
+| LIGHT/USDT:USDT | +12.48% | $2,307,265.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| BLUAI/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
 | SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.95% | +0.95% |
-| BICO/USDT:USDT | below_1h_threshold | +0.33% | +0.34% |
-| COOKIE/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.32% |
-| CYS/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +0.70% | +0.71% |
+| CATI/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
+| COOKIE/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
 
 ## 7. 次に見るべき不足
 
