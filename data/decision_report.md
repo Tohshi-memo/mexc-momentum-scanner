@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T21:56:28.163110+00:00
+- generated_at: 2026-08-08T22:01:13.767806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10889**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T21:56:15.637497+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=65001.1
-- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.3 >= 65=1, 4h RSI 87.0 >= 65=1, 4h RSI 69.0 >= 65=1, 4h RSI 69.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-08T22:01:06.059907+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64988.2
+- Funnel: target 961 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +36.58% | $19,069,585.45 |
-| COOKIE/USDT:USDT | +25.35% | $2,340,958.40 |
-| BLUAI/USDT:USDT | +16.17% | $6,925,136.94 |
-| LIGHT/USDT:USDT | +13.60% | $1,747,149.88 |
-| CYS/USDT:USDT | +13.23% | $31,583,873.84 |
+| TUT/USDT:USDT | +32.85% | $19,187,135.15 |
+| COOKIE/USDT:USDT | +25.15% | $2,343,630.94 |
+| BLUAI/USDT:USDT | +14.99% | $6,930,154.16 |
+| BTW/USDT:USDT | +13.19% | $15,891,336.83 |
+| CYS/USDT:USDT | +13.13% | $31,315,110.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +3.55% | +3.62% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.75% | +2.82% |
-| EPIC/USDT:USDT | below_1h_threshold | +2.23% | +2.30% |
-| US/USDT:USDT | below_1h_threshold | +1.85% | +1.92% |
-| LIGHT/USDT:USDT | below_1h_threshold | +1.85% | +1.92% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.28% |
+| BTW/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| ACE/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
+| CYS/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
+| COOKIE/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
 
 ## 7. 次に見るべき不足
 
