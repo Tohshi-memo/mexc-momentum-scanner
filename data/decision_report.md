@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T22:16:19.286450+00:00
+- generated_at: 2026-08-08T22:21:19.926698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10890**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T22:16:09.999050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64970.5
+- 更新: 2026-08-08T22:21:12.135569+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64965.5
 - Funnel: target 961 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +28.42% | $19,600,564.02 |
-| COOKIE/USDT:USDT | +26.79% | $2,423,129.86 |
-| BTW/USDT:USDT | +13.87% | $15,999,990.04 |
-| CYS/USDT:USDT | +12.34% | $31,455,994.32 |
-| LIGHT/USDT:USDT | +12.29% | $2,029,650.32 |
+| TUT/USDT:USDT | +31.07% | $19,688,821.46 |
+| COOKIE/USDT:USDT | +27.20% | $2,446,353.92 |
+| BTW/USDT:USDT | +14.13% | $16,045,569.31 |
+| LIGHT/USDT:USDT | +12.54% | $2,051,836.05 |
+| CYS/USDT:USDT | +11.91% | $31,484,297.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.85% | +1.88% |
-| ACE/USDT:USDT | below_1h_threshold | +1.59% | +1.62% |
-| COOKIE/USDT:USDT | below_1h_threshold | +1.56% | +1.59% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.30% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.22% | +1.25% |
+| ACE/USDT:USDT | below_1h_threshold | +3.80% | +3.84% |
+| GWEI/USDT:USDT | below_1h_threshold | +2.76% | +2.80% |
+| BTW/USDT:USDT | below_1h_threshold | +1.95% | +1.99% |
+| COOKIE/USDT:USDT | below_1h_threshold | +1.89% | +1.93% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.31% |
 
 ## 7. 次に見るべき不足
 
