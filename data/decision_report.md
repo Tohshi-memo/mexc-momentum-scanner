@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T06:21:31.679515+00:00
+- generated_at: 2026-08-08T06:26:37.668888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10817**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.02** / 初期 $100.00 (+18.02%)
-- 確定: 1187件 (Win 381 / Loss 468 / Flat 338) / pending 3件 / skip 1098件
+- 確定: 1187件 (Win 381 / Loss 468 / Flat 338) / pending 4件 / skip 1098件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000298 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $118.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T06:21:17.547462+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64945.0
-- Funnel: target 961 → liquid 175 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.4 >= 65=1
+- 更新: 2026-08-08T06:26:23.974153+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64953.1
+- Funnel: target 961 → liquid 176 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.2 >= 65=1, 4h RSI 78.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +296.75% | $7,329,926.90 |
-| BLESS/USDT:USDT | +46.41% | $91,391,725.96 |
-| MMT/USDT:USDT | +33.81% | $2,099,160.53 |
-| TUT/USDT:USDT | +22.90% | $2,720,874.27 |
-| CYS/USDT:USDT | +18.60% | $16,081,650.06 |
+| JIMOTHY/USDT:USDT | +285.52% | $7,377,599.76 |
+| BLESS/USDT:USDT | +48.95% | $91,951,214.22 |
+| MMT/USDT:USDT | +34.10% | $2,174,906.03 |
+| CYS/USDT:USDT | +24.70% | $16,366,754.50 |
+| TUT/USDT:USDT | +23.75% | $2,730,241.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.68% | +3.71% |
-| BICO/USDT:USDT | below_1h_threshold | +3.51% | +3.54% |
-| SLX/USDT:USDT | below_1h_threshold | +3.15% | +3.18% |
-| PI/USDT:USDT | below_1h_threshold | +0.80% | +0.83% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.66% | +0.69% |
+| SLX/USDT:USDT | below_1h_threshold | +4.61% | +4.63% |
+| BICO/USDT:USDT | below_1h_threshold | +3.51% | +3.53% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.93% | +0.95% |
+| PI/USDT:USDT | below_1h_threshold | +0.83% | +0.85% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.53% | +0.55% |
 
 ## 7. 次に見るべき不足
 
