@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T16:51:30.597116+00:00
+- generated_at: 2026-08-08T16:56:21.546599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10868**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T16:51:20.511078+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=65031.9
-- Funnel: target 961 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 94.5 >= 65=1
+- 更新: 2026-08-08T16:56:11.951422+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65049.4
+- Funnel: target 961 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.3 >= 65=1, 4h RSI 94.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +12.72% | $14,601,948.87 |
-| TUT/USDT:USDT | +7.90% | $14,237,214.57 |
-| TAKE/USDT:USDT | +4.12% | $1,084,089.06 |
-| GWEI/USDT:USDT | +3.64% | $2,049,813.83 |
-| CAP/USDT:USDT | +3.30% | $2,045,775.35 |
+| ACE/USDT:USDT | +10.18% | $14,928,246.67 |
+| TUT/USDT:USDT | +7.21% | $14,419,983.89 |
+| TAKE/USDT:USDT | +5.13% | $1,086,264.71 |
+| TST/USDT:USDT | +4.45% | $1,046,398.38 |
+| SKYAI/USDT:USDT | +3.34% | $70,145,600.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAKE/USDT:USDT | below_1h_threshold | +4.93% | +4.95% |
-| GWEI/USDT:USDT | below_1h_threshold | +3.69% | +3.71% |
-| CAP/USDT:USDT | below_1h_threshold | +3.14% | +3.16% |
-| BLUAI/USDT:USDT | below_1h_threshold | +2.66% | +2.68% |
-| TST/USDT:USDT | below_1h_threshold | +2.39% | +2.42% |
+| TST/USDT:USDT | below_1h_threshold | +4.39% | +4.39% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.44% | +3.44% |
+| BLUAI/USDT:USDT | below_1h_threshold | +3.24% | +3.24% |
+| GWEI/USDT:USDT | below_1h_threshold | +2.67% | +2.67% |
+| BTW/USDT:USDT | below_1h_threshold | +2.19% | +2.19% |
 
 ## 7. 次に見るべき不足
 
