@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T06:41:32.991112+00:00
+- generated_at: 2026-08-08T06:46:35.084433+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10820**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.43** / 初期 $100.00 (+18.43%)
-- 確定: 1190件 (Win 382 / Loss 468 / Flat 340) / pending 3件 / skip 1098件
+- 確定: 1190件 (Win 382 / Loss 468 / Flat 340) / pending 4件 / skip 1098件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000333 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLESS/USDT:USDT `LIMIT_9PCT_LONG` TP_HIT account +0.34% 残高後 $118.43
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T06:41:18.989401+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64945.3
-- Funnel: target 961 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 74.7 >= 65=1
+- 更新: 2026-08-08T06:46:21.756957+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64966.7
+- Funnel: target 961 → liquid 178 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.8 >= 65=1, 4h RSI 74.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +285.90% | $7,484,338.65 |
-| MMT/USDT:USDT | +40.45% | $2,458,851.32 |
-| BLESS/USDT:USDT | +38.08% | $93,492,567.89 |
-| TUT/USDT:USDT | +23.26% | $2,790,347.93 |
-| CYS/USDT:USDT | +22.87% | $16,660,695.65 |
+| JIMOTHY/USDT:USDT | +284.64% | $7,522,049.14 |
+| BLESS/USDT:USDT | +42.88% | $93,936,500.12 |
+| MMT/USDT:USDT | +40.74% | $2,542,763.70 |
+| TUT/USDT:USDT | +24.35% | $2,807,742.12 |
+| CYS/USDT:USDT | +23.01% | $16,771,004.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SLX/USDT:USDT | below_1h_threshold | +4.72% | +4.75% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.97% | +3.01% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.22% | +1.25% |
-| PI/USDT:USDT | below_1h_threshold | +1.17% | +1.20% |
-| RE/USDT:USDT | below_1h_threshold | +1.15% | +1.18% |
+| SLX/USDT:USDT | below_1h_threshold | +3.93% | +3.93% |
+| RE/USDT:USDT | below_1h_threshold | +2.17% | +2.17% |
+| COAI/USDT:USDT | below_1h_threshold | +1.46% | +1.46% |
+| PI/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
+| TAO/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
 
 ## 7. 次に見るべき不足
 
