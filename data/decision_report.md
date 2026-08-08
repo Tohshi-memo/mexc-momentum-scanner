@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T01:16:21.240164+00:00
+- generated_at: 2026-08-08T01:21:18.078707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10781**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T01:16:13.547801+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64912.4
-- Funnel: target 961 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-08T01:21:10.330511+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64900.6
+- Funnel: target 961 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +96.16% | $4,055,925.04 |
-| BLESS/USDT:USDT | +29.06% | $79,426,809.46 |
-| HEI/USDT:USDT | +20.69% | $20,595,076.92 |
-| SLX/USDT:USDT | +19.15% | $1,760,847.44 |
-| CYS/USDT:USDT | +15.28% | $16,274,309.77 |
+| JIMOTHY/USDT:USDT | +90.39% | $4,081,562.23 |
+| BLESS/USDT:USDT | +30.34% | $79,673,010.48 |
+| SLX/USDT:USDT | +20.68% | $1,769,853.20 |
+| HEI/USDT:USDT | +18.68% | $20,711,994.52 |
+| EPIC/USDT:USDT | +14.32% | $2,358,497.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +3.13% | +3.09% |
-| HEI/USDT:USDT | below_1h_threshold | +2.71% | +2.67% |
-| KGEN/USDT:USDT | below_1h_threshold | +2.65% | +2.62% |
-| GWEI/USDT:USDT | below_1h_threshold | +2.43% | +2.40% |
-| TUT/USDT:USDT | below_1h_threshold | +1.88% | +1.84% |
+| SYN/USDT:USDT | below_1h_threshold | +3.04% | +3.02% |
+| KGEN/USDT:USDT | below_1h_threshold | +2.65% | +2.64% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.55% | +2.53% |
+| TUT/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| UB/USDT:USDT | below_1h_threshold | +1.99% | +1.97% |
 
 ## 7. 次に見るべき不足
 
