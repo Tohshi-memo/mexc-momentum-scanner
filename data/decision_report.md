@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T14:56:29.750766+00:00
+- generated_at: 2026-08-08T15:01:15.272601+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10855**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T14:56:17.201536+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=65126.3
-- Funnel: target 961 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1, 4h RSI 74.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-08T15:01:07.382995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=65115.4
+- Funnel: target 961 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +239.94% | $11,728,110.20 |
-| TUT/USDT:USDT | +81.77% | $10,871,448.83 |
-| BEAT/USDT:USDT | +38.58% | $31,230,307.30 |
-| BLUAI/USDT:USDT | +35.80% | $4,514,739.25 |
-| MMT/USDT:USDT | +23.98% | $7,063,176.28 |
+| JIMOTHY/USDT:USDT | +227.67% | $11,767,066.50 |
+| TUT/USDT:USDT | +81.88% | $10,949,429.77 |
+| BLUAI/USDT:USDT | +36.93% | $4,515,415.64 |
+| BEAT/USDT:USDT | +34.88% | $30,830,051.63 |
+| MMT/USDT:USDT | +24.56% | $7,050,822.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_relative_strength | +5.19% | +4.97% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.30% | +4.08% |
-| BNB/USDT:USDT | below_1h_threshold | +1.78% | +1.57% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.65% | +1.43% |
-| SUI/USDT:USDT | below_1h_threshold | +1.46% | +1.24% |
+| TUT/USDT:USDT | below_1h_threshold | +1.37% | +1.35% |
+| BICO/USDT:USDT | below_1h_threshold | +1.07% | +1.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
+| RAVE/USDT:USDT | below_1h_threshold | +0.95% | +0.92% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.60% | +0.58% |
 
 ## 7. 次に見るべき不足
 
