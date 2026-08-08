@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T19:26:27.813023+00:00
+- generated_at: 2026-08-08T19:31:22.600661+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10879**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T19:26:16.782375+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64994.1
-- Funnel: target 961 → liquid 154 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.1 >= 65=1, 4h RSI 77.3 >= 65=1
+- 更新: 2026-08-08T19:31:12.446080+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64991.2
+- Funnel: target 961 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATI/USDT:USDT | +25.31% | $1,474,294.19 |
-| BLUAI/USDT:USDT | +24.40% | $5,942,705.12 |
-| COOKIE/USDT:USDT | +18.68% | $1,306,197.76 |
-| TUT/USDT:USDT | +14.97% | $16,953,517.00 |
-| LIGHT/USDT:USDT | +12.35% | $1,135,753.37 |
+| BLUAI/USDT:USDT | +23.64% | $5,974,236.80 |
+| COOKIE/USDT:USDT | +21.04% | $1,318,056.06 |
+| CATI/USDT:USDT | +20.14% | $1,623,312.57 |
+| TUT/USDT:USDT | +14.54% | $16,994,245.14 |
+| LIGHT/USDT:USDT | +12.73% | $1,143,838.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +2.33% | +2.37% |
-| LIGHT/USDT:USDT | below_1h_threshold | +2.10% | +2.13% |
-| US/USDT:USDT | below_1h_threshold | +1.87% | +1.90% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.69% | +1.72% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.65% | +1.68% |
+| ACE/USDT:USDT | below_1h_threshold | +4.76% | +4.79% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.70% | +4.74% |
+| KAITO/USDT:USDT | below_1h_threshold | +4.08% | +4.12% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.44% | +2.48% |
+| TUT/USDT:USDT | below_1h_threshold | +2.27% | +2.31% |
 
 ## 7. 次に見るべき不足
 
