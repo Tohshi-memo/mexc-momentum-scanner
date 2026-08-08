@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T14:36:16.107867+00:00
+- generated_at: 2026-08-08T14:41:26.016698+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10853**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T14:36:09.306513+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=65145.7
-- Funnel: target 961 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1, 4h RSI 78.4 >= 65=1
+- 更新: 2026-08-08T14:41:16.168151+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=65096.7
+- Funnel: target 961 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +220.55% | $11,494,961.33 |
-| TUT/USDT:USDT | +91.18% | $10,195,148.19 |
-| BLUAI/USDT:USDT | +35.81% | $4,450,011.48 |
-| BEAT/USDT:USDT | +35.03% | $29,927,974.82 |
-| MMT/USDT:USDT | +25.61% | $6,957,551.22 |
+| JIMOTHY/USDT:USDT | +215.70% | $11,527,169.63 |
+| TUT/USDT:USDT | +91.48% | $10,331,924.21 |
+| BLUAI/USDT:USDT | +38.41% | $4,465,884.78 |
+| BEAT/USDT:USDT | +35.18% | $30,149,100.41 |
+| MMT/USDT:USDT | +23.28% | $7,013,209.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +4.98% | +4.73% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.83% | +4.59% |
-| FORM/USDT:USDT | below_1h_threshold | +3.51% | +3.26% |
-| TUT/USDT:USDT | below_1h_threshold | +3.01% | +2.76% |
-| BNB/USDT:USDT | below_1h_threshold | +2.02% | +1.77% |
+| GIGGLE/USDT:USDT | below_relative_strength | +5.13% | +4.96% |
+| FORM/USDT:USDT | below_1h_threshold | +4.24% | +4.07% |
+| TUT/USDT:USDT | below_1h_threshold | +3.29% | +3.12% |
+| CAP/USDT:USDT | below_1h_threshold | +2.72% | +2.54% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.60% | +2.43% |
 
 ## 7. 次に見るべき不足
 
