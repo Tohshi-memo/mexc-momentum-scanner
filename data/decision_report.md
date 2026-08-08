@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T21:26:18.736544+00:00
+- generated_at: 2026-08-08T21:31:18.694840+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10885**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T21:26:10.885606+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=65014.0
-- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-08T21:31:11.014299+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=65002.2
+- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COOKIE/USDT:USDT | +21.25% | $2,125,072.78 |
-| LIGHT/USDT:USDT | +13.85% | $1,624,037.08 |
-| TUT/USDT:USDT | +13.62% | $17,747,505.87 |
-| BLUAI/USDT:USDT | +13.00% | $6,829,252.47 |
-| CATI/USDT:USDT | +11.56% | $2,179,171.96 |
+| COOKIE/USDT:USDT | +21.76% | $2,150,174.85 |
+| LIGHT/USDT:USDT | +13.60% | $1,643,721.62 |
+| TUT/USDT:USDT | +12.98% | $17,770,890.85 |
+| BLUAI/USDT:USDT | +12.51% | $6,843,353.23 |
+| CATI/USDT:USDT | +11.15% | $2,180,478.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAI/USDT:USDT | below_1h_threshold | +3.49% | +3.54% |
-| BLUAI/USDT:USDT | below_1h_threshold | +2.47% | +2.53% |
-| LIGHT/USDT:USDT | below_1h_threshold | +2.01% | +2.06% |
-| ACE/USDT:USDT | below_1h_threshold | +1.67% | +1.72% |
-| US/USDT:USDT | below_1h_threshold | +1.26% | +1.31% |
+| XAI/USDT:USDT | below_1h_threshold | +3.86% | +3.93% |
+| BLUAI/USDT:USDT | below_1h_threshold | +1.80% | +1.87% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.68% | +1.75% |
+| US/USDT:USDT | below_1h_threshold | +1.02% | +1.09% |
+| HFT/USDT:USDT | below_1h_threshold | +0.99% | +1.06% |
 
 ## 7. 次に見るべき不足
 
