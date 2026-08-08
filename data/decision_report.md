@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T22:51:28.070768+00:00
+- generated_at: 2026-08-08T22:56:28.271731+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10891**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T22:51:17.935379+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64945.2
-- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 96.4 >= 65=1
+- 更新: 2026-08-08T22:56:20.118677+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64929.9
+- Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +39.84% | $20,382,242.81 |
-| COOKIE/USDT:USDT | +32.44% | $2,620,009.46 |
-| SAGA/USDT:USDT | +13.93% | $1,058,646.91 |
-| BTW/USDT:USDT | +13.73% | $16,208,894.45 |
-| LIGHT/USDT:USDT | +13.73% | $2,232,357.25 |
+| TUT/USDT:USDT | +40.21% | $20,489,601.66 |
+| COOKIE/USDT:USDT | +31.00% | $2,657,137.83 |
+| BTW/USDT:USDT | +14.73% | $16,243,294.41 |
+| SAGA/USDT:USDT | +14.28% | $1,083,031.89 |
+| LIGHT/USDT:USDT | +12.98% | $2,237,381.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +2.18% | +2.25% |
-| BTW/USDT:USDT | below_1h_threshold | +1.60% | +1.67% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.50% | +1.57% |
-| GWEI/USDT:USDT | below_1h_threshold | +1.42% | +1.49% |
-| LIGHT/USDT:USDT | below_1h_threshold | +1.22% | +1.29% |
+| TUT/USDT:USDT | below_1h_threshold | +4.92% | +5.01% |
+| BTW/USDT:USDT | below_1h_threshold | +2.49% | +2.58% |
+| BSB/USDT:USDT | below_1h_threshold | +2.13% | +2.23% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.25% | +1.34% |
+| GWEI/USDT:USDT | below_1h_threshold | +1.22% | +1.32% |
 
 ## 7. 次に見るべき不足
 
