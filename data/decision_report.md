@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T19:56:32.991354+00:00
+- generated_at: 2026-08-08T20:01:17.199827+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10881**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T19:56:18.582350+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=65050.5
-- Funnel: target 961 → liquid 154 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-08T20:01:09.506195+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=65037.2
+- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +22.57% | $6,179,781.51 |
-| COOKIE/USDT:USDT | +20.02% | $1,385,431.22 |
-| CATI/USDT:USDT | +16.88% | $1,891,415.18 |
-| CYS/USDT:USDT | +15.47% | $31,067,864.79 |
-| LIGHT/USDT:USDT | +12.42% | $1,266,439.53 |
+| BLUAI/USDT:USDT | +25.20% | $6,213,611.43 |
+| COOKIE/USDT:USDT | +19.60% | $1,390,131.86 |
+| CATI/USDT:USDT | +18.30% | $1,912,868.20 |
+| CYS/USDT:USDT | +14.98% | $30,569,665.16 |
+| LIGHT/USDT:USDT | +13.04% | $1,263,508.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.73% | +4.67% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.92% | +3.87% |
-| BLUAI/USDT:USDT | below_1h_threshold | +3.58% | +3.53% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.42% | +2.37% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.40% | +2.34% |
+| DODO/USDT:USDT | below_1h_threshold | +2.22% | +2.23% |
+| BTW/USDT:USDT | below_1h_threshold | +1.55% | +1.56% |
+| BLUAI/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.89% | +0.90% |
+| CATI/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
 
 ## 7. 次に見るべき不足
 
