@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T07:41:12.332164+00:00
+- generated_at: 2026-08-08T07:46:17.234311+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10821**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T07:41:04.537230+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64923.9
+- 更新: 2026-08-08T07:46:09.416558+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64919.6
 - Funnel: target 961 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +270.48% | $7,945,320.06 |
-| MMT/USDT:USDT | +34.28% | $3,864,461.41 |
-| TUT/USDT:USDT | +32.84% | $3,007,831.83 |
-| BLESS/USDT:USDT | +27.70% | $93,130,929.54 |
-| CYS/USDT:USDT | +24.94% | $17,395,151.71 |
+| JIMOTHY/USDT:USDT | +268.21% | $7,991,558.23 |
+| TUT/USDT:USDT | +33.14% | $3,027,073.36 |
+| MMT/USDT:USDT | +32.24% | $3,934,048.33 |
+| BLESS/USDT:USDT | +27.58% | $93,269,320.64 |
+| CYS/USDT:USDT | +25.46% | $17,505,571.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.48% | +4.56% |
-| HEI/USDT:USDT | below_1h_threshold | +3.70% | +3.78% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.13% | +2.21% |
-| CYS/USDT:USDT | below_1h_threshold | +1.57% | +1.66% |
-| CRV/USDT:USDT | below_1h_threshold | +1.49% | +1.57% |
+| TUT/USDT:USDT | below_1h_threshold | +4.76% | +4.85% |
+| CYS/USDT:USDT | below_1h_threshold | +2.16% | +2.25% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.77% | +1.86% |
+| CRV/USDT:USDT | below_1h_threshold | +1.67% | +1.76% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.19% | +1.28% |
 
 ## 7. 次に見るべき不足
 
