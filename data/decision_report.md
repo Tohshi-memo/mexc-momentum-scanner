@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-08T14:51:31.814918+00:00
+- generated_at: 2026-08-08T14:56:29.750766+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10855**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.42** / 初期 $100.00 (+18.42%)
-- 確定: 1223件 (Win 385 / Loss 469 / Flat 369) / pending 4件 / skip 1099件
+- 確定: 1223件 (Win 385 / Loss 469 / Flat 369) / pending 5件 / skip 1099件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $118.42
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-08T14:51:19.675418+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=65126.7
-- Funnel: target 961 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1
+- 更新: 2026-08-08T14:56:17.201536+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=65126.3
+- Funnel: target 961 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.1 >= 65=1, 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +238.69% | $11,695,793.49 |
-| TUT/USDT:USDT | +86.23% | $10,712,447.88 |
-| BEAT/USDT:USDT | +37.33% | $30,771,882.43 |
-| BLUAI/USDT:USDT | +35.33% | $4,496,705.53 |
-| MMT/USDT:USDT | +23.92% | $7,048,172.05 |
+| JIMOTHY/USDT:USDT | +239.94% | $11,728,110.20 |
+| TUT/USDT:USDT | +81.77% | $10,871,448.83 |
+| BEAT/USDT:USDT | +38.58% | $31,230,307.30 |
+| BLUAI/USDT:USDT | +35.80% | $4,514,739.25 |
+| MMT/USDT:USDT | +23.98% | $7,063,176.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FORM/USDT:USDT | below_relative_strength | +5.17% | +4.95% |
-| CAP/USDT:USDT | below_1h_threshold | +4.95% | +4.73% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +3.67% | +3.45% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.62% | +3.40% |
-| TST/USDT:USDT | below_1h_threshold | +2.07% | +1.85% |
+| CAP/USDT:USDT | below_relative_strength | +5.19% | +4.97% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.30% | +4.08% |
+| BNB/USDT:USDT | below_1h_threshold | +1.78% | +1.57% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.65% | +1.43% |
+| SUI/USDT:USDT | below_1h_threshold | +1.46% | +1.24% |
 
 ## 7. 次に見るべき不足
 
