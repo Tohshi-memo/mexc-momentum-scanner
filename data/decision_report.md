@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T12:26:39.829242+00:00
+- generated_at: 2026-08-09T12:31:36.969873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11019**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T12:26:26.379884+00:00 / 保存件数 288/288
+- 更新: 2026-08-09T12:31:20.983983+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h -0.01% price=64915.7
-- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.6 >= 65=1, 4h RSI 93.5 >= 65=1
+- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 5 → strict 3
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.7 >= 65=1, 4h RSI 93.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +151.77% | $69,409,469.95 |
-| BMT/USDT:USDT | +80.89% | $4,954,655.15 |
-| XAN/USDT:USDT | +44.90% | $3,001,854.89 |
-| CATI/USDT:USDT | +44.01% | $2,865,088.77 |
-| COOKIE/USDT:USDT | +36.24% | $5,951,572.22 |
+| TUT/USDT:USDT | +149.82% | $69,619,460.99 |
+| BMT/USDT:USDT | +86.03% | $5,031,333.06 |
+| XAN/USDT:USDT | +44.26% | $3,081,641.17 |
+| CATI/USDT:USDT | +41.78% | $2,947,103.17 |
+| COOKIE/USDT:USDT | +35.31% | $5,977,696.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +3.41% | +3.42% |
-| BANK/USDT:USDT | below_1h_threshold | +2.97% | +2.98% |
-| CAP/USDT:USDT | below_1h_threshold | +1.96% | +1.97% |
-| SPK/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
-| ON/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
+| TUT/USDT:USDT | below_1h_threshold | +3.14% | +3.15% |
+| CYS/USDT:USDT | below_1h_threshold | +2.79% | +2.80% |
+| CC/USDT:USDT | below_1h_threshold | +2.13% | +2.14% |
+| CAP/USDT:USDT | below_1h_threshold | +1.98% | +1.99% |
+| SPK/USDT:USDT | below_1h_threshold | +1.82% | +1.83% |
 
 ## 7. 次に見るべき不足
 
