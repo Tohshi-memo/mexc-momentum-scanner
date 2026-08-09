@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T18:46:37.897733+00:00
+- generated_at: 2026-08-09T18:51:27.582487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11070**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T18:46:26.475406+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=65194.1
-- Funnel: target 961 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 94.7 >= 65=1, 4h RSI 80.6 >= 65=1
+- 更新: 2026-08-09T18:51:20.289404+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=65185.3
+- Funnel: target 961 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 94.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +42.45% | $13,017,798.56 |
-| COOKIE/USDT:USDT | +28.91% | $7,269,483.61 |
-| TUT/USDT:USDT | +18.20% | $77,076,602.98 |
-| TST/USDT:USDT | +17.08% | $1,880,660.61 |
-| XAN/USDT:USDT | +14.61% | $6,324,804.46 |
+| BMT/USDT:USDT | +35.28% | $13,126,439.43 |
+| COOKIE/USDT:USDT | +30.44% | $7,420,136.16 |
+| TUT/USDT:USDT | +17.58% | $77,216,133.59 |
+| XAN/USDT:USDT | +14.93% | $6,329,936.17 |
+| TST/USDT:USDT | +13.52% | $1,902,710.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.99% | +3.95% |
-| XAN/USDT:USDT | below_1h_threshold | +3.47% | +3.43% |
-| ACE/USDT:USDT | below_1h_threshold | +2.79% | +2.75% |
-| CYS/USDT:USDT | below_1h_threshold | +1.84% | +1.80% |
-| PEOPLE/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
+| TUT/USDT:USDT | below_1h_threshold | +4.91% | +4.89% |
+| XAN/USDT:USDT | below_1h_threshold | +3.76% | +3.74% |
+| ACE/USDT:USDT | below_1h_threshold | +2.41% | +2.38% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.57% | +1.55% |
+| BTW/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
 
 ## 7. 次に見るべき不足
 
