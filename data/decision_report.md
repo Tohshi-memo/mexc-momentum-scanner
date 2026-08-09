@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T04:26:24.722773+00:00
+- generated_at: 2026-08-09T04:31:13.480557+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10934**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T04:26:16.072238+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64785.0
-- Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1, 4h RSI 75.9 >= 65=1
+- 更新: 2026-08-09T04:31:06.933316+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64803.1
+- Funnel: target 961 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +100.91% | $31,041,092.68 |
-| SAGA/USDT:USDT | +36.02% | $1,751,843.65 |
-| BLUAI/USDT:USDT | +35.99% | $8,033,522.83 |
-| IOTX/USDT:USDT | +35.43% | $3,006,297.04 |
-| COOKIE/USDT:USDT | +24.43% | $4,168,407.92 |
+| TUT/USDT:USDT | +102.38% | $31,150,227.42 |
+| SAGA/USDT:USDT | +37.28% | $1,804,750.49 |
+| IOTX/USDT:USDT | +35.67% | $3,041,826.01 |
+| BLUAI/USDT:USDT | +34.97% | $8,060,987.20 |
+| COOKIE/USDT:USDT | +24.53% | $4,182,041.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.19% | +4.15% |
-| TUT/USDT:USDT | below_1h_threshold | +2.75% | +2.71% |
-| COOKIE/USDT:USDT | below_1h_threshold | +2.19% | +2.15% |
-| PIXEL/USDT:USDT | below_1h_threshold | +2.16% | +2.12% |
-| UB/USDT:USDT | below_1h_threshold | +1.77% | +1.73% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.57% | +4.50% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.12% | +4.05% |
+| MMT/USDT:USDT | below_1h_threshold | +3.88% | +3.81% |
+| TUT/USDT:USDT | below_1h_threshold | +3.50% | +3.43% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.28% | +2.21% |
 
 ## 7. 次に見るべき不足
 
