@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T18:56:56.387610+00:00
+- generated_at: 2026-08-09T19:01:20.629510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11071**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T18:56:45.259813+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65178.0
-- Funnel: target 961 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1, 4h RSI 72.9 >= 65=1, 4h RSI 94.9 >= 65=1, 4h RSI 81.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-09T19:01:12.518606+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65167.2
+- Funnel: target 961 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +37.59% | $13,176,947.05 |
-| COOKIE/USDT:USDT | +28.67% | $7,596,980.62 |
-| TUT/USDT:USDT | +19.94% | $77,520,496.76 |
-| TST/USDT:USDT | +15.85% | $1,919,105.89 |
-| XAN/USDT:USDT | +15.30% | $6,342,815.11 |
+| BMT/USDT:USDT | +36.38% | $13,239,546.48 |
+| COOKIE/USDT:USDT | +30.92% | $7,478,381.36 |
+| TUT/USDT:USDT | +20.18% | $76,452,555.76 |
+| TST/USDT:USDT | +19.05% | $1,921,205.34 |
+| XAN/USDT:USDT | +10.82% | $6,392,765.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +4.10% | +4.08% |
-| CYS/USDT:USDT | below_1h_threshold | +3.00% | +2.99% |
-| INX/USDT:USDT | below_1h_threshold | +1.89% | +1.88% |
-| NIL/USDT:USDT | below_1h_threshold | +1.85% | +1.84% |
-| ACE/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.31% | +1.31% |
+| BMT/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
+| TUT/USDT:USDT | below_1h_threshold | +0.84% | +0.84% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
 
 ## 7. 次に見るべき不足
 
