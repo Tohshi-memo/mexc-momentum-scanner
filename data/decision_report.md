@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T19:26:31.827333+00:00
+- generated_at: 2026-08-09T19:31:25.933908+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11082**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T19:26:21.155254+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=65186.0
-- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.4 >= 65=1, 4h RSI 84.1 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 98.5 >= 65=1
+- 更新: 2026-08-09T19:31:16.943006+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=65186.2
+- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 84.1 >= 65=1, 4h RSI 71.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +52.05% | $2,286,921.01 |
-| BMT/USDT:USDT | +43.54% | $13,739,393.56 |
-| TUT/USDT:USDT | +42.28% | $78,748,413.11 |
-| COOKIE/USDT:USDT | +26.74% | $7,943,461.73 |
-| XAN/USDT:USDT | +12.83% | $6,471,215.66 |
+| TST/USDT:USDT | +44.92% | $2,372,611.40 |
+| TUT/USDT:USDT | +42.93% | $79,003,226.20 |
+| BMT/USDT:USDT | +39.21% | $13,775,780.66 |
+| COOKIE/USDT:USDT | +26.42% | $7,983,953.42 |
+| 4/USDT:USDT | +12.71% | $1,871,631.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.45% | +3.42% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.53% | +2.50% |
-| XAN/USDT:USDT | below_1h_threshold | +2.30% | +2.27% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.90% |
-| BOME/USDT:USDT | below_1h_threshold | +1.80% | +1.77% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.08% | +3.06% |
+| BMT/USDT:USDT | below_1h_threshold | +3.02% | +3.00% |
+| BICO/USDT:USDT | below_1h_threshold | +2.59% | +2.56% |
+| BOME/USDT:USDT | below_1h_threshold | +2.20% | +2.17% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.10% | +2.07% |
 
 ## 7. 次に見るべき不足
 
