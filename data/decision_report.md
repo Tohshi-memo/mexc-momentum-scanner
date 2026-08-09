@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T05:16:24.830483+00:00
+- generated_at: 2026-08-09T05:21:19.715445+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **10941**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.44** / 初期 $100.00 (+17.44%)
-- 確定: 1248件 (Win 390 / Loss 480 / Flat 378) / pending 0件 / skip 1167件
+- 確定: 1248件 (Win 390 / Loss 480 / Flat 378) / pending 0件 / skip 1168件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000043 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CAP/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.10% 残高後 $117.44
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T05:16:15.501738+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64759.1
-- Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-09T05:21:11.345598+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64759.9
+- Funnel: target 961 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +108.78% | $32,369,647.23 |
-| BLUAI/USDT:USDT | +41.01% | $8,304,236.07 |
-| IOTX/USDT:USDT | +32.95% | $3,395,769.83 |
-| SAGA/USDT:USDT | +28.29% | $3,120,332.22 |
-| BICO/USDT:USDT | +23.78% | $28,259,358.94 |
+| TUT/USDT:USDT | +104.50% | $32,590,240.53 |
+| BLUAI/USDT:USDT | +44.66% | $8,371,386.53 |
+| IOTX/USDT:USDT | +30.59% | $3,415,006.30 |
+| SAGA/USDT:USDT | +25.92% | $3,370,562.30 |
+| BICO/USDT:USDT | +23.11% | $28,308,518.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOTX/USDT:USDT | below_1h_threshold | +4.47% | +4.47% |
-| COOKIE/USDT:USDT | below_1h_threshold | +4.20% | +4.20% |
-| BLUAI/USDT:USDT | below_1h_threshold | +2.86% | +2.86% |
-| BICO/USDT:USDT | below_1h_threshold | +2.27% | +2.27% |
-| MMT/USDT:USDT | below_1h_threshold | +1.69% | +1.69% |
+| COOKIE/USDT:USDT | below_1h_threshold | +4.55% | +4.55% |
+| IOTX/USDT:USDT | below_1h_threshold | +2.46% | +2.46% |
+| BTW/USDT:USDT | below_1h_threshold | +2.02% | +2.02% |
+| MMT/USDT:USDT | below_1h_threshold | +2.01% | +2.01% |
+| BICO/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
 
 ## 7. 次に見るべき不足
 
