@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T13:31:24.132475+00:00
+- generated_at: 2026-08-09T13:36:23.605513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11027**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.24** / 初期 $100.00 (+17.24%)
-- 確定: 1261件 (Win 390 / Loss 481 / Flat 390) / pending 5件 / skip 1236件
+- 確定: 1261件 (Win 390 / Loss 481 / Flat 390) / pending 6件 / skip 1236件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000300 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTW/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $117.24
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T13:31:13.672441+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=65070.1
-- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-09T13:36:13.100475+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=65101.5
+- Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +119.43% | $71,006,624.16 |
-| BMT/USDT:USDT | +86.64% | $5,690,150.96 |
-| COOKIE/USDT:USDT | +39.21% | $6,209,856.53 |
-| MUBARAK/USDT:USDT | +24.39% | $3,070,851.48 |
-| BEAT/USDT:USDT | +22.44% | $68,625,833.43 |
+| TUT/USDT:USDT | +112.92% | $71,221,846.28 |
+| BMT/USDT:USDT | +76.74% | $5,760,316.35 |
+| COOKIE/USDT:USDT | +43.22% | $6,229,844.74 |
+| MUBARAK/USDT:USDT | +26.21% | $3,101,791.52 |
+| BEAT/USDT:USDT | +21.82% | $68,971,312.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.34% | +4.12% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.70% | +3.48% |
-| BTW/USDT:USDT | below_1h_threshold | +3.07% | +2.85% |
-| COOKIE/USDT:USDT | below_1h_threshold | +2.96% | +2.74% |
-| BMT/USDT:USDT | below_1h_threshold | +1.38% | +1.16% |
+| MUBARAK/USDT:USDT | below_relative_strength | +5.21% | +4.94% |
+| BTW/USDT:USDT | below_1h_threshold | +3.67% | +3.40% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.43% | +3.16% |
+| WLD/USDT:USDT | below_1h_threshold | +1.46% | +1.19% |
+| TAO/USDT:USDT | below_1h_threshold | +1.22% | +0.95% |
 
 ## 7. 次に見るべき不足
 
