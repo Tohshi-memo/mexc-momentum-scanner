@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T15:36:27.731746+00:00
+- generated_at: 2026-08-09T15:41:24.384680+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11041**
 
@@ -70,10 +70,10 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T15:36:17.026691+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=65199.9
-- Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-09T15:41:16.298472+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=65210.7
+- Funnel: target 961 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 92.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +113.57% | $74,852,488.81 |
-| BMT/USDT:USDT | +88.56% | $6,834,318.39 |
-| MUBARAK/USDT:USDT | +42.55% | $4,109,866.48 |
-| COOKIE/USDT:USDT | +27.51% | $6,764,033.54 |
-| BEAT/USDT:USDT | +25.19% | $69,698,341.21 |
+| TUT/USDT:USDT | +112.28% | $75,001,977.16 |
+| BMT/USDT:USDT | +88.87% | $6,862,417.22 |
+| MUBARAK/USDT:USDT | +42.48% | $4,183,866.30 |
+| COOKIE/USDT:USDT | +26.48% | $6,796,016.49 |
+| BEAT/USDT:USDT | +24.49% | $70,126,357.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +3.57% | +3.63% |
-| BLUAI/USDT:USDT | below_1h_threshold | +3.54% | +3.59% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.50% | +3.56% |
-| BMT/USDT:USDT | below_1h_threshold | +2.97% | +3.03% |
-| CRV/USDT:USDT | below_1h_threshold | +2.44% | +2.50% |
+| INX/USDT:USDT | below_1h_threshold | +3.82% | +3.86% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.47% | +3.51% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.18% | +3.22% |
+| BLUAI/USDT:USDT | below_1h_threshold | +3.17% | +3.21% |
+| FORM/USDT:USDT | below_1h_threshold | +2.82% | +2.86% |
 
 ## 7. 次に見るべき不足
 
