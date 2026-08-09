@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T16:56:43.749755+00:00
+- generated_at: 2026-08-09T17:01:15.091379+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11048**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T16:56:27.803795+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65216.9
-- Funnel: target 961 → liquid 155 → pre 50 → checked 50 → surge 6 → strict 2
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 98.0 >= 65=1, 4h RSI 94.1 >= 65=1, 4h RSI 73.4 >= 65=1, 4h RSI 82.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-09T17:01:07.433233+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65204.6
+- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +19.95% | $8,588,645.39 |
-| MUBARAK/USDT:USDT | +12.50% | $5,037,834.20 |
-| XAN/USDT:USDT | +7.59% | $5,746,353.07 |
-| AKE/USDT:USDT | +5.63% | $3,022,315.16 |
-| CYS/USDT:USDT | +5.55% | $18,822,498.28 |
+| BMT/USDT:USDT | +21.16% | $8,676,813.98 |
+| MUBARAK/USDT:USDT | +10.21% | $5,088,617.11 |
+| CYS/USDT:USDT | +7.57% | $18,282,346.30 |
+| XAN/USDT:USDT | +5.96% | $5,776,793.37 |
+| PENGU/USDT:USDT | +5.81% | $11,432,450.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.53% | +4.51% |
-| COOKIE/USDT:USDT | below_1h_threshold | +3.94% | +3.92% |
-| ACE/USDT:USDT | below_1h_threshold | +3.18% | +3.16% |
-| POWER/USDT:USDT | below_1h_threshold | +2.35% | +2.34% |
-| BOME/USDT:USDT | below_1h_threshold | +2.05% | +2.04% |
+| BICO/USDT:USDT | below_1h_threshold | +1.65% | +1.65% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
+| ACE/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
+| CYS/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
 
 ## 7. 次に見るべき不足
 
