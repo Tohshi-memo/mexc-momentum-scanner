@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T15:01:17.166825+00:00
+- generated_at: 2026-08-09T15:06:14.524304+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11039**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T15:01:09.280526+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=65223.2
-- Funnel: target 961 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-09T15:06:06.509186+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=65229.6
+- Funnel: target 961 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +114.06% | $73,166,236.33 |
-| BMT/USDT:USDT | +82.96% | $6,509,069.52 |
-| MUBARAK/USDT:USDT | +31.88% | $3,553,311.97 |
-| COOKIE/USDT:USDT | +28.23% | $6,675,262.81 |
-| XAN/USDT:USDT | +24.86% | $5,149,510.60 |
+| TUT/USDT:USDT | +109.06% | $73,484,855.79 |
+| BMT/USDT:USDT | +82.65% | $6,557,058.29 |
+| MUBARAK/USDT:USDT | +33.63% | $3,606,123.76 |
+| COOKIE/USDT:USDT | +28.43% | $6,689,867.04 |
+| IOTX/USDT:USDT | +24.54% | $7,538,724.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
-| ON/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
-| BLUAI/USDT:USDT | below_1h_threshold | +1.07% | +1.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.70% | +0.72% |
-| WLD/USDT:USDT | below_1h_threshold | +0.53% | +0.55% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.65% | +2.66% |
+| CATI/USDT:USDT | below_1h_threshold | +1.08% | +1.10% |
+| CYS/USDT:USDT | below_1h_threshold | +0.80% | +0.81% |
+| ON/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
+| US/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
 
 ## 7. 次に見るべき不足
 
