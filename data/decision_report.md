@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T17:51:36.197675+00:00
+- generated_at: 2026-08-09T17:56:31.776302+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11059**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
-- 確定: 1280件 (Win 395 / Loss 492 / Flat 393) / pending 3件 / skip 1254件
+- 確定: 1280件 (Win 395 / Loss 492 / Flat 393) / pending 3件 / skip 1255件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000146 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T17:51:20.996619+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=65187.4
-- Funnel: target 961 → liquid 156 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 98.4 >= 65=1, 4h RSI 84.8 >= 65=1, 4h RSI 79.3 >= 65=1, 4h RSI 92.5 >= 65=1
+- 更新: 2026-08-09T17:56:20.284178+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=65166.4
+- Funnel: target 961 → liquid 156 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 98.4 >= 65=1, 4h RSI 85.2 >= 65=1, 4h RSI 69.2 >= 65=1, 4h RSI 92.8 >= 65=1, 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +35.57% | $11,655,443.44 |
-| MUBARAK/USDT:USDT | +12.91% | $5,817,963.02 |
-| XAN/USDT:USDT | +11.37% | $6,078,958.71 |
-| TUT/USDT:USDT | +10.50% | $76,426,287.77 |
-| BICO/USDT:USDT | +10.12% | $39,043,474.21 |
+| BMT/USDT:USDT | +35.85% | $11,853,387.09 |
+| MUBARAK/USDT:USDT | +14.91% | $5,868,608.42 |
+| XAN/USDT:USDT | +9.48% | $6,107,152.00 |
+| TUT/USDT:USDT | +8.61% | $76,536,404.62 |
+| 4/USDT:USDT | +7.94% | $1,498,891.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.62% | +4.65% |
-| XAN/USDT:USDT | below_1h_threshold | +4.26% | +4.29% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.98% | +4.00% |
-| TST/USDT:USDT | below_1h_threshold | +3.12% | +3.14% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.08% | +3.11% |
+| TUT/USDT:USDT | below_1h_threshold | +4.48% | +4.54% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +4.14% | +4.20% |
+| COOKIE/USDT:USDT | below_1h_threshold | +3.24% | +3.29% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.08% | +3.14% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.69% | +2.75% |
 
 ## 7. 次に見るべき不足
 
