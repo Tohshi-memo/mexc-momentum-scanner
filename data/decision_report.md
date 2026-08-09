@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T16:41:37.893587+00:00
+- generated_at: 2026-08-09T16:46:47.172239+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11047**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.18** / 初期 $100.00 (+17.18%)
-- 確定: 1279件 (Win 395 / Loss 491 / Flat 393) / pending 4件 / skip 1239件
+- 確定: 1279件 (Win 395 / Loss 491 / Flat 393) / pending 4件 / skip 1241件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000186 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XMR/USDT:USDT `MARKET` TP_HIT account +0.33% 残高後 $117.18
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T16:41:23.020314+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65211.8
-- Funnel: target 961 → liquid 155 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 98.1 >= 65=1, 4h RSI 93.6 >= 65=1, 4h RSI 71.8 >= 65=1
+- 更新: 2026-08-09T16:46:29.570837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65232.0
+- Funnel: target 961 → liquid 155 → pre 50 → checked 50 → surge 6 → strict 3
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 98.1 >= 65=1, 4h RSI 93.5 >= 65=1, 4h RSI 69.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +22.90% | $8,153,775.82 |
-| MUBARAK/USDT:USDT | +7.66% | $4,835,641.09 |
-| AKE/USDT:USDT | +6.56% | $2,924,919.96 |
-| XAN/USDT:USDT | +5.25% | $5,677,315.44 |
-| ACE/USDT:USDT | +4.49% | $14,567,219.13 |
+| BMT/USDT:USDT | +22.33% | $8,289,684.66 |
+| MUBARAK/USDT:USDT | +7.66% | $4,889,288.32 |
+| ACE/USDT:USDT | +6.25% | $14,581,811.22 |
+| AKE/USDT:USDT | +6.08% | $2,957,849.20 |
+| BEAT/USDT:USDT | +5.61% | $72,184,579.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.49% | +4.49% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.09% | +4.08% |
-| PENGU/USDT:USDT | below_1h_threshold | +4.08% | +4.07% |
-| CYS/USDT:USDT | below_1h_threshold | +3.33% | +3.33% |
-| COOKIE/USDT:USDT | below_1h_threshold | +3.13% | +3.13% |
+| XAN/USDT:USDT | below_1h_threshold | +4.67% | +4.63% |
+| PENGU/USDT:USDT | below_1h_threshold | +4.47% | +4.43% |
+| BLUAI/USDT:USDT | below_1h_threshold | +3.53% | +3.49% |
+| COOKIE/USDT:USDT | below_1h_threshold | +3.45% | +3.42% |
+| INX/USDT:USDT | below_1h_threshold | +2.67% | +2.63% |
 
 ## 7. 次に見るべき不足
 
