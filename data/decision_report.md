@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T21:21:20.520593+00:00
+- generated_at: 2026-08-09T21:26:13.721035+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11094**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T21:21:12.551242+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=65100.7
+- 更新: 2026-08-09T21:26:07.395264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=65110.9
 - Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +38.40% | $16,154,837.18 |
-| TST/USDT:USDT | +31.10% | $2,943,089.32 |
-| COOKIE/USDT:USDT | +23.77% | $7,799,826.94 |
-| TUT/USDT:USDT | +22.26% | $82,840,451.82 |
-| BICO/USDT:USDT | +16.26% | $40,223,882.82 |
+| BMT/USDT:USDT | +40.14% | $16,306,190.50 |
+| TST/USDT:USDT | +33.00% | $2,947,700.17 |
+| COOKIE/USDT:USDT | +24.49% | $7,816,610.69 |
+| TUT/USDT:USDT | +22.29% | $82,942,312.61 |
+| CYS/USDT:USDT | +16.55% | $16,950,304.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FORM/USDT:USDT | below_1h_threshold | +2.14% | +2.16% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +2.00% |
-| NIL/USDT:USDT | below_1h_threshold | +1.92% | +1.94% |
-| ACE/USDT:USDT | below_1h_threshold | +1.84% | +1.86% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.46% | +1.49% |
+| FORM/USDT:USDT | below_1h_threshold | +2.51% | +2.51% |
+| NIL/USDT:USDT | below_1h_threshold | +2.09% | +2.09% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.73% | +1.74% |
+| BTW/USDT:USDT | below_1h_threshold | +1.01% | +1.02% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
 
 ## 7. 次に見るべき不足
 
