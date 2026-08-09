@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T16:11:11.544107+00:00
+- generated_at: 2026-08-09T16:16:36.964746+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11041**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 1274件 (Win 394 / Loss 487 / Flat 393) / pending 4件 / skip 1236件
+- 確定: 1274件 (Win 394 / Loss 487 / Flat 393) / pending 5件 / skip 1236件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000261 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T16:11:03.778029+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=65236.8
-- Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-09T16:16:24.848889+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=65210.5
+- Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UB/USDT:USDT | +4.29% | $1,312,873.12 |
-| BLUAI/USDT:USDT | +2.34% | $7,407,002.74 |
-| ACE/USDT:USDT | +2.04% | $14,409,996.39 |
-| AKE/USDT:USDT | +1.90% | $2,433,437.04 |
-| ON/USDT:USDT | +1.82% | $3,743,375.64 |
+| ACE/USDT:USDT | +5.58% | $14,465,679.67 |
+| UB/USDT:USDT | +3.22% | $1,324,926.04 |
+| ON/USDT:USDT | +3.02% | $3,752,255.51 |
+| PENGU/USDT:USDT | +2.73% | $9,684,271.30 |
+| AKE/USDT:USDT | +2.29% | $2,453,433.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +4.34% | +4.29% |
-| BLUAI/USDT:USDT | below_1h_threshold | +2.34% | +2.30% |
-| ACE/USDT:USDT | below_1h_threshold | +2.04% | +2.00% |
-| AKE/USDT:USDT | below_1h_threshold | +1.87% | +1.83% |
-| ON/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
+| UB/USDT:USDT | below_1h_threshold | +3.33% | +3.33% |
+| ON/USDT:USDT | below_1h_threshold | +3.03% | +3.02% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.99% | +2.98% |
+| AKE/USDT:USDT | below_1h_threshold | +2.32% | +2.32% |
+| BLUAI/USDT:USDT | below_1h_threshold | +2.05% | +2.05% |
 
 ## 7. 次に見るべき不足
 
