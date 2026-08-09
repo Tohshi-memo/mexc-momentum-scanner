@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T15:51:26.971238+00:00
+- generated_at: 2026-08-09T15:56:21.302006+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11041**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 1274件 (Win 394 / Loss 487 / Flat 393) / pending 3件 / skip 1236件
+- 確定: 1274件 (Win 394 / Loss 487 / Flat 393) / pending 4件 / skip 1236件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000261 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MUBARAK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T15:51:19.010331+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=65202.2
-- Funnel: target 961 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.0 >= 65=1
+- 更新: 2026-08-09T15:56:14.219406+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=65202.3
+- Funnel: target 961 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.2 >= 65=1, 4h RSI 65.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +108.04% | $75,783,925.87 |
-| BMT/USDT:USDT | +93.16% | $6,958,864.56 |
-| MUBARAK/USDT:USDT | +42.09% | $4,282,439.89 |
-| COOKIE/USDT:USDT | +25.66% | $6,818,300.94 |
-| BEAT/USDT:USDT | +25.08% | $70,402,178.43 |
+| TUT/USDT:USDT | +101.48% | $76,066,704.42 |
+| BMT/USDT:USDT | +88.41% | $7,011,798.09 |
+| MUBARAK/USDT:USDT | +43.20% | $4,347,473.64 |
+| CASHCAT/USDT:USDT | +27.60% | $1,380,797.47 |
+| COOKIE/USDT:USDT | +26.07% | $6,824,154.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | INX/USDT:USDT | below_1h_threshold | +4.71% | +4.76% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +4.47% | +4.52% |
-| BMT/USDT:USDT | below_1h_threshold | +4.43% | +4.49% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.98% | +4.04% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.48% | +3.54% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +4.22% | +4.27% |
+| FORM/USDT:USDT | below_1h_threshold | +3.25% | +3.30% |
+| TST/USDT:USDT | below_1h_threshold | +2.88% | +2.93% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.76% | +2.81% |
 
 ## 7. 次に見るべき不足
 
