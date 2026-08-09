@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T23:01:19.058558+00:00
+- generated_at: 2026-08-09T23:06:29.501872+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11096**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T23:01:11.641017+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=65021.1
+- 更新: 2026-08-09T23:06:21.325955+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=65071.6
 - Funnel: target 961 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +41.72% | $17,243,499.91 |
-| TST/USDT:USDT | +34.78% | $3,043,468.09 |
-| TUT/USDT:USDT | +29.32% | $81,705,193.19 |
-| CYS/USDT:USDT | +25.59% | $17,257,688.28 |
-| COOKIE/USDT:USDT | +23.29% | $7,229,535.59 |
+| TST/USDT:USDT | +32.45% | $3,053,945.36 |
+| BMT/USDT:USDT | +30.95% | $17,321,177.23 |
+| TUT/USDT:USDT | +29.10% | $81,785,174.45 |
+| COOKIE/USDT:USDT | +25.62% | $7,237,896.24 |
+| CYS/USDT:USDT | +23.11% | $17,320,509.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +0.94% | +0.97% |
-| INX/USDT:USDT | below_1h_threshold | +0.71% | +0.75% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.70% | +0.73% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.47% | +0.51% |
-| BTW/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
+| COOKIE/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
+| XAN/USDT:USDT | below_1h_threshold | +0.98% | +0.94% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.94% | +0.90% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.70% | +0.66% |
+| COAI/USDT:USDT | below_1h_threshold | +0.68% | +0.64% |
 
 ## 7. 次に見るべき不足
 
