@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T19:41:23.731675+00:00
+- generated_at: 2026-08-09T19:46:26.814791+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11085**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T19:41:13.718939+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=65174.2
-- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.9 >= 65=1, 4h RSI 82.2 >= 65=1
+- 更新: 2026-08-09T19:46:17.651357+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=65171.6
+- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.3 >= 65=1, 4h RSI 82.3 >= 65=1, 4h RSI 98.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +40.42% | $13,872,973.14 |
-| TST/USDT:USDT | +33.12% | $2,552,182.90 |
-| TUT/USDT:USDT | +25.75% | $80,292,071.09 |
-| COOKIE/USDT:USDT | +22.81% | $8,085,119.63 |
-| XAN/USDT:USDT | +10.70% | $6,527,847.56 |
+| BMT/USDT:USDT | +42.65% | $13,904,869.57 |
+| TST/USDT:USDT | +31.40% | $2,606,665.39 |
+| TUT/USDT:USDT | +25.55% | $80,645,396.18 |
+| COOKIE/USDT:USDT | +23.29% | $8,102,229.18 |
+| XAN/USDT:USDT | +11.66% | $6,531,237.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +4.31% | +4.30% |
-| BICO/USDT:USDT | below_1h_threshold | +2.65% | +2.64% |
-| 4/USDT:USDT | below_1h_threshold | +2.52% | +2.51% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.08% | +2.07% |
+| BOME/USDT:USDT | below_1h_threshold | +3.87% | +3.86% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.89% | +2.88% |
+| BICO/USDT:USDT | below_1h_threshold | +2.70% | +2.69% |
+| 4/USDT:USDT | below_1h_threshold | +2.60% | +2.59% |
 | AAOISTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.92% |
 
 ## 7. 次に見るべき不足
