@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T10:56:31.632482+00:00
+- generated_at: 2026-08-09T11:01:19.690677+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11004**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T10:56:19.660770+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64937.4
-- Funnel: target 961 → liquid 155 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.3 >= 65=1, 4h RSI 72.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-09T11:01:11.824425+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64933.5
+- Funnel: target 961 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +125.36% | $66,984,481.95 |
-| BMT/USDT:USDT | +98.15% | $3,689,997.73 |
-| COOKIE/USDT:USDT | +39.11% | $5,349,324.81 |
-| MUBARAK/USDT:USDT | +28.23% | $2,519,339.56 |
-| IOTX/USDT:USDT | +26.77% | $6,429,947.11 |
+| TUT/USDT:USDT | +147.15% | $66,512,968.53 |
+| BMT/USDT:USDT | +92.17% | $3,727,540.82 |
+| COOKIE/USDT:USDT | +43.01% | $5,405,396.49 |
+| MUBARAK/USDT:USDT | +30.44% | $2,528,964.48 |
+| IOTX/USDT:USDT | +26.77% | $6,442,503.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_relative_strength | +5.08% | +4.94% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.91% | +3.77% |
-| TUT/USDT:USDT | below_1h_threshold | +2.95% | +2.82% |
-| TST/USDT:USDT | below_1h_threshold | +2.72% | +2.59% |
-| BILL/USDT:USDT | below_1h_threshold | +2.65% | +2.52% |
+| TUT/USDT:USDT | below_1h_threshold | +1.02% | +1.01% |
+| ON/USDT:USDT | below_1h_threshold | +0.78% | +0.77% |
+| CYS/USDT:USDT | below_1h_threshold | +0.49% | +0.48% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.43% | +0.42% |
+| SPOTSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
 
 ## 7. 次に見るべき不足
 
