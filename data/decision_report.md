@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T21:56:21.635310+00:00
+- generated_at: 2026-08-09T22:01:21.449186+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11095**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T21:56:12.335107+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=65173.6
-- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-09T22:01:13.581324+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=65200.9
+- Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +38.81% | $16,905,964.41 |
-| TST/USDT:USDT | +32.02% | $2,993,886.58 |
-| TUT/USDT:USDT | +28.85% | $83,685,715.62 |
-| COOKIE/USDT:USDT | +28.51% | $7,882,713.12 |
-| BICO/USDT:USDT | +16.83% | $40,490,162.76 |
+| BMT/USDT:USDT | +36.78% | $16,921,928.99 |
+| TUT/USDT:USDT | +31.71% | $82,118,287.12 |
+| TST/USDT:USDT | +29.68% | $2,965,686.88 |
+| COOKIE/USDT:USDT | +29.15% | $7,407,532.87 |
+| CYS/USDT:USDT | +17.20% | $16,396,971.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.05% | +3.95% |
-| FORM/USDT:USDT | below_1h_threshold | +3.86% | +3.77% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.37% | +3.28% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.02% | +2.93% |
-| COOKIE/USDT:USDT | below_1h_threshold | +2.76% | +2.67% |
+| TUT/USDT:USDT | below_1h_threshold | +0.82% | +0.77% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.68% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.73% | +0.68% |
+| NIL/USDT:USDT | below_1h_threshold | +0.43% | +0.38% |
+| ON/USDT:USDT | below_1h_threshold | +0.40% | +0.34% |
 
 ## 7. 次に見るべき不足
 
