@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T21:11:22.420872+00:00
+- generated_at: 2026-08-09T21:16:25.293457+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11094**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T21:11:12.901152+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=65107.2
+- 更新: 2026-08-09T21:16:17.654027+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=65103.0
 - Funnel: target 961 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +49.81% | $15,922,615.36 |
-| TST/USDT:USDT | +32.26% | $2,929,297.15 |
-| TUT/USDT:USDT | +24.28% | $82,604,086.00 |
-| COOKIE/USDT:USDT | +22.89% | $7,772,889.91 |
-| XAN/USDT:USDT | +16.25% | $7,090,612.33 |
+| BMT/USDT:USDT | +42.49% | $16,022,584.36 |
+| TST/USDT:USDT | +30.66% | $2,935,963.10 |
+| COOKIE/USDT:USDT | +23.37% | $7,784,888.38 |
+| TUT/USDT:USDT | +20.24% | $82,733,464.64 |
+| XAN/USDT:USDT | +16.49% | $7,109,781.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FORM/USDT:USDT | below_1h_threshold | +2.92% | +2.93% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.91% | +1.92% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
-| BTW/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
+| FORM/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
+| ACE/USDT:USDT | below_1h_threshold | +1.74% | +1.76% |
+| NIL/USDT:USDT | below_1h_threshold | +1.57% | +1.59% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.30% | +1.32% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +0.66% | +0.68% |
 
 ## 7. 次に見るべき不足
 
