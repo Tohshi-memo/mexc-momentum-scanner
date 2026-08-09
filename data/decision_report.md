@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-09T10:01:18.649980+00:00
+- generated_at: 2026-08-09T10:06:22.830609+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **10996**
+- closed shadow trades: **10997**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.60% / filled 20/20。**
-- 全期間 MARKET基準: n=10996, expectancy=-0.01%
+- 全期間 MARKET基準: n=10997, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+2.60%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,9 +22,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.60% | **+2.60%** |
-| LIMIT_BB3S | 8/20 | 40.0% | +3.67% | **+1.47%** |
+| LIMIT_BB3S | 9/20 | 45.0% | +2.82% | **+1.27%** |
 | LIMIT_8PCT | 4/20 | 20.0% | +5.85% | **+1.17%** |
-| LIMIT_1PCT | 16/20 | 80.0% | +1.44% | **+1.15%** |
+| LIMIT_1PCT | 16/20 | 80.0% | +1.38% | **+1.10%** |
 | LIMIT_7PCT | 4/20 | 20.0% | +5.40% | **+1.08%** |
 
 ### シャドウ上位 LONG
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$628.11** / 初期 $100.00 (+528.11%)
-- 確定: 3931件 (Win 1230 / Loss 1281 / Flat 1420) / skip 3626件
+- 確定: 3931件 (Win 1230 / Loss 1281 / Flat 1420) / skip 3627件
 - 成長率目線: 平均log +0.000467 / 幾何平均 +0.047% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_8PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: XAI/USDT:USDT `LIMIT_FIB1272_LONG` SL_HIT account -0.50% 残高後 $628.11
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$142.00** / 初期 $100.00 (+42.00%)
-- 確定: 1512件 (Win 424 / Loss 360 / Flat 728) / skip 2895件
+- 確定: 1512件 (Win 424 / Loss 360 / Flat 728) / skip 2896件
 - 成長率目線: 平均log +0.000232 / 幾何平均 +0.023% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_8PCT` (selected_by_robust_growth_score) / robust_score +0.1164 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: TUT/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $142.00
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.44** / 初期 $100.00 (+17.44%)
-- 確定: 1248件 (Win 390 / Loss 480 / Flat 378) / pending 0件 / skip 1227件
+- 確定: 1248件 (Win 390 / Loss 480 / Flat 378) / pending 0件 / skip 1228件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000226 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000206 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CAP/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account -0.10% 残高後 $117.44
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T10:01:10.862264+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64850.8
-- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-09T10:06:13.260880+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64865.9
+- Funnel: target 961 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +117.40% | $63,390,315.96 |
-| BMT/USDT:USDT | +86.26% | $2,503,310.67 |
-| COOKIE/USDT:USDT | +30.39% | $5,091,108.41 |
-| IOTX/USDT:USDT | +24.98% | $6,225,999.93 |
-| MUBARAK/USDT:USDT | +22.83% | $2,232,089.94 |
+| TUT/USDT:USDT | +104.80% | $63,767,977.66 |
+| BMT/USDT:USDT | +100.69% | $2,682,735.61 |
+| COOKIE/USDT:USDT | +32.95% | $5,106,363.44 |
+| IOTX/USDT:USDT | +24.62% | $6,269,695.23 |
+| MUBARAK/USDT:USDT | +22.96% | $2,262,621.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +2.39% | +2.39% |
-| RBRKSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.60% |
-| CYS/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
-| TST/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.38% | +0.38% |
+| TST/USDT:USDT | below_1h_threshold | +2.07% | +2.05% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
+| COOKIE/USDT:USDT | below_1h_threshold | +0.93% | +0.91% |
+| FORM/USDT:USDT | below_1h_threshold | +0.86% | +0.84% |
+| CATI/USDT:USDT | below_1h_threshold | +0.51% | +0.49% |
 
 ## 7. 次に見るべき不足
 
