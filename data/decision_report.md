@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-09T11:46:38.218903+00:00
+- generated_at: 2026-08-09T11:51:39.409565+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11011**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-09T11:46:22.434876+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64963.5
-- Funnel: target 961 → liquid 153 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.1 >= 65=1, 4h RSI 69.1 >= 65=1, 4h RSI 98.5 >= 65=1
+- 更新: 2026-08-09T11:51:26.222426+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64955.5
+- Funnel: target 961 → liquid 154 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +156.96% | $68,847,964.79 |
-| BMT/USDT:USDT | +80.96% | $4,429,765.54 |
-| COOKIE/USDT:USDT | +41.99% | $5,765,249.86 |
-| XAN/USDT:USDT | +32.77% | $1,480,435.17 |
-| MUBARAK/USDT:USDT | +26.67% | $2,719,455.58 |
+| TUT/USDT:USDT | +140.02% | $69,151,424.32 |
+| BMT/USDT:USDT | +85.49% | $4,521,951.67 |
+| COOKIE/USDT:USDT | +42.29% | $5,776,055.91 |
+| XAN/USDT:USDT | +33.20% | $1,582,251.35 |
+| MUBARAK/USDT:USDT | +26.87% | $2,735,798.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +4.27% | +4.21% |
-| CRV/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
-| INX/USDT:USDT | below_1h_threshold | +1.55% | +1.49% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.54% | +1.48% |
-| US/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
+| XAN/USDT:USDT | below_1h_threshold | +4.37% | +4.33% |
+| TST/USDT:USDT | below_1h_threshold | +4.23% | +4.19% |
+| CRV/USDT:USDT | below_1h_threshold | +1.64% | +1.59% |
+| INX/USDT:USDT | below_1h_threshold | +1.55% | +1.50% |
+| NIL/USDT:USDT | below_1h_threshold | +1.18% | +1.14% |
 
 ## 7. 次に見るべき不足
 
