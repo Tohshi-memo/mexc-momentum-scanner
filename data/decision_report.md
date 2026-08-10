@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T01:56:22.749576+00:00
+- generated_at: 2026-08-10T02:01:13.737823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11112**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T01:56:12.551245+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=65174.4
-- Funnel: target 961 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 84.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-10T02:01:05.836080+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=65133.0
+- Funnel: target 961 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +43.82% | $18,366,999.19 |
-| TUT/USDT:USDT | +38.36% | $84,691,587.32 |
-| XAN/USDT:USDT | +20.12% | $8,759,156.49 |
-| TST/USDT:USDT | +19.36% | $3,311,954.67 |
-| CAP/USDT:USDT | +19.18% | $2,223,553.79 |
+| BMT/USDT:USDT | +48.64% | $18,404,133.29 |
+| TUT/USDT:USDT | +36.45% | $82,651,877.91 |
+| TST/USDT:USDT | +18.19% | $3,222,503.56 |
+| CAP/USDT:USDT | +17.28% | $2,095,344.06 |
+| XAN/USDT:USDT | +15.20% | $8,816,017.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +2.45% | +2.09% |
-| AKE/USDT:USDT | below_1h_threshold | +2.43% | +2.08% |
-| SPX/USDT:USDT | below_1h_threshold | +2.22% | +1.87% |
-| UB/USDT:USDT | below_1h_threshold | +1.66% | +1.31% |
-| TST/USDT:USDT | below_1h_threshold | +1.62% | +1.27% |
+| BMT/USDT:USDT | below_1h_threshold | +2.80% | +2.86% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.14% |
+| BOME/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.61% | +0.67% |
+| WABSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.39% |
 
 ## 7. 次に見るべき不足
 
