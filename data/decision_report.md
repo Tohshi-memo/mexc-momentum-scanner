@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T10:06:21.027898+00:00
+- generated_at: 2026-08-10T10:11:21.094815+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11149**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.25** / 初期 $100.00 (+17.25%)
-- 確定: 1301件 (Win 403 / Loss 505 / Flat 393) / pending 1件 / skip 1315件
+- 確定: 1301件 (Win 403 / Loss 505 / Flat 393) / pending 2件 / skip 1315件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000215 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CYS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.25
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T10:06:11.450710+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=65027.9
-- Funnel: target 958 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-10T10:11:11.985933+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=65011.7
+- Funnel: target 958 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +52.55% | $3,194,440.29 |
-| LONGXIA/USDT:USDT | +48.91% | $1,112,982.23 |
-| GRVT/USDT:USDT | +31.10% | $3,962,301.37 |
-| NIL/USDT:USDT | +22.06% | $4,904,254.11 |
-| CAP/USDT:USDT | +19.53% | $6,821,516.17 |
+| TST/USDT:USDT | +53.41% | $3,267,613.09 |
+| LONGXIA/USDT:USDT | +52.91% | $1,132,673.08 |
+| GRVT/USDT:USDT | +28.12% | $4,028,256.36 |
+| NIL/USDT:USDT | +20.93% | $5,027,070.40 |
+| CAP/USDT:USDT | +17.10% | $6,948,384.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.24% | +4.10% |
-| BMT/USDT:USDT | below_1h_threshold | +2.75% | +2.61% |
-| BICO/USDT:USDT | below_1h_threshold | +2.04% | +1.90% |
-| NIL/USDT:USDT | below_1h_threshold | +1.66% | +1.52% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.57% | +1.44% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.59% | +4.49% |
+| BICO/USDT:USDT | below_1h_threshold | +4.21% | +4.10% |
+| COAI/USDT:USDT | below_1h_threshold | +2.82% | +2.71% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.14% | +2.04% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.91% | +1.80% |
 
 ## 7. 次に見るべき不足
 
