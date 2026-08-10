@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T17:11:28.238979+00:00
+- generated_at: 2026-08-10T17:16:25.792947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11180**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T17:11:19.750589+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=63954.5
+- 更新: 2026-08-10T17:16:17.851249+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=63933.4
 - Funnel: target 962 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +8.83% | $7,621,635.06 |
-| MUBARAK/USDT:USDT | +5.83% | $7,713,793.15 |
-| CYS/USDT:USDT | +5.32% | $27,504,966.74 |
-| CASHCAT/USDT:USDT | +5.23% | $1,466,276.75 |
-| UB/USDT:USDT | +4.88% | $1,266,670.15 |
+| MUBARAK/USDT:USDT | +6.93% | $7,738,872.58 |
+| CASHCAT/USDT:USDT | +6.62% | $1,468,097.63 |
+| BTW/USDT:USDT | +6.02% | $7,690,842.29 |
+| UB/USDT:USDT | +4.57% | $1,276,656.59 |
+| CYS/USDT:USDT | +4.46% | $27,650,387.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.73% | +4.63% |
-| GRVT/USDT:USDT | below_1h_threshold | +3.45% | +3.35% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.68% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.59% | +1.48% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.47% | +1.37% |
+| CYS/USDT:USDT | below_1h_threshold | +4.03% | +3.96% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.30% | +3.23% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.65% | +2.58% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
 
 ## 7. 次に見るべき不足
 
