@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T16:16:29.634057+00:00
+- generated_at: 2026-08-10T16:21:28.829063+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11177**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.05** / 初期 $100.00 (+17.05%)
-- 確定: 1302件 (Win 403 / Loss 506 / Flat 393) / pending 1件 / skip 1347件
+- 確定: 1302件 (Win 403 / Loss 506 / Flat 393) / pending 1件 / skip 1348件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000054 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CYS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T16:16:21.139416+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64157.0
-- Funnel: target 962 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-08-10T16:21:18.379932+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=64063.4
+- Funnel: target 962 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUBARAK/USDT:USDT | +5.33% | $8,257,751.43 |
-| BMT/USDT:USDT | +3.50% | $18,204,931.76 |
-| TUT/USDT:USDT | +3.46% | $45,089,748.75 |
-| TST/USDT:USDT | +3.25% | $5,222,592.96 |
-| COOKIE/USDT:USDT | +3.08% | $4,541,431.36 |
+| TUT/USDT:USDT | +7.15% | $45,254,403.33 |
+| TST/USDT:USDT | +4.50% | $5,244,068.76 |
+| BTW/USDT:USDT | +4.24% | $7,526,078.22 |
+| EPIC/USDT:USDT | +4.19% | $3,005,770.81 |
+| BMT/USDT:USDT | +4.09% | $18,232,796.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.51% | +3.68% |
-| TUT/USDT:USDT | below_1h_threshold | +3.46% | +3.64% |
-| TST/USDT:USDT | below_1h_threshold | +3.07% | +3.24% |
-| COOKIE/USDT:USDT | below_1h_threshold | +3.00% | +3.17% |
-| BTW/USDT:USDT | below_1h_threshold | +2.77% | +2.94% |
+| TST/USDT:USDT | below_1h_threshold | +4.51% | +4.83% |
+| BTW/USDT:USDT | below_1h_threshold | +4.24% | +4.56% |
+| EPIC/USDT:USDT | below_1h_threshold | +4.15% | +4.47% |
+| BMT/USDT:USDT | below_1h_threshold | +4.14% | +4.45% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.77% | +4.09% |
 
 ## 7. 次に見るべき不足
 
