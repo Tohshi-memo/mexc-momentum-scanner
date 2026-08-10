@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T21:46:37.298461+00:00
+- generated_at: 2026-08-10T21:51:18.782689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11197**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T21:46:26.162599+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=64000.1
+- 更新: 2026-08-10T21:51:12.586012+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=63960.6
 - Funnel: target 962 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +87.52% | $8,732,600.62 |
-| SQD/USDT:USDT | +11.07% | $2,846,480.41 |
-| CYS/USDT:USDT | +10.85% | $28,178,478.39 |
-| BSPSTOCK/USDT:USDT | +10.27% | $1,113,760.65 |
-| DODO/USDT:USDT | +10.19% | $1,505,772.42 |
+| BLUAI/USDT:USDT | +87.47% | $8,767,648.17 |
+| SQD/USDT:USDT | +11.59% | $2,857,638.71 |
+| CYS/USDT:USDT | +10.29% | $28,219,063.75 |
+| BSPSTOCK/USDT:USDT | +10.06% | $1,116,135.39 |
+| CRV/USDT:USDT | +8.16% | $6,822,761.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACT/USDT:USDT | below_1h_threshold | +2.53% | +2.73% |
-| ACE/USDT:USDT | below_1h_threshold | +1.73% | +1.94% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.53% | +1.74% |
-| CYS/USDT:USDT | below_1h_threshold | +0.99% | +1.19% |
-| CRV/USDT:USDT | below_1h_threshold | +0.81% | +1.01% |
+| CAP/USDT:USDT | below_1h_threshold | +3.47% | +3.73% |
+| ACT/USDT:USDT | below_1h_threshold | +1.65% | +1.91% |
+| ACE/USDT:USDT | below_1h_threshold | +1.39% | +1.65% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.94% | +1.21% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.96% |
 
 ## 7. 次に見るべき不足
 
