@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T08:01:20.093291+00:00
+- generated_at: 2026-08-10T08:06:28.060334+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11134**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.31** / 初期 $100.00 (+18.31%)
-- 確定: 1287件 (Win 400 / Loss 494 / Flat 393) / pending 2件 / skip 1315件
+- 確定: 1287件 (Win 400 / Loss 494 / Flat 393) / pending 3件 / skip 1315件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000396 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $118.31
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T08:01:10.791199+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=65213.6
-- Funnel: target 958 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-10T08:06:18.002683+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=65260.0
+- Funnel: target 958 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +40.02% | $21,020,621.82 |
-| ACT/USDT:USDT | +31.32% | $1,112,239.19 |
-| CAP/USDT:USDT | +27.59% | $5,557,271.61 |
-| GRVT/USDT:USDT | +24.78% | $1,856,409.99 |
-| TST/USDT:USDT | +16.90% | $2,356,430.41 |
+| BMT/USDT:USDT | +37.79% | $21,070,265.63 |
+| ACT/USDT:USDT | +26.93% | $1,154,326.71 |
+| GRVT/USDT:USDT | +24.83% | $1,875,420.94 |
+| CAP/USDT:USDT | +24.00% | $5,615,639.08 |
+| TST/USDT:USDT | +21.02% | $2,362,971.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.90% |
-| TST/USDT:USDT | below_1h_threshold | +0.69% | +0.64% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.67% | +0.62% |
-| COAI/USDT:USDT | below_1h_threshold | +0.61% | +0.57% |
+| TST/USDT:USDT | below_relative_strength | +5.08% | +4.96% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.13% | +1.01% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.11% | +0.99% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +1.09% | +0.97% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.00% | +0.88% |
 
 ## 7. 次に見るべき不足
 
