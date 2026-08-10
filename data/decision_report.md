@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T15:56:26.790813+00:00
+- generated_at: 2026-08-10T16:01:45.063764+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11176**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.05** / 初期 $100.00 (+17.05%)
-- 確定: 1302件 (Win 403 / Loss 506 / Flat 393) / pending 1件 / skip 1345件
+- 確定: 1302件 (Win 403 / Loss 506 / Flat 393) / pending 1件 / skip 1346件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000054 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CYS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T15:56:17.111089+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.61% price=64200.0
-- Funnel: target 962 → liquid 185 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-08-10T16:01:34.632823+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64232.1
+- Funnel: target 962 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +97.85% | $12,394,203.38 |
-| LONGXIA/USDT:USDT | +52.02% | $2,590,629.34 |
-| TST/USDT:USDT | +29.56% | $5,143,592.87 |
-| GRVT/USDT:USDT | +20.64% | $5,915,877.01 |
-| SQD/USDT:USDT | +18.25% | $1,904,683.69 |
+| LONGXIA/USDT:USDT | +2.57% | $2,362,416.86 |
+| BMT/USDT:USDT | +1.42% | $18,121,581.33 |
+| TUT/USDT:USDT | +1.10% | $44,657,048.97 |
+| GUA/USDT:USDT | +1.10% | $12,828,634.17 |
+| UB/USDT:USDT | +1.05% | $1,361,821.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.64% | +4.25% |
-| RE/USDT:USDT | below_1h_threshold | +3.32% | +3.93% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.65% | +3.26% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.63% | +3.24% |
-| GUN/USDT:USDT | below_1h_threshold | +2.17% | +2.78% |
+| KORU/USDT:USDT | below_1h_threshold | +1.95% | +2.00% |
+| MUU/USDT:USDT | below_1h_threshold | +1.80% | +1.85% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.78% | +1.84% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.66% | +1.72% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.48% | +1.54% |
 
 ## 7. 次に見るべき不足
 
