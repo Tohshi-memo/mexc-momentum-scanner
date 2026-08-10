@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T15:36:21.096101+00:00
+- generated_at: 2026-08-10T15:41:28.957159+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11175**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T15:36:12.971278+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=64321.8
+- 更新: 2026-08-10T15:41:21.046389+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.48% price=64286.2
 - Funnel: target 962 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +83.67% | $11,494,451.45 |
-| LONGXIA/USDT:USDT | +53.11% | $2,572,949.95 |
-| TST/USDT:USDT | +28.45% | $5,100,379.84 |
-| GRVT/USDT:USDT | +19.81% | $5,886,829.07 |
-| CYS/USDT:USDT | +18.46% | $27,684,436.63 |
+| GUA/USDT:USDT | +86.18% | $11,664,367.40 |
+| LONGXIA/USDT:USDT | +52.84% | $2,578,946.24 |
+| TST/USDT:USDT | +29.25% | $5,114,583.57 |
+| GRVT/USDT:USDT | +19.31% | $5,892,769.91 |
+| CYS/USDT:USDT | +17.90% | $27,765,731.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +2.69% | +3.12% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.63% | +3.05% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.02% | +2.44% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.00% | +2.43% |
-| RE/USDT:USDT | below_1h_threshold | +1.96% | +2.38% |
+| RE/USDT:USDT | below_1h_threshold | +3.13% | +3.61% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.63% | +3.11% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.61% | +3.09% |
+| CYS/USDT:USDT | below_1h_threshold | +2.32% | +2.80% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.88% | +2.36% |
 
 ## 7. 次に見るべき不足
 
