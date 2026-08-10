@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T19:31:21.804512+00:00
+- generated_at: 2026-08-10T19:36:33.863853+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11192**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.30** / 初期 $100.00 (+17.30%)
-- 確定: 1303件 (Win 404 / Loss 506 / Flat 393) / pending 0件 / skip 1363件
+- 確定: 1303件 (Win 404 / Loss 506 / Flat 393) / pending 0件 / skip 1364件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000220 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CHIP/USDT:USDT `MARKET` EXPIRED account +0.22% 残高後 $117.30
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T19:31:13.583181+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=64040.0
-- Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
+- 更新: 2026-08-10T19:36:22.486287+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=64024.4
+- Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +85.03% | $5,695,518.83 |
-| BTW/USDT:USDT | +9.33% | $7,806,793.48 |
-| UB/USDT:USDT | +8.51% | $1,491,475.62 |
-| BSPSTOCK/USDT:USDT | +8.42% | $1,040,639.37 |
-| CASHCAT/USDT:USDT | +8.00% | $1,438,545.50 |
+| BLUAI/USDT:USDT | +87.84% | $5,946,051.74 |
+| CASHCAT/USDT:USDT | +9.11% | $1,441,142.99 |
+| BTW/USDT:USDT | +8.68% | $7,829,760.36 |
+| BSPSTOCK/USDT:USDT | +8.61% | $1,041,881.99 |
+| UB/USDT:USDT | +8.53% | $1,514,417.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.76% | +2.48% |
-| XAN/USDT:USDT | below_1h_threshold | +2.22% | +1.94% |
-| ICP/USDT:USDT | below_1h_threshold | +1.96% | +1.69% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.77% | +1.50% |
-| SQD/USDT:USDT | below_1h_threshold | +1.47% | +1.19% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.61% | +3.36% |
+| XAN/USDT:USDT | below_1h_threshold | +2.52% | +2.27% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.95% | +1.70% |
+| ICP/USDT:USDT | below_1h_threshold | +1.70% | +1.45% |
+| SQD/USDT:USDT | below_1h_threshold | +1.56% | +1.31% |
 
 ## 7. 次に見るべき不足
 
