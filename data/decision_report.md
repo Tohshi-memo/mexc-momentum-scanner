@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T09:36:30.255358+00:00
+- generated_at: 2026-08-10T09:41:32.268712+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11145**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T09:36:16.232638+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=65110.4
+- 更新: 2026-08-10T09:41:21.354089+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=65036.0
 - Funnel: target 958 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 72.6 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TST/USDT:USDT | +45.97% | $2,765,311.69 |
-| LONGXIA/USDT:USDT | +44.05% | $1,089,423.04 |
-| GRVT/USDT:USDT | +28.39% | $3,649,014.79 |
-| BMT/USDT:USDT | +16.43% | $21,691,023.49 |
-| CAP/USDT:USDT | +15.99% | $6,615,440.68 |
+| LONGXIA/USDT:USDT | +44.54% | $1,097,267.42 |
+| TST/USDT:USDT | +41.36% | $2,822,173.70 |
+| GRVT/USDT:USDT | +27.66% | $3,709,369.25 |
+| CAP/USDT:USDT | +18.01% | $6,641,654.44 |
+| BMT/USDT:USDT | +16.43% | $21,730,636.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +3.71% | +3.88% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.10% | +1.27% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.92% | +1.09% |
-| JTO/USDT:USDT | below_1h_threshold | +0.58% | +0.75% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.55% | +0.72% |
+| RE/USDT:USDT | below_1h_threshold | +2.97% | +3.25% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.10% | +1.39% |
+| JTO/USDT:USDT | below_1h_threshold | +0.99% | +1.27% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.92% | +1.21% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.66% | +0.95% |
 
 ## 7. 次に見るべき不足
 
