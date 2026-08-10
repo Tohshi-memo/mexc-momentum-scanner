@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T16:41:38.867920+00:00
+- generated_at: 2026-08-10T16:46:28.599187+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11178**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T16:41:27.037707+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=64142.9
-- Funnel: target 962 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-10T16:46:20.287369+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.55% price=63912.4
+- Funnel: target 962 → liquid 186 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +5.71% | $7,687,839.66 |
-| MMT/USDT:USDT | +3.83% | $1,358,212.79 |
-| RIVER/USDT:USDT | +3.09% | $3,114,390.75 |
-| BASED/USDT:USDT | +3.02% | $1,023,446.85 |
-| BMT/USDT:USDT | +2.63% | $18,286,484.00 |
+| BTW/USDT:USDT | +4.19% | $7,742,478.72 |
+| BMT/USDT:USDT | +3.42% | $18,300,074.01 |
+| ICP/USDT:USDT | +3.06% | $3,445,692.98 |
+| MUBARAK/USDT:USDT | +2.84% | $8,402,246.68 |
+| RIVER/USDT:USDT | +2.63% | $3,127,328.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +3.83% | +4.03% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.09% | +3.29% |
-| BASED/USDT:USDT | below_1h_threshold | +3.02% | +3.22% |
-| BMT/USDT:USDT | below_1h_threshold | +2.63% | +2.83% |
-| SQD/USDT:USDT | below_1h_threshold | +2.59% | +2.79% |
+| BTW/USDT:USDT | below_1h_threshold | +4.20% | +4.75% |
+| BMT/USDT:USDT | below_1h_threshold | +3.34% | +3.90% |
+| ICP/USDT:USDT | below_1h_threshold | +3.02% | +3.57% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.85% | +3.40% |
+| TUT/USDT:USDT | below_1h_threshold | +2.81% | +3.37% |
 
 ## 7. 次に見るべき不足
 
