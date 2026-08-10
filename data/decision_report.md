@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T22:31:13.871611+00:00
+- generated_at: 2026-08-10T22:36:25.507446+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11201**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T22:31:07.556712+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63981.0
+- 更新: 2026-08-10T22:36:17.496935+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63928.5
 - Funnel: target 962 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +85.63% | $11,725,092.35 |
-| SQD/USDT:USDT | +17.77% | $3,128,349.64 |
-| CRV/USDT:USDT | +10.53% | $7,320,903.26 |
-| BSPSTOCK/USDT:USDT | +9.96% | $1,118,077.70 |
-| CYS/USDT:USDT | +9.29% | $27,897,243.54 |
+| BLUAI/USDT:USDT | +90.84% | $11,879,046.38 |
+| SQD/USDT:USDT | +17.04% | $3,159,761.36 |
+| BSPSTOCK/USDT:USDT | +9.94% | $1,118,676.35 |
+| CRV/USDT:USDT | +9.82% | $7,416,222.03 |
+| CYS/USDT:USDT | +9.14% | $27,943,714.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +3.04% | +2.99% |
-| CRV/USDT:USDT | below_1h_threshold | +2.91% | +2.86% |
-| TST/USDT:USDT | below_1h_threshold | +2.59% | +2.54% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.67% |
-| ACE/USDT:USDT | below_1h_threshold | +1.61% | +1.56% |
+| TST/USDT:USDT | below_1h_threshold | +3.26% | +3.30% |
+| CRV/USDT:USDT | below_1h_threshold | +2.25% | +2.28% |
+| ACE/USDT:USDT | below_1h_threshold | +1.75% | +1.78% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.75% |
+| BLUAI/USDT:USDT | below_1h_threshold | +1.67% | +1.70% |
 
 ## 7. 次に見るべき不足
 
