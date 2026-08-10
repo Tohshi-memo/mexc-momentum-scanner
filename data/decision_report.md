@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T08:31:48.120205+00:00
+- generated_at: 2026-08-10T08:36:30.638214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11137**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T08:31:35.475904+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=65279.5
-- Funnel: target 958 → liquid 164 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1, 4h RSI 66.7 >= 65=1
+- 更新: 2026-08-10T08:36:19.393155+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=65261.6
+- Funnel: target 958 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.5 >= 65=1, 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +40.55% | $21,276,487.97 |
-| GRVT/USDT:USDT | +37.06% | $2,567,527.91 |
-| TST/USDT:USDT | +23.78% | $2,495,436.60 |
-| ACT/USDT:USDT | +20.03% | $1,299,413.03 |
-| CASHCAT/USDT:USDT | +19.34% | $1,521,350.67 |
+| BMT/USDT:USDT | +39.78% | $21,298,546.08 |
+| GRVT/USDT:USDT | +36.40% | $2,653,047.40 |
+| TST/USDT:USDT | +27.59% | $2,503,754.57 |
+| ACT/USDT:USDT | +19.03% | $1,310,113.77 |
+| CASHCAT/USDT:USDT | +18.80% | $1,523,830.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.00% | +3.85% |
-| NIL/USDT:USDT | below_1h_threshold | +2.52% | +2.37% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.15% | +2.01% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.57% | +1.42% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.11% | +0.96% |
+| TUT/USDT:USDT | below_1h_threshold | +3.74% | +3.62% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.50% | +3.38% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.75% | +2.63% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +1.22% | +1.10% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.11% | +0.99% |
 
 ## 7. 次に見るべき不足
 
