@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T09:01:25.564203+00:00
+- generated_at: 2026-08-10T09:06:20.126391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11142**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T09:01:15.955268+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=65208.8
-- Funnel: target 958 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-10T09:06:12.162922+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=65184.1
+- Funnel: target 958 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GRVT/USDT:USDT | +37.30% | $3,077,602.39 |
-| BMT/USDT:USDT | +29.38% | $21,323,768.32 |
-| TST/USDT:USDT | +24.64% | $2,468,103.92 |
-| ACT/USDT:USDT | +20.99% | $1,400,043.81 |
-| CAP/USDT:USDT | +16.85% | $6,252,910.47 |
+| LONGXIA/USDT:USDT | +48.84% | $1,010,308.26 |
+| GRVT/USDT:USDT | +37.35% | $3,141,637.27 |
+| BMT/USDT:USDT | +30.71% | $21,387,100.23 |
+| TST/USDT:USDT | +28.08% | $2,477,034.47 |
+| ACT/USDT:USDT | +21.50% | $1,424,898.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_1h_threshold | +1.72% | +1.73% |
-| RE/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.10% | +1.12% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.92% | +0.94% |
-| AKE/USDT:USDT | below_1h_threshold | +0.79% | +0.81% |
+| TST/USDT:USDT | below_1h_threshold | +2.91% | +2.97% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
+| RE/USDT:USDT | below_1h_threshold | +1.28% | +1.34% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.10% | +1.16% |
+| BOME/USDT:USDT | below_1h_threshold | +1.01% | +1.07% |
 
 ## 7. 次に見るべき不足
 
