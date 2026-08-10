@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T02:01:13.737823+00:00
+- generated_at: 2026-08-10T02:06:13.107351+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11112**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T02:01:05.836080+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=65133.0
-- Funnel: target 961 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-10T02:06:05.637241+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=65095.5
+- Funnel: target 961 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +48.64% | $18,404,133.29 |
-| TUT/USDT:USDT | +36.45% | $82,651,877.91 |
-| TST/USDT:USDT | +18.19% | $3,222,503.56 |
-| CAP/USDT:USDT | +17.28% | $2,095,344.06 |
-| XAN/USDT:USDT | +15.20% | $8,816,017.93 |
+| BMT/USDT:USDT | +50.38% | $18,458,856.72 |
+| TUT/USDT:USDT | +37.21% | $82,747,209.39 |
+| TST/USDT:USDT | +18.56% | $3,223,700.44 |
+| XAN/USDT:USDT | +15.62% | $8,823,696.96 |
+| CAP/USDT:USDT | +15.06% | $2,154,033.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +2.80% | +2.86% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.14% |
-| BOME/USDT:USDT | below_1h_threshold | +0.81% | +0.87% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +0.61% | +0.67% |
-| WABSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.39% |
+| BMT/USDT:USDT | below_1h_threshold | +4.34% | +4.46% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +1.55% | +1.67% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +1.65% |
+| BTW/USDT:USDT | below_1h_threshold | +1.14% | +1.26% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.20% |
 
 ## 7. 次に見るべき不足
 
