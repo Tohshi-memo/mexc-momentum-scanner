@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T01:31:25.777663+00:00
+- generated_at: 2026-08-10T01:36:48.056693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11110**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T01:31:15.512287+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64976.1
+- 更新: 2026-08-10T01:36:39.429579+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64933.4
 - Funnel: target 961 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1, 4h RSI 81.3 >= 65=1
+- Strict後reject: 4h RSI 84.2 >= 65=1, 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +39.63% | $84,035,878.75 |
-| MUBARAK/USDT:USDT | +35.35% | $8,946,861.38 |
-| BMT/USDT:USDT | +30.47% | $18,162,246.81 |
-| TST/USDT:USDT | +18.37% | $3,288,662.32 |
-| CAP/USDT:USDT | +16.78% | $1,943,629.71 |
+| TUT/USDT:USDT | +41.33% | $84,241,985.16 |
+| BMT/USDT:USDT | +33.95% | $18,179,710.27 |
+| MUBARAK/USDT:USDT | +31.02% | $9,020,327.22 |
+| TST/USDT:USDT | +19.79% | $3,292,040.67 |
+| XAN/USDT:USDT | +18.49% | $8,660,100.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.96% | +3.91% |
-| BOME/USDT:USDT | below_1h_threshold | +3.18% | +3.13% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.74% | +2.70% |
-| BICO/USDT:USDT | below_1h_threshold | +2.52% | +2.47% |
-| 4/USDT:USDT | below_1h_threshold | +2.30% | +2.25% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.05% | +4.07% |
+| BICO/USDT:USDT | below_1h_threshold | +3.34% | +3.36% |
+| AKE/USDT:USDT | below_1h_threshold | +2.93% | +2.95% |
+| BOME/USDT:USDT | below_1h_threshold | +2.30% | +2.32% |
+| TST/USDT:USDT | below_1h_threshold | +1.99% | +2.01% |
 
 ## 7. 次に見るべき不足
 
