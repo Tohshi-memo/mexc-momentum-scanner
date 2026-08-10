@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T00:56:30.672377+00:00
+- generated_at: 2026-08-10T01:01:21.114367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11106**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T00:56:19.948138+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=65000.0
-- Funnel: target 961 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.9 >= 65=1, 4h RSI 77.6 >= 65=1, 4h RSI 89.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-10T01:01:13.802846+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64932.7
+- Funnel: target 961 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +40.71% | $18,012,770.44 |
-| TUT/USDT:USDT | +33.44% | $84,517,086.50 |
-| MUBARAK/USDT:USDT | +30.47% | $8,601,314.77 |
-| XAN/USDT:USDT | +30.07% | $8,283,564.87 |
-| COOKIE/USDT:USDT | +20.88% | $7,314,309.31 |
+| BMT/USDT:USDT | +39.33% | $18,024,051.53 |
+| MUBARAK/USDT:USDT | +31.61% | $8,634,029.66 |
+| XAN/USDT:USDT | +29.99% | $8,318,782.25 |
+| TUT/USDT:USDT | +29.04% | $83,174,200.69 |
+| COOKIE/USDT:USDT | +20.16% | $6,781,377.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.08% | +3.87% |
-| LDO/USDT:USDT | below_1h_threshold | +4.07% | +3.87% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.70% | +3.49% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.92% | +2.72% |
-| NIL/USDT:USDT | below_1h_threshold | +2.13% | +1.93% |
+| CYS/USDT:USDT | below_1h_threshold | +3.34% | +3.36% |
+| TUT/USDT:USDT | below_1h_threshold | +2.19% | +2.21% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
 
 ## 7. 次に見るべき不足
 
