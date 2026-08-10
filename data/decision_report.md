@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T12:51:42.412263+00:00
+- generated_at: 2026-08-10T12:56:36.725376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11162**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T12:51:31.101725+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=64895.9
-- Funnel: target 963 → liquid 171 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1, 4h RSI 67.1 >= 65=1, 4h RSI 68.1 >= 65=1, 4h RSI 77.5 >= 65=1
+- 更新: 2026-08-10T12:56:27.593151+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=64876.0
+- Funnel: target 963 → liquid 173 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.2 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 78.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +74.98% | $2,195,104.23 |
-| GUA/USDT:USDT | +54.42% | $3,102,137.39 |
-| TST/USDT:USDT | +48.12% | $4,478,400.00 |
-| CYS/USDT:USDT | +32.55% | $23,254,824.61 |
-| BMT/USDT:USDT | +20.59% | $19,479,023.10 |
+| LONGXIA/USDT:USDT | +70.71% | $2,219,493.36 |
+| GUA/USDT:USDT | +55.10% | $3,175,136.26 |
+| TST/USDT:USDT | +47.51% | $4,503,379.40 |
+| CYS/USDT:USDT | +32.97% | $23,462,934.27 |
+| BMT/USDT:USDT | +20.03% | $19,510,380.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BOME/USDT:USDT | below_1h_threshold | +3.58% | +3.89% |
-| 4/USDT:USDT | below_1h_threshold | +3.52% | +3.83% |
-| RE/USDT:USDT | below_1h_threshold | +3.27% | +3.58% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.98% | +3.29% |
-| TST/USDT:USDT | below_1h_threshold | +2.38% | +2.69% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.25% | +4.59% |
+| BOME/USDT:USDT | below_1h_threshold | +4.23% | +4.57% |
+| NIL/USDT:USDT | below_1h_threshold | +4.15% | +4.49% |
+| 4/USDT:USDT | below_1h_threshold | +3.36% | +3.70% |
+| RE/USDT:USDT | below_1h_threshold | +2.89% | +3.23% |
 
 ## 7. 次に見るべき不足
 
