@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T20:41:26.289272+00:00
+- generated_at: 2026-08-10T20:46:23.687240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11195**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T20:41:18.360021+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64098.0
-- Funnel: target 962 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-10T20:46:15.696361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=64129.4
+- Funnel: target 962 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +86.08% | $7,851,826.22 |
-| CASHCAT/USDT:USDT | +14.49% | $1,496,727.23 |
-| SQD/USDT:USDT | +13.59% | $2,529,517.08 |
-| DODO/USDT:USDT | +11.46% | $1,289,914.43 |
-| CYS/USDT:USDT | +9.61% | $28,070,070.21 |
+| BLUAI/USDT:USDT | +85.21% | $7,898,631.18 |
+| CASHCAT/USDT:USDT | +14.27% | $1,508,994.31 |
+| SQD/USDT:USDT | +14.23% | $2,594,161.03 |
+| DODO/USDT:USDT | +12.32% | $1,300,571.16 |
+| CYS/USDT:USDT | +9.32% | $28,100,214.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.68% | +4.55% |
-| TST/USDT:USDT | below_1h_threshold | +4.38% | +4.25% |
-| DODO/USDT:USDT | below_1h_threshold | +4.06% | +3.93% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.03% | +3.90% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.96% | +3.84% |
+| DODO/USDT:USDT | below_1h_threshold | +4.86% | +4.69% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +4.24% | +4.06% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.96% | +3.79% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.90% | +3.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.12% | +2.95% |
 
 ## 7. 次に見るべき不足
 
