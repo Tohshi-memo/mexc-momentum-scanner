@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T14:51:33.509369+00:00
+- generated_at: 2026-08-10T14:56:28.671934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11175**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.05** / 初期 $100.00 (+17.05%)
-- 確定: 1302件 (Win 403 / Loss 506 / Flat 393) / pending 1件 / skip 1343件
+- 確定: 1302件 (Win 403 / Loss 506 / Flat 393) / pending 1件 / skip 1344件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000099 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CYS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T14:51:21.749078+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=64755.9
-- Funnel: target 962 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-10T14:56:18.007064+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=64637.1
+- Funnel: target 962 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +77.12% | $9,217,399.19 |
-| LONGXIA/USDT:USDT | +52.29% | $2,648,720.46 |
-| TST/USDT:USDT | +31.40% | $5,007,960.92 |
-| GRVT/USDT:USDT | +21.65% | $5,688,224.58 |
-| SQD/USDT:USDT | +17.81% | $1,792,393.49 |
+| GUA/USDT:USDT | +86.35% | $9,523,369.31 |
+| LONGXIA/USDT:USDT | +52.43% | $2,659,087.43 |
+| TST/USDT:USDT | +30.85% | $5,018,083.72 |
+| SQD/USDT:USDT | +19.46% | $1,807,764.11 |
+| GRVT/USDT:USDT | +18.79% | $5,744,071.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.76% | +4.42% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +4.60% | +4.25% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +3.84% |
-| GUN/USDT:USDT | below_1h_threshold | +2.35% | +2.01% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.28% | +1.94% |
+| CYS/USDT:USDT | below_1h_threshold | +4.88% | +4.72% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +4.60% | +4.44% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +4.02% |
+| GUN/USDT:USDT | below_1h_threshold | +2.47% | +2.31% |
+| BMT/USDT:USDT | below_1h_threshold | +1.75% | +1.59% |
 
 ## 7. 次に見るべき不足
 
