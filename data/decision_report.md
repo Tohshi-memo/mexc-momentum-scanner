@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T14:56:28.671934+00:00
+- generated_at: 2026-08-10T15:01:35.035799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11175**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T14:56:18.007064+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64637.1
-- Funnel: target 962 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-10T15:01:26.935953+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64570.7
+- Funnel: target 962 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +86.35% | $9,523,369.31 |
-| LONGXIA/USDT:USDT | +52.43% | $2,659,087.43 |
-| TST/USDT:USDT | +30.85% | $5,018,083.72 |
-| SQD/USDT:USDT | +19.46% | $1,807,764.11 |
-| GRVT/USDT:USDT | +18.79% | $5,744,071.06 |
+| GUA/USDT:USDT | +86.60% | $9,741,843.20 |
+| LONGXIA/USDT:USDT | +51.91% | $2,540,065.45 |
+| TST/USDT:USDT | +32.32% | $5,006,854.92 |
+| GRVT/USDT:USDT | +21.70% | $5,749,613.96 |
+| SQD/USDT:USDT | +18.25% | $1,814,274.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.88% | +4.72% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +4.60% | +4.44% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.18% | +4.02% |
-| GUN/USDT:USDT | below_1h_threshold | +2.47% | +2.31% |
-| BMT/USDT:USDT | below_1h_threshold | +1.75% | +1.59% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.63% | +2.67% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
+| TST/USDT:USDT | below_1h_threshold | +1.23% | +1.26% |
+| SLBSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.09% |
 
 ## 7. 次に見るべき不足
 
