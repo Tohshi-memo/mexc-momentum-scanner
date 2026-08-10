@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T04:06:24.767432+00:00
+- generated_at: 2026-08-10T04:11:18.499068+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11123**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T04:06:15.582470+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=65025.5
+- 更新: 2026-08-10T04:11:10.692002+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=65006.0
 - Funnel: target 961 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +61.95% | $19,377,905.10 |
-| TUT/USDT:USDT | +56.48% | $81,314,391.76 |
-| CAP/USDT:USDT | +23.50% | $2,910,876.64 |
-| TST/USDT:USDT | +18.19% | $2,825,504.92 |
-| CASHCAT/USDT:USDT | +18.00% | $1,262,655.13 |
+| BMT/USDT:USDT | +62.68% | $19,431,171.81 |
+| TUT/USDT:USDT | +57.16% | $81,422,772.13 |
+| CAP/USDT:USDT | +25.24% | $2,953,892.55 |
+| TST/USDT:USDT | +18.13% | $2,828,886.05 |
+| CASHCAT/USDT:USDT | +17.78% | $1,272,408.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.05% | +3.93% |
-| BMT/USDT:USDT | below_1h_threshold | +3.10% | +2.98% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.96% | +1.84% |
-| TST/USDT:USDT | below_1h_threshold | +1.48% | +1.36% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.40% | +1.27% |
+| BMT/USDT:USDT | below_1h_threshold | +4.13% | +4.04% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.86% | +3.77% |
+| TST/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
+| ON/USDT:USDT | below_1h_threshold | +1.41% | +1.32% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.04% | +0.95% |
 
 ## 7. 次に見るべき不足
 
