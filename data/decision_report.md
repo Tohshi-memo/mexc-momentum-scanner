@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T16:06:30.644071+00:00
+- generated_at: 2026-08-10T16:11:28.931836+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11177**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T16:06:20.936580+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64320.2
+- 更新: 2026-08-10T16:11:22.578264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=64206.1
 - Funnel: target 962 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GUA/USDT:USDT | +4.08% | $13,253,527.66 |
-| TST/USDT:USDT | +3.90% | $5,163,813.28 |
-| BMT/USDT:USDT | +3.21% | $18,160,455.14 |
-| BTW/USDT:USDT | +3.00% | $7,446,701.75 |
-| UB/USDT:USDT | +2.65% | $1,378,537.37 |
+| BMT/USDT:USDT | +4.59% | $18,187,744.07 |
+| TST/USDT:USDT | +3.99% | $5,198,266.29 |
+| LONGXIA/USDT:USDT | +3.09% | $2,374,572.95 |
+| BTW/USDT:USDT | +2.66% | $7,468,999.56 |
+| COOKIE/USDT:USDT | +2.65% | $4,534,673.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +4.23% | +4.15% |
-| TST/USDT:USDT | below_1h_threshold | +3.91% | +3.83% |
-| BTW/USDT:USDT | below_1h_threshold | +3.01% | +2.93% |
-| US/USDT:USDT | below_1h_threshold | +2.49% | +2.41% |
-| UB/USDT:USDT | below_1h_threshold | +2.46% | +2.38% |
+| BMT/USDT:USDT | below_1h_threshold | +4.59% | +4.69% |
+| TST/USDT:USDT | below_1h_threshold | +4.00% | +4.10% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.09% | +3.19% |
+| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.65% | +2.75% |
 
 ## 7. 次に見るべき不足
 
