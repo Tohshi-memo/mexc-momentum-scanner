@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T20:16:22.589736+00:00
+- generated_at: 2026-08-10T20:21:23.220788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11193**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T20:16:14.573701+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64049.2
+- 更新: 2026-08-10T20:21:15.216715+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64065.6
 - Funnel: target 962 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +83.86% | $7,075,148.55 |
-| SQD/USDT:USDT | +13.83% | $2,319,257.87 |
-| CASHCAT/USDT:USDT | +11.16% | $1,449,029.49 |
-| BTW/USDT:USDT | +9.60% | $7,731,930.79 |
-| CRV/USDT:USDT | +8.70% | $6,324,554.00 |
+| BLUAI/USDT:USDT | +84.52% | $7,423,911.76 |
+| DODO/USDT:USDT | +12.36% | $1,242,722.76 |
+| CASHCAT/USDT:USDT | +11.80% | $1,459,194.49 |
+| SQD/USDT:USDT | +11.67% | $2,345,255.54 |
+| BTW/USDT:USDT | +9.08% | $7,755,491.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.10% | +4.05% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.96% | +3.91% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.12% | +3.07% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.00% | +2.95% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.80% | +1.75% |
+| DODO/USDT:USDT | below_1h_threshold | +4.74% | +4.66% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.96% | +3.89% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.75% | +3.68% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.12% | +3.05% |
+| TUT/USDT:USDT | below_1h_threshold | +2.62% | +2.54% |
 
 ## 7. 次に見るべき不足
 
