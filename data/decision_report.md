@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T22:21:22.476146+00:00
+- generated_at: 2026-08-10T22:26:24.623880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11201**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T22:21:14.731382+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64026.6
-- Funnel: target 962 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-10T22:26:16.502215+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63975.6
+- Funnel: target 962 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +94.60% | $11,352,984.45 |
-| SQD/USDT:USDT | +18.35% | $3,079,691.32 |
-| BSPSTOCK/USDT:USDT | +9.79% | $1,115,272.66 |
-| CYS/USDT:USDT | +9.74% | $27,835,571.11 |
-| CRV/USDT:USDT | +9.45% | $6,996,959.49 |
+| BLUAI/USDT:USDT | +94.92% | $11,599,786.08 |
+| SQD/USDT:USDT | +18.30% | $3,118,486.36 |
+| BSPSTOCK/USDT:USDT | +9.75% | $1,115,578.98 |
+| CRV/USDT:USDT | +9.57% | $7,199,841.44 |
+| MUBARAK/USDT:USDT | +8.18% | $5,827,095.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +2.03% | +1.91% |
-| CRV/USDT:USDT | below_1h_threshold | +1.82% | +1.70% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
-| ACE/USDT:USDT | below_1h_threshold | +1.55% | +1.43% |
-| BMT/USDT:USDT | below_1h_threshold | +1.54% | +1.42% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.02% | +3.98% |
+| 4/USDT:USDT | below_1h_threshold | +3.53% | +3.49% |
+| TST/USDT:USDT | below_1h_threshold | +3.18% | +3.13% |
+| TUT/USDT:USDT | below_1h_threshold | +2.88% | +2.84% |
+| CRV/USDT:USDT | below_1h_threshold | +2.02% | +1.97% |
 
 ## 7. 次に見るべき不足
 
