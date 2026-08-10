@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T05:56:19.840458+00:00
+- generated_at: 2026-08-10T06:01:19.918448+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11129**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T05:56:11.505994+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=65128.8
-- Funnel: target 963 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-10T06:01:13.469618+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=65146.5
+- Funnel: target 963 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +57.42% | $20,648,264.62 |
-| CAP/USDT:USDT | +28.00% | $3,444,043.51 |
-| TUT/USDT:USDT | +21.12% | $84,324,072.96 |
-| GRVT/USDT:USDT | +19.21% | $1,273,556.03 |
-| COAI/USDT:USDT | +16.00% | $1,774,389.48 |
+| BMT/USDT:USDT | +61.02% | $20,605,612.45 |
+| CAP/USDT:USDT | +28.73% | $3,408,987.93 |
+| TUT/USDT:USDT | +20.64% | $80,356,206.34 |
+| GRVT/USDT:USDT | +18.71% | $1,257,813.84 |
+| COAI/USDT:USDT | +15.86% | $1,794,491.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.65% | +3.42% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.62% | +3.40% |
-| WLD/USDT:USDT | below_1h_threshold | +3.15% | +2.92% |
-| TST/USDT:USDT | below_1h_threshold | +2.73% | +2.50% |
-| CATI/USDT:USDT | below_1h_threshold | +2.71% | +2.49% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.62% | +1.58% |
+| NIL/USDT:USDT | below_1h_threshold | +1.11% | +1.07% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
+| TUT/USDT:USDT | below_1h_threshold | +0.69% | +0.64% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.69% | +0.64% |
 
 ## 7. 次に見るべき不足
 
