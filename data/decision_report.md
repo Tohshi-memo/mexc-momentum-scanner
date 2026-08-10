@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-10T16:56:28.428268+00:00
+- generated_at: 2026-08-10T17:01:31.214507+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11178**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-10T16:56:18.144312+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.71% price=63812.7
-- Funnel: target 962 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-10T17:01:22.967465+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63900.1
+- Funnel: target 962 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +6.71% | $7,781,892.20 |
-| TUT/USDT:USDT | +5.01% | $46,089,081.78 |
-| CASHCAT/USDT:USDT | +4.87% | $1,493,932.15 |
-| MUBARAK/USDT:USDT | +3.49% | $8,457,063.40 |
-| SQD/USDT:USDT | +3.42% | $1,966,167.78 |
+| BTW/USDT:USDT | +7.49% | $7,500,382.17 |
+| B/USDT:USDT | +6.01% | $1,006,568.69 |
+| CASHCAT/USDT:USDT | +5.73% | $1,448,382.47 |
+| MUBARAK/USDT:USDT | +5.69% | $7,681,613.02 |
+| SQD/USDT:USDT | +3.94% | $1,956,407.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.85% | +5.56% |
-| TUT/USDT:USDT | below_1h_threshold | +4.62% | +5.33% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.45% | +4.16% |
-| SQD/USDT:USDT | below_1h_threshold | +3.42% | +4.13% |
-| UB/USDT:USDT | below_1h_threshold | +3.20% | +3.91% |
+| GRVT/USDT:USDT | below_1h_threshold | +4.16% | +4.14% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.47% | +1.46% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.41% | +1.39% |
 
 ## 7. 次に見るべき不足
 
