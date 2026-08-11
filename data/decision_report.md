@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T19:16:24.647317+00:00
+- generated_at: 2026-08-11T19:21:32.475722+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11291**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T19:16:14.197204+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=63252.0
+- 更新: 2026-08-11T19:21:20.367704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63320.5
 - Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +11.44% | $6,645,932.08 |
-| BMT/USDT:USDT | +8.92% | $2,184,572.10 |
-| AKE/USDT:USDT | +7.30% | $3,539,744.50 |
-| GUA/USDT:USDT | +6.16% | $6,057,749.97 |
-| FHE/USDT:USDT | +4.84% | $1,240,989.46 |
+| CAP/USDT:USDT | +12.97% | $6,796,860.59 |
+| BMT/USDT:USDT | +9.36% | $2,189,186.09 |
+| AKE/USDT:USDT | +7.51% | $3,566,459.48 |
+| GUA/USDT:USDT | +5.87% | $6,059,995.69 |
+| FHE/USDT:USDT | +5.72% | $1,244,516.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUAI/USDT:USDT | below_1h_threshold | +4.61% | +4.77% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +3.91% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +3.05% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.67% | +2.83% |
-| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.40% | +4.45% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +3.80% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.94% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.72% | +2.77% |
+| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.60% |
 
 ## 7. 次に見るべき不足
 
