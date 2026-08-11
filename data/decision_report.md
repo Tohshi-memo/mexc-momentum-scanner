@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T14:31:44.181901+00:00
+- generated_at: 2026-08-11T14:36:30.462228+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11265**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T14:31:33.913673+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=63936.9
-- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.1 >= 65=1
+- 更新: 2026-08-11T14:36:22.087990+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=64035.4
+- Funnel: target 967 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +66.04% | $32,422,473.10 |
-| BTR/USDT:USDT | +42.27% | $1,718,858.05 |
-| TOAD/USDT:USDT | +42.18% | $1,618,766.42 |
-| INX/USDT:USDT | +25.97% | $1,790,877.63 |
-| COOKIE/USDT:USDT | +25.85% | $1,939,522.66 |
+| VELVET/USDT:USDT | +65.66% | $32,640,677.71 |
+| TOAD/USDT:USDT | +42.96% | $1,619,956.45 |
+| BTR/USDT:USDT | +41.90% | $1,728,318.41 |
+| INX/USDT:USDT | +26.82% | $1,796,669.86 |
+| COOKIE/USDT:USDT | +23.20% | $1,957,568.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.39% | +3.76% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.27% | +3.64% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.25% | +3.62% |
-| CAP/USDT:USDT | below_1h_threshold | +2.64% | +3.01% |
-| ICP/USDT:USDT | below_1h_threshold | +2.49% | +2.86% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +4.45% | +4.67% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.70% | +3.92% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.39% | +3.61% |
+| CAP/USDT:USDT | below_1h_threshold | +2.66% | +2.88% |
+| INX/USDT:USDT | below_1h_threshold | +2.65% | +2.87% |
 
 ## 7. 次に見るべき不足
 
