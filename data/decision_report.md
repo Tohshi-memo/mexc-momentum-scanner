@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T19:11:21.055360+00:00
+- generated_at: 2026-08-11T19:16:24.647317+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11291**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1433件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1434件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000186 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T19:11:14.573629+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=63241.7
-- Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-11T19:16:14.197204+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=63252.0
+- Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +11.55% | $6,546,103.55 |
-| BMT/USDT:USDT | +9.01% | $2,177,425.99 |
-| AKE/USDT:USDT | +6.40% | $3,497,697.90 |
-| GUA/USDT:USDT | +6.11% | $6,055,392.10 |
-| FHE/USDT:USDT | +6.10% | $1,240,637.30 |
+| CAP/USDT:USDT | +11.44% | $6,645,932.08 |
+| BMT/USDT:USDT | +8.92% | $2,184,572.10 |
+| AKE/USDT:USDT | +7.30% | $3,539,744.50 |
+| GUA/USDT:USDT | +6.16% | $6,057,749.97 |
+| FHE/USDT:USDT | +4.84% | $1,240,989.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUAI/USDT:USDT | below_1h_threshold | +4.76% | +4.94% |
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +3.93% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +3.06% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.43% | +2.61% |
-| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.72% |
+| BLUAI/USDT:USDT | below_1h_threshold | +4.61% | +4.77% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +3.91% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +3.05% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.67% | +2.83% |
+| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
 
 ## 7. 次に見るべき不足
 
