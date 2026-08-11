@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T02:51:15.964177+00:00
+- generated_at: 2026-08-11T02:56:22.989144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11210**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T02:51:09.404264+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64010.2
-- Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-11T02:56:14.774941+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64018.3
+- Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +89.63% | $16,120,554.56 |
-| TOAD/USDT:USDT | +53.63% | $1,144,031.03 |
-| SQD/USDT:USDT | +15.56% | $3,567,711.98 |
-| CYS/USDT:USDT | +12.75% | $24,263,220.49 |
-| CRV/USDT:USDT | +12.20% | $8,582,938.12 |
+| BLUAI/USDT:USDT | +86.25% | $16,170,954.77 |
+| TOAD/USDT:USDT | +55.60% | $1,147,697.03 |
+| SQD/USDT:USDT | +16.47% | $3,572,312.41 |
+| CRV/USDT:USDT | +12.66% | $8,718,089.45 |
+| CYS/USDT:USDT | +12.15% | $24,286,471.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQD/USDT:USDT | below_1h_threshold | +4.38% | +4.42% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.08% | +3.12% |
-| KORU/USDT:USDT | below_1h_threshold | +2.65% | +2.68% |
-| DODO/USDT:USDT | below_1h_threshold | +2.50% | +2.53% |
-| COOKIE/USDT:USDT | below_1h_threshold | +2.47% | +2.50% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.08% | +3.10% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.96% | +2.98% |
+| DODO/USDT:USDT | below_1h_threshold | +2.68% | +2.70% |
+| KORU/USDT:USDT | below_1h_threshold | +2.65% | +2.66% |
+| TOAD/USDT:USDT | below_1h_threshold | +2.02% | +2.04% |
 
 ## 7. 次に見るべき不足
 
