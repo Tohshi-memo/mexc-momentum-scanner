@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T02:46:35.193742+00:00
+- generated_at: 2026-08-11T02:51:15.964177+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11210**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T02:46:26.926148+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64024.9
-- Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-11T02:51:09.404264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64010.2
+- Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +89.08% | $16,097,156.13 |
-| TOAD/USDT:USDT | +52.60% | $1,137,743.18 |
-| SQD/USDT:USDT | +16.40% | $3,559,398.67 |
-| CYS/USDT:USDT | +13.31% | $24,236,011.85 |
-| CRV/USDT:USDT | +12.03% | $8,563,734.03 |
+| BLUAI/USDT:USDT | +89.63% | $16,120,554.56 |
+| TOAD/USDT:USDT | +53.63% | $1,144,031.03 |
+| SQD/USDT:USDT | +15.56% | $3,567,711.98 |
+| CYS/USDT:USDT | +12.75% | $24,263,220.49 |
+| CRV/USDT:USDT | +12.20% | $8,582,938.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.08% | +3.09% |
-| KORU/USDT:USDT | below_1h_threshold | +2.65% | +2.65% |
-| ICP/USDT:USDT | below_1h_threshold | +1.89% | +1.90% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
-| COOKIE/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| SQD/USDT:USDT | below_1h_threshold | +4.38% | +4.42% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.08% | +3.12% |
+| KORU/USDT:USDT | below_1h_threshold | +2.65% | +2.68% |
+| DODO/USDT:USDT | below_1h_threshold | +2.50% | +2.53% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.47% | +2.50% |
 
 ## 7. 次に見るべき不足
 
