@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T02:06:22.387919+00:00
+- generated_at: 2026-08-11T02:11:19.285501+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11210**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T02:06:15.589705+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64052.3
+- 更新: 2026-08-11T02:11:11.231786+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64046.8
 - Funnel: target 962 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +110.54% | $15,362,253.72 |
-| TOAD/USDT:USDT | +58.68% | $1,096,377.00 |
-| PROM/USDT:USDT | +35.23% | $2,224,888.25 |
-| SQD/USDT:USDT | +12.71% | $3,445,475.66 |
-| CYS/USDT:USDT | +11.88% | $23,990,930.68 |
+| BLUAI/USDT:USDT | +103.00% | $15,478,096.71 |
+| TOAD/USDT:USDT | +53.71% | $1,100,488.71 |
+| PROM/USDT:USDT | +30.72% | $2,320,724.72 |
+| SQD/USDT:USDT | +13.28% | $3,464,362.04 |
+| CYS/USDT:USDT | +12.44% | $24,027,552.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOAD/USDT:USDT | below_1h_threshold | +3.99% | +3.95% |
-| CAP/USDT:USDT | below_1h_threshold | +3.94% | +3.91% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.08% | +3.05% |
-| KORU/USDT:USDT | below_1h_threshold | +2.65% | +2.61% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.92% | +1.89% |
+| CAP/USDT:USDT | below_1h_threshold | +4.27% | +4.24% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.08% | +3.06% |
+| KORU/USDT:USDT | below_1h_threshold | +2.65% | +2.62% |
+| DODO/USDT:USDT | below_1h_threshold | +2.55% | +2.52% |
+| SQD/USDT:USDT | below_1h_threshold | +2.43% | +2.40% |
 
 ## 7. 次に見るべき不足
 
