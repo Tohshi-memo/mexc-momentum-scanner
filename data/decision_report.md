@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T04:51:24.101095+00:00
+- generated_at: 2026-08-11T04:56:24.533633+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11221**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T04:51:16.082649+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64021.1
-- Funnel: target 962 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-11T04:56:16.455032+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=64006.4
+- Funnel: target 964 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +87.33% | $16,893,106.73 |
-| TOAD/USDT:USDT | +38.30% | $1,293,503.95 |
-| BICO/USDT:USDT | +16.45% | $10,923,746.21 |
-| COOKIE/USDT:USDT | +13.95% | $1,532,499.67 |
-| CYS/USDT:USDT | +13.34% | $24,225,792.61 |
+| BLUAI/USDT:USDT | +87.42% | $16,917,443.20 |
+| TOAD/USDT:USDT | +34.83% | $1,297,182.98 |
+| BICO/USDT:USDT | +14.18% | $10,975,488.54 |
+| CYS/USDT:USDT | +13.60% | $24,252,577.81 |
+| COOKIE/USDT:USDT | +13.52% | $1,537,749.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.02% | +4.16% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +3.71% | +3.85% |
-| BTW/USDT:USDT | below_1h_threshold | +2.88% | +3.02% |
-| COOKIE/USDT:USDT | below_1h_threshold | +2.62% | +2.76% |
-| UB/USDT:USDT | below_1h_threshold | +2.33% | +2.47% |
+| UB/USDT:USDT | below_1h_threshold | +4.05% | +4.21% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.43% | +3.59% |
+| BTW/USDT:USDT | below_1h_threshold | +3.23% | +3.39% |
+| PROM/USDT:USDT | below_1h_threshold | +2.49% | +2.65% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.40% | +2.56% |
 
 ## 7. 次に見るべき不足
 
