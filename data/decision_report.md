@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T21:56:43.424062+00:00
+- generated_at: 2026-08-11T22:01:28.064945+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11300**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T21:56:31.462721+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=63649.1
-- Funnel: target 967 → liquid 194 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.6 >= 65=1, 4h RSI 79.3 >= 65=1, 4h RSI 67.0 >= 65=1, 4h RSI 65.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-11T22:01:19.835343+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=63710.5
+- Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +41.19% | $1,030,873.55 |
-| LSK/USDT:USDT | +31.75% | $1,839,117.27 |
-| HOLO/USDT:USDT | +18.14% | $2,185,195.15 |
-| CRWVSTOCK/USDT:USDT | +15.58% | $3,266,629.08 |
-| BMT/USDT:USDT | +11.38% | $2,548,745.33 |
+| LSK/USDT:USDT | +27.50% | $1,994,589.46 |
+| HOLO/USDT:USDT | +16.28% | $2,246,736.70 |
+| CRWVSTOCK/USDT:USDT | +15.44% | $3,270,811.02 |
+| BMT/USDT:USDT | +12.91% | $2,478,956.22 |
+| GUA/USDT:USDT | +8.21% | $5,545,972.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.13% | +4.24% |
-| BTR/USDT:USDT | below_1h_threshold | +3.72% | +3.82% |
-| BMT/USDT:USDT | below_1h_threshold | +1.85% | +1.96% |
-| FHE/USDT:USDT | below_1h_threshold | +1.78% | +1.89% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.34% | +1.45% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.75% |
+| LSK/USDT:USDT | below_1h_threshold | +1.27% | +1.16% |
+| BICO/USDT:USDT | below_1h_threshold | +0.65% | +0.54% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +0.54% | +0.43% |
+| DOGE/USDT:USDT | below_1h_threshold | +0.50% | +0.39% |
 
 ## 7. 次に見るべき不足
 
