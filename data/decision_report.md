@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T18:41:21.512255+00:00
+- generated_at: 2026-08-11T18:46:24.514507+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11291**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T18:41:13.298118+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.46% price=63288.1
+- 更新: 2026-08-11T18:46:16.464361+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=63295.2
 - Funnel: target 967 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +7.96% | $3,367,062.59 |
-| CAP/USDT:USDT | +7.71% | $5,919,256.98 |
-| BMT/USDT:USDT | +7.39% | $2,193,863.01 |
-| FHE/USDT:USDT | +6.40% | $1,249,225.02 |
-| GUA/USDT:USDT | +6.20% | $6,650,228.83 |
+| BMT/USDT:USDT | +8.87% | $2,207,871.33 |
+| CAP/USDT:USDT | +7.22% | $5,948,701.27 |
+| AKE/USDT:USDT | +6.87% | $3,417,298.96 |
+| GUA/USDT:USDT | +5.94% | $6,652,716.63 |
+| FHE/USDT:USDT | +5.26% | $1,265,362.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DODO/USDT:USDT | below_1h_threshold | +2.93% | +3.39% |
-| SYN/USDT:USDT | below_1h_threshold | +2.65% | +3.11% |
-| AKE/USDT:USDT | below_1h_threshold | +2.51% | +2.97% |
-| ON/USDT:USDT | below_1h_threshold | +2.45% | +2.91% |
-| CAP/USDT:USDT | below_1h_threshold | +2.34% | +2.80% |
+| SYN/USDT:USDT | below_1h_threshold | +3.12% | +3.57% |
+| DODO/USDT:USDT | below_1h_threshold | +2.36% | +2.81% |
+| CAP/USDT:USDT | below_1h_threshold | +1.81% | +2.26% |
+| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.99% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.48% | +1.93% |
 
 ## 7. 次に見るべき不足
 
