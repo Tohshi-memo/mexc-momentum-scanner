@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T12:01:27.468441+00:00
+- generated_at: 2026-08-11T12:06:17.935709+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11257**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T12:01:17.924262+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64368.0
+- 更新: 2026-08-11T12:06:10.574910+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64400.7
 - Funnel: target 963 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +92.06% | $19,899,172.02 |
-| VELVET/USDT:USDT | +56.86% | $24,094,475.60 |
-| BTR/USDT:USDT | +44.21% | $1,315,729.22 |
-| TOAD/USDT:USDT | +39.88% | $1,526,790.90 |
-| CYS/USDT:USDT | +26.00% | $24,723,132.81 |
+| BLUAI/USDT:USDT | +93.73% | $19,939,066.46 |
+| VELVET/USDT:USDT | +62.99% | $24,320,354.03 |
+| BTR/USDT:USDT | +42.27% | $1,320,314.59 |
+| TOAD/USDT:USDT | +37.59% | $1,528,505.16 |
+| BANANAS31/USDT:USDT | +27.48% | $2,358,180.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +1.76% | +1.75% |
-| CAP/USDT:USDT | below_1h_threshold | +1.23% | +1.21% |
-| KORU/USDT:USDT | below_1h_threshold | +1.11% | +1.09% |
-| CYS/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.61% |
+| CAP/USDT:USDT | below_1h_threshold | +2.70% | +2.64% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.65% | +2.59% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.92% | +1.85% |
+| CYS/USDT:USDT | below_1h_threshold | +1.64% | +1.58% |
+| KORU/USDT:USDT | below_1h_threshold | +1.11% | +1.04% |
 
 ## 7. 次に見るべき不足
 
