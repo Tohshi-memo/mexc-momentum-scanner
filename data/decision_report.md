@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T16:31:24.240616+00:00
+- generated_at: 2026-08-11T16:36:29.505434+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11275**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T16:31:16.424519+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=63549.9
-- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-08-11T16:36:20.658136+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63524.4
+- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 89.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +10.91% | $1,788,542.58 |
-| SYN/USDT:USDT | +4.36% | $1,057,871.85 |
-| BMT/USDT:USDT | +4.23% | $2,117,706.13 |
-| CYS/USDT:USDT | +3.88% | $20,484,611.16 |
-| INX/USDT:USDT | +3.31% | $3,112,518.15 |
+| TOAD/USDT:USDT | +11.72% | $1,802,260.18 |
+| LUNANEW/USDT:USDT | +6.16% | $1,476,689.06 |
+| CYS/USDT:USDT | +4.69% | $20,760,605.37 |
+| INX/USDT:USDT | +4.62% | $3,154,723.34 |
+| SKYAI/USDT:USDT | +3.29% | $21,941,214.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.37% | +4.44% |
-| BMT/USDT:USDT | below_1h_threshold | +4.24% | +4.31% |
-| INX/USDT:USDT | below_1h_threshold | +3.67% | +3.74% |
-| CYS/USDT:USDT | below_1h_threshold | +3.56% | +3.63% |
-| 4/USDT:USDT | below_1h_threshold | +3.26% | +3.33% |
+| CYS/USDT:USDT | below_1h_threshold | +4.73% | +4.83% |
+| INX/USDT:USDT | below_1h_threshold | +4.72% | +4.82% |
+| SYN/USDT:USDT | below_1h_threshold | +3.13% | +3.24% |
+| CAP/USDT:USDT | below_1h_threshold | +2.85% | +2.95% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.81% | +2.92% |
 
 ## 7. 次に見るべき不足
 
