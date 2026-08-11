@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T23:01:39.025263+00:00
+- generated_at: 2026-08-11T23:06:23.771325+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11307**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T23:01:29.269501+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63628.9
-- Funnel: target 967 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-11T23:06:16.838360+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63556.8
+- Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +56.99% | $1,306,326.50 |
-| HOLO/USDT:USDT | +22.95% | $2,807,044.58 |
-| CRWVSTOCK/USDT:USDT | +15.69% | $3,414,971.84 |
-| LSK/USDT:USDT | +13.45% | $2,590,222.70 |
-| BMT/USDT:USDT | +11.87% | $2,527,393.10 |
+| JIMOTHY/USDT:USDT | +56.31% | $1,337,734.27 |
+| HOLO/USDT:USDT | +20.47% | $2,903,264.82 |
+| CRWVSTOCK/USDT:USDT | +16.20% | $3,418,890.27 |
+| BMT/USDT:USDT | +12.07% | $2,534,304.44 |
+| LSK/USDT:USDT | +9.94% | $2,669,062.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LITESTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.82% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.63% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.62% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.54% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.93% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.75% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.62% |
+| GUA/USDT:USDT | below_1h_threshold | +1.12% | +1.25% |
+| BTW/USDT:USDT | below_1h_threshold | +0.94% | +1.08% |
 
 ## 7. 次に見るべき不足
 
