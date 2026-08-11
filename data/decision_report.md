@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T20:06:27.313182+00:00
+- generated_at: 2026-08-11T20:11:21.572406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11292**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T20:06:19.197834+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=63646.0
+- 更新: 2026-08-11T20:11:15.309550+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63650.8
 - Funnel: target 967 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HOLO/USDT:USDT | +12.58% | $1,006,763.90 |
-| BMT/USDT:USDT | +11.82% | $2,369,519.84 |
-| CAP/USDT:USDT | +10.44% | $7,243,468.59 |
-| AKE/USDT:USDT | +8.32% | $3,736,031.93 |
-| SMCISTOCK/USDT:USDT | +7.99% | $1,577,208.73 |
+| BMT/USDT:USDT | +14.24% | $2,396,011.77 |
+| HOLO/USDT:USDT | +12.53% | $1,057,915.29 |
+| CAP/USDT:USDT | +9.61% | $7,263,528.20 |
+| SMCISTOCK/USDT:USDT | +9.00% | $1,734,519.06 |
+| AKE/USDT:USDT | +8.04% | $3,752,977.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.61% |
+| 4/USDT:USDT | below_1h_threshold | +2.54% | +2.32% |
 | MUU/USDT:USDT | below_1h_threshold | +2.48% | +2.26% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.65% | +1.44% |
-| 4/USDT:USDT | below_1h_threshold | +1.51% | +1.29% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.28% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.95% | +1.73% |
+| HOLO/USDT:USDT | below_1h_threshold | +1.71% | +1.48% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.46% | +1.23% |
 
 ## 7. 次に見るべき不足
 
