@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T21:26:35.029398+00:00
+- generated_at: 2026-08-11T21:31:36.638542+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11299**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1445件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1446件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000216 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T21:26:22.108236+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=63670.1
-- Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 65.4 >= 65=1
+- 更新: 2026-08-11T21:31:26.948304+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63648.1
+- Funnel: target 967 → liquid 190 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.0 >= 65=1, 4h RSI 79.6 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CRWVSTOCK/USDT:USDT | +15.90% | $3,032,644.04 |
-| HOLO/USDT:USDT | +14.92% | $1,817,419.05 |
-| BMT/USDT:USDT | +12.66% | $2,516,867.02 |
-| FHE/USDT:USDT | +8.92% | $1,276,263.85 |
-| GUA/USDT:USDT | +8.58% | $5,737,050.76 |
+| LSK/USDT:USDT | +33.53% | $1,115,571.45 |
+| CRWVSTOCK/USDT:USDT | +16.23% | $3,052,558.06 |
+| HOLO/USDT:USDT | +12.79% | $1,939,289.77 |
+| BMT/USDT:USDT | +12.27% | $2,520,812.01 |
+| BEAT/USDT:USDT | +9.53% | $112,017,620.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +4.11% | +4.19% |
-| BMT/USDT:USDT | below_1h_threshold | +3.02% | +3.10% |
-| BICO/USDT:USDT | below_1h_threshold | +1.60% | +1.68% |
-| SYN/USDT:USDT | below_1h_threshold | +1.11% | +1.19% |
-| AKE/USDT:USDT | below_1h_threshold | +0.99% | +1.06% |
+| BMT/USDT:USDT | below_1h_threshold | +2.79% | +2.91% |
+| FHE/USDT:USDT | below_1h_threshold | +2.44% | +2.55% |
+| AKE/USDT:USDT | below_1h_threshold | +1.67% | +1.78% |
+| BICO/USDT:USDT | below_1h_threshold | +1.13% | +1.24% |
+| BTR/USDT:USDT | below_1h_threshold | +0.87% | +0.98% |
 
 ## 7. 次に見るべき不足
 
