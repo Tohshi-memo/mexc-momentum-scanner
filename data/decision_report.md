@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T21:46:35.429428+00:00
+- generated_at: 2026-08-11T21:51:40.463417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11300**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1447件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1448件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000216 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T21:46:25.808751+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=63644.0
-- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 78.6 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 65.3 >= 65=1
+- 更新: 2026-08-11T21:51:28.343828+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=63620.2
+- Funnel: target 967 → liquid 194 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.7 >= 65=1, 4h RSI 79.8 >= 65=1, 4h RSI 68.2 >= 65=1, 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +33.77% | $1,416,737.94 |
-| HOLO/USDT:USDT | +17.06% | $2,074,164.58 |
-| CRWVSTOCK/USDT:USDT | +16.13% | $3,237,185.65 |
-| BMT/USDT:USDT | +11.23% | $2,539,222.83 |
-| BEAT/USDT:USDT | +10.35% | $112,764,280.57 |
+| JIMOTHY/USDT:USDT | +44.67% | $1,017,684.45 |
+| LSK/USDT:USDT | +31.75% | $1,656,856.98 |
+| HOLO/USDT:USDT | +17.96% | $2,124,948.40 |
+| CRWVSTOCK/USDT:USDT | +16.40% | $3,263,382.90 |
+| BMT/USDT:USDT | +11.77% | $2,541,704.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.61% | +3.73% |
-| BTR/USDT:USDT | below_1h_threshold | +3.34% | +3.46% |
-| FHE/USDT:USDT | below_1h_threshold | +2.00% | +2.12% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.99% | +2.11% |
-| BMT/USDT:USDT | below_1h_threshold | +1.80% | +1.92% |
+| AKE/USDT:USDT | below_1h_threshold | +3.87% | +4.02% |
+| BTR/USDT:USDT | below_1h_threshold | +2.72% | +2.88% |
+| BMT/USDT:USDT | below_1h_threshold | +2.21% | +2.36% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.68% | +1.83% |
+| FHE/USDT:USDT | below_1h_threshold | +1.67% | +1.83% |
 
 ## 7. 次に見るべき不足
 
