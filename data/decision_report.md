@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T12:56:34.107503+00:00
+- generated_at: 2026-08-11T13:01:19.653752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11258**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T12:56:25.819379+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64307.8
-- Funnel: target 967 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-11T13:01:11.610280+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=64302.1
+- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +89.90% | $20,201,871.54 |
-| VELVET/USDT:USDT | +54.60% | $27,369,894.27 |
-| BTR/USDT:USDT | +49.07% | $1,400,541.93 |
-| TOAD/USDT:USDT | +28.98% | $1,571,118.79 |
-| CYS/USDT:USDT | +27.78% | $25,772,085.56 |
+| BLUAI/USDT:USDT | +90.23% | $20,184,124.83 |
+| VELVET/USDT:USDT | +59.62% | $27,553,369.04 |
+| BTR/USDT:USDT | +50.18% | $1,411,918.13 |
+| TOAD/USDT:USDT | +30.41% | $1,555,059.67 |
+| CYS/USDT:USDT | +26.45% | $22,742,323.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.51% | +4.59% |
-| UB/USDT:USDT | below_1h_threshold | +3.70% | +3.78% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.70% | +3.78% |
-| CYS/USDT:USDT | below_1h_threshold | +2.27% | +2.34% |
-| BTW/USDT:USDT | below_1h_threshold | +1.28% | +1.36% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.46% | +1.46% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.86% |
+| COOKIE/USDT:USDT | below_1h_threshold | +0.72% | +0.72% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
 
 ## 7. 次に見るべき不足
 
