@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T11:01:32.877379+00:00
+- generated_at: 2026-08-11T11:06:22.780908+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11250**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.84** / 初期 $100.00 (+14.84%)
-- 確定: 1330件 (Win 407 / Loss 524 / Flat 399) / pending 1件 / skip 1389件
+- 確定: 1330件 (Win 407 / Loss 524 / Flat 399) / pending 1件 / skip 1390件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000119 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CAP/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T11:01:23.764006+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=64243.4
-- Funnel: target 963 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-11T11:06:14.463619+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=64337.5
+- Funnel: target 963 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +87.25% | $19,594,794.98 |
-| VELVET/USDT:USDT | +79.07% | $11,496,965.07 |
-| BTR/USDT:USDT | +38.62% | $1,255,117.42 |
-| TOAD/USDT:USDT | +26.06% | $1,490,293.54 |
-| CYS/USDT:USDT | +25.00% | $25,433,728.52 |
+| VELVET/USDT:USDT | +90.04% | $12,774,298.55 |
+| BLUAI/USDT:USDT | +87.57% | $19,621,074.12 |
+| BTR/USDT:USDT | +38.80% | $1,261,315.51 |
+| CYS/USDT:USDT | +25.85% | $25,564,625.41 |
+| TOAD/USDT:USDT | +25.82% | $1,491,788.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
-| CAP/USDT:USDT | below_1h_threshold | +0.81% | +0.75% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.64% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.63% |
-| SQD/USDT:USDT | below_1h_threshold | +0.69% | +0.63% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.45% | +2.24% |
+| CAP/USDT:USDT | below_1h_threshold | +2.04% | +1.83% |
+| KORU/USDT:USDT | below_1h_threshold | +1.48% | +1.27% |
+| LIT/USDT:USDT | below_1h_threshold | +1.41% | +1.20% |
+| SQD/USDT:USDT | below_1h_threshold | +1.15% | +0.95% |
 
 ## 7. 次に見るべき不足
 
