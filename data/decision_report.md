@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T00:26:22.275140+00:00
+- generated_at: 2026-08-11T00:31:19.534411+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11207**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T00:26:12.936806+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63949.9
+- 更新: 2026-08-11T00:31:11.571515+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63968.6
 - Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +101.28% | $13,542,598.29 |
-| BSPSTOCK/USDT:USDT | +11.06% | $1,148,117.08 |
-| BTW/USDT:USDT | +10.29% | $7,656,473.54 |
-| CYS/USDT:USDT | +10.04% | $24,713,580.60 |
-| CRV/USDT:USDT | +9.45% | $7,956,735.96 |
+| BLUAI/USDT:USDT | +103.99% | $13,630,717.10 |
+| CYS/USDT:USDT | +11.85% | $24,879,919.91 |
+| BSPSTOCK/USDT:USDT | +10.89% | $1,148,351.95 |
+| CRV/USDT:USDT | +10.12% | $7,961,950.73 |
+| BTW/USDT:USDT | +9.56% | $7,663,933.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TST/USDT:USDT | below_1h_threshold | +3.36% | +3.35% |
-| ACE/USDT:USDT | below_1h_threshold | +2.97% | +2.96% |
-| COOKIE/USDT:USDT | below_1h_threshold | +2.65% | +2.63% |
-| 4/USDT:USDT | below_1h_threshold | +2.56% | +2.54% |
-| SQD/USDT:USDT | below_1h_threshold | +2.21% | +2.19% |
+| CYS/USDT:USDT | below_1h_threshold | +2.61% | +2.57% |
+| ACE/USDT:USDT | below_1h_threshold | +2.47% | +2.42% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.18% | +2.14% |
+| ICP/USDT:USDT | below_1h_threshold | +2.14% | +2.10% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.05% | +2.00% |
 
 ## 7. 次に見るべき不足
 
