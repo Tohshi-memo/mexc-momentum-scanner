@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T08:06:27.642696+00:00
+- generated_at: 2026-08-11T08:11:38.886954+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11229**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.05** / 初期 $100.00 (+16.05%)
-- 確定: 1324件 (Win 407 / Loss 518 / Flat 399) / pending 5件 / skip 1373件
+- 確定: 1324件 (Win 407 / Loss 518 / Flat 399) / pending 6件 / skip 1373件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEI/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T08:06:19.479986+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64059.1
-- Funnel: target 959 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-11T08:11:28.546696+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64042.0
+- Funnel: target 959 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +74.41% | $18,050,242.33 |
-| TOAD/USDT:USDT | +26.54% | $1,396,858.34 |
-| CYS/USDT:USDT | +12.88% | $25,191,141.74 |
-| UB/USDT:USDT | +12.49% | $1,954,539.50 |
-| BSPSTOCK/USDT:USDT | +10.91% | $1,164,787.57 |
+| BLUAI/USDT:USDT | +86.76% | $18,180,401.34 |
+| TOAD/USDT:USDT | +27.64% | $1,400,267.55 |
+| UB/USDT:USDT | +12.47% | $1,971,602.03 |
+| CYS/USDT:USDT | +11.74% | $25,252,701.26 |
+| SQD/USDT:USDT | +10.67% | $3,755,017.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.66% | +3.61% |
-| HEI/USDT:USDT | below_1h_threshold | +3.46% | +3.41% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.26% | +1.21% |
-| SQD/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
-| UB/USDT:USDT | below_1h_threshold | +1.21% | +1.17% |
+| ON/USDT:USDT | below_1h_threshold | +2.88% | +2.87% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.11% | +2.10% |
+| SQD/USDT:USDT | below_1h_threshold | +1.97% | +1.95% |
+| MMT/USDT:USDT | below_1h_threshold | +1.58% | +1.57% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.26% | +1.24% |
 
 ## 7. 次に見るべき不足
 
