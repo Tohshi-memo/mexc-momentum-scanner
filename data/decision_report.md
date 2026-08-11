@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T09:36:34.489084+00:00
+- generated_at: 2026-08-11T09:41:25.860273+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11237**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T09:36:21.555584+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64162.5
-- Funnel: target 963 → liquid 195 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.1 >= 65=1, 4h RSI 70.1 >= 65=1
+- 更新: 2026-08-11T09:41:17.118568+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64162.1
+- Funnel: target 963 → liquid 195 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.4 >= 65=1, 4h RSI 70.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +90.10% | $19,108,354.77 |
-| BTR/USDT:USDT | +36.81% | $1,165,338.06 |
-| TOAD/USDT:USDT | +31.04% | $1,448,025.27 |
-| VELVET/USDT:USDT | +23.63% | $2,404,495.27 |
-| CYS/USDT:USDT | +20.27% | $27,066,086.59 |
+| BLUAI/USDT:USDT | +89.70% | $19,149,520.67 |
+| BTR/USDT:USDT | +38.34% | $1,171,389.24 |
+| TOAD/USDT:USDT | +31.35% | $1,450,231.98 |
+| VELVET/USDT:USDT | +22.98% | $2,594,192.08 |
+| CYS/USDT:USDT | +19.78% | $27,158,264.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.87% | +2.79% |
-| BSV/USDT:USDT | below_1h_threshold | +2.76% | +2.68% |
-| CRV/USDT:USDT | below_1h_threshold | +1.73% | +1.65% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.58% | +1.50% |
-| KAIA/USDT:USDT | below_1h_threshold | +1.52% | +1.44% |
+| BSV/USDT:USDT | below_1h_threshold | +3.04% | +2.96% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.26% | +2.18% |
+| CRV/USDT:USDT | below_1h_threshold | +2.19% | +2.11% |
+| HEI/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
+| KAIA/USDT:USDT | below_1h_threshold | +2.00% | +1.92% |
 
 ## 7. 次に見るべき不足
 
