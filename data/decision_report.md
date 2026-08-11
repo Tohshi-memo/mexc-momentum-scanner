@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T07:46:17.991454+00:00
+- generated_at: 2026-08-11T07:51:27.664157+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11227**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.25** / 初期 $100.00 (+16.25%)
-- 確定: 1323件 (Win 407 / Loss 517 / Flat 399) / pending 3件 / skip 1373件
+- 確定: 1323件 (Win 407 / Loss 517 / Flat 399) / pending 5件 / skip 1373件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BLUAI/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $116.25
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T07:46:09.650487+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=64052.7
-- Funnel: target 959 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-11T07:51:16.648884+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=64048.0
+- Funnel: target 959 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +75.71% | $17,941,913.64 |
-| TOAD/USDT:USDT | +30.25% | $1,408,412.71 |
-| PROM/USDT:USDT | +18.79% | $6,375,019.25 |
-| CYS/USDT:USDT | +14.14% | $25,243,888.09 |
-| UB/USDT:USDT | +11.33% | $2,059,660.02 |
+| BLUAI/USDT:USDT | +74.50% | $17,999,551.99 |
+| TOAD/USDT:USDT | +30.48% | $1,411,415.38 |
+| PROM/USDT:USDT | +15.13% | $6,415,650.65 |
+| CYS/USDT:USDT | +14.22% | $25,267,478.95 |
+| UB/USDT:USDT | +11.38% | $2,061,840.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOAD/USDT:USDT | below_relative_strength | +5.10% | +4.92% |
-| PROM/USDT:USDT | below_1h_threshold | +3.82% | +3.64% |
-| BTW/USDT:USDT | below_1h_threshold | +1.31% | +1.14% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.02% |
-| UAI/USDT:USDT | below_1h_threshold | +1.19% | +1.01% |
+| UAI/USDT:USDT | below_1h_threshold | +1.54% | +1.37% |
+| BTW/USDT:USDT | below_1h_threshold | +1.27% | +1.10% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.03% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.18% | +1.02% |
+| MMT/USDT:USDT | below_1h_threshold | +1.14% | +0.97% |
 
 ## 7. 次に見るべき不足
 
