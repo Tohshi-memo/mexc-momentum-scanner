@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T09:06:25.475944+00:00
+- generated_at: 2026-08-11T09:11:21.547854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11234**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T09:06:17.373634+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64125.0
+- 更新: 2026-08-11T09:11:13.783922+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64106.0
 - Funnel: target 963 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +89.71% | $18,890,763.33 |
-| BTR/USDT:USDT | +35.66% | $1,098,985.86 |
-| TOAD/USDT:USDT | +35.22% | $1,413,173.49 |
-| CYS/USDT:USDT | +18.44% | $26,430,595.16 |
-| MAV/USDT:USDT | +17.91% | $1,040,488.38 |
+| BLUAI/USDT:USDT | +90.01% | $18,937,111.79 |
+| TOAD/USDT:USDT | +36.72% | $1,419,479.11 |
+| BTR/USDT:USDT | +36.21% | $1,117,571.92 |
+| CYS/USDT:USDT | +18.04% | $26,483,743.80 |
+| MAV/USDT:USDT | +17.38% | $1,057,459.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BANANAS31/USDT:USDT | below_1h_threshold | +1.66% | +1.63% |
-| TOAD/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
-| MAV/USDT:USDT | below_1h_threshold | +1.01% | +0.99% |
-| AMGNSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.90% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.75% | +0.73% |
+| TOAD/USDT:USDT | below_1h_threshold | +2.73% | +2.74% |
+| HEI/USDT:USDT | below_1h_threshold | +2.07% | +2.08% |
+| BSV/USDT:USDT | below_1h_threshold | +1.38% | +1.39% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +1.18% | +1.19% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.10% | +1.10% |
 
 ## 7. 次に見るべき不足
 
