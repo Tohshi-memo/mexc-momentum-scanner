@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 121.04530880790351,
+  "balance": 121.28739942551931,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -3524,6 +3524,28 @@
       "strategy_boosters": [
         "daily_RED",
         "1h_green=3",
+        "fundamental_HIGH"
+      ],
+      "strategy_score": 0.0
+    },
+    {
+      "symbol": "BEAT/USDT:USDT",
+      "detected_at": "2026-08-11T17:06:20.071926+00:00",
+      "closed_at": "2026-08-11T17:15:47.216540+00:00",
+      "outcome": "TP_HIT",
+      "pnl_pct": 7.999999999999997,
+      "sl_pct": 4.000000000000004,
+      "risk_pct": 0.1,
+      "notional_usdt": 3.0261327201975847,
+      "pnl_usdt": 0.24209061761580672,
+      "balance_before": 121.04530880790351,
+      "balance_after": 121.28739942551931,
+      "strategy_tier": "S",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "daily_RED",
+        "1h_green=4",
         "fundamental_HIGH"
       ],
       "strategy_score": 0.0
