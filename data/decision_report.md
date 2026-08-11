@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T14:21:24.229935+00:00
+- generated_at: 2026-08-11T14:26:29.973217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11264**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1405件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1406件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T14:21:17.485370+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64139.9
-- Funnel: target 967 → liquid 191 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1
+- 更新: 2026-08-11T14:26:22.143522+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=63981.0
+- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.2 >= 65=1, 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +65.59% | $31,868,905.98 |
-| TOAD/USDT:USDT | +43.75% | $1,610,482.01 |
-| BTR/USDT:USDT | +42.27% | $1,703,355.95 |
-| INX/USDT:USDT | +26.21% | $1,773,058.19 |
-| COOKIE/USDT:USDT | +25.08% | $1,914,906.98 |
+| VELVET/USDT:USDT | +66.86% | $32,087,354.77 |
+| TOAD/USDT:USDT | +43.83% | $1,616,414.48 |
+| BTR/USDT:USDT | +41.21% | $1,710,912.91 |
+| COOKIE/USDT:USDT | +25.51% | $1,926,152.99 |
+| INX/USDT:USDT | +25.48% | $1,782,405.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.73% | +3.78% |
-| COOKIE/USDT:USDT | below_1h_threshold | +3.47% | +3.52% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.39% | +3.45% |
-| CAP/USDT:USDT | below_1h_threshold | +3.07% | +3.12% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.41% | +2.47% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +3.94% | +4.24% |
+| COOKIE/USDT:USDT | below_1h_threshold | +3.82% | +4.13% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.39% | +3.69% |
+| ICP/USDT:USDT | below_1h_threshold | +2.45% | +2.75% |
+| CAP/USDT:USDT | below_1h_threshold | +2.18% | +2.48% |
 
 ## 7. 次に見るべき不足
 
