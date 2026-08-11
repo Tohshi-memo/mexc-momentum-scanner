@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T04:01:25.604196+00:00
+- generated_at: 2026-08-11T04:06:18.085185+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11219**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T04:01:17.592487+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64110.7
+- 更新: 2026-08-11T04:06:11.765273+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64100.6
 - Funnel: target 962 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +99.29% | $16,581,274.47 |
-| TOAD/USDT:USDT | +53.87% | $1,233,967.93 |
-| BICO/USDT:USDT | +16.91% | $9,944,291.30 |
-| CYS/USDT:USDT | +12.50% | $23,936,733.06 |
-| COOKIE/USDT:USDT | +11.55% | $1,460,380.72 |
+| BLUAI/USDT:USDT | +84.30% | $16,665,834.69 |
+| TOAD/USDT:USDT | +49.84% | $1,239,094.70 |
+| CYS/USDT:USDT | +14.31% | $23,984,817.49 |
+| BICO/USDT:USDT | +12.22% | $10,060,676.96 |
+| COOKIE/USDT:USDT | +11.98% | $1,468,373.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOAD/USDT:USDT | below_1h_threshold | +1.72% | +1.72% |
-| BTW/USDT:USDT | below_1h_threshold | +1.32% | +1.32% |
-| BICO/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.17% |
-| KORU/USDT:USDT | below_1h_threshold | +0.99% | +0.99% |
+| BANANAS31/USDT:USDT | below_1h_threshold | +2.16% | +2.17% |
+| CYS/USDT:USDT | below_1h_threshold | +1.51% | +1.53% |
+| SQD/USDT:USDT | below_1h_threshold | +1.41% | +1.43% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
+| XAN/USDT:USDT | below_1h_threshold | +1.01% | +1.02% |
 
 ## 7. 次に見るべき不足
 
