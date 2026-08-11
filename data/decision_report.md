@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T14:46:45.942142+00:00
+- generated_at: 2026-08-11T14:51:36.081129+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11268**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1410件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1411件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T14:46:32.516484+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=63959.9
-- Funnel: target 967 → liquid 194 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.0 >= 65=1, 4h RSI 81.5 >= 65=1
+- 更新: 2026-08-11T14:51:27.595146+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=63841.1
+- Funnel: target 967 → liquid 194 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.0 >= 65=1, 4h RSI 81.2 >= 65=1, 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +63.60% | $33,026,185.79 |
-| BTR/USDT:USDT | +43.75% | $1,740,105.99 |
-| TOAD/USDT:USDT | +37.67% | $1,634,783.56 |
-| INX/USDT:USDT | +34.58% | $1,933,309.61 |
-| CYS/USDT:USDT | +24.01% | $19,945,682.34 |
+| VELVET/USDT:USDT | +67.26% | $33,331,573.03 |
+| BTR/USDT:USDT | +44.86% | $1,744,759.78 |
+| TOAD/USDT:USDT | +35.54% | $1,640,457.54 |
+| INX/USDT:USDT | +34.46% | $1,975,911.81 |
+| SQD/USDT:USDT | +26.38% | $3,569,584.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.39% | +3.73% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +3.09% | +3.43% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.54% | +2.87% |
-| BTR/USDT:USDT | below_1h_threshold | +2.37% | +2.71% |
-| KORU/USDT:USDT | below_1h_threshold | +1.96% | +2.29% |
+| COOKIE/USDT:USDT | below_1h_threshold | +4.60% | +5.12% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.37% | +4.89% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.39% | +3.91% |
+| BTR/USDT:USDT | below_1h_threshold | +3.10% | +3.62% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +2.89% | +3.41% |
 
 ## 7. 次に見るべき不足
 
