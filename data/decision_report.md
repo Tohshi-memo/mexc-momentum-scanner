@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T01:21:19.632084+00:00
+- generated_at: 2026-08-11T01:26:21.572010+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11209**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T01:21:11.612962+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63984.8
-- Funnel: target 962 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-11T01:26:13.564424+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64008.1
+- Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +124.45% | $14,492,687.40 |
-| PROM/USDT:USDT | +29.12% | $1,776,379.20 |
-| CYS/USDT:USDT | +14.52% | $24,124,260.02 |
-| BTW/USDT:USDT | +12.29% | $7,654,044.76 |
-| CRV/USDT:USDT | +10.57% | $7,928,441.74 |
+| BLUAI/USDT:USDT | +125.56% | $14,558,087.38 |
+| TOAD/USDT:USDT | +65.95% | $1,002,664.87 |
+| PROM/USDT:USDT | +33.93% | $1,810,084.40 |
+| CYS/USDT:USDT | +12.41% | $24,222,588.01 |
+| BTW/USDT:USDT | +11.71% | $7,663,556.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.73% | +3.77% |
-| BOME/USDT:USDT | below_1h_threshold | +2.76% | +2.79% |
-| COOKIE/USDT:USDT | below_1h_threshold | +1.80% | +1.84% |
-| VELODROME/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.77% | +3.77% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.46% | +2.46% |
+| BOME/USDT:USDT | below_1h_threshold | +2.34% | +2.34% |
+| VELODROME/USDT:USDT | below_1h_threshold | +1.94% | +1.93% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.81% | +1.81% |
 
 ## 7. 次に見るべき不足
 
