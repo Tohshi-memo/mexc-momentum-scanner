@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-11T17:36:24.770743+00:00
+- generated_at: 2026-08-11T17:41:39.471161+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11287**
+- closed shadow trades: **11288**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.75% / filled 20/20。**
-- 全期間 MARKET基準: n=11287, expectancy=-0.01%
+- 全期間 MARKET基準: n=11288, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.75%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,7 +31,7 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_FIB1272_LONG | 14/20 | 70.0% | +2.62% | **+1.84%** |
+| LIMIT_FIB1272_LONG | 15/20 | 75.0% | +2.98% | **+2.24%** |
 | LIMIT_6PCT_LONG | 13/20 | 65.0% | +2.02% | **+1.31%** |
 | LIMIT_7PCT_LONG | 11/20 | 55.0% | +2.38% | **+1.31%** |
 | LIMIT_5PCT_LONG | 13/20 | 65.0% | +1.72% | **+1.12%** |
@@ -47,54 +47,55 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$616.77** / 初期 $100.00 (+516.77%)
-- 確定: 3938件 (Win 1230 / Loss 1285 / Flat 1423) / skip 3910件
+- 確定: 3938件 (Win 1230 / Loss 1285 / Flat 1423) / skip 3911件
 - 成長率目線: 平均log +0.000462 / 幾何平均 +0.046% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: TOAD/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $616.77
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$143.34** / 初期 $100.00 (+43.34%)
-- 確定: 1541件 (Win 431 / Loss 363 / Flat 747) / skip 3157件
+- 残高: **$143.44** / 初期 $100.00 (+43.44%)
+- 確定: 1542件 (Win 432 / Loss 363 / Flat 747) / skip 3157件
 - 成長率目線: 平均log +0.000234 / 幾何平均 +0.023% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0330 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: BMT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $143.34
+- 最新: BTR/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.07% 残高後 $143.44
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1428件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1429件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T17:36:14.424016+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63544.8
-- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-11T17:41:29.616109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63496.6
+- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +8.62% | $2,027,465.48 |
-| AKE/USDT:USDT | +5.87% | $2,823,879.44 |
-| GUA/USDT:USDT | +4.85% | $7,953,393.71 |
-| SQD/USDT:USDT | +4.04% | $3,659,274.32 |
-| SKYAI/USDT:USDT | +3.62% | $23,631,025.76 |
+| BMT/USDT:USDT | +7.34% | $2,049,046.75 |
+| GUA/USDT:USDT | +5.74% | $7,971,184.86 |
+| AKE/USDT:USDT | +5.26% | $2,843,324.12 |
+| SQD/USDT:USDT | +4.91% | $3,662,362.93 |
+| SKYAI/USDT:USDT | +3.81% | $23,721,553.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SQD/USDT:USDT | below_1h_threshold | +4.42% | +4.34% |
-| AKE/USDT:USDT | below_1h_threshold | +3.10% | +3.01% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.63% | +1.55% |
-| ON/USDT:USDT | below_1h_threshold | +1.62% | +1.53% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.05% | +0.97% |
+| BMT/USDT:USDT | below_1h_threshold | +4.01% | +4.00% |
+| BTR/USDT:USDT | below_1h_threshold | +3.90% | +3.89% |
+| AKE/USDT:USDT | below_1h_threshold | +2.56% | +2.55% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.74% | +1.73% |
+| GUA/USDT:USDT | below_1h_threshold | +1.47% | +1.46% |
 
 ## 7. 次に見るべき不足
 
