@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T01:51:24.493072+00:00
+- generated_at: 2026-08-11T01:56:23.538076+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11210**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T01:51:14.973335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64026.4
+- 更新: 2026-08-11T01:56:15.445140+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64033.1
 - Funnel: target 962 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +105.67% | $15,145,479.40 |
-| TOAD/USDT:USDT | +56.08% | $1,075,069.07 |
-| PROM/USDT:USDT | +32.23% | $2,085,107.30 |
-| CYS/USDT:USDT | +12.38% | $24,532,128.81 |
-| CRV/USDT:USDT | +11.45% | $8,142,854.37 |
+| BLUAI/USDT:USDT | +107.62% | $15,221,232.78 |
+| TOAD/USDT:USDT | +56.16% | $1,081,500.86 |
+| PROM/USDT:USDT | +33.43% | $2,156,722.95 |
+| CYS/USDT:USDT | +14.38% | $24,566,879.52 |
+| BTW/USDT:USDT | +11.03% | $7,763,275.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +4.58% | +4.55% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.53% | +3.50% |
-| UAI/USDT:USDT | below_1h_threshold | +3.46% | +3.43% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.31% | +3.28% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.19% | +2.16% |
+| CAP/USDT:USDT | below_1h_threshold | +4.78% | +4.74% |
+| UAI/USDT:USDT | below_1h_threshold | +4.11% | +4.07% |
+| DODO/USDT:USDT | below_1h_threshold | +3.65% | +3.61% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.06% | +3.02% |
+| BOME/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
 
 ## 7. 次に見るべき不足
 
