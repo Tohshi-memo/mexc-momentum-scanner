@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T21:41:31.753814+00:00
+- generated_at: 2026-08-11T21:46:35.429428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11300**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T21:41:23.873385+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=63633.6
-- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 4 → strict 0
+- 更新: 2026-08-11T21:46:25.808751+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=63644.0
+- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 4 → strict 0
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.9 >= 65=1, 4h RSI 80.0 >= 65=1, 4h RSI 69.0 >= 65=1, 4h RSI 65.5 >= 65=1
+- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 78.6 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +35.07% | $1,318,834.26 |
-| CRWVSTOCK/USDT:USDT | +16.13% | $3,201,270.86 |
-| HOLO/USDT:USDT | +15.23% | $2,018,133.55 |
-| BMT/USDT:USDT | +11.97% | $2,537,006.04 |
-| GUA/USDT:USDT | +8.58% | $5,756,833.42 |
+| LSK/USDT:USDT | +33.77% | $1,416,737.94 |
+| HOLO/USDT:USDT | +17.06% | $2,074,164.58 |
+| CRWVSTOCK/USDT:USDT | +16.13% | $3,237,185.65 |
+| BMT/USDT:USDT | +11.23% | $2,539,222.83 |
+| BEAT/USDT:USDT | +10.35% | $112,764,280.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +2.88% | +3.02% |
-| BTR/USDT:USDT | below_1h_threshold | +2.20% | +2.33% |
-| FHE/USDT:USDT | below_1h_threshold | +2.07% | +2.21% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.22% | +1.36% |
-| SQD/USDT:USDT | below_1h_threshold | +1.05% | +1.19% |
+| AKE/USDT:USDT | below_1h_threshold | +3.61% | +3.73% |
+| BTR/USDT:USDT | below_1h_threshold | +3.34% | +3.46% |
+| FHE/USDT:USDT | below_1h_threshold | +2.00% | +2.12% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.99% | +2.11% |
+| BMT/USDT:USDT | below_1h_threshold | +1.80% | +1.92% |
 
 ## 7. 次に見るべき不足
 
