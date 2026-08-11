@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T15:11:23.030189+00:00
+- generated_at: 2026-08-11T15:16:27.490485+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11270**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T15:11:14.607590+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63772.0
-- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-11T15:16:19.365969+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63735.1
+- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +50.86% | $1,658,693.82 |
-| VELVET/USDT:USDT | +41.43% | $36,885,231.23 |
-| BTR/USDT:USDT | +36.26% | $1,812,451.92 |
-| INX/USDT:USDT | +33.85% | $2,192,402.94 |
-| CYS/USDT:USDT | +24.60% | $18,933,996.36 |
+| TOAD/USDT:USDT | +48.10% | $1,670,609.90 |
+| VELVET/USDT:USDT | +45.48% | $37,326,839.78 |
+| BTR/USDT:USDT | +33.95% | $1,821,471.06 |
+| INX/USDT:USDT | +30.94% | $2,282,141.96 |
+| COOKIE/USDT:USDT | +24.05% | $1,980,755.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMRSTOCK/USDT:USDT | below_1h_threshold | +4.12% | +4.08% |
-| INX/USDT:USDT | below_1h_threshold | +3.47% | +3.43% |
-| BTR/USDT:USDT | below_1h_threshold | +2.08% | +2.04% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.89% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.86% | +1.82% |
+| SMRSTOCK/USDT:USDT | below_1h_threshold | +4.12% | +4.14% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.26% | +3.28% |
+| TOAD/USDT:USDT | below_1h_threshold | +2.63% | +2.65% |
+| CAP/USDT:USDT | below_1h_threshold | +2.17% | +2.18% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.95% |
 
 ## 7. 次に見るべき不足
 
