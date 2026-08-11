@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T12:16:23.001207+00:00
+- generated_at: 2026-08-11T12:21:23.429274+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11257**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T12:16:14.822845+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=64416.6
-- Funnel: target 963 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-11T12:21:14.797698+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64353.7
+- Funnel: target 963 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +90.48% | $20,008,228.05 |
-| VELVET/USDT:USDT | +49.37% | $25,097,399.89 |
-| BTR/USDT:USDT | +45.97% | $1,335,653.25 |
-| TOAD/USDT:USDT | +42.25% | $1,536,655.22 |
-| BANANAS31/USDT:USDT | +27.33% | $2,421,477.30 |
+| BLUAI/USDT:USDT | +93.14% | $20,024,688.92 |
+| VELVET/USDT:USDT | +50.64% | $25,597,026.00 |
+| BTR/USDT:USDT | +44.95% | $1,343,467.38 |
+| TOAD/USDT:USDT | +41.15% | $1,538,640.17 |
+| MITO/USDT:USDT | +30.24% | $1,033,736.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +3.78% | +3.69% |
-| CAP/USDT:USDT | below_1h_threshold | +3.38% | +3.29% |
-| BTR/USDT:USDT | below_1h_threshold | +2.58% | +2.49% |
-| BANANAS31/USDT:USDT | below_1h_threshold | +2.41% | +2.32% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.93% | +1.84% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
+| CAP/USDT:USDT | below_1h_threshold | +2.77% | +2.77% |
+| BTR/USDT:USDT | below_1h_threshold | +2.28% | +2.29% |
+| CYS/USDT:USDT | below_1h_threshold | +2.08% | +2.09% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.46% | +1.47% |
 
 ## 7. 次に見るべき不足
 
