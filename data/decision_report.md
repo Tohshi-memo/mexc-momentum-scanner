@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T19:01:22.804999+00:00
+- generated_at: 2026-08-11T19:06:25.029192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11291**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T19:01:14.729604+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63337.8
+- 更新: 2026-08-11T19:06:17.083920+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63320.7
 - Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CAP/USDT:USDT | +12.51% | $6,187,793.92 |
-| BMT/USDT:USDT | +7.34% | $2,160,053.43 |
-| AKE/USDT:USDT | +6.51% | $3,448,509.73 |
-| FHE/USDT:USDT | +5.98% | $1,230,268.35 |
-| GUA/USDT:USDT | +5.02% | $6,052,377.49 |
+| CAP/USDT:USDT | +11.87% | $6,330,196.05 |
+| BMT/USDT:USDT | +7.73% | $2,168,522.05 |
+| AKE/USDT:USDT | +6.52% | $3,466,519.99 |
+| GUA/USDT:USDT | +5.18% | $6,053,835.62 |
+| FHE/USDT:USDT | +4.88% | $1,239,161.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +3.78% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.91% |
-| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.57% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.73% |
-| CAP/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
+| RKLBSTOCK/USDT:USDT | below_1h_threshold | +3.75% | +3.80% |
+| ASTSSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +2.94% |
+| HIMSSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.60% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.46% | +1.51% |
+| SQD/USDT:USDT | below_1h_threshold | +1.23% | +1.29% |
 
 ## 7. 次に見るべき不足
 
