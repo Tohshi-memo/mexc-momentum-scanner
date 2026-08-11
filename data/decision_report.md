@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T07:16:26.267358+00:00
+- generated_at: 2026-08-11T07:21:24.969102+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11226**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T07:16:18.184073+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63923.2
-- Funnel: target 959 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-11T07:21:17.207993+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63881.3
+- Funnel: target 959 → liquid 187 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLUAI/USDT:USDT | +88.77% | $17,514,708.68 |
-| TOAD/USDT:USDT | +25.90% | $1,389,181.51 |
-| PROM/USDT:USDT | +12.93% | $6,249,512.32 |
-| CYS/USDT:USDT | +12.29% | $24,842,451.81 |
-| UB/USDT:USDT | +11.29% | $2,003,900.97 |
+| BLUAI/USDT:USDT | +86.63% | $17,556,755.64 |
+| TOAD/USDT:USDT | +22.19% | $1,391,433.26 |
+| PROM/USDT:USDT | +12.53% | $6,264,943.31 |
+| UB/USDT:USDT | +11.93% | $2,015,645.39 |
+| CYS/USDT:USDT | +11.89% | $24,901,672.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +1.65% | +1.68% |
-| TOAD/USDT:USDT | below_1h_threshold | +1.59% | +1.62% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.22% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.18% | +1.21% |
-| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.13% |
+| UAI/USDT:USDT | below_1h_threshold | +1.84% | +1.94% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.20% | +1.29% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.18% | +1.28% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.19% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.92% | +1.01% |
 
 ## 7. 次に見るべき不足
 
