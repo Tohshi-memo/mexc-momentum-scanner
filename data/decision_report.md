@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T16:06:19.583635+00:00
+- generated_at: 2026-08-11T16:11:30.817531+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11274**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1414件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 0件 / skip 1415件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T16:06:13.234268+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63600.1
-- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-11T16:11:20.308447+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63615.0
+- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +3.30% | $2,049,784.50 |
-| LUNANEW/USDT:USDT | +2.40% | $1,350,636.47 |
-| MUBARAK/USDT:USDT | +2.02% | $2,759,261.33 |
-| 4/USDT:USDT | +1.63% | $1,083,404.25 |
-| ALLO/USDT:USDT | +1.60% | $2,480,123.34 |
+| BMT/USDT:USDT | +5.56% | $2,074,763.51 |
+| TOAD/USDT:USDT | +3.81% | $1,709,245.84 |
+| 4/USDT:USDT | +3.55% | $1,124,401.57 |
+| ALLO/USDT:USDT | +2.47% | $2,499,793.90 |
+| MUBARAK/USDT:USDT | +2.13% | $2,777,848.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.40% | +3.39% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +2.45% | +2.44% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.02% | +2.01% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.67% | +1.66% |
-| 4/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
+| TOAD/USDT:USDT | below_1h_threshold | +3.66% | +3.62% |
+| 4/USDT:USDT | below_1h_threshold | +3.55% | +3.52% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.43% | +2.40% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.30% | +2.27% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
 
 ## 7. 次に見るべき不足
 
