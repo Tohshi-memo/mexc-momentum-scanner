@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T20:01:23.350114+00:00
+- generated_at: 2026-08-11T20:06:27.313182+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11292**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T20:01:15.238147+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=63601.5
-- Funnel: target 967 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-11T20:06:19.197834+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=63646.0
+- Funnel: target 967 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +12.76% | $2,352,145.61 |
-| CAP/USDT:USDT | +10.06% | $7,176,222.10 |
-| AKE/USDT:USDT | +8.51% | $3,680,028.46 |
-| GUA/USDT:USDT | +6.76% | $5,870,938.62 |
-| FHE/USDT:USDT | +6.14% | $1,219,690.74 |
+| HOLO/USDT:USDT | +12.58% | $1,006,763.90 |
+| BMT/USDT:USDT | +11.82% | $2,369,519.84 |
+| CAP/USDT:USDT | +10.44% | $7,243,468.59 |
+| AKE/USDT:USDT | +8.32% | $3,736,031.93 |
+| SMCISTOCK/USDT:USDT | +7.99% | $1,577,208.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.48% | +2.33% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.38% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.22% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.12% |
-| ASTSSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.02% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.61% |
+| MUU/USDT:USDT | below_1h_threshold | +2.48% | +2.26% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.65% | +1.44% |
+| 4/USDT:USDT | below_1h_threshold | +1.51% | +1.29% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.50% | +1.28% |
 
 ## 7. 次に見るべき不足
 
