@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T16:01:24.845664+00:00
+- generated_at: 2026-08-11T16:06:19.583635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11274**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T16:01:13.707741+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=63537.9
-- Funnel: target 967 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-11T16:06:13.234268+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63600.1
+- Funnel: target 967 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +1.24% | $1,067,573.63 |
-| CYS/USDT:USDT | +0.81% | $19,029,649.13 |
-| BSPSTOCK/USDT:USDT | +0.69% | $1,389,549.44 |
-| VELVET/USDT:USDT | +0.67% | $40,023,348.32 |
-| INX/USDT:USDT | +0.52% | $2,682,885.74 |
+| BMT/USDT:USDT | +3.30% | $2,049,784.50 |
+| LUNANEW/USDT:USDT | +2.40% | $1,350,636.47 |
+| MUBARAK/USDT:USDT | +2.02% | $2,759,261.33 |
+| 4/USDT:USDT | +1.63% | $1,083,404.25 |
+| ALLO/USDT:USDT | +1.60% | $2,480,123.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +1.25% | +1.33% |
-| CYS/USDT:USDT | below_1h_threshold | +0.77% | +0.85% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.72% | +0.80% |
-| BMT/USDT:USDT | below_1h_threshold | +0.39% | +0.48% |
-| HEI/USDT:USDT | below_1h_threshold | +0.39% | +0.48% |
+| BMT/USDT:USDT | below_1h_threshold | +3.40% | +3.39% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +2.45% | +2.44% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.02% | +2.01% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.67% | +1.66% |
+| 4/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
 
 ## 7. 次に見るべき不足
 
