@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T16:11:30.817531+00:00
+- generated_at: 2026-08-11T16:16:24.382572+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11274**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T16:11:20.308447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63615.0
-- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-11T16:16:16.115364+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63557.3
+- Funnel: target 967 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +5.56% | $2,074,763.51 |
-| TOAD/USDT:USDT | +3.81% | $1,709,245.84 |
-| 4/USDT:USDT | +3.55% | $1,124,401.57 |
-| ALLO/USDT:USDT | +2.47% | $2,499,793.90 |
-| MUBARAK/USDT:USDT | +2.13% | $2,777,848.82 |
+| TOAD/USDT:USDT | +5.29% | $1,715,074.82 |
+| BMT/USDT:USDT | +4.23% | $2,093,403.55 |
+| 4/USDT:USDT | +3.55% | $1,143,913.78 |
+| INX/USDT:USDT | +2.62% | $2,860,556.91 |
+| ALLO/USDT:USDT | +2.14% | $2,521,360.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOAD/USDT:USDT | below_1h_threshold | +3.66% | +3.62% |
-| 4/USDT:USDT | below_1h_threshold | +3.55% | +3.52% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.43% | +2.40% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.30% | +2.27% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
+| BMT/USDT:USDT | below_1h_threshold | +4.19% | +4.25% |
+| 4/USDT:USDT | below_1h_threshold | +3.55% | +3.61% |
+| INX/USDT:USDT | below_1h_threshold | +2.79% | +2.85% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.19% | +2.25% |
+| SYN/USDT:USDT | below_1h_threshold | +1.61% | +1.67% |
 
 ## 7. 次に見るべき不足
 
