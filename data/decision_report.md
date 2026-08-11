@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-11T13:51:32.761385+00:00
+- generated_at: 2026-08-11T13:56:26.620469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11264**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-11T13:51:21.844352+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=64105.8
-- Funnel: target 967 → liquid 196 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 77.8 >= 65=1
+- 更新: 2026-08-11T13:56:17.831732+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=64097.5
+- Funnel: target 967 → liquid 196 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +61.25% | $30,196,333.69 |
-| TOAD/USDT:USDT | +47.70% | $1,605,285.18 |
-| BTR/USDT:USDT | +41.11% | $1,647,848.15 |
-| COOKIE/USDT:USDT | +25.17% | $1,888,592.85 |
-| CYS/USDT:USDT | +22.70% | $23,944,542.44 |
+| VELVET/USDT:USDT | +63.08% | $30,615,463.48 |
+| TOAD/USDT:USDT | +48.81% | $1,611,776.73 |
+| BTR/USDT:USDT | +39.13% | $1,661,628.52 |
+| COOKIE/USDT:USDT | +24.57% | $1,909,521.95 |
+| INX/USDT:USDT | +23.90% | $1,607,006.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +2.20% | +2.51% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.10% | +2.40% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.73% | +2.03% |
-| LIGHT/USDT:USDT | below_1h_threshold | +1.63% | +1.94% |
-| UAI/USDT:USDT | below_1h_threshold | +1.43% | +1.74% |
+| COOKIE/USDT:USDT | below_1h_threshold | +4.75% | +5.07% |
+| MMT/USDT:USDT | below_1h_threshold | +2.43% | +2.75% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.12% | +2.44% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.66% | +1.98% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.46% | +1.78% |
 
 ## 7. 次に見るべき不足
 
