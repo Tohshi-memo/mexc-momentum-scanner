@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T07:06:18.102236+00:00
+- generated_at: 2026-08-12T07:11:24.352774+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11336**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.27** / 初期 $100.00 (+14.27%)
-- 確定: 1351件 (Win 409 / Loss 529 / Flat 413) / pending 3件 / skip 1452件
+- 確定: 1351件 (Win 409 / Loss 529 / Flat 413) / pending 5件 / skip 1452件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000077 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FHE/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $114.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T07:06:10.102826+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63745.5
-- Funnel: target 968 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T07:11:13.235405+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63752.5
+- Funnel: target 968 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +31.38% | $88,813,416.53 |
-| PROM/USDT:USDT | +29.91% | $6,841,186.27 |
-| JIMOTHY/USDT:USDT | +22.91% | $2,019,360.77 |
-| CRWVSTOCK/USDT:USDT | +17.50% | $4,316,689.79 |
-| FHE/USDT:USDT | +14.49% | $1,583,559.03 |
+| PROM/USDT:USDT | +38.63% | $6,924,196.08 |
+| BEAT/USDT:USDT | +30.25% | $89,277,899.85 |
+| JIMOTHY/USDT:USDT | +25.16% | $2,021,224.40 |
+| CRWVSTOCK/USDT:USDT | +17.43% | $4,338,783.12 |
+| FHE/USDT:USDT | +16.89% | $1,635,221.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +3.27% | +3.18% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.23% | +3.14% |
-| FHE/USDT:USDT | below_1h_threshold | +3.02% | +2.93% |
-| CAP/USDT:USDT | below_1h_threshold | +2.05% | +1.96% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.55% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.50% | +2.40% |
+| CAP/USDT:USDT | below_1h_threshold | +2.17% | +2.07% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.54% |
+| TRB/USDT:USDT | below_1h_threshold | +0.81% | +0.71% |
+| CRV/USDT:USDT | below_1h_threshold | +0.80% | +0.70% |
 
 ## 7. 次に見るべき不足
 
