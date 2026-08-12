@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T16:31:35.302133+00:00
+- generated_at: 2026-08-12T16:36:31.208432+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11385**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.00** / 初期 $100.00 (+15.00%)
-- 確定: 1398件 (Win 416 / Loss 535 / Flat 447) / pending 5件 / skip 1454件
+- 確定: 1398件 (Win 416 / Loss 535 / Flat 447) / pending 6件 / skip 1454件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000189 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONE/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T16:31:20.731562+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=63538.2
-- Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T16:36:18.497292+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=63525.9
+- Funnel: target 972 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +15.43% | $3,887,647.05 |
-| TUT/USDT:USDT | +6.08% | $9,135,467.51 |
-| BTW/USDT:USDT | +5.03% | $15,051,833.22 |
-| QNTSTOCK/USDT:USDT | +3.97% | $1,050,209.84 |
-| VELVET/USDT:USDT | +3.00% | $22,815,645.37 |
+| ONE/USDT:USDT | +11.40% | $3,988,771.12 |
+| BTW/USDT:USDT | +5.57% | $15,089,295.62 |
+| DOS/USDT:USDT | +3.37% | $2,603,270.05 |
+| VELVET/USDT:USDT | +3.06% | $22,908,628.89 |
+| CYS/USDT:USDT | +2.97% | $30,361,985.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_relative_strength | +5.00% | +4.82% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.28% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.99% | +2.81% |
-| NIL/USDT:USDT | below_1h_threshold | +2.54% | +2.36% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.31% |
+| DOS/USDT:USDT | below_1h_threshold | +3.56% | +3.40% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.29% |
+| CYS/USDT:USDT | below_1h_threshold | +2.96% | +2.79% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.94% | +2.78% |
+| NIL/USDT:USDT | below_1h_threshold | +2.66% | +2.49% |
 
 ## 7. 次に見るべき不足
 
