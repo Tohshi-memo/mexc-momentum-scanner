@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T21:01:21.627415+00:00
+- generated_at: 2026-08-12T21:06:16.776238+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11396**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T21:01:13.404735+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63589.9
+- 更新: 2026-08-12T21:06:08.516591+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63550.0
 - Funnel: target 972 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +32.26% | $6,340,341.22 |
-| BTW/USDT:USDT | +15.15% | $19,078,728.90 |
-| VELVET/USDT:USDT | +8.41% | $20,060,924.32 |
-| CYS/USDT:USDT | +7.18% | $19,801,262.59 |
-| BR/USDT:USDT | +6.91% | $8,191,147.92 |
+| COTI/USDT:USDT | +31.33% | $6,361,409.73 |
+| BTW/USDT:USDT | +15.03% | $19,198,687.84 |
+| VELVET/USDT:USDT | +8.78% | $20,160,319.29 |
+| BEAT/USDT:USDT | +8.60% | $68,865,540.44 |
+| CYS/USDT:USDT | +7.39% | $19,839,891.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.54% |
-| TUT/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.32% | +0.29% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.26% | +0.24% |
-| HEI/USDT:USDT | below_1h_threshold | +0.23% | +0.20% |
+| APR/USDT:USDT | below_1h_threshold | +3.75% | +3.79% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.43% | +2.47% |
+| ONE/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
+| BANK/USDT:USDT | below_1h_threshold | +1.17% | +1.21% |
+| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.60% |
 
 ## 7. 次に見るべき不足
 
