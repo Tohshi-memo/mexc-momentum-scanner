@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 115.00489088382699,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-08-12T23:11:16.600612+00:00",
+  "updated_at": "2026-08-12T23:16:24.413353+00:00",
   "high_watermark": 119.485478480524,
   "max_drawdown_pct": 4.863437935184303,
   "loss_streak": 1,
@@ -299855,6 +299855,103 @@
             "strategy": "MARKET_LONG",
             "direction": "long",
             "causal_score": 2.2175168162790144e-05
+          }
+        ]
+      }
+    },
+    "APR/USDT:USDT|2026-08-12T23:16:20.015441+00:00": {
+      "key": "APR/USDT:USDT|2026-08-12T23:16:20.015441+00:00",
+      "symbol": "APR/USDT:USDT",
+      "detected_at": "2026-08-12T23:16:20.015441+00:00",
+      "registered_at": "2026-08-12T23:16:24.376433+00:00",
+      "signal_batch": "2026-08-12T23:16Z",
+      "status": "pending",
+      "strategy": "LIMIT_5PCT",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 6.3343704801672684,
+      "decision": {
+        "strategy": "LIMIT_5PCT",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0001367478520673561,
+        "robust_score": 0.0001367478520673561,
+        "causal_history_count": 11406,
+        "fast": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 20,
+          "fill_rate": 0.4,
+          "avg_pnl_pct": 1.0119047619047592,
+          "effective_ev_pct": 0.4047619047619037,
+          "avg_log_return": 0.00017939193964327214,
+          "geometric_return_pct": 0.01794080313395341,
+          "avg_account_return_pct": 0.01797083333333327,
+          "max_drawdown_pct": 0.1750000000000102,
+          "max_loss_streak": 1
+        },
+        "recent": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 20,
+          "fill_rate": 0.4,
+          "avg_pnl_pct": 1.0119047619047592,
+          "effective_ev_pct": 0.4047619047619037,
+          "avg_log_return": 0.00017939193964327214,
+          "geometric_return_pct": 0.01794080313395341,
+          "avg_account_return_pct": 0.01797083333333327,
+          "max_drawdown_pct": 0.1750000000000102,
+          "max_loss_streak": 1
+        },
+        "mid": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 200,
+          "filled": 75,
+          "fill_rate": 0.375,
+          "avg_pnl_pct": 0.6296825396825384,
+          "effective_ev_pct": 0.2361309523809519,
+          "avg_log_return": 0.00010754204485146676,
+          "geometric_return_pct": 0.010754782770439064,
+          "avg_account_return_pct": 0.010790104166666637,
+          "max_drawdown_pct": 1.0103464465288914,
+          "max_loss_streak": 4
+        },
+        "long": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 371,
+          "fill_rate": 0.371,
+          "avg_pnl_pct": 0.20879527113844648,
+          "effective_ev_pct": 0.07746304559236364,
+          "avg_log_return": 3.8797812054109294e-05,
+          "geometric_return_pct": 0.0038798564699016325,
+          "avg_account_return_pct": 0.003909999999999973,
+          "max_drawdown_pct": 1.2172569630239378,
+          "max_loss_streak": 4
+        },
+        "all": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 371,
+          "fill_rate": 0.371,
+          "avg_pnl_pct": 0.20879527113844648,
+          "effective_ev_pct": 0.07746304559236364,
+          "avg_log_return": 3.8797812054109294e-05,
+          "geometric_return_pct": 0.0038798564699016325,
+          "avg_account_return_pct": 0.003909999999999973,
+          "max_drawdown_pct": 1.2172569630239378,
+          "max_loss_streak": 4
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_2PCT_LONG",
+            "direction": "long",
+            "causal_score": 0.00010340890939566202
           }
         ]
       }
