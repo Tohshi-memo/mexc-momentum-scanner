@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T00:11:33.500241+00:00
+- generated_at: 2026-08-12T00:16:33.227594+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11309**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.64** / 初期 $100.00 (+14.64%)
-- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 1件 / skip 1452件
+- 確定: 1331件 (Win 407 / Loss 525 / Flat 399) / pending 2件 / skip 1452件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000153 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ON/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T00:11:25.312057+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=63523.0
-- Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T00:16:24.382467+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63568.4
+- Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +49.98% | $1,568,744.98 |
-| CRWVSTOCK/USDT:USDT | +17.11% | $3,577,555.82 |
-| BMT/USDT:USDT | +17.00% | $2,745,567.35 |
-| HOLO/USDT:USDT | +15.60% | $3,625,790.89 |
-| LSK/USDT:USDT | +11.83% | $2,999,429.21 |
+| JIMOTHY/USDT:USDT | +49.57% | $1,576,779.30 |
+| HOLO/USDT:USDT | +18.30% | $3,684,491.18 |
+| CRWVSTOCK/USDT:USDT | +17.64% | $3,603,607.72 |
+| BMT/USDT:USDT | +15.47% | $2,761,128.86 |
+| LSK/USDT:USDT | +12.76% | $3,011,037.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOLO/USDT:USDT | below_1h_threshold | +4.08% | +4.16% |
-| LSK/USDT:USDT | below_1h_threshold | +2.45% | +2.52% |
-| TST/USDT:USDT | below_1h_threshold | +2.13% | +2.21% |
-| 4/USDT:USDT | below_1h_threshold | +1.67% | +1.74% |
-| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.65% |
+| LSK/USDT:USDT | below_1h_threshold | +3.30% | +3.31% |
+| CRV/USDT:USDT | below_1h_threshold | +2.60% | +2.60% |
+| TST/USDT:USDT | below_1h_threshold | +2.25% | +2.26% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.58% |
+| 4/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
 
 ## 7. 次に見るべき不足
 
