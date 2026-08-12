@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T06:16:27.206121+00:00
+- generated_at: 2026-08-12T06:21:20.142567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11335**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.27** / 初期 $100.00 (+14.27%)
-- 確定: 1350件 (Win 409 / Loss 529 / Flat 412) / pending 2件 / skip 1452件
+- 確定: 1350件 (Win 409 / Loss 529 / Flat 412) / pending 3件 / skip 1452件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000056 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $114.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T06:16:17.668318+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=63663.5
-- Funnel: target 968 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T06:21:11.964342+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=63670.0
+- Funnel: target 968 → liquid 186 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +32.92% | $6,534,421.02 |
-| JIMOTHY/USDT:USDT | +26.77% | $2,003,655.39 |
-| BEAT/USDT:USDT | +22.46% | $89,411,334.39 |
-| CRWVSTOCK/USDT:USDT | +17.03% | $4,217,919.03 |
-| HOLO/USDT:USDT | +16.73% | $8,629,555.34 |
+| PROM/USDT:USDT | +26.55% | $6,638,283.70 |
+| JIMOTHY/USDT:USDT | +26.48% | $2,005,423.37 |
+| BEAT/USDT:USDT | +22.05% | $89,555,818.07 |
+| CRWVSTOCK/USDT:USDT | +17.09% | $4,235,911.31 |
+| HOLO/USDT:USDT | +16.04% | $8,675,216.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.87% | +5.11% |
-| GUA/USDT:USDT | below_1h_threshold | +0.33% | +0.57% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.57% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.21% | +0.45% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.19% | +0.43% |
+| HYPE/USDT:USDT | below_1h_threshold | +0.35% | +0.58% |
+| LSK/USDT:USDT | below_1h_threshold | +0.34% | +0.57% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.56% |
+| JTO/USDT:USDT | below_1h_threshold | +0.22% | +0.45% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.21% | +0.44% |
 
 ## 7. 次に見るべき不足
 
