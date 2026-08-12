@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T16:51:33.586069+00:00
+- generated_at: 2026-08-12T16:56:32.064504+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11386**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T16:51:20.231749+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63473.1
+- 更新: 2026-08-12T16:56:19.223704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63482.0
 - Funnel: target 972 → liquid 179 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +7.66% | $15,263,200.88 |
-| DOS/USDT:USDT | +5.68% | $2,637,813.43 |
-| ONE/USDT:USDT | +5.63% | $4,135,983.83 |
-| VELVET/USDT:USDT | +3.57% | $23,109,950.86 |
-| HEI/USDT:USDT | +2.82% | $1,589,436.74 |
+| BTW/USDT:USDT | +7.92% | $15,312,056.83 |
+| ONE/USDT:USDT | +6.97% | $4,154,091.15 |
+| DOS/USDT:USDT | +5.86% | $2,660,219.52 |
+| VELVET/USDT:USDT | +3.65% | $23,207,797.60 |
+| FHE/USDT:USDT | +2.67% | $2,042,368.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.58% | +3.49% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.38% |
-| HEI/USDT:USDT | below_1h_threshold | +2.75% | +2.67% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.63% | +2.54% |
-| TUT/USDT:USDT | below_1h_threshold | +2.54% | +2.45% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.71% | +3.62% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.36% |
+| FHE/USDT:USDT | below_1h_threshold | +2.68% | +2.58% |
+| GRVT/USDT:USDT | below_1h_threshold | +2.67% | +2.58% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.39% |
 
 ## 7. 次に見るべき不足
 
