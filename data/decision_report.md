@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T07:01:20.369806+00:00
+- generated_at: 2026-08-12T07:06:18.102236+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11336**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T07:01:12.242443+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63684.4
+- 更新: 2026-08-12T07:06:10.102826+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63745.5
 - Funnel: target 968 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +27.07% | $88,512,232.94 |
-| JIMOTHY/USDT:USDT | +25.94% | $2,017,017.98 |
-| PROM/USDT:USDT | +25.58% | $6,812,908.63 |
-| CRWVSTOCK/USDT:USDT | +17.47% | $4,303,856.58 |
-| BTW/USDT:USDT | +12.19% | $4,725,314.54 |
+| BEAT/USDT:USDT | +31.38% | $88,813,416.53 |
+| PROM/USDT:USDT | +29.91% | $6,841,186.27 |
+| JIMOTHY/USDT:USDT | +22.91% | $2,019,360.77 |
+| CRWVSTOCK/USDT:USDT | +17.50% | $4,316,689.79 |
+| FHE/USDT:USDT | +14.49% | $1,583,559.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.34% | +1.34% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.61% | +0.61% |
-| FHE/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
+| PROM/USDT:USDT | below_1h_threshold | +3.27% | +3.18% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.23% | +3.14% |
+| FHE/USDT:USDT | below_1h_threshold | +3.02% | +2.93% |
+| CAP/USDT:USDT | below_1h_threshold | +2.05% | +1.96% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.55% |
 
 ## 7. 次に見るべき不足
 
