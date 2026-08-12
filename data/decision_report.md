@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T16:11:21.870377+00:00
+- generated_at: 2026-08-12T16:16:27.868828+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11383**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.00** / 初期 $100.00 (+15.00%)
-- 確定: 1396件 (Win 416 / Loss 535 / Flat 445) / pending 4件 / skip 1454件
+- 確定: 1396件 (Win 416 / Loss 535 / Flat 445) / pending 5件 / skip 1454件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000193 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: APR/USDT:USDT `LIMIT_10PCT_LONG` EXPIRED account +0.00% 残高後 $115.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T16:11:13.838516+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63387.5
-- Funnel: target 972 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T16:16:17.355995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63446.5
+- Funnel: target 972 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| QNTSTOCK/USDT:USDT | +2.54% | $1,024,019.76 |
-| BTW/USDT:USDT | +2.29% | $14,831,903.63 |
-| NIL/USDT:USDT | +2.26% | $2,462,977.68 |
-| BLESS/USDT:USDT | +2.24% | $15,590,682.45 |
-| NBISSTOCK/USDT:USDT | +1.83% | $8,661,884.85 |
+| TUT/USDT:USDT | +5.86% | $8,965,713.02 |
+| BTW/USDT:USDT | +4.53% | $14,899,508.12 |
+| ONE/USDT:USDT | +4.29% | $3,730,569.47 |
+| GUA/USDT:USDT | +3.06% | $2,023,464.77 |
+| QNTSTOCK/USDT:USDT | +2.82% | $1,028,786.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.51% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.54% |
-| BTW/USDT:USDT | below_1h_threshold | +2.39% | +2.44% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.37% | +2.42% |
-| NIL/USDT:USDT | below_1h_threshold | +2.26% | +2.32% |
+| BTW/USDT:USDT | below_1h_threshold | +4.53% | +4.49% |
+| ONE/USDT:USDT | below_1h_threshold | +4.30% | +4.26% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.42% |
+| GUA/USDT:USDT | below_1h_threshold | +3.33% | +3.29% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.45% |
 
 ## 7. 次に見るべき不足
 
