@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T05:31:16.773913+00:00
+- generated_at: 2026-08-12T05:36:24.478226+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11331**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.23** / 初期 $100.00 (+14.23%)
-- 確定: 1347件 (Win 408 / Loss 529 / Flat 410) / pending 3件 / skip 1452件
+- 確定: 1347件 (Win 408 / Loss 529 / Flat 410) / pending 4件 / skip 1452件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000067 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $114.23
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T05:31:11.141983+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=63818.0
-- Funnel: target 967 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T05:36:13.876271+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=63821.5
+- Funnel: target 967 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +35.62% | $6,470,545.97 |
-| JIMOTHY/USDT:USDT | +29.86% | $1,958,296.53 |
-| HOLO/USDT:USDT | +17.29% | $8,059,756.95 |
-| CRWVSTOCK/USDT:USDT | +17.05% | $4,112,801.55 |
-| BEAT/USDT:USDT | +16.82% | $87,579,556.31 |
+| PROM/USDT:USDT | +33.33% | $6,492,815.82 |
+| JIMOTHY/USDT:USDT | +27.59% | $1,960,860.58 |
+| HOLO/USDT:USDT | +18.12% | $8,094,603.60 |
+| CRWVSTOCK/USDT:USDT | +17.01% | $4,141,768.26 |
+| BEAT/USDT:USDT | +14.46% | $87,961,060.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.19% | +4.08% |
-| CRV/USDT:USDT | below_1h_threshold | +3.08% | +2.97% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.15% | +2.04% |
-| PROM/USDT:USDT | below_1h_threshold | +1.49% | +1.38% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.24% |
+| CRV/USDT:USDT | below_1h_threshold | +3.12% | +3.00% |
+| OP/USDT:USDT | below_1h_threshold | +1.43% | +1.32% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.23% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.21% | +1.09% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.69% | +0.58% |
 
 ## 7. 次に見るべき不足
 
