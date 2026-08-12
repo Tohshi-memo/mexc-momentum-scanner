@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T03:41:23.094426+00:00
+- generated_at: 2026-08-12T03:46:25.321053+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11328**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T03:41:14.757248+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63811.1
+- 更新: 2026-08-12T03:46:17.113894+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63778.1
 - Funnel: target 967 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +49.49% | $7,397,998.99 |
-| JIMOTHY/USDT:USDT | +33.12% | $1,902,272.59 |
-| HOLO/USDT:USDT | +31.85% | $6,434,590.40 |
-| CRWVSTOCK/USDT:USDT | +16.50% | $3,973,022.56 |
-| CAP/USDT:USDT | +14.00% | $8,953,569.67 |
+| PROM/USDT:USDT | +39.65% | $7,568,165.29 |
+| JIMOTHY/USDT:USDT | +32.68% | $1,906,215.13 |
+| HOLO/USDT:USDT | +32.11% | $6,486,238.37 |
+| CRWVSTOCK/USDT:USDT | +16.79% | $3,974,270.89 |
+| CAP/USDT:USDT | +14.68% | $8,969,370.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.53% | +2.39% |
-| MUU/USDT:USDT | below_1h_threshold | +2.29% | +2.15% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.08% | +1.94% |
-| RE/USDT:USDT | below_1h_threshold | +2.00% | +1.86% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.68% | +1.54% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.53% | +2.44% |
+| MUU/USDT:USDT | below_1h_threshold | +2.29% | +2.20% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.08% | +1.99% |
+| RE/USDT:USDT | below_1h_threshold | +2.07% | +1.99% |
+| CAP/USDT:USDT | below_1h_threshold | +1.75% | +1.66% |
 
 ## 7. 次に見るべき不足
 
