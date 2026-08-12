@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T00:26:27.249201+00:00
+- generated_at: 2026-08-12T00:31:26.878234+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11309**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T00:26:19.016701+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=63648.6
-- Funnel: target 967 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-12T00:31:18.830040+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=63667.4
+- Funnel: target 967 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +43.13% | $1,598,787.41 |
-| HOLO/USDT:USDT | +17.63% | $3,761,048.68 |
-| CRWVSTOCK/USDT:USDT | +17.27% | $3,639,979.10 |
-| BMT/USDT:USDT | +15.42% | $2,784,227.93 |
-| LSK/USDT:USDT | +11.64% | $3,066,729.76 |
+| JIMOTHY/USDT:USDT | +40.65% | $1,610,705.77 |
+| CRWVSTOCK/USDT:USDT | +16.64% | $3,661,445.57 |
+| HOLO/USDT:USDT | +16.28% | $3,801,055.85 |
+| BMT/USDT:USDT | +15.82% | $2,788,904.18 |
+| CAP/USDT:USDT | +12.07% | $8,028,752.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.35% | +2.23% |
-| TST/USDT:USDT | below_1h_threshold | +2.25% | +2.13% |
-| SQD/USDT:USDT | below_1h_threshold | +1.89% | +1.77% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.84% | +1.72% |
-| BTW/USDT:USDT | below_1h_threshold | +1.76% | +1.64% |
+| HOLO/USDT:USDT | below_1h_threshold | +4.85% | +4.70% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.74% | +2.59% |
+| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.51% |
+| CAP/USDT:USDT | below_1h_threshold | +2.38% | +2.23% |
+| CRWVSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.42% |
 
 ## 7. 次に見るべき不足
 
