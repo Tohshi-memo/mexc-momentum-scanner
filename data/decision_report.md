@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T21:31:29.730410+00:00
+- generated_at: 2026-08-12T21:36:23.585798+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11399**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T21:31:19.136040+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=63412.6
-- Funnel: target 972 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.2 >= 65=1
+- 更新: 2026-08-12T21:36:15.070422+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63436.8
+- Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 95.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +31.56% | $6,667,699.31 |
-| BTW/USDT:USDT | +17.44% | $19,833,126.49 |
-| APR/USDT:USDT | +11.86% | $9,831,521.14 |
-| BEAT/USDT:USDT | +11.37% | $69,749,907.55 |
-| VELVET/USDT:USDT | +8.02% | $20,447,325.97 |
+| COTI/USDT:USDT | +30.87% | $6,709,476.20 |
+| BTW/USDT:USDT | +17.83% | $19,959,240.41 |
+| APR/USDT:USDT | +13.02% | $9,873,413.94 |
+| BEAT/USDT:USDT | +10.61% | $69,847,782.55 |
+| VELVET/USDT:USDT | +8.84% | $20,481,292.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +2.17% | +2.43% |
-| BTW/USDT:USDT | below_1h_threshold | +1.56% | +1.81% |
-| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.82% |
-| TUT/USDT:USDT | below_1h_threshold | +0.52% | +0.77% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.32% | +0.57% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.15% | +4.36% |
+| TUT/USDT:USDT | below_1h_threshold | +2.77% | +2.99% |
+| BTW/USDT:USDT | below_1h_threshold | +1.91% | +2.12% |
+| ONE/USDT:USDT | below_1h_threshold | +1.79% | +2.01% |
+| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.56% | +0.78% |
 
 ## 7. 次に見るべき不足
 
