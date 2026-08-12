@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T13:36:27.815911+00:00
+- generated_at: 2026-08-12T13:41:33.423139+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11373**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.00** / 初期 $100.00 (+15.00%)
-- 確定: 1387件 (Win 416 / Loss 535 / Flat 436) / pending 1件 / skip 1454件
+- 確定: 1387件 (Win 416 / Loss 535 / Flat 436) / pending 2件 / skip 1454件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000144 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T13:36:19.554666+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=63929.4
-- Funnel: target 972 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T13:41:25.005915+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=63873.7
+- Funnel: target 972 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +93.02% | $5,248,880.34 |
-| PROM/USDT:USDT | +62.84% | $10,876,466.62 |
-| BR/USDT:USDT | +60.77% | $6,265,691.29 |
-| JIMOTHY/USDT:USDT | +51.53% | $2,902,763.76 |
-| LSK/USDT:USDT | +28.28% | $4,521,095.70 |
+| APR/USDT:USDT | +92.92% | $5,289,040.76 |
+| PROM/USDT:USDT | +62.48% | $10,897,992.78 |
+| BR/USDT:USDT | +53.99% | $6,405,005.29 |
+| JIMOTHY/USDT:USDT | +48.75% | $2,907,229.65 |
+| LSK/USDT:USDT | +33.44% | $4,611,330.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +3.10% | +3.35% |
-| APR/USDT:USDT | below_1h_threshold | +2.76% | +3.01% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.68% | +2.93% |
-| HOLO/USDT:USDT | below_1h_threshold | +2.67% | +2.93% |
-| KORU/USDT:USDT | below_1h_threshold | +2.59% | +2.84% |
+| APR/USDT:USDT | below_1h_threshold | +3.18% | +3.52% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.10% | +3.44% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.91% | +3.25% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.68% | +3.02% |
+| KORU/USDT:USDT | below_1h_threshold | +2.59% | +2.92% |
 
 ## 7. 次に見るべき不足
 
