@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T18:01:35.738287+00:00
+- generated_at: 2026-08-12T18:06:24.874057+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11392**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T18:01:25.975077+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63465.2
+- 更新: 2026-08-12T18:06:16.701086+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63458.5
 - Funnel: target 972 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +39.12% | $3,802,383.35 |
-| BTW/USDT:USDT | +11.85% | $15,466,859.41 |
-| VELVET/USDT:USDT | +7.98% | $20,073,586.90 |
-| ONE/USDT:USDT | +5.77% | $4,246,511.12 |
-| TUT/USDT:USDT | +4.90% | $8,696,181.83 |
+| COTI/USDT:USDT | +40.24% | $4,033,935.11 |
+| BTW/USDT:USDT | +11.89% | $15,558,606.98 |
+| VELVET/USDT:USDT | +8.39% | $20,109,283.93 |
+| ONE/USDT:USDT | +6.04% | $4,260,981.53 |
+| JIMOTHY/USDT:USDT | +5.46% | $3,335,684.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LITESTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.72% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.07% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.99% | +1.96% |
-| MUU/USDT:USDT | below_1h_threshold | +1.83% | +1.81% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.61% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.73% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.08% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +1.99% | +1.97% |
+| MUU/USDT:USDT | below_1h_threshold | +1.83% | +1.82% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
 
 ## 7. 次に見るべき不足
 
