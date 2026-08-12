@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T10:31:30.225981+00:00
+- generated_at: 2026-08-12T10:36:23.632064+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11359**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T10:31:21.757561+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64053.9
+- 更新: 2026-08-12T10:36:15.547231+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=64105.5
 - Funnel: target 967 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.4 >= 65=1
+- Strict後reject: 4h RSI 91.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +80.04% | $3,645,530.52 |
-| PROM/USDT:USDT | +60.70% | $8,745,073.45 |
-| JIMOTHY/USDT:USDT | +60.02% | $2,714,203.84 |
-| BR/USDT:USDT | +44.20% | $2,963,684.20 |
-| BEAT/USDT:USDT | +27.17% | $91,186,599.20 |
+| APR/USDT:USDT | +79.73% | $3,701,875.40 |
+| JIMOTHY/USDT:USDT | +63.09% | $2,726,151.29 |
+| PROM/USDT:USDT | +56.32% | $8,797,255.76 |
+| BR/USDT:USDT | +39.30% | $3,076,167.66 |
+| BEAT/USDT:USDT | +26.66% | $91,847,076.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +3.47% | +3.51% |
-| PROM/USDT:USDT | below_1h_threshold | +3.39% | +3.42% |
-| STORJ/USDT:USDT | below_1h_threshold | +2.75% | +2.79% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.36% | +2.40% |
-| AKE/USDT:USDT | below_1h_threshold | +1.80% | +1.84% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.04% | +4.00% |
+| STORJ/USDT:USDT | below_1h_threshold | +3.78% | +3.73% |
+| HOLO/USDT:USDT | below_1h_threshold | +2.08% | +2.04% |
+| NIL/USDT:USDT | below_1h_threshold | +1.82% | +1.78% |
+| CYS/USDT:USDT | below_1h_threshold | +1.03% | +0.99% |
 
 ## 7. 次に見るべき不足
 
