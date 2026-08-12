@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T16:36:31.208432+00:00
+- generated_at: 2026-08-12T16:41:34.013674+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11385**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T16:36:18.497292+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=63525.9
+- 更新: 2026-08-12T16:41:20.526191+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=63520.8
 - Funnel: target 972 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +11.40% | $3,988,771.12 |
-| BTW/USDT:USDT | +5.57% | $15,089,295.62 |
-| DOS/USDT:USDT | +3.37% | $2,603,270.05 |
-| VELVET/USDT:USDT | +3.06% | $22,908,628.89 |
-| CYS/USDT:USDT | +2.97% | $30,361,985.11 |
+| ONE/USDT:USDT | +7.38% | $4,037,930.93 |
+| BTW/USDT:USDT | +6.26% | $15,123,981.53 |
+| DOS/USDT:USDT | +3.22% | $2,611,401.81 |
+| GUA/USDT:USDT | +2.94% | $2,051,290.17 |
+| VELVET/USDT:USDT | +2.82% | $22,935,849.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOS/USDT:USDT | below_1h_threshold | +3.56% | +3.40% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.29% |
-| CYS/USDT:USDT | below_1h_threshold | +2.96% | +2.79% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.94% | +2.78% |
-| NIL/USDT:USDT | below_1h_threshold | +2.66% | +2.49% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.30% |
+| DOS/USDT:USDT | below_1h_threshold | +3.23% | +3.07% |
+| GUA/USDT:USDT | below_1h_threshold | +3.06% | +2.91% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.80% | +2.65% |
+| CYS/USDT:USDT | below_1h_threshold | +2.69% | +2.53% |
 
 ## 7. 次に見るべき不足
 
