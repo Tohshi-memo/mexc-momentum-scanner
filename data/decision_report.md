@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T06:01:22.542464+00:00
+- generated_at: 2026-08-12T06:06:14.497781+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11333**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T06:01:14.517831+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=63770.1
-- Funnel: target 967 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-12T06:06:08.171555+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=63764.9
+- Funnel: target 968 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +32.67% | $6,458,941.06 |
-| BEAT/USDT:USDT | +22.97% | $88,573,536.62 |
-| HOLO/USDT:USDT | +21.49% | $8,337,808.88 |
-| JIMOTHY/USDT:USDT | +20.15% | $1,987,317.28 |
-| CRWVSTOCK/USDT:USDT | +17.07% | $4,186,348.32 |
+| PROM/USDT:USDT | +32.77% | $6,492,662.67 |
+| JIMOTHY/USDT:USDT | +22.50% | $1,994,103.23 |
+| BEAT/USDT:USDT | +22.46% | $88,772,096.83 |
+| HOLO/USDT:USDT | +19.36% | $8,460,109.17 |
+| CRWVSTOCK/USDT:USDT | +17.25% | $4,188,720.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GUA/USDT:USDT | below_1h_threshold | +0.33% | +0.40% |
-| STXSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.40% |
-| AKE/USDT:USDT | below_1h_threshold | +0.21% | +0.28% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.21% | +0.28% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.20% | +0.28% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.84% | +1.92% |
+| GUA/USDT:USDT | below_1h_threshold | +1.68% | +1.76% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.32% | +0.41% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.24% | +0.32% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.24% | +0.32% |
 
 ## 7. 次に見るべき不足
 
