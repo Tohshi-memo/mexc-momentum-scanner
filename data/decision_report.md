@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T16:01:20.604450+00:00
+- generated_at: 2026-08-12T16:06:26.760567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11383**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T16:01:12.455232+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63448.2
+- 更新: 2026-08-12T16:06:18.588543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63454.2
 - Funnel: target 972 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BLESS/USDT:USDT | +2.52% | $15,338,521.23 |
-| NIL/USDT:USDT | +0.96% | $2,363,951.78 |
-| BTR/USDT:USDT | +0.76% | $1,099,618.38 |
-| VELVET/USDT:USDT | +0.55% | $22,397,424.63 |
-| HEI/USDT:USDT | +0.53% | $1,535,702.62 |
+| ONE/USDT:USDT | +3.08% | $3,688,586.89 |
+| NIL/USDT:USDT | +2.26% | $2,401,105.47 |
+| BLESS/USDT:USDT | +2.06% | $15,497,679.47 |
+| BTW/USDT:USDT | +1.82% | $14,790,433.94 |
+| BR/USDT:USDT | +1.41% | $7,411,731.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.42% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.53% | +2.48% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.45% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.33% | +2.29% |
-| CBRSSTOCK/USDT:USDT | below_1h_threshold | +2.26% | +2.22% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.41% |
+| ONE/USDT:USDT | below_1h_threshold | +2.95% | +2.90% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.44% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.26% | +2.21% |
+| NIL/USDT:USDT | below_1h_threshold | +2.26% | +2.21% |
 
 ## 7. 次に見るべき不足
 
