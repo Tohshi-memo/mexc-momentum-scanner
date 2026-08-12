@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T08:21:34.773802+00:00
+- generated_at: 2026-08-12T08:26:27.213284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11345**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T08:21:24.034384+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63805.5
-- Funnel: target 967 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.2 >= 65=1
+- 更新: 2026-08-12T08:26:17.008602+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63802.9
+- Funnel: target 967 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +73.52% | $2,004,605.99 |
-| JIMOTHY/USDT:USDT | +69.79% | $2,387,169.13 |
-| PROM/USDT:USDT | +34.70% | $7,052,926.74 |
-| BEAT/USDT:USDT | +26.66% | $89,393,963.58 |
-| CRWVSTOCK/USDT:USDT | +19.36% | $4,543,056.06 |
+| APR/USDT:USDT | +71.46% | $2,078,251.29 |
+| JIMOTHY/USDT:USDT | +69.62% | $2,401,048.68 |
+| PROM/USDT:USDT | +35.98% | $7,066,378.87 |
+| BEAT/USDT:USDT | +32.10% | $89,765,311.37 |
+| CRWVSTOCK/USDT:USDT | +19.30% | $4,602,423.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FHE/USDT:USDT | below_1h_threshold | +3.00% | +2.99% |
-| CAP/USDT:USDT | below_1h_threshold | +2.59% | +2.59% |
-| ACE/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
-| NIL/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
-| PROM/USDT:USDT | below_1h_threshold | +1.34% | +1.34% |
+| APR/USDT:USDT | below_1h_threshold | +4.46% | +4.46% |
+| ACE/USDT:USDT | below_1h_threshold | +2.61% | +2.62% |
+| PROM/USDT:USDT | below_1h_threshold | +2.30% | +2.30% |
+| NIL/USDT:USDT | below_1h_threshold | +1.97% | +1.98% |
+| CAP/USDT:USDT | below_1h_threshold | +1.94% | +1.94% |
 
 ## 7. 次に見るべき不足
 
