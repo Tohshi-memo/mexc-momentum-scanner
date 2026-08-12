@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T17:16:26.641434+00:00
+- generated_at: 2026-08-12T17:21:28.586028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11387**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T17:16:17.809965+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63522.0
+- 更新: 2026-08-12T17:21:18.301917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63461.0
 - Funnel: target 972 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +25.96% | $1,408,319.79 |
-| BTW/USDT:USDT | +8.66% | $15,296,795.04 |
-| JIMOTHY/USDT:USDT | +5.89% | $3,241,698.11 |
-| GRVT/USDT:USDT | +4.12% | $1,027,534.03 |
-| ONE/USDT:USDT | +4.02% | $4,199,937.82 |
+| COTI/USDT:USDT | +29.50% | $1,727,018.99 |
+| BTW/USDT:USDT | +8.89% | $15,316,985.86 |
+| ONE/USDT:USDT | +5.50% | $4,205,400.03 |
+| JIMOTHY/USDT:USDT | +5.23% | $3,251,460.85 |
+| GRVT/USDT:USDT | +4.68% | $1,028,760.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMRSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.84% |
-| LIT/USDT:USDT | below_1h_threshold | +2.69% | +2.59% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.53% | +2.44% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.50% | +2.40% |
-| BR/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
+| SMRSTOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.94% |
+| LIT/USDT:USDT | below_1h_threshold | +2.16% | +2.17% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.10% | +2.10% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +1.91% |
+| GRVT/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
 
 ## 7. 次に見るべき不足
 
