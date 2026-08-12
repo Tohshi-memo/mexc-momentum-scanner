@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T08:16:25.654316+00:00
+- generated_at: 2026-08-12T08:21:34.773802+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11345**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.87** / 初期 $100.00 (+13.87%)
-- 確定: 1360件 (Win 409 / Loss 531 / Flat 420) / pending 2件 / skip 1452件
+- 確定: 1360件 (Win 409 / Loss 531 / Flat 420) / pending 3件 / skip 1452件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000083 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: APR/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $113.87
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T08:16:13.968790+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63774.9
-- Funnel: target 967 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-12T08:21:24.034384+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63805.5
+- Funnel: target 967 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| JIMOTHY/USDT:USDT | +69.15% | $2,354,797.04 |
-| APR/USDT:USDT | +65.49% | $1,877,374.55 |
-| PROM/USDT:USDT | +38.22% | $7,031,836.74 |
-| BEAT/USDT:USDT | +28.61% | $89,077,870.74 |
-| CRWVSTOCK/USDT:USDT | +18.81% | $4,516,495.58 |
+| APR/USDT:USDT | +73.52% | $2,004,605.99 |
+| JIMOTHY/USDT:USDT | +69.79% | $2,387,169.13 |
+| PROM/USDT:USDT | +34.70% | $7,052,926.74 |
+| BEAT/USDT:USDT | +26.66% | $89,393,963.58 |
+| CRWVSTOCK/USDT:USDT | +19.36% | $4,543,056.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +3.87% | +3.92% |
-| ACE/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
-| FHE/USDT:USDT | below_1h_threshold | +2.00% | +2.04% |
-| CAP/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
-| APR/USDT:USDT | below_1h_threshold | +1.59% | +1.63% |
+| FHE/USDT:USDT | below_1h_threshold | +3.00% | +2.99% |
+| CAP/USDT:USDT | below_1h_threshold | +2.59% | +2.59% |
+| ACE/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| NIL/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
+| PROM/USDT:USDT | below_1h_threshold | +1.34% | +1.34% |
 
 ## 7. 次に見るべき不足
 
