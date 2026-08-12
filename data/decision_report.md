@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T20:21:25.674738+00:00
+- generated_at: 2026-08-12T20:26:22.769088+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11396**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T20:21:17.441594+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=63464.6
+- 更新: 2026-08-12T20:26:14.529381+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=63478.4
 - Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1
+- Strict後reject: 4h RSI 80.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +37.22% | $6,037,529.66 |
-| BTW/USDT:USDT | +12.29% | $18,785,146.66 |
-| VELVET/USDT:USDT | +7.59% | $20,422,540.93 |
-| BEAT/USDT:USDT | +7.55% | $70,749,985.41 |
-| BR/USDT:USDT | +6.97% | $8,456,480.34 |
+| COTI/USDT:USDT | +34.10% | $6,077,416.46 |
+| BTW/USDT:USDT | +12.27% | $18,829,534.68 |
+| BEAT/USDT:USDT | +10.03% | $71,072,904.07 |
+| VELVET/USDT:USDT | +7.82% | $20,512,593.84 |
+| BR/USDT:USDT | +6.58% | $8,471,674.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.64% | +4.54% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +4.27% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.42% | +2.32% |
-| BLUAI/USDT:USDT | below_1h_threshold | +2.10% | +1.99% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.85% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +4.25% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.42% | +2.30% |
+| DOS/USDT:USDT | below_1h_threshold | +2.08% | +1.96% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.82% |
+| BLUAI/USDT:USDT | below_1h_threshold | +1.72% | +1.59% |
 
 ## 7. 次に見るべき不足
 
