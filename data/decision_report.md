@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T10:01:24.202410+00:00
+- generated_at: 2026-08-12T10:06:15.183958+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11358**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T10:01:16.103601+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=64080.0
+- 更新: 2026-08-12T10:06:07.012682+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64096.0
 - Funnel: target 967 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +71.66% | $3,305,432.47 |
-| JIMOTHY/USDT:USDT | +58.93% | $2,663,592.81 |
-| PROM/USDT:USDT | +55.09% | $8,445,010.62 |
-| BR/USDT:USDT | +47.90% | $2,550,942.23 |
-| BEAT/USDT:USDT | +21.64% | $88,792,732.91 |
+| APR/USDT:USDT | +65.99% | $3,408,367.34 |
+| JIMOTHY/USDT:USDT | +62.75% | $2,671,745.70 |
+| PROM/USDT:USDT | +54.94% | $8,519,159.32 |
+| BR/USDT:USDT | +48.66% | $2,629,300.31 |
+| CRWVSTOCK/USDT:USDT | +20.78% | $5,136,375.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.77% | +0.77% |
-| KORU/USDT:USDT | below_1h_threshold | +0.53% | +0.52% |
-| HOLO/USDT:USDT | below_1h_threshold | +0.44% | +0.43% |
-| LAB/USDT:USDT | below_1h_threshold | +0.42% | +0.41% |
+| AKE/USDT:USDT | below_1h_threshold | +2.32% | +2.29% |
+| HOLO/USDT:USDT | below_1h_threshold | +1.56% | +1.53% |
+| CAP/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.77% | +0.74% |
+| NIL/USDT:USDT | below_1h_threshold | +0.65% | +0.62% |
 
 ## 7. 次に見るべき不足
 
