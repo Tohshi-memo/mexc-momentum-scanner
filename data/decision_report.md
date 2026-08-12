@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T23:16:25.709114+00:00
+- generated_at: 2026-08-12T23:21:20.638945+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11408**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T23:16:19.700150+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63406.4
-- Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-12T23:21:12.322164+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63409.1
+- Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +42.86% | $11,033,796.41 |
-| COTI/USDT:USDT | +31.00% | $7,040,449.14 |
-| BTW/USDT:USDT | +18.81% | $21,376,991.38 |
-| VELVET/USDT:USDT | +10.80% | $19,800,798.75 |
-| BR/USDT:USDT | +10.78% | $8,445,827.39 |
+| APR/USDT:USDT | +38.61% | $11,132,834.42 |
+| COTI/USDT:USDT | +30.53% | $7,050,333.48 |
+| BTW/USDT:USDT | +19.20% | $21,407,285.73 |
+| VELVET/USDT:USDT | +10.77% | $19,948,857.06 |
+| BR/USDT:USDT | +10.36% | $8,460,070.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.30% | +2.30% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.29% | +1.29% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
-| ON/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| QNTSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.54% |
+| APR/USDT:USDT | below_1h_threshold | +4.29% | +4.28% |
+| BR/USDT:USDT | below_1h_threshold | +1.84% | +1.84% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
+| QNTSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
 
 ## 7. 次に見るべき不足
 
