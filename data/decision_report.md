@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T15:51:26.569026+00:00
+- generated_at: 2026-08-12T15:56:28.491063+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11383**
 
@@ -70,10 +70,10 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T15:51:15.554478+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=63494.2
+- 更新: 2026-08-12T15:56:17.784619+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=63494.8
 - Funnel: target 972 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 77.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +114.69% | $7,607,073.03 |
-| PROM/USDT:USDT | +62.33% | $12,886,458.28 |
-| JIMOTHY/USDT:USDT | +60.31% | $3,114,868.07 |
-| BR/USDT:USDT | +58.55% | $7,372,484.14 |
-| QNTSTOCK/USDT:USDT | +25.16% | $1,016,206.50 |
+| APR/USDT:USDT | +115.94% | $7,638,906.04 |
+| JIMOTHY/USDT:USDT | +62.05% | $3,128,751.52 |
+| PROM/USDT:USDT | +61.82% | $12,898,708.01 |
+| BR/USDT:USDT | +57.02% | $7,385,066.40 |
+| NBISSTOCK/USDT:USDT | +25.75% | $7,827,275.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| VIRTUAL/USDT:USDT | below_relative_strength | +5.05% | +4.81% |
 | LITESTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.72% |
-| CYS/USDT:USDT | below_1h_threshold | +4.66% | +4.43% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +4.13% | +3.90% |
+| APR/USDT:USDT | below_1h_threshold | +3.65% | +3.42% |
 | NBISSTOCK/USDT:USDT | below_1h_threshold | +3.14% | +2.90% |
-| APR/USDT:USDT | below_1h_threshold | +2.74% | +2.50% |
+| CYS/USDT:USDT | below_1h_threshold | +3.01% | +2.78% |
 
 ## 7. 次に見るべき不足
 
