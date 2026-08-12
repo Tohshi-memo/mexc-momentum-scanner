@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T02:16:26.734908+00:00
+- generated_at: 2026-08-12T02:21:23.381427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11318**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T02:16:16.885135+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63827.1
+- 更新: 2026-08-12T02:21:15.105847+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63809.6
 - Funnel: target 967 → liquid 189 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1
+- Strict後reject: 4h RSI 67.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +30.53% | $6,902,296.68 |
-| HOLO/USDT:USDT | +29.48% | $5,493,450.42 |
-| JIMOTHY/USDT:USDT | +25.28% | $1,835,218.13 |
-| CRWVSTOCK/USDT:USDT | +17.37% | $3,878,383.49 |
-| LSK/USDT:USDT | +16.86% | $3,329,521.99 |
+| PROM/USDT:USDT | +32.11% | $6,960,970.22 |
+| HOLO/USDT:USDT | +28.10% | $5,545,081.29 |
+| JIMOTHY/USDT:USDT | +23.98% | $1,837,153.11 |
+| CRWVSTOCK/USDT:USDT | +17.50% | $3,878,811.14 |
+| LSK/USDT:USDT | +17.48% | $3,331,462.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +3.11% | +3.06% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.70% | +2.65% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.54% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.25% |
-| SQD/USDT:USDT | below_1h_threshold | +2.30% | +2.25% |
+| KORU/USDT:USDT | below_1h_threshold | +3.11% | +3.09% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.70% | +2.68% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.57% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.30% | +2.28% |
+| SQD/USDT:USDT | below_1h_threshold | +2.22% | +2.20% |
 
 ## 7. 次に見るべき不足
 
