@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-12T20:36:21.607257+00:00
+- generated_at: 2026-08-12T20:41:23.289124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11396**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-12T20:36:13.387752+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=63535.8
-- Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-12T20:41:15.091589+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=63520.1
+- Funnel: target 972 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +35.45% | $6,147,958.79 |
-| BTW/USDT:USDT | +12.06% | $18,969,116.50 |
-| BEAT/USDT:USDT | +9.08% | $71,392,525.27 |
-| VELVET/USDT:USDT | +8.19% | $20,561,039.36 |
-| BR/USDT:USDT | +6.82% | $8,492,495.64 |
+| COTI/USDT:USDT | +33.49% | $6,191,864.05 |
+| BTW/USDT:USDT | +13.11% | $19,005,029.92 |
+| VELVET/USDT:USDT | +9.12% | $20,668,666.59 |
+| BEAT/USDT:USDT | +8.89% | $71,446,766.34 |
+| COOKIE/USDT:USDT | +7.06% | $1,001,402.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| QNTSTOCK/USDT:USDT | below_relative_strength | +5.16% | +4.94% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +4.16% |
-| DOS/USDT:USDT | below_1h_threshold | +2.51% | +2.30% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.42% | +2.21% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.73% |
+| QNTSTOCK/USDT:USDT | below_relative_strength | +5.16% | +4.97% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.82% | +4.63% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.37% | +4.18% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.42% | +2.23% |
+| DOS/USDT:USDT | below_1h_threshold | +2.33% | +2.14% |
 
 ## 7. 次に見るべき不足
 
