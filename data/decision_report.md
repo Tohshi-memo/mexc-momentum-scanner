@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T18:56:39.929591+00:00
+- generated_at: 2026-08-13T19:01:26.911011+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11469**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T18:56:25.977427+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=63306.1
-- Funnel: target 978 → liquid 180 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1, 4h RSI 86.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-13T19:01:18.800708+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63296.3
+- Funnel: target 978 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +16.72% | $2,105,344.36 |
-| CATE/USDT:USDT | +14.42% | $1,211,920.52 |
-| US/USDT:USDT | +12.86% | $4,731,145.55 |
-| ACU/USDT:USDT | +9.58% | $9,181,051.01 |
-| ETHFI/USDT:USDT | +7.05% | $3,565,483.28 |
+| EDEN/USDT:USDT | +17.93% | $2,294,965.23 |
+| CATE/USDT:USDT | +15.88% | $1,193,604.29 |
+| US/USDT:USDT | +10.19% | $4,726,609.03 |
+| PROM/USDT:USDT | +8.32% | $2,414,422.98 |
+| ACU/USDT:USDT | +7.94% | $9,204,308.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +3.31% | +3.01% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.84% | +2.55% |
-| ACU/USDT:USDT | below_1h_threshold | +2.61% | +2.32% |
-| AVAAI/USDT:USDT | below_1h_threshold | +2.09% | +1.79% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.87% | +1.58% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.67% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.41% |
+| SMRSTOCK/USDT:USDT | below_1h_threshold | +2.36% | +2.34% |
+| PROM/USDT:USDT | below_1h_threshold | +1.33% | +1.31% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.27% |
 
 ## 7. 次に見るべき不足
 
