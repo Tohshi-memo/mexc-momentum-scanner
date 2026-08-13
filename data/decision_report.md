@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T09:11:30.475880+00:00
+- generated_at: 2026-08-13T09:16:16.024734+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11434**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T09:11:19.310059+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63647.9
+- 更新: 2026-08-13T09:16:08.139752+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=63565.0
 - Funnel: target 973 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACU/USDT:USDT | +24.54% | $5,775,766.29 |
-| BTW/USDT:USDT | +16.27% | $27,734,160.84 |
-| APR/USDT:USDT | +13.12% | $15,116,166.03 |
-| TST/USDT:USDT | +12.32% | $1,189,026.33 |
-| BANK/USDT:USDT | +11.93% | $4,716,371.60 |
+| ACU/USDT:USDT | +24.54% | $5,801,916.55 |
+| BTW/USDT:USDT | +15.73% | $27,763,391.02 |
+| TST/USDT:USDT | +13.50% | $1,191,970.41 |
+| APR/USDT:USDT | +12.07% | $15,161,504.62 |
+| COTI/USDT:USDT | +12.01% | $10,009,128.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.77% | +2.92% |
-| BANK/USDT:USDT | below_1h_threshold | +2.62% | +2.77% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.48% | +1.63% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.29% |
-| ONE/USDT:USDT | below_1h_threshold | +1.13% | +1.29% |
+| RE/USDT:USDT | below_1h_threshold | +2.48% | +2.76% |
+| BANK/USDT:USDT | below_1h_threshold | +2.14% | +2.42% |
+| ONE/USDT:USDT | below_1h_threshold | +1.51% | +1.79% |
+| AKE/USDT:USDT | below_1h_threshold | +1.51% | +1.79% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.42% |
 
 ## 7. 次に見るべき不足
 
