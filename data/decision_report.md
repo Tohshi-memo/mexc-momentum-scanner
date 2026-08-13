@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T14:01:36.392408+00:00
+- generated_at: 2026-08-13T14:07:10.558224+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11443**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T14:01:25.570059+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63701.9
-- Funnel: target 978 → liquid 175 → pre 50 → checked 50 → surge 6 → strict 0
+- 更新: 2026-08-13T14:06:59.568444+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63672.0
+- Funnel: target 978 → liquid 176 → pre 50 → checked 50 → surge 6 → strict 0
 - Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 82.2 >= 65=1, 4h RSI 82.4 >= 65=1, 4h RSI 69.5 >= 65=1, 4h RSI 67.8 >= 65=1, 4h RSI 65.8 >= 65=1
+- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 81.9 >= 65=1, 4h RSI 82.2 >= 65=1, 4h RSI 69.2 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +41.45% | $20,645,983.74 |
-| ACU/USDT:USDT | +30.43% | $7,454,735.52 |
-| AVAAI/USDT:USDT | +22.92% | $1,843,777.24 |
-| GPS/USDT:USDT | +21.59% | $1,090,565.81 |
-| COTI/USDT:USDT | +20.84% | $11,339,261.26 |
+| AKE/USDT:USDT | +43.77% | $20,969,950.89 |
+| ACU/USDT:USDT | +31.06% | $7,488,527.76 |
+| AVAAI/USDT:USDT | +21.82% | $1,850,036.80 |
+| AVNT/USDT:USDT | +21.42% | $1,840,567.65 |
+| COTI/USDT:USDT | +20.38% | $11,350,117.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.95% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.69% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.58% | +4.57% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +4.21% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.12% | +4.12% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +5.00% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.74% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.58% | +4.62% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +4.25% |
+| KORU/USDT:USDT | below_1h_threshold | +3.62% | +3.67% |
 
 ## 7. 次に見るべき不足
 
