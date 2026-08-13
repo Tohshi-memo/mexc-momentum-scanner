@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T17:06:41.474710+00:00
+- generated_at: 2026-08-13T17:11:29.159915+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11460**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T17:06:29.331236+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63075.4
+- 更新: 2026-08-13T17:11:18.725218+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63099.6
 - Funnel: target 978 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +15.60% | $9,388,678.27 |
-| BEAT/USDT:USDT | +6.78% | $36,908,714.03 |
-| SNXX/USDT:USDT | +4.45% | $10,246,642.85 |
-| BICO/USDT:USDT | +4.24% | $4,426,557.31 |
-| ACU/USDT:USDT | +3.70% | $8,634,053.79 |
+| TUT/USDT:USDT | +10.10% | $9,578,605.33 |
+| BEAT/USDT:USDT | +9.12% | $37,040,111.87 |
+| BICO/USDT:USDT | +5.17% | $4,444,541.46 |
+| AVNT/USDT:USDT | +4.98% | $3,802,461.69 |
+| SNXX/USDT:USDT | +4.45% | $10,421,237.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +2.71% | +2.81% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.19% | +2.29% |
-| SMRSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.22% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.03% | +2.12% |
-| MUU/USDT:USDT | below_1h_threshold | +1.93% | +2.03% |
+| AVNT/USDT:USDT | below_1h_threshold | +4.40% | +4.45% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.97% | +3.03% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.62% | +2.67% |
+| CAP/USDT:USDT | below_1h_threshold | +2.51% | +2.56% |
+| BICO/USDT:USDT | below_1h_threshold | +2.24% | +2.29% |
 
 ## 7. 次に見るべき不足
 
