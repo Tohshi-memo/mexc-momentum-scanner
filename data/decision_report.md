@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T14:56:51.028813+00:00
+- generated_at: 2026-08-13T15:01:25.565248+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11449**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T14:56:39.003009+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=63862.3
-- Funnel: target 978 → liquid 179 → pre 50 → checked 50 → surge 6 → strict 0
-- Surge前reject: below_1h_threshold=42, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 82.3 >= 65=1, 4h RSI 84.1 >= 65=1, 4h RSI 75.4 >= 65=1, 4h RSI 72.4 >= 65=1, 4h RSI 76.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-13T15:01:17.476440+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63864.9
+- Funnel: target 978 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +49.74% | $24,285,358.46 |
-| ACU/USDT:USDT | +31.03% | $7,826,884.45 |
-| COTI/USDT:USDT | +26.79% | $11,733,514.71 |
-| AVNT/USDT:USDT | +24.10% | $2,189,538.63 |
-| BTW/USDT:USDT | +21.63% | $24,810,870.87 |
+| AKE/USDT:USDT | +49.64% | $24,373,552.39 |
+| ACU/USDT:USDT | +32.70% | $7,851,267.08 |
+| COTI/USDT:USDT | +25.77% | $11,736,641.06 |
+| AVNT/USDT:USDT | +25.33% | $2,211,040.39 |
+| AVAAI/USDT:USDT | +22.42% | $1,840,233.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +5.10% | +4.84% |
-| AVNT/USDT:USDT | below_relative_strength | +5.00% | +4.75% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.70% |
-| COTI/USDT:USDT | below_1h_threshold | +4.91% | +4.66% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.44% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.74% |
+| MUU/USDT:USDT | below_1h_threshold | +3.30% | +3.25% |
+| CIENSTOCK/USDT:USDT | below_1h_threshold | +3.17% | +3.13% |
+| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.74% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.07% | +2.02% |
 
 ## 7. 次に見るべき不足
 
