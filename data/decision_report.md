@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T18:21:15.941570+00:00
+- generated_at: 2026-08-13T18:26:28.053807+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11466**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T18:21:10.479409+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63211.0
+- 更新: 2026-08-13T18:26:19.867144+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63178.9
 - Funnel: target 978 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +22.12% | $1,093,439.54 |
-| ACU/USDT:USDT | +9.61% | $8,946,937.79 |
-| DEXE/USDT:USDT | +5.28% | $1,189,070.40 |
-| ETHFI/USDT:USDT | +5.10% | $2,944,055.76 |
-| CAP/USDT:USDT | +4.98% | $4,537,969.08 |
+| CATE/USDT:USDT | +19.47% | $1,109,738.30 |
+| ACU/USDT:USDT | +10.29% | $9,005,744.27 |
+| EDEN/USDT:USDT | +6.12% | $1,491,078.28 |
+| DEXE/USDT:USDT | +5.64% | $1,203,250.36 |
+| BLESS/USDT:USDT | +5.58% | $9,800,135.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACU/USDT:USDT | below_1h_threshold | +2.70% | +2.56% |
-| UB/USDT:USDT | below_1h_threshold | +2.21% | +2.07% |
-| CATE/USDT:USDT | below_1h_threshold | +2.06% | +1.92% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.72% | +1.58% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.48% |
+| ACU/USDT:USDT | below_1h_threshold | +3.45% | +3.36% |
+| AVAAI/USDT:USDT | below_1h_threshold | +2.22% | +2.13% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.11% | +2.02% |
+| 2Z/USDT:USDT | below_1h_threshold | +1.73% | +1.64% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.54% |
 
 ## 7. 次に見るべき不足
 
