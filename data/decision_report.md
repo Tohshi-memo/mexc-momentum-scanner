@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T00:06:23.660724+00:00
+- generated_at: 2026-08-13T00:11:22.555904+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11409**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T00:06:13.918291+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63486.8
-- Funnel: target 972 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-13T00:11:14.356239+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=63558.0
+- Funnel: target 972 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +42.77% | $11,813,891.65 |
-| COTI/USDT:USDT | +31.38% | $7,126,066.82 |
-| BTW/USDT:USDT | +17.58% | $21,643,320.22 |
-| VELVET/USDT:USDT | +8.66% | $20,389,366.64 |
-| BANK/USDT:USDT | +8.38% | $3,086,887.95 |
+| APR/USDT:USDT | +39.52% | $11,869,277.21 |
+| COTI/USDT:USDT | +34.27% | $7,142,655.28 |
+| BTW/USDT:USDT | +15.87% | $21,744,692.58 |
+| VELVET/USDT:USDT | +10.03% | $20,416,912.45 |
+| BANK/USDT:USDT | +8.66% | $3,113,880.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.36% | +2.31% |
-| GRVT/USDT:USDT | below_1h_threshold | +1.78% | +1.73% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.25% | +1.19% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.93% |
-| COTI/USDT:USDT | below_1h_threshold | +0.90% | +0.85% |
+| COTI/USDT:USDT | below_1h_threshold | +3.39% | +3.22% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.13% | +2.96% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.50% | +2.34% |
+| LIT/USDT:USDT | below_1h_threshold | +1.83% | +1.67% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.61% | +1.45% |
 
 ## 7. 次に見るべき不足
 
