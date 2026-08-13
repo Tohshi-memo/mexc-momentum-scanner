@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T21:56:42.586423+00:00
+- generated_at: 2026-08-13T22:01:22.953689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11485**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T21:56:29.956004+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63413.8
-- Funnel: target 978 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-13T22:01:14.809339+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63458.9
+- Funnel: target 978 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +43.75% | $9,308,868.65 |
-| WDAYSTOCK/USDT:USDT | +17.59% | $1,099,717.27 |
-| US/USDT:USDT | +16.34% | $5,314,447.28 |
-| CATE/USDT:USDT | +15.19% | $1,363,973.85 |
-| BLESS/USDT:USDT | +11.09% | $10,118,778.79 |
+| EDEN/USDT:USDT | +43.20% | $9,573,938.37 |
+| WDAYSTOCK/USDT:USDT | +17.35% | $1,095,812.77 |
+| CATE/USDT:USDT | +17.14% | $1,347,738.66 |
+| US/USDT:USDT | +16.78% | $5,313,987.68 |
+| H/USDT:USDT | +10.60% | $1,346,038.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UB/USDT:USDT | below_1h_threshold | +3.96% | +3.91% |
-| ACE/USDT:USDT | below_1h_threshold | +2.96% | +2.91% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.75% | +2.70% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
-| US/USDT:USDT | below_1h_threshold | +2.21% | +2.16% |
+| TECKSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.30% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
+| WDAYSTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.70% |
+| BSPSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
+| NTRASTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.40% |
 
 ## 7. 次に見るべき不足
 
