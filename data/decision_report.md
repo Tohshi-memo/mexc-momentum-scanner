@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T16:31:36.787251+00:00
+- generated_at: 2026-08-13T16:36:32.630701+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11459**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T16:31:25.608332+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63390.0
-- Funnel: target 978 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.1 >= 65=1, 4h RSI 85.0 >= 65=1
+- 更新: 2026-08-13T16:36:23.784896+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63409.9
+- Funnel: target 978 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.8 >= 65=1, 4h RSI 84.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +8.98% | $9,120,418.65 |
-| BICO/USDT:USDT | +4.09% | $4,580,953.95 |
-| BEAT/USDT:USDT | +4.00% | $36,646,948.32 |
-| ACU/USDT:USDT | +3.52% | $8,479,266.43 |
-| BLESS/USDT:USDT | +3.45% | $9,954,719.55 |
+| TUT/USDT:USDT | +6.01% | $9,281,322.69 |
+| ACU/USDT:USDT | +4.79% | $8,500,655.45 |
+| BEAT/USDT:USDT | +4.44% | $36,835,144.79 |
+| BLESS/USDT:USDT | +3.83% | $9,987,048.46 |
+| BSPSTOCK/USDT:USDT | +3.25% | $1,030,116.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +4.10% | +4.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.00% | +4.00% |
-| ACU/USDT:USDT | below_1h_threshold | +3.63% | +3.63% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.45% | +3.45% |
-| AVAAI/USDT:USDT | below_1h_threshold | +2.85% | +2.85% |
+| ACU/USDT:USDT | below_1h_threshold | +4.79% | +4.76% |
+| TUT/USDT:USDT | below_1h_threshold | +4.67% | +4.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.56% | +4.52% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.84% | +3.80% |
+| AVAAI/USDT:USDT | below_1h_threshold | +2.96% | +2.92% |
 
 ## 7. 次に見るべき不足
 
