@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T00:11:22.555904+00:00
+- generated_at: 2026-08-13T00:16:15.405585+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11409**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T00:11:14.356239+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=63558.0
+- 更新: 2026-08-13T00:16:08.980047+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=63585.0
 - Funnel: target 972 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +39.52% | $11,869,277.21 |
-| COTI/USDT:USDT | +34.27% | $7,142,655.28 |
-| BTW/USDT:USDT | +15.87% | $21,744,692.58 |
-| VELVET/USDT:USDT | +10.03% | $20,416,912.45 |
-| BANK/USDT:USDT | +8.66% | $3,113,880.72 |
+| APR/USDT:USDT | +40.06% | $11,913,459.23 |
+| COTI/USDT:USDT | +32.59% | $7,180,691.24 |
+| BTW/USDT:USDT | +15.15% | $21,791,760.57 |
+| VELVET/USDT:USDT | +9.87% | $20,463,960.34 |
+| BANK/USDT:USDT | +9.29% | $3,120,519.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +3.39% | +3.22% |
-| GRVT/USDT:USDT | below_1h_threshold | +3.13% | +2.96% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +2.50% | +2.34% |
-| LIT/USDT:USDT | below_1h_threshold | +1.83% | +1.67% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.61% | +1.45% |
+| GRVT/USDT:USDT | below_1h_threshold | +2.75% | +2.54% |
+| LIT/USDT:USDT | below_1h_threshold | +2.58% | +2.38% |
+| COTI/USDT:USDT | below_1h_threshold | +1.95% | +1.74% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.55% | +1.35% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.52% | +1.32% |
 
 ## 7. 次に見るべき不足
 
