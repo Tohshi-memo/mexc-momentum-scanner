@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T11:51:30.573485+00:00
+- generated_at: 2026-08-13T11:56:28.950240+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11442**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T11:51:15.931498+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=63457.4
+- 更新: 2026-08-13T11:56:17.778967+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=63444.2
 - Funnel: target 973 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.5 >= 65=1
+- Strict後reject: 4h RSI 83.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +44.09% | $10,638,472.58 |
-| ACU/USDT:USDT | +23.39% | $6,816,493.36 |
-| COTI/USDT:USDT | +22.54% | $10,678,229.45 |
-| BANK/USDT:USDT | +20.32% | $6,112,062.06 |
-| BTW/USDT:USDT | +18.80% | $25,843,754.28 |
+| AKE/USDT:USDT | +44.91% | $11,233,084.03 |
+| ACU/USDT:USDT | +23.04% | $6,836,558.32 |
+| COTI/USDT:USDT | +22.37% | $10,697,675.55 |
+| BANK/USDT:USDT | +19.30% | $6,181,502.71 |
+| BTW/USDT:USDT | +18.86% | $25,860,407.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLUAI/USDT:USDT | below_1h_threshold | +3.08% | +3.35% |
-| BANK/USDT:USDT | below_1h_threshold | +2.53% | +2.80% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.48% | +2.75% |
-| AVNT/USDT:USDT | below_1h_threshold | +2.33% | +2.60% |
-| COOKIE/USDT:USDT | below_1h_threshold | +1.86% | +2.13% |
+| BLUAI/USDT:USDT | below_1h_threshold | +3.16% | +3.45% |
+| AVNT/USDT:USDT | below_1h_threshold | +3.04% | +3.33% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.77% | +3.06% |
+| COOKIE/USDT:USDT | below_1h_threshold | +1.77% | +2.06% |
+| BANK/USDT:USDT | below_1h_threshold | +1.64% | +1.93% |
 
 ## 7. 次に見るべき不足
 
