@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T15:51:44.027101+00:00
+- generated_at: 2026-08-13T15:56:31.395466+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11456**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T15:51:30.247588+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=63641.4
-- Funnel: target 978 → liquid 174 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.9 >= 65=1, 4h RSI 85.8 >= 65=1, 4h RSI 85.5 >= 65=1
+- 更新: 2026-08-13T15:56:22.036782+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=63587.5
+- Funnel: target 978 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.1 >= 65=1, 4h RSI 81.9 >= 65=1, 4h RSI 85.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +58.71% | $27,163,792.42 |
-| COTI/USDT:USDT | +33.49% | $12,103,088.01 |
-| ACU/USDT:USDT | +31.34% | $8,165,996.52 |
-| AVAAI/USDT:USDT | +30.47% | $1,967,797.31 |
-| SNXX/USDT:USDT | +21.86% | $9,907,405.18 |
+| AKE/USDT:USDT | +60.80% | $27,563,819.39 |
+| COTI/USDT:USDT | +31.72% | $12,147,304.06 |
+| AVAAI/USDT:USDT | +30.30% | $1,970,874.65 |
+| ACU/USDT:USDT | +28.78% | $8,196,782.23 |
+| SNXX/USDT:USDT | +22.73% | $9,962,357.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.78% | +5.09% |
-| APR/USDT:USDT | below_1h_threshold | +3.85% | +4.16% |
-| MUU/USDT:USDT | below_1h_threshold | +3.30% | +3.60% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +3.17% | +3.48% |
-| INFQSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +3.09% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.78% | +5.17% |
+| COTI/USDT:USDT | below_1h_threshold | +4.59% | +4.98% |
+| APR/USDT:USDT | below_1h_threshold | +4.02% | +4.40% |
+| MYX/USDT:USDT | below_1h_threshold | +3.30% | +3.69% |
+| MUU/USDT:USDT | below_1h_threshold | +3.30% | +3.69% |
 
 ## 7. 次に見るべき不足
 
