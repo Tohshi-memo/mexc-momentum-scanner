@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T04:26:21.989813+00:00
+- generated_at: 2026-08-13T04:31:21.458409+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11420**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T04:26:13.685140+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63584.0
+- 更新: 2026-08-13T04:31:14.975647+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63586.8
 - Funnel: target 972 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 69.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +32.08% | $8,138,937.01 |
-| APR/USDT:USDT | +12.16% | $15,034,249.07 |
-| COOKIE/USDT:USDT | +8.12% | $1,048,121.34 |
-| CASHCAT/USDT:USDT | +7.55% | $1,014,031.61 |
-| BR/USDT:USDT | +6.84% | $9,087,475.37 |
+| COTI/USDT:USDT | +30.81% | $8,253,173.97 |
+| APR/USDT:USDT | +11.32% | $15,080,496.27 |
+| COOKIE/USDT:USDT | +8.20% | $1,048,766.56 |
+| CYS/USDT:USDT | +7.14% | $17,559,571.19 |
+| VELVET/USDT:USDT | +7.04% | $23,057,617.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +2.77% | +2.83% |
-| BMT/USDT:USDT | below_1h_threshold | +2.12% | +2.18% |
-| HEI/USDT:USDT | below_1h_threshold | +1.07% | +1.13% |
-| LIT/USDT:USDT | below_1h_threshold | +0.75% | +0.81% |
-| SEI/USDT:USDT | below_1h_threshold | +0.71% | +0.77% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.42% | +3.48% |
+| BMT/USDT:USDT | below_1h_threshold | +2.46% | +2.51% |
+| LIT/USDT:USDT | below_1h_threshold | +1.49% | +1.55% |
+| ONE/USDT:USDT | below_1h_threshold | +1.43% | +1.49% |
+| SEI/USDT:USDT | below_1h_threshold | +0.83% | +0.89% |
 
 ## 7. 次に見るべき不足
 
