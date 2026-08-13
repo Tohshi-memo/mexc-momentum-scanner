@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T02:36:29.786751+00:00
+- generated_at: 2026-08-13T02:41:22.875356+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11417**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T02:36:21.366497+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63390.0
+- 更新: 2026-08-13T02:41:14.440233+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=63380.1
 - Funnel: target 972 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1
+- Strict後reject: 4h RSI 72.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +38.31% | $13,563,580.70 |
-| COTI/USDT:USDT | +36.42% | $7,672,536.47 |
-| BTW/USDT:USDT | +19.18% | $22,548,214.63 |
-| BANK/USDT:USDT | +13.36% | $3,561,028.07 |
-| VELVET/USDT:USDT | +13.20% | $21,915,248.40 |
+| APR/USDT:USDT | +37.21% | $13,586,529.64 |
+| COTI/USDT:USDT | +36.16% | $7,679,513.71 |
+| BTW/USDT:USDT | +19.52% | $22,576,073.95 |
+| BANK/USDT:USDT | +14.68% | $3,575,550.78 |
+| VELVET/USDT:USDT | +13.53% | $21,984,194.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +3.72% | +3.78% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.08% |
-| BANK/USDT:USDT | below_1h_threshold | +1.63% | +1.69% |
-| BTW/USDT:USDT | below_1h_threshold | +1.49% | +1.55% |
-| ONE/USDT:USDT | below_1h_threshold | +1.30% | +1.36% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +3.10% |
+| APR/USDT:USDT | below_1h_threshold | +3.00% | +3.07% |
+| BANK/USDT:USDT | below_1h_threshold | +2.91% | +2.99% |
+| BTW/USDT:USDT | below_1h_threshold | +1.58% | +1.66% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.21% |
 
 ## 7. 次に見るべき不足
 
