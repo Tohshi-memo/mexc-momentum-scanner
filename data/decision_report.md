@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T09:56:18.247962+00:00
+- generated_at: 2026-08-13T10:01:21.930290+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11434**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T09:56:11.694141+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=63743.6
-- Funnel: target 973 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-13T10:01:13.652978+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63749.8
+- Funnel: target 973 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACU/USDT:USDT | +23.81% | $6,229,117.66 |
-| BTW/USDT:USDT | +17.82% | $28,425,528.37 |
-| BANK/USDT:USDT | +12.48% | $4,907,075.71 |
-| COTI/USDT:USDT | +11.77% | $10,127,887.42 |
-| APR/USDT:USDT | +10.81% | $15,482,806.18 |
+| ACU/USDT:USDT | +19.33% | $6,300,145.33 |
+| BTW/USDT:USDT | +18.28% | $25,778,728.76 |
+| BANK/USDT:USDT | +13.11% | $4,863,709.90 |
+| APR/USDT:USDT | +11.76% | $14,665,306.84 |
+| COTI/USDT:USDT | +11.66% | $10,065,748.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.82% | +3.82% |
-| BANK/USDT:USDT | below_1h_threshold | +3.13% | +3.13% |
-| BTW/USDT:USDT | below_1h_threshold | +2.19% | +2.19% |
-| WLD/USDT:USDT | below_1h_threshold | +1.91% | +1.91% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.76% | +1.76% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +2.84% | +2.86% |
+| ACU/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
+| BLUAI/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
+| TST/USDT:USDT | below_1h_threshold | +0.50% | +0.51% |
 
 ## 7. 次に見るべき不足
 
