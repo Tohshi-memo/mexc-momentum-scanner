@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T13:06:22.689312+00:00
+- generated_at: 2026-08-13T13:11:13.629684+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11443**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T13:06:14.534226+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=63710.2
+- 更新: 2026-08-13T13:11:05.417748+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63731.6
 - Funnel: target 978 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +35.40% | $18,057,534.79 |
-| ACU/USDT:USDT | +22.15% | $7,116,466.06 |
-| AVAAI/USDT:USDT | +21.49% | $1,794,400.76 |
-| COTI/USDT:USDT | +20.42% | $11,144,759.28 |
-| BTW/USDT:USDT | +18.61% | $24,382,536.48 |
+| AKE/USDT:USDT | +38.31% | $18,333,979.01 |
+| ACU/USDT:USDT | +23.41% | $7,126,072.35 |
+| COTI/USDT:USDT | +20.31% | $11,152,213.05 |
+| AVAAI/USDT:USDT | +19.90% | $1,799,978.20 |
+| BTW/USDT:USDT | +19.24% | $24,449,118.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.97% |
-| TST/USDT:USDT | below_1h_threshold | +0.90% | +0.84% |
-| BLUAI/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
-| BR/USDT:USDT | below_1h_threshold | +0.75% | +0.68% |
-| KORU/USDT:USDT | below_1h_threshold | +0.70% | +0.63% |
+| AKE/USDT:USDT | below_1h_threshold | +3.13% | +3.03% |
+| BR/USDT:USDT | below_1h_threshold | +1.83% | +1.74% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.38% | +1.28% |
+| MYX/USDT:USDT | below_1h_threshold | +1.07% | +0.97% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +0.93% |
 
 ## 7. 次に見るべき不足
 
