@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T07:51:39.364727+00:00
+- generated_at: 2026-08-13T07:56:31.466495+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11430**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T07:51:27.959944+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=63824.4
+- 更新: 2026-08-13T07:56:20.232850+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63829.7
 - Funnel: target 972 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
+- Strict後reject: 4h RSI 69.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACU/USDT:USDT | +35.03% | $4,136,670.76 |
-| BTW/USDT:USDT | +15.45% | $29,207,704.83 |
-| COTI/USDT:USDT | +14.30% | $9,591,429.71 |
-| APR/USDT:USDT | +11.81% | $16,105,386.63 |
-| VELVET/USDT:USDT | +9.84% | $23,833,368.44 |
+| ACU/USDT:USDT | +34.86% | $4,219,582.04 |
+| BTW/USDT:USDT | +15.31% | $29,237,749.29 |
+| COTI/USDT:USDT | +13.64% | $9,607,125.86 |
+| APR/USDT:USDT | +13.61% | $16,135,140.84 |
+| VELVET/USDT:USDT | +10.41% | $23,887,433.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACU/USDT:USDT | below_1h_threshold | +2.18% | +2.33% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +1.90% | +2.04% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.62% | +1.77% |
-| RE/USDT:USDT | below_1h_threshold | +0.75% | +0.89% |
-| BILL/USDT:USDT | below_1h_threshold | +0.51% | +0.65% |
+| ACU/USDT:USDT | below_1h_threshold | +2.13% | +2.26% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.71% | +1.84% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.56% | +1.69% |
+| ADA/USDT:USDT | below_1h_threshold | +0.60% | +0.73% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.55% | +0.68% |
 
 ## 7. 次に見るべき不足
 
