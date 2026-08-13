@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T20:11:23.979965+00:00
+- generated_at: 2026-08-13T20:16:24.736994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11480**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T20:11:15.811281+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63412.6
+- 更新: 2026-08-13T20:16:16.316351+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63395.3
 - Funnel: target 978 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +24.42% | $5,026,560.55 |
-| WDAYSTOCK/USDT:USDT | +18.22% | $1,001,272.36 |
-| PROM/USDT:USDT | +11.17% | $2,412,828.75 |
-| CATE/USDT:USDT | +10.02% | $1,281,829.34 |
-| AKE/USDT:USDT | +9.92% | $42,116,673.63 |
+| EDEN/USDT:USDT | +24.84% | $5,193,694.04 |
+| WDAYSTOCK/USDT:USDT | +18.29% | $1,001,901.97 |
+| AKE/USDT:USDT | +18.03% | $43,251,435.20 |
+| PROM/USDT:USDT | +11.30% | $2,417,644.12 |
+| CATE/USDT:USDT | +10.98% | $1,302,835.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.72% | +3.66% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.45% |
-| BTW/USDT:USDT | below_1h_threshold | +2.25% | +2.20% |
-| UB/USDT:USDT | below_1h_threshold | +1.63% | +1.58% |
-| ON/USDT:USDT | below_1h_threshold | +1.63% | +1.58% |
+| UB/USDT:USDT | below_1h_threshold | +4.73% | +4.71% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.72% | +3.69% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.50% | +2.47% |
+| BTW/USDT:USDT | below_1h_threshold | +1.85% | +1.82% |
+| CAP/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
 
 ## 7. 次に見るべき不足
 
