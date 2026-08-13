@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T10:56:32.573946+00:00
+- generated_at: 2026-08-13T11:01:27.282849+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11440**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T10:56:22.167037+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=63621.4
-- Funnel: target 973 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.0 >= 65=1, 4h RSI 83.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-13T11:01:20.873945+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63631.0
+- Funnel: target 973 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVAAI/USDT:USDT | +36.83% | $1,347,732.29 |
-| AKE/USDT:USDT | +36.05% | $6,307,862.76 |
-| ACU/USDT:USDT | +22.92% | $6,638,593.74 |
-| BTW/USDT:USDT | +18.87% | $26,799,535.66 |
-| BANK/USDT:USDT | +17.32% | $5,335,715.39 |
+| AKE/USDT:USDT | +37.08% | $6,383,534.96 |
+| AVAAI/USDT:USDT | +36.85% | $1,364,156.61 |
+| ACU/USDT:USDT | +21.51% | $6,650,052.08 |
+| BTW/USDT:USDT | +19.39% | $25,247,789.51 |
+| BANK/USDT:USDT | +15.95% | $5,304,280.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACU/USDT:USDT | below_1h_threshold | +3.93% | +4.14% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.77% | +3.98% |
-| BANK/USDT:USDT | below_1h_threshold | +3.12% | +3.34% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +2.84% | +3.06% |
-| COTI/USDT:USDT | below_1h_threshold | +2.75% | +2.96% |
+| AKE/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
+| BR/USDT:USDT | below_1h_threshold | +0.72% | +0.72% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.62% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.37% | +0.37% |
+| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.34% |
 
 ## 7. 次に見るべき不足
 
