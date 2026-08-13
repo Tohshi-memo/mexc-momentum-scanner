@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T04:01:18.794401+00:00
+- generated_at: 2026-08-13T04:06:16.593618+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11419**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T04:01:10.578478+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63617.1
+- 更新: 2026-08-13T04:06:08.581514+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63618.6
 - Funnel: target 972 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +36.80% | $7,928,094.30 |
-| COOKIE/USDT:USDT | +7.76% | $1,036,512.36 |
-| CYS/USDT:USDT | +7.50% | $17,440,076.87 |
-| CASHCAT/USDT:USDT | +7.29% | $1,006,759.35 |
-| BR/USDT:USDT | +6.40% | $9,052,352.67 |
+| COTI/USDT:USDT | +38.46% | $7,984,996.85 |
+| CASHCAT/USDT:USDT | +8.20% | $1,007,401.58 |
+| COOKIE/USDT:USDT | +7.67% | $1,041,070.25 |
+| CYS/USDT:USDT | +7.49% | $17,466,620.64 |
+| QNTSTOCK/USDT:USDT | +6.34% | $1,079,554.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +0.53% | +0.54% |
-| SEI/USDT:USDT | below_1h_threshold | +0.49% | +0.50% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.37% |
-| XLM/USDT:USDT | below_1h_threshold | +0.36% | +0.37% |
+| BMT/USDT:USDT | below_1h_threshold | +3.07% | +3.08% |
+| COTI/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
+| SEI/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| GRVT/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
 
 ## 7. 次に見るべき不足
 
