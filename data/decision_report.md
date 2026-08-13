@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T15:16:38.183365+00:00
+- generated_at: 2026-08-13T15:21:21.892039+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11454**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T15:16:24.770806+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=63762.1
-- Funnel: target 978 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.0 >= 65=1, 4h RSI 70.2 >= 65=1
+- 更新: 2026-08-13T15:21:14.871846+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63815.5
+- Funnel: target 978 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +53.98% | $25,237,577.35 |
-| ACU/USDT:USDT | +30.01% | $7,981,717.23 |
-| AVAAI/USDT:USDT | +28.70% | $1,864,248.11 |
-| AVNT/USDT:USDT | +27.00% | $2,550,212.74 |
-| COTI/USDT:USDT | +25.86% | $11,792,366.72 |
+| AKE/USDT:USDT | +52.52% | $25,491,130.30 |
+| ACU/USDT:USDT | +31.11% | $8,020,776.91 |
+| AVAAI/USDT:USDT | +28.59% | $1,880,469.75 |
+| AVNT/USDT:USDT | +27.23% | $2,675,672.46 |
+| COTI/USDT:USDT | +26.79% | $11,813,649.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.90% |
-| MUU/USDT:USDT | below_1h_threshold | +3.30% | +3.41% |
-| BR/USDT:USDT | below_1h_threshold | +3.20% | +3.32% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +3.17% | +3.29% |
-| AKE/USDT:USDT | below_1h_threshold | +3.07% | +3.18% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.78% | +4.81% |
+| MUU/USDT:USDT | below_1h_threshold | +3.30% | +3.33% |
+| CIENSTOCK/USDT:USDT | below_1h_threshold | +3.17% | +3.21% |
+| BR/USDT:USDT | below_1h_threshold | +3.17% | +3.20% |
+| AVNT/USDT:USDT | below_1h_threshold | +2.79% | +2.82% |
 
 ## 7. 次に見るべき不足
 
