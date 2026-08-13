@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T18:51:37.525552+00:00
+- generated_at: 2026-08-13T18:56:39.929591+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11469**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.38** / 初期 $100.00 (+16.38%)
-- 確定: 1466件 (Win 432 / Loss 554 / Flat 480) / pending 4件 / skip 1477件
+- 確定: 1466件 (Win 432 / Loss 554 / Flat 480) / pending 4件 / skip 1479件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000139 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACU/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $116.38
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T18:51:23.300896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63210.1
-- Funnel: target 978 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1
+- 更新: 2026-08-13T18:56:25.977427+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=63306.1
+- Funnel: target 978 → liquid 180 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.1 >= 65=1, 4h RSI 86.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +16.44% | $2,005,667.60 |
-| CATE/USDT:USDT | +11.81% | $1,197,416.63 |
-| ACU/USDT:USDT | +9.58% | $9,178,299.93 |
-| PROM/USDT:USDT | +7.47% | $2,793,139.46 |
-| ETHFI/USDT:USDT | +7.15% | $3,457,294.59 |
+| EDEN/USDT:USDT | +16.72% | $2,105,344.36 |
+| CATE/USDT:USDT | +14.42% | $1,211,920.52 |
+| US/USDT:USDT | +12.86% | $4,731,145.55 |
+| ACU/USDT:USDT | +9.58% | $9,181,051.01 |
+| ETHFI/USDT:USDT | +7.05% | $3,565,483.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +3.26% | +3.12% |
-| ACU/USDT:USDT | below_1h_threshold | +2.81% | +2.67% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
-| AVAAI/USDT:USDT | below_1h_threshold | +2.05% | +1.91% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.77% | +1.63% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.31% | +3.01% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.84% | +2.55% |
+| ACU/USDT:USDT | below_1h_threshold | +2.61% | +2.32% |
+| AVAAI/USDT:USDT | below_1h_threshold | +2.09% | +1.79% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.87% | +1.58% |
 
 ## 7. 次に見るべき不足
 
