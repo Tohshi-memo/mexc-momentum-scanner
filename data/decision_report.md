@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T14:46:54.301493+00:00
+- generated_at: 2026-08-13T14:51:44.825134+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11448**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T14:46:40.213399+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=63910.8
-- Funnel: target 978 → liquid 178 → pre 50 → checked 50 → surge 8 → strict 1
-- Surge前reject: below_1h_threshold=40, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1, 4h RSI 76.1 >= 65=1, 4h RSI 79.7 >= 65=1, 4h RSI 84.2 >= 65=1, 4h RSI 83.1 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 72.0 >= 65=1
+- 更新: 2026-08-13T14:51:33.873186+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=63896.5
+- Funnel: target 978 → liquid 178 → pre 50 → checked 50 → surge 6 → strict 0
+- Surge前reject: below_1h_threshold=42, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.0 >= 65=1, 4h RSI 84.0 >= 65=1, 4h RSI 82.8 >= 65=1, 4h RSI 74.4 >= 65=1, 4h RSI 78.8 >= 65=1, 4h RSI 72.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +50.23% | $23,778,126.24 |
-| ACU/USDT:USDT | +32.96% | $7,756,249.07 |
-| COTI/USDT:USDT | +27.98% | $11,703,351.38 |
-| AVNT/USDT:USDT | +22.20% | $2,143,743.37 |
-| BR/USDT:USDT | +21.71% | $6,438,391.13 |
+| AKE/USDT:USDT | +51.00% | $24,091,861.27 |
+| ACU/USDT:USDT | +32.30% | $7,789,748.42 |
+| COTI/USDT:USDT | +25.77% | $11,725,894.14 |
+| AVNT/USDT:USDT | +22.99% | $2,156,171.39 |
+| BTW/USDT:USDT | +21.91% | $24,732,760.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_relative_strength | +5.28% | +4.95% |
-| SOXL/USDT:USDT | below_relative_strength | +5.10% | +4.77% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.62% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.36% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.58% | +4.25% |
+| BR/USDT:USDT | below_relative_strength | +5.27% | +4.96% |
+| SOXL/USDT:USDT | below_relative_strength | +5.10% | +4.79% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.38% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.58% | +4.27% |
+| COTI/USDT:USDT | below_1h_threshold | +4.21% | +3.90% |
 
 ## 7. 次に見るべき不足
 
