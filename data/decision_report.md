@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T02:51:18.811110+00:00
+- generated_at: 2026-08-13T02:56:28.890142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11418**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T02:51:11.963969+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=63514.0
+- 更新: 2026-08-13T02:56:20.748985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=63541.6
 - Funnel: target 972 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +34.17% | $7,696,064.66 |
-| APR/USDT:USDT | +30.11% | $13,713,675.77 |
-| BTW/USDT:USDT | +20.28% | $22,639,638.16 |
-| VELVET/USDT:USDT | +9.89% | $22,157,305.55 |
-| BANK/USDT:USDT | +9.46% | $3,641,805.56 |
+| COTI/USDT:USDT | +35.27% | $7,710,432.86 |
+| APR/USDT:USDT | +30.02% | $13,740,015.83 |
+| BTW/USDT:USDT | +21.12% | $22,722,121.93 |
+| COOKIE/USDT:USDT | +8.64% | $1,067,342.87 |
+| CASHCAT/USDT:USDT | +8.50% | $1,016,688.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.88% | +4.75% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +2.89% |
-| BTW/USDT:USDT | below_1h_threshold | +2.43% | +2.29% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.00% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +0.98% |
+| BTW/USDT:USDT | below_1h_threshold | +3.15% | +2.97% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +3.02% | +2.85% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.93% | +2.75% |
+| ONE/USDT:USDT | below_1h_threshold | +1.95% | +1.77% |
+| VVV/USDT:USDT | below_1h_threshold | +1.22% | +1.05% |
 
 ## 7. 次に見るべき不足
 
