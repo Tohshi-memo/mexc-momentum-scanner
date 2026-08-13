@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T05:16:23.582801+00:00
+- generated_at: 2026-08-13T05:21:27.379232+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11422**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T05:16:13.961225+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=63907.3
+- 更新: 2026-08-13T05:21:18.657746+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=63893.7
 - Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +20.50% | $8,729,155.96 |
-| CASHCAT/USDT:USDT | +10.17% | $1,019,602.75 |
-| COOKIE/USDT:USDT | +9.62% | $1,034,956.59 |
-| DELLSTOCK/USDT:USDT | +8.87% | $1,758,702.84 |
-| BTW/USDT:USDT | +8.44% | $26,416,748.68 |
+| COTI/USDT:USDT | +21.52% | $8,773,979.16 |
+| CASHCAT/USDT:USDT | +10.94% | $1,023,159.54 |
+| COOKIE/USDT:USDT | +8.91% | $1,036,505.99 |
+| DELLSTOCK/USDT:USDT | +8.90% | $1,933,549.77 |
+| BTW/USDT:USDT | +8.87% | $26,465,161.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.51% | +3.14% |
-| COOKIE/USDT:USDT | below_1h_threshold | +1.31% | +0.94% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +0.92% |
-| BTW/USDT:USDT | below_1h_threshold | +0.91% | +0.54% |
-| SPX/USDT:USDT | below_1h_threshold | +0.85% | +0.48% |
+| CYS/USDT:USDT | below_1h_threshold | +3.01% | +2.66% |
+| BTW/USDT:USDT | below_1h_threshold | +1.77% | +1.43% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +0.94% |
+| COTI/USDT:USDT | below_1h_threshold | +1.09% | +0.74% |
+| RE/USDT:USDT | below_1h_threshold | +1.05% | +0.70% |
 
 ## 7. 次に見るべき不足
 
