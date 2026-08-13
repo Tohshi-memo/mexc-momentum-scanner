@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T16:36:32.630701+00:00
+- generated_at: 2026-08-13T16:41:38.306910+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11459**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.89** / 初期 $100.00 (+16.89%)
-- 確定: 1461件 (Win 431 / Loss 550 / Flat 480) / pending 5件 / skip 1469件
+- 確定: 1461件 (Win 431 / Loss 550 / Flat 480) / pending 6件 / skip 1469件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000221 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: APR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T16:36:23.784896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63409.9
-- Funnel: target 978 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.8 >= 65=1, 4h RSI 84.7 >= 65=1
+- 更新: 2026-08-13T16:41:28.632884+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.58% price=63020.1
+- Funnel: target 978 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.7 >= 65=1, 4h RSI 84.6 >= 65=1, 4h RSI 68.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +6.01% | $9,281,322.69 |
-| ACU/USDT:USDT | +4.79% | $8,500,655.45 |
-| BEAT/USDT:USDT | +4.44% | $36,835,144.79 |
-| BLESS/USDT:USDT | +3.83% | $9,987,048.46 |
-| BSPSTOCK/USDT:USDT | +3.25% | $1,030,116.99 |
+| ACU/USDT:USDT | +5.08% | $8,517,291.69 |
+| BEAT/USDT:USDT | +4.44% | $36,975,396.90 |
+| BLESS/USDT:USDT | +3.70% | $10,043,047.19 |
+| HOLO/USDT:USDT | +3.59% | $2,420,943.89 |
+| BICO/USDT:USDT | +3.48% | $4,636,317.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACU/USDT:USDT | below_1h_threshold | +4.79% | +4.76% |
-| TUT/USDT:USDT | below_1h_threshold | +4.67% | +4.63% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.56% | +4.52% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.84% | +3.80% |
-| AVAAI/USDT:USDT | below_1h_threshold | +2.96% | +2.92% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.45% | +5.03% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.75% | +4.33% |
+| BICO/USDT:USDT | below_1h_threshold | +3.67% | +4.24% |
+| HOLO/USDT:USDT | below_1h_threshold | +3.50% | +4.08% |
+| TUT/USDT:USDT | below_1h_threshold | +3.16% | +3.73% |
 
 ## 7. 次に見るべき不足
 
