@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T16:01:36.621784+00:00
+- generated_at: 2026-08-13T16:06:27.536735+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11456**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T16:01:27.636678+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63399.0
+- 更新: 2026-08-13T16:06:18.675036+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63436.6
 - Funnel: target 978 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.4 >= 65=1, 4h RSI 84.3 >= 65=1
+- Strict後reject: 4h RSI 84.4 >= 65=2
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +1.77% | $35,508,868.56 |
-| APR/USDT:USDT | +1.13% | $11,844,336.27 |
-| AVAAI/USDT:USDT | +1.11% | $1,910,195.50 |
-| BR/USDT:USDT | +1.10% | $6,280,515.94 |
-| SNXX/USDT:USDT | +1.06% | $9,909,744.15 |
+| COTI/USDT:USDT | +4.81% | $12,316,627.43 |
+| BEAT/USDT:USDT | +3.78% | $35,871,639.10 |
+| ACU/USDT:USDT | +2.74% | $8,386,186.77 |
+| BLESS/USDT:USDT | +2.19% | $9,671,523.98 |
+| AVNT/USDT:USDT | +1.97% | $3,402,617.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.40% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.89% | +1.87% |
-| DRAM/USDT:USDT | below_1h_threshold | +1.24% | +1.22% |
-| APR/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
+| COTI/USDT:USDT | below_1h_threshold | +4.56% | +4.48% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.78% | +3.70% |
+| ACU/USDT:USDT | below_1h_threshold | +2.77% | +2.69% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.42% | +2.34% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.41% | +2.33% |
 
 ## 7. 次に見るべき不足
 
