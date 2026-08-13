@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T06:31:28.373489+00:00
+- generated_at: 2026-08-13T06:36:22.576970+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11427**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T06:31:16.644506+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=63796.6
-- Funnel: target 972 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.5 >= 65=1
+- 更新: 2026-08-13T06:36:14.261168+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=63772.7
+- Funnel: target 972 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACU/USDT:USDT | +24.48% | $2,194,833.89 |
-| COTI/USDT:USDT | +20.16% | $9,183,302.81 |
-| APR/USDT:USDT | +17.67% | $15,725,863.00 |
-| ONE/USDT:USDT | +16.77% | $3,185,376.51 |
-| TST/USDT:USDT | +13.09% | $1,127,448.36 |
+| COTI/USDT:USDT | +20.84% | $9,204,402.79 |
+| ACU/USDT:USDT | +18.32% | $2,468,263.84 |
+| TST/USDT:USDT | +13.50% | $1,134,694.90 |
+| APR/USDT:USDT | +13.21% | $15,801,529.69 |
+| VELVET/USDT:USDT | +12.37% | $23,587,604.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.37% | +4.44% |
-| BR/USDT:USDT | below_1h_threshold | +2.63% | +2.71% |
-| COOKIE/USDT:USDT | below_1h_threshold | +2.58% | +2.66% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.86% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.44% | +1.52% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.37% | +4.48% |
+| BR/USDT:USDT | below_1h_threshold | +3.14% | +3.25% |
+| COOKIE/USDT:USDT | below_1h_threshold | +2.91% | +3.03% |
+| ONE/USDT:USDT | below_1h_threshold | +2.08% | +2.19% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +1.79% | +1.90% |
 
 ## 7. 次に見るべき不足
 
