@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T01:31:29.862003+00:00
+- generated_at: 2026-08-13T01:36:26.605013+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11413**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T01:31:18.817052+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=63403.8
+- 更新: 2026-08-13T01:36:15.524638+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=63478.5
 - Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1
+- Strict後reject: 4h RSI 73.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +32.74% | $7,458,840.55 |
-| BTW/USDT:USDT | +18.14% | $22,190,433.65 |
-| APR/USDT:USDT | +15.10% | $13,049,838.18 |
-| COOKIE/USDT:USDT | +11.20% | $1,002,991.71 |
-| CASHCAT/USDT:USDT | +8.86% | $1,019,135.03 |
+| COTI/USDT:USDT | +32.58% | $7,472,114.32 |
+| BTW/USDT:USDT | +17.58% | $22,243,290.61 |
+| APR/USDT:USDT | +16.08% | $13,078,835.13 |
+| COOKIE/USDT:USDT | +11.29% | $1,005,324.19 |
+| CASHCAT/USDT:USDT | +9.14% | $1,019,547.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.94% | +5.14% |
-| BR/USDT:USDT | below_1h_threshold | +3.31% | +3.51% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.95% |
-| JTO/USDT:USDT | below_1h_threshold | +1.71% | +1.91% |
-| LSK/USDT:USDT | below_1h_threshold | +1.68% | +1.88% |
+| BR/USDT:USDT | below_1h_threshold | +3.51% | +3.59% |
+| ONE/USDT:USDT | below_1h_threshold | +3.20% | +3.29% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +1.84% |
+| LSK/USDT:USDT | below_1h_threshold | +1.55% | +1.64% |
+| JTO/USDT:USDT | below_1h_threshold | +1.24% | +1.32% |
 
 ## 7. 次に見るべき不足
 
