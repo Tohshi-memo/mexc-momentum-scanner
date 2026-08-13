@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T07:16:28.285963+00:00
+- generated_at: 2026-08-13T07:21:29.834417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11429**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.99** / 初期 $100.00 (+15.99%)
-- 確定: 1437件 (Win 422 / Loss 540 / Flat 475) / pending 4件 / skip 1460件
+- 確定: 1437件 (Win 422 / Loss 540 / Flat 475) / pending 5件 / skip 1460件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000233 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.99
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T07:16:17.829687+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=63854.6
-- Funnel: target 972 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-13T07:21:16.988550+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=63830.9
+- Funnel: target 972 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACU/USDT:USDT | +29.10% | $3,406,580.20 |
-| COTI/USDT:USDT | +20.67% | $9,295,101.60 |
-| BTW/USDT:USDT | +13.25% | $28,407,475.86 |
-| VELVET/USDT:USDT | +11.11% | $23,404,711.95 |
-| TST/USDT:USDT | +10.86% | $1,135,379.68 |
+| ACU/USDT:USDT | +32.54% | $3,538,778.76 |
+| COTI/USDT:USDT | +18.46% | $9,363,048.94 |
+| BTW/USDT:USDT | +12.56% | $28,590,880.21 |
+| VELVET/USDT:USDT | +11.20% | $23,454,084.04 |
+| TST/USDT:USDT | +10.51% | $1,139,490.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +2.32% | +2.41% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.88% | +0.97% |
-| COTI/USDT:USDT | below_1h_threshold | +0.85% | +0.95% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.55% | +0.64% |
-| SHIB/USDT:USDT | below_1h_threshold | +0.49% | +0.58% |
+| APR/USDT:USDT | below_1h_threshold | +1.63% | +1.77% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +0.76% | +0.89% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.68% | +0.81% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.55% | +0.68% |
+| BILL/USDT:USDT | below_1h_threshold | +0.43% | +0.56% |
 
 ## 7. 次に見るべき不足
 
