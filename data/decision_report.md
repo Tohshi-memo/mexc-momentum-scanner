@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T05:31:22.743542+00:00
+- generated_at: 2026-08-13T05:36:27.805601+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11424**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.49** / 初期 $100.00 (+15.49%)
-- 確定: 1432件 (Win 420 / Loss 539 / Flat 473) / pending 3件 / skip 1460件
+- 確定: 1432件 (Win 420 / Loss 539 / Flat 473) / pending 4件 / skip 1460件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000194 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTW/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $115.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T05:31:12.134332+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=63895.0
-- Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-13T05:36:17.541201+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=63907.2
+- Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +19.83% | $8,802,578.59 |
-| BTW/USDT:USDT | +11.42% | $26,685,004.31 |
-| CASHCAT/USDT:USDT | +10.16% | $1,031,699.23 |
-| ONE/USDT:USDT | +9.53% | $3,217,281.03 |
-| DELLSTOCK/USDT:USDT | +8.33% | $1,969,522.55 |
+| COTI/USDT:USDT | +19.71% | $8,851,419.78 |
+| ONE/USDT:USDT | +10.60% | $3,224,766.83 |
+| BTW/USDT:USDT | +10.37% | $26,753,721.86 |
+| CASHCAT/USDT:USDT | +10.32% | $1,032,167.24 |
+| DELLSTOCK/USDT:USDT | +9.10% | $1,994,390.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_relative_strength | +5.27% | +4.92% |
-| BTW/USDT:USDT | below_1h_threshold | +4.07% | +3.72% |
-| CYS/USDT:USDT | below_1h_threshold | +1.78% | +1.43% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.54% | +1.19% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +0.94% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.20% | +2.83% |
+| BTW/USDT:USDT | below_1h_threshold | +3.02% | +2.65% |
+| VVV/USDT:USDT | below_1h_threshold | +1.74% | +1.38% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +0.92% |
+| BR/USDT:USDT | below_1h_threshold | +1.19% | +0.82% |
 
 ## 7. 次に見るべき不足
 
