@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T10:46:20.980988+00:00
+- generated_at: 2026-08-13T10:51:28.596969+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11439**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T10:46:11.845476+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=63611.2
+- 更新: 2026-08-13T10:51:20.158141+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=63617.9
 - Funnel: target 973 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.3 >= 65=1
+- Strict後reject: 4h RSI 80.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVAAI/USDT:USDT | +34.46% | $1,279,314.34 |
-| AKE/USDT:USDT | +31.13% | $5,320,873.38 |
-| ACU/USDT:USDT | +20.64% | $6,581,140.01 |
-| BTW/USDT:USDT | +19.51% | $26,539,760.70 |
-| BANK/USDT:USDT | +17.87% | $5,213,024.52 |
+| AKE/USDT:USDT | +34.53% | $5,891,865.20 |
+| AVAAI/USDT:USDT | +32.72% | $1,317,410.23 |
+| ACU/USDT:USDT | +21.48% | $6,615,734.21 |
+| BTW/USDT:USDT | +20.05% | $26,711,711.90 |
+| BANK/USDT:USDT | +16.30% | $5,299,287.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAAI/USDT:USDT | below_1h_threshold | +4.74% | +4.97% |
-| VELVET/USDT:USDT | below_1h_threshold | +4.14% | +4.36% |
-| BANK/USDT:USDT | below_1h_threshold | +3.75% | +3.98% |
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.90% | +3.13% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +2.84% | +3.07% |
+| AVAAI/USDT:USDT | below_1h_threshold | +4.51% | +4.73% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.77% | +3.99% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +2.84% | +3.06% |
+| ACU/USDT:USDT | below_1h_threshold | +2.73% | +2.95% |
+| BANK/USDT:USDT | below_1h_threshold | +2.44% | +2.66% |
 
 ## 7. 次に見るべき不足
 
