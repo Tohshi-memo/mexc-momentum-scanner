@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T05:41:16.297734+00:00
+- generated_at: 2026-08-13T05:46:16.829439+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11424**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T05:41:08.117926+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=63915.0
+- 更新: 2026-08-13T05:46:10.484490+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=63887.9
 - Funnel: target 972 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COTI/USDT:USDT | +19.99% | $8,873,058.53 |
-| BTW/USDT:USDT | +10.62% | $26,818,979.93 |
-| CASHCAT/USDT:USDT | +10.39% | $1,033,439.86 |
-| ONE/USDT:USDT | +8.59% | $3,234,439.19 |
-| VELVET/USDT:USDT | +8.35% | $23,251,096.36 |
+| COTI/USDT:USDT | +17.61% | $8,918,243.83 |
+| BTW/USDT:USDT | +10.79% | $26,858,680.87 |
+| CASHCAT/USDT:USDT | +10.54% | $1,033,819.18 |
+| DELLSTOCK/USDT:USDT | +8.10% | $2,008,171.09 |
+| VELVET/USDT:USDT | +7.70% | $23,291,752.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +3.98% | +3.60% |
-| BTW/USDT:USDT | below_1h_threshold | +3.36% | +2.98% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.73% | +2.35% |
-| VVV/USDT:USDT | below_1h_threshold | +2.33% | +1.94% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +0.91% |
+| BTW/USDT:USDT | below_1h_threshold | +3.56% | +3.22% |
+| ONE/USDT:USDT | below_1h_threshold | +2.57% | +2.23% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.57% | +2.23% |
+| VVV/USDT:USDT | below_1h_threshold | +2.02% | +1.68% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +0.95% |
 
 ## 7. 次に見るべき不足
 
