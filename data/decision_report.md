@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T14:16:42.075994+00:00
+- generated_at: 2026-08-13T14:21:32.454164+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11444**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T14:16:31.197204+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=63853.1
-- Funnel: target 978 → liquid 176 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 79.9 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 71.9 >= 65=1, 4h RSI 68.1 >= 65=1
+- 更新: 2026-08-13T14:21:23.118559+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=63802.7
+- Funnel: target 978 → liquid 178 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.1 >= 65=1, 4h RSI 81.9 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 68.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +46.30% | $21,649,566.67 |
-| ACU/USDT:USDT | +32.35% | $7,552,388.69 |
-| AVAAI/USDT:USDT | +21.30% | $1,855,237.34 |
-| COTI/USDT:USDT | +21.14% | $11,362,045.22 |
-| AVNT/USDT:USDT | +20.98% | $1,890,740.11 |
+| AKE/USDT:USDT | +47.71% | $22,161,373.79 |
+| ACU/USDT:USDT | +32.34% | $7,569,178.47 |
+| COTI/USDT:USDT | +21.97% | $11,363,869.82 |
+| AVAAI/USDT:USDT | +21.24% | $1,857,189.69 |
+| AVNT/USDT:USDT | +21.09% | $1,931,611.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_relative_strength | +5.10% | +4.86% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.71% |
-| MYX/USDT:USDT | below_1h_threshold | +4.89% | +4.65% |
-| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.45% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.58% | +4.34% |
+| AKE/USDT:USDT | below_relative_strength | +5.16% | +4.99% |
+| SOXL/USDT:USDT | below_relative_strength | +5.10% | +4.94% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.79% |
+| SMCISTOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.53% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.58% | +4.42% |
 
 ## 7. 次に見るべき不足
 
