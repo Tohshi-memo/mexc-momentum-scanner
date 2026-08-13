@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T18:41:26.358804+00:00
+- generated_at: 2026-08-13T18:46:35.603034+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11467**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.38** / 初期 $100.00 (+16.38%)
-- 確定: 1466件 (Win 432 / Loss 554 / Flat 480) / pending 4件 / skip 1474件
+- 確定: 1466件 (Win 432 / Loss 554 / Flat 480) / pending 4件 / skip 1476件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000088 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACU/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $116.38
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T18:41:17.981364+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63125.3
-- Funnel: target 978 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.8 >= 65=1
+- 更新: 2026-08-13T18:46:22.060404+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63181.1
+- Funnel: target 978 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +19.48% | $1,160,406.75 |
-| EDEN/USDT:USDT | +12.71% | $1,846,609.66 |
-| ACU/USDT:USDT | +10.23% | $9,121,498.94 |
-| BLESS/USDT:USDT | +5.94% | $9,851,874.48 |
-| TUT/USDT:USDT | +5.88% | $10,894,768.04 |
+| US/USDT:USDT | +16.91% | $4,621,413.83 |
+| EDEN/USDT:USDT | +15.59% | $1,940,724.02 |
+| CATE/USDT:USDT | +14.04% | $1,177,604.54 |
+| PROM/USDT:USDT | +10.01% | $2,777,027.72 |
+| ACU/USDT:USDT | +8.99% | $9,150,820.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACU/USDT:USDT | below_1h_threshold | +3.39% | +3.39% |
-| PROM/USDT:USDT | below_1h_threshold | +1.99% | +1.98% |
-| TUT/USDT:USDT | below_1h_threshold | +1.75% | +1.74% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.74% | +1.73% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.62% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.75% | +2.66% |
+| ACU/USDT:USDT | below_1h_threshold | +2.22% | +2.13% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.95% | +1.86% |
+| AVAAI/USDT:USDT | below_1h_threshold | +1.82% | +1.72% |
+| ESPORTS/USDT:USDT | below_1h_threshold | +1.79% | +1.69% |
 
 ## 7. 次に見るべき不足
 
