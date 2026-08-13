@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T11:46:19.129427+00:00
+- generated_at: 2026-08-13T11:51:30.573485+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11442**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.19** / 初期 $100.00 (+16.19%)
-- 確定: 1449件 (Win 426 / Loss 545 / Flat 478) / pending 2件 / skip 1460件
+- 確定: 1449件 (Win 426 / Loss 545 / Flat 478) / pending 3件 / skip 1460件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000181 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AVAAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.19
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T11:46:10.888318+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=63446.0
-- Funnel: target 973 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-13T11:51:15.931498+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=63457.4
+- Funnel: target 973 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +40.52% | $10,098,228.99 |
-| ACU/USDT:USDT | +23.81% | $6,800,758.10 |
-| COTI/USDT:USDT | +19.78% | $10,619,025.65 |
-| BANK/USDT:USDT | +19.47% | $6,056,044.32 |
-| BTW/USDT:USDT | +19.00% | $25,816,083.00 |
+| AKE/USDT:USDT | +44.09% | $10,638,472.58 |
+| ACU/USDT:USDT | +23.39% | $6,816,493.36 |
+| COTI/USDT:USDT | +22.54% | $10,678,229.45 |
+| BANK/USDT:USDT | +20.32% | $6,112,062.06 |
+| BTW/USDT:USDT | +18.80% | $25,843,754.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.04% | +4.32% |
-| AKE/USDT:USDT | below_1h_threshold | +3.28% | +3.57% |
-| BLUAI/USDT:USDT | below_1h_threshold | +3.17% | +3.46% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.13% | +2.42% |
-| ACU/USDT:USDT | below_1h_threshold | +2.10% | +2.39% |
+| BLUAI/USDT:USDT | below_1h_threshold | +3.08% | +3.35% |
+| BANK/USDT:USDT | below_1h_threshold | +2.53% | +2.80% |
+| ATOM/USDT:USDT | below_1h_threshold | +2.48% | +2.75% |
+| AVNT/USDT:USDT | below_1h_threshold | +2.33% | +2.60% |
+| COOKIE/USDT:USDT | below_1h_threshold | +1.86% | +2.13% |
 
 ## 7. 次に見るべき不足
 
