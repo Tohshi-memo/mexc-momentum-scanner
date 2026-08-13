@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T16:51:39.785996+00:00
+- generated_at: 2026-08-13T16:56:41.854859+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11459**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T16:51:27.305623+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=63194.9
-- Funnel: target 978 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.0 >= 65=1, 4h RSI 84.9 >= 65=1, 4h RSI 68.8 >= 65=1
+- 更新: 2026-08-13T16:56:30.402716+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=63058.4
+- Funnel: target 978 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.4 >= 65=2
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACU/USDT:USDT | +5.98% | $8,583,128.29 |
-| BEAT/USDT:USDT | +5.89% | $37,445,474.98 |
-| TUT/USDT:USDT | +4.04% | $9,656,036.46 |
-| HOLO/USDT:USDT | +3.92% | $2,428,104.73 |
-| AVAAI/USDT:USDT | +3.14% | $1,963,714.42 |
+| BEAT/USDT:USDT | +6.45% | $37,590,394.07 |
+| ACU/USDT:USDT | +4.28% | $8,611,690.59 |
+| TUT/USDT:USDT | +3.91% | $9,694,305.94 |
+| HOLO/USDT:USDT | +3.56% | $2,435,127.74 |
+| BLESS/USDT:USDT | +3.39% | $10,195,890.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HOLO/USDT:USDT | below_1h_threshold | +3.98% | +4.29% |
-| TUT/USDT:USDT | below_1h_threshold | +3.94% | +4.24% |
-| AVAAI/USDT:USDT | below_1h_threshold | +3.12% | +3.42% |
-| BICO/USDT:USDT | below_1h_threshold | +2.98% | +3.28% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.98% | +3.28% |
+| ACU/USDT:USDT | below_1h_threshold | +4.28% | +4.80% |
+| TUT/USDT:USDT | below_1h_threshold | +3.91% | +4.43% |
+| HOLO/USDT:USDT | below_1h_threshold | +3.58% | +4.09% |
+| AVAAI/USDT:USDT | below_1h_threshold | +3.28% | +3.79% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.19% | +3.71% |
 
 ## 7. 次に見るべき不足
 
