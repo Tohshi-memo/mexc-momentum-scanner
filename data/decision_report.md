@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-13T07:06:17.612378+00:00
+- generated_at: 2026-08-13T07:11:35.000048+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11429**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.99** / 初期 $100.00 (+15.99%)
-- 確定: 1437件 (Win 422 / Loss 540 / Flat 475) / pending 3件 / skip 1460件
+- 確定: 1437件 (Win 422 / Loss 540 / Flat 475) / pending 4件 / skip 1460件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000233 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.99
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-13T07:06:09.597025+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=63847.9
-- Funnel: target 972 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-13T07:11:23.814481+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=63844.1
+- Funnel: target 972 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACU/USDT:USDT | +30.17% | $3,183,797.36 |
-| COTI/USDT:USDT | +19.99% | $9,267,611.28 |
-| TST/USDT:USDT | +13.23% | $1,116,705.74 |
-| VELVET/USDT:USDT | +10.77% | $23,330,620.50 |
-| ONE/USDT:USDT | +9.12% | $2,952,238.62 |
+| ACU/USDT:USDT | +27.24% | $3,317,708.74 |
+| COTI/USDT:USDT | +19.44% | $9,286,590.57 |
+| BTW/USDT:USDT | +12.40% | $28,301,323.91 |
+| VELVET/USDT:USDT | +11.35% | $23,377,310.67 |
+| APR/USDT:USDT | +10.06% | $15,837,848.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +1.75% | +1.85% |
-| BTW/USDT:USDT | below_1h_threshold | +1.68% | +1.78% |
+| APR/USDT:USDT | below_1h_threshold | +4.35% | +4.46% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.55% | +0.66% |
+| SHIB/USDT:USDT | below_1h_threshold | +0.42% | +0.53% |
+| SEI/USDT:USDT | below_1h_threshold | +0.41% | +0.52% |
 | LIT/USDT:USDT | below_1h_threshold | +0.37% | +0.48% |
-| ONE/USDT:USDT | below_1h_threshold | +0.37% | +0.47% |
-| LDO/USDT:USDT | below_1h_threshold | +0.34% | +0.44% |
 
 ## 7. 次に見るべき不足
 
