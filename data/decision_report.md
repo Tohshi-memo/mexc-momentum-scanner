@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T20:21:32.136954+00:00
+- generated_at: 2026-08-14T20:26:31.045391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11602**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T20:21:22.127222+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62917.7
+- 更新: 2026-08-14T20:26:23.509887+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62922.8
 - Funnel: target 985 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.1 >= 65=1
+- Strict後reject: 4h RSI 75.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOLO/USDT:USDT | +24.78% | $1,412,578.65 |
-| US/USDT:USDT | +21.68% | $6,653,021.14 |
-| ACE/USDT:USDT | +15.01% | $60,817,661.54 |
-| ACU/USDT:USDT | +9.08% | $2,073,247.86 |
-| CYS/USDT:USDT | +7.43% | $13,125,061.22 |
+| DOLO/USDT:USDT | +28.29% | $1,419,863.69 |
+| US/USDT:USDT | +22.19% | $6,662,949.76 |
+| ACE/USDT:USDT | +14.91% | $60,992,335.93 |
+| ACU/USDT:USDT | +8.71% | $2,074,343.89 |
+| CYS/USDT:USDT | +8.17% | $13,192,773.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.29% | +3.32% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.73% | +2.76% |
-| MUU/USDT:USDT | below_1h_threshold | +1.79% | +1.82% |
-| ACE/USDT:USDT | below_1h_threshold | +1.72% | +1.75% |
-| DOLO/USDT:USDT | below_1h_threshold | +1.67% | +1.71% |
+| DOLO/USDT:USDT | below_1h_threshold | +4.50% | +4.53% |
+| CYS/USDT:USDT | below_1h_threshold | +4.08% | +4.11% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.73% | +2.75% |
+| ACE/USDT:USDT | below_1h_threshold | +1.80% | +1.83% |
+| MUU/USDT:USDT | below_1h_threshold | +1.79% | +1.81% |
 
 ## 7. 次に見るべき不足
 
