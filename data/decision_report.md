@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T21:16:26.403410+00:00
+- generated_at: 2026-08-14T21:21:20.895423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11606**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T21:16:18.177499+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=62883.0
+- 更新: 2026-08-14T21:21:12.633469+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62857.7
 - Funnel: target 985 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOLO/USDT:USDT | +21.58% | $1,506,571.85 |
-| US/USDT:USDT | +20.79% | $6,696,904.72 |
-| ACE/USDT:USDT | +19.90% | $64,307,287.86 |
-| VELVET/USDT:USDT | +9.86% | $41,799,608.90 |
-| ACU/USDT:USDT | +9.43% | $2,089,705.42 |
+| US/USDT:USDT | +21.05% | $6,711,848.07 |
+| ACE/USDT:USDT | +17.47% | $64,721,702.18 |
+| DOLO/USDT:USDT | +15.70% | $1,532,167.87 |
+| ACU/USDT:USDT | +9.08% | $2,097,600.75 |
+| VELVET/USDT:USDT | +8.31% | $41,908,026.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.81% | +4.81% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.66% | +1.65% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.39% | +1.38% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.21% | +1.20% |
-| LDO/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
+| ACE/USDT:USDT | below_1h_threshold | +2.32% | +2.35% |
+| LDO/USDT:USDT | below_1h_threshold | +0.96% | +0.99% |
+| ONE/USDT:USDT | below_1h_threshold | +0.75% | +0.79% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.68% | +0.71% |
+| BTW/USDT:USDT | below_1h_threshold | +0.57% | +0.60% |
 
 ## 7. 次に見るべき不足
 
