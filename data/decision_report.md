@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T13:01:21.829685+00:00
+- generated_at: 2026-08-14T13:06:28.183489+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11553**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T13:01:12.091077+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62696.7
-- Funnel: target 981 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-14T13:06:21.399160+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=62703.7
+- Funnel: target 985 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +136.93% | $31,500,837.48 |
-| AKE/USDT:USDT | +75.19% | $66,145,780.06 |
-| VELVET/USDT:USDT | +52.30% | $34,347,999.05 |
-| CROSS/USDT:USDT | +30.43% | $1,265,389.66 |
-| CAP/USDT:USDT | +24.63% | $4,684,748.24 |
+| ACE/USDT:USDT | +134.76% | $32,099,846.27 |
+| AKE/USDT:USDT | +80.36% | $67,688,119.66 |
+| VELVET/USDT:USDT | +53.79% | $34,639,151.63 |
+| CROSS/USDT:USDT | +32.09% | $1,292,344.17 |
+| CAP/USDT:USDT | +24.76% | $4,710,652.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +1.96% | +1.97% |
-| H/USDT:USDT | below_1h_threshold | +1.90% | +1.92% |
-| KORU/USDT:USDT | below_1h_threshold | +0.62% | +0.64% |
-| WPMSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.63% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.44% | +0.45% |
+| AVAAI/USDT:USDT | below_1h_threshold | +2.85% | +2.86% |
+| AKE/USDT:USDT | below_1h_threshold | +2.55% | +2.55% |
+| ACE/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.18% | +1.18% |
+| 2Z/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
 
 ## 7. 次に見るべき不足
 
