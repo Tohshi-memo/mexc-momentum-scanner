@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T07:36:20.099608+00:00
+- generated_at: 2026-08-14T07:41:14.124729+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11519**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T07:36:11.584054+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=62979.6
-- Funnel: target 981 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-14T07:41:05.803008+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=62946.1
+- Funnel: target 981 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +30.54% | $26,076,441.83 |
-| EDEN/USDT:USDT | +23.90% | $33,692,975.58 |
-| ACE/USDT:USDT | +23.69% | $4,745,616.83 |
-| AKE/USDT:USDT | +22.55% | $61,275,393.18 |
-| WDAYSTOCK/USDT:USDT | +20.11% | $1,570,876.15 |
+| VELVET/USDT:USDT | +32.32% | $26,340,898.44 |
+| EDEN/USDT:USDT | +25.19% | $33,824,648.27 |
+| ACE/USDT:USDT | +24.69% | $4,795,665.11 |
+| AKE/USDT:USDT | +23.90% | $61,387,471.86 |
+| WDAYSTOCK/USDT:USDT | +18.77% | $1,571,217.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.86% | +2.80% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.40% | +2.34% |
-| UB/USDT:USDT | below_1h_threshold | +2.30% | +2.25% |
-| CAP/USDT:USDT | below_1h_threshold | +2.18% | +2.13% |
-| HOME/USDT:USDT | below_1h_threshold | +1.73% | +1.67% |
+| UB/USDT:USDT | below_1h_threshold | +2.91% | +2.90% |
+| CAP/USDT:USDT | below_1h_threshold | +2.89% | +2.89% |
+| BR/USDT:USDT | below_1h_threshold | +2.32% | +2.31% |
+| H/USDT:USDT | below_1h_threshold | +2.28% | +2.28% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.24% | +2.24% |
 
 ## 7. 次に見るべき不足
 
