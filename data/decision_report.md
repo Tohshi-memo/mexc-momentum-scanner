@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-14T09:26:30.312128+00:00
+- generated_at: 2026-08-14T09:31:28.739833+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11521**
+- closed shadow trades: **11522**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=11521, expectancy=-0.01%
+- 全期間 MARKET基準: n=11522, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,9 +33,9 @@
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +0.60% | **+0.60%** |
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +0.51% | **+0.46%** |
-| LIMIT_FIB1618_LONG | 3/20 | 15.0% | -0.00% | **-0.00%** |
-| LIMIT_7PCT_LONG | 9/20 | 45.0% | -0.03% | **-0.02%** |
-| LIMIT_9PCT_LONG | 6/20 | 30.0% | -0.30% | **-0.09%** |
+| LIMIT_5PCT_LONG | 10/20 | 50.0% | -0.32% | **-0.16%** |
+| LIMIT_2PCT_LONG | 15/20 | 75.0% | -0.25% | **-0.19%** |
+| LIMIT_FIB1618_LONG | 4/20 | 20.0% | -1.00% | **-0.20%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,56 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$610.27** / 初期 $100.00 (+510.27%)
-- 確定: 3989件 (Win 1244 / Loss 1307 / Flat 1438) / skip 4093件
-- 成長率目線: 平均log +0.000453 / 幾何平均 +0.045% per trade / maxDD +8.13%
+- 残高: **$607.22** / 初期 $100.00 (+507.22%)
+- 確定: 3990件 (Win 1244 / Loss 1308 / Flat 1438) / skip 4093件
+- 成長率目線: 平均log +0.000452 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: VELVET/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $610.27
+- 最新: EDEN/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $607.22
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$149.41** / 初期 $100.00 (+49.41%)
-- 確定: 1651件 (Win 471 / Loss 398 / Flat 782) / skip 3281件
+- 確定: 1651件 (Win 471 / Loss 398 / Flat 782) / skip 3282件
 - 成長率目線: 平均log +0.000243 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0923 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `LIMIT_5PCT` SL_HIT account -0.35% 残高後 $149.41
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$116.83** / 初期 $100.00 (+16.83%)
-- 確定: 1482件 (Win 440 / Loss 561 / Flat 481) / pending 6件 / skip 1506件
+- 残高: **$116.63** / 初期 $100.00 (+16.63%)
+- 確定: 1483件 (Win 440 / Loss 562 / Flat 481) / pending 5件 / skip 1506件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000214 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: VELVET/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $116.83
+- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000171 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: EDEN/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $116.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T09:26:20.338035+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=62872.8
+- 更新: 2026-08-14T09:31:16.183060+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=62752.8
 - Funnel: target 981 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.6 >= 65=1
+- Strict後reject: 4h RSI 80.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +45.48% | $9,024,096.20 |
-| VELVET/USDT:USDT | +29.84% | $29,639,748.84 |
-| EDEN/USDT:USDT | +18.46% | $35,355,262.97 |
-| AKE/USDT:USDT | +18.30% | $63,893,797.65 |
-| WDAYSTOCK/USDT:USDT | +18.09% | $1,630,402.60 |
+| ACE/USDT:USDT | +48.02% | $9,451,820.89 |
+| VELVET/USDT:USDT | +31.87% | $29,807,994.24 |
+| AKE/USDT:USDT | +19.46% | $63,990,589.55 |
+| WDAYSTOCK/USDT:USDT | +18.06% | $1,630,992.04 |
+| 2Z/USDT:USDT | +17.43% | $1,504,023.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.98% | +3.03% |
-| 2Z/USDT:USDT | below_1h_threshold | +2.76% | +2.81% |
-| GPS/USDT:USDT | below_1h_threshold | +2.42% | +2.47% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.70% |
-| NIL/USDT:USDT | below_1h_threshold | +1.10% | +1.15% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.98% | +3.22% |
+| 2Z/USDT:USDT | below_1h_threshold | +2.65% | +2.89% |
+| GPS/USDT:USDT | below_1h_threshold | +2.36% | +2.60% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.89% |
+| AEON1/USDT:USDT | below_1h_threshold | +1.27% | +1.51% |
 
 ## 7. 次に見るべき不足
 
