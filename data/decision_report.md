@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T07:01:19.517094+00:00
+- generated_at: 2026-08-14T07:06:17.580951+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11517**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T07:01:11.630054+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=62935.0
-- Funnel: target 981 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-14T07:06:09.932783+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63009.2
+- Funnel: target 981 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +40.20% | $23,300,455.48 |
-| EDEN/USDT:USDT | +27.85% | $33,284,477.17 |
-| ACE/USDT:USDT | +24.02% | $4,124,215.02 |
-| AKE/USDT:USDT | +22.15% | $60,444,379.63 |
-| WDAYSTOCK/USDT:USDT | +18.40% | $1,567,370.97 |
+| VELVET/USDT:USDT | +43.80% | $23,598,135.92 |
+| EDEN/USDT:USDT | +28.29% | $33,315,469.51 |
+| ACE/USDT:USDT | +24.78% | $4,267,748.85 |
+| 2Z/USDT:USDT | +19.97% | $1,001,137.28 |
+| AKE/USDT:USDT | +19.72% | $60,557,107.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +1.28% | +1.29% |
-| AVAAI/USDT:USDT | below_1h_threshold | +1.00% | +1.02% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.96% | +0.97% |
-| HOME/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.63% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.34% | +2.24% |
+| HOME/USDT:USDT | below_1h_threshold | +1.58% | +1.47% |
+| ACE/USDT:USDT | below_1h_threshold | +1.09% | +0.98% |
+| PROM/USDT:USDT | below_1h_threshold | +1.03% | +0.93% |
+| UB/USDT:USDT | below_1h_threshold | +0.97% | +0.87% |
 
 ## 7. 次に見るべき不足
 
