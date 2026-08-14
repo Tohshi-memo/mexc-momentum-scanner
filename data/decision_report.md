@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T23:41:25.894094+00:00
+- generated_at: 2026-08-14T23:46:37.938825+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11618**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T23:41:15.082068+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=62955.2
+- 更新: 2026-08-14T23:46:29.366609+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=62989.8
 - Funnel: target 985 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +22.33% | $6,777,718.04 |
-| ACE/USDT:USDT | +16.64% | $76,726,111.74 |
-| ONE/USDT:USDT | +14.13% | $1,090,647.32 |
-| DOLO/USDT:USDT | +14.05% | $1,651,008.86 |
-| HEI/USDT:USDT | +12.60% | $5,996,590.54 |
+| US/USDT:USDT | +20.69% | $6,793,764.54 |
+| ONE/USDT:USDT | +16.45% | $1,100,185.27 |
+| HEI/USDT:USDT | +14.19% | $6,131,502.07 |
+| ACE/USDT:USDT | +13.15% | $77,358,281.53 |
+| DOLO/USDT:USDT | +12.55% | $1,651,845.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +3.28% | +3.12% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.06% | +1.90% |
-| JTO/USDT:USDT | below_1h_threshold | +1.79% | +1.64% |
-| TIA/USDT:USDT | below_1h_threshold | +1.26% | +1.10% |
-| WIF/USDT:USDT | below_1h_threshold | +1.24% | +1.09% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.36% | +2.15% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.17% | +1.96% |
+| JTO/USDT:USDT | below_1h_threshold | +2.15% | +1.94% |
+| RE/USDT:USDT | below_1h_threshold | +1.53% | +1.32% |
+| TIA/USDT:USDT | below_1h_threshold | +1.49% | +1.28% |
 
 ## 7. 次に見るべき不足
 
