@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T16:36:25.710316+00:00
+- generated_at: 2026-08-14T16:41:28.520382+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11576**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T16:36:15.471485+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=63146.8
+- 更新: 2026-08-14T16:41:17.902168+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=63172.1
 - Funnel: target 985 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +7.28% | $5,241,348.81 |
-| ACE/USDT:USDT | +3.74% | $49,624,125.62 |
-| MANA/USDT:USDT | +2.67% | $1,460,694.86 |
-| CROSS/USDT:USDT | +1.74% | $2,425,953.37 |
-| BSV/USDT:USDT | +1.45% | $1,232,641.10 |
+| US/USDT:USDT | +6.13% | $5,275,577.81 |
+| ACE/USDT:USDT | +3.86% | $49,966,461.33 |
+| MANA/USDT:USDT | +3.02% | $1,462,641.82 |
+| GPS/USDT:USDT | +2.03% | $1,102,869.01 |
+| NBISSTOCK/USDT:USDT | +1.77% | $9,887,070.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +3.63% | +3.33% |
-| MANA/USDT:USDT | below_1h_threshold | +2.68% | +2.37% |
-| CROSS/USDT:USDT | below_1h_threshold | +1.93% | +1.63% |
-| BSV/USDT:USDT | below_1h_threshold | +1.46% | +1.15% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.15% |
+| ACE/USDT:USDT | below_1h_threshold | +4.10% | +3.75% |
+| MANA/USDT:USDT | below_1h_threshold | +3.02% | +2.68% |
+| GPS/USDT:USDT | below_1h_threshold | +2.01% | +1.67% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.64% | +1.29% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.62% | +1.28% |
 
 ## 7. 次に見るべき不足
 
