@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T15:21:22.378051+00:00
+- generated_at: 2026-08-14T15:26:21.129878+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11568**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T15:21:13.986236+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=62684.6
+- 更新: 2026-08-14T15:26:12.600873+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=62710.7
 - Funnel: target 985 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +141.29% | $42,561,657.96 |
-| AKE/USDT:USDT | +58.14% | $67,897,256.40 |
-| CROSS/USDT:USDT | +45.26% | $2,104,654.36 |
-| VELVET/USDT:USDT | +36.25% | $40,322,637.24 |
-| CAP/USDT:USDT | +25.35% | $7,757,799.66 |
+| ACE/USDT:USDT | +141.29% | $43,117,846.25 |
+| AKE/USDT:USDT | +58.83% | $68,263,650.72 |
+| CROSS/USDT:USDT | +45.71% | $2,114,336.77 |
+| VELVET/USDT:USDT | +29.40% | $40,481,169.73 |
+| H/USDT:USDT | +23.75% | $3,285,702.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.77% | +4.61% |
-| CROSS/USDT:USDT | below_1h_threshold | +3.20% | +3.03% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.19% |
-| DOS/USDT:USDT | below_1h_threshold | +2.30% | +2.14% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.21% | +2.05% |
+| CROSS/USDT:USDT | below_1h_threshold | +3.64% | +3.43% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.36% | +3.15% |
+| DOS/USDT:USDT | below_1h_threshold | +3.32% | +3.12% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.99% | +2.78% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.15% |
 
 ## 7. 次に見るべき不足
 
