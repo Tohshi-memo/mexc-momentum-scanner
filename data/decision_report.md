@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T14:46:32.601111+00:00
+- generated_at: 2026-08-14T14:51:30.456972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11565**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T14:46:22.086994+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=62742.7
-- Funnel: target 985 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.4 >= 65=1, 4h RSI 69.4 >= 65=1
+- 更新: 2026-08-14T14:51:22.438071+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=62707.2
+- Funnel: target 985 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1, 4h RSI 69.2 >= 65=1, 4h RSI 91.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +132.52% | $39,930,989.58 |
-| AKE/USDT:USDT | +71.42% | $69,818,062.47 |
-| CROSS/USDT:USDT | +37.37% | $1,954,947.99 |
-| VELVET/USDT:USDT | +32.26% | $40,218,220.82 |
-| HEI/USDT:USDT | +25.61% | $3,009,066.39 |
+| ACE/USDT:USDT | +137.72% | $40,260,096.43 |
+| AKE/USDT:USDT | +76.39% | $70,171,856.67 |
+| CROSS/USDT:USDT | +38.57% | $1,962,621.62 |
+| VELVET/USDT:USDT | +32.04% | $40,390,577.83 |
+| H/USDT:USDT | +25.80% | $3,283,025.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.76% | +3.59% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.55% | +3.38% |
-| ACE/USDT:USDT | below_1h_threshold | +3.54% | +3.37% |
-| TESLA/USDT:USDT | below_1h_threshold | +2.55% | +2.38% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.29% | +2.13% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.80% | +3.69% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.55% | +3.44% |
+| TESLA/USDT:USDT | below_1h_threshold | +2.55% | +2.44% |
+| BTW/USDT:USDT | below_1h_threshold | +2.47% | +2.36% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.29% | +2.18% |
 
 ## 7. 次に見るべき不足
 
