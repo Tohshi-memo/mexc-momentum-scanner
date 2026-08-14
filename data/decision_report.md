@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T22:31:25.223424+00:00
+- generated_at: 2026-08-14T22:36:31.835407+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11610**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T22:31:14.151468+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=62811.0
+- 更新: 2026-08-14T22:36:20.895508+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=62845.0
 - Funnel: target 985 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.0 >= 65=1
+- Strict後reject: 4h RSI 94.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +34.51% | $70,639,506.84 |
-| US/USDT:USDT | +26.21% | $6,818,226.67 |
-| DOLO/USDT:USDT | +16.70% | $1,612,515.89 |
-| GUN/USDT:USDT | +12.25% | $1,005,238.07 |
-| ACU/USDT:USDT | +10.27% | $1,878,629.24 |
+| ACE/USDT:USDT | +30.82% | $71,138,340.63 |
+| US/USDT:USDT | +23.23% | $6,846,246.61 |
+| DOLO/USDT:USDT | +14.01% | $1,617,925.54 |
+| GUN/USDT:USDT | +11.61% | $1,006,180.51 |
+| ACU/USDT:USDT | +10.98% | $1,888,019.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.11% | +4.25% |
-| BTW/USDT:USDT | below_1h_threshold | +2.07% | +2.21% |
-| 2Z/USDT:USDT | below_1h_threshold | +1.89% | +2.03% |
-| JTO/USDT:USDT | below_1h_threshold | +1.73% | +1.87% |
-| SYN/USDT:USDT | below_1h_threshold | +1.64% | +1.77% |
+| CYS/USDT:USDT | below_1h_threshold | +2.95% | +3.03% |
+| ACU/USDT:USDT | below_1h_threshold | +2.23% | +2.32% |
+| BTW/USDT:USDT | below_1h_threshold | +2.15% | +2.23% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.85% | +1.93% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.60% | +1.68% |
 
 ## 7. 次に見るべき不足
 
