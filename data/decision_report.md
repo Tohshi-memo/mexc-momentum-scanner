@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T17:11:19.981594+00:00
+- generated_at: 2026-08-14T17:16:37.612166+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11578**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.64** / 初期 $100.00 (+17.64%)
-- 確定: 1535件 (Win 467 / Loss 586 / Flat 482) / pending 5件 / skip 1512件
+- 確定: 1535件 (Win 467 / Loss 586 / Flat 482) / pending 6件 / skip 1512件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000227 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACU/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $117.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T17:11:12.029606+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63102.1
-- Funnel: target 985 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-14T17:16:29.267526+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=63137.2
+- Funnel: target 985 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +17.00% | $5,583,791.66 |
-| CAP/USDT:USDT | +7.43% | $10,925,149.10 |
-| ACE/USDT:USDT | +5.40% | $51,326,645.24 |
-| ACU/USDT:USDT | +5.37% | $2,631,817.19 |
-| NBISSTOCK/USDT:USDT | +4.14% | $9,459,620.67 |
+| US/USDT:USDT | +15.83% | $5,648,799.97 |
+| CAP/USDT:USDT | +10.28% | $11,077,045.95 |
+| ACU/USDT:USDT | +5.74% | $2,653,146.75 |
+| ACE/USDT:USDT | +5.68% | $51,575,843.10 |
+| NBISSTOCK/USDT:USDT | +3.90% | $9,514,833.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +3.80% | +3.81% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.30% | +3.31% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.96% | +2.96% |
-| US/USDT:USDT | below_1h_threshold | +2.36% | +2.37% |
-| ACE/USDT:USDT | below_1h_threshold | +1.39% | +1.40% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.55% | +3.51% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.30% | +3.25% |
+| ACE/USDT:USDT | below_1h_threshold | +1.78% | +1.73% |
+| US/USDT:USDT | below_1h_threshold | +1.39% | +1.34% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.31% | +1.26% |
 
 ## 7. 次に見るべき不足
 
