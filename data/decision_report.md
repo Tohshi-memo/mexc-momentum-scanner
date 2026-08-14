@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T04:01:22.064249+00:00
+- generated_at: 2026-08-14T04:06:19.251596+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11503**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T04:01:12.515253+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63262.6
+- 更新: 2026-08-14T04:06:10.952001+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63352.5
 - Funnel: target 979 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +63.40% | $28,682,488.14 |
-| AEON1/USDT:USDT | +18.73% | $1,506,090.44 |
-| WDAYSTOCK/USDT:USDT | +18.60% | $1,520,048.91 |
-| PROM/USDT:USDT | +16.47% | $2,742,980.07 |
-| US/USDT:USDT | +16.37% | $5,957,850.79 |
+| EDEN/USDT:USDT | +59.67% | $28,808,676.10 |
+| AEON1/USDT:USDT | +19.48% | $1,508,574.92 |
+| WDAYSTOCK/USDT:USDT | +18.42% | $1,520,412.62 |
+| AKE/USDT:USDT | +16.82% | $56,333,889.60 |
+| H/USDT:USDT | +15.93% | $1,571,244.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +0.45% | +0.49% |
-| EDEN/USDT:USDT | below_1h_threshold | +0.38% | +0.42% |
-| SMRSTOCK/USDT:USDT | below_1h_threshold | +0.35% | +0.40% |
-| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.35% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.28% | +0.32% |
+| AKE/USDT:USDT | below_1h_threshold | +1.38% | +1.28% |
+| APR/USDT:USDT | below_1h_threshold | +1.27% | +1.17% |
+| AEON1/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.83% | +0.72% |
+| HOME/USDT:USDT | below_1h_threshold | +0.71% | +0.61% |
 
 ## 7. 次に見るべき不足
 
