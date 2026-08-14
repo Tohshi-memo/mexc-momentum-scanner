@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T12:46:27.923409+00:00
+- generated_at: 2026-08-14T12:51:20.778532+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11552**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T12:46:20.556354+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=62745.0
-- Funnel: target 981 → liquid 184 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 76.0 >= 65=1
+- 更新: 2026-08-14T12:51:12.325729+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=62780.0
+- Funnel: target 981 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +106.62% | $29,798,014.84 |
-| AKE/USDT:USDT | +69.36% | $71,632,801.26 |
-| VELVET/USDT:USDT | +51.08% | $34,322,324.43 |
-| CROSS/USDT:USDT | +33.08% | $1,184,380.41 |
-| CAP/USDT:USDT | +24.87% | $4,746,372.13 |
+| ACE/USDT:USDT | +117.83% | $30,201,827.55 |
+| AKE/USDT:USDT | +73.66% | $71,933,144.53 |
+| VELVET/USDT:USDT | +52.76% | $34,457,193.33 |
+| CROSS/USDT:USDT | +33.15% | $1,208,948.44 |
+| CAP/USDT:USDT | +23.15% | $4,796,692.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +4.70% | +4.84% |
-| APR/USDT:USDT | below_1h_threshold | +2.73% | +2.87% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.54% | +2.69% |
-| CHYMSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +2.11% |
-| MMT/USDT:USDT | below_1h_threshold | +1.81% | +1.96% |
+| AVAAI/USDT:USDT | below_1h_threshold | +4.54% | +4.64% |
+| HEI/USDT:USDT | below_1h_threshold | +3.33% | +3.42% |
+| AKE/USDT:USDT | below_1h_threshold | +2.65% | +2.74% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.31% | +2.40% |
+| CHYMSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +2.05% |
 
 ## 7. 次に見るべき不足
 
