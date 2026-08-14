@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T15:01:23.146387+00:00
+- generated_at: 2026-08-14T15:06:26.313530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11567**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.66** / 初期 $100.00 (+17.66%)
-- 確定: 1527件 (Win 464 / Loss 582 / Flat 481) / pending 5件 / skip 1509件
+- 確定: 1527件 (Win 464 / Loss 582 / Flat 481) / pending 6件 / skip 1509件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000195 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $117.66
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T15:01:13.238138+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=62620.0
-- Funnel: target 985 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-14T15:06:17.836592+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=62636.1
+- Funnel: target 985 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +146.60% | $41,238,502.01 |
-| AKE/USDT:USDT | +66.86% | $66,780,881.97 |
-| CROSS/USDT:USDT | +40.91% | $1,988,352.41 |
-| VELVET/USDT:USDT | +34.10% | $40,031,324.75 |
-| CAP/USDT:USDT | +28.38% | $7,247,717.58 |
+| ACE/USDT:USDT | +150.08% | $41,605,077.36 |
+| AKE/USDT:USDT | +59.71% | $67,228,960.16 |
+| CROSS/USDT:USDT | +44.60% | $2,020,192.83 |
+| VELVET/USDT:USDT | +34.41% | $40,113,849.50 |
+| H/USDT:USDT | +25.02% | $3,241,472.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +2.49% | +2.43% |
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.29% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.13% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.08% | +1.02% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.68% | +0.62% |
+| CROSS/USDT:USDT | below_1h_threshold | +2.82% | +2.73% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.27% |
+| APR/USDT:USDT | below_1h_threshold | +1.96% | +1.88% |
+| H/USDT:USDT | below_1h_threshold | +1.65% | +1.57% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.20% | +1.11% |
 
 ## 7. 次に見るべき不足
 
