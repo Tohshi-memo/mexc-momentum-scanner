@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T21:41:16.740774+00:00
+- generated_at: 2026-08-14T21:46:25.946986+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11608**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T21:41:10.443739+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=62880.1
+- 更新: 2026-08-14T21:46:19.229485+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62858.6
 - Funnel: target 985 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +20.10% | $65,852,976.23 |
-| US/USDT:USDT | +18.08% | $6,793,330.73 |
-| DOLO/USDT:USDT | +15.60% | $1,563,580.35 |
-| VELVET/USDT:USDT | +10.71% | $42,168,866.69 |
-| CAP/USDT:USDT | +8.57% | $20,876,001.69 |
+| US/USDT:USDT | +21.81% | $6,813,019.11 |
+| ACE/USDT:USDT | +20.39% | $66,004,675.21 |
+| DOLO/USDT:USDT | +15.06% | $1,569,998.86 |
+| CAP/USDT:USDT | +9.61% | $20,888,710.25 |
+| ACU/USDT:USDT | +8.33% | $2,111,099.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.60% | +4.60% |
-| ACE/USDT:USDT | below_1h_threshold | +4.56% | +4.56% |
-| ONE/USDT:USDT | below_1h_threshold | +2.11% | +2.10% |
-| H/USDT:USDT | below_1h_threshold | +2.04% | +2.04% |
-| CAP/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
+| ACE/USDT:USDT | below_1h_threshold | +4.56% | +4.59% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.53% | +2.56% |
+| CAP/USDT:USDT | below_1h_threshold | +2.51% | +2.54% |
+| ONE/USDT:USDT | below_1h_threshold | +1.95% | +1.99% |
+| H/USDT:USDT | below_1h_threshold | +1.59% | +1.62% |
 
 ## 7. 次に見るべき不足
 
