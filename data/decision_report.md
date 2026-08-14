@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T00:41:20.414540+00:00
+- generated_at: 2026-08-14T00:46:19.954827+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11498**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.27** / 初期 $100.00 (+16.27%)
-- 確定: 1469件 (Win 433 / Loss 556 / Flat 480) / pending 1件 / skip 1497件
+- 確定: 1469件 (Win 433 / Loss 556 / Flat 480) / pending 1件 / skip 1498件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000146 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AVAAI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $116.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T00:41:12.128695+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63429.2
-- Funnel: target 978 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-14T00:46:11.365586+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63493.6
+- Funnel: target 978 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +50.82% | $18,773,365.58 |
-| US/USDT:USDT | +27.10% | $5,675,095.92 |
-| PROM/USDT:USDT | +20.39% | $2,792,079.38 |
-| WDAYSTOCK/USDT:USDT | +17.87% | $1,209,582.37 |
-| BLESS/USDT:USDT | +12.55% | $9,940,900.88 |
+| EDEN/USDT:USDT | +53.36% | $19,001,386.11 |
+| US/USDT:USDT | +26.46% | $5,681,451.99 |
+| WDAYSTOCK/USDT:USDT | +18.40% | $1,211,995.95 |
+| PROM/USDT:USDT | +18.38% | $2,810,321.56 |
+| BLESS/USDT:USDT | +12.69% | $9,965,901.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +4.85% | +4.90% |
-| EDEN/USDT:USDT | below_1h_threshold | +4.67% | +4.72% |
-| US/USDT:USDT | below_1h_threshold | +4.34% | +4.38% |
-| PROM/USDT:USDT | below_1h_threshold | +4.15% | +4.19% |
-| ACE/USDT:USDT | below_1h_threshold | +2.61% | +2.65% |
+| US/USDT:USDT | below_1h_threshold | +3.86% | +3.80% |
+| MMT/USDT:USDT | below_1h_threshold | +3.71% | +3.66% |
+| ACE/USDT:USDT | below_1h_threshold | +2.83% | +2.77% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.64% | +2.58% |
+| BR/USDT:USDT | below_1h_threshold | +2.52% | +2.46% |
 
 ## 7. 次に見るべき不足
 
