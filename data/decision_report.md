@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T16:46:22.880319+00:00
+- generated_at: 2026-08-14T16:51:35.391714+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11576**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.64** / 初期 $100.00 (+17.64%)
-- 確定: 1534件 (Win 467 / Loss 586 / Flat 481) / pending 5件 / skip 1511件
+- 確定: 1534件 (Win 467 / Loss 586 / Flat 481) / pending 6件 / skip 1511件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EDEN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T16:46:14.595950+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=63166.5
-- Funnel: target 985 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-14T16:51:22.157620+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=63099.1
+- Funnel: target 985 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +5.40% | $5,302,797.36 |
-| ACU/USDT:USDT | +3.31% | $2,707,689.32 |
-| MANA/USDT:USDT | +2.72% | $1,489,075.98 |
-| NBISSTOCK/USDT:USDT | +1.95% | $9,895,177.86 |
-| ACE/USDT:USDT | +1.77% | $50,311,437.48 |
+| US/USDT:USDT | +9.35% | $5,352,462.49 |
+| ACU/USDT:USDT | +6.60% | $2,718,968.20 |
+| ACE/USDT:USDT | +2.60% | $50,555,574.20 |
+| AEON1/USDT:USDT | +2.39% | $2,258,440.87 |
+| MANA/USDT:USDT | +2.37% | $1,492,943.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_relative_strength | +5.19% | +4.85% |
-| ACU/USDT:USDT | below_1h_threshold | +3.31% | +2.98% |
-| MANA/USDT:USDT | below_1h_threshold | +2.72% | +2.39% |
-| ACE/USDT:USDT | below_1h_threshold | +2.10% | +1.77% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.63% | +1.29% |
+| ACE/USDT:USDT | below_1h_threshold | +2.95% | +2.72% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.80% | +2.57% |
+| MANA/USDT:USDT | below_1h_threshold | +2.38% | +2.15% |
+| AVNT/USDT:USDT | below_1h_threshold | +1.72% | +1.50% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.23% |
 
 ## 7. 次に見るべき不足
 
