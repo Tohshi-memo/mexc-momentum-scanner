@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T18:31:30.747434+00:00
+- generated_at: 2026-08-14T18:36:22.605936+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11595**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T18:31:19.536552+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63003.3
+- 更新: 2026-08-14T18:36:11.904002+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=62941.0
 - Funnel: target 985 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOLO/USDT:USDT | +36.46% | $1,048,743.54 |
-| US/USDT:USDT | +27.13% | $6,623,724.82 |
-| ACE/USDT:USDT | +10.86% | $56,114,371.93 |
-| AKE/USDT:USDT | +9.21% | $77,730,472.86 |
-| ACU/USDT:USDT | +5.55% | $2,520,507.10 |
+| DOLO/USDT:USDT | +33.95% | $1,076,863.57 |
+| US/USDT:USDT | +21.88% | $6,674,500.38 |
+| ACE/USDT:USDT | +11.39% | $56,294,914.30 |
+| ACU/USDT:USDT | +5.85% | $2,524,254.59 |
+| AVNT/USDT:USDT | +3.83% | $2,769,983.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.30% | +3.28% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.48% | +2.46% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.43% | +2.40% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.62% |
-| RE/USDT:USDT | below_1h_threshold | +1.62% | +1.60% |
+| BTW/USDT:USDT | below_1h_threshold | +3.07% | +3.15% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.50% | +2.57% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.38% | +2.46% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.72% |
+| RE/USDT:USDT | below_1h_threshold | +1.60% | +1.67% |
 
 ## 7. 次に見るべき不足
 
