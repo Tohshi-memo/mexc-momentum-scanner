@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T12:21:22.694243+00:00
+- generated_at: 2026-08-14T12:26:27.263947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11551**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T12:21:14.079386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=62807.0
-- Funnel: target 981 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-14T12:26:18.789940+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=62846.4
+- Funnel: target 981 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +116.31% | $27,200,663.84 |
-| AKE/USDT:USDT | +64.64% | $69,963,220.06 |
-| VELVET/USDT:USDT | +43.62% | $33,159,376.52 |
-| CROSS/USDT:USDT | +37.68% | $1,003,326.17 |
-| H/USDT:USDT | +25.54% | $2,737,109.99 |
+| ACE/USDT:USDT | +109.03% | $27,926,868.44 |
+| AKE/USDT:USDT | +66.62% | $70,291,767.58 |
+| VELVET/USDT:USDT | +47.71% | $33,307,463.88 |
+| CROSS/USDT:USDT | +39.76% | $1,024,332.27 |
+| H/USDT:USDT | +25.29% | $2,760,797.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAAI/USDT:USDT | below_1h_threshold | +4.02% | +4.07% |
-| CROSS/USDT:USDT | below_1h_threshold | +2.49% | +2.53% |
-| CHYMSTOCK/USDT:USDT | below_1h_threshold | +1.96% | +2.01% |
-| H/USDT:USDT | below_1h_threshold | +1.81% | +1.86% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.71% | +1.76% |
+| APR/USDT:USDT | below_1h_threshold | +4.31% | +4.30% |
+| CROSS/USDT:USDT | below_1h_threshold | +4.09% | +4.07% |
+| VELVET/USDT:USDT | below_1h_threshold | +4.08% | +4.07% |
+| AVAAI/USDT:USDT | below_1h_threshold | +2.77% | +2.76% |
+| DOS/USDT:USDT | below_1h_threshold | +2.00% | +1.99% |
 
 ## 7. 次に見るべき不足
 
