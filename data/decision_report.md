@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T19:56:49.576970+00:00
+- generated_at: 2026-08-14T20:01:26.895311+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11600**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T19:56:35.264260+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=62942.4
-- Funnel: target 985 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.5 >= 65=1, 4h RSI 75.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-14T20:01:18.721926+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=62937.9
+- Funnel: target 985 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOLO/USDT:USDT | +23.27% | $1,374,110.00 |
-| US/USDT:USDT | +21.63% | $6,953,931.49 |
-| ACE/USDT:USDT | +13.37% | $59,832,396.12 |
-| ACU/USDT:USDT | +7.20% | $2,244,752.08 |
-| VELVET/USDT:USDT | +7.11% | $41,605,534.14 |
+| DOLO/USDT:USDT | +21.99% | $1,373,427.82 |
+| US/USDT:USDT | +21.81% | $6,591,245.76 |
+| ACE/USDT:USDT | +11.66% | $59,926,577.24 |
+| ACU/USDT:USDT | +7.45% | $2,062,865.04 |
+| EDEN/USDT:USDT | +6.52% | $36,252,729.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.01% | +3.94% |
-| DOLO/USDT:USDT | below_1h_threshold | +2.62% | +2.55% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.58% | +2.52% |
-| ONE/USDT:USDT | below_1h_threshold | +2.03% | +1.97% |
-| BTW/USDT:USDT | below_1h_threshold | +1.93% | +1.86% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.73% | +2.73% |
+| MUU/USDT:USDT | below_1h_threshold | +1.79% | +1.79% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.29% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.25% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
 
 ## 7. 次に見るべき不足
 
