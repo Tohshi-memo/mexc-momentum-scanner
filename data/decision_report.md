@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T23:16:21.456312+00:00
+- generated_at: 2026-08-14T23:21:20.885197+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11618**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T23:16:11.629645+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=62910.9
+- 更新: 2026-08-14T23:21:12.498680+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=62854.4
 - Funnel: target 985 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +22.59% | $6,723,366.05 |
-| ACE/USDT:USDT | +17.14% | $75,283,257.87 |
-| DOLO/USDT:USDT | +13.64% | $1,644,279.72 |
-| ONE/USDT:USDT | +13.04% | $1,019,909.19 |
-| HEI/USDT:USDT | +12.32% | $5,470,548.46 |
+| US/USDT:USDT | +24.78% | $6,737,995.82 |
+| ACE/USDT:USDT | +19.88% | $75,780,551.55 |
+| DOLO/USDT:USDT | +13.69% | $1,645,020.22 |
+| HEI/USDT:USDT | +12.95% | $5,606,232.74 |
+| GUN/USDT:USDT | +11.38% | $1,032,139.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.01% | +3.92% |
-| RE/USDT:USDT | below_1h_threshold | +1.28% | +1.19% |
-| US/USDT:USDT | below_1h_threshold | +1.17% | +1.08% |
-| BTW/USDT:USDT | below_1h_threshold | +0.90% | +0.81% |
-| EDEN/USDT:USDT | below_1h_threshold | +0.86% | +0.77% |
+| US/USDT:USDT | below_1h_threshold | +3.03% | +3.03% |
+| ONE/USDT:USDT | below_1h_threshold | +1.86% | +1.86% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.78% | +1.79% |
+| CYS/USDT:USDT | below_1h_threshold | +1.49% | +1.49% |
+| RE/USDT:USDT | below_1h_threshold | +1.10% | +1.10% |
 
 ## 7. 次に見るべき不足
 
