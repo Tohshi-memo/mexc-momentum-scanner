@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T18:01:30.596348+00:00
+- generated_at: 2026-08-14T18:06:35.895344+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11587**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.23** / 初期 $100.00 (+17.23%)
-- 確定: 1541件 (Win 468 / Loss 589 / Flat 484) / pending 6件 / skip 1515件
+- 確定: 1541件 (Win 468 / Loss 589 / Flat 484) / pending 6件 / skip 1516件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000260 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $117.23
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T18:01:20.591028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=62985.0
-- Funnel: target 985 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-14T18:06:24.977994+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=63024.4
+- Funnel: target 985 → liquid 173 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +15.34% | $69,245,087.86 |
-| ACE/USDT:USDT | +10.48% | $54,279,106.77 |
-| CAP/USDT:USDT | +8.86% | $13,943,737.25 |
-| US/USDT:USDT | +8.70% | $5,929,862.10 |
-| AVNT/USDT:USDT | +5.74% | $2,711,321.12 |
+| US/USDT:USDT | +23.72% | $6,151,813.31 |
+| AKE/USDT:USDT | +22.18% | $69,794,452.08 |
+| ACE/USDT:USDT | +10.18% | $54,588,864.99 |
+| BANK/USDT:USDT | +5.52% | $2,256,875.51 |
+| ACU/USDT:USDT | +4.35% | $2,490,588.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.93% | +0.93% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
-| EIGEN/USDT:USDT | below_1h_threshold | +0.58% | +0.59% |
-| BANK/USDT:USDT | below_1h_threshold | +0.49% | +0.49% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.58% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.93% | +0.87% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.85% | +0.79% |
+| VELVET/USDT:USDT | below_1h_threshold | +0.85% | +0.79% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
 
 ## 7. 次に見るべき不足
 
