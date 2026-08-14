@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T23:53:08.030449+00:00
+- generated_at: 2026-08-14T23:56:17.414819+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11618**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T23:52:59.689427+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=63001.3
+- 更新: 2026-08-14T23:56:09.513447+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=63014.9
 - Funnel: target 985 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +20.08% | $6,801,214.50 |
-| ONE/USDT:USDT | +14.13% | $1,116,777.47 |
-| DOLO/USDT:USDT | +11.68% | $1,658,012.45 |
-| HEI/USDT:USDT | +11.28% | $6,244,365.21 |
-| GUN/USDT:USDT | +11.24% | $1,039,062.48 |
+| US/USDT:USDT | +19.54% | $6,807,321.48 |
+| ONE/USDT:USDT | +13.50% | $1,120,102.49 |
+| DOLO/USDT:USDT | +11.59% | $1,662,851.93 |
+| GUN/USDT:USDT | +10.84% | $1,041,120.53 |
+| CAP/USDT:USDT | +8.17% | $21,065,878.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_relative_strength | +5.15% | +4.92% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.48% | +2.25% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.31% | +2.08% |
-| JTO/USDT:USDT | below_1h_threshold | +2.28% | +2.05% |
-| INJ/USDT:USDT | below_1h_threshold | +1.73% | +1.50% |
+| ONE/USDT:USDT | below_1h_threshold | +4.72% | +4.47% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.34% | +2.09% |
+| JTO/USDT:USDT | below_1h_threshold | +2.19% | +1.93% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.05% | +1.80% |
+| TIA/USDT:USDT | below_1h_threshold | +1.39% | +1.14% |
 
 ## 7. 次に見るべき不足
 
