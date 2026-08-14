@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T06:21:19.604027+00:00
+- generated_at: 2026-08-14T06:26:15.060266+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11515**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T06:21:12.982962+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=63197.6
+- 更新: 2026-08-14T06:26:06.807379+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=63185.3
 - Funnel: target 981 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +33.45% | $21,050,380.37 |
-| EDEN/USDT:USDT | +30.35% | $32,821,808.06 |
-| AKE/USDT:USDT | +25.65% | $59,594,372.41 |
-| PROM/USDT:USDT | +20.52% | $2,942,702.31 |
-| WDAYSTOCK/USDT:USDT | +19.78% | $1,568,305.38 |
+| VELVET/USDT:USDT | +31.46% | $21,360,824.21 |
+| EDEN/USDT:USDT | +28.91% | $32,875,362.33 |
+| AKE/USDT:USDT | +25.36% | $59,693,279.89 |
+| PROM/USDT:USDT | +20.48% | $2,947,313.74 |
+| WDAYSTOCK/USDT:USDT | +19.65% | $1,568,611.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAAI/USDT:USDT | below_1h_threshold | +4.55% | +4.81% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.61% | +3.86% |
-| AKE/USDT:USDT | below_1h_threshold | +3.09% | +3.35% |
-| US/USDT:USDT | below_1h_threshold | +2.53% | +2.79% |
-| KORU/USDT:USDT | below_1h_threshold | +1.49% | +1.74% |
+| US/USDT:USDT | below_1h_threshold | +3.58% | +3.85% |
+| AKE/USDT:USDT | below_1h_threshold | +3.02% | +3.29% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.52% | +2.79% |
+| CAP/USDT:USDT | below_1h_threshold | +1.93% | +2.20% |
+| KORU/USDT:USDT | below_1h_threshold | +1.49% | +1.76% |
 
 ## 7. 次に見るべき不足
 
