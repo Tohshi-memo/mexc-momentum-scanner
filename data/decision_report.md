@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T09:46:27.230151+00:00
+- generated_at: 2026-08-14T09:51:21.331743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11524**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T09:46:18.335458+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=62750.0
-- Funnel: target 981 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-08-14T09:51:12.676664+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=62790.2
+- Funnel: target 981 → liquid 178 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.8 >= 65=1, 4h RSI 72.7 >= 65=1
+- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 81.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +53.76% | $11,342,702.40 |
-| VELVET/USDT:USDT | +31.32% | $30,268,887.97 |
-| AKE/USDT:USDT | +20.38% | $64,178,422.20 |
-| EDEN/USDT:USDT | +19.42% | $35,647,287.10 |
-| WDAYSTOCK/USDT:USDT | +18.35% | $1,632,748.65 |
+| ACE/USDT:USDT | +48.67% | $11,740,500.22 |
+| VELVET/USDT:USDT | +34.30% | $30,374,993.52 |
+| AKE/USDT:USDT | +21.25% | $64,244,942.49 |
+| EDEN/USDT:USDT | +18.74% | $35,688,665.80 |
+| WDAYSTOCK/USDT:USDT | +18.29% | $1,633,088.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 2Z/USDT:USDT | below_1h_threshold | +3.22% | +3.46% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.98% | +3.23% |
-| BTW/USDT:USDT | below_1h_threshold | +1.82% | +2.07% |
-| CAP/USDT:USDT | below_1h_threshold | +1.76% | +2.01% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.65% | +1.89% |
+| BTW/USDT:USDT | below_1h_threshold | +3.25% | +3.44% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.98% | +3.17% |
+| 2Z/USDT:USDT | below_1h_threshold | +2.87% | +3.05% |
+| H/USDT:USDT | below_1h_threshold | +2.02% | +2.20% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.77% | +1.95% |
 
 ## 7. 次に見るべき不足
 
