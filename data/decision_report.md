@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T01:11:19.244854+00:00
+- generated_at: 2026-08-14T01:16:24.236113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11499**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T01:11:11.096810+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63488.1
+- 更新: 2026-08-14T01:16:16.194326+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=63462.1
 - Funnel: target 978 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +63.66% | $20,874,709.35 |
-| US/USDT:USDT | +19.36% | $5,734,125.44 |
-| WDAYSTOCK/USDT:USDT | +18.12% | $1,214,943.08 |
-| PROM/USDT:USDT | +17.63% | $2,796,003.79 |
-| BLESS/USDT:USDT | +12.01% | $9,829,960.46 |
+| EDEN/USDT:USDT | +64.77% | $21,271,670.30 |
+| US/USDT:USDT | +21.24% | $5,743,861.48 |
+| WDAYSTOCK/USDT:USDT | +17.90% | $1,215,286.15 |
+| PROM/USDT:USDT | +14.15% | $2,866,884.11 |
+| BLESS/USDT:USDT | +12.03% | $9,842,121.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MMT/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.89% | +1.93% |
-| SYN/USDT:USDT | below_1h_threshold | +1.78% | +1.82% |
-| WDAYSTOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.98% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.73% | +0.78% |
+| AKE/USDT:USDT | below_1h_threshold | +2.43% | +2.52% |
+| SYN/USDT:USDT | below_1h_threshold | +2.06% | +2.14% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.89% | +1.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.33% | +1.41% |
+| H/USDT:USDT | below_1h_threshold | +1.12% | +1.21% |
 
 ## 7. 次に見るべき不足
 
