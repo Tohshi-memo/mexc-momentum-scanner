@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T22:16:31.902297+00:00
+- generated_at: 2026-08-14T22:21:30.140697+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11610**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.61** / 初期 $100.00 (+17.61%)
-- 確定: 1558件 (Win 474 / Loss 597 / Flat 487) / pending 2件 / skip 1522件
+- 確定: 1558件 (Win 474 / Loss 597 / Flat 487) / pending 3件 / skip 1522件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000274 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $117.61
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T22:16:24.519112+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=62784.1
-- Funnel: target 985 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-14T22:21:21.329469+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=62808.5
+- Funnel: target 985 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +25.76% | $6,787,643.87 |
-| ACE/USDT:USDT | +25.48% | $68,258,714.74 |
-| DOLO/USDT:USDT | +16.29% | $1,600,456.31 |
-| ACU/USDT:USDT | +10.42% | $1,871,050.03 |
-| CAP/USDT:USDT | +9.36% | $20,920,667.23 |
+| US/USDT:USDT | +25.17% | $6,796,935.20 |
+| ACE/USDT:USDT | +24.91% | $68,656,508.61 |
+| DOLO/USDT:USDT | +17.29% | $1,605,885.47 |
+| ACU/USDT:USDT | +9.78% | $1,873,293.89 |
+| CAP/USDT:USDT | +8.82% | $20,935,054.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +4.46% | +4.64% |
-| ACE/USDT:USDT | below_1h_threshold | +3.02% | +3.20% |
-| CAP/USDT:USDT | below_1h_threshold | +1.86% | +2.04% |
-| 2Z/USDT:USDT | below_1h_threshold | +1.82% | +2.00% |
-| ACU/USDT:USDT | below_1h_threshold | +1.72% | +1.90% |
+| CYS/USDT:USDT | below_1h_threshold | +3.48% | +3.62% |
+| ACE/USDT:USDT | below_1h_threshold | +2.63% | +2.78% |
+| BTW/USDT:USDT | below_1h_threshold | +1.94% | +2.08% |
+| DOLO/USDT:USDT | below_1h_threshold | +1.71% | +1.85% |
+| 2Z/USDT:USDT | below_1h_threshold | +1.68% | +1.82% |
 
 ## 7. 次に見るべき不足
 
