@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T10:51:36.164846+00:00
+- generated_at: 2026-08-14T10:56:33.855350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11539**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T10:51:22.900009+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=62813.1
-- Funnel: target 981 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1, 4h RSI 87.5 >= 65=1
+- 更新: 2026-08-14T10:56:21.813211+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=62793.0
+- Funnel: target 981 → liquid 180 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.4 >= 65=1, 4h RSI 79.1 >= 65=1, 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +88.30% | $17,795,677.21 |
-| AKE/USDT:USDT | +46.37% | $72,641,384.99 |
-| VELVET/USDT:USDT | +39.01% | $31,317,353.85 |
-| CAP/USDT:USDT | +21.36% | $4,346,140.24 |
-| 2Z/USDT:USDT | +20.31% | $1,670,412.71 |
+| ACE/USDT:USDT | +89.84% | $18,353,116.46 |
+| AKE/USDT:USDT | +46.06% | $72,872,317.91 |
+| VELVET/USDT:USDT | +41.29% | $31,474,160.48 |
+| CAP/USDT:USDT | +21.40% | $4,374,163.08 |
+| 2Z/USDT:USDT | +20.33% | $1,673,485.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.27% | +4.19% |
-| CAP/USDT:USDT | below_1h_threshold | +3.42% | +3.34% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.36% | +3.28% |
-| BR/USDT:USDT | below_1h_threshold | +3.21% | +3.13% |
-| 2Z/USDT:USDT | below_1h_threshold | +2.50% | +2.42% |
+| BR/USDT:USDT | below_1h_threshold | +4.16% | +4.11% |
+| CAP/USDT:USDT | below_1h_threshold | +3.53% | +3.48% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.36% | +3.31% |
+| APR/USDT:USDT | below_1h_threshold | +3.34% | +3.29% |
+| 2Z/USDT:USDT | below_1h_threshold | +2.41% | +2.36% |
 
 ## 7. 次に見るべき不足
 
