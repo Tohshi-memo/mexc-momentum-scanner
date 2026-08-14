@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T03:06:24.848340+00:00
+- generated_at: 2026-08-14T03:11:18.635873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11502**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.27** / 初期 $100.00 (+16.27%)
-- 確定: 1470件 (Win 433 / Loss 556 / Flat 481) / pending 0件 / skip 1500件
+- 確定: 1470件 (Win 433 / Loss 556 / Flat 481) / pending 0件 / skip 1501件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000114 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CAP/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T03:06:16.628376+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63411.7
-- Funnel: target 978 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-14T03:11:11.942729+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63426.9
+- Funnel: target 978 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +62.31% | $27,481,245.98 |
-| US/USDT:USDT | +26.84% | $5,883,821.84 |
-| AEON1/USDT:USDT | +21.27% | $1,361,696.04 |
-| WDAYSTOCK/USDT:USDT | +18.83% | $1,457,494.63 |
-| AKE/USDT:USDT | +14.43% | $55,266,197.42 |
+| EDEN/USDT:USDT | +59.53% | $27,656,946.65 |
+| US/USDT:USDT | +25.27% | $5,893,374.78 |
+| AEON1/USDT:USDT | +22.11% | $1,401,650.53 |
+| WDAYSTOCK/USDT:USDT | +19.92% | $1,457,957.72 |
+| AKE/USDT:USDT | +14.81% | $55,324,484.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +3.18% | +3.22% |
-| ACE/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.58% | +1.62% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
-| WDAYSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.13% |
+| AKE/USDT:USDT | below_1h_threshold | +1.55% | +1.57% |
+| CATE/USDT:USDT | below_1h_threshold | +1.45% | +1.46% |
+| ACE/USDT:USDT | below_1h_threshold | +1.28% | +1.29% |
+| PROM/USDT:USDT | below_1h_threshold | +1.18% | +1.19% |
+| WDAYSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.10% |
 
 ## 7. 次に見るべき不足
 
