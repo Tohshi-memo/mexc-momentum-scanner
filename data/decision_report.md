@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T20:26:31.045391+00:00
+- generated_at: 2026-08-14T20:31:30.800841+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11602**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T20:26:23.509887+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=62922.8
+- 更新: 2026-08-14T20:31:22.327775+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=62927.7
 - Funnel: target 985 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.8 >= 65=1
+- Strict後reject: 4h RSI 76.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOLO/USDT:USDT | +28.29% | $1,419,863.69 |
-| US/USDT:USDT | +22.19% | $6,662,949.76 |
-| ACE/USDT:USDT | +14.91% | $60,992,335.93 |
-| ACU/USDT:USDT | +8.71% | $2,074,343.89 |
-| CYS/USDT:USDT | +8.17% | $13,192,773.02 |
+| DOLO/USDT:USDT | +25.51% | $1,437,001.18 |
+| US/USDT:USDT | +21.30% | $6,676,603.79 |
+| ACE/USDT:USDT | +13.59% | $61,152,767.60 |
+| VELVET/USDT:USDT | +8.37% | $41,582,159.61 |
+| CYS/USDT:USDT | +8.04% | $13,231,054.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOLO/USDT:USDT | below_1h_threshold | +4.50% | +4.53% |
-| CYS/USDT:USDT | below_1h_threshold | +4.08% | +4.11% |
+| CYS/USDT:USDT | below_1h_threshold | +4.06% | +4.08% |
 | SOXL/USDT:USDT | below_1h_threshold | +2.73% | +2.75% |
-| ACE/USDT:USDT | below_1h_threshold | +1.80% | +1.83% |
+| DOLO/USDT:USDT | below_1h_threshold | +2.27% | +2.29% |
 | MUU/USDT:USDT | below_1h_threshold | +1.79% | +1.81% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
 
 ## 7. 次に見るべき不足
 
