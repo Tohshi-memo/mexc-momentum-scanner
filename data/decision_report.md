@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T22:01:21.411698+00:00
+- generated_at: 2026-08-14T22:06:22.708326+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11609**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T22:01:13.172921+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=62908.0
+- 更新: 2026-08-14T22:06:14.252551+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=62917.6
 - Funnel: target 985 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| US/USDT:USDT | +26.30% | $6,692,420.16 |
-| ACE/USDT:USDT | +20.33% | $67,148,844.27 |
-| DOLO/USDT:USDT | +16.02% | $1,590,653.03 |
-| ACU/USDT:USDT | +8.66% | $1,826,608.58 |
-| CAP/USDT:USDT | +7.50% | $20,820,157.73 |
+| US/USDT:USDT | +27.81% | $6,718,616.43 |
+| ACE/USDT:USDT | +20.78% | $67,417,676.97 |
+| DOLO/USDT:USDT | +17.06% | $1,592,483.58 |
+| ACU/USDT:USDT | +10.28% | $1,836,269.41 |
+| CAP/USDT:USDT | +8.69% | $20,849,697.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.60% | +1.58% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
-| DOLO/USDT:USDT | below_1h_threshold | +0.83% | +0.82% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.74% |
-| MUU/USDT:USDT | below_1h_threshold | +0.65% | +0.63% |
+| DOLO/USDT:USDT | below_1h_threshold | +1.74% | +1.71% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.60% | +1.57% |
+| ACU/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
+| CAP/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
+| US/USDT:USDT | below_1h_threshold | +1.05% | +1.02% |
 
 ## 7. 次に見るべき不足
 
