@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-14T11:51:29.924388+00:00
+- generated_at: 2026-08-14T11:56:30.155447+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11550**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-14T11:51:20.198160+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=62869.9
-- Funnel: target 981 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1, 4h RSI 89.8 >= 65=1, 4h RSI 70.2 >= 65=1, 4h RSI 68.4 >= 65=1
+- 更新: 2026-08-14T11:56:20.768175+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=62896.3
+- Funnel: target 981 → liquid 181 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.3 >= 65=1, 4h RSI 89.3 >= 65=1, 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +116.71% | $24,458,320.61 |
-| AKE/USDT:USDT | +66.76% | $72,513,995.64 |
-| VELVET/USDT:USDT | +41.73% | $33,032,242.75 |
-| CAP/USDT:USDT | +22.91% | $4,666,227.84 |
-| H/USDT:USDT | +22.61% | $2,555,822.21 |
+| ACE/USDT:USDT | +115.92% | $24,846,471.68 |
+| AKE/USDT:USDT | +74.77% | $72,868,151.99 |
+| VELVET/USDT:USDT | +41.91% | $33,143,997.43 |
+| CAP/USDT:USDT | +23.78% | $4,690,237.82 |
+| H/USDT:USDT | +22.55% | $2,575,169.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +3.13% | +3.00% |
-| PROM/USDT:USDT | below_1h_threshold | +2.52% | +2.39% |
-| MMT/USDT:USDT | below_1h_threshold | +1.60% | +1.47% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.85% |
-| XPL/USDT:USDT | below_1h_threshold | +0.87% | +0.74% |
+| BTW/USDT:USDT | below_1h_threshold | +4.53% | +4.36% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.89% | +2.72% |
+| XPL/USDT:USDT | below_1h_threshold | +1.13% | +0.95% |
+| MMT/USDT:USDT | below_1h_threshold | +1.08% | +0.91% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.81% |
 
 ## 7. 次に見るべき不足
 
