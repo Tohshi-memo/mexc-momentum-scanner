@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T01:36:20.036542+00:00
+- generated_at: 2026-08-15T01:41:27.502429+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11624**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.52** / 初期 $100.00 (+17.52%)
-- 確定: 1572件 (Win 478 / Loss 602 / Flat 492) / pending 1件 / skip 1522件
+- 確定: 1572件 (Win 478 / Loss 602 / Flat 492) / pending 2件 / skip 1522件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000202 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BICO/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $117.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T01:36:13.176486+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=63012.7
+- 更新: 2026-08-15T01:41:19.735242+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63013.8
 - Funnel: target 985 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.2 >= 65=1
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +25.81% | $1,141,594.86 |
-| ROBO/USDT:USDT | +18.45% | $1,140,379.00 |
-| US/USDT:USDT | +15.79% | $6,754,571.77 |
-| ONE/USDT:USDT | +13.35% | $1,530,666.83 |
-| CAP/USDT:USDT | +11.90% | $21,626,247.69 |
+| ROBO/USDT:USDT | +21.88% | $1,179,912.10 |
+| AIO/USDT:USDT | +21.48% | $1,157,072.80 |
+| US/USDT:USDT | +15.90% | $6,763,314.02 |
+| ONE/USDT:USDT | +11.49% | $1,542,358.35 |
+| CAP/USDT:USDT | +11.42% | $21,649,920.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +4.45% | +4.42% |
-| CYS/USDT:USDT | below_1h_threshold | +1.89% | +1.86% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.13% | +1.10% |
-| LINK/USDT:USDT | below_1h_threshold | +0.96% | +0.92% |
-| BANK/USDT:USDT | below_1h_threshold | +0.84% | +0.81% |
+| CYS/USDT:USDT | below_1h_threshold | +2.30% | +2.27% |
+| AIO/USDT:USDT | below_1h_threshold | +1.76% | +1.72% |
+| RE/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
+| LINK/USDT:USDT | below_1h_threshold | +1.32% | +1.29% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.00% | +0.97% |
 
 ## 7. 次に見るべき不足
 
