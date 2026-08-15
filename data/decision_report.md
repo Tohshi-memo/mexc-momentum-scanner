@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T08:26:20.374700+00:00
+- generated_at: 2026-08-15T08:31:23.248329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11647**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.60** / 初期 $100.00 (+17.60%)
-- 確定: 1591件 (Win 482 / Loss 605 / Flat 504) / pending 6件 / skip 1523件
+- 確定: 1591件 (Win 482 / Loss 605 / Flat 504) / pending 6件 / skip 1524件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000188 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ALICE/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $117.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T08:26:14.332270+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63028.5
-- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-15T08:31:14.792249+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63028.0
+- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +31.04% | $6,235,414.44 |
-| VELVET/USDT:USDT | +26.02% | $35,538,122.14 |
-| PRL/USDT:USDT | +23.47% | $1,468,768.86 |
-| CYS/USDT:USDT | +20.80% | $17,162,044.21 |
-| NIL/USDT:USDT | +20.68% | $3,980,529.44 |
+| ROBO/USDT:USDT | +29.15% | $6,258,336.26 |
+| VELVET/USDT:USDT | +25.87% | $35,709,547.41 |
+| PRL/USDT:USDT | +23.79% | $1,475,813.09 |
+| NIL/USDT:USDT | +22.12% | $4,004,795.67 |
+| ANSEM/USDT:USDT | +21.51% | $1,238,418.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.96% | +5.00% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.56% | +2.59% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.52% | +1.56% |
-| AIO/USDT:USDT | below_1h_threshold | +1.40% | +1.43% |
-| JTO/USDT:USDT | below_1h_threshold | +1.15% | +1.18% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.60% | +3.63% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.22% | +3.25% |
+| AIO/USDT:USDT | below_1h_threshold | +1.76% | +1.80% |
+| LDO/USDT:USDT | below_1h_threshold | +1.42% | +1.45% |
+| JTO/USDT:USDT | below_1h_threshold | +1.18% | +1.22% |
 
 ## 7. 次に見るべき不足
 
