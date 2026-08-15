@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T10:56:31.600905+00:00
+- generated_at: 2026-08-15T11:01:21.198011+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11659**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T10:56:19.816468+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63001.4
-- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 72.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-15T11:01:13.138987+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63007.0
+- Funnel: target 985 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +50.30% | $3,570,283.78 |
-| ANSEM/USDT:USDT | +31.74% | $1,477,535.82 |
-| ROBO/USDT:USDT | +27.94% | $7,271,343.32 |
-| VELVET/USDT:USDT | +21.48% | $34,522,176.35 |
-| US/USDT:USDT | +20.14% | $6,181,868.16 |
+| COW/USDT:USDT | +53.20% | $3,653,842.90 |
+| ANSEM/USDT:USDT | +33.08% | $1,482,388.46 |
+| ROBO/USDT:USDT | +28.21% | $7,236,649.50 |
+| VELVET/USDT:USDT | +21.30% | $32,421,487.72 |
+| US/USDT:USDT | +19.97% | $6,096,821.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.65% | +3.65% |
-| US/USDT:USDT | below_1h_threshold | +3.14% | +3.14% |
-| BMT/USDT:USDT | below_1h_threshold | +2.99% | +2.98% |
-| H/USDT:USDT | below_1h_threshold | +2.57% | +2.56% |
-| RE/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
+| COW/USDT:USDT | below_1h_threshold | +1.19% | +1.20% |
+| NIL/USDT:USDT | below_1h_threshold | +0.77% | +0.79% |
+| FOLKS/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
+| H/USDT:USDT | below_1h_threshold | +0.34% | +0.36% |
+| ACU/USDT:USDT | below_1h_threshold | +0.33% | +0.34% |
 
 ## 7. 次に見るべき不足
 
