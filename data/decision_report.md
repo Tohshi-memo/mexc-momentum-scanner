@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T07:41:39.310879+00:00
+- generated_at: 2026-08-15T07:46:27.068117+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11647**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T07:41:26.082798+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63058.3
-- Funnel: target 985 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.6 >= 65=1, 4h RSI 81.9 >= 65=1
+- 更新: 2026-08-15T07:46:17.983280+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63049.9
+- Funnel: target 985 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.3 >= 65=1, 4h RSI 75.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +33.33% | $5,868,988.68 |
-| VELVET/USDT:USDT | +29.07% | $37,810,624.67 |
-| NIL/USDT:USDT | +26.59% | $2,975,009.84 |
-| PRL/USDT:USDT | +26.14% | $1,394,425.27 |
-| CYS/USDT:USDT | +22.20% | $17,536,239.93 |
+| ROBO/USDT:USDT | +31.11% | $5,910,408.25 |
+| VELVET/USDT:USDT | +30.22% | $37,898,084.03 |
+| NIL/USDT:USDT | +26.88% | $3,056,866.47 |
+| PRL/USDT:USDT | +25.83% | $1,398,169.57 |
+| CYS/USDT:USDT | +20.82% | $17,599,269.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +3.19% | +3.23% |
-| NIL/USDT:USDT | below_1h_threshold | +2.21% | +2.26% |
-| PRL/USDT:USDT | below_1h_threshold | +2.00% | +2.05% |
-| TUT/USDT:USDT | below_1h_threshold | +1.81% | +1.85% |
-| SYN/USDT:USDT | below_1h_threshold | +0.95% | +1.00% |
+| CYS/USDT:USDT | below_1h_threshold | +4.89% | +4.95% |
+| US/USDT:USDT | below_1h_threshold | +3.90% | +3.96% |
+| TUT/USDT:USDT | below_1h_threshold | +2.40% | +2.46% |
+| NIL/USDT:USDT | below_1h_threshold | +2.25% | +2.31% |
+| PRL/USDT:USDT | below_1h_threshold | +1.60% | +1.66% |
 
 ## 7. 次に見るべき不足
 
