@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T22:01:20.292457+00:00
+- generated_at: 2026-08-15T22:06:31.408434+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11698**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.49** / 初期 $100.00 (+19.49%)
-- 確定: 1625件 (Win 495 / Loss 617 / Flat 513) / pending 1件 / skip 1547件
+- 確定: 1625件 (Win 495 / Loss 617 / Flat 513) / pending 1件 / skip 1548件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000094 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PRL/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $119.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T22:01:11.956350+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63126.9
-- Funnel: target 985 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-15T22:06:22.543523+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63120.3
+- Funnel: target 985 → liquid 133 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +32.63% | $1,693,897.66 |
-| BULLA/USDT:USDT | +16.71% | $2,252,332.67 |
-| AIO/USDT:USDT | +15.00% | $2,730,596.54 |
-| HEMI/USDT:USDT | +8.76% | $3,546,659.05 |
-| BTW/USDT:USDT | +8.41% | $11,285,350.71 |
+| SPORTFUN/USDT:USDT | +61.48% | $1,932,678.72 |
+| BULLA/USDT:USDT | +16.75% | $2,259,883.40 |
+| AIO/USDT:USDT | +15.00% | $2,737,337.02 |
+| HEMI/USDT:USDT | +8.45% | $3,558,840.82 |
+| BTW/USDT:USDT | +8.23% | $11,319,398.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
-| HEMI/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
-| ANSEM/USDT:USDT | below_1h_threshold | +0.32% | +0.32% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
-| H/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
+| ANSEM/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| BR/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
+| H/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.60% | +0.61% |
 
 ## 7. 次に見るべき不足
 
