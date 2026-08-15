@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-15T06:11:26.067424+00:00
+- generated_at: 2026-08-15T06:16:24.154483+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11643**
+- closed shadow trades: **11644**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.35% / filled 20/20。**
-- 全期間 MARKET基準: n=11643, expectancy=-0.01%
+- 全期間 MARKET基準: n=11644, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+2.35%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,18 +23,18 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.35% | **+2.35%** |
 | LIMIT_1PCT | 16/20 | 80.0% | +2.13% | **+1.70%** |
+| LIMIT_2PCT | 13/20 | 65.0% | +2.32% | **+1.51%** |
+| LIMIT_BB3S | 4/17 | 23.5% | +5.45% | **+1.28%** |
 | LIMIT_3PCT | 10/20 | 50.0% | +2.31% | **+1.16%** |
-| LIMIT_2PCT | 12/20 | 60.0% | +1.85% | **+1.11%** |
-| LIMIT_5PCT | 6/20 | 30.0% | +3.30% | **+0.99%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_8PCT_LONG | 10/20 | 50.0% | +2.80% | **+1.40%** |
+| LIMIT_8PCT_LONG | 10/20 | 50.0% | +3.60% | **+1.80%** |
+| LIMIT_9PCT_LONG | 8/20 | 40.0% | +3.05% | **+1.22%** |
 | LIMIT_BB3S_LONG | 3/3 | 100.0% | +1.14% | **+1.14%** |
-| LIMIT_9PCT_LONG | 8/20 | 40.0% | +2.19% | **+0.87%** |
-| LIMIT_10PCT_LONG | 4/20 | 20.0% | +3.56% | **+0.71%** |
+| LIMIT_10PCT_LONG | 5/20 | 25.0% | +4.44% | **+1.11%** |
 | LIMIT_FIB1272_LONG | 15/20 | 75.0% | +0.89% | **+0.66%** |
 
 ## 2. $100 Live Portfolio
@@ -47,53 +47,53 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$640.49** / 初期 $100.00 (+540.49%)
-- 確定: 4111件 (Win 1287 / Loss 1353 / Flat 1471) / skip 4093件
+- 確定: 4112件 (Win 1287 / Loss 1353 / Flat 1472) / skip 4093件
 - 成長率目線: 平均log +0.000452 / 幾何平均 +0.045% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: DOLO/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.14% 残高後 $640.49
+- 最新: VELVET/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $640.49
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.92** / 初期 $100.00 (+54.92%)
-- 確定: 1706件 (Win 488 / Loss 409 / Flat 809) / skip 3348件
-- 成長率目線: 平均log +0.000257 / 幾何平均 +0.026% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0942 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: DOLO/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $154.92
+- 確定: 1707件 (Win 488 / Loss 409 / Flat 810) / skip 3348件
+- 成長率目線: 平均log +0.000256 / 幾何平均 +0.026% per trade / maxDD +3.96%
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1120 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: VELVET/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $154.92
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.60** / 初期 $100.00 (+17.60%)
-- 確定: 1587件 (Win 482 / Loss 605 / Flat 500) / pending 4件 / skip 1523件
+- 確定: 1588件 (Win 482 / Loss 605 / Flat 501) / pending 3件 / skip 1523件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000220 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: DOLO/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.04% 残高後 $117.60
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000225 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: VELVET/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $117.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T06:11:16.110393+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63059.3
-- Funnel: target 985 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-15T06:16:14.260589+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=63011.9
+- Funnel: target 985 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +31.91% | $5,175,207.02 |
-| VELVET/USDT:USDT | +29.26% | $39,275,351.11 |
-| PRL/USDT:USDT | +21.28% | $1,090,094.22 |
-| ANSEM/USDT:USDT | +20.36% | $1,040,118.23 |
-| US/USDT:USDT | +19.13% | $6,084,028.38 |
+| PRL/USDT:USDT | +22.91% | $1,097,385.42 |
+| ANSEM/USDT:USDT | +19.82% | $1,041,722.88 |
+| CYS/USDT:USDT | +19.37% | $16,035,551.65 |
+| AIO/USDT:USDT | +18.37% | $1,459,281.61 |
+| VELVET/USDT:USDT | +18.27% | $39,713,502.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +1.60% | +1.59% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
-| NIL/USDT:USDT | below_1h_threshold | +1.02% | +1.01% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.95% | +0.94% |
-| LDO/USDT:USDT | below_1h_threshold | +0.81% | +0.80% |
+| NIL/USDT:USDT | below_1h_threshold | +2.04% | +2.11% |
+| PRL/USDT:USDT | below_1h_threshold | +1.69% | +1.75% |
+| CYS/USDT:USDT | below_1h_threshold | +1.52% | +1.59% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.16% | +1.23% |
+| LDO/USDT:USDT | below_1h_threshold | +0.77% | +0.84% |
 
 ## 7. 次に見るべき不足
 
