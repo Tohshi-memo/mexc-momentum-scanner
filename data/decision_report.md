@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T22:21:25.369561+00:00
+- generated_at: 2026-08-15T22:26:25.773910+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11699**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T22:21:16.945844+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63107.2
+- 更新: 2026-08-15T22:26:18.058541+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63115.0
 - Funnel: target 985 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.2 >= 65=1
+- Strict後reject: 4h RSI 91.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +52.88% | $2,217,720.26 |
-| BULLA/USDT:USDT | +15.15% | $2,329,203.67 |
-| AIO/USDT:USDT | +14.43% | $2,755,377.49 |
-| HEMI/USDT:USDT | +12.04% | $3,625,337.80 |
-| BTW/USDT:USDT | +9.23% | $11,372,338.50 |
+| SPORTFUN/USDT:USDT | +52.51% | $2,304,491.01 |
+| BULLA/USDT:USDT | +15.96% | $2,362,250.74 |
+| AIO/USDT:USDT | +13.85% | $2,773,370.32 |
+| HEMI/USDT:USDT | +10.95% | $3,659,800.87 |
+| BTW/USDT:USDT | +8.81% | $11,388,616.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +3.44% | +3.47% |
-| AKE/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.60% | +0.62% |
-| BTW/USDT:USDT | below_1h_threshold | +0.57% | +0.60% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.63% | +2.65% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.80% | +1.81% |
+| AKE/USDT:USDT | below_1h_threshold | +1.11% | +1.12% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.65% | +0.66% |
 
 ## 7. 次に見るべき不足
 
