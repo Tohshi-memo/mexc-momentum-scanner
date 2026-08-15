@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T09:36:33.414316+00:00
+- generated_at: 2026-08-15T09:41:33.649756+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11650**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T09:36:21.302873+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=62965.9
+- 更新: 2026-08-15T09:41:21.942434+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=62977.6
 - Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.1 >= 65=1, 4h RSI 75.9 >= 65=1
+- Strict後reject: 4h RSI 92.3 >= 65=1, 4h RSI 70.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +48.80% | $1,021,342.69 |
-| ANSEM/USDT:USDT | +25.38% | $1,271,471.72 |
-| VELVET/USDT:USDT | +20.87% | $34,389,091.34 |
-| CYS/USDT:USDT | +18.50% | $17,238,281.68 |
-| ROBO/USDT:USDT | +18.38% | $6,915,546.59 |
+| COW/USDT:USDT | +52.60% | $1,241,409.19 |
+| ANSEM/USDT:USDT | +23.69% | $1,278,220.39 |
+| VELVET/USDT:USDT | +21.82% | $34,458,468.33 |
+| ROBO/USDT:USDT | +20.33% | $6,927,615.09 |
+| CYS/USDT:USDT | +17.72% | $17,292,705.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.62% | +2.53% |
-| DOT/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.69% | +0.60% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.65% | +0.56% |
-| US/USDT:USDT | below_1h_threshold | +0.60% | +0.50% |
+| ANSEM/USDT:USDT | below_1h_threshold | +3.93% | +3.82% |
+| ON/USDT:USDT | below_1h_threshold | +1.85% | +1.74% |
+| DOT/USDT:USDT | below_1h_threshold | +1.01% | +0.90% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.77% | +0.66% |
+| ETC/USDT:USDT | below_1h_threshold | +0.55% | +0.44% |
 
 ## 7. 次に見るべき不足
 
