@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T16:46:30.862140+00:00
+- generated_at: 2026-08-15T16:51:27.493070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11683**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.13** / 初期 $100.00 (+19.13%)
-- 確定: 1618件 (Win 493 / Loss 614 / Flat 511) / pending 6件 / skip 1534件
+- 確定: 1618件 (Win 493 / Loss 614 / Flat 511) / pending 6件 / skip 1535件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000475 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.13
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T16:46:17.954229+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63062.0
-- Funnel: target 985 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-08-15T16:51:18.327241+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63071.1
+- Funnel: target 985 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1
+- Strict後reject: 4h RSI 81.4 >= 65=1, 4h RSI 70.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEON1/USDT:USDT | +12.48% | $1,543,948.08 |
-| ROBO/USDT:USDT | +6.58% | $8,749,517.95 |
-| BOME/USDT:USDT | +4.41% | $1,019,553.97 |
-| PRL/USDT:USDT | +2.34% | $2,194,025.90 |
-| SKYAI/USDT:USDT | +2.12% | $8,435,079.23 |
+| AEON1/USDT:USDT | +14.06% | $1,592,708.23 |
+| BOME/USDT:USDT | +5.40% | $1,062,405.90 |
+| ROBO/USDT:USDT | +4.78% | $8,770,188.40 |
+| PRL/USDT:USDT | +3.20% | $2,223,070.27 |
+| SKYAI/USDT:USDT | +2.37% | $8,459,151.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BOME/USDT:USDT | below_1h_threshold | +4.46% | +4.47% |
-| PRL/USDT:USDT | below_1h_threshold | +2.35% | +2.36% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.11% | +2.12% |
-| BMT/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
-| CAP/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
+| ROBO/USDT:USDT | below_1h_threshold | +4.79% | +4.78% |
+| PRL/USDT:USDT | below_1h_threshold | +3.20% | +3.20% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.38% | +2.37% |
+| WLD/USDT:USDT | below_1h_threshold | +1.65% | +1.64% |
+| BMT/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
 
 ## 7. 次に見るべき不足
 
