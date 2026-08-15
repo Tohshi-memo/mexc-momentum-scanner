@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T15:16:24.314984+00:00
+- generated_at: 2026-08-15T15:21:26.491685+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11678**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T15:16:13.728294+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63003.5
-- Funnel: target 985 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-15T15:21:16.607524+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63039.5
+- Funnel: target 985 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +47.00% | $9,361,891.57 |
-| CYS/USDT:USDT | +40.25% | $26,666,353.63 |
-| HEMI/USDT:USDT | +35.69% | $1,315,088.36 |
-| WAL/USDT:USDT | +25.92% | $1,844,169.56 |
-| AIO/USDT:USDT | +23.87% | $1,925,691.36 |
+| COW/USDT:USDT | +47.20% | $9,449,839.53 |
+| HEMI/USDT:USDT | +35.69% | $1,345,450.65 |
+| CYS/USDT:USDT | +32.81% | $27,252,073.23 |
+| AIO/USDT:USDT | +26.64% | $1,933,139.11 |
+| WAL/USDT:USDT | +26.17% | $1,853,197.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +1.44% | +1.46% |
-| ONE/USDT:USDT | below_1h_threshold | +0.77% | +0.78% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.55% | +0.57% |
-| ACU/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
-| JTO/USDT:USDT | below_1h_threshold | +0.47% | +0.48% |
+| AIO/USDT:USDT | below_1h_threshold | +2.48% | +2.44% |
+| PRL/USDT:USDT | below_1h_threshold | +1.71% | +1.66% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.62% | +0.58% |
+| JTO/USDT:USDT | below_1h_threshold | +0.55% | +0.51% |
+| KORU/USDT:USDT | below_1h_threshold | +0.46% | +0.42% |
 
 ## 7. 次に見るべき不足
 
