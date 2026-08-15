@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T23:06:22.208319+00:00
+- generated_at: 2026-08-15T23:11:27.552271+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11701**
 
@@ -70,7 +70,7 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T23:06:13.810036+00:00 / 保存件数 288/288
+- 更新: 2026-08-15T23:11:20.860281+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h +0.01% price=63104.7
 - Funnel: target 985 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +51.82% | $2,740,958.41 |
-| AIO/USDT:USDT | +14.14% | $2,808,367.61 |
-| BULLA/USDT:USDT | +13.24% | $2,448,267.57 |
-| BTW/USDT:USDT | +8.67% | $11,136,231.62 |
-| H/USDT:USDT | +8.43% | $5,438,749.84 |
+| SPORTFUN/USDT:USDT | +51.91% | $2,796,460.17 |
+| AIO/USDT:USDT | +15.69% | $2,819,162.08 |
+| BULLA/USDT:USDT | +13.58% | $2,449,493.81 |
+| BTW/USDT:USDT | +8.87% | $11,152,250.65 |
+| CHIP/USDT:USDT | +8.46% | $1,169,589.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
-| H/USDT:USDT | below_1h_threshold | +0.66% | +0.66% |
-| AVNT/USDT:USDT | below_1h_threshold | +0.50% | +0.49% |
-| BASED/USDT:USDT | below_1h_threshold | +0.35% | +0.35% |
-| BTW/USDT:USDT | below_1h_threshold | +0.35% | +0.34% |
+| AIO/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.43% | +1.43% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.24% | +1.23% |
+| BTW/USDT:USDT | below_1h_threshold | +0.53% | +0.52% |
+| H/USDT:USDT | below_1h_threshold | +0.26% | +0.25% |
 
 ## 7. 次に見るべき不足
 
