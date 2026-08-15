@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T12:51:34.333453+00:00
+- generated_at: 2026-08-15T12:56:26.222042+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11664**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T12:51:21.227143+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=62927.1
-- Funnel: target 985 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 80.4 >= 65=1
+- 更新: 2026-08-15T12:56:17.532902+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=62944.8
+- Funnel: target 985 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +58.10% | $6,857,970.99 |
-| WAL/USDT:USDT | +32.87% | $1,275,579.76 |
-| VELVET/USDT:USDT | +25.24% | $33,006,081.92 |
-| ANSEM/USDT:USDT | +22.60% | $1,649,465.56 |
-| AEON1/USDT:USDT | +19.19% | $1,035,486.60 |
+| COW/USDT:USDT | +57.00% | $6,926,252.39 |
+| WAL/USDT:USDT | +32.23% | $1,292,327.01 |
+| VELVET/USDT:USDT | +24.41% | $33,111,128.49 |
+| ANSEM/USDT:USDT | +22.40% | $1,662,659.99 |
+| US/USDT:USDT | +18.94% | $6,175,131.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PRL/USDT:USDT | below_1h_threshold | +3.91% | +4.02% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.54% | +1.64% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.53% | +1.63% |
-| LINK/USDT:USDT | below_1h_threshold | +1.39% | +1.49% |
-| US/USDT:USDT | below_1h_threshold | +1.37% | +1.47% |
+| WAL/USDT:USDT | below_1h_threshold | +4.85% | +4.92% |
+| PRL/USDT:USDT | below_1h_threshold | +4.43% | +4.51% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.83% | +3.91% |
+| LINK/USDT:USDT | below_1h_threshold | +1.56% | +1.63% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.50% | +1.57% |
 
 ## 7. 次に見るべき不足
 
