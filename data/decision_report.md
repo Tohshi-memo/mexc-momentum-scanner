@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T16:01:26.326756+00:00
+- generated_at: 2026-08-15T16:06:26.675062+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11680**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.34** / 初期 $100.00 (+19.34%)
-- 確定: 1617件 (Win 493 / Loss 613 / Flat 511) / pending 6件 / skip 1531件
+- 確定: 1617件 (Win 493 / Loss 613 / Flat 511) / pending 6件 / skip 1532件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000513 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CYS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.34
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T16:01:16.332432+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63068.0
-- Funnel: target 985 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-15T16:06:18.052395+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63061.3
+- Funnel: target 985 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEON1/USDT:USDT | +1.31% | $1,137,370.44 |
-| H/USDT:USDT | +1.09% | $4,145,481.33 |
-| ROBO/USDT:USDT | +0.74% | $8,596,700.42 |
-| AKE/USDT:USDT | +0.56% | $50,647,860.22 |
-| NIL/USDT:USDT | +0.47% | $7,372,902.09 |
+| AEON1/USDT:USDT | +5.89% | $1,183,785.19 |
+| ROBO/USDT:USDT | +1.19% | $8,601,488.18 |
+| ETHFI/USDT:USDT | +1.01% | $11,593,476.02 |
+| PRL/USDT:USDT | +0.88% | $2,124,277.67 |
+| BANK/USDT:USDT | +0.88% | $1,765,404.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +1.31% | +1.31% |
-| H/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.76% | +0.76% |
-| ROBO/USDT:USDT | below_1h_threshold | +0.75% | +0.75% |
-| AKE/USDT:USDT | below_1h_threshold | +0.55% | +0.55% |
+| ROBO/USDT:USDT | below_1h_threshold | +1.20% | +1.21% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
+| DOS/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
+| PRL/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
+| BANK/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
 
 ## 7. 次に見るべき不足
 
