@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T02:01:19.741128+00:00
+- generated_at: 2026-08-15T02:06:20.071716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11625**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T02:01:11.441789+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=63014.8
+- 更新: 2026-08-15T02:06:11.687323+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63032.7
 - Funnel: target 985 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +22.51% | $1,190,122.64 |
-| ROBO/USDT:USDT | +21.14% | $1,309,337.70 |
-| US/USDT:USDT | +15.05% | $6,654,025.84 |
-| CAP/USDT:USDT | +14.50% | $21,603,964.03 |
-| ONE/USDT:USDT | +12.26% | $1,491,165.11 |
+| ROBO/USDT:USDT | +22.96% | $1,380,573.51 |
+| AIO/USDT:USDT | +21.29% | $1,191,910.08 |
+| CAP/USDT:USDT | +16.04% | $21,697,320.64 |
+| US/USDT:USDT | +15.39% | $6,656,141.58 |
+| CYS/USDT:USDT | +12.83% | $16,138,054.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAP/USDT:USDT | below_1h_threshold | +1.56% | +1.55% |
-| LINK/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.24% | +0.24% |
-| AIO/USDT:USDT | below_1h_threshold | +0.21% | +0.20% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.20% | +0.20% |
+| CAP/USDT:USDT | below_1h_threshold | +3.10% | +3.07% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.23% | +1.20% |
+| LINK/USDT:USDT | below_1h_threshold | +1.21% | +1.18% |
+| ROBO/USDT:USDT | below_1h_threshold | +1.05% | +1.02% |
+| BTW/USDT:USDT | below_1h_threshold | +1.02% | +0.99% |
 
 ## 7. 次に見るべき不足
 
