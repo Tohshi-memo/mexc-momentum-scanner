@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T06:51:19.315400+00:00
+- generated_at: 2026-08-15T06:56:14.870829+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11644**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T06:51:10.894544+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63065.7
+- 更新: 2026-08-15T06:56:07.886291+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63107.7
 - Funnel: target 985 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
+- Strict後reject: 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +23.93% | $1,913,451.80 |
-| ROBO/USDT:USDT | +23.50% | $5,554,203.17 |
-| PRL/USDT:USDT | +23.07% | $1,283,668.62 |
-| ANSEM/USDT:USDT | +21.21% | $1,097,223.16 |
-| ONE/USDT:USDT | +20.13% | $1,611,826.50 |
+| ROBO/USDT:USDT | +25.58% | $5,562,454.78 |
+| NIL/USDT:USDT | +23.95% | $2,005,057.74 |
+| PRL/USDT:USDT | +23.54% | $1,306,095.95 |
+| VELVET/USDT:USDT | +22.31% | $40,610,433.84 |
+| ANSEM/USDT:USDT | +21.75% | $1,099,516.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.73% | +2.71% |
-| PRL/USDT:USDT | below_1h_threshold | +1.76% | +1.75% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.39% | +1.38% |
-| LDO/USDT:USDT | below_1h_threshold | +1.11% | +1.09% |
-| XMR/USDT:USDT | below_1h_threshold | +0.89% | +0.87% |
+| PRL/USDT:USDT | below_1h_threshold | +2.20% | +2.12% |
+| ON/USDT:USDT | below_1h_threshold | +1.69% | +1.61% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.61% | +1.52% |
+| LDO/USDT:USDT | below_1h_threshold | +1.01% | +0.93% |
+| XMR/USDT:USDT | below_1h_threshold | +0.76% | +0.68% |
 
 ## 7. 次に見るべき不足
 
