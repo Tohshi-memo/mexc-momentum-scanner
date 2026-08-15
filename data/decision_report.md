@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T10:46:27.278321+00:00
+- generated_at: 2026-08-15T10:51:25.112932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11659**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.92** / 初期 $100.00 (+18.92%)
-- 確定: 1601件 (Win 487 / Loss 605 / Flat 509) / pending 4件 / skip 1525件
+- 確定: 1601件 (Win 487 / Loss 605 / Flat 509) / pending 5件 / skip 1525件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000274 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ANSEM/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $118.92
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T10:46:17.219142+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63006.4
-- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1
+- 更新: 2026-08-15T10:51:15.947796+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63024.9
+- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +46.10% | $3,350,121.62 |
-| ANSEM/USDT:USDT | +33.08% | $1,444,246.48 |
-| ROBO/USDT:USDT | +25.38% | $7,151,975.81 |
-| US/USDT:USDT | +20.28% | $6,167,813.39 |
-| VELVET/USDT:USDT | +19.41% | $34,324,844.37 |
+| COW/USDT:USDT | +50.10% | $3,437,732.10 |
+| ANSEM/USDT:USDT | +30.99% | $1,469,747.95 |
+| ROBO/USDT:USDT | +26.59% | $7,171,665.32 |
+| US/USDT:USDT | +20.13% | $6,175,548.40 |
+| BMT/USDT:USDT | +19.70% | $1,133,719.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +4.49% | +4.48% |
-| BMT/USDT:USDT | below_1h_threshold | +3.15% | +3.14% |
-| NIL/USDT:USDT | below_1h_threshold | +3.14% | +3.13% |
-| US/USDT:USDT | below_1h_threshold | +2.90% | +2.88% |
-| RE/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| BMT/USDT:USDT | below_1h_threshold | +3.48% | +3.44% |
+| ACU/USDT:USDT | below_1h_threshold | +3.40% | +3.35% |
+| US/USDT:USDT | below_1h_threshold | +2.88% | +2.84% |
+| NIL/USDT:USDT | below_1h_threshold | +2.72% | +2.68% |
+| RE/USDT:USDT | below_1h_threshold | +2.54% | +2.50% |
 
 ## 7. 次に見るべき不足
 
