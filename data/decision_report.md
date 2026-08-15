@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T15:06:30.395957+00:00
+- generated_at: 2026-08-15T15:11:25.675378+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11678**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T15:06:19.982097+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63015.6
+- 更新: 2026-08-15T15:11:18.001554+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63009.1
 - Funnel: target 985 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +50.50% | $9,130,040.39 |
-| CYS/USDT:USDT | +34.69% | $25,479,267.84 |
-| HEMI/USDT:USDT | +33.39% | $1,270,921.88 |
-| WAL/USDT:USDT | +26.07% | $1,821,339.53 |
-| VELVET/USDT:USDT | +23.24% | $25,666,671.47 |
+| COW/USDT:USDT | +50.40% | $9,198,277.15 |
+| CYS/USDT:USDT | +37.57% | $26,046,996.70 |
+| HEMI/USDT:USDT | +34.67% | $1,294,261.05 |
+| WAL/USDT:USDT | +25.18% | $1,832,433.94 |
+| AIO/USDT:USDT | +23.85% | $1,920,760.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COW/USDT:USDT | below_1h_threshold | +1.90% | +1.89% |
-| TUT/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
-| MOVR/USDT:USDT | below_1h_threshold | +1.16% | +1.16% |
-| ONE/USDT:USDT | below_1h_threshold | +1.00% | +1.00% |
-| NIL/USDT:USDT | below_1h_threshold | +0.99% | +0.99% |
+| TUT/USDT:USDT | below_1h_threshold | +4.44% | +4.45% |
+| COW/USDT:USDT | below_1h_threshold | +1.83% | +1.83% |
+| ONE/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
+| NIL/USDT:USDT | below_1h_threshold | +1.46% | +1.46% |
+| JTO/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
 
 ## 7. 次に見るべき不足
 
