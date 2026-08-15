@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T10:51:25.112932+00:00
+- generated_at: 2026-08-15T10:56:31.600905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11659**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.92** / 初期 $100.00 (+18.92%)
-- 確定: 1601件 (Win 487 / Loss 605 / Flat 509) / pending 5件 / skip 1525件
+- 確定: 1601件 (Win 487 / Loss 605 / Flat 509) / pending 6件 / skip 1525件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000274 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ANSEM/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $118.92
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T10:51:15.947796+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63024.9
-- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 72.0 >= 65=1
+- 更新: 2026-08-15T10:56:19.816468+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63001.4
+- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 72.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +50.10% | $3,437,732.10 |
-| ANSEM/USDT:USDT | +30.99% | $1,469,747.95 |
-| ROBO/USDT:USDT | +26.59% | $7,171,665.32 |
-| US/USDT:USDT | +20.13% | $6,175,548.40 |
-| BMT/USDT:USDT | +19.70% | $1,133,719.75 |
+| COW/USDT:USDT | +50.30% | $3,570,283.78 |
+| ANSEM/USDT:USDT | +31.74% | $1,477,535.82 |
+| ROBO/USDT:USDT | +27.94% | $7,271,343.32 |
+| VELVET/USDT:USDT | +21.48% | $34,522,176.35 |
+| US/USDT:USDT | +20.14% | $6,181,868.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.48% | +3.44% |
-| ACU/USDT:USDT | below_1h_threshold | +3.40% | +3.35% |
-| US/USDT:USDT | below_1h_threshold | +2.88% | +2.84% |
-| NIL/USDT:USDT | below_1h_threshold | +2.72% | +2.68% |
-| RE/USDT:USDT | below_1h_threshold | +2.54% | +2.50% |
+| NIL/USDT:USDT | below_1h_threshold | +3.65% | +3.65% |
+| US/USDT:USDT | below_1h_threshold | +3.14% | +3.14% |
+| BMT/USDT:USDT | below_1h_threshold | +2.99% | +2.98% |
+| H/USDT:USDT | below_1h_threshold | +2.57% | +2.56% |
+| RE/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
 
 ## 7. 次に見るべき不足
 
