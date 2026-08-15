@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T17:36:29.315140+00:00
+- generated_at: 2026-08-15T17:41:32.967914+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11686**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.71** / 初期 $100.00 (+18.71%)
-- 確定: 1620件 (Win 493 / Loss 616 / Flat 511) / pending 6件 / skip 1535件
+- 確定: 1620件 (Win 493 / Loss 616 / Flat 511) / pending 6件 / skip 1536件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000361 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: H/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T17:36:19.273397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=63043.4
-- Funnel: target 985 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1
+- 更新: 2026-08-15T17:41:23.830355+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63038.3
+- Funnel: target 985 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 86.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEON1/USDT:USDT | +11.22% | $2,099,410.76 |
-| BOME/USDT:USDT | +9.59% | $1,631,161.03 |
-| H/USDT:USDT | +5.86% | $4,534,550.46 |
-| ROBO/USDT:USDT | +4.63% | $8,663,494.29 |
-| PRL/USDT:USDT | +2.81% | $2,234,339.61 |
+| AEON1/USDT:USDT | +10.13% | $2,153,635.84 |
+| BOME/USDT:USDT | +9.90% | $1,676,125.94 |
+| H/USDT:USDT | +6.33% | $4,597,538.67 |
+| HEMI/USDT:USDT | +5.31% | $1,987,135.40 |
+| ROBO/USDT:USDT | +5.16% | $8,664,655.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BOME/USDT:USDT | below_1h_threshold | +3.32% | +3.36% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.18% | +3.21% |
-| AIO/USDT:USDT | below_1h_threshold | +2.89% | +2.92% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.75% | +2.79% |
-| BR/USDT:USDT | below_1h_threshold | +1.16% | +1.20% |
+| AIO/USDT:USDT | below_1h_threshold | +3.81% | +3.86% |
+| BOME/USDT:USDT | below_1h_threshold | +3.31% | +3.36% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.58% | +2.63% |
+| BR/USDT:USDT | below_1h_threshold | +1.37% | +1.42% |
+| CAP/USDT:USDT | below_1h_threshold | +0.94% | +0.98% |
 
 ## 7. 次に見るべき不足
 
