@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T16:06:26.675062+00:00
+- generated_at: 2026-08-15T16:11:24.511049+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11680**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T16:06:18.052395+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63061.3
+- 更新: 2026-08-15T16:11:17.807109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63065.9
 - Funnel: target 985 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1
+- Strict後reject: 4h RSI 79.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEON1/USDT:USDT | +5.89% | $1,183,785.19 |
-| ROBO/USDT:USDT | +1.19% | $8,601,488.18 |
-| ETHFI/USDT:USDT | +1.01% | $11,593,476.02 |
-| PRL/USDT:USDT | +0.88% | $2,124,277.67 |
-| BANK/USDT:USDT | +0.88% | $1,765,404.64 |
+| AEON1/USDT:USDT | +8.04% | $1,209,305.83 |
+| ROBO/USDT:USDT | +2.16% | $8,609,633.51 |
+| WAL/USDT:USDT | +1.43% | $2,051,706.23 |
+| PUMPFUN/USDT:USDT | +1.03% | $10,860,509.04 |
+| ETHFI/USDT:USDT | +0.99% | $11,632,339.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ROBO/USDT:USDT | below_1h_threshold | +1.20% | +1.21% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
-| DOS/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
-| PRL/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
-| BANK/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
+| ROBO/USDT:USDT | below_1h_threshold | +2.32% | +2.32% |
+| WAL/USDT:USDT | below_1h_threshold | +1.43% | +1.44% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.03% | +1.04% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
+| DOS/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
 
 ## 7. 次に見るべき不足
 
