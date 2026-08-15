@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T13:51:43.544941+00:00
+- generated_at: 2026-08-15T13:56:36.575640+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11673**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T13:51:28.267360+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63013.7
-- Funnel: target 985 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 2
+- 更新: 2026-08-15T13:56:22.938057+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63016.9
+- Funnel: target 985 → liquid 152 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 81.5 >= 65=1
+- Strict後reject: 4h RSI 71.0 >= 65=1, 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +50.50% | $8,027,609.93 |
-| WAL/USDT:USDT | +26.46% | $1,485,724.88 |
-| VELVET/USDT:USDT | +24.91% | $31,485,712.33 |
-| ANSEM/USDT:USDT | +24.49% | $1,705,216.98 |
-| CYS/USDT:USDT | +23.90% | $20,437,022.70 |
+| COW/USDT:USDT | +51.50% | $8,079,325.71 |
+| ANSEM/USDT:USDT | +29.06% | $1,725,132.72 |
+| WAL/USDT:USDT | +26.31% | $1,507,364.68 |
+| VELVET/USDT:USDT | +25.46% | $31,527,525.52 |
+| CYS/USDT:USDT | +25.12% | $20,614,311.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +3.42% | +3.45% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.47% | +1.50% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
-| NIL/USDT:USDT | below_1h_threshold | +0.82% | +0.85% |
+| ANSEM/USDT:USDT | below_1h_threshold | +4.98% | +5.00% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| AEON1/USDT:USDT | below_1h_threshold | +1.66% | +1.68% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.38% | +1.40% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
 
 ## 7. 次に見るべき不足
 
