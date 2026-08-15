@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T05:06:22.300278+00:00
+- generated_at: 2026-08-15T05:11:19.735366+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11634**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T05:06:12.323651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63099.7
+- 更新: 2026-08-15T05:11:11.460837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63115.1
 - Funnel: target 985 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +35.55% | $4,245,466.45 |
-| AIO/USDT:USDT | +17.95% | $1,423,976.42 |
-| ONE/USDT:USDT | +15.99% | $1,531,051.21 |
-| CYS/USDT:USDT | +15.20% | $16,180,509.35 |
-| VELVET/USDT:USDT | +13.43% | $45,517,335.03 |
+| ROBO/USDT:USDT | +36.70% | $4,313,981.46 |
+| ONE/USDT:USDT | +18.01% | $1,538,847.64 |
+| AIO/USDT:USDT | +17.56% | $1,425,374.27 |
+| CYS/USDT:USDT | +14.80% | $16,216,613.35 |
+| VELVET/USDT:USDT | +14.71% | $45,548,622.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
-| AIO/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| LIT/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
-| LINK/USDT:USDT | below_1h_threshold | +0.77% | +0.76% |
-| BTW/USDT:USDT | below_1h_threshold | +0.73% | +0.72% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.57% | +4.54% |
+| NIL/USDT:USDT | below_1h_threshold | +1.66% | +1.63% |
+| LIT/USDT:USDT | below_1h_threshold | +1.56% | +1.52% |
+| ONE/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
+| CYS/USDT:USDT | below_1h_threshold | +1.34% | +1.30% |
 
 ## 7. 次に見るべき不足
 
