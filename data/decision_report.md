@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T02:56:32.134979+00:00
+- generated_at: 2026-08-15T03:01:19.577241+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11628**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T02:56:21.064050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63101.3
-- Funnel: target 985 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-15T03:01:11.193343+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63113.5
+- Funnel: target 985 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +25.85% | $2,252,534.42 |
-| CAP/USDT:USDT | +14.53% | $22,237,482.82 |
-| VELVET/USDT:USDT | +13.65% | $45,010,926.87 |
-| CYS/USDT:USDT | +13.51% | $16,485,712.60 |
-| AIO/USDT:USDT | +12.68% | $1,322,595.95 |
+| ROBO/USDT:USDT | +21.95% | $2,317,117.44 |
+| VELVET/USDT:USDT | +14.63% | $44,953,072.04 |
+| CAP/USDT:USDT | +14.12% | $22,137,111.01 |
+| CYS/USDT:USDT | +13.78% | $15,773,983.68 |
+| AIO/USDT:USDT | +12.61% | $1,322,810.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAX/USDT:USDT | below_1h_threshold | +4.33% | +4.19% |
-| LINK/USDT:USDT | below_1h_threshold | +3.97% | +3.83% |
-| DOS/USDT:USDT | below_1h_threshold | +3.63% | +3.48% |
-| ROBO/USDT:USDT | below_1h_threshold | +3.43% | +3.29% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.32% | +2.18% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
+| HEI/USDT:USDT | below_1h_threshold | +0.82% | +0.82% |
+| TIA/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
+| BANK/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
+| ACU/USDT:USDT | below_1h_threshold | +0.30% | +0.31% |
 
 ## 7. 次に見るべき不足
 
