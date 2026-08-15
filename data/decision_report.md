@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T09:31:28.350461+00:00
+- generated_at: 2026-08-15T09:36:33.414316+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11650**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.05** / 初期 $100.00 (+18.05%)
-- 確定: 1593件 (Win 484 / Loss 605 / Flat 504) / pending 5件 / skip 1524件
+- 確定: 1593件 (Win 484 / Loss 605 / Flat 504) / pending 6件 / skip 1525件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000241 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `LIMIT_9PCT_LONG` TP_HIT account +0.34% 残高後 $118.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T09:31:16.735062+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=62957.5
-- Funnel: target 985 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- 更新: 2026-08-15T09:36:21.302873+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=62965.9
+- Funnel: target 985 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.1 >= 65=1, 4h RSI 75.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +24.84% | $4,656,243.48 |
-| VELVET/USDT:USDT | +22.06% | $34,292,800.35 |
-| FOLKS/USDT:USDT | +20.79% | $1,011,771.30 |
-| ANSEM/USDT:USDT | +20.21% | $1,248,964.96 |
-| CYS/USDT:USDT | +19.71% | $17,120,620.72 |
+| COW/USDT:USDT | +48.80% | $1,021,342.69 |
+| ANSEM/USDT:USDT | +25.38% | $1,271,471.72 |
+| VELVET/USDT:USDT | +20.87% | $34,389,091.34 |
+| CYS/USDT:USDT | +18.50% | $17,238,281.68 |
+| ROBO/USDT:USDT | +18.38% | $6,915,546.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.05% | +1.97% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.67% | +1.59% |
-| H/USDT:USDT | below_1h_threshold | +1.48% | +1.41% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.23% | +1.15% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.13% | +1.05% |
+| ON/USDT:USDT | below_1h_threshold | +2.62% | +2.53% |
+| DOT/USDT:USDT | below_1h_threshold | +0.91% | +0.82% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.69% | +0.60% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.65% | +0.56% |
+| US/USDT:USDT | below_1h_threshold | +0.60% | +0.50% |
 
 ## 7. 次に見るべき不足
 
