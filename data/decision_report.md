@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T04:41:19.996939+00:00
+- generated_at: 2026-08-15T04:46:21.480045+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11633**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T04:41:12.403923+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=63117.3
-- Funnel: target 985 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-15T04:46:14.024216+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=63127.3
+- Funnel: target 985 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +36.96% | $3,721,006.32 |
-| AIO/USDT:USDT | +18.32% | $1,413,826.81 |
-| US/USDT:USDT | +16.32% | $6,971,337.83 |
-| ONE/USDT:USDT | +14.44% | $1,545,534.92 |
-| CYS/USDT:USDT | +11.98% | $16,291,660.71 |
+| ROBO/USDT:USDT | +34.68% | $3,814,712.17 |
+| AIO/USDT:USDT | +18.00% | $1,417,144.17 |
+| US/USDT:USDT | +15.84% | $6,986,453.33 |
+| ONE/USDT:USDT | +14.13% | $1,546,316.61 |
+| CYS/USDT:USDT | +13.16% | $16,346,329.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +3.95% | +3.81% |
-| ONE/USDT:USDT | below_1h_threshold | +3.51% | +3.37% |
-| US/USDT:USDT | below_1h_threshold | +3.22% | +3.08% |
-| NIL/USDT:USDT | below_1h_threshold | +2.05% | +1.91% |
-| WLFI/USDT:USDT | below_1h_threshold | +1.39% | +1.25% |
+| ONE/USDT:USDT | below_1h_threshold | +3.23% | +3.07% |
+| NIL/USDT:USDT | below_1h_threshold | +3.18% | +3.03% |
+| US/USDT:USDT | below_1h_threshold | +2.80% | +2.65% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.60% | +1.44% |
+| SYN/USDT:USDT | below_1h_threshold | +1.35% | +1.19% |
 
 ## 7. 次に見るべき不足
 
