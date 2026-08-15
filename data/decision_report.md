@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T00:21:22.167269+00:00
+- generated_at: 2026-08-15T00:26:22.696864+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11619**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T00:21:13.834470+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=62998.6
-- Funnel: target 985 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-15T00:26:14.347263+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63000.6
+- Funnel: target 985 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +19.25% | $1,134,315.12 |
-| US/USDT:USDT | +17.83% | $6,747,717.94 |
-| GUN/USDT:USDT | +13.06% | $1,053,834.01 |
-| NIL/USDT:USDT | +10.54% | $1,167,347.56 |
-| HEI/USDT:USDT | +10.31% | $6,810,316.95 |
+| ONE/USDT:USDT | +20.49% | $1,151,727.57 |
+| ALICE/USDT:USDT | +17.88% | $1,000,212.01 |
+| US/USDT:USDT | +17.69% | $6,758,714.83 |
+| GUN/USDT:USDT | +13.29% | $1,057,639.38 |
+| NIL/USDT:USDT | +10.93% | $1,169,735.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.72% | +3.74% |
-| ONE/USDT:USDT | below_1h_threshold | +3.10% | +3.12% |
-| NIL/USDT:USDT | below_1h_threshold | +2.98% | +3.00% |
-| RE/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.12% | +2.14% |
+| ONE/USDT:USDT | below_1h_threshold | +4.44% | +4.46% |
+| NIL/USDT:USDT | below_1h_threshold | +3.33% | +3.36% |
+| ACU/USDT:USDT | below_1h_threshold | +2.70% | +2.72% |
+| RE/USDT:USDT | below_1h_threshold | +2.65% | +2.67% |
+| ALICE/USDT:USDT | below_1h_threshold | +2.62% | +2.64% |
 
 ## 7. 次に見るべき不足
 
