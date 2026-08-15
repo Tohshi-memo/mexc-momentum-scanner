@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T14:46:28.507370+00:00
+- generated_at: 2026-08-15T14:51:30.805442+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11675**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.55** / 初期 $100.00 (+19.55%)
-- 確定: 1616件 (Win 493 / Loss 612 / Flat 511) / pending 6件 / skip 1528件
+- 確定: 1616件 (Win 493 / Loss 612 / Flat 511) / pending 6件 / skip 1529件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000535 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CYS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.55
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T14:46:19.234439+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63011.7
-- Funnel: target 985 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-08-15T14:51:19.648927+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63011.6
+- Funnel: target 985 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COW/USDT:USDT | +47.90% | $8,716,433.09 |
-| CYS/USDT:USDT | +35.11% | $23,590,087.85 |
-| WAL/USDT:USDT | +30.75% | $1,771,616.35 |
-| AIO/USDT:USDT | +24.33% | $1,905,975.88 |
-| ANSEM/USDT:USDT | +24.19% | $1,761,067.67 |
+| COW/USDT:USDT | +46.00% | $8,796,873.94 |
+| CYS/USDT:USDT | +40.99% | $24,230,877.20 |
+| HEMI/USDT:USDT | +36.43% | $1,009,793.46 |
+| WAL/USDT:USDT | +26.36% | $1,783,746.73 |
+| AIO/USDT:USDT | +24.54% | $1,908,406.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WAL/USDT:USDT | below_1h_threshold | +3.47% | +3.50% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.07% | +2.09% |
-| TUT/USDT:USDT | below_1h_threshold | +2.00% | +2.02% |
-| US/USDT:USDT | below_1h_threshold | +1.21% | +1.24% |
-| ONE/USDT:USDT | below_1h_threshold | +1.02% | +1.05% |
+| MOVR/USDT:USDT | below_1h_threshold | +3.80% | +3.82% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.27% | +2.30% |
+| TUT/USDT:USDT | below_1h_threshold | +2.03% | +2.05% |
+| ONE/USDT:USDT | below_1h_threshold | +1.68% | +1.71% |
+| ACU/USDT:USDT | below_1h_threshold | +1.56% | +1.58% |
 
 ## 7. 次に見るべき不足
 
