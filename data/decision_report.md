@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-15T00:36:27.286187+00:00
+- generated_at: 2026-08-15T00:41:36.428727+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11619**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-15T00:36:16.288725+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=62992.9
-- Funnel: target 985 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-08-15T00:41:23.806242+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=62993.0
+- Funnel: target 985 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +20.80% | $1,197,004.10 |
-| US/USDT:USDT | +18.55% | $6,781,146.77 |
-| NIL/USDT:USDT | +12.03% | $1,228,128.53 |
-| GUN/USDT:USDT | +11.01% | $1,071,372.99 |
-| VELVET/USDT:USDT | +9.22% | $43,826,492.94 |
+| ONE/USDT:USDT | +24.84% | $1,241,298.97 |
+| US/USDT:USDT | +18.84% | $6,785,529.11 |
+| ROBO/USDT:USDT | +13.33% | $1,000,106.16 |
+| NIL/USDT:USDT | +12.92% | $1,241,687.92 |
+| VELVET/USDT:USDT | +9.42% | $43,855,320.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.48% | +4.51% |
-| ON/USDT:USDT | below_1h_threshold | +4.39% | +4.42% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.78% | +3.81% |
-| ACU/USDT:USDT | below_1h_threshold | +2.97% | +3.01% |
-| AVNT/USDT:USDT | below_1h_threshold | +2.49% | +2.53% |
+| NIL/USDT:USDT | below_1h_threshold | +4.57% | +4.60% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.93% | +3.97% |
+| AVNT/USDT:USDT | below_1h_threshold | +3.64% | +3.68% |
+| RE/USDT:USDT | below_1h_threshold | +2.27% | +2.30% |
+| MYX/USDT:USDT | below_1h_threshold | +2.21% | +2.24% |
 
 ## 7. 次に見るべき不足
 
