@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T05:36:26.428513+00:00
+- generated_at: 2026-08-16T05:41:18.108466+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11717**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T05:36:17.293212+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63043.6
-- Funnel: target 986 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.4 >= 65=1, 4h RSI 72.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-16T05:41:09.926692+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63048.1
+- Funnel: target 986 → liquid 134 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +20.58% | $6,133,613.26 |
-| H/USDT:USDT | +17.78% | $7,820,608.95 |
-| SPORTFUN/USDT:USDT | +16.27% | $4,345,653.81 |
-| AIO/USDT:USDT | +12.25% | $2,742,693.43 |
-| BASED/USDT:USDT | +12.13% | $2,332,225.93 |
+| HEMI/USDT:USDT | +20.22% | $6,196,852.34 |
+| SPORTFUN/USDT:USDT | +17.29% | $4,352,725.73 |
+| H/USDT:USDT | +16.88% | $7,926,291.33 |
+| BASED/USDT:USDT | +12.14% | $2,346,111.47 |
+| AIO/USDT:USDT | +11.26% | $2,747,809.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +1.96% | +1.98% |
-| AEON1/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
-| US/USDT:USDT | below_1h_threshold | +0.71% | +0.73% |
-| BICO/USDT:USDT | below_1h_threshold | +0.46% | +0.48% |
-| KORU/USDT:USDT | below_1h_threshold | +0.36% | +0.38% |
+| H/USDT:USDT | below_1h_threshold | +4.85% | +4.86% |
+| AIO/USDT:USDT | below_1h_threshold | +4.58% | +4.59% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.12% | +3.14% |
+| AEON1/USDT:USDT | below_1h_threshold | +1.95% | +1.96% |
+| AVNT/USDT:USDT | below_1h_threshold | +0.90% | +0.91% |
 
 ## 7. 次に見るべき不足
 
