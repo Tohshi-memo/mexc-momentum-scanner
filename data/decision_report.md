@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T09:36:23.021702+00:00
+- generated_at: 2026-08-16T09:41:21.941066+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11730**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T09:36:14.542297+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63025.0
+- 更新: 2026-08-16T09:41:13.639888+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63023.9
 - Funnel: target 986 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VELVET/USDT:USDT | +26.89% | $27,499,310.20 |
-| HEMI/USDT:USDT | +24.57% | $8,265,114.29 |
-| AIO/USDT:USDT | +23.09% | $3,750,324.29 |
-| SPORTFUN/USDT:USDT | +18.44% | $4,628,500.89 |
-| H/USDT:USDT | +17.74% | $9,708,527.25 |
+| VELVET/USDT:USDT | +26.14% | $27,692,653.59 |
+| HEMI/USDT:USDT | +25.65% | $8,291,293.50 |
+| AIO/USDT:USDT | +23.57% | $3,779,331.56 |
+| H/USDT:USDT | +18.75% | $9,745,014.68 |
+| SPORTFUN/USDT:USDT | +16.96% | $4,641,128.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RON/USDT:USDT | below_1h_threshold | +4.63% | +4.65% |
-| NIL/USDT:USDT | below_1h_threshold | +3.72% | +3.74% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.54% | +3.57% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.26% | +3.29% |
-| AIO/USDT:USDT | below_1h_threshold | +1.67% | +1.69% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.01% | +4.04% |
+| HEI/USDT:USDT | below_1h_threshold | +3.18% | +3.21% |
+| NIL/USDT:USDT | below_1h_threshold | +3.10% | +3.13% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.90% | +2.93% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.27% | +2.29% |
 
 ## 7. 次に見るべき不足
 
