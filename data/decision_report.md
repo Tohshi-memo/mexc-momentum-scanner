@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T14:21:22.201197+00:00
+- generated_at: 2026-08-16T14:26:29.775687+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11745**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.59** / 初期 $100.00 (+19.59%)
-- 確定: 1643件 (Win 498 / Loss 621 / Flat 524) / pending 5件 / skip 1571件
+- 確定: 1643件 (Win 498 / Loss 621 / Flat 524) / pending 6件 / skip 1571件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000171 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: APR/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $119.59
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T14:21:13.859264+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63060.4
-- Funnel: target 986 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-16T14:26:19.065167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63062.3
+- Funnel: target 986 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +34.52% | $4,957,040.77 |
-| DOLO/USDT:USDT | +25.64% | $1,038,812.61 |
-| AIO/USDT:USDT | +21.16% | $5,521,687.09 |
-| CHIP/USDT:USDT | +18.37% | $6,874,621.14 |
-| SPORTFUN/USDT:USDT | +14.93% | $4,929,951.86 |
+| PORTAL/USDT:USDT | +33.80% | $5,100,120.34 |
+| DOLO/USDT:USDT | +25.11% | $1,055,486.53 |
+| AIO/USDT:USDT | +21.20% | $5,554,006.16 |
+| CHIP/USDT:USDT | +17.63% | $6,982,111.92 |
+| GIGGLE/USDT:USDT | +17.62% | $1,185,286.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.89% | +3.85% |
-| US/USDT:USDT | below_1h_threshold | +2.12% | +2.08% |
-| BICO/USDT:USDT | below_1h_threshold | +1.40% | +1.36% |
-| DOLO/USDT:USDT | below_1h_threshold | +1.34% | +1.30% |
-| COTI/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.27% | +3.23% |
+| BICO/USDT:USDT | below_1h_threshold | +1.93% | +1.89% |
+| US/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.54% | +1.50% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.99% | +0.94% |
 
 ## 7. 次に見るべき不足
 
