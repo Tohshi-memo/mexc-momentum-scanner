@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T16:01:21.475985+00:00
+- generated_at: 2026-08-16T16:06:21.341923+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11751**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T16:01:13.057677+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63119.0
-- Funnel: target 986 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-16T16:06:12.845102+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63109.0
+- Funnel: target 986 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +0.67% | $4,994,439.36 |
-| ETHFI/USDT:USDT | +0.54% | $8,703,627.55 |
-| BLESS/USDT:USDT | +0.37% | $4,874,035.76 |
-| BOME/USDT:USDT | +0.34% | $3,027,073.92 |
-| SKYAI/USDT:USDT | +0.31% | $10,928,049.44 |
+| ONG/USDT:USDT | +4.14% | $1,010,517.00 |
+| CYS/USDT:USDT | +2.07% | $52,342,416.61 |
+| PRL/USDT:USDT | +2.03% | $1,579,542.21 |
+| APR/USDT:USDT | +1.79% | $5,049,398.42 |
+| SPORTFUN/USDT:USDT | +1.25% | $5,049,001.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +0.73% | +0.72% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
-| H/USDT:USDT | below_1h_threshold | +0.33% | +0.32% |
-| EDEN/USDT:USDT | below_1h_threshold | +0.33% | +0.32% |
+| ONG/USDT:USDT | below_1h_threshold | +4.13% | +4.14% |
+| CYS/USDT:USDT | below_1h_threshold | +2.23% | +2.24% |
+| APR/USDT:USDT | below_1h_threshold | +1.80% | +1.81% |
+| PRL/USDT:USDT | below_1h_threshold | +1.76% | +1.77% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
 
 ## 7. 次に見るべき不足
 
