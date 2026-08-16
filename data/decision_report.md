@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T15:31:21.633337+00:00
+- generated_at: 2026-08-16T15:36:24.299021+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11751**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.27** / 初期 $100.00 (+19.27%)
-- 確定: 1649件 (Win 499 / Loss 624 / Flat 526) / pending 3件 / skip 1572件
+- 確定: 1649件 (Win 499 / Loss 624 / Flat 526) / pending 4件 / skip 1572件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000135 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AIO/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T15:31:13.118457+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63087.9
-- Funnel: target 986 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- 更新: 2026-08-16T15:36:14.502814+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63097.1
+- Funnel: target 986 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +32.76% | $6,100,237.43 |
-| DOLO/USDT:USDT | +31.96% | $1,413,098.86 |
-| MARSCOIN/USDT:USDT | +25.27% | $1,183,695.45 |
-| PORTAL/USDT:USDT | +24.62% | $6,046,139.50 |
-| CHIP/USDT:USDT | +17.63% | $7,653,258.01 |
+| DOLO/USDT:USDT | +32.30% | $1,454,612.47 |
+| AIO/USDT:USDT | +30.88% | $6,162,074.34 |
+| MARSCOIN/USDT:USDT | +25.63% | $1,186,059.18 |
+| PORTAL/USDT:USDT | +24.08% | $6,086,982.82 |
+| CHIP/USDT:USDT | +19.71% | $7,715,162.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOLO/USDT:USDT | below_1h_threshold | +4.17% | +4.16% |
-| BTW/USDT:USDT | below_1h_threshold | +2.30% | +2.28% |
-| ROBO/USDT:USDT | below_1h_threshold | +2.29% | +2.27% |
-| RE/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.12% | +1.11% |
+| DOLO/USDT:USDT | below_1h_threshold | +4.33% | +4.30% |
+| ROBO/USDT:USDT | below_1h_threshold | +2.56% | +2.53% |
+| BTW/USDT:USDT | below_1h_threshold | +2.49% | +2.46% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.18% | +2.14% |
+| WLD/USDT:USDT | below_1h_threshold | +1.35% | +1.32% |
 
 ## 7. 次に見るべき不足
 
