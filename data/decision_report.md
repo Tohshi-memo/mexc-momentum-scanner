@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T00:11:26.827332+00:00
+- generated_at: 2026-08-16T00:16:22.075053+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11704**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T00:11:15.102897+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63042.2
+- 更新: 2026-08-16T00:16:13.781570+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=63041.0
 - Funnel: target 985 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +31.25% | $3,439,009.26 |
-| BULLA/USDT:USDT | +11.56% | $2,537,574.41 |
-| HEMI/USDT:USDT | +9.77% | $4,002,606.67 |
-| H/USDT:USDT | +9.64% | $5,680,975.36 |
-| BTW/USDT:USDT | +7.62% | $11,035,180.21 |
+| SPORTFUN/USDT:USDT | +26.90% | $3,496,640.22 |
+| BULLA/USDT:USDT | +11.67% | $2,545,721.44 |
+| H/USDT:USDT | +9.92% | $5,701,300.66 |
+| ROBO/USDT:USDT | +7.25% | $8,813,189.52 |
+| BTW/USDT:USDT | +7.24% | $11,040,433.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CROSS/USDT:USDT | below_1h_threshold | +3.29% | +3.31% |
-| PRL/USDT:USDT | below_1h_threshold | +3.07% | +3.09% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.09% | +2.10% |
-| US/USDT:USDT | below_1h_threshold | +1.96% | +1.98% |
-| H/USDT:USDT | below_1h_threshold | +1.37% | +1.39% |
+| CROSS/USDT:USDT | below_1h_threshold | +3.63% | +3.65% |
+| PRL/USDT:USDT | below_1h_threshold | +2.65% | +2.67% |
+| US/USDT:USDT | below_1h_threshold | +1.93% | +1.95% |
+| ROBO/USDT:USDT | below_1h_threshold | +1.78% | +1.80% |
+| H/USDT:USDT | below_1h_threshold | +1.60% | +1.62% |
 
 ## 7. 次に見るべき不足
 
