@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T02:41:25.188244+00:00
+- generated_at: 2026-08-16T02:46:20.532195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11711**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T02:41:16.458318+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63097.6
+- 更新: 2026-08-16T02:46:11.994504+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63110.6
 - Funnel: target 985 → liquid 136 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.7 >= 65=1
+- Strict後reject: 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +19.32% | $4,228,055.92 |
-| H/USDT:USDT | +13.21% | $6,272,173.02 |
-| CROSS/USDT:USDT | +12.75% | $1,229,350.82 |
-| AIO/USDT:USDT | +10.57% | $2,750,359.08 |
-| BASED/USDT:USDT | +10.43% | $1,720,914.62 |
+| SPORTFUN/USDT:USDT | +19.27% | $4,234,688.98 |
+| CROSS/USDT:USDT | +13.24% | $1,234,138.44 |
+| H/USDT:USDT | +13.07% | $6,283,129.79 |
+| BASED/USDT:USDT | +10.66% | $1,740,602.94 |
+| AIO/USDT:USDT | +10.22% | $2,757,333.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIO/USDT:USDT | below_1h_threshold | +4.93% | +4.86% |
-| US/USDT:USDT | below_1h_threshold | +3.46% | +3.39% |
-| ROBO/USDT:USDT | below_1h_threshold | +3.42% | +3.35% |
-| PRL/USDT:USDT | below_1h_threshold | +2.26% | +2.19% |
-| H/USDT:USDT | below_1h_threshold | +1.15% | +1.07% |
+| AIO/USDT:USDT | below_1h_threshold | +4.60% | +4.51% |
+| US/USDT:USDT | below_1h_threshold | +3.81% | +3.72% |
+| ROBO/USDT:USDT | below_1h_threshold | +3.57% | +3.47% |
+| PRL/USDT:USDT | below_1h_threshold | +2.18% | +2.08% |
+| H/USDT:USDT | below_1h_threshold | +1.02% | +0.93% |
 
 ## 7. 次に見るべき不足
 
