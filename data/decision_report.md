@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T16:21:26.702968+00:00
+- generated_at: 2026-08-16T16:26:21.340078+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11753**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T16:21:16.647432+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=63280.1
-- Funnel: target 986 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-16T16:26:14.519761+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=63300.4
+- Funnel: target 986 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ROBO/USDT:USDT | +3.42% | $1,279,969.96 |
-| PRL/USDT:USDT | +3.35% | $1,653,124.05 |
-| SPORTFUN/USDT:USDT | +2.94% | $5,062,697.33 |
-| WLD/USDT:USDT | +1.45% | $43,811,143.92 |
-| RIVER/USDT:USDT | +1.22% | $1,140,123.93 |
+| ROBO/USDT:USDT | +4.34% | $1,317,586.28 |
+| AIO/USDT:USDT | +3.03% | $6,561,522.62 |
+| PRL/USDT:USDT | +2.66% | $1,679,938.02 |
+| SPORTFUN/USDT:USDT | +2.33% | $5,071,964.56 |
+| H/USDT:USDT | +2.11% | $15,784,100.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PRL/USDT:USDT | below_1h_threshold | +3.82% | +3.56% |
-| ROBO/USDT:USDT | below_1h_threshold | +3.36% | +3.09% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +2.98% | +2.72% |
-| WLD/USDT:USDT | below_1h_threshold | +1.45% | +1.19% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.27% | +1.01% |
+| ROBO/USDT:USDT | below_1h_threshold | +4.34% | +4.05% |
+| AIO/USDT:USDT | below_1h_threshold | +3.04% | +2.74% |
+| PRL/USDT:USDT | below_1h_threshold | +2.82% | +2.52% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +2.51% | +2.21% |
+| H/USDT:USDT | below_1h_threshold | +2.11% | +1.82% |
 
 ## 7. 次に見るべき不足
 
