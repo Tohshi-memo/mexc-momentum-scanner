@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T16:06:21.341923+00:00
+- generated_at: 2026-08-16T16:11:21.898797+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11751**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T16:06:12.845102+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63109.0
-- Funnel: target 986 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-16T16:11:13.333134+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63127.8
+- Funnel: target 986 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONG/USDT:USDT | +4.14% | $1,010,517.00 |
-| CYS/USDT:USDT | +2.07% | $52,342,416.61 |
-| PRL/USDT:USDT | +2.03% | $1,579,542.21 |
-| APR/USDT:USDT | +1.79% | $5,049,398.42 |
-| SPORTFUN/USDT:USDT | +1.25% | $5,049,001.39 |
+| ROBO/USDT:USDT | +3.02% | $1,231,404.19 |
+| ONG/USDT:USDT | +2.61% | $1,022,625.00 |
+| CYS/USDT:USDT | +2.07% | $52,476,195.09 |
+| SPORTFUN/USDT:USDT | +2.03% | $5,051,464.69 |
+| PORTAL/USDT:USDT | +2.02% | $6,522,296.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +4.13% | +4.14% |
-| CYS/USDT:USDT | below_1h_threshold | +2.23% | +2.24% |
-| APR/USDT:USDT | below_1h_threshold | +1.80% | +1.81% |
-| PRL/USDT:USDT | below_1h_threshold | +1.76% | +1.77% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
+| ROBO/USDT:USDT | below_1h_threshold | +3.03% | +3.00% |
+| ONG/USDT:USDT | below_1h_threshold | +2.61% | +2.59% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +2.08% | +2.05% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.02% | +2.00% |
+| CYS/USDT:USDT | below_1h_threshold | +1.66% | +1.64% |
 
 ## 7. 次に見るべき不足
 
