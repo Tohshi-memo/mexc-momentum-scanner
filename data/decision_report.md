@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T00:26:26.892912+00:00
+- generated_at: 2026-08-16T00:31:18.869453+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11704**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T00:26:18.144171+00:00 / 保存件数 288/288
+- 更新: 2026-08-16T00:31:12.491523+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h -0.02% price=63040.9
 - Funnel: target 985 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1
+- Strict後reject: 4h RSI 65.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPORTFUN/USDT:USDT | +16.68% | $3,675,735.99 |
-| CHIP/USDT:USDT | +11.59% | $1,292,246.42 |
-| BULLA/USDT:USDT | +11.46% | $2,553,959.49 |
-| H/USDT:USDT | +11.21% | $5,755,358.30 |
-| BTW/USDT:USDT | +6.82% | $11,061,976.30 |
+| SPORTFUN/USDT:USDT | +16.55% | $3,782,004.81 |
+| CHIP/USDT:USDT | +10.73% | $1,297,137.94 |
+| H/USDT:USDT | +10.66% | $5,772,338.01 |
+| BULLA/USDT:USDT | +10.39% | $2,569,171.45 |
+| ROBO/USDT:USDT | +7.03% | $8,821,879.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.45% | +3.47% |
-| CROSS/USDT:USDT | below_1h_threshold | +3.21% | +3.23% |
-| H/USDT:USDT | below_1h_threshold | +2.92% | +2.94% |
-| PRL/USDT:USDT | below_1h_threshold | +2.56% | +2.58% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.98% | +2.00% |
+| CROSS/USDT:USDT | below_1h_threshold | +4.02% | +4.04% |
+| PRL/USDT:USDT | below_1h_threshold | +3.29% | +3.31% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.54% | +2.56% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.52% | +2.54% |
+| H/USDT:USDT | below_1h_threshold | +2.32% | +2.34% |
 
 ## 7. 次に見るべき不足
 
