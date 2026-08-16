@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T17:06:20.269596+00:00
+- generated_at: 2026-08-16T17:11:23.752765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11756**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T17:06:11.818059+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=63243.2
+- 更新: 2026-08-16T17:11:15.207431+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=63198.1
 - Funnel: target 986 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +8.68% | $6,373,036.73 |
-| AIO/USDT:USDT | +6.58% | $6,921,485.21 |
-| RIVER/USDT:USDT | +4.35% | $1,358,514.57 |
-| WLD/USDT:USDT | +3.37% | $45,718,710.46 |
-| PRL/USDT:USDT | +3.18% | $1,737,511.02 |
+| PORTAL/USDT:USDT | +5.84% | $6,485,162.04 |
+| AIO/USDT:USDT | +5.78% | $6,971,062.97 |
+| RIVER/USDT:USDT | +4.57% | $1,411,889.14 |
+| WLD/USDT:USDT | +2.98% | $46,567,357.45 |
+| ROBO/USDT:USDT | +2.76% | $1,264,637.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +1.54% | +1.52% |
-| AKE/USDT:USDT | below_1h_threshold | +1.27% | +1.25% |
-| CYS/USDT:USDT | below_1h_threshold | +1.21% | +1.19% |
-| PRL/USDT:USDT | below_1h_threshold | +1.03% | +1.01% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.64% | +0.63% |
+| CYS/USDT:USDT | below_1h_threshold | +2.64% | +2.70% |
+| PIXEL/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
+| AKE/USDT:USDT | below_1h_threshold | +0.89% | +0.95% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +0.78% | +0.84% |
+| XAI/USDT:USDT | below_1h_threshold | +0.64% | +0.69% |
 
 ## 7. 次に見るべき不足
 
