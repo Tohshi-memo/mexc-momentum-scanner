@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T13:56:26.527551+00:00
+- generated_at: 2026-08-16T14:01:23.532472+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11745**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T13:56:17.893213+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63040.0
-- Funnel: target 986 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-16T14:01:15.262028+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63035.9
+- Funnel: target 986 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +38.26% | $4,530,736.77 |
-| AIO/USDT:USDT | +24.28% | $5,413,193.03 |
-| SPORTFUN/USDT:USDT | +16.27% | $4,914,637.61 |
-| CHIP/USDT:USDT | +13.87% | $6,475,133.10 |
-| BTW/USDT:USDT | +13.13% | $13,999,951.36 |
+| PORTAL/USDT:USDT | +37.91% | $4,612,554.36 |
+| AIO/USDT:USDT | +24.66% | $5,275,874.83 |
+| VELVET/USDT:USDT | +17.61% | $30,705,150.19 |
+| SPORTFUN/USDT:USDT | +16.08% | $4,911,133.32 |
+| CHIP/USDT:USDT | +14.02% | $6,519,475.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PRL/USDT:USDT | below_1h_threshold | +4.22% | +4.14% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.73% | +3.65% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.43% | +3.35% |
-| RE/USDT:USDT | below_1h_threshold | +3.40% | +3.32% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.38% | +3.29% |
+| BICO/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| HEI/USDT:USDT | below_1h_threshold | +0.88% | +0.88% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.48% |
+| AIO/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
 
 ## 7. 次に見るべき不足
 
