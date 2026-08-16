@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T11:46:27.381278+00:00
+- generated_at: 2026-08-16T11:51:45.023551+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11734**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.38** / 初期 $100.00 (+19.38%)
-- 確定: 1636件 (Win 496 / Loss 619 / Flat 521) / pending 6件 / skip 1566件
+- 確定: 1636件 (Win 496 / Loss 619 / Flat 521) / pending 6件 / skip 1569件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000182 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BICO/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $119.38
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T11:46:15.879984+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=62963.8
-- Funnel: target 986 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-16T11:51:28.126866+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=62949.8
+- Funnel: target 986 → liquid 138 → pre 50 → checked 50 → surge 5 → strict 3
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 66.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +17.99% | $9,272,094.60 |
-| CHIP/USDT:USDT | +16.41% | $4,350,996.39 |
-| SPORTFUN/USDT:USDT | +15.58% | $4,763,294.37 |
-| VELVET/USDT:USDT | +14.32% | $30,511,112.51 |
-| AIO/USDT:USDT | +14.27% | $4,730,790.60 |
+| SKYAI/USDT:USDT | +16.83% | $9,320,418.24 |
+| SPORTFUN/USDT:USDT | +15.71% | $4,770,732.34 |
+| BICO/USDT:USDT | +15.60% | $4,216,028.47 |
+| CHIP/USDT:USDT | +14.81% | $4,701,631.17 |
+| VELVET/USDT:USDT | +14.22% | $30,702,791.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +4.73% | +4.76% |
-| PRL/USDT:USDT | below_1h_threshold | +2.67% | +2.70% |
-| ROBO/USDT:USDT | below_1h_threshold | +1.93% | +1.96% |
-| XMR/USDT:USDT | below_1h_threshold | +1.55% | +1.58% |
-| XAI/USDT:USDT | below_1h_threshold | +1.38% | +1.41% |
+| ROBO/USDT:USDT | below_1h_threshold | +2.72% | +2.77% |
+| XAI/USDT:USDT | below_1h_threshold | +2.03% | +2.08% |
+| WLFI/USDT:USDT | below_1h_threshold | +1.27% | +1.32% |
+| UAI/USDT:USDT | below_1h_threshold | +1.08% | +1.13% |
+| AEON1/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
 
 ## 7. 次に見るべき不足
 
