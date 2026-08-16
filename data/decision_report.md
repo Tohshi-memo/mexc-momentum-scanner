@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T15:41:30.016868+00:00
+- generated_at: 2026-08-16T15:46:24.326480+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11751**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T15:41:18.824377+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=63108.2
-- Funnel: target 986 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.2 >= 65=1
+- 更新: 2026-08-16T15:46:15.714148+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63090.0
+- Funnel: target 986 → liquid 144 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +31.48% | $6,199,251.48 |
-| DOLO/USDT:USDT | +29.22% | $1,484,565.74 |
-| MARSCOIN/USDT:USDT | +29.19% | $1,190,671.58 |
-| PORTAL/USDT:USDT | +20.78% | $6,192,343.15 |
-| BTW/USDT:USDT | +18.41% | $15,181,400.15 |
+| AIO/USDT:USDT | +28.27% | $6,289,717.80 |
+| DOLO/USDT:USDT | +27.85% | $1,538,679.76 |
+| MARSCOIN/USDT:USDT | +27.79% | $1,194,219.06 |
+| PORTAL/USDT:USDT | +20.78% | $6,276,261.17 |
+| BTW/USDT:USDT | +18.21% | $15,252,579.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.31% | +3.26% |
-| BTW/USDT:USDT | below_1h_threshold | +2.66% | +2.61% |
-| ROBO/USDT:USDT | below_1h_threshold | +2.56% | +2.51% |
-| WLD/USDT:USDT | below_1h_threshold | +2.28% | +2.22% |
-| DOLO/USDT:USDT | below_1h_threshold | +1.97% | +1.92% |
+| AIO/USDT:USDT | below_1h_threshold | +4.92% | +4.90% |
+| WLD/USDT:USDT | below_1h_threshold | +2.88% | +2.86% |
+| BTW/USDT:USDT | below_1h_threshold | +2.57% | +2.55% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.26% | +2.24% |
+| ROBO/USDT:USDT | below_1h_threshold | +1.75% | +1.73% |
 
 ## 7. 次に見るべき不足
 
