@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T13:26:23.438569+00:00
+- generated_at: 2026-08-16T13:31:26.758250+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11745**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T13:26:13.534077+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=63040.0
+- 更新: 2026-08-16T13:31:18.502972+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=63040.3
 - Funnel: target 986 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +30.06% | $3,688,968.18 |
-| AIO/USDT:USDT | +20.94% | $5,208,439.82 |
-| SPORTFUN/USDT:USDT | +16.59% | $4,891,654.79 |
-| VELVET/USDT:USDT | +15.82% | $30,173,644.88 |
-| BICO/USDT:USDT | +13.44% | $4,169,505.29 |
+| PORTAL/USDT:USDT | +31.93% | $3,861,301.43 |
+| AIO/USDT:USDT | +20.96% | $5,231,664.71 |
+| SPORTFUN/USDT:USDT | +17.52% | $4,897,325.91 |
+| VELVET/USDT:USDT | +15.40% | $30,226,512.93 |
+| BICO/USDT:USDT | +14.18% | $4,255,756.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +4.01% | +3.92% |
-| BICO/USDT:USDT | below_1h_threshold | +3.53% | +3.45% |
-| PRL/USDT:USDT | below_1h_threshold | +3.50% | +3.42% |
-| AIO/USDT:USDT | below_1h_threshold | +3.33% | +3.25% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.81% | +2.72% |
+| APR/USDT:USDT | below_1h_threshold | +4.32% | +4.24% |
+| BICO/USDT:USDT | below_1h_threshold | +4.29% | +4.20% |
+| PRL/USDT:USDT | below_1h_threshold | +3.91% | +3.83% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.15% | +3.07% |
+| ROBO/USDT:USDT | below_1h_threshold | +3.10% | +3.02% |
 
 ## 7. 次に見るべき不足
 
