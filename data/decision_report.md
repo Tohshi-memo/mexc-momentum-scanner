@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T04:11:19.824482+00:00
+- generated_at: 2026-08-16T04:16:31.394479+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11714**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.28** / 初期 $100.00 (+19.28%)
-- 確定: 1626件 (Win 495 / Loss 618 / Flat 513) / pending 0件 / skip 1558件
+- 確定: 1626件 (Win 495 / Loss 618 / Flat 513) / pending 0件 / skip 1559件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000087 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: H/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T04:11:11.407867+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=63096.5
-- Funnel: target 986 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-16T04:16:20.320867+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63099.9
+- Funnel: target 986 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +22.67% | $5,467,976.20 |
-| CROSS/USDT:USDT | +18.43% | $1,207,234.55 |
-| SPORTFUN/USDT:USDT | +17.70% | $4,288,240.35 |
-| H/USDT:USDT | +14.46% | $6,637,853.40 |
-| BASED/USDT:USDT | +11.36% | $2,065,401.52 |
+| HEMI/USDT:USDT | +21.06% | $5,490,534.74 |
+| SPORTFUN/USDT:USDT | +18.07% | $4,291,224.23 |
+| CROSS/USDT:USDT | +17.17% | $1,209,856.86 |
+| H/USDT:USDT | +14.81% | $6,694,465.72 |
+| BASED/USDT:USDT | +11.65% | $2,074,498.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +2.56% | +2.56% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.41% | +2.41% |
-| AIO/USDT:USDT | below_1h_threshold | +1.96% | +1.96% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
-| PRL/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
+| BICO/USDT:USDT | below_1h_threshold | +2.38% | +2.37% |
+| AIO/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.23% | +1.22% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.04% | +1.03% |
+| H/USDT:USDT | below_1h_threshold | +1.04% | +1.03% |
 
 ## 7. 次に見るべき不足
 
