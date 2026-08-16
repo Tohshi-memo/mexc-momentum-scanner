@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T17:11:23.752765+00:00
+- generated_at: 2026-08-16T17:16:20.939965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11756**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T17:11:15.207431+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63198.1
+- 更新: 2026-08-16T17:16:12.602977+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=63195.1
 - Funnel: target 986 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +5.84% | $6,485,162.04 |
-| AIO/USDT:USDT | +5.78% | $6,971,062.97 |
-| RIVER/USDT:USDT | +4.57% | $1,411,889.14 |
-| WLD/USDT:USDT | +2.98% | $46,567,357.45 |
-| ROBO/USDT:USDT | +2.76% | $1,264,637.54 |
+| PORTAL/USDT:USDT | +6.06% | $6,518,563.36 |
+| AIO/USDT:USDT | +6.00% | $6,999,720.25 |
+| RIVER/USDT:USDT | +4.57% | $1,526,160.11 |
+| PRL/USDT:USDT | +3.13% | $1,756,515.17 |
+| WLD/USDT:USDT | +3.09% | $46,957,748.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +2.64% | +2.70% |
-| PIXEL/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
-| AKE/USDT:USDT | below_1h_threshold | +0.89% | +0.95% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +0.78% | +0.84% |
-| XAI/USDT:USDT | below_1h_threshold | +0.64% | +0.69% |
+| CYS/USDT:USDT | below_1h_threshold | +2.40% | +2.46% |
+| PIXEL/USDT:USDT | below_1h_threshold | +1.52% | +1.58% |
+| PRL/USDT:USDT | below_1h_threshold | +0.98% | +1.04% |
+| XAI/USDT:USDT | below_1h_threshold | +0.85% | +0.91% |
+| SPX/USDT:USDT | below_1h_threshold | +0.72% | +0.78% |
 
 ## 7. 次に見るべき不足
 
