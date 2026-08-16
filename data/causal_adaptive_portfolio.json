@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 119.48050772801227,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-08-16T15:06:20.138369+00:00",
+  "updated_at": "2026-08-16T15:11:26.855373+00:00",
   "high_watermark": 119.7568885757486,
   "max_drawdown_pct": 4.863437935184303,
   "loss_streak": 1,
@@ -339720,6 +339720,103 @@
       },
       "settled_at": "2026-08-16T14:45:45.347214+00:00",
       "outcome": "SL_HIT"
+    },
+    "DOLO/USDT:USDT|2026-08-16T15:11:20.513877+00:00": {
+      "key": "DOLO/USDT:USDT|2026-08-16T15:11:20.513877+00:00",
+      "symbol": "DOLO/USDT:USDT",
+      "detected_at": "2026-08-16T15:11:20.513877+00:00",
+      "registered_at": "2026-08-16T15:11:26.792133+00:00",
+      "signal_batch": "2026-08-16T15:11Z",
+      "status": "pending",
+      "strategy": "MARKET",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 6.392283887571527,
+      "decision": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.00013511255150682768,
+        "robust_score": 0.00013511255150682768,
+        "causal_history_count": 11748,
+        "fast": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.168731341823072,
+          "effective_ev_pct": 0.168731341823072,
+          "avg_log_return": 0.00012108363918376032,
+          "geometric_return_pct": 0.01210909701034879,
+          "avg_account_return_pct": 0.01239653264105276,
+          "max_drawdown_pct": 1.7729161562667568,
+          "max_loss_streak": 5
+        },
+        "recent": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.168731341823072,
+          "effective_ev_pct": 0.168731341823072,
+          "avg_log_return": 0.00012108363918376032,
+          "geometric_return_pct": 0.01210909701034879,
+          "avg_account_return_pct": 0.01239653264105276,
+          "max_drawdown_pct": 1.7729161562667568,
+          "max_loss_streak": 5
+        },
+        "mid": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 200,
+          "filled": 200,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.44153460924111526,
+          "effective_ev_pct": 0.44153460924111526,
+          "avg_log_return": 0.00023050505918208313,
+          "geometric_return_pct": 0.023053162751462963,
+          "avg_account_return_pct": 0.023351798824775716,
+          "max_drawdown_pct": 2.495066893202929,
+          "max_loss_streak": 11
+        },
+        "long": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.10905628501995619,
+          "effective_ev_pct": -0.10905628501995619,
+          "avg_log_return": -4.233118659102905e-06,
+          "geometric_return_pct": -0.0004233109699436355,
+          "avg_account_return_pct": -0.0001350974062912472,
+          "max_drawdown_pct": 7.914586260151873,
+          "max_loss_streak": 21
+        },
+        "all": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.10905628501995619,
+          "effective_ev_pct": -0.10905628501995619,
+          "avg_log_return": -4.233118659102905e-06,
+          "geometric_return_pct": -0.0004233109699436355,
+          "avg_account_return_pct": -0.0001350974062912472,
+          "max_drawdown_pct": 7.914586260151873,
+          "max_loss_streak": 21
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 7.297542664263348e-05
+          }
+        ]
+      }
     }
   },
   "causal_history": true
