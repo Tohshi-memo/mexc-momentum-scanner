@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-16T08:21:24.891803+00:00
+- generated_at: 2026-08-16T08:26:30.782385+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11727**
+- closed shadow trades: **11728**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=11727, expectancy=-0.01%
+- 全期間 MARKET基準: n=11728, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.11%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,9 +31,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.81% | **+1.36%** |
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +1.24% | **+1.18%** |
-| LIMIT_ATR_LONG | 13/20 | 65.0% | +1.76% | **+1.15%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +1.50% | **+1.05%** |
+| LIMIT_ATR_LONG | 12/20 | 60.0% | +1.41% | **+0.85%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.51% | **+0.51%** |
 | LIMIT_3PCT_LONG | 11/20 | 55.0% | +0.77% | **+0.42%** |
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$620.90** / 初期 $100.00 (+520.90%)
-- 確定: 4183件 (Win 1292 / Loss 1363 / Flat 1528) / skip 4105件
+- 確定: 4183件 (Win 1292 / Loss 1363 / Flat 1528) / skip 4106件
 - 成長率目線: 平均log +0.000437 / 幾何平均 +0.044% per trade / maxDD +8.13%
-- 次の候補: `LIMIT_5PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: CROSS/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $620.90
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.89** / 初期 $100.00 (+54.89%)
-- 確定: 1780件 (Win 495 / Loss 417 / Flat 868) / skip 3358件
+- 確定: 1780件 (Win 495 / Loss 417 / Flat 868) / skip 3359件
 - 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score +0.0045 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: US/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $154.89
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.28** / 初期 $100.00 (+19.28%)
-- 確定: 1630件 (Win 495 / Loss 618 / Flat 517) / pending 3件 / skip 1566件
+- 確定: 1631件 (Win 495 / Loss 618 / Flat 518) / pending 3件 / skip 1566件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000129 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: US/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $119.28
+- 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000100 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: VELVET/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $119.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T08:21:14.229899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=63030.1
-- Funnel: target 986 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-16T08:26:18.634790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63042.9
+- Funnel: target 986 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +30.92% | $7,879,762.80 |
-| VELVET/USDT:USDT | +21.40% | $26,484,862.80 |
-| AIO/USDT:USDT | +18.03% | $3,374,395.13 |
-| H/USDT:USDT | +16.95% | $9,292,222.35 |
-| SPORTFUN/USDT:USDT | +15.95% | $4,522,035.23 |
+| HEMI/USDT:USDT | +31.18% | $7,914,820.88 |
+| VELVET/USDT:USDT | +21.59% | $26,827,189.72 |
+| AIO/USDT:USDT | +18.88% | $3,384,325.17 |
+| SPORTFUN/USDT:USDT | +17.29% | $4,530,047.21 |
+| H/USDT:USDT | +15.98% | $9,366,226.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.25% | +4.26% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.21% | +2.22% |
-| BOME/USDT:USDT | below_1h_threshold | +2.00% | +2.01% |
-| AIO/USDT:USDT | below_1h_threshold | +1.68% | +1.69% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.46% | +1.46% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +2.92% | +2.90% |
+| BOME/USDT:USDT | below_1h_threshold | +2.77% | +2.76% |
+| BTW/USDT:USDT | below_1h_threshold | +2.46% | +2.45% |
+| AIO/USDT:USDT | below_1h_threshold | +2.33% | +2.31% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.70% | +1.68% |
 
 ## 7. 次に見るべき不足
 
