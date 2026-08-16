@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-16T19:16:23.513287+00:00
+- generated_at: 2026-08-16T19:21:20.414778+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11768**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-16T19:16:15.067015+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=63154.8
+- 更新: 2026-08-16T19:21:13.688699+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=63174.0
 - Funnel: target 986 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HFT/USDT:USDT | +35.77% | $1,809,709.44 |
-| PORTAL/USDT:USDT | +26.14% | $9,125,463.63 |
-| APR/USDT:USDT | +21.17% | $5,632,636.17 |
-| BTW/USDT:USDT | +9.51% | $16,851,405.11 |
-| RIVER/USDT:USDT | +5.54% | $2,430,259.58 |
+| HFT/USDT:USDT | +35.44% | $1,825,870.81 |
+| PORTAL/USDT:USDT | +29.21% | $9,180,146.15 |
+| APR/USDT:USDT | +17.47% | $5,687,287.65 |
+| BTW/USDT:USDT | +8.54% | $16,960,266.85 |
+| RIVER/USDT:USDT | +5.58% | $2,441,537.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HFT/USDT:USDT | below_1h_threshold | +3.86% | +3.79% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.14% | +3.07% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.66% | +1.59% |
-| XAI/USDT:USDT | below_1h_threshold | +1.63% | +1.56% |
-| BTW/USDT:USDT | below_1h_threshold | +1.51% | +1.44% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.86% | +3.77% |
+| HFT/USDT:USDT | below_1h_threshold | +3.61% | +3.51% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.92% | +2.82% |
+| XAI/USDT:USDT | below_1h_threshold | +1.99% | +1.90% |
+| ADA/USDT:USDT | below_1h_threshold | +1.37% | +1.27% |
 
 ## 7. 次に見るべき不足
 
