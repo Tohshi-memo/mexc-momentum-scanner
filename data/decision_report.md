@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T07:56:20.427668+00:00
+- generated_at: 2026-08-17T08:01:21.494508+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11808**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T07:56:11.977807+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=63516.9
-- Funnel: target 991 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-17T08:01:12.896250+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=63522.2
+- Funnel: target 991 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +139.11% | $1,073,372.91 |
-| GPS/USDT:USDT | +40.77% | $6,052,724.98 |
-| PORTAL/USDT:USDT | +23.29% | $17,277,970.68 |
-| TUT/USDT:USDT | +15.66% | $8,444,491.54 |
-| ONG/USDT:USDT | +13.97% | $1,383,667.28 |
+| NIULAI/USDT:USDT | +134.82% | $1,075,900.44 |
+| GPS/USDT:USDT | +42.10% | $6,006,638.29 |
+| PORTAL/USDT:USDT | +22.69% | $17,277,674.02 |
+| ONG/USDT:USDT | +14.32% | $1,367,441.88 |
+| TUT/USDT:USDT | +13.67% | $8,395,726.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.99% | +4.18% |
-| AKE/USDT:USDT | below_1h_threshold | +3.43% | +3.61% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.88% |
-| O/USDT:USDT | below_1h_threshold | +2.59% | +2.78% |
-| ACE/USDT:USDT | below_1h_threshold | +2.35% | +2.53% |
+| ONG/USDT:USDT | below_1h_threshold | +0.81% | +0.77% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.70% |
+| MASTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.60% |
+| US/USDT:USDT | below_1h_threshold | +0.59% | +0.55% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.47% | +0.43% |
 
 ## 7. 次に見るべき不足
 
