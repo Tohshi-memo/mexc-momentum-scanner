@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T05:51:21.028100+00:00
+- generated_at: 2026-08-17T05:56:15.593752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11807**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T05:51:12.757292+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=63477.1
+- 更新: 2026-08-17T05:56:08.847926+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63494.0
 - Funnel: target 986 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GPS/USDT:USDT | +40.26% | $4,570,255.41 |
-| PORTAL/USDT:USDT | +29.58% | $16,664,762.91 |
-| TUT/USDT:USDT | +27.31% | $7,014,578.51 |
-| US/USDT:USDT | +19.12% | $1,729,377.08 |
-| SKYAI/USDT:USDT | +14.94% | $12,077,136.50 |
+| GPS/USDT:USDT | +39.05% | $4,624,788.69 |
+| PORTAL/USDT:USDT | +29.58% | $16,727,294.65 |
+| TUT/USDT:USDT | +23.32% | $7,123,018.59 |
+| US/USDT:USDT | +15.11% | $1,747,396.94 |
+| SKYAI/USDT:USDT | +12.67% | $12,263,541.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.78% | +1.84% |
-| AKE/USDT:USDT | below_1h_threshold | +1.33% | +1.39% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.07% | +1.13% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.73% | +0.79% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.63% | +0.68% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.63% | +1.66% |
+| AKE/USDT:USDT | below_1h_threshold | +1.60% | +1.63% |
+| SPORTFUN/USDT:USDT | below_1h_threshold | +1.30% | +1.33% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.63% | +0.66% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.55% | +0.58% |
 
 ## 7. 次に見るべき不足
 
