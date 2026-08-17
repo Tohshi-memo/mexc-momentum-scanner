@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T05:56:15.593752+00:00
+- generated_at: 2026-08-17T06:01:22.420532+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11807**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T05:56:08.847926+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63494.0
-- Funnel: target 986 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-17T06:01:13.993988+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=63479.8
+- Funnel: target 986 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GPS/USDT:USDT | +39.05% | $4,624,788.69 |
-| PORTAL/USDT:USDT | +29.58% | $16,727,294.65 |
-| TUT/USDT:USDT | +23.32% | $7,123,018.59 |
-| US/USDT:USDT | +15.11% | $1,747,396.94 |
-| SKYAI/USDT:USDT | +12.67% | $12,263,541.99 |
+| GPS/USDT:USDT | +39.63% | $4,631,034.15 |
+| PORTAL/USDT:USDT | +29.51% | $16,753,626.69 |
+| TUT/USDT:USDT | +22.82% | $7,095,170.32 |
+| US/USDT:USDT | +13.58% | $1,636,196.79 |
+| ACE/USDT:USDT | +11.75% | $16,752,740.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +1.63% | +1.66% |
-| AKE/USDT:USDT | below_1h_threshold | +1.60% | +1.63% |
-| SPORTFUN/USDT:USDT | below_1h_threshold | +1.30% | +1.33% |
-| ONDO/USDT:USDT | below_1h_threshold | +0.63% | +0.66% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.55% | +0.58% |
+| KORU/USDT:USDT | below_1h_threshold | +2.26% | +2.27% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.02% | +2.03% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.27% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.23% |
 
 ## 7. 次に見るべき不足
 
