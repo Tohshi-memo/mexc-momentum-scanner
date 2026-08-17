@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T03:46:40.400426+00:00
+- generated_at: 2026-08-17T03:51:38.052337+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11794**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T03:46:24.768608+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=63327.2
+- 更新: 2026-08-17T03:51:23.720528+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=63366.2
 - Funnel: target 986 → liquid 152 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 83.6 >= 65=1
+- Strict後reject: 4h RSI 74.5 >= 65=1, 4h RSI 83.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +39.25% | $15,717,486.64 |
-| GPS/USDT:USDT | +28.82% | $2,378,256.02 |
-| ACE/USDT:USDT | +27.46% | $15,358,882.63 |
-| US/USDT:USDT | +14.17% | $1,684,147.57 |
-| HFT/USDT:USDT | +13.65% | $2,653,969.97 |
+| PORTAL/USDT:USDT | +40.52% | $15,760,459.60 |
+| GPS/USDT:USDT | +30.10% | $2,413,973.37 |
+| ACE/USDT:USDT | +25.27% | $15,653,698.10 |
+| US/USDT:USDT | +13.96% | $1,689,563.03 |
+| TUT/USDT:USDT | +13.67% | $4,810,471.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.91% |
-| BR/USDT:USDT | below_1h_threshold | +2.67% | +2.76% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.33% |
-| KORU/USDT:USDT | below_1h_threshold | +1.14% | +1.23% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.09% | +1.18% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.85% |
+| BR/USDT:USDT | below_1h_threshold | +2.04% | +2.07% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.27% |
+| KORU/USDT:USDT | below_1h_threshold | +1.14% | +1.16% |
 
 ## 7. 次に見るべき不足
 
