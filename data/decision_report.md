@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T08:46:37.191620+00:00
+- generated_at: 2026-08-17T08:51:28.543236+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11809**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T08:46:25.090312+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=63349.9
-- Funnel: target 991 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 65.4 >= 65=1
+- 更新: 2026-08-17T08:51:19.442448+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=63327.2
+- Funnel: target 992 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.5 >= 65=1, 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +140.46% | $1,203,625.75 |
-| GPS/USDT:USDT | +45.64% | $7,659,072.98 |
-| PORTAL/USDT:USDT | +20.29% | $17,635,331.86 |
-| TUT/USDT:USDT | +18.15% | $8,736,878.05 |
-| AEON1/USDT:USDT | +15.18% | $1,041,919.25 |
+| NIULAI/USDT:USDT | +145.98% | $1,215,400.25 |
+| GPS/USDT:USDT | +43.82% | $7,761,543.70 |
+| TUT/USDT:USDT | +18.46% | $8,779,896.35 |
+| PORTAL/USDT:USDT | +17.67% | $17,680,290.56 |
+| AEON1/USDT:USDT | +14.72% | $1,044,969.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| US/USDT:USDT | below_1h_threshold | +3.85% | +4.08% |
-| ACE/USDT:USDT | below_1h_threshold | +3.16% | +3.39% |
-| GPS/USDT:USDT | below_1h_threshold | +3.01% | +3.23% |
-| TUT/USDT:USDT | below_1h_threshold | +2.43% | +2.66% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.31% | +2.54% |
+| BSB/USDT:USDT | below_1h_threshold | +4.21% | +4.48% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.92% | +4.18% |
+| NIULAI/USDT:USDT | below_1h_threshold | +3.75% | +4.01% |
+| ACE/USDT:USDT | below_1h_threshold | +3.12% | +3.38% |
+| TUT/USDT:USDT | below_1h_threshold | +2.59% | +2.86% |
 
 ## 7. 次に見るべき不足
 
