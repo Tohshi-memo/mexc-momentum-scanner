@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T11:01:26.021748+00:00
+- generated_at: 2026-08-17T11:06:23.483988+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11819**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T11:01:17.532670+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=63627.6
-- Funnel: target 992 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-17T11:06:14.802927+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=63636.6
+- Funnel: target 992 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +120.47% | $1,766,585.05 |
-| GPS/USDT:USDT | +55.94% | $12,237,550.21 |
-| ACE/USDT:USDT | +41.18% | $20,943,388.67 |
-| PORTAL/USDT:USDT | +18.72% | $18,210,865.46 |
-| TUT/USDT:USDT | +15.54% | $9,383,564.99 |
+| NIULAI/USDT:USDT | +116.43% | $1,803,761.30 |
+| GPS/USDT:USDT | +54.60% | $12,356,610.33 |
+| ACE/USDT:USDT | +43.77% | $21,359,091.55 |
+| PORTAL/USDT:USDT | +20.97% | $18,244,673.85 |
+| TUT/USDT:USDT | +14.69% | $9,440,419.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.12% | +1.18% |
-| KORU/USDT:USDT | below_1h_threshold | +1.08% | +1.13% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.74% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.53% | +2.57% |
+| ACE/USDT:USDT | below_1h_threshold | +2.42% | +2.46% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.12% | +1.16% |
+| KORU/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.07% |
 
 ## 7. 次に見るべき不足
 
