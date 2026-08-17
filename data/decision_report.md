@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T12:56:25.343643+00:00
+- generated_at: 2026-08-17T13:01:30.980558+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11828**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T12:56:16.782634+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=63546.2
-- Funnel: target 992 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-17T13:01:22.531577+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=63526.6
+- Funnel: target 992 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +151.44% | $2,809,760.91 |
-| GPS/USDT:USDT | +48.03% | $16,779,776.50 |
-| ACE/USDT:USDT | +32.54% | $28,343,026.54 |
-| PORTAL/USDT:USDT | +30.11% | $18,818,482.37 |
-| UNITREE/USDT:USDT | +16.93% | $2,493,933.85 |
+| NIULAI/USDT:USDT | +153.83% | $2,820,113.91 |
+| GPS/USDT:USDT | +47.32% | $16,955,084.95 |
+| ACE/USDT:USDT | +31.40% | $27,684,756.79 |
+| PORTAL/USDT:USDT | +29.51% | $17,467,003.43 |
+| AEON1/USDT:USDT | +16.75% | $1,251,860.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +4.51% | +4.59% |
-| UNITREE/USDT:USDT | below_1h_threshold | +4.34% | +4.43% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.49% | +3.57% |
-| ONG/USDT:USDT | below_1h_threshold | +1.81% | +1.89% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.59% | +1.67% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.38% | +1.38% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.67% | +0.67% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.66% | +0.66% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.60% | +0.60% |
+| GPS/USDT:USDT | below_1h_threshold | +0.55% | +0.55% |
 
 ## 7. 次に見るべき不足
 
