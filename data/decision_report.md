@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T08:36:33.038061+00:00
+- generated_at: 2026-08-17T08:41:29.835504+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11809**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.37** / 初期 $100.00 (+18.37%)
-- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1610件
+- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1611件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000321 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $118.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T08:36:22.181392+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=63385.5
-- Funnel: target 991 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 70.9 >= 65=1
+- 更新: 2026-08-17T08:41:22.129047+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=63361.5
+- Funnel: target 991 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1, 4h RSI 66.0 >= 65=1, 4h RSI 65.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +146.71% | $1,185,041.51 |
-| GPS/USDT:USDT | +43.69% | $7,194,835.01 |
-| PORTAL/USDT:USDT | +21.34% | $17,555,951.21 |
-| TUT/USDT:USDT | +15.54% | $8,673,783.92 |
-| AEON1/USDT:USDT | +13.52% | $1,029,661.64 |
+| NIULAI/USDT:USDT | +143.77% | $1,192,503.76 |
+| GPS/USDT:USDT | +46.27% | $7,567,346.54 |
+| PORTAL/USDT:USDT | +21.04% | $17,597,435.65 |
+| TUT/USDT:USDT | +16.84% | $8,697,077.54 |
+| AEON1/USDT:USDT | +14.81% | $1,039,265.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +4.26% | +4.43% |
-| NIULAI/USDT:USDT | below_1h_threshold | +4.06% | +4.23% |
-| US/USDT:USDT | below_1h_threshold | +3.40% | +3.57% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.02% | +2.20% |
-| GPS/USDT:USDT | below_1h_threshold | +1.52% | +1.70% |
+| US/USDT:USDT | below_1h_threshold | +3.70% | +3.91% |
+| GPS/USDT:USDT | below_1h_threshold | +3.61% | +3.82% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.82% | +3.03% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.45% | +1.66% |
+| BR/USDT:USDT | below_1h_threshold | +1.37% | +1.58% |
 
 ## 7. 次に見るべき不足
 
