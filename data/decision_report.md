@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T15:11:21.309739+00:00
+- generated_at: 2026-08-17T15:16:25.882496+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11839**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$121.29** / 初期 $100.00 (+21.29%)
-- 確定トレード: 185件 (TP 71 / SL 109 / EXP 5)
-- 最新: BEAT/USDT:USDT SL_HIT PnL -4.00% 残高後 $121.29
+- 残高: **$121.53** / 初期 $100.00 (+21.53%)
+- 確定トレード: 186件 (TP 72 / SL 109 / EXP 5)
+- 最新: BR/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.53
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T15:11:13.277354+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=63919.8
+- 更新: 2026-08-17T15:16:17.633836+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=63878.3
 - Funnel: target 992 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +135.43% | $5,380,965.76 |
-| GPS/USDT:USDT | +50.87% | $25,066,347.33 |
-| ACE/USDT:USDT | +36.60% | $30,933,190.21 |
-| STAR/USDT:USDT | +34.14% | $1,019,169.51 |
-| PORTAL/USDT:USDT | +22.02% | $15,943,680.70 |
+| NIULAI/USDT:USDT | +139.36% | $5,397,351.66 |
+| GPS/USDT:USDT | +49.57% | $25,190,503.21 |
+| ACE/USDT:USDT | +37.50% | $31,039,937.66 |
+| STAR/USDT:USDT | +34.27% | $1,023,242.00 |
+| PORTAL/USDT:USDT | +22.17% | $15,963,131.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +3.73% | +3.65% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.01% | +2.93% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.83% | +2.76% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.67% | +2.59% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.50% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.94% | +4.93% |
+| KORU/USDT:USDT | below_1h_threshold | +3.73% | +3.72% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.01% | +3.00% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.56% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
 
 ## 7. 次に見るべき不足
 
