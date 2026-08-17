@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T20:16:24.580075+00:00
+- generated_at: 2026-08-17T20:21:25.538934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11856**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T20:16:16.160332+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64273.5
-- Funnel: target 992 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-17T20:21:16.794222+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64292.0
+- Funnel: target 992 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +14.69% | $3,317,616.21 |
-| ALLO/USDT:USDT | +9.87% | $4,040,041.73 |
-| COMP/USDT:USDT | +8.71% | $1,757,478.71 |
-| UNITREE/USDT:USDT | +4.94% | $2,081,159.07 |
-| CAP/USDT:USDT | +4.87% | $6,627,651.17 |
+| ANSEM/USDT:USDT | +15.34% | $3,338,166.27 |
+| ALLO/USDT:USDT | +10.04% | $4,305,234.14 |
+| COMP/USDT:USDT | +8.59% | $1,832,885.42 |
+| CAP/USDT:USDT | +4.93% | $6,635,920.88 |
+| NIL/USDT:USDT | +4.51% | $4,003,019.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.60% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.17% | +1.18% |
-| TUT/USDT:USDT | below_1h_threshold | +1.05% | +1.06% |
-| AMZU/USDT:USDT | below_1h_threshold | +1.05% | +1.06% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.70% | +0.71% |
+| TUT/USDT:USDT | below_1h_threshold | +1.83% | +1.81% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.57% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.32% | +1.30% |
+| AMZU/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.77% | +0.75% |
 
 ## 7. 次に見るべき不足
 
