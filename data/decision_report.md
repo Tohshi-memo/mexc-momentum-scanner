@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T14:01:39.140121+00:00
+- generated_at: 2026-08-17T14:06:41.363267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11833**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T14:01:26.540948+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=63629.9
-- Funnel: target 992 → liquid 172 → pre 50 → checked 50 → surge 5 → strict 0
+- 更新: 2026-08-17T14:06:30.682048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=63593.6
+- Funnel: target 992 → liquid 173 → pre 50 → checked 50 → surge 5 → strict 0
 - Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.4 >= 65=2, 4h RSI 76.9 >= 65=1, 4h RSI 80.1 >= 65=1, 4h RSI 66.6 >= 65=1
+- Strict後reject: 4h RSI 78.2 >= 65=1, 4h RSI 77.9 >= 65=1, 4h RSI 79.1 >= 65=1, 4h RSI 66.4 >= 65=1, 4h RSI 77.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +177.13% | $4,134,195.65 |
-| GPS/USDT:USDT | +51.58% | $21,631,067.23 |
-| PORTAL/USDT:USDT | +33.25% | $16,238,530.01 |
-| ACE/USDT:USDT | +32.36% | $29,221,523.35 |
-| AEON1/USDT:USDT | +15.23% | $1,205,337.99 |
+| NIULAI/USDT:USDT | +171.48% | $4,212,150.62 |
+| GPS/USDT:USDT | +45.25% | $22,030,920.35 |
+| ACE/USDT:USDT | +32.21% | $29,285,383.45 |
+| PORTAL/USDT:USDT | +28.98% | $16,298,495.13 |
+| AEON1/USDT:USDT | +15.09% | $1,206,163.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.84% | +4.87% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.66% | +4.68% |
-| KORU/USDT:USDT | below_1h_threshold | +4.19% | +4.21% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.63% | +3.66% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.91% | +2.94% |
+| MUU/USDT:USDT | below_1h_threshold | +4.84% | +4.93% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.66% | +4.74% |
+| KORU/USDT:USDT | below_1h_threshold | +4.19% | +4.27% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.63% | +3.71% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.91% | +2.99% |
 
 ## 7. 次に見るべき不足
 
