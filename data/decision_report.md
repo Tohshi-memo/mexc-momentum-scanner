@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T07:36:21.549509+00:00
+- generated_at: 2026-08-17T07:41:18.831071+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11808**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T07:36:13.201608+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=63525.0
+- 更新: 2026-08-17T07:41:12.182145+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=63513.0
 - Funnel: target 991 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +129.30% | $1,033,547.00 |
-| GPS/USDT:USDT | +44.29% | $5,630,586.66 |
-| PORTAL/USDT:USDT | +26.36% | $17,146,112.12 |
-| TUT/USDT:USDT | +23.85% | $8,101,536.87 |
-| CXMTSTOCK/USDT:USDT | +13.44% | $1,510,277.35 |
+| NIULAI/USDT:USDT | +141.56% | $1,046,233.33 |
+| GPS/USDT:USDT | +44.98% | $5,687,865.34 |
+| PORTAL/USDT:USDT | +27.71% | $17,164,502.97 |
+| TUT/USDT:USDT | +23.20% | $8,150,009.20 |
+| CXMTSTOCK/USDT:USDT | +14.14% | $1,535,725.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.23% | +3.40% |
-| O/USDT:USDT | below_1h_threshold | +2.72% | +2.89% |
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.87% |
-| AKE/USDT:USDT | below_1h_threshold | +2.56% | +2.73% |
-| GPS/USDT:USDT | below_1h_threshold | +1.90% | +2.07% |
+| O/USDT:USDT | below_1h_threshold | +3.12% | +3.31% |
+| AKE/USDT:USDT | below_1h_threshold | +2.92% | +3.11% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.89% |
+| GPS/USDT:USDT | below_1h_threshold | +2.40% | +2.59% |
+| ACE/USDT:USDT | below_1h_threshold | +2.01% | +2.20% |
 
 ## 7. 次に見るべき不足
 
