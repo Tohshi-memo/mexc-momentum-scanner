@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T01:56:25.254834+00:00
+- generated_at: 2026-08-17T02:01:20.062611+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11784**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T01:56:17.142470+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=63096.9
-- Funnel: target 986 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.5 >= 65=1, 4h RSI 84.7 >= 65=1, 4h RSI 65.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-17T02:01:11.773956+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=63104.0
+- Funnel: target 986 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +36.70% | $14,577,543.35 |
-| BTW/USDT:USDT | +15.11% | $30,507,020.82 |
-| ONG/USDT:USDT | +14.59% | $1,373,214.72 |
-| GPS/USDT:USDT | +12.80% | $1,874,395.66 |
-| US/USDT:USDT | +12.55% | $1,818,584.81 |
+| PORTAL/USDT:USDT | +37.30% | $14,641,918.26 |
+| ONG/USDT:USDT | +15.32% | $1,276,550.25 |
+| HFT/USDT:USDT | +12.68% | $2,626,133.34 |
+| US/USDT:USDT | +12.43% | $1,760,529.62 |
+| GPS/USDT:USDT | +12.38% | $1,873,153.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.00% | +2.67% |
-| US/USDT:USDT | below_1h_threshold | +2.61% | +2.28% |
-| NIL/USDT:USDT | below_1h_threshold | +2.54% | +2.21% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.24% | +1.91% |
-| ONT/USDT:USDT | below_1h_threshold | +2.15% | +1.82% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.96% | +2.93% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.79% | +0.76% |
+| CAP/USDT:USDT | below_1h_threshold | +0.78% | +0.75% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.74% | +0.71% |
+| AEON1/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
 
 ## 7. 次に見るべき不足
 
