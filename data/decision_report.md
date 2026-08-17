@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T07:16:24.630438+00:00
+- generated_at: 2026-08-17T07:21:22.657050+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11808**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T07:16:16.249083+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=63538.5
+- 更新: 2026-08-17T07:21:14.189009+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=63527.9
 - Funnel: target 991 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| GPS/USDT:USDT | +44.88% | $5,350,149.71 |
-| PORTAL/USDT:USDT | +28.08% | $17,076,273.23 |
-| TUT/USDT:USDT | +21.98% | $7,949,860.59 |
-| HFT/USDT:USDT | +13.65% | $2,688,381.27 |
-| ONG/USDT:USDT | +13.05% | $1,362,172.98 |
+| GPS/USDT:USDT | +43.64% | $5,468,771.27 |
+| PORTAL/USDT:USDT | +27.19% | $17,093,754.88 |
+| TUT/USDT:USDT | +20.80% | $7,984,905.36 |
+| ONG/USDT:USDT | +13.46% | $1,365,501.84 |
+| HFT/USDT:USDT | +13.33% | $2,693,415.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.85% |
-| GPS/USDT:USDT | below_1h_threshold | +2.65% | +2.80% |
-| AKE/USDT:USDT | below_1h_threshold | +2.36% | +2.51% |
-| HFT/USDT:USDT | below_1h_threshold | +2.34% | +2.49% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.68% | +1.83% |
+| CXMTSTOCK/USDT:USDT | below_1h_threshold | +2.70% | +2.87% |
+| AKE/USDT:USDT | below_1h_threshold | +2.40% | +2.57% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.35% | +2.52% |
+| HFT/USDT:USDT | below_1h_threshold | +1.76% | +1.92% |
+| ONG/USDT:USDT | below_1h_threshold | +1.62% | +1.78% |
 
 ## 7. 次に見るべき不足
 
