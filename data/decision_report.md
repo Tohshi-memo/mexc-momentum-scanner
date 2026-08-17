@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T13:36:28.267146+00:00
+- generated_at: 2026-08-17T13:41:25.220520+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11831**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T13:36:18.243008+00:00 / 保存件数 288/288
+- 更新: 2026-08-17T13:41:16.604503+00:00 / 保存件数 288/288
 - BTC: BULLISH 1h +0.28% price=63707.4
-- Funnel: target 992 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Funnel: target 992 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +186.20% | $3,506,295.05 |
-| GPS/USDT:USDT | +36.87% | $19,196,670.49 |
-| ACE/USDT:USDT | +30.34% | $28,627,989.71 |
-| PORTAL/USDT:USDT | +25.54% | $17,896,428.82 |
-| UNITREE/USDT:USDT | +15.50% | $1,946,191.16 |
+| NIULAI/USDT:USDT | +180.13% | $3,655,538.68 |
+| GPS/USDT:USDT | +48.36% | $20,006,108.46 |
+| ACE/USDT:USDT | +30.80% | $28,782,317.98 |
+| PORTAL/USDT:USDT | +26.89% | $17,946,178.00 |
+| AEON1/USDT:USDT | +14.57% | $1,281,444.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DIA/USDT:USDT | below_1h_threshold | +2.53% | +2.24% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.37% | +1.08% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.27% | +0.98% |
-| TUT/USDT:USDT | below_1h_threshold | +1.14% | +0.86% |
-| BTW/USDT:USDT | below_1h_threshold | +1.04% | +0.75% |
+| DIA/USDT:USDT | below_1h_threshold | +2.45% | +2.17% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.63% | +1.35% |
+| BTW/USDT:USDT | below_1h_threshold | +1.29% | +1.00% |
+| GPS/USDT:USDT | below_1h_threshold | +1.15% | +0.87% |
+| TUT/USDT:USDT | below_1h_threshold | +1.00% | +0.72% |
 
 ## 7. 次に見るべき不足
 
