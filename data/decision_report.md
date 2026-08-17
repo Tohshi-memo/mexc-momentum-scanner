@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T01:36:19.340465+00:00
+- generated_at: 2026-08-17T01:41:26.985244+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11783**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.37** / 初期 $100.00 (+18.37%)
-- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1581件
+- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1582件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000351 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $118.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T01:36:11.202158+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.49% price=63199.0
-- Funnel: target 986 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1
+- 更新: 2026-08-17T01:41:17.686383+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=63179.1
+- Funnel: target 986 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1, 4h RSI 83.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +26.14% | $14,175,530.52 |
-| BTW/USDT:USDT | +21.07% | $29,793,821.45 |
-| HFT/USDT:USDT | +14.95% | $2,606,796.22 |
-| US/USDT:USDT | +12.65% | $1,786,883.27 |
-| GPS/USDT:USDT | +12.02% | $1,807,488.22 |
+| PORTAL/USDT:USDT | +28.08% | $14,203,813.73 |
+| BTW/USDT:USDT | +20.98% | $29,930,267.04 |
+| US/USDT:USDT | +14.72% | $1,798,774.84 |
+| HFT/USDT:USDT | +14.14% | $2,608,386.47 |
+| GPS/USDT:USDT | +13.11% | $1,826,679.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +4.30% | +3.81% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.12% | +2.63% |
-| US/USDT:USDT | below_1h_threshold | +2.72% | +2.22% |
-| BTW/USDT:USDT | below_1h_threshold | +2.69% | +2.20% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.24% | +1.75% |
+| US/USDT:USDT | below_1h_threshold | +4.61% | +4.15% |
+| PORTAL/USDT:USDT | below_1h_threshold | +4.41% | +3.95% |
+| BTW/USDT:USDT | below_1h_threshold | +2.62% | +2.16% |
+| NIL/USDT:USDT | below_1h_threshold | +2.56% | +2.10% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.41% | +1.95% |
 
 ## 7. 次に見るべき不足
 
