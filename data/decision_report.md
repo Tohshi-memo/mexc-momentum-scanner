@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T21:21:24.615645+00:00
+- generated_at: 2026-08-17T21:26:25.043900+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11857**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T21:21:15.972516+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64345.9
-- Funnel: target 992 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-17T21:26:16.587849+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=64303.1
+- Funnel: target 992 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +15.07% | $3,505,708.96 |
-| COMP/USDT:USDT | +10.33% | $2,398,460.73 |
-| ALLO/USDT:USDT | +9.23% | $5,847,377.87 |
-| STAR/USDT:USDT | +9.18% | $1,433,296.44 |
-| GPS/USDT:USDT | +5.33% | $30,959,257.23 |
+| ANSEM/USDT:USDT | +13.93% | $3,530,451.63 |
+| COMP/USDT:USDT | +9.73% | $2,447,730.85 |
+| ALLO/USDT:USDT | +9.28% | $5,966,839.98 |
+| STAR/USDT:USDT | +8.44% | $1,442,922.09 |
+| GPS/USDT:USDT | +5.66% | $31,027,262.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COMP/USDT:USDT | below_1h_threshold | +1.95% | +1.97% |
-| GPS/USDT:USDT | below_1h_threshold | +1.79% | +1.81% |
-| STAR/USDT:USDT | below_1h_threshold | +1.50% | +1.52% |
-| VVV/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.03% | +1.06% |
+| GPS/USDT:USDT | below_1h_threshold | +2.39% | +2.48% |
+| COMP/USDT:USDT | below_1h_threshold | +1.56% | +1.65% |
+| ONG/USDT:USDT | below_1h_threshold | +1.16% | +1.25% |
+| BTW/USDT:USDT | below_1h_threshold | +0.87% | +0.96% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.84% | +0.93% |
 
 ## 7. 次に見るべき不足
 
