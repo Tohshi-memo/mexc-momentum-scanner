@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T23:11:25.985496+00:00
+- generated_at: 2026-08-17T23:16:19.302121+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11861**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T23:11:19.330942+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=64332.6
+- 更新: 2026-08-17T23:16:11.261658+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=64334.9
 - Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,11 +79,11 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COMP/USDT:USDT | +7.21% | $2,837,713.19 |
-| VVV/USDT:USDT | +6.31% | $2,353,936.21 |
-| CAP/USDT:USDT | +5.77% | $6,534,876.94 |
-| H/USDT:USDT | +5.50% | $6,580,631.55 |
-| SKYAI/USDT:USDT | +5.34% | $9,584,894.75 |
+| COMP/USDT:USDT | +7.27% | $2,838,730.93 |
+| CAP/USDT:USDT | +5.63% | $6,538,630.07 |
+| H/USDT:USDT | +5.59% | $6,584,262.31 |
+| VVV/USDT:USDT | +5.56% | $2,381,127.30 |
+| SKYAI/USDT:USDT | +5.12% | $9,609,096.35 |
 
 ### Near Miss
 
@@ -91,9 +91,9 @@
 |---|---|---:|---:|
 | SNXX/USDT:USDT | below_1h_threshold | +2.73% | +2.62% |
 | SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.28% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.35% | +1.25% |
-| GPS/USDT:USDT | below_1h_threshold | +0.82% | +0.72% |
-| TIA/USDT:USDT | below_1h_threshold | +0.79% | +0.69% |
+| GPS/USDT:USDT | below_1h_threshold | +1.23% | +1.12% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.17% | +1.06% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.12% | +1.02% |
 
 ## 7. 次に見るべき不足
 
