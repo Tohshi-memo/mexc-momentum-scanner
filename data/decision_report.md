@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T17:56:28.822630+00:00
+- generated_at: 2026-08-17T18:06:25.900935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11853**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T17:56:20.304621+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=64286.2
-- Funnel: target 992 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-17T18:06:17.465789+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64287.8
+- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +13.90% | $2,422,838.46 |
-| TUT/USDT:USDT | +6.02% | $22,705,126.08 |
-| AXTISTOCK/USDT:USDT | +4.73% | $1,264,306.16 |
-| HEMI/USDT:USDT | +4.33% | $2,284,334.42 |
-| HFT/USDT:USDT | +3.35% | $2,971,304.60 |
+| ANSEM/USDT:USDT | +12.57% | $2,484,380.15 |
+| HEMI/USDT:USDT | +7.21% | $2,234,302.34 |
+| TUT/USDT:USDT | +6.00% | $23,094,356.39 |
+| AXTISTOCK/USDT:USDT | +4.47% | $1,266,048.13 |
+| CAP/USDT:USDT | +4.19% | $5,096,356.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +3.03% | +2.71% |
-| ACU/USDT:USDT | below_1h_threshold | +2.29% | +1.98% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.11% | +1.79% |
-| POL/USDT:USDT | below_1h_threshold | +1.58% | +1.26% |
-| BTW/USDT:USDT | below_1h_threshold | +1.39% | +1.07% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +3.91% | +3.92% |
+| TUT/USDT:USDT | below_1h_threshold | +3.24% | +3.25% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.16% | +2.17% |
+| USOIL/USDT:USDT | below_1h_threshold | +2.14% | +2.15% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.01% | +2.02% |
 
 ## 7. 次に見るべき不足
 
