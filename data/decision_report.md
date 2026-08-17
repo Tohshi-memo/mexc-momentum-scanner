@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T22:06:26.818915+00:00
+- generated_at: 2026-08-17T22:11:20.830925+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11859**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T22:06:19.941126+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64337.6
+- 更新: 2026-08-17T22:11:13.632520+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64307.2
 - Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +8.05% | $3,682,284.31 |
-| COMP/USDT:USDT | +7.63% | $2,725,848.73 |
-| STAR/USDT:USDT | +7.00% | $1,480,706.22 |
-| VVV/USDT:USDT | +5.74% | $2,190,467.73 |
-| GPS/USDT:USDT | +5.68% | $31,374,991.19 |
+| ANSEM/USDT:USDT | +7.59% | $3,686,708.99 |
+| COMP/USDT:USDT | +7.33% | $2,743,578.50 |
+| STAR/USDT:USDT | +5.61% | $1,481,442.96 |
+| VVV/USDT:USDT | +5.39% | $2,201,162.97 |
+| CAP/USDT:USDT | +5.26% | $6,578,304.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.18% |
-| TUT/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
-| STAR/USDT:USDT | below_1h_threshold | +0.85% | +0.87% |
-| COMP/USDT:USDT | below_1h_threshold | +0.79% | +0.81% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.22% | +1.29% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.23% |
+| CAP/USDT:USDT | below_1h_threshold | +0.96% | +1.03% |
+| ONG/USDT:USDT | below_1h_threshold | +0.92% | +0.99% |
+| BTW/USDT:USDT | below_1h_threshold | +0.85% | +0.91% |
 
 ## 7. 次に見るべき不足
 
