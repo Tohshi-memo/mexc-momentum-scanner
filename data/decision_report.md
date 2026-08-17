@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T03:56:36.020876+00:00
+- generated_at: 2026-08-17T04:01:25.158457+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11794**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T03:56:22.113610+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=63476.3
-- Funnel: target 986 → liquid 152 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-17T04:01:16.770562+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=63463.2
+- Funnel: target 986 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +41.49% | $15,788,580.76 |
-| GPS/USDT:USDT | +30.68% | $2,461,586.70 |
-| ACE/USDT:USDT | +22.05% | $15,847,081.91 |
-| TUT/USDT:USDT | +14.35% | $4,854,666.03 |
-| HFT/USDT:USDT | +13.00% | $2,659,559.59 |
+| PORTAL/USDT:USDT | +39.25% | $15,809,523.17 |
+| GPS/USDT:USDT | +31.62% | $2,514,949.65 |
+| ACE/USDT:USDT | +23.54% | $15,479,698.91 |
+| TUT/USDT:USDT | +14.63% | $4,676,061.25 |
+| US/USDT:USDT | +13.48% | $1,544,159.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_relative_strength | +5.12% | +4.97% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.82% | +2.67% |
-| BR/USDT:USDT | below_1h_threshold | +2.50% | +2.35% |
-| AIO/USDT:USDT | below_1h_threshold | +1.76% | +1.61% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.49% | +1.35% |
+| ACE/USDT:USDT | below_1h_threshold | +2.60% | +2.52% |
+| KORU/USDT:USDT | below_1h_threshold | +1.57% | +1.49% |
+| H/USDT:USDT | below_1h_threshold | +1.18% | +1.10% |
+| BTW/USDT:USDT | below_1h_threshold | +0.92% | +0.84% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.74% |
 
 ## 7. 次に見るべき不足
 
