@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T11:36:32.514865+00:00
+- generated_at: 2026-08-17T11:41:25.050395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11821**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.95** / 初期 $100.00 (+17.95%)
-- 確定: 1674件 (Win 503 / Loss 637 / Flat 534) / pending 2件 / skip 1617件
+- 確定: 1674件 (Win 503 / Loss 637 / Flat 534) / pending 3件 / skip 1617件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000129 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.95
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T11:36:22.382900+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=63652.3
+- 更新: 2026-08-17T11:41:16.540627+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=63665.0
 - Funnel: target 992 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.4 >= 65=1
+- Strict後reject: 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +127.40% | $1,963,760.11 |
-| GPS/USDT:USDT | +54.25% | $13,211,377.75 |
-| ACE/USDT:USDT | +45.05% | $24,044,727.57 |
-| PORTAL/USDT:USDT | +25.24% | $18,476,900.89 |
-| AEON1/USDT:USDT | +16.37% | $1,204,332.71 |
+| NIULAI/USDT:USDT | +122.74% | $1,976,638.71 |
+| GPS/USDT:USDT | +59.00% | $13,764,385.95 |
+| ACE/USDT:USDT | +39.93% | $24,515,411.21 |
+| PORTAL/USDT:USDT | +23.67% | $18,510,872.38 |
+| AEON1/USDT:USDT | +16.22% | $1,208,280.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +3.35% | +3.36% |
-| ACE/USDT:USDT | below_1h_threshold | +2.37% | +2.39% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.14% | +2.15% |
-| AIO/USDT:USDT | below_1h_threshold | +1.84% | +1.85% |
-| HFT/USDT:USDT | below_1h_threshold | +1.66% | +1.68% |
+| PORTAL/USDT:USDT | below_1h_threshold | +4.43% | +4.42% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.67% | +2.66% |
+| GPS/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.00% | +2.00% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.51% | +1.50% |
 
 ## 7. 次に見るべき不足
 
