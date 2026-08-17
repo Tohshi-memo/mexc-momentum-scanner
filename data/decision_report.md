@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T01:11:23.667459+00:00
+- generated_at: 2026-08-17T01:16:26.676679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11781**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.37** / 初期 $100.00 (+18.37%)
-- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1578件
+- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1579件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000294 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $118.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T01:11:15.199734+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=63081.4
-- Funnel: target 986 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-17T01:16:17.813275+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=63019.1
+- Funnel: target 986 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +27.79% | $14,068,486.84 |
-| HFT/USDT:USDT | +20.97% | $2,576,163.79 |
-| BTW/USDT:USDT | +17.88% | $27,458,886.52 |
-| ONG/USDT:USDT | +10.50% | $1,034,610.96 |
-| US/USDT:USDT | +9.67% | $1,752,886.68 |
+| PORTAL/USDT:USDT | +25.09% | $14,104,561.61 |
+| BTW/USDT:USDT | +17.94% | $27,483,194.06 |
+| HFT/USDT:USDT | +17.39% | $2,580,932.69 |
+| ONG/USDT:USDT | +16.62% | $1,115,765.02 |
+| GPS/USDT:USDT | +10.11% | $1,766,436.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +4.94% | +4.64% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.92% | +3.61% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.24% | +1.93% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.18% | +1.87% |
-| GPS/USDT:USDT | below_1h_threshold | +2.06% | +1.75% |
+| GPS/USDT:USDT | below_relative_strength | +5.12% | +4.92% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.88% | +2.67% |
+| ONT/USDT:USDT | below_1h_threshold | +2.86% | +2.66% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.24% | +2.03% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.10% | +1.89% |
 
 ## 7. 次に見るべき不足
 
