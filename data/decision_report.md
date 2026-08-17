@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T23:26:20.020192+00:00
+- generated_at: 2026-08-17T23:31:31.797692+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11861**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T23:26:11.621699+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=64415.7
+- 更新: 2026-08-17T23:31:25.088241+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=64431.8
 - Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| COMP/USDT:USDT | +7.21% | $2,846,351.69 |
-| VVV/USDT:USDT | +6.45% | $2,414,109.46 |
-| ANSEM/USDT:USDT | +5.77% | $3,783,597.79 |
-| ACU/USDT:USDT | +5.45% | $1,185,887.98 |
-| ALLO/USDT:USDT | +5.12% | $7,661,313.77 |
+| COMP/USDT:USDT | +7.09% | $2,854,561.03 |
+| VVV/USDT:USDT | +6.17% | $2,468,715.14 |
+| ANSEM/USDT:USDT | +5.88% | $3,785,029.29 |
+| ALLO/USDT:USDT | +5.77% | $7,719,484.47 |
+| GPS/USDT:USDT | +5.26% | $31,950,283.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.73% | +2.49% |
-| ACU/USDT:USDT | below_1h_threshold | +2.33% | +2.10% |
-| GPS/USDT:USDT | below_1h_threshold | +1.49% | +1.25% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.15% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.32% | +1.09% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.73% | +2.47% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.43% | +2.17% |
+| GPS/USDT:USDT | below_1h_threshold | +2.02% | +1.76% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.92% | +1.66% |
+| ACU/USDT:USDT | below_1h_threshold | +1.77% | +1.51% |
 
 ## 7. 次に見るべき不足
 
