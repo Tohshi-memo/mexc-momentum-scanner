@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T09:01:30.724413+00:00
+- generated_at: 2026-08-17T09:06:22.283571+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11810**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T09:01:20.681864+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=63376.4
+- 更新: 2026-08-17T09:06:13.800683+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=63365.7
 - Funnel: target 992 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +133.47% | $1,235,626.72 |
-| GPS/USDT:USDT | +43.13% | $8,032,833.86 |
-| PORTAL/USDT:USDT | +21.57% | $17,751,270.57 |
-| TUT/USDT:USDT | +19.24% | $8,718,733.23 |
-| AEON1/USDT:USDT | +15.59% | $1,019,305.30 |
+| NIULAI/USDT:USDT | +131.45% | $1,267,042.40 |
+| GPS/USDT:USDT | +44.29% | $8,074,368.71 |
+| PORTAL/USDT:USDT | +19.47% | $17,773,935.34 |
+| TUT/USDT:USDT | +17.90% | $8,787,292.86 |
+| AEON1/USDT:USDT | +15.87% | $1,032,346.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +1.36% | +1.32% |
-| AMZU/USDT:USDT | below_1h_threshold | +1.07% | +1.03% |
-| AIO/USDT:USDT | below_1h_threshold | +0.69% | +0.65% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.51% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
+| ONG/USDT:USDT | below_1h_threshold | +1.68% | +1.65% |
+| ACE/USDT:USDT | below_1h_threshold | +1.52% | +1.49% |
+| GPS/USDT:USDT | below_1h_threshold | +1.19% | +1.17% |
+| AMZU/USDT:USDT | below_1h_threshold | +1.07% | +1.05% |
+| ONT/USDT:USDT | below_1h_threshold | +0.83% | +0.80% |
 
 ## 7. 次に見るべき不足
 
