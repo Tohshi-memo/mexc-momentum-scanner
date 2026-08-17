@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T01:46:32.164728+00:00
+- generated_at: 2026-08-17T01:51:23.331661+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11783**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.37** / 初期 $100.00 (+18.37%)
-- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1582件
+- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1583件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000351 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $118.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T01:46:22.993477+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=63174.0
-- Funnel: target 986 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.6 >= 65=1, 4h RSI 83.2 >= 65=1
+- 更新: 2026-08-17T01:51:15.140532+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=63170.6
+- Funnel: target 986 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 85.1 >= 65=1, 4h RSI 65.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PORTAL/USDT:USDT | +21.87% | $14,247,801.02 |
-| BTW/USDT:USDT | +20.08% | $30,065,385.68 |
-| GPS/USDT:USDT | +13.15% | $1,863,687.11 |
-| ONG/USDT:USDT | +12.26% | $1,355,958.02 |
-| US/USDT:USDT | +12.10% | $1,807,655.47 |
+| PORTAL/USDT:USDT | +33.40% | $14,478,907.73 |
+| BTW/USDT:USDT | +19.85% | $30,217,084.92 |
+| ONG/USDT:USDT | +14.03% | $1,367,297.88 |
+| GPS/USDT:USDT | +12.85% | $1,869,827.71 |
+| US/USDT:USDT | +12.60% | $1,811,501.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.15% | +2.70% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.11% | +2.66% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.24% | +1.78% |
-| US/USDT:USDT | below_1h_threshold | +2.22% | +1.76% |
-| AKE/USDT:USDT | below_1h_threshold | +2.00% | +1.54% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.19% | +2.74% |
+| NIL/USDT:USDT | below_1h_threshold | +3.09% | +2.64% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.03% | +2.58% |
+| US/USDT:USDT | below_1h_threshold | +2.80% | +2.36% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.24% | +1.79% |
 
 ## 7. 次に見るべき不足
 
