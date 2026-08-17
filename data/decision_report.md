@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T20:31:30.231391+00:00
+- generated_at: 2026-08-17T20:36:29.454502+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11856**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T20:31:21.510370+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64366.2
+- 更新: 2026-08-17T20:36:23.472917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64331.7
 - Funnel: target 992 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1
+- Strict後reject: 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ANSEM/USDT:USDT | +16.29% | $3,383,461.15 |
-| ALLO/USDT:USDT | +9.88% | $4,621,130.25 |
-| COMP/USDT:USDT | +9.37% | $1,940,591.04 |
-| STAR/USDT:USDT | +6.04% | $1,319,782.21 |
-| NIL/USDT:USDT | +5.14% | $4,054,143.10 |
+| ANSEM/USDT:USDT | +16.21% | $3,403,982.29 |
+| ALLO/USDT:USDT | +10.48% | $4,711,366.11 |
+| COMP/USDT:USDT | +8.71% | $1,997,098.94 |
+| STAR/USDT:USDT | +5.48% | $1,327,046.96 |
+| CAP/USDT:USDT | +5.41% | $6,690,326.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +3.81% | +3.67% |
-| TUT/USDT:USDT | below_1h_threshold | +2.12% | +1.98% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.46% |
-| ANSEM/USDT:USDT | below_1h_threshold | +1.19% | +1.06% |
-| AMZU/USDT:USDT | below_1h_threshold | +1.05% | +0.91% |
+| TUT/USDT:USDT | below_1h_threshold | +3.90% | +3.82% |
+| VVV/USDT:USDT | below_1h_threshold | +2.59% | +2.51% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.61% | +1.53% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.59% | +1.51% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.36% | +1.28% |
 
 ## 7. 次に見るべき不足
 
