@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T08:51:28.543236+00:00
+- generated_at: 2026-08-17T08:56:33.317010+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11809**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.37** / 初期 $100.00 (+18.37%)
-- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1611件
+- 確定: 1672件 (Win 503 / Loss 635 / Flat 534) / pending 0件 / skip 1612件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000321 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $118.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T08:51:19.442448+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=63327.2
-- Funnel: target 992 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1, 4h RSI 65.2 >= 65=1
+- 更新: 2026-08-17T08:56:23.547511+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=63353.2
+- Funnel: target 992 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 65.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +145.98% | $1,215,400.25 |
-| GPS/USDT:USDT | +43.82% | $7,761,543.70 |
-| TUT/USDT:USDT | +18.46% | $8,779,896.35 |
-| PORTAL/USDT:USDT | +17.67% | $17,680,290.56 |
-| AEON1/USDT:USDT | +14.72% | $1,044,969.38 |
+| NIULAI/USDT:USDT | +143.16% | $1,227,240.72 |
+| GPS/USDT:USDT | +44.44% | $7,810,095.33 |
+| PORTAL/USDT:USDT | +19.62% | $17,720,167.35 |
+| TUT/USDT:USDT | +18.96% | $8,816,611.04 |
+| AEON1/USDT:USDT | +15.34% | $1,064,787.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BSB/USDT:USDT | below_1h_threshold | +4.21% | +4.48% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.92% | +4.18% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.75% | +4.01% |
-| ACE/USDT:USDT | below_1h_threshold | +3.12% | +3.38% |
-| TUT/USDT:USDT | below_1h_threshold | +2.59% | +2.86% |
+| BSB/USDT:USDT | below_1h_threshold | +4.96% | +5.18% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.93% | +4.16% |
+| TUT/USDT:USDT | below_1h_threshold | +3.10% | +3.33% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.56% | +2.78% |
+| GPS/USDT:USDT | below_1h_threshold | +2.01% | +2.23% |
 
 ## 7. 次に見るべき不足
 
