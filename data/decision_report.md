@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T15:16:25.882496+00:00
+- generated_at: 2026-08-17T15:21:22.699057+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11839**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T15:16:17.633836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=63878.3
+- 更新: 2026-08-17T15:21:14.142306+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=63806.0
 - Funnel: target 992 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +139.36% | $5,397,351.66 |
-| GPS/USDT:USDT | +49.57% | $25,190,503.21 |
-| ACE/USDT:USDT | +37.50% | $31,039,937.66 |
-| STAR/USDT:USDT | +34.27% | $1,023,242.00 |
-| PORTAL/USDT:USDT | +22.17% | $15,963,131.35 |
+| NIULAI/USDT:USDT | +140.03% | $5,424,001.66 |
+| GPS/USDT:USDT | +50.70% | $25,319,442.86 |
+| ACE/USDT:USDT | +36.21% | $31,118,977.28 |
+| STAR/USDT:USDT | +32.37% | $1,031,715.99 |
+| PORTAL/USDT:USDT | +22.69% | $15,979,299.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +4.94% | +4.93% |
-| KORU/USDT:USDT | below_1h_threshold | +3.73% | +3.72% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.01% | +3.00% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.56% |
-| AEON1/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| KORU/USDT:USDT | below_1h_threshold | +3.73% | +3.83% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.67% | +3.77% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.01% | +3.11% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.90% | +3.00% |
+| TUT/USDT:USDT | below_1h_threshold | +2.64% | +2.74% |
 
 ## 7. 次に見るべき不足
 
