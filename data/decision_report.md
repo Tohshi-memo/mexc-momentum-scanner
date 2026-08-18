@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T17:31:24.393137+00:00
+- generated_at: 2026-08-18T17:36:25.067132+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11918**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.10** / 初期 $100.00 (+18.10%)
-- 確定: 1723件 (Win 515 / Loss 657 / Flat 551) / pending 1件 / skip 1664件
+- 確定: 1723件 (Win 515 / Loss 657 / Flat 551) / pending 1件 / skip 1665件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000243 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CYS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.10
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T17:31:15.765598+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64778.9
-- Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T17:36:16.188627+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=64710.9
+- Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +5.51% | $1,103,283.11 |
-| GPS/USDT:USDT | +4.37% | $21,004,378.84 |
-| EDEN/USDT:USDT | +3.53% | $4,906,483.49 |
-| AIO/USDT:USDT | +2.93% | $2,778,059.55 |
-| CHIP/USDT:USDT | +2.88% | $2,235,567.37 |
+| BASECAT/USDT:USDT | +9.41% | $1,110,430.76 |
+| EDEN/USDT:USDT | +3.94% | $4,915,571.61 |
+| GPS/USDT:USDT | +3.92% | $21,066,753.46 |
+| CHIP/USDT:USDT | +3.30% | $2,240,142.16 |
+| RE/USDT:USDT | +2.59% | $1,401,090.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GPS/USDT:USDT | below_1h_threshold | +1.89% | +1.93% |
-| RE/USDT:USDT | below_1h_threshold | +1.73% | +1.76% |
-| BASECAT/USDT:USDT | below_1h_threshold | +1.47% | +1.51% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.09% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
+| RE/USDT:USDT | below_1h_threshold | +2.38% | +2.53% |
+| BMT/USDT:USDT | below_1h_threshold | +1.84% | +1.98% |
+| GPS/USDT:USDT | below_1h_threshold | +1.48% | +1.63% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.38% | +1.53% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.10% | +1.25% |
 
 ## 7. 次に見るべき不足
 
