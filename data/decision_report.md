@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T19:51:26.639891+00:00
+- generated_at: 2026-08-18T19:56:26.466909+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11921**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T19:51:17.773798+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64636.7
-- Funnel: target 993 → liquid 179 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-18T19:56:15.597426+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=64621.9
+- Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +8.02% | $18,788,304.15 |
-| GPS/USDT:USDT | +4.40% | $21,550,283.34 |
-| PRL/USDT:USDT | +2.75% | $4,521,829.94 |
-| CAKE/USDT:USDT | +2.27% | $1,011,760.93 |
-| CYS/USDT:USDT | +1.81% | $13,817,156.88 |
+| BTW/USDT:USDT | +7.70% | $18,878,777.63 |
+| GPS/USDT:USDT | +3.74% | $21,571,158.82 |
+| PRL/USDT:USDT | +2.70% | $4,533,429.65 |
+| CAKE/USDT:USDT | +2.20% | $1,014,093.82 |
+| NIULAI/USDT:USDT | +2.17% | $5,599,673.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +1.87% | +2.04% |
-| CAP/USDT:USDT | below_1h_threshold | +1.74% | +1.91% |
-| HEI/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.32% | +1.49% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.49% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.69% | +2.88% |
+| CAP/USDT:USDT | below_1h_threshold | +1.93% | +2.12% |
+| CIENSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.51% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.24% | +1.43% |
+| TSEMSTOCK/USDT:USDT | below_1h_threshold | +1.14% | +1.33% |
 
 ## 7. 次に見るべき不足
 
