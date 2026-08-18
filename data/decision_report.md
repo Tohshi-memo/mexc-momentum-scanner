@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T02:11:24.034097+00:00
+- generated_at: 2026-08-18T02:16:23.504181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11867**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.53** / 初期 $100.00 (+17.53%)
-- 確定: 1680件 (Win 504 / Loss 641 / Flat 535) / pending 3件 / skip 1656件
+- 確定: 1680件 (Win 504 / Loss 641 / Flat 535) / pending 4件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000153 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $117.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T02:11:13.345581+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64199.7
-- Funnel: target 992 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-18T02:16:14.636925+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64139.1
+- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +15.47% | $1,596,353.99 |
-| ONG/USDT:USDT | +8.37% | $1,006,646.13 |
-| STAR/USDT:USDT | +7.81% | $1,762,097.44 |
-| GPS/USDT:USDT | +7.18% | $34,008,179.70 |
-| ALLO/USDT:USDT | +6.83% | $8,865,065.92 |
+| PIEVERSE/USDT:USDT | +15.40% | $1,617,623.55 |
+| ONG/USDT:USDT | +9.13% | $1,014,414.22 |
+| STAR/USDT:USDT | +8.71% | $1,770,152.80 |
+| GPS/USDT:USDT | +6.56% | $34,353,724.78 |
+| SOXS/USDT:USDT | +6.31% | $4,546,071.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +4.58% | +4.54% |
-| STAR/USDT:USDT | below_1h_threshold | +3.91% | +3.87% |
-| H/USDT:USDT | below_1h_threshold | +3.88% | +3.84% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.70% | +2.66% |
-| BTW/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
+| STAR/USDT:USDT | below_1h_threshold | +4.79% | +4.85% |
+| H/USDT:USDT | below_1h_threshold | +3.85% | +3.90% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.70% | +2.76% |
+| ACU/USDT:USDT | below_1h_threshold | +1.89% | +1.95% |
+| APR/USDT:USDT | below_1h_threshold | +1.78% | +1.84% |
 
 ## 7. 次に見るべき不足
 
