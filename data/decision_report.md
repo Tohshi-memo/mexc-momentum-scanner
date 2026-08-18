@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T16:16:22.911610+00:00
+- generated_at: 2026-08-18T16:21:24.398339+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11913**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T16:16:14.388972+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=64720.9
+- 更新: 2026-08-18T16:21:15.875359+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=64708.9
 - Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +3.17% | $2,759,898.57 |
-| AEON1/USDT:USDT | +2.17% | $1,063,260.31 |
-| EDEN/USDT:USDT | +2.02% | $4,713,543.35 |
-| BEAT/USDT:USDT | +1.58% | $31,691,531.14 |
-| ACE/USDT:USDT | +1.20% | $40,896,118.14 |
+| EDEN/USDT:USDT | +4.04% | $4,747,620.51 |
+| AIO/USDT:USDT | +2.45% | $2,774,310.84 |
+| ACE/USDT:USDT | +1.86% | $41,121,275.35 |
+| CYS/USDT:USDT | +1.11% | $13,788,464.55 |
+| PRL/USDT:USDT | +0.88% | $4,195,766.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIO/USDT:USDT | below_1h_threshold | +2.94% | +3.09% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.03% | +2.19% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.85% | +2.00% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.31% | +1.47% |
-| ACE/USDT:USDT | below_1h_threshold | +1.31% | +1.46% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.04% | +4.22% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.65% |
+| AIO/USDT:USDT | below_1h_threshold | +2.45% | +2.63% |
+| ACE/USDT:USDT | below_1h_threshold | +1.97% | +2.14% |
+| CYS/USDT:USDT | below_1h_threshold | +1.17% | +1.35% |
 
 ## 7. 次に見るべき不足
 
