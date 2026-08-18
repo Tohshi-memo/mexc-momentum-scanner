@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T03:21:39.786838+00:00
+- generated_at: 2026-08-18T03:26:29.871246+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11879**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.67** / 初期 $100.00 (+17.67%)
-- 確定: 1690件 (Win 505 / Loss 641 / Flat 544) / pending 4件 / skip 1656件
+- 確定: 1690件 (Win 505 / Loss 641 / Flat 544) / pending 5件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000116 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIULAI/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $117.67
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T03:21:29.451610+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64100.1
-- Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-08-18T03:26:19.269485+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64080.1
+- Funnel: target 992 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +15.77% | $1,950,601.73 |
-| NIULAI/USDT:USDT | +13.42% | $8,411,888.90 |
-| TUT/USDT:USDT | +10.19% | $29,876,486.82 |
-| H/USDT:USDT | +9.44% | $6,534,862.36 |
-| SOXS/USDT:USDT | +8.19% | $5,457,623.42 |
+| PIEVERSE/USDT:USDT | +15.77% | $1,985,105.52 |
+| TUT/USDT:USDT | +13.25% | $30,070,641.25 |
+| H/USDT:USDT | +9.53% | $6,543,095.42 |
+| CYS/USDT:USDT | +8.80% | $18,119,379.58 |
+| SOXS/USDT:USDT | +8.54% | $5,463,073.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +2.89% | +2.85% |
-| APR/USDT:USDT | below_1h_threshold | +2.78% | +2.73% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.25% | +2.20% |
-| H/USDT:USDT | below_1h_threshold | +2.09% | +2.05% |
-| US/USDT:USDT | below_1h_threshold | +1.61% | +1.57% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.38% | +4.37% |
+| APR/USDT:USDT | below_1h_threshold | +2.51% | +2.50% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.25% | +2.23% |
+| H/USDT:USDT | below_1h_threshold | +2.18% | +2.17% |
+| US/USDT:USDT | below_1h_threshold | +1.65% | +1.64% |
 
 ## 7. 次に見るべき不足
 
