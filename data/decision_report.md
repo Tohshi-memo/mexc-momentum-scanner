@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T05:36:29.800794+00:00
+- generated_at: 2026-08-18T05:41:31.536635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11884**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.67** / 初期 $100.00 (+17.67%)
-- 確定: 1695件 (Win 505 / Loss 641 / Flat 549) / pending 2件 / skip 1656件
+- 確定: 1695件 (Win 505 / Loss 641 / Flat 549) / pending 3件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000223 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIULAI/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $117.67
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T05:36:24.063109+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64161.6
-- Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T05:41:20.893941+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64160.1
+- Funnel: target 992 → liquid 183 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RED/USDT:USDT | +26.03% | $1,468,339.94 |
-| PRL/USDT:USDT | +23.30% | $1,698,403.09 |
-| PIEVERSE/USDT:USDT | +8.52% | $2,909,006.17 |
-| SOXS/USDT:USDT | +8.03% | $6,334,049.67 |
-| VVV/USDT:USDT | +7.03% | $3,244,644.56 |
+| RED/USDT:USDT | +25.91% | $1,507,059.22 |
+| PRL/USDT:USDT | +24.54% | $1,773,261.78 |
+| PIEVERSE/USDT:USDT | +9.37% | $2,943,793.59 |
+| CYS/USDT:USDT | +8.12% | $17,573,189.42 |
+| SOXS/USDT:USDT | +8.06% | $6,336,419.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.05% | +4.08% |
-| PRL/USDT:USDT | below_1h_threshold | +3.30% | +3.33% |
-| APR/USDT:USDT | below_1h_threshold | +2.07% | +2.10% |
-| CYS/USDT:USDT | below_1h_threshold | +1.73% | +1.77% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.90% | +4.93% |
+| PRL/USDT:USDT | below_1h_threshold | +4.45% | +4.49% |
+| APR/USDT:USDT | below_1h_threshold | +2.18% | +2.21% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.54% | +1.58% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
 
 ## 7. 次に見るべき不足
 
