@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T13:21:26.384359+00:00
+- generated_at: 2026-08-18T13:26:37.664909+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11905**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.63** / 初期 $100.00 (+18.63%)
-- 確定: 1716件 (Win 513 / Loss 652 / Flat 551) / pending 5件 / skip 1658件
+- 確定: 1716件 (Win 513 / Loss 652 / Flat 551) / pending 6件 / skip 1658件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000423 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T13:21:17.851474+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64085.0
-- Funnel: target 993 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T13:26:26.921340+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=64073.9
+- Funnel: target 993 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +25.32% | $35,185,693.96 |
-| PRL/USDT:USDT | +20.50% | $3,795,120.62 |
-| OPN/USDT:USDT | +16.90% | $2,980,469.82 |
-| SOXS/USDT:USDT | +15.26% | $9,893,696.72 |
-| VVV/USDT:USDT | +14.64% | $8,296,302.78 |
+| ACE/USDT:USDT | +25.62% | $35,667,593.57 |
+| PRL/USDT:USDT | +21.01% | $3,821,134.74 |
+| OPN/USDT:USDT | +16.92% | $3,064,634.03 |
+| SOXS/USDT:USDT | +15.34% | $9,964,352.98 |
+| VVV/USDT:USDT | +15.27% | $8,323,879.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +4.07% | +4.24% |
-| HEI/USDT:USDT | below_1h_threshold | +2.96% | +3.13% |
-| ACE/USDT:USDT | below_1h_threshold | +2.78% | +2.95% |
-| OPN/USDT:USDT | below_1h_threshold | +1.71% | +1.88% |
-| CYS/USDT:USDT | below_1h_threshold | +1.46% | +1.63% |
+| APR/USDT:USDT | below_1h_threshold | +4.92% | +5.11% |
+| ACE/USDT:USDT | below_1h_threshold | +2.90% | +3.09% |
+| FHE/USDT:USDT | below_1h_threshold | +1.90% | +2.09% |
+| OPN/USDT:USDT | below_1h_threshold | +1.61% | +1.80% |
+| ANSEM/USDT:USDT | below_1h_threshold | +1.60% | +1.79% |
 
 ## 7. 次に見るべき不足
 
