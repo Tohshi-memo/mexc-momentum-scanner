@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T21:11:25.026376+00:00
+- generated_at: 2026-08-18T21:16:24.203376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11924**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T21:11:16.574602+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64599.4
+- 更新: 2026-08-18T21:16:15.729654+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64596.2
 - Funnel: target 993 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +7.49% | $19,640,254.68 |
-| HEMI/USDT:USDT | +4.21% | $1,075,644.10 |
-| PRL/USDT:USDT | +2.86% | $4,649,902.25 |
-| AIO/USDT:USDT | +2.86% | $2,615,109.93 |
-| RED/USDT:USDT | +2.71% | $3,801,724.41 |
+| BTW/USDT:USDT | +6.59% | $19,737,403.50 |
+| HEMI/USDT:USDT | +4.81% | $1,079,822.94 |
+| AIO/USDT:USDT | +3.42% | $2,618,606.18 |
+| PUMPFUN/USDT:USDT | +2.78% | $15,569,304.11 |
+| CAKE/USDT:USDT | +2.57% | $1,114,967.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +1.89% | +1.81% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.55% | +1.46% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
-| CYS/USDT:USDT | below_1h_threshold | +0.89% | +0.81% |
-| LINK/USDT:USDT | below_1h_threshold | +0.52% | +0.44% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.47% | +2.40% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.39% | +2.31% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.19% | +1.12% |
+| CYS/USDT:USDT | below_1h_threshold | +0.56% | +0.49% |
+| RE/USDT:USDT | below_1h_threshold | +0.53% | +0.46% |
 
 ## 7. 次に見るべき不足
 
