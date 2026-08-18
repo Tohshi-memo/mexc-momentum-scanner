@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-18T21:41:22.437117+00:00
+- generated_at: 2026-08-18T21:46:40.397194+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11924**
+- closed shadow trades: **11925**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.58% / filled 20/20。**
-- 全期間 MARKET基準: n=11924, expectancy=+0.00%
+- 全期間 MARKET基準: n=11925, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.58%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$614.51** / 初期 $100.00 (+514.51%)
-- 確定: 4210件 (Win 1295 / Loss 1375 / Flat 1540) / skip 4275件
+- 確定: 4211件 (Win 1295 / Loss 1375 / Flat 1541) / skip 4275件
 - 成長率目線: 平均log +0.000431 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_7PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: HEI/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.19% 残高後 $614.51
+- 最新: NIULAI/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $614.51
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$155.25** / 初期 $100.00 (+55.25%)
-- 確定: 1820件 (Win 502 / Loss 427 / Flat 891) / skip 3515件
+- 確定: 1820件 (Win 502 / Loss 427 / Flat 891) / skip 3516件
 - 成長率目線: 平均log +0.000242 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0343 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $155.25
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.12** / 初期 $100.00 (+18.12%)
-- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1669件
+- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1670件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000287 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000259 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account +0.01% 残高後 $118.12
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T21:41:13.388326+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64552.6
+- 更新: 2026-08-18T21:46:27.728344+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64566.4
 - Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +13.60% | $1,502,467.27 |
-| NIULAI/USDT:USDT | +7.35% | $5,168,537.39 |
-| BTW/USDT:USDT | +7.03% | $20,073,474.92 |
-| HEMI/USDT:USDT | +5.28% | $1,104,773.94 |
-| ON/USDT:USDT | +4.76% | $3,496,940.52 |
+| TRIA/USDT:USDT | +13.32% | $1,591,492.34 |
+| NIULAI/USDT:USDT | +11.56% | $5,231,502.60 |
+| ON/USDT:USDT | +7.78% | $3,541,133.88 |
+| BTW/USDT:USDT | +6.59% | $20,109,248.31 |
+| HEMI/USDT:USDT | +5.63% | $1,107,711.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +3.39% | +3.38% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.76% | +2.75% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.63% | +2.63% |
-| ON/USDT:USDT | below_1h_threshold | +1.74% | +1.74% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
+| ON/USDT:USDT | below_1h_threshold | +4.78% | +4.76% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.30% | +3.27% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.03% | +3.00% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.60% | +2.57% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.16% | +1.13% |
 
 ## 7. 次に見るべき不足
 
