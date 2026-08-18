@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T16:06:27.105930+00:00
+- generated_at: 2026-08-18T16:11:34.164829+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11913**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T16:06:18.593420+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=64827.5
+- 更新: 2026-08-18T16:11:25.752461+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=64723.0
 - Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AEON1/USDT:USDT | +2.36% | $1,057,517.44 |
-| CLO/USDT:USDT | +1.72% | $1,105,692.68 |
-| 1000RATS/USDT:USDT | +1.58% | $7,694,200.98 |
-| VELVET/USDT:USDT | +1.30% | $28,304,709.29 |
-| AIO/USDT:USDT | +1.30% | $2,686,627.39 |
+| AIO/USDT:USDT | +3.95% | $2,738,241.60 |
+| EDEN/USDT:USDT | +1.01% | $4,707,133.02 |
+| AEON1/USDT:USDT | +0.91% | $1,059,089.38 |
+| CLO/USDT:USDT | +0.82% | $1,110,595.00 |
+| BICO/USDT:USDT | +0.80% | $1,673,062.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AEON1/USDT:USDT | below_1h_threshold | +2.36% | +2.36% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
-| CLO/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.31% | +1.30% |
-| AIO/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
+| AIO/USDT:USDT | below_1h_threshold | +4.04% | +4.20% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.03% | +1.19% |
+| AEON1/USDT:USDT | below_1h_threshold | +0.91% | +1.07% |
+| TQQQ/USDT:USDT | below_1h_threshold | +0.84% | +1.00% |
+| CLO/USDT:USDT | below_1h_threshold | +0.83% | +0.98% |
 
 ## 7. 次に見るべき不足
 
