@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T16:36:28.093467+00:00
+- generated_at: 2026-08-18T16:41:24.562254+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11913**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T16:36:19.645151+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64715.4
+- 更新: 2026-08-18T16:41:16.049547+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64777.3
 - Funnel: target 993 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIO/USDT:USDT | +3.97% | $2,822,049.68 |
-| EDEN/USDT:USDT | +3.64% | $4,875,352.85 |
-| CHIP/USDT:USDT | +2.32% | $2,212,032.30 |
-| ACE/USDT:USDT | +1.29% | $41,615,398.63 |
-| CYS/USDT:USDT | +1.26% | $13,839,256.13 |
+| AIO/USDT:USDT | +4.81% | $2,838,526.62 |
+| EDEN/USDT:USDT | +3.83% | $4,921,915.02 |
+| GPS/USDT:USDT | +2.56% | $22,545,384.14 |
+| CHIP/USDT:USDT | +2.55% | $2,232,612.19 |
+| BASECAT/USDT:USDT | +2.29% | $1,192,858.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIO/USDT:USDT | below_1h_threshold | +3.97% | +4.14% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.65% | +3.81% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.64% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.33% | +2.49% |
-| ACE/USDT:USDT | below_1h_threshold | +1.38% | +1.55% |
+| AIO/USDT:USDT | below_1h_threshold | +4.81% | +4.88% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.85% | +3.92% |
+| GPS/USDT:USDT | below_1h_threshold | +2.57% | +2.64% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.48% | +2.55% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +2.48% | +2.55% |
 
 ## 7. 次に見るべき不足
 
