@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T23:31:17.933955+00:00
+- generated_at: 2026-08-18T23:36:30.658260+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11929**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.12** / 初期 $100.00 (+18.12%)
-- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1674件
+- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1675件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000322 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account +0.01% 残高後 $118.12
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T23:31:09.511413+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=64690.9
-- Funnel: target 993 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T23:36:22.080989+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=64727.1
+- Funnel: target 993 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +16.65% | $5,770,073.34 |
-| TRIA/USDT:USDT | +11.53% | $2,657,490.24 |
-| BTW/USDT:USDT | +10.68% | $21,088,929.46 |
-| PUMPFUN/USDT:USDT | +7.56% | $21,130,689.50 |
-| HEMI/USDT:USDT | +7.27% | $1,056,475.76 |
+| NIULAI/USDT:USDT | +16.31% | $5,782,815.63 |
+| TRIA/USDT:USDT | +12.00% | $2,669,894.41 |
+| BTW/USDT:USDT | +11.25% | $21,189,318.33 |
+| PUMPFUN/USDT:USDT | +9.02% | $21,648,521.40 |
+| HEMI/USDT:USDT | +7.41% | $1,060,354.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.52% | +2.39% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.21% | +2.08% |
-| BTW/USDT:USDT | below_1h_threshold | +1.46% | +1.33% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.10% | +0.97% |
-| SKDD/USDT:USDT | below_1h_threshold | +1.00% | +0.87% |
+| ON/USDT:USDT | below_1h_threshold | +2.20% | +2.01% |
+| BTW/USDT:USDT | below_1h_threshold | +2.02% | +1.84% |
+| FET/USDT:USDT | below_1h_threshold | +2.00% | +1.82% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.66% | +1.47% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.61% | +1.42% |
 
 ## 7. 次に見るべき不足
 
