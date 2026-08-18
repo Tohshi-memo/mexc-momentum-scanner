@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T06:46:20.764360+00:00
+- generated_at: 2026-08-18T06:51:31.365751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11886**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.46** / 初期 $100.00 (+17.46%)
-- 確定: 1697件 (Win 505 / Loss 642 / Flat 550) / pending 3件 / skip 1656件
+- 確定: 1697件 (Win 505 / Loss 642 / Flat 550) / pending 4件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000126 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONG/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $117.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T06:46:12.917263+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=64412.5
-- Funnel: target 992 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T06:51:18.197841+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=64294.5
+- Funnel: target 992 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RED/USDT:USDT | +22.13% | $2,020,069.81 |
-| PRL/USDT:USDT | +20.87% | $2,642,593.28 |
-| CYS/USDT:USDT | +13.36% | $17,515,611.19 |
-| PIEVERSE/USDT:USDT | +9.52% | $3,083,124.81 |
-| VVV/USDT:USDT | +9.21% | $3,561,851.25 |
+| RED/USDT:USDT | +23.55% | $2,033,887.66 |
+| PRL/USDT:USDT | +20.90% | $2,653,608.10 |
+| CYS/USDT:USDT | +11.90% | $17,584,666.27 |
+| PIEVERSE/USDT:USDT | +10.40% | $3,090,451.92 |
+| VVV/USDT:USDT | +9.27% | $3,578,848.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.49% | +3.16% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.73% | +2.40% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.52% | +2.19% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.16% | +1.83% |
-| LIT/USDT:USDT | below_1h_threshold | +2.10% | +1.77% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.56% | +3.42% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.40% | +2.26% |
+| CYS/USDT:USDT | below_1h_threshold | +2.07% | +1.92% |
+| VVV/USDT:USDT | below_1h_threshold | +1.91% | +1.77% |
+| H/USDT:USDT | below_1h_threshold | +1.89% | +1.75% |
 
 ## 7. 次に見るべき不足
 
