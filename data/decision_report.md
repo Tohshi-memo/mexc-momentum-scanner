@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T14:01:26.953162+00:00
+- generated_at: 2026-08-18T14:06:28.652985+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11907**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.63** / 初期 $100.00 (+18.63%)
-- 確定: 1716件 (Win 513 / Loss 652 / Flat 551) / pending 6件 / skip 1661件
+- 確定: 1716件 (Win 513 / Loss 652 / Flat 551) / pending 6件 / skip 1662件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000318 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T14:01:19.993732+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=64205.9
-- Funnel: target 993 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T14:06:20.101384+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=64320.1
+- Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +27.26% | $37,397,896.74 |
-| PRL/USDT:USDT | +20.98% | $3,919,968.69 |
-| SOXS/USDT:USDT | +18.33% | $12,794,153.56 |
-| VVV/USDT:USDT | +15.67% | $8,516,853.95 |
-| APR/USDT:USDT | +15.53% | $1,984,140.51 |
+| ACE/USDT:USDT | +25.15% | $37,883,081.74 |
+| 1000RATS/USDT:USDT | +24.53% | $1,209,776.64 |
+| CLO/USDT:USDT | +24.50% | $1,007,170.27 |
+| PRL/USDT:USDT | +21.63% | $3,941,985.56 |
+| SOXS/USDT:USDT | +18.46% | $13,137,788.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.55% | +2.52% |
-| VRTXSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.94% |
-| AKE/USDT:USDT | below_1h_threshold | +0.63% | +0.60% |
-| MCDSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.48% |
-| LAB/USDT:USDT | below_1h_threshold | +0.45% | +0.42% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.55% | +2.34% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.54% | +2.33% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.99% | +0.78% |
+| VRTXSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.76% |
+| CYS/USDT:USDT | below_1h_threshold | +0.86% | +0.65% |
 
 ## 7. 次に見るべき不足
 
