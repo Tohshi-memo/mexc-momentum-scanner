@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T19:31:38.970548+00:00
+- generated_at: 2026-08-18T19:36:39.920750+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11921**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T19:31:26.200524+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64741.8
+- 更新: 2026-08-18T19:36:28.997371+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64700.0
 - Funnel: target 993 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +7.95% | $17,925,689.83 |
-| NIULAI/USDT:USDT | +6.67% | $5,509,912.29 |
-| GPS/USDT:USDT | +4.15% | $21,375,092.91 |
-| SKDD/USDT:USDT | +2.69% | $2,002,305.23 |
-| CYS/USDT:USDT | +2.18% | $13,785,470.99 |
+| BTW/USDT:USDT | +8.05% | $18,122,650.34 |
+| GPS/USDT:USDT | +4.01% | $21,444,766.50 |
+| NIULAI/USDT:USDT | +3.73% | $5,537,859.68 |
+| PRL/USDT:USDT | +2.63% | $4,483,119.99 |
+| SKDD/USDT:USDT | +2.43% | $2,003,525.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +2.14% | +2.14% |
-| LIT/USDT:USDT | below_1h_threshold | +1.29% | +1.29% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
-| CAP/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| HEI/USDT:USDT | below_1h_threshold | +2.28% | +2.35% |
+| ACE/USDT:USDT | below_1h_threshold | +1.54% | +1.61% |
+| LIT/USDT:USDT | below_1h_threshold | +1.23% | +1.30% |
+| CAP/USDT:USDT | below_1h_threshold | +0.94% | +1.01% |
+| JTO/USDT:USDT | below_1h_threshold | +0.92% | +0.99% |
 
 ## 7. 次に見るべき不足
 
