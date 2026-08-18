@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T02:51:46.812515+00:00
+- generated_at: 2026-08-18T02:56:40.993452+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11874**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T02:51:29.976211+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=64098.0
-- Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-08-18T02:56:26.923959+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=64033.0
+- Funnel: target 992 → liquid 184 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +15.59% | $1,837,638.90 |
-| ONG/USDT:USDT | +10.45% | $1,058,785.88 |
-| STAR/USDT:USDT | +10.19% | $1,794,631.69 |
-| SOXS/USDT:USDT | +7.52% | $5,088,695.96 |
-| H/USDT:USDT | +7.34% | $6,499,741.46 |
+| PIEVERSE/USDT:USDT | +15.30% | $1,863,711.58 |
+| STAR/USDT:USDT | +9.67% | $1,798,803.99 |
+| ONG/USDT:USDT | +9.47% | $1,063,418.82 |
+| SOXS/USDT:USDT | +8.03% | $5,207,831.88 |
+| H/USDT:USDT | +7.42% | $6,516,799.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +2.70% | +2.82% |
-| ACU/USDT:USDT | below_1h_threshold | +2.42% | +2.54% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.13% | +2.25% |
-| APR/USDT:USDT | below_1h_threshold | +1.95% | +2.07% |
-| BTW/USDT:USDT | below_1h_threshold | +1.85% | +1.97% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.79% | +5.01% |
+| CYS/USDT:USDT | below_1h_threshold | +3.10% | +3.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.70% | +2.92% |
+| ACU/USDT:USDT | below_1h_threshold | +2.15% | +2.37% |
+| NIL/USDT:USDT | below_1h_threshold | +1.62% | +1.85% |
 
 ## 7. 次に見るべき不足
 
