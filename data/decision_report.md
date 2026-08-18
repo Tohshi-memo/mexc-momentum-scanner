@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-17T23:56:23.256559+00:00
+- generated_at: 2026-08-18T00:01:19.929537+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11862**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-17T23:56:14.851828+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=64471.3
-- Funnel: target 992 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-18T00:01:11.474188+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64521.0
+- Funnel: target 992 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +10.52% | $1,001,264.94 |
-| STAR/USDT:USDT | +7.35% | $1,593,610.01 |
-| ALLO/USDT:USDT | +6.68% | $7,856,019.05 |
-| COMP/USDT:USDT | +6.49% | $2,869,539.88 |
-| ANSEM/USDT:USDT | +5.96% | $3,799,747.73 |
+| PIEVERSE/USDT:USDT | +11.38% | $1,006,784.92 |
+| STAR/USDT:USDT | +7.19% | $1,593,669.93 |
+| ALLO/USDT:USDT | +6.85% | $7,880,211.79 |
+| COMP/USDT:USDT | +6.31% | $2,876,929.63 |
+| SKYAI/USDT:USDT | +6.12% | $9,559,494.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +3.67% | +3.35% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.81% | +2.50% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.73% | +2.41% |
-| ACU/USDT:USDT | below_1h_threshold | +2.07% | +1.75% |
-| GPS/USDT:USDT | below_1h_threshold | +2.03% | +1.71% |
+| AXTISTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.51% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.46% | +0.44% |
+| ACU/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
+| STAR/USDT:USDT | below_1h_threshold | +0.29% | +0.27% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.19% |
 
 ## 7. 次に見るべき不足
 
