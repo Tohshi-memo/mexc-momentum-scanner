@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T00:36:24.173597+00:00
+- generated_at: 2026-08-18T00:41:23.680250+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11863**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.53** / 初期 $100.00 (+17.53%)
-- 確定: 1679件 (Win 504 / Loss 641 / Flat 534) / pending 0件 / skip 1655件
+- 確定: 1679件 (Win 504 / Loss 641 / Flat 534) / pending 0件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000187 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AIO/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $117.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T00:36:17.571420+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=64411.9
-- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T00:41:15.074885+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=64373.9
+- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +13.61% | $1,204,895.44 |
-| ANSEM/USDT:USDT | +8.88% | $3,838,945.65 |
-| ALLO/USDT:USDT | +7.97% | $8,207,558.33 |
-| TUT/USDT:USDT | +7.78% | $28,131,912.97 |
-| COMP/USDT:USDT | +6.61% | $3,019,988.34 |
+| PIEVERSE/USDT:USDT | +13.89% | $1,210,167.65 |
+| ANSEM/USDT:USDT | +8.96% | $3,849,309.40 |
+| COMP/USDT:USDT | +7.27% | $3,037,614.51 |
+| TUT/USDT:USDT | +7.15% | $28,170,079.19 |
+| STAR/USDT:USDT | +6.73% | $1,623,004.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +3.39% | +3.53% |
-| US/USDT:USDT | below_1h_threshold | +2.80% | +2.95% |
-| SNT/USDT:USDT | below_1h_threshold | +2.66% | +2.80% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.28% | +2.43% |
-| ONG/USDT:USDT | below_1h_threshold | +2.16% | +2.30% |
+| TUT/USDT:USDT | below_1h_threshold | +2.78% | +2.99% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.35% | +2.56% |
+| US/USDT:USDT | below_1h_threshold | +2.35% | +2.56% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.33% | +2.53% |
+| SNT/USDT:USDT | below_1h_threshold | +2.02% | +2.22% |
 
 ## 7. 次に見るべき不足
 
