@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T21:06:31.060771+00:00
+- generated_at: 2026-08-18T21:11:25.026376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11924**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T21:06:24.121764+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64581.6
+- 更新: 2026-08-18T21:11:16.574602+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64599.4
 - Funnel: target 993 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +7.37% | $19,546,368.75 |
-| HEMI/USDT:USDT | +4.22% | $1,067,505.29 |
-| PRL/USDT:USDT | +2.97% | $4,646,559.45 |
-| ON/USDT:USDT | +2.78% | $3,452,652.16 |
-| AIO/USDT:USDT | +2.33% | $2,613,578.42 |
+| BTW/USDT:USDT | +7.49% | $19,640,254.68 |
+| HEMI/USDT:USDT | +4.21% | $1,075,644.10 |
+| PRL/USDT:USDT | +2.86% | $4,649,902.25 |
+| AIO/USDT:USDT | +2.86% | $2,615,109.93 |
+| RED/USDT:USDT | +2.71% | $3,801,724.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +1.90% | +1.85% |
-| BASED/USDT:USDT | below_1h_threshold | +0.57% | +0.51% |
-| CYS/USDT:USDT | below_1h_threshold | +0.52% | +0.47% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.49% | +0.44% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.40% | +0.34% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.89% | +1.81% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.55% | +1.46% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
+| CYS/USDT:USDT | below_1h_threshold | +0.89% | +0.81% |
+| LINK/USDT:USDT | below_1h_threshold | +0.52% | +0.44% |
 
 ## 7. 次に見るべき不足
 
