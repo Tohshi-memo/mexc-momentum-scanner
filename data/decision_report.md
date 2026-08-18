@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T16:01:27.672697+00:00
+- generated_at: 2026-08-18T16:06:27.105930+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11913**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T16:01:17.659659+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=64848.7
+- 更新: 2026-08-18T16:06:18.593420+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64827.5
 - Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +1.20% | $31,359,017.25 |
-| VVV/USDT:USDT | +0.70% | $9,920,244.45 |
-| 1000RATS/USDT:USDT | +0.54% | $7,363,052.05 |
-| USELESS/USDT:USDT | +0.53% | $1,323,051.94 |
-| NBISSTOCK/USDT:USDT | +0.40% | $10,276,394.49 |
+| AEON1/USDT:USDT | +2.36% | $1,057,517.44 |
+| CLO/USDT:USDT | +1.72% | $1,105,692.68 |
+| 1000RATS/USDT:USDT | +1.58% | $7,694,200.98 |
+| VELVET/USDT:USDT | +1.30% | $28,304,709.29 |
+| AIO/USDT:USDT | +1.30% | $2,686,627.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +2.41% | +2.37% |
-| MUU/USDT:USDT | below_1h_threshold | +2.01% | +1.97% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.24% | +1.20% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.16% | +1.12% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.36% | +2.36% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
+| CLO/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.31% | +1.30% |
+| AIO/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
 
 ## 7. 次に見るべき不足
 
