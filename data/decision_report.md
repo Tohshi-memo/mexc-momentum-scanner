@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T12:41:37.331504+00:00
+- generated_at: 2026-08-18T12:46:38.503367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11904**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.84** / 初期 $100.00 (+18.84%)
-- 確定: 1715件 (Win 513 / Loss 651 / Flat 551) / pending 6件 / skip 1657件
+- 確定: 1715件 (Win 513 / Loss 651 / Flat 551) / pending 6件 / skip 1658件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000482 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T12:41:22.244878+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=64229.6
-- Funnel: target 993 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T12:46:25.200725+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=64216.0
+- Funnel: target 993 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +23.29% | $34,488,811.87 |
-| PRL/USDT:USDT | +20.66% | $3,681,740.35 |
-| VVV/USDT:USDT | +15.68% | $8,033,451.44 |
-| GPS/USDT:USDT | +15.15% | $31,872,929.94 |
-| SOXS/USDT:USDT | +14.94% | $9,747,900.87 |
+| ACE/USDT:USDT | +25.11% | $35,307,832.51 |
+| PRL/USDT:USDT | +19.55% | $3,705,215.94 |
+| GPS/USDT:USDT | +16.06% | $31,947,112.68 |
+| VVV/USDT:USDT | +15.84% | $8,088,160.59 |
+| SOXS/USDT:USDT | +15.16% | $9,770,722.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +4.19% | +4.34% |
-| ANSEM/USDT:USDT | below_1h_threshold | +2.50% | +2.65% |
-| BTW/USDT:USDT | below_1h_threshold | +1.90% | +2.05% |
-| CAP/USDT:USDT | below_1h_threshold | +1.34% | +1.49% |
-| GUN/USDT:USDT | below_1h_threshold | +1.31% | +1.46% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.72% | +2.89% |
+| BTW/USDT:USDT | below_1h_threshold | +2.16% | +2.33% |
+| POL/USDT:USDT | below_1h_threshold | +1.48% | +1.65% |
+| GUN/USDT:USDT | below_1h_threshold | +1.28% | +1.45% |
+| CAP/USDT:USDT | below_1h_threshold | +1.20% | +1.37% |
 
 ## 7. 次に見るべき不足
 
