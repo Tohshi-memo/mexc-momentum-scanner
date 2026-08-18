@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T17:26:29.339690+00:00
+- generated_at: 2026-08-18T17:31:24.393137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11918**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T17:26:21.243805+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64763.9
+- 更新: 2026-08-18T17:31:15.765598+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64778.9
 - Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CYS/USDT:USDT | +5.08% | $13,344,396.71 |
-| BASECAT/USDT:USDT | +5.00% | $1,101,025.60 |
-| GPS/USDT:USDT | +4.20% | $20,920,336.12 |
-| EDEN/USDT:USDT | +3.62% | $4,885,159.31 |
-| CHIP/USDT:USDT | +3.52% | $2,205,266.18 |
+| BASECAT/USDT:USDT | +5.51% | $1,103,283.11 |
+| GPS/USDT:USDT | +4.37% | $21,004,378.84 |
+| EDEN/USDT:USDT | +3.53% | $4,906,483.49 |
+| AIO/USDT:USDT | +2.93% | $2,778,059.55 |
+| CHIP/USDT:USDT | +2.88% | $2,235,567.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.40% | +3.46% |
-| RE/USDT:USDT | below_1h_threshold | +2.08% | +2.14% |
-| GPS/USDT:USDT | below_1h_threshold | +1.75% | +1.81% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.32% | +1.39% |
-| BASECAT/USDT:USDT | below_1h_threshold | +1.06% | +1.12% |
+| GPS/USDT:USDT | below_1h_threshold | +1.89% | +1.93% |
+| RE/USDT:USDT | below_1h_threshold | +1.73% | +1.76% |
+| BASECAT/USDT:USDT | below_1h_threshold | +1.47% | +1.51% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.09% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.04% | +1.08% |
 
 ## 7. 次に見るべき不足
 
