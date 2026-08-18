@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T09:51:25.631220+00:00
+- generated_at: 2026-08-18T09:56:37.406210+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11898**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.04** / 初期 $100.00 (+18.04%)
-- 確定: 1709件 (Win 510 / Loss 649 / Flat 550) / pending 4件 / skip 1656件
+- 確定: 1709件 (Win 510 / Loss 649 / Flat 550) / pending 6件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000312 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIULAI/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $118.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T09:51:15.028498+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=64117.4
-- Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T09:56:26.048443+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=64140.2
+- Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PRL/USDT:USDT | +19.47% | $3,270,858.71 |
-| RED/USDT:USDT | +18.46% | $2,847,954.27 |
-| SOXS/USDT:USDT | +14.46% | $8,734,264.89 |
-| VVV/USDT:USDT | +12.66% | $4,689,213.55 |
-| OPN/USDT:USDT | +12.51% | $1,328,883.77 |
+| PRL/USDT:USDT | +19.31% | $3,298,051.58 |
+| RED/USDT:USDT | +18.57% | $2,875,415.96 |
+| SOXS/USDT:USDT | +14.11% | $8,804,592.88 |
+| VVV/USDT:USDT | +13.23% | $4,788,729.89 |
+| OPN/USDT:USDT | +12.22% | $1,338,620.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +3.26% | +3.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.93% | +3.16% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.96% | +2.19% |
-| LIT/USDT:USDT | below_1h_threshold | +1.89% | +2.12% |
-| NIL/USDT:USDT | below_1h_threshold | +1.49% | +1.72% |
+| CYS/USDT:USDT | below_1h_threshold | +4.19% | +4.38% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.93% | +3.12% |
+| AEON1/USDT:USDT | below_1h_threshold | +2.47% | +2.66% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.93% | +2.13% |
+| LIT/USDT:USDT | below_1h_threshold | +1.67% | +1.87% |
 
 ## 7. 次に見るべき不足
 
