@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T21:36:20.041137+00:00
+- generated_at: 2026-08-18T21:41:22.437117+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11924**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.12** / 初期 $100.00 (+18.12%)
-- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1668件
+- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1669件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000287 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account +0.01% 残高後 $118.12
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T21:36:11.610937+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64578.8
-- Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T21:41:13.388326+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64552.6
+- Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +12.96% | $1,381,500.57 |
-| BTW/USDT:USDT | +6.72% | $20,042,331.68 |
-| HEMI/USDT:USDT | +4.48% | $1,100,962.32 |
-| PUMPFUN/USDT:USDT | +3.60% | $16,163,746.80 |
-| ON/USDT:USDT | +3.54% | $3,488,397.08 |
+| TRIA/USDT:USDT | +13.60% | $1,502,467.27 |
+| NIULAI/USDT:USDT | +7.35% | $5,168,537.39 |
+| BTW/USDT:USDT | +7.03% | $20,073,474.92 |
+| HEMI/USDT:USDT | +5.28% | $1,104,773.94 |
+| ON/USDT:USDT | +4.76% | $3,496,940.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.25% | +2.20% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.00% | +1.95% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.08% | +1.04% |
-| HBAR/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.39% | +3.38% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.76% | +2.75% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.63% | +2.63% |
+| ON/USDT:USDT | below_1h_threshold | +1.74% | +1.74% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
 
 ## 7. 次に見るべき不足
 
