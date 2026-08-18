@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T07:51:24.798345+00:00
+- generated_at: 2026-08-18T07:56:29.360964+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11889**
 
@@ -63,16 +63,16 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.85** / 初期 $100.00 (+16.85%)
-- 確定: 1700件 (Win 505 / Loss 645 / Flat 550) / pending 4件 / skip 1656件
+- 確定: 1700件 (Win 505 / Loss 645 / Flat 550) / pending 5件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000124 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: EDEN/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T07:51:13.883967+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=64161.1
-- Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
+- 更新: 2026-08-18T07:56:18.438437+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=64146.4
+- Funnel: target 992 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PRL/USDT:USDT | +21.95% | $2,834,174.10 |
-| CYS/USDT:USDT | +16.84% | $17,671,022.04 |
-| RED/USDT:USDT | +15.73% | $2,336,772.82 |
-| ONG/USDT:USDT | +11.92% | $1,008,400.13 |
-| ACE/USDT:USDT | +10.13% | $35,173,696.62 |
+| PRL/USDT:USDT | +22.33% | $2,873,123.75 |
+| CYS/USDT:USDT | +16.27% | $17,746,129.28 |
+| RED/USDT:USDT | +14.79% | $2,354,085.26 |
+| ONG/USDT:USDT | +11.13% | $1,014,900.28 |
+| OPN/USDT:USDT | +10.59% | $1,011,640.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.97% | +5.18% |
-| NIL/USDT:USDT | below_1h_threshold | +4.24% | +4.45% |
-| BTW/USDT:USDT | below_1h_threshold | +3.77% | +3.98% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.69% | +2.90% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.93% | +2.14% |
+| BTW/USDT:USDT | below_1h_threshold | +4.97% | +5.21% |
+| CYS/USDT:USDT | below_1h_threshold | +4.68% | +4.92% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.14% | +4.38% |
+| NIL/USDT:USDT | below_1h_threshold | +2.87% | +3.10% |
+| AEON1/USDT:USDT | below_1h_threshold | +1.92% | +2.15% |
 
 ## 7. 次に見るべき不足
 
