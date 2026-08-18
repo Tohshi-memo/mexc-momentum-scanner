@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T19:01:22.213438+00:00
+- generated_at: 2026-08-18T19:06:30.806349+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11919**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T19:01:13.540102+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=64740.4
+- 更新: 2026-08-18T19:06:22.267381+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64721.7
 - Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +7.98% | $16,806,352.02 |
-| GPS/USDT:USDT | +4.98% | $21,136,555.42 |
-| CYS/USDT:USDT | +3.37% | $13,699,933.12 |
-| US/USDT:USDT | +2.73% | $1,018,202.01 |
-| BASECAT/USDT:USDT | +2.71% | $1,115,647.78 |
+| BTW/USDT:USDT | +8.12% | $17,069,480.95 |
+| GPS/USDT:USDT | +4.90% | $21,180,623.12 |
+| CYS/USDT:USDT | +3.29% | $13,712,149.20 |
+| BASECAT/USDT:USDT | +2.62% | $1,115,957.93 |
+| US/USDT:USDT | +2.58% | $1,021,070.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +0.74% | +0.74% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
-| US/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.25% | +0.26% |
+| HEI/USDT:USDT | below_1h_threshold | +2.21% | +2.24% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.65% | +0.68% |
+| BMT/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
+| BASED/USDT:USDT | below_1h_threshold | +0.34% | +0.38% |
+| RE/USDT:USDT | below_1h_threshold | +0.32% | +0.36% |
 
 ## 7. 次に見るべき不足
 
