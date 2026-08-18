@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T11:46:26.326867+00:00
+- generated_at: 2026-08-18T11:51:25.814704+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11901**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.85** / 初期 $100.00 (+18.85%)
-- 確定: 1712件 (Win 512 / Loss 649 / Flat 551) / pending 3件 / skip 1656件
+- 確定: 1712件 (Win 512 / Loss 649 / Flat 551) / pending 5件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000428 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: H/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $118.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T11:46:17.864147+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=64370.0
-- Funnel: target 993 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T11:51:14.507983+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=64331.6
+- Funnel: target 993 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PRL/USDT:USDT | +18.99% | $3,607,044.90 |
-| OPN/USDT:USDT | +17.13% | $2,091,134.93 |
-| RED/USDT:USDT | +16.92% | $3,244,800.79 |
-| VVV/USDT:USDT | +16.10% | $7,164,817.16 |
-| SOXS/USDT:USDT | +14.08% | $9,531,945.38 |
+| PRL/USDT:USDT | +19.36% | $3,617,878.05 |
+| OPN/USDT:USDT | +17.35% | $2,190,905.51 |
+| VVV/USDT:USDT | +16.48% | $7,186,475.37 |
+| RED/USDT:USDT | +16.33% | $3,253,285.86 |
+| GPS/USDT:USDT | +14.05% | $32,573,917.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +4.59% | +4.28% |
-| ACE/USDT:USDT | below_1h_threshold | +3.97% | +3.66% |
-| RED/USDT:USDT | below_1h_threshold | +3.58% | +3.27% |
-| OPN/USDT:USDT | below_1h_threshold | +3.56% | +3.25% |
-| APR/USDT:USDT | below_1h_threshold | +3.49% | +3.18% |
+| HEMI/USDT:USDT | below_relative_strength | +5.21% | +4.96% |
+| GPS/USDT:USDT | below_1h_threshold | +4.49% | +4.24% |
+| OPN/USDT:USDT | below_1h_threshold | +3.73% | +3.48% |
+| APR/USDT:USDT | below_1h_threshold | +3.43% | +3.19% |
+| RED/USDT:USDT | below_1h_threshold | +3.26% | +3.01% |
 
 ## 7. 次に見るべき不足
 
