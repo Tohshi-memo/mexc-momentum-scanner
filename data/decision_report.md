@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T14:16:34.640189+00:00
+- generated_at: 2026-08-18T14:21:27.949941+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11907**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T14:16:25.656967+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64235.0
-- Funnel: target 993 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-08-18T14:21:19.479550+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=64465.5
+- Funnel: target 993 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1
+- Strict後reject: 4h RSI 80.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +29.85% | $38,891,048.44 |
-| CLO/USDT:USDT | +27.61% | $1,021,722.30 |
-| 1000RATS/USDT:USDT | +25.14% | $1,871,292.27 |
-| PRL/USDT:USDT | +21.71% | $3,957,592.62 |
-| SOXS/USDT:USDT | +19.81% | $13,715,743.95 |
+| ACE/USDT:USDT | +30.10% | $39,210,061.16 |
+| CLO/USDT:USDT | +27.52% | $1,025,433.46 |
+| 1000RATS/USDT:USDT | +23.29% | $2,211,504.03 |
+| PRL/USDT:USDT | +20.74% | $3,963,746.58 |
+| SOXS/USDT:USDT | +18.87% | $13,775,783.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.01% | +2.93% |
-| ACE/USDT:USDT | below_1h_threshold | +2.81% | +2.74% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.73% | +2.66% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.55% | +2.48% |
-| CLO/USDT:USDT | below_1h_threshold | +1.30% | +1.23% |
+| BMT/USDT:USDT | below_1h_threshold | +3.84% | +3.40% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.10% | +2.67% |
+| ACE/USDT:USDT | below_1h_threshold | +2.85% | +2.41% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.55% | +2.12% |
+| AKE/USDT:USDT | below_1h_threshold | +2.43% | +2.00% |
 
 ## 7. 次に見るべき不足
 
