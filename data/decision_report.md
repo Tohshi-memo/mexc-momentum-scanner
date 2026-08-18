@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T01:26:26.024525+00:00
+- generated_at: 2026-08-18T01:31:20.814144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11866**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T01:26:17.197685+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=64290.5
-- Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-18T01:31:12.476455+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64309.2
+- Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PIEVERSE/USDT:USDT | +15.44% | $1,371,727.56 |
-| ONG/USDT:USDT | +8.49% | $1,350,709.17 |
-| STAR/USDT:USDT | +8.23% | $1,681,555.85 |
-| ALLO/USDT:USDT | +7.27% | $8,538,142.02 |
-| COMP/USDT:USDT | +6.61% | $3,097,457.60 |
+| PIEVERSE/USDT:USDT | +15.97% | $1,385,709.17 |
+| STAR/USDT:USDT | +8.14% | $1,692,275.33 |
+| ALLO/USDT:USDT | +7.56% | $8,556,287.20 |
+| ONG/USDT:USDT | +6.66% | $1,358,731.92 |
+| BMT/USDT:USDT | +6.53% | $1,085,449.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +2.43% | +2.53% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.44% |
-| NIL/USDT:USDT | below_1h_threshold | +1.29% | +1.39% |
-| ACU/USDT:USDT | below_1h_threshold | +1.25% | +1.36% |
-| UNITREE/USDT:USDT | below_1h_threshold | +1.03% | +1.13% |
+| ONG/USDT:USDT | below_1h_threshold | +3.40% | +3.48% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.34% | +2.41% |
+| ACU/USDT:USDT | below_1h_threshold | +1.29% | +1.36% |
+| APR/USDT:USDT | below_1h_threshold | +1.09% | +1.16% |
+| UNITREE/USDT:USDT | below_1h_threshold | +1.08% | +1.15% |
 
 ## 7. 次に見るべき不足
 
