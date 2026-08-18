@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T12:46:38.503367+00:00
+- generated_at: 2026-08-18T12:51:33.933707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11904**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T12:46:25.200725+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64216.0
-- Funnel: target 993 → liquid 182 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T12:51:20.650185+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=64226.4
+- Funnel: target 993 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +25.11% | $35,307,832.51 |
-| PRL/USDT:USDT | +19.55% | $3,705,215.94 |
-| GPS/USDT:USDT | +16.06% | $31,947,112.68 |
-| VVV/USDT:USDT | +15.84% | $8,088,160.59 |
-| SOXS/USDT:USDT | +15.16% | $9,770,722.92 |
+| ACE/USDT:USDT | +22.87% | $35,979,073.98 |
+| PRL/USDT:USDT | +18.77% | $3,727,058.22 |
+| VVV/USDT:USDT | +15.66% | $8,146,089.92 |
+| GPS/USDT:USDT | +15.64% | $31,994,461.54 |
+| SOXS/USDT:USDT | +14.83% | $9,869,137.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ANSEM/USDT:USDT | below_1h_threshold | +2.72% | +2.89% |
-| BTW/USDT:USDT | below_1h_threshold | +2.16% | +2.33% |
-| POL/USDT:USDT | below_1h_threshold | +1.48% | +1.65% |
-| GUN/USDT:USDT | below_1h_threshold | +1.28% | +1.45% |
-| CAP/USDT:USDT | below_1h_threshold | +1.20% | +1.37% |
+| APR/USDT:USDT | below_1h_threshold | +4.24% | +4.40% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.57% | +2.73% |
+| BTW/USDT:USDT | below_1h_threshold | +2.29% | +2.45% |
+| POL/USDT:USDT | below_1h_threshold | +1.44% | +1.60% |
+| GUN/USDT:USDT | below_1h_threshold | +1.18% | +1.33% |
 
 ## 7. 次に見るべき不足
 
