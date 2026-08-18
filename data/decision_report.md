@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T08:16:23.066500+00:00
+- generated_at: 2026-08-18T08:21:25.040253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11890**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.64** / 初期 $100.00 (+16.64%)
-- 確定: 1701件 (Win 505 / Loss 646 / Flat 550) / pending 4件 / skip 1656件
+- 確定: 1701件 (Win 505 / Loss 646 / Flat 550) / pending 5件 / skip 1656件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000123 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T08:16:14.298483+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64142.7
-- Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-18T08:21:14.167564+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=64210.1
+- Funnel: target 992 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PRL/USDT:USDT | +21.74% | $2,915,413.19 |
-| RED/USDT:USDT | +13.25% | $2,413,710.60 |
-| ACE/USDT:USDT | +12.97% | $36,364,794.90 |
-| SOXS/USDT:USDT | +11.50% | $7,248,527.67 |
-| CYS/USDT:USDT | +11.05% | $17,343,078.12 |
+| PRL/USDT:USDT | +21.90% | $2,930,204.40 |
+| RED/USDT:USDT | +14.79% | $2,417,491.84 |
+| ACE/USDT:USDT | +13.83% | $36,653,757.83 |
+| SOXS/USDT:USDT | +11.93% | $7,365,543.14 |
+| OPN/USDT:USDT | +11.09% | $1,075,609.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.73% | +4.78% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.73% | +1.77% |
-| GPS/USDT:USDT | below_1h_threshold | +1.59% | +1.63% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.86% | +0.91% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.77% | +0.82% |
+| GPS/USDT:USDT | below_1h_threshold | +1.87% | +1.81% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.73% | +1.67% |
+| TUT/USDT:USDT | below_1h_threshold | +1.51% | +1.45% |
+| OPN/USDT:USDT | below_1h_threshold | +0.87% | +0.81% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.83% | +0.77% |
 
 ## 7. 次に見るべき不足
 
