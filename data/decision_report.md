@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T20:26:28.152547+00:00
+- generated_at: 2026-08-18T20:31:23.505010+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11923**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T20:26:19.373178+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64599.9
+- 更新: 2026-08-18T20:31:15.007332+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=64572.0
 - Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +6.13% | $19,258,031.85 |
-| AIO/USDT:USDT | +3.57% | $2,626,578.62 |
-| PRL/USDT:USDT | +3.32% | $4,579,359.38 |
-| GPS/USDT:USDT | +3.07% | $21,520,818.09 |
-| BANK/USDT:USDT | +2.92% | $1,139,910.24 |
+| BTW/USDT:USDT | +6.98% | $19,448,150.45 |
+| AIO/USDT:USDT | +3.62% | $2,627,976.15 |
+| PRL/USDT:USDT | +3.20% | $4,585,867.21 |
+| GPS/USDT:USDT | +3.15% | $21,552,237.27 |
+| ON/USDT:USDT | +3.05% | $3,407,365.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +2.46% | +2.49% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.35% | +2.38% |
-| AIO/USDT:USDT | below_1h_threshold | +2.31% | +2.34% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
-| BMT/USDT:USDT | below_1h_threshold | +1.51% | +1.54% |
+| ON/USDT:USDT | below_1h_threshold | +3.80% | +3.87% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.35% | +2.42% |
+| AIO/USDT:USDT | below_1h_threshold | +2.27% | +2.34% |
+| ACE/USDT:USDT | below_1h_threshold | +1.79% | +1.86% |
+| BMT/USDT:USDT | below_1h_threshold | +1.58% | +1.65% |
 
 ## 7. 次に見るべき不足
 
