@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 121.40771628620546,
+  "balance": 121.28630856991926,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -3722,6 +3722,28 @@
       "strategy_boosters": [
         "daily_RED",
         "1h_green=4",
+        "fundamental_HIGH"
+      ],
+      "strategy_score": 0.0
+    },
+    {
+      "symbol": "VELVET/USDT:USDT",
+      "detected_at": "2026-08-18T12:36:28.774793+00:00",
+      "closed_at": "2026-08-18T15:00:49.231269+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -3.999999999999996,
+      "sl_pct": 3.999999999999996,
+      "risk_pct": 0.1,
+      "notional_usdt": 3.03519290715514,
+      "pnl_usdt": -0.12140771628620546,
+      "balance_before": 121.40771628620546,
+      "balance_after": 121.28630856991926,
+      "strategy_tier": "S",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "daily_RED",
+        "1h_green=3",
         "fundamental_HIGH"
       ],
       "strategy_score": 0.0
