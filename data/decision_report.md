@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T05:21:23.686642+00:00
+- generated_at: 2026-08-18T05:26:17.966742+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11884**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T05:21:15.079893+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=64216.0
+- 更新: 2026-08-18T05:26:09.532376+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64187.6
 - Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RED/USDT:USDT | +22.24% | $1,135,750.47 |
-| PRL/USDT:USDT | +21.25% | $1,435,208.59 |
-| SOXS/USDT:USDT | +7.76% | $6,247,694.59 |
-| VVV/USDT:USDT | +6.98% | $3,204,982.25 |
-| CYS/USDT:USDT | +6.82% | $17,369,666.13 |
+| PRL/USDT:USDT | +23.06% | $1,545,344.01 |
+| RED/USDT:USDT | +22.48% | $1,226,146.00 |
+| SOXS/USDT:USDT | +7.74% | $6,251,666.81 |
+| ALLO/USDT:USDT | +7.15% | $9,720,673.04 |
+| VVV/USDT:USDT | +6.70% | $3,210,606.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.28% | +4.23% |
-| APR/USDT:USDT | below_1h_threshold | +2.18% | +2.13% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.78% | +1.73% |
-| PRL/USDT:USDT | below_1h_threshold | +1.67% | +1.62% |
-| NIL/USDT:USDT | below_1h_threshold | +1.18% | +1.13% |
+| CYS/USDT:USDT | below_1h_threshold | +3.76% | +3.75% |
+| PRL/USDT:USDT | below_1h_threshold | +3.12% | +3.11% |
+| APR/USDT:USDT | below_1h_threshold | +2.39% | +2.38% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.18% | +2.17% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.71% | +1.70% |
 
 ## 7. 次に見るべき不足
 
