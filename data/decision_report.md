@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T06:11:22.335888+00:00
+- generated_at: 2026-08-18T06:16:27.555127+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11885**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T06:11:13.865622+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=64187.2
+- 更新: 2026-08-18T06:16:20.858577+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64209.0
 - Funnel: target 992 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RED/USDT:USDT | +23.90% | $1,754,274.15 |
-| PRL/USDT:USDT | +18.99% | $2,348,736.80 |
-| CYS/USDT:USDT | +9.81% | $17,120,520.80 |
-| GPS/USDT:USDT | +9.03% | $36,870,023.42 |
-| SOXS/USDT:USDT | +8.57% | $6,517,139.42 |
+| RED/USDT:USDT | +24.97% | $1,792,512.22 |
+| PRL/USDT:USDT | +19.47% | $2,399,235.83 |
+| CYS/USDT:USDT | +10.15% | $17,157,915.83 |
+| GPS/USDT:USDT | +9.20% | $36,935,109.09 |
+| SOXS/USDT:USDT | +8.41% | $6,591,293.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +1.88% | +1.91% |
-| AEON1/USDT:USDT | below_1h_threshold | +1.78% | +1.80% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.30% | +1.33% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.18% | +1.21% |
-| US/USDT:USDT | below_1h_threshold | +0.98% | +1.00% |
+| H/USDT:USDT | below_1h_threshold | +4.10% | +4.09% |
+| AEON1/USDT:USDT | below_1h_threshold | +3.07% | +3.06% |
+| US/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.40% | +1.39% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.18% | +1.17% |
 
 ## 7. 次に見るべき不足
 
