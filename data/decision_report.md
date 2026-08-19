@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T14:51:28.900745+00:00
+- generated_at: 2026-08-19T14:56:23.479913+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11983**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T14:51:17.605169+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.85% price=65534.9
-- Funnel: target 997 → liquid 188 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.4 >= 65=1
+- 更新: 2026-08-19T14:56:14.181553+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.24% price=65788.0
+- Funnel: target 997 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +72.91% | $115,082,202.01 |
-| HEMI/USDT:USDT | +39.54% | $6,034,727.46 |
-| STAR/USDT:USDT | +25.90% | $1,110,617.74 |
-| UNITREE/USDT:USDT | +20.03% | $17,943,730.54 |
-| DOS/USDT:USDT | +15.60% | $1,553,457.22 |
+| BTW/USDT:USDT | +73.61% | $115,950,818.72 |
+| HEMI/USDT:USDT | +40.98% | $6,065,530.95 |
+| STAR/USDT:USDT | +25.64% | $1,117,766.49 |
+| UNITREE/USDT:USDT | +19.83% | $17,961,544.61 |
+| DOS/USDT:USDT | +16.26% | $1,554,334.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.30% | +3.45% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.58% | +2.73% |
-| CAP/USDT:USDT | below_1h_threshold | +2.85% | +2.01% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.00% |
-| VET/USDT:USDT | below_1h_threshold | +2.55% | +1.70% |
+| EDEN/USDT:USDT | below_relative_strength | +6.22% | +4.98% |
+| ZEC/USDT:USDT | below_relative_strength | +5.19% | +3.95% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.30% | +3.06% |
+| CAP/USDT:USDT | below_1h_threshold | +3.71% | +2.48% |
+| CRV/USDT:USDT | below_1h_threshold | +3.40% | +2.16% |
 
 ## 7. 次に見るべき不足
 
