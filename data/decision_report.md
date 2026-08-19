@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T08:06:33.778799+00:00
+- generated_at: 2026-08-19T08:11:22.158217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11964**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.62** / 初期 $100.00 (+18.62%)
-- 確定: 1741件 (Win 520 / Loss 661 / Flat 560) / pending 2件 / skip 1691件
+- 確定: 1741件 (Win 520 / Loss 661 / Flat 560) / pending 3件 / skip 1691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000213 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: KORU/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $118.62
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T08:06:18.222573+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=64280.6
-- Funnel: target 992 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-19T08:11:11.423531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=64261.1
+- Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +70.72% | $64,467,635.53 |
-| HEMI/USDT:USDT | +29.25% | $2,375,003.87 |
-| UNITREE/USDT:USDT | +24.63% | $14,903,736.34 |
-| NIULAI/USDT:USDT | +12.01% | $5,205,081.47 |
-| SKUU/USDT:USDT | +11.00% | $2,691,742.12 |
+| BTW/USDT:USDT | +69.85% | $65,462,186.41 |
+| HEMI/USDT:USDT | +31.88% | $2,406,623.42 |
+| UNITREE/USDT:USDT | +24.05% | $15,050,292.53 |
+| NIULAI/USDT:USDT | +19.28% | $5,228,444.57 |
+| US/USDT:USDT | +10.58% | $1,138,828.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +4.27% | +4.24% |
-| MUU/USDT:USDT | below_1h_threshold | +3.63% | +3.60% |
-| KORU/USDT:USDT | below_1h_threshold | +3.55% | +3.52% |
-| SKUU/USDT:USDT | below_1h_threshold | +3.35% | +3.33% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.32% | +3.30% |
+| UNITREE/USDT:USDT | below_1h_threshold | +4.27% | +4.27% |
+| MUU/USDT:USDT | below_1h_threshold | +3.63% | +3.63% |
+| KORU/USDT:USDT | below_1h_threshold | +3.55% | +3.55% |
+| SKUU/USDT:USDT | below_1h_threshold | +3.35% | +3.36% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.32% | +3.33% |
 
 ## 7. 次に見るべき不足
 
