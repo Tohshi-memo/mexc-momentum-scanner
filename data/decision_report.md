@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-19T07:06:41.268009+00:00
+- generated_at: 2026-08-19T07:11:43.689830+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11957**
+- closed shadow trades: **11959**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=11957, expectancy=-0.00%
+- 全期間 MARKET基準: n=11959, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.15%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -31,9 +31,9 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_ATR_LONG | 14/20 | 70.0% | +1.18% | **+0.83%** |
 | LIMIT_1PCT_LONG | 16/20 | 80.0% | +0.89% | **+0.72%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.61% | **+0.42%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.74% | **+0.52%** |
+| LIMIT_ATR_LONG | 13/20 | 65.0% | +0.80% | **+0.52%** |
 | LIMIT_8PCT_LONG | 7/20 | 35.0% | +1.14% | **+0.40%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.40% | **+0.40%** |
 
@@ -47,31 +47,31 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$617.73** / 初期 $100.00 (+517.73%)
-- 確定: 4218件 (Win 1297 / Loss 1377 / Flat 1544) / skip 4300件
-- 成長率目線: 平均log +0.000432 / 幾何平均 +0.043% per trade / maxDD +8.13%
+- 確定: 4220件 (Win 1297 / Loss 1377 / Flat 1546) / skip 4300件
+- 成長率目線: 平均log +0.000431 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ACE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $617.73
+- 最新: HEMI/USDT:USDT `LIMIT_ATR_LONG` EXPIRED account +0.00% 残高後 $617.73
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.70** / 初期 $100.00 (+54.70%)
-- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3547件
+- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3549件
 - 成長率目線: 平均log +0.000240 / 幾何平均 +0.024% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0333 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0563 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.35% 残高後 $154.70
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$117.90** / 初期 $100.00 (+17.90%)
-- 確定: 1735件 (Win 518 / Loss 661 / Flat 556) / pending 5件 / skip 1691件
+- 残高: **$118.31** / 初期 $100.00 (+18.31%)
+- 確定: 1737件 (Win 519 / Loss 661 / Flat 557) / pending 3件 / skip 1691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000154 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: ACE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.90
+- 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $118.31
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T07:06:23.506291+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64268.3
+- 更新: 2026-08-19T07:11:22.586281+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=64275.7
 - Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 4 → strict 4
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +54.86% | $54,676,656.49 |
-| HEMI/USDT:USDT | +36.50% | $1,900,517.67 |
-| UNITREE/USDT:USDT | +22.33% | $12,789,830.44 |
-| US/USDT:USDT | +10.82% | $1,127,879.31 |
-| PUMPFUN/USDT:USDT | +6.20% | $36,521,094.94 |
+| BTW/USDT:USDT | +58.79% | $56,257,614.85 |
+| HEMI/USDT:USDT | +39.96% | $1,959,755.41 |
+| UNITREE/USDT:USDT | +23.11% | $12,854,858.43 |
+| US/USDT:USDT | +11.33% | $1,131,254.54 |
+| NIULAI/USDT:USDT | +6.87% | $5,269,677.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.79% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.77% |
-| AIO/USDT:USDT | below_1h_threshold | +0.89% | +0.96% |
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +0.84% | +0.91% |
-| BTW/USDT:USDT | below_1h_threshold | +0.74% | +0.81% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.84% |
+| BTW/USDT:USDT | below_1h_threshold | +3.06% | +3.12% |
+| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.78% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.75% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.82% | +1.89% |
 
 ## 7. 次に見るべき不足
 
