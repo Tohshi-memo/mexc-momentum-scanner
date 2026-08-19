@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T00:26:26.399511+00:00
+- generated_at: 2026-08-19T00:31:18.585125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11931**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T00:26:16.480619+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=64544.9
+- 更新: 2026-08-19T00:31:10.109092+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=64567.4
 - Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +15.72% | $3,092,862.73 |
-| BTW/USDT:USDT | +12.36% | $21,815,857.12 |
-| NIULAI/USDT:USDT | +11.99% | $5,807,646.98 |
-| HEMI/USDT:USDT | +9.31% | $1,067,972.24 |
-| PUMPFUN/USDT:USDT | +8.81% | $26,342,026.99 |
+| TRIA/USDT:USDT | +18.38% | $3,155,921.56 |
+| NIULAI/USDT:USDT | +13.12% | $5,841,395.78 |
+| BTW/USDT:USDT | +12.89% | $21,971,303.10 |
+| PUMPFUN/USDT:USDT | +9.52% | $26,470,694.89 |
+| HEMI/USDT:USDT | +8.85% | $1,070,786.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIO/USDT:USDT | below_1h_threshold | +2.43% | +2.66% |
-| US/USDT:USDT | below_1h_threshold | +2.24% | +2.47% |
-| PRL/USDT:USDT | below_1h_threshold | +2.18% | +2.41% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.05% | +2.28% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.49% | +1.72% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.56% | +4.75% |
+| AIO/USDT:USDT | below_1h_threshold | +2.95% | +3.14% |
+| PRL/USDT:USDT | below_1h_threshold | +2.38% | +2.57% |
+| US/USDT:USDT | below_1h_threshold | +2.36% | +2.55% |
+| BTW/USDT:USDT | below_1h_threshold | +2.24% | +2.44% |
 
 ## 7. 次に見るべき不足
 
