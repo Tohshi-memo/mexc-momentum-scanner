@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T19:01:28.748915+00:00
+- generated_at: 2026-08-19T19:06:24.857253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11996**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T19:01:20.236286+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=68379.1
-- Funnel: target 999 → liquid 191 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-19T19:06:16.139641+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=68353.2
+- Funnel: target 999 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +11.43% | $4,441,480.92 |
-| ON/USDT:USDT | +9.61% | $4,869,516.91 |
-| BR/USDT:USDT | +8.57% | $2,648,593.39 |
-| USELESS/USDT:USDT | +4.83% | $1,248,575.61 |
-| WLD/USDT:USDT | +3.81% | $59,949,028.75 |
+| RE/USDT:USDT | +13.97% | $4,614,248.55 |
+| ON/USDT:USDT | +9.14% | $4,870,677.24 |
+| BR/USDT:USDT | +9.07% | $2,655,849.37 |
+| USELESS/USDT:USDT | +4.48% | $1,248,887.55 |
+| BLESS/USDT:USDT | +3.78% | $2,452,258.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BIIBSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.17% |
-| VET/USDT:USDT | below_1h_threshold | +0.81% | +0.80% |
-| PEPSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.76% |
-| HEMI/USDT:USDT | below_1h_threshold | +0.41% | +0.39% |
-| ARB/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
+| RE/USDT:USDT | below_1h_threshold | +2.43% | +2.45% |
+| BIIBSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.21% |
+| PEPSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
+| BR/USDT:USDT | below_1h_threshold | +0.66% | +0.68% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.65% | +0.67% |
 
 ## 7. 次に見るべき不足
 
