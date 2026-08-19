@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T21:51:30.478388+00:00
+- generated_at: 2026-08-19T21:56:27.182671+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12000**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
-- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1718件
+- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1719件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000449 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T21:51:21.787787+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.05% price=69740.0
-- Funnel: target 999 → liquid 199 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.3 >= 65=1
+- 更新: 2026-08-19T21:56:17.997448+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.12% price=69790.1
+- Funnel: target 999 → liquid 199 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.7 >= 65=1, 4h RSI 82.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +28.34% | $1,615,273.29 |
-| MRNASTOCK/USDT:USDT | +26.25% | $3,438,664.00 |
-| BASECAT/USDT:USDT | +19.92% | $1,114,062.45 |
-| TRUMPOFFICIAL/USDT:USDT | +18.65% | $6,320,024.71 |
-| HYPE/USDT:USDT | +16.40% | $408,805,514.26 |
+| MAGMA/USDT:USDT | +28.97% | $1,645,165.62 |
+| MRNASTOCK/USDT:USDT | +26.89% | $3,445,965.91 |
+| TRUMPOFFICIAL/USDT:USDT | +18.03% | $6,393,359.81 |
+| HYPE/USDT:USDT | +16.05% | $410,834,448.63 |
+| RE/USDT:USDT | +15.43% | $7,768,521.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEPE/USDT:USDT | below_relative_strength | +5.94% | +4.89% |
-| USELESS/USDT:USDT | below_relative_strength | +5.14% | +4.09% |
-| FARTCOIN/USDT:USDT | below_relative_strength | +5.07% | +4.02% |
-| ARB/USDT:USDT | below_1h_threshold | +4.32% | +3.27% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.15% | +3.10% |
+| USELESS/USDT:USDT | below_relative_strength | +5.50% | +4.38% |
+| FARTCOIN/USDT:USDT | below_relative_strength | +5.04% | +3.91% |
+| ARB/USDT:USDT | below_relative_strength | +5.03% | +3.90% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.66% | +3.54% |
+| JCT/USDT:USDT | below_1h_threshold | +3.90% | +2.78% |
 
 ## 7. 次に見るべき不足
 
