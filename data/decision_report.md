@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T10:31:30.391403+00:00
+- generated_at: 2026-08-19T10:36:18.714031+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11971**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.79** / 初期 $100.00 (+17.79%)
-- 確定: 1748件 (Win 520 / Loss 665 / Flat 563) / pending 1件 / skip 1691件
+- 確定: 1748件 (Win 520 / Loss 665 / Flat 563) / pending 2件 / skip 1691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000123 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTW/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.79
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T10:31:24.541365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=64348.8
-- Funnel: target 992 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-19T10:36:09.940044+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64371.3
+- Funnel: target 992 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +74.93% | $85,804,663.71 |
-| HEMI/USDT:USDT | +29.31% | $3,172,662.17 |
-| UNITREE/USDT:USDT | +21.92% | $16,312,685.70 |
-| DOS/USDT:USDT | +18.19% | $1,114,586.46 |
-| NIULAI/USDT:USDT | +14.36% | $4,653,423.60 |
+| BTW/USDT:USDT | +76.40% | $86,251,568.95 |
+| HEMI/USDT:USDT | +30.78% | $3,199,985.29 |
+| UNITREE/USDT:USDT | +22.22% | $16,339,210.44 |
+| DOS/USDT:USDT | +16.96% | $1,132,753.63 |
+| NIULAI/USDT:USDT | +12.64% | $4,655,655.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +4.60% | +4.68% |
-| ON/USDT:USDT | below_1h_threshold | +4.09% | +4.17% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.77% | +2.84% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.28% | +2.35% |
-| HEI/USDT:USDT | below_1h_threshold | +1.96% | +2.03% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.28% | +2.32% |
+| ON/USDT:USDT | below_1h_threshold | +2.07% | +2.10% |
+| CYS/USDT:USDT | below_1h_threshold | +2.03% | +2.07% |
+| RE/USDT:USDT | below_1h_threshold | +1.97% | +2.01% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.22% | +1.26% |
 
 ## 7. 次に見るべき不足
 
