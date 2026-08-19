@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-18T23:56:37.575576+00:00
+- generated_at: 2026-08-19T00:01:26.247070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11930**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-18T23:56:24.248182+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=64708.0
-- Funnel: target 993 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-19T00:01:17.725192+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=64703.2
+- Funnel: target 993 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +20.13% | $5,881,956.79 |
-| TRIA/USDT:USDT | +12.87% | $2,762,945.81 |
-| BTW/USDT:USDT | +11.90% | $21,606,343.25 |
-| PUMPFUN/USDT:USDT | +10.95% | $24,452,363.93 |
-| HEMI/USDT:USDT | +8.94% | $1,072,917.64 |
+| NIULAI/USDT:USDT | +19.96% | $5,661,903.00 |
+| TRIA/USDT:USDT | +13.83% | $2,766,801.93 |
+| BTW/USDT:USDT | +11.34% | $21,363,216.84 |
+| PUMPFUN/USDT:USDT | +10.41% | $24,351,416.38 |
+| HEMI/USDT:USDT | +9.50% | $1,047,732.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.29% | +3.13% |
-| GPS/USDT:USDT | below_1h_threshold | +2.69% | +2.54% |
-| BTW/USDT:USDT | below_1h_threshold | +2.59% | +2.43% |
-| FET/USDT:USDT | below_1h_threshold | +1.84% | +1.68% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.76% | +1.61% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.94% | +1.93% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.92% | +0.91% |
+| H/USDT:USDT | below_1h_threshold | +0.84% | +0.83% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.39% | +0.38% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.22% | +0.21% |
 
 ## 7. 次に見るべき不足
 
