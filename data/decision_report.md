@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T07:41:43.790988+00:00
+- generated_at: 2026-08-19T07:46:49.829839+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11959**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T07:41:24.953220+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=64368.0
-- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 5 → strict 4
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.0 >= 65=1
+- 更新: 2026-08-19T07:46:29.812934+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64330.1
+- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 6 → strict 5
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +65.23% | $61,532,350.47 |
-| HEMI/USDT:USDT | +30.86% | $2,272,695.52 |
-| UNITREE/USDT:USDT | +25.73% | $13,294,194.44 |
-| US/USDT:USDT | +11.08% | $1,141,928.69 |
-| NIULAI/USDT:USDT | +8.42% | $5,303,442.63 |
+| BTW/USDT:USDT | +64.61% | $62,162,397.94 |
+| HEMI/USDT:USDT | +29.48% | $2,293,786.98 |
+| UNITREE/USDT:USDT | +25.45% | $13,317,714.16 |
+| US/USDT:USDT | +10.56% | $1,143,010.22 |
+| NIULAI/USDT:USDT | +7.66% | $5,308,493.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.67% | +4.59% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.69% |
-| CYS/USDT:USDT | below_1h_threshold | +3.26% | +3.18% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.95% | +2.87% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.84% | +2.75% |
+| MUU/USDT:USDT | below_1h_threshold | +4.67% | +4.64% |
+| CYS/USDT:USDT | below_1h_threshold | +4.09% | +4.06% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.75% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.84% | +2.81% |
+| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.70% |
 
 ## 7. 次に見るべき不足
 
