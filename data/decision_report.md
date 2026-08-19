@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T16:11:28.835715+00:00
+- generated_at: 2026-08-19T16:16:32.810573+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11990**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
-- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1707件
+- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1708件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000327 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T16:11:21.514470+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=68662.2
-- Funnel: target 999 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-19T16:16:21.654862+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=68652.7
+- Funnel: target 999 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +2.90% | $1,895,732.88 |
-| MVLL/USDT:USDT | +2.61% | $3,828,475.61 |
-| GPS/USDT:USDT | +2.44% | $18,851,577.70 |
-| RE/USDT:USDT | +2.42% | $1,887,815.38 |
-| LIT/USDT:USDT | +1.62% | $2,140,816.83 |
+| BR/USDT:USDT | +5.53% | $1,932,515.74 |
+| RE/USDT:USDT | +3.47% | $1,934,073.98 |
+| GRVT/USDT:USDT | +2.81% | $1,154,215.05 |
+| EDEN/USDT:USDT | +2.45% | $3,192,447.86 |
+| GPS/USDT:USDT | +2.25% | $18,974,613.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.95% | +2.75% |
-| GPS/USDT:USDT | below_1h_threshold | +2.65% | +2.44% |
-| RE/USDT:USDT | below_1h_threshold | +2.38% | +2.18% |
-| LIT/USDT:USDT | below_1h_threshold | +1.62% | +1.42% |
-| UNI/USDT:USDT | below_1h_threshold | +1.42% | +1.22% |
+| RE/USDT:USDT | below_1h_threshold | +3.56% | +3.37% |
+| GRVT/USDT:USDT | below_1h_threshold | +3.22% | +3.03% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.54% | +2.36% |
+| GPS/USDT:USDT | below_1h_threshold | +2.42% | +2.23% |
+| SKDD/USDT:USDT | below_1h_threshold | +2.32% | +2.14% |
 
 ## 7. 次に見るべき不足
 
