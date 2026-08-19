@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T13:21:51.537831+00:00
+- generated_at: 2026-08-19T13:26:58.258983+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11974**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T13:21:29.328967+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=64933.9
+- 更新: 2026-08-19T13:26:33.969667+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64902.0
 - Funnel: target 997 → liquid 180 → pre 50 → checked 50 → surge 8 → strict 6
 - Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1, 4h RSI 68.0 >= 65=1
+- Strict後reject: 4h RSI 67.4 >= 65=1, 4h RSI 68.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +62.73% | $103,254,690.41 |
-| HEMI/USDT:USDT | +39.91% | $4,786,574.72 |
-| MVLL/USDT:USDT | +25.67% | $4,728,445.22 |
-| STAR/USDT:USDT | +24.94% | $1,069,297.34 |
-| UNITREE/USDT:USDT | +21.37% | $17,203,294.33 |
+| BTW/USDT:USDT | +66.54% | $103,618,091.34 |
+| HEMI/USDT:USDT | +39.42% | $4,833,291.12 |
+| MVLL/USDT:USDT | +27.90% | $4,770,595.28 |
+| STAR/USDT:USDT | +26.53% | $1,079,893.22 |
+| UNITREE/USDT:USDT | +21.29% | $17,233,083.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.57% |
-| NIULAI/USDT:USDT | below_1h_threshold | +4.31% | +4.19% |
-| CIENSTOCK/USDT:USDT | below_1h_threshold | +4.04% | +3.93% |
-| SKUU/USDT:USDT | below_1h_threshold | +3.84% | +3.72% |
-| TSEMSTOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.29% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.62% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.23% | +4.16% |
+| CIENSTOCK/USDT:USDT | below_1h_threshold | +4.04% | +3.97% |
+| SKUU/USDT:USDT | below_1h_threshold | +3.84% | +3.77% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.36% |
 
 ## 7. 次に見るべき不足
 
