@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T14:56:23.479913+00:00
+- generated_at: 2026-08-19T15:01:29.597296+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11983**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
-- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1701件
+- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1702件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000320 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T14:56:14.181553+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.24% price=65788.0
-- Funnel: target 997 → liquid 188 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
+- 更新: 2026-08-19T15:01:20.723498+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=65989.9
+- Funnel: target 997 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +73.61% | $115,950,818.72 |
-| HEMI/USDT:USDT | +40.98% | $6,065,530.95 |
-| STAR/USDT:USDT | +25.64% | $1,117,766.49 |
-| UNITREE/USDT:USDT | +19.83% | $17,961,544.61 |
-| DOS/USDT:USDT | +16.26% | $1,554,334.20 |
+| BTW/USDT:USDT | +72.99% | $115,416,844.64 |
+| HEMI/USDT:USDT | +40.62% | $6,034,816.69 |
+| STAR/USDT:USDT | +24.73% | $1,072,612.28 |
+| UNITREE/USDT:USDT | +19.72% | $17,862,812.70 |
+| MVLL/USDT:USDT | +16.14% | $3,810,252.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_relative_strength | +6.22% | +4.98% |
-| ZEC/USDT:USDT | below_relative_strength | +5.19% | +3.95% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.30% | +3.06% |
-| CAP/USDT:USDT | below_1h_threshold | +3.71% | +2.48% |
-| CRV/USDT:USDT | below_1h_threshold | +3.40% | +2.16% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.92% | +3.78% |
+| TESLA/USDT:USDT | below_1h_threshold | +2.72% | +2.58% |
+| SKUU/USDT:USDT | below_1h_threshold | +2.28% | +2.14% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.20% | +1.05% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.67% |
 
 ## 7. 次に見るべき不足
 
