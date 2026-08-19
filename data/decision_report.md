@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T04:26:22.495600+00:00
+- generated_at: 2026-08-19T04:31:17.695794+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11949**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T04:26:14.352772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64343.3
+- 更新: 2026-08-19T04:31:10.840106+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64316.8
 - Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +45.55% | $42,340,996.68 |
-| UNITREE/USDT:USDT | +25.99% | $9,325,604.07 |
-| TRIA/USDT:USDT | +12.35% | $5,880,788.77 |
-| NIULAI/USDT:USDT | +11.96% | $5,513,698.28 |
-| PUMPFUN/USDT:USDT | +7.95% | $32,013,880.25 |
+| BTW/USDT:USDT | +43.31% | $42,893,242.56 |
+| UNITREE/USDT:USDT | +26.62% | $9,407,125.06 |
+| NIULAI/USDT:USDT | +14.76% | $5,521,239.38 |
+| TRIA/USDT:USDT | +12.04% | $5,941,967.08 |
+| PUMPFUN/USDT:USDT | +7.81% | $32,042,749.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +2.91% | +2.84% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.36% | +1.29% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.80% | +0.73% |
-| SKDD/USDT:USDT | below_1h_threshold | +0.80% | +0.73% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.72% | +0.65% |
+| ON/USDT:USDT | below_1h_threshold | +3.21% | +3.18% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +0.86% | +0.83% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.82% | +0.79% |
+| SKDD/USDT:USDT | below_1h_threshold | +0.80% | +0.77% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.63% | +0.60% |
 
 ## 7. 次に見るべき不足
 
