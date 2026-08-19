@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T07:21:42.579133+00:00
+- generated_at: 2026-08-19T07:26:47.459623+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11959**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.31** / 初期 $100.00 (+18.31%)
-- 確定: 1737件 (Win 519 / Loss 661 / Flat 557) / pending 3件 / skip 1691件
+- 確定: 1737件 (Win 519 / Loss 661 / Flat 557) / pending 4件 / skip 1691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000154 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $118.31
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T07:21:23.830192+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64295.3
-- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 4
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-19T07:26:26.509138+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=64337.6
+- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 5 → strict 5
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +58.02% | $57,748,372.62 |
-| HEMI/USDT:USDT | +33.45% | $2,070,778.83 |
-| UNITREE/USDT:USDT | +23.78% | $13,042,485.87 |
-| US/USDT:USDT | +11.10% | $1,136,388.43 |
-| PUMPFUN/USDT:USDT | +6.45% | $36,695,098.29 |
+| BTW/USDT:USDT | +54.03% | $58,338,016.03 |
+| HEMI/USDT:USDT | +31.97% | $2,103,530.98 |
+| UNITREE/USDT:USDT | +24.81% | $13,142,397.78 |
+| US/USDT:USDT | +10.83% | $1,137,300.72 |
+| NIULAI/USDT:USDT | +10.74% | $5,288,259.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.81% |
-| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.75% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.72% |
-| BTW/USDT:USDT | below_1h_threshold | +2.60% | +2.63% |
-| CYS/USDT:USDT | below_1h_threshold | +2.11% | +2.14% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.67% | +4.64% |
+| MUU/USDT:USDT | below_1h_threshold | +4.67% | +4.63% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.74% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.84% | +2.80% |
+| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.68% |
 
 ## 7. 次に見るべき不足
 
