@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-19T23:36:22.356362+00:00
+- generated_at: 2026-08-19T23:41:20.152591+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12002**
+- closed shadow trades: **12003**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.88% / filled 20/20。**
-- 全期間 MARKET基準: n=12002, expectancy=+0.01%
+- 全期間 MARKET基準: n=12003, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.88%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$605.47** / 初期 $100.00 (+505.47%)
-- 確定: 4241件 (Win 1302 / Loss 1388 / Flat 1551) / skip 4322件
+- 確定: 4241件 (Win 1302 / Loss 1388 / Flat 1551) / skip 4323件
 - 成長率目線: 平均log +0.000425 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MUU/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $605.47
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.70** / 初期 $100.00 (+54.70%)
-- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3592件
+- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3593件
 - 成長率目線: 平均log +0.000240 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.35% 残高後 $154.70
@@ -65,13 +65,13 @@
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
 - 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1720件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000422 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000488 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T23:36:13.644475+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=69250.0
+- 更新: 2026-08-19T23:41:10.187557+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=69273.2
 - Funnel: target 999 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +30.12% | $2,791,049.12 |
-| TRUMPOFFICIAL/USDT:USDT | +23.30% | $10,997,859.27 |
-| RE/USDT:USDT | +17.70% | $9,463,413.89 |
-| MRNASTOCK/USDT:USDT | +14.50% | $4,076,776.70 |
-| HYPE/USDT:USDT | +13.36% | $468,188,403.75 |
+| MAGMA/USDT:USDT | +31.37% | $2,823,248.19 |
+| TRUMPOFFICIAL/USDT:USDT | +24.20% | $11,181,746.82 |
+| RE/USDT:USDT | +17.50% | $9,499,241.68 |
+| MRNASTOCK/USDT:USDT | +14.04% | $4,084,318.97 |
+| HYPE/USDT:USDT | +14.02% | $469,352,856.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +3.28% | +3.24% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.25% | +3.21% |
-| LAB/USDT:USDT | below_1h_threshold | +2.19% | +2.16% |
-| JCT/USDT:USDT | below_1h_threshold | +1.94% | +1.91% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.88% | +1.85% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.89% | +3.82% |
+| RE/USDT:USDT | below_1h_threshold | +3.10% | +3.04% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.74% | +2.67% |
+| WLD/USDT:USDT | below_1h_threshold | +2.50% | +2.44% |
+| LAB/USDT:USDT | below_1h_threshold | +2.18% | +2.11% |
 
 ## 7. 次に見るべき不足
 
