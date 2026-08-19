@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T02:56:29.373608+00:00
+- generated_at: 2026-08-19T03:01:24.271339+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11943**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T02:56:19.061463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=64339.1
-- Funnel: target 992 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-19T03:01:15.392271+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=64322.4
+- Funnel: target 992 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UNITREE/USDT:USDT | +32.03% | $7,975,207.52 |
-| BTW/USDT:USDT | +22.67% | $30,071,878.24 |
-| TRIA/USDT:USDT | +20.78% | $4,627,499.65 |
-| PUMPFUN/USDT:USDT | +7.88% | $30,814,782.15 |
-| HEMI/USDT:USDT | +7.56% | $1,032,356.94 |
+| UNITREE/USDT:USDT | +31.30% | $8,027,772.96 |
+| BTW/USDT:USDT | +28.32% | $30,670,128.43 |
+| TRIA/USDT:USDT | +21.23% | $4,635,536.63 |
+| PUMPFUN/USDT:USDT | +8.06% | $30,454,328.97 |
+| US/USDT:USDT | +7.81% | $1,099,564.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.17% | +4.22% |
-| HEI/USDT:USDT | below_1h_threshold | +4.11% | +4.16% |
-| ACE/USDT:USDT | below_1h_threshold | +3.63% | +3.68% |
-| CAP/USDT:USDT | below_1h_threshold | +1.75% | +1.80% |
-| COMP/USDT:USDT | below_1h_threshold | +1.48% | +1.53% |
+| SKDD/USDT:USDT | below_1h_threshold | +1.78% | +1.78% |
+| BTW/USDT:USDT | below_1h_threshold | +1.71% | +1.71% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.58% | +1.58% |
+| SQQQ/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
+| ACU/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
 
 ## 7. 次に見るべき不足
 
