@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T12:21:23.415391+00:00
+- generated_at: 2026-08-19T12:26:21.836888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11973**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T12:21:14.494463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64462.8
+- 更新: 2026-08-19T12:26:13.131335+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=64461.7
 - Funnel: target 997 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
+- Strict後reject: 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +58.18% | $99,395,996.39 |
-| HEMI/USDT:USDT | +46.82% | $4,087,696.59 |
-| STAR/USDT:USDT | +28.41% | $1,004,520.66 |
-| UNITREE/USDT:USDT | +20.98% | $16,878,708.57 |
-| DOS/USDT:USDT | +15.91% | $1,228,436.07 |
+| BTW/USDT:USDT | +59.25% | $99,941,081.68 |
+| HEMI/USDT:USDT | +46.79% | $4,149,966.51 |
+| STAR/USDT:USDT | +28.72% | $1,013,465.70 |
+| UNITREE/USDT:USDT | +20.65% | $16,927,734.91 |
+| DOS/USDT:USDT | +16.35% | $1,230,777.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.01% | +3.03% |
+| ON/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
 | SNXX/USDT:USDT | below_1h_threshold | +2.35% | +2.38% |
-| CYS/USDT:USDT | below_1h_threshold | +1.93% | +1.96% |
-| DOS/USDT:USDT | below_1h_threshold | +1.81% | +1.83% |
-| RE/USDT:USDT | below_1h_threshold | +1.52% | +1.55% |
+| DOS/USDT:USDT | below_1h_threshold | +2.23% | +2.26% |
+| CYS/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.35% | +1.38% |
 
 ## 7. 次に見るべき不足
 
