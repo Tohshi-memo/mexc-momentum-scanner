@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T07:31:52.875089+00:00
+- generated_at: 2026-08-19T07:36:44.172647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11959**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T07:31:34.957114+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=64313.6
+- 更新: 2026-08-19T07:36:25.760790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=64350.0
 - Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 5 → strict 4
 - Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.4 >= 65=1
+- Strict後reject: 4h RSI 89.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +61.78% | $59,435,357.48 |
-| HEMI/USDT:USDT | +29.98% | $2,192,287.73 |
-| UNITREE/USDT:USDT | +25.66% | $13,208,976.96 |
-| US/USDT:USDT | +10.94% | $1,138,440.92 |
-| NIULAI/USDT:USDT | +8.73% | $5,295,813.29 |
+| BTW/USDT:USDT | +63.77% | $60,666,175.00 |
+| HEMI/USDT:USDT | +29.48% | $2,220,568.24 |
+| UNITREE/USDT:USDT | +25.48% | $13,262,252.13 |
+| US/USDT:USDT | +11.14% | $1,140,755.78 |
+| NIULAI/USDT:USDT | +8.59% | $5,301,698.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.67% | +4.67% |
-| CYS/USDT:USDT | below_1h_threshold | +4.13% | +4.13% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.78% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.54% | +3.55% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.84% | +2.84% |
+| MUU/USDT:USDT | below_1h_threshold | +4.67% | +4.61% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.72% |
+| CYS/USDT:USDT | below_1h_threshold | +3.65% | +3.59% |
+| NIULAI/USDT:USDT | below_1h_threshold | +3.28% | +3.22% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.84% | +2.78% |
 
 ## 7. 次に見るべき不足
 
