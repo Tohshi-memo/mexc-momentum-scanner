@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T15:36:40.577526+00:00
+- generated_at: 2026-08-19T15:41:30.559261+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11988**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T15:36:25.748043+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +3.65% price=68299.0
+- 更新: 2026-08-19T15:41:20.258288+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +4.19% price=68654.7
 - Funnel: target 999 → liquid 189 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=4, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.9 >= 65=1
+- Surge前reject: below_1h_threshold=43, below_relative_strength=5, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +70.02% | $121,193,893.22 |
-| MUBARAK/USDT:USDT | +37.89% | $1,360,373.35 |
-| HEMI/USDT:USDT | +35.87% | $6,471,943.64 |
-| UNITREE/USDT:USDT | +19.74% | $18,109,053.65 |
-| STAR/USDT:USDT | +18.14% | $1,123,486.43 |
+| BTW/USDT:USDT | +62.52% | $122,616,425.46 |
+| MUBARAK/USDT:USDT | +38.37% | $1,474,510.94 |
+| HEMI/USDT:USDT | +35.99% | $6,526,779.24 |
+| UNITREE/USDT:USDT | +19.68% | $18,123,588.64 |
+| STAR/USDT:USDT | +18.60% | $1,126,078.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_relative_strength | +7.12% | +3.47% |
-| MSTRSTOCK/USDT:USDT | below_relative_strength | +5.90% | +2.26% |
-| COINBASE/USDT:USDT | below_relative_strength | +5.80% | +2.16% |
-| ETH/USDT:USDT | below_relative_strength | +5.30% | +1.66% |
-| LDO/USDT:USDT | below_1h_threshold | +4.35% | +0.70% |
+| WLD/USDT:USDT | below_relative_strength | +6.81% | +2.62% |
+| MSTRSTOCK/USDT:USDT | below_relative_strength | +5.90% | +1.72% |
+| COINBASE/USDT:USDT | below_relative_strength | +5.80% | +1.62% |
+| ETH/USDT:USDT | below_relative_strength | +5.79% | +1.60% |
+| BR/USDT:USDT | below_relative_strength | +5.35% | +1.16% |
 
 ## 7. 次に見るべき不足
 
