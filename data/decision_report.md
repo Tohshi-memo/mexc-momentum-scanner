@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T21:06:33.220175+00:00
+- generated_at: 2026-08-19T21:11:30.677784+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11998**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
-- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1716件
+- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1717件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000514 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T21:06:24.656704+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=69285.8
-- Funnel: target 999 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-19T21:11:22.648585+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.56% price=69400.0
+- Funnel: target 999 → liquid 195 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MRNASTOCK/USDT:USDT | +27.25% | $3,190,863.64 |
-| BASECAT/USDT:USDT | +27.19% | $1,003,329.68 |
-| MAGMA/USDT:USDT | +23.55% | $1,379,037.63 |
-| RE/USDT:USDT | +16.63% | $6,912,995.42 |
-| HYPE/USDT:USDT | +14.92% | $378,581,083.84 |
+| MRNASTOCK/USDT:USDT | +28.44% | $3,271,487.81 |
+| BASECAT/USDT:USDT | +27.19% | $1,016,052.06 |
+| MAGMA/USDT:USDT | +25.68% | $1,418,219.85 |
+| RE/USDT:USDT | +17.09% | $7,008,468.14 |
+| TRUMPOFFICIAL/USDT:USDT | +16.99% | $4,520,946.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.66% | +3.27% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.66% | +2.27% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.59% | +2.20% |
-| SOL/USDT:USDT | below_1h_threshold | +2.57% | +2.18% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.10% | +1.71% |
+| ARB/USDT:USDT | below_1h_threshold | +3.55% | +2.99% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.04% | +2.48% |
+| SOL/USDT:USDT | below_1h_threshold | +2.90% | +2.35% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.90% | +2.34% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.66% | +2.11% |
 
 ## 7. 次に見るべき不足
 
