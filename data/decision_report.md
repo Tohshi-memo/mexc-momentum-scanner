@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T11:06:22.443958+00:00
+- generated_at: 2026-08-19T11:11:17.934023+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11972**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T11:06:13.779052+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=64472.1
+- 更新: 2026-08-19T11:11:09.484890+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=64476.9
 - Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +66.87% | $90,162,287.31 |
-| HEMI/USDT:USDT | +35.64% | $3,409,410.52 |
-| UNITREE/USDT:USDT | +22.35% | $16,435,568.06 |
-| DOS/USDT:USDT | +17.79% | $1,151,530.67 |
-| NIULAI/USDT:USDT | +15.29% | $4,512,269.22 |
+| BTW/USDT:USDT | +67.59% | $91,058,572.80 |
+| HEMI/USDT:USDT | +35.88% | $3,445,936.85 |
+| UNITREE/USDT:USDT | +22.45% | $16,461,752.68 |
+| DOS/USDT:USDT | +17.84% | $1,155,425.69 |
+| NIULAI/USDT:USDT | +13.46% | $4,515,829.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +1.93% | +1.85% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.54% | +1.46% |
-| KORU/USDT:USDT | below_1h_threshold | +1.14% | +1.07% |
-| CAP/USDT:USDT | below_1h_threshold | +1.07% | +1.00% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.58% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.76% | +2.68% |
+| HEI/USDT:USDT | below_1h_threshold | +2.50% | +2.42% |
+| KORU/USDT:USDT | below_1h_threshold | +1.14% | +1.06% |
+| CAP/USDT:USDT | below_1h_threshold | +0.93% | +0.85% |
+| UNI/USDT:USDT | below_1h_threshold | +0.76% | +0.67% |
 
 ## 7. 次に見るべき不足
 
