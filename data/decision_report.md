@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T00:41:23.242357+00:00
+- generated_at: 2026-08-19T00:46:24.793181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11932**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.12** / 初期 $100.00 (+18.12%)
-- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1677件
+- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1678件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000322 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account +0.01% 残高後 $118.12
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T00:41:14.825920+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=64582.4
-- Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-19T00:46:15.973995+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=64515.9
+- Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +18.68% | $3,313,675.39 |
-| BTW/USDT:USDT | +13.80% | $22,512,175.88 |
-| NIULAI/USDT:USDT | +12.18% | $5,864,157.26 |
-| PUMPFUN/USDT:USDT | +9.27% | $26,761,577.06 |
-| HEMI/USDT:USDT | +7.89% | $1,076,822.30 |
+| TRIA/USDT:USDT | +19.15% | $3,367,388.28 |
+| BTW/USDT:USDT | +14.79% | $22,749,129.50 |
+| NIULAI/USDT:USDT | +12.89% | $5,886,851.54 |
+| PUMPFUN/USDT:USDT | +9.20% | $26,826,836.06 |
+| HEMI/USDT:USDT | +7.35% | $1,077,989.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +4.72% | +4.89% |
-| PRL/USDT:USDT | below_1h_threshold | +3.57% | +3.75% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.90% | +3.07% |
-| US/USDT:USDT | below_1h_threshold | +2.65% | +2.83% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.36% | +2.54% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.74% | +4.02% |
+| BTW/USDT:USDT | below_1h_threshold | +3.00% | +3.27% |
+| PRL/USDT:USDT | below_1h_threshold | +2.86% | +3.14% |
+| US/USDT:USDT | below_1h_threshold | +2.82% | +3.09% |
+| COMP/USDT:USDT | below_1h_threshold | +2.74% | +3.02% |
 
 ## 7. 次に見るべき不足
 
