@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T16:16:32.810573+00:00
+- generated_at: 2026-08-19T16:21:30.327270+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11990**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T16:16:21.654862+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=68652.7
+- 更新: 2026-08-19T16:21:19.738575+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=68700.0
 - Funnel: target 999 → liquid 190 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +5.53% | $1,932,515.74 |
-| RE/USDT:USDT | +3.47% | $1,934,073.98 |
-| GRVT/USDT:USDT | +2.81% | $1,154,215.05 |
-| EDEN/USDT:USDT | +2.45% | $3,192,447.86 |
-| GPS/USDT:USDT | +2.25% | $18,974,613.38 |
+| BR/USDT:USDT | +7.36% | $2,004,614.38 |
+| MUBARAK/USDT:USDT | +4.46% | $2,160,087.94 |
+| RE/USDT:USDT | +4.01% | $1,983,522.82 |
+| EDEN/USDT:USDT | +3.61% | $3,233,394.47 |
+| JCT/USDT:USDT | +2.84% | $2,748,057.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +3.56% | +3.37% |
-| GRVT/USDT:USDT | below_1h_threshold | +3.22% | +3.03% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.54% | +2.36% |
-| GPS/USDT:USDT | below_1h_threshold | +2.42% | +2.23% |
-| SKDD/USDT:USDT | below_1h_threshold | +2.32% | +2.14% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +4.38% | +4.12% |
+| RE/USDT:USDT | below_1h_threshold | +4.02% | +3.76% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.62% | +3.36% |
+| JCT/USDT:USDT | below_1h_threshold | +2.85% | +2.59% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.11% | +1.86% |
 
 ## 7. 次に見るべき不足
 
