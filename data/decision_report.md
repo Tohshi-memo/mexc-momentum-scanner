@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T01:36:26.026146+00:00
+- generated_at: 2026-08-19T01:41:27.558948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11936**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.12** / 初期 $100.00 (+18.12%)
-- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1684件
+- 確定: 1724件 (Win 516 / Loss 657 / Flat 551) / pending 0件 / skip 1685件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000208 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: GPS/USDT:USDT `MARKET` EXPIRED account +0.01% 残高後 $118.12
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T01:36:15.427160+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=64432.4
-- Funnel: target 993 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.3 >= 65=1
+- 更新: 2026-08-19T01:41:15.593718+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=64434.4
+- Funnel: target 993 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UNITREE/USDT:USDT | +28.50% | $4,300,617.08 |
-| TRIA/USDT:USDT | +19.01% | $3,842,388.52 |
-| NIULAI/USDT:USDT | +16.74% | $5,886,036.56 |
-| BTW/USDT:USDT | +10.82% | $23,521,518.66 |
-| PUMPFUN/USDT:USDT | +10.48% | $27,809,493.46 |
+| UNITREE/USDT:USDT | +27.05% | $4,568,618.25 |
+| TRIA/USDT:USDT | +20.91% | $3,939,027.69 |
+| NIULAI/USDT:USDT | +17.87% | $5,898,523.14 |
+| PUMPFUN/USDT:USDT | +10.45% | $27,841,181.19 |
+| BTW/USDT:USDT | +10.19% | $23,628,243.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.06% | +4.10% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.44% | +3.48% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.38% | +2.42% |
-| US/USDT:USDT | below_1h_threshold | +1.33% | +1.37% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.92% | +3.96% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.13% | +1.17% |
+| US/USDT:USDT | below_1h_threshold | +1.11% | +1.15% |
 | SKDD/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
+| ACE/USDT:USDT | below_1h_threshold | +1.03% | +1.07% |
 
 ## 7. 次に見るべき不足
 
