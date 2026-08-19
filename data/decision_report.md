@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T01:06:16.310115+00:00
+- generated_at: 2026-08-19T01:11:19.578818+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11932**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T01:06:09.599311+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=64408.1
+- 更新: 2026-08-19T01:11:11.224767+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=64507.3
 - Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +15.27% | $3,583,626.46 |
-| BTW/USDT:USDT | +13.75% | $22,650,176.51 |
-| NIULAI/USDT:USDT | +13.48% | $5,813,441.98 |
-| PUMPFUN/USDT:USDT | +9.56% | $26,779,865.76 |
-| HEMI/USDT:USDT | +7.47% | $1,048,716.98 |
+| TRIA/USDT:USDT | +14.82% | $3,625,267.37 |
+| NIULAI/USDT:USDT | +13.97% | $5,816,629.97 |
+| BTW/USDT:USDT | +13.45% | $22,695,095.12 |
+| PUMPFUN/USDT:USDT | +10.09% | $27,053,030.20 |
+| HEMI/USDT:USDT | +7.75% | $1,053,074.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKDD/USDT:USDT | below_1h_threshold | +1.10% | +1.18% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.84% | +0.92% |
-| NIULAI/USDT:USDT | below_1h_threshold | +0.75% | +0.83% |
-| US/USDT:USDT | below_1h_threshold | +0.54% | +0.62% |
-| GPS/USDT:USDT | below_1h_threshold | +0.27% | +0.35% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.43% | +1.36% |
+| SKDD/USDT:USDT | below_1h_threshold | +1.10% | +1.02% |
+| FHE/USDT:USDT | below_1h_threshold | +0.87% | +0.80% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.84% | +0.77% |
+| US/USDT:USDT | below_1h_threshold | +0.73% | +0.65% |
 
 ## 7. 次に見るべき不足
 
