@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T18:51:23.900200+00:00
+- generated_at: 2026-08-19T18:56:22.737710+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11996**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T18:51:15.368043+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=68410.9
+- 更新: 2026-08-19T18:56:14.060161+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=68332.5
 - Funnel: target 999 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +11.35% | $4,420,046.54 |
-| BR/USDT:USDT | +9.51% | $2,619,266.90 |
-| ON/USDT:USDT | +7.70% | $4,983,440.90 |
-| WLD/USDT:USDT | +4.11% | $60,180,401.08 |
-| USELESS/USDT:USDT | +4.10% | $1,294,132.41 |
+| RE/USDT:USDT | +10.84% | $4,456,222.03 |
+| BR/USDT:USDT | +9.63% | $2,647,014.73 |
+| ON/USDT:USDT | +8.72% | $4,984,099.30 |
+| USELESS/USDT:USDT | +4.58% | $1,307,137.42 |
+| WLD/USDT:USDT | +4.38% | $60,531,299.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +3.42% | +3.07% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.03% | +2.67% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.25% | +1.90% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.95% | +1.60% |
-| RE/USDT:USDT | below_1h_threshold | +1.59% | +1.24% |
+| ACE/USDT:USDT | below_1h_threshold | +3.51% | +3.27% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.38% | +3.14% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.37% | +2.13% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.83% | +1.60% |
+| LAB/USDT:USDT | below_1h_threshold | +1.58% | +1.34% |
 
 ## 7. 次に見るべき不足
 
