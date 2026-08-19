@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T17:01:28.404185+00:00
+- generated_at: 2026-08-19T17:06:23.231368+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11992**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T17:01:18.222937+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=68438.7
+- 更新: 2026-08-19T17:06:14.719984+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=68402.3
 - Funnel: target 999 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MUBARAK/USDT:USDT | +6.13% | $2,708,867.65 |
-| RE/USDT:USDT | +6.11% | $2,687,775.83 |
-| USELESS/USDT:USDT | +4.45% | $1,117,573.96 |
-| BR/USDT:USDT | +4.33% | $2,213,956.55 |
-| H/USDT:USDT | +4.03% | $2,212,742.26 |
+| RE/USDT:USDT | +5.95% | $2,822,183.83 |
+| USELESS/USDT:USDT | +5.01% | $1,129,246.18 |
+| MUBARAK/USDT:USDT | +4.50% | $2,873,161.64 |
+| BR/USDT:USDT | +4.45% | $2,222,298.39 |
+| DOS/USDT:USDT | +4.24% | $1,775,043.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MVLL/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
-| GPS/USDT:USDT | below_1h_threshold | +1.05% | +1.04% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
-| COINBASE/USDT:USDT | below_1h_threshold | +0.79% | +0.79% |
+| AKE/USDT:USDT | below_1h_threshold | +1.79% | +1.84% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.52% | +1.57% |
+| DOS/USDT:USDT | below_1h_threshold | +0.89% | +0.93% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.91% |
+| GPS/USDT:USDT | below_1h_threshold | +0.86% | +0.90% |
 
 ## 7. 次に見るべき不足
 
