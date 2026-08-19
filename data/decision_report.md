@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T19:06:24.857253+00:00
+- generated_at: 2026-08-19T19:11:19.046920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11996**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T19:06:16.139641+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=68353.2
+- 更新: 2026-08-19T19:11:10.705120+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=68329.0
 - Funnel: target 999 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RE/USDT:USDT | +13.97% | $4,614,248.55 |
-| ON/USDT:USDT | +9.14% | $4,870,677.24 |
-| BR/USDT:USDT | +9.07% | $2,655,849.37 |
-| USELESS/USDT:USDT | +4.48% | $1,248,887.55 |
-| BLESS/USDT:USDT | +3.78% | $2,452,258.75 |
+| RE/USDT:USDT | +13.90% | $4,648,123.39 |
+| ON/USDT:USDT | +9.86% | $4,874,183.31 |
+| BR/USDT:USDT | +9.68% | $2,665,930.84 |
+| USELESS/USDT:USDT | +3.97% | $1,249,706.90 |
+| WLD/USDT:USDT | +3.72% | $60,201,986.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +2.43% | +2.45% |
-| BIIBSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.21% |
-| PEPSTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
-| BR/USDT:USDT | below_1h_threshold | +0.66% | +0.68% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.65% | +0.67% |
+| NIL/USDT:USDT | below_1h_threshold | +4.00% | +4.05% |
+| RE/USDT:USDT | below_1h_threshold | +2.14% | +2.19% |
+| BR/USDT:USDT | below_1h_threshold | +1.24% | +1.30% |
+| BIIBSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.24% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.99% | +1.04% |
 
 ## 7. 次に見るべき不足
 
