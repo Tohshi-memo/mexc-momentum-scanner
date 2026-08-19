@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-19T00:31:18.585125+00:00
+- generated_at: 2026-08-19T00:36:25.707311+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11931**
+- closed shadow trades: **11932**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.37% / filled 20/20。**
-- 全期間 MARKET基準: n=11931, expectancy=+0.00%
+- 全期間 MARKET基準: n=11932, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+2.37%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,8 +24,8 @@
 | MARKET | 20/20 | 100.0% | +2.37% | **+2.37%** |
 | LIMIT_1PCT | 17/20 | 85.0% | +2.13% | **+1.81%** |
 | LIMIT_2PCT | 14/20 | 70.0% | +1.61% | **+1.13%** |
-| LIMIT_ATR | 7/20 | 35.0% | +1.45% | **+0.51%** |
-| LIMIT_FIB1272 | 3/20 | 15.0% | +2.17% | **+0.33%** |
+| LIMIT_ATR | 7/20 | 35.0% | +1.49% | **+0.52%** |
+| LIMIT_FIB1272 | 4/20 | 20.0% | +1.72% | **+0.34%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$614.51** / 初期 $100.00 (+514.51%)
-- 確定: 4211件 (Win 1295 / Loss 1375 / Flat 1541) / skip 4281件
+- 確定: 4211件 (Win 1295 / Loss 1375 / Flat 1541) / skip 4282件
 - 成長率目線: 平均log +0.000431 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: NIULAI/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $614.51
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$155.25** / 初期 $100.00 (+55.25%)
-- 確定: 1820件 (Win 502 / Loss 427 / Flat 891) / skip 3522件
+- 確定: 1820件 (Win 502 / Loss 427 / Flat 891) / skip 3523件
 - 成長率目線: 平均log +0.000242 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $155.25
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T00:31:10.109092+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=64567.4
+- 更新: 2026-08-19T00:36:15.749806+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=64621.6
 - Funnel: target 993 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +18.38% | $3,155,921.56 |
-| NIULAI/USDT:USDT | +13.12% | $5,841,395.78 |
-| BTW/USDT:USDT | +12.89% | $21,971,303.10 |
-| PUMPFUN/USDT:USDT | +9.52% | $26,470,694.89 |
-| HEMI/USDT:USDT | +8.85% | $1,070,786.54 |
+| TRIA/USDT:USDT | +18.04% | $3,233,113.04 |
+| BTW/USDT:USDT | +13.47% | $22,357,576.35 |
+| NIULAI/USDT:USDT | +11.14% | $5,853,811.30 |
+| PUMPFUN/USDT:USDT | +9.38% | $26,673,547.76 |
+| HEMI/USDT:USDT | +8.44% | $1,074,765.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRIA/USDT:USDT | below_1h_threshold | +4.56% | +4.75% |
-| AIO/USDT:USDT | below_1h_threshold | +2.95% | +3.14% |
-| PRL/USDT:USDT | below_1h_threshold | +2.38% | +2.57% |
-| US/USDT:USDT | below_1h_threshold | +2.36% | +2.55% |
-| BTW/USDT:USDT | below_1h_threshold | +2.24% | +2.44% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.11% | +4.22% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.83% | +3.94% |
+| US/USDT:USDT | below_1h_threshold | +3.03% | +3.14% |
+| PRL/USDT:USDT | below_1h_threshold | +2.97% | +3.09% |
+| AIO/USDT:USDT | below_1h_threshold | +2.77% | +2.89% |
 
 ## 7. 次に見るべき不足
 
