@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T09:36:31.320125+00:00
+- generated_at: 2026-08-19T09:41:19.566825+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11968**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T09:36:23.094328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=64368.0
-- Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-19T09:41:11.057494+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=64353.2
+- Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +94.00% | $78,110,221.33 |
-| UNITREE/USDT:USDT | +22.44% | $15,951,961.28 |
-| HEMI/USDT:USDT | +21.63% | $3,020,087.98 |
-| DOS/USDT:USDT | +14.59% | $1,073,748.13 |
-| NIULAI/USDT:USDT | +12.24% | $4,775,941.64 |
+| BTW/USDT:USDT | +82.20% | $79,200,885.64 |
+| UNITREE/USDT:USDT | +23.07% | $15,974,473.07 |
+| HEMI/USDT:USDT | +22.61% | $3,038,319.11 |
+| DOS/USDT:USDT | +14.94% | $1,075,217.94 |
+| NIULAI/USDT:USDT | +11.42% | $4,790,365.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +3.25% | +3.28% |
-| RE/USDT:USDT | below_1h_threshold | +1.77% | +1.80% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.77% | +1.80% |
-| SKUU/USDT:USDT | below_1h_threshold | +1.46% | +1.49% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
+| ACE/USDT:USDT | below_1h_threshold | +4.66% | +4.71% |
+| BTW/USDT:USDT | below_1h_threshold | +4.63% | +4.69% |
+| RE/USDT:USDT | below_1h_threshold | +1.89% | +1.95% |
+| SKUU/USDT:USDT | below_1h_threshold | +1.46% | +1.52% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.35% | +1.41% |
 
 ## 7. 次に見るべき不足
 
