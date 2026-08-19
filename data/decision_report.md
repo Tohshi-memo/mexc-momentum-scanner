@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T17:36:37.284917+00:00
+- generated_at: 2026-08-19T17:41:30.764402+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11994**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T17:36:31.068462+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.63% price=68000.1
+- 更新: 2026-08-19T17:41:22.128854+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=68009.2
 - Funnel: target 999 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +8.51% | $4,986,061.70 |
-| RE/USDT:USDT | +7.66% | $3,125,461.89 |
-| BR/USDT:USDT | +6.62% | $2,301,961.96 |
-| DOS/USDT:USDT | +4.01% | $1,853,410.00 |
-| USELESS/USDT:USDT | +3.76% | $1,246,967.64 |
+| ON/USDT:USDT | +7.62% | $5,010,209.29 |
+| RE/USDT:USDT | +7.57% | $3,167,448.32 |
+| BR/USDT:USDT | +6.80% | $2,310,476.01 |
+| USELESS/USDT:USDT | +4.50% | $1,265,402.32 |
+| DOS/USDT:USDT | +3.71% | $1,866,105.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.98% | +4.61% |
-| APR/USDT:USDT | below_1h_threshold | +2.53% | +3.16% |
-| BR/USDT:USDT | below_1h_threshold | +2.23% | +2.86% |
-| LAB/USDT:USDT | below_1h_threshold | +1.14% | +1.77% |
-| BASED/USDT:USDT | below_1h_threshold | +1.13% | +1.76% |
+| ON/USDT:USDT | below_1h_threshold | +3.12% | +3.74% |
+| APR/USDT:USDT | below_1h_threshold | +2.73% | +3.35% |
+| BR/USDT:USDT | below_1h_threshold | +2.50% | +3.12% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.78% | +2.40% |
+| AKE/USDT:USDT | below_1h_threshold | +1.12% | +1.74% |
 
 ## 7. 次に見るべき不足
 
