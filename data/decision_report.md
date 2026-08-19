@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-19T07:11:43.689830+00:00
+- generated_at: 2026-08-19T07:16:44.886899+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **11959**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T07:11:22.586281+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=64275.7
-- Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 4 → strict 4
+- 更新: 2026-08-19T07:16:25.786620+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=64329.6
+- Funnel: target 992 → liquid 177 → pre 50 → checked 50 → surge 4 → strict 4
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +58.79% | $56,257,614.85 |
-| HEMI/USDT:USDT | +39.96% | $1,959,755.41 |
-| UNITREE/USDT:USDT | +23.11% | $12,854,858.43 |
-| US/USDT:USDT | +11.33% | $1,131,254.54 |
-| NIULAI/USDT:USDT | +6.87% | $5,269,677.11 |
+| BTW/USDT:USDT | +58.15% | $57,008,100.46 |
+| HEMI/USDT:USDT | +35.22% | $2,011,325.95 |
+| UNITREE/USDT:USDT | +24.75% | $12,941,230.36 |
+| US/USDT:USDT | +11.64% | $1,133,734.27 |
+| NIULAI/USDT:USDT | +6.98% | $5,272,013.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.84% |
-| BTW/USDT:USDT | below_1h_threshold | +3.06% | +3.12% |
-| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.78% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.75% |
-| HEMI/USDT:USDT | below_1h_threshold | +1.82% | +1.89% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.75% |
+| BTW/USDT:USDT | below_1h_threshold | +2.88% | +2.86% |
+| CYS/USDT:USDT | below_1h_threshold | +2.78% | +2.76% |
+| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.70% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.67% |
 
 ## 7. 次に見るべき不足
 
