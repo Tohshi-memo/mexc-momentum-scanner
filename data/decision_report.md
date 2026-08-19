@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-08-19T22:16:23.719736+00:00
+- generated_at: 2026-08-19T22:21:24.999863+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12001**
+- closed shadow trades: **12002**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +1.41% / filled 20/20。**
-- 全期間 MARKET基準: n=12001, expectancy=+0.01%
-- 直近20件 MARKET基準: n=20, expectancy=+1.41%
+- 結論: **MARKET SHORTは実行候補。直近EV +0.88% / filled 20/20。**
+- 全期間 MARKET基準: n=12002, expectancy=+0.01%
+- 直近20件 MARKET基準: n=20, expectancy=+0.88%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.41% | **+1.41%** |
+| MARKET | 20/20 | 100.0% | +0.88% | **+0.88%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +1.41% | **+1.41%** |
-| LIMIT_BB3S | 5/16 | 31.2% | +2.69% | **+0.84%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +0.66% | **+0.56%** |
-| LIMIT_3PCT | 11/20 | 55.0% | +1.02% | **+0.56%** |
+| LIMIT_BB3S | 5/15 | 33.3% | +2.69% | **+0.90%** |
+| MARKET | 20/20 | 100.0% | +0.88% | **+0.88%** |
+| LIMIT_3PCT | 12/20 | 60.0% | +0.97% | **+0.58%** |
 | LIMIT_5PCT | 5/20 | 25.0% | +1.76% | **+0.44%** |
+| LIMIT_FIB1272 | 5/20 | 25.0% | +1.42% | **+0.36%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.51% | **+0.43%** |
-| LIMIT_ATR_LONG | 16/20 | 80.0% | +0.45% | **+0.36%** |
-| MARKET_LONG | 20/20 | 100.0% | +0.14% | **+0.14%** |
-| LIMIT_9PCT_LONG | 2/20 | 10.0% | +1.10% | **+0.11%** |
-| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.09% | **+0.06%** |
+| LIMIT_BB3S_LONG | 2/5 | 40.0% | +4.50% | **+1.80%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.96% | **+0.81%** |
+| LIMIT_ATR_LONG | 16/20 | 80.0% | +0.91% | **+0.73%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.74% | **+0.52%** |
+| MARKET_LONG | 20/20 | 100.0% | +0.46% | **+0.46%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$605.47** / 初期 $100.00 (+505.47%)
-- 確定: 4241件 (Win 1302 / Loss 1388 / Flat 1551) / skip 4321件
+- 確定: 4241件 (Win 1302 / Loss 1388 / Flat 1551) / skip 4322件
 - 成長率目線: 平均log +0.000425 / 幾何平均 +0.042% per trade / maxDD +8.13%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MUU/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $605.47
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.70** / 初期 $100.00 (+54.70%)
-- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3591件
+- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3592件
 - 成長率目線: 平均log +0.000240 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.35% 残高後 $154.70
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T22:16:14.930867+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=69330.0
+- 更新: 2026-08-19T22:21:14.788470+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=69266.6
 - Funnel: target 999 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +26.76% | $1,859,841.65 |
-| MRNASTOCK/USDT:USDT | +19.89% | $3,670,219.06 |
-| TRUMPOFFICIAL/USDT:USDT | +18.03% | $7,046,655.91 |
-| HYPE/USDT:USDT | +15.85% | $421,029,925.52 |
-| RE/USDT:USDT | +15.58% | $8,106,532.14 |
+| MAGMA/USDT:USDT | +25.06% | $1,947,096.27 |
+| TRUMPOFFICIAL/USDT:USDT | +21.28% | $7,376,611.16 |
+| RE/USDT:USDT | +16.11% | $8,198,632.15 |
+| HYPE/USDT:USDT | +15.98% | $423,455,150.92 |
+| MRNASTOCK/USDT:USDT | +14.44% | $3,742,595.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.57% | +3.08% |
-| BASECAT/USDT:USDT | below_1h_threshold | +1.18% | +1.69% |
-| BR/USDT:USDT | below_1h_threshold | +1.16% | +1.67% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.11% | +1.62% |
-| JCT/USDT:USDT | below_1h_threshold | +0.54% | +1.05% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.65% | +4.25% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.71% | +3.31% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.57% | +3.17% |
+| BR/USDT:USDT | below_1h_threshold | +1.80% | +2.40% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.11% | +1.71% |
 
 ## 7. 次に見るべき不足
 
