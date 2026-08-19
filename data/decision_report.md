@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-19T06:56:28.411424+00:00
+- generated_at: 2026-08-19T07:01:45.421878+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **11956**
+- closed shadow trades: **11957**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=11956, expectancy=-0.00%
+- 全期間 MARKET基準: n=11957, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.15%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,56 +46,55 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$620.83** / 初期 $100.00 (+520.83%)
-- 確定: 4217件 (Win 1297 / Loss 1376 / Flat 1544) / skip 4300件
-- 成長率目線: 平均log +0.000433 / 幾何平均 +0.043% per trade / maxDD +8.13%
+- 残高: **$617.73** / 初期 $100.00 (+517.73%)
+- 確定: 4218件 (Win 1297 / Loss 1377 / Flat 1544) / skip 4300件
+- 成長率目線: 平均log +0.000432 / 幾何平均 +0.043% per trade / maxDD +8.13%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.77% 残高後 $620.83
+- 最新: ACE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $617.73
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.70** / 初期 $100.00 (+54.70%)
-- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3546件
+- 確定: 1821件 (Win 502 / Loss 428 / Flat 891) / skip 3547件
 - 成長率目線: 平均log +0.000240 / 幾何平均 +0.024% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0359 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0333 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.35% 残高後 $154.70
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$118.11** / 初期 $100.00 (+18.11%)
-- 確定: 1734件 (Win 518 / Loss 660 / Flat 556) / pending 4件 / skip 1689件
+- 残高: **$117.90** / 初期 $100.00 (+17.90%)
+- 確定: 1735件 (Win 518 / Loss 661 / Flat 556) / pending 5件 / skip 1691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000160 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $118.11
+- 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000154 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: ACE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-19T06:56:19.249727+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=64297.7
-- Funnel: target 992 → liquid 179 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1, 4h RSI 70.9 >= 65=1
+- 更新: 2026-08-19T07:01:25.399534+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=64300.0
+- Funnel: target 992 → liquid 176 → pre 50 → checked 50 → surge 4 → strict 4
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTW/USDT:USDT | +54.68% | $54,419,779.09 |
-| HEMI/USDT:USDT | +34.72% | $1,790,833.36 |
-| UNITREE/USDT:USDT | +21.04% | $12,616,779.11 |
-| US/USDT:USDT | +10.83% | $1,135,680.81 |
-| NIULAI/USDT:USDT | +6.84% | $5,350,337.71 |
+| BTW/USDT:USDT | +54.75% | $54,417,995.93 |
+| HEMI/USDT:USDT | +35.58% | $1,826,235.92 |
+| UNITREE/USDT:USDT | +20.34% | $12,692,680.14 |
+| US/USDT:USDT | +10.74% | $1,125,790.29 |
+| PUMPFUN/USDT:USDT | +6.63% | $36,480,912.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +3.85% | +3.72% |
-| US/USDT:USDT | below_1h_threshold | +2.38% | +2.24% |
-| UNITREE/USDT:USDT | below_1h_threshold | +2.12% | +1.98% |
-| ENA/USDT:USDT | below_1h_threshold | +1.79% | +1.66% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.72% | +1.58% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.78% | +3.80% |
+| EWY/USDT:USDT | below_1h_threshold | +2.72% | +2.74% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.69% | +2.72% |
+| ACE/USDT:USDT | below_1h_threshold | +1.00% | +1.03% |
+| BTW/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
 
 ## 7. 次に見るべき不足
 
