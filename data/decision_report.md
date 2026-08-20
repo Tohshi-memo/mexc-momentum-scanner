@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T15:51:21.918098+00:00
+- generated_at: 2026-08-20T15:56:17.213211+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12058**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T15:51:11.450782+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.75% price=72329.5
+- 更新: 2026-08-20T15:56:08.290292+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.87% price=72420.0
 - Funnel: target 1011 → liquid 207 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.3 >= 65=1
+- Strict後reject: 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +46.02% | $26,093,661.33 |
-| AVAAI/USDT:USDT | +45.86% | $1,156,709.56 |
-| NIULAI/USDT:USDT | +45.47% | $5,878,078.44 |
-| BOME/USDT:USDT | +36.17% | $17,419,683.96 |
-| MAGMA/USDT:USDT | +29.49% | $11,041,836.34 |
+| AVAAI/USDT:USDT | +47.34% | $1,166,690.19 |
+| ACE/USDT:USDT | +45.98% | $26,309,111.71 |
+| NIULAI/USDT:USDT | +44.63% | $5,947,616.76 |
+| BOME/USDT:USDT | +37.94% | $17,465,644.39 |
+| MAGMA/USDT:USDT | +28.44% | $11,058,146.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +4.66% | +3.92% |
-| ENA/USDT:USDT | below_1h_threshold | +3.40% | +2.65% |
-| BR/USDT:USDT | below_1h_threshold | +3.38% | +2.63% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.20% | +2.45% |
-| LIT/USDT:USDT | below_1h_threshold | +3.18% | +2.43% |
+| GALA/USDT:USDT | below_1h_threshold | +4.99% | +4.11% |
+| BR/USDT:USDT | below_1h_threshold | +4.53% | +3.65% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.60% | +2.73% |
+| SPX/USDT:USDT | below_1h_threshold | +3.41% | +2.54% |
+| TURBO/USDT:USDT | below_1h_threshold | +2.94% | +2.07% |
 
 ## 7. 次に見るべき不足
 
