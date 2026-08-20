@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T07:51:35.134983+00:00
+- generated_at: 2026-08-20T07:56:31.646737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12018**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T07:51:26.060316+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=69650.0
-- Funnel: target 1004 → liquid 198 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 75.1 >= 65=1, 4h RSI 69.8 >= 65=1
+- 更新: 2026-08-20T07:56:22.472811+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=69763.6
+- Funnel: target 1004 → liquid 198 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.8 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BOME/USDT:USDT | +32.52% | $2,895,570.93 |
-| MAGMA/USDT:USDT | +27.62% | $7,520,270.68 |
-| BASECAT/USDT:USDT | +26.49% | $1,227,916.53 |
-| RED/USDT:USDT | +20.21% | $2,068,182.34 |
-| LIT/USDT:USDT | +19.07% | $9,666,475.56 |
+| BOME/USDT:USDT | +34.13% | $3,033,012.09 |
+| BASECAT/USDT:USDT | +28.48% | $1,230,231.61 |
+| MAGMA/USDT:USDT | +27.30% | $7,541,323.18 |
+| RED/USDT:USDT | +20.96% | $2,095,172.72 |
+| LIT/USDT:USDT | +19.67% | $9,748,703.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +4.62% | +4.89% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.06% | +4.33% |
-| ASP/USDT:USDT | below_1h_threshold | +3.75% | +4.02% |
-| KORU/USDT:USDT | below_1h_threshold | +2.40% | +2.67% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.02% | +2.29% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.48% | +4.59% |
+| STAR/USDT:USDT | below_1h_threshold | +4.11% | +4.22% |
+| RE/USDT:USDT | below_1h_threshold | +4.02% | +4.13% |
+| ASP/USDT:USDT | below_1h_threshold | +2.88% | +2.99% |
+| KORU/USDT:USDT | below_1h_threshold | +2.40% | +2.51% |
 
 ## 7. 次に見るべき不足
 
