@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T04:41:34.092263+00:00
+- generated_at: 2026-08-20T04:46:30.157993+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12012**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T04:41:23.051962+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=69296.3
+- 更新: 2026-08-20T04:46:20.623350+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=69376.0
 - Funnel: target 999 → liquid 202 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.2 >= 65=1
+- Strict後reject: 4h RSI 77.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +36.57% | $1,127,596.29 |
-| MAGMA/USDT:USDT | +26.01% | $6,076,040.42 |
-| RED/USDT:USDT | +22.58% | $1,161,293.32 |
-| ON/USDT:USDT | +17.66% | $4,936,007.15 |
-| TRUMPOFFICIAL/USDT:USDT | +14.97% | $20,015,904.18 |
+| BASECAT/USDT:USDT | +34.11% | $1,131,099.84 |
+| MAGMA/USDT:USDT | +22.20% | $6,132,492.74 |
+| RED/USDT:USDT | +20.43% | $1,233,990.89 |
+| ON/USDT:USDT | +16.22% | $4,940,911.85 |
+| RE/USDT:USDT | +15.19% | $12,253,811.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.86% | +2.70% |
-| LIT/USDT:USDT | below_1h_threshold | +2.33% | +2.16% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.91% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.98% | +1.82% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.74% | +1.58% |
+| LIT/USDT:USDT | below_1h_threshold | +2.86% | +2.59% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.62% | +2.34% |
+| BOME/USDT:USDT | below_1h_threshold | +2.23% | +1.95% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.80% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.81% | +1.53% |
 
 ## 7. 次に見るべき不足
 
