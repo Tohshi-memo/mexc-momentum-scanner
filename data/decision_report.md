@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T13:11:22.715603+00:00
+- generated_at: 2026-08-20T13:16:23.372599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12044**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T13:11:13.941984+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=71951.3
+- 更新: 2026-08-20T13:16:14.731224+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=72000.0
 - Funnel: target 1011 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +54.87% | $4,965,928.96 |
-| BOME/USDT:USDT | +47.01% | $13,322,020.49 |
-| MAGMA/USDT:USDT | +28.62% | $10,231,279.41 |
-| USELESS/USDT:USDT | +23.81% | $2,394,089.25 |
-| NEIROCTO/USDT:USDT | +23.08% | $1,277,593.15 |
+| NIULAI/USDT:USDT | +58.20% | $5,047,821.66 |
+| BOME/USDT:USDT | +46.76% | $13,413,522.07 |
+| MAGMA/USDT:USDT | +27.69% | $10,242,883.28 |
+| NEIROCTO/USDT:USDT | +24.26% | $1,297,035.36 |
+| USELESS/USDT:USDT | +23.40% | $2,416,417.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +2.01% | +1.98% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.71% | +1.68% |
-| ROBO/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.45% | +1.42% |
-| BR/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.23% | +4.13% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.15% | +2.05% |
+| ROBO/USDT:USDT | below_1h_threshold | +1.60% | +1.51% |
+| ACE/USDT:USDT | below_1h_threshold | +1.52% | +1.42% |
+| LIT/USDT:USDT | below_1h_threshold | +1.45% | +1.35% |
 
 ## 7. 次に見るべき不足
 
