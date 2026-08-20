@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T23:11:17.747032+00:00
+- generated_at: 2026-08-20T23:16:18.189265+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12106**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T23:11:09.242277+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=72846.4
+- 更新: 2026-08-20T23:16:09.548842+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=72903.0
 - Funnel: target 1011 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +48.14% | $3,244,199.24 |
-| SANTOS/USDT:USDT | +24.07% | $2,895,532.40 |
-| ONT/USDT:USDT | +18.11% | $2,802,402.76 |
-| ENA/USDT:USDT | +14.42% | $39,984,249.91 |
-| PEOPLE/USDT:USDT | +10.15% | $3,927,179.31 |
+| CATE/USDT:USDT | +51.93% | $3,258,947.35 |
+| SANTOS/USDT:USDT | +23.00% | $2,926,906.30 |
+| ONT/USDT:USDT | +18.48% | $2,833,225.57 |
+| ENA/USDT:USDT | +14.17% | $40,234,225.48 |
+| PEOPLE/USDT:USDT | +9.57% | $3,948,805.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.94% | +2.67% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.72% | +2.45% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.64% | +1.37% |
-| BTW/USDT:USDT | below_1h_threshold | +1.44% | +1.16% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.38% | +1.11% |
+| CATE/USDT:USDT | below_relative_strength | +5.05% | +4.70% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.97% | +3.62% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.99% | +1.63% |
+| LAB/USDT:USDT | below_1h_threshold | +1.86% | +1.51% |
+| TUT/USDT:USDT | below_1h_threshold | +1.65% | +1.30% |
 
 ## 7. 次に見るべき不足
 
