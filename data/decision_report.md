@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T11:11:22.888129+00:00
+- generated_at: 2026-08-20T11:16:25.450004+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12039**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.69** / 初期 $100.00 (+16.69%)
-- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 0件 / skip 1751件
+- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 0件 / skip 1752件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000059 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUMPFUN/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $116.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T11:11:12.658322+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=71870.9
-- Funnel: target 1005 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T11:16:14.822530+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=71921.5
+- Funnel: target 1005 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +65.53% | $4,032,016.51 |
-| BOME/USDT:USDT | +50.38% | $9,059,495.78 |
-| MAGMA/USDT:USDT | +32.80% | $9,692,028.18 |
-| ORDI/USDT:USDT | +24.79% | $6,685,728.54 |
-| USELESS/USDT:USDT | +22.03% | $2,106,801.35 |
+| NIULAI/USDT:USDT | +69.08% | $4,101,382.45 |
+| BOME/USDT:USDT | +50.16% | $9,179,251.60 |
+| MAGMA/USDT:USDT | +32.63% | $9,709,776.78 |
+| ORDI/USDT:USDT | +21.68% | $6,930,187.81 |
+| USELESS/USDT:USDT | +21.67% | $2,127,814.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +3.04% | +3.18% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.29% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.07% | +1.21% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.92% | +1.06% |
-| ENA/USDT:USDT | below_1h_threshold | +0.88% | +1.02% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.69% | +3.76% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.54% | +1.61% |
+| ENA/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.89% |
+| BR/USDT:USDT | below_1h_threshold | +0.70% | +0.77% |
 
 ## 7. 次に見るべき不足
 
