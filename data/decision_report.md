@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T02:06:24.383223+00:00
+- generated_at: 2026-08-20T02:11:23.614729+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12005**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T02:06:15.686863+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=69736.1
+- 更新: 2026-08-20T02:11:15.034017+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=69576.3
 - Funnel: target 999 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +25.78% | $4,641,333.22 |
-| TRUMPOFFICIAL/USDT:USDT | +22.95% | $16,194,081.49 |
-| RE/USDT:USDT | +17.41% | $10,630,527.58 |
-| BASECAT/USDT:USDT | +17.11% | $1,068,345.12 |
-| ON/USDT:USDT | +14.31% | $4,736,825.52 |
+| MAGMA/USDT:USDT | +27.07% | $4,671,916.09 |
+| TRUMPOFFICIAL/USDT:USDT | +23.50% | $16,442,671.39 |
+| BASECAT/USDT:USDT | +19.69% | $1,074,011.50 |
+| RE/USDT:USDT | +15.86% | $10,700,854.84 |
+| CSOPSAMSUNG2L/USDT:USDT | +14.84% | $1,630,001.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.15% | +4.09% |
-| KORU/USDT:USDT | below_1h_threshold | +2.60% | +2.54% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.55% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.00% | +0.93% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.99% | +0.93% |
+| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.15% | +4.32% |
+| KORU/USDT:USDT | below_1h_threshold | +2.60% | +2.76% |
+| ASP/USDT:USDT | below_1h_threshold | +1.78% | +1.94% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.78% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.30% | +1.46% |
 
 ## 7. 次に見るべき不足
 
