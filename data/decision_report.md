@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T10:01:18.174750+00:00
+- generated_at: 2026-08-20T10:06:28.674898+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12029**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T10:01:09.675168+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=71735.6
+- 更新: 2026-08-20T10:06:20.800356+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=71731.2
 - Funnel: target 1005 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +48.18% | $2,948,385.90 |
-| BOME/USDT:USDT | +42.39% | $6,497,673.01 |
-| MAGMA/USDT:USDT | +37.24% | $9,003,537.28 |
-| USELESS/USDT:USDT | +22.97% | $1,933,705.16 |
-| ON/USDT:USDT | +22.15% | $3,538,047.13 |
+| BOME/USDT:USDT | +44.46% | $6,762,572.71 |
+| NIULAI/USDT:USDT | +43.81% | $2,988,229.57 |
+| MAGMA/USDT:USDT | +36.96% | $9,114,772.60 |
+| USELESS/USDT:USDT | +24.04% | $1,961,393.40 |
+| ON/USDT:USDT | +20.83% | $3,564,080.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.75% | +2.81% |
-| ORDI/USDT:USDT | below_1h_threshold | +0.89% | +0.95% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.94% |
-| BASECAT/USDT:USDT | below_1h_threshold | +0.71% | +0.78% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.94% | +3.01% |
+| KORU/USDT:USDT | below_1h_threshold | +2.75% | +2.82% |
+| BOME/USDT:USDT | below_1h_threshold | +1.43% | +1.50% |
+| ASP/USDT:USDT | below_1h_threshold | +1.29% | +1.36% |
+| BASECAT/USDT:USDT | below_1h_threshold | +1.02% | +1.09% |
 
 ## 7. 次に見るべき不足
 
