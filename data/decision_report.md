@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T02:46:31.586251+00:00
+- generated_at: 2026-08-20T02:51:26.773860+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12006**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
-- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 2件 / skip 1724件
+- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 3件 / skip 1724件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000450 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T02:46:18.669175+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=69310.0
-- Funnel: target 999 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-08-20T02:51:15.616352+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=69297.6
+- Funnel: target 999 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +28.31% | $4,962,094.83 |
-| ON/USDT:USDT | +21.55% | $4,864,021.78 |
-| TRUMPOFFICIAL/USDT:USDT | +17.96% | $17,951,314.88 |
-| BASECAT/USDT:USDT | +17.93% | $1,087,284.41 |
-| RE/USDT:USDT | +17.81% | $11,164,105.10 |
+| MAGMA/USDT:USDT | +29.98% | $5,011,339.91 |
+| ON/USDT:USDT | +20.24% | $4,880,191.37 |
+| TRUMPOFFICIAL/USDT:USDT | +17.26% | $18,073,299.00 |
+| RE/USDT:USDT | +17.24% | $11,177,122.43 |
+| BASECAT/USDT:USDT | +17.11% | $1,089,320.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.15% | +4.70% |
-| TRIA/USDT:USDT | below_1h_threshold | +3.35% | +3.90% |
-| CYS/USDT:USDT | below_1h_threshold | +3.29% | +3.84% |
-| KORU/USDT:USDT | below_1h_threshold | +2.60% | +3.15% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.52% | +3.06% |
+| ON/USDT:USDT | below_1h_threshold | +4.80% | +5.36% |
+| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.15% | +4.71% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.57% | +4.13% |
+| TRIA/USDT:USDT | below_1h_threshold | +3.45% | +4.02% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.98% | +3.54% |
 
 ## 7. 次に見るべき不足
 
