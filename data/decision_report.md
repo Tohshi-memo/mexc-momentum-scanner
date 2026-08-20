@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T23:31:13.950729+00:00
+- generated_at: 2026-08-20T23:36:18.934174+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12106**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T23:31:05.304706+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.79% price=73224.4
+- 更新: 2026-08-20T23:36:10.196770+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.75% price=73192.6
 - Funnel: target 1011 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +47.94% | $3,308,061.32 |
-| SANTOS/USDT:USDT | +20.83% | $2,978,585.46 |
-| ONT/USDT:USDT | +17.85% | $2,866,401.58 |
-| ENA/USDT:USDT | +15.62% | $41,579,978.76 |
-| ONG/USDT:USDT | +11.06% | $15,128,192.75 |
+| CATE/USDT:USDT | +46.51% | $3,321,838.93 |
+| SANTOS/USDT:USDT | +19.71% | $2,990,879.03 |
+| ONT/USDT:USDT | +16.20% | $2,877,591.77 |
+| ENA/USDT:USDT | +16.08% | $41,861,637.09 |
+| ONG/USDT:USDT | +10.60% | $15,184,040.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +5.39% | +4.60% |
-| CATE/USDT:USDT | below_1h_threshold | +3.82% | +3.02% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.23% | +2.44% |
-| TUT/USDT:USDT | below_1h_threshold | +2.36% | +1.57% |
-| ENA/USDT:USDT | below_1h_threshold | +2.36% | +1.57% |
+| BLESS/USDT:USDT | below_relative_strength | +5.52% | +4.77% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.75% | +2.00% |
+| ENA/USDT:USDT | below_1h_threshold | +2.69% | +1.94% |
+| PROM/USDT:USDT | below_1h_threshold | +2.68% | +1.93% |
+| TUT/USDT:USDT | below_1h_threshold | +1.80% | +1.05% |
 
 ## 7. 次に見るべき不足
 
