@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T21:41:21.787520+00:00
+- generated_at: 2026-08-20T21:46:18.707540+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12102**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T21:41:10.984660+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=72765.5
+- 更新: 2026-08-20T21:46:07.858098+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=72715.6
 - Funnel: target 1011 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +57.36% | $3,026,963.74 |
-| ONG/USDT:USDT | +42.64% | $12,075,822.31 |
-| ONT/USDT:USDT | +20.93% | $2,238,916.71 |
-| PEOPLE/USDT:USDT | +16.88% | $3,301,497.47 |
-| BEAT/USDT:USDT | +9.19% | $44,282,324.75 |
+| CATE/USDT:USDT | +52.80% | $3,063,507.91 |
+| ONG/USDT:USDT | +42.84% | $12,146,614.81 |
+| ONT/USDT:USDT | +20.53% | $2,276,774.40 |
+| PEOPLE/USDT:USDT | +16.98% | $3,315,834.85 |
+| BEAT/USDT:USDT | +10.95% | $44,508,412.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +3.44% | +3.26% |
-| LAB/USDT:USDT | below_1h_threshold | +2.14% | +1.96% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.61% | +1.44% |
-| TAO/USDT:USDT | below_1h_threshold | +1.29% | +1.11% |
-| WIF/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.53% | +3.43% |
+| LAB/USDT:USDT | below_1h_threshold | +2.30% | +2.20% |
+| WIF/USDT:USDT | below_1h_threshold | +1.16% | +1.06% |
+| TAO/USDT:USDT | below_1h_threshold | +1.16% | +1.05% |
+| WLD/USDT:USDT | below_1h_threshold | +1.01% | +0.91% |
 
 ## 7. 次に見るべき不足
 
