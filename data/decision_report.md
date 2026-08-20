@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T07:31:30.128419+00:00
+- generated_at: 2026-08-20T07:36:23.146964+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12017**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T07:31:19.636739+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=69571.5
+- 更新: 2026-08-20T07:36:14.265434+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=69586.5
 - Funnel: target 1004 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1
+- Strict後reject: 4h RSI 82.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BOME/USDT:USDT | +34.61% | $2,227,796.61 |
-| MAGMA/USDT:USDT | +25.71% | $7,366,187.32 |
-| BASECAT/USDT:USDT | +24.85% | $1,223,461.56 |
-| RED/USDT:USDT | +22.25% | $1,971,891.00 |
-| LIT/USDT:USDT | +20.34% | $9,300,421.80 |
+| BOME/USDT:USDT | +28.68% | $2,411,517.76 |
+| MAGMA/USDT:USDT | +25.75% | $7,402,100.58 |
+| BASECAT/USDT:USDT | +25.20% | $1,224,777.78 |
+| RED/USDT:USDT | +23.33% | $1,984,855.94 |
+| LIT/USDT:USDT | +19.45% | $9,384,986.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +3.69% | +4.08% |
-| STAR/USDT:USDT | below_1h_threshold | +3.61% | +3.99% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.68% | +3.06% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.59% | +2.97% |
-| KORU/USDT:USDT | below_1h_threshold | +2.40% | +2.78% |
+| RE/USDT:USDT | below_1h_threshold | +4.06% | +4.42% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.31% | +3.67% |
+| STAR/USDT:USDT | below_1h_threshold | +2.78% | +3.14% |
+| KORU/USDT:USDT | below_1h_threshold | +2.40% | +2.76% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.40% | +2.76% |
 
 ## 7. 次に見るべき不足
 
