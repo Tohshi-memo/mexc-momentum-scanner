@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T15:06:24.758325+00:00
+- generated_at: 2026-08-20T15:11:25.299276+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12054**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.69** / 初期 $100.00 (+16.69%)
-- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 0件 / skip 1770件
+- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 0件 / skip 1771件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `見送り` (no_strategy_passed_causal_filters) / causal_score n/a / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUMPFUN/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $116.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T15:06:14.592435+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=72200.8
-- Funnel: target 1011 → liquid 201 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T15:11:16.410834+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.57% price=72201.7
+- Funnel: target 1011 → liquid 201 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +61.13% | $5,512,614.84 |
-| BOME/USDT:USDT | +38.51% | $16,820,356.64 |
-| ACE/USDT:USDT | +36.59% | $20,288,330.71 |
-| ONG/USDT:USDT | +32.99% | $3,641,976.21 |
-| MAGMA/USDT:USDT | +32.57% | $10,806,985.96 |
+| NIULAI/USDT:USDT | +60.33% | $5,561,029.60 |
+| ACE/USDT:USDT | +40.88% | $20,883,955.23 |
+| BOME/USDT:USDT | +36.56% | $16,918,966.54 |
+| ONG/USDT:USDT | +34.23% | $3,724,598.59 |
+| MAGMA/USDT:USDT | +32.80% | $10,871,760.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_relative_strength | +5.11% | +4.54% |
-| ACE/USDT:USDT | below_1h_threshold | +4.95% | +4.38% |
-| XPL/USDT:USDT | below_1h_threshold | +2.34% | +1.78% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.33% | +1.76% |
-| GALA/USDT:USDT | below_1h_threshold | +1.88% | +1.31% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.38% | +2.81% |
+| XPL/USDT:USDT | below_1h_threshold | +2.23% | +1.66% |
+| XRP/USDT:USDT | below_1h_threshold | +2.17% | +1.60% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.12% | +1.55% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.55% | +0.98% |
 
 ## 7. 次に見るべき不足
 
