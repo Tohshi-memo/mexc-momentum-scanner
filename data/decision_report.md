@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T12:51:34.175905+00:00
+- generated_at: 2026-08-20T12:56:35.798001+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12044**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T12:51:22.729638+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=71657.6
-- Funnel: target 1011 → liquid 204 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T12:56:22.053692+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=71860.3
+- Funnel: target 1011 → liquid 204 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +53.52% | $4,948,037.48 |
-| BOME/USDT:USDT | +47.43% | $12,897,834.14 |
-| MAGMA/USDT:USDT | +28.31% | $10,170,011.17 |
-| NEIROCTO/USDT:USDT | +26.02% | $1,145,385.56 |
-| ON/USDT:USDT | +22.74% | $2,980,191.99 |
+| NIULAI/USDT:USDT | +50.39% | $4,975,676.07 |
+| BOME/USDT:USDT | +49.70% | $13,066,075.99 |
+| MAGMA/USDT:USDT | +29.21% | $10,191,479.84 |
+| NEIROCTO/USDT:USDT | +28.34% | $1,168,917.41 |
+| USELESS/USDT:USDT | +22.94% | $2,424,483.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +4.61% | +4.94% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +3.03% | +3.36% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +3.19% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.47% | +2.80% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.07% | +1.40% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +5.00% | +5.05% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +2.91% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.84% | +1.89% |
+| AERO/USDT:USDT | below_1h_threshold | +1.37% | +1.42% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
 
 ## 7. 次に見るべき不足
 
