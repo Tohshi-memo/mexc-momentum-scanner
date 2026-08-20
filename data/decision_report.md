@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T11:31:24.279660+00:00
+- generated_at: 2026-08-20T11:36:30.293071+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12039**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.69** / 初期 $100.00 (+16.69%)
-- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 0件 / skip 1752件
+- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 0件 / skip 1753件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000059 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUMPFUN/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $116.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T11:31:13.801612+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=71886.7
-- Funnel: target 1005 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T11:36:17.000491+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=72170.0
+- Funnel: target 1005 → liquid 198 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +60.78% | $4,287,083.38 |
-| BOME/USDT:USDT | +55.03% | $9,828,344.73 |
-| MAGMA/USDT:USDT | +34.24% | $9,747,758.73 |
-| ORDI/USDT:USDT | +25.36% | $7,457,233.44 |
-| USELESS/USDT:USDT | +20.75% | $2,146,800.74 |
+| NIULAI/USDT:USDT | +57.23% | $4,358,231.58 |
+| BOME/USDT:USDT | +54.15% | $9,970,849.26 |
+| MAGMA/USDT:USDT | +34.52% | $9,774,445.62 |
+| ORDI/USDT:USDT | +25.56% | $7,832,338.23 |
+| USELESS/USDT:USDT | +22.54% | $2,166,864.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.86% | +3.98% |
-| ACE/USDT:USDT | below_1h_threshold | +3.24% | +3.36% |
-| BOME/USDT:USDT | below_1h_threshold | +2.67% | +2.79% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.37% | +2.49% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.27% |
+| PENGU/USDT:USDT | below_1h_threshold | +4.12% | +3.84% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.68% | +3.41% |
+| ACE/USDT:USDT | below_1h_threshold | +3.07% | +2.79% |
+| BOME/USDT:USDT | below_1h_threshold | +2.34% | +2.06% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.15% | +1.87% |
 
 ## 7. 次に見るべき不足
 
