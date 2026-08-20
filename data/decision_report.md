@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T22:11:29.013363+00:00
+- generated_at: 2026-08-20T22:16:15.139738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12104**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.67** / 初期 $100.00 (+17.67%)
-- 確定: 1791件 (Win 532 / Loss 679 / Flat 580) / pending 2件 / skip 1782件
+- 確定: 1791件 (Win 532 / Loss 679 / Flat 580) / pending 3件 / skip 1782件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000192 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TUT/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $117.67
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T22:11:18.834180+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=72609.7
-- Funnel: target 1011 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T22:16:07.793552+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=72564.1
+- Funnel: target 1011 → liquid 196 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +53.40% | $3,086,218.14 |
-| SANTOS/USDT:USDT | +34.19% | $1,582,753.96 |
-| ONG/USDT:USDT | +31.29% | $12,983,821.31 |
-| PEOPLE/USDT:USDT | +18.74% | $3,450,270.04 |
-| ONT/USDT:USDT | +17.50% | $2,468,251.48 |
+| CATE/USDT:USDT | +59.04% | $3,106,268.14 |
+| SANTOS/USDT:USDT | +31.84% | $1,687,416.70 |
+| ONG/USDT:USDT | +29.67% | $13,135,168.45 |
+| PEOPLE/USDT:USDT | +19.78% | $3,495,871.51 |
+| ONT/USDT:USDT | +16.02% | $2,499,068.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.36% | +2.49% |
-| ENA/USDT:USDT | below_1h_threshold | +1.99% | +2.13% |
-| BTW/USDT:USDT | below_1h_threshold | +1.93% | +2.07% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.39% | +1.52% |
-| GRASS/USDT:USDT | below_1h_threshold | +1.26% | +1.39% |
+| BTW/USDT:USDT | below_1h_threshold | +3.01% | +3.21% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.26% | +2.46% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.95% | +2.15% |
+| ENA/USDT:USDT | below_1h_threshold | +1.75% | +1.94% |
+| ACU/USDT:USDT | below_1h_threshold | +0.99% | +1.19% |
 
 ## 7. 次に見るべき不足
 
