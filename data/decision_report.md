@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T21:51:23.540024+00:00
+- generated_at: 2026-08-20T21:56:28.799915+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12102**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.27** / 初期 $100.00 (+17.27%)
-- 確定: 1789件 (Win 531 / Loss 679 / Flat 579) / pending 3件 / skip 1782件
+- 確定: 1789件 (Win 531 / Loss 679 / Flat 579) / pending 4件 / skip 1782件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000163 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T21:51:12.457229+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=72694.2
-- Funnel: target 1011 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T21:56:18.333481+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=72671.2
+- Funnel: target 1011 → liquid 199 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +52.03% | $3,077,288.55 |
-| ONG/USDT:USDT | +40.85% | $12,235,388.33 |
-| ONT/USDT:USDT | +17.78% | $2,340,196.33 |
-| PEOPLE/USDT:USDT | +17.76% | $3,353,252.54 |
-| BEAT/USDT:USDT | +10.95% | $44,801,123.80 |
+| CATE/USDT:USDT | +53.46% | $3,091,724.34 |
+| ONG/USDT:USDT | +39.30% | $12,310,672.11 |
+| SANTOS/USDT:USDT | +30.61% | $1,067,067.69 |
+| PEOPLE/USDT:USDT | +19.61% | $3,392,903.15 |
+| ONT/USDT:USDT | +18.34% | $2,373,200.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_relative_strength | +5.03% | +4.95% |
-| LAB/USDT:USDT | below_1h_threshold | +2.08% | +2.00% |
-| AKE/USDT:USDT | below_1h_threshold | +1.44% | +1.36% |
-| TAO/USDT:USDT | below_1h_threshold | +1.25% | +1.18% |
-| FET/USDT:USDT | below_1h_threshold | +1.06% | +0.98% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.55% | +4.51% |
+| LAB/USDT:USDT | below_1h_threshold | +2.26% | +2.21% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
+| AKE/USDT:USDT | below_1h_threshold | +1.45% | +1.40% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
 
 ## 7. 次に見るべき不足
 
