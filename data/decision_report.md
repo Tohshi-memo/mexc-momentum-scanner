@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T09:26:22.563074+00:00
+- generated_at: 2026-08-20T09:31:29.091399+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12026**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.76** / 初期 $100.00 (+16.76%)
-- 確定: 1754件 (Win 520 / Loss 670 / Flat 564) / pending 3件 / skip 1741件
+- 確定: 1754件 (Win 520 / Loss 670 / Flat 564) / pending 3件 / skip 1742件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000258 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MINIMAXSTOCK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T09:26:14.188296+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.60% price=71987.5
-- Funnel: target 1004 → liquid 201 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T09:31:20.242744+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=71759.7
+- Funnel: target 1004 → liquid 201 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +42.07% | $2,770,364.75 |
-| MAGMA/USDT:USDT | +38.80% | $8,196,157.61 |
-| BOME/USDT:USDT | +37.06% | $5,665,603.32 |
-| USELESS/USDT:USDT | +22.92% | $1,854,101.31 |
-| MET/USDT:USDT | +21.34% | $1,086,211.75 |
+| NIULAI/USDT:USDT | +50.34% | $2,822,757.59 |
+| MAGMA/USDT:USDT | +41.08% | $8,280,321.38 |
+| BOME/USDT:USDT | +35.38% | $5,758,514.58 |
+| USELESS/USDT:USDT | +23.48% | $1,866,728.99 |
+| ON/USDT:USDT | +20.54% | $4,831,895.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.65% | +4.06% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.61% |
-| ASP/USDT:USDT | below_1h_threshold | +2.43% | +1.83% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.90% | +1.30% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.89% | +1.29% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.93% |
+| ASP/USDT:USDT | below_1h_threshold | +2.95% | +2.67% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.36% | +2.09% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.99% | +1.71% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.76% | +1.48% |
 
 ## 7. 次に見るべき不足
 
