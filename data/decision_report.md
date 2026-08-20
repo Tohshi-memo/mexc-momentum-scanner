@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T10:16:19.404666+00:00
+- generated_at: 2026-08-20T10:21:22.974879+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12029**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T10:16:10.889590+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.83% price=72373.4
-- Funnel: target 1005 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-20T10:21:14.316238+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.74% price=72313.1
+- Funnel: target 1005 → liquid 200 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +49.55% | $3,081,991.04 |
-| BOME/USDT:USDT | +46.57% | $7,134,800.71 |
-| MAGMA/USDT:USDT | +36.09% | $9,262,427.84 |
-| USELESS/USDT:USDT | +24.50% | $1,978,441.30 |
-| ORDI/USDT:USDT | +20.90% | $4,865,434.89 |
+| NIULAI/USDT:USDT | +53.28% | $3,110,641.72 |
+| BOME/USDT:USDT | +47.60% | $7,305,851.28 |
+| MAGMA/USDT:USDT | +36.37% | $9,332,237.62 |
+| USELESS/USDT:USDT | +24.47% | $1,989,693.14 |
+| ORDI/USDT:USDT | +21.91% | $5,040,530.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORDI/USDT:USDT | below_1h_threshold | +4.08% | +3.25% |
-| BOME/USDT:USDT | below_1h_threshold | +2.76% | +1.94% |
-| KORU/USDT:USDT | below_1h_threshold | +2.75% | +1.92% |
-| BASECAT/USDT:USDT | below_1h_threshold | +2.24% | +1.42% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.73% | +0.90% |
+| ORDI/USDT:USDT | below_1h_threshold | +4.45% | +3.71% |
+| BOME/USDT:USDT | below_1h_threshold | +3.66% | +2.92% |
+| KORU/USDT:USDT | below_1h_threshold | +2.75% | +2.01% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.49% | +1.75% |
+| WIF/USDT:USDT | below_1h_threshold | +2.36% | +1.62% |
 
 ## 7. 次に見るべき不足
 
