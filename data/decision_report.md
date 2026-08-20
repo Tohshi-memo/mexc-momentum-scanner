@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T04:36:24.672937+00:00
+- generated_at: 2026-08-20T04:41:34.092263+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12012**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T04:36:15.791430+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=69263.4
-- Funnel: target 999 → liquid 202 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.6 >= 65=1
+- 更新: 2026-08-20T04:41:23.051962+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=69296.3
+- Funnel: target 999 → liquid 202 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +31.06% | $1,118,539.68 |
-| MAGMA/USDT:USDT | +28.45% | $5,992,067.03 |
-| RED/USDT:USDT | +20.86% | $1,098,432.38 |
-| ON/USDT:USDT | +16.94% | $4,933,503.16 |
-| RE/USDT:USDT | +14.66% | $12,149,095.23 |
+| BASECAT/USDT:USDT | +36.57% | $1,127,596.29 |
+| MAGMA/USDT:USDT | +26.01% | $6,076,040.42 |
+| RED/USDT:USDT | +22.58% | $1,161,293.32 |
+| ON/USDT:USDT | +17.66% | $4,936,007.15 |
+| TRUMPOFFICIAL/USDT:USDT | +14.97% | $20,015,904.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +3.90% | +3.79% |
-| ASTER/USDT:USDT | below_1h_threshold | +2.98% | +2.86% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.69% | +2.57% |
-| LIT/USDT:USDT | below_1h_threshold | +2.18% | +2.07% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.86% | +2.70% |
+| LIT/USDT:USDT | below_1h_threshold | +2.33% | +2.16% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.91% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.98% | +1.82% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.74% | +1.58% |
 
 ## 7. 次に見るべき不足
 
