@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T01:01:20.493303+00:00
+- generated_at: 2026-08-20T01:06:19.176955+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12003**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T01:01:11.857805+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=69461.9
+- 更新: 2026-08-20T01:06:10.667874+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=69381.0
 - Funnel: target 999 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | +25.65% | $14,442,014.85 |
-| MAGMA/USDT:USDT | +25.30% | $4,020,623.91 |
-| RE/USDT:USDT | +18.72% | $10,318,908.92 |
-| ON/USDT:USDT | +13.46% | $4,759,528.13 |
-| HYPE/USDT:USDT | +12.95% | $483,648,932.16 |
+| MAGMA/USDT:USDT | +27.14% | $4,075,722.68 |
+| TRUMPOFFICIAL/USDT:USDT | +26.49% | $14,484,930.66 |
+| RE/USDT:USDT | +18.38% | $10,339,787.86 |
+| BR/USDT:USDT | +13.31% | $3,201,252.69 |
+| ON/USDT:USDT | +13.29% | $4,762,180.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.11% | +4.00% |
-| KOSPI/USDT:USDT | below_1h_threshold | +3.44% | +3.34% |
-| KORU/USDT:USDT | below_1h_threshold | +3.35% | +3.24% |
-| MUU/USDT:USDT | below_1h_threshold | +1.15% | +1.04% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.56% | +0.46% |
+| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.11% | +4.12% |
+| KOSPI/USDT:USDT | below_1h_threshold | +3.44% | +3.45% |
+| KORU/USDT:USDT | below_1h_threshold | +3.35% | +3.36% |
+| ZHIPUSTOCK/USDT:USDT | below_1h_threshold | +2.53% | +2.54% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.49% | +2.50% |
 
 ## 7. 次に見るべき不足
 
