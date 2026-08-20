@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T19:01:09.881257+00:00
+- generated_at: 2026-08-20T19:06:24.777661+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12072**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T19:01:02.975896+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=72369.7
+- 更新: 2026-08-20T19:06:16.089949+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=72345.9
 - Funnel: target 1011 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +38.78% | $2,023,768.06 |
-| ONG/USDT:USDT | +9.62% | $4,673,649.44 |
-| BEAT/USDT:USDT | +9.19% | $40,352,335.47 |
-| PEOPLE/USDT:USDT | +8.45% | $2,134,204.52 |
-| ALLO/USDT:USDT | +8.05% | $3,968,156.71 |
+| CATE/USDT:USDT | +38.75% | $2,051,764.07 |
+| PEOPLE/USDT:USDT | +10.45% | $2,167,377.80 |
+| ONG/USDT:USDT | +10.28% | $4,709,863.24 |
+| ALLO/USDT:USDT | +8.39% | $4,028,788.83 |
+| BEAT/USDT:USDT | +8.04% | $40,630,344.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NGAS/USDT:USDT | below_1h_threshold | +1.09% | +1.13% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.94% | +0.98% |
-| ONG/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
-| BABASTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.74% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.64% | +0.68% |
+| TURBO/USDT:USDT | below_1h_threshold | +1.53% | +1.60% |
+| ONG/USDT:USDT | below_1h_threshold | +1.46% | +1.53% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.09% | +1.16% |
+| MET/USDT:USDT | below_1h_threshold | +1.08% | +1.16% |
+| CYS/USDT:USDT | below_1h_threshold | +1.05% | +1.12% |
 
 ## 7. 次に見るべき不足
 
