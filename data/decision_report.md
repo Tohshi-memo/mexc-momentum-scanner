@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T22:46:16.782351+00:00
+- generated_at: 2026-08-20T22:51:19.252096+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12106**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T22:46:06.733945+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=72668.4
+- 更新: 2026-08-20T22:51:10.721907+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=72698.9
 - Funnel: target 1011 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +48.20% | $3,190,449.05 |
-| SANTOS/USDT:USDT | +29.69% | $2,394,316.35 |
-| ONT/USDT:USDT | +17.17% | $2,672,433.36 |
-| ONG/USDT:USDT | +13.65% | $14,003,098.26 |
-| ENA/USDT:USDT | +12.88% | $38,287,431.35 |
+| CATE/USDT:USDT | +47.14% | $3,208,634.49 |
+| SANTOS/USDT:USDT | +25.91% | $2,527,511.65 |
+| ONT/USDT:USDT | +20.31% | $2,692,055.81 |
+| ENA/USDT:USDT | +13.92% | $38,689,066.73 |
+| ONG/USDT:USDT | +12.19% | $14,100,284.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.18% | +2.23% |
-| ENA/USDT:USDT | below_1h_threshold | +1.66% | +1.71% |
-| ALLO/USDT:USDT | below_1h_threshold | +1.18% | +1.23% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.03% | +1.08% |
-| ACU/USDT:USDT | below_1h_threshold | +0.89% | +0.95% |
+| ENA/USDT:USDT | below_1h_threshold | +2.65% | +2.66% |
+| ONT/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.67% | +1.68% |
+| ACU/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.20% | +1.21% |
 
 ## 7. 次に見るべき不足
 
