@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T19:21:23.719673+00:00
+- generated_at: 2026-08-20T19:26:20.504699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12072**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T19:21:14.782620+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=72524.0
+- 更新: 2026-08-20T19:26:12.223722+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=72588.0
 - Funnel: target 1011 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +29.35% | $2,156,586.00 |
-| ONG/USDT:USDT | +12.25% | $4,780,497.46 |
-| PEOPLE/USDT:USDT | +11.06% | $2,242,765.13 |
-| ALLO/USDT:USDT | +8.26% | $4,186,101.66 |
-| ENA/USDT:USDT | +6.99% | $28,869,915.04 |
+| CATE/USDT:USDT | +33.99% | $2,171,918.63 |
+| PEOPLE/USDT:USDT | +13.18% | $2,324,854.11 |
+| ONG/USDT:USDT | +12.69% | $4,797,119.54 |
+| ALLO/USDT:USDT | +10.07% | $4,282,216.54 |
+| NIULAI/USDT:USDT | +7.74% | $6,088,435.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +3.15% | +2.98% |
-| TURBO/USDT:USDT | below_1h_threshold | +2.51% | +2.34% |
-| AKE/USDT:USDT | below_1h_threshold | +2.37% | +2.20% |
-| LUNC/USDT:USDT | below_1h_threshold | +2.13% | +1.96% |
-| TUT/USDT:USDT | below_1h_threshold | +1.86% | +1.68% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +3.64% | +3.38% |
+| ONG/USDT:USDT | below_1h_threshold | +3.59% | +3.33% |
+| NIULAI/USDT:USDT | below_1h_threshold | +3.44% | +3.18% |
+| TURBO/USDT:USDT | below_1h_threshold | +2.40% | +2.14% |
+| TUT/USDT:USDT | below_1h_threshold | +2.31% | +2.05% |
 
 ## 7. 次に見るべき不足
 
