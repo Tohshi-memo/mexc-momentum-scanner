@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T18:26:32.599329+00:00
+- generated_at: 2026-08-20T18:31:30.294624+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12071**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T18:26:23.419688+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=72674.5
+- 更新: 2026-08-20T18:31:19.523012+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=72628.2
 - Funnel: target 1011 → liquid 199 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +41.50% | $1,713,160.75 |
-| BEAT/USDT:USDT | +14.78% | $40,057,835.13 |
-| ALLO/USDT:USDT | +11.92% | $3,272,654.96 |
-| ONG/USDT:USDT | +9.52% | $4,646,400.27 |
-| PEOPLE/USDT:USDT | +8.62% | $1,982,119.78 |
+| CATE/USDT:USDT | +35.34% | $1,752,639.12 |
+| BEAT/USDT:USDT | +17.31% | $40,225,170.08 |
+| ALLO/USDT:USDT | +12.30% | $3,313,763.59 |
+| PEOPLE/USDT:USDT | +10.12% | $2,021,066.13 |
+| VELVET/USDT:USDT | +9.48% | $8,331,714.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.46% | +4.50% |
-| AVAAI/USDT:USDT | below_1h_threshold | +3.34% | +3.38% |
-| ALLO/USDT:USDT | below_1h_threshold | +2.14% | +2.18% |
-| H/USDT:USDT | below_1h_threshold | +2.09% | +2.13% |
-| TUT/USDT:USDT | below_1h_threshold | +1.73% | +1.77% |
+| CYS/USDT:USDT | below_1h_threshold | +4.74% | +4.84% |
+| H/USDT:USDT | below_1h_threshold | +3.87% | +3.97% |
+| AVAAI/USDT:USDT | below_1h_threshold | +3.20% | +3.30% |
+| TUT/USDT:USDT | below_1h_threshold | +2.87% | +2.97% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.37% | +2.48% |
 
 ## 7. 次に見るべき不足
 
