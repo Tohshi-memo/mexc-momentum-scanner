@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T09:46:37.763073+00:00
+- generated_at: 2026-08-20T09:51:32.522517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12028**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T09:46:27.288437+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=71976.9
-- Funnel: target 1004 → liquid 201 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.8 >= 65=1
+- 更新: 2026-08-20T09:51:21.346268+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=71831.1
+- Funnel: target 1005 → liquid 202 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +53.30% | $2,953,947.88 |
-| MAGMA/USDT:USDT | +43.01% | $8,710,623.67 |
-| BOME/USDT:USDT | +41.35% | $6,191,753.48 |
-| USELESS/USDT:USDT | +24.78% | $1,923,709.03 |
-| ON/USDT:USDT | +21.38% | $4,917,829.11 |
+| NIULAI/USDT:USDT | +52.31% | $2,984,708.97 |
+| MAGMA/USDT:USDT | +43.21% | $8,805,604.71 |
+| BOME/USDT:USDT | +39.19% | $6,299,761.46 |
+| USELESS/USDT:USDT | +23.58% | $1,946,668.50 |
+| ON/USDT:USDT | +22.65% | $4,931,477.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BOME/USDT:USDT | below_relative_strength | +5.03% | +4.45% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.63% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.44% | +2.86% |
-| ASP/USDT:USDT | below_1h_threshold | +3.12% | +2.54% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.05% | +2.47% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.83% |
+| BOME/USDT:USDT | below_1h_threshold | +3.29% | +2.91% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.97% | +2.60% |
+| ASP/USDT:USDT | below_1h_threshold | +2.69% | +2.31% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.41% | +2.03% |
 
 ## 7. 次に見るべき不足
 
