@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T08:06:16.209789+00:00
+- generated_at: 2026-08-20T08:11:24.915963+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12018**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T08:06:10.410028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=69837.9
+- 更新: 2026-08-20T08:11:16.382490+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.46% price=70836.1
 - Funnel: target 1004 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BOME/USDT:USDT | +30.38% | $3,460,127.89 |
-| BASECAT/USDT:USDT | +28.60% | $1,223,758.49 |
-| MAGMA/USDT:USDT | +26.69% | $7,562,036.93 |
-| LIT/USDT:USDT | +19.83% | $9,843,285.63 |
-| RED/USDT:USDT | +19.46% | $2,095,175.62 |
+| BOME/USDT:USDT | +32.40% | $3,684,801.10 |
+| MAGMA/USDT:USDT | +28.45% | $7,577,863.82 |
+| BASECAT/USDT:USDT | +27.78% | $1,225,755.56 |
+| RED/USDT:USDT | +20.86% | $2,108,757.17 |
+| RE/USDT:USDT | +19.51% | $14,290,175.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +1.72% | +1.69% |
-| ON/USDT:USDT | below_1h_threshold | +1.60% | +1.57% |
-| RE/USDT:USDT | below_1h_threshold | +0.75% | +0.72% |
-| ENA/USDT:USDT | below_1h_threshold | +0.64% | +0.61% |
-| ASP/USDT:USDT | below_1h_threshold | +0.34% | +0.31% |
+| RE/USDT:USDT | below_1h_threshold | +2.28% | +0.82% |
+| ENA/USDT:USDT | below_1h_threshold | +2.05% | +0.59% |
+| ON/USDT:USDT | below_1h_threshold | +1.63% | +0.17% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.59% | +0.13% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.55% | +0.09% |
 
 ## 7. 次に見るべき不足
 
