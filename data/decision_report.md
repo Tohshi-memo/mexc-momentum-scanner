@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T17:01:26.670379+00:00
+- generated_at: 2026-08-20T17:06:18.513896+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12061**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T17:01:16.342949+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=72698.0
+- 更新: 2026-08-20T17:06:09.673914+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=72707.0
 - Funnel: target 1011 → liquid 200 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEOPLE/USDT:USDT | +9.58% | $1,386,890.66 |
-| ONG/USDT:USDT | +6.87% | $4,356,289.51 |
-| NIULAI/USDT:USDT | +4.67% | $5,878,056.87 |
-| ALLO/USDT:USDT | +4.53% | $2,316,354.78 |
-| XRP/USDT:USDT | +4.40% | $1,009,857,758.28 |
+| PEOPLE/USDT:USDT | +8.35% | $1,436,917.44 |
+| ONG/USDT:USDT | +6.69% | $4,389,017.74 |
+| ALLO/USDT:USDT | +5.01% | $2,383,862.26 |
+| XRP/USDT:USDT | +3.98% | $1,030,865,535.33 |
+| PIPPIN/USDT:USDT | +3.78% | $1,992,799.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.27% |
-| HUTSTOCK/USDT:USDT | below_1h_threshold | +1.67% | +1.80% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.55% | +1.69% |
-| LITESTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.24% |
-| PEOPLE/USDT:USDT | below_1h_threshold | +0.77% | +0.91% |
+| AAOISTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.26% |
+| HUTSTOCK/USDT:USDT | below_1h_threshold | +1.67% | +1.79% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.55% | +1.68% |
+| COINBASE/USDT:USDT | below_1h_threshold | +1.35% | +1.48% |
+| LITESTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.23% |
 
 ## 7. 次に見るべき不足
 
