@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T16:11:20.127405+00:00
+- generated_at: 2026-08-20T16:16:17.244016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12058**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T16:11:11.340769+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=72403.8
+- 更新: 2026-08-20T16:16:09.203599+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=72322.7
 - Funnel: target 1011 → liquid 202 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +3.11% | $3,040,208.70 |
-| BOME/USDT:USDT | +2.97% | $17,692,547.12 |
-| PEOPLE/USDT:USDT | +2.83% | $1,081,334.47 |
-| NIULAI/USDT:USDT | +2.39% | $5,830,607.79 |
-| H/USDT:USDT | +2.23% | $2,549,877.84 |
+| PEOPLE/USDT:USDT | +4.53% | $1,120,372.98 |
+| ON/USDT:USDT | +2.77% | $3,065,696.93 |
+| PIPPIN/USDT:USDT | +2.64% | $1,482,705.04 |
+| H/USDT:USDT | +2.52% | $2,559,905.47 |
+| ONG/USDT:USDT | +2.32% | $4,208,520.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.12% | +3.15% |
-| PEOPLE/USDT:USDT | below_1h_threshold | +2.71% | +2.75% |
-| BOME/USDT:USDT | below_1h_threshold | +2.62% | +2.66% |
-| H/USDT:USDT | below_1h_threshold | +2.42% | +2.46% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.26% | +2.29% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +4.54% | +4.69% |
+| ON/USDT:USDT | below_1h_threshold | +2.74% | +2.89% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.64% | +2.79% |
+| H/USDT:USDT | below_1h_threshold | +2.57% | +2.72% |
+| ONG/USDT:USDT | below_1h_threshold | +2.14% | +2.29% |
 
 ## 7. 次に見るべき不足
 
