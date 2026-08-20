@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T18:36:33.161706+00:00
+- generated_at: 2026-08-20T18:41:32.265730+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12071**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T18:36:22.775429+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=72420.1
+- 更新: 2026-08-20T18:41:22.297229+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=72405.1
 - Funnel: target 1011 → liquid 199 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +30.87% | $1,856,449.64 |
-| BEAT/USDT:USDT | +15.93% | $40,412,918.10 |
-| ALLO/USDT:USDT | +12.60% | $3,359,613.55 |
-| PEOPLE/USDT:USDT | +9.50% | $2,049,222.23 |
-| ONG/USDT:USDT | +8.96% | $4,662,188.44 |
+| CATE/USDT:USDT | +38.49% | $1,917,380.27 |
+| BEAT/USDT:USDT | +16.32% | $40,883,579.44 |
+| ALLO/USDT:USDT | +12.64% | $3,443,771.84 |
+| ONG/USDT:USDT | +9.36% | $4,665,194.51 |
+| VELVET/USDT:USDT | +8.51% | $8,426,389.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.85% | +5.24% |
-| H/USDT:USDT | below_1h_threshold | +4.08% | +4.47% |
-| CYS/USDT:USDT | below_1h_threshold | +3.55% | +3.94% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.86% | +3.25% |
-| TUT/USDT:USDT | below_1h_threshold | +2.68% | +3.07% |
+| H/USDT:USDT | below_1h_threshold | +4.53% | +4.94% |
+| ACE/USDT:USDT | below_1h_threshold | +3.56% | +3.97% |
+| COLLECT/USDT:USDT | below_1h_threshold | +2.97% | +3.38% |
+| ALLO/USDT:USDT | below_1h_threshold | +2.54% | +2.95% |
+| AVAAI/USDT:USDT | below_1h_threshold | +2.33% | +2.74% |
 
 ## 7. 次に見るべき不足
 
