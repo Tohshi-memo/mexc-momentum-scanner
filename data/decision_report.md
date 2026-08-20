@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T12:06:23.725294+00:00
+- generated_at: 2026-08-20T12:11:27.060057+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12043**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T12:06:15.109982+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=71770.0
-- Funnel: target 1010 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-20T12:11:18.419458+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=71746.0
+- Funnel: target 1011 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BOME/USDT:USDT | +56.72% | $10,883,774.89 |
-| NIULAI/USDT:USDT | +53.03% | $4,597,263.73 |
-| MAGMA/USDT:USDT | +29.19% | $9,959,422.74 |
-| ORDI/USDT:USDT | +26.77% | $9,467,111.85 |
-| USELESS/USDT:USDT | +22.31% | $2,217,061.83 |
+| BOME/USDT:USDT | +55.31% | $11,118,867.44 |
+| NIULAI/USDT:USDT | +52.50% | $4,630,814.95 |
+| MAGMA/USDT:USDT | +27.84% | $9,990,016.24 |
+| ORDI/USDT:USDT | +24.61% | $9,957,582.06 |
+| MONAD/USDT:USDT | +23.20% | $2,743,558.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +3.03% |
-| RE/USDT:USDT | below_1h_threshold | +0.75% | +0.93% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.73% | +0.91% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.68% | +0.85% |
-| GALA/USDT:USDT | below_1h_threshold | +0.67% | +0.85% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +3.07% |
+| ACE/USDT:USDT | below_1h_threshold | +1.77% | +1.97% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.58% | +1.79% |
+| RE/USDT:USDT | below_1h_threshold | +1.58% | +1.79% |
+| GALA/USDT:USDT | below_1h_threshold | +0.54% | +0.75% |
 
 ## 7. 次に見るべき不足
 
