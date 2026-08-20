@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T09:11:18.356869+00:00
+- generated_at: 2026-08-20T09:16:19.715703+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12026**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T09:11:11.413261+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.52% price=71931.6
-- Funnel: target 1004 → liquid 200 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-20T09:16:11.133885+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=71726.5
+- Funnel: target 1004 → liquid 201 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +56.41% | $2,569,808.02 |
-| BOME/USDT:USDT | +38.14% | $5,417,155.40 |
-| MAGMA/USDT:USDT | +35.95% | $8,059,594.42 |
-| USELESS/USDT:USDT | +22.10% | $1,816,408.53 |
-| MET/USDT:USDT | +21.50% | $1,069,391.83 |
+| NIULAI/USDT:USDT | +47.36% | $2,636,524.36 |
+| BOME/USDT:USDT | +37.96% | $5,475,696.42 |
+| MAGMA/USDT:USDT | +35.19% | $8,096,302.25 |
+| USELESS/USDT:USDT | +22.26% | $1,823,633.43 |
+| MET/USDT:USDT | +20.84% | $1,070,607.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.69% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.62% | +3.11% |
-| BOME/USDT:USDT | below_1h_threshold | +2.47% | +1.96% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.38% | +1.86% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.31% | +1.79% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.21% | +3.98% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.45% | +2.22% |
+| BOME/USDT:USDT | below_1h_threshold | +2.33% | +2.10% |
+| ASP/USDT:USDT | below_1h_threshold | +2.26% | +2.03% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.08% | +1.85% |
 
 ## 7. 次に見るべき不足
 
