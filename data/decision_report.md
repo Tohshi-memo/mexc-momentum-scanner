@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T16:51:30.562814+00:00
+- generated_at: 2026-08-20T16:56:22.535629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12060**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T16:51:19.188580+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=72612.0
-- Funnel: target 1011 → liquid 203 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1, 4h RSI 87.3 >= 65=1, 4h RSI 72.3 >= 65=1
+- 更新: 2026-08-20T16:56:13.752291+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=72620.0
+- Funnel: target 1011 → liquid 203 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 87.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +8.61% | $1,049,754.18 |
-| PEOPLE/USDT:USDT | +8.02% | $1,371,619.51 |
-| NIULAI/USDT:USDT | +5.98% | $5,998,250.86 |
-| BTW/USDT:USDT | +4.50% | $143,838,663.94 |
-| PIPPIN/USDT:USDT | +3.98% | $1,801,130.83 |
+| CATE/USDT:USDT | +9.84% | $1,053,738.59 |
+| PEOPLE/USDT:USDT | +8.32% | $1,418,704.90 |
+| ALLO/USDT:USDT | +4.64% | $2,375,710.25 |
+| ONG/USDT:USDT | +4.05% | $4,329,973.46 |
+| PIPPIN/USDT:USDT | +3.93% | $1,819,015.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.99% | +3.74% |
-| BTW/USDT:USDT | below_1h_threshold | +3.75% | +3.50% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.54% | +3.29% |
-| ALLO/USDT:USDT | below_1h_threshold | +3.28% | +3.03% |
-| ON/USDT:USDT | below_1h_threshold | +3.02% | +2.76% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.58% | +4.32% |
+| ONG/USDT:USDT | below_1h_threshold | +4.06% | +3.80% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +3.94% | +3.68% |
+| NIULAI/USDT:USDT | below_1h_threshold | +3.74% | +3.48% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.69% | +3.43% |
 
 ## 7. 次に見るべき不足
 
