@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T19:11:20.726427+00:00
+- generated_at: 2026-08-20T19:16:25.367295+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12072**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T19:11:12.117340+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=72438.1
+- 更新: 2026-08-20T19:16:17.085863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=72476.0
 - Funnel: target 1011 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +32.44% | $2,094,119.92 |
-| PEOPLE/USDT:USDT | +9.96% | $2,188,430.23 |
-| ONG/USDT:USDT | +9.26% | $4,729,725.72 |
-| ALLO/USDT:USDT | +7.67% | $4,070,400.79 |
-| ENA/USDT:USDT | +7.49% | $28,171,998.13 |
+| CATE/USDT:USDT | +34.10% | $2,117,641.80 |
+| ONG/USDT:USDT | +10.96% | $4,756,783.59 |
+| PEOPLE/USDT:USDT | +9.84% | $2,219,104.54 |
+| ALLO/USDT:USDT | +9.20% | $4,128,670.14 |
+| ENA/USDT:USDT | +7.73% | $28,654,009.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TURBO/USDT:USDT | below_1h_threshold | +3.06% | +3.00% |
-| AKE/USDT:USDT | below_1h_threshold | +2.49% | +2.43% |
-| ENA/USDT:USDT | below_1h_threshold | +2.07% | +2.02% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.72% | +1.67% |
-| MET/USDT:USDT | below_1h_threshold | +1.65% | +1.59% |
+| AKE/USDT:USDT | below_1h_threshold | +2.76% | +2.66% |
+| TURBO/USDT:USDT | below_1h_threshold | +2.29% | +2.19% |
+| ENA/USDT:USDT | below_1h_threshold | +2.21% | +2.11% |
+| ONG/USDT:USDT | below_1h_threshold | +2.18% | +2.07% |
+| BTW/USDT:USDT | below_1h_threshold | +1.61% | +1.50% |
 
 ## 7. 次に見るべき不足
 
