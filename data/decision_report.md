@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T02:36:27.199452+00:00
+- generated_at: 2026-08-20T02:41:25.074671+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12006**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T02:36:16.633035+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=69388.2
-- Funnel: target 999 → liquid 199 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-20T02:41:14.252746+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=69327.4
+- Funnel: target 999 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +27.05% | $4,884,766.54 |
-| TRUMPOFFICIAL/USDT:USDT | +22.67% | $17,454,808.11 |
-| BASECAT/USDT:USDT | +20.28% | $1,083,355.15 |
-| RE/USDT:USDT | +18.07% | $10,992,209.61 |
-| ON/USDT:USDT | +17.57% | $4,767,627.28 |
+| MAGMA/USDT:USDT | +26.95% | $4,937,014.17 |
+| TRUMPOFFICIAL/USDT:USDT | +22.67% | $17,466,803.80 |
+| ON/USDT:USDT | +19.39% | $4,818,310.91 |
+| BASECAT/USDT:USDT | +19.10% | $1,086,005.71 |
+| RE/USDT:USDT | +18.11% | $11,149,873.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.15% | +4.58% |
-| ASP/USDT:USDT | below_1h_threshold | +3.20% | +3.63% |
-| KORU/USDT:USDT | below_1h_threshold | +2.60% | +3.03% |
-| ON/USDT:USDT | below_1h_threshold | +2.47% | +2.91% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.27% | +2.71% |
+| CSOPSAMSUNG2L/USDT:USDT | below_1h_threshold | +4.15% | +4.67% |
+| ON/USDT:USDT | below_1h_threshold | +4.06% | +4.58% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.63% | +3.15% |
+| KORU/USDT:USDT | below_1h_threshold | +2.60% | +3.12% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.80% | +2.32% |
 
 ## 7. 次に見るべき不足
 
