@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T00:41:25.386462+00:00
+- generated_at: 2026-08-20T00:46:21.046530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12003**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T00:41:16.694595+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=69564.0
-- Funnel: target 999 → liquid 199 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-20T00:46:12.443502+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=69614.7
+- Funnel: target 999 → liquid 201 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +35.94% | $3,572,157.65 |
-| TRUMPOFFICIAL/USDT:USDT | +25.38% | $14,355,579.94 |
-| RE/USDT:USDT | +18.59% | $10,173,608.05 |
-| HYPE/USDT:USDT | +14.44% | $483,949,510.39 |
-| ON/USDT:USDT | +13.51% | $4,836,866.24 |
+| MAGMA/USDT:USDT | +27.63% | $3,707,360.40 |
+| TRUMPOFFICIAL/USDT:USDT | +24.75% | $14,474,994.82 |
+| RE/USDT:USDT | +20.17% | $10,274,151.06 |
+| HYPE/USDT:USDT | +14.59% | $484,474,385.61 |
+| ON/USDT:USDT | +12.91% | $4,849,993.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.80% | +3.43% |
-| ON/USDT:USDT | below_1h_threshold | +3.35% | +2.99% |
-| ICP/USDT:USDT | below_1h_threshold | +2.73% | +2.36% |
-| BR/USDT:USDT | below_1h_threshold | +2.53% | +2.17% |
-| UNI/USDT:USDT | below_1h_threshold | +2.06% | +1.70% |
+| ICP/USDT:USDT | below_1h_threshold | +2.86% | +2.42% |
+| ON/USDT:USDT | below_1h_threshold | +2.62% | +2.18% |
+| BR/USDT:USDT | below_1h_threshold | +2.50% | +2.06% |
+| RE/USDT:USDT | below_1h_threshold | +2.40% | +1.96% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.24% | +1.80% |
 
 ## 7. 次に見るべき不足
 
