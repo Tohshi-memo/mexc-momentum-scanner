@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T00:51:24.036923+00:00
+- generated_at: 2026-08-20T00:56:22.777624+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12003**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.97** / 初期 $100.00 (+16.97%)
-- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1720件
+- 確定: 1753件 (Win 520 / Loss 669 / Flat 564) / pending 0件 / skip 1721件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000488 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.97
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T00:51:15.412547+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.47% price=69633.1
-- Funnel: target 999 → liquid 202 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T00:56:13.942521+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=69462.9
+- Funnel: target 999 → liquid 202 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +27.66% | $3,806,599.16 |
-| TRUMPOFFICIAL/USDT:USDT | +25.10% | $14,518,460.00 |
-| RE/USDT:USDT | +18.22% | $10,294,907.47 |
-| HYPE/USDT:USDT | +13.98% | $485,427,290.22 |
-| ON/USDT:USDT | +12.74% | $4,860,751.64 |
+| MAGMA/USDT:USDT | +26.30% | $3,918,108.57 |
+| TRUMPOFFICIAL/USDT:USDT | +25.31% | $14,650,877.86 |
+| RE/USDT:USDT | +17.79% | $10,327,132.52 |
+| ON/USDT:USDT | +13.80% | $4,865,110.73 |
+| HYPE/USDT:USDT | +13.14% | $486,631,333.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.68% | +2.22% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.62% | +2.15% |
-| ON/USDT:USDT | below_1h_threshold | +2.58% | +2.12% |
-| ICP/USDT:USDT | below_1h_threshold | +2.03% | +1.57% |
-| UNI/USDT:USDT | below_1h_threshold | +1.87% | +1.41% |
+| ON/USDT:USDT | below_1h_threshold | +3.59% | +3.36% |
+| CYS/USDT:USDT | below_1h_threshold | +3.32% | +3.10% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.50% | +2.28% |
+| BR/USDT:USDT | below_1h_threshold | +2.07% | +1.85% |
+| UNI/USDT:USDT | below_1h_threshold | +1.95% | +1.73% |
 
 ## 7. 次に見るべき不足
 
