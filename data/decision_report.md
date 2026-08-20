@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T04:31:26.473294+00:00
+- generated_at: 2026-08-20T04:36:24.672937+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12012**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.76** / 初期 $100.00 (+16.76%)
-- 確定: 1754件 (Win 520 / Loss 670 / Flat 564) / pending 3件 / skip 1728件
+- 確定: 1754件 (Win 520 / Loss 670 / Flat 564) / pending 3件 / skip 1729件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000511 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MINIMAXSTOCK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T04:31:15.705890+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=69332.2
-- Funnel: target 999 → liquid 201 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-20T04:36:15.791430+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=69263.4
+- Funnel: target 999 → liquid 202 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +34.70% | $1,111,900.24 |
-| MAGMA/USDT:USDT | +28.28% | $5,956,458.47 |
-| RE/USDT:USDT | +16.80% | $12,098,603.85 |
-| ON/USDT:USDT | +16.34% | $4,928,958.86 |
-| TRUMPOFFICIAL/USDT:USDT | +15.95% | $19,719,758.88 |
+| BASECAT/USDT:USDT | +31.06% | $1,118,539.68 |
+| MAGMA/USDT:USDT | +28.45% | $5,992,067.03 |
+| RED/USDT:USDT | +20.86% | $1,098,432.38 |
+| ON/USDT:USDT | +16.94% | $4,933,503.16 |
+| RE/USDT:USDT | +14.66% | $12,149,095.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.86% |
-| BOME/USDT:USDT | below_1h_threshold | +2.03% | +1.81% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.88% | +1.66% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.86% | +1.65% |
-| MINIMAXSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.36% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.90% | +3.79% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.98% | +2.86% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.69% | +2.57% |
+| LIT/USDT:USDT | below_1h_threshold | +2.18% | +2.07% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
 
 ## 7. 次に見るべき不足
 
