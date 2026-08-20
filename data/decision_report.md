@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T12:46:36.351437+00:00
+- generated_at: 2026-08-20T12:51:34.175905+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12044**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T12:46:22.559755+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=71615.3
-- Funnel: target 1011 → liquid 203 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.4 >= 65=1
+- 更新: 2026-08-20T12:51:22.729638+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=71657.6
+- Funnel: target 1011 → liquid 204 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +53.13% | $4,917,397.94 |
-| BOME/USDT:USDT | +45.69% | $12,734,114.37 |
-| MAGMA/USDT:USDT | +29.35% | $10,141,335.44 |
-| NEIROCTO/USDT:USDT | +27.99% | $1,094,844.50 |
-| ON/USDT:USDT | +22.44% | $2,955,681.14 |
+| NIULAI/USDT:USDT | +53.52% | $4,948,037.48 |
+| BOME/USDT:USDT | +47.43% | $12,897,834.14 |
+| MAGMA/USDT:USDT | +28.31% | $10,170,011.17 |
+| NEIROCTO/USDT:USDT | +26.02% | $1,145,385.56 |
+| ON/USDT:USDT | +22.74% | $2,980,191.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEIROCTO/USDT:USDT | below_1h_threshold | +4.56% | +4.95% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +3.25% |
-| AERO/USDT:USDT | below_1h_threshold | +1.58% | +1.97% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.30% | +1.69% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +1.07% | +1.46% |
+| RE/USDT:USDT | below_1h_threshold | +4.61% | +4.94% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +3.03% | +3.36% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.86% | +3.19% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.47% | +2.80% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.07% | +1.40% |
 
 ## 7. 次に見るべき不足
 
