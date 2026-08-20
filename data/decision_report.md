@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T16:16:17.244016+00:00
+- generated_at: 2026-08-20T16:21:23.130871+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12058**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.69** / 初期 $100.00 (+16.69%)
-- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 1件 / skip 1773件
+- 確定: 1757件 (Win 521 / Loss 672 / Flat 564) / pending 2件 / skip 1773件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000072 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUMPFUN/USDT:USDT `MARKET` EXPIRED account -0.07% 残高後 $116.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T16:16:09.203599+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=72322.7
-- Funnel: target 1011 → liquid 202 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-20T16:21:14.225106+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=72289.9
+- Funnel: target 1011 → liquid 203 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PEOPLE/USDT:USDT | +4.53% | $1,120,372.98 |
-| ON/USDT:USDT | +2.77% | $3,065,696.93 |
-| PIPPIN/USDT:USDT | +2.64% | $1,482,705.04 |
-| H/USDT:USDT | +2.52% | $2,559,905.47 |
-| ONG/USDT:USDT | +2.32% | $4,208,520.62 |
+| CATE/USDT:USDT | +9.05% | $1,006,890.49 |
+| ON/USDT:USDT | +3.11% | $3,101,806.05 |
+| ONG/USDT:USDT | +2.90% | $4,240,692.13 |
+| PIPPIN/USDT:USDT | +2.64% | $1,498,024.26 |
+| PEOPLE/USDT:USDT | +2.19% | $1,177,490.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEOPLE/USDT:USDT | below_1h_threshold | +4.54% | +4.69% |
-| ON/USDT:USDT | below_1h_threshold | +2.74% | +2.89% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.64% | +2.79% |
-| H/USDT:USDT | below_1h_threshold | +2.57% | +2.72% |
-| ONG/USDT:USDT | below_1h_threshold | +2.14% | +2.29% |
+| ON/USDT:USDT | below_1h_threshold | +3.12% | +3.31% |
+| ONG/USDT:USDT | below_1h_threshold | +2.91% | +3.10% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +2.64% | +2.84% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +2.20% | +2.39% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.01% | +2.21% |
 
 ## 7. 次に見るべき不足
 
