@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T04:56:28.850356+00:00
+- generated_at: 2026-08-20T05:01:17.345583+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12012**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T04:56:17.294573+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=69488.9
-- Funnel: target 999 → liquid 202 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-20T05:01:10.538336+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=69484.5
+- Funnel: target 999 → liquid 201 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +33.64% | $1,137,986.11 |
-| MAGMA/USDT:USDT | +26.11% | $6,333,624.72 |
-| RED/USDT:USDT | +19.35% | $1,312,461.23 |
-| ON/USDT:USDT | +17.40% | $4,946,763.34 |
-| MRNASTOCK/USDT:USDT | +15.97% | $4,462,824.94 |
+| BASECAT/USDT:USDT | +37.74% | $1,124,589.66 |
+| MAGMA/USDT:USDT | +28.29% | $6,389,596.21 |
+| RED/USDT:USDT | +18.92% | $1,259,646.16 |
+| MRNASTOCK/USDT:USDT | +16.40% | $4,469,946.83 |
+| ON/USDT:USDT | +16.39% | $4,845,938.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTER/USDT:USDT | below_1h_threshold | +3.20% | +2.76% |
-| LIT/USDT:USDT | below_1h_threshold | +3.08% | +2.63% |
-| BOME/USDT:USDT | below_1h_threshold | +2.49% | +2.05% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.07% | +1.63% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.03% | +1.58% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
+| CYS/USDT:USDT | below_1h_threshold | +0.77% | +0.76% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
+| AERO/USDT:USDT | below_1h_threshold | +0.22% | +0.21% |
+| ETC/USDT:USDT | below_1h_threshold | +0.21% | +0.21% |
 
 ## 7. 次に見るべき不足
 
