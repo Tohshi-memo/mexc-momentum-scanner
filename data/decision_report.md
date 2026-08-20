@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-20T06:56:28.115996+00:00
+- generated_at: 2026-08-20T07:01:27.407733+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12015**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T06:56:18.838043+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=69806.0
-- Funnel: target 1004 → liquid 201 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.2 >= 65=1, 4h RSI 67.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-20T07:01:18.752728+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=69805.1
+- Funnel: target 1004 → liquid 196 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +30.37% | $7,114,322.45 |
-| BASECAT/USDT:USDT | +28.95% | $1,197,170.14 |
-| RED/USDT:USDT | +26.23% | $1,834,690.12 |
-| BOME/USDT:USDT | +19.81% | $1,506,216.70 |
-| LIT/USDT:USDT | +17.43% | $8,750,686.63 |
+| MAGMA/USDT:USDT | +30.97% | $7,135,899.78 |
+| BASECAT/USDT:USDT | +28.25% | $1,187,690.37 |
+| RED/USDT:USDT | +26.34% | $1,842,376.18 |
+| BOME/USDT:USDT | +20.70% | $1,520,794.75 |
+| LIT/USDT:USDT | +19.20% | $8,745,168.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RED/USDT:USDT | below_relative_strength | +5.48% | +4.91% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.81% | +3.24% |
-| BICO/USDT:USDT | below_1h_threshold | +2.89% | +2.32% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.71% | +2.14% |
-| SPX/USDT:USDT | below_1h_threshold | +2.64% | +2.07% |
+| KORU/USDT:USDT | below_1h_threshold | +2.40% | +2.45% |
+| MUU/USDT:USDT | below_1h_threshold | +1.89% | +1.94% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.86% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.62% | +1.67% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.49% | +1.53% |
 
 ## 7. 次に見るべき不足
 
