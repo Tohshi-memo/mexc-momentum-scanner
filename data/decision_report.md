@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T02:21:21.807850+00:00
+- generated_at: 2026-08-21T02:26:25.879689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12125**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.06** / 初期 $100.00 (+18.06%)
-- 確定: 1810件 (Win 537 / Loss 683 / Flat 590) / pending 4件 / skip 1783件
+- 確定: 1810件 (Win 537 / Loss 683 / Flat 590) / pending 5件 / skip 1783件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000204 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $118.06
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T02:21:12.848421+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.52% price=74709.7
-- Funnel: target 1011 → liquid 192 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.1 >= 65=1
+- 更新: 2026-08-21T02:26:16.387881+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=74768.5
+- Funnel: target 1011 → liquid 192 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1, 4h RSI 93.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +89.43% | $3,993,695.44 |
-| ONG/USDT:USDT | +76.38% | $29,051,222.95 |
-| ONT/USDT:USDT | +21.54% | $3,469,386.68 |
-| ENA/USDT:USDT | +19.14% | $52,368,206.90 |
-| PEOPLE/USDT:USDT | +13.21% | $4,334,888.74 |
+| CATE/USDT:USDT | +91.46% | $4,018,917.53 |
+| ONG/USDT:USDT | +80.51% | $29,256,659.09 |
+| ONT/USDT:USDT | +21.77% | $3,484,491.42 |
+| ENA/USDT:USDT | +20.21% | $52,556,199.21 |
+| PEOPLE/USDT:USDT | +14.15% | $4,352,022.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.54% | +5.07% |
-| EYE/USDT:USDT | below_1h_threshold | +4.08% | +4.60% |
-| ONG/USDT:USDT | below_1h_threshold | +3.31% | +3.83% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.03% | +3.56% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +2.73% | +3.25% |
+| CRV/USDT:USDT | below_1h_threshold | +4.23% | +4.68% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.09% | +4.53% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.83% | +4.27% |
+| EYE/USDT:USDT | below_1h_threshold | +3.35% | +3.80% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.25% | +3.69% |
 
 ## 7. 次に見るべき不足
 
