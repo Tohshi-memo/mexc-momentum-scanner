@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T21:46:26.190221+00:00
+- generated_at: 2026-08-21T21:51:29.084889+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12262**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T21:46:15.839192+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.10% price=78333.6
-- Funnel: target 1018 → liquid 219 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.8 >= 65=1, 4h RSI 88.6 >= 65=1
+- 更新: 2026-08-21T21:51:17.754372+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.02% price=78267.1
+- Funnel: target 1018 → liquid 219 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +200.51% | $2,622,724.19 |
-| CATE/USDT:USDT | +36.46% | $10,870,020.52 |
-| JIMOTHY/USDT:USDT | +36.29% | $1,553,028.74 |
-| BLESS/USDT:USDT | +12.97% | $9,878,254.71 |
-| AGI/USDT:USDT | +12.88% | $1,479,220.08 |
+| BASECAT/USDT:USDT | +198.55% | $2,646,949.37 |
+| CATE/USDT:USDT | +35.42% | $10,875,343.22 |
+| JIMOTHY/USDT:USDT | +32.53% | $1,559,927.75 |
+| AGI/USDT:USDT | +14.10% | $1,482,449.81 |
+| BLESS/USDT:USDT | +12.21% | $9,963,272.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_relative_strength | +5.42% | +4.32% |
-| ENS/USDT:USDT | below_1h_threshold | +4.85% | +3.75% |
-| FLOKI/USDT:USDT | below_1h_threshold | +4.81% | +3.71% |
-| DOGE/USDT:USDT | below_1h_threshold | +4.31% | +3.21% |
-| ETC/USDT:USDT | below_1h_threshold | +3.52% | +2.42% |
+| FLOKI/USDT:USDT | below_relative_strength | +5.79% | +4.77% |
+| ENS/USDT:USDT | below_1h_threshold | +4.83% | +3.81% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.65% | +3.63% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.59% | +3.58% |
+| DOGE/USDT:USDT | below_1h_threshold | +4.55% | +3.54% |
 
 ## 7. 次に見るべき不足
 
