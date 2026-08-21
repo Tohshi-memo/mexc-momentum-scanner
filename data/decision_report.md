@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T19:21:20.425385+00:00
+- generated_at: 2026-08-21T19:26:14.972554+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12243**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T19:21:14.306869+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77047.0
-- Funnel: target 1018 → liquid 215 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-21T19:26:07.836377+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=77231.2
+- Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +174.63% | $1,353,643.61 |
-| JIMOTHY/USDT:USDT | +36.02% | $1,284,713.53 |
-| CATE/USDT:USDT | +28.07% | $10,840,690.65 |
-| BICO/USDT:USDT | +9.96% | $3,277,472.99 |
-| GPS/USDT:USDT | +9.12% | $4,362,853.82 |
+| BASECAT/USDT:USDT | +171.44% | $1,421,916.96 |
+| JIMOTHY/USDT:USDT | +37.45% | $1,309,140.70 |
+| CATE/USDT:USDT | +21.73% | $10,877,273.31 |
+| BICO/USDT:USDT | +8.91% | $3,322,163.20 |
+| LIT/USDT:USDT | +8.66% | $11,055,367.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +3.84% | +3.92% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.91% | +2.00% |
-| ACE/USDT:USDT | below_1h_threshold | +1.80% | +1.88% |
-| AKE/USDT:USDT | below_1h_threshold | +1.34% | +1.43% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.86% | +3.70% |
+| COTI/USDT:USDT | below_1h_threshold | +3.60% | +3.45% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.67% | +2.51% |
+| ACE/USDT:USDT | below_1h_threshold | +2.35% | +2.19% |
+| STX/USDT:USDT | below_1h_threshold | +1.60% | +1.45% |
 
 ## 7. 次に見るべき不足
 
