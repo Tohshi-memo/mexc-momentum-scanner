@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T21:11:26.226363+00:00
+- generated_at: 2026-08-21T21:16:27.364464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12261**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T21:11:13.493229+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77546.4
-- Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-21T21:16:15.613223+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=77596.2
+- Funnel: target 1018 → liquid 217 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +187.62% | $2,449,160.13 |
-| CATE/USDT:USDT | +33.01% | $10,716,221.03 |
-| JIMOTHY/USDT:USDT | +30.16% | $1,517,435.20 |
-| MAGMA/USDT:USDT | +15.49% | $2,108,402.59 |
-| AGI/USDT:USDT | +13.63% | $1,345,595.08 |
+| BASECAT/USDT:USDT | +200.51% | $2,484,923.00 |
+| CATE/USDT:USDT | +32.16% | $10,749,835.34 |
+| JIMOTHY/USDT:USDT | +31.58% | $1,520,149.13 |
+| AGI/USDT:USDT | +15.94% | $1,374,157.80 |
+| MAGMA/USDT:USDT | +13.69% | $2,137,472.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.06% | +2.98% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.42% | +2.33% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.43% | +1.35% |
-| PROM/USDT:USDT | below_1h_threshold | +1.28% | +1.20% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.27% | +1.19% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.09% | +3.94% |
+| US/USDT:USDT | below_1h_threshold | +3.36% | +3.21% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.44% | +2.29% |
+| AGI/USDT:USDT | below_1h_threshold | +2.19% | +2.04% |
+| PROM/USDT:USDT | below_1h_threshold | +2.07% | +1.92% |
 
 ## 7. 次に見るべき不足
 
