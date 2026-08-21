@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T23:26:20.013567+00:00
+- generated_at: 2026-08-21T23:31:09.427364+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12272**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T23:26:09.858718+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=78633.7
+- 更新: 2026-08-21T23:31:00.869525+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78400.0
 - Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +194.84% | $2,954,069.54 |
-| CATE/USDT:USDT | +60.51% | $11,044,252.75 |
-| JIMOTHY/USDT:USDT | +28.47% | $1,592,530.05 |
-| FLOKI/USDT:USDT | +14.36% | $5,514,140.17 |
-| MAGMA/USDT:USDT | +14.23% | $2,541,533.77 |
+| BASECAT/USDT:USDT | +183.29% | $2,967,434.26 |
+| CATE/USDT:USDT | +60.11% | $11,080,511.37 |
+| JIMOTHY/USDT:USDT | +24.87% | $1,594,345.99 |
+| MAGMA/USDT:USDT | +13.65% | $2,551,950.83 |
+| PEPE/USDT:USDT | +13.52% | $491,947,403.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +4.58% | +4.33% |
-| DASH/USDT:USDT | below_1h_threshold | +2.36% | +2.10% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.35% | +2.10% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.27% | +2.02% |
-| FET/USDT:USDT | below_1h_threshold | +2.13% | +1.88% |
+| AR/USDT:USDT | below_1h_threshold | +4.26% | +4.31% |
+| ENS/USDT:USDT | below_1h_threshold | +2.95% | +3.00% |
+| ETC/USDT:USDT | below_1h_threshold | +2.63% | +2.67% |
+| CRV/USDT:USDT | below_1h_threshold | +2.46% | +2.50% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.33% | +2.38% |
 
 ## 7. 次に見るべき不足
 
