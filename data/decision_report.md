@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-20T23:56:22.759804+00:00
+- generated_at: 2026-08-21T00:01:18.095821+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12106**
+- closed shadow trades: **12107**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.83% / filled 20/20。**
-- 全期間 MARKET基準: n=12106, expectancy=+0.00%
+- 全期間 MARKET基準: n=12107, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.83%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,55 +46,54 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$648.57** / 初期 $100.00 (+548.57%)
-- 確定: 4319件 (Win 1325 / Loss 1413 / Flat 1581) / skip 4348件
-- 成長率目線: 平均log +0.000433 / 幾何平均 +0.043% per trade / maxDD +8.46%
+- 残高: **$645.33** / 初期 $100.00 (+545.33%)
+- 確定: 4320件 (Win 1325 / Loss 1414 / Flat 1581) / skip 4348件
+- 成長率目線: 平均log +0.000432 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CATE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $648.57
+- 最新: BEAT/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $645.33
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.16** / 初期 $100.00 (+54.16%)
-- 確定: 1822件 (Win 502 / Loss 429 / Flat 891) / skip 3695件
+- 確定: 1822件 (Win 502 / Loss 429 / Flat 891) / skip 3696件
 - 成長率目線: 平均log +0.000238 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1001 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $154.16
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$117.67** / 初期 $100.00 (+17.67%)
-- 確定: 1792件 (Win 532 / Loss 679 / Flat 581) / pending 2件 / skip 1782件
+- 残高: **$117.47** / 初期 $100.00 (+17.47%)
+- 確定: 1793件 (Win 532 / Loss 680 / Flat 581) / pending 1件 / skip 1782件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000214 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: CATE/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $117.67
+- 最新: BEAT/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $117.47
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-20T23:56:11.797479+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.52% price=73025.3
-- Funnel: target 1011 → liquid 194 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-21T00:01:07.873036+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=73072.8
+- Funnel: target 1011 → liquid 192 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +46.67% | $3,351,307.26 |
-| ONT/USDT:USDT | +17.17% | $2,903,660.74 |
-| SANTOS/USDT:USDT | +15.65% | $3,074,446.68 |
-| ENA/USDT:USDT | +15.38% | $43,248,731.10 |
-| ONG/USDT:USDT | +15.28% | $15,401,608.91 |
+| CATE/USDT:USDT | +45.21% | $3,336,800.61 |
+| ONT/USDT:USDT | +15.43% | $3,063,335.33 |
+| ENA/USDT:USDT | +15.02% | $42,878,276.12 |
+| SANTOS/USDT:USDT | +14.16% | $3,074,237.19 |
+| ONG/USDT:USDT | +12.93% | $16,278,068.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +4.53% | +4.01% |
-| PROM/USDT:USDT | below_1h_threshold | +4.24% | +3.72% |
-| BTW/USDT:USDT | below_1h_threshold | +2.39% | +1.87% |
-| TUT/USDT:USDT | below_1h_threshold | +2.33% | +1.81% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.31% | +1.79% |
+| CATE/USDT:USDT | below_1h_threshold | +0.87% | +0.76% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +0.85% | +0.74% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +0.66% | +0.55% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.65% | +0.54% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.62% | +0.51% |
 
 ## 7. 次に見るべき不足
 
