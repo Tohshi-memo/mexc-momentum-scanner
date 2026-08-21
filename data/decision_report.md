@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T07:46:23.264028+00:00
+- generated_at: 2026-08-21T07:51:36.151571+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12161**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.21** / 初期 $100.00 (+17.21%)
-- 確定: 1822件 (Win 540 / Loss 691 / Flat 591) / pending 2件 / skip 1809件
+- 確定: 1822件 (Win 540 / Loss 691 / Flat 591) / pending 2件 / skip 1810件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000193 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONG/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $117.21
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T07:46:13.237071+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.26% price=76565.9
-- Funnel: target 1015 → liquid 194 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=42, below_relative_strength=5, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.0 >= 65=1, 4h RSI 76.3 >= 65=1, 4h RSI 87.5 >= 65=1
+- 更新: 2026-08-21T07:51:27.707338+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.12% price=76456.8
+- Funnel: target 1015 → liquid 194 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=43, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.0 >= 65=1, 4h RSI 76.0 >= 65=1, 4h RSI 89.3 >= 65=1, 4h RSI 88.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +95.36% | $5,733,990.01 |
-| ONG/USDT:USDT | +38.80% | $42,493,549.52 |
-| ENA/USDT:USDT | +31.29% | $79,167,829.94 |
-| NIULAI/USDT:USDT | +29.44% | $7,029,649.26 |
-| BOME/USDT:USDT | +26.33% | $21,233,767.27 |
+| CATE/USDT:USDT | +100.19% | $5,747,879.02 |
+| ONG/USDT:USDT | +39.98% | $42,581,901.29 |
+| NIULAI/USDT:USDT | +31.43% | $7,067,907.84 |
+| ENA/USDT:USDT | +30.20% | $79,903,327.38 |
+| NEIROCTO/USDT:USDT | +25.26% | $3,573,769.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_relative_strength | +5.67% | +4.41% |
-| LINK/USDT:USDT | below_relative_strength | +5.51% | +4.25% |
-| 1000BONK/USDT:USDT | below_relative_strength | +5.40% | +4.14% |
-| GALA/USDT:USDT | below_relative_strength | +5.23% | +3.97% |
-| PEOPLE/USDT:USDT | below_relative_strength | +5.14% | +3.88% |
+| CATE/USDT:USDT | below_relative_strength | +5.61% | +4.50% |
+| GALA/USDT:USDT | below_relative_strength | +5.47% | +4.36% |
+| LINK/USDT:USDT | below_relative_strength | +5.32% | +4.20% |
+| PROM/USDT:USDT | below_1h_threshold | +4.99% | +3.87% |
+| EYE/USDT:USDT | below_1h_threshold | +4.90% | +3.78% |
 
 ## 7. 次に見るべき不足
 
