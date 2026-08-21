@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T08:26:20.672908+00:00
+- generated_at: 2026-08-21T08:31:18.832502+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12165**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T08:26:10.212158+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.03% price=77100.0
-- Funnel: target 1014 → liquid 194 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-21T08:31:11.876993+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.20% price=77223.5
+- Funnel: target 1014 → liquid 195 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +115.62% | $6,065,999.49 |
-| ENA/USDT:USDT | +32.18% | $85,067,763.11 |
-| BOME/USDT:USDT | +29.50% | $20,437,682.09 |
-| NEIROCTO/USDT:USDT | +26.33% | $3,646,073.22 |
-| BTW/USDT:USDT | +23.51% | $82,606,683.19 |
+| CATE/USDT:USDT | +115.80% | $6,078,343.38 |
+| ENA/USDT:USDT | +32.19% | $86,089,624.35 |
+| NEIROCTO/USDT:USDT | +26.66% | $3,657,247.26 |
+| BOME/USDT:USDT | +26.12% | $20,543,449.58 |
+| PEOPLE/USDT:USDT | +24.81% | $4,842,349.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +3.30% | +2.27% |
-| BOME/USDT:USDT | below_1h_threshold | +3.01% | +1.98% |
-| ASTER/USDT:USDT | below_1h_threshold | +2.91% | +1.87% |
-| ENA/USDT:USDT | below_1h_threshold | +2.90% | +1.86% |
-| EYE/USDT:USDT | below_1h_threshold | +2.43% | +1.40% |
+| EYE/USDT:USDT | below_1h_threshold | +4.35% | +3.15% |
+| XRP/USDT:USDT | below_1h_threshold | +3.16% | +1.96% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.89% | +1.70% |
+| ENA/USDT:USDT | below_1h_threshold | +2.89% | +1.69% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.68% | +1.48% |
 
 ## 7. 次に見るべき不足
 
