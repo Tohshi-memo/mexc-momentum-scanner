@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T14:06:19.136270+00:00
+- generated_at: 2026-08-21T14:11:25.333603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12201**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T14:06:10.469395+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.42% price=76920.0
-- Funnel: target 1018 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-21T14:11:19.216294+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=77037.3
+- Funnel: target 1018 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +123.49% | $8,451,050.05 |
-| ENA/USDT:USDT | +40.25% | $151,797,137.49 |
-| ZORA/USDT:USDT | +37.93% | $2,226,931.80 |
-| HEMI/USDT:USDT | +37.01% | $5,618,390.87 |
-| TUT/USDT:USDT | +32.65% | $7,788,975.01 |
+| CATE/USDT:USDT | +118.39% | $8,477,713.79 |
+| ENA/USDT:USDT | +41.67% | $152,452,084.37 |
+| ZORA/USDT:USDT | +37.78% | $2,256,203.62 |
+| TUT/USDT:USDT | +33.80% | $7,941,297.87 |
+| HEMI/USDT:USDT | +33.25% | $5,739,112.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.13% | +2.55% |
-| BB/USDT:USDT | below_1h_threshold | +1.09% | +1.51% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.02% | +1.44% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.98% | +1.41% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +0.71% | +1.13% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.05% | +2.32% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.82% | +2.09% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.12% | +1.39% |
+| BASED/USDT:USDT | below_1h_threshold | +1.08% | +1.35% |
+| TRB/USDT:USDT | below_1h_threshold | +0.95% | +1.21% |
 
 ## 7. 次に見るべき不足
 
