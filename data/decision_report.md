@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T12:51:41.325522+00:00
+- generated_at: 2026-08-21T12:56:41.219283+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12194**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1845件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1848件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T12:51:26.336711+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.88% price=77424.9
-- Funnel: target 1018 → liquid 207 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=2, 4h RSI 92.7 >= 65=1
+- 更新: 2026-08-21T12:56:26.959746+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.60% price=77209.7
+- Funnel: target 1018 → liquid 209 → pre 50 → checked 50 → surge 7 → strict 1
+- Surge前reject: below_1h_threshold=42, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.3 >= 65=1, 4h RSI 80.3 >= 65=1, 4h RSI 82.0 >= 65=1, 4h RSI 85.4 >= 65=1, 4h RSI 73.6 >= 65=1, 4h RSI 80.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +112.14% | $7,802,407.19 |
-| HEMI/USDT:USDT | +38.68% | $5,096,702.92 |
-| ENA/USDT:USDT | +35.77% | $139,539,311.72 |
-| ZORA/USDT:USDT | +33.61% | $1,202,385.86 |
-| BB/USDT:USDT | +26.03% | $6,026,452.68 |
+| CATE/USDT:USDT | +117.99% | $7,884,265.23 |
+| ENA/USDT:USDT | +36.02% | $140,561,737.19 |
+| ZORA/USDT:USDT | +35.18% | $1,290,157.40 |
+| HEMI/USDT:USDT | +31.65% | $5,230,954.36 |
+| BB/USDT:USDT | +25.82% | $6,056,793.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_relative_strength | +5.56% | +4.68% |
-| CFX/USDT:USDT | below_1h_threshold | +4.49% | +3.61% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.33% | +3.45% |
-| TRB/USDT:USDT | below_1h_threshold | +3.69% | +2.80% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.62% | +2.73% |
+| BLESS/USDT:USDT | below_relative_strength | +5.53% | +4.92% |
+| TRB/USDT:USDT | below_1h_threshold | +4.52% | +3.92% |
+| CATE/USDT:USDT | below_1h_threshold | +3.77% | +3.17% |
+| AVNT/USDT:USDT | below_1h_threshold | +3.68% | +3.08% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.25% | +2.65% |
 
 ## 7. 次に見るべき不足
 
