@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T09:51:43.908421+00:00
+- generated_at: 2026-08-21T09:56:37.440238+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12177**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T09:51:26.048550+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.42% price=78149.0
+- 更新: 2026-08-21T09:56:21.635998+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.58% price=78019.1
 - Funnel: target 1014 → liquid 201 → pre 50 → checked 50 → surge 4 → strict 3
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 84.2 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +117.73% | $6,643,508.66 |
-| ENA/USDT:USDT | +37.26% | $110,987,490.87 |
-| PEOPLE/USDT:USDT | +29.38% | $5,743,458.86 |
-| NEIROCTO/USDT:USDT | +24.36% | $4,023,100.73 |
-| TURBO/USDT:USDT | +20.04% | $1,708,751.91 |
+| CATE/USDT:USDT | +117.45% | $6,670,647.96 |
+| ENA/USDT:USDT | +36.50% | $111,561,840.30 |
+| PEOPLE/USDT:USDT | +29.33% | $5,787,237.10 |
+| NEIROCTO/USDT:USDT | +24.95% | $4,045,996.15 |
+| TURBO/USDT:USDT | +19.93% | $1,758,823.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +3.15% | +4.57% |
-| TURBO/USDT:USDT | below_1h_threshold | +2.55% | +3.97% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.30% | +3.72% |
-| BTW/USDT:USDT | below_1h_threshold | +2.29% | +3.71% |
-| CATE/USDT:USDT | below_1h_threshold | +2.23% | +3.65% |
+| BTW/USDT:USDT | below_1h_threshold | +3.87% | +5.45% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.35% | +4.94% |
+| TURBO/USDT:USDT | below_1h_threshold | +2.83% | +4.42% |
+| CATE/USDT:USDT | below_1h_threshold | +1.97% | +3.55% |
+| ONG/USDT:USDT | below_1h_threshold | +1.80% | +3.38% |
 
 ## 7. 次に見るべき不足
 
