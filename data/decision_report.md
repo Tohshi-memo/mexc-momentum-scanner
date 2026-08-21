@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T15:01:15.679724+00:00
+- generated_at: 2026-08-21T15:06:17.148357+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12204**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T15:01:08.567597+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77365.6
+- 更新: 2026-08-21T15:06:08.520996+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=77600.9
 - Funnel: target 1018 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +102.16% | $8,666,572.51 |
-| ENA/USDT:USDT | +46.18% | $163,090,383.35 |
-| ZORA/USDT:USDT | +31.56% | $2,765,734.68 |
-| HEMI/USDT:USDT | +27.69% | $5,934,686.43 |
-| TUT/USDT:USDT | +26.80% | $8,535,162.60 |
+| CATE/USDT:USDT | +107.32% | $8,700,804.78 |
+| ENA/USDT:USDT | +46.93% | $164,465,583.27 |
+| ZORA/USDT:USDT | +33.69% | $2,830,113.70 |
+| NEIROCTO/USDT:USDT | +28.83% | $3,080,454.24 |
+| PEOPLE/USDT:USDT | +26.42% | $6,775,353.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.44% | +1.48% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.66% | +0.70% |
-| NIL/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
-| CATE/USDT:USDT | below_1h_threshold | +0.59% | +0.63% |
+| CATE/USDT:USDT | below_1h_threshold | +3.13% | +2.87% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +2.84% | +2.58% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.52% | +1.26% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.40% | +1.13% |
+| BTW/USDT:USDT | below_1h_threshold | +1.18% | +0.91% |
 
 ## 7. 次に見るべき不足
 
