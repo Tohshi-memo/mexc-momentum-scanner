@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-21T13:46:28.209667+00:00
+- generated_at: 2026-08-21T13:51:24.900035+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12200**
+- closed shadow trades: **12201**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.22% / filled 20/20。**
-- 全期間 MARKET基準: n=12200, expectancy=-0.00%
+- 全期間 MARKET基準: n=12201, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.22%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$640.35** / 初期 $100.00 (+540.35%)
-- 確定: 4362件 (Win 1337 / Loss 1434 / Flat 1591) / skip 4399件
+- 確定: 4362件 (Win 1337 / Loss 1434 / Flat 1591) / skip 4400件
 - 成長率目線: 平均log +0.000426 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BB/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $640.35
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$154.16** / 初期 $100.00 (+54.16%)
-- 確定: 1823件 (Win 502 / Loss 429 / Flat 892) / skip 3788件
+- 確定: 1823件 (Win 502 / Loss 429 / Flat 892) / skip 3789件
 - 成長率目線: 平均log +0.000237 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_FIB1272` (selected_by_robust_growth_score) / robust_score -0.0423 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $154.16
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1851件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1852件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000287 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000259 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T13:46:17.731225+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=77343.1
-- Funnel: target 1018 → liquid 211 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-21T13:51:12.168738+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.53% price=77638.8
+- Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +115.96% | $8,340,998.33 |
-| ENA/USDT:USDT | +41.00% | $147,559,733.07 |
-| ZORA/USDT:USDT | +38.59% | $2,040,454.15 |
-| HEMI/USDT:USDT | +38.40% | $5,669,390.44 |
-| TUT/USDT:USDT | +36.32% | $7,468,366.72 |
+| CATE/USDT:USDT | +113.33% | $8,358,762.03 |
+| ENA/USDT:USDT | +41.32% | $148,937,197.07 |
+| ZORA/USDT:USDT | +37.27% | $2,106,388.65 |
+| HEMI/USDT:USDT | +37.24% | $5,687,447.53 |
+| TUT/USDT:USDT | +35.59% | $7,559,649.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEOPLE/USDT:USDT | below_1h_threshold | +4.65% | +4.50% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +4.04% | +3.89% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.65% | +3.50% |
-| ENA/USDT:USDT | below_1h_threshold | +3.23% | +3.08% |
-| TURBO/USDT:USDT | below_1h_threshold | +2.83% | +2.68% |
+| PEOPLE/USDT:USDT | below_relative_strength | +5.28% | +4.75% |
+| BLESS/USDT:USDT | below_relative_strength | +5.15% | +4.62% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +4.18% | +3.65% |
+| GALA/USDT:USDT | below_1h_threshold | +4.05% | +3.52% |
+| TURBO/USDT:USDT | below_1h_threshold | +3.51% | +2.98% |
 
 ## 7. 次に見るべき不足
 
