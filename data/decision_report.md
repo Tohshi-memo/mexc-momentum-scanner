@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T17:06:25.768760+00:00
+- generated_at: 2026-08-21T17:11:19.723812+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12226**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T17:06:15.257558+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77513.8
+- 更新: 2026-08-21T17:11:11.085068+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=77628.0
 - Funnel: target 1018 → liquid 211 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +31.72% | $10,576,465.62 |
-| BEAT/USDT:USDT | +10.41% | $55,347,684.44 |
-| BTW/USDT:USDT | +7.47% | $61,570,411.80 |
-| 1000BONK/USDT:USDT | +6.91% | $13,143,196.25 |
-| TRIA/USDT:USDT | +6.81% | $1,122,905.32 |
+| CATE/USDT:USDT | +29.59% | $10,643,643.11 |
+| 1000BONK/USDT:USDT | +8.31% | $13,570,551.35 |
+| PEPE/USDT:USDT | +7.07% | $336,444,236.88 |
+| BTW/USDT:USDT | +6.85% | $61,695,496.31 |
+| TRIA/USDT:USDT | +6.62% | $1,128,527.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEIROCTO/USDT:USDT | below_1h_threshold | +2.26% | +2.20% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.20% | +2.13% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.12% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.90% | +1.83% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.83% | +1.77% |
+| H/USDT:USDT | below_1h_threshold | +4.04% | +3.83% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.65% | +3.44% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.21% | +3.00% |
+| LIT/USDT:USDT | below_1h_threshold | +2.23% | +2.02% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.07% | +1.85% |
 
 ## 7. 次に見るべき不足
 
