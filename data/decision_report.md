@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T22:11:31.351695+00:00
+- generated_at: 2026-08-21T22:16:23.569418+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12265**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1914件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1915件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000241 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T22:11:20.683808+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=78566.4
-- Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-21T22:16:14.750290+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=78646.4
+- Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +187.62% | $2,720,375.85 |
-| CATE/USDT:USDT | +35.77% | $10,586,380.51 |
-| JIMOTHY/USDT:USDT | +31.79% | $1,551,662.83 |
-| NIULAI/USDT:USDT | +13.63% | $2,738,052.43 |
-| STX/USDT:USDT | +12.79% | $1,656,481.64 |
+| BASECAT/USDT:USDT | +180.41% | $2,738,345.91 |
+| CATE/USDT:USDT | +35.06% | $10,591,457.87 |
+| JIMOTHY/USDT:USDT | +31.10% | $1,554,330.03 |
+| NIULAI/USDT:USDT | +14.56% | $2,745,880.55 |
+| FLOKI/USDT:USDT | +14.55% | $4,588,909.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOKI/USDT:USDT | below_1h_threshold | +3.97% | +3.87% |
-| KAITO/USDT:USDT | below_1h_threshold | +3.27% | +3.18% |
-| GALA/USDT:USDT | below_1h_threshold | +2.25% | +2.15% |
-| STX/USDT:USDT | below_1h_threshold | +2.06% | +1.96% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.74% | +1.64% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.73% | +2.53% |
+| GALA/USDT:USDT | below_1h_threshold | +2.57% | +2.37% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.56% | +2.36% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.23% | +2.03% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.96% | +1.76% |
 
 ## 7. 次に見るべき不足
 
