@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T13:11:22.831992+00:00
+- generated_at: 2026-08-21T13:16:28.719208+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12196**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1848件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1849件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T13:11:12.535463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77180.0
-- Funnel: target 1018 → liquid 205 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-21T13:16:17.317167+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=77111.8
+- Funnel: target 1018 → liquid 206 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +122.54% | $8,103,134.76 |
-| ENA/USDT:USDT | +37.65% | $140,028,914.53 |
-| HEMI/USDT:USDT | +36.98% | $5,383,063.19 |
-| ZORA/USDT:USDT | +35.28% | $1,607,200.31 |
-| TUT/USDT:USDT | +31.24% | $6,317,332.44 |
+| CATE/USDT:USDT | +120.68% | $8,130,100.61 |
+| HEMI/USDT:USDT | +40.33% | $5,423,491.37 |
+| ENA/USDT:USDT | +38.80% | $140,515,442.43 |
+| ZORA/USDT:USDT | +34.68% | $1,635,036.99 |
+| TUT/USDT:USDT | +31.27% | $6,397,946.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.11% | +4.17% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.46% | +2.52% |
-| XPL/USDT:USDT | below_1h_threshold | +2.45% | +2.51% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.17% | +1.23% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.13% | +1.19% |
+| XPL/USDT:USDT | below_1h_threshold | +3.33% | +3.48% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.18% | +3.33% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.87% | +2.02% |
+| ENA/USDT:USDT | below_1h_threshold | +1.59% | +1.74% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.54% | +1.69% |
 
 ## 7. 次に見るべき不足
 
