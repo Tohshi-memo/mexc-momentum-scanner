@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T03:26:39.490153+00:00
+- generated_at: 2026-08-21T03:31:47.049682+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12138**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T03:26:21.812953+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=74501.5
-- Funnel: target 1011 → liquid 194 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 88.9 >= 65=1, 4h RSI 70.5 >= 65=1
+- 更新: 2026-08-21T03:31:25.011366+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=74593.1
+- Funnel: target 1011 → liquid 194 → pre 50 → checked 50 → surge 6 → strict 3
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 89.6 >= 65=1, 4h RSI 70.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +111.92% | $4,599,607.81 |
-| ONG/USDT:USDT | +96.42% | $33,567,937.81 |
-| ONT/USDT:USDT | +26.19% | $3,672,312.37 |
-| ENA/USDT:USDT | +19.95% | $54,994,327.38 |
-| HEMI/USDT:USDT | +19.37% | $2,493,603.40 |
+| CATE/USDT:USDT | +122.00% | $4,680,963.93 |
+| ONG/USDT:USDT | +96.80% | $33,653,076.78 |
+| ONT/USDT:USDT | +26.80% | $3,679,329.38 |
+| ENA/USDT:USDT | +21.06% | $55,291,962.37 |
+| HEMI/USDT:USDT | +20.36% | $2,524,406.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.91% | +4.79% |
-| CRV/USDT:USDT | below_1h_threshold | +2.89% | +2.76% |
-| KORU/USDT:USDT | below_1h_threshold | +2.02% | +1.90% |
-| NEO/USDT:USDT | below_1h_threshold | +1.88% | +1.76% |
-| AKE/USDT:USDT | below_1h_threshold | +1.85% | +1.73% |
+| CRV/USDT:USDT | below_1h_threshold | +4.20% | +3.95% |
+| GRASS/USDT:USDT | below_1h_threshold | +2.41% | +2.17% |
+| TUT/USDT:USDT | below_1h_threshold | +2.30% | +2.05% |
+| NEO/USDT:USDT | below_1h_threshold | +2.13% | +1.88% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.08% | +1.83% |
 
 ## 7. 次に見るべき不足
 
