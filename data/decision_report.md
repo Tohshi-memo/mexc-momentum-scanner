@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T14:31:22.163975+00:00
+- generated_at: 2026-08-21T14:36:24.236137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12202**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1854件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1855件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000225 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T14:31:14.893020+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=77136.7
-- Funnel: target 1018 → liquid 209 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-08-21T14:36:16.029238+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=77067.2
+- Funnel: target 1018 → liquid 209 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 69.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +114.53% | $8,568,381.73 |
-| ENA/USDT:USDT | +43.82% | $157,748,001.22 |
-| ZORA/USDT:USDT | +35.47% | $2,449,650.55 |
-| TUT/USDT:USDT | +31.40% | $8,203,884.56 |
-| HEMI/USDT:USDT | +29.39% | $5,855,271.81 |
+| CATE/USDT:USDT | +111.87% | $8,598,122.06 |
+| ENA/USDT:USDT | +44.57% | $158,584,662.16 |
+| ZORA/USDT:USDT | +35.61% | $2,473,027.80 |
+| HEMI/USDT:USDT | +30.54% | $5,896,942.34 |
+| TUT/USDT:USDT | +26.58% | $8,401,000.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.29% | +3.43% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +2.22% | +2.36% |
-| PROM/USDT:USDT | below_1h_threshold | +2.08% | +2.22% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.56% | +1.70% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.54% | +1.69% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.43% | +3.67% |
+| PROM/USDT:USDT | below_1h_threshold | +1.84% | +2.07% |
+| BCH/USDT:USDT | below_1h_threshold | +1.83% | +2.06% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.75% | +1.98% |
+| ENA/USDT:USDT | below_1h_threshold | +1.75% | +1.98% |
 
 ## 7. 次に見るべき不足
 
