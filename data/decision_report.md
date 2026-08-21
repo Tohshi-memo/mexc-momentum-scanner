@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T22:21:16.432473+00:00
+- generated_at: 2026-08-21T22:26:21.448356+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12266**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T22:21:09.525264+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=78489.8
-- Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-21T22:26:12.758820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=78598.7
+- Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +175.25% | $2,753,075.37 |
-| CATE/USDT:USDT | +33.64% | $10,607,840.42 |
-| JIMOTHY/USDT:USDT | +27.97% | $1,565,880.93 |
-| FLOKI/USDT:USDT | +16.70% | $4,740,481.86 |
-| NIULAI/USDT:USDT | +14.37% | $2,749,534.86 |
+| BASECAT/USDT:USDT | +190.00% | $2,775,293.13 |
+| CATE/USDT:USDT | +31.98% | $10,621,431.99 |
+| JIMOTHY/USDT:USDT | +29.24% | $1,574,110.20 |
+| NIULAI/USDT:USDT | +15.98% | $2,753,424.45 |
+| BLESS/USDT:USDT | +13.76% | $10,113,229.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIPPIN/USDT:USDT | below_1h_threshold | +3.24% | +3.25% |
-| GALA/USDT:USDT | below_1h_threshold | +2.89% | +2.89% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.56% | +2.56% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
-| JASMY/USDT:USDT | below_1h_threshold | +2.03% | +2.03% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.00% | +3.87% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.97% | +3.83% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.84% | +2.71% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.65% | +2.51% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
 
 ## 7. 次に見るべき不足
 
