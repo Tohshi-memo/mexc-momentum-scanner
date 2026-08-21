@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T18:16:21.412704+00:00
+- generated_at: 2026-08-21T18:21:22.237337+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12234**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T18:16:13.557164+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77342.9
+- 更新: 2026-08-21T18:21:15.100036+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=77464.0
 - Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1
+- Strict後reject: 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +32.27% | $10,903,524.37 |
-| JIMOTHY/USDT:USDT | +27.90% | $1,048,068.19 |
-| BLESS/USDT:USDT | +12.62% | $6,943,625.43 |
-| BEAT/USDT:USDT | +11.47% | $54,663,108.28 |
-| PEPE/USDT:USDT | +8.69% | $389,385,999.95 |
+| CATE/USDT:USDT | +32.21% | $10,965,508.17 |
+| JIMOTHY/USDT:USDT | +28.11% | $1,071,481.99 |
+| BLESS/USDT:USDT | +11.58% | $7,078,131.94 |
+| BEAT/USDT:USDT | +11.03% | $54,974,414.76 |
+| PEPE/USDT:USDT | +9.79% | $390,952,396.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GPS/USDT:USDT | below_1h_threshold | +2.53% | +2.58% |
-| FLOKI/USDT:USDT | below_1h_threshold | +2.44% | +2.49% |
-| LIT/USDT:USDT | below_1h_threshold | +2.00% | +2.05% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
-| WIF/USDT:USDT | below_1h_threshold | +1.71% | +1.76% |
+| ZORA/USDT:USDT | below_1h_threshold | +3.24% | +3.13% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.19% | +3.09% |
+| ALIGN/USDT:USDT | below_1h_threshold | +2.91% | +2.80% |
+| GPS/USDT:USDT | below_1h_threshold | +2.74% | +2.63% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.23% | +2.13% |
 
 ## 7. 次に見るべき不足
 
