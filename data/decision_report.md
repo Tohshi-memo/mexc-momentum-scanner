@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T18:01:22.884913+00:00
+- generated_at: 2026-08-21T18:06:24.202231+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12231**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T18:01:16.017664+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77399.9
+- 更新: 2026-08-21T18:06:17.293962+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=77462.8
 - Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +34.90% | $10,592,480.50 |
-| BEAT/USDT:USDT | +14.40% | $53,096,637.48 |
-| BLESS/USDT:USDT | +11.31% | $6,424,027.32 |
-| BICO/USDT:USDT | +8.51% | $3,007,996.34 |
-| PEPE/USDT:USDT | +8.00% | $374,676,437.37 |
+| CATE/USDT:USDT | +44.45% | $10,765,622.90 |
+| BLESS/USDT:USDT | +11.31% | $6,669,294.48 |
+| PEPE/USDT:USDT | +9.93% | $381,623,812.51 |
+| BICO/USDT:USDT | +9.41% | $3,027,092.92 |
+| BEAT/USDT:USDT | +8.29% | $53,838,948.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.73% | +2.71% |
-| US/USDT:USDT | below_1h_threshold | +1.49% | +1.46% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.46% |
-| TEMSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.27% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.53% | +0.51% |
+| CATE/USDT:USDT | below_1h_threshold | +4.72% | +4.61% |
+| GPS/USDT:USDT | below_1h_threshold | +2.49% | +2.38% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +2.29% | +2.19% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.03% | +1.92% |
+| RED/USDT:USDT | below_1h_threshold | +1.98% | +1.87% |
 
 ## 7. 次に見るべき不足
 
