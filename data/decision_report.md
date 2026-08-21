@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T17:36:26.285169+00:00
+- generated_at: 2026-08-21T17:41:27.236009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12229**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1883件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1884件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000330 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T17:36:16.052867+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77520.1
-- Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-21T17:41:15.947623+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77516.3
+- Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +30.00% | $10,923,409.62 |
-| BEAT/USDT:USDT | +10.66% | $57,830,375.89 |
-| BICO/USDT:USDT | +8.16% | $2,935,160.58 |
-| 1000BONK/USDT:USDT | +7.49% | $14,494,242.17 |
-| H/USDT:USDT | +5.93% | $1,850,483.83 |
+| CATE/USDT:USDT | +26.84% | $10,974,653.95 |
+| BEAT/USDT:USDT | +9.41% | $58,146,354.82 |
+| BICO/USDT:USDT | +8.46% | $2,957,335.68 |
+| H/USDT:USDT | +7.65% | $1,869,100.76 |
+| 1000BONK/USDT:USDT | +6.98% | $14,542,380.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.65% | +3.58% |
-| RED/USDT:USDT | below_1h_threshold | +3.63% | +3.55% |
-| EDEN/USDT:USDT | below_1h_threshold | +2.84% | +2.77% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.72% | +2.64% |
-| LIT/USDT:USDT | below_1h_threshold | +2.70% | +2.63% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.67% | +3.60% |
+| ZORA/USDT:USDT | below_1h_threshold | +2.64% | +2.57% |
+| STX/USDT:USDT | below_1h_threshold | +2.62% | +2.55% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.57% | +2.50% |
+| LAB/USDT:USDT | below_1h_threshold | +2.45% | +2.38% |
 
 ## 7. 次に見るべき不足
 
