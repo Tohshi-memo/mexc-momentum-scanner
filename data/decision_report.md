@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T11:31:22.657235+00:00
+- generated_at: 2026-08-21T11:36:21.553080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12186**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T11:31:14.005489+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.61% price=77340.5
-- Funnel: target 1018 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-21T11:36:12.410514+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.29% price=76810.0
+- Funnel: target 1018 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +107.85% | $7,165,829.02 |
-| ENA/USDT:USDT | +39.58% | $126,096,085.71 |
-| BB/USDT:USDT | +32.95% | $5,396,090.31 |
-| PEOPLE/USDT:USDT | +22.34% | $6,363,432.03 |
-| BERA/USDT:USDT | +21.74% | $1,151,662.21 |
+| CATE/USDT:USDT | +102.46% | $7,206,068.08 |
+| ENA/USDT:USDT | +37.71% | $128,119,597.00 |
+| BB/USDT:USDT | +31.92% | $5,442,433.93 |
+| BTW/USDT:USDT | +21.39% | $73,549,522.73 |
+| PEOPLE/USDT:USDT | +21.25% | $6,388,473.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +2.94% | +3.55% |
-| WIF/USDT:USDT | below_1h_threshold | +2.77% | +3.38% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.35% | +2.95% |
-| TUT/USDT:USDT | below_1h_threshold | +1.99% | +2.60% |
-| TIA/USDT:USDT | below_1h_threshold | +1.82% | +2.43% |
+| ENA/USDT:USDT | below_1h_threshold | +1.66% | +2.95% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.61% | +2.90% |
+| WIF/USDT:USDT | below_1h_threshold | +1.47% | +2.76% |
+| BTW/USDT:USDT | below_1h_threshold | +1.33% | +2.62% |
+| TIA/USDT:USDT | below_1h_threshold | +0.84% | +2.13% |
 
 ## 7. 次に見るべき不足
 
