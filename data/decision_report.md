@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T01:11:24.956992+00:00
+- generated_at: 2026-08-21T01:16:30.220622+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12113**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T01:11:16.063743+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=73928.7
+- 更新: 2026-08-21T01:16:21.138046+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=73950.2
 - Funnel: target 1011 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.7 >= 65=1
+- Strict後reject: 4h RSI 91.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONG/USDT:USDT | +57.66% | $22,817,722.51 |
-| CATE/USDT:USDT | +53.90% | $3,492,822.22 |
-| ONT/USDT:USDT | +19.73% | $3,373,114.02 |
-| ENA/USDT:USDT | +17.47% | $46,879,064.72 |
-| PEOPLE/USDT:USDT | +12.18% | $4,199,677.09 |
+| ONG/USDT:USDT | +56.77% | $23,069,903.51 |
+| CATE/USDT:USDT | +56.19% | $3,501,469.65 |
+| ONT/USDT:USDT | +18.53% | $3,388,337.05 |
+| ENA/USDT:USDT | +16.60% | $47,314,539.07 |
+| PEOPLE/USDT:USDT | +11.88% | $4,204,080.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.19% | +3.86% |
-| KORU/USDT:USDT | below_1h_threshold | +3.75% | +3.41% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.39% |
-| ONT/USDT:USDT | below_1h_threshold | +1.90% | +1.56% |
-| MET/USDT:USDT | below_1h_threshold | +1.84% | +1.50% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.19% | +3.83% |
+| KORU/USDT:USDT | below_1h_threshold | +3.75% | +3.38% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +2.60% |
+| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +2.73% | +2.36% |
+| MET/USDT:USDT | below_1h_threshold | +2.48% | +2.12% |
 
 ## 7. 次に見るべき不足
 
