@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T04:36:22.752272+00:00
+- generated_at: 2026-08-21T04:41:23.725881+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12149**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T04:36:12.345518+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.60% price=74932.2
-- Funnel: target 1011 → liquid 197 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1
+- 更新: 2026-08-21T04:41:14.310680+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.50% price=74852.9
+- Funnel: target 1011 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.2 >= 65=1, 4h RSI 76.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +105.44% | $5,079,267.75 |
-| ONG/USDT:USDT | +71.78% | $36,166,198.71 |
-| ENA/USDT:USDT | +23.01% | $58,085,470.70 |
-| ONT/USDT:USDT | +19.28% | $3,797,478.22 |
-| NIULAI/USDT:USDT | +19.18% | $6,607,897.61 |
+| CATE/USDT:USDT | +103.11% | $5,092,292.48 |
+| ONG/USDT:USDT | +60.49% | $36,299,146.04 |
+| ENA/USDT:USDT | +23.54% | $58,344,162.56 |
+| ONT/USDT:USDT | +18.22% | $3,798,459.67 |
+| HEMI/USDT:USDT | +17.30% | $2,803,655.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COLLECT/USDT:USDT | below_1h_threshold | +4.13% | +3.52% |
-| PROM/USDT:USDT | below_1h_threshold | +3.39% | +2.79% |
-| EYE/USDT:USDT | below_1h_threshold | +2.58% | +1.98% |
-| SPX/USDT:USDT | below_1h_threshold | +2.57% | +1.97% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.42% | +0.82% |
+| PROM/USDT:USDT | below_1h_threshold | +2.63% | +2.13% |
+| SPX/USDT:USDT | below_1h_threshold | +2.50% | +2.00% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.17% | +1.68% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.82% | +1.32% |
+| ACU/USDT:USDT | below_1h_threshold | +1.41% | +0.91% |
 
 ## 7. 次に見るべき不足
 
