@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T17:11:19.723812+00:00
+- generated_at: 2026-08-21T17:16:22.643193+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12226**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T17:11:11.085068+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=77628.0
+- 更新: 2026-08-21T17:16:13.854790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77487.3
 - Funnel: target 1018 → liquid 211 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +29.59% | $10,643,643.11 |
-| 1000BONK/USDT:USDT | +8.31% | $13,570,551.35 |
-| PEPE/USDT:USDT | +7.07% | $336,444,236.88 |
-| BTW/USDT:USDT | +6.85% | $61,695,496.31 |
-| TRIA/USDT:USDT | +6.62% | $1,128,527.19 |
+| CATE/USDT:USDT | +34.50% | $10,682,537.20 |
+| TRIA/USDT:USDT | +7.33% | $1,130,872.19 |
+| 1000BONK/USDT:USDT | +7.25% | $14,010,147.35 |
+| BICO/USDT:USDT | +6.92% | $2,663,062.07 |
+| BEAT/USDT:USDT | +6.42% | $56,361,239.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +4.04% | +3.83% |
-| PEPE/USDT:USDT | below_1h_threshold | +3.65% | +3.44% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.21% | +3.00% |
-| LIT/USDT:USDT | below_1h_threshold | +2.23% | +2.02% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.07% | +1.85% |
+| H/USDT:USDT | below_1h_threshold | +2.81% | +2.78% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.49% | +2.45% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.38% | +2.35% |
+| STX/USDT:USDT | below_1h_threshold | +2.26% | +2.23% |
+| PRL/USDT:USDT | below_1h_threshold | +2.25% | +2.22% |
 
 ## 7. 次に見るべき不足
 
