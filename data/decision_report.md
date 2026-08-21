@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T06:51:24.513234+00:00
+- generated_at: 2026-08-21T06:56:25.008063+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12157**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T06:51:13.343677+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=75458.3
+- 更新: 2026-08-21T06:56:15.864540+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=75543.8
 - Funnel: target 1015 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +93.97% | $5,562,268.89 |
-| ONG/USDT:USDT | +52.70% | $40,707,682.63 |
-| ENA/USDT:USDT | +27.08% | $71,233,274.03 |
-| NEIROCTO/USDT:USDT | +24.91% | $3,337,729.48 |
-| COLLECT/USDT:USDT | +22.84% | $3,068,500.80 |
+| CATE/USDT:USDT | +94.38% | $5,568,233.31 |
+| ONG/USDT:USDT | +51.69% | $40,810,619.79 |
+| ENA/USDT:USDT | +28.53% | $72,381,811.38 |
+| NEIROCTO/USDT:USDT | +24.91% | $3,380,584.40 |
+| NIULAI/USDT:USDT | +20.25% | $6,933,445.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BCH/USDT:USDT | below_1h_threshold | +4.75% | +4.71% |
-| BOME/USDT:USDT | below_1h_threshold | +4.37% | +4.33% |
-| VVV/USDT:USDT | below_1h_threshold | +3.83% | +3.80% |
-| PROM/USDT:USDT | below_1h_threshold | +2.98% | +2.95% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.92% | +2.89% |
+| BOME/USDT:USDT | below_1h_threshold | +4.89% | +4.74% |
+| BCH/USDT:USDT | below_1h_threshold | +4.77% | +4.62% |
+| PROM/USDT:USDT | below_1h_threshold | +3.98% | +3.83% |
+| VVV/USDT:USDT | below_1h_threshold | +3.67% | +3.52% |
+| POL/USDT:USDT | below_1h_threshold | +3.38% | +3.24% |
 
 ## 7. 次に見るべき不足
 
