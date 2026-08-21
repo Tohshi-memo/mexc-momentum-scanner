@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T15:11:20.884566+00:00
+- generated_at: 2026-08-21T15:16:19.927375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12204**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T15:11:12.159749+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=77655.0
-- Funnel: target 1018 → liquid 204 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-21T15:16:11.254086+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=77729.6
+- Funnel: target 1018 → liquid 205 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +102.58% | $8,725,358.04 |
-| ENA/USDT:USDT | +48.79% | $166,702,570.08 |
-| ZORA/USDT:USDT | +34.58% | $2,888,611.91 |
-| NEIROCTO/USDT:USDT | +29.37% | $3,093,960.93 |
-| PROM/USDT:USDT | +27.32% | $1,652,840.38 |
+| CATE/USDT:USDT | +100.54% | $8,747,999.88 |
+| ENA/USDT:USDT | +48.96% | $167,956,096.78 |
+| ZORA/USDT:USDT | +32.37% | $2,936,676.66 |
+| NEIROCTO/USDT:USDT | +31.20% | $3,120,989.85 |
+| PEOPLE/USDT:USDT | +27.55% | $6,794,532.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +3.69% | +3.35% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.35% | +3.02% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +2.97% | +2.63% |
-| ZORA/USDT:USDT | below_1h_threshold | +2.16% | +1.83% |
-| ENA/USDT:USDT | below_1h_threshold | +1.99% | +1.65% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +4.43% | +4.00% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.89% | +2.45% |
+| PROM/USDT:USDT | below_1h_threshold | +2.51% | +2.08% |
+| ENA/USDT:USDT | below_1h_threshold | +2.16% | +1.73% |
+| BCH/USDT:USDT | below_1h_threshold | +2.00% | +1.57% |
 
 ## 7. 次に見るべき不足
 
