@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T20:26:29.326222+00:00
+- generated_at: 2026-08-21T20:31:34.115547+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12251**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1904件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1905件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000154 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T20:26:17.489803+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.58% price=77438.8
-- Funnel: target 1018 → liquid 218 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.4 >= 65=1, 4h RSI 75.6 >= 65=1, 4h RSI 70.3 >= 65=1
+- 更新: 2026-08-21T20:31:25.471966+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.61% price=77468.1
+- Funnel: target 1018 → liquid 218 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.7 >= 65=1, 4h RSI 89.4 >= 65=1, 4h RSI 70.1 >= 65=1, 4h RSI 75.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +184.53% | $1,873,220.39 |
-| JIMOTHY/USDT:USDT | +36.77% | $1,444,356.54 |
-| CATE/USDT:USDT | +33.61% | $11,079,064.17 |
-| COTI/USDT:USDT | +17.32% | $2,857,223.75 |
-| MAGMA/USDT:USDT | +12.01% | $1,664,642.30 |
+| BASECAT/USDT:USDT | +193.50% | $1,932,369.34 |
+| JIMOTHY/USDT:USDT | +36.77% | $1,451,990.32 |
+| CATE/USDT:USDT | +34.94% | $11,091,976.97 |
+| COTI/USDT:USDT | +14.64% | $2,995,375.58 |
+| MAGMA/USDT:USDT | +13.37% | $1,769,148.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_relative_strength | +5.02% | +4.45% |
-| BASECAT/USDT:USDT | below_1h_threshold | +4.86% | +4.28% |
-| KMNO/USDT:USDT | below_1h_threshold | +3.33% | +2.75% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.30% | +2.73% |
-| GALA/USDT:USDT | below_1h_threshold | +3.11% | +2.54% |
+| STX/USDT:USDT | below_1h_threshold | +4.01% | +3.40% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.56% | +2.95% |
+| TRB/USDT:USDT | below_1h_threshold | +3.53% | +2.92% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.70% | +2.09% |
+| FET/USDT:USDT | below_1h_threshold | +2.62% | +2.01% |
 
 ## 7. 次に見るべき不足
 
