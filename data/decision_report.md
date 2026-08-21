@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T09:21:26.509409+00:00
+- generated_at: 2026-08-21T09:26:26.378794+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12173**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.21** / 初期 $100.00 (+17.21%)
-- 確定: 1822件 (Win 540 / Loss 691 / Flat 591) / pending 2件 / skip 1821件
+- 確定: 1822件 (Win 540 / Loss 691 / Flat 591) / pending 2件 / skip 1822件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000207 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONG/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $117.21
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T09:21:13.699861+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -2.15% price=77571.2
-- Funnel: target 1014 → liquid 197 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.1 >= 65=1, 4h RSI 83.7 >= 65=1
+- 更新: 2026-08-21T09:26:14.329450+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -2.07% price=77635.9
+- Funnel: target 1014 → liquid 198 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.0 >= 65=1, 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +120.00% | $6,455,453.94 |
-| BB/USDT:USDT | +36.57% | $1,693,812.33 |
-| ENA/USDT:USDT | +29.88% | $102,229,681.96 |
-| PEOPLE/USDT:USDT | +21.31% | $5,478,605.73 |
-| HEMI/USDT:USDT | +17.70% | $2,963,804.43 |
+| CATE/USDT:USDT | +112.77% | $6,504,863.04 |
+| BB/USDT:USDT | +37.50% | $2,004,028.44 |
+| ENA/USDT:USDT | +30.45% | $103,249,886.31 |
+| PEOPLE/USDT:USDT | +23.94% | $5,521,305.90 |
+| HEMI/USDT:USDT | +19.94% | $2,988,109.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GPS/USDT:USDT | below_1h_threshold | +4.68% | +6.83% |
-| COINBASE/USDT:USDT | below_1h_threshold | +2.99% | +5.14% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.95% | +5.10% |
-| CATE/USDT:USDT | below_1h_threshold | +2.57% | +4.71% |
-| BTW/USDT:USDT | below_1h_threshold | +1.13% | +3.28% |
+| TUT/USDT:USDT | below_1h_threshold | +3.42% | +5.49% |
+| BTW/USDT:USDT | below_1h_threshold | +3.41% | +5.47% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.13% | +4.20% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.01% | +3.07% |
+| ONT/USDT:USDT | below_1h_threshold | +0.12% | +2.19% |
 
 ## 7. 次に見るべき不足
 
