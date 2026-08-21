@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T14:21:23.590447+00:00
+- generated_at: 2026-08-21T14:26:28.850362+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12202**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T14:21:13.055153+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.89% price=76560.2
-- Funnel: target 1018 → liquid 207 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-21T14:26:21.813976+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77107.0
+- Funnel: target 1018 → liquid 209 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +114.53% | $8,516,687.91 |
-| ENA/USDT:USDT | +40.35% | $154,207,400.16 |
-| ZORA/USDT:USDT | +35.70% | $2,412,479.28 |
-| TUT/USDT:USDT | +33.29% | $8,100,419.85 |
-| HEMI/USDT:USDT | +31.77% | $5,794,797.13 |
+| CATE/USDT:USDT | +115.72% | $8,543,762.94 |
+| ENA/USDT:USDT | +42.76% | $155,301,126.88 |
+| ZORA/USDT:USDT | +36.90% | $2,434,052.67 |
+| HEMI/USDT:USDT | +34.29% | $5,817,046.24 |
+| TUT/USDT:USDT | +32.97% | $8,143,480.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.14% | +3.03% |
-| PROM/USDT:USDT | below_1h_threshold | +1.06% | +1.95% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +0.72% | +1.60% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.61% | +1.50% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.46% | +1.35% |
+| PROM/USDT:USDT | below_1h_threshold | +2.23% | +2.41% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.50% | +1.68% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.45% | +1.63% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.40% | +1.58% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +1.35% | +1.53% |
 
 ## 7. 次に見るべき不足
 
