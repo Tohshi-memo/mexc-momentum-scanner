@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T04:46:32.209230+00:00
+- generated_at: 2026-08-21T04:51:16.525498+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12151**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T04:46:19.555366+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=74886.3
-- Funnel: target 1011 → liquid 198 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 77.3 >= 65=1
+- 更新: 2026-08-21T04:51:07.729137+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.65% price=74967.9
+- Funnel: target 1011 → liquid 198 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +96.45% | $5,133,472.77 |
-| ONG/USDT:USDT | +65.42% | $36,466,086.60 |
-| ENA/USDT:USDT | +22.73% | $58,518,825.56 |
-| HEMI/USDT:USDT | +19.66% | $2,819,147.99 |
-| ONT/USDT:USDT | +19.05% | $3,801,284.67 |
+| CATE/USDT:USDT | +96.90% | $5,154,603.05 |
+| ONG/USDT:USDT | +68.59% | $36,555,818.26 |
+| ENA/USDT:USDT | +22.42% | $58,858,466.30 |
+| HEMI/USDT:USDT | +18.32% | $2,848,037.72 |
+| ONT/USDT:USDT | +17.94% | $3,803,320.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +3.86% | +3.32% |
-| CYS/USDT:USDT | below_1h_threshold | +2.92% | +2.38% |
-| PROM/USDT:USDT | below_1h_threshold | +2.85% | +2.31% |
-| SPX/USDT:USDT | below_1h_threshold | +2.59% | +2.05% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.18% | +1.64% |
+| USELESS/USDT:USDT | below_relative_strength | +5.17% | +4.51% |
+| COLLECT/USDT:USDT | below_1h_threshold | +4.42% | +3.77% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.74% | +2.09% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.70% | +2.05% |
+| SPX/USDT:USDT | below_1h_threshold | +2.62% | +1.97% |
 
 ## 7. 次に見るべき不足
 
