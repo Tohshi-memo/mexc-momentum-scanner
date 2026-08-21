@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T13:51:24.900035+00:00
+- generated_at: 2026-08-21T13:56:22.319947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12201**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1852件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1853件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000259 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T13:51:12.168738+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.53% price=77638.8
-- Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-21T13:56:08.672131+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=77360.9
+- Funnel: target 1018 → liquid 213 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +113.33% | $8,358,762.03 |
-| ENA/USDT:USDT | +41.32% | $148,937,197.07 |
-| ZORA/USDT:USDT | +37.27% | $2,106,388.65 |
-| HEMI/USDT:USDT | +37.24% | $5,687,447.53 |
-| TUT/USDT:USDT | +35.59% | $7,559,649.78 |
+| CATE/USDT:USDT | +116.92% | $8,376,575.14 |
+| ENA/USDT:USDT | +41.83% | $149,911,071.77 |
+| ZORA/USDT:USDT | +39.00% | $2,129,433.85 |
+| HEMI/USDT:USDT | +37.18% | $5,706,452.49 |
+| TUT/USDT:USDT | +35.84% | $7,625,408.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEOPLE/USDT:USDT | below_relative_strength | +5.28% | +4.75% |
-| BLESS/USDT:USDT | below_relative_strength | +5.15% | +4.62% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +4.18% | +3.65% |
-| GALA/USDT:USDT | below_1h_threshold | +4.05% | +3.52% |
-| TURBO/USDT:USDT | below_1h_threshold | +3.51% | +2.98% |
+| ENA/USDT:USDT | below_1h_threshold | +3.90% | +3.73% |
+| GALA/USDT:USDT | below_1h_threshold | +3.49% | +3.31% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +3.30% | +3.12% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.70% | +2.53% |
+| BRETT/USDT:USDT | below_1h_threshold | +2.67% | +2.50% |
 
 ## 7. 次に見るべき不足
 
