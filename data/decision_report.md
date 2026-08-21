@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T17:21:29.029998+00:00
+- generated_at: 2026-08-21T17:26:23.343260+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12227**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T17:21:18.632183+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=77299.9
+- 更新: 2026-08-21T17:26:14.611626+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=77283.7
 - Funnel: target 1018 → liquid 211 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +28.94% | $10,782,971.61 |
-| BICO/USDT:USDT | +10.75% | $2,718,074.10 |
-| BEAT/USDT:USDT | +6.67% | $56,801,306.43 |
-| 1000BONK/USDT:USDT | +6.54% | $14,147,654.87 |
-| TRIA/USDT:USDT | +6.29% | $1,132,942.41 |
+| CATE/USDT:USDT | +27.47% | $10,821,967.44 |
+| BICO/USDT:USDT | +9.11% | $2,835,612.83 |
+| BEAT/USDT:USDT | +7.35% | $57,047,467.45 |
+| BLESS/USDT:USDT | +6.43% | $5,889,036.27 |
+| 1000BONK/USDT:USDT | +6.09% | $14,319,982.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| H/USDT:USDT | below_1h_threshold | +3.05% | +3.26% |
-| BICO/USDT:USDT | below_1h_threshold | +2.83% | +3.04% |
-| LIT/USDT:USDT | below_1h_threshold | +2.47% | +2.68% |
-| STX/USDT:USDT | below_1h_threshold | +2.26% | +2.47% |
-| PRL/USDT:USDT | below_1h_threshold | +1.88% | +2.09% |
+| H/USDT:USDT | below_1h_threshold | +3.69% | +3.92% |
+| EDEN/USDT:USDT | below_1h_threshold | +2.73% | +2.96% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.29% | +2.52% |
+| LIT/USDT:USDT | below_1h_threshold | +2.03% | +2.26% |
+| HEI/USDT:USDT | below_1h_threshold | +1.89% | +2.12% |
 
 ## 7. 次に見るべき不足
 
