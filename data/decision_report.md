@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T12:21:25.418799+00:00
+- generated_at: 2026-08-21T12:26:29.967268+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12190**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T12:21:14.770660+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=76812.4
-- Funnel: target 1018 → liquid 200 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1
+- 更新: 2026-08-21T12:26:20.523666+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=76684.9
+- Funnel: target 1018 → liquid 204 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.0 >= 65=1, 4h RSI 88.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +120.03% | $7,580,585.76 |
-| HEMI/USDT:USDT | +59.85% | $4,306,631.30 |
-| ENA/USDT:USDT | +37.91% | $133,491,201.39 |
-| BB/USDT:USDT | +26.23% | $5,916,079.07 |
-| PEOPLE/USDT:USDT | +25.45% | $6,480,371.10 |
+| CATE/USDT:USDT | +120.15% | $7,636,620.23 |
+| HEMI/USDT:USDT | +59.90% | $4,364,489.60 |
+| ENA/USDT:USDT | +37.62% | $134,356,530.43 |
+| BB/USDT:USDT | +26.54% | $5,925,822.21 |
+| PEOPLE/USDT:USDT | +24.62% | $6,494,819.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_relative_strength | +5.05% | +4.96% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.21% | +3.13% |
-| BASED/USDT:USDT | below_1h_threshold | +2.53% | +2.45% |
-| GALA/USDT:USDT | below_1h_threshold | +2.40% | +2.32% |
-| CRV/USDT:USDT | below_1h_threshold | +2.32% | +2.24% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.90% | +3.99% |
+| BASED/USDT:USDT | below_1h_threshold | +3.10% | +3.19% |
+| BB/USDT:USDT | below_1h_threshold | +2.26% | +2.34% |
+| GALA/USDT:USDT | below_1h_threshold | +2.24% | +2.33% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.58% | +1.67% |
 
 ## 7. 次に見るべき不足
 
