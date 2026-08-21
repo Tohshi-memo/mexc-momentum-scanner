@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T07:26:15.795739+00:00
+- generated_at: 2026-08-21T07:31:24.177927+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12159**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.21** / 初期 $100.00 (+17.21%)
-- 確定: 1822件 (Win 540 / Loss 691 / Flat 591) / pending 2件 / skip 1805件
+- 確定: 1822件 (Win 540 / Loss 691 / Flat 591) / pending 2件 / skip 1806件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000134 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONG/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $117.21
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T07:26:05.569127+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.92% price=76306.7
-- Funnel: target 1015 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-21T07:31:15.709402+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.08% price=76428.1
+- Funnel: target 1015 → liquid 193 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +99.25% | $5,683,834.47 |
-| ONG/USDT:USDT | +47.48% | $41,957,194.60 |
-| ENA/USDT:USDT | +30.29% | $76,774,780.21 |
-| BTW/USDT:USDT | +25.36% | $89,701,418.61 |
-| NIULAI/USDT:USDT | +22.39% | $6,946,413.34 |
+| CATE/USDT:USDT | +97.86% | $5,700,786.73 |
+| ONG/USDT:USDT | +43.80% | $42,141,970.33 |
+| ENA/USDT:USDT | +29.74% | $77,132,334.58 |
+| BTW/USDT:USDT | +24.97% | $90,037,057.08 |
+| NIULAI/USDT:USDT | +23.74% | $6,956,740.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BOME/USDT:USDT | below_relative_strength | +5.61% | +4.69% |
-| CATE/USDT:USDT | below_relative_strength | +5.16% | +4.24% |
-| BTW/USDT:USDT | below_relative_strength | +5.11% | +4.20% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.97% | +3.05% |
-| EYE/USDT:USDT | below_1h_threshold | +3.54% | +2.62% |
+| LINK/USDT:USDT | below_relative_strength | +5.76% | +4.68% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.66% | +3.58% |
+| BTW/USDT:USDT | below_1h_threshold | +4.51% | +3.43% |
+| CATE/USDT:USDT | below_1h_threshold | +4.39% | +3.31% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.21% | +3.13% |
 
 ## 7. 次に見るべき不足
 
