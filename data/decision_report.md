@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T22:31:26.697981+00:00
+- generated_at: 2026-08-21T22:36:23.634887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12266**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.90** / 初期 $100.00 (+16.90%)
-- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1915件
+- 確定: 1824件 (Win 540 / Loss 693 / Flat 591) / pending 0件 / skip 1917件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000248 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UNITREE/USDT:USDT `MARKET_LONG` EXPIRED account -0.09% 残高後 $116.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T22:31:18.635727+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=78229.8
-- Funnel: target 1018 → liquid 217 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-21T22:36:14.274706+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=78293.9
+- Funnel: target 1018 → liquid 217 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.4 >= 65=1, 4h RSI 92.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +197.01% | $2,796,345.90 |
-| CATE/USDT:USDT | +37.03% | $10,634,611.79 |
-| JIMOTHY/USDT:USDT | +29.79% | $1,577,927.09 |
-| MAGMA/USDT:USDT | +14.08% | $2,387,904.61 |
-| BLESS/USDT:USDT | +13.69% | $10,207,249.86 |
+| BASECAT/USDT:USDT | +205.87% | $2,816,303.43 |
+| CATE/USDT:USDT | +42.11% | $10,680,160.57 |
+| JIMOTHY/USDT:USDT | +30.89% | $1,579,847.64 |
+| BLESS/USDT:USDT | +14.86% | $10,292,440.64 |
+| FLOKI/USDT:USDT | +13.90% | $5,127,776.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +4.92% | +5.25% |
-| FLOKI/USDT:USDT | below_1h_threshold | +3.61% | +3.95% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.52% | +2.86% |
-| SHIB/USDT:USDT | below_1h_threshold | +2.31% | +2.64% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.82% | +2.15% |
+| FLOKI/USDT:USDT | below_1h_threshold | +4.99% | +5.25% |
+| SHIB/USDT:USDT | below_1h_threshold | +3.23% | +3.48% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.74% | +2.99% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.46% | +2.71% |
+| SYRUP/USDT:USDT | below_1h_threshold | +1.92% | +2.17% |
 
 ## 7. 次に見るべき不足
 
