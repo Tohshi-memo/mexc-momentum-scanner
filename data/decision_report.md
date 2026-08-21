@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T21:31:27.319841+00:00
+- generated_at: 2026-08-21T21:36:23.535801+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12262**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T21:31:16.325924+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.93% price=78199.9
-- Funnel: target 1018 → liquid 218 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-21T21:36:13.799491+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.17% price=78384.8
+- Funnel: target 1018 → liquid 219 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +204.94% | $2,555,786.61 |
-| CATE/USDT:USDT | +35.41% | $10,831,073.16 |
-| JIMOTHY/USDT:USDT | +32.70% | $1,530,424.74 |
-| AGI/USDT:USDT | +12.98% | $1,447,792.41 |
-| BLESS/USDT:USDT | +11.15% | $9,577,117.43 |
+| BASECAT/USDT:USDT | +201.64% | $2,576,796.75 |
+| CATE/USDT:USDT | +36.24% | $10,850,816.16 |
+| JIMOTHY/USDT:USDT | +31.07% | $1,536,620.92 |
+| AGI/USDT:USDT | +14.72% | $1,468,142.03 |
+| NIULAI/USDT:USDT | +11.86% | $2,818,704.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_relative_strength | +5.21% | +4.28% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.93% | +4.00% |
-| FLOKI/USDT:USDT | below_1h_threshold | +3.76% | +2.83% |
-| H/USDT:USDT | below_1h_threshold | +3.66% | +2.73% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.63% | +2.70% |
+| DASH/USDT:USDT | below_relative_strength | +5.99% | +4.82% |
+| US/USDT:USDT | below_1h_threshold | +3.82% | +2.65% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.72% | +2.55% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.64% | +2.47% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.62% | +2.45% |
 
 ## 7. 次に見るべき不足
 
