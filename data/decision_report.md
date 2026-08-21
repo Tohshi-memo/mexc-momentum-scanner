@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T12:11:27.693968+00:00
+- generated_at: 2026-08-21T12:16:23.997570+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12189**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T12:11:20.013179+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=76766.4
+- 更新: 2026-08-21T12:16:14.651110+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=76869.5
 - Funnel: target 1018 → liquid 200 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 89.0 >= 65=1
+- Strict後reject: 4h RSI 80.5 >= 65=1, 4h RSI 88.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +125.18% | $7,421,689.22 |
-| HEMI/USDT:USDT | +57.83% | $4,141,100.57 |
-| ENA/USDT:USDT | +35.89% | $132,413,390.69 |
-| BB/USDT:USDT | +27.78% | $5,862,475.37 |
-| PEOPLE/USDT:USDT | +24.21% | $6,448,321.64 |
+| CATE/USDT:USDT | +125.12% | $7,510,958.98 |
+| HEMI/USDT:USDT | +57.16% | $4,224,099.40 |
+| ENA/USDT:USDT | +36.94% | $132,879,023.90 |
+| BB/USDT:USDT | +28.51% | $5,878,010.03 |
+| PEOPLE/USDT:USDT | +24.50% | $6,460,484.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BB/USDT:USDT | below_1h_threshold | +3.43% | +3.40% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.53% | +2.51% |
-| BASED/USDT:USDT | below_1h_threshold | +1.66% | +1.63% |
-| PEOPLE/USDT:USDT | below_1h_threshold | +1.44% | +1.42% |
-| AVNT/USDT:USDT | below_1h_threshold | +1.26% | +1.24% |
+| BB/USDT:USDT | below_1h_threshold | +3.93% | +3.77% |
+| GALA/USDT:USDT | below_1h_threshold | +2.30% | +2.14% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.94% | +1.78% |
+| BASED/USDT:USDT | below_1h_threshold | +1.88% | +1.72% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.68% | +1.52% |
 
 ## 7. 次に見るべき不足
 
