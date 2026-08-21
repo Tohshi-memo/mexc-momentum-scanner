@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T10:06:28.465959+00:00
+- generated_at: 2026-08-21T10:11:14.479594+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12178**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T10:06:18.056638+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77798.2
-- Funnel: target 1014 → liquid 197 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-21T10:11:05.825236+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77938.6
+- Funnel: target 1014 → liquid 198 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +114.96% | $6,696,814.58 |
-| ENA/USDT:USDT | +34.97% | $113,374,031.27 |
-| PEOPLE/USDT:USDT | +30.10% | $5,850,201.28 |
-| NEIROCTO/USDT:USDT | +24.14% | $4,034,671.89 |
-| BB/USDT:USDT | +21.48% | $3,357,654.43 |
+| CATE/USDT:USDT | +112.04% | $6,728,617.71 |
+| ENA/USDT:USDT | +35.43% | $113,834,352.06 |
+| NEIROCTO/USDT:USDT | +23.63% | $4,043,965.12 |
+| BB/USDT:USDT | +23.55% | $3,430,183.38 |
+| PEOPLE/USDT:USDT | +22.51% | $5,915,576.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BB/USDT:USDT | below_1h_threshold | +1.90% | +2.03% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.60% | +1.73% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.94% | +1.07% |
-| BRETT/USDT:USDT | below_1h_threshold | +0.93% | +1.06% |
-| XPL/USDT:USDT | below_1h_threshold | +0.88% | +1.01% |
+| BB/USDT:USDT | below_1h_threshold | +2.76% | +2.71% |
+| XPL/USDT:USDT | below_1h_threshold | +2.65% | +2.60% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.54% | +2.49% |
+| GALA/USDT:USDT | below_1h_threshold | +1.57% | +1.52% |
+| ENS/USDT:USDT | below_1h_threshold | +1.46% | +1.41% |
 
 ## 7. 次に見るべき不足
 
