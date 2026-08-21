@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T05:01:25.486593+00:00
+- generated_at: 2026-08-21T05:06:16.924682+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12153**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T05:01:15.239226+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=74951.8
+- 更新: 2026-08-21T05:06:08.325657+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=75101.0
 - Funnel: target 1011 → liquid 190 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +97.26% | $5,159,052.35 |
-| ONG/USDT:USDT | +76.80% | $37,474,478.28 |
-| ENA/USDT:USDT | +23.68% | $59,097,481.90 |
-| NIULAI/USDT:USDT | +22.05% | $6,660,932.47 |
-| ONT/USDT:USDT | +20.36% | $3,801,653.41 |
+| CATE/USDT:USDT | +90.51% | $5,177,820.84 |
+| ONG/USDT:USDT | +76.70% | $37,661,576.61 |
+| ENA/USDT:USDT | +23.64% | $59,396,552.20 |
+| NIULAI/USDT:USDT | +23.27% | $6,687,171.26 |
+| ONT/USDT:USDT | +20.36% | $3,820,233.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +3.46% | +3.51% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.17% |
-| KORU/USDT:USDT | below_1h_threshold | +0.80% | +0.84% |
-| NIL/USDT:USDT | below_1h_threshold | +0.45% | +0.50% |
-| ONT/USDT:USDT | below_1h_threshold | +0.43% | +0.48% |
+| ONG/USDT:USDT | below_1h_threshold | +4.19% | +4.04% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.63% | +1.48% |
+| CRV/USDT:USDT | below_1h_threshold | +1.57% | +1.42% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +0.97% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.99% | +0.84% |
 
 ## 7. 次に見るべき不足
 
