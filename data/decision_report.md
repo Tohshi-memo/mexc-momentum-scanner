@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T04:01:21.095827+00:00
+- generated_at: 2026-08-21T04:06:17.661735+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12145**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T04:01:14.265014+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=74587.9
+- 更新: 2026-08-21T04:06:10.900452+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=74696.0
 - Funnel: target 1011 → liquid 193 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +107.95% | $4,887,144.73 |
-| ONG/USDT:USDT | +76.49% | $35,165,526.87 |
-| ENA/USDT:USDT | +22.08% | $56,087,170.36 |
-| ONT/USDT:USDT | +20.46% | $3,734,900.74 |
-| CRV/USDT:USDT | +19.93% | $7,989,451.93 |
+| CATE/USDT:USDT | +102.40% | $4,935,984.54 |
+| ONG/USDT:USDT | +85.83% | $35,352,826.43 |
+| ENA/USDT:USDT | +22.42% | $56,360,813.78 |
+| ONT/USDT:USDT | +21.42% | $3,746,430.89 |
+| CRV/USDT:USDT | +18.40% | $8,190,272.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +0.91% | +0.77% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.61% | +0.47% |
-| KIOXIASTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.44% |
-| SPX/USDT:USDT | below_1h_threshold | +0.53% | +0.39% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.51% | +0.37% |
+| ONG/USDT:USDT | below_1h_threshold | +3.36% | +3.07% |
+| EYE/USDT:USDT | below_1h_threshold | +2.12% | +1.83% |
+| PROM/USDT:USDT | below_1h_threshold | +2.01% | +1.72% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.71% | +1.43% |
+| SPX/USDT:USDT | below_1h_threshold | +1.28% | +1.00% |
 
 ## 7. 次に見るべき不足
 
