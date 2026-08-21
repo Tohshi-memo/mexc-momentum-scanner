@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T13:01:23.489494+00:00
+- generated_at: 2026-08-21T13:06:17.934163+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12195**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T13:01:13.468257+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=77149.5
+- 更新: 2026-08-21T13:06:09.118252+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77271.7
 - Funnel: target 1018 → liquid 203 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +124.03% | $7,994,527.95 |
-| ZORA/USDT:USDT | +37.62% | $1,505,470.87 |
-| HEMI/USDT:USDT | +37.20% | $5,235,396.39 |
-| ENA/USDT:USDT | +35.86% | $138,792,963.86 |
-| TUT/USDT:USDT | +25.20% | $6,147,905.78 |
+| CATE/USDT:USDT | +124.45% | $8,071,080.60 |
+| ENA/USDT:USDT | +37.84% | $139,249,453.42 |
+| ZORA/USDT:USDT | +36.54% | $1,582,675.88 |
+| HEMI/USDT:USDT | +36.12% | $5,304,163.02 |
+| TUT/USDT:USDT | +27.50% | $6,247,049.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +1.48% | +1.58% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +0.60% | +0.70% |
-| BTW/USDT:USDT | below_1h_threshold | +0.45% | +0.55% |
-| XPL/USDT:USDT | below_1h_threshold | +0.36% | +0.46% |
-| PEOPLE/USDT:USDT | below_1h_threshold | +0.34% | +0.44% |
+| XPL/USDT:USDT | below_1h_threshold | +2.78% | +2.72% |
+| TUT/USDT:USDT | below_1h_threshold | +1.94% | +1.88% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.87% | +1.81% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.22% | +1.16% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.17% | +1.11% |
 
 ## 7. 次に見るべき不足
 
