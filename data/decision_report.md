@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-21T21:16:27.364464+00:00
+- generated_at: 2026-08-21T21:21:28.501741+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12261**
+- closed shadow trades: **12262**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=12261, expectancy=-0.00%
+- 全期間 MARKET基準: n=12262, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-0.02%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT_LONG | 19/20 | 95.0% | +1.25% | **+1.19%** |
+| LIMIT_4PCT_LONG | 11/20 | 55.0% | +1.88% | **+1.03%** |
+| LIMIT_5PCT_LONG | 9/20 | 45.0% | +2.07% | **+0.93%** |
 | LIMIT_7PCT_LONG | 7/20 | 35.0% | +2.40% | **+0.84%** |
-| LIMIT_4PCT_LONG | 11/20 | 55.0% | +0.79% | **+0.43%** |
-| LIMIT_5PCT_LONG | 9/20 | 45.0% | +0.73% | **+0.33%** |
-| LIMIT_10PCT_LONG | 3/20 | 15.0% | +2.07% | **+0.31%** |
+| LIMIT_BB3S_LONG | 4/4 | 100.0% | +0.22% | **+0.22%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,19 +46,19 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$656.41** / 初期 $100.00 (+556.41%)
-- 確定: 4383件 (Win 1341 / Loss 1437 / Flat 1605) / skip 4439件
-- 成長率目線: 平均log +0.000429 / 幾何平均 +0.043% per trade / maxDD +8.46%
+- 残高: **$653.12** / 初期 $100.00 (+553.12%)
+- 確定: 4384件 (Win 1341 / Loss 1438 / Flat 1605) / skip 4439件
+- 成長率目線: 平均log +0.000428 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: NIULAI/USDT:USDT `LIMIT_3PCT_LONG` EXPIRED account +0.00% 残高後 $656.41
+- 最新: ROBO/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $653.12
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$155.93** / 初期 $100.00 (+55.93%)
-- 確定: 1868件 (Win 515 / Loss 446 / Flat 907) / skip 3804件
+- 確定: 1869件 (Win 515 / Loss 446 / Flat 908) / skip 3804件
 - 成長率目線: 平均log +0.000238 / 幾何平均 +0.024% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_7PCT` (selected_by_robust_growth_score) / robust_score +0.0983 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: NIULAI/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $155.93
+- 最新: ROBO/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $155.93
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T21:16:15.613223+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=77596.2
+- 更新: 2026-08-21T21:21:15.969191+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=77689.4
 - Funnel: target 1018 → liquid 217 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +200.51% | $2,484,923.00 |
-| CATE/USDT:USDT | +32.16% | $10,749,835.34 |
-| JIMOTHY/USDT:USDT | +31.58% | $1,520,149.13 |
-| AGI/USDT:USDT | +15.94% | $1,374,157.80 |
-| MAGMA/USDT:USDT | +13.69% | $2,137,472.20 |
+| BASECAT/USDT:USDT | +209.17% | $2,520,112.34 |
+| CATE/USDT:USDT | +35.73% | $10,774,646.88 |
+| JIMOTHY/USDT:USDT | +32.16% | $1,523,205.07 |
+| AGI/USDT:USDT | +15.97% | $1,397,335.94 |
+| MAGMA/USDT:USDT | +12.72% | $2,169,107.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.09% | +3.94% |
-| US/USDT:USDT | below_1h_threshold | +3.36% | +3.21% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.44% | +2.29% |
-| AGI/USDT:USDT | below_1h_threshold | +2.19% | +2.04% |
-| PROM/USDT:USDT | below_1h_threshold | +2.07% | +1.92% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.50% | +4.23% |
+| DASH/USDT:USDT | below_1h_threshold | +3.73% | +3.46% |
+| US/USDT:USDT | below_1h_threshold | +2.46% | +2.19% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.43% | +2.16% |
+| CATE/USDT:USDT | below_1h_threshold | +2.01% | +1.74% |
 
 ## 7. 次に見るべき不足
 
