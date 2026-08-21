@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T00:36:34.877547+00:00
+- generated_at: 2026-08-21T00:41:37.847034+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12112**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T00:36:20.107471+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.00% price=73724.1
-- Funnel: target 1011 → liquid 193 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.3 >= 65=1, 4h RSI 82.6 >= 65=1, 4h RSI 91.9 >= 65=1
+- 更新: 2026-08-21T00:41:27.809641+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.76% price=73549.0
+- Funnel: target 1011 → liquid 193 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.1 >= 65=1, 4h RSI 82.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +57.36% | $3,431,865.37 |
-| ONG/USDT:USDT | +53.80% | $19,732,810.69 |
-| ONT/USDT:USDT | +24.28% | $3,241,674.09 |
-| ENA/USDT:USDT | +14.95% | $44,762,979.38 |
-| BTW/USDT:USDT | +13.03% | $89,930,111.65 |
+| CATE/USDT:USDT | +57.17% | $3,440,399.05 |
+| ONG/USDT:USDT | +51.91% | $20,030,358.46 |
+| ONT/USDT:USDT | +20.97% | $3,284,180.27 |
+| ENA/USDT:USDT | +15.50% | $45,170,747.73 |
+| BTW/USDT:USDT | +12.43% | $90,009,034.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.92% | +1.92% |
-| PROM/USDT:USDT | below_1h_threshold | +2.30% | +1.30% |
-| BTW/USDT:USDT | below_1h_threshold | +2.21% | +1.20% |
-| TUT/USDT:USDT | below_1h_threshold | +1.92% | +0.92% |
-| SAND/USDT:USDT | below_1h_threshold | +1.56% | +0.56% |
+| ONT/USDT:USDT | below_1h_threshold | +4.46% | +3.70% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.99% | +2.23% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.60% | +1.84% |
+| TUT/USDT:USDT | below_1h_threshold | +2.04% | +1.28% |
+| BTW/USDT:USDT | below_1h_threshold | +1.96% | +1.20% |
 
 ## 7. 次に見るべき不足
 
