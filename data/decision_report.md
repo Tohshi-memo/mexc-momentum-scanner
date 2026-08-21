@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-21T01:31:36.628967+00:00
+- generated_at: 2026-08-21T01:36:24.877807+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12118**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-21T01:31:22.893066+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.29% price=74633.3
-- Funnel: target 1011 → liquid 195 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.7 >= 65=1, 4h RSI 84.9 >= 65=1, 4h RSI 68.7 >= 65=1, 4h RSI 91.7 >= 65=1
+- 更新: 2026-08-21T01:36:14.848615+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.39% price=74703.8
+- Funnel: target 1011 → liquid 195 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.0 >= 65=1, 4h RSI 84.7 >= 65=1, 4h RSI 69.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONG/USDT:USDT | +92.78% | $24,623,084.53 |
-| CATE/USDT:USDT | +74.01% | $3,629,621.35 |
-| ONT/USDT:USDT | +25.15% | $3,407,998.99 |
-| ENA/USDT:USDT | +16.20% | $48,838,056.33 |
-| PEOPLE/USDT:USDT | +12.16% | $4,226,252.71 |
+| ONG/USDT:USDT | +87.47% | $24,990,361.16 |
+| CATE/USDT:USDT | +72.10% | $3,654,806.68 |
+| ONT/USDT:USDT | +24.38% | $3,411,490.43 |
+| ENA/USDT:USDT | +16.98% | $49,052,800.30 |
+| PEOPLE/USDT:USDT | +12.76% | $4,231,670.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_relative_strength | +5.74% | +4.45% |
-| COLLECT/USDT:USDT | below_1h_threshold | +4.39% | +3.10% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.19% | +2.90% |
-| KORU/USDT:USDT | below_1h_threshold | +3.75% | +2.46% |
-| TUT/USDT:USDT | below_1h_threshold | +3.67% | +2.38% |
+| ONT/USDT:USDT | below_relative_strength | +5.86% | +4.47% |
+| BICO/USDT:USDT | below_relative_strength | +5.11% | +3.72% |
+| NEIROCTO/USDT:USDT | below_1h_threshold | +4.54% | +3.16% |
+| COLLECT/USDT:USDT | below_1h_threshold | +4.31% | +2.92% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +4.19% | +2.81% |
 
 ## 7. 次に見るべき不足
 
