@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T18:26:14.569254+00:00
+- generated_at: 2026-08-22T18:31:17.054974+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12398**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T18:26:07.679794+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77322.7
+- 更新: 2026-08-22T18:31:08.203305+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77300.7
 - Funnel: target 1018 → liquid 216 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +16.49% | $11,746,882.71 |
-| UAI/USDT:USDT | +15.04% | $2,302,512.87 |
-| SQD/USDT:USDT | +11.61% | $1,878,595.29 |
-| STX/USDT:USDT | +10.25% | $6,921,113.72 |
-| DASH/USDT:USDT | +8.37% | $23,784,771.13 |
+| TUT/USDT:USDT | +17.54% | $11,985,666.86 |
+| UAI/USDT:USDT | +10.96% | $2,435,112.08 |
+| STX/USDT:USDT | +10.20% | $6,956,495.50 |
+| SQD/USDT:USDT | +10.13% | $1,882,461.51 |
+| DASH/USDT:USDT | +8.47% | $23,879,797.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.57% | +4.53% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.73% | +2.68% |
-| EGLD/USDT:USDT | below_1h_threshold | +2.42% | +2.38% |
-| CATE/USDT:USDT | below_1h_threshold | +2.30% | +2.25% |
-| BTW/USDT:USDT | below_1h_threshold | +2.02% | +1.98% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.00% | +3.99% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.86% | +3.84% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.19% | +2.18% |
+| BTW/USDT:USDT | below_1h_threshold | +2.13% | +2.12% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.57% | +1.55% |
 
 ## 7. 次に見るべき不足
 
