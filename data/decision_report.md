@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T15:36:19.575158+00:00
+- generated_at: 2026-08-22T15:41:22.299596+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12390**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T15:36:10.728965+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77090.0
+- 更新: 2026-08-22T15:41:15.974129+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77025.5
 - Funnel: target 1018 → liquid 225 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +252.57% | $8,673,877.82 |
-| CATE/USDT:USDT | +60.26% | $11,538,628.48 |
-| TRUMPOFFICIAL/USDT:USDT | +29.36% | $164,177,903.40 |
-| POL/USDT:USDT | +23.48% | $23,916,956.12 |
-| ZEC/USDT:USDT | +21.41% | $383,354,796.00 |
+| BASECAT/USDT:USDT | +247.42% | $8,696,560.63 |
+| CATE/USDT:USDT | +66.62% | $11,620,020.98 |
+| TRUMPOFFICIAL/USDT:USDT | +28.77% | $164,801,113.03 |
+| POL/USDT:USDT | +22.80% | $23,989,250.15 |
+| ZEC/USDT:USDT | +20.24% | $384,658,634.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FARTCOIN/USDT:USDT | below_1h_threshold | +4.11% | +4.02% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.76% | +2.66% |
-| POL/USDT:USDT | below_1h_threshold | +2.56% | +2.47% |
-| CVX/USDT:USDT | below_1h_threshold | +2.43% | +2.33% |
-| COTI/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.52% | +3.51% |
+| COTI/USDT:USDT | below_1h_threshold | +3.31% | +3.30% |
+| CRV/USDT:USDT | below_1h_threshold | +2.61% | +2.60% |
+| CVX/USDT:USDT | below_1h_threshold | +2.57% | +2.56% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.29% | +2.28% |
 
 ## 7. 次に見るべき不足
 
