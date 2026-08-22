@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T22:36:36.006200+00:00
+- generated_at: 2026-08-22T22:41:23.986494+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12420**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T22:36:23.901628+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=76993.5
-- Funnel: target 1018 → liquid 208 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1, 4h RSI 76.4 >= 65=1, 4h RSI 75.5 >= 65=1
+- 更新: 2026-08-22T22:41:14.893612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=76994.5
+- Funnel: target 1018 → liquid 209 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +40.05% | $37,113,690.65 |
-| CATE/USDT:USDT | +31.26% | $11,436,511.26 |
-| ZRO/USDT:USDT | +16.09% | $7,725,338.68 |
-| STX/USDT:USDT | +13.11% | $9,842,173.72 |
-| SQD/USDT:USDT | +11.72% | $2,475,021.17 |
+| TUT/USDT:USDT | +36.67% | $37,594,918.41 |
+| CATE/USDT:USDT | +28.83% | $11,569,477.57 |
+| ZRO/USDT:USDT | +13.60% | $7,895,763.95 |
+| STX/USDT:USDT | +13.01% | $9,883,302.90 |
+| SQD/USDT:USDT | +12.33% | $2,475,898.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.61% | +3.44% |
-| FORM/USDT:USDT | below_1h_threshold | +3.28% | +3.11% |
-| GALA/USDT:USDT | below_1h_threshold | +2.96% | +2.79% |
-| PEOPLE/USDT:USDT | below_1h_threshold | +2.82% | +2.65% |
-| GIGGLE/USDT:USDT | below_1h_threshold | +2.80% | +2.63% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.42% | +4.24% |
+| TUT/USDT:USDT | below_1h_threshold | +4.41% | +4.24% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +3.61% | +3.44% |
+| FORM/USDT:USDT | below_1h_threshold | +3.59% | +3.42% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +3.24% | +3.07% |
 
 ## 7. 次に見るべき不足
 
