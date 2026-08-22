@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T05:16:21.537480+00:00
+- generated_at: 2026-08-22T05:21:25.370024+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12342**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1947件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1948件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000495 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T05:16:05.819949+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.27% price=77480.4
-- Funnel: target 1018 → liquid 237 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-22T05:21:15.387252+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.76% price=77091.9
+- Funnel: target 1018 → liquid 240 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +218.86% | $4,609,188.82 |
-| TRUMPOFFICIAL/USDT:USDT | +62.78% | $72,806,779.26 |
-| MELANIA/USDT:USDT | +51.38% | $1,171,663.42 |
-| CATE/USDT:USDT | +48.17% | $11,506,098.09 |
-| MUBARAK/USDT:USDT | +30.70% | $1,717,750.59 |
+| BASECAT/USDT:USDT | +205.97% | $4,653,076.66 |
+| TRUMPOFFICIAL/USDT:USDT | +58.46% | $75,784,637.36 |
+| CATE/USDT:USDT | +52.22% | $11,578,210.41 |
+| MELANIA/USDT:USDT | +45.46% | $1,210,088.50 |
+| MUBARAK/USDT:USDT | +33.20% | $1,804,393.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.68% | +4.95% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.13% | +1.40% |
-| RE/USDT:USDT | below_1h_threshold | -0.20% | +1.07% |
-| MELANIA/USDT:USDT | below_1h_threshold | -2.01% | -0.74% |
-| US/USDT:USDT | below_1h_threshold | -3.24% | -1.97% |
+| RE/USDT:USDT | below_1h_threshold | +2.47% | +4.24% |
+| CAP/USDT:USDT | below_1h_threshold | +1.70% | +3.46% |
+| MAGMA/USDT:USDT | below_1h_threshold | -0.10% | +1.67% |
+| COMP/USDT:USDT | below_1h_threshold | -1.92% | -0.16% |
+| MUBARAK/USDT:USDT | below_1h_threshold | -3.12% | -1.36% |
 
 ## 7. 次に見るべき不足
 
