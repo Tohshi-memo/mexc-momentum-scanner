@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-22T17:11:13.370916+00:00
+- generated_at: 2026-08-22T17:16:23.631203+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12391**
+- closed shadow trades: **12392**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.58% / filled 20/20。**
-- 全期間 MARKET基準: n=12391, expectancy=+0.01%
+- 全期間 MARKET基準: n=12392, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+1.58%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,9 +32,9 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1618_LONG | 3/20 | 15.0% | +5.63% | **+0.84%** |
-| LIMIT_9PCT_LONG | 3/20 | 15.0% | +1.10% | **+0.16%** |
-| LIMIT_ATR_LONG | 14/20 | 70.0% | +0.10% | **+0.07%** |
+| LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.10% | **+0.22%** |
 | LIMIT_8PCT_LONG | 9/20 | 45.0% | +0.00% | **+0.00%** |
+| LIMIT_ATR_LONG | 14/20 | 70.0% | -0.04% | **-0.03%** |
 | LIMIT_7PCT_LONG | 10/20 | 50.0% | -0.17% | **-0.08%** |
 
 ## 2. $100 Live Portfolio
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$716.07** / 初期 $100.00 (+616.07%)
-- 確定: 4447件 (Win 1364 / Loss 1453 / Flat 1630) / skip 4505件
+- 確定: 4447件 (Win 1364 / Loss 1453 / Flat 1630) / skip 4506件
 - 成長率目線: 平均log +0.000443 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PEPE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $716.07
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$156.53** / 初期 $100.00 (+56.53%)
-- 確定: 1934件 (Win 533 / Loss 465 / Flat 936) / skip 3868件
+- 確定: 1934件 (Win 533 / Loss 465 / Flat 936) / skip 3869件
 - 成長率目線: 平均log +0.000232 / 幾何平均 +0.023% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: PEPE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $156.53
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T17:11:06.182429+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77299.8
+- 更新: 2026-08-22T17:16:13.038882+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77309.1
 - Funnel: target 1018 → liquid 221 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SQD/USDT:USDT | +7.77% | $1,705,890.80 |
-| NIULAI/USDT:USDT | +6.97% | $1,028,100.33 |
-| TRIA/USDT:USDT | +6.21% | $1,433,677.10 |
-| STX/USDT:USDT | +5.66% | $5,915,582.20 |
-| TRUMPOFFICIAL/USDT:USDT | +5.46% | $173,822,944.95 |
+| SQD/USDT:USDT | +7.45% | $1,715,757.20 |
+| NIULAI/USDT:USDT | +6.91% | $1,033,716.60 |
+| TUT/USDT:USDT | +6.30% | $8,252,200.01 |
+| TRIA/USDT:USDT | +6.25% | $1,438,726.59 |
+| STX/USDT:USDT | +6.22% | $5,972,197.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +2.53% | +2.53% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
-| ASP/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
-| LIT/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
-| UAI/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| TUT/USDT:USDT | below_1h_threshold | +4.06% | +4.04% |
+| LIT/USDT:USDT | below_1h_threshold | +2.42% | +2.41% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.27% | +2.25% |
+| MELANIA/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
+| SPX/USDT:USDT | below_1h_threshold | +2.07% | +2.05% |
 
 ## 7. 次に見るべき不足
 
