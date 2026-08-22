@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T18:56:25.780943+00:00
+- generated_at: 2026-08-22T19:01:18.902788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12400**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T18:56:16.029169+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77216.0
-- Funnel: target 1018 → liquid 217 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.3 >= 65=1, 4h RSI 71.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-22T19:01:09.960027+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77279.3
+- Funnel: target 1018 → liquid 210 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +21.33% | $13,326,653.43 |
-| CATE/USDT:USDT | +17.16% | $10,737,774.89 |
-| UAI/USDT:USDT | +10.91% | $2,585,069.41 |
-| STX/USDT:USDT | +10.30% | $7,158,032.05 |
-| DASH/USDT:USDT | +10.00% | $24,630,434.71 |
+| TUT/USDT:USDT | +20.72% | $13,242,492.71 |
+| CATE/USDT:USDT | +18.32% | $10,062,737.74 |
+| UAI/USDT:USDT | +11.41% | $2,567,304.72 |
+| DASH/USDT:USDT | +10.79% | $24,213,262.55 |
+| SQD/USDT:USDT | +9.80% | $1,933,908.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.87% | +3.96% |
-| TUT/USDT:USDT | below_1h_threshold | +2.75% | +2.85% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.49% | +2.59% |
-| EGLD/USDT:USDT | below_1h_threshold | +2.33% | +2.43% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.30% | +2.39% |
+| CATE/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
+| PORTAL/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
+| UAI/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.26% | +0.25% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +0.25% | +0.24% |
 
 ## 7. 次に見るべき不足
 
