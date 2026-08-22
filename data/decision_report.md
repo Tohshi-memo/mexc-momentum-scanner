@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T16:51:31.248230+00:00
+- generated_at: 2026-08-22T16:56:31.427257+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12391**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 2005件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 2006件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000509 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T16:51:18.733076+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=77416.4
-- Funnel: target 1018 → liquid 227 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.4 >= 65=1, 4h RSI 70.4 >= 65=1, 4h RSI 77.8 >= 65=1
+- 更新: 2026-08-22T16:56:16.390321+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=77351.2
+- Funnel: target 1018 → liquid 227 → pre 50 → checked 50 → surge 5 → strict 3
+- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.4 >= 65=1, 4h RSI 80.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SQD/USDT:USDT | +9.15% | $1,610,945.56 |
-| STX/USDT:USDT | +6.37% | $5,682,891.55 |
-| TRUMPOFFICIAL/USDT:USDT | +6.07% | $172,702,022.83 |
-| POPCAT/USDT:USDT | +5.93% | $1,537,847.37 |
-| GRVT/USDT:USDT | +5.28% | $1,303,508.72 |
+| POPCAT/USDT:USDT | +8.02% | $1,642,574.72 |
+| STX/USDT:USDT | +7.44% | $5,718,897.76 |
+| SQD/USDT:USDT | +7.30% | $1,646,519.86 |
+| TRIA/USDT:USDT | +6.25% | $1,516,399.06 |
+| GRVT/USDT:USDT | +5.59% | $1,307,561.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_relative_strength | +5.45% | +4.90% |
-| TRIA/USDT:USDT | below_relative_strength | +5.10% | +4.55% |
-| NIULAI/USDT:USDT | below_1h_threshold | +4.49% | +3.95% |
-| ZEN/USDT:USDT | below_1h_threshold | +4.10% | +3.55% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.61% | +3.07% |
+| NIULAI/USDT:USDT | below_relative_strength | +5.44% | +4.98% |
+| LAB/USDT:USDT | below_1h_threshold | +4.43% | +3.97% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.11% | +3.64% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.91% | +3.45% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.54% | +3.08% |
 
 ## 7. 次に見るべき不足
 
