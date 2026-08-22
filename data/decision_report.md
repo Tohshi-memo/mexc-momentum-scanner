@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T05:41:19.543302+00:00
+- generated_at: 2026-08-22T05:46:29.065427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12345**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T05:41:10.245722+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.70% price=77143.2
-- Funnel: target 1018 → liquid 251 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-22T05:46:14.859715+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.73% price=77117.2
+- Funnel: target 1018 → liquid 251 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +179.38% | $4,782,627.13 |
-| TRUMPOFFICIAL/USDT:USDT | +60.97% | $87,151,331.02 |
-| CATE/USDT:USDT | +49.24% | $11,649,699.62 |
-| MELANIA/USDT:USDT | +44.51% | $1,323,831.31 |
-| MUBARAK/USDT:USDT | +26.17% | $2,320,810.57 |
+| BASECAT/USDT:USDT | +188.55% | $4,831,156.42 |
+| TRUMPOFFICIAL/USDT:USDT | +57.34% | $89,547,452.00 |
+| CATE/USDT:USDT | +49.00% | $11,658,053.25 |
+| MELANIA/USDT:USDT | +40.91% | $1,346,866.22 |
+| MUBARAK/USDT:USDT | +24.68% | $2,355,044.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.61% | +6.31% |
-| CAP/USDT:USDT | below_1h_threshold | +1.42% | +3.12% |
-| PROM/USDT:USDT | below_1h_threshold | +1.13% | +2.83% |
-| MAGMA/USDT:USDT | below_1h_threshold | -1.45% | +0.25% |
-| RE/USDT:USDT | below_1h_threshold | -1.93% | -0.23% |
+| PROM/USDT:USDT | below_1h_threshold | +1.55% | +3.28% |
+| CAP/USDT:USDT | below_1h_threshold | +1.54% | +3.27% |
+| POL/USDT:USDT | below_1h_threshold | -1.70% | +0.03% |
+| MAGMA/USDT:USDT | below_1h_threshold | -1.94% | -0.20% |
+| RE/USDT:USDT | below_1h_threshold | -2.47% | -0.74% |
 
 ## 7. 次に見るべき不足
 
