@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T17:21:25.097809+00:00
+- generated_at: 2026-08-22T17:26:20.046530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12392**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T17:21:13.701536+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77314.5
-- Funnel: target 1018 → liquid 221 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-22T17:26:11.065157+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77311.7
+- Funnel: target 1018 → liquid 221 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +7.94% | $1,042,711.80 |
-| TUT/USDT:USDT | +7.81% | $8,358,335.64 |
-| SQD/USDT:USDT | +7.34% | $1,728,148.53 |
-| STX/USDT:USDT | +6.78% | $5,998,545.95 |
-| LAB/USDT:USDT | +6.39% | $3,731,241.36 |
+| TUT/USDT:USDT | +10.31% | $8,685,447.78 |
+| SQD/USDT:USDT | +7.85% | $1,740,426.64 |
+| STX/USDT:USDT | +7.65% | $6,178,260.59 |
+| UAI/USDT:USDT | +7.24% | $1,597,982.14 |
+| NIULAI/USDT:USDT | +6.54% | $1,048,793.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.98% | +2.96% |
-| LIT/USDT:USDT | below_1h_threshold | +2.86% | +2.84% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.85% | +2.83% |
-| MELANIA/USDT:USDT | below_1h_threshold | +2.30% | +2.28% |
-| LAB/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
+| UAI/USDT:USDT | below_1h_threshold | +4.93% | +4.91% |
+| MELANIA/USDT:USDT | below_1h_threshold | +3.64% | +3.63% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.29% | +3.28% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.10% | +3.08% |
+| DASH/USDT:USDT | below_1h_threshold | +2.41% | +2.39% |
 
 ## 7. 次に見るべき不足
 
