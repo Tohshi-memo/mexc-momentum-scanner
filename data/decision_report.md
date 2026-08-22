@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T03:01:22.824971+00:00
+- generated_at: 2026-08-22T03:06:21.579630+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12300**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T03:01:12.288403+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=78407.5
+- 更新: 2026-08-22T03:06:12.964833+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=78575.9
 - Funnel: target 1018 → liquid 217 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +277.31% | $3,989,065.55 |
-| CATE/USDT:USDT | +77.44% | $11,753,346.33 |
-| DASH/USDT:USDT | +33.91% | $13,287,269.13 |
-| AGI/USDT:USDT | +32.12% | $1,793,960.71 |
-| TRB/USDT:USDT | +26.62% | $5,521,047.23 |
+| BASECAT/USDT:USDT | +278.14% | $4,000,438.14 |
+| CATE/USDT:USDT | +75.21% | $11,779,829.19 |
+| AGI/USDT:USDT | +32.22% | $1,802,797.99 |
+| DASH/USDT:USDT | +31.68% | $13,695,687.09 |
+| ZEC/USDT:USDT | +25.99% | $317,085,086.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +0.93% | +1.00% |
-| ZEN/USDT:USDT | below_1h_threshold | +0.86% | +0.93% |
-| DASH/USDT:USDT | below_1h_threshold | +0.70% | +0.78% |
-| TRB/USDT:USDT | below_1h_threshold | +0.65% | +0.72% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.59% | +0.67% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.28% | +3.14% |
+| WIF/USDT:USDT | below_1h_threshold | +1.77% | +1.63% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.55% | +1.41% |
+| PI/USDT:USDT | below_1h_threshold | +1.39% | +1.26% |
+| STX/USDT:USDT | below_1h_threshold | +1.36% | +1.23% |
 
 ## 7. 次に見るべき不足
 
