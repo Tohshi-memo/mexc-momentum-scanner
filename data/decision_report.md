@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T06:46:17.508309+00:00
+- generated_at: 2026-08-22T06:51:22.851154+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12352**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1961件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1964件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000556 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T06:46:07.925583+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=77460.2
-- Funnel: target 1018 → liquid 252 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 90.8 >= 65=1
+- 更新: 2026-08-22T06:51:14.891049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=77505.1
+- Funnel: target 1018 → liquid 252 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.6 >= 65=1, 4h RSI 82.8 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 86.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +233.50% | $5,304,169.73 |
-| TRUMPOFFICIAL/USDT:USDT | +63.00% | $102,221,971.95 |
-| CATE/USDT:USDT | +52.78% | $11,646,395.89 |
-| AGI/USDT:USDT | +35.74% | $2,070,294.38 |
-| MELANIA/USDT:USDT | +33.21% | $1,559,026.45 |
+| BASECAT/USDT:USDT | +242.26% | $5,354,270.06 |
+| TRUMPOFFICIAL/USDT:USDT | +62.46% | $102,940,713.76 |
+| CATE/USDT:USDT | +50.60% | $11,655,658.66 |
+| AGI/USDT:USDT | +36.36% | $2,072,016.85 |
+| MELANIA/USDT:USDT | +33.47% | $1,565,411.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_relative_strength | +5.05% | +4.93% |
-| XRP/USDT:USDT | below_1h_threshold | +3.97% | +3.85% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.75% | +3.64% |
-| CATE/USDT:USDT | below_1h_threshold | +3.07% | +2.96% |
-| POPCAT/USDT:USDT | below_1h_threshold | +3.01% | +2.89% |
+| POL/USDT:USDT | below_1h_threshold | +4.64% | +4.46% |
+| POPCAT/USDT:USDT | below_1h_threshold | +3.49% | +3.32% |
+| XRP/USDT:USDT | below_1h_threshold | +3.45% | +3.28% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.38% | +3.20% |
+| RE/USDT:USDT | below_1h_threshold | +2.77% | +2.60% |
 
 ## 7. 次に見るべき不足
 
