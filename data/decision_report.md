@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T17:46:26.686473+00:00
+- generated_at: 2026-08-22T17:51:33.645667+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12394**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.84** / 初期 $100.00 (+16.84%)
-- 確定: 1863件 (Win 549 / Loss 706 / Flat 608) / pending 0件 / skip 2010件
+- 確定: 1863件 (Win 549 / Loss 706 / Flat 608) / pending 0件 / skip 2011件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000500 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TUT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T17:46:14.330223+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77248.2
+- 更新: 2026-08-22T17:51:21.875399+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77361.0
 - Funnel: target 1018 → liquid 222 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.0 >= 65=1, 4h RSI 71.9 >= 65=1
+- Strict後reject: 4h RSI 68.1 >= 65=1, 4h RSI 81.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +12.16% | $9,841,785.64 |
-| SQD/USDT:USDT | +9.04% | $1,814,658.76 |
-| ZEN/USDT:USDT | +8.04% | $7,627,666.87 |
-| LAB/USDT:USDT | +7.90% | $3,854,022.19 |
-| UAI/USDT:USDT | +7.38% | $1,732,888.85 |
+| TUT/USDT:USDT | +14.46% | $10,076,890.61 |
+| FARTCOIN/USDT:USDT | +9.70% | $27,709,683.21 |
+| UAI/USDT:USDT | +9.60% | $1,754,437.69 |
+| SQD/USDT:USDT | +9.51% | $1,829,623.98 |
+| LAB/USDT:USDT | +8.60% | $3,879,028.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.25% | +4.31% |
-| DASH/USDT:USDT | below_1h_threshold | +3.51% | +3.58% |
-| LAB/USDT:USDT | below_1h_threshold | +3.45% | +3.52% |
-| ASP/USDT:USDT | below_1h_threshold | +2.63% | +2.69% |
-| LIT/USDT:USDT | below_1h_threshold | +2.45% | +2.52% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.62% | +4.54% |
+| LAB/USDT:USDT | below_1h_threshold | +4.39% | +4.31% |
+| ASP/USDT:USDT | below_1h_threshold | +3.64% | +3.56% |
+| DASH/USDT:USDT | below_1h_threshold | +3.51% | +3.43% |
+| LIT/USDT:USDT | below_1h_threshold | +3.51% | +3.43% |
 
 ## 7. 次に見るべき不足
 
