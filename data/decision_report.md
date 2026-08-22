@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T15:11:10.386002+00:00
+- generated_at: 2026-08-22T15:16:11.726510+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12389**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T15:11:01.470821+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76999.9
+- 更新: 2026-08-22T15:16:02.791093+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=76944.1
 - Funnel: target 1018 → liquid 224 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +245.36% | $8,551,287.28 |
-| CATE/USDT:USDT | +69.27% | $11,299,023.14 |
-| TRUMPOFFICIAL/USDT:USDT | +25.09% | $160,634,520.71 |
-| ZEC/USDT:USDT | +21.38% | $378,824,586.97 |
-| AGI/USDT:USDT | +21.32% | $2,447,441.17 |
+| BASECAT/USDT:USDT | +248.04% | $8,578,173.67 |
+| CATE/USDT:USDT | +68.65% | $11,331,115.70 |
+| TRUMPOFFICIAL/USDT:USDT | +25.41% | $160,903,369.43 |
+| AGI/USDT:USDT | +21.51% | $2,449,996.35 |
+| ZEC/USDT:USDT | +21.47% | $379,585,541.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +1.83% | +1.85% |
-| COTI/USDT:USDT | below_1h_threshold | +1.14% | +1.17% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.04% | +1.07% |
-| MMT/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
-| CVX/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
+| COTI/USDT:USDT | below_1h_threshold | +2.37% | +2.46% |
+| CVX/USDT:USDT | below_1h_threshold | +1.26% | +1.36% |
+| AKE/USDT:USDT | below_1h_threshold | +0.92% | +1.02% |
+| MMT/USDT:USDT | below_1h_threshold | +0.83% | +0.93% |
+| CAP/USDT:USDT | below_1h_threshold | +0.67% | +0.77% |
 
 ## 7. 次に見るべき不足
 
