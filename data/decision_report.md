@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T06:56:27.343189+00:00
+- generated_at: 2026-08-22T07:01:13.817089+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12352**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T06:56:16.557778+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77395.9
-- Funnel: target 1018 → liquid 253 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1, 4h RSI 82.1 >= 65=1, 4h RSI 79.2 >= 65=1, 4h RSI 82.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-22T07:01:04.805035+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77484.9
+- Funnel: target 1018 → liquid 249 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +238.96% | $5,385,697.20 |
-| TRUMPOFFICIAL/USDT:USDT | +59.95% | $103,548,540.42 |
-| CATE/USDT:USDT | +55.83% | $11,670,440.88 |
-| AGI/USDT:USDT | +36.14% | $2,075,813.01 |
-| MELANIA/USDT:USDT | +31.22% | $1,579,887.81 |
+| BASECAT/USDT:USDT | +237.52% | $5,384,975.10 |
+| TRUMPOFFICIAL/USDT:USDT | +57.87% | $103,768,387.00 |
+| CATE/USDT:USDT | +54.29% | $11,467,660.97 |
+| AGI/USDT:USDT | +38.32% | $2,074,891.52 |
+| MELANIA/USDT:USDT | +29.77% | $1,567,546.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.07% | +4.04% |
-| POL/USDT:USDT | below_1h_threshold | +4.02% | +3.99% |
-| POPCAT/USDT:USDT | below_1h_threshold | +3.33% | +3.30% |
-| EGLD/USDT:USDT | below_1h_threshold | +3.07% | +3.04% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.88% | +2.85% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.43% | +0.42% |
+| LIT/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
 
 ## 7. 次に見るべき不足
 
