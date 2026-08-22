@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T01:01:26.036304+00:00
+- generated_at: 2026-08-22T01:06:24.442528+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12283**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T01:01:17.208557+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77918.5
-- Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-22T01:06:15.524958+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78099.0
+- Funnel: target 1018 → liquid 213 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +239.79% | $3,464,338.78 |
-| CATE/USDT:USDT | +66.67% | $11,872,471.30 |
-| AGI/USDT:USDT | +26.21% | $1,670,787.37 |
-| JIMOTHY/USDT:USDT | +20.66% | $1,643,281.17 |
-| ENS/USDT:USDT | +18.16% | $3,657,428.12 |
+| BASECAT/USDT:USDT | +236.90% | $3,480,569.73 |
+| CATE/USDT:USDT | +70.06% | $11,901,787.60 |
+| AGI/USDT:USDT | +22.60% | $1,684,519.38 |
+| JIMOTHY/USDT:USDT | +20.31% | $1,644,501.80 |
+| ENS/USDT:USDT | +19.43% | $3,693,645.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
-| CATE/USDT:USDT | below_1h_threshold | +0.91% | +0.91% |
-| CRV/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
-| SHIB/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
-| NIULAI/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
+| CATE/USDT:USDT | below_1h_threshold | +2.59% | +2.36% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.56% | +2.33% |
+| CRV/USDT:USDT | below_1h_threshold | +1.52% | +1.29% |
+| ETC/USDT:USDT | below_1h_threshold | +1.36% | +1.13% |
+| SHIB/USDT:USDT | below_1h_threshold | +1.36% | +1.12% |
 
 ## 7. 次に見るべき不足
 
