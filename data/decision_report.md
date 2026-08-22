@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T16:56:31.427257+00:00
+- generated_at: 2026-08-22T17:01:19.873079+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12391**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T16:56:16.390321+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.46% price=77351.2
-- Funnel: target 1018 → liquid 227 → pre 50 → checked 50 → surge 5 → strict 3
-- Surge前reject: below_1h_threshold=44, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.4 >= 65=1, 4h RSI 80.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-22T17:01:11.015844+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77309.0
+- Funnel: target 1018 → liquid 221 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POPCAT/USDT:USDT | +8.02% | $1,642,574.72 |
-| STX/USDT:USDT | +7.44% | $5,718,897.76 |
-| SQD/USDT:USDT | +7.30% | $1,646,519.86 |
-| TRIA/USDT:USDT | +6.25% | $1,516,399.06 |
-| GRVT/USDT:USDT | +5.59% | $1,307,561.65 |
+| POPCAT/USDT:USDT | +8.33% | $1,694,172.38 |
+| STX/USDT:USDT | +7.85% | $5,798,107.50 |
+| SQD/USDT:USDT | +6.98% | $1,667,851.76 |
+| NIULAI/USDT:USDT | +6.31% | $1,020,025.88 |
+| TRIA/USDT:USDT | +5.92% | $1,429,347.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_relative_strength | +5.44% | +4.98% |
-| LAB/USDT:USDT | below_1h_threshold | +4.43% | +3.97% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.11% | +3.64% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.91% | +3.45% |
-| PYTH/USDT:USDT | below_1h_threshold | +3.54% | +3.08% |
+| TUT/USDT:USDT | below_1h_threshold | +1.19% | +1.18% |
+| STX/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.46% | +0.45% |
+| ONG/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
 
 ## 7. 次に見るべき不足
 
