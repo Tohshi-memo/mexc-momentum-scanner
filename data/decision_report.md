@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T19:21:20.937955+00:00
+- generated_at: 2026-08-22T19:26:29.155758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12400**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.84** / 初期 $100.00 (+16.84%)
-- 確定: 1863件 (Win 549 / Loss 706 / Flat 608) / pending 0件 / skip 2016件
+- 確定: 1863件 (Win 549 / Loss 706 / Flat 608) / pending 0件 / skip 2017件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000428 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TUT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T19:21:11.936000+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77293.9
-- Funnel: target 1018 → liquid 210 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-08-22T19:26:17.638687+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77272.6
+- Funnel: target 1018 → liquid 210 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +28.94% | $14,400,370.31 |
-| CATE/USDT:USDT | +18.93% | $10,324,301.70 |
-| UAI/USDT:USDT | +13.81% | $2,683,272.82 |
-| DASH/USDT:USDT | +11.07% | $24,922,567.02 |
-| STX/USDT:USDT | +10.81% | $7,283,584.89 |
+| TUT/USDT:USDT | +27.73% | $14,750,692.95 |
+| CATE/USDT:USDT | +20.78% | $10,388,650.99 |
+| UAI/USDT:USDT | +13.41% | $2,693,450.75 |
+| STX/USDT:USDT | +11.32% | $7,311,811.75 |
+| PORTAL/USDT:USDT | +10.13% | $2,300,367.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +2.38% | +2.35% |
-| UAI/USDT:USDT | below_1h_threshold | +2.28% | +2.26% |
-| FORM/USDT:USDT | below_1h_threshold | +1.80% | +1.78% |
-| CATE/USDT:USDT | below_1h_threshold | +1.68% | +1.65% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
+| TUT/USDT:USDT | below_1h_threshold | +4.75% | +4.75% |
+| CATE/USDT:USDT | below_1h_threshold | +3.21% | +3.21% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.91% | +2.92% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.53% | +2.53% |
+| UAI/USDT:USDT | below_1h_threshold | +2.00% | +2.00% |
 
 ## 7. 次に見るべき不足
 
