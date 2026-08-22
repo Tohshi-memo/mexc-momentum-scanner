@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T07:51:21.358133+00:00
+- generated_at: 2026-08-22T07:56:26.033207+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12356**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1970件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1971件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000630 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T07:51:12.435669+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=77328.3
-- Funnel: target 1018 → liquid 251 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.2 >= 65=1
+- 更新: 2026-08-22T07:56:15.972625+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77335.0
+- Funnel: target 1018 → liquid 251 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.1 >= 65=1, 4h RSI 92.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +229.89% | $5,578,179.02 |
-| TRUMPOFFICIAL/USDT:USDT | +51.30% | $110,223,295.72 |
-| CATE/USDT:USDT | +45.29% | $11,588,300.79 |
-| ZAMA/USDT:USDT | +35.62% | $2,309,729.45 |
-| AGI/USDT:USDT | +35.14% | $2,107,066.69 |
+| BASECAT/USDT:USDT | +224.94% | $5,585,324.94 |
+| TRUMPOFFICIAL/USDT:USDT | +52.85% | $110,576,542.78 |
+| CATE/USDT:USDT | +46.17% | $11,602,182.84 |
+| AGI/USDT:USDT | +36.39% | $2,109,782.89 |
+| ZAMA/USDT:USDT | +34.15% | $2,552,753.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.83% | +5.02% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +4.13% | +4.32% |
-| MOVE/USDT:USDT | below_1h_threshold | +3.44% | +3.63% |
-| BTW/USDT:USDT | below_1h_threshold | +3.01% | +3.21% |
-| SYN/USDT:USDT | below_1h_threshold | +2.19% | +2.38% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.71% | +4.89% |
+| NIL/USDT:USDT | below_1h_threshold | +2.87% | +3.06% |
+| AR/USDT:USDT | below_1h_threshold | +2.86% | +3.05% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.59% | +2.77% |
+| BTW/USDT:USDT | below_1h_threshold | +2.22% | +2.41% |
 
 ## 7. 次に見るべき不足
 
