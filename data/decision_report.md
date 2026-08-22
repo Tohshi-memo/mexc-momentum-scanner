@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T07:31:28.176587+00:00
+- generated_at: 2026-08-22T07:36:18.958765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12354**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1966件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1968件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000630 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T07:31:15.092525+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77477.0
-- Funnel: target 1018 → liquid 250 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-22T07:36:09.307803+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=77419.6
+- Funnel: target 1018 → liquid 250 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1, 4h RSI 92.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +229.27% | $5,509,641.34 |
-| TRUMPOFFICIAL/USDT:USDT | +58.62% | $106,426,989.01 |
-| CATE/USDT:USDT | +52.44% | $11,512,991.48 |
-| AGI/USDT:USDT | +32.37% | $2,093,809.23 |
-| MELANIA/USDT:USDT | +28.28% | $1,609,260.76 |
+| BASECAT/USDT:USDT | +230.30% | $5,535,715.56 |
+| TRUMPOFFICIAL/USDT:USDT | +53.28% | $107,612,162.47 |
+| CATE/USDT:USDT | +47.88% | $11,528,578.98 |
+| AGI/USDT:USDT | +34.55% | $2,094,936.23 |
+| ZAMA/USDT:USDT | +32.41% | $1,764,086.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVE/USDT:USDT | below_1h_threshold | +4.30% | +4.30% |
-| ZAMA/USDT:USDT | below_1h_threshold | +4.06% | +4.05% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.66% | +3.66% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.54% | +3.54% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.90% | +2.90% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.35% | +4.42% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.74% | +3.82% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.67% | +3.75% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.23% | +3.30% |
+| AR/USDT:USDT | below_1h_threshold | +2.41% | +2.48% |
 
 ## 7. 次に見るべき不足
 
