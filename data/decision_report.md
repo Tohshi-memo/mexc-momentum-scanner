@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T03:32:11.320660+00:00
+- generated_at: 2026-08-22T03:36:31.249000+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12301**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.59** / 初期 $100.00 (+18.59%)
-- 確定: 1849件 (Win 548 / Loss 696 / Flat 605) / pending 6件 / skip 1928件
+- 確定: 1849件 (Win 548 / Loss 696 / Flat 605) / pending 6件 / skip 1929件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000638 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TRUMPOFFICIAL/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $118.59
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T03:31:59.718913+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=78741.3
-- Funnel: target 989 → liquid 221 → pre 50 → checked 50 → surge 3 → strict 0
+- 更新: 2026-08-22T03:36:21.312140+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=78734.0
+- Funnel: target 1018 → liquid 220 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1, 4h RSI 88.3 >= 65=1, 4h RSI 71.2 >= 65=1
+- Strict後reject: 4h RSI 73.6 >= 65=1, 4h RSI 86.2 >= 65=1, 4h RSI 83.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +252.37% | $4,085,590.47 |
-| CATE/USDT:USDT | +73.46% | $11,885,106.02 |
-| DASH/USDT:USDT | +35.59% | $14,857,470.72 |
-| MUBARAK/USDT:USDT | +29.35% | $1,253,677.05 |
-| AGI/USDT:USDT | +26.58% | $1,825,039.07 |
+| BASECAT/USDT:USDT | +246.80% | $4,104,699.34 |
+| CATE/USDT:USDT | +76.79% | $11,901,739.25 |
+| DASH/USDT:USDT | +35.08% | $14,999,202.47 |
+| MUBARAK/USDT:USDT | +29.45% | $1,271,694.72 |
+| ZEC/USDT:USDT | +28.14% | $322,682,895.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_relative_strength | +5.28% | +4.93% |
-| PI/USDT:USDT | below_1h_threshold | +4.21% | +3.87% |
-| WIF/USDT:USDT | below_1h_threshold | +3.26% | +2.92% |
-| DOGE/USDT:USDT | below_1h_threshold | +3.00% | +2.65% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.97% | +2.62% |
+| BEAT/USDT:USDT | below_relative_strength | +5.22% | +4.88% |
+| WIF/USDT:USDT | below_1h_threshold | +4.20% | +3.86% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +3.94% | +3.60% |
+| PI/USDT:USDT | below_1h_threshold | +3.60% | +3.26% |
+| POPCAT/USDT:USDT | below_1h_threshold | +3.53% | +3.19% |
 
 ## 7. 次に見るべき不足
 
