@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T07:46:26.096673+00:00
+- generated_at: 2026-08-22T07:51:21.358133+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12356**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T07:46:12.612543+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77430.3
-- Funnel: target 1018 → liquid 251 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.0 >= 65=1, 4h RSI 91.9 >= 65=1
+- 更新: 2026-08-22T07:51:12.435669+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=77328.3
+- Funnel: target 1018 → liquid 251 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +228.24% | $5,559,642.75 |
-| TRUMPOFFICIAL/USDT:USDT | +52.00% | $109,832,376.81 |
-| CATE/USDT:USDT | +45.29% | $11,569,908.03 |
-| AGI/USDT:USDT | +36.70% | $2,101,334.16 |
-| ZAMA/USDT:USDT | +34.30% | $2,096,197.18 |
+| BASECAT/USDT:USDT | +229.89% | $5,578,179.02 |
+| TRUMPOFFICIAL/USDT:USDT | +51.30% | $110,223,295.72 |
+| CATE/USDT:USDT | +45.29% | $11,588,300.79 |
+| ZAMA/USDT:USDT | +35.62% | $2,309,729.45 |
+| AGI/USDT:USDT | +35.14% | $2,107,066.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +4.71% | +4.77% |
-| AR/USDT:USDT | below_1h_threshold | +2.27% | +2.33% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.09% | +2.15% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.87% | +1.93% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.76% | +1.82% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.83% | +5.02% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.13% | +4.32% |
+| MOVE/USDT:USDT | below_1h_threshold | +3.44% | +3.63% |
+| BTW/USDT:USDT | below_1h_threshold | +3.01% | +3.21% |
+| SYN/USDT:USDT | below_1h_threshold | +2.19% | +2.38% |
 
 ## 7. 次に見るべき不足
 
