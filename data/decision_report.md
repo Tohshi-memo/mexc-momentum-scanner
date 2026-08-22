@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T13:01:18.284242+00:00
+- generated_at: 2026-08-22T13:06:15.636650+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12383**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T13:01:08.206658+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77318.1
+- 更新: 2026-08-22T13:06:06.872631+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=77230.5
 - Funnel: target 1018 → liquid 231 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +259.58% | $7,658,822.77 |
-| CATE/USDT:USDT | +75.83% | $10,846,144.88 |
-| TRUMPOFFICIAL/USDT:USDT | +32.30% | $147,410,050.70 |
-| ZEC/USDT:USDT | +22.00% | $372,566,482.90 |
-| MELANIA/USDT:USDT | +19.35% | $2,400,442.36 |
+| BASECAT/USDT:USDT | +254.63% | $7,690,932.10 |
+| CATE/USDT:USDT | +69.91% | $10,930,743.67 |
+| TRUMPOFFICIAL/USDT:USDT | +32.78% | $147,817,541.01 |
+| ZEC/USDT:USDT | +21.22% | $373,550,383.21 |
+| POL/USDT:USDT | +19.46% | $22,238,508.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MELANIA/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
-| LIT/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
-| CRV/USDT:USDT | below_1h_threshold | +0.36% | +0.33% |
-| ENA/USDT:USDT | below_1h_threshold | +0.32% | +0.29% |
-| THETA/USDT:USDT | below_1h_threshold | +0.27% | +0.24% |
+| ENA/USDT:USDT | below_1h_threshold | +1.34% | +1.42% |
+| CVX/USDT:USDT | below_1h_threshold | +1.30% | +1.38% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.19% | +1.28% |
+| TRB/USDT:USDT | below_1h_threshold | +0.84% | +0.93% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.69% | +0.77% |
 
 ## 7. 次に見るべき不足
 
