@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T22:06:19.741096+00:00
+- generated_at: 2026-08-22T22:11:25.469647+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12419**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T22:06:10.737438+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=77076.9
+- 更新: 2026-08-22T22:11:18.711982+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=77091.0
 - Funnel: target 1018 → liquid 208 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +27.23% | $34,689,273.41 |
-| CATE/USDT:USDT | +17.53% | $10,700,493.92 |
-| SQD/USDT:USDT | +13.16% | $2,415,718.55 |
-| STX/USDT:USDT | +11.73% | $9,544,805.83 |
-| ZRO/USDT:USDT | +10.44% | $6,756,057.39 |
+| TUT/USDT:USDT | +24.39% | $35,150,203.55 |
+| CATE/USDT:USDT | +19.41% | $10,772,620.76 |
+| SQD/USDT:USDT | +13.06% | $2,420,629.80 |
+| ZRO/USDT:USDT | +12.46% | $6,902,622.19 |
+| STX/USDT:USDT | +12.44% | $9,597,841.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +1.42% | +1.14% |
-| STX/USDT:USDT | below_1h_threshold | +1.34% | +1.06% |
-| FORM/USDT:USDT | below_1h_threshold | +1.20% | +0.92% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.18% | +0.90% |
-| ONG/USDT:USDT | below_1h_threshold | +1.11% | +0.83% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.87% | +2.57% |
+| TRB/USDT:USDT | below_1h_threshold | +2.28% | +1.99% |
+| CATE/USDT:USDT | below_1h_threshold | +2.27% | +1.98% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.99% | +1.70% |
+| STX/USDT:USDT | below_1h_threshold | +1.80% | +1.50% |
 
 ## 7. 次に見るべき不足
 
