@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T06:06:20.488328+00:00
+- generated_at: 2026-08-22T06:11:20.240614+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12346**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1954件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 1956件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000374 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T06:06:11.543787+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=77190.4
-- Funnel: target 1018 → liquid 249 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1
+- 更新: 2026-08-22T06:11:09.996353+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77285.3
+- Funnel: target 1018 → liquid 250 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.5 >= 65=1, 4h RSI 84.7 >= 65=1, 4h RSI 79.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +250.30% | $5,016,303.16 |
-| TRUMPOFFICIAL/USDT:USDT | +49.11% | $95,917,656.53 |
-| CATE/USDT:USDT | +48.74% | $11,488,872.05 |
-| MELANIA/USDT:USDT | +30.75% | $1,418,601.47 |
-| MUBARAK/USDT:USDT | +26.37% | $2,381,346.92 |
+| BASECAT/USDT:USDT | +235.05% | $5,091,750.48 |
+| TRUMPOFFICIAL/USDT:USDT | +53.55% | $97,208,934.92 |
+| CATE/USDT:USDT | +40.88% | $11,525,808.50 |
+| AGI/USDT:USDT | +35.02% | $1,915,405.47 |
+| MELANIA/USDT:USDT | +32.03% | $1,431,921.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGI/USDT:USDT | below_1h_threshold | +1.53% | +1.77% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +1.42% | +1.65% |
-| APR/USDT:USDT | below_1h_threshold | +0.86% | +1.09% |
-| PROM/USDT:USDT | below_1h_threshold | +0.50% | +0.73% |
-| CATE/USDT:USDT | below_1h_threshold | +0.35% | +0.58% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.74% | +1.86% |
+| PROM/USDT:USDT | below_1h_threshold | +1.56% | +1.67% |
+| CVX/USDT:USDT | below_1h_threshold | +1.22% | +1.33% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.86% | +0.98% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.75% | +0.86% |
 
 ## 7. 次に見るべき不足
 
