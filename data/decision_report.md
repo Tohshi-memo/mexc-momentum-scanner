@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T04:16:29.368039+00:00
+- generated_at: 2026-08-22T04:21:25.514935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12310**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T04:16:18.789962+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=78337.8
+- 更新: 2026-08-22T04:21:16.460157+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78321.3
 - Funnel: target 1018 → liquid 219 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1
+- Strict後reject: 4h RSI 71.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +244.32% | $4,288,463.82 |
-| CATE/USDT:USDT | +65.42% | $11,498,573.93 |
-| TRUMPOFFICIAL/USDT:USDT | +41.75% | $37,213,198.49 |
-| MUBARAK/USDT:USDT | +39.22% | $1,403,205.60 |
-| DASH/USDT:USDT | +28.77% | $16,326,828.91 |
+| BASECAT/USDT:USDT | +236.08% | $4,306,527.23 |
+| CATE/USDT:USDT | +62.53% | $11,525,749.87 |
+| TRUMPOFFICIAL/USDT:USDT | +43.51% | $37,960,170.09 |
+| MUBARAK/USDT:USDT | +38.59% | $1,429,172.08 |
+| DASH/USDT:USDT | +28.15% | $16,565,504.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +4.40% | +4.48% |
-| BASECAT/USDT:USDT | below_1h_threshold | +4.39% | +4.46% |
-| WLD/USDT:USDT | below_1h_threshold | +3.27% | +3.34% |
-| PEPE/USDT:USDT | below_1h_threshold | +3.23% | +3.30% |
-| CRO/USDT:USDT | below_1h_threshold | +2.52% | +2.60% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.75% | +3.85% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.71% | +3.81% |
+| WLFI/USDT:USDT | below_1h_threshold | +3.51% | +3.61% |
+| WLD/USDT:USDT | below_1h_threshold | +3.45% | +3.55% |
+| CRO/USDT:USDT | below_1h_threshold | +2.98% | +3.07% |
 
 ## 7. 次に見るべき不足
 
