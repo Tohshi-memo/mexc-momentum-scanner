@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T22:26:18.803687+00:00
+- generated_at: 2026-08-22T22:31:29.306574+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12419**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T22:26:09.099196+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=77143.1
+- 更新: 2026-08-22T22:31:19.518805+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=77071.6
 - Funnel: target 1018 → liquid 208 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1, 4h RSI 76.0 >= 65=1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.5 >= 65=1, 4h RSI 75.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +30.61% | $36,342,463.60 |
-| CATE/USDT:USDT | +25.28% | $11,023,749.44 |
-| ZRO/USDT:USDT | +16.36% | $7,523,331.97 |
-| SQD/USDT:USDT | +12.77% | $2,459,781.81 |
-| STX/USDT:USDT | +11.37% | $9,725,425.07 |
+| TUT/USDT:USDT | +37.26% | $36,724,422.98 |
+| CATE/USDT:USDT | +25.83% | $11,149,277.85 |
+| ZRO/USDT:USDT | +16.52% | $7,624,714.40 |
+| STX/USDT:USDT | +12.29% | $9,760,893.36 |
+| SQD/USDT:USDT | +11.14% | $2,474,450.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.82% | +4.46% |
-| TRB/USDT:USDT | below_1h_threshold | +2.45% | +2.08% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.42% | +2.06% |
-| FORM/USDT:USDT | below_1h_threshold | +2.08% | +1.72% |
-| UP/USDT:USDT | below_1h_threshold | +2.05% | +1.68% |
+| TUT/USDT:USDT | below_relative_strength | +5.02% | +4.74% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +4.57% | +4.30% |
+| AKE/USDT:USDT | below_1h_threshold | +3.80% | +3.53% |
+| FORM/USDT:USDT | below_1h_threshold | +3.36% | +3.09% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +2.77% | +2.50% |
 
 ## 7. 次に見るべき不足
 
