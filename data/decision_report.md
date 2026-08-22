@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T02:51:38.581438+00:00
+- generated_at: 2026-08-22T02:56:45.001670+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12299**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.59** / 初期 $100.00 (+18.59%)
-- 確定: 1847件 (Win 548 / Loss 696 / Flat 603) / pending 6件 / skip 1926件
+- 確定: 1847件 (Win 548 / Loss 696 / Flat 603) / pending 6件 / skip 1927件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000616 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DASH/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $118.59
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T02:51:25.467162+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.73% price=78373.7
-- Funnel: target 1018 → liquid 220 → pre 50 → checked 50 → surge 6 → strict 0
-- Surge前reject: below_1h_threshold=42, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.0 >= 65=1, 4h RSI 94.9 >= 65=1, 4h RSI 81.2 >= 65=1, 4h RSI 94.5 >= 65=1, 4h RSI 75.5 >= 65=1, 4h RSI 95.7 >= 65=1
+- 更新: 2026-08-22T02:56:32.539745+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.79% price=78422.3
+- Funnel: target 1018 → liquid 220 → pre 50 → checked 50 → surge 8 → strict 0
+- Surge前reject: below_1h_threshold=40, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.8 >= 65=2, 4h RSI 96.9 >= 65=1, 4h RSI 81.1 >= 65=1, 4h RSI 75.2 >= 65=1, 4h RSI 69.6 >= 65=1, 4h RSI 95.9 >= 65=1, 4h RSI 77.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +285.05% | $3,969,680.92 |
-| CATE/USDT:USDT | +76.73% | $12,266,056.81 |
-| TRB/USDT:USDT | +33.31% | $5,254,883.12 |
-| AGI/USDT:USDT | +31.16% | $1,782,479.41 |
-| DASH/USDT:USDT | +30.40% | $12,244,429.79 |
+| BASECAT/USDT:USDT | +287.21% | $3,981,927.48 |
+| CATE/USDT:USDT | +78.11% | $12,293,841.87 |
+| DASH/USDT:USDT | +33.39% | $12,756,067.35 |
+| TRB/USDT:USDT | +31.16% | $5,359,043.11 |
+| AGI/USDT:USDT | +30.35% | $1,788,778.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_relative_strength | +5.33% | +4.60% |
-| ORDI/USDT:USDT | below_relative_strength | +5.11% | +4.39% |
-| XRP/USDT:USDT | below_1h_threshold | +4.66% | +3.93% |
-| SUI/USDT:USDT | below_1h_threshold | +4.48% | +3.76% |
-| CC/USDT:USDT | below_1h_threshold | +4.21% | +3.48% |
+| SUI/USDT:USDT | below_relative_strength | +5.42% | +4.63% |
+| XRP/USDT:USDT | below_relative_strength | +5.04% | +4.25% |
+| GALA/USDT:USDT | below_1h_threshold | +4.71% | +3.92% |
+| CC/USDT:USDT | below_1h_threshold | +4.64% | +3.85% |
+| ADA/USDT:USDT | below_1h_threshold | +4.61% | +3.82% |
 
 ## 7. 次に見るべき不足
 
