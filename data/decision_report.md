@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T20:21:28.195254+00:00
+- generated_at: 2026-08-22T20:26:23.779370+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12406**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T20:21:17.438255+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=77342.7
-- Funnel: target 1018 → liquid 208 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1
+- 更新: 2026-08-22T20:26:15.955517+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77352.5
+- Funnel: target 1018 → liquid 208 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +36.35% | $17,521,800.35 |
-| CATE/USDT:USDT | +19.35% | $10,354,519.16 |
-| STX/USDT:USDT | +15.25% | $8,169,479.40 |
-| SQD/USDT:USDT | +12.69% | $2,196,591.52 |
-| PORTAL/USDT:USDT | +11.17% | $2,463,648.40 |
+| TUT/USDT:USDT | +40.12% | $18,055,378.98 |
+| CATE/USDT:USDT | +18.93% | $10,396,648.78 |
+| STX/USDT:USDT | +14.64% | $8,330,244.97 |
+| SQD/USDT:USDT | +13.92% | $2,199,362.44 |
+| ZRO/USDT:USDT | +11.68% | $6,378,188.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +3.72% | +3.82% |
-| PORTAL/USDT:USDT | below_1h_threshold | +2.35% | +2.45% |
-| LIT/USDT:USDT | below_1h_threshold | +2.06% | +2.16% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.80% | +1.90% |
-| ONG/USDT:USDT | below_1h_threshold | +1.70% | +1.80% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.02% | +3.11% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.91% | +3.00% |
+| LIT/USDT:USDT | below_1h_threshold | +2.28% | +2.37% |
+| PEOPLE/USDT:USDT | below_1h_threshold | +2.23% | +2.32% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.91% | +2.00% |
 
 ## 7. 次に見るべき不足
 
