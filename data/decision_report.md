@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T07:01:13.817089+00:00
+- generated_at: 2026-08-22T07:06:17.589493+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12352**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T07:01:04.805035+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77484.9
+- 更新: 2026-08-22T07:06:08.715470+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=77548.8
 - Funnel: target 1018 → liquid 249 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +237.52% | $5,384,975.10 |
-| TRUMPOFFICIAL/USDT:USDT | +57.87% | $103,768,387.00 |
-| CATE/USDT:USDT | +54.29% | $11,467,660.97 |
-| AGI/USDT:USDT | +38.32% | $2,074,891.52 |
-| MELANIA/USDT:USDT | +29.77% | $1,567,546.06 |
+| BASECAT/USDT:USDT | +235.97% | $5,397,782.75 |
+| TRUMPOFFICIAL/USDT:USDT | +59.69% | $104,039,506.91 |
+| CATE/USDT:USDT | +51.75% | $11,485,477.08 |
+| AGI/USDT:USDT | +38.88% | $2,076,835.13 |
+| MELANIA/USDT:USDT | +31.14% | $1,572,296.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.72% | +0.71% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.43% | +0.42% |
-| LIT/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.70% | +2.61% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +2.43% | +2.34% |
+| AR/USDT:USDT | below_1h_threshold | +2.36% | +2.27% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.25% | +2.16% |
+| MOVE/USDT:USDT | below_1h_threshold | +2.00% | +1.90% |
 
 ## 7. 次に見るべき不足
 
