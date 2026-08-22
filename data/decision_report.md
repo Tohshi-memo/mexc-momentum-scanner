@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T16:21:35.169369+00:00
+- generated_at: 2026-08-22T16:26:36.820181+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12390**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 2000件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 2001件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000574 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T16:21:21.216851+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=77206.6
-- Funnel: target 1018 → liquid 226 → pre 50 → checked 50 → surge 3 → strict 2
+- 更新: 2026-08-22T16:26:21.451974+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=77214.0
+- Funnel: target 1018 → liquid 226 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +7.61% | $11,409,600.01 |
-| SQD/USDT:USDT | +6.98% | $1,301,621.20 |
-| TRIA/USDT:USDT | +5.39% | $1,398,257.96 |
-| USELESS/USDT:USDT | +4.79% | $3,480,583.93 |
-| GRVT/USDT:USDT | +4.51% | $1,276,280.69 |
+| SQD/USDT:USDT | +8.42% | $1,384,548.54 |
+| TRIA/USDT:USDT | +6.64% | $1,446,309.21 |
+| NEIROCTO/USDT:USDT | +6.05% | $1,333,686.60 |
+| CATE/USDT:USDT | +4.92% | $11,474,030.13 |
+| PNUT/USDT:USDT | +4.80% | $1,134,656.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRVT/USDT:USDT | below_1h_threshold | +4.52% | +4.24% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.23% | +3.95% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.41% | +3.13% |
-| PNUT/USDT:USDT | below_1h_threshold | +3.34% | +3.06% |
-| NEIROCTO/USDT:USDT | below_1h_threshold | +3.31% | +3.03% |
+| PNUT/USDT:USDT | below_1h_threshold | +4.79% | +4.50% |
+| CATE/USDT:USDT | below_1h_threshold | +4.49% | +4.20% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.48% | +4.19% |
+| GRVT/USDT:USDT | below_1h_threshold | +4.15% | +3.87% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.04% | +3.76% |
 
 ## 7. 次に見るべき不足
 
