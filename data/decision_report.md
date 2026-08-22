@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T00:01:18.360033+00:00
+- generated_at: 2026-08-22T00:06:13.305311+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12277**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T00:01:08.078868+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78261.7
+- 更新: 2026-08-22T00:06:05.816721+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=78099.4
 - Funnel: target 1018 → liquid 214 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +254.63% | $3,159,380.95 |
-| CATE/USDT:USDT | +64.74% | $11,362,148.00 |
-| JIMOTHY/USDT:USDT | +29.65% | $1,624,866.57 |
-| AGI/USDT:USDT | +19.61% | $1,588,882.29 |
-| MAGMA/USDT:USDT | +16.13% | $2,727,051.52 |
+| BASECAT/USDT:USDT | +246.49% | $3,216,248.72 |
+| CATE/USDT:USDT | +65.79% | $11,407,527.43 |
+| JIMOTHY/USDT:USDT | +27.42% | $1,625,806.59 |
+| AGI/USDT:USDT | +17.90% | $1,594,282.41 |
+| MAGMA/USDT:USDT | +17.02% | $2,745,546.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +4.18% | +4.24% |
-| ONT/USDT:USDT | below_1h_threshold | +2.09% | +2.15% |
-| AGI/USDT:USDT | below_1h_threshold | +0.99% | +1.05% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.52% | +0.58% |
-| KAITO/USDT:USDT | below_1h_threshold | +0.51% | +0.57% |
+| ONG/USDT:USDT | below_1h_threshold | +4.02% | +4.28% |
+| ONT/USDT:USDT | below_1h_threshold | +2.99% | +3.26% |
+| RE/USDT:USDT | below_1h_threshold | +1.73% | +2.00% |
+| SAND/USDT:USDT | below_1h_threshold | +1.63% | +1.90% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.39% | +1.65% |
 
 ## 7. 次に見るべき不足
 
