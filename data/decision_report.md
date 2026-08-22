@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T11:56:25.526658+00:00
+- generated_at: 2026-08-22T12:01:18.055869+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12374**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T11:56:15.869507+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=77107.8
-- Funnel: target 1018 → liquid 237 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.4 >= 65=1, 4h RSI 68.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-22T12:01:09.006102+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=77109.3
+- Funnel: target 1018 → liquid 233 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +229.27% | $6,955,368.22 |
-| CATE/USDT:USDT | +71.16% | $11,089,995.46 |
-| TRUMPOFFICIAL/USDT:USDT | +43.24% | $143,208,427.72 |
-| POL/USDT:USDT | +24.93% | $21,055,817.64 |
-| MELANIA/USDT:USDT | +23.29% | $2,308,770.56 |
+| BASECAT/USDT:USDT | +238.96% | $6,973,179.86 |
+| CATE/USDT:USDT | +71.40% | $10,803,458.64 |
+| TRUMPOFFICIAL/USDT:USDT | +43.03% | $142,846,712.95 |
+| POL/USDT:USDT | +24.34% | $20,694,497.52 |
+| MELANIA/USDT:USDT | +22.13% | $2,309,801.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RE/USDT:USDT | below_1h_threshold | +3.62% | +3.45% |
-| CVX/USDT:USDT | below_1h_threshold | +3.40% | +3.23% |
-| CRV/USDT:USDT | below_1h_threshold | +2.94% | +2.77% |
-| STX/USDT:USDT | below_1h_threshold | +2.41% | +2.25% |
-| TRB/USDT:USDT | below_1h_threshold | +2.22% | +2.06% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.84% | +0.88% |
+| BASECAT/USDT:USDT | below_1h_threshold | +0.74% | +0.77% |
+| BERA/USDT:USDT | below_1h_threshold | +0.60% | +0.64% |
+| CATE/USDT:USDT | below_1h_threshold | +0.41% | +0.45% |
 
 ## 7. 次に見るべき不足
 
