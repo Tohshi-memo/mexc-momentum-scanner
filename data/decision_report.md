@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T00:56:41.119455+00:00
+- generated_at: 2026-08-22T01:01:26.036304+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12283**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T00:56:26.642145+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=77883.1
-- Funnel: target 1018 → liquid 219 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1, 4h RSI 81.5 >= 65=1, 4h RSI 95.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-22T01:01:17.208557+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77918.5
+- Funnel: target 1018 → liquid 212 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +248.45% | $3,464,920.27 |
-| CATE/USDT:USDT | +65.80% | $11,982,788.30 |
-| AGI/USDT:USDT | +28.58% | $1,663,614.01 |
-| ENS/USDT:USDT | +19.67% | $3,512,719.17 |
-| STX/USDT:USDT | +18.64% | $2,373,021.48 |
+| BASECAT/USDT:USDT | +239.79% | $3,464,338.78 |
+| CATE/USDT:USDT | +66.67% | $11,872,471.30 |
+| AGI/USDT:USDT | +26.21% | $1,670,787.37 |
+| JIMOTHY/USDT:USDT | +20.66% | $1,643,281.17 |
+| ENS/USDT:USDT | +18.16% | $3,657,428.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +4.98% | +5.52% |
-| STX/USDT:USDT | below_1h_threshold | +4.58% | +5.13% |
-| ETC/USDT:USDT | below_1h_threshold | +4.33% | +4.88% |
-| FLOKI/USDT:USDT | below_1h_threshold | +3.67% | +4.22% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.30% | +3.84% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
+| CATE/USDT:USDT | below_1h_threshold | +0.91% | +0.91% |
+| CRV/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
+| SHIB/USDT:USDT | below_1h_threshold | +0.31% | +0.31% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.30% | +0.30% |
 
 ## 7. 次に見るべき不足
 
