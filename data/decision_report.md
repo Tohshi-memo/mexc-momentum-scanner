@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-22T17:56:36.325649+00:00
+- generated_at: 2026-08-22T18:01:27.069225+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12395**
+- closed shadow trades: **12396**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.38% / filled 20/20。**
-- 全期間 MARKET基準: n=12395, expectancy=+0.01%
+- 全期間 MARKET基準: n=12396, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.38%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,18 +21,18 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT | 16/20 | 80.0% | +1.24% | **+0.99%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +1.37% | **+1.10%** |
 | MARKET | 20/20 | 100.0% | +0.38% | **+0.38%** |
-| LIMIT_10PCT | 2/20 | 10.0% | +0.73% | **+0.07%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +0.29% | **+0.03%** |
-| LIMIT_8PCT | 2/20 | 10.0% | -0.15% | **-0.01%** |
+| LIMIT_5PCT | 6/20 | 30.0% | +0.13% | **+0.04%** |
+| LIMIT_3PCT | 13/20 | 65.0% | -0.01% | **-0.01%** |
+| LIMIT_6PCT | 2/20 | 10.0% | -1.06% | **-0.11%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_FIB1618_LONG | 3/20 | 15.0% | +5.63% | **+0.84%** |
-| LIMIT_ATR_LONG | 12/20 | 60.0% | +0.62% | **+0.37%** |
+| LIMIT_ATR_LONG | 13/20 | 65.0% | +1.10% | **+0.71%** |
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +1.10% | **+0.22%** |
 | LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.12% | **+0.06%** |
 | LIMIT_4PCT_LONG | 11/20 | 55.0% | +0.06% | **+0.03%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$716.07** / 初期 $100.00 (+616.07%)
-- 確定: 4447件 (Win 1364 / Loss 1453 / Flat 1630) / skip 4509件
+- 確定: 4447件 (Win 1364 / Loss 1453 / Flat 1630) / skip 4510件
 - 成長率目線: 平均log +0.000443 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PEPE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $716.07
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$156.53** / 初期 $100.00 (+56.53%)
-- 確定: 1934件 (Win 533 / Loss 465 / Flat 936) / skip 3872件
+- 確定: 1934件 (Win 533 / Loss 465 / Flat 936) / skip 3873件
 - 成長率目線: 平均log +0.000232 / 幾何平均 +0.023% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: PEPE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $156.53
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T17:56:23.026713+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77305.9
-- Funnel: target 1018 → liquid 222 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-22T18:01:16.432361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77299.7
+- Funnel: target 1018 → liquid 214 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +17.43% | $10,322,266.42 |
-| STX/USDT:USDT | +11.07% | $6,548,973.24 |
-| UAI/USDT:USDT | +10.01% | $1,778,336.40 |
-| LAB/USDT:USDT | +8.52% | $3,905,777.89 |
-| SQD/USDT:USDT | +8.10% | $1,848,553.78 |
+| TUT/USDT:USDT | +19.32% | $10,041,879.02 |
+| STX/USDT:USDT | +12.50% | $6,486,560.07 |
+| UAI/USDT:USDT | +9.96% | $1,776,359.29 |
+| SQD/USDT:USDT | +9.11% | $1,816,243.63 |
+| DASH/USDT:USDT | +8.22% | $22,978,420.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FARTCOIN/USDT:USDT | below_1h_threshold | +4.82% | +4.81% |
-| ZEN/USDT:USDT | below_1h_threshold | +4.64% | +4.63% |
-| DASH/USDT:USDT | below_1h_threshold | +4.30% | +4.29% |
-| LAB/USDT:USDT | below_1h_threshold | +4.04% | +4.03% |
-| ASP/USDT:USDT | below_1h_threshold | +3.98% | +3.97% |
+| STX/USDT:USDT | below_1h_threshold | +1.19% | +1.18% |
+| TUT/USDT:USDT | below_1h_threshold | +1.09% | +1.08% |
+| BTW/USDT:USDT | below_1h_threshold | +0.85% | +0.84% |
+| APE/USDT:USDT | below_1h_threshold | +0.68% | +0.67% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.53% | +0.51% |
 
 ## 7. 次に見るべき不足
 
