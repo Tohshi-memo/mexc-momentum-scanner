@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T17:06:17.867225+00:00
+- generated_at: 2026-08-22T17:11:13.370916+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12391**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T17:06:09.804135+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77292.3
+- 更新: 2026-08-22T17:11:06.182429+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77299.8
 - Funnel: target 1018 → liquid 221 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +7.57% | $1,023,473.39 |
-| SQD/USDT:USDT | +7.41% | $1,690,365.47 |
-| TRIA/USDT:USDT | +5.91% | $1,431,355.31 |
-| PUMPFUN/USDT:USDT | +5.69% | $78,469,978.46 |
-| STX/USDT:USDT | +5.66% | $5,895,492.32 |
+| SQD/USDT:USDT | +7.77% | $1,705,890.80 |
+| NIULAI/USDT:USDT | +6.97% | $1,028,100.33 |
+| TRIA/USDT:USDT | +6.21% | $1,433,677.10 |
+| STX/USDT:USDT | +5.66% | $5,915,582.20 |
+| TRUMPOFFICIAL/USDT:USDT | +5.46% | $173,822,944.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.00% | +3.01% |
-| AGI/USDT:USDT | below_1h_threshold | +1.60% | +1.61% |
-| TUT/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
-| CATE/USDT:USDT | below_1h_threshold | +1.00% | +1.01% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.97% | +0.98% |
+| TUT/USDT:USDT | below_1h_threshold | +2.53% | +2.53% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
+| ASP/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
+| LIT/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
+| UAI/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
 
 ## 7. 次に見るべき不足
 
