@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T04:21:25.514935+00:00
+- generated_at: 2026-08-22T04:26:21.092033+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12310**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.49** / 初期 $100.00 (+18.49%)
-- 確定: 1853件 (Win 549 / Loss 698 / Flat 606) / pending 4件 / skip 1934件
+- 確定: 1853件 (Win 549 / Loss 698 / Flat 606) / pending 5件 / skip 1934件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000532 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: JIMOTHY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T04:21:16.460157+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=78321.3
+- 更新: 2026-08-22T04:26:12.128558+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=78523.9
 - Funnel: target 1018 → liquid 219 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1
+- Strict後reject: 4h RSI 95.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +236.08% | $4,306,527.23 |
-| CATE/USDT:USDT | +62.53% | $11,525,749.87 |
-| TRUMPOFFICIAL/USDT:USDT | +43.51% | $37,960,170.09 |
-| MUBARAK/USDT:USDT | +38.59% | $1,429,172.08 |
-| DASH/USDT:USDT | +28.15% | $16,565,504.65 |
+| BASECAT/USDT:USDT | +240.00% | $4,333,048.30 |
+| CATE/USDT:USDT | +66.42% | $11,545,396.13 |
+| TRUMPOFFICIAL/USDT:USDT | +44.63% | $38,531,682.89 |
+| MUBARAK/USDT:USDT | +36.71% | $1,445,737.04 |
+| DASH/USDT:USDT | +28.43% | $16,637,605.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.75% | +3.85% |
-| PEPE/USDT:USDT | below_1h_threshold | +3.71% | +3.81% |
-| WLFI/USDT:USDT | below_1h_threshold | +3.51% | +3.61% |
-| WLD/USDT:USDT | below_1h_threshold | +3.45% | +3.55% |
-| CRO/USDT:USDT | below_1h_threshold | +2.98% | +3.07% |
+| CRO/USDT:USDT | below_1h_threshold | +4.08% | +3.92% |
+| NIULAI/USDT:USDT | below_1h_threshold | +3.41% | +3.24% |
+| WLD/USDT:USDT | below_1h_threshold | +3.41% | +3.24% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.39% | +3.22% |
+| WIF/USDT:USDT | below_1h_threshold | +3.08% | +2.91% |
 
 ## 7. 次に見るべき不足
 
