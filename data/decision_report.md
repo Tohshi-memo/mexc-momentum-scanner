@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T05:36:26.560112+00:00
+- generated_at: 2026-08-22T05:41:19.543302+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12345**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T05:36:13.746404+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.36% price=77411.9
-- Funnel: target 1018 → liquid 250 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-22T05:41:10.245722+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.70% price=77143.2
+- Funnel: target 1018 → liquid 251 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +197.93% | $4,733,639.46 |
-| TRUMPOFFICIAL/USDT:USDT | +57.87% | $84,275,458.30 |
-| CATE/USDT:USDT | +50.62% | $11,634,204.40 |
-| MELANIA/USDT:USDT | +42.92% | $1,299,131.04 |
-| MUBARAK/USDT:USDT | +25.60% | $2,265,329.55 |
+| BASECAT/USDT:USDT | +179.38% | $4,782,627.13 |
+| TRUMPOFFICIAL/USDT:USDT | +60.97% | $87,151,331.02 |
+| CATE/USDT:USDT | +49.24% | $11,649,699.62 |
+| MELANIA/USDT:USDT | +44.51% | $1,323,831.31 |
+| MUBARAK/USDT:USDT | +26.17% | $2,320,810.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.16% | +5.52% |
-| PROM/USDT:USDT | below_1h_threshold | +3.70% | +5.05% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.21% | +1.56% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | -0.16% | +1.20% |
-| APR/USDT:USDT | below_1h_threshold | -0.26% | +1.10% |
+| AKE/USDT:USDT | below_1h_threshold | +4.61% | +6.31% |
+| CAP/USDT:USDT | below_1h_threshold | +1.42% | +3.12% |
+| PROM/USDT:USDT | below_1h_threshold | +1.13% | +2.83% |
+| MAGMA/USDT:USDT | below_1h_threshold | -1.45% | +0.25% |
+| RE/USDT:USDT | below_1h_threshold | -1.93% | -0.23% |
 
 ## 7. 次に見るべき不足
 
