@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-22T17:16:23.631203+00:00
+- generated_at: 2026-08-22T17:21:25.097809+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12392**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.04** / 初期 $100.00 (+17.04%)
-- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 0件 / skip 2006件
+- 確定: 1862件 (Win 549 / Loss 705 / Flat 608) / pending 1件 / skip 2006件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000509 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZAMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-22T17:16:13.038882+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77309.1
-- Funnel: target 1018 → liquid 221 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-22T17:21:13.701536+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77314.5
+- Funnel: target 1018 → liquid 221 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SQD/USDT:USDT | +7.45% | $1,715,757.20 |
-| NIULAI/USDT:USDT | +6.91% | $1,033,716.60 |
-| TUT/USDT:USDT | +6.30% | $8,252,200.01 |
-| TRIA/USDT:USDT | +6.25% | $1,438,726.59 |
-| STX/USDT:USDT | +6.22% | $5,972,197.35 |
+| NIULAI/USDT:USDT | +7.94% | $1,042,711.80 |
+| TUT/USDT:USDT | +7.81% | $8,358,335.64 |
+| SQD/USDT:USDT | +7.34% | $1,728,148.53 |
+| STX/USDT:USDT | +6.78% | $5,998,545.95 |
+| LAB/USDT:USDT | +6.39% | $3,731,241.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.06% | +4.04% |
-| LIT/USDT:USDT | below_1h_threshold | +2.42% | +2.41% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.27% | +2.25% |
-| MELANIA/USDT:USDT | below_1h_threshold | +2.22% | +2.21% |
-| SPX/USDT:USDT | below_1h_threshold | +2.07% | +2.05% |
+| UAI/USDT:USDT | below_1h_threshold | +2.98% | +2.96% |
+| LIT/USDT:USDT | below_1h_threshold | +2.86% | +2.84% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.85% | +2.83% |
+| MELANIA/USDT:USDT | below_1h_threshold | +2.30% | +2.28% |
+| LAB/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
 
 ## 7. 次に見るべき不足
 
