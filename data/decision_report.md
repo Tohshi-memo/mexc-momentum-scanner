@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T01:26:22.852961+00:00
+- generated_at: 2026-08-23T01:31:20.336258+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12430**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T01:26:14.308811+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77281.0
-- Funnel: target 1018 → liquid 207 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-08-23T01:31:11.279344+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77297.4
+- Funnel: target 1018 → liquid 208 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.4 >= 65=1
+- Strict後reject: 4h RSI 88.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +48.59% | $13,113,151.21 |
-| TUT/USDT:USDT | +38.22% | $42,991,922.54 |
-| ZRO/USDT:USDT | +15.27% | $9,296,874.99 |
-| STX/USDT:USDT | +13.21% | $10,046,665.21 |
-| UAI/USDT:USDT | +11.87% | $3,109,273.80 |
+| CATE/USDT:USDT | +47.93% | $13,177,914.36 |
+| TUT/USDT:USDT | +40.21% | $43,102,922.52 |
+| ZRO/USDT:USDT | +16.55% | $9,373,468.11 |
+| STX/USDT:USDT | +13.67% | $10,074,396.44 |
+| UAI/USDT:USDT | +12.64% | $3,115,296.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EUL/USDT:USDT | below_1h_threshold | +1.88% | +1.92% |
-| ARX/USDT:USDT | below_1h_threshold | +1.82% | +1.85% |
-| TUT/USDT:USDT | below_1h_threshold | +1.72% | +1.76% |
-| CYS/USDT:USDT | below_1h_threshold | +1.65% | +1.69% |
-| DASH/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
+| TUT/USDT:USDT | below_1h_threshold | +2.90% | +2.92% |
+| CYS/USDT:USDT | below_1h_threshold | +2.03% | +2.05% |
+| EUL/USDT:USDT | below_1h_threshold | +1.92% | +1.93% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.85% | +1.87% |
+| ARX/USDT:USDT | below_1h_threshold | +1.66% | +1.67% |
 
 ## 7. 次に見るべき不足
 
