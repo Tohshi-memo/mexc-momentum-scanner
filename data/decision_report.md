@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T23:11:25.330380+00:00
+- generated_at: 2026-08-23T23:16:27.260198+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12477**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.75** / 初期 $100.00 (+16.75%)
-- 確定: 1871件 (Win 551 / Loss 708 / Flat 612) / pending 0件 / skip 2081件
+- 確定: 1871件 (Win 551 / Loss 708 / Flat 612) / pending 1件 / skip 2081件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000077 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TAC/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $116.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T23:11:16.219117+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=77454.7
-- Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-23T23:16:18.048486+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=77472.8
+- Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +18.66% | $53,994,421.50 |
-| GRASS/USDT:USDT | +10.41% | $2,156,984.65 |
-| SPK/USDT:USDT | +9.94% | $6,172,682.78 |
-| PENGU/USDT:USDT | +8.69% | $24,035,238.24 |
-| BASECAT/USDT:USDT | +8.44% | $2,842,492.50 |
+| TUT/USDT:USDT | +18.37% | $54,201,651.41 |
+| BASECAT/USDT:USDT | +13.58% | $2,868,078.55 |
+| GRASS/USDT:USDT | +11.02% | $2,162,559.19 |
+| SPK/USDT:USDT | +10.38% | $6,180,672.51 |
+| PENGU/USDT:USDT | +8.35% | $24,153,915.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +3.38% | +3.54% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.61% | +0.77% |
-| RE/USDT:USDT | below_1h_threshold | +0.56% | +0.72% |
-| STX/USDT:USDT | below_1h_threshold | +0.56% | +0.72% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.50% | +0.66% |
+| RE/USDT:USDT | below_1h_threshold | +0.56% | +0.70% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.52% | +0.66% |
+| WLD/USDT:USDT | below_1h_threshold | +0.49% | +0.63% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.34% | +0.47% |
+| MORPHO/USDT:USDT | below_1h_threshold | +0.31% | +0.45% |
 
 ## 7. 次に見るべき不足
 
