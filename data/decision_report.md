@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T17:01:29.251722+00:00
+- generated_at: 2026-08-23T17:06:24.829126+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12463**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T17:01:18.633791+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77411.2
+- 更新: 2026-08-23T17:06:15.722704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=77258.1
 - Funnel: target 1018 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +13.70% | $2,770,256.20 |
-| BTW/USDT:USDT | +9.85% | $16,541,164.67 |
-| ZORA/USDT:USDT | +6.64% | $1,216,164.35 |
-| STX/USDT:USDT | +4.33% | $14,445,977.52 |
-| USELESS/USDT:USDT | +3.48% | $2,321,607.98 |
+| BASECAT/USDT:USDT | +12.77% | $2,810,921.71 |
+| BTW/USDT:USDT | +9.84% | $16,708,479.73 |
+| ZORA/USDT:USDT | +4.94% | $1,299,730.37 |
+| PENGU/USDT:USDT | +4.37% | $10,047,988.50 |
+| STX/USDT:USDT | +4.07% | $14,520,383.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.08% |
-| DASH/USDT:USDT | below_1h_threshold | +0.56% | +0.53% |
-| LIT/USDT:USDT | below_1h_threshold | +0.43% | +0.40% |
-| LAB/USDT:USDT | below_1h_threshold | +0.40% | +0.37% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
+| TUT/USDT:USDT | below_1h_threshold | +3.31% | +3.48% |
+| OG/USDT:USDT | below_1h_threshold | +2.81% | +2.98% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.28% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.11% | +1.27% |
+| SQD/USDT:USDT | below_1h_threshold | +1.02% | +1.19% |
 
 ## 7. 次に見るべき不足
 
