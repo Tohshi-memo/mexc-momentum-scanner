@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T16:01:22.579920+00:00
+- generated_at: 2026-08-23T16:06:21.798033+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12459**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T16:01:13.261880+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77168.6
+- 更新: 2026-08-23T16:06:13.136069+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77226.3
 - Funnel: target 1018 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PENGU/USDT:USDT | +0.74% | $8,542,604.06 |
-| STX/USDT:USDT | +0.73% | $13,660,587.73 |
-| BRETT/USDT:USDT | +0.69% | $1,022,440.93 |
-| ZRO/USDT:USDT | +0.59% | $27,103,684.38 |
-| AR/USDT:USDT | +0.57% | $1,822,519.73 |
+| ON/USDT:USDT | +3.29% | $1,123,653.38 |
+| BICO/USDT:USDT | +2.18% | $1,256,323.56 |
+| LAB/USDT:USDT | +1.80% | $2,038,568.66 |
+| TUT/USDT:USDT | +1.72% | $73,199,821.23 |
+| CYS/USDT:USDT | +1.51% | $3,161,283.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +1.46% | +1.40% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.81% | +0.75% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.81% | +0.75% |
-| MORPHO/USDT:USDT | below_1h_threshold | +0.79% | +0.73% |
-| STX/USDT:USDT | below_1h_threshold | +0.74% | +0.68% |
+| ON/USDT:USDT | below_1h_threshold | +3.30% | +3.17% |
+| BICO/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
+| LAB/USDT:USDT | below_1h_threshold | +1.79% | +1.66% |
+| TUT/USDT:USDT | below_1h_threshold | +1.76% | +1.63% |
+| CYS/USDT:USDT | below_1h_threshold | +1.57% | +1.44% |
 
 ## 7. 次に見るべき不足
 
