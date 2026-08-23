@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T19:06:26.448036+00:00
+- generated_at: 2026-08-23T19:11:26.601554+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12468**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T19:06:15.892824+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77292.5
+- 更新: 2026-08-23T19:11:17.790049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77270.9
 - Funnel: target 1018 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +10.84% | $2,881,672.60 |
-| SPK/USDT:USDT | +8.47% | $3,437,804.31 |
-| PENGU/USDT:USDT | +8.08% | $12,784,912.82 |
-| BTW/USDT:USDT | +6.89% | $16,540,544.65 |
-| FF/USDT:USDT | +6.02% | $1,982,927.06 |
+| SPK/USDT:USDT | +11.79% | $3,533,211.36 |
+| BASECAT/USDT:USDT | +9.59% | $2,886,528.78 |
+| PENGU/USDT:USDT | +8.49% | $12,940,847.79 |
+| 1000RATS/USDT:USDT | +6.46% | $1,418,661.34 |
+| BTW/USDT:USDT | +6.12% | $16,605,124.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +1.35% | +1.37% |
-| KORU/USDT:USDT | below_1h_threshold | +0.91% | +0.93% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.87% |
-| CYS/USDT:USDT | below_1h_threshold | +0.72% | +0.74% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.74% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.49% | +2.54% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
+| SPK/USDT:USDT | below_1h_threshold | +1.42% | +1.47% |
+| STX/USDT:USDT | below_1h_threshold | +0.95% | +1.00% |
+| KORU/USDT:USDT | below_1h_threshold | +0.91% | +0.96% |
 
 ## 7. 次に見るべき不足
 
