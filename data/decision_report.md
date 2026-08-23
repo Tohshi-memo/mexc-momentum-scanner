@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T21:56:30.487908+00:00
+- generated_at: 2026-08-23T22:01:26.188399+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12474**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T21:56:21.295501+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=77750.1
-- Funnel: target 1018 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-23T22:01:17.300881+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=77960.0
+- Funnel: target 1018 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +17.86% | $63,171,917.78 |
-| BASECAT/USDT:USDT | +11.83% | $2,924,762.74 |
-| PENGU/USDT:USDT | +11.33% | $20,835,987.78 |
-| BRETT/USDT:USDT | +11.01% | $1,455,916.33 |
-| 1000RATS/USDT:USDT | +10.98% | $2,193,583.54 |
+| TUT/USDT:USDT | +20.10% | $55,696,171.41 |
+| PENGU/USDT:USDT | +11.95% | $20,748,357.72 |
+| 1000RATS/USDT:USDT | +11.45% | $2,161,150.49 |
+| BASECAT/USDT:USDT | +11.37% | $2,738,823.28 |
+| BRETT/USDT:USDT | +11.03% | $1,393,519.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MORPHO/USDT:USDT | below_1h_threshold | +3.61% | +3.13% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.54% | +3.06% |
-| FLOKI/USDT:USDT | below_1h_threshold | +3.34% | +2.85% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.92% | +2.44% |
-| SPK/USDT:USDT | below_1h_threshold | +2.75% | +2.27% |
+| PENGU/USDT:USDT | below_1h_threshold | +0.76% | +0.56% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.67% | +0.47% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.54% | +0.34% |
+| FLOKI/USDT:USDT | below_1h_threshold | +0.46% | +0.27% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.46% | +0.27% |
 
 ## 7. 次に見るべき不足
 
