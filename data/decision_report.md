@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T08:06:09.814886+00:00
+- generated_at: 2026-08-23T08:11:15.828597+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12448**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T08:06:03.065378+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=76052.1
+- 更新: 2026-08-23T08:11:07.222451+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=76281.5
 - Funnel: target 1018 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +50.19% | $56,194,464.35 |
-| ZRO/USDT:USDT | +21.05% | $14,699,074.63 |
-| UAI/USDT:USDT | +13.91% | $3,119,030.07 |
-| STX/USDT:USDT | +12.14% | $10,571,104.00 |
-| FF/USDT:USDT | +10.11% | $1,399,717.82 |
+| TUT/USDT:USDT | +50.64% | $56,409,830.75 |
+| ZRO/USDT:USDT | +21.18% | $14,792,227.96 |
+| UAI/USDT:USDT | +14.31% | $3,120,828.45 |
+| STX/USDT:USDT | +13.77% | $10,614,530.75 |
+| PUMPFUN/USDT:USDT | +10.38% | $108,745,832.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.10% | +1.05% |
-| FF/USDT:USDT | below_1h_threshold | +1.09% | +1.05% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.96% | +0.91% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.89% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.09% | +2.75% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.56% | +2.22% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.13% | +1.78% |
+| DASH/USDT:USDT | below_1h_threshold | +1.83% | +1.49% |
+| STX/USDT:USDT | below_1h_threshold | +1.59% | +1.25% |
 
 ## 7. 次に見るべき不足
 
