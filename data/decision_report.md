@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T22:26:26.873674+00:00
+- generated_at: 2026-08-23T22:31:24.964169+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12476**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T22:26:16.382495+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77737.7
+- 更新: 2026-08-23T22:31:16.113309+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77684.0
 - Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +24.21% | $57,033,021.69 |
-| GRASS/USDT:USDT | +10.86% | $2,026,476.75 |
-| SPK/USDT:USDT | +10.72% | $6,026,746.22 |
-| PENGU/USDT:USDT | +9.57% | $22,623,501.05 |
-| 1000RATS/USDT:USDT | +8.69% | $2,204,651.19 |
+| TUT/USDT:USDT | +22.36% | $57,190,571.61 |
+| PENGU/USDT:USDT | +11.06% | $22,893,671.81 |
+| GRASS/USDT:USDT | +10.99% | $2,031,823.41 |
+| SPK/USDT:USDT | +10.47% | $6,040,548.07 |
+| 1000RATS/USDT:USDT | +8.45% | $2,210,170.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +1.56% | +1.65% |
-| TUT/USDT:USDT | below_1h_threshold | +1.54% | +1.63% |
-| LIT/USDT:USDT | below_1h_threshold | +1.44% | +1.53% |
-| SPK/USDT:USDT | below_1h_threshold | +1.29% | +1.38% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.06% | +1.15% |
+| LIT/USDT:USDT | below_1h_threshold | +1.82% | +1.98% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.23% | +1.39% |
+| BR/USDT:USDT | below_1h_threshold | +1.11% | +1.27% |
+| SPK/USDT:USDT | below_1h_threshold | +1.07% | +1.23% |
+| INJ/USDT:USDT | below_1h_threshold | +1.06% | +1.22% |
 
 ## 7. 次に見るべき不足
 
