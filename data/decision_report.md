@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T10:36:25.015854+00:00
+- generated_at: 2026-08-23T10:41:21.839784+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12449**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.63** / 初期 $100.00 (+16.63%)
-- 確定: 1864件 (Win 549 / Loss 707 / Flat 608) / pending 1件 / skip 2056件
+- 確定: 1864件 (Win 549 / Loss 707 / Flat 608) / pending 1件 / skip 2057件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000161 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TUT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T10:36:13.580214+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=76887.7
-- Funnel: target 1018 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-23T10:41:10.111592+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=76828.3
+- Funnel: target 1018 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +40.77% | $61,761,835.73 |
-| UAI/USDT:USDT | +22.15% | $3,759,398.29 |
-| ZRO/USDT:USDT | +19.68% | $19,726,125.97 |
-| ENA/USDT:USDT | +17.67% | $123,554,153.76 |
-| STX/USDT:USDT | +12.75% | $11,447,129.68 |
+| TUT/USDT:USDT | +42.50% | $61,919,994.05 |
+| UAI/USDT:USDT | +24.78% | $3,817,806.73 |
+| ZRO/USDT:USDT | +18.30% | $19,892,366.90 |
+| ENA/USDT:USDT | +15.50% | $125,721,835.28 |
+| STX/USDT:USDT | +13.21% | $11,458,992.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +4.30% | +3.86% |
-| UAI/USDT:USDT | below_1h_threshold | +4.05% | +3.60% |
-| BOME/USDT:USDT | below_1h_threshold | +3.74% | +3.29% |
-| MOVE/USDT:USDT | below_1h_threshold | +3.25% | +2.80% |
-| RE/USDT:USDT | below_1h_threshold | +2.86% | +2.41% |
+| ETHFI/USDT:USDT | below_1h_threshold | +4.39% | +4.02% |
+| MOVE/USDT:USDT | below_1h_threshold | +3.33% | +2.96% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.67% | +2.30% |
+| RE/USDT:USDT | below_1h_threshold | +2.44% | +2.07% |
+| TUT/USDT:USDT | below_1h_threshold | +2.41% | +2.04% |
 
 ## 7. 次に見るべき不足
 
