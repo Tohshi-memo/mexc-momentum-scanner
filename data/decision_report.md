@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T23:06:29.376616+00:00
+- generated_at: 2026-08-23T23:11:25.330380+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12477**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T23:06:18.802308+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.20% price=77423.0
+- 更新: 2026-08-23T23:11:16.219117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77454.7
 - Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +20.45% | $53,801,677.54 |
-| GRASS/USDT:USDT | +10.47% | $2,125,531.79 |
-| SPK/USDT:USDT | +9.89% | $6,132,875.04 |
-| PENGU/USDT:USDT | +9.56% | $23,799,000.46 |
-| MORPHO/USDT:USDT | +7.83% | $3,418,622.27 |
+| TUT/USDT:USDT | +18.66% | $53,994,421.50 |
+| GRASS/USDT:USDT | +10.41% | $2,156,984.65 |
+| SPK/USDT:USDT | +9.94% | $6,172,682.78 |
+| PENGU/USDT:USDT | +8.69% | $24,035,238.24 |
+| BASECAT/USDT:USDT | +8.44% | $2,842,492.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +2.32% | +2.52% |
-| STX/USDT:USDT | below_1h_threshold | +0.60% | +0.80% |
-| LIT/USDT:USDT | below_1h_threshold | +0.34% | +0.54% |
-| MORPHO/USDT:USDT | below_1h_threshold | +0.31% | +0.51% |
-| BICO/USDT:USDT | below_1h_threshold | +0.31% | +0.51% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.38% | +3.54% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.61% | +0.77% |
+| RE/USDT:USDT | below_1h_threshold | +0.56% | +0.72% |
+| STX/USDT:USDT | below_1h_threshold | +0.56% | +0.72% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.50% | +0.66% |
 
 ## 7. 次に見るべき不足
 
