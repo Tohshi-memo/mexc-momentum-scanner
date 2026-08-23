@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T17:51:30.321152+00:00
+- generated_at: 2026-08-23T17:56:34.594876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12464**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T17:51:20.519917+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=77211.0
+- 更新: 2026-08-23T17:56:25.023770+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=77172.2
 - Funnel: target 1018 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.1 >= 65=1, 4h RSI 81.4 >= 65=1
+- Strict後reject: 4h RSI 66.3 >= 65=1, 4h RSI 80.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +10.90% | $3,159,104.87 |
-| BTW/USDT:USDT | +8.27% | $17,859,237.13 |
-| STRK/USDT:USDT | +6.67% | $1,443,042.17 |
-| SPK/USDT:USDT | +5.45% | $1,877,113.40 |
-| PENGU/USDT:USDT | +3.95% | $11,309,257.71 |
+| BASECAT/USDT:USDT | +11.58% | $3,171,515.66 |
+| BTW/USDT:USDT | +8.11% | $17,925,246.00 |
+| STRK/USDT:USDT | +7.10% | $1,535,863.60 |
+| SPK/USDT:USDT | +6.23% | $1,977,270.56 |
+| ZORA/USDT:USDT | +4.47% | $1,572,907.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.13% | +4.36% |
-| AR/USDT:USDT | below_1h_threshold | +2.39% | +2.62% |
-| EGLD/USDT:USDT | below_1h_threshold | +2.15% | +2.38% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.71% | +1.94% |
-| VVV/USDT:USDT | below_1h_threshold | +1.70% | +1.93% |
+| TUT/USDT:USDT | below_1h_threshold | +2.82% | +3.10% |
+| AR/USDT:USDT | below_1h_threshold | +2.70% | +2.98% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.17% | +2.45% |
+| FF/USDT:USDT | below_1h_threshold | +2.17% | +2.45% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.61% | +1.89% |
 
 ## 7. 次に見るべき不足
 
