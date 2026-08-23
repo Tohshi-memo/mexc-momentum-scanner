@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T15:01:24.766735+00:00
+- generated_at: 2026-08-23T15:06:22.338989+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12459**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T15:01:17.531590+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=77065.6
+- 更新: 2026-08-23T15:06:13.315472+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=77242.5
 - Funnel: target 1018 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +40.70% | $70,412,403.97 |
-| UAI/USDT:USDT | +30.17% | $6,555,863.11 |
-| ZRO/USDT:USDT | +22.91% | $25,975,077.15 |
-| PENDLE/USDT:USDT | +18.69% | $4,706,675.72 |
-| MORPHO/USDT:USDT | +18.67% | $1,037,057.94 |
+| TUT/USDT:USDT | +37.62% | $70,895,359.71 |
+| UAI/USDT:USDT | +32.26% | $6,658,119.68 |
+| ZRO/USDT:USDT | +23.44% | $26,077,496.18 |
+| MORPHO/USDT:USDT | +19.14% | $1,109,462.45 |
+| PENDLE/USDT:USDT | +18.58% | $4,757,601.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +1.87% | +2.01% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.29% | +0.43% |
-| TRIA/USDT:USDT | below_1h_threshold | +0.13% | +0.27% |
-| LIT/USDT:USDT | below_1h_threshold | +0.11% | +0.25% |
-| ZAMA/USDT:USDT | below_1h_threshold | +0.05% | +0.20% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.74% | +1.65% |
+| SQD/USDT:USDT | below_1h_threshold | +1.44% | +1.35% |
+| SPK/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +1.15% | +1.06% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.11% | +1.03% |
 
 ## 7. 次に見るべき不足
 
