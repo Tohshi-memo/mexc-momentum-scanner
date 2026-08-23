@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-23T09:26:25.118640+00:00
+- generated_at: 2026-08-23T09:31:15.163472+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12448**
+- closed shadow trades: **12449**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.83% / filled 20/20。**
-- 全期間 MARKET基準: n=12448, expectancy=+0.01%
+- 全期間 MARKET基準: n=12449, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.83%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,18 +46,18 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$698.20** / 初期 $100.00 (+598.20%)
-- 確定: 4475件 (Win 1368 / Loss 1465 / Flat 1642) / skip 4534件
+- 残高: **$697.16** / 初期 $100.00 (+597.16%)
+- 確定: 4476件 (Win 1368 / Loss 1466 / Flat 1642) / skip 4534件
 - 成長率目線: 平均log +0.000434 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_4PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: PUMPFUN/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.12% 残高後 $698.20
+- 最新: ENA/USDT:USDT `LIMIT_FIB1272` SL_HIT account -0.15% 残高後 $697.16
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$156.53** / 初期 $100.00 (+56.53%)
-- 確定: 1935件 (Win 533 / Loss 465 / Flat 937) / skip 3924件
+- 確定: 1935件 (Win 533 / Loss 465 / Flat 937) / skip 3925件
 - 成長率目線: 平均log +0.000232 / 幾何平均 +0.023% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0090 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0150 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MOVE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $156.53
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T09:26:16.305408+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=76519.9
+- 更新: 2026-08-23T09:31:04.712832+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76487.8
 - Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +35.34% | $59,197,435.60 |
-| ZRO/USDT:USDT | +21.92% | $17,172,455.23 |
-| UAI/USDT:USDT | +13.86% | $3,167,412.89 |
-| STX/USDT:USDT | +13.52% | $11,095,953.79 |
-| SQD/USDT:USDT | +11.90% | $2,766,958.56 |
+| TUT/USDT:USDT | +35.66% | $59,365,568.38 |
+| ZRO/USDT:USDT | +19.24% | $17,693,119.36 |
+| UAI/USDT:USDT | +17.58% | $3,191,604.55 |
+| STX/USDT:USDT | +12.80% | $11,135,723.19 |
+| ENA/USDT:USDT | +11.98% | $108,344,011.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +2.46% | +2.42% |
-| ENA/USDT:USDT | below_1h_threshold | +2.44% | +2.39% |
-| CYS/USDT:USDT | below_1h_threshold | +2.16% | +2.12% |
-| SQD/USDT:USDT | below_1h_threshold | +2.11% | +2.07% |
-| LDO/USDT:USDT | below_1h_threshold | +2.09% | +2.05% |
+| UAI/USDT:USDT | below_1h_threshold | +3.15% | +3.15% |
+| ENA/USDT:USDT | below_1h_threshold | +2.85% | +2.85% |
+| CYS/USDT:USDT | below_1h_threshold | +2.42% | +2.42% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.12% | +2.12% |
+| LDO/USDT:USDT | below_1h_threshold | +2.09% | +2.09% |
 
 ## 7. 次に見るべき不足
 
