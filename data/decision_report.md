@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T21:51:33.367217+00:00
+- generated_at: 2026-08-23T21:56:30.487908+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12474**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T21:51:22.465539+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=77766.3
+- 更新: 2026-08-23T21:56:21.295501+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=77750.1
 - Funnel: target 1018 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.4 >= 65=1
+- Strict後reject: 4h RSI 69.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +18.64% | $63,016,454.62 |
-| BASECAT/USDT:USDT | +12.83% | $2,916,575.74 |
-| 1000RATS/USDT:USDT | +11.53% | $2,186,622.48 |
-| PENGU/USDT:USDT | +11.32% | $20,698,287.85 |
-| BRETT/USDT:USDT | +10.13% | $1,440,121.13 |
+| TUT/USDT:USDT | +17.86% | $63,171,917.78 |
+| BASECAT/USDT:USDT | +11.83% | $2,924,762.74 |
+| PENGU/USDT:USDT | +11.33% | $20,835,987.78 |
+| BRETT/USDT:USDT | +11.01% | $1,455,916.33 |
+| 1000RATS/USDT:USDT | +10.98% | $2,193,583.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.64% | +4.14% |
-| MORPHO/USDT:USDT | below_1h_threshold | +3.00% | +2.50% |
-| FLOKI/USDT:USDT | below_1h_threshold | +2.90% | +2.39% |
-| SPK/USDT:USDT | below_1h_threshold | +2.75% | +2.25% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.74% | +2.23% |
+| MORPHO/USDT:USDT | below_1h_threshold | +3.61% | +3.13% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.54% | +3.06% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.34% | +2.85% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.92% | +2.44% |
+| SPK/USDT:USDT | below_1h_threshold | +2.75% | +2.27% |
 
 ## 7. 次に見るべき不足
 
