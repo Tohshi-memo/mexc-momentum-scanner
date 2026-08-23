@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T23:46:35.515704+00:00
+- generated_at: 2026-08-23T23:51:35.088469+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12479**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T23:46:22.333943+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77474.5
+- 更新: 2026-08-23T23:51:23.284116+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77565.0
 - Funnel: target 1018 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.0 >= 65=1
+- Strict後reject: 4h RSI 74.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +15.14% | $2,979,536.95 |
-| SPK/USDT:USDT | +13.25% | $6,325,715.93 |
-| TUT/USDT:USDT | +12.47% | $55,137,379.94 |
-| GRASS/USDT:USDT | +11.51% | $2,233,478.29 |
-| MORPHO/USDT:USDT | +9.21% | $3,859,272.50 |
+| BASECAT/USDT:USDT | +14.04% | $2,986,460.84 |
+| SPK/USDT:USDT | +12.81% | $6,387,328.84 |
+| TUT/USDT:USDT | +12.51% | $55,274,417.12 |
+| GRASS/USDT:USDT | +10.83% | $2,246,491.52 |
+| LIT/USDT:USDT | +9.79% | $9,109,389.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +3.49% | +3.62% |
-| SPK/USDT:USDT | below_1h_threshold | +1.70% | +1.84% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.65% | +1.78% |
-| UP/USDT:USDT | below_1h_threshold | +1.55% | +1.68% |
-| ZORA/USDT:USDT | below_1h_threshold | +0.80% | +0.93% |
+| LIT/USDT:USDT | below_1h_threshold | +4.72% | +4.74% |
+| UP/USDT:USDT | below_1h_threshold | +3.42% | +3.44% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.11% | +1.13% |
+| WIF/USDT:USDT | below_1h_threshold | +1.10% | +1.12% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.07% | +1.08% |
 
 ## 7. 次に見るべき不足
 
