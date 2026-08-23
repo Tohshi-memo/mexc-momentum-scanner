@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T12:01:13.891997+00:00
+- generated_at: 2026-08-23T12:06:22.024430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12449**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T12:01:05.707958+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77288.2
+- 更新: 2026-08-23T12:06:13.079273+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77176.2
 - Funnel: target 1018 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +46.67% | $63,955,655.31 |
-| UAI/USDT:USDT | +24.64% | $4,321,955.46 |
-| ZRO/USDT:USDT | +20.78% | $20,705,015.78 |
-| STX/USDT:USDT | +16.73% | $11,663,804.87 |
-| ENA/USDT:USDT | +16.63% | $131,091,625.99 |
+| TUT/USDT:USDT | +48.97% | $64,191,281.35 |
+| UAI/USDT:USDT | +26.18% | $4,438,602.75 |
+| STX/USDT:USDT | +17.39% | $11,781,779.29 |
+| ZRO/USDT:USDT | +16.77% | $21,133,416.40 |
+| ENA/USDT:USDT | +16.67% | $131,486,223.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +0.65% | +0.66% |
-| COTI/USDT:USDT | below_1h_threshold | +0.51% | +0.52% |
-| UNI/USDT:USDT | below_1h_threshold | +0.46% | +0.47% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.34% | +0.35% |
-| ICP/USDT:USDT | below_1h_threshold | +0.33% | +0.34% |
+| TUT/USDT:USDT | below_1h_threshold | +1.74% | +1.89% |
+| UAI/USDT:USDT | below_1h_threshold | +1.27% | +1.43% |
+| COTI/USDT:USDT | below_1h_threshold | +1.10% | +1.25% |
+| TRIA/USDT:USDT | below_1h_threshold | +0.89% | +1.04% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.59% | +0.75% |
 
 ## 7. 次に見るべき不足
 
