@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T14:46:29.303007+00:00
+- generated_at: 2026-08-23T14:51:21.721179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12459**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T14:46:17.031162+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.50% price=77086.2
-- Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-23T14:51:12.664174+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=77199.9
+- Funnel: target 1018 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +41.27% | $70,427,168.16 |
-| UAI/USDT:USDT | +28.81% | $6,445,634.03 |
-| ZRO/USDT:USDT | +23.00% | $25,834,576.70 |
-| STX/USDT:USDT | +17.34% | $13,885,198.99 |
-| MORPHO/USDT:USDT | +16.55% | $1,013,048.09 |
+| TUT/USDT:USDT | +44.08% | $70,600,184.50 |
+| UAI/USDT:USDT | +28.99% | $6,470,328.34 |
+| ZRO/USDT:USDT | +22.34% | $25,916,102.29 |
+| MORPHO/USDT:USDT | +18.69% | $1,019,459.10 |
+| STX/USDT:USDT | +16.78% | $13,903,057.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +1.97% | +2.47% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.76% | +2.25% |
-| PORTAL/USDT:USDT | below_1h_threshold | +1.20% | +1.70% |
-| SQD/USDT:USDT | below_1h_threshold | +0.68% | +1.18% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +0.48% | +0.98% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.41% | +2.76% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.96% | +2.31% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.83% | +2.18% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.70% | +2.05% |
+| OG/USDT:USDT | below_1h_threshold | +1.58% | +1.93% |
 
 ## 7. 次に見るべき不足
 
