@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T19:56:24.647441+00:00
+- generated_at: 2026-08-23T20:01:30.538396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12468**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T19:56:15.561006+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77341.8
-- Funnel: target 1018 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-23T20:01:21.570607+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77293.4
+- Funnel: target 1018 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPK/USDT:USDT | +11.35% | $4,173,017.44 |
-| 1000RATS/USDT:USDT | +11.35% | $1,711,002.93 |
-| BASECAT/USDT:USDT | +10.49% | $2,982,900.94 |
-| PENGU/USDT:USDT | +10.27% | $15,393,571.43 |
-| BRETT/USDT:USDT | +7.47% | $1,148,674.47 |
+| 1000RATS/USDT:USDT | +12.55% | $1,757,102.83 |
+| SPK/USDT:USDT | +12.52% | $4,344,764.47 |
+| BASECAT/USDT:USDT | +10.74% | $2,771,830.49 |
+| PENGU/USDT:USDT | +9.89% | $15,540,565.42 |
+| GRASS/USDT:USDT | +7.53% | $1,454,349.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_1h_threshold | +2.68% | +2.64% |
-| POL/USDT:USDT | below_1h_threshold | +1.84% | +1.80% |
-| BRETT/USDT:USDT | below_1h_threshold | +1.82% | +1.78% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.80% | +1.76% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.80% | +1.75% |
+| STXSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
+| BASECAT/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
+| LDO/USDT:USDT | below_1h_threshold | +0.59% | +0.60% |
+| BRETT/USDT:USDT | below_1h_threshold | +0.40% | +0.42% |
+| GRASS/USDT:USDT | below_1h_threshold | +0.31% | +0.33% |
 
 ## 7. 次に見るべき不足
 
