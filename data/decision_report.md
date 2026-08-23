@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T17:21:28.455354+00:00
+- generated_at: 2026-08-23T17:26:25.443837+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12464**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T17:21:17.865727+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77344.3
-- Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-23T17:26:16.667322+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=77260.0
+- Funnel: target 1018 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +19.12% | $2,960,682.77 |
-| BTW/USDT:USDT | +8.07% | $17,049,216.97 |
-| PENGU/USDT:USDT | +5.59% | $10,430,834.28 |
-| USELESS/USDT:USDT | +4.76% | $2,469,091.19 |
-| ZORA/USDT:USDT | +4.68% | $1,447,746.99 |
+| BASECAT/USDT:USDT | +17.13% | $2,993,607.37 |
+| BTW/USDT:USDT | +7.49% | $17,235,116.17 |
+| USELESS/USDT:USDT | +5.45% | $2,495,726.00 |
+| PENGU/USDT:USDT | +5.30% | $10,724,012.78 |
+| ZORA/USDT:USDT | +5.11% | $1,469,509.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +2.90% | +2.95% |
-| TUT/USDT:USDT | below_1h_threshold | +2.43% | +2.48% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.31% | +2.37% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
-| FF/USDT:USDT | below_1h_threshold | +1.96% | +2.01% |
+| STRK/USDT:USDT | below_1h_threshold | +4.76% | +4.93% |
+| TUT/USDT:USDT | below_1h_threshold | +2.85% | +3.02% |
+| FF/USDT:USDT | below_1h_threshold | +2.53% | +2.70% |
+| SPK/USDT:USDT | below_1h_threshold | +1.96% | +2.12% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.94% | +2.11% |
 
 ## 7. 次に見るべき不足
 
