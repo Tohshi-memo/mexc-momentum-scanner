@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T18:11:25.362240+00:00
+- generated_at: 2026-08-23T18:16:18.333983+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12465**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T18:11:14.831321+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77199.2
+- 更新: 2026-08-23T18:16:11.162448+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=77352.0
 - Funnel: target 1018 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +13.98% | $2,963,019.29 |
-| SPK/USDT:USDT | +7.21% | $2,275,619.37 |
-| BTW/USDT:USDT | +6.96% | $17,001,356.56 |
-| STRK/USDT:USDT | +6.53% | $1,642,533.24 |
-| PENGU/USDT:USDT | +5.00% | $11,441,926.16 |
+| BASECAT/USDT:USDT | +14.64% | $2,973,052.33 |
+| SPK/USDT:USDT | +7.65% | $2,315,766.06 |
+| BTW/USDT:USDT | +7.49% | $17,023,544.33 |
+| PENGU/USDT:USDT | +6.53% | $11,685,121.52 |
+| STRK/USDT:USDT | +6.24% | $1,693,590.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +2.21% | +2.15% |
-| SPK/USDT:USDT | below_1h_threshold | +1.66% | +1.61% |
-| TUT/USDT:USDT | below_1h_threshold | +1.49% | +1.44% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.22% | +1.17% |
-| LDO/USDT:USDT | below_1h_threshold | +0.91% | +0.86% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.79% | +2.54% |
+| SPK/USDT:USDT | below_1h_threshold | +2.40% | +2.15% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.29% | +2.03% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.22% | +1.97% |
+| TUT/USDT:USDT | below_1h_threshold | +1.74% | +1.49% |
 
 ## 7. 次に見るべき不足
 
