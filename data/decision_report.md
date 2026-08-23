@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T06:06:18.198845+00:00
+- generated_at: 2026-08-23T06:11:15.579552+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12444**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T06:06:09.288632+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=76145.4
+- 更新: 2026-08-23T06:11:06.547191+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=75945.2
 - Funnel: target 1018 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +38.90% | $52,963,772.02 |
-| ZRO/USDT:USDT | +13.33% | $11,422,321.78 |
-| UAI/USDT:USDT | +10.51% | $3,039,855.57 |
-| AGI/USDT:USDT | +10.42% | $1,077,058.35 |
-| FF/USDT:USDT | +9.72% | $1,056,169.47 |
+| TUT/USDT:USDT | +39.76% | $53,118,384.92 |
+| ZRO/USDT:USDT | +12.03% | $11,500,969.85 |
+| UAI/USDT:USDT | +10.78% | $3,041,628.04 |
+| FF/USDT:USDT | +8.79% | $1,065,605.69 |
+| AGI/USDT:USDT | +7.68% | $1,080,594.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +1.85% |
-| COTI/USDT:USDT | below_1h_threshold | +1.80% | +1.69% |
-| ONG/USDT:USDT | below_1h_threshold | +0.88% | +0.78% |
-| ENA/USDT:USDT | below_1h_threshold | +0.72% | +0.62% |
-| ARX/USDT:USDT | below_1h_threshold | +0.72% | +0.61% |
+| COTI/USDT:USDT | below_1h_threshold | +3.22% | +3.37% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.95% | +2.11% |
+| BTW/USDT:USDT | below_1h_threshold | +1.18% | +1.34% |
+| ONG/USDT:USDT | below_1h_threshold | +0.80% | +0.95% |
+| ENA/USDT:USDT | below_1h_threshold | +0.47% | +0.62% |
 
 ## 7. 次に見るべき不足
 
