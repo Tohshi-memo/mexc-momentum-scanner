@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T16:26:26.199638+00:00
+- generated_at: 2026-08-23T16:31:26.000517+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12460**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T16:26:15.520117+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=77294.6
+- 更新: 2026-08-23T16:31:16.896566+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=77301.4
 - Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.8 >= 65=1
+- Strict後reject: 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +8.00% | $2,665,094.08 |
-| ON/USDT:USDT | +3.83% | $1,347,836.57 |
-| STX/USDT:USDT | +3.34% | $13,840,583.95 |
-| PENGU/USDT:USDT | +2.84% | $9,434,053.67 |
-| CHIP/USDT:USDT | +2.24% | $2,338,375.05 |
+| BASECAT/USDT:USDT | +9.53% | $2,693,928.53 |
+| ON/USDT:USDT | +4.08% | $1,351,043.89 |
+| PENGU/USDT:USDT | +3.91% | $9,633,590.35 |
+| STX/USDT:USDT | +3.25% | $13,901,626.51 |
+| CHIP/USDT:USDT | +2.78% | $2,338,994.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +3.84% | +3.61% |
-| STX/USDT:USDT | below_1h_threshold | +3.34% | +3.12% |
-| PENGU/USDT:USDT | below_1h_threshold | +2.85% | +2.63% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.24% | +2.02% |
-| TUT/USDT:USDT | below_1h_threshold | +2.15% | +1.93% |
+| ON/USDT:USDT | below_1h_threshold | +4.08% | +3.85% |
+| PENGU/USDT:USDT | below_1h_threshold | +3.84% | +3.61% |
+| STX/USDT:USDT | below_1h_threshold | +3.25% | +3.02% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.78% | +2.55% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.18% | +1.95% |
 
 ## 7. 次に見るべき不足
 
