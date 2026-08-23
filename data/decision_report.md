@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T18:41:39.727694+00:00
+- generated_at: 2026-08-23T18:46:30.414006+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12466**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T18:41:27.364595+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=77330.1
-- Funnel: target 1018 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.1 >= 65=1, 4h RSI 69.8 >= 65=1
+- 更新: 2026-08-23T18:46:21.040997+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=77306.2
+- Funnel: target 1018 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.0 >= 65=1, 4h RSI 70.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPK/USDT:USDT | +12.91% | $2,883,024.55 |
-| BASECAT/USDT:USDT | +10.65% | $3,078,927.69 |
-| 1000RATS/USDT:USDT | +8.97% | $1,199,152.00 |
-| BTW/USDT:USDT | +7.45% | $17,449,622.11 |
-| ON/USDT:USDT | +7.01% | $1,407,542.74 |
+| SPK/USDT:USDT | +12.91% | $2,963,896.20 |
+| BASECAT/USDT:USDT | +8.66% | $3,094,085.81 |
+| BTW/USDT:USDT | +7.66% | $17,511,252.55 |
+| 1000RATS/USDT:USDT | +6.68% | $1,305,863.37 |
+| ON/USDT:USDT | +6.63% | $1,425,115.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.05% | +3.83% |
-| DASH/USDT:USDT | below_1h_threshold | +2.98% | +2.76% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.93% | +2.71% |
-| CYS/USDT:USDT | below_1h_threshold | +2.88% | +2.65% |
-| TAO/USDT:USDT | below_1h_threshold | +2.60% | +2.38% |
+| 1000RATS/USDT:USDT | below_relative_strength | +5.09% | +4.90% |
+| ON/USDT:USDT | below_1h_threshold | +3.77% | +3.58% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.21% | +3.02% |
+| DASH/USDT:USDT | below_1h_threshold | +3.03% | +2.84% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.67% | +2.48% |
 
 ## 7. 次に見るべき不足
 
