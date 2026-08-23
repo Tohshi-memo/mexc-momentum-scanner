@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T08:16:18.578998+00:00
+- generated_at: 2026-08-23T08:21:15.278641+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12448**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T08:16:09.590595+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=76230.1
+- 更新: 2026-08-23T08:21:06.583046+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=76254.6
 - Funnel: target 1018 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +51.16% | $56,579,863.33 |
-| ZRO/USDT:USDT | +20.00% | $14,867,207.88 |
-| UAI/USDT:USDT | +14.31% | $3,128,927.98 |
-| STX/USDT:USDT | +12.95% | $10,643,699.40 |
-| FF/USDT:USDT | +11.05% | $1,431,714.52 |
+| TUT/USDT:USDT | +49.76% | $56,707,852.80 |
+| ZRO/USDT:USDT | +21.17% | $14,980,137.34 |
+| UAI/USDT:USDT | +13.95% | $3,133,676.16 |
+| STX/USDT:USDT | +12.95% | $10,656,173.35 |
+| FF/USDT:USDT | +10.15% | $1,448,061.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +3.87% | +3.59% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.56% | +2.28% |
-| FF/USDT:USDT | below_1h_threshold | +2.15% | +1.88% |
-| BOME/USDT:USDT | below_1h_threshold | +2.14% | +1.87% |
-| GALA/USDT:USDT | below_1h_threshold | +1.72% | +1.45% |
+| MONAD/USDT:USDT | below_1h_threshold | +4.01% | +3.70% |
+| BOME/USDT:USDT | below_1h_threshold | +3.78% | +3.47% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.91% | +1.60% |
+| GALA/USDT:USDT | below_1h_threshold | +1.83% | +1.52% |
+| ON/USDT:USDT | below_1h_threshold | +1.65% | +1.34% |
 
 ## 7. 次に見るべき不足
 
