@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T06:36:09.064332+00:00
+- generated_at: 2026-08-23T06:41:22.800385+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12446**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.84** / 初期 $100.00 (+16.84%)
-- 確定: 1863件 (Win 549 / Loss 706 / Flat 608) / pending 1件 / skip 2052件
+- 確定: 1863件 (Win 549 / Loss 706 / Flat 608) / pending 2件 / skip 2052件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000226 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TUT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T06:36:00.826537+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=76344.4
-- Funnel: target 1018 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-23T06:41:11.651619+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=76275.9
+- Funnel: target 1018 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +42.59% | $53,776,497.76 |
-| ZRO/USDT:USDT | +14.94% | $11,796,618.44 |
-| UAI/USDT:USDT | +13.59% | $3,092,580.23 |
-| STX/USDT:USDT | +11.37% | $10,245,191.40 |
-| FF/USDT:USDT | +10.91% | $1,203,714.90 |
+| TUT/USDT:USDT | +42.19% | $53,884,035.75 |
+| ZRO/USDT:USDT | +14.97% | $11,854,086.11 |
+| UAI/USDT:USDT | +14.00% | $3,106,553.21 |
+| FF/USDT:USDT | +10.75% | $1,211,514.51 |
+| STX/USDT:USDT | +10.20% | $10,264,710.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GALA/USDT:USDT | below_1h_threshold | +4.71% | +4.35% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.43% | +4.06% |
-| STX/USDT:USDT | below_1h_threshold | +4.40% | +4.04% |
-| HEMI/USDT:USDT | below_1h_threshold | +4.29% | +3.92% |
-| COTI/USDT:USDT | below_1h_threshold | +3.18% | +2.82% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.64% | +4.36% |
+| STX/USDT:USDT | below_1h_threshold | +3.49% | +3.22% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.46% | +3.18% |
+| UAI/USDT:USDT | below_1h_threshold | +3.45% | +3.17% |
+| GALA/USDT:USDT | below_1h_threshold | +3.16% | +2.88% |
 
 ## 7. 次に見るべき不足
 
