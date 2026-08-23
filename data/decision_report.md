@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T17:11:12.297286+00:00
+- generated_at: 2026-08-23T17:16:25.003002+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12463**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T17:11:05.952345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=77254.0
+- 更新: 2026-08-23T17:16:17.982542+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.28% price=77175.6
 - Funnel: target 1018 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +15.63% | $2,839,830.33 |
-| BTW/USDT:USDT | +9.93% | $16,812,966.24 |
-| ZORA/USDT:USDT | +5.47% | $1,398,458.97 |
-| STX/USDT:USDT | +3.99% | $14,623,510.23 |
-| PENGU/USDT:USDT | +3.75% | $10,137,875.26 |
+| BASECAT/USDT:USDT | +16.57% | $2,883,281.66 |
+| BTW/USDT:USDT | +9.94% | $16,944,072.86 |
+| PENGU/USDT:USDT | +5.56% | $10,281,143.46 |
+| ZORA/USDT:USDT | +4.75% | $1,444,234.91 |
+| USELESS/USDT:USDT | +3.65% | $2,433,924.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +3.29% | +3.47% |
-| OG/USDT:USDT | below_1h_threshold | +1.50% | +1.68% |
-| FF/USDT:USDT | below_1h_threshold | +1.24% | +1.42% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.17% | +1.34% |
-| VVV/USDT:USDT | below_1h_threshold | +1.14% | +1.31% |
+| TUT/USDT:USDT | below_1h_threshold | +2.71% | +2.99% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.25% | +2.53% |
+| VVV/USDT:USDT | below_1h_threshold | +1.52% | +1.80% |
+| BASECAT/USDT:USDT | below_1h_threshold | +1.52% | +1.79% |
+| XMR/USDT:USDT | below_1h_threshold | +1.20% | +1.47% |
 
 ## 7. 次に見るべき不足
 
