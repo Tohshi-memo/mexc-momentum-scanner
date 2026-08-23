@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T11:26:15.130322+00:00
+- generated_at: 2026-08-23T11:31:15.288742+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12449**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T11:26:06.252279+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.64% price=77276.5
+- 更新: 2026-08-23T11:31:08.181342+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=77151.0
 - Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +42.19% | $63,213,027.21 |
-| UAI/USDT:USDT | +23.42% | $4,098,589.28 |
-| ENA/USDT:USDT | +20.22% | $129,018,111.01 |
-| ZRO/USDT:USDT | +19.58% | $20,371,585.18 |
-| STX/USDT:USDT | +14.89% | $11,639,546.69 |
+| TUT/USDT:USDT | +43.23% | $63,355,890.54 |
+| UAI/USDT:USDT | +22.83% | $4,126,370.62 |
+| ZRO/USDT:USDT | +19.04% | $20,477,272.62 |
+| ENA/USDT:USDT | +17.00% | $130,461,930.70 |
+| STX/USDT:USDT | +15.35% | $11,660,431.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +3.94% | +3.30% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.81% | +3.17% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.32% | +2.68% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.16% | +2.52% |
-| GRAM/USDT:USDT | below_1h_threshold | +3.02% | +2.38% |
+| TRUMPOFFICIAL/USDT:USDT | below_relative_strength | +5.02% | +4.54% |
+| XPL/USDT:USDT | below_1h_threshold | +4.16% | +3.69% |
+| GRAM/USDT:USDT | below_1h_threshold | +3.22% | +2.74% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.76% | +2.29% |
+| UNI/USDT:USDT | below_1h_threshold | +2.03% | +1.55% |
 
 ## 7. 次に見るべき不足
 
