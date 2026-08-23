@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T15:41:24.645860+00:00
+- generated_at: 2026-08-23T15:46:25.524903+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12459**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.91** / 初期 $100.00 (+16.91%)
-- 確定: 1865件 (Win 550 / Loss 707 / Flat 608) / pending 0件 / skip 2067件
+- 確定: 1865件 (Win 550 / Loss 707 / Flat 608) / pending 0件 / skip 2068件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000149 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `MARKET` EXPIRED account +0.24% 残高後 $116.91
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T15:41:15.590327+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=77252.2
-- Funnel: target 1018 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.3 >= 65=1
+- 更新: 2026-08-23T15:46:15.760447+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77195.2
+- Funnel: target 1018 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.4 >= 65=1, 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +39.28% | $72,157,643.63 |
-| UAI/USDT:USDT | +33.52% | $7,055,199.80 |
-| ZRO/USDT:USDT | +24.82% | $26,729,759.33 |
-| MORPHO/USDT:USDT | +19.66% | $1,314,263.06 |
-| PENDLE/USDT:USDT | +17.90% | $5,155,225.65 |
+| TUT/USDT:USDT | +38.56% | $72,242,329.75 |
+| UAI/USDT:USDT | +33.16% | $7,095,942.16 |
+| ZRO/USDT:USDT | +24.94% | $26,798,210.04 |
+| MORPHO/USDT:USDT | +19.56% | $1,328,569.94 |
+| STX/USDT:USDT | +18.46% | $13,912,213.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_relative_strength | +5.05% | +4.95% |
-| CYS/USDT:USDT | below_1h_threshold | +3.72% | +3.62% |
-| LDO/USDT:USDT | below_1h_threshold | +3.09% | +2.99% |
-| SPK/USDT:USDT | below_1h_threshold | +2.92% | +2.82% |
-| SPX/USDT:USDT | below_1h_threshold | +2.77% | +2.67% |
+| CYS/USDT:USDT | below_1h_threshold | +3.69% | +3.66% |
+| SPX/USDT:USDT | below_1h_threshold | +2.42% | +2.40% |
+| AR/USDT:USDT | below_1h_threshold | +2.34% | +2.32% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.33% | +2.30% |
+| MOVE/USDT:USDT | below_1h_threshold | +2.32% | +2.29% |
 
 ## 7. 次に見るべき不足
 
