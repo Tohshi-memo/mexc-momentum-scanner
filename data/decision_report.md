@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-23T21:31:31.157355+00:00
+- generated_at: 2026-08-23T21:36:34.030973+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12472**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-23T21:31:21.539280+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.80% price=77994.7
-- Funnel: target 1018 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 74.9 >= 65=1
+- 更新: 2026-08-23T21:36:24.643528+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=77749.9
+- Funnel: target 1018 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +19.82% | $62,257,743.27 |
-| BASECAT/USDT:USDT | +17.38% | $2,840,364.92 |
-| PENGU/USDT:USDT | +12.59% | $19,865,626.96 |
-| 1000RATS/USDT:USDT | +11.68% | $2,171,975.01 |
-| BRETT/USDT:USDT | +11.05% | $1,419,726.09 |
+| TUT/USDT:USDT | +17.86% | $62,479,882.57 |
+| BASECAT/USDT:USDT | +14.01% | $2,871,034.66 |
+| PENGU/USDT:USDT | +11.76% | $20,063,048.24 |
+| 1000RATS/USDT:USDT | +11.63% | $2,179,097.61 |
+| BRETT/USDT:USDT | +10.35% | $1,423,232.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOKI/USDT:USDT | below_1h_threshold | +4.62% | +3.82% |
-| MORPHO/USDT:USDT | below_1h_threshold | +4.34% | +3.54% |
-| SPK/USDT:USDT | below_1h_threshold | +3.21% | +2.41% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.86% | +2.06% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.50% | +1.70% |
+| FLOKI/USDT:USDT | below_1h_threshold | +4.14% | +3.66% |
+| SPK/USDT:USDT | below_1h_threshold | +3.44% | +2.95% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.39% | +2.91% |
+| MORPHO/USDT:USDT | below_1h_threshold | +3.34% | +2.85% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.59% | +2.11% |
 
 ## 7. 次に見るべき不足
 
