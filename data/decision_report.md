@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T15:41:43.705865+00:00
+- generated_at: 2026-08-24T15:46:22.519661+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12522**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T15:41:34.625779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=79579.9
-- Funnel: target 1022 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-24T15:46:15.360746+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=79327.0
+- Funnel: target 1022 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +79.31% | $1,635,883.47 |
-| CASHCAT/USDT:USDT | +53.51% | $1,640,738.68 |
-| PROM/USDT:USDT | +31.12% | $13,623,741.75 |
-| SUPER/USDT:USDT | +25.18% | $3,962,728.85 |
-| UAI/USDT:USDT | +24.07% | $15,007,040.19 |
+| PONS/USDT:USDT | +78.35% | $1,647,822.22 |
+| CASHCAT/USDT:USDT | +50.05% | $1,649,533.11 |
+| PROM/USDT:USDT | +31.79% | $13,675,718.18 |
+| SUPER/USDT:USDT | +25.24% | $4,207,007.51 |
+| UAI/USDT:USDT | +23.38% | $15,127,867.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_relative_strength | +5.11% | +4.99% |
-| PONS/USDT:USDT | below_1h_threshold | +4.43% | +4.30% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.98% | +3.85% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.69% | +3.56% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.26% | +3.14% |
+| BTW/USDT:USDT | below_1h_threshold | +4.54% | +4.74% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.18% | +4.38% |
+| PONS/USDT:USDT | below_1h_threshold | +3.90% | +4.09% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.88% | +4.07% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.81% | +3.00% |
 
 ## 7. 次に見るべき不足
 
