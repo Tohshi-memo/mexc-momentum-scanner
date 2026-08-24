@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T20:41:31.581782+00:00
+- generated_at: 2026-08-24T20:46:27.694433+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12544**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T20:41:22.778869+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=78926.2
+- 更新: 2026-08-24T20:46:18.725695+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=78886.3
 - Funnel: target 1022 → liquid 185 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +70.64% | $2,848,220.27 |
-| STORJ/USDT:USDT | +9.53% | $4,190,322.41 |
-| TUT/USDT:USDT | +6.67% | $63,181,885.09 |
-| ONG/USDT:USDT | +6.23% | $1,686,992.99 |
-| 1000RATS/USDT:USDT | +4.61% | $2,572,818.83 |
+| CATE/USDT:USDT | +72.53% | $2,881,920.00 |
+| STORJ/USDT:USDT | +10.23% | $4,207,583.09 |
+| TUT/USDT:USDT | +6.57% | $63,236,325.87 |
+| ONG/USDT:USDT | +6.45% | $1,706,938.27 |
+| LIT/USDT:USDT | +4.80% | $17,325,641.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +2.93% | +2.67% |
-| LIT/USDT:USDT | below_1h_threshold | +2.23% | +1.96% |
-| INJ/USDT:USDT | below_1h_threshold | +2.14% | +1.88% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +2.02% | +1.76% |
-| CATE/USDT:USDT | below_1h_threshold | +1.80% | +1.53% |
+| ONG/USDT:USDT | below_1h_threshold | +3.12% | +2.91% |
+| CATE/USDT:USDT | below_1h_threshold | +2.87% | +2.66% |
+| LIT/USDT:USDT | below_1h_threshold | +2.69% | +2.47% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +2.13% | +1.92% |
+| INJ/USDT:USDT | below_1h_threshold | +2.06% | +1.84% |
 
 ## 7. 次に見るべき不足
 
