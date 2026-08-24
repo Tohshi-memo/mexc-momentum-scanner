@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T15:56:30.713458+00:00
+- generated_at: 2026-08-24T16:01:30.408560+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12522**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T15:56:20.403594+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.55% price=79042.1
-- Funnel: target 1022 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-24T16:01:21.322572+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=79160.0
+- Funnel: target 1022 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +70.67% | $1,674,567.03 |
-| CASHCAT/USDT:USDT | +49.36% | $1,689,367.30 |
-| PROM/USDT:USDT | +32.11% | $13,869,170.78 |
-| SUPER/USDT:USDT | +25.02% | $4,262,233.99 |
-| UAI/USDT:USDT | +24.61% | $15,234,965.93 |
+| NES/USDT:USDT | +2.98% | $1,013,953.26 |
+| AERO/USDT:USDT | +1.50% | $1,876,437.96 |
+| TUT/USDT:USDT | +1.30% | $57,536,193.55 |
+| TURBO/USDT:USDT | +1.05% | $1,088,151.85 |
+| BEAT/USDT:USDT | +0.86% | $14,647,569.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.22% | +3.78% |
-| BASECAT/USDT:USDT | below_1h_threshold | +2.65% | +3.20% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.91% | +2.46% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.84% | +2.39% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.79% | +2.34% |
+| NES/USDT:USDT | below_1h_threshold | +3.26% | +3.15% |
+| AERO/USDT:USDT | below_1h_threshold | +1.37% | +1.26% |
+| TURBO/USDT:USDT | below_1h_threshold | +1.05% | +0.93% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.95% | +0.83% |
+| COTI/USDT:USDT | below_1h_threshold | +0.88% | +0.77% |
 
 ## 7. 次に見るべき不足
 
