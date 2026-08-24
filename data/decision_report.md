@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T11:06:20.141905+00:00
+- generated_at: 2026-08-24T11:11:21.627142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12509**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T11:06:11.281679+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77567.1
+- 更新: 2026-08-24T11:11:12.721482+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=77735.5
 - Funnel: target 1019 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +60.29% | $1,293,685.83 |
-| PROM/USDT:USDT | +40.14% | $11,165,445.21 |
-| TUT/USDT:USDT | +39.68% | $46,808,240.89 |
-| PORTAL/USDT:USDT | +30.08% | $3,176,006.22 |
-| CASHCAT/USDT:USDT | +21.37% | $1,082,379.59 |
+| PONS/USDT:USDT | +55.62% | $1,297,591.69 |
+| TUT/USDT:USDT | +40.19% | $46,950,977.42 |
+| PROM/USDT:USDT | +37.78% | $11,281,107.04 |
+| PORTAL/USDT:USDT | +30.30% | $3,245,826.99 |
+| CASHCAT/USDT:USDT | +21.06% | $1,082,788.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PORTAL/USDT:USDT | below_1h_threshold | +3.38% | +3.44% |
-| BASECAT/USDT:USDT | below_1h_threshold | +1.97% | +2.03% |
-| CYS/USDT:USDT | below_1h_threshold | +1.56% | +1.63% |
-| TUT/USDT:USDT | below_1h_threshold | +1.56% | +1.62% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.38% | +1.45% |
+| UAI/USDT:USDT | below_1h_threshold | +4.68% | +4.52% |
+| CYS/USDT:USDT | below_1h_threshold | +3.79% | +3.64% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.38% | +3.23% |
+| TUT/USDT:USDT | below_1h_threshold | +2.18% | +2.02% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.71% | +1.55% |
 
 ## 7. 次に見るべき不足
 
