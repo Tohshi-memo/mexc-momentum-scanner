@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T04:51:31.944979+00:00
+- generated_at: 2026-08-24T04:56:33.837657+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12490**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T04:51:21.678625+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76902.9
-- Funnel: target 1017 → liquid 177 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.2 >= 65=1, 4h RSI 66.0 >= 65=1, 4h RSI 79.6 >= 65=1
+- 更新: 2026-08-24T04:56:21.704418+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=76795.1
+- Funnel: target 1017 → liquid 177 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +17.44% | $5,037,640.42 |
-| TUT/USDT:USDT | +16.82% | $50,491,148.78 |
-| CASHCAT/USDT:USDT | +16.09% | $1,139,873.32 |
-| BASECAT/USDT:USDT | +15.38% | $3,101,352.33 |
-| LIT/USDT:USDT | +14.59% | $16,546,850.66 |
+| PROM/USDT:USDT | +22.31% | $5,177,741.24 |
+| CASHCAT/USDT:USDT | +18.04% | $1,140,344.27 |
+| TUT/USDT:USDT | +15.92% | $50,592,933.42 |
+| BASECAT/USDT:USDT | +14.79% | $3,105,149.71 |
+| LIT/USDT:USDT | +13.96% | $16,668,390.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPK/USDT:USDT | below_1h_threshold | +4.50% | +4.53% |
-| LAB/USDT:USDT | below_1h_threshold | +2.62% | +2.65% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
-| MORPHO/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.16% | +2.19% |
+| LIT/USDT:USDT | below_1h_threshold | +4.62% | +4.79% |
+| SPK/USDT:USDT | below_1h_threshold | +3.59% | +3.76% |
+| LAB/USDT:USDT | below_1h_threshold | +2.24% | +2.41% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.16% | +2.33% |
+| GPS/USDT:USDT | below_1h_threshold | +1.95% | +2.12% |
 
 ## 7. 次に見るべき不足
 
