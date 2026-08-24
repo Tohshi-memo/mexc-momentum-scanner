@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T14:36:34.638600+00:00
+- generated_at: 2026-08-24T14:41:27.681543+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12518**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T14:36:24.452132+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.33% price=79606.8
-- Funnel: target 1022 → liquid 178 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 75.4 >= 65=1, 4h RSI 72.1 >= 65=1
+- 更新: 2026-08-24T14:41:20.317311+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.39% price=79653.6
+- Funnel: target 1022 → liquid 178 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +58.67% | $1,476,824.96 |
-| CASHCAT/USDT:USDT | +46.24% | $1,409,498.98 |
-| PROM/USDT:USDT | +30.06% | $12,985,587.69 |
-| UAI/USDT:USDT | +29.52% | $13,818,454.19 |
-| SUPER/USDT:USDT | +28.00% | $3,346,419.64 |
+| PONS/USDT:USDT | +64.84% | $1,486,991.25 |
+| CASHCAT/USDT:USDT | +47.46% | $1,424,417.17 |
+| PROM/USDT:USDT | +29.85% | $13,034,221.61 |
+| UAI/USDT:USDT | +28.70% | $13,886,928.40 |
+| SUPER/USDT:USDT | +27.92% | $3,423,987.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.91% | +3.58% |
-| UAI/USDT:USDT | below_1h_threshold | +4.74% | +3.41% |
-| INJ/USDT:USDT | below_1h_threshold | +4.70% | +3.38% |
-| ZAMA/USDT:USDT | below_1h_threshold | +4.62% | +3.30% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.99% | +2.67% |
+| COTI/USDT:USDT | below_relative_strength | +6.09% | +4.71% |
+| AERO/USDT:USDT | below_relative_strength | +5.71% | +4.33% |
+| ZAMA/USDT:USDT | below_relative_strength | +5.08% | +3.70% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.91% | +3.53% |
+| PONS/USDT:USDT | below_1h_threshold | +4.77% | +3.38% |
 
 ## 7. 次に見るべき不足
 
