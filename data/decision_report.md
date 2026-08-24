@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T04:16:22.954647+00:00
+- generated_at: 2026-08-24T04:21:21.611635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12490**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T04:16:12.451982+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=77096.7
+- 更新: 2026-08-24T04:21:12.590760+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=77205.6
 - Funnel: target 1017 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +19.87% | $1,128,049.18 |
-| TUT/USDT:USDT | +17.97% | $49,444,943.19 |
-| PORTAL/USDT:USDT | +17.02% | $2,143,380.64 |
-| BASECAT/USDT:USDT | +14.26% | $3,042,381.59 |
-| PROM/USDT:USDT | +14.20% | $4,039,800.88 |
+| CASHCAT/USDT:USDT | +20.38% | $1,131,775.43 |
+| TUT/USDT:USDT | +17.46% | $49,531,550.43 |
+| PORTAL/USDT:USDT | +14.45% | $2,229,706.54 |
+| BASECAT/USDT:USDT | +14.01% | $3,050,720.99 |
+| PROM/USDT:USDT | +12.61% | $4,202,123.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.69% | +4.47% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.08% | +2.86% |
-| TUT/USDT:USDT | below_1h_threshold | +2.29% | +2.07% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.16% | +1.94% |
-| SPK/USDT:USDT | below_1h_threshold | +1.82% | +1.60% |
+| PROM/USDT:USDT | below_1h_threshold | +3.27% | +2.90% |
+| SPK/USDT:USDT | below_1h_threshold | +2.87% | +2.51% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.16% | +1.80% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.92% | +1.56% |
+| TUT/USDT:USDT | below_1h_threshold | +1.79% | +1.42% |
 
 ## 7. 次に見るべき不足
 
