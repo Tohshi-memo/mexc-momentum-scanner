@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T17:11:22.961706+00:00
+- generated_at: 2026-08-24T17:16:28.381354+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12529**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T17:11:15.876484+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79083.3
+- 更新: 2026-08-24T17:16:19.200420+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=78909.5
 - Funnel: target 1022 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +27.16% | $3,101,355.51 |
-| SCRT/USDT:USDT | +7.63% | $1,062,723.48 |
-| TUT/USDT:USDT | +6.46% | $61,351,846.34 |
-| INJ/USDT:USDT | +5.14% | $15,988,146.54 |
-| CATE/USDT:USDT | +4.39% | $1,243,790.12 |
+| STORJ/USDT:USDT | +26.06% | $3,202,331.88 |
+| TUT/USDT:USDT | +7.33% | $61,662,929.19 |
+| SCRT/USDT:USDT | +6.55% | $1,082,067.66 |
+| CATE/USDT:USDT | +4.41% | $1,245,337.62 |
+| INJ/USDT:USDT | +4.26% | $16,445,149.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.98% | +1.89% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.16% |
-| EUL/USDT:USDT | below_1h_threshold | +1.15% | +1.07% |
-| INJ/USDT:USDT | below_1h_threshold | +1.07% | +0.99% |
-| AERO/USDT:USDT | below_1h_threshold | +0.94% | +0.86% |
+| BTW/USDT:USDT | below_1h_threshold | +2.29% | +2.43% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.24% | +1.38% |
+| ONG/USDT:USDT | below_1h_threshold | +0.93% | +1.07% |
+| TEMSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.88% |
+| EUL/USDT:USDT | below_1h_threshold | +0.71% | +0.85% |
 
 ## 7. 次に見るべき不足
 
