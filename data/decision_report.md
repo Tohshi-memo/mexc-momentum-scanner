@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T14:26:27.062529+00:00
+- generated_at: 2026-08-24T14:31:28.338911+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12518**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T14:26:17.802689+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.65% price=79074.0
-- Funnel: target 1022 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 74.7 >= 65=1
+- 更新: 2026-08-24T14:31:19.251007+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.03% price=79376.3
+- Funnel: target 1022 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +60.52% | $1,470,626.54 |
-| CASHCAT/USDT:USDT | +45.22% | $1,379,427.11 |
-| SUPER/USDT:USDT | +30.39% | $3,230,374.23 |
-| UAI/USDT:USDT | +29.62% | $13,711,380.34 |
-| PROM/USDT:USDT | +28.30% | $12,918,775.86 |
+| PONS/USDT:USDT | +59.30% | $1,473,465.06 |
+| CASHCAT/USDT:USDT | +43.47% | $1,394,289.57 |
+| UAI/USDT:USDT | +29.86% | $13,758,795.66 |
+| PROM/USDT:USDT | +28.65% | $12,947,031.03 |
+| SUPER/USDT:USDT | +28.37% | $3,294,949.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +4.98% | +4.33% |
-| SOXS/USDT:USDT | below_1h_threshold | +4.91% | +4.26% |
-| BASECAT/USDT:USDT | below_1h_threshold | +4.79% | +4.14% |
-| UAI/USDT:USDT | below_1h_threshold | +4.76% | +4.12% |
-| INJ/USDT:USDT | below_1h_threshold | +3.32% | +2.67% |
+| AERO/USDT:USDT | below_relative_strength | +5.89% | +4.86% |
+| UAI/USDT:USDT | below_relative_strength | +5.04% | +4.01% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.91% | +3.88% |
+| INJ/USDT:USDT | below_1h_threshold | +4.85% | +3.82% |
+| COTI/USDT:USDT | below_1h_threshold | +4.58% | +3.55% |
 
 ## 7. 次に見るべき不足
 
