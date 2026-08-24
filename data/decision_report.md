@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-24T16:41:40.667829+00:00
+- generated_at: 2026-08-24T16:46:34.877275+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12525**
+- closed shadow trades: **12526**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=12525, expectancy=+0.01%
+- 全期間 MARKET基準: n=12526, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-1.59%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -33,7 +33,7 @@
 |---|---:|---:|---:|---:|
 | LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.87% | **+1.59%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.58% | **+1.58%** |
-| LIMIT_2PCT_LONG | 11/20 | 55.0% | +1.54% | **+0.85%** |
+| LIMIT_2PCT_LONG | 10/20 | 50.0% | +1.08% | **+0.54%** |
 | LIMIT_6PCT_LONG | 5/20 | 25.0% | +2.01% | **+0.50%** |
 | LIMIT_3PCT_LONG | 7/20 | 35.0% | +1.06% | **+0.37%** |
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$704.66** / 初期 $100.00 (+604.66%)
-- 確定: 4511件 (Win 1376 / Loss 1477 / Flat 1658) / skip 4575件
+- 確定: 4512件 (Win 1376 / Loss 1477 / Flat 1659) / skip 4575件
 - 成長率目線: 平均log +0.000433 / 幾何平均 +0.043% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: STORJ/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.12% 残高後 $704.66
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: STORJ/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $704.66
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$156.71** / 初期 $100.00 (+56.71%)
-- 確定: 1972件 (Win 536 / Loss 470 / Flat 966) / skip 3964件
+- 確定: 1972件 (Win 536 / Loss 470 / Flat 966) / skip 3965件
 - 成長率目線: 平均log +0.000228 / 幾何平均 +0.023% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: PORTAL/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $156.71
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.05** / 初期 $100.00 (+15.05%)
-- 確定: 1908件 (Win 559 / Loss 725 / Flat 624) / pending 5件 / skip 2087件
+- 確定: 1908件 (Win 559 / Loss 725 / Flat 624) / pending 5件 / skip 2088件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000166 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000158 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STORJ/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T16:41:26.320431+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=79450.0
-- Funnel: target 1022 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.5 >= 65=1, 4h RSI 72.3 >= 65=1
+- 更新: 2026-08-24T16:46:23.324620+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=79303.2
+- Funnel: target 1022 → liquid 181 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.0 >= 65=1, 4h RSI 71.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +18.01% | $2,160,024.96 |
-| TUT/USDT:USDT | +6.74% | $61,754,182.23 |
-| CASHCAT/USDT:USDT | +6.61% | $1,812,578.34 |
-| INJ/USDT:USDT | +4.12% | $14,641,715.86 |
-| TURBO/USDT:USDT | +3.43% | $1,178,418.53 |
+| STORJ/USDT:USDT | +20.29% | $2,297,960.85 |
+| CASHCAT/USDT:USDT | +5.38% | $1,825,811.98 |
+| TUT/USDT:USDT | +4.71% | $62,218,970.18 |
+| INJ/USDT:USDT | +4.49% | $15,164,159.67 |
+| US/USDT:USDT | +3.66% | $1,965,989.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +4.13% | +3.64% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.93% | +3.45% |
-| TURBO/USDT:USDT | below_1h_threshold | +3.63% | +3.15% |
-| US/USDT:USDT | below_1h_threshold | +3.09% | +2.60% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.97% | +2.49% |
+| TUT/USDT:USDT | below_1h_threshold | +4.52% | +4.22% |
+| INJ/USDT:USDT | below_1h_threshold | +4.50% | +4.20% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.93% | +3.63% |
+| US/USDT:USDT | below_1h_threshold | +3.53% | +3.24% |
+| TURBO/USDT:USDT | below_1h_threshold | +3.44% | +3.14% |
 
 ## 7. 次に見るべき不足
 
