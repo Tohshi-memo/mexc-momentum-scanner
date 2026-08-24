@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T20:26:27.760041+00:00
+- generated_at: 2026-08-24T20:31:27.694599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12544**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.84** / 初期 $100.00 (+15.84%)
-- 確定: 1910件 (Win 561 / Loss 725 / Flat 624) / pending 3件 / skip 2108件
+- 確定: 1910件 (Win 561 / Loss 725 / Flat 624) / pending 3件 / skip 2109件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000044 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $115.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T20:26:19.464897+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=78653.3
-- Funnel: target 1022 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-24T20:31:18.607005+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78660.0
+- Funnel: target 1022 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +70.69% | $2,760,166.38 |
-| STORJ/USDT:USDT | +12.87% | $4,147,712.58 |
-| TUT/USDT:USDT | +8.01% | $62,950,996.27 |
-| CYS/USDT:USDT | +5.51% | $2,480,585.16 |
-| ONG/USDT:USDT | +5.35% | $1,606,375.67 |
+| CATE/USDT:USDT | +78.18% | $2,803,087.91 |
+| STORJ/USDT:USDT | +12.37% | $4,160,580.40 |
+| TUT/USDT:USDT | +7.07% | $63,025,084.48 |
+| ONG/USDT:USDT | +5.96% | $1,614,166.19 |
+| XMR/USDT:USDT | +5.56% | $5,994,883.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +2.12% | +2.20% |
-| INJ/USDT:USDT | below_1h_threshold | +1.63% | +1.71% |
-| CATE/USDT:USDT | below_1h_threshold | +1.60% | +1.69% |
-| DOS/USDT:USDT | below_1h_threshold | +1.37% | +1.45% |
-| LIT/USDT:USDT | below_1h_threshold | +1.17% | +1.25% |
+| ONG/USDT:USDT | below_1h_threshold | +1.82% | +1.89% |
+| XMR/USDT:USDT | below_1h_threshold | +1.59% | +1.67% |
+| INJ/USDT:USDT | below_1h_threshold | +1.52% | +1.60% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.49% | +1.56% |
+| DOS/USDT:USDT | below_1h_threshold | +1.28% | +1.35% |
 
 ## 7. 次に見るべき不足
 
