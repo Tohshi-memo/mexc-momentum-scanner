@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T22:41:36.914534+00:00
+- generated_at: 2026-08-24T22:46:22.355959+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12551**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T22:41:24.899028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78793.0
+- 更新: 2026-08-24T22:46:13.487567+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=78770.0
 - Funnel: target 1022 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +74.35% | $3,342,484.41 |
-| CASHCAT/USDT:USDT | +21.83% | $2,626,689.40 |
-| STORJ/USDT:USDT | +14.87% | $4,382,006.85 |
-| ONG/USDT:USDT | +11.60% | $2,234,538.53 |
-| MONAD/USDT:USDT | +7.27% | $3,984,482.51 |
+| CATE/USDT:USDT | +74.52% | $3,348,452.95 |
+| CASHCAT/USDT:USDT | +20.39% | $2,634,509.94 |
+| STORJ/USDT:USDT | +13.19% | $4,408,750.00 |
+| ONG/USDT:USDT | +12.04% | $2,246,569.37 |
+| MONAD/USDT:USDT | +6.79% | $4,039,113.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +4.73% | +4.92% |
-| MONAD/USDT:USDT | below_1h_threshold | +4.10% | +4.29% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.61% | +2.80% |
-| BTW/USDT:USDT | below_1h_threshold | +1.65% | +1.84% |
-| SCRT/USDT:USDT | below_1h_threshold | +1.61% | +1.80% |
+| MONAD/USDT:USDT | below_1h_threshold | +3.64% | +3.86% |
+| STORJ/USDT:USDT | below_1h_threshold | +3.36% | +3.58% |
+| CRV/USDT:USDT | below_1h_threshold | +1.82% | +2.04% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.79% | +2.01% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.62% | +1.84% |
 
 ## 7. 次に見るべき不足
 
