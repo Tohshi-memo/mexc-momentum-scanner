@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T10:01:25.796392+00:00
+- generated_at: 2026-08-24T10:06:18.781864+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12507**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T10:01:17.521757+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=77543.4
-- Funnel: target 1019 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-24T10:06:11.570936+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77598.1
+- Funnel: target 1019 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +59.95% | $1,306,089.23 |
-| TUT/USDT:USDT | +41.21% | $49,603,119.11 |
-| PROM/USDT:USDT | +32.99% | $11,106,785.62 |
-| VELVET/USDT:USDT | +29.83% | $6,470,001.82 |
-| CASHCAT/USDT:USDT | +23.00% | $1,129,053.55 |
+| PONS/USDT:USDT | +61.60% | $1,280,534.87 |
+| TUT/USDT:USDT | +42.09% | $48,653,160.29 |
+| PROM/USDT:USDT | +34.05% | $10,909,937.67 |
+| VELVET/USDT:USDT | +29.12% | $6,684,566.73 |
+| PORTAL/USDT:USDT | +23.91% | $3,137,582.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
-| BTR/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
-| TUT/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
-| CC/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| CC/USDT:USDT | below_1h_threshold | +1.53% | +1.47% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.21% | +1.14% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.17% | +1.10% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.13% | +1.06% |
+| PROM/USDT:USDT | below_1h_threshold | +1.12% | +1.05% |
 
 ## 7. 次に見るべき不足
 
