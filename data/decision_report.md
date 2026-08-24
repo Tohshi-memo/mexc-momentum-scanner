@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T02:11:14.322704+00:00
+- generated_at: 2026-08-24T02:16:17.441824+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12486**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T02:11:07.264376+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=77093.0
-- Funnel: target 1018 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-24T02:16:10.287781+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=77398.0
+- Funnel: target 1018 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +17.30% | $1,027,435.12 |
-| TUT/USDT:USDT | +9.53% | $52,371,102.43 |
-| LIT/USDT:USDT | +7.48% | $11,320,107.30 |
-| GRASS/USDT:USDT | +7.19% | $2,905,596.65 |
-| 1000RATS/USDT:USDT | +6.33% | $2,461,814.21 |
+| CASHCAT/USDT:USDT | +17.79% | $1,039,433.75 |
+| GRASS/USDT:USDT | +10.16% | $2,930,688.77 |
+| LIT/USDT:USDT | +7.90% | $11,546,137.74 |
+| 1000RATS/USDT:USDT | +6.58% | $2,463,003.16 |
+| STORJ/USDT:USDT | +5.37% | $1,051,862.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +2.01% | +1.75% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.90% | +1.64% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.50% |
-| TUT/USDT:USDT | below_1h_threshold | +1.44% | +1.18% |
-| UP/USDT:USDT | below_1h_threshold | +1.34% | +1.08% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.72% | +3.06% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.56% | +1.90% |
+| WIF/USDT:USDT | below_1h_threshold | +2.49% | +1.84% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.44% | +1.78% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.22% | +1.57% |
 
 ## 7. 次に見るべき不足
 
