@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T06:51:22.049149+00:00
+- generated_at: 2026-08-24T06:56:33.821124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12495**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T06:51:14.167535+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=77463.4
-- Funnel: target 1017 → liquid 180 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.6 >= 65=1, 4h RSI 82.2 >= 65=1
+- 更新: 2026-08-24T06:56:23.618856+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.40% price=77444.0
+- Funnel: target 1017 → liquid 180 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.1 >= 65=1, 4h RSI 75.2 >= 65=1, 4h RSI 85.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +57.51% | $1,043,230.77 |
-| TUT/USDT:USDT | +31.29% | $52,892,080.93 |
-| PROM/USDT:USDT | +29.32% | $8,246,084.87 |
-| CASHCAT/USDT:USDT | +18.02% | $1,184,226.97 |
-| PORTAL/USDT:USDT | +14.89% | $2,790,060.26 |
+| PONS/USDT:USDT | +57.28% | $1,050,948.49 |
+| TUT/USDT:USDT | +35.20% | $53,212,649.57 |
+| PROM/USDT:USDT | +27.84% | $8,331,201.53 |
+| CASHCAT/USDT:USDT | +17.98% | $1,190,086.43 |
+| PORTAL/USDT:USDT | +16.21% | $2,810,945.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_relative_strength | +5.01% | +4.59% |
-| 1000RATS/USDT:USDT | below_1h_threshold | +3.69% | +3.26% |
-| BTW/USDT:USDT | below_1h_threshold | +3.22% | +2.80% |
-| STORJ/USDT:USDT | below_1h_threshold | +2.92% | +2.50% |
-| AERO/USDT:USDT | below_1h_threshold | +2.71% | +2.29% |
+| UAI/USDT:USDT | below_1h_threshold | +4.73% | +4.33% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +4.66% | +4.26% |
+| FORM/USDT:USDT | below_1h_threshold | +3.14% | +2.74% |
+| BTW/USDT:USDT | below_1h_threshold | +3.13% | +2.74% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.94% | +2.55% |
 
 ## 7. 次に見るべき不足
 
