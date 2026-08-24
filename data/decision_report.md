@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T22:56:26.721367+00:00
+- generated_at: 2026-08-24T23:01:23.450593+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12551**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T22:56:17.702064+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=78707.3
-- Funnel: target 1022 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-24T23:01:14.467889+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78724.6
+- Funnel: target 1022 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +74.78% | $3,367,292.96 |
-| CASHCAT/USDT:USDT | +22.12% | $2,653,685.88 |
-| STORJ/USDT:USDT | +15.87% | $4,451,786.71 |
-| ONG/USDT:USDT | +11.66% | $2,276,006.06 |
-| MONAD/USDT:USDT | +6.83% | $4,075,034.42 |
+| CATE/USDT:USDT | +72.34% | $3,296,720.16 |
+| CASHCAT/USDT:USDT | +18.85% | $2,494,538.56 |
+| STORJ/USDT:USDT | +15.83% | $4,455,923.79 |
+| ONG/USDT:USDT | +10.06% | $2,280,552.93 |
+| MONAD/USDT:USDT | +6.79% | $4,070,318.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +3.61% | +3.91% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.26% | +3.56% |
-| SCRT/USDT:USDT | below_1h_threshold | +1.89% | +2.19% |
-| BTW/USDT:USDT | below_1h_threshold | +1.24% | +1.54% |
-| RE/USDT:USDT | below_1h_threshold | +1.14% | +1.44% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.76% | +1.74% |
+| LYTE/USDT:USDT | below_1h_threshold | +0.64% | +0.62% |
+| PONS/USDT:USDT | below_1h_threshold | +0.49% | +0.47% |
+| AERO/USDT:USDT | below_1h_threshold | +0.33% | +0.30% |
+| AMGNSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.16% |
 
 ## 7. 次に見るべき不足
 
