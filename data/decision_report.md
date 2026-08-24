@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T06:01:23.052606+00:00
+- generated_at: 2026-08-24T06:06:19.430534+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12494**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T06:01:14.065588+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77171.6
+- 更新: 2026-08-24T06:06:12.062777+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=77083.5
 - Funnel: target 1017 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TUT/USDT:USDT | +27.75% | $50,579,957.23 |
-| CASHCAT/USDT:USDT | +21.55% | $1,140,735.15 |
-| PROM/USDT:USDT | +20.76% | $7,642,244.01 |
-| PORTAL/USDT:USDT | +14.52% | $2,605,251.12 |
-| LIT/USDT:USDT | +13.97% | $18,289,734.08 |
+| TUT/USDT:USDT | +28.49% | $50,801,197.33 |
+| PROM/USDT:USDT | +20.51% | $7,729,233.24 |
+| CASHCAT/USDT:USDT | +20.20% | $1,144,504.26 |
+| PORTAL/USDT:USDT | +14.30% | $2,654,151.74 |
+| LIT/USDT:USDT | +13.48% | $18,318,888.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.37% | +1.33% |
-| SPK/USDT:USDT | below_1h_threshold | +0.67% | +0.63% |
-| LIT/USDT:USDT | below_1h_threshold | +0.51% | +0.46% |
-| PENGU/USDT:USDT | below_1h_threshold | +0.44% | +0.40% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.38% | +0.34% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.37% | +1.45% |
+| 1000RATS/USDT:USDT | below_1h_threshold | +1.06% | +1.13% |
+| ACE/USDT:USDT | below_1h_threshold | +0.98% | +1.05% |
+| SPK/USDT:USDT | below_1h_threshold | +0.94% | +1.01% |
+| EUL/USDT:USDT | below_1h_threshold | +0.69% | +0.76% |
 
 ## 7. 次に見るべき不足
 
