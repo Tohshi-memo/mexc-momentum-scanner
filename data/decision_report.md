@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T11:46:32.225563+00:00
+- generated_at: 2026-08-24T11:51:32.920338+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12510**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T11:46:21.132576+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.06% price=78435.9
-- Funnel: target 1019 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.7 >= 65=1
+- 更新: 2026-08-24T11:51:20.535949+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.70% price=78157.7
+- Funnel: target 1019 → liquid 167 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 76.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +50.97% | $1,297,003.73 |
-| PROM/USDT:USDT | +38.20% | $11,350,056.56 |
-| PORTAL/USDT:USDT | +30.66% | $3,403,412.92 |
-| CASHCAT/USDT:USDT | +28.93% | $1,120,894.15 |
-| UAI/USDT:USDT | +21.99% | $12,638,856.76 |
+| PONS/USDT:USDT | +49.47% | $1,307,441.31 |
+| PROM/USDT:USDT | +37.68% | $11,405,585.01 |
+| PORTAL/USDT:USDT | +32.94% | $3,464,415.61 |
+| CASHCAT/USDT:USDT | +29.23% | $1,127,962.98 |
+| UAI/USDT:USDT | +24.13% | $12,759,466.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +4.88% | +3.82% |
-| PORTAL/USDT:USDT | below_1h_threshold | +3.91% | +2.85% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.64% | +2.58% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.14% | +2.08% |
-| AERO/USDT:USDT | below_1h_threshold | +2.84% | +1.78% |
+| CYS/USDT:USDT | below_1h_threshold | +4.32% | +3.62% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.88% | +3.18% |
+| AERO/USDT:USDT | below_1h_threshold | +3.36% | +2.66% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.26% | +2.56% |
+| MORPHO/USDT:USDT | below_1h_threshold | +3.14% | +2.44% |
 
 ## 7. 次に見るべき不足
 
