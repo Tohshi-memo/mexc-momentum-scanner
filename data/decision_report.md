@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-24T01:01:24.148722+00:00
+- generated_at: 2026-08-24T01:06:21.385610+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12484**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-24T01:01:14.768775+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77609.8
+- 更新: 2026-08-24T01:06:12.539657+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=77553.9
 - Funnel: target 1018 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPK/USDT:USDT | +12.37% | $7,515,317.51 |
-| GRASS/USDT:USDT | +12.15% | $2,530,730.65 |
-| LIT/USDT:USDT | +10.04% | $9,689,878.21 |
-| TUT/USDT:USDT | +9.03% | $52,655,275.79 |
-| PENGU/USDT:USDT | +8.07% | $26,008,638.79 |
+| SPK/USDT:USDT | +12.81% | $7,573,786.27 |
+| GRASS/USDT:USDT | +12.21% | $2,558,127.23 |
+| LIT/USDT:USDT | +9.50% | $9,767,020.36 |
+| PENGU/USDT:USDT | +7.63% | $26,070,344.95 |
+| 1000RATS/USDT:USDT | +7.18% | $2,348,002.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.61% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.51% | +0.59% |
-| BTW/USDT:USDT | below_1h_threshold | +0.44% | +0.52% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.30% | +0.39% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.30% | +0.39% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.64% | +0.79% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.51% | +0.66% |
+| BASECAT/USDT:USDT | below_1h_threshold | +0.48% | +0.63% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.30% | +0.46% |
 
 ## 7. 次に見るべき不足
 
