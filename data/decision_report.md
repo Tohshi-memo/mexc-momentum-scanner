@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T21:11:19.864359+00:00
+- generated_at: 2026-08-25T21:16:18.229418+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12635**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T21:11:10.950087+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78070.0
-- Funnel: target 1023 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-25T21:16:11.021219+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78170.0
+- Funnel: target 1023 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +35.17% | $4,990,695.06 |
-| AGI/USDT:USDT | +6.79% | $1,704,198.50 |
-| PROM/USDT:USDT | +3.09% | $12,489,933.29 |
-| NGAS/USDT:USDT | +1.54% | $1,354,537.58 |
-| KORU/USDT:USDT | +1.42% | $40,288,656.19 |
+| BMT/USDT:USDT | +35.47% | $5,064,083.07 |
+| AGI/USDT:USDT | +6.24% | $1,714,739.61 |
+| PROM/USDT:USDT | +2.89% | $12,495,891.34 |
+| KORU/USDT:USDT | +1.56% | $40,301,206.24 |
+| NGAS/USDT:USDT | +1.43% | $1,357,373.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGI/USDT:USDT | below_1h_threshold | +3.40% | +3.53% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.70% | +0.82% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.41% | +0.54% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.34% | +0.47% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.46% |
+| AGI/USDT:USDT | below_1h_threshold | +2.50% | +2.50% |
+| BASECAT/USDT:USDT | below_1h_threshold | +1.11% | +1.10% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.70% | +0.70% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.56% | +0.55% |
+| MVLL/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
 
 ## 7. 次に見るべき不足
 
