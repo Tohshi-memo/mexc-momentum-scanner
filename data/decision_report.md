@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T17:31:30.406694+00:00
+- generated_at: 2026-08-25T17:36:21.368253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T17:31:21.449351+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=78862.8
+- 更新: 2026-08-25T17:36:12.274273+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=78986.2
 - Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGI/USDT:USDT | +3.12% | $1,411,118.84 |
-| BEAT/USDT:USDT | +2.39% | $9,691,847.41 |
-| STX/USDT:USDT | +2.21% | $9,167,464.29 |
-| USELESS/USDT:USDT | +2.12% | $1,327,862.33 |
-| HOLO/USDT:USDT | +1.58% | $2,011,589.77 |
+| BEAT/USDT:USDT | +2.47% | $9,746,439.47 |
+| USELESS/USDT:USDT | +2.33% | $1,333,932.83 |
+| STX/USDT:USDT | +2.17% | $9,179,556.67 |
+| AGI/USDT:USDT | +2.17% | $1,415,449.84 |
+| HOLO/USDT:USDT | +1.79% | $2,012,531.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +1.59% | +1.91% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.58% | +1.91% |
-| STX/USDT:USDT | below_1h_threshold | +1.11% | +1.44% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.90% | +1.22% |
-| TESLA/USDT:USDT | below_1h_threshold | +0.81% | +1.14% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.11% | +3.28% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.67% | +1.84% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.33% | +1.51% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.22% | +1.39% |
+| STX/USDT:USDT | below_1h_threshold | +1.08% | +1.25% |
 
 ## 7. 次に見るべき不足
 
