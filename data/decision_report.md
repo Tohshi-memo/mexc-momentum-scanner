@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T16:41:22.735672+00:00
+- generated_at: 2026-08-25T16:46:26.879530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12623**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T16:41:13.577153+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=79166.2
+- 更新: 2026-08-25T16:46:20.515971+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=79283.4
 - Funnel: target 1023 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZRO/USDT:USDT | +2.16% | $17,260,320.36 |
-| ENA/USDT:USDT | +1.79% | $40,791,908.30 |
-| JASMY/USDT:USDT | +1.76% | $6,931,997.71 |
-| MORPHO/USDT:USDT | +1.64% | $1,556,966.37 |
-| PROM/USDT:USDT | +1.62% | $13,534,241.76 |
+| ZRO/USDT:USDT | +2.75% | $17,400,287.59 |
+| ENA/USDT:USDT | +2.21% | $40,943,326.08 |
+| PROM/USDT:USDT | +1.71% | $13,538,072.60 |
+| JASMY/USDT:USDT | +1.66% | $6,998,236.03 |
+| COTI/USDT:USDT | +1.58% | $1,291,883.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +2.15% | +2.53% |
-| ENA/USDT:USDT | below_1h_threshold | +1.80% | +2.17% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.76% | +2.13% |
-| PROM/USDT:USDT | below_1h_threshold | +1.67% | +2.04% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.65% | +2.02% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.65% | +2.87% |
+| ENA/USDT:USDT | below_1h_threshold | +2.20% | +2.43% |
+| PROM/USDT:USDT | below_1h_threshold | +1.82% | +2.04% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.66% | +1.89% |
+| COTI/USDT:USDT | below_1h_threshold | +1.58% | +1.81% |
 
 ## 7. 次に見るべき不足
 
