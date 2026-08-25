@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T18:41:53.660711+00:00
+- generated_at: 2026-08-25T18:46:29.392430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T18:41:43.951089+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=79131.0
-- Funnel: target 1023 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 67.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-25T18:46:20.319839+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=79143.5
+- Funnel: target 1023 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +13.12% | $1,009,797.89 |
-| FARTCOIN/USDT:USDT | +4.32% | $13,780,613.87 |
-| HOLO/USDT:USDT | +3.88% | $2,059,248.71 |
-| USELESS/USDT:USDT | +3.34% | $1,332,152.76 |
-| ORDI/USDT:USDT | +2.83% | $3,481,986.10 |
+| BMT/USDT:USDT | +11.33% | $1,072,930.22 |
+| FARTCOIN/USDT:USDT | +4.65% | $13,856,116.82 |
+| HOLO/USDT:USDT | +4.07% | $2,064,858.49 |
+| PROM/USDT:USDT | +3.85% | $12,896,116.72 |
+| USELESS/USDT:USDT | +3.37% | $1,335,190.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +2.22% | +2.31% |
-| PROM/USDT:USDT | below_1h_threshold | +1.88% | +1.97% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.66% | +1.75% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.39% | +1.48% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.37% | +1.46% |
+| BMT/USDT:USDT | below_1h_threshold | +4.48% | +4.56% |
+| PROM/USDT:USDT | below_1h_threshold | +3.00% | +3.07% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.75% | +2.83% |
+| SPX/USDT:USDT | below_1h_threshold | +2.66% | +2.73% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.42% | +1.50% |
 
 ## 7. 次に見るべき不足
 
