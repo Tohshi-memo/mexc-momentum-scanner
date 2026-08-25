@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T17:21:21.738445+00:00
+- generated_at: 2026-08-25T17:26:20.737516+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T17:21:12.750742+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=78956.6
-- Funnel: target 1023 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-25T17:26:11.594383+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=78829.1
+- Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +2.79% | $9,621,342.72 |
-| SKYAI/USDT:USDT | +2.78% | $5,826,073.25 |
-| USELESS/USDT:USDT | +2.25% | $1,312,351.06 |
-| ZRO/USDT:USDT | +2.24% | $17,706,185.67 |
-| HOLO/USDT:USDT | +1.70% | $2,004,709.72 |
+| BEAT/USDT:USDT | +2.63% | $9,657,817.32 |
+| ZRO/USDT:USDT | +1.94% | $17,823,958.80 |
+| STX/USDT:USDT | +1.67% | $9,127,567.40 |
+| HOLO/USDT:USDT | +1.57% | $2,005,388.56 |
+| USELESS/USDT:USDT | +1.46% | $1,316,431.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.06% | +3.27% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +2.19% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.90% | +1.10% |
-| VET/USDT:USDT | below_1h_threshold | +0.83% | +1.04% |
-| HOLO/USDT:USDT | below_1h_threshold | +0.74% | +0.95% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.82% | +2.19% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.01% | +1.38% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.90% | +1.27% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.81% | +1.18% |
+| KORU/USDT:USDT | below_1h_threshold | +0.74% | +1.10% |
 
 ## 7. 次に見るべき不足
 
