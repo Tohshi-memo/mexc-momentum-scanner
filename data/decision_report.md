@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T18:36:28.925259+00:00
+- generated_at: 2026-08-25T18:41:53.660711+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.86** / 初期 $100.00 (+13.86%)
-- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 0件 / skip 2163件
+- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 0件 / skip 2165件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000051 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_5PCT` SL_HIT account -0.17% 残高後 $113.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T18:36:19.574825+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=79139.9
-- Funnel: target 1023 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.1 >= 65=1
+- 更新: 2026-08-25T18:41:43.951089+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=79131.0
+- Funnel: target 1023 → liquid 176 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 67.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FARTCOIN/USDT:USDT | +3.82% | $13,598,722.87 |
-| HOLO/USDT:USDT | +3.68% | $2,051,261.10 |
-| USELESS/USDT:USDT | +3.36% | $1,331,458.78 |
-| POPCAT/USDT:USDT | +2.81% | $1,938,570.24 |
-| SPX/USDT:USDT | +2.64% | $5,719,441.12 |
+| BMT/USDT:USDT | +13.12% | $1,009,797.89 |
+| FARTCOIN/USDT:USDT | +4.32% | $13,780,613.87 |
+| HOLO/USDT:USDT | +3.88% | $2,059,248.71 |
+| USELESS/USDT:USDT | +3.34% | $1,332,152.76 |
+| ORDI/USDT:USDT | +2.83% | $3,481,986.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +2.11% | +2.19% |
-| PROM/USDT:USDT | below_1h_threshold | +1.75% | +1.83% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.71% | +1.79% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.43% | +1.51% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.26% | +1.34% |
+| SPX/USDT:USDT | below_1h_threshold | +2.22% | +2.31% |
+| PROM/USDT:USDT | below_1h_threshold | +1.88% | +1.97% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.66% | +1.75% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.39% | +1.48% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.37% | +1.46% |
 
 ## 7. 次に見るべき不足
 
