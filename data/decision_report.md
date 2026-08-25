@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T23:41:23.574255+00:00
+- generated_at: 2026-08-25T23:46:29.131045+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12640**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T23:41:14.302218+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=78605.8
+- 更新: 2026-08-25T23:46:19.885314+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=78423.0
 - Funnel: target 1023 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.3 >= 65=1
+- Strict後reject: 4h RSI 89.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +66.69% | $1,394,505.51 |
-| BMT/USDT:USDT | +44.39% | $7,131,715.36 |
-| AGI/USDT:USDT | +11.39% | $2,041,277.32 |
-| STAR/USDT:USDT | +8.27% | $1,072,125.52 |
-| TAC/USDT:USDT | +2.97% | $8,161,100.15 |
+| LONGXIA/USDT:USDT | +66.37% | $1,421,057.21 |
+| BMT/USDT:USDT | +44.76% | $7,178,719.49 |
+| AGI/USDT:USDT | +13.00% | $2,053,361.32 |
+| STAR/USDT:USDT | +7.16% | $1,074,413.00 |
+| NGAS/USDT:USDT | +1.93% | $1,591,835.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGI/USDT:USDT | below_1h_threshold | +2.82% | +3.13% |
-| TAC/USDT:USDT | below_1h_threshold | +1.05% | +1.36% |
-| STX/USDT:USDT | below_1h_threshold | +0.89% | +1.19% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.50% | +0.81% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.48% | +0.79% |
+| AGI/USDT:USDT | below_1h_threshold | +4.09% | +4.63% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.50% | +1.04% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.48% | +1.02% |
+| RE/USDT:USDT | below_1h_threshold | +0.36% | +0.91% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.80% |
 
 ## 7. 次に見るべき不足
 
