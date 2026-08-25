@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T16:26:26.042690+00:00
+- generated_at: 2026-08-25T16:31:22.446014+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12623**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T16:26:17.113686+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=79104.0
+- 更新: 2026-08-25T16:31:13.424163+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=79155.8
 - Funnel: target 1023 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +4.00% | $1,676,727.84 |
-| ZRO/USDT:USDT | +3.24% | $16,574,414.88 |
-| ACE/USDT:USDT | +2.30% | $4,841,167.66 |
-| CASHCAT/USDT:USDT | +2.08% | $3,265,158.66 |
-| UNITREE/USDT:USDT | +1.90% | $1,586,054.26 |
+| ZRO/USDT:USDT | +3.48% | $16,827,849.30 |
+| BASECAT/USDT:USDT | +2.98% | $1,681,527.02 |
+| PROM/USDT:USDT | +2.77% | $13,501,589.62 |
+| ENA/USDT:USDT | +2.13% | $39,791,475.12 |
+| UNITREE/USDT:USDT | +2.04% | $1,587,479.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +4.01% | +4.46% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.24% | +3.69% |
-| ACE/USDT:USDT | below_1h_threshold | +2.32% | +2.77% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.08% | +2.53% |
-| ENA/USDT:USDT | below_1h_threshold | +1.89% | +2.34% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.56% | +3.95% |
+| PROM/USDT:USDT | below_1h_threshold | +2.70% | +3.09% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.68% | +3.07% |
+| ENA/USDT:USDT | below_1h_threshold | +2.13% | +2.52% |
+| ACE/USDT:USDT | below_1h_threshold | +1.64% | +2.02% |
 
 ## 7. 次に見るべき不足
 
