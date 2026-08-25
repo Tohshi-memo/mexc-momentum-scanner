@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T18:11:20.639663+00:00
+- generated_at: 2026-08-25T18:16:47.889485+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T18:11:11.712266+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=79195.8
+- 更新: 2026-08-25T18:16:38.739436+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=79295.6
 - Funnel: target 1023 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FARTCOIN/USDT:USDT | +3.83% | $13,119,489.15 |
-| SPX/USDT:USDT | +3.63% | $5,302,189.76 |
-| HOLO/USDT:USDT | +3.32% | $2,026,422.11 |
-| USELESS/USDT:USDT | +2.99% | $1,313,963.17 |
-| STX/USDT:USDT | +2.60% | $9,414,641.41 |
+| SPX/USDT:USDT | +3.71% | $5,370,504.46 |
+| FARTCOIN/USDT:USDT | +3.63% | $13,252,821.59 |
+| USELESS/USDT:USDT | +3.50% | $1,318,386.21 |
+| HOLO/USDT:USDT | +3.33% | $2,033,638.46 |
+| POPCAT/USDT:USDT | +2.91% | $1,923,915.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +3.49% | +3.50% |
-| TAC/USDT:USDT | below_1h_threshold | +1.76% | +1.77% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
-| SQD/USDT:USDT | below_1h_threshold | +0.90% | +0.91% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
+| SPX/USDT:USDT | below_1h_threshold | +3.51% | +3.40% |
+| VELVET/USDT:USDT | below_1h_threshold | +1.68% | +1.56% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.26% | +1.14% |
+| HYPE/USDT:USDT | below_1h_threshold | +1.13% | +1.01% |
+| GRAM/USDT:USDT | below_1h_threshold | +1.00% | +0.88% |
 
 ## 7. 次に見るべき不足
 
