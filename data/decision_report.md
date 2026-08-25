@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T21:41:17.812030+00:00
+- generated_at: 2026-08-25T21:46:19.581629+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12635**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.86** / 初期 $100.00 (+13.86%)
-- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 0件 / skip 2171件
+- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 0件 / skip 2172件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000132 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_5PCT` SL_HIT account -0.17% 残高後 $113.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T21:41:08.872605+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=78590.1
-- Funnel: target 1023 → liquid 181 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-25T21:46:10.435628+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.52% price=78570.3
+- Funnel: target 1023 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +43.65% | $5,493,196.90 |
-| AGI/USDT:USDT | +8.63% | $1,778,029.18 |
-| PROM/USDT:USDT | +4.17% | $12,628,041.34 |
-| KORU/USDT:USDT | +2.30% | $40,367,476.72 |
-| LYTE/USDT:USDT | +1.96% | $1,434,898.25 |
+| BMT/USDT:USDT | +39.38% | $5,613,658.96 |
+| AGI/USDT:USDT | +16.70% | $1,831,572.71 |
+| PROM/USDT:USDT | +4.42% | $12,647,024.91 |
+| KORU/USDT:USDT | +2.35% | $40,396,993.44 |
+| NGAS/USDT:USDT | +1.89% | $1,443,754.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_relative_strength | +5.49% | +4.94% |
-| AGI/USDT:USDT | below_1h_threshold | +4.68% | +4.14% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.98% | +1.44% |
-| ONT/USDT:USDT | below_1h_threshold | +1.35% | +0.81% |
-| TWT/USDT:USDT | below_1h_threshold | +1.26% | +0.72% |
+| BMT/USDT:USDT | below_1h_threshold | +2.22% | +1.71% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.74% | +1.22% |
+| ONT/USDT:USDT | below_1h_threshold | +1.69% | +1.18% |
+| TWT/USDT:USDT | below_1h_threshold | +1.39% | +0.88% |
+| PROM/USDT:USDT | below_1h_threshold | +1.38% | +0.87% |
 
 ## 7. 次に見るべき不足
 
