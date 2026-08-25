@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T10:06:26.111110+00:00
+- generated_at: 2026-08-25T10:11:18.477656+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12594**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T10:06:17.045634+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79179.2
+- 更新: 2026-08-25T10:11:11.305866+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=79270.0
 - Funnel: target 1023 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +72.72% | $4,702,077.61 |
-| JIMOTHY/USDT:USDT | +70.11% | $1,283,260.22 |
-| TAC/USDT:USDT | +34.14% | $6,161,866.31 |
-| ONG/USDT:USDT | +32.27% | $7,172,621.67 |
-| CASHCAT/USDT:USDT | +22.84% | $3,143,151.13 |
+| CATE/USDT:USDT | +72.56% | $4,722,810.36 |
+| JIMOTHY/USDT:USDT | +69.19% | $1,290,672.11 |
+| ONG/USDT:USDT | +34.25% | $7,245,298.25 |
+| TAC/USDT:USDT | +33.91% | $6,169,187.07 |
+| CASHCAT/USDT:USDT | +22.81% | $3,147,675.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.01% | +2.99% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.03% | +2.00% |
-| KORU/USDT:USDT | below_1h_threshold | +1.83% | +1.80% |
-| BICO/USDT:USDT | below_1h_threshold | +1.74% | +1.72% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.01% | +2.87% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.03% | +1.89% |
+| KORU/USDT:USDT | below_1h_threshold | +1.83% | +1.69% |
+| BICO/USDT:USDT | below_1h_threshold | +1.63% | +1.50% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.43% |
 
 ## 7. 次に見るべき不足
 
