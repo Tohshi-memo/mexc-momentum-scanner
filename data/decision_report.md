@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T11:26:21.872566+00:00
+- generated_at: 2026-08-25T11:31:22.718195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12598**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T11:26:12.886884+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79260.1
+- 更新: 2026-08-25T11:31:13.808363+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=79247.9
 - Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +74.84% | $4,800,693.78 |
-| JIMOTHY/USDT:USDT | +72.78% | $1,595,711.86 |
-| ONG/USDT:USDT | +39.37% | $8,105,564.30 |
-| TAC/USDT:USDT | +27.70% | $6,572,906.50 |
-| BR/USDT:USDT | +17.64% | $3,531,993.82 |
+| CATE/USDT:USDT | +73.52% | $4,806,632.44 |
+| JIMOTHY/USDT:USDT | +71.40% | $1,603,210.62 |
+| ONG/USDT:USDT | +37.44% | $8,152,136.18 |
+| TAC/USDT:USDT | +29.96% | $6,586,155.10 |
+| BR/USDT:USDT | +18.20% | $3,537,407.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.56% | +1.58% |
-| ONG/USDT:USDT | below_1h_threshold | +1.09% | +1.11% |
-| INJ/USDT:USDT | below_1h_threshold | +0.87% | +0.89% |
-| CATE/USDT:USDT | below_1h_threshold | +0.74% | +0.76% |
+| PONS/USDT:USDT | below_1h_threshold | +2.55% | +2.58% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.94% | +0.97% |
+| BICO/USDT:USDT | below_1h_threshold | +0.67% | +0.71% |
+| INJ/USDT:USDT | below_1h_threshold | +0.63% | +0.67% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.52% | +0.55% |
 
 ## 7. 次に見るべき不足
 
