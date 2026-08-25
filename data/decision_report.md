@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T17:51:27.813670+00:00
+- generated_at: 2026-08-25T17:56:24.626970+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T17:51:18.714993+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=79120.1
+- 更新: 2026-08-25T17:56:15.644291+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=79188.0
 - Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AGI/USDT:USDT | +3.94% | $1,437,847.98 |
-| STX/USDT:USDT | +3.53% | $9,242,254.98 |
-| USELESS/USDT:USDT | +3.50% | $1,415,981.12 |
-| HOLO/USDT:USDT | +3.17% | $2,023,695.92 |
-| BEAT/USDT:USDT | +2.87% | $10,048,181.45 |
+| STX/USDT:USDT | +4.15% | $9,368,736.32 |
+| HOLO/USDT:USDT | +3.34% | $2,025,007.48 |
+| USELESS/USDT:USDT | +3.05% | $1,427,537.16 |
+| POPCAT/USDT:USDT | +2.71% | $1,924,635.42 |
+| FARTCOIN/USDT:USDT | +2.10% | $14,306,366.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +4.10% | +4.10% |
-| ONG/USDT:USDT | below_1h_threshold | +3.26% | +3.26% |
-| CYS/USDT:USDT | below_1h_threshold | +3.23% | +3.23% |
-| STX/USDT:USDT | below_1h_threshold | +2.42% | +2.42% |
-| HOLO/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
+| CYS/USDT:USDT | below_1h_threshold | +3.51% | +3.42% |
+| STX/USDT:USDT | below_1h_threshold | +3.04% | +2.95% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.44% | +2.35% |
+| HOLO/USDT:USDT | below_1h_threshold | +2.37% | +2.29% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.28% | +2.19% |
 
 ## 7. 次に見るべき不足
 
