@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T17:16:28.662820+00:00
+- generated_at: 2026-08-25T17:21:21.738445+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T17:16:19.741968+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=78941.0
+- 更新: 2026-08-25T17:21:12.750742+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=78956.6
 - Funnel: target 1023 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +2.23% | $9,565,986.91 |
-| ZRO/USDT:USDT | +1.94% | $17,642,631.36 |
-| HOLO/USDT:USDT | +1.87% | $2,003,288.52 |
-| USELESS/USDT:USDT | +1.54% | $1,311,402.24 |
-| PROM/USDT:USDT | +1.49% | $12,984,515.92 |
+| BEAT/USDT:USDT | +2.79% | $9,621,342.72 |
+| SKYAI/USDT:USDT | +2.78% | $5,826,073.25 |
+| USELESS/USDT:USDT | +2.25% | $1,312,351.06 |
+| ZRO/USDT:USDT | +2.24% | $17,706,185.67 |
+| HOLO/USDT:USDT | +1.70% | $2,004,709.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +4.33% | +4.56% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.43% | +1.66% |
-| HOLO/USDT:USDT | below_1h_threshold | +0.94% | +1.17% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.90% | +1.12% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.96% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.06% | +3.27% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +2.19% |
+| UNITREE/USDT:USDT | below_1h_threshold | +0.90% | +1.10% |
+| VET/USDT:USDT | below_1h_threshold | +0.83% | +1.04% |
+| HOLO/USDT:USDT | below_1h_threshold | +0.74% | +0.95% |
 
 ## 7. 次に見るべき不足
 
