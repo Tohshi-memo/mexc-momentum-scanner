@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T19:06:30.597468+00:00
+- generated_at: 2026-08-25T19:11:35.552046+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12626**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T19:06:21.331903+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=79063.2
+- 更新: 2026-08-25T19:11:26.416884+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=79063.1
 - Funnel: target 1023 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +16.90% | $1,358,073.35 |
-| PROM/USDT:USDT | +4.12% | $12,748,616.92 |
-| FARTCOIN/USDT:USDT | +3.74% | $13,709,015.33 |
-| HOLO/USDT:USDT | +3.36% | $2,089,926.53 |
-| USELESS/USDT:USDT | +2.84% | $1,313,152.27 |
+| BMT/USDT:USDT | +16.47% | $1,409,737.82 |
+| PROM/USDT:USDT | +4.44% | $12,756,831.33 |
+| HOLO/USDT:USDT | +4.14% | $2,098,504.51 |
+| FARTCOIN/USDT:USDT | +3.90% | $13,797,629.49 |
+| USELESS/USDT:USDT | +3.32% | $1,315,923.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| ZRO/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
 | CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.09% |
 | UNITREE/USDT:USDT | below_1h_threshold | +1.02% | +1.06% |
 | MRNASTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
 | KORU/USDT:USDT | below_1h_threshold | +0.73% | +0.77% |
-| STX/USDT:USDT | below_1h_threshold | +0.69% | +0.72% |
 
 ## 7. 次に見るべき不足
 
