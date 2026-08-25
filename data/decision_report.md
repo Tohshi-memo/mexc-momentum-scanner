@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T14:51:46.475650+00:00
+- generated_at: 2026-08-25T14:56:40.750331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12607**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.46** / 初期 $100.00 (+14.46%)
-- 確定: 1931件 (Win 564 / Loss 737 / Flat 630) / pending 3件 / skip 2151件
+- 確定: 1931件 (Win 564 / Loss 737 / Flat 630) / pending 3件 / skip 2152件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000040 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: POPCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T14:51:30.803265+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.72% price=79195.9
+- 更新: 2026-08-25T14:56:29.588261+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.83% price=79279.1
 - Funnel: target 1023 → liquid 185 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=42, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.7 >= 65=1, 4h RSI 65.1 >= 65=1, 4h RSI 65.6 >= 65=1, 4h RSI 79.9 >= 65=1
+- Surge前reject: below_1h_threshold=43, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 66.7 >= 65=1, 4h RSI 73.0 >= 65=1, 4h RSI 79.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +91.46% | $5,671,429.97 |
-| JIMOTHY/USDT:USDT | +59.56% | $2,113,100.64 |
-| AGI/USDT:USDT | +46.34% | $1,001,986.44 |
-| ONG/USDT:USDT | +40.85% | $11,054,301.21 |
-| TAC/USDT:USDT | +40.40% | $7,342,401.46 |
+| CATE/USDT:USDT | +89.05% | $5,688,441.61 |
+| JIMOTHY/USDT:USDT | +59.56% | $2,124,484.93 |
+| AGI/USDT:USDT | +45.60% | $1,011,517.74 |
+| ONG/USDT:USDT | +40.98% | $11,074,396.52 |
+| TAC/USDT:USDT | +39.84% | $7,365,553.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JIMOTHY/USDT:USDT | below_relative_strength | +5.41% | +4.68% |
-| SPX/USDT:USDT | below_relative_strength | +5.38% | +4.66% |
-| JASMY/USDT:USDT | below_relative_strength | +5.29% | +4.56% |
-| TUT/USDT:USDT | below_1h_threshold | +4.37% | +3.64% |
-| VVV/USDT:USDT | below_1h_threshold | +4.14% | +3.42% |
+| JIMOTHY/USDT:USDT | below_relative_strength | +5.61% | +4.78% |
+| SPX/USDT:USDT | below_relative_strength | +5.38% | +4.55% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.92% | +4.09% |
+| TUT/USDT:USDT | below_1h_threshold | +4.91% | +4.08% |
+| LIT/USDT:USDT | below_1h_threshold | +4.39% | +3.56% |
 
 ## 7. 次に見るべき不足
 
