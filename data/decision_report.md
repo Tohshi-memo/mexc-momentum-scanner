@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T22:26:51.917571+00:00
+- generated_at: 2026-08-25T22:31:26.639558+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12638**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T22:26:32.254406+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=78794.3
-- Funnel: target 1023 → liquid 183 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 85.3 >= 65=1
+- 更新: 2026-08-25T22:31:16.926228+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=78581.0
+- Funnel: target 1023 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.9 >= 65=1, 4h RSI 85.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +53.97% | $1,034,083.27 |
-| BMT/USDT:USDT | +48.66% | $6,227,852.54 |
-| AGI/USDT:USDT | +13.29% | $1,927,745.89 |
-| STAR/USDT:USDT | +7.20% | $1,015,200.66 |
-| PROM/USDT:USDT | +4.27% | $12,673,249.63 |
+| LONGXIA/USDT:USDT | +55.07% | $1,053,195.01 |
+| BMT/USDT:USDT | +47.80% | $6,279,497.96 |
+| AGI/USDT:USDT | +12.75% | $1,933,565.51 |
+| STAR/USDT:USDT | +7.18% | $1,015,969.99 |
+| PROM/USDT:USDT | +4.61% | $12,683,188.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.70% | +2.37% |
-| RENDER/USDT:USDT | below_1h_threshold | +2.20% | +1.87% |
-| STAR/USDT:USDT | below_1h_threshold | +1.91% | +1.58% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.22% | +0.89% |
-| TWT/USDT:USDT | below_1h_threshold | +1.05% | +0.72% |
+| TAC/USDT:USDT | below_1h_threshold | +4.02% | +3.96% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.44% | +2.39% |
+| RENDER/USDT:USDT | below_1h_threshold | +2.07% | +2.01% |
+| STAR/USDT:USDT | below_1h_threshold | +1.88% | +1.82% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.37% | +1.32% |
 
 ## 7. 次に見るべき不足
 
