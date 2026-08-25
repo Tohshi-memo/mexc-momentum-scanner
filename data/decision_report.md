@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T09:46:23.845317+00:00
+- generated_at: 2026-08-25T09:51:27.711134+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12594**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T09:46:14.939970+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=79685.4
-- Funnel: target 1023 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-25T09:51:18.527557+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.58% price=79432.6
+- Funnel: target 1023 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +82.55% | $4,668,768.78 |
-| JIMOTHY/USDT:USDT | +66.88% | $1,252,876.64 |
-| ONG/USDT:USDT | +35.34% | $7,076,580.53 |
-| TAC/USDT:USDT | +33.23% | $6,109,824.69 |
-| CASHCAT/USDT:USDT | +26.09% | $3,172,858.54 |
+| CATE/USDT:USDT | +82.80% | $4,690,521.54 |
+| JIMOTHY/USDT:USDT | +73.85% | $1,269,090.43 |
+| ONG/USDT:USDT | +34.47% | $7,125,922.74 |
+| TAC/USDT:USDT | +33.86% | $6,125,128.58 |
+| CASHCAT/USDT:USDT | +26.76% | $3,178,328.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POPCAT/USDT:USDT | below_1h_threshold | +4.64% | +4.91% |
-| TUT/USDT:USDT | below_1h_threshold | +3.68% | +3.95% |
-| JASMY/USDT:USDT | below_1h_threshold | +3.43% | +3.70% |
-| CATE/USDT:USDT | below_1h_threshold | +3.06% | +3.32% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.64% | +1.91% |
+| TUT/USDT:USDT | below_1h_threshold | +4.85% | +5.44% |
+| JIMOTHY/USDT:USDT | below_1h_threshold | +4.72% | +5.31% |
+| POPCAT/USDT:USDT | below_1h_threshold | +3.78% | +4.36% |
+| CATE/USDT:USDT | below_1h_threshold | +3.22% | +3.80% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.45% | +3.03% |
 
 ## 7. 次に見るべき不足
 
