@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T07:56:44.516891+00:00
+- generated_at: 2026-08-25T08:01:21.750498+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12593**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T07:56:27.718288+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.10% price=79661.3
-- Funnel: target 1023 → liquid 181 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-25T08:01:12.633402+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79741.4
+- Funnel: target 1023 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +76.12% | $4,478,218.64 |
-| JIMOTHY/USDT:USDT | +74.47% | $1,069,151.98 |
-| TAC/USDT:USDT | +40.01% | $5,245,515.46 |
-| ONG/USDT:USDT | +30.03% | $5,287,052.37 |
-| CASHCAT/USDT:USDT | +27.28% | $2,981,192.27 |
+| JIMOTHY/USDT:USDT | +75.87% | $1,076,733.38 |
+| CATE/USDT:USDT | +71.94% | $4,470,508.28 |
+| TAC/USDT:USDT | +34.08% | $5,381,649.68 |
+| ONG/USDT:USDT | +30.23% | $5,333,469.38 |
+| CASHCAT/USDT:USDT | +24.82% | $2,973,687.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.20% | +5.30% |
-| RE/USDT:USDT | below_1h_threshold | +2.77% | +3.87% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.63% | +2.73% |
-| KORU/USDT:USDT | below_1h_threshold | +1.62% | +2.72% |
-| POL/USDT:USDT | below_1h_threshold | +1.17% | +2.27% |
+| TUT/USDT:USDT | below_1h_threshold | +2.37% | +2.27% |
+| ONG/USDT:USDT | below_1h_threshold | +1.21% | +1.12% |
+| PROM/USDT:USDT | below_1h_threshold | +0.87% | +0.77% |
+| PONS/USDT:USDT | below_1h_threshold | +0.60% | +0.50% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.56% | +0.46% |
 
 ## 7. 次に見るべき不足
 
