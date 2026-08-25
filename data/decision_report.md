@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T16:36:24.279446+00:00
+- generated_at: 2026-08-25T16:41:22.735672+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12623**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T16:36:17.002925+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=79273.5
+- 更新: 2026-08-25T16:41:13.577153+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=79166.2
 - Funnel: target 1023 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZRO/USDT:USDT | +2.54% | $17,091,584.89 |
-| ENA/USDT:USDT | +2.40% | $40,210,504.41 |
-| UNITREE/USDT:USDT | +1.93% | $1,596,768.19 |
-| ACE/USDT:USDT | +1.78% | $4,890,131.54 |
-| PROM/USDT:USDT | +1.74% | $13,516,853.69 |
+| ZRO/USDT:USDT | +2.16% | $17,260,320.36 |
+| ENA/USDT:USDT | +1.79% | $40,791,908.30 |
+| JASMY/USDT:USDT | +1.76% | $6,931,997.71 |
+| MORPHO/USDT:USDT | +1.64% | $1,556,966.37 |
+| PROM/USDT:USDT | +1.62% | $13,534,241.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZRO/USDT:USDT | below_1h_threshold | +2.54% | +2.78% |
-| ENA/USDT:USDT | below_1h_threshold | +2.38% | +2.62% |
-| PROM/USDT:USDT | below_1h_threshold | +1.87% | +2.10% |
-| FF/USDT:USDT | below_1h_threshold | +1.83% | +2.07% |
-| ACE/USDT:USDT | below_1h_threshold | +1.78% | +2.02% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.15% | +2.53% |
+| ENA/USDT:USDT | below_1h_threshold | +1.80% | +2.17% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.76% | +2.13% |
+| PROM/USDT:USDT | below_1h_threshold | +1.67% | +2.04% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.65% | +2.02% |
 
 ## 7. 次に見るべき不足
 
