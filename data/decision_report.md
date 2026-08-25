@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T03:56:43.192231+00:00
+- generated_at: 2026-08-25T04:01:21.477353+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12573**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T03:56:30.208165+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=80447.2
-- Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.2 >= 65=1, 4h RSI 66.3 >= 65=1, 4h RSI 69.4 >= 65=1, 4h RSI 78.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-25T04:01:12.292793+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80492.0
+- Funnel: target 1023 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +73.31% | $4,174,100.00 |
-| TAC/USDT:USDT | +45.99% | $2,755,898.76 |
-| ONG/USDT:USDT | +25.14% | $3,510,909.41 |
-| CASHCAT/USDT:USDT | +25.09% | $2,705,859.32 |
-| PROM/USDT:USDT | +20.32% | $18,400,252.07 |
+| CATE/USDT:USDT | +72.86% | $4,114,225.89 |
+| TAC/USDT:USDT | +47.96% | $2,782,768.30 |
+| ONG/USDT:USDT | +25.78% | $3,500,880.32 |
+| CASHCAT/USDT:USDT | +23.11% | $2,669,941.59 |
+| PROM/USDT:USDT | +19.33% | $17,984,852.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +3.91% | +4.13% |
-| SPX/USDT:USDT | below_1h_threshold | +2.90% | +3.13% |
-| PONS/USDT:USDT | below_1h_threshold | +2.77% | +3.00% |
-| BR/USDT:USDT | below_1h_threshold | +2.25% | +2.47% |
-| RE/USDT:USDT | below_1h_threshold | +2.17% | +2.39% |
+| KORU/USDT:USDT | below_1h_threshold | +2.73% | +2.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
+| ONG/USDT:USDT | below_1h_threshold | +1.04% | +0.99% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.02% | +0.98% |
+| SLBSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.62% |
 
 ## 7. 次に見るべき不足
 
