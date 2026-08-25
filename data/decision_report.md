@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T13:16:23.271442+00:00
+- generated_at: 2026-08-25T13:21:30.591493+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12602**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.86** / 初期 $100.00 (+14.86%)
-- 確定: 1929件 (Win 564 / Loss 735 / Flat 630) / pending 5件 / skip 2142件
+- 確定: 1929件 (Win 564 / Loss 735 / Flat 630) / pending 5件 / skip 2143件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000041 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONG/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T13:16:14.283256+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=78741.0
-- Funnel: target 1023 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-25T13:21:19.235748+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=78739.9
+- Funnel: target 1023 → liquid 181 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +90.79% | $5,324,979.74 |
-| JIMOTHY/USDT:USDT | +70.23% | $1,797,637.04 |
-| ONG/USDT:USDT | +43.20% | $9,704,816.22 |
-| TAC/USDT:USDT | +34.36% | $6,893,948.37 |
-| BR/USDT:USDT | +18.93% | $3,756,818.88 |
+| CATE/USDT:USDT | +91.38% | $5,347,196.13 |
+| JIMOTHY/USDT:USDT | +75.40% | $1,812,090.06 |
+| ONG/USDT:USDT | +41.32% | $9,812,765.51 |
+| TAC/USDT:USDT | +35.94% | $6,902,981.80 |
+| BR/USDT:USDT | +18.72% | $3,772,430.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +1.54% | +1.81% |
-| ACE/USDT:USDT | below_1h_threshold | +1.33% | +1.59% |
-| TAC/USDT:USDT | below_1h_threshold | +1.23% | +1.50% |
-| BR/USDT:USDT | below_1h_threshold | +1.21% | +1.48% |
-| AKE/USDT:USDT | below_1h_threshold | +0.83% | +1.10% |
+| TAC/USDT:USDT | below_1h_threshold | +2.42% | +2.69% |
+| ONT/USDT:USDT | below_1h_threshold | +1.48% | +1.75% |
+| BR/USDT:USDT | below_1h_threshold | +1.31% | +1.58% |
+| ACE/USDT:USDT | below_1h_threshold | +0.82% | +1.08% |
+| POPCAT/USDT:USDT | below_1h_threshold | +0.80% | +1.06% |
 
 ## 7. 次に見るべき不足
 
