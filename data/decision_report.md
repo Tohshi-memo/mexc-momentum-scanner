@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T17:41:41.126847+00:00
+- generated_at: 2026-08-25T17:46:14.934086+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T17:41:33.836163+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79105.4
+- 更新: 2026-08-25T17:46:05.999736+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=79123.2
 - Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BEAT/USDT:USDT | +3.67% | $9,849,816.58 |
-| AGI/USDT:USDT | +3.27% | $1,418,952.99 |
-| HOLO/USDT:USDT | +2.87% | $2,018,539.86 |
-| STX/USDT:USDT | +2.68% | $9,188,624.24 |
-| USELESS/USDT:USDT | +2.26% | $1,337,977.04 |
+| AGI/USDT:USDT | +4.83% | $1,424,683.68 |
+| BEAT/USDT:USDT | +3.99% | $9,961,685.16 |
+| HOLO/USDT:USDT | +3.04% | $2,020,297.88 |
+| STX/USDT:USDT | +2.79% | $9,196,299.94 |
+| USELESS/USDT:USDT | +2.20% | $1,339,458.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.93% | +2.95% |
-| HOLO/USDT:USDT | below_1h_threshold | +1.73% | +1.75% |
-| STX/USDT:USDT | below_1h_threshold | +1.54% | +1.56% |
-| ONT/USDT:USDT | below_1h_threshold | +1.17% | +1.20% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.09% | +1.11% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
+| HOLO/USDT:USDT | below_1h_threshold | +2.07% | +2.07% |
+| AGI/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
+| STX/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| RE/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
 
 ## 7. 次に見るべき不足
 
