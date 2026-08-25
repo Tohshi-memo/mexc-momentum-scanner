@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T20:51:36.366590+00:00
+- generated_at: 2026-08-25T20:56:22.786904+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12634**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T20:51:27.557727+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.70% price=78336.5
+- 更新: 2026-08-25T20:56:13.670120+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.85% price=78222.4
 - Funnel: target 1023 → liquid 180 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.0 >= 65=1
+- Strict後reject: 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +39.13% | $4,528,184.49 |
-| AGI/USDT:USDT | +4.71% | $1,653,659.17 |
-| PROM/USDT:USDT | +3.31% | $12,805,647.94 |
-| KORU/USDT:USDT | +2.00% | $40,194,986.78 |
-| GRAM/USDT:USDT | +1.78% | $2,172,864.70 |
+| BMT/USDT:USDT | +37.58% | $4,635,387.67 |
+| AGI/USDT:USDT | +3.90% | $1,661,224.81 |
+| PROM/USDT:USDT | +2.87% | $12,820,156.27 |
+| KORU/USDT:USDT | +2.05% | $40,202,779.84 |
+| GRAM/USDT:USDT | +1.78% | $2,193,982.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +3.04% | +3.74% |
-| BMT/USDT:USDT | below_1h_threshold | +2.27% | +2.98% |
-| MUU/USDT:USDT | below_1h_threshold | +1.31% | +2.02% |
-| KORU/USDT:USDT | below_1h_threshold | +0.92% | +1.62% |
-| LYTE/USDT:USDT | below_1h_threshold | +0.78% | +1.48% |
+| TUT/USDT:USDT | below_1h_threshold | +2.13% | +2.98% |
+| MUU/USDT:USDT | below_1h_threshold | +1.31% | +2.16% |
+| BMT/USDT:USDT | below_1h_threshold | +1.00% | +1.85% |
+| KORU/USDT:USDT | below_1h_threshold | +0.92% | +1.77% |
+| LYTE/USDT:USDT | below_1h_threshold | +0.78% | +1.63% |
 
 ## 7. 次に見るべき不足
 
