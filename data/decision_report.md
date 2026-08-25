@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T17:56:24.626970+00:00
+- generated_at: 2026-08-25T18:01:11.462755+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12624**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T17:56:15.644291+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79188.0
-- Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-25T18:01:04.500828+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=79188.6
+- Funnel: target 1023 → liquid 172 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STX/USDT:USDT | +4.15% | $9,368,736.32 |
-| HOLO/USDT:USDT | +3.34% | $2,025,007.48 |
-| USELESS/USDT:USDT | +3.05% | $1,427,537.16 |
-| POPCAT/USDT:USDT | +2.71% | $1,924,635.42 |
-| FARTCOIN/USDT:USDT | +2.10% | $14,306,366.78 |
+| FARTCOIN/USDT:USDT | +3.80% | $12,877,568.27 |
+| STX/USDT:USDT | +3.76% | $9,294,803.28 |
+| USELESS/USDT:USDT | +3.03% | $1,287,088.75 |
+| POPCAT/USDT:USDT | +3.01% | $1,912,333.63 |
+| HOLO/USDT:USDT | +2.78% | $2,005,480.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.51% | +3.42% |
-| STX/USDT:USDT | below_1h_threshold | +3.04% | +2.95% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.44% | +2.35% |
-| HOLO/USDT:USDT | below_1h_threshold | +2.37% | +2.29% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.28% | +2.19% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.93% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.84% |
+| SPX/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.45% | +0.47% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.39% | +0.41% |
 
 ## 7. 次に見るべき不足
 
