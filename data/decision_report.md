@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T14:31:36.672524+00:00
+- generated_at: 2026-08-25T14:36:38.652858+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12606**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T14:31:24.976443+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.63% price=79118.3
+- 更新: 2026-08-25T14:36:26.883739+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.74% price=79204.6
 - Funnel: target 1023 → liquid 183 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1
+- Strict後reject: 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +89.54% | $5,580,377.59 |
-| JIMOTHY/USDT:USDT | +55.56% | $2,053,695.53 |
-| ONG/USDT:USDT | +43.58% | $10,868,915.25 |
-| TAC/USDT:USDT | +39.61% | $7,186,429.79 |
-| BR/USDT:USDT | +18.28% | $3,848,176.58 |
+| CATE/USDT:USDT | +85.79% | $5,599,093.63 |
+| JIMOTHY/USDT:USDT | +57.30% | $2,066,731.02 |
+| ONG/USDT:USDT | +42.78% | $10,923,190.44 |
+| TAC/USDT:USDT | +41.76% | $7,232,879.88 |
+| BR/USDT:USDT | +19.15% | $3,851,121.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.77% | +4.15% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.82% | +3.20% |
-| TUT/USDT:USDT | below_1h_threshold | +3.55% | +2.92% |
-| ONG/USDT:USDT | below_1h_threshold | +3.52% | +2.89% |
-| JIMOTHY/USDT:USDT | below_1h_threshold | +3.20% | +2.58% |
+| TUT/USDT:USDT | below_1h_threshold | +4.63% | +3.89% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.59% | +3.85% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.38% | +3.64% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +3.82% | +3.09% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.72% | +2.98% |
 
 ## 7. 次に見るべき不足
 
