@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T20:41:25.619089+00:00
+- generated_at: 2026-08-25T20:46:18.289011+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12632**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T20:41:16.483464+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=78547.0
+- 更新: 2026-08-25T20:46:09.595711+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.51% price=78489.4
 - Funnel: target 1023 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +37.27% | $4,369,927.96 |
-| PROM/USDT:USDT | +2.84% | $12,795,245.17 |
-| KORU/USDT:USDT | +2.45% | $40,186,993.38 |
-| FARTCOIN/USDT:USDT | +1.93% | $14,257,224.06 |
-| AGI/USDT:USDT | +1.75% | $1,637,851.68 |
+| BMT/USDT:USDT | +36.71% | $4,426,093.22 |
+| PROM/USDT:USDT | +3.31% | $12,797,118.79 |
+| KORU/USDT:USDT | +2.15% | $40,188,884.97 |
+| AGI/USDT:USDT | +1.89% | $1,638,915.55 |
+| NGAS/USDT:USDT | +1.68% | $1,365,032.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGI/USDT:USDT | below_1h_threshold | +2.79% | +3.23% |
-| TUT/USDT:USDT | below_1h_threshold | +1.69% | +2.13% |
-| MUU/USDT:USDT | below_1h_threshold | +1.31% | +1.75% |
-| TAC/USDT:USDT | below_1h_threshold | +1.30% | +1.74% |
-| KORU/USDT:USDT | below_1h_threshold | +0.92% | +1.36% |
+| AGI/USDT:USDT | below_1h_threshold | +3.21% | +3.72% |
+| TUT/USDT:USDT | below_1h_threshold | +2.20% | +2.71% |
+| MUU/USDT:USDT | below_1h_threshold | +1.31% | +1.82% |
+| KORU/USDT:USDT | below_1h_threshold | +0.92% | +1.43% |
+| LYTE/USDT:USDT | below_1h_threshold | +0.78% | +1.29% |
 
 ## 7. 次に見るべき不足
 
