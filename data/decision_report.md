@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T16:06:22.369615+00:00
+- generated_at: 2026-08-25T16:11:29.791965+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12622**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T16:06:11.675099+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=79425.4
+- 更新: 2026-08-25T16:11:20.719583+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=79289.8
 - Funnel: target 1023 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UNITREE/USDT:USDT | +2.51% | $1,459,596.58 |
-| CATE/USDT:USDT | +1.91% | $5,909,314.33 |
-| ZRO/USDT:USDT | +1.54% | $15,354,300.95 |
-| FF/USDT:USDT | +1.20% | $1,169,044.72 |
-| TAC/USDT:USDT | +1.10% | $7,644,154.66 |
+| ZRO/USDT:USDT | +3.97% | $15,581,937.70 |
+| UNITREE/USDT:USDT | +2.81% | $1,524,921.76 |
+| CASHCAT/USDT:USDT | +1.84% | $3,179,211.57 |
+| JASMY/USDT:USDT | +1.60% | $6,511,219.89 |
+| GPS/USDT:USDT | +1.49% | $1,472,922.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.11% | +2.15% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.70% | +1.75% |
-| FF/USDT:USDT | below_1h_threshold | +1.20% | +1.25% |
-| TAC/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
-| GPS/USDT:USDT | below_1h_threshold | +1.11% | +1.15% |
+| ZRO/USDT:USDT | below_1h_threshold | +4.13% | +4.35% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.84% | +2.06% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.64% | +1.86% |
+| GPS/USDT:USDT | below_1h_threshold | +1.49% | +1.71% |
+| CATE/USDT:USDT | below_1h_threshold | +1.31% | +1.53% |
 
 ## 7. 次に見るべき不足
 
