@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T00:31:17.143211+00:00
+- generated_at: 2026-08-26T00:36:18.754992+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12642**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T00:31:08.215935+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=78584.9
-- Funnel: target 1023 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-26T00:36:09.407729+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78509.5
+- Funnel: target 1023 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +50.99% | $1,687,523.93 |
-| BMT/USDT:USDT | +45.26% | $7,636,261.03 |
-| AGI/USDT:USDT | +9.55% | $2,134,254.13 |
-| STAR/USDT:USDT | +7.86% | $1,103,359.84 |
-| PIPPIN/USDT:USDT | +2.59% | $1,088,446.43 |
+| LONGXIA/USDT:USDT | +52.42% | $1,705,345.82 |
+| BMT/USDT:USDT | +43.21% | $7,685,420.68 |
+| STAR/USDT:USDT | +9.36% | $1,110,121.25 |
+| AGI/USDT:USDT | +7.85% | $2,138,300.76 |
+| PIPPIN/USDT:USDT | +2.70% | $1,113,911.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +2.42% | +2.32% |
-| SQD/USDT:USDT | below_1h_threshold | +1.92% | +1.82% |
-| BMT/USDT:USDT | below_1h_threshold | +1.91% | +1.81% |
-| STX/USDT:USDT | below_1h_threshold | +1.62% | +1.52% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.15% | +1.05% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
+| COW/USDT:USDT | below_1h_threshold | +1.76% | +1.75% |
+| STX/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| SQD/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.57% | +1.56% |
 
 ## 7. 次に見るべき不足
 
