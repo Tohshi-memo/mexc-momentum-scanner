@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-26T13:16:23.133851+00:00
+- generated_at: 2026-08-26T13:21:23.430199+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12708**
+- closed shadow trades: **12709**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.24% / filled 20/20。**
-- 全期間 MARKET基準: n=12708, expectancy=+0.00%
+- 全期間 MARKET基準: n=12709, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+2.24%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.24% | **+2.24%** |
 | LIMIT_1PCT | 18/20 | 90.0% | +1.77% | **+1.59%** |
-| LIMIT_2PCT | 14/20 | 70.0% | +1.67% | **+1.17%** |
-| LIMIT_BB3S | 10/16 | 62.5% | +1.78% | **+1.11%** |
-| LIMIT_ATR | 14/20 | 70.0% | +1.33% | **+0.93%** |
+| LIMIT_BB3S | 10/16 | 62.5% | +1.79% | **+1.12%** |
+| LIMIT_2PCT | 14/20 | 70.0% | +1.52% | **+1.06%** |
+| LIMIT_ATR | 14/20 | 70.0% | +1.08% | **+0.76%** |
 
 ### シャドウ上位 LONG
 
@@ -47,54 +47,55 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$690.03** / 初期 $100.00 (+590.03%)
-- 確定: 4607件 (Win 1400 / Loss 1516 / Flat 1691) / skip 4662件
+- 確定: 4608件 (Win 1400 / Loss 1516 / Flat 1692) / skip 4662件
 - 成長率目線: 平均log +0.000419 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: ONG/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $690.03
+- 最新: ONG/USDT:USDT `LIMIT_3PCT_LONG` EXPIRED account +0.00% 残高後 $690.03
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$156.51** / 初期 $100.00 (+56.51%)
-- 確定: 2001件 (Win 544 / Loss 483 / Flat 974) / skip 4118件
+- 確定: 2001件 (Win 544 / Loss 483 / Flat 974) / skip 4119件
 - 成長率目線: 平均log +0.000224 / 幾何平均 +0.022% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0600 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0633 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BICO/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $156.51
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.00** / 初期 $100.00 (+16.00%)
-- 確定: 1980件 (Win 580 / Loss 756 / Flat 644) / pending 2件 / skip 2196件
+- 確定: 1980件 (Win 580 / Loss 756 / Flat 644) / pending 2件 / skip 2197件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000266 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000305 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONG/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T13:16:10.112599+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=78110.0
-- Funnel: target 1023 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-26T13:21:12.427010+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=78106.6
+- Funnel: target 1023 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +265.50% | $19,544,805.96 |
-| TAC/USDT:USDT | +50.11% | $8,020,536.65 |
-| BMT/USDT:USDT | +48.79% | $16,203,460.23 |
-| LONGXIA/USDT:USDT | +35.87% | $1,997,928.79 |
-| LIGHT/USDT:USDT | +17.06% | $1,587,031.08 |
+| BTR/USDT:USDT | +263.08% | $19,645,695.66 |
+| TAC/USDT:USDT | +51.60% | $8,052,848.24 |
+| BMT/USDT:USDT | +48.91% | $16,214,115.51 |
+| LONGXIA/USDT:USDT | +31.61% | $1,999,161.05 |
+| BICO/USDT:USDT | +17.16% | $4,295,714.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
+| TAC/USDT:USDT | below_1h_threshold | +3.10% | +3.32% |
 | METASTOCK/USDT:USDT | below_1h_threshold | +2.27% | +2.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +2.12% |
-| TAC/USDT:USDT | below_1h_threshold | +1.70% | +1.92% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.31% | +1.52% |
-| TUT/USDT:USDT | below_1h_threshold | +0.85% | +1.07% |
+| TUT/USDT:USDT | below_1h_threshold | +1.95% | +2.17% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +2.13% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.12% | +1.34% |
 
 ## 7. 次に見るべき不足
 
