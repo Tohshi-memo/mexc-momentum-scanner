@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T22:46:22.726097+00:00
+- generated_at: 2026-08-26T22:51:23.966942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12757**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T22:46:12.637680+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78643.9
-- Funnel: target 1023 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.9 >= 65=1, 4h RSI 67.6 >= 65=1
+- 更新: 2026-08-26T22:51:11.524520+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=78574.2
+- Funnel: target 1023 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.5 >= 65=1, 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONG/USDT:USDT | +29.99% | $37,538,248.59 |
-| CASHCAT/USDT:USDT | +21.72% | $1,522,597.65 |
-| ONT/USDT:USDT | +18.36% | $4,603,000.16 |
-| S/USDT:USDT | +13.67% | $1,845,734.19 |
-| VET/USDT:USDT | +12.82% | $1,885,432.41 |
+| ONG/USDT:USDT | +27.27% | $37,803,026.86 |
+| CASHCAT/USDT:USDT | +19.42% | $1,526,945.68 |
+| ONT/USDT:USDT | +17.65% | $4,614,852.87 |
+| S/USDT:USDT | +13.88% | $1,873,665.48 |
+| VET/USDT:USDT | +12.62% | $1,891,584.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +4.83% | +4.88% |
-| CATE/USDT:USDT | below_1h_threshold | +4.01% | +4.06% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.06% |
-| ONT/USDT:USDT | below_1h_threshold | +4.00% | +4.05% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +3.91% | +3.96% |
+| MUU/USDT:USDT | below_1h_threshold | +4.83% | +4.97% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.01% | +4.15% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +3.91% | +4.05% |
+| S/USDT:USDT | below_1h_threshold | +3.80% | +3.94% |
+| ONT/USDT:USDT | below_1h_threshold | +3.28% | +3.42% |
 
 ## 7. 次に見るべき不足
 
