@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T00:11:19.841257+00:00
+- generated_at: 2026-08-26T00:16:22.540692+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12641**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T00:11:10.779324+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=78286.0
+- 更新: 2026-08-26T00:16:13.278948+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=78429.9
 - Funnel: target 1023 → liquid 183 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +62.96% | $1,551,954.59 |
-| BMT/USDT:USDT | +44.14% | $7,461,831.65 |
-| STAR/USDT:USDT | +7.63% | $1,086,052.45 |
-| AGI/USDT:USDT | +6.11% | $2,112,538.34 |
-| PROM/USDT:USDT | +2.72% | $12,650,574.79 |
+| LONGXIA/USDT:USDT | +61.82% | $1,572,028.54 |
+| BMT/USDT:USDT | +43.40% | $7,492,977.41 |
+| STAR/USDT:USDT | +7.53% | $1,094,024.88 |
+| AGI/USDT:USDT | +7.13% | $2,119,526.25 |
+| PIPPIN/USDT:USDT | +3.02% | $1,061,453.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +1.53% | +1.81% |
-| BMT/USDT:USDT | below_1h_threshold | +1.00% | +1.28% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.77% | +1.05% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.73% | +1.00% |
-| RE/USDT:USDT | below_1h_threshold | +0.71% | +0.99% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.89% | +0.98% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.78% | +0.87% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.77% | +0.87% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.70% | +0.80% |
+| BMT/USDT:USDT | below_1h_threshold | +0.69% | +0.79% |
 
 ## 7. 次に見るべき不足
 
