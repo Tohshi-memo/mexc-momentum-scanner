@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-25T23:56:27.494487+00:00
+- generated_at: 2026-08-26T00:01:35.127011+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12641**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-25T23:56:16.660982+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.51% price=78444.6
-- Funnel: target 1023 → liquid 184 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-26T00:01:28.964557+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78470.2
+- Funnel: target 1023 → liquid 182 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +64.82% | $1,479,658.70 |
-| BMT/USDT:USDT | +43.96% | $7,237,289.63 |
-| AGI/USDT:USDT | +9.95% | $2,068,085.45 |
-| STAR/USDT:USDT | +7.83% | $1,084,600.65 |
-| PIPPIN/USDT:USDT | +2.38% | $1,017,954.93 |
+| LONGXIA/USDT:USDT | +64.73% | $1,491,710.99 |
+| BMT/USDT:USDT | +42.78% | $7,300,007.72 |
+| AGI/USDT:USDT | +8.26% | $2,095,459.19 |
+| STAR/USDT:USDT | +8.21% | $1,081,808.49 |
+| PIPPIN/USDT:USDT | +2.43% | $1,000,399.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGI/USDT:USDT | below_1h_threshold | +1.48% | +2.00% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.50% | +1.01% |
-| UNITREE/USDT:USDT | below_1h_threshold | +0.48% | +0.99% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.38% | +0.89% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +0.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.77% | +0.81% |
+| PROM/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
+| PIPPIN/USDT:USDT | below_1h_threshold | +0.31% | +0.36% |
+| RE/USDT:USDT | below_1h_threshold | +0.25% | +0.30% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.23% | +0.27% |
 
 ## 7. 次に見るべき不足
 
