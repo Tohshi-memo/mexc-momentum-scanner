@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T08:01:15.959684+00:00
+- generated_at: 2026-08-26T08:06:18.617912+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12681**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T08:01:09.709528+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78875.9
+- 更新: 2026-08-26T08:06:09.574701+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=78805.6
 - Funnel: target 1018 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +145.41% | $10,158,279.66 |
-| BMT/USDT:USDT | +40.80% | $12,073,894.20 |
-| LONGXIA/USDT:USDT | +32.66% | $1,915,515.99 |
-| TAC/USDT:USDT | +29.64% | $4,921,497.87 |
-| PORTAL/USDT:USDT | +21.37% | $3,555,607.43 |
+| BTR/USDT:USDT | +150.72% | $10,325,707.23 |
+| BMT/USDT:USDT | +41.73% | $12,115,998.42 |
+| LONGXIA/USDT:USDT | +32.43% | $1,919,513.42 |
+| TAC/USDT:USDT | +26.73% | $4,992,786.23 |
+| PORTAL/USDT:USDT | +20.62% | $3,574,452.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
-| TAC/USDT:USDT | below_1h_threshold | +0.65% | +0.67% |
-| CYS/USDT:USDT | below_1h_threshold | +0.38% | +0.39% |
-| ONG/USDT:USDT | below_1h_threshold | +0.26% | +0.27% |
-| PONS/USDT:USDT | below_1h_threshold | +0.24% | +0.26% |
+| BTR/USDT:USDT | below_1h_threshold | +2.17% | +2.28% |
+| JUP/USDT:USDT | below_1h_threshold | +0.51% | +0.62% |
+| CYS/USDT:USDT | below_1h_threshold | +0.25% | +0.36% |
+| COW/USDT:USDT | below_1h_threshold | +0.25% | +0.35% |
+| COPPER/USDT:USDT | below_1h_threshold | +0.10% | +0.21% |
 
 ## 7. 次に見るべき不足
 
