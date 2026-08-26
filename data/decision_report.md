@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T16:11:18.397486+00:00
+- generated_at: 2026-08-26T16:16:23.740681+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12732**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2220件
+- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2221件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000196 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PORTAL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T16:11:09.217733+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=78104.5
-- Funnel: target 1023 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-26T16:16:14.394242+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78019.5
+- Funnel: target 1023 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CHIP/USDT:USDT | +3.60% | $1,316,874.63 |
-| CATE/USDT:USDT | +1.85% | $2,019,826.12 |
-| UAI/USDT:USDT | +1.76% | $2,658,355.90 |
-| EUL/USDT:USDT | +0.99% | $2,933,897.86 |
-| BTR/USDT:USDT | +0.97% | $23,689,026.72 |
+| CATE/USDT:USDT | +5.97% | $2,037,666.30 |
+| CHIP/USDT:USDT | +3.94% | $1,366,533.59 |
+| UAI/USDT:USDT | +3.45% | $2,672,591.86 |
+| BTR/USDT:USDT | +1.60% | $23,753,199.46 |
+| BMT/USDT:USDT | +1.20% | $17,187,279.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.42% | +3.26% |
-| UAI/USDT:USDT | below_1h_threshold | +1.76% | +1.60% |
-| CATE/USDT:USDT | below_1h_threshold | +1.62% | +1.46% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.04% | +0.88% |
-| EUL/USDT:USDT | below_1h_threshold | +1.00% | +0.84% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.95% | +3.90% |
+| UAI/USDT:USDT | below_1h_threshold | +3.31% | +3.26% |
+| BTR/USDT:USDT | below_1h_threshold | +1.52% | +1.47% |
+| BMT/USDT:USDT | below_1h_threshold | +1.20% | +1.15% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.08% | +1.03% |
 
 ## 7. 次に見るべき不足
 
