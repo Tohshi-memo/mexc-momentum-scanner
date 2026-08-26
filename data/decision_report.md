@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T12:16:15.037023+00:00
+- generated_at: 2026-08-26T12:21:08.991134+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12705**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T12:16:04.364069+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78350.8
+- 更新: 2026-08-26T12:21:01.822187+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=78364.4
 - Funnel: target 1023 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +243.45% | $17,671,533.83 |
-| BMT/USDT:USDT | +52.50% | $15,766,638.45 |
-| TAC/USDT:USDT | +35.44% | $7,357,594.12 |
-| LONGXIA/USDT:USDT | +31.09% | $1,989,459.42 |
-| PORTAL/USDT:USDT | +17.21% | $4,100,907.20 |
+| BTR/USDT:USDT | +259.40% | $17,782,188.73 |
+| BMT/USDT:USDT | +51.82% | $15,805,886.02 |
+| TAC/USDT:USDT | +34.49% | $7,437,409.53 |
+| LONGXIA/USDT:USDT | +32.57% | $1,990,895.50 |
+| FARTCOIN/USDT:USDT | +18.02% | $21,036,586.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +3.76% | +3.88% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.94% | +2.06% |
-| BMT/USDT:USDT | below_1h_threshold | +1.02% | +1.14% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.85% | +0.97% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.85% | +0.97% |
+| CYS/USDT:USDT | below_1h_threshold | +3.45% | +3.55% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.09% | +3.19% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.85% | +1.96% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.34% | +1.44% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.85% | +0.95% |
 
 ## 7. 次に見るべき不足
 
