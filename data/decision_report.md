@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T21:56:29.100390+00:00
+- generated_at: 2026-08-26T22:01:18.034799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12750**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2241件
+- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2242件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000287 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PORTAL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T21:56:16.333783+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=78725.1
-- Funnel: target 1023 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.6 >= 65=1, 4h RSI 82.2 >= 65=1
+- 更新: 2026-08-26T22:01:08.740612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=78728.3
+- Funnel: target 1023 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +24.59% | $1,312,644.17 |
-| ONT/USDT:USDT | +13.35% | $4,099,279.02 |
-| GRASS/USDT:USDT | +10.61% | $2,133,715.06 |
-| S/USDT:USDT | +10.37% | $1,662,763.27 |
-| EDEN/USDT:USDT | +9.81% | $9,548,789.16 |
+| CASHCAT/USDT:USDT | +22.40% | $1,317,795.25 |
+| ONT/USDT:USDT | +14.13% | $4,088,656.04 |
+| GRASS/USDT:USDT | +10.85% | $2,118,440.80 |
+| S/USDT:USDT | +10.34% | $1,606,525.24 |
+| EDEN/USDT:USDT | +10.17% | $9,534,598.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRASS/USDT:USDT | below_relative_strength | +5.07% | +4.68% |
-| VET/USDT:USDT | below_1h_threshold | +4.66% | +4.27% |
-| ONT/USDT:USDT | below_1h_threshold | +4.64% | +4.25% |
-| CVX/USDT:USDT | below_1h_threshold | +4.46% | +4.06% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.80% | +3.41% |
+| MUU/USDT:USDT | below_1h_threshold | +4.83% | +4.77% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +4.01% | +3.95% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +3.91% | +3.85% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.03% | +2.97% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.53% | +2.47% |
 
 ## 7. 次に見るべき不足
 
