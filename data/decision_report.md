@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T20:06:28.961026+00:00
+- generated_at: 2026-08-26T20:11:24.304968+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12743**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T20:06:17.955860+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=78482.0
+- 更新: 2026-08-26T20:11:15.218655+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78437.5
 - Funnel: target 1023 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEI/USDT:USDT | +11.69% | $1,976,779.45 |
-| VELVET/USDT:USDT | +10.64% | $4,138,174.28 |
-| UAI/USDT:USDT | +8.53% | $2,469,484.86 |
-| S/USDT:USDT | +8.33% | $1,420,040.30 |
-| BTR/USDT:USDT | +7.96% | $26,320,027.33 |
+| HEI/USDT:USDT | +11.97% | $2,005,397.33 |
+| VELVET/USDT:USDT | +10.20% | $4,163,070.15 |
+| S/USDT:USDT | +8.78% | $1,437,618.40 |
+| UAI/USDT:USDT | +8.77% | $2,474,242.32 |
+| EDEN/USDT:USDT | +8.64% | $8,396,229.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.92% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.30% | +1.24% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.87% |
-| UAI/USDT:USDT | below_1h_threshold | +0.92% | +0.86% |
-| PROM/USDT:USDT | below_1h_threshold | +0.78% | +0.73% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.98% |
+| FLOKI/USDT:USDT | below_1h_threshold | +1.60% | +1.60% |
+| VVV/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
+| UAI/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
 
 ## 7. 次に見るべき不足
 
