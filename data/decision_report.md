@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T01:36:30.262732+00:00
+- generated_at: 2026-08-26T01:41:20.470785+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12643**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T01:36:22.116676+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.37% price=78895.4
-- Funnel: target 1023 → liquid 182 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.7 >= 65=1, 4h RSI 81.1 >= 65=1
+- 更新: 2026-08-26T01:41:11.604121+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=78872.9
+- Funnel: target 1023 → liquid 182 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +51.13% | $1,852,254.32 |
-| BMT/USDT:USDT | +43.34% | $8,367,188.52 |
-| PROM/USDT:USDT | +9.18% | $12,710,689.66 |
-| PONS/USDT:USDT | +8.88% | $1,105,397.94 |
-| AGI/USDT:USDT | +7.80% | $2,201,766.96 |
+| LONGXIA/USDT:USDT | +53.54% | $1,857,543.01 |
+| BMT/USDT:USDT | +41.36% | $8,401,536.33 |
+| PONS/USDT:USDT | +11.00% | $1,119,170.26 |
+| PROM/USDT:USDT | +9.50% | $12,746,869.94 |
+| AGI/USDT:USDT | +7.72% | $2,205,297.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.96% | +4.58% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.95% | +2.58% |
-| BMT/USDT:USDT | below_1h_threshold | +2.34% | +1.97% |
-| TWT/USDT:USDT | below_1h_threshold | +2.25% | +1.87% |
-| BICO/USDT:USDT | below_1h_threshold | +2.10% | +1.73% |
+| PROM/USDT:USDT | below_relative_strength | +5.26% | +4.92% |
+| AGI/USDT:USDT | below_relative_strength | +5.02% | +4.67% |
+| BICO/USDT:USDT | below_1h_threshold | +3.79% | +3.45% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.68% | +3.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.95% | +2.61% |
 
 ## 7. 次に見るべき不足
 
