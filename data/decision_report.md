@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T03:26:30.328412+00:00
+- generated_at: 2026-08-26T03:31:29.815130+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12651**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.86** / 初期 $100.00 (+13.86%)
-- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 0件 / skip 2188件
+- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 0件 / skip 2189件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000237 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_5PCT` SL_HIT account -0.17% 残高後 $113.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T03:26:19.217606+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=79073.8
-- Funnel: target 1023 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.8 >= 65=1
+- 更新: 2026-08-26T03:31:17.517773+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=79000.0
+- Funnel: target 1023 → liquid 176 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.8 >= 65=1, 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +61.30% | $9,739,571.57 |
-| PONS/USDT:USDT | +24.18% | $1,086,418.89 |
-| LONGXIA/USDT:USDT | +22.71% | $1,881,056.41 |
-| FARTCOIN/USDT:USDT | +12.38% | $15,219,856.64 |
-| PORTAL/USDT:USDT | +9.76% | $1,202,417.79 |
+| BMT/USDT:USDT | +59.38% | $9,812,329.37 |
+| LONGXIA/USDT:USDT | +25.05% | $1,884,132.68 |
+| PONS/USDT:USDT | +22.74% | $1,092,105.32 |
+| FARTCOIN/USDT:USDT | +11.84% | $15,254,781.04 |
+| ACU/USDT:USDT | +10.51% | $1,058,222.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +3.68% | +3.67% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.69% | +2.68% |
-| KORU/USDT:USDT | below_1h_threshold | +2.56% | +2.56% |
-| RE/USDT:USDT | below_1h_threshold | +2.36% | +2.35% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.88% | +1.87% |
+| UNITREE/USDT:USDT | below_1h_threshold | +3.68% | +3.77% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.30% | +3.38% |
+| KORU/USDT:USDT | below_1h_threshold | +2.56% | +2.65% |
+| RE/USDT:USDT | below_1h_threshold | +2.32% | +2.41% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.88% | +1.96% |
 
 ## 7. 次に見るべき不足
 
