@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T04:11:19.188648+00:00
+- generated_at: 2026-08-26T04:16:19.330711+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12653**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.86** / 初期 $100.00 (+13.86%)
-- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 0件 / skip 2191件
+- 確定: 1934件 (Win 564 / Loss 740 / Flat 630) / pending 1件 / skip 2191件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000293 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_5PCT` SL_HIT account -0.17% 残高後 $113.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T04:11:09.970570+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=79143.0
-- Funnel: target 1023 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-26T04:16:10.028854+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78978.2
+- Funnel: target 1023 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +37.15% | $10,560,554.65 |
-| LONGXIA/USDT:USDT | +33.77% | $1,873,526.22 |
-| PONS/USDT:USDT | +27.73% | $1,131,441.71 |
-| FARTCOIN/USDT:USDT | +12.80% | $14,833,146.50 |
-| SKYAI/USDT:USDT | +11.32% | $6,911,201.14 |
+| BTR/USDT:USDT | +40.74% | $1,006,048.19 |
+| BMT/USDT:USDT | +36.84% | $10,641,378.38 |
+| LONGXIA/USDT:USDT | +35.19% | $1,875,634.28 |
+| PONS/USDT:USDT | +20.90% | $1,140,609.58 |
+| FARTCOIN/USDT:USDT | +12.29% | $14,846,298.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.26% | +2.14% |
-| EUL/USDT:USDT | below_1h_threshold | +1.97% | +1.85% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.51% | +1.39% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.36% | +1.24% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.33% | +1.21% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.44% | +2.53% |
+| KORU/USDT:USDT | below_1h_threshold | +2.26% | +2.35% |
+| EUL/USDT:USDT | below_1h_threshold | +1.94% | +2.03% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.33% | +1.42% |
+| BMT/USDT:USDT | below_1h_threshold | +1.14% | +1.23% |
 
 ## 7. 次に見るべき不足
 
