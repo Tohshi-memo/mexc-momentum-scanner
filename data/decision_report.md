@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T02:36:26.955342+00:00
+- generated_at: 2026-08-26T02:41:26.961952+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12646**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T02:36:19.178900+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=79159.9
+- 更新: 2026-08-26T02:41:17.689487+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=79153.9
 - Funnel: target 1023 → liquid 177 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.1 >= 65=1
+- Strict後reject: 4h RSI 87.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +60.06% | $8,965,966.69 |
-| LONGXIA/USDT:USDT | +27.37% | $1,928,808.89 |
-| FARTCOIN/USDT:USDT | +12.44% | $15,586,885.01 |
-| PONS/USDT:USDT | +9.92% | $1,123,073.10 |
-| STX/USDT:USDT | +9.55% | $11,496,189.24 |
+| BMT/USDT:USDT | +61.85% | $9,191,055.61 |
+| LONGXIA/USDT:USDT | +30.37% | $1,937,354.06 |
+| FARTCOIN/USDT:USDT | +13.02% | $15,717,183.99 |
+| STX/USDT:USDT | +10.25% | $11,543,418.08 |
+| PONS/USDT:USDT | +8.29% | $1,129,726.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +3.90% | +3.42% |
-| SPX/USDT:USDT | below_1h_threshold | +2.71% | +2.23% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.64% | +2.15% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.41% | +1.93% |
-| POPCAT/USDT:USDT | below_1h_threshold | +2.00% | +1.52% |
+| STX/USDT:USDT | below_1h_threshold | +4.49% | +4.02% |
+| SPX/USDT:USDT | below_1h_threshold | +3.54% | +3.07% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.18% | +2.71% |
+| BR/USDT:USDT | below_1h_threshold | +2.28% | +1.81% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +2.19% | +1.71% |
 
 ## 7. 次に見るべき不足
 
