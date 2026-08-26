@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T03:56:39.763410+00:00
+- generated_at: 2026-08-26T04:01:20.684076+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12653**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T03:56:26.688924+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=79045.0
-- Funnel: target 1023 → liquid 174 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-26T04:01:11.593543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78989.5
+- Funnel: target 1023 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +36.96% | $10,174,615.88 |
-| PONS/USDT:USDT | +29.08% | $1,129,919.16 |
-| LONGXIA/USDT:USDT | +27.67% | $1,847,032.30 |
-| FARTCOIN/USDT:USDT | +11.45% | $15,050,459.00 |
-| SKYAI/USDT:USDT | +10.15% | $6,864,488.10 |
+| BMT/USDT:USDT | +33.43% | $10,335,935.68 |
+| LONGXIA/USDT:USDT | +32.02% | $1,852,647.18 |
+| PONS/USDT:USDT | +24.49% | $1,118,584.87 |
+| PORTAL/USDT:USDT | +11.13% | $1,103,554.33 |
+| FARTCOIN/USDT:USDT | +11.02% | $14,692,704.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACU/USDT:USDT | below_1h_threshold | +4.78% | +4.81% |
-| UNITREE/USDT:USDT | below_1h_threshold | +3.68% | +3.71% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.07% | +3.10% |
-| KORU/USDT:USDT | below_1h_threshold | +2.56% | +2.59% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.38% | +2.42% |
+| KORU/USDT:USDT | below_1h_threshold | +2.26% | +2.33% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.33% | +1.41% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.91% |
+| EWY/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
 
 ## 7. 次に見るべき不足
 
