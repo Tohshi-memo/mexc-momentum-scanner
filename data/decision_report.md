@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T03:01:19.973641+00:00
+- generated_at: 2026-08-26T03:06:22.686607+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12649**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T03:01:11.239360+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79081.2
+- 更新: 2026-08-26T03:06:13.668677+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=79044.0
 - Funnel: target 1023 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +68.60% | $9,427,969.72 |
-| LONGXIA/USDT:USDT | +24.61% | $1,901,460.43 |
-| FARTCOIN/USDT:USDT | +12.59% | $15,289,309.74 |
-| PONS/USDT:USDT | +9.09% | $1,063,691.12 |
-| STX/USDT:USDT | +8.62% | $11,278,688.43 |
+| BMT/USDT:USDT | +68.54% | $9,579,360.54 |
+| LONGXIA/USDT:USDT | +22.42% | $1,912,905.68 |
+| FARTCOIN/USDT:USDT | +12.73% | $15,338,241.67 |
+| PONS/USDT:USDT | +12.26% | $1,067,225.16 |
+| STX/USDT:USDT | +5.98% | $11,443,695.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UNITREE/USDT:USDT | below_1h_threshold | +3.68% | +3.66% |
-| BMT/USDT:USDT | below_1h_threshold | +3.10% | +3.08% |
-| KORU/USDT:USDT | below_1h_threshold | +2.56% | +2.55% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.88% | +1.86% |
-| MUU/USDT:USDT | below_1h_threshold | +1.70% | +1.69% |
+| PORTAL/USDT:USDT | below_1h_threshold | +3.00% | +3.03% |
+| ONG/USDT:USDT | below_1h_threshold | +2.86% | +2.89% |
+| BMT/USDT:USDT | below_1h_threshold | +2.79% | +2.83% |
+| KORU/USDT:USDT | below_1h_threshold | +2.56% | +2.59% |
+| PONS/USDT:USDT | below_1h_threshold | +2.23% | +2.26% |
 
 ## 7. 次に見るべき不足
 
