@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T00:36:18.754992+00:00
+- generated_at: 2026-08-26T00:41:17.259752+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12642**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T00:36:09.407729+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78509.5
+- 更新: 2026-08-26T00:41:08.247074+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=78382.8
 - Funnel: target 1023 → liquid 184 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +52.42% | $1,705,345.82 |
-| BMT/USDT:USDT | +43.21% | $7,685,420.68 |
-| STAR/USDT:USDT | +9.36% | $1,110,121.25 |
-| AGI/USDT:USDT | +7.85% | $2,138,300.76 |
-| PIPPIN/USDT:USDT | +2.70% | $1,113,911.90 |
+| LONGXIA/USDT:USDT | +43.77% | $1,734,992.19 |
+| BMT/USDT:USDT | +43.65% | $7,715,334.29 |
+| STAR/USDT:USDT | +8.79% | $1,111,327.66 |
+| AGI/USDT:USDT | +7.58% | $2,143,086.73 |
+| PROM/USDT:USDT | +2.67% | $12,801,587.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BEAT/USDT:USDT | below_1h_threshold | +1.77% | +1.77% |
-| COW/USDT:USDT | below_1h_threshold | +1.76% | +1.75% |
-| STX/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
-| SQD/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.57% | +1.56% |
+| PORTAL/USDT:USDT | below_1h_threshold | +1.87% | +2.03% |
+| COW/USDT:USDT | below_1h_threshold | +1.76% | +1.92% |
+| STX/USDT:USDT | below_1h_threshold | +1.62% | +1.78% |
+| SQD/USDT:USDT | below_1h_threshold | +1.54% | +1.70% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.53% | +1.69% |
 
 ## 7. 次に見るべき不足
 
