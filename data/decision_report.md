@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T21:46:27.591786+00:00
+- generated_at: 2026-08-26T21:51:28.636214+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12749**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2239件
+- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2240件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000244 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PORTAL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T21:46:15.528566+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=78655.2
-- Funnel: target 1023 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1
+- 更新: 2026-08-26T21:51:16.032637+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=78660.0
+- Funnel: target 1023 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONT/USDT:USDT | +13.77% | $4,020,525.59 |
-| HEI/USDT:USDT | +11.26% | $3,097,906.44 |
-| S/USDT:USDT | +10.58% | $1,624,652.85 |
-| CASHCAT/USDT:USDT | +10.19% | $1,221,960.98 |
-| EDEN/USDT:USDT | +9.91% | $9,451,131.19 |
+| CASHCAT/USDT:USDT | +18.15% | $1,259,125.19 |
+| ONT/USDT:USDT | +13.51% | $4,071,606.27 |
+| HEI/USDT:USDT | +10.47% | $3,107,394.09 |
+| S/USDT:USDT | +10.27% | $1,627,798.79 |
+| EDEN/USDT:USDT | +9.47% | $9,519,118.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONT/USDT:USDT | below_1h_threshold | +4.86% | +4.56% |
-| VET/USDT:USDT | below_1h_threshold | +3.68% | +3.38% |
-| CVX/USDT:USDT | below_1h_threshold | +3.58% | +3.28% |
-| KORU/USDT:USDT | below_1h_threshold | +3.37% | +3.07% |
-| S/USDT:USDT | below_1h_threshold | +3.11% | +2.80% |
+| VET/USDT:USDT | below_1h_threshold | +4.68% | +4.37% |
+| ONT/USDT:USDT | below_1h_threshold | +4.67% | +4.36% |
+| CVX/USDT:USDT | below_1h_threshold | +4.59% | +4.28% |
+| GRASS/USDT:USDT | below_1h_threshold | +4.01% | +3.70% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.66% | +3.35% |
 
 ## 7. 次に見るべき不足
 
