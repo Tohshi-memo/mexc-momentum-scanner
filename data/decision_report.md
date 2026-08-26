@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T14:01:27.366802+00:00
+- generated_at: 2026-08-26T14:06:18.334165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12715**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T14:01:20.165397+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78367.5
+- 更新: 2026-08-26T14:06:09.323058+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78481.6
 - Funnel: target 1023 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +309.28% | $21,176,738.21 |
-| TAC/USDT:USDT | +74.36% | $9,054,656.82 |
-| BMT/USDT:USDT | +52.87% | $16,644,697.45 |
-| ONG/USDT:USDT | +44.24% | $11,903,675.72 |
-| LONGXIA/USDT:USDT | +41.34% | $2,023,503.42 |
+| BTR/USDT:USDT | +314.65% | $21,287,624.57 |
+| TAC/USDT:USDT | +77.57% | $9,133,996.55 |
+| BMT/USDT:USDT | +53.62% | $16,687,668.95 |
+| LONGXIA/USDT:USDT | +40.85% | $2,025,673.36 |
+| ONG/USDT:USDT | +39.75% | $12,724,714.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +3.51% | +3.56% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.48% |
-| SOXL/USDT:USDT | below_1h_threshold | +3.08% | +3.13% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.60% |
-| KORU/USDT:USDT | below_1h_threshold | +2.06% | +2.11% |
+| TUT/USDT:USDT | below_1h_threshold | +4.15% | +4.05% |
+| MUU/USDT:USDT | below_1h_threshold | +3.51% | +3.41% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +3.43% | +3.34% |
+| SOXL/USDT:USDT | below_1h_threshold | +3.08% | +2.98% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.45% |
 
 ## 7. 次に見るべき不足
 
