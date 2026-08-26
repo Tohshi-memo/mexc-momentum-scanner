@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T11:06:17.140946+00:00
+- generated_at: 2026-08-26T11:11:17.187538+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12698**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T11:06:08.128685+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78698.4
+- 更新: 2026-08-26T11:11:08.129058+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78658.7
 - Funnel: target 1023 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +230.75% | $15,237,959.01 |
-| BMT/USDT:USDT | +61.85% | $15,068,746.95 |
-| TAC/USDT:USDT | +59.16% | $6,766,608.19 |
-| LONGXIA/USDT:USDT | +24.64% | $1,979,738.67 |
-| PONS/USDT:USDT | +23.61% | $1,130,573.50 |
+| BTR/USDT:USDT | +223.31% | $15,392,958.80 |
+| TAC/USDT:USDT | +58.82% | $6,810,299.68 |
+| BMT/USDT:USDT | +57.27% | $15,122,790.61 |
+| LONGXIA/USDT:USDT | +25.61% | $1,981,548.53 |
+| PONS/USDT:USDT | +22.65% | $1,134,741.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.49% | +2.48% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.85% | +0.83% |
-| ACU/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
-| MVLL/USDT:USDT | below_1h_threshold | +0.70% | +0.68% |
-| SPX/USDT:USDT | below_1h_threshold | +0.58% | +0.57% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.93% | +3.97% |
+| ACU/USDT:USDT | below_1h_threshold | +1.05% | +1.09% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +0.89% | +0.92% |
+| LIGHT/USDT:USDT | below_1h_threshold | +0.87% | +0.90% |
+| BICO/USDT:USDT | below_1h_threshold | +0.62% | +0.66% |
 
 ## 7. 次に見るべき不足
 
