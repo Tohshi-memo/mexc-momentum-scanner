@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T23:31:15.262595+00:00
+- generated_at: 2026-08-26T23:36:16.143740+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12758**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T23:31:06.114902+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=78844.3
+- 更新: 2026-08-26T23:36:07.075880+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=78893.7
 - Funnel: target 1023 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +26.67% | $1,598,495.45 |
-| ONG/USDT:USDT | +24.71% | $40,260,353.13 |
-| ONT/USDT:USDT | +17.73% | $4,724,653.15 |
-| VET/USDT:USDT | +15.39% | $1,994,765.46 |
-| SPX/USDT:USDT | +12.84% | $4,543,240.46 |
+| CASHCAT/USDT:USDT | +25.38% | $1,616,512.87 |
+| ONG/USDT:USDT | +24.47% | $40,375,130.99 |
+| ONT/USDT:USDT | +17.47% | $4,728,778.05 |
+| VET/USDT:USDT | +15.76% | $2,028,390.02 |
+| EDEN/USDT:USDT | +13.34% | $10,051,711.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_relative_strength | +5.21% | +4.97% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.98% | +2.74% |
-| ENA/USDT:USDT | below_1h_threshold | +2.92% | +2.68% |
-| WLD/USDT:USDT | below_1h_threshold | +2.80% | +2.56% |
-| VET/USDT:USDT | below_1h_threshold | +2.49% | +2.25% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.07% | +3.77% |
+| WLD/USDT:USDT | below_1h_threshold | +3.36% | +3.05% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.96% | +2.66% |
+| VET/USDT:USDT | below_1h_threshold | +2.79% | +2.49% |
+| ENA/USDT:USDT | below_1h_threshold | +2.15% | +1.85% |
 
 ## 7. 次に見るべき不足
 
