@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T13:46:36.163925+00:00
+- generated_at: 2026-08-26T13:51:38.053944+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12713**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T13:46:20.230947+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=78464.9
+- 更新: 2026-08-26T13:51:24.197732+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78282.3
 - Funnel: target 1023 → liquid 167 → pre 50 → checked 50 → surge 5 → strict 1
 - Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1, 4h RSI 83.9 >= 65=1, 4h RSI 95.8 >= 65=1, 4h RSI 67.7 >= 65=1
+- Strict後reject: 4h RSI 73.3 >= 65=1, 4h RSI 83.7 >= 65=1, 4h RSI 95.8 >= 65=1, 4h RSI 68.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +309.83% | $20,537,669.79 |
-| TAC/USDT:USDT | +77.76% | $8,860,540.94 |
-| BMT/USDT:USDT | +55.78% | $16,538,259.01 |
-| LONGXIA/USDT:USDT | +45.36% | $2,013,160.24 |
-| ONG/USDT:USDT | +28.04% | $11,161,847.11 |
+| BTR/USDT:USDT | +304.64% | $20,720,194.35 |
+| TAC/USDT:USDT | +73.72% | $8,951,515.58 |
+| BMT/USDT:USDT | +53.56% | $16,580,866.43 |
+| LONGXIA/USDT:USDT | +45.19% | $2,017,346.10 |
+| ONG/USDT:USDT | +29.20% | $11,457,623.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +4.78% | +4.54% |
-| ONT/USDT:USDT | below_1h_threshold | +3.12% | +2.88% |
-| BR/USDT:USDT | below_1h_threshold | +2.81% | +2.58% |
-| STX/USDT:USDT | below_1h_threshold | +2.77% | +2.53% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +2.27% | +2.03% |
+| ONT/USDT:USDT | below_1h_threshold | +3.68% | +3.68% |
+| BMT/USDT:USDT | below_1h_threshold | +3.28% | +3.28% |
+| BR/USDT:USDT | below_1h_threshold | +2.75% | +2.74% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +2.27% | +2.27% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +1.90% |
 
 ## 7. 次に見るべき不足
 
