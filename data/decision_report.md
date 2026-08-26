@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T23:11:22.000784+00:00
+- generated_at: 2026-08-26T23:16:23.729124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12758**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T23:11:13.024220+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78676.1
-- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-26T23:16:14.564373+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78659.0
+- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONG/USDT:USDT | +21.43% | $39,552,086.04 |
-| CASHCAT/USDT:USDT | +20.94% | $1,535,285.03 |
-| ONT/USDT:USDT | +17.94% | $4,673,761.50 |
-| S/USDT:USDT | +13.84% | $1,924,988.02 |
-| VET/USDT:USDT | +12.66% | $1,934,287.75 |
+| CASHCAT/USDT:USDT | +26.66% | $1,551,928.21 |
+| ONG/USDT:USDT | +22.04% | $39,726,668.25 |
+| ONT/USDT:USDT | +18.27% | $4,686,292.14 |
+| VET/USDT:USDT | +12.96% | $1,940,226.02 |
+| EDEN/USDT:USDT | +12.42% | $9,925,310.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +1.45% | +1.43% |
-| PROM/USDT:USDT | below_1h_threshold | +1.36% | +1.33% |
-| CATE/USDT:USDT | below_1h_threshold | +1.17% | +1.14% |
-| JTO/USDT:USDT | below_1h_threshold | +0.76% | +0.73% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.72% | +0.69% |
+| CATE/USDT:USDT | below_1h_threshold | +2.54% | +2.54% |
+| ENA/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.03% | +1.03% |
+| JTO/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
+| PROM/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
 
 ## 7. 次に見るべき不足
 
