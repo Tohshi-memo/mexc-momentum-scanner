@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T17:56:50.580959+00:00
+- generated_at: 2026-08-26T18:01:21.858396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12737**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T17:56:38.105566+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=78404.9
-- Funnel: target 1023 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1, 4h RSI 67.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-26T18:01:12.835457+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78375.6
+- Funnel: target 1023 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +20.35% | $5,285,644.56 |
-| S/USDT:USDT | +7.25% | $1,010,887.59 |
-| ACU/USDT:USDT | +5.71% | $1,924,468.85 |
-| ONT/USDT:USDT | +4.85% | $2,281,262.09 |
-| GRASS/USDT:USDT | +4.39% | $1,669,720.37 |
+| EDEN/USDT:USDT | +17.15% | $5,429,078.67 |
+| S/USDT:USDT | +6.56% | $1,018,511.47 |
+| ACU/USDT:USDT | +6.38% | $1,900,057.11 |
+| ONT/USDT:USDT | +5.56% | $2,255,471.29 |
+| UAI/USDT:USDT | +4.93% | $2,345,310.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.51% | +2.95% |
-| TAC/USDT:USDT | below_1h_threshold | +3.49% | +2.92% |
-| TUT/USDT:USDT | below_1h_threshold | +3.44% | +2.87% |
-| HEI/USDT:USDT | below_1h_threshold | +3.35% | +2.78% |
-| SPX/USDT:USDT | below_1h_threshold | +3.31% | +2.74% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.42% |
+| ONT/USDT:USDT | below_1h_threshold | +1.30% | +1.34% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.17% |
+| ZMSTOCK/USDT:USDT | below_1h_threshold | +1.11% | +1.15% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.99% |
 
 ## 7. 次に見るべき不足
 
