@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T11:36:24.599286+00:00
+- generated_at: 2026-08-26T11:41:17.765509+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12700**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.02** / 初期 $100.00 (+17.02%)
-- 確定: 1972件 (Win 580 / Loss 751 / Flat 641) / pending 5件 / skip 2195件
+- 確定: 1972件 (Win 580 / Loss 751 / Flat 641) / pending 6件 / skip 2195件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000409 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BMT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $117.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T11:36:11.971292+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=78570.0
-- Funnel: target 1023 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-26T11:41:08.299618+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=78355.4
+- Funnel: target 1023 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +250.99% | $16,457,548.70 |
-| TAC/USDT:USDT | +53.01% | $7,166,863.99 |
-| BMT/USDT:USDT | +48.60% | $15,428,056.00 |
-| LONGXIA/USDT:USDT | +26.96% | $1,986,074.66 |
-| PONS/USDT:USDT | +21.14% | $1,143,641.85 |
+| BTR/USDT:USDT | +247.64% | $16,581,739.21 |
+| BMT/USDT:USDT | +52.38% | $15,495,410.42 |
+| TAC/USDT:USDT | +51.75% | $7,305,096.59 |
+| LONGXIA/USDT:USDT | +28.32% | $1,987,758.69 |
+| PONS/USDT:USDT | +22.06% | $1,145,632.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +3.72% | +3.87% |
-| BICO/USDT:USDT | below_1h_threshold | +3.63% | +3.79% |
-| LIGHT/USDT:USDT | below_1h_threshold | +1.67% | +1.82% |
-| STX/USDT:USDT | below_1h_threshold | +1.38% | +1.53% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.37% | +1.52% |
+| BTR/USDT:USDT | below_1h_threshold | +3.57% | +3.99% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.13% | +2.55% |
+| STX/USDT:USDT | below_1h_threshold | +1.27% | +1.69% |
+| LIGHT/USDT:USDT | below_1h_threshold | +0.75% | +1.17% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.50% | +0.92% |
 
 ## 7. 次に見るべき不足
 
