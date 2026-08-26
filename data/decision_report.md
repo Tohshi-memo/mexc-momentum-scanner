@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T09:21:27.252127+00:00
+- generated_at: 2026-08-26T09:26:24.212225+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12689**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.63** / 初期 $100.00 (+16.63%)
-- 確定: 1965件 (Win 577 / Loss 748 / Flat 640) / pending 6件 / skip 2194件
+- 確定: 1965件 (Win 577 / Loss 748 / Flat 640) / pending 6件 / skip 2195件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000469 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TAC/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T09:21:16.315010+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=78455.2
-- Funnel: target 1018 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.8 >= 65=1
+- 更新: 2026-08-26T09:26:14.441399+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=78400.0
+- Funnel: target 1018 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.1 >= 65=1, 4h RSI 66.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +168.39% | $12,506,411.02 |
-| TAC/USDT:USDT | +56.68% | $5,294,858.81 |
-| BMT/USDT:USDT | +50.52% | $13,694,095.49 |
-| LONGXIA/USDT:USDT | +33.98% | $1,949,131.75 |
-| PORTAL/USDT:USDT | +23.63% | $3,865,001.78 |
+| BTR/USDT:USDT | +171.01% | $12,575,835.73 |
+| TAC/USDT:USDT | +56.68% | $5,394,364.44 |
+| BMT/USDT:USDT | +51.14% | $13,732,931.68 |
+| LONGXIA/USDT:USDT | +25.64% | $1,954,318.55 |
+| PORTAL/USDT:USDT | +21.58% | $3,897,512.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +4.76% | +5.04% |
-| PORTAL/USDT:USDT | below_1h_threshold | +4.40% | +4.68% |
-| ONG/USDT:USDT | below_1h_threshold | +2.82% | +3.09% |
-| BR/USDT:USDT | below_1h_threshold | +1.54% | +1.81% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.33% | +1.60% |
+| PORTAL/USDT:USDT | below_1h_threshold | +2.84% | +3.18% |
+| ONG/USDT:USDT | below_1h_threshold | +1.79% | +2.14% |
+| BR/USDT:USDT | below_1h_threshold | +1.18% | +1.53% |
+| HEI/USDT:USDT | below_1h_threshold | +0.68% | +1.03% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.90% |
 
 ## 7. 次に見るべき不足
 
