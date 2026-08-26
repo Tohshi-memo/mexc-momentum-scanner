@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T16:26:27.464371+00:00
+- generated_at: 2026-08-26T16:31:24.862196+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12733**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T16:26:18.193457+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78005.8
+- 更新: 2026-08-26T16:31:15.643659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78000.0
 - Funnel: target 1023 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +8.49% | $2,074,985.97 |
-| CHIP/USDT:USDT | +3.60% | $1,427,191.13 |
-| TAC/USDT:USDT | +1.73% | $11,014,962.39 |
-| LSK/USDT:USDT | +1.73% | $1,108,102.47 |
-| VET/USDT:USDT | +1.66% | $1,048,223.49 |
+| CATE/USDT:USDT | +5.60% | $2,081,674.72 |
+| AKE/USDT:USDT | +3.54% | $4,585,801.47 |
+| CHIP/USDT:USDT | +3.02% | $1,440,831.17 |
+| BMT/USDT:USDT | +1.82% | $17,235,291.34 |
+| VET/USDT:USDT | +1.56% | $1,049,240.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.61% | +3.58% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.02% | +1.99% |
-| LSK/USDT:USDT | below_1h_threshold | +1.73% | +1.70% |
-| VET/USDT:USDT | below_1h_threshold | +1.70% | +1.67% |
-| UAI/USDT:USDT | below_1h_threshold | +1.62% | +1.59% |
+| AKE/USDT:USDT | below_1h_threshold | +3.59% | +3.57% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.02% | +3.00% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.02% | +2.00% |
+| BMT/USDT:USDT | below_1h_threshold | +1.83% | +1.80% |
+| VET/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
 
 ## 7. 次に見るべき不足
 
