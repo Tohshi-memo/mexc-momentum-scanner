@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T01:11:15.720759+00:00
+- generated_at: 2026-08-26T01:16:21.811637+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12643**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T01:11:06.528983+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=78732.0
+- 更新: 2026-08-26T01:16:12.841557+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=78739.9
 - Funnel: target 1023 → liquid 180 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +50.12% | $1,819,440.11 |
-| BMT/USDT:USDT | +43.59% | $8,195,316.65 |
-| AGI/USDT:USDT | +7.05% | $2,166,035.75 |
-| STAR/USDT:USDT | +6.58% | $1,130,147.33 |
-| PROM/USDT:USDT | +5.72% | $12,403,436.50 |
+| LONGXIA/USDT:USDT | +52.31% | $1,826,067.55 |
+| BMT/USDT:USDT | +44.14% | $8,236,409.27 |
+| PROM/USDT:USDT | +6.43% | $12,474,017.81 |
+| AGI/USDT:USDT | +5.23% | $2,170,609.23 |
+| STX/USDT:USDT | +4.31% | $10,889,708.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AGI/USDT:USDT | below_1h_threshold | +4.76% | +4.60% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.95% | +2.78% |
-| BMT/USDT:USDT | below_1h_threshold | +2.61% | +2.44% |
-| RE/USDT:USDT | below_1h_threshold | +1.83% | +1.67% |
-| BICO/USDT:USDT | below_1h_threshold | +1.74% | +1.58% |
+| AGI/USDT:USDT | below_1h_threshold | +3.17% | +2.99% |
+| BMT/USDT:USDT | below_1h_threshold | +2.96% | +2.79% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.95% | +2.77% |
+| PROM/USDT:USDT | below_1h_threshold | +2.48% | +2.30% |
+| BICO/USDT:USDT | below_1h_threshold | +1.90% | +1.72% |
 
 ## 7. 次に見るべき不足
 
