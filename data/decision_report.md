@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T18:51:37.796893+00:00
+- generated_at: 2026-08-26T18:56:22.601093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12738**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T18:51:27.273876+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=78377.9
-- Funnel: target 1023 → liquid 165 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.4 >= 65=1, 4h RSI 96.3 >= 65=1, 4h RSI 74.0 >= 65=1
+- 更新: 2026-08-26T18:56:12.768719+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78408.9
+- Funnel: target 1023 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.4 >= 65=1, 4h RSI 96.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| EDEN/USDT:USDT | +18.61% | $6,776,649.42 |
-| ONT/USDT:USDT | +12.88% | $2,735,846.17 |
-| S/USDT:USDT | +8.60% | $1,177,751.42 |
-| GRASS/USDT:USDT | +7.07% | $1,797,010.62 |
-| SPX/USDT:USDT | +6.48% | $4,341,264.45 |
+| EDEN/USDT:USDT | +17.82% | $6,828,656.71 |
+| ONT/USDT:USDT | +12.92% | $2,785,540.83 |
+| S/USDT:USDT | +10.06% | $1,183,103.74 |
+| GRASS/USDT:USDT | +8.40% | $1,820,775.55 |
+| UAI/USDT:USDT | +7.01% | $2,483,659.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +3.69% | +3.72% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.43% | +2.46% |
-| S/USDT:USDT | below_1h_threshold | +1.82% | +1.86% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
-| HEI/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
+| SPX/USDT:USDT | below_1h_threshold | +4.62% | +4.62% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.70% | +3.69% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.69% | +3.68% |
+| S/USDT:USDT | below_1h_threshold | +3.19% | +3.18% |
+| ONG/USDT:USDT | below_1h_threshold | +2.69% | +2.68% |
 
 ## 7. 次に見るべき不足
 
