@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T23:36:16.143740+00:00
+- generated_at: 2026-08-26T23:41:19.314389+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12758**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T23:36:07.075880+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=78893.7
-- Funnel: target 1023 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-26T23:41:09.989906+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=78906.2
+- Funnel: target 1023 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +25.38% | $1,616,512.87 |
-| ONG/USDT:USDT | +24.47% | $40,375,130.99 |
-| ONT/USDT:USDT | +17.47% | $4,728,778.05 |
-| VET/USDT:USDT | +15.76% | $2,028,390.02 |
-| EDEN/USDT:USDT | +13.34% | $10,051,711.13 |
+| CASHCAT/USDT:USDT | +27.34% | $1,631,129.08 |
+| ONG/USDT:USDT | +24.13% | $40,507,008.22 |
+| ONT/USDT:USDT | +17.14% | $4,731,562.74 |
+| VET/USDT:USDT | +16.32% | $2,042,367.69 |
+| SPX/USDT:USDT | +12.90% | $4,602,358.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.07% | +3.77% |
-| WLD/USDT:USDT | below_1h_threshold | +3.36% | +3.05% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.96% | +2.66% |
-| VET/USDT:USDT | below_1h_threshold | +2.79% | +2.49% |
-| ENA/USDT:USDT | below_1h_threshold | +2.15% | +1.85% |
+| WLD/USDT:USDT | below_1h_threshold | +3.96% | +3.64% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.77% | +3.45% |
+| VET/USDT:USDT | below_1h_threshold | +3.28% | +2.96% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.07% | +2.75% |
+| ENA/USDT:USDT | below_1h_threshold | +2.35% | +2.03% |
 
 ## 7. 次に見るべき不足
 
