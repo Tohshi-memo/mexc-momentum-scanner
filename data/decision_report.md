@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T04:01:20.684076+00:00
+- generated_at: 2026-08-26T04:06:19.601926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12653**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T04:01:11.593543+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=78989.5
+- 更新: 2026-08-26T04:06:10.540837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=78969.2
 - Funnel: target 1023 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +33.43% | $10,335,935.68 |
-| LONGXIA/USDT:USDT | +32.02% | $1,852,647.18 |
-| PONS/USDT:USDT | +24.49% | $1,118,584.87 |
-| PORTAL/USDT:USDT | +11.13% | $1,103,554.33 |
-| FARTCOIN/USDT:USDT | +11.02% | $14,692,704.21 |
+| BMT/USDT:USDT | +35.47% | $10,479,086.87 |
+| LONGXIA/USDT:USDT | +34.42% | $1,870,033.25 |
+| PONS/USDT:USDT | +26.85% | $1,127,322.70 |
+| FARTCOIN/USDT:USDT | +11.47% | $14,733,109.20 |
+| SKYAI/USDT:USDT | +11.06% | $6,877,668.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.26% | +2.33% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.33% | +1.41% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.91% |
-| EWY/USDT:USDT | below_1h_threshold | +0.74% | +0.82% |
+| EUL/USDT:USDT | below_1h_threshold | +2.32% | +2.42% |
+| KORU/USDT:USDT | below_1h_threshold | +2.26% | +2.36% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.11% | +2.21% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.33% | +1.43% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.27% | +1.38% |
 
 ## 7. 次に見るべき不足
 
