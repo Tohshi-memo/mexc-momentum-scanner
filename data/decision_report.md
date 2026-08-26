@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T23:46:12.688335+00:00
+- generated_at: 2026-08-26T23:51:25.484879+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12758**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T23:46:05.429765+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.47% price=79023.9
+- 更新: 2026-08-26T23:51:16.320702+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=79008.1
 - Funnel: target 1023 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +25.45% | $1,658,209.36 |
-| ONG/USDT:USDT | +23.20% | $40,572,135.95 |
-| ONT/USDT:USDT | +17.32% | $4,732,277.61 |
-| VET/USDT:USDT | +15.87% | $2,079,080.40 |
-| SPX/USDT:USDT | +13.86% | $4,612,447.99 |
+| ONG/USDT:USDT | +22.03% | $40,665,228.81 |
+| CASHCAT/USDT:USDT | +20.94% | $1,680,547.60 |
+| ONT/USDT:USDT | +18.27% | $4,737,351.03 |
+| VET/USDT:USDT | +17.79% | $2,167,669.62 |
+| SPX/USDT:USDT | +13.50% | $4,645,997.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLD/USDT:USDT | below_1h_threshold | +4.47% | +4.00% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.32% | +3.85% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.72% | +3.25% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.45% | +2.98% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.99% | +2.53% |
+| VET/USDT:USDT | below_1h_threshold | +4.59% | +4.14% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.98% | +3.53% |
+| WLD/USDT:USDT | below_1h_threshold | +3.91% | +3.46% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.88% | +3.43% |
+| ENA/USDT:USDT | below_1h_threshold | +2.83% | +2.39% |
 
 ## 7. 次に見るべき不足
 
