@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T11:16:18.472930+00:00
+- generated_at: 2026-08-26T11:21:20.503881+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12698**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T11:16:09.498386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78676.0
+- 更新: 2026-08-26T11:21:11.328919+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78617.0
 - Funnel: target 1023 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +236.55% | $15,543,819.22 |
-| TAC/USDT:USDT | +59.70% | $6,846,585.62 |
-| BMT/USDT:USDT | +56.40% | $15,212,266.65 |
-| LONGXIA/USDT:USDT | +26.14% | $1,982,517.53 |
-| PONS/USDT:USDT | +22.87% | $1,136,826.43 |
+| BTR/USDT:USDT | +239.80% | $15,761,260.22 |
+| TAC/USDT:USDT | +60.61% | $6,901,295.34 |
+| BMT/USDT:USDT | +56.22% | $15,244,945.71 |
+| LONGXIA/USDT:USDT | +26.59% | $1,983,272.52 |
+| PONS/USDT:USDT | +21.20% | $1,137,917.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.84% | +3.86% |
-| BICO/USDT:USDT | below_1h_threshold | +1.87% | +1.88% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
-| LIGHT/USDT:USDT | below_1h_threshold | +0.81% | +0.82% |
-| STX/USDT:USDT | below_1h_threshold | +0.78% | +0.80% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.29% | +2.38% |
+| BTR/USDT:USDT | below_1h_threshold | +1.60% | +1.69% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.53% | +1.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.47% | +1.56% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.21% | +1.30% |
 
 ## 7. 次に見るべき不足
 
