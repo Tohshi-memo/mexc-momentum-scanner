@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-26T06:36:24.104283+00:00
+- generated_at: 2026-08-26T06:41:16.775175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12677**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.12** / 初期 $100.00 (+15.12%)
-- 確定: 1954件 (Win 571 / Loss 746 / Flat 637) / pending 2件 / skip 2191件
+- 確定: 1954件 (Win 571 / Loss 746 / Flat 637) / pending 3件 / skip 2191件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000276 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.12
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-26T06:36:13.134443+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78904.6
+- 更新: 2026-08-26T06:41:08.371759+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=78861.6
 - Funnel: target 1023 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.0 >= 65=1
+- Strict後reject: 4h RSI 92.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +142.40% | $6,551,410.90 |
-| BMT/USDT:USDT | +33.93% | $11,443,559.30 |
-| LONGXIA/USDT:USDT | +22.50% | $1,897,389.42 |
-| TAC/USDT:USDT | +17.07% | $5,738,490.09 |
-| PONS/USDT:USDT | +16.74% | $1,141,090.56 |
+| BTR/USDT:USDT | +155.27% | $6,810,862.83 |
+| BMT/USDT:USDT | +32.44% | $11,488,959.97 |
+| LONGXIA/USDT:USDT | +21.32% | $1,897,875.53 |
+| TAC/USDT:USDT | +20.58% | $5,757,682.36 |
+| PONS/USDT:USDT | +16.74% | $1,143,285.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.25% | +4.44% |
-| BTR/USDT:USDT | below_1h_threshold | +3.97% | +4.15% |
-| BICO/USDT:USDT | below_1h_threshold | +2.86% | +3.05% |
-| ONG/USDT:USDT | below_1h_threshold | +2.30% | +2.48% |
-| ONT/USDT:USDT | below_1h_threshold | +1.66% | +1.85% |
+| PROM/USDT:USDT | below_1h_threshold | +4.76% | +5.00% |
+| TAC/USDT:USDT | below_1h_threshold | +4.01% | +4.25% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.23% | +3.48% |
+| ONG/USDT:USDT | below_1h_threshold | +2.01% | +2.25% |
+| BICO/USDT:USDT | below_1h_threshold | +1.48% | +1.72% |
 
 ## 7. 次に見るべき不足
 
