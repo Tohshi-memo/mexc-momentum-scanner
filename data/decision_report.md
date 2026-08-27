@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T20:26:31.592639+00:00
+- generated_at: 2026-08-27T20:31:27.947165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12836**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T20:26:22.222049+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=79983.9
-- Funnel: target 1019 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1
+- 更新: 2026-08-27T20:31:18.236950+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=79943.6
+- Funnel: target 1019 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.2 >= 65=1, 4h RSI 75.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +15.11% | $2,226,198.61 |
-| BMT/USDT:USDT | +10.21% | $1,715,292.98 |
-| UAI/USDT:USDT | +5.67% | $1,786,937.76 |
-| AKE/USDT:USDT | +5.04% | $19,234,150.05 |
-| BLESS/USDT:USDT | +4.67% | $5,637,154.30 |
+| HEMI/USDT:USDT | +16.21% | $2,242,047.58 |
+| BMT/USDT:USDT | +10.40% | $1,743,328.06 |
+| UAI/USDT:USDT | +6.00% | $1,787,822.95 |
+| AKE/USDT:USDT | +5.86% | $19,281,194.24 |
+| BLESS/USDT:USDT | +4.59% | $5,642,170.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_relative_strength | +5.04% | +4.89% |
-| MUU/USDT:USDT | below_1h_threshold | +4.44% | +4.30% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.61% | +2.47% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.14% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +1.83% |
+| MUU/USDT:USDT | below_1h_threshold | +4.44% | +4.35% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.61% | +2.52% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.19% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
+| DRAM/USDT:USDT | below_1h_threshold | +1.59% | +1.50% |
 
 ## 7. 次に見るべき不足
 
