@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T11:41:20.292953+00:00
+- generated_at: 2026-08-27T11:46:22.601748+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12808**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T11:41:11.077223+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=79373.7
-- Funnel: target 1018 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T11:46:13.285566+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=79428.6
+- Funnel: target 1018 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +32.52% | $5,349,253.97 |
-| VET/USDT:USDT | +23.33% | $3,442,699.03 |
-| RUNE/USDT:USDT | +18.29% | $3,846,281.62 |
-| BTR/USDT:USDT | +15.58% | $22,068,101.76 |
-| CASHCAT/USDT:USDT | +15.08% | $1,402,060.18 |
+| MOVR/USDT:USDT | +31.68% | $5,363,454.36 |
+| VET/USDT:USDT | +23.33% | $3,509,438.04 |
+| RUNE/USDT:USDT | +18.46% | $3,858,041.70 |
+| BTR/USDT:USDT | +15.75% | $22,122,308.65 |
+| SPX/USDT:USDT | +15.04% | $7,194,436.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +4.95% | +5.23% |
-| VET/USDT:USDT | below_1h_threshold | +3.20% | +3.48% |
-| MORPHO/USDT:USDT | below_1h_threshold | +2.41% | +2.69% |
-| XMR/USDT:USDT | below_1h_threshold | +1.74% | +2.03% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.42% | +1.70% |
+| VET/USDT:USDT | below_1h_threshold | +3.12% | +3.34% |
+| MORPHO/USDT:USDT | below_1h_threshold | +2.63% | +2.85% |
+| XMR/USDT:USDT | below_1h_threshold | +2.52% | +2.73% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.47% | +1.69% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.29% | +1.50% |
 
 ## 7. 次に見るべき不足
 
