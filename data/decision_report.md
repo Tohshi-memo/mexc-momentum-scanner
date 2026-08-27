@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T17:01:24.212468+00:00
+- generated_at: 2026-08-27T17:06:33.829917+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12823**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T17:01:15.880394+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=80340.9
-- Funnel: target 1019 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-27T17:06:24.840341+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80306.0
+- Funnel: target 1019 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +11.81% | $14,049,182.26 |
-| TRUMPOFFICIAL/USDT:USDT | +4.97% | $23,908,417.87 |
-| ENA/USDT:USDT | +3.72% | $47,084,247.72 |
-| MOVR/USDT:USDT | +3.59% | $7,943,036.67 |
-| WIF/USDT:USDT | +3.58% | $5,383,074.03 |
+| AKE/USDT:USDT | +18.32% | $14,635,967.04 |
+| TRUMPOFFICIAL/USDT:USDT | +4.13% | $24,201,312.19 |
+| VELVET/USDT:USDT | +2.83% | $2,090,002.41 |
+| TAC/USDT:USDT | +2.71% | $15,296,950.55 |
+| VET/USDT:USDT | +2.68% | $6,548,414.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.56% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.92% |
-| RENDER/USDT:USDT | below_1h_threshold | +0.77% | +0.77% |
-| VELVET/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| AKE/USDT:USDT | below_1h_threshold | +4.91% | +4.94% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.61% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
+| UAI/USDT:USDT | below_1h_threshold | +0.59% | +0.63% |
 
 ## 7. 次に見るべき不足
 
