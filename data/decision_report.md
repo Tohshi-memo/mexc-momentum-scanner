@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T02:21:19.037870+00:00
+- generated_at: 2026-08-27T02:26:17.697202+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12762**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T02:21:09.928353+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78817.3
+- 更新: 2026-08-27T02:26:08.647344+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=78712.9
 - Funnel: target 1023 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +18.37% | $1,719,997.34 |
-| SPX/USDT:USDT | +16.83% | $5,717,852.20 |
-| VET/USDT:USDT | +16.00% | $3,079,176.49 |
-| ONT/USDT:USDT | +13.02% | $5,796,285.69 |
-| FARTCOIN/USDT:USDT | +11.74% | $25,324,886.40 |
+| SPX/USDT:USDT | +16.38% | $5,726,913.89 |
+| CASHCAT/USDT:USDT | +16.19% | $1,722,699.62 |
+| VET/USDT:USDT | +14.02% | $3,093,557.42 |
+| ONT/USDT:USDT | +12.17% | $5,806,648.49 |
+| FARTCOIN/USDT:USDT | +11.18% | $25,374,799.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAO/USDT:USDT | below_1h_threshold | +2.90% | +2.97% |
-| BICO/USDT:USDT | below_1h_threshold | +2.56% | +2.62% |
-| MUU/USDT:USDT | below_1h_threshold | +2.50% | +2.56% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.07% | +2.13% |
-| UNI/USDT:USDT | below_1h_threshold | +1.87% | +1.93% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.63% | +2.83% |
+| MUU/USDT:USDT | below_1h_threshold | +2.50% | +2.69% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.07% | +2.26% |
+| BICO/USDT:USDT | below_1h_threshold | +2.06% | +2.25% |
+| TAO/USDT:USDT | below_1h_threshold | +1.72% | +1.91% |
 
 ## 7. 次に見るべき不足
 
