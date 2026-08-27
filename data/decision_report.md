@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T23:41:16.755462+00:00
+- generated_at: 2026-08-27T23:46:21.095139+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12846**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T23:41:07.702265+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=80265.0
-- Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-27T23:46:11.896594+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=80215.0
+- Funnel: target 1019 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +22.66% | $3,704,952.29 |
-| HEMI/USDT:USDT | +21.89% | $2,799,606.06 |
-| BLESS/USDT:USDT | +10.70% | $6,943,516.52 |
-| BTR/USDT:USDT | +8.79% | $18,894,433.42 |
-| MERL/USDT:USDT | +8.19% | $1,547,757.86 |
+| BMT/USDT:USDT | +25.68% | $3,741,616.62 |
+| HEMI/USDT:USDT | +19.76% | $2,825,455.57 |
+| BLESS/USDT:USDT | +11.18% | $6,979,832.85 |
+| BTR/USDT:USDT | +9.48% | $18,958,463.47 |
+| MERL/USDT:USDT | +8.00% | $1,551,279.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +2.92% | +2.92% |
-| BTR/USDT:USDT | below_1h_threshold | +2.74% | +2.74% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.26% | +2.26% |
-| KAS/USDT:USDT | below_1h_threshold | +1.17% | +1.17% |
-| UAI/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
+| BTR/USDT:USDT | below_1h_threshold | +3.27% | +3.33% |
+| BMT/USDT:USDT | below_1h_threshold | +3.01% | +3.07% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.80% | +2.86% |
+| BICO/USDT:USDT | below_1h_threshold | +2.15% | +2.22% |
+| KAS/USDT:USDT | below_1h_threshold | +0.96% | +1.02% |
 
 ## 7. 次に見るべき不足
 
