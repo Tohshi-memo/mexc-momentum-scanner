@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T17:06:33.829917+00:00
+- generated_at: 2026-08-27T17:11:38.702162+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12823**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 3件 / skip 2311件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 4件 / skip 2311件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000396 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T17:06:24.840341+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=80306.0
-- Funnel: target 1019 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T17:11:26.502879+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=80511.7
+- Funnel: target 1019 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +18.32% | $14,635,967.04 |
-| TRUMPOFFICIAL/USDT:USDT | +4.13% | $24,201,312.19 |
-| VELVET/USDT:USDT | +2.83% | $2,090,002.41 |
-| TAC/USDT:USDT | +2.71% | $15,296,950.55 |
-| VET/USDT:USDT | +2.68% | $6,548,414.10 |
+| AKE/USDT:USDT | +24.44% | $15,151,766.11 |
+| VELVET/USDT:USDT | +5.30% | $2,103,929.63 |
+| VET/USDT:USDT | +4.08% | $6,737,839.94 |
+| TRUMPOFFICIAL/USDT:USDT | +3.67% | $24,299,115.95 |
+| ENA/USDT:USDT | +3.58% | $47,566,272.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.91% | +4.94% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.61% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.53% | +1.56% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.96% |
-| UAI/USDT:USDT | below_1h_threshold | +0.59% | +0.63% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.86% | +2.64% |
+| ONG/USDT:USDT | below_1h_threshold | +1.65% | +1.43% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.35% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.53% | +1.31% |
+| VET/USDT:USDT | below_1h_threshold | +1.26% | +1.04% |
 
 ## 7. 次に見るべき不足
 
