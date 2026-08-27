@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T21:11:24.365518+00:00
+- generated_at: 2026-08-27T21:16:25.328889+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12837**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T21:11:15.246632+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80040.9
+- 更新: 2026-08-27T21:16:15.843873+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80095.9
 - Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BMT/USDT:USDT | +14.90% | $1,995,943.97 |
-| HEMI/USDT:USDT | +10.91% | $2,391,064.58 |
-| UAI/USDT:USDT | +5.51% | $1,762,536.75 |
-| ENA/USDT:USDT | +5.50% | $51,423,318.36 |
-| TAC/USDT:USDT | +5.30% | $14,553,943.34 |
+| BMT/USDT:USDT | +15.42% | $2,020,725.69 |
+| HEMI/USDT:USDT | +12.92% | $2,405,416.23 |
+| UAI/USDT:USDT | +4.98% | $1,779,653.34 |
+| ENA/USDT:USDT | +4.94% | $51,639,777.82 |
+| JUP/USDT:USDT | +4.75% | $2,541,660.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +2.60% | +2.63% |
-| ENA/USDT:USDT | below_1h_threshold | +1.98% | +2.01% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.39% | +1.42% |
-| JUP/USDT:USDT | below_1h_threshold | +1.06% | +1.09% |
-| LIT/USDT:USDT | below_1h_threshold | +0.94% | +0.97% |
+| TAC/USDT:USDT | below_1h_threshold | +2.01% | +1.98% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
+| ENA/USDT:USDT | below_1h_threshold | +1.41% | +1.37% |
+| JUP/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.04% | +1.00% |
 
 ## 7. 次に見るべき不足
 
