@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T17:51:28.941403+00:00
+- generated_at: 2026-08-27T17:56:28.643052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12827**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T17:51:19.773401+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=80504.0
+- 更新: 2026-08-27T17:56:19.439377+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=80467.6
 - Funnel: target 1019 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MONAD/USDT:USDT | +4.00% | $1,125,370.30 |
-| FARTCOIN/USDT:USDT | +3.81% | $13,044,986.61 |
-| MAGMA/USDT:USDT | +3.47% | $2,674,672.52 |
-| VELVET/USDT:USDT | +3.38% | $2,155,268.79 |
-| PROM/USDT:USDT | +3.27% | $5,546,011.54 |
+| ENA/USDT:USDT | +4.25% | $50,231,371.90 |
+| ONG/USDT:USDT | +3.92% | $33,217,281.19 |
+| FARTCOIN/USDT:USDT | +3.79% | $13,095,859.13 |
+| MONAD/USDT:USDT | +3.68% | $1,134,156.89 |
+| VELVET/USDT:USDT | +3.10% | $2,157,389.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MONAD/USDT:USDT | below_1h_threshold | +3.07% | +2.86% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.35% | +2.14% |
-| LIT/USDT:USDT | below_1h_threshold | +2.29% | +2.08% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.14% | +1.93% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.05% | +1.84% |
+| ONG/USDT:USDT | below_1h_threshold | +4.31% | +4.14% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.68% | +2.52% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.37% | +2.20% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.79% | +1.63% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.60% | +1.44% |
 
 ## 7. 次に見るべき不足
 
