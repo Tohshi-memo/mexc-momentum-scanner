@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T04:36:29.427878+00:00
+- generated_at: 2026-08-27T04:41:19.008554+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12775**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T04:36:16.031029+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=78666.7
+- 更新: 2026-08-27T04:41:09.297597+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=78719.2
 - Funnel: target 1023 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.3 >= 65=1, 4h RSI 88.8 >= 65=1
+- Strict後reject: 4h RSI 80.7 >= 65=1, 4h RSI 88.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +47.41% | $1,593,450.73 |
-| BTR/USDT:USDT | +28.16% | $30,322,513.75 |
-| SPX/USDT:USDT | +19.77% | $6,318,419.99 |
-| RUNE/USDT:USDT | +19.66% | $1,156,172.20 |
-| BICO/USDT:USDT | +19.35% | $21,929,351.10 |
+| MOVR/USDT:USDT | +42.30% | $1,657,842.42 |
+| BTR/USDT:USDT | +27.08% | $30,382,995.17 |
+| RUNE/USDT:USDT | +21.50% | $1,184,728.03 |
+| SPX/USDT:USDT | +20.52% | $6,327,456.20 |
+| BICO/USDT:USDT | +18.40% | $22,174,124.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +1.64% | +1.81% |
-| UAI/USDT:USDT | below_1h_threshold | +1.30% | +1.47% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.21% | +1.38% |
-| VVV/USDT:USDT | below_1h_threshold | +0.93% | +1.10% |
-| S/USDT:USDT | below_1h_threshold | +0.84% | +1.01% |
+| SPX/USDT:USDT | below_1h_threshold | +2.09% | +2.19% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.97% | +2.07% |
+| TUT/USDT:USDT | below_1h_threshold | +1.80% | +1.90% |
+| CRV/USDT:USDT | below_1h_threshold | +1.67% | +1.77% |
+| UAI/USDT:USDT | below_1h_threshold | +1.57% | +1.68% |
 
 ## 7. 次に見るべき不足
 
