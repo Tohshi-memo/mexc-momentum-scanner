@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T07:21:21.777383+00:00
+- generated_at: 2026-08-27T07:26:26.672335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12794**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T07:21:11.005577+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78804.6
+- 更新: 2026-08-27T07:26:17.565169+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=78721.3
 - Funnel: target 1018 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +48.89% | $3,601,028.85 |
-| TAC/USDT:USDT | +26.89% | $13,166,433.41 |
-| RUNE/USDT:USDT | +24.81% | $1,918,065.47 |
-| SPX/USDT:USDT | +20.39% | $6,123,842.76 |
-| VET/USDT:USDT | +19.69% | $2,275,330.54 |
+| MOVR/USDT:USDT | +44.37% | $3,759,204.83 |
+| TAC/USDT:USDT | +27.55% | $13,194,090.69 |
+| RUNE/USDT:USDT | +24.83% | $1,926,684.71 |
+| SPX/USDT:USDT | +19.60% | $6,136,976.43 |
+| VET/USDT:USDT | +17.81% | $2,305,310.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAC/USDT:USDT | below_1h_threshold | +3.81% | +3.82% |
-| VET/USDT:USDT | below_1h_threshold | +2.12% | +2.13% |
-| SPX/USDT:USDT | below_1h_threshold | +1.81% | +1.82% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.61% | +1.61% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.44% | +1.45% |
+| TAC/USDT:USDT | below_1h_threshold | +4.14% | +4.26% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.73% | +1.84% |
+| ONT/USDT:USDT | below_1h_threshold | +1.47% | +1.58% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.44% | +1.55% |
+| TUT/USDT:USDT | below_1h_threshold | +1.26% | +1.37% |
 
 ## 7. 次に見るべき不足
 
