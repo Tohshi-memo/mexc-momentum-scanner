@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T16:41:33.966256+00:00
+- generated_at: 2026-08-27T16:46:22.933642+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12823**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 2件 / skip 2311件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 3件 / skip 2311件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000396 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T16:41:21.762410+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=80404.1
-- Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T16:46:14.681088+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=80512.6
+- Funnel: target 1019 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +5.49% | $15,608,051.40 |
-| WIF/USDT:USDT | +5.01% | $5,066,517.74 |
-| TRUMPOFFICIAL/USDT:USDT | +4.85% | $22,637,996.88 |
-| MOVR/USDT:USDT | +4.67% | $7,838,257.19 |
-| ENA/USDT:USDT | +3.13% | $47,989,820.83 |
+| WIF/USDT:USDT | +5.51% | $5,160,070.24 |
+| TAC/USDT:USDT | +4.58% | $15,615,724.29 |
+| TRUMPOFFICIAL/USDT:USDT | +4.51% | $22,857,870.54 |
+| MOVR/USDT:USDT | +4.17% | $7,891,507.74 |
+| ENA/USDT:USDT | +3.49% | $48,284,705.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WIF/USDT:USDT | below_relative_strength | +5.11% | +4.94% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.82% | +4.66% |
-| MOVR/USDT:USDT | below_1h_threshold | +4.71% | +4.55% |
-| ENA/USDT:USDT | below_1h_threshold | +3.11% | +2.95% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.40% | +2.23% |
+| TAC/USDT:USDT | below_1h_threshold | +4.58% | +4.28% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.51% | +4.21% |
+| MOVR/USDT:USDT | below_1h_threshold | +4.37% | +4.07% |
+| ENA/USDT:USDT | below_1h_threshold | +3.49% | +3.19% |
+| WLD/USDT:USDT | below_1h_threshold | +2.71% | +2.41% |
 
 ## 7. 次に見るべき不足
 
