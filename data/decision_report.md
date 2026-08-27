@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T14:51:35.881929+00:00
+- generated_at: 2026-08-27T14:56:24.022743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12819**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T14:51:23.828334+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.77% price=80104.0
-- Funnel: target 1019 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
+- 更新: 2026-08-27T14:56:16.639308+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.67% price=80021.6
+- Funnel: target 1019 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +47.45% | $6,770,263.82 |
-| MAGMA/USDT:USDT | +29.89% | $2,149,161.15 |
-| VET/USDT:USDT | +27.43% | $5,642,567.76 |
-| HEMI/USDT:USDT | +25.64% | $1,409,659.00 |
-| CASHCAT/USDT:USDT | +24.22% | $1,299,632.14 |
+| MOVR/USDT:USDT | +46.54% | $6,813,148.36 |
+| MAGMA/USDT:USDT | +30.03% | $2,168,270.41 |
+| VET/USDT:USDT | +27.73% | $5,654,738.05 |
+| CASHCAT/USDT:USDT | +25.48% | $1,305,867.05 |
+| HEMI/USDT:USDT | +24.86% | $1,414,311.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +3.91% |
-| BTR/USDT:USDT | below_1h_threshold | +3.97% | +3.20% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.10% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.85% | +3.08% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.00% |
+| CYS/USDT:USDT | below_relative_strength | +5.45% | +4.79% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.96% | +4.30% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.01% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.87% | +3.21% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.20% |
 
 ## 7. 次に見るべき不足
 
