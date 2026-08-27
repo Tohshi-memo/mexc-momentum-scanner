@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T08:41:29.185377+00:00
+- generated_at: 2026-08-27T08:46:28.350483+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12803**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2289件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2290件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000252 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T08:41:17.851874+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.84% price=79720.5
-- Funnel: target 1018 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
+- 更新: 2026-08-27T08:46:18.593350+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.15% price=79960.1
+- Funnel: target 1018 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 92.1 >= 65=1, 4h RSI 70.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +60.88% | $15,202,772.39 |
-| MOVR/USDT:USDT | +36.25% | $4,462,902.63 |
-| RUNE/USDT:USDT | +24.79% | $2,700,689.19 |
-| VET/USDT:USDT | +21.36% | $2,764,753.12 |
-| GRASS/USDT:USDT | +15.19% | $2,202,592.68 |
+| TAC/USDT:USDT | +69.78% | $15,598,284.22 |
+| MOVR/USDT:USDT | +34.23% | $4,499,513.12 |
+| RUNE/USDT:USDT | +24.09% | $2,780,243.07 |
+| VET/USDT:USDT | +20.93% | $2,769,126.56 |
+| CASHCAT/USDT:USDT | +16.08% | $1,486,727.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.17% | +3.33% |
-| TAC/USDT:USDT | below_1h_threshold | +4.03% | +3.19% |
-| TAO/USDT:USDT | below_1h_threshold | +3.83% | +2.99% |
-| RENDER/USDT:USDT | below_1h_threshold | +3.55% | +2.71% |
-| GRASS/USDT:USDT | below_1h_threshold | +3.34% | +2.49% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.48% | +3.34% |
+| TAO/USDT:USDT | below_1h_threshold | +3.79% | +2.65% |
+| RENDER/USDT:USDT | below_1h_threshold | +3.61% | +2.47% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.22% | +2.07% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.17% | +2.02% |
 
 ## 7. 次に見るべき不足
 
