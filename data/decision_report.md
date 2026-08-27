@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T15:01:24.620861+00:00
+- generated_at: 2026-08-27T15:06:22.417093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12819**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T15:01:16.718120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80185.8
-- Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-27T15:06:13.231526+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=80256.6
+- Funnel: target 1019 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +45.21% | $6,838,941.59 |
-| MAGMA/USDT:USDT | +31.90% | $2,170,634.59 |
-| VET/USDT:USDT | +27.91% | $5,759,260.81 |
-| CASHCAT/USDT:USDT | +25.37% | $1,274,141.78 |
-| HEMI/USDT:USDT | +24.74% | $1,407,171.74 |
+| MOVR/USDT:USDT | +46.40% | $6,868,316.80 |
+| MAGMA/USDT:USDT | +31.92% | $2,195,522.39 |
+| CHIP/USDT:USDT | +29.14% | $2,943,239.96 |
+| VET/USDT:USDT | +26.08% | $5,829,786.39 |
+| CASHCAT/USDT:USDT | +25.60% | $1,285,693.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.00% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.12% | +1.09% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.75% | +0.71% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.73% | +0.70% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.00% | +3.88% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +2.91% |
+| ENA/USDT:USDT | below_1h_threshold | +1.34% | +1.22% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.23% | +1.11% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.12% | +1.00% |
 
 ## 7. 次に見るべき不足
 
