@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T05:21:39.154623+00:00
+- generated_at: 2026-08-27T05:26:14.965094+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12781**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T05:21:25.496681+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=78621.7
+- 更新: 2026-08-27T05:26:03.655746+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78735.3
 - Funnel: target 1023 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +24.40% | $22,551,550.69 |
-| RUNE/USDT:USDT | +20.81% | $1,308,931.09 |
-| BTR/USDT:USDT | +19.53% | $29,378,803.69 |
-| MOVR/USDT:USDT | +19.19% | $2,102,936.56 |
-| CHIP/USDT:USDT | +17.45% | $1,946,685.25 |
+| MOVR/USDT:USDT | +29.23% | $2,121,019.05 |
+| BICO/USDT:USDT | +22.62% | $22,040,507.38 |
+| RUNE/USDT:USDT | +20.51% | $1,278,263.94 |
+| BTR/USDT:USDT | +18.69% | $28,546,225.92 |
+| SPX/USDT:USDT | +16.68% | $6,214,718.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +3.95% | +4.10% |
-| BICO/USDT:USDT | below_1h_threshold | +0.84% | +1.00% |
-| XMR/USDT:USDT | below_1h_threshold | +0.70% | +0.86% |
-| MORPHO/USDT:USDT | below_1h_threshold | +0.65% | +0.81% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.40% | +0.56% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.87% | +2.88% |
+| MOVR/USDT:USDT | below_1h_threshold | +1.55% | +1.56% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.50% | +1.51% |
+| MORPHO/USDT:USDT | below_1h_threshold | +0.56% | +0.57% |
+| ETC/USDT:USDT | below_1h_threshold | +0.32% | +0.33% |
 
 ## 7. 次に見るべき不足
 
