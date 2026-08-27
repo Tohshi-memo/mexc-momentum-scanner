@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T13:46:44.400307+00:00
+- generated_at: 2026-08-27T13:51:39.230876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12813**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T13:46:30.199392+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=79272.9
-- Funnel: target 1018 → liquid 154 → pre 50 → checked 50 → surge 6 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1, 4h RSI 67.6 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 77.3 >= 65=1, 4h RSI 71.5 >= 65=1
+- 更新: 2026-08-27T13:51:25.871393+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=79103.9
+- Funnel: target 1019 → liquid 154 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.8 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 71.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +38.09% | $5,830,624.27 |
-| MAGMA/USDT:USDT | +29.90% | $1,594,016.92 |
-| VET/USDT:USDT | +25.78% | $5,180,118.45 |
-| HEMI/USDT:USDT | +24.78% | $1,279,664.05 |
-| TUT/USDT:USDT | +24.71% | $20,504,488.48 |
+| MOVR/USDT:USDT | +36.18% | $5,900,327.27 |
+| MAGMA/USDT:USDT | +27.96% | $1,640,249.97 |
+| HEMI/USDT:USDT | +26.12% | $1,293,287.88 |
+| VET/USDT:USDT | +26.10% | $5,243,562.56 |
+| TUT/USDT:USDT | +23.47% | $20,601,055.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.02% | +2.99% |
-| HEI/USDT:USDT | below_1h_threshold | +2.76% | +2.73% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.39% | +2.36% |
-| PENGU/USDT:USDT | below_1h_threshold | +1.57% | +1.54% |
-| SPX/USDT:USDT | below_1h_threshold | +1.31% | +1.28% |
+| PROM/USDT:USDT | below_1h_threshold | +4.97% | +5.15% |
+| BICO/USDT:USDT | below_1h_threshold | +3.87% | +4.05% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.44% | +3.62% |
+| HEI/USDT:USDT | below_1h_threshold | +2.83% | +3.01% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.68% | +1.86% |
 
 ## 7. 次に見るべき不足
 
