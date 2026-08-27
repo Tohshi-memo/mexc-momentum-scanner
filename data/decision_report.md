@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T10:51:23.610680+00:00
+- generated_at: 2026-08-27T10:56:28.844553+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12807**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T10:51:13.531419+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.56% price=79508.8
+- 更新: 2026-08-27T10:56:16.966268+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=79529.9
 - Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.4 >= 65=1
+- Strict後reject: 4h RSI 81.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +30.13% | $5,162,017.73 |
-| VET/USDT:USDT | +19.97% | $3,308,344.29 |
-| RUNE/USDT:USDT | +15.91% | $3,588,040.46 |
-| PROM/USDT:USDT | +14.94% | $4,868,260.62 |
-| SPX/USDT:USDT | +14.42% | $7,199,029.90 |
+| MOVR/USDT:USDT | +30.71% | $5,175,856.97 |
+| VET/USDT:USDT | +19.07% | $3,324,522.90 |
+| RUNE/USDT:USDT | +17.14% | $3,609,216.85 |
+| PROM/USDT:USDT | +15.24% | $4,876,290.62 |
+| CHIP/USDT:USDT | +15.08% | $2,239,989.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACU/USDT:USDT | below_1h_threshold | +4.18% | +4.75% |
-| BICO/USDT:USDT | below_1h_threshold | +3.16% | +3.72% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.66% | +3.23% |
-| PROM/USDT:USDT | below_1h_threshold | +1.96% | +2.52% |
-| EUL/USDT:USDT | below_1h_threshold | +1.91% | +2.48% |
+| BICO/USDT:USDT | below_1h_threshold | +3.49% | +4.02% |
+| ACU/USDT:USDT | below_1h_threshold | +2.94% | +3.48% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.81% | +3.35% |
+| EUL/USDT:USDT | below_1h_threshold | +2.53% | +3.07% |
+| PROM/USDT:USDT | below_1h_threshold | +2.23% | +2.76% |
 
 ## 7. 次に見るべき不足
 
