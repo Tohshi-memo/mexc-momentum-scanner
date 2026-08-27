@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T09:16:24.524616+00:00
+- generated_at: 2026-08-27T09:21:24.132538+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12806**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2290件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2291件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000213 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T09:16:12.060099+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=79809.9
-- Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T09:21:12.568703+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=79998.7
+- Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +44.11% | $16,292,119.11 |
-| MOVR/USDT:USDT | +31.60% | $4,726,730.93 |
-| RUNE/USDT:USDT | +20.81% | $3,138,082.11 |
-| VET/USDT:USDT | +20.40% | $2,903,512.20 |
-| CASHCAT/USDT:USDT | +15.56% | $1,432,586.38 |
+| TAC/USDT:USDT | +50.67% | $16,550,854.99 |
+| MOVR/USDT:USDT | +34.40% | $4,783,175.41 |
+| RUNE/USDT:USDT | +21.81% | $3,154,035.48 |
+| VET/USDT:USDT | +19.51% | $2,922,886.10 |
+| TUT/USDT:USDT | +19.50% | $12,907,408.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.55% | +3.44% |
-| TUT/USDT:USDT | below_1h_threshold | +3.47% | +3.36% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.12% | +2.01% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.75% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.85% | +1.74% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.55% | +3.20% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.72% | +2.38% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.29% | +1.94% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.12% | +1.77% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.52% |
 
 ## 7. 次に見るべき不足
 
