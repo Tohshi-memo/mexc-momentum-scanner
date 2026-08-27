@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T13:01:21.379854+00:00
+- generated_at: 2026-08-27T13:06:26.027867+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12811**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T13:01:14.108559+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79255.3
+- 更新: 2026-08-27T13:06:16.769568+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=79259.6
 - Funnel: target 1018 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VET/USDT:USDT | +28.28% | $4,489,790.61 |
-| MOVR/USDT:USDT | +28.19% | $5,578,866.91 |
-| TUT/USDT:USDT | +25.04% | $18,144,714.43 |
-| HEMI/USDT:USDT | +24.84% | $1,130,140.98 |
-| MAGMA/USDT:USDT | +19.84% | $1,191,630.62 |
+| MOVR/USDT:USDT | +27.78% | $5,591,123.64 |
+| VET/USDT:USDT | +27.70% | $4,578,398.02 |
+| HEMI/USDT:USDT | +25.25% | $1,137,723.81 |
+| MAGMA/USDT:USDT | +23.18% | $1,208,713.74 |
+| TUT/USDT:USDT | +19.52% | $18,759,934.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.47% | +0.46% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.43% | +0.42% |
-| PROM/USDT:USDT | below_1h_threshold | +0.39% | +0.38% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.35% | +0.34% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.26% | +3.24% |
+| BICO/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
+| HEI/USDT:USDT | below_1h_threshold | +1.87% | +1.85% |
+| BTR/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.85% | +0.84% |
 
 ## 7. 次に見るべき不足
 
