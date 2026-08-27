@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T18:01:35.359596+00:00
+- generated_at: 2026-08-27T18:06:19.975601+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12828**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T18:01:24.350228+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=80415.0
+- 更新: 2026-08-27T18:06:10.910280+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80320.0
 - Funnel: target 1019 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +7.68% | $18,997,534.64 |
-| ONG/USDT:USDT | +4.50% | $32,355,682.62 |
-| ENA/USDT:USDT | +4.17% | $48,798,780.13 |
-| VELVET/USDT:USDT | +3.83% | $2,113,257.13 |
-| MAGMA/USDT:USDT | +3.80% | $2,627,315.32 |
+| AKE/USDT:USDT | +5.46% | $19,173,389.93 |
+| ENA/USDT:USDT | +4.51% | $48,898,520.79 |
+| PROM/USDT:USDT | +3.54% | $5,450,986.34 |
+| MONAD/USDT:USDT | +3.46% | $1,126,904.19 |
+| FARTCOIN/USDT:USDT | +3.42% | $12,385,452.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.63% | +1.63% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.48% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.44% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +1.20% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.59% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.56% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.20% | +1.32% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.09% |
+| UAI/USDT:USDT | below_1h_threshold | +0.81% | +0.93% |
 
 ## 7. 次に見るべき不足
 
