@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T02:41:20.528015+00:00
+- generated_at: 2026-08-27T02:46:21.002213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12763**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T02:41:14.332316+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=78688.0
-- Funnel: target 1023 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-27T02:46:11.954017+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=78699.6
+- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPX/USDT:USDT | +16.59% | $5,830,171.50 |
-| CASHCAT/USDT:USDT | +16.43% | $1,751,210.46 |
-| VET/USDT:USDT | +14.70% | $3,113,541.49 |
-| ONT/USDT:USDT | +12.10% | $5,828,443.35 |
-| CHIP/USDT:USDT | +11.35% | $1,735,480.90 |
+| CASHCAT/USDT:USDT | +16.61% | $1,752,498.97 |
+| SPX/USDT:USDT | +16.13% | $5,864,400.91 |
+| VET/USDT:USDT | +14.91% | $3,113,983.30 |
+| ONT/USDT:USDT | +11.65% | $5,853,247.79 |
+| CHIP/USDT:USDT | +11.56% | $1,736,999.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.50% | +2.73% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.07% | +2.30% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.83% | +2.06% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.61% | +1.84% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.59% | +1.82% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.60% | +2.81% |
+| MUU/USDT:USDT | below_1h_threshold | +2.50% | +2.71% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.07% | +2.28% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.06% | +2.27% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.61% | +1.82% |
 
 ## 7. 次に見るべき不足
 
