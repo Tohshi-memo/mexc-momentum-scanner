@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T14:16:28.770396+00:00
+- generated_at: 2026-08-27T14:21:21.160609+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12815**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T14:16:17.892869+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=79412.8
-- Funnel: target 1019 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-27T14:21:12.114752+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=79732.6
+- Funnel: target 1019 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +46.79% | $6,286,266.49 |
-| MAGMA/USDT:USDT | +36.14% | $1,803,849.13 |
-| HEMI/USDT:USDT | +25.53% | $1,312,821.83 |
-| VET/USDT:USDT | +24.59% | $5,397,276.41 |
-| TUT/USDT:USDT | +21.77% | $19,824,596.39 |
+| MOVR/USDT:USDT | +39.34% | $6,428,055.97 |
+| MAGMA/USDT:USDT | +30.35% | $1,894,599.90 |
+| HEMI/USDT:USDT | +27.02% | $1,318,773.19 |
+| VET/USDT:USDT | +26.70% | $5,490,671.07 |
+| PROM/USDT:USDT | +22.55% | $5,340,530.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.78% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.36% | +4.46% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.97% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.87% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.19% | +3.30% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.38% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.29% | +3.99% |
+| BTR/USDT:USDT | below_1h_threshold | +4.15% | +3.85% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.57% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.47% |
 
 ## 7. 次に見るべき不足
 
