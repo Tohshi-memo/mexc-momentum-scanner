@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T18:11:19.926353+00:00
+- generated_at: 2026-08-27T18:16:19.396532+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12829**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T18:11:11.126382+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=80300.1
+- 更新: 2026-08-27T18:16:10.271973+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=80145.9
 - Funnel: target 1019 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +8.02% | $19,427,714.92 |
-| PROM/USDT:USDT | +5.98% | $5,518,955.53 |
-| MONAD/USDT:USDT | +3.53% | $1,130,664.10 |
-| ENA/USDT:USDT | +3.41% | $49,071,699.77 |
-| MAGMA/USDT:USDT | +3.27% | $2,639,894.50 |
+| AKE/USDT:USDT | +8.00% | $19,668,386.84 |
+| PROM/USDT:USDT | +7.09% | $5,617,922.16 |
+| ENA/USDT:USDT | +3.30% | $49,376,372.95 |
+| MRNASTOCK/USDT:USDT | +3.17% | $1,723,567.65 |
+| MONAD/USDT:USDT | +2.85% | $1,135,319.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +2.85% | +2.99% |
-| AKE/USDT:USDT | below_1h_threshold | +2.58% | +2.72% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.62% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.58% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.23% | +1.37% |
+| PROM/USDT:USDT | below_1h_threshold | +3.75% | +4.08% |
+| AKE/USDT:USDT | below_1h_threshold | +1.82% | +2.16% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.81% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.77% |
+| VET/USDT:USDT | below_1h_threshold | +1.28% | +1.61% |
 
 ## 7. 次に見るべき不足
 
