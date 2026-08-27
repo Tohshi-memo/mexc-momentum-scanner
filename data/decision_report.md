@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T13:06:26.027867+00:00
+- generated_at: 2026-08-27T13:11:28.656623+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12811**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2298件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2299件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000245 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T13:06:16.769568+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79259.6
-- Funnel: target 1018 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T13:11:19.229163+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=79271.6
+- Funnel: target 1018 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +27.78% | $5,591,123.64 |
-| VET/USDT:USDT | +27.70% | $4,578,398.02 |
-| HEMI/USDT:USDT | +25.25% | $1,137,723.81 |
-| MAGMA/USDT:USDT | +23.18% | $1,208,713.74 |
-| TUT/USDT:USDT | +19.52% | $18,759,934.37 |
+| VET/USDT:USDT | +28.02% | $4,692,680.69 |
+| MOVR/USDT:USDT | +27.17% | $5,608,155.34 |
+| HEMI/USDT:USDT | +25.88% | $1,144,172.13 |
+| MAGMA/USDT:USDT | +25.77% | $1,248,357.39 |
+| BTR/USDT:USDT | +19.72% | $20,248,014.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.26% | +3.24% |
-| BICO/USDT:USDT | below_1h_threshold | +2.05% | +2.03% |
-| HEI/USDT:USDT | below_1h_threshold | +1.87% | +1.85% |
-| BTR/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.85% | +0.84% |
+| BICO/USDT:USDT | below_1h_threshold | +2.98% | +2.95% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.25% | +2.22% |
+| BTR/USDT:USDT | below_1h_threshold | +1.55% | +1.52% |
+| DASH/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
+| HEI/USDT:USDT | below_1h_threshold | +0.97% | +0.94% |
 
 ## 7. 次に見るべき不足
 
