@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T11:01:21.539302+00:00
+- generated_at: 2026-08-27T11:06:29.864439+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12807**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T11:01:12.426208+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=79534.3
+- 更新: 2026-08-27T11:06:21.738565+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=79659.9
 - Funnel: target 1018 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +33.47% | $5,137,474.91 |
-| VET/USDT:USDT | +19.17% | $3,295,485.51 |
-| BICO/USDT:USDT | +17.70% | $28,396,360.87 |
-| RUNE/USDT:USDT | +16.41% | $3,645,323.34 |
-| PROM/USDT:USDT | +15.74% | $4,751,032.55 |
+| MOVR/USDT:USDT | +32.76% | $5,172,011.85 |
+| VET/USDT:USDT | +19.92% | $3,297,402.28 |
+| BICO/USDT:USDT | +16.62% | $28,671,523.03 |
+| RUNE/USDT:USDT | +16.43% | $3,662,738.48 |
+| PROM/USDT:USDT | +16.32% | $4,770,733.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +0.67% | +0.75% |
-| BICO/USDT:USDT | below_1h_threshold | +0.64% | +0.72% |
-| EUL/USDT:USDT | below_1h_threshold | +0.41% | +0.49% |
-| KORU/USDT:USDT | below_1h_threshold | +0.37% | +0.45% |
-| ACU/USDT:USDT | below_1h_threshold | +0.32% | +0.40% |
+| BTR/USDT:USDT | below_1h_threshold | +3.89% | +3.81% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.28% | +1.21% |
+| GRASS/USDT:USDT | below_1h_threshold | +1.13% | +1.06% |
+| MORPHO/USDT:USDT | below_1h_threshold | +0.88% | +0.81% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.82% | +0.74% |
 
 ## 7. 次に見るべき不足
 
