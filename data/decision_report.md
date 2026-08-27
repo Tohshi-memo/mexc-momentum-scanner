@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T06:56:43.223231+00:00
+- generated_at: 2026-08-27T07:01:21.958105+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12792**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T06:56:31.472844+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=78810.5
-- Funnel: target 1025 → liquid 156 → pre 50 → checked 50 → surge 6 → strict 0
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 87.4 >= 65=1, 4h RSI 83.5 >= 65=1, 4h RSI 75.7 >= 65=1, 4h RSI 82.1 >= 65=1, 4h RSI 66.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-27T07:01:12.928390+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78749.1
+- Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +50.60% | $3,172,538.34 |
-| RUNE/USDT:USDT | +24.35% | $1,689,699.26 |
-| TAC/USDT:USDT | +24.06% | $13,261,077.59 |
-| PROM/USDT:USDT | +19.74% | $5,212,468.15 |
-| SPX/USDT:USDT | +17.90% | $6,053,384.10 |
+| MOVR/USDT:USDT | +49.23% | $3,224,709.64 |
+| RUNE/USDT:USDT | +26.54% | $1,749,563.54 |
+| TAC/USDT:USDT | +23.35% | $13,001,960.69 |
+| PROM/USDT:USDT | +22.07% | $4,643,631.64 |
+| BTR/USDT:USDT | +17.97% | $23,198,507.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +4.44% | +4.54% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.44% | +3.53% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.74% | +2.84% |
-| CYS/USDT:USDT | below_1h_threshold | +2.69% | +2.79% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.50% | +2.60% |
+| BICO/USDT:USDT | below_1h_threshold | +1.90% | +1.98% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.44% | +1.52% |
+| KORU/USDT:USDT | below_1h_threshold | +1.07% | +1.15% |
+| TAC/USDT:USDT | below_1h_threshold | +1.02% | +1.09% |
+| MUU/USDT:USDT | below_1h_threshold | +0.99% | +1.07% |
 
 ## 7. 次に見るべき不足
 
