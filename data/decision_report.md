@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T18:51:40.269799+00:00
+- generated_at: 2026-08-27T18:56:44.386669+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12832**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.79** / 初期 $100.00 (+14.79%)
-- 確定: 1988件 (Win 580 / Loss 762 / Flat 646) / pending 0件 / skip 2316件
+- 確定: 1988件 (Win 580 / Loss 762 / Flat 646) / pending 0件 / skip 2317件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000268 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: WIF/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.79
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T18:51:24.005053+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.64% price=79903.7
-- Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 2
+- 更新: 2026-08-27T18:56:28.065320+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.54% price=79984.4
+- Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 3
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +12.15% | $21,073,389.05 |
-| HEMI/USDT:USDT | +6.71% | $1,461,754.29 |
-| UAI/USDT:USDT | +4.72% | $1,501,212.74 |
-| ENA/USDT:USDT | +3.80% | $50,759,265.80 |
-| VET/USDT:USDT | +3.62% | $7,569,500.78 |
+| AKE/USDT:USDT | +12.16% | $21,197,755.01 |
+| HEMI/USDT:USDT | +8.73% | $1,488,621.03 |
+| UAI/USDT:USDT | +7.31% | $1,659,006.55 |
+| VET/USDT:USDT | +3.68% | $7,577,066.14 |
+| ENA/USDT:USDT | +3.53% | $50,951,221.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.53% | +4.17% |
-| VET/USDT:USDT | below_1h_threshold | +2.42% | +3.06% |
-| BMT/USDT:USDT | below_1h_threshold | +2.02% | +2.66% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.01% | +2.65% |
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +2.14% |
+| MOVR/USDT:USDT | below_1h_threshold | +4.30% | +4.84% |
+| VET/USDT:USDT | below_1h_threshold | +2.30% | +2.84% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.24% | +2.77% |
+| BMT/USDT:USDT | below_1h_threshold | +2.16% | +2.70% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.75% | +2.29% |
 
 ## 7. 次に見るべき不足
 
