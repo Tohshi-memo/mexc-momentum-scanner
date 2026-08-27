@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T16:21:32.704288+00:00
+- generated_at: 2026-08-27T16:26:45.146601+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12822**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2311件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 2件 / skip 2311件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000374 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T16:21:20.970500+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=80457.1
-- Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T16:26:32.591919+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=80456.7
+- Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.9 >= 65=1, 4h RSI 69.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TAC/USDT:USDT | +6.85% | $15,543,332.25 |
-| TRUMPOFFICIAL/USDT:USDT | +4.13% | $20,704,969.64 |
-| MOVR/USDT:USDT | +3.87% | $7,702,773.07 |
-| ENA/USDT:USDT | +2.88% | $46,136,256.42 |
-| VET/USDT:USDT | +2.33% | $6,332,088.26 |
+| TAC/USDT:USDT | +6.03% | $15,557,800.52 |
+| MOVR/USDT:USDT | +6.02% | $7,750,482.40 |
+| TRUMPOFFICIAL/USDT:USDT | +5.58% | $21,144,443.76 |
+| WIF/USDT:USDT | +2.82% | $4,855,959.93 |
+| VET/USDT:USDT | +2.75% | $6,419,484.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.06% | +3.82% |
-| MOVR/USDT:USDT | below_1h_threshold | +3.72% | +3.49% |
-| ENA/USDT:USDT | below_1h_threshold | +3.06% | +2.83% |
-| VET/USDT:USDT | below_1h_threshold | +2.33% | +2.10% |
+| ENA/USDT:USDT | below_1h_threshold | +2.98% | +2.75% |
+| WIF/USDT:USDT | below_1h_threshold | +2.82% | +2.59% |
+| VET/USDT:USDT | below_1h_threshold | +2.51% | +2.28% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.74% | +1.51% |
 | MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.72% | +1.49% |
 
 ## 7. 次に見るべき不足
