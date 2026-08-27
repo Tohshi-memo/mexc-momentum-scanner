@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T10:56:28.844553+00:00
+- generated_at: 2026-08-27T11:01:21.539302+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12807**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T10:56:16.966268+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=79529.9
-- Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-27T11:01:12.426208+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=79534.3
+- Funnel: target 1018 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +30.71% | $5,175,856.97 |
-| VET/USDT:USDT | +19.07% | $3,324,522.90 |
-| RUNE/USDT:USDT | +17.14% | $3,609,216.85 |
-| PROM/USDT:USDT | +15.24% | $4,876,290.62 |
-| CHIP/USDT:USDT | +15.08% | $2,239,989.47 |
+| MOVR/USDT:USDT | +33.47% | $5,137,474.91 |
+| VET/USDT:USDT | +19.17% | $3,295,485.51 |
+| BICO/USDT:USDT | +17.70% | $28,396,360.87 |
+| RUNE/USDT:USDT | +16.41% | $3,645,323.34 |
+| PROM/USDT:USDT | +15.74% | $4,751,032.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.49% | +4.02% |
-| ACU/USDT:USDT | below_1h_threshold | +2.94% | +3.48% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.81% | +3.35% |
-| EUL/USDT:USDT | below_1h_threshold | +2.53% | +3.07% |
-| PROM/USDT:USDT | below_1h_threshold | +2.23% | +2.76% |
+| MOVR/USDT:USDT | below_1h_threshold | +0.67% | +0.75% |
+| BICO/USDT:USDT | below_1h_threshold | +0.64% | +0.72% |
+| EUL/USDT:USDT | below_1h_threshold | +0.41% | +0.49% |
+| KORU/USDT:USDT | below_1h_threshold | +0.37% | +0.45% |
+| ACU/USDT:USDT | below_1h_threshold | +0.32% | +0.40% |
 
 ## 7. 次に見るべき不足
 
