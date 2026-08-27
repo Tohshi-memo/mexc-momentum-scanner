@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T11:31:19.470895+00:00
+- generated_at: 2026-08-27T11:36:21.982543+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12808**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T11:31:10.309043+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=79405.9
+- 更新: 2026-08-27T11:36:12.718501+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=79433.3
 - Funnel: target 1018 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.7 >= 65=1
+- Strict後reject: 4h RSI 86.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +32.58% | $5,324,362.69 |
-| VET/USDT:USDT | +21.06% | $3,380,341.28 |
-| BTR/USDT:USDT | +18.48% | $21,905,599.39 |
-| RUNE/USDT:USDT | +17.48% | $3,824,686.06 |
-| SPX/USDT:USDT | +15.80% | $7,186,480.88 |
+| MOVR/USDT:USDT | +34.04% | $5,338,511.84 |
+| VET/USDT:USDT | +21.82% | $3,409,386.13 |
+| RUNE/USDT:USDT | +18.32% | $3,838,424.47 |
+| BTR/USDT:USDT | +16.53% | $21,990,741.50 |
+| CASHCAT/USDT:USDT | +15.58% | $1,395,512.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MORPHO/USDT:USDT | below_1h_threshold | +2.68% | +2.92% |
-| SPX/USDT:USDT | below_1h_threshold | +1.40% | +1.65% |
-| VET/USDT:USDT | below_1h_threshold | +1.34% | +1.58% |
-| LDO/USDT:USDT | below_1h_threshold | +1.22% | +1.46% |
-| RUNE/USDT:USDT | below_1h_threshold | +0.70% | +0.94% |
+| MORPHO/USDT:USDT | below_1h_threshold | +2.04% | +2.25% |
+| VET/USDT:USDT | below_1h_threshold | +1.92% | +2.13% |
+| LDO/USDT:USDT | below_1h_threshold | +1.80% | +2.01% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.44% | +1.64% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.38% | +1.59% |
 
 ## 7. 次に見るべき不足
 
