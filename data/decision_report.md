@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T15:41:17.828452+00:00
+- generated_at: 2026-08-27T15:46:30.844553+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12821**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T15:41:10.618360+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=80336.0
-- Funnel: target 1019 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T15:46:21.357150+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=80366.7
+- Funnel: target 1019 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +44.57% | $7,355,163.05 |
-| MAGMA/USDT:USDT | +32.83% | $2,291,785.79 |
-| CHIP/USDT:USDT | +29.36% | $3,417,690.12 |
-| VET/USDT:USDT | +27.54% | $5,950,972.67 |
-| CASHCAT/USDT:USDT | +25.22% | $1,326,819.91 |
+| MOVR/USDT:USDT | +42.70% | $7,406,883.81 |
+| MAGMA/USDT:USDT | +32.45% | $2,300,597.23 |
+| CHIP/USDT:USDT | +30.44% | $3,469,531.36 |
+| VET/USDT:USDT | +28.12% | $5,986,881.25 |
+| CASHCAT/USDT:USDT | +27.19% | $1,335,762.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.15% | +3.93% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.90% | +3.68% |
-| WIF/USDT:USDT | below_1h_threshold | +3.70% | +3.48% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +2.81% |
-| HEI/USDT:USDT | below_1h_threshold | +2.34% | +2.12% |
+| WIF/USDT:USDT | below_1h_threshold | +4.45% | +4.19% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +2.78% |
+| ENA/USDT:USDT | below_1h_threshold | +2.93% | +2.67% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.91% | +2.66% |
+| HEI/USDT:USDT | below_1h_threshold | +2.41% | +2.15% |
 
 ## 7. 次に見るべき不足
 
