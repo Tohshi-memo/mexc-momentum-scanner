@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T14:06:23.973517+00:00
+- generated_at: 2026-08-27T14:11:29.135741+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12814**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T14:06:14.777690+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=79731.3
+- 更新: 2026-08-27T14:11:19.993926+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=79412.8
 - Funnel: target 1019 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +43.15% | $6,103,717.51 |
-| MAGMA/USDT:USDT | +30.89% | $1,683,890.79 |
-| VET/USDT:USDT | +25.98% | $5,306,569.62 |
-| HEMI/USDT:USDT | +25.49% | $1,303,106.43 |
-| TUT/USDT:USDT | +24.16% | $19,625,971.07 |
+| MOVR/USDT:USDT | +42.32% | $6,206,914.21 |
+| MAGMA/USDT:USDT | +32.41% | $1,739,641.03 |
+| HEMI/USDT:USDT | +25.20% | $1,310,246.23 |
+| VET/USDT:USDT | +24.18% | $5,381,812.46 |
+| TUT/USDT:USDT | +23.61% | $19,746,648.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.38% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.57% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.47% |
-| BTR/USDT:USDT | below_1h_threshold | +2.55% | +2.25% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.17% | +1.87% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.78% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.97% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.87% |
+| BTR/USDT:USDT | below_1h_threshold | +2.40% | +2.50% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.14% | +2.24% |
 
 ## 7. 次に見るべき不足
 
