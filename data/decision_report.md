@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T12:51:29.186489+00:00
+- generated_at: 2026-08-27T12:56:44.154920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12811**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T12:51:16.074447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=79297.0
+- 更新: 2026-08-27T12:56:32.491993+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=79266.2
 - Funnel: target 1018 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VET/USDT:USDT | +28.20% | $4,418,452.44 |
-| MOVR/USDT:USDT | +26.69% | $5,583,240.23 |
-| TUT/USDT:USDT | +25.57% | $18,059,488.76 |
-| HEMI/USDT:USDT | +23.51% | $1,129,255.99 |
-| MAGMA/USDT:USDT | +20.26% | $1,195,933.15 |
+| VET/USDT:USDT | +28.05% | $4,461,478.83 |
+| MOVR/USDT:USDT | +27.56% | $5,589,644.31 |
+| HEMI/USDT:USDT | +24.30% | $1,133,693.59 |
+| TUT/USDT:USDT | +23.85% | $18,270,165.42 |
+| MAGMA/USDT:USDT | +20.49% | $1,201,127.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VET/USDT:USDT | below_1h_threshold | +3.93% | +4.11% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.90% | +4.08% |
-| S/USDT:USDT | below_1h_threshold | +1.88% | +2.06% |
-| UAI/USDT:USDT | below_1h_threshold | +1.85% | +2.04% |
-| PROM/USDT:USDT | below_1h_threshold | +1.44% | +1.62% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.02% | +4.24% |
+| VET/USDT:USDT | below_1h_threshold | +3.94% | +4.16% |
+| UAI/USDT:USDT | below_1h_threshold | +2.02% | +2.24% |
+| PENGU/USDT:USDT | below_1h_threshold | +1.91% | +2.13% |
+| VVV/USDT:USDT | below_1h_threshold | +1.67% | +1.89% |
 
 ## 7. 次に見るべき不足
 
