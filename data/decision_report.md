@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T14:31:35.128498+00:00
+- generated_at: 2026-08-27T14:36:30.140055+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12817**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T14:31:22.185533+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=79777.0
+- 更新: 2026-08-27T14:36:20.771215+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=79984.9
 - Funnel: target 1019 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.1 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +39.30% | $6,621,170.70 |
-| MAGMA/USDT:USDT | +31.00% | $2,011,173.74 |
-| HEMI/USDT:USDT | +29.65% | $1,352,069.82 |
-| PROM/USDT:USDT | +27.27% | $5,420,184.90 |
-| VET/USDT:USDT | +25.39% | $5,556,732.09 |
+| MOVR/USDT:USDT | +38.85% | $6,659,557.79 |
+| MAGMA/USDT:USDT | +31.48% | $2,027,910.04 |
+| HEMI/USDT:USDT | +26.53% | $1,377,217.28 |
+| VET/USDT:USDT | +26.10% | $5,580,933.68 |
+| CASHCAT/USDT:USDT | +25.64% | $1,270,999.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.75% | +4.39% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.32% |
-| HEMI/USDT:USDT | below_1h_threshold | +4.11% | +3.75% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.51% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.42% |
+| TRUMPOFFICIAL/USDT:USDT | below_relative_strength | +5.55% | +4.93% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +4.06% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.25% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.15% |
+| BTR/USDT:USDT | below_1h_threshold | +3.69% | +3.07% |
 
 ## 7. 次に見るべき不足
 
