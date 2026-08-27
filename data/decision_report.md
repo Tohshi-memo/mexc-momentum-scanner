@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T14:41:34.951892+00:00
+- generated_at: 2026-08-27T14:46:31.169219+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12819**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T14:41:19.554730+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.80% price=80126.3
+- 更新: 2026-08-27T14:46:20.107912+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.90% price=80212.1
 - Funnel: target 1019 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
+- Strict後reject: 4h RSI 65.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +40.77% | $6,687,935.88 |
-| MAGMA/USDT:USDT | +30.93% | $2,045,923.37 |
-| CASHCAT/USDT:USDT | +26.90% | $1,280,419.90 |
-| VET/USDT:USDT | +25.73% | $5,601,657.00 |
-| HEMI/USDT:USDT | +23.77% | $1,397,120.78 |
+| MOVR/USDT:USDT | +43.05% | $6,709,959.61 |
+| MAGMA/USDT:USDT | +26.54% | $2,110,475.25 |
+| VET/USDT:USDT | +26.49% | $5,624,513.77 |
+| CASHCAT/USDT:USDT | +24.23% | $1,290,539.55 |
+| HEMI/USDT:USDT | +23.94% | $1,406,503.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_relative_strength | +5.70% | +4.91% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +3.88% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.07% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +2.98% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.54% | +2.74% |
+| BTR/USDT:USDT | below_relative_strength | +5.02% | +4.12% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +3.77% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +2.96% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +2.87% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.43% | +2.53% |
 
 ## 7. 次に見るべき不足
 
