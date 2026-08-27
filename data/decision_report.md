@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T20:21:20.341683+00:00
+- generated_at: 2026-08-27T20:26:31.592639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12836**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.79** / 初期 $100.00 (+14.79%)
-- 確定: 1988件 (Win 580 / Loss 762 / Flat 646) / pending 0件 / skip 2320件
+- 確定: 1988件 (Win 580 / Loss 762 / Flat 646) / pending 0件 / skip 2321件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000223 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: WIF/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.79
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T20:21:13.857007+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=79994.0
-- Funnel: target 1019 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-27T20:26:22.222049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=79983.9
+- Funnel: target 1019 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +15.78% | $2,207,218.36 |
-| BMT/USDT:USDT | +8.36% | $1,686,019.33 |
-| UAI/USDT:USDT | +5.84% | $1,785,911.87 |
-| AKE/USDT:USDT | +5.82% | $19,215,956.41 |
-| BLESS/USDT:USDT | +4.29% | $5,629,186.12 |
+| HEMI/USDT:USDT | +15.11% | $2,226,198.61 |
+| BMT/USDT:USDT | +10.21% | $1,715,292.98 |
+| UAI/USDT:USDT | +5.67% | $1,786,937.76 |
+| AKE/USDT:USDT | +5.04% | $19,234,150.05 |
+| BLESS/USDT:USDT | +4.67% | $5,637,154.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.89% | +4.73% |
-| MUU/USDT:USDT | below_1h_threshold | +4.44% | +4.28% |
-| BMT/USDT:USDT | below_1h_threshold | +4.43% | +4.28% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.61% | +2.46% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.13% |
+| PROM/USDT:USDT | below_relative_strength | +5.04% | +4.89% |
+| MUU/USDT:USDT | below_1h_threshold | +4.44% | +4.30% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.61% | +2.47% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +2.28% | +2.14% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.97% | +1.83% |
 
 ## 7. 次に見るべき不足
 
