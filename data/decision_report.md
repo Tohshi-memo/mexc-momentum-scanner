@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T12:11:12.897189+00:00
+- generated_at: 2026-08-27T12:16:09.507358+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12810**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T12:11:05.755657+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79422.3
+- 更新: 2026-08-27T12:16:00.313195+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=79493.0
 - Funnel: target 1018 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +28.79% | $5,464,726.07 |
-| VET/USDT:USDT | +24.77% | $3,654,034.44 |
-| BTR/USDT:USDT | +20.40% | $20,853,953.17 |
-| RUNE/USDT:USDT | +18.42% | $3,921,696.93 |
-| TUT/USDT:USDT | +16.39% | $16,801,491.38 |
+| MOVR/USDT:USDT | +28.45% | $5,479,650.39 |
+| VET/USDT:USDT | +25.96% | $3,808,815.23 |
+| BTR/USDT:USDT | +21.42% | $20,910,609.83 |
+| RUNE/USDT:USDT | +18.63% | $3,927,304.45 |
+| CASHCAT/USDT:USDT | +16.78% | $1,281,520.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
-| VET/USDT:USDT | below_1h_threshold | +1.21% | +1.23% |
-| BTR/USDT:USDT | below_1h_threshold | +1.07% | +1.09% |
-| MOVR/USDT:USDT | below_1h_threshold | +0.83% | +0.85% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.77% | +0.79% |
+| VET/USDT:USDT | below_1h_threshold | +2.12% | +2.05% |
+| BTR/USDT:USDT | below_1h_threshold | +1.85% | +1.78% |
+| UAI/USDT:USDT | below_1h_threshold | +1.66% | +1.59% |
+| TUT/USDT:USDT | below_1h_threshold | +1.53% | +1.46% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.05% | +0.98% |
 
 ## 7. 次に見るべき不足
 
