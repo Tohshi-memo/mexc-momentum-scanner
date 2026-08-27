@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T18:16:19.396532+00:00
+- generated_at: 2026-08-27T18:21:28.734152+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12829**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T18:16:10.271973+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=80145.9
+- 更新: 2026-08-27T18:21:19.762832+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.74% price=79820.2
 - Funnel: target 1019 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +8.00% | $19,668,386.84 |
-| PROM/USDT:USDT | +7.09% | $5,617,922.16 |
-| ENA/USDT:USDT | +3.30% | $49,376,372.95 |
-| MRNASTOCK/USDT:USDT | +3.17% | $1,723,567.65 |
-| MONAD/USDT:USDT | +2.85% | $1,135,319.44 |
+| AKE/USDT:USDT | +9.35% | $19,870,712.80 |
+| PROM/USDT:USDT | +6.59% | $5,651,186.40 |
+| JUP/USDT:USDT | +3.56% | $2,319,620.28 |
+| MRNASTOCK/USDT:USDT | +3.06% | $1,724,811.74 |
+| VET/USDT:USDT | +2.63% | $7,403,128.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +3.75% | +4.08% |
-| AKE/USDT:USDT | below_1h_threshold | +1.82% | +2.16% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.81% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +1.77% |
-| VET/USDT:USDT | below_1h_threshold | +1.28% | +1.61% |
+| AKE/USDT:USDT | below_1h_threshold | +3.70% | +4.44% |
+| PROM/USDT:USDT | below_1h_threshold | +3.51% | +4.25% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +2.22% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.44% | +2.18% |
+| JUP/USDT:USDT | below_1h_threshold | +1.25% | +1.99% |
 
 ## 7. 次に見るべき不足
 
