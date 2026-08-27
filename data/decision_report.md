@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T04:51:27.045514+00:00
+- generated_at: 2026-08-27T04:56:12.599569+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12776**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T04:51:15.357668+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=78693.9
-- Funnel: target 1023 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.4 >= 65=1, 4h RSI 76.1 >= 65=1
+- 更新: 2026-08-27T04:56:04.972350+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=78720.0
+- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +30.10% | $1,843,090.08 |
-| BTR/USDT:USDT | +25.98% | $30,471,721.62 |
-| RUNE/USDT:USDT | +20.37% | $1,223,271.63 |
-| BICO/USDT:USDT | +20.26% | $22,465,484.46 |
-| SPX/USDT:USDT | +19.22% | $6,433,338.92 |
+| BTR/USDT:USDT | +24.91% | $29,625,630.35 |
+| MOVR/USDT:USDT | +24.04% | $1,856,887.39 |
+| BICO/USDT:USDT | +19.85% | $21,911,461.01 |
+| SPX/USDT:USDT | +19.01% | $6,282,282.11 |
+| RUNE/USDT:USDT | +18.42% | $1,231,497.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRV/USDT:USDT | below_1h_threshold | +2.27% | +2.41% |
-| UAI/USDT:USDT | below_1h_threshold | +2.19% | +2.32% |
-| VET/USDT:USDT | below_1h_threshold | +1.73% | +1.86% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.72% | +1.86% |
-| MORPHO/USDT:USDT | below_1h_threshold | +1.11% | +1.25% |
+| UAI/USDT:USDT | below_1h_threshold | +3.24% | +3.35% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.88% | +2.98% |
+| VET/USDT:USDT | below_1h_threshold | +2.52% | +2.62% |
+| CRV/USDT:USDT | below_1h_threshold | +2.02% | +2.12% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.40% | +1.50% |
 
 ## 7. 次に見るべき不足
 
