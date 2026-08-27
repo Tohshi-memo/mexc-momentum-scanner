@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T03:21:28.462659+00:00
+- generated_at: 2026-08-27T03:26:20.466947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12764**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T03:21:18.709084+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78738.1
-- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 80.7 >= 65=1
+- 更新: 2026-08-27T03:26:11.309901+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=78865.7
+- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPX/USDT:USDT | +17.72% | $5,835,318.66 |
-| CASHCAT/USDT:USDT | +17.12% | $1,744,633.51 |
-| BICO/USDT:USDT | +16.70% | $17,001,550.32 |
-| BTR/USDT:USDT | +15.39% | $30,222,557.46 |
-| VET/USDT:USDT | +14.84% | $3,144,137.26 |
+| SPX/USDT:USDT | +19.22% | $5,958,781.71 |
+| CASHCAT/USDT:USDT | +18.41% | $1,746,617.90 |
+| BICO/USDT:USDT | +16.29% | $17,255,316.37 |
+| BTR/USDT:USDT | +15.13% | $30,274,359.05 |
+| VET/USDT:USDT | +14.54% | $3,144,548.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.31% | +4.26% |
-| SPX/USDT:USDT | below_1h_threshold | +1.71% | +1.65% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.59% | +1.54% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.30% | +1.25% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.98% | +0.93% |
+| PROM/USDT:USDT | below_relative_strength | +5.05% | +4.84% |
+| BICO/USDT:USDT | below_1h_threshold | +4.81% | +4.60% |
+| SPX/USDT:USDT | below_1h_threshold | +3.01% | +2.79% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.71% | +2.50% |
+| ACU/USDT:USDT | below_1h_threshold | +2.32% | +2.11% |
 
 ## 7. 次に見るべき不足
 
