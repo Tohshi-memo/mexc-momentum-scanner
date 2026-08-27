@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T01:26:19.334865+00:00
+- generated_at: 2026-08-27T01:31:17.240437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12762**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T01:26:10.325525+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=78769.8
+- 更新: 2026-08-27T01:31:08.070565+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=78936.8
 - Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +19.81% | $1,699,884.71 |
-| SPX/USDT:USDT | +16.23% | $5,598,602.48 |
-| VET/USDT:USDT | +15.89% | $2,960,298.75 |
-| ONT/USDT:USDT | +11.58% | $5,649,173.84 |
-| PROM/USDT:USDT | +11.32% | $6,729,851.57 |
+| CASHCAT/USDT:USDT | +21.73% | $1,709,472.61 |
+| SPX/USDT:USDT | +16.55% | $5,620,108.34 |
+| VET/USDT:USDT | +15.50% | $2,995,966.23 |
+| PROM/USDT:USDT | +12.88% | $6,765,335.01 |
+| CYS/USDT:USDT | +11.35% | $3,530,900.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.25% | +2.10% |
-| CYS/USDT:USDT | below_1h_threshold | +1.78% | +1.63% |
-| ACU/USDT:USDT | below_1h_threshold | +1.69% | +1.54% |
-| PROM/USDT:USDT | below_1h_threshold | +1.09% | +0.95% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.99% | +0.84% |
+| PROM/USDT:USDT | below_1h_threshold | +2.51% | +2.15% |
+| LSK/USDT:USDT | below_1h_threshold | +2.09% | +1.73% |
+| CYS/USDT:USDT | below_1h_threshold | +1.74% | +1.38% |
+| ENA/USDT:USDT | below_1h_threshold | +1.65% | +1.29% |
+| WIF/USDT:USDT | below_1h_threshold | +1.43% | +1.07% |
 
 ## 7. 次に見るべき不足
 
