@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T17:26:28.864980+00:00
+- generated_at: 2026-08-27T17:31:24.844816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12827**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T17:26:17.770603+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=80768.2
+- 更新: 2026-08-27T17:31:15.964979+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=80711.9
 - Funnel: target 1019 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +13.74% | $16,132,418.28 |
-| ENA/USDT:USDT | +5.24% | $48,606,161.25 |
-| VET/USDT:USDT | +3.93% | $6,783,831.56 |
-| MAGMA/USDT:USDT | +3.81% | $2,648,838.54 |
-| VELVET/USDT:USDT | +3.74% | $2,128,299.42 |
+| ENA/USDT:USDT | +5.24% | $48,877,278.76 |
+| MONAD/USDT:USDT | +3.28% | $1,093,605.30 |
+| STX/USDT:USDT | +3.00% | $3,268,267.00 |
+| VET/USDT:USDT | +2.84% | $6,893,557.00 |
+| MAGMA/USDT:USDT | +2.84% | $2,655,112.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +3.67% | +3.13% |
-| STX/USDT:USDT | below_1h_threshold | +2.17% | +1.63% |
-| ENA/USDT:USDT | below_1h_threshold | +1.96% | +1.42% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.94% | +1.41% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.03% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.50% | +3.03% |
+| BTR/USDT:USDT | below_1h_threshold | +3.07% | +2.61% |
+| STX/USDT:USDT | below_1h_threshold | +2.75% | +2.28% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.39% | +1.93% |
+| ENA/USDT:USDT | below_1h_threshold | +1.73% | +1.26% |
 
 ## 7. 次に見るべき不足
 
