@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T05:36:19.332880+00:00
+- generated_at: 2026-08-27T05:41:19.941526+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12781**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T05:36:10.384078+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=78582.2
+- 更新: 2026-08-27T05:41:07.894843+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78684.4
 - Funnel: target 1023 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +30.74% | $2,297,362.72 |
-| BICO/USDT:USDT | +22.70% | $22,504,157.72 |
-| RUNE/USDT:USDT | +18.59% | $1,349,673.30 |
-| SPX/USDT:USDT | +17.24% | $6,324,281.10 |
-| VET/USDT:USDT | +15.45% | $3,034,311.79 |
+| MOVR/USDT:USDT | +27.94% | $2,333,471.00 |
+| BICO/USDT:USDT | +22.00% | $22,770,626.84 |
+| TAC/USDT:USDT | +21.57% | $13,043,016.41 |
+| RUNE/USDT:USDT | +18.94% | $1,421,105.84 |
+| SPX/USDT:USDT | +17.73% | $6,388,037.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +2.95% | +3.15% |
-| MOVR/USDT:USDT | below_1h_threshold | +2.65% | +2.86% |
-| XMR/USDT:USDT | below_1h_threshold | +0.92% | +1.13% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.59% | +0.80% |
-| PROM/USDT:USDT | below_1h_threshold | +0.39% | +0.60% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.75% | +2.82% |
+| RE/USDT:USDT | below_1h_threshold | +2.10% | +2.18% |
+| TAC/USDT:USDT | below_1h_threshold | +1.77% | +1.85% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.33% | +1.40% |
+| XMR/USDT:USDT | below_1h_threshold | +1.06% | +1.14% |
 
 ## 7. 次に見るべき不足
 
