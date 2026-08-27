@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T10:31:18.248591+00:00
+- generated_at: 2026-08-27T10:36:19.147513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12807**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T10:31:09.178821+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=79531.0
+- 更新: 2026-08-27T10:36:10.113208+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=79580.7
 - Funnel: target 1018 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +31.58% | $5,081,459.82 |
-| VET/USDT:USDT | +20.01% | $3,261,810.91 |
-| RUNE/USDT:USDT | +16.33% | $3,536,274.03 |
-| PROM/USDT:USDT | +15.92% | $4,732,781.26 |
-| BLESS/USDT:USDT | +15.35% | $5,008,076.70 |
+| MOVR/USDT:USDT | +31.98% | $5,101,241.04 |
+| VET/USDT:USDT | +20.42% | $3,268,879.82 |
+| BICO/USDT:USDT | +16.95% | $27,431,217.83 |
+| RUNE/USDT:USDT | +16.03% | $3,548,425.93 |
+| BLESS/USDT:USDT | +15.55% | $5,026,749.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +4.19% | +4.73% |
-| PROM/USDT:USDT | below_1h_threshold | +2.99% | +3.52% |
-| BICO/USDT:USDT | below_1h_threshold | +2.97% | +3.50% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.40% | +2.93% |
-| ACU/USDT:USDT | below_1h_threshold | +2.00% | +2.54% |
+| BICO/USDT:USDT | below_1h_threshold | +4.97% | +5.45% |
+| BTR/USDT:USDT | below_1h_threshold | +4.21% | +4.68% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.25% | +2.72% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.19% | +2.66% |
+| PROM/USDT:USDT | below_1h_threshold | +2.05% | +2.52% |
 
 ## 7. 次に見るべき不足
 
