@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T15:51:25.581777+00:00
+- generated_at: 2026-08-27T15:56:25.533617+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12821**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T15:51:15.961167+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=80349.5
-- Funnel: target 1019 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.5 >= 65=1
+- 更新: 2026-08-27T15:56:16.020109+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=80353.4
+- Funnel: target 1019 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +42.61% | $7,439,904.36 |
-| MAGMA/USDT:USDT | +32.59% | $2,310,834.76 |
-| CHIP/USDT:USDT | +30.87% | $3,522,601.75 |
-| CASHCAT/USDT:USDT | +28.74% | $1,342,880.64 |
-| VET/USDT:USDT | +27.82% | $6,024,739.51 |
+| MOVR/USDT:USDT | +44.14% | $7,452,342.42 |
+| CHIP/USDT:USDT | +33.68% | $3,572,577.78 |
+| MAGMA/USDT:USDT | +32.04% | $2,321,822.04 |
+| VET/USDT:USDT | +28.57% | $6,040,855.62 |
+| CASHCAT/USDT:USDT | +26.63% | $1,357,235.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +4.48% | +4.24% |
-| WIF/USDT:USDT | below_1h_threshold | +4.16% | +3.93% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +2.80% |
-| HEI/USDT:USDT | below_1h_threshold | +2.34% | +2.11% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.09% | +1.85% |
+| ENA/USDT:USDT | below_relative_strength | +5.15% | +4.91% |
+| WIF/USDT:USDT | below_1h_threshold | +4.96% | +4.72% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.11% | +2.87% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.03% | +2.79% |
+| HEI/USDT:USDT | below_1h_threshold | +2.54% | +2.30% |
 
 ## 7. 次に見るべき不足
 
