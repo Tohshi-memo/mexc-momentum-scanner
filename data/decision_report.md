@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T01:36:17.645140+00:00
+- generated_at: 2026-08-27T01:41:18.913151+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12762**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T01:36:08.536362+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78793.5
+- 更新: 2026-08-27T01:41:11.312057+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=78780.3
 - Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CASHCAT/USDT:USDT | +22.10% | $1,715,315.09 |
-| SPX/USDT:USDT | +16.55% | $5,641,197.42 |
-| VET/USDT:USDT | +15.13% | $3,013,792.39 |
-| PROM/USDT:USDT | +12.38% | $6,786,257.02 |
-| FARTCOIN/USDT:USDT | +10.86% | $25,498,338.86 |
+| CASHCAT/USDT:USDT | +23.88% | $1,723,713.26 |
+| SPX/USDT:USDT | +16.32% | $5,652,700.07 |
+| VET/USDT:USDT | +14.97% | $3,016,554.83 |
+| PROM/USDT:USDT | +12.45% | $6,795,174.78 |
+| ONT/USDT:USDT | +11.63% | $5,712,259.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +2.05% | +1.87% |
-| ENA/USDT:USDT | below_1h_threshold | +1.79% | +1.62% |
-| WIF/USDT:USDT | below_1h_threshold | +1.58% | +1.40% |
-| ACU/USDT:USDT | below_1h_threshold | +1.49% | +1.31% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.46% | +1.28% |
+| MONAD/USDT:USDT | below_1h_threshold | +2.28% | +2.12% |
+| PROM/USDT:USDT | below_1h_threshold | +2.12% | +1.96% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.96% | +1.80% |
+| ACU/USDT:USDT | below_1h_threshold | +1.50% | +1.34% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.31% | +1.14% |
 
 ## 7. 次に見るべき不足
 
