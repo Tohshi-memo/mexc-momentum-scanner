@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T03:41:25.146723+00:00
+- generated_at: 2026-08-27T03:46:19.905262+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12766**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T03:41:15.820335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=78822.6
+- 更新: 2026-08-27T03:46:12.634300+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=78844.2
 - Funnel: target 1023 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.3 >= 65=1
+- Strict後reject: 4h RSI 82.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BICO/USDT:USDT | +24.48% | $18,913,477.22 |
-| CASHCAT/USDT:USDT | +19.80% | $1,757,057.57 |
-| SPX/USDT:USDT | +18.19% | $6,184,131.79 |
-| RUNE/USDT:USDT | +17.71% | $1,050,718.30 |
-| CHIP/USDT:USDT | +14.34% | $1,825,129.12 |
+| BICO/USDT:USDT | +23.94% | $19,257,580.42 |
+| CASHCAT/USDT:USDT | +19.09% | $1,758,189.16 |
+| RUNE/USDT:USDT | +18.94% | $1,056,447.92 |
+| SPX/USDT:USDT | +18.71% | $6,232,643.40 |
+| CHIP/USDT:USDT | +14.62% | $1,864,091.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.31% | +4.16% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.91% | +3.75% |
-| BTR/USDT:USDT | below_1h_threshold | +3.06% | +2.90% |
-| RUNE/USDT:USDT | below_1h_threshold | +2.51% | +2.36% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.43% | +2.27% |
+| RUNE/USDT:USDT | below_1h_threshold | +3.33% | +3.15% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.30% | +3.11% |
+| VVV/USDT:USDT | below_1h_threshold | +3.13% | +2.95% |
+| PROM/USDT:USDT | below_1h_threshold | +3.03% | +2.85% |
+| SPX/USDT:USDT | below_1h_threshold | +2.73% | +2.54% |
 
 ## 7. 次に見るべき不足
 
