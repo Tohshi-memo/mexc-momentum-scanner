@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T18:36:23.553123+00:00
+- generated_at: 2026-08-27T18:46:28.049150+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12831**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T18:36:12.055915+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.67% price=79879.7
+- 更新: 2026-08-27T18:46:16.592631+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=79881.6
 - Funnel: target 1019 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +14.86% | $20,581,488.83 |
-| PROM/USDT:USDT | +5.95% | $5,884,335.14 |
-| HEMI/USDT:USDT | +4.67% | $1,443,119.97 |
-| BMT/USDT:USDT | +3.99% | $1,814,268.74 |
-| VET/USDT:USDT | +3.44% | $7,512,023.71 |
+| AKE/USDT:USDT | +13.32% | $20,947,059.61 |
+| PROM/USDT:USDT | +5.03% | $5,938,121.71 |
+| HEMI/USDT:USDT | +4.47% | $1,452,178.37 |
+| UAI/USDT:USDT | +4.23% | $1,481,754.15 |
+| ENA/USDT:USDT | +3.54% | $50,592,871.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +3.75% | +4.42% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.39% | +4.06% |
-| BMT/USDT:USDT | below_1h_threshold | +3.04% | +3.70% |
-| PROM/USDT:USDT | below_1h_threshold | +3.01% | +3.67% |
-| VET/USDT:USDT | below_1h_threshold | +2.07% | +2.73% |
+| MOVR/USDT:USDT | below_1h_threshold | +4.98% | +5.65% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.09% | +3.75% |
+| UAI/USDT:USDT | below_1h_threshold | +2.95% | +3.61% |
+| BMT/USDT:USDT | below_1h_threshold | +2.44% | +3.10% |
+| PROM/USDT:USDT | below_1h_threshold | +2.11% | +2.77% |
 
 ## 7. 次に見るべき不足
 
