@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T06:51:33.063706+00:00
+- generated_at: 2026-08-27T06:56:43.223231+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12792**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2281件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2282件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000194 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T06:51:20.375740+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=78800.0
-- Funnel: target 1025 → liquid 156 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1, 4h RSI 87.5 >= 65=1, 4h RSI 83.6 >= 65=1, 4h RSI 82.1 >= 65=1
+- 更新: 2026-08-27T06:56:31.472844+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=78810.5
+- Funnel: target 1025 → liquid 156 → pre 50 → checked 50 → surge 6 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 87.4 >= 65=1, 4h RSI 83.5 >= 65=1, 4h RSI 75.7 >= 65=1, 4h RSI 82.1 >= 65=1, 4h RSI 66.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +49.83% | $3,109,824.60 |
-| RUNE/USDT:USDT | +25.46% | $1,649,322.16 |
-| TAC/USDT:USDT | +22.60% | $13,215,221.12 |
-| BTR/USDT:USDT | +18.18% | $26,494,865.09 |
-| SPX/USDT:USDT | +18.11% | $6,050,839.19 |
+| MOVR/USDT:USDT | +50.60% | $3,172,538.34 |
+| RUNE/USDT:USDT | +24.35% | $1,689,699.26 |
+| TAC/USDT:USDT | +24.06% | $13,261,077.59 |
+| PROM/USDT:USDT | +19.74% | $5,212,468.15 |
+| SPX/USDT:USDT | +17.90% | $6,053,384.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.75% | +4.86% |
-| ENA/USDT:USDT | below_1h_threshold | +4.37% | +4.48% |
-| ACU/USDT:USDT | below_1h_threshold | +3.54% | +3.65% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.92% | +3.03% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.89% | +3.00% |
+| ENA/USDT:USDT | below_1h_threshold | +4.44% | +4.54% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.44% | +3.53% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.74% | +2.84% |
+| CYS/USDT:USDT | below_1h_threshold | +2.69% | +2.79% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.50% | +2.60% |
 
 ## 7. 次に見るべき不足
 
