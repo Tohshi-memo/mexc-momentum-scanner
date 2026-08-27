@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T13:21:31.627363+00:00
+- generated_at: 2026-08-27T13:26:37.450423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12811**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2300件
+- 確定: 1984件 (Win 580 / Loss 758 / Flat 646) / pending 0件 / skip 2301件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000245 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T13:21:21.846180+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=79299.9
-- Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.5 >= 65=1, 4h RSI 79.1 >= 65=1
+- 更新: 2026-08-27T13:26:26.776761+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=79411.0
+- Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.2 >= 65=1, 4h RSI 71.7 >= 65=1, 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +28.20% | $5,633,724.78 |
-| VET/USDT:USDT | +27.31% | $4,777,072.92 |
-| MAGMA/USDT:USDT | +25.96% | $1,338,628.49 |
-| HEMI/USDT:USDT | +23.15% | $1,188,336.55 |
-| BTR/USDT:USDT | +23.02% | $20,577,260.42 |
+| MOVR/USDT:USDT | +28.30% | $5,647,047.44 |
+| MAGMA/USDT:USDT | +28.12% | $1,364,388.75 |
+| VET/USDT:USDT | +27.36% | $4,871,198.24 |
+| HEMI/USDT:USDT | +22.68% | $1,219,799.44 |
+| BTR/USDT:USDT | +22.01% | $20,833,881.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.41% | +4.34% |
-| BICO/USDT:USDT | below_1h_threshold | +4.32% | +4.25% |
-| HEI/USDT:USDT | below_1h_threshold | +2.63% | +2.56% |
-| PROM/USDT:USDT | below_1h_threshold | +2.46% | +2.40% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.65% | +1.59% |
+| PROM/USDT:USDT | below_relative_strength | +5.07% | +4.87% |
+| BTR/USDT:USDT | below_1h_threshold | +3.99% | +3.79% |
+| HEI/USDT:USDT | below_1h_threshold | +3.18% | +2.97% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.36% | +2.15% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.17% | +1.97% |
 
 ## 7. 次に見るべき不足
 
