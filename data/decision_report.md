@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T07:06:20.227226+00:00
+- generated_at: 2026-08-27T07:11:19.374732+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12793**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T07:06:11.055773+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=78750.1
+- 更新: 2026-08-27T07:11:10.208686+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=78762.9
 - Funnel: target 1018 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +57.04% | $3,333,115.93 |
-| RUNE/USDT:USDT | +26.15% | $1,821,645.25 |
-| TAC/USDT:USDT | +22.62% | $13,054,464.56 |
-| PROM/USDT:USDT | +20.97% | $4,682,321.62 |
-| SPX/USDT:USDT | +19.58% | $6,028,977.32 |
+| MOVR/USDT:USDT | +56.22% | $3,398,692.04 |
+| TAC/USDT:USDT | +26.42% | $13,092,824.89 |
+| RUNE/USDT:USDT | +25.18% | $1,884,011.97 |
+| PROM/USDT:USDT | +20.99% | $4,710,058.97 |
+| SPX/USDT:USDT | +19.82% | $6,036,581.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +3.42% | +3.49% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.51% | +1.59% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.44% | +1.52% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.35% | +1.42% |
-| SPX/USDT:USDT | below_1h_threshold | +1.13% | +1.20% |
+| TAC/USDT:USDT | below_1h_threshold | +3.51% | +3.57% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.80% | +2.86% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.70% | +1.76% |
+| SPX/USDT:USDT | below_1h_threshold | +1.62% | +1.68% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
 
 ## 7. 次に見るべき不足
 
