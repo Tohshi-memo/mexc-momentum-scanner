@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T03:16:24.238291+00:00
+- generated_at: 2026-08-27T03:21:28.462659+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12764**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.60** / 初期 $100.00 (+15.60%)
-- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2254件
+- 確定: 1982件 (Win 580 / Loss 758 / Flat 644) / pending 0件 / skip 2255件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000252 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PORTAL/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.60
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T03:16:15.071184+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=78624.3
-- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.9 >= 65=1
+- 更新: 2026-08-27T03:21:18.709084+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78738.1
+- Funnel: target 1023 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.2 >= 65=1, 4h RSI 80.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SPX/USDT:USDT | +16.66% | $5,808,641.60 |
-| CASHCAT/USDT:USDT | +16.04% | $1,738,484.21 |
-| VET/USDT:USDT | +14.59% | $3,127,486.51 |
-| BICO/USDT:USDT | +14.06% | $16,862,242.30 |
-| CHIP/USDT:USDT | +12.76% | $1,759,075.84 |
+| SPX/USDT:USDT | +17.72% | $5,835,318.66 |
+| CASHCAT/USDT:USDT | +17.12% | $1,744,633.51 |
+| BICO/USDT:USDT | +16.70% | $17,001,550.32 |
+| BTR/USDT:USDT | +15.39% | $30,222,557.46 |
+| VET/USDT:USDT | +14.84% | $3,144,137.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +4.45% | +4.54% |
-| BICO/USDT:USDT | below_1h_threshold | +2.61% | +2.70% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
-| CYS/USDT:USDT | below_1h_threshold | +1.13% | +1.22% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.99% | +1.09% |
+| PROM/USDT:USDT | below_1h_threshold | +4.31% | +4.26% |
+| SPX/USDT:USDT | below_1h_threshold | +1.71% | +1.65% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.59% | +1.54% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.30% | +1.25% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.98% | +0.93% |
 
 ## 7. 次に見るべき不足
 
