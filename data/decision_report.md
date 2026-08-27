@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-27T14:46:31.169219+00:00
+- generated_at: 2026-08-27T14:51:35.881929+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12819**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-27T14:46:20.107912+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.90% price=80212.1
+- 更新: 2026-08-27T14:51:23.828334+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.77% price=80104.0
 - Funnel: target 1019 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MOVR/USDT:USDT | +43.05% | $6,709,959.61 |
-| MAGMA/USDT:USDT | +26.54% | $2,110,475.25 |
-| VET/USDT:USDT | +26.49% | $5,624,513.77 |
-| CASHCAT/USDT:USDT | +24.23% | $1,290,539.55 |
-| HEMI/USDT:USDT | +23.94% | $1,406,503.27 |
+| MOVR/USDT:USDT | +47.45% | $6,770,263.82 |
+| MAGMA/USDT:USDT | +29.89% | $2,149,161.15 |
+| VET/USDT:USDT | +27.43% | $5,642,567.76 |
+| HEMI/USDT:USDT | +25.64% | $1,409,659.00 |
+| CASHCAT/USDT:USDT | +24.22% | $1,299,632.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_relative_strength | +5.02% | +4.12% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +3.77% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +2.96% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +2.87% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.43% | +2.53% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.68% | +3.91% |
+| BTR/USDT:USDT | below_1h_threshold | +3.97% | +3.20% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +3.87% | +3.10% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.85% | +3.08% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.77% | +3.00% |
 
 ## 7. 次に見るべき不足
 
