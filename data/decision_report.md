@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T10:56:29.695772+00:00
+- generated_at: 2026-08-28T11:01:15.232671+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12869**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T10:56:20.678662+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=79443.2
-- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.8 >= 65=1, 4h RSI 84.8 >= 65=1, 4h RSI 80.3 >= 65=1, 4h RSI 79.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-28T11:01:06.125972+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79519.7
+- Funnel: target 1023 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +77.31% | $1,431,121.54 |
-| HEMI/USDT:USDT | +31.52% | $5,796,569.71 |
-| LIGHT/USDT:USDT | +23.55% | $3,141,872.81 |
-| MAGMA/USDT:USDT | +21.06% | $4,113,530.94 |
-| EDEN/USDT:USDT | +20.76% | $3,341,545.09 |
+| LONGXIA/USDT:USDT | +72.12% | $1,450,684.53 |
+| HEMI/USDT:USDT | +29.43% | $5,770,242.18 |
+| LIGHT/USDT:USDT | +23.77% | $3,153,694.25 |
+| EDEN/USDT:USDT | +22.94% | $3,305,544.27 |
+| MAGMA/USDT:USDT | +21.40% | $4,107,690.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +2.59% | +2.35% |
-| BTR/USDT:USDT | below_1h_threshold | +2.18% | +1.94% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.51% | +1.27% |
-| ENA/USDT:USDT | below_1h_threshold | +1.47% | +1.23% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.33% | +1.10% |
+| MUU/USDT:USDT | below_1h_threshold | +0.82% | +0.83% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.69% | +0.70% |
+| BTR/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.53% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.49% | +0.50% |
 
 ## 7. 次に見るべき不足
 
