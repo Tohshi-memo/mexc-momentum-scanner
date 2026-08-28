@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T15:46:18.495098+00:00
+- generated_at: 2026-08-28T15:51:23.585562+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12876**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.98** / 初期 $100.00 (+14.98%)
-- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2356件
+- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2357件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000432 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $114.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T15:46:10.633664+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.94% price=78759.0
-- Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 73.5 >= 65=1
+- 更新: 2026-08-28T15:51:14.276902+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.02% price=78700.5
+- Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +93.09% | $2,452,901.63 |
-| HEMI/USDT:USDT | +49.95% | $7,226,741.11 |
-| LIGHT/USDT:USDT | +32.65% | $6,310,428.50 |
-| MAGMA/USDT:USDT | +30.93% | $4,320,463.61 |
-| EDEN/USDT:USDT | +20.79% | $4,705,944.68 |
+| LONGXIA/USDT:USDT | +89.71% | $2,475,070.40 |
+| HEMI/USDT:USDT | +45.74% | $7,278,399.38 |
+| LIGHT/USDT:USDT | +30.72% | $6,359,193.84 |
+| MAGMA/USDT:USDT | +29.64% | $4,342,768.48 |
+| EDEN/USDT:USDT | +20.39% | $4,740,287.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.26% | +4.20% |
-| LAB/USDT:USDT | below_1h_threshold | +2.68% | +3.62% |
-| ENA/USDT:USDT | below_1h_threshold | +2.35% | +3.30% |
-| MUU/USDT:USDT | below_1h_threshold | +1.68% | +2.62% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.54% | +2.48% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.80% | +5.82% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.37% | +5.39% |
+| LAB/USDT:USDT | below_1h_threshold | +3.05% | +4.07% |
+| MUU/USDT:USDT | below_1h_threshold | +1.68% | +2.70% |
+| BTW/USDT:USDT | below_1h_threshold | +1.37% | +2.39% |
 
 ## 7. 次に見るべき不足
 
