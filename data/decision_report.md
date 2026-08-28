@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T19:21:19.306651+00:00
+- generated_at: 2026-08-28T19:26:25.275634+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12886**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.98** / 初期 $100.00 (+14.98%)
-- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2369件
+- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2370件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000258 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $114.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T19:21:10.204469+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=77677.8
-- Funnel: target 1023 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-28T19:26:15.951021+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=77725.3
+- Funnel: target 1023 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +12.04% | $12,959,059.39 |
-| MAGMA/USDT:USDT | +8.47% | $6,809,923.94 |
-| TURBO/USDT:USDT | +8.10% | $1,161,815.83 |
-| BTW/USDT:USDT | +7.80% | $1,958,107.39 |
-| LONGXIA/USDT:USDT | +4.33% | $2,808,353.70 |
+| TURBO/USDT:USDT | +12.80% | $1,227,128.00 |
+| AKE/USDT:USDT | +12.48% | $13,026,547.60 |
+| MAGMA/USDT:USDT | +8.30% | $6,928,090.50 |
+| BTW/USDT:USDT | +5.41% | $2,010,345.30 |
+| LONGXIA/USDT:USDT | +4.43% | $2,811,588.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.76% | +3.58% |
-| UB/USDT:USDT | below_1h_threshold | +2.29% | +2.10% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.88% | +1.70% |
-| AKE/USDT:USDT | below_1h_threshold | +1.61% | +1.43% |
-| BTR/USDT:USDT | below_1h_threshold | +1.58% | +1.39% |
+| BTR/USDT:USDT | below_1h_threshold | +2.72% | +2.47% |
+| AKE/USDT:USDT | below_1h_threshold | +2.46% | +2.21% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.29% | +2.04% |
+| BTW/USDT:USDT | below_1h_threshold | +2.11% | +1.86% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.49% | +1.24% |
 
 ## 7. 次に見るべき不足
 
