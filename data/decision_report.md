@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T15:56:30.379469+00:00
+- generated_at: 2026-08-28T16:01:24.496495+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12876**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T15:56:18.229960+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.29% price=78486.8
-- Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1, 4h RSI 87.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-28T16:01:14.981853+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78377.3
+- Funnel: target 1023 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +87.93% | $2,512,209.03 |
-| HEMI/USDT:USDT | +47.44% | $7,340,463.30 |
-| LIGHT/USDT:USDT | +32.81% | $6,422,592.28 |
-| MAGMA/USDT:USDT | +30.69% | $4,374,843.18 |
-| EDEN/USDT:USDT | +21.28% | $4,758,143.80 |
+| SKYAI/USDT:USDT | +1.54% | $2,595,739.32 |
+| TAC/USDT:USDT | +0.96% | $1,435,485.18 |
+| BEAT/USDT:USDT | +0.95% | $5,722,450.84 |
+| HEMI/USDT:USDT | +0.81% | $7,316,913.95 |
+| EDEN/USDT:USDT | +0.49% | $4,713,367.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +1.68% | +2.96% |
-| ENA/USDT:USDT | below_1h_threshold | +1.37% | +2.66% |
-| LIGHT/USDT:USDT | below_1h_threshold | +1.30% | +2.59% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +2.51% |
-| KORU/USDT:USDT | below_1h_threshold | +1.16% | +2.45% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.47% | +1.38% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.88% | +0.79% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.70% | +0.62% |
+| TAC/USDT:USDT | below_1h_threshold | +0.67% | +0.58% |
+| HEI/USDT:USDT | below_1h_threshold | +0.62% | +0.54% |
 
 ## 7. 次に見るべき不足
 
