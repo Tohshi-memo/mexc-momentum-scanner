@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T14:36:20.073406+00:00
+- generated_at: 2026-08-28T14:41:23.912503+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12874**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T14:36:10.775231+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=79240.8
+- 更新: 2026-08-28T14:41:14.621049+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=79499.5
 - Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +87.89% | $2,070,789.70 |
-| HEMI/USDT:USDT | +43.33% | $6,462,795.48 |
-| LIGHT/USDT:USDT | +27.74% | $5,605,889.34 |
-| MAGMA/USDT:USDT | +22.63% | $4,230,968.28 |
-| UB/USDT:USDT | +15.45% | $1,040,327.93 |
+| LONGXIA/USDT:USDT | +89.34% | $2,099,115.18 |
+| HEMI/USDT:USDT | +44.92% | $6,480,076.37 |
+| LIGHT/USDT:USDT | +27.74% | $5,634,942.12 |
+| MAGMA/USDT:USDT | +23.18% | $4,255,653.50 |
+| UB/USDT:USDT | +15.32% | $1,045,611.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.18% | +4.27% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.90% | +2.99% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.16% | +2.25% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.25% |
-| MUU/USDT:USDT | below_1h_threshold | +2.10% | +2.19% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.18% | +3.95% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.37% | +3.14% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.35% | +3.12% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.90% | +2.67% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.49% | +2.26% |
 
 ## 7. 次に見るべき不足
 
