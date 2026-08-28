@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T22:56:21.707060+00:00
+- generated_at: 2026-08-28T23:01:20.977818+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12890**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T22:56:12.212531+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=77711.8
-- Funnel: target 1023 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-28T23:01:11.683145+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77714.0
+- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +32.70% | $15,226,413.93 |
-| MAGMA/USDT:USDT | +12.62% | $8,769,812.46 |
-| DEXE/USDT:USDT | +12.26% | $5,329,203.01 |
-| TURBO/USDT:USDT | +10.20% | $1,720,193.62 |
-| LONGXIA/USDT:USDT | +4.61% | $3,014,982.07 |
+| AKE/USDT:USDT | +34.68% | $14,784,976.57 |
+| MAGMA/USDT:USDT | +12.55% | $8,762,374.15 |
+| DEXE/USDT:USDT | +12.07% | $5,331,826.20 |
+| TURBO/USDT:USDT | +9.80% | $1,731,159.88 |
+| LONGXIA/USDT:USDT | +5.15% | $3,013,668.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +2.77% | +2.29% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.67% | +2.19% |
-| NIL/USDT:USDT | below_1h_threshold | +2.54% | +2.06% |
-| LDO/USDT:USDT | below_1h_threshold | +2.51% | +2.03% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.45% | +1.98% |
+| DEXE/USDT:USDT | below_1h_threshold | +0.49% | +0.50% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.30% | +0.32% |
+| LINSTOCK/USDT:USDT | below_1h_threshold | +0.19% | +0.20% |
+| TURBO/USDT:USDT | below_1h_threshold | +0.09% | +0.10% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.07% | +0.08% |
 
 ## 7. 次に見るべき不足
 
