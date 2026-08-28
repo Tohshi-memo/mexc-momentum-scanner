@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T15:31:34.875164+00:00
+- generated_at: 2026-08-28T15:36:19.139765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12876**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T15:31:24.876011+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=79218.5
-- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 74.7 >= 65=1
+- 更新: 2026-08-28T15:36:12.748542+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=79136.8
+- Funnel: target 1023 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +100.28% | $2,368,752.90 |
-| HEMI/USDT:USDT | +53.35% | $7,016,286.89 |
-| LIGHT/USDT:USDT | +35.41% | $6,129,108.99 |
-| MAGMA/USDT:USDT | +31.38% | $4,253,002.81 |
-| EDEN/USDT:USDT | +20.98% | $4,608,656.32 |
+| LONGXIA/USDT:USDT | +98.01% | $2,389,409.50 |
+| HEMI/USDT:USDT | +52.39% | $7,075,160.34 |
+| LIGHT/USDT:USDT | +34.36% | $6,185,294.17 |
+| MAGMA/USDT:USDT | +31.55% | $4,275,850.90 |
+| EDEN/USDT:USDT | +20.44% | $4,641,569.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.34% | +3.71% |
-| LAB/USDT:USDT | below_1h_threshold | +2.97% | +3.34% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.95% | +3.32% |
-| LIGHT/USDT:USDT | below_1h_threshold | +2.94% | +3.31% |
-| ENA/USDT:USDT | below_1h_threshold | +2.83% | +3.20% |
+| EDEN/USDT:USDT | below_1h_threshold | +4.19% | +4.66% |
+| LAB/USDT:USDT | below_1h_threshold | +4.15% | +4.62% |
+| BTR/USDT:USDT | below_1h_threshold | +3.48% | +3.95% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.21% | +3.68% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.44% | +2.91% |
 
 ## 7. 次に見るべき不足
 
