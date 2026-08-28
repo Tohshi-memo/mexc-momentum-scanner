@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T09:11:15.126729+00:00
+- generated_at: 2026-08-28T09:16:20.928757+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12866**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.98** / 初期 $100.00 (+14.98%)
-- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2344件
+- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2345件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000482 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $114.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T09:11:06.666528+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=79379.4
-- Funnel: target 1023 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-28T09:16:11.504643+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=79385.9
+- Funnel: target 1023 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +70.06% | $1,047,104.79 |
-| HEMI/USDT:USDT | +29.59% | $5,139,383.88 |
-| EDEN/USDT:USDT | +19.82% | $2,565,854.30 |
-| SKR/USDT:USDT | +17.86% | $3,039,328.38 |
-| AKE/USDT:USDT | +16.98% | $19,382,884.41 |
+| LONGXIA/USDT:USDT | +70.35% | $1,061,472.53 |
+| HEMI/USDT:USDT | +35.47% | $5,186,779.32 |
+| LIGHT/USDT:USDT | +25.31% | $1,049,473.67 |
+| SKR/USDT:USDT | +20.44% | $3,044,367.00 |
+| EDEN/USDT:USDT | +20.36% | $2,601,625.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +3.49% | +3.62% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.42% | +3.55% |
-| AKE/USDT:USDT | below_1h_threshold | +1.84% | +1.97% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.27% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.04% | +1.17% |
+| LIGHT/USDT:USDT | below_1h_threshold | +4.51% | +4.64% |
+| EDEN/USDT:USDT | below_1h_threshold | +3.85% | +3.97% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.80% | +2.92% |
+| AKE/USDT:USDT | below_1h_threshold | +2.12% | +2.24% |
+| PROM/USDT:USDT | below_1h_threshold | +1.95% | +2.07% |
 
 ## 7. 次に見るべき不足
 
