@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T01:11:12.124892+00:00
+- generated_at: 2026-08-28T01:16:16.212430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12847**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T01:11:04.838706+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=80756.1
+- 更新: 2026-08-28T01:16:07.088467+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=80672.5
 - Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +32.35% | $1,483,819.09 |
-| HEMI/USDT:USDT | +25.15% | $2,994,107.34 |
-| BMT/USDT:USDT | +22.38% | $4,121,464.66 |
-| 4/USDT:USDT | +8.87% | $1,094,014.61 |
-| ENA/USDT:USDT | +7.48% | $53,747,031.03 |
+| SKR/USDT:USDT | +33.82% | $1,498,086.11 |
+| HEMI/USDT:USDT | +25.93% | $3,007,695.54 |
+| BMT/USDT:USDT | +23.45% | $4,154,369.79 |
+| 4/USDT:USDT | +9.03% | $1,104,413.05 |
+| ENA/USDT:USDT | +7.83% | $53,873,762.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.45% | +2.17% |
-| STX/USDT:USDT | below_1h_threshold | +2.33% | +2.05% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.71% | +1.44% |
-| ENA/USDT:USDT | below_1h_threshold | +1.58% | +1.31% |
-| HEI/USDT:USDT | below_1h_threshold | +0.96% | +0.69% |
+| STX/USDT:USDT | below_1h_threshold | +2.21% | +2.04% |
+| ENA/USDT:USDT | below_1h_threshold | +2.03% | +1.86% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.34% | +1.17% |
+| XPL/USDT:USDT | below_1h_threshold | +0.96% | +0.79% |
+| POL/USDT:USDT | below_1h_threshold | +0.85% | +0.68% |
 
 ## 7. 次に見るべき不足
 
