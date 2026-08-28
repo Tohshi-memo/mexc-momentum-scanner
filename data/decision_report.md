@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T14:41:23.912503+00:00
+- generated_at: 2026-08-28T14:46:25.224678+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12874**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T14:41:14.621049+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=79499.5
+- 更新: 2026-08-28T14:46:16.116094+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=79379.8
 - Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +89.34% | $2,099,115.18 |
-| HEMI/USDT:USDT | +44.92% | $6,480,076.37 |
-| LIGHT/USDT:USDT | +27.74% | $5,634,942.12 |
-| MAGMA/USDT:USDT | +23.18% | $4,255,653.50 |
-| UB/USDT:USDT | +15.32% | $1,045,611.07 |
+| LONGXIA/USDT:USDT | +88.15% | $2,119,895.41 |
+| HEMI/USDT:USDT | +43.08% | $6,519,565.64 |
+| LIGHT/USDT:USDT | +27.19% | $5,667,241.88 |
+| MAGMA/USDT:USDT | +22.58% | $4,277,727.80 |
+| EDEN/USDT:USDT | +14.95% | $4,451,051.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +4.18% | +3.95% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.37% | +3.14% |
-| HEMI/USDT:USDT | below_1h_threshold | +3.35% | +3.12% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.90% | +2.67% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.49% | +2.26% |
+| SNXX/USDT:USDT | below_1h_threshold | +4.18% | +4.10% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.00% | +2.92% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.90% | +2.82% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.89% | +2.81% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.15% | +2.08% |
 
 ## 7. 次に見るべき不足
 
