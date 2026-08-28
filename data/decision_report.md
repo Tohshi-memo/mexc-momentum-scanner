@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T08:11:22.473149+00:00
+- generated_at: 2026-08-28T08:16:20.905580+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12864**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T08:11:13.198111+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=79809.6
+- 更新: 2026-08-28T08:16:11.776837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=79717.7
 - Funnel: target 1023 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +29.54% | $4,803,463.80 |
-| SKR/USDT:USDT | +19.88% | $2,953,944.16 |
-| AKE/USDT:USDT | +15.63% | $19,300,405.91 |
-| MANTRA/USDT:USDT | +15.25% | $1,041,858.19 |
-| EDEN/USDT:USDT | +14.34% | $2,374,113.65 |
+| HEMI/USDT:USDT | +29.38% | $4,818,032.97 |
+| SKR/USDT:USDT | +20.56% | $2,977,277.34 |
+| AKE/USDT:USDT | +15.34% | $19,333,765.30 |
+| EDEN/USDT:USDT | +14.99% | $2,382,958.18 |
+| MANTRA/USDT:USDT | +14.04% | $1,072,932.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +2.52% | +2.31% |
-| ENA/USDT:USDT | below_1h_threshold | +1.78% | +1.57% |
-| STX/USDT:USDT | below_1h_threshold | +1.69% | +1.48% |
-| MANTRA/USDT:USDT | below_1h_threshold | +1.38% | +1.17% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.32% | +1.12% |
+| CYS/USDT:USDT | below_1h_threshold | +4.26% | +4.17% |
+| 4/USDT:USDT | below_1h_threshold | +2.64% | +2.55% |
+| STX/USDT:USDT | below_1h_threshold | +1.88% | +1.79% |
+| ENA/USDT:USDT | below_1h_threshold | +1.80% | +1.71% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.20% | +1.11% |
 
 ## 7. 次に見るべき不足
 
