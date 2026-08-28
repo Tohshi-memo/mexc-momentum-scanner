@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T15:21:22.274190+00:00
+- generated_at: 2026-08-28T15:26:27.969383+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12876**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.98** / 初期 $100.00 (+14.98%)
-- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2355件
+- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2356件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000432 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $114.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T15:21:13.073923+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=79401.2
-- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-28T15:26:17.960668+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=79429.5
+- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.4 >= 65=1, 4h RSI 74.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +101.13% | $2,326,689.74 |
-| HEMI/USDT:USDT | +58.50% | $6,906,632.99 |
-| LIGHT/USDT:USDT | +33.59% | $6,029,888.59 |
-| MAGMA/USDT:USDT | +29.69% | $4,114,707.99 |
-| EDEN/USDT:USDT | +18.62% | $4,510,666.34 |
+| LONGXIA/USDT:USDT | +101.36% | $2,348,329.83 |
+| HEMI/USDT:USDT | +53.54% | $6,959,222.71 |
+| LIGHT/USDT:USDT | +33.48% | $6,087,925.96 |
+| MAGMA/USDT:USDT | +31.35% | $4,211,020.75 |
+| EDEN/USDT:USDT | +20.91% | $4,552,374.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.33% | +4.46% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.03% | +4.17% |
-| LAB/USDT:USDT | below_1h_threshold | +3.60% | +3.74% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.49% | +3.63% |
-| EDEN/USDT:USDT | below_1h_threshold | +3.22% | +3.36% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.90% | +4.00% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.27% | +3.37% |
+| LAB/USDT:USDT | below_1h_threshold | +2.99% | +3.09% |
+| ENA/USDT:USDT | below_1h_threshold | +2.77% | +2.87% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.07% | +2.17% |
 
 ## 7. 次に見るべき不足
 
