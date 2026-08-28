@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T09:21:24.762593+00:00
+- generated_at: 2026-08-28T09:26:26.672541+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12866**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.98** / 初期 $100.00 (+14.98%)
-- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2346件
+- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2347件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000482 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $114.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T09:21:14.749694+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=79387.7
-- Funnel: target 1023 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.6 >= 65=1, 4h RSI 75.8 >= 65=1
+- 更新: 2026-08-28T09:26:16.280186+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=79400.2
+- Funnel: target 1023 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1, 4h RSI 76.3 >= 65=1, 4h RSI 87.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +66.21% | $1,082,692.58 |
-| HEMI/USDT:USDT | +36.92% | $5,242,359.80 |
-| LIGHT/USDT:USDT | +25.53% | $1,107,692.08 |
-| EDEN/USDT:USDT | +22.49% | $2,707,130.86 |
-| SKR/USDT:USDT | +18.98% | $3,049,209.76 |
+| LONGXIA/USDT:USDT | +69.05% | $1,122,619.71 |
+| HEMI/USDT:USDT | +37.55% | $5,315,499.32 |
+| LIGHT/USDT:USDT | +28.24% | $1,205,877.36 |
+| EDEN/USDT:USDT | +24.16% | $2,838,727.15 |
+| SKR/USDT:USDT | +17.97% | $3,056,979.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIGHT/USDT:USDT | below_1h_threshold | +4.51% | +4.63% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.33% | +3.46% |
-| BTW/USDT:USDT | below_1h_threshold | +2.30% | +2.42% |
-| VELVET/USDT:USDT | below_1h_threshold | +1.77% | +1.89% |
-| JUP/USDT:USDT | below_1h_threshold | +1.51% | +1.63% |
+| BTW/USDT:USDT | below_1h_threshold | +2.41% | +2.51% |
+| PROM/USDT:USDT | below_1h_threshold | +2.20% | +2.30% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.14% | +2.24% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.05% | +2.16% |
+| JUP/USDT:USDT | below_1h_threshold | +1.51% | +1.61% |
 
 ## 7. 次に見るべき不足
 
