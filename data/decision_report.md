@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T22:31:18.928967+00:00
+- generated_at: 2026-08-28T22:36:17.662453+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12890**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T22:31:10.532566+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=77550.5
-- Funnel: target 1023 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-28T22:36:08.318602+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=77602.3
+- Funnel: target 1023 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +29.06% | $14,639,086.85 |
-| MAGMA/USDT:USDT | +13.79% | $8,683,898.46 |
-| DEXE/USDT:USDT | +13.21% | $5,239,896.34 |
-| TURBO/USDT:USDT | +11.40% | $1,693,748.68 |
-| BTW/USDT:USDT | +4.85% | $2,272,017.36 |
+| AKE/USDT:USDT | +30.74% | $14,724,698.57 |
+| MAGMA/USDT:USDT | +13.61% | $8,698,673.73 |
+| DEXE/USDT:USDT | +11.89% | $5,262,970.58 |
+| TURBO/USDT:USDT | +10.60% | $1,700,350.16 |
+| LONGXIA/USDT:USDT | +4.58% | $3,008,336.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.58% | +4.31% |
-| DEXE/USDT:USDT | below_1h_threshold | +3.33% | +3.06% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.80% | +1.53% |
-| ORDI/USDT:USDT | below_1h_threshold | +1.71% | +1.44% |
-| LIT/USDT:USDT | below_1h_threshold | +1.69% | +1.42% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.12% | +1.78% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.12% | +1.78% |
+| NIL/USDT:USDT | below_1h_threshold | +2.09% | +1.75% |
+| ORDI/USDT:USDT | below_1h_threshold | +1.69% | +1.35% |
+| LDO/USDT:USDT | below_1h_threshold | +1.64% | +1.30% |
 
 ## 7. 次に見るべき不足
 
