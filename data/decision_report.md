@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T09:56:31.266303+00:00
+- generated_at: 2026-08-28T10:01:18.766852+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12867**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T09:56:22.950201+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=79273.4
-- Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-28T10:01:11.384733+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=79258.4
+- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +63.66% | $1,195,655.39 |
-| HEMI/USDT:USDT | +38.43% | $5,512,698.46 |
-| LIGHT/USDT:USDT | +25.26% | $2,180,892.97 |
-| EDEN/USDT:USDT | +21.23% | $3,075,403.01 |
-| SKR/USDT:USDT | +15.95% | $3,168,534.48 |
+| LONGXIA/USDT:USDT | +67.76% | $1,202,020.73 |
+| HEMI/USDT:USDT | +37.42% | $5,513,830.13 |
+| LIGHT/USDT:USDT | +25.92% | $2,275,057.77 |
+| EDEN/USDT:USDT | +21.58% | $3,015,260.99 |
+| SKR/USDT:USDT | +17.07% | $3,174,104.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIGHT/USDT:USDT | below_1h_threshold | +4.83% | +5.10% |
-| EDEN/USDT:USDT | below_1h_threshold | +4.70% | +4.96% |
-| BTW/USDT:USDT | below_1h_threshold | +3.90% | +4.17% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.08% | +3.34% |
-| BMT/USDT:USDT | below_1h_threshold | +2.97% | +3.23% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.24% | +1.24% |
+| BTR/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
+| PROM/USDT:USDT | below_1h_threshold | +0.43% | +0.42% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.35% | +0.34% |
+| MERL/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
 
 ## 7. 次に見るべき不足
 
