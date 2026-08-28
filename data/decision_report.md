@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T04:16:29.068654+00:00
+- generated_at: 2026-08-28T04:21:26.617141+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12857**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T04:16:16.034044+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=79855.3
+- 更新: 2026-08-28T04:21:14.929822+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=79856.0
 - Funnel: target 1019 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +20.27% | $3,596,819.40 |
-| SKR/USDT:USDT | +18.65% | $2,243,748.48 |
-| BMT/USDT:USDT | +16.76% | $4,457,066.12 |
-| MERL/USDT:USDT | +7.59% | $1,863,268.42 |
-| EDEN/USDT:USDT | +5.88% | $1,775,238.70 |
+| HEMI/USDT:USDT | +19.47% | $3,613,288.21 |
+| SKR/USDT:USDT | +19.32% | $2,250,753.02 |
+| BMT/USDT:USDT | +15.83% | $4,487,120.95 |
+| AKE/USDT:USDT | +8.65% | $18,129,981.78 |
+| MERL/USDT:USDT | +8.19% | $1,866,684.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.34% | +2.25% |
-| BTW/USDT:USDT | below_1h_threshold | +1.50% | +1.41% |
-| STX/USDT:USDT | below_1h_threshold | +1.00% | +0.91% |
-| 4/USDT:USDT | below_1h_threshold | +0.89% | +0.80% |
-| XPL/USDT:USDT | below_1h_threshold | +0.71% | +0.62% |
+| AKE/USDT:USDT | below_1h_threshold | +3.78% | +3.69% |
+| BTW/USDT:USDT | below_1h_threshold | +2.49% | +2.40% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.49% | +2.40% |
+| MERL/USDT:USDT | below_1h_threshold | +1.17% | +1.08% |
+| STX/USDT:USDT | below_1h_threshold | +0.77% | +0.68% |
 
 ## 7. 次に見るべき不足
 
