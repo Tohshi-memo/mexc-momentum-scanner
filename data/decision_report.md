@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T10:41:24.756089+00:00
+- generated_at: 2026-08-28T10:46:30.380819+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12869**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.98** / 初期 $100.00 (+14.98%)
-- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2352件
+- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2353件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000539 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $114.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T10:41:14.144776+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79314.8
-- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.9 >= 65=1, 4h RSI 78.0 >= 65=1, 4h RSI 84.4 >= 65=1
+- 更新: 2026-08-28T10:46:19.888565+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=79281.1
+- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.5 >= 65=1, 4h RSI 82.4 >= 65=1, 4h RSI 84.6 >= 65=1, 4h RSI 78.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +75.94% | $1,382,297.06 |
-| HEMI/USDT:USDT | +30.54% | $5,747,157.27 |
-| LIGHT/USDT:USDT | +24.65% | $2,942,969.92 |
-| MANTRA/USDT:USDT | +21.13% | $1,801,581.16 |
-| MAGMA/USDT:USDT | +20.27% | $4,028,459.58 |
+| LONGXIA/USDT:USDT | +76.06% | $1,398,099.77 |
+| HEMI/USDT:USDT | +29.56% | $5,767,337.54 |
+| LIGHT/USDT:USDT | +24.26% | $3,000,610.94 |
+| MANTRA/USDT:USDT | +21.66% | $1,835,672.56 |
+| EDEN/USDT:USDT | +20.86% | $3,296,815.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_relative_strength | +5.03% | +4.95% |
-| BTR/USDT:USDT | below_1h_threshold | +3.91% | +3.83% |
-| ENA/USDT:USDT | below_1h_threshold | +1.88% | +1.81% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.36% | +1.29% |
-| BTW/USDT:USDT | below_1h_threshold | +1.28% | +1.21% |
+| BTR/USDT:USDT | below_1h_threshold | +2.89% | +2.86% |
+| ENA/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.34% | +1.31% |
+| STX/USDT:USDT | below_1h_threshold | +1.31% | +1.28% |
+| BTW/USDT:USDT | below_1h_threshold | +1.29% | +1.26% |
 
 ## 7. 次に見るべき不足
 
