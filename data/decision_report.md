@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T01:36:26.322622+00:00
+- generated_at: 2026-08-28T01:41:15.575118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12849**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T01:36:14.701257+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.74% price=81131.0
+- 更新: 2026-08-28T01:41:07.379188+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=80919.9
 - Funnel: target 1019 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.0 >= 65=1, 4h RSI 70.9 >= 65=1
+- Strict後reject: 4h RSI 75.0 >= 65=1, 4h RSI 70.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +31.91% | $1,630,304.79 |
-| BMT/USDT:USDT | +24.43% | $4,226,960.11 |
-| HEMI/USDT:USDT | +24.18% | $3,104,875.20 |
-| ENA/USDT:USDT | +16.69% | $57,268,449.58 |
-| TRUMPOFFICIAL/USDT:USDT | +10.40% | $28,909,310.40 |
+| SKR/USDT:USDT | +34.60% | $1,644,022.31 |
+| BMT/USDT:USDT | +25.17% | $4,238,233.62 |
+| HEMI/USDT:USDT | +23.11% | $3,115,004.87 |
+| ENA/USDT:USDT | +15.73% | $58,007,864.28 |
+| TRUMPOFFICIAL/USDT:USDT | +9.44% | $29,227,503.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +4.34% | +3.60% |
-| WLD/USDT:USDT | below_1h_threshold | +3.08% | +2.34% |
-| XPL/USDT:USDT | below_1h_threshold | +2.68% | +1.95% |
-| JUP/USDT:USDT | below_1h_threshold | +2.13% | +1.39% |
-| GALA/USDT:USDT | below_1h_threshold | +2.10% | +1.36% |
+| STX/USDT:USDT | below_1h_threshold | +4.45% | +3.98% |
+| XPL/USDT:USDT | below_1h_threshold | +3.13% | +2.66% |
+| WLD/USDT:USDT | below_1h_threshold | +2.47% | +2.00% |
+| UNI/USDT:USDT | below_1h_threshold | +1.61% | +1.13% |
+| JUP/USDT:USDT | below_1h_threshold | +1.55% | +1.07% |
 
 ## 7. 次に見るべき不足
 
