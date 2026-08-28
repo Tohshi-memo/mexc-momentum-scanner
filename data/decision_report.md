@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T17:06:22.974129+00:00
+- generated_at: 2026-08-28T17:11:16.626817+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12879**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T17:06:13.720407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=77679.9
+- 更新: 2026-08-28T17:11:09.216194+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77789.6
 - Funnel: target 1023 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +9.29% | $1,375,604.79 |
-| MAGMA/USDT:USDT | +7.24% | $5,018,397.50 |
-| AKE/USDT:USDT | +4.63% | $18,968,685.54 |
-| LONGXIA/USDT:USDT | +4.43% | $2,691,626.24 |
-| LIT/USDT:USDT | +3.01% | $3,973,741.77 |
+| DEXE/USDT:USDT | +7.65% | $1,435,627.85 |
+| MAGMA/USDT:USDT | +6.77% | $5,118,785.81 |
+| AKE/USDT:USDT | +4.61% | $19,243,456.78 |
+| LONGXIA/USDT:USDT | +4.43% | $2,696,283.29 |
+| LIT/USDT:USDT | +3.39% | $4,001,768.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +3.02% | +3.12% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.92% | +3.02% |
-| UB/USDT:USDT | below_1h_threshold | +1.80% | +1.89% |
-| MERL/USDT:USDT | below_1h_threshold | +1.31% | +1.41% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.96% |
+| TUT/USDT:USDT | below_1h_threshold | +3.73% | +3.69% |
+| UB/USDT:USDT | below_1h_threshold | +1.81% | +1.77% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.55% | +1.50% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.05% | +1.00% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.04% | +0.99% |
 
 ## 7. 次に見るべき不足
 
