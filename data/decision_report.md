@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T16:56:51.515302+00:00
+- generated_at: 2026-08-28T17:01:18.018758+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12879**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T16:56:36.288099+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.62% price=77827.1
-- Funnel: target 1023 → liquid 159 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.3 >= 65=1, 4h RSI 87.7 >= 65=1, 4h RSI 82.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-28T17:01:11.445802+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=77697.8
+- Funnel: target 1023 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +8.42% | $5,159,730.01 |
-| AKE/USDT:USDT | +7.95% | $20,064,079.16 |
-| DEXE/USDT:USDT | +7.20% | $1,239,714.48 |
-| LONGXIA/USDT:USDT | +6.49% | $2,681,892.42 |
-| BMT/USDT:USDT | +3.39% | $4,704,932.20 |
+| MAGMA/USDT:USDT | +7.48% | $4,971,498.35 |
+| DEXE/USDT:USDT | +6.79% | $1,297,036.59 |
+| AKE/USDT:USDT | +6.76% | $18,777,390.23 |
+| LONGXIA/USDT:USDT | +5.62% | $2,681,249.00 |
+| CHIP/USDT:USDT | +3.24% | $5,355,697.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BMT/USDT:USDT | below_1h_threshold | +3.35% | +3.96% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.91% | +3.52% |
-| LIT/USDT:USDT | below_1h_threshold | +2.72% | +3.33% |
-| BTR/USDT:USDT | below_1h_threshold | +2.15% | +2.77% |
-| MERL/USDT:USDT | below_1h_threshold | +1.27% | +1.89% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.05% | +1.12% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.86% | +0.93% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.60% | +0.67% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.55% | +0.63% |
+| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.54% |
 
 ## 7. 次に見るべき不足
 
