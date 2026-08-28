@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T10:06:27.008715+00:00
+- generated_at: 2026-08-28T10:11:20.626971+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12868**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T10:06:15.935419+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=79167.0
+- 更新: 2026-08-28T10:11:13.297962+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=79100.0
 - Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +70.83% | $1,229,072.48 |
-| HEMI/USDT:USDT | +35.20% | $5,575,189.21 |
-| LIGHT/USDT:USDT | +19.80% | $2,512,022.39 |
-| EDEN/USDT:USDT | +18.24% | $3,081,612.28 |
-| SKR/USDT:USDT | +16.06% | $3,181,750.32 |
+| LONGXIA/USDT:USDT | +67.19% | $1,242,836.37 |
+| HEMI/USDT:USDT | +37.19% | $5,596,016.85 |
+| LIGHT/USDT:USDT | +20.02% | $2,610,232.71 |
+| EDEN/USDT:USDT | +19.27% | $3,127,374.78 |
+| SKR/USDT:USDT | +16.62% | $3,183,507.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.77% | +1.89% |
-| BTR/USDT:USDT | below_1h_threshold | +0.95% | +1.06% |
-| PROM/USDT:USDT | below_1h_threshold | +0.37% | +0.48% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.27% | +0.38% |
-| XPT/USDT:USDT | below_1h_threshold | +0.20% | +0.31% |
+| BTR/USDT:USDT | below_1h_threshold | +0.99% | +1.19% |
+| STX/USDT:USDT | below_1h_threshold | +0.98% | +1.17% |
+| MANTRA/USDT:USDT | below_1h_threshold | +0.98% | +1.17% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.27% | +0.47% |
+| XPT/USDT:USDT | below_1h_threshold | +0.23% | +0.43% |
 
 ## 7. 次に見るべき不足
 
