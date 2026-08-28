@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T15:41:30.018618+00:00
+- generated_at: 2026-08-28T15:46:18.495098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12876**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T15:41:22.288702+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.57% price=79056.0
-- Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.7 >= 65=1
+- 更新: 2026-08-28T15:46:10.633664+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.94% price=78759.0
+- Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1, 4h RSI 73.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +98.40% | $2,423,163.57 |
-| HEMI/USDT:USDT | +48.12% | $7,152,796.85 |
-| LIGHT/USDT:USDT | +33.31% | $6,225,776.82 |
-| MAGMA/USDT:USDT | +30.42% | $4,295,261.00 |
-| EDEN/USDT:USDT | +21.49% | $4,672,851.26 |
+| LONGXIA/USDT:USDT | +93.09% | $2,452,901.63 |
+| HEMI/USDT:USDT | +49.95% | $7,226,741.11 |
+| LIGHT/USDT:USDT | +32.65% | $6,310,428.50 |
+| MAGMA/USDT:USDT | +30.93% | $4,320,463.61 |
+| EDEN/USDT:USDT | +20.79% | $4,705,944.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.99% | +5.56% |
-| ENA/USDT:USDT | below_1h_threshold | +3.28% | +3.85% |
-| LAB/USDT:USDT | below_1h_threshold | +3.19% | +3.76% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.91% | +3.48% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.75% | +3.32% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.26% | +4.20% |
+| LAB/USDT:USDT | below_1h_threshold | +2.68% | +3.62% |
+| ENA/USDT:USDT | below_1h_threshold | +2.35% | +3.30% |
+| MUU/USDT:USDT | below_1h_threshold | +1.68% | +2.62% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.54% | +2.48% |
 
 ## 7. 次に見るべき不足
 
