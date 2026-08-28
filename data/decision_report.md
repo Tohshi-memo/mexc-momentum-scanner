@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T16:16:28.060790+00:00
+- generated_at: 2026-08-28T16:21:21.409637+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12876**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T16:16:16.826424+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.68% price=77780.0
-- Funnel: target 1023 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-28T16:21:10.036125+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.77% price=77703.2
+- Funnel: target 1023 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +3.91% | $2,731,854.30 |
-| LONGXIA/USDT:USDT | +2.84% | $2,578,353.96 |
-| MAGMA/USDT:USDT | +2.18% | $4,349,636.20 |
-| BTR/USDT:USDT | +0.89% | $9,944,385.37 |
-| NBISSTOCK/USDT:USDT | +0.67% | $1,774,802.91 |
+| SKYAI/USDT:USDT | +2.88% | $2,768,616.89 |
+| MAGMA/USDT:USDT | +2.18% | $4,388,983.02 |
+| LONGXIA/USDT:USDT | +1.85% | $2,594,569.10 |
+| SOXS/USDT:USDT | +0.54% | $4,025,904.62 |
+| NBISSTOCK/USDT:USDT | +0.41% | $1,778,102.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.93% | +4.61% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.21% | +3.89% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.14% | +2.82% |
-| BTR/USDT:USDT | below_1h_threshold | +0.89% | +1.56% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.95% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.88% | +3.66% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.31% | +3.08% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.74% | +2.51% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.32% | +1.09% |
+| BTR/USDT:USDT | below_1h_threshold | +0.29% | +1.06% |
 
 ## 7. 次に見るべき不足
 
