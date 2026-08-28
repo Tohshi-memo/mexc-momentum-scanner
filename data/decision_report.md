@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T04:31:28.612888+00:00
+- generated_at: 2026-08-28T04:36:31.310499+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12857**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.79** / 初期 $100.00 (+14.79%)
-- 確定: 1988件 (Win 580 / Loss 762 / Flat 646) / pending 0件 / skip 2340件
+- 確定: 1988件 (Win 580 / Loss 762 / Flat 646) / pending 0件 / skip 2341件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000414 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: WIF/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.79
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T04:31:17.121176+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=79809.1
-- Funnel: target 1019 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-28T04:36:17.339591+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=79666.1
+- Funnel: target 1019 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +22.24% | $2,271,935.98 |
-| HEMI/USDT:USDT | +20.45% | $3,643,308.67 |
-| BMT/USDT:USDT | +16.67% | $4,526,975.96 |
-| ANSEM/USDT:USDT | +12.24% | $1,011,280.47 |
-| AKE/USDT:USDT | +8.83% | $18,186,936.87 |
+| SKR/USDT:USDT | +22.58% | $2,312,219.36 |
+| HEMI/USDT:USDT | +20.42% | $3,649,959.20 |
+| BMT/USDT:USDT | +17.18% | $4,539,868.70 |
+| ANSEM/USDT:USDT | +10.44% | $1,017,190.34 |
+| AKE/USDT:USDT | +8.49% | $18,211,662.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.45% | +4.42% |
-| AKE/USDT:USDT | below_1h_threshold | +3.85% | +3.82% |
-| HEI/USDT:USDT | below_1h_threshold | +3.53% | +3.50% |
-| ANSEM/USDT:USDT | below_1h_threshold | +3.52% | +3.49% |
-| BTR/USDT:USDT | below_1h_threshold | +2.19% | +2.16% |
+| BTW/USDT:USDT | below_1h_threshold | +4.16% | +4.31% |
+| AKE/USDT:USDT | below_1h_threshold | +3.64% | +3.78% |
+| BTR/USDT:USDT | below_1h_threshold | +3.40% | +3.54% |
+| SKR/USDT:USDT | below_1h_threshold | +2.06% | +2.20% |
+| ANSEM/USDT:USDT | below_1h_threshold | +2.02% | +2.16% |
 
 ## 7. 次に見るべき不足
 
