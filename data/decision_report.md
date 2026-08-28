@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T11:56:18.096475+00:00
+- generated_at: 2026-08-28T12:01:19.397525+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12870**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T11:56:09.452214+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79543.1
-- Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-28T12:01:10.466467+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=79529.9
+- Funnel: target 1023 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +74.94% | $1,554,481.73 |
-| HEMI/USDT:USDT | +32.47% | $5,999,435.17 |
-| LIGHT/USDT:USDT | +25.31% | $3,872,026.41 |
-| MAGMA/USDT:USDT | +22.50% | $4,369,964.39 |
-| EDEN/USDT:USDT | +22.39% | $3,731,049.94 |
+| LONGXIA/USDT:USDT | +76.72% | $1,562,910.52 |
+| HEMI/USDT:USDT | +32.84% | $5,691,085.04 |
+| LIGHT/USDT:USDT | +24.54% | $3,900,637.94 |
+| MAGMA/USDT:USDT | +21.61% | $4,327,101.56 |
+| EDEN/USDT:USDT | +21.61% | $3,718,161.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +1.92% | +1.90% |
-| STX/USDT:USDT | below_1h_threshold | +1.76% | +1.74% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.57% | +1.55% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
-| JUP/USDT:USDT | below_1h_threshold | +1.49% | +1.47% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.99% | +1.03% |
+| MANTRA/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
+| EDEN/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.41% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.32% | +0.36% |
 
 ## 7. 次に見るべき不足
 
