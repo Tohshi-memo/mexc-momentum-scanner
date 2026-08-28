@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-28T10:31:20.898507+00:00
+- generated_at: 2026-08-28T10:36:25.850829+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12868**
+- closed shadow trades: **12869**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.83% / filled 20/20。**
-- 全期間 MARKET基準: n=12868, expectancy=+0.01%
+- 全期間 MARKET基準: n=12869, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+1.83%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +1.83% | **+1.83%** |
-| LIMIT_BB3S | 4/18 | 22.2% | +4.13% | **+0.92%** |
+| LIMIT_BB3S | 5/18 | 27.8% | +3.08% | **+0.86%** |
 | LIMIT_1PCT | 16/20 | 80.0% | +0.78% | **+0.62%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +4.59% | **+0.46%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
+| LIMIT_ATR | 13/20 | 65.0% | +0.57% | **+0.37%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$712.45** / 初期 $100.00 (+612.45%)
-- 確定: 4676件 (Win 1414 / Loss 1533 / Flat 1729) / skip 4753件
+- 確定: 4676件 (Win 1414 / Loss 1533 / Flat 1729) / skip 4754件
 - 成長率目線: 平均log +0.000420 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `見送り` (no_strategy_passed_safety_filters) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: MOVR/USDT:USDT `LIMIT_8PCT_LONG` SL_HIT account -0.50% 残高後 $712.45
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$156.51** / 初期 $100.00 (+56.51%)
-- 確定: 2003件 (Win 544 / Loss 483 / Flat 976) / skip 4276件
+- 確定: 2003件 (Win 544 / Loss 483 / Flat 976) / skip 4277件
 - 成長率目線: 平均log +0.000224 / 幾何平均 +0.022% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $156.51
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.98** / 初期 $100.00 (+14.98%)
-- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2350件
+- 確定: 1990件 (Win 581 / Loss 763 / Flat 646) / pending 0件 / skip 2351件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000539 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MOVR/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $114.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T10:31:11.159816+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=79293.7
+- 更新: 2026-08-28T10:36:14.079156+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79262.7
 - Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 80.0 >= 65=1
+- Strict後reject: 4h RSI 83.3 >= 65=1, 4h RSI 77.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +68.30% | $1,319,384.79 |
-| HEMI/USDT:USDT | +31.83% | $5,697,804.64 |
-| LIGHT/USDT:USDT | +20.95% | $2,776,981.50 |
-| EDEN/USDT:USDT | +18.47% | $3,223,884.22 |
-| SKR/USDT:USDT | +18.31% | $3,211,432.96 |
+| LONGXIA/USDT:USDT | +75.44% | $1,369,065.36 |
+| HEMI/USDT:USDT | +32.68% | $5,718,057.59 |
+| LIGHT/USDT:USDT | +25.86% | $2,904,338.84 |
+| MANTRA/USDT:USDT | +21.97% | $1,702,762.18 |
+| EDEN/USDT:USDT | +18.37% | $3,243,449.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
-| BTR/USDT:USDT | below_1h_threshold | +2.61% | +2.56% |
-| STX/USDT:USDT | below_1h_threshold | +1.01% | +0.96% |
-| SKR/USDT:USDT | below_1h_threshold | +0.96% | +0.91% |
-| BTW/USDT:USDT | below_1h_threshold | +0.89% | +0.84% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.69% | +4.68% |
+| BTR/USDT:USDT | below_1h_threshold | +3.60% | +3.59% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.18% | +3.17% |
+| BTW/USDT:USDT | below_1h_threshold | +1.24% | +1.23% |
+| LIGHT/USDT:USDT | below_1h_threshold | +1.15% | +1.14% |
 
 ## 7. 次に見るべき不足
 
