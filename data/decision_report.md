@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T16:36:31.151810+00:00
+- generated_at: 2026-08-28T16:41:31.789591+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12877**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T16:36:17.678302+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.79% price=77688.0
+- 更新: 2026-08-28T16:41:19.516551+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=77864.9
 - Funnel: target 1023 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 88.9 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +7.00% | $4,742,538.93 |
-| BTR/USDT:USDT | +2.69% | $10,137,958.02 |
-| LIT/USDT:USDT | +2.26% | $4,277,186.20 |
-| CHIP/USDT:USDT | +1.93% | $5,838,991.76 |
-| LONGXIA/USDT:USDT | +1.85% | $2,633,338.70 |
+| MAGMA/USDT:USDT | +6.75% | $4,822,348.37 |
+| LIT/USDT:USDT | +2.63% | $4,293,295.11 |
+| BTR/USDT:USDT | +2.43% | $10,167,773.58 |
+| LONGXIA/USDT:USDT | +2.07% | $2,645,432.71 |
+| CHIP/USDT:USDT | +1.95% | $5,847,502.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +2.59% | +3.39% |
-| LIT/USDT:USDT | below_1h_threshold | +2.27% | +3.06% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.96% | +2.75% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.67% | +2.47% |
-| BMT/USDT:USDT | below_1h_threshold | +0.93% | +1.72% |
+| LIT/USDT:USDT | below_1h_threshold | +2.63% | +3.20% |
+| BTR/USDT:USDT | below_1h_threshold | +2.43% | +3.00% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.07% | +2.64% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.84% | +2.40% |
+| AKE/USDT:USDT | below_1h_threshold | +1.75% | +2.31% |
 
 ## 7. 次に見るべき不足
 
