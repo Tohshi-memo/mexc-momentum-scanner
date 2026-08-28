@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-28T18:41:25.481868+00:00
+- generated_at: 2026-08-28T18:46:24.394417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12884**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-28T18:41:16.066277+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=77421.8
+- 更新: 2026-08-28T18:46:15.169711+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.67% price=77355.0
 - Funnel: target 1023 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.6 >= 65=1
+- Strict後reject: 4h RSI 91.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DEXE/USDT:USDT | +19.18% | $2,733,717.64 |
-| AKE/USDT:USDT | +9.75% | $15,049,685.56 |
-| MAGMA/USDT:USDT | +9.46% | $5,884,180.90 |
-| TURBO/USDT:USDT | +6.00% | $1,113,076.29 |
-| ONG/USDT:USDT | +3.09% | $5,093,518.51 |
+| DEXE/USDT:USDT | +18.77% | $2,823,930.81 |
+| MAGMA/USDT:USDT | +10.73% | $5,922,449.94 |
+| AKE/USDT:USDT | +10.37% | $15,063,714.30 |
+| TURBO/USDT:USDT | +5.50% | $1,138,387.46 |
+| ONG/USDT:USDT | +3.12% | $5,097,979.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.17% | +3.75% |
-| MUU/USDT:USDT | below_1h_threshold | +1.47% | +2.05% |
-| BTW/USDT:USDT | below_1h_threshold | +1.31% | +1.89% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +1.39% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +1.25% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.54% | +5.21% |
+| BTW/USDT:USDT | below_1h_threshold | +2.25% | +2.92% |
+| MUU/USDT:USDT | below_1h_threshold | +1.47% | +2.14% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.43% | +2.10% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +0.80% | +1.47% |
 
 ## 7. 次に見るべき不足
 
