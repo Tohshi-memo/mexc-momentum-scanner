@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T11:36:21.728258+00:00
+- generated_at: 2026-08-29T11:41:17.858828+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12932**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.47** / 初期 $100.00 (+16.47%)
-- 確定: 2027件 (Win 596 / Loss 785 / Flat 646) / pending 2件 / skip 2372件
+- 確定: 2027件 (Win 596 / Loss 785 / Flat 646) / pending 3件 / skip 2372件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000399 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HNT/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $116.47
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T11:36:13.071506+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77658.9
-- Funnel: target 1023 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-29T11:41:06.238030+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77656.7
+- Funnel: target 1023 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +90.30% | $1,853,179.59 |
-| HNT/USDT:USDT | +81.17% | $8,048,992.51 |
-| 4/USDT:USDT | +45.27% | $2,170,351.98 |
-| LONGXIA/USDT:USDT | +20.13% | $2,085,673.31 |
-| O/USDT:USDT | +17.61% | $1,476,253.83 |
+| TOAD/USDT:USDT | +89.18% | $1,858,133.59 |
+| HNT/USDT:USDT | +78.30% | $8,255,919.98 |
+| 4/USDT:USDT | +38.95% | $2,288,101.57 |
+| LONGXIA/USDT:USDT | +21.48% | $2,091,829.75 |
+| O/USDT:USDT | +18.48% | $1,480,943.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +4.57% | +4.50% |
-| VELVET/USDT:USDT | below_1h_threshold | +3.58% | +3.51% |
-| 4/USDT:USDT | below_1h_threshold | +3.52% | +3.45% |
-| BTR/USDT:USDT | below_1h_threshold | +3.18% | +3.10% |
-| NIL/USDT:USDT | below_1h_threshold | +3.00% | +2.92% |
+| BTR/USDT:USDT | below_1h_threshold | +3.84% | +3.77% |
+| ONG/USDT:USDT | below_1h_threshold | +3.59% | +3.52% |
+| NIL/USDT:USDT | below_1h_threshold | +3.54% | +3.47% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.95% | +2.88% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.90% | +2.83% |
 
 ## 7. 次に見るべき不足
 
