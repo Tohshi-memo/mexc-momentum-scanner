@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T16:41:12.969481+00:00
+- generated_at: 2026-08-29T16:46:16.166187+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12953**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T16:41:03.906718+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=77970.1
+- 更新: 2026-08-29T16:46:06.341905+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=77988.7
 - Funnel: target 1023 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1
+- Strict後reject: 4h RSI 84.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +22.88% | $4,975,341.32 |
-| DOS/USDT:USDT | +3.56% | $2,097,477.78 |
-| FONE/USDT:USDT | +2.81% | $1,277,727.20 |
-| TAC/USDT:USDT | +2.77% | $1,057,495.84 |
-| VELVET/USDT:USDT | +2.59% | $1,495,923.28 |
+| PROM/USDT:USDT | +20.65% | $5,159,130.82 |
+| DOS/USDT:USDT | +3.85% | $2,107,199.98 |
+| FONE/USDT:USDT | +3.69% | $1,279,595.04 |
+| FARTCOIN/USDT:USDT | +2.50% | $7,767,937.83 |
+| UNI/USDT:USDT | +2.43% | $7,334,586.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOS/USDT:USDT | below_1h_threshold | +3.67% | +3.49% |
-| FONE/USDT:USDT | below_1h_threshold | +3.09% | +2.90% |
-| TAC/USDT:USDT | below_1h_threshold | +2.78% | +2.59% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.60% | +2.41% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.15% | +1.96% |
+| DOS/USDT:USDT | below_1h_threshold | +3.86% | +3.64% |
+| FONE/USDT:USDT | below_1h_threshold | +3.69% | +3.48% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.60% | +2.39% |
+| UNI/USDT:USDT | below_1h_threshold | +2.43% | +2.22% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.37% | +2.16% |
 
 ## 7. 次に見るべき不足
 
