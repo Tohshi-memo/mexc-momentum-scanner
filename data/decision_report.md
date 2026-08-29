@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T11:56:29.606689+00:00
+- generated_at: 2026-08-29T12:01:14.113677+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12935**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T11:56:17.921124+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=77600.1
-- Funnel: target 1023 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 75.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-29T12:01:04.746578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77563.3
+- Funnel: target 1023 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +86.62% | $1,892,688.44 |
-| HNT/USDT:USDT | +77.65% | $8,756,383.76 |
-| 4/USDT:USDT | +39.20% | $2,473,101.16 |
-| LONGXIA/USDT:USDT | +22.02% | $2,120,720.11 |
-| O/USDT:USDT | +17.50% | $1,503,174.05 |
+| TOAD/USDT:USDT | +85.11% | $1,895,288.66 |
+| HNT/USDT:USDT | +73.29% | $8,834,567.29 |
+| 4/USDT:USDT | +38.36% | $2,485,268.96 |
+| LONGXIA/USDT:USDT | +21.75% | $2,008,187.09 |
+| O/USDT:USDT | +17.16% | $1,525,159.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VELVET/USDT:USDT | below_1h_threshold | +4.90% | +4.90% |
-| ONG/USDT:USDT | below_1h_threshold | +3.52% | +3.52% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.34% | +3.34% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.18% | +3.18% |
-| DOS/USDT:USDT | below_1h_threshold | +2.05% | +2.05% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
+| TOAD/USDT:USDT | below_1h_threshold | +0.44% | +0.44% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.39% | +0.39% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.36% |
+| XPL/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
 
 ## 7. 次に見るべき不足
 
