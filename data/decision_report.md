@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T14:06:14.592567+00:00
+- generated_at: 2026-08-29T14:11:17.855542+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12946**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T14:06:05.673209+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77683.0
-- Funnel: target 1023 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-29T14:11:08.657689+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=77635.2
+- Funnel: target 1023 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +89.85% | $2,097,255.37 |
-| HNT/USDT:USDT | +76.72% | $11,601,920.93 |
-| 4/USDT:USDT | +64.33% | $4,413,611.21 |
-| NIL/USDT:USDT | +26.13% | $4,656,537.02 |
-| BTR/USDT:USDT | +25.51% | $8,618,539.94 |
+| TOAD/USDT:USDT | +87.43% | $2,105,179.87 |
+| HNT/USDT:USDT | +77.28% | $11,656,557.01 |
+| 4/USDT:USDT | +60.45% | $4,469,769.21 |
+| NIL/USDT:USDT | +26.32% | $4,717,690.65 |
+| LONGXIA/USDT:USDT | +19.67% | $1,773,821.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOAD/USDT:USDT | below_1h_threshold | +3.30% | +3.29% |
-| HNT/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
-| NIL/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
-| BANK/USDT:USDT | below_1h_threshold | +1.51% | +1.49% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.84% | +0.83% |
+| TOAD/USDT:USDT | below_1h_threshold | +2.35% | +2.39% |
+| NIL/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
+| HNT/USDT:USDT | below_1h_threshold | +1.97% | +2.02% |
+| CYS/USDT:USDT | below_1h_threshold | +1.29% | +1.34% |
+| BANK/USDT:USDT | below_1h_threshold | +1.27% | +1.32% |
 
 ## 7. 次に見るべき不足
 
