@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T14:01:19.946812+00:00
+- generated_at: 2026-08-29T14:06:14.592567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12946**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T14:01:09.110274+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=77667.5
+- 更新: 2026-08-29T14:06:05.673209+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77683.0
 - Funnel: target 1023 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +83.96% | $2,084,568.18 |
-| HNT/USDT:USDT | +76.95% | $11,547,955.26 |
-| 4/USDT:USDT | +64.83% | $4,346,707.00 |
-| BTR/USDT:USDT | +33.72% | $8,463,193.40 |
-| NIL/USDT:USDT | +23.60% | $4,417,455.24 |
+| TOAD/USDT:USDT | +89.85% | $2,097,255.37 |
+| HNT/USDT:USDT | +76.72% | $11,601,920.93 |
+| 4/USDT:USDT | +64.33% | $4,413,611.21 |
+| NIL/USDT:USDT | +26.13% | $4,656,537.02 |
+| BTR/USDT:USDT | +25.51% | $8,618,539.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +1.73% | +1.74% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
-| BANK/USDT:USDT | below_1h_threshold | +0.49% | +0.50% |
-| DOS/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.28% | +0.29% |
+| TOAD/USDT:USDT | below_1h_threshold | +3.30% | +3.29% |
+| HNT/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
+| NIL/USDT:USDT | below_1h_threshold | +1.79% | +1.77% |
+| BANK/USDT:USDT | below_1h_threshold | +1.51% | +1.49% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.84% | +0.83% |
 
 ## 7. 次に見るべき不足
 
