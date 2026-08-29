@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T01:16:16.035183+00:00
+- generated_at: 2026-08-29T01:21:15.037371+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12895**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T01:16:07.145283+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=77620.7
+- 更新: 2026-08-29T01:21:05.809980+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77683.7
 - Funnel: target 1023 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +31.04% | $17,415,136.69 |
-| DEXE/USDT:USDT | +15.58% | $5,871,956.89 |
-| MAGMA/USDT:USDT | +14.39% | $10,216,048.28 |
-| TURBO/USDT:USDT | +11.50% | $1,843,733.97 |
-| ONG/USDT:USDT | +9.43% | $3,507,028.47 |
+| AKE/USDT:USDT | +33.35% | $17,529,196.97 |
+| DEXE/USDT:USDT | +15.95% | $5,890,437.12 |
+| MAGMA/USDT:USDT | +15.91% | $10,281,579.22 |
+| TURBO/USDT:USDT | +11.80% | $1,849,208.52 |
+| LONGXIA/USDT:USDT | +8.48% | $3,076,619.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +3.09% | +3.20% |
-| TUT/USDT:USDT | below_1h_threshold | +2.80% | +2.90% |
-| BTR/USDT:USDT | below_1h_threshold | +1.82% | +1.93% |
-| ONG/USDT:USDT | below_1h_threshold | +1.60% | +1.71% |
-| SKR/USDT:USDT | below_1h_threshold | +1.51% | +1.61% |
+| DEXE/USDT:USDT | below_1h_threshold | +3.62% | +3.64% |
+| TUT/USDT:USDT | below_1h_threshold | +3.05% | +3.08% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.56% | +2.58% |
+| TURBO/USDT:USDT | below_1h_threshold | +1.91% | +1.93% |
+| BTR/USDT:USDT | below_1h_threshold | +1.83% | +1.86% |
 
 ## 7. 次に見るべき不足
 
