@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T06:26:21.786017+00:00
+- generated_at: 2026-08-29T06:31:21.729341+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12905**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T06:26:09.359246+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=77392.8
+- 更新: 2026-08-29T06:31:09.846918+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=77428.2
 - Funnel: target 1023 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1
+- Strict後reject: 4h RSI 80.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +76.12% | $1,169,275.50 |
-| HNT/USDT:USDT | +43.11% | $1,049,739.57 |
-| BEAT/USDT:USDT | +17.31% | $12,428,730.09 |
-| AKE/USDT:USDT | +14.33% | $20,496,294.74 |
-| MAGMA/USDT:USDT | +13.96% | $11,967,359.68 |
+| TOAD/USDT:USDT | +70.90% | $1,177,550.31 |
+| HNT/USDT:USDT | +42.65% | $1,119,311.43 |
+| AKE/USDT:USDT | +16.21% | $20,559,340.07 |
+| BEAT/USDT:USDT | +15.96% | $12,571,695.26 |
+| MAGMA/USDT:USDT | +14.16% | $11,980,764.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.63% | +3.90% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.75% | +2.03% |
-| DEXE/USDT:USDT | below_1h_threshold | +1.73% | +2.00% |
-| NIL/USDT:USDT | below_1h_threshold | +1.63% | +1.91% |
-| SKR/USDT:USDT | below_1h_threshold | +1.48% | +1.76% |
+| BLESS/USDT:USDT | below_1h_threshold | +4.65% | +4.88% |
+| SKR/USDT:USDT | below_1h_threshold | +2.37% | +2.60% |
+| AKE/USDT:USDT | below_1h_threshold | +2.23% | +2.46% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.89% | +2.12% |
+| BTW/USDT:USDT | below_1h_threshold | +1.12% | +1.35% |
 
 ## 7. 次に見るべき不足
 
