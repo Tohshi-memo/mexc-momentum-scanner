@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T03:16:23.301644+00:00
+- generated_at: 2026-08-29T03:21:19.427746+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12898**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T03:16:14.006182+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77653.2
+- 更新: 2026-08-29T03:21:10.195531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77624.9
 - Funnel: target 1023 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +42.19% | $17,666,118.93 |
-| DEXE/USDT:USDT | +18.32% | $7,201,133.98 |
-| DOS/USDT:USDT | +13.01% | $1,312,245.66 |
-| MAGMA/USDT:USDT | +11.67% | $11,273,563.32 |
-| FONE/USDT:USDT | +10.25% | $1,699,815.21 |
+| AKE/USDT:USDT | +43.37% | $17,752,265.90 |
+| DEXE/USDT:USDT | +17.13% | $7,257,502.53 |
+| DOS/USDT:USDT | +15.07% | $1,325,397.53 |
+| MAGMA/USDT:USDT | +13.12% | $11,307,390.94 |
+| FONE/USDT:USDT | +10.09% | $1,706,302.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +2.69% | +2.68% |
-| NIL/USDT:USDT | below_1h_threshold | +1.91% | +1.90% |
-| ONG/USDT:USDT | below_1h_threshold | +1.46% | +1.44% |
-| XTZ/USDT:USDT | below_1h_threshold | +1.33% | +1.31% |
-| SKR/USDT:USDT | below_1h_threshold | +0.84% | +0.82% |
+| XTZ/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
+| NIL/USDT:USDT | below_1h_threshold | +1.77% | +1.79% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.62% | +1.65% |
+| DOS/USDT:USDT | below_1h_threshold | +1.29% | +1.32% |
+| SKR/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
 
 ## 7. 次に見るべき不足
 
