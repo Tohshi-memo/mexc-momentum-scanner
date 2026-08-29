@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T15:26:15.963441+00:00
+- generated_at: 2026-08-29T15:31:18.804861+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12950**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T15:26:06.609265+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77918.7
-- Funnel: target 1023 → liquid 138 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.1 >= 65=1, 4h RSI 74.0 >= 65=1
+- 更新: 2026-08-29T15:31:09.518789+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=77795.2
+- Funnel: target 1023 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +68.92% | $2,186,529.20 |
-| HNT/USDT:USDT | +65.92% | $13,277,059.55 |
-| 4/USDT:USDT | +36.76% | $5,545,936.88 |
-| LONGXIA/USDT:USDT | +25.33% | $1,654,129.98 |
-| ZKP/USDT:USDT | +24.44% | $1,047,581.66 |
+| TOAD/USDT:USDT | +70.64% | $2,189,231.03 |
+| HNT/USDT:USDT | +62.81% | $13,396,487.35 |
+| 4/USDT:USDT | +38.11% | $5,561,836.45 |
+| LONGXIA/USDT:USDT | +28.04% | $1,668,529.75 |
+| ZKP/USDT:USDT | +25.35% | $1,097,648.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GIGGLE/USDT:USDT | below_1h_threshold | +1.93% | +2.01% |
-| PROM/USDT:USDT | below_1h_threshold | +1.89% | +1.97% |
-| BTR/USDT:USDT | below_1h_threshold | +0.99% | +1.06% |
-| TURBO/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.58% | +0.66% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.71% | +4.95% |
+| BTR/USDT:USDT | below_1h_threshold | +2.46% | +2.70% |
+| PROM/USDT:USDT | below_1h_threshold | +1.42% | +1.66% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.37% | +1.61% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.19% | +1.42% |
 
 ## 7. 次に見るべき不足
 
