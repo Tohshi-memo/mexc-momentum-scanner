@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T22:46:31.318390+00:00
+- generated_at: 2026-08-29T22:51:38.763966+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12971**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.05** / 初期 $100.00 (+15.05%)
-- 確定: 2037件 (Win 597 / Loss 794 / Flat 646) / pending 0件 / skip 2406件
+- 確定: 2037件 (Win 597 / Loss 794 / Flat 646) / pending 0件 / skip 2408件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000405 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VELVET/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.05
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T22:46:17.858772+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=78161.4
-- Funnel: target 1023 → liquid 120 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 82.9 >= 65=1
+- 更新: 2026-08-29T22:51:25.431704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=78161.9
+- Funnel: target 1023 → liquid 120 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 81.9 >= 65=1, 4h RSI 81.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +28.50% | $1,238,110.70 |
-| PROM/USDT:USDT | +26.16% | $9,117,353.01 |
-| HNT/USDT:USDT | +23.11% | $21,260,624.75 |
-| BTW/USDT:USDT | +19.18% | $3,465,348.99 |
-| BTR/USDT:USDT | +14.82% | $9,837,889.16 |
+| FONE/USDT:USDT | +26.57% | $1,253,614.59 |
+| PROM/USDT:USDT | +25.81% | $9,221,865.97 |
+| BTW/USDT:USDT | +19.56% | $3,555,808.21 |
+| HNT/USDT:USDT | +18.71% | $21,442,641.45 |
+| BTR/USDT:USDT | +15.00% | $9,846,851.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +4.62% | +4.58% |
-| PONS/USDT:USDT | below_1h_threshold | +2.68% | +2.64% |
-| ENA/USDT:USDT | below_1h_threshold | +2.32% | +2.28% |
-| BTW/USDT:USDT | below_1h_threshold | +2.05% | +2.01% |
-| 4/USDT:USDT | below_1h_threshold | +1.82% | +1.78% |
+| BTR/USDT:USDT | below_1h_threshold | +4.72% | +4.68% |
+| ENA/USDT:USDT | below_1h_threshold | +2.82% | +2.79% |
+| BTW/USDT:USDT | below_1h_threshold | +2.35% | +2.31% |
+| 4/USDT:USDT | below_1h_threshold | +2.15% | +2.11% |
+| VET/USDT:USDT | below_1h_threshold | +1.66% | +1.62% |
 
 ## 7. 次に見るべき不足
 
