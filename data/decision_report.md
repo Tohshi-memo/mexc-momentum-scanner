@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T02:41:23.490289+00:00
+- generated_at: 2026-08-29T02:46:25.439461+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12898**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T02:41:15.607472+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=77635.8
-- Funnel: target 1023 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1, 4h RSI 90.9 >= 65=1
+- 更新: 2026-08-29T02:46:16.139166+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=77611.8
+- Funnel: target 1023 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +38.05% | $17,887,953.37 |
-| DEXE/USDT:USDT | +20.51% | $6,705,679.09 |
-| MAGMA/USDT:USDT | +17.13% | $11,101,098.84 |
-| DOS/USDT:USDT | +16.82% | $1,214,358.80 |
-| TURBO/USDT:USDT | +6.40% | $1,978,399.59 |
+| AKE/USDT:USDT | +37.76% | $17,920,017.91 |
+| DEXE/USDT:USDT | +22.24% | $6,777,374.79 |
+| DOS/USDT:USDT | +16.94% | $1,225,866.43 |
+| MAGMA/USDT:USDT | +16.16% | $11,116,694.88 |
+| TURBO/USDT:USDT | +6.10% | $1,979,088.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +3.09% | +3.25% |
-| AKE/USDT:USDT | below_1h_threshold | +1.96% | +2.12% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.57% | +1.73% |
-| TUT/USDT:USDT | below_1h_threshold | +1.55% | +1.71% |
-| ICP/USDT:USDT | below_1h_threshold | +1.00% | +1.17% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.40% | +4.59% |
+| SKR/USDT:USDT | below_1h_threshold | +2.56% | +2.75% |
+| AKE/USDT:USDT | below_1h_threshold | +2.08% | +2.27% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.75% | +1.94% |
+| TUT/USDT:USDT | below_1h_threshold | +1.28% | +1.47% |
 
 ## 7. 次に見るべき不足
 
