@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T16:36:17.474959+00:00
+- generated_at: 2026-08-29T16:41:12.969481+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12953**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T16:36:07.593197+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=77955.9
-- Funnel: target 1023 → liquid 137 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-08-29T16:41:03.906718+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=77970.1
+- Funnel: target 1023 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +25.26% | $4,762,703.30 |
-| FONE/USDT:USDT | +5.45% | $1,273,616.62 |
-| EDEN/USDT:USDT | +2.96% | $2,212,477.26 |
-| TAC/USDT:USDT | +2.81% | $1,056,567.62 |
-| DOS/USDT:USDT | +2.61% | $2,079,096.30 |
+| PROM/USDT:USDT | +22.88% | $4,975,341.32 |
+| DOS/USDT:USDT | +3.56% | $2,097,477.78 |
+| FONE/USDT:USDT | +2.81% | $1,277,727.20 |
+| TAC/USDT:USDT | +2.77% | $1,057,495.84 |
+| VELVET/USDT:USDT | +2.59% | $1,495,923.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDEN/USDT:USDT | below_1h_threshold | +3.06% | +2.89% |
-| TAC/USDT:USDT | below_1h_threshold | +2.78% | +2.61% |
-| DOS/USDT:USDT | below_1h_threshold | +2.55% | +2.38% |
-| DEXE/USDT:USDT | below_1h_threshold | +2.36% | +2.19% |
-| UNI/USDT:USDT | below_1h_threshold | +2.03% | +1.86% |
+| DOS/USDT:USDT | below_1h_threshold | +3.67% | +3.49% |
+| FONE/USDT:USDT | below_1h_threshold | +3.09% | +2.90% |
+| TAC/USDT:USDT | below_1h_threshold | +2.78% | +2.59% |
+| VELVET/USDT:USDT | below_1h_threshold | +2.60% | +2.41% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.15% | +1.96% |
 
 ## 7. 次に見るべき不足
 
