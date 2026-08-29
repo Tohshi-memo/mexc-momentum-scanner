@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T20:11:19.568597+00:00
+- generated_at: 2026-08-29T20:16:13.939937+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12963**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T20:11:10.385638+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78195.5
+- 更新: 2026-08-29T20:16:06.617880+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=78210.5
 - Funnel: target 1023 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +20.16% | $8,028,203.70 |
-| FONE/USDT:USDT | +12.62% | $1,210,027.05 |
-| HNT/USDT:USDT | +9.60% | $17,718,751.78 |
-| BTR/USDT:USDT | +8.99% | $9,638,621.97 |
-| BTW/USDT:USDT | +8.30% | $2,217,314.16 |
+| PROM/USDT:USDT | +18.72% | $8,068,220.56 |
+| HNT/USDT:USDT | +12.12% | $17,827,877.64 |
+| BTW/USDT:USDT | +9.08% | $2,244,459.71 |
+| BTR/USDT:USDT | +8.15% | $9,655,447.29 |
+| FONE/USDT:USDT | +7.38% | $1,218,093.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.09% |
-| 4/USDT:USDT | below_1h_threshold | +1.10% | +1.05% |
-| O/USDT:USDT | below_1h_threshold | +1.09% | +1.04% |
-| BTR/USDT:USDT | below_1h_threshold | +1.06% | +1.01% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.99% | +0.93% |
+| HNT/USDT:USDT | below_1h_threshold | +1.99% | +1.92% |
+| O/USDT:USDT | below_1h_threshold | +1.17% | +1.10% |
+| KORU/USDT:USDT | below_1h_threshold | +1.15% | +1.08% |
+| CYS/USDT:USDT | below_1h_threshold | +1.06% | +0.99% |
+| 4/USDT:USDT | below_1h_threshold | +1.04% | +0.97% |
 
 ## 7. 次に見るべき不足
 
