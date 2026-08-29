@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T13:36:21.242913+00:00
+- generated_at: 2026-08-29T13:41:22.422851+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12943**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T13:36:11.398498+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=77642.3
+- 更新: 2026-08-29T13:41:12.439257+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=77635.3
 - Funnel: target 1023 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1, 4h RSI 81.2 >= 65=1
+- Strict後reject: 4h RSI 86.0 >= 65=1, 4h RSI 81.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +72.46% | $11,121,727.00 |
-| 4/USDT:USDT | +69.47% | $3,967,928.87 |
-| TOAD/USDT:USDT | +68.48% | $2,056,718.04 |
-| BTR/USDT:USDT | +33.29% | $8,605,614.09 |
-| LONGXIA/USDT:USDT | +21.15% | $1,941,682.27 |
+| HNT/USDT:USDT | +74.03% | $11,292,338.92 |
+| 4/USDT:USDT | +68.38% | $4,033,412.45 |
+| TOAD/USDT:USDT | +67.46% | $2,058,734.51 |
+| BTR/USDT:USDT | +34.53% | $8,654,594.16 |
+| LONGXIA/USDT:USDT | +21.82% | $1,944,709.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DEXE/USDT:USDT | below_1h_threshold | +3.26% | +3.15% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.69% | +2.58% |
-| CYS/USDT:USDT | below_1h_threshold | +2.67% | +2.57% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.34% | +2.23% |
-| VELVET/USDT:USDT | below_1h_threshold | +2.06% | +1.95% |
+| VELVET/USDT:USDT | below_1h_threshold | +3.85% | +3.75% |
+| CYS/USDT:USDT | below_1h_threshold | +3.35% | +3.26% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.86% | +2.76% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.76% | +2.66% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.64% | +2.55% |
 
 ## 7. 次に見るべき不足
 
