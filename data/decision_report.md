@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T03:01:07.269419+00:00
+- generated_at: 2026-08-29T03:06:15.979104+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12898**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T03:01:00.845814+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77649.3
+- 更新: 2026-08-29T03:06:07.005086+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77676.5
 - Funnel: target 1023 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +42.59% | $17,431,942.02 |
-| MAGMA/USDT:USDT | +15.84% | $11,129,762.38 |
-| DEXE/USDT:USDT | +14.49% | $7,049,954.72 |
-| DOS/USDT:USDT | +14.20% | $1,254,997.54 |
-| TURBO/USDT:USDT | +6.70% | $1,926,380.34 |
+| AKE/USDT:USDT | +42.85% | $17,538,522.24 |
+| MAGMA/USDT:USDT | +15.68% | $11,154,606.63 |
+| DEXE/USDT:USDT | +14.94% | $7,103,406.69 |
+| DOS/USDT:USDT | +12.57% | $1,283,666.82 |
+| TURBO/USDT:USDT | +7.60% | $1,928,993.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOS/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
-| TUT/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.19% | +0.18% |
-| ONG/USDT:USDT | below_1h_threshold | +0.18% | +0.18% |
-| XTZ/USDT:USDT | below_1h_threshold | +0.18% | +0.17% |
+| PROM/USDT:USDT | below_1h_threshold | +4.68% | +4.64% |
+| TURBO/USDT:USDT | below_1h_threshold | +0.65% | +0.61% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.50% | +0.45% |
+| ONG/USDT:USDT | below_1h_threshold | +0.45% | +0.40% |
+| AKE/USDT:USDT | below_1h_threshold | +0.43% | +0.39% |
 
 ## 7. 次に見るべき不足
 
