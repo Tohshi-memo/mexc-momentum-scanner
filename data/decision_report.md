@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T17:26:08.774132+00:00
+- generated_at: 2026-08-29T17:31:12.069073+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12955**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T17:26:01.370654+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77982.0
+- 更新: 2026-08-29T17:31:02.825397+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=77960.1
 - Funnel: target 1023 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +10.19% | $6,558,308.46 |
-| DOS/USDT:USDT | +5.49% | $2,242,532.82 |
-| UNI/USDT:USDT | +2.89% | $8,201,201.29 |
-| VELVET/USDT:USDT | +2.87% | $1,391,415.25 |
-| LIGHT/USDT:USDT | +2.80% | $3,874,588.43 |
+| PROM/USDT:USDT | +11.48% | $6,660,466.52 |
+| DOS/USDT:USDT | +5.92% | $2,249,430.13 |
+| FONE/USDT:USDT | +3.96% | $1,212,316.79 |
+| UNI/USDT:USDT | +3.01% | $8,208,739.88 |
+| LIGHT/USDT:USDT | +2.94% | $3,902,263.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +1.63% | +1.64% |
-| DOS/USDT:USDT | below_1h_threshold | +1.26% | +1.27% |
-| HEMI/USDT:USDT | below_1h_threshold | +1.23% | +1.24% |
-| COTI/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
-| LAB/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
+| NIL/USDT:USDT | below_1h_threshold | +1.96% | +2.00% |
+| DOS/USDT:USDT | below_1h_threshold | +1.64% | +1.68% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.63% | +1.67% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.14% | +1.18% |
+| LAB/USDT:USDT | below_1h_threshold | +0.68% | +0.71% |
 
 ## 7. 次に見るべき不足
 
