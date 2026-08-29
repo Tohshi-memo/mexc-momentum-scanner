@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T10:01:19.344823+00:00
+- generated_at: 2026-08-29T10:06:15.985779+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12921**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T10:01:10.090530+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77609.4
+- 更新: 2026-08-29T10:06:06.868784+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=77528.3
 - Funnel: target 1023 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +100.07% | $1,703,730.26 |
-| HNT/USDT:USDT | +69.30% | $3,572,462.79 |
-| O/USDT:USDT | +20.85% | $1,211,229.83 |
-| ONG/USDT:USDT | +19.43% | $3,855,451.78 |
-| COTI/USDT:USDT | +18.72% | $1,371,856.66 |
+| TOAD/USDT:USDT | +105.42% | $1,718,245.64 |
+| HNT/USDT:USDT | +67.73% | $3,699,077.76 |
+| O/USDT:USDT | +20.32% | $1,223,262.77 |
+| ONG/USDT:USDT | +18.92% | $3,900,146.73 |
+| COTI/USDT:USDT | +17.10% | $1,457,273.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +0.94% | +0.95% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.46% |
-| O/USDT:USDT | below_1h_threshold | +0.38% | +0.39% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.29% | +0.30% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.26% | +0.27% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.17% | +4.29% |
+| BTR/USDT:USDT | below_1h_threshold | +1.43% | +1.55% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.86% | +0.97% |
+| TOAD/USDT:USDT | below_1h_threshold | +0.46% | +0.58% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.45% | +0.57% |
 
 ## 7. 次に見るべき不足
 
