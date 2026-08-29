@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T21:41:13.851848+00:00
+- generated_at: 2026-08-29T21:46:13.757753+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12966**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T21:41:04.647626+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78049.6
+- 更新: 2026-08-29T21:46:06.169562+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=78068.3
 - Funnel: target 1023 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +24.55% | $8,695,649.64 |
-| BTW/USDT:USDT | +14.14% | $2,970,726.99 |
-| BTR/USDT:USDT | +8.51% | $9,770,635.13 |
-| HNT/USDT:USDT | +8.45% | $20,161,660.49 |
-| 4/USDT:USDT | +7.61% | $6,456,106.61 |
+| PROM/USDT:USDT | +24.48% | $8,781,684.92 |
+| BTW/USDT:USDT | +15.77% | $3,072,307.47 |
+| BTR/USDT:USDT | +9.47% | $9,786,109.69 |
+| HNT/USDT:USDT | +8.01% | $20,264,798.88 |
+| 4/USDT:USDT | +5.78% | $6,507,320.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.60% | +4.65% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.15% | +2.21% |
-| BTW/USDT:USDT | below_1h_threshold | +1.81% | +1.87% |
-| 4/USDT:USDT | below_1h_threshold | +1.50% | +1.56% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.37% | +1.43% |
+| PROM/USDT:USDT | below_1h_threshold | +4.16% | +4.19% |
+| BTW/USDT:USDT | below_1h_threshold | +3.27% | +3.30% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.31% | +2.34% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.96% | +2.00% |
+| SPX/USDT:USDT | below_1h_threshold | +1.07% | +1.11% |
 
 ## 7. 次に見るべき不足
 
