@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T23:41:20.261524+00:00
+- generated_at: 2026-08-29T23:46:26.600406+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12974**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T23:41:11.870513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=78226.9
+- 更新: 2026-08-29T23:46:17.240614+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78217.9
 - Funnel: target 1023 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 83.4 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +25.85% | $9,464,455.55 |
-| PONS/USDT:USDT | +19.50% | $1,152,475.69 |
-| HNT/USDT:USDT | +17.82% | $22,529,259.31 |
-| FONE/USDT:USDT | +17.58% | $1,252,707.52 |
-| BTR/USDT:USDT | +17.25% | $9,884,269.77 |
+| PROM/USDT:USDT | +26.05% | $9,483,215.79 |
+| PONS/USDT:USDT | +19.17% | $1,163,003.73 |
+| HNT/USDT:USDT | +18.13% | $22,591,998.90 |
+| BTR/USDT:USDT | +16.95% | $9,897,215.64 |
+| FONE/USDT:USDT | +14.93% | $1,258,057.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +4.87% | +4.83% |
-| CYS/USDT:USDT | below_1h_threshold | +4.67% | +4.63% |
-| POL/USDT:USDT | below_1h_threshold | +3.83% | +3.78% |
-| VET/USDT:USDT | below_1h_threshold | +2.74% | +2.70% |
-| BTR/USDT:USDT | below_1h_threshold | +1.33% | +1.29% |
+| CYS/USDT:USDT | below_1h_threshold | +4.99% | +4.95% |
+| POL/USDT:USDT | below_1h_threshold | +4.62% | +4.59% |
+| SKR/USDT:USDT | below_1h_threshold | +3.75% | +3.72% |
+| VET/USDT:USDT | below_1h_threshold | +3.21% | +3.18% |
+| LIT/USDT:USDT | below_1h_threshold | +1.61% | +1.58% |
 
 ## 7. 次に見るべき不足
 
