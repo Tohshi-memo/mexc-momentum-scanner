@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T01:46:16.053951+00:00
+- generated_at: 2026-08-29T01:51:26.571354+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12896**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T01:46:07.207930+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77773.4
-- Funnel: target 1023 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.9 >= 65=1
+- 更新: 2026-08-29T01:51:17.338812+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=77778.7
+- Funnel: target 1023 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +33.32% | $17,768,974.51 |
-| DEXE/USDT:USDT | +19.23% | $6,072,693.88 |
-| FONE/USDT:USDT | +12.54% | $1,638,495.56 |
-| MAGMA/USDT:USDT | +11.80% | $10,624,408.52 |
-| TURBO/USDT:USDT | +9.90% | $1,861,932.88 |
+| AKE/USDT:USDT | +33.80% | $17,798,649.46 |
+| DEXE/USDT:USDT | +18.82% | $6,183,865.24 |
+| MAGMA/USDT:USDT | +11.74% | $10,714,050.75 |
+| TURBO/USDT:USDT | +10.90% | $1,868,264.13 |
+| DOS/USDT:USDT | +10.63% | $1,015,570.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +3.74% | +3.65% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.34% | +3.25% |
-| BTR/USDT:USDT | below_1h_threshold | +2.19% | +2.10% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.22% | +1.13% |
-| SKR/USDT:USDT | below_1h_threshold | +1.18% | +1.09% |
+| DOS/USDT:USDT | below_1h_threshold | +4.89% | +4.79% |
+| TUT/USDT:USDT | below_1h_threshold | +3.76% | +3.67% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.66% | +2.56% |
+| BTR/USDT:USDT | below_1h_threshold | +2.00% | +1.90% |
+| SKR/USDT:USDT | below_1h_threshold | +1.72% | +1.63% |
 
 ## 7. 次に見るべき不足
 
