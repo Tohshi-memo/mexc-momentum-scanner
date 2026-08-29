@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T09:21:14.567227+00:00
+- generated_at: 2026-08-29T09:26:23.094578+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12916**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.52** / 初期 $100.00 (+16.52%)
-- 確定: 2012件 (Win 591 / Loss 775 / Flat 646) / pending 0件 / skip 2371件
+- 確定: 2012件 (Win 591 / Loss 775 / Flat 646) / pending 2件 / skip 2372件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000428 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: TOAD/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $116.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T09:21:05.404393+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77614.8
-- Funnel: target 1023 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-29T09:26:12.543947+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77608.7
+- Funnel: target 1023 → liquid 141 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 70.5 >= 65=1, 4h RSI 83.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +99.63% | $1,623,517.88 |
-| HNT/USDT:USDT | +42.69% | $2,433,362.24 |
-| BEAT/USDT:USDT | +24.74% | $18,422,164.85 |
-| ONG/USDT:USDT | +22.75% | $3,779,680.12 |
-| O/USDT:USDT | +16.68% | $1,100,939.30 |
+| TOAD/USDT:USDT | +100.05% | $1,629,197.76 |
+| HNT/USDT:USDT | +54.10% | $2,569,916.49 |
+| BEAT/USDT:USDT | +25.53% | $18,613,467.43 |
+| ONG/USDT:USDT | +21.05% | $3,819,732.42 |
+| O/USDT:USDT | +16.70% | $1,103,415.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +3.78% | +3.77% |
-| COTI/USDT:USDT | below_1h_threshold | +3.74% | +3.73% |
-| BTR/USDT:USDT | below_1h_threshold | +3.62% | +3.61% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.61% | +3.60% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.26% | +3.25% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.99% | +2.99% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.82% | +2.81% |
+| ONG/USDT:USDT | below_1h_threshold | +2.50% | +2.49% |
+| AKE/USDT:USDT | below_1h_threshold | +2.06% | +2.05% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.37% | +1.36% |
 
 ## 7. 次に見るべき不足
 
