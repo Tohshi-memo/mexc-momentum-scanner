@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T00:11:23.101196+00:00
+- generated_at: 2026-08-29T00:16:13.813832+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12894**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T00:11:12.183511+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77817.1
+- 更新: 2026-08-29T00:16:04.623690+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77783.0
 - Funnel: target 1023 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +41.83% | $15,969,979.28 |
-| MAGMA/USDT:USDT | +13.90% | $8,902,496.08 |
-| DEXE/USDT:USDT | +12.67% | $5,639,669.30 |
-| ONG/USDT:USDT | +9.09% | $3,855,213.56 |
-| TURBO/USDT:USDT | +8.70% | $1,812,295.67 |
+| AKE/USDT:USDT | +41.04% | $16,043,313.13 |
+| MAGMA/USDT:USDT | +14.69% | $8,926,324.36 |
+| DEXE/USDT:USDT | +12.39% | $5,671,607.42 |
+| TURBO/USDT:USDT | +8.30% | $1,814,564.26 |
+| ONG/USDT:USDT | +7.07% | $3,894,262.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +2.58% | +2.57% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.01% | +2.00% |
-| AKE/USDT:USDT | below_1h_threshold | +1.86% | +1.84% |
-| PROM/USDT:USDT | below_1h_threshold | +1.81% | +1.80% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.75% | +1.73% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.41% | +2.44% |
+| MERL/USDT:USDT | below_1h_threshold | +1.39% | +1.42% |
+| AKE/USDT:USDT | below_1h_threshold | +1.29% | +1.32% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.08% | +1.11% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.06% | +1.09% |
 
 ## 7. 次に見るべき不足
 
