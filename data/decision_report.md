@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-29T05:51:24.550576+00:00
+- generated_at: 2026-08-29T05:56:26.043746+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12901**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.96** / 初期 $100.00 (+15.96%)
-- 確定: 1997件 (Win 585 / Loss 766 / Flat 646) / pending 5件 / skip 2371件
+- 確定: 1997件 (Win 585 / Loss 766 / Flat 646) / pending 6件 / skip 2371件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000453 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MAGMA/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $115.96
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T05:51:15.248138+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77650.0
-- Funnel: target 1023 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.1 >= 65=1
+- 更新: 2026-08-29T05:56:16.180428+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=77589.3
+- Funnel: target 1023 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TOAD/USDT:USDT | +55.37% | $1,103,972.38 |
-| BEAT/USDT:USDT | +21.14% | $10,129,883.83 |
-| MAGMA/USDT:USDT | +13.05% | $12,027,517.67 |
-| AKE/USDT:USDT | +12.05% | $20,883,837.68 |
-| DOS/USDT:USDT | +11.07% | $1,724,549.16 |
+| TOAD/USDT:USDT | +53.83% | $1,109,609.90 |
+| BEAT/USDT:USDT | +22.66% | $10,391,567.78 |
+| MAGMA/USDT:USDT | +13.74% | $12,046,975.31 |
+| AKE/USDT:USDT | +13.35% | $20,926,641.12 |
+| DEXE/USDT:USDT | +11.21% | $8,015,969.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.66% | +4.62% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.95% | +2.91% |
-| SKR/USDT:USDT | below_1h_threshold | +2.01% | +1.97% |
-| DEXE/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
-| TURBO/USDT:USDT | below_1h_threshold | +0.88% | +0.84% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.38% | +4.42% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.87% | +1.91% |
+| DEXE/USDT:USDT | below_1h_threshold | +1.84% | +1.88% |
+| SKR/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
+| TURBO/USDT:USDT | below_1h_threshold | +0.98% | +1.02% |
 
 ## 7. 次に見るべき不足
 
