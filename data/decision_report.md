@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-29T19:21:12.841481+00:00
+- generated_at: 2026-08-29T19:26:25.380407+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **12962**
+- closed shadow trades: **12963**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=12962, expectancy=+0.01%
+- 全期間 MARKET基準: n=12963, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.41%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -35,7 +35,7 @@
 | LIMIT_2PCT_LONG | 16/20 | 80.0% | +2.80% | **+2.24%** |
 | MARKET_LONG | 20/20 | 100.0% | +1.60% | **+1.60%** |
 | LIMIT_3PCT_LONG | 13/20 | 65.0% | +2.35% | **+1.53%** |
-| LIMIT_8PCT_LONG | 6/20 | 30.0% | +2.70% | **+0.81%** |
+| LIMIT_FIB1272_LONG | 7/20 | 35.0% | +2.52% | **+0.88%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,19 +46,19 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$760.61** / 初期 $100.00 (+660.61%)
-- 確定: 4732件 (Win 1439 / Loss 1552 / Flat 1741) / skip 4791件
-- 成長率目線: 平均log +0.000429 / 幾何平均 +0.043% per trade / maxDD +8.46%
+- 残高: **$756.81** / 初期 $100.00 (+656.81%)
+- 確定: 4733件 (Win 1439 / Loss 1553 / Flat 1741) / skip 4791件
+- 成長率目線: 平均log +0.000428 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: HNT/USDT:USDT `MARKET_LONG` EXPIRED account +0.50% 残高後 $760.61
+- 最新: FONE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $756.81
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$167.03** / 初期 $100.00 (+67.03%)
-- 確定: 2046件 (Win 565 / Loss 489 / Flat 992) / skip 4327件
-- 成長率目線: 平均log +0.000251 / 幾何平均 +0.025% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1659 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: HNT/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +0.69% 残高後 $167.03
+- 残高: **$166.45** / 初期 $100.00 (+66.45%)
+- 確定: 2047件 (Win 565 / Loss 490 / Flat 992) / skip 4327件
+- 成長率目線: 平均log +0.000249 / 幾何平均 +0.025% per trade / maxDD +3.96%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1503 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: FONE/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.35% 残高後 $166.45
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-29T19:21:03.717249+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78265.8
+- 更新: 2026-08-29T19:26:14.241810+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=78234.5
 - Funnel: target 1023 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.1 >= 65=1
+- Strict後reject: 4h RSI 79.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +28.22% | $1,195,091.01 |
-| PROM/USDT:USDT | +20.51% | $7,661,911.06 |
-| HNT/USDT:USDT | +12.53% | $16,190,969.51 |
-| BTR/USDT:USDT | +9.08% | $9,779,998.92 |
-| PONS/USDT:USDT | +9.07% | $1,022,371.08 |
+| FONE/USDT:USDT | +24.86% | $1,205,341.85 |
+| PROM/USDT:USDT | +21.14% | $7,703,679.49 |
+| HNT/USDT:USDT | +10.08% | $16,299,339.68 |
+| PONS/USDT:USDT | +9.75% | $1,024,969.43 |
+| BTR/USDT:USDT | +7.08% | $9,806,420.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +4.03% | +3.84% |
-| FONE/USDT:USDT | below_1h_threshold | +1.67% | +1.48% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.49% | +1.30% |
-| BTR/USDT:USDT | below_1h_threshold | +1.31% | +1.12% |
-| PROM/USDT:USDT | below_1h_threshold | +1.05% | +0.87% |
+| HEMI/USDT:USDT | below_1h_threshold | +4.05% | +3.91% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.22% | +2.07% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.56% | +1.42% |
+| PROM/USDT:USDT | below_1h_threshold | +1.43% | +1.29% |
+| SPX/USDT:USDT | below_1h_threshold | +1.11% | +0.97% |
 
 ## 7. 次に見るべき不足
 
