@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T16:31:38.959382+00:00
+- generated_at: 2026-08-30T16:36:25.175929+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13082**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T16:31:24.635262+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=79019.6
+- 更新: 2026-08-30T16:36:14.558347+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=79130.3
 - Funnel: target 1026 → liquid 117 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.5 >= 65=1
+- Strict後reject: 4h RSI 86.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +17.12% | $1,478,179.14 |
-| SKR/USDT:USDT | +5.57% | $6,129,661.58 |
-| NIULAI/USDT:USDT | +5.29% | $12,689,134.01 |
-| SPX/USDT:USDT | +3.70% | $1,514,019.81 |
-| LIGHT/USDT:USDT | +3.49% | $1,441,190.48 |
+| FONE/USDT:USDT | +19.94% | $1,492,788.75 |
+| SKR/USDT:USDT | +5.44% | $6,193,480.07 |
+| HEMI/USDT:USDT | +5.22% | $1,047,572.76 |
+| UNI/USDT:USDT | +4.24% | $42,669,623.32 |
+| NIULAI/USDT:USDT | +4.22% | $12,789,620.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_relative_strength | +5.21% | +4.92% |
-| SPX/USDT:USDT | below_1h_threshold | +3.74% | +3.45% |
-| LIGHT/USDT:USDT | below_1h_threshold | +3.34% | +3.05% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.94% | +2.65% |
-| UNI/USDT:USDT | below_1h_threshold | +2.52% | +2.23% |
+| HEMI/USDT:USDT | below_relative_strength | +5.22% | +4.79% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.59% | +4.16% |
+| UNI/USDT:USDT | below_1h_threshold | +4.14% | +3.71% |
+| SPX/USDT:USDT | below_1h_threshold | +3.42% | +2.99% |
+| LIGHT/USDT:USDT | below_1h_threshold | +3.39% | +2.96% |
 
 ## 7. 次に見るべき不足
 
