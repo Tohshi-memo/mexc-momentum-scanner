@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T17:56:23.042516+00:00
+- generated_at: 2026-08-30T18:01:21.441996+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13087**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T17:56:12.995107+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=78965.4
-- Funnel: target 1026 → liquid 118 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.0 >= 65=1, 4h RSI 73.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-30T18:01:12.076915+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79014.4
+- Funnel: target 1026 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +27.13% | $1,663,158.48 |
-| HEMI/USDT:USDT | +10.79% | $1,179,750.84 |
-| SKR/USDT:USDT | +8.35% | $7,047,178.07 |
-| LIGHT/USDT:USDT | +6.23% | $1,337,134.69 |
-| UNI/USDT:USDT | +5.50% | $46,027,804.23 |
+| FONE/USDT:USDT | +27.02% | $1,652,999.05 |
+| HEMI/USDT:USDT | +10.92% | $1,150,591.82 |
+| SKR/USDT:USDT | +7.80% | $7,063,317.95 |
+| LIGHT/USDT:USDT | +6.50% | $1,202,992.41 |
+| UNI/USDT:USDT | +5.40% | $44,500,721.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.07% | +3.50% |
-| LIGHT/USDT:USDT | below_1h_threshold | +2.37% | +2.80% |
-| CYS/USDT:USDT | below_1h_threshold | +1.65% | +2.08% |
-| UNI/USDT:USDT | below_1h_threshold | +1.38% | +1.80% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.06% | +1.49% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.27% | +0.23% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +0.18% | +0.15% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +0.17% | +0.13% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +0.16% | +0.12% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.15% | +0.12% |
 
 ## 7. 次に見るべき不足
 
