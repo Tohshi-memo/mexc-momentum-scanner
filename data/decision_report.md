@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T09:06:22.791470+00:00
+- generated_at: 2026-08-30T09:11:14.921426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13042**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T09:06:11.452298+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78056.0
-- Funnel: target 1023 → liquid 120 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-30T09:11:05.625285+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=78050.0
+- Funnel: target 1023 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +94.00% | $4,401,912.76 |
-| HNT/USDT:USDT | +78.12% | $40,678,063.08 |
-| PONS/USDT:USDT | +70.17% | $1,746,420.65 |
-| FONE/USDT:USDT | +56.94% | $1,461,326.76 |
-| SKR/USDT:USDT | +32.80% | $1,831,052.50 |
+| NIULAI/USDT:USDT | +89.39% | $4,561,742.05 |
+| HNT/USDT:USDT | +80.36% | $40,912,355.61 |
+| PONS/USDT:USDT | +69.68% | $1,752,741.60 |
+| FONE/USDT:USDT | +51.59% | $1,466,745.51 |
+| PROM/USDT:USDT | +32.16% | $16,035,183.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +1.76% | +1.75% |
-| PONS/USDT:USDT | below_1h_threshold | +1.11% | +1.10% |
-| ZKC/USDT:USDT | below_1h_threshold | +0.93% | +0.92% |
-| SKR/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| O/USDT:USDT | below_1h_threshold | +0.84% | +0.83% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.25% | +2.25% |
+| HNT/USDT:USDT | below_1h_threshold | +1.44% | +1.44% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.42% | +1.42% |
+| O/USDT:USDT | below_1h_threshold | +1.29% | +1.29% |
+| PROM/USDT:USDT | below_1h_threshold | +1.21% | +1.21% |
 
 ## 7. 次に見るべき不足
 
