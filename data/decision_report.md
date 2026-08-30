@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T17:11:21.978688+00:00
+- generated_at: 2026-08-30T17:16:14.702427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13087**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T17:11:08.812572+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=79100.1
+- 更新: 2026-08-30T17:16:05.420980+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=79107.2
 - Funnel: target 1026 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +13.00% | $1,546,256.28 |
-| SKR/USDT:USDT | +10.40% | $6,496,894.99 |
-| HEMI/USDT:USDT | +9.22% | $1,074,294.49 |
-| UNI/USDT:USDT | +4.10% | $43,576,174.13 |
-| LIGHT/USDT:USDT | +4.10% | $1,290,732.03 |
+| FONE/USDT:USDT | +17.69% | $1,554,638.87 |
+| SKR/USDT:USDT | +10.65% | $6,610,485.73 |
+| HEMI/USDT:USDT | +9.71% | $1,082,205.84 |
+| UNI/USDT:USDT | +3.66% | $43,651,927.85 |
+| BLESS/USDT:USDT | +3.40% | $2,745,975.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +2.77% | +3.03% |
-| PONS/USDT:USDT | below_1h_threshold | +2.56% | +2.82% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.53% | +1.79% |
-| CRV/USDT:USDT | below_1h_threshold | +0.87% | +1.13% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +0.64% | +0.90% |
+| SKR/USDT:USDT | below_1h_threshold | +3.00% | +3.25% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.26% | +2.51% |
+| FONE/USDT:USDT | below_1h_threshold | +1.91% | +2.16% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.09% | +1.34% |
+| CRV/USDT:USDT | below_1h_threshold | +0.78% | +1.03% |
 
 ## 7. 次に見るべき不足
 
