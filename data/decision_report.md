@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T21:31:14.478061+00:00
+- generated_at: 2026-08-30T21:36:16.699595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13104**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2083件 (Win 610 / Loss 812 / Flat 661) / pending 0件 / skip 2491件
+- 確定: 2083件 (Win 610 / Loss 812 / Flat 661) / pending 0件 / skip 2492件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000230 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T21:31:05.030314+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=78641.0
+- 更新: 2026-08-30T21:36:07.061478+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=78679.4
 - Funnel: target 1026 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.1 >= 65=1
+- Strict後reject: 4h RSI 71.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +41.30% | $1,736,452.75 |
-| SKR/USDT:USDT | +38.45% | $13,237,734.07 |
-| HEMI/USDT:USDT | +27.63% | $1,576,658.60 |
-| PONS/USDT:USDT | +22.14% | $2,212,614.00 |
-| ZORA/USDT:USDT | +20.08% | $1,161,655.66 |
+| FONE/USDT:USDT | +43.44% | $1,757,410.04 |
+| SKR/USDT:USDT | +39.31% | $13,340,547.03 |
+| HEMI/USDT:USDT | +29.31% | $1,609,939.10 |
+| PONS/USDT:USDT | +21.29% | $2,217,014.14 |
+| ZORA/USDT:USDT | +14.40% | $1,265,525.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +3.97% | +3.86% |
-| TNSR/USDT:USDT | below_1h_threshold | +3.56% | +3.46% |
-| PONS/USDT:USDT | below_1h_threshold | +3.14% | +3.04% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.19% | +2.08% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.14% | +2.04% |
+| TNSR/USDT:USDT | below_1h_threshold | +4.34% | +4.19% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.52% | +3.37% |
+| PONS/USDT:USDT | below_1h_threshold | +2.96% | +2.81% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.40% | +2.25% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.37% | +2.22% |
 
 ## 7. 次に見るべき不足
 
