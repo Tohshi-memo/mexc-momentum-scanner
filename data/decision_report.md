@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T12:41:29.783508+00:00
+- generated_at: 2026-08-30T12:46:26.772553+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13058**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T12:41:20.279687+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.53% price=78559.4
+- 更新: 2026-08-30T12:46:17.011798+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.62% price=78626.4
 - Funnel: target 1026 → liquid 121 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.0 >= 65=1, 4h RSI 72.0 >= 65=1
+- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 85.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +109.21% | $7,525,753.26 |
-| HNT/USDT:USDT | +89.24% | $44,935,979.90 |
-| SKR/USDT:USDT | +66.10% | $4,034,857.79 |
-| PONS/USDT:USDT | +61.55% | $1,810,962.87 |
-| ZKC/USDT:USDT | +50.07% | $4,821,094.11 |
+| NIULAI/USDT:USDT | +109.03% | $7,558,167.60 |
+| HNT/USDT:USDT | +89.73% | $45,211,868.70 |
+| SKR/USDT:USDT | +65.31% | $4,125,642.89 |
+| PONS/USDT:USDT | +63.23% | $1,819,378.10 |
+| ZKC/USDT:USDT | +52.23% | $4,911,060.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.84% | +2.30% |
-| LAB/USDT:USDT | below_1h_threshold | +2.20% | +1.67% |
-| O/USDT:USDT | below_1h_threshold | +2.15% | +1.61% |
-| SPX/USDT:USDT | below_1h_threshold | +2.03% | +1.49% |
-| PROM/USDT:USDT | below_1h_threshold | +2.00% | +1.47% |
+| PONS/USDT:USDT | below_1h_threshold | +3.09% | +2.47% |
+| O/USDT:USDT | below_1h_threshold | +2.35% | +1.73% |
+| DEXE/USDT:USDT | below_1h_threshold | +2.21% | +1.59% |
+| SPX/USDT:USDT | below_1h_threshold | +2.15% | +1.53% |
+| BCH/USDT:USDT | below_1h_threshold | +1.73% | +1.11% |
 
 ## 7. 次に見るべき不足
 
