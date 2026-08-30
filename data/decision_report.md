@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T06:11:25.452867+00:00
+- generated_at: 2026-08-30T06:16:21.123047+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13026**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.23** / 初期 $100.00 (+17.23%)
-- 確定: 2069件 (Win 608 / Loss 802 / Flat 659) / pending 4件 / skip 2425件
+- 確定: 2069件 (Win 608 / Loss 802 / Flat 659) / pending 6件 / skip 2425件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000313 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKR/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $117.23
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T06:11:16.047168+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=78088.4
-- Funnel: target 1023 → liquid 116 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-30T06:16:10.127036+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78099.7
+- Funnel: target 1023 → liquid 116 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +89.76% | $34,181,975.54 |
-| NIULAI/USDT:USDT | +59.27% | $2,698,649.87 |
-| FONE/USDT:USDT | +49.94% | $1,426,559.68 |
-| PONS/USDT:USDT | +47.99% | $1,545,917.58 |
-| SKR/USDT:USDT | +34.88% | $1,833,407.17 |
+| HNT/USDT:USDT | +83.73% | $34,470,895.16 |
+| NIULAI/USDT:USDT | +61.21% | $2,722,115.65 |
+| FONE/USDT:USDT | +57.11% | $1,430,459.80 |
+| PONS/USDT:USDT | +52.38% | $1,553,212.84 |
+| SKR/USDT:USDT | +33.39% | $1,849,391.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MOVR/USDT:USDT | below_1h_threshold | +3.44% | +3.47% |
-| PONS/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
-| 4/USDT:USDT | below_1h_threshold | +1.76% | +1.79% |
-| CYS/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
-| SKR/USDT:USDT | below_1h_threshold | +1.04% | +1.06% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.96% | +2.97% |
+| FONE/USDT:USDT | below_1h_threshold | +2.93% | +2.94% |
+| 4/USDT:USDT | below_1h_threshold | +1.65% | +1.66% |
+| DOS/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
+| O/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
 
 ## 7. 次に見るべき不足
 
