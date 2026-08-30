@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T21:56:28.400387+00:00
+- generated_at: 2026-08-30T22:01:25.600191+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13106**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T21:56:16.391365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=78618.0
-- Funnel: target 1026 → liquid 129 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.7 >= 65=1, 4h RSI 71.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-30T22:01:18.889998+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78556.2
+- Funnel: target 1026 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +41.85% | $13,740,349.84 |
-| HEMI/USDT:USDT | +32.69% | $1,709,916.90 |
-| FONE/USDT:USDT | +30.35% | $1,847,089.04 |
-| PONS/USDT:USDT | +28.87% | $2,253,487.01 |
-| ZORA/USDT:USDT | +14.16% | $1,361,278.34 |
+| SKR/USDT:USDT | +41.36% | $13,791,076.88 |
+| HEMI/USDT:USDT | +32.83% | $1,701,333.52 |
+| FONE/USDT:USDT | +31.85% | $1,811,119.69 |
+| PONS/USDT:USDT | +27.02% | $2,231,733.34 |
+| ZORA/USDT:USDT | +15.00% | $1,377,300.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TNSR/USDT:USDT | below_1h_threshold | +3.54% | +3.46% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.05% | +2.98% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +2.85% | +2.78% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.39% | +2.32% |
-| AKE/USDT:USDT | below_1h_threshold | +1.94% | +1.86% |
+| ZORA/USDT:USDT | below_1h_threshold | +0.72% | +0.80% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.37% | +0.45% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.34% | +0.42% |
+| BTW/USDT:USDT | below_1h_threshold | +0.24% | +0.33% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.23% | +0.32% |
 
 ## 7. 次に見るべき不足
 
