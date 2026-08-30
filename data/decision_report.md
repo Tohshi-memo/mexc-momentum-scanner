@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T18:16:23.623496+00:00
+- generated_at: 2026-08-30T18:21:10.918670+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13089**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T18:16:10.696140+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78836.0
-- Funnel: target 1026 → liquid 117 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-30T18:21:01.506619+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=78840.0
+- Funnel: target 1026 → liquid 118 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +17.57% | $1,688,605.64 |
-| HEMI/USDT:USDT | +12.95% | $1,182,708.80 |
-| SKR/USDT:USDT | +9.22% | $7,196,325.10 |
-| LIGHT/USDT:USDT | +6.06% | $1,221,468.97 |
-| PONS/USDT:USDT | +5.45% | $1,740,453.41 |
+| FONE/USDT:USDT | +16.34% | $1,695,275.14 |
+| HEMI/USDT:USDT | +13.42% | $1,192,348.90 |
+| SKR/USDT:USDT | +10.03% | $7,264,571.34 |
+| TNSR/USDT:USDT | +7.39% | $1,022,223.36 |
+| UNI/USDT:USDT | +5.40% | $45,721,323.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +1.55% | +1.74% |
-| HEMI/USDT:USDT | below_1h_threshold | +1.13% | +1.32% |
-| DOS/USDT:USDT | below_1h_threshold | +1.06% | +1.25% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.59% | +0.78% |
-| DASH/USDT:USDT | below_1h_threshold | +0.43% | +0.61% |
+| SKR/USDT:USDT | below_1h_threshold | +1.95% | +2.13% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.81% | +1.99% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +1.59% | +1.77% |
+| DASH/USDT:USDT | below_1h_threshold | +1.54% | +1.72% |
+| ARB/USDT:USDT | below_1h_threshold | +1.22% | +1.40% |
 
 ## 7. 次に見るべき不足
 
