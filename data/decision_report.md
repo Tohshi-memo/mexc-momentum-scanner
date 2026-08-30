@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T02:36:26.233634+00:00
+- generated_at: 2026-08-30T02:41:28.347771+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **12995**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.74** / 初期 $100.00 (+15.74%)
-- 確定: 2043件 (Win 599 / Loss 794 / Flat 650) / pending 6件 / skip 2421件
+- 確定: 2043件 (Win 599 / Loss 794 / Flat 650) / pending 6件 / skip 2423件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000507 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIULAI/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $115.74
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T02:36:14.025372+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78014.9
-- Funnel: target 1023 → liquid 119 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.3 >= 65=1, 4h RSI 87.1 >= 65=1, 4h RSI 84.7 >= 65=1
+- 更新: 2026-08-30T02:41:17.284044+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78071.8
+- Funnel: target 1023 → liquid 119 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.0 >= 65=1, 4h RSI 87.6 >= 65=1, 4h RSI n/a=1, 4h RSI 72.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +70.44% | $1,164,295.03 |
-| PONS/USDT:USDT | +41.67% | $1,358,388.48 |
-| PROM/USDT:USDT | +39.08% | $12,545,500.12 |
-| FONE/USDT:USDT | +35.66% | $1,265,327.77 |
-| HNT/USDT:USDT | +31.81% | $25,983,788.32 |
+| NIULAI/USDT:USDT | +66.66% | $1,220,105.35 |
+| FONE/USDT:USDT | +47.85% | $1,274,335.69 |
+| PONS/USDT:USDT | +42.22% | $1,365,389.74 |
+| PROM/USDT:USDT | +40.07% | $12,704,474.81 |
+| HNT/USDT:USDT | +30.18% | $26,027,727.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +4.06% | +4.11% |
-| MOVR/USDT:USDT | below_1h_threshold | +3.70% | +3.75% |
-| BTR/USDT:USDT | below_1h_threshold | +3.37% | +3.41% |
-| PROM/USDT:USDT | below_1h_threshold | +2.78% | +2.82% |
-| BICO/USDT:USDT | below_1h_threshold | +2.36% | +2.40% |
+| HNT/USDT:USDT | below_1h_threshold | +4.38% | +4.35% |
+| PROM/USDT:USDT | below_1h_threshold | +3.57% | +3.54% |
+| BTR/USDT:USDT | below_1h_threshold | +3.23% | +3.20% |
+| MOVR/USDT:USDT | below_1h_threshold | +2.48% | +2.45% |
+| BICO/USDT:USDT | below_1h_threshold | +2.36% | +2.33% |
 
 ## 7. 次に見るべき不足
 
