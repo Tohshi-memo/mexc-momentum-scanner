@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T21:01:18.684616+00:00
+- generated_at: 2026-08-30T21:06:08.728030+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13104**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T21:01:07.575195+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78514.9
-- Funnel: target 1026 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-30T21:06:01.346830+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=78411.0
+- Funnel: target 1026 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +43.15% | $12,338,290.69 |
-| FONE/USDT:USDT | +36.05% | $1,632,268.98 |
-| HEMI/USDT:USDT | +24.65% | $1,412,698.25 |
-| PONS/USDT:USDT | +18.20% | $2,175,113.76 |
-| LIT/USDT:USDT | +6.60% | $3,787,408.07 |
+| SKR/USDT:USDT | +42.97% | $12,526,050.80 |
+| FONE/USDT:USDT | +30.95% | $1,654,647.83 |
+| HEMI/USDT:USDT | +24.67% | $1,478,874.16 |
+| PONS/USDT:USDT | +18.26% | $2,185,835.92 |
+| LIT/USDT:USDT | +6.98% | $3,823,969.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USOIL/USDT:USDT | below_1h_threshold | +0.80% | +0.86% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.73% | +0.79% |
-| ZEN/USDT:USDT | below_1h_threshold | +0.37% | +0.43% |
-| CYS/USDT:USDT | below_1h_threshold | +0.36% | +0.42% |
-| PONS/USDT:USDT | below_1h_threshold | +0.35% | +0.41% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.80% | +0.99% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.73% | +0.92% |
+| PONS/USDT:USDT | below_1h_threshold | +0.39% | +0.58% |
+| LIT/USDT:USDT | below_1h_threshold | +0.37% | +0.56% |
+| LIGHT/USDT:USDT | below_1h_threshold | +0.32% | +0.52% |
 
 ## 7. 次に見るべき不足
 
