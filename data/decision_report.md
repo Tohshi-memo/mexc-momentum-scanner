@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T09:21:18.354463+00:00
+- generated_at: 2026-08-30T09:26:21.888073+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13042**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T09:21:08.934489+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78061.7
+- 更新: 2026-08-30T09:26:12.570086+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78014.3
 - Funnel: target 1023 → liquid 121 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.6 >= 65=1
+- Strict後reject: 4h RSI 86.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +87.76% | $4,688,243.16 |
-| HNT/USDT:USDT | +78.72% | $41,139,516.90 |
-| PONS/USDT:USDT | +73.11% | $1,761,287.16 |
-| FONE/USDT:USDT | +53.80% | $1,473,665.48 |
-| ZKC/USDT:USDT | +35.42% | $1,219,201.40 |
+| NIULAI/USDT:USDT | +87.88% | $4,737,200.63 |
+| HNT/USDT:USDT | +75.91% | $41,378,933.22 |
+| PONS/USDT:USDT | +69.19% | $1,768,048.38 |
+| FONE/USDT:USDT | +52.70% | $1,475,213.00 |
+| ZKC/USDT:USDT | +37.83% | $1,249,543.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.86% | +2.84% |
-| EDEN/USDT:USDT | below_1h_threshold | +1.99% | +1.98% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.41% | +1.39% |
-| ZKP/USDT:USDT | below_1h_threshold | +1.13% | +1.11% |
-| O/USDT:USDT | below_1h_threshold | +1.07% | +1.05% |
+| EDEN/USDT:USDT | below_1h_threshold | +1.40% | +1.45% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.39% | +1.43% |
+| ZKP/USDT:USDT | below_1h_threshold | +1.35% | +1.39% |
+| 4/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
+| O/USDT:USDT | below_1h_threshold | +1.07% | +1.11% |
 
 ## 7. 次に見るべき不足
 
