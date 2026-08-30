@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-30T21:21:15.144339+00:00
+- generated_at: 2026-08-30T21:26:22.191153+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13104**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2083件 (Win 610 / Loss 812 / Flat 661) / pending 0件 / skip 2490件
+- 確定: 2083件 (Win 610 / Loss 812 / Flat 661) / pending 0件 / skip 2491件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000230 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T21:21:05.886080+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78585.2
-- Funnel: target 1026 → liquid 128 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-30T21:26:12.754657+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78545.9
+- Funnel: target 1026 → liquid 129 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +40.92% | $12,938,233.38 |
-| HEMI/USDT:USDT | +26.80% | $1,539,854.41 |
-| FONE/USDT:USDT | +24.81% | $1,686,192.70 |
-| ZORA/USDT:USDT | +19.62% | $1,058,004.45 |
-| PONS/USDT:USDT | +17.29% | $2,204,991.38 |
+| SKR/USDT:USDT | +36.59% | $13,095,475.06 |
+| FONE/USDT:USDT | +28.18% | $1,699,787.45 |
+| HEMI/USDT:USDT | +26.09% | $1,556,963.40 |
+| ZORA/USDT:USDT | +20.37% | $1,135,056.02 |
+| PONS/USDT:USDT | +17.98% | $2,207,796.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +4.82% | +4.79% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.78% | +1.75% |
-| ZKSYNC/USDT:USDT | below_1h_threshold | +1.78% | +1.75% |
-| UAI/USDT:USDT | below_1h_threshold | +1.65% | +1.62% |
-| HEMI/USDT:USDT | below_1h_threshold | +1.53% | +1.50% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.32% | +2.34% |
+| UAI/USDT:USDT | below_1h_threshold | +2.04% | +2.06% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.78% | +1.80% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.15% | +1.17% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
 
 ## 7. 次に見るべき不足
 
