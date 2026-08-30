@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-30T12:16:19.502017+00:00
+- generated_at: 2026-08-30T12:21:23.374938+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13056**
+- closed shadow trades: **13057**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13056, expectancy=+0.01%
+- 全期間 MARKET基準: n=13057, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$774.74** / 初期 $100.00 (+674.74%)
-- 確定: 4807件 (Win 1463 / Loss 1584 / Flat 1760) / skip 4810件
+- 確定: 4807件 (Win 1463 / Loss 1584 / Flat 1760) / skip 4811件
 - 成長率目線: 平均log +0.000426 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PONS/USDT:USDT `LIMIT_4PCT_LONG` SL_HIT account -0.50% 残高後 $774.74
@@ -55,10 +55,10 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$171.79** / 初期 $100.00 (+71.79%)
-- 確定: 2140件 (Win 593 / Loss 519 / Flat 1028) / skip 4327件
+- 確定: 2141件 (Win 593 / Loss 519 / Flat 1029) / skip 4327件
 - 成長率目線: 平均log +0.000253 / 幾何平均 +0.025% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: HNT/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $171.79
+- 最新: NIULAI/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $171.79
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-30T12:16:10.169289+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.50% price=78535.7
-- Funnel: target 1026 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-08-30T12:21:12.184657+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=78527.8
+- Funnel: target 1026 → liquid 120 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +98.80% | $7,063,942.26 |
-| HNT/USDT:USDT | +93.70% | $43,803,782.95 |
-| PONS/USDT:USDT | +58.50% | $1,780,605.65 |
-| ZKC/USDT:USDT | +54.25% | $4,639,297.26 |
-| SKR/USDT:USDT | +47.43% | $3,713,335.07 |
+| NIULAI/USDT:USDT | +102.27% | $7,232,035.22 |
+| HNT/USDT:USDT | +95.51% | $44,031,685.73 |
+| ZKC/USDT:USDT | +54.40% | $4,682,863.07 |
+| PONS/USDT:USDT | +53.64% | $1,786,034.51 |
+| SKR/USDT:USDT | +47.13% | $3,750,299.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.86% | +4.35% |
-| STX/USDT:USDT | below_1h_threshold | +2.32% | +1.82% |
-| HNT/USDT:USDT | below_1h_threshold | +2.20% | +1.70% |
-| SPX/USDT:USDT | below_1h_threshold | +2.13% | +1.63% |
-| PROM/USDT:USDT | below_1h_threshold | +1.80% | +1.29% |
+| UAI/USDT:USDT | below_1h_threshold | +4.51% | +4.02% |
+| HNT/USDT:USDT | below_1h_threshold | +2.69% | +2.19% |
+| UNI/USDT:USDT | below_1h_threshold | +2.39% | +1.90% |
+| STX/USDT:USDT | below_1h_threshold | +2.28% | +1.79% |
+| PROM/USDT:USDT | below_1h_threshold | +2.22% | +1.72% |
 
 ## 7. 次に見るべき不足
 
