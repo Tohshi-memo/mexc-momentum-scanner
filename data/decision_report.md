@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T03:46:18.520032+00:00
+- generated_at: 2026-08-31T03:51:35.124326+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13129**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2517件
+- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2518件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000338 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZORA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T03:46:08.340775+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=77809.9
-- Funnel: target 1026 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1, 4h RSI 95.5 >= 65=1
+- 更新: 2026-08-31T03:51:22.146128+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=77772.8
+- Funnel: target 1026 → liquid 143 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.3 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 95.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +103.77% | $29,487,160.05 |
-| HEMI/USDT:USDT | +45.25% | $3,832,514.35 |
-| ZORA/USDT:USDT | +36.18% | $3,453,971.39 |
-| BASECAT/USDT:USDT | +32.80% | $1,517,626.77 |
-| PONS/USDT:USDT | +9.72% | $2,138,210.38 |
+| SKR/USDT:USDT | +98.82% | $29,742,551.56 |
+| HEMI/USDT:USDT | +47.37% | $3,847,006.23 |
+| ZORA/USDT:USDT | +37.00% | $3,491,959.88 |
+| BASECAT/USDT:USDT | +36.10% | $1,519,937.14 |
+| PONS/USDT:USDT | +11.32% | $2,140,949.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +4.36% | +3.88% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.57% | +3.09% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.23% | +1.75% |
-| XPL/USDT:USDT | below_1h_threshold | +1.84% | +1.36% |
-| XMR/USDT:USDT | below_1h_threshold | +1.77% | +1.29% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.46% | +3.03% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.64% | +2.21% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.02% | +1.59% |
+| XPL/USDT:USDT | below_1h_threshold | +1.90% | +1.47% |
+| STX/USDT:USDT | below_1h_threshold | +1.75% | +1.32% |
 
 ## 7. 次に見るべき不足
 
