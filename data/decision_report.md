@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-08-31T13:01:27.302922+00:00
+- generated_at: 2026-08-31T13:06:20.789005+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13174**
+- closed shadow trades: **13175**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.58% / filled 20/20。**
-- 全期間 MARKET基準: n=13174, expectancy=+0.02%
+- 全期間 MARKET基準: n=13175, expectancy=+0.02%
 - 直近20件 MARKET基準: n=20, expectancy=+2.58%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,10 +22,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.58% | **+2.58%** |
-| LIMIT_1PCT | 17/20 | 85.0% | +1.81% | **+1.54%** |
-| LIMIT_2PCT | 14/20 | 70.0% | +0.92% | **+0.65%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +1.89% | **+0.47%** |
+| LIMIT_1PCT | 17/20 | 85.0% | +1.87% | **+1.59%** |
+| LIMIT_2PCT | 14/20 | 70.0% | +1.07% | **+0.75%** |
 | LIMIT_7PCT | 3/20 | 15.0% | +2.80% | **+0.42%** |
+| LIMIT_6PCT | 4/20 | 20.0% | +1.89% | **+0.38%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$792.74** / 初期 $100.00 (+692.74%)
-- 確定: 4876件 (Win 1485 / Loss 1609 / Flat 1782) / skip 4859件
+- 確定: 4876件 (Win 1485 / Loss 1609 / Flat 1782) / skip 4860件
 - 成長率目線: 平均log +0.000425 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `MARKET` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: PONS/USDT:USDT `MARKET` SL_HIT account -0.50% 残高後 $792.74
@@ -55,23 +55,23 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$173.26** / 初期 $100.00 (+73.26%)
-- 確定: 2171件 (Win 602 / Loss 528 / Flat 1041) / skip 4414件
+- 確定: 2172件 (Win 602 / Loss 528 / Flat 1042) / skip 4414件
 - 成長率目線: 平均log +0.000253 / 幾何平均 +0.025% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0010 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: PONS/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $173.26
+- 最新: BASECAT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $173.26
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
 - 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2559件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000566 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000565 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZORA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T13:01:17.883424+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77942.9
+- 更新: 2026-08-31T13:06:11.850394+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=78029.9
 - Funnel: target 1028 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +56.90% | $53,436,825.11 |
-| HEMI/USDT:USDT | +43.38% | $8,218,341.13 |
-| BASECAT/USDT:USDT | +34.87% | $2,045,627.55 |
-| ZORA/USDT:USDT | +29.64% | $14,517,161.87 |
-| 0G/USDT:USDT | +26.56% | $6,193,515.14 |
+| SKR/USDT:USDT | +56.53% | $53,786,531.51 |
+| HEMI/USDT:USDT | +44.23% | $8,241,787.62 |
+| BASECAT/USDT:USDT | +36.18% | $2,051,496.14 |
+| ZORA/USDT:USDT | +29.92% | $14,640,203.40 |
+| 0G/USDT:USDT | +26.14% | $6,254,864.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DESTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.67% |
-| SKR/USDT:USDT | below_1h_threshold | +0.92% | +0.86% |
-| NOT/USDT:USDT | below_1h_threshold | +0.80% | +0.75% |
-| 0G/USDT:USDT | below_1h_threshold | +0.73% | +0.67% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.65% | +0.59% |
+| DESTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.56% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.96% | +0.80% |
+| BASECAT/USDT:USDT | below_1h_threshold | +0.85% | +0.68% |
+| SKR/USDT:USDT | below_1h_threshold | +0.84% | +0.67% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.69% | +0.53% |
 
 ## 7. 次に見るべき不足
 
