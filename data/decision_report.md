@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T12:41:31.405163+00:00
+- generated_at: 2026-08-31T12:46:26.444471+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13173**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T12:41:21.297599+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.63% price=77795.1
-- Funnel: target 1028 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-08-31T12:46:14.563039+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=77783.4
+- Funnel: target 1028 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +60.49% | $53,370,432.94 |
-| HEMI/USDT:USDT | +44.42% | $8,155,077.93 |
-| BASECAT/USDT:USDT | +33.90% | $2,035,955.17 |
-| ZORA/USDT:USDT | +32.12% | $14,308,319.69 |
-| 0G/USDT:USDT | +26.38% | $6,006,432.28 |
+| SKR/USDT:USDT | +58.63% | $53,537,028.03 |
+| HEMI/USDT:USDT | +42.93% | $8,176,584.96 |
+| BASECAT/USDT:USDT | +31.01% | $2,042,387.91 |
+| ZORA/USDT:USDT | +30.68% | $14,387,297.80 |
+| 0G/USDT:USDT | +25.59% | $6,074,806.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +2.72% | +3.34% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.66% | +2.28% |
-| STX/USDT:USDT | below_1h_threshold | +0.85% | +1.48% |
-| DESTOCK/USDT:USDT | below_1h_threshold | +0.78% | +1.41% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.76% | +1.39% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.66% | +2.30% |
+| DESTOCK/USDT:USDT | below_1h_threshold | +0.78% | +1.42% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.76% | +1.40% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.58% | +1.22% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.53% | +1.17% |
 
 ## 7. 次に見るべき不足
 
