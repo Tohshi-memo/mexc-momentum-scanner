@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T00:46:23.726543+00:00
+- generated_at: 2026-08-31T00:51:24.343873+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13115**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T00:46:11.623617+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=77960.7
-- Funnel: target 1026 → liquid 140 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.6 >= 65=1
+- 更新: 2026-08-31T00:51:12.163459+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.44% price=77983.4
+- Funnel: target 1026 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +48.88% | $1,327,294.49 |
-| SKR/USDT:USDT | +41.85% | $19,193,320.54 |
-| HEMI/USDT:USDT | +32.16% | $2,895,421.46 |
-| FONE/USDT:USDT | +21.47% | $1,853,745.10 |
-| ZORA/USDT:USDT | +12.25% | $1,905,149.28 |
+| BASECAT/USDT:USDT | +43.95% | $1,339,660.43 |
+| SKR/USDT:USDT | +42.22% | $19,279,787.91 |
+| HEMI/USDT:USDT | +32.06% | $2,901,141.05 |
+| FONE/USDT:USDT | +21.17% | $1,854,572.25 |
+| ZORA/USDT:USDT | +12.59% | $1,909,927.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEN/USDT:USDT | below_1h_threshold | +3.75% | +3.34% |
-| STX/USDT:USDT | below_1h_threshold | +3.25% | +2.83% |
-| CRV/USDT:USDT | below_1h_threshold | +2.64% | +2.23% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.64% | +2.22% |
-| FONE/USDT:USDT | below_1h_threshold | +2.30% | +1.89% |
+| BASECAT/USDT:USDT | below_1h_threshold | +4.89% | +4.45% |
+| STX/USDT:USDT | below_1h_threshold | +3.89% | +3.44% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.26% | +2.81% |
+| CRV/USDT:USDT | below_1h_threshold | +2.98% | +2.54% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.75% | +2.30% |
 
 ## 7. 次に見るべき不足
 
