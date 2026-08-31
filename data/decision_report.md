@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T19:01:24.011444+00:00
+- generated_at: 2026-08-31T19:06:23.936367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13200**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T19:01:14.730616+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=79028.3
+- 更新: 2026-08-31T19:06:14.547441+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79056.3
 - Funnel: target 1031 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +18.22% | $8,970,112.05 |
-| FONE/USDT:USDT | +16.69% | $1,177,040.57 |
-| HEMI/USDT:USDT | +14.54% | $9,313,195.06 |
-| 0G/USDT:USDT | +12.28% | $12,458,979.95 |
-| DOGS/USDT:USDT | +10.63% | $2,315,035.23 |
+| FONE/USDT:USDT | +19.73% | $1,181,538.62 |
+| USELESS/USDT:USDT | +19.73% | $9,077,310.81 |
+| 0G/USDT:USDT | +12.76% | $12,528,942.58 |
+| HEMI/USDT:USDT | +12.70% | $9,362,712.51 |
+| DOGS/USDT:USDT | +11.21% | $2,333,681.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.31% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.56% |
-| ZORA/USDT:USDT | below_1h_threshold | +0.48% | +0.42% |
-| ARB/USDT:USDT | below_1h_threshold | +0.36% | +0.30% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.29% | +0.23% |
+| FONE/USDT:USDT | below_1h_threshold | +2.98% | +2.88% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.28% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.13% | +1.03% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.98% | +0.89% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.78% | +0.69% |
 
 ## 7. 次に見るべき不足
 
