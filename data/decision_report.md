@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T05:51:25.426999+00:00
+- generated_at: 2026-08-31T05:56:23.437044+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13147**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T05:51:10.099521+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=77959.8
+- 更新: 2026-08-31T05:56:13.702611+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=77984.2
 - Funnel: target 1026 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +74.42% | $39,163,826.12 |
-| ZORA/USDT:USDT | +45.71% | $6,717,347.47 |
-| HEMI/USDT:USDT | +36.49% | $5,067,777.53 |
-| BASECAT/USDT:USDT | +31.90% | $1,694,884.26 |
-| PONS/USDT:USDT | +14.10% | $2,314,373.25 |
+| SKR/USDT:USDT | +74.24% | $39,324,487.27 |
+| ZORA/USDT:USDT | +46.81% | $6,783,401.52 |
+| HEMI/USDT:USDT | +35.56% | $5,076,248.77 |
+| BASECAT/USDT:USDT | +32.43% | $1,698,611.31 |
+| PONS/USDT:USDT | +14.78% | $2,317,312.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +3.58% | +3.10% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.05% | +2.57% |
-| SKR/USDT:USDT | below_1h_threshold | +2.98% | +2.50% |
-| LIT/USDT:USDT | below_1h_threshold | +2.80% | +2.32% |
-| UNI/USDT:USDT | below_1h_threshold | +2.23% | +1.75% |
+| UAI/USDT:USDT | below_1h_threshold | +3.61% | +3.10% |
+| LIT/USDT:USDT | below_1h_threshold | +3.61% | +3.10% |
+| SKR/USDT:USDT | below_1h_threshold | +3.35% | +2.84% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.26% | +2.74% |
+| BTW/USDT:USDT | below_1h_threshold | +3.14% | +2.63% |
 
 ## 7. 次に見るべき不足
 
