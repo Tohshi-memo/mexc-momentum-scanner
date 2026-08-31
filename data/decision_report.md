@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T03:01:34.511555+00:00
+- generated_at: 2026-08-31T03:06:13.288707+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13127**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T03:01:21.399562+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77384.4
+- 更新: 2026-08-31T03:06:03.977603+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=77530.5
 - Funnel: target 1026 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +85.63% | $27,426,133.38 |
-| HEMI/USDT:USDT | +47.49% | $3,614,841.88 |
-| ZORA/USDT:USDT | +39.75% | $2,857,806.88 |
-| BASECAT/USDT:USDT | +31.82% | $1,480,965.45 |
-| CYS/USDT:USDT | +5.79% | $4,059,522.64 |
+| SKR/USDT:USDT | +85.51% | $27,651,797.41 |
+| HEMI/USDT:USDT | +44.78% | $3,657,769.76 |
+| ZORA/USDT:USDT | +35.85% | $2,909,601.47 |
+| BASECAT/USDT:USDT | +28.77% | $1,486,517.92 |
+| CYS/USDT:USDT | +6.17% | $4,065,877.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.77% |
-| ZORA/USDT:USDT | below_1h_threshold | +0.62% | +0.70% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.64% |
-| XMR/USDT:USDT | below_1h_threshold | +0.47% | +0.54% |
-| O/USDT:USDT | below_1h_threshold | +0.33% | +0.40% |
+| PONS/USDT:USDT | below_1h_threshold | +1.36% | +1.24% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +1.19% | +1.07% |
+| XPL/USDT:USDT | below_1h_threshold | +0.86% | +0.75% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.83% | +0.72% |
+| SKR/USDT:USDT | below_1h_threshold | +0.74% | +0.62% |
 
 ## 7. 次に見るべき不足
 
