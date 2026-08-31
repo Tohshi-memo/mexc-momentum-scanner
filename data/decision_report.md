@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T11:11:23.779688+00:00
+- generated_at: 2026-08-31T11:16:18.838141+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13167**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T11:11:14.213552+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=78571.4
+- 更新: 2026-08-31T11:16:09.464244+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=78569.7
 - Funnel: target 1028 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +58.26% | $49,019,517.50 |
-| BASECAT/USDT:USDT | +42.28% | $1,906,596.13 |
-| HEMI/USDT:USDT | +42.19% | $7,669,925.11 |
-| 0G/USDT:USDT | +38.33% | $3,320,598.72 |
-| ZORA/USDT:USDT | +32.28% | $13,233,331.86 |
+| SKR/USDT:USDT | +58.14% | $49,262,900.73 |
+| BASECAT/USDT:USDT | +42.61% | $1,910,430.47 |
+| HEMI/USDT:USDT | +41.42% | $7,714,134.35 |
+| 0G/USDT:USDT | +36.92% | $3,480,857.71 |
+| ZORA/USDT:USDT | +32.56% | $13,267,215.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +2.72% | +2.86% |
-| XMR/USDT:USDT | below_1h_threshold | +1.52% | +1.65% |
-| ZORA/USDT:USDT | below_1h_threshold | +1.07% | +1.21% |
-| FONE/USDT:USDT | below_1h_threshold | +0.95% | +1.08% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.90% | +1.04% |
+| SKR/USDT:USDT | below_1h_threshold | +2.04% | +2.18% |
+| XMR/USDT:USDT | below_1h_threshold | +1.66% | +1.80% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.32% | +1.45% |
+| NOT/USDT:USDT | below_1h_threshold | +1.25% | +1.39% |
+| PONS/USDT:USDT | below_1h_threshold | +0.99% | +1.13% |
 
 ## 7. 次に見るべき不足
 
