@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T23:01:31.040092+00:00
+- generated_at: 2026-08-31T23:06:16.739125+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13206**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T23:01:21.689925+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78524.0
+- 更新: 2026-08-31T23:06:09.318228+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=78445.9
 - Funnel: target 1031 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +22.17% | $24,763,096.03 |
-| USELESS/USDT:USDT | +21.00% | $15,371,226.10 |
-| 0G/USDT:USDT | +12.86% | $17,229,907.29 |
-| CRV/USDT:USDT | +8.12% | $3,135,420.26 |
-| NOT/USDT:USDT | +7.42% | $2,350,559.69 |
+| ARB/USDT:USDT | +22.81% | $25,471,839.16 |
+| USELESS/USDT:USDT | +19.56% | $15,452,114.74 |
+| 0G/USDT:USDT | +11.54% | $17,354,052.92 |
+| CRV/USDT:USDT | +8.09% | $3,143,050.37 |
+| NOT/USDT:USDT | +7.20% | $2,358,451.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 0G/USDT:USDT | below_1h_threshold | +0.48% | +0.53% |
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +0.19% | +0.24% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.13% | +0.18% |
-| TWT/USDT:USDT | below_1h_threshold | +0.10% | +0.14% |
-| NOT/USDT:USDT | below_1h_threshold | +0.06% | +0.11% |
+| PONS/USDT:USDT | below_1h_threshold | +0.61% | +0.76% |
+| ARB/USDT:USDT | below_1h_threshold | +0.39% | +0.54% |
+| TWT/USDT:USDT | below_1h_threshold | +0.29% | +0.44% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.26% | +0.40% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.23% | +0.38% |
 
 ## 7. 次に見るべき不足
 
