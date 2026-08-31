@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T11:36:28.481601+00:00
+- generated_at: 2026-08-31T11:41:30.312370+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13170**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2556件
+- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2557件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000560 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZORA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T11:36:19.278020+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=78386.9
-- Funnel: target 1028 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 67.9 >= 65=1
+- 更新: 2026-08-31T11:41:19.720882+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=78405.1
+- Funnel: target 1028 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.2 >= 65=2, 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +68.54% | $50,983,795.61 |
-| HEMI/USDT:USDT | +39.74% | $7,852,974.30 |
-| 0G/USDT:USDT | +37.65% | $3,986,123.01 |
-| BASECAT/USDT:USDT | +33.57% | $1,953,243.76 |
-| ZORA/USDT:USDT | +33.50% | $13,437,974.22 |
+| SKR/USDT:USDT | +63.52% | $51,406,193.84 |
+| 0G/USDT:USDT | +40.52% | $4,396,220.04 |
+| HEMI/USDT:USDT | +39.40% | $7,864,348.84 |
+| BASECAT/USDT:USDT | +32.51% | $1,958,555.81 |
+| ZORA/USDT:USDT | +29.12% | $13,510,943.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_1h_threshold | +2.83% | +3.20% |
-| AKE/USDT:USDT | below_1h_threshold | +2.71% | +3.08% |
-| ZORA/USDT:USDT | below_1h_threshold | +1.89% | +2.26% |
-| CYS/USDT:USDT | below_1h_threshold | +1.59% | +1.96% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.09% | +1.46% |
+| NOT/USDT:USDT | below_1h_threshold | +3.16% | +3.51% |
+| AKE/USDT:USDT | below_1h_threshold | +2.75% | +3.10% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.13% | +1.48% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.09% | +1.44% |
+| UAI/USDT:USDT | below_1h_threshold | +0.97% | +1.32% |
 
 ## 7. 次に見るべき不足
 
