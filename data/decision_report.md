@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T16:41:38.648464+00:00
+- generated_at: 2026-08-31T16:46:36.262253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13188**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T16:41:21.976547+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78583.0
+- 更新: 2026-08-31T16:46:22.018518+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78720.2
 - Funnel: target 1031 → liquid 161 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 76.1 >= 65=1
+- Strict後reject: 4h RSI 71.1 >= 65=1, 4h RSI 78.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +10.08% | $1,182,918.26 |
-| FONE/USDT:USDT | +8.71% | $1,484,288.65 |
-| USELESS/USDT:USDT | +6.48% | $2,897,964.91 |
-| GRAM/USDT:USDT | +6.43% | $2,635,380.53 |
-| PONS/USDT:USDT | +3.41% | $3,135,560.50 |
+| FONE/USDT:USDT | +10.14% | $1,487,712.27 |
+| DOGS/USDT:USDT | +8.08% | $1,280,879.88 |
+| USELESS/USDT:USDT | +7.24% | $2,977,490.15 |
+| GRAM/USDT:USDT | +5.54% | $2,863,747.63 |
+| SKR/USDT:USDT | +4.62% | $65,420,709.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.41% | +3.36% |
-| DASH/USDT:USDT | below_1h_threshold | +3.33% | +3.28% |
-| NOT/USDT:USDT | below_1h_threshold | +2.67% | +2.62% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.37% | +2.32% |
-| SKR/USDT:USDT | below_1h_threshold | +2.28% | +2.23% |
+| SKR/USDT:USDT | below_1h_threshold | +4.63% | +4.40% |
+| DASH/USDT:USDT | below_1h_threshold | +4.54% | +4.32% |
+| PONS/USDT:USDT | below_1h_threshold | +3.76% | +3.54% |
+| HYPE/USDT:USDT | below_1h_threshold | +3.21% | +2.98% |
+| LIT/USDT:USDT | below_1h_threshold | +2.94% | +2.71% |
 
 ## 7. 次に見るべき不足
 
