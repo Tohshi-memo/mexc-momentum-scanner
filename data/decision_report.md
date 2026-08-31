@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T09:56:23.851779+00:00
+- generated_at: 2026-08-31T10:01:21.118192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13159**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T09:56:16.210048+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78510.0
-- Funnel: target 1028 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-31T10:01:11.859457+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78494.9
+- Funnel: target 1028 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +47.46% | $7,288,664.32 |
-| SKR/USDT:USDT | +44.21% | $46,738,962.26 |
-| BASECAT/USDT:USDT | +42.93% | $1,836,795.92 |
-| ZORA/USDT:USDT | +31.27% | $12,318,692.84 |
-| CYS/USDT:USDT | +28.63% | $6,269,520.29 |
+| HEMI/USDT:USDT | +46.30% | $7,280,039.90 |
+| BASECAT/USDT:USDT | +45.17% | $1,835,081.75 |
+| SKR/USDT:USDT | +40.99% | $46,349,426.52 |
+| ZORA/USDT:USDT | +33.12% | $12,314,499.85 |
+| CYS/USDT:USDT | +28.79% | $6,089,189.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.21% | +4.12% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.75% | +3.66% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.41% | +3.32% |
-| XMR/USDT:USDT | below_1h_threshold | +2.44% | +2.35% |
-| NOT/USDT:USDT | below_1h_threshold | +2.43% | +2.34% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.28% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.96% | +0.95% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.94% | +0.93% |
+| DASH/USDT:USDT | below_1h_threshold | +0.73% | +0.72% |
+| ZORA/USDT:USDT | below_1h_threshold | +0.52% | +0.51% |
 
 ## 7. 次に見るべき不足
 
