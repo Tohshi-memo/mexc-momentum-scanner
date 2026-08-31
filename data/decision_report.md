@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T14:26:26.880993+00:00
+- generated_at: 2026-08-31T14:31:28.482681+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13180**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2566件
+- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2567件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000506 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZORA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T14:26:14.939660+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77782.1
+- 更新: 2026-08-31T14:31:15.801344+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78017.1
 - Funnel: target 1031 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1
+- Strict後reject: 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +82.66% | $59,138,659.43 |
-| PONS/USDT:USDT | +40.27% | $2,574,734.06 |
-| HEMI/USDT:USDT | +40.04% | $8,503,129.25 |
-| ZORA/USDT:USDT | +39.82% | $15,864,606.47 |
-| BASECAT/USDT:USDT | +32.80% | $2,062,602.21 |
+| SKR/USDT:USDT | +80.80% | $59,356,971.87 |
+| PONS/USDT:USDT | +43.20% | $2,633,060.13 |
+| HEMI/USDT:USDT | +40.39% | $8,514,068.21 |
+| ZORA/USDT:USDT | +38.69% | $16,052,628.14 |
+| BASECAT/USDT:USDT | +33.25% | $2,063,532.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +4.19% | +4.26% |
-| PONS/USDT:USDT | below_1h_threshold | +3.97% | +4.04% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.52% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.91% |
-| SKR/USDT:USDT | below_1h_threshold | +2.57% | +2.64% |
+| ZORA/USDT:USDT | below_1h_threshold | +4.96% | +4.73% |
+| TESLA/USDT:USDT | below_1h_threshold | +4.19% | +3.96% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.22% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.61% |
+| FLOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.28% |
 
 ## 7. 次に見るべき不足
 
