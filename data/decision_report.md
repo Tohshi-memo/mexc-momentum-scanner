@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T14:31:28.482681+00:00
+- generated_at: 2026-08-31T14:36:26.016575+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13180**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T14:31:15.801344+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=78017.1
-- Funnel: target 1031 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.3 >= 65=1
+- 更新: 2026-08-31T14:36:13.647484+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=78025.5
+- Funnel: target 1031 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +80.80% | $59,356,971.87 |
-| PONS/USDT:USDT | +43.20% | $2,633,060.13 |
-| HEMI/USDT:USDT | +40.39% | $8,514,068.21 |
-| ZORA/USDT:USDT | +38.69% | $16,052,628.14 |
-| BASECAT/USDT:USDT | +33.25% | $2,063,532.90 |
+| SKR/USDT:USDT | +80.30% | $59,621,699.59 |
+| HEMI/USDT:USDT | +40.25% | $8,534,330.35 |
+| ZORA/USDT:USDT | +39.09% | $16,174,433.47 |
+| PONS/USDT:USDT | +38.03% | $2,685,725.11 |
+| BASECAT/USDT:USDT | +34.22% | $2,066,503.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +4.96% | +4.73% |
-| TESLA/USDT:USDT | below_1h_threshold | +4.19% | +3.96% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.22% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.61% |
-| FLOCK/USDT:USDT | below_1h_threshold | +2.51% | +2.28% |
+| ZORA/USDT:USDT | below_relative_strength | +5.22% | +4.98% |
+| TESLA/USDT:USDT | below_1h_threshold | +4.19% | +3.94% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.21% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.85% | +2.60% |
+| PONS/USDT:USDT | below_1h_threshold | +2.77% | +2.52% |
 
 ## 7. 次に見るべき不足
 
