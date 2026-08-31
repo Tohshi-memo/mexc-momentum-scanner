@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T08:41:25.629071+00:00
+- generated_at: 2026-08-31T08:46:28.045505+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13156**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T08:41:13.029569+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=78144.9
-- Funnel: target 1028 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 74.2 >= 65=1
+- 更新: 2026-08-31T08:46:14.931730+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=78320.4
+- Funnel: target 1028 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.1 >= 65=1, 4h RSI 74.9 >= 65=1, 4h RSI 91.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HEMI/USDT:USDT | +54.18% | $6,264,871.10 |
-| ZORA/USDT:USDT | +50.78% | $10,263,371.53 |
-| SKR/USDT:USDT | +43.34% | $44,368,832.17 |
-| BASECAT/USDT:USDT | +36.63% | $1,715,550.46 |
-| FLOCK/USDT:USDT | +36.17% | $1,282,608.59 |
+| HEMI/USDT:USDT | +56.58% | $6,380,568.96 |
+| ZORA/USDT:USDT | +52.78% | $10,384,446.89 |
+| SKR/USDT:USDT | +40.99% | $44,679,381.68 |
+| FLOCK/USDT:USDT | +38.42% | $1,301,373.99 |
+| BASECAT/USDT:USDT | +37.56% | $1,717,488.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZORA/USDT:USDT | below_1h_threshold | +4.94% | +4.97% |
-| LIGHT/USDT:USDT | below_1h_threshold | +2.62% | +2.65% |
-| 0G/USDT:USDT | below_1h_threshold | +2.49% | +2.52% |
-| LIT/USDT:USDT | below_1h_threshold | +1.71% | +1.74% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.68% | +1.71% |
+| 0G/USDT:USDT | below_1h_threshold | +3.30% | +3.10% |
+| FLOCK/USDT:USDT | below_1h_threshold | +2.27% | +2.07% |
+| LIGHT/USDT:USDT | below_1h_threshold | +2.23% | +2.03% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.72% | +1.52% |
+| FONE/USDT:USDT | below_1h_threshold | +1.45% | +1.26% |
 
 ## 7. 次に見るべき不足
 
