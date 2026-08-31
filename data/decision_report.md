@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T12:01:21.779784+00:00
+- generated_at: 2026-08-31T12:06:19.314971+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13171**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T12:01:12.278089+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78246.2
+- 更新: 2026-08-31T12:06:09.805634+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=78504.9
 - Funnel: target 1028 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +63.59% | $51,799,395.13 |
-| HEMI/USDT:USDT | +40.44% | $7,943,441.43 |
-| 0G/USDT:USDT | +34.61% | $4,960,603.38 |
-| ZORA/USDT:USDT | +31.87% | $13,697,221.90 |
-| FLOCK/USDT:USDT | +23.77% | $1,982,612.10 |
+| SKR/USDT:USDT | +65.94% | $52,133,280.73 |
+| HEMI/USDT:USDT | +39.12% | $7,967,459.39 |
+| 0G/USDT:USDT | +33.45% | $5,210,908.89 |
+| ZORA/USDT:USDT | +30.70% | $13,726,812.64 |
+| BASECAT/USDT:USDT | +26.94% | $1,988,068.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DESTOCK/USDT:USDT | below_1h_threshold | +0.78% | +0.83% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.76% | +0.81% |
-| NOT/USDT:USDT | below_1h_threshold | +0.69% | +0.74% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.63% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.53% | +0.58% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.90% | +2.62% |
+| PONS/USDT:USDT | below_1h_threshold | +2.05% | +1.77% |
+| STX/USDT:USDT | below_1h_threshold | +1.55% | +1.27% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.15% | +0.87% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.93% | +0.65% |
 
 ## 7. 次に見るべき不足
 
