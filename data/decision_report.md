@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T03:56:27.722126+00:00
+- generated_at: 2026-08-31T04:01:15.976327+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13130**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T03:56:15.769783+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=77746.5
-- Funnel: target 1026 → liquid 143 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1, 4h RSI 95.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-31T04:01:07.826482+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77700.1
+- Funnel: target 1026 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +102.04% | $29,864,466.32 |
-| HEMI/USDT:USDT | +48.44% | $3,861,603.45 |
-| ZORA/USDT:USDT | +37.34% | $3,530,318.11 |
-| BASECAT/USDT:USDT | +37.28% | $1,522,092.41 |
-| PONS/USDT:USDT | +13.51% | $2,147,579.29 |
+| SKR/USDT:USDT | +97.58% | $29,992,679.27 |
+| HEMI/USDT:USDT | +50.71% | $3,868,703.40 |
+| ZORA/USDT:USDT | +38.14% | $3,603,808.51 |
+| BASECAT/USDT:USDT | +37.36% | $1,507,919.41 |
+| PONS/USDT:USDT | +11.36% | $2,063,853.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +3.85% | +3.45% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.74% | +3.35% |
-| FONE/USDT:USDT | below_1h_threshold | +3.30% | +2.90% |
-| RE/USDT:USDT | below_1h_threshold | +3.17% | +2.77% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.04% | +1.65% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.17% | +2.20% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.40% | +1.44% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.36% | +1.39% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.30% | +1.33% |
+| FONE/USDT:USDT | below_1h_threshold | +1.14% | +1.17% |
 
 ## 7. 次に見るべき不足
 
