@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T02:41:12.670277+00:00
+- generated_at: 2026-08-31T02:46:17.209383+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13124**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T02:41:03.326135+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=77732.7
+- 更新: 2026-08-31T02:46:07.751995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=77700.6
 - Funnel: target 1026 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 86.0 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +90.40% | $26,645,200.27 |
-| HEMI/USDT:USDT | +46.19% | $3,516,186.17 |
-| BASECAT/USDT:USDT | +34.67% | $1,479,010.96 |
-| ZORA/USDT:USDT | +26.35% | $2,662,318.77 |
-| CYS/USDT:USDT | +6.14% | $4,190,034.16 |
+| SKR/USDT:USDT | +94.86% | $26,857,278.80 |
+| HEMI/USDT:USDT | +45.14% | $3,545,164.90 |
+| BASECAT/USDT:USDT | +33.74% | $1,480,731.41 |
+| ZORA/USDT:USDT | +27.21% | $2,679,367.03 |
+| CYS/USDT:USDT | +6.66% | $4,199,590.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TUT/USDT:USDT | below_1h_threshold | +4.39% | +4.23% |
-| HEMI/USDT:USDT | below_1h_threshold | +4.12% | +3.96% |
-| O/USDT:USDT | below_1h_threshold | +2.10% | +1.95% |
-| SKR/USDT:USDT | below_1h_threshold | +1.93% | +1.77% |
-| XMR/USDT:USDT | below_1h_threshold | +1.58% | +1.42% |
+| TUT/USDT:USDT | below_1h_threshold | +4.51% | +4.39% |
+| SKR/USDT:USDT | below_1h_threshold | +4.35% | +4.23% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.67% | +3.55% |
+| O/USDT:USDT | below_1h_threshold | +2.70% | +2.59% |
+| XMR/USDT:USDT | below_1h_threshold | +1.96% | +1.84% |
 
 ## 7. 次に見るべき不足
 
