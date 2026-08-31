@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T16:01:23.870331+00:00
+- generated_at: 2026-08-31T16:06:24.180782+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13183**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T16:01:14.436083+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78534.3
-- Funnel: target 1031 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-31T16:06:14.947405+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78558.2
+- Funnel: target 1031 → liquid 154 → pre 50 → checked 49 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHEINSTOCK/USDT:USDT | +1.80% | $1,843,762.84 |
-| PONS/USDT:USDT | +0.94% | $3,051,250.74 |
-| BEAT/USDT:USDT | +0.89% | $7,502,691.21 |
-| BASECAT/USDT:USDT | +0.42% | $2,195,036.50 |
-| NIULAI/USDT:USDT | +0.37% | $10,634,094.76 |
+| FONE/USDT:USDT | +4.94% | $1,420,520.44 |
+| NIULAI/USDT:USDT | +4.18% | $10,713,635.51 |
+| PONS/USDT:USDT | +2.94% | $3,069,672.41 |
+| HEMI/USDT:USDT | +2.01% | $8,703,257.59 |
+| USELESS/USDT:USDT | +1.83% | $2,268,817.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.81% | +1.82% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.99% |
-| NGAS/USDT:USDT | below_1h_threshold | +0.97% | +0.98% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
+| FONE/USDT:USDT | below_1h_threshold | +4.94% | +4.92% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.36% | +4.34% |
+| PONS/USDT:USDT | below_1h_threshold | +2.94% | +2.92% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.92% | +1.91% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.89% | +1.87% |
 
 ## 7. 次に見るべき不足
 
