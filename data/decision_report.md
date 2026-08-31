@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T00:26:12.367602+00:00
+- generated_at: 2026-08-31T00:31:12.004761+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13115**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T00:26:04.865743+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=77941.4
+- 更新: 2026-08-31T00:31:02.638145+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=77861.1
 - Funnel: target 1026 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +40.74% | $18,685,248.87 |
-| BASECAT/USDT:USDT | +34.87% | $1,279,040.03 |
-| HEMI/USDT:USDT | +26.65% | $2,709,934.23 |
-| FONE/USDT:USDT | +24.43% | $1,837,419.07 |
-| USELESS/USDT:USDT | +9.11% | $1,182,020.42 |
+| SKR/USDT:USDT | +35.35% | $18,843,910.29 |
+| HEMI/USDT:USDT | +34.85% | $2,820,662.66 |
+| BASECAT/USDT:USDT | +33.57% | $1,289,790.52 |
+| FONE/USDT:USDT | +19.37% | $1,841,578.19 |
+| USELESS/USDT:USDT | +9.11% | $1,201,538.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +4.61% | +4.22% |
-| O/USDT:USDT | below_1h_threshold | +4.05% | +3.66% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.56% | +2.17% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.20% | +1.81% |
-| CRV/USDT:USDT | below_1h_threshold | +2.00% | +1.61% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.96% | +3.67% |
+| O/USDT:USDT | below_1h_threshold | +3.84% | +3.56% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.40% | +2.12% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.34% | +2.05% |
+| CRV/USDT:USDT | below_1h_threshold | +2.27% | +1.98% |
 
 ## 7. 次に見るべき不足
 
