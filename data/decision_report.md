@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T18:06:17.325185+00:00
+- generated_at: 2026-08-31T18:11:27.794357+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13196**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.69** / 初期 $100.00 (+15.69%)
-- 確定: 2085件 (Win 610 / Loss 813 / Flat 662) / pending 0件 / skip 2581件
+- 確定: 2085件 (Win 610 / Loss 813 / Flat 662) / pending 0件 / skip 2583件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000392 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BASECAT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T18:06:08.054940+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=78748.9
-- Funnel: target 1031 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-31T18:11:13.604863+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78800.0
+- Funnel: target 1031 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 0G/USDT:USDT | +14.32% | $10,861,837.26 |
-| USELESS/USDT:USDT | +12.93% | $7,271,564.27 |
-| DOGS/USDT:USDT | +11.07% | $1,930,059.02 |
-| HEMI/USDT:USDT | +7.60% | $8,854,401.43 |
-| ARB/USDT:USDT | +7.24% | $6,420,133.36 |
+| USELESS/USDT:USDT | +14.24% | $7,432,977.00 |
+| 0G/USDT:USDT | +13.64% | $11,294,298.91 |
+| DOGS/USDT:USDT | +9.96% | $1,953,712.00 |
+| FONE/USDT:USDT | +7.97% | $1,240,416.37 |
+| ARB/USDT:USDT | +7.42% | $6,474,763.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +2.70% | +2.85% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.61% | +2.76% |
-| FONE/USDT:USDT | below_1h_threshold | +2.17% | +2.32% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.89% | +2.04% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.27% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.53% | +2.61% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.26% | +2.34% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.20% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
 
 ## 7. 次に見るべき不足
 
