@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T05:06:09.964589+00:00
+- generated_at: 2026-08-31T05:11:17.076302+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13142**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2529件
+- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2530件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000260 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZORA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T05:06:00.953433+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=77672.8
-- Funnel: target 1026 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-31T05:11:05.789747+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77616.5
+- Funnel: target 1026 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +59.44% | $36,227,278.29 |
-| ZORA/USDT:USDT | +56.08% | $5,771,877.77 |
-| HEMI/USDT:USDT | +34.16% | $4,679,954.14 |
-| BASECAT/USDT:USDT | +33.53% | $1,619,239.07 |
-| PONS/USDT:USDT | +12.86% | $2,202,969.60 |
+| SKR/USDT:USDT | +58.69% | $36,501,804.76 |
+| ZORA/USDT:USDT | +55.66% | $5,835,693.09 |
+| BASECAT/USDT:USDT | +35.69% | $1,622,582.05 |
+| HEMI/USDT:USDT | +32.43% | $4,729,616.49 |
+| PONS/USDT:USDT | +13.71% | $2,205,888.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| JASMY/USDT:USDT | below_1h_threshold | +1.77% | +1.66% |
-| FONE/USDT:USDT | below_1h_threshold | +1.71% | +1.59% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.32% | +1.21% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.07% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.89% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.15% | +2.11% |
+| XPL/USDT:USDT | below_1h_threshold | +1.60% | +1.56% |
+| BASECAT/USDT:USDT | below_1h_threshold | +1.34% | +1.30% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
+| LIT/USDT:USDT | below_1h_threshold | +1.11% | +1.07% |
 
 ## 7. 次に見るべき不足
 
