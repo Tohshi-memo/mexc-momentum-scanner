@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T15:51:26.167163+00:00
+- generated_at: 2026-08-31T15:56:27.482643+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13183**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T15:51:16.691987+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=78623.4
+- 更新: 2026-08-31T15:56:17.956455+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78578.9
 - Funnel: target 1031 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.3 >= 65=1
+- Strict後reject: 4h RSI 67.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +75.41% | $63,702,315.51 |
-| BASECAT/USDT:USDT | +47.90% | $2,203,796.17 |
-| ZORA/USDT:USDT | +40.71% | $18,261,031.66 |
-| HEMI/USDT:USDT | +38.69% | $8,689,776.04 |
-| PONS/USDT:USDT | +31.04% | $3,085,284.52 |
+| SKR/USDT:USDT | +76.47% | $63,794,778.78 |
+| BASECAT/USDT:USDT | +46.76% | $2,206,637.49 |
+| ZORA/USDT:USDT | +40.11% | $18,311,931.85 |
+| HEMI/USDT:USDT | +39.18% | $8,695,714.51 |
+| PONS/USDT:USDT | +33.81% | $3,104,625.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.21% |
-| BICO/USDT:USDT | below_1h_threshold | +1.62% | +1.52% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.58% | +1.48% |
-| AKE/USDT:USDT | below_1h_threshold | +1.47% | +1.37% |
-| XMR/USDT:USDT | below_1h_threshold | +1.36% | +1.26% |
+| BICO/USDT:USDT | below_1h_threshold | +3.24% | +3.19% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.26% |
+| UAI/USDT:USDT | below_1h_threshold | +2.00% | +1.95% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.58% | +1.53% |
+| AKE/USDT:USDT | below_1h_threshold | +1.48% | +1.44% |
 
 ## 7. 次に見るべき不足
 
