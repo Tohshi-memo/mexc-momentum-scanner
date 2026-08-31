@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T18:36:28.032126+00:00
+- generated_at: 2026-08-31T18:41:25.815943+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13198**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T18:36:16.218006+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78888.8
+- 更新: 2026-08-31T18:41:15.335340+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=78996.5
 - Funnel: target 1031 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1
+- Strict後reject: 4h RSI 74.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +18.48% | $8,013,609.38 |
-| FONE/USDT:USDT | +16.30% | $1,264,513.22 |
-| HEMI/USDT:USDT | +12.25% | $9,114,199.00 |
-| DOGS/USDT:USDT | +11.28% | $2,152,440.73 |
-| 0G/USDT:USDT | +10.86% | $12,015,520.73 |
+| USELESS/USDT:USDT | +18.76% | $8,350,012.95 |
+| FONE/USDT:USDT | +16.00% | $1,270,237.92 |
+| HEMI/USDT:USDT | +13.12% | $9,151,811.37 |
+| DOGS/USDT:USDT | +12.27% | $2,180,108.19 |
+| 0G/USDT:USDT | +12.18% | $12,092,089.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.49% | +3.46% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.92% | +2.89% |
-| ARB/USDT:USDT | below_1h_threshold | +2.40% | +2.38% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.16% | +2.13% |
-| XMR/USDT:USDT | below_1h_threshold | +1.99% | +1.96% |
+| DOGS/USDT:USDT | below_1h_threshold | +3.84% | +3.67% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.30% | +3.14% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.32% | +2.15% |
+| ARB/USDT:USDT | below_1h_threshold | +2.10% | +1.93% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.70% |
 
 ## 7. 次に見るべき不足
 
