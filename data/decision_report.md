@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T18:01:21.321401+00:00
+- generated_at: 2026-08-31T18:06:17.325185+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13196**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T18:01:10.932640+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=78807.2
+- 更新: 2026-08-31T18:06:08.054940+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=78748.9
 - Funnel: target 1031 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +15.96% | $7,149,919.83 |
-| 0G/USDT:USDT | +13.10% | $10,679,427.99 |
-| DOGS/USDT:USDT | +9.45% | $1,897,803.83 |
-| ARB/USDT:USDT | +7.65% | $6,123,878.47 |
-| DASH/USDT:USDT | +6.32% | $14,444,600.93 |
+| 0G/USDT:USDT | +14.32% | $10,861,837.26 |
+| USELESS/USDT:USDT | +12.93% | $7,271,564.27 |
+| DOGS/USDT:USDT | +11.07% | $1,930,059.02 |
+| HEMI/USDT:USDT | +7.60% | $8,854,401.43 |
+| ARB/USDT:USDT | +7.24% | $6,420,133.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.41% | +1.49% |
-| DOGS/USDT:USDT | below_1h_threshold | +1.23% | +1.30% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.19% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +0.75% |
-| OP/USDT:USDT | below_1h_threshold | +0.41% | +0.48% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.70% | +2.85% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.61% | +2.76% |
+| FONE/USDT:USDT | below_1h_threshold | +2.17% | +2.32% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.89% | +2.04% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.27% |
 
 ## 7. 次に見るべき不足
 
