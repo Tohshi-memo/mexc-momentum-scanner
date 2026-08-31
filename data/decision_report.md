@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T08:01:26.697372+00:00
+- generated_at: 2026-08-31T08:06:21.257599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13154**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T08:01:15.517500+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78173.0
+- 更新: 2026-08-31T08:06:11.754870+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78073.1
 - Funnel: target 1028 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +60.74% | $42,690,388.50 |
-| HEMI/USDT:USDT | +44.69% | $5,739,163.53 |
-| ZORA/USDT:USDT | +40.71% | $9,239,517.73 |
-| BASECAT/USDT:USDT | +35.32% | $1,687,068.48 |
-| FLOCK/USDT:USDT | +34.32% | $1,160,154.93 |
+| SKR/USDT:USDT | +60.24% | $42,921,830.61 |
+| HEMI/USDT:USDT | +45.56% | $5,765,839.15 |
+| ZORA/USDT:USDT | +42.92% | $9,346,652.75 |
+| FLOCK/USDT:USDT | +37.23% | $1,183,855.14 |
+| BASECAT/USDT:USDT | +36.01% | $1,690,650.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +0.62% | +0.61% |
-| HEMI/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
-| LINSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.36% | +0.35% |
-| ATOM/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.26% | +2.38% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.11% | +2.23% |
+| CYS/USDT:USDT | below_1h_threshold | +1.88% | +2.00% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.67% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.97% | +1.10% |
 
 ## 7. 次に見るべき不足
 
