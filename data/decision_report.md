@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T05:01:19.132040+00:00
+- generated_at: 2026-08-31T05:06:09.964589+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13142**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T05:01:09.664277+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77573.1
+- 更新: 2026-08-31T05:06:00.953433+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=77672.8
 - Funnel: target 1026 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +63.34% | $35,786,845.65 |
-| ZORA/USDT:USDT | +57.41% | $5,612,478.68 |
-| HEMI/USDT:USDT | +34.73% | $4,642,631.68 |
-| BASECAT/USDT:USDT | +33.08% | $1,618,395.60 |
-| ZKSYNC/USDT:USDT | +15.17% | $2,215,570.85 |
+| SKR/USDT:USDT | +59.44% | $36,227,278.29 |
+| ZORA/USDT:USDT | +56.08% | $5,771,877.77 |
+| HEMI/USDT:USDT | +34.16% | $4,679,954.14 |
+| BASECAT/USDT:USDT | +33.53% | $1,619,239.07 |
+| PONS/USDT:USDT | +12.86% | $2,202,969.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.32% | +1.34% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.20% |
-| ZORA/USDT:USDT | below_1h_threshold | +1.01% | +1.03% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.02% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.89% | +0.90% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.77% | +1.66% |
+| FONE/USDT:USDT | below_1h_threshold | +1.71% | +1.59% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.32% | +1.21% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.07% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +0.89% |
 
 ## 7. 次に見るべき不足
 
