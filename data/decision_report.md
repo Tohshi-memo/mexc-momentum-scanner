@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T09:51:30.180050+00:00
+- generated_at: 2026-08-31T09:56:23.851779+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13159**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T09:51:19.538706+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78581.1
-- Funnel: target 1028 → liquid 154 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.4 >= 65=1, 4h RSI 71.5 >= 65=1, 4h RSI 69.2 >= 65=1
+- 更新: 2026-08-31T09:56:16.210048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78510.0
+- Funnel: target 1028 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BASECAT/USDT:USDT | +47.29% | $1,822,359.44 |
-| HEMI/USDT:USDT | +47.06% | $7,263,432.51 |
-| SKR/USDT:USDT | +42.29% | $46,634,805.57 |
-| ZORA/USDT:USDT | +32.72% | $12,227,160.89 |
-| CYS/USDT:USDT | +28.45% | $6,222,320.76 |
+| HEMI/USDT:USDT | +47.46% | $7,288,664.32 |
+| SKR/USDT:USDT | +44.21% | $46,738,962.26 |
+| BASECAT/USDT:USDT | +42.93% | $1,836,795.92 |
+| ZORA/USDT:USDT | +31.27% | $12,318,692.84 |
+| CYS/USDT:USDT | +28.63% | $6,269,520.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XMR/USDT:USDT | below_1h_threshold | +3.23% | +3.05% |
-| FONE/USDT:USDT | below_1h_threshold | +3.03% | +2.85% |
-| NOT/USDT:USDT | below_1h_threshold | +2.32% | +2.14% |
-| CYS/USDT:USDT | below_1h_threshold | +1.24% | +1.06% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.15% | +0.97% |
+| PONS/USDT:USDT | below_1h_threshold | +4.21% | +4.12% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.75% | +3.66% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.41% | +3.32% |
+| XMR/USDT:USDT | below_1h_threshold | +2.44% | +2.35% |
+| NOT/USDT:USDT | below_1h_threshold | +2.43% | +2.34% |
 
 ## 7. 次に見るべき不足
 
