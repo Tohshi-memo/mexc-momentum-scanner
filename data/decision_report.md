@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T22:46:14.353772+00:00
+- generated_at: 2026-08-31T22:51:17.603497+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13206**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T22:46:04.980244+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=78626.1
+- 更新: 2026-08-31T22:51:08.118330+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.45% price=78575.9
 - Funnel: target 1031 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +22.16% | $23,498,029.30 |
-| USELESS/USDT:USDT | +20.31% | $15,449,728.98 |
-| 0G/USDT:USDT | +12.91% | $17,002,321.29 |
-| CRV/USDT:USDT | +7.90% | $3,167,873.44 |
-| HEMI/USDT:USDT | +6.81% | $9,400,167.79 |
+| ARB/USDT:USDT | +21.27% | $23,842,329.29 |
+| USELESS/USDT:USDT | +20.07% | $15,505,544.66 |
+| 0G/USDT:USDT | +13.06% | $17,143,631.01 |
+| CRV/USDT:USDT | +7.77% | $3,170,011.96 |
+| HEMI/USDT:USDT | +6.97% | $9,403,505.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 0G/USDT:USDT | below_1h_threshold | +4.74% | +5.12% |
-| STX/USDT:USDT | below_1h_threshold | +1.00% | +1.38% |
-| MUU/USDT:USDT | below_1h_threshold | +0.82% | +1.20% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +1.04% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.80% |
+| 0G/USDT:USDT | below_1h_threshold | +4.69% | +5.14% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.49% |
+| STX/USDT:USDT | below_1h_threshold | +1.04% | +1.49% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.94% | +1.39% |
+| MUU/USDT:USDT | below_1h_threshold | +0.82% | +1.27% |
 
 ## 7. 次に見るべき不足
 
