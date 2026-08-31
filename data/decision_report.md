@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T18:56:30.283849+00:00
+- generated_at: 2026-08-31T19:01:24.011444+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13200**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T18:56:16.278116+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=78998.2
-- Funnel: target 1031 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-08-31T19:01:14.730616+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=79028.3
+- Funnel: target 1031 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +19.23% | $8,797,173.11 |
-| HEMI/USDT:USDT | +16.31% | $9,447,465.64 |
-| FONE/USDT:USDT | +15.22% | $1,275,258.68 |
-| 0G/USDT:USDT | +12.42% | $12,340,751.82 |
-| DOGS/USDT:USDT | +11.33% | $2,307,510.60 |
+| USELESS/USDT:USDT | +18.22% | $8,970,112.05 |
+| FONE/USDT:USDT | +16.69% | $1,177,040.57 |
+| HEMI/USDT:USDT | +14.54% | $9,313,195.06 |
+| 0G/USDT:USDT | +12.28% | $12,458,979.95 |
+| DOGS/USDT:USDT | +10.63% | $2,315,035.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.17% | +4.00% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.94% | +2.78% |
-| XMR/USDT:USDT | below_1h_threshold | +2.48% | +2.31% |
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +1.96% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.02% | +1.85% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.31% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.56% |
+| ZORA/USDT:USDT | below_1h_threshold | +0.48% | +0.42% |
+| ARB/USDT:USDT | below_1h_threshold | +0.36% | +0.30% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.29% | +0.23% |
 
 ## 7. 次に見るべき不足
 
