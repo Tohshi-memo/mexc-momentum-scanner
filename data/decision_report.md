@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T12:11:21.117089+00:00
+- generated_at: 2026-08-31T12:16:26.156145+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13171**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2558件
+- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2559件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000503 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZORA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T12:11:11.588222+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=78414.6
-- Funnel: target 1028 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-08-31T12:16:14.654032+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=78374.9
+- Funnel: target 1028 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +60.61% | $52,458,316.92 |
-| HEMI/USDT:USDT | +42.56% | $8,000,332.30 |
-| 0G/USDT:USDT | +31.01% | $5,347,205.37 |
-| ZORA/USDT:USDT | +30.67% | $13,825,650.35 |
-| BASECAT/USDT:USDT | +29.30% | $1,993,753.65 |
+| SKR/USDT:USDT | +63.59% | $52,650,914.67 |
+| HEMI/USDT:USDT | +42.98% | $8,033,628.19 |
+| ZORA/USDT:USDT | +33.50% | $13,882,686.02 |
+| BASECAT/USDT:USDT | +31.86% | $1,999,682.41 |
+| 0G/USDT:USDT | +30.40% | $5,500,216.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +4.78% | +4.62% |
-| STX/USDT:USDT | below_1h_threshold | +1.79% | +1.63% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.48% | +1.31% |
-| HEMI/USDT:USDT | below_1h_threshold | +1.43% | +1.27% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.25% | +1.08% |
+| PONS/USDT:USDT | below_1h_threshold | +3.33% | +3.22% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.83% | +1.71% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.80% | +1.68% |
+| STX/USDT:USDT | below_1h_threshold | +1.51% | +1.39% |
+| CYS/USDT:USDT | below_1h_threshold | +1.13% | +1.01% |
 
 ## 7. 次に見るべき不足
 
