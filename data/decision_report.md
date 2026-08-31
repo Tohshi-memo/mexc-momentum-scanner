@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T07:36:21.999718+00:00
+- generated_at: 2026-08-31T07:41:22.585015+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13152**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.89** / 初期 $100.00 (+15.89%)
-- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2536件
+- 確定: 2084件 (Win 610 / Loss 812 / Flat 662) / pending 0件 / skip 2537件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000131 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZORA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $115.89
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T07:36:12.613808+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=78163.0
+- 更新: 2026-08-31T07:41:12.972174+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=78198.7
 - Funnel: target 1028 → liquid 152 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.8 >= 65=1
+- Strict後reject: 4h RSI 65.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +59.62% | $42,028,447.77 |
-| FLOCK/USDT:USDT | +45.71% | $1,032,146.09 |
-| HEMI/USDT:USDT | +42.66% | $5,696,628.14 |
-| ZORA/USDT:USDT | +42.51% | $8,332,243.56 |
-| BASECAT/USDT:USDT | +36.95% | $1,701,503.45 |
+| SKR/USDT:USDT | +62.41% | $42,276,225.84 |
+| ZORA/USDT:USDT | +44.01% | $8,391,579.20 |
+| HEMI/USDT:USDT | +42.17% | $5,732,511.87 |
+| FLOCK/USDT:USDT | +40.11% | $1,091,158.62 |
+| BASECAT/USDT:USDT | +37.81% | $1,702,193.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +2.81% | +2.66% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.32% |
-| FONE/USDT:USDT | below_1h_threshold | +2.38% | +2.23% |
-| BLESS/USDT:USDT | below_1h_threshold | +2.37% | +2.23% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.82% | +1.68% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.83% | +2.64% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.28% |
+| FONE/USDT:USDT | below_1h_threshold | +1.97% | +1.78% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.68% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.83% | +1.64% |
 
 ## 7. 次に見るべき不足
 
