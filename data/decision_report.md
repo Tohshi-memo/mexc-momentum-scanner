@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T11:41:30.312370+00:00
+- generated_at: 2026-08-31T11:46:22.500278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13170**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T11:41:19.720882+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=78405.1
-- Funnel: target 1028 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=2, 4h RSI 75.2 >= 65=1
+- 更新: 2026-08-31T11:46:12.336182+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=78387.4
+- Funnel: target 1028 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.6 >= 65=1, 4h RSI 75.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +63.52% | $51,406,193.84 |
-| 0G/USDT:USDT | +40.52% | $4,396,220.04 |
-| HEMI/USDT:USDT | +39.40% | $7,864,348.84 |
-| BASECAT/USDT:USDT | +32.51% | $1,958,555.81 |
-| ZORA/USDT:USDT | +29.12% | $13,510,943.00 |
+| SKR/USDT:USDT | +66.37% | $51,633,431.78 |
+| HEMI/USDT:USDT | +38.31% | $7,915,549.43 |
+| 0G/USDT:USDT | +36.68% | $4,527,375.47 |
+| BASECAT/USDT:USDT | +30.32% | $1,963,987.90 |
+| ZORA/USDT:USDT | +29.48% | $13,633,390.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NOT/USDT:USDT | below_1h_threshold | +3.16% | +3.51% |
-| AKE/USDT:USDT | below_1h_threshold | +2.75% | +3.10% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.13% | +1.48% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.09% | +1.44% |
-| UAI/USDT:USDT | below_1h_threshold | +0.97% | +1.32% |
+| AKE/USDT:USDT | below_1h_threshold | +3.82% | +4.19% |
+| NOT/USDT:USDT | below_1h_threshold | +2.77% | +3.14% |
+| DASH/USDT:USDT | below_1h_threshold | +1.14% | +1.51% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.08% | +1.45% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.00% | +1.37% |
 
 ## 7. 次に見るべき不足
 
