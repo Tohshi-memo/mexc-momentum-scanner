@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T14:46:40.522333+00:00
+- generated_at: 2026-08-31T14:51:21.570576+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13181**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T14:46:25.775783+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.85% price=78498.9
-- Funnel: target 1031 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 74.8 >= 65=1
+- 更新: 2026-08-31T14:51:12.278999+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.66% price=78347.1
+- Funnel: target 1031 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKR/USDT:USDT | +77.83% | $60,158,159.20 |
-| ZORA/USDT:USDT | +47.14% | $16,510,616.42 |
-| PONS/USDT:USDT | +43.50% | $2,734,520.82 |
-| HEMI/USDT:USDT | +39.76% | $8,560,206.08 |
-| BASECAT/USDT:USDT | +35.73% | $2,073,021.52 |
+| SKR/USDT:USDT | +81.23% | $60,545,967.23 |
+| ZORA/USDT:USDT | +39.97% | $16,819,205.80 |
+| HEMI/USDT:USDT | +38.95% | $8,569,186.52 |
+| BASECAT/USDT:USDT | +37.56% | $2,075,176.67 |
+| PONS/USDT:USDT | +37.44% | $2,769,057.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TESLA/USDT:USDT | below_1h_threshold | +4.19% | +3.34% |
-| FLOCK/USDT:USDT | below_1h_threshold | +4.15% | +3.30% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +3.45% | +2.60% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.95% | +2.10% |
-| DASH/USDT:USDT | below_1h_threshold | +2.90% | +2.05% |
+| ZORA/USDT:USDT | below_relative_strength | +5.54% | +4.88% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.92% | +4.26% |
+| FLOCK/USDT:USDT | below_1h_threshold | +4.36% | +3.70% |
+| TESLA/USDT:USDT | below_1h_threshold | +4.19% | +3.53% |
+| JASMY/USDT:USDT | below_1h_threshold | +4.03% | +3.37% |
 
 ## 7. 次に見るべき不足
 
