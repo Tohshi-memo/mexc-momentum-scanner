@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T23:31:19.358026+00:00
+- generated_at: 2026-08-31T23:36:18.645823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13207**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T23:31:09.698988+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78546.8
+- 更新: 2026-08-31T23:36:09.235965+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=78511.8
 - Funnel: target 1031 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +23.25% | $27,797,874.40 |
-| USELESS/USDT:USDT | +19.33% | $15,705,100.79 |
-| 0G/USDT:USDT | +12.08% | $17,846,697.74 |
-| CRV/USDT:USDT | +8.09% | $3,178,977.59 |
-| NOT/USDT:USDT | +7.93% | $2,408,581.34 |
+| ARB/USDT:USDT | +24.66% | $28,371,735.55 |
+| USELESS/USDT:USDT | +19.25% | $15,800,056.82 |
+| 0G/USDT:USDT | +10.52% | $17,876,287.80 |
+| CRV/USDT:USDT | +7.99% | $3,187,149.79 |
+| OP/USDT:USDT | +7.76% | $4,319,765.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +0.98% | +1.00% |
-| APT/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
-| ARB/USDT:USDT | below_1h_threshold | +0.76% | +0.78% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.73% | +0.75% |
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.67% |
+| ARB/USDT:USDT | below_1h_threshold | +1.82% | +1.89% |
+| APT/USDT:USDT | below_1h_threshold | +1.49% | +1.56% |
+| OP/USDT:USDT | below_1h_threshold | +1.29% | +1.36% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.07% | +1.13% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.61% |
 
 ## 7. 次に見るべき不足
 
