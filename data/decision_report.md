@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T01:51:21.215396+00:00
+- generated_at: 2026-09-01T01:56:25.096568+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13217**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T01:51:11.982465+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=78493.7
+- 更新: 2026-09-01T01:56:15.299855+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=78403.3
 - Funnel: target 1031 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1
+- Strict後reject: 4h RSI 77.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +35.46% | $44,612,923.61 |
-| BTR/USDT:USDT | +25.14% | $6,601,507.51 |
-| USELESS/USDT:USDT | +22.98% | $17,402,114.00 |
-| 0G/USDT:USDT | +19.98% | $22,851,387.67 |
-| OP/USDT:USDT | +12.31% | $6,454,138.60 |
+| ARB/USDT:USDT | +33.17% | $45,276,584.18 |
+| BTR/USDT:USDT | +28.13% | $6,657,299.66 |
+| USELESS/USDT:USDT | +24.54% | $17,601,555.07 |
+| 0G/USDT:USDT | +19.73% | $22,993,174.20 |
+| CRV/USDT:USDT | +11.77% | $3,782,541.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +3.33% | +3.49% |
-| CRV/USDT:USDT | below_1h_threshold | +2.79% | +2.94% |
-| KORU/USDT:USDT | below_1h_threshold | +2.15% | +2.31% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.02% | +2.18% |
-| BTW/USDT:USDT | below_1h_threshold | +1.90% | +2.05% |
+| BTR/USDT:USDT | below_1h_threshold | +2.92% | +3.19% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.64% | +2.91% |
+| CRV/USDT:USDT | below_1h_threshold | +2.55% | +2.83% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.35% | +2.62% |
+| 0G/USDT:USDT | below_1h_threshold | +2.02% | +2.30% |
 
 ## 7. 次に見るべき不足
 
