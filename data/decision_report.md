@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T18:26:23.926481+00:00
+- generated_at: 2026-09-01T18:31:24.799118+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13255**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T18:26:12.324633+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=77072.2
-- Funnel: target 1036 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-01T18:31:12.937564+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=76972.6
+- Funnel: target 1036 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FILECOIN/USDT:USDT | +8.75% | $7,763,947.77 |
-| MAGMA/USDT:USDT | +6.21% | $1,774,095.68 |
-| BTW/USDT:USDT | +5.20% | $3,118,606.89 |
-| USELESS/USDT:USDT | +4.24% | $34,648,754.29 |
-| TUT/USDT:USDT | +3.99% | $4,050,768.88 |
+| FILECOIN/USDT:USDT | +7.82% | $7,983,744.45 |
+| MAGMA/USDT:USDT | +5.64% | $1,787,505.58 |
+| ACE/USDT:USDT | +5.50% | $3,883,007.81 |
+| BTW/USDT:USDT | +4.96% | $3,126,033.48 |
+| USELESS/USDT:USDT | +4.91% | $34,750,225.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +2.84% | +3.05% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.44% | +2.66% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.70% |
-| BTW/USDT:USDT | below_1h_threshold | +1.23% | +1.44% |
-| UAI/USDT:USDT | below_1h_threshold | +0.98% | +1.20% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.35% | +3.70% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.84% | +2.19% |
+| UAI/USDT:USDT | below_1h_threshold | +1.48% | +1.83% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.83% |
+| BTW/USDT:USDT | below_1h_threshold | +1.08% | +1.43% |
 
 ## 7. 次に見るべき不足
 
