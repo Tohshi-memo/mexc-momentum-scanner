@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T19:46:32.902501+00:00
+- generated_at: 2026-09-01T19:51:39.725009+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13265**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T19:46:18.615586+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=77291.1
-- Funnel: target 1036 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1
+- 更新: 2026-09-01T19:51:19.054518+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=77254.9
+- Funnel: target 1036 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +15.77% | $2,099,051.82 |
-| ACE/USDT:USDT | +12.38% | $6,263,103.21 |
-| FILECOIN/USDT:USDT | +11.02% | $15,092,539.09 |
-| USELESS/USDT:USDT | +10.88% | $37,067,929.44 |
-| FONE/USDT:USDT | +9.53% | $1,138,426.70 |
+| MAGMA/USDT:USDT | +15.89% | $2,127,252.55 |
+| ACE/USDT:USDT | +12.57% | $6,341,670.31 |
+| FONE/USDT:USDT | +12.05% | $1,144,973.60 |
+| FILECOIN/USDT:USDT | +11.25% | $15,214,194.54 |
+| USELESS/USDT:USDT | +10.84% | $37,177,747.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.27% | +3.04% |
-| CRV/USDT:USDT | below_1h_threshold | +2.45% | +2.23% |
-| FLOCK/USDT:USDT | below_1h_threshold | +2.11% | +1.89% |
-| SPX/USDT:USDT | below_1h_threshold | +1.99% | +1.76% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.66% |
+| CHIP/USDT:USDT | below_relative_strength | +5.11% | +4.93% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.48% | +3.30% |
+| CRV/USDT:USDT | below_1h_threshold | +2.37% | +2.19% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.76% |
+| TRIA/USDT:USDT | below_1h_threshold | +1.91% | +1.73% |
 
 ## 7. 次に見るべき不足
 
