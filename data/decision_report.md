@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T16:41:24.656264+00:00
+- generated_at: 2026-09-01T16:46:26.224553+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13254**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T16:41:15.313529+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.48% price=77506.4
+- 更新: 2026-09-01T16:46:16.689376+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.56% price=77441.8
 - Funnel: target 1036 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +3.97% | $1,867,256.96 |
-| AKE/USDT:USDT | +2.80% | $5,943,173.01 |
-| BEAT/USDT:USDT | +2.53% | $4,667,137.61 |
-| SKYAI/USDT:USDT | +2.49% | $2,271,528.12 |
-| TUT/USDT:USDT | +2.39% | $3,679,989.73 |
+| MAGMA/USDT:USDT | +3.56% | $1,925,019.32 |
+| BEAT/USDT:USDT | +3.01% | $4,709,589.48 |
+| AKE/USDT:USDT | +2.72% | $5,957,615.96 |
+| SKYAI/USDT:USDT | +2.11% | $2,272,840.51 |
+| TUT/USDT:USDT | +2.09% | $3,689,606.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.11% | +4.58% |
-| AKE/USDT:USDT | below_1h_threshold | +2.81% | +3.29% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.50% | +2.97% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.46% | +2.93% |
-| TUT/USDT:USDT | below_1h_threshold | +2.39% | +2.87% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.67% | +4.23% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.93% | +3.49% |
+| AKE/USDT:USDT | below_1h_threshold | +2.72% | +3.28% |
+| TUT/USDT:USDT | below_1h_threshold | +2.16% | +2.72% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.14% | +2.70% |
 
 ## 7. 次に見るべき不足
 
