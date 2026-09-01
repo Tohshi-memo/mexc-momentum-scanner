@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T16:06:24.809267+00:00
+- generated_at: 2026-09-01T16:11:14.950454+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13254**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T16:06:13.567453+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77934.9
-- Funnel: target 1036 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-01T16:11:07.455842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=77771.0
+- Funnel: target 1036 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +4.53% | $1,605,759.19 |
-| PROM/USDT:USDT | +3.72% | $4,708,048.39 |
-| MARSCOIN/USDT:USDT | +2.42% | $3,444,298.85 |
-| SKYAI/USDT:USDT | +2.19% | $2,079,061.17 |
-| TRIA/USDT:USDT | +1.71% | $1,562,496.24 |
+| SKYAI/USDT:USDT | +4.59% | $2,169,816.49 |
+| NIULAI/USDT:USDT | +2.56% | $3,519,288.11 |
+| MAGMA/USDT:USDT | +2.48% | $1,646,626.80 |
+| BEAT/USDT:USDT | +2.13% | $4,330,326.57 |
+| MARSCOIN/USDT:USDT | +1.85% | $3,457,081.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.54% | +4.47% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.57% | +3.49% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.42% | +2.35% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.20% | +2.12% |
-| TRIA/USDT:USDT | below_1h_threshold | +1.72% | +1.64% |
+| SKYAI/USDT:USDT | below_1h_threshold | +4.41% | +4.55% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.35% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.57% | +2.70% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.49% | +2.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.22% | +2.36% |
 
 ## 7. 次に見るべき不足
 
