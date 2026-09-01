@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T15:51:21.503636+00:00
+- generated_at: 2026-09-01T15:56:22.779607+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13253**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.28** / 初期 $100.00 (+15.28%)
-- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2636件
+- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2637件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000158 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T15:51:14.596255+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=78000.4
-- Funnel: target 1036 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T15:56:10.990361+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77998.4
+- Funnel: target 1036 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +45.58% | $3,371,944.51 |
-| USELESS/USDT:USDT | +39.19% | $35,982,177.94 |
-| ARB/USDT:USDT | +25.20% | $103,540,248.63 |
-| FF/USDT:USDT | +18.90% | $3,015,807.09 |
-| ONG/USDT:USDT | +17.73% | $7,406,796.51 |
+| MARSCOIN/USDT:USDT | +46.73% | $3,399,775.98 |
+| USELESS/USDT:USDT | +37.69% | $36,089,946.42 |
+| ARB/USDT:USDT | +25.24% | $103,684,545.76 |
+| ONG/USDT:USDT | +17.72% | $7,412,874.71 |
+| FF/USDT:USDT | +16.37% | $3,246,266.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.87% | +5.04% |
 | SNXX/USDT:USDT | below_1h_threshold | +3.56% | +3.73% |
-| MUU/USDT:USDT | below_1h_threshold | +3.45% | +3.62% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.68% | +2.85% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.34% | +2.52% |
+| MUU/USDT:USDT | below_1h_threshold | +3.45% | +3.63% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.11% | +2.29% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.11% | +2.28% |
+| PONS/USDT:USDT | below_1h_threshold | +2.02% | +2.19% |
 
 ## 7. 次に見るべき不足
 
