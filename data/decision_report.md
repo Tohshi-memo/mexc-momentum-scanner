@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T08:01:17.627762+00:00
+- generated_at: 2026-09-01T08:06:24.641485+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13239**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T08:01:10.038435+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78607.2
+- 更新: 2026-09-01T08:06:15.335953+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78563.2
 - Funnel: target 1034 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +107.48% | $14,871,320.59 |
-| ARB/USDT:USDT | +28.79% | $69,549,468.05 |
-| USELESS/USDT:USDT | +22.86% | $21,074,249.01 |
-| 0G/USDT:USDT | +18.61% | $29,252,263.40 |
-| PONS/USDT:USDT | +14.85% | $4,676,548.44 |
+| BTR/USDT:USDT | +98.56% | $15,071,554.37 |
+| ARB/USDT:USDT | +28.74% | $69,665,872.39 |
+| USELESS/USDT:USDT | +19.64% | $21,281,193.06 |
+| 0G/USDT:USDT | +19.15% | $29,280,779.03 |
+| PONS/USDT:USDT | +14.43% | $4,711,643.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.54% |
-| 0G/USDT:USDT | below_1h_threshold | +0.33% | +0.32% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.31% | +0.30% |
-| OP/USDT:USDT | below_1h_threshold | +0.19% | +0.18% |
-| SPX/USDT:USDT | below_1h_threshold | +0.15% | +0.14% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +2.60% |
+| 0G/USDT:USDT | below_1h_threshold | +1.20% | +1.25% |
+| NOT/USDT:USDT | below_1h_threshold | +0.82% | +0.87% |
+| AKE/USDT:USDT | below_1h_threshold | +0.66% | +0.71% |
+| ONG/USDT:USDT | below_1h_threshold | +0.35% | +0.40% |
 
 ## 7. 次に見るべき不足
 
