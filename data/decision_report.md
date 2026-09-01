@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T20:56:24.232257+00:00
+- generated_at: 2026-09-01T21:01:23.437339+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13270**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.88** / 初期 $100.00 (+14.88%)
-- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2651件
+- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2652件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000201 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FILECOIN/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T20:56:12.810943+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=77398.9
-- Funnel: target 1036 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.6 >= 65=1
+- 更新: 2026-09-01T21:01:12.259617+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77435.1
+- Funnel: target 1036 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +35.23% | $1,627,057.95 |
-| UAI/USDT:USDT | +22.88% | $7,273,148.73 |
-| MAGMA/USDT:USDT | +16.56% | $2,691,218.51 |
-| USELESS/USDT:USDT | +11.21% | $36,424,097.77 |
-| FILECOIN/USDT:USDT | +9.21% | $18,747,283.59 |
+| BONER/USDT:USDT | +46.37% | $1,653,873.03 |
+| UAI/USDT:USDT | +27.23% | $8,112,403.29 |
+| MAGMA/USDT:USDT | +16.25% | $2,645,584.86 |
+| ACE/USDT:USDT | +9.56% | $7,218,899.68 |
+| FILECOIN/USDT:USDT | +9.26% | $18,580,733.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.89% | +2.74% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.54% | +2.39% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.30% | +2.15% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.98% | +1.83% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.16% |
+| UAI/USDT:USDT | below_1h_threshold | +2.98% | +2.96% |
+| BONER/USDT:USDT | below_1h_threshold | +2.14% | +2.12% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.37% | +1.34% |
+| DESTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.56% |
+| ONG/USDT:USDT | below_1h_threshold | +0.49% | +0.47% |
 
 ## 7. 次に見るべき不足
 
