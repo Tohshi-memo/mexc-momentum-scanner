@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T03:26:38.040389+00:00
+- generated_at: 2026-09-01T03:31:31.638137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13220**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T03:26:20.297063+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=78368.5
-- Funnel: target 1031 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T03:31:19.087795+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=78465.9
+- Funnel: target 1031 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +45.76% | $7,426,257.76 |
-| ARB/USDT:USDT | +30.64% | $56,696,924.37 |
-| USELESS/USDT:USDT | +26.72% | $18,705,276.70 |
-| 0G/USDT:USDT | +14.18% | $26,950,714.93 |
-| CRV/USDT:USDT | +13.56% | $4,608,578.91 |
+| BTR/USDT:USDT | +45.26% | $7,454,064.44 |
+| ARB/USDT:USDT | +28.88% | $56,997,223.47 |
+| USELESS/USDT:USDT | +26.47% | $18,771,605.74 |
+| 0G/USDT:USDT | +14.81% | $26,988,675.93 |
+| CRV/USDT:USDT | +13.24% | $4,639,130.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.54% | +4.61% |
-| NOT/USDT:USDT | below_1h_threshold | +3.39% | +3.46% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.05% | +3.11% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.14% | +2.21% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.78% | +1.85% |
+| BTW/USDT:USDT | below_1h_threshold | +4.85% | +4.79% |
+| PONS/USDT:USDT | below_1h_threshold | +4.03% | +3.98% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.87% | +3.81% |
+| NOT/USDT:USDT | below_1h_threshold | +3.35% | +3.29% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.18% | +2.13% |
 
 ## 7. 次に見るべき不足
 
