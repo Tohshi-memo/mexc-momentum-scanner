@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T18:56:38.090495+00:00
+- generated_at: 2026-09-01T19:01:20.661165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13257**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T18:56:26.005738+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.41% price=76919.7
-- Funnel: target 1036 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1, 4h RSI 84.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-01T19:01:13.150235+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77139.8
+- Funnel: target 1036 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ACE/USDT:USDT | +13.21% | $5,026,300.20 |
-| USELESS/USDT:USDT | +12.28% | $36,024,988.77 |
-| MAGMA/USDT:USDT | +8.59% | $1,895,229.31 |
-| FILECOIN/USDT:USDT | +6.84% | $9,153,830.52 |
-| UAI/USDT:USDT | +6.20% | $4,931,216.72 |
+| USELESS/USDT:USDT | +14.11% | $34,476,119.37 |
+| ACE/USDT:USDT | +10.43% | $5,140,442.60 |
+| MAGMA/USDT:USDT | +8.54% | $1,843,947.86 |
+| FILECOIN/USDT:USDT | +7.30% | $9,923,993.97 |
+| UAI/USDT:USDT | +6.73% | $4,903,225.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.91% | +5.32% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.59% | +5.01% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.90% |
-| DOS/USDT:USDT | below_1h_threshold | +1.08% | +1.49% |
-| BICO/USDT:USDT | below_1h_threshold | +1.02% | +1.43% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.86% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.71% | +1.68% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.76% | +0.73% |
+| ZORA/USDT:USDT | below_1h_threshold | +0.75% | +0.72% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.69% | +0.66% |
 
 ## 7. 次に見るべき不足
 
