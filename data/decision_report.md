@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T01:36:20.775957+00:00
+- generated_at: 2026-09-01T01:41:20.331423+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13216**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T01:36:11.179696+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=78480.0
+- 更新: 2026-09-01T01:41:12.447675+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78523.4
 - Funnel: target 1031 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1
+- Strict後reject: 4h RSI 77.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +35.36% | $43,367,466.57 |
-| BTR/USDT:USDT | +27.64% | $6,521,136.96 |
-| USELESS/USDT:USDT | +22.19% | $17,323,037.88 |
-| 0G/USDT:USDT | +19.68% | $22,409,735.29 |
-| OP/USDT:USDT | +11.19% | $6,250,587.65 |
+| ARB/USDT:USDT | +36.55% | $43,705,035.52 |
+| BTR/USDT:USDT | +27.04% | $6,532,203.36 |
+| USELESS/USDT:USDT | +21.44% | $17,358,112.67 |
+| 0G/USDT:USDT | +19.44% | $22,624,730.87 |
+| CRV/USDT:USDT | +11.45% | $3,718,042.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +2.74% | +2.92% |
-| KORU/USDT:USDT | below_1h_threshold | +2.15% | +2.33% |
-| AKE/USDT:USDT | below_1h_threshold | +1.55% | +1.72% |
-| 0G/USDT:USDT | below_1h_threshold | +1.49% | +1.66% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.57% |
+| CRV/USDT:USDT | below_1h_threshold | +2.26% | +2.38% |
+| BTR/USDT:USDT | below_1h_threshold | +2.25% | +2.37% |
+| KORU/USDT:USDT | below_1h_threshold | +2.15% | +2.27% |
+| ARB/USDT:USDT | below_1h_threshold | +2.01% | +2.13% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.51% |
 
 ## 7. 次に見るべき不足
 
