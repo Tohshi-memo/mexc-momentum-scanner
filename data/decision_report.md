@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-08-31T23:56:26.056606+00:00
+- generated_at: 2026-09-01T00:01:18.864585+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13207**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-08-31T23:56:16.706547+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78524.9
-- Funnel: target 1031 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-01T00:01:10.522118+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78534.5
+- Funnel: target 1031 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +24.89% | $30,048,301.69 |
-| USELESS/USDT:USDT | +18.84% | $16,095,573.38 |
-| 0G/USDT:USDT | +10.13% | $18,000,789.19 |
-| OP/USDT:USDT | +8.26% | $4,476,331.90 |
-| CRV/USDT:USDT | +8.02% | $3,230,500.79 |
+| ARB/USDT:USDT | +24.97% | $29,552,897.15 |
+| USELESS/USDT:USDT | +19.31% | $15,874,306.19 |
+| 0G/USDT:USDT | +10.91% | $18,122,523.43 |
+| OP/USDT:USDT | +8.23% | $4,338,089.59 |
+| CRV/USDT:USDT | +8.22% | $3,123,215.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ESPORTS/USDT:USDT | below_1h_threshold | +2.75% | +2.80% |
-| ARB/USDT:USDT | below_1h_threshold | +1.96% | +2.01% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.90% | +1.94% |
-| OP/USDT:USDT | below_1h_threshold | +1.82% | +1.86% |
-| STRK/USDT:USDT | below_1h_threshold | +1.01% | +1.06% |
+| 0G/USDT:USDT | below_1h_threshold | +1.42% | +1.44% |
+| NOT/USDT:USDT | below_1h_threshold | +0.61% | +0.63% |
+| CRV/USDT:USDT | below_1h_threshold | +0.27% | +0.29% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.25% | +0.27% |
+| STX/USDT:USDT | below_1h_threshold | +0.16% | +0.18% |
 
 ## 7. 次に見るべき不足
 
