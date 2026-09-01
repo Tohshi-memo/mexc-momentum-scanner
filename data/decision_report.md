@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T20:11:21.919744+00:00
+- generated_at: 2026-09-01T20:16:15.919278+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13267**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T20:11:11.067845+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77263.0
-- Funnel: target 1036 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-01T20:16:06.657307+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=77433.4
+- Funnel: target 1036 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +20.40% | $1,149,201.87 |
-| MAGMA/USDT:USDT | +15.34% | $2,237,005.13 |
-| USELESS/USDT:USDT | +12.59% | $35,239,980.21 |
-| FILECOIN/USDT:USDT | +11.18% | $16,465,747.34 |
-| UAI/USDT:USDT | +10.00% | $5,579,481.26 |
+| MAGMA/USDT:USDT | +18.94% | $2,329,782.08 |
+| FONE/USDT:USDT | +16.78% | $1,161,389.22 |
+| USELESS/USDT:USDT | +14.10% | $35,386,731.74 |
+| FILECOIN/USDT:USDT | +10.49% | $16,564,655.21 |
+| UAI/USDT:USDT | +9.98% | $5,600,915.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.34% |
-| ONG/USDT:USDT | below_1h_threshold | +1.25% | +1.28% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.91% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.84% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.13% | +1.94% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.04% | +1.85% |
+| FONE/USDT:USDT | below_1h_threshold | +1.93% | +1.73% |
+| ONG/USDT:USDT | below_1h_threshold | +1.37% | +1.17% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.12% |
 
 ## 7. 次に見るべき不足
 
