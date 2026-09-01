@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T00:41:36.665957+00:00
+- generated_at: 2026-09-01T00:46:33.536846+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13213**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.69** / 初期 $100.00 (+15.69%)
-- 確定: 2085件 (Win 610 / Loss 813 / Flat 662) / pending 0件 / skip 2602件
+- 確定: 2085件 (Win 610 / Loss 813 / Flat 662) / pending 0件 / skip 2604件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000167 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BASECAT/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T00:41:24.894345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78690.9
-- Funnel: target 1031 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.8 >= 65=1
+- 更新: 2026-09-01T00:46:20.187451+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.19% price=78697.3
+- Funnel: target 1031 → liquid 151 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.8 >= 65=1, 4h RSI 83.4 >= 65=1, 4h RSI 79.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +32.20% | $34,538,407.11 |
-| BTR/USDT:USDT | +28.10% | $6,321,907.11 |
-| USELESS/USDT:USDT | +23.22% | $16,639,008.19 |
-| OP/USDT:USDT | +12.15% | $5,189,204.13 |
-| 0G/USDT:USDT | +12.08% | $19,371,334.92 |
+| ARB/USDT:USDT | +31.95% | $35,561,002.64 |
+| BTR/USDT:USDT | +28.52% | $6,346,393.25 |
+| USELESS/USDT:USDT | +24.48% | $16,682,410.48 |
+| 0G/USDT:USDT | +15.39% | $19,472,604.10 |
+| OP/USDT:USDT | +11.68% | $5,402,197.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_relative_strength | +5.13% | +4.95% |
-| PONS/USDT:USDT | below_relative_strength | +5.08% | +4.90% |
 | PUMPFUN/USDT:USDT | below_1h_threshold | +4.40% | +4.22% |
-| FLOCK/USDT:USDT | below_1h_threshold | +4.32% | +4.14% |
-| OP/USDT:USDT | below_1h_threshold | +3.67% | +3.49% |
+| PONS/USDT:USDT | below_1h_threshold | +4.23% | +4.04% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.42% | +3.23% |
+| OP/USDT:USDT | below_1h_threshold | +3.03% | +2.84% |
+| FET/USDT:USDT | below_1h_threshold | +2.54% | +2.35% |
 
 ## 7. 次に見るべき不足
 
