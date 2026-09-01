@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T08:26:22.421559+00:00
+- generated_at: 2026-09-01T08:31:17.674330+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13239**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T08:26:12.857842+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.65% price=78085.6
-- Funnel: target 1034 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-01T08:31:08.286725+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.94% price=77860.9
+- Funnel: target 1034 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +36.26% | $17,862,752.48 |
-| ARB/USDT:USDT | +27.16% | $71,294,857.18 |
-| USELESS/USDT:USDT | +19.76% | $21,644,263.70 |
-| CRV/USDT:USDT | +11.74% | $6,427,508.66 |
-| AKE/USDT:USDT | +11.70% | $4,017,556.10 |
+| BTR/USDT:USDT | +27.57% | $18,654,268.89 |
+| ARB/USDT:USDT | +25.77% | $71,618,526.71 |
+| USELESS/USDT:USDT | +19.69% | $21,698,691.32 |
+| 0G/USDT:USDT | +13.88% | $29,853,677.62 |
+| AKE/USDT:USDT | +12.49% | $4,028,538.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.01% | +3.66% |
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +3.21% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.56% | +1.21% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.50% | +1.15% |
-| AKE/USDT:USDT | below_1h_threshold | +0.25% | +0.90% |
+| UAI/USDT:USDT | below_1h_threshold | +3.32% | +4.26% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.55% | +3.49% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.54% | +2.48% |
+| AKE/USDT:USDT | below_1h_threshold | +0.74% | +1.68% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.56% | +1.50% |
 
 ## 7. 次に見るべき不足
 
