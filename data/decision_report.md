@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T16:31:23.883826+00:00
+- generated_at: 2026-09-01T16:36:27.372180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13254**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.28** / 初期 $100.00 (+15.28%)
-- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2637件
+- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2638件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000158 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T16:31:14.445578+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.44% price=77537.9
-- Funnel: target 1036 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T16:36:15.568302+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.53% price=77462.1
+- Funnel: target 1036 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +4.37% | $1,713,533.25 |
-| AKE/USDT:USDT | +3.22% | $5,886,208.96 |
-| SKYAI/USDT:USDT | +3.01% | $2,254,573.32 |
-| PROM/USDT:USDT | +2.56% | $5,260,651.79 |
-| CRV/USDT:USDT | +2.21% | $10,399,746.70 |
+| MAGMA/USDT:USDT | +8.00% | $1,753,311.14 |
+| AKE/USDT:USDT | +2.69% | $5,911,427.81 |
+| BTW/USDT:USDT | +2.48% | $2,874,041.09 |
+| SOXS/USDT:USDT | +2.31% | $3,288,558.47 |
+| TUT/USDT:USDT | +2.26% | $3,677,144.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.38% | +4.81% |
-| AKE/USDT:USDT | below_1h_threshold | +3.09% | +3.52% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.02% | +3.45% |
-| PROM/USDT:USDT | below_1h_threshold | +2.66% | +3.09% |
-| CRV/USDT:USDT | below_1h_threshold | +2.22% | +2.65% |
+| AKE/USDT:USDT | below_1h_threshold | +2.69% | +3.23% |
+| BTW/USDT:USDT | below_1h_threshold | +2.45% | +2.98% |
+| TUT/USDT:USDT | below_1h_threshold | +2.26% | +2.79% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.24% | +2.77% |
+| PROM/USDT:USDT | below_1h_threshold | +2.17% | +2.71% |
 
 ## 7. 次に見るべき不足
 
