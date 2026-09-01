@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T10:31:19.435499+00:00
+- generated_at: 2026-09-01T10:36:25.066590+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13243**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.28** / 初期 $100.00 (+15.28%)
-- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2624件
+- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2626件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000327 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T10:31:10.092368+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=78021.9
-- Funnel: target 1034 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T10:36:11.015224+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.20% price=78028.4
+- Funnel: target 1034 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +27.27% | $79,730,802.77 |
-| USELESS/USDT:USDT | +27.16% | $23,513,887.27 |
-| ONG/USDT:USDT | +17.42% | $4,418,302.47 |
-| CRV/USDT:USDT | +14.84% | $6,584,897.07 |
-| OP/USDT:USDT | +12.97% | $8,278,559.11 |
+| ARB/USDT:USDT | +27.46% | $80,009,423.63 |
+| USELESS/USDT:USDT | +26.45% | $23,648,868.76 |
+| ONG/USDT:USDT | +18.98% | $4,454,848.57 |
+| CRV/USDT:USDT | +14.45% | $6,599,062.75 |
+| OP/USDT:USDT | +14.03% | $8,410,810.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.33% | +4.14% |
-| TUT/USDT:USDT | below_1h_threshold | +4.22% | +4.04% |
-| ONG/USDT:USDT | below_1h_threshold | +4.04% | +3.86% |
-| HEMI/USDT:USDT | below_1h_threshold | +4.00% | +3.81% |
-| ENA/USDT:USDT | below_1h_threshold | +2.72% | +2.53% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.75% | +3.55% |
+| ENA/USDT:USDT | below_1h_threshold | +3.58% | +3.38% |
+| OP/USDT:USDT | below_1h_threshold | +3.40% | +3.20% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.98% | +2.78% |
+| 0G/USDT:USDT | below_1h_threshold | +2.40% | +2.20% |
 
 ## 7. 次に見るべき不足
 
