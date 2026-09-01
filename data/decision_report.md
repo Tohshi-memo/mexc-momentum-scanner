@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T14:26:33.609055+00:00
+- generated_at: 2026-09-01T14:31:23.517636+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13253**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T14:26:22.257217+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.43% price=78374.2
-- Funnel: target 1036 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-01T14:31:14.409464+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=78299.7
+- Funnel: target 1036 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +59.43% | $2,773,415.94 |
-| USELESS/USDT:USDT | +37.32% | $33,374,060.04 |
-| ARB/USDT:USDT | +26.25% | $98,313,500.72 |
-| FF/USDT:USDT | +18.93% | $1,380,977.56 |
-| ONG/USDT:USDT | +17.97% | $6,866,178.23 |
+| MARSCOIN/USDT:USDT | +58.45% | $2,814,712.24 |
+| USELESS/USDT:USDT | +38.42% | $33,447,651.09 |
+| ARB/USDT:USDT | +24.95% | $99,301,110.37 |
+| ONG/USDT:USDT | +18.61% | $6,891,245.98 |
+| FF/USDT:USDT | +16.73% | $1,429,986.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FF/USDT:USDT | below_1h_threshold | +4.98% | +4.55% |
-| TWT/USDT:USDT | below_1h_threshold | +2.36% | +1.93% |
-| ACE/USDT:USDT | below_1h_threshold | +2.25% | +1.82% |
-| OP/USDT:USDT | below_1h_threshold | +2.14% | +1.71% |
-| DESTOCK/USDT:USDT | below_1h_threshold | +2.09% | +1.66% |
+| TWT/USDT:USDT | below_1h_threshold | +4.32% | +3.98% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.25% | +3.92% |
+| CHIP/USDT:USDT | below_1h_threshold | +4.24% | +3.90% |
+| ACE/USDT:USDT | below_1h_threshold | +4.04% | +3.71% |
+| FF/USDT:USDT | below_1h_threshold | +3.12% | +2.78% |
 
 ## 7. 次に見るべき不足
 
