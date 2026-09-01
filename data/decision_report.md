@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T20:06:14.235161+00:00
+- generated_at: 2026-09-01T20:11:21.919744+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13267**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.88** / 初期 $100.00 (+14.88%)
-- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2647件
+- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2648件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000204 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FILECOIN/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T20:06:06.152016+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77356.4
-- Funnel: target 1036 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T20:11:11.067845+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77263.0
+- Funnel: target 1036 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +16.31% | $1,130,189.01 |
-| MAGMA/USDT:USDT | +14.68% | $2,209,018.17 |
-| FILECOIN/USDT:USDT | +11.97% | $15,662,582.82 |
-| USELESS/USDT:USDT | +11.73% | $35,159,606.53 |
-| UAI/USDT:USDT | +9.89% | $5,559,444.70 |
+| FONE/USDT:USDT | +20.40% | $1,149,201.87 |
+| MAGMA/USDT:USDT | +15.34% | $2,237,005.13 |
+| USELESS/USDT:USDT | +12.59% | $35,239,980.21 |
+| FILECOIN/USDT:USDT | +11.18% | $16,465,747.34 |
+| UAI/USDT:USDT | +10.00% | $5,579,481.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +1.51% | +1.42% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.22% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.79% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.72% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.81% | +0.72% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.34% |
+| ONG/USDT:USDT | below_1h_threshold | +1.25% | +1.28% |
+| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.91% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.86% | +0.88% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.84% |
 
 ## 7. 次に見るべき不足
 
