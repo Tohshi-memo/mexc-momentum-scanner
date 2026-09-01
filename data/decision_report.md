@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T07:06:20.680085+00:00
+- generated_at: 2026-09-01T07:11:28.966887+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13238**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T07:06:11.287354+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=78771.1
-- Funnel: target 1034 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-01T07:11:19.593899+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=78704.4
+- Funnel: target 1034 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +101.51% | $13,961,530.76 |
-| ARB/USDT:USDT | +26.68% | $66,530,170.21 |
-| USELESS/USDT:USDT | +24.70% | $20,642,570.15 |
-| PONS/USDT:USDT | +17.62% | $4,389,172.78 |
-| 0G/USDT:USDT | +17.20% | $28,804,034.27 |
+| BTR/USDT:USDT | +105.92% | $14,111,738.55 |
+| ARB/USDT:USDT | +27.19% | $66,710,766.70 |
+| USELESS/USDT:USDT | +24.58% | $20,663,750.21 |
+| 0G/USDT:USDT | +19.73% | $28,936,824.73 |
+| PONS/USDT:USDT | +15.85% | $4,407,820.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOMI/USDT:USDT | below_1h_threshold | +2.14% | +2.05% |
-| BTR/USDT:USDT | below_1h_threshold | +1.46% | +1.38% |
-| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.24% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.92% | +0.84% |
-| DASH/USDT:USDT | below_1h_threshold | +0.62% | +0.53% |
+| BTR/USDT:USDT | below_1h_threshold | +4.45% | +4.45% |
+| 0G/USDT:USDT | below_1h_threshold | +2.25% | +2.25% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.33% |
+| DASH/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
 
 ## 7. 次に見るべき不足
 
