@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T16:11:14.950454+00:00
+- generated_at: 2026-09-01T16:16:17.554211+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13254**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T16:11:07.455842+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=77771.0
-- Funnel: target 1036 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-01T16:16:08.152730+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=77665.0
+- Funnel: target 1036 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +4.59% | $2,169,816.49 |
-| NIULAI/USDT:USDT | +2.56% | $3,519,288.11 |
-| MAGMA/USDT:USDT | +2.48% | $1,646,626.80 |
-| BEAT/USDT:USDT | +2.13% | $4,330,326.57 |
-| MARSCOIN/USDT:USDT | +1.85% | $3,457,081.02 |
+| SKYAI/USDT:USDT | +3.13% | $2,221,749.76 |
+| MAGMA/USDT:USDT | +2.79% | $1,663,246.46 |
+| HEMI/USDT:USDT | +2.14% | $5,610,268.32 |
+| BEAT/USDT:USDT | +2.13% | $4,418,586.84 |
+| BTW/USDT:USDT | +1.45% | $2,838,630.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +4.41% | +4.55% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.35% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.57% | +2.70% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.49% | +2.63% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.22% | +2.36% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.49% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.14% | +3.41% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.79% | +3.06% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.16% | +2.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.14% | +2.41% |
 
 ## 7. 次に見るべき不足
 
