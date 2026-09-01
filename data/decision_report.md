@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T16:16:17.554211+00:00
+- generated_at: 2026-09-01T16:21:24.261771+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13254**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T16:16:08.152730+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=77665.0
+- 更新: 2026-09-01T16:21:14.796612+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=77552.1
 - Funnel: target 1036 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SKYAI/USDT:USDT | +3.13% | $2,221,749.76 |
-| MAGMA/USDT:USDT | +2.79% | $1,663,246.46 |
-| HEMI/USDT:USDT | +2.14% | $5,610,268.32 |
-| BEAT/USDT:USDT | +2.13% | $4,418,586.84 |
-| BTW/USDT:USDT | +1.45% | $2,838,630.88 |
+| SKYAI/USDT:USDT | +2.43% | $2,237,199.41 |
+| TUT/USDT:USDT | +2.29% | $3,628,849.61 |
+| BEAT/USDT:USDT | +1.98% | $4,480,290.20 |
+| 4/USDT:USDT | +1.47% | $1,238,055.70 |
+| CRV/USDT:USDT | +1.46% | $10,258,992.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.49% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.14% | +3.41% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.79% | +3.06% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.16% | +2.43% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.14% | +2.41% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +3.22% | +3.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.44% | +2.85% |
+| TUT/USDT:USDT | below_1h_threshold | +2.20% | +2.61% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.90% | +2.32% |
+| BTW/USDT:USDT | below_1h_threshold | +1.53% | +1.94% |
 
 ## 7. 次に見るべき不足
 
