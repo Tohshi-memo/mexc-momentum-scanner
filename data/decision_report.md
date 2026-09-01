@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T14:06:25.724638+00:00
+- generated_at: 2026-09-01T14:11:30.818000+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13252**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T14:06:16.269574+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78122.3
+- 更新: 2026-09-01T14:11:21.257715+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=78313.8
 - Funnel: target 1036 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +62.89% | $2,624,222.44 |
-| USELESS/USDT:USDT | +38.51% | $32,884,471.17 |
-| ARB/USDT:USDT | +27.08% | $97,454,872.49 |
-| ONG/USDT:USDT | +17.98% | $6,727,092.52 |
-| CRV/USDT:USDT | +17.40% | $9,934,814.09 |
+| MARSCOIN/USDT:USDT | +65.84% | $2,677,290.38 |
+| USELESS/USDT:USDT | +38.51% | $33,020,845.70 |
+| ARB/USDT:USDT | +27.18% | $97,670,020.69 |
+| CRV/USDT:USDT | +17.78% | $9,965,646.50 |
+| ONG/USDT:USDT | +17.55% | $6,766,804.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.25% | +4.14% |
-| FF/USDT:USDT | below_1h_threshold | +2.90% | +2.80% |
-| ACE/USDT:USDT | below_1h_threshold | +2.36% | +2.26% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.15% | +2.04% |
-| DESTOCK/USDT:USDT | below_1h_threshold | +2.09% | +1.99% |
+| ACE/USDT:USDT | below_1h_threshold | +4.50% | +4.15% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +4.25% | +3.90% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.16% | +2.80% |
+| FF/USDT:USDT | below_1h_threshold | +3.13% | +2.78% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.18% | +1.83% |
 
 ## 7. 次に見るべき不足
 
