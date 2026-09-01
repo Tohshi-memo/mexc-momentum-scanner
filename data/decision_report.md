@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T13:46:24.494897+00:00
+- generated_at: 2026-09-01T13:51:27.968615+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13252**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T13:46:14.770793+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=77837.0
-- Funnel: target 1036 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-01T13:51:19.524542+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78142.5
+- Funnel: target 1036 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +57.91% | $2,516,976.08 |
-| USELESS/USDT:USDT | +40.06% | $31,963,574.16 |
-| ARB/USDT:USDT | +26.83% | $96,023,355.59 |
-| ONG/USDT:USDT | +19.97% | $6,686,345.36 |
-| CRV/USDT:USDT | +17.08% | $9,972,961.47 |
+| MARSCOIN/USDT:USDT | +57.06% | $2,555,406.15 |
+| USELESS/USDT:USDT | +39.60% | $32,095,112.61 |
+| ARB/USDT:USDT | +26.65% | $96,390,551.83 |
+| ONG/USDT:USDT | +20.27% | $6,700,181.91 |
+| CRV/USDT:USDT | +16.69% | $9,977,545.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.81% | +3.97% |
-| ACE/USDT:USDT | below_1h_threshold | +3.45% | +3.61% |
-| PONS/USDT:USDT | below_1h_threshold | +2.85% | +3.01% |
-| 0G/USDT:USDT | below_1h_threshold | +2.66% | +2.81% |
-| NOT/USDT:USDT | below_1h_threshold | +2.14% | +2.30% |
+| PONS/USDT:USDT | below_1h_threshold | +4.26% | +4.02% |
+| UAI/USDT:USDT | below_1h_threshold | +3.53% | +3.30% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.41% | +3.18% |
+| ACE/USDT:USDT | below_1h_threshold | +3.06% | +2.83% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.03% | +2.80% |
 
 ## 7. 次に見るべき不足
 
