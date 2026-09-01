@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T19:06:31.594814+00:00
+- generated_at: 2026-09-01T19:11:32.603099+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13258**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.08** / 初期 $100.00 (+15.08%)
-- 確定: 2088件 (Win 610 / Loss 816 / Flat 662) / pending 1件 / skip 2642件
+- 確定: 2088件 (Win 610 / Loss 816 / Flat 662) / pending 1件 / skip 2643件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000130 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.08
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T19:06:20.116922+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77211.1
-- Funnel: target 1036 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T19:11:20.370543+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77176.5
+- Funnel: target 1036 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +16.77% | $35,109,348.05 |
-| ACE/USDT:USDT | +11.35% | $5,283,714.83 |
-| MAGMA/USDT:USDT | +9.17% | $1,863,594.15 |
-| FILECOIN/USDT:USDT | +8.05% | $10,178,453.44 |
-| UAI/USDT:USDT | +6.42% | $4,970,040.49 |
+| USELESS/USDT:USDT | +16.10% | $35,326,201.59 |
+| ACE/USDT:USDT | +12.41% | $5,336,076.76 |
+| MAGMA/USDT:USDT | +11.12% | $1,880,659.59 |
+| FILECOIN/USDT:USDT | +8.20% | $10,290,776.66 |
+| UAI/USDT:USDT | +6.20% | $5,004,980.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +4.10% | +3.98% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.82% | +3.70% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.77% |
-| ONG/USDT:USDT | below_1h_threshold | +0.97% | +0.85% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.95% | +0.84% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.00% | +2.93% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.70% | +2.63% |
+| MRNASTOCK/USDT:USDT | below_1h_threshold | +1.89% | +1.81% |
+| ONG/USDT:USDT | below_1h_threshold | +1.28% | +1.20% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.93% | +0.85% |
 
 ## 7. 次に見るべき不足
 
