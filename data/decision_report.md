@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T06:21:27.754937+00:00
+- generated_at: 2026-09-01T06:26:20.280309+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13238**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.28** / 初期 $100.00 (+15.28%)
-- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2622件
+- 確定: 2087件 (Win 610 / Loss 815 / Flat 662) / pending 0件 / skip 2623件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000177 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T06:21:18.406040+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=78860.4
-- Funnel: target 1034 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T06:26:08.869738+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=78786.2
+- Funnel: target 1034 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +104.05% | $13,150,336.70 |
-| ARB/USDT:USDT | +26.31% | $65,450,557.68 |
-| USELESS/USDT:USDT | +24.14% | $20,356,796.13 |
-| PONS/USDT:USDT | +21.51% | $4,227,461.17 |
-| 0G/USDT:USDT | +17.49% | $28,335,356.28 |
+| BTR/USDT:USDT | +101.99% | $13,293,384.75 |
+| ARB/USDT:USDT | +26.57% | $65,592,843.60 |
+| USELESS/USDT:USDT | +23.69% | $20,418,572.43 |
+| PONS/USDT:USDT | +17.27% | $4,259,476.08 |
+| 0G/USDT:USDT | +16.22% | $28,500,393.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.39% | +4.76% |
-| ONG/USDT:USDT | below_1h_threshold | +3.87% | +4.23% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.25% | +2.62% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.85% | +2.21% |
-| 0G/USDT:USDT | below_1h_threshold | +1.69% | +2.05% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.08% | +2.54% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.49% | +1.95% |
+| KORU/USDT:USDT | below_1h_threshold | +1.47% | +1.93% |
+| JASMY/USDT:USDT | below_1h_threshold | +1.41% | +1.87% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.47% |
 
 ## 7. 次に見るべき不足
 
