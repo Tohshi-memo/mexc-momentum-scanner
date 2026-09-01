@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T04:26:28.280899+00:00
+- generated_at: 2026-09-01T04:31:31.723988+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13228**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.48** / 初期 $100.00 (+15.48%)
-- 確定: 2086件 (Win 610 / Loss 814 / Flat 662) / pending 1件 / skip 2613件
+- 確定: 2086件 (Win 610 / Loss 814 / Flat 662) / pending 1件 / skip 2614件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $115.48
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T04:26:12.366249+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78798.0
-- Funnel: target 1031 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-01T04:31:17.224081+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=78823.1
+- Funnel: target 1031 → liquid 150 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +70.82% | $8,762,452.06 |
-| USELESS/USDT:USDT | +28.57% | $19,389,065.21 |
-| ARB/USDT:USDT | +28.00% | $61,116,738.80 |
-| 0G/USDT:USDT | +16.91% | $27,404,671.79 |
-| CRV/USDT:USDT | +13.72% | $5,311,542.44 |
+| BTR/USDT:USDT | +77.91% | $8,868,672.13 |
+| USELESS/USDT:USDT | +28.39% | $19,410,187.12 |
+| ARB/USDT:USDT | +27.55% | $61,189,179.69 |
+| 0G/USDT:USDT | +18.12% | $27,481,945.29 |
+| CRV/USDT:USDT | +14.17% | $5,370,575.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPX/USDT:USDT | below_1h_threshold | +2.83% | +2.65% |
-| OP/USDT:USDT | below_1h_threshold | +2.56% | +2.38% |
-| BTR/USDT:USDT | below_1h_threshold | +2.54% | +2.36% |
-| NOT/USDT:USDT | below_1h_threshold | +1.96% | +1.78% |
-| COLLECT/USDT:USDT | below_1h_threshold | +1.67% | +1.49% |
+| SPX/USDT:USDT | below_1h_threshold | +3.64% | +3.42% |
+| OP/USDT:USDT | below_1h_threshold | +2.72% | +2.51% |
+| 0G/USDT:USDT | below_1h_threshold | +2.58% | +2.37% |
+| NOT/USDT:USDT | below_1h_threshold | +2.00% | +1.79% |
+| COLLECT/USDT:USDT | below_1h_threshold | +1.66% | +1.44% |
 
 ## 7. 次に見るべき不足
 
