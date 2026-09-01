@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T17:46:21.780507+00:00
+- generated_at: 2026-09-01T17:51:30.369803+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13254**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T17:46:12.044639+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=77469.1
+- 更新: 2026-09-01T17:51:20.237993+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77418.4
 - Funnel: target 1036 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1, 4h RSI 78.8 >= 65=1
+- Strict後reject: 4h RSI 78.0 >= 65=1, 4h RSI 80.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FILECOIN/USDT:USDT | +8.77% | $6,280,874.55 |
-| TUT/USDT:USDT | +6.12% | $3,883,232.78 |
-| ONG/USDT:USDT | +4.53% | $8,083,534.56 |
-| UAI/USDT:USDT | +4.35% | $4,682,711.59 |
-| MAGMA/USDT:USDT | +4.15% | $1,775,591.16 |
+| FILECOIN/USDT:USDT | +8.78% | $6,435,594.33 |
+| TUT/USDT:USDT | +6.22% | $3,935,369.13 |
+| ONG/USDT:USDT | +4.82% | $8,094,921.27 |
+| MAGMA/USDT:USDT | +4.34% | $1,776,403.23 |
+| BEAT/USDT:USDT | +4.12% | $5,122,263.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONG/USDT:USDT | below_1h_threshold | +3.11% | +3.23% |
-| TUT/USDT:USDT | below_1h_threshold | +3.09% | +3.21% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.34% | +2.46% |
-| BTW/USDT:USDT | below_1h_threshold | +2.25% | +2.37% |
-| XPL/USDT:USDT | below_1h_threshold | +2.09% | +2.20% |
+| ONG/USDT:USDT | below_1h_threshold | +3.39% | +3.57% |
+| TUT/USDT:USDT | below_1h_threshold | +3.18% | +3.37% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.58% | +2.76% |
+| BTW/USDT:USDT | below_1h_threshold | +2.27% | +2.46% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.25% | +2.43% |
 
 ## 7. 次に見るべき不足
 
