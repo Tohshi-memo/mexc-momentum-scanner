@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T01:11:25.384074+00:00
+- generated_at: 2026-09-01T01:16:30.288919+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13216**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T01:11:14.220492+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=78644.6
+- 更新: 2026-09-01T01:16:20.706840+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=78507.7
 - Funnel: target 1031 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +35.63% | $39,138,184.64 |
-| BTR/USDT:USDT | +25.97% | $6,416,238.12 |
-| USELESS/USDT:USDT | +24.16% | $16,927,614.22 |
-| 0G/USDT:USDT | +21.00% | $21,117,619.15 |
-| OP/USDT:USDT | +12.53% | $5,873,461.15 |
+| ARB/USDT:USDT | +34.40% | $40,079,197.15 |
+| BTR/USDT:USDT | +24.84% | $6,430,144.57 |
+| USELESS/USDT:USDT | +23.47% | $17,008,982.74 |
+| 0G/USDT:USDT | +17.73% | $21,445,328.07 |
+| OP/USDT:USDT | +12.53% | $5,961,119.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +2.91% | +2.88% |
-| 0G/USDT:USDT | below_1h_threshold | +2.36% | +2.32% |
-| KORU/USDT:USDT | below_1h_threshold | +2.15% | +2.12% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.01% | +1.97% |
-| NOT/USDT:USDT | below_1h_threshold | +1.99% | +1.95% |
+| SHEINSTOCK/USDT:USDT | below_1h_threshold | +2.89% | +3.03% |
+| KORU/USDT:USDT | below_1h_threshold | +2.15% | +2.29% |
+| NOT/USDT:USDT | below_1h_threshold | +1.88% | +2.02% |
+| CRV/USDT:USDT | below_1h_threshold | +1.47% | +1.61% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.43% | +1.57% |
 
 ## 7. 次に見るべき不足
 
