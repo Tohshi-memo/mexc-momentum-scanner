@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T02:56:20.094988+00:00
+- generated_at: 2026-09-01T03:01:11.884053+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13218**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T02:56:10.431812+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78384.5
+- 更新: 2026-09-01T03:01:04.315586+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78413.5
 - Funnel: target 1031 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +28.50% | $54,873,436.59 |
-| USELESS/USDT:USDT | +24.33% | $18,394,455.54 |
-| BTR/USDT:USDT | +22.19% | $6,787,149.26 |
-| 0G/USDT:USDT | +19.63% | $25,847,498.23 |
-| CRV/USDT:USDT | +12.53% | $4,522,788.15 |
+| BTR/USDT:USDT | +36.78% | $6,863,093.29 |
+| ARB/USDT:USDT | +28.79% | $55,147,021.46 |
+| USELESS/USDT:USDT | +23.90% | $18,354,788.06 |
+| 0G/USDT:USDT | +17.64% | $25,976,598.57 |
+| CRV/USDT:USDT | +12.31% | $4,520,997.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.58% | +3.56% |
-| AKE/USDT:USDT | below_1h_threshold | +3.35% | +3.34% |
-| JASMY/USDT:USDT | below_1h_threshold | +1.82% | +1.81% |
-| PONS/USDT:USDT | below_1h_threshold | +1.64% | +1.62% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
+| BTR/USDT:USDT | below_1h_threshold | +0.28% | +0.29% |
+| PONS/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
+| NOT/USDT:USDT | below_1h_threshold | +0.23% | +0.24% |
+| JASMY/USDT:USDT | below_1h_threshold | +0.22% | +0.23% |
 
 ## 7. 次に見るべき不足
 
