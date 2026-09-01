@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-01T00:51:33.629684+00:00
+- generated_at: 2026-09-01T00:56:37.393733+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13214**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-01T00:51:19.127769+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=78715.5
-- Funnel: target 1031 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 83.8 >= 65=1
+- 更新: 2026-09-01T00:56:23.913256+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=78606.1
+- Funnel: target 1031 → liquid 151 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.4 >= 65=1, 4h RSI 83.9 >= 65=1, 4h RSI 78.3 >= 65=1, 4h RSI 72.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +32.58% | $36,143,745.80 |
-| BTR/USDT:USDT | +28.61% | $6,376,723.03 |
-| USELESS/USDT:USDT | +25.21% | $16,802,955.62 |
-| 0G/USDT:USDT | +20.80% | $19,957,871.47 |
-| OP/USDT:USDT | +12.45% | $5,471,292.69 |
+| ARB/USDT:USDT | +33.39% | $36,838,273.89 |
+| BTR/USDT:USDT | +25.63% | $6,409,800.83 |
+| USELESS/USDT:USDT | +22.71% | $16,885,915.61 |
+| 0G/USDT:USDT | +16.37% | $20,251,344.04 |
+| OP/USDT:USDT | +12.65% | $5,604,510.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_relative_strength | +5.14% | +4.93% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.33% | +4.12% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +4.25% | +4.04% |
-| OP/USDT:USDT | below_1h_threshold | +3.89% | +3.68% |
-| PONS/USDT:USDT | below_1h_threshold | +3.65% | +3.44% |
+| OP/USDT:USDT | below_1h_threshold | +4.07% | +4.00% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.39% | +3.32% |
+| FET/USDT:USDT | below_1h_threshold | +2.35% | +2.27% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.05% | +1.98% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.69% | +1.62% |
 
 ## 7. 次に見るべき不足
 
