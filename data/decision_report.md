@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T19:06:34.634633+00:00
+- generated_at: 2026-09-02T19:11:21.572769+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13374**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T19:06:21.077901+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77323.2
-- Funnel: target 1044 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-02T19:11:11.895004+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77321.5
+- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +74.05% | $29,003,028.66 |
-| BONER/USDT:USDT | +26.67% | $2,943,259.69 |
-| FONE/USDT:USDT | +16.61% | $2,007,921.00 |
-| BTW/USDT:USDT | +13.88% | $5,596,260.79 |
-| MARSCOIN/USDT:USDT | +12.80% | $3,055,961.89 |
+| AKE/USDT:USDT | +76.97% | $29,459,645.31 |
+| BONER/USDT:USDT | +26.62% | $2,966,934.01 |
+| BTW/USDT:USDT | +13.67% | $5,702,278.00 |
+| FONE/USDT:USDT | +11.47% | $2,022,868.18 |
+| MARSCOIN/USDT:USDT | +11.17% | $3,061,499.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
 | DELLSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +4.42% |
-| BTW/USDT:USDT | below_1h_threshold | +3.75% | +3.78% |
-| CYS/USDT:USDT | below_1h_threshold | +3.05% | +3.08% |
-| AKE/USDT:USDT | below_1h_threshold | +2.27% | +2.29% |
-| BONER/USDT:USDT | below_1h_threshold | +2.25% | +2.28% |
+| BTW/USDT:USDT | below_1h_threshold | +4.07% | +4.09% |
+| AKE/USDT:USDT | below_1h_threshold | +3.80% | +3.82% |
+| CYS/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
+| BONER/USDT:USDT | below_1h_threshold | +2.22% | +2.24% |
 
 ## 7. 次に見るべき不足
 
