@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T15:46:40.679452+00:00
+- generated_at: 2026-09-02T15:51:34.874725+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13343**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.78** / 初期 $100.00 (+14.78%)
-- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2722件
+- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2723件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000263 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T15:46:26.133965+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=77259.7
-- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 2
+- 更新: 2026-09-02T15:51:21.837058+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=77100.0
+- Funnel: target 1044 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.0 >= 65=1
+- Strict後reject: 4h RSI 71.8 >= 65=1, 4h RSI 77.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +48.77% | $2,026,664.58 |
-| T/USDT:USDT | +39.90% | $15,227,891.02 |
-| MAGMA/USDT:USDT | +39.20% | $13,050,978.02 |
-| BULLA/USDT:USDT | +21.17% | $1,131,151.67 |
-| CASHCAT/USDT:USDT | +18.42% | $2,062,515.53 |
+| FONE/USDT:USDT | +44.44% | $2,030,837.20 |
+| MAGMA/USDT:USDT | +41.61% | $13,078,755.13 |
+| T/USDT:USDT | +39.29% | $15,290,910.61 |
+| MUBARAK/USDT:USDT | +29.03% | $1,011,431.93 |
+| AKE/USDT:USDT | +21.39% | $14,112,060.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.84% | +4.53% |
-| ZRO/USDT:USDT | below_1h_threshold | +4.14% | +3.84% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.77% | +2.46% |
-| SEI/USDT:USDT | below_1h_threshold | +2.45% | +2.14% |
-| FLOCK/USDT:USDT | below_1h_threshold | +1.87% | +1.56% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.62% | +4.52% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.10% | +3.00% |
+| SEI/USDT:USDT | below_1h_threshold | +2.88% | +2.78% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.70% | +2.61% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.57% | +2.48% |
 
 ## 7. 次に見るべき不足
 
