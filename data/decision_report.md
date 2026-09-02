@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-02T12:11:24.515051+00:00
+- generated_at: 2026-09-02T12:16:27.349510+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13333**
+- closed shadow trades: **13334**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13333, expectancy=+0.01%
+- 全期間 MARKET基準: n=13334, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.29%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,8 +22,8 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | LIMIT_5PCT | 7/20 | 35.0% | +1.96% | **+0.69%** |
-| LIMIT_ATR | 9/20 | 45.0% | +1.30% | **+0.58%** |
-| LIMIT_BB3S | 9/18 | 50.0% | +0.94% | **+0.47%** |
+| LIMIT_BB3S | 8/17 | 47.1% | +1.27% | **+0.60%** |
+| LIMIT_ATR | 10/20 | 50.0% | +0.98% | **+0.49%** |
 | LIMIT_FIB1272 | 3/20 | 15.0% | +2.48% | **+0.37%** |
 | LIMIT_6PCT | 2/20 | 10.0% | +1.89% | **+0.19%** |
 
@@ -34,8 +34,8 @@
 | LIMIT_1PCT_LONG | 18/20 | 90.0% | +1.06% | **+0.96%** |
 | LIMIT_6PCT_LONG | 8/20 | 40.0% | +1.44% | **+0.57%** |
 | MARKET_LONG | 20/20 | 100.0% | +0.49% | **+0.49%** |
-| LIMIT_9PCT_LONG | 2/20 | 10.0% | +1.10% | **+0.11%** |
-| LIMIT_FIB1272_LONG | 6/20 | 30.0% | +0.33% | **+0.10%** |
+| LIMIT_3PCT_LONG | 12/20 | 60.0% | +0.74% | **+0.44%** |
+| LIMIT_2PCT_LONG | 14/20 | 70.0% | +0.17% | **+0.12%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,18 +47,18 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$831.77** / 初期 $100.00 (+731.77%)
-- 確定: 4959件 (Win 1504 / Loss 1628 / Flat 1827) / skip 4935件
+- 確定: 4960件 (Win 1504 / Loss 1628 / Flat 1828) / skip 4935件
 - 成長率目線: 平均log +0.000427 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: FONE/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $831.77
+- 最新: T/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $831.77
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$174.97** / 初期 $100.00 (+74.97%)
-- 確定: 2312件 (Win 643 / Loss 553 / Flat 1116) / skip 4432件
+- 確定: 2313件 (Win 643 / Loss 553 / Flat 1117) / skip 4432件
 - 成長率目線: 平均log +0.000242 / 幾何平均 +0.024% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0335 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: FONE/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $174.97
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0514 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: T/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $174.97
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T12:11:14.850688+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=76729.3
+- 更新: 2026-09-02T12:16:16.211517+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=76849.0
 - Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +52.63% | $7,512,541.34 |
-| FONE/USDT:USDT | +49.56% | $1,834,698.23 |
-| MAGMA/USDT:USDT | +44.89% | $10,215,618.13 |
-| CASHCAT/USDT:USDT | +22.25% | $1,894,221.79 |
-| UAI/USDT:USDT | +18.77% | $28,067,323.61 |
+| T/USDT:USDT | +56.20% | $7,983,255.45 |
+| FONE/USDT:USDT | +51.14% | $1,838,766.86 |
+| MAGMA/USDT:USDT | +46.98% | $10,267,780.72 |
+| CASHCAT/USDT:USDT | +23.50% | $1,897,034.99 |
+| UAI/USDT:USDT | +20.14% | $28,121,990.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KITE/USDT:USDT | below_1h_threshold | +2.04% | +2.12% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.55% | +1.63% |
-| T/USDT:USDT | below_1h_threshold | +1.46% | +1.54% |
-| BTW/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
-| FONE/USDT:USDT | below_1h_threshold | +0.96% | +1.03% |
+| T/USDT:USDT | below_1h_threshold | +3.79% | +3.72% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.19% | +2.11% |
+| FONE/USDT:USDT | below_1h_threshold | +2.02% | +1.94% |
+| KITE/USDT:USDT | below_1h_threshold | +1.84% | +1.76% |
+| UNI/USDT:USDT | below_1h_threshold | +1.53% | +1.45% |
 
 ## 7. 次に見るべき不足
 
