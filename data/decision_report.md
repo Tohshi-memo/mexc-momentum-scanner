@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T19:16:16.151902+00:00
+- generated_at: 2026-09-02T19:21:19.352584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13374**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T19:16:06.503715+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77369.8
+- 更新: 2026-09-02T19:21:09.730787+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=77226.5
 - Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +76.27% | $29,831,593.45 |
-| BONER/USDT:USDT | +16.93% | $2,997,322.23 |
-| BTW/USDT:USDT | +13.27% | $5,811,345.54 |
-| FONE/USDT:USDT | +12.02% | $2,025,370.01 |
-| BULLA/USDT:USDT | +10.88% | $2,029,258.18 |
+| AKE/USDT:USDT | +79.23% | $30,297,598.42 |
+| BONER/USDT:USDT | +19.84% | $3,021,948.94 |
+| FONE/USDT:USDT | +15.40% | $2,032,629.47 |
+| BTW/USDT:USDT | +12.83% | $5,911,410.62 |
+| BULLA/USDT:USDT | +10.86% | $2,034,012.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +4.35% |
-| AKE/USDT:USDT | below_1h_threshold | +3.33% | +3.29% |
-| BTW/USDT:USDT | below_1h_threshold | +3.20% | +3.17% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.10% | +3.06% |
-| T/USDT:USDT | below_1h_threshold | +1.89% | +1.85% |
+| AKE/USDT:USDT | below_1h_threshold | +4.55% | +4.70% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +4.54% |
+| SEI/USDT:USDT | below_1h_threshold | +2.07% | +2.21% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.88% | +2.02% |
+| BTW/USDT:USDT | below_1h_threshold | +1.85% | +2.00% |
 
 ## 7. 次に見るべき不足
 
