@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T01:46:29.284096+00:00
+- generated_at: 2026-09-02T01:51:23.571717+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13284**
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T01:46:17.559237+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=76914.1
-- Funnel: target 1036 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-02T01:51:13.921805+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.60% price=76717.0
+- Funnel: target 1036 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +28.27% | $17,460,414.35 |
-| MAGMA/USDT:USDT | +26.10% | $4,749,736.50 |
-| FONE/USDT:USDT | +14.42% | $1,383,400.47 |
-| ACE/USDT:USDT | +11.31% | $10,942,141.99 |
-| FILECOIN/USDT:USDT | +8.29% | $21,706,392.75 |
+| UAI/USDT:USDT | +27.76% | $17,539,348.37 |
+| MAGMA/USDT:USDT | +25.84% | $4,793,007.59 |
+| FONE/USDT:USDT | +16.23% | $1,385,095.64 |
+| ACE/USDT:USDT | +14.63% | $10,995,848.50 |
+| BEAT/USDT:USDT | +7.21% | $6,862,701.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.90% | +4.24% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.12% | +3.46% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.73% | +3.08% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.69% | +2.04% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.94% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.32% | +3.92% |
+| BICO/USDT:USDT | below_1h_threshold | +3.13% | +3.73% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.94% | +3.54% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.58% | +3.18% |
+| BTW/USDT:USDT | below_1h_threshold | +1.90% | +2.50% |
 
 ## 7. 次に見るべき不足
 
