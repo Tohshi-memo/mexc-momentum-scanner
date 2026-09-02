@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T22:31:22.590242+00:00
+- generated_at: 2026-09-02T22:36:32.628464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13396**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T22:31:13.533345+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=77008.5
-- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-02T22:36:23.568195+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=77047.6
+- Funnel: target 1044 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +53.35% | $69,892,278.22 |
-| PONS/USDT:USDT | +25.26% | $3,192,367.79 |
-| SNOWSTOCK/USDT:USDT | +21.60% | $1,361,400.67 |
-| BTW/USDT:USDT | +20.34% | $10,955,591.26 |
-| BONER/USDT:USDT | +15.38% | $2,154,953.75 |
+| AKE/USDT:USDT | +58.04% | $70,344,885.50 |
+| SNOWSTOCK/USDT:USDT | +21.34% | $1,367,362.03 |
+| PONS/USDT:USDT | +20.42% | $3,248,514.43 |
+| BTW/USDT:USDT | +19.18% | $10,996,820.03 |
+| BONER/USDT:USDT | +15.43% | $2,157,887.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +1.82% | +2.14% |
-| KORU/USDT:USDT | below_1h_threshold | +1.70% | +2.02% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.87% |
-| BICO/USDT:USDT | below_1h_threshold | +1.37% | +1.69% |
-| MUU/USDT:USDT | below_1h_threshold | +0.80% | +1.11% |
+| PONS/USDT:USDT | below_1h_threshold | +3.27% | +3.54% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.92% | +2.18% |
+| KORU/USDT:USDT | below_1h_threshold | +1.70% | +1.97% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.56% | +1.83% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.82% |
 
 ## 7. 次に見るべき不足
 
