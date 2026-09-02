@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T21:21:20.363858+00:00
+- generated_at: 2026-09-02T21:26:43.071788+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13384**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.67** / 初期 $100.00 (+14.67%)
-- 確定: 2098件 (Win 612 / Loss 821 / Flat 665) / pending 5件 / skip 2755件
+- 確定: 2098件 (Win 612 / Loss 821 / Flat 665) / pending 6件 / skip 2755件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000488 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.67
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T21:21:11.935069+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=77242.7
-- Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1, 4h RSI 92.8 >= 65=1
+- 更新: 2026-09-02T21:26:32.140246+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=77273.0
+- Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.5 >= 65=1, 4h RSI 92.7 >= 65=1, 4h RSI 92.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +109.23% | $49,661,279.20 |
-| BULLA/USDT:USDT | +21.32% | $2,812,435.12 |
-| SNOWSTOCK/USDT:USDT | +20.63% | $1,274,116.47 |
-| BTW/USDT:USDT | +17.81% | $7,159,175.81 |
-| MARSCOIN/USDT:USDT | +16.53% | $3,103,206.69 |
+| AKE/USDT:USDT | +108.35% | $50,104,658.08 |
+| BULLA/USDT:USDT | +22.87% | $2,838,786.61 |
+| SNOWSTOCK/USDT:USDT | +20.25% | $1,277,387.37 |
+| MARSCOIN/USDT:USDT | +17.36% | $3,110,270.36 |
+| BTW/USDT:USDT | +16.58% | $7,324,697.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.67% | +4.82% |
-| EGLD/USDT:USDT | below_1h_threshold | +3.43% | +3.59% |
-| DASH/USDT:USDT | below_1h_threshold | +2.19% | +2.34% |
-| PONS/USDT:USDT | below_1h_threshold | +1.85% | +2.01% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.64% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.91% | +4.03% |
+| PONS/USDT:USDT | below_1h_threshold | +3.82% | +3.94% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.84% | +1.96% |
+| CRV/USDT:USDT | below_1h_threshold | +1.75% | +1.87% |
+| DASH/USDT:USDT | below_1h_threshold | +1.60% | +1.72% |
 
 ## 7. 次に見るべき不足
 
