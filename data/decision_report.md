@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T16:11:36.381787+00:00
+- generated_at: 2026-09-02T16:16:31.628145+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13347**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T16:11:24.083148+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77237.4
-- Funnel: target 1044 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 88.8 >= 65=1
+- 更新: 2026-09-02T16:16:23.459219+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77302.7
+- Funnel: target 1044 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.1 >= 65=1, 4h RSI 88.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +11.53% | $26,696,159.65 |
-| BULLA/USDT:USDT | +7.13% | $1,372,297.60 |
-| MARSCOIN/USDT:USDT | +5.39% | $3,263,649.17 |
-| NIULAI/USDT:USDT | +4.05% | $2,488,579.42 |
-| AKE/USDT:USDT | +4.02% | $14,581,677.94 |
+| USELESS/USDT:USDT | +10.27% | $27,527,308.44 |
+| BULLA/USDT:USDT | +6.01% | $1,432,593.05 |
+| NIULAI/USDT:USDT | +4.65% | $2,513,646.59 |
+| MARSCOIN/USDT:USDT | +3.69% | $3,289,673.39 |
+| EGLD/USDT:USDT | +2.73% | $2,976,663.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +4.52% | +4.54% |
-| AKE/USDT:USDT | below_1h_threshold | +4.14% | +4.16% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.59% | +2.60% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.26% |
-| UAI/USDT:USDT | below_1h_threshold | +2.21% | +2.23% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.20% | +4.13% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.69% | +3.63% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.80% | +2.73% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +2.24% | +2.17% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.83% | +1.76% |
 
 ## 7. 次に見るべき不足
 
