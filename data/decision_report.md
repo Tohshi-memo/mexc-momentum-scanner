@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T19:46:19.973663+00:00
+- generated_at: 2026-09-02T19:51:12.355594+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13374**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.78** / 初期 $100.00 (+14.78%)
-- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2754件
+- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2755件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000531 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T19:46:11.124239+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=77201.8
-- Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T19:51:04.333515+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77204.0
+- Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +78.53% | $32,404,070.22 |
-| BONER/USDT:USDT | +24.38% | $3,057,551.19 |
-| BULLA/USDT:USDT | +13.56% | $2,300,868.17 |
-| BTW/USDT:USDT | +13.53% | $6,154,286.05 |
-| MARSCOIN/USDT:USDT | +9.46% | $3,104,487.86 |
+| AKE/USDT:USDT | +80.11% | $32,619,880.38 |
+| BONER/USDT:USDT | +25.74% | $3,064,254.42 |
+| BULLA/USDT:USDT | +13.35% | $2,310,081.62 |
+| BTW/USDT:USDT | +12.80% | $6,178,673.06 |
+| MARSCOIN/USDT:USDT | +10.29% | $3,110,680.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.76% | +4.94% |
 | DELLSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +4.57% |
-| BTW/USDT:USDT | below_1h_threshold | +3.37% | +3.55% |
-| T/USDT:USDT | below_1h_threshold | +3.20% | +3.38% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.60% | +2.78% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.44% | +3.62% |
+| BTW/USDT:USDT | below_1h_threshold | +2.61% | +2.79% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.41% | +2.59% |
+| T/USDT:USDT | below_1h_threshold | +2.37% | +2.55% |
 
 ## 7. 次に見るべき不足
 
