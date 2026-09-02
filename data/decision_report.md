@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T22:06:19.571416+00:00
+- generated_at: 2026-09-02T22:11:16.706041+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13395**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T22:06:12.091462+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=77119.1
-- Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-02T22:11:09.209853+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=77063.4
+- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +55.61% | $66,427,673.09 |
-| BULLA/USDT:USDT | +22.50% | $3,451,638.55 |
-| SNOWSTOCK/USDT:USDT | +21.72% | $1,318,413.80 |
-| BONER/USDT:USDT | +21.45% | $2,129,331.82 |
-| PONS/USDT:USDT | +20.12% | $2,960,221.38 |
+| AKE/USDT:USDT | +48.57% | $67,790,736.60 |
+| BULLA/USDT:USDT | +25.18% | $3,479,136.03 |
+| PONS/USDT:USDT | +21.72% | $3,006,994.95 |
+| SNOWSTOCK/USDT:USDT | +21.57% | $1,319,258.58 |
+| BONER/USDT:USDT | +21.06% | $2,137,598.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.68% | +2.86% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.19% | +2.36% |
-| KORU/USDT:USDT | below_1h_threshold | +1.70% | +1.87% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.72% |
-| ARB/USDT:USDT | below_1h_threshold | +1.48% | +1.65% |
+| PONS/USDT:USDT | below_1h_threshold | +4.14% | +4.39% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.91% | +4.15% |
+| KORU/USDT:USDT | below_1h_threshold | +1.70% | +1.95% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.80% |
+| ARB/USDT:USDT | below_1h_threshold | +0.92% | +1.17% |
 
 ## 7. 次に見るべき不足
 
