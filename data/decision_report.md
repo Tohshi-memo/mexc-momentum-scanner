@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-02T04:16:23.219476+00:00
+- generated_at: 2026-09-02T04:21:25.751639+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13297**
+- closed shadow trades: **13298**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13297, expectancy=+0.01%
+- 全期間 MARKET基準: n=13298, expectancy=+0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -21,11 +21,11 @@
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_8PCT | 5/20 | 25.0% | +4.74% | **+1.19%** |
-| LIMIT_10PCT | 3/20 | 15.0% | +4.00% | **+0.60%** |
-| LIMIT_5PCT | 12/20 | 60.0% | +0.89% | **+0.53%** |
-| LIMIT_9PCT | 3/20 | 15.0% | +2.86% | **+0.43%** |
-| LIMIT_6PCT | 7/20 | 35.0% | +1.11% | **+0.39%** |
+| LIMIT_10PCT | 4/20 | 20.0% | +5.00% | **+1.00%** |
+| LIMIT_8PCT | 6/20 | 30.0% | +3.28% | **+0.99%** |
+| LIMIT_5PCT | 13/20 | 65.0% | +0.51% | **+0.33%** |
+| LIMIT_9PCT | 4/20 | 20.0% | +1.15% | **+0.23%** |
+| LIMIT_6PCT | 8/20 | 40.0% | +0.47% | **+0.19%** |
 
 ### シャドウ上位 LONG
 
@@ -47,31 +47,31 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$824.64** / 初期 $100.00 (+724.64%)
-- 確定: 4932件 (Win 1502 / Loss 1625 / Flat 1805) / skip 4926件
+- 確定: 4933件 (Win 1502 / Loss 1625 / Flat 1806) / skip 4926件
 - 成長率目線: 平均log +0.000428 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: CASHCAT/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $824.64
+- 最新: FONE/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account +0.00% 残高後 $824.64
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$175.81** / 初期 $100.00 (+75.81%)
-- 確定: 2276件 (Win 635 / Loss 545 / Flat 1096) / skip 4432件
-- 成長率目線: 平均log +0.000248 / 幾何平均 +0.025% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0856 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: CASHCAT/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $175.81
+- 残高: **$175.19** / 初期 $100.00 (+75.19%)
+- 確定: 2277件 (Win 635 / Loss 546 / Flat 1096) / skip 4432件
+- 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0991 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: FONE/USDT:USDT `LIMIT_6PCT` SL_HIT account -0.35% 残高後 $175.19
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.88** / 初期 $100.00 (+14.88%)
-- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2682件
+- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2683件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000298 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000315 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FILECOIN/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T04:16:13.359158+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=77356.0
+- 更新: 2026-09-02T04:21:12.462232+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=77382.3
 - Funnel: target 1036 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +27.85% | $19,207,242.70 |
-| MAGMA/USDT:USDT | +27.25% | $5,314,870.12 |
-| CASHCAT/USDT:USDT | +23.87% | $1,454,372.08 |
-| FONE/USDT:USDT | +15.20% | $1,387,846.70 |
-| FILECOIN/USDT:USDT | +12.75% | $24,510,572.96 |
+| UAI/USDT:USDT | +28.40% | $19,248,634.63 |
+| MAGMA/USDT:USDT | +27.36% | $5,329,619.07 |
+| CASHCAT/USDT:USDT | +25.91% | $1,463,565.16 |
+| FONE/USDT:USDT | +25.61% | $1,400,362.97 |
+| FILECOIN/USDT:USDT | +10.93% | $24,672,098.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FF/USDT:USDT | below_1h_threshold | +2.46% | +2.69% |
-| UNI/USDT:USDT | below_1h_threshold | +1.64% | +1.87% |
-| ICP/USDT:USDT | below_1h_threshold | +1.25% | +1.48% |
-| ARB/USDT:USDT | below_1h_threshold | +1.10% | +1.33% |
-| BTW/USDT:USDT | below_1h_threshold | +1.02% | +1.25% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.37% | +2.57% |
+| FF/USDT:USDT | below_1h_threshold | +2.20% | +2.39% |
+| UNI/USDT:USDT | below_1h_threshold | +1.95% | +2.15% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.76% | +1.96% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.34% | +1.54% |
 
 ## 7. 次に見るべき不足
 
