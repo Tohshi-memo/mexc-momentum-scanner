@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T22:56:30.752474+00:00
+- generated_at: 2026-09-02T23:01:19.864935+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13398**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T22:56:19.684724+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=76999.2
-- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.5 >= 65=1, 4h RSI 90.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-02T23:01:10.285649+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77004.3
+- Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +60.98% | $71,097,007.69 |
-| PONS/USDT:USDT | +23.27% | $3,318,902.99 |
-| SNOWSTOCK/USDT:USDT | +21.44% | $1,376,139.21 |
-| EGLD/USDT:USDT | +20.42% | $7,883,658.94 |
-| MARSCOIN/USDT:USDT | +13.07% | $3,045,078.70 |
+| AKE/USDT:USDT | +58.86% | $71,360,229.80 |
+| PONS/USDT:USDT | +24.06% | $3,153,794.85 |
+| SNOWSTOCK/USDT:USDT | +21.47% | $1,374,312.43 |
+| EGLD/USDT:USDT | +19.22% | $7,957,103.25 |
+| MARSCOIN/USDT:USDT | +11.92% | $2,980,708.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +2.20% | +2.53% |
-| APT/USDT:USDT | below_1h_threshold | +1.81% | +2.14% |
-| KORU/USDT:USDT | below_1h_threshold | +1.70% | +2.03% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.88% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.48% | +1.81% |
+| BONER/USDT:USDT | below_1h_threshold | +2.14% | +2.13% |
+| PONS/USDT:USDT | below_1h_threshold | +0.56% | +0.55% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
+| BTW/USDT:USDT | below_1h_threshold | +0.34% | +0.33% |
+| POL/USDT:USDT | below_1h_threshold | +0.29% | +0.28% |
 
 ## 7. 次に見るべき不足
 
