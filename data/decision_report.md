@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T13:41:25.587711+00:00
+- generated_at: 2026-09-02T13:46:22.038963+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13336**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.78** / 初期 $100.00 (+14.78%)
-- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2711件
+- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2712件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000185 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T13:41:16.172652+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=76757.4
-- Funnel: target 1044 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T13:46:09.945695+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.03% price=77365.8
+- Funnel: target 1044 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +51.45% | $11,698,077.34 |
-| MAGMA/USDT:USDT | +44.24% | $10,923,956.73 |
-| FONE/USDT:USDT | +39.87% | $1,892,106.72 |
-| CASHCAT/USDT:USDT | +21.16% | $1,955,255.39 |
-| UAI/USDT:USDT | +21.00% | $29,348,851.42 |
+| T/USDT:USDT | +47.53% | $12,135,284.75 |
+| MAGMA/USDT:USDT | +44.39% | $10,962,799.35 |
+| FONE/USDT:USDT | +42.31% | $1,894,674.18 |
+| UAI/USDT:USDT | +21.80% | $29,486,079.10 |
+| CASHCAT/USDT:USDT | +21.66% | $1,958,461.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.69% | +4.45% |
-| SYRUP/USDT:USDT | below_1h_threshold | +2.75% | +2.51% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.65% | +1.41% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.52% | +1.28% |
-| UAI/USDT:USDT | below_1h_threshold | +1.44% | +1.21% |
+| SYRUP/USDT:USDT | below_1h_threshold | +3.37% | +2.34% |
+| ARB/USDT:USDT | below_1h_threshold | +3.26% | +2.23% |
+| PYTH/USDT:USDT | below_1h_threshold | +2.69% | +1.66% |
+| UAI/USDT:USDT | below_1h_threshold | +2.24% | +1.21% |
+| ICP/USDT:USDT | below_1h_threshold | +1.86% | +0.82% |
 
 ## 7. 次に見るべき不足
 
