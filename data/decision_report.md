@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T08:06:17.943232+00:00
+- generated_at: 2026-09-02T08:11:21.056432+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13324**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T08:06:08.045773+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77459.2
+- 更新: 2026-09-02T08:11:14.257621+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77495.6
 - Funnel: target 1041 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +56.42% | $1,671,495.53 |
-| MAGMA/USDT:USDT | +44.48% | $6,771,449.85 |
-| CASHCAT/USDT:USDT | +34.15% | $1,593,178.29 |
-| BONER/USDT:USDT | +25.45% | $2,574,958.27 |
-| UAI/USDT:USDT | +20.23% | $23,777,718.67 |
+| FONE/USDT:USDT | +53.82% | $1,677,662.01 |
+| MAGMA/USDT:USDT | +43.39% | $6,812,723.12 |
+| CASHCAT/USDT:USDT | +31.87% | $1,603,372.79 |
+| BONER/USDT:USDT | +24.41% | $2,578,750.05 |
+| UAI/USDT:USDT | +20.54% | $23,874,203.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +3.82% | +3.80% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.98% | +2.95% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.67% | +1.65% |
-| ARB/USDT:USDT | below_1h_threshold | +1.65% | +1.63% |
-| ACE/USDT:USDT | below_1h_threshold | +0.79% | +0.77% |
+| FONE/USDT:USDT | below_1h_threshold | +2.09% | +2.02% |
+| ARB/USDT:USDT | below_1h_threshold | +1.88% | +1.81% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.19% | +1.12% |
+| FF/USDT:USDT | below_1h_threshold | +1.08% | +1.01% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.79% | +0.72% |
 
 ## 7. 次に見るべき不足
 
