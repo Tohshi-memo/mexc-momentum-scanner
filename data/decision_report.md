@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T18:46:39.347766+00:00
+- generated_at: 2026-09-02T18:51:32.245458+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13368**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.78** / 初期 $100.00 (+14.78%)
-- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2750件
+- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2751件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000457 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T18:46:22.704739+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77297.8
-- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 89.2 >= 65=1
+- 更新: 2026-09-02T18:51:19.146506+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77340.2
+- Funnel: target 1044 → liquid 164 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 89.7 >= 65=1, 4h RSI 73.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +65.16% | $27,531,355.13 |
-| FONE/USDT:USDT | +21.03% | $2,059,147.43 |
-| BONER/USDT:USDT | +15.73% | $2,934,465.13 |
-| BULLA/USDT:USDT | +8.91% | $1,895,844.40 |
-| MARSCOIN/USDT:USDT | +8.62% | $3,104,060.16 |
+| AKE/USDT:USDT | +67.64% | $27,886,975.44 |
+| FONE/USDT:USDT | +19.89% | $2,075,747.64 |
+| BONER/USDT:USDT | +14.67% | $2,950,814.26 |
+| BTW/USDT:USDT | +10.85% | $5,011,238.07 |
+| NIULAI/USDT:USDT | +9.22% | $2,461,638.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.96% | +4.03% |
-| PONS/USDT:USDT | below_1h_threshold | +2.46% | +2.52% |
-| OP/USDT:USDT | below_1h_threshold | +1.95% | +2.02% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.52% | +1.59% |
-| ARB/USDT:USDT | below_1h_threshold | +1.51% | +1.57% |
+| PONS/USDT:USDT | below_1h_threshold | +4.23% | +4.25% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.85% | +3.86% |
+| OP/USDT:USDT | below_1h_threshold | +2.22% | +2.23% |
+| APT/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
+| ARB/USDT:USDT | below_1h_threshold | +1.57% | +1.58% |
 
 ## 7. 次に見るべき不足
 
