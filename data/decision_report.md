@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T14:56:22.911745+00:00
+- generated_at: 2026-09-02T15:01:25.216948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13341**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T14:56:11.580958+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77130.4
-- Funnel: target 1044 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-02T15:01:16.544602+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=76950.8
+- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +44.95% | $14,324,636.81 |
-| MAGMA/USDT:USDT | +42.31% | $12,428,405.81 |
-| FONE/USDT:USDT | +36.32% | $1,967,457.10 |
-| BULLA/USDT:USDT | +18.23% | $1,010,045.42 |
-| PYTH/USDT:USDT | +13.24% | $4,072,465.22 |
+| T/USDT:USDT | +43.82% | $14,462,792.42 |
+| MAGMA/USDT:USDT | +42.53% | $12,593,190.02 |
+| FONE/USDT:USDT | +30.26% | $1,950,565.19 |
+| BULLA/USDT:USDT | +17.88% | $1,008,997.94 |
+| CASHCAT/USDT:USDT | +13.19% | $2,026,170.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_1h_threshold | +4.94% | +4.92% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.85% | +3.83% |
-| PYTH/USDT:USDT | below_1h_threshold | +3.36% | +3.33% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +2.95% | +2.92% |
-| ASTER/USDT:USDT | below_1h_threshold | +2.88% | +2.86% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.66% | +1.76% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.63% | +1.73% |
+| AKE/USDT:USDT | below_1h_threshold | +1.52% | +1.61% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.52% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.13% | +1.23% |
 
 ## 7. 次に見るべき不足
 
