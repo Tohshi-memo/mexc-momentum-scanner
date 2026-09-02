@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T14:06:23.268582+00:00
+- generated_at: 2026-09-02T14:11:26.872096+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13338**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T14:06:13.390795+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77112.5
+- 更新: 2026-09-02T14:11:17.204909+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=77233.4
 - Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1
+- Strict後reject: 4h RSI 75.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +43.99% | $13,184,668.51 |
-| MAGMA/USDT:USDT | +43.05% | $11,216,888.57 |
-| FONE/USDT:USDT | +39.08% | $1,883,542.77 |
-| AKE/USDT:USDT | +26.96% | $6,057,305.06 |
-| CASHCAT/USDT:USDT | +26.55% | $1,964,911.43 |
+| T/USDT:USDT | +44.97% | $13,367,572.30 |
+| MAGMA/USDT:USDT | +43.45% | $11,241,680.61 |
+| FONE/USDT:USDT | +42.86% | $1,886,852.25 |
+| CASHCAT/USDT:USDT | +26.80% | $1,968,836.62 |
+| AKE/USDT:USDT | +26.45% | $6,800,289.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.47% |
-| NEMSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
-| NICKEL/USDT:USDT | below_1h_threshold | +1.73% | +1.73% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.67% | +1.67% |
-| BTW/USDT:USDT | below_1h_threshold | +1.02% | +1.02% |
+| FONE/USDT:USDT | below_1h_threshold | +2.89% | +2.74% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +2.47% | +2.31% |
+| NEMSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.78% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.75% | +1.59% |
+| NICKEL/USDT:USDT | below_1h_threshold | +1.73% | +1.57% |
 
 ## 7. 次に見るべき不足
 
