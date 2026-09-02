@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T07:16:21.235218+00:00
+- generated_at: 2026-09-02T07:21:20.274577+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13318**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T07:16:11.081605+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77603.4
-- Funnel: target 1041 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 67.4 >= 65=1
+- 更新: 2026-09-02T07:21:12.669723+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77615.2
+- Funnel: target 1041 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +46.57% | $1,617,420.00 |
-| MAGMA/USDT:USDT | +38.29% | $6,204,425.77 |
-| CASHCAT/USDT:USDT | +32.68% | $1,517,227.54 |
-| UAI/USDT:USDT | +25.69% | $22,366,633.25 |
-| BONER/USDT:USDT | +23.14% | $2,579,731.78 |
+| FONE/USDT:USDT | +46.96% | $1,620,426.84 |
+| MAGMA/USDT:USDT | +38.97% | $6,228,084.90 |
+| CASHCAT/USDT:USDT | +34.07% | $1,533,305.00 |
+| UAI/USDT:USDT | +26.48% | $22,484,848.37 |
+| T/USDT:USDT | +22.22% | $1,023,946.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.26% | +3.23% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.00% | +2.97% |
-| FF/USDT:USDT | below_1h_threshold | +2.61% | +2.57% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.22% | +1.19% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.97% | +0.93% |
+| UAI/USDT:USDT | below_1h_threshold | +3.68% | +3.63% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.16% | +3.12% |
+| FF/USDT:USDT | below_1h_threshold | +3.16% | +3.11% |
+| BONER/USDT:USDT | below_1h_threshold | +2.26% | +2.21% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.44% | +1.39% |
 
 ## 7. 次に見るべき不足
 
