@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T05:06:21.527530+00:00
+- generated_at: 2026-09-02T05:11:18.940167+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13302**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T05:06:12.692204+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=77415.1
-- Funnel: target 1041 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T05:11:12.405670+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=77464.5
+- Funnel: target 1041 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +30.37% | $5,390,769.45 |
-| UAI/USDT:USDT | +25.88% | $19,562,634.49 |
-| CASHCAT/USDT:USDT | +23.13% | $1,423,815.92 |
-| FONE/USDT:USDT | +15.91% | $1,401,826.97 |
-| FILECOIN/USDT:USDT | +12.42% | $24,920,867.99 |
+| MAGMA/USDT:USDT | +30.85% | $5,419,355.08 |
+| UAI/USDT:USDT | +25.18% | $19,617,183.35 |
+| CASHCAT/USDT:USDT | +21.87% | $1,429,359.90 |
+| BONER/USDT:USDT | +16.09% | $2,583,605.95 |
+| FONE/USDT:USDT | +13.79% | $1,403,239.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +3.97% | +4.12% |
-| BONER/USDT:USDT | below_1h_threshold | +3.13% | +3.27% |
-| BTW/USDT:USDT | below_1h_threshold | +1.78% | +1.93% |
-| ACE/USDT:USDT | below_1h_threshold | +0.87% | +1.02% |
-| XMR/USDT:USDT | below_1h_threshold | +0.38% | +0.52% |
+| BTW/USDT:USDT | below_1h_threshold | +2.17% | +2.25% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.10% | +1.18% |
+| AR/USDT:USDT | below_1h_threshold | +0.91% | +0.99% |
+| ICP/USDT:USDT | below_1h_threshold | +0.75% | +0.83% |
+| BICO/USDT:USDT | below_1h_threshold | +0.42% | +0.50% |
 
 ## 7. 次に見るべき不足
 
