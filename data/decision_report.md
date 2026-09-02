@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T15:16:29.054464+00:00
+- generated_at: 2026-09-02T15:21:34.752001+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13342**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.78** / 初期 $100.00 (+14.78%)
-- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2719件
+- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2720件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T15:16:15.503605+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=76829.4
-- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T15:21:22.389476+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=76986.9
+- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +44.99% | $1,981,713.77 |
-| T/USDT:USDT | +41.79% | $14,703,668.41 |
-| MAGMA/USDT:USDT | +40.72% | $12,830,587.08 |
-| BULLA/USDT:USDT | +17.58% | $1,059,733.84 |
-| UAI/USDT:USDT | +13.05% | $33,458,583.64 |
+| FONE/USDT:USDT | +43.57% | $1,990,224.71 |
+| T/USDT:USDT | +42.61% | $14,787,506.00 |
+| MAGMA/USDT:USDT | +40.02% | $12,896,647.54 |
+| BULLA/USDT:USDT | +18.65% | $1,079,309.08 |
+| CASHCAT/USDT:USDT | +14.20% | $2,041,150.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.11% | +2.36% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.66% | +1.92% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.63% | +1.89% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.68% |
-| BTW/USDT:USDT | below_1h_threshold | +1.25% | +1.50% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.95% | +2.00% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.66% | +1.71% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.63% | +1.68% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.47% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.22% | +1.27% |
 
 ## 7. 次に見るべき不足
 
