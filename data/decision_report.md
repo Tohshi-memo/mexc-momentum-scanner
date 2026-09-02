@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T22:01:36.777531+00:00
+- generated_at: 2026-09-02T22:06:19.571416+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13395**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T22:01:23.742905+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77222.8
+- 更新: 2026-09-02T22:06:12.091462+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=77119.1
 - Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +51.21% | $64,963,253.95 |
-| BTW/USDT:USDT | +24.80% | $10,026,867.70 |
-| BONER/USDT:USDT | +24.36% | $2,124,487.61 |
-| SNOWSTOCK/USDT:USDT | +21.89% | $1,317,531.50 |
-| BULLA/USDT:USDT | +19.64% | $3,407,469.24 |
+| AKE/USDT:USDT | +55.61% | $66,427,673.09 |
+| BULLA/USDT:USDT | +22.50% | $3,451,638.55 |
+| SNOWSTOCK/USDT:USDT | +21.72% | $1,318,413.80 |
+| BONER/USDT:USDT | +21.45% | $2,129,331.82 |
+| PONS/USDT:USDT | +20.12% | $2,960,221.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.70% | +1.74% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.59% |
-| BONER/USDT:USDT | below_1h_threshold | +1.24% | +1.28% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +0.88% | +0.93% |
-| MUU/USDT:USDT | below_1h_threshold | +0.80% | +0.84% |
+| PONS/USDT:USDT | below_1h_threshold | +2.68% | +2.86% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.19% | +2.36% |
+| KORU/USDT:USDT | below_1h_threshold | +1.70% | +1.87% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.72% |
+| ARB/USDT:USDT | below_1h_threshold | +1.48% | +1.65% |
 
 ## 7. 次に見るべき不足
 
