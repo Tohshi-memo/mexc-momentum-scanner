@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T22:21:19.300866+00:00
+- generated_at: 2026-09-02T22:26:18.166161+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13396**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T22:21:09.597848+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=77035.1
+- 更新: 2026-09-02T22:26:08.709600+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=77019.6
 - Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +52.63% | $69,265,662.58 |
-| SNOWSTOCK/USDT:USDT | +21.55% | $1,345,561.47 |
-| PONS/USDT:USDT | +18.72% | $3,080,727.78 |
-| BONER/USDT:USDT | +17.85% | $2,143,862.19 |
-| BTW/USDT:USDT | +15.28% | $10,720,842.93 |
+| AKE/USDT:USDT | +56.06% | $69,599,751.56 |
+| SNOWSTOCK/USDT:USDT | +22.01% | $1,358,271.50 |
+| PONS/USDT:USDT | +21.67% | $3,103,586.96 |
+| BONER/USDT:USDT | +14.09% | $2,150,825.26 |
+| EGLD/USDT:USDT | +13.84% | $6,612,555.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +1.77% | +2.05% |
-| KORU/USDT:USDT | below_1h_threshold | +1.70% | +1.98% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.83% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.35% | +1.63% |
-| MUU/USDT:USDT | below_1h_threshold | +0.80% | +1.08% |
+| PONS/USDT:USDT | below_1h_threshold | +4.34% | +4.64% |
+| KORU/USDT:USDT | below_1h_threshold | +1.70% | +2.00% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.85% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.21% | +1.51% |
+| BICO/USDT:USDT | below_1h_threshold | +0.85% | +1.16% |
 
 ## 7. 次に見るべき不足
 
