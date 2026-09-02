@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T22:26:18.166161+00:00
+- generated_at: 2026-09-02T22:31:22.590242+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13396**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.16** / 初期 $100.00 (+14.16%)
-- 確定: 2107件 (Win 614 / Loss 827 / Flat 666) / pending 4件 / skip 2760件
+- 確定: 2107件 (Win 614 / Loss 827 / Flat 666) / pending 5件 / skip 2760件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000389 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BULLA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.16
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T22:26:08.709600+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.30% price=77019.6
-- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T22:31:13.533345+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=77008.5
+- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +56.06% | $69,599,751.56 |
-| SNOWSTOCK/USDT:USDT | +22.01% | $1,358,271.50 |
-| PONS/USDT:USDT | +21.67% | $3,103,586.96 |
-| BONER/USDT:USDT | +14.09% | $2,150,825.26 |
-| EGLD/USDT:USDT | +13.84% | $6,612,555.63 |
+| AKE/USDT:USDT | +53.35% | $69,892,278.22 |
+| PONS/USDT:USDT | +25.26% | $3,192,367.79 |
+| SNOWSTOCK/USDT:USDT | +21.60% | $1,361,400.67 |
+| BTW/USDT:USDT | +20.34% | $10,955,591.26 |
+| BONER/USDT:USDT | +15.38% | $2,154,953.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.34% | +4.64% |
-| KORU/USDT:USDT | below_1h_threshold | +1.70% | +2.00% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.85% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.21% | +1.51% |
-| BICO/USDT:USDT | below_1h_threshold | +0.85% | +1.16% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.82% | +2.14% |
+| KORU/USDT:USDT | below_1h_threshold | +1.70% | +2.02% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.87% |
+| BICO/USDT:USDT | below_1h_threshold | +1.37% | +1.69% |
+| MUU/USDT:USDT | below_1h_threshold | +0.80% | +1.11% |
 
 ## 7. 次に見るべき不足
 
