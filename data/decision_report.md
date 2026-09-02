@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T07:41:43.232444+00:00
+- generated_at: 2026-09-02T07:46:33.978031+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13319**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T07:41:28.380173+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77582.2
-- Funnel: target 1041 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.6 >= 65=1, 4h RSI 69.6 >= 65=1
+- 更新: 2026-09-02T07:46:20.402704+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=77542.0
+- Funnel: target 1041 → liquid 157 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.1 >= 65=1, 4h RSI 69.8 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +63.51% | $1,668,294.42 |
-| MAGMA/USDT:USDT | +41.34% | $6,395,636.73 |
-| CASHCAT/USDT:USDT | +35.36% | $1,560,340.20 |
-| UAI/USDT:USDT | +26.17% | $23,255,138.91 |
-| BONER/USDT:USDT | +22.04% | $2,607,444.26 |
+| FONE/USDT:USDT | +61.93% | $1,674,989.06 |
+| MAGMA/USDT:USDT | +42.15% | $6,466,034.44 |
+| CASHCAT/USDT:USDT | +34.48% | $1,578,829.59 |
+| UAI/USDT:USDT | +25.66% | $23,386,305.66 |
+| BONER/USDT:USDT | +21.76% | $2,621,841.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +4.91% | +4.90% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.56% | +3.55% |
-| UAI/USDT:USDT | below_1h_threshold | +3.39% | +3.38% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.67% | +2.66% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.13% | +2.12% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.51% | +3.55% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.32% | +3.37% |
+| UAI/USDT:USDT | below_1h_threshold | +3.10% | +3.15% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.72% | +2.76% |
+| TIA/USDT:USDT | below_1h_threshold | +1.15% | +1.20% |
 
 ## 7. 次に見るべき不足
 
