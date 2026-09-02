@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T03:11:21.860416+00:00
+- generated_at: 2026-09-02T03:16:23.517008+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13294**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.88** / 初期 $100.00 (+14.88%)
-- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2677件
+- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2678件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000298 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FILECOIN/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T03:11:11.325724+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=77476.1
-- Funnel: target 1036 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-02T03:16:15.788905+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=77499.9
+- Funnel: target 1036 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +31.05% | $18,284,103.75 |
-| MAGMA/USDT:USDT | +26.27% | $5,242,890.79 |
-| CASHCAT/USDT:USDT | +22.61% | $1,374,610.98 |
-| FILECOIN/USDT:USDT | +11.45% | $22,611,151.64 |
-| HEMI/USDT:USDT | +11.11% | $6,412,698.73 |
+| UAI/USDT:USDT | +30.55% | $18,370,192.76 |
+| MAGMA/USDT:USDT | +27.51% | $5,262,741.03 |
+| CASHCAT/USDT:USDT | +26.02% | $1,394,964.28 |
+| HEMI/USDT:USDT | +13.75% | $6,443,348.82 |
+| FILECOIN/USDT:USDT | +10.91% | $22,652,348.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.27% | +3.04% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.86% | +2.63% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.57% | +2.34% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.52% | +1.29% |
-| GALA/USDT:USDT | below_1h_threshold | +1.30% | +1.08% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.34% | +4.08% |
+| UAI/USDT:USDT | below_1h_threshold | +2.64% | +2.39% |
+| SKR/USDT:USDT | below_1h_threshold | +2.63% | +2.37% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.62% | +2.36% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.77% | +1.51% |
 
 ## 7. 次に見るべき不足
 
