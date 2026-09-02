@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T00:26:17.401585+00:00
+- generated_at: 2026-09-02T00:31:19.176930+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13280**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T00:26:07.938459+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77344.7
+- 更新: 2026-09-02T00:31:09.801236+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=77210.7
 - Funnel: target 1036 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +30.41% | $1,318,753.02 |
-| UAI/USDT:USDT | +22.90% | $16,263,600.23 |
-| ACE/USDT:USDT | +18.78% | $9,417,786.71 |
-| BONER/USDT:USDT | +14.79% | $2,336,907.53 |
-| MAGMA/USDT:USDT | +13.67% | $4,258,460.49 |
+| FONE/USDT:USDT | +26.00% | $1,321,915.27 |
+| UAI/USDT:USDT | +23.92% | $16,431,200.20 |
+| ACE/USDT:USDT | +20.08% | $9,581,539.98 |
+| BONER/USDT:USDT | +16.07% | $2,356,958.65 |
+| MAGMA/USDT:USDT | +15.47% | $4,300,352.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +4.03% | +4.11% |
-| ONG/USDT:USDT | below_1h_threshold | +1.87% | +1.94% |
-| NIL/USDT:USDT | below_1h_threshold | +1.70% | +1.77% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.65% | +1.72% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +1.55% | +1.62% |
+| ACE/USDT:USDT | below_1h_threshold | +4.91% | +5.16% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.92% | +2.17% |
+| BONER/USDT:USDT | below_1h_threshold | +1.85% | +2.09% |
+| ONG/USDT:USDT | below_1h_threshold | +1.52% | +1.77% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.76% |
 
 ## 7. 次に見るべき不足
 
