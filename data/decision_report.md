@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T15:36:24.318302+00:00
+- generated_at: 2026-09-02T15:41:31.029319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13342**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T15:36:14.692671+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=77240.2
-- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.1 >= 65=1
+- 更新: 2026-09-02T15:41:18.174005+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77123.7
+- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +41.95% | $12,998,417.31 |
-| T/USDT:USDT | +41.41% | $15,018,268.24 |
-| FONE/USDT:USDT | +36.87% | $2,006,837.79 |
-| BULLA/USDT:USDT | +20.75% | $1,113,334.94 |
-| CASHCAT/USDT:USDT | +16.77% | $2,053,445.10 |
+| FONE/USDT:USDT | +47.83% | $2,014,841.03 |
+| MAGMA/USDT:USDT | +40.39% | $13,018,968.31 |
+| T/USDT:USDT | +39.16% | $15,124,817.85 |
+| BULLA/USDT:USDT | +21.24% | $1,124,358.54 |
+| CASHCAT/USDT:USDT | +14.92% | $2,058,665.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +4.83% | +4.55% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.24% | +3.96% |
-| FLOCK/USDT:USDT | below_1h_threshold | +4.00% | +3.72% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.82% | +3.54% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.41% | +2.13% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.76% | +4.63% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.75% | +2.62% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.72% | +2.60% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.59% | +2.46% |
+| FLOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.44% |
 
 ## 7. 次に見るべき不足
 
