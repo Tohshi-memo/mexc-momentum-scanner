@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T03:26:27.815047+00:00
+- generated_at: 2026-09-02T03:31:24.720014+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13295**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T03:26:18.113030+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=77612.1
-- Funnel: target 1036 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-02T03:31:15.229911+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=77597.4
+- Funnel: target 1036 → liquid 159 → pre 50 → checked 49 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=1
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +29.48% | $18,581,671.75 |
-| MAGMA/USDT:USDT | +26.45% | $5,302,372.96 |
-| CASHCAT/USDT:USDT | +25.79% | $1,417,132.53 |
-| FILECOIN/USDT:USDT | +11.10% | $22,868,791.60 |
-| ACE/USDT:USDT | +9.69% | $11,588,318.79 |
+| UAI/USDT:USDT | +28.82% | $18,633,565.35 |
+| MAGMA/USDT:USDT | +27.34% | $5,313,030.28 |
+| CASHCAT/USDT:USDT | +25.39% | $1,439,321.80 |
+| FILECOIN/USDT:USDT | +11.25% | $22,959,098.59 |
+| ACE/USDT:USDT | +9.08% | $11,591,136.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_relative_strength | +5.04% | +4.64% |
-| NIULAI/USDT:USDT | below_1h_threshold | +4.28% | +3.88% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.48% | +3.08% |
-| CRV/USDT:USDT | below_1h_threshold | +2.69% | +2.28% |
-| PYTH/USDT:USDT | below_1h_threshold | +2.54% | +2.14% |
+| NIULAI/USDT:USDT | below_relative_strength | +5.26% | +4.88% |
+| SKR/USDT:USDT | below_1h_threshold | +4.83% | +4.45% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.68% | +4.30% |
+| PYTH/USDT:USDT | below_1h_threshold | +3.38% | +2.99% |
+| CRV/USDT:USDT | below_1h_threshold | +2.69% | +2.30% |
 
 ## 7. 次に見るべき不足
 
