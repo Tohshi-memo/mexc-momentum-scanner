@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T07:11:14.122179+00:00
+- generated_at: 2026-09-02T07:16:21.235218+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13318**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.88** / 初期 $100.00 (+14.88%)
-- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2698件
+- 確定: 2089件 (Win 610 / Loss 817 / Flat 662) / pending 0件 / skip 2699件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000335 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FILECOIN/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $114.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T07:11:04.439233+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=77639.0
-- Funnel: target 1041 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T07:16:11.081605+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77603.4
+- Funnel: target 1041 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 67.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +49.48% | $1,612,039.40 |
-| MAGMA/USDT:USDT | +37.50% | $6,154,030.14 |
-| CASHCAT/USDT:USDT | +30.76% | $1,509,481.37 |
-| UAI/USDT:USDT | +23.10% | $21,988,979.89 |
-| BONER/USDT:USDT | +20.35% | $2,577,926.90 |
+| FONE/USDT:USDT | +46.57% | $1,617,420.00 |
+| MAGMA/USDT:USDT | +38.29% | $6,204,425.77 |
+| CASHCAT/USDT:USDT | +32.68% | $1,517,227.54 |
+| UAI/USDT:USDT | +25.69% | $22,366,633.25 |
+| BONER/USDT:USDT | +23.14% | $2,579,731.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +3.89% | +3.81% |
-| BONER/USDT:USDT | below_1h_threshold | +3.46% | +3.38% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.28% | +3.20% |
-| UAI/USDT:USDT | below_1h_threshold | +1.21% | +1.14% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.04% | +0.96% |
+| UAI/USDT:USDT | below_1h_threshold | +3.26% | +3.23% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.00% | +2.97% |
+| FF/USDT:USDT | below_1h_threshold | +2.61% | +2.57% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.22% | +1.19% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.97% | +0.93% |
 
 ## 7. 次に見るべき不足
 
