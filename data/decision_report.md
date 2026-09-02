@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T05:56:32.558018+00:00
+- generated_at: 2026-09-02T06:01:25.064670+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13309**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T05:56:20.519025+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=77627.3
-- Funnel: target 1041 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-02T06:01:15.614680+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77640.5
+- Funnel: target 1041 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +47.36% | $1,513,814.13 |
-| MAGMA/USDT:USDT | +35.21% | $5,709,265.37 |
-| CASHCAT/USDT:USDT | +27.49% | $1,491,721.59 |
-| UAI/USDT:USDT | +22.55% | $20,364,019.70 |
-| MARSCOIN/USDT:USDT | +13.29% | $5,104,482.02 |
+| FONE/USDT:USDT | +40.26% | $1,500,790.04 |
+| MAGMA/USDT:USDT | +34.63% | $5,643,454.47 |
+| CASHCAT/USDT:USDT | +25.68% | $1,453,769.42 |
+| UAI/USDT:USDT | +21.31% | $20,583,851.57 |
+| MARSCOIN/USDT:USDT | +14.35% | $5,094,136.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.30% | +3.17% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.20% | +3.07% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.73% | +2.60% |
-| BONER/USDT:USDT | below_1h_threshold | +2.06% | +1.93% |
-| BICO/USDT:USDT | below_1h_threshold | +1.99% | +1.86% |
+| BONER/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.92% | +0.89% |
+| ICP/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.55% | +0.52% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.37% | +0.34% |
 
 ## 7. 次に見るべき不足
 
