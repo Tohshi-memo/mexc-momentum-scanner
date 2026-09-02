@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T15:31:33.268256+00:00
+- generated_at: 2026-09-02T15:36:24.318302+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13342**
 
@@ -70,10 +70,10 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T15:31:21.182163+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77000.0
-- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T15:36:14.692671+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=77240.2
+- Funnel: target 1044 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 67.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +45.00% | $14,908,642.68 |
-| MAGMA/USDT:USDT | +41.59% | $12,964,410.55 |
-| FONE/USDT:USDT | +39.47% | $1,998,975.62 |
-| BULLA/USDT:USDT | +19.93% | $1,096,832.33 |
-| UAI/USDT:USDT | +13.27% | $33,706,660.00 |
+| MAGMA/USDT:USDT | +41.95% | $12,998,417.31 |
+| T/USDT:USDT | +41.41% | $15,018,268.24 |
+| FONE/USDT:USDT | +36.87% | $2,006,837.79 |
+| BULLA/USDT:USDT | +20.75% | $1,113,334.94 |
+| CASHCAT/USDT:USDT | +16.77% | $2,053,445.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +2.28% | +2.32% |
-| FLOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.95% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.66% | +1.69% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.64% | +1.67% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.63% | +1.66% |
+| FONE/USDT:USDT | below_1h_threshold | +4.83% | +4.55% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.24% | +3.96% |
+| FLOCK/USDT:USDT | below_1h_threshold | +4.00% | +3.72% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.82% | +3.54% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.41% | +2.13% |
 
 ## 7. 次に見るべき不足
 
