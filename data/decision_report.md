@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T23:46:30.845751+00:00
+- generated_at: 2026-09-02T23:51:39.088033+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13401**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.26** / 初期 $100.00 (+14.26%)
-- 確定: 2109件 (Win 615 / Loss 828 / Flat 666) / pending 6件 / skip 2761件
+- 確定: 2109件 (Win 615 / Loss 828 / Flat 666) / pending 6件 / skip 2762件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000258 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.26
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T23:46:16.581339+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=77140.4
-- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-02T23:51:20.259817+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=77226.9
+- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 4
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +61.00% | $72,655,857.48 |
-| SNOWSTOCK/USDT:USDT | +22.14% | $1,390,763.70 |
-| EGLD/USDT:USDT | +16.11% | $8,724,451.84 |
-| PONS/USDT:USDT | +15.00% | $3,468,782.23 |
-| CASHCAT/USDT:USDT | +13.51% | $1,924,364.15 |
+| AKE/USDT:USDT | +57.47% | $72,786,788.69 |
+| SNOWSTOCK/USDT:USDT | +22.20% | $1,393,877.03 |
+| EGLD/USDT:USDT | +15.51% | $8,755,476.45 |
+| PONS/USDT:USDT | +14.27% | $3,488,691.57 |
+| MARSCOIN/USDT:USDT | +13.14% | $2,992,667.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.50% | +4.31% |
-| FONE/USDT:USDT | below_1h_threshold | +3.72% | +3.54% |
-| LIT/USDT:USDT | below_1h_threshold | +2.54% | +2.35% |
-| JUP/USDT:USDT | below_1h_threshold | +1.98% | +1.79% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.98% | +0.79% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.85% | +3.55% |
+| LIT/USDT:USDT | below_1h_threshold | +2.81% | +2.51% |
+| JUP/USDT:USDT | below_1h_threshold | +2.44% | +2.14% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.45% | +1.15% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.02% | +0.72% |
 
 ## 7. 次に見るべき不足
 
