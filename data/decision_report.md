@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T16:21:35.735027+00:00
+- generated_at: 2026-09-02T16:26:32.833159+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13348**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.78** / 初期 $100.00 (+14.78%)
-- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2729件
+- 確定: 2093件 (Win 611 / Loss 819 / Flat 663) / pending 0件 / skip 2731件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000264 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CASHCAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T16:21:26.411019+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=77490.4
-- Funnel: target 1044 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1, 4h RSI 88.2 >= 65=1
+- 更新: 2026-09-02T16:26:21.359773+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=77512.1
+- Funnel: target 1044 → liquid 163 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.3 >= 65=1, 4h RSI 74.2 >= 65=1, 4h RSI 89.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +9.27% | $28,185,304.22 |
-| BULLA/USDT:USDT | +5.57% | $1,461,299.85 |
-| MARSCOIN/USDT:USDT | +5.36% | $3,296,109.94 |
-| AKE/USDT:USDT | +5.15% | $15,206,618.49 |
-| HEMI/USDT:USDT | +4.27% | $5,268,155.40 |
+| AKE/USDT:USDT | +12.39% | $15,557,435.13 |
+| USELESS/USDT:USDT | +7.45% | $28,544,893.07 |
+| HEMI/USDT:USDT | +7.45% | $5,307,576.13 |
+| BULLA/USDT:USDT | +7.33% | $1,496,735.59 |
+| NIULAI/USDT:USDT | +4.40% | $2,536,107.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_relative_strength | +5.24% | +4.93% |
-| MARSCOIN/USDT:USDT | below_relative_strength | +5.11% | +4.80% |
-| HEMI/USDT:USDT | below_1h_threshold | +4.28% | +3.97% |
-| NIULAI/USDT:USDT | below_1h_threshold | +4.17% | +3.86% |
-| SKR/USDT:USDT | below_1h_threshold | +2.40% | +2.09% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.36% | +4.02% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.62% | +3.28% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.31% | +2.97% |
+| T/USDT:USDT | below_1h_threshold | +2.68% | +2.34% |
+| SKR/USDT:USDT | below_1h_threshold | +2.36% | +2.02% |
 
 ## 7. 次に見るべき不足
 
