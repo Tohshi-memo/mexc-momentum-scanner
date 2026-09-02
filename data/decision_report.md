@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T17:26:38.286740+00:00
+- generated_at: 2026-09-02T17:31:27.774226+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13355**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T17:26:26.542587+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77034.2
+- 更新: 2026-09-02T17:31:18.534042+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=77097.7
 - Funnel: target 1044 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.6 >= 65=1
+- Strict後reject: 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +33.60% | $20,576,273.55 |
-| HEMI/USDT:USDT | +9.15% | $5,290,007.12 |
-| NIULAI/USDT:USDT | +8.85% | $2,467,265.68 |
-| MARSCOIN/USDT:USDT | +7.92% | $3,184,996.46 |
-| BULLA/USDT:USDT | +5.65% | $1,745,829.99 |
+| AKE/USDT:USDT | +35.00% | $20,830,084.48 |
+| NIULAI/USDT:USDT | +9.76% | $2,482,109.01 |
+| HEMI/USDT:USDT | +9.23% | $5,299,994.85 |
+| MARSCOIN/USDT:USDT | +7.56% | $3,190,976.40 |
+| EGLD/USDT:USDT | +6.20% | $3,821,952.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.09% | +4.22% |
-| BTR/USDT:USDT | below_1h_threshold | +3.66% | +3.79% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.19% | +2.31% |
-| KITE/USDT:USDT | below_1h_threshold | +1.58% | +1.71% |
-| ARB/USDT:USDT | below_1h_threshold | +1.29% | +1.41% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.54% | +3.58% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.88% | +2.92% |
+| BTR/USDT:USDT | below_1h_threshold | +2.87% | +2.91% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
+| LIT/USDT:USDT | below_1h_threshold | +1.70% | +1.74% |
 
 ## 7. 次に見るべき不足
 
