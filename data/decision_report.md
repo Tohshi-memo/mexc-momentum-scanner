@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T21:06:30.003650+00:00
+- generated_at: 2026-09-02T21:11:18.319235+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13383**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T21:06:20.334615+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=77287.4
+- 更新: 2026-09-02T21:11:10.791430+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77275.7
 - Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1
+- Strict後reject: 4h RSI 77.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +98.74% | $48,361,680.97 |
-| SNOWSTOCK/USDT:USDT | +20.65% | $1,207,603.19 |
-| BULLA/USDT:USDT | +18.04% | $2,766,042.36 |
-| MARSCOIN/USDT:USDT | +17.93% | $3,092,998.28 |
-| BTW/USDT:USDT | +17.09% | $7,019,931.57 |
+| AKE/USDT:USDT | +102.11% | $48,666,436.74 |
+| SNOWSTOCK/USDT:USDT | +21.07% | $1,248,992.51 |
+| BULLA/USDT:USDT | +19.20% | $2,767,371.03 |
+| BTW/USDT:USDT | +18.13% | $7,069,345.53 |
+| MARSCOIN/USDT:USDT | +17.27% | $3,093,987.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.30% | +3.40% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.83% | +1.93% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.58% |
-| HEMI/USDT:USDT | below_1h_threshold | +0.96% | +1.06% |
-| PONS/USDT:USDT | below_1h_threshold | +0.94% | +1.04% |
+| AKE/USDT:USDT | below_1h_threshold | +5.00% | +5.11% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.83% | +2.95% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.60% |
+| T/USDT:USDT | below_1h_threshold | +1.37% | +1.49% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.17% | +1.29% |
 
 ## 7. 次に見るべき不足
 
