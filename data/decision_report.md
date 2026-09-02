@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T01:41:28.603366+00:00
+- generated_at: 2026-09-02T01:46:29.284096+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13284**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T01:41:16.318964+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=76921.8
+- 更新: 2026-09-02T01:46:17.559237+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=76914.1
 - Funnel: target 1036 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +26.08% | $17,398,617.20 |
-| MAGMA/USDT:USDT | +22.94% | $4,704,201.79 |
-| ACE/USDT:USDT | +15.74% | $10,745,976.09 |
-| FONE/USDT:USDT | +14.73% | $1,380,627.13 |
-| USELESS/USDT:USDT | +9.03% | $34,221,047.45 |
+| UAI/USDT:USDT | +28.27% | $17,460,414.35 |
+| MAGMA/USDT:USDT | +26.10% | $4,749,736.50 |
+| FONE/USDT:USDT | +14.42% | $1,383,400.47 |
+| ACE/USDT:USDT | +11.31% | $10,942,141.99 |
+| FILECOIN/USDT:USDT | +8.29% | $21,706,392.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BICO/USDT:USDT | below_1h_threshold | +3.76% | +4.09% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.90% | +2.23% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.93% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.43% | +1.77% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.01% | +1.34% |
+| BICO/USDT:USDT | below_1h_threshold | +3.90% | +4.24% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.12% | +3.46% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.73% | +3.08% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.69% | +2.04% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.60% | +1.94% |
 
 ## 7. 次に見るべき不足
 
