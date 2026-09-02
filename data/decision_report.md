@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T09:56:31.760971+00:00
+- generated_at: 2026-09-02T10:01:16.075765+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13325**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T09:56:18.264847+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=76661.0
-- Funnel: target 1044 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1, 4h RSI 84.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-02T10:01:06.671152+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=76694.4
+- Funnel: target 1044 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +43.97% | $8,492,886.47 |
-| FONE/USDT:USDT | +41.76% | $1,772,060.54 |
-| CASHCAT/USDT:USDT | +24.17% | $1,761,409.44 |
-| T/USDT:USDT | +23.05% | $2,131,969.99 |
-| UAI/USDT:USDT | +22.02% | $25,624,143.07 |
+| MAGMA/USDT:USDT | +45.14% | $8,558,460.67 |
+| FONE/USDT:USDT | +41.68% | $1,750,819.62 |
+| CASHCAT/USDT:USDT | +24.02% | $1,739,919.77 |
+| T/USDT:USDT | +22.50% | $2,150,571.77 |
+| UAI/USDT:USDT | +21.42% | $25,405,736.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +2.40% | +2.60% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.74% | +1.94% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.63% | +1.84% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.34% | +1.54% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.14% | +1.34% |
+| BONER/USDT:USDT | below_1h_threshold | +1.79% | +1.82% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.65% | +0.68% |
+| UNI/USDT:USDT | below_1h_threshold | +0.56% | +0.59% |
+| ACE/USDT:USDT | below_1h_threshold | +0.54% | +0.57% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.44% | +0.47% |
 
 ## 7. 次に見るべき不足
 
