@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T18:01:31.629756+00:00
+- generated_at: 2026-09-02T18:06:13.905394+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13359**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T18:01:16.634895+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77338.2
+- 更新: 2026-09-02T18:06:04.474661+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77323.4
 - Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +42.40% | $22,794,810.88 |
-| HEMI/USDT:USDT | +8.96% | $5,172,223.60 |
-| NIULAI/USDT:USDT | +8.42% | $2,405,858.07 |
-| MARSCOIN/USDT:USDT | +7.06% | $3,054,316.69 |
-| KITE/USDT:USDT | +5.29% | $1,836,157.43 |
+| AKE/USDT:USDT | +45.75% | $23,211,962.55 |
+| NIULAI/USDT:USDT | +8.79% | $2,411,932.08 |
+| HEMI/USDT:USDT | +8.19% | $5,179,861.27 |
+| MARSCOIN/USDT:USDT | +7.90% | $3,056,425.89 |
+| ARB/USDT:USDT | +5.88% | $60,612,079.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.48% |
-| AKE/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
-| KORU/USDT:USDT | below_1h_threshold | +1.11% | +1.12% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.11% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
+| AKE/USDT:USDT | below_1h_threshold | +3.27% | +3.31% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.50% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
+| KORU/USDT:USDT | below_1h_threshold | +1.11% | +1.14% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.13% |
 
 ## 7. 次に見るべき不足
 
