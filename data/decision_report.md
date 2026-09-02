@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T07:01:26.208599+00:00
+- generated_at: 2026-09-02T07:06:18.753093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13318**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T07:01:14.954013+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77596.6
+- 更新: 2026-09-02T07:06:11.081697+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77582.9
 - Funnel: target 1041 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FONE/USDT:USDT | +51.69% | $1,598,205.59 |
-| MAGMA/USDT:USDT | +37.61% | $6,075,351.86 |
-| CASHCAT/USDT:USDT | +26.39% | $1,488,506.80 |
-| UAI/USDT:USDT | +20.72% | $21,825,636.94 |
-| BONER/USDT:USDT | +16.23% | $2,573,163.19 |
+| FONE/USDT:USDT | +49.40% | $1,606,367.00 |
+| MAGMA/USDT:USDT | +37.03% | $6,137,310.39 |
+| CASHCAT/USDT:USDT | +28.06% | $1,498,557.56 |
+| UAI/USDT:USDT | +21.44% | $21,899,478.48 |
+| BONER/USDT:USDT | +15.72% | $2,576,151.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.05% | +1.02% |
-| ACE/USDT:USDT | below_1h_threshold | +0.93% | +0.91% |
-| PYTH/USDT:USDT | below_1h_threshold | +0.29% | +0.27% |
-| MRNASTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.25% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.26% | +0.24% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.76% | +1.76% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.52% | +1.51% |
+| ACE/USDT:USDT | below_1h_threshold | +1.43% | +1.42% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.79% | +0.79% |
+| PYTH/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
 
 ## 7. 次に見るべき不足
 
