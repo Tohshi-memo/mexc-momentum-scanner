@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T12:56:21.654260+00:00
+- generated_at: 2026-09-02T13:01:24.175195+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13335**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T12:56:12.555929+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=76685.6
-- Funnel: target 1044 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-02T13:01:17.476912+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=76625.5
+- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| T/USDT:USDT | +51.75% | $9,529,116.23 |
-| MAGMA/USDT:USDT | +45.64% | $10,681,941.68 |
-| FONE/USDT:USDT | +35.53% | $1,882,112.17 |
-| CASHCAT/USDT:USDT | +20.41% | $1,947,175.37 |
-| UAI/USDT:USDT | +17.91% | $28,826,270.21 |
+| T/USDT:USDT | +54.17% | $9,947,940.64 |
+| MAGMA/USDT:USDT | +45.84% | $10,685,834.77 |
+| FONE/USDT:USDT | +39.71% | $1,861,405.52 |
+| CASHCAT/USDT:USDT | +21.28% | $1,912,848.99 |
+| UAI/USDT:USDT | +19.21% | $28,970,572.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KITE/USDT:USDT | below_1h_threshold | +3.69% | +3.83% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.75% | +2.88% |
-| EGLD/USDT:USDT | below_1h_threshold | +2.74% | +2.87% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.97% | +2.10% |
-| SYRUP/USDT:USDT | below_1h_threshold | +1.75% | +1.89% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.03% | +0.97% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.92% | +0.85% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.79% | +0.72% |
+| AKE/USDT:USDT | below_1h_threshold | +0.59% | +0.53% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.57% | +0.50% |
 
 ## 7. 次に見るべき不足
 
