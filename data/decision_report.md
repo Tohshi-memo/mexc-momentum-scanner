@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-02T20:01:25.590897+00:00
+- generated_at: 2026-09-02T20:06:12.908350+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13376**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-02T20:01:14.608687+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77290.7
+- 更新: 2026-09-02T20:06:05.349836+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77401.2
 - Funnel: target 1044 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +81.14% | $32,992,111.76 |
-| BONER/USDT:USDT | +23.44% | $3,009,027.30 |
-| BULLA/USDT:USDT | +18.68% | $2,415,549.49 |
-| BTW/USDT:USDT | +10.64% | $6,161,083.19 |
-| MARSCOIN/USDT:USDT | +10.50% | $3,017,833.73 |
+| AKE/USDT:USDT | +82.80% | $33,688,272.90 |
+| BONER/USDT:USDT | +22.03% | $3,018,413.61 |
+| BULLA/USDT:USDT | +16.70% | $2,593,714.51 |
+| BTW/USDT:USDT | +11.33% | $6,260,902.10 |
+| FONE/USDT:USDT | +10.76% | $1,930,064.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.62% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.35% | +1.36% |
-| FONE/USDT:USDT | below_1h_threshold | +0.76% | +0.77% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.63% | +0.64% |
-| KORU/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
+| FONE/USDT:USDT | below_1h_threshold | +3.21% | +3.08% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.48% |
+| AKE/USDT:USDT | below_1h_threshold | +1.42% | +1.29% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.35% | +1.21% |
+| DASH/USDT:USDT | below_1h_threshold | +1.19% | +1.06% |
 
 ## 7. 次に見るべき不足
 
