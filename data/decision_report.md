@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T09:11:17.527959+00:00
+- generated_at: 2026-09-03T09:16:20.807503+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13463**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.50** / 初期 $100.00 (+14.50%)
-- 確定: 2158件 (Win 636 / Loss 846 / Flat 676) / pending 3件 / skip 2773件
+- 確定: 2158件 (Win 636 / Loss 846 / Flat 676) / pending 4件 / skip 2773件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000316 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BULLA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $114.50
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T09:11:07.985903+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77851.0
-- Funnel: target 1046 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T09:16:11.666916+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77828.4
+- Funnel: target 1046 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +84.45% | $6,480,605.22 |
-| BR/USDT:USDT | +36.95% | $1,861,285.02 |
-| EDGE/USDT:USDT | +34.91% | $3,922,308.38 |
-| PONS/USDT:USDT | +30.09% | $5,144,369.25 |
-| BULLA/USDT:USDT | +29.93% | $5,710,870.57 |
+| MARSCOIN/USDT:USDT | +87.03% | $6,531,609.90 |
+| BR/USDT:USDT | +38.14% | $1,900,188.97 |
+| EDGE/USDT:USDT | +34.96% | $4,000,956.65 |
+| PONS/USDT:USDT | +31.00% | $5,154,407.46 |
+| CHIP/USDT:USDT | +27.70% | $6,033,015.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.62% | +4.56% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.82% | +2.76% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.06% | +2.01% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.77% | +1.71% |
-| H/USDT:USDT | below_1h_threshold | +1.16% | +1.10% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.72% | +2.70% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.48% | +2.46% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.39% | +1.36% |
+| XPL/USDT:USDT | below_1h_threshold | +1.10% | +1.07% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.08% | +1.05% |
 
 ## 7. 次に見るべき不足
 
