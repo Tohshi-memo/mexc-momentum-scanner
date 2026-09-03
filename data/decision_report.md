@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T04:06:27.994547+00:00
+- generated_at: 2026-09-03T04:11:22.398985+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13425**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.92** / 初期 $100.00 (+13.92%)
-- 確定: 2124件 (Win 621 / Loss 837 / Flat 666) / pending 4件 / skip 2769件
+- 確定: 2124件 (Win 621 / Loss 837 / Flat 666) / pending 5件 / skip 2769件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.04% 残高後 $113.92
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T04:06:14.993731+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=77729.1
-- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T04:11:08.042665+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=77776.2
+- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +42.52% | $2,792,803.23 |
-| AKE/USDT:USDT | +32.72% | $76,397,254.63 |
-| PONS/USDT:USDT | +24.09% | $4,414,983.91 |
-| SNOWSTOCK/USDT:USDT | +24.09% | $1,499,349.54 |
-| HEMI/USDT:USDT | +20.56% | $2,519,205.07 |
+| MARSCOIN/USDT:USDT | +42.39% | $2,813,185.65 |
+| AKE/USDT:USDT | +30.55% | $76,482,612.39 |
+| PONS/USDT:USDT | +24.90% | $4,423,514.14 |
+| SNOWSTOCK/USDT:USDT | +23.99% | $1,501,249.47 |
+| HEMI/USDT:USDT | +22.23% | $2,545,595.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +2.57% | +2.49% |
-| PONS/USDT:USDT | below_1h_threshold | +1.52% | +1.44% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.51% | +1.43% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.41% | +1.33% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.89% |
+| BONER/USDT:USDT | below_1h_threshold | +3.21% | +3.07% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.04% | +2.89% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.60% | +2.46% |
+| PONS/USDT:USDT | below_1h_threshold | +2.12% | +1.98% |
+| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.83% |
 
 ## 7. 次に見るべき不足
 
