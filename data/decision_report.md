@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T13:01:27.259910+00:00
+- generated_at: 2026-09-03T13:06:18.055691+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13477**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T13:01:14.167589+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78520.0
+- 更新: 2026-09-03T13:06:08.492635+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78552.7
 - Funnel: target 1046 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +90.83% | $8,160,666.93 |
-| BONER/USDT:USDT | +51.54% | $2,318,520.51 |
-| BR/USDT:USDT | +50.04% | $4,634,238.81 |
-| EDGE/USDT:USDT | +44.75% | $6,607,584.72 |
-| PONS/USDT:USDT | +43.19% | $6,011,560.24 |
+| MARSCOIN/USDT:USDT | +96.16% | $8,206,476.12 |
+| BONER/USDT:USDT | +52.00% | $2,335,774.05 |
+| BR/USDT:USDT | +49.58% | $4,677,650.93 |
+| PONS/USDT:USDT | +44.39% | $6,038,060.89 |
+| EDGE/USDT:USDT | +44.02% | $6,652,363.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.22% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.78% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.47% | +0.59% |
-| PONS/USDT:USDT | below_1h_threshold | +0.47% | +0.58% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.51% |
+| ONG/USDT:USDT | below_1h_threshold | +3.25% | +3.32% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.15% | +3.23% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.18% |
+| PONS/USDT:USDT | below_1h_threshold | +1.67% | +1.74% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.58% | +1.66% |
 
 ## 7. 次に見るべき不足
 
