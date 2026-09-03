@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T07:11:32.828219+00:00
+- generated_at: 2026-09-03T07:16:17.182008+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13452**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T07:11:23.366893+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=77992.7
+- 更新: 2026-09-03T07:16:07.693935+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=77961.3
 - Funnel: target 1046 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +79.07% | $4,427,797.10 |
-| EDGE/USDT:USDT | +34.08% | $2,503,138.57 |
-| HEMI/USDT:USDT | +32.67% | $3,333,034.51 |
-| USELESS/USDT:USDT | +29.45% | $23,295,790.93 |
-| PONS/USDT:USDT | +23.86% | $4,922,932.98 |
+| MARSCOIN/USDT:USDT | +80.27% | $4,489,485.07 |
+| EDGE/USDT:USDT | +35.12% | $2,542,793.18 |
+| USELESS/USDT:USDT | +30.67% | $23,405,010.96 |
+| HEMI/USDT:USDT | +29.67% | $3,415,765.93 |
+| PONS/USDT:USDT | +24.34% | $4,939,228.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.15% | +3.90% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.19% | +1.93% |
-| KITE/USDT:USDT | below_1h_threshold | +1.80% | +1.54% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.59% | +1.34% |
-| XPL/USDT:USDT | below_1h_threshold | +1.58% | +1.33% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.82% | +4.60% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.92% | +2.71% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.92% | +2.70% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.45% | +2.23% |
+| APT/USDT:USDT | below_1h_threshold | +1.80% | +1.59% |
 
 ## 7. 次に見るべき不足
 
