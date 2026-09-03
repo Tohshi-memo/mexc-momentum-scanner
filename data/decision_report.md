@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T18:21:31.728628+00:00
+- generated_at: 2026-09-03T18:26:31.323697+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13524**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T18:21:19.520414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=81121.3
+- 更新: 2026-09-03T18:26:18.984599+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=80951.7
 - Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.2 >= 65=1
+- Strict後reject: 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +27.34% | $65,986,114.65 |
-| PROM/USDT:USDT | +11.48% | $3,805,254.51 |
-| MUBARAK/USDT:USDT | +8.35% | $3,667,413.17 |
-| BR/USDT:USDT | +5.97% | $8,331,781.63 |
-| BTW/USDT:USDT | +4.56% | $15,162,840.93 |
+| AKE/USDT:USDT | +29.55% | $66,259,931.02 |
+| PROM/USDT:USDT | +12.54% | $3,812,757.96 |
+| MUBARAK/USDT:USDT | +6.71% | $3,676,524.73 |
+| BR/USDT:USDT | +6.46% | $8,337,107.75 |
+| BTW/USDT:USDT | +5.38% | $15,181,145.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKR/USDT:USDT | below_1h_threshold | +3.67% | +3.53% |
-| FF/USDT:USDT | below_1h_threshold | +1.75% | +1.61% |
-| ARB/USDT:USDT | below_1h_threshold | +1.57% | +1.42% |
-| LIT/USDT:USDT | below_1h_threshold | +1.41% | +1.27% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.24% | +1.09% |
+| SKR/USDT:USDT | below_1h_threshold | +3.93% | +4.00% |
+| ARB/USDT:USDT | below_1h_threshold | +2.42% | +2.49% |
+| FF/USDT:USDT | below_1h_threshold | +1.68% | +1.75% |
+| LDO/USDT:USDT | below_1h_threshold | +1.44% | +1.50% |
+| 4/USDT:USDT | below_1h_threshold | +1.40% | +1.47% |
 
 ## 7. 次に見るべき不足
 
