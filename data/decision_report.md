@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T12:01:22.487574+00:00
+- generated_at: 2026-09-03T12:06:18.182079+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13470**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T12:01:12.696739+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77899.0
-- Funnel: target 1048 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-03T12:06:08.377807+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77908.0
+- Funnel: target 1048 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +86.31% | $7,853,516.65 |
-| BR/USDT:USDT | +42.41% | $3,946,480.69 |
-| EDGE/USDT:USDT | +37.91% | $5,638,347.88 |
-| BULLA/USDT:USDT | +37.65% | $6,536,602.70 |
-| GPROSTOCK/USDT:USDT | +36.90% | $1,022,665.13 |
+| MARSCOIN/USDT:USDT | +85.86% | $7,888,394.37 |
+| BR/USDT:USDT | +43.02% | $3,984,835.40 |
+| EDGE/USDT:USDT | +38.28% | $5,661,034.91 |
+| BULLA/USDT:USDT | +35.94% | $6,582,972.23 |
+| GPROSTOCK/USDT:USDT | +35.29% | $1,024,990.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GPROSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.11% | +1.12% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
-| NIULAI/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
-| CAKE/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
+| BONER/USDT:USDT | below_1h_threshold | +1.87% | +1.87% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.79% | +1.79% |
+| GPROSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.32% | +1.32% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.11% | +1.11% |
 
 ## 7. 次に見るべき不足
 
