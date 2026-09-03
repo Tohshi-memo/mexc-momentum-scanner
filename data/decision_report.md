@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T16:26:41.398960+00:00
+- generated_at: 2026-09-03T16:31:31.263258+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13506**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T16:26:24.897838+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.83% price=80638.0
-- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.3 >= 65=1
+- 更新: 2026-09-03T16:31:19.008585+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.63% price=80802.1
+- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +6.69% | $1,328,361.44 |
-| BONER/USDT:USDT | +6.11% | $2,371,705.72 |
-| PROM/USDT:USDT | +5.08% | $4,567,894.23 |
-| GPROSTOCK/USDT:USDT | +3.26% | $1,535,588.35 |
-| FONE/USDT:USDT | +2.74% | $1,101,711.08 |
+| APR/USDT:USDT | +7.54% | $1,348,097.60 |
+| PROM/USDT:USDT | +6.95% | $4,603,863.01 |
+| GPROSTOCK/USDT:USDT | +3.86% | $1,540,467.18 |
+| BONER/USDT:USDT | +3.63% | $2,380,747.66 |
+| BR/USDT:USDT | +1.36% | $7,721,962.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FONE/USDT:USDT | below_1h_threshold | +2.75% | +3.58% |
-| KORU/USDT:USDT | below_1h_threshold | +2.12% | +2.95% |
-| GPROSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.87% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +2.52% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.50% | +2.34% |
+| BONER/USDT:USDT | below_1h_threshold | +3.63% | +4.27% |
+| KORU/USDT:USDT | below_1h_threshold | +2.12% | +2.75% |
+| GPROSTOCK/USDT:USDT | below_1h_threshold | +2.04% | +2.67% |
+| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.69% | +2.32% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.50% | +2.13% |
 
 ## 7. 次に見るべき不足
 
