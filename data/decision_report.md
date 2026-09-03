@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T10:41:13.278526+00:00
+- generated_at: 2026-09-03T10:46:16.917653+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13466**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T10:41:03.844291+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77479.9
+- 更新: 2026-09-03T10:46:07.148775+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77493.9
 - Funnel: target 1048 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +85.04% | $7,128,050.07 |
-| PONS/USDT:USDT | +36.98% | $5,749,758.94 |
-| BULLA/USDT:USDT | +34.94% | $6,102,644.35 |
-| BR/USDT:USDT | +33.50% | $2,841,811.62 |
-| EDGE/USDT:USDT | +32.93% | $5,024,920.99 |
+| MARSCOIN/USDT:USDT | +84.02% | $7,152,273.49 |
+| PONS/USDT:USDT | +37.01% | $5,775,642.23 |
+| BULLA/USDT:USDT | +35.41% | $6,159,611.54 |
+| EDGE/USDT:USDT | +33.84% | $5,035,841.48 |
+| BR/USDT:USDT | +31.55% | $2,905,003.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.69% | +3.81% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.47% | +2.60% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.95% | +2.08% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.80% | +1.92% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.43% | +1.56% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.10% | +4.21% |
+| HEMI/USDT:USDT | below_1h_threshold | +2.55% | +2.66% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.80% | +1.91% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.38% | +1.49% |
+| KAS/USDT:USDT | below_1h_threshold | +1.36% | +1.47% |
 
 ## 7. 次に見るべき不足
 
