@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T02:16:09.139681+00:00
+- generated_at: 2026-09-03T02:21:17.810364+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13411**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T02:16:01.553573+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=77432.8
+- 更新: 2026-09-03T02:21:08.139507+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=77404.1
 - Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +43.84% | $74,846,541.66 |
-| PONS/USDT:USDT | +29.45% | $4,212,583.66 |
-| SNOWSTOCK/USDT:USDT | +22.35% | $1,454,254.11 |
-| NIULAI/USDT:USDT | +18.91% | $2,160,937.50 |
-| EDGE/USDT:USDT | +17.48% | $1,386,990.44 |
+| AKE/USDT:USDT | +45.21% | $74,913,149.25 |
+| PONS/USDT:USDT | +30.45% | $4,229,064.47 |
+| SNOWSTOCK/USDT:USDT | +22.09% | $1,455,108.96 |
+| NIULAI/USDT:USDT | +21.33% | $2,168,072.10 |
+| MARSCOIN/USDT:USDT | +16.53% | $2,686,908.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.38% | +3.23% |
-| ARB/USDT:USDT | below_1h_threshold | +2.38% | +2.23% |
-| 4/USDT:USDT | below_1h_threshold | +2.20% | +2.05% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.16% | +2.01% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.84% | +4.73% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.13% | +4.02% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.59% | +3.49% |
+| ARB/USDT:USDT | below_1h_threshold | +2.37% | +2.26% |
+| 4/USDT:USDT | below_1h_threshold | +2.20% | +2.09% |
 
 ## 7. 次に見るべき不足
 
