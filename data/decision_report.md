@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T17:01:36.896776+00:00
+- generated_at: 2026-09-03T17:06:30.122359+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13517**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T17:01:21.723001+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=80880.9
-- Funnel: target 1046 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-03T17:06:20.531239+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80999.3
+- Funnel: target 1046 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +11.80% | $3,596,208.86 |
-| BONER/USDT:USDT | +11.74% | $2,320,391.15 |
-| XPL/USDT:USDT | +4.40% | $10,635,773.74 |
-| BULLA/USDT:USDT | +4.38% | $10,729,891.65 |
-| TRUMPOFFICIAL/USDT:USDT | +4.38% | $16,538,376.11 |
+| BONER/USDT:USDT | +13.14% | $2,333,647.40 |
+| PROM/USDT:USDT | +12.45% | $3,690,521.08 |
+| USELESS/USDT:USDT | +6.75% | $26,314,792.99 |
+| XPL/USDT:USDT | +5.63% | $10,846,457.13 |
+| BULLA/USDT:USDT | +4.80% | $10,792,115.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.73% | +4.79% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.68% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.42% | +1.49% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.44% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.35% |
+| PROM/USDT:USDT | below_1h_threshold | +4.95% | +4.87% |
+| FONE/USDT:USDT | below_1h_threshold | +2.93% | +2.85% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.66% | +2.58% |
+| BTR/USDT:USDT | below_1h_threshold | +2.02% | +1.94% |
+| AKE/USDT:USDT | below_1h_threshold | +1.96% | +1.89% |
 
 ## 7. 次に見るべき不足
 
