@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T15:41:56.930017+00:00
+- generated_at: 2026-09-03T15:46:48.144006+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13495**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T15:41:40.370616+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.52% price=80924.1
-- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 7 → strict 1
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.6 >= 65=1, 4h RSI 90.4 >= 65=1, 4h RSI 79.5 >= 65=1, 4h RSI 68.5 >= 65=1, 4h RSI 74.7 >= 65=1, 4h RSI 73.3 >= 65=1
+- 更新: 2026-09-03T15:46:35.850318+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=80835.8
+- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 6 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 90.7 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 74.4 >= 65=1, 4h RSI 67.0 >= 65=1, 4h RSI 72.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +114.84% | $9,253,966.56 |
-| BULLA/USDT:USDT | +81.24% | $9,803,922.76 |
-| EDGE/USDT:USDT | +66.77% | $8,889,016.06 |
-| USELESS/USDT:USDT | +55.57% | $29,290,338.14 |
-| PONS/USDT:USDT | +48.86% | $6,481,893.31 |
+| MARSCOIN/USDT:USDT | +112.21% | $9,280,416.91 |
+| BULLA/USDT:USDT | +80.17% | $9,858,471.30 |
+| EDGE/USDT:USDT | +65.97% | $8,995,915.59 |
+| USELESS/USDT:USDT | +56.32% | $29,386,460.99 |
+| BASECAT/USDT:USDT | +50.09% | $1,151,062.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.43% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +2.94% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.42% | +2.90% |
-| ENA/USDT:USDT | below_1h_threshold | +2.75% | +2.23% |
-| HEMI/USDT:USDT | below_1h_threshold | +2.49% | +1.97% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.54% |
+| HEMI/USDT:USDT | below_1h_threshold | +4.30% | +3.89% |
+| BONER/USDT:USDT | below_1h_threshold | +3.57% | +3.16% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.05% |
+| ENA/USDT:USDT | below_1h_threshold | +3.39% | +2.98% |
 
 ## 7. 次に見るべき不足
 
