@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T00:11:13.751813+00:00
+- generated_at: 2026-09-03T00:16:26.680163+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13402**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.26** / 初期 $100.00 (+14.26%)
-- 確定: 2109件 (Win 615 / Loss 828 / Flat 666) / pending 6件 / skip 2762件
+- 確定: 2109件 (Win 615 / Loss 828 / Flat 666) / pending 6件 / skip 2763件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000323 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $114.26
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T00:11:04.952059+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=77156.8
-- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T00:16:16.789363+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=77093.7
+- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +50.91% | $73,188,989.26 |
-| SNOWSTOCK/USDT:USDT | +22.38% | $1,415,284.74 |
-| PONS/USDT:USDT | +21.69% | $3,497,222.60 |
-| EGLD/USDT:USDT | +15.33% | $8,801,092.65 |
-| NIULAI/USDT:USDT | +13.36% | $2,204,972.91 |
+| AKE/USDT:USDT | +46.67% | $73,344,025.26 |
+| PONS/USDT:USDT | +22.86% | $3,530,158.58 |
+| SNOWSTOCK/USDT:USDT | +22.68% | $1,419,931.13 |
+| EGLD/USDT:USDT | +14.58% | $8,887,832.25 |
+| MARSCOIN/USDT:USDT | +12.21% | $2,943,195.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.23% | +4.41% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.37% | +1.55% |
-| FONE/USDT:USDT | below_1h_threshold | +1.25% | +1.43% |
-| INTUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.07% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +0.87% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.16% | +1.43% |
+| LIT/USDT:USDT | below_1h_threshold | +0.90% | +1.17% |
+| INTUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.15% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.80% | +1.06% |
+| SKYAI/USDT:USDT | below_1h_threshold | +0.69% | +0.96% |
 
 ## 7. 次に見るべき不足
 
