@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T03:51:26.347613+00:00
+- generated_at: 2026-09-03T03:56:27.605604+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13424**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T03:51:13.015817+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=77686.0
+- 更新: 2026-09-03T03:56:15.764553+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=77691.1
 - Funnel: target 1044 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +35.95% | $2,799,396.37 |
-| AKE/USDT:USDT | +32.63% | $76,247,194.85 |
-| SNOWSTOCK/USDT:USDT | +23.89% | $1,498,233.04 |
-| PONS/USDT:USDT | +21.72% | $4,443,694.94 |
-| EDGE/USDT:USDT | +21.63% | $1,718,066.04 |
+| MARSCOIN/USDT:USDT | +34.50% | $2,808,240.70 |
+| AKE/USDT:USDT | +31.03% | $76,303,645.46 |
+| SNOWSTOCK/USDT:USDT | +23.88% | $1,499,708.58 |
+| HEMI/USDT:USDT | +22.91% | $3,373,839.42 |
+| PONS/USDT:USDT | +22.79% | $4,453,955.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EDGE/USDT:USDT | below_1h_threshold | +4.04% | +4.16% |
-| PROM/USDT:USDT | below_1h_threshold | +2.27% | +2.39% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.47% | +1.59% |
-| LIT/USDT:USDT | below_1h_threshold | +1.21% | +1.33% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.16% | +1.28% |
+| EDGE/USDT:USDT | below_1h_threshold | +4.31% | +4.42% |
+| LIT/USDT:USDT | below_1h_threshold | +1.82% | +1.93% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.51% | +1.62% |
+| PROM/USDT:USDT | below_1h_threshold | +1.49% | +1.61% |
+| ZORA/USDT:USDT | below_1h_threshold | +1.38% | +1.49% |
 
 ## 7. 次に見るべき不足
 
