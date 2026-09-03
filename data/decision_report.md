@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T14:21:36.614449+00:00
+- generated_at: 2026-09-03T14:26:45.586886+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13479**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.63** / 初期 $100.00 (+16.63%)
-- 確定: 2173件 (Win 647 / Loss 850 / Flat 676) / pending 6件 / skip 2775件
+- 確定: 2173件 (Win 647 / Loss 850 / Flat 676) / pending 6件 / skip 2777件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000412 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CRCLSTOCK/USDT:USDT `MARKET_LONG` EXPIRED account +0.16% 残高後 $116.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T14:21:23.518471+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=79068.2
-- Funnel: target 1046 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.8 >= 65=1, 4h RSI 75.5 >= 65=1
+- 更新: 2026-09-03T14:26:29.567612+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.84% price=79466.4
+- Funnel: target 1046 → liquid 161 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.6 >= 65=1, 4h RSI 76.1 >= 65=1, 4h RSI 84.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +102.40% | $8,842,784.67 |
-| BASECAT/USDT:USDT | +67.32% | $1,092,101.99 |
-| BR/USDT:USDT | +52.12% | $5,540,368.11 |
-| BULLA/USDT:USDT | +51.79% | $8,451,637.95 |
-| EDGE/USDT:USDT | +44.23% | $7,427,883.02 |
+| MARSCOIN/USDT:USDT | +99.31% | $8,882,828.94 |
+| BASECAT/USDT:USDT | +66.35% | $1,098,960.64 |
+| BR/USDT:USDT | +53.64% | $5,688,801.21 |
+| BULLA/USDT:USDT | +49.75% | $8,494,512.56 |
+| EDGE/USDT:USDT | +45.30% | $7,476,464.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.97% | +4.64% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.62% | +4.29% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.46% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.49% | +3.15% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.15% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.62% | +3.79% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +2.96% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +2.65% |
+| CATI/USDT:USDT | below_1h_threshold | +3.45% | +2.61% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.01% | +2.17% |
 
 ## 7. 次に見るべき不足
 
