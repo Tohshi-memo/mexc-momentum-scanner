@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T15:46:48.144006+00:00
+- generated_at: 2026-09-03T15:51:49.540362+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13495**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T15:46:35.850318+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=80835.8
-- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 6 → strict 0
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.8 >= 65=1, 4h RSI 90.7 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 74.4 >= 65=1, 4h RSI 67.0 >= 65=1, 4h RSI 72.3 >= 65=1
+- 更新: 2026-09-03T15:51:34.799948+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.42% price=80847.0
+- Funnel: target 1046 → liquid 165 → pre 50 → checked 50 → surge 7 → strict 1
+- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.6 >= 65=1, 4h RSI 90.6 >= 65=1, 4h RSI 79.3 >= 65=1, 4h RSI 68.7 >= 65=1, 4h RSI 74.7 >= 65=1, 4h RSI 74.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +112.21% | $9,280,416.91 |
-| BULLA/USDT:USDT | +80.17% | $9,858,471.30 |
-| EDGE/USDT:USDT | +65.97% | $8,995,915.59 |
-| USELESS/USDT:USDT | +56.32% | $29,386,460.99 |
-| BASECAT/USDT:USDT | +50.09% | $1,151,062.37 |
+| MARSCOIN/USDT:USDT | +111.45% | $9,331,519.64 |
+| BULLA/USDT:USDT | +80.32% | $9,911,926.71 |
+| EDGE/USDT:USDT | +66.04% | $9,085,992.74 |
+| BASECAT/USDT:USDT | +53.34% | $1,161,345.71 |
+| USELESS/USDT:USDT | +52.92% | $29,462,740.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.54% |
-| HEMI/USDT:USDT | below_1h_threshold | +4.30% | +3.89% |
-| BONER/USDT:USDT | below_1h_threshold | +3.57% | +3.16% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.05% |
-| ENA/USDT:USDT | below_1h_threshold | +3.39% | +2.98% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +4.95% | +4.53% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.60% | +4.17% |
+| HEMI/USDT:USDT | below_1h_threshold | +4.49% | +4.07% |
+| SPX/USDT:USDT | below_1h_threshold | +3.51% | +3.09% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.46% | +3.04% |
 
 ## 7. 次に見るべき不足
 
