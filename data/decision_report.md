@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T08:31:19.357181+00:00
+- generated_at: 2026-09-03T08:36:33.597207+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13460**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.20** / 初期 $100.00 (+14.20%)
-- 確定: 2155件 (Win 635 / Loss 846 / Flat 674) / pending 1件 / skip 2773件
+- 確定: 2155件 (Win 635 / Loss 846 / Flat 674) / pending 3件 / skip 2773件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000316 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CHIP/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $114.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T08:31:09.781385+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=77937.5
-- Funnel: target 1046 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T08:36:23.269112+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.39% price=77921.6
+- Funnel: target 1046 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.6 >= 65=1, 4h RSI 73.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +86.65% | $6,150,341.15 |
-| EDGE/USDT:USDT | +36.61% | $3,611,918.69 |
-| BR/USDT:USDT | +31.50% | $1,349,986.82 |
-| PONS/USDT:USDT | +28.97% | $5,095,348.32 |
-| CHIP/USDT:USDT | +26.95% | $5,203,064.61 |
+| MARSCOIN/USDT:USDT | +87.55% | $6,238,594.86 |
+| EDGE/USDT:USDT | +37.89% | $3,654,552.86 |
+| BR/USDT:USDT | +31.96% | $1,399,496.45 |
+| CHIP/USDT:USDT | +28.83% | $5,271,843.07 |
+| PONS/USDT:USDT | +28.21% | $5,102,846.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_relative_strength | +5.05% | +4.65% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.90% | +3.49% |
-| BR/USDT:USDT | below_1h_threshold | +3.47% | +3.06% |
-| PONS/USDT:USDT | below_1h_threshold | +3.18% | +2.78% |
-| AKE/USDT:USDT | below_1h_threshold | +1.70% | +1.29% |
+| 4/USDT:USDT | below_1h_threshold | +4.92% | +4.53% |
+| BR/USDT:USDT | below_1h_threshold | +3.53% | +3.14% |
+| PONS/USDT:USDT | below_1h_threshold | +2.82% | +2.43% |
+| AKE/USDT:USDT | below_1h_threshold | +1.65% | +1.26% |
+| ADA/USDT:USDT | below_1h_threshold | +1.27% | +0.88% |
 
 ## 7. 次に見るべき不足
 
