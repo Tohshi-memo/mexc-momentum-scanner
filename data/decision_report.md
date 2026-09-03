@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T08:16:14.714548+00:00
+- generated_at: 2026-09-03T08:21:16.069890+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13460**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T08:16:05.038926+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.33% price=77880.0
+- 更新: 2026-09-03T08:21:08.134821+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=77888.9
 - Funnel: target 1046 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +99.28% | $5,842,801.83 |
-| EDGE/USDT:USDT | +39.82% | $3,353,437.79 |
-| BR/USDT:USDT | +27.92% | $1,134,361.78 |
-| CHIP/USDT:USDT | +25.48% | $4,947,881.02 |
-| PONS/USDT:USDT | +25.31% | $5,056,042.39 |
+| MARSCOIN/USDT:USDT | +95.94% | $5,895,275.17 |
+| EDGE/USDT:USDT | +37.21% | $3,473,074.34 |
+| BR/USDT:USDT | +31.63% | $1,185,061.37 |
+| CHIP/USDT:USDT | +27.17% | $5,044,008.22 |
+| PONS/USDT:USDT | +26.15% | $5,063,725.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +2.84% | +2.51% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.54% | +2.20% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.90% | +1.57% |
-| AKE/USDT:USDT | below_1h_threshold | +1.24% | +0.91% |
-| OP/USDT:USDT | below_1h_threshold | +1.15% | +0.82% |
+| BULLA/USDT:USDT | below_relative_strength | +5.25% | +4.91% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.86% | +3.52% |
+| BR/USDT:USDT | below_1h_threshold | +3.55% | +3.20% |
+| JUP/USDT:USDT | below_1h_threshold | +1.41% | +1.07% |
+| AKE/USDT:USDT | below_1h_threshold | +1.33% | +0.98% |
 
 ## 7. 次に見るべき不足
 
