@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T16:41:50.049016+00:00
+- generated_at: 2026-09-03T16:46:28.096884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13511**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.88** / 初期 $100.00 (+16.88%)
-- 確定: 2190件 (Win 654 / Loss 857 / Flat 679) / pending 4件 / skip 2792件
+- 確定: 2190件 (Win 654 / Loss 857 / Flat 679) / pending 5件 / skip 2792件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000523 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: APR/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.88
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T16:41:29.256279+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.60% price=80832.6
-- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 1
+- 更新: 2026-09-03T16:46:15.365839+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=80778.4
+- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1, 4h RSI 88.8 >= 65=1
+- Strict後reject: 4h RSI 87.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| APR/USDT:USDT | +16.66% | $1,497,378.53 |
-| USELESS/USDT:USDT | +7.57% | $29,747,580.52 |
-| PROM/USDT:USDT | +5.04% | $4,658,430.99 |
-| BTW/USDT:USDT | +4.26% | $13,821,222.54 |
-| BR/USDT:USDT | +3.56% | $7,789,196.40 |
+| APR/USDT:USDT | +18.64% | $1,565,389.08 |
+| BTW/USDT:USDT | +7.38% | $13,889,661.34 |
+| PROM/USDT:USDT | +5.55% | $4,662,964.71 |
+| BONER/USDT:USDT | +4.60% | $2,406,808.26 |
+| TRUMPOFFICIAL/USDT:USDT | +3.63% | $16,271,392.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.26% | +4.86% |
-| BR/USDT:USDT | below_1h_threshold | +3.57% | +4.16% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.38% | +2.98% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.14% | +2.74% |
-| KORU/USDT:USDT | below_1h_threshold | +2.12% | +2.71% |
+| BONER/USDT:USDT | below_1h_threshold | +4.63% | +5.30% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.60% | +4.26% |
+| XPL/USDT:USDT | below_1h_threshold | +3.37% | +4.03% |
+| BR/USDT:USDT | below_1h_threshold | +2.78% | +3.44% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.24% | +2.90% |
 
 ## 7. 次に見るべき不足
 
