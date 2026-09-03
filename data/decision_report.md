@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T00:21:31.908790+00:00
+- generated_at: 2026-09-03T00:26:32.743802+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13403**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T00:21:20.085037+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=77034.7
-- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-03T00:26:23.124383+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.32% price=77050.0
+- Funnel: target 1044 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +55.18% | $73,476,420.29 |
-| PONS/USDT:USDT | +23.37% | $3,566,113.36 |
-| SNOWSTOCK/USDT:USDT | +22.52% | $1,420,238.48 |
-| NIULAI/USDT:USDT | +13.01% | $2,212,668.08 |
-| MARSCOIN/USDT:USDT | +12.33% | $2,944,064.78 |
+| AKE/USDT:USDT | +51.12% | $73,545,859.24 |
+| SNOWSTOCK/USDT:USDT | +21.91% | $1,427,961.91 |
+| PONS/USDT:USDT | +21.67% | $3,589,011.46 |
+| NIULAI/USDT:USDT | +12.89% | $2,218,760.43 |
+| MARSCOIN/USDT:USDT | +12.21% | $2,945,086.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| T/USDT:USDT | below_1h_threshold | +1.42% | +1.77% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.41% | +1.75% |
-| INTUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.23% |
-| LIT/USDT:USDT | below_1h_threshold | +0.83% | +1.18% |
-| SNOWSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +1.02% |
+| PONS/USDT:USDT | below_1h_threshold | +4.05% | +4.38% |
+| BONER/USDT:USDT | below_1h_threshold | +2.96% | +3.29% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.35% | +2.68% |
+| LIT/USDT:USDT | below_1h_threshold | +1.03% | +1.35% |
+| INTUSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +1.21% |
 
 ## 7. 次に見るべき不足
 
