@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-03T17:41:17.654629+00:00
+- generated_at: 2026-09-03T17:46:36.271796+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13520**
+- closed shadow trades: **13521**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.05% / filled 20/20。**
-- 全期間 MARKET基準: n=13520, expectancy=-0.01%
+- 全期間 MARKET基準: n=13521, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+2.05%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_1PCT | 17/20 | 85.0% | +1.12% | **+0.95%** |
 | LIMIT_10PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
+| LIMIT_ATR | 11/20 | 55.0% | +1.17% | **+0.64%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$859.66** / 初期 $100.00 (+759.66%)
-- 確定: 5008件 (Win 1516 / Loss 1644 / Flat 1848) / skip 5073件
+- 確定: 5008件 (Win 1516 / Loss 1644 / Flat 1848) / skip 5074件
 - 成長率目線: 平均log +0.000430 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BONER/USDT:USDT `LIMIT_FIB1272_LONG` EXPIRED account -0.36% 残高後 $859.66
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$184.60** / 初期 $100.00 (+84.60%)
-- 確定: 2373件 (Win 671 / Loss 576 / Flat 1126) / skip 4558件
+- 確定: 2373件 (Win 671 / Loss 576 / Flat 1126) / skip 4559件
 - 成長率目線: 平均log +0.000258 / 幾何平均 +0.026% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $184.60
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.46** / 初期 $100.00 (+16.46%)
-- 確定: 2197件 (Win 655 / Loss 861 / Flat 681) / pending 3件 / skip 2792件
+- 確定: 2198件 (Win 655 / Loss 861 / Flat 682) / pending 4件 / skip 2792件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000426 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: USELESS/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.46
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000390 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: AKE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T17:41:06.699181+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=81115.0
-- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T17:46:24.024456+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=81038.0
+- Funnel: target 1046 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.0 >= 65=1, 4h RSI 78.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PROM/USDT:USDT | +11.65% | $3,790,422.97 |
-| AKE/USDT:USDT | +10.86% | $67,850,663.48 |
-| BR/USDT:USDT | +5.73% | $8,153,891.43 |
-| MUBARAK/USDT:USDT | +4.19% | $3,631,126.40 |
-| ENA/USDT:USDT | +3.99% | $41,911,129.21 |
+| AKE/USDT:USDT | +15.62% | $68,096,244.36 |
+| PROM/USDT:USDT | +11.07% | $3,812,027.58 |
+| MUBARAK/USDT:USDT | +5.99% | $3,650,305.06 |
+| BR/USDT:USDT | +5.55% | $8,164,251.34 |
+| ENA/USDT:USDT | +4.58% | $42,423,583.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_relative_strength | +5.08% | +4.86% |
-| PROM/USDT:USDT | below_1h_threshold | +4.20% | +3.98% |
-| 4/USDT:USDT | below_1h_threshold | +3.90% | +3.68% |
-| JTO/USDT:USDT | below_1h_threshold | +3.61% | +3.39% |
-| FLOCK/USDT:USDT | below_1h_threshold | +3.21% | +2.99% |
+| FLOCK/USDT:USDT | below_1h_threshold | +4.73% | +4.60% |
+| 4/USDT:USDT | below_1h_threshold | +4.41% | +4.28% |
+| PROM/USDT:USDT | below_1h_threshold | +3.66% | +3.53% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.01% | +2.88% |
+| ENA/USDT:USDT | below_1h_threshold | +2.78% | +2.65% |
 
 ## 7. 次に見るべき不足
 
