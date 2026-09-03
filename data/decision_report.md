@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T05:51:29.759432+00:00
+- generated_at: 2026-09-03T05:56:31.527207+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13444**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T05:51:17.704152+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=77498.2
+- 更新: 2026-09-03T05:56:24.064727+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=77687.6
 - Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.1 >= 65=1, 4h RSI 80.2 >= 65=1
+- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 80.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +59.91% | $3,701,054.09 |
-| HEMI/USDT:USDT | +41.11% | $2,925,586.09 |
-| PONS/USDT:USDT | +27.01% | $4,805,204.42 |
-| EDGE/USDT:USDT | +25.93% | $1,955,995.63 |
-| AKE/USDT:USDT | +24.83% | $77,766,024.21 |
+| MARSCOIN/USDT:USDT | +64.63% | $3,809,056.04 |
+| HEMI/USDT:USDT | +40.06% | $2,945,914.80 |
+| EDGE/USDT:USDT | +27.53% | $1,976,728.74 |
+| PONS/USDT:USDT | +25.74% | $4,821,167.72 |
+| AKE/USDT:USDT | +23.99% | $77,798,273.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +4.27% | +4.59% |
-| EGLD/USDT:USDT | below_1h_threshold | +3.04% | +3.37% |
-| AKE/USDT:USDT | below_1h_threshold | +2.84% | +3.17% |
-| 4/USDT:USDT | below_1h_threshold | +2.66% | +2.98% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.59% | +2.91% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.89% | +3.97% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.87% | +2.95% |
+| BONER/USDT:USDT | below_1h_threshold | +2.08% | +2.15% |
+| AKE/USDT:USDT | below_1h_threshold | +2.07% | +2.14% |
+| 4/USDT:USDT | below_1h_threshold | +1.46% | +1.53% |
 
 ## 7. 次に見るべき不足
 
