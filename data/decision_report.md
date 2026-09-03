@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T06:51:36.270711+00:00
+- generated_at: 2026-09-03T06:56:28.081419+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13449**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.43** / 初期 $100.00 (+14.43%)
-- 確定: 2146件 (Win 631 / Loss 841 / Flat 674) / pending 4件 / skip 2773件
+- 確定: 2146件 (Win 631 / Loss 841 / Flat 674) / pending 5件 / skip 2773件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000298 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $114.43
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T06:51:25.509152+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77754.1
-- Funnel: target 1046 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1
+- 更新: 2026-09-03T06:56:17.285278+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77769.7
+- Funnel: target 1046 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.7 >= 65=1, 4h RSI 65.8 >= 65=1, 4h RSI 72.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +64.54% | $4,208,069.69 |
-| HEMI/USDT:USDT | +43.39% | $3,230,476.39 |
-| EDGE/USDT:USDT | +29.35% | $2,275,540.06 |
-| USELESS/USDT:USDT | +27.01% | $22,768,616.13 |
-| AKE/USDT:USDT | +26.58% | $78,494,786.60 |
+| MARSCOIN/USDT:USDT | +65.47% | $4,241,444.63 |
+| HEMI/USDT:USDT | +43.73% | $3,254,785.66 |
+| USELESS/USDT:USDT | +32.40% | $23,551,344.42 |
+| EDGE/USDT:USDT | +31.86% | $2,320,239.51 |
+| PONS/USDT:USDT | +27.77% | $4,945,973.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +4.70% | +4.73% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.29% | +4.32% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.64% | +3.67% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.63% | +2.66% |
-| AKE/USDT:USDT | below_1h_threshold | +1.98% | +2.01% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.03% | +4.04% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.56% | +3.57% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.97% | +2.98% |
+| ARB/USDT:USDT | below_1h_threshold | +2.47% | +2.48% |
+| AKE/USDT:USDT | below_1h_threshold | +2.14% | +2.15% |
 
 ## 7. 次に見るべき不足
 
