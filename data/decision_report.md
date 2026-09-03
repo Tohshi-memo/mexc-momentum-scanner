@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T01:06:21.061002+00:00
+- generated_at: 2026-09-03T01:11:24.062825+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13406**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T01:06:10.100818+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=77170.1
+- 更新: 2026-09-03T01:11:14.540260+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=77249.2
 - Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +49.83% | $74,307,764.41 |
-| SNOWSTOCK/USDT:USDT | +21.97% | $1,450,789.91 |
-| PONS/USDT:USDT | +20.19% | $3,735,150.36 |
-| EDGE/USDT:USDT | +12.50% | $1,168,138.97 |
-| EGLD/USDT:USDT | +11.58% | $9,606,560.13 |
+| AKE/USDT:USDT | +48.01% | $74,384,319.81 |
+| SNOWSTOCK/USDT:USDT | +22.03% | $1,463,447.74 |
+| PONS/USDT:USDT | +19.96% | $3,749,360.13 |
+| EDGE/USDT:USDT | +12.76% | $1,186,618.99 |
+| EGLD/USDT:USDT | +11.64% | $9,667,834.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +2.13% | +1.94% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.12% | +1.93% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.95% | +1.76% |
-| PONS/USDT:USDT | below_1h_threshold | +1.86% | +1.67% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.33% | +1.14% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.01% | +1.72% |
+| PONS/USDT:USDT | below_1h_threshold | +1.86% | +1.57% |
+| 4/USDT:USDT | below_1h_threshold | +1.77% | +1.48% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.51% | +1.22% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.38% | +1.09% |
 
 ## 7. 次に見るべき不足
 
