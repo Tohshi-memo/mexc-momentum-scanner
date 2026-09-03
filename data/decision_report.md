@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T19:01:22.932130+00:00
+- generated_at: 2026-09-03T19:06:14.842651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13526**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T19:01:13.168095+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81190.8
+- 更新: 2026-09-03T19:06:07.068153+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=81351.0
 - Funnel: target 1046 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +19.12% | $63,705,429.94 |
-| PROM/USDT:USDT | +9.07% | $3,679,317.39 |
-| ARB/USDT:USDT | +8.07% | $60,478,476.43 |
-| BTW/USDT:USDT | +5.43% | $13,012,262.17 |
-| 0G/USDT:USDT | +4.59% | $1,069,305.03 |
+| AKE/USDT:USDT | +22.21% | $63,921,486.64 |
+| PROM/USDT:USDT | +10.14% | $3,682,920.23 |
+| BTW/USDT:USDT | +8.41% | $13,062,512.52 |
+| ARB/USDT:USDT | +8.27% | $60,965,661.89 |
+| ZEST/USDT:USDT | +5.19% | $1,030,784.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +2.14% | +2.19% |
-| AVGOSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.31% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.23% | +1.27% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.06% | +1.11% |
+| APR/USDT:USDT | below_1h_threshold | +3.65% | +3.50% |
+| BTW/USDT:USDT | below_1h_threshold | +2.54% | +2.39% |
+| MUU/USDT:USDT | below_1h_threshold | +2.14% | +1.99% |
+| AKE/USDT:USDT | below_1h_threshold | +2.08% | +1.92% |
+| ZEST/USDT:USDT | below_1h_threshold | +1.48% | +1.33% |
 
 ## 7. 次に見るべき不足
 
