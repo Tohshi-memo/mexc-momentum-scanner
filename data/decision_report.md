@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T17:06:30.122359+00:00
+- generated_at: 2026-09-03T17:11:27.319322+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13517**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.26** / 初期 $100.00 (+16.26%)
-- 確定: 2195件 (Win 654 / Loss 860 / Flat 681) / pending 3件 / skip 2792件
+- 確定: 2195件 (Win 654 / Loss 860 / Flat 681) / pending 4件 / skip 2792件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000470 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BONER/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.26
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T17:06:20.531239+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=80999.3
-- Funnel: target 1046 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T17:11:15.383480+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80929.4
+- Funnel: target 1046 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +13.14% | $2,333,647.40 |
-| PROM/USDT:USDT | +12.45% | $3,690,521.08 |
-| USELESS/USDT:USDT | +6.75% | $26,314,792.99 |
-| XPL/USDT:USDT | +5.63% | $10,846,457.13 |
-| BULLA/USDT:USDT | +4.80% | $10,792,115.33 |
+| PROM/USDT:USDT | +11.98% | $3,713,980.41 |
+| BONER/USDT:USDT | +8.47% | $2,358,044.26 |
+| BULLA/USDT:USDT | +6.95% | $10,845,514.67 |
+| USELESS/USDT:USDT | +6.48% | $26,460,481.01 |
+| XPL/USDT:USDT | +5.46% | $10,939,143.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PROM/USDT:USDT | below_1h_threshold | +4.95% | +4.87% |
-| FONE/USDT:USDT | below_1h_threshold | +2.93% | +2.85% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.66% | +2.58% |
-| BTR/USDT:USDT | below_1h_threshold | +2.02% | +1.94% |
-| AKE/USDT:USDT | below_1h_threshold | +1.96% | +1.89% |
+| PROM/USDT:USDT | below_1h_threshold | +4.50% | +4.51% |
+| AKE/USDT:USDT | below_1h_threshold | +3.35% | +3.35% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.45% | +2.46% |
+| BTR/USDT:USDT | below_1h_threshold | +2.00% | +2.01% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.88% | +1.88% |
 
 ## 7. 次に見るべき不足
 
