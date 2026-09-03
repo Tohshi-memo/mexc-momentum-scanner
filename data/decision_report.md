@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T01:31:23.400123+00:00
+- generated_at: 2026-09-03T01:36:13.031769+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13408**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T01:31:15.639827+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.54% price=77439.3
+- 更新: 2026-09-03T01:36:05.149605+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.51% price=77415.2
 - Funnel: target 1044 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.9 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +47.27% | $74,510,532.15 |
-| PONS/USDT:USDT | +29.33% | $4,008,366.25 |
-| SNOWSTOCK/USDT:USDT | +22.26% | $1,466,659.11 |
-| EDGE/USDT:USDT | +12.96% | $1,302,813.98 |
-| CASHCAT/USDT:USDT | +11.92% | $1,959,353.59 |
+| AKE/USDT:USDT | +46.41% | $74,544,844.16 |
+| PONS/USDT:USDT | +27.93% | $4,046,937.94 |
+| SNOWSTOCK/USDT:USDT | +22.34% | $1,472,084.11 |
+| EDGE/USDT:USDT | +16.28% | $1,331,241.35 |
+| CASHCAT/USDT:USDT | +13.08% | $1,969,609.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.65% | +4.11% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.39% | +2.86% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.98% | +2.44% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.83% | +2.30% |
-| ADA/USDT:USDT | below_1h_threshold | +2.74% | +2.20% |
+| MARSCOIN/USDT:USDT | below_relative_strength | +5.04% | +4.53% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.68% | +4.17% |
+| BONER/USDT:USDT | below_1h_threshold | +3.88% | +3.38% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.02% | +2.52% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.99% | +2.48% |
 
 ## 7. 次に見るべき不足
 
