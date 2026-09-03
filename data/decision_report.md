@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T05:11:29.193532+00:00
+- generated_at: 2026-09-03T05:16:34.086126+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13438**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.68** / 初期 $100.00 (+13.68%)
-- 確定: 2135件 (Win 625 / Loss 839 / Flat 671) / pending 3件 / skip 2773件
+- 確定: 2135件 (Win 625 / Loss 839 / Flat 671) / pending 5件 / skip 2773件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000174 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.04% 残高後 $113.68
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T05:11:17.507073+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=77699.5
-- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.0 >= 65=1
+- 更新: 2026-09-03T05:16:20.834715+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=77588.4
+- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.6 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +60.41% | $3,115,632.84 |
-| HEMI/USDT:USDT | +43.30% | $2,708,444.92 |
-| PONS/USDT:USDT | +27.62% | $4,653,005.44 |
-| AKE/USDT:USDT | +24.47% | $77,252,616.10 |
-| SNOWSTOCK/USDT:USDT | +23.54% | $1,567,839.77 |
+| MARSCOIN/USDT:USDT | +64.04% | $3,195,029.32 |
+| HEMI/USDT:USDT | +37.72% | $2,759,834.72 |
+| PONS/USDT:USDT | +28.89% | $4,686,742.38 |
+| AKE/USDT:USDT | +25.89% | $77,296,764.71 |
+| BONER/USDT:USDT | +24.41% | $2,238,685.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +4.49% | +4.56% |
-| AKE/USDT:USDT | below_1h_threshold | +2.60% | +2.66% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.86% | +1.92% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.38% | +1.44% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.22% | +1.28% |
+| AKE/USDT:USDT | below_1h_threshold | +3.51% | +3.72% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.71% | +2.92% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.31% | +1.51% |
+| POWER/USDT:USDT | below_1h_threshold | +0.77% | +0.98% |
+| BTW/USDT:USDT | below_1h_threshold | +0.61% | +0.82% |
 
 ## 7. 次に見るべき不足
 
