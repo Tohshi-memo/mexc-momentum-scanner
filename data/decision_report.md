@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T09:01:24.709179+00:00
+- generated_at: 2026-09-03T09:06:56.531183+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13463**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T09:01:13.228368+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77777.3
-- Funnel: target 1046 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-03T09:06:47.056079+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=77775.2
+- Funnel: target 1046 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +75.50% | $6,407,519.47 |
-| EDGE/USDT:USDT | +37.63% | $3,859,891.73 |
-| BR/USDT:USDT | +37.16% | $1,771,484.01 |
-| PONS/USDT:USDT | +33.78% | $5,086,509.19 |
-| CHIP/USDT:USDT | +26.61% | $5,612,154.19 |
+| MARSCOIN/USDT:USDT | +84.34% | $6,460,280.14 |
+| BR/USDT:USDT | +36.56% | $1,814,979.51 |
+| EDGE/USDT:USDT | +35.28% | $3,903,824.97 |
+| BULLA/USDT:USDT | +31.55% | $5,669,015.71 |
+| PONS/USDT:USDT | +31.36% | $5,114,636.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +1.39% | +1.43% |
-| BONER/USDT:USDT | below_1h_threshold | +1.32% | +1.36% |
-| BTR/USDT:USDT | below_1h_threshold | +1.19% | +1.23% |
-| PONS/USDT:USDT | below_1h_threshold | +1.02% | +1.06% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.72% | +0.76% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.58% | +4.62% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.95% | +4.00% |
+| H/USDT:USDT | below_1h_threshold | +1.45% | +1.49% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.93% | +0.98% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
 
 ## 7. 次に見るべき不足
 
