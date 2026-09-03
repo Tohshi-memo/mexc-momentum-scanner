@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 113.91948087419603,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-09-03T04:11:20.149641+00:00",
+  "updated_at": "2026-09-03T04:16:30.493365+00:00",
   "high_watermark": 119.7568885757486,
   "max_drawdown_pct": 5.256052504142945,
   "loss_streak": 0,
@@ -421862,6 +421862,118 @@
       "direction": "short",
       "risk_pct": 0.175,
       "relative_strength": 7.0088173037706785,
+      "decision": {
+        "strategy": "LIMIT_5PCT",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.00021758102665207565,
+        "robust_score": 0.00021758102665207565,
+        "causal_history_count": 13423,
+        "fast": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 28,
+          "fill_rate": 0.56,
+          "avg_pnl_pct": 1.176979116666839,
+          "effective_ev_pct": 0.6591083053334299,
+          "avg_log_return": 0.00029418204059657486,
+          "geometric_return_pct": 0.029422531637668392,
+          "avg_account_return_pct": 0.029494596779069654,
+          "max_drawdown_pct": 0.34969375000000097,
+          "max_loss_streak": 2
+        },
+        "recent": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 50,
+          "filled": 28,
+          "fill_rate": 0.56,
+          "avg_pnl_pct": 1.176979116666839,
+          "effective_ev_pct": 0.6591083053334299,
+          "avg_log_return": 0.00029418204059657486,
+          "geometric_return_pct": 0.029422531637668392,
+          "avg_account_return_pct": 0.029494596779069654,
+          "max_drawdown_pct": 0.34969375000000097,
+          "max_loss_streak": 2
+        },
+        "mid": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 200,
+          "filled": 98,
+          "fill_rate": 0.49,
+          "avg_pnl_pct": 0.6606835534038097,
+          "effective_ev_pct": 0.3237349411678667,
+          "avg_log_return": 0.00014821382062833854,
+          "geometric_return_pct": 0.01482248048392254,
+          "avg_account_return_pct": 0.01487414610884461,
+          "max_drawdown_pct": 0.774243721098004,
+          "max_loss_streak": 3
+        },
+        "long": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 383,
+          "fill_rate": 0.383,
+          "avg_pnl_pct": 0.42123084957450563,
+          "effective_ev_pct": 0.16133141538703566,
+          "avg_log_return": 7.544505423638599e-05,
+          "geometric_return_pct": 0.0075447900286018665,
+          "avg_account_return_pct": 0.0075758604947343865,
+          "max_drawdown_pct": 0.871609061112758,
+          "max_loss_streak": 4
+        },
+        "all": {
+          "strategy": "LIMIT_5PCT",
+          "direction": "short",
+          "total": 1000,
+          "filled": 383,
+          "fill_rate": 0.383,
+          "avg_pnl_pct": 0.42123084957450563,
+          "effective_ev_pct": 0.16133141538703566,
+          "avg_log_return": 7.544505423638599e-05,
+          "geometric_return_pct": 0.0075447900286018665,
+          "avg_account_return_pct": 0.0075758604947343865,
+          "max_drawdown_pct": 0.871609061112758,
+          "max_loss_streak": 4
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 0.00015925266092768327
+          },
+          {
+            "strategy": "LIMIT_2PCT_LONG",
+            "direction": "long",
+            "causal_score": 0.0001539298990505025
+          },
+          {
+            "strategy": "LIMIT_8PCT",
+            "direction": "short",
+            "causal_score": 0.00014698702183029165
+          },
+          {
+            "strategy": "LIMIT_7PCT",
+            "direction": "short",
+            "causal_score": 0.00011539086121068097
+          }
+        ]
+      }
+    },
+    "HEMI/USDT:USDT|2026-09-03T04:16:19.045647+00:00": {
+      "key": "HEMI/USDT:USDT|2026-09-03T04:16:19.045647+00:00",
+      "symbol": "HEMI/USDT:USDT",
+      "detected_at": "2026-09-03T04:16:19.045647+00:00",
+      "registered_at": "2026-09-03T04:16:30.424300+00:00",
+      "signal_batch": "2026-09-03T04:16Z",
+      "status": "pending",
+      "strategy": "LIMIT_5PCT",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 7.297176016403996,
       "decision": {
         "strategy": "LIMIT_5PCT",
         "direction": "short",
