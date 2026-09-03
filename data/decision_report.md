@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T19:21:37.316877+00:00
+- generated_at: 2026-09-03T19:26:38.738342+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13528**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.75** / 初期 $100.00 (+16.75%)
-- 確定: 2202件 (Win 657 / Loss 863 / Flat 682) / pending 6件 / skip 2796件
+- 確定: 2202件 (Win 657 / Loss 863 / Flat 682) / pending 6件 / skip 2797件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000341 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.75
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T19:21:23.645047+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=81445.7
-- Funnel: target 1046 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.7 >= 65=1
+- 更新: 2026-09-03T19:26:26.139734+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=81390.8
+- Funnel: target 1046 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +20.29% | $64,427,253.00 |
-| PROM/USDT:USDT | +10.21% | $3,713,291.97 |
-| APR/USDT:USDT | +10.16% | $2,051,929.47 |
-| ARB/USDT:USDT | +7.45% | $63,069,330.60 |
-| HNT/USDT:USDT | +5.82% | $3,199,842.31 |
+| AKE/USDT:USDT | +21.59% | $64,509,783.17 |
+| HNT/USDT:USDT | +15.07% | $3,275,524.75 |
+| APR/USDT:USDT | +11.05% | $2,089,530.29 |
+| PROM/USDT:USDT | +10.47% | $3,715,011.75 |
+| BTW/USDT:USDT | +8.61% | $13,513,246.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +3.76% | +3.49% |
-| MUU/USDT:USDT | below_1h_threshold | +2.14% | +1.87% |
-| ZEST/USDT:USDT | below_1h_threshold | +1.92% | +1.65% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.71% | +1.44% |
-| 4/USDT:USDT | below_1h_threshold | +1.70% | +1.43% |
+| BTW/USDT:USDT | below_1h_threshold | +2.81% | +2.61% |
+| CAP/USDT:USDT | below_1h_threshold | +2.51% | +2.31% |
+| MUU/USDT:USDT | below_1h_threshold | +2.14% | +1.94% |
+| AKE/USDT:USDT | below_1h_threshold | +1.99% | +1.79% |
+| ZEST/USDT:USDT | below_1h_threshold | +1.81% | +1.61% |
 
 ## 7. 次に見るべき不足
 
