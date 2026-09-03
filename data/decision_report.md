@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T20:26:32.784217+00:00
+- generated_at: 2026-09-03T20:31:30.055223+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13537**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.17** / 初期 $100.00 (+18.17%)
-- 確定: 2208件 (Win 661 / Loss 863 / Flat 684) / pending 6件 / skip 2801件
+- 確定: 2208件 (Win 661 / Loss 863 / Flat 684) / pending 6件 / skip 2802件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000483 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HNT/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $118.17
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T20:26:20.112608+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=81385.8
-- Funnel: target 1046 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T20:31:17.463278+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=81500.0
+- Funnel: target 1046 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +35.37% | $5,715,462.73 |
-| AKE/USDT:USDT | +14.24% | $62,801,462.90 |
-| APR/USDT:USDT | +10.04% | $2,435,461.09 |
-| PROM/USDT:USDT | +8.59% | $3,669,924.50 |
-| BTW/USDT:USDT | +6.84% | $13,132,124.40 |
+| HNT/USDT:USDT | +34.35% | $5,827,892.19 |
+| AKE/USDT:USDT | +13.14% | $63,086,360.95 |
+| APR/USDT:USDT | +11.13% | $2,444,693.70 |
+| PROM/USDT:USDT | +8.61% | $3,675,161.97 |
+| CASHCAT/USDT:USDT | +7.62% | $1,025,204.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.95% | +3.35% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.51% |
-| 4/USDT:USDT | below_1h_threshold | +1.49% | +1.89% |
-| AR/USDT:USDT | below_1h_threshold | +1.45% | +1.86% |
-| PONS/USDT:USDT | below_1h_threshold | +1.20% | +1.60% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.38% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.93% | +2.19% |
+| 4/USDT:USDT | below_1h_threshold | +1.79% | +2.05% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +1.77% | +2.03% |
+| AR/USDT:USDT | below_1h_threshold | +1.68% | +1.95% |
 
 ## 7. 次に見るべき不足
 
