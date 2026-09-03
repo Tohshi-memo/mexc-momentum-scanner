@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T18:01:21.046150+00:00
+- generated_at: 2026-09-03T18:06:28.779602+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13523**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.65** / 初期 $100.00 (+16.65%)
-- 確定: 2200件 (Win 656 / Loss 862 / Flat 682) / pending 4件 / skip 2792件
+- 確定: 2200件 (Win 656 / Loss 862 / Flat 682) / pending 5件 / skip 2792件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000381 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.65
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T18:01:09.939651+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81011.1
-- Funnel: target 1046 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T18:06:16.566358+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=81141.3
+- Funnel: target 1046 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +16.20% | $64,425,308.93 |
-| PROM/USDT:USDT | +12.73% | $3,745,628.01 |
-| MUBARAK/USDT:USDT | +7.79% | $3,604,259.07 |
-| BR/USDT:USDT | +6.40% | $8,236,505.30 |
-| ENA/USDT:USDT | +5.51% | $41,174,591.33 |
+| AKE/USDT:USDT | +17.47% | $64,883,497.18 |
+| PROM/USDT:USDT | +11.33% | $3,766,239.93 |
+| MUBARAK/USDT:USDT | +8.71% | $3,620,788.96 |
+| ENA/USDT:USDT | +5.45% | $41,483,047.68 |
+| BR/USDT:USDT | +5.40% | $8,270,890.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.20% | +1.19% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +1.10% | +1.09% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
-| ROBINHOOD/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
-| PROM/USDT:USDT | below_1h_threshold | +0.77% | +0.77% |
+| AKE/USDT:USDT | below_1h_threshold | +2.08% | +1.91% |
+| WLD/USDT:USDT | below_1h_threshold | +1.40% | +1.24% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +1.10% | +0.93% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.99% | +0.83% |
+| LIT/USDT:USDT | below_1h_threshold | +0.80% | +0.64% |
 
 ## 7. 次に見るべき不足
 
