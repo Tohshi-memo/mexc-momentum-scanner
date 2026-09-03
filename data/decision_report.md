@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T02:11:18.938663+00:00
+- generated_at: 2026-09-03T02:16:09.139681+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13411**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T02:11:09.301416+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77268.5
-- Funnel: target 1044 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-03T02:16:01.553573+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=77432.8
+- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +50.54% | $74,757,457.65 |
-| PONS/USDT:USDT | +29.17% | $4,185,912.50 |
-| SNOWSTOCK/USDT:USDT | +22.45% | $1,454,019.06 |
-| EDGE/USDT:USDT | +17.48% | $1,378,815.92 |
-| NIULAI/USDT:USDT | +16.79% | $2,157,489.23 |
+| AKE/USDT:USDT | +43.84% | $74,846,541.66 |
+| PONS/USDT:USDT | +29.45% | $4,212,583.66 |
+| SNOWSTOCK/USDT:USDT | +22.35% | $1,454,254.11 |
+| NIULAI/USDT:USDT | +18.91% | $2,160,937.50 |
+| EDGE/USDT:USDT | +17.48% | $1,386,990.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUBARAK/USDT:USDT | below_1h_threshold | +2.01% | +2.08% |
-| AKE/USDT:USDT | below_1h_threshold | +1.66% | +1.73% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.40% | +1.47% |
-| TUT/USDT:USDT | below_1h_threshold | +1.38% | +1.45% |
-| ARB/USDT:USDT | below_1h_threshold | +1.04% | +1.10% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +3.38% | +3.23% |
+| ARB/USDT:USDT | below_1h_threshold | +2.38% | +2.23% |
+| 4/USDT:USDT | below_1h_threshold | +2.20% | +2.05% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.16% | +2.01% |
 
 ## 7. 次に見るべき不足
 
