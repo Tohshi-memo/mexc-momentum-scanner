@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T01:51:41.028037+00:00
+- generated_at: 2026-09-03T01:56:35.883920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13410**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T01:51:24.194018+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=77262.1
+- 更新: 2026-09-03T01:56:22.654529+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=77389.5
 - Funnel: target 1044 → liquid 159 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI n/a=1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.0 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +51.57% | $74,685,217.69 |
-| PONS/USDT:USDT | +32.28% | $4,157,171.72 |
-| SNOWSTOCK/USDT:USDT | +22.16% | $1,474,305.76 |
-| EDGE/USDT:USDT | +17.14% | $1,369,833.05 |
-| NIULAI/USDT:USDT | +15.63% | $2,234,191.85 |
+| AKE/USDT:USDT | +47.57% | $74,732,300.98 |
+| PONS/USDT:USDT | +33.12% | $4,207,192.50 |
+| SNOWSTOCK/USDT:USDT | +22.24% | $1,475,762.39 |
+| EDGE/USDT:USDT | +17.06% | $1,380,450.95 |
+| CASHCAT/USDT:USDT | +16.31% | $1,987,734.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_relative_strength | +5.25% | +4.94% |
-| BULLA/USDT:USDT | below_1h_threshold | +4.51% | +4.20% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.79% | +3.48% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.75% | +3.44% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.74% | +3.43% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.31% | +3.84% |
+| 4/USDT:USDT | below_1h_threshold | +3.87% | +3.39% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.67% | +3.19% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.45% | +2.98% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.33% | +2.86% |
 
 ## 7. 次に見るべき不足
 
