@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T11:51:30.416207+00:00
+- generated_at: 2026-09-03T11:56:41.143513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13470**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$115.07** / 初期 $100.00 (+15.07%)
-- 確定: 2164件 (Win 640 / Loss 848 / Flat 676) / pending 5件 / skip 2773件
+- 確定: 2164件 (Win 640 / Loss 848 / Flat 676) / pending 6件 / skip 2773件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000302 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BONER/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $115.07
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T11:51:17.561642+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=77888.0
-- Funnel: target 1048 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-09-03T11:56:27.210464+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=77919.9
+- Funnel: target 1048 → liquid 158 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 73.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +100.71% | $7,836,353.16 |
-| BR/USDT:USDT | +41.78% | $3,857,809.15 |
-| EDGE/USDT:USDT | +39.69% | $5,602,177.97 |
-| GPROSTOCK/USDT:USDT | +37.44% | $1,032,178.44 |
-| PONS/USDT:USDT | +36.35% | $5,893,266.99 |
+| MARSCOIN/USDT:USDT | +100.68% | $7,871,936.64 |
+| BR/USDT:USDT | +42.05% | $3,916,769.09 |
+| EDGE/USDT:USDT | +39.56% | $5,629,285.85 |
+| GPROSTOCK/USDT:USDT | +37.36% | $1,033,417.01 |
+| PONS/USDT:USDT | +36.78% | $5,906,637.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_relative_strength | +5.11% | +4.87% |
-| BR/USDT:USDT | below_1h_threshold | +4.29% | +4.05% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.49% | +3.25% |
-| UNI/USDT:USDT | below_1h_threshold | +3.13% | +2.90% |
-| LIT/USDT:USDT | below_1h_threshold | +2.82% | +2.59% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.96% | +4.68% |
+| BR/USDT:USDT | below_1h_threshold | +4.40% | +4.13% |
+| UNI/USDT:USDT | below_1h_threshold | +3.15% | +2.87% |
+| AKE/USDT:USDT | below_1h_threshold | +3.12% | +2.85% |
+| LIT/USDT:USDT | below_1h_threshold | +2.94% | +2.67% |
 
 ## 7. 次に見るべき不足
 
