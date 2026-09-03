@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T17:31:30.355942+00:00
+- generated_at: 2026-09-03T17:36:24.823385+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13519**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T17:31:16.509453+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80968.6
+- 更新: 2026-09-03T17:36:12.575633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=81070.4
 - Funnel: target 1046 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +11.49% | $2,453,444.54 |
-| PROM/USDT:USDT | +10.81% | $3,774,056.54 |
-| AKE/USDT:USDT | +10.47% | $67,576,948.72 |
-| BR/USDT:USDT | +5.20% | $8,102,353.55 |
-| JTO/USDT:USDT | +4.03% | $2,428,927.97 |
+| PROM/USDT:USDT | +12.04% | $3,779,938.49 |
+| AKE/USDT:USDT | +10.84% | $67,762,215.07 |
+| BONER/USDT:USDT | +7.19% | $2,475,862.44 |
+| BR/USDT:USDT | +5.41% | $8,137,893.75 |
+| MUBARAK/USDT:USDT | +4.06% | $3,610,319.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.35% | +4.30% |
-| FLOCK/USDT:USDT | below_1h_threshold | +4.33% | +4.29% |
-| JTO/USDT:USDT | below_1h_threshold | +4.24% | +4.20% |
-| PROM/USDT:USDT | below_1h_threshold | +3.42% | +3.38% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.33% | +3.29% |
+| MUBARAK/USDT:USDT | below_relative_strength | +5.02% | +4.85% |
+| PROM/USDT:USDT | below_1h_threshold | +4.38% | +4.22% |
+| 4/USDT:USDT | below_1h_threshold | +3.97% | +3.80% |
+| FLOCK/USDT:USDT | below_1h_threshold | +3.68% | +3.52% |
+| JASMY/USDT:USDT | below_1h_threshold | +2.76% | +2.59% |
 
 ## 7. 次に見るべき不足
 
