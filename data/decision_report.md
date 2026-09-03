@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T11:56:41.143513+00:00
+- generated_at: 2026-09-03T12:01:22.487574+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13470**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T11:56:27.210464+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=77919.9
-- Funnel: target 1048 → liquid 158 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 73.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-03T12:01:12.696739+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77899.0
+- Funnel: target 1048 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +100.68% | $7,871,936.64 |
-| BR/USDT:USDT | +42.05% | $3,916,769.09 |
-| EDGE/USDT:USDT | +39.56% | $5,629,285.85 |
-| GPROSTOCK/USDT:USDT | +37.36% | $1,033,417.01 |
-| PONS/USDT:USDT | +36.78% | $5,906,637.50 |
+| MARSCOIN/USDT:USDT | +86.31% | $7,853,516.65 |
+| BR/USDT:USDT | +42.41% | $3,946,480.69 |
+| EDGE/USDT:USDT | +37.91% | $5,638,347.88 |
+| BULLA/USDT:USDT | +37.65% | $6,536,602.70 |
+| GPROSTOCK/USDT:USDT | +36.90% | $1,022,665.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.96% | +4.68% |
-| BR/USDT:USDT | below_1h_threshold | +4.40% | +4.13% |
-| UNI/USDT:USDT | below_1h_threshold | +3.15% | +2.87% |
-| AKE/USDT:USDT | below_1h_threshold | +3.12% | +2.85% |
-| LIT/USDT:USDT | below_1h_threshold | +2.94% | +2.67% |
+| GPROSTOCK/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.11% | +1.12% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.02% | +1.03% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
+| CAKE/USDT:USDT | below_1h_threshold | +0.55% | +0.56% |
 
 ## 7. 次に見るべき不足
 
