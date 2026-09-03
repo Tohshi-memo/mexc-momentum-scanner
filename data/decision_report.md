@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T20:16:40.889667+00:00
+- generated_at: 2026-09-03T20:21:33.838845+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13536**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T20:16:26.972918+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=81398.0
+- 更新: 2026-09-03T20:21:21.625376+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=81423.5
 - Funnel: target 1046 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +35.70% | $5,156,640.53 |
-| AKE/USDT:USDT | +19.37% | $62,343,465.54 |
-| APR/USDT:USDT | +11.33% | $2,421,146.41 |
-| PROM/USDT:USDT | +7.90% | $3,666,282.27 |
-| CASHCAT/USDT:USDT | +6.41% | $1,019,022.22 |
+| HNT/USDT:USDT | +35.43% | $5,558,414.79 |
+| AKE/USDT:USDT | +19.08% | $62,528,389.44 |
+| APR/USDT:USDT | +10.08% | $2,426,483.05 |
+| PROM/USDT:USDT | +9.13% | $3,668,548.37 |
+| BTW/USDT:USDT | +7.40% | $13,127,489.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.25% | +2.64% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.50% |
-| ROBINHOOD/USDT:USDT | below_1h_threshold | +1.49% | +1.87% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.08% | +1.47% |
-| AR/USDT:USDT | below_1h_threshold | +1.03% | +1.42% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.47% |
+| AR/USDT:USDT | below_1h_threshold | +1.68% | +2.04% |
+| ROBINHOOD/USDT:USDT | below_1h_threshold | +1.49% | +1.84% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +1.47% | +1.83% |
+| PONS/USDT:USDT | below_1h_threshold | +1.47% | +1.82% |
 
 ## 7. 次に見るべき不足
 
