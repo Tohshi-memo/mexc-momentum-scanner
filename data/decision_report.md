@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T14:11:36.901124+00:00
+- generated_at: 2026-09-03T14:16:40.942928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13479**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.63** / 初期 $100.00 (+16.63%)
-- 確定: 2173件 (Win 647 / Loss 850 / Flat 676) / pending 5件 / skip 2775件
+- 確定: 2173件 (Win 647 / Loss 850 / Flat 676) / pending 6件 / skip 2775件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000412 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CRCLSTOCK/USDT:USDT `MARKET_LONG` EXPIRED account +0.16% 残高後 $116.63
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T14:11:22.612313+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78829.1
-- Funnel: target 1046 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.0 >= 65=1
+- 更新: 2026-09-03T14:16:28.049548+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=78979.1
+- Funnel: target 1046 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.7 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +109.46% | $8,712,337.34 |
-| BASECAT/USDT:USDT | +54.71% | $1,061,187.45 |
-| BR/USDT:USDT | +51.46% | $5,403,668.41 |
-| EDGE/USDT:USDT | +43.39% | $7,321,965.03 |
-| BULLA/USDT:USDT | +40.62% | $8,217,144.39 |
+| MARSCOIN/USDT:USDT | +103.76% | $8,775,558.46 |
+| BASECAT/USDT:USDT | +56.48% | $1,067,190.53 |
+| BULLA/USDT:USDT | +51.13% | $8,379,553.25 |
+| BR/USDT:USDT | +50.80% | $5,437,924.40 |
+| EDGE/USDT:USDT | +42.22% | $7,380,623.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.62% | +4.59% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.38% | +4.35% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.77% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.46% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.01% | +2.98% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +4.62% | +4.40% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.96% | +3.74% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +3.80% | +3.58% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +3.48% | +3.26% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.01% | +2.79% |
 
 ## 7. 次に見るべき不足
 
