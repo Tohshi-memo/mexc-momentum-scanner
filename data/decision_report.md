@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T02:26:21.011923+00:00
+- generated_at: 2026-09-03T02:31:24.364901+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13411**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$113.46** / 初期 $100.00 (+13.46%)
-- 確定: 2113件 (Win 615 / Loss 832 / Flat 666) / pending 6件 / skip 2765件
+- 確定: 2113件 (Win 615 / Loss 832 / Flat 666) / pending 6件 / skip 2766件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000274 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: FLOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $113.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T02:26:11.197316+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=77514.2
-- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T02:31:15.001715+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=77575.0
+- Funnel: target 1044 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +44.85% | $74,938,984.73 |
-| PONS/USDT:USDT | +27.55% | $4,247,742.02 |
-| SNOWSTOCK/USDT:USDT | +22.34% | $1,455,597.87 |
-| NIULAI/USDT:USDT | +19.80% | $2,180,555.35 |
-| MARSCOIN/USDT:USDT | +16.60% | $2,699,090.39 |
+| AKE/USDT:USDT | +39.79% | $75,117,701.66 |
+| PONS/USDT:USDT | +26.30% | $4,277,380.20 |
+| SNOWSTOCK/USDT:USDT | +22.09% | $1,456,617.20 |
+| NIULAI/USDT:USDT | +17.44% | $2,187,587.58 |
+| MARSCOIN/USDT:USDT | +16.40% | $2,702,624.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.94% | +4.69% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.19% | +2.94% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +3.13% | +2.88% |
-| ARB/USDT:USDT | below_1h_threshold | +2.02% | +1.78% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.93% | +1.68% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.73% | +4.40% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.24% | +2.92% |
+| ARB/USDT:USDT | below_1h_threshold | +2.75% | +2.42% |
+| MUBARAK/USDT:USDT | below_1h_threshold | +2.41% | +2.08% |
+| SUI/USDT:USDT | below_1h_threshold | +2.09% | +1.76% |
 
 ## 7. 次に見るべき不足
 
