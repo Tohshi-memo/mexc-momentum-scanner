@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T23:01:23.025500+00:00
+- generated_at: 2026-09-03T23:06:20.443551+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13550**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.27** / 初期 $100.00 (+17.27%)
-- 確定: 2215件 (Win 661 / Loss 868 / Flat 686) / pending 5件 / skip 2805件
+- 確定: 2215件 (Win 661 / Loss 868 / Flat 686) / pending 6件 / skip 2805件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000331 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIULAI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $117.27
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T23:01:13.667388+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81113.7
-- Funnel: target 1046 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-03T23:06:10.520834+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81176.4
+- Funnel: target 1046 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +27.42% | $8,290,605.61 |
-| AKE/USDT:USDT | +11.39% | $27,425,774.70 |
-| PONS/USDT:USDT | +10.55% | $7,509,959.89 |
-| BONER/USDT:USDT | +10.49% | $2,404,982.66 |
-| NIULAI/USDT:USDT | +7.95% | $2,673,719.42 |
+| HNT/USDT:USDT | +26.35% | $8,330,448.94 |
+| BASECAT/USDT:USDT | +14.72% | $1,694,768.59 |
+| BONER/USDT:USDT | +11.87% | $2,411,075.91 |
+| PONS/USDT:USDT | +11.56% | $7,550,447.68 |
+| AKE/USDT:USDT | +9.37% | $27,577,824.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APR/USDT:USDT | below_1h_threshold | +0.57% | +0.57% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +0.49% | +0.49% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
-| UNI/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
-| BICO/USDT:USDT | below_1h_threshold | +0.23% | +0.22% |
+| APR/USDT:USDT | below_1h_threshold | +1.57% | +1.49% |
+| BONER/USDT:USDT | below_1h_threshold | +1.31% | +1.22% |
+| PONS/USDT:USDT | below_1h_threshold | +0.87% | +0.79% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.82% | +0.73% |
+| BR/USDT:USDT | below_1h_threshold | +0.70% | +0.62% |
 
 ## 7. 次に見るべき不足
 
