@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T07:26:25.618113+00:00
+- generated_at: 2026-09-03T07:31:58.053209+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13453**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$114.23** / 初期 $100.00 (+14.23%)
-- 確定: 2149件 (Win 632 / Loss 843 / Flat 674) / pending 4件 / skip 2773件
+- 確定: 2149件 (Win 632 / Loss 843 / Flat 674) / pending 5件 / skip 2773件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000298 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $114.23
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T07:26:13.794123+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77884.2
-- Funnel: target 1046 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1
+- 更新: 2026-09-03T07:31:47.542949+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77826.2
+- Funnel: target 1046 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1, 4h RSI 89.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +84.98% | $4,873,596.37 |
-| EDGE/USDT:USDT | +35.15% | $2,638,256.42 |
-| HEMI/USDT:USDT | +30.57% | $3,476,431.03 |
-| USELESS/USDT:USDT | +28.63% | $23,792,556.52 |
-| BR/USDT:USDT | +25.93% | $1,016,617.70 |
+| MARSCOIN/USDT:USDT | +84.88% | $5,138,185.95 |
+| EDGE/USDT:USDT | +38.02% | $2,734,474.88 |
+| HEMI/USDT:USDT | +31.00% | $3,490,247.01 |
+| USELESS/USDT:USDT | +28.46% | $23,998,748.76 |
+| BR/USDT:USDT | +25.40% | $1,023,480.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKYAI/USDT:USDT | below_1h_threshold | +3.10% | +2.99% |
-| EDGE/USDT:USDT | below_1h_threshold | +3.02% | +2.90% |
-| APT/USDT:USDT | below_1h_threshold | +2.36% | +2.24% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.35% | +2.24% |
-| AR/USDT:USDT | below_1h_threshold | +1.91% | +1.79% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.41% | +3.36% |
+| APT/USDT:USDT | below_1h_threshold | +2.57% | +2.53% |
+| AR/USDT:USDT | below_1h_threshold | +1.52% | +1.47% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
 
 ## 7. 次に見るべき不足
 
