@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-03T22:56:34.043887+00:00
+- generated_at: 2026-09-03T23:01:23.025500+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13550**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-03T22:56:20.243754+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=81073.3
-- Funnel: target 1046 → liquid 170 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-03T23:01:13.667388+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=81113.7
+- Funnel: target 1046 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +26.80% | $8,342,144.32 |
-| AKE/USDT:USDT | +12.40% | $34,079,627.58 |
-| NIULAI/USDT:USDT | +11.01% | $2,679,089.38 |
-| BASECAT/USDT:USDT | +10.54% | $1,686,922.54 |
-| PONS/USDT:USDT | +10.36% | $7,887,051.36 |
+| HNT/USDT:USDT | +27.42% | $8,290,605.61 |
+| AKE/USDT:USDT | +11.39% | $27,425,774.70 |
+| PONS/USDT:USDT | +10.55% | $7,509,959.89 |
+| BONER/USDT:USDT | +10.49% | $2,404,982.66 |
+| NIULAI/USDT:USDT | +7.95% | $2,673,719.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +1.90% | +2.48% |
-| ZEST/USDT:USDT | below_1h_threshold | +1.84% | +2.42% |
-| OPENAI/USDT:USDT | below_1h_threshold | +1.45% | +2.03% |
-| FF/USDT:USDT | below_1h_threshold | +1.18% | +1.77% |
-| 0G/USDT:USDT | below_1h_threshold | +1.05% | +1.64% |
+| APR/USDT:USDT | below_1h_threshold | +0.57% | +0.57% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +0.49% | +0.49% |
+| NVIDIA/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
+| UNI/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
+| BICO/USDT:USDT | below_1h_threshold | +0.23% | +0.22% |
 
 ## 7. 次に見るべき不足
 
