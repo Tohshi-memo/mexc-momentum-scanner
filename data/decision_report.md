@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T04:01:24.878042+00:00
+- generated_at: 2026-09-04T04:06:33.170070+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13577**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.51** / 初期 $100.00 (+16.51%)
-- 確定: 2232件 (Win 664 / Loss 875 / Flat 693) / pending 4件 / skip 2814件
+- 確定: 2232件 (Win 664 / Loss 875 / Flat 693) / pending 5件 / skip 2814件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000157 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CAP/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $116.51
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T04:01:15.129624+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=80804.3
-- Funnel: target 1046 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-04T04:06:20.993105+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80835.4
+- Funnel: target 1046 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +31.66% | $11,180,624.07 |
-| TRIA/USDT:USDT | +24.35% | $1,441,293.96 |
-| BASECAT/USDT:USDT | +19.03% | $2,014,483.51 |
-| MARSCOIN/USDT:USDT | +16.57% | $9,974,559.54 |
-| PONS/USDT:USDT | +16.48% | $9,449,287.83 |
+| HNT/USDT:USDT | +32.92% | $11,247,725.63 |
+| TRIA/USDT:USDT | +27.18% | $1,520,923.65 |
+| BASECAT/USDT:USDT | +21.17% | $2,020,344.83 |
+| PONS/USDT:USDT | +16.16% | $9,478,766.85 |
+| MARSCOIN/USDT:USDT | +14.75% | $9,980,396.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.08% | +1.09% |
-| TRIA/USDT:USDT | below_1h_threshold | +0.89% | +0.90% |
-| BR/USDT:USDT | below_1h_threshold | +0.74% | +0.75% |
-| BASECAT/USDT:USDT | below_1h_threshold | +0.69% | +0.69% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.65% | +0.66% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.55% | +2.52% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.23% | +2.20% |
+| BTR/USDT:USDT | below_1h_threshold | +2.02% | +1.98% |
+| ONG/USDT:USDT | below_1h_threshold | +1.86% | +1.83% |
+| DASH/USDT:USDT | below_1h_threshold | +1.63% | +1.60% |
 
 ## 7. 次に見るべき不足
 
