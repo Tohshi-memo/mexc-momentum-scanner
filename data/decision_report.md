@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T09:16:40.760567+00:00
+- generated_at: 2026-09-04T09:21:30.810441+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13598**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T09:16:26.118161+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81095.1
-- Funnel: target 1052 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-04T09:21:18.196129+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=81060.0
+- Funnel: target 1052 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +40.73% | $6,117,732.23 |
-| USELESS/USDT:USDT | +40.67% | $34,942,108.80 |
-| HNT/USDT:USDT | +21.90% | $13,193,976.10 |
-| PONS/USDT:USDT | +16.62% | $10,427,026.23 |
-| DASH/USDT:USDT | +12.98% | $10,921,724.76 |
+| TRIA/USDT:USDT | +42.48% | $6,292,884.57 |
+| USELESS/USDT:USDT | +40.75% | $35,080,442.08 |
+| HNT/USDT:USDT | +21.46% | $13,261,054.42 |
+| PONS/USDT:USDT | +17.50% | $10,464,113.19 |
+| DASH/USDT:USDT | +13.68% | $10,984,261.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +4.12% | +4.14% |
-| MTSISTOCK/USDT:USDT | below_1h_threshold | +3.35% | +3.38% |
-| TRIA/USDT:USDT | below_1h_threshold | +3.14% | +3.16% |
-| PONS/USDT:USDT | below_1h_threshold | +2.13% | +2.16% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.63% | +1.66% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.45% | +4.52% |
+| HNT/USDT:USDT | below_1h_threshold | +3.77% | +3.84% |
+| MTSISTOCK/USDT:USDT | below_1h_threshold | +3.35% | +3.42% |
+| PONS/USDT:USDT | below_1h_threshold | +2.90% | +2.97% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.93% | +2.00% |
 
 ## 7. 次に見るべき不足
 
