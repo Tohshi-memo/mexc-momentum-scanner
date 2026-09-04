@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T14:51:43.819034+00:00
+- generated_at: 2026-09-04T14:56:32.227204+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13631**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T14:51:26.837068+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.75% price=78751.1
-- Funnel: target 1050 → liquid 173 → pre 50 → checked 50 → surge 5 → strict 2
+- 更新: 2026-09-04T14:56:22.684402+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.59% price=78876.0
+- Funnel: target 1050 → liquid 173 → pre 50 → checked 50 → surge 5 → strict 0
 - Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.1 >= 65=1, 4h RSI 71.1 >= 65=1, 4h RSI 77.7 >= 65=1
+- Strict後reject: 4h RSI 65.8 >= 65=2, 4h RSI 72.1 >= 65=1, 4h RSI 65.7 >= 65=1, 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +50.25% | $7,627,164.22 |
-| USELESS/USDT:USDT | +30.85% | $46,565,895.53 |
-| TRIA/USDT:USDT | +29.98% | $11,006,621.76 |
-| PONS/USDT:USDT | +22.45% | $12,312,036.36 |
-| HNT/USDT:USDT | +22.43% | $14,371,491.90 |
+| MARSCOIN/USDT:USDT | +51.51% | $7,649,398.92 |
+| USELESS/USDT:USDT | +33.81% | $46,649,109.39 |
+| TRIA/USDT:USDT | +32.12% | $11,070,292.95 |
+| PONS/USDT:USDT | +24.21% | $12,350,511.33 |
+| HNT/USDT:USDT | +21.92% | $14,431,319.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +3.79% | +4.53% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.66% | +4.41% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.62% | +4.37% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.53% | +4.27% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.44% | +4.19% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.67% | +5.26% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.66% | +4.25% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.62% | +4.21% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.53% | +4.12% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.44% | +4.03% |
 
 ## 7. 次に見るべき不足
 
