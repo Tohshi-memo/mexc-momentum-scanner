@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T19:06:15.560110+00:00
+- generated_at: 2026-09-04T19:11:20.424693+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13659**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T19:06:07.481288+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=79685.4
+- 更新: 2026-09-04T19:11:10.746697+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=79664.5
 - Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +39.42% | $3,570,635.12 |
-| MARSCOIN/USDT:USDT | +15.85% | $7,733,389.83 |
-| UAI/USDT:USDT | +14.96% | $6,340,633.41 |
-| SKR/USDT:USDT | +6.87% | $6,619,969.02 |
-| USELESS/USDT:USDT | +6.78% | $43,847,384.74 |
+| 4/USDT:USDT | +40.86% | $3,694,235.96 |
+| MARSCOIN/USDT:USDT | +18.78% | $7,771,375.92 |
+| UAI/USDT:USDT | +10.79% | $6,527,346.79 |
+| USELESS/USDT:USDT | +8.16% | $43,950,437.91 |
+| ZEN/USDT:USDT | +6.11% | $4,203,811.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.86% | +1.73% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +0.96% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.07% | +0.93% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +0.90% |
-| MUU/USDT:USDT | below_1h_threshold | +0.96% | +0.82% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.58% | +2.47% |
+| KORU/USDT:USDT | below_1h_threshold | +1.86% | +1.75% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.75% | +1.64% |
+| BONER/USDT:USDT | below_1h_threshold | +1.20% | +1.09% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +0.98% |
 
 ## 7. 次に見るべき不足
 
