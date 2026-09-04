@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T02:56:24.193880+00:00
+- generated_at: 2026-09-04T03:01:23.168452+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13572**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T02:56:13.067617+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=80765.5
-- Funnel: target 1046 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-04T03:01:13.295296+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80830.5
+- Funnel: target 1046 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +29.47% | $10,487,057.96 |
-| PONS/USDT:USDT | +17.51% | $9,555,286.29 |
-| BASECAT/USDT:USDT | +16.17% | $1,985,312.74 |
-| MARSCOIN/USDT:USDT | +12.68% | $10,059,353.97 |
-| USELESS/USDT:USDT | +10.85% | $29,133,666.45 |
+| HNT/USDT:USDT | +32.03% | $10,526,054.44 |
+| BASECAT/USDT:USDT | +16.32% | $1,972,406.53 |
+| PONS/USDT:USDT | +15.84% | $9,368,861.88 |
+| MARSCOIN/USDT:USDT | +15.72% | $10,007,419.84 |
+| USELESS/USDT:USDT | +11.47% | $28,769,778.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEN/USDT:USDT | below_1h_threshold | +2.95% | +3.16% |
-| AKE/USDT:USDT | below_1h_threshold | +1.68% | +1.89% |
-| LIT/USDT:USDT | below_1h_threshold | +1.68% | +1.89% |
-| UNI/USDT:USDT | below_1h_threshold | +1.65% | +1.86% |
-| PROM/USDT:USDT | below_1h_threshold | +1.56% | +1.77% |
+| KORU/USDT:USDT | below_1h_threshold | +1.18% | +1.15% |
+| MUU/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.69% | +0.65% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.65% | +0.61% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.57% |
 
 ## 7. 次に見るべき不足
 
