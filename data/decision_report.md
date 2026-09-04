@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T05:26:35.732617+00:00
+- generated_at: 2026-09-04T05:31:28.880156+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13585**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T05:26:24.016336+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81026.3
+- 更新: 2026-09-04T05:31:19.249172+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=80877.1
 - Funnel: target 1046 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +25.72% | $12,117,806.55 |
-| TRIA/USDT:USDT | +22.06% | $2,702,505.39 |
-| USELESS/USDT:USDT | +20.87% | $30,742,698.21 |
-| PROM/USDT:USDT | +15.79% | $2,566,522.05 |
-| BASECAT/USDT:USDT | +12.02% | $2,191,216.33 |
+| HNT/USDT:USDT | +25.39% | $12,141,702.32 |
+| TRIA/USDT:USDT | +22.32% | $2,712,427.18 |
+| USELESS/USDT:USDT | +18.76% | $30,838,699.61 |
+| PROM/USDT:USDT | +16.69% | $2,570,963.64 |
+| BASECAT/USDT:USDT | +13.76% | $2,194,573.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +2.88% | +2.90% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.74% | +2.75% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.40% | +2.41% |
-| HNT/USDT:USDT | below_1h_threshold | +2.32% | +2.33% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.75% | +1.76% |
+| ZEST/USDT:USDT | below_1h_threshold | +4.71% | +4.91% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.82% | +3.02% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.78% | +2.98% |
+| HNT/USDT:USDT | below_1h_threshold | +2.03% | +2.23% |
+| KORU/USDT:USDT | below_1h_threshold | +1.56% | +1.76% |
 
 ## 7. 次に見るべき不足
 
