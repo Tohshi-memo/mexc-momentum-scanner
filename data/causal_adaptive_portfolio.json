@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 116.01977292504176,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-09-04T08:46:24.197618+00:00",
+  "updated_at": "2026-09-04T08:52:00.248548+00:00",
   "high_watermark": 119.7568885757486,
   "max_drawdown_pct": 5.256052504142945,
   "loss_streak": 0,
@@ -443621,6 +443621,103 @@
             "strategy": "LIMIT_5PCT",
             "direction": "short",
             "causal_score": 8.066213323552013e-05
+          }
+        ]
+      }
+    },
+    "SPX/USDT:USDT|2026-09-04T08:51:52.862681+00:00": {
+      "key": "SPX/USDT:USDT|2026-09-04T08:51:52.862681+00:00",
+      "symbol": "SPX/USDT:USDT",
+      "detected_at": "2026-09-04T08:51:52.862681+00:00",
+      "registered_at": "2026-09-04T08:52:00.183340+00:00",
+      "signal_batch": "2026-09-04T08:51Z",
+      "status": "pending",
+      "strategy": "LIMIT_9PCT_LONG",
+      "direction": "long",
+      "risk_pct": 0.175,
+      "relative_strength": 5.15567369141318,
+      "decision": {
+        "strategy": "LIMIT_9PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 8.944206983805731e-05,
+        "robust_score": 8.944206983805731e-05,
+        "causal_history_count": 13592,
+        "fast": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 8,
+          "fill_rate": 0.16,
+          "avg_pnl_pct": 1.811538461538463,
+          "effective_ev_pct": 0.2898461538461541,
+          "avg_log_return": 0.00012667795155897073,
+          "geometric_return_pct": 0.01266859755495453,
+          "avg_account_return_pct": 0.012680769230769221,
+          "max_drawdown_pct": 0.0,
+          "max_loss_streak": 0
+        },
+        "recent": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 8,
+          "fill_rate": 0.16,
+          "avg_pnl_pct": 1.811538461538463,
+          "effective_ev_pct": 0.2898461538461541,
+          "avg_log_return": 0.00012667795155897073,
+          "geometric_return_pct": 0.01266859755495453,
+          "avg_account_return_pct": 0.012680769230769221,
+          "max_drawdown_pct": 0.0,
+          "max_loss_streak": 0
+        },
+        "mid": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 28,
+          "fill_rate": 0.14,
+          "avg_pnl_pct": 2.199626574259551,
+          "effective_ev_pct": 0.30794772039633717,
+          "avg_log_return": 0.00013582749336924475,
+          "geometric_return_pct": 0.013583671834083155,
+          "avg_account_return_pct": 0.013610064568490796,
+          "max_drawdown_pct": 0.34969374999999886,
+          "max_loss_streak": 2
+        },
+        "long": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 147,
+          "fill_rate": 0.147,
+          "avg_pnl_pct": 1.7801859331670746,
+          "effective_ev_pct": 0.26168733217555995,
+          "avg_log_return": 0.00011568842743154462,
+          "geometric_return_pct": 0.011569511959574896,
+          "avg_account_return_pct": 0.011592318933716672,
+          "max_drawdown_pct": 0.34969375000001607,
+          "max_loss_streak": 2
+        },
+        "all": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 147,
+          "fill_rate": 0.147,
+          "avg_pnl_pct": 1.7801859331670746,
+          "effective_ev_pct": 0.26168733217555995,
+          "avg_log_return": 0.00011568842743154462,
+          "geometric_return_pct": 0.011569511959574896,
+          "avg_account_return_pct": 0.011592318933716672,
+          "max_drawdown_pct": 0.34969375000001607,
+          "max_loss_streak": 2
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 8.206152785051976e-05
           }
         ]
       }
