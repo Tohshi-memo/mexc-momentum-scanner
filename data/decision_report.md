@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T00:26:21.556054+00:00
+- generated_at: 2026-09-04T00:31:19.914673+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13559**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T00:26:11.715114+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=81164.5
+- 更新: 2026-09-04T00:31:10.233790+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=81110.3
 - Funnel: target 1046 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +28.75% | $9,113,449.51 |
-| PONS/USDT:USDT | +18.63% | $8,936,907.71 |
-| AKE/USDT:USDT | +12.79% | $26,403,226.12 |
-| PROM/USDT:USDT | +8.74% | $3,649,738.44 |
-| ARB/USDT:USDT | +8.31% | $69,087,859.35 |
+| HNT/USDT:USDT | +30.11% | $9,141,702.94 |
+| PONS/USDT:USDT | +20.18% | $8,987,171.55 |
+| AKE/USDT:USDT | +11.59% | $26,424,539.41 |
+| ARB/USDT:USDT | +8.96% | $69,857,468.91 |
+| BR/USDT:USDT | +8.73% | $8,726,920.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +3.08% | +3.16% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
-| ARB/USDT:USDT | below_1h_threshold | +1.65% | +1.74% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.36% | +1.44% |
-| LIT/USDT:USDT | below_1h_threshold | +1.15% | +1.23% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.93% | +3.08% |
+| BTR/USDT:USDT | below_1h_threshold | +2.81% | +2.96% |
+| ARB/USDT:USDT | below_1h_threshold | +2.25% | +2.40% |
+| PONS/USDT:USDT | below_1h_threshold | +2.01% | +2.16% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.80% | +1.95% |
 
 ## 7. 次に見るべき不足
 
