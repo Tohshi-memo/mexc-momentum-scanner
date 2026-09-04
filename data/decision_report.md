@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T09:41:42.989955+00:00
+- generated_at: 2026-09-04T09:46:50.553699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13599**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T09:41:31.512834+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=81188.0
+- 更新: 2026-09-04T09:46:36.718389+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=81173.9
 - Funnel: target 1052 → liquid 163 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.0 >= 65=1, 4h RSI 93.4 >= 65=1, 4h RSI 72.7 >= 65=1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.2 >= 65=1, 4h RSI 93.4 >= 65=1, 4h RSI 71.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +49.62% | $36,290,877.93 |
-| TRIA/USDT:USDT | +41.87% | $6,696,030.43 |
-| HNT/USDT:USDT | +23.03% | $13,389,746.38 |
-| PONS/USDT:USDT | +17.58% | $10,570,525.69 |
-| SKR/USDT:USDT | +16.74% | $4,768,213.10 |
+| USELESS/USDT:USDT | +51.36% | $36,604,128.07 |
+| TRIA/USDT:USDT | +42.82% | $6,758,724.59 |
+| HNT/USDT:USDT | +21.57% | $13,437,841.06 |
+| SKR/USDT:USDT | +19.59% | $4,831,526.96 |
+| PONS/USDT:USDT | +16.18% | $10,590,745.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_relative_strength | +5.07% | +4.98% |
-| CHIP/USDT:USDT | below_1h_threshold | +4.58% | +4.49% |
-| TRIA/USDT:USDT | below_1h_threshold | +3.78% | +3.68% |
-| UAI/USDT:USDT | below_1h_threshold | +3.53% | +3.44% |
-| MTSISTOCK/USDT:USDT | below_1h_threshold | +3.35% | +3.26% |
+| CHIP/USDT:USDT | below_1h_threshold | +5.00% | +4.92% |
+| TRIA/USDT:USDT | below_1h_threshold | +4.55% | +4.48% |
+| UAI/USDT:USDT | below_1h_threshold | +3.72% | +3.65% |
+| HNT/USDT:USDT | below_1h_threshold | +3.64% | +3.56% |
+| BTR/USDT:USDT | below_1h_threshold | +3.50% | +3.43% |
 
 ## 7. 次に見るべき不足
 
