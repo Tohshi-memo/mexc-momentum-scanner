@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T03:26:25.087947+00:00
+- generated_at: 2026-09-04T03:31:23.104993+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13574**
 
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.71** / 初期 $100.00 (+16.71%)
-- 確定: 2229件 (Win 664 / Loss 874 / Flat 691) / pending 5件 / skip 2814件
+- 確定: 2229件 (Win 664 / Loss 874 / Flat 691) / pending 6件 / skip 2814件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CAP/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $116.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T03:26:12.946514+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=80815.8
+- 更新: 2026-09-04T03:31:11.002767+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=80817.2
 - Funnel: target 1046 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +35.78% | $10,795,458.50 |
-| TRIA/USDT:USDT | +17.49% | $1,102,870.52 |
-| MARSCOIN/USDT:USDT | +16.76% | $10,078,447.74 |
-| USELESS/USDT:USDT | +15.42% | $29,521,051.89 |
-| PONS/USDT:USDT | +14.94% | $9,509,141.31 |
+| HNT/USDT:USDT | +37.79% | $10,880,518.08 |
+| TRIA/USDT:USDT | +18.91% | $1,121,663.47 |
+| MARSCOIN/USDT:USDT | +16.41% | $10,091,135.85 |
+| PONS/USDT:USDT | +14.69% | $9,520,459.28 |
+| USELESS/USDT:USDT | +13.82% | $29,582,610.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.24% | +4.22% |
-| TRIA/USDT:USDT | below_1h_threshold | +3.95% | +3.93% |
-| HNT/USDT:USDT | below_1h_threshold | +3.22% | +3.20% |
-| PROM/USDT:USDT | below_1h_threshold | +2.34% | +2.32% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.89% | +1.87% |
+| HNT/USDT:USDT | below_1h_threshold | +4.75% | +4.73% |
+| CAP/USDT:USDT | below_1h_threshold | +3.02% | +3.00% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.82% | +2.80% |
+| PROM/USDT:USDT | below_1h_threshold | +2.58% | +2.56% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.68% | +1.66% |
 
 ## 7. 次に見るべき不足
 
