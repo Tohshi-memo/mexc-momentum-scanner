@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T13:51:53.413547+00:00
+- generated_at: 2026-09-04T13:56:33.176962+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13628**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T13:51:30.490630+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=79497.1
-- Funnel: target 1050 → liquid 170 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1, 4h RSI 92.1 >= 65=1, 4h RSI 67.1 >= 65=1
+- 更新: 2026-09-04T13:56:20.014786+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=79307.0
+- Funnel: target 1050 → liquid 170 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.7 >= 65=1, 4h RSI 91.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +52.79% | $7,686,809.32 |
-| USELESS/USDT:USDT | +35.78% | $45,429,335.83 |
-| TRIA/USDT:USDT | +25.12% | $10,492,385.72 |
-| PONS/USDT:USDT | +22.23% | $11,757,510.74 |
-| HNT/USDT:USDT | +19.33% | $14,229,392.16 |
+| MARSCOIN/USDT:USDT | +50.97% | $7,715,909.58 |
+| USELESS/USDT:USDT | +35.25% | $45,593,371.02 |
+| TRIA/USDT:USDT | +24.75% | $10,545,017.54 |
+| PONS/USDT:USDT | +24.14% | $11,788,881.72 |
+| HNT/USDT:USDT | +18.26% | $14,245,837.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EGLD/USDT:USDT | below_1h_threshold | +4.15% | +4.06% |
-| UAI/USDT:USDT | below_1h_threshold | +3.54% | +3.45% |
-| UNI/USDT:USDT | below_1h_threshold | +3.33% | +3.24% |
-| LIT/USDT:USDT | below_1h_threshold | +3.18% | +3.08% |
-| PIPPIN/USDT:USDT | below_1h_threshold | +2.62% | +2.53% |
+| ARB/USDT:USDT | below_1h_threshold | +4.69% | +4.84% |
+| UAI/USDT:USDT | below_1h_threshold | +4.39% | +4.54% |
+| EGLD/USDT:USDT | below_1h_threshold | +3.04% | +3.18% |
+| UNI/USDT:USDT | below_1h_threshold | +2.81% | +2.96% |
+| LIT/USDT:USDT | below_1h_threshold | +2.73% | +2.88% |
 
 ## 7. 次に見るべき不足
 
