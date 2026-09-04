@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T08:26:22.717763+00:00
+- generated_at: 2026-09-04T08:31:22.228180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13593**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T08:26:12.881605+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=80887.6
-- Funnel: target 1051 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-04T08:31:12.755138+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.48% price=81017.1
+- Funnel: target 1051 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +37.19% | $5,746,482.18 |
-| USELESS/USDT:USDT | +31.31% | $32,503,245.22 |
-| HNT/USDT:USDT | +16.81% | $13,078,891.01 |
-| PONS/USDT:USDT | +13.62% | $10,254,148.90 |
-| PROM/USDT:USDT | +12.71% | $2,566,841.95 |
+| TRIA/USDT:USDT | +37.78% | $5,794,319.80 |
+| USELESS/USDT:USDT | +35.21% | $32,945,978.13 |
+| HNT/USDT:USDT | +16.41% | $13,085,206.97 |
+| PROM/USDT:USDT | +13.81% | $2,570,677.38 |
+| PONS/USDT:USDT | +13.25% | $10,281,637.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.77% | +3.45% |
-| SKR/USDT:USDT | below_1h_threshold | +3.55% | +3.23% |
-| DASH/USDT:USDT | below_1h_threshold | +2.17% | +1.84% |
-| LIT/USDT:USDT | below_1h_threshold | +2.13% | +1.81% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.87% | +1.54% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.94% | +3.46% |
+| PONS/USDT:USDT | below_1h_threshold | +3.38% | +2.90% |
+| SPX/USDT:USDT | below_1h_threshold | +3.36% | +2.88% |
+| LIT/USDT:USDT | below_1h_threshold | +2.44% | +1.96% |
+| SKR/USDT:USDT | below_1h_threshold | +2.24% | +1.76% |
 
 ## 7. 次に見るべき不足
 
