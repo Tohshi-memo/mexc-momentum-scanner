@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T09:51:55.549456+00:00
+- generated_at: 2026-09-04T09:56:45.977595+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13600**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T09:51:38.195828+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=81046.8
-- Funnel: target 1052 → liquid 163 → pre 50 → checked 50 → surge 6 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.3 >= 65=1, 4h RSI 93.3 >= 65=1, 4h RSI 69.3 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 71.8 >= 65=1
+- 更新: 2026-09-04T09:56:31.792984+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81091.0
+- Funnel: target 1052 → liquid 163 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.3 >= 65=1, 4h RSI 69.4 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 72.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +50.46% | $36,876,297.40 |
-| TRIA/USDT:USDT | +43.83% | $6,810,390.52 |
-| SKR/USDT:USDT | +22.30% | $4,976,739.04 |
-| HNT/USDT:USDT | +22.15% | $13,465,549.28 |
-| PONS/USDT:USDT | +14.60% | $10,617,076.05 |
+| USELESS/USDT:USDT | +49.86% | $37,096,681.55 |
+| TRIA/USDT:USDT | +44.46% | $6,853,615.25 |
+| SKR/USDT:USDT | +23.15% | $5,085,034.58 |
+| HNT/USDT:USDT | +22.89% | $13,510,686.43 |
+| PONS/USDT:USDT | +14.50% | $10,653,470.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +4.45% | +4.53% |
-| FLOKI/USDT:USDT | below_1h_threshold | +3.75% | +3.83% |
-| SPX/USDT:USDT | below_1h_threshold | +3.70% | +3.79% |
-| UAI/USDT:USDT | below_1h_threshold | +3.53% | +3.61% |
-| MTSISTOCK/USDT:USDT | below_1h_threshold | +3.35% | +3.43% |
+| HNT/USDT:USDT | below_1h_threshold | +4.96% | +4.99% |
+| SPX/USDT:USDT | below_1h_threshold | +4.34% | +4.37% |
+| BASECAT/USDT:USDT | below_1h_threshold | +4.24% | +4.27% |
+| FLOKI/USDT:USDT | below_1h_threshold | +3.52% | +3.55% |
+| UAI/USDT:USDT | below_1h_threshold | +3.44% | +3.47% |
 
 ## 7. 次に見るべき不足
 
