@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T10:06:28.473218+00:00
+- generated_at: 2026-09-04T10:11:31.916336+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13600**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.02** / 初期 $100.00 (+16.02%)
-- 確定: 2253件 (Win 667 / Loss 878 / Flat 708) / pending 5件 / skip 2815件
+- 確定: 2253件 (Win 667 / Loss 878 / Flat 708) / pending 6件 / skip 2815件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000061 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SKR/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $116.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T10:06:18.582632+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80993.8
-- Funnel: target 1052 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-04T10:11:19.796930+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=80893.7
+- Funnel: target 1052 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| USELESS/USDT:USDT | +46.20% | $36,396,386.20 |
-| TRIA/USDT:USDT | +43.72% | $6,950,169.33 |
-| HNT/USDT:USDT | +25.91% | $13,420,779.09 |
-| SKR/USDT:USDT | +21.55% | $5,025,021.03 |
-| PONS/USDT:USDT | +14.98% | $10,264,103.88 |
+| USELESS/USDT:USDT | +47.10% | $36,575,085.16 |
+| TRIA/USDT:USDT | +45.78% | $7,050,149.75 |
+| HNT/USDT:USDT | +24.09% | $13,450,139.24 |
+| SKR/USDT:USDT | +23.75% | $5,088,589.38 |
+| PONS/USDT:USDT | +14.89% | $10,274,693.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +3.40% | +3.43% |
-| UAI/USDT:USDT | below_1h_threshold | +1.23% | +1.26% |
-| TRIA/USDT:USDT | below_1h_threshold | +0.94% | +0.97% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.40% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.40% |
+| TRIA/USDT:USDT | below_1h_threshold | +2.16% | +2.32% |
+| HNT/USDT:USDT | below_1h_threshold | +1.76% | +1.91% |
+| SKR/USDT:USDT | below_1h_threshold | +0.69% | +0.85% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.53% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.52% |
 
 ## 7. 次に見るべき不足
 
