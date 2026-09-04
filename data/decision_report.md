@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T01:56:52.820498+00:00
+- generated_at: 2026-09-04T02:01:23.541695+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13568**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T01:56:35.418949+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=80909.4
-- Funnel: target 1046 → liquid 170 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.5 >= 65=1, 4h RSI 75.4 >= 65=1, 4h RSI 89.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-04T02:01:13.902515+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=80900.0
+- Funnel: target 1046 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| HNT/USDT:USDT | +37.66% | $9,906,691.46 |
-| BASECAT/USDT:USDT | +25.36% | $1,948,384.92 |
-| PONS/USDT:USDT | +16.46% | $9,726,430.37 |
-| USELESS/USDT:USDT | +14.78% | $28,469,601.78 |
-| MARSCOIN/USDT:USDT | +14.20% | $9,959,933.82 |
+| HNT/USDT:USDT | +36.52% | $9,834,112.97 |
+| BASECAT/USDT:USDT | +22.92% | $1,927,176.57 |
+| PONS/USDT:USDT | +17.63% | $9,209,719.08 |
+| USELESS/USDT:USDT | +13.90% | $28,276,711.44 |
+| MARSCOIN/USDT:USDT | +13.87% | $9,938,932.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.91% | +4.94% |
-| PONS/USDT:USDT | below_1h_threshold | +3.83% | +3.86% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.33% | +3.37% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.86% | +1.89% |
-| AR/USDT:USDT | below_1h_threshold | +1.67% | +1.70% |
+| AKE/USDT:USDT | below_1h_threshold | +1.00% | +1.04% |
+| PROM/USDT:USDT | below_1h_threshold | +0.65% | +0.69% |
+| BASECAT/USDT:USDT | below_1h_threshold | +0.63% | +0.67% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.44% | +0.48% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.39% | +0.44% |
 
 ## 7. 次に見るべき不足
 
