@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T17:16:37.071966+00:00
+- generated_at: 2026-09-04T17:21:28.750401+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13648**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T17:16:21.129242+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=79475.1
+- 更新: 2026-09-04T17:21:16.543138+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=79587.4
 - Funnel: target 1050 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +19.83% | $1,325,858.63 |
-| BONER/USDT:USDT | +14.24% | $1,995,840.88 |
-| SKR/USDT:USDT | +8.96% | $6,591,358.20 |
-| TUT/USDT:USDT | +7.60% | $1,354,947.92 |
-| ZEC/USDT:USDT | +4.87% | $282,187,749.38 |
+| 4/USDT:USDT | +21.64% | $1,367,118.99 |
+| BONER/USDT:USDT | +14.92% | $2,007,181.80 |
+| TUT/USDT:USDT | +8.66% | $1,382,659.22 |
+| SKR/USDT:USDT | +8.18% | $6,596,914.08 |
+| DASH/USDT:USDT | +5.94% | $16,278,001.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +3.49% | +3.79% |
-| TUT/USDT:USDT | below_1h_threshold | +2.86% | +3.15% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.39% |
-| PROM/USDT:USDT | below_1h_threshold | +1.35% | +1.65% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.58% |
+| TUT/USDT:USDT | below_1h_threshold | +4.25% | +4.40% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.26% | +3.41% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.25% |
+| DASH/USDT:USDT | below_1h_threshold | +2.09% | +2.24% |
+| 4/USDT:USDT | below_1h_threshold | +1.83% | +1.98% |
 
 ## 7. 次に見るべき不足
 
