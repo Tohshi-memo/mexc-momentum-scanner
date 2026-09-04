@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T16:56:42.822058+00:00
+- generated_at: 2026-09-04T17:01:22.357943+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13645**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T16:56:25.450640+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=79743.6
-- Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 72.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-04T17:01:15.477301+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=79687.4
+- Funnel: target 1050 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +20.02% | $1,199,204.52 |
-| UAI/USDT:USDT | +11.17% | $6,119,912.38 |
-| SKR/USDT:USDT | +8.33% | $6,546,866.28 |
-| ZEN/USDT:USDT | +5.72% | $3,692,282.92 |
-| ZEC/USDT:USDT | +5.09% | $292,873,098.80 |
+| 4/USDT:USDT | +18.40% | $1,240,880.97 |
+| UAI/USDT:USDT | +12.19% | $5,612,196.85 |
+| BONER/USDT:USDT | +8.83% | $1,951,555.24 |
+| SKR/USDT:USDT | +8.62% | $6,473,695.28 |
+| TUT/USDT:USDT | +5.54% | $1,331,967.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_relative_strength | +5.03% | +4.58% |
-| BLESS/USDT:USDT | below_1h_threshold | +4.94% | +4.49% |
-| TUT/USDT:USDT | below_1h_threshold | +4.31% | +3.86% |
-| USELESS/USDT:USDT | below_1h_threshold | +4.27% | +3.82% |
-| BONER/USDT:USDT | below_1h_threshold | +4.25% | +3.80% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.10% | +2.12% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.31% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.31% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.24% | +1.27% |
+| MUU/USDT:USDT | below_1h_threshold | +1.23% | +1.26% |
 
 ## 7. 次に見るべき不足
 
