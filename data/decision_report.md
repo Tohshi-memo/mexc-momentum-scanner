@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T07:36:24.752177+00:00
+- generated_at: 2026-09-04T07:41:30.510767+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13591**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T07:36:15.015858+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80808.9
-- Funnel: target 1051 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-04T07:41:19.169745+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=80766.5
+- Funnel: target 1051 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| TRIA/USDT:USDT | +37.96% | $5,136,596.22 |
-| USELESS/USDT:USDT | +30.33% | $32,415,769.67 |
-| HNT/USDT:USDT | +17.01% | $12,913,293.73 |
-| PROM/USDT:USDT | +12.02% | $2,639,136.83 |
-| DASH/USDT:USDT | +8.91% | $9,627,042.43 |
+| TRIA/USDT:USDT | +37.88% | $5,174,496.91 |
+| USELESS/USDT:USDT | +29.32% | $32,532,814.93 |
+| HNT/USDT:USDT | +16.72% | $12,931,708.37 |
+| PROM/USDT:USDT | +12.58% | $2,640,885.18 |
+| ZEST/USDT:USDT | +9.42% | $1,133,704.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEST/USDT:USDT | below_1h_threshold | +4.62% | +4.56% |
-| SKR/USDT:USDT | below_1h_threshold | +3.79% | +3.73% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.66% | +2.60% |
-| DASH/USDT:USDT | below_1h_threshold | +2.04% | +1.98% |
-| PONS/USDT:USDT | below_1h_threshold | +1.82% | +1.76% |
+| PONS/USDT:USDT | below_1h_threshold | +2.82% | +2.82% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.86% | +0.86% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
 
 ## 7. 次に見るべき不足
 
