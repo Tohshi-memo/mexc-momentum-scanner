@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T16:16:31.465591+00:00
+- generated_at: 2026-09-04T16:21:27.443738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13638**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T16:16:17.214564+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79447.8
-- Funnel: target 1050 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.2 >= 65=1, 4h RSI 70.0 >= 65=1
+- 更新: 2026-09-04T16:21:17.435615+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=79468.5
+- Funnel: target 1050 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FLOCK/USDT:USDT | +8.59% | $1,081,575.40 |
-| ZORA/USDT:USDT | +5.60% | $1,019,198.65 |
-| CASHCAT/USDT:USDT | +4.59% | $1,055,838.81 |
-| BLESS/USDT:USDT | +4.28% | $1,612,300.85 |
-| PONS/USDT:USDT | +2.39% | $12,258,732.93 |
+| FLOCK/USDT:USDT | +8.33% | $1,138,771.07 |
+| CASHCAT/USDT:USDT | +4.18% | $1,056,763.24 |
+| BLESS/USDT:USDT | +3.83% | $1,624,843.01 |
+| USELESS/USDT:USDT | +3.51% | $44,797,396.96 |
+| ZORA/USDT:USDT | +3.47% | $1,099,266.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CASHCAT/USDT:USDT | below_1h_threshold | +4.59% | +4.51% |
-| BLESS/USDT:USDT | below_1h_threshold | +4.24% | +4.16% |
-| KORU/USDT:USDT | below_1h_threshold | +2.17% | +2.09% |
-| TUT/USDT:USDT | below_1h_threshold | +1.85% | +1.77% |
-| PONS/USDT:USDT | below_1h_threshold | +1.75% | +1.67% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +4.19% | +4.08% |
+| BLESS/USDT:USDT | below_1h_threshold | +3.84% | +3.73% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.78% | +3.68% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.70% | +3.59% |
+| ZORA/USDT:USDT | below_1h_threshold | +3.30% | +3.19% |
 
 ## 7. 次に見るべき不足
 
