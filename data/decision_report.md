@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T14:06:38.350353+00:00
+- generated_at: 2026-09-04T14:11:46.324814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13629**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$116.54** / 初期 $100.00 (+16.54%)
-- 確定: 2275件 (Win 671 / Loss 878 / Flat 726) / pending 6件 / skip 2823件
+- 確定: 2275件 (Win 671 / Loss 878 / Flat 726) / pending 6件 / skip 2824件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000109 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $116.54
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T14:06:24.373450+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=79487.8
-- Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.4 >= 65=1, 4h RSI 67.1 >= 65=1, 4h RSI 71.5 >= 65=1
+- 更新: 2026-09-04T14:11:32.145741+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=79234.1
+- Funnel: target 1050 → liquid 171 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.3 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 70.9 >= 65=1, 4h RSI 76.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +47.71% | $7,288,154.53 |
-| USELESS/USDT:USDT | +31.82% | $44,822,041.72 |
-| PONS/USDT:USDT | +29.03% | $11,769,463.49 |
-| TRIA/USDT:USDT | +24.72% | $10,558,433.67 |
-| HNT/USDT:USDT | +19.64% | $14,159,596.07 |
+| MARSCOIN/USDT:USDT | +46.90% | $7,318,568.26 |
+| USELESS/USDT:USDT | +31.89% | $44,960,550.68 |
+| PONS/USDT:USDT | +30.23% | $11,873,066.67 |
+| TRIA/USDT:USDT | +24.78% | $10,577,882.85 |
+| HNT/USDT:USDT | +20.51% | $14,172,881.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNDKSTOCK/USDT:USDT | below_relative_strength | +5.04% | +4.86% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.66% | +3.48% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.62% | +3.44% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.53% | +3.34% |
-| DRAM/USDT:USDT | below_1h_threshold | +3.44% | +3.26% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.66% | +3.80% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.62% | +3.76% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +3.53% | +3.66% |
+| DRAM/USDT:USDT | below_1h_threshold | +3.44% | +3.58% |
+| MUSTOCK/USDT:USDT | below_1h_threshold | +3.28% | +3.41% |
 
 ## 7. 次に見るべき不足
 
