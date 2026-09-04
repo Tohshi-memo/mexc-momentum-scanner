@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T20:01:41.519709+00:00
+- generated_at: 2026-09-04T20:06:20.390356+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13661**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T20:01:29.779958+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79763.2
+- 更新: 2026-09-04T20:06:10.915038+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=79797.1
 - Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +41.17% | $4,789,256.39 |
-| MARSCOIN/USDT:USDT | +18.07% | $7,926,216.76 |
-| UAI/USDT:USDT | +13.56% | $7,021,680.66 |
-| NEAR/USDT:USDT | +11.63% | $19,406,473.46 |
-| USELESS/USDT:USDT | +10.58% | $43,924,893.50 |
+| 4/USDT:USDT | +42.60% | $4,889,272.14 |
+| MARSCOIN/USDT:USDT | +16.72% | $7,943,383.72 |
+| UAI/USDT:USDT | +11.33% | $7,146,496.40 |
+| BASECAT/USDT:USDT | +11.31% | $1,798,172.49 |
+| NEAR/USDT:USDT | +10.35% | $19,795,102.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.73% |
-| KORU/USDT:USDT | below_1h_threshold | +2.57% | +2.56% |
-| MUU/USDT:USDT | below_1h_threshold | +2.02% | +2.02% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.54% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.40% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.74% | +2.69% |
+| KORU/USDT:USDT | below_1h_threshold | +2.57% | +2.52% |
+| MUU/USDT:USDT | below_1h_threshold | +2.02% | +1.97% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.50% |
+| TUT/USDT:USDT | below_1h_threshold | +1.43% | +1.38% |
 
 ## 7. 次に見るべき不足
 
