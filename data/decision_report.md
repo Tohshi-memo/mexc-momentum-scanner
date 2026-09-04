@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T10:31:50.503008+00:00
+- generated_at: 2026-09-04T10:36:38.911069+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13607**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T10:31:30.839263+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=80898.7
-- Funnel: target 1052 → liquid 163 → pre 50 → checked 50 → surge 4 → strict 2
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.2 >= 65=1, 4h RSI 68.6 >= 65=1
+- 更新: 2026-09-04T10:36:22.677341+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=80933.7
+- Funnel: target 1052 → liquid 163 → pre 50 → checked 50 → surge 5 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.4 >= 65=1, 4h RSI 68.6 >= 65=1, 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +57.01% | $7,054,931.67 |
-| USELESS/USDT:USDT | +31.84% | $38,716,446.98 |
-| TRIA/USDT:USDT | +25.36% | $7,926,958.34 |
-| HNT/USDT:USDT | +22.06% | $13,641,859.45 |
-| SKR/USDT:USDT | +19.59% | $5,387,546.52 |
+| MARSCOIN/USDT:USDT | +47.99% | $7,151,536.00 |
+| USELESS/USDT:USDT | +31.39% | $39,059,592.72 |
+| TRIA/USDT:USDT | +25.97% | $8,107,511.94 |
+| HNT/USDT:USDT | +21.13% | $13,647,922.44 |
+| BASECAT/USDT:USDT | +18.91% | $2,074,962.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.79% | +4.93% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.88% | +2.03% |
-| AKE/USDT:USDT | below_1h_threshold | +1.06% | +1.20% |
-| FF/USDT:USDT | below_1h_threshold | +0.91% | +1.06% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.63% | +0.78% |
+| AKE/USDT:USDT | below_1h_threshold | +1.14% | +1.24% |
+| FF/USDT:USDT | below_1h_threshold | +0.84% | +0.94% |
+| XPL/USDT:USDT | below_1h_threshold | +0.51% | +0.61% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.43% | +0.53% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.37% | +0.48% |
 
 ## 7. 次に見るべき不足
 
