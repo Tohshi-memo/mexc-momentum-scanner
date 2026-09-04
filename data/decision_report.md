@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T11:46:37.537522+00:00
+- generated_at: 2026-09-04T11:51:34.370184+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13617**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T11:46:24.179147+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81210.1
-- Funnel: target 1052 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 92.4 >= 65=1, 4h RSI 77.7 >= 65=1, 4h RSI 65.7 >= 65=1, 4h RSI 76.6 >= 65=1
+- 更新: 2026-09-04T11:51:23.566770+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=81246.3
+- Funnel: target 1052 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.2 >= 65=1, 4h RSI 92.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +64.62% | $7,309,970.48 |
-| USELESS/USDT:USDT | +38.44% | $42,536,927.99 |
-| TRIA/USDT:USDT | +34.37% | $9,113,609.48 |
-| PONS/USDT:USDT | +23.57% | $10,615,341.39 |
-| HNT/USDT:USDT | +21.28% | $13,794,021.62 |
+| MARSCOIN/USDT:USDT | +62.11% | $7,344,971.53 |
+| USELESS/USDT:USDT | +35.73% | $42,809,538.49 |
+| TRIA/USDT:USDT | +34.79% | $9,178,952.12 |
+| PONS/USDT:USDT | +22.69% | $10,655,558.15 |
+| HNT/USDT:USDT | +20.88% | $13,803,757.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +4.21% | +4.13% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.43% | +3.36% |
-| HNT/USDT:USDT | below_1h_threshold | +2.50% | +2.43% |
-| BR/USDT:USDT | below_1h_threshold | +2.49% | +2.42% |
-| SPX/USDT:USDT | below_1h_threshold | +2.35% | +2.28% |
+| XPL/USDT:USDT | below_1h_threshold | +4.52% | +4.40% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.13% | +3.01% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +3.08% | +2.96% |
+| BR/USDT:USDT | below_1h_threshold | +2.15% | +2.03% |
+| HNT/USDT:USDT | below_1h_threshold | +2.06% | +1.94% |
 
 ## 7. 次に見るべき不足
 
