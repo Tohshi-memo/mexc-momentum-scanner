@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-04T12:41:24.930030+00:00
+- generated_at: 2026-09-04T12:46:18.770101+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13621**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-04T12:41:15.944389+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.58% price=79908.3
+- 更新: 2026-09-04T12:46:09.153125+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -2.23% price=79378.5
 - Funnel: target 1052 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MARSCOIN/USDT:USDT | +63.48% | $7,059,514.09 |
-| USELESS/USDT:USDT | +36.86% | $43,664,496.51 |
-| TRIA/USDT:USDT | +27.66% | $9,784,581.22 |
-| PONS/USDT:USDT | +19.91% | $11,027,496.91 |
-| HNT/USDT:USDT | +18.65% | $13,977,026.06 |
+| MARSCOIN/USDT:USDT | +54.15% | $7,112,993.76 |
+| USELESS/USDT:USDT | +34.57% | $43,893,717.54 |
+| TRIA/USDT:USDT | +25.54% | $9,849,089.38 |
+| PONS/USDT:USDT | +17.29% | $11,161,481.95 |
+| HNT/USDT:USDT | +16.72% | $14,004,355.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.76% | +3.34% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.35% | +2.93% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +2.11% |
-| KORU/USDT:USDT | below_1h_threshold | +0.52% | +2.10% |
-| PROM/USDT:USDT | below_1h_threshold | +0.48% | +2.06% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +2.77% |
+| PROM/USDT:USDT | below_1h_threshold | +0.52% | +2.75% |
+| KORU/USDT:USDT | below_1h_threshold | +0.52% | +2.75% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.26% | +2.49% |
+| AMATSTOCK/USDT:USDT | below_1h_threshold | +0.23% | +2.46% |
 
 ## 7. 次に見るべき不足
 
