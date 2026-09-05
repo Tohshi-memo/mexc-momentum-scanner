@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-09-05T01:51:19.648267+00:00
+- generated_at: 2026-09-05T01:56:25.879750+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13681**
+- closed shadow trades: **13683**
 
 ## 1. 今日の判断
 
-- 結論: **MARKET SHORTは実行候補。直近EV +0.21% / filled 20/20。**
-- 全期間 MARKET基準: n=13681, expectancy=-0.00%
-- 直近20件 MARKET基準: n=20, expectancy=+0.21%
+- 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
+- 全期間 MARKET基準: n=13683, expectancy=-0.00%
+- 直近20件 MARKET基準: n=20, expectancy=-0.39%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.21% | **+0.21%** |
+| MARKET | 20/20 | 100.0% | -0.39% | **-0.39%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_7PCT | 4/20 | 20.0% | +4.10% | **+0.82%** |
-| LIMIT_6PCT | 5/20 | 25.0% | +3.11% | **+0.78%** |
-| LIMIT_8PCT | 2/20 | 10.0% | +3.70% | **+0.37%** |
-| MARKET | 20/20 | 100.0% | +0.21% | **+0.21%** |
-| LIMIT_1PCT | 17/20 | 85.0% | -0.01% | **-0.01%** |
+| LIMIT_7PCT | 4/20 | 20.0% | +5.40% | **+1.08%** |
+| LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
+| LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
+| LIMIT_6PCT | 5/20 | 25.0% | +1.93% | **+0.48%** |
+| LIMIT_5PCT | 5/20 | 25.0% | -1.03% | **-0.26%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.65% | **+1.40%** |
-| MARKET_LONG | 20/20 | 100.0% | +1.39% | **+1.39%** |
-| LIMIT_2PCT_LONG | 15/20 | 75.0% | +1.49% | **+1.12%** |
+| LIMIT_1PCT_LONG | 18/20 | 90.0% | +2.51% | **+2.26%** |
+| LIMIT_2PCT_LONG | 16/20 | 80.0% | +2.53% | **+2.03%** |
+| LIMIT_BB3S_LONG | 3/5 | 60.0% | +2.87% | **+1.72%** |
+| MARKET_LONG | 20/20 | 100.0% | +1.19% | **+1.19%** |
 | LIMIT_FIB1272_LONG | 7/20 | 35.0% | +3.19% | **+1.12%** |
-| LIMIT_10PCT_LONG | 3/20 | 15.0% | +2.22% | **+0.33%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,55 +47,55 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$855.36** / 初期 $100.00 (+755.36%)
-- 確定: 5012件 (Win 1516 / Loss 1645 / Flat 1851) / skip 5230件
+- 確定: 5012件 (Win 1516 / Loss 1645 / Flat 1851) / skip 5232件
 - 成長率目線: 平均log +0.000428 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: 4/USDT:USDT `MARKET_LONG` SL_HIT account -0.50% 残高後 $855.36
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$187.60** / 初期 $100.00 (+87.60%)
-- 確定: 2429件 (Win 685 / Loss 578 / Flat 1166) / skip 4663件
-- 成長率目線: 平均log +0.000259 / 幾何平均 +0.026% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0889 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: AKE/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.43% 残高後 $187.60
+- 残高: **$189.70** / 初期 $100.00 (+89.70%)
+- 確定: 2431件 (Win 687 / Loss 578 / Flat 1166) / skip 4663件
+- 成長率目線: 平均log +0.000263 / 幾何平均 +0.026% per trade / maxDD +3.96%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1219 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: AKE/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +0.69% 残高後 $189.70
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$118.74** / 初期 $100.00 (+18.74%)
-- 確定: 2315件 (Win 691 / Loss 887 / Flat 737) / pending 4件 / skip 2834件
+- 残高: **$118.73** / 初期 $100.00 (+18.73%)
+- 確定: 2317件 (Win 692 / Loss 888 / Flat 737) / pending 3件 / skip 2834件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: AKE/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $118.74
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000406 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: AKE/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.73
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T01:51:09.128555+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=79536.3
-- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 83.6 >= 65=1
+- 更新: 2026-09-05T01:56:14.439412+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79532.1
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +62.81% | $12,379,029.23 |
-| AKE/USDT:USDT | +27.77% | $6,498,179.26 |
-| DASH/USDT:USDT | +24.87% | $31,430,767.44 |
-| ZEN/USDT:USDT | +17.66% | $7,227,685.73 |
-| BASECAT/USDT:USDT | +14.90% | $2,017,620.30 |
+| 4/USDT:USDT | +59.88% | $12,479,230.25 |
+| AKE/USDT:USDT | +27.52% | $7,028,209.54 |
+| DASH/USDT:USDT | +26.14% | $31,592,462.82 |
+| ZEN/USDT:USDT | +17.10% | $7,275,307.26 |
+| BASECAT/USDT:USDT | +16.58% | $2,021,123.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEN/USDT:USDT | below_1h_threshold | +2.87% | +2.88% |
-| CAP/USDT:USDT | below_1h_threshold | +2.76% | +2.77% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.89% | +1.89% |
-| DOT/USDT:USDT | below_1h_threshold | +1.88% | +1.89% |
-| DASH/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
+| 4/USDT:USDT | below_1h_threshold | +4.62% | +4.63% |
+| DASH/USDT:USDT | below_1h_threshold | +2.49% | +2.50% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.38% | +2.39% |
+| GALA/USDT:USDT | below_1h_threshold | +1.87% | +1.89% |
+| DOT/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
 
 ## 7. 次に見るべき不足
 
