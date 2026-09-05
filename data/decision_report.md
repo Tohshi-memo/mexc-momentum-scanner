@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T12:31:30.370037+00:00
+- generated_at: 2026-09-05T12:36:30.006999+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13731**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.78** / 初期 $100.00 (+18.78%)
-- 確定: 2356件 (Win 702 / Loss 901 / Flat 753) / pending 3件 / skip 2844件
+- 確定: 2356件 (Win 702 / Loss 901 / Flat 753) / pending 4件 / skip 2844件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000184 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MARSCOIN/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $118.78
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T12:31:17.943809+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=79578.7
-- Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1, 4h RSI 72.7 >= 65=1
+- 更新: 2026-09-05T12:36:18.568117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=79648.4
+- Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.6 >= 65=1, 4h RSI 66.1 >= 65=1, 4h RSI 79.8 >= 65=1, 4h RSI 76.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +87.99% | $14,056,797.06 |
-| 4/USDT:USDT | +59.32% | $20,450,653.59 |
-| BASECAT/USDT:USDT | +46.45% | $1,820,112.40 |
-| MARSCOIN/USDT:USDT | +40.31% | $8,632,066.20 |
-| AKE/USDT:USDT | +40.25% | $17,296,818.16 |
+| BULLA/USDT:USDT | +86.21% | $14,144,570.72 |
+| 4/USDT:USDT | +60.63% | $20,500,227.85 |
+| AKE/USDT:USDT | +45.89% | $17,396,296.65 |
+| BASECAT/USDT:USDT | +45.40% | $1,838,558.61 |
+| MARSCOIN/USDT:USDT | +43.26% | $8,719,489.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.15% | +4.15% |
-| ASTER/USDT:USDT | below_1h_threshold | +3.96% | +3.95% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.08% | +3.08% |
-| 4/USDT:USDT | below_1h_threshold | +2.90% | +2.90% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.20% | +2.20% |
+| ASTER/USDT:USDT | below_1h_threshold | +4.98% | +4.89% |
+| 4/USDT:USDT | below_1h_threshold | +3.75% | +3.66% |
+| DASH/USDT:USDT | below_1h_threshold | +2.84% | +2.75% |
+| CAKE/USDT:USDT | below_1h_threshold | +2.30% | +2.21% |
+| SUI/USDT:USDT | below_1h_threshold | +1.89% | +1.80% |
 
 ## 7. 次に見るべき不足
 
