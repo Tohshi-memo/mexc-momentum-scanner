@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T01:46:16.546608+00:00
+- generated_at: 2026-09-05T01:51:19.648267+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13681**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.74** / 初期 $100.00 (+18.74%)
-- 確定: 2315件 (Win 691 / Loss 887 / Flat 737) / pending 3件 / skip 2834件
+- 確定: 2315件 (Win 691 / Loss 887 / Flat 737) / pending 4件 / skip 2834件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $118.74
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T01:46:06.604988+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=79601.1
-- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1
+- 更新: 2026-09-05T01:51:09.128555+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79536.3
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.7 >= 65=1, 4h RSI 83.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +53.96% | $12,205,478.70 |
-| AKE/USDT:USDT | +25.03% | $6,189,105.62 |
-| DASH/USDT:USDT | +23.61% | $31,318,402.24 |
-| ZEN/USDT:USDT | +16.76% | $7,209,133.23 |
-| NEAR/USDT:USDT | +14.98% | $28,608,928.97 |
+| 4/USDT:USDT | +62.81% | $12,379,029.23 |
+| AKE/USDT:USDT | +27.77% | $6,498,179.26 |
+| DASH/USDT:USDT | +24.87% | $31,430,767.44 |
+| ZEN/USDT:USDT | +17.66% | $7,227,685.73 |
+| BASECAT/USDT:USDT | +14.90% | $2,017,620.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CYS/USDT:USDT | below_1h_threshold | +2.93% | +2.86% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.53% | +2.45% |
-| CAP/USDT:USDT | below_1h_threshold | +2.42% | +2.35% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.01% | +1.94% |
-| DOT/USDT:USDT | below_1h_threshold | +1.08% | +1.00% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.87% | +2.88% |
+| CAP/USDT:USDT | below_1h_threshold | +2.76% | +2.77% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.89% | +1.89% |
+| DOT/USDT:USDT | below_1h_threshold | +1.88% | +1.89% |
+| DASH/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
 
 ## 7. 次に見るべき不足
 
