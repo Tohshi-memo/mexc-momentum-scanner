@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T13:01:25.768091+00:00
+- generated_at: 2026-09-05T13:06:20.423375+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13733**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T13:01:15.835386+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79673.2
+- 更新: 2026-09-05T13:06:10.540897+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79671.6
 - Funnel: target 1050 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +89.74% | $14,358,002.70 |
-| 4/USDT:USDT | +62.19% | $20,707,062.39 |
-| AKE/USDT:USDT | +44.45% | $17,462,423.35 |
-| MARSCOIN/USDT:USDT | +43.66% | $8,431,737.13 |
-| BASECAT/USDT:USDT | +43.18% | $1,783,231.65 |
+| BULLA/USDT:USDT | +89.73% | $14,433,304.92 |
+| 4/USDT:USDT | +61.75% | $20,746,129.07 |
+| BASECAT/USDT:USDT | +44.59% | $1,795,054.08 |
+| MARSCOIN/USDT:USDT | +42.39% | $8,464,630.45 |
+| AKE/USDT:USDT | +39.16% | $17,626,041.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.83% | +1.83% |
-| ASTER/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
-| UAI/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
-| ICX/USDT:USDT | below_1h_threshold | +0.53% | +0.52% |
+| ASTER/USDT:USDT | below_1h_threshold | +2.07% | +2.06% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.01% | +1.00% |
+| UAI/USDT:USDT | below_1h_threshold | +0.96% | +0.95% |
+| BASECAT/USDT:USDT | below_1h_threshold | +0.73% | +0.72% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.71% | +0.70% |
 
 ## 7. 次に見るべき不足
 
