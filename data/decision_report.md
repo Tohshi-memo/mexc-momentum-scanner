@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T07:36:19.605401+00:00
+- generated_at: 2026-09-05T07:41:36.405737+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13706**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.12** / 初期 $100.00 (+18.12%)
-- 確定: 2337件 (Win 698 / Loss 898 / Flat 741) / pending 6件 / skip 2840件
+- 確定: 2337件 (Win 698 / Loss 898 / Flat 741) / pending 6件 / skip 2842件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MAGMA/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $118.12
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T07:36:09.825760+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=79689.9
-- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-05T07:41:21.314411+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=79690.0
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +125.49% | $8,637,893.24 |
-| 4/USDT:USDT | +73.79% | $16,392,632.37 |
-| B/USDT:USDT | +52.19% | $1,859,748.66 |
-| AKE/USDT:USDT | +32.82% | $13,155,707.41 |
-| DASH/USDT:USDT | +31.02% | $47,214,889.54 |
+| BULLA/USDT:USDT | +123.26% | $8,714,401.52 |
+| 4/USDT:USDT | +73.05% | $16,490,195.05 |
+| B/USDT:USDT | +51.34% | $1,883,381.39 |
+| AKE/USDT:USDT | +36.05% | $13,210,013.72 |
+| DASH/USDT:USDT | +28.69% | $47,617,835.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.76% | +4.66% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.74% | +4.63% |
-| EDGE/USDT:USDT | below_1h_threshold | +4.18% | +4.08% |
-| 4/USDT:USDT | below_1h_threshold | +3.57% | +3.47% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.44% | +3.33% |
+| AKE/USDT:USDT | below_1h_threshold | +4.84% | +4.73% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.14% | +4.03% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.77% | +3.66% |
+| 4/USDT:USDT | below_1h_threshold | +3.43% | +3.32% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.25% | +3.15% |
 
 ## 7. 次に見るべき不足
 
