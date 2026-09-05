@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T04:31:13.017043+00:00
+- generated_at: 2026-09-05T04:36:17.991102+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13698**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T04:31:03.366157+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=79506.4
+- 更新: 2026-09-05T04:36:08.313440+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=79494.7
 - Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +87.56% | $5,788,909.51 |
-| 4/USDT:USDT | +64.62% | $14,794,319.50 |
-| AKE/USDT:USDT | +43.15% | $11,112,479.80 |
-| DASH/USDT:USDT | +27.87% | $36,250,195.55 |
-| ZEN/USDT:USDT | +21.66% | $8,520,706.13 |
+| BULLA/USDT:USDT | +87.33% | $5,851,784.39 |
+| 4/USDT:USDT | +64.69% | $14,831,505.77 |
+| AKE/USDT:USDT | +41.93% | $11,216,214.99 |
+| DASH/USDT:USDT | +27.85% | $36,413,540.08 |
+| ZEN/USDT:USDT | +20.70% | $8,550,158.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.30% | +4.35% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.13% | +4.17% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.80% | +2.85% |
-| BASECAT/USDT:USDT | below_1h_threshold | +2.16% | +2.21% |
-| TUT/USDT:USDT | below_1h_threshold | +2.15% | +2.20% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.07% | +4.14% |
+| TUT/USDT:USDT | below_1h_threshold | +2.49% | +2.56% |
+| BTW/USDT:USDT | below_1h_threshold | +2.37% | +2.43% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.16% | +2.22% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.98% | +2.05% |
 
 ## 7. 次に見るべき不足
 
