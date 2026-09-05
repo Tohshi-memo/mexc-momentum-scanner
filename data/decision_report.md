@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T17:26:34.318650+00:00
+- generated_at: 2026-09-05T17:31:28.204930+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13761**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T17:26:18.753157+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80039.9
-- Funnel: target 1050 → liquid 128 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.7 >= 65=1, 4h RSI 72.9 >= 65=1, 4h RSI 77.2 >= 65=1
+- 更新: 2026-09-05T17:31:16.576754+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80024.0
+- Funnel: target 1050 → liquid 129 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.9 >= 65=2
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +20.81% | $2,378,725.55 |
-| 4/USDT:USDT | +14.35% | $24,497,621.66 |
-| USELESS/USDT:USDT | +14.03% | $20,337,402.88 |
-| MAGMA/USDT:USDT | +13.77% | $2,151,784.77 |
-| MARSCOIN/USDT:USDT | +9.54% | $8,870,863.07 |
+| NIULAI/USDT:USDT | +17.92% | $2,426,238.09 |
+| 4/USDT:USDT | +15.53% | $24,549,981.59 |
+| MAGMA/USDT:USDT | +13.81% | $2,167,394.15 |
+| USELESS/USDT:USDT | +13.10% | $20,420,714.04 |
+| MARSCOIN/USDT:USDT | +8.03% | $8,906,303.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.09% | +3.04% |
-| AKE/USDT:USDT | below_1h_threshold | +2.87% | +2.82% |
-| BASECAT/USDT:USDT | below_1h_threshold | +2.37% | +2.32% |
-| LINK/USDT:USDT | below_1h_threshold | +2.22% | +2.18% |
-| PONS/USDT:USDT | below_1h_threshold | +1.74% | +1.69% |
+| AKE/USDT:USDT | below_1h_threshold | +4.52% | +4.49% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.60% | +3.57% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.72% | +2.70% |
+| B/USDT:USDT | below_1h_threshold | +2.20% | +2.17% |
+| PONS/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
 
 ## 7. 次に見るべき不足
 
