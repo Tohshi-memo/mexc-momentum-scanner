@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T12:46:37.929420+00:00
+- generated_at: 2026-09-05T12:51:28.169524+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13733**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T12:46:22.669346+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=79664.4
+- 更新: 2026-09-05T12:51:16.577694+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=79679.2
 - Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 80.4 >= 65=1, 4h RSI 72.5 >= 65=1, 4h RSI 75.8 >= 65=1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.8 >= 65=1, 4h RSI 72.8 >= 65=1, 4h RSI 77.3 >= 65=1, 4h RSI 80.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +93.90% | $14,363,999.59 |
-| 4/USDT:USDT | +61.32% | $20,596,062.35 |
-| BASECAT/USDT:USDT | +45.51% | $1,864,936.88 |
-| MARSCOIN/USDT:USDT | +44.15% | $8,883,063.15 |
-| AKE/USDT:USDT | +43.44% | $17,694,740.66 |
+| BULLA/USDT:USDT | +91.33% | $14,435,398.84 |
+| 4/USDT:USDT | +61.75% | $20,685,675.71 |
+| BASECAT/USDT:USDT | +45.81% | $1,870,688.12 |
+| MARSCOIN/USDT:USDT | +42.97% | $8,935,072.78 |
+| AKE/USDT:USDT | +42.96% | $17,750,164.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ASTER/USDT:USDT | below_relative_strength | +5.03% | +4.92% |
-| 4/USDT:USDT | below_1h_threshold | +4.19% | +4.08% |
-| DASH/USDT:USDT | below_1h_threshold | +3.22% | +3.11% |
-| CAKE/USDT:USDT | below_1h_threshold | +2.53% | +2.42% |
-| SUI/USDT:USDT | below_1h_threshold | +2.33% | +2.22% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.88% | +4.75% |
+| 4/USDT:USDT | below_1h_threshold | +4.43% | +4.30% |
+| CAKE/USDT:USDT | below_1h_threshold | +2.58% | +2.45% |
+| SUI/USDT:USDT | below_1h_threshold | +2.14% | +2.01% |
+| GIGGLE/USDT:USDT | below_1h_threshold | +2.09% | +1.96% |
 
 ## 7. 次に見るべき不足
 
