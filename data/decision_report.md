@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T14:56:21.830737+00:00
+- generated_at: 2026-09-05T15:01:19.968823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13741**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T14:56:11.371246+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=79702.5
-- Funnel: target 1050 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.7 >= 65=1, 4h RSI 65.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-05T15:01:09.777390+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79683.5
+- Funnel: target 1050 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +118.88% | $16,831,297.98 |
-| 4/USDT:USDT | +66.06% | $22,011,042.23 |
-| ICX/USDT:USDT | +42.75% | $1,146,616.61 |
-| BASECAT/USDT:USDT | +38.58% | $1,894,283.62 |
-| MARSCOIN/USDT:USDT | +37.92% | $8,669,358.54 |
+| BULLA/USDT:USDT | +119.93% | $16,763,056.38 |
+| 4/USDT:USDT | +65.06% | $21,976,074.42 |
+| ICX/USDT:USDT | +43.02% | $1,138,079.07 |
+| MARSCOIN/USDT:USDT | +40.71% | $8,305,312.67 |
+| AKE/USDT:USDT | +38.97% | $20,194,883.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICX/USDT:USDT | below_1h_threshold | +4.55% | +4.39% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.42% | +4.26% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.61% | +3.45% |
-| AR/USDT:USDT | below_1h_threshold | +3.24% | +3.08% |
-| PONS/USDT:USDT | below_1h_threshold | +2.05% | +1.89% |
+| TUT/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
+| AR/USDT:USDT | below_1h_threshold | +0.37% | +0.36% |
+| PONS/USDT:USDT | below_1h_threshold | +0.30% | +0.29% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.24% | +0.23% |
+| DASH/USDT:USDT | below_1h_threshold | +0.18% | +0.16% |
 
 ## 7. 次に見るべき不足
 
