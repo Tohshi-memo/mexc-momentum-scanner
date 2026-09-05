@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T16:31:35.746280+00:00
+- generated_at: 2026-09-05T16:36:28.093556+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13752**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T16:31:21.797345+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=79878.2
-- Funnel: target 1050 → liquid 131 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1, 4h RSI 76.8 >= 65=1, 4h RSI 69.6 >= 65=1, 4h RSI 73.0 >= 65=1, 4h RSI 76.0 >= 65=1
+- 更新: 2026-09-05T16:36:16.658048+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=79895.9
+- Funnel: target 1050 → liquid 131 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 76.6 >= 65=1, 4h RSI 69.8 >= 65=1, 4h RSI 75.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +12.95% | $23,427,203.28 |
-| USELESS/USDT:USDT | +10.68% | $20,629,415.44 |
-| BASECAT/USDT:USDT | +8.65% | $1,970,728.77 |
-| BULLA/USDT:USDT | +5.69% | $20,156,503.13 |
-| MARSCOIN/USDT:USDT | +5.17% | $8,809,451.13 |
+| 4/USDT:USDT | +14.13% | $23,598,543.50 |
+| USELESS/USDT:USDT | +10.38% | $20,710,308.30 |
+| BASECAT/USDT:USDT | +7.28% | $1,983,287.34 |
+| MARSCOIN/USDT:USDT | +5.34% | $8,837,486.98 |
+| MAGMA/USDT:USDT | +4.33% | $2,211,814.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.49% | +4.34% |
-| UNI/USDT:USDT | below_1h_threshold | +4.15% | +4.00% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.25% | +3.10% |
-| CATI/USDT:USDT | below_1h_threshold | +3.11% | +2.97% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.04% | +2.90% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.26% | +4.09% |
+| HNT/USDT:USDT | below_1h_threshold | +4.17% | +4.01% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.97% | +3.80% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.73% | +3.57% |
+| UNI/USDT:USDT | below_1h_threshold | +3.28% | +3.11% |
 
 ## 7. 次に見るべき不足
 
