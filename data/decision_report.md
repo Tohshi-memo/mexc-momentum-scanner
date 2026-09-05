@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T01:01:18.528793+00:00
+- generated_at: 2026-09-05T01:06:17.761084+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13678**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T01:01:10.983299+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=79546.8
+- 更新: 2026-09-05T01:06:08.022264+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=79583.9
 - Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +54.14% | $11,605,259.23 |
-| BASECAT/USDT:USDT | +23.66% | $1,966,617.29 |
-| DASH/USDT:USDT | +22.89% | $30,039,594.17 |
-| USELESS/USDT:USDT | +18.14% | $44,585,744.16 |
-| NEAR/USDT:USDT | +14.72% | $27,584,027.78 |
+| 4/USDT:USDT | +56.01% | $11,700,994.78 |
+| DASH/USDT:USDT | +22.85% | $30,258,183.39 |
+| BASECAT/USDT:USDT | +20.72% | $1,975,127.64 |
+| USELESS/USDT:USDT | +20.33% | $44,827,907.76 |
+| NEAR/USDT:USDT | +14.41% | $27,622,513.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +1.02% | +1.01% |
-| AKE/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
-| 4/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.65% | +0.64% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.44% | +2.38% |
+| 4/USDT:USDT | below_1h_threshold | +2.25% | +2.20% |
+| MORPHO/USDT:USDT | below_1h_threshold | +0.81% | +0.76% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.69% | +0.64% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.68% | +0.62% |
 
 ## 7. 次に見るべき不足
 
