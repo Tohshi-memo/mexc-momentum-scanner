@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T02:36:21.057220+00:00
+- generated_at: 2026-09-05T02:41:18.582430+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13685**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T02:36:10.729700+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=79512.2
-- Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.0 >= 65=1, 4h RSI 70.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-05T02:41:08.920834+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79569.2
+- Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +69.49% | $13,340,218.54 |
-| AKE/USDT:USDT | +39.74% | $7,732,404.84 |
-| DASH/USDT:USDT | +28.04% | $32,713,194.48 |
-| ZEN/USDT:USDT | +20.89% | $7,665,463.62 |
-| BASECAT/USDT:USDT | +17.30% | $1,881,685.94 |
+| 4/USDT:USDT | +67.74% | $13,393,902.53 |
+| AKE/USDT:USDT | +37.07% | $7,801,390.12 |
+| DASH/USDT:USDT | +28.69% | $32,930,482.79 |
+| ZEN/USDT:USDT | +21.04% | $7,720,679.56 |
+| BASECAT/USDT:USDT | +17.11% | $1,883,242.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.07% | +2.05% |
-| EDGE/USDT:USDT | below_1h_threshold | +2.00% | +1.98% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.69% | +1.66% |
-| BTR/USDT:USDT | below_1h_threshold | +1.50% | +1.48% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
+| 4/USDT:USDT | below_1h_threshold | +4.30% | +4.20% |
+| AKE/USDT:USDT | below_1h_threshold | +2.85% | +2.75% |
+| BLESS/USDT:USDT | below_1h_threshold | +2.26% | +2.16% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.91% | +1.81% |
+| EDGE/USDT:USDT | below_1h_threshold | +1.64% | +1.55% |
 
 ## 7. 次に見るべき不足
 
