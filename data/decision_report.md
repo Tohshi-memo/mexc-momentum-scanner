@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T17:51:31.543071+00:00
+- generated_at: 2026-09-05T17:56:32.552740+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13764**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T17:51:19.653449+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=80034.3
-- Funnel: target 1050 → liquid 129 → pre 50 → checked 50 → surge 6 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 66.3 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 77.3 >= 65=1
+- 更新: 2026-09-05T17:56:18.970921+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=80019.5
+- Funnel: target 1050 → liquid 129 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 66.5 >= 65=1, 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +20.61% | $25,072,747.59 |
-| NIULAI/USDT:USDT | +16.74% | $2,647,879.33 |
-| MAGMA/USDT:USDT | +16.49% | $2,206,061.59 |
-| BASECAT/USDT:USDT | +12.18% | $2,047,114.00 |
-| USELESS/USDT:USDT | +9.92% | $20,891,681.92 |
+| 4/USDT:USDT | +20.97% | $25,216,795.11 |
+| MAGMA/USDT:USDT | +16.76% | $2,218,311.66 |
+| NIULAI/USDT:USDT | +16.47% | $2,665,991.42 |
+| USELESS/USDT:USDT | +10.60% | $20,988,389.69 |
+| BASECAT/USDT:USDT | +10.38% | $2,052,917.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +3.47% | +3.43% |
-| B/USDT:USDT | below_1h_threshold | +2.54% | +2.50% |
-| BCH/USDT:USDT | below_1h_threshold | +1.91% | +1.87% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.86% | +1.82% |
-| DOGE/USDT:USDT | below_1h_threshold | +1.60% | +1.56% |
+| BASECAT/USDT:USDT | below_1h_threshold | +4.71% | +4.68% |
+| DOGE/USDT:USDT | below_1h_threshold | +4.42% | +4.40% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.17% | +4.15% |
+| 4/USDT:USDT | below_1h_threshold | +3.47% | +3.44% |
+| ARB/USDT:USDT | below_1h_threshold | +3.26% | +3.24% |
 
 ## 7. 次に見るべき不足
 
