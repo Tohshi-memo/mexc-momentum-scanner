@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T01:36:25.693072+00:00
+- generated_at: 2026-09-05T01:41:20.096729+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13681**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T01:36:16.090114+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=79620.9
+- 更新: 2026-09-05T01:41:10.381110+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79620.5
 - Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.3 >= 65=1
+- Strict後reject: 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +52.83% | $12,082,409.76 |
-| DASH/USDT:USDT | +24.43% | $31,136,128.17 |
-| AKE/USDT:USDT | +24.30% | $5,887,581.64 |
-| BASECAT/USDT:USDT | +21.04% | $2,004,591.18 |
-| ZEN/USDT:USDT | +15.09% | $7,130,440.34 |
+| 4/USDT:USDT | +51.34% | $12,130,077.24 |
+| AKE/USDT:USDT | +27.66% | $6,059,873.70 |
+| DASH/USDT:USDT | +23.12% | $31,225,003.67 |
+| BASECAT/USDT:USDT | +16.73% | $2,008,330.83 |
+| ZEN/USDT:USDT | +16.55% | $7,151,597.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.00% | +2.91% |
-| CYS/USDT:USDT | below_1h_threshold | +2.93% | +2.83% |
-| CAP/USDT:USDT | below_1h_threshold | +2.08% | +1.98% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.67% | +1.57% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.59% | +1.50% |
+| CYS/USDT:USDT | below_1h_threshold | +2.85% | +2.75% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.67% | +2.58% |
+| CAP/USDT:USDT | below_1h_threshold | +2.49% | +2.39% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.83% | +1.73% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.18% | +1.08% |
 
 ## 7. 次に見るべき不足
 
