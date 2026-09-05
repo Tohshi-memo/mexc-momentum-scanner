@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T20:11:17.475947+00:00
+- generated_at: 2026-09-05T20:16:17.745362+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13774**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T20:11:07.073414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79733.2
+- 更新: 2026-09-05T20:16:07.667575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=79697.5
 - Funnel: target 1050 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.4 >= 65=1
+- Strict後reject: 4h RSI 80.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUSHI/USDT:USDT | +25.82% | $2,565,445.06 |
-| ARB/USDT:USDT | +20.99% | $34,196,454.23 |
-| 4/USDT:USDT | +17.33% | $24,568,198.63 |
-| UNI/USDT:USDT | +13.74% | $48,471,395.10 |
-| MAGMA/USDT:USDT | +11.91% | $2,514,739.17 |
+| SUSHI/USDT:USDT | +26.20% | $2,646,130.31 |
+| ARB/USDT:USDT | +20.94% | $34,736,042.42 |
+| 4/USDT:USDT | +19.47% | $24,691,116.59 |
+| UAI/USDT:USDT | +13.84% | $4,283,251.24 |
+| UNI/USDT:USDT | +13.11% | $49,501,562.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRV/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
-| SUSHI/USDT:USDT | below_1h_threshold | +1.29% | +1.28% |
-| OP/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
-| ENA/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
+| UAI/USDT:USDT | below_1h_threshold | +3.16% | +3.18% |
+| OP/USDT:USDT | below_1h_threshold | +2.54% | +2.57% |
+| CRV/USDT:USDT | below_1h_threshold | +2.23% | +2.26% |
+| SUSHI/USDT:USDT | below_1h_threshold | +1.60% | +1.62% |
+| 4/USDT:USDT | below_1h_threshold | +1.47% | +1.50% |
 
 ## 7. 次に見るべき不足
 
