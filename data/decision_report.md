@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T22:31:13.515629+00:00
+- generated_at: 2026-09-05T22:36:13.588817+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13780**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T22:31:03.725168+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=79818.8
+- 更新: 2026-09-05T22:36:03.698117+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=79778.9
 - Funnel: target 1050 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +34.47% | $60,732,516.28 |
-| 4/USDT:USDT | +22.41% | $23,664,140.96 |
-| SUSHI/USDT:USDT | +21.81% | $3,513,629.01 |
-| BASECAT/USDT:USDT | +13.76% | $1,777,468.17 |
-| FLOCK/USDT:USDT | +11.92% | $1,059,063.75 |
+| ARB/USDT:USDT | +35.39% | $62,004,187.60 |
+| SUSHI/USDT:USDT | +20.96% | $3,528,373.61 |
+| 4/USDT:USDT | +20.72% | $23,768,957.39 |
+| BASECAT/USDT:USDT | +12.58% | $1,786,489.58 |
+| FLOCK/USDT:USDT | +12.25% | $1,066,592.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.76% | +3.82% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.52% | +3.59% |
-| ARB/USDT:USDT | below_1h_threshold | +3.42% | +3.49% |
-| FLOCK/USDT:USDT | below_1h_threshold | +3.10% | +3.16% |
-| INTUSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.37% |
+| ARB/USDT:USDT | below_1h_threshold | +4.18% | +4.30% |
+| FLOCK/USDT:USDT | below_1h_threshold | +3.41% | +3.52% |
+| STRK/USDT:USDT | below_1h_threshold | +2.88% | +2.99% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.45% | +2.57% |
+| INTUSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.42% |
 
 ## 7. 次に見るべき不足
 
