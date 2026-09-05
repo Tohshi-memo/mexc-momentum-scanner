@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T00:06:25.271452+00:00
+- generated_at: 2026-09-05T00:11:18.416616+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13676**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T00:06:13.803267+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79601.0
+- 更新: 2026-09-05T00:11:08.810610+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79648.6
 - Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +44.04% | $10,558,716.31 |
-| DASH/USDT:USDT | +19.77% | $27,737,043.07 |
-| BASECAT/USDT:USDT | +17.07% | $1,936,867.87 |
-| USELESS/USDT:USDT | +15.33% | $44,606,520.07 |
-| MARSCOIN/USDT:USDT | +13.31% | $8,560,739.30 |
+| 4/USDT:USDT | +42.91% | $10,601,706.70 |
+| DASH/USDT:USDT | +19.62% | $28,090,579.59 |
+| BASECAT/USDT:USDT | +16.17% | $1,938,215.62 |
+| USELESS/USDT:USDT | +15.52% | $44,692,904.01 |
+| ZEN/USDT:USDT | +13.75% | $6,586,093.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +1.94% | +1.96% |
-| ENJ/USDT:USDT | below_1h_threshold | +1.74% | +1.76% |
-| EDGE/USDT:USDT | below_1h_threshold | +1.59% | +1.61% |
-| PROM/USDT:USDT | below_1h_threshold | +1.22% | +1.24% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.10% | +1.12% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.79% | +1.75% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.65% | +1.61% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.59% | +1.55% |
+| KAS/USDT:USDT | below_1h_threshold | +1.46% | +1.42% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.38% | +1.34% |
 
 ## 7. 次に見るべき不足
 
