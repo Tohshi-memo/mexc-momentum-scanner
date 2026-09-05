@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T22:56:24.574031+00:00
+- generated_at: 2026-09-05T23:01:30.408053+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13780**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T22:56:13.854977+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=79768.6
-- Funnel: target 1050 → liquid 125 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 85.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-05T23:01:20.501316+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=79741.1
+- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +36.52% | $67,033,484.76 |
-| 4/USDT:USDT | +21.34% | $23,871,428.07 |
-| SUSHI/USDT:USDT | +20.63% | $3,585,495.59 |
-| BASECAT/USDT:USDT | +18.22% | $1,856,255.40 |
-| UNI/USDT:USDT | +11.90% | $55,077,281.57 |
+| ARB/USDT:USDT | +34.95% | $66,413,973.58 |
+| 4/USDT:USDT | +23.15% | $22,758,753.20 |
+| SUSHI/USDT:USDT | +20.82% | $3,585,767.86 |
+| BASECAT/USDT:USDT | +19.61% | $1,802,068.57 |
+| MAGMA/USDT:USDT | +11.79% | $2,402,944.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_1h_threshold | +2.67% | +2.80% |
-| INTUSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.44% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.26% | +2.39% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.22% | +2.34% |
-| STRK/USDT:USDT | below_1h_threshold | +1.87% | +2.00% |
+| B/USDT:USDT | below_1h_threshold | +0.84% | +0.86% |
+| XMR/USDT:USDT | below_1h_threshold | +0.42% | +0.44% |
+| ENA/USDT:USDT | below_1h_threshold | +0.37% | +0.39% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.27% | +0.29% |
+| INTUSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.29% |
 
 ## 7. 次に見るべき不足
 
