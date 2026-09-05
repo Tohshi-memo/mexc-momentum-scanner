@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T11:16:18.277644+00:00
+- generated_at: 2026-09-05T11:21:21.048484+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13728**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T11:16:09.977611+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79594.4
+- 更新: 2026-09-05T11:21:09.744382+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79586.5
 - Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +60.68% | $12,723,928.91 |
-| 4/USDT:USDT | +59.82% | $19,629,374.48 |
-| AKE/USDT:USDT | +43.77% | $15,906,130.93 |
-| MARSCOIN/USDT:USDT | +40.23% | $8,369,565.75 |
-| ICX/USDT:USDT | +37.80% | $1,023,379.98 |
+| BULLA/USDT:USDT | +69.29% | $12,903,949.35 |
+| 4/USDT:USDT | +59.51% | $19,671,912.01 |
+| AKE/USDT:USDT | +43.25% | $15,957,123.51 |
+| MARSCOIN/USDT:USDT | +38.80% | $8,416,977.82 |
+| BASECAT/USDT:USDT | +38.77% | $1,725,898.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.88% | +2.87% |
-| TUT/USDT:USDT | below_1h_threshold | +2.33% | +2.32% |
-| TRIA/USDT:USDT | below_1h_threshold | +2.21% | +2.20% |
-| PONS/USDT:USDT | below_1h_threshold | +2.02% | +2.00% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.70% | +1.68% |
+| TUT/USDT:USDT | below_1h_threshold | +3.41% | +3.41% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.66% | +2.65% |
+| JTO/USDT:USDT | below_1h_threshold | +2.49% | +2.49% |
+| PONS/USDT:USDT | below_1h_threshold | +2.11% | +2.11% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.66% | +1.65% |
 
 ## 7. 次に見るべき不足
 
