@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T17:46:41.613517+00:00
+- generated_at: 2026-09-05T17:51:31.543071+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13764**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.95** / 初期 $100.00 (+19.95%)
-- 確定: 2384件 (Win 708 / Loss 904 / Flat 772) / pending 3件 / skip 2850件
+- 確定: 2384件 (Win 708 / Loss 904 / Flat 772) / pending 4件 / skip 2850件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000270 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $119.95
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T17:46:25.298536+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=79991.9
-- Funnel: target 1050 → liquid 129 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.2 >= 65=1, 4h RSI 73.1 >= 65=1, 4h RSI 65.7 >= 65=1
+- 更新: 2026-09-05T17:51:19.653449+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80034.3
+- Funnel: target 1050 → liquid 129 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 66.3 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 77.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +20.84% | $2,625,011.81 |
-| 4/USDT:USDT | +20.72% | $24,930,669.79 |
-| MAGMA/USDT:USDT | +14.61% | $2,197,798.54 |
-| USELESS/USDT:USDT | +10.47% | $20,812,130.31 |
-| BASECAT/USDT:USDT | +9.89% | $2,032,683.43 |
+| 4/USDT:USDT | +20.61% | $25,072,747.59 |
+| NIULAI/USDT:USDT | +16.74% | $2,647,879.33 |
+| MAGMA/USDT:USDT | +16.49% | $2,206,061.59 |
+| BASECAT/USDT:USDT | +12.18% | $2,047,114.00 |
+| USELESS/USDT:USDT | +9.92% | $20,891,681.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.85% | +4.86% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.79% | +3.80% |
-| B/USDT:USDT | below_1h_threshold | +2.88% | +2.89% |
-| 4/USDT:USDT | below_1h_threshold | +2.80% | +2.82% |
-| UNI/USDT:USDT | below_1h_threshold | +1.50% | +1.52% |
+| 4/USDT:USDT | below_1h_threshold | +3.47% | +3.43% |
+| B/USDT:USDT | below_1h_threshold | +2.54% | +2.50% |
+| BCH/USDT:USDT | below_1h_threshold | +1.91% | +1.87% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.86% | +1.82% |
+| DOGE/USDT:USDT | below_1h_threshold | +1.60% | +1.56% |
 
 ## 7. 次に見るべき不足
 
