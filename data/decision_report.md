@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T05:01:17.950167+00:00
+- generated_at: 2026-09-05T05:06:15.147536+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13699**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T05:01:08.193297+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79467.9
+- 更新: 2026-09-05T05:06:05.490555+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=79432.3
 - Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +84.60% | $5,955,681.63 |
-| 4/USDT:USDT | +60.82% | $15,013,520.05 |
-| DASH/USDT:USDT | +31.19% | $36,303,489.01 |
-| ZEN/USDT:USDT | +21.20% | $8,810,908.68 |
-| AKE/USDT:USDT | +20.05% | $11,492,639.95 |
+| BULLA/USDT:USDT | +86.94% | $5,985,410.04 |
+| 4/USDT:USDT | +64.00% | $15,070,829.14 |
+| DASH/USDT:USDT | +30.38% | $36,608,047.47 |
+| ZEN/USDT:USDT | +19.54% | $8,952,818.72 |
+| BASECAT/USDT:USDT | +17.48% | $1,672,308.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.25% | +1.25% |
-| BULLA/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
-| MUU/USDT:USDT | below_1h_threshold | +0.53% | +0.52% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.50% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.47% |
+| EDGE/USDT:USDT | below_1h_threshold | +2.36% | +2.39% |
+| 4/USDT:USDT | below_1h_threshold | +1.90% | +1.94% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.63% | +1.66% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.35% | +1.38% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.25% | +1.29% |
 
 ## 7. 次に見るべき不足
 
