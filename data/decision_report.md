@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T22:11:19.731754+00:00
+- generated_at: 2026-09-05T22:16:18.712586+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13778**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T22:11:09.675528+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79856.7
-- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-05T22:16:08.932471+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79875.7
+- Funnel: target 1050 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +29.81% | $54,685,668.78 |
-| UAI/USDT:USDT | +24.85% | $5,587,518.30 |
-| SUSHI/USDT:USDT | +23.13% | $3,454,870.06 |
-| 4/USDT:USDT | +22.92% | $23,530,443.10 |
-| UNI/USDT:USDT | +12.61% | $54,340,942.77 |
+| ARB/USDT:USDT | +30.56% | $55,562,593.36 |
+| 4/USDT:USDT | +23.84% | $23,571,333.64 |
+| SUSHI/USDT:USDT | +22.61% | $3,465,904.08 |
+| UAI/USDT:USDT | +21.81% | $5,751,031.92 |
+| UNI/USDT:USDT | +12.55% | $54,374,804.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTUSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.33% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.84% | +1.85% |
-| TUT/USDT:USDT | below_1h_threshold | +1.42% | +1.44% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.14% | +1.16% |
-| GRAM/USDT:USDT | below_1h_threshold | +1.05% | +1.06% |
+| INTUSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.30% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.13% | +2.12% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.11% | +2.11% |
+| TUT/USDT:USDT | below_1h_threshold | +1.95% | +1.94% |
+| 4/USDT:USDT | below_1h_threshold | +1.39% | +1.38% |
 
 ## 7. 次に見るべき不足
 
