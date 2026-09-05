@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T01:11:19.028036+00:00
+- generated_at: 2026-09-05T01:16:20.162560+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13678**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.94** / 初期 $100.00 (+17.94%)
-- 確定: 2312件 (Win 688 / Loss 887 / Flat 737) / pending 2件 / skip 2834件
+- 確定: 2312件 (Win 688 / Loss 887 / Flat 737) / pending 3件 / skip 2834件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000270 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NEAR/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $117.94
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T01:11:09.199719+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=79632.1
-- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-05T01:16:07.876816+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=79600.0
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +53.27% | $11,827,334.43 |
-| DASH/USDT:USDT | +25.02% | $30,406,227.42 |
-| USELESS/USDT:USDT | +19.07% | $44,979,259.57 |
-| BASECAT/USDT:USDT | +17.86% | $1,985,671.90 |
-| NEAR/USDT:USDT | +16.58% | $27,831,768.25 |
+| 4/USDT:USDT | +53.89% | $11,883,239.27 |
+| DASH/USDT:USDT | +25.21% | $30,606,513.00 |
+| BASECAT/USDT:USDT | +18.92% | $1,992,266.78 |
+| USELESS/USDT:USDT | +18.66% | $45,061,245.45 |
+| NEAR/USDT:USDT | +15.80% | $28,032,894.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.49% | +3.38% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.12% | +2.00% |
-| DASH/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
-| APT/USDT:USDT | below_1h_threshold | +1.40% | +1.29% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.33% | +1.22% |
+| DASH/USDT:USDT | below_1h_threshold | +2.02% | +1.95% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.49% | +1.41% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.14% | +1.07% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.95% | +0.88% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.83% | +0.76% |
 
 ## 7. 次に見るべき不足
 
