@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T20:06:21.557565+00:00
+- generated_at: 2026-09-05T20:11:17.475947+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13774**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.42** / 初期 $100.00 (+19.42%)
-- 確定: 2391件 (Win 709 / Loss 908 / Flat 774) / pending 1件 / skip 2850件
+- 確定: 2391件 (Win 709 / Loss 908 / Flat 774) / pending 2件 / skip 2850件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000192 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.42
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T20:06:11.570094+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=79750.1
-- Funnel: target 1050 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-05T20:11:07.073414+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=79733.2
+- Funnel: target 1050 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SUSHI/USDT:USDT | +27.14% | $2,514,505.64 |
-| 4/USDT:USDT | +16.89% | $24,532,201.62 |
-| ARB/USDT:USDT | +15.68% | $32,455,650.01 |
-| UNI/USDT:USDT | +14.08% | $47,715,556.98 |
-| MAGMA/USDT:USDT | +13.50% | $2,501,228.93 |
+| SUSHI/USDT:USDT | +25.82% | $2,565,445.06 |
+| ARB/USDT:USDT | +20.99% | $34,196,454.23 |
+| 4/USDT:USDT | +17.33% | $24,568,198.63 |
+| UNI/USDT:USDT | +13.74% | $48,471,395.10 |
+| MAGMA/USDT:USDT | +11.91% | $2,514,739.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_1h_threshold | +2.59% | +2.55% |
-| SUSHI/USDT:USDT | below_1h_threshold | +2.36% | +2.32% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.20% | +1.16% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.71% | +0.67% |
-| CRV/USDT:USDT | below_1h_threshold | +0.70% | +0.66% |
+| CRV/USDT:USDT | below_1h_threshold | +1.96% | +1.95% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.56% | +1.54% |
+| SUSHI/USDT:USDT | below_1h_threshold | +1.29% | +1.28% |
+| OP/USDT:USDT | below_1h_threshold | +1.25% | +1.23% |
+| ENA/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
 
 ## 7. 次に見るべき不足
 
