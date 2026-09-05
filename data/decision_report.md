@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T06:26:25.473166+00:00
+- generated_at: 2026-09-05T06:31:25.724328+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13702**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.13** / 初期 $100.00 (+18.13%)
-- 確定: 2335件 (Win 697 / Loss 897 / Flat 741) / pending 6件 / skip 2836件
+- 確定: 2335件 (Win 697 / Loss 897 / Flat 741) / pending 6件 / skip 2837件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000314 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BULLA/USDT:USDT `LIMIT_7PCT` SL_HIT account +0.12% 残高後 $118.13
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T06:26:13.243513+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=79577.6
-- Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-05T06:31:15.602904+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=79602.6
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 91.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +118.46% | $7,710,066.99 |
-| 4/USDT:USDT | +63.44% | $15,777,662.36 |
-| DASH/USDT:USDT | +36.21% | $42,953,609.06 |
-| ZEN/USDT:USDT | +27.79% | $10,280,282.50 |
-| AKE/USDT:USDT | +21.84% | $12,228,781.35 |
+| BULLA/USDT:USDT | +120.32% | $7,783,656.14 |
+| B/USDT:USDT | +64.81% | $1,061,215.77 |
+| 4/USDT:USDT | +63.19% | $15,817,526.71 |
+| DASH/USDT:USDT | +35.32% | $43,376,359.60 |
+| ZEN/USDT:USDT | +26.76% | $10,345,042.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.43% | +3.38% |
-| TUT/USDT:USDT | below_1h_threshold | +2.33% | +2.29% |
-| FLOKI/USDT:USDT | below_1h_threshold | +1.85% | +1.80% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.75% | +1.70% |
-| ICP/USDT:USDT | below_1h_threshold | +1.67% | +1.63% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.02% | +3.94% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +3.17% | +3.10% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.61% | +2.53% |
+| TUT/USDT:USDT | below_1h_threshold | +2.21% | +2.13% |
+| KAS/USDT:USDT | below_1h_threshold | +1.97% | +1.89% |
 
 ## 7. 次に見るべき不足
 
