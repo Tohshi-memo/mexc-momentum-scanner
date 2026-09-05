@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T16:01:15.804340+00:00
+- generated_at: 2026-09-05T16:06:14.860781+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13746**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T16:01:06.023436+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=79759.6
+- 更新: 2026-09-05T16:06:07.144186+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79793.5
 - Funnel: target 1050 → liquid 131 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +0.83% | $1,266,699.08 |
-| FLOCK/USDT:USDT | +0.70% | $1,430,818.52 |
-| USELESS/USDT:USDT | +0.64% | $18,713,334.18 |
-| PONS/USDT:USDT | +0.40% | $10,732,935.77 |
-| SPX/USDT:USDT | +0.38% | $1,689,050.06 |
+| USELESS/USDT:USDT | +3.84% | $18,932,883.63 |
+| EDGE/USDT:USDT | +3.15% | $1,188,011.84 |
+| BULLA/USDT:USDT | +1.63% | $19,062,057.94 |
+| CP/USDT:USDT | +1.30% | $1,033,317.77 |
+| NIULAI/USDT:USDT | +1.23% | $1,964,578.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
-| FLOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
-| INTUSTOCK/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
-| PONS/USDT:USDT | below_1h_threshold | +0.57% | +0.58% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.85% | +3.81% |
+| EDGE/USDT:USDT | below_1h_threshold | +3.15% | +3.11% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
+| CP/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.24% | +1.20% |
 
 ## 7. 次に見るべき不足
 
