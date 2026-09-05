@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-05T12:56:31.444068+00:00
+- generated_at: 2026-09-05T13:01:25.768091+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13733**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-05T12:56:19.944607+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=79715.1
-- Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 76.7 >= 65=1, 4h RSI 80.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-05T13:01:15.835386+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79673.2
+- Funnel: target 1050 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BULLA/USDT:USDT | +92.66% | $14,510,321.08 |
-| 4/USDT:USDT | +62.38% | $20,763,501.66 |
-| BASECAT/USDT:USDT | +45.40% | $1,880,123.13 |
-| AKE/USDT:USDT | +43.22% | $17,800,762.88 |
-| MARSCOIN/USDT:USDT | +42.99% | $8,986,648.49 |
+| BULLA/USDT:USDT | +89.74% | $14,358,002.70 |
+| 4/USDT:USDT | +62.19% | $20,707,062.39 |
+| AKE/USDT:USDT | +44.45% | $17,462,423.35 |
+| MARSCOIN/USDT:USDT | +43.66% | $8,431,737.13 |
+| BASECAT/USDT:USDT | +43.18% | $1,783,231.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.88% | +4.70% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.82% | +4.65% |
-| CAKE/USDT:USDT | below_1h_threshold | +3.60% | +3.43% |
-| TUT/USDT:USDT | below_1h_threshold | +2.83% | +2.65% |
-| FLOKI/USDT:USDT | below_1h_threshold | +2.41% | +2.24% |
+| AKE/USDT:USDT | below_1h_threshold | +1.83% | +1.83% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.55% | +0.54% |
+| UAI/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
+| ICX/USDT:USDT | below_1h_threshold | +0.53% | +0.52% |
 
 ## 7. 次に見るべき不足
 
