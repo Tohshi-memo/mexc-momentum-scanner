@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-06T07:51:13.529307+00:00
+- generated_at: 2026-09-06T07:56:16.838430+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13804**
+- closed shadow trades: **13805**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13804, expectancy=-0.01%
+- 全期間 MARKET基準: n=13805, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=+0.07%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,32 +46,32 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$860.59** / 初期 $100.00 (+760.59%)
-- 確定: 5110件 (Win 1535 / Loss 1669 / Flat 1906) / skip 5255件
-- 成長率目線: 平均log +0.000421 / 幾何平均 +0.042% per trade / maxDD +8.46%
+- 残高: **$856.28** / 初期 $100.00 (+756.28%)
+- 確定: 5111件 (Win 1535 / Loss 1670 / Flat 1906) / skip 5255件
+- 成長率目線: 平均log +0.000420 / 幾何平均 +0.042% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_ATR_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: MAGMA/USDT:USDT `LIMIT_ATR_LONG` TP_HIT account +1.00% 残高後 $860.59
+- 最新: MAGMA/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $856.28
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$193.56** / 初期 $100.00 (+93.56%)
-- 確定: 2549件 (Win 713 / Loss 605 / Flat 1231) / skip 4666件
-- 成長率目線: 平均log +0.000259 / 幾何平均 +0.026% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0191 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: MAGMA/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.69% 残高後 $193.56
+- 残高: **$192.89** / 初期 $100.00 (+92.89%)
+- 確定: 2550件 (Win 713 / Loss 606 / Flat 1231) / skip 4666件
+- 成長率目線: 平均log +0.000258 / 幾何平均 +0.026% per trade / maxDD +3.96%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0131 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: MAGMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $192.89
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$120.33** / 初期 $100.00 (+20.33%)
-- 確定: 2417件 (Win 721 / Loss 918 / Flat 778) / pending 3件 / skip 2855件
+- 残高: **$120.11** / 初期 $100.00 (+20.11%)
+- 確定: 2418件 (Win 721 / Loss 919 / Flat 778) / pending 2件 / skip 2855件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: MAGMA/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $120.33
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000207 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: MAGMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $120.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T07:51:06.569856+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79802.9
+- 更新: 2026-09-06T07:56:08.798194+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=79796.4
 - Funnel: target 1054 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +47.37% | $143,420,055.19 |
-| RAY/USDT:USDT | +29.42% | $2,900,052.88 |
-| FLOCK/USDT:USDT | +28.26% | $1,236,797.22 |
-| UAI/USDT:USDT | +15.58% | $12,551,177.67 |
-| ZEC/USDT:USDT | +14.64% | $254,156,999.57 |
+| ARB/USDT:USDT | +52.83% | $145,579,390.74 |
+| RAY/USDT:USDT | +30.44% | $2,924,968.89 |
+| FLOCK/USDT:USDT | +27.75% | $1,247,232.20 |
+| UAI/USDT:USDT | +15.58% | $12,578,651.29 |
+| ZEC/USDT:USDT | +14.61% | $255,232,282.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +3.55% | +3.47% |
-| AR/USDT:USDT | below_1h_threshold | +2.08% | +1.99% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.24% | +1.16% |
-| FLOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.13% |
-| OP/USDT:USDT | below_1h_threshold | +0.60% | +0.52% |
+| ARB/USDT:USDT | below_1h_threshold | +4.53% | +4.46% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.13% | +4.06% |
+| OP/USDT:USDT | below_1h_threshold | +2.11% | +2.03% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.77% | +1.70% |
+| APT/USDT:USDT | below_1h_threshold | +1.49% | +1.42% |
 
 ## 7. 次に見るべき不足
 
