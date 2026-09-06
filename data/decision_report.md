@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T21:41:19.085237+00:00
+- generated_at: 2026-09-06T21:46:15.951520+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13842**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T21:41:07.117466+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79853.5
+- 更新: 2026-09-06T21:46:06.099578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=79947.9
 - Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +161.30% | $2,336,565.51 |
-| XAN/USDT:USDT | +9.12% | $1,263,298.00 |
-| TAO/USDT:USDT | +8.57% | $71,892,262.00 |
-| TIA/USDT:USDT | +8.20% | $10,367,940.97 |
-| 4/USDT:USDT | +7.10% | $8,042,873.22 |
+| BONER/USDT:USDT | +152.19% | $2,373,091.49 |
+| XAN/USDT:USDT | +10.69% | $1,265,571.75 |
+| TIA/USDT:USDT | +9.72% | $10,560,211.32 |
+| TAO/USDT:USDT | +8.58% | $72,124,193.39 |
+| 4/USDT:USDT | +7.02% | $8,049,837.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +4.51% | +4.54% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.08% | +3.10% |
-| KAS/USDT:USDT | below_1h_threshold | +2.97% | +2.99% |
-| XAN/USDT:USDT | below_1h_threshold | +2.95% | +2.97% |
-| JTO/USDT:USDT | below_1h_threshold | +2.94% | +2.97% |
+| XAN/USDT:USDT | below_1h_threshold | +4.45% | +4.36% |
+| TIA/USDT:USDT | below_1h_threshold | +4.23% | +4.14% |
+| KAS/USDT:USDT | below_1h_threshold | +3.45% | +3.36% |
+| JTO/USDT:USDT | below_1h_threshold | +2.96% | +2.87% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.83% | +2.74% |
 
 ## 7. 次に見るべき不足
 
