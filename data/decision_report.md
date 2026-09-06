@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T00:01:15.166101+00:00
+- generated_at: 2026-09-06T00:06:35.370546+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13781**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.93** / 初期 $100.00 (+19.93%)
-- 確定: 2398件 (Win 712 / Loss 909 / Flat 777) / pending 5件 / skip 2850件
+- 確定: 2398件 (Win 712 / Loss 909 / Flat 777) / pending 6件 / skip 2850件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000277 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BASECAT/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $119.93
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T00:01:05.385267+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=79789.7
-- Funnel: target 1050 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T00:06:25.238842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=79843.3
+- Funnel: target 1050 → liquid 122 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +34.48% | $75,675,392.78 |
-| BASECAT/USDT:USDT | +27.35% | $1,908,257.76 |
-| 4/USDT:USDT | +20.79% | $21,436,418.22 |
-| SUSHI/USDT:USDT | +20.16% | $3,721,392.93 |
-| MAGMA/USDT:USDT | +14.62% | $2,435,946.40 |
+| ARB/USDT:USDT | +36.05% | $77,036,600.77 |
+| BASECAT/USDT:USDT | +25.32% | $1,931,565.81 |
+| SUSHI/USDT:USDT | +19.26% | $3,775,977.24 |
+| 4/USDT:USDT | +19.10% | $21,470,318.31 |
+| FLOCK/USDT:USDT | +16.96% | $1,014,474.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.10% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.01% | +1.02% |
-| ARB/USDT:USDT | below_1h_threshold | +0.84% | +0.85% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.63% | +0.64% |
-| UAI/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
+| FLOCK/USDT:USDT | below_1h_threshold | +3.23% | +3.17% |
+| ARB/USDT:USDT | below_1h_threshold | +1.92% | +1.86% |
+| TUT/USDT:USDT | below_1h_threshold | +1.71% | +1.66% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.48% | +1.42% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.27% | +1.21% |
 
 ## 7. 次に見るべき不足
 
