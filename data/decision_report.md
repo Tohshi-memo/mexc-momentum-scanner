@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T02:16:20.836040+00:00
+- generated_at: 2026-09-06T02:21:27.737635+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13787**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.90** / 初期 $100.00 (+19.90%)
-- 確定: 2404件 (Win 715 / Loss 912 / Flat 777) / pending 6件 / skip 2852件
+- 確定: 2404件 (Win 715 / Loss 912 / Flat 777) / pending 6件 / skip 2853件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000287 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UAI/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $119.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T02:16:10.810443+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=79948.7
-- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T02:21:15.624308+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79909.0
+- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +46.82% | $106,843,180.51 |
-| UAI/USDT:USDT | +30.12% | $7,199,156.49 |
-| BASECAT/USDT:USDT | +24.34% | $2,023,755.55 |
-| SUSHI/USDT:USDT | +23.98% | $4,152,922.66 |
-| MAGMA/USDT:USDT | +18.68% | $2,507,000.35 |
+| ARB/USDT:USDT | +46.65% | $107,291,419.20 |
+| UAI/USDT:USDT | +30.81% | $7,325,890.66 |
+| BASECAT/USDT:USDT | +23.84% | $2,030,727.75 |
+| SUSHI/USDT:USDT | +21.76% | $4,178,449.18 |
+| MAGMA/USDT:USDT | +21.54% | $2,514,928.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.95% | +2.91% |
-| ARB/USDT:USDT | below_1h_threshold | +0.97% | +0.92% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.82% | +0.77% |
-| MONAD/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.74% | +0.70% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.09% | +1.10% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
+| ARB/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
+| UAI/USDT:USDT | below_1h_threshold | +0.73% | +0.74% |
+| INJ/USDT:USDT | below_1h_threshold | +0.65% | +0.66% |
 
 ## 7. 次に見るべき不足
 
