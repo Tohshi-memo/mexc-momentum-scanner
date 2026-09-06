@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T06:16:13.871041+00:00
+- generated_at: 2026-09-06T06:21:50.060217+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13803**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T06:16:04.033721+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=79893.8
+- 更新: 2026-09-06T06:21:40.210952+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=79875.0
 - Funnel: target 1054 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +43.59% | $135,324,304.64 |
-| RAY/USDT:USDT | +35.09% | $2,383,395.44 |
-| FLOCK/USDT:USDT | +28.16% | $1,143,739.38 |
-| BASECAT/USDT:USDT | +17.35% | $2,199,296.93 |
-| ZEC/USDT:USDT | +15.54% | $234,306,635.46 |
+| ARB/USDT:USDT | +45.54% | $135,885,606.16 |
+| RAY/USDT:USDT | +34.11% | $2,410,915.47 |
+| FLOCK/USDT:USDT | +28.39% | $1,146,884.52 |
+| ZEC/USDT:USDT | +15.16% | $235,655,409.43 |
+| BASECAT/USDT:USDT | +14.22% | $2,210,476.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CAKE/USDT:USDT | below_1h_threshold | +0.73% | +0.81% |
-| BOME/USDT:USDT | below_1h_threshold | +0.72% | +0.79% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.59% | +0.66% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.48% | +0.56% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.37% | +0.44% |
+| CAKE/USDT:USDT | below_1h_threshold | +0.40% | +0.50% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.37% | +0.46% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.18% | +0.28% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.14% | +0.24% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.08% | +0.18% |
 
 ## 7. 次に見るべき不足
 
