@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T19:26:25.213700+00:00
+- generated_at: 2026-09-06T19:31:28.376222+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13827**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.64** / 初期 $100.00 (+18.64%)
-- 確定: 2437件 (Win 724 / Loss 931 / Flat 782) / pending 6件 / skip 2857件
+- 確定: 2437件 (Win 724 / Loss 931 / Flat 782) / pending 6件 / skip 2859件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000142 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BASECAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T19:26:15.042935+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=79840.0
-- Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T19:31:15.983819+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=79798.4
+- Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MAGMA/USDT:USDT | +12.08% | $2,027,895.75 |
-| ROSE/USDT:USDT | +8.38% | $1,417,272.37 |
-| 4/USDT:USDT | +8.31% | $10,035,650.17 |
-| BONER/USDT:USDT | +7.67% | $1,104,417.04 |
-| TAO/USDT:USDT | +6.03% | $60,995,406.17 |
+| BONER/USDT:USDT | +15.08% | $1,113,416.18 |
+| MAGMA/USDT:USDT | +14.55% | $2,056,901.36 |
+| 4/USDT:USDT | +7.85% | $10,045,574.54 |
+| ROSE/USDT:USDT | +7.35% | $1,442,849.71 |
+| TAO/USDT:USDT | +5.76% | $61,703,237.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.62% | +4.71% |
-| BONER/USDT:USDT | below_1h_threshold | +3.71% | +3.80% |
-| TAO/USDT:USDT | below_1h_threshold | +2.45% | +2.54% |
-| HEMI/USDT:USDT | below_1h_threshold | +1.78% | +1.87% |
-| SUSHI/USDT:USDT | below_1h_threshold | +1.48% | +1.57% |
+| TAO/USDT:USDT | below_1h_threshold | +2.00% | +2.15% |
+| SUSHI/USDT:USDT | below_1h_threshold | +1.44% | +1.58% |
+| XAN/USDT:USDT | below_1h_threshold | +1.29% | +1.44% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.08% | +1.22% |
+| 4/USDT:USDT | below_1h_threshold | +0.78% | +0.92% |
 
 ## 7. 次に見るべき不足
 
