@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T08:56:31.752388+00:00
+- generated_at: 2026-09-06T09:01:18.251119+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13807**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T08:56:18.746887+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=79829.5
-- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.7 >= 65=1, 4h RSI 65.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-06T09:01:08.528168+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=79812.4
+- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +48.82% | $155,739,814.51 |
-| FLOCK/USDT:USDT | +39.69% | $1,484,750.33 |
-| RAY/USDT:USDT | +31.07% | $3,318,331.02 |
-| UAI/USDT:USDT | +22.17% | $13,136,630.84 |
-| GRT/USDT:USDT | +16.97% | $1,679,613.55 |
+| ARB/USDT:USDT | +47.23% | $155,517,394.51 |
+| FLOCK/USDT:USDT | +40.19% | $1,486,132.36 |
+| RAY/USDT:USDT | +30.83% | $3,318,119.90 |
+| UAI/USDT:USDT | +22.55% | $13,078,785.82 |
+| GRT/USDT:USDT | +17.60% | $1,694,778.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +4.50% | +4.42% |
-| GRT/USDT:USDT | below_1h_threshold | +3.33% | +3.25% |
-| JUP/USDT:USDT | below_1h_threshold | +2.38% | +2.30% |
-| LDO/USDT:USDT | below_1h_threshold | +1.39% | +1.30% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.26% | +1.18% |
+| GRT/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.61% | +0.60% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.46% | +0.46% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.39% | +0.38% |
+| STRK/USDT:USDT | below_1h_threshold | +0.33% | +0.32% |
 
 ## 7. 次に見るべき不足
 
