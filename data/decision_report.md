@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T16:46:31.522314+00:00
+- generated_at: 2026-09-06T16:51:25.875017+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13825**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T16:46:13.362995+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79660.1
-- Funnel: target 1059 → liquid 127 → pre 50 → checked 50 → surge 3 → strict 3
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T16:51:10.692959+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79672.3
+- Funnel: target 1059 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +7.31% | $14,000,040.54 |
-| USELESS/USDT:USDT | +5.60% | $17,632,080.30 |
-| BASECAT/USDT:USDT | +5.10% | $2,248,760.86 |
-| 1000BONK/USDT:USDT | +4.50% | $5,024,864.60 |
-| UNI/USDT:USDT | +4.41% | $58,365,795.93 |
+| 4/USDT:USDT | +5.85% | $14,034,396.35 |
+| USELESS/USDT:USDT | +5.73% | $17,680,799.97 |
+| UNI/USDT:USDT | +3.98% | $58,695,056.00 |
+| 1000BONK/USDT:USDT | +3.72% | $5,102,652.89 |
+| COTI/USDT:USDT | +3.00% | $1,933,045.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_1h_threshold | +4.53% | +4.56% |
-| UNI/USDT:USDT | below_1h_threshold | +4.42% | +4.44% |
-| UAI/USDT:USDT | below_1h_threshold | +4.34% | +4.36% |
-| TRB/USDT:USDT | below_1h_threshold | +3.16% | +3.19% |
-| DASH/USDT:USDT | below_1h_threshold | +2.78% | +2.80% |
+| UNI/USDT:USDT | below_1h_threshold | +3.99% | +3.99% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.70% | +3.70% |
+| COTI/USDT:USDT | below_1h_threshold | +3.01% | +3.01% |
+| TRB/USDT:USDT | below_1h_threshold | +2.77% | +2.77% |
+| ORDI/USDT:USDT | below_1h_threshold | +2.40% | +2.40% |
 
 ## 7. 次に見るべき不足
 
