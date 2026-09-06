@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T01:56:19.289400+00:00
+- generated_at: 2026-09-06T02:01:20.923081+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13787**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T01:56:10.513855+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=79933.3
-- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 79.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-06T02:01:11.849014+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=79952.6
+- Funnel: target 1050 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +43.56% | $103,846,537.41 |
-| UAI/USDT:USDT | +28.55% | $7,199,769.17 |
-| SUSHI/USDT:USDT | +25.44% | $4,070,153.42 |
-| BASECAT/USDT:USDT | +20.96% | $2,049,864.37 |
-| UNI/USDT:USDT | +16.31% | $57,049,073.11 |
+| ARB/USDT:USDT | +45.69% | $104,032,473.06 |
+| UAI/USDT:USDT | +29.47% | $7,098,931.65 |
+| SUSHI/USDT:USDT | +27.10% | $4,090,427.88 |
+| BASECAT/USDT:USDT | +23.88% | $2,004,848.26 |
+| UNI/USDT:USDT | +16.30% | $54,987,204.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.39% | +4.26% |
-| FLOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.70% |
-| AR/USDT:USDT | below_1h_threshold | +3.67% | +3.54% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.65% | +3.52% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.21% | +3.08% |
+| SUSHI/USDT:USDT | below_1h_threshold | +0.67% | +0.63% |
+| BCH/USDT:USDT | below_1h_threshold | +0.51% | +0.46% |
+| ARB/USDT:USDT | below_1h_threshold | +0.48% | +0.43% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.45% | +0.41% |
+| LINK/USDT:USDT | below_1h_threshold | +0.42% | +0.37% |
 
 ## 7. 次に見るべき不足
 
