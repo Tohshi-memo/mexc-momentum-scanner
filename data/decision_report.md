@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T10:01:14.450676+00:00
+- generated_at: 2026-09-06T10:06:15.445787+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13809**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T10:01:04.601609+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79871.8
+- 更新: 2026-09-06T10:06:08.143964+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=79900.0
 - Funnel: target 1054 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +46.04% | $159,829,805.26 |
-| RAY/USDT:USDT | +38.22% | $3,643,316.33 |
-| FLOCK/USDT:USDT | +36.17% | $1,635,978.81 |
-| GRT/USDT:USDT | +17.31% | $1,852,778.07 |
-| ZEC/USDT:USDT | +16.66% | $277,038,943.26 |
+| ARB/USDT:USDT | +46.15% | $160,015,234.21 |
+| RAY/USDT:USDT | +37.41% | $3,668,575.91 |
+| FLOCK/USDT:USDT | +36.05% | $1,642,817.23 |
+| ZEC/USDT:USDT | +16.90% | $277,843,303.44 |
+| GRT/USDT:USDT | +16.34% | $1,859,491.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.56% |
-| BASECAT/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.54% | +0.51% |
-| FET/USDT:USDT | below_1h_threshold | +0.48% | +0.45% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
+| BASECAT/USDT:USDT | below_1h_threshold | +1.36% | +1.30% |
+| FET/USDT:USDT | below_1h_threshold | +1.25% | +1.19% |
+| BTW/USDT:USDT | below_1h_threshold | +1.03% | +0.97% |
+| UAI/USDT:USDT | below_1h_threshold | +0.99% | +0.93% |
+| JTO/USDT:USDT | below_1h_threshold | +0.75% | +0.69% |
 
 ## 7. 次に見るべき不足
 
