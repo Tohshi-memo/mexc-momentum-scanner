@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T15:36:30.282009+00:00
+- generated_at: 2026-09-06T15:41:27.188482+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13821**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T15:36:17.144239+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=79581.5
-- Funnel: target 1059 → liquid 127 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.1 >= 65=1
+- 更新: 2026-09-06T15:41:15.027986+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=79667.5
+- Funnel: target 1059 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAY/USDT:USDT | +58.60% | $9,835,342.18 |
-| FONE/USDT:USDT | +40.50% | $1,094,414.29 |
-| ARB/USDT:USDT | +40.14% | $191,068,616.23 |
-| NAORIS/USDT:USDT | +27.89% | $1,103,395.87 |
-| FLOCK/USDT:USDT | +27.11% | $2,595,925.97 |
+| RAY/USDT:USDT | +57.12% | $9,924,564.07 |
+| FONE/USDT:USDT | +43.78% | $1,098,684.70 |
+| ARB/USDT:USDT | +40.89% | $191,331,992.96 |
+| FLOCK/USDT:USDT | +27.34% | $2,599,106.93 |
+| XAN/USDT:USDT | +26.06% | $1,073,083.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SUSHI/USDT:USDT | below_1h_threshold | +1.46% | +1.37% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
-| UAI/USDT:USDT | below_1h_threshold | +1.10% | +1.01% |
-| LINEA/USDT:USDT | below_1h_threshold | +0.99% | +0.89% |
+| NAORIS/USDT:USDT | below_1h_threshold | +4.04% | +3.84% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.23% | +2.03% |
+| ZRO/USDT:USDT | below_1h_threshold | +2.00% | +1.80% |
+| SUSHI/USDT:USDT | below_1h_threshold | +1.59% | +1.38% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.42% | +1.22% |
 
 ## 7. 次に見るべき不足
 
