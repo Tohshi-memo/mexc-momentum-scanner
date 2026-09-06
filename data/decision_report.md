@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T01:31:25.776570+00:00
+- generated_at: 2026-09-06T01:36:15.002161+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13787**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.90** / 初期 $100.00 (+19.90%)
-- 確定: 2404件 (Win 715 / Loss 912 / Flat 777) / pending 6件 / skip 2850件
+- 確定: 2404件 (Win 715 / Loss 912 / Flat 777) / pending 6件 / skip 2851件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000287 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UAI/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $119.90
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T01:31:15.806991+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=79885.1
-- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.6 >= 65=1
+- 更新: 2026-09-06T01:36:07.361291+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=79934.7
+- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 71.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +44.28% | $97,834,956.93 |
-| UAI/USDT:USDT | +25.78% | $6,999,871.17 |
-| BASECAT/USDT:USDT | +23.36% | $2,013,132.17 |
-| SUSHI/USDT:USDT | +19.97% | $3,993,241.82 |
-| MAGMA/USDT:USDT | +17.50% | $2,471,409.99 |
+| ARB/USDT:USDT | +43.98% | $99,073,376.90 |
+| UAI/USDT:USDT | +24.62% | $7,036,328.44 |
+| SUSHI/USDT:USDT | +21.38% | $3,995,266.74 |
+| BASECAT/USDT:USDT | +20.50% | $2,018,091.73 |
+| MAGMA/USDT:USDT | +16.55% | $2,486,028.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.91% | +4.84% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.05% | +3.99% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.28% | +3.22% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.68% | +2.61% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.47% | +2.40% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.47% | +4.34% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.51% | +3.38% |
+| ENA/USDT:USDT | below_1h_threshold | +2.93% | +2.81% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.25% | +2.12% |
+| LIT/USDT:USDT | below_1h_threshold | +2.09% | +1.97% |
 
 ## 7. 次に見るべき不足
 
