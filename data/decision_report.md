@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T08:26:14.793440+00:00
+- generated_at: 2026-09-06T08:31:21.256391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13805**
 
@@ -63,17 +63,17 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.11** / 初期 $100.00 (+20.11%)
-- 確定: 2418件 (Win 721 / Loss 919 / Flat 778) / pending 3件 / skip 2855件
+- 確定: 2418件 (Win 721 / Loss 919 / Flat 778) / pending 4件 / skip 2855件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000207 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MAGMA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $120.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T08:26:06.677134+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79774.6
-- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T08:31:10.671469+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79760.1
+- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +48.57% | $151,505,551.19 |
-| RAY/USDT:USDT | +33.39% | $3,220,956.83 |
-| FLOCK/USDT:USDT | +30.05% | $1,262,982.44 |
-| UAI/USDT:USDT | +20.01% | $12,834,544.10 |
-| BASECAT/USDT:USDT | +18.84% | $2,288,867.79 |
+| ARB/USDT:USDT | +48.38% | $152,167,902.77 |
+| RAY/USDT:USDT | +31.79% | $3,230,766.76 |
+| FLOCK/USDT:USDT | +30.03% | $1,270,950.87 |
+| UAI/USDT:USDT | +20.70% | $12,870,029.31 |
+| BASECAT/USDT:USDT | +18.46% | $2,291,065.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +4.70% | +4.68% |
-| GRT/USDT:USDT | below_1h_threshold | +3.18% | +3.17% |
-| FLOCK/USDT:USDT | below_1h_threshold | +1.96% | +1.94% |
-| RAY/USDT:USDT | below_1h_threshold | +1.15% | +1.13% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.66% | +0.65% |
+| GRT/USDT:USDT | below_1h_threshold | +2.72% | +2.73% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.94% | +1.95% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
+| DOT/USDT:USDT | below_1h_threshold | +0.70% | +0.71% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.59% | +0.59% |
 
 ## 7. 次に見るべき不足
 
