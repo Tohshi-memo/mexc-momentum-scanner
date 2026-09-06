@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T12:21:17.630238+00:00
+- generated_at: 2026-09-06T12:26:17.011098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13810**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T12:21:07.662372+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=79916.9
-- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-06T12:26:07.258987+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=79954.5
+- Funnel: target 1054 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +47.83% | $170,465,270.05 |
-| FLOCK/USDT:USDT | +40.13% | $1,974,849.55 |
-| FONE/USDT:USDT | +38.86% | $1,020,746.99 |
-| RAY/USDT:USDT | +37.30% | $4,361,530.27 |
-| JUP/USDT:USDT | +22.05% | $8,117,022.90 |
+| ARB/USDT:USDT | +46.04% | $171,017,530.93 |
+| FLOCK/USDT:USDT | +42.22% | $1,987,486.91 |
+| RAY/USDT:USDT | +40.25% | $4,375,575.35 |
+| FONE/USDT:USDT | +36.96% | $1,023,664.83 |
+| SUSHI/USDT:USDT | +19.12% | $4,954,984.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +2.27% | +2.22% |
-| TAO/USDT:USDT | below_1h_threshold | +1.87% | +1.83% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.76% | +1.71% |
-| LDO/USDT:USDT | below_1h_threshold | +1.38% | +1.33% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +1.19% | +1.15% |
+| BASECAT/USDT:USDT | below_1h_threshold | +2.64% | +2.54% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.06% | +1.96% |
+| RAY/USDT:USDT | below_1h_threshold | +1.87% | +1.78% |
+| LDO/USDT:USDT | below_1h_threshold | +1.65% | +1.56% |
+| TAO/USDT:USDT | below_1h_threshold | +1.11% | +1.02% |
 
 ## 7. 次に見るべき不足
 
