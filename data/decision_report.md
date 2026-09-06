@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T03:21:12.346683+00:00
+- generated_at: 2026-09-06T03:26:17.484028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13791**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T03:21:04.976972+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=79925.7
+- 更新: 2026-09-06T03:26:07.710937+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79900.1
 - Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +44.12% | $113,970,175.59 |
-| UAI/USDT:USDT | +41.97% | $8,933,718.29 |
-| FLOCK/USDT:USDT | +28.83% | $1,094,373.22 |
-| BASECAT/USDT:USDT | +26.73% | $2,076,648.41 |
-| SUSHI/USDT:USDT | +21.48% | $4,272,783.23 |
+| ARB/USDT:USDT | +43.61% | $114,372,379.15 |
+| UAI/USDT:USDT | +43.54% | $9,090,196.63 |
+| FLOCK/USDT:USDT | +27.22% | $1,098,218.83 |
+| BASECAT/USDT:USDT | +21.32% | $2,089,884.29 |
+| SUSHI/USDT:USDT | +20.49% | $4,277,215.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BASECAT/USDT:USDT | below_1h_threshold | +3.76% | +3.69% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.71% | +1.64% |
-| JUP/USDT:USDT | below_1h_threshold | +1.68% | +1.61% |
-| JTO/USDT:USDT | below_1h_threshold | +1.55% | +1.49% |
-| SUSHI/USDT:USDT | below_1h_threshold | +1.34% | +1.27% |
+| JUP/USDT:USDT | below_1h_threshold | +2.91% | +2.87% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.92% | +1.88% |
+| JTO/USDT:USDT | below_1h_threshold | +1.79% | +1.76% |
+| CATI/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.26% | +1.23% |
 
 ## 7. 次に見るべき不足
 
