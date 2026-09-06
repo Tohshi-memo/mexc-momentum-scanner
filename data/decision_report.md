@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T15:21:19.023123+00:00
+- generated_at: 2026-09-06T15:26:16.135838+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13821**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T15:21:09.173665+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=79589.6
-- Funnel: target 1056 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-06T15:26:08.250115+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=79609.8
+- Funnel: target 1059 → liquid 127 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAY/USDT:USDT | +60.52% | $9,582,338.80 |
-| ARB/USDT:USDT | +39.76% | $189,730,153.06 |
-| FONE/USDT:USDT | +29.36% | $1,073,359.79 |
-| FLOCK/USDT:USDT | +25.68% | $2,567,172.98 |
-| NAORIS/USDT:USDT | +25.49% | $1,041,894.17 |
+| RAY/USDT:USDT | +60.89% | $9,640,054.33 |
+| ARB/USDT:USDT | +41.28% | $190,356,030.88 |
+| FONE/USDT:USDT | +34.02% | $1,077,306.55 |
+| FLOCK/USDT:USDT | +25.40% | $2,572,391.63 |
+| NAORIS/USDT:USDT | +23.81% | $1,067,282.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +2.99% | +2.89% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.17% | +1.07% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.07% | +0.97% |
-| SUSHI/USDT:USDT | below_1h_threshold | +1.06% | +0.95% |
-| UAI/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
+| FONE/USDT:USDT | below_1h_threshold | +3.33% | +3.20% |
+| NAORIS/USDT:USDT | below_1h_threshold | +2.65% | +2.52% |
+| SUSHI/USDT:USDT | below_1h_threshold | +2.15% | +2.03% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.47% | +1.34% |
 
 ## 7. 次に見るべき不足
 
