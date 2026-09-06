@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T00:56:25.728675+00:00
+- generated_at: 2026-09-06T01:01:14.502253+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13786**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T00:56:14.758779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=79875.8
-- Funnel: target 1050 → liquid 125 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.5 >= 65=1, 4h RSI 87.5 >= 65=1, 4h RSI 76.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-06T01:01:04.678761+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=79889.9
+- Funnel: target 1050 → liquid 121 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +45.72% | $92,091,364.18 |
-| MAGMA/USDT:USDT | +20.18% | $2,507,217.62 |
-| BASECAT/USDT:USDT | +19.36% | $2,019,036.76 |
-| SUSHI/USDT:USDT | +19.02% | $3,912,720.94 |
-| UAI/USDT:USDT | +15.52% | $6,969,010.57 |
+| ARB/USDT:USDT | +45.43% | $92,096,598.98 |
+| BASECAT/USDT:USDT | +21.42% | $1,940,684.72 |
+| MAGMA/USDT:USDT | +20.24% | $2,422,423.87 |
+| SUSHI/USDT:USDT | +18.98% | $3,920,165.64 |
+| UAI/USDT:USDT | +15.35% | $6,622,804.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ENA/USDT:USDT | below_1h_threshold | +4.91% | +4.81% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.89% | +3.80% |
-| AAVE/USDT:USDT | below_1h_threshold | +3.33% | +3.24% |
-| STRK/USDT:USDT | below_1h_threshold | +2.46% | +2.36% |
-| APT/USDT:USDT | below_1h_threshold | +2.13% | +2.04% |
+| BASECAT/USDT:USDT | below_1h_threshold | +1.65% | +1.58% |
+| 4/USDT:USDT | below_1h_threshold | +0.63% | +0.55% |
+| STRK/USDT:USDT | below_1h_threshold | +0.52% | +0.45% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.38% | +0.31% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.33% | +0.26% |
 
 ## 7. 次に見るべき不足
 
