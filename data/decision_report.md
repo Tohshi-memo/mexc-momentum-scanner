@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T21:51:14.870675+00:00
+- generated_at: 2026-09-06T21:56:23.662178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13842**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.64** / 初期 $100.00 (+18.64%)
-- 確定: 2437件 (Win 724 / Loss 931 / Flat 782) / pending 6件 / skip 2873件
+- 確定: 2437件 (Win 724 / Loss 931 / Flat 782) / pending 6件 / skip 2874件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000088 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BASECAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T21:51:06.212429+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79886.9
-- Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T21:56:11.763780+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=79880.0
+- Funnel: target 1059 → liquid 127 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +150.82% | $2,407,551.49 |
-| XAN/USDT:USDT | +10.24% | $1,268,063.42 |
-| TIA/USDT:USDT | +9.21% | $10,680,283.03 |
-| TAO/USDT:USDT | +7.85% | $72,351,307.22 |
-| ZEC/USDT:USDT | +6.87% | $447,215,312.66 |
+| BONER/USDT:USDT | +163.77% | $2,461,682.71 |
+| XAN/USDT:USDT | +10.91% | $1,270,203.35 |
+| TIA/USDT:USDT | +10.07% | $10,719,222.88 |
+| TAO/USDT:USDT | +7.53% | $72,701,655.53 |
+| 4/USDT:USDT | +6.73% | $8,060,031.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +4.00% | +3.98% |
-| TIA/USDT:USDT | below_1h_threshold | +3.49% | +3.47% |
-| KAS/USDT:USDT | below_1h_threshold | +3.07% | +3.05% |
-| JTO/USDT:USDT | below_1h_threshold | +2.96% | +2.95% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +2.64% | +2.62% |
+| XAN/USDT:USDT | below_1h_threshold | +4.64% | +4.63% |
+| TIA/USDT:USDT | below_1h_threshold | +4.26% | +4.25% |
+| JTO/USDT:USDT | below_1h_threshold | +3.38% | +3.37% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.06% | +3.05% |
+| KAS/USDT:USDT | below_1h_threshold | +2.94% | +2.93% |
 
 ## 7. 次に見るべき不足
 
