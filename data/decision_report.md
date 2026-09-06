@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T21:11:15.447638+00:00
+- generated_at: 2026-09-06T21:16:16.737467+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13840**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.64** / 初期 $100.00 (+18.64%)
-- 確定: 2437件 (Win 724 / Loss 931 / Flat 782) / pending 6件 / skip 2871件
+- 確定: 2437件 (Win 724 / Loss 931 / Flat 782) / pending 6件 / skip 2872件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000088 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BASECAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T21:11:05.535705+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=79963.3
-- Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T21:16:06.825673+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=79962.1
+- Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +141.42% | $1,803,934.31 |
-| LINK/USDT:USDT | +8.30% | $32,737,958.77 |
-| TIA/USDT:USDT | +7.83% | $9,376,624.13 |
-| TAO/USDT:USDT | +7.53% | $69,356,632.33 |
-| MAGMA/USDT:USDT | +7.00% | $2,101,307.38 |
+| BONER/USDT:USDT | +163.33% | $1,897,569.08 |
+| FLOCK/USDT:USDT | +8.78% | $2,573,993.10 |
+| TAO/USDT:USDT | +7.99% | $69,764,107.73 |
+| TIA/USDT:USDT | +7.75% | $9,760,481.13 |
+| LINK/USDT:USDT | +7.49% | $33,375,684.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_1h_threshold | +1.99% | +1.87% |
-| TIA/USDT:USDT | below_1h_threshold | +1.89% | +1.78% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.29% | +1.18% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.18% | +1.07% |
-| ONDO/USDT:USDT | below_1h_threshold | +1.16% | +1.05% |
+| BONER/USDT:USDT | below_1h_threshold | +4.32% | +4.21% |
+| TIA/USDT:USDT | below_1h_threshold | +1.94% | +1.82% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.51% | +1.40% |
+| ONDO/USDT:USDT | below_1h_threshold | +1.48% | +1.37% |
+| SPX/USDT:USDT | below_1h_threshold | +1.18% | +1.06% |
 
 ## 7. 次に見るべき不足
 
