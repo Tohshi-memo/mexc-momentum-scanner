@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T05:21:25.612205+00:00
+- generated_at: 2026-09-06T05:26:52.447584+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13798**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.02** / 初期 $100.00 (+20.02%)
-- 確定: 2412件 (Win 719 / Loss 916 / Flat 777) / pending 5件 / skip 2855件
+- 確定: 2412件 (Win 719 / Loss 916 / Flat 777) / pending 6件 / skip 2855件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000198 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZEC/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $120.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T05:21:15.571808+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=79766.6
-- Funnel: target 1054 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.7 >= 65=1
+- 更新: 2026-09-06T05:26:41.630012+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=79827.6
+- Funnel: target 1054 → liquid 124 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.7 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +44.36% | $131,046,314.15 |
-| RAY/USDT:USDT | +39.30% | $2,084,457.57 |
-| UAI/USDT:USDT | +27.60% | $11,033,407.95 |
-| FLOCK/USDT:USDT | +26.97% | $1,093,945.35 |
-| BASECAT/USDT:USDT | +19.23% | $2,190,110.79 |
+| ARB/USDT:USDT | +44.87% | $131,376,643.53 |
+| RAY/USDT:USDT | +36.56% | $2,136,151.15 |
+| FLOCK/USDT:USDT | +28.51% | $1,098,694.78 |
+| UAI/USDT:USDT | +27.43% | $11,089,815.65 |
+| BASECAT/USDT:USDT | +19.93% | $2,194,320.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEN/USDT:USDT | below_1h_threshold | +4.29% | +4.36% |
-| DASH/USDT:USDT | below_1h_threshold | +1.90% | +1.97% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.74% | +1.82% |
-| JTO/USDT:USDT | below_1h_threshold | +1.46% | +1.53% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.29% | +1.36% |
+| DASH/USDT:USDT | below_1h_threshold | +3.07% | +3.06% |
+| FLOCK/USDT:USDT | below_1h_threshold | +2.35% | +2.34% |
+| JTO/USDT:USDT | below_1h_threshold | +1.52% | +1.52% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.19% | +1.19% |
+| SUSHI/USDT:USDT | below_1h_threshold | +1.19% | +1.18% |
 
 ## 7. 次に見るべき不足
 
