@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T09:56:23.604505+00:00
+- generated_at: 2026-09-06T10:01:14.450676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13809**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T09:56:13.555137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79828.9
-- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-06T10:01:04.601609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=79871.8
+- Funnel: target 1054 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +46.66% | $161,193,068.45 |
-| RAY/USDT:USDT | +38.39% | $3,618,823.08 |
-| FLOCK/USDT:USDT | +37.13% | $1,648,748.83 |
-| GRT/USDT:USDT | +16.85% | $1,842,631.75 |
-| ZEC/USDT:USDT | +16.59% | $281,795,756.75 |
+| ARB/USDT:USDT | +46.04% | $159,829,805.26 |
+| RAY/USDT:USDT | +38.22% | $3,643,316.33 |
+| FLOCK/USDT:USDT | +36.17% | $1,635,978.81 |
+| GRT/USDT:USDT | +17.31% | $1,852,778.07 |
+| ZEC/USDT:USDT | +16.66% | $277,038,943.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.84% | +3.81% |
-| JUP/USDT:USDT | below_1h_threshold | +3.15% | +3.12% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.54% | +2.52% |
-| SUSHI/USDT:USDT | below_1h_threshold | +2.31% | +2.28% |
-| UNI/USDT:USDT | below_1h_threshold | +1.45% | +1.43% |
+| FLOCK/USDT:USDT | below_1h_threshold | +0.59% | +0.56% |
+| BASECAT/USDT:USDT | below_1h_threshold | +0.57% | +0.55% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.54% | +0.51% |
+| FET/USDT:USDT | below_1h_threshold | +0.48% | +0.45% |
+| CHIP/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
 
 ## 7. 次に見るべき不足
 
