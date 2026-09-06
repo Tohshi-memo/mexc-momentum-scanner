@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T09:36:16.343721+00:00
+- generated_at: 2026-09-06T09:41:21.454587+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13808**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.69** / 初期 $100.00 (+19.69%)
-- 確定: 2420件 (Win 721 / Loss 921 / Flat 778) / pending 3件 / skip 2855件
+- 確定: 2420件 (Win 721 / Loss 921 / Flat 778) / pending 4件 / skip 2855件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000190 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T09:36:06.628298+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=79932.2
-- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-06T09:41:11.369367+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=79857.5
+- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +45.99% | $159,640,935.58 |
-| RAY/USDT:USDT | +37.44% | $3,505,437.13 |
-| FLOCK/USDT:USDT | +37.36% | $1,606,534.97 |
-| ZEC/USDT:USDT | +16.52% | $274,472,523.19 |
-| GRT/USDT:USDT | +16.22% | $1,797,745.83 |
+| ARB/USDT:USDT | +45.93% | $160,165,585.15 |
+| RAY/USDT:USDT | +38.88% | $3,525,867.68 |
+| FLOCK/USDT:USDT | +36.95% | $1,616,041.97 |
+| ZEC/USDT:USDT | +17.38% | $276,662,969.32 |
+| GRT/USDT:USDT | +17.02% | $1,823,462.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +4.74% | +4.58% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +3.22% | +3.07% |
-| JUP/USDT:USDT | below_1h_threshold | +2.90% | +2.75% |
-| SUSHI/USDT:USDT | below_1h_threshold | +2.10% | +1.94% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.64% | +1.48% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +2.95% | +2.89% |
+| JUP/USDT:USDT | below_1h_threshold | +2.66% | +2.60% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.85% | +1.79% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.63% | +1.57% |
+| SUSHI/USDT:USDT | below_1h_threshold | +1.34% | +1.28% |
 
 ## 7. 次に見るべき不足
 
