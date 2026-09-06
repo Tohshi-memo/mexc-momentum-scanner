@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T02:11:16.666190+00:00
+- generated_at: 2026-09-06T02:16:20.836040+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13787**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T02:11:08.991032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=79930.1
-- Funnel: target 1050 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-06T02:16:10.810443+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=79948.7
+- Funnel: target 1050 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +48.04% | $105,909,360.76 |
-| UAI/USDT:USDT | +29.45% | $7,176,891.45 |
-| SUSHI/USDT:USDT | +27.38% | $4,130,869.91 |
-| BASECAT/USDT:USDT | +22.46% | $2,015,866.81 |
-| MAGMA/USDT:USDT | +18.44% | $2,504,444.66 |
+| ARB/USDT:USDT | +46.82% | $106,843,180.51 |
+| UAI/USDT:USDT | +30.12% | $7,199,156.49 |
+| BASECAT/USDT:USDT | +24.34% | $2,023,755.55 |
+| SUSHI/USDT:USDT | +23.98% | $4,152,922.66 |
+| MAGMA/USDT:USDT | +18.68% | $2,507,000.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +2.67% | +2.65% |
-| 4/USDT:USDT | below_1h_threshold | +2.00% | +1.98% |
-| ARB/USDT:USDT | below_1h_threshold | +1.99% | +1.97% |
-| MONAD/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
-| SUI/USDT:USDT | below_1h_threshold | +1.13% | +1.12% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.95% | +2.91% |
+| ARB/USDT:USDT | below_1h_threshold | +0.97% | +0.92% |
+| NEAR/USDT:USDT | below_1h_threshold | +0.82% | +0.77% |
+| MONAD/USDT:USDT | below_1h_threshold | +0.78% | +0.74% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.74% | +0.70% |
 
 ## 7. 次に見るべき不足
 
