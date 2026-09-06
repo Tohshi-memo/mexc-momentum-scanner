@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T22:46:21.743765+00:00
+- generated_at: 2026-09-06T22:51:22.280301+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13846**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T22:46:12.066942+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=79942.4
+- 更新: 2026-09-06T22:51:12.554093+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=79969.9
 - Funnel: target 1059 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.8 >= 65=1
+- Strict後reject: 4h RSI 67.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +198.08% | $2,908,056.08 |
-| XAN/USDT:USDT | +11.24% | $1,392,746.02 |
-| TIA/USDT:USDT | +11.13% | $11,393,123.02 |
-| LINK/USDT:USDT | +6.27% | $37,975,267.85 |
-| STRK/USDT:USDT | +5.90% | $1,783,726.42 |
+| BONER/USDT:USDT | +194.39% | $2,965,667.34 |
+| TIA/USDT:USDT | +10.88% | $11,583,401.49 |
+| XAN/USDT:USDT | +10.20% | $1,417,299.35 |
+| LINK/USDT:USDT | +6.38% | $38,365,524.44 |
+| STRK/USDT:USDT | +6.27% | $1,785,041.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NAORIS/USDT:USDT | below_1h_threshold | +3.18% | +3.13% |
-| STRK/USDT:USDT | below_1h_threshold | +3.00% | +2.95% |
-| TIA/USDT:USDT | below_1h_threshold | +1.13% | +1.08% |
-| UAI/USDT:USDT | below_1h_threshold | +1.05% | +1.00% |
-| LINK/USDT:USDT | below_1h_threshold | +0.87% | +0.82% |
+| NAORIS/USDT:USDT | below_1h_threshold | +3.54% | +3.46% |
+| STRK/USDT:USDT | below_1h_threshold | +3.32% | +3.24% |
+| UAI/USDT:USDT | below_1h_threshold | +1.26% | +1.18% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.15% | +1.07% |
+| LINK/USDT:USDT | below_1h_threshold | +0.94% | +0.86% |
 
 ## 7. 次に見るべき不足
 
