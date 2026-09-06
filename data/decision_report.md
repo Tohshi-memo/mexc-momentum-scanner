@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T09:41:21.454587+00:00
+- generated_at: 2026-09-06T09:46:17.833429+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13808**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T09:41:11.369367+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=79857.5
-- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-06T09:46:07.963965+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=79827.1
+- Funnel: target 1054 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +45.93% | $160,165,585.15 |
-| RAY/USDT:USDT | +38.88% | $3,525,867.68 |
-| FLOCK/USDT:USDT | +36.95% | $1,616,041.97 |
-| ZEC/USDT:USDT | +17.38% | $276,662,969.32 |
-| GRT/USDT:USDT | +17.02% | $1,823,462.98 |
+| ARB/USDT:USDT | +46.75% | $160,565,955.90 |
+| FLOCK/USDT:USDT | +38.28% | $1,624,118.19 |
+| RAY/USDT:USDT | +37.80% | $3,568,837.16 |
+| GRT/USDT:USDT | +17.77% | $1,825,052.48 |
+| ZEC/USDT:USDT | +16.74% | $278,985,121.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 1000BONK/USDT:USDT | below_1h_threshold | +2.95% | +2.89% |
-| JUP/USDT:USDT | below_1h_threshold | +2.66% | +2.60% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.85% | +1.79% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.63% | +1.57% |
-| SUSHI/USDT:USDT | below_1h_threshold | +1.34% | +1.28% |
+| RAY/USDT:USDT | below_1h_threshold | +4.97% | +4.95% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +3.25% | +3.23% |
+| JUP/USDT:USDT | below_1h_threshold | +2.82% | +2.80% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.33% | +2.30% |
+| SUSHI/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
 
 ## 7. 次に見るべき不足
 
