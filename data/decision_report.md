@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T17:01:18.127527+00:00
+- generated_at: 2026-09-06T17:06:25.894618+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13826**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T17:01:06.511448+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79633.2
+- 更新: 2026-09-06T17:06:15.927685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=79608.2
 - Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| 4/USDT:USDT | +5.89% | $12,316,868.73 |
-| USELESS/USDT:USDT | +4.79% | $15,356,796.29 |
-| ROSE/USDT:USDT | +4.30% | $1,009,284.68 |
-| UAI/USDT:USDT | +3.75% | $15,496,223.25 |
-| UNI/USDT:USDT | +3.57% | $55,517,257.88 |
+| 4/USDT:USDT | +6.68% | $12,337,082.84 |
+| UAI/USDT:USDT | +4.28% | $15,550,240.03 |
+| ROSE/USDT:USDT | +4.19% | $1,022,855.48 |
+| COTI/USDT:USDT | +4.08% | $1,935,448.35 |
+| UNI/USDT:USDT | +3.55% | $55,780,444.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.11% | +1.13% |
-| SUSHI/USDT:USDT | below_1h_threshold | +0.39% | +0.41% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.28% | +0.30% |
-| HEMI/USDT:USDT | below_1h_threshold | +0.23% | +0.25% |
-| CRV/USDT:USDT | below_1h_threshold | +0.11% | +0.13% |
+| BASECAT/USDT:USDT | below_1h_threshold | +4.52% | +4.58% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
+| COTI/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
+| 4/USDT:USDT | below_1h_threshold | +0.39% | +0.45% |
+| XAN/USDT:USDT | below_1h_threshold | +0.32% | +0.37% |
 
 ## 7. 次に見るべき不足
 
