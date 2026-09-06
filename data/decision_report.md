@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T23:36:12.926530+00:00
+- generated_at: 2026-09-06T23:41:15.151861+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13850**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T23:36:01.552286+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=80178.8
+- 更新: 2026-09-06T23:41:05.358767+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=80334.2
 - Funnel: target 1059 → liquid 129 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +173.29% | $3,340,654.31 |
-| TIA/USDT:USDT | +11.56% | $12,164,610.90 |
-| XAN/USDT:USDT | +9.52% | $1,412,812.04 |
-| LINK/USDT:USDT | +8.24% | $40,931,810.49 |
-| STRK/USDT:USDT | +6.57% | $1,687,428.96 |
+| BONER/USDT:USDT | +161.08% | $3,398,739.98 |
+| TIA/USDT:USDT | +11.64% | $12,380,715.53 |
+| XAN/USDT:USDT | +9.91% | $1,414,564.50 |
+| LINK/USDT:USDT | +7.90% | $41,177,642.14 |
+| TAO/USDT:USDT | +6.66% | $74,605,104.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +3.25% | +3.03% |
-| FLOCK/USDT:USDT | below_1h_threshold | +2.25% | +2.04% |
-| PYTH/USDT:USDT | below_1h_threshold | +1.70% | +1.48% |
-| TAO/USDT:USDT | below_1h_threshold | +1.62% | +1.40% |
-| LINK/USDT:USDT | below_1h_threshold | +1.40% | +1.18% |
+| INJ/USDT:USDT | below_1h_threshold | +2.50% | +2.09% |
+| JUP/USDT:USDT | below_1h_threshold | +2.36% | +1.95% |
+| FLOCK/USDT:USDT | below_1h_threshold | +2.21% | +1.80% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.72% | +1.31% |
+| PYTH/USDT:USDT | below_1h_threshold | +1.72% | +1.31% |
 
 ## 7. 次に見るべき不足
 
