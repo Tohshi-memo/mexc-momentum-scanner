@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-06T21:26:19.998407+00:00
+- generated_at: 2026-09-06T21:31:23.192420+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13840**
+- closed shadow trades: **13841**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13840, expectancy=-0.01%
+- 全期間 MARKET基準: n=13841, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.90%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -32,10 +32,10 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET_LONG | 20/20 | 100.0% | +1.30% | **+1.30%** |
+| LIMIT_10PCT_LONG | 5/20 | 25.0% | +2.04% | **+0.51%** |
+| LIMIT_9PCT_LONG | 6/20 | 30.0% | +1.70% | **+0.51%** |
 | LIMIT_1PCT_LONG | 15/20 | 75.0% | +0.60% | **+0.45%** |
-| LIMIT_10PCT_LONG | 5/20 | 25.0% | -0.36% | **-0.09%** |
-| LIMIT_9PCT_LONG | 6/20 | 30.0% | -0.30% | **-0.09%** |
-| LIMIT_8PCT_LONG | 8/20 | 40.0% | -0.50% | **-0.20%** |
+| LIMIT_8PCT_LONG | 8/20 | 40.0% | -0.00% | **-0.00%** |
 
 ## 2. $100 Live Portfolio
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$837.19** / 初期 $100.00 (+737.19%)
-- 確定: 5127件 (Win 1538 / Loss 1680 / Flat 1909) / skip 5274件
+- 確定: 5127件 (Win 1538 / Loss 1680 / Flat 1909) / skip 5275件
 - 成長率目線: 平均log +0.000414 / 幾何平均 +0.041% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: BULLA/USDT:USDT `LIMIT_ATR_LONG` SL_HIT account -0.50% 残高後 $837.19
@@ -55,9 +55,9 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$188.18** / 初期 $100.00 (+88.18%)
-- 確定: 2570件 (Win 717 / Loss 618 / Flat 1235) / skip 4681件
+- 確定: 2570件 (Win 717 / Loss 618 / Flat 1235) / skip 4682件
 - 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0279 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0322 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BASECAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $188.18
 
 ## 5. Causal Adaptive DryRun ($100)
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T21:26:09.636026+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=79947.9
-- Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-06T21:31:11.521480+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=79859.3
+- Funnel: target 1059 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +179.04% | $2,120,189.73 |
-| TAO/USDT:USDT | +9.06% | $71,306,670.96 |
-| TIA/USDT:USDT | +8.94% | $9,978,238.59 |
-| 4/USDT:USDT | +7.56% | $8,030,104.32 |
-| FLOCK/USDT:USDT | +7.37% | $2,589,539.88 |
+| BONER/USDT:USDT | +160.08% | $2,208,200.65 |
+| TIA/USDT:USDT | +8.51% | $10,052,795.31 |
+| TAO/USDT:USDT | +8.02% | $71,568,289.57 |
+| XAN/USDT:USDT | +7.83% | $1,257,112.17 |
+| 4/USDT:USDT | +7.06% | $8,035,223.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_1h_threshold | +3.92% | +3.83% |
-| BASECAT/USDT:USDT | below_1h_threshold | +3.32% | +3.22% |
-| TIA/USDT:USDT | below_1h_threshold | +3.13% | +3.04% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.12% | +2.03% |
-| JTO/USDT:USDT | below_1h_threshold | +1.79% | +1.69% |
+| BONER/USDT:USDT | below_1h_threshold | +4.04% | +4.06% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.06% | +3.07% |
+| FLOCK/USDT:USDT | below_1h_threshold | +2.94% | +2.96% |
+| TIA/USDT:USDT | below_1h_threshold | +2.73% | +2.74% |
+| JTO/USDT:USDT | below_1h_threshold | +2.70% | +2.72% |
 
 ## 7. 次に見るべき不足
 
