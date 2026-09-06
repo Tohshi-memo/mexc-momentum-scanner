@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-06T14:26:13.826614+00:00
+- generated_at: 2026-09-06T14:31:21.107054+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13819**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-06T14:26:03.783814+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=79620.4
+- 更新: 2026-09-06T14:31:11.054162+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=79607.3
 - Funnel: target 1054 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RAY/USDT:USDT | +55.71% | $8,415,318.54 |
-| ARB/USDT:USDT | +41.65% | $182,933,847.22 |
-| FLOCK/USDT:USDT | +32.01% | $2,495,624.00 |
-| FONE/USDT:USDT | +28.58% | $1,103,550.71 |
-| COTI/USDT:USDT | +25.97% | $1,683,135.18 |
+| RAY/USDT:USDT | +55.77% | $8,549,704.18 |
+| ARB/USDT:USDT | +42.69% | $183,510,276.72 |
+| FLOCK/USDT:USDT | +32.88% | $2,505,326.74 |
+| FONE/USDT:USDT | +31.69% | $1,106,183.85 |
+| COTI/USDT:USDT | +25.63% | $1,717,674.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.52% | +4.74% |
-| FLOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.66% |
-| UAI/USDT:USDT | below_1h_threshold | +1.09% | +1.31% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.97% | +1.19% |
-| SOXL/USDT:USDT | below_1h_threshold | -0.21% | +0.00% |
+| COTI/USDT:USDT | below_1h_threshold | +4.25% | +4.48% |
+| FLOCK/USDT:USDT | below_1h_threshold | +3.12% | +3.35% |
+| UAI/USDT:USDT | below_1h_threshold | +1.11% | +1.34% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.68% | +0.91% |
+| NAORIS/USDT:USDT | below_1h_threshold | -0.16% | +0.08% |
 
 ## 7. 次に見るべき不足
 
