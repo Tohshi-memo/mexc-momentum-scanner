@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T10:36:24.750121+00:00
+- generated_at: 2026-09-07T10:41:58.798908+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13877**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.02** / 初期 $100.00 (+20.02%)
-- 確定: 2469件 (Win 732 / Loss 936 / Flat 801) / pending 5件 / skip 2875件
+- 確定: 2469件 (Win 732 / Loss 936 / Flat 801) / pending 6件 / skip 2875件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000370 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $120.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T10:36:10.575824+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=79378.6
-- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-07T10:41:44.289329+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=79397.0
+- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +280.06% | $3,139,168.82 |
-| BONER/USDT:USDT | +137.95% | $5,710,902.98 |
-| DOOD/USDT:USDT | +26.92% | $1,095,736.74 |
-| AKE/USDT:USDT | +21.33% | $8,907,997.55 |
-| IOST/USDT:USDT | +19.40% | $1,008,756.58 |
+| MEMEROBINHOOD/USDT:USDT | +278.07% | $3,162,544.12 |
+| BONER/USDT:USDT | +139.39% | $5,717,521.34 |
+| DOOD/USDT:USDT | +28.94% | $1,102,245.69 |
+| AKE/USDT:USDT | +22.51% | $9,067,305.06 |
+| IOST/USDT:USDT | +19.28% | $1,029,495.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +3.45% | +3.33% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.58% | +2.46% |
-| UAI/USDT:USDT | below_1h_threshold | +1.61% | +1.48% |
-| DASH/USDT:USDT | below_1h_threshold | +1.56% | +1.44% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +1.51% | +1.39% |
+| EGLD/USDT:USDT | below_1h_threshold | +4.39% | +4.24% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.36% | +3.21% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.17% | +2.02% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.67% | +1.52% |
+| ASTER/USDT:USDT | below_1h_threshold | +1.61% | +1.47% |
 
 ## 7. 次に見るべき不足
 
