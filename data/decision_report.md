@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T16:11:15.838931+00:00
+- generated_at: 2026-09-07T16:16:21.099615+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13888**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.02** / 初期 $100.00 (+20.02%)
-- 確定: 2479件 (Win 732 / Loss 936 / Flat 811) / pending 1件 / skip 2876件
+- 確定: 2479件 (Win 732 / Loss 936 / Flat 811) / pending 2件 / skip 2876件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000235 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: IOST/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $120.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T16:11:05.864547+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=78839.9
-- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-07T16:16:08.518283+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=78845.1
+- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CP/USDT:USDT | +4.92% | $2,477,619.03 |
-| MEMEROBINHOOD/USDT:USDT | +4.19% | $4,961,493.44 |
-| ICP/USDT:USDT | +2.59% | $13,761,280.94 |
-| PIEVERSE/USDT:USDT | +2.05% | $1,484,325.63 |
-| BEAT/USDT:USDT | +1.79% | $3,595,185.18 |
+| MEMEROBINHOOD/USDT:USDT | +11.73% | $4,994,969.45 |
+| PIEVERSE/USDT:USDT | +2.54% | $1,519,524.61 |
+| CP/USDT:USDT | +2.53% | $2,489,664.72 |
+| AVNT/USDT:USDT | +2.41% | $1,084,537.76 |
+| BASECAT/USDT:USDT | +2.38% | $1,117,165.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CP/USDT:USDT | below_1h_threshold | +4.92% | +4.85% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.95% | +3.88% |
-| ICP/USDT:USDT | below_1h_threshold | +2.59% | +2.52% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.13% | +2.06% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +1.65% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.67% | +2.59% |
+| AVNT/USDT:USDT | below_1h_threshold | +2.60% | +2.52% |
+| CP/USDT:USDT | below_1h_threshold | +2.59% | +2.52% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.59% | +2.51% |
+| BCH/USDT:USDT | below_1h_threshold | +2.51% | +2.44% |
 
 ## 7. 次に見るべき不足
 
