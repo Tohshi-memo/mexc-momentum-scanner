@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T21:01:27.974426+00:00
+- generated_at: 2026-09-07T21:06:23.079552+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13908**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T21:01:18.740288+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=79226.9
+- 更新: 2026-09-07T21:06:13.142531+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79199.6
 - Funnel: target 1062 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +14.60% | $1,523,228.55 |
-| IOST/USDT:USDT | +13.81% | $3,028,211.02 |
-| AERO/USDT:USDT | +9.47% | $2,897,508.83 |
-| ACE/USDT:USDT | +8.88% | $1,834,645.44 |
-| LIT/USDT:USDT | +8.76% | $3,784,979.89 |
+| SOPH/USDT:USDT | +15.21% | $1,547,521.21 |
+| IOST/USDT:USDT | +11.38% | $3,086,867.57 |
+| AERO/USDT:USDT | +10.03% | $2,918,529.38 |
+| ACE/USDT:USDT | +10.00% | $1,878,807.51 |
+| INJ/USDT:USDT | +8.74% | $38,190,978.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +1.37% | +1.34% |
-| IOST/USDT:USDT | below_1h_threshold | +0.67% | +0.64% |
-| ARB/USDT:USDT | below_1h_threshold | +0.64% | +0.61% |
-| BONER/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
-| ICP/USDT:USDT | below_1h_threshold | +0.39% | +0.36% |
+| BONER/USDT:USDT | below_1h_threshold | +2.31% | +2.32% |
+| ACE/USDT:USDT | below_1h_threshold | +2.18% | +2.19% |
+| CP/USDT:USDT | below_1h_threshold | +2.05% | +2.06% |
+| HEMI/USDT:USDT | below_1h_threshold | +1.20% | +1.21% |
+| DOOD/USDT:USDT | below_1h_threshold | +1.06% | +1.07% |
 
 ## 7. 次に見るべき不足
 
