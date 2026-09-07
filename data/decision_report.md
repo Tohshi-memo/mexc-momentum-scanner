@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T03:16:22.492964+00:00
+- generated_at: 2026-09-07T03:21:21.936749+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13857**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T03:16:10.773835+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=79768.2
+- 更新: 2026-09-07T03:21:11.917049+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=79788.1
 - Funnel: target 1059 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +176.65% | $4,036,241.21 |
-| UAI/USDT:USDT | +17.74% | $12,785,677.41 |
-| XAN/USDT:USDT | +14.73% | $1,547,548.94 |
-| TAO/USDT:USDT | +9.64% | $83,400,288.50 |
-| TIA/USDT:USDT | +9.54% | $18,046,093.52 |
+| BONER/USDT:USDT | +175.35% | $4,044,679.04 |
+| UAI/USDT:USDT | +17.93% | $12,855,106.67 |
+| XAN/USDT:USDT | +14.52% | $1,557,219.88 |
+| TIA/USDT:USDT | +9.90% | $18,050,114.47 |
+| METIS/USDT:USDT | +8.87% | $1,079,512.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +2.95% | +3.04% |
-| XAN/USDT:USDT | below_1h_threshold | +1.58% | +1.67% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.54% | +0.63% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.52% |
-| JASMY/USDT:USDT | below_1h_threshold | +0.38% | +0.47% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.76% | +2.82% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.48% | +1.54% |
+| XAN/USDT:USDT | below_1h_threshold | +1.39% | +1.46% |
+| BOME/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
+| ENA/USDT:USDT | below_1h_threshold | +0.40% | +0.47% |
 
 ## 7. 次に見るべき不足
 
