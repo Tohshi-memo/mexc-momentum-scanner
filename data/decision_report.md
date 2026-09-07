@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T12:51:25.562547+00:00
+- generated_at: 2026-09-07T12:56:20.253624+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13882**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.02** / 初期 $100.00 (+20.02%)
-- 確定: 2473件 (Win 732 / Loss 936 / Flat 805) / pending 3件 / skip 2876件
+- 確定: 2473件 (Win 732 / Loss 936 / Flat 805) / pending 4件 / skip 2876件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000308 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $120.02
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T12:51:13.650242+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=79509.1
-- Funnel: target 1063 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-07T12:56:10.450811+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=79571.9
+- Funnel: target 1063 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +259.46% | $3,827,815.72 |
-| BONER/USDT:USDT | +125.37% | $6,025,222.93 |
-| DOOD/USDT:USDT | +29.74% | $1,274,394.15 |
-| IOST/USDT:USDT | +23.28% | $1,286,612.10 |
-| AKE/USDT:USDT | +22.08% | $10,415,051.27 |
+| MEMEROBINHOOD/USDT:USDT | +257.47% | $3,840,250.95 |
+| BONER/USDT:USDT | +124.16% | $6,040,670.30 |
+| DOOD/USDT:USDT | +31.12% | $1,286,572.46 |
+| IOST/USDT:USDT | +23.10% | $1,289,729.17 |
+| AKE/USDT:USDT | +21.46% | $10,446,700.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LTC/USDT:USDT | below_1h_threshold | +4.77% | +4.60% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.86% | +3.70% |
-| SUI/USDT:USDT | below_1h_threshold | +3.57% | +3.40% |
-| SEI/USDT:USDT | below_1h_threshold | +3.48% | +3.31% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.13% | +2.96% |
+| 4/USDT:USDT | below_1h_threshold | +4.83% | +4.58% |
+| EIGEN/USDT:USDT | below_1h_threshold | +4.05% | +3.81% |
+| SUI/USDT:USDT | below_1h_threshold | +3.94% | +3.70% |
+| DOT/USDT:USDT | below_1h_threshold | +3.78% | +3.54% |
+| SEI/USDT:USDT | below_1h_threshold | +3.66% | +3.42% |
 
 ## 7. 次に見るべき不足
 
