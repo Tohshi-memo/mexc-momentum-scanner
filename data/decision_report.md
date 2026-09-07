@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T14:46:17.937321+00:00
+- generated_at: 2026-09-07T14:51:17.628526+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13887**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T14:46:08.712446+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=78994.1
+- 更新: 2026-09-07T14:51:07.594496+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=79049.7
 - Funnel: target 1062 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +238.53% | $4,328,973.02 |
-| BONER/USDT:USDT | +115.86% | $6,269,120.45 |
-| PIEVERSE/USDT:USDT | +22.87% | $1,092,358.80 |
-| IOST/USDT:USDT | +22.72% | $1,416,616.14 |
-| DOOD/USDT:USDT | +21.05% | $1,398,116.08 |
+| MEMEROBINHOOD/USDT:USDT | +238.87% | $4,343,739.55 |
+| BONER/USDT:USDT | +109.95% | $6,281,252.93 |
+| PIEVERSE/USDT:USDT | +24.80% | $1,122,463.91 |
+| IOST/USDT:USDT | +23.65% | $1,427,533.89 |
+| DOOD/USDT:USDT | +22.72% | $1,405,013.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +3.65% | +4.05% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.54% | +1.94% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.54% | +1.94% |
-| UAI/USDT:USDT | below_1h_threshold | +1.29% | +1.69% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +0.79% | +1.20% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.00% | +2.33% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.92% | +2.25% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +1.68% | +2.02% |
+| UAI/USDT:USDT | below_1h_threshold | +1.42% | +1.76% |
+| SOLV/USDT:USDT | below_1h_threshold | +1.41% | +1.74% |
 
 ## 7. 次に見るべき不足
 
