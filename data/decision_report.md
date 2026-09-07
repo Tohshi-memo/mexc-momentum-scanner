@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T16:51:27.533549+00:00
+- generated_at: 2026-09-07T16:56:33.977775+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13892**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T16:51:14.751713+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=78947.2
+- 更新: 2026-09-07T16:56:21.051815+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78970.6
 - Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +12.57% | $5,203,449.29 |
-| BONER/USDT:USDT | +6.68% | $6,665,505.52 |
-| UAI/USDT:USDT | +5.05% | $17,329,723.23 |
-| BEAT/USDT:USDT | +4.21% | $3,843,312.17 |
-| ZRO/USDT:USDT | +3.77% | $4,590,246.05 |
+| MEMEROBINHOOD/USDT:USDT | +12.09% | $5,217,763.81 |
+| BONER/USDT:USDT | +7.84% | $6,677,008.98 |
+| UAI/USDT:USDT | +4.90% | $17,424,668.96 |
+| ZRO/USDT:USDT | +3.65% | $4,649,557.62 |
+| BEAT/USDT:USDT | +3.59% | $3,897,521.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_relative_strength | +5.01% | +4.81% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.90% | +3.70% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.65% | +3.44% |
-| STRK/USDT:USDT | below_1h_threshold | +3.14% | +2.93% |
-| GALA/USDT:USDT | below_1h_threshold | +3.00% | +2.80% |
+| UAI/USDT:USDT | below_1h_threshold | +4.89% | +4.66% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.59% | +3.36% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.59% | +3.35% |
+| SOLV/USDT:USDT | below_1h_threshold | +3.45% | +3.22% |
+| BASECAT/USDT:USDT | below_1h_threshold | +3.25% | +3.01% |
 
 ## 7. 次に見るべき不足
 
