@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T21:46:29.743027+00:00
+- generated_at: 2026-09-07T21:51:23.869492+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13912**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T21:46:16.219086+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=79150.0
-- Funnel: target 1062 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.4 >= 65=1
+- 更新: 2026-09-07T21:51:13.670742+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=79150.1
+- Funnel: target 1062 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +16.55% | $6,375,649.30 |
-| MEMEROBINHOOD/USDT:USDT | +16.28% | $5,495,004.61 |
-| AERO/USDT:USDT | +15.82% | $3,342,204.46 |
-| SOPH/USDT:USDT | +13.70% | $1,643,015.49 |
-| IOST/USDT:USDT | +10.31% | $3,233,703.49 |
+| BONER/USDT:USDT | +20.62% | $6,407,248.24 |
+| MEMEROBINHOOD/USDT:USDT | +14.25% | $5,507,584.16 |
+| AERO/USDT:USDT | +14.25% | $3,502,898.65 |
+| SOPH/USDT:USDT | +11.72% | $1,651,202.55 |
+| IOST/USDT:USDT | +10.02% | $3,240,029.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +1.83% | +1.91% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.79% | +1.86% |
-| INJ/USDT:USDT | below_1h_threshold | +1.59% | +1.66% |
-| WLD/USDT:USDT | below_1h_threshold | +1.23% | +1.31% |
-| XAN/USDT:USDT | below_1h_threshold | +1.18% | +1.25% |
+| AERO/USDT:USDT | below_1h_threshold | +4.77% | +4.84% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.14% | +4.22% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.69% | +1.77% |
+| XPL/USDT:USDT | below_1h_threshold | +1.59% | +1.67% |
+| XAN/USDT:USDT | below_1h_threshold | +1.35% | +1.42% |
 
 ## 7. 次に見るべき不足
 
