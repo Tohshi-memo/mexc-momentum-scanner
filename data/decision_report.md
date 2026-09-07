@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T06:46:27.418630+00:00
+- generated_at: 2026-09-07T06:51:13.496799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13863**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T06:46:19.794980+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=79619.7
-- Funnel: target 1059 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-07T06:51:05.697054+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=79627.0
+- Funnel: target 1059 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +185.04% | $1,200,707.27 |
-| BONER/USDT:USDT | +124.75% | $5,037,661.68 |
-| XAN/USDT:USDT | +19.06% | $2,128,215.63 |
-| ORCA/USDT:USDT | +11.62% | $1,140,697.94 |
-| KAS/USDT:USDT | +10.55% | $4,002,781.94 |
+| MEMEROBINHOOD/USDT:USDT | +175.41% | $1,212,029.37 |
+| BONER/USDT:USDT | +127.18% | $5,065,046.70 |
+| XAN/USDT:USDT | +17.42% | $2,144,417.50 |
+| KAS/USDT:USDT | +10.45% | $4,010,235.65 |
+| LINK/USDT:USDT | +9.48% | $58,061,247.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.01% | +3.13% |
-| COTI/USDT:USDT | below_1h_threshold | +2.94% | +3.07% |
-| WLD/USDT:USDT | below_1h_threshold | +1.87% | +1.99% |
-| KAS/USDT:USDT | below_1h_threshold | +1.71% | +1.84% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.25% | +1.37% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.38% | +4.50% |
+| COTI/USDT:USDT | below_1h_threshold | +3.64% | +3.75% |
+| ORCA/USDT:USDT | below_1h_threshold | +2.75% | +2.87% |
+| WLD/USDT:USDT | below_1h_threshold | +1.98% | +2.10% |
+| KAS/USDT:USDT | below_1h_threshold | +1.59% | +1.71% |
 
 ## 7. 次に見るべき不足
 
