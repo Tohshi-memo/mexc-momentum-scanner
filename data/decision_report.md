@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T18:56:19.816887+00:00
+- generated_at: 2026-09-07T19:01:12.755056+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13900**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T18:56:09.079659+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=79182.3
-- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-07T19:01:02.965985+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79154.3
+- Funnel: target 1062 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +19.52% | $5,769,404.29 |
-| BASECAT/USDT:USDT | +10.90% | $1,100,723.32 |
-| IOST/USDT:USDT | +7.26% | $2,139,847.10 |
-| MONAD/USDT:USDT | +7.12% | $1,419,571.62 |
-| AERO/USDT:USDT | +7.08% | $1,409,748.49 |
+| MEMEROBINHOOD/USDT:USDT | +19.52% | $5,759,871.36 |
+| BASECAT/USDT:USDT | +9.93% | $1,075,497.93 |
+| AERO/USDT:USDT | +8.56% | $1,491,365.90 |
+| MONAD/USDT:USDT | +7.20% | $1,388,118.22 |
+| IOST/USDT:USDT | +7.19% | $2,143,999.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +3.78% | +3.75% |
-| INJ/USDT:USDT | below_1h_threshold | +3.34% | +3.31% |
-| MONAD/USDT:USDT | below_1h_threshold | +3.14% | +3.10% |
-| IOST/USDT:USDT | below_1h_threshold | +2.42% | +2.39% |
-| LIT/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
+| BONER/USDT:USDT | below_1h_threshold | +1.53% | +1.53% |
+| AR/USDT:USDT | below_1h_threshold | +0.27% | +0.28% |
+| EWY/USDT:USDT | below_1h_threshold | +0.14% | +0.14% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.08% | +0.09% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.06% | +0.07% |
 
 ## 7. 次に見るべき不足
 
