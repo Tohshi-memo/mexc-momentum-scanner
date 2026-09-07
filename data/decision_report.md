@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T23:11:18.741672+00:00
+- generated_at: 2026-09-07T23:16:19.204170+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13923**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T23:11:05.600096+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=79104.0
-- Funnel: target 1062 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-07T23:16:09.339460+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=79106.2
+- Funnel: target 1062 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +50.17% | $6,162,521.49 |
-| BONER/USDT:USDT | +28.37% | $4,965,964.23 |
-| SOPH/USDT:USDT | +13.13% | $1,749,773.92 |
-| AERO/USDT:USDT | +9.64% | $3,707,405.42 |
-| INJ/USDT:USDT | +8.11% | $43,160,388.50 |
+| MEMEROBINHOOD/USDT:USDT | +51.13% | $6,207,418.84 |
+| BONER/USDT:USDT | +28.48% | $4,977,092.15 |
+| SOPH/USDT:USDT | +13.74% | $1,754,929.81 |
+| AERO/USDT:USDT | +10.62% | $3,736,349.62 |
+| INJ/USDT:USDT | +8.74% | $43,431,292.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +2.01% | +1.77% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.18% | +0.94% |
-| JTO/USDT:USDT | below_1h_threshold | +1.17% | +0.93% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.02% | +0.79% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.02% | +0.79% |
+| WLD/USDT:USDT | below_1h_threshold | +1.47% | +1.23% |
+| JTO/USDT:USDT | below_1h_threshold | +1.42% | +1.18% |
+| INJ/USDT:USDT | below_1h_threshold | +1.39% | +1.14% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +1.37% | +1.12% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.26% | +1.02% |
 
 ## 7. 次に見るべき不足
 
