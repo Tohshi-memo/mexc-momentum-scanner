@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T02:46:28.036295+00:00
+- generated_at: 2026-09-07T02:51:24.481142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13856**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.22** / 初期 $100.00 (+19.22%)
-- 確定: 2450件 (Win 729 / Loss 935 / Flat 786) / pending 3件 / skip 2875件
+- 確定: 2450件 (Win 729 / Loss 935 / Flat 786) / pending 4件 / skip 2875件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000265 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BONER/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $119.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T02:46:14.782823+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.39% price=80200.1
-- Funnel: target 1059 → liquid 131 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.3 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 70.5 >= 65=1
+- 更新: 2026-09-07T02:51:13.714495+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=80214.0
+- Funnel: target 1059 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.2 >= 65=1, 4h RSI 81.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +197.67% | $3,989,473.84 |
-| UAI/USDT:USDT | +15.75% | $13,870,466.73 |
-| XAN/USDT:USDT | +12.24% | $1,561,266.36 |
-| METIS/USDT:USDT | +11.81% | $1,075,485.96 |
-| CRV/USDT:USDT | +11.38% | $5,160,981.39 |
+| BONER/USDT:USDT | +191.55% | $4,012,342.82 |
+| UAI/USDT:USDT | +14.96% | $13,914,722.28 |
+| XAN/USDT:USDT | +12.64% | $1,566,831.36 |
+| TAO/USDT:USDT | +11.26% | $82,225,812.99 |
+| CRV/USDT:USDT | +10.56% | $5,235,747.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAO/USDT:USDT | below_1h_threshold | +4.86% | +4.46% |
-| BOME/USDT:USDT | below_1h_threshold | +3.44% | +3.05% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.22% | +2.83% |
-| WIF/USDT:USDT | below_1h_threshold | +2.66% | +2.27% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.64% | +2.25% |
+| CRV/USDT:USDT | below_1h_threshold | +4.79% | +4.38% |
+| UAI/USDT:USDT | below_1h_threshold | +4.74% | +4.33% |
+| BOME/USDT:USDT | below_1h_threshold | +3.52% | +3.11% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.39% | +2.98% |
+| WLD/USDT:USDT | below_1h_threshold | +3.04% | +2.63% |
 
 ## 7. 次に見るべき不足
 
