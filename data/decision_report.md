@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T19:46:16.540293+00:00
+- generated_at: 2026-09-07T19:51:19.361213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13902**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.01** / 初期 $100.00 (+20.01%)
-- 確定: 2493件 (Win 733 / Loss 938 / Flat 822) / pending 3件 / skip 2876件
+- 確定: 2493件 (Win 733 / Loss 938 / Flat 822) / pending 4件 / skip 2876件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000202 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SOPH/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $120.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T19:46:04.672765+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=79307.3
-- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-07T19:51:10.348169+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=79339.0
+- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +18.20% | $5,838,356.00 |
-| AERO/USDT:USDT | +11.94% | $2,276,326.18 |
-| BONER/USDT:USDT | +10.29% | $6,955,404.73 |
-| INJ/USDT:USDT | +9.06% | $24,231,466.46 |
-| BASECAT/USDT:USDT | +8.59% | $1,106,373.26 |
+| MEMEROBINHOOD/USDT:USDT | +20.95% | $5,852,439.82 |
+| AERO/USDT:USDT | +11.60% | $2,335,864.76 |
+| INJ/USDT:USDT | +9.96% | $25,032,471.79 |
+| BONER/USDT:USDT | +9.30% | $6,959,111.91 |
+| SOPH/USDT:USDT | +8.73% | $1,346,493.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XAN/USDT:USDT | below_1h_threshold | +4.07% | +3.88% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.59% | +3.40% |
-| SOPH/USDT:USDT | below_1h_threshold | +3.58% | +3.39% |
-| AERO/USDT:USDT | below_1h_threshold | +3.14% | +2.96% |
-| INJ/USDT:USDT | below_1h_threshold | +2.90% | +2.71% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.76% | +3.53% |
+| INJ/USDT:USDT | below_1h_threshold | +3.63% | +3.41% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.55% | +3.32% |
+| XAN/USDT:USDT | below_1h_threshold | +3.45% | +3.22% |
+| BR/USDT:USDT | below_1h_threshold | +3.13% | +2.90% |
 
 ## 7. 次に見るべき不足
 
