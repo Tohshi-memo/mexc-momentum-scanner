@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T12:16:21.954212+00:00
+- generated_at: 2026-09-07T12:21:17.405776+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13882**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T12:16:11.659408+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=79384.8
+- 更新: 2026-09-07T12:21:07.502698+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=79445.5
 - Funnel: target 1063 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +252.82% | $3,647,201.54 |
-| BONER/USDT:USDT | +121.98% | $5,902,396.01 |
-| DOOD/USDT:USDT | +29.91% | $1,224,231.14 |
-| IOST/USDT:USDT | +26.90% | $1,227,297.94 |
-| AKE/USDT:USDT | +21.72% | $10,094,210.68 |
+| MEMEROBINHOOD/USDT:USDT | +241.86% | $3,699,782.83 |
+| BONER/USDT:USDT | +119.25% | $5,916,630.17 |
+| DOOD/USDT:USDT | +28.94% | $1,230,277.93 |
+| IOST/USDT:USDT | +26.10% | $1,236,445.60 |
+| AKE/USDT:USDT | +21.04% | $10,160,514.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +2.37% | +2.36% |
-| KAS/USDT:USDT | below_1h_threshold | +2.27% | +2.26% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.61% | +1.60% |
-| INJ/USDT:USDT | below_1h_threshold | +1.35% | +1.34% |
-| METIS/USDT:USDT | below_1h_threshold | +1.32% | +1.31% |
+| KAS/USDT:USDT | below_1h_threshold | +2.33% | +2.25% |
+| CAKE/USDT:USDT | below_1h_threshold | +2.30% | +2.22% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.65% | +1.56% |
+| INJ/USDT:USDT | below_1h_threshold | +1.59% | +1.51% |
+| SUI/USDT:USDT | below_1h_threshold | +1.43% | +1.35% |
 
 ## 7. 次に見るべき不足
 
