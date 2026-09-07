@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T18:46:21.418873+00:00
+- generated_at: 2026-09-07T18:51:29.672603+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13900**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.01** / 初期 $100.00 (+20.01%)
-- 確定: 2491件 (Win 733 / Loss 938 / Flat 820) / pending 3件 / skip 2876件
+- 確定: 2491件 (Win 733 / Loss 938 / Flat 820) / pending 4件 / skip 2876件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000185 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MEMEROBINHOOD/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $120.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T18:46:11.273272+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=79120.4
-- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.9 >= 65=1
+- 更新: 2026-09-07T18:51:19.247909+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=79167.8
+- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +20.83% | $5,739,726.36 |
-| BASECAT/USDT:USDT | +10.10% | $1,097,221.74 |
-| AERO/USDT:USDT | +6.51% | $1,320,744.33 |
-| MONAD/USDT:USDT | +6.16% | $1,264,258.56 |
-| UAI/USDT:USDT | +6.10% | $18,605,889.61 |
+| MEMEROBINHOOD/USDT:USDT | +19.88% | $5,756,160.64 |
+| BASECAT/USDT:USDT | +10.66% | $1,098,739.08 |
+| UAI/USDT:USDT | +6.65% | $18,712,117.01 |
+| IOST/USDT:USDT | +6.63% | $2,125,368.53 |
+| AERO/USDT:USDT | +6.52% | $1,350,839.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +3.31% | +3.36% |
-| INJ/USDT:USDT | below_1h_threshold | +2.86% | +2.90% |
-| MONAD/USDT:USDT | below_1h_threshold | +2.14% | +2.18% |
-| SAND/USDT:USDT | below_1h_threshold | +1.09% | +1.13% |
-| LIT/USDT:USDT | below_1h_threshold | +0.98% | +1.02% |
+| AERO/USDT:USDT | below_1h_threshold | +3.47% | +3.45% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.93% | +2.91% |
+| INJ/USDT:USDT | below_1h_threshold | +2.79% | +2.77% |
+| IOST/USDT:USDT | below_1h_threshold | +1.95% | +1.93% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.22% | +1.20% |
 
 ## 7. 次に見るべき不足
 
