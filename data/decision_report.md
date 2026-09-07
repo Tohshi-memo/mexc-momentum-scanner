@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T06:36:10.868096+00:00
+- generated_at: 2026-09-07T06:41:21.911395+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13863**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.22** / 初期 $100.00 (+19.22%)
-- 確定: 2455件 (Win 729 / Loss 935 / Flat 791) / pending 3件 / skip 2875件
+- 確定: 2455件 (Win 729 / Loss 935 / Flat 791) / pending 4件 / skip 2875件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_8PCT` (selected_by_causal_log_growth) / causal_score +0.000263 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_8PCT` EXPIRED account +0.00% 残高後 $119.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T06:36:02.919414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=79674.8
-- Funnel: target 1059 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-07T06:41:11.534811+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=79663.2
+- Funnel: target 1059 → liquid 138 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +194.01% | $1,185,130.27 |
-| BONER/USDT:USDT | +132.79% | $4,973,882.92 |
-| XAN/USDT:USDT | +17.60% | $2,107,786.62 |
-| ICP/USDT:USDT | +11.17% | $8,033,691.90 |
-| KAS/USDT:USDT | +11.00% | $3,769,586.74 |
+| MEMEROBINHOOD/USDT:USDT | +191.02% | $1,193,003.92 |
+| BONER/USDT:USDT | +123.60% | $5,018,041.12 |
+| XAN/USDT:USDT | +17.41% | $2,123,751.01 |
+| ORCA/USDT:USDT | +12.10% | $1,136,678.72 |
+| ICP/USDT:USDT | +11.39% | $8,213,186.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.77% | +4.82% |
-| ORCA/USDT:USDT | below_1h_threshold | +3.80% | +3.85% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +2.92% | +2.97% |
-| KAS/USDT:USDT | below_1h_threshold | +2.22% | +2.28% |
-| WLD/USDT:USDT | below_1h_threshold | +1.84% | +1.90% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.80% | +2.87% |
+| COTI/USDT:USDT | below_1h_threshold | +2.59% | +2.66% |
+| WLD/USDT:USDT | below_1h_threshold | +2.06% | +2.12% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +1.99% | +2.05% |
+| KAS/USDT:USDT | below_1h_threshold | +1.83% | +1.90% |
 
 ## 7. 次に見るべき不足
 
