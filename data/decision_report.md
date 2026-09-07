@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T02:56:22.994760+00:00
+- generated_at: 2026-09-07T03:01:21.710355+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13856**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T02:56:12.449990+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=80071.6
-- Funnel: target 1059 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.0 >= 65=1, 4h RSI 69.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-07T03:01:11.680247+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=79808.2
+- Funnel: target 1059 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +187.90% | $4,021,440.51 |
-| UAI/USDT:USDT | +16.66% | $13,989,956.25 |
-| XAN/USDT:USDT | +12.71% | $1,567,767.64 |
-| TIA/USDT:USDT | +10.63% | $18,207,392.82 |
-| TAO/USDT:USDT | +10.41% | $82,667,818.74 |
+| BONER/USDT:USDT | +188.49% | $4,002,625.49 |
+| UAI/USDT:USDT | +16.94% | $12,580,728.74 |
+| XAN/USDT:USDT | +12.54% | $1,533,977.20 |
+| TIA/USDT:USDT | +10.88% | $17,980,515.49 |
+| TAO/USDT:USDT | +10.29% | $82,152,834.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TAO/USDT:USDT | below_1h_threshold | +4.78% | +4.55% |
-| CRV/USDT:USDT | below_1h_threshold | +4.38% | +4.14% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.24% | +3.01% |
-| JASMY/USDT:USDT | below_1h_threshold | +3.10% | +2.87% |
-| BOME/USDT:USDT | below_1h_threshold | +3.10% | +2.87% |
+| ASTER/USDT:USDT | below_1h_threshold | +0.34% | +0.39% |
+| UNI/USDT:USDT | below_1h_threshold | +0.27% | +0.31% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.24% | +0.29% |
+| ONDO/USDT:USDT | below_1h_threshold | +0.21% | +0.25% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.18% | +0.22% |
 
 ## 7. 次に見るべき不足
 
