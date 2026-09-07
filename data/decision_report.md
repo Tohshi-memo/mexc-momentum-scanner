@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T16:06:17.607815+00:00
+- generated_at: 2026-09-07T16:11:15.838931+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13888**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T16:06:09.644066+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=78850.4
+- 更新: 2026-09-07T16:11:05.864547+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=78839.9
 - Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +4.79% | $4,945,750.45 |
-| CP/USDT:USDT | +3.47% | $2,464,850.35 |
-| NIULAI/USDT:USDT | +2.50% | $1,049,935.23 |
-| SOPH/USDT:USDT | +2.28% | $1,030,731.63 |
-| DOOD/USDT:USDT | +2.24% | $1,422,000.42 |
+| CP/USDT:USDT | +4.92% | $2,477,619.03 |
+| MEMEROBINHOOD/USDT:USDT | +4.19% | $4,961,493.44 |
+| ICP/USDT:USDT | +2.59% | $13,761,280.94 |
+| PIEVERSE/USDT:USDT | +2.05% | $1,484,325.63 |
+| BEAT/USDT:USDT | +1.79% | $3,595,185.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.91% | +4.83% |
-| CP/USDT:USDT | below_1h_threshold | +3.63% | +3.55% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.43% | +2.35% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.34% | +2.26% |
-| DOOD/USDT:USDT | below_1h_threshold | +2.24% | +2.16% |
+| CP/USDT:USDT | below_1h_threshold | +4.92% | +4.85% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.95% | +3.88% |
+| ICP/USDT:USDT | below_1h_threshold | +2.59% | +2.52% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.13% | +2.06% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.72% | +1.65% |
 
 ## 7. 次に見るべき不足
 
