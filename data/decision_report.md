@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T23:41:11.646755+00:00
+- generated_at: 2026-09-07T23:46:18.567734+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13923**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T23:41:03.608707+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=79007.9
+- 更新: 2026-09-07T23:46:08.553102+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=79083.5
 - Funnel: target 1062 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +34.25% | $6,419,036.43 |
-| BONER/USDT:USDT | +16.75% | $5,046,485.08 |
-| SOPH/USDT:USDT | +13.66% | $1,771,682.04 |
-| AERO/USDT:USDT | +10.69% | $3,859,979.50 |
-| INJ/USDT:USDT | +8.83% | $43,976,237.95 |
+| MEMEROBINHOOD/USDT:USDT | +37.24% | $6,433,389.34 |
+| BONER/USDT:USDT | +17.32% | $5,050,566.08 |
+| SOPH/USDT:USDT | +15.87% | $1,779,459.00 |
+| AERO/USDT:USDT | +9.92% | $3,875,694.38 |
+| INJ/USDT:USDT | +9.06% | $44,039,542.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.88% | +2.76% |
-| BR/USDT:USDT | below_1h_threshold | +2.39% | +2.28% |
-| INJ/USDT:USDT | below_1h_threshold | +1.57% | +1.45% |
-| WLD/USDT:USDT | below_1h_threshold | +1.49% | +1.37% |
-| XLM/USDT:USDT | below_1h_threshold | +1.35% | +1.24% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.70% | +3.49% |
+| BR/USDT:USDT | below_1h_threshold | +2.40% | +2.19% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.82% | +1.61% |
+| INJ/USDT:USDT | below_1h_threshold | +1.80% | +1.59% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.42% | +1.20% |
 
 ## 7. 次に見るべき不足
 
