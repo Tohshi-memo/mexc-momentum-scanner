@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T02:51:24.481142+00:00
+- generated_at: 2026-09-07T02:56:22.994760+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13856**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T02:51:13.714495+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=80214.0
+- 更新: 2026-09-07T02:56:12.449990+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=80071.6
 - Funnel: target 1059 → liquid 131 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.2 >= 65=1, 4h RSI 81.0 >= 65=1
+- Strict後reject: 4h RSI 67.0 >= 65=1, 4h RSI 69.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +191.55% | $4,012,342.82 |
-| UAI/USDT:USDT | +14.96% | $13,914,722.28 |
-| XAN/USDT:USDT | +12.64% | $1,566,831.36 |
-| TAO/USDT:USDT | +11.26% | $82,225,812.99 |
-| CRV/USDT:USDT | +10.56% | $5,235,747.63 |
+| BONER/USDT:USDT | +187.90% | $4,021,440.51 |
+| UAI/USDT:USDT | +16.66% | $13,989,956.25 |
+| XAN/USDT:USDT | +12.71% | $1,567,767.64 |
+| TIA/USDT:USDT | +10.63% | $18,207,392.82 |
+| TAO/USDT:USDT | +10.41% | $82,667,818.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRV/USDT:USDT | below_1h_threshold | +4.79% | +4.38% |
-| UAI/USDT:USDT | below_1h_threshold | +4.74% | +4.33% |
-| BOME/USDT:USDT | below_1h_threshold | +3.52% | +3.11% |
-| VIRTUAL/USDT:USDT | below_1h_threshold | +3.39% | +2.98% |
-| WLD/USDT:USDT | below_1h_threshold | +3.04% | +2.63% |
+| TAO/USDT:USDT | below_1h_threshold | +4.78% | +4.55% |
+| CRV/USDT:USDT | below_1h_threshold | +4.38% | +4.14% |
+| VIRTUAL/USDT:USDT | below_1h_threshold | +3.24% | +3.01% |
+| JASMY/USDT:USDT | below_1h_threshold | +3.10% | +2.87% |
+| BOME/USDT:USDT | below_1h_threshold | +3.10% | +2.87% |
 
 ## 7. 次に見るべき不足
 
