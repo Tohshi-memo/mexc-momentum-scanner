@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T03:41:12.564891+00:00
+- generated_at: 2026-09-07T03:46:20.669367+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13858**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T03:41:04.687042+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=79640.1
+- 更新: 2026-09-07T03:46:10.751103+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=79625.5
 - Funnel: target 1059 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +180.33% | $4,103,333.99 |
-| UAI/USDT:USDT | +20.94% | $13,247,216.21 |
-| XAN/USDT:USDT | +13.30% | $1,601,207.92 |
-| TIA/USDT:USDT | +8.23% | $18,322,584.39 |
-| MAGMA/USDT:USDT | +8.21% | $2,075,431.68 |
+| BONER/USDT:USDT | +179.38% | $4,110,790.81 |
+| UAI/USDT:USDT | +20.52% | $13,334,427.55 |
+| XAN/USDT:USDT | +13.49% | $1,603,128.70 |
+| MAGMA/USDT:USDT | +9.08% | $2,079,143.68 |
+| TAO/USDT:USDT | +8.70% | $85,169,453.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.80% | +3.05% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.70% | +2.95% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.68% |
-| BOME/USDT:USDT | below_1h_threshold | +0.36% | +0.61% |
-| XAN/USDT:USDT | below_1h_threshold | +0.31% | +0.56% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.16% | +3.44% |
+| UAI/USDT:USDT | below_1h_threshold | +2.54% | +2.82% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.76% | +2.03% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.61% | +0.88% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.42% | +0.70% |
 
 ## 7. 次に見るべき不足
 
