@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T05:01:23.363942+00:00
+- generated_at: 2026-09-07T05:06:16.975651+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13860**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T05:01:13.482503+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=79672.8
+- 更新: 2026-09-07T05:06:07.079318+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=79724.0
 - Funnel: target 1059 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +172.42% | $1,046,893.40 |
-| BONER/USDT:USDT | +148.91% | $4,426,661.20 |
-| XAN/USDT:USDT | +20.33% | $1,802,361.60 |
-| UAI/USDT:USDT | +14.90% | $12,498,728.04 |
-| TAO/USDT:USDT | +9.97% | $91,703,146.69 |
+| MEMEROBINHOOD/USDT:USDT | +162.79% | $1,050,729.03 |
+| BONER/USDT:USDT | +135.52% | $4,448,905.63 |
+| XAN/USDT:USDT | +20.44% | $1,811,728.22 |
+| UAI/USDT:USDT | +15.04% | $12,526,342.55 |
+| TAO/USDT:USDT | +10.02% | $91,788,985.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.71% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.53% |
-| BONER/USDT:USDT | below_1h_threshold | +0.46% | +0.48% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.84% | +1.80% |
+| DASH/USDT:USDT | below_1h_threshold | +1.44% | +1.40% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.28% | +1.23% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.24% | +1.19% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +1.07% |
 
 ## 7. 次に見るべき不足
 
