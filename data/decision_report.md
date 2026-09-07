@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T08:26:09.981466+00:00
+- generated_at: 2026-09-07T08:31:18.082426+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13875**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T08:26:00.811828+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=79426.0
+- 更新: 2026-09-07T08:31:11.188477+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=79456.2
 - Funnel: target 1060 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +312.62% | $2,055,622.95 |
-| BONER/USDT:USDT | +139.76% | $5,472,273.06 |
-| CATI/USDT:USDT | +17.27% | $1,087,542.25 |
-| XAN/USDT:USDT | +15.36% | $2,371,367.34 |
-| ICP/USDT:USDT | +13.22% | $10,950,241.44 |
+| MEMEROBINHOOD/USDT:USDT | +310.29% | $2,079,089.32 |
+| BONER/USDT:USDT | +140.50% | $5,480,745.53 |
+| CATI/USDT:USDT | +17.37% | $1,093,300.53 |
+| XAN/USDT:USDT | +16.63% | $2,374,769.53 |
+| ICP/USDT:USDT | +13.90% | $11,194,514.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATI/USDT:USDT | below_1h_threshold | +2.69% | +2.60% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.56% | +2.46% |
-| WLD/USDT:USDT | below_1h_threshold | +2.41% | +2.31% |
-| UAI/USDT:USDT | below_1h_threshold | +2.24% | +2.15% |
-| XAN/USDT:USDT | below_1h_threshold | +1.96% | +1.86% |
+| WLD/USDT:USDT | below_1h_threshold | +3.43% | +3.30% |
+| XAN/USDT:USDT | below_1h_threshold | +3.08% | +2.95% |
+| CATI/USDT:USDT | below_1h_threshold | +2.77% | +2.64% |
+| SUI/USDT:USDT | below_1h_threshold | +2.43% | +2.29% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.41% | +2.28% |
 
 ## 7. 次に見るべき不足
 
