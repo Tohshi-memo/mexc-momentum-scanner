@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-07T15:21:15.416222+00:00
+- generated_at: 2026-09-07T15:26:26.029418+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13888**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-07T15:21:03.595793+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=79074.5
+- 更新: 2026-09-07T15:26:16.114680+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=79082.4
 - Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +185.04% | $4,570,364.76 |
-| BONER/USDT:USDT | +92.88% | $6,354,394.30 |
-| IOST/USDT:USDT | +23.05% | $1,657,785.72 |
-| PIEVERSE/USDT:USDT | +23.05% | $1,274,776.14 |
-| SOLV/USDT:USDT | +21.88% | $1,229,175.13 |
+| MEMEROBINHOOD/USDT:USDT | +199.00% | $4,634,773.02 |
+| BONER/USDT:USDT | +86.57% | $6,384,255.12 |
+| IOST/USDT:USDT | +23.18% | $1,694,318.45 |
+| PIEVERSE/USDT:USDT | +22.08% | $1,302,876.09 |
+| SOLV/USDT:USDT | +21.75% | $1,245,204.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.38% | +2.48% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.15% | +1.25% |
-| SOLV/USDT:USDT | below_1h_threshold | +0.87% | +0.96% |
-| DOT/USDT:USDT | below_1h_threshold | +0.71% | +0.81% |
-| INJ/USDT:USDT | below_1h_threshold | +0.65% | +0.75% |
+| UAI/USDT:USDT | below_1h_threshold | +2.31% | +2.40% |
+| DOT/USDT:USDT | below_1h_threshold | +1.49% | +1.58% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.42% | +1.50% |
+| SOLV/USDT:USDT | below_1h_threshold | +0.76% | +0.85% |
+| MNT/USDT:USDT | below_1h_threshold | +0.60% | +0.69% |
 
 ## 7. 次に見るべき不足
 
