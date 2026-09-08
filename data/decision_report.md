@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T08:21:18.529291+00:00
+- generated_at: 2026-09-08T08:26:19.302820+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13968**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T08:21:11.483173+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=78313.8
-- Funnel: target 1065 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-08T08:26:09.257536+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78379.1
+- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +107.26% | $10,894,362.13 |
-| FORM/USDT:USDT | +45.30% | $2,641,268.36 |
-| AKE/USDT:USDT | +14.37% | $12,519,784.38 |
-| MEMEROBINHOOD/USDT:USDT | +13.77% | $6,863,853.55 |
-| AERO/USDT:USDT | +13.48% | $5,679,479.91 |
+| SOPH/USDT:USDT | +102.57% | $11,046,726.94 |
+| BNCSTOCK/USDT:USDT | +43.95% | $1,064,845.12 |
+| FORM/USDT:USDT | +37.61% | $2,751,468.04 |
+| MEMEROBINHOOD/USDT:USDT | +15.80% | $6,868,485.17 |
+| AKE/USDT:USDT | +14.15% | $12,549,985.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +3.40% | +3.57% |
-| CP/USDT:USDT | below_1h_threshold | +1.39% | +1.56% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.38% | +1.55% |
-| COTI/USDT:USDT | below_1h_threshold | +1.00% | +1.17% |
-| LIT/USDT:USDT | below_1h_threshold | +0.87% | +1.04% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +4.06% | +4.14% |
+| HNT/USDT:USDT | below_1h_threshold | +2.15% | +2.24% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.35% | +1.43% |
+| LIT/USDT:USDT | below_1h_threshold | +1.31% | +1.39% |
 
 ## 7. 次に見るべき不足
 
