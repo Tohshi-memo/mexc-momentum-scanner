@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T05:31:26.344141+00:00
+- generated_at: 2026-09-08T05:36:26.715942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13958**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T05:31:11.649382+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78791.2
+- 更新: 2026-09-08T05:36:14.053892+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78659.6
 - Funnel: target 1065 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.9 >= 65=1
+- Strict後reject: 4h RSI 94.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +130.76% | $5,882,736.71 |
-| IOST/USDT:USDT | +28.73% | $4,798,495.74 |
-| CP/USDT:USDT | +15.54% | $2,587,375.50 |
-| AERO/USDT:USDT | +13.93% | $5,205,203.64 |
-| MEMEROBINHOOD/USDT:USDT | +13.77% | $7,211,889.92 |
+| SOPH/USDT:USDT | +129.92% | $6,082,887.65 |
+| IOST/USDT:USDT | +29.12% | $4,811,210.43 |
+| CP/USDT:USDT | +18.13% | $2,618,061.03 |
+| AERO/USDT:USDT | +13.68% | $5,231,527.05 |
+| XAN/USDT:USDT | +13.33% | $1,782,909.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KAITO/USDT:USDT | below_1h_threshold | +3.80% | +3.63% |
-| CATI/USDT:USDT | below_1h_threshold | +3.63% | +3.45% |
-| CAKE/USDT:USDT | below_1h_threshold | +2.65% | +2.48% |
-| ARB/USDT:USDT | below_1h_threshold | +2.52% | +2.35% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.21% | +2.03% |
+| KAITO/USDT:USDT | below_1h_threshold | +4.05% | +4.04% |
+| CATI/USDT:USDT | below_1h_threshold | +2.90% | +2.90% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.33% | +2.32% |
+| ARB/USDT:USDT | below_1h_threshold | +2.27% | +2.26% |
+| CAKE/USDT:USDT | below_1h_threshold | +2.02% | +2.01% |
 
 ## 7. 次に見るべき不足
 
