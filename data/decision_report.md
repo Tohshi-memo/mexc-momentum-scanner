@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T05:51:17.171973+00:00
+- generated_at: 2026-09-08T05:56:14.147218+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13960**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.65** / 初期 $100.00 (+22.65%)
-- 確定: 2550件 (Win 751 / Loss 956 / Flat 843) / pending 3件 / skip 2878件
+- 確定: 2550件 (Win 751 / Loss 956 / Flat 843) / pending 4件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000370 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SOPH/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.65
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T05:51:07.334856+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78636.0
-- Funnel: target 1065 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T05:56:03.541511+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=78605.7
+- Funnel: target 1065 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +105.63% | $7,018,213.71 |
-| IOST/USDT:USDT | +20.81% | $4,909,107.29 |
-| CP/USDT:USDT | +17.61% | $2,681,754.50 |
-| MEMEROBINHOOD/USDT:USDT | +15.56% | $7,244,538.92 |
-| AERO/USDT:USDT | +14.05% | $5,289,024.46 |
+| SOPH/USDT:USDT | +110.01% | $7,233,931.14 |
+| IOST/USDT:USDT | +22.20% | $4,926,725.54 |
+| MEMEROBINHOOD/USDT:USDT | +17.36% | $7,253,347.72 |
+| AERO/USDT:USDT | +14.14% | $5,299,725.94 |
+| XAN/USDT:USDT | +13.52% | $1,790,652.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +3.25% | +3.27% |
-| ARB/USDT:USDT | below_1h_threshold | +3.13% | +3.15% |
-| CATI/USDT:USDT | below_1h_threshold | +2.55% | +2.57% |
-| HNT/USDT:USDT | below_1h_threshold | +2.23% | +2.25% |
-| CAKE/USDT:USDT | below_1h_threshold | +2.16% | +2.18% |
+| SOPH/USDT:USDT | below_1h_threshold | +3.30% | +3.36% |
+| KAITO/USDT:USDT | below_1h_threshold | +2.79% | +2.85% |
+| CATI/USDT:USDT | below_1h_threshold | +2.73% | +2.79% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.56% | +2.62% |
+| ARB/USDT:USDT | below_1h_threshold | +2.01% | +2.07% |
 
 ## 7. 次に見るべき不足
 
