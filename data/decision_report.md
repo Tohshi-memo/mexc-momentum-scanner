@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T10:21:19.757021+00:00
+- generated_at: 2026-09-08T10:26:24.139335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13980**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.09** / 初期 $100.00 (+22.09%)
-- 確定: 2569件 (Win 755 / Loss 964 / Flat 850) / pending 3件 / skip 2878件
+- 確定: 2569件 (Win 755 / Loss 964 / Flat 850) / pending 5件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000255 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `MARKET_LONG` EXPIRED account +0.17% 残高後 $122.09
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T10:21:09.746461+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=78949.8
-- Funnel: target 1065 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T10:26:11.021607+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=78850.0
+- Funnel: target 1065 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +118.68% | $16,716,105.85 |
-| BNCSTOCK/USDT:USDT | +52.18% | $1,628,183.59 |
-| FORM/USDT:USDT | +27.99% | $3,829,132.76 |
-| USELESS/USDT:USDT | +17.75% | $11,773,538.18 |
-| MEMEROBINHOOD/USDT:USDT | +15.56% | $5,921,647.88 |
+| SOPH/USDT:USDT | +123.50% | $16,952,884.81 |
+| BNCSTOCK/USDT:USDT | +49.87% | $1,642,218.76 |
+| FORM/USDT:USDT | +29.52% | $3,859,938.80 |
+| USELESS/USDT:USDT | +26.02% | $12,034,731.92 |
+| MEMEROBINHOOD/USDT:USDT | +15.80% | $5,926,127.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.21% | +3.93% |
-| BTR/USDT:USDT | below_1h_threshold | +2.35% | +2.07% |
-| XPL/USDT:USDT | below_1h_threshold | +1.81% | +1.53% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +0.91% |
-| SEI/USDT:USDT | below_1h_threshold | +1.18% | +0.89% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.21% | +4.06% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.92% | +1.76% |
+| XPL/USDT:USDT | below_1h_threshold | +1.87% | +1.71% |
+| BTR/USDT:USDT | below_1h_threshold | +1.33% | +1.18% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.13% |
 
 ## 7. 次に見るべき不足
 
