@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T16:56:27.422284+00:00
+- generated_at: 2026-09-08T17:01:20.088886+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14014**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T16:56:13.691588+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=78728.5
-- Funnel: target 1070 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T17:01:10.024995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78718.2
+- Funnel: target 1070 → liquid 158 → pre 50 → checked 49 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=1, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +12.24% | $2,338,310.26 |
-| MARSCOIN/USDT:USDT | +7.85% | $2,715,105.81 |
-| PONS/USDT:USDT | +4.50% | $8,622,164.11 |
-| BTR/USDT:USDT | +4.37% | $1,309,675.07 |
-| LIT/USDT:USDT | +3.04% | $5,550,687.22 |
+| BONER/USDT:USDT | +11.29% | $2,168,141.10 |
+| MARSCOIN/USDT:USDT | +5.01% | $2,639,630.40 |
+| LIT/USDT:USDT | +2.97% | $5,522,631.84 |
+| BTR/USDT:USDT | +2.61% | $1,242,100.47 |
+| CP/USDT:USDT | +2.59% | $2,969,131.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.50% | +4.68% |
-| BTR/USDT:USDT | below_1h_threshold | +4.20% | +4.37% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.83% | +4.00% |
-| LIT/USDT:USDT | below_1h_threshold | +3.05% | +3.22% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.14% |
+| FLOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.00% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.98% | +1.96% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.15% |
+| CP/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
 
 ## 7. 次に見るべき不足
 
