@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T15:46:42.857630+00:00
+- generated_at: 2026-09-08T15:51:53.525706+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14008**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.51** / 初期 $100.00 (+19.51%)
-- 確定: 2597件 (Win 760 / Loss 985 / Flat 852) / pending 3件 / skip 2880件
+- 確定: 2597件 (Win 760 / Loss 985 / Flat 852) / pending 3件 / skip 2882件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000240 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.51
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T15:46:23.025672+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=78688.4
-- Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1
+- 更新: 2026-09-08T15:51:32.648493+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.26% price=78727.9
+- Funnel: target 1070 → liquid 163 → pre 50 → checked 50 → surge 6 → strict 4
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.9 >= 65=1, 4h RSI 88.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +42.51% | $35,295,018.08 |
-| VVV/USDT:USDT | +36.30% | $7,761,650.22 |
-| USELESS/USDT:USDT | +32.13% | $19,504,739.76 |
-| MEMEROBINHOOD/USDT:USDT | +31.25% | $5,081,159.76 |
-| BNCSTOCK/USDT:USDT | +28.63% | $2,472,993.42 |
+| SOPH/USDT:USDT | +45.14% | $35,393,416.43 |
+| VVV/USDT:USDT | +39.46% | $8,061,030.39 |
+| MEMEROBINHOOD/USDT:USDT | +31.49% | $5,114,138.62 |
+| USELESS/USDT:USDT | +30.94% | $19,762,353.23 |
+| NIULAI/USDT:USDT | +27.89% | $1,027,976.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ADA/USDT:USDT | below_1h_threshold | +3.98% | +3.77% |
-| ETC/USDT:USDT | below_1h_threshold | +3.02% | +2.81% |
-| VET/USDT:USDT | below_1h_threshold | +2.82% | +2.61% |
-| VVV/USDT:USDT | below_1h_threshold | +2.61% | +2.40% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.22% |
+| ADA/USDT:USDT | below_1h_threshold | +3.66% | +3.40% |
+| ETC/USDT:USDT | below_1h_threshold | +3.21% | +2.95% |
+| VET/USDT:USDT | below_1h_threshold | +2.74% | +2.48% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.17% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.42% | +2.16% |
 
 ## 7. 次に見るべき不足
 
