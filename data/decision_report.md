@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T06:36:28.088057+00:00
+- generated_at: 2026-09-08T06:41:27.982137+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13964**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T06:36:13.021977+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=78341.1
+- 更新: 2026-09-08T06:41:13.410068+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=78387.9
 - Funnel: target 1065 → liquid 152 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +106.54% | $8,500,494.13 |
-| MEMEROBINHOOD/USDT:USDT | +27.90% | $7,342,828.70 |
-| FORM/USDT:USDT | +23.20% | $1,005,414.81 |
-| IOST/USDT:USDT | +19.67% | $5,050,702.21 |
-| AKE/USDT:USDT | +13.62% | $13,103,084.59 |
+| SOPH/USDT:USDT | +105.22% | $8,625,017.89 |
+| MEMEROBINHOOD/USDT:USDT | +26.94% | $7,358,096.39 |
+| FORM/USDT:USDT | +24.38% | $1,024,736.70 |
+| IOST/USDT:USDT | +19.58% | $5,059,237.34 |
+| AKE/USDT:USDT | +13.48% | $13,121,262.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.73% | +3.00% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.64% | +2.91% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.56% |
-| SOLV/USDT:USDT | below_1h_threshold | +2.23% | +2.50% |
-| BONER/USDT:USDT | below_1h_threshold | +2.19% | +2.46% |
+| AKE/USDT:USDT | below_1h_threshold | +2.58% | +2.79% |
+| BONER/USDT:USDT | below_1h_threshold | +2.54% | +2.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.50% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.81% | +2.02% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.72% | +0.93% |
 
 ## 7. 次に見るべき不足
 
