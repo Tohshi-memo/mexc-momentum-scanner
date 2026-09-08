@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 122.75796132750713,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-09-08T06:21:20.023065+00:00",
+  "updated_at": "2026-09-08T06:26:22.890732+00:00",
   "high_watermark": 123.08309336915141,
   "max_drawdown_pct": 5.256052504142945,
   "loss_streak": 1,
@@ -496715,6 +496715,113 @@
       "direction": "long",
       "risk_pct": 0.175,
       "relative_strength": 6.828031773627627,
+      "decision": {
+        "strategy": "LIMIT_2PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0003672712788479488,
+        "robust_score": 0.0003672712788479488,
+        "causal_history_count": 13962,
+        "fast": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 32,
+          "fill_rate": 0.64,
+          "avg_pnl_pct": 1.7556122448979619,
+          "effective_ev_pct": 1.1235918367346955,
+          "avg_log_return": 0.0005091946478072823,
+          "geometric_return_pct": 0.050932430940875406,
+          "avg_account_return_pct": 0.05112589285714283,
+          "max_drawdown_pct": 0.5240817859375049,
+          "max_loss_streak": 3
+        },
+        "recent": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 32,
+          "fill_rate": 0.64,
+          "avg_pnl_pct": 1.7556122448979619,
+          "effective_ev_pct": 1.1235918367346955,
+          "avg_log_return": 0.0005091946478072823,
+          "geometric_return_pct": 0.050932430940875406,
+          "avg_account_return_pct": 0.05112589285714283,
+          "max_drawdown_pct": 0.5240817859375049,
+          "max_loss_streak": 3
+        },
+        "mid": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 133,
+          "fill_rate": 0.665,
+          "avg_pnl_pct": 0.5703955817431954,
+          "effective_ev_pct": 0.3793130618592249,
+          "avg_log_return": 0.00018302346376119103,
+          "geometric_return_pct": 0.018304021357717914,
+          "avg_account_return_pct": 0.01848225009445848,
+          "max_drawdown_pct": 2.207846412382082,
+          "max_loss_streak": 9
+        },
+        "long": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 682,
+          "fill_rate": 0.682,
+          "avg_pnl_pct": 0.6357072668444065,
+          "effective_ev_pct": 0.4335523559878853,
+          "avg_log_return": 0.00021538122283724104,
+          "geometric_return_pct": 0.021540441903811214,
+          "avg_account_return_pct": 0.021723817227930216,
+          "max_drawdown_pct": 3.2292753286843325,
+          "max_loss_streak": 14
+        },
+        "all": {
+          "strategy": "LIMIT_2PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 682,
+          "fill_rate": 0.682,
+          "avg_pnl_pct": 0.6357072668444065,
+          "effective_ev_pct": 0.4335523559878853,
+          "avg_log_return": 0.00021538122283724104,
+          "geometric_return_pct": 0.021540441903811214,
+          "avg_account_return_pct": 0.021723817227930216,
+          "max_drawdown_pct": 3.2292753286843325,
+          "max_loss_streak": 14
+        },
+        "alternatives": [
+          {
+            "strategy": "MARKET_LONG",
+            "direction": "long",
+            "causal_score": 0.0002976585449435088
+          },
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 0.00012008917016098565
+          },
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 7.834928624033904e-05
+          }
+        ]
+      }
+    },
+    "HNT/USDT:USDT|2026-09-08T06:26:12.737657+00:00": {
+      "key": "HNT/USDT:USDT|2026-09-08T06:26:12.737657+00:00",
+      "symbol": "HNT/USDT:USDT",
+      "detected_at": "2026-09-08T06:26:12.737657+00:00",
+      "registered_at": "2026-09-08T06:26:22.819451+00:00",
+      "signal_batch": "2026-09-08T06:26Z",
+      "status": "pending",
+      "strategy": "LIMIT_2PCT_LONG",
+      "direction": "long",
+      "risk_pct": 0.175,
+      "relative_strength": 6.131264198021673,
       "decision": {
         "strategy": "LIMIT_2PCT_LONG",
         "direction": "long",
