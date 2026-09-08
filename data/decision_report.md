@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T16:51:27.086156+00:00
+- generated_at: 2026-09-08T16:56:27.422284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14014**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T16:51:14.566343+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78833.8
+- 更新: 2026-09-08T16:56:13.691588+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=78728.5
 - Funnel: target 1070 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.3 >= 65=1
+- Strict後reject: 4h RSI 81.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +12.84% | $2,334,118.90 |
-| MARSCOIN/USDT:USDT | +8.40% | $2,697,829.99 |
-| LIT/USDT:USDT | +4.02% | $5,408,112.36 |
-| PONS/USDT:USDT | +3.54% | $8,455,899.39 |
-| BTR/USDT:USDT | +3.43% | $1,300,599.73 |
+| BONER/USDT:USDT | +12.24% | $2,338,310.26 |
+| MARSCOIN/USDT:USDT | +7.85% | $2,715,105.81 |
+| PONS/USDT:USDT | +4.50% | $8,622,164.11 |
+| BTR/USDT:USDT | +4.37% | $1,309,675.07 |
+| LIT/USDT:USDT | +3.04% | $5,550,687.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +4.02% | +4.06% |
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.87% |
-| BTR/USDT:USDT | below_1h_threshold | +3.44% | +3.48% |
-| PONS/USDT:USDT | below_1h_threshold | +3.35% | +3.39% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.01% |
+| PONS/USDT:USDT | below_1h_threshold | +4.50% | +4.68% |
+| BTR/USDT:USDT | below_1h_threshold | +4.20% | +4.37% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.83% | +4.00% |
+| LIT/USDT:USDT | below_1h_threshold | +3.05% | +3.22% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.14% |
 
 ## 7. 次に見るべき不足
 
