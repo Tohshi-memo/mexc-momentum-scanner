@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T13:51:26.527651+00:00
+- generated_at: 2026-09-08T13:56:32.304115+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13996**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T13:51:14.024211+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.84% price=77760.1
-- Funnel: target 1070 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1, 4h RSI 68.9 >= 65=1
+- 更新: 2026-09-08T13:56:18.770532+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.66% price=77897.7
+- Funnel: target 1070 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.6 >= 65=1, 4h RSI 70.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +68.89% | $28,812,015.78 |
-| BNCSTOCK/USDT:USDT | +31.92% | $2,249,863.75 |
-| USELESS/USDT:USDT | +17.86% | $14,301,060.74 |
-| FORM/USDT:USDT | +17.47% | $4,913,655.39 |
-| AKE/USDT:USDT | +16.38% | $10,507,629.32 |
+| SOPH/USDT:USDT | +69.23% | $28,956,313.33 |
+| BNCSTOCK/USDT:USDT | +33.77% | $2,260,455.63 |
+| USELESS/USDT:USDT | +20.25% | $14,349,945.13 |
+| FORM/USDT:USDT | +17.98% | $4,924,728.96 |
+| AKE/USDT:USDT | +17.04% | $10,521,750.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +4.20% | +5.04% |
-| KORU/USDT:USDT | below_1h_threshold | +2.35% | +3.19% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.87% | +2.70% |
-| HNT/USDT:USDT | below_1h_threshold | +1.76% | +2.60% |
-| UAI/USDT:USDT | below_1h_threshold | +0.96% | +1.80% |
+| HNT/USDT:USDT | below_1h_threshold | +2.64% | +3.30% |
+| KORU/USDT:USDT | below_1h_threshold | +2.35% | +3.01% |
+| UAI/USDT:USDT | below_1h_threshold | +1.56% | +2.22% |
+| COTI/USDT:USDT | below_1h_threshold | +1.51% | +2.17% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +1.42% |
 
 ## 7. 次に見るべき不足
 
