@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T11:06:20.289210+00:00
+- generated_at: 2026-09-08T11:11:16.233500+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13983**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T11:06:10.378226+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=78424.9
+- 更新: 2026-09-08T11:11:06.371192+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.30% price=78296.7
 - Funnel: target 1065 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +104.56% | $18,523,634.46 |
-| BNCSTOCK/USDT:USDT | +43.75% | $1,757,233.40 |
-| FORM/USDT:USDT | +23.94% | $4,066,845.59 |
-| AKE/USDT:USDT | +15.93% | $11,263,309.00 |
-| AERO/USDT:USDT | +15.54% | $6,175,854.48 |
+| SOPH/USDT:USDT | +106.91% | $18,701,308.30 |
+| BNCSTOCK/USDT:USDT | +39.46% | $1,768,398.16 |
+| FORM/USDT:USDT | +20.69% | $4,101,705.85 |
+| AKE/USDT:USDT | +14.92% | $11,298,511.44 |
+| AERO/USDT:USDT | +14.72% | $6,189,223.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.78% | +1.91% |
-| COTI/USDT:USDT | below_1h_threshold | +1.55% | +1.69% |
-| XPL/USDT:USDT | below_1h_threshold | +1.33% | +1.47% |
-| IOST/USDT:USDT | below_1h_threshold | +1.11% | +1.25% |
-| HEMI/USDT:USDT | below_1h_threshold | +0.92% | +1.05% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.73% | +4.03% |
+| COTI/USDT:USDT | below_1h_threshold | +1.48% | +1.78% |
+| AKE/USDT:USDT | below_1h_threshold | +1.00% | +1.30% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.78% | +1.08% |
+| IOST/USDT:USDT | below_1h_threshold | +0.76% | +1.06% |
 
 ## 7. 次に見るべき不足
 
