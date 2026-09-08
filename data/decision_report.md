@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T00:41:27.789445+00:00
+- generated_at: 2026-09-08T00:46:22.248144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13928**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T00:41:12.791062+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=79218.8
-- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.7 >= 65=1
+- 更新: 2026-09-08T00:46:12.124310+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=79185.4
+- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +45.86% | $6,728,469.40 |
-| SOPH/USDT:USDT | +36.00% | $2,050,964.97 |
-| BONER/USDT:USDT | +16.42% | $4,498,744.18 |
-| AERO/USDT:USDT | +14.45% | $4,105,674.08 |
-| INJ/USDT:USDT | +10.92% | $45,120,002.14 |
+| MEMEROBINHOOD/USDT:USDT | +42.03% | $6,755,996.09 |
+| SOPH/USDT:USDT | +33.84% | $2,084,821.33 |
+| BONER/USDT:USDT | +17.21% | $4,500,726.67 |
+| AERO/USDT:USDT | +14.29% | $4,111,244.41 |
+| INJ/USDT:USDT | +10.54% | $45,419,947.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AERO/USDT:USDT | below_1h_threshold | +3.58% | +3.40% |
-| KAS/USDT:USDT | below_1h_threshold | +1.84% | +1.66% |
-| UAI/USDT:USDT | below_1h_threshold | +1.56% | +1.38% |
-| INJ/USDT:USDT | below_1h_threshold | +1.55% | +1.37% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.34% | +1.16% |
+| AERO/USDT:USDT | below_1h_threshold | +3.63% | +3.49% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.49% | +3.35% |
+| UAI/USDT:USDT | below_1h_threshold | +1.70% | +1.57% |
+| ETC/USDT:USDT | below_1h_threshold | +1.43% | +1.29% |
+| KAS/USDT:USDT | below_1h_threshold | +1.40% | +1.26% |
 
 ## 7. 次に見るべき不足
 
