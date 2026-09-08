@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T08:41:21.954496+00:00
+- generated_at: 2026-09-08T08:46:38.287098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13969**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T08:41:11.571199+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78514.8
-- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T08:46:27.579671+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=78537.4
+- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +112.01% | $11,399,535.44 |
-| BNCSTOCK/USDT:USDT | +44.21% | $1,205,909.52 |
-| FORM/USDT:USDT | +37.65% | $2,975,735.59 |
-| MEMEROBINHOOD/USDT:USDT | +17.60% | $6,905,960.37 |
-| AKE/USDT:USDT | +15.20% | $12,657,352.65 |
+| SOPH/USDT:USDT | +110.89% | $11,498,038.84 |
+| BNCSTOCK/USDT:USDT | +54.24% | $1,249,771.41 |
+| FORM/USDT:USDT | +33.09% | $3,057,556.56 |
+| MEMEROBINHOOD/USDT:USDT | +19.76% | $6,912,415.76 |
+| AKE/USDT:USDT | +14.77% | $12,681,624.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +4.06% | +3.97% |
-| LIT/USDT:USDT | below_1h_threshold | +3.44% | +3.35% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.37% | +3.28% |
-| HNT/USDT:USDT | below_1h_threshold | +1.76% | +1.67% |
-| COTI/USDT:USDT | below_1h_threshold | +1.41% | +1.32% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +4.06% | +3.94% |
+| LIT/USDT:USDT | below_1h_threshold | +3.31% | +3.19% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.72% | +2.60% |
+| BR/USDT:USDT | below_1h_threshold | +2.35% | +2.23% |
+| XPL/USDT:USDT | below_1h_threshold | +1.45% | +1.33% |
 
 ## 7. 次に見るべき不足
 
