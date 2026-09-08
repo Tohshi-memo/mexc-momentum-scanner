@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T02:56:19.390599+00:00
+- generated_at: 2026-09-08T03:01:20.522816+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13938**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T02:56:09.257629+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=78952.0
-- Funnel: target 1062 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T03:01:10.605586+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=78903.6
+- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +50.08% | $2,655,520.57 |
-| MEMEROBINHOOD/USDT:USDT | +41.91% | $6,976,931.27 |
-| BONER/USDT:USDT | +17.57% | $4,358,754.51 |
-| INJ/USDT:USDT | +15.03% | $53,326,711.49 |
-| AERO/USDT:USDT | +14.95% | $4,533,119.32 |
+| SOPH/USDT:USDT | +50.77% | $2,685,540.02 |
+| MEMEROBINHOOD/USDT:USDT | +38.68% | $6,938,910.44 |
+| BONER/USDT:USDT | +23.22% | $4,172,050.02 |
+| AERO/USDT:USDT | +15.05% | $4,524,794.66 |
+| INJ/USDT:USDT | +14.77% | $52,959,566.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.91% | +5.49% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.68% | +4.26% |
-| XAN/USDT:USDT | below_1h_threshold | +2.58% | +3.16% |
-| KORU/USDT:USDT | below_1h_threshold | +2.37% | +2.95% |
-| IOST/USDT:USDT | below_1h_threshold | +2.02% | +2.60% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
+| BONER/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.54% | +0.55% |
+| ZRO/USDT:USDT | below_1h_threshold | +0.51% | +0.51% |
+| AERO/USDT:USDT | below_1h_threshold | +0.37% | +0.38% |
 
 ## 7. 次に見るべき不足
 
