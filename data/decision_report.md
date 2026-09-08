@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T17:31:20.598236+00:00
+- generated_at: 2026-09-08T17:36:17.090649+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14016**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T17:31:08.530028+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78552.9
+- 更新: 2026-09-08T17:36:07.955596+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78630.8
 - Funnel: target 1070 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +11.50% | $2,199,902.52 |
-| DOGS/USDT:USDT | +5.44% | $1,045,438.71 |
-| MARSCOIN/USDT:USDT | +4.97% | $2,707,700.77 |
-| BNCSTOCK/USDT:USDT | +2.58% | $2,534,899.49 |
-| UAI/USDT:USDT | +2.56% | $14,559,886.97 |
+| BONER/USDT:USDT | +10.82% | $2,202,252.10 |
+| DOGS/USDT:USDT | +4.96% | $1,080,003.06 |
+| BR/USDT:USDT | +3.48% | $1,467,390.05 |
+| MARSCOIN/USDT:USDT | +3.19% | $2,726,282.14 |
+| DOT/USDT:USDT | +2.44% | $31,862,403.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOT/USDT:USDT | below_1h_threshold | +2.58% | +2.77% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.98% | +2.17% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.54% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.19% | +1.37% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.36% |
+| DOT/USDT:USDT | below_1h_threshold | +3.02% | +3.11% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.98% | +2.07% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.44% |
+| BR/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.26% |
 
 ## 7. 次に見るべき不足
 
