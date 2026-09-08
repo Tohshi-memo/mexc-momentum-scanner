@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T14:46:21.597204+00:00
+- generated_at: 2026-09-08T14:51:32.550799+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14004**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T14:46:11.661453+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.55% price=78361.6
-- Funnel: target 1070 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1
+- 更新: 2026-09-08T14:51:22.151849+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.79% price=78550.0
+- Funnel: target 1070 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.5 >= 65=1, 4h RSI 68.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +61.48% | $31,776,122.53 |
-| VVV/USDT:USDT | +31.71% | $5,049,197.86 |
-| USELESS/USDT:USDT | +26.09% | $16,363,690.54 |
-| BNCSTOCK/USDT:USDT | +22.67% | $2,386,899.05 |
-| FF/USDT:USDT | +19.46% | $1,055,182.63 |
+| SOPH/USDT:USDT | +61.85% | $31,907,525.59 |
+| VVV/USDT:USDT | +38.15% | $5,511,356.76 |
+| USELESS/USDT:USDT | +30.58% | $16,669,826.31 |
+| BNCSTOCK/USDT:USDT | +22.08% | $2,389,095.52 |
+| FORM/USDT:USDT | +18.53% | $5,078,881.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.66% | +4.12% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.48% | +2.93% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +2.70% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +2.47% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.75% | +2.21% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.80% | +3.01% |
+| INJ/USDT:USDT | below_1h_threshold | +3.64% | +2.85% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +2.46% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.01% | +2.22% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +3.01% | +2.22% |
 
 ## 7. 次に見るべき不足
 
