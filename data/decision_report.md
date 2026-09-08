@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T23:36:25.916752+00:00
+- generated_at: 2026-09-08T23:41:30.619404+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14020**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.49** / 初期 $100.00 (+19.49%)
-- 確定: 2603件 (Win 762 / Loss 989 / Flat 852) / pending 3件 / skip 2885件
+- 確定: 2603件 (Win 762 / Loss 989 / Flat 852) / pending 3件 / skip 2886件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000285 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: DOGS/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $119.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T23:36:15.813692+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78428.1
-- Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T23:41:17.531233+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=78422.9
+- Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +10.02% | $1,116,196.02 |
-| RAY/USDT:USDT | +8.78% | $2,930,640.78 |
-| EGLD/USDT:USDT | +7.89% | $2,035,389.72 |
-| FF/USDT:USDT | +5.82% | $1,967,253.00 |
-| DOT/USDT:USDT | +4.13% | $39,631,941.58 |
+| ARX/USDT:USDT | +11.30% | $1,130,211.71 |
+| RAY/USDT:USDT | +8.91% | $2,935,338.14 |
+| EGLD/USDT:USDT | +7.59% | $2,053,605.53 |
+| FF/USDT:USDT | +6.16% | $1,970,351.07 |
+| DOT/USDT:USDT | +4.36% | $39,797,454.37 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +4.54% | +4.66% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.58% | +2.70% |
-| ARX/USDT:USDT | below_1h_threshold | +1.72% | +1.85% |
-| FORM/USDT:USDT | below_1h_threshold | +1.52% | +1.64% |
-| PI/USDT:USDT | below_1h_threshold | +1.18% | +1.31% |
+| ARX/USDT:USDT | below_1h_threshold | +2.91% | +3.04% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.59% | +2.72% |
+| FORM/USDT:USDT | below_1h_threshold | +1.74% | +1.87% |
+| VVV/USDT:USDT | below_1h_threshold | +1.22% | +1.35% |
+| PI/USDT:USDT | below_1h_threshold | +1.14% | +1.27% |
 
 ## 7. 次に見るべき不足
 
