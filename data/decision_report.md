@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T12:31:17.089259+00:00
+- generated_at: 2026-09-08T12:36:18.380280+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13986**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T12:31:06.836365+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=78319.2
-- Funnel: target 1065 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-08T12:36:08.430296+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78363.0
+- Funnel: target 1066 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +56.58% | $24,768,619.58 |
-| BNCSTOCK/USDT:USDT | +24.16% | $1,947,794.31 |
-| FORM/USDT:USDT | +19.35% | $4,368,160.27 |
-| AKE/USDT:USDT | +17.74% | $10,577,323.00 |
-| BONER/USDT:USDT | +16.05% | $2,989,094.15 |
+| SOPH/USDT:USDT | +61.52% | $25,037,797.37 |
+| BNCSTOCK/USDT:USDT | +26.34% | $1,951,660.99 |
+| FORM/USDT:USDT | +20.21% | $4,387,923.83 |
+| AKE/USDT:USDT | +17.59% | $10,611,036.89 |
+| BONER/USDT:USDT | +17.42% | $2,990,771.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.76% | +2.87% |
-| ATOM/USDT:USDT | below_1h_threshold | +2.65% | +2.76% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.06% | +2.16% |
-| AKE/USDT:USDT | below_1h_threshold | +1.49% | +1.59% |
-| COTI/USDT:USDT | below_1h_threshold | +1.23% | +1.34% |
+| ATOM/USDT:USDT | below_1h_threshold | +3.66% | +3.70% |
+| VVV/USDT:USDT | below_1h_threshold | +3.19% | +3.23% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.08% | +3.13% |
+| ETC/USDT:USDT | below_1h_threshold | +1.54% | +1.59% |
+| HNT/USDT:USDT | below_1h_threshold | +1.40% | +1.44% |
 
 ## 7. 次に見るべき不足
 
