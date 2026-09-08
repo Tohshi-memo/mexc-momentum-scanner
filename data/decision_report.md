@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T20:46:24.098767+00:00
+- generated_at: 2026-09-08T20:51:18.092857+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14019**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T20:46:12.345726+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=78475.6
+- 更新: 2026-09-08T20:51:08.095122+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78481.8
 - Funnel: target 1070 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +8.44% | $1,045,290.42 |
-| FF/USDT:USDT | +4.54% | $1,572,698.33 |
-| DOT/USDT:USDT | +3.69% | $35,502,578.17 |
-| BTR/USDT:USDT | +3.69% | $1,179,339.78 |
-| EGLD/USDT:USDT | +3.42% | $1,542,981.53 |
+| ARX/USDT:USDT | +7.01% | $1,050,917.90 |
+| FF/USDT:USDT | +5.71% | $1,594,721.56 |
+| RAY/USDT:USDT | +4.72% | $2,344,271.38 |
+| BTR/USDT:USDT | +3.59% | $1,182,072.69 |
+| DOT/USDT:USDT | +3.44% | $35,755,036.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +3.29% | +3.20% |
-| XAN/USDT:USDT | below_1h_threshold | +1.61% | +1.53% |
-| RAY/USDT:USDT | below_1h_threshold | +1.33% | +1.24% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.18% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.12% | +1.04% |
+| BTR/USDT:USDT | below_1h_threshold | +3.23% | +3.13% |
+| RAY/USDT:USDT | below_1h_threshold | +2.96% | +2.87% |
+| SOLV/USDT:USDT | below_1h_threshold | +1.98% | +1.89% |
+| FF/USDT:USDT | below_1h_threshold | +1.97% | +1.88% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.17% |
 
 ## 7. 次に見るべき不足
 
