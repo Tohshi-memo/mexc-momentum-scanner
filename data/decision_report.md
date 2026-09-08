@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T06:06:22.548314+00:00
+- generated_at: 2026-09-08T06:11:14.237477+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13961**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T06:06:10.425184+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=78464.1
-- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T06:11:04.789341+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=78507.2
+- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +120.29% | $7,610,383.24 |
-| IOST/USDT:USDT | +22.88% | $4,904,073.44 |
-| MEMEROBINHOOD/USDT:USDT | +18.20% | $7,245,736.52 |
-| AERO/USDT:USDT | +14.04% | $5,274,419.63 |
-| INJ/USDT:USDT | +13.97% | $57,208,177.50 |
+| SOPH/USDT:USDT | +115.66% | $7,745,867.50 |
+| IOST/USDT:USDT | +22.19% | $4,930,521.66 |
+| MEMEROBINHOOD/USDT:USDT | +18.44% | $7,262,574.28 |
+| INJ/USDT:USDT | +14.04% | $57,344,205.06 |
+| XAN/USDT:USDT | +14.04% | $1,683,895.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +2.44% | +2.56% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.40% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.87% | +1.99% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +1.75% | +1.87% |
-| IOST/USDT:USDT | below_1h_threshold | +1.38% | +1.50% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.26% | +3.32% |
+| SOPH/USDT:USDT | below_1h_threshold | +3.14% | +3.20% |
+| AKE/USDT:USDT | below_1h_threshold | +3.00% | +3.06% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.35% |
+| BONER/USDT:USDT | below_1h_threshold | +2.23% | +2.29% |
 
 ## 7. 次に見るべき不足
 
