@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T07:21:56.964605+00:00
+- generated_at: 2026-09-08T07:26:15.665994+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13967**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.33** / 初期 $100.00 (+22.33%)
-- 確定: 2556件 (Win 752 / Loss 959 / Flat 845) / pending 2件 / skip 2878件
+- 確定: 2556件 (Win 752 / Loss 959 / Flat 845) / pending 3件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000321 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MEMEROBINHOOD/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.33
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T07:21:44.794240+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=78412.3
-- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T07:26:05.651367+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=78455.8
+- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +108.11% | $9,552,119.54 |
-| FORM/USDT:USDT | +32.58% | $1,126,592.57 |
-| MEMEROBINHOOD/USDT:USDT | +21.19% | $7,381,141.19 |
-| AKE/USDT:USDT | +16.01% | $12,584,552.77 |
-| AERO/USDT:USDT | +13.07% | $5,599,638.48 |
+| SOPH/USDT:USDT | +113.15% | $9,649,614.21 |
+| FORM/USDT:USDT | +37.22% | $1,191,292.62 |
+| MEMEROBINHOOD/USDT:USDT | +19.88% | $7,388,350.01 |
+| AKE/USDT:USDT | +16.61% | $12,618,038.58 |
+| IOST/USDT:USDT | +12.84% | $5,031,103.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.20% | +4.04% |
-| FORM/USDT:USDT | below_1h_threshold | +3.33% | +3.18% |
-| ICP/USDT:USDT | below_1h_threshold | +1.36% | +1.21% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.10% | +0.95% |
-| XPL/USDT:USDT | below_1h_threshold | +1.09% | +0.94% |
+| COTI/USDT:USDT | below_1h_threshold | +3.39% | +3.18% |
+| ETC/USDT:USDT | below_1h_threshold | +1.46% | +1.25% |
+| XPL/USDT:USDT | below_1h_threshold | +1.45% | +1.23% |
+| ICP/USDT:USDT | below_1h_threshold | +1.26% | +1.05% |
+| BONER/USDT:USDT | below_1h_threshold | +1.25% | +1.04% |
 
 ## 7. 次に見るべき不足
 
