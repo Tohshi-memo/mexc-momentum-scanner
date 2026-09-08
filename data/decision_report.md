@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T11:56:31.163406+00:00
+- generated_at: 2026-09-08T12:01:12.908830+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13984**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T11:56:15.618143+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78381.7
-- Funnel: target 1065 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T12:01:04.756087+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78361.4
+- Funnel: target 1065 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +79.31% | $21,321,298.39 |
-| BNCSTOCK/USDT:USDT | +28.02% | $1,891,138.26 |
-| G/USDT:USDT | +22.24% | $1,512,881.47 |
-| MEMEROBINHOOD/USDT:USDT | +19.76% | $5,703,198.31 |
-| FORM/USDT:USDT | +19.67% | $4,296,938.68 |
+| SOPH/USDT:USDT | +76.64% | $22,750,368.25 |
+| BNCSTOCK/USDT:USDT | +25.42% | $1,893,832.28 |
+| MEMEROBINHOOD/USDT:USDT | +19.16% | $5,517,070.29 |
+| G/USDT:USDT | +18.83% | $1,546,203.52 |
+| BONER/USDT:USDT | +18.60% | $2,973,100.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.85% | +2.04% |
-| COTI/USDT:USDT | below_1h_threshold | +1.77% | +1.96% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.62% | +1.81% |
-| BTR/USDT:USDT | below_1h_threshold | +1.61% | +1.80% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.55% | +1.74% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.97% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.91% | +0.96% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.84% | +0.89% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.79% | +0.84% |
+| VET/USDT:USDT | below_1h_threshold | +0.56% | +0.61% |
 
 ## 7. 次に見るべき不足
 
