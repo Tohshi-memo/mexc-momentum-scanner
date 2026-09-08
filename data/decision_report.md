@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T20:16:22.087490+00:00
+- generated_at: 2026-09-08T20:21:21.425957+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14018**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T20:16:10.066994+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=78540.6
+- 更新: 2026-09-08T20:21:11.424029+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78488.1
 - Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +8.58% | $1,038,383.83 |
-| DOT/USDT:USDT | +6.30% | $32,589,648.46 |
-| BNCSTOCK/USDT:USDT | +3.88% | $2,592,833.85 |
-| FF/USDT:USDT | +3.72% | $1,449,867.75 |
-| EGLD/USDT:USDT | +3.69% | $1,510,821.85 |
+| ARX/USDT:USDT | +8.94% | $1,039,369.94 |
+| DOT/USDT:USDT | +5.66% | $32,889,523.76 |
+| BNCSTOCK/USDT:USDT | +5.64% | $2,594,399.64 |
+| BONER/USDT:USDT | +5.50% | $1,970,657.78 |
+| FF/USDT:USDT | +3.78% | $1,470,426.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOT/USDT:USDT | below_1h_threshold | +2.26% | +2.09% |
-| HNT/USDT:USDT | below_1h_threshold | +1.54% | +1.37% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.09% |
-| RAY/USDT:USDT | below_1h_threshold | +1.16% | +0.99% |
-| STRK/USDT:USDT | below_1h_threshold | +1.14% | +0.98% |
+| DOT/USDT:USDT | below_1h_threshold | +1.71% | +1.61% |
+| SOLV/USDT:USDT | below_1h_threshold | +1.47% | +1.37% |
+| RAY/USDT:USDT | below_1h_threshold | +1.43% | +1.33% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.16% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.18% | +1.08% |
 
 ## 7. 次に見るべき不足
 
