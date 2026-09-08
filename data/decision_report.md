@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T15:11:16.145022+00:00
+- generated_at: 2026-09-08T15:16:11.995989+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14006**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T15:11:06.070218+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78600.0
+- 更新: 2026-09-08T15:16:04.007612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=78643.1
 - Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +52.18% | $34,113,815.32 |
-| USELESS/USDT:USDT | +34.60% | $17,704,408.58 |
-| VVV/USDT:USDT | +33.51% | $6,484,181.05 |
-| BNCSTOCK/USDT:USDT | +27.66% | $2,406,469.46 |
-| AKE/USDT:USDT | +19.06% | $10,597,537.36 |
+| SOPH/USDT:USDT | +50.06% | $34,319,897.84 |
+| USELESS/USDT:USDT | +34.45% | $17,871,219.91 |
+| VVV/USDT:USDT | +34.02% | $6,588,317.32 |
+| BNCSTOCK/USDT:USDT | +28.89% | $2,412,229.55 |
+| AKE/USDT:USDT | +18.91% | $10,607,978.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.40% | +3.30% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.34% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.08% | +1.99% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.85% | +1.75% |
-| PONS/USDT:USDT | below_1h_threshold | +1.79% | +1.70% |
+| PONS/USDT:USDT | below_1h_threshold | +3.29% | +3.14% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.12% | +2.97% |
+| DOT/USDT:USDT | below_1h_threshold | +2.78% | +2.63% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.28% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.29% | +2.14% |
 
 ## 7. 次に見るべき不足
 
