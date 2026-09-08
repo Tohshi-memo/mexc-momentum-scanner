@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T20:26:14.674576+00:00
+- generated_at: 2026-09-08T20:31:14.528059+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14018**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T20:26:06.914398+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=78469.9
+- 更新: 2026-09-08T20:31:07.557199+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=78517.2
 - Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +8.16% | $1,040,134.74 |
-| DOT/USDT:USDT | +5.93% | $33,170,952.12 |
-| BNCSTOCK/USDT:USDT | +5.33% | $2,597,259.70 |
-| BONER/USDT:USDT | +4.94% | $1,972,626.24 |
-| DOGS/USDT:USDT | +4.74% | $2,631,269.36 |
+| ARX/USDT:USDT | +9.16% | $1,040,416.37 |
+| DOT/USDT:USDT | +5.17% | $33,421,971.65 |
+| BONER/USDT:USDT | +5.09% | $1,973,330.63 |
+| BNCSTOCK/USDT:USDT | +4.86% | $2,597,857.12 |
+| DOGS/USDT:USDT | +4.45% | $2,645,153.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DOGS/USDT:USDT | below_1h_threshold | +2.34% | +2.26% |
-| DOT/USDT:USDT | below_1h_threshold | +1.96% | +1.88% |
-| RAY/USDT:USDT | below_1h_threshold | +1.79% | +1.71% |
-| SOLV/USDT:USDT | below_1h_threshold | +1.76% | +1.68% |
-| CP/USDT:USDT | below_1h_threshold | +1.71% | +1.64% |
+| DOGS/USDT:USDT | below_1h_threshold | +2.23% | +2.09% |
+| SOLV/USDT:USDT | below_1h_threshold | +2.07% | +1.94% |
+| CP/USDT:USDT | below_1h_threshold | +1.77% | +1.63% |
+| BTR/USDT:USDT | below_1h_threshold | +1.61% | +1.48% |
+| VET/USDT:USDT | below_1h_threshold | +1.35% | +1.21% |
 
 ## 7. 次に見るべき不足
 
