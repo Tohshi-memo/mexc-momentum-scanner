@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T13:21:24.350639+00:00
+- generated_at: 2026-09-08T13:26:34.328351+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13990**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.80** / 初期 $100.00 (+20.80%)
-- 確定: 2579件 (Win 756 / Loss 972 / Flat 851) / pending 3件 / skip 2878件
+- 確定: 2579件 (Win 756 / Loss 972 / Flat 851) / pending 4件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000105 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: MEMEROBINHOOD/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $120.80
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T13:21:13.749280+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=78390.2
-- Funnel: target 1070 → liquid 153 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=1
+- 更新: 2026-09-08T13:26:18.575380+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78359.6
+- Funnel: target 1070 → liquid 154 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +57.38% | $27,356,224.24 |
-| BNCSTOCK/USDT:USDT | +45.52% | $2,105,375.11 |
-| FORM/USDT:USDT | +24.73% | $4,649,345.46 |
-| AKE/USDT:USDT | +17.09% | $10,370,664.32 |
-| USELESS/USDT:USDT | +15.62% | $13,628,004.30 |
+| SOPH/USDT:USDT | +57.46% | $27,539,814.57 |
+| BNCSTOCK/USDT:USDT | +42.41% | $2,113,141.66 |
+| FORM/USDT:USDT | +22.14% | $4,703,466.92 |
+| USELESS/USDT:USDT | +19.25% | $13,770,746.01 |
+| AKE/USDT:USDT | +16.92% | $10,385,931.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FORM/USDT:USDT | below_1h_threshold | +3.52% | +3.56% |
-| PONS/USDT:USDT | below_1h_threshold | +2.93% | +2.97% |
-| KORU/USDT:USDT | below_1h_threshold | +2.35% | +2.39% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.26% | +2.30% |
-| HNT/USDT:USDT | below_1h_threshold | +1.80% | +1.83% |
+| PONS/USDT:USDT | below_1h_threshold | +2.96% | +3.03% |
+| KORU/USDT:USDT | below_1h_threshold | +2.35% | +2.42% |
+| COTI/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
+| FORM/USDT:USDT | below_1h_threshold | +1.53% | +1.61% |
+| HNT/USDT:USDT | below_1h_threshold | +1.25% | +1.32% |
 
 ## 7. 次に見るべき不足
 
