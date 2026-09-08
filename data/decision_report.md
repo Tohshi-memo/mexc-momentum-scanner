@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T18:56:32.377229+00:00
+- generated_at: 2026-09-08T19:01:27.101454+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14017**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T18:56:19.555097+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=78338.0
-- Funnel: target 1070 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T19:01:19.386120+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78387.0
+- Funnel: target 1070 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +11.16% | $1,979,611.76 |
-| BONER/USDT:USDT | +9.73% | $2,151,275.90 |
-| XAN/USDT:USDT | +3.24% | $1,681,528.63 |
-| RAY/USDT:USDT | +2.76% | $2,371,585.14 |
-| BNCSTOCK/USDT:USDT | +2.35% | $2,556,951.21 |
+| DOGS/USDT:USDT | +9.88% | $1,996,160.20 |
+| BONER/USDT:USDT | +8.24% | $2,038,115.62 |
+| MARSCOIN/USDT:USDT | +3.35% | $2,789,196.53 |
+| BNCSTOCK/USDT:USDT | +3.03% | $2,554,651.50 |
+| XAN/USDT:USDT | +2.83% | $1,638,703.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FF/USDT:USDT | below_1h_threshold | +2.05% | +2.21% |
-| XPL/USDT:USDT | below_1h_threshold | +1.86% | +2.02% |
-| INJ/USDT:USDT | below_1h_threshold | +1.24% | +1.41% |
-| RAY/USDT:USDT | below_1h_threshold | +0.87% | +1.04% |
-| DRAM/USDT:USDT | below_1h_threshold | +0.67% | +0.83% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.21% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.49% | +1.51% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
 
 ## 7. 次に見るべき不足
 
