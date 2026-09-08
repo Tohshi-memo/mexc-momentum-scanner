@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T09:56:29.023277+00:00
+- generated_at: 2026-09-08T10:01:17.297950+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13977**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T09:56:14.045064+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=78716.4
-- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.8 >= 65=1, 4h RSI 95.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T10:01:07.387688+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=78703.0
+- Funnel: target 1065 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +140.84% | $15,354,174.47 |
-| BNCSTOCK/USDT:USDT | +49.53% | $1,530,040.24 |
-| FORM/USDT:USDT | +33.60% | $3,590,114.82 |
-| USELESS/USDT:USDT | +16.35% | $11,942,575.26 |
-| AERO/USDT:USDT | +15.72% | $5,910,462.36 |
+| SOPH/USDT:USDT | +138.20% | $15,470,388.06 |
+| BNCSTOCK/USDT:USDT | +50.38% | $1,546,526.45 |
+| FORM/USDT:USDT | +27.52% | $3,650,344.78 |
+| USELESS/USDT:USDT | +16.38% | $11,163,562.85 |
+| AERO/USDT:USDT | +14.86% | $5,913,769.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APT/USDT:USDT | below_1h_threshold | +4.90% | +4.49% |
-| XPL/USDT:USDT | below_1h_threshold | +3.71% | +3.30% |
-| IOST/USDT:USDT | below_1h_threshold | +3.11% | +2.70% |
-| AERO/USDT:USDT | below_1h_threshold | +2.83% | +2.42% |
-| ARB/USDT:USDT | below_1h_threshold | +2.54% | +2.13% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.22% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.15% | +1.18% |
+| BONER/USDT:USDT | below_1h_threshold | +0.82% | +0.85% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.83% |
 
 ## 7. 次に見るべき不足
 
