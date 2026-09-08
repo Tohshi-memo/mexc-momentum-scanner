@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T05:56:14.147218+00:00
+- generated_at: 2026-09-08T06:01:17.326702+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13960**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T05:56:03.541511+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78605.7
-- Funnel: target 1065 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T06:01:07.376842+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=78509.6
+- Funnel: target 1065 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +110.01% | $7,233,931.14 |
-| IOST/USDT:USDT | +22.20% | $4,926,725.54 |
-| MEMEROBINHOOD/USDT:USDT | +17.36% | $7,253,347.72 |
-| AERO/USDT:USDT | +14.14% | $5,299,725.94 |
-| XAN/USDT:USDT | +13.52% | $1,790,652.44 |
+| SOPH/USDT:USDT | +109.40% | $7,345,062.85 |
+| IOST/USDT:USDT | +20.17% | $4,883,642.95 |
+| MEMEROBINHOOD/USDT:USDT | +17.00% | $7,236,348.97 |
+| XAN/USDT:USDT | +14.33% | $1,670,330.13 |
+| AERO/USDT:USDT | +14.16% | $5,268,277.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOPH/USDT:USDT | below_1h_threshold | +3.30% | +3.36% |
-| KAITO/USDT:USDT | below_1h_threshold | +2.79% | +2.85% |
-| CATI/USDT:USDT | below_1h_threshold | +2.73% | +2.79% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.56% | +2.62% |
-| ARB/USDT:USDT | below_1h_threshold | +2.01% | +2.07% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.29% | +2.34% |
+| SOLV/USDT:USDT | below_1h_threshold | +1.44% | +1.49% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +1.03% | +1.09% |
+| AKE/USDT:USDT | below_1h_threshold | +0.44% | +0.49% |
+| HNT/USDT:USDT | below_1h_threshold | +0.44% | +0.49% |
 
 ## 7. 次に見るべき不足
 
