@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-08T01:31:20.980690+00:00
+- generated_at: 2026-09-08T01:36:23.753809+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13931**
+- closed shadow trades: **13932**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13931, expectancy=-0.01%
+- 全期間 MARKET基準: n=13932, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-1.06%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$973.37** / 初期 $100.00 (+873.37%)
-- 確定: 5204件 (Win 1565 / Loss 1689 / Flat 1950) / skip 5288件
-- 成長率目線: 平均log +0.000437 / 幾何平均 +0.044% per trade / maxDD +8.46%
+- 残高: **$979.51** / 初期 $100.00 (+879.51%)
+- 確定: 5205件 (Win 1566 / Loss 1689 / Flat 1950) / skip 5288件
+- 成長率目線: 平均log +0.000438 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `MARKET_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BONER/USDT:USDT `LIMIT_1PCT_LONG` TP_HIT account +1.00% 残高後 $973.37
+- 最新: BONER/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $979.51
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$188.18** / 初期 $100.00 (+88.18%)
-- 確定: 2572件 (Win 717 / Loss 618 / Flat 1237) / skip 4770件
+- 確定: 2572件 (Win 717 / Loss 618 / Flat 1237) / skip 4771件
 - 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $188.18
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.16** / 初期 $100.00 (+22.16%)
-- 確定: 2521件 (Win 744 / Loss 946 / Flat 831) / pending 6件 / skip 2877件
+- 確定: 2522件 (Win 744 / Loss 946 / Flat 832) / pending 6件 / skip 2877件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000394 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: BONER/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $122.16
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000396 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: BONER/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.16
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T01:31:10.562959+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=79327.9
+- 更新: 2026-09-08T01:36:13.592606+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=79300.1
 - Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.9 >= 65=1
+- Strict後reject: 4h RSI 82.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +39.64% | $6,891,761.27 |
-| BONER/USDT:USDT | +37.54% | $4,240,531.49 |
-| SOPH/USDT:USDT | +33.35% | $2,224,745.82 |
-| AERO/USDT:USDT | +15.04% | $4,166,483.01 |
-| INJ/USDT:USDT | +12.77% | $46,658,898.39 |
+| MEMEROBINHOOD/USDT:USDT | +41.43% | $6,901,107.73 |
+| BONER/USDT:USDT | +40.70% | $4,287,080.03 |
+| SOPH/USDT:USDT | +33.53% | $2,235,938.94 |
+| AERO/USDT:USDT | +14.95% | $4,177,034.41 |
+| INJ/USDT:USDT | +13.88% | $47,080,429.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.19% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.75% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.58% | +2.52% |
-| IOST/USDT:USDT | below_1h_threshold | +2.39% | +2.34% |
-| UNI/USDT:USDT | below_1h_threshold | +2.13% | +2.08% |
+| PONS/USDT:USDT | below_1h_threshold | +3.44% | +3.42% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.23% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.03% | +3.01% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.78% |
+| VVV/USDT:USDT | below_1h_threshold | +2.52% | +2.51% |
 
 ## 7. 次に見るべき不足
 
