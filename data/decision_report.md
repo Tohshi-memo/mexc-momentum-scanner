@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T20:06:18.208625+00:00
+- generated_at: 2026-09-08T20:11:22.494594+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14017**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T20:06:08.267414+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=78446.1
+- 更新: 2026-09-08T20:11:12.516370+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=78502.8
 - Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARX/USDT:USDT | +8.30% | $1,036,701.46 |
-| BONER/USDT:USDT | +6.32% | $1,958,506.98 |
-| DOT/USDT:USDT | +3.67% | $31,238,082.74 |
-| FF/USDT:USDT | +3.59% | $1,440,812.51 |
-| DOGS/USDT:USDT | +3.34% | $2,549,270.12 |
+| ARX/USDT:USDT | +9.16% | $1,038,015.66 |
+| DOT/USDT:USDT | +6.44% | $32,090,508.42 |
+| BONER/USDT:USDT | +4.90% | $1,961,881.39 |
+| FF/USDT:USDT | +4.44% | $1,447,616.54 |
+| EGLD/USDT:USDT | +3.91% | $1,508,161.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.21% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
-| DOGS/USDT:USDT | below_1h_threshold | +1.07% | +1.02% |
-| XAN/USDT:USDT | below_1h_threshold | +1.00% | +0.96% |
-| SOLV/USDT:USDT | below_1h_threshold | +0.69% | +0.64% |
+| DOT/USDT:USDT | below_1h_threshold | +2.43% | +2.31% |
+| HNT/USDT:USDT | below_1h_threshold | +1.47% | +1.35% |
+| CP/USDT:USDT | below_1h_threshold | +1.31% | +1.19% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.14% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.12% | +1.00% |
 
 ## 7. 次に見るべき不足
 
