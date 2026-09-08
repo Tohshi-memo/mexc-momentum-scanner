@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T09:21:23.876317+00:00
+- generated_at: 2026-09-08T09:26:24.535506+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13972**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.53** / 初期 $100.00 (+22.53%)
-- 確定: 2561件 (Win 753 / Loss 960 / Flat 848) / pending 4件 / skip 2878件
+- 確定: 2561件 (Win 753 / Loss 960 / Flat 848) / pending 5件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000271 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BNCSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T09:21:11.504396+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78387.6
-- Funnel: target 1065 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.6 >= 65=1
+- 更新: 2026-09-08T09:26:15.590939+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78416.3
+- Funnel: target 1065 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.2 >= 65=1, 4h RSI 94.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +119.25% | $12,476,225.31 |
-| BNCSTOCK/USDT:USDT | +54.39% | $1,441,146.62 |
-| FORM/USDT:USDT | +41.42% | $3,328,409.02 |
-| AKE/USDT:USDT | +15.95% | $12,455,893.92 |
-| MEMEROBINHOOD/USDT:USDT | +14.37% | $6,358,568.36 |
+| SOPH/USDT:USDT | +126.27% | $12,833,352.63 |
+| BNCSTOCK/USDT:USDT | +50.89% | $1,454,308.90 |
+| FORM/USDT:USDT | +43.10% | $3,348,243.73 |
+| AKE/USDT:USDT | +15.25% | $12,467,714.15 |
+| AERO/USDT:USDT | +14.32% | $5,797,670.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FORM/USDT:USDT | below_1h_threshold | +3.83% | +3.84% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.45% | +2.46% |
-| XPL/USDT:USDT | below_1h_threshold | +2.35% | +2.36% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.93% | +1.94% |
-| VVV/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
+| FORM/USDT:USDT | below_1h_threshold | +4.92% | +4.89% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.93% | +1.90% |
+| XPL/USDT:USDT | below_1h_threshold | +1.83% | +1.80% |
+| AERO/USDT:USDT | below_1h_threshold | +1.73% | +1.71% |
+| LIT/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
 
 ## 7. 次に見るべき不足
 
