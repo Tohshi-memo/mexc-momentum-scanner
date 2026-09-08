@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T01:41:21.864998+00:00
+- generated_at: 2026-09-08T01:46:20.530714+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13932**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T01:41:11.128713+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=79290.7
+- 更新: 2026-09-08T01:46:09.644523+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=79301.8
 - Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.1 >= 65=1
+- Strict後reject: 4h RSI 81.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +41.07% | $6,904,129.79 |
-| BONER/USDT:USDT | +40.61% | $4,307,260.16 |
-| SOPH/USDT:USDT | +32.88% | $2,247,237.07 |
-| AERO/USDT:USDT | +15.84% | $4,185,975.42 |
-| INJ/USDT:USDT | +14.40% | $47,516,880.65 |
+| MEMEROBINHOOD/USDT:USDT | +40.00% | $6,913,340.20 |
+| SOPH/USDT:USDT | +34.35% | $2,251,242.37 |
+| BONER/USDT:USDT | +33.19% | $4,345,595.65 |
+| AERO/USDT:USDT | +16.43% | $4,193,885.43 |
+| INJ/USDT:USDT | +14.56% | $47,864,585.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.76% | +3.75% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +3.62% | +3.62% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.24% |
-| VVV/USDT:USDT | below_1h_threshold | +2.83% | +2.83% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.79% |
+| PONS/USDT:USDT | below_1h_threshold | +3.61% | +3.59% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.24% | +3.22% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +3.17% | +3.15% |
+| VVV/USDT:USDT | below_1h_threshold | +3.03% | +3.01% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +2.80% | +2.78% |
 
 ## 7. 次に見るべき不足
 
