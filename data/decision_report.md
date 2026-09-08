@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T11:21:17.248081+00:00
+- generated_at: 2026-09-08T11:26:18.061676+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13983**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.45** / 初期 $100.00 (+21.45%)
-- 確定: 2572件 (Win 755 / Loss 967 / Flat 850) / pending 3件 / skip 2878件
+- 確定: 2572件 (Win 755 / Loss 967 / Flat 850) / pending 4件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000149 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BTR/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $121.45
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T11:21:07.255325+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=78378.7
-- Funnel: target 1065 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T11:26:05.717083+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78440.8
+- Funnel: target 1065 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +101.83% | $19,151,874.58 |
-| BNCSTOCK/USDT:USDT | +33.98% | $1,796,831.60 |
-| FORM/USDT:USDT | +20.49% | $4,176,813.55 |
-| MEMEROBINHOOD/USDT:USDT | +17.36% | $5,640,811.33 |
-| AERO/USDT:USDT | +16.25% | $6,208,343.50 |
+| SOPH/USDT:USDT | +102.59% | $19,357,305.00 |
+| BNCSTOCK/USDT:USDT | +29.46% | $1,825,358.06 |
+| MEMEROBINHOOD/USDT:USDT | +21.79% | $5,653,540.67 |
+| FORM/USDT:USDT | +20.02% | $4,190,268.24 |
+| AERO/USDT:USDT | +15.98% | $6,226,318.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.36% | +4.56% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.59% | +3.79% |
-| BONER/USDT:USDT | below_1h_threshold | +2.98% | +3.17% |
-| COTI/USDT:USDT | below_1h_threshold | +1.35% | +1.55% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.18% | +1.38% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.78% | +4.90% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.17% | +3.29% |
+| BONER/USDT:USDT | below_1h_threshold | +2.46% | +2.57% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.66% | +1.78% |
+| BTR/USDT:USDT | below_1h_threshold | +1.35% | +1.47% |
 
 ## 7. 次に見るべき不足
 
