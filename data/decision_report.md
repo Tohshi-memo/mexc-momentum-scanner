@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T04:56:30.854382+00:00
+- generated_at: 2026-09-08T05:01:56.599066+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13954**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T04:56:15.920618+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=78668.1
-- Funnel: target 1062 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.9 >= 65=1, 4h RSI 84.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-08T05:01:46.589408+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78594.3
+- Funnel: target 1062 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +109.34% | $4,617,080.02 |
-| IOST/USDT:USDT | +30.46% | $4,676,612.96 |
-| MEMEROBINHOOD/USDT:USDT | +20.23% | $7,145,249.01 |
-| CP/USDT:USDT | +18.49% | $2,857,961.36 |
-| AERO/USDT:USDT | +16.99% | $5,031,006.84 |
+| SOPH/USDT:USDT | +105.42% | $4,712,121.98 |
+| IOST/USDT:USDT | +27.81% | $4,660,046.63 |
+| MEMEROBINHOOD/USDT:USDT | +20.71% | $7,143,038.73 |
+| CP/USDT:USDT | +18.44% | $2,495,301.94 |
+| AERO/USDT:USDT | +15.02% | $5,058,581.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.70% | +2.97% |
-| AVNT/USDT:USDT | below_1h_threshold | +2.56% | +2.83% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.91% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.61% | +1.88% |
-| AKE/USDT:USDT | below_1h_threshold | +1.55% | +1.82% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.41% | +1.48% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.94% |
+| LIT/USDT:USDT | below_1h_threshold | +0.66% | +0.73% |
+| ARB/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
+| HEMI/USDT:USDT | below_1h_threshold | +0.49% | +0.57% |
 
 ## 7. 次に見るべき不足
 
