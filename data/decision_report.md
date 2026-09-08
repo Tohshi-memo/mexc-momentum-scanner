@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T17:01:20.088886+00:00
+- generated_at: 2026-09-08T17:06:16.950890+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14014**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T17:01:10.024995+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78718.2
-- Funnel: target 1070 → liquid 158 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=1, errors=0
+- 更新: 2026-09-08T17:06:08.957678+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78771.4
+- Funnel: target 1070 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BONER/USDT:USDT | +11.29% | $2,168,141.10 |
-| MARSCOIN/USDT:USDT | +5.01% | $2,639,630.40 |
-| LIT/USDT:USDT | +2.97% | $5,522,631.84 |
-| BTR/USDT:USDT | +2.61% | $1,242,100.47 |
-| CP/USDT:USDT | +2.59% | $2,969,131.53 |
+| BONER/USDT:USDT | +11.05% | $2,175,237.67 |
+| MARSCOIN/USDT:USDT | +5.18% | $2,662,481.08 |
+| LIT/USDT:USDT | +3.72% | $5,554,537.99 |
+| BTR/USDT:USDT | +3.05% | $1,243,491.61 |
+| UAI/USDT:USDT | +2.60% | $14,489,231.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_1h_threshold | +3.03% | +3.00% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.98% | +1.96% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.33% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.15% |
-| CP/USDT:USDT | below_1h_threshold | +0.44% | +0.42% |
+| PONS/USDT:USDT | below_1h_threshold | +2.00% | +1.91% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.98% | +1.89% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.92% | +1.83% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.35% | +1.26% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.08% |
 
 ## 7. 次に見るべき不足
 
