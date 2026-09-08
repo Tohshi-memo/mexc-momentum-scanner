@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T02:06:16.119946+00:00
+- generated_at: 2026-09-08T02:11:18.620218+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13937**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T02:06:04.135578+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=79336.0
-- Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-08T02:11:08.505404+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=79299.9
+- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +44.47% | $2,425,644.94 |
-| MEMEROBINHOOD/USDT:USDT | +34.13% | $6,894,818.47 |
-| BONER/USDT:USDT | +25.36% | $4,238,234.19 |
-| INJ/USDT:USDT | +16.45% | $48,418,434.45 |
-| AERO/USDT:USDT | +15.79% | $4,359,989.57 |
+| SOPH/USDT:USDT | +43.14% | $2,456,768.42 |
+| MEMEROBINHOOD/USDT:USDT | +34.37% | $6,900,290.40 |
+| BONER/USDT:USDT | +25.80% | $4,259,061.89 |
+| INJ/USDT:USDT | +16.54% | $49,165,936.24 |
+| AERO/USDT:USDT | +15.68% | $4,369,467.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOPH/USDT:USDT | below_1h_threshold | +1.14% | +1.24% |
-| XAN/USDT:USDT | below_1h_threshold | +1.12% | +1.21% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.13% |
-| IOST/USDT:USDT | below_1h_threshold | +0.94% | +1.03% |
-| INJ/USDT:USDT | below_1h_threshold | +0.93% | +1.03% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.45% | +1.58% |
+| XAN/USDT:USDT | below_1h_threshold | +1.00% | +1.13% |
+| AVNT/USDT:USDT | below_1h_threshold | +0.99% | +1.13% |
+| INJ/USDT:USDT | below_1h_threshold | +0.95% | +1.09% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.95% | +1.09% |
 
 ## 7. 次に見るべき不足
 
