@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T04:41:33.244591+00:00
+- generated_at: 2026-09-08T04:46:32.670602+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13952**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.46** / 初期 $100.00 (+22.46%)
-- 確定: 2542件 (Win 749 / Loss 953 / Flat 840) / pending 4件 / skip 2878件
+- 確定: 2542件 (Win 749 / Loss 953 / Flat 840) / pending 5件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000436 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SOPH/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $122.46
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T04:41:18.772765+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78784.6
-- Funnel: target 1062 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.3 >= 65=1
+- 更新: 2026-09-08T04:46:19.223161+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=78769.2
+- Funnel: target 1062 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.4 >= 65=1, 4h RSI 85.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +93.71% | $4,190,579.87 |
-| IOST/USDT:USDT | +25.28% | $4,499,968.45 |
-| MEMEROBINHOOD/USDT:USDT | +22.87% | $7,069,707.21 |
-| AERO/USDT:USDT | +19.54% | $4,950,490.18 |
-| CP/USDT:USDT | +17.46% | $2,842,243.39 |
+| SOPH/USDT:USDT | +96.61% | $4,282,449.07 |
+| IOST/USDT:USDT | +32.98% | $4,584,548.52 |
+| CP/USDT:USDT | +19.17% | $2,849,874.82 |
+| AERO/USDT:USDT | +17.81% | $4,982,301.58 |
+| MEMEROBINHOOD/USDT:USDT | +14.37% | $7,096,560.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOST/USDT:USDT | below_1h_threshold | +4.98% | +5.10% |
-| AVNT/USDT:USDT | below_1h_threshold | +2.48% | +2.60% |
-| CAKE/USDT:USDT | below_1h_threshold | +2.16% | +2.28% |
-| UAI/USDT:USDT | below_1h_threshold | +2.13% | +2.25% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.00% | +2.12% |
+| UAI/USDT:USDT | below_1h_threshold | +3.21% | +3.35% |
+| AVNT/USDT:USDT | below_1h_threshold | +2.65% | +2.79% |
+| CAKE/USDT:USDT | below_1h_threshold | +2.44% | +2.59% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.15% | +2.29% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.64% | +1.78% |
 
 ## 7. 次に見るべき不足
 
