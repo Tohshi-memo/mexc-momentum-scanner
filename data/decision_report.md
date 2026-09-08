@@ -1,41 +1,41 @@
 # Decision Report
 
-- generated_at: 2026-09-08T03:21:14.686011+00:00
+- generated_at: 2026-09-08T03:26:38.448294+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13939**
+- closed shadow trades: **13940**
 
 ## 1. 今日の判断
 
-- 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13939, expectancy=-0.01%
-- 直近20件 MARKET基準: n=20, expectancy=+0.20%
+- 結論: **MARKET SHORTは実行候補。直近EV +0.80% / filled 20/20。**
+- 全期間 MARKET基準: n=13940, expectancy=-0.01%
+- 直近20件 MARKET基準: n=20, expectancy=+0.80%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | +0.20% | **+0.20%** |
+| MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_6PCT | 4/20 | 20.0% | +4.94% | **+0.99%** |
-| LIMIT_8PCT | 3/20 | 15.0% | +6.57% | **+0.99%** |
-| LIMIT_7PCT | 3/20 | 15.0% | +6.27% | **+0.94%** |
-| LIMIT_9PCT | 2/20 | 10.0% | +6.29% | **+0.63%** |
-| LIMIT_FIB1272 | 2/20 | 10.0% | +5.42% | **+0.54%** |
+| MARKET | 20/20 | 100.0% | +0.80% | **+0.80%** |
+| LIMIT_6PCT | 3/20 | 15.0% | +3.92% | **+0.59%** |
+| LIMIT_8PCT | 2/20 | 10.0% | +5.85% | **+0.59%** |
+| LIMIT_7PCT | 2/20 | 10.0% | +5.40% | **+0.54%** |
+| LIMIT_5PCT | 8/20 | 40.0% | +1.21% | **+0.49%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_1PCT_LONG | 17/20 | 85.0% | +1.14% | **+0.97%** |
-| LIMIT_2PCT_LONG | 15/20 | 75.0% | +0.97% | **+0.73%** |
-| LIMIT_ATR_LONG | 10/20 | 50.0% | +1.41% | **+0.71%** |
+| LIMIT_ATR_LONG | 11/20 | 55.0% | +1.22% | **+0.67%** |
 | LIMIT_9PCT_LONG | 4/20 | 20.0% | +2.82% | **+0.56%** |
-| LIMIT_6PCT_LONG | 8/20 | 40.0% | +1.20% | **+0.48%** |
+| LIMIT_6PCT_LONG | 9/20 | 45.0% | +0.83% | **+0.37%** |
+| LIMIT_1PCT_LONG | 17/20 | 85.0% | +0.43% | **+0.37%** |
+| LIMIT_2PCT_LONG | 15/20 | 75.0% | +0.17% | **+0.13%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,54 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$977.11** / 初期 $100.00 (+877.11%)
-- 確定: 5212件 (Win 1568 / Loss 1692 / Flat 1952) / skip 5288件
-- 成長率目線: 平均log +0.000437 / 幾何平均 +0.044% per trade / maxDD +8.46%
+- 残高: **$972.23** / 初期 $100.00 (+872.23%)
+- 確定: 5213件 (Win 1568 / Loss 1693 / Flat 1952) / skip 5288件
+- 成長率目線: 平均log +0.000436 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SOPH/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $977.11
+- 最新: MEMEROBINHOOD/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $972.23
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$188.18** / 初期 $100.00 (+88.18%)
-- 確定: 2572件 (Win 717 / Loss 618 / Flat 1237) / skip 4778件
+- 確定: 2572件 (Win 717 / Loss 618 / Flat 1237) / skip 4779件
 - 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1684 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1528 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $188.18
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$122.16** / 初期 $100.00 (+22.16%)
-- 確定: 2529件 (Win 746 / Loss 949 / Flat 834) / pending 4件 / skip 2877件
+- 残高: **$121.94** / 初期 $100.00 (+21.94%)
+- 確定: 2530件 (Win 746 / Loss 950 / Flat 834) / pending 5件 / skip 2877件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000426 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: SOPH/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.16
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000375 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: MEMEROBINHOOD/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.94
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T03:21:03.120589+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78813.1
-- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T03:26:24.258250+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=78811.1
+- Funnel: target 1062 → liquid 148 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +56.11% | $2,847,238.93 |
-| MEMEROBINHOOD/USDT:USDT | +36.52% | $6,964,069.92 |
-| AERO/USDT:USDT | +16.90% | $4,574,647.25 |
-| BONER/USDT:USDT | +15.72% | $4,209,071.54 |
-| INJ/USDT:USDT | +15.10% | $53,786,665.79 |
+| SOPH/USDT:USDT | +58.85% | $2,901,985.90 |
+| MEMEROBINHOOD/USDT:USDT | +36.16% | $6,968,989.83 |
+| CP/USDT:USDT | +31.03% | $2,378,010.13 |
+| AERO/USDT:USDT | +16.34% | $4,585,549.05 |
+| XAN/USDT:USDT | +15.03% | $1,898,959.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOPH/USDT:USDT | below_1h_threshold | +3.58% | +3.69% |
-| AKE/USDT:USDT | below_1h_threshold | +2.56% | +2.68% |
-| IOST/USDT:USDT | below_1h_threshold | +2.50% | +2.61% |
-| XAN/USDT:USDT | below_1h_threshold | +2.02% | +2.14% |
-| AERO/USDT:USDT | below_1h_threshold | +1.98% | +2.10% |
+| AKE/USDT:USDT | below_1h_threshold | +4.03% | +4.15% |
+| IOST/USDT:USDT | below_1h_threshold | +3.45% | +3.57% |
+| XAN/USDT:USDT | below_1h_threshold | +2.30% | +2.42% |
+| ACE/USDT:USDT | below_1h_threshold | +1.71% | +1.83% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.51% |
 
 ## 7. 次に見るべき不足
 
