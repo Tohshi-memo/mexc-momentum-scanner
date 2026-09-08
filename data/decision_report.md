@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-08T02:01:26.453903+00:00
+- generated_at: 2026-09-08T02:06:16.119946+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **13936**
+- closed shadow trades: **13937**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=13936, expectancy=-0.01%
+- 全期間 MARKET基準: n=13937, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.40%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -24,7 +24,7 @@
 | LIMIT_8PCT | 5/20 | 25.0% | +4.74% | **+1.19%** |
 | LIMIT_7PCT | 5/20 | 25.0% | +4.56% | **+1.14%** |
 | LIMIT_9PCT | 4/20 | 20.0% | +4.15% | **+0.83%** |
-| LIMIT_ATR | 8/20 | 40.0% | +2.06% | **+0.82%** |
+| LIMIT_ATR | 9/20 | 45.0% | +1.67% | **+0.75%** |
 | LIMIT_FIB1272 | 4/20 | 20.0% | +3.71% | **+0.74%** |
 
 ### シャドウ上位 LONG
@@ -47,31 +47,31 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$982.02** / 初期 $100.00 (+882.02%)
-- 確定: 5209件 (Win 1568 / Loss 1691 / Flat 1950) / skip 5288件
-- 成長率目線: 平均log +0.000439 / 幾何平均 +0.044% per trade / maxDD +8.46%
+- 確定: 5210件 (Win 1568 / Loss 1691 / Flat 1951) / skip 5288件
+- 成長率目線: 平均log +0.000438 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: BONER/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.63% 残高後 $982.02
+- 最新: SOPH/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $982.02
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$188.18** / 初期 $100.00 (+88.18%)
-- 確定: 2572件 (Win 717 / Loss 618 / Flat 1237) / skip 4775件
+- 確定: 2572件 (Win 717 / Loss 618 / Flat 1237) / skip 4776件
 - 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1597 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1668 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ACE/USDT:USDT `LIMIT_1PCT_LONG` EXPIRED account +0.00% 残高後 $188.18
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.37** / 初期 $100.00 (+22.37%)
-- 確定: 2526件 (Win 746 / Loss 948 / Flat 832) / pending 5件 / skip 2877件
+- 確定: 2527件 (Win 746 / Loss 948 / Flat 833) / pending 4件 / skip 2877件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000452 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: BONER/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.37
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000467 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: SOPH/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T02:01:15.741616+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=79397.5
+- 更新: 2026-09-08T02:06:04.135578+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=79336.0
 - Funnel: target 1062 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +42.88% | $2,390,226.28 |
-| MEMEROBINHOOD/USDT:USDT | +35.92% | $6,889,339.75 |
-| BONER/USDT:USDT | +28.87% | $4,224,201.59 |
-| AERO/USDT:USDT | +16.84% | $4,271,176.53 |
-| INJ/USDT:USDT | +15.78% | $48,100,817.52 |
+| SOPH/USDT:USDT | +44.47% | $2,425,644.94 |
+| MEMEROBINHOOD/USDT:USDT | +34.13% | $6,894,818.47 |
+| BONER/USDT:USDT | +25.36% | $4,238,234.19 |
+| INJ/USDT:USDT | +16.45% | $48,418,434.45 |
+| AERO/USDT:USDT | +15.79% | $4,359,989.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +0.40% | +0.41% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.39% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.26% | +0.28% |
-| ICP/USDT:USDT | below_1h_threshold | +0.23% | +0.25% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.14% | +1.24% |
+| XAN/USDT:USDT | below_1h_threshold | +1.12% | +1.21% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.03% | +1.13% |
+| IOST/USDT:USDT | below_1h_threshold | +0.94% | +1.03% |
+| INJ/USDT:USDT | below_1h_threshold | +0.93% | +1.03% |
 
 ## 7. 次に見るべき不足
 
