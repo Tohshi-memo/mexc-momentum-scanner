@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T12:51:12.582445+00:00
+- generated_at: 2026-09-08T12:56:20.371431+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13987**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T12:51:02.336690+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=78330.0
+- 更新: 2026-09-08T12:56:10.263872+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78413.7
 - Funnel: target 1070 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +56.01% | $25,907,043.39 |
-| BNCSTOCK/USDT:USDT | +37.78% | $1,979,827.14 |
-| FORM/USDT:USDT | +22.45% | $4,435,811.58 |
-| AKE/USDT:USDT | +16.59% | $10,751,514.10 |
-| BONER/USDT:USDT | +16.55% | $2,994,543.19 |
+| SOPH/USDT:USDT | +58.09% | $26,148,147.69 |
+| BNCSTOCK/USDT:USDT | +38.81% | $1,994,169.59 |
+| FORM/USDT:USDT | +21.94% | $4,504,294.91 |
+| MEMEROBINHOOD/USDT:USDT | +17.72% | $5,590,753.20 |
+| AKE/USDT:USDT | +16.27% | $10,778,125.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ATOM/USDT:USDT | below_1h_threshold | +3.18% | +3.27% |
-| VVV/USDT:USDT | below_1h_threshold | +3.17% | +3.26% |
-| FORM/USDT:USDT | below_1h_threshold | +2.87% | +2.96% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.68% | +2.77% |
-| PONS/USDT:USDT | below_1h_threshold | +2.10% | +2.19% |
+| VVV/USDT:USDT | below_1h_threshold | +3.76% | +3.75% |
+| ATOM/USDT:USDT | below_1h_threshold | +3.12% | +3.11% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.91% | +2.89% |
+| PONS/USDT:USDT | below_1h_threshold | +2.89% | +2.88% |
+| ETC/USDT:USDT | below_1h_threshold | +2.51% | +2.49% |
 
 ## 7. 次に見るべき不足
 
