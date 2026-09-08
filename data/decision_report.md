@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T19:01:27.101454+00:00
+- generated_at: 2026-09-08T19:06:23.486792+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14017**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T19:01:19.386120+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78387.0
-- Funnel: target 1070 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-08T19:06:13.488183+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=78446.0
+- Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| DOGS/USDT:USDT | +9.88% | $1,996,160.20 |
-| BONER/USDT:USDT | +8.24% | $2,038,115.62 |
-| MARSCOIN/USDT:USDT | +3.35% | $2,789,196.53 |
-| BNCSTOCK/USDT:USDT | +3.03% | $2,554,651.50 |
-| XAN/USDT:USDT | +2.83% | $1,638,703.66 |
+| BONER/USDT:USDT | +9.64% | $2,042,232.55 |
+| DOGS/USDT:USDT | +9.64% | $2,040,515.47 |
+| BNCSTOCK/USDT:USDT | +3.80% | $2,558,085.32 |
+| XPL/USDT:USDT | +3.36% | $10,989,599.86 |
+| MARSCOIN/USDT:USDT | +3.34% | $2,794,038.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.21% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.49% | +1.51% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.45% | +1.47% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.31% | +1.32% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +2.19% | +2.13% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.49% | +1.43% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.45% | +1.39% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.31% | +1.25% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.22% |
 
 ## 7. 次に見るべき不足
 
