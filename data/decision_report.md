@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T15:36:24.639801+00:00
+- generated_at: 2026-09-08T15:41:38.686838+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14007**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.72** / 初期 $100.00 (+19.72%)
-- 確定: 2596件 (Win 760 / Loss 984 / Flat 852) / pending 2件 / skip 2878件
+- 確定: 2596件 (Win 760 / Loss 984 / Flat 852) / pending 4件 / skip 2878件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000248 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VVV/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T15:36:12.132142+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78514.2
-- Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T15:41:23.536882+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=78556.4
+- Funnel: target 1070 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 3
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +44.83% | $35,081,021.69 |
-| VVV/USDT:USDT | +37.59% | $7,356,313.43 |
-| USELESS/USDT:USDT | +31.42% | $18,816,371.30 |
-| BNCSTOCK/USDT:USDT | +30.00% | $2,464,768.68 |
-| AKE/USDT:USDT | +21.94% | $10,893,010.97 |
+| SOPH/USDT:USDT | +45.32% | $35,214,408.17 |
+| USELESS/USDT:USDT | +35.70% | $19,169,694.22 |
+| VVV/USDT:USDT | +35.55% | $7,682,473.49 |
+| MEMEROBINHOOD/USDT:USDT | +30.53% | $5,049,924.76 |
+| BNCSTOCK/USDT:USDT | +29.87% | $2,470,298.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +4.90% | +4.92% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.77% | +4.79% |
-| DOT/USDT:USDT | below_1h_threshold | +4.58% | +4.59% |
-| VVV/USDT:USDT | below_1h_threshold | +3.80% | +3.82% |
-| ETC/USDT:USDT | below_1h_threshold | +3.52% | +3.53% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.15% | +4.11% |
+| DOT/USDT:USDT | below_1h_threshold | +4.04% | +4.01% |
+| ADA/USDT:USDT | below_1h_threshold | +3.44% | +3.40% |
+| ETC/USDT:USDT | below_1h_threshold | +3.38% | +3.34% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.63% | +2.59% |
 
 ## 7. 次に見るべき不足
 
