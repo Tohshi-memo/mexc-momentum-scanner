@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T10:16:10.337438+00:00
+- generated_at: 2026-09-08T10:21:19.757021+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **13980**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T10:16:02.443632+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78710.2
+- 更新: 2026-09-08T10:21:09.746461+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=78949.8
 - Funnel: target 1065 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOPH/USDT:USDT | +121.13% | $16,312,749.28 |
-| BNCSTOCK/USDT:USDT | +53.31% | $1,610,028.47 |
-| FORM/USDT:USDT | +28.15% | $3,800,166.64 |
-| USELESS/USDT:USDT | +16.97% | $11,632,203.56 |
-| BTR/USDT:USDT | +16.78% | $1,093,077.55 |
+| SOPH/USDT:USDT | +118.68% | $16,716,105.85 |
+| BNCSTOCK/USDT:USDT | +52.18% | $1,628,183.59 |
+| FORM/USDT:USDT | +27.99% | $3,829,132.76 |
+| USELESS/USDT:USDT | +17.75% | $11,773,538.18 |
+| MEMEROBINHOOD/USDT:USDT | +15.56% | $5,921,647.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.75% | +4.77% |
-| BTR/USDT:USDT | below_1h_threshold | +4.18% | +4.20% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.21% |
-| BONER/USDT:USDT | below_1h_threshold | +1.14% | +1.16% |
-| KAITO/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.21% | +3.93% |
+| BTR/USDT:USDT | below_1h_threshold | +2.35% | +2.07% |
+| XPL/USDT:USDT | below_1h_threshold | +1.81% | +1.53% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +0.91% |
+| SEI/USDT:USDT | below_1h_threshold | +1.18% | +0.89% |
 
 ## 7. 次に見るべき不足
 
