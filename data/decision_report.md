@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-08T16:01:25.562714+00:00
+- generated_at: 2026-09-08T16:06:13.786088+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14009**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.51** / 初期 $100.00 (+19.51%)
-- 確定: 2597件 (Win 760 / Loss 985 / Flat 852) / pending 3件 / skip 2882件
+- 確定: 2597件 (Win 760 / Loss 985 / Flat 852) / pending 3件 / skip 2883件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000157 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PONS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $119.51
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-08T16:01:13.661801+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=78805.7
-- Funnel: target 1070 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-08T16:06:05.538750+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=78763.6
+- Funnel: target 1070 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VVV/USDT:USDT | +1.30% | $8,706,073.58 |
-| ADA/USDT:USDT | +0.69% | $37,745,196.48 |
-| UAI/USDT:USDT | +0.67% | $16,001,174.17 |
-| PONS/USDT:USDT | +0.60% | $7,037,028.25 |
-| BTR/USDT:USDT | +0.27% | $1,272,805.81 |
+| BONER/USDT:USDT | +2.97% | $2,273,545.87 |
+| KAITO/USDT:USDT | +1.50% | $2,768,483.51 |
+| FF/USDT:USDT | +1.26% | $1,082,574.41 |
+| BULLA/USDT:USDT | +1.25% | $1,971,832.34 |
+| SOPH/USDT:USDT | +1.22% | $36,526,197.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.90% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.97% | +3.04% |
-| MUU/USDT:USDT | below_1h_threshold | +1.51% | +1.59% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.49% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.12% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.83% | +3.96% |
+| BONER/USDT:USDT | below_1h_threshold | +2.97% | +3.10% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.60% | +1.72% |
+| MUU/USDT:USDT | below_1h_threshold | +1.51% | +1.64% |
+| KAITO/USDT:USDT | below_1h_threshold | +1.45% | +1.58% |
 
 ## 7. 次に見るべき不足
 
