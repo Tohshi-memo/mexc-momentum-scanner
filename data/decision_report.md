@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T19:26:23.836530+00:00
+- generated_at: 2026-09-09T19:31:23.532313+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14114**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T19:26:11.951804+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78526.1
+- 更新: 2026-09-09T19:31:13.428415+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=78511.7
 - Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +21.77% | $2,289,760.71 |
-| SOCK/USDT:USDT | +15.81% | $1,595,325.01 |
-| IOST/USDT:USDT | +15.18% | $26,651,708.49 |
-| BULLA/USDT:USDT | +11.51% | $3,369,237.60 |
-| COTI/USDT:USDT | +11.02% | $1,668,147.91 |
+| CATE/USDT:USDT | +20.50% | $2,299,897.49 |
+| IOST/USDT:USDT | +19.58% | $26,919,087.61 |
+| SOCK/USDT:USDT | +15.40% | $1,602,787.00 |
+| COTI/USDT:USDT | +12.13% | $1,673,619.96 |
+| BULLA/USDT:USDT | +11.68% | $3,375,545.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +2.97% | +2.79% |
-| KAS/USDT:USDT | below_1h_threshold | +1.54% | +1.36% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.19% |
-| BR/USDT:USDT | below_1h_threshold | +1.25% | +1.07% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.18% | +1.00% |
+| COTI/USDT:USDT | below_1h_threshold | +1.97% | +1.80% |
+| BTR/USDT:USDT | below_1h_threshold | +1.67% | +1.50% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.43% | +1.27% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.21% |
+| BR/USDT:USDT | below_1h_threshold | +1.29% | +1.13% |
 
 ## 7. 次に見るべき不足
 
