@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T09:31:27.951565+00:00
+- generated_at: 2026-09-09T09:36:23.223106+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14048**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T09:31:15.274615+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=79370.1
+- 更新: 2026-09-09T09:36:12.250696+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=79326.4
 - Funnel: target 1064 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +58.22% | $1,437,018.57 |
-| IOST/USDT:USDT | +33.78% | $3,743,743.82 |
-| CNPY/USDT:USDT | +18.92% | $1,105,993.80 |
-| OL/USDT:USDT | +17.81% | $2,269,472.94 |
-| WAVES/USDT:USDT | +16.38% | $1,451,694.21 |
+| CATE/USDT:USDT | +55.76% | $1,442,252.15 |
+| IOST/USDT:USDT | +34.61% | $3,801,090.22 |
+| OL/USDT:USDT | +18.10% | $2,275,038.00 |
+| WAVES/USDT:USDT | +16.76% | $1,454,524.62 |
+| CNPY/USDT:USDT | +16.70% | $1,111,239.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.94% | +4.31% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.34% | +3.71% |
-| IOST/USDT:USDT | below_1h_threshold | +3.26% | +3.62% |
-| FF/USDT:USDT | below_1h_threshold | +2.02% | +2.38% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.01% | +2.38% |
+| IOST/USDT:USDT | below_1h_threshold | +3.98% | +4.40% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.25% | +3.67% |
+| WAVES/USDT:USDT | below_1h_threshold | +2.33% | +2.75% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.68% | +2.10% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.66% | +2.07% |
 
 ## 7. 次に見るべき不足
 
