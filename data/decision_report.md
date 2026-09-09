@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T05:46:26.336090+00:00
+- generated_at: 2026-09-09T05:51:14.522896+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14034**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T05:46:13.639624+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=78887.5
-- Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.7 >= 65=1
+- 更新: 2026-09-09T05:51:03.630066+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.39% price=78828.7
+- Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +22.97% | $2,125,271.32 |
-| CNPY/USDT:USDT | +16.30% | $1,050,117.56 |
-| WAVES/USDT:USDT | +16.03% | $1,617,218.83 |
-| RAY/USDT:USDT | +15.24% | $2,945,642.68 |
-| NIULAI/USDT:USDT | +14.98% | $1,294,390.71 |
+| OL/USDT:USDT | +23.81% | $2,128,050.29 |
+| WAVES/USDT:USDT | +16.46% | $1,620,461.23 |
+| CNPY/USDT:USDT | +15.73% | $1,051,376.74 |
+| NIULAI/USDT:USDT | +15.45% | $1,305,920.46 |
+| RAY/USDT:USDT | +15.30% | $2,985,944.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOST/USDT:USDT | below_1h_threshold | +4.87% | +5.19% |
-| RAY/USDT:USDT | below_1h_threshold | +3.60% | +3.92% |
-| CNPY/USDT:USDT | below_1h_threshold | +3.45% | +3.76% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +2.43% | +2.74% |
-| WAVES/USDT:USDT | below_1h_threshold | +2.27% | +2.59% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.34% | +4.73% |
+| IOST/USDT:USDT | below_1h_threshold | +4.13% | +4.51% |
+| RAY/USDT:USDT | below_1h_threshold | +3.66% | +4.05% |
+| CNPY/USDT:USDT | below_1h_threshold | +3.14% | +3.53% |
+| WAVES/USDT:USDT | below_1h_threshold | +2.44% | +2.83% |
 
 ## 7. 次に見るべき不足
 
