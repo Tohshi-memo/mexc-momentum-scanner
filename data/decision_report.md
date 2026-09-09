@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-09T00:56:23.344634+00:00
+- generated_at: 2026-09-09T01:01:17.958005+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14025**
+- closed shadow trades: **14026**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.23% / filled 20/20。**
-- 全期間 MARKET基準: n=14025, expectancy=-0.00%
+- 全期間 MARKET基準: n=14026, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.23%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -23,9 +23,9 @@
 |---|---:|---:|---:|---:|
 | LIMIT_3PCT | 15/20 | 75.0% | +1.67% | **+1.26%** |
 | MARKET | 20/20 | 100.0% | +1.23% | **+1.23%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +0.87% | **+0.78%** |
-| LIMIT_2PCT | 16/20 | 80.0% | +0.80% | **+0.64%** |
-| LIMIT_ATR | 13/20 | 65.0% | +0.88% | **+0.57%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +0.93% | **+0.83%** |
+| LIMIT_2PCT | 16/20 | 80.0% | +0.92% | **+0.74%** |
+| LIMIT_ATR | 13/20 | 65.0% | +0.78% | **+0.51%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,013.58** / 初期 $100.00 (+913.58%)
-- 確定: 5289件 (Win 1588 / Loss 1707 / Flat 1994) / skip 5297件
+- 確定: 5290件 (Win 1588 / Loss 1707 / Flat 1995) / skip 5297件
 - 成長率目線: 平均log +0.000438 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: WAVES/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,013.58
@@ -55,47 +55,45 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$190.66** / 初期 $100.00 (+90.66%)
-- 確定: 2628件 (Win 726 / Loss 622 / Flat 1280) / skip 4808件
-- 成長率目線: 平均log +0.000246 / 幾何平均 +0.025% per trade / maxDD +3.96%
+- 確定: 2629件 (Win 726 / Loss 622 / Flat 1281) / skip 4808件
+- 成長率目線: 平均log +0.000245 / 幾何平均 +0.025% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0470 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: WAVES/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $190.66
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.28** / 初期 $100.00 (+19.28%)
-- 確定: 2607件 (Win 763 / Loss 991 / Flat 853) / pending 4件 / skip 2887件
+- 確定: 2608件 (Win 763 / Loss 991 / Flat 854) / pending 3件 / skip 2887件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000120 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: WAVES/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $119.28
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T00:56:12.722012+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=78744.9
-- Funnel: target 1070 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.7 >= 65=1, 4h RSI 75.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-09T01:01:08.536346+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=78721.8
+- Funnel: target 1070 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +36.19% | $1,719,596.13 |
-| WAVES/USDT:USDT | +23.28% | $1,217,228.67 |
-| EGLD/USDT:USDT | +9.58% | $2,255,131.72 |
-| SOFTBANKSTOCK/USDT:USDT | +8.72% | $9,032,461.62 |
-| ARX/USDT:USDT | +8.66% | $1,326,407.56 |
+| OL/USDT:USDT | +35.20% | $1,736,027.65 |
+| WAVES/USDT:USDT | +25.01% | $1,226,155.67 |
+| EGLD/USDT:USDT | +9.92% | $2,131,094.96 |
+| ARX/USDT:USDT | +8.58% | $1,314,995.57 |
+| SOFTBANKSTOCK/USDT:USDT | +7.93% | $7,276,883.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.47% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.39% | +1.98% |
-| JUP/USDT:USDT | below_1h_threshold | +1.75% | +1.34% |
-| INJ/USDT:USDT | below_1h_threshold | +1.59% | +1.19% |
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +1.57% | +1.16% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +4.00% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +3.54% | +3.57% |
+| KORU/USDT:USDT | below_1h_threshold | +3.05% | +3.08% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.78% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.09% | +1.12% |
 
 ## 7. 次に見るべき不足
 
