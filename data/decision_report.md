@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T00:16:23.654140+00:00
+- generated_at: 2026-09-09T00:21:18.300615+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14022**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T00:16:14.364166+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=78628.8
+- 更新: 2026-09-09T00:21:10.247346+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.34% price=78691.6
 - Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +37.11% | $1,325,101.80 |
-| ARX/USDT:USDT | +15.24% | $1,209,502.36 |
-| EGLD/USDT:USDT | +9.51% | $2,109,258.42 |
-| RAY/USDT:USDT | +8.76% | $2,989,968.70 |
-| FORM/USDT:USDT | +7.14% | $5,722,231.91 |
+| OL/USDT:USDT | +35.20% | $1,484,552.56 |
+| ARX/USDT:USDT | +12.59% | $1,273,298.30 |
+| WAVES/USDT:USDT | +10.33% | $1,090,518.61 |
+| EGLD/USDT:USDT | +10.09% | $2,123,716.12 |
+| FORM/USDT:USDT | +8.37% | $5,740,943.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARX/USDT:USDT | below_relative_strength | +5.16% | +4.91% |
-| G/USDT:USDT | below_1h_threshold | +4.97% | +4.72% |
-| CRO/USDT:USDT | below_1h_threshold | +2.95% | +2.69% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.62% |
-| BTR/USDT:USDT | below_1h_threshold | +2.40% | +2.15% |
+| G/USDT:USDT | below_relative_strength | +5.12% | +4.79% |
+| WAVES/USDT:USDT | below_1h_threshold | +4.95% | +4.61% |
+| CRO/USDT:USDT | below_1h_threshold | +4.15% | +3.82% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.54% |
+| ARX/USDT:USDT | below_1h_threshold | +2.81% | +2.47% |
 
 ## 7. 次に見るべき不足
 
