@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T04:11:22.138972+00:00
+- generated_at: 2026-09-09T04:16:15.260812+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14030**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T04:11:15.000260+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78740.5
+- 更新: 2026-09-09T04:16:06.830300+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=78787.7
 - Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +20.64% | $2,026,795.34 |
-| WAVES/USDT:USDT | +13.14% | $1,526,712.19 |
-| CNPY/USDT:USDT | +10.88% | $1,029,042.18 |
-| ARX/USDT:USDT | +10.30% | $1,461,514.02 |
-| NIULAI/USDT:USDT | +7.73% | $1,195,780.76 |
+| OL/USDT:USDT | +19.13% | $2,032,706.18 |
+| CNPY/USDT:USDT | +12.71% | $1,037,661.21 |
+| WAVES/USDT:USDT | +12.18% | $1,530,886.63 |
+| ARX/USDT:USDT | +10.73% | $1,462,949.62 |
+| NIULAI/USDT:USDT | +8.61% | $1,196,631.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +1.82% | +1.64% |
-| XPL/USDT:USDT | below_1h_threshold | +1.73% | +1.55% |
-| VVV/USDT:USDT | below_1h_threshold | +1.33% | +1.14% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.22% | +1.03% |
-| FORM/USDT:USDT | below_1h_threshold | +1.14% | +0.95% |
+| LIT/USDT:USDT | below_1h_threshold | +3.32% | +3.08% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.01% | +1.77% |
+| VVV/USDT:USDT | below_1h_threshold | +1.93% | +1.69% |
+| XPL/USDT:USDT | below_1h_threshold | +1.56% | +1.31% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.55% | +1.31% |
 
 ## 7. 次に見るべき不足
 
