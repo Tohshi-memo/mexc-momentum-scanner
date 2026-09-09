@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T13:51:26.880846+00:00
+- generated_at: 2026-09-09T13:56:24.385891+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14075**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T13:51:17.453511+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.34% price=79292.1
+- 更新: 2026-09-09T13:56:13.966499+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=79150.0
 - Funnel: target 1064 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1
+- Strict後reject: 4h RSI 78.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +61.59% | $1,803,953.40 |
-| IOST/USDT:USDT | +48.52% | $8,368,692.43 |
-| NIULAI/USDT:USDT | +19.90% | $3,191,003.68 |
-| BR/USDT:USDT | +19.17% | $1,946,868.60 |
-| OL/USDT:USDT | +18.33% | $2,453,120.07 |
+| CATE/USDT:USDT | +60.83% | $1,811,817.17 |
+| IOST/USDT:USDT | +46.76% | $8,507,198.27 |
+| NIULAI/USDT:USDT | +18.82% | $3,197,898.88 |
+| BR/USDT:USDT | +18.46% | $1,950,866.75 |
+| OL/USDT:USDT | +18.02% | $2,505,942.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.50% | +4.84% |
-| COTI/USDT:USDT | below_1h_threshold | +3.15% | +3.50% |
-| XPT/USDT:USDT | below_1h_threshold | +2.18% | +2.53% |
-| UAI/USDT:USDT | below_1h_threshold | +1.60% | +1.95% |
-| SILVER/USDT:USDT | below_1h_threshold | +1.59% | +1.94% |
+| COTI/USDT:USDT | below_1h_threshold | +3.15% | +3.67% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.79% | +3.31% |
+| APT/USDT:USDT | below_1h_threshold | +2.22% | +2.74% |
+| XPT/USDT:USDT | below_1h_threshold | +1.89% | +2.41% |
+| SILVER/USDT:USDT | below_1h_threshold | +1.31% | +1.83% |
 
 ## 7. 次に見るべき不足
 
