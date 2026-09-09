@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T20:26:21.571723+00:00
+- generated_at: 2026-09-09T20:31:26.159699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14117**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T20:26:13.371635+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78107.8
-- Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-09-09T20:31:15.755455+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78141.8
+- Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 89.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +25.47% | $29,858,047.53 |
-| COTI/USDT:USDT | +9.02% | $2,033,413.67 |
-| WAVES/USDT:USDT | +7.70% | $1,199,975.52 |
-| SOCK/USDT:USDT | +7.09% | $1,610,377.71 |
-| BTR/USDT:USDT | +6.52% | $1,266,327.32 |
+| IOST/USDT:USDT | +26.29% | $30,093,536.10 |
+| SOCK/USDT:USDT | +7.51% | $1,611,634.35 |
+| COTI/USDT:USDT | +7.22% | $2,086,694.54 |
+| CATE/USDT:USDT | +6.97% | $2,447,214.05 |
+| WAVES/USDT:USDT | +6.65% | $1,203,560.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WAVES/USDT:USDT | below_1h_threshold | +4.72% | +4.84% |
-| CNPY/USDT:USDT | below_1h_threshold | +2.13% | +2.25% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +0.94% |
-| KAS/USDT:USDT | below_1h_threshold | +0.79% | +0.90% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.49% | +0.61% |
+| WAVES/USDT:USDT | below_1h_threshold | +3.70% | +3.77% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.40% | +2.47% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +0.90% |
+| BR/USDT:USDT | below_1h_threshold | +0.65% | +0.73% |
+| KAS/USDT:USDT | below_1h_threshold | +0.59% | +0.66% |
 
 ## 7. 次に見るべき不足
 
