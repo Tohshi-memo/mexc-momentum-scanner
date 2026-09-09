@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T22:32:29.397322+00:00
+- generated_at: 2026-09-09T22:36:25.064530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14127**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.33** / 初期 $100.00 (+18.33%)
-- 確定: 2632件 (Win 770 / Loss 1007 / Flat 855) / pending 1件 / skip 2962件
+- 確定: 2632件 (Win 770 / Loss 1007 / Flat 855) / pending 2件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000333 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: IOST/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.33
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T22:32:19.277535+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=77974.9
-- Funnel: target 1064 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-09T22:36:14.519128+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.20% price=77951.2
+- Funnel: target 1064 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +13.04% | $37,252,950.21 |
-| CATE/USDT:USDT | +10.15% | $2,736,008.99 |
-| KAS/USDT:USDT | +3.40% | $3,701,364.09 |
-| WAVES/USDT:USDT | +2.27% | $1,231,202.83 |
-| MINA/USDT:USDT | +2.20% | $1,094,412.72 |
+| CATE/USDT:USDT | +19.12% | $2,752,383.92 |
+| KAS/USDT:USDT | +3.32% | $3,708,957.32 |
+| IOST/USDT:USDT | +2.11% | $37,730,377.08 |
+| BTR/USDT:USDT | +2.05% | $1,683,301.12 |
+| MINA/USDT:USDT | +1.56% | $1,098,438.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +1.03% | +1.20% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.89% | +1.06% |
-| MINA/USDT:USDT | below_1h_threshold | +0.83% | +1.00% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.56% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.28% | +0.45% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.47% | +0.67% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.59% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.28% | +0.48% |
+| BTR/USDT:USDT | below_1h_threshold | +0.18% | +0.38% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.17% | +0.37% |
 
 ## 7. 次に見るべき不足
 
