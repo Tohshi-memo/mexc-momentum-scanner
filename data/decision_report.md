@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T03:11:16.686331+00:00
+- generated_at: 2026-09-09T03:16:33.800252+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14027**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.07** / 初期 $100.00 (+19.07%)
-- 確定: 2609件 (Win 763 / Loss 992 / Flat 854) / pending 2件 / skip 2887件
+- 確定: 2609件 (Win 763 / Loss 992 / Flat 854) / pending 3件 / skip 2887件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000120 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: XAN/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $119.07
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T03:11:06.473671+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=78577.5
-- Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-09T03:16:21.059992+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=78571.0
+- Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +34.17% | $1,868,406.42 |
-| WAVES/USDT:USDT | +21.93% | $1,417,896.64 |
-| ARX/USDT:USDT | +12.02% | $1,437,987.89 |
-| CNPY/USDT:USDT | +9.86% | $1,013,083.18 |
-| EGLD/USDT:USDT | +8.34% | $2,520,908.08 |
+| OL/USDT:USDT | +32.92% | $1,872,224.09 |
+| WAVES/USDT:USDT | +19.66% | $1,429,304.61 |
+| ARX/USDT:USDT | +12.38% | $1,439,448.19 |
+| CNPY/USDT:USDT | +11.91% | $1,031,844.57 |
+| SOFTBANKSTOCK/USDT:USDT | +7.54% | $7,465,215.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +3.42% | +3.56% |
-| OL/USDT:USDT | below_1h_threshold | +3.19% | +3.34% |
-| IOST/USDT:USDT | below_1h_threshold | +3.17% | +3.31% |
-| KORU/USDT:USDT | below_1h_threshold | +1.48% | +1.62% |
-| WAVES/USDT:USDT | below_1h_threshold | +0.99% | +1.13% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.90% | +3.05% |
+| ACE/USDT:USDT | below_1h_threshold | +2.39% | +2.54% |
+| OL/USDT:USDT | below_1h_threshold | +2.16% | +2.31% |
+| KORU/USDT:USDT | below_1h_threshold | +1.48% | +1.63% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.20% | +1.35% |
 
 ## 7. 次に見るべき不足
 
