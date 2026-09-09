@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T17:46:30.760360+00:00
+- generated_at: 2026-09-09T17:51:28.459260+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14097**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T17:46:17.174106+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=78677.7
+- 更新: 2026-09-09T17:51:15.707962+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78712.7
 - Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI n/a=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOCK/USDT:USDT | +30.75% | $1,555,707.28 |
-| IOST/USDT:USDT | +12.31% | $20,060,066.62 |
-| BULLA/USDT:USDT | +9.87% | $2,846,604.64 |
-| OL/USDT:USDT | +7.27% | $2,716,220.13 |
-| CATE/USDT:USDT | +5.24% | $2,040,455.83 |
+| SOCK/USDT:USDT | +23.49% | $1,562,387.69 |
+| IOST/USDT:USDT | +10.66% | $20,248,340.28 |
+| CATE/USDT:USDT | +9.76% | $2,047,676.35 |
+| BULLA/USDT:USDT | +9.51% | $2,862,812.90 |
+| OL/USDT:USDT | +7.99% | $2,721,626.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +3.24% | +3.36% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.73% | +2.85% |
-| IOST/USDT:USDT | below_1h_threshold | +2.56% | +2.68% |
-| BTR/USDT:USDT | below_1h_threshold | +2.49% | +2.60% |
-| APT/USDT:USDT | below_1h_threshold | +2.33% | +2.45% |
+| BTR/USDT:USDT | below_1h_threshold | +3.29% | +3.36% |
+| CATE/USDT:USDT | below_1h_threshold | +2.95% | +3.03% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.74% | +2.81% |
+| APT/USDT:USDT | below_1h_threshold | +2.27% | +2.35% |
+| VET/USDT:USDT | below_1h_threshold | +1.75% | +1.82% |
 
 ## 7. 次に見るべき不足
 
