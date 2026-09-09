@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T21:51:24.809323+00:00
+- generated_at: 2026-09-09T21:56:17.105544+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14120**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T21:51:14.633819+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.37% price=77990.7
+- 更新: 2026-09-09T21:56:08.974076+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=78066.8
 - Funnel: target 1064 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +24.63% | $34,341,819.93 |
-| BTR/USDT:USDT | +6.00% | $1,397,972.87 |
-| WAVES/USDT:USDT | +3.97% | $1,214,694.19 |
-| KAS/USDT:USDT | +3.09% | $3,506,007.67 |
-| CATE/USDT:USDT | +2.37% | $2,603,172.75 |
+| IOST/USDT:USDT | +25.76% | $34,531,985.09 |
+| CATE/USDT:USDT | +8.31% | $2,623,577.96 |
+| BTR/USDT:USDT | +5.47% | $1,411,725.70 |
+| KAS/USDT:USDT | +4.65% | $3,548,758.99 |
+| WAVES/USDT:USDT | +4.20% | $1,216,253.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOST/USDT:USDT | below_1h_threshold | +2.80% | +3.17% |
-| KORU/USDT:USDT | below_1h_threshold | +1.16% | +1.53% |
-| FTNTSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.41% |
-| KAS/USDT:USDT | below_1h_threshold | +0.92% | +1.29% |
-| BR/USDT:USDT | below_1h_threshold | +0.91% | +1.29% |
+| IOST/USDT:USDT | below_1h_threshold | +3.85% | +4.12% |
+| KAS/USDT:USDT | below_1h_threshold | +2.45% | +2.72% |
+| KORU/USDT:USDT | below_1h_threshold | +1.16% | +1.43% |
+| FTNTSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.31% |
+| BR/USDT:USDT | below_1h_threshold | +1.01% | +1.29% |
 
 ## 7. 次に見るべき不足
 
