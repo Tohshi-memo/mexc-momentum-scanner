@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T19:56:25.687443+00:00
+- generated_at: 2026-09-09T20:01:25.376998+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14116**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T19:56:13.979797+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=78181.5
-- Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-09T20:01:15.624241+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78214.5
+- Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +17.32% | $28,204,478.13 |
-| COTI/USDT:USDT | +11.54% | $1,885,213.12 |
-| SOCK/USDT:USDT | +8.13% | $1,634,290.89 |
-| CATE/USDT:USDT | +6.56% | $2,376,013.84 |
-| BTR/USDT:USDT | +5.87% | $1,235,725.16 |
+| SOCK/USDT:USDT | +18.92% | $1,594,715.95 |
+| IOST/USDT:USDT | +18.39% | $28,362,548.42 |
+| COTI/USDT:USDT | +11.56% | $1,884,468.51 |
+| CATE/USDT:USDT | +10.41% | $2,392,971.04 |
+| BTR/USDT:USDT | +6.52% | $1,226,766.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +1.42% | +1.68% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.63% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.33% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +1.08% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.79% | +1.04% |
+| CATE/USDT:USDT | below_1h_threshold | +2.55% | +2.53% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.81% | +1.79% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
+| COTI/USDT:USDT | below_1h_threshold | +0.68% | +0.66% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.49% | +0.47% |
 
 ## 7. 次に見るべき不足
 
