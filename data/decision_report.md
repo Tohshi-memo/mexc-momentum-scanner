@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T16:36:24.512943+00:00
+- generated_at: 2026-09-09T16:41:45.385805+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14085**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.84** / 初期 $100.00 (+17.84%)
-- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 0件 / skip 2941件
+- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 0件 / skip 2944件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000201 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZEC/USDT:USDT `MARKET` EXPIRED account -0.09% 残高後 $117.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T16:36:14.227327+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=78788.0
-- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.7 >= 65=1
+- 更新: 2026-09-09T16:41:30.496876+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=78736.5
+- Funnel: target 1064 → liquid 165 → pre 50 → checked 50 → surge 5 → strict 1
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.1 >= 65=1, 4h RSI 86.1 >= 65=1, 4h RSI 65.8 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +8.84% | $1,971,359.09 |
-| OL/USDT:USDT | +4.99% | $2,751,872.20 |
-| IOST/USDT:USDT | +4.93% | $16,302,156.90 |
-| BULLA/USDT:USDT | +4.58% | $2,628,500.12 |
-| COTI/USDT:USDT | +3.73% | $1,022,179.18 |
+| PHA/USDT:USDT | +9.65% | $1,097,435.73 |
+| IOST/USDT:USDT | +7.75% | $16,683,635.51 |
+| CATE/USDT:USDT | +7.25% | $1,977,890.10 |
+| OL/USDT:USDT | +5.80% | $2,757,008.95 |
+| SOCK/USDT:USDT | +5.72% | $1,491,341.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OL/USDT:USDT | below_relative_strength | +5.17% | +4.89% |
-| BULLA/USDT:USDT | below_1h_threshold | +4.59% | +4.31% |
-| IOST/USDT:USDT | below_1h_threshold | +4.02% | +3.74% |
-| COTI/USDT:USDT | below_1h_threshold | +3.70% | +3.42% |
-| CP/USDT:USDT | below_1h_threshold | +2.40% | +2.12% |
+| COTI/USDT:USDT | below_1h_threshold | +3.34% | +3.12% |
+| STRK/USDT:USDT | below_1h_threshold | +3.31% | +3.10% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.25% | +3.03% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.85% | +2.64% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +2.79% | +2.58% |
 
 ## 7. 次に見るべき不足
 
