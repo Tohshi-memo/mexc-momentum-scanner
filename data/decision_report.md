@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T09:56:18.730749+00:00
+- generated_at: 2026-09-09T10:01:22.434546+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14049**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T09:56:08.630775+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.98% price=78876.5
-- Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-09T10:01:12.499213+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78990.0
+- Funnel: target 1064 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +52.50% | $1,474,951.13 |
-| IOST/USDT:USDT | +34.45% | $4,208,531.61 |
-| OL/USDT:USDT | +18.86% | $2,290,938.95 |
-| CNPY/USDT:USDT | +17.95% | $1,122,435.76 |
-| WAVES/USDT:USDT | +12.68% | $1,476,718.23 |
+| CATE/USDT:USDT | +52.50% | $1,474,467.76 |
+| IOST/USDT:USDT | +35.58% | $4,166,157.77 |
+| OL/USDT:USDT | +17.83% | $2,288,826.40 |
+| CNPY/USDT:USDT | +17.73% | $1,094,715.68 |
+| WAVES/USDT:USDT | +13.06% | $1,436,863.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.27% | +5.26% |
-| IOST/USDT:USDT | below_1h_threshold | +4.00% | +4.99% |
-| ATOM/USDT:USDT | below_1h_threshold | +1.58% | +2.56% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.35% | +2.33% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.20% | +2.18% |
+| ATOM/USDT:USDT | below_1h_threshold | +1.10% | +1.00% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.76% | +0.66% |
+| FF/USDT:USDT | below_1h_threshold | +0.66% | +0.57% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.66% | +0.56% |
+| VVV/USDT:USDT | below_1h_threshold | +0.64% | +0.55% |
 
 ## 7. 次に見るべき不足
 
