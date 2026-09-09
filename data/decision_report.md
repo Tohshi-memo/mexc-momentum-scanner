@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T20:16:17.778559+00:00
+- generated_at: 2026-09-09T20:21:32.659567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14117**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.16** / 初期 $100.00 (+19.16%)
-- 確定: 2628件 (Win 770 / Loss 1003 / Flat 855) / pending 2件 / skip 2962件
+- 確定: 2628件 (Win 770 / Loss 1003 / Flat 855) / pending 3件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000557 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: COTI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $119.16
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T20:16:07.620057+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78218.1
-- Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-09T20:21:22.160804+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78214.3
+- Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +21.25% | $28,986,297.06 |
-| SOCK/USDT:USDT | +11.24% | $1,606,274.87 |
-| COTI/USDT:USDT | +11.15% | $1,979,516.28 |
-| BTR/USDT:USDT | +5.23% | $1,245,095.11 |
-| CATE/USDT:USDT | +5.21% | $2,423,344.56 |
+| IOST/USDT:USDT | +25.66% | $29,493,466.98 |
+| COTI/USDT:USDT | +8.94% | $2,007,183.15 |
+| SOCK/USDT:USDT | +8.80% | $1,607,997.56 |
+| BTR/USDT:USDT | +7.69% | $1,258,931.76 |
+| WAVES/USDT:USDT | +6.58% | $1,192,075.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOST/USDT:USDT | below_1h_threshold | +2.71% | +2.68% |
-| CNPY/USDT:USDT | below_1h_threshold | +2.03% | +2.00% |
-| FET/USDT:USDT | below_1h_threshold | +0.93% | +0.91% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +0.80% |
-| KAS/USDT:USDT | below_1h_threshold | +0.76% | +0.73% |
+| WAVES/USDT:USDT | below_1h_threshold | +4.22% | +4.21% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.45% | +2.43% |
+| BTR/USDT:USDT | below_1h_threshold | +1.16% | +1.14% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +0.81% |
+| TAO/USDT:USDT | below_1h_threshold | +0.73% | +0.71% |
 
 ## 7. 次に見るべき不足
 
