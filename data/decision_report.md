@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T16:26:39.434102+00:00
+- generated_at: 2026-09-09T16:31:30.132868+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14085**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T16:26:28.579123+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78533.9
+- 更新: 2026-09-09T16:31:17.538366+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=78688.8
 - Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1
+- Strict後reject: 4h RSI 65.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +7.96% | $2,704,083.95 |
-| CATE/USDT:USDT | +7.21% | $1,948,850.11 |
-| CP/USDT:USDT | +3.21% | $1,064,264.31 |
-| BULLA/USDT:USDT | +3.13% | $2,612,789.06 |
-| CASHCAT/USDT:USDT | +2.88% | $1,049,733.31 |
+| OL/USDT:USDT | +7.31% | $2,717,416.86 |
+| CATE/USDT:USDT | +7.14% | $1,959,409.60 |
+| BULLA/USDT:USDT | +3.93% | $2,622,306.36 |
+| CASHCAT/USDT:USDT | +3.16% | $1,050,665.19 |
+| BTR/USDT:USDT | +2.92% | $1,024,555.42 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CP/USDT:USDT | below_1h_threshold | +3.22% | +3.26% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.14% | +3.18% |
-| CASHCAT/USDT:USDT | below_1h_threshold | +2.88% | +2.93% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +2.73% | +2.78% |
-| BTR/USDT:USDT | below_1h_threshold | +1.94% | +1.98% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.93% | +3.78% |
+| CASHCAT/USDT:USDT | below_1h_threshold | +3.16% | +3.01% |
+| BTR/USDT:USDT | below_1h_threshold | +2.93% | +2.77% |
+| CP/USDT:USDT | below_1h_threshold | +2.40% | +2.24% |
+| 4/USDT:USDT | below_1h_threshold | +1.82% | +1.66% |
 
 ## 7. 次に見るべき不足
 
