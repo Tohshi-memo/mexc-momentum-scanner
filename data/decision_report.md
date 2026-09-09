@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T14:36:43.600234+00:00
+- generated_at: 2026-09-09T14:41:45.143175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14077**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.84** / 初期 $100.00 (+17.84%)
-- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 0件 / skip 2934件
+- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 0件 / skip 2935件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000199 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZEC/USDT:USDT `MARKET` EXPIRED account -0.09% 残高後 $117.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T14:36:30.440977+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=79337.0
-- Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=43, below_relative_strength=3, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.9 >= 65=1, 4h RSI 71.9 >= 65=1, 4h RSI 70.8 >= 65=1
+- 更新: 2026-09-09T14:41:29.961322+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=79194.1
+- Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 6 → strict 1
+- Surge前reject: below_1h_threshold=42, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.8 >= 65=1, 4h RSI 70.9 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 68.1 >= 65=1, 4h RSI 80.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +65.53% | $1,849,206.06 |
-| IOST/USDT:USDT | +54.16% | $9,710,203.81 |
-| RAY/USDT:USDT | +23.75% | $6,566,840.76 |
-| OL/USDT:USDT | +18.54% | $2,529,862.15 |
-| BR/USDT:USDT | +17.60% | $2,137,507.09 |
+| CATE/USDT:USDT | +63.89% | $1,853,594.41 |
+| IOST/USDT:USDT | +54.25% | $9,776,554.74 |
+| RAY/USDT:USDT | +24.85% | $6,779,035.01 |
+| OL/USDT:USDT | +18.63% | $2,530,087.55 |
+| BR/USDT:USDT | +17.75% | $2,141,910.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_relative_strength | +5.10% | +4.82% |
-| SKHYSTOCK/USDT:USDT | below_relative_strength | +5.04% | +4.76% |
-| IOST/USDT:USDT | below_relative_strength | +5.03% | +4.74% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.84% | +4.56% |
-| KORU/USDT:USDT | below_1h_threshold | +4.26% | +3.97% |
+| DELLSTOCK/USDT:USDT | below_relative_strength | +5.10% | +5.00% |
+| SKHYSTOCK/USDT:USDT | below_relative_strength | +5.04% | +4.94% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.99% | +4.89% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.84% | +4.74% |
+| KORU/USDT:USDT | below_1h_threshold | +4.26% | +4.15% |
 
 ## 7. 次に見るべき不足
 
