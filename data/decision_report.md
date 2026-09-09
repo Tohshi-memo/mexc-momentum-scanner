@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T03:36:29.403712+00:00
+- generated_at: 2026-09-09T03:41:25.321048+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14030**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T03:36:13.260402+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=78540.5
+- 更新: 2026-09-09T03:41:12.992460+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=78572.5
 - Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +19.70% | $1,952,646.83 |
-| CNPY/USDT:USDT | +14.02% | $1,038,206.65 |
-| WAVES/USDT:USDT | +13.22% | $1,484,127.55 |
-| ARX/USDT:USDT | +11.59% | $1,454,933.01 |
-| NIULAI/USDT:USDT | +7.94% | $1,152,402.43 |
+| OL/USDT:USDT | +20.54% | $1,976,242.86 |
+| WAVES/USDT:USDT | +13.99% | $1,494,654.23 |
+| CNPY/USDT:USDT | +13.45% | $1,039,496.00 |
+| ARX/USDT:USDT | +10.95% | $1,457,628.43 |
+| NIULAI/USDT:USDT | +8.23% | $1,176,849.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ACE/USDT:USDT | below_1h_threshold | +2.33% | +2.52% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.27% | +2.46% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.63% | +1.82% |
-| KORU/USDT:USDT | below_1h_threshold | +1.48% | +1.66% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +1.04% |
+| ACE/USDT:USDT | below_1h_threshold | +2.33% | +2.48% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.14% | +2.29% |
+| KORU/USDT:USDT | below_1h_threshold | +1.48% | +1.62% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.07% | +1.22% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +1.00% |
 
 ## 7. 次に見るべき不足
 
