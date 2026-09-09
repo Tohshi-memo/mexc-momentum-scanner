@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T00:26:26.858653+00:00
+- generated_at: 2026-09-09T00:31:30.765632+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14023**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.49** / 初期 $100.00 (+19.49%)
-- 確定: 2605件 (Win 763 / Loss 990 / Flat 852) / pending 2件 / skip 2887件
+- 確定: 2605件 (Win 763 / Loss 990 / Flat 852) / pending 4件 / skip 2887件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000378 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BNCSTOCK/USDT:USDT `MARKET` EXPIRED account +0.02% 残高後 $119.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T00:26:12.697150+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=78617.8
-- Funnel: target 1070 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-09T00:31:19.741766+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=78591.5
+- Funnel: target 1070 → liquid 165 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.8 >= 65=1, 4h RSI 72.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +37.68% | $1,538,123.59 |
-| ARX/USDT:USDT | +12.74% | $1,292,011.17 |
-| FORM/USDT:USDT | +10.35% | $5,781,618.76 |
-| WAVES/USDT:USDT | +9.98% | $1,092,517.43 |
-| EGLD/USDT:USDT | +9.06% | $2,127,678.15 |
+| OL/USDT:USDT | +38.37% | $1,562,716.90 |
+| ARX/USDT:USDT | +12.67% | $1,296,856.66 |
+| WAVES/USDT:USDT | +11.17% | $1,095,987.24 |
+| EGLD/USDT:USDT | +9.26% | $2,148,661.14 |
+| RAY/USDT:USDT | +8.49% | $3,023,364.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WAVES/USDT:USDT | below_1h_threshold | +4.91% | +4.67% |
-| CRO/USDT:USDT | below_1h_threshold | +4.31% | +4.06% |
-| FORM/USDT:USDT | below_1h_threshold | +4.17% | +3.93% |
-| ARX/USDT:USDT | below_1h_threshold | +3.14% | +2.90% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.63% |
+| G/USDT:USDT | below_1h_threshold | +3.98% | +3.77% |
+| FORM/USDT:USDT | below_1h_threshold | +2.88% | +2.67% |
+| ARX/USDT:USDT | below_1h_threshold | +2.88% | +2.67% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +2.87% | +2.67% |
+| ETC/USDT:USDT | below_1h_threshold | +1.96% | +1.76% |
 
 ## 7. 次に見るべき不足
 
