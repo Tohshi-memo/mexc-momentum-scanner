@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T22:26:54.365969+00:00
+- generated_at: 2026-09-09T22:32:29.397322+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14127**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T22:26:44.125986+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=77996.0
+- 更新: 2026-09-09T22:32:19.277535+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=77974.9
 - Funnel: target 1064 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +12.55% | $2,721,503.84 |
-| IOST/USDT:USDT | +12.44% | $36,946,620.42 |
-| KAS/USDT:USDT | +3.86% | $3,691,016.79 |
-| MINA/USDT:USDT | +2.54% | $1,082,900.58 |
-| SKHYSTOCK/USDT:USDT | +1.57% | $16,551,291.11 |
+| IOST/USDT:USDT | +13.04% | $37,252,950.21 |
+| CATE/USDT:USDT | +10.15% | $2,736,008.99 |
+| KAS/USDT:USDT | +3.40% | $3,701,364.09 |
+| WAVES/USDT:USDT | +2.27% | $1,231,202.83 |
+| MINA/USDT:USDT | +2.20% | $1,094,412.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +1.93% | +2.07% |
-| MINA/USDT:USDT | below_1h_threshold | +1.14% | +1.28% |
-| STX/USDT:USDT | below_1h_threshold | +0.56% | +0.70% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.47% | +0.61% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.54% |
+| UAI/USDT:USDT | below_1h_threshold | +1.03% | +1.20% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.89% | +1.06% |
+| MINA/USDT:USDT | below_1h_threshold | +0.83% | +1.00% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.56% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.28% | +0.45% |
 
 ## 7. 次に見るべき不足
 
