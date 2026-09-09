@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T19:46:23.962818+00:00
+- generated_at: 2026-09-09T19:51:20.739039+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14115**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T19:46:11.873370+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=78259.1
+- 更新: 2026-09-09T19:51:10.663348+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=78201.0
 - Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +19.46% | $27,566,983.46 |
-| CATE/USDT:USDT | +17.02% | $2,341,603.24 |
-| COTI/USDT:USDT | +12.02% | $1,706,437.37 |
-| BULLA/USDT:USDT | +11.44% | $3,401,903.77 |
-| SOCK/USDT:USDT | +11.08% | $1,617,588.00 |
+| IOST/USDT:USDT | +20.41% | $27,793,225.92 |
+| COTI/USDT:USDT | +13.08% | $1,743,548.57 |
+| BULLA/USDT:USDT | +11.16% | $3,406,738.91 |
+| CATE/USDT:USDT | +10.94% | $2,356,091.32 |
+| SOCK/USDT:USDT | +8.92% | $1,633,093.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +1.87% | +2.03% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.78% | +1.94% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.43% | +1.59% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.53% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.23% |
+| COTI/USDT:USDT | below_1h_threshold | +2.88% | +3.12% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.60% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.30% |
+| BR/USDT:USDT | below_1h_threshold | +1.06% | +1.29% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +1.05% |
 
 ## 7. 次に見るべき不足
 
