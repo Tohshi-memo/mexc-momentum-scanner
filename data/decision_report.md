@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T01:52:05.279440+00:00
+- generated_at: 2026-09-09T01:56:16.268513+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14027**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T01:51:55.601663+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=78844.9
+- 更新: 2026-09-09T01:56:07.721433+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78812.4
 - Funnel: target 1070 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +32.01% | $1,928,745.80 |
-| WAVES/USDT:USDT | +19.81% | $1,349,878.50 |
-| ARX/USDT:USDT | +10.23% | $1,397,126.44 |
-| EGLD/USDT:USDT | +8.10% | $2,372,518.77 |
-| SOFTBANKSTOCK/USDT:USDT | +7.04% | $7,857,593.36 |
+| OL/USDT:USDT | +30.63% | $1,939,492.42 |
+| WAVES/USDT:USDT | +21.66% | $1,359,981.45 |
+| ARX/USDT:USDT | +8.94% | $1,398,336.79 |
+| EGLD/USDT:USDT | +8.72% | $2,383,336.37 |
+| SOFTBANKSTOCK/USDT:USDT | +6.70% | $7,987,122.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BNCSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.85% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +3.54% | +3.41% |
-| KORU/USDT:USDT | below_1h_threshold | +3.05% | +2.92% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.63% |
-| ETC/USDT:USDT | below_1h_threshold | +2.42% | +2.29% |
+| BNCSTOCK/USDT:USDT | below_1h_threshold | +3.97% | +3.89% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +3.54% | +3.46% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +2.75% | +2.67% |
+| ETC/USDT:USDT | below_1h_threshold | +2.74% | +2.65% |
+| UAI/USDT:USDT | below_1h_threshold | +2.41% | +2.33% |
 
 ## 7. 次に見るべき不足
 
