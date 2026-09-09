@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T15:01:28.572381+00:00
+- generated_at: 2026-09-09T15:06:26.097494+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14078**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T15:01:18.202487+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=79015.0
-- Funnel: target 1064 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-09T15:06:15.930813+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.15% price=78812.8
+- Funnel: target 1064 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +60.28% | $1,881,756.29 |
-| IOST/USDT:USDT | +55.92% | $10,313,176.35 |
-| RAY/USDT:USDT | +26.15% | $7,130,194.80 |
-| OL/USDT:USDT | +18.56% | $2,536,084.69 |
-| BR/USDT:USDT | +18.14% | $2,179,573.49 |
+| CATE/USDT:USDT | +58.33% | $1,887,399.39 |
+| IOST/USDT:USDT | +57.42% | $10,445,866.62 |
+| RAY/USDT:USDT | +25.96% | $7,236,094.99 |
+| OL/USDT:USDT | +18.54% | $2,536,453.36 |
+| BR/USDT:USDT | +18.07% | $2,184,585.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTW/USDT:USDT | below_1h_threshold | +1.55% | +1.45% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.30% |
-| ETHFI/USDT:USDT | below_1h_threshold | +0.96% | +0.85% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.72% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.75% | +0.64% |
+| INTW/USDT:USDT | below_1h_threshold | +1.55% | +1.70% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.56% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +0.98% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.50% | +0.65% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.40% | +0.55% |
 
 ## 7. 次に見るべき不足
 
