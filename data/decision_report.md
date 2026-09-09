@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T07:26:19.383331+00:00
+- generated_at: 2026-09-09T07:31:17.337331+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14041**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T07:26:08.621727+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=79261.5
+- 更新: 2026-09-09T07:31:06.949369+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=79247.2
 - Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.1 >= 65=1, 4h RSI 88.7 >= 65=1
+- Strict後reject: 4h RSI 73.0 >= 65=1, 4h RSI 88.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +59.71% | $1,234,021.95 |
-| IOST/USDT:USDT | +32.05% | $2,640,199.89 |
-| RAY/USDT:USDT | +24.91% | $4,328,065.29 |
-| OL/USDT:USDT | +17.56% | $2,207,800.32 |
-| CNPY/USDT:USDT | +15.67% | $1,055,482.03 |
+| CATE/USDT:USDT | +65.35% | $1,239,592.12 |
+| IOST/USDT:USDT | +28.55% | $2,710,893.60 |
+| RAY/USDT:USDT | +20.71% | $4,480,467.43 |
+| OL/USDT:USDT | +18.04% | $2,213,020.27 |
+| VVV/USDT:USDT | +16.26% | $26,701,168.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CNPY/USDT:USDT | below_1h_threshold | +2.79% | +2.61% |
-| WAVES/USDT:USDT | below_1h_threshold | +2.33% | +2.16% |
-| COTI/USDT:USDT | below_1h_threshold | +1.77% | +1.60% |
-| RAY/USDT:USDT | below_1h_threshold | +1.33% | +1.15% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.05% | +0.88% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.58% | +2.43% |
+| WAVES/USDT:USDT | below_1h_threshold | +2.40% | +2.25% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +0.88% |
+| ATOM/USDT:USDT | below_1h_threshold | +0.76% | +0.60% |
+| OPENAI/USDT:USDT | below_1h_threshold | +0.75% | +0.60% |
 
 ## 7. 次に見るべき不足
 
