@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T22:36:25.064530+00:00
+- generated_at: 2026-09-09T22:41:19.203942+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14127**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.33** / 初期 $100.00 (+18.33%)
-- 確定: 2632件 (Win 770 / Loss 1007 / Flat 855) / pending 2件 / skip 2962件
+- 確定: 2632件 (Win 770 / Loss 1007 / Flat 855) / pending 3件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000333 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: IOST/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $118.33
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T22:36:14.519128+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.20% price=77951.2
+- 更新: 2026-09-09T22:41:08.718764+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=78019.8
 - Funnel: target 1064 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- Strict後reject: 4h RSI 81.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +19.12% | $2,752,383.92 |
-| KAS/USDT:USDT | +3.32% | $3,708,957.32 |
-| IOST/USDT:USDT | +2.11% | $37,730,377.08 |
-| BTR/USDT:USDT | +2.05% | $1,683,301.12 |
-| MINA/USDT:USDT | +1.56% | $1,098,438.17 |
+| CATE/USDT:USDT | +15.88% | $2,773,272.64 |
+| BTR/USDT:USDT | +10.21% | $1,752,254.55 |
+| IOST/USDT:USDT | +5.58% | $37,995,908.69 |
+| KAS/USDT:USDT | +2.98% | $3,746,838.66 |
+| SKHYSTOCK/USDT:USDT | +1.73% | $16,616,281.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EGLD/USDT:USDT | below_1h_threshold | +0.47% | +0.67% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.28% | +0.48% |
-| BTR/USDT:USDT | below_1h_threshold | +0.18% | +0.38% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.17% | +0.37% |
+| CATE/USDT:USDT | below_1h_threshold | +4.36% | +4.47% |
+| UAI/USDT:USDT | below_1h_threshold | +1.93% | +2.04% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.51% | +0.62% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.40% | +0.51% |
+| INJ/USDT:USDT | below_1h_threshold | +0.38% | +0.49% |
 
 ## 7. 次に見るべき不足
 
