@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T06:46:20.241815+00:00
+- generated_at: 2026-09-09T06:51:20.888404+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14039**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.81** / 初期 $100.00 (+17.81%)
-- 確定: 2618件 (Win 764 / Loss 1000 / Flat 854) / pending 2件 / skip 2890件
+- 確定: 2618件 (Win 764 / Loss 1000 / Flat 854) / pending 2件 / skip 2891件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000171 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $117.81
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T06:46:10.122632+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=79135.3
+- 更新: 2026-09-09T06:51:10.458763+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=79137.4
 - Funnel: target 1070 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +67.36% | $1,181,472.79 |
-| RAY/USDT:USDT | +24.75% | $3,762,246.88 |
-| OL/USDT:USDT | +18.71% | $2,176,143.14 |
-| NIULAI/USDT:USDT | +16.58% | $1,483,116.82 |
-| IOST/USDT:USDT | +14.71% | $2,589,219.22 |
+| CATE/USDT:USDT | +65.24% | $1,193,997.73 |
+| RAY/USDT:USDT | +23.65% | $3,876,430.96 |
+| OL/USDT:USDT | +17.85% | $2,183,336.20 |
+| IOST/USDT:USDT | +16.17% | $2,606,628.38 |
+| NIULAI/USDT:USDT | +15.88% | $1,501,621.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_1h_threshold | +4.32% | +4.03% |
-| SOLV/USDT:USDT | below_1h_threshold | +3.65% | +3.36% |
-| BTR/USDT:USDT | below_1h_threshold | +3.45% | +3.16% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.92% | +2.63% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.54% | +2.25% |
+| RAY/USDT:USDT | below_relative_strength | +5.25% | +4.96% |
+| ARB/USDT:USDT | below_1h_threshold | +4.73% | +4.44% |
+| SOLV/USDT:USDT | below_1h_threshold | +3.26% | +2.96% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.02% | +2.73% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.63% | +2.33% |
 
 ## 7. 次に見るべき不足
 
