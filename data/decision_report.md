@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T11:21:19.344944+00:00
+- generated_at: 2026-09-09T11:26:21.387454+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14054**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T11:21:09.074436+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=78799.9
+- 更新: 2026-09-09T11:26:11.139229+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78899.2
 - Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.3 >= 65=1
+- Strict後reject: 4h RSI 82.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +61.83% | $1,581,243.30 |
-| IOST/USDT:USDT | +30.34% | $5,446,968.81 |
-| OL/USDT:USDT | +19.57% | $2,316,190.46 |
-| BR/USDT:USDT | +18.99% | $1,137,221.39 |
-| CNPY/USDT:USDT | +16.24% | $1,134,875.56 |
+| CATE/USDT:USDT | +59.17% | $1,588,094.92 |
+| IOST/USDT:USDT | +32.34% | $5,546,999.70 |
+| OL/USDT:USDT | +19.86% | $2,317,633.96 |
+| BR/USDT:USDT | +19.15% | $1,179,503.09 |
+| RAY/USDT:USDT | +16.55% | $5,713,251.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.03% | +2.14% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.67% | +1.78% |
-| OL/USDT:USDT | below_1h_threshold | +1.37% | +1.47% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.34% | +1.45% |
-| VVV/USDT:USDT | below_1h_threshold | +1.13% | +1.24% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.47% | +2.44% |
+| VVV/USDT:USDT | below_1h_threshold | +2.42% | +2.40% |
+| BR/USDT:USDT | below_1h_threshold | +2.25% | +2.23% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.22% | +2.20% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.03% | +2.01% |
 
 ## 7. 次に見るべき不足
 
