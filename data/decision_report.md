@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T15:16:24.075905+00:00
+- generated_at: 2026-09-09T15:21:19.729088+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14080**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.84** / 初期 $100.00 (+17.84%)
-- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 0件 / skip 2935件
+- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 0件 / skip 2936件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000209 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZEC/USDT:USDT `MARKET` EXPIRED account -0.09% 残高後 $117.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T15:16:12.198997+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=78517.2
-- Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-09T15:21:11.382669+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.57% price=78486.0
+- Funnel: target 1064 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +61.68% | $10,838,585.36 |
-| CATE/USDT:USDT | +52.78% | $1,910,380.53 |
-| RAY/USDT:USDT | +23.29% | $7,504,039.48 |
-| BR/USDT:USDT | +17.40% | $2,198,722.33 |
-| OL/USDT:USDT | +17.05% | $2,544,747.01 |
+| IOST/USDT:USDT | +65.57% | $11,294,760.28 |
+| CATE/USDT:USDT | +56.39% | $1,915,831.02 |
+| RAY/USDT:USDT | +24.35% | $7,540,846.12 |
+| OL/USDT:USDT | +17.77% | $2,544,983.55 |
+| BR/USDT:USDT | +17.24% | $2,211,101.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOST/USDT:USDT | below_1h_threshold | +3.27% | +3.80% |
-| INTW/USDT:USDT | below_1h_threshold | +1.55% | +2.08% |
-| COTI/USDT:USDT | below_1h_threshold | +1.53% | +2.06% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.93% |
-| NGAS/USDT:USDT | below_1h_threshold | +1.25% | +1.78% |
+| INTW/USDT:USDT | below_1h_threshold | +1.55% | +2.12% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.41% | +1.97% |
+| NGAS/USDT:USDT | below_1h_threshold | +1.25% | +1.82% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.83% | +1.39% |
+| COTI/USDT:USDT | below_1h_threshold | +0.70% | +1.27% |
 
 ## 7. 次に見るべき不足
 
