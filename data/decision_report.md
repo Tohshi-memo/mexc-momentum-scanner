@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T14:46:47.233378+00:00
+- generated_at: 2026-09-09T14:51:52.064305+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14077**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T14:46:32.004132+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=78983.2
-- Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 6 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.7 >= 65=1, 4h RSI 71.0 >= 65=1, 4h RSI 72.2 >= 65=1, 4h RSI 75.2 >= 65=1, 4h RSI 70.8 >= 65=1
+- 更新: 2026-09-09T14:51:36.798679+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=79067.2
+- Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 7 → strict 1
+- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.6 >= 65=1, 4h RSI 72.3 >= 65=1, 4h RSI 80.0 >= 65=1, 4h RSI 70.6 >= 65=1, 4h RSI 75.3 >= 65=1, 4h RSI 71.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +69.10% | $1,864,241.02 |
-| IOST/USDT:USDT | +52.84% | $9,843,304.98 |
-| RAY/USDT:USDT | +24.42% | $6,874,280.85 |
-| OL/USDT:USDT | +19.24% | $2,533,676.97 |
-| BR/USDT:USDT | +16.94% | $2,144,536.24 |
+| CATE/USDT:USDT | +63.06% | $1,878,245.11 |
+| IOST/USDT:USDT | +54.82% | $9,987,900.38 |
+| RAY/USDT:USDT | +23.56% | $6,933,634.55 |
+| OL/USDT:USDT | +19.82% | $2,536,161.21 |
+| BR/USDT:USDT | +18.24% | $2,164,048.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.84% | +5.00% |
-| CATE/USDT:USDT | below_1h_threshold | +4.78% | +4.94% |
-| ZEN/USDT:USDT | below_1h_threshold | +4.55% | +4.71% |
-| MAGMA/USDT:USDT | below_1h_threshold | +4.47% | +4.63% |
-| KORU/USDT:USDT | below_1h_threshold | +4.26% | +4.42% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.86% | +4.92% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.84% | +4.90% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.49% | +4.55% |
+| KORU/USDT:USDT | below_1h_threshold | +4.26% | +4.31% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +3.82% | +3.88% |
 
 ## 7. 次に見るべき不足
 
