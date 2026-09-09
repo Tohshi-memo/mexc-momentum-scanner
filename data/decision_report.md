@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T18:21:35.989372+00:00
+- generated_at: 2026-09-09T18:26:36.651814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14101**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$117.84** / 初期 $100.00 (+17.84%)
-- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 1件 / skip 2959件
+- 確定: 2620件 (Win 765 / Loss 1001 / Flat 854) / pending 2件 / skip 2959件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000412 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ZEC/USDT:USDT `MARKET` EXPIRED account -0.09% 残高後 $117.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T18:21:22.387381+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=78562.7
-- Funnel: target 1064 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.8 >= 65=1, 4h RSI 87.9 >= 65=1
+- 更新: 2026-09-09T18:26:25.337248+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=78556.9
+- Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 73.9 >= 65=1, 4h RSI 88.0 >= 65=1, 4h RSI 79.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOCK/USDT:USDT | +19.17% | $1,534,379.85 |
-| IOST/USDT:USDT | +19.04% | $21,720,659.33 |
-| BULLA/USDT:USDT | +14.99% | $3,059,717.10 |
-| OL/USDT:USDT | +8.59% | $2,700,544.29 |
-| BTR/USDT:USDT | +7.17% | $1,030,357.22 |
+| SOCK/USDT:USDT | +23.91% | $1,542,312.70 |
+| IOST/USDT:USDT | +17.88% | $22,055,935.78 |
+| BULLA/USDT:USDT | +15.40% | $3,102,387.36 |
+| OL/USDT:USDT | +9.55% | $2,702,750.62 |
+| CATE/USDT:USDT | +8.29% | $2,080,804.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CNPY/USDT:USDT | below_1h_threshold | +4.39% | +4.61% |
-| WAVES/USDT:USDT | below_1h_threshold | +2.88% | +3.11% |
-| BTR/USDT:USDT | below_1h_threshold | +2.38% | +2.61% |
-| RAY/USDT:USDT | below_1h_threshold | +2.31% | +2.54% |
-| PHA/USDT:USDT | below_1h_threshold | +2.18% | +2.40% |
+| CNPY/USDT:USDT | below_1h_threshold | +4.07% | +4.30% |
+| BTR/USDT:USDT | below_1h_threshold | +2.28% | +2.51% |
+| OL/USDT:USDT | below_1h_threshold | +2.16% | +2.39% |
+| RAY/USDT:USDT | below_1h_threshold | +1.87% | +2.10% |
+| PHA/USDT:USDT | below_1h_threshold | +1.66% | +1.89% |
 
 ## 7. 次に見るべき不足
 
