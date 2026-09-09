@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T02:56:13.483236+00:00
+- generated_at: 2026-09-09T03:01:17.876422+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14027**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T02:56:03.368407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=78719.0
-- Funnel: target 1070 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-09T03:01:07.438216+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78685.0
+- Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +30.38% | $1,845,192.73 |
-| WAVES/USDT:USDT | +21.16% | $1,407,970.98 |
-| CNPY/USDT:USDT | +12.20% | $1,019,961.15 |
-| ARX/USDT:USDT | +11.66% | $1,426,576.85 |
-| EGLD/USDT:USDT | +8.55% | $2,545,784.81 |
+| OL/USDT:USDT | +30.84% | $1,850,035.81 |
+| WAVES/USDT:USDT | +20.81% | $1,405,714.95 |
+| ARX/USDT:USDT | +12.45% | $1,427,215.40 |
+| CNPY/USDT:USDT | +11.63% | $1,009,866.97 |
+| EGLD/USDT:USDT | +8.21% | $2,502,716.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FORM/USDT:USDT | below_1h_threshold | +3.35% | +3.52% |
-| ARX/USDT:USDT | below_1h_threshold | +2.49% | +2.66% |
-| VVV/USDT:USDT | below_1h_threshold | +2.42% | +2.58% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +2.23% | +2.40% |
-| WAVES/USDT:USDT | below_1h_threshold | +1.88% | +2.04% |
+| KORU/USDT:USDT | below_1h_threshold | +1.48% | +1.48% |
+| INTW/USDT:USDT | below_1h_threshold | +0.93% | +0.94% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.86% |
+| OL/USDT:USDT | below_1h_threshold | +0.79% | +0.80% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
 
 ## 7. 次に見るべき不足
 
