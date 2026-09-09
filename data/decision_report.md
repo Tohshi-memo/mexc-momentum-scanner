@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T18:56:38.758859+00:00
+- generated_at: 2026-09-09T19:01:28.495364+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14109**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T18:56:26.596458+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.40% price=78420.5
-- Funnel: target 1064 → liquid 162 → pre 50 → checked 50 → surge 6 → strict 0
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.1 >= 65=1, 4h RSI 69.2 >= 65=1, 4h RSI n/a=1, 4h RSI 76.9 >= 65=1, 4h RSI 79.4 >= 65=1, 4h RSI 72.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-09T19:01:18.308365+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=78415.6
+- Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOCK/USDT:USDT | +37.52% | $1,593,575.07 |
-| IOST/USDT:USDT | +25.94% | $24,634,592.01 |
-| CATE/USDT:USDT | +19.00% | $2,196,933.27 |
-| BULLA/USDT:USDT | +11.92% | $3,344,628.71 |
-| COTI/USDT:USDT | +10.47% | $1,549,284.11 |
+| SOCK/USDT:USDT | +38.06% | $1,560,476.88 |
+| IOST/USDT:USDT | +25.65% | $24,777,813.01 |
+| CATE/USDT:USDT | +23.48% | $2,211,361.48 |
+| BULLA/USDT:USDT | +11.10% | $3,309,607.29 |
+| COTI/USDT:USDT | +10.62% | $1,568,656.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CNPY/USDT:USDT | below_1h_threshold | +4.60% | +5.01% |
-| BTR/USDT:USDT | below_1h_threshold | +3.24% | +3.64% |
-| OL/USDT:USDT | below_1h_threshold | +3.03% | +3.43% |
-| STRK/USDT:USDT | below_1h_threshold | +1.75% | +2.15% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.55% | +1.95% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.33% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +1.03% |
+| CATE/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.78% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
 
 ## 7. 次に見るべき不足
 
