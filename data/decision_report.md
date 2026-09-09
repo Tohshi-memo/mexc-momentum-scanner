@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T04:36:15.186726+00:00
+- generated_at: 2026-09-09T04:41:10.280780+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14030**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T04:36:05.010849+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=78872.4
+- 更新: 2026-09-09T04:41:02.067820+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.37% price=78885.3
 - Funnel: target 1070 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OL/USDT:USDT | +21.14% | $2,062,360.05 |
-| CNPY/USDT:USDT | +15.22% | $1,041,118.00 |
-| WAVES/USDT:USDT | +13.26% | $1,544,500.15 |
-| ARX/USDT:USDT | +8.58% | $1,491,276.88 |
-| LIT/USDT:USDT | +8.12% | $6,538,559.95 |
+| OL/USDT:USDT | +23.47% | $2,067,320.32 |
+| CNPY/USDT:USDT | +13.34% | $1,041,431.00 |
+| WAVES/USDT:USDT | +12.91% | $1,559,700.40 |
+| RAY/USDT:USDT | +9.48% | $2,926,293.42 |
+| LIT/USDT:USDT | +8.44% | $6,561,375.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CNPY/USDT:USDT | below_1h_threshold | +4.28% | +3.93% |
-| LIT/USDT:USDT | below_1h_threshold | +3.76% | +3.41% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.63% | +3.28% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.14% | +2.79% |
-| STRK/USDT:USDT | below_1h_threshold | +2.06% | +1.71% |
+| LIT/USDT:USDT | below_1h_threshold | +3.97% | +3.60% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.60% | +3.23% |
+| RAY/USDT:USDT | below_1h_threshold | +2.88% | +2.52% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.58% | +2.21% |
+| STRK/USDT:USDT | below_1h_threshold | +2.26% | +1.89% |
 
 ## 7. 次に見るべき不足
 
