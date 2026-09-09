@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T18:41:38.203943+00:00
+- generated_at: 2026-09-09T18:46:42.446035+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14106**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$118.86** / 初期 $100.00 (+18.86%)
-- 確定: 2623件 (Win 768 / Loss 1001 / Flat 854) / pending 4件 / skip 2960件
+- 確定: 2623件 (Win 768 / Loss 1001 / Flat 854) / pending 6件 / skip 2960件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000654 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: IOST/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $118.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T18:41:21.943960+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=78518.2
-- Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.7 >= 65=1, 4h RSI n/a=1, 4h RSI 77.5 >= 65=1, 4h RSI 80.3 >= 65=1
+- 更新: 2026-09-09T18:46:30.015318+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=78458.2
+- Funnel: target 1064 → liquid 160 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=2, 4h RSI 88.7 >= 65=1, 4h RSI 77.6 >= 65=1, 4h RSI 68.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SOCK/USDT:USDT | +31.58% | $1,570,089.79 |
-| IOST/USDT:USDT | +24.16% | $23,925,457.78 |
-| CATE/USDT:USDT | +11.14% | $2,092,610.60 |
-| BULLA/USDT:USDT | +11.03% | $3,250,244.77 |
-| COTI/USDT:USDT | +10.88% | $1,460,023.45 |
+| SOCK/USDT:USDT | +31.58% | $1,575,274.18 |
+| IOST/USDT:USDT | +22.96% | $24,146,097.43 |
+| CATE/USDT:USDT | +14.72% | $2,116,263.24 |
+| COTI/USDT:USDT | +12.21% | $1,502,370.60 |
+| BULLA/USDT:USDT | +10.34% | $3,304,054.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CNPY/USDT:USDT | below_1h_threshold | +4.71% | +4.99% |
-| BULLA/USDT:USDT | below_1h_threshold | +4.08% | +4.36% |
-| CATE/USDT:USDT | below_1h_threshold | +2.50% | +2.78% |
-| OL/USDT:USDT | below_1h_threshold | +2.49% | +2.77% |
-| BTR/USDT:USDT | below_1h_threshold | +2.12% | +2.40% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.92% | +4.27% |
+| WAVES/USDT:USDT | below_1h_threshold | +3.05% | +3.40% |
+| BTR/USDT:USDT | below_1h_threshold | +2.37% | +2.72% |
+| OL/USDT:USDT | below_1h_threshold | +2.22% | +2.58% |
+| STRK/USDT:USDT | below_1h_threshold | +1.93% | +2.29% |
 
 ## 7. 次に見るべき不足
 
