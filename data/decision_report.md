@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-09T21:06:17.832410+00:00
+- generated_at: 2026-09-09T21:11:15.728743+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14118**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-09T21:06:07.822569+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=78306.3
+- 更新: 2026-09-09T21:11:05.714635+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=78216.9
 - Funnel: target 1064 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| IOST/USDT:USDT | +23.06% | $31,833,568.61 |
-| BTR/USDT:USDT | +8.72% | $1,312,369.23 |
-| COTI/USDT:USDT | +8.12% | $2,110,143.85 |
-| WAVES/USDT:USDT | +5.94% | $1,202,220.37 |
-| CATE/USDT:USDT | +4.79% | $2,483,027.52 |
+| IOST/USDT:USDT | +24.41% | $32,057,416.05 |
+| BTR/USDT:USDT | +8.87% | $1,325,264.31 |
+| COTI/USDT:USDT | +6.62% | $2,119,983.94 |
+| CATE/USDT:USDT | +4.64% | $2,486,980.41 |
+| MINA/USDT:USDT | +4.55% | $1,013,758.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOST/USDT:USDT | below_1h_threshold | +1.65% | +1.61% |
-| KORU/USDT:USDT | below_1h_threshold | +1.16% | +1.13% |
-| VVV/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.85% |
-| MINA/USDT:USDT | below_1h_threshold | +0.73% | +0.70% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.95% | +5.03% |
+| IOST/USDT:USDT | below_1h_threshold | +2.12% | +2.20% |
+| MINA/USDT:USDT | below_1h_threshold | +1.84% | +1.92% |
+| KORU/USDT:USDT | below_1h_threshold | +1.16% | +1.24% |
+| KAS/USDT:USDT | below_1h_threshold | +0.92% | +1.00% |
 
 ## 7. 次に見るべき不足
 
