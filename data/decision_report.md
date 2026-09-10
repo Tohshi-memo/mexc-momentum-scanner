@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T22:56:19.192501+00:00
+- generated_at: 2026-09-10T23:01:16.028010+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14191**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T22:56:09.139424+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=76840.3
-- Funnel: target 1067 → liquid 177 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-10T23:01:05.820843+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=76823.1
+- Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +26.07% | $5,672,354.34 |
-| CNPY/USDT:USDT | +13.15% | $2,331,331.43 |
-| SAGA/USDT:USDT | +10.33% | $5,831,561.93 |
-| BTW/USDT:USDT | +9.54% | $2,709,256.67 |
-| RAY/USDT:USDT | +8.86% | $4,839,453.23 |
+| NIULAI/USDT:USDT | +26.70% | $5,629,231.24 |
+| CNPY/USDT:USDT | +12.51% | $2,305,549.69 |
+| BTW/USDT:USDT | +9.83% | $2,637,118.13 |
+| RAY/USDT:USDT | +9.40% | $4,692,719.43 |
+| SAGA/USDT:USDT | +8.75% | $5,802,766.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UKOIL/USDT:USDT | below_1h_threshold | +2.21% | +2.57% |
-| SLBSTOCK/USDT:USDT | below_1h_threshold | +2.14% | +2.49% |
-| PONS/USDT:USDT | below_1h_threshold | +1.92% | +2.28% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.35% | +1.70% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.30% | +1.66% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
+| NGAS/USDT:USDT | below_1h_threshold | +0.79% | +0.75% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.65% | +0.61% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.49% | +0.45% |
+| VVV/USDT:USDT | below_1h_threshold | +0.44% | +0.41% |
 
 ## 7. 次に見るべき不足
 
