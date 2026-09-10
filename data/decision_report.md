@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T16:46:23.296889+00:00
+- generated_at: 2026-09-10T16:51:19.937216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14171**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T16:46:12.593227+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=77058.8
+- 更新: 2026-09-10T16:51:09.368149+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77091.6
 - Funnel: target 1067 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.2 >= 65=1
+- Strict後reject: 4h RSI 76.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +8.14% | $1,651,712.04 |
-| RUNE/USDT:USDT | +3.79% | $1,036,513.17 |
-| NES/USDT:USDT | +3.63% | $1,797,416.06 |
-| PONS/USDT:USDT | +3.60% | $8,680,637.61 |
-| NIULAI/USDT:USDT | +3.57% | $1,407,420.17 |
+| SAGA/USDT:USDT | +6.38% | $1,856,168.66 |
+| PONS/USDT:USDT | +4.79% | $8,740,110.27 |
+| RUNE/USDT:USDT | +4.27% | $1,079,870.23 |
+| BTW/USDT:USDT | +3.56% | $1,527,885.52 |
+| NES/USDT:USDT | +3.13% | $1,799,620.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RUNE/USDT:USDT | below_1h_threshold | +3.80% | +4.00% |
-| NES/USDT:USDT | below_1h_threshold | +3.64% | +3.84% |
-| PONS/USDT:USDT | below_1h_threshold | +3.61% | +3.82% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.47% | +3.68% |
-| BTW/USDT:USDT | below_1h_threshold | +3.11% | +3.31% |
+| PONS/USDT:USDT | below_1h_threshold | +4.79% | +4.96% |
+| RUNE/USDT:USDT | below_1h_threshold | +4.29% | +4.46% |
+| BTW/USDT:USDT | below_1h_threshold | +3.57% | +3.74% |
+| NES/USDT:USDT | below_1h_threshold | +3.21% | +3.37% |
+| NIULAI/USDT:USDT | below_1h_threshold | +2.82% | +2.99% |
 
 ## 7. 次に見るべき不足
 
