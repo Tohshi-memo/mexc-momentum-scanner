@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T04:01:19.453048+00:00
+- generated_at: 2026-09-10T04:06:14.532455+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14151**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T04:01:07.839758+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78303.1
+- 更新: 2026-09-10T04:06:04.455948+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78368.9
 - Funnel: target 1064 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +51.31% | $2,299,389.22 |
-| CATE/USDT:USDT | +31.07% | $2,879,596.80 |
-| BTR/USDT:USDT | +30.34% | $2,992,592.51 |
-| VET/USDT:USDT | +6.59% | $5,417,380.56 |
-| XMR/USDT:USDT | +2.88% | $5,655,684.07 |
+| VTHO/USDT:USDT | +59.35% | $2,381,127.88 |
+| BTR/USDT:USDT | +32.69% | $3,060,762.73 |
+| CATE/USDT:USDT | +28.26% | $2,889,839.63 |
+| VET/USDT:USDT | +6.43% | $5,554,444.61 |
+| XMR/USDT:USDT | +2.85% | $5,668,788.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
-| BTR/USDT:USDT | below_1h_threshold | +0.59% | +0.58% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
-| CATE/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
-| ALGO/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
+| BTR/USDT:USDT | below_1h_threshold | +2.27% | +2.18% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.49% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.49% | +0.39% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.47% | +0.38% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.21% |
 
 ## 7. 次に見るべき不足
 
