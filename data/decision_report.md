@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T12:51:11.341611+00:00
+- generated_at: 2026-09-10T12:56:54.859435+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14165**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T12:51:01.846027+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -1.02% price=77026.2
-- Funnel: target 1065 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-10T12:56:44.717264+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.48% price=76669.9
+- Funnel: target 1065 → liquid 175 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +44.89% | $8,138,789.80 |
-| CATE/USDT:USDT | +22.92% | $2,810,389.91 |
-| NES/USDT:USDT | +16.42% | $1,428,590.50 |
-| SOXS/USDT:USDT | +7.86% | $12,584,778.18 |
-| KAS/USDT:USDT | +6.38% | $8,831,293.31 |
+| VTHO/USDT:USDT | +43.55% | $8,170,049.32 |
+| CATE/USDT:USDT | +23.00% | $2,822,632.89 |
+| NES/USDT:USDT | +18.86% | $1,469,034.36 |
+| SOXS/USDT:USDT | +8.90% | $12,868,833.10 |
+| KAS/USDT:USDT | +6.72% | $8,988,981.35 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +2.82% | +3.84% |
-| NES/USDT:USDT | below_1h_threshold | +2.65% | +3.68% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +2.93% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.48% | +2.50% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.42% | +2.45% |
+| NES/USDT:USDT | below_1h_threshold | +4.57% | +6.05% |
+| HEMI/USDT:USDT | below_1h_threshold | +3.08% | +4.56% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.91% | +3.39% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.48% | +2.96% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.42% | +2.91% |
 
 ## 7. 次に見るべき不足
 
