@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-10T22:31:22.996329+00:00
+- generated_at: 2026-09-10T22:36:12.216724+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14189**
+- closed shadow trades: **14190**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=14189, expectancy=-0.01%
+- 全期間 MARKET基準: n=14190, expectancy=-0.01%
 - 直近20件 MARKET基準: n=20, expectancy=-0.69%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,053.34** / 初期 $100.00 (+953.34%)
-- 確定: 5364件 (Win 1612 / Loss 1734 / Flat 2018) / skip 5386件
+- 確定: 5364件 (Win 1612 / Loss 1734 / Flat 2018) / skip 5387件
 - 成長率目線: 平均log +0.000439 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: SPCXSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $1,053.34
@@ -55,46 +55,45 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$208.08** / 初期 $100.00 (+108.08%)
-- 確定: 2783件 (Win 767 / Loss 650 / Flat 1366) / skip 4817件
+- 確定: 2784件 (Win 767 / Loss 650 / Flat 1367) / skip 4817件
 - 成長率目線: 平均log +0.000263 / 幾何平均 +0.026% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0715 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: SPCXSTOCK/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $208.08
+- 次の候補: `LIMIT_1PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0308 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: MARSCOIN/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $208.08
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$122.36** / 初期 $100.00 (+22.36%)
-- 確定: 2694件 (Win 794 / Loss 1029 / Flat 871) / pending 4件 / skip 2963件
+- 残高: **$122.15** / 初期 $100.00 (+22.15%)
+- 確定: 2695件 (Win 794 / Loss 1030 / Flat 871) / pending 3件 / skip 2963件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000272 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: SPCXSTOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.36
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000223 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: MARSCOIN/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.15
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T22:31:10.453463+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77040.8
-- Funnel: target 1067 → liquid 174 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-10T22:36:02.742982+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=76966.7
+- Funnel: target 1067 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +33.08% | $5,266,899.46 |
-| 4STOCK/USDT:USDT | +13.56% | $2,122,323.55 |
-| CNPY/USDT:USDT | +12.16% | $2,296,977.15 |
-| BTW/USDT:USDT | +10.93% | $2,656,023.99 |
-| SAGA/USDT:USDT | +10.03% | $5,694,793.24 |
+| NIULAI/USDT:USDT | +29.08% | $5,411,530.27 |
+| CNPY/USDT:USDT | +13.05% | $2,306,345.09 |
+| 4STOCK/USDT:USDT | +12.51% | $2,123,943.89 |
+| BTW/USDT:USDT | +10.96% | $2,660,072.67 |
+| SAGA/USDT:USDT | +10.33% | $5,735,956.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UKOIL/USDT:USDT | below_1h_threshold | +2.21% | +2.31% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.21% | +2.30% |
-| SLBSTOCK/USDT:USDT | below_1h_threshold | +2.14% | +2.23% |
-| LIT/USDT:USDT | below_1h_threshold | +1.45% | +1.54% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.44% | +1.54% |
+| UKOIL/USDT:USDT | below_1h_threshold | +2.21% | +2.40% |
+| SLBSTOCK/USDT:USDT | below_1h_threshold | +2.14% | +2.33% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.35% | +1.54% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.26% | +1.46% |
+| NES/USDT:USDT | below_1h_threshold | +0.95% | +1.14% |
 
 ## 7. 次に見るべき不足
 
