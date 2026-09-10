@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T00:26:26.364555+00:00
+- generated_at: 2026-09-10T00:31:24.273864+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14136**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T00:26:11.538702+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=78215.2
+- 更新: 2026-09-10T00:31:15.204366+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78253.9
 - Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 83.1 >= 65=1
+- Strict後reject: 4h RSI n/a=1, 4h RSI 82.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +15.93% | $2,821,121.92 |
-| WAVES/USDT:USDT | +13.88% | $1,226,442.84 |
-| BTR/USDT:USDT | +13.23% | $2,105,652.14 |
-| SOCK/USDT:USDT | +9.29% | $1,131,840.06 |
-| MINA/USDT:USDT | +4.90% | $1,214,490.74 |
+| CATE/USDT:USDT | +14.83% | $2,827,538.55 |
+| BTR/USDT:USDT | +14.42% | $2,116,314.27 |
+| WAVES/USDT:USDT | +13.61% | $1,235,134.16 |
+| SOCK/USDT:USDT | +6.30% | $1,133,856.84 |
+| MINA/USDT:USDT | +3.71% | $1,218,892.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FF/USDT:USDT | below_1h_threshold | +0.92% | +0.98% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.92% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.77% |
-| MINA/USDT:USDT | below_1h_threshold | +0.68% | +0.75% |
-| MUU/USDT:USDT | below_1h_threshold | +0.46% | +0.52% |
+| XTZ/USDT:USDT | below_1h_threshold | +0.91% | +0.92% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.87% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
+| FF/USDT:USDT | below_1h_threshold | +0.70% | +0.71% |
+| BTR/USDT:USDT | below_1h_threshold | +0.57% | +0.59% |
 
 ## 7. 次に見るべき不足
 
