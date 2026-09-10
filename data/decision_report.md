@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T00:56:20.752787+00:00
+- generated_at: 2026-09-10T01:01:15.612814+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14136**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T00:56:10.064133+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=78121.8
-- Funnel: target 1064 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 81.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-10T01:01:07.314349+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78147.8
+- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +18.40% | $2,872,638.87 |
-| WAVES/USDT:USDT | +11.06% | $1,268,190.50 |
-| SOCK/USDT:USDT | +6.01% | $1,136,669.63 |
-| BTR/USDT:USDT | +5.70% | $2,194,090.77 |
-| MINA/USDT:USDT | +4.69% | $1,247,114.39 |
+| CATE/USDT:USDT | +21.31% | $2,794,771.70 |
+| WAVES/USDT:USDT | +8.21% | $1,096,493.84 |
+| SOCK/USDT:USDT | +8.13% | $1,089,021.37 |
+| BTR/USDT:USDT | +5.98% | $2,179,941.08 |
+| MINA/USDT:USDT | +4.81% | $1,239,545.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +1.04% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.89% |
-| MINA/USDT:USDT | below_1h_threshold | +0.58% | +0.76% |
-| MUU/USDT:USDT | below_1h_threshold | +0.46% | +0.64% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.34% | +0.53% |
+| SOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.67% |
+| BTR/USDT:USDT | below_1h_threshold | +2.19% | +2.18% |
+| CATE/USDT:USDT | below_1h_threshold | +1.71% | +1.69% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.46% |
+| MINA/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
 
 ## 7. 次に見るべき不足
 
