@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T05:41:20.537338+00:00
+- generated_at: 2026-09-10T05:46:23.512767+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14152**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.04** / 初期 $100.00 (+22.04%)
-- 確定: 2657件 (Win 784 / Loss 1014 / Flat 859) / pending 1件 / skip 2962件
+- 確定: 2657件 (Win 784 / Loss 1014 / Flat 859) / pending 2件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000468 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BULLA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.04
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T05:41:10.005090+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=78406.5
-- Funnel: target 1064 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.5 >= 65=1
+- 更新: 2026-09-10T05:46:12.449316+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78396.0
+- Funnel: target 1064 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 72.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +43.04% | $3,212,819.50 |
-| CATE/USDT:USDT | +22.63% | $2,891,732.62 |
-| BULLA/USDT:USDT | +11.45% | $3,858,248.05 |
-| VET/USDT:USDT | +5.87% | $5,704,271.78 |
-| BTR/USDT:USDT | +5.66% | $3,895,067.98 |
+| VTHO/USDT:USDT | +41.43% | $3,245,831.15 |
+| CATE/USDT:USDT | +23.62% | $2,897,554.19 |
+| BULLA/USDT:USDT | +11.88% | $3,901,325.05 |
+| BTR/USDT:USDT | +6.59% | $3,902,351.03 |
+| VET/USDT:USDT | +5.96% | $5,723,481.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +2.26% | +2.22% |
-| KAS/USDT:USDT | below_1h_threshold | +1.93% | +1.89% |
-| KORU/USDT:USDT | below_1h_threshold | +1.91% | +1.88% |
-| VET/USDT:USDT | below_1h_threshold | +1.08% | +1.04% |
-| MUU/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
+| MINA/USDT:USDT | below_1h_threshold | +2.85% | +2.82% |
+| KORU/USDT:USDT | below_1h_threshold | +1.91% | +1.89% |
+| KAS/USDT:USDT | below_1h_threshold | +1.77% | +1.74% |
+| VET/USDT:USDT | below_1h_threshold | +1.17% | +1.14% |
+| XMR/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
 
 ## 7. 次に見るべき不足
 
