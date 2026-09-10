@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T08:01:16.962881+00:00
+- generated_at: 2026-09-10T08:06:17.003215+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14156**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T08:01:06.703719+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78061.0
+- 更新: 2026-09-10T08:06:06.629566+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=78095.9
 - Funnel: target 1064 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +49.09% | $4,474,102.59 |
-| CATE/USDT:USDT | +37.01% | $2,609,134.88 |
-| REZ/USDT:USDT | +10.55% | $1,225,510.39 |
-| KAS/USDT:USDT | +8.14% | $5,570,573.19 |
-| EGLD/USDT:USDT | +4.99% | $2,225,615.60 |
+| VTHO/USDT:USDT | +49.28% | $4,515,232.16 |
+| CATE/USDT:USDT | +34.41% | $2,625,094.32 |
+| KAS/USDT:USDT | +8.60% | $5,602,826.44 |
+| REZ/USDT:USDT | +7.12% | $1,237,640.02 |
+| EGLD/USDT:USDT | +6.28% | $2,258,537.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.00% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.57% | +0.59% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
-| MELISTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.22% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.40% | +1.37% |
+| BTR/USDT:USDT | below_1h_threshold | +1.34% | +1.30% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.99% | +0.96% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.60% | +0.57% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.57% | +0.54% |
 
 ## 7. 次に見るべき不足
 
