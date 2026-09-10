@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T01:16:23.317395+00:00
+- generated_at: 2026-09-10T01:21:22.775188+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14137**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T01:16:10.537704+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78275.3
+- 更新: 2026-09-10T01:21:13.568690+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78207.4
 - Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 84.1 >= 65=1
+- Strict後reject: 4h RSI n/a=1, 4h RSI 79.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +21.99% | $2,822,743.16 |
-| SOCK/USDT:USDT | +15.52% | $1,094,466.43 |
-| BTR/USDT:USDT | +13.45% | $2,227,220.36 |
-| WAVES/USDT:USDT | +7.87% | $1,105,892.68 |
-| MINA/USDT:USDT | +4.68% | $1,259,809.15 |
+| CATE/USDT:USDT | +17.96% | $2,830,565.82 |
+| SOCK/USDT:USDT | +14.98% | $1,096,929.11 |
+| BTR/USDT:USDT | +12.17% | $2,234,904.21 |
+| WAVES/USDT:USDT | +7.12% | $1,107,680.16 |
+| MINA/USDT:USDT | +4.52% | $1,263,620.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.69% | +4.51% |
-| VET/USDT:USDT | below_1h_threshold | +2.61% | +2.44% |
-| CATE/USDT:USDT | below_1h_threshold | +2.25% | +2.08% |
-| AKE/USDT:USDT | below_1h_threshold | +1.59% | +1.42% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.30% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.78% | +4.69% |
+| VET/USDT:USDT | below_1h_threshold | +1.83% | +1.75% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
+| AKE/USDT:USDT | below_1h_threshold | +1.20% | +1.11% |
+| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.11% | +1.02% |
 
 ## 7. 次に見るべき不足
 
