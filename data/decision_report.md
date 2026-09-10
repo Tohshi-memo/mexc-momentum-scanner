@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T07:01:19.072526+00:00
+- generated_at: 2026-09-10T07:06:18.042718+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14156**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T07:01:11.708867+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=78362.3
-- Funnel: target 1064 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-10T07:06:07.817998+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=78178.6
+- Funnel: target 1064 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +51.03% | $3,593,447.47 |
-| CATE/USDT:USDT | +22.51% | $2,631,676.89 |
-| KAS/USDT:USDT | +7.29% | $4,723,021.48 |
-| VET/USDT:USDT | +6.40% | $5,617,357.24 |
-| REZ/USDT:USDT | +6.02% | $1,076,844.77 |
+| VTHO/USDT:USDT | +46.23% | $3,620,576.47 |
+| CATE/USDT:USDT | +25.65% | $2,636,727.44 |
+| KAS/USDT:USDT | +6.72% | $4,767,159.86 |
+| VET/USDT:USDT | +5.86% | $5,649,926.98 |
+| BULLA/USDT:USDT | +5.59% | $4,145,176.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.26% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.41% | +0.45% |
-| VTHO/USDT:USDT | below_1h_threshold | +0.34% | +0.37% |
-| CATE/USDT:USDT | below_1h_threshold | +0.21% | +0.24% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.20% | +0.23% |
+| CATE/USDT:USDT | below_1h_threshold | +2.53% | +2.80% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.49% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.49% | +0.76% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.41% | +0.68% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.20% | +0.47% |
 
 ## 7. 次に見るべき不足
 
