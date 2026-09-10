@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T01:56:18.560149+00:00
+- generated_at: 2026-09-10T02:01:07.857484+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14141**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T01:56:09.632335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=78022.5
-- Funnel: target 1064 → liquid 167 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.9 >= 65=1, 4h RSI 83.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-10T02:01:00.618317+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78031.3
+- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +53.92% | $1,287,578.63 |
-| BTR/USDT:USDT | +13.30% | $2,267,884.13 |
-| CATE/USDT:USDT | +13.28% | $2,867,889.36 |
-| MINA/USDT:USDT | +3.79% | $1,280,643.26 |
-| KAS/USDT:USDT | +3.00% | $4,117,485.92 |
+| VTHO/USDT:USDT | +53.00% | $1,329,472.80 |
+| BTR/USDT:USDT | +14.85% | $2,255,465.91 |
+| CATE/USDT:USDT | +11.98% | $2,780,876.85 |
+| KAS/USDT:USDT | +3.00% | $4,035,223.32 |
+| EGLD/USDT:USDT | +2.44% | $2,416,074.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.63% |
-| VET/USDT:USDT | below_1h_threshold | +1.38% | +1.53% |
-| UAI/USDT:USDT | below_1h_threshold | +0.91% | +1.05% |
-| XMR/USDT:USDT | below_1h_threshold | +0.67% | +0.81% |
-| AKE/USDT:USDT | below_1h_threshold | +0.53% | +0.68% |
+| MINA/USDT:USDT | below_1h_threshold | +0.81% | +0.85% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.75% |
+| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.57% |
+| BTR/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
 
 ## 7. 次に見るべき不足
 
