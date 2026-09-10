@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T17:36:24.275630+00:00
+- generated_at: 2026-09-10T17:41:22.502156+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14174**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T17:36:10.556213+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=77438.3
+- 更新: 2026-09-10T17:41:10.058683+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=77296.5
 - Funnel: target 1067 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +10.94% | $2,799,157.00 |
-| 4STOCK/USDT:USDT | +9.73% | $2,441,974.96 |
-| PONS/USDT:USDT | +8.72% | $8,681,118.30 |
-| NIULAI/USDT:USDT | +6.98% | $1,393,936.55 |
-| BTW/USDT:USDT | +6.51% | $1,630,755.61 |
+| PONS/USDT:USDT | +9.96% | $8,757,595.64 |
+| SAGA/USDT:USDT | +9.42% | $2,856,525.90 |
+| 4STOCK/USDT:USDT | +7.84% | $2,455,967.76 |
+| NIULAI/USDT:USDT | +6.54% | $1,398,388.72 |
+| BTW/USDT:USDT | +5.94% | $1,645,174.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +4.67% | +4.33% |
-| NIULAI/USDT:USDT | below_1h_threshold | +4.11% | +3.76% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.91% | +2.57% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.88% | +2.54% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.76% | +2.41% |
+| VVV/USDT:USDT | below_relative_strength | +5.01% | +4.84% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.14% | +3.98% |
+| NIULAI/USDT:USDT | below_1h_threshold | +3.52% | +3.36% |
+| SOPH/USDT:USDT | below_1h_threshold | +3.13% | +2.97% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.98% | +2.82% |
 
 ## 7. 次に見るべき不足
 
