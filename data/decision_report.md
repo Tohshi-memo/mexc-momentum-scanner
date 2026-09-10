@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T15:06:25.167391+00:00
+- generated_at: 2026-09-10T15:11:15.526372+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14169**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T15:06:17.792538+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=77288.5
+- 更新: 2026-09-10T15:11:05.380562+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77350.0
 - Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +51.03% | $9,602,504.41 |
-| CATE/USDT:USDT | +27.64% | $2,760,674.87 |
-| NES/USDT:USDT | +16.84% | $1,663,023.95 |
-| ETHFI/USDT:USDT | +12.38% | $7,515,976.87 |
-| VET/USDT:USDT | +10.92% | $7,075,754.53 |
+| VTHO/USDT:USDT | +48.15% | $9,630,412.53 |
+| CATE/USDT:USDT | +29.20% | $2,764,475.29 |
+| NES/USDT:USDT | +18.94% | $1,669,012.28 |
+| ETHFI/USDT:USDT | +11.90% | $7,683,219.94 |
+| FF/USDT:USDT | +10.87% | $1,245,843.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| METASTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.19% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.89% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.84% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.38% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.06% | +1.18% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +2.08% | +2.12% |
+| MINA/USDT:USDT | below_1h_threshold | +1.88% | +1.91% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.81% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.76% |
+| NES/USDT:USDT | below_1h_threshold | +1.57% | +1.61% |
 
 ## 7. 次に見るべき不足
 
