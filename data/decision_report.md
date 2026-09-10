@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T07:56:21.350961+00:00
+- generated_at: 2026-09-10T08:01:16.962881+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14156**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T07:56:11.055938+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=78084.0
-- Funnel: target 1064 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-10T08:01:06.703719+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78061.0
+- Funnel: target 1064 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +53.25% | $3,881,838.49 |
-| CATE/USDT:USDT | +36.16% | $2,706,010.40 |
-| REZ/USDT:USDT | +10.33% | $1,225,831.08 |
-| KAS/USDT:USDT | +8.03% | $5,560,365.98 |
-| VET/USDT:USDT | +4.90% | $5,737,164.19 |
+| VTHO/USDT:USDT | +49.09% | $4,474,102.59 |
+| CATE/USDT:USDT | +37.01% | $2,609,134.88 |
+| REZ/USDT:USDT | +10.55% | $1,225,510.39 |
+| KAS/USDT:USDT | +8.14% | $5,570,573.19 |
+| EGLD/USDT:USDT | +4.99% | $2,225,615.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VTHO/USDT:USDT | below_1h_threshold | +1.81% | +2.20% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.61% |
-| REZ/USDT:USDT | below_1h_threshold | +1.15% | +1.53% |
-| AKE/USDT:USDT | below_1h_threshold | +1.02% | +1.41% |
-| KAS/USDT:USDT | below_1h_threshold | +0.90% | +1.29% |
+| BTR/USDT:USDT | below_1h_threshold | +1.79% | +1.80% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.99% | +1.00% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.57% | +0.59% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.41% | +0.42% |
+| MELISTOCK/USDT:USDT | below_1h_threshold | +0.21% | +0.22% |
 
 ## 7. 次に見るべき不足
 
