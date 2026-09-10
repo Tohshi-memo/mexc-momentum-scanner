@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T02:16:33.416767+00:00
+- generated_at: 2026-09-10T02:21:23.196675+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14142**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T02:16:22.435294+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78029.3
-- Funnel: target 1064 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.9 >= 65=1, 4h RSI 69.5 >= 65=1
+- 更新: 2026-09-10T02:21:12.815837+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78024.1
+- Funnel: target 1064 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +52.65% | $1,470,679.10 |
-| BTR/USDT:USDT | +24.24% | $2,423,751.90 |
-| CATE/USDT:USDT | +18.40% | $2,819,830.97 |
-| KAS/USDT:USDT | +2.75% | $4,046,234.39 |
-| MINA/USDT:USDT | +2.25% | $1,320,746.38 |
+| VTHO/USDT:USDT | +52.42% | $1,498,872.00 |
+| BTR/USDT:USDT | +20.74% | $2,462,325.59 |
+| CATE/USDT:USDT | +17.02% | $2,823,870.61 |
+| KAS/USDT:USDT | +2.52% | $4,047,182.95 |
+| SOXS/USDT:USDT | +2.21% | $2,355,401.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +1.69% | +1.73% |
-| AKE/USDT:USDT | below_1h_threshold | +0.88% | +0.92% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.72% | +0.76% |
+| CATE/USDT:USDT | below_1h_threshold | +4.41% | +4.46% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
+| BR/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.80% | +0.85% |
 | SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.76% |
-| SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
 
 ## 7. 次に見るべき不足
 
