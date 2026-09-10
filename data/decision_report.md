@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T17:01:20.551128+00:00
+- generated_at: 2026-09-10T17:06:24.027952+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14171**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T17:01:09.963369+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77146.7
+- 更新: 2026-09-10T17:06:13.254685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77148.2
 - Funnel: target 1067 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +7.36% | $8,465,000.11 |
-| SAGA/USDT:USDT | +7.23% | $2,082,562.00 |
-| RUNE/USDT:USDT | +5.15% | $1,166,551.22 |
-| BTW/USDT:USDT | +4.59% | $1,497,926.98 |
-| NES/USDT:USDT | +3.20% | $1,800,765.56 |
+| SAGA/USDT:USDT | +7.41% | $2,199,376.04 |
+| PONS/USDT:USDT | +7.38% | $8,503,399.65 |
+| BTW/USDT:USDT | +5.41% | $1,521,818.82 |
+| NES/USDT:USDT | +4.77% | $1,805,529.54 |
+| RUNE/USDT:USDT | +3.71% | $1,247,067.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.15% | +1.18% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +0.60% | +0.63% |
-| SOPH/USDT:USDT | below_1h_threshold | +0.58% | +0.61% |
-| MSFTSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.33% | +0.36% |
+| VVV/USDT:USDT | below_1h_threshold | +1.95% | +1.98% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.88% | +1.91% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.41% |
+| NES/USDT:USDT | below_1h_threshold | +1.24% | +1.27% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.21% | +1.24% |
 
 ## 7. 次に見るべき不足
 
