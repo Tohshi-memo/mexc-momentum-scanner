@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T16:26:28.282124+00:00
+- generated_at: 2026-09-10T16:31:30.224599+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14170**
 
@@ -70,31 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T16:26:17.785673+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=76940.2
+- 更新: 2026-09-10T16:31:19.093813+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=76939.8
 - Funnel: target 1067 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.1 >= 65=1, 4h RSI 66.0 >= 65=1
+- Strict後reject: 4h RSI 77.0 >= 65=1, 4h RSI 66.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +6.38% | $1,152,752.84 |
-| NES/USDT:USDT | +5.41% | $1,764,382.86 |
-| BTW/USDT:USDT | +2.98% | $1,490,551.65 |
-| CATE/USDT:USDT | +2.58% | $2,789,145.32 |
-| BTR/USDT:USDT | +1.99% | $4,399,530.60 |
+| SAGA/USDT:USDT | +8.57% | $1,274,510.81 |
+| NES/USDT:USDT | +8.05% | $1,771,085.74 |
+| BTW/USDT:USDT | +2.99% | $1,500,014.24 |
+| BTR/USDT:USDT | +1.91% | $4,403,314.62 |
+| BULLA/USDT:USDT | +1.76% | $3,071,566.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.98% | +3.34% |
-| CATE/USDT:USDT | below_1h_threshold | +2.59% | +2.95% |
-| BTR/USDT:USDT | below_1h_threshold | +2.00% | +2.36% |
+| BTW/USDT:USDT | below_1h_threshold | +2.99% | +3.35% |
+| BTR/USDT:USDT | below_1h_threshold | +1.90% | +2.26% |
 | USOIL/USDT:USDT | below_1h_threshold | +1.88% | +2.24% |
+| PONS/USDT:USDT | below_1h_threshold | +1.88% | +2.24% |
 | UKOIL/USDT:USDT | below_1h_threshold | +1.77% | +2.13% |
 
 ## 7. 次に見るべき不足
