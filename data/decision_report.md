@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T17:46:35.546014+00:00
+- generated_at: 2026-09-10T17:51:41.364557+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14174**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.69** / 初期 $100.00 (+22.69%)
-- 確定: 2679件 (Win 791 / Loss 1023 / Flat 865) / pending 4件 / skip 2962件
+- 確定: 2679件 (Win 791 / Loss 1023 / Flat 865) / pending 6件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000454 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ETHFI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T17:46:22.099438+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=77333.7
-- Funnel: target 1067 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 2
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T17:51:21.814797+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=77338.3
+- Funnel: target 1067 → liquid 175 → pre 50 → checked 50 → surge 4 → strict 4
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +9.54% | $8,808,497.71 |
-| SAGA/USDT:USDT | +8.99% | $2,920,451.97 |
-| 4STOCK/USDT:USDT | +8.66% | $2,463,160.09 |
-| BTW/USDT:USDT | +6.82% | $1,665,252.20 |
-| NIULAI/USDT:USDT | +6.35% | $1,402,817.72 |
+| PONS/USDT:USDT | +11.00% | $8,915,874.32 |
+| NIULAI/USDT:USDT | +9.57% | $1,416,365.18 |
+| 4STOCK/USDT:USDT | +8.92% | $2,470,941.04 |
+| BTW/USDT:USDT | +7.46% | $1,671,647.53 |
+| EIGEN/USDT:USDT | +6.24% | $1,097,975.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +3.78% | +3.57% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.72% | +3.51% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.65% | +3.44% |
-| NIULAI/USDT:USDT | below_1h_threshold | +3.27% | +3.06% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.55% | +2.34% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.68% | +4.47% |
+| SOPH/USDT:USDT | below_1h_threshold | +3.53% | +3.31% |
+| PONS/USDT:USDT | below_1h_threshold | +3.45% | +3.23% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.14% | +2.93% |
+| JTO/USDT:USDT | below_1h_threshold | +2.76% | +2.54% |
 
 ## 7. 次に見るべき不足
 
