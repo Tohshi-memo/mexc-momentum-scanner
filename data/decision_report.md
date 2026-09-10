@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T00:01:21.199236+00:00
+- generated_at: 2026-09-10T00:06:14.344166+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14132**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$119.14** / 初期 $100.00 (+19.14%)
-- 確定: 2637件 (Win 773 / Loss 1009 / Flat 855) / pending 1件 / skip 2962件
+- 確定: 2637件 (Win 773 / Loss 1009 / Flat 855) / pending 2件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000365 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $119.14
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T00:01:11.319152+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78268.1
-- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T00:06:04.027103+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=78311.4
+- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +18.79% | $2,782,990.60 |
-| BTR/USDT:USDT | +13.62% | $2,019,104.10 |
-| IOST/USDT:USDT | +7.60% | $41,708,249.13 |
-| WAVES/USDT:USDT | +3.83% | $1,194,285.97 |
-| KAS/USDT:USDT | +3.57% | $3,859,731.87 |
+| CATE/USDT:USDT | +14.88% | $2,791,930.13 |
+| BTR/USDT:USDT | +14.83% | $2,027,471.58 |
+| WAVES/USDT:USDT | +9.80% | $1,197,070.97 |
+| MINA/USDT:USDT | +4.25% | $1,186,725.75 |
+| IOST/USDT:USDT | +3.42% | $41,862,413.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
-| MUU/USDT:USDT | below_1h_threshold | +0.46% | +0.45% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.27% | +0.27% |
+| BTR/USDT:USDT | below_1h_threshold | +0.95% | +0.89% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.79% |
+| VET/USDT:USDT | below_1h_threshold | +0.82% | +0.76% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.79% | +0.73% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
 
 ## 7. 次に見るべき不足
 
