@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T07:31:25.681521+00:00
+- generated_at: 2026-09-10T07:37:13.923848+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14156**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.93** / 初期 $100.00 (+21.93%)
-- 確定: 2661件 (Win 785 / Loss 1016 / Flat 860) / pending 0件 / skip 2962件
+- 確定: 2661件 (Win 785 / Loss 1016 / Flat 860) / pending 1件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000327 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.93
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T07:31:15.210134+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.49% price=78006.3
-- Funnel: target 1064 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T07:37:02.578242+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.59% price=77926.7
+- Funnel: target 1064 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +47.62% | $3,712,894.22 |
-| CATE/USDT:USDT | +27.24% | $2,653,318.95 |
-| KAS/USDT:USDT | +9.16% | $5,054,301.12 |
-| REZ/USDT:USDT | +6.80% | $1,162,190.67 |
-| VET/USDT:USDT | +5.20% | $5,689,566.67 |
+| VTHO/USDT:USDT | +46.21% | $3,725,006.55 |
+| CATE/USDT:USDT | +36.15% | $2,669,506.72 |
+| KAS/USDT:USDT | +9.08% | $5,282,440.20 |
+| REZ/USDT:USDT | +7.18% | $1,173,205.11 |
+| VET/USDT:USDT | +4.97% | $5,703,638.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +4.09% | +4.57% |
-| KAS/USDT:USDT | below_1h_threshold | +1.91% | +2.39% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.71% |
-| FF/USDT:USDT | below_1h_threshold | +0.61% | +1.10% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.41% | +0.90% |
+| KAS/USDT:USDT | below_1h_threshold | +1.77% | +2.36% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.81% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.41% | +1.00% |
+| FF/USDT:USDT | below_1h_threshold | +0.39% | +0.98% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.20% | +0.79% |
 
 ## 7. 次に見るべき不足
 
