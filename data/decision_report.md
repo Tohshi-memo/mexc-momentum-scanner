@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T20:16:24.838152+00:00
+- generated_at: 2026-09-10T20:21:22.205142+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14184**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.94** / 初期 $100.00 (+21.94%)
-- 確定: 2689件 (Win 792 / Loss 1028 / Flat 869) / pending 4件 / skip 2963件
+- 確定: 2689件 (Win 792 / Loss 1028 / Flat 869) / pending 5件 / skip 2963件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000285 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4STOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $121.94
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T20:16:12.914030+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=77264.9
-- Funnel: target 1067 → liquid 173 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T20:21:09.453046+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=77306.9
+- Funnel: target 1067 → liquid 173 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +40.39% | $2,970,784.51 |
-| CNPY/USDT:USDT | +21.99% | $1,836,043.31 |
-| 4STOCK/USDT:USDT | +13.82% | $2,342,193.72 |
-| EIGEN/USDT:USDT | +11.44% | $2,643,643.59 |
-| BTW/USDT:USDT | +9.68% | $2,281,233.04 |
+| NIULAI/USDT:USDT | +40.92% | $3,036,544.78 |
+| CNPY/USDT:USDT | +22.44% | $1,848,951.29 |
+| MARSCOIN/USDT:USDT | +11.48% | $2,236,444.63 |
+| EIGEN/USDT:USDT | +10.90% | $2,701,233.50 |
+| 4STOCK/USDT:USDT | +10.65% | $2,352,446.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +4.25% | +4.08% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +3.94% | +3.77% |
-| CHIP/USDT:USDT | below_1h_threshold | +3.18% | +3.00% |
-| CNPY/USDT:USDT | below_1h_threshold | +2.33% | +2.16% |
-| SOPH/USDT:USDT | below_1h_threshold | +1.97% | +1.79% |
+| NIULAI/USDT:USDT | below_1h_threshold | +4.81% | +4.58% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +3.95% | +3.72% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.79% | +2.57% |
+| APT/USDT:USDT | below_1h_threshold | +2.14% | +1.91% |
+| BTW/USDT:USDT | below_1h_threshold | +2.08% | +1.85% |
 
 ## 7. 次に見るべき不足
 
