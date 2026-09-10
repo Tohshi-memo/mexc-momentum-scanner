@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T16:16:26.029494+00:00
+- generated_at: 2026-09-10T16:21:28.551631+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14170**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.17** / 初期 $100.00 (+22.17%)
-- 確定: 2675件 (Win 789 / Loss 1022 / Flat 864) / pending 5件 / skip 2962件
+- 確定: 2675件 (Win 789 / Loss 1022 / Flat 864) / pending 6件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000375 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: HEMI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.17
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T16:16:15.331128+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=76951.8
-- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 67.4 >= 65=1
+- 更新: 2026-09-10T16:21:17.348500+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.35% price=76948.8
+- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.5 >= 65=1, 4h RSI 74.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +8.41% | $1,737,232.73 |
-| SAGA/USDT:USDT | +3.52% | $1,001,902.89 |
-| BTW/USDT:USDT | +2.48% | $1,469,864.92 |
-| SOPH/USDT:USDT | +2.28% | $2,337,382.09 |
-| BTR/USDT:USDT | +2.04% | $4,389,253.54 |
+| NES/USDT:USDT | +7.84% | $1,751,217.08 |
+| SAGA/USDT:USDT | +5.47% | $1,076,421.53 |
+| BTW/USDT:USDT | +2.73% | $1,481,492.66 |
+| CATE/USDT:USDT | +2.37% | $2,785,392.49 |
+| BTR/USDT:USDT | +2.27% | $4,397,070.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +3.53% | +3.87% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.58% | +2.93% |
-| UAI/USDT:USDT | below_1h_threshold | +2.53% | +2.88% |
-| BTW/USDT:USDT | below_1h_threshold | +2.49% | +2.83% |
-| BTR/USDT:USDT | below_1h_threshold | +1.94% | +2.28% |
+| CATE/USDT:USDT | below_1h_threshold | +2.74% | +3.09% |
+| BTW/USDT:USDT | below_1h_threshold | +2.69% | +3.04% |
+| BTR/USDT:USDT | below_1h_threshold | +2.27% | +2.62% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.24% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.88% | +2.23% |
 
 ## 7. 次に見るべき不足
 
