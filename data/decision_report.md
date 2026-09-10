@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T19:21:27.090104+00:00
+- generated_at: 2026-09-10T19:26:29.248716+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14182**
 
@@ -63,38 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.62** / 初期 $100.00 (+21.62%)
-- 確定: 2687件 (Win 791 / Loss 1028 / Flat 868) / pending 2件 / skip 2963件
+- 確定: 2687件 (Win 791 / Loss 1028 / Flat 868) / pending 3件 / skip 2963件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000321 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIULAI/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.62
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T19:21:13.986063+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77125.4
-- Funnel: target 1067 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T19:26:13.737927+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77212.4
+- Funnel: target 1067 → liquid 175 → pre 50 → checked 50 → surge 2 → strict 2
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +34.00% | $2,064,345.70 |
-| CNPY/USDT:USDT | +15.59% | $1,736,784.80 |
-| EIGEN/USDT:USDT | +11.39% | $2,103,999.84 |
-| BTW/USDT:USDT | +8.60% | $2,001,852.78 |
-| SAGA/USDT:USDT | +7.72% | $3,953,294.74 |
+| NIULAI/USDT:USDT | +35.95% | $2,149,130.10 |
+| CNPY/USDT:USDT | +16.93% | $1,745,392.42 |
+| EIGEN/USDT:USDT | +10.15% | $2,169,973.38 |
+| BTW/USDT:USDT | +8.61% | $2,013,698.94 |
+| SAGA/USDT:USDT | +8.08% | $4,021,804.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4STOCK/USDT:USDT | below_1h_threshold | +4.16% | +4.29% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.49% | +3.61% |
-| RAY/USDT:USDT | below_1h_threshold | +3.44% | +3.57% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.44% | +1.57% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.24% | +1.37% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.60% | +3.62% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +3.58% | +3.59% |
+| RAVE/USDT:USDT | below_1h_threshold | +2.29% | +2.30% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.42% | +1.44% |
+| MONAD/USDT:USDT | below_1h_threshold | +1.19% | +1.20% |
 
 ## 7. 次に見るべき不足
 
