@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T14:06:30.401769+00:00
+- generated_at: 2026-09-10T14:11:26.041221+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14166**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T14:06:17.767729+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77151.1
+- 更新: 2026-09-10T14:11:13.502873+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=77038.0
 - Funnel: target 1065 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +54.27% | $8,870,586.84 |
-| CATE/USDT:USDT | +24.15% | $2,754,095.27 |
-| NES/USDT:USDT | +22.04% | $1,573,229.42 |
-| SOXS/USDT:USDT | +8.16% | $20,912,980.71 |
-| KAS/USDT:USDT | +7.74% | $9,417,456.37 |
+| VTHO/USDT:USDT | +51.59% | $8,990,453.69 |
+| CATE/USDT:USDT | +25.55% | $2,759,343.64 |
+| NES/USDT:USDT | +20.78% | $1,582,291.17 |
+| SOXS/USDT:USDT | +7.63% | $21,561,894.60 |
+| VET/USDT:USDT | +6.80% | $6,394,147.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VTHO/USDT:USDT | below_1h_threshold | +3.41% | +3.39% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.21% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.19% | +2.17% |
-| ARB/USDT:USDT | below_1h_threshold | +1.83% | +1.82% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.69% | +1.67% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.30% | +2.43% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.35% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.69% | +1.82% |
+| VTHO/USDT:USDT | below_1h_threshold | +1.68% | +1.81% |
+| BTW/USDT:USDT | below_1h_threshold | +1.61% | +1.74% |
 
 ## 7. 次に見るべき不足
 
