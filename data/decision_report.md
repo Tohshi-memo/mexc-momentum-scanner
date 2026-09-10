@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T09:11:21.015254+00:00
+- generated_at: 2026-09-10T09:16:17.065959+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14157**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T09:11:08.841045+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78082.5
+- 更新: 2026-09-10T09:16:06.874995+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=78108.8
 - Funnel: target 1064 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +39.79% | $2,613,305.02 |
-| VTHO/USDT:USDT | +34.82% | $5,129,829.61 |
-| RE/USDT:USDT | +9.89% | $1,141,622.65 |
-| KAS/USDT:USDT | +9.82% | $6,099,075.54 |
-| EGLD/USDT:USDT | +9.07% | $2,792,710.18 |
+| CATE/USDT:USDT | +37.30% | $2,629,549.16 |
+| VTHO/USDT:USDT | +33.78% | $5,148,786.49 |
+| EGLD/USDT:USDT | +10.88% | $3,022,819.23 |
+| KAS/USDT:USDT | +9.82% | $6,267,046.16 |
+| RE/USDT:USDT | +9.30% | $1,146,958.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.03% | +3.02% |
-| RAY/USDT:USDT | below_1h_threshold | +1.86% | +1.85% |
-| CATE/USDT:USDT | below_1h_threshold | +1.73% | +1.71% |
-| KAS/USDT:USDT | below_1h_threshold | +1.42% | +1.40% |
-| ARX/USDT:USDT | below_1h_threshold | +1.34% | +1.33% |
+| AKE/USDT:USDT | below_1h_threshold | +2.91% | +2.86% |
+| EGLD/USDT:USDT | below_1h_threshold | +2.52% | +2.47% |
+| RAY/USDT:USDT | below_1h_threshold | +1.81% | +1.76% |
+| KAS/USDT:USDT | below_1h_threshold | +1.55% | +1.50% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.01% | +0.97% |
 
 ## 7. 次に見るべき不足
 
