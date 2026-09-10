@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T11:31:25.823764+00:00
+- generated_at: 2026-09-10T11:36:24.963542+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14160**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.45** / 初期 $100.00 (+22.45%)
-- 確定: 2665件 (Win 787 / Loss 1017 / Flat 861) / pending 3件 / skip 2962件
+- 確定: 2665件 (Win 787 / Loss 1017 / Flat 861) / pending 4件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000337 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: VTHO/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.45
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T11:31:13.417304+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=77986.2
-- Funnel: target 1065 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.9 >= 65=1
+- 更新: 2026-09-10T11:36:11.520494+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78018.2
+- Funnel: target 1065 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +50.46% | $6,330,620.01 |
-| CATE/USDT:USDT | +42.23% | $2,726,286.63 |
-| NES/USDT:USDT | +18.69% | $1,362,076.21 |
-| REZ/USDT:USDT | +13.83% | $1,749,174.15 |
-| KAS/USDT:USDT | +9.19% | $7,997,684.55 |
+| VTHO/USDT:USDT | +53.74% | $6,401,890.89 |
+| CATE/USDT:USDT | +41.23% | $2,729,335.58 |
+| NES/USDT:USDT | +18.27% | $1,368,468.61 |
+| REZ/USDT:USDT | +13.27% | $1,762,619.33 |
+| KAS/USDT:USDT | +8.88% | $8,008,929.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +2.77% | +2.57% |
-| NES/USDT:USDT | below_1h_threshold | +1.87% | +1.68% |
-| VET/USDT:USDT | below_1h_threshold | +1.66% | +1.47% |
-| BTR/USDT:USDT | below_1h_threshold | +1.28% | +1.09% |
-| INJ/USDT:USDT | below_1h_threshold | +1.10% | +0.91% |
+| VET/USDT:USDT | below_1h_threshold | +2.22% | +1.98% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.81% | +1.58% |
+| NES/USDT:USDT | below_1h_threshold | +1.66% | +1.42% |
+| INJ/USDT:USDT | below_1h_threshold | +1.48% | +1.25% |
+| BTR/USDT:USDT | below_1h_threshold | +1.40% | +1.16% |
 
 ## 7. 次に見るべき不足
 
