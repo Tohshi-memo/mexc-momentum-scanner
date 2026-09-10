@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T01:21:22.775188+00:00
+- generated_at: 2026-09-10T01:26:30.787978+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14137**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.00** / 初期 $100.00 (+21.00%)
-- 確定: 2642件 (Win 778 / Loss 1009 / Flat 855) / pending 4件 / skip 2962件
+- 確定: 2642件 (Win 778 / Loss 1009 / Flat 855) / pending 5件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000554 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SOCK/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $121.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T01:21:13.568690+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78207.4
-- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 79.3 >= 65=1
+- 更新: 2026-09-10T01:26:17.353898+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=78201.8
+- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.1 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +17.96% | $2,830,565.82 |
-| SOCK/USDT:USDT | +14.98% | $1,096,929.11 |
-| BTR/USDT:USDT | +12.17% | $2,234,904.21 |
-| WAVES/USDT:USDT | +7.12% | $1,107,680.16 |
-| MINA/USDT:USDT | +4.52% | $1,263,620.28 |
+| CATE/USDT:USDT | +15.52% | $2,836,386.73 |
+| SOCK/USDT:USDT | +14.15% | $1,098,138.58 |
+| BTR/USDT:USDT | +12.87% | $2,237,501.58 |
+| WAVES/USDT:USDT | +5.70% | $1,108,897.08 |
+| MINA/USDT:USDT | +4.58% | $1,267,324.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.78% | +4.69% |
-| VET/USDT:USDT | below_1h_threshold | +1.83% | +1.75% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
-| AKE/USDT:USDT | below_1h_threshold | +1.20% | +1.11% |
-| ANTHROPIC/USDT:USDT | below_1h_threshold | +1.11% | +1.02% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.40% |
+| VET/USDT:USDT | below_1h_threshold | +1.46% | +1.38% |
+| BR/USDT:USDT | below_1h_threshold | +1.31% | +1.23% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.22% | +1.14% |
+| AKE/USDT:USDT | below_1h_threshold | +1.11% | +1.03% |
 
 ## 7. 次に見るべき不足
 
