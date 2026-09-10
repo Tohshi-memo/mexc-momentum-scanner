@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T11:46:23.824479+00:00
+- generated_at: 2026-09-10T11:51:26.410699+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14162**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T11:46:11.235352+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.20% price=77994.5
+- 更新: 2026-09-10T11:51:15.829021+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77881.9
 - Funnel: target 1065 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.6 >= 65=1
+- Strict後reject: 4h RSI 82.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +60.69% | $6,730,672.96 |
-| CATE/USDT:USDT | +39.84% | $2,742,083.15 |
-| NES/USDT:USDT | +17.09% | $1,378,487.22 |
-| REZ/USDT:USDT | +12.86% | $1,788,984.87 |
-| KAS/USDT:USDT | +9.56% | $8,055,408.33 |
+| VTHO/USDT:USDT | +54.87% | $6,865,636.79 |
+| CATE/USDT:USDT | +37.53% | $2,749,365.05 |
+| NES/USDT:USDT | +15.67% | $1,388,899.70 |
+| REZ/USDT:USDT | +11.93% | $1,803,781.76 |
+| KAS/USDT:USDT | +9.33% | $8,079,744.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEMI/USDT:USDT | below_1h_threshold | +2.59% | +2.38% |
-| VET/USDT:USDT | below_1h_threshold | +2.49% | +2.29% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.21% | +2.01% |
-| BTW/USDT:USDT | below_1h_threshold | +1.54% | +1.34% |
-| AKE/USDT:USDT | below_1h_threshold | +1.10% | +0.90% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.50% | +2.44% |
+| BTW/USDT:USDT | below_1h_threshold | +1.74% | +1.68% |
+| VET/USDT:USDT | below_1h_threshold | +1.70% | +1.64% |
+| INJ/USDT:USDT | below_1h_threshold | +0.88% | +0.83% |
+| XMR/USDT:USDT | below_1h_threshold | +0.68% | +0.62% |
 
 ## 7. 次に見るべき不足
 
