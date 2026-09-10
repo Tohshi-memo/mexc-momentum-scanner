@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T06:31:16.054911+00:00
+- generated_at: 2026-09-10T06:36:24.802862+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14154**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.35** / 初期 $100.00 (+22.35%)
-- 確定: 2659件 (Win 785 / Loss 1014 / Flat 860) / pending 1件 / skip 2962件
+- 確定: 2659件 (Win 785 / Loss 1014 / Flat 860) / pending 2件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000435 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SOCK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $122.35
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T06:31:05.801067+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=78197.0
-- Funnel: target 1064 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T06:36:14.369156+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=78140.4
+- Funnel: target 1064 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +50.02% | $3,482,580.48 |
-| CATE/USDT:USDT | +22.71% | $2,758,556.32 |
-| REZ/USDT:USDT | +10.77% | $1,004,442.30 |
-| BULLA/USDT:USDT | +8.27% | $4,077,875.96 |
-| VET/USDT:USDT | +6.57% | $5,686,510.17 |
+| VTHO/USDT:USDT | +51.22% | $3,503,015.45 |
+| CATE/USDT:USDT | +33.23% | $2,769,967.81 |
+| REZ/USDT:USDT | +6.74% | $1,026,839.41 |
+| VET/USDT:USDT | +5.94% | $5,699,421.68 |
+| BULLA/USDT:USDT | +5.60% | $4,116,708.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +3.11% | +3.50% |
-| VTHO/USDT:USDT | below_1h_threshold | +2.88% | +3.27% |
-| REZ/USDT:USDT | below_1h_threshold | +2.33% | +2.72% |
-| BTR/USDT:USDT | below_1h_threshold | +2.17% | +2.56% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.82% | +1.21% |
+| VTHO/USDT:USDT | below_1h_threshold | +3.71% | +4.17% |
+| BTR/USDT:USDT | below_1h_threshold | +0.93% | +1.39% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.78% | +1.24% |
+| MINA/USDT:USDT | below_1h_threshold | +0.43% | +0.90% |
+| FF/USDT:USDT | below_1h_threshold | +0.34% | +0.80% |
 
 ## 7. 次に見るべき不足
 
