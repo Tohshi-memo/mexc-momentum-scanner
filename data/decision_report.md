@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T02:21:23.196675+00:00
+- generated_at: 2026-09-10T02:26:22.493428+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14142**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T02:21:12.815837+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78024.1
+- 更新: 2026-09-10T02:26:12.106917+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=77963.4
 - Funnel: target 1064 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.2 >= 65=1
+- Strict後reject: 4h RSI 87.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +52.42% | $1,498,872.00 |
-| BTR/USDT:USDT | +20.74% | $2,462,325.59 |
-| CATE/USDT:USDT | +17.02% | $2,823,870.61 |
-| KAS/USDT:USDT | +2.52% | $4,047,182.95 |
-| SOXS/USDT:USDT | +2.21% | $2,355,401.98 |
+| VTHO/USDT:USDT | +48.91% | $1,571,774.84 |
+| BTR/USDT:USDT | +21.82% | $2,485,713.06 |
+| CATE/USDT:USDT | +16.94% | $2,827,742.10 |
+| SOXS/USDT:USDT | +2.24% | $2,392,753.88 |
+| XMR/USDT:USDT | +1.85% | $5,566,315.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +4.41% | +4.46% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.10% | +1.14% |
-| BR/USDT:USDT | below_1h_threshold | +1.05% | +1.10% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.80% | +0.85% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.76% |
+| CATE/USDT:USDT | below_1h_threshold | +4.04% | +4.16% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.56% | +1.69% |
+| BR/USDT:USDT | below_1h_threshold | +1.14% | +1.26% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.79% | +0.91% |
+| AKE/USDT:USDT | below_1h_threshold | +0.76% | +0.89% |
 
 ## 7. 次に見るべき不足
 
