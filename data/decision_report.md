@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T04:56:20.516122+00:00
+- generated_at: 2026-09-10T05:01:14.378924+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14152**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T04:56:10.284172+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=78297.7
-- Funnel: target 1064 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-10T05:01:04.015199+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=78387.1
+- Funnel: target 1064 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +44.64% | $2,891,310.33 |
-| CATE/USDT:USDT | +25.31% | $2,989,614.30 |
-| BTR/USDT:USDT | +20.78% | $3,497,985.60 |
-| BULLA/USDT:USDT | +5.10% | $3,814,956.51 |
-| VET/USDT:USDT | +4.57% | $5,681,509.11 |
+| VTHO/USDT:USDT | +43.99% | $2,939,531.30 |
+| CATE/USDT:USDT | +26.80% | $2,828,899.34 |
+| BTR/USDT:USDT | +21.02% | $3,501,072.91 |
+| VET/USDT:USDT | +5.20% | $5,601,551.77 |
+| BULLA/USDT:USDT | +4.67% | $3,801,373.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.11% | +4.10% |
-| AKE/USDT:USDT | below_1h_threshold | +3.00% | +3.00% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.26% | +1.26% |
-| PI/USDT:USDT | below_1h_threshold | +0.73% | +0.73% |
-| KORU/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
+| KORU/USDT:USDT | below_1h_threshold | +1.91% | +1.90% |
+| BTR/USDT:USDT | below_1h_threshold | +1.17% | +1.16% |
+| MUU/USDT:USDT | below_1h_threshold | +0.92% | +0.91% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.89% | +0.87% |
+| SNXX/USDT:USDT | below_1h_threshold | +0.85% | +0.83% |
 
 ## 7. 次に見るべき不足
 
