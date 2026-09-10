@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T01:01:15.612814+00:00
+- generated_at: 2026-09-10T01:06:20.846764+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14136**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$120.58** / 初期 $100.00 (+20.58%)
-- 確定: 2641件 (Win 777 / Loss 1009 / Flat 855) / pending 3件 / skip 2962件
+- 確定: 2641件 (Win 777 / Loss 1009 / Flat 855) / pending 4件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000491 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SOCK/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $120.58
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T01:01:07.314349+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=78147.8
-- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T01:06:10.509773+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=78372.0
+- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +21.31% | $2,794,771.70 |
-| WAVES/USDT:USDT | +8.21% | $1,096,493.84 |
-| SOCK/USDT:USDT | +8.13% | $1,089,021.37 |
-| BTR/USDT:USDT | +5.98% | $2,179,941.08 |
-| MINA/USDT:USDT | +4.81% | $1,239,545.28 |
+| CATE/USDT:USDT | +18.40% | $2,802,222.71 |
+| BTR/USDT:USDT | +12.99% | $2,202,788.29 |
+| SOCK/USDT:USDT | +7.80% | $1,090,301.50 |
+| WAVES/USDT:USDT | +7.09% | $1,098,376.24 |
+| MINA/USDT:USDT | +5.51% | $1,246,086.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOCK/USDT:USDT | below_1h_threshold | +2.68% | +2.67% |
-| BTR/USDT:USDT | below_1h_threshold | +2.19% | +2.18% |
-| CATE/USDT:USDT | below_1h_threshold | +1.71% | +1.69% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.46% |
-| MINA/USDT:USDT | below_1h_threshold | +0.45% | +0.43% |
+| SOCK/USDT:USDT | below_1h_threshold | +2.21% | +1.91% |
+| KAS/USDT:USDT | below_1h_threshold | +1.49% | +1.19% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.48% | +1.18% |
+| AKE/USDT:USDT | below_1h_threshold | +1.44% | +1.14% |
+| MINA/USDT:USDT | below_1h_threshold | +1.18% | +0.88% |
 
 ## 7. 次に見るべき不足
 
