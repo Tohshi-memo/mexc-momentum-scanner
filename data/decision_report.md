@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T16:21:28.551631+00:00
+- generated_at: 2026-09-10T16:26:28.282124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14170**
 
@@ -39,9 +39,9 @@
 
 ## 2. $100 Live Portfolio
 
-- 残高: **$120.92** / 初期 $100.00 (+20.92%)
-- 確定トレード: 206件 (TP 77 / SL 124 / EXP 5)
-- 最新: BONER/USDT:USDT SL_HIT PnL -4.00% 残高後 $120.92
+- 残高: **$121.16** / 初期 $100.00 (+21.16%)
+- 確定トレード: 207件 (TP 78 / SL 124 / EXP 5)
+- 最新: HEMI/USDT:USDT TP_HIT PnL +8.00% 残高後 $121.16
 - 最新戦略メタ: tier=S, direction=short, entry=MARKET
 
 ## 3. Safe Adaptive DryRun ($100)
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T16:21:17.348500+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=76948.8
-- Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-09-10T16:26:17.785673+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.36% price=76940.2
+- Funnel: target 1067 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.5 >= 65=1, 4h RSI 74.3 >= 65=1
+- Strict後reject: 4h RSI 75.1 >= 65=1, 4h RSI 66.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NES/USDT:USDT | +7.84% | $1,751,217.08 |
-| SAGA/USDT:USDT | +5.47% | $1,076,421.53 |
-| BTW/USDT:USDT | +2.73% | $1,481,492.66 |
-| CATE/USDT:USDT | +2.37% | $2,785,392.49 |
-| BTR/USDT:USDT | +2.27% | $4,397,070.22 |
+| SAGA/USDT:USDT | +6.38% | $1,152,752.84 |
+| NES/USDT:USDT | +5.41% | $1,764,382.86 |
+| BTW/USDT:USDT | +2.98% | $1,490,551.65 |
+| CATE/USDT:USDT | +2.58% | $2,789,145.32 |
+| BTR/USDT:USDT | +1.99% | $4,399,530.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.74% | +3.09% |
-| BTW/USDT:USDT | below_1h_threshold | +2.69% | +3.04% |
-| BTR/USDT:USDT | below_1h_threshold | +2.27% | +2.62% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +1.90% | +2.24% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.88% | +2.23% |
+| BTW/USDT:USDT | below_1h_threshold | +2.98% | +3.34% |
+| CATE/USDT:USDT | below_1h_threshold | +2.59% | +2.95% |
+| BTR/USDT:USDT | below_1h_threshold | +2.00% | +2.36% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.88% | +2.24% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.77% | +2.13% |
 
 ## 7. 次に見るべき不足
 
