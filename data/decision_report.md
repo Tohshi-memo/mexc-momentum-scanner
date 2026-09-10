@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T18:36:22.671614+00:00
+- generated_at: 2026-09-10T18:41:28.104631+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14177**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.48** / 初期 $100.00 (+22.48%)
-- 確定: 2682件 (Win 791 / Loss 1024 / Flat 867) / pending 4件 / skip 2963件
+- 確定: 2682件 (Win 791 / Loss 1024 / Flat 867) / pending 5件 / skip 2963件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000474 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CNPY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.48
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T18:36:09.735482+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=77045.6
-- Funnel: target 1067 → liquid 174 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T18:41:15.139811+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=77096.4
+- Funnel: target 1067 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +22.64% | $1,600,772.90 |
-| CNPY/USDT:USDT | +20.00% | $1,540,549.13 |
-| EIGEN/USDT:USDT | +8.42% | $1,746,199.68 |
-| PONS/USDT:USDT | +7.70% | $9,004,927.39 |
-| SOPH/USDT:USDT | +7.60% | $3,605,809.85 |
+| NIULAI/USDT:USDT | +23.19% | $1,647,116.06 |
+| CNPY/USDT:USDT | +15.69% | $1,559,052.09 |
+| MEMEROBINHOOD/USDT:USDT | +9.40% | $1,023,695.39 |
+| EIGEN/USDT:USDT | +8.57% | $1,813,568.22 |
+| PONS/USDT:USDT | +8.52% | $9,030,382.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +4.97% | +5.30% |
-| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +2.42% | +2.75% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.13% | +2.46% |
-| BTR/USDT:USDT | below_1h_threshold | +2.12% | +2.46% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.08% | +2.41% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +4.67% | +4.94% |
+| BTR/USDT:USDT | below_1h_threshold | +2.33% | +2.59% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.08% | +2.34% |
+| TUT/USDT:USDT | below_1h_threshold | +1.88% | +2.14% |
+| CHIP/USDT:USDT | below_1h_threshold | +1.81% | +2.08% |
 
 ## 7. 次に見るべき不足
 
