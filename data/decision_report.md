@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T00:16:30.777303+00:00
+- generated_at: 2026-09-10T00:21:20.662587+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14134**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T00:16:13.729053+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=78267.8
-- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1, 4h RSI 82.2 >= 65=1
+- 更新: 2026-09-10T00:21:09.705864+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=78210.0
+- Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1, 4h RSI 80.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BTR/USDT:USDT | +16.60% | $2,074,118.79 |
-| CATE/USDT:USDT | +11.82% | $2,807,243.08 |
-| WAVES/USDT:USDT | +10.96% | $1,205,053.89 |
-| IOST/USDT:USDT | +6.13% | $42,139,526.11 |
-| SOCK/USDT:USDT | +4.73% | $1,124,977.60 |
+| BTR/USDT:USDT | +14.42% | $2,088,206.29 |
+| CATE/USDT:USDT | +10.69% | $2,809,817.52 |
+| WAVES/USDT:USDT | +9.57% | $1,215,156.47 |
+| SOCK/USDT:USDT | +5.02% | $1,127,333.89 |
+| MINA/USDT:USDT | +4.41% | $1,212,572.68 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTR/USDT:USDT | below_1h_threshold | +2.39% | +2.39% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.85% |
-| XTZ/USDT:USDT | below_1h_threshold | +0.84% | +0.83% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.70% |
-| FF/USDT:USDT | below_1h_threshold | +0.65% | +0.65% |
+| FF/USDT:USDT | below_1h_threshold | +1.35% | +1.42% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.85% | +0.92% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.78% |
+| BTR/USDT:USDT | below_1h_threshold | +0.51% | +0.58% |
+| MUU/USDT:USDT | below_1h_threshold | +0.46% | +0.53% |
 
 ## 7. 次に見るべき不足
 
