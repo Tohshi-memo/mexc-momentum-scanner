@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T13:51:25.472850+00:00
+- generated_at: 2026-09-10T13:56:22.156806+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14166**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T13:51:15.162470+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=76921.9
+- 更新: 2026-09-10T13:56:11.585842+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=77077.3
 - Funnel: target 1065 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1
+- Strict後reject: 4h RSI 65.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +48.86% | $8,601,360.89 |
-| CATE/USDT:USDT | +26.24% | $2,813,589.47 |
-| NES/USDT:USDT | +21.96% | $1,549,266.07 |
-| SOXS/USDT:USDT | +8.43% | $17,983,041.15 |
-| KAS/USDT:USDT | +8.08% | $9,542,116.23 |
+| VTHO/USDT:USDT | +49.88% | $8,642,421.79 |
+| CATE/USDT:USDT | +24.93% | $2,815,854.99 |
+| NES/USDT:USDT | +21.70% | $1,567,582.03 |
+| SOXS/USDT:USDT | +9.22% | $18,882,268.38 |
+| KAS/USDT:USDT | +7.69% | $9,565,438.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +3.94% | +3.86% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.70% | +3.62% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.68% | +3.60% |
-| NES/USDT:USDT | below_1h_threshold | +3.19% | +3.11% |
-| VTHO/USDT:USDT | below_1h_threshold | +3.04% | +2.96% |
+| ETHFI/USDT:USDT | below_1h_threshold | +4.56% | +4.28% |
+| MINA/USDT:USDT | below_1h_threshold | +4.20% | +3.92% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.70% | +3.42% |
+| VTHO/USDT:USDT | below_1h_threshold | +3.58% | +3.30% |
+| NES/USDT:USDT | below_1h_threshold | +3.19% | +2.91% |
 
 ## 7. 次に見るべき不足
 
