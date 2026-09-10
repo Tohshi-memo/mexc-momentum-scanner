@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T13:56:22.156806+00:00
+- generated_at: 2026-09-10T14:01:27.081689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14166**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.81** / 初期 $100.00 (+21.81%)
-- 確定: 2671件 (Win 787 / Loss 1020 / Flat 864) / pending 3件 / skip 2962件
+- 確定: 2671件 (Win 787 / Loss 1020 / Flat 864) / pending 4件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000308 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $121.81
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T13:56:11.585842+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.28% price=77077.3
-- Funnel: target 1065 → liquid 175 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-09-10T14:01:13.837951+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77200.0
+- Funnel: target 1065 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +49.88% | $8,642,421.79 |
-| CATE/USDT:USDT | +24.93% | $2,815,854.99 |
-| NES/USDT:USDT | +21.70% | $1,567,582.03 |
-| SOXS/USDT:USDT | +9.22% | $18,882,268.38 |
-| KAS/USDT:USDT | +7.69% | $9,565,438.50 |
+| VTHO/USDT:USDT | +50.11% | $8,692,959.05 |
+| CATE/USDT:USDT | +24.30% | $2,749,435.30 |
+| NES/USDT:USDT | +21.29% | $1,570,389.73 |
+| SOXS/USDT:USDT | +9.04% | $19,834,389.65 |
+| KAS/USDT:USDT | +7.57% | $9,387,618.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +4.56% | +4.28% |
-| MINA/USDT:USDT | below_1h_threshold | +4.20% | +3.92% |
-| SOXS/USDT:USDT | below_1h_threshold | +3.70% | +3.42% |
-| VTHO/USDT:USDT | below_1h_threshold | +3.58% | +3.30% |
-| NES/USDT:USDT | below_1h_threshold | +3.19% | +2.91% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.23% | +2.14% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.91% | +1.83% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.69% | +1.61% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.74% | +0.66% |
+| SOXS/USDT:USDT | below_1h_threshold | +0.68% | +0.60% |
 
 ## 7. 次に見るべき不足
 
