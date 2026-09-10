@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T15:01:22.889965+00:00
+- generated_at: 2026-09-10T15:06:25.167391+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14169**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T15:01:12.734803+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=77289.0
+- 更新: 2026-09-10T15:06:17.792538+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=77288.5
 - Funnel: target 1067 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,11 +79,11 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +50.57% | $9,579,738.32 |
-| CATE/USDT:USDT | +27.37% | $2,757,997.98 |
-| NES/USDT:USDT | +17.35% | $1,658,390.18 |
-| ETHFI/USDT:USDT | +11.67% | $7,313,216.16 |
-| VET/USDT:USDT | +11.52% | $7,016,130.46 |
+| VTHO/USDT:USDT | +51.03% | $9,602,504.41 |
+| CATE/USDT:USDT | +27.64% | $2,760,674.87 |
+| NES/USDT:USDT | +16.84% | $1,663,023.95 |
+| ETHFI/USDT:USDT | +12.38% | $7,515,976.87 |
+| VET/USDT:USDT | +10.92% | $7,075,754.53 |
 
 ### Near Miss
 
@@ -93,7 +93,7 @@
 | SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.78% | +1.89% |
 | ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.73% | +1.84% |
 | AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.38% |
-| VET/USDT:USDT | below_1h_threshold | +1.00% | +1.11% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.06% | +1.18% |
 
 ## 7. 次に見るべき不足
 
