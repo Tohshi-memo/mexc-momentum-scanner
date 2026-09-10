@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T13:06:17.669820+00:00
+- generated_at: 2026-09-10T13:11:32.068847+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14165**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.81** / 初期 $100.00 (+21.81%)
-- 確定: 2670件 (Win 787 / Loss 1020 / Flat 863) / pending 1件 / skip 2962件
+- 確定: 2670件 (Win 787 / Loss 1020 / Flat 863) / pending 3件 / skip 2962件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000286 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.81
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T13:06:07.517399+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=76996.8
-- Funnel: target 1065 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-10T13:11:20.634641+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=76969.5
+- Funnel: target 1065 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +49.83% | $8,208,278.91 |
-| CATE/USDT:USDT | +21.14% | $2,744,331.84 |
-| NES/USDT:USDT | +16.17% | $1,482,891.32 |
-| SOXS/USDT:USDT | +8.34% | $14,009,898.47 |
-| KAS/USDT:USDT | +7.15% | $8,887,267.12 |
+| VTHO/USDT:USDT | +51.27% | $8,291,621.28 |
+| CATE/USDT:USDT | +25.48% | $2,759,600.41 |
+| NES/USDT:USDT | +16.76% | $1,486,989.42 |
+| SOXS/USDT:USDT | +8.48% | $14,112,726.63 |
+| KAS/USDT:USDT | +7.06% | $8,910,996.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +3.70% | +3.53% |
-| VTHO/USDT:USDT | below_1h_threshold | +3.52% | +3.34% |
-| CATE/USDT:USDT | below_1h_threshold | +2.41% | +2.23% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.65% | +1.47% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.58% | +1.40% |
+| VTHO/USDT:USDT | below_1h_threshold | +4.62% | +4.48% |
+| SOXS/USDT:USDT | below_1h_threshold | +3.70% | +3.56% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.39% | +2.25% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.78% | +1.63% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.39% | +1.25% |
 
 ## 7. 次に見るべき不足
 
