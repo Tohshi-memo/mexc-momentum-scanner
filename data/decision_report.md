@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-10T02:01:07.857484+00:00
+- generated_at: 2026-09-10T02:06:16.739981+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14141**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-10T02:01:00.618317+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=78031.3
+- 更新: 2026-09-10T02:06:06.593433+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=78027.6
 - Funnel: target 1064 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| VTHO/USDT:USDT | +53.00% | $1,329,472.80 |
-| BTR/USDT:USDT | +14.85% | $2,255,465.91 |
-| CATE/USDT:USDT | +11.98% | $2,780,876.85 |
-| KAS/USDT:USDT | +3.00% | $4,035,223.32 |
-| EGLD/USDT:USDT | +2.44% | $2,416,074.58 |
+| VTHO/USDT:USDT | +52.42% | $1,386,431.76 |
+| BTR/USDT:USDT | +15.50% | $2,279,272.67 |
+| CATE/USDT:USDT | +11.14% | $2,786,961.64 |
+| KAS/USDT:USDT | +2.63% | $4,043,522.28 |
+| EGLD/USDT:USDT | +2.16% | $2,416,563.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +0.81% | +0.85% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.75% |
+| BTR/USDT:USDT | below_1h_threshold | +1.04% | +1.09% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.71% | +0.76% |
+| MINA/USDT:USDT | below_1h_threshold | +0.71% | +0.75% |
 | SOFTBANKSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.73% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.57% |
-| BTR/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.59% | +0.64% |
 
 ## 7. 次に見るべき不足
 
