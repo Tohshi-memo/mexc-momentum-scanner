@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T14:56:42.092199+00:00
+- generated_at: 2026-09-11T15:01:22.050101+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14229**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T14:56:22.962871+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=78776.7
-- Funnel: target 1067 → liquid 167 → pre 50 → checked 50 → surge 5 → strict 1
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.4 >= 65=1, 4h RSI 76.8 >= 65=1, 4h RSI 70.2 >= 65=1, 4h RSI 89.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-11T15:01:12.189420+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=78714.8
+- Funnel: target 1067 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STONK/USDT:USDT | +72.49% | $1,216,556.97 |
-| NIULAI/USDT:USDT | +71.17% | $22,314,516.07 |
-| STORJ/USDT:USDT | +58.66% | $5,178,420.95 |
-| RAY/USDT:USDT | +26.76% | $25,312,730.56 |
-| CNPY/USDT:USDT | +21.74% | $2,917,188.11 |
+| STONK/USDT:USDT | +73.41% | $1,206,097.65 |
+| NIULAI/USDT:USDT | +71.86% | $22,317,635.58 |
+| STORJ/USDT:USDT | +62.54% | $5,198,908.71 |
+| RAY/USDT:USDT | +27.09% | $25,233,881.92 |
+| LAB/USDT:USDT | +22.54% | $2,987,835.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +3.16% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.41% |
-| JUP/USDT:USDT | below_1h_threshold | +1.81% | +2.35% |
-| LIT/USDT:USDT | below_1h_threshold | +1.48% | +2.02% |
-| RAY/USDT:USDT | below_1h_threshold | +1.34% | +1.88% |
+| STORJ/USDT:USDT | below_1h_threshold | +1.34% | +1.40% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
+| LAB/USDT:USDT | below_1h_threshold | +0.56% | +0.61% |
+| USELESS/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
 
 ## 7. 次に見るべき不足
 
