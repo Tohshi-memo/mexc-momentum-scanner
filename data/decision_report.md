@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T12:36:18.874588+00:00
+- generated_at: 2026-09-11T12:41:21.896016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14216**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.64** / 初期 $100.00 (+22.64%)
-- 確定: 2719件 (Win 802 / Loss 1041 / Flat 876) / pending 4件 / skip 2964件
+- 確定: 2719件 (Win 802 / Loss 1041 / Flat 876) / pending 5件 / skip 2964件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000185 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CNPY/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T12:36:08.727451+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=76966.8
-- Funnel: target 1068 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-11T12:41:12.022608+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.71% price=77547.5
+- Funnel: target 1068 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +63.47% | $2,335,908.75 |
-| NIULAI/USDT:USDT | +61.07% | $19,845,058.77 |
-| STONK/USDT:USDT | +60.70% | $1,072,835.60 |
-| MET/USDT:USDT | +24.61% | $1,280,928.53 |
-| CNPY/USDT:USDT | +22.59% | $2,829,402.71 |
+| STORJ/USDT:USDT | +69.32% | $2,491,615.97 |
+| STONK/USDT:USDT | +67.73% | $1,084,038.66 |
+| NIULAI/USDT:USDT | +59.77% | $19,908,045.19 |
+| MET/USDT:USDT | +25.61% | $1,303,785.94 |
+| CNPY/USDT:USDT | +22.79% | $2,838,217.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CNPY/USDT:USDT | below_1h_threshold | +4.71% | +4.75% |
-| NIULAI/USDT:USDT | below_1h_threshold | +4.12% | +4.16% |
-| PONS/USDT:USDT | below_1h_threshold | +3.23% | +3.27% |
-| VVV/USDT:USDT | below_1h_threshold | +3.01% | +3.05% |
-| LSK/USDT:USDT | below_1h_threshold | +2.79% | +2.84% |
+| PONS/USDT:USDT | below_relative_strength | +5.55% | +4.84% |
+| CNPY/USDT:USDT | below_1h_threshold | +4.88% | +4.17% |
+| SPX/USDT:USDT | below_1h_threshold | +4.13% | +3.42% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.38% | +2.67% |
+| LSK/USDT:USDT | below_1h_threshold | +3.29% | +2.58% |
 
 ## 7. 次に見るべき不足
 
