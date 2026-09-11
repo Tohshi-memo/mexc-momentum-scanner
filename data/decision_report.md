@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T15:11:23.135159+00:00
+- generated_at: 2026-09-11T15:16:20.018034+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14230**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T15:11:10.919923+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=78529.3
+- 更新: 2026-09-11T15:16:09.968464+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=78559.7
 - Funnel: target 1067 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STONK/USDT:USDT | +72.35% | $1,215,846.68 |
-| NIULAI/USDT:USDT | +70.72% | $22,536,874.83 |
-| STORJ/USDT:USDT | +58.59% | $5,266,196.65 |
-| LAB/USDT:USDT | +27.85% | $3,056,478.47 |
-| RAY/USDT:USDT | +23.23% | $25,475,432.68 |
+| STONK/USDT:USDT | +76.50% | $1,220,820.53 |
+| NIULAI/USDT:USDT | +64.34% | $22,704,938.02 |
+| STORJ/USDT:USDT | +55.22% | $5,312,499.07 |
+| LAB/USDT:USDT | +26.18% | $3,079,350.73 |
+| RAY/USDT:USDT | +22.95% | $25,602,042.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.81% | +4.10% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.73% | +3.02% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.93% | +2.22% |
-| HPQSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.92% |
-| AERO/USDT:USDT | below_1h_threshold | +1.40% | +1.69% |
+| LAB/USDT:USDT | below_1h_threshold | +3.25% | +3.50% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.24% | +3.49% |
+| STONK/USDT:USDT | below_1h_threshold | +1.77% | +2.03% |
+| HPQSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.88% |
+| SPX/USDT:USDT | below_1h_threshold | +1.58% | +1.83% |
 
 ## 7. 次に見るべき不足
 
