@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T14:41:33.235366+00:00
+- generated_at: 2026-09-11T14:46:35.286689+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14227**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T14:41:18.504965+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.58% price=78743.3
-- Funnel: target 1067 → liquid 165 → pre 50 → checked 50 → surge 4 → strict 1
+- 更新: 2026-09-11T14:46:21.110718+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.71% price=78644.6
+- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 4 → strict 1
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1, 4h RSI 90.3 >= 65=1, 4h RSI 68.7 >= 65=1
+- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 70.0 >= 65=1, 4h RSI 90.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STONK/USDT:USDT | +71.25% | $1,205,567.80 |
-| NIULAI/USDT:USDT | +63.54% | $21,915,615.20 |
-| STORJ/USDT:USDT | +58.01% | $5,017,201.80 |
-| RAY/USDT:USDT | +25.45% | $24,980,308.94 |
-| CNPY/USDT:USDT | +23.03% | $2,913,783.17 |
+| STONK/USDT:USDT | +72.60% | $1,211,475.10 |
+| NIULAI/USDT:USDT | +68.18% | $22,047,039.50 |
+| STORJ/USDT:USDT | +62.43% | $5,105,981.67 |
+| RAY/USDT:USDT | +24.64% | $25,072,823.84 |
+| CNPY/USDT:USDT | +22.14% | $2,915,120.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +2.80% | +3.38% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.45% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.35% | +1.93% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.24% | +1.82% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.97% | +1.55% |
+| LAB/USDT:USDT | below_1h_threshold | +3.07% | +3.78% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.58% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.18% | +1.89% |
+| JUP/USDT:USDT | below_1h_threshold | +1.09% | +1.79% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.03% | +1.74% |
 
 ## 7. 次に見るべき不足
 
