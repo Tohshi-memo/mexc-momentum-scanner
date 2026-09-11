@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T20:11:20.429722+00:00
+- generated_at: 2026-09-11T20:16:09.904852+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14254**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T20:11:09.676013+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=77385.4
-- Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-11T20:16:01.571729+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=77410.0
+- Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +43.46% | $10,728,665.00 |
-| BEAT/USDT:USDT | +12.74% | $9,757,340.96 |
-| LAB/USDT:USDT | +10.79% | $8,256,974.01 |
-| RIVER/USDT:USDT | +8.63% | $4,166,791.58 |
-| LSK/USDT:USDT | +6.61% | $2,692,393.90 |
+| STORJ/USDT:USDT | +42.56% | $10,865,901.30 |
+| BEAT/USDT:USDT | +12.37% | $9,804,314.58 |
+| LAB/USDT:USDT | +10.53% | $8,316,475.24 |
+| RIVER/USDT:USDT | +10.17% | $4,211,892.51 |
+| LSK/USDT:USDT | +7.28% | $2,700,500.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ETHFI/USDT:USDT | below_1h_threshold | +3.13% | +2.95% |
-| STONK/USDT:USDT | below_1h_threshold | +2.88% | +2.69% |
-| LSK/USDT:USDT | below_1h_threshold | +2.51% | +2.33% |
-| DOGS/USDT:USDT | below_1h_threshold | +2.05% | +1.87% |
-| SOPH/USDT:USDT | below_1h_threshold | +1.40% | +1.21% |
+| STORJ/USDT:USDT | below_1h_threshold | +4.98% | +4.77% |
+| STONK/USDT:USDT | below_1h_threshold | +4.56% | +4.35% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.48% | +3.26% |
+| LSK/USDT:USDT | below_1h_threshold | +3.39% | +3.17% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.63% | +1.42% |
 
 ## 7. 次に見るべき不足
 
