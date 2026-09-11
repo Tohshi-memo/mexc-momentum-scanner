@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T04:36:17.469568+00:00
+- generated_at: 2026-09-11T04:41:18.467859+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14200**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.32** / 初期 $100.00 (+23.32%)
-- 確定: 2703件 (Win 799 / Loss 1032 / Flat 872) / pending 3件 / skip 2964件
+- 確定: 2703件 (Win 799 / Loss 1032 / Flat 872) / pending 4件 / skip 2964件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000235 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: RAY/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $123.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T04:36:09.036134+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.30% price=77090.7
-- Funnel: target 1066 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-11T04:41:10.160281+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.29% price=77079.8
+- Funnel: target 1066 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +43.62% | $9,417,567.05 |
-| RAY/USDT:USDT | +31.11% | $9,597,725.31 |
-| PONS/USDT:USDT | +16.62% | $8,443,589.57 |
-| CNPY/USDT:USDT | +14.64% | $2,725,023.81 |
-| NES/USDT:USDT | +12.82% | $1,997,564.94 |
+| NIULAI/USDT:USDT | +45.74% | $9,505,937.89 |
+| RAY/USDT:USDT | +31.87% | $9,818,270.46 |
+| CNPY/USDT:USDT | +15.98% | $2,730,474.14 |
+| PONS/USDT:USDT | +15.72% | $8,468,643.33 |
+| BTW/USDT:USDT | +11.46% | $3,316,790.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_relative_strength | +5.06% | +4.76% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.44% | +3.13% |
-| XMR/USDT:USDT | below_1h_threshold | +3.32% | +3.01% |
-| JUP/USDT:USDT | below_1h_threshold | +2.73% | +2.43% |
-| RUNE/USDT:USDT | below_1h_threshold | +2.51% | +2.21% |
+| JUP/USDT:USDT | below_1h_threshold | +3.16% | +2.87% |
+| XMR/USDT:USDT | below_1h_threshold | +3.14% | +2.86% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.59% | +2.30% |
+| VVV/USDT:USDT | below_1h_threshold | +2.48% | +2.19% |
+| HNT/USDT:USDT | below_1h_threshold | +2.45% | +2.16% |
 
 ## 7. 次に見るべき不足
 
