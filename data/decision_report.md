@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T21:11:27.735159+00:00
+- generated_at: 2026-09-11T21:16:38.163773+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14255**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.66** / 初期 $100.00 (+24.66%)
-- 確定: 2747件 (Win 815 / Loss 1052 / Flat 880) / pending 3件 / skip 2976件
+- 確定: 2747件 (Win 815 / Loss 1052 / Flat 880) / pending 4件 / skip 2976件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000396 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STONK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $124.66
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T21:11:17.323424+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=77372.9
-- Funnel: target 1067 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-11T21:16:27.606744+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77340.0
+- Funnel: target 1067 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +41.55% | $11,999,977.88 |
-| LAB/USDT:USDT | +24.73% | $9,469,188.93 |
-| BEAT/USDT:USDT | +13.24% | $10,174,752.84 |
-| LSK/USDT:USDT | +10.63% | $2,822,867.62 |
-| STONK/USDT:USDT | +10.39% | $1,434,957.47 |
+| STORJ/USDT:USDT | +36.76% | $12,170,539.66 |
+| LAB/USDT:USDT | +21.64% | $9,572,906.40 |
+| BEAT/USDT:USDT | +13.98% | $10,290,809.01 |
+| STONK/USDT:USDT | +13.27% | $1,445,355.16 |
+| LSK/USDT:USDT | +11.72% | $2,864,469.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MET/USDT:USDT | below_1h_threshold | +2.70% | +2.60% |
-| LAB/USDT:USDT | below_1h_threshold | +2.21% | +2.12% |
-| STONK/USDT:USDT | below_1h_threshold | +1.77% | +1.67% |
-| LSK/USDT:USDT | below_1h_threshold | +1.66% | +1.56% |
-| BEAT/USDT:USDT | below_1h_threshold | +1.55% | +1.46% |
+| MET/USDT:USDT | below_1h_threshold | +2.92% | +2.87% |
+| LSK/USDT:USDT | below_1h_threshold | +2.68% | +2.63% |
+| BEAT/USDT:USDT | below_1h_threshold | +2.22% | +2.17% |
+| UAI/USDT:USDT | below_1h_threshold | +2.07% | +2.02% |
+| RAY/USDT:USDT | below_1h_threshold | +1.49% | +1.44% |
 
 ## 7. 次に見るべき不足
 
