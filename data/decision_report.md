@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T03:51:36.853603+00:00
+- generated_at: 2026-09-11T03:56:39.386862+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14196**
 
@@ -63,17 +63,17 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.21** / 初期 $100.00 (+23.21%)
-- 確定: 2700件 (Win 798 / Loss 1031 / Flat 871) / pending 5件 / skip 2963件
+- 確定: 2700件 (Win 798 / Loss 1031 / Flat 871) / pending 6件 / skip 2964件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000189 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: NIULAI/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $123.21
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T03:51:19.796883+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=76756.0
-- Funnel: target 1066 → liquid 172 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-11T03:56:23.052127+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=76797.8
+- Funnel: target 1066 → liquid 172 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 67.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +51.92% | $8,481,988.29 |
-| RAY/USDT:USDT | +23.39% | $8,175,015.79 |
-| CNPY/USDT:USDT | +16.08% | $2,709,188.46 |
-| PONS/USDT:USDT | +14.54% | $8,313,352.27 |
-| MARSCOIN/USDT:USDT | +12.78% | $2,778,638.60 |
+| NIULAI/USDT:USDT | +51.80% | $8,522,013.00 |
+| RAY/USDT:USDT | +25.19% | $8,382,980.05 |
+| PONS/USDT:USDT | +15.67% | $8,325,795.14 |
+| CNPY/USDT:USDT | +15.34% | $2,709,719.00 |
+| MARSCOIN/USDT:USDT | +12.50% | $2,786,233.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +3.69% | +3.76% |
-| PONS/USDT:USDT | below_1h_threshold | +3.27% | +3.35% |
-| XTZ/USDT:USDT | below_1h_threshold | +2.46% | +2.54% |
-| ASTER/USDT:USDT | below_1h_threshold | +1.40% | +1.48% |
-| BTR/USDT:USDT | below_1h_threshold | +1.14% | +1.21% |
+| PONS/USDT:USDT | below_1h_threshold | +4.52% | +4.54% |
+| XTZ/USDT:USDT | below_1h_threshold | +2.11% | +2.13% |
+| RAY/USDT:USDT | below_1h_threshold | +1.53% | +1.55% |
+| BTR/USDT:USDT | below_1h_threshold | +1.43% | +1.45% |
+| 4/USDT:USDT | below_1h_threshold | +1.27% | +1.29% |
 
 ## 7. 次に見るべき不足
 
