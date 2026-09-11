@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T04:31:29.954018+00:00
+- generated_at: 2026-09-11T04:36:17.469568+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14200**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T04:31:22.726967+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.40% price=77166.4
+- 更新: 2026-09-11T04:36:09.036134+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=77090.7
 - Funnel: target 1066 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +44.40% | $9,334,523.47 |
-| RAY/USDT:USDT | +31.94% | $9,339,176.43 |
-| PONS/USDT:USDT | +16.14% | $8,424,233.62 |
-| NES/USDT:USDT | +14.68% | $1,996,603.17 |
-| CNPY/USDT:USDT | +14.20% | $2,718,374.03 |
+| NIULAI/USDT:USDT | +43.62% | $9,417,567.05 |
+| RAY/USDT:USDT | +31.11% | $9,597,725.31 |
+| PONS/USDT:USDT | +16.62% | $8,443,589.57 |
+| CNPY/USDT:USDT | +14.64% | $2,725,023.81 |
+| NES/USDT:USDT | +12.82% | $1,997,564.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_relative_strength | +5.35% | +4.95% |
-| XMR/USDT:USDT | below_1h_threshold | +3.09% | +2.69% |
-| JUP/USDT:USDT | below_1h_threshold | +3.03% | +2.63% |
-| VVV/USDT:USDT | below_1h_threshold | +2.65% | +2.25% |
-| EIGEN/USDT:USDT | below_1h_threshold | +2.46% | +2.06% |
+| RAY/USDT:USDT | below_relative_strength | +5.06% | +4.76% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.44% | +3.13% |
+| XMR/USDT:USDT | below_1h_threshold | +3.32% | +3.01% |
+| JUP/USDT:USDT | below_1h_threshold | +2.73% | +2.43% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.51% | +2.21% |
 
 ## 7. 次に見るべき不足
 
