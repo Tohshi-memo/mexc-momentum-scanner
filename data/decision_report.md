@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T06:21:20.722574+00:00
+- generated_at: 2026-09-11T06:26:17.090333+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14202**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T06:21:10.394537+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=77280.9
-- Funnel: target 1068 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-11T06:26:08.945354+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77229.9
+- Funnel: target 1068 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +41.31% | $10,990,508.56 |
-| LSK/USDT:USDT | +26.59% | $1,145,730.37 |
-| RAY/USDT:USDT | +26.35% | $13,603,008.16 |
-| PONS/USDT:USDT | +18.26% | $8,710,805.07 |
-| BTW/USDT:USDT | +11.67% | $3,482,855.79 |
+| NIULAI/USDT:USDT | +42.80% | $11,031,472.57 |
+| RAY/USDT:USDT | +24.52% | $13,737,887.06 |
+| LSK/USDT:USDT | +22.19% | $1,239,856.15 |
+| PONS/USDT:USDT | +18.40% | $8,736,289.53 |
+| BTW/USDT:USDT | +11.58% | $3,490,547.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +4.28% | +4.20% |
-| KORU/USDT:USDT | below_1h_threshold | +1.79% | +1.72% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.72% | +1.64% |
-| BTR/USDT:USDT | below_1h_threshold | +1.67% | +1.59% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.07% | +0.99% |
+| LSK/USDT:USDT | below_1h_threshold | +4.53% | +4.51% |
+| RAY/USDT:USDT | below_1h_threshold | +2.75% | +2.73% |
+| KORU/USDT:USDT | below_1h_threshold | +1.79% | +1.78% |
+| BTR/USDT:USDT | below_1h_threshold | +1.71% | +1.70% |
+| RUNE/USDT:USDT | below_1h_threshold | +1.70% | +1.68% |
 
 ## 7. 次に見るべき不足
 
