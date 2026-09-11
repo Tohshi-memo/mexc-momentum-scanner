@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T21:26:19.621439+00:00
+- generated_at: 2026-09-11T21:31:15.809487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14256**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T21:26:09.902136+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77389.2
-- Funnel: target 1067 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-11T21:31:07.203671+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77309.9
+- Funnel: target 1067 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +43.58% | $12,327,585.55 |
-| LAB/USDT:USDT | +21.59% | $9,754,951.71 |
-| STONK/USDT:USDT | +13.72% | $1,462,468.74 |
-| BEAT/USDT:USDT | +13.24% | $10,480,626.36 |
-| LSK/USDT:USDT | +11.10% | $2,891,170.32 |
+| STORJ/USDT:USDT | +41.39% | $12,418,979.84 |
+| LAB/USDT:USDT | +21.14% | $9,824,605.90 |
+| BEAT/USDT:USDT | +15.22% | $10,527,970.36 |
+| LSK/USDT:USDT | +11.77% | $2,897,743.02 |
+| STONK/USDT:USDT | +10.48% | $1,467,923.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +2.62% | +2.50% |
-| LSK/USDT:USDT | below_1h_threshold | +2.01% | +1.90% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.77% | +1.66% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.72% | +1.60% |
-| UAI/USDT:USDT | below_1h_threshold | +1.66% | +1.54% |
+| RAY/USDT:USDT | below_1h_threshold | +4.32% | +4.31% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.44% | +3.43% |
+| UAI/USDT:USDT | below_1h_threshold | +2.89% | +2.88% |
+| LSK/USDT:USDT | below_1h_threshold | +2.72% | +2.71% |
+| STONK/USDT:USDT | below_1h_threshold | +2.70% | +2.69% |
 
 ## 7. 次に見るべき不足
 
