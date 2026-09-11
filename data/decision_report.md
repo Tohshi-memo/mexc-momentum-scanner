@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T12:56:33.676621+00:00
+- generated_at: 2026-09-11T13:01:22.311692+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14219**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T12:56:18.951806+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.26% price=77972.5
-- Funnel: target 1068 → liquid 169 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=44, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.4 >= 65=1, 4h RSI 88.5 >= 65=1, 4h RSI 68.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-11T13:01:12.059175+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=77888.2
+- Funnel: target 1067 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +77.14% | $2,880,003.02 |
-| STONK/USDT:USDT | +71.79% | $1,119,816.08 |
-| NIULAI/USDT:USDT | +54.50% | $20,270,687.67 |
-| MET/USDT:USDT | +24.83% | $1,345,633.52 |
-| RAY/USDT:USDT | +24.40% | $22,386,979.24 |
+| STORJ/USDT:USDT | +79.72% | $2,959,673.39 |
+| STONK/USDT:USDT | +71.86% | $1,105,520.83 |
+| NIULAI/USDT:USDT | +56.29% | $20,295,459.73 |
+| RAY/USDT:USDT | +24.08% | $22,294,181.55 |
+| MET/USDT:USDT | +22.50% | $1,356,911.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_relative_strength | +5.51% | +4.25% |
-| PENDLE/USDT:USDT | below_relative_strength | +5.19% | +3.92% |
-| SPX/USDT:USDT | below_1h_threshold | +4.99% | +3.73% |
-| JUP/USDT:USDT | below_1h_threshold | +4.49% | +3.23% |
-| NEAR/USDT:USDT | below_1h_threshold | +4.48% | +3.22% |
+| KORU/USDT:USDT | below_1h_threshold | +3.68% | +3.81% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.25% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.41% | +2.55% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.25% | +2.39% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.79% |
 
 ## 7. 次に見るべき不足
 
