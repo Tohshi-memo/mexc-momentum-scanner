@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T15:16:20.018034+00:00
+- generated_at: 2026-09-11T15:21:26.364036+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14230**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.49** / 初期 $100.00 (+23.49%)
-- 確定: 2729件 (Win 807 / Loss 1045 / Flat 877) / pending 6件 / skip 2969件
+- 確定: 2729件 (Win 807 / Loss 1045 / Flat 877) / pending 6件 / skip 2970件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000273 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: 4STOCK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.49
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T15:16:09.968464+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=78559.7
-- Funnel: target 1067 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-11T15:21:13.754372+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=78658.6
+- Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STONK/USDT:USDT | +76.50% | $1,220,820.53 |
-| NIULAI/USDT:USDT | +64.34% | $22,704,938.02 |
-| STORJ/USDT:USDT | +55.22% | $5,312,499.07 |
-| LAB/USDT:USDT | +26.18% | $3,079,350.73 |
-| RAY/USDT:USDT | +22.95% | $25,602,042.92 |
+| STONK/USDT:USDT | +76.50% | $1,227,681.96 |
+| NIULAI/USDT:USDT | +65.13% | $22,813,321.01 |
+| STORJ/USDT:USDT | +57.76% | $5,339,668.10 |
+| LAB/USDT:USDT | +27.38% | $3,120,989.92 |
+| RAY/USDT:USDT | +24.10% | $25,707,673.90 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.25% | +3.50% |
-| RIVER/USDT:USDT | below_1h_threshold | +3.24% | +3.49% |
-| STONK/USDT:USDT | below_1h_threshold | +1.77% | +2.03% |
-| HPQSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.88% |
-| SPX/USDT:USDT | below_1h_threshold | +1.58% | +1.83% |
+| LAB/USDT:USDT | below_1h_threshold | +4.27% | +4.39% |
+| AERO/USDT:USDT | below_1h_threshold | +2.18% | +2.31% |
+| STONK/USDT:USDT | below_1h_threshold | +1.77% | +1.90% |
+| HPQSTOCK/USDT:USDT | below_1h_threshold | +1.63% | +1.76% |
+| INJ/USDT:USDT | below_1h_threshold | +1.59% | +1.72% |
 
 ## 7. 次に見るべき不足
 
