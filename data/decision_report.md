@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T15:01:22.050101+00:00
+- generated_at: 2026-09-11T15:06:25.205386+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14229**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T15:01:12.189420+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78714.8
+- 更新: 2026-09-11T15:06:16.560940+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=78644.2
 - Funnel: target 1067 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STONK/USDT:USDT | +73.41% | $1,206,097.65 |
-| NIULAI/USDT:USDT | +71.86% | $22,317,635.58 |
-| STORJ/USDT:USDT | +62.54% | $5,198,908.71 |
-| RAY/USDT:USDT | +27.09% | $25,233,881.92 |
-| LAB/USDT:USDT | +22.54% | $2,987,835.83 |
+| STONK/USDT:USDT | +74.10% | $1,212,605.83 |
+| NIULAI/USDT:USDT | +72.83% | $22,424,982.40 |
+| STORJ/USDT:USDT | +61.28% | $5,232,940.76 |
+| RAY/USDT:USDT | +24.69% | $25,360,992.96 |
+| MET/USDT:USDT | +23.18% | $1,539,204.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +1.34% | +1.40% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.38% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
-| LAB/USDT:USDT | below_1h_threshold | +0.56% | +0.61% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.48% | +0.54% |
+| MET/USDT:USDT | below_1h_threshold | +1.36% | +1.50% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.33% | +1.47% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.07% | +1.21% |
+| BTW/USDT:USDT | below_1h_threshold | +0.83% | +0.97% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.79% | +0.94% |
 
 ## 7. 次に見るべき不足
 
