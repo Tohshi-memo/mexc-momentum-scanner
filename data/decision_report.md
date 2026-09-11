@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T01:31:18.187743+00:00
+- generated_at: 2026-09-11T01:36:15.890658+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14192**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T01:31:10.009265+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=76790.0
+- 更新: 2026-09-11T01:36:08.516621+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=76834.0
 - Funnel: target 1067 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +30.22% | $7,313,613.33 |
-| RAY/USDT:USDT | +17.00% | $6,348,432.61 |
-| MARSCOIN/USDT:USDT | +14.41% | $2,518,564.71 |
-| PONS/USDT:USDT | +12.33% | $7,995,274.61 |
-| BTW/USDT:USDT | +11.10% | $2,907,946.09 |
+| NIULAI/USDT:USDT | +28.93% | $7,347,617.69 |
+| RAY/USDT:USDT | +17.97% | $6,383,456.62 |
+| PONS/USDT:USDT | +12.30% | $8,031,596.04 |
+| BTW/USDT:USDT | +11.49% | $2,916,678.05 |
+| CNPY/USDT:USDT | +11.32% | $2,596,281.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.50% | +4.62% |
-| KORU/USDT:USDT | below_1h_threshold | +4.00% | +4.12% |
-| CNPY/USDT:USDT | below_1h_threshold | +3.66% | +3.78% |
-| 4/USDT:USDT | below_1h_threshold | +2.19% | +2.30% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.11% | +2.23% |
+| KORU/USDT:USDT | below_1h_threshold | +4.00% | +4.06% |
+| CNPY/USDT:USDT | below_1h_threshold | +3.99% | +4.05% |
+| 4/USDT:USDT | below_1h_threshold | +2.61% | +2.67% |
+| PONS/USDT:USDT | below_1h_threshold | +2.00% | +2.06% |
+| NES/USDT:USDT | below_1h_threshold | +1.75% | +1.81% |
 
 ## 7. 次に見るべき不足
 
