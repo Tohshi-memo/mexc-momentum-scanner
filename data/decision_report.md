@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T09:46:23.923925+00:00
+- generated_at: 2026-09-11T09:51:19.417575+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14206**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T09:46:11.383317+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.49% price=76947.0
-- Funnel: target 1068 → liquid 164 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-09-11T09:51:08.954018+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=76963.0
+- Funnel: target 1068 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1
+- Strict後reject: 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +70.32% | $15,132,556.16 |
-| LSK/USDT:USDT | +22.27% | $2,156,803.01 |
-| RAY/USDT:USDT | +20.62% | $18,506,341.68 |
-| MARSCOIN/USDT:USDT | +16.40% | $3,063,301.67 |
-| PONS/USDT:USDT | +14.23% | $8,956,543.75 |
+| NIULAI/USDT:USDT | +72.22% | $15,430,609.17 |
+| LSK/USDT:USDT | +22.26% | $2,164,813.81 |
+| RAY/USDT:USDT | +21.47% | $18,654,324.26 |
+| MARSCOIN/USDT:USDT | +17.45% | $3,081,512.49 |
+| PONS/USDT:USDT | +13.65% | $9,048,511.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.87% | +4.36% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.29% | +3.78% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.09% | +2.58% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.44% | +1.93% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.66% |
+| UAI/USDT:USDT | below_1h_threshold | +4.26% | +4.73% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.05% | +4.52% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.07% | +2.53% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.68% | +2.15% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.18% | +1.64% |
 
 ## 7. 次に見るべき不足
 
