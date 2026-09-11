@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T13:31:26.721217+00:00
+- generated_at: 2026-09-11T13:36:22.905329+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14221**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T13:31:13.432988+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=77694.1
+- 更新: 2026-09-11T13:36:10.094820+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.61% price=77518.1
 - Funnel: target 1067 → liquid 165 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +83.99% | $3,619,143.77 |
-| STONK/USDT:USDT | +69.28% | $1,139,570.64 |
-| NIULAI/USDT:USDT | +57.61% | $20,633,160.17 |
-| RAY/USDT:USDT | +22.35% | $22,870,593.98 |
-| CNPY/USDT:USDT | +20.80% | $2,856,257.32 |
+| STORJ/USDT:USDT | +73.34% | $3,773,852.38 |
+| STONK/USDT:USDT | +67.67% | $1,142,340.56 |
+| NIULAI/USDT:USDT | +56.39% | $20,668,573.79 |
+| RAY/USDT:USDT | +22.02% | $22,937,542.28 |
+| CNPY/USDT:USDT | +21.79% | $2,873,569.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +3.68% | +4.06% |
-| KORU/USDT:USDT | below_1h_threshold | +3.68% | +4.06% |
-| STORJ/USDT:USDT | below_1h_threshold | +3.10% | +3.48% |
-| 4/USDT:USDT | below_1h_threshold | +2.41% | +2.79% |
-| PONS/USDT:USDT | below_1h_threshold | +1.69% | +2.08% |
+| VVV/USDT:USDT | below_1h_threshold | +4.26% | +4.87% |
+| KORU/USDT:USDT | below_1h_threshold | +3.68% | +4.29% |
+| 4/USDT:USDT | below_1h_threshold | +2.85% | +3.46% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.25% | +2.86% |
+| EWY/USDT:USDT | below_1h_threshold | +1.31% | +1.92% |
 
 ## 7. 次に見るべき不足
 
