@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T00:51:27.072510+00:00
+- generated_at: 2026-09-11T00:56:29.178521+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14192**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T00:51:14.025606+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=76780.0
+- 更新: 2026-09-11T00:56:16.052797+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=76891.1
 - Funnel: target 1067 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.2 >= 65=1
+- Strict後reject: 4h RSI 70.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIULAI/USDT:USDT | +32.13% | $7,140,615.60 |
-| RAY/USDT:USDT | +17.66% | $5,884,819.15 |
-| BTW/USDT:USDT | +11.08% | $2,867,457.67 |
-| PONS/USDT:USDT | +9.20% | $7,927,707.23 |
-| CNPY/USDT:USDT | +8.73% | $2,531,092.49 |
+| NIULAI/USDT:USDT | +29.05% | $7,261,708.53 |
+| RAY/USDT:USDT | +18.08% | $5,981,478.45 |
+| BTW/USDT:USDT | +11.21% | $2,871,511.94 |
+| PONS/USDT:USDT | +10.42% | $7,937,697.05 |
+| MARSCOIN/USDT:USDT | +8.27% | $2,500,338.96 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.81% | +3.49% |
-| HNT/USDT:USDT | below_1h_threshold | +3.03% | +2.71% |
-| NES/USDT:USDT | below_1h_threshold | +2.74% | +2.42% |
-| DOT/USDT:USDT | below_1h_threshold | +2.68% | +2.36% |
-| RAVE/USDT:USDT | below_1h_threshold | +2.30% | +1.98% |
+| UAI/USDT:USDT | below_1h_threshold | +4.58% | +4.12% |
+| HNT/USDT:USDT | below_1h_threshold | +3.76% | +3.30% |
+| DOT/USDT:USDT | below_1h_threshold | +3.56% | +3.09% |
+| NES/USDT:USDT | below_1h_threshold | +2.26% | +1.80% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.25% | +1.79% |
 
 ## 7. 次に見るべき不足
 
