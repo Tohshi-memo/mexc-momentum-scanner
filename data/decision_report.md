@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T13:01:22.311692+00:00
+- generated_at: 2026-09-11T13:06:27.123122+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14219**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T13:01:12.059175+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77888.2
+- 更新: 2026-09-11T13:06:19.560778+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=77784.5
 - Funnel: target 1067 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +79.72% | $2,959,673.39 |
-| STONK/USDT:USDT | +71.86% | $1,105,520.83 |
-| NIULAI/USDT:USDT | +56.29% | $20,295,459.73 |
-| RAY/USDT:USDT | +24.08% | $22,294,181.55 |
-| MET/USDT:USDT | +22.50% | $1,356,911.36 |
+| STORJ/USDT:USDT | +79.65% | $3,027,565.73 |
+| STONK/USDT:USDT | +70.49% | $1,109,878.98 |
+| NIULAI/USDT:USDT | +55.22% | $20,327,879.39 |
+| RAY/USDT:USDT | +24.06% | $22,371,047.33 |
+| MET/USDT:USDT | +22.59% | $1,375,225.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +3.68% | +3.81% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.25% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.41% | +2.55% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.25% | +2.39% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.66% | +1.79% |
+| KORU/USDT:USDT | below_1h_threshold | +3.68% | +3.95% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.38% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.41% | +2.68% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.25% | +2.52% |
+| PONS/USDT:USDT | below_1h_threshold | +1.66% | +1.93% |
 
 ## 7. 次に見るべき不足
 
