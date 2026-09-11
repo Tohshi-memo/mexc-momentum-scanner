@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T20:31:24.595103+00:00
+- generated_at: 2026-09-11T20:36:20.467855+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14254**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.33** / 初期 $100.00 (+24.33%)
-- 確定: 2746件 (Win 814 / Loss 1052 / Flat 880) / pending 3件 / skip 2976件
+- 確定: 2746件 (Win 814 / Loss 1052 / Flat 880) / pending 4件 / skip 2976件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000360 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STORJ/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $124.33
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T20:31:14.065695+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=77345.1
+- 更新: 2026-09-11T20:36:09.549504+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=77341.9
 - Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.1 >= 65=1
+- Strict後reject: 4h RSI 67.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +44.22% | $11,136,662.18 |
-| LAB/USDT:USDT | +12.37% | $8,604,334.10 |
-| BEAT/USDT:USDT | +11.63% | $9,984,341.76 |
-| LSK/USDT:USDT | +7.37% | $2,736,865.18 |
-| RIVER/USDT:USDT | +5.94% | $4,430,096.58 |
+| STORJ/USDT:USDT | +42.29% | $11,350,833.90 |
+| LAB/USDT:USDT | +15.70% | $8,728,558.14 |
+| BEAT/USDT:USDT | +12.12% | $10,027,479.44 |
+| LSK/USDT:USDT | +8.70% | $2,751,518.21 |
+| RIVER/USDT:USDT | +6.18% | $4,482,469.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STONK/USDT:USDT | below_1h_threshold | +4.69% | +4.56% |
-| LSK/USDT:USDT | below_1h_threshold | +3.35% | +3.22% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.87% | +1.74% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.05% |
-| ALGO/USDT:USDT | below_1h_threshold | +1.17% | +1.03% |
+| STORJ/USDT:USDT | below_1h_threshold | +4.78% | +4.65% |
+| LSK/USDT:USDT | below_1h_threshold | +4.73% | +4.60% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.42% | +2.29% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.06% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.16% | +1.03% |
 
 ## 7. 次に見るべき不足
 
