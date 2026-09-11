@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T11:46:20.102830+00:00
+- generated_at: 2026-09-11T11:51:21.701893+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14215**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.86** / 初期 $100.00 (+22.86%)
-- 確定: 2718件 (Win 802 / Loss 1040 / Flat 876) / pending 4件 / skip 2964件
+- 確定: 2718件 (Win 802 / Loss 1040 / Flat 876) / pending 5件 / skip 2964件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000204 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STORJ/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $122.86
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T11:46:09.661517+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=76895.0
-- Funnel: target 1068 → liquid 167 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1
+- 更新: 2026-09-11T11:51:10.791311+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=76888.5
+- Funnel: target 1068 → liquid 168 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.5 >= 65=1, 4h RSI 80.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +58.73% | $1,494,944.28 |
-| NIULAI/USDT:USDT | +53.93% | $18,685,755.49 |
-| RAY/USDT:USDT | +20.62% | $20,294,008.80 |
-| CNPY/USDT:USDT | +17.67% | $2,789,830.50 |
-| LSK/USDT:USDT | +16.95% | $2,364,608.88 |
+| STORJ/USDT:USDT | +65.69% | $1,558,610.47 |
+| NIULAI/USDT:USDT | +54.29% | $18,866,119.59 |
+| MET/USDT:USDT | +29.28% | $1,068,396.28 |
+| CNPY/USDT:USDT | +17.72% | $2,790,223.40 |
+| RAY/USDT:USDT | +16.16% | $20,567,578.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +2.44% | +2.53% |
-| VVV/USDT:USDT | below_1h_threshold | +2.39% | +2.48% |
-| JTO/USDT:USDT | below_1h_threshold | +1.41% | +1.49% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.39% | +1.47% |
-| JUP/USDT:USDT | below_1h_threshold | +1.02% | +1.10% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.96% | +2.05% |
+| UAI/USDT:USDT | below_1h_threshold | +1.80% | +1.90% |
+| VVV/USDT:USDT | below_1h_threshold | +1.69% | +1.78% |
+| JTO/USDT:USDT | below_1h_threshold | +1.24% | +1.33% |
+| JUP/USDT:USDT | below_1h_threshold | +0.93% | +1.02% |
 
 ## 7. 次に見るべき不足
 
