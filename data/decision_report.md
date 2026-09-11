@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T15:36:32.538978+00:00
+- generated_at: 2026-09-11T15:41:37.868926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14230**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T15:36:19.092899+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=78776.0
+- 更新: 2026-09-11T15:41:22.564542+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78743.2
 - Funnel: target 1067 → liquid 162 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 68.0 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STONK/USDT:USDT | +85.60% | $1,271,307.15 |
-| NIULAI/USDT:USDT | +70.62% | $23,111,283.78 |
-| STORJ/USDT:USDT | +56.90% | $5,435,521.58 |
-| LAB/USDT:USDT | +29.65% | $3,219,350.98 |
-| RAY/USDT:USDT | +23.99% | $25,937,819.56 |
+| STONK/USDT:USDT | +85.49% | $1,283,185.63 |
+| NIULAI/USDT:USDT | +67.67% | $23,185,304.23 |
+| STORJ/USDT:USDT | +56.58% | $5,461,410.53 |
+| LAB/USDT:USDT | +28.45% | $3,233,012.34 |
+| CNPY/USDT:USDT | +26.71% | $2,938,878.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CHIP/USDT:USDT | below_1h_threshold | +3.26% | +3.24% |
-| AERO/USDT:USDT | below_1h_threshold | +2.49% | +2.46% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.37% | +2.35% |
-| INJ/USDT:USDT | below_1h_threshold | +2.35% | +2.32% |
-| CNPY/USDT:USDT | below_1h_threshold | +2.09% | +2.07% |
+| CNPY/USDT:USDT | below_1h_threshold | +4.72% | +4.74% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.39% | +3.41% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| AERO/USDT:USDT | below_1h_threshold | +2.42% | +2.44% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.22% | +2.24% |
 
 ## 7. 次に見るべき不足
 
