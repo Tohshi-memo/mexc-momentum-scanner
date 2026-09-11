@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T18:01:23.254361+00:00
+- generated_at: 2026-09-11T18:06:22.293978+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14243**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T18:01:09.108919+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77496.8
+- 更新: 2026-09-11T18:06:11.852810+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.62% price=77015.3
 - Funnel: target 1067 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +16.61% | $6,579,536.21 |
-| LAB/USDT:USDT | +14.29% | $4,800,769.58 |
-| BEAT/USDT:USDT | +4.33% | $7,504,069.03 |
-| HNT/USDT:USDT | +3.79% | $1,846,706.42 |
-| WLFI/USDT:USDT | +2.37% | $13,062,919.38 |
+| STORJ/USDT:USDT | +22.91% | $6,790,345.13 |
+| LAB/USDT:USDT | +16.23% | $4,975,929.28 |
+| BEAT/USDT:USDT | +3.96% | $7,585,687.53 |
+| HNT/USDT:USDT | +1.78% | $1,870,463.76 |
+| WLFI/USDT:USDT | +1.47% | $13,099,100.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +1.70% | +1.70% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.74% |
-| KORU/USDT:USDT | below_1h_threshold | +0.64% | +0.64% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.58% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +0.52% | +0.52% |
+| STORJ/USDT:USDT | below_1h_threshold | +4.14% | +4.76% |
+| LAB/USDT:USDT | below_1h_threshold | +3.03% | +3.65% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +1.37% |
+| KORU/USDT:USDT | below_1h_threshold | +0.64% | +1.26% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +1.20% |
 
 ## 7. 次に見るべき不足
 
