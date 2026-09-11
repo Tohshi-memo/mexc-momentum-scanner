@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T16:36:25.410697+00:00
+- generated_at: 2026-09-11T16:41:21.123178+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14238**
 
@@ -70,31 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T16:36:11.155965+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77711.9
-- Funnel: target 1067 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-11T16:41:12.767610+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77664.4
+- Funnel: target 1067 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 80.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +5.38% | $3,784,639.91 |
-| STORJ/USDT:USDT | +4.60% | $5,861,581.93 |
-| MET/USDT:USDT | +4.49% | $1,636,163.09 |
-| RIVER/USDT:USDT | +4.47% | $2,457,572.54 |
-| BEAT/USDT:USDT | +3.46% | $7,545,824.48 |
+| STORJ/USDT:USDT | +6.85% | $5,884,509.75 |
+| RIVER/USDT:USDT | +4.72% | $2,490,208.05 |
+| LAB/USDT:USDT | +4.68% | $3,815,031.41 |
+| MET/USDT:USDT | +4.23% | $1,664,550.81 |
+| BEAT/USDT:USDT | +3.21% | $7,606,534.87 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +4.79% | +4.76% |
-| MET/USDT:USDT | below_1h_threshold | +4.61% | +4.58% |
-| RIVER/USDT:USDT | below_1h_threshold | +4.32% | +4.29% |
-| BEAT/USDT:USDT | below_1h_threshold | +3.71% | +3.68% |
-| CNPY/USDT:USDT | below_1h_threshold | +2.64% | +2.61% |
+| LAB/USDT:USDT | below_1h_threshold | +4.68% | +4.72% |
+| RIVER/USDT:USDT | below_1h_threshold | +4.64% | +4.67% |
+| MET/USDT:USDT | below_1h_threshold | +4.31% | +4.34% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.22% | +3.25% |
+| CNPY/USDT:USDT | below_1h_threshold | +3.10% | +3.13% |
 
 ## 7. 次に見るべき不足
 
