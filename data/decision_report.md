@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T18:31:37.706524+00:00
+- generated_at: 2026-09-11T18:36:33.630263+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14245**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T18:31:24.237327+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.45% price=77148.0
-- Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1, 4h RSI 85.0 >= 65=1
+- 更新: 2026-09-11T18:36:19.815519+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=77209.4
+- Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1, 4h RSI 85.5 >= 65=1, 4h RSI 66.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +26.39% | $7,256,808.20 |
-| LAB/USDT:USDT | +24.16% | $5,992,815.62 |
-| BEAT/USDT:USDT | +13.86% | $8,426,920.89 |
-| RIVER/USDT:USDT | +4.56% | $3,141,705.75 |
-| HNT/USDT:USDT | +2.61% | $1,906,480.83 |
+| STORJ/USDT:USDT | +26.64% | $7,340,205.42 |
+| LAB/USDT:USDT | +25.54% | $6,101,493.35 |
+| BEAT/USDT:USDT | +13.86% | $8,574,368.65 |
+| RIVER/USDT:USDT | +5.86% | $3,167,039.91 |
+| HNT/USDT:USDT | +4.41% | $1,922,985.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +4.31% | +4.76% |
-| MET/USDT:USDT | below_1h_threshold | +2.40% | +2.85% |
-| FOLKS/USDT:USDT | below_1h_threshold | +0.78% | +1.22% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +1.19% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +1.03% |
+| MET/USDT:USDT | below_1h_threshold | +2.40% | +2.77% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.19% | +1.56% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +1.11% |
+| GPS/USDT:USDT | below_1h_threshold | +0.64% | +1.01% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.58% | +0.95% |
 
 ## 7. 次に見るべき不足
 
