@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T22:16:18.466183+00:00
+- generated_at: 2026-09-11T22:21:29.709667+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14258**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.22** / 初期 $100.00 (+24.22%)
-- 確定: 2750件 (Win 815 / Loss 1054 / Flat 881) / pending 3件 / skip 2976件
+- 確定: 2750件 (Win 815 / Loss 1054 / Flat 881) / pending 4件 / skip 2976件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000304 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STORJ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $124.22
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T22:16:08.768442+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77129.8
-- Funnel: target 1067 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.0 >= 65=1
+- 更新: 2026-09-11T22:21:18.673148+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77139.0
+- Funnel: target 1067 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.5 >= 65=1, 4h RSI 87.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LAB/USDT:USDT | +34.16% | $10,737,541.02 |
-| STORJ/USDT:USDT | +30.44% | $13,307,152.66 |
-| LSK/USDT:USDT | +15.19% | $3,029,982.17 |
-| BEAT/USDT:USDT | +14.23% | $10,771,581.10 |
-| RIVER/USDT:USDT | +8.46% | $4,798,652.61 |
+| STORJ/USDT:USDT | +37.59% | $13,421,157.83 |
+| LAB/USDT:USDT | +35.46% | $10,917,552.38 |
+| BEAT/USDT:USDT | +15.96% | $10,862,661.57 |
+| LSK/USDT:USDT | +13.85% | $3,057,279.56 |
+| RIVER/USDT:USDT | +8.95% | $4,815,405.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +3.78% | +3.71% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.70% | +2.63% |
-| 4/USDT:USDT | below_1h_threshold | +2.05% | +1.99% |
-| MINA/USDT:USDT | below_1h_threshold | +2.00% | +1.94% |
-| VTHO/USDT:USDT | below_1h_threshold | +1.50% | +1.44% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.24% | +3.16% |
+| LSK/USDT:USDT | below_1h_threshold | +2.61% | +2.54% |
+| 4/USDT:USDT | below_1h_threshold | +2.15% | +2.07% |
+| RAY/USDT:USDT | below_1h_threshold | +1.70% | +1.63% |
+| MINA/USDT:USDT | below_1h_threshold | +1.51% | +1.43% |
 
 ## 7. 次に見るべき不足
 
