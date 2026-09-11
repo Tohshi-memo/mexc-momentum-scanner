@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T14:46:35.286689+00:00
+- generated_at: 2026-09-11T14:51:29.979895+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14227**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T14:46:21.110718+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.71% price=78644.6
-- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.5 >= 65=1, 4h RSI 70.0 >= 65=1, 4h RSI 90.6 >= 65=1
+- 更新: 2026-09-11T14:51:18.601822+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.82% price=78552.2
+- Funnel: target 1067 → liquid 166 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.6 >= 65=1, 4h RSI 70.1 >= 65=1, 4h RSI 90.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STONK/USDT:USDT | +72.60% | $1,211,475.10 |
-| NIULAI/USDT:USDT | +68.18% | $22,047,039.50 |
-| STORJ/USDT:USDT | +62.43% | $5,105,981.67 |
-| RAY/USDT:USDT | +24.64% | $25,072,823.84 |
-| CNPY/USDT:USDT | +22.14% | $2,915,120.10 |
+| STONK/USDT:USDT | +71.78% | $1,214,623.44 |
+| NIULAI/USDT:USDT | +66.92% | $22,124,439.05 |
+| STORJ/USDT:USDT | +58.23% | $5,155,803.69 |
+| RAY/USDT:USDT | +25.55% | $25,183,609.17 |
+| CNPY/USDT:USDT | +21.64% | $2,916,192.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +3.07% | +3.78% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.58% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.18% | +1.89% |
-| JUP/USDT:USDT | below_1h_threshold | +1.09% | +1.79% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.03% | +1.74% |
+| LAB/USDT:USDT | below_1h_threshold | +3.24% | +4.06% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.62% | +3.45% |
+| AAPLSTOCK/USDT:USDT | below_1h_threshold | +1.87% | +2.70% |
+| PONS/USDT:USDT | below_1h_threshold | +1.34% | +2.16% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.95% | +1.77% |
 
 ## 7. 次に見るべき不足
 
