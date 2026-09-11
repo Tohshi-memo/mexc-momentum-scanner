@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-11T17:41:26.893716+00:00
+- generated_at: 2026-09-11T17:46:22.553741+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14240**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-11T17:41:16.604602+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.36% price=77602.8
+- 更新: 2026-09-11T17:46:12.450306+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.41% price=77557.7
 - Funnel: target 1067 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +9.52% | $6,313,167.88 |
-| LAB/USDT:USDT | +7.61% | $4,399,415.84 |
-| HNT/USDT:USDT | +3.85% | $1,881,534.89 |
-| STONK/USDT:USDT | +3.23% | $1,383,659.75 |
-| BEAT/USDT:USDT | +2.84% | $7,571,806.77 |
+| LAB/USDT:USDT | +11.17% | $4,474,451.76 |
+| STORJ/USDT:USDT | +8.65% | $6,369,611.07 |
+| HNT/USDT:USDT | +4.13% | $1,897,491.58 |
+| ETHFI/USDT:USDT | +3.36% | $13,741,825.94 |
+| BEAT/USDT:USDT | +3.21% | $7,610,925.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +4.25% | +4.61% |
-| HNT/USDT:USDT | below_1h_threshold | +2.46% | +2.82% |
-| WLFI/USDT:USDT | below_1h_threshold | +2.05% | +2.41% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.70% | +2.06% |
-| FOLKS/USDT:USDT | below_1h_threshold | +1.47% | +1.82% |
+| STORJ/USDT:USDT | below_1h_threshold | +3.46% | +3.88% |
+| LAB/USDT:USDT | below_1h_threshold | +3.11% | +3.52% |
+| HNT/USDT:USDT | below_1h_threshold | +2.81% | +3.23% |
+| WLFI/USDT:USDT | below_1h_threshold | +2.53% | +2.95% |
+| FOLKS/USDT:USDT | below_1h_threshold | +1.78% | +2.19% |
 
 ## 7. 次に見るべき不足
 
