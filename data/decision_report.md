@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T18:06:18.880982+00:00
+- generated_at: 2026-09-12T18:11:19.069281+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14318**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T18:06:08.491572+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77152.8
+- 更新: 2026-09-12T18:11:09.230295+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77153.2
 - Funnel: target 1068 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +18.03% | $28,172,430.62 |
-| RIVER/USDT:USDT | +12.37% | $10,031,021.58 |
-| REZ/USDT:USDT | +9.05% | $1,176,869.82 |
-| LONGXIA/USDT:USDT | +6.72% | $8,386,477.62 |
-| PUMPFUN/USDT:USDT | +6.17% | $12,181,054.39 |
+| STORJ/USDT:USDT | +17.02% | $28,201,659.89 |
+| RIVER/USDT:USDT | +13.00% | $10,219,773.71 |
+| REZ/USDT:USDT | +7.92% | $1,212,750.04 |
+| LONGXIA/USDT:USDT | +6.94% | $8,405,651.85 |
+| PUMPFUN/USDT:USDT | +5.54% | $12,345,571.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +0.92% | +0.95% |
-| LSK/USDT:USDT | below_1h_threshold | +0.83% | +0.86% |
-| STORJ/USDT:USDT | below_1h_threshold | +0.28% | +0.31% |
-| BTW/USDT:USDT | below_1h_threshold | +0.27% | +0.29% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.56% | +1.59% |
+| VTHO/USDT:USDT | below_1h_threshold | +0.33% | +0.36% |
+| INJ/USDT:USDT | below_1h_threshold | +0.26% | +0.29% |
 | SOXS/USDT:USDT | below_1h_threshold | +0.23% | +0.26% |
+| XMR/USDT:USDT | below_1h_threshold | +0.17% | +0.20% |
 
 ## 7. 次に見るべき不足
 
