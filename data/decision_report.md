@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T09:41:11.591126+00:00
+- generated_at: 2026-09-12T09:46:06.068641+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14304**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T09:41:03.053585+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77330.9
+- 更新: 2026-09-12T09:45:59.017713+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77311.8
 - Funnel: target 1068 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +126.27% | $4,035,894.70 |
-| LSK/USDT:USDT | +67.00% | $14,728,940.62 |
-| STORJ/USDT:USDT | +56.64% | $23,886,661.17 |
-| UAI/USDT:USDT | +21.82% | $7,914,318.68 |
-| VTHO/USDT:USDT | +20.53% | $3,043,673.88 |
+| LONGXIA/USDT:USDT | +123.56% | $4,055,943.11 |
+| LSK/USDT:USDT | +64.74% | $14,838,033.73 |
+| STORJ/USDT:USDT | +56.81% | $23,958,723.79 |
+| UAI/USDT:USDT | +22.45% | $7,985,993.22 |
+| VTHO/USDT:USDT | +21.86% | $3,064,762.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +3.99% | +3.98% |
-| LSK/USDT:USDT | below_1h_threshold | +2.92% | +2.92% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.71% | +2.70% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.15% | +2.14% |
-| DOGS/USDT:USDT | below_1h_threshold | +1.98% | +1.97% |
+| BTW/USDT:USDT | below_1h_threshold | +3.58% | +3.59% |
+| LSK/USDT:USDT | below_1h_threshold | +2.45% | +2.46% |
+| SOPH/USDT:USDT | below_1h_threshold | +2.06% | +2.08% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.83% | +1.84% |
+| VTHO/USDT:USDT | below_1h_threshold | +1.78% | +1.80% |
 
 ## 7. 次に見るべき不足
 
