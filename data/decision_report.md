@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-12T21:16:22.383189+00:00
+- generated_at: 2026-09-12T21:21:20.434734+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14323**
+- closed shadow trades: **14324**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.16% / filled 20/20。**
-- 全期間 MARKET基準: n=14323, expectancy=-0.00%
+- 全期間 MARKET基準: n=14324, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.16%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_1PCT | 18/20 | 90.0% | +0.62% | **+0.56%** |
 | LIMIT_FIB1272 | 7/20 | 35.0% | +1.43% | **+0.50%** |
 | LIMIT_7PCT | 4/20 | 20.0% | +2.40% | **+0.48%** |
-| LIMIT_BB3S | 3/20 | 15.0% | +2.06% | **+0.31%** |
+| LIMIT_BB3S | 3/19 | 15.8% | +2.06% | **+0.32%** |
 
 ### シャドウ上位 LONG
 
@@ -47,31 +47,31 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,080.43** / 初期 $100.00 (+980.43%)
-- 確定: 5429件 (Win 1635 / Loss 1760 / Flat 2034) / skip 5455件
+- 確定: 5429件 (Win 1635 / Loss 1760 / Flat 2034) / skip 5456件
 - 成長率目線: 平均log +0.000438 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: STORJ/USDT:USDT `LIMIT_3PCT_LONG` EXPIRED account +0.00% 残高後 $1,080.43
 
 ## 4. Robust Adaptive DryRun ($100)
 
-- 残高: **$210.51** / 初期 $100.00 (+110.51%)
-- 確定: 2841件 (Win 782 / Loss 659 / Flat 1400) / skip 4893件
-- 成長率目線: 平均log +0.000262 / 幾何平均 +0.026% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1304 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: RIVER/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $210.51
+- 残高: **$211.61** / 初期 $100.00 (+111.61%)
+- 確定: 2842件 (Win 783 / Loss 659 / Flat 1400) / skip 4893件
+- 成長率目線: 平均log +0.000264 / 幾何平均 +0.026% per trade / maxDD +3.96%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.1413 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.52% 残高後 $211.61
 
 ## 5. Causal Adaptive DryRun ($100)
 
-- 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2774件 (Win 820 / Loss 1067 / Flat 887) / pending 3件 / skip 3016件
+- 残高: **$123.85** / 初期 $100.00 (+23.85%)
+- 確定: 2775件 (Win 821 / Loss 1067 / Flat 887) / pending 2件 / skip 3016件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000447 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: RIVER/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.53
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000454 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $123.85
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T21:16:12.043710+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=77128.3
+- 更新: 2026-09-12T21:21:08.193656+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77135.1
 - Funnel: target 1068 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +24.25% | $23,532,188.07 |
-| LONGXIA/USDT:USDT | +17.59% | $9,499,822.48 |
-| REZ/USDT:USDT | +13.29% | $1,586,837.81 |
-| ILV/USDT:USDT | +10.65% | $1,086,747.70 |
-| RIVER/USDT:USDT | +9.92% | $14,599,408.01 |
+| STORJ/USDT:USDT | +24.61% | $23,553,002.40 |
+| LONGXIA/USDT:USDT | +17.32% | $9,507,726.85 |
+| REZ/USDT:USDT | +17.19% | $1,620,530.98 |
+| ILV/USDT:USDT | +11.87% | $1,112,205.03 |
+| RIVER/USDT:USDT | +9.37% | $14,635,020.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALCH/USDT:USDT | below_1h_threshold | +2.46% | +2.46% |
-| GRIFFAIN/USDT:USDT | below_1h_threshold | +2.24% | +2.25% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.31% | +1.31% |
-| UAI/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
-| BTW/USDT:USDT | below_1h_threshold | +0.81% | +0.81% |
+| REZ/USDT:USDT | below_1h_threshold | +3.70% | +3.70% |
+| GRIFFAIN/USDT:USDT | below_1h_threshold | +2.06% | +2.05% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.93% | +1.92% |
+| ILV/USDT:USDT | below_1h_threshold | +1.62% | +1.61% |
+| STORJ/USDT:USDT | below_1h_threshold | +1.60% | +1.59% |
 
 ## 7. 次に見るべき不足
 
