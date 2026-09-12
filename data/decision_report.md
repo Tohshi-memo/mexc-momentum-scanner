@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T20:16:19.801060+00:00
+- generated_at: 2026-09-12T20:21:27.509558+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14321**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T20:16:09.427382+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77143.8
+- 更新: 2026-09-12T20:21:17.170236+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77133.9
 - Funnel: target 1068 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +23.83% | $24,861,360.54 |
-| LONGXIA/USDT:USDT | +18.88% | $9,309,886.25 |
-| RIVER/USDT:USDT | +15.13% | $14,018,090.60 |
-| REZ/USDT:USDT | +13.15% | $1,492,066.11 |
-| AKE/USDT:USDT | +7.31% | $3,333,107.99 |
+| STORJ/USDT:USDT | +24.64% | $24,877,101.50 |
+| LONGXIA/USDT:USDT | +18.26% | $9,335,835.01 |
+| RIVER/USDT:USDT | +14.26% | $14,153,552.24 |
+| REZ/USDT:USDT | +11.93% | $1,501,662.06 |
+| AKE/USDT:USDT | +6.72% | $3,341,844.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_1h_threshold | +2.43% | +2.36% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.44% | +1.37% |
-| VVV/USDT:USDT | below_1h_threshold | +1.23% | +1.15% |
-| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.90% |
-| INJ/USDT:USDT | below_1h_threshold | +0.86% | +0.79% |
+| IOST/USDT:USDT | below_1h_threshold | +1.69% | +1.63% |
+| UAI/USDT:USDT | below_1h_threshold | +1.20% | +1.14% |
+| VVV/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
+| REZ/USDT:USDT | below_1h_threshold | +1.03% | +0.96% |
+| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.91% |
 
 ## 7. 次に見るべき不足
 
