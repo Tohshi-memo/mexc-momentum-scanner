@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T23:36:27.148527+00:00
+- generated_at: 2026-09-12T23:41:23.548902+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14331**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T23:36:15.824201+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77220.8
-- Funnel: target 1068 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.0 >= 65=1, 4h RSI 78.6 >= 65=1, 4h RSI 93.2 >= 65=1
+- 更新: 2026-09-12T23:41:12.635720+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77214.9
+- Funnel: target 1068 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.0 >= 65=1, 4h RSI 93.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +35.56% | $52,671,924.21 |
-| STORJ/USDT:USDT | +23.69% | $22,078,958.74 |
-| REZ/USDT:USDT | +19.60% | $2,139,893.25 |
-| LONGXIA/USDT:USDT | +16.42% | $9,878,084.83 |
-| ALCH/USDT:USDT | +14.16% | $2,219,160.27 |
+| LSK/USDT:USDT | +33.05% | $53,112,338.82 |
+| STORJ/USDT:USDT | +23.15% | $22,086,407.22 |
+| REZ/USDT:USDT | +17.51% | $2,179,889.14 |
+| LONGXIA/USDT:USDT | +16.57% | $9,881,816.23 |
+| ALCH/USDT:USDT | +14.27% | $2,238,642.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ILV/USDT:USDT | below_1h_threshold | +2.06% | +2.02% |
-| VTHO/USDT:USDT | below_1h_threshold | +1.65% | +1.61% |
-| CHZ/USDT:USDT | below_1h_threshold | +0.92% | +0.88% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.87% | +0.84% |
-| STORJ/USDT:USDT | below_1h_threshold | +0.73% | +0.69% |
+| REZ/USDT:USDT | below_1h_threshold | +3.67% | +3.64% |
+| VTHO/USDT:USDT | below_1h_threshold | +2.44% | +2.41% |
+| ILV/USDT:USDT | below_1h_threshold | +1.98% | +1.95% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.15% | +1.12% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.49% | +0.46% |
 
 ## 7. 次に見るべき不足
 
