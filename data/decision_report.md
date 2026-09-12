@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T14:56:23.346441+00:00
+- generated_at: 2026-09-12T15:01:19.664473+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14312**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T14:56:13.785728+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.14% price=77436.9
-- Funnel: target 1068 → liquid 139 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-12T15:01:11.478345+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77433.8
+- Funnel: target 1068 → liquid 133 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +141.45% | $7,475,573.90 |
-| LSK/USDT:USDT | +114.51% | $28,696,975.69 |
-| STORJ/USDT:USDT | +22.91% | $25,895,731.08 |
-| VTHO/USDT:USDT | +15.61% | $2,576,262.53 |
-| LAB/USDT:USDT | +14.96% | $18,476,401.37 |
+| LONGXIA/USDT:USDT | +136.05% | $7,502,587.26 |
+| LSK/USDT:USDT | +108.35% | $28,933,210.03 |
+| LAB/USDT:USDT | +17.41% | $18,349,531.41 |
+| VTHO/USDT:USDT | +14.99% | $2,545,257.75 |
+| STORJ/USDT:USDT | +12.51% | $25,554,072.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MINA/USDT:USDT | below_1h_threshold | +3.06% | +2.92% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.19% | +2.05% |
-| THETA/USDT:USDT | below_1h_threshold | +2.16% | +2.02% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.98% | +1.84% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.59% | +1.45% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.00% | +0.99% |
+| LAB/USDT:USDT | below_1h_threshold | +0.59% | +0.58% |
+| VTHO/USDT:USDT | below_1h_threshold | +0.32% | +0.31% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.28% | +0.27% |
+| MINA/USDT:USDT | below_1h_threshold | +0.27% | +0.26% |
 
 ## 7. 次に見るべき不足
 
