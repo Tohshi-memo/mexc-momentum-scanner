@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T16:36:17.224445+00:00
+- generated_at: 2026-09-12T16:41:19.536841+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14316**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T16:36:07.054032+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77353.7
+- 更新: 2026-09-12T16:41:09.116724+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77345.8
 - Funnel: target 1068 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| WLFI/USDT:USDT | +3.91% | $6,874,744.87 |
-| AKE/USDT:USDT | +3.89% | $3,027,143.43 |
-| UAI/USDT:USDT | +3.75% | $16,733,596.71 |
-| LONGXIA/USDT:USDT | +2.95% | $8,036,403.74 |
-| MINA/USDT:USDT | +2.39% | $1,812,060.71 |
+| LONGXIA/USDT:USDT | +5.27% | $8,109,931.84 |
+| AKE/USDT:USDT | +3.50% | $3,037,010.72 |
+| WLFI/USDT:USDT | +2.93% | $7,434,810.34 |
+| UAI/USDT:USDT | +2.64% | $16,802,437.11 |
+| RIVER/USDT:USDT | +2.28% | $9,914,381.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| WLFI/USDT:USDT | below_1h_threshold | +3.99% | +3.98% |
-| AKE/USDT:USDT | below_1h_threshold | +3.89% | +3.88% |
-| UAI/USDT:USDT | below_1h_threshold | +3.76% | +3.75% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.96% | +2.95% |
-| MINA/USDT:USDT | below_1h_threshold | +2.39% | +2.38% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.95% | +4.95% |
+| AKE/USDT:USDT | below_1h_threshold | +3.50% | +3.50% |
+| WLFI/USDT:USDT | below_1h_threshold | +2.93% | +2.93% |
+| UAI/USDT:USDT | below_1h_threshold | +2.56% | +2.55% |
+| RIVER/USDT:USDT | below_1h_threshold | +2.29% | +2.28% |
 
 ## 7. 次に見るべき不足
 
