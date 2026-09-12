@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T17:01:26.619874+00:00
+- generated_at: 2026-09-12T17:06:26.940827+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14317**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T17:01:14.487729+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77333.0
-- Funnel: target 1068 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-12T17:06:16.697820+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=77341.9
+- Funnel: target 1068 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +10.29% | $27,953,964.58 |
-| LONGXIA/USDT:USDT | +5.52% | $8,145,398.24 |
-| RIVER/USDT:USDT | +5.12% | $9,456,403.04 |
-| AKE/USDT:USDT | +3.03% | $2,978,199.10 |
-| BEAT/USDT:USDT | +3.00% | $18,630,508.18 |
+| STORJ/USDT:USDT | +9.52% | $28,048,756.41 |
+| RIVER/USDT:USDT | +5.12% | $9,481,214.33 |
+| LONGXIA/USDT:USDT | +4.30% | $8,170,480.43 |
+| AKE/USDT:USDT | +3.68% | $2,985,064.78 |
+| BEAT/USDT:USDT | +3.55% | $18,708,594.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.85% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.03% | +1.02% |
-| BEAT/USDT:USDT | below_1h_threshold | +0.98% | +0.97% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.90% | +0.89% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.45% | +0.44% |
+| ALCH/USDT:USDT | below_1h_threshold | +2.31% | +2.29% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +1.84% |
+| BEAT/USDT:USDT | below_1h_threshold | +1.64% | +1.62% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.55% | +1.53% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.05% | +1.03% |
 
 ## 7. 次に見るべき不足
 
