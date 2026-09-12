@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T23:21:23.942002+00:00
+- generated_at: 2026-09-12T23:26:24.954273+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14330**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.71** / 初期 $100.00 (+24.71%)
-- 確定: 2781件 (Win 824 / Loss 1068 / Flat 889) / pending 3件 / skip 3016件
+- 確定: 2781件 (Win 824 / Loss 1068 / Flat 889) / pending 4件 / skip 3016件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000435 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LSK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $124.71
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T23:21:11.101917+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77237.1
-- Funnel: target 1068 → liquid 122 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.0 >= 65=1, 4h RSI 79.5 >= 65=1
+- 更新: 2026-09-12T23:26:13.192134+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77217.3
+- Funnel: target 1068 → liquid 122 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.9 >= 65=1, 4h RSI 79.1 >= 65=1, 4h RSI 93.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +32.86% | $51,349,326.87 |
-| STORJ/USDT:USDT | +23.57% | $22,005,478.42 |
-| LONGXIA/USDT:USDT | +20.06% | $9,843,790.13 |
-| REZ/USDT:USDT | +19.66% | $2,068,618.11 |
-| ALCH/USDT:USDT | +13.17% | $2,161,794.49 |
+| LSK/USDT:USDT | +32.90% | $51,628,822.80 |
+| STORJ/USDT:USDT | +23.83% | $22,038,838.93 |
+| REZ/USDT:USDT | +19.80% | $2,085,484.50 |
+| LONGXIA/USDT:USDT | +17.72% | $9,853,009.43 |
+| ALCH/USDT:USDT | +13.70% | $2,189,272.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALCH/USDT:USDT | below_1h_threshold | +4.21% | +4.15% |
-| VTHO/USDT:USDT | below_1h_threshold | +4.01% | +3.95% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.68% | +2.63% |
-| AKE/USDT:USDT | below_1h_threshold | +1.17% | +1.12% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.87% | +0.82% |
+| VTHO/USDT:USDT | below_1h_threshold | +3.26% | +3.23% |
+| PEPE/USDT:USDT | below_1h_threshold | +0.96% | +0.93% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.91% | +0.88% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.82% | +0.80% |
+| AKE/USDT:USDT | below_1h_threshold | +0.72% | +0.69% |
 
 ## 7. 次に見るべき不足
 
