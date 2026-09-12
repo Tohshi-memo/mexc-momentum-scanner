@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T20:36:12.446680+00:00
+- generated_at: 2026-09-12T20:41:15.280919+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14322**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T20:36:02.135657+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77142.1
+- 更新: 2026-09-12T20:41:07.179106+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77124.9
 - Funnel: target 1068 → liquid 123 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +23.48% | $24,938,624.44 |
-| LONGXIA/USDT:USDT | +18.04% | $9,403,291.50 |
-| RIVER/USDT:USDT | +13.47% | $14,392,328.46 |
-| REZ/USDT:USDT | +11.90% | $1,525,899.79 |
-| AKE/USDT:USDT | +6.80% | $3,408,572.50 |
+| STORJ/USDT:USDT | +23.24% | $24,952,535.67 |
+| LONGXIA/USDT:USDT | +16.49% | $9,438,370.83 |
+| RIVER/USDT:USDT | +13.08% | $14,448,988.64 |
+| REZ/USDT:USDT | +11.96% | $1,532,334.65 |
+| GRIFFAIN/USDT:USDT | +6.75% | $1,009,077.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GRIFFAIN/USDT:USDT | below_1h_threshold | +1.45% | +1.38% |
-| XMR/USDT:USDT | below_1h_threshold | +1.42% | +1.35% |
-| REZ/USDT:USDT | below_1h_threshold | +1.38% | +1.31% |
-| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +0.90% |
-| VVV/USDT:USDT | below_1h_threshold | +0.86% | +0.79% |
+| XMR/USDT:USDT | below_1h_threshold | +1.78% | +1.73% |
+| GRIFFAIN/USDT:USDT | below_1h_threshold | +1.70% | +1.65% |
+| REZ/USDT:USDT | below_1h_threshold | +1.44% | +1.39% |
+| VVV/USDT:USDT | below_1h_threshold | +1.11% | +1.06% |
+| UAI/USDT:USDT | below_1h_threshold | +1.00% | +0.95% |
 
 ## 7. 次に見るべき不足
 
