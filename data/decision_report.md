@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T06:01:23.035769+00:00
+- generated_at: 2026-09-12T06:06:18.444326+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14289**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T06:01:12.970734+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=77175.3
-- Funnel: target 1067 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-12T06:06:10.169017+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77182.3
+- Funnel: target 1067 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +122.02% | $2,863,313.40 |
-| LSK/USDT:USDT | +67.47% | $10,042,676.55 |
-| STORJ/USDT:USDT | +27.97% | $18,324,731.93 |
-| LAB/USDT:USDT | +26.52% | $15,867,335.82 |
-| VTHO/USDT:USDT | +24.99% | $2,450,267.04 |
+| LONGXIA/USDT:USDT | +120.26% | $2,897,293.51 |
+| LSK/USDT:USDT | +61.87% | $10,120,473.35 |
+| VTHO/USDT:USDT | +32.70% | $2,508,682.47 |
+| STORJ/USDT:USDT | +29.95% | $18,331,285.35 |
+| LAB/USDT:USDT | +29.67% | $15,899,833.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +0.28% | +0.28% |
-| XMR/USDT:USDT | below_1h_threshold | +0.23% | +0.23% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.20% | +0.20% |
-| POL/USDT:USDT | below_1h_threshold | +0.20% | +0.20% |
-| ALLO/USDT:USDT | below_1h_threshold | +0.19% | +0.19% |
+| 4/USDT:USDT | below_1h_threshold | +2.16% | +2.16% |
+| LAB/USDT:USDT | below_1h_threshold | +1.81% | +1.80% |
+| UAI/USDT:USDT | below_1h_threshold | +0.60% | +0.59% |
+| POL/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.43% | +0.42% |
 
 ## 7. 次に見るべき不足
 
