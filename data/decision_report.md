@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T17:46:30.282085+00:00
+- generated_at: 2026-09-12T17:52:09.635572+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14317**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T17:46:16.600873+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=77199.8
-- Funnel: target 1068 → liquid 127 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.8 >= 65=1
+- 更新: 2026-09-12T17:51:53.800084+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.21% price=77160.2
+- Funnel: target 1068 → liquid 127 → pre 50 → checked 50 → surge 4 → strict 3
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +15.02% | $28,552,680.00 |
-| REZ/USDT:USDT | +11.73% | $1,072,655.70 |
-| RIVER/USDT:USDT | +10.87% | $9,985,979.77 |
-| PUMPFUN/USDT:USDT | +6.33% | $13,444,861.71 |
-| LONGXIA/USDT:USDT | +4.83% | $8,323,261.84 |
+| STORJ/USDT:USDT | +16.60% | $28,614,493.04 |
+| REZ/USDT:USDT | +12.81% | $1,111,157.86 |
+| RIVER/USDT:USDT | +11.82% | $10,184,677.59 |
+| PUMPFUN/USDT:USDT | +6.12% | $13,492,281.67 |
+| LONGXIA/USDT:USDT | +5.56% | $8,335,129.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +4.88% | +5.05% |
-| CYS/USDT:USDT | below_1h_threshold | +3.65% | +3.82% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.41% | +2.58% |
-| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +2.02% |
-| INJ/USDT:USDT | below_1h_threshold | +1.26% | +1.42% |
+| CYS/USDT:USDT | below_1h_threshold | +3.87% | +4.09% |
+| ALCH/USDT:USDT | below_1h_threshold | +3.61% | +3.82% |
+| ORCLSTOCK/USDT:USDT | below_1h_threshold | +1.86% | +2.08% |
+| INJ/USDT:USDT | below_1h_threshold | +1.41% | +1.63% |
+| XMR/USDT:USDT | below_1h_threshold | +0.86% | +1.08% |
 
 ## 7. 次に見るべき不足
 
