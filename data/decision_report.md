@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T22:36:07.871948+00:00
+- generated_at: 2026-09-12T22:41:17.002885+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14326**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.95** / 初期 $100.00 (+23.95%)
-- 確定: 2777件 (Win 822 / Loss 1068 / Flat 887) / pending 2件 / skip 3016件
+- 確定: 2777件 (Win 822 / Loss 1068 / Flat 887) / pending 3件 / skip 3016件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000431 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: STORJ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.95
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T22:35:59.391029+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77166.6
-- Funnel: target 1068 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-12T22:41:06.436482+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=77170.1
+- Funnel: target 1068 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +20.83% | $22,770,949.23 |
-| LONGXIA/USDT:USDT | +16.19% | $9,798,083.82 |
-| REZ/USDT:USDT | +14.68% | $1,926,231.20 |
-| RIVER/USDT:USDT | +10.16% | $15,246,310.06 |
-| ILV/USDT:USDT | +6.96% | $1,285,708.22 |
+| STORJ/USDT:USDT | +19.07% | $22,800,118.20 |
+| REZ/USDT:USDT | +16.69% | $1,960,039.40 |
+| LONGXIA/USDT:USDT | +16.12% | $9,818,969.18 |
+| RIVER/USDT:USDT | +10.71% | $15,273,062.52 |
+| ILV/USDT:USDT | +7.52% | $1,287,974.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| IOST/USDT:USDT | below_1h_threshold | +1.22% | +1.29% |
-| FLOCK/USDT:USDT | below_1h_threshold | +0.72% | +0.79% |
-| AKE/USDT:USDT | below_1h_threshold | +0.55% | +0.62% |
-| VTHO/USDT:USDT | below_1h_threshold | +0.42% | +0.49% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.25% | +0.32% |
+| REZ/USDT:USDT | below_1h_threshold | +2.17% | +2.24% |
+| GRIFFAIN/USDT:USDT | below_1h_threshold | +1.95% | +2.01% |
+| IOST/USDT:USDT | below_1h_threshold | +1.10% | +1.16% |
+| AKE/USDT:USDT | below_1h_threshold | +0.58% | +0.64% |
+| PENDLE/USDT:USDT | below_1h_threshold | +0.31% | +0.38% |
 
 ## 7. 次に見るべき不足
 
