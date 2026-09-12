@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T21:31:20.143236+00:00
+- generated_at: 2026-09-12T21:36:15.869527+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14324**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T21:31:09.653702+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=77172.8
-- Funnel: target 1068 → liquid 124 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-12T21:36:07.551262+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=77216.3
+- Funnel: target 1068 → liquid 124 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +23.57% | $23,570,853.37 |
-| REZ/USDT:USDT | +19.83% | $1,687,564.89 |
-| LONGXIA/USDT:USDT | +18.55% | $9,535,849.78 |
-| RIVER/USDT:USDT | +12.13% | $14,858,670.88 |
-| ILV/USDT:USDT | +10.77% | $1,133,805.89 |
+| STORJ/USDT:USDT | +25.65% | $23,586,042.09 |
+| LONGXIA/USDT:USDT | +20.36% | $9,561,034.69 |
+| REZ/USDT:USDT | +14.62% | $1,755,429.05 |
+| RIVER/USDT:USDT | +11.03% | $14,938,549.85 |
+| ILV/USDT:USDT | +10.59% | $1,145,237.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +2.30% | +2.24% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.71% | +1.65% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.02% | +0.97% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.02% | +0.96% |
-| GRIFFAIN/USDT:USDT | below_1h_threshold | +1.00% | +0.94% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.73% | +2.62% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.45% | +2.34% |
+| REZ/USDT:USDT | below_1h_threshold | +1.43% | +1.31% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.22% | +1.11% |
+| CYS/USDT:USDT | below_1h_threshold | +1.22% | +1.10% |
 
 ## 7. 次に見るべき不足
 
