@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T03:56:20.596809+00:00
+- generated_at: 2026-09-12T04:01:19.657086+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14277**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T03:56:09.729015+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=77236.9
-- Funnel: target 1067 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 80.3 >= 65=1, 4h RSI 86.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-12T04:01:09.202656+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77236.8
+- Funnel: target 1067 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +102.24% | $1,556,417.29 |
-| LSK/USDT:USDT | +64.80% | $7,419,950.41 |
-| STORJ/USDT:USDT | +23.37% | $17,706,333.89 |
-| BEAT/USDT:USDT | +20.91% | $15,020,680.27 |
-| RIVER/USDT:USDT | +16.69% | $7,012,278.20 |
+| LONGXIA/USDT:USDT | +104.31% | $1,581,585.95 |
+| LSK/USDT:USDT | +62.29% | $7,497,274.01 |
+| STORJ/USDT:USDT | +22.75% | $17,721,684.40 |
+| LAB/USDT:USDT | +17.41% | $14,942,690.65 |
+| RIVER/USDT:USDT | +13.84% | $7,031,253.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +2.85% | +2.88% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.43% | +2.45% |
-| RIVER/USDT:USDT | below_1h_threshold | +2.36% | +2.38% |
-| 4/USDT:USDT | below_1h_threshold | +1.70% | +1.73% |
-| CYS/USDT:USDT | below_1h_threshold | +1.33% | +1.36% |
+| CYS/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
+| LAB/USDT:USDT | below_1h_threshold | +0.60% | +0.60% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
+| MINA/USDT:USDT | below_1h_threshold | +0.25% | +0.25% |
 
 ## 7. 次に見るべき不足
 
