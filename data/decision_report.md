@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T09:51:11.218293+00:00
+- generated_at: 2026-09-12T09:56:17.498780+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14304**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T09:51:00.893407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77329.7
-- Funnel: target 1068 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-12T09:56:07.268030+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=77307.6
+- Funnel: target 1068 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +123.86% | $4,148,725.01 |
-| LSK/USDT:USDT | +67.66% | $15,134,908.06 |
-| STORJ/USDT:USDT | +56.58% | $24,318,070.26 |
-| UAI/USDT:USDT | +24.66% | $8,277,674.42 |
-| VTHO/USDT:USDT | +21.59% | $3,116,580.05 |
+| LONGXIA/USDT:USDT | +126.68% | $4,168,637.45 |
+| LSK/USDT:USDT | +68.22% | $15,186,460.28 |
+| STORJ/USDT:USDT | +56.37% | $24,375,280.69 |
+| UAI/USDT:USDT | +24.05% | $8,403,876.17 |
+| VTHO/USDT:USDT | +20.20% | $3,123,223.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.08% | +4.08% |
-| LSK/USDT:USDT | below_1h_threshold | +3.93% | +3.92% |
-| UAI/USDT:USDT | below_1h_threshold | +3.38% | +3.37% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.91% | +2.90% |
-| SOPH/USDT:USDT | below_1h_threshold | +2.36% | +2.35% |
+| BTW/USDT:USDT | below_1h_threshold | +4.69% | +4.72% |
+| LSK/USDT:USDT | below_1h_threshold | +4.68% | +4.70% |
+| UAI/USDT:USDT | below_1h_threshold | +2.83% | +2.85% |
+| DOGS/USDT:USDT | below_1h_threshold | +1.99% | +2.02% |
+| SOPH/USDT:USDT | below_1h_threshold | +1.98% | +2.00% |
 
 ## 7. 次に見るべき不足
 
