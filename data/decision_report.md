@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T02:46:20.406539+00:00
+- generated_at: 2026-09-12T02:51:18.267180+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14272**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T02:46:08.054442+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77201.2
-- Funnel: target 1067 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.2 >= 65=1
+- 更新: 2026-09-12T02:51:07.311633+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77240.5
+- Funnel: target 1067 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.7 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +65.26% | $1,128,967.69 |
-| LSK/USDT:USDT | +47.90% | $6,290,457.49 |
-| LAB/USDT:USDT | +34.73% | $13,610,255.29 |
-| STORJ/USDT:USDT | +26.00% | $17,378,605.69 |
-| BEAT/USDT:USDT | +15.71% | $13,566,120.52 |
+| LONGXIA/USDT:USDT | +68.23% | $1,139,028.06 |
+| LSK/USDT:USDT | +49.70% | $6,350,618.00 |
+| LAB/USDT:USDT | +33.84% | $13,650,530.23 |
+| STORJ/USDT:USDT | +26.59% | $17,388,194.11 |
+| BEAT/USDT:USDT | +16.46% | $13,592,053.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.87% | +4.92% |
-| 4/USDT:USDT | below_1h_threshold | +3.87% | +3.92% |
-| THETA/USDT:USDT | below_1h_threshold | +2.11% | +2.15% |
-| VTHO/USDT:USDT | below_1h_threshold | +1.72% | +1.76% |
-| TUT/USDT:USDT | below_1h_threshold | +1.25% | +1.30% |
+| 4/USDT:USDT | below_1h_threshold | +4.29% | +4.29% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.21% | +2.21% |
+| KAS/USDT:USDT | below_1h_threshold | +2.15% | +2.14% |
+| THETA/USDT:USDT | below_1h_threshold | +2.05% | +2.05% |
+| VTHO/USDT:USDT | below_1h_threshold | +1.49% | +1.48% |
 
 ## 7. 次に見るべき不足
 
