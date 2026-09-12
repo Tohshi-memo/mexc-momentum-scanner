@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-12T18:56:26.655515+00:00
+- generated_at: 2026-09-12T19:01:08.402302+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14320**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T18:56:15.392112+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=77116.3
-- Funnel: target 1068 → liquid 125 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1, 4h RSI 69.5 >= 65=1, 4h RSI 91.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-12T19:01:00.279887+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77111.0
+- Funnel: target 1068 → liquid 122 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RIVER/USDT:USDT | +20.56% | $12,137,374.03 |
-| STORJ/USDT:USDT | +20.35% | $28,561,738.74 |
-| LONGXIA/USDT:USDT | +16.91% | $9,058,604.95 |
-| REZ/USDT:USDT | +12.61% | $1,382,324.01 |
-| FLOCK/USDT:USDT | +9.74% | $1,061,140.26 |
+| STORJ/USDT:USDT | +19.91% | $26,885,361.03 |
+| RIVER/USDT:USDT | +15.83% | $12,208,172.13 |
+| LONGXIA/USDT:USDT | +14.37% | $9,012,104.19 |
+| REZ/USDT:USDT | +12.33% | $1,376,330.38 |
+| FLOCK/USDT:USDT | +8.10% | $1,054,693.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +2.05% | +2.12% |
-| INJ/USDT:USDT | below_1h_threshold | +0.69% | +0.77% |
-| AKE/USDT:USDT | below_1h_threshold | +0.69% | +0.77% |
-| VTHO/USDT:USDT | below_1h_threshold | +0.35% | +0.43% |
-| CYS/USDT:USDT | below_1h_threshold | +0.28% | +0.36% |
+| TESLA/USDT:USDT | below_1h_threshold | +0.88% | +0.87% |
+| LSK/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
+| REZ/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.24% | +0.24% |
 
 ## 7. 次に見るべき不足
 
