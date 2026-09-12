@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-12T02:56:23.396299+00:00
+- generated_at: 2026-09-12T03:01:18.246239+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14273**
+- closed shadow trades: **14274**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +2.03% / filled 20/20。**
-- 全期間 MARKET基準: n=14273, expectancy=-0.00%
+- 全期間 MARKET基準: n=14274, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+2.03%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -22,7 +22,7 @@
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
 | MARKET | 20/20 | 100.0% | +2.03% | **+2.03%** |
-| LIMIT_1PCT | 18/20 | 90.0% | +2.17% | **+1.95%** |
+| LIMIT_1PCT | 18/20 | 90.0% | +2.23% | **+2.01%** |
 | LIMIT_7PCT | 4/20 | 20.0% | +2.80% | **+0.56%** |
 | LIMIT_FIB1272 | 3/20 | 15.0% | +2.09% | **+0.31%** |
 | LIMIT_6PCT | 5/20 | 25.0% | +0.71% | **+0.18%** |
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,080.43** / 初期 $100.00 (+980.43%)
-- 確定: 5427件 (Win 1635 / Loss 1760 / Flat 2032) / skip 5407件
+- 確定: 5427件 (Win 1635 / Loss 1760 / Flat 2032) / skip 5408件
 - 成長率目線: 平均log +0.000439 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: STORJ/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,080.43
@@ -55,7 +55,7 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$209.84** / 初期 $100.00 (+109.84%)
-- 確定: 2834件 (Win 780 / Loss 656 / Flat 1398) / skip 4850件
+- 確定: 2834件 (Win 780 / Loss 656 / Flat 1398) / skip 4851件
 - 成長率目線: 平均log +0.000262 / 幾何平均 +0.026% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $209.84
@@ -65,37 +65,35 @@
 - 残高: **$123.34** / 初期 $100.00 (+23.34%)
 - 確定: 2764件 (Win 817 / Loss 1062 / Flat 885) / pending 3件 / skip 2977件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000218 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BEAT/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.34
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-12T02:56:10.573288+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77224.8
-- Funnel: target 1067 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1, 4h RSI 75.8 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-12T03:01:08.506612+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=77229.1
+- Funnel: target 1067 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LONGXIA/USDT:USDT | +66.07% | $1,145,188.04 |
-| LSK/USDT:USDT | +52.91% | $6,423,938.80 |
-| LAB/USDT:USDT | +37.55% | $13,734,039.03 |
-| STORJ/USDT:USDT | +25.24% | $17,414,426.67 |
-| BEAT/USDT:USDT | +15.71% | $13,619,329.22 |
+| LONGXIA/USDT:USDT | +67.77% | $1,162,215.41 |
+| LSK/USDT:USDT | +55.43% | $6,379,089.59 |
+| LAB/USDT:USDT | +37.45% | $13,764,050.96 |
+| STORJ/USDT:USDT | +25.40% | $17,421,788.04 |
+| BEAT/USDT:USDT | +24.75% | $13,576,827.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +3.87% | +3.89% |
-| KAS/USDT:USDT | below_1h_threshold | +2.29% | +2.30% |
-| LAB/USDT:USDT | below_1h_threshold | +1.95% | +1.97% |
-| VTHO/USDT:USDT | below_1h_threshold | +1.67% | +1.68% |
-| THETA/USDT:USDT | below_1h_threshold | +1.53% | +1.54% |
+| LSK/USDT:USDT | below_1h_threshold | +1.26% | +1.30% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.65% | +0.68% |
+| MINA/USDT:USDT | below_1h_threshold | +0.32% | +0.36% |
+| LAB/USDT:USDT | below_1h_threshold | +0.30% | +0.33% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.25% | +0.28% |
 
 ## 7. 次に見るべき不足
 
