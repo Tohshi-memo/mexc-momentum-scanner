@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T01:51:25.904421+00:00
+- generated_at: 2026-09-13T01:56:30.577076+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14347**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.51** / 初期 $100.00 (+26.51%)
-- 確定: 2798件 (Win 833 / Loss 1075 / Flat 890) / pending 4件 / skip 3016件
+- 確定: 2798件 (Win 833 / Loss 1075 / Flat 890) / pending 5件 / skip 3016件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000546 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LSK/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $126.51
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T01:51:14.574289+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=77260.2
-- Funnel: target 1068 → liquid 127 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.2 >= 65=1, 4h RSI 91.5 >= 65=1, 4h RSI 83.3 >= 65=1
+- 更新: 2026-09-13T01:56:16.650858+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77268.6
+- Funnel: target 1068 → liquid 127 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.8 >= 65=1, 4h RSI 91.6 >= 65=1, 4h RSI 83.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +117.72% | $66,623,988.91 |
-| POWR/USDT:USDT | +44.17% | $1,102,554.76 |
-| ZCAT/USDT:USDT | +25.88% | $1,106,223.54 |
-| LONGXIA/USDT:USDT | +20.46% | $10,050,557.75 |
-| REZ/USDT:USDT | +19.06% | $2,553,089.29 |
+| LSK/USDT:USDT | +105.47% | $66,911,792.02 |
+| POWR/USDT:USDT | +45.33% | $1,117,907.49 |
+| ZCAT/USDT:USDT | +27.50% | $1,109,378.55 |
+| LONGXIA/USDT:USDT | +20.15% | $10,057,346.28 |
+| REZ/USDT:USDT | +16.66% | $2,567,159.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_1h_threshold | +3.46% | +3.43% |
-| REZ/USDT:USDT | below_1h_threshold | +2.06% | +2.03% |
-| FLOCK/USDT:USDT | below_1h_threshold | +2.01% | +1.99% |
-| VTHO/USDT:USDT | below_1h_threshold | +1.62% | +1.59% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.27% | +1.24% |
+| ILV/USDT:USDT | below_1h_threshold | +2.51% | +2.48% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.84% | +1.80% |
+| VTHO/USDT:USDT | below_1h_threshold | +1.82% | +1.79% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.38% | +1.34% |
+| 4/USDT:USDT | below_1h_threshold | +1.16% | +1.12% |
 
 ## 7. 次に見るべき不足
 
