@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T17:21:17.500549+00:00
+- generated_at: 2026-09-13T17:26:24.863383+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14457**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.72** / 初期 $100.00 (+26.72%)
-- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3072件
+- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3073件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000486 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $126.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T17:21:07.217454+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=77328.9
-- Funnel: target 1068 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-13T17:26:13.948609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77287.8
+- Funnel: target 1068 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FILECOIN/USDT:USDT | +7.42% | $14,118,386.95 |
-| PONS/USDT:USDT | +5.96% | $4,763,685.68 |
-| AR/USDT:USDT | +5.40% | $1,878,200.62 |
-| USELESS/USDT:USDT | +4.79% | $4,611,239.20 |
-| NIULAI/USDT:USDT | +4.68% | $5,231,240.58 |
+| FILECOIN/USDT:USDT | +8.72% | $14,637,434.24 |
+| PONS/USDT:USDT | +6.45% | $4,810,168.84 |
+| NIULAI/USDT:USDT | +5.18% | $5,236,906.74 |
+| AR/USDT:USDT | +5.07% | $1,919,666.21 |
+| USELESS/USDT:USDT | +4.75% | $4,631,055.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +4.95% | +4.85% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.55% | +3.45% |
-| VVV/USDT:USDT | below_1h_threshold | +3.29% | +3.19% |
-| FET/USDT:USDT | below_1h_threshold | +2.14% | +2.04% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.99% | +1.89% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +4.80% | +4.76% |
+| AR/USDT:USDT | below_1h_threshold | +4.73% | +4.68% |
+| VVV/USDT:USDT | below_1h_threshold | +3.94% | +3.89% |
+| FET/USDT:USDT | below_1h_threshold | +3.10% | +3.05% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.34% | +2.29% |
 
 ## 7. 次に見るべき不足
 
