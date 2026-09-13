@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T09:16:30.591172+00:00
+- generated_at: 2026-09-13T09:26:29.167751+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14404**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$127.29** / 初期 $100.00 (+27.29%)
-- 確定: 2848件 (Win 848 / Loss 1099 / Flat 901) / pending 6件 / skip 3027件
+- 確定: 2848件 (Win 848 / Loss 1099 / Flat 901) / pending 6件 / skip 3028件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000378 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $127.29
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T09:16:15.439209+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=76740.1
-- Funnel: target 1068 → liquid 130 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.8 >= 65=1, 4h RSI 67.8 >= 65=1
+- 更新: 2026-09-13T09:26:15.229007+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=76623.9
+- Funnel: target 1068 → liquid 130 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 67.9 >= 65=1, 4h RSI 69.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +205.97% | $89,228,043.91 |
-| STEEM/USDT:USDT | +64.05% | $1,282,678.05 |
-| ARK/USDT:USDT | +40.03% | $1,254,937.04 |
-| VTHO/USDT:USDT | +36.01% | $3,136,297.46 |
-| POWR/USDT:USDT | +29.80% | $2,479,947.13 |
+| LSK/USDT:USDT | +213.10% | $89,615,779.17 |
+| STEEM/USDT:USDT | +54.38% | $1,337,315.58 |
+| VTHO/USDT:USDT | +39.87% | $3,155,877.79 |
+| ARK/USDT:USDT | +39.12% | $1,264,310.87 |
+| POWR/USDT:USDT | +28.89% | $2,502,703.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +4.31% | +4.35% |
-| CRV/USDT:USDT | below_1h_threshold | +4.26% | +4.30% |
-| ZCAT/USDT:USDT | below_1h_threshold | +3.74% | +3.78% |
-| KOMA/USDT:USDT | below_1h_threshold | +3.20% | +3.24% |
-| POWR/USDT:USDT | below_1h_threshold | +2.32% | +2.36% |
+| STEEM/USDT:USDT | below_1h_threshold | +3.45% | +3.64% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.82% | +3.01% |
+| CRV/USDT:USDT | below_1h_threshold | +2.78% | +2.97% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.76% | +1.95% |
+| BTW/USDT:USDT | below_1h_threshold | +1.76% | +1.95% |
 
 ## 7. 次に見るべき不足
 
