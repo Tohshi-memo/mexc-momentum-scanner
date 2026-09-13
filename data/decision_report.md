@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T16:51:25.596950+00:00
+- generated_at: 2026-09-13T16:56:34.100761+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14456**
 
@@ -63,17 +63,17 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.72** / 初期 $100.00 (+26.72%)
-- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3070件
+- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3072件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000464 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $126.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T16:51:14.999852+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=77210.3
-- Funnel: target 1068 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-13T16:56:20.216650+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=77256.9
+- Funnel: target 1068 → liquid 137 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +8.69% | $106,284,056.60 |
-| NIULAI/USDT:USDT | +5.30% | $5,274,309.06 |
-| PONS/USDT:USDT | +4.83% | $4,898,237.85 |
-| BTW/USDT:USDT | +3.80% | $7,365,123.34 |
-| USELESS/USDT:USDT | +3.53% | $4,914,988.66 |
+| LSK/USDT:USDT | +7.49% | $106,526,369.67 |
+| NIULAI/USDT:USDT | +5.67% | $5,284,073.42 |
+| PONS/USDT:USDT | +5.23% | $4,903,528.76 |
+| BTW/USDT:USDT | +4.47% | $7,378,173.37 |
+| USELESS/USDT:USDT | +4.12% | $4,960,984.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIULAI/USDT:USDT | below_relative_strength | +5.05% | +4.91% |
-| PONS/USDT:USDT | below_1h_threshold | +4.82% | +4.67% |
-| BTW/USDT:USDT | below_1h_threshold | +3.80% | +3.66% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.54% | +3.39% |
-| AKE/USDT:USDT | below_1h_threshold | +3.27% | +3.12% |
+| BTW/USDT:USDT | below_1h_threshold | +4.47% | +4.27% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.12% | +3.92% |
+| BR/USDT:USDT | below_1h_threshold | +3.64% | +3.44% |
+| AKE/USDT:USDT | below_1h_threshold | +3.32% | +3.11% |
+| LIT/USDT:USDT | below_1h_threshold | +3.28% | +3.07% |
 
 ## 7. 次に見るべき不足
 
