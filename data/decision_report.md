@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T08:31:22.909417+00:00
+- generated_at: 2026-09-13T08:36:18.381447+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14402**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T08:31:13.978865+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=76950.2
-- Funnel: target 1068 → liquid 128 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.8 >= 65=1, 4h RSI 67.7 >= 65=1
+- 更新: 2026-09-13T08:36:09.997414+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=76861.4
+- Funnel: target 1068 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +204.22% | $87,847,131.36 |
-| STEEM/USDT:USDT | +53.10% | $1,116,125.13 |
-| VTHO/USDT:USDT | +35.00% | $3,177,850.85 |
-| ARK/USDT:USDT | +34.92% | $1,119,661.45 |
-| POWR/USDT:USDT | +28.82% | $2,405,986.72 |
+| LSK/USDT:USDT | +210.75% | $88,133,254.83 |
+| STEEM/USDT:USDT | +49.13% | $1,129,608.03 |
+| ARK/USDT:USDT | +37.64% | $1,127,255.14 |
+| VTHO/USDT:USDT | +33.50% | $3,183,026.32 |
+| POWR/USDT:USDT | +27.71% | $2,411,645.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STEEM/USDT:USDT | below_1h_threshold | +2.77% | +2.95% |
-| LSK/USDT:USDT | below_1h_threshold | +0.88% | +1.06% |
-| XMR/USDT:USDT | below_1h_threshold | +0.48% | +0.66% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.39% | +0.57% |
-| RAY/USDT:USDT | below_1h_threshold | +0.32% | +0.49% |
+| LSK/USDT:USDT | below_1h_threshold | +2.86% | +3.15% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.44% | +2.73% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.23% | +0.52% |
+| WLFI/USDT:USDT | below_1h_threshold | +0.17% | +0.47% |
+| XMR/USDT:USDT | below_1h_threshold | +0.17% | +0.46% |
 
 ## 7. 次に見るべき不足
 
