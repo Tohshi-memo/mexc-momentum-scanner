@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T22:51:19.521457+00:00
+- generated_at: 2026-09-13T22:56:21.894184+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14468**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T22:51:10.355085+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.73% price=76712.0
-- Funnel: target 1068 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-13T22:56:11.240665+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.74% price=76703.0
+- Funnel: target 1068 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +15.08% | $2,721,835.10 |
-| BTW/USDT:USDT | +9.60% | $9,552,021.30 |
-| MAGMA/USDT:USDT | +9.26% | $1,752,564.12 |
-| BR/USDT:USDT | +7.01% | $2,022,232.07 |
-| PONS/USDT:USDT | +6.36% | $4,931,559.54 |
+| POWER/USDT:USDT | +18.41% | $2,755,706.20 |
+| BTW/USDT:USDT | +9.53% | $9,576,037.86 |
+| MAGMA/USDT:USDT | +9.18% | $1,756,837.29 |
+| BR/USDT:USDT | +7.75% | $2,038,021.32 |
+| USELESS/USDT:USDT | +5.08% | $5,415,786.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +0.56% | +1.29% |
-| BR/USDT:USDT | below_1h_threshold | +0.49% | +1.22% |
-| UAI/USDT:USDT | below_1h_threshold | +0.34% | +1.07% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +1.07% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +1.05% |
+| BR/USDT:USDT | below_1h_threshold | +1.13% | +1.87% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.07% | +1.82% |
+| BTW/USDT:USDT | below_1h_threshold | +0.50% | +1.24% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +1.08% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +1.06% |
 
 ## 7. 次に見るべき不足
 
