@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T16:31:13.699969+00:00
+- generated_at: 2026-09-13T16:36:21.167268+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14455**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T16:31:05.225741+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.16% price=77224.4
-- Funnel: target 1068 → liquid 135 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-09-13T16:36:10.719097+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=77204.9
+- Funnel: target 1068 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.8 >= 65=1
+- Strict後reject: 4h RSI 76.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +10.96% | $104,522,035.93 |
-| PONS/USDT:USDT | +4.34% | $4,824,952.98 |
-| BTW/USDT:USDT | +3.51% | $7,184,112.59 |
-| NIULAI/USDT:USDT | +2.89% | $5,213,778.30 |
-| LIT/USDT:USDT | +2.01% | $2,758,663.15 |
+| LSK/USDT:USDT | +13.26% | $104,930,635.15 |
+| PONS/USDT:USDT | +4.74% | $4,837,492.52 |
+| BTW/USDT:USDT | +4.43% | $7,208,049.39 |
+| NIULAI/USDT:USDT | +3.43% | $5,219,992.71 |
+| FILECOIN/USDT:USDT | +2.51% | $11,796,133.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +4.34% | +4.18% |
-| BTW/USDT:USDT | below_1h_threshold | +3.47% | +3.31% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.96% | +2.79% |
-| VTHO/USDT:USDT | below_1h_threshold | +2.04% | +1.88% |
-| LIT/USDT:USDT | below_1h_threshold | +2.04% | +1.87% |
+| PONS/USDT:USDT | below_1h_threshold | +4.76% | +4.62% |
+| BTW/USDT:USDT | below_1h_threshold | +4.43% | +4.29% |
+| NIULAI/USDT:USDT | below_1h_threshold | +3.34% | +3.20% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.52% | +2.38% |
+| VTHO/USDT:USDT | below_1h_threshold | +2.31% | +2.17% |
 
 ## 7. 次に見るべき不足
 
