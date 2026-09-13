@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T02:11:18.467564+00:00
+- generated_at: 2026-09-13T02:16:18.102012+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14349**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T02:11:08.402415+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=77245.4
+- 更新: 2026-09-13T02:16:07.812989+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=77255.0
 - Funnel: target 1068 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +101.45% | $66,480,181.65 |
-| POWR/USDT:USDT | +42.42% | $1,211,045.52 |
-| ZCAT/USDT:USDT | +31.49% | $1,110,873.65 |
-| STORJ/USDT:USDT | +17.05% | $19,233,994.28 |
-| REZ/USDT:USDT | +16.66% | $2,587,965.92 |
+| LSK/USDT:USDT | +106.46% | $66,655,721.49 |
+| POWR/USDT:USDT | +44.11% | $1,220,641.47 |
+| ZCAT/USDT:USDT | +29.70% | $1,113,369.90 |
+| STORJ/USDT:USDT | +16.42% | $19,235,710.00 |
+| REZ/USDT:USDT | +15.47% | $2,596,940.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALCH/USDT:USDT | below_1h_threshold | +3.20% | +3.25% |
-| ZCAT/USDT:USDT | below_1h_threshold | +2.27% | +2.32% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.72% | +1.77% |
-| STX/USDT:USDT | below_1h_threshold | +0.96% | +1.01% |
-| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.87% |
+| ALCH/USDT:USDT | below_1h_threshold | +3.13% | +3.17% |
+| STX/USDT:USDT | below_1h_threshold | +1.70% | +1.74% |
+| LSK/USDT:USDT | below_1h_threshold | +1.29% | +1.33% |
+| ZCAT/USDT:USDT | below_1h_threshold | +0.88% | +0.92% |
+| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.82% | +0.86% |
 
 ## 7. 次に見るべき不足
 
