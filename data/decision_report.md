@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T14:11:17.337117+00:00
+- generated_at: 2026-09-13T14:16:18.717936+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14441**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T14:11:07.093705+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.15% price=76932.8
+- 更新: 2026-09-13T14:16:10.652784+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.30% price=77044.0
 - Funnel: target 1068 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +258.84% | $103,295,935.39 |
-| CVC/USDT:USDT | +92.28% | $3,059,165.61 |
-| STEEM/USDT:USDT | +41.87% | $2,376,386.17 |
-| ARK/USDT:USDT | +33.52% | $2,507,934.54 |
-| BTW/USDT:USDT | +25.00% | $5,640,130.25 |
+| LSK/USDT:USDT | +246.78% | $103,670,914.04 |
+| CVC/USDT:USDT | +83.05% | $3,245,822.45 |
+| STEEM/USDT:USDT | +40.19% | $2,387,635.43 |
+| ARK/USDT:USDT | +33.03% | $2,523,941.42 |
+| BTW/USDT:USDT | +25.99% | $5,685,883.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CVC/USDT:USDT | below_1h_threshold | +4.55% | +4.40% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.82% | +3.66% |
-| ZCAT/USDT:USDT | below_1h_threshold | +2.90% | +2.75% |
-| STORJ/USDT:USDT | below_1h_threshold | +2.05% | +1.89% |
-| REZ/USDT:USDT | below_1h_threshold | +1.32% | +1.16% |
+| FILECOIN/USDT:USDT | below_relative_strength | +5.22% | +4.92% |
+| ZCAT/USDT:USDT | below_1h_threshold | +4.19% | +3.89% |
+| AR/USDT:USDT | below_1h_threshold | +1.91% | +1.61% |
+| INJ/USDT:USDT | below_1h_threshold | +1.59% | +1.30% |
+| VTHO/USDT:USDT | below_1h_threshold | +1.35% | +1.05% |
 
 ## 7. 次に見るべき不足
 
