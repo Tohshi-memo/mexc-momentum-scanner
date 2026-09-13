@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T23:46:17.803444+00:00
+- generated_at: 2026-09-13T23:51:17.482427+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14468**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T23:46:07.341602+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=76787.9
+- 更新: 2026-09-13T23:51:07.070571+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=76771.7
 - Funnel: target 1068 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +21.16% | $3,045,324.30 |
-| BTW/USDT:USDT | +11.18% | $9,843,485.16 |
-| MAGMA/USDT:USDT | +7.50% | $1,781,399.89 |
-| BR/USDT:USDT | +7.10% | $2,179,977.54 |
-| PONS/USDT:USDT | +4.72% | $4,952,938.35 |
+| POWER/USDT:USDT | +21.52% | $3,059,238.79 |
+| BTW/USDT:USDT | +10.79% | $9,873,395.74 |
+| MAGMA/USDT:USDT | +7.06% | $1,782,455.44 |
+| BR/USDT:USDT | +7.01% | $2,191,941.85 |
+| PONS/USDT:USDT | +4.07% | $4,968,319.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +1.89% | +1.76% |
-| AKE/USDT:USDT | below_1h_threshold | +1.86% | +1.73% |
-| UKOIL/USDT:USDT | below_1h_threshold | +1.76% | +1.64% |
-| POWER/USDT:USDT | below_1h_threshold | +1.70% | +1.57% |
-| BTW/USDT:USDT | below_1h_threshold | +1.69% | +1.56% |
+| POWER/USDT:USDT | below_1h_threshold | +2.05% | +1.94% |
+| AKE/USDT:USDT | below_1h_threshold | +1.78% | +1.67% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.76% | +1.66% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.76% | +1.65% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.64% | +1.53% |
 
 ## 7. 次に見るべき不足
 
