@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T20:46:14.043611+00:00
+- generated_at: 2026-09-13T20:51:16.325172+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14465**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.72** / 初期 $100.00 (+26.72%)
-- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3077件
+- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3078件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000391 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $126.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T20:46:04.023209+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77292.3
-- Funnel: target 1068 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-13T20:51:05.555373+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77302.0
+- Funnel: target 1068 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +13.16% | $1,602,651.65 |
-| MEMEROBINHOOD/USDT:USDT | +10.67% | $1,043,316.01 |
-| PONS/USDT:USDT | +8.95% | $5,023,063.82 |
-| USELESS/USDT:USDT | +7.93% | $4,811,491.49 |
-| MAGMA/USDT:USDT | +6.95% | $1,589,992.59 |
+| POWER/USDT:USDT | +13.73% | $1,611,146.65 |
+| MEMEROBINHOOD/USDT:USDT | +10.86% | $1,045,719.13 |
+| MAGMA/USDT:USDT | +9.47% | $1,650,779.09 |
+| USELESS/USDT:USDT | +9.08% | $4,858,254.71 |
+| PONS/USDT:USDT | +8.68% | $5,031,117.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.07% | +4.02% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.11% | +2.06% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.67% | +1.62% |
-| LIT/USDT:USDT | below_1h_threshold | +1.53% | +1.49% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.45% | +1.40% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.76% | +2.70% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.76% | +2.69% |
+| LIT/USDT:USDT | below_1h_threshold | +1.72% | +1.66% |
+| ILV/USDT:USDT | below_1h_threshold | +1.67% | +1.61% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.64% | +1.58% |
 
 ## 7. 次に見るべき不足
 
