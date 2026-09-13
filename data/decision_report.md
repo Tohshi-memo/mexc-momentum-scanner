@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T18:21:15.701756+00:00
+- generated_at: 2026-09-13T18:26:11.779046+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14461**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T18:21:05.153271+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77331.0
+- 更新: 2026-09-13T18:26:03.583822+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77337.7
 - Funnel: target 1068 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +7.56% | $4,880,057.74 |
-| NIULAI/USDT:USDT | +6.35% | $5,163,227.88 |
-| AR/USDT:USDT | +5.96% | $2,104,835.69 |
-| BTW/USDT:USDT | +5.94% | $7,543,117.11 |
-| BR/USDT:USDT | +5.73% | $1,460,028.78 |
+| PONS/USDT:USDT | +7.56% | $4,911,458.63 |
+| AR/USDT:USDT | +6.52% | $2,118,723.53 |
+| BTW/USDT:USDT | +6.37% | $7,564,886.96 |
+| BR/USDT:USDT | +6.26% | $1,466,579.08 |
+| NIULAI/USDT:USDT | +5.92% | $5,170,799.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.98% | +1.93% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.80% | +1.76% |
-| LSK/USDT:USDT | below_1h_threshold | +1.57% | +1.52% |
-| AKE/USDT:USDT | below_1h_threshold | +1.34% | +1.30% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.32% | +1.27% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.50% | +2.45% |
+| REZ/USDT:USDT | below_1h_threshold | +2.03% | +1.97% |
+| AR/USDT:USDT | below_1h_threshold | +1.48% | +1.43% |
+| AKE/USDT:USDT | below_1h_threshold | +1.35% | +1.30% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.10% |
 
 ## 7. 次に見るべき不足
 
