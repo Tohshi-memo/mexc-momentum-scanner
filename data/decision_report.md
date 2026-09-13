@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T11:26:29.221870+00:00
+- generated_at: 2026-09-13T11:31:18.102365+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14423**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T11:26:15.739523+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76629.7
-- Funnel: target 1068 → liquid 133 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 90.2 >= 65=1, 4h RSI 83.3 >= 65=1
+- 更新: 2026-09-13T11:31:08.974345+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=76631.1
+- Funnel: target 1068 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.0 >= 65=1, 4h RSI 90.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +232.39% | $97,646,006.12 |
-| STEEM/USDT:USDT | +60.51% | $1,939,301.24 |
-| ARK/USDT:USDT | +50.32% | $1,512,701.28 |
-| VTHO/USDT:USDT | +39.87% | $3,257,071.37 |
-| POWR/USDT:USDT | +31.86% | $2,737,041.33 |
+| LSK/USDT:USDT | +222.66% | $98,094,756.20 |
+| STEEM/USDT:USDT | +60.49% | $1,951,252.22 |
+| ARK/USDT:USDT | +50.32% | $1,561,216.78 |
+| VTHO/USDT:USDT | +36.32% | $3,269,903.70 |
+| POWR/USDT:USDT | +30.98% | $2,751,027.11 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UP/USDT:USDT | below_1h_threshold | +3.97% | +3.98% |
-| THETA/USDT:USDT | below_1h_threshold | +2.26% | +2.28% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.39% | +1.41% |
-| POWR/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.03% | +1.05% |
+| FLOCK/USDT:USDT | below_1h_threshold | +4.32% | +4.33% |
+| UP/USDT:USDT | below_1h_threshold | +3.44% | +3.46% |
+| THETA/USDT:USDT | below_1h_threshold | +1.73% | +1.75% |
+| REZ/USDT:USDT | below_1h_threshold | +1.32% | +1.33% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.00% | +1.02% |
 
 ## 7. 次に見るべき不足
 
