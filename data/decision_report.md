@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T13:21:24.262571+00:00
+- generated_at: 2026-09-13T13:26:25.577946+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14438**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T13:21:13.802615+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=76653.1
-- Funnel: target 1068 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-13T13:26:14.984942+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=76589.9
+- Funnel: target 1068 → liquid 131 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +251.63% | $104,168,498.06 |
-| CVC/USDT:USDT | +55.53% | $1,657,305.76 |
-| STEEM/USDT:USDT | +44.21% | $2,330,198.21 |
-| ARK/USDT:USDT | +35.00% | $2,409,249.46 |
-| VTHO/USDT:USDT | +23.12% | $3,403,637.84 |
+| LSK/USDT:USDT | +252.89% | $104,400,685.17 |
+| CVC/USDT:USDT | +57.62% | $1,717,070.19 |
+| STEEM/USDT:USDT | +44.04% | $2,335,446.20 |
+| ARK/USDT:USDT | +34.84% | $2,427,995.00 |
+| VTHO/USDT:USDT | +22.36% | $3,409,592.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +4.92% | +5.01% |
-| STEEM/USDT:USDT | below_1h_threshold | +3.50% | +3.59% |
-| ARK/USDT:USDT | below_1h_threshold | +3.08% | +3.18% |
-| POWR/USDT:USDT | below_1h_threshold | +2.06% | +2.15% |
-| THETA/USDT:USDT | below_1h_threshold | +1.33% | +1.43% |
+| STEEM/USDT:USDT | below_1h_threshold | +3.44% | +3.61% |
+| ARK/USDT:USDT | below_1h_threshold | +3.14% | +3.32% |
+| ZCAT/USDT:USDT | below_1h_threshold | +2.95% | +3.12% |
+| POWR/USDT:USDT | below_1h_threshold | +1.82% | +2.00% |
+| ABNBSTOCK/USDT:USDT | below_1h_threshold | +1.17% | +1.35% |
 
 ## 7. 次に見るべき不足
 
