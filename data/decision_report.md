@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T17:01:24.734324+00:00
+- generated_at: 2026-09-13T17:06:08.361835+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14457**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T17:01:12.477391+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=77252.6
+- 更新: 2026-09-13T17:06:00.215357+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77300.8
 - Funnel: target 1068 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +7.23% | $103,597,529.17 |
-| NIULAI/USDT:USDT | +5.60% | $5,194,544.05 |
-| PONS/USDT:USDT | +4.61% | $4,698,294.08 |
-| BTW/USDT:USDT | +4.40% | $7,238,664.62 |
-| FILECOIN/USDT:USDT | +4.34% | $12,709,116.07 |
+| FILECOIN/USDT:USDT | +6.67% | $13,177,969.90 |
+| BTW/USDT:USDT | +5.51% | $7,289,628.50 |
+| PONS/USDT:USDT | +5.37% | $4,721,253.58 |
+| NIULAI/USDT:USDT | +5.27% | $5,203,939.43 |
+| USELESS/USDT:USDT | +4.57% | $4,471,330.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MUU/USDT:USDT | below_1h_threshold | +1.35% | +1.35% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.96% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.47% | +0.47% |
-| 4/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
-| NIULAI/USDT:USDT | below_1h_threshold | +0.34% | +0.34% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.83% | +2.77% |
+| HNT/USDT:USDT | below_1h_threshold | +2.24% | +2.18% |
+| VVV/USDT:USDT | below_1h_threshold | +1.76% | +1.70% |
+| BTW/USDT:USDT | below_1h_threshold | +1.62% | +1.56% |
+| AR/USDT:USDT | below_1h_threshold | +1.37% | +1.30% |
 
 ## 7. 次に見るべき不足
 
