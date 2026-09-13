@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T05:46:24.511353+00:00
+- generated_at: 2026-09-13T05:51:24.008967+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14394**
 
@@ -63,39 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$127.52** / 初期 $100.00 (+27.52%)
-- 確定: 2841件 (Win 847 / Loss 1096 / Flat 898) / pending 4件 / skip 3021件
+- 確定: 2841件 (Win 847 / Loss 1096 / Flat 898) / pending 5件 / skip 3021件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000280 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UP/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $127.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T05:46:11.998500+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77272.2
-- Funnel: target 1068 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 0
+- 更新: 2026-09-13T05:51:11.266762+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=77284.4
+- Funnel: target 1068 → liquid 126 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +212.02% | $83,604,766.20 |
-| VTHO/USDT:USDT | +48.19% | $3,885,526.29 |
-| POWR/USDT:USDT | +32.06% | $2,032,107.99 |
-| ZCAT/USDT:USDT | +30.49% | $1,271,779.51 |
-| ILV/USDT:USDT | +17.91% | $1,609,506.27 |
+| LSK/USDT:USDT | +210.41% | $83,807,540.98 |
+| POWR/USDT:USDT | +33.09% | $2,046,888.23 |
+| VTHO/USDT:USDT | +32.25% | $3,985,990.17 |
+| ZCAT/USDT:USDT | +30.97% | $1,275,114.53 |
+| STORJ/USDT:USDT | +17.35% | $18,547,570.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UP/USDT:USDT | below_1h_threshold | +4.54% | +4.42% |
-| ZCAT/USDT:USDT | below_1h_threshold | +2.25% | +2.13% |
-| VET/USDT:USDT | below_1h_threshold | +2.23% | +2.11% |
-| KAS/USDT:USDT | below_1h_threshold | +1.03% | +0.91% |
-| STX/USDT:USDT | below_1h_threshold | +0.94% | +0.82% |
+| ILV/USDT:USDT | below_1h_threshold | +4.05% | +3.91% |
+| ZCAT/USDT:USDT | below_1h_threshold | +2.93% | +2.79% |
+| POWR/USDT:USDT | below_1h_threshold | +1.77% | +1.64% |
+| RAY/USDT:USDT | below_1h_threshold | +1.64% | +1.50% |
+| VET/USDT:USDT | below_1h_threshold | +1.62% | +1.48% |
 
 ## 7. 次に見るべき不足
 
