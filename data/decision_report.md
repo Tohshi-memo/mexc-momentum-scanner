@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T11:36:25.845018+00:00
+- generated_at: 2026-09-13T11:41:17.424093+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14424**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T11:36:14.104674+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=76688.0
-- Funnel: target 1068 → liquid 134 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.5 >= 65=1, 4h RSI 90.3 >= 65=1
+- 更新: 2026-09-13T11:41:08.909231+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=76750.0
+- Funnel: target 1068 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +233.03% | $98,413,910.21 |
-| STEEM/USDT:USDT | +59.02% | $1,962,041.25 |
-| ARK/USDT:USDT | +53.29% | $1,599,364.18 |
-| VTHO/USDT:USDT | +36.45% | $3,284,767.76 |
-| POWR/USDT:USDT | +33.20% | $2,765,947.41 |
+| LSK/USDT:USDT | +234.37% | $98,661,008.14 |
+| STEEM/USDT:USDT | +54.84% | $1,978,337.14 |
+| ARK/USDT:USDT | +49.91% | $1,627,078.78 |
+| VTHO/USDT:USDT | +37.12% | $3,290,763.91 |
+| POWR/USDT:USDT | +33.00% | $2,785,174.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FLOCK/USDT:USDT | below_1h_threshold | +4.58% | +4.52% |
-| UP/USDT:USDT | below_1h_threshold | +3.62% | +3.56% |
-| POWR/USDT:USDT | below_1h_threshold | +2.15% | +2.09% |
-| REZ/USDT:USDT | below_1h_threshold | +1.74% | +1.68% |
-| THETA/USDT:USDT | below_1h_threshold | +1.73% | +1.67% |
+| ARK/USDT:USDT | below_relative_strength | +5.08% | +4.94% |
+| FLOCK/USDT:USDT | below_1h_threshold | +4.69% | +4.55% |
+| UP/USDT:USDT | below_1h_threshold | +2.55% | +2.41% |
+| REZ/USDT:USDT | below_1h_threshold | +2.13% | +1.99% |
+| POWR/USDT:USDT | below_1h_threshold | +1.92% | +1.78% |
 
 ## 7. 次に見るべき不足
 
