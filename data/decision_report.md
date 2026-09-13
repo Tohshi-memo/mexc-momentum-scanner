@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T00:11:12.266280+00:00
+- generated_at: 2026-09-13T00:16:18.496884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14332**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T00:11:05.165933+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77251.1
+- 更新: 2026-09-13T00:16:08.117685+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77238.7
 - Funnel: target 1068 → liquid 119 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STORJ/USDT:USDT | +27.32% | $20,423,331.96 |
-| LSK/USDT:USDT | +26.11% | $54,920,880.61 |
-| LONGXIA/USDT:USDT | +18.67% | $9,827,106.06 |
-| REZ/USDT:USDT | +14.96% | $2,301,033.43 |
-| ALCH/USDT:USDT | +11.76% | $2,406,454.93 |
+| STORJ/USDT:USDT | +26.13% | $20,451,405.39 |
+| LSK/USDT:USDT | +24.66% | $55,260,036.02 |
+| LONGXIA/USDT:USDT | +17.46% | $9,832,539.71 |
+| REZ/USDT:USDT | +15.53% | $2,314,386.48 |
+| ALCH/USDT:USDT | +12.07% | $2,410,659.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +2.97% | +2.96% |
-| UAI/USDT:USDT | below_1h_threshold | +1.56% | +1.55% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.53% | +1.52% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.46% | +1.45% |
-| RAVE/USDT:USDT | below_1h_threshold | +1.11% | +1.10% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.44% | +2.45% |
+| UAI/USDT:USDT | below_1h_threshold | +1.66% | +1.67% |
+| GRIFFAIN/USDT:USDT | below_1h_threshold | +1.19% | +1.20% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.98% | +0.98% |
+| INJ/USDT:USDT | below_1h_threshold | +0.90% | +0.91% |
 
 ## 7. 次に見るべき不足
 
