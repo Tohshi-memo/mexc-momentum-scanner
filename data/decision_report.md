@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T21:16:20.446823+00:00
+- generated_at: 2026-09-13T21:21:24.143719+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14465**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.72** / 初期 $100.00 (+26.72%)
-- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3078件
+- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3079件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000391 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $126.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T21:16:10.059642+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77326.9
-- Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-13T21:21:13.387037+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77368.0
+- Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 94.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +16.96% | $1,778,626.82 |
-| MAGMA/USDT:USDT | +12.27% | $1,670,582.69 |
-| USELESS/USDT:USDT | +10.84% | $4,968,956.77 |
-| MEMEROBINHOOD/USDT:USDT | +9.88% | $1,027,621.36 |
-| PONS/USDT:USDT | +8.83% | $4,861,299.07 |
+| POWER/USDT:USDT | +21.70% | $1,841,023.08 |
+| MAGMA/USDT:USDT | +11.95% | $1,671,570.14 |
+| USELESS/USDT:USDT | +11.02% | $5,000,414.86 |
+| MEMEROBINHOOD/USDT:USDT | +9.88% | $1,031,870.49 |
+| PONS/USDT:USDT | +7.96% | $4,865,068.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +1.02% | +1.00% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.98% | +0.97% |
-| BR/USDT:USDT | below_1h_threshold | +0.95% | +0.93% |
-| RAY/USDT:USDT | below_1h_threshold | +0.76% | +0.75% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.65% |
+| LSK/USDT:USDT | below_1h_threshold | +2.42% | +2.35% |
+| RAY/USDT:USDT | below_1h_threshold | +1.05% | +0.98% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.69% | +0.62% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.60% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +0.66% | +0.59% |
 
 ## 7. 次に見るべき不足
 
