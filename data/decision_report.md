@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T22:06:28.462109+00:00
+- generated_at: 2026-09-13T22:11:25.331897+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14466**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T22:06:17.984115+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=77073.0
+- 更新: 2026-09-13T22:11:14.965244+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.47% price=76910.6
 - Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +23.43% | $2,351,620.07 |
-| MAGMA/USDT:USDT | +9.96% | $1,706,158.56 |
-| BTW/USDT:USDT | +9.24% | $9,317,138.17 |
-| USELESS/USDT:USDT | +6.85% | $5,116,945.94 |
-| MEMEROBINHOOD/USDT:USDT | +6.71% | $1,052,159.47 |
+| POWER/USDT:USDT | +22.61% | $2,387,536.13 |
+| MAGMA/USDT:USDT | +10.15% | $1,711,356.81 |
+| BTW/USDT:USDT | +9.06% | $9,342,313.49 |
+| MEMEROBINHOOD/USDT:USDT | +7.31% | $1,053,236.12 |
+| LSK/USDT:USDT | +6.02% | $104,862,496.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +1.13% | +1.40% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.72% | +0.98% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.60% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.58% |
-| BTW/USDT:USDT | below_1h_threshold | +0.26% | +0.53% |
+| POWER/USDT:USDT | below_1h_threshold | +0.59% | +1.07% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.41% | +0.89% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.81% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +0.79% |
+| AKE/USDT:USDT | below_1h_threshold | +0.24% | +0.71% |
 
 ## 7. 次に見るべき不足
 
