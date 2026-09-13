@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T08:26:23.018572+00:00
+- generated_at: 2026-09-13T08:31:22.909417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14402**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$127.29** / 初期 $100.00 (+27.29%)
-- 確定: 2848件 (Win 848 / Loss 1099 / Flat 901) / pending 6件 / skip 3023件
+- 確定: 2848件 (Win 848 / Loss 1099 / Flat 901) / pending 6件 / skip 3024件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000332 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $127.29
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T08:26:12.607740+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.12% price=76994.3
-- Funnel: target 1068 → liquid 128 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.4 >= 65=1
+- 更新: 2026-09-13T08:31:13.978865+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=76950.2
+- Funnel: target 1068 → liquid 128 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.8 >= 65=1, 4h RSI 67.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +206.61% | $87,664,456.79 |
-| STEEM/USDT:USDT | +51.30% | $1,103,795.50 |
-| ARK/USDT:USDT | +35.17% | $1,114,023.37 |
-| VTHO/USDT:USDT | +34.05% | $3,173,232.87 |
-| POWR/USDT:USDT | +29.93% | $2,400,812.19 |
+| LSK/USDT:USDT | +204.22% | $87,847,131.36 |
+| STEEM/USDT:USDT | +53.10% | $1,116,125.13 |
+| VTHO/USDT:USDT | +35.00% | $3,177,850.85 |
+| ARK/USDT:USDT | +34.92% | $1,119,661.45 |
+| POWR/USDT:USDT | +28.82% | $2,405,986.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STEEM/USDT:USDT | below_1h_threshold | +1.74% | +1.86% |
-| LSK/USDT:USDT | below_1h_threshold | +1.49% | +1.61% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.02% | +1.14% |
-| XMR/USDT:USDT | below_1h_threshold | +0.42% | +0.54% |
-| WLFI/USDT:USDT | below_1h_threshold | +0.35% | +0.47% |
+| STEEM/USDT:USDT | below_1h_threshold | +2.77% | +2.95% |
+| LSK/USDT:USDT | below_1h_threshold | +0.88% | +1.06% |
+| XMR/USDT:USDT | below_1h_threshold | +0.48% | +0.66% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.39% | +0.57% |
+| RAY/USDT:USDT | below_1h_threshold | +0.32% | +0.49% |
 
 ## 7. 次に見るべき不足
 
