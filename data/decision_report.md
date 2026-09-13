@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T19:36:26.157236+00:00
+- generated_at: 2026-09-13T19:41:21.561024+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14464**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T19:36:13.873145+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=77210.8
+- 更新: 2026-09-13T19:41:10.632637+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=77203.7
 - Funnel: target 1068 → liquid 137 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +11.92% | $1,236,919.02 |
-| PONS/USDT:USDT | +8.32% | $5,055,826.07 |
-| BTW/USDT:USDT | +6.89% | $7,901,059.05 |
-| BR/USDT:USDT | +6.80% | $1,541,356.13 |
-| REZ/USDT:USDT | +6.29% | $5,190,071.88 |
+| POWER/USDT:USDT | +11.82% | $1,258,286.49 |
+| PONS/USDT:USDT | +8.97% | $5,069,785.90 |
+| BTW/USDT:USDT | +6.92% | $7,929,679.09 |
+| BR/USDT:USDT | +6.70% | $1,562,424.77 |
+| ZIL/USDT:USDT | +6.44% | $1,025,707.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_1h_threshold | +4.15% | +4.28% |
-| BTW/USDT:USDT | below_1h_threshold | +1.09% | +1.22% |
-| BR/USDT:USDT | below_1h_threshold | +0.80% | +0.93% |
-| POWER/USDT:USDT | below_1h_threshold | +0.58% | +0.71% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.49% | +0.62% |
+| REZ/USDT:USDT | below_1h_threshold | +2.22% | +2.36% |
+| BTW/USDT:USDT | below_1h_threshold | +1.17% | +1.31% |
+| BR/USDT:USDT | below_1h_threshold | +0.71% | +0.85% |
+| EGLD/USDT:USDT | below_1h_threshold | +0.66% | +0.80% |
+| POWER/USDT:USDT | below_1h_threshold | +0.49% | +0.63% |
 
 ## 7. 次に見るべき不足
 
