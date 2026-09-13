@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T21:26:31.186376+00:00
+- generated_at: 2026-09-13T21:31:20.103687+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14465**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.72** / 初期 $100.00 (+26.72%)
-- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3079件
+- 確定: 2856件 (Win 850 / Loss 1105 / Flat 901) / pending 0件 / skip 3080件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000391 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: REZ/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $126.72
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T21:26:20.603939+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=77390.2
-- Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.6 >= 65=1
+- 更新: 2026-09-13T21:31:08.595356+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77376.1
+- Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.9 >= 65=1, 4h RSI 94.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +22.22% | $1,936,056.23 |
-| MAGMA/USDT:USDT | +11.91% | $1,673,564.06 |
-| USELESS/USDT:USDT | +10.43% | $5,007,626.71 |
-| BTW/USDT:USDT | +9.13% | $8,769,065.41 |
-| PONS/USDT:USDT | +8.74% | $4,879,552.70 |
+| POWER/USDT:USDT | +24.22% | $2,017,987.10 |
+| MAGMA/USDT:USDT | +13.02% | $1,680,985.21 |
+| BTW/USDT:USDT | +9.38% | $9,058,822.22 |
+| USELESS/USDT:USDT | +9.04% | $5,047,698.82 |
+| PONS/USDT:USDT | +8.66% | $4,886,409.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +3.61% | +3.51% |
-| BTW/USDT:USDT | below_1h_threshold | +2.22% | +2.12% |
-| RAY/USDT:USDT | below_1h_threshold | +1.23% | +1.13% |
-| ILV/USDT:USDT | below_1h_threshold | +0.77% | +0.67% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.57% |
+| BTW/USDT:USDT | below_1h_threshold | +2.33% | +2.25% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.66% | +1.58% |
+| RAY/USDT:USDT | below_1h_threshold | +1.24% | +1.16% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.59% |
+| UAI/USDT:USDT | below_1h_threshold | +0.48% | +0.40% |
 
 ## 7. 次に見るべき不足
 
