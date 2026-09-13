@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T14:06:25.345721+00:00
+- generated_at: 2026-09-13T14:11:17.337117+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14441**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T14:06:09.637964+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=76843.2
+- 更新: 2026-09-13T14:11:07.093705+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=76932.8
 - Funnel: target 1068 → liquid 132 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +257.89% | $103,128,474.08 |
-| CVC/USDT:USDT | +92.72% | $2,841,758.15 |
-| STEEM/USDT:USDT | +40.61% | $2,372,794.91 |
-| ARK/USDT:USDT | +34.51% | $2,497,370.25 |
-| BTW/USDT:USDT | +25.45% | $5,606,212.43 |
+| LSK/USDT:USDT | +258.84% | $103,295,935.39 |
+| CVC/USDT:USDT | +92.28% | $3,059,165.61 |
+| STEEM/USDT:USDT | +41.87% | $2,376,386.17 |
+| ARK/USDT:USDT | +33.52% | $2,507,934.54 |
+| BTW/USDT:USDT | +25.00% | $5,640,130.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CVC/USDT:USDT | below_1h_threshold | +4.48% | +4.44% |
-| ZCAT/USDT:USDT | below_1h_threshold | +2.44% | +2.40% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.19% | +2.15% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.41% | +1.37% |
-| OP/USDT:USDT | below_1h_threshold | +0.87% | +0.83% |
+| CVC/USDT:USDT | below_1h_threshold | +4.55% | +4.40% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.82% | +3.66% |
+| ZCAT/USDT:USDT | below_1h_threshold | +2.90% | +2.75% |
+| STORJ/USDT:USDT | below_1h_threshold | +2.05% | +1.89% |
+| REZ/USDT:USDT | below_1h_threshold | +1.32% | +1.16% |
 
 ## 7. 次に見るべき不足
 
