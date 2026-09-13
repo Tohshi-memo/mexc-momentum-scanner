@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T05:06:23.810134+00:00
+- generated_at: 2026-09-13T05:11:20.358126+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14389**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T05:06:11.332954+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.02% price=77191.3
-- Funnel: target 1068 → liquid 125 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-13T05:11:09.996659+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=77204.9
+- Funnel: target 1068 → liquid 125 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +317.60% | $81,439,376.23 |
-| VTHO/USDT:USDT | +57.17% | $3,204,029.93 |
-| ZCAT/USDT:USDT | +32.80% | $1,250,218.00 |
-| POWR/USDT:USDT | +32.24% | $1,968,923.59 |
-| SAGA/USDT:USDT | +24.76% | $1,010,946.96 |
+| LSK/USDT:USDT | +315.47% | $81,661,017.59 |
+| VTHO/USDT:USDT | +51.26% | $3,259,957.06 |
+| POWR/USDT:USDT | +33.27% | $1,981,610.60 |
+| ZCAT/USDT:USDT | +31.89% | $1,253,577.20 |
+| SAGA/USDT:USDT | +23.50% | $1,029,436.76 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZCAT/USDT:USDT | below_1h_threshold | +4.07% | +4.05% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
-| LAB/USDT:USDT | below_1h_threshold | +1.21% | +1.19% |
-| POWR/USDT:USDT | below_1h_threshold | +0.97% | +0.95% |
-| FLOCK/USDT:USDT | below_1h_threshold | +0.73% | +0.71% |
+| ZCAT/USDT:USDT | below_1h_threshold | +3.28% | +3.25% |
+| LAB/USDT:USDT | below_1h_threshold | +2.66% | +2.62% |
+| POWR/USDT:USDT | below_1h_threshold | +1.59% | +1.56% |
+| FLOCK/USDT:USDT | below_1h_threshold | +1.51% | +1.47% |
+| VTHO/USDT:USDT | below_1h_threshold | +1.44% | +1.41% |
 
 ## 7. 次に見るべき不足
 
