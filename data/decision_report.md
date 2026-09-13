@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T07:11:23.320604+00:00
+- generated_at: 2026-09-13T07:16:14.088482+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14400**
 
@@ -70,7 +70,7 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T07:11:11.078972+00:00 / 保存件数 288/288
+- 更新: 2026-09-13T07:16:03.669639+00:00 / 保存件数 288/288
 - BTC: STAGNANT 1h +0.06% price=77129.8
 - Funnel: target 1068 → liquid 126 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +219.78% | $84,846,378.98 |
-| VTHO/USDT:USDT | +33.76% | $3,171,975.87 |
-| ZCAT/USDT:USDT | +29.51% | $1,305,003.14 |
-| POWR/USDT:USDT | +28.93% | $2,140,283.34 |
-| SAGA/USDT:USDT | +19.40% | $1,154,330.05 |
+| LSK/USDT:USDT | +214.19% | $85,150,478.51 |
+| VTHO/USDT:USDT | +34.32% | $3,180,760.04 |
+| POWR/USDT:USDT | +29.91% | $2,150,266.82 |
+| ZCAT/USDT:USDT | +29.86% | $1,306,894.03 |
+| SAGA/USDT:USDT | +21.61% | $1,156,414.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +3.44% | +3.38% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.24% | +1.18% |
-| FET/USDT:USDT | below_1h_threshold | +0.77% | +0.71% |
-| ZEC/USDT:USDT | below_1h_threshold | +0.71% | +0.65% |
-| RAY/USDT:USDT | below_1h_threshold | +0.61% | +0.55% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.26% | +3.20% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.50% | +1.43% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.21% | +1.14% |
+| ZCAT/USDT:USDT | below_1h_threshold | +0.72% | +0.65% |
+| NIULAI/USDT:USDT | below_1h_threshold | +0.64% | +0.57% |
 
 ## 7. 次に見るべき不足
 
