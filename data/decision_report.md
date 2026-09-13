@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T22:56:21.894184+00:00
+- generated_at: 2026-09-13T23:01:13.279653+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14468**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T22:56:11.240665+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.74% price=76703.0
+- 更新: 2026-09-13T23:01:05.363227+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=76699.9
 - Funnel: target 1068 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +18.41% | $2,755,706.20 |
-| BTW/USDT:USDT | +9.53% | $9,576,037.86 |
-| MAGMA/USDT:USDT | +9.18% | $1,756,837.29 |
-| BR/USDT:USDT | +7.75% | $2,038,021.32 |
-| USELESS/USDT:USDT | +5.08% | $5,415,786.11 |
+| POWER/USDT:USDT | +19.22% | $2,791,326.41 |
+| BTW/USDT:USDT | +9.34% | $9,503,427.90 |
+| MAGMA/USDT:USDT | +8.96% | $1,760,028.96 |
+| BR/USDT:USDT | +7.52% | $2,053,791.96 |
+| USELESS/USDT:USDT | +4.99% | $5,320,840.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +1.13% | +1.87% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.07% | +1.82% |
-| BTW/USDT:USDT | below_1h_threshold | +0.50% | +1.24% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +1.08% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.31% | +1.06% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.76% | +1.75% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.64% | +1.63% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.46% |
+| MEMEROBINHOOD/USDT:USDT | below_1h_threshold | +0.95% | +0.94% |
+| LSK/USDT:USDT | below_1h_threshold | +0.57% | +0.56% |
 
 ## 7. 次に見るべき不足
 
