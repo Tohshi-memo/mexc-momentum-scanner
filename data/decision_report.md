@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T23:16:08.652207+00:00
+- generated_at: 2026-09-13T23:21:16.822131+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14468**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T23:16:00.316425+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=76714.4
+- 更新: 2026-09-13T23:21:09.226523+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=76597.3
 - Funnel: target 1068 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +20.00% | $2,923,403.71 |
-| BTW/USDT:USDT | +10.80% | $9,620,000.84 |
-| MAGMA/USDT:USDT | +9.04% | $1,770,179.54 |
-| BR/USDT:USDT | +7.92% | $2,132,423.89 |
-| USELESS/USDT:USDT | +5.02% | $5,345,006.58 |
+| POWER/USDT:USDT | +20.44% | $2,946,791.67 |
+| BTW/USDT:USDT | +11.06% | $9,668,097.26 |
+| MAGMA/USDT:USDT | +8.33% | $1,773,872.77 |
+| BR/USDT:USDT | +7.62% | $2,139,270.28 |
+| USELESS/USDT:USDT | +4.85% | $5,355,528.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UKOIL/USDT:USDT | below_1h_threshold | +1.76% | +1.73% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.64% | +1.61% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.45% |
-| BTW/USDT:USDT | below_1h_threshold | +1.47% | +1.43% |
-| 4/USDT:USDT | below_1h_threshold | +1.15% | +1.11% |
+| UKOIL/USDT:USDT | below_1h_threshold | +1.76% | +1.88% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.64% | +1.76% |
+| BTW/USDT:USDT | below_1h_threshold | +1.58% | +1.70% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.48% | +1.60% |
+| 4/USDT:USDT | below_1h_threshold | +1.09% | +1.21% |
 
 ## 7. 次に見るべき不足
 
