@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T20:06:19.748356+00:00
+- generated_at: 2026-09-13T20:11:15.438102+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14465**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T20:06:09.293537+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77248.6
+- 更新: 2026-09-13T20:11:07.899658+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77251.7
 - Funnel: target 1068 → liquid 138 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +14.03% | $1,000,948.27 |
-| POWER/USDT:USDT | +13.11% | $1,388,366.54 |
-| PONS/USDT:USDT | +8.30% | $4,952,034.69 |
-| ZIL/USDT:USDT | +8.01% | $1,097,914.95 |
-| BTW/USDT:USDT | +7.38% | $7,944,488.53 |
+| MEMEROBINHOOD/USDT:USDT | +12.84% | $1,009,929.83 |
+| POWER/USDT:USDT | +10.89% | $1,426,077.76 |
+| ZIL/USDT:USDT | +8.14% | $1,106,479.31 |
+| PONS/USDT:USDT | +7.75% | $4,961,608.50 |
+| BTW/USDT:USDT | +7.62% | $7,975,698.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.55% | +2.56% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.96% | +0.97% |
-| VTHO/USDT:USDT | below_1h_threshold | +0.95% | +0.96% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.71% | +0.72% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.62% | +1.63% |
+| LSK/USDT:USDT | below_1h_threshold | +1.40% | +1.40% |
+| ILV/USDT:USDT | below_1h_threshold | +0.92% | +0.92% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.79% | +0.79% |
+| VTHO/USDT:USDT | below_1h_threshold | +0.71% | +0.71% |
 
 ## 7. 次に見るべき不足
 
