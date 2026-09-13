@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T20:16:16.191197+00:00
+- generated_at: 2026-09-13T20:21:17.963755+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14465**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T20:16:06.611174+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=77261.7
+- 更新: 2026-09-13T20:21:07.657404+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=77289.0
 - Funnel: target 1068 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +12.84% | $1,014,850.31 |
-| POWER/USDT:USDT | +10.69% | $1,450,316.59 |
-| PONS/USDT:USDT | +7.83% | $4,964,188.21 |
-| BR/USDT:USDT | +7.72% | $1,606,097.31 |
-| BTW/USDT:USDT | +7.33% | $8,026,621.39 |
+| POWER/USDT:USDT | +13.16% | $1,476,998.02 |
+| MEMEROBINHOOD/USDT:USDT | +12.25% | $1,017,600.13 |
+| USELESS/USDT:USDT | +8.23% | $4,728,041.70 |
+| PONS/USDT:USDT | +8.07% | $4,974,167.35 |
+| BR/USDT:USDT | +7.90% | $1,623,624.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +1.92% | +1.91% |
-| ILV/USDT:USDT | below_1h_threshold | +0.86% | +0.85% |
-| BR/USDT:USDT | below_1h_threshold | +0.81% | +0.80% |
-| NIULAI/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.59% | +0.58% |
+| ARK/USDT:USDT | below_1h_threshold | +4.23% | +4.19% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.95% | +1.91% |
+| LSK/USDT:USDT | below_1h_threshold | +1.84% | +1.79% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.52% | +1.47% |
+| BR/USDT:USDT | below_1h_threshold | +1.05% | +1.00% |
 
 ## 7. 次に見るべき不足
 
