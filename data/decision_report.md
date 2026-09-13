@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T19:26:16.492139+00:00
+- generated_at: 2026-09-13T19:31:18.103295+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14463**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T19:26:07.767699+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=77232.2
+- 更新: 2026-09-13T19:31:09.727478+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77242.8
 - Funnel: target 1068 → liquid 136 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +10.66% | $1,156,981.78 |
-| MAGMA/USDT:USDT | +10.33% | $1,147,931.16 |
-| PONS/USDT:USDT | +7.58% | $5,016,140.20 |
-| BTW/USDT:USDT | +6.57% | $7,811,902.01 |
-| BR/USDT:USDT | +6.51% | $1,515,304.87 |
+| POWER/USDT:USDT | +11.64% | $1,195,557.78 |
+| MAGMA/USDT:USDT | +10.48% | $1,174,571.10 |
+| PONS/USDT:USDT | +7.63% | $5,041,768.88 |
+| BTW/USDT:USDT | +7.29% | $7,853,335.23 |
+| BR/USDT:USDT | +6.68% | $1,528,400.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_1h_threshold | +2.20% | +2.30% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.32% | +1.42% |
-| EGLD/USDT:USDT | below_1h_threshold | +0.98% | +1.09% |
-| BTW/USDT:USDT | below_1h_threshold | +0.80% | +0.90% |
-| BR/USDT:USDT | below_1h_threshold | +0.53% | +0.64% |
+| REZ/USDT:USDT | below_1h_threshold | +3.74% | +3.83% |
+| BTW/USDT:USDT | below_1h_threshold | +1.50% | +1.59% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.15% | +1.24% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +1.11% | +1.20% |
+| BR/USDT:USDT | below_1h_threshold | +0.69% | +0.78% |
 
 ## 7. 次に見るべき不足
 
