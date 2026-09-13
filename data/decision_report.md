@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T17:56:26.269100+00:00
+- generated_at: 2026-09-13T18:01:16.407368+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14458**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T17:56:13.698376+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77302.6
-- Funnel: target 1068 → liquid 137 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-13T18:01:05.984297+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=77299.9
+- Funnel: target 1068 → liquid 135 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| PONS/USDT:USDT | +7.71% | $4,995,276.53 |
-| BTW/USDT:USDT | +5.69% | $7,542,421.98 |
-| BR/USDT:USDT | +5.48% | $1,406,431.03 |
-| NIULAI/USDT:USDT | +5.09% | $5,281,285.19 |
-| USELESS/USDT:USDT | +4.94% | $4,798,125.07 |
+| PONS/USDT:USDT | +8.63% | $4,775,785.62 |
+| USELESS/USDT:USDT | +5.53% | $4,610,217.24 |
+| BTW/USDT:USDT | +5.41% | $7,457,617.56 |
+| NIULAI/USDT:USDT | +5.02% | $5,096,176.59 |
+| AR/USDT:USDT | +4.77% | $1,956,136.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +3.77% | +3.70% |
-| VVV/USDT:USDT | below_1h_threshold | +2.78% | +2.72% |
-| PONS/USDT:USDT | below_1h_threshold | +2.73% | +2.66% |
-| BR/USDT:USDT | below_1h_threshold | +2.37% | +2.30% |
-| VTHO/USDT:USDT | below_1h_threshold | +2.25% | +2.18% |
+| STEEM/USDT:USDT | below_1h_threshold | +2.18% | +2.18% |
+| REZ/USDT:USDT | below_1h_threshold | +1.18% | +1.17% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.16% | +1.15% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +0.84% | +0.83% |
+| PONS/USDT:USDT | below_1h_threshold | +0.83% | +0.83% |
 
 ## 7. 次に見るべき不足
 
