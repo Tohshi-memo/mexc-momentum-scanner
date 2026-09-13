@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T15:21:20.257687+00:00
+- generated_at: 2026-09-13T15:26:21.272081+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14446**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T15:21:10.160697+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=76999.7
+- 更新: 2026-09-13T15:26:10.509485+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=77123.4
 - Funnel: target 1068 → liquid 134 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.6 >= 65=1
+- Strict後reject: 4h RSI 73.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +262.56% | $102,668,819.30 |
-| CVC/USDT:USDT | +66.85% | $4,560,118.43 |
-| STEEM/USDT:USDT | +29.06% | $2,526,134.97 |
-| BTW/USDT:USDT | +27.80% | $6,490,549.88 |
-| ARK/USDT:USDT | +26.35% | $2,710,946.17 |
+| LSK/USDT:USDT | +262.20% | $102,962,305.56 |
+| CVC/USDT:USDT | +62.31% | $4,596,806.84 |
+| BTW/USDT:USDT | +27.54% | $6,511,877.09 |
+| STEEM/USDT:USDT | +26.80% | $2,538,256.19 |
+| ARK/USDT:USDT | +24.21% | $2,717,842.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +2.27% | +2.49% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.77% | +1.99% |
-| ABNBSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.33% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.06% | +1.29% |
-| ILV/USDT:USDT | below_1h_threshold | +0.41% | +0.64% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.07% | +3.14% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.30% | +1.36% |
+| ABNBSTOCK/USDT:USDT | below_1h_threshold | +1.10% | +1.17% |
+| ILV/USDT:USDT | below_1h_threshold | +0.73% | +0.80% |
+| ARK/USDT:USDT | below_1h_threshold | +0.53% | +0.60% |
 
 ## 7. 次に見るべき不足
 
