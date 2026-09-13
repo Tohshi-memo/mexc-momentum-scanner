@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T13:56:38.541318+00:00
+- generated_at: 2026-09-13T14:01:16.883986+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14439**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T13:56:22.644908+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=76826.4
-- Funnel: target 1068 → liquid 133 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.8 >= 65=1, 4h RSI 85.9 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-13T14:01:09.302758+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76817.0
+- Funnel: target 1068 → liquid 130 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +264.59% | $105,806,055.06 |
-| CVC/USDT:USDT | +81.71% | $2,486,671.72 |
-| STEEM/USDT:USDT | +42.70% | $2,367,666.80 |
-| ARK/USDT:USDT | +33.19% | $2,488,513.97 |
-| VTHO/USDT:USDT | +24.20% | $3,436,817.08 |
+| LSK/USDT:USDT | +263.62% | $102,890,857.13 |
+| CVC/USDT:USDT | +84.16% | $2,629,656.86 |
+| STEEM/USDT:USDT | +41.03% | $2,368,750.63 |
+| ARK/USDT:USDT | +33.44% | $2,494,061.95 |
+| BTW/USDT:USDT | +25.02% | $5,532,656.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AR/USDT:USDT | below_1h_threshold | +4.66% | +4.53% |
-| KOMA/USDT:USDT | below_1h_threshold | +2.87% | +2.74% |
-| STEEM/USDT:USDT | below_1h_threshold | +2.81% | +2.68% |
-| INJ/USDT:USDT | below_1h_threshold | +2.57% | +2.44% |
-| REZ/USDT:USDT | below_1h_threshold | +1.95% | +1.82% |
+| FLOCK/USDT:USDT | below_1h_threshold | +0.63% | +0.62% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
+| VTHO/USDT:USDT | below_1h_threshold | +0.53% | +0.53% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.48% | +0.47% |
+| STEEM/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
 
 ## 7. 次に見るべき不足
 
