@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T21:36:25.063572+00:00
+- generated_at: 2026-09-13T21:41:23.046421+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14466**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T21:36:12.058407+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=77349.9
-- Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.5 >= 65=1, 4h RSI 94.6 >= 65=1
+- 更新: 2026-09-13T21:41:12.322990+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=77365.4
+- Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +22.31% | $2,094,214.90 |
-| MAGMA/USDT:USDT | +11.88% | $1,685,823.32 |
-| LSK/USDT:USDT | +10.65% | $105,461,195.29 |
-| USELESS/USDT:USDT | +8.60% | $5,082,108.30 |
-| BTW/USDT:USDT | +8.19% | $9,133,559.74 |
+| POWER/USDT:USDT | +19.68% | $2,157,552.17 |
+| MAGMA/USDT:USDT | +11.99% | $1,691,467.26 |
+| MEMEROBINHOOD/USDT:USDT | +9.28% | $1,068,819.00 |
+| USELESS/USDT:USDT | +8.72% | $5,091,031.61 |
+| LSK/USDT:USDT | +8.57% | $105,778,677.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BTW/USDT:USDT | below_1h_threshold | +1.50% | +1.45% |
-| STEEM/USDT:USDT | below_1h_threshold | +1.20% | +1.15% |
-| RAY/USDT:USDT | below_1h_threshold | +1.19% | +1.15% |
-| VTHO/USDT:USDT | below_1h_threshold | +1.12% | +1.07% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.62% |
+| POWER/USDT:USDT | below_1h_threshold | +3.37% | +3.30% |
+| RAY/USDT:USDT | below_1h_threshold | +1.59% | +1.52% |
+| ICP/USDT:USDT | below_1h_threshold | +1.58% | +1.51% |
+| BTW/USDT:USDT | below_1h_threshold | +1.40% | +1.33% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.73% | +0.66% |
 
 ## 7. 次に見るべき不足
 
