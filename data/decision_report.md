@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T20:31:40.179249+00:00
+- generated_at: 2026-09-13T20:36:16.532876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14465**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T20:31:29.579497+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=77286.7
-- Funnel: target 1068 → liquid 139 → pre 50 → checked 49 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- 更新: 2026-09-13T20:36:06.214076+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77298.0
+- Funnel: target 1068 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MEMEROBINHOOD/USDT:USDT | +12.64% | $1,026,326.08 |
-| POWER/USDT:USDT | +12.58% | $1,554,828.21 |
-| MAGMA/USDT:USDT | +8.53% | $1,455,507.75 |
-| PONS/USDT:USDT | +8.17% | $4,994,362.93 |
-| XTZ/USDT:USDT | +7.62% | $1,072,632.68 |
+| MEMEROBINHOOD/USDT:USDT | +14.03% | $1,030,315.17 |
+| POWER/USDT:USDT | +11.73% | $1,575,587.85 |
+| MAGMA/USDT:USDT | +9.31% | $1,458,751.44 |
+| PONS/USDT:USDT | +8.21% | $5,003,356.03 |
+| BR/USDT:USDT | +7.65% | $1,689,676.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MAGMA/USDT:USDT | below_1h_threshold | +4.74% | +4.70% |
-| XTZ/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
-| POWR/USDT:USDT | below_1h_threshold | +1.81% | +1.77% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.36% | +1.32% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.34% | +1.30% |
+| MAGMA/USDT:USDT | below_1h_threshold | +4.74% | +4.68% |
+| ALGO/USDT:USDT | below_1h_threshold | +1.57% | +1.51% |
+| XTZ/USDT:USDT | below_1h_threshold | +1.25% | +1.20% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.24% | +1.18% |
+| VTHO/USDT:USDT | below_1h_threshold | +1.05% | +0.99% |
 
 ## 7. 次に見るべき不足
 
