@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-13T21:21:24.143719+00:00
+- generated_at: 2026-09-13T21:26:31.186376+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14465**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-13T21:21:13.387037+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=77368.0
+- 更新: 2026-09-13T21:26:20.603939+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=77390.2
 - Funnel: target 1068 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 94.7 >= 65=1
+- Strict後reject: 4h RSI 94.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +21.70% | $1,841,023.08 |
-| MAGMA/USDT:USDT | +11.95% | $1,671,570.14 |
-| USELESS/USDT:USDT | +11.02% | $5,000,414.86 |
-| MEMEROBINHOOD/USDT:USDT | +9.88% | $1,031,870.49 |
-| PONS/USDT:USDT | +7.96% | $4,865,068.79 |
+| POWER/USDT:USDT | +22.22% | $1,936,056.23 |
+| MAGMA/USDT:USDT | +11.91% | $1,673,564.06 |
+| USELESS/USDT:USDT | +10.43% | $5,007,626.71 |
+| BTW/USDT:USDT | +9.13% | $8,769,065.41 |
+| PONS/USDT:USDT | +8.74% | $4,879,552.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.42% | +2.35% |
-| RAY/USDT:USDT | below_1h_threshold | +1.05% | +0.98% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.69% | +0.62% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.60% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +0.66% | +0.59% |
+| LSK/USDT:USDT | below_1h_threshold | +3.61% | +3.51% |
+| BTW/USDT:USDT | below_1h_threshold | +2.22% | +2.12% |
+| RAY/USDT:USDT | below_1h_threshold | +1.23% | +1.13% |
+| ILV/USDT:USDT | below_1h_threshold | +0.77% | +0.67% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.67% | +0.57% |
 
 ## 7. 次に見るべき不足
 
