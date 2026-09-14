@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T17:01:23.809654+00:00
+- generated_at: 2026-09-14T17:06:25.608220+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14527**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T17:01:13.933226+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=78720.9
-- Funnel: target 1073 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-14T17:06:15.257618+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=78759.9
+- Funnel: target 1073 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +7.91% | $2,431,616.97 |
-| LSK/USDT:USDT | +7.62% | $59,545,680.86 |
-| BEAT/USDT:USDT | +4.89% | $3,401,475.62 |
-| LONGXIA/USDT:USDT | +4.66% | $1,174,243.19 |
-| OP/USDT:USDT | +3.80% | $3,844,195.34 |
+| CATE/USDT:USDT | +6.41% | $2,437,939.25 |
+| LSK/USDT:USDT | +4.97% | $59,698,023.81 |
+| OP/USDT:USDT | +4.14% | $3,973,460.51 |
+| BEAT/USDT:USDT | +3.79% | $3,440,400.53 |
+| KOMA/USDT:USDT | +3.74% | $1,163,753.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +2.68% | +2.69% |
-| KORU/USDT:USDT | below_1h_threshold | +1.36% | +1.37% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
-| FCXSTOCK/USDT:USDT | below_1h_threshold | +1.04% | +1.05% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.68% | +3.64% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.68% | +2.64% |
+| ARK/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
+| KORU/USDT:USDT | below_1h_threshold | +1.36% | +1.32% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.25% | +1.21% |
 
 ## 7. 次に見るべき不足
 
