@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T11:21:23.789474+00:00
+- generated_at: 2026-09-14T11:26:22.811983+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14514**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T11:21:13.314189+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77795.0
+- 更新: 2026-09-14T11:26:12.419856+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77856.6
 - Funnel: target 1068 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +61.36% | $15,679,865.65 |
-| AIN/USDT:USDT | +50.21% | $3,094,221.78 |
-| CATE/USDT:USDT | +47.76% | $1,976,061.73 |
-| T/USDT:USDT | +24.06% | $1,570,794.04 |
-| MTL/USDT:USDT | +21.60% | $1,253,335.28 |
+| BR/USDT:USDT | +62.64% | $15,819,239.32 |
+| AIN/USDT:USDT | +52.02% | $3,117,747.63 |
+| CATE/USDT:USDT | +48.81% | $1,979,957.04 |
+| T/USDT:USDT | +23.79% | $1,629,174.05 |
+| MTL/USDT:USDT | +21.56% | $1,257,102.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +3.45% | +3.54% |
-| BR/USDT:USDT | below_1h_threshold | +2.92% | +3.01% |
-| XPL/USDT:USDT | below_1h_threshold | +1.97% | +2.06% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +1.63% | +1.72% |
-| XLM/USDT:USDT | below_1h_threshold | +1.27% | +1.36% |
+| CATE/USDT:USDT | below_1h_threshold | +4.18% | +4.19% |
+| BR/USDT:USDT | below_1h_threshold | +3.72% | +3.73% |
+| XPL/USDT:USDT | below_1h_threshold | +1.76% | +1.77% |
+| XLM/USDT:USDT | below_1h_threshold | +1.64% | +1.65% |
+| PUNDIX/USDT:USDT | below_1h_threshold | +1.39% | +1.40% |
 
 ## 7. 次に見るべき不足
 
