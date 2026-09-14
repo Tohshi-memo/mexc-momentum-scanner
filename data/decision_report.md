@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T10:36:13.441361+00:00
+- generated_at: 2026-09-14T10:41:18.914876+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14511**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T10:36:04.515171+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.27% price=77902.0
-- Funnel: target 1068 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-14T10:41:08.536051+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=77894.8
+- Funnel: target 1068 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +49.53% | $13,439,746.77 |
-| AIN/USDT:USDT | +48.25% | $2,887,429.14 |
-| CATE/USDT:USDT | +45.82% | $1,950,992.63 |
-| MTL/USDT:USDT | +19.38% | $1,302,910.25 |
-| MAGMA/USDT:USDT | +12.49% | $1,836,689.20 |
+| BR/USDT:USDT | +52.96% | $13,788,561.26 |
+| AIN/USDT:USDT | +47.75% | $2,905,758.38 |
+| CATE/USDT:USDT | +44.95% | $1,962,477.94 |
+| KOMA/USDT:USDT | +26.61% | $1,004,843.73 |
+| MTL/USDT:USDT | +20.21% | $1,304,127.03 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.43% | +3.69% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.94% | +3.21% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.84% | +2.11% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.72% | +1.99% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.62% | +1.88% |
+| UAI/USDT:USDT | below_1h_threshold | +3.47% | +3.74% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.51% | +2.78% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.77% | +2.05% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.77% | +2.04% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.65% |
 
 ## 7. 次に見るべき不足
 
