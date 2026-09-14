@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T16:16:30.651033+00:00
+- generated_at: 2026-09-14T16:21:26.917349+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14525**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T16:16:20.089348+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78523.4
+- 更新: 2026-09-14T16:21:16.268774+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.23% price=78717.5
 - Funnel: target 1073 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 69.7 >= 65=1
+- Strict後reject: 4h RSI 69.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +7.21% | $2,358,706.23 |
-| AIN/USDT:USDT | +4.98% | $4,506,065.67 |
-| KOMA/USDT:USDT | +2.78% | $1,154,414.09 |
-| 4/USDT:USDT | +2.37% | $1,387,319.78 |
-| NEAR/USDT:USDT | +1.25% | $31,422,592.30 |
+| CATE/USDT:USDT | +7.47% | $2,375,558.68 |
+| KOMA/USDT:USDT | +2.76% | $1,157,376.76 |
+| LSK/USDT:USDT | +2.46% | $63,654,721.88 |
+| LIT/USDT:USDT | +1.99% | $6,148,944.07 |
+| 4/USDT:USDT | +1.96% | $1,395,690.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.93% | +4.95% |
-| KORU/USDT:USDT | below_1h_threshold | +3.51% | +3.53% |
-| KOMA/USDT:USDT | below_1h_threshold | +2.79% | +2.81% |
-| LSK/USDT:USDT | below_1h_threshold | +2.74% | +2.76% |
-| 4/USDT:USDT | below_1h_threshold | +2.38% | +2.40% |
+| KORU/USDT:USDT | below_1h_threshold | +3.51% | +3.28% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.67% | +2.45% |
+| LSK/USDT:USDT | below_1h_threshold | +2.19% | +1.96% |
+| LIT/USDT:USDT | below_1h_threshold | +2.00% | +1.77% |
+| 4/USDT:USDT | below_1h_threshold | +1.97% | +1.74% |
 
 ## 7. 次に見るべき不足
 
