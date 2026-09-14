@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T01:11:18.810870+00:00
+- generated_at: 2026-09-14T01:16:26.641464+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14471**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.50** / 初期 $100.00 (+26.50%)
-- 確定: 2858件 (Win 850 / Loss 1106 / Flat 902) / pending 1件 / skip 3081件
+- 確定: 2858件 (Win 850 / Loss 1106 / Flat 902) / pending 3件 / skip 3081件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000239 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUNDIX/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $126.50
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T01:11:10.010948+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=76853.5
-- Funnel: target 1068 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-14T01:16:13.191380+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=76704.4
+- Funnel: target 1068 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +17.75% | $3,928,802.45 |
-| BR/USDT:USDT | +7.41% | $2,293,972.68 |
-| BTW/USDT:USDT | +6.00% | $10,298,727.01 |
-| MAGMA/USDT:USDT | +5.38% | $1,802,472.26 |
-| PYTH/USDT:USDT | +4.07% | $1,282,000.98 |
+| CATE/USDT:USDT | +50.77% | $1,025,699.15 |
+| POWER/USDT:USDT | +18.79% | $3,947,369.79 |
+| BR/USDT:USDT | +7.22% | $2,294,584.94 |
+| MAGMA/USDT:USDT | +4.94% | $1,804,256.92 |
+| SOXS/USDT:USDT | +4.40% | $4,799,390.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.84% | +2.73% |
-| POWER/USDT:USDT | below_1h_threshold | +2.78% | +2.67% |
-| UAI/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
-| POWR/USDT:USDT | below_1h_threshold | +1.71% | +1.61% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.18% |
+| POWER/USDT:USDT | below_1h_threshold | +3.69% | +3.77% |
+| POWR/USDT:USDT | below_1h_threshold | +2.35% | +2.44% |
+| PONS/USDT:USDT | below_1h_threshold | +2.31% | +2.40% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.37% |
+| SOXS/USDT:USDT | below_1h_threshold | +1.07% | +1.16% |
 
 ## 7. 次に見るべき不足
 
