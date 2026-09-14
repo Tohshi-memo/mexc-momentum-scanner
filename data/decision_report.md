@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T21:06:17.439363+00:00
+- generated_at: 2026-09-14T21:11:23.992052+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14537**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T21:06:10.041574+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=78927.9
+- 更新: 2026-09-14T21:11:13.445617+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=78887.9
 - Funnel: target 1073 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +64.39% | $1,062,893.21 |
-| CNPY/USDT:USDT | +26.42% | $1,512,953.43 |
-| AIN/USDT:USDT | +15.74% | $5,590,041.46 |
-| POWER/USDT:USDT | +7.61% | $7,460,488.25 |
-| PONS/USDT:USDT | +6.43% | $6,423,114.64 |
+| SHROOM/USDT:USDT | +64.96% | $1,066,789.46 |
+| CNPY/USDT:USDT | +25.48% | $1,540,648.99 |
+| AIN/USDT:USDT | +14.95% | $5,602,272.59 |
+| POWER/USDT:USDT | +8.77% | $7,474,350.04 |
+| NIULAI/USDT:USDT | +6.49% | $2,563,970.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.02% | +1.20% |
-| AIN/USDT:USDT | below_1h_threshold | +0.49% | +0.66% |
-| 4/USDT:USDT | below_1h_threshold | +0.40% | +0.58% |
-| KOMA/USDT:USDT | below_1h_threshold | +0.32% | +0.49% |
-| PENDLE/USDT:USDT | below_1h_threshold | +0.20% | +0.38% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.02% | +1.25% |
+| KOMA/USDT:USDT | below_1h_threshold | +0.60% | +0.82% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.60% |
+| 4/USDT:USDT | below_1h_threshold | -0.13% | +0.09% |
+| AIN/USDT:USDT | below_1h_threshold | -0.21% | +0.02% |
 
 ## 7. 次に見るべき不足
 
