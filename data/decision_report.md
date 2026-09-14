@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-14T11:41:27.297106+00:00
+- generated_at: 2026-09-14T11:46:23.861899+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14514**
+- closed shadow trades: **14515**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +4.32% / filled 20/20。**
-- 全期間 MARKET基準: n=14514, expectancy=-0.00%
+- 全期間 MARKET基準: n=14515, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+4.32%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_1PCT | 16/20 | 80.0% | +3.69% | **+2.95%** |
 | LIMIT_2PCT | 13/20 | 65.0% | +3.25% | **+2.11%** |
 | LIMIT_3PCT | 11/20 | 55.0% | +3.65% | **+2.01%** |
-| LIMIT_ATR | 10/20 | 50.0% | +3.19% | **+1.59%** |
+| LIMIT_ATR | 10/20 | 50.0% | +3.24% | **+1.62%** |
 
 ### シャドウ上位 LONG
 
@@ -47,7 +47,7 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,052.44** / 初期 $100.00 (+952.44%)
-- 確定: 5445件 (Win 1637 / Loss 1770 / Flat 2038) / skip 5630件
+- 確定: 5445件 (Win 1637 / Loss 1770 / Flat 2038) / skip 5631件
 - 成長率目線: 平均log +0.000432 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
 - 最新: CATE/USDT:USDT `LIMIT_4PCT_LONG` SL_HIT account -0.50% 残高後 $1,052.44
@@ -55,47 +55,47 @@
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$227.62** / 初期 $100.00 (+127.62%)
-- 確定: 2991件 (Win 830 / Loss 716 / Flat 1445) / skip 4934件
+- 確定: 2991件 (Win 830 / Loss 716 / Flat 1445) / skip 4935件
 - 成長率目線: 平均log +0.000275 / 幾何平均 +0.028% per trade / maxDD +3.96%
-- 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_5PCT` (selected_by_robust_growth_score) / robust_score -0.0081 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $227.62
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$125.76** / 初期 $100.00 (+25.76%)
-- 確定: 2889件 (Win 859 / Loss 1119 / Flat 911) / pending 1件 / skip 3094件
+- 確定: 2889件 (Win 859 / Loss 1119 / Flat 911) / pending 1件 / skip 3095件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000379 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000371 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: B/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $125.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T11:41:16.602541+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=77791.5
+- 更新: 2026-09-14T11:46:09.611825+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77793.0
 - Funnel: target 1068 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1
+- Strict後reject: 4h RSI 78.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +60.90% | $16,633,489.33 |
-| CATE/USDT:USDT | +53.89% | $2,022,844.66 |
-| AIN/USDT:USDT | +49.51% | $3,160,785.18 |
-| KOMA/USDT:USDT | +27.38% | $1,016,108.98 |
-| T/USDT:USDT | +22.72% | $1,828,839.32 |
+| BR/USDT:USDT | +61.60% | $16,751,613.95 |
+| CATE/USDT:USDT | +58.76% | $2,070,055.57 |
+| AIN/USDT:USDT | +48.68% | $3,182,497.80 |
+| KOMA/USDT:USDT | +27.66% | $1,020,231.33 |
+| T/USDT:USDT | +24.18% | $1,878,761.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +3.00% | +3.09% |
-| POWER/USDT:USDT | below_1h_threshold | +1.83% | +1.92% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.62% |
-| XPL/USDT:USDT | below_1h_threshold | +1.44% | +1.53% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
+| BR/USDT:USDT | below_1h_threshold | +3.16% | +3.25% |
+| XPL/USDT:USDT | below_1h_threshold | +1.57% | +1.67% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.61% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.37% |
+| POWER/USDT:USDT | below_1h_threshold | +1.14% | +1.23% |
 
 ## 7. 次に見るべき不足
 
