@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T02:01:23.343126+00:00
+- generated_at: 2026-09-14T02:06:20.440928+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14479**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T02:01:11.137346+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77060.1
+- 更新: 2026-09-14T02:06:09.922763+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=77008.7
 - Funnel: target 1068 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +51.25% | $1,168,951.01 |
-| POWER/USDT:USDT | +32.39% | $4,429,418.62 |
-| MAGMA/USDT:USDT | +7.48% | $1,805,543.93 |
-| BR/USDT:USDT | +6.85% | $2,324,424.17 |
-| ARK/USDT:USDT | +5.76% | $3,098,342.00 |
+| CATE/USDT:USDT | +46.20% | $1,190,189.00 |
+| POWER/USDT:USDT | +32.74% | $4,478,138.06 |
+| BR/USDT:USDT | +7.67% | $2,325,429.88 |
+| MAGMA/USDT:USDT | +7.18% | $1,807,038.46 |
+| ARK/USDT:USDT | +6.17% | $3,100,609.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +2.04% |
-| MUU/USDT:USDT | below_1h_threshold | +1.18% | +1.21% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.90% | +0.94% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.65% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.64% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +3.80% | +3.91% |
+| 4/USDT:USDT | below_1h_threshold | +2.77% | +2.88% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +2.00% | +2.10% |
+| STEEM/USDT:USDT | below_1h_threshold | +1.40% | +1.50% |
+| MUU/USDT:USDT | below_1h_threshold | +1.18% | +1.28% |
 
 ## 7. 次に見るべき不足
 
