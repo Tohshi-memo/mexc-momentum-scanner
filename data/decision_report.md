@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T04:06:16.822076+00:00
+- generated_at: 2026-09-14T04:11:25.885659+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14485**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T04:06:09.738409+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=77529.8
+- 更新: 2026-09-14T04:11:15.349519+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=77560.0
 - Funnel: target 1068 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +46.99% | $1,482,725.08 |
-| MTL/USDT:USDT | +31.45% | $1,220,453.51 |
-| BR/USDT:USDT | +28.00% | $3,188,808.06 |
-| LIT/USDT:USDT | +13.51% | $3,400,810.44 |
-| POWER/USDT:USDT | +11.44% | $5,351,515.92 |
+| CATE/USDT:USDT | +45.14% | $1,489,190.68 |
+| MTL/USDT:USDT | +33.41% | $1,229,651.79 |
+| BR/USDT:USDT | +26.43% | $3,259,751.74 |
+| LIT/USDT:USDT | +13.94% | $3,439,136.41 |
+| POWER/USDT:USDT | +12.37% | $5,381,189.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.33% |
-| CATE/USDT:USDT | below_1h_threshold | +0.92% | +0.95% |
-| UAI/USDT:USDT | below_1h_threshold | +0.83% | +0.87% |
-| SOXS/USDT:USDT | below_1h_threshold | +0.78% | +0.82% |
-| VET/USDT:USDT | below_1h_threshold | +0.78% | +0.81% |
+| 4/USDT:USDT | below_1h_threshold | +2.51% | +2.51% |
+| MTL/USDT:USDT | below_1h_threshold | +1.97% | +1.97% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.29% |
+| DASH/USDT:USDT | below_1h_threshold | +1.01% | +1.01% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.95% | +0.95% |
 
 ## 7. 次に見るべき不足
 
