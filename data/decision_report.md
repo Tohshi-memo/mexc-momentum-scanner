@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T20:56:24.724734+00:00
+- generated_at: 2026-09-14T21:01:25.974113+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14537**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T20:56:14.191720+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=79196.0
-- Funnel: target 1073 → liquid 163 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-14T21:01:18.670121+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=79054.8
+- Funnel: target 1073 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +67.80% | $1,056,449.93 |
-| CNPY/USDT:USDT | +22.76% | $1,513,309.94 |
-| AIN/USDT:USDT | +14.42% | $5,577,192.66 |
-| POWER/USDT:USDT | +11.56% | $7,716,115.43 |
-| NIULAI/USDT:USDT | +7.55% | $2,666,934.37 |
+| SHROOM/USDT:USDT | +65.53% | $1,057,352.19 |
+| CNPY/USDT:USDT | +28.42% | $1,505,893.02 |
+| AIN/USDT:USDT | +15.23% | $5,579,689.68 |
+| POWER/USDT:USDT | +10.98% | $7,435,574.07 |
+| PONS/USDT:USDT | +8.21% | $6,397,730.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.66% | +3.34% |
-| VVV/USDT:USDT | below_1h_threshold | +3.39% | +3.07% |
-| RAY/USDT:USDT | below_1h_threshold | +3.06% | +2.74% |
-| POWER/USDT:USDT | below_1h_threshold | +2.93% | +2.61% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.90% | +2.58% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.94% | +1.96% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.02% | +1.04% |
+| LAB/USDT:USDT | below_1h_threshold | +0.68% | +0.69% |
+| POWER/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
+| SHROOM/USDT:USDT | below_1h_threshold | +0.23% | +0.24% |
 
 ## 7. 次に見るべき不足
 
