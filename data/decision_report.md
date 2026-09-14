@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T01:46:30.634537+00:00
+- generated_at: 2026-09-14T01:51:33.630925+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14478**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T01:46:14.104172+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76756.0
+- 更新: 2026-09-14T01:51:17.991962+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=76833.1
 - Funnel: target 1068 → liquid 146 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.7 >= 65=1, 4h RSI 76.1 >= 65=1
+- Strict後reject: 4h RSI 95.6 >= 65=1, 4h RSI 76.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +47.24% | $1,180,009.96 |
-| POWER/USDT:USDT | +30.62% | $4,294,791.91 |
-| BR/USDT:USDT | +7.80% | $2,332,246.06 |
-| MAGMA/USDT:USDT | +5.66% | $1,812,091.09 |
-| SOXS/USDT:USDT | +4.12% | $4,866,831.08 |
+| CATE/USDT:USDT | +49.23% | $1,202,071.00 |
+| POWER/USDT:USDT | +30.64% | $4,374,412.28 |
+| BR/USDT:USDT | +7.42% | $2,333,932.31 |
+| MAGMA/USDT:USDT | +6.37% | $1,812,560.07 |
+| ARK/USDT:USDT | +4.38% | $3,158,547.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWR/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
-| UAI/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.36% | +1.38% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
+| UAI/USDT:USDT | below_1h_threshold | +2.59% | +2.52% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.11% | +2.03% |
+| POWR/USDT:USDT | below_1h_threshold | +1.88% | +1.80% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.63% | +1.55% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.20% |
 
 ## 7. 次に見るべき不足
 
