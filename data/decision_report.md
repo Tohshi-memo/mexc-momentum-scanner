@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T18:06:16.627203+00:00
+- generated_at: 2026-09-14T18:11:25.366951+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14531**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T18:06:08.421293+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=78870.4
+- 更新: 2026-09-14T18:11:15.422429+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=78894.4
 - Funnel: target 1073 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +15.42% | $5,007,323.05 |
-| NIULAI/USDT:USDT | +11.42% | $2,635,415.99 |
-| NEAR/USDT:USDT | +8.05% | $34,492,918.71 |
-| CNPY/USDT:USDT | +7.58% | $1,004,806.42 |
-| PONS/USDT:USDT | +6.89% | $6,428,514.38 |
+| AIN/USDT:USDT | +13.08% | $5,052,803.20 |
+| NIULAI/USDT:USDT | +11.40% | $2,638,137.67 |
+| CNPY/USDT:USDT | +8.07% | $1,005,692.76 |
+| NEAR/USDT:USDT | +7.39% | $34,967,682.72 |
+| PONS/USDT:USDT | +7.21% | $6,436,361.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +3.12% | +3.17% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.36% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +2.02% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.57% |
-| 4/USDT:USDT | below_1h_threshold | +1.41% | +1.46% |
+| SNXX/USDT:USDT | below_1h_threshold | +3.12% | +3.14% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.31% | +2.33% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.98% | +1.99% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.83% | +1.84% |
+| 4/USDT:USDT | below_1h_threshold | +1.55% | +1.57% |
 
 ## 7. 次に見るべき不足
 
