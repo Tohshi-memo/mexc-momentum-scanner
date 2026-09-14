@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T18:51:25.799407+00:00
+- generated_at: 2026-09-14T18:56:31.838560+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14532**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T18:51:13.860449+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.38% price=79208.5
-- Funnel: target 1073 → liquid 164 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-14T18:56:21.425626+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.33% price=79172.1
+- Funnel: target 1073 → liquid 165 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +14.52% | $5,259,833.32 |
-| USELESS/USDT:USDT | +9.14% | $6,766,220.78 |
-| NEAR/USDT:USDT | +7.05% | $36,655,746.05 |
-| NIULAI/USDT:USDT | +6.57% | $2,755,935.23 |
-| OP/USDT:USDT | +6.56% | $5,993,309.15 |
+| MEMEROBINHOOD/USDT:USDT | +17.89% | $1,002,113.10 |
+| AIN/USDT:USDT | +13.43% | $5,272,941.91 |
+| USELESS/USDT:USDT | +8.54% | $6,807,569.54 |
+| NEAR/USDT:USDT | +7.05% | $36,812,320.93 |
+| NIULAI/USDT:USDT | +6.87% | $2,762,081.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +4.41% | +4.03% |
-| ZEC/USDT:USDT | below_1h_threshold | +3.71% | +3.33% |
-| MAGMA/USDT:USDT | below_1h_threshold | +3.46% | +3.08% |
-| SNXX/USDT:USDT | below_1h_threshold | +3.12% | +2.74% |
-| XRP/USDT:USDT | below_1h_threshold | +2.87% | +2.49% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.46% | +4.13% |
+| LSK/USDT:USDT | below_1h_threshold | +4.11% | +3.77% |
+| MAGMA/USDT:USDT | below_1h_threshold | +3.73% | +3.40% |
+| XRP/USDT:USDT | below_1h_threshold | +3.17% | +2.83% |
+| ATOM/USDT:USDT | below_1h_threshold | +3.12% | +2.79% |
 
 ## 7. 次に見るべき不足
 
