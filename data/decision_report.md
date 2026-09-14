@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T16:01:28.413926+00:00
+- generated_at: 2026-09-14T16:06:25.485438+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14525**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T16:01:16.163567+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=78525.1
+- 更新: 2026-09-14T16:06:14.886145+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=78440.0
 - Funnel: target 1073 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARK/USDT:USDT | +2.03% | $3,232,285.16 |
-| MAGMA/USDT:USDT | +0.63% | $1,816,361.92 |
-| XLM/USDT:USDT | +0.57% | $11,282,140.38 |
-| VVV/USDT:USDT | +0.44% | $2,451,211.81 |
-| BR/USDT:USDT | +0.33% | $32,720,250.18 |
+| CATE/USDT:USDT | +2.10% | $2,334,415.53 |
+| PONS/USDT:USDT | +1.06% | $6,070,838.51 |
+| AR/USDT:USDT | +0.95% | $3,728,922.16 |
+| XLM/USDT:USDT | +0.78% | $11,466,836.07 |
+| FILECOIN/USDT:USDT | +0.68% | $45,067,973.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.25% | +1.27% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.89% |
-| AAPLSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.64% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.58% | +0.60% |
+| CATE/USDT:USDT | below_1h_threshold | +2.11% | +2.23% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.59% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.25% | +1.38% |
+| PONS/USDT:USDT | below_1h_threshold | +1.01% | +1.14% |
+| EWY/USDT:USDT | below_1h_threshold | +0.99% | +1.12% |
 
 ## 7. 次に見るべき不足
 
