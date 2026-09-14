@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T11:51:17.110860+00:00
+- generated_at: 2026-09-14T11:56:15.536540+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14515**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T11:51:06.399290+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=77727.3
+- 更新: 2026-09-14T11:56:06.961739+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.24% price=77680.5
 - Funnel: target 1068 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 78.2 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +60.24% | $16,928,669.53 |
-| CATE/USDT:USDT | +54.05% | $2,107,306.05 |
-| AIN/USDT:USDT | +47.71% | $3,207,683.76 |
-| T/USDT:USDT | +25.32% | $1,894,717.43 |
-| KOMA/USDT:USDT | +24.98% | $1,023,774.69 |
+| BR/USDT:USDT | +61.53% | $17,101,342.45 |
+| CATE/USDT:USDT | +54.22% | $2,119,347.22 |
+| AIN/USDT:USDT | +47.40% | $3,219,220.81 |
+| KOMA/USDT:USDT | +24.98% | $1,026,534.91 |
+| T/USDT:USDT | +23.79% | $1,923,755.59 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +2.45% | +2.62% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +1.59% | +1.76% |
-| XPL/USDT:USDT | below_1h_threshold | +1.57% | +1.75% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.70% |
-| POWER/USDT:USDT | below_1h_threshold | +1.40% | +1.57% |
+| BR/USDT:USDT | below_1h_threshold | +3.20% | +3.44% |
+| POWER/USDT:USDT | below_1h_threshold | +1.57% | +1.80% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.76% |
+| XPL/USDT:USDT | below_1h_threshold | +1.36% | +1.60% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.51% |
 
 ## 7. 次に見るべき不足
 
