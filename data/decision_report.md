@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T06:46:25.590143+00:00
+- generated_at: 2026-09-14T06:51:22.639140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14497**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T06:46:14.272543+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=77713.8
-- Funnel: target 1068 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.4 >= 65=1
+- 更新: 2026-09-14T06:51:12.385575+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=77618.6
+- Funnel: target 1068 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 68.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +47.79% | $1,179,167.83 |
-| CATE/USDT:USDT | +45.80% | $1,698,973.24 |
-| MTL/USDT:USDT | +35.23% | $1,455,852.63 |
-| ARK/USDT:USDT | +32.92% | $4,393,725.38 |
-| BR/USDT:USDT | +32.59% | $4,615,096.18 |
+| AIN/USDT:USDT | +47.53% | $1,230,141.31 |
+| CATE/USDT:USDT | +42.72% | $1,705,826.72 |
+| ARK/USDT:USDT | +34.70% | $4,436,098.43 |
+| BR/USDT:USDT | +33.84% | $4,651,228.83 |
+| MTL/USDT:USDT | +33.70% | $1,462,279.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +3.75% | +3.57% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.98% | +2.81% |
-| BR/USDT:USDT | below_1h_threshold | +2.40% | +2.22% |
-| CATE/USDT:USDT | below_1h_threshold | +2.09% | +1.91% |
-| AIN/USDT:USDT | below_1h_threshold | +1.95% | +1.77% |
+| BR/USDT:USDT | below_1h_threshold | +3.97% | +3.91% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.78% | +3.72% |
+| PUNDIX/USDT:USDT | below_1h_threshold | +3.74% | +3.68% |
+| STEEM/USDT:USDT | below_1h_threshold | +1.76% | +1.70% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.62% | +1.56% |
 
 ## 7. 次に見るべき不足
 
