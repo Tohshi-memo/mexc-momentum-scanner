@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T05:26:16.959099+00:00
+- generated_at: 2026-09-14T05:31:18.442722+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14489**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T05:26:08.635908+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=77480.7
+- 更新: 2026-09-14T05:31:10.071702+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=77496.4
 - Funnel: target 1068 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MTL/USDT:USDT | +41.16% | $1,366,415.41 |
-| CATE/USDT:USDT | +40.99% | $1,613,272.18 |
-| BR/USDT:USDT | +26.28% | $4,101,319.44 |
-| ARK/USDT:USDT | +21.67% | $4,166,013.31 |
-| BTW/USDT:USDT | +14.74% | $11,719,553.55 |
+| CATE/USDT:USDT | +40.39% | $1,625,167.75 |
+| MTL/USDT:USDT | +40.07% | $1,373,864.79 |
+| BR/USDT:USDT | +27.19% | $4,136,564.85 |
+| ARK/USDT:USDT | +20.71% | $4,176,824.08 |
+| BTW/USDT:USDT | +14.14% | $11,745,866.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARK/USDT:USDT | below_1h_threshold | +4.92% | +5.13% |
-| 4/USDT:USDT | below_1h_threshold | +2.82% | +3.03% |
-| POWER/USDT:USDT | below_1h_threshold | +1.94% | +2.15% |
-| STEEM/USDT:USDT | below_1h_threshold | +1.70% | +1.91% |
-| BTW/USDT:USDT | below_1h_threshold | +1.49% | +1.70% |
+| ARK/USDT:USDT | below_1h_threshold | +4.38% | +4.57% |
+| 4/USDT:USDT | below_1h_threshold | +2.72% | +2.91% |
+| POWER/USDT:USDT | below_1h_threshold | +2.26% | +2.45% |
+| STEEM/USDT:USDT | below_1h_threshold | +1.72% | +1.91% |
+| PUNDIX/USDT:USDT | below_1h_threshold | +1.67% | +1.86% |
 
 ## 7. 次に見るべき不足
 
