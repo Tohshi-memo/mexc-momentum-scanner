@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T23:46:27.799142+00:00
+- generated_at: 2026-09-14T23:51:19.277147+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14540**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T23:46:17.252903+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.32% price=78264.4
+- 更新: 2026-09-14T23:51:11.459178+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=78229.0
 - Funnel: target 1073 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +39.58% | $1,180,656.39 |
-| AIN/USDT:USDT | +19.95% | $6,029,238.83 |
-| POWER/USDT:USDT | +19.09% | $6,927,375.86 |
-| CNPY/USDT:USDT | +18.72% | $1,675,722.61 |
-| CYS/USDT:USDT | +17.23% | $1,274,892.80 |
+| SHROOM/USDT:USDT | +36.36% | $1,182,461.91 |
+| AIN/USDT:USDT | +19.23% | $6,046,902.42 |
+| CNPY/USDT:USDT | +18.61% | $1,680,526.30 |
+| POWER/USDT:USDT | +18.44% | $6,943,310.86 |
+| CYS/USDT:USDT | +18.24% | $1,280,908.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +2.87% | +3.19% |
-| VVV/USDT:USDT | below_1h_threshold | +2.57% | +2.89% |
-| AIN/USDT:USDT | below_1h_threshold | +1.63% | +1.95% |
-| CAP/USDT:USDT | below_1h_threshold | +1.29% | +1.61% |
-| PI/USDT:USDT | below_1h_threshold | +0.83% | +1.15% |
+| VVV/USDT:USDT | below_1h_threshold | +2.82% | +3.19% |
+| POWER/USDT:USDT | below_1h_threshold | +2.44% | +2.81% |
+| AIN/USDT:USDT | below_1h_threshold | +1.63% | +2.00% |
+| CAP/USDT:USDT | below_1h_threshold | +1.41% | +1.77% |
+| 4/USDT:USDT | below_1h_threshold | +1.26% | +1.63% |
 
 ## 7. 次に見るべき不足
 
