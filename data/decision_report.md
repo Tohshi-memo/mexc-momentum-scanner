@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T02:51:41.453448+00:00
+- generated_at: 2026-09-14T02:56:45.098597+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14481**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$126.37** / 初期 $100.00 (+26.37%)
-- 確定: 2866件 (Win 852 / Loss 1110 / Flat 904) / pending 5件 / skip 3084件
+- 確定: 2866件 (Win 852 / Loss 1110 / Flat 904) / pending 6件 / skip 3084件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000117 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ARK/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $126.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T02:51:22.341207+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.57% price=77528.1
-- Funnel: target 1068 → liquid 146 → pre 50 → checked 50 → surge 5 → strict 3
-- Surge前reject: below_1h_threshold=43, below_relative_strength=2, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 80.4 >= 65=1
+- 更新: 2026-09-14T02:56:24.150262+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.67% price=77604.8
+- Funnel: target 1068 → liquid 146 → pre 50 → checked 50 → surge 6 → strict 4
+- Surge前reject: below_1h_threshold=42, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.8 >= 65=1, 4h RSI 78.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| MTL/USDT:USDT | +49.12% | $1,084,430.21 |
-| CATE/USDT:USDT | +47.79% | $1,392,581.40 |
-| POWER/USDT:USDT | +25.75% | $4,923,526.22 |
-| BR/USDT:USDT | +12.55% | $2,523,247.76 |
-| ARK/USDT:USDT | +11.65% | $3,136,637.09 |
+| MTL/USDT:USDT | +48.98% | $1,099,252.34 |
+| CATE/USDT:USDT | +46.66% | $1,400,310.93 |
+| POWER/USDT:USDT | +27.17% | $4,942,248.67 |
+| ARK/USDT:USDT | +13.92% | $3,154,168.92 |
+| BR/USDT:USDT | +12.56% | $2,527,297.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_relative_strength | +5.55% | +4.99% |
-| LIT/USDT:USDT | below_relative_strength | +5.52% | +4.95% |
-| PENDLE/USDT:USDT | below_1h_threshold | +3.64% | +3.07% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +3.00% | +2.43% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.98% | +2.42% |
+| BR/USDT:USDT | below_relative_strength | +5.56% | +4.89% |
+| LIT/USDT:USDT | below_relative_strength | +5.11% | +4.44% |
+| RIVER/USDT:USDT | below_1h_threshold | +3.77% | +3.11% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.45% | +2.78% |
+| UAI/USDT:USDT | below_1h_threshold | +3.21% | +2.54% |
 
 ## 7. 次に見るべき不足
 
