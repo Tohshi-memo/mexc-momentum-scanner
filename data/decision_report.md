@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T14:11:21.420125+00:00
+- generated_at: 2026-09-14T14:16:27.023335+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14522**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$125.54** / 初期 $100.00 (+25.54%)
-- 確定: 2890件 (Win 859 / Loss 1120 / Flat 911) / pending 0件 / skip 3101件
+- 確定: 2890件 (Win 859 / Loss 1120 / Flat 911) / pending 0件 / skip 3102件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000314 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUNDIX/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $125.54
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T14:11:11.898754+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.36% price=78421.0
-- Funnel: target 1073 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-14T14:16:14.127937+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=78495.0
+- Funnel: target 1073 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +79.19% | $26,726,553.86 |
-| AIN/USDT:USDT | +53.02% | $3,873,403.70 |
-| CAP/USDT:USDT | +50.47% | $1,463,597.77 |
-| CATE/USDT:USDT | +50.38% | $2,255,478.62 |
-| T/USDT:USDT | +21.87% | $3,465,682.73 |
+| BR/USDT:USDT | +80.16% | $27,091,771.47 |
+| CAP/USDT:USDT | +54.54% | $1,497,700.93 |
+| AIN/USDT:USDT | +52.74% | $3,886,735.34 |
+| CATE/USDT:USDT | +51.08% | $2,258,805.15 |
+| T/USDT:USDT | +20.46% | $3,474,167.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.90% | +2.54% |
-| CATE/USDT:USDT | below_1h_threshold | +2.65% | +2.29% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.27% |
-| T/USDT:USDT | below_1h_threshold | +1.90% | +1.54% |
-| AIN/USDT:USDT | below_1h_threshold | +1.75% | +1.39% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +3.93% | +3.47% |
+| CATE/USDT:USDT | below_1h_threshold | +3.13% | +2.67% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.18% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.20% | +1.75% |
+| CAP/USDT:USDT | below_1h_threshold | +1.89% | +1.43% |
 
 ## 7. 次に見るべき不足
 
