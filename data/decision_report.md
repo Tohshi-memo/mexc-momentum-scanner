@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T01:06:22.461560+00:00
+- generated_at: 2026-09-14T01:11:18.810870+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14471**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T01:06:11.898255+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76745.8
+- 更新: 2026-09-14T01:11:10.010948+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.11% price=76853.5
 - Funnel: target 1068 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +16.42% | $3,890,043.55 |
-| BR/USDT:USDT | +7.20% | $2,283,282.24 |
-| MAGMA/USDT:USDT | +5.65% | $1,802,052.54 |
-| VTHO/USDT:USDT | +4.70% | $3,601,096.59 |
-| BTW/USDT:USDT | +4.25% | $10,247,113.23 |
+| POWER/USDT:USDT | +17.75% | $3,928,802.45 |
+| BR/USDT:USDT | +7.41% | $2,293,972.68 |
+| BTW/USDT:USDT | +6.00% | $10,298,727.01 |
+| MAGMA/USDT:USDT | +5.38% | $1,802,472.26 |
+| PYTH/USDT:USDT | +4.07% | $1,282,000.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +1.68% | +1.71% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.50% | +1.53% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.32% |
-| UAI/USDT:USDT | below_1h_threshold | +1.20% | +1.23% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.07% | +1.10% |
+| PONS/USDT:USDT | below_1h_threshold | +2.84% | +2.73% |
+| POWER/USDT:USDT | below_1h_threshold | +2.78% | +2.67% |
+| UAI/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
+| POWR/USDT:USDT | below_1h_threshold | +1.71% | +1.61% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.18% |
 
 ## 7. 次に見るべき不足
 
