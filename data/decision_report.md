@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T11:31:22.784847+00:00
+- generated_at: 2026-09-14T11:36:24.208227+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14514**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T11:31:12.305957+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77853.1
+- 更新: 2026-09-14T11:36:14.269038+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=77670.0
 - Funnel: target 1068 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +51.56% | $16,147,242.49 |
-| AIN/USDT:USDT | +50.90% | $3,130,756.89 |
-| CATE/USDT:USDT | +49.33% | $1,992,036.82 |
-| KOMA/USDT:USDT | +30.09% | $1,007,192.00 |
-| T/USDT:USDT | +22.63% | $1,701,320.17 |
+| BR/USDT:USDT | +56.73% | $16,456,500.94 |
+| AIN/USDT:USDT | +49.98% | $3,143,983.76 |
+| CATE/USDT:USDT | +47.76% | $1,997,488.26 |
+| KOMA/USDT:USDT | +25.92% | $1,011,965.15 |
+| T/USDT:USDT | +21.23% | $1,804,519.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +4.18% | +4.20% |
-| POWER/USDT:USDT | below_1h_threshold | +2.20% | +2.21% |
-| KOMA/USDT:USDT | below_1h_threshold | +1.91% | +1.92% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.88% | +1.90% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +1.71% | +1.72% |
+| CATE/USDT:USDT | below_1h_threshold | +3.45% | +3.70% |
+| PUNDIX/USDT:USDT | below_1h_threshold | +1.76% | +2.01% |
+| XLM/USDT:USDT | below_1h_threshold | +1.52% | +1.77% |
+| POWER/USDT:USDT | below_1h_threshold | +1.44% | +1.69% |
+| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.52% |
 
 ## 7. 次に見るべき不足
 
