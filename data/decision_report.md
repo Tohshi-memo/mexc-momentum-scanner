@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T00:51:33.421410+00:00
+- generated_at: 2026-09-14T00:56:31.392321+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14470**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T00:51:20.088797+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=76769.9
+- 更新: 2026-09-14T00:56:18.237238+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=76790.7
 - Funnel: target 1068 → liquid 147 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.1 >= 65=1
+- Strict後reject: 4h RSI 65.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +14.30% | $3,874,636.30 |
-| BTW/USDT:USDT | +10.07% | $10,160,593.21 |
-| BR/USDT:USDT | +7.45% | $2,285,875.34 |
-| VTHO/USDT:USDT | +5.62% | $3,630,720.02 |
-| ALGO/USDT:USDT | +4.19% | $2,306,745.71 |
+| POWER/USDT:USDT | +13.76% | $3,883,175.47 |
+| BTW/USDT:USDT | +9.55% | $10,202,902.79 |
+| BR/USDT:USDT | +7.82% | $2,290,532.05 |
+| VTHO/USDT:USDT | +6.01% | $3,635,706.99 |
+| ALGO/USDT:USDT | +4.29% | $2,309,623.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.88% | +2.93% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.67% | +2.72% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.11% | +2.16% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.99% | +2.04% |
-| 4/USDT:USDT | below_1h_threshold | +1.70% | +1.75% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.95% | +2.98% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.75% | +2.77% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.18% | +2.20% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.89% | +1.91% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.77% | +1.79% |
 
 ## 7. 次に見るべき不足
 
