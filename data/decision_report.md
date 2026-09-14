@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T10:46:13.897601+00:00
+- generated_at: 2026-09-14T10:51:19.740221+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14511**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$125.76** / 初期 $100.00 (+25.76%)
-- 確定: 2889件 (Win 859 / Loss 1119 / Flat 911) / pending 1件 / skip 3091件
+- 確定: 2889件 (Win 859 / Loss 1119 / Flat 911) / pending 1件 / skip 3092件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000305 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: B/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $125.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T10:46:06.561139+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.23% price=77930.0
-- Funnel: target 1068 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-14T10:51:09.012600+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77985.6
+- Funnel: target 1068 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +55.91% | $14,073,311.18 |
-| AIN/USDT:USDT | +50.33% | $2,925,743.31 |
-| CATE/USDT:USDT | +43.57% | $1,976,929.25 |
-| KOMA/USDT:USDT | +26.67% | $1,006,720.64 |
-| MTL/USDT:USDT | +21.49% | $1,309,057.69 |
+| BR/USDT:USDT | +56.23% | $14,379,679.14 |
+| AIN/USDT:USDT | +54.23% | $2,981,763.52 |
+| CATE/USDT:USDT | +42.32% | $1,982,251.61 |
+| KOMA/USDT:USDT | +27.13% | $1,008,876.80 |
+| MTL/USDT:USDT | +21.30% | $1,310,308.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| UAI/USDT:USDT | below_1h_threshold | +3.43% | +3.66% |
-| SKYAI/USDT:USDT | below_1h_threshold | +3.14% | +3.37% |
-| MAGMA/USDT:USDT | below_1h_threshold | +2.79% | +3.01% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.85% | +2.08% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.80% | +2.03% |
+| SKYAI/USDT:USDT | below_1h_threshold | +3.57% | +3.73% |
+| UAI/USDT:USDT | below_1h_threshold | +3.49% | +3.64% |
+| POWER/USDT:USDT | below_1h_threshold | +2.53% | +2.69% |
+| MAGMA/USDT:USDT | below_1h_threshold | +2.32% | +2.48% |
+| CAKE/USDT:USDT | below_1h_threshold | +1.80% | +1.96% |
 
 ## 7. 次に見るべき不足
 
