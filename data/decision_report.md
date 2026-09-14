@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T01:42:15.110171+00:00
+- generated_at: 2026-09-14T01:46:30.634537+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14478**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T01:41:56.063901+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=76815.0
+- 更新: 2026-09-14T01:46:14.104172+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=76756.0
 - Funnel: target 1068 → liquid 146 → pre 50 → checked 50 → surge 4 → strict 2
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.7 >= 65=1, 4h RSI 77.4 >= 65=1
+- Strict後reject: 4h RSI 95.7 >= 65=1, 4h RSI 76.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +51.26% | $1,153,899.42 |
-| POWER/USDT:USDT | +30.19% | $4,239,217.59 |
-| BR/USDT:USDT | +7.98% | $2,325,860.23 |
-| MAGMA/USDT:USDT | +5.31% | $1,811,726.24 |
-| STEEM/USDT:USDT | +5.14% | $2,814,875.68 |
+| CATE/USDT:USDT | +47.24% | $1,180,009.96 |
+| POWER/USDT:USDT | +30.62% | $4,294,791.91 |
+| BR/USDT:USDT | +7.80% | $2,332,246.06 |
+| MAGMA/USDT:USDT | +5.66% | $1,812,091.09 |
+| SOXS/USDT:USDT | +4.12% | $4,866,831.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWR/USDT:USDT | below_1h_threshold | +3.97% | +3.91% |
-| CHZ/USDT:USDT | below_1h_threshold | +1.49% | +1.44% |
-| UAI/USDT:USDT | below_1h_threshold | +1.34% | +1.28% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.23% |
-| AR/USDT:USDT | below_1h_threshold | +1.23% | +1.17% |
+| POWR/USDT:USDT | below_1h_threshold | +2.35% | +2.37% |
+| UAI/USDT:USDT | below_1h_threshold | +2.13% | +2.15% |
+| MAGMA/USDT:USDT | below_1h_threshold | +1.46% | +1.48% |
+| CHZ/USDT:USDT | below_1h_threshold | +1.36% | +1.38% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.28% | +1.30% |
 
 ## 7. 次に見るべき不足
 
