@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T03:41:26.018838+00:00
+- generated_at: 2026-09-14T03:46:23.415212+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14484**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T03:41:14.819177+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=77560.1
+- 更新: 2026-09-14T03:46:12.170892+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77511.5
 - Funnel: target 1068 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 78.6 >= 65=1, 4h RSI 77.0 >= 65=1
+- Strict後reject: 4h RSI 78.8 >= 65=1, 4h RSI 76.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +50.38% | $1,476,087.99 |
-| MTL/USDT:USDT | +29.89% | $1,226,575.93 |
-| BR/USDT:USDT | +23.31% | $2,940,276.42 |
-| POWER/USDT:USDT | +13.73% | $5,207,092.39 |
-| LIT/USDT:USDT | +13.38% | $3,251,081.34 |
+| CATE/USDT:USDT | +50.05% | $1,481,876.41 |
+| MTL/USDT:USDT | +30.65% | $1,232,733.73 |
+| BR/USDT:USDT | +23.53% | $2,971,378.38 |
+| POWER/USDT:USDT | +16.44% | $5,226,177.60 |
+| LIT/USDT:USDT | +13.33% | $3,279,208.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +4.07% | +4.10% |
-| UAI/USDT:USDT | below_1h_threshold | +3.64% | +3.67% |
-| VVV/USDT:USDT | below_1h_threshold | +2.21% | +2.24% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.43% | +1.45% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.41% |
+| UAI/USDT:USDT | below_1h_threshold | +4.56% | +4.65% |
+| LIT/USDT:USDT | below_1h_threshold | +4.00% | +4.09% |
+| VVV/USDT:USDT | below_1h_threshold | +2.45% | +2.54% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.89% | +1.98% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.39% | +1.48% |
 
 ## 7. 次に見るべき不足
 
