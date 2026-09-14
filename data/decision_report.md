@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T11:36:24.208227+00:00
+- generated_at: 2026-09-14T11:41:27.297106+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14514**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$125.76** / 初期 $100.00 (+25.76%)
-- 確定: 2889件 (Win 859 / Loss 1119 / Flat 911) / pending 1件 / skip 3093件
+- 確定: 2889件 (Win 859 / Loss 1119 / Flat 911) / pending 1件 / skip 3094件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000379 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: B/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $125.76
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T11:36:14.269038+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=77670.0
-- Funnel: target 1068 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-14T11:41:16.602541+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=77791.5
+- Funnel: target 1068 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 78.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +56.73% | $16,456,500.94 |
-| AIN/USDT:USDT | +49.98% | $3,143,983.76 |
-| CATE/USDT:USDT | +47.76% | $1,997,488.26 |
-| KOMA/USDT:USDT | +25.92% | $1,011,965.15 |
-| T/USDT:USDT | +21.23% | $1,804,519.26 |
+| BR/USDT:USDT | +60.90% | $16,633,489.33 |
+| CATE/USDT:USDT | +53.89% | $2,022,844.66 |
+| AIN/USDT:USDT | +49.51% | $3,160,785.18 |
+| KOMA/USDT:USDT | +27.38% | $1,016,108.98 |
+| T/USDT:USDT | +22.72% | $1,828,839.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +3.45% | +3.70% |
-| PUNDIX/USDT:USDT | below_1h_threshold | +1.76% | +2.01% |
-| XLM/USDT:USDT | below_1h_threshold | +1.52% | +1.77% |
-| POWER/USDT:USDT | below_1h_threshold | +1.44% | +1.69% |
-| GOOGLSTOCK/USDT:USDT | below_1h_threshold | +1.27% | +1.52% |
+| BR/USDT:USDT | below_1h_threshold | +3.00% | +3.09% |
+| POWER/USDT:USDT | below_1h_threshold | +1.83% | +1.92% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.62% |
+| XPL/USDT:USDT | below_1h_threshold | +1.44% | +1.53% |
+| PUNDIX/USDT:USDT | below_1h_threshold | +1.30% | +1.39% |
 
 ## 7. 次に見るべき不足
 
