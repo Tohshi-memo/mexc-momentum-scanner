@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T04:26:22.113111+00:00
+- generated_at: 2026-09-14T04:31:21.556208+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14485**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$125.98** / 初期 $100.00 (+25.98%)
-- 確定: 2869件 (Win 853 / Loss 1112 / Flat 904) / pending 5件 / skip 3086件
+- 確定: 2869件 (Win 853 / Loss 1112 / Flat 904) / pending 6件 / skip 3086件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000131 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BR/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $125.98
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T04:26:11.708875+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=77649.8
-- Funnel: target 1068 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-14T04:31:10.932830+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=77617.5
+- Funnel: target 1068 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +47.49% | $1,530,961.89 |
-| MTL/USDT:USDT | +36.94% | $1,248,253.09 |
-| BR/USDT:USDT | +28.35% | $3,462,485.41 |
-| LIT/USDT:USDT | +14.24% | $3,555,804.39 |
-| ARK/USDT:USDT | +11.65% | $4,132,637.56 |
+| CATE/USDT:USDT | +51.23% | $1,545,283.79 |
+| MTL/USDT:USDT | +40.72% | $1,267,591.46 |
+| BR/USDT:USDT | +29.01% | $3,499,015.01 |
+| LIT/USDT:USDT | +14.33% | $3,578,014.95 |
+| ARK/USDT:USDT | +13.99% | $4,141,878.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MTL/USDT:USDT | below_1h_threshold | +4.92% | +4.80% |
-| STEEM/USDT:USDT | below_1h_threshold | +2.04% | +1.92% |
-| CATE/USDT:USDT | below_1h_threshold | +1.38% | +1.26% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.34% | +1.22% |
-| VET/USDT:USDT | below_1h_threshold | +1.31% | +1.19% |
+| CATE/USDT:USDT | below_1h_threshold | +3.58% | +3.50% |
+| ARK/USDT:USDT | below_1h_threshold | +2.78% | +2.71% |
+| STEEM/USDT:USDT | below_1h_threshold | +2.18% | +2.11% |
+| ETHFI/USDT:USDT | below_1h_threshold | +1.45% | +1.37% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.29% | +1.21% |
 
 ## 7. 次に見るべき不足
 
