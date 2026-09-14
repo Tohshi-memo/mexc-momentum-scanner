@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T16:06:25.485438+00:00
+- generated_at: 2026-09-14T16:11:29.801165+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14525**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T16:06:14.886145+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=78440.0
+- 更新: 2026-09-14T16:11:19.288239+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=78471.7
 - Funnel: target 1073 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +2.10% | $2,334,415.53 |
-| PONS/USDT:USDT | +1.06% | $6,070,838.51 |
-| AR/USDT:USDT | +0.95% | $3,728,922.16 |
-| XLM/USDT:USDT | +0.78% | $11,466,836.07 |
-| FILECOIN/USDT:USDT | +0.68% | $45,067,973.33 |
+| CATE/USDT:USDT | +2.74% | $2,340,718.53 |
+| 4/USDT:USDT | +2.74% | $1,373,262.98 |
+| KOMA/USDT:USDT | +2.57% | $1,152,571.07 |
+| PONS/USDT:USDT | +1.96% | $6,133,553.27 |
+| BR/USDT:USDT | +1.94% | $33,283,238.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +2.11% | +2.23% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.47% | +1.59% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.25% | +1.38% |
-| PONS/USDT:USDT | below_1h_threshold | +1.01% | +1.14% |
-| EWY/USDT:USDT | below_1h_threshold | +0.99% | +1.12% |
+| 4/USDT:USDT | below_1h_threshold | +2.74% | +2.83% |
+| CATE/USDT:USDT | below_1h_threshold | +2.74% | +2.83% |
+| KOMA/USDT:USDT | below_1h_threshold | +2.70% | +2.78% |
+| BR/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
+| PONS/USDT:USDT | below_1h_threshold | +1.73% | +1.81% |
 
 ## 7. 次に見るべき不足
 
