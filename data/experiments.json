@@ -65,9 +65,9 @@
           "tp_price": 0.11288850800000001,
           "filled": true,
           "filled_at": "2026-09-14T07:15:40.411624+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "TP_HIT",
+          "outcome_price": 0.11288850800000001,
+          "pnl_pct": 7.999999999999995
         },
         {
           "strategy": "LIMIT_2PCT",
@@ -76,9 +76,9 @@
           "tp_price": 0.11400621600000001,
           "filled": true,
           "filled_at": "2026-09-14T07:20:39.753026+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "TP_HIT",
+          "outcome_price": 0.11400621600000001,
+          "pnl_pct": 7.999999999999992
         },
         {
           "strategy": "LIMIT_3PCT",
@@ -186,9 +186,9 @@
           "tp_price": 0.11450909922256651,
           "filled": true,
           "filled_at": "2026-09-14T07:30:42.447310+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "TP_HIT",
+          "outcome_price": 0.11450909922256651,
+          "pnl_pct": 8.0
         },
         {
           "strategy": "LIMIT_FIB1272",
@@ -241,9 +241,9 @@
           "tp_price": 0.12858501600000002,
           "filled": true,
           "filled_at": "2026-09-14T08:00:49.504172+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "SL_HIT",
+          "outcome_price": 0.114297792,
+          "pnl_pct": -4.000000000000008
         },
         {
           "strategy": "LIMIT_3PCT_LONG",
@@ -252,9 +252,9 @@
           "tp_price": 0.127272924,
           "filled": true,
           "filled_at": "2026-09-14T09:20:44.394342+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "SL_HIT",
+          "outcome_price": 0.113131488,
+          "pnl_pct": -3.9999999999999982
         },
         {
           "strategy": "LIMIT_4PCT_LONG",
@@ -283,8 +283,8 @@
           "entry_price": 0.1142006,
           "sl_price": 0.109632576,
           "tp_price": 0.12333664800000001,
-          "filled": false,
-          "filled_at": null,
+          "filled": true,
+          "filled_at": "2026-09-14T10:35:36.171083+00:00",
           "outcome": "ACTIVE",
           "outcome_price": null,
           "pnl_pct": null
@@ -294,8 +294,8 @@
           "entry_price": 0.1129857,
           "sl_price": 0.10846627199999999,
           "tp_price": 0.122024556,
-          "filled": false,
-          "filled_at": null,
+          "filled": true,
+          "filled_at": "2026-09-14T10:35:36.171083+00:00",
           "outcome": "ACTIVE",
           "outcome_price": null,
           "pnl_pct": null
@@ -340,9 +340,9 @@
           "tp_price": 0.1279946748256828,
           "filled": true,
           "filled_at": "2026-09-14T09:20:44.394342+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "SL_HIT",
+          "outcome_price": 0.1137730442894958,
+          "pnl_pct": -4.000000000000009
         },
         {
           "strategy": "LIMIT_FIB1272_LONG",
@@ -372,9 +372,9 @@
       "outcome_price": null,
       "pnl_pct": null,
       "hours_held": null,
-      "max_favorable_pct": 5.350234587208829,
+      "max_favorable_pct": 7.424479381019014,
       "max_adverse_pct": -3.52292369742365,
-      "last_price": 0.11515
+      "last_price": 0.11293
     },
     {
       "symbol": "CATE/USDT:USDT",
@@ -752,7 +752,7 @@
       "hours_held": null,
       "max_favorable_pct": 6.809385125509038,
       "max_adverse_pct": -3.3826291967674083,
-      "last_price": 0.075309
+      "last_price": 0.0752
     },
     {
       "symbol": "AKE/USDT:USDT",
@@ -1128,7 +1128,7 @@
       "hours_held": null,
       "max_favorable_pct": 7.8907709928265675,
       "max_adverse_pct": -1.959129543673512,
-      "last_price": 0.015597
+      "last_price": 0.015527
     }
   ],
   "closed": [
