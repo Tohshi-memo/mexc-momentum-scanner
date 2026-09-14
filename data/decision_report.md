@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T09:11:21.024347+00:00
+- generated_at: 2026-09-14T09:16:19.964061+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14504**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T09:11:10.439210+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=77789.9
-- Funnel: target 1068 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-14T09:16:09.489871+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=77622.3
+- Funnel: target 1068 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +54.67% | $2,359,542.61 |
-| CATE/USDT:USDT | +47.60% | $1,913,781.52 |
-| BR/USDT:USDT | +42.60% | $6,569,165.23 |
-| ARK/USDT:USDT | +32.30% | $4,309,027.03 |
-| MTL/USDT:USDT | +30.94% | $1,291,547.41 |
+| AIN/USDT:USDT | +48.67% | $2,457,296.51 |
+| CATE/USDT:USDT | +45.56% | $1,918,390.63 |
+| BR/USDT:USDT | +43.17% | $6,649,644.19 |
+| ARK/USDT:USDT | +32.78% | $4,322,450.68 |
+| MTL/USDT:USDT | +28.61% | $1,297,402.52 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +2.75% | +2.63% |
-| SOXS/USDT:USDT | below_1h_threshold | +2.26% | +2.15% |
-| CATE/USDT:USDT | below_1h_threshold | +1.94% | +1.82% |
-| ARK/USDT:USDT | below_1h_threshold | +1.21% | +1.09% |
-| POWR/USDT:USDT | below_1h_threshold | +1.16% | +1.05% |
+| SOXS/USDT:USDT | below_1h_threshold | +2.26% | +2.36% |
+| POWER/USDT:USDT | below_1h_threshold | +2.08% | +2.18% |
+| ARK/USDT:USDT | below_1h_threshold | +1.57% | +1.68% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.24% | +1.34% |
+| AKE/USDT:USDT | below_1h_threshold | +0.97% | +1.07% |
 
 ## 7. 次に見るべき不足
 
