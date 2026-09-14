@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T21:36:30.169171+00:00
+- generated_at: 2026-09-14T21:41:23.831551+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14539**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T21:36:15.422785+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=78868.8
+- 更新: 2026-09-14T21:41:11.094427+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=78775.2
 - Funnel: target 1073 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +59.46% | $1,085,386.46 |
-| CNPY/USDT:USDT | +17.25% | $1,628,151.51 |
-| STORJ/USDT:USDT | +14.08% | $1,209,944.61 |
-| AIN/USDT:USDT | +12.30% | $5,721,616.65 |
-| NIULAI/USDT:USDT | +7.52% | $2,573,427.89 |
+| SHROOM/USDT:USDT | +67.80% | $1,092,344.98 |
+| AIN/USDT:USDT | +16.82% | $5,737,578.48 |
+| CNPY/USDT:USDT | +16.76% | $1,632,820.34 |
+| STORJ/USDT:USDT | +11.99% | $1,231,015.29 |
+| POWER/USDT:USDT | +7.89% | $7,566,750.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENDLE/USDT:USDT | below_1h_threshold | +1.49% | +1.73% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.02% | +1.27% |
-| KOMA/USDT:USDT | below_1h_threshold | +0.87% | +1.12% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.38% | +0.63% |
-| INJ/USDT:USDT | below_1h_threshold | +0.27% | +0.52% |
+| KOMA/USDT:USDT | below_1h_threshold | +1.84% | +2.20% |
+| SHROOM/USDT:USDT | below_1h_threshold | +1.61% | +1.97% |
+| AIN/USDT:USDT | below_1h_threshold | +1.42% | +1.79% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.02% | +1.39% |
+| MUU/USDT:USDT | below_1h_threshold | +0.68% | +1.04% |
 
 ## 7. 次に見るべき不足
 
