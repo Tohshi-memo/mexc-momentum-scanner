@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T13:56:35.529709+00:00
+- generated_at: 2026-09-14T14:01:23.427457+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14522**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T13:56:24.928388+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.68% price=78195.2
-- Funnel: target 1073 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-14T14:01:13.009984+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.15% price=78256.4
+- Funnel: target 1073 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +76.67% | $25,960,767.36 |
-| AIN/USDT:USDT | +50.64% | $3,823,212.11 |
-| CAP/USDT:USDT | +49.41% | $1,352,956.64 |
-| CATE/USDT:USDT | +47.92% | $2,259,305.20 |
-| KOMA/USDT:USDT | +21.44% | $1,105,786.13 |
+| BR/USDT:USDT | +75.41% | $26,153,124.50 |
+| CAP/USDT:USDT | +53.27% | $1,387,496.51 |
+| AIN/USDT:USDT | +50.31% | $3,838,952.48 |
+| CATE/USDT:USDT | +47.64% | $2,243,751.97 |
+| POWER/USDT:USDT | +22.86% | $6,772,837.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| T/USDT:USDT | below_relative_strength | +5.20% | +4.51% |
-| CAP/USDT:USDT | below_1h_threshold | +4.19% | +3.50% |
-| ARK/USDT:USDT | below_1h_threshold | +3.96% | +3.28% |
-| POWER/USDT:USDT | below_1h_threshold | +2.64% | +1.95% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.25% | +1.57% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.63% | +2.48% |
+| CAP/USDT:USDT | below_1h_threshold | +1.16% | +1.01% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.12% | +0.97% |
+| CATE/USDT:USDT | below_1h_threshold | +0.97% | +0.82% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +0.93% | +0.78% |
 
 ## 7. 次に見るべき不足
 
