@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T00:36:29.278182+00:00
+- generated_at: 2026-09-14T00:41:30.506936+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14470**
 
@@ -70,32 +70,31 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T00:36:15.730245+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=76675.0
-- Funnel: target 1068 → liquid 145 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 65.5 >= 65=1
+- 更新: 2026-09-14T00:41:17.820549+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=76749.9
+- Funnel: target 1068 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| POWER/USDT:USDT | +12.87% | $3,782,135.56 |
-| BTW/USDT:USDT | +9.79% | $10,133,043.78 |
-| BR/USDT:USDT | +6.98% | $2,274,593.60 |
-| VTHO/USDT:USDT | +5.33% | $3,598,679.27 |
-| MAGMA/USDT:USDT | +4.56% | $1,803,940.09 |
+| POWER/USDT:USDT | +14.58% | $3,844,778.56 |
+| BTW/USDT:USDT | +10.47% | $10,144,484.74 |
+| BR/USDT:USDT | +6.69% | $2,280,557.50 |
+| MAGMA/USDT:USDT | +4.32% | $1,804,252.26 |
+| ALGO/USDT:USDT | +3.69% | $2,296,963.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| FILECOIN/USDT:USDT | below_1h_threshold | +2.13% | +2.31% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.06% | +2.24% |
-| ALCH/USDT:USDT | below_1h_threshold | +1.48% | +1.65% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.37% | +1.54% |
-| ILV/USDT:USDT | below_1h_threshold | +1.14% | +1.31% |
+| VTHO/USDT:USDT | below_1h_threshold | +4.60% | +4.68% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +2.77% | +2.85% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.17% | +2.24% |
+| 4/USDT:USDT | below_1h_threshold | +1.90% | +1.98% |
+| ALCH/USDT:USDT | below_1h_threshold | +1.74% | +1.81% |
 
 ## 7. 次に見るべき不足
 
