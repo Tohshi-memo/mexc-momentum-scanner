@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-14T16:36:27.947542+00:00
+- generated_at: 2026-09-14T16:46:38.108907+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14525**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$125.54** / 初期 $100.00 (+25.54%)
-- 確定: 2890件 (Win 859 / Loss 1120 / Flat 911) / pending 0件 / skip 3105件
+- 確定: 2890件 (Win 859 / Loss 1120 / Flat 911) / pending 0件 / skip 3106件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000077 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PUNDIX/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $125.54
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-14T16:36:17.254894+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=78630.1
-- Funnel: target 1073 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.3 >= 65=1
+- 更新: 2026-09-14T16:46:24.127658+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=78613.4
+- Funnel: target 1073 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CATE/USDT:USDT | +8.75% | $2,400,709.99 |
-| 4/USDT:USDT | +4.25% | $1,446,985.03 |
-| JTO/USDT:USDT | +2.86% | $1,549,357.34 |
-| BEAT/USDT:USDT | +2.81% | $3,530,778.50 |
-| LSK/USDT:USDT | +2.68% | $64,287,550.28 |
+| LSK/USDT:USDT | +10.52% | $64,753,647.05 |
+| CATE/USDT:USDT | +7.87% | $2,420,696.58 |
+| KOMA/USDT:USDT | +3.89% | $1,167,399.47 |
+| 4/USDT:USDT | +3.84% | $1,468,335.43 |
+| BEAT/USDT:USDT | +3.05% | $3,596,367.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +4.12% | +4.00% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.82% | +2.70% |
-| JTO/USDT:USDT | below_1h_threshold | +2.80% | +2.68% |
-| KOMA/USDT:USDT | below_1h_threshold | +2.29% | +2.17% |
-| LSK/USDT:USDT | below_1h_threshold | +2.13% | +2.02% |
+| KOMA/USDT:USDT | below_1h_threshold | +3.89% | +3.80% |
+| 4/USDT:USDT | below_1h_threshold | +3.84% | +3.75% |
+| KORU/USDT:USDT | below_1h_threshold | +3.51% | +3.41% |
+| BEAT/USDT:USDT | below_1h_threshold | +3.06% | +2.96% |
+| OP/USDT:USDT | below_1h_threshold | +2.74% | +2.65% |
 
 ## 7. 次に見るべき不足
 
