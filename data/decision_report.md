@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T17:11:23.647806+00:00
+- generated_at: 2026-09-15T17:16:28.795319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14605**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T17:11:12.954813+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=76211.3
+- 更新: 2026-09-15T17:16:18.335649+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=76206.2
 - Funnel: target 1060 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| UAI/USDT:USDT | +7.17% | $4,544,706.92 |
-| SHROOM/USDT:USDT | +7.00% | $2,387,369.81 |
-| POWER/USDT:USDT | +4.85% | $14,391,938.32 |
-| SAGA/USDT:USDT | +3.37% | $3,060,861.47 |
-| 4/USDT:USDT | +3.37% | $1,032,934.78 |
+| SHROOM/USDT:USDT | +9.05% | $2,394,052.79 |
+| POWER/USDT:USDT | +7.26% | $14,456,896.26 |
+| 4/USDT:USDT | +5.32% | $1,044,714.06 |
+| UAI/USDT:USDT | +5.01% | $4,624,722.77 |
+| LONGXIA/USDT:USDT | +4.67% | $1,238,882.82 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +1.34% | +1.53% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.04% | +1.22% |
-| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.16% |
-| ARB/USDT:USDT | below_1h_threshold | +0.94% | +1.12% |
-| LSK/USDT:USDT | below_1h_threshold | +0.93% | +1.12% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.88% | +5.08% |
+| 4/USDT:USDT | below_1h_threshold | +3.11% | +3.31% |
+| SHROOM/USDT:USDT | below_1h_threshold | +2.02% | +2.21% |
+| REZ/USDT:USDT | below_1h_threshold | +1.17% | +1.36% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.04% | +1.23% |
 
 ## 7. 次に見るべき不足
 
