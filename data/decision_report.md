@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T12:16:22.667337+00:00
+- generated_at: 2026-09-15T12:21:23.782768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14591**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.11** / 初期 $100.00 (+24.11%)
-- 確定: 2909件 (Win 863 / Loss 1133 / Flat 913) / pending 0件 / skip 3151件
+- 確定: 2909件 (Win 863 / Loss 1133 / Flat 913) / pending 0件 / skip 3152件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000205 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: POWR/USDT:USDT `MARKET` EXPIRED account +0.10% 残高後 $124.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T12:16:12.130447+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76882.5
-- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-15T12:21:13.025140+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76902.2
+- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +78.40% | $2,140,643.46 |
-| AIN/USDT:USDT | +60.47% | $13,526,912.28 |
-| AKE/USDT:USDT | +51.91% | $11,879,449.01 |
-| POWER/USDT:USDT | +29.62% | $12,228,717.85 |
-| BONER/USDT:USDT | +24.65% | $1,010,774.18 |
+| SHROOM/USDT:USDT | +84.28% | $2,158,942.72 |
+| AIN/USDT:USDT | +63.20% | $13,666,344.49 |
+| AKE/USDT:USDT | +52.77% | $12,125,914.26 |
+| POWER/USDT:USDT | +30.31% | $12,246,523.10 |
+| BONER/USDT:USDT | +26.46% | $1,013,254.88 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +3.95% | +3.97% |
-| POWER/USDT:USDT | below_1h_threshold | +3.57% | +3.59% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.58% | +2.60% |
-| CAP/USDT:USDT | below_1h_threshold | +1.48% | +1.50% |
-| CYS/USDT:USDT | below_1h_threshold | +1.46% | +1.49% |
+| POWER/USDT:USDT | below_1h_threshold | +4.21% | +4.21% |
+| CYS/USDT:USDT | below_1h_threshold | +2.31% | +2.31% |
+| AKE/USDT:USDT | below_1h_threshold | +1.89% | +1.89% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.80% | +1.80% |
+| BONER/USDT:USDT | below_1h_threshold | +1.59% | +1.59% |
 
 ## 7. 次に見るべき不足
 
