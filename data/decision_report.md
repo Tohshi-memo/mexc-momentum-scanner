@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-15T03:56:43.085295+00:00
+- generated_at: 2026-09-15T04:01:24.757382+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14557**
+- closed shadow trades: **14558**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +0.64% / filled 20/20。**
-- 全期間 MARKET基準: n=14557, expectancy=-0.00%
+- 全期間 MARKET基準: n=14558, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+0.64%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | LIMIT_FIB1272 | 6/20 | 30.0% | +4.33% | **+1.30%** |
 | LIMIT_8PCT | 3/20 | 15.0% | +8.00% | **+1.20%** |
 | MARKET | 20/20 | 100.0% | +0.64% | **+0.64%** |
-| LIMIT_BB3S | 5/16 | 31.2% | +1.81% | **+0.57%** |
+| LIMIT_BB3S | 5/17 | 29.4% | +1.81% | **+0.53%** |
 
 ### シャドウ上位 LONG
 
@@ -47,18 +47,18 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,087.84** / 初期 $100.00 (+987.84%)
-- 確定: 5459件 (Win 1641 / Loss 1770 / Flat 2048) / skip 5659件
+- 確定: 5460件 (Win 1641 / Loss 1770 / Flat 2049) / skip 5659件
 - 成長率目線: 平均log +0.000437 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_FIB1272` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SHROOM/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $1,087.84
+- 最新: CVC/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $1,087.84
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$229.67** / 初期 $100.00 (+129.67%)
-- 確定: 2999件 (Win 832 / Loss 716 / Flat 1451) / skip 4969件
+- 確定: 3000件 (Win 832 / Loss 716 / Flat 1452) / skip 4969件
 - 成長率目線: 平均log +0.000277 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0531 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: SHROOM/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $229.67
+- 最新: CVC/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $229.67
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T03:56:20.533689+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.29% price=77651.1
-- Funnel: target 1073 → liquid 158 → pre 50 → checked 50 → surge 5 → strict 3
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.0 >= 65=1, 4h RSI 68.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-15T04:01:12.549070+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77680.6
+- Funnel: target 1073 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +63.25% | $1,370,675.10 |
-| POWER/USDT:USDT | +53.62% | $7,231,475.98 |
-| AIN/USDT:USDT | +25.44% | $7,930,085.92 |
-| CNPY/USDT:USDT | +14.76% | $1,845,274.28 |
-| CYS/USDT:USDT | +12.34% | $1,596,661.29 |
+| SHROOM/USDT:USDT | +64.77% | $1,375,352.23 |
+| POWER/USDT:USDT | +53.32% | $6,905,562.76 |
+| AIN/USDT:USDT | +23.74% | $7,941,025.70 |
+| CNPY/USDT:USDT | +15.21% | $1,838,175.12 |
+| CYS/USDT:USDT | +13.04% | $1,582,787.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STORJ/USDT:USDT | below_1h_threshold | +3.83% | +4.13% |
-| RIVER/USDT:USDT | below_1h_threshold | +1.41% | +1.70% |
-| CRV/USDT:USDT | below_1h_threshold | +0.89% | +1.18% |
-| KORU/USDT:USDT | below_1h_threshold | +0.81% | +1.10% |
-| OP/USDT:USDT | below_1h_threshold | +0.57% | +0.87% |
+| SHROOM/USDT:USDT | below_1h_threshold | +0.92% | +0.89% |
+| POWER/USDT:USDT | below_1h_threshold | +0.88% | +0.85% |
+| CATE/USDT:USDT | below_1h_threshold | +0.83% | +0.80% |
+| PONS/USDT:USDT | below_1h_threshold | +0.47% | +0.44% |
+| CNPY/USDT:USDT | below_1h_threshold | +0.43% | +0.39% |
 
 ## 7. 次に見るべき不足
 
