@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T19:16:28.692412+00:00
+- generated_at: 2026-09-15T19:21:29.700344+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14614**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T19:16:17.732816+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.10% price=76034.7
+- 更新: 2026-09-15T19:21:19.333945+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=76065.1
 - Funnel: target 1060 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +12.66% | $5,382,466.03 |
-| POWER/USDT:USDT | +9.40% | $14,748,552.41 |
-| 4/USDT:USDT | +7.38% | $1,210,198.02 |
-| AKE/USDT:USDT | +5.19% | $30,685,279.95 |
-| CNPY/USDT:USDT | +4.52% | $2,096,738.72 |
+| SAGA/USDT:USDT | +13.28% | $5,431,762.70 |
+| POWER/USDT:USDT | +9.66% | $14,809,984.19 |
+| 4/USDT:USDT | +7.57% | $1,212,727.39 |
+| USELESS/USDT:USDT | +7.36% | $4,640,058.28 |
+| AKE/USDT:USDT | +5.48% | $30,893,097.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BLESS/USDT:USDT | below_1h_threshold | +2.13% | +2.03% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.95% | +1.84% |
-| AKE/USDT:USDT | below_1h_threshold | +1.24% | +1.14% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.10% | +1.00% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.93% | +0.83% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.35% | +4.21% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.99% | +2.85% |
+| AKE/USDT:USDT | below_1h_threshold | +1.56% | +1.41% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.25% | +1.11% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.13% | +0.99% |
 
 ## 7. 次に見るべき不足
 
