@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T06:56:39.992447+00:00
+- generated_at: 2026-09-15T07:01:24.391515+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14576**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T06:56:21.791108+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.53% price=77179.7
-- Funnel: target 1075 → liquid 159 → pre 50 → checked 50 → surge 3 → strict 2
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 73.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-15T07:01:13.895104+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=77249.5
+- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +48.95% | $9,738,176.55 |
-| SHROOM/USDT:USDT | +45.83% | $1,588,986.16 |
-| POWER/USDT:USDT | +34.09% | $10,124,294.62 |
-| STORJ/USDT:USDT | +22.39% | $1,134,907.49 |
-| AKE/USDT:USDT | +20.11% | $3,687,508.41 |
+| SHROOM/USDT:USDT | +49.62% | $1,590,210.69 |
+| AIN/USDT:USDT | +45.77% | $9,051,755.18 |
+| POWER/USDT:USDT | +35.20% | $10,006,498.33 |
+| STORJ/USDT:USDT | +21.16% | $1,081,531.84 |
+| AKE/USDT:USDT | +20.00% | $3,711,073.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RIVER/USDT:USDT | below_1h_threshold | +1.06% | +1.59% |
-| MUU/USDT:USDT | below_1h_threshold | +0.60% | +1.13% |
-| XMR/USDT:USDT | below_1h_threshold | +0.44% | +0.97% |
-| MUSTOCK/USDT:USDT | below_1h_threshold | +0.29% | +0.82% |
-| CRV/USDT:USDT | below_1h_threshold | +0.25% | +0.78% |
+| SHROOM/USDT:USDT | below_1h_threshold | +2.46% | +2.46% |
+| POWER/USDT:USDT | below_1h_threshold | +1.09% | +1.09% |
+| AIN/USDT:USDT | below_1h_threshold | +0.62% | +0.62% |
+| PONS/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.33% | +0.33% |
 
 ## 7. 次に見るべき不足
 
