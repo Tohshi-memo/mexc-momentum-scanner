@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T23:01:22.173061+00:00
+- generated_at: 2026-09-15T23:06:21.726284+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14617**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T23:01:11.508298+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=75691.9
+- 更新: 2026-09-15T23:06:11.300147+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=75722.5
 - Funnel: target 1060 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +17.90% | $1,411,074.73 |
-| SAGA/USDT:USDT | +17.28% | $7,085,529.35 |
-| POWER/USDT:USDT | +10.27% | $14,711,327.34 |
-| CNPY/USDT:USDT | +8.36% | $1,712,644.19 |
-| USELESS/USDT:USDT | +6.66% | $4,679,766.74 |
+| ON/USDT:USDT | +17.90% | $1,428,910.77 |
+| SAGA/USDT:USDT | +17.76% | $7,117,419.30 |
+| POWER/USDT:USDT | +10.09% | $14,732,432.93 |
+| CNPY/USDT:USDT | +8.99% | $1,733,880.75 |
+| ZRO/USDT:USDT | +6.57% | $2,981,845.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +0.61% | +0.53% |
-| XPL/USDT:USDT | below_1h_threshold | +0.49% | +0.41% |
-| KORU/USDT:USDT | below_1h_threshold | +0.48% | +0.40% |
-| POWER/USDT:USDT | below_1h_threshold | +0.37% | +0.29% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.26% |
+| NIULAI/USDT:USDT | below_1h_threshold | +1.03% | +0.91% |
+| XPL/USDT:USDT | below_1h_threshold | +0.94% | +0.81% |
+| 4/USDT:USDT | below_1h_threshold | +0.74% | +0.62% |
+| KORU/USDT:USDT | below_1h_threshold | +0.48% | +0.36% |
+| ZEC/USDT:USDT | below_1h_threshold | +0.39% | +0.27% |
 
 ## 7. 次に見るべき不足
 
