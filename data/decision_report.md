@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T20:36:29.175153+00:00
+- generated_at: 2026-09-15T20:41:27.163247+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14616**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T20:36:16.947690+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.60% price=75690.3
+- 更新: 2026-09-15T20:41:16.542045+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=75799.1
 - Funnel: target 1060 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +11.36% | $6,023,187.89 |
-| LONGXIA/USDT:USDT | +5.28% | $1,406,440.35 |
-| 4/USDT:USDT | +5.03% | $1,300,055.09 |
-| CNPY/USDT:USDT | +4.70% | $2,128,462.11 |
-| USELESS/USDT:USDT | +4.33% | $4,763,787.69 |
+| SAGA/USDT:USDT | +12.32% | $6,088,699.04 |
+| 4/USDT:USDT | +6.10% | $1,313,238.16 |
+| CNPY/USDT:USDT | +5.71% | $2,132,935.14 |
+| USELESS/USDT:USDT | +5.59% | $4,807,425.38 |
+| POWER/USDT:USDT | +5.30% | $15,046,514.39 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.91% | +2.51% |
-| MUU/USDT:USDT | below_1h_threshold | +1.21% | +1.81% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.08% | +1.68% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.65% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +1.28% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.91% | +2.37% |
+| MUU/USDT:USDT | below_1h_threshold | +1.21% | +1.67% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.05% | +1.51% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.76% | +1.22% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +0.68% | +1.13% |
 
 ## 7. 次に見るべき不足
 
