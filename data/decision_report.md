@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T18:16:31.970377+00:00
+- generated_at: 2026-09-15T18:21:20.532570+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14611**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T18:16:23.717027+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=76814.6
+- 更新: 2026-09-15T18:21:09.909477+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=76640.0
 - Funnel: target 1060 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +14.15% | $4,270,130.52 |
-| 4/USDT:USDT | +6.89% | $1,083,095.36 |
-| PONS/USDT:USDT | +4.78% | $9,340,496.04 |
-| AIN/USDT:USDT | +4.69% | $19,050,279.25 |
-| USELESS/USDT:USDT | +4.02% | $4,360,564.39 |
+| SAGA/USDT:USDT | +13.04% | $4,328,324.70 |
+| 4/USDT:USDT | +6.54% | $1,095,777.57 |
+| AIN/USDT:USDT | +5.52% | $19,088,766.91 |
+| POWER/USDT:USDT | +4.52% | $14,530,589.62 |
+| PONS/USDT:USDT | +3.36% | $9,393,376.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +1.76% | +1.90% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.97% | +1.12% |
-| 4/USDT:USDT | below_1h_threshold | +0.51% | +0.65% |
-| AKE/USDT:USDT | below_1h_threshold | +0.48% | +0.63% |
-| SILVER/USDT:USDT | below_1h_threshold | +0.36% | +0.51% |
+| AIN/USDT:USDT | below_1h_threshold | +2.60% | +2.97% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.67% | +1.05% |
+| SILVER/USDT:USDT | below_1h_threshold | +0.53% | +0.91% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.49% | +0.87% |
+| USOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.73% |
 
 ## 7. 次に見るべき不足
 
