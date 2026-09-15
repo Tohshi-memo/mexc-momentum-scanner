@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T21:01:23.140796+00:00
+- generated_at: 2026-09-15T21:06:14.640396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14617**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T21:01:12.603022+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=75847.8
+- 更新: 2026-09-15T21:06:04.011037+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=75779.8
 - Funnel: target 1060 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +13.76% | $6,149,063.23 |
-| CNPY/USDT:USDT | +7.35% | $1,847,109.04 |
-| 4/USDT:USDT | +6.79% | $1,293,638.13 |
-| USELESS/USDT:USDT | +6.07% | $4,675,583.50 |
-| POWER/USDT:USDT | +4.74% | $14,536,208.05 |
+| SAGA/USDT:USDT | +12.37% | $6,177,580.71 |
+| POWER/USDT:USDT | +7.71% | $14,568,015.11 |
+| 4/USDT:USDT | +6.45% | $1,300,878.48 |
+| USELESS/USDT:USDT | +6.35% | $4,697,350.37 |
+| CNPY/USDT:USDT | +6.31% | $1,859,911.75 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +0.91% | +0.98% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.49% | +0.56% |
-| EWY/USDT:USDT | below_1h_threshold | +0.24% | +0.31% |
-| CNPY/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
-| NVIDIA/USDT:USDT | below_1h_threshold | +0.19% | +0.26% |
+| POWER/USDT:USDT | below_1h_threshold | +2.45% | +2.61% |
+| KORU/USDT:USDT | below_1h_threshold | +0.91% | +1.07% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.64% | +0.80% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.49% | +0.65% |
+| BTW/USDT:USDT | below_1h_threshold | +0.38% | +0.54% |
 
 ## 7. 次に見るべき不足
 
