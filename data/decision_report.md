@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T21:46:18.824136+00:00
+- generated_at: 2026-09-15T21:51:23.678221+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14617**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.53** / 初期 $100.00 (+24.53%)
-- 確定: 2910件 (Win 864 / Loss 1133 / Flat 913) / pending 1件 / skip 3176件
+- 確定: 2910件 (Win 864 / Loss 1133 / Flat 913) / pending 2件 / skip 3176件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000393 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: POWER/USDT:USDT `MARKET` TP_HIT account +0.34% 残高後 $124.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T21:46:08.652746+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=75703.6
-- Funnel: target 1060 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-15T21:51:15.711042+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.37% price=75618.3
+- Funnel: target 1060 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ON/USDT:USDT | +12.86% | $1,129,339.46 |
-| SAGA/USDT:USDT | +12.51% | $6,609,444.06 |
-| CNPY/USDT:USDT | +7.23% | $1,895,542.08 |
-| 4/USDT:USDT | +6.10% | $1,338,377.69 |
-| LONGXIA/USDT:USDT | +5.79% | $1,447,828.62 |
+| ON/USDT:USDT | +12.86% | $1,145,336.86 |
+| SAGA/USDT:USDT | +12.56% | $6,647,781.85 |
+| CNPY/USDT:USDT | +10.27% | $1,902,027.21 |
+| LONGXIA/USDT:USDT | +5.49% | $1,452,929.13 |
+| POWER/USDT:USDT | +5.26% | $14,778,421.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.44% | +1.70% |
-| LAB/USDT:USDT | below_1h_threshold | +1.31% | +1.57% |
-| ETHFI/USDT:USDT | below_1h_threshold | +1.25% | +1.51% |
-| BLESS/USDT:USDT | below_1h_threshold | +1.16% | +1.42% |
-| KORU/USDT:USDT | below_1h_threshold | +0.91% | +1.17% |
+| AKE/USDT:USDT | below_1h_threshold | +2.92% | +3.29% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.81% | +3.18% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.16% | +1.53% |
+| KORU/USDT:USDT | below_1h_threshold | +0.91% | +1.28% |
+| BLESS/USDT:USDT | below_1h_threshold | +0.90% | +1.27% |
 
 ## 7. 次に見るべき不足
 
