@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T16:56:41.371250+00:00
+- generated_at: 2026-09-15T17:01:28.424722+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14605**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T16:56:24.844185+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76451.0
-- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 4 → strict 3
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-15T17:01:18.008597+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=76330.1
+- Funnel: target 1060 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +7.85% | $2,406,071.36 |
-| UAI/USDT:USDT | +6.80% | $4,437,551.84 |
-| POWER/USDT:USDT | +5.70% | $14,456,720.75 |
-| LAB/USDT:USDT | +5.26% | $2,028,362.06 |
-| SAGA/USDT:USDT | +3.80% | $2,980,331.45 |
+| SHROOM/USDT:USDT | +7.72% | $2,382,664.35 |
+| UAI/USDT:USDT | +6.22% | $4,453,063.45 |
+| POWER/USDT:USDT | +5.00% | $14,344,947.69 |
+| LAB/USDT:USDT | +4.80% | $1,942,117.14 |
+| SAGA/USDT:USDT | +4.18% | $3,022,404.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +3.80% | +3.83% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.68% | +3.71% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.44% | +3.47% |
-| PONS/USDT:USDT | below_1h_threshold | +2.72% | +2.74% |
-| 4/USDT:USDT | below_1h_threshold | +2.64% | +2.67% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.04% | +1.07% |
+| PLTRSTOCK/USDT:USDT | below_1h_threshold | +0.97% | +1.00% |
+| KORU/USDT:USDT | below_1h_threshold | +0.70% | +0.73% |
+| UKOIL/USDT:USDT | below_1h_threshold | +0.68% | +0.71% |
+| FCXSTOCK/USDT:USDT | below_1h_threshold | +0.51% | +0.54% |
 
 ## 7. 次に見るべき不足
 
