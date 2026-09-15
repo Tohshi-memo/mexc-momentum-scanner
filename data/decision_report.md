@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T09:11:13.536337+00:00
+- generated_at: 2026-09-15T09:16:22.182823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14581**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T09:11:06.128946+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=76908.5
+- 更新: 2026-09-15T09:16:11.750236+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=76901.8
 - Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +64.01% | $1,669,190.16 |
-| AIN/USDT:USDT | +48.97% | $9,919,696.76 |
-| POWER/USDT:USDT | +29.25% | $11,158,551.45 |
-| AKE/USDT:USDT | +24.75% | $5,559,789.20 |
-| CNPY/USDT:USDT | +17.44% | $2,076,437.67 |
+| SHROOM/USDT:USDT | +65.34% | $1,673,815.99 |
+| AIN/USDT:USDT | +51.74% | $9,975,176.50 |
+| POWER/USDT:USDT | +30.85% | $11,219,584.47 |
+| AKE/USDT:USDT | +26.57% | $5,664,297.40 |
+| CNPY/USDT:USDT | +17.47% | $2,077,260.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHROOM/USDT:USDT | below_1h_threshold | +1.64% | +1.72% |
-| ACE/USDT:USDT | below_1h_threshold | +1.41% | +1.48% |
-| AKE/USDT:USDT | below_1h_threshold | +1.13% | +1.21% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.96% | +1.04% |
-| LIT/USDT:USDT | below_1h_threshold | +0.53% | +0.60% |
+| SHROOM/USDT:USDT | below_1h_threshold | +2.46% | +2.55% |
+| ACE/USDT:USDT | below_1h_threshold | +1.96% | +2.04% |
+| AKE/USDT:USDT | below_1h_threshold | +1.24% | +1.32% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.68% | +0.76% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.48% | +0.56% |
 
 ## 7. 次に見るべき不足
 
