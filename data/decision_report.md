@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T03:01:20.185538+00:00
+- generated_at: 2026-09-15T03:06:27.094580+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14550**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T03:01:09.591834+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=77822.9
+- 更新: 2026-09-15T03:06:16.360474+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=77755.8
 - Funnel: target 1073 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +40.90% | $1,304,339.72 |
-| POWER/USDT:USDT | +32.90% | $6,071,621.96 |
-| AIN/USDT:USDT | +28.76% | $7,735,381.26 |
-| CNPY/USDT:USDT | +19.44% | $1,804,147.10 |
-| CAP/USDT:USDT | +11.74% | $2,674,969.67 |
+| SHROOM/USDT:USDT | +40.34% | $1,304,966.45 |
+| AIN/USDT:USDT | +31.48% | $7,766,916.54 |
+| POWER/USDT:USDT | +30.68% | $6,137,326.75 |
+| CNPY/USDT:USDT | +19.25% | $1,806,324.07 |
+| CAP/USDT:USDT | +9.46% | $2,688,789.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KOMA/USDT:USDT | below_1h_threshold | +0.82% | +0.90% |
-| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.88% |
-| CYS/USDT:USDT | below_1h_threshold | +0.65% | +0.73% |
-| ABNBSTOCK/USDT:USDT | below_1h_threshold | +0.48% | +0.55% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.46% | +0.54% |
+| AIN/USDT:USDT | below_1h_threshold | +1.61% | +1.76% |
+| CYS/USDT:USDT | below_1h_threshold | +1.45% | +1.61% |
+| STORJ/USDT:USDT | below_1h_threshold | +0.88% | +1.04% |
+| KORU/USDT:USDT | below_1h_threshold | +0.81% | +0.97% |
+| PONS/USDT:USDT | below_1h_threshold | +0.67% | +0.82% |
 
 ## 7. 次に見るべき不足
 
