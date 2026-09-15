@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T12:51:53.528938+00:00
+- generated_at: 2026-09-15T12:56:48.029098+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14594**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T12:51:31.515098+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=76989.2
-- Funnel: target 1060 → liquid 160 → pre 50 → checked 50 → surge 7 → strict 3
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.6 >= 65=1, 4h RSI 70.1 >= 65=1, 4h RSI 75.2 >= 65=1, 4h RSI 96.8 >= 65=1
+- 更新: 2026-09-15T12:56:27.515512+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=77027.4
+- Funnel: target 1060 → liquid 160 → pre 50 → checked 50 → surge 6 → strict 3
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.0 >= 65=1, 4h RSI 86.0 >= 65=1, 4h RSI 75.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +83.14% | $2,208,339.73 |
-| AIN/USDT:USDT | +74.06% | $14,788,720.23 |
-| AKE/USDT:USDT | +72.33% | $14,234,519.06 |
-| POWER/USDT:USDT | +36.03% | $12,478,674.88 |
-| BONER/USDT:USDT | +26.43% | $1,034,301.75 |
+| AIN/USDT:USDT | +72.59% | $14,929,506.45 |
+| SHROOM/USDT:USDT | +67.42% | $2,235,487.19 |
+| AKE/USDT:USDT | +61.92% | $14,659,945.02 |
+| POWER/USDT:USDT | +36.86% | $12,569,477.05 |
+| BONER/USDT:USDT | +28.16% | $1,035,778.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +4.47% | +4.36% |
-| CYS/USDT:USDT | below_1h_threshold | +4.31% | +4.20% |
-| CATE/USDT:USDT | below_1h_threshold | +4.11% | +3.99% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.05% | +3.93% |
-| BLESS/USDT:USDT | below_1h_threshold | +3.16% | +3.04% |
+| AIN/USDT:USDT | below_1h_threshold | +4.63% | +4.46% |
+| CYS/USDT:USDT | below_1h_threshold | +4.24% | +4.07% |
+| CATE/USDT:USDT | below_1h_threshold | +3.80% | +3.64% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.35% | +3.19% |
+| ARB/USDT:USDT | below_1h_threshold | +3.27% | +3.11% |
 
 ## 7. 次に見るべき不足
 
