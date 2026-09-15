@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T11:01:21.050377+00:00
+- generated_at: 2026-09-15T11:06:20.085956+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14590**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T11:01:08.523483+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77012.8
+- 更新: 2026-09-15T11:06:09.633688+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=77052.9
 - Funnel: target 1060 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +96.96% | $1,880,272.54 |
-| AIN/USDT:USDT | +49.45% | $11,019,743.95 |
-| AKE/USDT:USDT | +36.69% | $9,209,932.66 |
-| POWER/USDT:USDT | +28.47% | $11,963,713.03 |
-| SAGA/USDT:USDT | +17.60% | $1,516,931.73 |
+| SHROOM/USDT:USDT | +94.31% | $1,911,949.78 |
+| AIN/USDT:USDT | +55.78% | $11,189,383.50 |
+| AKE/USDT:USDT | +40.19% | $9,394,204.42 |
+| POWER/USDT:USDT | +31.84% | $12,021,828.42 |
+| SAGA/USDT:USDT | +18.18% | $1,539,331.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
+| AIN/USDT:USDT | below_1h_threshold | +3.83% | +3.79% |
+| POWER/USDT:USDT | below_1h_threshold | +2.77% | +2.73% |
+| AKE/USDT:USDT | below_1h_threshold | +1.61% | +1.57% |
+| KORU/USDT:USDT | below_1h_threshold | +1.21% | +1.17% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.12% | +1.08% |
 
 ## 7. 次に見るべき不足
 
