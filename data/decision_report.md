@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T00:16:16.369041+00:00
+- generated_at: 2026-09-15T00:21:26.742478+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14542**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T00:16:08.968045+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=78079.8
+- 更新: 2026-09-15T00:21:16.393875+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.18% price=78013.3
 - Funnel: target 1073 → liquid 163 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +36.74% | $1,196,104.64 |
-| AIN/USDT:USDT | +24.27% | $6,154,464.06 |
-| POWER/USDT:USDT | +19.65% | $6,542,720.52 |
-| CNPY/USDT:USDT | +17.21% | $1,689,773.66 |
-| CYS/USDT:USDT | +12.88% | $1,406,329.28 |
+| SHROOM/USDT:USDT | +34.28% | $1,198,386.26 |
+| POWER/USDT:USDT | +20.07% | $6,553,124.77 |
+| AIN/USDT:USDT | +17.54% | $6,203,965.24 |
+| CNPY/USDT:USDT | +16.76% | $1,698,128.96 |
+| CYS/USDT:USDT | +10.09% | $1,431,963.25 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.81% | +4.91% |
-| KORU/USDT:USDT | below_1h_threshold | +1.89% | +1.98% |
-| NIULAI/USDT:USDT | below_1h_threshold | +1.74% | +1.84% |
-| AKE/USDT:USDT | below_1h_threshold | +1.72% | +1.82% |
-| POWR/USDT:USDT | below_1h_threshold | +1.58% | +1.67% |
+| POWR/USDT:USDT | below_1h_threshold | +2.69% | +2.87% |
+| KORU/USDT:USDT | below_1h_threshold | +1.89% | +2.07% |
+| AKE/USDT:USDT | below_1h_threshold | +1.54% | +1.73% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.45% | +1.63% |
+| MUU/USDT:USDT | below_1h_threshold | +1.27% | +1.45% |
 
 ## 7. 次に見るべき不足
 
