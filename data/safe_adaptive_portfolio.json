@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 1052.4365718144559,
   "started_at": "2026-05-06T08:22:19.867267+00:00",
-  "updated_at": "2026-09-15T00:06:21.472823+00:00",
+  "updated_at": "2026-09-15T00:11:16.958488+00:00",
   "high_watermark": 1119.3570306662375,
   "max_drawdown_pct": 8.457719753190009,
   "loss_streak": 5,
@@ -140,7 +140,8 @@
     "2026-09-11": 39.35533313545267,
     "2026-09-12": -16.36986886438509,
     "2026-09-13": -5.402147896701211,
-    "2026-09-14": -22.590859629085067
+    "2026-09-14": -22.590859629085067,
+    "2026-09-15": 0.0
   },
   "trades": [
     {
@@ -261502,6 +261503,54 @@
         "max_drawdown_pct": 65.20443934622796,
         "max_loss_streak": 22
       }
+    },
+    {
+      "key": "ARK/USDT:USDT|2026-09-15T00:01:13.442887+00:00",
+      "symbol": "ARK/USDT:USDT",
+      "detected_at": "2026-09-15T00:01:13.442887+00:00",
+      "closed_at": "2026-09-15T00:10:41.986464+00:00",
+      "strategy": "LIMIT_FIB1272",
+      "direction": "short",
+      "outcome": "EXPIRED",
+      "filled": false,
+      "pnl_pct": 0.0,
+      "sl_pct": 4.000000000000004,
+      "risk_pct": 0.5,
+      "account_return_pct": 0.0,
+      "log_return": 0.0,
+      "pnl_usdt": 0.0,
+      "balance_before": 1052.4365718144559,
+      "balance_after": 1052.4365718144559,
+      "drawdown_after_pct": 5.978473089319036,
+      "selector_reason": "selected_by_recent_avg_log_return",
+      "selector_recent": {
+        "strategy": "LIMIT_FIB1272",
+        "direction": "short",
+        "total": 50,
+        "filled": 18,
+        "fill_rate": 0.36,
+        "avg_pnl_pct": 2.1100363280608536,
+        "effective_ev_pct": 0.7596130781019073,
+        "avg_log_return": 0.0009448873561547991,
+        "geometric_return_pct": 0.0945333902847123,
+        "avg_account_return_pct": 0.0949516347627383,
+        "max_drawdown_pct": 0.24568613210850784,
+        "max_loss_streak": 2
+      },
+      "selector_all": {
+        "strategy": "LIMIT_FIB1272",
+        "direction": "short",
+        "total": 14490,
+        "filled": 4664,
+        "fill_rate": 0.32187715665976535,
+        "avg_pnl_pct": 0.3651948300680926,
+        "effective_ev_pct": 0.11754787352916383,
+        "avg_log_return": 0.0001454564449132941,
+        "geometric_return_pct": 0.014546702421491808,
+        "avg_account_return_pct": 0.014827897506085761,
+        "max_drawdown_pct": 20.14657014912593,
+        "max_loss_streak": 13
+      }
     }
   ],
   "skipped": [
@@ -329896,6 +329945,7 @@
     "ARK/USDT:USDT|2026-09-14T06:46:14.589456+00:00",
     "ARK/USDT:USDT|2026-09-14T06:56:14.263611+00:00",
     "ARK/USDT:USDT|2026-09-14T08:11:09.381445+00:00",
+    "ARK/USDT:USDT|2026-09-15T00:01:13.442887+00:00",
     "ARMSTOCK/USDT:USDT|2026-05-06T20:12:32.321360+00:00",
     "ARMSTOCK/USDT:USDT|2026-06-16T13:36:34.640452+00:00",
     "ARMSTOCK/USDT:USDT|2026-06-24T20:45:13.860076+00:00",
@@ -340063,7 +340113,7 @@
     "strategy": "LIMIT_FIB1272",
     "direction": "short",
     "reason": "selected_by_recent_avg_log_return",
-    "history_count": 14539,
+    "history_count": 14540,
     "recent_count": 50,
     "recent": {
       "strategy": "LIMIT_FIB1272",
@@ -340082,26 +340132,26 @@
     "all": {
       "strategy": "LIMIT_FIB1272",
       "direction": "short",
-      "total": 14491,
+      "total": 14492,
       "filled": 4664,
-      "fill_rate": 0.3218549444482782,
+      "fill_rate": 0.3218327353022357,
       "avg_pnl_pct": 0.3651948300680926,
-      "effective_ev_pct": 0.11753976174436435,
-      "avg_log_return": 0.00014544640720403227,
-      "geometric_return_pct": 0.014545698504564442,
-      "avg_account_return_pct": 0.014826874257344748,
+      "effective_ev_pct": 0.1175316510790494,
+      "avg_log_return": 0.00014543637088004633,
+      "geometric_return_pct": 0.014544694726170704,
+      "avg_account_return_pct": 0.0148258511498194,
       "max_drawdown_pct": 19.684923216721074,
       "max_loss_streak": 12
     },
     "alternatives": []
   },
   "summary": {
-    "trade_count": 5445,
+    "trade_count": 5446,
     "wins": 1637,
     "losses": 1770,
-    "flat": 2038,
-    "avg_log_return": 0.0004322668711557672,
-    "geometric_return_pct": 0.043236031194293645,
+    "flat": 2039,
+    "avg_log_return": 0.00043218749787792004,
+    "geometric_return_pct": 0.0432280904350435,
     "return_pct": 952.4365718144559
   },
   "config": {
