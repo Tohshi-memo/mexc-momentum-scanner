@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T10:31:20.878841+00:00
+- generated_at: 2026-09-15T10:36:12.212567+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14587**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T10:31:09.931233+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=76848.7
-- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-15T10:36:02.012649+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76950.0
+- Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +80.68% | $1,774,699.04 |
-| AIN/USDT:USDT | +51.16% | $10,847,671.43 |
-| AKE/USDT:USDT | +44.52% | $7,954,071.40 |
-| POWER/USDT:USDT | +28.93% | $11,945,085.67 |
-| SAGA/USDT:USDT | +16.91% | $1,379,009.19 |
+| SHROOM/USDT:USDT | +79.92% | $1,790,042.50 |
+| AIN/USDT:USDT | +47.50% | $11,000,297.25 |
+| AKE/USDT:USDT | +40.24% | $8,199,327.88 |
+| POWER/USDT:USDT | +27.73% | $11,978,987.85 |
+| BONER/USDT:USDT | +23.75% | $1,000,214.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHROOM/USDT:USDT | below_1h_threshold | +3.30% | +3.42% |
-| KORU/USDT:USDT | below_1h_threshold | +1.49% | +1.62% |
-| STORJ/USDT:USDT | below_1h_threshold | +1.48% | +1.60% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.60% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.31% | +1.44% |
+| SHROOM/USDT:USDT | below_1h_threshold | +4.40% | +4.39% |
+| AKE/USDT:USDT | below_1h_threshold | +3.07% | +3.06% |
+| BONER/USDT:USDT | below_1h_threshold | +2.62% | +2.61% |
+| KORU/USDT:USDT | below_1h_threshold | +1.49% | +1.49% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.47% |
 
 ## 7. 次に見るべき不足
 
