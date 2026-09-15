@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T18:01:26.490757+00:00
+- generated_at: 2026-09-15T18:06:17.873888+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14611**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T18:01:13.976594+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=76815.7
-- Funnel: target 1060 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-15T18:06:07.691187+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=76841.6
+- Funnel: target 1060 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +13.33% | $3,980,913.88 |
-| 4/USDT:USDT | +6.35% | $1,050,879.86 |
-| PONS/USDT:USDT | +6.26% | $9,135,217.64 |
-| AIN/USDT:USDT | +5.46% | $18,841,463.88 |
-| ZRO/USDT:USDT | +4.73% | $3,307,171.23 |
+| SAGA/USDT:USDT | +12.71% | $4,146,931.48 |
+| 4/USDT:USDT | +6.59% | $1,062,574.29 |
+| AIN/USDT:USDT | +6.08% | $18,925,343.12 |
+| SHROOM/USDT:USDT | +5.31% | $2,078,604.03 |
+| PONS/USDT:USDT | +5.07% | $9,273,346.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +1.41% | +1.56% |
-| AKE/USDT:USDT | below_1h_threshold | +0.64% | +0.79% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.36% | +0.50% |
-| UKOIL/USDT:USDT | below_1h_threshold | +0.31% | +0.45% |
-| POWER/USDT:USDT | below_1h_threshold | +0.14% | +0.29% |
+| AIN/USDT:USDT | below_1h_threshold | +2.99% | +3.11% |
+| SHROOM/USDT:USDT | below_1h_threshold | +2.82% | +2.93% |
+| AKE/USDT:USDT | below_1h_threshold | +1.26% | +1.37% |
+| POWER/USDT:USDT | below_1h_threshold | +0.73% | +0.84% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.72% | +0.83% |
 
 ## 7. 次に見るべき不足
 
