@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T18:36:28.848860+00:00
+- generated_at: 2026-09-15T18:41:28.961124+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14611**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T18:36:21.005171+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=76670.9
+- 更新: 2026-09-15T18:41:18.388149+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -1.12% price=76066.4
 - Funnel: target 1060 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +15.88% | $4,641,863.93 |
-| POWER/USDT:USDT | +7.08% | $14,603,614.06 |
-| 4/USDT:USDT | +6.74% | $1,120,320.04 |
-| AIN/USDT:USDT | +6.33% | $19,319,080.06 |
-| ZRO/USDT:USDT | +3.17% | $3,370,112.80 |
+| SAGA/USDT:USDT | +14.97% | $4,800,929.57 |
+| POWER/USDT:USDT | +5.78% | $14,638,235.59 |
+| 4/USDT:USDT | +5.76% | $1,143,653.93 |
+| AIN/USDT:USDT | +5.41% | $19,367,763.61 |
+| PONS/USDT:USDT | +2.68% | $9,590,820.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.21% | +3.54% |
-| POWER/USDT:USDT | below_1h_threshold | +2.59% | +2.93% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.56% | +1.90% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.49% | +0.83% |
-| 4/USDT:USDT | below_1h_threshold | +0.37% | +0.70% |
+| AIN/USDT:USDT | below_1h_threshold | +2.23% | +3.35% |
+| POWER/USDT:USDT | below_1h_threshold | +1.57% | +2.69% |
+| BTW/USDT:USDT | below_1h_threshold | +0.89% | +2.01% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.84% | +1.96% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +0.51% | +1.63% |
 
 ## 7. 次に見るべき不足
 
