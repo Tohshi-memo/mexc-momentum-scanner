@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T15:41:23.476186+00:00
+- generated_at: 2026-09-15T15:46:42.631917+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14598**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.11** / 初期 $100.00 (+24.11%)
-- 確定: 2909件 (Win 863 / Loss 1133 / Flat 913) / pending 0件 / skip 3164件
+- 確定: 2909件 (Win 863 / Loss 1133 / Flat 913) / pending 0件 / skip 3165件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000088 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: POWR/USDT:USDT `MARKET` EXPIRED account +0.10% 残高後 $124.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T15:41:14.791076+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.64% price=76394.5
-- Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-15T15:46:28.734302+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.68% price=76421.8
+- Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 70.5 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +74.26% | $21,655,598.02 |
-| AIN/USDT:USDT | +71.60% | $17,317,507.70 |
-| SHROOM/USDT:USDT | +58.33% | $2,399,908.86 |
-| POWER/USDT:USDT | +37.43% | $14,221,908.32 |
-| CNPY/USDT:USDT | +23.74% | $2,500,088.55 |
+| AKE/USDT:USDT | +74.05% | $21,884,132.22 |
+| AIN/USDT:USDT | +70.71% | $17,390,200.11 |
+| SHROOM/USDT:USDT | +58.33% | $2,402,480.61 |
+| POWER/USDT:USDT | +39.35% | $14,270,777.52 |
+| CNPY/USDT:USDT | +25.55% | $2,507,331.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_relative_strength | +5.51% | +4.86% |
-| STORJ/USDT:USDT | below_relative_strength | +5.13% | +4.48% |
-| POWER/USDT:USDT | below_1h_threshold | +4.40% | +3.76% |
-| SHROOM/USDT:USDT | below_1h_threshold | +4.11% | +3.47% |
-| BEAT/USDT:USDT | below_1h_threshold | +4.04% | +3.40% |
+| SHROOM/USDT:USDT | below_1h_threshold | +4.11% | +3.43% |
+| BEAT/USDT:USDT | below_1h_threshold | +4.04% | +3.36% |
+| STORJ/USDT:USDT | below_1h_threshold | +3.65% | +2.97% |
+| PONS/USDT:USDT | below_1h_threshold | +3.62% | +2.94% |
+| VVV/USDT:USDT | below_1h_threshold | +3.50% | +2.83% |
 
 ## 7. 次に見るべき不足
 
