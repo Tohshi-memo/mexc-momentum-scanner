@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T14:31:36.937815+00:00
+- generated_at: 2026-09-15T14:36:26.143411+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14597**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T14:31:24.224558+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=76228.1
+- 更新: 2026-09-15T14:36:15.655968+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.65% price=76088.9
 - Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +67.26% | $16,261,025.23 |
-| AKE/USDT:USDT | +65.96% | $19,228,642.38 |
-| SHROOM/USDT:USDT | +57.57% | $2,359,966.68 |
-| POWER/USDT:USDT | +38.46% | $13,891,207.08 |
-| BONER/USDT:USDT | +27.88% | $1,046,621.50 |
+| AIN/USDT:USDT | +66.37% | $16,318,253.26 |
+| AKE/USDT:USDT | +65.87% | $19,325,398.69 |
+| SHROOM/USDT:USDT | +61.93% | $2,364,658.38 |
+| POWER/USDT:USDT | +38.67% | $13,915,379.98 |
+| BONER/USDT:USDT | +28.22% | $1,047,252.02 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.45% | +2.92% |
-| AKE/USDT:USDT | below_1h_threshold | +1.45% | +1.92% |
-| METASTOCK/USDT:USDT | below_1h_threshold | +1.38% | +1.85% |
-| USOIL/USDT:USDT | below_1h_threshold | +1.32% | +1.79% |
-| POWER/USDT:USDT | below_1h_threshold | +1.17% | +1.64% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.45% | +3.10% |
+| AKE/USDT:USDT | below_1h_threshold | +1.49% | +2.14% |
+| ASTR/USDT:USDT | below_1h_threshold | +1.41% | +2.07% |
+| METASTOCK/USDT:USDT | below_1h_threshold | +1.38% | +2.03% |
+| USOIL/USDT:USDT | below_1h_threshold | +1.32% | +1.97% |
 
 ## 7. 次に見るべき不足
 
