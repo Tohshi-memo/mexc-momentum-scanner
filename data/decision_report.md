@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T22:56:30.463065+00:00
+- generated_at: 2026-09-15T23:01:22.173061+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14617**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T22:56:19.074727+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=75686.7
-- Funnel: target 1060 → liquid 155 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1, 4h RSI 74.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-15T23:01:11.508298+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=75691.9
+- Funnel: target 1060 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SAGA/USDT:USDT | +18.58% | $7,174,806.04 |
-| ON/USDT:USDT | +17.76% | $1,405,413.28 |
-| POWER/USDT:USDT | +11.85% | $14,901,499.01 |
-| CNPY/USDT:USDT | +11.31% | $1,771,483.01 |
-| USELESS/USDT:USDT | +6.84% | $4,847,260.27 |
+| ON/USDT:USDT | +17.90% | $1,411,074.73 |
+| SAGA/USDT:USDT | +17.28% | $7,085,529.35 |
+| POWER/USDT:USDT | +10.27% | $14,711,327.34 |
+| CNPY/USDT:USDT | +8.36% | $1,712,644.19 |
+| USELESS/USDT:USDT | +6.66% | $4,679,766.74 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_1h_threshold | +3.91% | +3.56% |
-| ON/USDT:USDT | below_1h_threshold | +3.90% | +3.55% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.53% | +2.18% |
-| NIULAI/USDT:USDT | below_1h_threshold | +2.40% | +2.04% |
-| UNI/USDT:USDT | below_1h_threshold | +2.15% | +1.80% |
+| AIN/USDT:USDT | below_1h_threshold | +0.61% | +0.53% |
+| XPL/USDT:USDT | below_1h_threshold | +0.49% | +0.41% |
+| KORU/USDT:USDT | below_1h_threshold | +0.48% | +0.40% |
+| POWER/USDT:USDT | below_1h_threshold | +0.37% | +0.29% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.34% | +0.26% |
 
 ## 7. 次に見るべき不足
 
