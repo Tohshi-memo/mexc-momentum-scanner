@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T11:46:20.376440+00:00
+- generated_at: 2026-09-15T11:51:25.953384+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14590**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T11:46:09.718763+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=76885.3
-- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.2 >= 65=1
+- 更新: 2026-09-15T11:51:14.443825+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=76826.3
+- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.0 >= 65=1, 4h RSI 96.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +93.93% | $2,045,444.38 |
-| AIN/USDT:USDT | +59.17% | $12,752,848.35 |
-| AKE/USDT:USDT | +45.38% | $11,119,512.71 |
-| POWER/USDT:USDT | +26.56% | $12,246,136.22 |
-| BONER/USDT:USDT | +24.73% | $1,010,277.48 |
+| SHROOM/USDT:USDT | +83.33% | $2,071,642.49 |
+| AIN/USDT:USDT | +60.45% | $12,853,586.79 |
+| AKE/USDT:USDT | +50.67% | $11,329,052.83 |
+| BONER/USDT:USDT | +25.85% | $1,010,819.03 |
+| POWER/USDT:USDT | +25.78% | $12,259,891.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.86% | +5.04% |
-| BTW/USDT:USDT | below_1h_threshold | +4.55% | +4.72% |
-| CAP/USDT:USDT | below_1h_threshold | +3.14% | +3.32% |
-| ACE/USDT:USDT | below_1h_threshold | +2.08% | +2.26% |
-| ASTR/USDT:USDT | below_1h_threshold | +1.71% | +1.89% |
+| CAP/USDT:USDT | below_1h_threshold | +3.97% | +4.22% |
+| BTW/USDT:USDT | below_1h_threshold | +3.38% | +3.64% |
+| ACE/USDT:USDT | below_1h_threshold | +2.07% | +2.33% |
+| ASTR/USDT:USDT | below_1h_threshold | +1.85% | +2.10% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.34% | +1.60% |
 
 ## 7. 次に見るべき不足
 
