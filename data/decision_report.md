@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T04:36:13.605697+00:00
+- generated_at: 2026-09-15T04:41:16.908506+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14563**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.20** / 初期 $100.00 (+24.20%)
-- 確定: 2907件 (Win 862 / Loss 1132 / Flat 913) / pending 2件 / skip 3126件
+- 確定: 2907件 (Win 862 / Loss 1132 / Flat 913) / pending 2件 / skip 3127件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000203 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LONGXIA/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $124.20
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T04:36:05.242231+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=77539.0
-- Funnel: target 1073 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-15T04:41:06.334942+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=77559.3
+- Funnel: target 1073 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +67.80% | $1,442,712.35 |
-| POWER/USDT:USDT | +51.50% | $7,706,075.35 |
-| AIN/USDT:USDT | +20.26% | $8,226,352.34 |
-| CNPY/USDT:USDT | +16.04% | $1,848,569.81 |
-| CYS/USDT:USDT | +9.70% | $1,608,216.87 |
+| SHROOM/USDT:USDT | +66.47% | $1,447,118.36 |
+| POWER/USDT:USDT | +45.64% | $7,889,505.94 |
+| AIN/USDT:USDT | +23.00% | $8,247,422.12 |
+| CNPY/USDT:USDT | +16.61% | $1,855,133.94 |
+| CYS/USDT:USDT | +9.86% | $1,610,863.89 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.17% | +3.32% |
-| AKE/USDT:USDT | below_1h_threshold | +2.71% | +2.86% |
-| PONS/USDT:USDT | below_1h_threshold | +2.59% | +2.74% |
-| SHROOM/USDT:USDT | below_1h_threshold | +2.19% | +2.34% |
-| SOXS/USDT:USDT | below_1h_threshold | +1.17% | +1.31% |
+| AKE/USDT:USDT | below_1h_threshold | +2.53% | +2.65% |
+| PONS/USDT:USDT | below_1h_threshold | +2.32% | +2.44% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.55% | +1.67% |
+| RAVE/USDT:USDT | below_1h_threshold | +1.33% | +1.45% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.20% | +1.32% |
 
 ## 7. 次に見るべき不足
 
