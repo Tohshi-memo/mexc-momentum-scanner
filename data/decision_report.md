@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-15T10:56:32.258483+00:00
+- generated_at: 2026-09-15T11:01:21.050377+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14589**
+- closed shadow trades: **14590**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.72% / filled 20/20。**
-- 全期間 MARKET基準: n=14589, expectancy=+0.00%
+- 全期間 MARKET基準: n=14590, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.72%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -47,18 +47,18 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,076.56** / 初期 $100.00 (+976.56%)
-- 確定: 5491件 (Win 1642 / Loss 1775 / Flat 2074) / skip 5659件
+- 確定: 5492件 (Win 1642 / Loss 1775 / Flat 2075) / skip 5659件
 - 成長率目線: 平均log +0.000433 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_6PCT` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: SHROOM/USDT:USDT `LIMIT_FIB1272` EXPIRED account +0.00% 残高後 $1,076.56
+- 最新: SHROOM/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $1,076.56
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$230.72** / 初期 $100.00 (+130.72%)
-- 確定: 3029件 (Win 837 / Loss 718 / Flat 1474) / skip 4971件
+- 確定: 3030件 (Win 837 / Loss 718 / Flat 1475) / skip 4971件
 - 成長率目線: 平均log +0.000276 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0476 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
-- 最新: SHROOM/USDT:USDT `LIMIT_5PCT` SL_HIT account +0.07% 残高後 $230.72
+- 最新: SHROOM/USDT:USDT `LIMIT_6PCT` EXPIRED account +0.00% 残高後 $230.72
 
 ## 5. Causal Adaptive DryRun ($100)
 
@@ -70,31 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T10:56:17.652820+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=77012.0
-- Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 1
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-15T11:01:08.523483+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=77012.8
+- Funnel: target 1060 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +96.21% | $1,867,949.70 |
-| AIN/USDT:USDT | +51.70% | $11,317,727.57 |
-| AKE/USDT:USDT | +34.54% | $9,209,202.89 |
-| POWER/USDT:USDT | +28.38% | $12,115,987.39 |
-| BONER/USDT:USDT | +24.93% | $1,002,756.78 |
+| SHROOM/USDT:USDT | +96.96% | $1,880,272.54 |
+| AIN/USDT:USDT | +49.45% | $11,019,743.95 |
+| AKE/USDT:USDT | +36.69% | $9,209,932.66 |
+| POWER/USDT:USDT | +28.47% | $11,963,713.03 |
+| SAGA/USDT:USDT | +17.60% | $1,516,931.73 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BONER/USDT:USDT | below_1h_threshold | +3.68% | +3.60% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.86% | +1.77% |
-| PONS/USDT:USDT | below_1h_threshold | +1.61% | +1.52% |
-| KORU/USDT:USDT | below_1h_threshold | +1.49% | +1.41% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
+| KORU/USDT:USDT | below_1h_threshold | +1.21% | +1.22% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.12% | +1.14% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.92% | +0.93% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.75% | +0.77% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
 
 ## 7. 次に見るべき不足
 
