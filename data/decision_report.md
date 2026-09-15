@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T11:26:23.010230+00:00
+- generated_at: 2026-09-15T11:31:27.803221+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14590**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.11** / 初期 $100.00 (+24.11%)
-- 確定: 2909件 (Win 863 / Loss 1133 / Flat 913) / pending 0件 / skip 3150件
+- 確定: 2909件 (Win 863 / Loss 1133 / Flat 913) / pending 0件 / skip 3151件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000262 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: POWR/USDT:USDT `MARKET` EXPIRED account +0.10% 残高後 $124.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T11:26:13.936003+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=76965.4
-- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.2 >= 65=1
+- 更新: 2026-09-15T11:31:16.658047+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=76948.9
+- Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 96.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SHROOM/USDT:USDT | +101.32% | $1,960,437.69 |
-| AIN/USDT:USDT | +57.58% | $12,102,273.56 |
-| AKE/USDT:USDT | +43.00% | $10,226,643.99 |
-| POWER/USDT:USDT | +28.27% | $12,136,276.63 |
-| BONER/USDT:USDT | +24.51% | $1,005,617.80 |
+| SHROOM/USDT:USDT | +100.75% | $1,982,920.87 |
+| AIN/USDT:USDT | +60.51% | $12,214,156.08 |
+| AKE/USDT:USDT | +50.70% | $10,548,668.76 |
+| POWER/USDT:USDT | +26.31% | $12,171,297.00 |
+| BONER/USDT:USDT | +23.95% | $1,006,170.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.64% | +3.72% |
-| CAP/USDT:USDT | below_1h_threshold | +3.28% | +3.36% |
-| ACE/USDT:USDT | below_1h_threshold | +2.85% | +2.92% |
-| ASTR/USDT:USDT | below_1h_threshold | +2.45% | +2.53% |
-| SHROOM/USDT:USDT | below_1h_threshold | +1.43% | +1.50% |
+| ASTR/USDT:USDT | below_1h_threshold | +3.07% | +3.17% |
+| ACE/USDT:USDT | below_1h_threshold | +2.70% | +2.79% |
+| BTW/USDT:USDT | below_1h_threshold | +2.51% | +2.60% |
+| CAP/USDT:USDT | below_1h_threshold | +2.47% | +2.57% |
+| KORU/USDT:USDT | below_1h_threshold | +1.21% | +1.30% |
 
 ## 7. 次に見るべき不足
 
