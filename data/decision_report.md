@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-15T07:31:14.747847+00:00
+- generated_at: 2026-09-15T07:36:21.699605+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14577**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-15T07:31:04.289726+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=77244.0
+- 更新: 2026-09-15T07:36:11.343718+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=77012.9
 - Funnel: target 1060 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AIN/USDT:USDT | +51.64% | $9,432,138.13 |
-| SHROOM/USDT:USDT | +49.43% | $1,613,284.92 |
-| POWER/USDT:USDT | +31.98% | $10,412,885.66 |
-| STORJ/USDT:USDT | +18.51% | $1,150,851.08 |
-| ASTR/USDT:USDT | +16.35% | $1,186,054.87 |
+| SHROOM/USDT:USDT | +51.51% | $1,618,762.60 |
+| AIN/USDT:USDT | +50.25% | $9,484,273.71 |
+| POWER/USDT:USDT | +30.49% | $10,450,935.56 |
+| STORJ/USDT:USDT | +17.73% | $1,164,169.93 |
+| ASTR/USDT:USDT | +17.40% | $1,202,478.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +3.64% | +3.65% |
-| SHROOM/USDT:USDT | below_1h_threshold | +2.59% | +2.60% |
-| CAP/USDT:USDT | below_1h_threshold | +1.86% | +1.87% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.83% | +1.84% |
-| ASTR/USDT:USDT | below_1h_threshold | +1.66% | +1.67% |
+| SHROOM/USDT:USDT | below_1h_threshold | +3.49% | +3.80% |
+| CNPY/USDT:USDT | below_1h_threshold | +3.40% | +3.71% |
+| AIN/USDT:USDT | below_1h_threshold | +2.80% | +3.11% |
+| ASTR/USDT:USDT | below_1h_threshold | +2.26% | +2.57% |
+| CAP/USDT:USDT | below_1h_threshold | +1.35% | +1.66% |
 
 ## 7. 次に見るべき不足
 
