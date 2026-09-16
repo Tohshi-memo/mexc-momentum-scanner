@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T01:41:18.905348+00:00
+- generated_at: 2026-09-16T01:46:17.611487+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14623**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T01:41:08.429683+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=75521.9
+- 更新: 2026-09-16T01:46:07.213653+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=75667.9
 - Funnel: target 1060 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +16.29% | $1,659,101.85 |
-| SAGA/USDT:USDT | +12.37% | $7,836,879.76 |
-| ON/USDT:USDT | +9.59% | $2,782,928.15 |
-| CNPY/USDT:USDT | +7.08% | $1,924,447.96 |
-| LONGXIA/USDT:USDT | +5.87% | $1,666,349.59 |
+| SYN/USDT:USDT | +16.66% | $1,669,469.78 |
+| CNPY/USDT:USDT | +8.99% | $1,931,351.91 |
+| ON/USDT:USDT | +8.98% | $2,799,670.62 |
+| LONGXIA/USDT:USDT | +7.83% | $1,669,818.97 |
+| USELESS/USDT:USDT | +7.29% | $4,792,538.48 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.82% | +2.10% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.89% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.48% | +1.76% |
-| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.58% |
-| BLESS/USDT:USDT | below_1h_threshold | +0.97% | +1.25% |
+| AKE/USDT:USDT | below_1h_threshold | +2.60% | +2.68% |
+| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +1.61% | +1.70% |
+| SKHYSTOCK/USDT:USDT | below_1h_threshold | +1.30% | +1.38% |
+| BLESS/USDT:USDT | below_1h_threshold | +1.12% | +1.21% |
+| CVC/USDT:USDT | below_1h_threshold | +1.10% | +1.19% |
 
 ## 7. 次に見るべき不足
 
