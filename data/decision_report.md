@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T20:21:19.204687+00:00
+- generated_at: 2026-09-16T20:26:17.067043+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14734**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T20:21:11.482570+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.34% price=76312.5
+- 更新: 2026-09-16T20:26:06.201011+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.20% price=76208.6
 - Funnel: target 1059 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +95.66% | $1,836,391.91 |
-| BULLA/USDT:USDT | +19.61% | $6,653,565.28 |
-| LONGXIA/USDT:USDT | +10.22% | $2,669,956.78 |
-| POWER/USDT:USDT | +8.69% | $5,426,789.05 |
-| CNPY/USDT:USDT | +7.12% | $1,366,248.28 |
+| BATON/USDT:USDT | +91.85% | $1,854,910.81 |
+| BULLA/USDT:USDT | +19.69% | $6,658,968.18 |
+| LONGXIA/USDT:USDT | +10.98% | $2,682,822.66 |
+| POWER/USDT:USDT | +10.22% | $5,458,887.94 |
+| CNPY/USDT:USDT | +7.73% | $1,366,543.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +3.80% | +3.46% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.52% | +3.18% |
-| BULLA/USDT:USDT | below_1h_threshold | +2.13% | +1.79% |
-| ZEC/USDT:USDT | below_1h_threshold | +1.75% | +1.41% |
-| ENA/USDT:USDT | below_1h_threshold | +1.56% | +1.22% |
+| POWER/USDT:USDT | below_relative_strength | +5.11% | +4.91% |
+| USELESS/USDT:USDT | below_1h_threshold | +3.51% | +3.31% |
+| BULLA/USDT:USDT | below_1h_threshold | +2.15% | +1.95% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.55% | +1.35% |
+| JTO/USDT:USDT | below_1h_threshold | +1.45% | +1.25% |
 
 ## 7. 次に見るべき不足
 
