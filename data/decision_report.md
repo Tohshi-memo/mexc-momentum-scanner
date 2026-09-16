@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T15:01:29.908916+00:00
+- generated_at: 2026-09-16T15:06:26.347031+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14701**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T15:01:15.399198+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=75687.1
+- 更新: 2026-09-16T15:06:15.589757+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=75641.0
 - Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +123.28% | $25,579,866.06 |
-| BR/USDT:USDT | +122.75% | $33,493,587.36 |
-| LSK/USDT:USDT | +48.78% | $29,265,574.00 |
-| HEI/USDT:USDT | +18.73% | $1,099,263.45 |
-| 4/USDT:USDT | +17.44% | $1,649,554.14 |
+| BR/USDT:USDT | +127.75% | $33,634,929.71 |
+| SYN/USDT:USDT | +119.48% | $25,681,413.76 |
+| LSK/USDT:USDT | +51.71% | $29,463,669.00 |
+| 4/USDT:USDT | +18.27% | $1,666,488.17 |
+| HEI/USDT:USDT | +17.31% | $1,105,605.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.34% |
-| TESLA/USDT:USDT | below_1h_threshold | +1.24% | +1.20% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.98% | +0.94% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +0.88% | +0.84% |
-| LSK/USDT:USDT | below_1h_threshold | +0.70% | +0.66% |
+| LSK/USDT:USDT | below_1h_threshold | +2.68% | +2.71% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.41% | +1.44% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.40% |
+| TESLA/USDT:USDT | below_1h_threshold | +1.24% | +1.26% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.14% | +1.16% |
 
 ## 7. 次に見るべき不足
 
