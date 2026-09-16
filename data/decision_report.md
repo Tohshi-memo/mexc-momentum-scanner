@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T18:41:25.201242+00:00
+- generated_at: 2026-09-16T18:46:36.708725+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14730**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3244件
+- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3245件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000380 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CNPY/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T18:41:12.322445+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=75857.9
-- Funnel: target 1059 → liquid 153 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.0 >= 65=1
+- 更新: 2026-09-16T18:46:21.040070+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.46% price=76024.1
+- Funnel: target 1059 → liquid 153 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=45, below_relative_strength=2, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +67.49% | $1,335,007.42 |
-| BULLA/USDT:USDT | +21.37% | $6,344,953.17 |
-| ZEC/USDT:USDT | +8.22% | $620,958,153.35 |
-| 4STOCK/USDT:USDT | +7.55% | $1,083,007.37 |
-| ON/USDT:USDT | +7.33% | $3,643,105.63 |
+| BATON/USDT:USDT | +68.29% | $1,357,923.05 |
+| BULLA/USDT:USDT | +22.07% | $6,354,653.82 |
+| ZEC/USDT:USDT | +8.52% | $629,173,414.79 |
+| BR/USDT:USDT | +8.27% | $40,100,692.11 |
+| 4STOCK/USDT:USDT | +7.45% | $1,083,498.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4STOCK/USDT:USDT | below_relative_strength | +5.13% | +4.89% |
-| ON/USDT:USDT | below_1h_threshold | +4.83% | +4.58% |
-| ENA/USDT:USDT | below_1h_threshold | +4.38% | +4.14% |
-| ARB/USDT:USDT | below_1h_threshold | +4.24% | +4.00% |
-| UNI/USDT:USDT | below_1h_threshold | +4.03% | +3.79% |
+| 4STOCK/USDT:USDT | below_relative_strength | +5.23% | +4.77% |
+| ARB/USDT:USDT | below_relative_strength | +5.05% | +4.59% |
+| ENA/USDT:USDT | below_1h_threshold | +4.87% | +4.41% |
+| ON/USDT:USDT | below_1h_threshold | +4.45% | +3.99% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.86% | +3.40% |
 
 ## 7. 次に見るべき不足
 
