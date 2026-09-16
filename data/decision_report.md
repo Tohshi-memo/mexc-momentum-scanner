@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T09:46:32.358782+00:00
+- generated_at: 2026-09-16T09:51:30.164314+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14656**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$124.64** / 初期 $100.00 (+24.64%)
-- 確定: 2945件 (Win 876 / Loss 1156 / Flat 913) / pending 3件 / skip 3179件
+- 確定: 2945件 (Win 876 / Loss 1156 / Flat 913) / pending 4件 / skip 3179件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000360 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LSK/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $124.64
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T09:46:16.997890+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.24% price=75875.4
+- 更新: 2026-09-16T09:51:16.862073+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=75899.8
 - Funnel: target 1057 → liquid 154 → pre 50 → checked 50 → surge 2 → strict 1
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.6 >= 65=1
+- Strict後reject: 4h RSI 73.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +107.59% | $14,825,300.95 |
-| LSK/USDT:USDT | +35.84% | $20,669,779.21 |
-| USELESS/USDT:USDT | +17.88% | $6,871,515.24 |
-| LONGXIA/USDT:USDT | +13.21% | $2,622,047.67 |
-| SKYAI/USDT:USDT | +13.20% | $1,509,294.06 |
+| SYN/USDT:USDT | +97.05% | $15,111,088.09 |
+| LSK/USDT:USDT | +32.59% | $21,099,605.59 |
+| USELESS/USDT:USDT | +17.50% | $6,973,855.91 |
+| LONGXIA/USDT:USDT | +13.00% | $2,633,016.22 |
+| SKYAI/USDT:USDT | +12.97% | $1,565,277.94 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +2.64% | +2.40% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.56% | +2.33% |
-| ARB/USDT:USDT | below_1h_threshold | +2.47% | +2.24% |
-| CNPY/USDT:USDT | below_1h_threshold | +2.28% | +2.04% |
-| RAY/USDT:USDT | below_1h_threshold | +1.86% | +1.63% |
+| LSK/USDT:USDT | below_1h_threshold | +4.49% | +4.22% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +2.88% | +2.61% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.81% | +2.54% |
+| ARB/USDT:USDT | below_1h_threshold | +2.40% | +2.13% |
+| RAY/USDT:USDT | below_1h_threshold | +2.05% | +1.78% |
 
 ## 7. 次に見るべき不足
 
