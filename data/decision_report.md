@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T12:36:25.433071+00:00
+- generated_at: 2026-09-16T12:41:19.669640+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14691**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T12:36:14.981149+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=75960.7
+- 更新: 2026-09-16T12:41:08.760868+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.33% price=75960.6
 - Funnel: target 1058 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +110.53% | $22,152,563.95 |
-| BR/USDT:USDT | +109.89% | $27,017,560.41 |
-| LSK/USDT:USDT | +58.91% | $26,532,923.71 |
-| BULLA/USDT:USDT | +44.01% | $2,442,046.17 |
-| USELESS/USDT:USDT | +15.03% | $7,856,887.00 |
+| BR/USDT:USDT | +102.23% | $27,330,448.02 |
+| SYN/USDT:USDT | +102.20% | $22,495,513.64 |
+| LSK/USDT:USDT | +55.35% | $26,631,201.22 |
+| BULLA/USDT:USDT | +50.86% | $2,476,048.24 |
+| USELESS/USDT:USDT | +15.50% | $7,916,586.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BR/USDT:USDT | below_1h_threshold | +3.61% | +3.93% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.69% | +2.02% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.22% | +1.54% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.90% | +2.22% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.84% | +2.17% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.19% | +1.51% |
 | KORU/USDT:USDT | below_1h_threshold | +1.14% | +1.46% |
-| ARB/USDT:USDT | below_1h_threshold | +1.09% | +1.42% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.03% | +1.36% |
 
 ## 7. 次に見るべき不足
 
