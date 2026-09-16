@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T22:36:17.320009+00:00
+- generated_at: 2026-09-16T22:41:20.203316+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14743**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T22:36:09.372911+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.35% price=75675.4
-- Funnel: target 1059 → liquid 155 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-16T22:41:09.174108+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.31% price=75701.8
+- Funnel: target 1059 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +65.16% | $2,199,196.09 |
-| BULLA/USDT:USDT | +39.37% | $7,465,420.79 |
-| HNT/USDT:USDT | +33.96% | $3,660,451.89 |
-| LONGXIA/USDT:USDT | +15.64% | $2,876,097.03 |
-| POWER/USDT:USDT | +9.57% | $5,157,896.40 |
+| BATON/USDT:USDT | +63.11% | $2,206,013.26 |
+| BULLA/USDT:USDT | +35.09% | $7,573,205.39 |
+| HNT/USDT:USDT | +32.84% | $3,740,781.26 |
+| LONGXIA/USDT:USDT | +13.84% | $2,884,732.95 |
+| POWER/USDT:USDT | +10.46% | $5,163,014.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.95% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.80% | +2.15% |
-| UAI/USDT:USDT | below_1h_threshold | +1.26% | +1.61% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.71% | +1.05% |
-| ON/USDT:USDT | below_1h_threshold | +0.51% | +0.85% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.06% | +4.37% |
+| UAI/USDT:USDT | below_1h_threshold | +3.15% | +3.46% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +2.61% | +2.92% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.36% | +2.67% |
+| SAGA/USDT:USDT | below_1h_threshold | +0.60% | +0.91% |
 
 ## 7. 次に見るべき不足
 
