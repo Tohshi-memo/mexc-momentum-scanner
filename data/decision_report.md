@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T19:06:27.411512+00:00
+- generated_at: 2026-09-16T19:11:26.849823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14730**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T19:06:16.623790+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.41% price=75913.7
-- Funnel: target 1059 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-16T19:11:18.326158+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.25% price=75786.5
+- Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +73.01% | $1,404,704.51 |
-| BULLA/USDT:USDT | +20.04% | $6,414,192.21 |
-| LONGXIA/USDT:USDT | +8.49% | $2,618,478.17 |
-| ZEC/USDT:USDT | +8.25% | $609,146,411.91 |
-| LIT/USDT:USDT | +8.14% | $3,758,569.05 |
+| BATON/USDT:USDT | +65.96% | $1,416,864.60 |
+| BULLA/USDT:USDT | +18.85% | $6,458,171.53 |
+| LIT/USDT:USDT | +8.54% | $3,809,159.15 |
+| CNPY/USDT:USDT | +8.24% | $1,485,895.86 |
+| LONGXIA/USDT:USDT | +8.20% | $2,627,249.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.83% | +4.42% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.15% | +1.73% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.88% | +1.47% |
-| LIT/USDT:USDT | below_1h_threshold | +1.86% | +1.45% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.74% | +1.32% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.83% | +4.58% |
+| POWER/USDT:USDT | below_1h_threshold | +4.02% | +3.77% |
+| LIT/USDT:USDT | below_1h_threshold | +2.25% | +2.01% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.08% | +1.84% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.82% | +1.57% |
 
 ## 7. 次に見るべき不足
 
