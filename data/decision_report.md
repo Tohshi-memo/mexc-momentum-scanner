@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T08:31:23.167937+00:00
+- generated_at: 2026-09-16T08:36:23.554396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14653**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T08:31:12.660448+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.43% price=75401.9
+- 更新: 2026-09-16T08:36:15.014797+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.34% price=75467.6
 - Funnel: target 1054 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +118.75% | $11,694,877.87 |
-| LSK/USDT:USDT | +19.28% | $19,559,788.66 |
-| USELESS/USDT:USDT | +16.90% | $6,165,644.66 |
-| LONGXIA/USDT:USDT | +13.92% | $2,589,844.55 |
-| BTW/USDT:USDT | +9.44% | $4,868,581.50 |
+| SYN/USDT:USDT | +122.54% | $11,959,017.88 |
+| LSK/USDT:USDT | +19.93% | $19,608,526.73 |
+| USELESS/USDT:USDT | +16.26% | $6,182,381.67 |
+| LONGXIA/USDT:USDT | +13.44% | $2,597,666.07 |
+| BTW/USDT:USDT | +9.27% | $4,888,858.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +1.16% | +1.59% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +1.30% |
-| SKYAI/USDT:USDT | below_1h_threshold | +0.85% | +1.27% |
-| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +1.25% |
-| CNPY/USDT:USDT | below_1h_threshold | +0.47% | +0.90% |
+| 4/USDT:USDT | below_1h_threshold | +1.26% | +1.60% |
+| SKYAI/USDT:USDT | below_1h_threshold | +1.05% | +1.39% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +1.21% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +1.16% |
+| CNPY/USDT:USDT | below_1h_threshold | +0.73% | +1.07% |
 
 ## 7. 次に見るべき不足
 
