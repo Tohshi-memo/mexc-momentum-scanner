@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T03:01:12.543183+00:00
+- generated_at: 2026-09-16T03:06:16.104144+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14624**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T03:01:05.265813+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=75888.0
+- 更新: 2026-09-16T03:06:05.597548+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=75910.2
 - Funnel: target 1060 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +21.44% | $1,894,642.17 |
-| ON/USDT:USDT | +13.88% | $3,032,593.07 |
-| CNPY/USDT:USDT | +10.98% | $1,858,310.16 |
-| LONGXIA/USDT:USDT | +9.94% | $1,703,960.78 |
-| USELESS/USDT:USDT | +7.50% | $4,900,145.41 |
+| SYN/USDT:USDT | +22.30% | $1,913,710.41 |
+| ON/USDT:USDT | +13.75% | $3,040,000.01 |
+| LONGXIA/USDT:USDT | +10.14% | $1,709,187.79 |
+| USELESS/USDT:USDT | +8.26% | $4,909,017.00 |
+| CNPY/USDT:USDT | +7.50% | $1,866,579.33 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.66% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.68% | +1.63% |
-| MUU/USDT:USDT | below_1h_threshold | +1.57% | +1.53% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.43% | +1.39% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.27% | +1.22% |
+| KORU/USDT:USDT | below_1h_threshold | +2.71% | +2.63% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.68% | +1.61% |
+| LSK/USDT:USDT | below_1h_threshold | +1.62% | +1.54% |
+| MUU/USDT:USDT | below_1h_threshold | +1.57% | +1.50% |
+| SYN/USDT:USDT | below_1h_threshold | +1.53% | +1.45% |
 
 ## 7. 次に見るべき不足
 
