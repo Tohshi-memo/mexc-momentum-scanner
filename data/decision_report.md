@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T17:11:23.585282+00:00
+- generated_at: 2026-09-16T17:16:27.753794+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14723**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T17:11:14.934605+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=75666.9
+- 更新: 2026-09-16T17:16:17.222621+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=75720.3
 - Funnel: target 1059 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +14.50% | $34,782,576.94 |
-| BULLA/USDT:USDT | +8.51% | $5,529,249.96 |
-| CNPY/USDT:USDT | +5.45% | $1,460,217.04 |
-| BEAT/USDT:USDT | +4.19% | $2,786,852.06 |
-| POWER/USDT:USDT | +3.81% | $5,960,066.05 |
+| LSK/USDT:USDT | +15.25% | $35,315,328.76 |
+| BULLA/USDT:USDT | +10.78% | $5,566,644.30 |
+| POWER/USDT:USDT | +4.45% | $5,981,454.15 |
+| CNPY/USDT:USDT | +4.41% | $1,486,434.35 |
+| BEAT/USDT:USDT | +3.68% | $2,805,243.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +2.58% | +2.67% |
-| POWER/USDT:USDT | below_1h_threshold | +1.93% | +2.01% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.83% | +1.92% |
-| MUU/USDT:USDT | below_1h_threshold | +0.74% | +0.83% |
-| USOIL/USDT:USDT | below_1h_threshold | +0.56% | +0.64% |
+| BULLA/USDT:USDT | below_1h_threshold | +3.67% | +3.69% |
+| POWER/USDT:USDT | below_1h_threshold | +2.55% | +2.57% |
+| BR/USDT:USDT | below_1h_threshold | +0.87% | +0.89% |
+| MUU/USDT:USDT | below_1h_threshold | +0.74% | +0.76% |
+| LIT/USDT:USDT | below_1h_threshold | +0.56% | +0.58% |
 
 ## 7. 次に見るべき不足
 
