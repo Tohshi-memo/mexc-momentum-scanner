@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T14:51:37.793458+00:00
+- generated_at: 2026-09-16T14:56:29.714565+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14699**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T14:51:21.964668+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=75612.5
+- 更新: 2026-09-16T14:56:15.846125+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=75558.7
 - Funnel: target 1059 → liquid 156 → pre 50 → checked 50 → surge 3 → strict 2
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 69.4 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +128.18% | $34,651,462.00 |
-| SYN/USDT:USDT | +118.13% | $25,285,588.17 |
-| LSK/USDT:USDT | +53.28% | $29,930,172.86 |
-| HEI/USDT:USDT | +17.67% | $1,094,988.77 |
-| BULLA/USDT:USDT | +17.64% | $3,585,399.32 |
+| BR/USDT:USDT | +127.44% | $34,774,782.29 |
+| SYN/USDT:USDT | +122.91% | $25,436,579.91 |
+| LSK/USDT:USDT | +49.71% | $30,108,264.25 |
+| HEI/USDT:USDT | +18.38% | $1,097,286.67 |
+| 4/USDT:USDT | +17.15% | $1,714,369.95 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.67% | +3.67% |
-| UAI/USDT:USDT | below_1h_threshold | +3.17% | +3.18% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.13% |
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +1.93% |
-| SYN/USDT:USDT | below_1h_threshold | +1.72% | +1.72% |
+| SYN/USDT:USDT | below_1h_threshold | +4.00% | +4.08% |
+| SPCXSTOCK/USDT:USDT | below_1h_threshold | +3.67% | +3.74% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.13% | +2.20% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +1.93% | +2.00% |
+| 4/USDT:USDT | below_1h_threshold | +1.74% | +1.81% |
 
 ## 7. 次に見るべき不足
 
