@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T12:56:34.781055+00:00
+- generated_at: 2026-09-16T13:01:27.833926+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14692**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T12:56:21.063697+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.39% price=75912.3
-- Funnel: target 1058 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 68.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-16T13:01:16.978900+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=75854.7
+- Funnel: target 1058 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +115.86% | $28,765,689.45 |
-| SYN/USDT:USDT | +112.74% | $23,016,408.30 |
-| LSK/USDT:USDT | +51.33% | $27,127,933.44 |
-| BULLA/USDT:USDT | +28.45% | $2,628,124.08 |
-| USELESS/USDT:USDT | +16.81% | $8,064,011.68 |
+| SYN/USDT:USDT | +115.56% | $23,068,001.12 |
+| BR/USDT:USDT | +110.73% | $27,399,485.07 |
+| LSK/USDT:USDT | +50.24% | $26,986,392.14 |
+| USELESS/USDT:USDT | +17.82% | $7,916,148.47 |
+| BULLA/USDT:USDT | +15.66% | $2,656,130.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ARB/USDT:USDT | below_1h_threshold | +3.42% | +3.82% |
-| SKYAI/USDT:USDT | below_1h_threshold | +2.39% | +2.78% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.97% | +2.36% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.25% | +1.64% |
-| KORU/USDT:USDT | below_1h_threshold | +1.14% | +1.53% |
+| LSK/USDT:USDT | below_1h_threshold | +1.46% | +1.56% |
+| AKE/USDT:USDT | below_1h_threshold | +1.30% | +1.40% |
+| SYN/USDT:USDT | below_1h_threshold | +1.14% | +1.24% |
+| BTW/USDT:USDT | below_1h_threshold | +0.79% | +0.90% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.70% | +0.80% |
 
 ## 7. 次に見るべき不足
 
