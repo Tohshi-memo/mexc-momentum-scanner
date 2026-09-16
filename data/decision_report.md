@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T23:01:15.157832+00:00
+- generated_at: 2026-09-16T23:06:27.068388+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14746**
 
@@ -63,37 +63,38 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3262件
+- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3263件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000302 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CNPY/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T23:01:06.784324+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=75670.8
-- Funnel: target 1059 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-16T23:06:14.083250+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.13% price=75745.0
+- Funnel: target 1059 → liquid 154 → pre 50 → checked 50 → surge 1 → strict 1
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +52.37% | $2,217,932.71 |
-| HNT/USDT:USDT | +32.58% | $4,073,853.83 |
-| BULLA/USDT:USDT | +31.67% | $7,806,170.20 |
-| LONGXIA/USDT:USDT | +13.45% | $2,846,109.22 |
-| POWER/USDT:USDT | +11.42% | $4,879,072.35 |
+| BATON/USDT:USDT | +56.14% | $2,228,285.04 |
+| HNT/USDT:USDT | +33.49% | $4,133,840.37 |
+| BULLA/USDT:USDT | +18.51% | $8,069,951.02 |
+| LONGXIA/USDT:USDT | +13.10% | $2,851,073.91 |
+| POWER/USDT:USDT | +11.08% | $4,882,013.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +2.85% | +2.82% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.46% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.41% | +1.38% |
-| POWER/USDT:USDT | below_1h_threshold | +0.32% | +0.29% |
-| ON/USDT:USDT | below_1h_threshold | +0.21% | +0.18% |
+| BATON/USDT:USDT | below_1h_threshold | +4.30% | +4.17% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.49% | +1.36% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.41% | +1.28% |
+| ARB/USDT:USDT | below_1h_threshold | +1.03% | +0.91% |
+| ZEC/USDT:USDT | below_1h_threshold | +1.02% | +0.89% |
 
 ## 7. 次に見るべき不足
 
