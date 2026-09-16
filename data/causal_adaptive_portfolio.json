@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 124.8869811854739,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-09-16T06:51:14.858710+00:00",
+  "updated_at": "2026-09-16T06:56:19.633231+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 5.256052504142945,
   "loss_streak": 1,
@@ -562200,6 +562200,108 @@
       "direction": "short",
       "risk_pct": 0.175,
       "relative_strength": 24.337794105376727,
+      "decision": {
+        "strategy": "MARKET",
+        "direction": "short",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0004013975087896213,
+        "robust_score": 0.0004013975087896213,
+        "causal_history_count": 14644,
+        "fast": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 1.1108015908055522,
+          "effective_ev_pct": 1.1108015908055522,
+          "avg_log_return": 0.0005499292606594918,
+          "geometric_return_pct": 0.055008049947757875,
+          "avg_account_return_pct": 0.0553243275360399,
+          "max_drawdown_pct": 1.2259538316291125,
+          "max_loss_streak": 5
+        },
+        "recent": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 50,
+          "filled": 50,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 1.1108015908055522,
+          "effective_ev_pct": 1.1108015908055522,
+          "avg_log_return": 0.0005499292606594918,
+          "geometric_return_pct": 0.055008049947757875,
+          "avg_account_return_pct": 0.0553243275360399,
+          "max_drawdown_pct": 1.2259538316291125,
+          "max_loss_streak": 5
+        },
+        "mid": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 200,
+          "filled": 200,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": 0.6424397610402326,
+          "effective_ev_pct": 0.6424397610402326,
+          "avg_log_return": 0.0003215920983280934,
+          "geometric_return_pct": 0.03216438146107503,
+          "avg_account_return_pct": 0.03247515417528372,
+          "max_drawdown_pct": 1.7595056087631984,
+          "max_loss_streak": 9
+        },
+        "long": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.06488041815716494,
+          "effective_ev_pct": -0.06488041815716494,
+          "avg_log_return": 1.639190618981827e-05,
+          "geometric_return_pct": 0.0016392040537827057,
+          "avg_account_return_pct": 0.001927920406057753,
+          "max_drawdown_pct": 7.046458052460583,
+          "max_loss_streak": 14
+        },
+        "all": {
+          "strategy": "MARKET",
+          "direction": "short",
+          "total": 1000,
+          "filled": 1000,
+          "fill_rate": 1.0,
+          "avg_pnl_pct": -0.06488041815716494,
+          "effective_ev_pct": -0.06488041815716494,
+          "avg_log_return": 1.639190618981827e-05,
+          "geometric_return_pct": 0.0016392040537827057,
+          "avg_account_return_pct": 0.001927920406057753,
+          "max_drawdown_pct": 7.046458052460583,
+          "max_loss_streak": 14
+        },
+        "alternatives": [
+          {
+            "strategy": "LIMIT_9PCT_LONG",
+            "direction": "long",
+            "causal_score": 9.01727121657951e-05
+          },
+          {
+            "strategy": "LIMIT_5PCT",
+            "direction": "short",
+            "causal_score": 5.2623309395151874e-05
+          }
+        ]
+      }
+    },
+    "USELESS/USDT:USDT|2026-09-16T06:56:11.077679+00:00": {
+      "key": "USELESS/USDT:USDT|2026-09-16T06:56:11.077679+00:00",
+      "symbol": "USELESS/USDT:USDT",
+      "detected_at": "2026-09-16T06:56:11.077679+00:00",
+      "registered_at": "2026-09-16T06:56:19.586403+00:00",
+      "signal_batch": "2026-09-16T06:56Z",
+      "status": "pending",
+      "strategy": "MARKET",
+      "direction": "short",
+      "risk_pct": 0.175,
+      "relative_strength": 5.489321057302405,
       "decision": {
         "strategy": "MARKET",
         "direction": "short",
