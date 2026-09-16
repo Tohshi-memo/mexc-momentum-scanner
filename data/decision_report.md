@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T18:51:39.376623+00:00
+- generated_at: 2026-09-16T18:56:37.945479+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14730**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T18:51:22.388309+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.20% price=75824.0
-- Funnel: target 1059 → liquid 154 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.3 >= 65=1, 4h RSI n/a=1, 4h RSI 67.5 >= 65=1
+- 更新: 2026-09-16T18:56:22.184980+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=75566.2
+- Funnel: target 1059 → liquid 154 → pre 50 → checked 50 → surge 3 → strict 2
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 74.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +75.44% | $1,378,247.81 |
-| BULLA/USDT:USDT | +21.53% | $6,367,692.37 |
-| ZEC/USDT:USDT | +8.13% | $634,494,262.23 |
-| CNPY/USDT:USDT | +7.52% | $1,504,955.74 |
-| LIT/USDT:USDT | +7.42% | $4,070,518.75 |
+| BATON/USDT:USDT | +67.64% | $1,394,849.98 |
+| BULLA/USDT:USDT | +21.63% | $6,386,473.53 |
+| BR/USDT:USDT | +7.73% | $40,464,047.46 |
+| LONGXIA/USDT:USDT | +7.68% | $2,680,691.07 |
+| ZEC/USDT:USDT | +7.63% | $639,218,403.30 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ON/USDT:USDT | below_1h_threshold | +4.45% | +4.25% |
-| CNPY/USDT:USDT | below_1h_threshold | +4.36% | +4.17% |
-| LIT/USDT:USDT | below_1h_threshold | +4.19% | +3.99% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +4.00% | +3.80% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +3.81% | +3.62% |
+| ARB/USDT:USDT | below_1h_threshold | +4.86% | +5.01% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +4.23% | +4.37% |
+| ON/USDT:USDT | below_1h_threshold | +4.22% | +4.37% |
+| CNPY/USDT:USDT | below_1h_threshold | +4.21% | +4.35% |
+| LIT/USDT:USDT | below_1h_threshold | +4.14% | +4.29% |
 
 ## 7. 次に見るべき不足
 
