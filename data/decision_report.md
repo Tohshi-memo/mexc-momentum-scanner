@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T09:01:14.875085+00:00
+- generated_at: 2026-09-16T09:06:14.682360+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14654**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T09:01:04.280464+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=75688.4
+- 更新: 2026-09-16T09:06:04.508718+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=75898.1
 - Funnel: target 1054 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +114.82% | $13,239,697.98 |
-| LSK/USDT:USDT | +25.94% | $19,463,562.69 |
-| USELESS/USDT:USDT | +21.33% | $6,318,999.85 |
-| LONGXIA/USDT:USDT | +12.15% | $2,562,712.19 |
-| BTW/USDT:USDT | +11.02% | $4,510,766.19 |
+| SYN/USDT:USDT | +120.83% | $13,571,896.33 |
+| LSK/USDT:USDT | +26.37% | $19,576,477.18 |
+| USELESS/USDT:USDT | +20.30% | $6,410,285.66 |
+| LONGXIA/USDT:USDT | +12.25% | $2,565,187.71 |
+| MARSCOIN/USDT:USDT | +10.52% | $1,698,915.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.88% |
-| NICKEL/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
-| ALUMINUM/USDT:USDT | below_1h_threshold | +0.67% | +0.68% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
-| LINSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
+| SYN/USDT:USDT | below_1h_threshold | +2.32% | +2.06% |
+| SKYAI/USDT:USDT | below_1h_threshold | +2.09% | +1.83% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.10% | +0.83% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.60% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.86% | +0.59% |
 
 ## 7. 次に見るべき不足
 
