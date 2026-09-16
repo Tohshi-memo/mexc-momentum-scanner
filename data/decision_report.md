@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T07:56:26.185107+00:00
+- generated_at: 2026-09-16T08:01:34.163995+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14651**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T07:56:14.145184+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=75763.0
-- Funnel: target 1054 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-16T08:01:23.745043+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=75694.2
+- Funnel: target 1054 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +157.47% | $8,534,937.46 |
-| LSK/USDT:USDT | +24.10% | $20,072,762.08 |
-| USELESS/USDT:USDT | +17.79% | $5,994,310.36 |
-| LONGXIA/USDT:USDT | +14.16% | $2,608,373.28 |
-| MARSCOIN/USDT:USDT | +9.92% | $1,613,580.12 |
+| SYN/USDT:USDT | +150.61% | $8,987,250.17 |
+| LSK/USDT:USDT | +25.21% | $18,979,704.15 |
+| USELESS/USDT:USDT | +17.99% | $5,996,548.62 |
+| LONGXIA/USDT:USDT | +13.97% | $2,542,372.79 |
+| MARSCOIN/USDT:USDT | +10.54% | $1,603,831.28 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +4.43% | +4.74% |
-| ARB/USDT:USDT | below_1h_threshold | +1.50% | +1.81% |
-| KORU/USDT:USDT | below_1h_threshold | +1.36% | +1.67% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.35% | +1.66% |
-| SNXX/USDT:USDT | below_1h_threshold | +0.89% | +1.20% |
+| LSK/USDT:USDT | below_1h_threshold | +1.60% | +1.64% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.91% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.82% | +0.87% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.47% | +0.51% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +0.36% | +0.41% |
 
 ## 7. 次に見るべき不足
 
