@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T21:21:29.779668+00:00
+- generated_at: 2026-09-16T21:26:38.919657+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14736**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T21:21:17.464137+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=76091.2
-- Funnel: target 1059 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-16T21:26:28.346087+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=76040.0
+- Funnel: target 1059 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +92.27% | $2,022,220.55 |
-| BULLA/USDT:USDT | +26.92% | $6,900,473.40 |
-| HNT/USDT:USDT | +19.67% | $1,909,672.08 |
-| LONGXIA/USDT:USDT | +16.03% | $2,778,470.59 |
-| POWER/USDT:USDT | +10.64% | $5,260,431.94 |
+| BATON/USDT:USDT | +87.59% | $2,033,528.51 |
+| BULLA/USDT:USDT | +26.94% | $6,918,865.93 |
+| HNT/USDT:USDT | +20.60% | $1,984,524.60 |
+| LONGXIA/USDT:USDT | +14.42% | $2,792,390.33 |
+| POWER/USDT:USDT | +11.21% | $5,272,117.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.82% | +2.89% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.41% | +1.49% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.31% | +1.38% |
-| POWER/USDT:USDT | below_1h_threshold | +1.19% | +1.26% |
-| ARB/USDT:USDT | below_1h_threshold | +1.04% | +1.11% |
+| BATON/USDT:USDT | below_1h_threshold | +3.53% | +3.67% |
+| POWER/USDT:USDT | below_1h_threshold | +1.83% | +1.97% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +1.31% | +1.45% |
+| HEI/USDT:USDT | below_1h_threshold | +0.97% | +1.11% |
+| ARB/USDT:USDT | below_1h_threshold | +0.69% | +0.83% |
 
 ## 7. 次に見るべき不足
 
