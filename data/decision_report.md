@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T13:21:19.211543+00:00
+- generated_at: 2026-09-16T13:26:18.919213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14692**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T13:21:10.559751+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.26% price=75737.8
+- 更新: 2026-09-16T13:26:08.402404+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.29% price=75711.4
 - Funnel: target 1058 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BR/USDT:USDT | +115.46% | $28,781,161.99 |
-| SYN/USDT:USDT | +113.23% | $23,714,839.81 |
-| LSK/USDT:USDT | +38.10% | $28,049,466.15 |
-| USELESS/USDT:USDT | +17.59% | $8,021,632.64 |
-| ARB/USDT:USDT | +14.48% | $88,125,213.56 |
+| SYN/USDT:USDT | +120.22% | $23,839,613.71 |
+| BR/USDT:USDT | +115.02% | $29,048,520.58 |
+| LSK/USDT:USDT | +37.59% | $28,219,922.50 |
+| USELESS/USDT:USDT | +16.62% | $8,029,184.39 |
+| ARB/USDT:USDT | +13.57% | $89,189,983.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZIL/USDT:USDT | below_1h_threshold | +1.58% | +1.83% |
-| 4/USDT:USDT | below_1h_threshold | +0.87% | +1.13% |
-| VVV/USDT:USDT | below_1h_threshold | +0.77% | +1.03% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.77% | +1.03% |
-| BR/USDT:USDT | below_1h_threshold | +0.74% | +1.00% |
+| SYN/USDT:USDT | below_1h_threshold | +2.39% | +2.68% |
+| VVV/USDT:USDT | below_1h_threshold | +1.03% | +1.32% |
+| ZIL/USDT:USDT | below_1h_threshold | +1.01% | +1.30% |
+| BR/USDT:USDT | below_1h_threshold | +0.97% | +1.26% |
+| RAY/USDT:USDT | below_1h_threshold | +0.86% | +1.15% |
 
 ## 7. 次に見るべき不足
 
