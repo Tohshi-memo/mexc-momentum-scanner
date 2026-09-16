@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T17:21:14.272402+00:00
+- generated_at: 2026-09-16T17:26:19.343932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14723**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T17:21:03.470980+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=75699.2
+- 更新: 2026-09-16T17:26:10.516397+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=75725.7
 - Funnel: target 1059 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LSK/USDT:USDT | +12.43% | $35,745,692.90 |
-| BULLA/USDT:USDT | +11.15% | $5,672,729.59 |
-| HEI/USDT:USDT | +4.73% | $1,580,274.48 |
-| CNPY/USDT:USDT | +4.68% | $1,486,969.48 |
-| BEAT/USDT:USDT | +3.55% | $2,816,951.18 |
+| BULLA/USDT:USDT | +10.32% | $5,681,058.15 |
+| LSK/USDT:USDT | +10.15% | $35,928,585.86 |
+| HEI/USDT:USDT | +6.16% | $1,601,791.72 |
+| CNPY/USDT:USDT | +5.31% | $1,487,392.43 |
+| POWER/USDT:USDT | +3.99% | $6,009,999.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BULLA/USDT:USDT | below_1h_threshold | +4.13% | +4.18% |
-| HEI/USDT:USDT | below_1h_threshold | +1.88% | +1.93% |
-| POWER/USDT:USDT | below_1h_threshold | +1.61% | +1.65% |
-| LIT/USDT:USDT | below_1h_threshold | +0.92% | +0.96% |
-| ZRO/USDT:USDT | below_1h_threshold | +0.85% | +0.90% |
+| BULLA/USDT:USDT | below_1h_threshold | +4.15% | +4.16% |
+| HEI/USDT:USDT | below_1h_threshold | +3.14% | +3.15% |
+| BR/USDT:USDT | below_1h_threshold | +2.45% | +2.46% |
+| POWER/USDT:USDT | below_1h_threshold | +2.10% | +2.11% |
+| ON/USDT:USDT | below_1h_threshold | +1.38% | +1.40% |
 
 ## 7. 次に見るべき不足
 
