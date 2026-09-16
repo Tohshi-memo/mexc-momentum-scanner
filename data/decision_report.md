@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T08:56:20.346886+00:00
+- generated_at: 2026-09-16T09:01:14.875085+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14654**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T08:56:11.975962+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=75612.5
-- Funnel: target 1054 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-16T09:01:04.280464+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=75688.4
+- Funnel: target 1054 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +113.84% | $13,069,124.59 |
-| LSK/USDT:USDT | +28.20% | $20,187,089.19 |
-| USELESS/USDT:USDT | +19.38% | $6,345,489.32 |
-| LONGXIA/USDT:USDT | +12.28% | $2,610,543.16 |
-| BTW/USDT:USDT | +10.83% | $4,957,267.25 |
+| SYN/USDT:USDT | +114.82% | $13,239,697.98 |
+| LSK/USDT:USDT | +25.94% | $19,463,562.69 |
+| USELESS/USDT:USDT | +21.33% | $6,318,999.85 |
+| LONGXIA/USDT:USDT | +12.15% | $2,562,712.19 |
+| BTW/USDT:USDT | +11.02% | $4,510,766.19 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LSK/USDT:USDT | below_1h_threshold | +3.77% | +3.92% |
-| 4/USDT:USDT | below_1h_threshold | +2.79% | +2.94% |
-| SKYAI/USDT:USDT | below_1h_threshold | +1.24% | +1.39% |
-| USELESS/USDT:USDT | below_1h_threshold | +1.12% | +1.27% |
-| REZ/USDT:USDT | below_1h_threshold | +0.89% | +1.04% |
+| DELLSTOCK/USDT:USDT | below_1h_threshold | +0.87% | +0.88% |
+| NICKEL/USDT:USDT | below_1h_threshold | +0.86% | +0.87% |
+| ALUMINUM/USDT:USDT | below_1h_threshold | +0.67% | +0.68% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.66% | +0.67% |
+| LINSTOCK/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
 
 ## 7. 次に見るべき不足
 
