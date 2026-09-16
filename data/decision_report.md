@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T19:11:26.849823+00:00
+- generated_at: 2026-09-16T19:16:20.422378+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14730**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3247件
+- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3248件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000380 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CNPY/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T19:11:18.326158+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=75786.5
-- Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-16T19:16:13.068924+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.32% price=75842.1
+- Funnel: target 1059 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +65.96% | $1,416,864.60 |
-| BULLA/USDT:USDT | +18.85% | $6,458,171.53 |
-| LIT/USDT:USDT | +8.54% | $3,809,159.15 |
-| CNPY/USDT:USDT | +8.24% | $1,485,895.86 |
-| LONGXIA/USDT:USDT | +8.20% | $2,627,249.70 |
+| BATON/USDT:USDT | +66.50% | $1,426,447.02 |
+| BULLA/USDT:USDT | +18.18% | $6,474,399.26 |
+| ON/USDT:USDT | +8.49% | $3,609,488.15 |
+| LONGXIA/USDT:USDT | +7.66% | $2,633,908.03 |
+| CNPY/USDT:USDT | +7.57% | $1,487,074.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.83% | +4.58% |
-| POWER/USDT:USDT | below_1h_threshold | +4.02% | +3.77% |
-| LIT/USDT:USDT | below_1h_threshold | +2.25% | +2.01% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.08% | +1.84% |
-| PENDLE/USDT:USDT | below_1h_threshold | +1.82% | +1.57% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.83% | +4.51% |
+| POWER/USDT:USDT | below_1h_threshold | +2.99% | +2.67% |
+| BATON/USDT:USDT | below_1h_threshold | +2.05% | +1.73% |
+| PENDLE/USDT:USDT | below_1h_threshold | +1.93% | +1.61% |
+| ON/USDT:USDT | below_1h_threshold | +1.81% | +1.49% |
 
 ## 7. 次に見るべき不足
 
