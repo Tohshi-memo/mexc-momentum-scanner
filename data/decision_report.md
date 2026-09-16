@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T19:01:21.890567+00:00
+- generated_at: 2026-09-16T19:06:27.411512+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14730**
 
@@ -70,30 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T19:01:11.104197+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.32% price=75844.6
-- Funnel: target 1059 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-16T19:06:16.623790+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.41% price=75913.7
+- Funnel: target 1059 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| BATON/USDT:USDT | +65.96% | $1,385,149.02 |
-| BULLA/USDT:USDT | +22.42% | $6,384,642.78 |
-| BR/USDT:USDT | +8.51% | $40,332,493.47 |
-| LONGXIA/USDT:USDT | +8.16% | $2,608,577.51 |
-| ZEC/USDT:USDT | +7.81% | $606,159,201.86 |
+| BATON/USDT:USDT | +73.01% | $1,404,704.51 |
+| BULLA/USDT:USDT | +20.04% | $6,414,192.21 |
+| LONGXIA/USDT:USDT | +8.49% | $2,618,478.17 |
+| ZEC/USDT:USDT | +8.25% | $609,146,411.91 |
+| LIT/USDT:USDT | +8.14% | $3,758,569.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXS/USDT:USDT | below_1h_threshold | +4.83% | +4.51% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.86% | +2.53% |
-| BATON/USDT:USDT | below_1h_threshold | +1.80% | +1.47% |
-| RAY/USDT:USDT | below_1h_threshold | +1.41% | +1.09% |
-| PONS/USDT:USDT | below_1h_threshold | +1.31% | +0.98% |
+| SOXS/USDT:USDT | below_1h_threshold | +4.83% | +4.42% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.15% | +1.73% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.88% | +1.47% |
+| LIT/USDT:USDT | below_1h_threshold | +1.86% | +1.45% |
+| ZEN/USDT:USDT | below_1h_threshold | +1.74% | +1.32% |
 
 ## 7. 次に見るべき不足
 
