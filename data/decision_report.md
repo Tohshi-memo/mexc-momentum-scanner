@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-16T13:46:19.608007+00:00
+- generated_at: 2026-09-16T13:51:27.533025+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14693**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-16T13:46:08.944782+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.31% price=75696.3
-- Funnel: target 1058 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-16T13:51:19.933450+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.19% price=75787.6
+- Funnel: target 1058 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| SYN/USDT:USDT | +116.42% | $24,152,607.51 |
-| BR/USDT:USDT | +97.80% | $32,272,803.38 |
-| LSK/USDT:USDT | +41.66% | $28,733,758.24 |
-| USELESS/USDT:USDT | +16.94% | $8,135,995.29 |
-| 4/USDT:USDT | +14.32% | $1,688,511.36 |
+| SYN/USDT:USDT | +113.84% | $24,221,517.73 |
+| BR/USDT:USDT | +108.89% | $33,055,561.86 |
+| LSK/USDT:USDT | +42.18% | $28,851,154.56 |
+| USELESS/USDT:USDT | +17.60% | $8,157,990.73 |
+| 4/USDT:USDT | +15.00% | $1,695,297.77 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZEC/USDT:USDT | below_1h_threshold | +3.31% | +3.63% |
-| RAY/USDT:USDT | below_1h_threshold | +2.72% | +3.03% |
-| DASH/USDT:USDT | below_1h_threshold | +2.28% | +2.60% |
-| 4/USDT:USDT | below_1h_threshold | +1.92% | +2.23% |
-| ZEN/USDT:USDT | below_1h_threshold | +1.83% | +2.14% |
+| RAY/USDT:USDT | below_1h_threshold | +4.51% | +4.70% |
+| DASH/USDT:USDT | below_1h_threshold | +3.27% | +3.46% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.86% | +3.05% |
+| 4/USDT:USDT | below_1h_threshold | +2.40% | +2.59% |
+| ENA/USDT:USDT | below_1h_threshold | +2.37% | +2.56% |
 
 ## 7. 次に見るべき不足
 
