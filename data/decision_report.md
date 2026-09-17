@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T04:11:24.510213+00:00
+- generated_at: 2026-09-17T04:16:16.971152+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14770**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T04:11:12.121363+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=76292.6
+- 更新: 2026-09-17T04:16:06.375387+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=76280.8
 - Funnel: target 1059 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +72.90% | $3,108,880.27 |
-| BATON/USDT:USDT | +20.21% | $2,368,688.50 |
-| HNT/USDT:USDT | +20.03% | $5,603,874.07 |
-| BULLA/USDT:USDT | +17.00% | $9,252,758.21 |
-| POWER/USDT:USDT | +16.14% | $4,382,128.79 |
+| ONE/USDT:USDT | +77.81% | $3,154,774.40 |
+| BATON/USDT:USDT | +23.10% | $2,371,759.11 |
+| HNT/USDT:USDT | +19.95% | $5,612,284.29 |
+| BULLA/USDT:USDT | +16.70% | $9,255,889.55 |
+| USELESS/USDT:USDT | +16.20% | $9,247,124.18 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AIN/USDT:USDT | below_1h_threshold | +4.66% | +4.80% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.36% | +1.51% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.30% | +1.44% |
-| PONS/USDT:USDT | below_1h_threshold | +0.26% | +0.40% |
-| ARB/USDT:USDT | below_1h_threshold | +0.22% | +0.36% |
+| ONE/USDT:USDT | below_1h_threshold | +2.53% | +2.69% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.11% | +1.26% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.02% | +1.18% |
+| VVV/USDT:USDT | below_1h_threshold | +0.87% | +1.03% |
+| PONS/USDT:USDT | below_1h_threshold | +0.57% | +0.73% |
 
 ## 7. 次に見るべき不足
 
