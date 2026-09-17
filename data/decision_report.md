@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T19:26:18.355139+00:00
+- generated_at: 2026-09-17T19:31:24.838780+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14828**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2958件 (Win 878 / Loss 1165 / Flat 915) / pending 0件 / skip 3346件
+- 確定: 2958件 (Win 878 / Loss 1165 / Flat 915) / pending 0件 / skip 3347件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000148 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T19:26:07.702808+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=76540.1
-- Funnel: target 1052 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-17T19:31:15.747319+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76540.5
+- Funnel: target 1052 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +19.30% | $30,870,242.79 |
-| COTI/USDT:USDT | +13.40% | $2,129,711.25 |
-| GENIUS/USDT:USDT | +8.49% | $3,078,793.41 |
-| UNI/USDT:USDT | +7.33% | $47,488,174.42 |
-| PIEVERSE/USDT:USDT | +4.71% | $1,308,196.88 |
+| ONE/USDT:USDT | +17.50% | $31,012,234.23 |
+| COTI/USDT:USDT | +17.04% | $2,286,742.33 |
+| UNI/USDT:USDT | +7.22% | $47,934,929.63 |
+| GENIUS/USDT:USDT | +6.98% | $3,100,860.28 |
+| PIEVERSE/USDT:USDT | +5.33% | $1,309,618.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COTI/USDT:USDT | below_1h_threshold | +4.92% | +4.91% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.40% | +2.40% |
 | SNXX/USDT:USDT | below_1h_threshold | +1.87% | +1.87% |
-| UNI/USDT:USDT | below_1h_threshold | +1.27% | +1.27% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.17% | +1.17% |
-| ZRO/USDT:USDT | below_1h_threshold | +1.05% | +1.05% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.30% | +1.30% |
+| 4/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
+| UNI/USDT:USDT | below_1h_threshold | +1.15% | +1.15% |
 
 ## 7. 次に見るべき不足
 
