@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T09:21:16.999193+00:00
+- generated_at: 2026-09-17T09:26:14.967670+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14782**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T09:21:06.536215+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=76700.5
+- 更新: 2026-09-17T09:26:07.387041+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=76674.0
 - Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +57.80% | $1,373,591.98 |
-| ONE/USDT:USDT | +53.61% | $8,169,498.99 |
-| 4STOCK/USDT:USDT | +27.70% | $1,004,416.24 |
-| MARSCOIN/USDT:USDT | +24.29% | $3,066,999.42 |
-| USELESS/USDT:USDT | +22.43% | $11,050,159.69 |
+| AVA/USDT:USDT | +57.93% | $1,381,493.15 |
+| ONE/USDT:USDT | +52.35% | $8,198,310.40 |
+| 4STOCK/USDT:USDT | +28.12% | $1,041,791.74 |
+| MARSCOIN/USDT:USDT | +23.83% | $3,073,692.69 |
+| USELESS/USDT:USDT | +22.50% | $11,065,240.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NEAR/USDT:USDT | below_1h_threshold | +2.51% | +2.30% |
-| CAKE/USDT:USDT | below_1h_threshold | +1.87% | +1.66% |
-| BULLA/USDT:USDT | below_1h_threshold | +1.82% | +1.61% |
-| INJ/USDT:USDT | below_1h_threshold | +1.42% | +1.21% |
-| PONS/USDT:USDT | below_1h_threshold | +1.27% | +1.06% |
+| CAKE/USDT:USDT | below_1h_threshold | +2.54% | +2.37% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.44% | +2.26% |
+| BULLA/USDT:USDT | below_1h_threshold | +1.62% | +1.44% |
+| VVV/USDT:USDT | below_1h_threshold | +1.40% | +1.22% |
+| INJ/USDT:USDT | below_1h_threshold | +1.08% | +0.90% |
 
 ## 7. 次に見るべき不足
 
