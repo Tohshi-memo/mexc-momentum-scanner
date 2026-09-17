@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T07:01:18.083690+00:00
+- generated_at: 2026-09-17T07:06:21.514092+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14774**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T07:01:08.543047+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=76458.2
+- 更新: 2026-09-17T07:06:10.768895+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.16% price=76566.9
 - Funnel: target 1050 → liquid 154 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +73.83% | $4,436,798.22 |
-| USELESS/USDT:USDT | +21.15% | $11,158,734.53 |
-| MARSCOIN/USDT:USDT | +20.77% | $2,976,620.18 |
-| HNT/USDT:USDT | +20.23% | $5,933,798.91 |
-| BATON/USDT:USDT | +15.98% | $2,450,902.09 |
+| ONE/USDT:USDT | +77.70% | $4,512,277.11 |
+| MARSCOIN/USDT:USDT | +24.26% | $2,999,199.50 |
+| USELESS/USDT:USDT | +20.65% | $11,179,629.95 |
+| HNT/USDT:USDT | +19.77% | $5,935,598.54 |
+| BATON/USDT:USDT | +17.32% | $2,455,295.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_1h_threshold | +0.69% | +0.68% |
-| USELESS/USDT:USDT | below_1h_threshold | +0.35% | +0.33% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +0.30% | +0.28% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.29% | +0.28% |
-| JTO/USDT:USDT | below_1h_threshold | +0.26% | +0.25% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.99% | +2.83% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.34% | +2.19% |
+| BATON/USDT:USDT | below_1h_threshold | +1.85% | +1.70% |
+| ONE/USDT:USDT | below_1h_threshold | +1.73% | +1.58% |
+| POWER/USDT:USDT | below_1h_threshold | +1.39% | +1.24% |
 
 ## 7. 次に見るべき不足
 
