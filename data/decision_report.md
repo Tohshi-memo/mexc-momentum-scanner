@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T17:46:22.127148+00:00
+- generated_at: 2026-09-17T17:51:27.392755+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14825**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T17:46:13.728240+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=76614.8
-- Funnel: target 1052 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-17T17:51:16.610417+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=76608.2
+- Funnel: target 1052 → liquid 162 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +21.00% | $26,124,988.49 |
-| UNI/USDT:USDT | +7.52% | $48,751,210.75 |
-| NEAR/USDT:USDT | +4.45% | $91,159,332.85 |
-| ARB/USDT:USDT | +4.41% | $67,646,025.16 |
-| GALA/USDT:USDT | +3.58% | $2,907,640.98 |
+| ONE/USDT:USDT | +19.78% | $26,389,677.84 |
+| UNI/USDT:USDT | +7.72% | $48,858,417.53 |
+| ARB/USDT:USDT | +5.63% | $69,131,574.97 |
+| NEAR/USDT:USDT | +5.49% | $91,799,621.15 |
+| ENA/USDT:USDT | +3.63% | $33,754,765.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POL/USDT:USDT | below_1h_threshold | +3.31% | +3.46% |
-| ONE/USDT:USDT | below_1h_threshold | +3.23% | +3.38% |
-| ARB/USDT:USDT | below_1h_threshold | +3.19% | +3.35% |
-| COTI/USDT:USDT | below_1h_threshold | +2.88% | +3.03% |
-| JUP/USDT:USDT | below_1h_threshold | +2.23% | +2.38% |
+| ARB/USDT:USDT | below_1h_threshold | +4.29% | +4.45% |
+| COTI/USDT:USDT | below_1h_threshold | +3.47% | +3.63% |
+| POL/USDT:USDT | below_1h_threshold | +2.45% | +2.61% |
+| RAY/USDT:USDT | below_1h_threshold | +2.28% | +2.44% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +2.20% | +2.36% |
 
 ## 7. 次に見るべき不足
 
