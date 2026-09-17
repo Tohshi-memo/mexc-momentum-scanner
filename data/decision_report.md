@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T01:31:21.469170+00:00
+- generated_at: 2026-09-17T01:36:30.122140+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14761**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3273件
+- 確定: 2956件 (Win 878 / Loss 1165 / Flat 913) / pending 0件 / skip 3275件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000279 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CNPY/USDT:USDT `MARKET` SL_HIT account -0.17% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T01:31:09.620990+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=76625.0
-- Funnel: target 1059 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-17T01:36:16.485118+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.36% price=76579.7
+- Funnel: target 1059 → liquid 158 → pre 50 → checked 49 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- Strict後reject: 4h RSI 65.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +51.27% | $2,366,132.32 |
-| BATON/USDT:USDT | +48.26% | $2,305,797.79 |
-| HNT/USDT:USDT | +17.44% | $5,363,380.84 |
-| MARSCOIN/USDT:USDT | +16.50% | $2,325,253.36 |
-| LIT/USDT:USDT | +11.32% | $4,551,396.21 |
+| ONE/USDT:USDT | +55.11% | $2,385,360.89 |
+| BATON/USDT:USDT | +49.02% | $2,308,067.73 |
+| BULLA/USDT:USDT | +20.88% | $9,100,831.31 |
+| MARSCOIN/USDT:USDT | +17.81% | $2,401,087.70 |
+| HNT/USDT:USDT | +17.79% | $5,377,820.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.87% | +4.44% |
-| VVV/USDT:USDT | below_1h_threshold | +2.79% | +2.37% |
-| PONS/USDT:USDT | below_1h_threshold | +2.43% | +2.01% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.14% | +1.71% |
-| UNI/USDT:USDT | below_1h_threshold | +1.97% | +1.54% |
+| VVV/USDT:USDT | below_1h_threshold | +2.94% | +2.58% |
+| UNI/USDT:USDT | below_1h_threshold | +2.94% | +2.58% |
+| ONE/USDT:USDT | below_1h_threshold | +2.89% | +2.53% |
+| BR/USDT:USDT | below_1h_threshold | +2.68% | +2.32% |
+| PONS/USDT:USDT | below_1h_threshold | +2.56% | +2.20% |
 
 ## 7. 次に見るべき不足
 
