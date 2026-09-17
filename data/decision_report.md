@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T22:31:26.370755+00:00
+- generated_at: 2026-09-17T22:36:23.611028+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14848**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T22:31:13.431328+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.19% price=76230.9
+- 更新: 2026-09-17T22:36:12.892265+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=76337.1
 - Funnel: target 1052 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 93.1 >= 65=1
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +55.86% | $38,567,601.12 |
-| CNPY/USDT:USDT | +45.78% | $2,925,929.28 |
-| COTI/USDT:USDT | +28.56% | $4,868,934.55 |
-| CROSS/USDT:USDT | +17.91% | $1,370,911.15 |
-| PIEVERSE/USDT:USDT | +6.94% | $1,532,174.67 |
+| ONE/USDT:USDT | +57.16% | $38,984,592.76 |
+| CNPY/USDT:USDT | +42.75% | $2,942,519.37 |
+| COTI/USDT:USDT | +29.06% | $4,893,289.33 |
+| CROSS/USDT:USDT | +19.28% | $1,386,529.42 |
+| UNI/USDT:USDT | +7.05% | $58,508,141.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HEI/USDT:USDT | below_1h_threshold | +3.56% | +3.75% |
-| COTI/USDT:USDT | below_1h_threshold | +3.01% | +3.20% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.36% | +1.56% |
-| AKE/USDT:USDT | below_1h_threshold | +0.62% | +0.81% |
-| MERL/USDT:USDT | below_1h_threshold | +0.49% | +0.68% |
+| COTI/USDT:USDT | below_1h_threshold | +3.50% | +3.55% |
+| HEI/USDT:USDT | below_1h_threshold | +3.49% | +3.54% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.94% | +1.99% |
+| FET/USDT:USDT | below_1h_threshold | +0.90% | +0.95% |
+| JUP/USDT:USDT | below_1h_threshold | +0.81% | +0.86% |
 
 ## 7. 次に見るべき不足
 
