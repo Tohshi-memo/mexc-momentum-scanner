@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T14:16:37.899048+00:00
+- generated_at: 2026-09-17T14:21:38.971101+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14802**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2958件 (Win 878 / Loss 1165 / Flat 915) / pending 0件 / skip 3321件
+- 確定: 2958件 (Win 878 / Loss 1165 / Flat 915) / pending 0件 / skip 3322件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000189 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T14:16:24.303532+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=76839.6
-- Funnel: target 1052 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.0 >= 65=1, 4h RSI 69.0 >= 65=1
+- 更新: 2026-09-17T14:21:24.909737+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=76762.8
+- Funnel: target 1052 → liquid 160 → pre 50 → checked 50 → surge 4 → strict 2
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.5 >= 65=1, 4h RSI 68.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +89.95% | $13,466,371.95 |
-| AVA/USDT:USDT | +88.08% | $3,736,338.04 |
-| BATON/USDT:USDT | +34.52% | $2,582,758.05 |
-| 4STOCK/USDT:USDT | +26.33% | $1,089,965.50 |
-| GENIUS/USDT:USDT | +23.25% | $2,109,859.63 |
+| AVA/USDT:USDT | +92.56% | $3,753,031.73 |
+| ONE/USDT:USDT | +90.14% | $13,639,784.66 |
+| BATON/USDT:USDT | +35.36% | $2,584,098.10 |
+| GENIUS/USDT:USDT | +25.86% | $2,128,549.90 |
+| 4STOCK/USDT:USDT | +24.76% | $1,099,585.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_relative_strength | +5.13% | +4.91% |
-| BATON/USDT:USDT | below_1h_threshold | +4.87% | +4.65% |
-| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.25% |
-| BCH/USDT:USDT | below_1h_threshold | +2.79% | +2.57% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.72% | +2.50% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.35% |
+| ZEC/USDT:USDT | below_1h_threshold | +3.35% | +3.23% |
+| ZEN/USDT:USDT | below_1h_threshold | +3.29% | +3.17% |
+| BCH/USDT:USDT | below_1h_threshold | +3.05% | +2.93% |
+| DASH/USDT:USDT | below_1h_threshold | +2.64% | +2.52% |
 
 ## 7. 次に見るべき不足
 
