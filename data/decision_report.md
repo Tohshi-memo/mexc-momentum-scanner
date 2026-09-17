@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T06:51:16.370013+00:00
+- generated_at: 2026-09-17T06:56:13.222343+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14774**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T06:51:05.728357+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=76510.1
+- 更新: 2026-09-17T06:56:05.977394+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=76452.0
 - Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +75.30% | $4,365,743.14 |
-| HNT/USDT:USDT | +20.80% | $5,929,165.01 |
-| USELESS/USDT:USDT | +20.19% | $11,558,294.62 |
-| MARSCOIN/USDT:USDT | +19.13% | $3,345,521.47 |
-| SAGA/USDT:USDT | +18.04% | $2,458,924.65 |
+| ONE/USDT:USDT | +76.18% | $4,391,094.39 |
+| USELESS/USDT:USDT | +20.49% | $11,600,674.69 |
+| HNT/USDT:USDT | +20.48% | $5,935,188.90 |
+| MARSCOIN/USDT:USDT | +19.98% | $3,349,780.09 |
+| SAGA/USDT:USDT | +13.85% | $2,502,952.60 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +4.99% | +4.71% |
-| ONE/USDT:USDT | below_1h_threshold | +2.48% | +2.20% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.78% | +1.49% |
-| SPX/USDT:USDT | below_1h_threshold | +1.77% | +1.49% |
-| PONS/USDT:USDT | below_1h_threshold | +1.74% | +1.45% |
+| ONE/USDT:USDT | below_1h_threshold | +2.97% | +2.76% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.92% | +1.71% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +1.66% | +1.45% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.60% | +1.39% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.59% | +1.38% |
 
 ## 7. 次に見るべき不足
 
