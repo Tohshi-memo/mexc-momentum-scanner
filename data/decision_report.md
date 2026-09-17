@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T11:36:26.360880+00:00
+- generated_at: 2026-09-17T11:41:27.671932+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14790**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T11:36:14.431308+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.14% price=76266.1
-- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.6 >= 65=1, 4h RSI n/a=1
+- 更新: 2026-09-17T11:41:18.986133+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.27% price=76167.7
+- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +98.94% | $2,391,971.88 |
-| ONE/USDT:USDT | +65.77% | $10,192,359.12 |
-| BATON/USDT:USDT | +33.30% | $2,524,258.15 |
-| 4STOCK/USDT:USDT | +31.68% | $1,035,506.74 |
-| MARSCOIN/USDT:USDT | +21.33% | $3,071,048.29 |
+| AVA/USDT:USDT | +102.04% | $2,482,947.45 |
+| ONE/USDT:USDT | +64.58% | $10,288,741.61 |
+| 4STOCK/USDT:USDT | +30.84% | $1,038,797.65 |
+| BATON/USDT:USDT | +29.72% | $2,530,007.20 |
+| MARSCOIN/USDT:USDT | +19.84% | $3,076,748.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| REZ/USDT:USDT | below_1h_threshold | +3.53% | +3.67% |
-| COTI/USDT:USDT | below_1h_threshold | +2.26% | +2.40% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.23% | +2.37% |
-| LIT/USDT:USDT | below_1h_threshold | +1.01% | +1.15% |
-| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.14% |
+| POWER/USDT:USDT | below_1h_threshold | +4.15% | +4.42% |
+| REZ/USDT:USDT | below_1h_threshold | +3.60% | +3.87% |
+| BATON/USDT:USDT | below_1h_threshold | +2.96% | +3.23% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.74% | +2.02% |
+| COTI/USDT:USDT | below_1h_threshold | +1.32% | +1.60% |
 
 ## 7. 次に見るべき不足
 
