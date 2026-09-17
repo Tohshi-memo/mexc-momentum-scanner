@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T19:16:26.056907+00:00
+- generated_at: 2026-09-17T19:21:19.947934+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14828**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T19:16:17.523508+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76513.6
-- Funnel: target 1052 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-17T19:21:09.314333+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.00% price=76539.7
+- Funnel: target 1052 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +19.02% | $30,513,309.36 |
-| GENIUS/USDT:USDT | +13.90% | $3,015,452.28 |
-| COTI/USDT:USDT | +10.88% | $1,947,819.72 |
-| UNI/USDT:USDT | +6.78% | $47,173,932.43 |
-| GALA/USDT:USDT | +5.69% | $3,213,567.39 |
+| ONE/USDT:USDT | +18.03% | $30,673,361.26 |
+| COTI/USDT:USDT | +11.38% | $2,001,066.56 |
+| GENIUS/USDT:USDT | +11.07% | $3,045,769.14 |
+| UNI/USDT:USDT | +6.72% | $47,240,869.39 |
+| GALA/USDT:USDT | +4.95% | $3,217,503.58 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| GENIUS/USDT:USDT | below_1h_threshold | +3.45% | +3.48% |
-| COTI/USDT:USDT | below_1h_threshold | +2.90% | +2.93% |
-| SNXX/USDT:USDT | below_1h_threshold | +1.87% | +1.91% |
-| UAI/USDT:USDT | below_1h_threshold | +1.58% | +1.61% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +0.96% | +0.99% |
+| COTI/USDT:USDT | below_1h_threshold | +3.31% | +3.31% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.87% | +1.87% |
+| UAI/USDT:USDT | below_1h_threshold | +1.23% | +1.23% |
+| JTO/USDT:USDT | below_1h_threshold | +1.07% | +1.07% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.97% | +0.97% |
 
 ## 7. 次に見るべき不足
 
