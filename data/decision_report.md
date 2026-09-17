@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T09:01:21.634733+00:00
+- generated_at: 2026-09-17T09:06:14.852920+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14782**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T09:01:11.026339+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=76544.7
-- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-17T09:06:03.960565+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=76635.1
+- Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +58.45% | $1,309,629.25 |
-| ONE/USDT:USDT | +54.33% | $7,792,144.04 |
-| MARSCOIN/USDT:USDT | +24.57% | $3,032,123.74 |
-| USELESS/USDT:USDT | +22.19% | $10,899,232.86 |
-| HNT/USDT:USDT | +21.55% | $6,024,298.13 |
+| AVA/USDT:USDT | +54.64% | $1,328,816.86 |
+| ONE/USDT:USDT | +52.18% | $7,870,849.67 |
+| 4STOCK/USDT:USDT | +30.84% | $1,000,670.77 |
+| MARSCOIN/USDT:USDT | +24.99% | $3,043,486.58 |
+| USELESS/USDT:USDT | +22.86% | $10,934,410.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +0.80% | +0.80% |
-| ARB/USDT:USDT | below_1h_threshold | +0.62% | +0.61% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.54% | +0.53% |
-| LAB/USDT:USDT | below_1h_threshold | +0.48% | +0.47% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.40% | +0.40% |
+| USELESS/USDT:USDT | below_1h_threshold | +1.17% | +1.04% |
+| BULLA/USDT:USDT | below_1h_threshold | +0.94% | +0.81% |
+| VVV/USDT:USDT | below_1h_threshold | +0.91% | +0.79% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.90% | +0.78% |
+| LAB/USDT:USDT | below_1h_threshold | +0.84% | +0.72% |
 
 ## 7. 次に見るべき不足
 
