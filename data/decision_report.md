@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T11:31:35.670783+00:00
+- generated_at: 2026-09-17T11:36:26.360880+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14790**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2957件 (Win 878 / Loss 1165 / Flat 914) / pending 1件 / skip 3306件
+- 確定: 2957件 (Win 878 / Loss 1165 / Flat 914) / pending 1件 / skip 3308件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000189 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BULLA/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T11:31:20.043391+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=76321.4
-- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 2 → strict 1
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI n/a=1
+- 更新: 2026-09-17T11:36:14.431308+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=76266.1
+- Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 86.6 >= 65=1, 4h RSI n/a=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +95.52% | $2,316,133.57 |
-| ONE/USDT:USDT | +67.07% | $10,141,798.83 |
-| BATON/USDT:USDT | +33.04% | $2,521,917.03 |
-| 4STOCK/USDT:USDT | +32.84% | $1,031,440.62 |
-| MARSCOIN/USDT:USDT | +19.80% | $3,061,734.67 |
+| AVA/USDT:USDT | +98.94% | $2,391,971.88 |
+| ONE/USDT:USDT | +65.77% | $10,192,359.12 |
+| BATON/USDT:USDT | +33.30% | $2,524,258.15 |
+| 4STOCK/USDT:USDT | +31.68% | $1,035,506.74 |
+| MARSCOIN/USDT:USDT | +21.33% | $3,071,048.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVA/USDT:USDT | below_1h_threshold | +4.59% | +4.66% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.23% | +2.30% |
-| COTI/USDT:USDT | below_1h_threshold | +1.88% | +1.95% |
-| ONE/USDT:USDT | below_1h_threshold | +1.26% | +1.33% |
-| LIT/USDT:USDT | below_1h_threshold | +1.24% | +1.31% |
+| REZ/USDT:USDT | below_1h_threshold | +3.53% | +3.67% |
+| COTI/USDT:USDT | below_1h_threshold | +2.26% | +2.40% |
+| SAGA/USDT:USDT | below_1h_threshold | +2.23% | +2.37% |
+| LIT/USDT:USDT | below_1h_threshold | +1.01% | +1.15% |
+| NBISSTOCK/USDT:USDT | below_1h_threshold | +1.00% | +1.14% |
 
 ## 7. 次に見るべき不足
 
