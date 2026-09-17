@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T05:51:26.636899+00:00
+- generated_at: 2026-09-17T05:56:21.545686+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14773**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T05:51:13.884538+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.21% price=76345.3
+- 更新: 2026-09-17T05:56:08.569400+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=76333.1
 - Funnel: target 1060 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +72.37% | $3,982,723.75 |
-| MARSCOIN/USDT:USDT | +19.58% | $3,286,199.75 |
-| HNT/USDT:USDT | +19.42% | $5,868,780.09 |
-| USELESS/USDT:USDT | +17.89% | $11,080,316.66 |
-| POWER/USDT:USDT | +17.28% | $4,064,744.62 |
+| ONE/USDT:USDT | +73.25% | $4,001,632.65 |
+| MARSCOIN/USDT:USDT | +21.24% | $3,299,387.29 |
+| HNT/USDT:USDT | +19.57% | $5,870,576.65 |
+| USELESS/USDT:USDT | +18.01% | $11,167,217.06 |
+| POWER/USDT:USDT | +16.83% | $4,069,141.97 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +4.32% | +4.53% |
-| XPL/USDT:USDT | below_1h_threshold | +2.19% | +2.40% |
-| ARB/USDT:USDT | below_1h_threshold | +1.73% | +1.93% |
-| BATON/USDT:USDT | below_1h_threshold | +1.51% | +1.72% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.95% | +1.16% |
+| POWER/USDT:USDT | below_1h_threshold | +3.87% | +4.09% |
+| XPL/USDT:USDT | below_1h_threshold | +2.65% | +2.87% |
+| BATON/USDT:USDT | below_1h_threshold | +1.72% | +1.95% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.51% | +1.73% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.38% | +1.61% |
 
 ## 7. 次に見るべき不足
 
