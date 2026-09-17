@@ -4,7 +4,7 @@
   "initial_capital": 100.0,
   "balance": 123.53233988837705,
   "started_at": "2026-07-11T08:56:50.346675+00:00",
-  "updated_at": "2026-09-17T13:16:41.975458+00:00",
+  "updated_at": "2026-09-17T13:21:47.256645+00:00",
   "high_watermark": 128.08262302711162,
   "max_drawdown_pct": 5.256052504142945,
   "loss_streak": 8,
@@ -201228,13 +201228,6 @@
   ],
   "skipped": [
     {
-      "key": "TRIA/USDT:USDT|2026-09-04T09:51:40.587099+00:00",
-      "symbol": "TRIA/USDT:USDT",
-      "detected_at": "2026-09-04T09:51:40.587099+00:00",
-      "reason": "signal_batch_risk_cap",
-      "decision": {}
-    },
-    {
       "key": "MARSCOIN/USDT:USDT|2026-09-04T10:16:19.758105+00:00",
       "symbol": "MARSCOIN/USDT:USDT",
       "detected_at": "2026-09-04T10:16:19.758105+00:00",
@@ -248921,9 +248914,94 @@
         },
         "alternatives": []
       }
+    },
+    {
+      "key": "MARSCOIN/USDT:USDT|2026-09-17T13:21:32.030077+00:00",
+      "symbol": "MARSCOIN/USDT:USDT",
+      "detected_at": "2026-09-17T13:21:32.030077+00:00",
+      "reason": "loss_streak_cooldown",
+      "decision": {
+        "strategy": "LIMIT_9PCT_LONG",
+        "direction": "long",
+        "reason": "selected_by_causal_log_growth",
+        "causal_score": 0.0001992204509469319,
+        "robust_score": 0.0001992204509469319,
+        "causal_history_count": 14795,
+        "fast": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 11,
+          "fill_rate": 0.22,
+          "avg_pnl_pct": 3.622227772227774,
+          "effective_ev_pct": 0.7968901098901102,
+          "avg_log_return": 0.000349324247671802,
+          "geometric_return_pct": 0.034938526849193074,
+          "avg_account_return_pct": 0.034995192307692255,
+          "max_drawdown_pct": 0.1749999999999983,
+          "max_loss_streak": 1
+        },
+        "recent": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 50,
+          "filled": 11,
+          "fill_rate": 0.22,
+          "avg_pnl_pct": 3.622227772227774,
+          "effective_ev_pct": 0.7968901098901102,
+          "avg_log_return": 0.000349324247671802,
+          "geometric_return_pct": 0.034938526849193074,
+          "avg_account_return_pct": 0.034995192307692255,
+          "max_drawdown_pct": 0.1749999999999983,
+          "max_loss_streak": 1
+        },
+        "mid": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 200,
+          "filled": 41,
+          "fill_rate": 0.205,
+          "avg_pnl_pct": 1.7164826554895989,
+          "effective_ev_pct": 0.35187894437536776,
+          "avg_log_return": 0.00016167693023628606,
+          "geometric_return_pct": 0.01616900006555788,
+          "avg_account_return_pct": 0.01621506171075134,
+          "max_drawdown_pct": 0.6569400587587991,
+          "max_loss_streak": 3
+        },
+        "long": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 173,
+          "fill_rate": 0.173,
+          "avg_pnl_pct": 1.4034425959240118,
+          "effective_ev_pct": 0.24279556909485403,
+          "avg_log_return": 0.00010951487395173982,
+          "geometric_return_pct": 0.010952087092452878,
+          "avg_account_return_pct": 0.01098325272676564,
+          "max_drawdown_pct": 0.8719428546872261,
+          "max_loss_streak": 5
+        },
+        "all": {
+          "strategy": "LIMIT_9PCT_LONG",
+          "direction": "long",
+          "total": 1000,
+          "filled": 173,
+          "fill_rate": 0.173,
+          "avg_pnl_pct": 1.4034425959240118,
+          "effective_ev_pct": 0.24279556909485403,
+          "avg_log_return": 0.00010951487395173982,
+          "geometric_return_pct": 0.010952087092452878,
+          "avg_account_return_pct": 0.01098325272676564,
+          "max_drawdown_pct": 0.8719428546872261,
+          "max_loss_streak": 5
+        },
+        "alternatives": []
+      }
     }
   ],
-  "skipped_count": 3314,
+  "skipped_count": 3315,
   "applied_keys": [
     "0G/USDT:USDT|2026-07-15T11:56:14.447509+00:00",
     "0G/USDT:USDT|2026-07-15T12:06:12.763179+00:00",
@@ -252934,6 +253012,7 @@
     "MARSCOIN/USDT:USDT|2026-09-16T03:46:20.939268+00:00",
     "MARSCOIN/USDT:USDT|2026-09-17T00:51:13.046493+00:00",
     "MARSCOIN/USDT:USDT|2026-09-17T01:36:17.382312+00:00",
+    "MARSCOIN/USDT:USDT|2026-09-17T13:21:32.030077+00:00",
     "MELANIA/USDT:USDT|2026-08-22T22:56:24.581986+00:00",
     "MEMEROBINHOOD/USDT:USDT|2026-09-07T07:06:08.943377+00:00",
     "MEMEROBINHOOD/USDT:USDT|2026-09-07T07:21:16.186208+00:00",
