@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T06:01:16.894349+00:00
+- generated_at: 2026-09-17T06:06:19.284908+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14773**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T06:01:06.164311+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=76265.0
+- 更新: 2026-09-17T06:06:08.502835+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=76369.9
 - Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +72.29% | $4,024,814.96 |
-| MARSCOIN/USDT:USDT | +21.04% | $3,225,206.74 |
-| HNT/USDT:USDT | +19.92% | $5,852,760.18 |
-| USELESS/USDT:USDT | +18.66% | $11,051,464.82 |
-| POWER/USDT:USDT | +14.71% | $3,882,018.57 |
+| ONE/USDT:USDT | +69.73% | $4,040,968.31 |
+| MARSCOIN/USDT:USDT | +21.93% | $3,235,047.85 |
+| HNT/USDT:USDT | +20.58% | $5,859,279.36 |
+| USELESS/USDT:USDT | +17.95% | $11,102,368.29 |
+| POWER/USDT:USDT | +16.49% | $3,891,288.62 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +0.62% | +0.66% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.35% | +0.38% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +0.31% | +0.34% |
-| POWER/USDT:USDT | below_1h_threshold | +0.30% | +0.33% |
-| ON/USDT:USDT | below_1h_threshold | +0.28% | +0.31% |
+| POWER/USDT:USDT | below_1h_threshold | +1.85% | +1.75% |
+| JTO/USDT:USDT | below_1h_threshold | +0.95% | +0.84% |
+| ON/USDT:USDT | below_1h_threshold | +0.90% | +0.80% |
+| LIT/USDT:USDT | below_1h_threshold | +0.87% | +0.76% |
+| ZEN/USDT:USDT | below_1h_threshold | +0.82% | +0.72% |
 
 ## 7. 次に見るべき不足
 
