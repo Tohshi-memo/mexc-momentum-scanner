@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T21:21:29.990578+00:00
+- generated_at: 2026-09-17T21:26:25.260922+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14840**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T21:21:17.196286+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.06% price=76487.7
+- 更新: 2026-09-17T21:26:16.386591+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=76509.5
 - Funnel: target 1052 → liquid 156 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CNPY/USDT:USDT | +41.79% | $2,689,138.76 |
-| CROSS/USDT:USDT | +22.65% | $1,151,158.12 |
-| COTI/USDT:USDT | +18.00% | $3,694,822.66 |
-| ONE/USDT:USDT | +14.68% | $34,354,380.53 |
-| PIEVERSE/USDT:USDT | +10.37% | $1,402,504.21 |
+| CNPY/USDT:USDT | +44.20% | $2,714,726.25 |
+| CROSS/USDT:USDT | +22.45% | $1,173,915.04 |
+| COTI/USDT:USDT | +18.21% | $3,723,398.31 |
+| ONE/USDT:USDT | +17.30% | $34,529,870.87 |
+| PIEVERSE/USDT:USDT | +9.01% | $1,415,001.78 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CROSS/USDT:USDT | below_1h_threshold | +2.47% | +2.53% |
-| COTI/USDT:USDT | below_1h_threshold | +1.03% | +1.09% |
-| CNPY/USDT:USDT | below_1h_threshold | +0.92% | +0.98% |
-| KORU/USDT:USDT | below_1h_threshold | +0.88% | +0.94% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
+| CNPY/USDT:USDT | below_1h_threshold | +2.77% | +2.79% |
+| CROSS/USDT:USDT | below_1h_threshold | +2.48% | +2.51% |
+| COTI/USDT:USDT | below_1h_threshold | +1.18% | +1.21% |
+| KORU/USDT:USDT | below_1h_threshold | +0.88% | +0.91% |
+| SAND/USDT:USDT | below_1h_threshold | +0.67% | +0.69% |
 
 ## 7. 次に見るべき不足
 
