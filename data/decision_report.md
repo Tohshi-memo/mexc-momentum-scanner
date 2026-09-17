@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T22:51:23.555413+00:00
+- generated_at: 2026-09-17T22:56:20.921415+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14849**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T22:51:12.354698+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=76368.4
-- Funnel: target 1052 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.0 >= 65=1, 4h RSI 91.5 >= 65=1
+- 更新: 2026-09-17T22:56:10.145389+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=76300.5
+- Funnel: target 1052 → liquid 156 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 93.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +55.14% | $39,857,416.85 |
-| CNPY/USDT:USDT | +45.16% | $2,961,204.94 |
-| COTI/USDT:USDT | +32.78% | $5,037,991.09 |
-| CROSS/USDT:USDT | +20.80% | $1,401,360.05 |
-| NEAR/USDT:USDT | +7.58% | $100,105,362.63 |
+| ONE/USDT:USDT | +56.90% | $40,224,105.69 |
+| CNPY/USDT:USDT | +45.68% | $2,963,223.49 |
+| COTI/USDT:USDT | +27.96% | $5,116,305.11 |
+| CROSS/USDT:USDT | +20.05% | $1,406,556.64 |
+| NEAR/USDT:USDT | +8.07% | $101,096,528.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.38% | +3.39% |
-| HEI/USDT:USDT | below_1h_threshold | +2.71% | +2.72% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.25% | +2.26% |
-| ARB/USDT:USDT | below_1h_threshold | +1.84% | +1.85% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.67% | +1.68% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.71% | +2.81% |
+| HEI/USDT:USDT | below_1h_threshold | +2.71% | +2.81% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.32% | +2.42% |
+| COTI/USDT:USDT | below_1h_threshold | +1.71% | +1.81% |
+| ARB/USDT:USDT | below_1h_threshold | +1.55% | +1.65% |
 
 ## 7. 次に見るべき不足
 
