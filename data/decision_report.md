@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T12:26:20.172552+00:00
+- generated_at: 2026-09-17T12:31:28.267357+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14792**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T12:26:11.715071+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.61% price=76918.5
+- 更新: 2026-09-17T12:31:17.518619+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.89% price=77126.4
 - Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +99.47% | $3,046,044.67 |
-| ONE/USDT:USDT | +67.74% | $10,838,161.91 |
-| GENIUS/USDT:USDT | +33.72% | $1,012,258.60 |
-| 4STOCK/USDT:USDT | +22.24% | $1,099,126.93 |
-| MARSCOIN/USDT:USDT | +19.13% | $2,996,955.70 |
+| AVA/USDT:USDT | +93.68% | $3,075,952.18 |
+| ONE/USDT:USDT | +67.63% | $10,863,330.35 |
+| GENIUS/USDT:USDT | +33.32% | $1,044,794.71 |
+| 4STOCK/USDT:USDT | +21.82% | $1,100,632.55 |
+| MARSCOIN/USDT:USDT | +18.87% | $3,006,629.81 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| POWER/USDT:USDT | below_1h_threshold | +3.49% | +2.88% |
-| BULLA/USDT:USDT | below_1h_threshold | +3.27% | +2.66% |
-| ONE/USDT:USDT | below_1h_threshold | +3.04% | +2.42% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.46% | +1.85% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.87% | +1.26% |
+| BULLA/USDT:USDT | below_relative_strength | +5.28% | +4.39% |
+| POWER/USDT:USDT | below_1h_threshold | +3.60% | +2.72% |
+| ONE/USDT:USDT | below_1h_threshold | +3.16% | +2.27% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.57% | +1.69% |
+| FET/USDT:USDT | below_1h_threshold | +2.28% | +1.40% |
 
 ## 7. 次に見るべき不足
 
