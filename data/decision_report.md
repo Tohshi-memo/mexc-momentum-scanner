@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T16:06:22.258752+00:00
+- generated_at: 2026-09-17T16:11:27.184581+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14820**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T16:06:09.863247+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=76723.5
+- 更新: 2026-09-17T16:11:18.321184+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=76666.1
 - Funnel: target 1052 → liquid 161 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +3.91% | $20,276,707.40 |
-| GALA/USDT:USDT | +1.65% | $1,592,756.17 |
-| REZ/USDT:USDT | +1.43% | $1,208,906.70 |
-| UNI/USDT:USDT | +1.16% | $41,700,967.28 |
-| PIEVERSE/USDT:USDT | +1.00% | $1,219,469.71 |
+| GALA/USDT:USDT | +3.35% | $1,753,229.17 |
+| ONE/USDT:USDT | +2.16% | $20,523,208.88 |
+| DASH/USDT:USDT | +1.76% | $17,971,003.12 |
+| 4/USDT:USDT | +1.54% | $1,213,668.70 |
+| REZ/USDT:USDT | +1.22% | $1,211,140.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.31% | +4.33% |
-| GALA/USDT:USDT | below_1h_threshold | +1.77% | +1.79% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.57% |
-| REZ/USDT:USDT | below_1h_threshold | +1.43% | +1.46% |
-| LSK/USDT:USDT | below_1h_threshold | +1.32% | +1.35% |
+| GALA/USDT:USDT | below_1h_threshold | +3.36% | +3.46% |
+| ONE/USDT:USDT | below_1h_threshold | +1.88% | +1.98% |
+| DASH/USDT:USDT | below_1h_threshold | +1.67% | +1.77% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.54% | +1.65% |
+| 4/USDT:USDT | below_1h_threshold | +1.37% | +1.47% |
 
 ## 7. 次に見るべき不足
 
