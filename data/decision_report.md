@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T18:46:39.063158+00:00
+- generated_at: 2026-09-17T18:51:28.748823+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14825**
 
@@ -63,38 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2958件 (Win 878 / Loss 1165 / Flat 915) / pending 0件 / skip 3344件
+- 確定: 2958件 (Win 878 / Loss 1165 / Flat 915) / pending 0件 / skip 3345件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000138 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: USELESS/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T18:46:25.032101+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=76633.1
-- Funnel: target 1052 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 1
+- 更新: 2026-09-17T18:51:17.938333+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=76571.5
+- Funnel: target 1052 → liquid 161 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +23.02% | $29,536,918.46 |
-| UNI/USDT:USDT | +7.07% | $50,292,153.46 |
-| COTI/USDT:USDT | +5.53% | $2,415,908.11 |
-| PIEVERSE/USDT:USDT | +5.23% | $1,304,237.66 |
-| GENIUS/USDT:USDT | +4.97% | $2,677,714.32 |
+| ONE/USDT:USDT | +23.05% | $29,682,171.96 |
+| GENIUS/USDT:USDT | +9.21% | $2,724,921.35 |
+| UNI/USDT:USDT | +6.78% | $50,931,552.27 |
+| COTI/USDT:USDT | +6.77% | $2,420,506.74 |
+| GALA/USDT:USDT | +4.38% | $3,361,189.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HNT/USDT:USDT | below_1h_threshold | +4.58% | +4.59% |
-| ONE/USDT:USDT | below_1h_threshold | +3.41% | +3.42% |
-| GENIUS/USDT:USDT | below_1h_threshold | +2.74% | +2.75% |
-| BEAT/USDT:USDT | below_1h_threshold | +2.24% | +2.25% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.23% | +2.25% |
+| HNT/USDT:USDT | below_1h_threshold | +4.29% | +4.38% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.80% | +3.90% |
+| ONE/USDT:USDT | below_1h_threshold | +3.40% | +3.49% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.45% | +2.55% |
+| COTI/USDT:USDT | below_1h_threshold | +2.33% | +2.42% |
 
 ## 7. 次に見るべき不足
 
