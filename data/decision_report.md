@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T06:41:26.732695+00:00
+- generated_at: 2026-09-17T06:46:18.815690+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14774**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.53** / 初期 $100.00 (+23.53%)
-- 確定: 2957件 (Win 878 / Loss 1165 / Flat 914) / pending 1件 / skip 3287件
+- 確定: 2957件 (Win 878 / Loss 1165 / Flat 914) / pending 1件 / skip 3288件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000203 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: BULLA/USDT:USDT `LIMIT_7PCT` EXPIRED account +0.00% 残高後 $123.53
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T06:41:16.099014+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.31% price=76525.3
-- Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-17T06:46:07.941249+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.31% price=76524.7
+- Funnel: target 1060 → liquid 158 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI n/a=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +70.19% | $4,262,380.66 |
-| HNT/USDT:USDT | +22.18% | $5,918,562.83 |
-| BATON/USDT:USDT | +20.09% | $2,452,650.39 |
-| MARSCOIN/USDT:USDT | +19.71% | $3,331,533.88 |
-| USELESS/USDT:USDT | +19.06% | $11,478,522.59 |
+| ONE/USDT:USDT | +77.83% | $4,342,247.73 |
+| USELESS/USDT:USDT | +21.15% | $11,526,458.65 |
+| HNT/USDT:USDT | +20.80% | $5,923,943.71 |
+| MARSCOIN/USDT:USDT | +19.73% | $3,341,359.61 |
+| BATON/USDT:USDT | +19.33% | $2,455,508.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| BATON/USDT:USDT | below_relative_strength | +5.30% | +4.99% |
-| SAGA/USDT:USDT | below_1h_threshold | +4.43% | +4.13% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +2.71% | +2.41% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.33% | +2.02% |
-| LIT/USDT:USDT | below_1h_threshold | +2.17% | +1.86% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.71% | +4.41% |
+| ONE/USDT:USDT | below_1h_threshold | +3.93% | +3.62% |
+| LONGXIA/USDT:USDT | below_1h_threshold | +2.62% | +2.32% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.37% | +2.07% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.35% | +2.04% |
 
 ## 7. 次に見るべき不足
 
