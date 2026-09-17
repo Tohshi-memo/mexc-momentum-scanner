@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T14:51:51.916172+00:00
+- generated_at: 2026-09-17T14:56:56.410011+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14810**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T14:51:32.037615+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=76642.4
-- Funnel: target 1052 → liquid 162 → pre 50 → checked 50 → surge 6 → strict 2
-- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.8 >= 65=1, 4h RSI 87.5 >= 65=1, 4h RSI 68.9 >= 65=1, 4h RSI 70.0 >= 65=1
+- 更新: 2026-09-17T14:56:36.957942+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.08% price=76608.5
+- Funnel: target 1052 → liquid 162 → pre 50 → checked 50 → surge 7 → strict 3
+- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 84.0 >= 65=1, 4h RSI 87.9 >= 65=1, 4h RSI 68.4 >= 65=1, 4h RSI 76.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +108.49% | $3,947,260.94 |
-| ONE/USDT:USDT | +93.37% | $16,036,322.99 |
-| BATON/USDT:USDT | +41.68% | $2,620,052.85 |
-| 4STOCK/USDT:USDT | +29.17% | $1,121,503.52 |
-| MARSCOIN/USDT:USDT | +23.23% | $3,339,632.39 |
+| AVA/USDT:USDT | +110.59% | $4,030,377.31 |
+| ONE/USDT:USDT | +94.17% | $16,148,325.73 |
+| BATON/USDT:USDT | +37.38% | $2,623,760.91 |
+| 4STOCK/USDT:USDT | +31.68% | $1,123,017.23 |
+| MARSCOIN/USDT:USDT | +24.93% | $3,350,776.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LONGXIA/USDT:USDT | below_1h_threshold | +4.58% | +4.61% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.56% | +4.60% |
-| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.50% |
-| ZEC/USDT:USDT | below_1h_threshold | +4.33% | +4.37% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +3.45% | +3.48% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +4.56% | +4.64% |
+| MVLL/USDT:USDT | below_1h_threshold | +4.47% | +4.55% |
+| ZEC/USDT:USDT | below_1h_threshold | +4.05% | +4.13% |
+| BR/USDT:USDT | below_1h_threshold | +3.66% | +3.75% |
+| COTI/USDT:USDT | below_1h_threshold | +3.15% | +3.23% |
 
 ## 7. 次に見るべき不足
 
