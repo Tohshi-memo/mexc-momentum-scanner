@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-17T13:31:41.676613+00:00
+- generated_at: 2026-09-17T13:36:32.520016+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14799**
 
@@ -70,9 +70,9 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-17T13:31:24.060552+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.25% price=76509.0
-- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 2
+- 更新: 2026-09-17T13:36:20.691400+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.61% price=76233.1
+- Funnel: target 1050 → liquid 162 → pre 50 → checked 50 → surge 2 → strict 2
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AVA/USDT:USDT | +90.32% | $3,498,105.38 |
-| ONE/USDT:USDT | +57.80% | $11,845,183.45 |
-| BATON/USDT:USDT | +33.61% | $2,570,224.82 |
-| GENIUS/USDT:USDT | +30.64% | $1,805,395.99 |
-| 4STOCK/USDT:USDT | +29.48% | $1,097,955.73 |
+| AVA/USDT:USDT | +88.67% | $3,531,329.11 |
+| ONE/USDT:USDT | +58.08% | $11,911,061.83 |
+| BATON/USDT:USDT | +35.51% | $2,573,082.62 |
+| 4STOCK/USDT:USDT | +28.12% | $1,100,767.04 |
+| GENIUS/USDT:USDT | +28.03% | $1,823,845.04 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PONS/USDT:USDT | below_1h_threshold | +2.85% | +3.10% |
-| MVLL/USDT:USDT | below_1h_threshold | +2.70% | +2.95% |
-| BATON/USDT:USDT | below_1h_threshold | +2.66% | +2.91% |
-| LAB/USDT:USDT | below_1h_threshold | +2.13% | +2.38% |
-| UNI/USDT:USDT | below_1h_threshold | +2.01% | +2.26% |
+| BATON/USDT:USDT | below_1h_threshold | +3.63% | +4.24% |
+| MVLL/USDT:USDT | below_1h_threshold | +2.70% | +3.31% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.48% | +3.09% |
+| PONS/USDT:USDT | below_1h_threshold | +2.29% | +2.90% |
+| MUU/USDT:USDT | below_1h_threshold | +1.67% | +2.28% |
 
 ## 7. 次に見るべき不足
 
