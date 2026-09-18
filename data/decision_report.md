@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T19:21:35.834102+00:00
+- generated_at: 2026-09-18T19:26:25.192990+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14942**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T19:21:22.978969+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=81188.2
+- 更新: 2026-09-18T19:26:14.462830+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=81126.4
 - Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +48.94% | $17,383,040.52 |
-| SAGA/USDT:USDT | +22.66% | $3,828,667.76 |
-| STRK/USDT:USDT | +15.52% | $5,623,322.24 |
-| USELESS/USDT:USDT | +13.53% | $7,149,973.28 |
-| ZEN/USDT:USDT | +11.79% | $6,268,100.59 |
+| AKE/USDT:USDT | +49.05% | $17,940,325.32 |
+| SAGA/USDT:USDT | +23.64% | $3,832,893.86 |
+| USELESS/USDT:USDT | +13.91% | $7,175,548.51 |
+| STRK/USDT:USDT | +13.32% | $5,810,881.88 |
+| ZEN/USDT:USDT | +12.44% | $6,496,201.45 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +4.44% | +4.09% |
-| ZEN/USDT:USDT | below_1h_threshold | +3.51% | +3.16% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.44% | +3.09% |
-| AERO/USDT:USDT | below_1h_threshold | +3.20% | +2.85% |
-| SPX/USDT:USDT | below_1h_threshold | +2.91% | +2.56% |
+| ZEN/USDT:USDT | below_1h_threshold | +4.81% | +4.54% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.26% | +3.98% |
+| AERO/USDT:USDT | below_1h_threshold | +3.35% | +3.08% |
+| SPX/USDT:USDT | below_1h_threshold | +2.63% | +2.36% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.38% | +2.10% |
 
 ## 7. 次に見るべき不足
 
