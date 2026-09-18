@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T10:16:30.217366+00:00
+- generated_at: 2026-09-18T10:21:38.678175+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14886**
 
@@ -70,10 +70,10 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T10:16:19.163211+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=78169.3
-- Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-18T10:21:25.005915+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78181.8
+- Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 1
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - Strict後reject: 4h RSI 92.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
@@ -81,21 +81,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +66.33% | $11,727,055.76 |
-| CNPY/USDT:USDT | +38.42% | $3,872,250.90 |
-| UNI/USDT:USDT | +29.69% | $83,525,754.03 |
-| ONE/USDT:USDT | +28.48% | $53,957,352.32 |
-| NEAR/USDT:USDT | +22.82% | $142,681,175.26 |
+| G/USDT:USDT | +68.41% | $12,005,102.53 |
+| CNPY/USDT:USDT | +38.09% | $3,879,691.37 |
+| UNI/USDT:USDT | +31.38% | $85,867,502.31 |
+| ONE/USDT:USDT | +26.79% | $54,036,205.94 |
+| AKE/USDT:USDT | +23.67% | $4,471,489.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +4.79% | +4.79% |
-| INJ/USDT:USDT | below_1h_threshold | +1.79% | +1.79% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.47% | +1.47% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.39% | +1.39% |
-| UNI/USDT:USDT | below_1h_threshold | +1.08% | +1.08% |
+| EIGEN/USDT:USDT | below_1h_threshold | +2.78% | +2.77% |
+| INJ/USDT:USDT | below_1h_threshold | +2.48% | +2.46% |
+| UNI/USDT:USDT | below_1h_threshold | +2.41% | +2.39% |
+| CNPY/USDT:USDT | below_1h_threshold | +1.41% | +1.39% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.85% | +0.83% |
 
 ## 7. 次に見るべき不足
 
