@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T16:57:05.166769+00:00
+- generated_at: 2026-09-18T17:01:16.473514+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14925**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T16:56:51.233473+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=80888.0
-- Funnel: target 1050 → liquid 172 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 70.1 >= 65=1, 4h RSI 67.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-18T17:01:08.796779+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80803.2
+- Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CNPY/USDT:USDT | +16.17% | $5,008,822.68 |
-| ONE/USDT:USDT | +8.65% | $49,757,564.29 |
-| AKE/USDT:USDT | +6.90% | $5,605,568.83 |
-| SAGA/USDT:USDT | +4.07% | $1,249,696.31 |
-| USELESS/USDT:USDT | +3.73% | $6,436,114.62 |
+| CNPY/USDT:USDT | +15.53% | $5,011,825.83 |
+| ONE/USDT:USDT | +9.73% | $46,049,204.17 |
+| AKE/USDT:USDT | +8.41% | $5,447,186.26 |
+| SAGA/USDT:USDT | +4.07% | $1,190,071.68 |
+| USELESS/USDT:USDT | +3.42% | $6,145,662.98 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +4.08% | +3.83% |
-| USELESS/USDT:USDT | below_1h_threshold | +3.73% | +3.48% |
-| ARB/USDT:USDT | below_1h_threshold | +3.27% | +3.03% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.03% | +2.79% |
-| S/USDT:USDT | below_1h_threshold | +2.86% | +2.61% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.92% | +1.93% |
+| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
+| G/USDT:USDT | below_1h_threshold | +1.03% | +1.04% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.02% |
+| COINBASE/USDT:USDT | below_1h_threshold | +0.94% | +0.95% |
 
 ## 7. 次に見るべき不足
 
