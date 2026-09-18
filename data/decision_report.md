@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T12:41:39.543703+00:00
+- generated_at: 2026-09-18T12:46:30.599054+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14893**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.32** / 初期 $100.00 (+23.32%)
-- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3406件
+- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3407件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000141 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: G/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T12:41:26.525050+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=78117.5
-- Funnel: target 1050 → liquid 162 → pre 50 → checked 49 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=1
-- Strict後reject: 4h RSI 73.4 >= 65=1, 4h RSI 87.0 >= 65=1
+- 更新: 2026-09-18T12:46:19.536538+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=78100.3
+- Funnel: target 1050 → liquid 163 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.3 >= 65=1, 4h RSI 72.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +79.94% | $20,403,414.93 |
-| CNPY/USDT:USDT | +40.08% | $4,218,194.45 |
-| ONE/USDT:USDT | +32.74% | $54,458,296.94 |
-| NEAR/USDT:USDT | +23.93% | $154,623,276.69 |
-| UNI/USDT:USDT | +21.94% | $97,834,878.45 |
+| G/USDT:USDT | +80.38% | $20,590,759.83 |
+| MYX/USDT:USDT | +45.30% | $1,122,981.11 |
+| CNPY/USDT:USDT | +39.98% | $4,230,815.68 |
+| ONE/USDT:USDT | +32.67% | $54,554,453.06 |
+| NEAR/USDT:USDT | +25.12% | $155,974,841.15 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| HYPE/USDT:USDT | below_1h_threshold | +2.12% | +2.01% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.12% | +2.01% |
-| ONDO/USDT:USDT | below_1h_threshold | +2.07% | +1.96% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.94% | +1.83% |
-| ICP/USDT:USDT | below_1h_threshold | +1.75% | +1.64% |
+| S/USDT:USDT | below_1h_threshold | +4.54% | +4.46% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.60% | +2.51% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.22% | +2.13% |
+| ICP/USDT:USDT | below_1h_threshold | +2.00% | +1.91% |
+| TIA/USDT:USDT | below_1h_threshold | +1.90% | +1.82% |
 
 ## 7. 次に見るべき不足
 
