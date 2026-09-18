@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T08:26:28.978871+00:00
+- generated_at: 2026-09-18T08:31:30.571630+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14879**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T08:26:17.519501+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=77971.3
+- 更新: 2026-09-18T08:31:21.026011+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.17% price=77904.8
 - Funnel: target 1047 → liquid 159 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1, 4h RSI 93.1 >= 65=1
+- Strict後reject: 4h RSI 70.9 >= 65=1, 4h RSI 93.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +69.98% | $5,457,511.54 |
-| CNPY/USDT:USDT | +43.61% | $3,774,867.45 |
-| ONE/USDT:USDT | +26.12% | $54,731,541.18 |
-| STRK/USDT:USDT | +24.68% | $1,066,722.16 |
-| UNI/USDT:USDT | +23.38% | $74,165,889.96 |
+| G/USDT:USDT | +70.69% | $5,608,799.16 |
+| CNPY/USDT:USDT | +41.87% | $3,785,703.50 |
+| ONE/USDT:USDT | +25.24% | $54,811,090.98 |
+| STRK/USDT:USDT | +25.15% | $1,181,010.29 |
+| UNI/USDT:USDT | +23.96% | $74,579,775.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +2.72% | +2.46% |
-| LONGXIA/USDT:USDT | below_1h_threshold | +1.22% | +0.97% |
-| TAO/USDT:USDT | below_1h_threshold | +1.08% | +0.83% |
-| BABY/USDT:USDT | below_1h_threshold | +0.98% | +0.72% |
-| PONS/USDT:USDT | below_1h_threshold | +0.97% | +0.71% |
+| STRK/USDT:USDT | below_1h_threshold | +2.57% | +2.40% |
+| PONS/USDT:USDT | below_1h_threshold | +1.60% | +1.43% |
+| ZRO/USDT:USDT | below_1h_threshold | +1.13% | +0.96% |
+| RENDER/USDT:USDT | below_1h_threshold | +1.00% | +0.83% |
+| AAVE/USDT:USDT | below_1h_threshold | +0.72% | +0.55% |
 
 ## 7. 次に見るべき不足
 
