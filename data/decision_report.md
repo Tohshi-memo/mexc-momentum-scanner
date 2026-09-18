@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T09:11:27.903203+00:00
+- generated_at: 2026-09-18T09:16:26.957319+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14882**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.32** / 初期 $100.00 (+23.32%)
-- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3397件
+- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3398件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000274 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: G/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T09:11:16.986117+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=78398.6
+- 更新: 2026-09-18T09:16:16.049069+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=78288.0
 - Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 93.7 >= 65=1
+- Strict後reject: 4h RSI 71.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +80.23% | $8,550,711.17 |
-| CNPY/USDT:USDT | +38.94% | $3,848,849.37 |
-| STRK/USDT:USDT | +27.23% | $1,595,176.88 |
-| ONE/USDT:USDT | +25.94% | $53,717,439.57 |
-| UNI/USDT:USDT | +25.03% | $77,406,313.34 |
+| G/USDT:USDT | +74.83% | $8,894,146.00 |
+| CNPY/USDT:USDT | +38.76% | $3,849,982.78 |
+| ONE/USDT:USDT | +32.46% | $53,829,271.02 |
+| STRK/USDT:USDT | +26.69% | $1,621,956.00 |
+| UNI/USDT:USDT | +25.24% | $77,670,589.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +3.04% | +2.82% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +1.55% |
-| COINBASE/USDT:USDT | below_1h_threshold | +1.48% | +1.26% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.17% | +0.95% |
-| CROSS/USDT:USDT | below_1h_threshold | +1.10% | +0.88% |
+| G/USDT:USDT | below_1h_threshold | +3.83% | +3.76% |
+| RAY/USDT:USDT | below_1h_threshold | +3.80% | +3.72% |
+| CROSS/USDT:USDT | below_1h_threshold | +2.08% | +2.00% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +1.69% |
+| COINBASE/USDT:USDT | below_1h_threshold | +1.48% | +1.40% |
 
 ## 7. 次に見るべき不足
 
