@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T09:21:26.122205+00:00
+- generated_at: 2026-09-18T09:26:17.057300+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14882**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T09:21:14.701242+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.09% price=78298.1
-- Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.2 >= 65=1, 4h RSI 77.9 >= 65=1
+- 更新: 2026-09-18T09:26:08.207373+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=78219.9
+- Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +68.88% | $9,118,768.71 |
-| CNPY/USDT:USDT | +40.03% | $3,858,930.89 |
-| ONE/USDT:USDT | +35.06% | $53,941,795.71 |
-| STRK/USDT:USDT | +27.80% | $1,648,094.28 |
-| UNI/USDT:USDT | +26.23% | $77,962,827.44 |
+| G/USDT:USDT | +67.30% | $9,247,233.29 |
+| CNPY/USDT:USDT | +36.61% | $3,879,516.66 |
+| ONE/USDT:USDT | +34.91% | $54,000,760.83 |
+| STRK/USDT:USDT | +28.66% | $1,684,200.92 |
+| UNI/USDT:USDT | +25.57% | $78,249,040.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CROSS/USDT:USDT | below_1h_threshold | +1.96% | +1.87% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.88% | +1.79% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +1.68% |
-| COINBASE/USDT:USDT | below_1h_threshold | +1.48% | +1.39% |
-| STRK/USDT:USDT | below_1h_threshold | +1.34% | +1.25% |
+| RAY/USDT:USDT | below_1h_threshold | +4.34% | +4.35% |
+| CROSS/USDT:USDT | below_1h_threshold | +4.19% | +4.20% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.77% | +1.78% |
+| STRK/USDT:USDT | below_1h_threshold | +1.74% | +1.75% |
+| COINBASE/USDT:USDT | below_1h_threshold | +1.48% | +1.49% |
 
 ## 7. 次に見るべき不足
 
