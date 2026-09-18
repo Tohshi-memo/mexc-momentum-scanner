@@ -1,6 +1,6 @@
 {
   "initial_capital": 100.0,
-  "balance": 120.67855608734976,
+  "balance": 120.5578775312624,
   "started_at": "2026-06-13T15:13:45.269640+00:00",
   "trades": [
     {
@@ -4316,6 +4316,28 @@
       "strategy_boosters": [
         "daily_RED",
         "1h_green=3",
+        "fundamental_HIGH"
+      ],
+      "strategy_score": 0.0
+    },
+    {
+      "symbol": "BULLA/USDT:USDT",
+      "detected_at": "2026-09-18T04:46:21.193629+00:00",
+      "closed_at": "2026-09-18T04:50:39.617885+00:00",
+      "outcome": "SL_HIT",
+      "pnl_pct": -4.000000000000009,
+      "sl_pct": 4.000000000000009,
+      "risk_pct": 0.1,
+      "notional_usdt": 3.0169639021837376,
+      "pnl_usdt": -0.12067855608734977,
+      "balance_before": 120.67855608734976,
+      "balance_after": 120.5578775312624,
+      "strategy_tier": "S",
+      "strategy_direction": "short",
+      "strategy_entry_style": "MARKET",
+      "strategy_boosters": [
+        "daily_RED",
+        "1h_green=4",
         "fundamental_HIGH"
       ],
       "strategy_score": 0.0
