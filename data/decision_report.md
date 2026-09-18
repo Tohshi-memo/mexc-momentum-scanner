@@ -1,21 +1,21 @@
 # Decision Report
 
-- generated_at: 2026-09-18T14:51:36.306987+00:00
+- generated_at: 2026-09-18T14:56:41.570653+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **14909**
+- closed shadow trades: **14911**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=14909, expectancy=-0.00%
-- 直近20件 MARKET基準: n=20, expectancy=-0.75%
+- 全期間 MARKET基準: n=14911, expectancy=-0.00%
+- 直近20件 MARKET基準: n=20, expectancy=-1.09%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
 ### 実行可能ランキング (現executorで正確に測れるもの)
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| MARKET | 20/20 | 100.0% | -0.75% | **-0.75%** |
+| MARKET | 20/20 | 100.0% | -1.09% | **-1.09%** |
 
 ### シャドウ上位 SHORT (まだ実行に直結しない候補を含む)
 
@@ -24,18 +24,18 @@
 | LIMIT_8PCT | 5/20 | 25.0% | +4.56% | **+1.14%** |
 | LIMIT_7PCT | 5/20 | 25.0% | +3.84% | **+0.96%** |
 | LIMIT_9PCT | 2/20 | 10.0% | +8.00% | **+0.80%** |
-| LIMIT_FIB1272 | 7/20 | 35.0% | +1.78% | **+0.62%** |
+| LIMIT_FIB1272 | 8/20 | 40.0% | +1.52% | **+0.61%** |
 | LIMIT_6PCT | 6/20 | 30.0% | +1.89% | **+0.57%** |
 
 ### シャドウ上位 LONG
 
 | strategy | filled/total | fill率 | avg PnL | 実質EV |
 |---|---:|---:|---:|---:|
-| LIMIT_2PCT_LONG | 18/20 | 90.0% | +2.40% | **+2.16%** |
-| LIMIT_3PCT_LONG | 12/20 | 60.0% | +2.38% | **+1.43%** |
-| LIMIT_ATR_LONG | 13/20 | 65.0% | +2.07% | **+1.35%** |
-| LIMIT_4PCT_LONG | 11/20 | 55.0% | +2.29% | **+1.26%** |
-| LIMIT_BB3S_LONG | 8/15 | 53.3% | +2.10% | **+1.12%** |
+| LIMIT_2PCT_LONG | 17/20 | 85.0% | +2.66% | **+2.26%** |
+| LIMIT_BB3S_LONG | 8/15 | 53.3% | +3.44% | **+1.84%** |
+| LIMIT_ATR_LONG | 13/20 | 65.0% | +2.56% | **+1.67%** |
+| LIMIT_3PCT_LONG | 11/20 | 55.0% | +2.69% | **+1.48%** |
+| LIMIT_4PCT_LONG | 10/20 | 50.0% | +2.52% | **+1.26%** |
 
 ## 2. $100 Live Portfolio
 
@@ -46,56 +46,56 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,153.97** / 初期 $100.00 (+1053.97%)
-- 確定: 5605件 (Win 1679 / Loss 1815 / Flat 2111) / skip 5865件
-- 成長率目線: 平均log +0.000436 / 幾何平均 +0.044% per trade / maxDD +8.46%
-- 次の候補: `LIMIT_1PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: G/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.50% 残高後 $1,153.97
+- 残高: **$1,148.20** / 初期 $100.00 (+1048.20%)
+- 確定: 5606件 (Win 1679 / Loss 1816 / Flat 2111) / skip 5866件
+- 成長率目線: 平均log +0.000435 / 幾何平均 +0.044% per trade / maxDD +8.46%
+- 次の候補: `LIMIT_BB3S_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
+- 最新: EVAA/USDT:USDT `LIMIT_1PCT_LONG` SL_HIT account -0.50% 残高後 $1,148.20
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$241.67** / 初期 $100.00 (+141.67%)
-- 確定: 3173件 (Win 878 / Loss 757 / Flat 1538) / skip 5147件
+- 確定: 3173件 (Win 878 / Loss 757 / Flat 1538) / skip 5149件
 - 成長率目線: 平均log +0.000278 / 幾何平均 +0.028% per trade / maxDD +3.96%
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0445 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_robust_growth_score) / robust_score +0.0422 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: LONGXIA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.35% 残高後 $241.67
 
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.32** / 初期 $100.00 (+23.32%)
-- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3423件
+- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3425件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000282 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000259 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: G/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T14:51:23.031363+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.98% price=80827.6
-- Funnel: target 1050 → liquid 172 → pre 50 → checked 50 → surge 4 → strict 0
+- 更新: 2026-09-18T14:56:24.834195+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +1.03% price=80867.7
+- Funnel: target 1050 → liquid 173 → pre 50 → checked 50 → surge 4 → strict 0
 - Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=1, 4h RSI 95.7 >= 65=1, 4h RSI 78.7 >= 65=1, 4h RSI 79.3 >= 65=1
+- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 95.7 >= 65=1, 4h RSI 79.3 >= 65=1, 4h RSI 79.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +122.11% | $28,375,175.76 |
-| EVAA/USDT:USDT | +60.17% | $1,455,246.80 |
-| MYX/USDT:USDT | +45.47% | $7,608,791.78 |
-| CNPY/USDT:USDT | +39.05% | $4,422,281.23 |
-| NEAR/USDT:USDT | +28.32% | $176,113,191.81 |
+| G/USDT:USDT | +119.76% | $28,742,629.66 |
+| MYX/USDT:USDT | +45.37% | $7,707,553.27 |
+| EVAA/USDT:USDT | +43.30% | $1,637,461.72 |
+| CNPY/USDT:USDT | +39.93% | $4,471,103.11 |
+| NEAR/USDT:USDT | +28.53% | $177,211,783.56 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COINBASE/USDT:USDT | below_relative_strength | +5.07% | +4.10% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +3.42% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.31% | +2.33% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.16% | +2.19% |
-| WIF/USDT:USDT | below_1h_threshold | +3.14% | +2.17% |
+| COINBASE/USDT:USDT | below_relative_strength | +5.07% | +4.05% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +3.37% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.50% | +2.48% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.45% | +2.42% |
+| WIF/USDT:USDT | below_1h_threshold | +3.35% | +2.32% |
 
 ## 7. 次に見るべき不足
 
