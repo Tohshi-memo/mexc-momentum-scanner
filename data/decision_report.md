@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T21:16:29.127776+00:00
+- generated_at: 2026-09-18T21:21:32.610143+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14946**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T21:16:18.518984+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.12% price=81184.9
+- 更新: 2026-09-18T21:21:21.898493+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81118.6
 - Funnel: target 1050 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +63.75% | $24,365,966.48 |
-| SAGA/USDT:USDT | +22.37% | $4,065,863.68 |
-| USELESS/USDT:USDT | +16.89% | $7,342,154.44 |
-| STRK/USDT:USDT | +14.55% | $7,844,347.44 |
-| AR/USDT:USDT | +13.69% | $2,445,505.20 |
+| AKE/USDT:USDT | +63.59% | $24,651,946.49 |
+| SAGA/USDT:USDT | +22.13% | $4,068,690.59 |
+| STRK/USDT:USDT | +16.22% | $7,919,429.46 |
+| USELESS/USDT:USDT | +16.18% | $7,350,284.96 |
+| AR/USDT:USDT | +13.94% | $2,513,741.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.05% | +2.93% |
-| ONE/USDT:USDT | below_1h_threshold | +2.03% | +1.91% |
-| CHIP/USDT:USDT | below_1h_threshold | +1.80% | +1.68% |
-| ZAMA/USDT:USDT | below_1h_threshold | +1.40% | +1.28% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +1.31% | +1.18% |
+| AKE/USDT:USDT | below_1h_threshold | +2.89% | +2.85% |
+| ONE/USDT:USDT | below_1h_threshold | +1.44% | +1.40% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.29% | +1.25% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.26% | +1.22% |
+| APT/USDT:USDT | below_1h_threshold | +1.21% | +1.17% |
 
 ## 7. 次に見るべき不足
 
