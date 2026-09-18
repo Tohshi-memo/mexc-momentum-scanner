@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T13:31:25.128869+00:00
+- generated_at: 2026-09-18T13:36:28.185948+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14898**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.32** / 初期 $100.00 (+23.32%)
-- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3411件
+- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3412件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_7PCT` (selected_by_causal_log_growth) / causal_score +0.000148 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: G/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T13:31:13.717335+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.18% price=78149.0
-- Funnel: target 1050 → liquid 164 → pre 50 → checked 50 → surge 2 → strict 0
+- 更新: 2026-09-18T13:36:16.589357+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.43% price=78337.4
+- Funnel: target 1050 → liquid 166 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.9 >= 65=1, 4h RSI 94.6 >= 65=1
+- Strict後reject: 4h RSI 76.3 >= 65=1, 4h RSI 92.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +92.78% | $23,102,578.58 |
-| MYX/USDT:USDT | +46.17% | $2,919,394.72 |
-| CNPY/USDT:USDT | +42.44% | $4,278,393.41 |
-| ONE/USDT:USDT | +34.42% | $54,597,100.65 |
-| NEAR/USDT:USDT | +28.04% | $160,867,224.48 |
+| G/USDT:USDT | +88.18% | $23,347,022.49 |
+| MYX/USDT:USDT | +58.77% | $3,267,007.87 |
+| CNPY/USDT:USDT | +42.83% | $4,298,968.02 |
+| ONE/USDT:USDT | +31.82% | $54,659,008.07 |
+| NEAR/USDT:USDT | +30.13% | $164,872,639.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +2.87% | +2.69% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.57% | +2.38% |
-| ETHFI/USDT:USDT | below_1h_threshold | +2.38% | +2.20% |
-| UNI/USDT:USDT | below_1h_threshold | +2.01% | +1.82% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.91% | +1.72% |
+| G/USDT:USDT | below_1h_threshold | +4.74% | +4.32% |
+| NEAR/USDT:USDT | below_1h_threshold | +3.52% | +3.09% |
+| ETHFI/USDT:USDT | below_1h_threshold | +2.55% | +2.13% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.52% | +2.09% |
+| DOT/USDT:USDT | below_1h_threshold | +2.29% | +1.87% |
 
 ## 7. 次に見るべき不足
 
