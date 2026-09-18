@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T03:31:37.451338+00:00
+- generated_at: 2026-09-18T03:36:34.677768+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14859**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T03:31:24.795923+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.67% price=77460.0
+- 更新: 2026-09-18T03:36:22.265568+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.56% price=77382.1
 - Funnel: target 1052 → liquid 152 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.0 >= 65=1, 4h RSI 77.9 >= 65=1, 4h RSI 69.1 >= 65=1, 4h RSI 87.3 >= 65=1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 85.3 >= 65=1, 4h RSI 69.0 >= 65=1, 4h RSI 77.8 >= 65=1, 4h RSI 87.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +28.76% | $84,875,662.37 |
-| CNPY/USDT:USDT | +26.89% | $3,453,170.49 |
-| UNI/USDT:USDT | +20.76% | $64,485,600.62 |
-| COTI/USDT:USDT | +19.95% | $6,876,574.49 |
-| APT/USDT:USDT | +19.62% | $6,714,623.27 |
+| ARB/USDT:USDT | +27.92% | $85,689,946.71 |
+| CNPY/USDT:USDT | +24.87% | $3,454,727.31 |
+| COTI/USDT:USDT | +20.68% | $6,900,849.07 |
+| UNI/USDT:USDT | +20.41% | $65,028,988.47 |
+| APT/USDT:USDT | +19.19% | $6,842,165.66 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| APT/USDT:USDT | below_relative_strength | +5.16% | +4.49% |
-| PONS/USDT:USDT | below_1h_threshold | +4.10% | +3.43% |
-| UAI/USDT:USDT | below_1h_threshold | +3.97% | +3.31% |
-| CROSS/USDT:USDT | below_1h_threshold | +3.86% | +3.20% |
-| PENDLE/USDT:USDT | below_1h_threshold | +2.94% | +2.28% |
+| APT/USDT:USDT | below_1h_threshold | +4.93% | +4.37% |
+| PONS/USDT:USDT | below_1h_threshold | +4.83% | +4.26% |
+| UAI/USDT:USDT | below_1h_threshold | +4.07% | +3.50% |
+| CROSS/USDT:USDT | below_1h_threshold | +3.47% | +2.91% |
+| PENDLE/USDT:USDT | below_1h_threshold | +3.09% | +2.53% |
 
 ## 7. 次に見るべき不足
 
