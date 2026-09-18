@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T15:41:31.025122+00:00
+- generated_at: 2026-09-18T15:46:26.569762+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14915**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T15:41:18.142815+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=80719.5
+- 更新: 2026-09-18T15:46:15.700832+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.52% price=80479.7
 - Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.7 >= 65=1
+- Strict後reject: 4h RSI 78.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +95.44% | $31,806,750.86 |
-| CNPY/USDT:USDT | +42.57% | $4,565,506.88 |
-| PIEVERSE/USDT:USDT | +41.64% | $1,075,676.61 |
-| MYX/USDT:USDT | +40.81% | $9,078,088.18 |
-| EVAA/USDT:USDT | +39.31% | $2,178,781.64 |
+| G/USDT:USDT | +85.21% | $32,184,160.60 |
+| CNPY/USDT:USDT | +42.31% | $4,573,625.87 |
+| MYX/USDT:USDT | +42.19% | $9,437,475.72 |
+| PIEVERSE/USDT:USDT | +39.70% | $1,098,636.80 |
+| EVAA/USDT:USDT | +38.47% | $2,203,539.08 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XMR/USDT:USDT | below_1h_threshold | +4.16% | +4.38% |
-| COINBASE/USDT:USDT | below_1h_threshold | +3.72% | +3.94% |
-| BR/USDT:USDT | below_1h_threshold | +3.41% | +3.63% |
-| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.79% |
-| SNXX/USDT:USDT | below_1h_threshold | +2.53% | +2.75% |
+| XMR/USDT:USDT | below_1h_threshold | +4.62% | +5.14% |
+| COINBASE/USDT:USDT | below_1h_threshold | +3.72% | +4.24% |
+| BR/USDT:USDT | below_1h_threshold | +3.42% | +3.94% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +3.09% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.53% | +3.05% |
 
 ## 7. 次に見るべき不足
 
