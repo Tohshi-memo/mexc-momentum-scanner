@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T03:16:23.844391+00:00
+- generated_at: 2026-09-18T03:21:22.778804+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14859**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.32** / 初期 $100.00 (+23.32%)
-- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3367件
+- 確定: 2960件 (Win 878 / Loss 1166 / Flat 916) / pending 0件 / skip 3369件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000374 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: G/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $123.32
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T03:16:10.929278+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.42% price=77273.5
-- Funnel: target 1052 → liquid 151 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 87.5 >= 65=1
+- 更新: 2026-09-18T03:21:10.801363+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.49% price=77325.8
+- Funnel: target 1052 → liquid 151 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.6 >= 65=1, 4h RSI 77.1 >= 65=1, 4h RSI 84.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ARB/USDT:USDT | +28.48% | $80,514,680.67 |
-| CNPY/USDT:USDT | +26.71% | $3,432,476.36 |
-| COTI/USDT:USDT | +21.48% | $6,835,741.28 |
-| NEAR/USDT:USDT | +18.85% | $123,566,281.97 |
-| APT/USDT:USDT | +16.61% | $6,187,940.47 |
+| ARB/USDT:USDT | +29.29% | $81,984,327.93 |
+| CNPY/USDT:USDT | +24.72% | $3,442,803.38 |
+| COTI/USDT:USDT | +19.80% | $6,858,305.57 |
+| NEAR/USDT:USDT | +17.98% | $124,328,926.97 |
+| CROSS/USDT:USDT | +17.93% | $1,637,708.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| OP/USDT:USDT | below_1h_threshold | +4.30% | +3.87% |
-| BCH/USDT:USDT | below_1h_threshold | +3.47% | +3.05% |
-| RAY/USDT:USDT | below_1h_threshold | +3.26% | +2.84% |
-| COTI/USDT:USDT | below_1h_threshold | +3.04% | +2.62% |
-| APT/USDT:USDT | below_1h_threshold | +2.84% | +2.41% |
+| RAY/USDT:USDT | below_relative_strength | +5.02% | +4.53% |
+| CROSS/USDT:USDT | below_1h_threshold | +3.94% | +3.45% |
+| APT/USDT:USDT | below_1h_threshold | +3.37% | +2.88% |
+| PENDLE/USDT:USDT | below_1h_threshold | +2.76% | +2.26% |
+| BCH/USDT:USDT | below_1h_threshold | +2.38% | +1.89% |
 
 ## 7. 次に見るべき不足
 
