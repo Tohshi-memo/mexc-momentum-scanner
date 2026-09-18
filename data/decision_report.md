@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T02:01:18.540402+00:00
+- generated_at: 2026-09-18T02:06:15.261332+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14854**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T02:01:09.818056+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=76693.2
+- 更新: 2026-09-18T02:06:04.270664+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=76672.4
 - Funnel: target 1052 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CNPY/USDT:USDT | +43.35% | $3,299,589.68 |
-| ONE/USDT:USDT | +20.91% | $48,163,020.34 |
-| COTI/USDT:USDT | +17.59% | $6,602,298.33 |
-| ARB/USDT:USDT | +15.11% | $72,322,615.06 |
-| UNI/USDT:USDT | +12.01% | $61,163,309.95 |
+| CNPY/USDT:USDT | +43.09% | $3,301,532.16 |
+| ONE/USDT:USDT | +17.48% | $48,313,755.17 |
+| COTI/USDT:USDT | +16.30% | $6,619,640.01 |
+| ARB/USDT:USDT | +16.28% | $73,130,753.33 |
+| NEAR/USDT:USDT | +12.70% | $116,496,958.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +0.81% | +0.82% |
-| BABY/USDT:USDT | below_1h_threshold | +0.61% | +0.62% |
-| GENIUS/USDT:USDT | below_1h_threshold | +0.55% | +0.57% |
-| ADA/USDT:USDT | below_1h_threshold | +0.48% | +0.49% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +0.31% | +0.32% |
+| RAY/USDT:USDT | below_1h_threshold | +1.06% | +1.10% |
+| DOT/USDT:USDT | below_1h_threshold | +0.76% | +0.80% |
+| WLD/USDT:USDT | below_1h_threshold | +0.60% | +0.64% |
+| ADA/USDT:USDT | below_1h_threshold | +0.48% | +0.52% |
+| ARB/USDT:USDT | below_1h_threshold | +0.39% | +0.43% |
 
 ## 7. 次に見るべき不足
 
