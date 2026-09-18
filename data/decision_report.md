@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T17:01:16.473514+00:00
+- generated_at: 2026-09-18T17:06:25.294067+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14925**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.52** / 初期 $100.00 (+23.52%)
-- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3437件
+- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3438件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000375 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $123.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T17:01:08.796779+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80803.2
-- Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-18T17:06:14.257925+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80840.0
+- Funnel: target 1050 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CNPY/USDT:USDT | +15.53% | $5,011,825.83 |
-| ONE/USDT:USDT | +9.73% | $46,049,204.17 |
-| AKE/USDT:USDT | +8.41% | $5,447,186.26 |
-| SAGA/USDT:USDT | +4.07% | $1,190,071.68 |
-| USELESS/USDT:USDT | +3.42% | $6,145,662.98 |
+| SAGA/USDT:USDT | +22.81% | $1,355,872.61 |
+| CNPY/USDT:USDT | +14.54% | $5,046,617.26 |
+| AKE/USDT:USDT | +8.61% | $5,510,690.03 |
+| ONE/USDT:USDT | +7.90% | $46,193,301.20 |
+| ARB/USDT:USDT | +3.41% | $139,626,859.54 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SNXX/USDT:USDT | below_1h_threshold | +1.92% | +1.93% |
-| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.26% |
-| G/USDT:USDT | below_1h_threshold | +1.03% | +1.04% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +1.02% |
-| COINBASE/USDT:USDT | below_1h_threshold | +0.94% | +0.95% |
+| SNXX/USDT:USDT | below_1h_threshold | +1.92% | +1.88% |
+| VVV/USDT:USDT | below_1h_threshold | +1.27% | +1.24% |
+| MUU/USDT:USDT | below_1h_threshold | +1.25% | +1.21% |
+| G/USDT:USDT | below_1h_threshold | +1.08% | +1.04% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +1.01% | +0.98% |
 
 ## 7. 次に見るべき不足
 
