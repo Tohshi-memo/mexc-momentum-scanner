@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T20:21:23.400844+00:00
+- generated_at: 2026-09-18T20:26:21.015192+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14945**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T20:21:12.545036+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=81165.4
+- 更新: 2026-09-18T20:26:10.214346+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=81052.5
 - Funnel: target 1050 → liquid 168 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.8 >= 65=1
+- Strict後reject: 4h RSI 85.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +48.72% | $22,420,532.28 |
-| SAGA/USDT:USDT | +24.56% | $3,969,669.31 |
-| ZEN/USDT:USDT | +17.20% | $9,626,121.32 |
-| USELESS/USDT:USDT | +14.08% | $7,296,711.71 |
-| STRK/USDT:USDT | +13.05% | $6,641,817.81 |
+| AKE/USDT:USDT | +48.85% | $22,640,180.56 |
+| SAGA/USDT:USDT | +22.37% | $3,985,978.46 |
+| ZEN/USDT:USDT | +17.06% | $9,775,817.63 |
+| USELESS/USDT:USDT | +14.73% | $7,320,514.20 |
+| STRK/USDT:USDT | +14.45% | $6,702,350.29 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.33% | +4.34% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.79% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.67% | +2.67% |
-| MRVLSTOCK/USDT:USDT | below_1h_threshold | +2.52% | +2.52% |
-| APT/USDT:USDT | below_1h_threshold | +2.42% | +2.42% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.33% | +4.48% |
+| APT/USDT:USDT | below_1h_threshold | +3.10% | +3.25% |
+| STRK/USDT:USDT | below_1h_threshold | +2.93% | +3.07% |
+| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +2.93% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +2.67% | +2.81% |
 
 ## 7. 次に見るべき不足
 
