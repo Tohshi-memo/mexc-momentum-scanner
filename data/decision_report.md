@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T19:11:51.765894+00:00
+- generated_at: 2026-09-18T19:16:31.069475+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14941**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T19:11:42.562306+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=81083.2
+- 更新: 2026-09-18T19:16:20.297589+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.35% price=81188.3
 - Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +47.46% | $16,974,646.62 |
-| SAGA/USDT:USDT | +20.87% | $3,808,237.53 |
-| USELESS/USDT:USDT | +15.71% | $7,120,706.80 |
-| STRK/USDT:USDT | +12.89% | $5,063,927.27 |
-| BR/USDT:USDT | +9.66% | $20,640,806.64 |
+| AKE/USDT:USDT | +48.22% | $17,174,903.98 |
+| SAGA/USDT:USDT | +22.23% | $3,819,787.50 |
+| USELESS/USDT:USDT | +14.84% | $7,131,053.66 |
+| STRK/USDT:USDT | +14.50% | $5,401,453.81 |
+| BR/USDT:USDT | +9.43% | $20,752,054.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PUMPFUN/USDT:USDT | below_1h_threshold | +2.36% | +2.14% |
-| AERO/USDT:USDT | below_1h_threshold | +2.14% | +1.92% |
-| STRK/USDT:USDT | below_1h_threshold | +2.14% | +1.92% |
-| CNPY/USDT:USDT | below_1h_threshold | +1.99% | +1.77% |
-| BR/USDT:USDT | below_1h_threshold | +1.73% | +1.51% |
+| STRK/USDT:USDT | below_1h_threshold | +3.72% | +3.37% |
+| AERO/USDT:USDT | below_1h_threshold | +3.11% | +2.76% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.07% | +2.72% |
+| SPX/USDT:USDT | below_1h_threshold | +2.43% | +2.08% |
+| ZKSYNC/USDT:USDT | below_1h_threshold | +2.25% | +1.90% |
 
 ## 7. 次に見るべき不足
 
