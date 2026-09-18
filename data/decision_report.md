@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T10:01:32.128902+00:00
+- generated_at: 2026-09-18T10:06:27.340972+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14886**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T10:01:19.247506+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=78171.6
-- Funnel: target 1050 → liquid 160 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-18T10:06:19.283406+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.02% price=78187.2
+- Funnel: target 1050 → liquid 160 → pre 50 → checked 49 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=1
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +52.83% | $11,217,110.25 |
-| CNPY/USDT:USDT | +36.61% | $3,863,080.42 |
-| ONE/USDT:USDT | +35.52% | $53,689,309.48 |
-| UNI/USDT:USDT | +28.72% | $80,891,623.83 |
-| NEAR/USDT:USDT | +23.27% | $141,002,008.19 |
+| G/USDT:USDT | +57.03% | $11,381,767.23 |
+| CNPY/USDT:USDT | +36.43% | $3,865,307.40 |
+| ONE/USDT:USDT | +33.47% | $53,754,149.23 |
+| UNI/USDT:USDT | +28.22% | $81,423,613.83 |
+| NEAR/USDT:USDT | +23.76% | $141,785,547.57 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CROSS/USDT:USDT | below_1h_threshold | +0.51% | +0.51% |
-| ONE/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
-| CNPY/USDT:USDT | below_1h_threshold | +0.32% | +0.32% |
-| BABY/USDT:USDT | below_1h_threshold | +0.26% | +0.26% |
-| OP/USDT:USDT | below_1h_threshold | +0.23% | +0.23% |
+| G/USDT:USDT | below_1h_threshold | +2.22% | +2.20% |
+| INJ/USDT:USDT | below_1h_threshold | +1.28% | +1.26% |
+| BABY/USDT:USDT | below_1h_threshold | +0.96% | +0.94% |
+| AKE/USDT:USDT | below_1h_threshold | +0.66% | +0.63% |
+| ETHFI/USDT:USDT | below_1h_threshold | +0.52% | +0.50% |
 
 ## 7. 次に見るべき不足
 
