@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T20:36:29.545719+00:00
+- generated_at: 2026-09-18T20:41:35.708288+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14946**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T20:36:18.197810+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.22% price=80993.7
+- 更新: 2026-09-18T20:41:24.488162+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=80957.0
 - Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 91.3 >= 65=1, 4h RSI 85.1 >= 65=1
+- Strict後reject: 4h RSI 91.5 >= 65=1, 4h RSI 85.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +56.63% | $23,138,517.99 |
-| SAGA/USDT:USDT | +21.60% | $4,043,643.86 |
-| STRK/USDT:USDT | +18.53% | $7,058,910.17 |
-| ZEN/USDT:USDT | +17.16% | $10,318,565.86 |
-| USELESS/USDT:USDT | +15.14% | $7,372,362.83 |
+| AKE/USDT:USDT | +53.33% | $23,433,334.48 |
+| SAGA/USDT:USDT | +23.78% | $4,074,571.64 |
+| STRK/USDT:USDT | +18.37% | $7,167,387.92 |
+| USELESS/USDT:USDT | +15.86% | $7,392,998.21 |
+| ZEN/USDT:USDT | +15.51% | $10,568,642.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SOXL/USDT:USDT | below_1h_threshold | +4.33% | +4.55% |
-| APT/USDT:USDT | below_1h_threshold | +3.80% | +4.02% |
-| STG/USDT:USDT | below_1h_threshold | +2.98% | +3.20% |
-| COTI/USDT:USDT | below_1h_threshold | +2.80% | +3.01% |
-| SNDKSTOCK/USDT:USDT | below_1h_threshold | +2.79% | +3.00% |
+| SOXL/USDT:USDT | below_1h_threshold | +4.33% | +4.60% |
+| APT/USDT:USDT | below_1h_threshold | +3.77% | +4.03% |
+| STG/USDT:USDT | below_1h_threshold | +3.49% | +3.75% |
+| CHIP/USDT:USDT | below_1h_threshold | +3.34% | +3.60% |
+| 4/USDT:USDT | below_1h_threshold | +3.08% | +3.34% |
 
 ## 7. 次に見るべき不足
 
