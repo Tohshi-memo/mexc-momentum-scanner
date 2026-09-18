@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T16:26:36.616896+00:00
+- generated_at: 2026-09-18T16:31:23.688754+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14920**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T16:26:22.112394+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=80903.5
-- Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 83.4 >= 65=1, 4h RSI 73.8 >= 65=1, 4h RSI 69.3 >= 65=1
+- 更新: 2026-09-18T16:31:11.990161+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=80992.4
+- Funnel: target 1050 → liquid 171 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.3 >= 65=1, 4h RSI 73.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| XMR/USDT:USDT | +6.07% | $8,373,330.30 |
-| USELESS/USDT:USDT | +6.01% | $6,176,478.56 |
-| CNPY/USDT:USDT | +5.68% | $4,724,969.98 |
-| ONE/USDT:USDT | +5.65% | $49,363,161.91 |
-| AIN/USDT:USDT | +5.02% | $2,474,095.13 |
+| ONE/USDT:USDT | +6.47% | $49,406,261.28 |
+| USELESS/USDT:USDT | +5.52% | $6,252,933.35 |
+| CNPY/USDT:USDT | +5.28% | $4,742,169.86 |
+| ARB/USDT:USDT | +4.87% | $140,887,762.79 |
+| S/USDT:USDT | +4.43% | $1,584,138.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +4.79% | +4.52% |
-| AIN/USDT:USDT | below_1h_threshold | +4.69% | +4.42% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.03% | +3.76% |
-| VVV/USDT:USDT | below_1h_threshold | +3.11% | +2.85% |
-| ARB/USDT:USDT | below_1h_threshold | +3.11% | +2.85% |
+| MYX/USDT:USDT | below_1h_threshold | +4.93% | +4.55% |
+| ARB/USDT:USDT | below_1h_threshold | +4.81% | +4.43% |
+| S/USDT:USDT | below_1h_threshold | +4.50% | +4.12% |
+| AIN/USDT:USDT | below_1h_threshold | +4.25% | +3.87% |
+| XMR/USDT:USDT | below_1h_threshold | +3.95% | +3.57% |
 
 ## 7. 次に見るべき不足
 
