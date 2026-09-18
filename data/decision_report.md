@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T18:26:25.204356+00:00
+- generated_at: 2026-09-18T18:31:26.886625+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14936**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.52** / 初期 $100.00 (+23.52%)
-- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3446件
+- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3447件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000469 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $123.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T18:26:12.458344+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.15% price=80859.9
+- 更新: 2026-09-18T18:31:15.757486+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=80927.5
 - Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.9 >= 65=1
+- Strict後reject: 4h RSI 78.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +36.34% | $12,621,394.47 |
-| SAGA/USDT:USDT | +23.54% | $3,607,960.03 |
-| USELESS/USDT:USDT | +16.10% | $6,926,058.87 |
-| CNPY/USDT:USDT | +6.24% | $5,307,438.18 |
-| ZEN/USDT:USDT | +5.18% | $5,404,312.17 |
+| AKE/USDT:USDT | +41.17% | $13,254,479.90 |
+| SAGA/USDT:USDT | +21.94% | $3,660,762.12 |
+| USELESS/USDT:USDT | +14.41% | $6,971,722.32 |
+| CNPY/USDT:USDT | +6.04% | $5,319,092.04 |
+| AR/USDT:USDT | +6.02% | $1,692,936.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.06% | +3.21% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.87% | +3.02% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +1.96% | +2.11% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +1.76% | +1.91% |
-| CLSKSTOCK/USDT:USDT | below_1h_threshold | +1.52% | +1.67% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.03% | +4.09% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.94% | +3.00% |
+| AR/USDT:USDT | below_1h_threshold | +1.92% | +1.98% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.88% | +1.94% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +1.83% | +1.89% |
 
 ## 7. 次に見るべき不足
 
