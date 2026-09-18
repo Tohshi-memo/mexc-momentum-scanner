@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T23:26:22.558424+00:00
+- generated_at: 2026-09-18T23:31:22.774316+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14960**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T23:26:11.789614+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=81011.0
+- 更新: 2026-09-18T23:31:12.514596+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.20% price=80936.4
 - Funnel: target 1050 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +75.14% | $32,494,104.50 |
-| MAGMA/USDT:USDT | +22.34% | $1,110,879.14 |
-| CATE/USDT:USDT | +21.91% | $1,081,952.42 |
-| SAGA/USDT:USDT | +20.67% | $4,201,364.71 |
-| ZEN/USDT:USDT | +19.44% | $13,207,375.14 |
+| AKE/USDT:USDT | +70.75% | $32,763,209.34 |
+| MAGMA/USDT:USDT | +23.63% | $1,119,854.67 |
+| SAGA/USDT:USDT | +21.11% | $4,205,272.67 |
+| CATE/USDT:USDT | +19.11% | $1,088,992.58 |
+| STRK/USDT:USDT | +18.45% | $9,017,056.69 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| DASH/USDT:USDT | below_1h_threshold | +3.26% | +3.38% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.87% | +2.99% |
-| C/USDT:USDT | below_1h_threshold | +2.53% | +2.64% |
-| VVV/USDT:USDT | below_1h_threshold | +2.18% | +2.29% |
-| CROSS/USDT:USDT | below_1h_threshold | +1.98% | +2.09% |
+| DASH/USDT:USDT | below_1h_threshold | +3.17% | +3.37% |
+| CROSS/USDT:USDT | below_1h_threshold | +2.96% | +3.17% |
+| VVV/USDT:USDT | below_1h_threshold | +2.47% | +2.67% |
+| RAY/USDT:USDT | below_1h_threshold | +1.94% | +2.14% |
+| C/USDT:USDT | below_1h_threshold | +1.93% | +2.14% |
 
 ## 7. 次に見るべき不足
 
