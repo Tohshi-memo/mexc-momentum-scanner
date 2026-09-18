@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-18T14:56:41.570653+00:00
+- generated_at: 2026-09-18T15:01:20.733891+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14911**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-18T14:56:24.834195+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +1.03% price=80867.7
-- Funnel: target 1050 → liquid 173 → pre 50 → checked 50 → surge 4 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 95.7 >= 65=1, 4h RSI 79.3 >= 65=1, 4h RSI 79.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-18T15:01:10.297832+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80966.7
+- Funnel: target 1050 → liquid 167 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +119.76% | $28,742,629.66 |
-| MYX/USDT:USDT | +45.37% | $7,707,553.27 |
-| EVAA/USDT:USDT | +43.30% | $1,637,461.72 |
-| CNPY/USDT:USDT | +39.93% | $4,471,103.11 |
-| NEAR/USDT:USDT | +28.53% | $177,211,783.56 |
+| G/USDT:USDT | +115.09% | $29,138,963.39 |
+| MYX/USDT:USDT | +43.82% | $7,834,736.73 |
+| EVAA/USDT:USDT | +42.75% | $1,685,431.34 |
+| CNPY/USDT:USDT | +40.68% | $4,462,005.57 |
+| NEAR/USDT:USDT | +29.33% | $172,088,068.50 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| COINBASE/USDT:USDT | below_relative_strength | +5.07% | +4.05% |
-| CRCLSTOCK/USDT:USDT | below_1h_threshold | +4.39% | +3.37% |
-| NEAR/USDT:USDT | below_1h_threshold | +3.50% | +2.48% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.45% | +2.42% |
-| WIF/USDT:USDT | below_1h_threshold | +3.35% | +2.32% |
+| COINBASE/USDT:USDT | below_1h_threshold | +3.72% | +3.64% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +2.57% | +2.49% |
+| SNXX/USDT:USDT | below_1h_threshold | +2.53% | +2.45% |
+| CRCLSTOCK/USDT:USDT | below_1h_threshold | +1.37% | +1.28% |
+| KAITO/USDT:USDT | below_1h_threshold | +0.80% | +0.72% |
 
 ## 7. 次に見るべき不足
 
