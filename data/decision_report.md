@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T01:51:24.727926+00:00
+- generated_at: 2026-09-19T01:56:22.887534+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14973**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T01:51:13.349700+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.33% price=81372.6
+- 更新: 2026-09-19T01:56:11.221203+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=81262.2
 - Funnel: target 1050 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.1 >= 65=1, 4h RSI 77.9 >= 65=1
+- Strict後reject: 4h RSI 77.5 >= 65=1, 4h RSI 79.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +71.60% | $36,763,090.56 |
-| ONE/USDT:USDT | +37.13% | $25,738,049.08 |
-| MAGMA/USDT:USDT | +24.02% | $1,266,394.65 |
-| CATE/USDT:USDT | +23.23% | $1,274,223.57 |
-| SAGA/USDT:USDT | +21.74% | $4,254,261.75 |
+| AKE/USDT:USDT | +70.75% | $36,970,436.85 |
+| ONE/USDT:USDT | +37.13% | $25,820,153.67 |
+| CATE/USDT:USDT | +26.82% | $1,281,312.05 |
+| MAGMA/USDT:USDT | +23.18% | $1,268,588.32 |
+| SAGA/USDT:USDT | +22.23% | $4,254,531.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAX/USDT:USDT | below_1h_threshold | +3.97% | +4.30% |
-| NEAR/USDT:USDT | below_1h_threshold | +2.52% | +2.85% |
-| CHIP/USDT:USDT | below_1h_threshold | +2.14% | +2.47% |
-| VVV/USDT:USDT | below_1h_threshold | +2.07% | +2.40% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +1.92% | +2.25% |
+| AVAX/USDT:USDT | below_1h_threshold | +4.21% | +4.67% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.62% | +3.09% |
+| CHIP/USDT:USDT | below_1h_threshold | +2.52% | +2.99% |
+| S/USDT:USDT | below_1h_threshold | +1.87% | +2.33% |
+| UNI/USDT:USDT | below_1h_threshold | +1.59% | +2.05% |
 
 ## 7. 次に見るべき不足
 
