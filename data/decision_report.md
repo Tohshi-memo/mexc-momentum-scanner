@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T22:21:26.225891+00:00
+- generated_at: 2026-09-19T22:26:10.321896+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15102**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T22:21:13.517777+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=81030.1
+- 更新: 2026-09-19T22:26:01.544299+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=81031.2
 - Funnel: target 1050 → liquid 139 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +60.00% | $40,287,313.91 |
-| OFC/USDT:USDT | +43.40% | $1,694,263.02 |
-| BANK/USDT:USDT | +12.36% | $2,370,399.34 |
-| EVAA/USDT:USDT | +10.77% | $1,121,468.16 |
-| CATE/USDT:USDT | +9.18% | $1,522,097.68 |
+| ONE/USDT:USDT | +60.46% | $40,412,300.17 |
+| OFC/USDT:USDT | +44.63% | $1,695,101.07 |
+| BANK/USDT:USDT | +11.64% | $2,411,930.34 |
+| EVAA/USDT:USDT | +10.74% | $1,134,728.06 |
+| CATE/USDT:USDT | +9.68% | $1,524,622.32 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +4.43% | +4.48% |
-| ONE/USDT:USDT | below_1h_threshold | +1.70% | +1.75% |
-| INJ/USDT:USDT | below_1h_threshold | +1.28% | +1.33% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.11% | +1.16% |
-| JTO/USDT:USDT | below_1h_threshold | +0.85% | +0.89% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.57% | +4.61% |
+| ONE/USDT:USDT | below_1h_threshold | +1.91% | +1.95% |
+| INJ/USDT:USDT | below_1h_threshold | +1.44% | +1.48% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.18% | +1.23% |
+| RIVER/USDT:USDT | below_1h_threshold | +0.56% | +0.61% |
 
 ## 7. 次に見るべき不足
 
