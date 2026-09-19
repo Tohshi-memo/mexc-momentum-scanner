@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T16:36:23.905998+00:00
+- generated_at: 2026-09-19T16:41:35.458417+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15063**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T16:36:14.143197+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.27% price=81831.2
+- 更新: 2026-09-19T16:41:23.789506+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.27% price=81832.5
 - Funnel: target 1050 → liquid 151 → pre 50 → checked 50 → surge 2 → strict 0
 - Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.8 >= 65=1, 4h RSI 75.9 >= 65=1
+- Strict後reject: 4h RSI 84.1 >= 65=1, 4h RSI 84.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| G/USDT:USDT | +14.07% | $11,527,722.17 |
-| C/USDT:USDT | +7.60% | $1,284,919.56 |
-| ONE/USDT:USDT | +4.68% | $24,802,120.16 |
-| ENA/USDT:USDT | +2.60% | $45,005,647.40 |
-| PIEVERSE/USDT:USDT | +2.38% | $1,963,305.10 |
+| G/USDT:USDT | +13.81% | $11,612,480.77 |
+| ONE/USDT:USDT | +8.26% | $25,011,656.63 |
+| C/USDT:USDT | +5.06% | $1,299,145.55 |
+| SYN/USDT:USDT | +3.77% | $12,095,557.81 |
+| PEPE/USDT:USDT | +3.72% | $124,389,606.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ONE/USDT:USDT | below_1h_threshold | +4.44% | +4.17% |
-| ENA/USDT:USDT | below_1h_threshold | +2.76% | +2.49% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.39% | +2.11% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.38% | +2.11% |
-| B2/USDT:USDT | below_1h_threshold | +2.21% | +1.94% |
+| C/USDT:USDT | below_1h_threshold | +4.94% | +4.66% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.82% | +3.55% |
+| SYN/USDT:USDT | below_1h_threshold | +3.78% | +3.50% |
+| MYX/USDT:USDT | below_1h_threshold | +3.12% | +2.84% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.82% | +2.55% |
 
 ## 7. 次に見るべき不足
 
