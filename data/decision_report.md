@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T03:06:17.649170+00:00
+- generated_at: 2026-09-19T03:11:20.610940+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14983**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T03:06:06.870546+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=81320.6
+- 更新: 2026-09-19T03:11:09.730931+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81285.9
 - Funnel: target 1050 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +65.49% | $38,489,434.40 |
-| ONE/USDT:USDT | +57.73% | $25,399,252.67 |
-| AR/USDT:USDT | +27.25% | $4,430,621.17 |
-| MAGMA/USDT:USDT | +23.76% | $1,254,633.25 |
-| CATE/USDT:USDT | +22.70% | $1,343,233.39 |
+| AKE/USDT:USDT | +64.85% | $38,550,592.84 |
+| ONE/USDT:USDT | +58.10% | $25,510,923.36 |
+| CATE/USDT:USDT | +26.33% | $1,348,787.78 |
+| AR/USDT:USDT | +25.07% | $4,474,877.90 |
+| MAGMA/USDT:USDT | +23.58% | $1,255,763.46 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +1.68% | +1.59% |
-| JTO/USDT:USDT | below_1h_threshold | +1.43% | +1.35% |
-| EIGEN/USDT:USDT | below_1h_threshold | +1.23% | +1.15% |
-| AAVE/USDT:USDT | below_1h_threshold | +1.21% | +1.13% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +1.04% | +0.96% |
+| CATE/USDT:USDT | below_1h_threshold | +1.94% | +1.90% |
+| EIGEN/USDT:USDT | below_1h_threshold | +1.83% | +1.79% |
+| JTO/USDT:USDT | below_1h_threshold | +1.69% | +1.65% |
+| LIT/USDT:USDT | below_1h_threshold | +1.39% | +1.35% |
+| AAVE/USDT:USDT | below_1h_threshold | +1.35% | +1.31% |
 
 ## 7. 次に見るべき不足
 
