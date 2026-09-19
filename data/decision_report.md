@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T17:11:37.336652+00:00
+- generated_at: 2026-09-19T17:16:29.769961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15069**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T17:11:23.748827+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.04% price=81762.1
-- Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 85.2 >= 65=1, 4h RSI 80.1 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-19T17:16:19.076896+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.16% price=81662.2
+- Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OFC/USDT:USDT | +41.03% | $1,166,173.06 |
-| G/USDT:USDT | +16.34% | $11,509,745.71 |
-| BANK/USDT:USDT | +11.70% | $1,084,490.35 |
-| PEPE/USDT:USDT | +8.62% | $127,662,409.61 |
-| AKE/USDT:USDT | +7.83% | $78,016,707.97 |
+| OFC/USDT:USDT | +44.78% | $1,194,199.47 |
+| BANK/USDT:USDT | +13.81% | $1,121,715.12 |
+| PEPE/USDT:USDT | +8.67% | $129,613,997.53 |
+| G/USDT:USDT | +8.59% | $11,709,664.01 |
+| FILECOIN/USDT:USDT | +7.11% | $8,526,616.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PEPE/USDT:USDT | below_1h_threshold | +3.08% | +3.12% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.63% | +2.67% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.11% | +2.15% |
-| ORDI/USDT:USDT | below_1h_threshold | +2.02% | +2.06% |
-| JTO/USDT:USDT | below_1h_threshold | +2.02% | +2.06% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +4.44% | +4.60% |
+| ALLO/USDT:USDT | below_1h_threshold | +4.43% | +4.60% |
+| AKE/USDT:USDT | below_1h_threshold | +3.54% | +3.71% |
+| ORDI/USDT:USDT | below_1h_threshold | +3.41% | +3.57% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.13% | +3.29% |
 
 ## 7. 次に見るべき不足
 
