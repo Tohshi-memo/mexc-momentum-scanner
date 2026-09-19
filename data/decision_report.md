@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T07:01:28.033936+00:00
+- generated_at: 2026-09-19T07:06:14.806679+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15006**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T07:01:12.770788+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81043.9
+- 更新: 2026-09-19T07:06:04.014447+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=81053.0
 - Funnel: target 1050 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +118.90% | $53,519,288.83 |
-| ONE/USDT:USDT | +39.13% | $22,789,541.48 |
-| AR/USDT:USDT | +25.10% | $7,108,345.28 |
-| SYN/USDT:USDT | +24.00% | $8,068,288.21 |
-| SAGA/USDT:USDT | +23.78% | $4,565,080.11 |
+| AKE/USDT:USDT | +123.25% | $53,975,265.17 |
+| ONE/USDT:USDT | +33.16% | $22,907,047.86 |
+| XTZ/USDT:USDT | +27.86% | $2,055,424.63 |
+| SYN/USDT:USDT | +26.56% | $8,144,576.43 |
+| AR/USDT:USDT | +24.72% | $7,134,641.22 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MORPHO/USDT:USDT | below_1h_threshold | +0.56% | +0.53% |
-| MAGMA/USDT:USDT | below_1h_threshold | +0.42% | +0.39% |
-| VET/USDT:USDT | below_1h_threshold | +0.39% | +0.36% |
-| STRK/USDT:USDT | below_1h_threshold | +0.35% | +0.32% |
-| STG/USDT:USDT | below_1h_threshold | +0.33% | +0.30% |
+| MYX/USDT:USDT | below_1h_threshold | +2.85% | +2.80% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.03% | +1.99% |
+| B/USDT:USDT | below_1h_threshold | +1.31% | +1.27% |
+| XTZ/USDT:USDT | below_1h_threshold | +0.96% | +0.92% |
+| AKE/USDT:USDT | below_1h_threshold | +0.90% | +0.86% |
 
 ## 7. 次に見るべき不足
 
