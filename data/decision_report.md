@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T18:51:31.448884+00:00
+- generated_at: 2026-09-19T18:56:29.096173+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15081**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T18:51:18.960508+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.03% price=81400.1
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 0
+- 更新: 2026-09-19T18:56:18.924572+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.06% price=81376.0
+- Funnel: target 1050 → liquid 148 → pre 50 → checked 50 → surge 4 → strict 0
 - Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.5 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 95.0 >= 65=1
+- Strict後reject: 4h RSI 88.4 >= 65=1, 4h RSI 68.9 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 95.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +34.80% | $29,572,029.32 |
-| OFC/USDT:USDT | +34.52% | $1,428,435.80 |
-| PEPE/USDT:USDT | +9.73% | $154,706,103.89 |
-| CATE/USDT:USDT | +7.31% | $1,435,203.42 |
-| FILECOIN/USDT:USDT | +7.23% | $12,164,294.00 |
+| OFC/USDT:USDT | +36.40% | $1,429,693.79 |
+| ONE/USDT:USDT | +35.27% | $29,786,811.45 |
+| PEPE/USDT:USDT | +10.67% | $155,508,571.53 |
+| CATE/USDT:USDT | +9.71% | $1,441,919.23 |
+| ZIL/USDT:USDT | +7.86% | $1,026,316.36 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.05% | +4.08% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.59% | +2.61% |
-| XTZ/USDT:USDT | below_1h_threshold | +2.13% | +2.16% |
-| AKE/USDT:USDT | below_1h_threshold | +2.12% | +2.15% |
-| STX/USDT:USDT | below_1h_threshold | +1.45% | +1.48% |
+| ZIL/USDT:USDT | below_1h_threshold | +4.21% | +4.27% |
+| MYX/USDT:USDT | below_1h_threshold | +3.41% | +3.47% |
+| AKE/USDT:USDT | below_1h_threshold | +2.93% | +2.99% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.81% | +2.87% |
+| STX/USDT:USDT | below_1h_threshold | +1.71% | +1.77% |
 
 ## 7. 次に見るべき不足
 
