@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T11:41:31.604066+00:00
+- generated_at: 2026-09-19T11:47:12.447840+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15037**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.01** / 初期 $100.00 (+22.01%)
-- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3539件
+- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3540件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000341 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ENA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T11:41:20.125796+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=81220.0
-- Funnel: target 1050 → liquid 161 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 75.6 >= 65=1, 4h RSI 94.7 >= 65=1
+- 更新: 2026-09-19T11:47:01.545028+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81260.0
+- Funnel: target 1050 → liquid 161 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 75.4 >= 65=1, 4h RSI 94.6 >= 65=1, 4h RSI 84.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +141.15% | $66,468,623.17 |
-| B2/USDT:USDT | +96.70% | $5,170,675.61 |
-| AR/USDT:USDT | +49.16% | $10,464,122.00 |
-| ONE/USDT:USDT | +48.65% | $21,941,575.86 |
-| CATE/USDT:USDT | +38.16% | $1,390,882.36 |
+| AKE/USDT:USDT | +141.12% | $66,603,476.31 |
+| B2/USDT:USDT | +95.50% | $5,257,833.02 |
+| AR/USDT:USDT | +48.39% | $10,596,698.18 |
+| ONE/USDT:USDT | +47.64% | $22,019,827.81 |
+| CATE/USDT:USDT | +36.99% | $1,399,153.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +4.77% | +4.74% |
-| B/USDT:USDT | below_1h_threshold | +4.44% | +4.41% |
-| MYX/USDT:USDT | below_1h_threshold | +3.04% | +3.01% |
-| DYDX/USDT:USDT | below_1h_threshold | +2.44% | +2.41% |
-| STRK/USDT:USDT | below_1h_threshold | +2.37% | +2.33% |
+| INJ/USDT:USDT | below_1h_threshold | +3.47% | +3.39% |
+| BR/USDT:USDT | below_1h_threshold | +2.80% | +2.72% |
+| B/USDT:USDT | below_1h_threshold | +2.59% | +2.51% |
+| DYDX/USDT:USDT | below_1h_threshold | +2.29% | +2.21% |
+| LTC/USDT:USDT | below_1h_threshold | +2.28% | +2.20% |
 
 ## 7. 次に見るべき不足
 
