@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T16:21:22.430617+00:00
+- generated_at: 2026-09-19T16:26:21.557249+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15061**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.01** / 初期 $100.00 (+22.01%)
-- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3559件
+- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3560件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000398 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ENA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T16:21:11.495311+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.21% price=81782.9
-- Funnel: target 1050 → liquid 150 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.5 >= 65=1
+- 更新: 2026-09-19T16:26:13.071599+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=81839.7
+- Funnel: target 1050 → liquid 150 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 83.9 >= 65=1, 4h RSI 84.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +8.08% | $24,045,542.52 |
-| C/USDT:USDT | +5.71% | $1,261,858.13 |
-| G/USDT:USDT | +2.34% | $10,866,452.54 |
-| AVAX/USDT:USDT | +1.95% | $40,712,117.64 |
-| PEPE/USDT:USDT | +1.84% | $120,306,839.25 |
+| G/USDT:USDT | +8.15% | $10,993,218.74 |
+| ONE/USDT:USDT | +5.82% | $24,296,740.24 |
+| C/USDT:USDT | +4.46% | $1,268,948.89 |
+| AVAX/USDT:USDT | +2.54% | $41,200,587.62 |
+| PEPE/USDT:USDT | +1.98% | $121,019,359.80 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| C/USDT:USDT | below_relative_strength | +5.16% | +4.94% |
-| G/USDT:USDT | below_1h_threshold | +2.14% | +1.93% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.87% | +1.66% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.87% | +1.65% |
-| KAS/USDT:USDT | below_1h_threshold | +1.65% | +1.44% |
+| C/USDT:USDT | below_1h_threshold | +4.19% | +3.91% |
+| AVAX/USDT:USDT | below_1h_threshold | +2.51% | +2.23% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.96% | +1.68% |
+| KAS/USDT:USDT | below_1h_threshold | +1.60% | +1.32% |
+| MYX/USDT:USDT | below_1h_threshold | +1.48% | +1.20% |
 
 ## 7. 次に見るべき不足
 
