@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T20:41:22.005381+00:00
+- generated_at: 2026-09-19T20:46:19.640184+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15097**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T20:41:11.002624+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.10% price=81247.0
-- Funnel: target 1050 → liquid 141 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 70.6 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-19T20:46:08.934313+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=81255.9
+- Funnel: target 1050 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +38.98% | $34,341,825.53 |
-| OFC/USDT:USDT | +35.09% | $1,556,310.85 |
-| CATE/USDT:USDT | +14.63% | $1,550,246.07 |
-| BANK/USDT:USDT | +13.33% | $1,735,661.01 |
-| PEPE/USDT:USDT | +10.04% | $166,850,511.75 |
+| OFC/USDT:USDT | +35.64% | $1,557,868.44 |
+| ONE/USDT:USDT | +35.45% | $34,466,920.87 |
+| CATE/USDT:USDT | +13.34% | $1,555,544.10 |
+| BANK/USDT:USDT | +13.09% | $1,740,722.03 |
+| PEPE/USDT:USDT | +9.90% | $167,381,332.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +2.74% | +2.84% |
-| SEI/USDT:USDT | below_1h_threshold | +1.20% | +1.31% |
-| BANK/USDT:USDT | below_1h_threshold | +1.08% | +1.18% |
-| ENA/USDT:USDT | below_1h_threshold | +1.07% | +1.18% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.86% | +0.97% |
+| CATE/USDT:USDT | below_1h_threshold | +4.56% | +4.65% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.66% | +2.76% |
+| RIVER/USDT:USDT | below_1h_threshold | +1.37% | +1.46% |
+| SEI/USDT:USDT | below_1h_threshold | +1.32% | +1.42% |
+| BANK/USDT:USDT | below_1h_threshold | +1.16% | +1.25% |
 
 ## 7. 次に見るべき不足
 
