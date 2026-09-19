@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T18:46:25.682064+00:00
+- generated_at: 2026-09-19T18:51:31.448884+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15081**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T18:46:14.975683+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81454.8
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.7 >= 65=1, 4h RSI 67.6 >= 65=1, 4h RSI 82.0 >= 65=1, 4h RSI 94.9 >= 65=1, 4h RSI 74.8 >= 65=1
+- 更新: 2026-09-19T18:51:18.960508+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81400.1
+- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.5 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 81.6 >= 65=1, 4h RSI 95.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +36.68% | $29,371,413.51 |
-| OFC/USDT:USDT | +35.13% | $1,422,883.86 |
-| PEPE/USDT:USDT | +11.49% | $153,408,471.12 |
-| FILECOIN/USDT:USDT | +8.64% | $12,072,093.80 |
-| CATE/USDT:USDT | +6.78% | $1,427,070.44 |
+| ONE/USDT:USDT | +34.80% | $29,572,029.32 |
+| OFC/USDT:USDT | +34.52% | $1,428,435.80 |
+| PEPE/USDT:USDT | +9.73% | $154,706,103.89 |
+| CATE/USDT:USDT | +7.31% | $1,435,203.42 |
+| FILECOIN/USDT:USDT | +7.23% | $12,164,294.00 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +4.34% | +4.30% |
-| AKE/USDT:USDT | below_1h_threshold | +3.46% | +3.42% |
-| XTZ/USDT:USDT | below_1h_threshold | +2.57% | +2.53% |
-| PEPE/USDT:USDT | below_1h_threshold | +2.29% | +2.25% |
-| STX/USDT:USDT | below_1h_threshold | +2.14% | +2.10% |
+| MYX/USDT:USDT | below_1h_threshold | +4.05% | +4.08% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.59% | +2.61% |
+| XTZ/USDT:USDT | below_1h_threshold | +2.13% | +2.16% |
+| AKE/USDT:USDT | below_1h_threshold | +2.12% | +2.15% |
+| STX/USDT:USDT | below_1h_threshold | +1.45% | +1.48% |
 
 ## 7. 次に見るべき不足
 
