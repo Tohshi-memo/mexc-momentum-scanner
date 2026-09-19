@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T00:31:19.153373+00:00
+- generated_at: 2026-09-19T00:36:17.324190+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14967**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.52** / 初期 $100.00 (+23.52%)
-- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3478件
+- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3480件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000418 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $123.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T00:31:10.263129+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.29% price=81094.0
-- Funnel: target 1050 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-19T00:36:08.095331+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.47% price=81240.2
+- Funnel: target 1050 → liquid 171 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.1 >= 65=1, 4h RSI 75.9 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +81.37% | $34,625,640.69 |
-| SYN/USDT:USDT | +23.73% | $6,753,324.81 |
-| ONE/USDT:USDT | +21.94% | $27,780,335.88 |
-| SAGA/USDT:USDT | +21.45% | $4,193,237.00 |
-| MAGMA/USDT:USDT | +21.11% | $1,187,186.73 |
+| AKE/USDT:USDT | +81.72% | $34,690,099.81 |
+| ONE/USDT:USDT | +27.43% | $27,899,101.48 |
+| SYN/USDT:USDT | +22.86% | $6,773,436.22 |
+| SAGA/USDT:USDT | +21.99% | $4,195,320.20 |
+| MAGMA/USDT:USDT | +20.84% | $1,195,408.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| 4/USDT:USDT | below_1h_threshold | +3.96% | +3.68% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.05% | +2.77% |
-| SYN/USDT:USDT | below_1h_threshold | +3.05% | +2.76% |
-| APT/USDT:USDT | below_1h_threshold | +2.94% | +2.65% |
-| AAVE/USDT:USDT | below_1h_threshold | +2.24% | +1.96% |
+| ZAMA/USDT:USDT | below_1h_threshold | +4.12% | +3.65% |
+| APT/USDT:USDT | below_1h_threshold | +4.06% | +3.59% |
+| FILECOIN/USDT:USDT | below_1h_threshold | +3.21% | +2.75% |
+| SYN/USDT:USDT | below_1h_threshold | +2.91% | +2.44% |
+| AAVE/USDT:USDT | below_1h_threshold | +2.57% | +2.10% |
 
 ## 7. 次に見るべき不足
 
