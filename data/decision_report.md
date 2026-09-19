@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T17:46:27.008386+00:00
+- generated_at: 2026-09-19T17:51:33.087106+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15073**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T17:46:18.132081+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.38% price=81487.9
+- 更新: 2026-09-19T17:51:22.145623+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.42% price=81450.1
 - Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.6 >= 65=1
+- Strict後reject: 4h RSI 81.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OFC/USDT:USDT | +43.21% | $1,287,198.60 |
-| BANK/USDT:USDT | +14.93% | $1,319,609.72 |
-| FILECOIN/USDT:USDT | +9.58% | $9,371,233.59 |
-| PEPE/USDT:USDT | +7.30% | $139,149,173.41 |
-| PIEVERSE/USDT:USDT | +6.47% | $1,336,061.10 |
+| OFC/USDT:USDT | +43.76% | $1,301,187.53 |
+| BANK/USDT:USDT | +9.25% | $1,392,129.08 |
+| FILECOIN/USDT:USDT | +9.02% | $9,486,480.48 |
+| ONE/USDT:USDT | +8.57% | $26,623,271.22 |
+| PEPE/USDT:USDT | +7.98% | $140,531,415.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ALLO/USDT:USDT | below_1h_threshold | +3.48% | +3.85% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +2.50% | +2.88% |
-| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +2.29% | +2.67% |
-| PEPE/USDT:USDT | below_1h_threshold | +1.95% | +2.33% |
-| VET/USDT:USDT | below_1h_threshold | +1.80% | +2.18% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +3.60% | +4.03% |
+| ALLO/USDT:USDT | below_1h_threshold | +3.08% | +3.50% |
+| PEPE/USDT:USDT | below_1h_threshold | +2.53% | +2.96% |
+| VET/USDT:USDT | below_1h_threshold | +2.30% | +2.72% |
+| TRUMPOFFICIAL/USDT:USDT | below_1h_threshold | +1.67% | +2.09% |
 
 ## 7. 次に見るべき不足
 
