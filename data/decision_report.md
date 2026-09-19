@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T16:56:45.695881+00:00
+- generated_at: 2026-09-19T17:01:24.899530+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15067**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T16:56:31.812927+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.26% price=81817.6
-- Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 7 → strict 0
-- Surge前reject: below_1h_threshold=43, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.9 >= 65=2, 4h RSI 89.2 >= 65=1, 4h RSI 87.0 >= 65=1, 4h RSI 75.9 >= 65=1, 4h RSI 74.9 >= 65=1, 4h RSI 80.3 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-19T17:01:14.464455+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81758.2
+- Funnel: target 1050 → liquid 148 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OFC/USDT:USDT | +43.15% | $1,078,876.45 |
-| G/USDT:USDT | +16.15% | $12,423,368.41 |
-| BANK/USDT:USDT | +14.54% | $1,028,737.12 |
-| ONE/USDT:USDT | +9.99% | $26,035,414.75 |
-| FILECOIN/USDT:USDT | +6.57% | $7,691,988.48 |
+| OFC/USDT:USDT | +42.57% | $1,116,478.73 |
+| G/USDT:USDT | +16.37% | $11,305,930.04 |
+| BANK/USDT:USDT | +13.09% | $1,036,780.06 |
+| ONE/USDT:USDT | +8.74% | $25,178,257.40 |
+| FILECOIN/USDT:USDT | +7.35% | $7,845,936.13 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B2/USDT:USDT | below_1h_threshold | +3.74% | +3.48% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.06% | +2.81% |
-| WLD/USDT:USDT | below_1h_threshold | +2.70% | +2.44% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.61% | +2.35% |
-| ENA/USDT:USDT | below_1h_threshold | +2.45% | +2.20% |
+| AIN/USDT:USDT | below_1h_threshold | +0.45% | +0.50% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.43% | +0.47% |
+| EIGEN/USDT:USDT | below_1h_threshold | +0.25% | +0.29% |
+| SPX/USDT:USDT | below_1h_threshold | +0.18% | +0.23% |
+| ORDI/USDT:USDT | below_1h_threshold | +0.17% | +0.22% |
 
 ## 7. 次に見るべき不足
 
