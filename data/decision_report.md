@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T15:16:21.540876+00:00
+- generated_at: 2026-09-19T15:21:20.633462+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15053**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T15:16:10.973604+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=81700.0
+- 更新: 2026-09-19T15:21:09.743095+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.06% price=81592.1
 - Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +142.30% | $73,832,930.29 |
-| ONE/USDT:USDT | +60.32% | $20,694,857.59 |
-| AR/USDT:USDT | +52.39% | $14,547,829.64 |
-| XTZ/USDT:USDT | +38.33% | $4,880,663.23 |
-| ZAMA/USDT:USDT | +36.39% | $3,975,397.36 |
+| AKE/USDT:USDT | +142.36% | $73,944,723.39 |
+| ONE/USDT:USDT | +60.36% | $20,763,648.22 |
+| AR/USDT:USDT | +52.96% | $14,588,298.53 |
+| ZAMA/USDT:USDT | +38.80% | $3,989,188.68 |
+| XTZ/USDT:USDT | +38.55% | $4,920,125.67 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LAB/USDT:USDT | below_1h_threshold | +2.41% | +2.22% |
-| XTZ/USDT:USDT | below_1h_threshold | +2.25% | +2.06% |
-| BR/USDT:USDT | below_1h_threshold | +1.78% | +1.59% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.52% | +1.33% |
-| MAGMA/USDT:USDT | below_1h_threshold | +1.13% | +0.94% |
+| BR/USDT:USDT | below_1h_threshold | +2.87% | +2.81% |
+| LAB/USDT:USDT | below_1h_threshold | +2.72% | +2.66% |
+| XTZ/USDT:USDT | below_1h_threshold | +2.68% | +2.62% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.17% | +1.11% |
+| VVV/USDT:USDT | below_1h_threshold | +0.98% | +0.92% |
 
 ## 7. 次に見るべき不足
 
