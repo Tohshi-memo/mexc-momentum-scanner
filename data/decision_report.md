@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T15:56:39.224199+00:00
+- generated_at: 2026-09-19T16:01:21.368957+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15059**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T15:56:20.339898+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=81633.7
-- Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.6 >= 65=1, 4h RSI 83.1 >= 65=1, 4h RSI 81.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-19T16:01:10.602080+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.03% price=81587.0
+- Funnel: target 1050 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +143.10% | $74,860,591.43 |
-| ONE/USDT:USDT | +85.35% | $22,710,612.70 |
-| AR/USDT:USDT | +45.51% | $15,670,735.78 |
-| ZAMA/USDT:USDT | +43.75% | $4,177,920.74 |
-| XTZ/USDT:USDT | +35.62% | $5,223,696.80 |
+| ONE/USDT:USDT | +2.92% | $22,241,091.29 |
+| G/USDT:USDT | +1.22% | $10,533,604.55 |
+| JTO/USDT:USDT | +1.07% | $3,212,112.03 |
+| AIN/USDT:USDT | +0.73% | $1,611,571.89 |
+| AR/USDT:USDT | +0.68% | $15,644,372.55 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +2.15% | +2.04% |
-| STX/USDT:USDT | below_1h_threshold | +1.08% | +0.98% |
-| JTO/USDT:USDT | below_1h_threshold | +1.07% | +0.96% |
-| FILECOIN/USDT:USDT | below_1h_threshold | +0.87% | +0.76% |
-| KAS/USDT:USDT | below_1h_threshold | +0.73% | +0.62% |
+| ONE/USDT:USDT | below_1h_threshold | +2.44% | +2.46% |
+| G/USDT:USDT | below_1h_threshold | +2.06% | +2.09% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.31% | +1.34% |
+| JTO/USDT:USDT | below_1h_threshold | +1.03% | +1.06% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.83% | +0.86% |
 
 ## 7. 次に見るべき不足
 
