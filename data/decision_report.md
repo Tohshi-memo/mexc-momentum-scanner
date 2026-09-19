@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T01:16:16.262192+00:00
+- generated_at: 2026-09-19T01:21:26.978961+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **14969**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.52** / 初期 $100.00 (+23.52%)
-- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3482件
+- 確定: 2962件 (Win 879 / Loss 1167 / Flat 916) / pending 0件 / skip 3483件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000390 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PIEVERSE/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $123.52
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T01:16:06.166760+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.47% price=81254.6
-- Funnel: target 1050 → liquid 169 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-19T01:21:16.064042+00:00 / 保存件数 288/288
+- BTC: BEARISH 1h -0.64% price=81121.2
+- Funnel: target 1050 → liquid 170 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 76.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +78.69% | $35,787,431.05 |
-| SYN/USDT:USDT | +24.33% | $6,841,503.84 |
-| MAGMA/USDT:USDT | +23.99% | $1,228,452.62 |
-| SAGA/USDT:USDT | +22.81% | $4,207,795.45 |
-| USELESS/USDT:USDT | +20.04% | $7,701,255.88 |
+| AKE/USDT:USDT | +78.91% | $35,922,997.91 |
+| MAGMA/USDT:USDT | +24.41% | $1,235,147.66 |
+| ONE/USDT:USDT | +24.28% | $24,805,970.17 |
+| SYN/USDT:USDT | +23.40% | $6,856,735.48 |
+| SAGA/USDT:USDT | +21.35% | $4,231,868.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| S/USDT:USDT | below_1h_threshold | +1.78% | +2.25% |
-| B/USDT:USDT | below_1h_threshold | +1.37% | +1.84% |
-| CATE/USDT:USDT | below_1h_threshold | +1.16% | +1.63% |
-| APT/USDT:USDT | below_1h_threshold | +1.15% | +1.62% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.02% | +1.49% |
+| CATE/USDT:USDT | below_1h_threshold | +2.82% | +3.46% |
+| B/USDT:USDT | below_1h_threshold | +1.26% | +1.90% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.20% | +1.84% |
+| APT/USDT:USDT | below_1h_threshold | +1.15% | +1.79% |
+| MAGMA/USDT:USDT | below_1h_threshold | +0.93% | +1.56% |
 
 ## 7. 次に見るべき不足
 
