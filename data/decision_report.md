@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T13:51:21.179486+00:00
+- generated_at: 2026-09-19T13:56:28.069574+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15048**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.01** / 初期 $100.00 (+22.01%)
-- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3546件
+- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3547件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000235 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ENA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T13:51:10.938183+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=81202.1
-- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-19T13:56:17.165682+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.05% price=81269.2
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AKE/USDT:USDT | +143.46% | $71,274,849.97 |
-| B2/USDT:USDT | +67.25% | $8,093,528.81 |
-| ONE/USDT:USDT | +51.33% | $21,073,770.26 |
-| AR/USDT:USDT | +48.08% | $12,018,432.97 |
-| ZAMA/USDT:USDT | +38.45% | $3,134,127.68 |
+| AKE/USDT:USDT | +143.19% | $71,459,396.32 |
+| B2/USDT:USDT | +69.31% | $8,159,199.88 |
+| ONE/USDT:USDT | +48.07% | $21,138,929.65 |
+| AR/USDT:USDT | +46.52% | $12,090,828.90 |
+| ZAMA/USDT:USDT | +38.21% | $3,181,432.61 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XTZ/USDT:USDT | below_1h_threshold | +3.70% | +3.83% |
-| AKE/USDT:USDT | below_1h_threshold | +2.46% | +2.59% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.34% | +2.47% |
-| AR/USDT:USDT | below_1h_threshold | +1.88% | +2.00% |
-| W/USDT:USDT | below_1h_threshold | +1.68% | +1.81% |
+| CATE/USDT:USDT | below_1h_threshold | +3.67% | +3.72% |
+| C/USDT:USDT | below_1h_threshold | +2.34% | +2.39% |
+| AKE/USDT:USDT | below_1h_threshold | +2.28% | +2.32% |
+| ENA/USDT:USDT | below_1h_threshold | +1.53% | +1.57% |
+| W/USDT:USDT | below_1h_threshold | +1.50% | +1.55% |
 
 ## 7. 次に見るべき不足
 
