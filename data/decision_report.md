@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T18:31:46.786850+00:00
+- generated_at: 2026-09-19T18:36:42.004854+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15079**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.01** / 初期 $100.00 (+22.01%)
-- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3580件
+- 確定: 2974件 (Win 880 / Loss 1176 / Flat 918) / pending 0件 / skip 3581件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000349 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ENA/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $122.01
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T18:31:30.220619+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=81381.0
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.7 >= 65=1, 4h RSI 67.1 >= 65=1, 4h RSI 81.3 >= 65=1
+- 更新: 2026-09-19T18:36:29.464045+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=81444.0
+- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 0
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.4 >= 65=1, 4h RSI 66.7 >= 65=1, 4h RSI 75.1 >= 65=1, 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +36.18% | $28,139,859.74 |
-| OFC/USDT:USDT | +32.92% | $1,404,386.10 |
-| PEPE/USDT:USDT | +9.76% | $148,571,901.26 |
-| FILECOIN/USDT:USDT | +9.35% | $11,545,848.63 |
-| CATE/USDT:USDT | +6.60% | $1,411,385.75 |
+| OFC/USDT:USDT | +33.28% | $1,408,864.42 |
+| ONE/USDT:USDT | +31.41% | $28,600,464.18 |
+| PEPE/USDT:USDT | +10.99% | $150,561,138.23 |
+| FILECOIN/USDT:USDT | +8.37% | $11,815,260.01 |
+| CATE/USDT:USDT | +5.78% | $1,415,905.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +4.02% | +4.07% |
-| XTZ/USDT:USDT | below_1h_threshold | +3.67% | +3.73% |
-| AKE/USDT:USDT | below_1h_threshold | +3.10% | +3.15% |
-| MYX/USDT:USDT | below_1h_threshold | +3.09% | +3.14% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.52% | +2.57% |
+| ZAMA/USDT:USDT | below_1h_threshold | +4.02% | +3.99% |
+| MYX/USDT:USDT | below_1h_threshold | +3.48% | +3.45% |
+| AKE/USDT:USDT | below_1h_threshold | +3.39% | +3.36% |
+| XTZ/USDT:USDT | below_1h_threshold | +3.04% | +3.01% |
+| PEPE/USDT:USDT | below_1h_threshold | +1.83% | +1.80% |
 
 ## 7. 次に見るべき不足
 
