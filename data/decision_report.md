@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T21:46:35.091052+00:00
+- generated_at: 2026-09-19T21:51:25.306022+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15099**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T21:46:19.898141+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.13% price=81025.4
-- Funnel: target 1050 → liquid 140 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 89.9 >= 65=1, 4h RSI 89.4 >= 65=1, 4h RSI 80.0 >= 65=1
+- 更新: 2026-09-19T21:51:14.430654+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=81070.1
+- Funnel: target 1050 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 90.4 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +55.03% | $37,750,832.09 |
-| OFC/USDT:USDT | +45.19% | $1,667,639.79 |
-| BANK/USDT:USDT | +16.81% | $2,285,292.20 |
-| CATE/USDT:USDT | +12.87% | $1,601,234.81 |
-| CNPY/USDT:USDT | +6.39% | $1,571,604.65 |
+| ONE/USDT:USDT | +54.38% | $38,230,126.28 |
+| OFC/USDT:USDT | +42.90% | $1,675,226.56 |
+| CATE/USDT:USDT | +14.82% | $1,603,922.86 |
+| BANK/USDT:USDT | +14.54% | $2,312,390.84 |
+| INJ/USDT:USDT | +6.80% | $37,369,136.51 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INJ/USDT:USDT | below_1h_threshold | +2.83% | +2.96% |
-| SYN/USDT:USDT | below_1h_threshold | +2.35% | +2.48% |
-| AKE/USDT:USDT | below_1h_threshold | +1.41% | +1.54% |
-| SKHYNIXSTOCK/USDT:USDT | below_1h_threshold | +0.53% | +0.66% |
-| CATE/USDT:USDT | below_1h_threshold | +0.48% | +0.61% |
+| CNPY/USDT:USDT | below_1h_threshold | +4.36% | +4.44% |
+| OFC/USDT:USDT | below_1h_threshold | +4.14% | +4.21% |
+| INJ/USDT:USDT | below_1h_threshold | +3.20% | +3.27% |
+| CATE/USDT:USDT | below_1h_threshold | +2.11% | +2.19% |
+| TIA/USDT:USDT | below_1h_threshold | +1.33% | +1.40% |
 
 ## 7. 次に見るべき不足
 
