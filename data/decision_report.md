@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T21:26:26.192077+00:00
+- generated_at: 2026-09-19T21:31:23.317197+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15098**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T21:26:15.057624+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=80992.5
+- 更新: 2026-09-19T21:31:12.233427+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.14% price=81017.8
 - Funnel: target 1050 → liquid 140 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.7 >= 65=1
+- Strict後reject: 4h RSI 81.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| OFC/USDT:USDT | +41.22% | $1,637,207.32 |
-| ONE/USDT:USDT | +38.94% | $35,925,785.51 |
-| CATE/USDT:USDT | +15.83% | $1,577,530.35 |
-| BANK/USDT:USDT | +14.72% | $2,172,903.90 |
-| PEPE/USDT:USDT | +8.73% | $166,072,688.22 |
+| ONE/USDT:USDT | +42.52% | $36,066,327.08 |
+| OFC/USDT:USDT | +41.32% | $1,642,809.72 |
+| BANK/USDT:USDT | +16.72% | $2,195,160.13 |
+| CATE/USDT:USDT | +15.62% | $1,581,025.34 |
+| PEPE/USDT:USDT | +8.40% | $166,442,627.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CNPY/USDT:USDT | below_1h_threshold | +3.13% | +3.30% |
-| CATE/USDT:USDT | below_1h_threshold | +3.12% | +3.29% |
-| OFC/USDT:USDT | below_1h_threshold | +2.86% | +3.03% |
-| SYN/USDT:USDT | below_1h_threshold | +1.81% | +1.98% |
-| INJ/USDT:USDT | below_1h_threshold | +1.31% | +1.48% |
+| CNPY/USDT:USDT | below_1h_threshold | +4.74% | +4.88% |
+| ONE/USDT:USDT | below_1h_threshold | +4.00% | +4.14% |
+| OFC/USDT:USDT | below_1h_threshold | +2.96% | +3.10% |
+| CATE/USDT:USDT | below_1h_threshold | +2.72% | +2.86% |
+| SYN/USDT:USDT | below_1h_threshold | +2.51% | +2.65% |
 
 ## 7. 次に見るべき不足
 
