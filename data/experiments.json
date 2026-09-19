@@ -376,7 +376,7 @@
       "hours_held": null,
       "max_favorable_pct": 4.552639898830215,
       "max_adverse_pct": -2.4502055011065598,
-      "last_price": 0.06075
+      "last_price": 0.06146
     },
     {
       "symbol": "LONGXIA/USDT:USDT",
@@ -752,7 +752,7 @@
       "hours_held": null,
       "max_favorable_pct": 6.462989717005185,
       "max_adverse_pct": -3.293107843970429,
-      "last_price": 0.22411
+      "last_price": 0.22188
     },
     {
       "symbol": "CATE/USDT:USDT",
@@ -1130,7 +1130,7 @@
       "hours_held": null,
       "max_favorable_pct": 6.3863008971704565,
       "max_adverse_pct": -2.2256728778467902,
-      "last_price": 0.109684
+      "last_price": 0.111434
     },
     {
       "symbol": "ENA/USDT:USDT",
@@ -1353,9 +1353,9 @@
           "tp_price": 0.1958447010266113,
           "filled": true,
           "filled_at": "2026-09-19T04:00:40.596240+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "SL_HIT",
+          "outcome_price": 0.17579284948669438,
+          "pnl_pct": -3.6629042778619754
         },
         {
           "strategy": "LIMIT_2PCT_LONG",
@@ -1463,9 +1463,9 @@
           "tp_price": 0.19637532911265376,
           "filled": true,
           "filled_at": "2026-09-19T04:00:40.596240+00:00",
-          "outcome": "ACTIVE",
-          "outcome_price": null,
-          "pnl_pct": null
+          "outcome": "SL_HIT",
+          "outcome_price": 0.17626914842546626,
+          "pnl_pct": -3.662904277861979
         },
         {
           "strategy": "LIMIT_ATR_LONG",
@@ -1506,9 +1506,9 @@
       "outcome_price": null,
       "pnl_pct": null,
       "hours_held": null,
-      "max_favorable_pct": 4.204644097222226,
+      "max_favorable_pct": 4.790581597222224,
       "max_adverse_pct": -0.38519965277777146,
-      "last_price": 0.17688
+      "last_price": 0.17607
     },
     {
       "symbol": "MYX/USDT:USDT",
@@ -1886,7 +1886,7 @@
       "hours_held": null,
       "max_favorable_pct": 5.103797468354434,
       "max_adverse_pct": -0.5468354430379735,
-      "last_price": 0.09789
+      "last_price": 0.09422
     },
     {
       "symbol": "VET/USDT:USDT",
@@ -2118,8 +2118,8 @@
           "entry_price": 0.008190270000000001,
           "sl_price": 0.008008397811576778,
           "tp_price": 0.008554014376846447,
-          "filled": false,
-          "filled_at": null,
+          "filled": true,
+          "filled_at": "2026-09-19T04:35:45.729470+00:00",
           "outcome": "ACTIVE",
           "outcome_price": null,
           "pnl_pct": null
@@ -2262,9 +2262,387 @@
       "outcome_price": null,
       "pnl_pct": null,
       "hours_held": null,
-      "max_favorable_pct": 0.8944760062855208,
+      "max_favorable_pct": 1.0153511422700439,
       "max_adverse_pct": -1.607639308594215,
-      "last_price": 0.008243
+      "last_price": 0.008201
+    },
+    {
+      "symbol": "G/USDT:USDT",
+      "detected_at": "2026-09-19T04:36:17.775022+00:00",
+      "expires_at": "2026-09-19T12:36:17.775022+00:00",
+      "entry_price": 0.008755,
+      "sl_price": 0.0091052,
+      "tp_price": 0.0080546,
+      "sl_pct": 4.0,
+      "tp_pct": 8.0,
+      "market_regime": "STAGNANT",
+      "confirmed_strict": false,
+      "filters": {
+        "rsi": 64.18194539459336,
+        "rsi_4h": 79.51905727557389,
+        "bb_upper": 0.009283779849830573,
+        "price_vs_bb": 0.943042612127406,
+        "volume_ratio": 0.1032128954596064,
+        "volume_trend": "DECLINING",
+        "atr_pct": 8.287253151911454,
+        "change_1h": 7.351856405212681,
+        "relative_strength": 7.499821879935245,
+        "btc_change_1h": -0.14796547472256474,
+        "funding_rate": 0.0536,
+        "obv_divergence": "BEARISH_DIV",
+        "open_interest_usd": null,
+        "oi_change_pct": null,
+        "long_short_ratio": null,
+        "upper_wick_ratio_1h": 0.4141,
+        "consecutive_green_1h": 2,
+        "consecutive_green_4h": 2,
+        "bb_width_pct": 32.6106,
+        "ma20_deviation_pct": 9.6809,
+        "candle_body_ratio": 0.5759,
+        "rsi_15m": 74.58473578679195,
+        "daily_direction": "GREEN"
+      },
+      "catalyst_type": "UNKNOWN",
+      "short_conviction": "UNKNOWN",
+      "news_count": -1,
+      "policy_version": "live-v2-20260806",
+      "policy_fingerprint": "e1a1db5ffe4439e789319db37e6ae0bda4645fe1cf33b11e441cd02425f0eec9",
+      "signal_candle_at": "2026-09-19T03:00:00+00:00",
+      "strict_reject_reasons": [
+        "4h RSI 79.5 >= 65"
+      ],
+      "ask_price": null,
+      "bid_price": null,
+      "spread_pct": null,
+      "entry_variants": [
+        {
+          "strategy": "MARKET",
+          "entry_price": 0.008755,
+          "sl_price": 0.0091052,
+          "tp_price": 0.0080546,
+          "filled": true,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_1PCT",
+          "entry_price": 0.008842550000000001,
+          "sl_price": 0.009196252000000002,
+          "tp_price": 0.008135146000000001,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_2PCT",
+          "entry_price": 0.008930100000000002,
+          "sl_price": 0.009287304000000001,
+          "tp_price": 0.008215692000000002,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_3PCT",
+          "entry_price": 0.00901765,
+          "sl_price": 0.009378356000000001,
+          "tp_price": 0.008296238000000001,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_4PCT",
+          "entry_price": 0.0091052,
+          "sl_price": 0.009469408,
+          "tp_price": 0.008376784000000002,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_5PCT",
+          "entry_price": 0.009192750000000001,
+          "sl_price": 0.009560460000000002,
+          "tp_price": 0.00845733,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_6PCT",
+          "entry_price": 0.009280300000000002,
+          "sl_price": 0.009651512000000003,
+          "tp_price": 0.008537876000000002,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_7PCT",
+          "entry_price": 0.00936785,
+          "sl_price": 0.009742564,
+          "tp_price": 0.008618422,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_8PCT",
+          "entry_price": 0.009455400000000001,
+          "sl_price": 0.009833616000000002,
+          "tp_price": 0.008698968000000001,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_9PCT",
+          "entry_price": 0.009542950000000001,
+          "sl_price": 0.009924668000000001,
+          "tp_price": 0.008779514000000002,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_10PCT",
+          "entry_price": 0.009630500000000002,
+          "sl_price": 0.010015720000000002,
+          "tp_price": 0.008860060000000003,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_BB3S",
+          "entry_price": 0.00993454477474586,
+          "sl_price": 0.010331926565735694,
+          "tp_price": 0.009139781192766191,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_ATR",
+          "entry_price": 0.009117774506724925,
+          "sl_price": 0.009482485486993921,
+          "tp_price": 0.00838835254618693,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_FIB1272",
+          "entry_price": 0.009219576,
+          "sl_price": 0.009588359040000001,
+          "tp_price": 0.00848200992,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_FIB1618",
+          "entry_price": 0.009810544000000001,
+          "sl_price": 0.010202965760000002,
+          "tp_price": 0.009025700480000001,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "MARKET_LONG",
+          "entry_price": 0.008755,
+          "sl_price": 0.0084048,
+          "tp_price": 0.009455400000000001,
+          "filled": true,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_1PCT_LONG",
+          "entry_price": 0.00866745,
+          "sl_price": 0.008320752,
+          "tp_price": 0.009360846,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_2PCT_LONG",
+          "entry_price": 0.0085799,
+          "sl_price": 0.008236704,
+          "tp_price": 0.009266292,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_3PCT_LONG",
+          "entry_price": 0.008492350000000001,
+          "sl_price": 0.008152656000000001,
+          "tp_price": 0.009171738000000002,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_4PCT_LONG",
+          "entry_price": 0.0084048,
+          "sl_price": 0.008068608,
+          "tp_price": 0.009077184,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_5PCT_LONG",
+          "entry_price": 0.00831725,
+          "sl_price": 0.00798456,
+          "tp_price": 0.00898263,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_6PCT_LONG",
+          "entry_price": 0.0082297,
+          "sl_price": 0.007900511999999998,
+          "tp_price": 0.008888076,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_7PCT_LONG",
+          "entry_price": 0.00814215,
+          "sl_price": 0.007816464,
+          "tp_price": 0.008793522000000002,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_8PCT_LONG",
+          "entry_price": 0.0080546,
+          "sl_price": 0.007732416,
+          "tp_price": 0.008698968000000001,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_9PCT_LONG",
+          "entry_price": 0.007967050000000002,
+          "sl_price": 0.007648368000000001,
+          "tp_price": 0.008604414000000003,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_10PCT_LONG",
+          "entry_price": 0.007879500000000001,
+          "sl_price": 0.007564320000000001,
+          "tp_price": 0.008509860000000001,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_ATR_LONG",
+          "entry_price": 0.008392225493275077,
+          "sl_price": 0.008056536473544073,
+          "tp_price": 0.009063603532737084,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_FIB1272_LONG",
+          "entry_price": 0.008290424000000001,
+          "sl_price": 0.007958807040000002,
+          "tp_price": 0.008953657920000002,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        },
+        {
+          "strategy": "LIMIT_FIB1618_LONG",
+          "entry_price": 0.007699456,
+          "sl_price": 0.00739147776,
+          "tp_price": 0.008315412480000001,
+          "filled": false,
+          "filled_at": null,
+          "outcome": "ACTIVE",
+          "outcome_price": null,
+          "pnl_pct": null
+        }
+      ],
+      "outcome": "ACTIVE",
+      "outcome_at": null,
+      "outcome_price": null,
+      "pnl_pct": null,
+      "hours_held": null,
+      "max_favorable_pct": 0.0,
+      "max_adverse_pct": 0.0,
+      "last_price": 0.008755
     }
   ],
   "closed": [
