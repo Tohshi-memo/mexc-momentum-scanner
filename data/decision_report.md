@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-19T23:01:21.210771+00:00
+- generated_at: 2026-09-19T23:06:11.299390+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15106**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-19T23:01:10.473046+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.00% price=81231.4
-- Funnel: target 1050 → liquid 140 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-19T23:06:02.289862+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=81230.5
+- Funnel: target 1050 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ONE/USDT:USDT | +55.55% | $42,264,862.91 |
-| CELR/USDT:USDT | +48.61% | $1,152,159.48 |
-| OFC/USDT:USDT | +44.67% | $1,727,574.93 |
-| BANK/USDT:USDT | +15.45% | $2,475,346.38 |
-| PIEVERSE/USDT:USDT | +13.54% | $1,067,081.39 |
+| ONE/USDT:USDT | +47.78% | $42,636,974.33 |
+| OFC/USDT:USDT | +42.35% | $1,738,241.17 |
+| CELR/USDT:USDT | +41.71% | $1,175,823.98 |
+| BANK/USDT:USDT | +16.48% | $2,487,377.71 |
+| PIEVERSE/USDT:USDT | +12.87% | $1,069,592.84 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CELR/USDT:USDT | below_1h_threshold | +0.66% | +0.66% |
-| RIVER/USDT:USDT | below_1h_threshold | +0.24% | +0.24% |
-| ONE/USDT:USDT | below_1h_threshold | +0.23% | +0.23% |
-| SUI/USDT:USDT | below_1h_threshold | +0.17% | +0.17% |
-| EVAA/USDT:USDT | below_1h_threshold | +0.14% | +0.14% |
+| ENA/USDT:USDT | below_1h_threshold | +1.22% | +1.22% |
+| TIA/USDT:USDT | below_1h_threshold | +1.18% | +1.18% |
+| MYX/USDT:USDT | below_1h_threshold | +1.18% | +1.18% |
+| INJ/USDT:USDT | below_1h_threshold | +1.16% | +1.16% |
+| STX/USDT:USDT | below_1h_threshold | +1.00% | +1.00% |
 
 ## 7. 次に見るべき不足
 
