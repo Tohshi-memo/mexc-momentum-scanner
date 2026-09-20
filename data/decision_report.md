@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T13:36:26.827858+00:00
+- generated_at: 2026-09-20T13:41:18.393393+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15185**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T13:36:13.531081+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.05% price=80415.0
+- 更新: 2026-09-20T13:41:06.932158+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.01% price=80451.4
 - Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 1
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
@@ -80,21 +80,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +65.38% | $7,869,424.09 |
-| ONE/USDT:USDT | +27.46% | $54,550,033.07 |
-| OFC/USDT:USDT | +23.72% | $2,533,781.93 |
-| BTW/USDT:USDT | +20.94% | $2,664,629.17 |
-| 4STOCK/USDT:USDT | +19.08% | $1,038,658.81 |
+| CELR/USDT:USDT | +63.87% | $7,896,792.71 |
+| ONE/USDT:USDT | +27.07% | $54,655,163.61 |
+| OFC/USDT:USDT | +25.17% | $2,534,825.10 |
+| 4STOCK/USDT:USDT | +22.37% | $1,039,598.59 |
+| BTW/USDT:USDT | +21.38% | $2,688,556.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +3.47% | +3.52% |
-| BR/USDT:USDT | below_1h_threshold | +3.38% | +3.43% |
-| HBAR/USDT:USDT | below_1h_threshold | +2.20% | +2.25% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +2.02% | +2.07% |
-| ONE/USDT:USDT | below_1h_threshold | +0.91% | +0.96% |
+| STRK/USDT:USDT | below_1h_threshold | +4.59% | +4.60% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.41% | +4.42% |
+| BR/USDT:USDT | below_1h_threshold | +3.19% | +3.20% |
+| HBAR/USDT:USDT | below_1h_threshold | +2.43% | +2.44% |
+| AVAX/USDT:USDT | below_1h_threshold | +1.68% | +1.69% |
 
 ## 7. 次に見るべき不足
 
