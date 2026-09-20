@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T20:21:56.105055+00:00
+- generated_at: 2026-09-20T20:26:17.903724+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15211**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.62** / 初期 $100.00 (+21.62%)
-- 確定: 2994件 (Win 884 / Loss 1183 / Flat 927) / pending 5件 / skip 3689件
+- 確定: 2994件 (Win 884 / Loss 1183 / Flat 927) / pending 6件 / skip 3689件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET_LONG` (selected_by_causal_log_growth) / causal_score +0.000211 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: SAGA/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.26% 残高後 $121.62
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T20:21:45.170160+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.07% price=81086.8
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-20T20:26:09.668064+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=81067.0
+- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 87.1 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +22.40% | $1,669,883.48 |
-| SAGA/USDT:USDT | +19.47% | $6,253,254.56 |
-| S/USDT:USDT | +18.44% | $2,703,558.31 |
-| LUNANEW/USDT:USDT | +16.64% | $2,041,167.51 |
-| AKE/USDT:USDT | +15.85% | $75,921,686.55 |
+| NIL/USDT:USDT | +29.59% | $1,923,134.44 |
+| SAGA/USDT:USDT | +18.61% | $6,301,991.69 |
+| S/USDT:USDT | +18.41% | $2,754,113.72 |
+| AKE/USDT:USDT | +17.10% | $76,001,546.28 |
+| LUNANEW/USDT:USDT | +15.41% | $2,042,561.53 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| NIL/USDT:USDT | below_1h_threshold | +4.37% | +4.44% |
-| S/USDT:USDT | below_1h_threshold | +3.10% | +3.17% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.03% | +3.10% |
-| SEI/USDT:USDT | below_1h_threshold | +2.08% | +2.15% |
-| PUMPFUN/USDT:USDT | below_1h_threshold | +1.93% | +2.00% |
+| S/USDT:USDT | below_1h_threshold | +3.02% | +3.12% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.76% | +2.86% |
+| PUMPFUN/USDT:USDT | below_1h_threshold | +1.53% | +1.63% |
+| SEI/USDT:USDT | below_1h_threshold | +1.43% | +1.53% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.42% | +1.52% |
 
 ## 7. 次に見るべき不足
 
