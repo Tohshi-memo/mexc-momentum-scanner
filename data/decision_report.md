@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T05:06:13.184394+00:00
+- generated_at: 2026-09-20T05:11:08.793213+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15138**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.37** / 初期 $100.00 (+21.37%)
-- 確定: 2978件 (Win 880 / Loss 1179 / Flat 919) / pending 0件 / skip 3634件
+- 確定: 2978件 (Win 880 / Loss 1179 / Flat 919) / pending 0件 / skip 3635件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `MARKET` (selected_by_causal_log_growth) / causal_score +0.000293 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T05:06:04.356473+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=80455.9
-- Funnel: target 1050 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-20T05:11:01.051940+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.10% price=80485.2
+- Funnel: target 1050 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 79.0 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +107.91% | $4,185,502.08 |
-| OFC/USDT:USDT | +35.55% | $2,308,745.58 |
-| G/USDT:USDT | +30.06% | $11,482,018.20 |
-| ONE/USDT:USDT | +24.46% | $46,932,342.81 |
-| ZIL/USDT:USDT | +20.07% | $2,813,490.78 |
+| CELR/USDT:USDT | +104.69% | $4,302,949.24 |
+| OFC/USDT:USDT | +35.88% | $2,312,157.84 |
+| G/USDT:USDT | +34.96% | $11,563,617.37 |
+| ONE/USDT:USDT | +32.21% | $47,036,999.83 |
+| ZIL/USDT:USDT | +18.95% | $2,827,428.83 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CELR/USDT:USDT | below_1h_threshold | +4.28% | +4.21% |
-| ZIL/USDT:USDT | below_1h_threshold | +3.04% | +2.98% |
-| BANK/USDT:USDT | below_1h_threshold | +1.51% | +1.45% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.86% | +0.80% |
-| S/USDT:USDT | below_1h_threshold | +0.64% | +0.58% |
+| G/USDT:USDT | below_1h_threshold | +4.27% | +4.17% |
+| CELR/USDT:USDT | below_1h_threshold | +2.50% | +2.40% |
+| ZIL/USDT:USDT | below_1h_threshold | +2.15% | +2.05% |
+| S/USDT:USDT | below_1h_threshold | +2.03% | +1.94% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.00% | +1.91% |
 
 ## 7. 次に見るべき不足
 
