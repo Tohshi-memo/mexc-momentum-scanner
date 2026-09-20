@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T00:56:24.981797+00:00
+- generated_at: 2026-09-20T01:01:22.408287+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15117**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T00:56:11.309704+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81251.3
-- Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.5 >= 65=1, 4h RSI 91.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-20T01:01:11.501673+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=81249.5
+- Funnel: target 1050 → liquid 141 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +59.18% | $1,686,596.56 |
-| OFC/USDT:USDT | +55.30% | $1,902,532.08 |
-| ONE/USDT:USDT | +24.70% | $47,701,744.59 |
-| EVAA/USDT:USDT | +16.38% | $1,394,774.08 |
-| BANK/USDT:USDT | +13.54% | $2,702,963.93 |
+| CELR/USDT:USDT | +61.95% | $1,730,886.30 |
+| OFC/USDT:USDT | +55.47% | $1,905,026.41 |
+| ONE/USDT:USDT | +20.92% | $46,828,050.49 |
+| EVAA/USDT:USDT | +16.53% | $1,335,298.93 |
+| ZIL/USDT:USDT | +13.07% | $1,549,330.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AVAX/USDT:USDT | below_1h_threshold | +3.46% | +3.42% |
-| INJ/USDT:USDT | below_1h_threshold | +3.44% | +3.41% |
-| ALGO/USDT:USDT | below_1h_threshold | +3.13% | +3.10% |
-| ZIL/USDT:USDT | below_1h_threshold | +2.94% | +2.91% |
-| ENA/USDT:USDT | below_1h_threshold | +1.79% | +1.76% |
+| CELR/USDT:USDT | below_1h_threshold | +2.51% | +2.53% |
+| G/USDT:USDT | below_1h_threshold | +1.99% | +2.01% |
+| CAP/USDT:USDT | below_1h_threshold | +0.65% | +0.67% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.30% | +0.32% |
+| VET/USDT:USDT | below_1h_threshold | +0.30% | +0.32% |
 
 ## 7. 次に見るべき不足
 
