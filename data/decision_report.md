@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T15:21:16.114439+00:00
+- generated_at: 2026-09-20T15:26:26.770396+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15189**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.42** / 初期 $100.00 (+21.42%)
-- 確定: 2979件 (Win 881 / Loss 1179 / Flat 919) / pending 1件 / skip 3677件
+- 確定: 2979件 (Win 881 / Loss 1179 / Flat 919) / pending 2件 / skip 3677件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000141 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CELR/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.04% 残高後 $121.42
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T15:21:05.397040+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=80780.6
-- Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-20T15:26:15.598062+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=80756.1
+- Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.4 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +58.24% | $8,968,004.41 |
-| OFC/USDT:USDT | +24.17% | $2,582,996.62 |
-| BTW/USDT:USDT | +20.67% | $2,883,507.38 |
-| SAGA/USDT:USDT | +20.52% | $2,156,099.49 |
-| ONE/USDT:USDT | +19.78% | $56,484,050.25 |
+| CELR/USDT:USDT | +57.79% | $9,052,357.64 |
+| OFC/USDT:USDT | +24.23% | $2,583,613.96 |
+| SAGA/USDT:USDT | +21.84% | $2,199,582.10 |
+| BTW/USDT:USDT | +21.19% | $2,894,775.00 |
+| ONE/USDT:USDT | +19.23% | $56,590,443.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +3.62% | +3.46% |
-| AVAX/USDT:USDT | below_1h_threshold | +2.97% | +2.80% |
-| BR/USDT:USDT | below_1h_threshold | +2.24% | +2.07% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +2.21% | +2.04% |
-| ALGO/USDT:USDT | below_1h_threshold | +2.13% | +1.97% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.36% | +2.23% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.28% | +2.15% |
+| ALGO/USDT:USDT | below_1h_threshold | +2.09% | +1.95% |
+| FARTCOIN/USDT:USDT | below_1h_threshold | +2.05% | +1.91% |
+| BR/USDT:USDT | below_1h_threshold | +1.96% | +1.83% |
 
 ## 7. 次に見るべき不足
 
