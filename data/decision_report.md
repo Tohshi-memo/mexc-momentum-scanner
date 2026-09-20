@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T17:06:36.420761+00:00
+- generated_at: 2026-09-20T17:11:34.737439+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15197**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T17:06:23.129209+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.04% price=81328.0
-- Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.0 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-20T17:11:23.745881+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.09% price=81224.4
+- Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNANEW/USDT:USDT | +19.14% | $1,435,960.54 |
-| AR/USDT:USDT | +12.72% | $5,691,321.47 |
-| RENDER/USDT:USDT | +10.93% | $4,820,466.86 |
-| ENA/USDT:USDT | +8.97% | $69,165,330.00 |
-| NEAR/USDT:USDT | +8.64% | $107,986,396.13 |
+| LUNANEW/USDT:USDT | +21.76% | $1,473,367.65 |
+| AR/USDT:USDT | +11.05% | $5,771,447.42 |
+| ENA/USDT:USDT | +9.09% | $69,513,834.78 |
+| RENDER/USDT:USDT | +8.77% | $4,967,573.79 |
+| SUI/USDT:USDT | +7.18% | $137,501,333.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RENDER/USDT:USDT | below_1h_threshold | +1.22% | +1.18% |
-| S/USDT:USDT | below_1h_threshold | +0.84% | +0.80% |
-| BR/USDT:USDT | below_1h_threshold | +0.58% | +0.54% |
-| CFX/USDT:USDT | below_1h_threshold | +0.51% | +0.47% |
-| JUP/USDT:USDT | below_1h_threshold | +0.40% | +0.35% |
+| AR/USDT:USDT | below_1h_threshold | +4.48% | +4.56% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +1.76% | +1.85% |
+| STRK/USDT:USDT | below_1h_threshold | +1.68% | +1.76% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.65% | +1.74% |
+| LUNC/USDT:USDT | below_1h_threshold | +0.68% | +0.76% |
 
 ## 7. 次に見るべき不足
 
