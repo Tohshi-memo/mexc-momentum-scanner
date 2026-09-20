@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T05:41:35.612157+00:00
+- generated_at: 2026-09-20T05:46:27.530819+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15141**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T05:41:23.475457+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.08% price=80474.3
-- Funnel: target 1050 → liquid 143 → pre 50 → checked 50 → surge 3 → strict 0
+- 更新: 2026-09-20T05:46:15.569653+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=80466.9
+- Funnel: target 1050 → liquid 144 → pre 50 → checked 50 → surge 3 → strict 0
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1, 4h RSI 88.6 >= 65=1, 4h RSI 75.0 >= 65=1
+- Strict後reject: 4h RSI 81.0 >= 65=1, 4h RSI 88.5 >= 65=1, 4h RSI 75.3 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +103.26% | $4,597,835.27 |
-| G/USDT:USDT | +39.02% | $11,873,183.90 |
-| ONE/USDT:USDT | +38.78% | $47,951,741.33 |
-| OFC/USDT:USDT | +34.14% | $2,324,528.69 |
-| ZIL/USDT:USDT | +15.56% | $2,911,885.06 |
+| CELR/USDT:USDT | +93.87% | $4,641,006.32 |
+| G/USDT:USDT | +39.37% | $11,915,334.83 |
+| OFC/USDT:USDT | +35.09% | $2,324,992.31 |
+| ONE/USDT:USDT | +34.01% | $48,173,746.25 |
+| ZIL/USDT:USDT | +16.66% | $2,914,800.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +4.19% | +4.11% |
-| BANK/USDT:USDT | below_1h_threshold | +3.02% | +2.93% |
-| TAG/USDT:USDT | below_1h_threshold | +2.66% | +2.57% |
-| STRK/USDT:USDT | below_1h_threshold | +2.07% | +1.99% |
-| CELR/USDT:USDT | below_1h_threshold | +1.88% | +1.80% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +4.29% | +4.22% |
+| TAG/USDT:USDT | below_1h_threshold | +2.46% | +2.38% |
+| BANK/USDT:USDT | below_1h_threshold | +2.11% | +2.03% |
+| CATE/USDT:USDT | below_1h_threshold | +1.49% | +1.41% |
+| GALA/USDT:USDT | below_1h_threshold | +1.43% | +1.36% |
 
 ## 7. 次に見るべき不足
 
