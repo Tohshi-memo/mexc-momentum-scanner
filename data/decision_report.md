@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T11:36:25.750267+00:00
+- generated_at: 2026-09-20T11:41:21.994179+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15179**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T11:36:14.638595+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=80426.9
+- 更新: 2026-09-20T11:41:11.695806+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=80430.6
 - Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1
+- Strict後reject: 4h RSI 77.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +61.95% | $7,251,056.06 |
-| ONE/USDT:USDT | +40.28% | $53,584,581.54 |
-| OFC/USDT:USDT | +25.19% | $2,482,441.46 |
-| BTW/USDT:USDT | +24.27% | $2,261,850.88 |
-| PIEVERSE/USDT:USDT | +16.23% | $1,183,066.90 |
+| CELR/USDT:USDT | +61.91% | $7,267,306.20 |
+| ONE/USDT:USDT | +40.96% | $53,738,433.25 |
+| OFC/USDT:USDT | +25.69% | $2,484,072.85 |
+| BTW/USDT:USDT | +20.59% | $2,279,740.17 |
+| PIEVERSE/USDT:USDT | +16.19% | $1,188,677.07 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +3.36% | +3.19% |
-| S/USDT:USDT | below_1h_threshold | +3.10% | +2.92% |
-| CATE/USDT:USDT | below_1h_threshold | +2.41% | +2.24% |
-| AVAX/USDT:USDT | below_1h_threshold | +2.21% | +2.04% |
-| VVV/USDT:USDT | below_1h_threshold | +1.78% | +1.61% |
+| CATE/USDT:USDT | below_1h_threshold | +2.77% | +2.60% |
+| AVAX/USDT:USDT | below_1h_threshold | +2.65% | +2.48% |
+| S/USDT:USDT | below_1h_threshold | +2.26% | +2.09% |
+| VVV/USDT:USDT | below_1h_threshold | +2.17% | +2.00% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.03% | +1.85% |
 
 ## 7. 次に見るべき不足
 
