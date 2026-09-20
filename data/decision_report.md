@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T01:36:27.801791+00:00
+- generated_at: 2026-09-20T01:41:36.594977+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15121**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.37** / 初期 $100.00 (+21.37%)
-- 確定: 2978件 (Win 880 / Loss 1179 / Flat 919) / pending 0件 / skip 3615件
+- 確定: 2978件 (Win 880 / Loss 1179 / Flat 919) / pending 0件 / skip 3616件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000210 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T01:36:14.253282+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=81040.0
-- Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 97.0 >= 65=1, 4h RSI 83.6 >= 65=1
+- 更新: 2026-09-20T01:41:22.474170+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.22% price=81084.3
+- Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 1
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 97.0 >= 65=1, 4h RSI 82.9 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +74.40% | $2,023,480.52 |
-| OFC/USDT:USDT | +53.03% | $1,960,173.42 |
-| ONE/USDT:USDT | +23.35% | $48,005,108.61 |
-| EVAA/USDT:USDT | +20.55% | $1,428,632.91 |
-| BANK/USDT:USDT | +11.64% | $2,757,496.79 |
+| CELR/USDT:USDT | +74.65% | $2,067,073.17 |
+| OFC/USDT:USDT | +53.07% | $1,962,736.56 |
+| ONE/USDT:USDT | +23.35% | $48,080,612.25 |
+| EVAA/USDT:USDT | +20.46% | $1,440,917.01 |
+| BANK/USDT:USDT | +13.48% | $2,759,030.40 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| B2/USDT:USDT | below_1h_threshold | +4.38% | +4.65% |
-| EVAA/USDT:USDT | below_1h_threshold | +2.93% | +3.21% |
-| AKE/USDT:USDT | below_1h_threshold | +0.67% | +0.95% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.66% | +0.94% |
-| JTO/USDT:USDT | below_1h_threshold | +0.64% | +0.92% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.85% | +3.07% |
+| JTO/USDT:USDT | below_1h_threshold | +1.88% | +2.10% |
+| STX/USDT:USDT | below_1h_threshold | +1.54% | +1.76% |
+| BANK/USDT:USDT | below_1h_threshold | +1.16% | +1.38% |
+| SAGA/USDT:USDT | below_1h_threshold | +1.09% | +1.31% |
 
 ## 7. 次に見るべき不足
 
