@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T05:56:19.458183+00:00
+- generated_at: 2026-09-20T06:01:23.387470+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15142**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T05:56:09.974191+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80427.9
-- Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 81.5 >= 65=1, 4h RSI 76.4 >= 65=1, 4h RSI 88.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-20T06:01:12.337388+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.01% price=80469.9
+- Funnel: target 1050 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +101.55% | $4,706,854.07 |
-| ONE/USDT:USDT | +38.76% | $48,456,500.83 |
-| G/USDT:USDT | +38.60% | $12,042,973.66 |
-| OFC/USDT:USDT | +32.84% | $2,330,249.39 |
-| ZIL/USDT:USDT | +16.66% | $2,945,194.02 |
+| CELR/USDT:USDT | +100.00% | $4,742,835.00 |
+| G/USDT:USDT | +40.04% | $11,869,595.89 |
+| ONE/USDT:USDT | +39.02% | $47,590,187.35 |
+| OFC/USDT:USDT | +31.69% | $2,328,623.44 |
+| ZIL/USDT:USDT | +16.24% | $2,945,344.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.35% | +3.32% |
-| BANK/USDT:USDT | below_1h_threshold | +2.31% | +2.28% |
-| STX/USDT:USDT | below_1h_threshold | +1.93% | +1.90% |
-| STRK/USDT:USDT | below_1h_threshold | +1.60% | +1.57% |
-| TAG/USDT:USDT | below_1h_threshold | +1.60% | +1.57% |
+| SOXL/USDT:USDT | below_1h_threshold | +0.79% | +0.78% |
+| AKE/USDT:USDT | below_1h_threshold | +0.52% | +0.50% |
+| BEAT/USDT:USDT | below_1h_threshold | +0.46% | +0.45% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +0.41% | +0.40% |
+| ALLO/USDT:USDT | below_1h_threshold | +0.40% | +0.39% |
 
 ## 7. 次に見るべき不足
 
