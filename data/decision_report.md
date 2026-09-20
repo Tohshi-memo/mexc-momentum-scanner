@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T16:41:43.041638+00:00
+- generated_at: 2026-09-20T16:47:20.461564+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15193**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T16:41:28.038609+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.52% price=81290.3
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 8 → strict 0
-- Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.6 >= 65=1, 4h RSI 81.9 >= 65=1, 4h RSI 75.8 >= 65=1, 4h RSI 76.6 >= 65=1, 4h RSI 77.8 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 70.3 >= 65=1, 4h RSI 75.0 >= 65=1
+- 更新: 2026-09-20T16:47:06.154104+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.53% price=81300.0
+- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 7 → strict 0
+- Surge前reject: below_1h_threshold=42, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 89.2 >= 65=1, 4h RSI 75.7 >= 65=1, 4h RSI 81.8 >= 65=1, 4h RSI 77.6 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 76.0 >= 65=1, 4h RSI 71.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNANEW/USDT:USDT | +28.76% | $1,090,420.89 |
-| RENDER/USDT:USDT | +8.90% | $3,539,545.13 |
-| NEAR/USDT:USDT | +8.79% | $102,044,414.65 |
-| AR/USDT:USDT | +7.83% | $6,995,767.48 |
-| ENA/USDT:USDT | +7.15% | $70,091,362.06 |
+| LUNANEW/USDT:USDT | +28.01% | $1,167,669.50 |
+| RENDER/USDT:USDT | +8.45% | $4,238,549.60 |
+| NEAR/USDT:USDT | +8.07% | $104,444,834.82 |
+| SUI/USDT:USDT | +7.52% | $136,061,689.07 |
+| ENA/USDT:USDT | +7.39% | $70,290,801.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_1h_threshold | +4.83% | +4.32% |
-| RAY/USDT:USDT | below_1h_threshold | +4.33% | +3.81% |
-| APT/USDT:USDT | below_1h_threshold | +3.68% | +3.16% |
-| EIGEN/USDT:USDT | below_1h_threshold | +3.51% | +2.99% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.43% | +2.91% |
+| AKE/USDT:USDT | below_relative_strength | +5.32% | +4.79% |
+| MORPHO/USDT:USDT | below_1h_threshold | +4.20% | +3.67% |
+| STRK/USDT:USDT | below_1h_threshold | +4.12% | +3.59% |
+| DOT/USDT:USDT | below_1h_threshold | +4.05% | +3.52% |
+| ICP/USDT:USDT | below_1h_threshold | +3.95% | +3.42% |
 
 ## 7. 次に見るべき不足
 
