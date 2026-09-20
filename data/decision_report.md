@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-20T10:41:48.632730+00:00
+- generated_at: 2026-09-20T10:46:43.459142+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15171**
+- closed shadow trades: **15172**
 
 ## 1. 今日の判断
 
 - 結論: **実行可能なMARKET SHORTは安全条件未達。LIMIT/LONGはシャドウで測り、実行側対応まではlive portfolioへ流さない。**
-- 全期間 MARKET基準: n=15171, expectancy=-0.00%
+- 全期間 MARKET基準: n=15172, expectancy=-0.00%
 - 直近20件 MARKET基準: n=20, expectancy=-1.76%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -46,16 +46,16 @@
 
 ## 3. Safe Adaptive DryRun ($100)
 
-- 残高: **$1,210.73** / 初期 $100.00 (+1110.73%)
-- 確定: 5697件 (Win 1704 / Loss 1837 / Flat 2156) / skip 6035件
-- 成長率目線: 平均log +0.000438 / 幾何平均 +0.044% per trade / maxDD +8.46%
+- 残高: **$1,204.68** / 初期 $100.00 (+1104.68%)
+- 確定: 5698件 (Win 1704 / Loss 1838 / Flat 2156) / skip 6035件
+- 成長率目線: 平均log +0.000437 / 幾何平均 +0.044% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_3PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: AKE/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $1,210.73
+- 最新: ONE/USDT:USDT `LIMIT_3PCT_LONG` SL_HIT account -0.50% 残高後 $1,204.68
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$247.51** / 初期 $100.00 (+147.51%)
-- 確定: 3279件 (Win 910 / Loss 764 / Flat 1605) / skip 5303件
+- 確定: 3279件 (Win 910 / Loss 764 / Flat 1605) / skip 5304件
 - 成長率目線: 平均log +0.000276 / 幾何平均 +0.028% per trade / maxDD +3.96%
 - 次の候補: `LIMIT_6PCT` (selected_by_robust_growth_score) / robust_score +0.0262 / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: AKE/USDT:USDT `LIMIT_5PCT` SL_HIT account -0.35% 残高後 $247.51
@@ -65,37 +65,37 @@
 - 残高: **$121.37** / 初期 $100.00 (+21.37%)
 - 確定: 2978件 (Win 880 / Loss 1179 / Flat 919) / pending 0件 / skip 3671件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
-- 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000124 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
+- 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000107 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T10:41:32.554856+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.18% price=80294.4
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 5 → strict 2
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.9 >= 65=1, 4h RSI 75.4 >= 65=1, 4h RSI 75.6 >= 65=1
+- 更新: 2026-09-20T10:46:26.854387+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.17% price=80301.0
+- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 1
+- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 75.9 >= 65=1, 4h RSI 65.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +63.46% | $6,969,807.08 |
-| AKE/USDT:USDT | +41.83% | $74,917,594.70 |
-| ONE/USDT:USDT | +31.54% | $53,303,008.57 |
-| BTW/USDT:USDT | +24.22% | $2,013,821.01 |
-| OFC/USDT:USDT | +23.11% | $2,465,491.48 |
+| CELR/USDT:USDT | +64.04% | $7,006,473.63 |
+| AKE/USDT:USDT | +43.21% | $75,808,275.04 |
+| ONE/USDT:USDT | +26.80% | $53,569,935.06 |
+| BTW/USDT:USDT | +24.06% | $2,051,813.90 |
+| OFC/USDT:USDT | +23.65% | $2,465,921.72 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +3.01% | +3.19% |
-| AKE/USDT:USDT | below_1h_threshold | +2.28% | +2.45% |
-| VVV/USDT:USDT | below_1h_threshold | +1.97% | +2.15% |
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.50% |
-| ENA/USDT:USDT | below_1h_threshold | +0.20% | +0.37% |
+| AKE/USDT:USDT | below_1h_threshold | +3.61% | +3.78% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.42% | +3.59% |
+| VVV/USDT:USDT | below_1h_threshold | +3.16% | +3.33% |
+| ONE/USDT:USDT | below_1h_threshold | +2.82% | +2.99% |
+| TAG/USDT:USDT | below_1h_threshold | +1.74% | +1.91% |
 
 ## 7. 次に見るべき不足
 
