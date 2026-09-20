@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T12:21:20.112117+00:00
+- generated_at: 2026-09-20T12:26:21.290220+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15182**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T12:21:09.029895+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.08% price=80381.8
+- 更新: 2026-09-20T12:26:10.299109+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.12% price=80352.1
 - Funnel: target 1050 → liquid 145 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +68.20% | $7,482,611.66 |
-| ONE/USDT:USDT | +25.56% | $53,935,143.54 |
-| PIEVERSE/USDT:USDT | +22.57% | $1,262,195.49 |
-| OFC/USDT:USDT | +21.71% | $2,509,327.65 |
-| BTW/USDT:USDT | +21.21% | $2,371,789.60 |
+| CELR/USDT:USDT | +67.55% | $7,538,424.20 |
+| ONE/USDT:USDT | +29.16% | $54,040,134.73 |
+| OFC/USDT:USDT | +23.06% | $2,510,484.58 |
+| PIEVERSE/USDT:USDT | +23.01% | $1,272,964.02 |
+| BTW/USDT:USDT | +21.45% | $2,386,466.26 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CELR/USDT:USDT | below_1h_threshold | +3.00% | +3.08% |
-| BR/USDT:USDT | below_1h_threshold | +1.93% | +2.01% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.79% | +1.87% |
-| BANK/USDT:USDT | below_1h_threshold | +1.59% | +1.68% |
-| VVV/USDT:USDT | below_1h_threshold | +1.47% | +1.55% |
+| CELR/USDT:USDT | below_1h_threshold | +2.47% | +2.59% |
+| BR/USDT:USDT | below_1h_threshold | +2.14% | +2.26% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.09% | +2.21% |
+| ALLO/USDT:USDT | below_1h_threshold | +1.87% | +1.99% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.87% | +1.99% |
 
 ## 7. 次に見るべき不足
 
