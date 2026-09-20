@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T07:51:33.061443+00:00
+- generated_at: 2026-09-20T07:56:26.692387+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15153**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T07:51:20.212832+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=80303.3
+- 更新: 2026-09-20T07:56:15.944380+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80318.7
 - Funnel: target 1050 → liquid 148 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 86.3 >= 65=1
+- Strict後reject: 4h RSI 86.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +67.34% | $5,809,721.32 |
-| ONE/USDT:USDT | +30.92% | $49,484,681.75 |
-| OFC/USDT:USDT | +28.38% | $2,385,342.58 |
-| ZIL/USDT:USDT | +25.59% | $3,805,559.85 |
-| EVAA/USDT:USDT | +18.30% | $1,798,171.04 |
+| CELR/USDT:USDT | +66.77% | $5,856,373.31 |
+| OFC/USDT:USDT | +29.67% | $2,387,265.95 |
+| ONE/USDT:USDT | +26.69% | $49,609,297.98 |
+| ZIL/USDT:USDT | +24.92% | $3,837,546.38 |
+| EVAA/USDT:USDT | +18.52% | $1,812,767.21 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EVAA/USDT:USDT | below_1h_threshold | +3.99% | +3.97% |
-| AKE/USDT:USDT | below_1h_threshold | +2.62% | +2.59% |
-| OFC/USDT:USDT | below_1h_threshold | +1.38% | +1.35% |
-| HBAR/USDT:USDT | below_1h_threshold | +1.14% | +1.11% |
-| ONE/USDT:USDT | below_1h_threshold | +1.04% | +1.01% |
+| EVAA/USDT:USDT | below_1h_threshold | +4.22% | +4.17% |
+| OFC/USDT:USDT | below_1h_threshold | +2.35% | +2.30% |
+| AKE/USDT:USDT | below_1h_threshold | +2.14% | +2.09% |
+| HBAR/USDT:USDT | below_1h_threshold | +1.04% | +0.99% |
+| S/USDT:USDT | below_1h_threshold | +0.95% | +0.90% |
 
 ## 7. 次に見るべき不足
 
