@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T16:36:31.814560+00:00
+- generated_at: 2026-09-20T16:41:43.041638+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15193**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.84** / 初期 $100.00 (+21.84%)
-- 確定: 2983件 (Win 882 / Loss 1179 / Flat 922) / pending 6件 / skip 3677件
+- 確定: 2983件 (Win 882 / Loss 1179 / Flat 922) / pending 6件 / skip 3680件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000145 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: LUNC/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $121.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T16:36:20.863177+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.45% price=81238.3
-- Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 74.2 >= 65=1, 4h RSI 78.1 >= 65=1, 4h RSI 81.8 >= 65=1, 4h RSI 75.5 >= 65=1
+- 更新: 2026-09-20T16:41:28.038609+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.52% price=81290.3
+- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 8 → strict 0
+- Surge前reject: below_1h_threshold=42, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 88.6 >= 65=1, 4h RSI 81.9 >= 65=1, 4h RSI 75.8 >= 65=1, 4h RSI 76.6 >= 65=1, 4h RSI 77.8 >= 65=1, 4h RSI 72.0 >= 65=1, 4h RSI 70.3 >= 65=1, 4h RSI 75.0 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| RENDER/USDT:USDT | +9.09% | $3,470,104.85 |
-| LUNC/USDT:USDT | +8.92% | $1,980,137.41 |
-| NEAR/USDT:USDT | +8.20% | $100,551,362.99 |
-| ENA/USDT:USDT | +8.09% | $69,413,074.99 |
-| AR/USDT:USDT | +5.65% | $6,961,874.41 |
+| LUNANEW/USDT:USDT | +28.76% | $1,090,420.89 |
+| RENDER/USDT:USDT | +8.90% | $3,539,545.13 |
+| NEAR/USDT:USDT | +8.79% | $102,044,414.65 |
+| AR/USDT:USDT | +7.83% | $6,995,767.48 |
+| ENA/USDT:USDT | +7.15% | $70,091,362.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ICP/USDT:USDT | below_1h_threshold | +4.30% | +3.85% |
-| RAY/USDT:USDT | below_1h_threshold | +3.71% | +3.26% |
-| SUI/USDT:USDT | below_1h_threshold | +3.38% | +2.93% |
-| ETHFI/USDT:USDT | below_1h_threshold | +3.30% | +2.85% |
-| TAO/USDT:USDT | below_1h_threshold | +3.25% | +2.79% |
+| ICP/USDT:USDT | below_1h_threshold | +4.83% | +4.32% |
+| RAY/USDT:USDT | below_1h_threshold | +4.33% | +3.81% |
+| APT/USDT:USDT | below_1h_threshold | +3.68% | +3.16% |
+| EIGEN/USDT:USDT | below_1h_threshold | +3.51% | +2.99% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.43% | +2.91% |
 
 ## 7. 次に見るべき不足
 
