@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T07:06:15.281332+00:00
+- generated_at: 2026-09-20T07:11:16.975659+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15149**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T07:06:04.814984+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=80276.3
+- 更新: 2026-09-20T07:11:08.363988+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80307.1
 - Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +94.20% | $5,217,689.40 |
-| G/USDT:USDT | +34.61% | $13,015,105.09 |
-| OFC/USDT:USDT | +26.82% | $2,365,536.85 |
-| ONE/USDT:USDT | +26.63% | $48,425,502.91 |
-| EVAA/USDT:USDT | +15.49% | $1,716,116.89 |
+| CELR/USDT:USDT | +88.89% | $5,262,003.38 |
+| G/USDT:USDT | +29.61% | $13,325,389.05 |
+| ONE/USDT:USDT | +25.89% | $48,535,246.32 |
+| OFC/USDT:USDT | +25.15% | $2,366,478.70 |
+| ZIL/USDT:USDT | +17.21% | $3,120,104.16 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +1.92% | +1.92% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.52% | +1.53% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +0.94% | +0.94% |
-| AIN/USDT:USDT | below_1h_threshold | +0.81% | +0.82% |
-| HBAR/USDT:USDT | below_1h_threshold | +0.77% | +0.77% |
+| ZIL/USDT:USDT | below_1h_threshold | +4.18% | +4.15% |
+| AKE/USDT:USDT | below_1h_threshold | +2.16% | +2.13% |
+| EVAA/USDT:USDT | below_1h_threshold | +1.72% | +1.68% |
+| 4STOCK/USDT:USDT | below_1h_threshold | +1.67% | +1.64% |
+| HBAR/USDT:USDT | below_1h_threshold | +1.46% | +1.43% |
 
 ## 7. 次に見るべき不足
 
