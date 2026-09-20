@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T16:31:32.759216+00:00
+- generated_at: 2026-09-20T16:36:31.814560+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15193**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T16:31:19.560461+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.35% price=81157.1
+- 更新: 2026-09-20T16:36:20.863177+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.45% price=81238.3
 - Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 5 → strict 0
 - Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.4 >= 65=1, 4h RSI 81.5 >= 65=1, 4h RSI 74.6 >= 65=1, 4h RSI 77.0 >= 65=1, 4h RSI 75.6 >= 65=1
+- Strict後reject: 4h RSI 76.0 >= 65=1, 4h RSI 74.2 >= 65=1, 4h RSI 78.1 >= 65=1, 4h RSI 81.8 >= 65=1, 4h RSI 75.5 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNC/USDT:USDT | +10.04% | $1,858,838.79 |
-| NEAR/USDT:USDT | +7.15% | $98,968,212.57 |
-| RENDER/USDT:USDT | +7.05% | $3,306,160.18 |
-| ENA/USDT:USDT | +6.29% | $68,821,748.58 |
-| AR/USDT:USDT | +5.26% | $6,953,282.56 |
+| RENDER/USDT:USDT | +9.09% | $3,470,104.85 |
+| LUNC/USDT:USDT | +8.92% | $1,980,137.41 |
+| NEAR/USDT:USDT | +8.20% | $100,551,362.99 |
+| ENA/USDT:USDT | +8.09% | $69,413,074.99 |
+| AR/USDT:USDT | +5.65% | $6,961,874.41 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| RAY/USDT:USDT | below_1h_threshold | +3.38% | +3.03% |
-| B2/USDT:USDT | below_1h_threshold | +3.06% | +2.70% |
-| INJ/USDT:USDT | below_1h_threshold | +2.71% | +2.36% |
-| TAO/USDT:USDT | below_1h_threshold | +2.62% | +2.27% |
-| COTI/USDT:USDT | below_1h_threshold | +2.49% | +2.13% |
+| ICP/USDT:USDT | below_1h_threshold | +4.30% | +3.85% |
+| RAY/USDT:USDT | below_1h_threshold | +3.71% | +3.26% |
+| SUI/USDT:USDT | below_1h_threshold | +3.38% | +2.93% |
+| ETHFI/USDT:USDT | below_1h_threshold | +3.30% | +2.85% |
+| TAO/USDT:USDT | below_1h_threshold | +3.25% | +2.79% |
 
 ## 7. 次に見るべき不足
 
