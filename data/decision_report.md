@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T09:56:35.090832+00:00
+- generated_at: 2026-09-20T10:01:15.681004+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15164**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T09:56:20.378154+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=80436.7
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 3 → strict 1
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 88.2 >= 65=1, 4h RSI 95.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-20T10:01:07.452814+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80473.9
+- Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +76.00% | $6,665,613.48 |
-| AKE/USDT:USDT | +36.88% | $64,817,845.15 |
-| OFC/USDT:USDT | +32.76% | $2,426,145.04 |
-| EVAA/USDT:USDT | +24.14% | $2,114,087.85 |
-| ONE/USDT:USDT | +22.63% | $53,150,762.93 |
+| CELR/USDT:USDT | +72.12% | $6,708,519.49 |
+| AKE/USDT:USDT | +38.38% | $63,455,586.80 |
+| OFC/USDT:USDT | +34.23% | $2,423,995.50 |
+| EVAA/USDT:USDT | +27.42% | $2,092,749.92 |
+| ONE/USDT:USDT | +23.95% | $52,406,000.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CATE/USDT:USDT | below_1h_threshold | +4.93% | +4.68% |
-| EVAA/USDT:USDT | below_1h_threshold | +4.31% | +4.06% |
-| OFC/USDT:USDT | below_1h_threshold | +3.67% | +3.42% |
-| 4STOCK/USDT:USDT | below_1h_threshold | +3.34% | +3.09% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.15% | +2.90% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
+| STRK/USDT:USDT | below_1h_threshold | +0.65% | +0.61% |
+| ONE/USDT:USDT | below_1h_threshold | +0.57% | +0.53% |
+| OFC/USDT:USDT | below_1h_threshold | +0.39% | +0.35% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.34% | +0.29% |
 
 ## 7. 次に見るべき不足
 
