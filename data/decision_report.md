@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T10:01:15.681004+00:00
+- generated_at: 2026-09-20T10:06:16.613418+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15164**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T10:01:07.452814+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.05% price=80473.9
+- 更新: 2026-09-20T10:06:08.054405+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.04% price=80465.8
 - Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +72.12% | $6,708,519.49 |
-| AKE/USDT:USDT | +38.38% | $63,455,586.80 |
-| OFC/USDT:USDT | +34.23% | $2,423,995.50 |
-| EVAA/USDT:USDT | +27.42% | $2,092,749.92 |
-| ONE/USDT:USDT | +23.95% | $52,406,000.06 |
+| CELR/USDT:USDT | +67.91% | $6,762,090.12 |
+| AKE/USDT:USDT | +40.99% | $63,850,682.30 |
+| OFC/USDT:USDT | +31.01% | $2,431,547.00 |
+| EVAA/USDT:USDT | +26.31% | $2,111,993.29 |
+| ONE/USDT:USDT | +22.91% | $52,518,098.92 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.28% |
-| STRK/USDT:USDT | below_1h_threshold | +0.65% | +0.61% |
-| ONE/USDT:USDT | below_1h_threshold | +0.57% | +0.53% |
-| OFC/USDT:USDT | below_1h_threshold | +0.39% | +0.35% |
-| AVAX/USDT:USDT | below_1h_threshold | +0.34% | +0.29% |
+| AKE/USDT:USDT | below_1h_threshold | +1.92% | +1.88% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.29% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.46% | +0.42% |
+| CAKE/USDT:USDT | below_1h_threshold | +0.28% | +0.24% |
+| STRK/USDT:USDT | below_1h_threshold | +0.15% | +0.12% |
 
 ## 7. 次に見るべき不足
 
