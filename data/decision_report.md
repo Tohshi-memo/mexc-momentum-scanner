@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T17:16:19.055868+00:00
+- generated_at: 2026-09-20T17:21:20.620437+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15197**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T17:16:11.224836+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=81203.8
-- Funnel: target 1050 → liquid 143 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 79.5 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-20T17:21:12.061929+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=81212.8
+- Funnel: target 1050 → liquid 143 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| LUNANEW/USDT:USDT | +19.12% | $1,531,278.26 |
-| AR/USDT:USDT | +13.67% | $5,840,350.04 |
-| ENA/USDT:USDT | +9.87% | $69,883,488.42 |
-| S/USDT:USDT | +7.29% | $2,091,236.80 |
-| RENDER/USDT:USDT | +6.86% | $5,544,274.43 |
+| LUNANEW/USDT:USDT | +22.41% | $1,551,636.34 |
+| AR/USDT:USDT | +10.87% | $5,952,784.90 |
+| ENA/USDT:USDT | +9.27% | $70,385,433.32 |
+| SAGA/USDT:USDT | +7.94% | $3,425,644.79 |
+| AKE/USDT:USDT | +7.85% | $85,995,334.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +1.89% | +2.00% |
-| AKE/USDT:USDT | below_1h_threshold | +1.65% | +1.76% |
-| ARB/USDT:USDT | below_1h_threshold | +1.16% | +1.27% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.12% | +1.23% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +0.65% | +0.77% |
+| AR/USDT:USDT | below_1h_threshold | +4.61% | +4.71% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.09% | +4.19% |
+| AKE/USDT:USDT | below_1h_threshold | +3.18% | +3.28% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +2.30% | +2.40% |
+| STRK/USDT:USDT | below_1h_threshold | +2.23% | +2.33% |
 
 ## 7. 次に見るべき不足
 
