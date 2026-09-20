@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T22:26:15.137311+00:00
+- generated_at: 2026-09-20T22:31:17.651652+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15218**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T22:26:05.773991+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.23% price=81084.5
+- 更新: 2026-09-20T22:31:06.762212+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=81125.0
 - Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FF/USDT:USDT | +30.84% | $2,699,740.17 |
-| NIL/USDT:USDT | +24.94% | $4,364,809.42 |
-| LUNANEW/USDT:USDT | +17.37% | $2,180,570.84 |
-| S/USDT:USDT | +16.50% | $3,408,246.74 |
-| SEI/USDT:USDT | +11.87% | $14,109,254.38 |
+| FF/USDT:USDT | +31.71% | $2,830,057.05 |
+| NIL/USDT:USDT | +26.59% | $4,377,791.44 |
+| S/USDT:USDT | +17.51% | $3,439,174.15 |
+| LUNANEW/USDT:USDT | +16.20% | $2,181,652.31 |
+| SEI/USDT:USDT | +11.85% | $14,137,895.47 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| LIT/USDT:USDT | below_1h_threshold | +3.06% | +2.83% |
-| ENS/USDT:USDT | below_1h_threshold | +2.36% | +2.13% |
-| CRV/USDT:USDT | below_1h_threshold | +2.26% | +2.02% |
-| ZEC/USDT:USDT | below_1h_threshold | +2.08% | +1.85% |
-| RAY/USDT:USDT | below_1h_threshold | +1.90% | +1.67% |
+| ZEC/USDT:USDT | below_1h_threshold | +2.78% | +2.50% |
+| ENS/USDT:USDT | below_1h_threshold | +2.55% | +2.27% |
+| LIT/USDT:USDT | below_1h_threshold | +2.51% | +2.23% |
+| CRV/USDT:USDT | below_1h_threshold | +2.48% | +2.20% |
+| ARB/USDT:USDT | below_1h_threshold | +2.29% | +2.01% |
 
 ## 7. 次に見るべき不足
 
