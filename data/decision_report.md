@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T03:51:32.549303+00:00
+- generated_at: 2026-09-20T03:56:33.579600+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15134**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T03:51:19.180960+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.19% price=80461.2
-- Funnel: target 1050 → liquid 141 → pre 50 → checked 50 → surge 6 → strict 1
+- 更新: 2026-09-20T03:56:19.416242+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=80479.2
+- Funnel: target 1050 → liquid 141 → pre 50 → checked 50 → surge 6 → strict 0
 - Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.8 >= 65=1, 4h RSI 80.9 >= 65=1, 4h RSI 68.0 >= 65=1, 4h RSI 84.4 >= 65=1, 4h RSI 81.5 >= 65=1
+- Strict後reject: 4h RSI 72.1 >= 65=1, 4h RSI 80.9 >= 65=1, 4h RSI 84.7 >= 65=1, 4h RSI 81.7 >= 65=1, 4h RSI 67.3 >= 65=1, 4h RSI 65.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +78.16% | $3,236,493.00 |
-| ONE/USDT:USDT | +34.82% | $48,076,118.52 |
-| OFC/USDT:USDT | +34.00% | $2,268,170.00 |
-| G/USDT:USDT | +23.42% | $11,691,169.68 |
-| ZIL/USDT:USDT | +18.86% | $2,595,897.00 |
+| CELR/USDT:USDT | +71.51% | $3,302,056.50 |
+| ONE/USDT:USDT | +34.30% | $48,133,226.79 |
+| OFC/USDT:USDT | +33.73% | $2,269,863.60 |
+| G/USDT:USDT | +26.34% | $11,728,444.94 |
+| ZIL/USDT:USDT | +19.01% | $2,603,396.63 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +4.12% | +3.93% |
-| SAND/USDT:USDT | below_1h_threshold | +3.69% | +3.50% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.20% | +3.01% |
-| JTO/USDT:USDT | below_1h_threshold | +3.13% | +2.94% |
-| S/USDT:USDT | below_1h_threshold | +2.53% | +2.34% |
+| STX/USDT:USDT | below_1h_threshold | +4.25% | +4.04% |
+| SAGA/USDT:USDT | below_1h_threshold | +4.24% | +4.03% |
+| OP/USDT:USDT | below_1h_threshold | +4.17% | +3.96% |
+| SAND/USDT:USDT | below_1h_threshold | +3.31% | +3.10% |
+| JTO/USDT:USDT | below_1h_threshold | +2.88% | +2.67% |
 
 ## 7. 次に見るべき不足
 
