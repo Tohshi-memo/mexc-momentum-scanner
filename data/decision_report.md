@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T16:06:59.015146+00:00
+- generated_at: 2026-09-20T16:11:21.249080+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15191**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.84** / 初期 $100.00 (+21.84%)
-- 確定: 2981件 (Win 882 / Loss 1179 / Flat 920) / pending 2件 / skip 3677件
+- 確定: 2981件 (Win 882 / Loss 1179 / Flat 920) / pending 3件 / skip 3677件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000179 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: OFC/USDT:USDT `LIMIT_9PCT_LONG` TP_HIT account +0.34% 残高後 $121.84
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T16:06:46.031098+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.01% price=80863.6
-- Funnel: target 1050 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-20T16:11:12.246854+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.14% price=80981.9
+- Funnel: target 1050 → liquid 145 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.2 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| STRK/USDT:USDT | +3.83% | $3,669,521.16 |
-| LUNC/USDT:USDT | +3.74% | $1,157,050.69 |
-| LSK/USDT:USDT | +2.65% | $3,069,305.66 |
-| ZEN/USDT:USDT | +2.26% | $4,229,627.36 |
-| PIEVERSE/USDT:USDT | +1.94% | $1,816,970.95 |
+| LUNC/USDT:USDT | +5.25% | $1,238,744.55 |
+| STRK/USDT:USDT | +3.06% | $3,699,491.65 |
+| ZAMA/USDT:USDT | +2.21% | $5,960,921.40 |
+| ZEN/USDT:USDT | +2.11% | $4,364,413.57 |
+| INJ/USDT:USDT | +1.73% | $37,295,801.99 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STRK/USDT:USDT | below_1h_threshold | +3.83% | +3.84% |
-| LUNC/USDT:USDT | below_1h_threshold | +3.78% | +3.79% |
-| LSK/USDT:USDT | below_1h_threshold | +2.66% | +2.67% |
-| ZEN/USDT:USDT | below_1h_threshold | +2.09% | +2.10% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +1.95% | +1.96% |
+| STRK/USDT:USDT | below_1h_threshold | +3.06% | +2.93% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.19% | +2.06% |
+| ZEN/USDT:USDT | below_1h_threshold | +2.18% | +2.05% |
+| MSTRSTOCK/USDT:USDT | below_1h_threshold | +1.82% | +1.68% |
+| INJ/USDT:USDT | below_1h_threshold | +1.73% | +1.59% |
 
 ## 7. 次に見るべき不足
 
