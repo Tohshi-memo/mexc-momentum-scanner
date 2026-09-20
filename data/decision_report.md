@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T10:46:43.459142+00:00
+- generated_at: 2026-09-20T10:51:43.083239+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15172**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.37** / 初期 $100.00 (+21.37%)
-- 確定: 2978件 (Win 880 / Loss 1179 / Flat 919) / pending 0件 / skip 3671件
+- 確定: 2978件 (Win 880 / Loss 1179 / Flat 919) / pending 0件 / skip 3672件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000107 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: CATE/USDT:USDT `LIMIT_2PCT_LONG` SL_HIT account -0.17% 残高後 $121.37
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T10:46:26.854387+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=80301.0
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 4 → strict 1
-- Surge前reject: below_1h_threshold=46, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 77.3 >= 65=1, 4h RSI 75.9 >= 65=1, 4h RSI 65.0 >= 65=1
+- 更新: 2026-09-20T10:51:29.858024+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=80333.4
+- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 77.1 >= 65=2, 4h RSI 65.9 >= 65=1, 4h RSI 77.3 >= 65=1, 4h RSI 66.2 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +64.04% | $7,006,473.63 |
-| AKE/USDT:USDT | +43.21% | $75,808,275.04 |
-| ONE/USDT:USDT | +26.80% | $53,569,935.06 |
-| BTW/USDT:USDT | +24.06% | $2,051,813.90 |
-| OFC/USDT:USDT | +23.65% | $2,465,921.72 |
+| CELR/USDT:USDT | +67.46% | $7,041,197.42 |
+| AKE/USDT:USDT | +38.19% | $76,526,765.19 |
+| BTW/USDT:USDT | +27.19% | $2,107,069.47 |
+| ONE/USDT:USDT | +26.93% | $53,672,115.20 |
+| EVAA/USDT:USDT | +23.21% | $2,332,334.27 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.61% | +3.78% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.42% | +3.59% |
-| VVV/USDT:USDT | below_1h_threshold | +3.16% | +3.33% |
-| ONE/USDT:USDT | below_1h_threshold | +2.82% | +2.99% |
-| TAG/USDT:USDT | below_1h_threshold | +1.74% | +1.91% |
+| VVV/USDT:USDT | below_1h_threshold | +3.82% | +3.95% |
+| ONE/USDT:USDT | below_1h_threshold | +2.60% | +2.73% |
+| TAG/USDT:USDT | below_1h_threshold | +2.45% | +2.58% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +1.32% | +1.45% |
+| CAKE/USDT:USDT | below_1h_threshold | +0.36% | +0.49% |
 
 ## 7. 次に見るべき不足
 
