@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T14:56:18.207971+00:00
+- generated_at: 2026-09-20T15:01:15.933738+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15188**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T14:56:10.561331+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.17% price=80668.9
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-20T15:01:05.434471+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.05% price=80684.7
+- Funnel: target 1050 → liquid 144 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +76.77% | $8,647,010.27 |
-| OFC/USDT:USDT | +24.21% | $2,577,505.26 |
-| BTW/USDT:USDT | +20.91% | $2,883,477.49 |
-| ONE/USDT:USDT | +18.79% | $56,864,316.75 |
-| AVAX/USDT:USDT | +15.44% | $124,096,221.86 |
+| CELR/USDT:USDT | +73.95% | $8,678,070.10 |
+| OFC/USDT:USDT | +24.64% | $2,576,307.85 |
+| BTW/USDT:USDT | +21.60% | $2,835,755.48 |
+| ONE/USDT:USDT | +17.59% | $55,911,758.79 |
+| AVAX/USDT:USDT | +15.33% | $123,511,174.43 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| CELR/USDT:USDT | below_1h_threshold | +4.82% | +4.65% |
-| BTW/USDT:USDT | below_1h_threshold | +4.79% | +4.62% |
-| ALLO/USDT:USDT | below_1h_threshold | +4.35% | +4.18% |
-| ALGO/USDT:USDT | below_1h_threshold | +3.88% | +3.71% |
-| AVAX/USDT:USDT | below_1h_threshold | +3.06% | +2.89% |
+| EVAA/USDT:USDT | below_1h_threshold | +0.88% | +0.83% |
+| AVAX/USDT:USDT | below_1h_threshold | +0.72% | +0.67% |
+| BTW/USDT:USDT | below_1h_threshold | +0.69% | +0.64% |
+| HBAR/USDT:USDT | below_1h_threshold | +0.67% | +0.63% |
+| TOKYOELSTOCK/USDT:USDT | below_1h_threshold | +0.64% | +0.59% |
 
 ## 7. 次に見るべき不足
 
