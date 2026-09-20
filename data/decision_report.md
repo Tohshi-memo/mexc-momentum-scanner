@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T17:41:32.946229+00:00
+- generated_at: 2026-09-20T17:46:33.156097+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15199**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T17:41:21.198102+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.01% price=81300.1
-- Funnel: target 1050 → liquid 144 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 82.0 >= 65=1, 4h RSI 84.3 >= 65=1
+- 更新: 2026-09-20T17:46:21.091782+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.09% price=81364.7
+- Funnel: target 1050 → liquid 144 → pre 50 → checked 50 → surge 3 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 81.9 >= 65=1, 4h RSI 70.7 >= 65=1, 4h RSI 83.7 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| AR/USDT:USDT | +20.70% | $6,607,081.26 |
-| LUNANEW/USDT:USDT | +16.01% | $1,693,177.44 |
-| SAGA/USDT:USDT | +14.90% | $4,007,242.06 |
-| ENA/USDT:USDT | +9.68% | $71,966,085.99 |
-| AKE/USDT:USDT | +8.46% | $86,628,257.13 |
+| AR/USDT:USDT | +21.26% | $6,901,073.39 |
+| LUNANEW/USDT:USDT | +14.05% | $1,708,497.66 |
+| SAGA/USDT:USDT | +13.18% | $4,071,550.34 |
+| ENA/USDT:USDT | +9.90% | $72,245,077.08 |
+| AKE/USDT:USDT | +9.62% | $86,757,117.34 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.82% | +3.81% |
-| ZAMA/USDT:USDT | below_1h_threshold | +3.59% | +3.58% |
-| OP/USDT:USDT | below_1h_threshold | +2.40% | +2.39% |
-| TIA/USDT:USDT | below_1h_threshold | +1.26% | +1.25% |
-| STRK/USDT:USDT | below_1h_threshold | +0.87% | +0.86% |
+| AKE/USDT:USDT | below_1h_threshold | +4.62% | +4.54% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.78% | +3.70% |
+| OP/USDT:USDT | below_1h_threshold | +2.57% | +2.48% |
+| G/USDT:USDT | below_1h_threshold | +2.47% | +2.38% |
+| MORPHO/USDT:USDT | below_1h_threshold | +1.98% | +1.89% |
 
 ## 7. 次に見るべき不足
 
