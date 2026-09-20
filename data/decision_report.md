@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-20T01:51:39.128379+00:00
+- generated_at: 2026-09-20T01:57:08.712663+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15123**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-20T01:51:24.095041+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.28% price=81036.1
+- 更新: 2026-09-20T01:56:54.458531+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.23% price=81076.4
 - Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 3 → strict 1
 - Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 84.2 >= 65=1, 4h RSI 96.9 >= 65=1
+- Strict後reject: 4h RSI 84.7 >= 65=1, 4h RSI 97.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| CELR/USDT:USDT | +70.32% | $2,124,657.83 |
-| OFC/USDT:USDT | +57.00% | $2,008,001.47 |
-| ONE/USDT:USDT | +21.19% | $48,247,968.26 |
-| EVAA/USDT:USDT | +19.57% | $1,463,593.64 |
-| BANK/USDT:USDT | +15.90% | $2,768,052.74 |
+| CELR/USDT:USDT | +73.83% | $2,146,349.74 |
+| OFC/USDT:USDT | +58.76% | $2,012,857.37 |
+| ONE/USDT:USDT | +19.66% | $48,297,671.82 |
+| EVAA/USDT:USDT | +17.22% | $1,475,128.73 |
+| BANK/USDT:USDT | +16.51% | $2,772,802.01 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STX/USDT:USDT | below_1h_threshold | +3.33% | +3.61% |
-| BANK/USDT:USDT | below_1h_threshold | +3.20% | +3.48% |
-| JTO/USDT:USDT | below_1h_threshold | +2.44% | +2.72% |
-| EVAA/USDT:USDT | below_1h_threshold | +1.99% | +2.28% |
-| SAGA/USDT:USDT | below_1h_threshold | +1.87% | +2.15% |
+| STX/USDT:USDT | below_1h_threshold | +3.80% | +4.03% |
+| SYN/USDT:USDT | below_1h_threshold | +3.58% | +3.82% |
+| BANK/USDT:USDT | below_1h_threshold | +3.58% | +3.81% |
+| ENA/USDT:USDT | below_1h_threshold | +2.97% | +3.20% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.51% | +2.74% |
 
 ## 7. 次に見るべき不足
 
