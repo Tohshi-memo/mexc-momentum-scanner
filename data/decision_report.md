@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T07:16:16.601458+00:00
+- generated_at: 2026-09-21T07:21:13.665403+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15236**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T07:16:05.784587+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.09% price=81534.6
-- Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-21T07:21:04.907630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.04% price=81576.5
+- Funnel: target 1050 → liquid 150 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +66.72% | $3,549,071.86 |
-| NIL/USDT:USDT | +34.56% | $6,784,279.73 |
-| PTB/USDT:USDT | +23.96% | $1,052,969.32 |
-| MINA/USDT:USDT | +23.12% | $1,017,727.03 |
-| AR/USDT:USDT | +17.71% | $7,269,129.27 |
+| ZETA/USDT:USDT | +67.94% | $3,599,105.76 |
+| NIL/USDT:USDT | +36.47% | $6,835,525.04 |
+| PTB/USDT:USDT | +24.62% | $1,053,483.64 |
+| MINA/USDT:USDT | +23.30% | $1,025,406.03 |
+| AR/USDT:USDT | +19.19% | $7,293,239.44 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.02% | +3.11% |
-| SAGA/USDT:USDT | below_1h_threshold | +2.43% | +2.52% |
-| AR/USDT:USDT | below_1h_threshold | +2.19% | +2.29% |
-| ZETA/USDT:USDT | below_1h_threshold | +1.72% | +1.81% |
-| KORU/USDT:USDT | below_1h_threshold | +1.69% | +1.78% |
+| AR/USDT:USDT | below_1h_threshold | +3.48% | +3.52% |
+| ZETA/USDT:USDT | below_1h_threshold | +2.54% | +2.58% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.29% | +2.33% |
+| KORU/USDT:USDT | below_1h_threshold | +1.69% | +1.73% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +1.49% | +1.52% |
 
 ## 7. 次に見るべき不足
 
