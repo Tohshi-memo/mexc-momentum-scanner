@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T20:51:30.760894+00:00
+- generated_at: 2026-09-21T20:56:21.789216+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15280**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.42** / 初期 $100.00 (+23.42%)
-- 確定: 3053件 (Win 898 / Loss 1192 / Flat 963) / pending 4件 / skip 3695件
+- 確定: 3053件 (Win 898 / Loss 1192 / Flat 963) / pending 5件 / skip 3695件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000313 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ARB/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $123.42
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T20:51:19.789875+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.48% price=86869.9
-- Funnel: target 1055 → liquid 176 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-21T20:56:10.120826+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.54% price=86921.7
+- Funnel: target 1055 → liquid 176 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 71.8 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +28.93% | $7,814,146.45 |
-| SYN/USDT:USDT | +14.26% | $6,862,393.24 |
-| PTB/USDT:USDT | +13.32% | $1,193,114.87 |
-| EVAA/USDT:USDT | +11.21% | $1,589,294.34 |
-| TAO/USDT:USDT | +5.84% | $120,680,581.24 |
+| FORM/USDT:USDT | +30.74% | $7,864,395.09 |
+| SYN/USDT:USDT | +14.83% | $6,899,658.36 |
+| PTB/USDT:USDT | +13.32% | $1,193,857.91 |
+| EVAA/USDT:USDT | +11.45% | $1,599,338.00 |
+| TAO/USDT:USDT | +6.99% | $121,474,535.24 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_relative_strength | +5.07% | +4.58% |
-| WLD/USDT:USDT | below_1h_threshold | +4.35% | +3.86% |
-| MINA/USDT:USDT | below_1h_threshold | +3.50% | +3.01% |
-| FORM/USDT:USDT | below_1h_threshold | +3.25% | +2.76% |
-| EGLD/USDT:USDT | below_1h_threshold | +3.05% | +2.57% |
+| USELESS/USDT:USDT | below_1h_threshold | +4.97% | +4.43% |
+| FORM/USDT:USDT | below_1h_threshold | +4.70% | +4.16% |
+| STX/USDT:USDT | below_1h_threshold | +4.09% | +3.55% |
+| MINA/USDT:USDT | below_1h_threshold | +3.82% | +3.27% |
+| AKE/USDT:USDT | below_1h_threshold | +3.23% | +2.69% |
 
 ## 7. 次に見るべき不足
 
