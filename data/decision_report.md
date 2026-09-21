@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T21:36:19.598444+00:00
+- generated_at: 2026-09-21T21:41:21.085939+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15280**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T21:36:08.481792+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.17% price=86810.1
+- 更新: 2026-09-21T21:41:10.001542+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.25% price=86740.1
 - Funnel: target 1055 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +29.53% | $8,094,591.80 |
-| ALCH/USDT:USDT | +25.57% | $1,672,103.42 |
-| GRASS/USDT:USDT | +17.83% | $1,244,053.45 |
-| SYN/USDT:USDT | +15.67% | $6,976,906.24 |
-| PTB/USDT:USDT | +12.84% | $1,191,327.35 |
+| FORM/USDT:USDT | +29.78% | $8,123,004.79 |
+| ALCH/USDT:USDT | +28.18% | $1,705,996.53 |
+| GRASS/USDT:USDT | +19.67% | $1,330,383.42 |
+| SYN/USDT:USDT | +15.71% | $7,002,421.95 |
+| PTB/USDT:USDT | +12.38% | $1,191,540.06 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| VVV/USDT:USDT | below_1h_threshold | +2.51% | +2.68% |
-| GRASS/USDT:USDT | below_1h_threshold | +2.17% | +2.35% |
-| CRO/USDT:USDT | below_1h_threshold | +2.07% | +2.24% |
-| AVAX/USDT:USDT | below_1h_threshold | +1.63% | +1.81% |
-| RENDER/USDT:USDT | below_1h_threshold | +1.46% | +1.63% |
+| GRASS/USDT:USDT | below_1h_threshold | +3.81% | +4.07% |
+| VVV/USDT:USDT | below_1h_threshold | +2.59% | +2.85% |
+| XMR/USDT:USDT | below_1h_threshold | +1.35% | +1.61% |
+| AVAX/USDT:USDT | below_1h_threshold | +1.30% | +1.56% |
+| NEAR/USDT:USDT | below_1h_threshold | +1.23% | +1.48% |
 
 ## 7. 次に見るべき不足
 
