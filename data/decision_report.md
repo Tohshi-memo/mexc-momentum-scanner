@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T09:01:13.264684+00:00
+- generated_at: 2026-09-21T09:06:16.616058+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15243**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T09:01:03.158205+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=83707.9
+- 更新: 2026-09-21T09:06:05.691193+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=83909.8
 - Funnel: target 1050 → liquid 152 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +82.59% | $4,867,320.14 |
-| NIL/USDT:USDT | +32.75% | $7,000,235.67 |
-| PTB/USDT:USDT | +24.62% | $1,096,505.48 |
-| KMNO/USDT:USDT | +21.95% | $1,237,824.97 |
-| SEI/USDT:USDT | +19.70% | $19,140,449.33 |
+| ZETA/USDT:USDT | +82.96% | $4,974,668.10 |
+| NIL/USDT:USDT | +34.36% | $7,020,468.11 |
+| PTB/USDT:USDT | +27.21% | $1,098,393.80 |
+| KMNO/USDT:USDT | +20.24% | $1,244,751.31 |
+| UAI/USDT:USDT | +19.92% | $1,354,515.49 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +2.61% | +2.63% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.89% | +1.91% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +1.19% | +1.21% |
-| ZETA/USDT:USDT | below_1h_threshold | +1.02% | +1.04% |
-| CHIP/USDT:USDT | below_1h_threshold | +0.78% | +0.79% |
+| KORU/USDT:USDT | below_1h_threshold | +2.61% | +2.39% |
+| SOXL/USDT:USDT | below_1h_threshold | +1.89% | +1.67% |
+| UAI/USDT:USDT | below_1h_threshold | +1.78% | +1.56% |
+| PTB/USDT:USDT | below_1h_threshold | +1.71% | +1.49% |
+| NIL/USDT:USDT | below_1h_threshold | +1.39% | +1.17% |
 
 ## 7. 次に見るべき不足
 
