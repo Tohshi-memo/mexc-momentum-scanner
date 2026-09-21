@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T12:56:21.069428+00:00
+- generated_at: 2026-09-21T13:01:19.852026+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15259**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T12:56:12.092583+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.51% price=85285.3
-- Funnel: target 1055 → liquid 162 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 71.2 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-21T13:01:10.594405+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.07% price=85218.1
+- Funnel: target 1055 → liquid 158 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +66.35% | $8,066,160.36 |
-| PHA/USDT:USDT | +54.15% | $5,712,017.25 |
-| PTB/USDT:USDT | +38.55% | $1,198,868.11 |
-| NIL/USDT:USDT | +31.98% | $7,826,300.16 |
-| UAI/USDT:USDT | +30.73% | $2,058,977.64 |
+| ZETA/USDT:USDT | +67.33% | $8,139,871.14 |
+| PHA/USDT:USDT | +57.77% | $5,757,146.06 |
+| PTB/USDT:USDT | +40.51% | $1,173,873.07 |
+| UAI/USDT:USDT | +32.53% | $2,046,265.51 |
+| NIL/USDT:USDT | +31.38% | $7,832,280.93 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| STONK/USDT:USDT | below_relative_strength | +5.33% | +4.82% |
-| ZAMA/USDT:USDT | below_1h_threshold | +4.73% | +4.21% |
-| NIL/USDT:USDT | below_1h_threshold | +4.18% | +3.66% |
-| XPL/USDT:USDT | below_1h_threshold | +3.59% | +3.08% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +3.33% | +2.82% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +2.14% | +2.21% |
+| BTW/USDT:USDT | below_1h_threshold | +1.80% | +1.87% |
+| ONE/USDT:USDT | below_1h_threshold | +0.95% | +1.02% |
+| ARB/USDT:USDT | below_1h_threshold | +0.79% | +0.85% |
+| GALA/USDT:USDT | below_1h_threshold | +0.43% | +0.50% |
 
 ## 7. 次に見るべき不足
 
