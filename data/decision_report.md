@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T22:16:21.100983+00:00
+- generated_at: 2026-09-21T22:21:23.085982+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15280**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T22:16:10.198748+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=86598.7
-- Funnel: target 1055 → liquid 178 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-21T22:21:12.133570+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.12% price=86645.5
+- Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ALCH/USDT:USDT | +31.56% | $1,855,754.37 |
-| FORM/USDT:USDT | +29.07% | $8,235,895.22 |
-| 4STOCK/USDT:USDT | +15.11% | $1,000,696.53 |
-| PTB/USDT:USDT | +14.75% | $1,188,314.59 |
-| SYN/USDT:USDT | +14.61% | $6,952,192.99 |
+| FORM/USDT:USDT | +27.75% | $8,266,330.98 |
+| ALCH/USDT:USDT | +27.36% | $1,890,191.10 |
+| PTB/USDT:USDT | +15.59% | $1,189,458.41 |
+| SYN/USDT:USDT | +14.61% | $6,984,783.24 |
+| 4STOCK/USDT:USDT | +14.50% | $1,001,083.20 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SHIB/USDT:USDT | below_1h_threshold | +2.62% | +2.56% |
-| ALCH/USDT:USDT | below_1h_threshold | +2.04% | +1.98% |
-| RAY/USDT:USDT | below_1h_threshold | +1.95% | +1.88% |
-| WLD/USDT:USDT | below_1h_threshold | +1.91% | +1.84% |
-| DOGE/USDT:USDT | below_1h_threshold | +1.70% | +1.64% |
+| SHIB/USDT:USDT | below_1h_threshold | +2.38% | +2.27% |
+| DOGE/USDT:USDT | below_1h_threshold | +2.22% | +2.10% |
+| WLD/USDT:USDT | below_1h_threshold | +2.04% | +1.92% |
+| ONDO/USDT:USDT | below_1h_threshold | +2.02% | +1.90% |
+| RAY/USDT:USDT | below_1h_threshold | +1.94% | +1.82% |
 
 ## 7. 次に見るべき不足
 
