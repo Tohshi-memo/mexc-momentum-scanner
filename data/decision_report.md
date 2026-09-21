@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T15:41:27.810654+00:00
+- generated_at: 2026-09-21T15:46:19.423930+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15266**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.11** / 初期 $100.00 (+23.11%)
-- 確定: 3042件 (Win 895 / Loss 1189 / Flat 958) / pending 5件 / skip 3691件
+- 確定: 3042件 (Win 895 / Loss 1189 / Flat 958) / pending 6件 / skip 3691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000182 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PEPE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $123.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T15:41:16.876042+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.11% price=85902.4
-- Funnel: target 1055 → liquid 171 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-21T15:46:08.478376+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.28% price=86047.6
+- Funnel: target 1055 → liquid 171 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 82.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +59.24% | $9,908,576.67 |
-| MUBARAK/USDT:USDT | +38.84% | $1,188,135.66 |
-| PHA/USDT:USDT | +33.55% | $7,317,144.70 |
-| UAI/USDT:USDT | +31.44% | $5,156,310.47 |
-| NIL/USDT:USDT | +29.59% | $8,202,817.79 |
+| ZETA/USDT:USDT | +59.08% | $9,935,998.27 |
+| MUBARAK/USDT:USDT | +38.97% | $1,191,407.55 |
+| PHA/USDT:USDT | +34.18% | $7,399,535.48 |
+| UAI/USDT:USDT | +33.08% | $5,200,363.77 |
+| NIL/USDT:USDT | +30.41% | $8,204,330.85 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +4.07% | +3.96% |
-| PEPE/USDT:USDT | below_1h_threshold | +3.51% | +3.40% |
-| FARTCOIN/USDT:USDT | below_1h_threshold | +3.16% | +3.05% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.00% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +1.95% |
+| ZAMA/USDT:USDT | below_1h_threshold | +4.38% | +4.10% |
+| PEPE/USDT:USDT | below_1h_threshold | +3.81% | +3.53% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +2.83% |
+| PENGU/USDT:USDT | below_1h_threshold | +2.54% | +2.26% |
+| DOGE/USDT:USDT | below_1h_threshold | +2.41% | +2.13% |
 
 ## 7. 次に見るべき不足
 
