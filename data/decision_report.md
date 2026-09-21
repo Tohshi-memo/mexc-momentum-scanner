@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T15:01:30.678441+00:00
+- generated_at: 2026-09-21T15:06:16.613568+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15266**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.11** / 初期 $100.00 (+23.11%)
-- 確定: 3042件 (Win 895 / Loss 1189 / Flat 958) / pending 4件 / skip 3691件
+- 確定: 3042件 (Win 895 / Loss 1189 / Flat 958) / pending 5件 / skip 3691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000182 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PEPE/USDT:USDT `LIMIT_2PCT_LONG` EXPIRED account +0.00% 残高後 $123.11
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T15:01:17.624710+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.13% price=85915.0
-- Funnel: target 1055 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-21T15:06:07.771910+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.24% price=86014.5
+- Funnel: target 1055 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 65.7 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +62.40% | $9,391,993.23 |
-| UAI/USDT:USDT | +50.41% | $4,203,058.20 |
-| PHA/USDT:USDT | +48.28% | $6,758,537.54 |
-| MUBARAK/USDT:USDT | +41.49% | $1,096,857.25 |
-| NIL/USDT:USDT | +30.90% | $8,069,474.53 |
+| ZETA/USDT:USDT | +57.94% | $9,558,894.45 |
+| UAI/USDT:USDT | +46.63% | $4,317,101.52 |
+| MUBARAK/USDT:USDT | +41.09% | $1,109,255.07 |
+| PHA/USDT:USDT | +39.67% | $6,924,573.69 |
+| NIL/USDT:USDT | +31.54% | $8,075,409.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +2.98% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +1.93% |
-| MVLL/USDT:USDT | below_1h_threshold | +1.88% | +1.76% |
-| MUBARAK/USDT:USDT | below_1h_threshold | +1.73% | +1.60% |
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +1.22% | +1.10% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +2.87% |
+| DOGE/USDT:USDT | below_1h_threshold | +2.13% | +1.88% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +1.82% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.88% | +1.64% |
+| ZAMA/USDT:USDT | below_1h_threshold | +1.77% | +1.53% |
 
 ## 7. 次に見るべき不足
 
