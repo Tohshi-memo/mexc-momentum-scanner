@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T10:41:35.357446+00:00
+- generated_at: 2026-09-21T10:46:33.100299+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15250**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.69** / 初期 $100.00 (+22.69%)
-- 確定: 3028件 (Win 892 / Loss 1186 / Flat 950) / pending 5件 / skip 3689件
+- 確定: 3028件 (Win 892 / Loss 1186 / Flat 950) / pending 6件 / skip 3690件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000114 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: PHA/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $122.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T10:41:21.196594+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.61% price=84110.1
-- Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 3 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 96.1 >= 65=1, 4h RSI 71.7 >= 65=1, 4h RSI 67.8 >= 65=1
+- 更新: 2026-09-21T10:46:19.718093+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.49% price=84206.7
+- Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 5 → strict 0
+- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.2 >= 65=1, 4h RSI 68.6 >= 65=1, 4h RSI 66.6 >= 65=1, 4h RSI 71.4 >= 65=1, 4h RSI 87.1 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +66.49% | $6,478,822.60 |
-| PHA/USDT:USDT | +63.96% | $2,334,580.44 |
-| NIL/USDT:USDT | +30.86% | $7,462,523.68 |
-| PTB/USDT:USDT | +28.17% | $1,161,724.73 |
-| UAI/USDT:USDT | +27.58% | $1,745,298.54 |
+| ZETA/USDT:USDT | +69.18% | $6,526,862.26 |
+| PHA/USDT:USDT | +67.39% | $2,561,641.14 |
+| NIL/USDT:USDT | +31.28% | $7,468,488.29 |
+| PTB/USDT:USDT | +28.64% | $1,162,118.27 |
+| UAI/USDT:USDT | +26.87% | $1,759,505.38 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SEI/USDT:USDT | below_1h_threshold | +4.34% | +4.95% |
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.09% | +4.70% |
-| ARB/USDT:USDT | below_1h_threshold | +3.23% | +3.84% |
-| ZRO/USDT:USDT | below_1h_threshold | +2.82% | +3.43% |
-| XLM/USDT:USDT | below_1h_threshold | +2.43% | +3.03% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +4.77% | +5.27% |
+| ONDO/USDT:USDT | below_1h_threshold | +3.38% | +3.87% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.27% | +3.76% |
+| ENA/USDT:USDT | below_1h_threshold | +3.01% | +3.50% |
+| EVAA/USDT:USDT | below_1h_threshold | +2.68% | +3.17% |
 
 ## 7. 次に見るべき不足
 
