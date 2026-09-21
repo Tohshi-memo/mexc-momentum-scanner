@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T15:16:24.717775+00:00
+- generated_at: 2026-09-21T15:21:17.948639+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15266**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T15:16:13.509248+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.44% price=86181.0
+- 更新: 2026-09-21T15:21:09.249957+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.22% price=85996.3
 - Funnel: target 1055 → liquid 168 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +63.22% | $9,669,023.66 |
-| MUBARAK/USDT:USDT | +41.06% | $1,123,092.84 |
-| PHA/USDT:USDT | +39.91% | $7,045,628.37 |
-| UAI/USDT:USDT | +38.15% | $4,500,254.59 |
-| NIL/USDT:USDT | +33.13% | $8,087,061.12 |
+| ZETA/USDT:USDT | +60.63% | $9,736,228.51 |
+| MUBARAK/USDT:USDT | +41.52% | $1,132,747.62 |
+| PHA/USDT:USDT | +38.09% | $7,094,355.00 |
+| UAI/USDT:USDT | +33.49% | $4,606,230.85 |
+| NIL/USDT:USDT | +31.82% | $8,142,434.05 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| USELESS/USDT:USDT | below_1h_threshold | +3.70% | +3.26% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +2.67% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +1.62% |
-| NIL/USDT:USDT | below_1h_threshold | +2.06% | +1.62% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.01% | +1.57% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +2.89% |
+| USELESS/USDT:USDT | below_1h_threshold | +2.74% | +2.52% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +1.84% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.04% | +1.82% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.88% | +1.66% |
 
 ## 7. 次に見るべき不足
 
