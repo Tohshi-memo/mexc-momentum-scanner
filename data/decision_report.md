@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T01:36:21.342692+00:00
+- generated_at: 2026-09-21T01:41:15.717261+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15224**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T01:36:10.457036+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h -0.24% price=81379.1
+- 更新: 2026-09-21T01:41:07.001333+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.26% price=81361.5
 - Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +23.83% | $5,132,550.74 |
-| SAGA/USDT:USDT | +19.38% | $8,502,154.29 |
-| SEI/USDT:USDT | +14.89% | $15,285,688.40 |
-| LUNANEW/USDT:USDT | +14.45% | $2,428,768.73 |
-| JUP/USDT:USDT | +14.45% | $4,431,900.39 |
+| NIL/USDT:USDT | +23.39% | $5,152,794.74 |
+| SEI/USDT:USDT | +15.12% | $15,368,039.04 |
+| LUNANEW/USDT:USDT | +15.01% | $2,430,178.88 |
+| SAGA/USDT:USDT | +14.35% | $8,554,401.34 |
+| JUP/USDT:USDT | +13.09% | $4,502,940.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +4.94% | +5.18% |
-| VVV/USDT:USDT | below_1h_threshold | +3.67% | +3.91% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.41% | +3.65% |
-| BTW/USDT:USDT | below_1h_threshold | +2.64% | +2.88% |
-| MUU/USDT:USDT | below_1h_threshold | +2.37% | +2.61% |
+| VVV/USDT:USDT | below_1h_threshold | +3.60% | +3.86% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.92% | +3.18% |
+| XPL/USDT:USDT | below_1h_threshold | +2.91% | +3.18% |
+| AR/USDT:USDT | below_1h_threshold | +2.62% | +2.88% |
+| MUU/USDT:USDT | below_1h_threshold | +2.37% | +2.64% |
 
 ## 7. 次に見るべき不足
 
