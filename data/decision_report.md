@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T23:51:16.803790+00:00
+- generated_at: 2026-09-21T23:56:21.541715+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15284**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T23:51:04.674853+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=86474.4
+- 更新: 2026-09-21T23:56:10.509630+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=86577.0
 - Funnel: target 1055 → liquid 179 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +24.73% | $8,572,465.06 |
-| ALCH/USDT:USDT | +21.74% | $2,161,177.16 |
-| 4STOCK/USDT:USDT | +15.72% | $1,034,119.68 |
-| EVAA/USDT:USDT | +14.79% | $1,964,813.43 |
-| PTB/USDT:USDT | +12.12% | $1,207,741.11 |
+| FORM/USDT:USDT | +25.76% | $8,599,244.97 |
+| ALCH/USDT:USDT | +22.47% | $2,179,164.40 |
+| EVAA/USDT:USDT | +15.32% | $1,967,007.62 |
+| 4STOCK/USDT:USDT | +14.19% | $1,035,825.20 |
+| PTB/USDT:USDT | +13.56% | $1,208,796.10 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AKE/USDT:USDT | below_1h_threshold | +3.38% | +3.31% |
-| RUNE/USDT:USDT | below_1h_threshold | +1.68% | +1.62% |
-| EGLD/USDT:USDT | below_1h_threshold | +1.47% | +1.41% |
-| APT/USDT:USDT | below_1h_threshold | +1.27% | +1.20% |
-| AERO/USDT:USDT | below_1h_threshold | +1.11% | +1.05% |
+| AKE/USDT:USDT | below_1h_threshold | +3.54% | +3.36% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.66% | +2.48% |
+| H/USDT:USDT | below_1h_threshold | +2.01% | +1.83% |
+| EGLD/USDT:USDT | below_1h_threshold | +1.94% | +1.76% |
+| AERO/USDT:USDT | below_1h_threshold | +1.30% | +1.12% |
 
 ## 7. 次に見るべき不足
 
