@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T01:56:19.450878+00:00
+- generated_at: 2026-09-21T02:01:24.062847+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15225**
 
@@ -70,30 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T01:56:10.815504+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.78% price=80943.7
-- Funnel: target 1050 → liquid 153 → pre 50 → checked 50 → surge 0 → strict 0
+- 更新: 2026-09-21T02:01:16.365283+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.03% price=80990.6
+- Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +23.23% | $5,199,410.27 |
-| SAGA/USDT:USDT | +16.98% | $8,700,220.48 |
-| SEI/USDT:USDT | +13.83% | $15,506,834.15 |
-| LUNANEW/USDT:USDT | +12.91% | $2,446,522.70 |
-| AR/USDT:USDT | +11.47% | $7,465,537.03 |
+| NIL/USDT:USDT | +23.21% | $5,203,329.20 |
+| SEI/USDT:USDT | +13.28% | $15,358,694.29 |
+| SAGA/USDT:USDT | +13.00% | $8,673,114.52 |
+| LUNANEW/USDT:USDT | +12.87% | $2,446,749.53 |
+| JUP/USDT:USDT | +10.96% | $4,459,370.65 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_1h_threshold | +3.05% | +3.83% |
-| XPL/USDT:USDT | below_1h_threshold | +2.88% | +3.66% |
-| MUU/USDT:USDT | below_1h_threshold | +2.37% | +3.15% |
-| SOXL/USDT:USDT | below_1h_threshold | +2.23% | +3.00% |
-| VVV/USDT:USDT | below_1h_threshold | +2.06% | +2.84% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.62% | +0.59% |
+| KORU/USDT:USDT | below_1h_threshold | +0.59% | +0.55% |
+| BTW/USDT:USDT | below_1h_threshold | +0.46% | +0.43% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +0.36% | +0.33% |
+| NIL/USDT:USDT | below_1h_threshold | +0.32% | +0.29% |
 
 ## 7. 次に見るべき不足
 
