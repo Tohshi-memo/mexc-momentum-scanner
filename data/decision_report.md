@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T04:01:30.906992+00:00
+- generated_at: 2026-09-21T04:06:16.043038+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15228**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T04:01:19.860530+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.00% price=81399.9
+- 更新: 2026-09-21T04:06:04.994609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.11% price=81311.0
 - Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +23.03% | $5,467,668.78 |
-| KMNO/USDT:USDT | +16.29% | $1,051,789.35 |
-| EGLD/USDT:USDT | +14.93% | $2,201,421.10 |
-| SEI/USDT:USDT | +14.51% | $14,815,092.94 |
-| JUP/USDT:USDT | +14.45% | $4,508,678.91 |
+| NIL/USDT:USDT | +26.61% | $5,498,891.37 |
+| KMNO/USDT:USDT | +16.43% | $1,078,152.78 |
+| EGLD/USDT:USDT | +14.82% | $2,222,749.15 |
+| SEI/USDT:USDT | +14.37% | $14,880,576.30 |
+| JUP/USDT:USDT | +13.75% | $4,537,539.31 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +0.84% | +0.84% |
-| JUP/USDT:USDT | below_1h_threshold | +0.81% | +0.81% |
-| KORU/USDT:USDT | below_1h_threshold | +0.43% | +0.43% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
+| MYX/USDT:USDT | below_1h_threshold | +2.72% | +2.83% |
+| NIL/USDT:USDT | below_1h_threshold | +1.79% | +1.90% |
+| BTW/USDT:USDT | below_1h_threshold | +1.20% | +1.31% |
+| RAY/USDT:USDT | below_1h_threshold | +1.10% | +1.21% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +0.52% | +0.64% |
 
 ## 7. 次に見るべき不足
 
