@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T03:16:20.477209+00:00
+- generated_at: 2026-09-21T03:21:24.067807+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15226**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T03:16:11.676026+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.06% price=81327.5
+- 更新: 2026-09-21T03:21:13.196609+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.08% price=81346.9
 - Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +25.95% | $5,340,807.39 |
-| KMNO/USDT:USDT | +19.12% | $1,002,073.90 |
-| SEI/USDT:USDT | +14.28% | $15,469,682.62 |
-| JUP/USDT:USDT | +13.57% | $4,435,468.61 |
-| VVV/USDT:USDT | +13.16% | $5,350,448.33 |
+| NIL/USDT:USDT | +25.81% | $5,355,303.75 |
+| KMNO/USDT:USDT | +19.33% | $1,013,242.76 |
+| SEI/USDT:USDT | +15.14% | $15,492,502.68 |
+| JUP/USDT:USDT | +14.26% | $4,472,533.80 |
+| LUNANEW/USDT:USDT | +11.87% | $2,476,930.12 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZAMA/USDT:USDT | below_1h_threshold | +3.78% | +3.72% |
-| AR/USDT:USDT | below_1h_threshold | +3.27% | +3.21% |
-| G/USDT:USDT | below_1h_threshold | +3.13% | +3.07% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +2.45% | +2.39% |
-| NEAR/USDT:USDT | below_1h_threshold | +1.51% | +1.45% |
+| AR/USDT:USDT | below_1h_threshold | +3.17% | +3.08% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.79% | +2.70% |
+| G/USDT:USDT | below_1h_threshold | +2.69% | +2.61% |
+| STRK/USDT:USDT | below_1h_threshold | +2.67% | +2.59% |
+| JUP/USDT:USDT | below_1h_threshold | +2.13% | +2.05% |
 
 ## 7. 次に見るべき不足
 
