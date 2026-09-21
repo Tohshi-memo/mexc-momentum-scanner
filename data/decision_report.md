@@ -1,13 +1,13 @@
 # Decision Report
 
-- generated_at: 2026-09-21T04:06:16.043038+00:00
+- generated_at: 2026-09-21T04:11:17.723592+00:00
 - source: `data/experiments.json` + archive=True
-- closed shadow trades: **15228**
+- closed shadow trades: **15229**
 
 ## 1. 今日の判断
 
 - 結論: **MARKET SHORTは実行候補。直近EV +1.34% / filled 20/20。**
-- 全期間 MARKET基準: n=15228, expectancy=+0.00%
+- 全期間 MARKET基準: n=15229, expectancy=+0.00%
 - 直近20件 MARKET基準: n=20, expectancy=+1.34%
 - live採用条件: `MARKET`のみ / EV >= +0.20% / filled >= 10
 
@@ -25,7 +25,7 @@
 | MARKET | 20/20 | 100.0% | +1.34% | **+1.34%** |
 | LIMIT_2PCT | 15/20 | 75.0% | +1.76% | **+1.32%** |
 | LIMIT_3PCT | 11/20 | 55.0% | +2.38% | **+1.31%** |
-| LIMIT_ATR | 13/20 | 65.0% | +1.10% | **+0.72%** |
+| LIMIT_ATR | 13/20 | 65.0% | +1.09% | **+0.71%** |
 
 ### シャドウ上位 LONG
 
@@ -47,15 +47,15 @@
 ## 3. Safe Adaptive DryRun ($100)
 
 - 残高: **$1,175.24** / 初期 $100.00 (+1075.24%)
-- 確定: 5719件 (Win 1706 / Loss 1845 / Flat 2168) / skip 6070件
+- 確定: 5720件 (Win 1706 / Loss 1845 / Flat 2169) / skip 6070件
 - 成長率目線: 平均log +0.000431 / 幾何平均 +0.043% per trade / maxDD +8.46%
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_recent_avg_log_return) / risk 0.50% / daily stop 2.0% / DD stop 10.0%
-- 最新: B2/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,175.24
+- 最新: ZAMA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $1,175.24
 
 ## 4. Robust Adaptive DryRun ($100)
 
 - 残高: **$246.81** / 初期 $100.00 (+146.81%)
-- 確定: 3297件 (Win 911 / Loss 765 / Flat 1621) / skip 5342件
+- 確定: 3297件 (Win 911 / Loss 765 / Flat 1621) / skip 5343件
 - 成長率目線: 平均log +0.000274 / 幾何平均 +0.027% per trade / maxDD +3.96%
 - 次の候補: `見送り` (no_strategy_passed_robust_filters) / robust_score n/a / risk 0.35% / cost 0.15% / daily stop 1.5% / DD stop 8.0%
 - 最新: ONE/USDT:USDT `LIMIT_6PCT` SL_HIT account -0.35% 残高後 $246.81
@@ -63,15 +63,15 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$121.81** / 初期 $100.00 (+21.81%)
-- 確定: 3006件 (Win 889 / Loss 1186 / Flat 931) / pending 4件 / skip 3689件
+- 確定: 3007件 (Win 889 / Loss 1186 / Flat 932) / pending 3件 / skip 3689件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000162 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
-- 最新: ZEN/USDT:USDT `MARKET_LONG` SL_HIT account -0.17% 残高後 $121.81
+- 最新: ZAMA/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $121.81
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T04:06:04.994609+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.11% price=81311.0
+- 更新: 2026-09-21T04:11:04.915470+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.13% price=81292.6
 - Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +26.61% | $5,498,891.37 |
-| KMNO/USDT:USDT | +16.43% | $1,078,152.78 |
-| EGLD/USDT:USDT | +14.82% | $2,222,749.15 |
-| SEI/USDT:USDT | +14.37% | $14,880,576.30 |
-| JUP/USDT:USDT | +13.75% | $4,537,539.31 |
+| NIL/USDT:USDT | +26.01% | $5,522,417.74 |
+| KMNO/USDT:USDT | +15.62% | $1,079,620.47 |
+| SEI/USDT:USDT | +14.62% | $14,914,562.02 |
+| JUP/USDT:USDT | +13.46% | $4,549,222.09 |
+| EGLD/USDT:USDT | +13.23% | $2,257,647.23 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| MYX/USDT:USDT | below_1h_threshold | +2.72% | +2.83% |
-| NIL/USDT:USDT | below_1h_threshold | +1.79% | +1.90% |
-| BTW/USDT:USDT | below_1h_threshold | +1.20% | +1.31% |
-| RAY/USDT:USDT | below_1h_threshold | +1.10% | +1.21% |
-| LUNANEW/USDT:USDT | below_1h_threshold | +0.52% | +0.64% |
+| MYX/USDT:USDT | below_1h_threshold | +2.83% | +2.96% |
+| ZAMA/USDT:USDT | below_1h_threshold | +2.05% | +2.19% |
+| NIL/USDT:USDT | below_1h_threshold | +1.82% | +1.96% |
+| RAY/USDT:USDT | below_1h_threshold | +1.14% | +1.27% |
+| BTW/USDT:USDT | below_1h_threshold | +0.97% | +1.11% |
 
 ## 7. 次に見るべき不足
 
