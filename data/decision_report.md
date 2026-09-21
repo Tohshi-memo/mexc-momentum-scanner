@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T10:51:37.494836+00:00
+- generated_at: 2026-09-21T10:56:38.822433+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15251**
 
@@ -63,39 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.69** / 初期 $100.00 (+22.69%)
-- 確定: 3029件 (Win 892 / Loss 1186 / Flat 951) / pending 6件 / skip 3690件
+- 確定: 3029件 (Win 892 / Loss 1186 / Flat 951) / pending 6件 / skip 3691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_5PCT` (selected_by_causal_log_growth) / causal_score +0.000114 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: ONE/USDT:USDT `LIMIT_5PCT` EXPIRED account +0.00% 残高後 $122.69
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T10:51:24.616090+00:00 / 保存件数 288/288
-- BTC: BEARISH 1h -0.54% price=84168.1
-- Funnel: target 1050 → liquid 158 → pre 50 → checked 50 → surge 5 → strict 0
-- Surge前reject: below_1h_threshold=45, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 95.9 >= 65=1, 4h RSI 68.9 >= 65=1, 4h RSI 87.9 >= 65=1, 4h RSI 66.9 >= 65=1, 4h RSI 71.4 >= 65=1
+- 更新: 2026-09-21T10:56:25.102889+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h -0.46% price=84234.7
+- Funnel: target 1050 → liquid 159 → pre 50 → checked 50 → surge 6 → strict 0
+- Surge前reject: below_1h_threshold=44, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 96.3 >= 65=1, 4h RSI 68.8 >= 65=1, 4h RSI 88.2 >= 65=1, 4h RSI 67.0 >= 65=1, 4h RSI 71.8 >= 65=1, 4h RSI 65.6 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +74.16% | $6,628,032.87 |
-| PHA/USDT:USDT | +63.28% | $2,732,372.75 |
-| NIL/USDT:USDT | +32.33% | $7,479,867.11 |
-| PTB/USDT:USDT | +31.13% | $1,163,388.44 |
-| SEI/USDT:USDT | +29.34% | $21,364,820.10 |
+| ZETA/USDT:USDT | +75.13% | $6,694,220.61 |
+| PHA/USDT:USDT | +66.14% | $2,834,474.68 |
+| NIL/USDT:USDT | +33.92% | $7,498,324.47 |
+| PTB/USDT:USDT | +33.77% | $1,165,504.09 |
+| SEI/USDT:USDT | +29.24% | $21,714,091.70 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PIEVERSE/USDT:USDT | below_1h_threshold | +4.69% | +5.23% |
-| ONDO/USDT:USDT | below_1h_threshold | +4.30% | +4.84% |
-| ENA/USDT:USDT | below_1h_threshold | +3.43% | +3.97% |
-| ZRO/USDT:USDT | below_1h_threshold | +3.15% | +3.69% |
-| XLM/USDT:USDT | below_1h_threshold | +2.78% | +3.32% |
+| PTB/USDT:USDT | below_1h_threshold | +4.44% | +4.90% |
+| ENA/USDT:USDT | below_1h_threshold | +3.65% | +4.11% |
+| ZRO/USDT:USDT | below_1h_threshold | +3.01% | +3.47% |
+| XLM/USDT:USDT | below_1h_threshold | +2.82% | +3.28% |
+| TAO/USDT:USDT | below_1h_threshold | +2.59% | +3.05% |
 
 ## 7. 次に見るべき不足
 
