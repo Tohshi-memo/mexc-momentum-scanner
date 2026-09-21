@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T19:21:24.331564+00:00
+- generated_at: 2026-09-21T19:26:23.915515+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15278**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T19:21:13.317840+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.25% price=86236.2
+- 更新: 2026-09-21T19:26:13.146084+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.21% price=86201.9
 - Funnel: target 1055 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +25.40% | $6,713,737.74 |
-| SYN/USDT:USDT | +17.69% | $4,992,828.84 |
-| EVAA/USDT:USDT | +8.24% | $1,363,343.78 |
-| PTB/USDT:USDT | +7.79% | $1,171,697.34 |
-| BTW/USDT:USDT | +6.44% | $4,812,071.74 |
+| FORM/USDT:USDT | +25.12% | $6,777,923.47 |
+| SYN/USDT:USDT | +17.60% | $5,072,256.06 |
+| PTB/USDT:USDT | +9.04% | $1,173,021.49 |
+| PHA/USDT:USDT | +8.10% | $8,086,300.95 |
+| EVAA/USDT:USDT | +7.88% | $1,385,042.14 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SYN/USDT:USDT | below_1h_threshold | +4.60% | +4.35% |
-| NIL/USDT:USDT | below_1h_threshold | +3.20% | +2.95% |
-| SAGA/USDT:USDT | below_1h_threshold | +3.19% | +2.94% |
-| PHA/USDT:USDT | below_1h_threshold | +3.12% | +2.87% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.20% | +1.95% |
+| PHA/USDT:USDT | below_1h_threshold | +4.98% | +4.77% |
+| SYN/USDT:USDT | below_1h_threshold | +4.45% | +4.24% |
+| NIL/USDT:USDT | below_1h_threshold | +3.54% | +3.33% |
+| SAGA/USDT:USDT | below_1h_threshold | +3.13% | +2.92% |
+| RAY/USDT:USDT | below_1h_threshold | +2.72% | +2.51% |
 
 ## 7. 次に見るべき不足
 
