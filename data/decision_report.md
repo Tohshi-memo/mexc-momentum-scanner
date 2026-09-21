@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T18:41:30.161161+00:00
+- generated_at: 2026-09-21T18:46:28.958784+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15277**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T18:41:18.731126+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.03% price=85883.6
-- Funnel: target 1055 → liquid 172 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 66.5 >= 65=1
+- 更新: 2026-09-21T18:46:17.767910+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.07% price=85912.2
+- Funnel: target 1055 → liquid 172 → pre 50 → checked 49 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=1
+- Strict後reject: 4h RSI 66.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| FORM/USDT:USDT | +29.18% | $5,997,730.26 |
-| SYN/USDT:USDT | +11.06% | $4,579,232.58 |
-| PTB/USDT:USDT | +8.77% | $1,186,436.41 |
-| EVAA/USDT:USDT | +7.14% | $1,104,211.13 |
-| BTW/USDT:USDT | +4.98% | $4,789,816.14 |
+| FORM/USDT:USDT | +29.11% | $6,026,898.11 |
+| SYN/USDT:USDT | +11.50% | $4,599,133.91 |
+| PTB/USDT:USDT | +9.00% | $1,189,543.16 |
+| EVAA/USDT:USDT | +7.95% | $1,119,968.04 |
+| BTW/USDT:USDT | +4.70% | $4,819,137.79 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| PENGU/USDT:USDT | below_1h_threshold | +4.40% | +4.37% |
-| ZETA/USDT:USDT | below_1h_threshold | +2.75% | +2.72% |
-| LAB/USDT:USDT | below_1h_threshold | +2.56% | +2.52% |
-| BTW/USDT:USDT | below_1h_threshold | +2.49% | +2.46% |
-| RUNE/USDT:USDT | below_1h_threshold | +2.17% | +2.13% |
+| PENGU/USDT:USDT | below_1h_threshold | +4.64% | +4.58% |
+| ZETA/USDT:USDT | below_1h_threshold | +2.84% | +2.77% |
+| DOGE/USDT:USDT | below_1h_threshold | +2.43% | +2.37% |
+| RUNE/USDT:USDT | below_1h_threshold | +2.30% | +2.23% |
+| LAB/USDT:USDT | below_1h_threshold | +2.22% | +2.15% |
 
 ## 7. 次に見るべき不足
 
