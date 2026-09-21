@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T11:31:25.721729+00:00
+- generated_at: 2026-09-21T11:36:21.420727+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15254**
 
@@ -70,32 +70,32 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T11:31:12.403092+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +0.22% price=84585.0
+- 更新: 2026-09-21T11:36:10.197553+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +0.38% price=84722.8
 - Funnel: target 1050 → liquid 157 → pre 50 → checked 50 → surge 1 → strict 0
 - Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 72.0 >= 65=1
+- Strict後reject: 4h RSI 72.8 >= 65=1
 - データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +73.05% | $6,951,982.56 |
-| PHA/USDT:USDT | +61.79% | $4,336,841.46 |
-| PTB/USDT:USDT | +36.34% | $1,180,841.77 |
-| ONE/USDT:USDT | +31.82% | $22,005,437.75 |
-| SEI/USDT:USDT | +29.16% | $23,477,388.78 |
+| ZETA/USDT:USDT | +75.56% | $6,986,268.62 |
+| PHA/USDT:USDT | +61.33% | $4,533,676.10 |
+| PTB/USDT:USDT | +37.40% | $1,182,149.70 |
+| ONE/USDT:USDT | +33.07% | $22,216,091.01 |
+| NIL/USDT:USDT | +28.70% | $7,641,955.71 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| XPL/USDT:USDT | below_1h_threshold | +4.55% | +4.33% |
-| KMNO/USDT:USDT | below_1h_threshold | +3.17% | +2.95% |
-| PTB/USDT:USDT | below_1h_threshold | +2.85% | +2.63% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.62% | +2.40% |
-| FET/USDT:USDT | below_1h_threshold | +2.57% | +2.35% |
+| XPL/USDT:USDT | below_1h_threshold | +3.67% | +3.28% |
+| PTB/USDT:USDT | below_1h_threshold | +3.64% | +3.26% |
+| FET/USDT:USDT | below_1h_threshold | +2.62% | +2.24% |
+| SYN/USDT:USDT | below_1h_threshold | +2.60% | +2.22% |
+| SUI/USDT:USDT | below_1h_threshold | +2.22% | +1.84% |
 
 ## 7. 次に見るべき不足
 
