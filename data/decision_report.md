@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T15:31:15.371545+00:00
+- generated_at: 2026-09-21T15:36:17.775949+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15266**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T15:31:06.703469+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=85868.8
+- 更新: 2026-09-21T15:36:09.341046+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.02% price=85785.4
 - Funnel: target 1055 → liquid 170 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +61.42% | $9,821,083.78 |
-| MUBARAK/USDT:USDT | +38.84% | $1,162,087.50 |
-| PHA/USDT:USDT | +35.48% | $7,170,032.19 |
-| NIL/USDT:USDT | +33.37% | $8,154,551.26 |
-| UAI/USDT:USDT | +28.20% | $4,957,925.61 |
+| ZETA/USDT:USDT | +60.47% | $9,873,444.72 |
+| MUBARAK/USDT:USDT | +40.03% | $1,179,927.41 |
+| PHA/USDT:USDT | +33.42% | $7,228,845.99 |
+| NIL/USDT:USDT | +31.50% | $8,178,285.88 |
+| UAI/USDT:USDT | +28.65% | $5,089,827.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.04% |
-| KAS/USDT:USDT | below_1h_threshold | +2.88% | +2.80% |
-| ZAMA/USDT:USDT | below_1h_threshold | +2.54% | +2.47% |
-| NIL/USDT:USDT | below_1h_threshold | +2.39% | +2.32% |
-| USELESS/USDT:USDT | below_1h_threshold | +2.11% | +2.03% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.11% | +3.13% |
+| ZAMA/USDT:USDT | below_1h_threshold | +3.11% | +3.13% |
+| KAS/USDT:USDT | below_1h_threshold | +2.18% | +2.21% |
+| SOXL/USDT:USDT | below_1h_threshold | +2.06% | +2.08% |
+| MVLL/USDT:USDT | below_1h_threshold | +1.88% | +1.91% |
 
 ## 7. 次に見るべき不足
 
