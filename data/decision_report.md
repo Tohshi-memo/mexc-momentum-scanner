@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T14:11:22.725594+00:00
+- generated_at: 2026-09-21T14:16:22.517163+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15262**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$123.00** / 初期 $100.00 (+23.00%)
-- 確定: 3038件 (Win 894 / Loss 1188 / Flat 956) / pending 4件 / skip 3691件
+- 確定: 3038件 (Win 894 / Loss 1188 / Flat 956) / pending 5件 / skip 3691件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_2PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000148 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UAI/USDT:USDT `LIMIT_2PCT_LONG` TP_HIT account +0.34% 残高後 $123.00
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T14:11:11.702200+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.16% price=85278.3
-- Funnel: target 1055 → liquid 166 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-21T14:16:13.441249+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.10% price=85330.2
+- Funnel: target 1055 → liquid 166 → pre 50 → checked 50 → surge 1 → strict 0
+- Surge前reject: below_1h_threshold=49, below_relative_strength=0, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 72.6 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +66.51% | $8,874,126.60 |
-| PHA/USDT:USDT | +57.22% | $6,274,414.27 |
-| UAI/USDT:USDT | +46.98% | $3,043,601.78 |
-| MUBARAK/USDT:USDT | +41.15% | $1,015,496.60 |
-| ONE/USDT:USDT | +30.17% | $20,773,339.95 |
+| ZETA/USDT:USDT | +68.09% | $8,913,696.15 |
+| PHA/USDT:USDT | +56.35% | $6,333,051.94 |
+| UAI/USDT:USDT | +47.10% | $3,162,881.27 |
+| MUBARAK/USDT:USDT | +40.28% | $1,022,484.08 |
+| ONE/USDT:USDT | +29.88% | $20,907,875.09 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.91% |
-| ONE/USDT:USDT | below_1h_threshold | +4.73% | +4.89% |
-| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.36% |
-| BTW/USDT:USDT | below_1h_threshold | +2.64% | +2.80% |
-| SOXL/USDT:USDT | below_1h_threshold | +1.53% | +1.69% |
+| AMDSTOCK/USDT:USDT | below_1h_threshold | +4.75% | +4.85% |
+| INTCSTOCK/USDT:USDT | below_1h_threshold | +3.20% | +3.30% |
+| BTW/USDT:USDT | below_1h_threshold | +2.93% | +3.03% |
+| ZETA/USDT:USDT | below_1h_threshold | +2.41% | +2.51% |
+| STONK/USDT:USDT | below_1h_threshold | +1.79% | +1.89% |
 
 ## 7. 次に見るべき不足
 
