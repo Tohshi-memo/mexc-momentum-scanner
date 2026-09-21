@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T03:56:16.352765+00:00
+- generated_at: 2026-09-21T04:01:30.906992+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15228**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T03:56:08.474257+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81338.7
-- Funnel: target 1050 → liquid 147 → pre 50 → checked 50 → surge 1 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=1, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 74.4 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-21T04:01:19.860530+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h -0.00% price=81399.9
+- Funnel: target 1050 → liquid 142 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +23.27% | $5,456,922.59 |
-| KMNO/USDT:USDT | +21.11% | $1,048,435.81 |
-| EGLD/USDT:USDT | +14.73% | $2,225,553.73 |
-| JUP/USDT:USDT | +13.93% | $4,632,885.75 |
-| SEI/USDT:USDT | +13.80% | $15,679,054.97 |
+| NIL/USDT:USDT | +23.03% | $5,467,668.78 |
+| KMNO/USDT:USDT | +16.29% | $1,051,789.35 |
+| EGLD/USDT:USDT | +14.93% | $2,201,421.10 |
+| SEI/USDT:USDT | +14.51% | $14,815,092.94 |
+| JUP/USDT:USDT | +14.45% | $4,508,678.91 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| EGLD/USDT:USDT | below_relative_strength | +5.00% | +4.93% |
-| UB/USDT:USDT | below_1h_threshold | +4.51% | +4.44% |
-| MARSCOIN/USDT:USDT | below_1h_threshold | +3.84% | +3.77% |
-| W/USDT:USDT | below_1h_threshold | +3.43% | +3.36% |
-| MORPHO/USDT:USDT | below_1h_threshold | +3.35% | +3.28% |
+| ZAMA/USDT:USDT | below_1h_threshold | +0.84% | +0.84% |
+| JUP/USDT:USDT | below_1h_threshold | +0.81% | +0.81% |
+| KORU/USDT:USDT | below_1h_threshold | +0.43% | +0.43% |
+| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.41% | +0.41% |
+| LUNANEW/USDT:USDT | below_1h_threshold | +0.39% | +0.40% |
 
 ## 7. 次に見るべき不足
 
