@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T08:51:19.459674+00:00
+- generated_at: 2026-09-21T08:56:21.098566+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15242**
 
@@ -63,37 +63,39 @@
 ## 5. Causal Adaptive DryRun ($100)
 
 - 残高: **$122.65** / 初期 $100.00 (+22.65%)
-- 確定: 3020件 (Win 891 / Loss 1186 / Flat 943) / pending 2件 / skip 3689件
+- 確定: 3020件 (Win 891 / Loss 1186 / Flat 943) / pending 3件 / skip 3689件
 - 検証方式: 検出時点より前にクローズ済みの結果だけで選択し、active中に戦略を固定
 - 次の候補: `LIMIT_9PCT_LONG` (selected_by_causal_log_growth) / causal_score +0.000160 / risk 0.175% / cost 0.15% / batch最大 2件 / open risk上限 1.05% / DD stop 8.0%
 - 最新: UAI/USDT:USDT `LIMIT_9PCT_LONG` EXPIRED account +0.00% 残高後 $122.65
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T08:51:08.579104+00:00 / 保存件数 288/288
-- BTC: BULLISH 1h +2.57% price=83798.7
-- Funnel: target 1050 → liquid 155 → pre 50 → checked 50 → surge 0 → strict 0
-- Surge前reject: below_1h_threshold=47, below_relative_strength=3, invalid_ohlcv=0, errors=0
+- 更新: 2026-09-21T08:56:11.548058+00:00 / 保存件数 288/288
+- BTC: BULLISH 1h +2.55% price=83780.9
+- Funnel: target 1050 → liquid 156 → pre 50 → checked 50 → surge 2 → strict 0
+- Surge前reject: below_1h_threshold=47, below_relative_strength=1, invalid_ohlcv=0, errors=0
+- Strict後reject: 4h RSI 69.0 >= 65=1, 4h RSI 94.3 >= 65=1
+- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +72.42% | $4,501,701.93 |
-| NIL/USDT:USDT | +33.17% | $6,988,501.45 |
-| PTB/USDT:USDT | +28.76% | $1,091,918.97 |
-| KMNO/USDT:USDT | +23.00% | $1,234,433.67 |
-| SAGA/USDT:USDT | +20.51% | $9,801,957.67 |
+| ZETA/USDT:USDT | +80.62% | $4,730,254.98 |
+| NIL/USDT:USDT | +32.87% | $7,005,680.56 |
+| PTB/USDT:USDT | +23.41% | $1,097,117.24 |
+| KMNO/USDT:USDT | +22.09% | $1,236,286.32 |
+| SEI/USDT:USDT | +20.32% | $19,185,309.64 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| SAGA/USDT:USDT | below_relative_strength | +7.00% | +4.43% |
-| ONE/USDT:USDT | below_relative_strength | +5.39% | +2.82% |
-| KMNO/USDT:USDT | below_relative_strength | +5.20% | +2.63% |
-| SPX/USDT:USDT | below_1h_threshold | +4.42% | +1.85% |
-| 1000BONK/USDT:USDT | below_1h_threshold | +4.37% | +1.80% |
+| SAGA/USDT:USDT | below_relative_strength | +6.48% | +3.93% |
+| FET/USDT:USDT | below_1h_threshold | +4.64% | +2.09% |
+| KMNO/USDT:USDT | below_1h_threshold | +4.52% | +1.97% |
+| 1000BONK/USDT:USDT | below_1h_threshold | +4.50% | +1.96% |
+| RAY/USDT:USDT | below_1h_threshold | +4.08% | +1.53% |
 
 ## 7. 次に見るべき不足
 
