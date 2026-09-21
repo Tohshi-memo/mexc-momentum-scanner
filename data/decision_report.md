@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T06:46:27.727808+00:00
+- generated_at: 2026-09-21T06:51:20.848833+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15234**
 
@@ -70,32 +70,30 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T06:46:14.014241+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h -0.02% price=81501.5
-- Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 2 → strict 0
-- Surge前reject: below_1h_threshold=48, below_relative_strength=0, invalid_ohlcv=0, errors=0
-- Strict後reject: 4h RSI 90.5 >= 65=1, 4h RSI 73.7 >= 65=1
-- データ欠損注意: open_interest_usd 0%, oi_change_pct 0%, long_short_ratio 0%
+- 更新: 2026-09-21T06:51:13.045561+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=81665.7
+- Funnel: target 1050 → liquid 149 → pre 50 → checked 50 → surge 0 → strict 0
+- Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
 ### 24h上昇上位
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| ZETA/USDT:USDT | +70.31% | $3,241,984.04 |
-| NIL/USDT:USDT | +41.44% | $6,494,096.65 |
-| PTB/USDT:USDT | +31.82% | $1,040,788.38 |
-| SEI/USDT:USDT | +20.05% | $17,228,928.57 |
-| KMNO/USDT:USDT | +18.18% | $1,199,516.12 |
+| ZETA/USDT:USDT | +68.46% | $3,294,790.63 |
+| NIL/USDT:USDT | +38.73% | $6,568,233.30 |
+| PTB/USDT:USDT | +30.78% | $1,044,768.84 |
+| SEI/USDT:USDT | +18.91% | $17,336,510.75 |
+| KMNO/USDT:USDT | +18.32% | $1,203,238.17 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| ZETA/USDT:USDT | below_1h_threshold | +4.55% | +4.57% |
-| APT/USDT:USDT | below_1h_threshold | +4.44% | +4.46% |
-| AR/USDT:USDT | below_1h_threshold | +3.21% | +3.23% |
-| EGLD/USDT:USDT | below_1h_threshold | +2.89% | +2.91% |
-| SUI/USDT:USDT | below_1h_threshold | +2.54% | +2.56% |
+| APT/USDT:USDT | below_1h_threshold | +4.88% | +4.70% |
+| NIL/USDT:USDT | below_1h_threshold | +4.85% | +4.67% |
+| XMR/USDT:USDT | below_1h_threshold | +4.06% | +3.88% |
+| AR/USDT:USDT | below_1h_threshold | +4.00% | +3.82% |
+| ZETA/USDT:USDT | below_1h_threshold | +3.02% | +2.84% |
 
 ## 7. 次に見るべき不足
 
