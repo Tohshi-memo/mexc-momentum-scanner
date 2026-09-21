@@ -1,6 +1,6 @@
 # Decision Report
 
-- generated_at: 2026-09-21T03:01:20.989042+00:00
+- generated_at: 2026-09-21T03:06:18.503270+00:00
 - source: `data/experiments.json` + archive=True
 - closed shadow trades: **15226**
 
@@ -70,8 +70,8 @@
 
 ## 6. Latest Market Context
 
-- 更新: 2026-09-21T03:01:10.164084+00:00 / 保存件数 288/288
-- BTC: STAGNANT 1h +0.07% price=81339.5
+- 更新: 2026-09-21T03:06:07.659153+00:00 / 保存件数 288/288
+- BTC: STAGNANT 1h +0.18% price=81422.8
 - Funnel: target 1050 → liquid 146 → pre 50 → checked 50 → surge 0 → strict 0
 - Surge前reject: below_1h_threshold=50, below_relative_strength=0, invalid_ohlcv=0, errors=0
 
@@ -79,21 +79,21 @@
 
 | symbol | 24h | volume |
 |---|---:|---:|
-| NIL/USDT:USDT | +25.04% | $5,305,419.70 |
-| SEI/USDT:USDT | +14.16% | $15,355,066.45 |
-| VVV/USDT:USDT | +13.29% | $5,244,744.15 |
-| JUP/USDT:USDT | +12.21% | $4,419,783.30 |
-| S/USDT:USDT | +10.74% | $3,770,351.72 |
+| NIL/USDT:USDT | +25.58% | $5,311,082.25 |
+| SEI/USDT:USDT | +15.43% | $15,410,843.58 |
+| JUP/USDT:USDT | +13.24% | $4,422,199.54 |
+| VVV/USDT:USDT | +12.95% | $5,269,496.19 |
+| XPL/USDT:USDT | +11.87% | $3,640,541.86 |
 
 ### Near Miss
 
 | symbol | reason | 1h | RS |
 |---|---|---:|---:|
-| KORU/USDT:USDT | below_1h_threshold | +1.26% | +1.19% |
-| NEAR/USDT:USDT | below_1h_threshold | +0.80% | +0.73% |
-| SAMSUNGSTOCK/USDT:USDT | below_1h_threshold | +0.69% | +0.61% |
-| SAGA/USDT:USDT | below_1h_threshold | +0.68% | +0.60% |
-| MUU/USDT:USDT | below_1h_threshold | +0.64% | +0.57% |
+| MARSCOIN/USDT:USDT | below_1h_threshold | +2.37% | +2.20% |
+| NEAR/USDT:USDT | below_1h_threshold | +2.27% | +2.09% |
+| AR/USDT:USDT | below_1h_threshold | +2.10% | +1.92% |
+| XPL/USDT:USDT | below_1h_threshold | +1.75% | +1.57% |
+| PIEVERSE/USDT:USDT | below_1h_threshold | +1.57% | +1.40% |
 
 ## 7. 次に見るべき不足
 
